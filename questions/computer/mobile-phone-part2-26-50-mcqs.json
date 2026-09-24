@@ -1,0 +1,302 @@
+[
+  {
+    "id": 26,
+    "question": "What is the first step when a mobile phone makes a call?",
+    "options": [
+      "Checks IMEI",
+      "Searches for a nearby Control Channel",
+      "Assigns a frequency pair",
+      "Connects the call"
+    ],
+    "answer": 1,
+    "explanation": "The phone first searches for a nearby control channel."
+  },
+  {
+    "id": 27,
+    "question": "If no control channel is found, what is displayed on the phone?",
+    "options": [
+      "Network Error",
+      "SIM Error",
+      "No Service",
+      "Call Failed"
+    ],
+    "answer": 2,
+    "explanation": "The phone displays 'No Service'."
+  },
+  {
+    "id": 28,
+    "question": "Which code is checked to identify the home network?",
+    "options": [
+      "IMEI",
+      "SID",
+      "IMSI",
+      "ESN"
+    ],
+    "answer": 1,
+    "explanation": "SID is checked to identify the home network."
+  },
+  {
+    "id": 29,
+    "question": "MTSO stands for:",
+    "options": [
+      "Mobile Telephone Switching Office",
+      "Mobile Tower Service Office",
+      "Main Telecommunication Switching Office",
+      "Mobile Transfer Service Operator"
+    ],
+    "answer": 0,
+    "explanation": "MTSO = Mobile Telephone Switching Office."
+  },
+  {
+    "id": 30,
+    "question": "Which of the following is NOT a function of MTSO?",
+    "options": [
+      "Call Routing",
+      "Location Tracking",
+      "Frequency Allocation",
+      "Battery Charging"
+    ],
+    "answer": 3,
+    "explanation": "Battery charging is not an MTSO function."
+  },
+  {
+    "id": 31,
+    "question": "Handoff (Handover) means:",
+    "options": [
+      "Changing SIM card",
+      "Transferring an ongoing call between cell towers",
+      "Restarting a mobile phone",
+      "Changing mobile number"
+    ],
+    "answer": 1,
+    "explanation": "Handoff transfers a call between cell towers without interruption."
+  },
+  {
+    "id": 32,
+    "question": "Wi‑Fi stands for:",
+    "options": [
+      "Wireless Fidelity",
+      "Wireless Fiber",
+      "Wide Fidelity",
+      "Wireless File"
+    ],
+    "answer": 0,
+    "explanation": "Wi‑Fi = Wireless Fidelity."
+  },
+  {
+    "id": 33,
+    "question": "GPS stands for:",
+    "options": [
+      "General Positioning Service",
+      "Global Positioning System",
+      "Global Phone System",
+      "General Phone Service"
+    ],
+    "answer": 1,
+    "explanation": "GPS = Global Positioning System."
+  },
+  {
+    "id": 34,
+    "question": "GSM stands for:",
+    "options": [
+      "Global System for Mobile Communications",
+      "General System for Mobile Communication",
+      "Global Service for Mobile",
+      "General Service Mode"
+    ],
+    "answer": 0,
+    "explanation": "GSM = Global System for Mobile Communications."
+  },
+  {
+    "id": 35,
+    "question": "GSM is considered which generation technology?",
+    "options": [
+      "1G",
+      "2G",
+      "3G",
+      "4G"
+    ],
+    "answer": 1,
+    "explanation": "GSM is a 2G technology."
+  },
+  {
+    "id": 36,
+    "question": "Android is based on:",
+    "options": [
+      "Windows",
+      "Linux Kernel",
+      "Darwin",
+      "UNIX"
+    ],
+    "answer": 1,
+    "explanation": "Android is based on Linux Kernel."
+  },
+  {
+    "id": 37,
+    "question": "iOS is based on:",
+    "options": [
+      "Linux",
+      "Android",
+      "Darwin",
+      "UNIX"
+    ],
+    "answer": 2,
+    "explanation": "iOS is based on Darwin."
+  },
+  {
+    "id": 38,
+    "question": "India's first Internet Service Provider (ISP) was:",
+    "options": [
+      "BSNL",
+      "VSNL",
+      "Jio",
+      "Airtel"
+    ],
+    "answer": 1,
+    "explanation": "VSNL introduced Internet services in India."
+  },
+  {
+    "id": 39,
+    "question": "The world's first ISP was:",
+    "options": [
+      "VSNL",
+      "Telenet",
+      "Google",
+      "CompuServe"
+    ],
+    "answer": 1,
+    "explanation": "Telenet was the world's first ISP."
+  },
+  {
+    "id": 40,
+    "question": "Phubbing refers to:",
+    "options": [
+      "Using two phones together",
+      "Ignoring people because of smartphone usage",
+      "Talking loudly on phone",
+      "Using phone while charging"
+    ],
+    "answer": 1,
+    "explanation": "Phubbing means ignoring people due to smartphone use."
+  },
+  {
+    "id": 41,
+    "question": "1G technology was:",
+    "options": [
+      "Digital",
+      "Analog",
+      "IP Based",
+      "Satellite Based"
+    ],
+    "answer": 1,
+    "explanation": "1G used analog communication."
+  },
+  {
+    "id": 42,
+    "question": "Which generation introduced SMS?",
+    "options": [
+      "1G",
+      "2G",
+      "3G",
+      "4G"
+    ],
+    "answer": 1,
+    "explanation": "2G introduced SMS."
+  },
+  {
+    "id": 43,
+    "question": "2.5G technology is based on:",
+    "options": [
+      "EDGE",
+      "GPRS",
+      "LTE",
+      "WCDMA"
+    ],
+    "answer": 1,
+    "explanation": "2.5G uses GPRS."
+  },
+  {
+    "id": 44,
+    "question": "EDGE belongs to:",
+    "options": [
+      "2G",
+      "2.5G",
+      "2.75G",
+      "3G"
+    ],
+    "answer": 2,
+    "explanation": "EDGE is the technology of 2.75G."
+  },
+  {
+    "id": 45,
+    "question": "Which generation introduced practical mobile internet and video calling?",
+    "options": [
+      "2G",
+      "3G",
+      "4G",
+      "5G"
+    ],
+    "answer": 1,
+    "explanation": "3G introduced practical mobile internet and video calling."
+  },
+  {
+    "id": 46,
+    "question": "VoLTE stands for:",
+    "options": [
+      "Voice over LTE",
+      "Video over LTE",
+      "Virtual LTE",
+      "Voice on Long Term Evolution"
+    ],
+    "answer": 0,
+    "explanation": "VoLTE = Voice over LTE."
+  },
+  {
+    "id": 47,
+    "question": "VoLTE allows:",
+    "options": [
+      "Voice only",
+      "Data only",
+      "Voice and Data simultaneously",
+      "SMS only"
+    ],
+    "answer": 2,
+    "explanation": "VoLTE supports voice and data together."
+  },
+  {
+    "id": 48,
+    "question": "Which generation offers ultra-high speed and low latency?",
+    "options": [
+      "3G",
+      "4G",
+      "5G",
+      "2G"
+    ],
+    "answer": 2,
+    "explanation": "5G provides ultra-high speed and low latency."
+  },
+  {
+    "id": 49,
+    "question": "Which of the following is an application of 5G?",
+    "options": [
+      "Smart Cities",
+      "Remote Surgery",
+      "Self-driving Cars",
+      "All of the Above"
+    ],
+    "answer": 3,
+    "explanation": "All are major applications of 5G."
+  },
+  {
+    "id": 50,
+    "question": "According to the notes, 5G is approximately how many times faster than 4G under suitable network conditions?",
+    "options": [
+      "2–5 Times",
+      "5–8 Times",
+      "10–30 Times",
+      "40–50 Times"
+    ],
+    "answer": 2,
+    "explanation": "The notes state 5G is approximately 10–30 times faster than 4G."
+  }
+]
