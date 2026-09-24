@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact - House of Aspirants</title>
+  <meta name="description" content="Contact House of Aspirants for question corrections, topic requests, collaborations or feedback.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://house-of-aspirants.vercel.app/contact">
+  <meta property="og:title" content="Contact - House of Aspirants">
+  <meta property="og:description" content="We usually reply within 24 hours.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact - House of Aspirants">
+  <meta name="twitter:description" content="We usually reply within 24 hours.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="contact">
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><span>Contact</span>
+        </nav>
+        <span class="eyebrow">Get in touch</span>
+        <h1>Contact Us ✉️</h1>
+        <p class="muted">Question corrections, topic requests, collaboration or feedback — we read everything.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2" style="align-items:start">
+        <!-- ================================================= CONTACT FORM -->
+        <form class="card card-pad" id="contactForm" novalidate>
+          <span class="eyebrow">Send a message</span>
+          <h3 style="margin-bottom:18px">Drop us a note</h3>
+
+          <div class="grid" style="gap:15px">
+            <div class="field">
+              <label for="cName">Your name *</label>
+              <input type="text" id="cName" name="name" placeholder="e.g. Harpreet Singh" required>
+            </div>
+
+            <div class="field">
+              <label for="cEmail">Email *</label>
+              <input type="email" id="cEmail" name="email" placeholder="you@example.com" required>
+            </div>
+
+            <div class="field">
+              <label for="cTopic">Topic</label>
+              <select id="cTopic" name="topic">
+                <option>Question correction</option>
+                <option>New topic / quiz request</option>
+                <option>Report a bug</option>
+                <option>Collaboration</option>
+                <option>Advertising</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="cMsg">Message *</label>
+              <textarea id="cMsg" name="message" rows="5"
+                        placeholder="Write your message here…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message →</button>
+            <p class="muted text-sm center">
+              This static form opens your mail app — no data is stored on this site.
+            </p>
+          </div>
+        </form>
+
+        <!-- ================================================ OTHER CHANNELS -->
+        <div class="grid" style="gap:16px">
+          <div class="card card-pad">
+            <span class="eyebrow">Fastest route</span>
+            <h3 style="margin-bottom:10px">✈ Telegram</h3>
+            <p class="muted">For quick replies, DM us on the channel — links, PDFs and
+               daily updates live there anyway.</p>
+            <a class="btn btn-telegram mt-2" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">
+              Open Telegram
+            </a>
+          </div>
+
+          <div class="card card-pad">
+            <span class="eyebrow">Social</span>
+            <h3 style="margin-bottom:10px">Follow the portal</h3>
+            <div class="social-row" style="margin-top:0">
+              <a class="social-link" href="https://instagram.com/houseofaspirants" target="_blank" rel="noopener">📸 Instagram</a>
+              <a class="social-link" href="https://youtube.com/@houseofaspirants" target="_blank" rel="noopener">▶ YouTube</a>
+            </div>
+          </div>
+
+          <div class="card card-pad">
+            <span class="eyebrow">Response time</span>
+            <h3 style="margin-bottom:10px">Within 24 hours</h3>
+            <p class="muted">Monday – Saturday. Corrections are prioritised and
+               usually live within one deploy.</p>
+          </div>
+
+          <div class="ad-slot">
+            <div>
+              <div class="ad-label">Advertisement</div>
+              <p class="text-sm">Clean promotional space for partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/contact.js" defer></script>
+</body>
+</html>

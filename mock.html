@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mock Tests - House of Aspirants</title>
+  <meta name="description" content="Build a full-length mock test from any subject. Configurable question count and time limit for Punjab Police & PSSSB aspirants.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:title" content="Mock Tests - House of Aspirants">
+  <meta property="og:description" content="Full-length mock tests with timers and detailed results.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mock Tests - House of Aspirants">
+  <meta name="twitter:description" content="Full-length mock tests with timers and detailed results.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="canonical" href="https://house-of-aspirants.vercel.app/mock">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body data-page="mock">
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><span>Mock Tests</span>
+        </nav>
+        <span class="eyebrow">Full Length Tests</span>
+        <h1>Mock Test Builder</h1>
+        <p class="muted" id="mockStatus">Loading available questions…</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2" style="align-items:start">
+        <!-- ============================================ SUBJECT CHOICE -->
+        <div class="card card-pad">
+          <span class="eyebrow">Step 1</span>
+          <h3 style="margin-bottom:16px">Choose scope</h3>
+          <div class="grid" id="mockSubjects" style="gap:10px">
+            <div class="skeleton" style="height:52px"></div>
+            <div class="skeleton" style="height:52px"></div>
+            <div class="skeleton" style="height:52px"></div>
+          </div>
+          <p class="muted text-sm mt-2">
+            Scopes are built from whatever quiz files exist — nothing is hardcoded.
+          </p>
+        </div>
+
+        <!-- ============================================ SETTINGS -->
+        <div class="card card-pad">
+          <span class="eyebrow">Step 2</span>
+          <h3 style="margin-bottom:16px">Test settings</h3>
+
+          <div class="grid" style="gap:16px">
+            <div class="field">
+              <label for="mockCount">Number of questions</label>
+              <select id="mockCount">
+                <option value="10">10 questions</option>
+                <option value="20" selected>20 questions</option>
+                <option value="50">50 questions</option>
+                <option value="100">100 questions</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="mockMinutes">Time limit</label>
+              <select id="mockMinutes">
+                <option value="5">5 minutes</option>
+                <option value="10">10 minutes</option>
+                <option value="15" selected>15 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="60">60 minutes</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label>Rules</label>
+              <ul class="text-sm muted" style="display:grid;gap:6px">
+                <li>• Per-question timer &amp; overall countdown active</li>
+                <li>• Answers auto-save; you can leave and resume</li>
+                <li>• Answers lock automatically when time ends</li>
+                <li>• Full answer review with explanations after submit</li>
+              </ul>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block" id="mockStart" disabled>
+              🚀 Start Mock Test
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="banner-telegram reveal" style="margin-top:30px">
+          <div>
+            <div class="bt-title">✈ Mock test alerts on Telegram</div>
+            <div class="bt-sub">New test series announced daily — join free.</div>
+          </div>
+          <a class="btn btn-lg" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener"
+             style="margin-left:auto">Join →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/mock.js" defer></script>
+</body>
+</html>

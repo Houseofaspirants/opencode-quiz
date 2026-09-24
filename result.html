@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Quiz Result - House of Aspirants</title>
+  <meta name="description" content="Your quiz result: score, accuracy, subject-wise performance, weak & strong areas with a full answer review.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:title" content="Quiz Result - House of Aspirants">
+  <meta property="og:description" content="Detailed result & answer review.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quiz Result - House of Aspirants">
+  <meta name="twitter:description" content="Detailed result & answer review.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body data-page="result">
+  <div data-site-header></div>
+
+  <main id="main">
+    <!-- ============================================ RESULT HERO + SCORE -->
+    <section class="result-hero" id="resultHero">
+      <div class="container">
+        <span class="eyebrow" style="justify-content:center">Result</span>
+        <h1 id="resTitle">Quiz Result</h1>
+        <p class="muted" id="resSub"></p>
+
+        <div class="score-ring" id="scoreRing" style="--pct:0">
+          <div class="sr-inner">
+            <div class="sr-val" id="scoreVal">0%</div>
+            <div class="sr-lab">Score</div>
+          </div>
+        </div>
+
+        <div class="verdict" id="verdict">Result</div>
+        <p class="perf-msg" id="perfMsg"></p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container" id="resultBody">
+        <!-- ============================================= KEY STAT CARDS -->
+        <div class="result-stats" id="statGrid"><!-- injected --></div>
+
+        <!-- ================================= RANK + STUDENT ACTIONS -->
+        <div class="grid grid-3 mt-3">
+          <div class="rs-card">
+            <div class="rs-val" id="rankVal">—</div>
+            <div class="rs-lab" id="rankLab">Rank</div>
+          </div>
+          <div class="rs-card">
+            <div class="rs-val">📊</div>
+            <div class="rs-lab"><a href="progress.html">View my progress</a></div>
+          </div>
+          <div class="rs-card">
+            <div class="rs-val">🏆</div>
+            <div class="rs-lab"><a href="leaderboard.html">See leaderboard</a></div>
+          </div>
+        </div>
+
+        <div class="btn-row mt-3">
+          <a class="btn btn-primary btn-lg" href="quiz.html?mode=daily">🔁 Try Daily Quiz</a>
+          <a class="btn btn-lg" href="index.html">📚 Browse Subjects</a>
+          <button class="btn btn-lg" id="retryBtn">🔄 Retake this quiz</button>
+        </div>
+
+        <!-- ================================= TELEGRAM BANNER (post-quiz) -->
+        <div class="banner-telegram reveal" style="margin-top:34px">
+          <div>
+            <div class="bt-title">✈ Well played! Join House of Aspirants on Telegram</div>
+            <div class="bt-sub">Get the answer-key PDFs, daily current affairs & exam alerts.</div>
+          </div>
+          <a class="btn btn-lg" data-telegram href="https://t.me/HouseOfAspirants"
+             target="_blank" rel="noopener" style="margin-left:auto">Join Now →</a>
+        </div>
+
+        <!-- ============================= SUBJECT-WISE PERFORMANCE -->
+        <div class="grid grid-2 mt-3">
+          <div class="card card-pad">
+            <span class="eyebrow">Analysis</span>
+            <h3 style="margin-bottom:16px">Subject-wise Performance</h3>
+            <div class="perf-list" id="perfList"><!-- injected --></div>
+          </div>
+
+          <div class="card card-pad">
+            <span class="eyebrow">Insights</span>
+            <h3 style="margin-bottom:14px">Weak & Strong Areas</h3>
+            <p class="text-sm muted" style="margin-bottom:10px">Based on topic tags inside your JSON.</p>
+            <div class="chip-wrap" id="weakWrap"></div>
+            <div class="chip-wrap mt-2" id="strongWrap"></div>
+          </div>
+        </div>
+
+        <!-- ============================================ ANSWER REVIEW -->
+        <div class="section-head mt-3">
+          <div>
+            <span class="eyebrow">Answer Review</span>
+            <h2>Question-by-question breakdown</h2>
+            <p>Explanation & reference appear only when present in the JSON.</p>
+          </div>
+        </div>
+
+        <div class="review-filters">
+          <button class="chip-filter active" data-filter="all">All</button>
+          <button class="chip-filter" data-filter="correct">✅ Correct</button>
+          <button class="chip-filter" data-filter="wrong">❌ Wrong</button>
+          <button class="chip-filter" data-filter="skipped">⏭ Skipped</button>
+        </div>
+
+        <div id="reviewList"><!-- injected --></div>
+
+        <!-- ===================================================== AD -->
+        <div class="ad-slot" style="margin-top:26px">
+          <div>
+            <div class="ad-label">Advertisement</div>
+            <p class="text-sm">Sponsored space — clean and non-intrusive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/result.js" defer></script>
+</body>
+</html>

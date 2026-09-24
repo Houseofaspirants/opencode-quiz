@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bookmarks - House of Aspirants</title>
+  <meta name="description" content="Your bookmarked questions, saved locally on your device. Reveal answers and explanations anytime.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:title" content="Bookmarks - House of Aspirants">
+  <meta property="og:description" content="Saved difficult questions with answers.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bookmarks - House of Aspirants">
+  <meta name="twitter:description" content="Saved difficult questions with answers.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body data-page="bookmarks">
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><span>Bookmarks</span>
+        </nav>
+        <span class="eyebrow">Saved Questions</span>
+        <h1>My Bookmarks <span class="badge"><span id="bmCount">0</span> saved</span></h1>
+        <p class="muted">Bookmarks stay on this device (localStorage) — no account needed.</p>
+        <div class="btn-row mt-2">
+          <button class="btn btn-sm btn-danger hidden" id="bmClear">🗑 Clear all bookmarks</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="bmEmpty" class="hidden">
+          <div class="empty-state">
+            <div class="es-icon">☆</div>
+            <h3>No bookmarks yet.</h3>
+            <p>While attempting any quiz, tap <b>☆ Bookmark</b> on a tough question —
+               it will be waiting for you here with its answer and explanation.</p>
+            <div class="btn-row mt-3" style="justify-content:center">
+              <a class="btn btn-primary" href="quiz.html?mode=daily">Try Daily Quiz</a>
+              <a class="btn" href="index.html#subjects">Browse Subjects</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid" id="bookmarkList" style="gap:16px"><!-- injected --></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/bookmarks.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "house-of-aspirants-quiz-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "House of Aspirants - Quiz Portal for Punjab Police, PSSSB & Competitive Exam aspirants. Pure HTML/CSS/JS + JSON question bank. No backend required.",
+  "scripts": {
+    "build": "node scripts/build-index.mjs",
+    "dev": "node scripts/build-index.mjs && npx --yes serve .",
+    "start": "npx --yes serve ."
+  },
+  "keywords": [
+    "quiz",
+    "punjab-police",
+    "psssb",
+    "competitive-exams",
+    "mcq",
+    "static-site",
+    "vercel"
+  ],
+  "license": "MIT"
+}

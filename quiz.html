@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Quiz - House of Aspirants</title>
+  <meta name="description" content="Take a topic-wise MCQ quiz with timers, question palette, mark for review and instant results.">
+  <!-- Topic quizzes are indexable; quiz.js flips this to noindex for ?mode=daily / ?mode=mock -->
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Quiz - House of Aspirants">
+  <meta property="og:description" content="Fast MCQ quiz engine for Punjab Police & competitive exam aspirants.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quiz - House of Aspirants">
+  <meta name="twitter:description" content="Fast MCQ quiz engine for Punjab Police & competitive exam aspirants.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="canonical" href="https://house-of-aspirants.vercel.app/quiz">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body data-page="quiz">
+  <div data-site-header></div>
+
+  <!-- ================================ QUIZ TOP BAR (title, timers, submit) -->
+  <div class="quiz-topbar" id="quizTop">
+    <div class="container">
+      <div class="quiz-topbar-inner">
+        <div>
+          <div class="quiz-title" id="quizTitle">Loading quiz…</div>
+          <small class="muted" id="quizSub"></small>
+        </div>
+
+        <div class="timers">
+          <span class="timer-pill" id="qTimer" aria-label="Question timer">⏱ 00:30 <small>Q</small></span>
+          <span class="timer-pill" id="oTimer" aria-label="Overall timer">⌛ 00:00 <small>Total</small></span>
+        </div>
+
+        <button class="btn btn-primary" id="btnSubmit">📤 Submit</button>
+      </div>
+
+      <div class="mt-2">
+        <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+        <div class="progress-meta">
+          <span id="progressText">0 of 0 answered (0%)</span>
+          <span id="qCount">Question 1 of 1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <div class="container">
+      <!-- ================== QUIZ LAYOUT: question card + palette sidebar -->
+      <div class="quiz-layout" id="quizMain">
+        <section class="card q-card" aria-live="polite">
+          <div class="q-head">
+            <span class="q-number" id="qNum">#1</span>
+            <span class="badge badge-muted" id="qDifficulty"></span>
+            <span class="badge" id="qTopic"></span>
+          </div>
+
+          <h2 class="q-text" id="qText">Loading question…</h2>
+
+          <div class="options" id="options"><!-- buttons injected --></div>
+
+          <div class="q-controls">
+            <button class="btn" id="btnPrev">← Previous</button>
+            <button class="btn" id="btnSkip">Skip ⏭</button>
+            <button class="btn" id="btnMark">📌 Mark for Review</button>
+            <button class="btn" id="btnBookmark">☆ Bookmark</button>
+            <button class="btn btn-primary" id="btnNext">Next →</button>
+          </div>
+
+          <p class="muted text-sm mt-2">
+            Keyboard: <b>←</b>/<b>→</b> navigate · <b>1–4</b> answer · <b>M</b> mark ·
+            <b>S</b> skip · <b>Enter</b> submit · answers auto-save.
+          </p>
+        </section>
+
+        <!-- ------------------------------------------------- SIDE PANEL -->
+        <aside class="quiz-side">
+          <div class="card palette-card">
+            <h4>Question Palette</h4>
+            <div class="palette" id="palette"><!-- buttons injected --></div>
+
+            <ul class="legend">
+              <li><span class="sw ok"></span> Answered</li>
+              <li><span class="sw no"></span> Not answered</li>
+              <li><span class="sw mk"></span> Marked for review</li>
+              <li><span class="sw vs"></span> Visited / skipped</li>
+            </ul>
+
+            <div class="btn-row mt-2">
+              <button class="btn btn-sm btn-block" id="resumeReset">↺ Restart quiz</button>
+            </div>
+          </div>
+
+          <div class="card side-telegram">
+            <h4>✈ House of Aspirants</h4>
+            <p>Daily free PDFs, current affairs & exam updates.</p>
+            <a class="btn btn-block" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">Join Telegram</a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- ============ EMPTY STATE (no questions in this quiz yet) ======== -->
+      <div id="quizEmpty" class="hidden" style="padding:30px 0"></div>
+    </div>
+
+    <!-- ===================================================== ADVERTISEMENT -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="ad-slot">
+          <div>
+            <div class="ad-label">Advertisement</div>
+            <p class="text-sm">Non-intrusive banner space below the quiz area.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/quiz.js" defer></script>
+</body>
+</html>

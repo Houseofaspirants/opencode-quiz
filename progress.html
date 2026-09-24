@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>My Progress & Achievements - House of Aspirants</title>
+  <meta name="description" content="Track completed quizzes, average score, accuracy, study time, daily streak and earned badges.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:title" content="My Progress - House of Aspirants">
+  <meta property="og:description" content="Streaks, accuracy, study time and badges.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Progress - House of Aspirants">
+  <meta name="twitter:description" content="Streaks, accuracy, study time and badges.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+
+<body data-page="progress">
+  <div data-site-header></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</a><span>My Progress</span>
+        </nav>
+        <span class="eyebrow">Your Journey</span>
+        <h1>Progress &amp; Achievements 📊</h1>
+        <p class="muted">
+          Everything below is computed from quizzes <b>you</b> actually attempted —
+          stored privately on this device.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================================================ PROGRESS CARDS -->
+    <section class="section" style="padding-bottom:0">
+      <div class="container">
+        <div class="dash-grid">
+          <div class="dash-card">
+            <div class="dc-icon">✅</div>
+            <div class="dc-val" id="dashQuizzes">0</div>
+            <div class="dc-lab">Completed Quizzes</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">📈</div>
+            <div class="dc-val" id="dashAvg">—</div>
+            <div class="dc-lab">Average Score</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">🎯</div>
+            <div class="dc-val" id="dashAccuracy">—</div>
+            <div class="dc-lab">Overall Accuracy</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">⏱️</div>
+            <div class="dc-val" id="dashTime">—</div>
+            <div class="dc-lab">Study Time</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">🔥</div>
+            <div class="dc-val streak-flame" id="dashStreak">0 days</div>
+            <div class="dc-lab">Daily Streak</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">📅</div>
+            <div class="dc-val" id="dashWeekly">0 weeks</div>
+            <div class="dc-lab">Weekly Streak</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">👑</div>
+            <div class="dc-val" id="dashBest">—</div>
+            <div class="dc-lab">Best Score</div>
+          </div>
+          <div class="dash-card">
+            <div class="dc-icon">★</div>
+            <div class="dc-val" id="bmStat">0</div>
+            <div class="dc-lab">Bookmarked Questions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================== ACHIEVEMENTS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Achievements</span>
+            <h2>Badges &amp; milestones</h2>
+            <p>Earned automatically as you practise.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="quiz.html?mode=daily">Keep practising →</a>
+            <button class="btn btn-danger" id="resetProgress">Reset progress</button>
+          </div>
+        </div>
+
+        <div class="badge-grid" id="badgeGrid"><!-- injected --></div>
+
+        <div class="banner-telegram reveal" style="margin-top:34px">
+          <div>
+            <div class="bt-title">✈ Share your streak on Telegram</div>
+            <div class="bt-sub">Accountability = consistency = selection.</div>
+          </div>
+          <a class="btn btn-lg" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener"
+             style="margin-left:auto">Join →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/dashboard.js" defer></script>
+</body>
+</html>

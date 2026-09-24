@@ -1,0 +1,9 @@
+# House of Aspirants Quiz Portal
+# NOTE: no "Disallow" rules on purpose. Pages that must not be indexed
+# (result, bookmarks, progress, daily/mock quiz modes) declare
+# <meta name="robots" content="noindex"> themselves - blocking them here
+# would stop search engines from ever seeing that tag.
+User-agent: *
+Allow: /
+
+Sitemap: https://house-of-aspirants.vercel.app/sitemap.xml

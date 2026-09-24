@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Subject Quiz - House of Aspirants</title>
+  <meta name="description" content="Browse topics and start a quiz. Topic-wise MCQ practice for Punjab Police, PSSSB and competitive exams.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4f46e5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Subject Quiz - House of Aspirants">
+  <meta property="og:description" content="Topic-wise MCQ practice for Punjab Police & competitive exams.">
+  <meta property="og:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Subject Quiz - House of Aspirants">
+  <meta name="twitter:description" content="Topic-wise MCQ practice for Punjab Police & competitive exams.">
+  <meta name="twitter:image" content="https://house-of-aspirants.vercel.app/assets/img/og-cover.png">
+  <link rel="canonical" href="https://house-of-aspirants.vercel.app/subject">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="subject">
+  <div data-site-header></div>
+  <noscript>
+    <header class="site-header"><div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-name">House of Aspirants</span></a>
+      <nav class="main-nav"><ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="subject.html?subject=gk">GK</a></li>
+        <li><a class="nav-link" href="subject.html?subject=quant">Quant</a></li>
+        <li><a class="nav-link" href="subject.html?subject=reasoning">Reasoning</a></li>
+        <li><a class="nav-link" href="subject.html?subject=punjabi">Punjabi</a></li>
+        <li><a class="nav-link" href="subject.html?subject=english">English</a></li>
+        <li><a class="nav-link" href="subject.html?subject=computer">Computer</a></li>
+        <li><a class="nav-link" href="mock.html">Mock Tests</a></li>
+        <li><a class="nav-link" href="bookmarks.html">Bookmarks</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+      </ul></nav>
+    </div></header>
+  </noscript>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span>
+          <a href="index.html#subjects">Subjects</a><span>/</span>
+          <span id="crumbSubject">…</span>
+        </nav>
+        <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+          <span class="subject-icon" id="subjectIcon" style="margin:0;font-size:1.6rem">📘</span>
+          <div>
+            <h1 id="subjectTitle">Loading…</h1>
+            <p class="muted" id="subjectDesc">Fetching topics…</p>
+          </div>
+        </div>
+
+        <div class="stats-grid mt-3" style="max-width:640px">
+          <div class="stat-card"><div class="stat-num" id="countTopics">0</div>
+            <div class="stat-label">Topics</div></div>
+          <div class="stat-card"><div class="stat-num" id="countQuizzes">0</div>
+            <div class="stat-label">Quizzes Live</div></div>
+          <div class="stat-card"><div class="stat-num" id="countQuestions">0</div>
+            <div class="stat-label">Questions</div></div>
+          <div class="stat-card"><div class="stat-num">∞</div>
+            <div class="stat-label">Capacity</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Topics</span>
+            <h2>Pick a topic to start</h2>
+            <p>Topics appear automatically when a JSON file is added to this subject folder.</p>
+          </div>
+          <div class="search-box" style="min-width:min(300px,100%)">
+            <span aria-hidden="true">🔎</span>
+            <input type="search" id="topicFilter" placeholder="Filter topics…"
+                   aria-label="Filter topics">
+          </div>
+        </div>
+
+        <div class="grid grid-3" id="topicGrid">
+          <div class="skeleton" style="height:84px"></div>
+          <div class="skeleton" style="height:84px"></div>
+          <div class="skeleton" style="height:84px"></div>
+        </div>
+
+        <!-- Telegram sidebar banner -->
+        <div class="banner-telegram reveal" style="margin-top:34px">
+          <div>
+            <div class="bt-title">✈ Get new quiz alerts on Telegram</div>
+            <div class="bt-sub">Every new topic file → instant notification in your pocket.</div>
+          </div>
+          <a class="btn btn-lg" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener"
+             style="margin-left:auto">Join →</a>
+        </div>
+
+        <div class="ad-slot reveal" style="margin-top:26px">
+          <div>
+            <div class="ad-label">Advertisement</div>
+            <p class="text-sm">Clean banner area for future promotions — no popups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-site-footer></div>
+
+  <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/subject.js" defer></script>
+</body>
+</html>

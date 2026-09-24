@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="glow" cx="76%" cy="50%" r="52%">
+      <stop offset="0%"  stop-color="#1b3a7a" stop-opacity="0.50"/>
+      <stop offset="65%" stop-color="#0a1230" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#04050a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#ffe9a8"/>
+      <stop offset="50%"  stop-color="#f0c14b"/>
+      <stop offset="100%" stop-color="#c9971f"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="#04050a"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- The logo: emblem only -->
+  <image href="logo-mark.png" xlink:href="logo-mark.png"
+         x="700" y="70" width="470" height="470" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- Brand name + tagline -->
+  <g font-family="Helvetica, Arial, sans-serif">
+    <rect x="80" y="132" width="70" height="3" fill="url(#gold)"/>
+    <text x="166" y="140" font-size="19" font-weight="700" letter-spacing="5"
+          fill="#f0c14b">QUIZ PORTAL</text>
+
+    <text x="80" y="238" font-size="56" font-weight="800" letter-spacing="1"
+          fill="#ffffff">HOUSE OF</text>
+    <text x="80" y="312" font-size="72" font-weight="800" letter-spacing="2"
+          fill="url(#gold)">ASPIRANTS</text>
+
+    <rect x="80" y="356" width="500" height="1.5" fill="#2a3557"/>
+
+    <text x="80" y="412" font-size="30" font-weight="700" fill="#ffffff">Practice Daily.</text>
+    <text x="80" y="456" font-size="30" font-weight="700" fill="#f0c14b">Crack Punjab Police.</text>
+
+    <text x="80" y="524" font-size="21" fill="#8e9ab8">Punjab Police · PSSSB · Daily Quiz · Leaderboard</text>
+    <text x="80" y="562" font-size="22" font-weight="700" fill="#f0c14b">t.me/HouseOfAspirants</text>
+  </g>
+</svg>

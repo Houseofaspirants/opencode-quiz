@@ -1,0 +1,68 @@
+{
+  "$note": "SUBJECT CONFIG (optional - no coding needed). This file only defines subject CARDS (name/icon/color). It contains ZERO questions and ZERO topics. Topics are 100% auto-detected from the JSON files you drop into questions/<subject>/. A new subject folder appearing in /questions is also auto-detected even if it is not listed here.",
+  "subjects": [
+    {
+      "id": "gk",
+      "name": "General Knowledge",
+      "short": "GK",
+      "icon": "🏛️",
+      "color": "#6366f1",
+      "description": "History, Polity, Geography, Punjab GK, Science and more.",
+      "order": 1
+    },
+    {
+      "id": "quant",
+      "name": "Quantitative Aptitude",
+      "short": "Quant",
+      "icon": "➗",
+      "color": "#0ea5e9",
+      "description": "Simplification, Percentage, Profit & Loss, TSD, DI and more.",
+      "order": 2
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning",
+      "short": "Reasoning",
+      "icon": "🧠",
+      "color": "#f59e0b",
+      "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
+      "order": 3
+    },
+    {
+      "id": "punjabi",
+      "name": "Punjabi",
+      "short": "Punjabi",
+      "icon": "ਸ",
+      "color": "#ec4899",
+      "description": "Grammar, Muhavare, Akhan, Vocabulary, Literature and more.",
+      "order": 4
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "short": "English",
+      "icon": "Aa",
+      "color": "#10b981",
+      "description": "Grammar, Vocabulary, Idioms, One Word, Error Detection and more.",
+      "order": 5
+    },
+    {
+      "id": "computer",
+      "name": "Computer",
+      "short": "Computer",
+      "icon": "💻",
+      "color": "#8b5cf6",
+      "description": "MS Office, Internet, Networking, OS, AI Basics, Cyber Security.",
+      "order": 6
+    },
+    {
+      "id": "current-affairs",
+      "name": "Current Affairs",
+      "short": "Current Affairs",
+      "icon": "📰",
+      "color": "#ef4444",
+      "description": "Daily, National, International, Sports and Punjab Current Affairs.",
+      "order": 7
+    }
+  ]
+}
