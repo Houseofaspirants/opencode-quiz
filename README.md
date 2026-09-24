@@ -347,8 +347,8 @@ vercel --prod # production deploy
 
 ### After deploying
 
-Update these places with your real domain (or keep the placeholder
-`https://house-of-aspirants.vercel.app`):
+If your domain ever changes, update it in these places (currently
+`https://houseofaspirants.in`):
 
 * `data/site.json` → `"url"`
 * `robots.txt` → sitemap line
@@ -472,8 +472,8 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 * `robots.txt` + auto-generated `sitemap.xml` (subject pages included)
 * Semantic HTML (`header/nav/main/section/footer`), single `h1`, alt text, skip link
 
-> Remember to swap `https://house-of-aspirants.vercel.app` for your real
-> domain in `data/site.json`, `robots.txt` and `index.html`.
+> The site URL lives in three places: `data/site.json`, `robots.txt` and
+> `index.html` — keep `https://houseofaspirants.in` in sync in all three.
 
 ---
 
