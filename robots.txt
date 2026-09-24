@@ -1,8 +1,9 @@
 # House of Aspirants Quiz Portal
-# NOTE: no "Disallow" rules on purpose. Pages that must not be indexed
-# (result, bookmarks, progress, daily/mock quiz modes) declare
-# <meta name="robots" content="noindex"> themselves - blocking them here
-# would stop search engines from ever seeing that tag.
+# NOTE: no "Disallow" rules on purpose - Google must be able to fetch every
+# page and read the <meta name="robots"> tag it declares. Personal, session-
+# based quiz modes (?mode=daily / ?mode=mock) flip themselves to noindex at
+# runtime, and the 404 page ships with noindex. Blocking those URLs here
+# would hide those directives from search engines.
 User-agent: *
 Allow: /
 

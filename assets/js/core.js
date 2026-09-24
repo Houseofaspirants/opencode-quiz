@@ -176,7 +176,7 @@ const HOA = (() => {
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="index.html" aria-label="House of Aspirants home">
-        <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="House of Aspirants logo">
+        <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="House of Aspirants logo" title="House of Aspirants" decoding="async">
         <span class="brand-name">House of Aspirants<span class="brand-sub">Quiz Portal</span></span>
       </a>
 
@@ -265,7 +265,7 @@ const HOA = (() => {
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html">
-            <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="">
+            <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="" title="House of Aspirants" loading="lazy" decoding="async">
             <span class="brand-name">House of Aspirants<span class="brand-sub">Quiz Portal</span></span>
           </a>
           <p>Practice Daily. Crack Punjab Police. A free, fast and offline-ready MCQ portal for
@@ -281,6 +281,8 @@ const HOA = (() => {
           <h4>Practice</h4>
           <a href="quiz.html?mode=daily">Daily Quiz</a>
           <a href="mock.html">Mock Tests</a>
+          <a href="subject.html?subject=gk">Previous Year Questions</a>
+          <a href="subject.html?subject=current-affairs">Expected MCQs</a>
           <a href="bookmarks.html">Bookmarks</a>
           <a href="progress.html">My Progress</a>
           <a href="leaderboard.html">Leaderboard</a>
@@ -288,6 +290,7 @@ const HOA = (() => {
 
         <div class="footer-col">
           <h4>Subjects</h4>
+          <a href="index.html#subjects">All Subjects</a>
           ${SUBJECT_LINKS.map(
             ([id, , name]) => `<a href="subject.html?subject=${id}">${name}</a>`
           ).join("")}
@@ -496,8 +499,21 @@ const HOA = (() => {
   /* Dynamic SEO helpers — pages addressed by query params (?subject=, ?topic=,
      ?mode=) refresh their own canonical / robots / social tags so every topic
      has a unique, indexable identity. Safe to call more than once. */
-  function seo({ title, canonical, robots, ogTitle, ogDescription } = {}) {
+  function seo({ title, canonical, robots, ogTitle, ogDescription, description } = {}) {
     if (title) document.title = title;
+
+    /* Unique meta description per topic/category (ogDescription doubles as it
+       when no explicit description is passed). */
+    const desc = description || ogDescription;
+    if (desc) {
+      let d = document.querySelector('meta[name="description"]');
+      if (!d) {
+        d = document.createElement("meta");
+        d.name = "description";
+        document.head.appendChild(d);
+      }
+      d.content = desc;
+    }
 
     if (robots) {
       let m = document.querySelector('meta[name="robots"]');
@@ -532,7 +548,10 @@ const HOA = (() => {
       if (tw) tw.content = val;
     };
     setPair("title", ogTitle || title);
-    setPair("description", ogDescription);
+    setPair("description", desc);
+    /* og:url must mirror the canonical — otherwise every ?subject= variant
+       shares one og:url and social scrapers see duplicate metadata. */
+    if (canonical) setPair("url", canonical);
   }
 
   let toastTimer = null;

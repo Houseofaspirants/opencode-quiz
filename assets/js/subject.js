@@ -45,6 +45,11 @@
       <h3>Unknown subject</h3>
       <p>This subject is not in your configuration. Check <code>data/subjects.json</code> or the folder name inside <code>questions/</code>.</p>
       <p class="mt-2"><a class="btn btn-primary" href="index.html">Back to Home</a></p></div>`;
+    /* Soft-404: a bare /subject or an unknown ?subject= must not be indexed
+       (same handling as an unknown ?category=). */
+    HOA.seo({ robots: "noindex, nofollow" });
+    const ldBad = document.getElementById("ldDynamic");
+    if (ldBad) ldBad.textContent = "";
     return;
   }
 
@@ -73,12 +78,19 @@
     desc = `All ${category.name} quizzes inside ${subject.name} — every topic in the folder is detected automatically.`;
     icon = category.icon || subject.icon;
   }
+  /* SERP meta description sized for the 140-160 snippet window — the short
+     `desc` above remains the visible subtitle under the h1. */
+  const metaDesc =
+    level === "category"
+      ? `${category.name} quizzes inside ${subject.name} - pick any topic and start free MCQ practice instantly for Punjab Police, PSSSB and competitive exams.`
+      : `Free ${subject.name} quiz with instant results and answer review - topic wise MCQ practice for Punjab Police, PSSSB and Punjab Government exam aspirants.`;
   HOA.seo({
     title: docTitle,
     canonical,
     robots: badCategory ? "noindex, nofollow" : "index, follow",
     ogTitle: docTitle,
     ogDescription: desc,
+    description: metaDesc,
   });
   titleEl.textContent = h1;
   descEl.textContent = desc;
@@ -101,6 +113,78 @@
     }
   } else if (crumbSubject) {
     crumbSubject.textContent = subject.name;
+  }
+
+  /* -------------------------------------------------------------- JSON-LD -
+   * Rebuilds the head's <script id="ldDynamic"> so the structured data
+   * matches EXACTLY the level that is rendered: a CollectionPage of what the
+   * grid shows + a BreadcrumbList with the same names the visible trail
+   * shows. A noindex render (?category= mismatch) clears the block.
+   * (topicHref is a function declaration further down — hoisted to scope.) */
+  const ldEl = document.getElementById("ldDynamic");
+  if (ldEl) {
+    if (badCategory) {
+      ldEl.textContent = "";
+    } else {
+      const subjectUrl = `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}`;
+      const crumbList = [
+        { name: "Home", url: `${siteBase}/` },
+        { name: "Subjects", url: `${siteBase}/#subjects` },
+        { name: subject.name, url: subjectUrl },
+      ];
+      if (level === "category") crumbList.push({ name: category.name, url: canonical });
+
+      let items = [];
+      if (level === "root") {
+        items = categories.map((c) => ({
+          name: c.name,
+          url: `${subjectUrl}&category=${encodeURIComponent(c.id)}`,
+        }));
+      } else {
+        const list = (level === "category" ? category.topics : subject.topics) || [];
+        items = list
+          .filter((t) => t.available)
+          .map((t) => ({ name: t.name, url: `${siteBase}/${topicHref(t)}` }));
+      }
+
+      const page = {
+        "@type": "CollectionPage",
+        url: canonical,
+        name:
+          level === "category"
+            ? `${category.name} - ${subject.name} Quizzes`
+            : `${subject.name} Quizzes`,
+        description: metaDesc,
+        isPartOf: { "@id": `${siteBase}/#website` },
+        inLanguage: "en-IN",
+      };
+      if (items.length) {
+        page.mainEntity = {
+          "@type": "ItemList",
+          numberOfItems: items.length,
+          itemListElement: items.map((it, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: it.name,
+            url: it.url,
+          })),
+        };
+      }
+      const breadcrumb = {
+        "@type": "BreadcrumbList",
+        itemListElement: crumbList.map((c, i) => ({
+          "@type": "ListItem",
+          position: i + 1,
+          name: c.name,
+          item: c.url,
+        })),
+      };
+      ldEl.textContent = JSON.stringify(
+        { "@context": "https://schema.org", "@graph": [page, breadcrumb] },
+        null,
+        2
+      );
+    }
   }
 
   /* ----------------------------------------------------------------- Stats -

@@ -372,12 +372,15 @@ if (index.stats.questions === 0) {
 if (site.url) {
   const base = String(site.url).replace(/\/+$/, "");
   const today = new Date().toISOString().slice(0, 10);
-  // ONLY indexable URLs are listed. Local-only pages (bookmarks, progress,
-  // result) declare noindex and must stay out of the sitemap.
+  // ONLY indexable URLs are listed. (bookmarks/progress/result are indexable
+  // utility pages — the 404 page and runtime noindex modes stay out.)
   const urls = [
     { loc: `${base}/`, p: "1.0" },
     { loc: `${base}/mock`, p: "0.9" },
     { loc: `${base}/leaderboard`, p: "0.7" },
+    { loc: `${base}/result`, p: "0.6" },
+    { loc: `${base}/bookmarks`, p: "0.5" },
+    { loc: `${base}/progress`, p: "0.5" },
     { loc: `${base}/about`, p: "0.6" },
     { loc: `${base}/contact`, p: "0.6" },
     { loc: `${base}/privacy`, p: "0.4" },

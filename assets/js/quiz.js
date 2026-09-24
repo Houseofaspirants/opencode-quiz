@@ -27,9 +27,19 @@
    * the topic's real category so it always matches the sitemap entry.
    * Daily / mock sessions are personal → kept out of the search index. */
   const siteBase = String(site.url || "").replace(/\/+$/, "");
+
+  /* Writes (or with `null`, clears) the head's <script id="ldDynamic"> so
+     structured data always mirrors the render — every noindex render clears
+     it so schema can never contradict robots/canonical. */
+  const setLd = (obj) => {
+    const el = document.getElementById("ldDynamic");
+    if (el) el.textContent = obj ? JSON.stringify(obj, null, 2) : "";
+  };
+
   if (mode !== "topic") {
     HOA.seo({ robots: "noindex, nofollow" });
     document.querySelector('link[rel="canonical"]')?.remove();
+    setLd(null); // daily / mock sessions are personal → no structured data
   }
   const SUBJECTS = idx.subjects || [];
 
@@ -672,6 +682,7 @@
     } else {
       HOA.seo({ robots: "noindex, nofollow" });
       document.querySelector('link[rel="canonical"]')?.remove();
+      setLd(null); // resolves to nothing → drop structured data too
     }
   }
 
@@ -698,6 +709,7 @@
             })();
     showEmpty("No questions available yet.", hint);
     document.title = "No questions yet - House of Aspirants";
+    setLd(null); // resolvable-but-empty topic → don't advertise a Quiz
     return;
   }
 
@@ -706,11 +718,47 @@
   els.sub.textContent = mode === "daily"
     ? "Daily Challenge"
     : `${QUIZ.subjectName || ""}${QUIZ.topicName && QUIZ.topicName !== QUIZ.title ? " · " + QUIZ.topicName : ""}`;
+  const metaDescLd =
+    `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs with timer, instant results and full answer review - free MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
   HOA.seo({
     title: `${QUIZ.title} Quiz - House of Aspirants`,
     ogTitle: `${QUIZ.title} Quiz - House of Aspirants`,
     ogDescription: `${QUIZ.subjectName ? QUIZ.subjectName + " · " : ""}${QUIZ.questions.length} MCQs with instant results & answer review.`,
+    description: metaDescLd,
   });
+
+  /* WebPage + Quiz schema mirrors the RESOLVED, indexable topic exactly.
+     Personal sessions (daily/mock) and empty states were cleared earlier. */
+  if (mode === "topic" && QUIZ.canonical) {
+    setLd({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": `${QUIZ.canonical}#webpage`,
+          url: QUIZ.canonical,
+          name: `${QUIZ.title} Quiz - House of Aspirants`,
+          description: metaDescLd,
+          isPartOf: { "@id": `${siteBase}/#website` },
+          inLanguage: "en-IN",
+        },
+        {
+          "@type": "Quiz",
+          url: QUIZ.canonical,
+          name: `${QUIZ.title} Quiz`,
+          description: metaDescLd,
+          about: { "@type": "Thing", name: QUIZ.title },
+          inLanguage: "en-IN",
+          isAccessibleForFree: true,
+          timeRequired: `PT${Math.max(
+            1,
+            Math.ceil((QUIZ.questions.length * (QUIZ.defaultSeconds || 30)) / 60)
+          )}M`,
+          publisher: { "@id": `${siteBase}/#organization` },
+        },
+      ],
+    });
+  }
 
   /* ------------------------------------------------- Resume saved session */
   const saved = HOA.db.get("session:" + QUIZ.key);
