@@ -74,12 +74,12 @@
 
     if (!live.length) {
       latestWrap.innerHTML = emptyBox("🚧", "No quizzes published yet.",
-        `The quiz engine is ready. Add your first JSON file, e.g. <code>questions/gk/polity.json</code>, and the card will appear here instantly.`);
+        `The quiz engine is ready. Add your first JSON file, e.g. <code>questions/gk/polity/your-topic.json</code>, and the card will appear here instantly.`);
     } else {
       latestWrap.innerHTML = live
         .slice(0, 8)
         .map((t) => `
-        <a class="card quiz-card" href="quiz.html?subject=${encodeURIComponent(t.subject.id)}&topic=${encodeURIComponent(t.id)}">
+        <a class="card quiz-card" href="quiz.html?subject=${encodeURIComponent(t.subject.id)}&topic=${encodeURIComponent(t.id)}${t.category ? `&category=${encodeURIComponent(t.category)}` : ""}">
           <span class="qc-icon">${t.subject.icon}</span>
           <span>
             <h4>${esc(t.name)}</h4>

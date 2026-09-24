@@ -210,7 +210,7 @@ const HOA = (() => {
           <span data-theme-icon>🌙</span>
         </button>
         <button class="btn btn-sm btn-soft install-bar hidden" data-action="install-app">⬇ Install</button>
-        <a class="btn btn-sm btn-telegram" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">✈ Telegram</a>
+        <a class="btn btn-sm btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
         <button class="icon-btn menu-toggle" data-action="open-menu" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -243,7 +243,7 @@ const HOA = (() => {
     <a class="mm-link" data-nav="contact" href="contact.html">✉️ Contact</a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> Toggle theme</button>
     <button class="mm-link" data-action="install-app">⬇ Install App</button>
-    <a class="mm-link" style="color:#229ed9" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">✈ Join Telegram</a>
+    <a class="mm-link" style="color:#229ed9" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
   </div>
 
   <div class="search-overlay hidden" id="searchOverlay" role="dialog" aria-label="Search">
@@ -271,7 +271,7 @@ const HOA = (() => {
           <p>Practice Daily. Crack Punjab Police. A free, fast and offline-ready MCQ portal for
              Punjab Police, PSSSB and competitive exam aspirants.</p>
           <div class="social-row">
-            <a class="social-link" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="social-link" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
             <a class="social-link" href="https://instagram.com/houseofaspirants" target="_blank" rel="noopener">📸 Instagram</a>
             <a class="social-link" href="https://youtube.com/@houseofaspirants" target="_blank" rel="noopener">▶ YouTube</a>
           </div>
@@ -297,7 +297,7 @@ const HOA = (() => {
           <h4>Company</h4>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
-          <a href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">Join Telegram</a>
+          <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms of Use</a>
         </div>
@@ -437,15 +437,25 @@ const HOA = (() => {
     });
 
     loadIndex().then((idx) => {
-      // Build a flat search index once: subjects + topics.
+      // Build a flat search index once: subjects + categories + topics.
       const flat = [];
       (idx.subjects || []).forEach((s) => {
         flat.push({ type: "subject", label: s.name, sub: `${s.topics.length} topics`,
                     href: `subject.html?subject=${s.id}`, icon: s.icon });
+        const catNames = {};
+        (s.categories || []).forEach((c) => {
+          catNames[c.id] = c.name;
+          flat.push({ type: "category", label: c.name, sub: s.name,
+                      href: `subject.html?subject=${s.id}&category=${c.id}`,
+                      icon: c.icon || s.icon });
+        });
         s.topics.forEach((t) =>
           flat.push({
-            type: "topic", label: t.name, sub: s.name,
-            href: t.available ? `quiz.html?subject=${s.id}&topic=${t.id}` : `subject.html?subject=${s.id}`,
+            type: "topic", label: t.name,
+            sub: t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name,
+            href: t.available
+              ? `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`
+              : `subject.html?subject=${s.id}${t.category ? `&category=${t.category}` : ""}`,
             icon: s.icon, count: t.count,
           })
         );

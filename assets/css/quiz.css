@@ -55,6 +55,13 @@
 
 /* Question card */
 .q-card { padding: clamp(18px, 3vw, 30px); }
+
+/* --- STABLE GEOMETRY (kills Cumulative Layout Shift) -----------------------
+   The question body keeps a constant footprint: 2 reserved lines of question
+   text + 4 reserved option rows. Shorter content fills the reserve, longer
+   content grows past it — but the nav buttons below never move vertically
+   between questions, and selecting an answer changes nothing at all. */
+.q-body { position: relative; }
 .q-head {
   display: flex; align-items: center; gap: 10px;
   flex-wrap: wrap; margin-bottom: 16px;
@@ -69,12 +76,19 @@
 .q-text {
   font-size: clamp(1.02rem, 2.2vw, 1.2rem);
   font-weight: 700; line-height: 1.55;
+  min-height: 3.1em; /* reserve 2 lines — 1-line ↔ 3-line questions don't shift the options */
   margin-bottom: 20px;
 }
 .q-text + .q-text { margin-top: -12px; }
 
 /* Options */
-.options { display: grid; gap: 11px; }
+.options {
+  --opt-row: 63px;  /* one option row: 28px padding + 32px key + 3px border */
+  --opt-gap: 11px;
+  display: grid; gap: var(--opt-gap);
+  /* reserve 4 rows so the control bar sits at the same place on every question */
+  min-height: calc(4 * var(--opt-row) + 3 * var(--opt-gap));
+}
 .option {
   display: flex; align-items: center; gap: 13px;
   width: 100%; text-align: left;
@@ -108,6 +122,18 @@
 /* Question controls */
 .q-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
 .q-controls .grow { flex: 1 1 auto; }
+
+/* ------------------------------------------------- QUESTION FADE (JS-added)
+   Runs ONLY when the question changes (never on answer selection). The
+   transform is GPU-only — it cannot shift layout or move the scroll pos. */
+.q-body.q-enter { animation: qFadeIn 0.17s var(--ease); }
+@keyframes qFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .q-body.q-enter { animation: none; }
+}
 
 /* -------------------------------------------------------- QUESTION PALETTE */
 .palette-card { padding: 20px; }
@@ -362,8 +388,28 @@
 }
 
 @media (min-width: 1000px) {
-  .quiz-layout { grid-template-columns: minmax(0, 1fr) 330px; align-items: start; }
-  .quiz-side { position: sticky; top: calc(var(--header-h) + 90px); display: grid; gap: 16px; }
+  .quiz-layout {
+    grid-template-columns: minmax(0, 1fr) 330px;
+    align-items: start;
+    /* STICKY TRAVEL ROOM: a grid item can only stick inside its own row, and
+       the palette column is nearly as tall as the question column. This floor
+       guarantees ≥ ~200px of pinning range at every viewport height, so the
+       palette stays parked below the top bar while you answer. Adds ~110px of
+       breathing space below the columns when natural content is shorter. */
+    min-height: 800px;
+  }
+  /* STICKY side panel: parks exactly below header + top bar (JS publishes
+     --topbar-h). Capped so it always stays shorter than its grid row; inner
+     scroll + overscroll containment → wheeling over the palette scrolls ONLY
+     the palette, never the page. */
+  .quiz-side {
+    position: sticky;
+    top: calc(var(--header-h) + var(--topbar-h, 90px) + 12px);
+    display: grid; gap: 16px;
+    max-height: min(680px, calc(100vh - var(--header-h) - var(--topbar-h, 90px) - 26px));
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
 }
 
 @media (max-width: 999px) {

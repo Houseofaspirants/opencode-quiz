@@ -208,7 +208,7 @@
 
   /* ------------------------------------------- 8. TELEGRAM CTA (post quiz) */
   const tgLink = (HOA.db.get("indexCache")?.site?.telegram) ||
-    "https://t.me/HouseOfAspirants";
+    "https://t.me/HouseOfAspirant";
   document.querySelectorAll("[data-telegram]").forEach((a) => (a.href = tgLink));
 
   /* -------------------------------------------------- 9. RETAKE BUTTON --

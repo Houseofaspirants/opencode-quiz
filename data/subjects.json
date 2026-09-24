@@ -1,5 +1,6 @@
 {
-  "$note": "SUBJECT CONFIG (optional - no coding needed). This file only defines subject CARDS (name/icon/color). It contains ZERO questions and ZERO topics. Topics are 100% auto-detected from the JSON files you drop into questions/<subject>/. A new subject folder appearing in /questions is also auto-detected even if it is not listed here.",
+  "$note": "SUBJECT CONFIG (no coding needed). This file defines subject CARDS (name/icon/color) and, optionally, their CATEGORIES. It contains ZERO questions. Topics (JSON quiz files) are 100% auto-detected from folders: flat subjects read questions/<subject>/*.json; subjects with \"categories\" read questions/<subject>/<category-folder>/*.json. New subject folders are auto-detected even if not listed here.",
+  "$categories": "OPTIONAL per subject. Add \"categories\" only where you want the 3-level hierarchy: Subject > Category > Topic > Quiz. Two forms are accepted: (a) a plain name string - the folder name is auto-generated from it (\"Punjab GK\" -> questions/gk/punjab-gk/, \"Geography & Environment\" -> questions/gk/geography-environment/); (b) an object { \"name\": \"...\", \"folder\": \"...\", \"icon\": \"...\" } when you want to control the folder name or icon yourself. Subjects without \"categories\" keep the original flat layout (questions/<subject>/*.json) and are unaffected. A category folder that exists on disk but is not listed here is auto-appended, so nothing ever gets hidden.",
   "subjects": [
     {
       "id": "gk",
@@ -8,7 +9,15 @@
       "icon": "🏛️",
       "color": "#6366f1",
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
-      "order": 1
+      "order": 1,
+      "categories": [
+        "Polity",
+        "History",
+        "Punjab GK",
+        "Geography & Environment",
+        "Economy",
+        "Others"
+      ]
     },
     {
       "id": "quant",

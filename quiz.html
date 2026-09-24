@@ -58,15 +58,20 @@
       <!-- ================== QUIZ LAYOUT: question card + palette sidebar -->
       <div class="quiz-layout" id="quizMain">
         <section class="card q-card" aria-live="polite">
-          <div class="q-head">
-            <span class="q-number" id="qNum">#1</span>
-            <span class="badge badge-muted" id="qDifficulty"></span>
-            <span class="badge" id="qTopic"></span>
+          <!-- Only THIS block is replaced when the question changes. The nav
+               buttons, palette, timers and progress bar are persistent nodes
+               updated in place → no rebuild, no focus loss, no page movement. -->
+          <div class="q-body" id="qBody">
+            <div class="q-head">
+              <span class="q-number" id="qNum">#1</span>
+              <span class="badge badge-muted" id="qDifficulty"></span>
+              <span class="badge" id="qTopic"></span>
+            </div>
+
+            <h2 class="q-text" id="qText">Loading question…</h2>
+
+            <div class="options" id="options"><!-- buttons injected --></div>
           </div>
-
-          <h2 class="q-text" id="qText">Loading question…</h2>
-
-          <div class="options" id="options"><!-- buttons injected --></div>
 
           <div class="q-controls">
             <button class="btn" id="btnPrev">← Previous</button>
@@ -103,7 +108,7 @@
           <div class="card side-telegram">
             <h4>✈ House of Aspirants</h4>
             <p>Daily free PDFs, current affairs & exam updates.</p>
-            <a class="btn btn-block" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener">Join Telegram</a>
+            <a class="btn btn-block" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           </div>
         </aside>
       </div>

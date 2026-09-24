@@ -44,7 +44,7 @@ Punjab Government Exam and other competitive exam aspirants.
 | Quiz engine | Palette, progress bar, per-question timer, overall timer, auto-next, answer lock, mark for review, skip, keyboard nav, autosave/resume, bookmark |
 | Result | Score ring, accuracy, pass/fail, time taken, subject-wise performance, weak/strong areas, full answer review with explanation & reference |
 | Extras | Dark/light mode, instant search, streaks, achievements, leaderboard (backend-ready), Telegram branding, ad slots, offline PWA with install button |
-| Content | **Ships 100% empty** — `questions/` contains only empty subject folders |
+| Content | **Ships 100% empty** — `questions/` contains only empty folders (each with a `.gitkeep`) |
 
 **You only ever edit two kinds of files:**
 
@@ -64,7 +64,7 @@ Everything else (nav, cards, counts, search, sitemap) updates by itself.
 house-of-aspirants/
 │
 ├── index.html                 ← Home page
-├── subject.html               ← Topic list of one subject (?subject=gk)
+├── subject.html               ← Categories/topics (?subject=gk | ?subject=gk&category=polity)
 ├── quiz.html                  ← Quiz engine (?subject=gk&topic=polity | ?mode=daily | ?mode=mock)
 ├── result.html                ← Result + answer review
 ├── mock.html                  ← Mock test builder
@@ -74,13 +74,21 @@ house-of-aspirants/
 ├── about.html · contact.html · privacy.html · terms.html · 404.html
 │
 ├── questions/                 ★ YOUR QUESTION BANK (starts EMPTY)
-│   ├── gk/                    ← General Knowledge topic files
-│   ├── quant/                 ← Quantitative Aptitude
-│   ├── reasoning/
-│   ├── punjabi/
-│   ├── english/
-│   ├── computer/
-│   └── current-affairs/
+│   │   FLAT:         questions/<subject>/<topic>.json
+│   │   CATEGORIZED:  questions/<subject>/<category>/<topic>.json
+│   ├── gk/                    ← General Knowledge = CATEGORIZED (see below)
+│   │   ├── polity/            ← one category = one folder; the folder list
+│   │   ├── history/              comes from "categories" in data/subjects.json
+│   │   ├── punjab-gk/
+│   │   ├── geography-environment/
+│   │   ├── economy/
+│   │   └── others/
+│   ├── quant/                 ← Quantitative Aptitude (FLAT: topics directly inside)
+│   ├── reasoning/             ← FLAT
+│   ├── punjabi/               ← FLAT
+│   ├── english/               ← FLAT
+│   ├── computer/              ← FLAT
+│   └── current-affairs/       ← FLAT
 │       (each folder holds only .gitkeep until you add a .json file)
 │
 ├── templates/
@@ -121,21 +129,38 @@ house-of-aspirants/
 ## 3. How the auto-detection works
 
 ```
-questions/gk/polity.json   →   appears as a quiz card on the GK page
-edit the file               →   question counts refresh automatically
-delete the file             →   quiz card disappears automatically
-create questions/new-topic/ →   a brand-new subject card appears everywhere
+FLAT subject (e.g. Punjabi):
+questions/punjabi/punjabi-mcq-10.json   →  Punjabi Mcq 10 topic card
+
+CATEGORIZED subject (e.g. General Knowledge):
+questions/gk/polity/constitution.json    →  Constitution under GK › Polity
+questions/gk/history/ancient-history.json→  Ancient History under GK › History
+
+edit the file                 →   question counts refresh automatically
+delete the file               →   quiz card disappears automatically
+create questions/new-subject/ →   a brand-new subject card appears everywhere
 ```
 
 Every deploy (GitHub → Vercel) runs **`scripts/build-index.mjs`**, which:
 
-1. scans every `questions/<subject>/*.json` file,
+1. scans every `questions/` folder:
+   * subjects **with** a `categories` list in `data/subjects.json` are read
+     one level deeper — `questions/<subject>/<category>/<topic>.json`
+     (Subject › Category › Topic),
+   * subjects **without** that key stay flat — `questions/<subject>/<topic>.json`,
 2. counts the questions and validates the format,
 3. writes `data/index.json` (the manifest the website reads),
 4. regenerates `sitemap.xml`.
 
-You never touch any JavaScript, and **topics are never hardcoded** — the
-subject page shows as many topic cards as files you have, sorted by name.
+You never touch any JavaScript, and **topics are never hardcoded** — the page
+shows as many cards as files you have, sorted by name. Drop
+`questions/gk/polity/parliament.json` into place and the *Parliament* card
+appears on the GK › Polity page after the next deploy, with its own question
+count and Play button.
+
+A category folder that exists on disk but is missing from `subjects.json` is
+**auto-added** (name humanized from the folder name), so nothing you upload
+can ever stay invisible — add it to the config later for a custom name/icon.
 
 The build is **non-fatal**: an invalid file is reported as a warning and
 skipped, so one broken JSON never breaks the whole deploy.
@@ -157,7 +182,7 @@ python3 scripts/build_index.py     # same output as build-index.mjs
 ### Step 1 — Copy the template
 
 ```
-templates/topic-template.json   →   questions/gk/polity.json
+templates/topic-template.json   →   questions/gk/polity/your-topic.json
 ```
 
 (The template contains `"questions": []` — it is a blank slate, not a quiz.)
@@ -240,11 +265,38 @@ Top-level file may be an **array of questions** or an **object** with
 ```
 
 `subjects.json` describes the **card only** (name, icon, colour, description,
-order). It contains **no topic list** — topics always come from your files.
+order) plus — optionally — its **`categories`** list (next section). It
+contains **no topic list** — topics always come from your files.
 
 New subjects automatically appear in: home page grid, nav bar, mobile menu,
 footer, search, page title and sitemap. If you skip step 3 the subject still
 works; it just uses a default icon/colour.
+
+### Categories — Subject › Category › Topic (optional, per subject)
+
+Add a `categories` array to any subject in `data/subjects.json` to give it a
+third level — this is how General Knowledge works today:
+
+```json
+{ "id": "gk", "name": "General Knowledge", "short": "GK", "icon": "🏛️",
+  "color": "#6366f1", "description": "…", "order": 1,
+  "categories": ["Polity", "History", "Punjab GK",
+                 "Geography & Environment", "Economy", "Others"] }
+```
+
+* Opening the subject shows **only the category cards**; clicking one lists
+  every JSON file inside `questions/gk/<category>/` as a topic card
+  (name, question count, Play) — all read from the files, never hardcoded.
+* Plain strings are enough: the folder is generated from the name
+  (`"Punjab GK"` → `questions/gk/punjab-gk/`). Use an object
+  `{ "name": "…", "folder": "…", "icon": "…" }` when you want to control
+  the folder name or icon yourself.
+* Subjects **without** `categories` keep the original flat layout and are
+  completely unaffected. To categorize another subject later (Computer,
+  Punjabi, English, Reasoning, Maths), create the category folders first —
+  the build auto-appends any folder it finds — then add the config.
+* Unlimited categories and unlimited topics per subject, with no code
+  changes ever.
 
 ---
 
@@ -359,7 +411,7 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 ```json
 {
   "url": "https://your-domain.com",   // used for sitemap + canonical tags
-  "telegram": "https://t.me/HouseOfAspirants",
+  "telegram": "https://t.me/HouseOfAspirant",
   "instagram": "https://instagram.com/houseofaspirants",
   "youtube": "https://youtube.com/@houseofaspirants",
   "questionSeconds": 30,               // per-question timer
@@ -369,7 +421,7 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 }
 ```
 
-### `data/subjects.json` — subject cards only
+### `data/subjects.json` — subject cards (+ optional categories)
 
 ```json
 {
@@ -377,13 +429,20 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
     { "id": "gk", "name": "General Knowledge", "short": "GK",
       "icon": "🏛️", "color": "#6366f1",
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
-      "order": 1 }
+      "order": 1,
+      "categories": ["Polity", "History", "Punjab GK",
+                     "Geography & Environment", "Economy", "Others"] }
   ]
 }
 ```
 
 * `id` **must** equal the folder name in `questions/`.
 * There is **no `topics` array** — topics are detected from files at build time.
+* `categories` is **optional**: add it only where you want the 3-level
+  hierarchy (Subject › Category › Topic). Either plain name strings (folder
+  name auto-generated) or `{ "name": "…", "folder": "…", "icon": "…" }`
+  objects. Omit the key and the subject stays flat. Category folders found
+  on disk but not listed here are auto-appended by the build.
 
 ---
 
@@ -476,7 +535,8 @@ Swap those functions and the rest of the site keeps working — no rewrite.
 
 | Symptom | Fix |
 |---|---|
-| Topic not showing | File must be `questions/<subject>/<name>.json` with valid JSON. Run the build and read its warnings. |
+| Topic not showing | Flat: `questions/<subject>/<topic>.json` · Categorized: `questions/gk/polity/<topic>.json` — valid JSON, then run the build and read its warnings. |
+| Category page shows 0 topics | The file must sit inside the category folder (`questions/gk/polity/x.json`), not directly in `questions/gk/`. |
 | Page is blank locally | You opened `file://` — use `npm start` or `python3 -m http.server 8000`. |
 | Stats still 0 after adding questions | Redeploy / run the build; the manifest is generated at build time. |
 | Build warning about a question | Fix the mentioned Q number (missing `q`, `options` or `correct`). The build never fails — it skips bad files. |
@@ -489,7 +549,7 @@ Swap those functions and the rest of the site keeps working — no rewrite.
 
 ### Support
 
-* Telegram: [t.me/HouseOfAspirants](https://t.me/HouseOfAspirants)
+* Telegram: [t.me/HouseOfAspirant](https://t.me/HouseOfAspirant)
 * Instagram · YouTube — links in the site footer.
 
 **© House of Aspirants** — Practice Daily. Crack Punjab Police.

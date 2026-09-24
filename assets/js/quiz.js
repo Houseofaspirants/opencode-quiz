@@ -23,22 +23,13 @@
   const site = idx.site || {};
 
   /* ------------------------------------------------------- Dynamic SEO -
-   * Topic quizzes are indexable and get their own canonical URL.
+   * The canonical is set AFTER the quiz resolves (further down), built from
+   * the topic's real category so it always matches the sitemap entry.
    * Daily / mock sessions are personal → kept out of the search index. */
   const siteBase = String(site.url || "").replace(/\/+$/, "");
-  if (mode === "topic") {
-    const sParam = params.get("subject") || "";
-    const tParam = params.get("topic") || "";
-    if (sParam && tParam) {
-      HOA.seo({
-        canonical: `${siteBase}/quiz?subject=${encodeURIComponent(sParam)}&topic=${encodeURIComponent(tParam)}`,
-        robots: "index, follow",
-      });
-    }
-  } else {
+  if (mode !== "topic") {
     HOA.seo({ robots: "noindex, nofollow" });
-    const canon = document.querySelector('link[rel="canonical"]');
-    if (canon) canon.remove();
+    document.querySelector('link[rel="canonical"]')?.remove();
   }
   const SUBJECTS = idx.subjects || [];
 
@@ -50,6 +41,7 @@
     qDifficulty: document.getElementById("qDifficulty"),
     qTopicTag: document.getElementById("qTopic"),
     qText: document.getElementById("qText"),
+    qBody: document.getElementById("qBody"),
     options: document.getElementById("options"),
     palette: document.getElementById("palette"),
     fill: document.getElementById("progressFill"),
@@ -68,6 +60,44 @@
   };
 
   let QUIZ = null; // { title, subject, topic, questions[], key, defaults }
+
+  /* ======================================= 0b. SCROLL-STABILITY HELPERS ===
+   * Hard rule: the page never moves on its own. Answer taps, next/prev/skip,
+   * palette jumps, mark, bookmark and auto-save all keep the exact scroll
+   * position the user left the page at (desktop and mobile).
+   *
+   * keepScroll() is the safety net: run a DOM mutation, then in the NEXT
+   * animation frame restore the position — instantly — but only if something
+   * (typically browser focus handling) nudged the page. */
+  const SCROLL_KEY = "hoa:quiz:scrollY";
+
+  function instantScrollTo(y) {
+    // The global `scroll-behavior: smooth` would animate a programmatic
+    // restore (that itself is a visible jump) → force an atomic scroll.
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = "auto";
+    window.scrollTo(0, y);
+    html.style.scrollBehavior = prev;
+  }
+
+  function keepScroll(mutate) {
+    const y = window.scrollY;
+    mutate();
+    requestAnimationFrame(() => {
+      if (window.scrollY !== y) instantScrollTo(y);
+    });
+  }
+
+  /* Publish the sticky top-bar height (CSS: --topbar-h) so the palette always
+     parks exactly below it, whatever the title length / loaded font. */
+  const topbarEl = document.getElementById("quizTop");
+  if (topbarEl && "ResizeObserver" in window) {
+    const syncTopbar = () =>
+      document.documentElement.style.setProperty("--topbar-h", `${topbarEl.offsetHeight}px`);
+    syncTopbar();
+    new ResizeObserver(syncTopbar).observe(topbarEl);
+  }
 
   /* ============================================ 1. RESOLVE QUIZ CONTENT = */
   async function resolveQuiz() {
@@ -169,17 +199,31 @@
       }
     }
     const perQ = Number(meta.questionSeconds) || Number(site.questionSeconds) || 30;
+    // Categorized topics carry their category id on the record (set by the
+    // build). The category is read from the MANIFEST, never from the URL, so
+    // session keys and canonicals stay stable with or without &category=.
+    const cat = topic.category
+      ? (subject.categories || []).find((c) => c.id === topic.category) || null
+      : null;
+    const qs =
+      `subject=${encodeURIComponent(subject.id)}&topic=${encodeURIComponent(topic.id)}` +
+      (cat ? `&category=${encodeURIComponent(cat.id)}` : "");
     return {
       title: topic.name,
       subject: subject.id, subjectName: subject.name,
       subjectIcon: subject.icon,
       topicName: topic.name, topicId: topic.id,
-      key: `topic:${subject.id}:${topic.id}`,
+      categoryFolder: cat ? cat.folder || cat.id : "",
+      file: topic.file || "",
+      // Flat subjects keep the original autosave key (existing sessions
+      // resume unchanged); categorized topics get their own namespace.
+      key: `topic:${subject.id}${cat ? ":" + cat.id : ""}:${topic.id}`,
+      canonical: `${siteBase}/quiz?${qs}`,
       questions,
       defaultSeconds: perQ,
       // Configurable overall timer: file "timeLimit" (sec) wins, else Q × per-Q.
       overall: Number(meta.timeLimit) || questions.length * perQ,
-      href: `quiz.html?subject=${subject.id}&topic=${topic.id}`,
+      href: `quiz.html?${qs}`,
     };
   }
 
@@ -223,76 +267,116 @@
 
   const attempted = () => S.answers.filter((a) => a !== null).length;
 
-  /* ==================================================== 3. RENDERING ==== */
+  /* ==================================================== 3. RENDERING ====
+   * PARTIAL UPDATES ONLY — the page is never rebuilt:
+   *   renderQuestion() swaps ONLY #qBody (new question) and fades it in,
+   *   paintOptions()   toggles classes on the existing option buttons,
+   *   paintPalette()   toggles classes on the existing palette cells,
+   *   paintMarkBtn()   swaps the label of the persistent mark button.
+   * Nav buttons / timers / progress / palette are built ONCE and never
+   * recreated → no focus loss, no scroll movement, no flicker, CLS = 0. */
   function renderQuestion() {
     const q = QUIZ.questions[S.i];
     if (!q) return;
-    S.visited[S.i] = true;
+    keepScroll(() => {
+      S.visited[S.i] = true;
 
-    els.qCount.textContent = `Question ${S.i + 1} of ${QUIZ.questions.length}`;
-    els.qText.innerHTML = esc(q.q);
+      // Releasing focus before replacing an option button stops mobile
+      // browsers from re-anchoring (scrolling) the page.
+      const act = document.activeElement;
+      if (act && els.options.contains(act) && act.blur) act.blur();
 
-    // Header badges: number, difficulty & topic tag (only if JSON provides them)
-    if (els.qNum) els.qNum.textContent = `#${S.i + 1}`;
-    if (els.qDifficulty) {
-      els.qDifficulty.textContent = q.difficulty || "";
-      els.qDifficulty.classList.toggle("hidden", !q.difficulty);
-    }
-    if (els.qTopicTag) {
-      const tag = q.topic || QUIZ.title || "";
-      els.qTopicTag.textContent = tag;
-      els.qTopicTag.classList.toggle("hidden", !tag);
-    }
+      els.qCount.textContent = `Question ${S.i + 1} of ${QUIZ.questions.length}`;
+      els.qText.innerHTML = esc(q.q);
 
-    els.options.innerHTML = q.options
-      .map((opt, i) => {
-        const sel = S.answers[S.i] === i;
-        return `<button class="option${sel ? " selected" : ""}" data-opt="${i}"
-          ${S.locked ? "disabled" : ""} aria-pressed="${sel}">
-          <span class="opt-key">${String.fromCharCode(65 + i)}</span>
-          <span>${esc(opt)}</span>
-        </button>`;
-      })
-      .join("");
+      // Header badges: number, difficulty & topic tag (only if JSON provides them)
+      if (els.qNum) els.qNum.textContent = `#${S.i + 1}`;
+      if (els.qDifficulty) {
+        els.qDifficulty.textContent = q.difficulty || "";
+        els.qDifficulty.classList.toggle("hidden", !q.difficulty);
+      }
+      if (els.qTopicTag) {
+        const tag = q.topic || QUIZ.title || "";
+        els.qTopicTag.textContent = tag;
+        els.qTopicTag.classList.toggle("hidden", !tag);
+      }
 
-    // Controls state
-    els.prev.disabled = S.i === 0 || S.locked;
-    els.next.disabled = S.i === QUIZ.questions.length - 1 || S.locked;
-    els.skip.disabled = S.locked;
-    els.mark.disabled = S.locked;
-    els.mark.className = `btn ${S.marks[S.i] ? "btn-soft" : ""}`;
-    els.mark.innerHTML = S.marks[S.i]
-      ? "✔ Marked for Review" : "📌 Mark for Review";
-    els.bookmark.innerHTML = bookmarks.has(bmKey())
-      ? "★ Bookmarked" : "☆ Bookmark";
+      els.options.innerHTML = q.options
+        .map((opt, i) => {
+          const sel = S.answers[S.i] === i;
+          return `<button class="option${sel ? " selected" : ""}" data-opt="${i}"
+            ${S.locked ? "disabled" : ""} aria-pressed="${sel}">
+            <span class="opt-key">${String.fromCharCode(65 + i)}</span>
+            <span>${esc(opt)}</span>
+          </button>`;
+        })
+        .join("");
 
-    // Per-question timer resets on navigation
-    S.qLeft = QUIZ.defaultSeconds;
-    updateTimers();
+      // Controls state — persistent nodes, updated in place (never replaced)
+      els.prev.disabled = S.i === 0 || S.locked;
+      els.next.disabled = S.i === QUIZ.questions.length - 1 || S.locked;
+      els.skip.disabled = S.locked;
+      els.mark.disabled = S.locked;
+      paintMarkBtn();
+      els.bookmark.innerHTML = bookmarks.has(bmKey())
+        ? "★ Bookmarked" : "☆ Bookmark";
 
-    renderPalette();
-    updateProgress();
-    save();
+      // Per-question timer resets on navigation
+      S.qLeft = QUIZ.defaultSeconds;
+      updateTimers();
+
+      paintPalette();
+      updateProgress();
+      save();
+
+      // Smooth 170ms fade-in for the NEW question (GPU transform only → CLS 0)
+      els.qBody.classList.remove("q-enter");
+      void els.qBody.offsetWidth; // restart the CSS animation
+      els.qBody.classList.add("q-enter");
+    });
   }
 
   const bmKey = () =>
     `${QUIZ.key}:${S.i}:${(QUIZ.questions[S.i]?.q || "").slice(0, 40)}`;
 
-  function renderPalette() {
+  /** Mark-button label — in place, so the control row never re-flows. */
+  function paintMarkBtn() {
+    els.mark.className = `btn ${S.marks[S.i] ? "btn-soft" : ""}`;
+    els.mark.innerHTML = S.marks[S.i]
+      ? "✔ Marked for Review" : "📌 Mark for Review";
+  }
+
+  /** Answer selection — class toggles ONLY (no innerHTML → no focus loss). */
+  function paintOptions() {
+    [...els.options.children].forEach((btn) => {
+      const i = Number(btn.dataset.opt);
+      const sel = S.answers[S.i] === i;
+      btn.classList.toggle("selected", sel);
+      btn.setAttribute("aria-pressed", String(sel));
+      if (S.locked) btn.disabled = true;
+    });
+  }
+
+  /** One-time palette build — cells are never recreated afterwards. */
+  function buildPalette() {
     els.palette.innerHTML = QUIZ.questions
-      .map((_, i) => {
-        const cls = [
-          "pal-btn",
-          S.answers[i] !== null ? "answered" : "",
-          S.marks[i] ? "marked" : "",
-          S.visited[i] ? "visited" : "",
-          i === S.i ? "current" : "",
-        ].filter(Boolean).join(" ");
-        return `<button class="${cls}" data-goto="${i}" aria-label="Question ${i + 1}">${
-          i + 1
-        }</button>`;
-      })
+      .map((_, i) =>
+        `<button class="pal-btn" data-goto="${i}" aria-label="Question ${i + 1}">${i + 1}</button>`
+      )
       .join("");
+  }
+
+  /** Palette state — class toggles on existing cells (keeps focus intact). */
+  function paintPalette() {
+    [...els.palette.children].forEach((cell, i) => {
+      cell.className = [
+        "pal-btn",
+        S.answers[i] !== null ? "answered" : "",
+        S.marks[i] ? "marked" : "",
+        S.visited[i] ? "visited" : "",
+        i === S.i ? "current" : "",
+      ].filter(Boolean).join(" ");
+    });
   }
 
   function updateProgress() {
@@ -317,16 +401,21 @@
   function go(i) {
     if (S.locked) return;
     if (i < 0 || i >= QUIZ.questions.length) return;
+    if (i === S.i) return; // same question → nothing to render, nothing to move
     S.i = i;
-    renderQuestion();
-    els.main.scrollIntoView({ behavior: "smooth", block: "start" });
+    renderQuestion(); // swaps #qBody in place — NEVER scrolls the page
   }
 
   function choose(optIndex) {
     if (S.locked) return;
-    S.answers[S.i] = optIndex;
-    renderQuestion();
-    // Auto-advance is deliberate: tap answer → next question.
+    keepScroll(() => {
+      S.answers[S.i] = optIndex;
+      paintOptions();  // class-only: the tapped button stays put & focused
+      paintPalette();
+      updateProgress();
+      save();          // silent auto-save (localStorage only, no UI)
+    });
+    // Auto-advance is deliberate: tap answer → next question (scroll untouched).
     if (S.i < QUIZ.questions.length - 1) {
       setTimeout(() => go(S.i + 1), 260);
     }
@@ -459,8 +548,12 @@
       else toast("This is the last question.");
     });
     els.mark.addEventListener("click", () => {
-      S.marks[S.i] = !S.marks[S.i];
-      renderQuestion();
+      keepScroll(() => {
+        S.marks[S.i] = !S.marks[S.i];
+        paintMarkBtn();  // label only — no question rebuild, no movement
+        paintPalette();
+        save();
+      });
       toast(S.marks[S.i] ? "Marked for review 📌" : "Unmarked");
     });
     els.bookmark.addEventListener("click", () => {
@@ -483,8 +576,11 @@
     els.submit.addEventListener("click", confirmSubmit);
 
     // Restart: wipe the autosaved session and reload a fresh attempt.
+    // The scroll position is stored first and restored after the reload, so
+    // restarting never throws the reader back to a different spot.
     document.getElementById("resumeReset")?.addEventListener("click", () => {
       if (!confirm("Restart this quiz? Your saved answers for it will be cleared.")) return;
+      try { sessionStorage.setItem(SCROLL_KEY, String(window.scrollY)); } catch { /* ignore */ }
       HOA.db.remove("session:" + QUIZ.key);
       location.reload();
     });
@@ -501,6 +597,27 @@
       else if (e.key.toLowerCase() === "s") els.skip.click();
       else if (e.key === "Enter") confirmSubmit();
     });
+
+    // Label swaps (Mark / Bookmark) must not resize their buttons — with
+    // white-space:nowrap a longer label would push the control row. Lock each
+    // button to its widest label (measured → exact on every device), twice:
+    // immediately, and again once webfonts finished loading.
+    const lockWidth = (btn, labels) => {
+      const keep = btn.textContent;
+      let max = 0;
+      for (const t of labels) {
+        btn.textContent = t;
+        max = Math.max(max, btn.getBoundingClientRect().width);
+      }
+      btn.textContent = keep;
+      if (max > 0) btn.style.minWidth = `${Math.ceil(max)}px`;
+    };
+    const lockWidths = () => {
+      lockWidth(els.mark, ["📌 Mark for Review", "✔ Marked for Review"]);
+      lockWidth(els.bookmark, ["☆ Bookmark", "★ Bookmarked"]);
+    };
+    lockWidths();
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(lockWidths);
   }
 
   function confirmSubmit() {
@@ -539,7 +656,7 @@
         <p>${hint}</p>
         <div class="btn-row mt-3" style="justify-content:center">
           <a class="btn btn-primary" href="index.html">Browse subjects</a>
-          <a class="btn btn-telegram" href="${site.telegram || "https://t.me/HouseOfAspirants"}"
+          <a class="btn btn-telegram" href="${site.telegram || "https://t.me/HouseOfAspirant"}"
              target="_blank" rel="noopener">Join Telegram</a>
         </div>
       </div>`;
@@ -547,12 +664,38 @@
 
   QUIZ = await resolveQuiz();
 
+  /* Canonical from the RESOLVED topic — includes &category= exactly as the
+     sitemap lists it. A URL that resolves to nothing → noindex. */
+  if (mode === "topic") {
+    if (QUIZ && QUIZ.canonical) {
+      HOA.seo({ canonical: QUIZ.canonical, robots: "index, follow" });
+    } else {
+      HOA.seo({ robots: "noindex, nofollow" });
+      document.querySelector('link[rel="canonical"]')?.remove();
+    }
+  }
+
   if (!QUIZ || !QUIZ.questions.length) {
     const hint =
       mode === "daily"
         ? `The Daily Challenge builds itself from your quiz files. Add questions under <code>questions/</code> to activate it.`
-        : `Create a file like <code>questions/${QUIZ?.subject || "gk"}/your-topic.json</code>
-           (start from <code>templates/topic-template.json</code>) and this page will load it instantly.`;
+        : QUIZ && QUIZ.file
+          ? `Open <code>${esc(QUIZ.file)}</code> and add questions to its <code>questions</code> array
+             (start from <code>templates/topic-template.json</code>) — this page will load it instantly.`
+          : (() => {
+              // Best-effort exact path, category folder included when given.
+              const sGuess = SUBJECTS.find((s) => s.id === params.get("subject"));
+              const cGuess =
+                sGuess && params.get("category")
+                  ? (sGuess.categories || []).find((c) => c.id === params.get("category")) || null
+                  : null;
+              const sub = sGuess ? sGuess.id : params.get("subject") || "gk";
+              const folder = cGuess ? cGuess.folder || cGuess.id : "";
+              const top = params.get("topic") || "your-topic";
+              return `Create a file like
+                <code>questions/${esc(sub)}/${folder ? esc(folder) + "/" : ""}${esc(top)}.json</code>
+                (start from <code>templates/topic-template.json</code>) and this page will load it instantly.`;
+            })();
     showEmpty("No questions available yet.", hint);
     document.title = "No questions yet - House of Aspirants";
     return;
@@ -589,8 +732,27 @@
   }
 
   wire();
+  buildPalette();
   renderQuestion();
   startTimers();
+
+  // Restart / reloads land on the exact same scroll position. The restore
+  // runs immediately AND again after `load` + 2 frames: the browser's own
+  // scroll restoration may finish later and would otherwise win the race.
+  let resumeTarget = NaN;
+  const scheduleResume = () =>
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => instantScrollTo(resumeTarget)));
+  try {
+    resumeTarget = Number(sessionStorage.getItem(SCROLL_KEY));
+    if (Number.isFinite(resumeTarget) && resumeTarget > 0) {
+      sessionStorage.removeItem(SCROLL_KEY);
+      scheduleResume();
+      if (document.readyState !== "complete") {
+        window.addEventListener("load", scheduleResume, { once: true });
+      }
+    }
+  } catch { /* storage unavailable (private mode) */ }
 
   // Warn before losing an in-progress quiz.
   window.addEventListener("beforeunload", save);

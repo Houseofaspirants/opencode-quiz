@@ -1,8 +1,9 @@
 {
-  "version": 1,
-  "generatedAt": "2026-09-24T00:00:00.000Z",
+  "version": 2,
+  "generatedAt": "2026-09-24T20:30:00.000Z",
   "stats": {
     "subjects": 7,
+    "categories": 6,
     "topics": 0,
     "quizzes": 0,
     "questions": 0,
@@ -15,7 +16,7 @@
     "description": "Topic-wise free MCQ practice for Punjab Police, PSSSB, Punjab Government Exams and other Competitive Exams. Daily Quiz, Leaderboard, Dark Mode and Offline PWA.",
     "url": "https://house-of-aspirants.vercel.app",
     "author": "House of Aspirants",
-    "telegram": "https://t.me/HouseOfAspirants",
+    "telegram": "https://t.me/HouseOfAspirant",
     "instagram": "https://instagram.com/houseofaspirants",
     "youtube": "https://youtube.com/@houseofaspirants",
     "studentsPracticed": 12500,
@@ -32,7 +33,51 @@
       "color": "#6366f1",
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
       "order": 1,
-      "topics": []
+      "topics": [],
+      "categories": [
+        {
+          "id": "polity",
+          "name": "Polity",
+          "folder": "polity",
+          "icon": "📁",
+          "topics": []
+        },
+        {
+          "id": "history",
+          "name": "History",
+          "folder": "history",
+          "icon": "📁",
+          "topics": []
+        },
+        {
+          "id": "punjab-gk",
+          "name": "Punjab GK",
+          "folder": "punjab-gk",
+          "icon": "📁",
+          "topics": []
+        },
+        {
+          "id": "geography-environment",
+          "name": "Geography & Environment",
+          "folder": "geography-environment",
+          "icon": "📁",
+          "topics": []
+        },
+        {
+          "id": "economy",
+          "name": "Economy",
+          "folder": "economy",
+          "icon": "📁",
+          "topics": []
+        },
+        {
+          "id": "others",
+          "name": "Others",
+          "folder": "others",
+          "icon": "📁",
+          "topics": []
+        }
+      ]
     },
     {
       "id": "quant",
@@ -42,7 +87,8 @@
       "color": "#0ea5e9",
       "description": "Simplification, Percentage, Profit & Loss, TSD, DI and more.",
       "order": 2,
-      "topics": []
+      "topics": [],
+      "categories": []
     },
     {
       "id": "reasoning",
@@ -52,7 +98,8 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
       "order": 3,
-      "topics": []
+      "topics": [],
+      "categories": []
     },
     {
       "id": "punjabi",
@@ -62,7 +109,8 @@
       "color": "#ec4899",
       "description": "Grammar, Muhavare, Akhan, Vocabulary, Literature and more.",
       "order": 4,
-      "topics": []
+      "topics": [],
+      "categories": []
     },
     {
       "id": "english",
@@ -72,7 +120,8 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word, Error Detection and more.",
       "order": 5,
-      "topics": []
+      "topics": [],
+      "categories": []
     },
     {
       "id": "computer",
@@ -82,7 +131,8 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics, Cyber Security.",
       "order": 6,
-      "topics": []
+      "topics": [],
+      "categories": []
     },
     {
       "id": "current-affairs",
@@ -92,7 +142,8 @@
       "color": "#ef4444",
       "description": "Daily, National, International, Sports and Punjab Current Affairs.",
       "order": 7,
-      "topics": []
+      "topics": [],
+      "categories": []
     }
   ]
 }

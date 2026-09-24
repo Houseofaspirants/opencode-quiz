@@ -1,21 +1,33 @@
 #!/usr/bin/env node
-/**
- * ============================================================================
+/* ============================================================================
  *  HOUSE OF ASPIRANTS QUIZ PORTAL - AUTO INDEX BUILDER
  * ----------------------------------------------------------------------------
  *  Scans the  questions/  folder and generates:
  *    • data/index.json   -> the single manifest consumed by the front-end
  *    • sitemap.xml       -> SEO sitemap (rebuilt on every deploy)
  *
+ *  HIERARCHY (3 levels, config-driven):
+ *      Subject  →  Category  →  Topic (one .json file)  →  Quiz
+ *
+ *    • Categories come from data/subjects.json ("categories" key per subject).
+ *      Subjects without that key keep the original FLAT layout:
+ *      questions/<subject>/*.json  →  topics directly under the subject.
+ *    • Topic files are ALWAYS auto-detected inside their folder:
+ *        questions/gk/polity/constitution.json   →  Polity › Constitution
+ *      Add a file = a topic card appears. Edit = updated. Delete = removed.
+ *      No topic name is ever hardcoded.
+ *    • A category folder that exists on disk but is missing from the config is
+ *      auto-appended, so nothing you upload can stay invisible.
+ *
  *  ADMIN WORKFLOW (NO CODE, EVER):
- *    1. Create one JSON file, e.g.  questions/gk/indian-history.json
+ *    1. Drop a JSON file into a category folder, e.g.
+ *         questions/gk/polity/constitution.json
  *    2. Push to GitHub  ->  Vercel runs this script automatically
- *    3. The topic appears as a quiz card. Edit = update. Delete = removed.
+ *    3. Subject › Category › Topic appears. Edit = update. Delete = removed.
  *
  *  IMPORTANT:
  *    • This script NEVER creates, generates or modifies questions.
  *    • It only READS your files and counts them.
- *    • The database starts completely EMPTY - that is expected.
  *    • Errors never crash the build: bad files are reported and skipped.
  * ============================================================================
  */
@@ -31,6 +43,16 @@ const DATA_DIR = path.join(ROOT, "data");
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const humanize = (id) =>
   String(id).replace(/[-_]+/g, " ").replace(/\b([a-z])/g, (m, c) => c.toUpperCase());
+/* Folder / category slug: "Geography & Environment" -> "geography-environment" */
+const slug = (s) =>
+  String(s)
+    .trim()
+    .toLowerCase()
+    .replace(/[&/\\]+/g, " ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+const hasJson = (dir) =>
+  fs.readdirSync(dir).some((f) => f.endsWith(".json"));
 
 let warnings = 0;
 const warn = (msg) => {
@@ -47,6 +69,31 @@ const subjectsPath = path.join(DATA_DIR, "subjects.json");
 const site = fs.existsSync(sitePath) ? readJSON(sitePath) : {};
 const meta = fs.existsSync(subjectsPath) ? readJSON(subjectsPath) : { subjects: [] };
 
+const configSubject = (id) =>
+  (meta.subjects || []).find((m) => m && m.id === id) || null;
+
+/** Configured categories for a subject, or null when the subject has none.
+ *  Accepts plain strings ("Polity") or objects ({name, folder, icon}). */
+function configCategories(subjectId) {
+  const m = configSubject(subjectId);
+  const list = m && Array.isArray(m.categories) ? m.categories : null;
+  if (!list) return null;
+  const out = [];
+  const seen = new Set();
+  for (const raw of list) {
+    if (!raw) continue;
+    const isStr = typeof raw === "string";
+    const name = isStr ? String(raw) : String(raw.name || raw.id || "").trim();
+    if (!name) continue;
+    const folder = (isStr ? slug(name) : String(raw.folder || raw.id || slug(name))).trim();
+    const id = (isStr ? slug(name) : String(raw.id || slug(name))).trim();
+    if (seen.has(id)) continue;
+    seen.add(id);
+    out.push({ id, name, folder, icon: isStr ? "" : String(raw.icon || "") });
+  }
+  return out;
+}
+
 /* ------------------------------------------------- 2. SUBJECT CONTAINERS */
 const subjects = new Map();
 
@@ -61,26 +108,116 @@ function ensureSubject(id, extra = {}) {
       description: "",
       order: 99,
       topics: [],
+      categories: [],
       _topicsById: new Map(),
+      _cats: null, // Map<folderKey, category> when the subject is hierarchical
     });
   }
   return Object.assign(subjects.get(id), extra);
 }
 
+/** Register (or fetch) a category inside a hierarchical subject. */
+function ensureCategory(subject, key, preset = {}) {
+  if (!subject._cats) subject._cats = new Map();
+  if (!subject._cats.has(key)) {
+    subject._cats.set(key, {
+      id: preset.id || key,
+      name: preset.name || humanize(key),
+      folder: preset.folder || "",
+      icon: preset.icon || "\u{1F4C1}",
+      topics: [],
+      _topicsById: new Map(),
+    });
+  }
+  return subject._cats.get(key);
+}
+
 /* --------------------------------------------- 3. SCAN questions/ FOLDER
- *  EVERY *.json file found here becomes one Topic (one Quiz).
- *  No file = no topic. Delete a file = topic disappears. Nothing else to do. */
-let questionFiles = [];
+ *  Flat subject     : questions/<subject>/*.json
+ *  Hierarchical     : questions/<subject>/<category>/*.json
+ *  Every *.json file becomes exactly one Topic. No file = no topic.        */
+let questionFiles = []; // { subjectId, file, full, rel, categoryId? }
 
 if (!fs.existsSync(QUESTIONS_DIR)) {
   warn("questions/ folder not found. Create it - subjects are detected from it.");
 } else {
-  for (const entry of fs.readdirSync(QUESTIONS_DIR, { withFileTypes: true })) {
+  for (const entry of fs.readdirSync(QUESTIONS_DIR, { withFileTypes: true }).sort((a, b) => a.name.localeCompare(b.name))) {
     if (!entry.isDirectory()) continue; // ignore stray files / .gitkeep
-    const subjectDir = path.join(QUESTIONS_DIR, entry.name);
-    for (const file of fs.readdirSync(subjectDir)) {
-      if (!file.endsWith(".json")) continue; // only JSON files become quizzes
-      questionFiles.push({ subjectId: entry.name, file, subjectDir });
+    const subjectId = entry.name;
+    const subjectDir = path.join(QUESTIONS_DIR, subjectId);
+    const subDirs = fs
+      .readdirSync(subjectDir, { withFileTypes: true })
+      .filter((d) => d.isDirectory())
+      .map((d) => d.name)
+      .sort(); // deterministic order on every OS (parity with build_index.py)
+
+    const cfgCats = configCategories(subjectId);
+    const hierarchical = !!cfgCats || subDirs.some((d) => hasJson(path.join(subjectDir, d)));
+
+    if (!hierarchical) {
+      /* ---- FLAT subject (unchanged original behaviour) ---------------- */
+      ensureSubject(subjectId);
+      for (const file of fs.readdirSync(subjectDir).sort()) {
+        if (!file.endsWith(".json")) continue;
+        questionFiles.push({
+          subjectId, file,
+          full: path.join(subjectDir, file),
+          rel: `questions/${subjectId}/${file}`,
+        });
+      }
+      continue;
+    }
+
+    /* ---- HIERARCHICAL subject: config order first, disk folders next -- */
+    const subject = ensureSubject(subjectId);
+    if (cfgCats) {
+      for (const c of cfgCats) {
+        ensureCategory(subject, slug(c.folder), { ...c, name: c.name });
+      }
+    }
+
+    for (const sub of subDirs) {
+      const subPath = path.join(subjectDir, sub);
+      const files = fs.readdirSync(subPath).filter((f) => f.endsWith(".json")).sort();
+      const key = slug(sub);
+      // Config match by slug(folder) | slug(name) | id — tolerant of naming.
+      const preset =
+        (cfgCats || []).find(
+          (c) => slug(c.folder) === key || slug(c.name) === key || c.id === key
+        ) || null;
+      const cat = ensureCategory(subject, preset ? slug(preset.folder) : key, {
+        id: preset ? preset.id : key,
+        name: preset ? preset.name : humanize(sub.trim()),
+        folder: preset ? preset.folder : sub.trim(),
+        icon: preset ? preset.icon : "",
+      });
+      if (!preset && files.length) {
+        info(`${subjectId}/${sub}/ - not in subjects.json, auto-added as category "${cat.name}"`);
+      }
+      for (const file of files) {
+        questionFiles.push({
+          subjectId, file, categoryId: cat.id,
+          full: path.join(subPath, file),
+          rel: `questions/${subjectId}/${sub}/${file}`,
+        });
+      }
+    }
+
+    /* JSON sitting directly in a hierarchical subject's root: never hide it */
+    for (const file of fs.readdirSync(subjectDir).sort()) {
+      if (!file.endsWith(".json")) continue;
+      warn(
+        `${subjectId}/${file} - not inside a category folder. ` +
+          `Move it into questions/${subjectId}/<category>/ so it shows under a category.`
+      );
+      ensureCategory(subject, "uncategorized", {
+        id: "uncategorized", name: "Uncategorized", folder: "",
+      });
+      questionFiles.push({
+        subjectId, file, categoryId: "uncategorized",
+        full: path.join(subjectDir, file),
+        rel: `questions/${subjectId}/${file}`,
+      });
     }
   }
 }
@@ -88,9 +225,7 @@ if (!fs.existsSync(QUESTIONS_DIR)) {
 let totalQuestions = 0;
 let quizCount = 0;
 
-for (const { subjectId, file, subjectDir } of questionFiles) {
-  const rel = `questions/${subjectId}/${file}`;
-  const full = path.join(subjectDir, file);
+for (const { subjectId, file, full, rel, categoryId } of questionFiles) {
   const id = file.replace(/\.json$/, "");
 
   let data;
@@ -102,9 +237,11 @@ for (const { subjectId, file, subjectDir } of questionFiles) {
   }
 
   // Accept: [ ...questions ]  OR  { "questions": [ ... ] }  OR { "mcqs": [...] }
+  // isObj also guards a JSON `null` file — property access on it must not throw.
+  const isObj = typeof data === "object" && data !== null && !Array.isArray(data);
   const questions = Array.isArray(data)
     ? data
-    : data.questions || data.mcqs || data.quiz || [];
+    : (isObj && (data.questions || data.mcqs || data.quiz)) || [];
 
   if (!Array.isArray(questions)) {
     warn(`${rel} - "questions" must be an array. File skipped.`);
@@ -131,17 +268,33 @@ for (const { subjectId, file, subjectDir } of questionFiles) {
 
   const subject = ensureSubject(subjectId);
   const isEmpty = questions.length === 0; // valid file, but 0 questions yet
-  subject._topicsById.set(id, {
+  const record = {
     id,
-    name: (typeof data === "object" && !Array.isArray(data) && (data.topic || data.title)) || humanize(id),
-    description: (typeof data === "object" && !Array.isArray(data) && data.description) || "",
+    name: (isObj && (data.topic || data.title)) || humanize(id),
+    description: (isObj && data.description) || "",
     file: rel,
     count: questions.length,
     empty: isEmpty,
     available: !isEmpty, // an "available" quiz = a quiz that has questions
-    timeLimit: Number(data.timeLimit) || 0,
+    timeLimit: Number(isObj ? data.timeLimit : 0) || 0,
     updatedAt: fs.statSync(full).mtimeMs,
-  });
+    ...(categoryId ? { category: categoryId } : {}),
+  };
+
+  if (subject._topicsById.has(id)) {
+    warn(`${rel} - topic id "${id}" already exists in subject "${subjectId}". Rename this file.`);
+  }
+  subject._topicsById.set(id, record);
+
+  const targetCat = categoryId
+    ? [...(subject._cats || new Map()).values()].find((c) => c.id === categoryId)
+    : null;
+  if (targetCat) {
+    if (targetCat._topicsById.has(id)) {
+      warn(`${rel} - duplicate topic id in category "${targetCat.id}". Rename this file.`);
+    }
+    targetCat._topicsById.set(id, record);
+  }
 
   totalQuestions += questions.length;
   if (!isEmpty) quizCount++;
@@ -162,25 +315,38 @@ for (const m of meta.subjects || []) {
 }
 
 /* --------------------------------------------------------- 5. FINAL SHAPE */
+const byName = (a, b) =>
+  a.name.localeCompare(b.name) || a.id.localeCompare(b.id);
+
 const outputSubjects = [...subjects.values()]
   .map((s) => {
-    const topics = [...s._topicsById.values()].sort(
-      (a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id)
-    );
+    const topics = [...s._topicsById.values()].sort(byName);
+    let categories = [];
+    if (s._cats && s._cats.size) {
+      categories = [...s._cats.values()].map((c) => {
+        const cTopics = [...c._topicsById.values()].sort(byName);
+        delete c._topicsById;
+        return { ...c, topics: cTopics };
+      });
+    }
     delete s._topicsById;
+    delete s._cats;
     delete s._fromConfig;
-    return { ...s, topics };
+    return { ...s, topics, categories };
   })
   .sort((a, b) => a.order - b.order || a.name.localeCompare(b.name));
 
 const countTopics = (fn) =>
   outputSubjects.reduce((n, s) => n + s.topics.filter(fn).length, 0);
+const countCategories = () =>
+  outputSubjects.reduce((n, s) => n + s.categories.length, 0);
 
 const index = {
-  version: 1,
+  version: 2,
   generatedAt: new Date().toISOString(),
   stats: {
     subjects: outputSubjects.length,
+    categories: countCategories(),
     topics: countTopics(() => true), // every JSON file = one topic
     quizzes: quizCount, // topics that currently hold questions
     questions: totalQuestions,
@@ -193,11 +359,12 @@ const index = {
 fs.mkdirSync(DATA_DIR, { recursive: true });
 fs.writeFileSync(path.join(DATA_DIR, "index.json"), JSON.stringify(index, null, 2));
 info(
-  `data/index.json - ${index.stats.subjects} subjects, ${index.stats.topics} topics, ${index.stats.quizzes} quizzes, ${index.stats.questions} questions`
+  `data/index.json - ${index.stats.subjects} subjects, ${index.stats.categories} categories, ` +
+    `${index.stats.topics} topics, ${index.stats.quizzes} quizzes, ${index.stats.questions} questions`
 );
 if (index.stats.questions === 0) {
   console.log(
-    "  \u2139 Database is EMPTY (as intended). Add questions/<subject>/<topic>.json to publish a quiz."
+    "  \u2139 Database is EMPTY (as intended). Add questions/<subject>/<category>/<topic>.json to publish a quiz."
   );
 }
 
@@ -218,8 +385,12 @@ if (site.url) {
   ];
   for (const s of outputSubjects) {
     urls.push({ loc: `${base}/subject?subject=${s.id}`, p: "0.9" });
+    for (const c of s.categories) {
+      urls.push({ loc: `${base}/subject?subject=${s.id}&category=${c.id}`, p: "0.85" });
+    }
     for (const t of s.topics.filter((x) => x.available)) {
-      urls.push({ loc: `${base}/quiz?subject=${s.id}&topic=${t.id}`, p: "0.8" });
+      const cat = t.category ? `&category=${encodeURIComponent(t.category)}` : "";
+      urls.push({ loc: `${base}/quiz?subject=${s.id}&topic=${t.id}${cat}`, p: "0.8" });
     }
   }
   const xml =
@@ -228,7 +399,7 @@ if (site.url) {
     urls
       .map(
         (u) =>
-          `  <url><loc>${u.loc}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.p}</priority></url>`
+          `  <url><loc>${u.loc.replace(/&/g, "&amp;")}</loc><lastmod>${today}</lastmod><changefreq>daily</changefreq><priority>${u.p}</priority></url>`
       )
       .join("\n") +
     `\n</urlset>\n`;

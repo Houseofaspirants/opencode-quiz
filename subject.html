@@ -44,10 +44,16 @@
   <main id="main">
     <section class="page-hero">
       <div class="container">
+        <!-- Flat sibling elements only: nested <span>s would MULTIPLY the
+             inherited .breadcrumb span { opacity: .6 } tint. Levels are
+             toggled (hidden class), never nested. -->
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span>
           <a href="index.html#subjects">Subjects</a><span>/</span>
+          <a id="crumbSubjectLink" class="hidden" href="subject.html">…</a>
           <span id="crumbSubject">…</span>
+          <span id="crumbSep" class="hidden">/</span>
+          <span id="crumbCategory" class="hidden"></span>
         </nav>
         <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
           <span class="subject-icon" id="subjectIcon" style="margin:0;font-size:1.6rem">📘</span>
@@ -59,7 +65,7 @@
 
         <div class="stats-grid mt-3" style="max-width:640px">
           <div class="stat-card"><div class="stat-num" id="countTopics">0</div>
-            <div class="stat-label">Topics</div></div>
+            <div class="stat-label" id="countTopicsLabel">Topics</div></div>
           <div class="stat-card"><div class="stat-num" id="countQuizzes">0</div>
             <div class="stat-label">Quizzes Live</div></div>
           <div class="stat-card"><div class="stat-num" id="countQuestions">0</div>
@@ -74,9 +80,9 @@
       <div class="container">
         <div class="section-head">
           <div>
-            <span class="eyebrow">Topics</span>
-            <h2>Pick a topic to start</h2>
-            <p>Topics appear automatically when a JSON file is added to this subject folder.</p>
+            <span class="eyebrow" id="secEyebrow">Topics</span>
+            <h2 id="secTitle">Pick a topic to start</h2>
+            <p id="secHint">Topics appear automatically when a JSON file is added to this subject folder.</p>
           </div>
           <div class="search-box" style="min-width:min(300px,100%)">
             <span aria-hidden="true">🔎</span>
@@ -97,7 +103,7 @@
             <div class="bt-title">✈ Get new quiz alerts on Telegram</div>
             <div class="bt-sub">Every new topic file → instant notification in your pocket.</div>
           </div>
-          <a class="btn btn-lg" href="https://t.me/HouseOfAspirants" target="_blank" rel="noopener"
+          <a class="btn btn-lg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
              style="margin-left:auto">Join →</a>
         </div>
 
