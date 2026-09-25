@@ -1,7 +1,8 @@
 /* ============================================================================
  * leaderboard.js | Leaderboard page
- * Reads through HOA.leaderboard, which is the single swap-point for a future
- * backend API (Firebase / Supabase / Node+Express).
+ * Local attempts always work offline; signed-in students additionally see the
+ * global Google-account board (Firestore, fetched through HOA.auth — the
+ * single swap-point for the backend, see README §20).
  * ========================================================================== */
 (() => {
   "use strict";
@@ -10,10 +11,14 @@
   const empty = document.getElementById("leadEmpty");
   const tabs = document.querySelectorAll("[data-period]");
   let period = "today";
+  let seq = 0; // stale-response guard for async cloud renders
+
+  const DAY = 864e5;
+  const periodStart = (p) =>
+    p === "today" ? Date.now() - DAY : p === "week" ? Date.now() - 7 * DAY : 0;
 
   /* A brand-new engine has no scores - never seed fake entries. */
-  function render() {
-    const rows = HOA.leaderboard.get(period);
+  function paint(rows) {
     if (!rows.length) {
       tbody.innerHTML = "";
       empty.classList.remove("hidden");
@@ -34,6 +39,27 @@
       .join("");
   }
 
+  async function render() {
+    const me = ++seq;
+    let rows = null;
+    if (HOA.auth && HOA.auth.cloudEnabled()) {
+      try {
+        const all = await HOA.auth.fetchScores();
+        if (me !== seq) return; // a newer render won the race
+        const start = periodStart(period);
+        rows = all
+          .filter((r) => !start || (r.at || 0) >= start)
+          .slice(0, 50)
+          .map((r) => ({ ...r, me: HOA.auth.isMe(r.uid) }));
+      } catch (e) {
+        console.warn("[leaderboard] global board unavailable, using local:", e && e.message);
+        if (me !== seq) return;
+      }
+    }
+    if (!rows) rows = HOA.leaderboard.get(period);
+    paint(rows);
+  }
+
   tabs.forEach((tab) =>
     tab.addEventListener("click", () => {
       tabs.forEach((t) => t.classList.remove("active"));
@@ -43,6 +69,6 @@
     })
   );
 
-  render();
+  (HOA.auth ? HOA.auth.ready : Promise.resolve()).then(render);
   window.addEventListener("storage", render); // live update across tabs
 })();

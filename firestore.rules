@@ -1,0 +1,56 @@
+rules_version = '2';
+
+// Firestore security rules for the House of Aspirants quiz portal.
+// Publish with:  firebase deploy --only firestore:rules
+// (or paste into Firebase Console → Firestore → Rules → Publish)
+//
+// Model: every signed-in student owns their own documents.
+//   users/{uid}                       profile + merged progress stats
+//   users/{uid}/attempts/{resultId}   one document per completed quiz
+//   leaderboard/{uid}_{at}            public attempt for the global board
+// The leaderboard is readable by everyone but only the owning student can
+// write their own rows, and only with a sane score shape.
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return signedIn() && request.auth.uid == uid;
+    }
+
+    function validAttempt(data) {
+      return data.percent is int && data.percent >= 0 && data.percent <= 100
+        && data.correct is int && data.correct >= 0
+        && data.total is int && data.total >= 0
+        && data.correct <= data.total
+        && data.keys().size() <= 14;
+    }
+
+    // ---------------------------------------------------------- profile ----
+    match /users/{uid} {
+      allow read, create, update: if isOwner(uid);
+      allow delete: if isOwner(uid);
+
+      // Quiz history — one doc per completed attempt (id = result id).
+      match /attempts/{attemptId} {
+        allow read, create, update, delete: if isOwner(uid);
+      }
+    }
+
+    // -------------------------------------------------------- leaderboard ---
+    match /leaderboard/{attemptId} {
+      allow read: if true;                       // public rankings
+      allow create, update: if signedIn()
+        && request.resource.data.uid == request.auth.uid
+        && validAttempt(request.resource.data)
+        && request.resource.data.name is string
+        && request.resource.data.name.size() <= 60;
+      allow delete: if signedIn()
+        && resource.data.uid == request.auth.uid; // students can clean up
+    }
+  }
+}

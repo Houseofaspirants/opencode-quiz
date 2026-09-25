@@ -90,8 +90,11 @@
           <section>
             <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem)">1. Overview</h2>
             <p class="muted">House of Aspirants Quiz Portal is a static website.
-               It has no user accounts, no login and no server-side database of
-               personal information.</p>
+               Starting a quiz asks you to sign in with Google; when you do, your
+               Google name, e-mail, profile photo and quiz statistics are stored
+               in Google Firebase so your progress and rankings follow your
+               account. Everything else stays in your browser — there are no
+               passwords and no tracking cookies.</p>
           </section>
 
           <section>
@@ -101,18 +104,20 @@
               <li>• <b><a class="ilink" href="progress.html">Results, progress &amp; streaks</a></b> — for your dashboard and badges.</li>
               <li>• <b><a class="ilink" href="bookmarks.html">Bookmarks</a></b> — questions you save for revision.</li>
               <li>• <b>Theme preference</b> — dark or light mode.</li>
-              <li>• <b><a class="ilink" href="leaderboard.html">Leaderboard attempts</a></b> — stored only in this browser.</li>
+              <li>• <b><a class="ilink" href="leaderboard.html">Leaderboard attempts</a></b> — kept in this browser, and mirrored to your Google account when signed in.</li>
             </ul>
             <p class="muted mt-2">All of this lives in your browser's
                <code>localStorage</code>. Clearing your browser data removes it,
-               and the “Reset progress” button deletes it instantly.</p>
+               and the “Reset progress” button deletes it instantly. Signed-in
+               students can ask us to delete their Firebase account data at any
+               time via the <a class="ilink" href="contact.html">contact page</a>.</p>
           </section>
 
           <section>
             <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem)">3. What we do NOT collect</h2>
             <ul class="muted" style="display:grid;gap:8px">
-              <li>• No names, emails or phone numbers</li>
-              <li>• No account registration</li>
+              <li>• No phone numbers, addresses or payment details</li>
+              <li>• No passwords (sign-in uses your Google account)</li>
               <li>• No tracking cookies</li>
               <li>• No selling or sharing of data (we have none to sell)</li>
             </ul>
@@ -151,5 +156,6 @@
 
   <div data-site-footer></div>
   <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/auth.js" defer></script>
 </body>
 </html>

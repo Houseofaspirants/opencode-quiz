@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-25T06:58:11.471Z",
+  "generatedAt": "2026-09-25T08:09:37.560Z",
   "stats": {
     "subjects": 7,
     "categories": 6,
@@ -22,7 +22,20 @@
     "studentsPracticed": 12500,
     "questionSeconds": 30,
     "dailyQuizSize": 20,
-    "passPercent": 40
+    "passPercent": 40,
+    "auth": {
+      "enabled": true,
+      "requireLogin": true,
+      "preview": true,
+      "firebase": {
+        "apiKey": "",
+        "authDomain": "",
+        "projectId": "",
+        "appId": "",
+        "messagingSenderId": "",
+        "storageBucket": ""
+      }
+    }
   },
   "subjects": [
     {

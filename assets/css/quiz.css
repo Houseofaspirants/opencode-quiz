@@ -252,8 +252,8 @@
   font-size: 0.85rem; font-weight: 700;
   border: 1.5px solid var(--border); background: var(--surface);
 }
-.area-chip.weak { border-color: color-mix(in srgb, var(--danger) 45%, transparent); color: var(--danger); background: color-mix(in srgb, var(--danger) 8%, var(--surface)); }
-.area-chip.strong { border-color: color-mix(in srgb, var(--success) 45%, transparent); color: var(--success); background: color-mix(in srgb, var(--success) 8%, var(--surface)); }
+.area-chip.weak { border-color: color-mix(in srgb, var(--danger) 45%, transparent); color: var(--danger-text); background: color-mix(in srgb, var(--danger) 8%, var(--surface)); }
+.area-chip.strong { border-color: color-mix(in srgb, var(--success) 45%, transparent); color: var(--success-text); background: color-mix(in srgb, var(--success) 8%, var(--surface)); }
 
 /* ------------------------------------------------------------ ANSWER REVIEW */
 .review-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 18px; }
@@ -285,9 +285,9 @@
 }
 .ans-line .tag { font-weight: 800; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; flex: none; }
 .ans-line.ok { border-color: color-mix(in srgb, var(--success) 40%, transparent); background: color-mix(in srgb, var(--success) 8%, var(--surface)); }
-.ans-line.ok .tag { color: var(--success); }
+.ans-line.ok .tag { color: var(--success-text); }
 .ans-line.bad { border-color: color-mix(in srgb, var(--danger) 40%, transparent); background: color-mix(in srgb, var(--danger) 7%, var(--surface)); }
-.ans-line.bad .tag { color: var(--danger); }
+.ans-line.bad .tag { color: var(--danger-text); }
 .review-note {
   font-size: 0.89rem; color: var(--text-2);
   padding: 11px 14px; border-radius: 11px;
@@ -335,7 +335,7 @@
 .dash-card .dc-val { font-size: 1.55rem; font-weight: 800; letter-spacing: -0.03em; }
 .dash-card .dc-lab { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
 
-.streak-flame { display: inline-flex; align-items: center; gap: 6px; color: var(--brand-3); font-weight: 800; }
+.streak-flame { display: inline-flex; align-items: center; gap: 6px; color: #ea580c; font-weight: 800; }
 
 .badge-grid { display: grid; gap: 13px; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
 .badge-card {
@@ -347,7 +347,7 @@
 .badge-card .bd-emoji { font-size: 1.9rem; margin-bottom: 7px; filter: grayscale(1); opacity: 0.4; }
 .badge-card.earned { border-color: color-mix(in srgb, var(--success) 45%, transparent); background: color-mix(in srgb, var(--success) 7%, var(--surface)); }
 .badge-card.earned .bd-emoji { filter: none; opacity: 1; }
-.badge-card h5 { font-size: 0.87rem; font-weight: 800; margin-bottom: 3px; }
+.badge-card h3 { font-size: 0.87rem; font-weight: 800; margin-bottom: 3px; }
 .badge-card p { font-size: 0.74rem; color: var(--muted); }
 
 /* ----------------------------------------------------------- MOCK BUILDER */

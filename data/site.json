@@ -11,5 +11,18 @@
   "studentsPracticed": 12500,
   "questionSeconds": 30,
   "dailyQuizSize": 20,
-  "passPercent": 40
+  "passPercent": 40,
+  "auth": {
+    "enabled": true,
+    "requireLogin": true,
+    "preview": true,
+    "firebase": {
+      "apiKey": "",
+      "authDomain": "",
+      "projectId": "",
+      "appId": "",
+      "messagingSenderId": "",
+      "storageBucket": ""
+    }
+  }
 }

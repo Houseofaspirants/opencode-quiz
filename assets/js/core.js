@@ -209,6 +209,9 @@ const HOA = (() => {
         <button class="icon-btn" data-action="toggle-theme" aria-label="Toggle dark mode">
           <span data-theme-icon>🌙</span>
         </button>
+        <a class="icon-btn auth-chip hidden" id="authChip" href="progress.html" title="Your account" aria-label="Your account">
+          <span class="auth-chip-face" id="authChipFace">?</span>
+        </a>
         <button class="btn btn-sm btn-soft install-bar hidden" data-action="install-app">⬇ Install</button>
         <a class="btn btn-sm btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
         <button class="icon-btn menu-toggle" data-action="open-menu" aria-label="Open menu" aria-expanded="false">☰</button>

@@ -572,6 +572,63 @@ except Exception as e:
     errors.append(f"vercel.json: header validation failed: {e}")
 notes.append("perf: deferred scripts, dns-prefetch x3, style+logo preloads, quantized images (-78%), explicit cache headers")
 
+# --- student quiz access flow: Google sign-in gate --------------------------
+# site.auth config (data/site.json) + auth.js on every page + flow buttons.
+try:
+    site_raw = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
+    auth_cfg = site_raw.get("auth")
+    if not isinstance(auth_cfg, dict):
+        errors.append("site.json: missing auth block (student access flow)")
+    else:
+        if auth_cfg.get("enabled") is not True:
+            errors.append("site.json: auth.enabled must be true")
+        if auth_cfg.get("requireLogin") is not True:
+            errors.append("site.json: auth.requireLogin must be true")
+        if not isinstance(auth_cfg.get("preview"), bool):
+            errors.append("site.json: auth.preview must be a boolean")
+        fb = auth_cfg.get("firebase")
+        if not isinstance(fb, dict):
+            errors.append("site.json: auth.firebase config block missing")
+        else:
+            for k in ("apiKey", "authDomain", "projectId", "appId"):
+                if k not in fb:
+                    errors.append(f"site.json: auth.firebase.{k} key missing")
+except Exception as e:
+    errors.append(f"site.json: auth validation failed: {e}")
+
+for page in PAGES:
+    html = (ROOT / page).read_text(encoding="utf-8")
+    if 'assets/js/auth.js' not in html:
+        errors.append(f"{page}: missing auth.js script tag")
+    elif html.find("assets/js/auth.js") < html.find("assets/js/core.js"):
+        errors.append(f"{page}: auth.js must load after core.js")
+
+auth_js = (ROOT / "assets/js/auth.js").read_text(encoding="utf-8")
+for marker in ("Continue with Google", 'aria-modal="true"', "syncResult", "fetchScores"):
+    if marker not in auth_js:
+        errors.append(f"auth.js: missing required marker {marker!r}")
+if "HOA.auth.ensure" not in (ROOT / "assets/js/mock.js").read_text(encoding="utf-8"):
+    errors.append("mock.js: mock-test start is not gated by HOA.auth.ensure")
+if "cloudEnabled" not in (ROOT / "assets/js/leaderboard.js").read_text(encoding="utf-8"):
+    errors.append("leaderboard.js: no global-board (cloud) rendering path")
+
+result_html = (ROOT / "result.html").read_text(encoding="utf-8")
+for marker in ("View Dashboard", 'href="progress.html"', "Attempt Another Quiz"):
+    if marker not in result_html:
+        errors.append(f"result.html: missing quiz-result action {marker!r}")
+
+progress_html = (ROOT / "progress.html").read_text(encoding="utf-8")
+if 'id="authAccount"' not in progress_html:
+    errors.append("progress.html: missing #authAccount container")
+if 'id="authChip"' not in (ROOT / "assets/js" / "core.js").read_text(encoding="utf-8"):
+    errors.append("core.js: missing #authChip account chip in header chrome")
+
+rules_path = ROOT / "firestore.rules"
+if not rules_path.exists() or "leaderboard" not in rules_path.read_text(encoding="utf-8"):
+    errors.append("firestore.rules: missing or incomplete (Firestore security rules)")
+
+notes.append("access: Google-sign-in quiz gate (site.auth), auth.js on all pages, Firestore rules + result Dashboard/Attempt actions")
+
 # --- report ----------------------------------------------------------------
 print(f"SEO audit — {DOMAIN}\n" + "=" * 60)
 for n in notes:

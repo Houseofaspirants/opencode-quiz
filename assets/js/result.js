@@ -69,6 +69,9 @@
       correct: r.correct, total: r.total, percent: r.percent, at: r.at,
     });
     HOA.db.set("submittedResults", [...submitted, r.id].slice(-50));
+    // Cloud sync — saves the attempt, the leaderboard score and merged stats
+    // to the student's Google account. No-op unless signed in with Firebase.
+    if (HOA.auth) HOA.auth.syncResult(r);
   }
   const rows = HOA.leaderboard.get("all");
   const myIndex = rows.findIndex((x) => x.at === r.at && x.me);

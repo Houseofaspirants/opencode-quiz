@@ -86,9 +86,18 @@
         <h1>Progress &amp; Achievements 📊</h1>
         <p class="muted">
           Everything below is computed from quizzes <b>you</b> actually attempted —
-          stored privately on this device. Compare your rank with others on the
+          saved on this device and, when you're signed in, synced to your Google
+          account. Compare your rank with others on the
           <a class="ilink" href="leaderboard.html">Leaderboard</a>.
         </p>
+      </div>
+    </section>
+
+    <!-- ============================================== GOOGLE ACCOUNT CARD
+         Rendered by auth.js only when the student is signed in. -->
+    <section class="section" style="padding-top:0;padding-bottom:0">
+      <div class="container">
+        <div class="auth-account hidden" id="authAccount"></div>
       </div>
     </section>
 
@@ -172,6 +181,7 @@
   <div data-site-footer></div>
 
   <script src="assets/js/core.js" defer></script>
+  <script src="assets/js/auth.js" defer></script>
   <script src="assets/js/dashboard.js" defer></script>
 </body>
 </html>

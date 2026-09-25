@@ -53,7 +53,10 @@
   });
 
   /* --------------------------------------------------------- Start ------- */
-  startBtn.addEventListener("click", () => {
+  startBtn.addEventListener("click", async () => {
+    // Quiz access flow: sign-in first (instant when already signed in).
+    const ok = !HOA.auth || (await HOA.auth.ensure());
+    if (!ok) return;
     const subject =
       document.querySelector("input[name='mockSubject']:checked")?.value || "all";
     const count = countSelect.value;

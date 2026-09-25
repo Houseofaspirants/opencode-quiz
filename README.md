@@ -32,7 +32,8 @@ Punjab Government Exam and other competitive exam aspirants.
 17. [Future backend migration](#17-future-backend-migration)
 18. [Scalability notes](#18-scalability-notes)
 19. [Study guides & articles (no code)](#19-study-guides--articles-no-code)
-20. [Troubleshooting](#20-troubleshooting)
+20. [Google sign-in & cloud sync (Firebase)](#20-google-sign-in--cloud-sync-firebase)
+21. [Troubleshooting](#21-troubleshooting)
 
 ---
 
@@ -420,7 +421,15 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
   "questionSeconds": 30,               // per-question timer
   "dailyQuizSize": 20,                 // questions in Daily Challenge
   "passPercent": 40,                   // pass line on result page
-  "studentsPracticed": 12500           // optional marketing number
+  "studentsPracticed": 12500,          // optional marketing number
+  "auth": {                            // Google-sign-in quiz gate (README §20)
+    "enabled": true,                   // false = whole feature inert
+    "requireLogin": true,              // quizzes check sign-in before opening
+    "preview": true,                   // demo sign-in until Firebase keys exist
+    "firebase": {                      // public web config — see §20
+      "apiKey": "", "authDomain": "", "projectId": "", "appId": ""
+    }
+  }
 }
 ```
 
@@ -463,6 +472,7 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 * **Leaderboard** — today / weekly / all-time tabs, API-ready interface.
 * **Search** — instant subject + topic filter, `Ctrl/⌘+K`.
 * **Dark mode** — toggle, remembered, matches system by default.
+* **Google sign-in access flow** — every quiz entry (daily, topic, mock, related cards) opens a blurred sign-in modal for signed-out visitors, remembers students automatically, and syncs progress, attempts and the global leaderboard to their Google account ([§20](#20-google-sign-in--cloud-sync-firebase)).
 * **PWA** — install button, offline quizzes, PNG app icons, shortcuts & splash colours.
 
 ---
@@ -521,6 +531,10 @@ interfaces in `assets/js/core.js`:
 
 Swap those functions and the rest of the site keeps working — no rewrite.
 
+Google sign-in already runs on this model: `assets/js/auth.js` exposes
+`HOA.auth.ensure / syncResult / fetchScores`, which talk to Firestore today
+and can be pointed at any other API tomorrow (see §20).
+
 ---
 
 ## 18. Scalability notes
@@ -577,7 +591,79 @@ subject pages straight from `subjects.json` + `index.json` + `articles.json`.
 
 ---
 
-## 20. Troubleshooting
+## 20. Google sign-in & cloud sync (Firebase)
+
+Every quiz entry point — Daily Quiz, topic quizzes, Latest-quiz cards,
+related-quiz links and Mock Tests — checks sign-in first. Signed-out
+visitors get a clean modal (background blur, benefits list, one
+**Continue with Google** button); after signing in they land **directly on the
+selected quiz**, never on an intermediate dashboard. Signed-in students are
+remembered automatically, so the gate never shows again.
+
+Everything is configured from `data/site.json` — no code changes, ever.
+
+### 20.1 The `site.auth` block
+
+| Key | Meaning |
+|---|---|
+| `enabled` | `false` → the whole feature is inert (old open behaviour) |
+| `requireLogin` | `true` → quizzes check sign-in; `false` → open access |
+| `preview` | `true` → demo sign-in (local only) until real Firebase keys exist |
+| `firebase.*` | Your Firebase **web** config — public by design; `firestore.rules` guards the data |
+
+Shipped default: `enabled: true`, `requireLogin: true`, `preview: true` — the
+full flow (modal → sign-in → quiz → result buttons → dashboard → leaderboard)
+works immediately with a local demo profile. **The moment you paste real
+Firebase keys, preview sign-in switches itself off automatically** — demo
+profiles can never reach your Firestore.
+
+### 20.2 Go live in 6 steps (free Spark plan)
+
+1. <https://console.firebase.google.com> → **Add project** (Analytics optional).
+2. **Build → Authentication → Get started → Sign-in method → Google → Enable** → Save.
+3. **Build → Firestore Database → Create database** → *Production mode* → region `asia-south1` (closest to India).
+4. **Project settings → Your apps → Web (`</>`)** → register the app → copy the `firebaseConfig` values.
+5. Paste them into `data/site.json` → `auth.firebase` (fill every key you received; leave optional ones as `""`).
+6. **Firestore → Rules** → paste the contents of [`firestore.rules`](firestore.rules) → **Publish**.
+
+Then deploy (git push / `vercel --prod`). Also add your domain under
+**Authentication → Settings → Authorised domains** (Firebase lists
+`localhost` and your project domain by default).
+
+### 20.3 What is stored where
+
+| Data | Where | Used by |
+|---|---|---|
+| Google name, e-mail, photo, uid | `users/{uid}` | account card, leaderboard name |
+| Progress stats (merged, never double-counted) | `users/{uid}` → `stats` | dashboard on any device |
+| One document per completed quiz | `users/{uid}/attempts/{resultId}` | quiz history |
+| Public attempt (name, score, %) | `leaderboard/{uid}_{at}` | global leaderboard |
+| Bookmarks, theme, resume data | this device (`localStorage`) | unchanged |
+
+Sync rules of thumb:
+
+* Stats merge with **field-wise maximums** — a second device can never
+  double-count or erase what you already earned.
+* The leaderboard shows the **global board** to signed-in students and the
+  local board to everyone else; offline always falls back to local.
+* Quiz attempts are written once per result id — refreshing a result page
+  never duplicates it.
+* Nothing syncs in `preview` mode; it is purely on-device.
+
+### 20.4 Troubleshooting the sign-in flow
+
+| Symptom | Fix |
+|---|---|
+| “Sign-in isn’t configured yet” | No Firebase keys and `preview` is `false` → do §20.2 or set `auth.preview: true`. |
+| “This domain isn’t authorised” | Firebase Console → Authentication → Settings → **Authorised domains** → add `houseofaspirants.in`. |
+| “Google sign-in is switched off” | Authentication → Sign-in method → **Google → Enable**. |
+| Popup blocked by the browser | The flow automatically falls back to full-page redirect sign-in. |
+| Permission denied in Firestore console | Publish `firestore.rules` (step 6). |
+| Quizzes should be open again | `data/site.json` → `auth.requireLogin: false` → redeploy. |
+
+---
+
+## 21. Troubleshooting
 
 | Symptom | Fix |
 |---|---|
