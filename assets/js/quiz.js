@@ -489,7 +489,10 @@
 
   /* ====================================================== 6. FINISH ====== */
   function finish() {
+    if (S.finishing) return;          // Enter + button + auto-timer can race
+    S.finishing = true;
     clearInterval(S.tick);
+    document.querySelectorAll(".lock-overlay").forEach((n) => n.remove());
     const secs = Math.round((Date.now() - S.startedAt) / 1000);
 
     let correct = 0, wrong = 0, skipped = 0;
@@ -538,7 +541,48 @@
     });
     // Score is submitted to the leaderboard exactly once, by result.js
     // (keeps a single write path and prevents duplicate entries).
-    location.href = "result.html";
+    showCompletion(result);
+  }
+
+  /* ------------------------------------ Telegram completion screen -------- */
+  /* Celebration + community offer shown once, right before result.html.
+   * Never blocks the result: "Continue to Result", Enter or Esc all go. */
+  function showCompletion(result) {
+    const ov = document.createElement("div");
+    ov.className = "completion-overlay";
+    ov.innerHTML = `
+      <div class="completion-box" role="dialog" aria-modal="true" aria-labelledby="ccTitle">
+        <div class="cc-icon" aria-hidden="true">🎉</div>
+        <h2 id="ccTitle">Congratulations!</h2>
+        <p class="cc-sub">You have completed ${result.mode === "daily" ? "today&#39;s quiz" : "this quiz"}.</p>
+        <p class="cc-lead">Continue your preparation with</p>
+        <ul class="cc-list">
+          <li>✅ Personal Notes</li>
+          <li>✅ Current Affairs Magazine</li>
+          <li>✅ Daily Expected MCQs</li>
+          <li>✅ Weekly Live Sessions</li>
+          <li>✅ Recruitment Updates</li>
+        </ul>
+        <div class="cc-actions">
+          <a class="btn btn-telegram btn-lg" href="${site.telegram || "https://t.me/HouseOfAspirant"}" target="_blank" rel="noopener">📲 Join Telegram</a>
+          <button class="btn btn-lg" type="button" id="ccContinue">Continue to Result</button>
+        </div>
+      </div>`;
+    document.body.appendChild(ov);
+
+    const go = () => { location.href = "result.html"; };
+    const onKey = (e) => {
+      if (e.key === "Enter" || e.key === "Escape") {
+        e.preventDefault();
+        cleanup();
+        go();
+      }
+    };
+    const cleanup = () => document.removeEventListener("keydown", onKey);
+    ov.querySelector("#ccContinue").addEventListener("click", () => { cleanup(); go(); });
+    ov.addEventListener("click", (e) => { if (e.target === ov) { cleanup(); go(); } });
+    document.addEventListener("keydown", onKey);
+    ov.querySelector("#ccContinue").focus();
   }
 
   /* =============================================== 7. EVENT WIRING ======= */

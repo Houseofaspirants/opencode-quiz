@@ -696,7 +696,8 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 
 /* Print */
 @media print {
-  .site-header, .site-footer, .to-top, .toast-wrap, .ad-slot { display: none !important; }
+  .site-header, .site-footer, .to-top, .toast-wrap, .ad-slot,
+  .tg-float, .tg-exit-overlay, .banner-telegram { display: none !important; }
 }
 
 /* ==========================================================================
@@ -824,3 +825,289 @@ html.auth-open, html.auth-open body { overflow: hidden; }
   font-size: 0.78rem; font-weight: 800;
 }
 @media (max-width: 719px) { .auth-chip { display: none !important; } }
+
+/* ==========================================================================
+ * TELEGRAM GROWTH & STUDENT CONVERSION SYSTEM
+ * Mentor credibility, value-prop grid, desktop rail, rotating banners,
+ * dashboard/resource cards, leaderboard boost, footer block, floating
+ * button and exit-intent popup.
+ * Accent = --tg-blue (#1a7ba6): the only Telegram blue that passes WCAG AA
+ * with white text (4.74:1). Raw #229ED9 is 3.02:1 — never carry text on it.
+ * ========================================================================== */
+:root {
+  --tg-blue: #1a7ba6;
+  --tg-blue-hover: #17709d;
+  --tg-blue-text: #14698c;
+}
+html[data-theme="dark"] {
+  --tg-blue: #1a7ba6;
+  --tg-blue-hover: #1b86b5;
+  --tg-blue-text: #5cc3ec;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ------------------------------------------------------- mentor credibility */
+.mentor-card {
+  position: relative; overflow: hidden;
+  display: flex; gap: clamp(18px, 3vw, 34px); flex-wrap: wrap;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); box-shadow: var(--shadow);
+  padding: clamp(22px, 3.4vw, 34px);
+}
+.mentor-card::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 4px;
+  background: linear-gradient(90deg, var(--tg-blue), var(--brand));
+}
+.mentor-avatar {
+  width: clamp(78px, 12vw, 104px); height: clamp(78px, 12vw, 104px);
+  flex: none; border-radius: 50%;
+  display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--tg-blue), var(--brand));
+  color: #fff; font-weight: 800; font-size: clamp(1.6rem, 4vw, 2.2rem);
+  letter-spacing: 0.04em;
+  box-shadow: 0 16px 34px -16px rgba(26, 123, 166, 0.9);
+}
+.mentor-body { flex: 1 1 340px; min-width: 0; }
+.mentor-top {
+  display: flex; flex-wrap: wrap; gap: 10px 16px;
+  align-items: center; justify-content: space-between;
+}
+.mentor-name { font-size: clamp(1.15rem, 2.4vw, 1.4rem); line-height: 1.25; }
+.mentor-role { color: var(--muted); font-size: 0.88rem; margin-top: 3px; }
+.mentor-badge {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 7px 14px; border-radius: 999px;
+  background: color-mix(in srgb, var(--warning) 16%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--warning) 45%, transparent);
+  color: var(--warning-text);
+  font-size: 0.8rem; font-weight: 800;
+}
+.mentor-text { margin-top: 14px; line-height: 1.65; color: var(--text-2); max-width: 74ch; }
+.mentor-text.is-muted { margin-top: 8px; color: var(--muted); }
+.mentor-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; list-style: none; }
+.mentor-chips li {
+  font-size: 0.8rem; font-weight: 700; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+  padding: 6px 13px; border-radius: 999px;
+}
+
+/* ----------------------------------------------------- value proposition -- */
+.tg-value-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 560px) { .tg-value-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 960px) { .tg-value-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.tg-value { display: flex; flex-direction: column; }
+.tg-value-ico {
+  width: 44px; height: 44px; border-radius: 13px; flex: none;
+  display: grid; place-items: center; font-size: 1.25rem;
+  background: color-mix(in srgb, var(--tg-blue) 13%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 32%, transparent);
+  margin-bottom: 14px;
+}
+.tg-value h3 { font-size: 0.99rem; line-height: 1.35; margin-bottom: 7px; }
+.tg-value p { color: var(--muted); font-size: 0.87rem; line-height: 1.55; }
+.tg-mini { list-style: none; display: grid; gap: 6px; margin-top: 10px; }
+.tg-mini li {
+  position: relative; padding-left: 18px;
+  font-size: 0.83rem; color: var(--text-2);
+}
+.tg-mini li::before {
+  content: "→"; position: absolute; left: 0;
+  color: var(--tg-blue-text); font-weight: 800;
+}
+
+/* ------------------------------------------------- desktop sidebar rail --- */
+.subjects-layout { display: grid; gap: 20px; }
+.tg-rail-inner { position: sticky; top: calc(var(--header-h) + 16px); }
+.tg-rail-card {
+  background:
+    linear-gradient(165deg, color-mix(in srgb, var(--tg-blue) 11%, var(--surface)), var(--surface) 62%);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 34%, var(--border));
+  border-radius: var(--r-xl); padding: 22px;
+  box-shadow: var(--shadow);
+}
+.tg-rail-ico {
+  width: 46px; height: 46px; border-radius: 14px;
+  display: grid; place-items: center; font-size: 1.35rem;
+  background: color-mix(in srgb, var(--tg-blue) 15%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 36%, transparent);
+}
+.tg-rail-card h3 { font-size: 1.06rem; margin: 14px 0 6px; line-height: 1.3; }
+.tg-rail-card > p { color: var(--text-2); font-size: 0.87rem; line-height: 1.55; }
+.tg-rail-card .btn { width: 100%; margin-top: 16px; }
+@media (max-width: 1099px) { .tg-rail { display: none; } }
+
+/* ------------------------------------------------- rotating TG banners ---- */
+.banner-telegram .bt-title,
+.banner-telegram .bt-sub,
+.banner-telegram .btn { transition: opacity 0.25s ease; }
+.banner-telegram.tg-rot-fade .bt-title,
+.banner-telegram.tg-rot-fade .bt-sub,
+.banner-telegram.tg-rot-fade .btn { opacity: 0; }
+.tg-rot-pause {
+  position: relative; z-index: 1;
+  width: 38px; height: 38px; flex: none;
+  display: none; align-items: center; justify-content: center;
+  border-radius: 50%; cursor: pointer;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  color: #fff; font-size: 0.85rem; line-height: 1;
+  transition: background 0.2s;
+}
+.tg-rot-pause:hover { background: rgba(255, 255, 255, 0.3); }
+.tg-rot-pause:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.banner-telegram.tg-rot-on .tg-rot-pause { display: inline-flex; }
+
+/* --------------------------------------------------- footer TG block ------ */
+.footer-tg {
+  display: flex; flex-wrap: wrap; gap: 16px 26px;
+  align-items: center; justify-content: space-between;
+  background: linear-gradient(120deg, color-mix(in srgb, var(--tg-blue) 13%, var(--surface)), var(--surface) 70%);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 32%, var(--border));
+  border-radius: var(--r-xl);
+  padding: 20px 22px;
+  margin-bottom: 34px;
+}
+.footer-tg-copy { flex: 1 1 260px; min-width: 0; }
+.footer-tg h2 { font-size: clamp(1rem, 2.2vw, 1.16rem); line-height: 1.35; }
+.footer-tg-copy p { color: var(--muted); font-size: 0.86rem; margin-top: 5px; }
+.footer-tg-list {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  list-style: none; flex: 1 1 300px;
+}
+.footer-tg-list li {
+  font-size: 0.79rem; font-weight: 700; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+  padding: 6px 12px; border-radius: 999px;
+}
+.footer-tg .btn { flex: none; }
+
+/* --------------------------------------------------- floating TG button ---- */
+.tg-float {
+  position: fixed; left: 16px;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  z-index: 80;
+  display: inline-flex; align-items: center; gap: 9px;
+  padding: 11px 17px; border-radius: 999px;
+  background: var(--tg-blue); color: #fff;
+  box-shadow: 0 14px 32px -12px rgba(26, 123, 166, 0.85);
+  font-size: 0.88rem; font-weight: 800;
+  transition: transform 0.2s var(--ease), background 0.2s, box-shadow 0.2s;
+}
+.tg-float:hover, .tg-float:focus-visible {
+  background: var(--tg-blue-hover); color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px -12px rgba(26, 123, 166, 0.95);
+}
+.tg-float .tgf-ico { font-size: 1.05rem; line-height: 1; }
+@media (max-width: 719px) {
+  .tg-float { padding: 10px 14px; font-size: 0.83rem; gap: 7px; left: 12px; }
+}
+
+/* ---------------------------------------------------- exit-intent popup ---- */
+.tg-exit-overlay {
+  position: fixed; inset: 0; z-index: 140;
+  background: color-mix(in srgb, var(--bg) 66%, transparent);
+  backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+  display: grid; place-items: center; padding: 18px;
+  animation: fadeIn 0.18s var(--ease);
+}
+.tg-exit {
+  width: min(520px, 100%);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); box-shadow: var(--shadow-lg);
+  padding: clamp(24px, 4vw, 34px); text-align: center;
+  animation: toastIn 0.3s var(--ease);
+}
+.tg-exit-icon { font-size: 2.1rem; line-height: 1; }
+.tg-exit h2 { font-size: clamp(1.2rem, 3vw, 1.5rem); margin: 12px 0 8px; }
+.tg-exit-sub { color: var(--text-2); font-size: 0.95rem; line-height: 1.6; }
+.tg-exit-list {
+  display: grid; gap: 9px; text-align: left;
+  max-width: 330px; margin: 18px auto 0; list-style: none;
+}
+.tg-exit-list li { font-size: 0.9rem; font-weight: 600; color: var(--text-2); }
+.tg-exit-list li::before {
+  content: "✔ "; color: var(--success-text); font-weight: 800;
+}
+.tg-exit-actions {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  justify-content: center; margin-top: 22px;
+}
+
+/* ------------------------------------------ dashboard resource cards ------ */
+.tg-res-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 560px) { .tg-res-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 960px) { .tg-res-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.tg-res { display: flex; flex-direction: column; gap: 6px; padding: 20px; }
+.tg-res-ico { font-size: 1.5rem; line-height: 1; }
+.tg-res h3 { font-size: 0.97rem; line-height: 1.35; }
+.tg-res p { color: var(--muted); font-size: 0.85rem; line-height: 1.5; flex: 1; }
+.tg-res .tg-res-cta {
+  color: var(--tg-blue-text); font-size: 0.83rem; font-weight: 800;
+  margin-top: 4px;
+}
+
+/* --------------------------------------- profile benefits checklist ------- */
+.tg-benefits {
+  display: flex; flex-wrap: wrap; gap: 18px 30px;
+  align-items: center; justify-content: space-between;
+  background:
+    linear-gradient(140deg, color-mix(in srgb, var(--tg-blue) 10%, var(--surface)), var(--surface) 65%);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 32%, var(--border));
+  border-radius: var(--r-xl);
+  padding: clamp(20px, 3vw, 28px);
+}
+.tg-benefits-info { flex: 1 1 360px; min-width: 0; }
+.tg-benefits-info h2 { font-size: clamp(1.05rem, 2.2vw, 1.25rem); margin-bottom: 14px; }
+.tg-benefits-list {
+  display: flex; flex-wrap: wrap; gap: 8px; list-style: none;
+}
+.tg-benefits-list li {
+  font-size: 0.85rem; font-weight: 700; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+  padding: 6px 13px; border-radius: 999px;
+}
+.tg-benefits-list li::before {
+  content: "✔ "; color: var(--success-text); font-weight: 800;
+}
+.tg-benefits .btn { flex: none; }
+
+/* ------------------------------------------ leaderboard rank boost -------- */
+.tg-boost {
+  display: flex; flex-direction: column; align-items: flex-start;
+  background:
+    linear-gradient(140deg, color-mix(in srgb, var(--tg-blue) 10%, var(--surface)), var(--surface) 60%);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 32%, var(--border));
+  border-radius: var(--r-xl);
+  padding: clamp(20px, 3vw, 28px);
+}
+.tg-boost h2 { font-size: clamp(1.05rem, 2.2vw, 1.3rem); }
+.tg-boost > p { color: var(--text-2); font-weight: 600; margin-top: 5px; }
+.tg-boost-list {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  list-style: none; margin-top: 16px;
+}
+.tg-boost-list li {
+  font-size: 0.85rem; font-weight: 700; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+  padding: 6px 13px; border-radius: 999px;
+}
+.tg-boost .btn { margin-top: 18px; }
+
+/* ------------------------------------------- resource lock cards ---------- */
+.tg-lock-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 640px) { .tg-lock-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .tg-lock-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text-decoration: none; }
+.tg-lock-ico {
+  width: 42px; height: 42px; border-radius: 12px; flex: none;
+  display: grid; place-items: center; font-size: 1.15rem;
+  background: color-mix(in srgb, var(--tg-blue) 13%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--tg-blue) 32%, transparent);
+}
+.tg-lock h3 { font-size: 0.97rem; line-height: 1.35; }
+.tg-lock p { color: var(--muted); font-size: 0.85rem; line-height: 1.5; flex: 1; }
+.tg-lock .tg-lock-cta {
+  color: var(--tg-blue-text); font-size: 0.83rem; font-weight: 800;
+}

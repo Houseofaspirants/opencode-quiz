@@ -34,6 +34,7 @@ Punjab Government Exam and other competitive exam aspirants.
 19. [Study guides & articles (no code)](#19-study-guides--articles-no-code)
 20. [Google sign-in & cloud sync (Firebase)](#20-google-sign-in--cloud-sync-firebase)
 21. [Troubleshooting](#21-troubleshooting)
+22. [Telegram growth & conversion system](#22-telegram-growth--conversion-system)
 
 ---
 
@@ -676,6 +677,43 @@ Sync rules of thumb:
 | Old version shows after update | Bump `VERSION` in `sw.js`. |
 | Subject card looks default | Add its entry to `data/subjects.json` (`id` = folder name). |
 | Telegram / social link wrong | Edit `data/site.json` → `telegram`, `instagram`, `youtube`. |
+
+---
+
+## 22. Telegram growth & conversion system
+
+The site doubles as a conversion funnel for the
+[House of Aspirants Telegram community](https://t.me/HouseOfAspirant) —
+without ever forcing a join, blocking a quiz or hiding a result.
+
+**UX rules baked into the code**
+
+* Quizzes, results and downloads always work without joining Telegram.
+* No popup on the quiz attempt page. Exit-intent runs desktop-only, once every
+  7 days (`localStorage: hoa_exit_intent`), with a "Maybe Later" button.
+* Rotating banners pause on hover/focus, stop entirely under
+  `prefers-reduced-motion`, and expose a visible ⏸ pause control.
+* The floating "📲 Free Study Material" button sits bottom-left (z-index below
+  every overlay) and never covers page content.
+
+**Where everything lives**
+
+| Piece | File |
+|---|---|
+| Hero CTA, mentor card, 8 value-prop cards, desktop rail, between-categories rotator | `index.html` |
+| 6-banner rotation (`TG_BANNERS`), `initTgRotators()`, exit intent, floating 📲 button, footer community block | `assets/js/core.js` |
+| Quiz-completion celebration (🎉 + 5 benefits + Join / Continue to Result) | `assets/js/quiz.js` |
+| Dashboard resource cards + "Telegram Community Benefits" | `progress.html` |
+| "🏆 Improve Your Rank" block | `leaderboard.html` |
+| Resource-lock cards (downloadable files only — never quizzes) | `articles.html` |
+| All promo styling — `--tg-blue` accent is the AA-safe `#1a7ba6` | `assets/css/style.css` |
+| Completion-screen styling | `assets/css/quiz.css` |
+
+**Adding another rotating banner** — on any `.banner-telegram` block add
+`data-tg-rotator`, put `data-tg-cta` on its link and insert
+`<button type="button" class="tg-rot-pause" data-tg-pause aria-label="Pause banner rotation">⏸</button>`
+before the closing tag. The banner's existing copy becomes slide 1. Quiz pages
+must stay banner-free — enforced by `scripts/seo_check.py`.
 
 ---
 

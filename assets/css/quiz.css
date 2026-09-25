@@ -200,6 +200,45 @@
 }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
+/* ------------------------------------------------- completion screen ------ */
+/* Shown once per attempt after submit, before the result page loads.
+ * Dismissible — never blocks the result (one click / Enter / Esc continues). */
+.completion-overlay {
+  position: fixed; inset: 0; z-index: 210;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+  display: grid; place-items: center; padding: 20px;
+  animation: fadeIn 0.25s var(--ease);
+}
+.completion-box {
+  width: min(540px, 100%);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-xl); box-shadow: var(--shadow-lg);
+  padding: clamp(26px, 5vw, 38px) clamp(20px, 4vw, 32px);
+  text-align: center;
+  animation: toastIn 0.35s var(--ease);
+}
+.completion-box .cc-icon { font-size: 2.5rem; line-height: 1; }
+.completion-box h2 { font-size: clamp(1.45rem, 3.6vw, 1.95rem); margin: 12px 0 6px; }
+.completion-box .cc-sub { color: var(--text-2); font-weight: 600; }
+.completion-box .cc-lead { margin-top: 18px; font-weight: 700; }
+.cc-list {
+  list-style: none; display: grid; gap: 9px;
+  max-width: 340px; margin: 14px auto 0; text-align: left;
+}
+.cc-list li {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 999px; padding: 9px 15px;
+  font-size: 0.88rem; font-weight: 700; color: var(--text-2);
+}
+.cc-actions {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  justify-content: center; margin-top: 24px;
+}
+.cc-actions .btn { flex: 1 1 auto; min-width: 190px; }
+.cc-actions .btn-telegram { flex-grow: 1.5; }
+@media (max-width: 430px) { .cc-actions .btn { min-width: 0; width: 100%; } }
+
 /* ----------------------------------------------------------------- RESULTS */
 .result-hero {
   text-align: center;
@@ -238,7 +277,7 @@
 .rs-lab { font-size: 0.76rem; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
 .rs-card.ok .rs-val { color: var(--success); }
 .rs-card.bad .rs-val { color: var(--danger); }
-.rs-card.warn .rs-val { color: var(--warning); }
+.rs-card.warn .rs-val { color: var(--warning-text); }
 
 /* Subject-wise performance bars */
 .perf-list { display: grid; gap: 16px; }

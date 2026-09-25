@@ -128,16 +128,14 @@
       <div class="container hero-grid">
         <div>
           <span class="hero-tag"><span class="pulse-dot"></span> Made for Punjab Police &amp; PSSSB aspirants</span>
-          <h1>House of <span class="grad">Aspirants</span></h1>
-          <p class="hero-tagline">Practice Daily.<br>Crack Punjab Police.</p>
+          <h1>Prepare Smarter. Crack <span class="grad">Competitive Exams</span> with Confidence.</h1>
           <p class="hero-sub">
-            A fast, distraction-free quiz portal with topic-wise MCQs, instant results,
-            detailed answer explanations and progress tracking — built for serious aspirants.
+            Free Quizzes. Daily Practice. Expert Guidance. Personal Study Notes.
+            Current Affairs. Live Sessions. Everything in One Community.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="#subjects">🚀 Start Learning</a>
-            <a class="btn btn-lg" href="#subjects">📚 Browse Subjects</a>
-            <a class="btn btn-telegram btn-lg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
+            <a class="btn btn-telegram btn-lg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">📲 Join Telegram</a>
+            <a class="btn btn-lg" href="quiz.html?mode=daily">Start Free Quiz</a>
           </div>
         </div>
 
@@ -161,13 +159,14 @@
     <!-- ========================================================== TELEGRAM -->
     <section class="section" style="padding-top:0">
       <div class="container">
-        <div class="banner-telegram reveal">
+        <div class="banner-telegram reveal" data-tg-rotator>
           <div>
             <div class="bt-title">✈ Join the House of Aspirants Telegram</div>
             <div class="bt-sub">Daily current affairs, free PDFs and exam updates — 100% free.</div>
           </div>
-          <a class="btn btn-lg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
+          <a class="btn btn-lg" data-tg-cta href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
              style="margin-left:auto">Join Channel →</a>
+          <button type="button" class="tg-rot-pause" data-tg-pause aria-label="Pause banner rotation">⏸</button>
         </div>
       </div>
     </section>
@@ -207,6 +206,45 @@
       </div>
     </section>
 
+    <!-- ================================================= MENTOR CREDIBILITY -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Real Exam Experience</span>
+            <h2>Learn from Someone Who Cleared the Exam</h2>
+            <p>Guidance built on an actual selection — not guesswork.</p>
+          </div>
+        </div>
+        <div class="mentor-card reveal">
+          <div class="mentor-avatar" aria-hidden="true">GS</div>
+          <div class="mentor-body">
+            <div class="mentor-top">
+              <div>
+                <h3 class="mentor-name">Gurpreet Singh</h3>
+                <div class="mentor-role">Founder &amp; Mentor, House of Aspirants</div>
+              </div>
+              <span class="mentor-badge">🏆 Rank 2 · Punjab Police Sub-Inspector</span>
+            </div>
+            <p class="mentor-text">
+              House of Aspirants is managed by <b>Gurpreet Singh</b>, who secured
+              <b>Rank 2 in the Punjab Police Sub-Inspector Recruitment Examination</b>.
+            </p>
+            <p class="mentor-text is-muted">
+              Students receive guidance based on real exam experience, proven preparation
+              methods and practical strategies that helped clear one of Punjab&rsquo;s most
+              competitive examinations.
+            </p>
+            <ul class="mentor-chips">
+              <li>🎯 Real exam experience</li>
+              <li>✅ Proven preparation methods</li>
+              <li>🧭 Practical exam strategies</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================================================ SUBJECTS -->
     <section class="section section-alt" id="subjects">
       <div class="container">
@@ -224,12 +262,125 @@
           </div>
         </div>
 
-        <div id="subjectGrid" class="grid grid-2 subjects-grid">
-            <!-- Filled by home.js from data/index.json -->
-            <div class="skeleton" style="height:190px"></div>
-            <div class="skeleton" style="height:190px"></div>
-            <div class="skeleton" style="height:190px"></div>
-            <div class="skeleton" style="height:190px"></div>
+        <div class="subjects-layout">
+          <div id="subjectGrid" class="grid grid-2 subjects-grid">
+              <!-- Filled by home.js from data/index.json -->
+              <div class="skeleton" style="height:190px"></div>
+              <div class="skeleton" style="height:190px"></div>
+              <div class="skeleton" style="height:190px"></div>
+              <div class="skeleton" style="height:190px"></div>
+          </div>
+
+          <aside class="tg-rail" aria-label="Free study material on Telegram">
+            <div class="tg-rail-inner">
+              <div class="tg-rail-card">
+                <div class="tg-rail-ico" aria-hidden="true">✈</div>
+                <h3>Free Study Material on Telegram</h3>
+                <p>Daily expected MCQs, monthly magazines, personal notes and
+                   recruitment alerts — free, every day.</p>
+                <ul class="tg-mini">
+                  <li>📥 Monthly Current Affairs Magazine</li>
+                  <li>🎯 Daily Expected MCQs</li>
+                  <li>📢 Fast Recruitment Updates</li>
+                  <li>🎥 Weekly Live Guidance</li>
+                </ul>
+                <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">📲 Join Telegram</a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================= BETWEEN QUIZ CATEGORIES -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="banner-telegram reveal" data-tg-rotator>
+          <div>
+            <div class="bt-title">🎯 Daily Expected MCQs</div>
+            <div class="bt-sub">Practice every day — fresh questions for Punjab Police, PSSSB and other exams.</div>
+          </div>
+          <a class="btn btn-lg" data-tg-cta href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
+             style="margin-left:auto">Join Telegram →</a>
+          <button type="button" class="tg-rot-pause" data-tg-pause aria-label="Pause banner rotation">⏸</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================= TELEGRAM VALUE PROP -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Telegram Community</span>
+            <h2>Everything you get after joining</h2>
+            <p>Free resources that turn daily practice into complete preparation.</p>
+          </div>
+          <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">📲 Join Telegram</a>
+        </div>
+        <div class="tg-value-grid reveal">
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">📚</div>
+            <h3>Personal Study Notes</h3>
+            <p>Notes personally prepared during exam preparation.</p>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">📥</div>
+            <h3>Free Monthly Current Affairs Magazine</h3>
+            <p>Professionally designed monthly current affairs magazine.</p>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">🎯</div>
+            <h3>Daily Expected MCQs</h3>
+            <p>Expected questions for Punjab Police and other competitive examinations.</p>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">📖</div>
+            <h3>Free Study Material</h3>
+            <p>Well-organised PDF study material for multiple competitive exams.</p>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">🎥</div>
+            <h3>Weekly Live Guidance Session</h3>
+            <p>Free for everyone, covering:</p>
+            <ul class="tg-mini">
+              <li>Preparation Strategy</li>
+              <li>Time Management</li>
+              <li>Study Planning</li>
+              <li>Doubt Solving</li>
+              <li>Motivation</li>
+              <li>Exam Approach</li>
+            </ul>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">📢</div>
+            <h3>Fast Recruitment Updates</h3>
+            <p>Never miss an important date from:</p>
+            <ul class="tg-mini">
+              <li>Punjab Police</li>
+              <li>PSSSB</li>
+              <li>PSPCL</li>
+              <li>Punjab &amp; Haryana High Court</li>
+              <li>Other Competitive Exams</li>
+            </ul>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">📕</div>
+            <h3>Book Recommendations</h3>
+            <p>Books personally used during successful preparation, with guidance on
+               how to study them effectively.</p>
+          </div>
+          <div class="card card-pad tg-value">
+            <div class="tg-value-ico" aria-hidden="true">🧠</div>
+            <h3>Preparation Strategy</h3>
+            <p>A complete roadmap, including:</p>
+            <ul class="tg-mini">
+              <li>Weekly preparation plans</li>
+              <li>Revision strategy</li>
+              <li>Mistakes to avoid</li>
+              <li>Exam mindset</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

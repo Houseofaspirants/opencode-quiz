@@ -267,6 +267,23 @@ const HOA = (() => {
   const FOOTER_HTML = () => `
   <footer class="site-footer">
     <div class="container">
+      <div class="footer-tg">
+        <div class="footer-tg-copy">
+          <h2>Join thousands of aspirants preparing together.</h2>
+          <p>House of Aspirants Telegram Community</p>
+        </div>
+        <ul class="footer-tg-list">
+          <li>Free Study Material</li>
+          <li>Current Affairs Magazine</li>
+          <li>Personal Notes</li>
+          <li>Weekly Live Guidance</li>
+          <li>Recruitment Updates</li>
+          <li>Daily Expected MCQs</li>
+          <li>Book Recommendations</li>
+        </ul>
+        <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">📲 Join Telegram</a>
+      </div>
+
       <div class="footer-grid">
         <div class="footer-brand">
           <a class="brand" href="index.html">
@@ -325,6 +342,10 @@ const HOA = (() => {
   </footer>
 
   <button class="icon-btn to-top" id="toTop" aria-label="Back to top">⬆</button>
+  <a class="tg-float" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
+     title="Free study material on Telegram" aria-label="Free study material — join the House of Aspirants Telegram community">
+    <span class="tgf-ico" aria-hidden="true">📲</span> Free Study Material
+  </a>
   <div class="toast-wrap"></div>`;
 
   /* ==================================================== 4. NAVIGATION ===== */
@@ -808,6 +829,205 @@ const HOA = (() => {
     });
   }
 
+  /* ========================================== 9. TELEGRAM GROWTH ========= */
+  /* Rotating banners + exit-intent popup. The floating "Free Study Material"
+   * button lives in FOOTER_HTML. System rules: never force a join, never
+   * block a quiz or a result, never interrupt an attempt, remember
+   * dismissals. No rotation on quiz pages (they have no rotator slots). */
+
+  const TG_URL = "https://t.me/HouseOfAspirant";
+
+  // Shared campaign rotation — each [data-tg-rotator] banner shows its own
+  // page-specific message first, then cycles through these six.
+  const TG_BANNERS = [
+    {
+      title: "📥 Free Monthly Current Affairs Magazine",
+      sub: "The complete magazine is available on Telegram.",
+      cta: "Join Now",
+    },
+    {
+      title: "🎯 Daily Expected MCQs",
+      sub: "Fresh practice questions every single day.",
+      cta: "Join Telegram",
+    },
+    {
+      title: "🎥 Weekly Live Guidance Session",
+      sub: "Free for everyone in the community.",
+      cta: "Join",
+    },
+    {
+      title: "📚 Personal Study Notes",
+      sub: "Prepared during real exam preparation.",
+      cta: "Join",
+    },
+    {
+      title: "📢 Never Miss a Recruitment Update",
+      sub: "Punjab Police · PSSSB · PSPCL · High Court & more.",
+      cta: "Join Now",
+    },
+    {
+      title: "📖 Free Preparation Resources",
+      sub: "Everything organised in one place.",
+      cta: "Join",
+    },
+  ];
+
+  function initTgRotators() {
+    const rotators = document.querySelectorAll("[data-tg-rotator]");
+    if (!rotators.length) return;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    rotators.forEach((el) => {
+      const titleEl = el.querySelector(".bt-title");
+      const subEl = el.querySelector(".bt-sub");
+      const ctaEl = el.querySelector("[data-tg-cta]");
+      const pauseBtn = el.querySelector("[data-tg-pause]");
+      if (!titleEl || !subEl) return;
+
+      // The banner's existing page-specific copy becomes slide 1.
+      const slides = [
+        {
+          title: titleEl.textContent.trim(),
+          sub: subEl.textContent.trim(),
+          cta: ctaEl ? ctaEl.textContent.trim() : "",
+        },
+        ...TG_BANNERS,
+      ];
+      let idx = 0;
+      let timer = null;
+      let paused = false;
+
+      const render = (n) => {
+        idx = (n + slides.length) % slides.length;
+        const s = slides[idx];
+        el.classList.add("tg-rot-fade");
+        window.setTimeout(() => {
+          titleEl.textContent = s.title;
+          subEl.textContent = s.sub;
+          if (ctaEl && s.cta) ctaEl.textContent = s.cta;
+          el.classList.remove("tg-rot-fade");
+        }, 230);
+      };
+      const stop = () => {
+        if (timer) { window.clearInterval(timer); timer = null; }
+      };
+      const start = () => {
+        if (timer || paused || reduce.matches || document.hidden) return;
+        timer = window.setInterval(() => {
+          if (!document.hidden) render(idx + 1);
+        }, 6000);
+      };
+
+      // Rotation only runs for motion-friendly users; the pause control is
+      // revealed via .tg-rot-on so it never appears as a dead button.
+      if (!reduce.matches && slides.length > 1) {
+        el.classList.add("tg-rot-on");
+        start();
+      }
+      el.addEventListener("mouseenter", stop);
+      el.addEventListener("mouseleave", start);
+      el.addEventListener("focusin", stop);
+      el.addEventListener("focusout", start);
+      document.addEventListener("visibilitychange", () => {
+        document.hidden ? stop() : start();
+      });
+      if (reduce.addEventListener) {
+        reduce.addEventListener("change", () => {
+          if (reduce.matches) {
+            stop();
+            el.classList.remove("tg-rot-on");
+          } else {
+            el.classList.add("tg-rot-on");
+            start();
+          }
+        });
+      }
+
+      if (pauseBtn) {
+        pauseBtn.addEventListener("click", () => {
+          paused = !paused;
+          pauseBtn.textContent = paused ? "▶" : "⏸";
+          pauseBtn.setAttribute(
+            "aria-label",
+            paused ? "Resume banner rotation" : "Pause banner rotation"
+          );
+          if (paused) stop(); else start();
+        });
+      }
+    });
+  }
+
+  /* ------------------------------------------------ exit-intent popup ----- */
+  function initExitIntent() {
+    const page = document.body.dataset.page || "";
+    // Never on the quiz attempt or its result; desktop only (mouseleave has
+    // no mobile equivalent); one impression per 7 days (set on show).
+    if (page === "quiz" || page === "result") return;
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+
+    const KEY = "hoa_exit_intent";
+    const WEEK = 7 * 24 * 60 * 60 * 1000;
+    try {
+      if (Date.now() - Number(localStorage.getItem(KEY) || 0) < WEEK) return;
+    } catch (e) {
+      return; // storage unavailable (private mode) → stay silent
+    }
+
+    let shown = false;
+    const born = Date.now();
+    const onLeave = (e) => {
+      if (shown || e.clientY > 0 || e.relatedTarget) return;
+      if (Date.now() - born < 5000) return; // ignore load-time edge flickers
+      if (
+        document.querySelector(
+          ".auth-overlay:not(.hidden), .search-overlay:not(.hidden), .mobile-menu.open, .tg-exit-overlay"
+        )
+      ) return;
+      shown = true;
+      try { localStorage.setItem(KEY, String(Date.now())); } catch (e) {}
+      document.removeEventListener("mouseout", onLeave);
+      showExitPopup();
+    };
+    document.addEventListener("mouseout", onLeave);
+  }
+
+  function showExitPopup() {
+    const prevFocus = document.activeElement;
+    const ov = document.createElement("div");
+    ov.className = "tg-exit-overlay";
+    ov.innerHTML = `
+      <div class="tg-exit" role="dialog" aria-modal="true" aria-labelledby="tgExitTitle">
+        <div class="tg-exit-icon" aria-hidden="true">🎁</div>
+        <h2 id="tgExitTitle">Before You Leave…</h2>
+        <p class="tg-exit-sub">Don't miss free study resources. Join the House of Aspirants Telegram community and get</p>
+        <ul class="tg-exit-list">
+          <li>Personal Notes</li>
+          <li>Monthly Current Affairs Magazine</li>
+          <li>Daily Expected MCQs</li>
+          <li>Weekly Live Guidance Sessions</li>
+          <li>Recruitment Updates</li>
+        </ul>
+        <div class="tg-exit-actions">
+          <a class="btn btn-telegram btn-lg" href="${TG_URL}" target="_blank" rel="noopener">📲 Join Telegram</a>
+          <button class="btn btn-lg" type="button" data-exit-close>Maybe Later</button>
+        </div>
+      </div>`;
+    document.body.appendChild(ov);
+
+    const onKey = (e) => { if (e.key === "Escape") close(); };
+    const close = () => {
+      ov.remove();
+      document.removeEventListener("keydown", onKey);
+      if (prevFocus && prevFocus.focus) prevFocus.focus();
+    };
+    ov.addEventListener("click", (e) => { if (e.target === ov) close(); });
+    ov.querySelector("[data-exit-close]").addEventListener("click", close);
+    ov.querySelector("a").addEventListener("click", close);
+    document.addEventListener("keydown", onKey);
+    const join = ov.querySelector("a");
+    if (join) join.focus();
+  }
+
   /* ================================================== INITIALISE ========= */
   function init() {
     renderChrome();
@@ -816,6 +1036,8 @@ const HOA = (() => {
     initSearch();
     initReveal();
     initBackToTop();
+    initTgRotators();
+    initExitIntent();
     initPWA();
   }
 

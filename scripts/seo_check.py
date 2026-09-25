@@ -629,6 +629,60 @@ if not rules_path.exists() or "leaderboard" not in rules_path.read_text(encoding
 
 notes.append("access: Google-sign-in quiz gate (site.auth), auth.js on all pages, Firestore rules + result Dashboard/Attempt actions")
 
+# --- telegram growth & student conversion system ---------------------------
+# Presence-only checks: the flow must never force a join, block a quiz or
+# hide a result — quiz attempt pages carry no rotator and no exit popup.
+idx_html = (ROOT / "index.html").read_text(encoding="utf-8")
+for marker in (
+    "Prepare Smarter", "Join Telegram", "Start Free Quiz",
+    "Learn from Someone Who Cleared the Exam", "Gurpreet Singh",
+    "tg-value-grid", "subjects-layout", 'class="tg-rail"',
+):
+    if marker not in idx_html:
+        errors.append(f"index.html: missing Telegram growth marker {marker!r}")
+if idx_html.count("data-tg-rotator") < 2:
+    errors.append("index.html: expected >=2 rotating Telegram banner slots")
+
+core_js = (ROOT / "assets/js" / "core.js").read_text(encoding="utf-8")
+for marker in (
+    "TG_BANNERS", "initTgRotators", "initExitIntent", "hoa_exit_intent",
+    "tg-float", "data-tg-rotator", "Join thousands of aspirants",
+    'page === "quiz" || page === "result"',
+):
+    if marker not in core_js:
+        errors.append(f"core.js: missing Telegram growth marker {marker!r}")
+
+quiz_js = (ROOT / "assets/js" / "quiz.js").read_text(encoding="utf-8")
+for marker in ("Continue to Result", "Congratulations", "completion-overlay"):
+    if marker not in quiz_js:
+        errors.append(f"quiz.js: missing completion-screen marker {marker!r}")
+
+for page, markers in (
+    ("progress.html", ("Telegram Community Benefits", "tg-res-grid", "Today&rsquo;s resources")),
+    ("leaderboard.html", ("Improve Your Rank", "tg-boost")),
+    ("articles.html", ("tg-lock-grid", "Premium Resources")),
+    ("result.html", ("data-tg-rotator",)),
+):
+    text = (ROOT / page).read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in text:
+            errors.append(f"{page}: missing Telegram growth marker {marker!r}")
+
+rot_slots = sum(
+    (ROOT / page).read_text(encoding="utf-8").count("data-tg-rotator")
+    for page in PAGES
+)
+if rot_slots < 8:
+    errors.append(f"rotating Telegram banners: expected >=8 slots, found {rot_slots}")
+if "data-tg-rotator" in (ROOT / "quiz.html").read_text(encoding="utf-8"):
+    errors.append("quiz.html: rotating banners must not appear on the quiz attempt")
+
+notes.append(
+    "telegram growth: hero CTA + mentor credibility + 8 value props + desktop rail, "
+    f"{rot_slots} rotating banners, 7-day exit intent, floating button, "
+    "quiz-completion offer, dashboard cards + profile benefits + resource locks"
+)
+
 # --- report ----------------------------------------------------------------
 print(f"SEO audit — {DOMAIN}\n" + "=" * 60)
 for n in notes:
