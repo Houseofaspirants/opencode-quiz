@@ -193,12 +193,18 @@
    * At the category level the counts scope down to that category; a
    * hierarchical subject root shows how many CATEGORIES it has. */
   const topicList = level === "category" ? category.topics : subject.topics;
+  /* Zero means "nothing here yet" — drop the card rather than printing a 0. */
+  const setStat = (el, value) => {
+    if (!el) return;
+    if (value > 0) el.textContent = value;
+    else el.closest(".stat-card")?.setAttribute("hidden", "");
+  };
   if (countTopics && countTopicsLabel) {
-    countTopics.textContent = level === "root" ? categories.length : topicList.length;
     countTopicsLabel.textContent = level === "root" ? "Categories" : "Topics";
+    setStat(countTopics, level === "root" ? categories.length : topicList.length);
   }
-  if (countQuizzes) countQuizzes.textContent = topicList.filter((t) => t.available).length;
-  if (countQuestions) countQuestions.textContent = topicList.reduce((n, t) => n + t.count, 0);
+  setStat(countQuizzes, topicList.filter((t) => t.available).length);
+  setStat(countQuestions, topicList.reduce((n, t) => n + t.count, 0));
 
   /* --------------------------------------------------------- Section head -- */
   const folderPath =

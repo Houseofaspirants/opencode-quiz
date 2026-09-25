@@ -91,9 +91,18 @@ body {
   display: flex;
   flex-direction: column;
   transition: background 0.35s var(--ease), color 0.35s var(--ease);
+  /* Safety net: `clip` (not `hidden`) contains accidental sideways scrolling
+     on phones WITHOUT turning body into a scroll container — which would
+     break the sticky header. Every real overflow cause is fixed at source. */
+  overflow-x: clip;
 }
 
+/* `hidden` must always win: several blocks below set an explicit display. */
+[hidden] { display: none !important; }
+
 img, svg { display: block; max-width: 100%; }
+/* Long words / URLs / tokens can never widen a phone screen. */
+p, li, td, th, h1, h2, h3, h4 { overflow-wrap: break-word; }
 a { color: inherit; text-decoration: none; }
 button, input, select, textarea { font: inherit; color: inherit; }
 button { cursor: pointer; background: none; border: 0; }
@@ -103,6 +112,13 @@ h1, h2, h3, h4 { line-height: 1.22; font-weight: 800; letter-spacing: -0.02em; }
 h1 { font-size: clamp(2rem, 5vw, 3.1rem); }
 h2 { font-size: clamp(1.5rem, 3.4vw, 2.2rem); }
 h3 { font-size: clamp(1.1rem, 2.2vw, 1.35rem); }
+
+/* Readable scale on a 320–430px screen: big enough to scan, small enough
+   that a headline never eats three screens. */
+@media (max-width: 559px) {
+  h1 { font-size: clamp(1.72rem, 7.6vw, 2.15rem); }
+  h2 { font-size: clamp(1.36rem, 6vw, 1.62rem); }
+}
 
 :focus-visible {
   outline: 3px solid var(--brand-2);
@@ -132,6 +148,20 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.35rem); }
   flex-wrap: wrap;
 }
 .section-head p { color: var(--muted); margin-top: 6px; }
+
+/* Stacked, full-width section heads on phones: the search field and the
+   section CTA each get the whole row instead of fighting for half of it. */
+@media (max-width: 719px) {
+  .section-head { flex-direction: column; align-items: stretch; gap: 14px; margin-bottom: 22px; }
+  .section-head > .btn { width: 100%; }
+  .section-head .search-box,
+  .search-box { width: 100%; min-width: 0 !important; }
+  .search-box .kbd { display: none; } /* no keyboard on a phone */
+  /* Input owns the full 54px height of the pill, so the whole field is the
+     tap target rather than a 28px text line inside it. */
+  .search-box { padding: 0 16px; min-height: 54px; }
+  .search-box input { padding: 15px 0; }
+}
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -152,6 +182,12 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.35rem); }
 }
 
 .muted { color: var(--muted); }
+
+/* Shown at ≥1000px only (desktop nav / hero art). Below that the header
+   simply does not have room for it — phones carry Telegram in the bottom bar. */
+.hide-sm { display: none !important; }
+@media (min-width: 1000px) { .hide-sm { display: inline-flex !important; } }
+
 /* In-content contextual links (articles, related-content modules, cross-links).
    a { color: inherit } globally, so prose links need an explicit treatment:
    brand colour + underline keeps them distinguishable (WCAG 1.4.1). */
@@ -167,10 +203,10 @@ a.ilink:hover { text-decoration-thickness: 3px; }
 .hidden { display: none !important; }
 .mt-1 { margin-top: 8px; } .mt-2 { margin-top: 16px; } .mt-3 { margin-top: 26px; }
 
-.grid { display: grid; gap: 18px; }
-.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.grid { display: grid; gap: clamp(16px, 3.4vw, 20px); }
+/* MOBILE-FIRST: every grid starts as a single readable column and only
+   becomes multi-column once the viewport can actually hold it. */
+.grid-2, .grid-3, .grid-4 { grid-template-columns: minmax(0, 1fr); }
 
 .sr-only {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -224,8 +260,18 @@ a.ilink:hover { text-decoration-thickness: 3px; }
 .btn-lg { padding: 15px 30px; font-size: 1.02rem; }
 .btn-block { width: 100%; }
 
+/* THUMB ZONE (phones only) — every control clears the 44px minimum touch
+   target from WCAG 2.5.5 / Apple HIG without changing desktop density. */
+@media (max-width: 719px) {
+  .btn { min-height: 48px; padding: 12px 20px; font-size: 0.97rem; }
+  .btn-sm { min-height: 42px; padding: 10px 17px; font-size: 0.89rem; }
+  .btn-lg { min-height: 54px; padding: 15px 26px; font-size: 1.03rem; }
+  /* Long labels wrap instead of pushing the layout sideways. */
+  .btn { white-space: normal; text-align: center; }
+}
+
 .icon-btn {
-  width: 42px; height: 42px;
+  width: 44px; height: 44px; flex: none;
   display: inline-grid; place-items: center;
   border-radius: 12px;
   background: var(--surface);
@@ -236,6 +282,12 @@ a.ilink:hover { text-decoration-thickness: 3px; }
 .icon-btn:hover { color: var(--brand); border-color: var(--brand); transform: translateY(-2px); }
 
 .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
+@media (max-width: 719px) {
+  /* Chip rows become an evenly-sized grid instead of a ragged wrap of
+     different-width pills — easier to scan and to hit. */
+  .btn-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .btn-row .btn { width: 100%; }
+}
 
 /* ---------------------------------------------------------------- 5. BADGES */
 .badge {
@@ -267,12 +319,19 @@ a.ilink:hover { text-decoration-thickness: 3px; }
    rendered header height (header-inner + 1px border), so the filled state is
    pixel-identical. min-height is a floor only — real content always wins. */
 [data-site-header] { min-height: calc(var(--header-h) + 1px); }
-.brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; }
-.brand-logo { width: 38px; height: 38px; border-radius: 11px; box-shadow: var(--shadow); }
+.brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; min-width: 0; }
+.brand-logo { width: 38px; height: 38px; flex: none; border-radius: 11px; box-shadow: var(--shadow); }
 /* Logo has its own black background — give it an edge on the dark header. */
 html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid var(--border); }
-.brand-name { font-size: 1.02rem; letter-spacing: -0.02em; line-height: 1.1; }
+.brand-name { font-size: 1.02rem; letter-spacing: -0.02em; line-height: 1.1; min-width: 0; }
 .brand-sub { display: block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: var(--brand); }
+
+@media (max-width: 559px) {
+  .brand { gap: 9px; }
+  /* Two short lines beat a truncated one — the brand always reads in full. */
+  .brand-name { font-size: 0.94rem; line-height: 1.16; }
+  .brand-sub { display: none; }
+}
 
 .main-nav { display: none; }
 .nav-list { display: flex; align-items: center; gap: 2px; }
@@ -306,27 +365,44 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
 .nav-caret { transition: transform 0.2s var(--ease); }
 .nav-drop.open .nav-caret { transform: rotate(180deg); }
 
-.header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; min-width: 0; }
+
+@media (max-width: 559px) {
+  .header-inner { gap: 8px; }
+  .header-actions { gap: 7px; }
+  /* The theme switch lives in the drawer on phones; keeping it here would
+     squeeze the brand into an unreadable sliver on 320–390px screens. */
+  .header-actions > [data-action="toggle-theme"] { display: none; }
+}
 
 /* Mobile menu */
 .mobile-menu {
-  position: fixed; inset: 0; z-index: 95;
+  position: fixed; inset: 0; z-index: 100;
   background: var(--bg);
-  padding: 18px;
+  padding: 18px 16px calc(28px + env(safe-area-inset-bottom, 0px));
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   transform: translateX(100%);
   transition: transform 0.32s var(--ease);
   display: flex; flex-direction: column; gap: 6px;
 }
 .mobile-menu.open { transform: translateX(0); }
-.mm-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+.mm-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin-bottom: 10px;
+  position: sticky; top: -18px; background: var(--bg);
+  padding: 18px 0 8px; z-index: 1;
+}
 .mm-title { font-weight: 800; }
-.mm-group { font-size: 0.74rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; }
+.mm-group { font-size: 0.79rem; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; }
 .mm-link {
   display: flex; align-items: center; gap: 12px;
+  min-height: 48px;
   padding: 13px 14px; border-radius: 12px;
   font-weight: 600; background: var(--surface);
   border: 1px solid var(--border); margin-bottom: 8px;
+  width: 100%; text-align: left;
 }
 .mm-link.is-active { border-color: var(--brand); color: var(--brand); }
 .mm-link.mm-tg { color: #1a7ba6; }
@@ -378,8 +454,21 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
 .hero-sub { color: var(--muted); max-width: 56ch; margin-bottom: 24px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
 
-/* Hero visual cards */
+/* PHONE HERO: less empty space, a headline that fits, and two full-width
+   tap targets so the first action never needs a zoomed-in thumb. */
+@media (max-width: 719px) {
+  .hero { padding: clamp(30px, 7vw, 60px) 0 clamp(26px, 5vw, 44px); }
+  .hero h1 { margin: 14px 0 8px; }
+  .hero-sub { margin-bottom: 20px; font-size: 0.97rem; }
+  .hero-cta { flex-direction: column; gap: 11px; }
+  .hero-cta .btn { width: 100%; }
+  .hero-tag { font-size: 0.76rem; padding: 7px 13px; }
+}
+
+/* Hero visual cards — decorative only, so phones skip the 260px of
+   floating-card real estate and go straight to the actions. */
 .hero-visual { position: relative; min-height: 260px; }
+@media (max-width: 899px) { .hero-visual { display: none; } }
 .float-card {
   position: absolute;
   background: var(--surface);
@@ -399,8 +488,112 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
   50% { transform: translateY(-13px); }
 }
 
+/* ------------------------------------------------------ 7b. QUICK ACTIONS
+   The homepage's whole job: five thumb-sized doors — Start Quiz, Daily Quiz,
+   Notes, Leaderboard, Join Telegram — placed above everything else. */
+.action-grid {
+  display: grid;
+  gap: clamp(12px, 3vw, 16px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (max-width: 359px) { .action-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (min-width: 760px) { .action-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+
+.action-card {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 17px 16px 18px;
+  min-height: 132px;
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s var(--ease), box-shadow 0.25s var(--ease), border-color 0.2s;
+}
+.action-card:hover, .action-card:focus-visible {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: color-mix(in srgb, var(--brand) 42%, var(--border));
+}
+.action-card:active { transform: translateY(-1px); }
+.action-card .ac-ico {
+  width: 44px; height: 44px; border-radius: 14px; flex: none;
+  display: grid; place-items: center; font-size: 1.3rem; line-height: 1;
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  border: 1.5px solid color-mix(in srgb, var(--brand) 26%, transparent);
+  margin-bottom: 8px;
+}
+.action-card h3 { font-size: 1rem; line-height: 1.25; }
+.action-card p { font-size: 0.8rem; line-height: 1.45; color: var(--muted); margin-top: 3px; }
+.action-card .ac-go {
+  margin-top: auto; padding-top: 10px;
+  font-size: 0.78rem; font-weight: 800; color: var(--brand);
+}
+
+/* Primary = Start Quiz: the gradient marks the one action that matters most. */
+.action-card.ac-primary {
+  background: var(--brand-grad); color: #fff; border-color: transparent;
+  box-shadow: 0 16px 34px -18px rgba(79, 70, 229, 0.95);
+}
+.action-card.ac-primary .ac-ico { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.38); }
+.action-card.ac-primary p, .action-card.ac-primary .ac-go { color: rgba(255, 255, 255, 0.92); }
+
+.action-card.ac-tg {
+  background: linear-gradient(150deg, #1a7ba6 0%, #16759d 62%, #4f46e5 175%);
+  color: #fff; border-color: transparent;
+  box-shadow: 0 16px 34px -18px rgba(26, 123, 166, 0.9);
+}
+.action-card.ac-tg .ac-ico { background: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.38); }
+.action-card.ac-tg p, .action-card.ac-tg .ac-go { color: rgba(255, 255, 255, 0.92); }
+
+/* Fifth card owns the last (half-empty) mobile row instead of floating alone. */
+.action-grid .ac-span { grid-column: 1 / -1; min-height: 0; }
+@media (min-width: 760px) { .action-grid .ac-span { grid-column: auto; min-height: 132px; } }
+
+/* --------------------------------------------------- 7c. BOTTOM MOBILE NAV
+   Five destinations, one row, always under the thumb. Hidden once the full
+   desktop nav takes over at ≥900px. */
+.mobile-nav {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 96;
+  display: none;
+  background: var(--header-bg);
+  backdrop-filter: saturate(180%) blur(14px);
+  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  border-top: 1px solid var(--border);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  box-shadow: 0 -10px 26px -18px rgba(15, 23, 42, 0.55);
+}
+.mobile-nav ul { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.mn-link {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 3px; min-height: 56px; padding: 8px 1px 7px;
+  font-size: clamp(0.6rem, 2.8vw, 0.72rem);
+  font-weight: 700; letter-spacing: -0.01em;
+  color: var(--muted); text-align: center;
+  transition: color 0.18s var(--ease);
+}
+.mn-ico { font-size: 1.16rem; line-height: 1; }
+.mn-link span:last-child {
+  max-width: 100%; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.mn-link:active { color: var(--brand); }
+.mn-link.is-active { color: var(--brand); }
+.mn-link.mn-tg { color: var(--tg-blue-text); }
+@media (max-width: 899px) {
+  .mobile-nav { display: block; }
+  /* Content clears the fixed bar; safe-area keeps the iOS home indicator off. */
+  body { padding-bottom: calc(56px + env(safe-area-inset-bottom, 0px)); }
+}
+
 /* --------------------------------------------------------------- 8. STAT BOX */
 .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+/* Stat cards are hidden when their value is unknown, so the count varies.
+   A wrapping flex row keeps a leftover card full-width instead of stranded
+   at half width in an otherwise empty grid row. */
+@media (max-width: 639px) {
+  .stats-grid { display: flex; flex-wrap: wrap; gap: 14px; }
+  .stats-grid > * { flex: 1 1 calc(50% - 7px); }
+}
 .stat-card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -561,6 +754,9 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
   font-weight: 800; color: var(--muted); margin-bottom: 4px;
 }
+/* An empty ad placeholder only costs phone users scroll depth — keep the
+   slot for desktop until real creative exists. */
+@media (max-width: 719px) { .ad-slot { display: none; } }
 
 /* ---------------------------------------------------------------- 12. FOOTER */
 .site-footer {
@@ -584,6 +780,19 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   color: var(--text-2); transition: color 0.18s, transform 0.18s;
 }
 .footer-col a:hover { color: var(--brand); transform: translateX(4px); }
+
+@media (max-width: 719px) {
+  /* Rows become real tap targets instead of a dense link list. */
+  .footer-col a { padding: 12px 0; font-size: 0.97rem; border-bottom: 1px solid var(--border); }
+  .footer-col a:last-child { border-bottom: 0; }
+  .footer-col h4, .footer-col h2 { margin-bottom: 6px; }
+}
+/* Shorter footer on phones: brand first, then the three link columns in two
+   columns — roughly half the scrolling. */
+@media (min-width: 480px) and (max-width: 899px) {
+  .footer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 26px 20px; }
+  .footer-brand { grid-column: 1 / -1; }
+}
 .social-row { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
 .social-link {
   display: inline-flex; align-items: center; gap: 8px;
@@ -602,6 +811,11 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 }
 .footer-bottom nav { display: flex; gap: 18px; flex-wrap: wrap; }
 .footer-bottom a:hover { color: var(--brand); }
+@media (max-width: 719px) {
+  /* Legal links are 22px tall by default — far below a usable target. */
+  .footer-bottom { justify-content: center; gap: 6px 14px; text-align: center; }
+  .footer-bottom nav a { display: inline-block; padding: 12px 4px; }
+}
 
 /* ------------------------------------------------------------ 13. PAGE HERO */
 .page-hero {
@@ -621,6 +835,9 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   transform: translateX(-50%);
   display: flex; flex-direction: column; gap: 10px; align-items: center;
   pointer-events: none;
+}
+@media (max-width: 899px) {
+  .toast-wrap { bottom: calc(68px + env(safe-area-inset-bottom, 0px)); }
 }
 .toast {
   background: var(--text); color: var(--bg);
@@ -645,6 +862,10 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   transition: opacity 0.25s, transform 0.25s;
   transform: translateY(12px);
 }
+@media (max-width: 899px) {
+  /* Sit above the fixed bottom nav instead of underneath it. */
+  .to-top { right: 14px; bottom: calc(66px + env(safe-area-inset-bottom, 0px)); }
+}
 .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
 
 /* Install PWA bar */
@@ -660,23 +881,41 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 }
 @keyframes shimmer { to { background-position: -135% 0; } }
 
-/* ------------------------------------------------------------ 15. RESPONSIVE */
+/* ------------------------------------------------------------ 15. RESPONSIVE
+   Breakpoints are driven by available space, not by device names:
+     ≤559  phone        1 column, thumb-sized controls, bottom nav
+     ≥560  large phone  2-column card grids
+     ≥640  small tablet 3-4 column card grids
+     ≥900  desktop      full nav, hero art, sidebar rails
+   -------------------------------------------------------------------------- */
+@media (min-width: 560px) {
+  .grid-2, .grid-4 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (min-width: 640px) {
   .stats-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-  .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .subjects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (min-width: 900px) {
   .container { padding-inline: 26px; }
   .main-nav { display: block; }
-  .menu-toggle { display: none; }
+  .menu-toggle, .mobile-nav { display: none; }
   .hero-grid { grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr); }
   .hero-visual { min-height: 340px; }
   .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .subjects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+}
+
+/* 900–1099 is the tightest desktop band: the full nav and the header actions
+   have to share one 66px row. Tighten the links so the row always fits,
+   including when the auth chip / install button pop in. */
+@media (min-width: 900px) and (max-width: 1099px) {
+  .nav-link { padding: 9px 9px; font-size: 0.88rem; }
+  .brand-name { font-size: 0.97rem; }
 }
 
 @media (min-width: 1100px) {
@@ -895,7 +1134,7 @@ html[data-theme="dark"] {
 /* ----------------------------------------------------- value proposition -- */
 .tg-value-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 560px) { .tg-value-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (min-width: 960px) { .tg-value-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 960px) { .tg-value-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 .tg-value { display: flex; flex-direction: column; }
 .tg-value-ico {
   width: 44px; height: 44px; border-radius: 13px; flex: none;
@@ -1000,8 +1239,10 @@ html[data-theme="dark"] {
   box-shadow: 0 18px 36px -12px rgba(26, 123, 166, 0.95);
 }
 .tg-float .tgf-ico { font-size: 1.05rem; line-height: 1; }
-@media (max-width: 719px) {
-  .tg-float { padding: 10px 14px; font-size: 0.83rem; gap: 7px; left: 12px; }
+@media (max-width: 899px) {
+  /* Phones already carry a Telegram slot in the bottom nav — a second
+     floating pill would just cover content. */
+  .tg-float { display: none; }
 }
 
 /* ---------------------------------------------------- exit-intent popup ---- */

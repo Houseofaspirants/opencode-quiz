@@ -8,17 +8,30 @@
   const idx = await HOA.loadIndex();
   const stats = idx.stats || {};
 
-  /* ------------------------------------------- 1. Live statistics section */
+  /* ------------------------------------------- 1. Live statistics section
+     Rule: never show a placeholder zero. A block is revealed only once
+     index.json reports a real number, and any metric that is still 0 drops
+     its whole card instead of printing "0". */
   const statMap = {
     subjects: stats.subjects ?? 0,
     topics: stats.topics ?? 0,
     quizzes: stats.quizzes ?? 0,
     questions: stats.questions ?? 0,
   };
+  const hasData = Object.values(statMap).some((v) => v > 0);
+
+  if (hasData) {
+    document.querySelectorAll("[data-stats-section], .hero-visual").forEach((el) => {
+      el.hidden = false;
+    });
+  }
+
   document.querySelectorAll("[data-stat]").forEach((el) => {
     const target = statMap[el.dataset.stat] ?? 0;
     if (target === 0) {
-      el.textContent = "0";
+      const card = el.closest(".stat-card, .float-card");
+      if (card) card.hidden = true;
+      else el.textContent = "";
       return;
     }
     const io = new IntersectionObserver(

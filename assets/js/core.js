@@ -213,7 +213,8 @@ const HOA = (() => {
           <span class="auth-chip-face" id="authChipFace">?</span>
         </a>
         <button class="btn btn-sm btn-soft install-bar hidden" data-action="install-app">⬇ Install</button>
-        <a class="btn btn-sm btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
+        <!-- Phones carry Telegram in the bottom bar + drawer instead. -->
+        <a class="btn btn-sm btn-telegram hide-sm" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
         <button class="icon-btn menu-toggle" data-action="open-menu" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>
@@ -346,6 +347,24 @@ const HOA = (() => {
      title="Free study material on Telegram" aria-label="Free study material — join the House of Aspirants Telegram community">
     <span class="tgf-ico" aria-hidden="true">📲</span> Free Study Material
   </a>
+
+  <!-- THUMB-HEIGHT NAVIGATION — the five actions students actually take.
+       Rendered only below 900px (.mobile-nav); the desktop nav takes over. -->
+  <nav class="mobile-nav" aria-label="Quick navigation">
+    <ul>
+      <li><a class="mn-link" data-nav="home" href="index.html">
+        <span class="mn-ico" aria-hidden="true">🏠</span><span>Home</span></a></li>
+      <li><a class="mn-link" data-nav="daily" href="quiz.html?mode=daily">
+        <span class="mn-ico" aria-hidden="true">📝</span><span>Daily Quiz</span></a></li>
+      <li><a class="mn-link" data-nav="articles" href="articles.html">
+        <span class="mn-ico" aria-hidden="true">📚</span><span>Notes</span></a></li>
+      <li><a class="mn-link" data-nav="leaderboard" href="leaderboard.html">
+        <span class="mn-ico" aria-hidden="true">🏆</span><span>Leaderboard</span></a></li>
+      <li><a class="mn-link mn-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">
+        <span class="mn-ico" aria-hidden="true">✈</span><span>Telegram</span></a></li>
+    </ul>
+  </nav>
+
   <div class="toast-wrap"></div>`;
 
   /* ==================================================== 4. NAVIGATION ===== */

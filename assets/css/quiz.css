@@ -359,6 +359,39 @@
 .rank-badge.r3 { background: linear-gradient(135deg, #fdba74, #ea580c); border-color: #ea580c; color: #7c2d12; }
 .table-scroll { overflow-x: auto; }
 
+/* PHONE: a 6-column table forces sideways scrolling and unreadably small
+   cells. Each row becomes a stacked card — rank pinned left, name on top,
+   the numbers as one meta line. No JS, no horizontal scroll. */
+@media (max-width: 719px) {
+  .table-scroll { overflow-x: visible; }
+  .lead-table thead { display: none; }
+  .lead-table, .lead-table tbody { display: block; width: 100%; }
+  .lead-table tr {
+    display: block; position: relative;
+    padding: 14px 14px 14px 62px;
+    margin-bottom: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+  }
+  .lead-table tbody tr:last-child { margin-bottom: 0; }
+  .lead-table tbody tr.is-me {
+    border-color: color-mix(in srgb, var(--brand) 45%, var(--border));
+    background: color-mix(in srgb, var(--brand) 8%, var(--surface));
+  }
+  .lead-table td {
+    display: block; width: auto;
+    padding: 0; border: 0; font-size: 0.9rem;
+  }
+  .lead-table td:first-child { position: absolute; left: 14px; top: 14px; }
+  .lead-table td:nth-child(2) { font-weight: 700; font-size: 0.99rem; line-height: 1.35; }
+  .lead-table td:nth-child(n+3) {
+    display: inline; font-size: 0.85rem; color: var(--text-2);
+  }
+  .lead-table td:nth-child(n+3)::after { content: " ·"; opacity: 0.55; }
+  .lead-table td:last-child::after { content: ""; }
+}
+
 /* --------------------------------------------------------------- DASHBOARD */
 .dash-grid { display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .dash-card {
@@ -426,6 +459,21 @@
   .dash-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
+/* PHONE QUIZ CHROME — title and Submit share the top row (submit always
+   reachable), timers get their own row underneath. Total chrome height stays
+   under ~150px so the question still owns most of the screen. */
+@media (max-width: 560px) {
+  .quiz-topbar { padding: 9px 0; }
+  .quiz-topbar-inner { gap: 10px; }
+  .quiz-topbar-inner > div:first-child { flex: 1 1 auto; min-width: 0; }
+  .quiz-topbar-inner > .btn { order: 2; flex: none; min-height: 44px; padding: 11px 18px; }
+  .timers { order: 3; width: 100%; margin-left: 0; justify-content: space-between; }
+  .timer-pill { flex: 1 1 0; justify-content: center; padding: 6px 10px; }
+  .progress-meta { font-size: 0.74rem; }
+  .q-card { padding: 16px 15px; }
+  .quiz-layout { gap: 16px; padding: 16px 0 30px; }
+}
+
 @media (min-width: 1000px) {
   .quiz-layout {
     grid-template-columns: minmax(0, 1fr) 330px;
@@ -456,6 +504,12 @@
 }
 
 @media (max-width: 480px) {
-  .q-controls .btn { flex: 1 1 calc(50% - 10px); }
-  .timers { width: 100%; margin-left: 0; justify-content: space-between; }
+  .q-controls { gap: 8px; margin-top: 18px; }
+  .q-controls .btn { flex: 1 1 calc(50% - 4px); min-height: 48px; }
+  /* "Next" is the button students press most — give it the full row. */
+  .q-controls .btn-primary { flex-basis: 100%; order: 9; }
+}
+/* No physical keyboard on a phone — the shortcut legend is just noise. */
+@media (max-width: 719px) {
+  .kb-hint { display: none; }
 }
