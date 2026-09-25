@@ -9,7 +9,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v11";
+const VERSION = "hoa-v16";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -27,11 +27,17 @@ const SHELL_FILES = [
   "./contact.html",
   "./privacy.html",
   "./terms.html",
+  "./articles.html",
+  "./punjab-police-exam-preparation.html",
+  "./punjab-gk-study-guide.html",
+  "./current-affairs-preparation.html",
+  "./reasoning-quant-preparation.html",
   "./assets/css/style.css",
   "./assets/css/quiz.css",
   "./assets/js/core.js",
   "./assets/js/home.js",
   "./assets/js/subject.js",
+  "./assets/js/related.js",
   "./assets/js/quiz.js",
   "./assets/js/result.js",
   "./assets/js/mock.js",
@@ -107,8 +113,10 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  /* 2. Manifest index: always try network so new quizzes show up fast */
-  if (url.pathname.includes("/data/index.json")) {
+  /* 2. Manifest index + article registry: always try network so new quizzes
+        and guides show up fast (offline copy kept as fallback) */
+  if (url.pathname.includes("/data/index.json") ||
+      url.pathname.includes("/data/articles.json")) {
     event.respondWith(
       fetch(req)
         .then((res) => {

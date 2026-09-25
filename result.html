@@ -21,9 +21,16 @@
   <meta name="twitter:description" content="Every quiz ends with a score card: marks, accuracy, subject-wise performance, weak and strong areas and a complete answer review with explanations.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" href="assets/css/quiz.css" as="style">
   <link rel="stylesheet" href="assets/css/quiz.css">
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
   <script type="application/ld+json">
   {
@@ -102,13 +109,13 @@
         <div class="grid grid-2 mt-3">
           <div class="card card-pad">
             <span class="eyebrow">Analysis</span>
-            <h3 style="margin-bottom:16px">Subject-wise Performance</h3>
+            <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:16px">Subject-wise Performance</h2>
             <div class="perf-list" id="perfList"><!-- injected --></div>
           </div>
 
           <div class="card card-pad">
             <span class="eyebrow">Insights</span>
-            <h3 style="margin-bottom:14px">Weak & Strong Areas</h3>
+            <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:14px">Weak & Strong Areas</h2>
             <p class="text-sm muted" style="margin-bottom:10px">Based on topic tags inside your JSON.</p>
             <div class="chip-wrap" id="weakWrap"></div>
             <div class="chip-wrap mt-2" id="strongWrap"></div>

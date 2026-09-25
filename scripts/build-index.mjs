@@ -376,6 +376,7 @@ if (site.url) {
   // utility pages — the 404 page and runtime noindex modes stay out.)
   const urls = [
     { loc: `${base}/`, p: "1.0" },
+    { loc: `${base}/articles`, p: "0.8" },
     { loc: `${base}/mock`, p: "0.9" },
     { loc: `${base}/leaderboard`, p: "0.7" },
     { loc: `${base}/result`, p: "0.6" },
@@ -386,6 +387,23 @@ if (site.url) {
     { loc: `${base}/privacy`, p: "0.4" },
     { loc: `${base}/terms`, p: "0.4" },
   ];
+  // Study guides — config-driven from data/articles.json (same registry the
+  // /articles hub, Related Articles modules and Article schema read).
+  try {
+    const guidesPath = path.join(DATA_DIR, "articles.json");
+    if (fs.existsSync(guidesPath)) {
+      for (const a of JSON.parse(fs.readFileSync(guidesPath, "utf8")).articles || []) {
+        const page = String(a.url || "");
+        if (page.endsWith(".html") && fs.existsSync(path.join(ROOT, page))) {
+          urls.push({ loc: `${base}/${page.slice(0, -5)}`, p: "0.7" });
+        } else {
+          warn(`articles.json: page file missing for ${a.id || "?"} (${page})`);
+        }
+      }
+    }
+  } catch (e) {
+    warn(`articles.json unreadable: ${e.message}`);
+  }
   for (const s of outputSubjects) {
     urls.push({ loc: `${base}/subject?subject=${s.id}`, p: "0.9" });
     for (const c of s.categories) {

@@ -13,7 +13,7 @@
     $("resultBody").innerHTML = `
       <div class="empty-state">
         <div class="es-icon">🧾</div>
-        <h3>No result to show yet.</h3>
+        <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:8px">No result to show yet.</h2>
         <p>Finish a quiz and your result — with a full answer review — will appear here.</p>
         <p class="mt-2"><a class="btn btn-primary" href="index.html">Start a quiz</a></p>
       </div>`;

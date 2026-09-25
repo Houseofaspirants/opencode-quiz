@@ -157,6 +157,7 @@
         description: metaDesc,
         isPartOf: { "@id": `${siteBase}/#website` },
         inLanguage: "en-IN",
+        breadcrumb: { "@id": `${canonical}#breadcrumb` },
       };
       if (items.length) {
         page.mainEntity = {
@@ -172,6 +173,7 @@
       }
       const breadcrumb = {
         "@type": "BreadcrumbList",
+        "@id": `${canonical}#breadcrumb`,
         itemListElement: crumbList.map((c, i) => ({
           "@type": "ListItem",
           position: i + 1,
@@ -239,7 +241,7 @@
     <a class="card quiz-card" href="subject.html?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
       <span class="qc-icon">${c.icon || "📁"}</span>
       <span>
-        <h4>${esc(c.name)}</h4>
+        <h3>${esc(c.name)}</h3>
         <span class="qc-sub">${sub}</span>
       </span>
       <span class="qc-go">→</span>
@@ -261,7 +263,7 @@
        ${clickable ? "" : 'aria-disabled="true"'}>
       <span class="qc-icon">${icon}</span>
       <span>
-        <h4>${esc(t.name)}</h4>
+        <h3>${esc(t.name)}</h3>
         <span class="qc-sub">${
           clickable
             ? `${t.count} question${t.count === 1 ? "" : "s"} · Start quiz →`

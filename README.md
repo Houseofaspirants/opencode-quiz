@@ -31,7 +31,8 @@ Punjab Government Exam and other competitive exam aspirants.
 16. [Advertisement slots](#16-advertisement-slots)
 17. [Future backend migration](#17-future-backend-migration)
 18. [Scalability notes](#18-scalability-notes)
-19. [Troubleshooting](#19-troubleshooting)
+19. [Study guides & articles (no code)](#19-study-guides--articles-no-code)
+20. [Troubleshooting](#20-troubleshooting)
 
 ---
 
@@ -97,6 +98,7 @@ house-of-aspirants/
 ├── data/
 │   ├── index.json             ★ AUTO-GENERATED manifest — never edit by hand
 │   ├── subjects.json          ← Subject CARD only (name / icon / color / order)
+│   ├── articles.json          ← Study-guide registry (hub, related cards, sitemap)
 │   └── site.json              ← Site-wide settings (timers, links, stats)
 │
 ├── scripts/
@@ -106,7 +108,8 @@ house-of-aspirants/
 ├── assets/
 │   ├── css/   style.css, quiz.css
 │   ├── js/    core.js (shared header/footer/search/PWA/storage),
-│   │          home.js, subject.js, quiz.js, result.js, mock.js,
+│   │          home.js, subject.js, related.js (related subjects/quizzes/guides),
+│   │          quiz.js, result.js, mock.js,
 │   │          bookmarks.js, leaderboard.js, dashboard.js, contact.js
 │   └── img/   logo-mark.png (your logo), logo-sm.png (header), favicon-32.png,
 │              og-cover.png (1200×630), icon-180.png, icon-192.png, icon-512.png
@@ -412,8 +415,8 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 {
   "url": "https://your-domain.com",   // used for sitemap + canonical tags
   "telegram": "https://t.me/HouseOfAspirant",
-  "instagram": "https://instagram.com/houseofaspirants",
-  "youtube": "https://youtube.com/@houseofaspirants",
+  "instagram": "https://instagram.com/si.gurpreetsingh.pp",
+  "youtube": "https://youtube.com/@houseofaspirants-y5s",
   "questionSeconds": 30,               // per-question timer
   "dailyQuizSize": 20,                 // questions in Daily Challenge
   "passPercent": 40,                   // pass line on result page
@@ -531,7 +534,50 @@ Swap those functions and the rest of the site keeps working — no rewrite.
 
 ---
 
-## 19. Troubleshooting
+## 19. Study guides & articles (no code)
+
+Study guides power three things at once: the `/articles` hub, the **Related
+study guides** card on every subject page, and the sitemap / Article schema.
+One guide = **one `.html` file at the site root** + **one entry in
+`data/articles.json`**.
+
+**Add a new guide:**
+
+1. Copy an existing guide (e.g. `punjab-gk-study-guide.html`) to a new
+   root-level filename: `my-new-guide.html`.
+2. Update its `<title>` (max 60 chars), meta description (140–160 chars),
+   `canonical` and `og:url` (extensionless URL), breadcrumbs and
+   body content.
+3. Register it in `data/articles.json`:
+
+```json
+{
+  "id": "my-new-guide",
+  "title": "My New Guide — must match the page <title>",
+  "url": "my-new-guide.html",
+  "description": "Same 140–160 char text as the page meta description.",
+  "subjects": ["gk"],
+  "categories": ["punjab-gk"],
+  "published": "2026-09-25",
+  "modified": "2026-09-25"
+}
+```
+
+4. Add a card for it on `articles.html` (copy an existing card).
+5. Push — the build adds it to `sitemap.xml` automatically.
+
+`subjects` decides **which subject pages** show the guide in their Related
+cards; `categories` (optional) makes it rank **first** on that category page.
+Guides are ranked most-specific first. `scripts/seo_check.py` verifies that
+the file exists, title/description match the page, the hub cross-links it and
+the sitemap contains it.
+
+**Related subjects / quizzes cards** need no configuration — they render on
+subject pages straight from `subjects.json` + `index.json` + `articles.json`.
+
+---
+
+## 20. Troubleshooting
 
 | Symptom | Fix |
 |---|---|

@@ -21,30 +21,55 @@
   <meta name="twitter:description" content="Learn why House of Aspirants is a free, fast and offline-ready MCQ practice portal built for Punjab Police, PSSSB and Punjab Government exam aspirants.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About House of Aspirants | Free MCQ Practice Portal",
-    "url": "https://houseofaspirants.in/about",
-    "description": "Learn why House of Aspirants is a free, fast and offline-ready MCQ practice portal built for Punjab Police, PSSSB and Punjab Government exam aspirants.",
-    "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
-    "inLanguage": "en-IN",
-    "publisher": { "@id": "https://houseofaspirants.in/#organization" }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://houseofaspirants.in/" },
-      { "@type": "ListItem", "position": 2, "name": "About", "item": "https://houseofaspirants.in/about" }
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "name": "About House of Aspirants | Free MCQ Practice Portal",
+        "url": "https://houseofaspirants.in/about",
+        "description": "Learn why House of Aspirants is a free, fast and offline-ready MCQ practice portal built for Punjab Police, PSSSB and Punjab Government exam aspirants.",
+        "breadcrumb": {
+          "@id": "https://houseofaspirants.in/about#breadcrumb"
+        },
+        "isPartOf": {
+          "@id": "https://houseofaspirants.in/#website"
+        },
+        "inLanguage": "en-IN",
+        "publisher": {
+          "@id": "https://houseofaspirants.in/#organization"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://houseofaspirants.in/about#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://houseofaspirants.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://houseofaspirants.in/about"
+          }
+        ]
+      }
     ]
   }
   </script>
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
 </head>
 
@@ -71,7 +96,7 @@
       <div class="container grid grid-2" style="align-items:start">
         <article class="card card-pad">
           <span class="eyebrow">Mission</span>
-          <h3 style="margin-bottom:12px">Why this portal exists</h3>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Why this portal exists</h2>
           <p class="muted">
             Exam aspirants need one thing above all: <b>consistent, high-quality
             practice</b>. This portal removes every barrier between you and your
@@ -83,11 +108,16 @@
             with explanations and references so you learn the <i>why</i>, not just
             the answer.
           </p>
+          <p class="muted mt-2">
+            New here? Start with the free
+            <a class="ilink" href="articles.html">study guides</a>, then build your
+            first <a class="ilink" href="mock.html">mock test</a>.
+          </p>
         </article>
 
         <article class="card card-pad">
           <span class="eyebrow">Features</span>
-          <h3 style="margin-bottom:12px">Built for real exam practice</h3>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Built for real exam practice</h2>
           <ul class="muted" style="display:grid;gap:9px">
             <li>✅ Topic-wise MCQs across 7 subjects</li>
             <li>⏱ Per-question timer, overall timer &amp; answer lock</li>
@@ -102,22 +132,23 @@
 
         <article class="card card-pad">
           <span class="eyebrow">Subjects</span>
-          <h3 style="margin-bottom:12px">What you can practise</h3>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">What you can practise</h2>
           <div class="chip-wrap">
-            <span class="area-chip">🏛️ General Knowledge</span>
-            <span class="area-chip">➗ Quantitative Aptitude</span>
-            <span class="area-chip">🧠 Reasoning</span>
-            <span class="area-chip">ਸ Punjabi</span>
-            <span class="area-chip">Aa English</span>
-            <span class="area-chip">💻 Computer</span>
-            <span class="area-chip">📰 Current Affairs</span>
+            <a class="area-chip ilink" href="subject.html?subject=gk">🏛️ General Knowledge</a>
+            <a class="area-chip ilink" href="subject.html?subject=gk&amp;category=punjab-gk">📌 Punjab GK</a>
+            <a class="area-chip ilink" href="subject.html?subject=quant">➗ Quantitative Aptitude</a>
+            <a class="area-chip ilink" href="subject.html?subject=reasoning">🧠 Reasoning</a>
+            <a class="area-chip ilink" href="subject.html?subject=punjabi">ਸ Punjabi</a>
+            <a class="area-chip ilink" href="subject.html?subject=english">Aa English</a>
+            <a class="area-chip ilink" href="subject.html?subject=computer">💻 Computer</a>
+            <a class="area-chip ilink" href="subject.html?subject=current-affairs">📰 Current Affairs</a>
           </div>
           <p class="muted text-sm mt-2">New topics are added regularly — follow the Telegram channel.</p>
         </article>
 
         <article class="card card-pad">
           <span class="eyebrow">Contact</span>
-          <h3 style="margin-bottom:12px">Talk to us</h3>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Talk to us</h2>
           <p class="muted">Found a mistake in a question, or want a topic published?</p>
           <div class="btn-row mt-2">
             <a class="btn btn-primary" href="contact.html">Contact form</a>

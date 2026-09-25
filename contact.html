@@ -20,34 +20,64 @@
   <meta name="twitter:title" content="Contact Us | House of Aspirants">
   <meta name="twitter:description" content="Contact the House of Aspirants team for quiz corrections, topic requests, collaborations or feedback - we usually reply within 24 hours on Telegram.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "url": "https://houseofaspirants.in/contact",
-    "name": "Contact Us | House of Aspirants",
-    "description": "Contact the House of Aspirants team for quiz corrections, topic requests, collaborations or feedback - we usually reply within 24 hours on Telegram.",
-    "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
-    "inLanguage": "en-IN",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "areaServed": "IN",
-      "availableLanguage": ["English", "Hindi", "Punjabi"]
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://houseofaspirants.in/" },
-      { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://houseofaspirants.in/contact" }
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "url": "https://houseofaspirants.in/contact",
+        "name": "Contact Us | House of Aspirants",
+        "description": "Contact the House of Aspirants team for quiz corrections, topic requests, collaborations or feedback - we usually reply within 24 hours on Telegram.",
+        "breadcrumb": {
+          "@id": "https://houseofaspirants.in/contact#breadcrumb"
+        },
+        "isPartOf": {
+          "@id": "https://houseofaspirants.in/#website"
+        },
+        "inLanguage": "en-IN",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "availableLanguage": [
+            "English",
+            "Hindi",
+            "Punjabi"
+          ]
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://houseofaspirants.in/contact#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://houseofaspirants.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact",
+            "item": "https://houseofaspirants.in/contact"
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -64,7 +94,8 @@
         </nav>
         <span class="eyebrow">Get in touch</span>
         <h1>Contact Us ✉️</h1>
-        <p class="muted">Question corrections, topic requests, collaboration or feedback — we read everything.</p>
+        <p class="muted">Question corrections, topic requests, collaboration or feedback — we read everything.
+           Writing about a topic request? Check <a class="ilink" href="index.html#subjects">all subjects</a> first to see what is already covered.</p>
       </div>
     </section>
 
@@ -73,7 +104,7 @@
         <!-- ================================================= CONTACT FORM -->
         <form class="card card-pad" id="contactForm" novalidate>
           <span class="eyebrow">Send a message</span>
-          <h3 style="margin-bottom:18px">Drop us a note</h3>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:18px">Drop us a note</h2>
 
           <div class="grid" style="gap:15px">
             <div class="field">
@@ -115,7 +146,7 @@
         <div class="grid" style="gap:16px">
           <div class="card card-pad">
             <span class="eyebrow">Fastest route</span>
-            <h3 style="margin-bottom:10px">✈ Telegram</h3>
+            <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:10px">✈ Telegram</h2>
             <p class="muted">For quick replies, DM us on the channel — links, PDFs and
                daily updates live there anyway.</p>
             <a class="btn btn-telegram mt-2" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">
@@ -125,16 +156,16 @@
 
           <div class="card card-pad">
             <span class="eyebrow">Social</span>
-            <h3 style="margin-bottom:10px">Follow the portal</h3>
+            <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:10px">Follow the portal</h2>
             <div class="social-row" style="margin-top:0">
-              <a class="social-link" href="https://instagram.com/houseofaspirants" target="_blank" rel="noopener">📸 Instagram</a>
-              <a class="social-link" href="https://youtube.com/@houseofaspirants" target="_blank" rel="noopener">▶ YouTube</a>
+              <a class="social-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener">📸 Instagram</a>
+              <a class="social-link" href="https://youtube.com/@houseofaspirants-y5s" target="_blank" rel="noopener">▶ YouTube</a>
             </div>
           </div>
 
           <div class="card card-pad">
             <span class="eyebrow">Response time</span>
-            <h3 style="margin-bottom:10px">Within 24 hours</h3>
+            <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:10px">Within 24 hours</h2>
             <p class="muted">Monday – Saturday. Corrections are prioritised and
                usually live within one deploy.</p>
           </div>

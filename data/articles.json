@@ -1,0 +1,45 @@
+{
+  "$note": "ARTICLE CONFIG (no coding needed). This file registers the study-guide articles that appear in Related Articles modules across subject pages, the /articles hub and the sitemap. Each entry needs: id (folder-style slug), title (must match the article page <title>, max 60 chars), url (the .html file at the site root), description (140-160 chars, must match the article page meta description), subjects (array of subject ids from subjects.json that this guide is about - drives which subject pages show it), categories (optional array of category folder names, e.g. 'punjab-gk' - a match ranks the guide higher on that category page), published / modified (ISO dates used in Article schema). To publish a NEW guide: 1) copy an existing article .html at the root, 2) fill in its head metadata + content, 3) add its entry here, 4) run python3 scripts/build_index.py and python3 scripts/seo_check.py. Nothing else to touch - the hub page, related modules, sitemap and service worker pick it up from this file.",
+  "articles": [
+    {
+      "id": "punjab-police-exam-preparation",
+      "title": "Punjab Police Exam Preparation: Step-by-Step Strategy",
+      "url": "punjab-police-exam-preparation.html",
+      "description": "An evergreen, step-by-step preparation strategy for Punjab Police aspirants: plan your day, master every subject and track progress with free practice.",
+      "subjects": ["gk", "quant", "reasoning", "punjabi", "english", "computer", "current-affairs"],
+      "categories": [],
+      "published": "2026-09-25",
+      "modified": "2026-09-25"
+    },
+    {
+      "id": "punjab-gk-study-guide",
+      "title": "How to Prepare Punjab GK: Topic-Wise Study Plan",
+      "url": "punjab-gk-study-guide.html",
+      "description": "A topic-wise guide to preparing Punjab GK for Punjab Police, PSSSB and PPSC exams - what to study, how to revise and where to practise free MCQs every day.",
+      "subjects": ["gk"],
+      "categories": ["punjab-gk"],
+      "published": "2026-09-25",
+      "modified": "2026-09-25"
+    },
+    {
+      "id": "current-affairs-preparation",
+      "title": "Daily Current Affairs Strategy for Punjab Exams",
+      "url": "current-affairs-preparation.html",
+      "description": "Build a current affairs habit that lasts: what to follow, how to keep monthly notes and how to revise with free expected MCQ practice for Punjab exams.",
+      "subjects": ["current-affairs", "gk"],
+      "categories": [],
+      "published": "2026-09-25",
+      "modified": "2026-09-25"
+    },
+    {
+      "id": "reasoning-quant-preparation",
+      "title": "Reasoning and Quant: Speed & Accuracy Study Guide",
+      "url": "reasoning-quant-preparation.html",
+      "description": "Sharpen speed and accuracy in Reasoning and Quant: daily drill routines, mental maths shortcuts and free topic-wise quizzes for Punjab competitive exams.",
+      "subjects": ["reasoning", "quant"],
+      "categories": [],
+      "published": "2026-09-25",
+      "modified": "2026-09-25"
+    }
+  ]
+}

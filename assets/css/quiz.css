@@ -137,7 +137,7 @@
 
 /* -------------------------------------------------------- QUESTION PALETTE */
 .palette-card { padding: 20px; }
-.palette-card h4 {
+.palette-card h4, .palette-card h3 {
   font-size: 0.78rem; letter-spacing: 0.13em; text-transform: uppercase;
   color: var(--muted); margin-bottom: 14px;
 }
@@ -173,10 +173,10 @@
 /* Telegram side card */
 .side-telegram {
   padding: 20px; text-align: center;
-  background: linear-gradient(150deg, #229ed9, #1c7fb4 60%, #4f46e5 160%);
+  background: linear-gradient(150deg, #1a7ba6, #16759d 60%, #4f46e5 160%);
   color: #fff; border: 0;
 }
-.side-telegram h4 { font-size: 1rem; margin-bottom: 6px; }
+.side-telegram h4, .side-telegram h3 { font-size: 1rem; margin-bottom: 6px; }
 .side-telegram p { font-size: 0.85rem; opacity: 0.92; margin-bottom: 14px; }
 .side-telegram .btn { background: #fff; color: #1478a8; border: 0; }
 

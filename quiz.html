@@ -21,10 +21,17 @@
   <meta name="twitter:description" content="Solve topic-wise MCQ quizzes with a timer, question palette, instant results and full answer review - free practice for Punjab Police and PSSSB exams.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <link rel="canonical" href="https://houseofaspirants.in/quiz">
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preload" href="assets/css/quiz.css" as="style">
   <link rel="stylesheet" href="assets/css/quiz.css">
   <!-- Replaced at runtime by quiz.js with WebPage + Quiz schema for topic
        quizzes; blanked for noindex modes (?mode=daily / ?mode=mock). -->
@@ -34,6 +41,7 @@
     "@type": "WebPage",
     "url": "https://houseofaspirants.in/quiz",
     "name": "Punjab Police MCQ Quiz | House of Aspirants",
+    "description": "Solve topic-wise MCQ quizzes with a timer, question palette, instant results and full answer review - free practice for Punjab Police and PSSSB exams.",
     "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
     "inLanguage": "en-IN"
   }
@@ -107,7 +115,7 @@
         <!-- ------------------------------------------------- SIDE PANEL -->
         <aside class="quiz-side">
           <div class="card palette-card">
-            <h4>Question Palette</h4>
+            <h3>Question Palette</h3>
             <div class="palette" id="palette"><!-- buttons injected --></div>
 
             <ul class="legend">
@@ -123,7 +131,7 @@
           </div>
 
           <div class="card side-telegram">
-            <h4>✈ House of Aspirants</h4>
+            <h3>✈ House of Aspirants</h3>
             <p>Daily free PDFs, current affairs & exam updates.</p>
             <a class="btn btn-block" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           </div>
@@ -141,6 +149,26 @@
           <div>
             <div class="ad-label">Advertisement</div>
             <p class="text-sm">Non-intrusive banner space below the quiz area.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================ KEEP PRACTISING -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="card card-pad">
+          <span class="eyebrow">Keep Practising</span>
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">More ways to practise</h2>
+          <div class="btn-row">
+            <a class="btn btn-sm btn-soft" href="quiz.html?mode=daily">📅 Daily Quiz</a>
+            <a class="btn btn-sm btn-soft" href="mock.html">🧪 Mock Tests</a>
+            <a class="btn btn-sm btn-soft" href="subject.html?subject=gk">Previous Year Questions</a>
+            <a class="btn btn-sm btn-soft" href="subject.html?subject=current-affairs">Expected MCQs</a>
+            <a class="btn btn-sm btn-soft" href="subject.html?subject=gk&amp;category=punjab-gk">📌 Punjab GK</a>
+            <a class="btn btn-sm btn-soft" href="articles.html">📚 Study Guides</a>
+            <a class="btn btn-sm btn-soft" href="leaderboard.html">🏆 Leaderboard</a>
+            <a class="btn btn-sm btn-soft" href="bookmarks.html">★ Bookmarks</a>
           </div>
         </div>
       </div>

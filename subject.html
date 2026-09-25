@@ -20,9 +20,15 @@
   <meta name="twitter:description" content="Browse all subjects and topics - Punjab GK, quant, reasoning, Punjabi, English, computer and current affairs MCQs for Punjab Police, PSSSB and PPSC exams.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <link rel="canonical" href="https://houseofaspirants.in/subject">
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
   <!-- Replaced at runtime by subject.js with CollectionPage + BreadcrumbList
        matching the rendered level (?subject= / &category=). -->
@@ -32,6 +38,7 @@
     "@type": "WebPage",
     "url": "https://houseofaspirants.in/subject",
     "name": "Topic Wise Quiz & Free MCQ Practice | House of Aspirants",
+    "description": "Browse all subjects and topics - Punjab GK, quant, reasoning, Punjabi, English, computer and current affairs MCQs for Punjab Police, PSSSB and PPSC exams.",
     "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
     "inLanguage": "en-IN"
   }
@@ -39,24 +46,25 @@
 </head>
 
 <body data-page="subject">
-  <div data-site-header></div>
-  <noscript>
+  <div data-site-header><noscript>
     <header class="site-header"><div class="container header-inner">
       <a class="brand" href="index.html"><span class="brand-name">House of Aspirants</span></a>
-      <nav class="main-nav"><ul class="nav-list">
+      <nav class="main-nav" aria-label="Primary"><ul class="nav-list">
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="subject.html?subject=gk">GK</a></li>
+        <li><a class="nav-link" href="subject.html?subject=gk&amp;category=punjab-gk">Punjab GK</a></li>
         <li><a class="nav-link" href="subject.html?subject=quant">Quant</a></li>
         <li><a class="nav-link" href="subject.html?subject=reasoning">Reasoning</a></li>
         <li><a class="nav-link" href="subject.html?subject=punjabi">Punjabi</a></li>
         <li><a class="nav-link" href="subject.html?subject=english">English</a></li>
         <li><a class="nav-link" href="subject.html?subject=computer">Computer</a></li>
+        <li><a class="nav-link" href="subject.html?subject=current-affairs">Current Affairs</a></li>
         <li><a class="nav-link" href="mock.html">Mock Tests</a></li>
         <li><a class="nav-link" href="bookmarks.html">Bookmarks</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
       </ul></nav>
     </div></header>
-  </noscript>
+  </noscript></div>
 
   <main id="main">
     <section class="page-hero">
@@ -132,11 +140,34 @@
         </div>
       </div>
     </section>
+
+    <!-- ================================================== RELATED CONTENT
+         Intelligent internal linking: related subjects, live quizzes and
+         study guides for whatever subject/category is being viewed.
+         Rendered by related.js from data/index.json + data/articles.json. -->
+    <section class="section" style="padding-top:0" id="relatedSection">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Keep Exploring</span>
+            <h2>Related subjects, quizzes &amp; guides</h2>
+            <p>Jump to a neighbouring subject, a live quiz or a study guide —
+               picked from what you are viewing right now.</p>
+          </div>
+        </div>
+        <div class="grid grid-3" id="relatedGrid">
+          <div class="card card-pad"><div class="skeleton" style="height:130px"></div></div>
+          <div class="card card-pad"><div class="skeleton" style="height:130px"></div></div>
+          <div class="card card-pad"><div class="skeleton" style="height:130px"></div></div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <div data-site-footer></div>
 
   <script src="assets/js/core.js" defer></script>
   <script src="assets/js/subject.js" defer></script>
+  <script src="assets/js/related.js" defer></script>
 </body>
 </html>

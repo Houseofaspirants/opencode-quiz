@@ -82,7 +82,7 @@
         <a class="card quiz-card" href="quiz.html?subject=${encodeURIComponent(t.subject.id)}&topic=${encodeURIComponent(t.id)}${t.category ? `&category=${encodeURIComponent(t.category)}` : ""}">
           <span class="qc-icon">${t.subject.icon}</span>
           <span>
-            <h4>${esc(t.name)}</h4>
+            <h3>${esc(t.name)}</h3>
             <span class="qc-sub">${esc(t.subject.name)} · ${t.count} question${t.count === 1 ? "" : "s"}</span>
           </span>
           <span class="qc-go">→</span>

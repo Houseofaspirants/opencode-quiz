@@ -468,6 +468,7 @@ if site.get("url"):
     # utility pages — the 404 page and runtime noindex modes stay out.)
     urls = [
         {"loc": f"{base}/", "p": "1.0"},
+        {"loc": f"{base}/articles", "p": "0.8"},
         {"loc": f"{base}/mock", "p": "0.9"},
         {"loc": f"{base}/leaderboard", "p": "0.7"},
         {"loc": f"{base}/result", "p": "0.6"},
@@ -478,6 +479,19 @@ if site.get("url"):
         {"loc": f"{base}/privacy", "p": "0.4"},
         {"loc": f"{base}/terms", "p": "0.4"},
     ]
+    # Study guides — config-driven from data/articles.json (same registry the
+    # /articles hub, Related Articles modules and Article schema read).
+    guides_path = os.path.join(DATA_DIR, "articles.json")
+    if os.path.exists(guides_path):
+        try:
+            for a in read_json(guides_path).get("articles", []):
+                page = str(a.get("url", ""))
+                if page.endswith(".html") and os.path.exists(os.path.join(ROOT, page)):
+                    urls.append({"loc": f"{base}/{page[:-5]}", "p": "0.7"})
+                else:
+                    warn(f"articles.json: page file missing for {a.get('id', '?')} ({page})")
+        except Exception as e:
+            warn(f"articles.json unreadable: {e}")
     for s in output_subjects:
         urls.append({"loc": f"{base}/subject?subject={s['id']}", "p": "0.9"})
         for c in s["categories"]:

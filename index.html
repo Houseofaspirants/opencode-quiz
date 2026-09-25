@@ -40,6 +40,10 @@
   <link rel="preload" href="assets/css/style.css" as="style">
   <!-- Resource hints: the header logo is injected by deferred JS, so the
        browser otherwise discovers it late. -->
+  <link rel="preconnect" href="https://t.me">
+  <link rel="dns-prefetch" href="//t.me">
+  <link rel="dns-prefetch" href="//instagram.com">
+  <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -58,7 +62,10 @@
         "inLanguage": "en-IN",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": "https://houseofaspirants.in/subject?subject={search_term_string}",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://houseofaspirants.in/subject?subject={search_term_string}"
+          },
           "query-input": "required name=search_term_string"
         },
         "publisher": { "@id": "https://houseofaspirants.in/#organization" }
@@ -73,8 +80,8 @@
         "areaServed": { "@type": "Country", "name": "India" },
         "sameAs": [
           "https://t.me/HouseOfAspirant",
-          "https://instagram.com/houseofaspirants",
-          "https://youtube.com/@houseofaspirants"
+          "https://instagram.com/si.gurpreetsingh.pp",
+          "https://youtube.com/@houseofaspirants-y5s"
         ]
       },
       {
@@ -95,24 +102,25 @@
 <body data-page="home">
   <!-- Shared header, mobile drawer & search modal are rendered by core.js
        (single source of truth). noscript fallback below keeps crawlers aware. -->
-  <div data-site-header></div>
-  <noscript>
+  <div data-site-header><noscript>
     <header class="site-header"><div class="container header-inner">
       <a class="brand" href="index.html"><span class="brand-name">House of Aspirants</span></a>
-      <nav class="main-nav"><ul class="nav-list">
+      <nav class="main-nav" aria-label="Primary"><ul class="nav-list">
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="subject.html?subject=gk">GK</a></li>
+        <li><a class="nav-link" href="subject.html?subject=gk&amp;category=punjab-gk">Punjab GK</a></li>
         <li><a class="nav-link" href="subject.html?subject=quant">Quant</a></li>
         <li><a class="nav-link" href="subject.html?subject=reasoning">Reasoning</a></li>
         <li><a class="nav-link" href="subject.html?subject=punjabi">Punjabi</a></li>
         <li><a class="nav-link" href="subject.html?subject=english">English</a></li>
         <li><a class="nav-link" href="subject.html?subject=computer">Computer</a></li>
+        <li><a class="nav-link" href="subject.html?subject=current-affairs">Current Affairs</a></li>
         <li><a class="nav-link" href="mock.html">Mock Tests</a></li>
         <li><a class="nav-link" href="bookmarks.html">Bookmarks</a></li>
         <li><a class="nav-link" href="about.html">About</a></li>
       </ul></nav>
     </div></header>
-  </noscript>
+  </noscript></div>
 
   <main id="main">
     <!-- ============================================================= HERO -->
@@ -241,6 +249,26 @@
           <div class="skeleton" style="height:84px"></div>
           <div class="skeleton" style="height:84px"></div>
           <div class="skeleton" style="height:84px"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================== STUDY GUIDES -->
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Study Guides</span>
+            <h2>Prepare smarter with free guides</h2>
+            <p>Evergreen strategy reads — every guide links straight into practice.</p>
+          </div>
+          <a class="btn btn-soft" href="articles.html">📚 All study guides</a>
+        </div>
+        <div class="btn-row reveal">
+          <a class="btn btn-sm btn-soft" href="punjab-police-exam-preparation.html">Punjab Police Strategy</a>
+          <a class="btn btn-sm btn-soft" href="punjab-gk-study-guide.html">Punjab GK Study Plan</a>
+          <a class="btn btn-sm btn-soft" href="current-affairs-preparation.html">Current Affairs Habit</a>
+          <a class="btn btn-sm btn-soft" href="reasoning-quant-preparation.html">Reasoning &amp; Quant Speed</a>
         </div>
       </div>
     </section>

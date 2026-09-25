@@ -175,9 +175,9 @@ const HOA = (() => {
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="House of Aspirants home">
+      <a class="brand" href="index.html" aria-label="House of Aspirants Quiz Portal - go to home">
         <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="House of Aspirants logo" title="House of Aspirants" decoding="async">
-        <span class="brand-name">House of Aspirants<span class="brand-sub">Quiz Portal</span></span>
+        <span class="brand-name">House of Aspirants <span class="brand-sub">Quiz Portal</span></span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -230,6 +230,7 @@ const HOA = (() => {
           `<a class="mm-link" data-nav="${id}" href="subject.html?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
+    <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> Punjab GK</a>
 
     <p class="mm-group">Practice</p>
     <a class="mm-link" data-nav="daily" href="quiz.html?mode=daily">📅 Daily Quiz</a>
@@ -240,10 +241,11 @@ const HOA = (() => {
 
     <p class="mm-group">More</p>
     <a class="mm-link" data-nav="about" href="about.html">ℹ️ About</a>
+    <a class="mm-link" data-nav="articles" href="articles.html">📚 Study Guides</a>
     <a class="mm-link" data-nav="contact" href="contact.html">✉️ Contact</a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> Toggle theme</button>
     <button class="mm-link" data-action="install-app">⬇ Install App</button>
-    <a class="mm-link" style="color:#229ed9" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
+    <a class="mm-link mm-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
   </div>
 
   <div class="search-overlay hidden" id="searchOverlay" role="dialog" aria-label="Search">
@@ -272,13 +274,13 @@ const HOA = (() => {
              Punjab Police, PSSSB and competitive exam aspirants.</p>
           <div class="social-row">
             <a class="social-link" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
-            <a class="social-link" href="https://instagram.com/houseofaspirants" target="_blank" rel="noopener">📸 Instagram</a>
-            <a class="social-link" href="https://youtube.com/@houseofaspirants" target="_blank" rel="noopener">▶ YouTube</a>
+            <a class="social-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener">📸 Instagram</a>
+            <a class="social-link" href="https://youtube.com/@houseofaspirants-y5s" target="_blank" rel="noopener">▶ YouTube</a>
           </div>
         </div>
 
         <div class="footer-col">
-          <h4>Practice</h4>
+          <h2>Practice</h2>
           <a href="quiz.html?mode=daily">Daily Quiz</a>
           <a href="mock.html">Mock Tests</a>
           <a href="subject.html?subject=gk">Previous Year Questions</a>
@@ -289,16 +291,18 @@ const HOA = (() => {
         </div>
 
         <div class="footer-col">
-          <h4>Subjects</h4>
+          <h2>Subjects</h2>
           <a href="index.html#subjects">All Subjects</a>
+          <a href="subject.html?subject=gk&amp;category=punjab-gk">📌 Punjab GK</a>
           ${SUBJECT_LINKS.map(
             ([id, , name]) => `<a href="subject.html?subject=${id}">${name}</a>`
           ).join("")}
         </div>
 
         <div class="footer-col">
-          <h4>Company</h4>
+          <h2>Company</h2>
           <a href="about.html">About</a>
+          <a href="articles.html">Study Guides</a>
           <a href="contact.html">Contact</a>
           <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           <a href="privacy.html">Privacy Policy</a>
@@ -475,7 +479,7 @@ const HOA = (() => {
           ? hits.map((h) => `
             <a class="quiz-card card" href="${h.href}">
               <span class="qc-icon">${h.icon}</span>
-              <span><h4>${esc(h.label)}</h4>
+              <span><h3>${esc(h.label)}</h3>
               <span class="qc-sub">${esc(h.sub)}${h.type === "topic" ? ` · ${h.count ?? 0} Q` : ""}</span></span>
               <span class="qc-go">→</span>
             </a>`).join("")
