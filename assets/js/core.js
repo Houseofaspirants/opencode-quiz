@@ -1115,9 +1115,68 @@ const HOA = (() => {
     return initAnalytics(GA_ID);
   }
 
+  /* ============================================= CLARITY (Microsoft) =====
+     Microsoft Clarity (heatmaps + session replay) is injected from this one
+     file, exactly like GA4 above, so the project id exists in one place
+     instead of one copy-pasted snippet per page. One `defer`red file also
+     guarantees it is present on every page of the site, including 404.
+
+     Performance — Clarity must cost nothing at load time:
+       • The loader is the OFFICIAL Microsoft snippet, unchanged: it sets
+         `t.async = 1`, so the single third-party request is fetched off the
+         main thread and never blocks rendering, LCP or input handling. No
+         render-blocking <head> snippet was added to any page.
+       • The only synchronous work is ~10 lines of JS inside the already
+         deferred core.js — it runs after parsing, before DOMContentLoaded.
+       • A try/catch wraps it: an ad-blocker, CSP or offline third party can
+         never break the portal.
+
+     Production only — stricter than GA4's localhost exemption. Clarity
+     records what people actually do, so dev, preview and staging URLs would
+     pollute the heatmaps and session list. This is therefore an ALLOWLIST:
+     only the live domain loads it; localhost, 127.0.0.1, *.local, Vercel
+     previews and file:// never do. */
+  const CLARITY_ID = "yodrakwmyn";
+  const CLARITY_PRODUCTION_HOSTS = ["houseofaspirants.in", "www.houseofaspirants.in"];
+  let clarityStatus = "idle"; // idle | active | skipped-non-prod | blocked
+
+  /** True only on the live domain — the Clarity gate. */
+  function isProductionHost() {
+    return CLARITY_PRODUCTION_HOSTS.indexOf(location.hostname) !== -1;
+  }
+
+  /** Injects the official Clarity snippet. Idempotent. */
+  function initClarity(projectId = CLARITY_ID) {
+    if (clarityStatus === "active") return false;
+    try {
+      (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments); };
+        t = l.createElement(r); t.async = 1;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+      })(window, document, "clarity", "script", projectId);
+      clarityStatus = "active";
+      return true;
+    } catch {
+      clarityStatus = "blocked";
+      return false;
+    }
+  }
+
+  /** Production entry point: Clarity never runs outside the live domain. */
+  function startClarity() {
+    if (!isProductionHost()) {
+      clarityStatus = "skipped-non-prod";
+      return false;
+    }
+    return initClarity(CLARITY_ID);
+  }
+
   /* ================================================== INITIALISE ========= */
   function init() {
     startAnalytics(); // first: gets the page_view queued before any UI work
+    startClarity(); // Clarity is a no-op off the live domain (skips non-prod)
     renderChrome();
     initTheme();
     initNav();
@@ -1144,6 +1203,13 @@ const HOA = (() => {
       init: initAnalytics,
       start: startAnalytics,
       get status() { return gaStatus; },
+    },
+    clarity: {
+      id: CLARITY_ID,
+      productionHosts: CLARITY_PRODUCTION_HOSTS.slice(),
+      init: initClarity,
+      start: startClarity,
+      get status() { return clarityStatus; },
     },
   };
 })();

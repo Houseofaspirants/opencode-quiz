@@ -670,6 +670,30 @@ for frag, why in (
         errors.append(f"core.js: GA4 missing {why} ({frag!r})")
 notes.append(f"analytics: GA4 {GA_ID} from core.js (async, localhost-exempt)")
 
+# Microsoft Clarity — same single-source policy as GA4, but production-only:
+# Clarity records real sessions, so the guard is an allowlist of the live
+# domain (stricter than GA4's localhost exemption) and the snippet must never
+# be pasted into individual pages, where it could load twice or off-domain.
+CLARITY_ID = "yodrakwmyn"
+for frag, why in (
+    (f'CLARITY_ID = "{CLARITY_ID}"', "project id"),
+    ("clarity.ms/tag/", "official loader URL"),
+    ("t.async = 1", "loader must stay async (never render-blocking)"),
+    ("isProductionHost", "production allowlist guard (dev/preview must not load)"),
+    ('"houseofaspirants.in"', "live domain in the allowlist"),
+    ("startClarity()", "loader must be started from init()"),
+    ("try {", "loader must be wrapped so it cannot break the portal"),
+):
+    if frag not in core:
+        errors.append(f"core.js: Clarity missing {why} ({frag!r})")
+for page in PAGES:
+    html = (ROOT / page).read_text(encoding="utf-8")
+    if "clarity" in html.lower():
+        errors.append(f"{page}: Clarity must ship only from core.js, not inline")
+    if "assets/js/core.js" not in html:
+        errors.append(f"{page}: missing core.js — analytics/Clarity coverage broken")
+notes.append(f"analytics: Clarity {CLARITY_ID} from core.js (async, production-only)")
+
 # cache headers (vercel.json)
 try:
     vj = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
