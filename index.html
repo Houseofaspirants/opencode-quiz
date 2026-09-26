@@ -66,7 +66,7 @@
             "@type": "EntryPoint",
             "urlTemplate": "https://houseofaspirants.in/subject?subject={search_term_string}"
           },
-          "query-input": "required name=search_term_string"
+          "query": "{search_term_string}"
         },
         "publisher": { "@id": "https://houseofaspirants.in/#organization" }
       },
@@ -87,6 +87,8 @@
       {
         "@type": "WebPage",
         "@id": "https://houseofaspirants.in/#webpage",
+        "hasPart": { "@id": "https://houseofaspirants.in/#faq" },
+        "publisher": { "@id": "https://houseofaspirants.in/#organization" },
         "url": "https://houseofaspirants.in/",
         "name": "Punjab Police, PSSSB & PPSC MCQ Quiz | House of Aspirants",
         "description": "Practice free Punjab Police MCQ quizzes - Punjab GK, reasoning, computer and current affairs. Topic-wise practice, daily quiz and mock tests for PSSSB and PPSC.",
@@ -104,6 +106,8 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://houseofaspirants.in/#faq",
+    "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
     "mainEntity": [
       {
         "@type": "Question",

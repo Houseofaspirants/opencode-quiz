@@ -33,6 +33,9 @@
     "@graph": [
       {
         "@type": "WebPage",
+        "@id": "https://houseofaspirants.in/mock#webpage",
+        "hasPart": { "@id": "https://houseofaspirants.in/mock#faq" },
+        "publisher": { "@id": "https://houseofaspirants.in/#organization" },
         "url": "https://houseofaspirants.in/mock",
         "name": "Mock Test - Punjab Police, PSSSB & PPSC | House of Aspirants",
         "description": "Build a full-length mock test from any subject with a custom question count and time limit - exam-style practice for Punjab Police, PSSSB, PPSC and PSPCL.",
@@ -69,6 +72,8 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://houseofaspirants.in/mock#faq",
+    "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
     "mainEntity": [
       {
         "@type": "Question",

@@ -784,14 +784,18 @@
           name: `${QUIZ.title} Quiz - House of Aspirants`,
           description: metaDescLd,
           isPartOf: { "@id": `${siteBase}/#website` },
+          publisher: { "@id": `${siteBase}/#organization` },
+          hasPart: { "@id": `${QUIZ.canonical}#quiz` },
           inLanguage: "en-IN",
         },
         {
           "@type": "Quiz",
+          "@id": `${QUIZ.canonical}#quiz`,
           url: QUIZ.canonical,
           name: `${QUIZ.title} Quiz`,
           description: metaDescLd,
           about: { "@type": "Thing", name: QUIZ.title },
+          isPartOf: { "@id": `${QUIZ.canonical}#webpage` },
           inLanguage: "en-IN",
           isAccessibleForFree: true,
           timeRequired: `PT${Math.max(

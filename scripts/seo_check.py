@@ -45,7 +45,7 @@ KNOWN_TYPES = {
     "WebSite", "Organization", "EducationalOrganization", "WebPage", "AboutPage",
     "ContactPage", "CollectionPage", "BreadcrumbList", "ListItem", "SearchAction",
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
-    "Article", "FAQPage", "Question", "Answer", "Speakable",
+    "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
 }
 WEBPAGE_FAMILY = {"WebPage", "AboutPage", "ContactPage", "CollectionPage"}
 REQUIRED = {
@@ -57,7 +57,7 @@ REQUIRED = {
     "ContactPage": ["url", "name", "description", "isPartOf"],
     "CollectionPage": ["url", "name", "description", "isPartOf"],
     "BreadcrumbList": ["itemListElement"],
-    "SearchAction": ["target", "query-input"],
+    "SearchAction": ["target", "query"],
     "EntryPoint": ["urlTemplate"],
     "Quiz": ["name", "url", "description"],
     "ContactPoint": ["contactType"],
@@ -204,6 +204,12 @@ for page in PAGES:
 
     # --- JSON-LD: parse + DEEP validation (types, required props, @id
     #     linkage, breadcrumb sequence, on-domain URLs) ---------------------
+    # @id references are resolved once the WHOLE page has been parsed: Google
+    # treats every JSON-LD <script> on a page as a single entity graph, so a
+    # node defined in block 1 may legitimately be referenced from block 2.
+    # Site-level entities (defined on the home page) stay whitelisted.
+    page_defined_ids, page_seen_ids, pending_refs = set(), set(), []
+    cross_page_ok = {f"{DOMAIN}/#website", f"{DOMAIN}/#organization", f"{DOMAIN}/#webpage"}
     for i, block in enumerate(re.findall(
             r'<script type="application/ld\+json"(?: id="[^"]*")?>(.*?)</script>', html, re.S)):
         if not block.strip():
@@ -233,9 +239,8 @@ for page in PAGES:
                     walk(v)
 
         walk(data)
-        defined_ids = {n["@id"] for n in nodes if isinstance(n.get("@id"), str)}
-        cross_page_ok = {f"{DOMAIN}/#website", f"{DOMAIN}/#organization", f"{DOMAIN}/#webpage"}
-        seen_ids = set()
+        page_defined_ids |= {n["@id"] for n in nodes if isinstance(n.get("@id"), str)}
+        seen_ids = page_seen_ids   # duplicate @id is a page-level defect too
 
         for n in nodes:
             types = n.get("@type")
@@ -289,11 +294,8 @@ for page in PAGES:
                 if n["numberOfItems"] != len(n.get("itemListElement") or []):
                     errors.append(f"{tag}: ItemList numberOfItems mismatch")
 
-        # every @id reference must resolve in this document (or be a known
-        # cross-page entity defined on the home page)
-        for r in refs_found:
-            if r not in defined_ids and r not in cross_page_ok:
-                errors.append(f"{tag}: dangling @id reference {r}")
+        # defer reference resolution until every block on this page is known
+        pending_refs.extend((tag, r) for r in refs_found)
 
         # WebPage <-> BreadcrumbList must cross-link when both exist
         wp = [n for n in nodes
@@ -309,6 +311,12 @@ for page in PAGES:
                     errors.append(f"{tag}: WebPage.breadcrumb {ref!r} != BreadcrumbList @id {bc_id!r}")
         elif bc and not wp:
             errors.append(f"{tag}: BreadcrumbList without a WebPage-family node")
+
+    # every @id reference must resolve to a node defined somewhere on this
+    # page (any block) or to a known cross-page entity
+    for tag, r in pending_refs:
+        if r not in page_defined_ids and r not in cross_page_ok:
+            errors.append(f"{tag}: dangling @id reference {r}")
 
     # --- image attributes -------------------------------------------------
     for tag in re.findall(r"<img\b[^>]*>", html):

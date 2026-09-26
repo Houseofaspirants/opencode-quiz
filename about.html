@@ -31,6 +31,8 @@
     "@graph": [
       {
         "@type": "AboutPage",
+        "@id": "https://houseofaspirants.in/about#webpage",
+        "hasPart": { "@id": "https://houseofaspirants.in/about#faq" },
         "name": "About House of Aspirants - Free Punjab Exam MCQ Portal",
         "url": "https://houseofaspirants.in/about",
         "description": "Why House of Aspirants exists: a free, fast and offline-ready MCQ portal built for Punjab Police, PSSSB, PPSC and other Punjab Government exam aspirants.",
@@ -70,6 +72,8 @@
   {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": "https://houseofaspirants.in/about#faq",
+    "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
     "mainEntity": [
       {
         "@type": "Question",

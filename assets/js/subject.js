@@ -149,6 +149,7 @@
 
       const page = {
         "@type": "CollectionPage",
+        "@id": `${canonical}#webpage`,
         url: canonical,
         name:
           level === "category"
@@ -156,6 +157,7 @@
             : `${subject.name} Quizzes`,
         description: metaDesc,
         isPartOf: { "@id": `${siteBase}/#website` },
+        publisher: { "@id": `${siteBase}/#organization` },
         inLanguage: "en-IN",
         breadcrumb: { "@id": `${canonical}#breadcrumb` },
       };
