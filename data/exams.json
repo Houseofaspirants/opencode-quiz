@@ -1,0 +1,103 @@
+{
+  "$note": "EXAM CONFIG (no coding needed). This file registers the recruitment papers that get their own SEO landing page (exam-<id>.html). Each entry needs: id (url slug), name (used in the H1, title and breadcrumb), summary (1-2 sentences describing the paper - keep it factual, never dates/marks/eligibility), subjects (subject ids from subjects.json this paper leans on - drives Exam -> Subject links), categories (optional category folder ids, e.g. 'punjab-gk' - drives Exam -> Topic links through that category). Topic links are derived automatically from subjects/categories, so you never list topics by hand. To publish a NEW exam: add an entry here, run python3 scripts/build_landing_pages.py, then python3 scripts/seo_check.py. The generator also refreshes SEO-LANDING-REPORT.md and the sitemap entries.",
+  "exams": [
+    {
+      "id": "punjab-police-constable",
+      "name": "Punjab Police Constable",
+      "summary": "The highest-volume recruitment on this list. Build your base with Punjab GK and current affairs, then drill reasoning until speed is automatic.",
+      "subjects": ["gk", "current-affairs"],
+      "categories": ["punjab-gk"]
+    },
+    {
+      "id": "punjab-police-asi",
+      "name": "Punjab Police ASI",
+      "summary": "Assistant Sub-Inspector papers separate candidates on English and Punjabi accuracy as much as on general awareness. Practise language daily.",
+      "subjects": ["english", "punjabi"],
+      "categories": []
+    },
+    {
+      "id": "punjab-police-sub-inspector",
+      "name": "Punjab Police Sub-Inspector (SI)",
+      "summary": "The most competitive paper here. Polity, history and quant reasoning decide the rank - so take full timed mocks before the exam.",
+      "subjects": ["gk", "quant"],
+      "categories": ["polity"]
+    },
+    {
+      "id": "punjab-police-intelligence-assistant",
+      "name": "Punjab Police Intelligence Assistant",
+      "summary": "Data handling, mental ability and computer awareness carry most of the weight. Use short topic sets and check every explanation.",
+      "subjects": ["quant", "computer"],
+      "categories": []
+    },
+    {
+      "id": "punjab-police-jail-warder",
+      "name": "Punjab Police Jail Warder",
+      "summary": "A tighter syllabus: general awareness, Punjabi and basic reasoning. Perfect for a daily quiz habit - short sessions, high consistency.",
+      "subjects": ["reasoning", "punjabi"],
+      "categories": []
+    },
+    {
+      "id": "patwari",
+      "name": "Patwari",
+      "summary": "Revenue work starts with Punjab geography, history and current affairs. Add quant for the sections that reward calculation speed.",
+      "subjects": ["gk", "quant"],
+      "categories": ["geography-environment", "history"]
+    },
+    {
+      "id": "excise-inspector",
+      "name": "Excise Inspector",
+      "summary": "General awareness and English carry this paper. Track Punjab policy news daily and revise it as MCQs, not as notes.",
+      "subjects": ["current-affairs", "english"],
+      "categories": []
+    },
+    {
+      "id": "forest-guard",
+      "name": "Forest Guard",
+      "summary": "Environment, geography and general science, with a physical test after the written paper. Keep science revision short and frequent.",
+      "subjects": ["gk"],
+      "categories": ["geography-environment"]
+    },
+    {
+      "id": "naib-tehsildar",
+      "name": "Naib Tehsildar",
+      "summary": "Land records, Punjab history and polity, plus data interpretation. A strong polity base is the fastest score to build.",
+      "subjects": ["gk", "quant"],
+      "categories": ["polity"]
+    },
+    {
+      "id": "senior-assistant",
+      "name": "Senior Assistant",
+      "summary": "Office procedure, computer applications and both languages. Computer MCQs are the highest-yield block - practise them until they are free marks.",
+      "subjects": ["computer", "punjabi"],
+      "categories": []
+    },
+    {
+      "id": "clerk",
+      "name": "Clerk",
+      "summary": "Grammar, comprehension, typing and basic computer knowledge. Accuracy beats speed here - review every wrong answer.",
+      "subjects": ["english", "computer"],
+      "categories": []
+    },
+    {
+      "id": "lab-attendant",
+      "name": "Lab Attendant",
+      "summary": "A short, high-scoring paper: lab safety, general science and reasoning. Ten focused minutes a day is usually enough to cover it.",
+      "subjects": ["gk", "reasoning"],
+      "categories": []
+    },
+    {
+      "id": "ppsc-posts",
+      "name": "PPSC posts",
+      "summary": "Punjab Public Service Commission papers are syllabus-heavy and spread over months. Follow a study plan and revise on a fixed cycle.",
+      "subjects": [],
+      "categories": []
+    },
+    {
+      "id": "pspcl-jobs",
+      "name": "PSPCL jobs",
+      "summary": "Recruitment by the Punjab State Power Corporation Limited. Technical aptitude sits alongside general awareness and reasoning.",
+      "subjects": ["quant", "reasoning"],
+      "categories": []
+    }
+  ]
+}

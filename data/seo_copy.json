@@ -1,0 +1,111 @@
+{
+  "$note": "SEO COPY (no coding needed). Hand-written, editorial copy that the landing-page generator (scripts/build_landing_pages.py) splices into the generated subject / category / topic pages. 'answer' is the 35-55 word quick-answer box (the line answer engines quote), 'intro' is an array of paragraphs prepended to the generated intro. Keep every claim factual - never dates, marks, eligibility or vacancy details. Anything you leave out falls back to the generator's data-driven templates, so a new subject/category/topic still publishes without editing this file.",
+  "subjects": {
+    "gk": {
+      "answer": "General Knowledge is the widest paper in every Punjab recruitment: Punjab history and polity sit beside Indian geography, economy and science. This page collects every free GK MCQ set on the portal, sorted into six categories, so you can drill one lane at a time and watch accuracy improve set by set.",
+      "intro": [
+        "Punjab exams lean hardest on general knowledge, and the syllabus pulls in two directions at once: the state-specific facts that only Punjab papers ask - districts, personalities, folk culture, the Sikh period - and the national frame every commission repeats, from constitutional basics to rivers, climate and the economy. Holding both in the same week of study is what separates a prepared candidate from a hopeful one.",
+        "This page organises that spread into six working lanes instead of one endless list. Take polity when you want scoring that compounds, history when recall needs structure, Punjab GK when the state section is where you keep leaking marks, and geography, economy and the mixed lane as short corrections. Each lane keeps its own MCQ set, so a weak sub-topic surfaces as a pattern long before the exam does."
+      ]
+    },
+    "quant": {
+      "answer": "Quantitative aptitude is where a Police, PSSSB or PSPCL rank is usually won or lost. Practise simplification, percentage, profit and loss, time-speed-distance and data interpretation here as short timed sets - every question carries a full explanation, and every wrong answer saves itself for revision.",
+      "intro": [
+        "Quant is the section candidates postpone, which is exactly why it decides the cutoff. The topics themselves are small - simplification, percentage, profit and loss, time-speed-distance, averages, simple and compound interest, data interpretation - but each one rewards a method you can run in under a minute rather than a formula you can recite slowly.",
+        "Work these sets as drills, not as study. Attempt one short set untimed, read every explanation even when you were right, then repeat the same set against the clock two days later. The questions you get wrong twice are your syllabus; everything else is revision you do not need yet."
+      ]
+    },
+    "reasoning": {
+      "answer": "Reasoning rewards pattern memory more than study time. Work through analogy, coding-decoding, blood relations, syllogisms and puzzles as daily short sets, check every explanation, and let speed build on accuracy instead of racing the clock and memorising mistakes.",
+      "intro": [
+        "Reasoning is the most honest section on the paper: it does not care what you memorised, only which pattern you recognise first. Analogy, coding-decoding, blood relations, syllogism, direction, seating arrangements and puzzles all reduce to a small number of recurring shapes, and the candidates who improve fastest are the ones who name the shape instead of calculating it.",
+        "The practical habit is short sets, frequently. Ten reasoning questions every morning will move you further than a two-hour session on Sunday, because pattern recognition decays quickly. When a question costs you more than its time allotment, mark it, read the method in the explanation, and rebuild it without the numbers."
+      ]
+    },
+    "punjabi": {
+      "answer": "Punjab Police and departmental papers carry a Punjabi section that becomes easy marks once grammar, muhavare and akhan turn into recall instead of reading. These free MCQs drill exactly that: one set per sub-topic, instant answers and a full explanation after every question.",
+      "intro": [
+        "Punjabi is the section most candidates treat as a formality and then lose marks in anyway. The paper is rarely hard - grammar rules, muhavare, akhan, vocabulary and a short run through literature - it is simply unprepared, which shows up as a minute spent per question on something that should take ten seconds.",
+        "Practise it the way you would practise reasoning: small, frequent and self-correcting. Attempt a set, read the explanation behind every wrong answer, and keep the idiom and muhavara notes to one line each. Within a fortnight the same questions stop being reading and start being recognition."
+      ]
+    },
+    "english": {
+      "answer": "English is the section most candidates quietly lose marks in. Grammar rules, idioms, one-word substitutions and error detection are all pattern questions - practise them daily here, read the explanation after every wrong answer, and the same traps stop working on you.",
+      "intro": [
+        "English separates candidates in Assistant Sub-Inspector, Clerk and Excise papers, and it does so in a particular way: not with vocabulary you do not know, but with rules you half-know. Error detection, subject-verb agreement, tenses, idioms and one-word substitutions are decided in seconds, so a rule you can state but not apply is worth less than one you can recognise on sight.",
+        "The fix is repetition with explanation. Attempt a set, then read why each wrong option was wrong - that single habit converts a guess into a rule. Keep a running list of the idioms and substitutions you miss, revise it weekly, and let the daily quiz carry the rest."
+      ]
+    },
+    "computer": {
+      "answer": "Computer awareness is the fastest block to turn into free marks: MS Office shortcuts, internet and networking basics, operating systems, AI basics and cyber security. These MCQs cover each lane with instant explanations - start with the live mobile-phone set published below.",
+      "intro": [
+        "Computer awareness is where effort converts into marks faster than anywhere else on the paper. The questions are short and factual - what a key does, how a network addresses a device, what a protocol is called, which layer a packet belongs to - and the syllabus, while wide, repeats itself heavily from paper to paper.",
+        "Because the questions are factual, the method that works is exposure: attempt, read the explanation, repeat. Fifteen minutes a day across MS Office, internet and networking, operating systems, AI basics and cyber security will outperform a weekend of reading, and every set you finish here saves a page of notes you would otherwise have to write."
+      ]
+    },
+    "current-affairs": {
+      "answer": "Current affairs decides the last few marks in every Punjab exam, and it is the only section that expires if you skip it. Follow daily, revise weekly as MCQs instead of notes, and keep the Expected MCQs habit running - this page holds the live sets.",
+      "intro": [
+        "Current affairs is the only section with an expiry date. National and international events, sports results, awards and Punjab's own decisions stop mattering the moment the paper moves on, which is why reading once is not enough: the material has to come back as questions before it becomes recall.",
+        "Treat it as a habit rather than a chapter. Attempt the daily quiz, keep a one-line note per event, then revise the notes as MCQs at the end of the week. The Expected MCQs habit in particular trains you to guess what an examiner will ask rather than what a magazine will print."
+      ]
+    }
+  },
+  "categories": {
+    "polity": {
+      "answer": "Polity is the most predictable lane in a General Knowledge paper: the Constitution, the three wings, fundamental rights and Punjab's own governance structure repeat in recognisable shapes. Drill them as one lane here so a weak sub-topic shows up as a pattern first.",
+      "intro": [
+        "Polity rewards candidates who can state a rule precisely. Questions here are rarely ambiguous - the Constitution, Parliament and the courts, fundamental rights and duties, the state machinery - but they are unforgiving about half-remembered articles and near-miss definitions.",
+        "Attempt this lane untimed first to find the gaps, then repeat under the clock. Keep every miss to one line, and revisit the lines the night before the paper."
+      ]
+    },
+    "history": {
+      "answer": "Punjab history and Indian history both reward structured recall: the Sikh period, the freedom movement, the Mughal succession and the post-independence sequence. Attempt these sets untimed first, then return under the clock - the dates you miss twice are worth writing down.",
+      "intro": [
+        "History is a memory subject with a shape. Punjab's own arc, the Sikh period and the freedom movement sit alongside the national sequence, and examiners tend to ask about turning points rather than minor details - which means the same handful of events repeat across papers.",
+        "Build a timeline rather than a list of facts, then test it here. When an answer costs you time, write the missing link as one line and add it back into your timeline the same day."
+      ]
+    },
+    "punjab-gk": {
+      "answer": "Punjab GK is the state-specific block every Punjab Police and PSSSB paper leans on: districts and rivers, folk culture, personalities, awards and recent state decisions. Practise this category daily, keep a one-line note for every miss, and revise that file the night before the exam.",
+      "intro": [
+        "Punjab GK is the section that makes a state exam a state exam. Districts and rivers, fairs and festivals, personalities and awards, the state's history and its recent decisions - all of it is short-form, all of it is repeated, and all of it is forgettable if you only read it once.",
+        "The working method is a daily set plus a one-line correction file. Attempt, read the explanation, write down only what you missed, and revise that file weekly. Within a month the file becomes shorter than the questions you already know."
+      ]
+    },
+    "geography-environment": {
+      "answer": "Geography and environment questions are short but unforgiving: Indian rivers and drainage, climate, soil, national parks and the environment basics that appear as one-liners. This lane turns that list into recall - attempt, read the explanation, and revisit your wrong answers a week later.",
+      "intro": [
+        "Geography and environment reward map memory. Rivers and their tributaries, drainage patterns, climate and soil belts, national parks and the standard environmental vocabulary - these are one-line questions with no partial credit, so accuracy is the whole game.",
+        "Practise them as short sets twice a week and keep a single revision sheet of what you miss. The candidates who improve here rarely study more; they simply revisit the same sheet more often."
+      ]
+    },
+    "economy": {
+      "answer": "Economy questions stay close to the basics: banking terms, inflation and budget vocabulary, planning and the Punjab agriculture picture. Nothing here needs a degree - only steady exposure. Run these sets twice a week and the terminology stops feeling borrowed.",
+      "intro": [
+        "Economy reads like a foreign language until you have met the vocabulary twice. Banking terms, inflation and price indices, budget language and the agriculture picture that Punjab's own economy rests on - each question assumes you have simply seen the term before.",
+        "That is an easy gap to close. Attempt these sets, keep the definitions short, and let the explanations teach the vocabulary. Two sessions a week are enough to turn the section from a risk into a routine."
+      ]
+    },
+    "others": {
+      "answer": "The Others lane holds the science, award, book, sport and miscellaneous GK that fills the remaining marks of a general awareness paper. It is broad by design: attempt a mixed set, notice which family you keep missing, then drill that family on its own.",
+      "intro": [
+        "The mixed lane exists because general awareness papers end with questions from everywhere: a science fact, an award, a book, a sport. Individually each is trivial; collectively they are worth real marks, and they are the ones candidates lose for lack of exposure rather than lack of ability.",
+        "Attempt a mixed set once a week and keep an eye on which family keeps failing. When you can name the pattern, switch to drilling that family alone until the mixed set stops catching you out."
+      ]
+    }
+  },
+  "topics": {
+    "computer/mobile-phone-part1-25-mcqs": {
+      "answer": "This set drills the mobile phone as an exam topic: the early history of the handset, cellular network basics and the identifiers every computer-awareness paper reuses - ESN, MIN, SID, IMEI, SIM, IMSI and eSIM. Twenty-five MCQs, each with a full explanation.",
+      "intro": [
+        "Mobile phones sit inside the computer-awareness syllabus as a compact, high-frequency cluster. This set covers three parts of it: the early history of the handset, how a cellular network actually talks to a device, and the identification codes that let a network tell one handset from another.",
+        "Each of the twenty-five questions carries four options and a full explanation, so the set works twice - once as a test, and again as revision when you read why each distractor is wrong."
+      ],
+      "why": "The mobile cluster is one of the most repeated blocks in computer-awareness papers because it is short, factual and universally recognisable. Recall of generations, access methods and identification codes costs almost no study time to secure, and every correct answer here is a mark nobody else has to work for either.",
+      "exam": "For the papers that lean on computer awareness - Punjab Police Intelligence Assistant, Senior Assistant and Clerk - this set sits directly in the examined lane. It also supports the general computer awareness expected in other recruitment papers on this portal.",
+      "expected": "Expect one to a handful of questions from this cluster in a computer block: definitions of FDMA, TDMA, CDMA and PDMA, what an ESN or MIN stands for, what IMEI contains, how to check it, and what separates SIM from eSIM. Practise the wording, not just the concept - the papers test terminology.",
+      "pyq": "Question papers reuse this cluster almost verbatim across years and posts. The way to exploit that is not to hunt for papers, but to run the same set until every distractor is familiar: previous-year style questions become free marks once you have seen the trap before."
+    }
+  }
+}
