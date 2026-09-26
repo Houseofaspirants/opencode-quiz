@@ -463,13 +463,20 @@
    reachable), timers get their own row underneath. Total chrome height stays
    under ~150px so the question still owns most of the screen. */
 @media (max-width: 560px) {
-  .quiz-topbar { padding: 9px 0; }
-  .quiz-topbar-inner { gap: 10px; }
+  /* Header (66px) is sticky too, so this bar must stay slim or it eats a
+     quarter of a phone screen before the question even starts. */
+  .quiz-topbar { padding: 8px 0; }
+  .quiz-topbar-inner { gap: 8px; }
   .quiz-topbar-inner > div:first-child { flex: 1 1 auto; min-width: 0; }
-  .quiz-topbar-inner > .btn { order: 2; flex: none; min-height: 44px; padding: 11px 18px; }
-  .timers { order: 3; width: 100%; margin-left: 0; justify-content: space-between; }
-  .timer-pill { flex: 1 1 0; justify-content: center; padding: 6px 10px; }
-  .progress-meta { font-size: 0.74rem; }
+  .quiz-topbar .quiz-title small { display: none; }
+  .quiz-topbar-inner > .btn {
+    order: 2; flex: none;
+    min-height: 44px; padding: 9px 16px; font-size: 0.9rem;
+  }
+  .timers { order: 3; width: 100%; margin-left: 0; justify-content: space-between; gap: 8px; }
+  .timer-pill { flex: 1 1 0; justify-content: center; padding: 5px 8px; font-size: 0.8rem; }
+  .quiz-topbar .mt-2 { margin-top: 6px; }
+  .progress-meta { font-size: 0.72rem; margin-top: 5px; }
   .q-card { padding: 16px 15px; }
   .quiz-layout { gap: 16px; padding: 16px 0 30px; }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-25T10:30:09.669Z",
+  "generatedAt": "2026-09-26T05:13:28.543Z",
   "stats": {
     "subjects": 7,
     "categories": 6,
@@ -111,19 +111,7 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
       "order": 3,
-      "topics": [
-        {
-          "id": "number-series-part-1",
-          "name": "Number Series Part 1",
-          "description": "",
-          "file": "questions/reasoning/number-series-part-1.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1790310924152.0293
-        }
-      ],
+      "topics": [],
       "categories": []
     },
     {
@@ -156,7 +144,19 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics, Cyber Security.",
       "order": 6,
-      "topics": [],
+      "topics": [
+        {
+          "id": "mobile-phone-part1-25-mcqs",
+          "name": "Mobile Phone Part1 25 Mcqs",
+          "description": "",
+          "file": "questions/computer/mobile-phone-part1-25-mcqs.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790261912813.672
+        }
+      ],
       "categories": []
     },
     {
