@@ -417,6 +417,25 @@
     return snap.docs.map((d) => ({ ...d.data(), id: d.id }));
   }
 
+  /**
+   * Rows for the Global Leaderboard within a time window.
+   * HOA.lbApi normalises whatever comes back (README §23), so this stays the
+   * ONLY Firestore read for the board.
+   *
+   * Ordering and filtering both use `at`, so no composite index is required —
+   * the page works the moment keys are pasted. Ranking and deeper pagination
+   * are done client-side today; a server-side aggregation (Cloud Function or
+   * REST backend) should replace `limit` for >100k students — see the TODO in
+   * assets/js/leaderboard-api.js.
+   */
+  async function fetchLeaderboard({ since = 0, limit = 500 } = {}) {
+    const { db } = await loadFirebase();
+    let ref = db.collection("leaderboard");
+    ref = Number(since) > 0 ? ref.where("at", ">=", Number(since)) : ref;
+    const snap = await ref.orderBy("at", "desc").limit(Number(limit) || 500).get();
+    return snap.docs.map((d) => ({ ...d.data(), id: d.id }));
+  }
+
   async function signOut() {
     const wasPreview = session && session.provider === "preview";
     if (cloudEnabled()) {
@@ -542,6 +561,9 @@
   HOA.auth = {
     ready, ensure, signedIn, cloudEnabled, isMe,
     user: () => session,
-    fetchScores, syncResult, signOut,
+    // Which backend auth is running against — firebase | preview | unconf | off.
+    // HOA.lbApi picks its data source from this (never from the session).
+    get mode() { return mode; },
+    fetchScores, fetchLeaderboard, syncResult, signOut,
   };
 })();

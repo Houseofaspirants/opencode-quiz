@@ -72,6 +72,17 @@
     // Cloud sync — saves the attempt, the leaderboard score and merged stats
     // to the student's Google account. No-op unless signed in with Firebase.
     if (HOA.auth) HOA.auth.syncResult(r);
+    // Backend-ready push (assets/js/leaderboard-api.js). Routes to the HTTP
+    // leaderboard API when one is configured in data/site.json and returns
+    // immediately otherwise — the local + cloud writes above are untouched.
+    if (HOA.lbApi) {
+      HOA.lbApi.submit({
+        name: "You", quizName: r.title || "Quiz",
+        score: r.correct, totalQuestions: r.total,
+        accuracy: r.accuracy, timeTaken: r.seconds,
+        attemptDate: r.at || Date.now(),
+      });
+    }
   }
   const rows = HOA.leaderboard.get("all");
   const myIndex = rows.findIndex((x) => x.at === r.at && x.me);

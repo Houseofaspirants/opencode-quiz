@@ -35,6 +35,13 @@
         "messagingSenderId": "",
         "storageBucket": ""
       }
+    },
+    "leaderboard": {
+      "enabled": true,
+      "provider": "auto",
+      "apiBase": "",
+      "sample": true,
+      "pageSize": 20
     }
   },
   "subjects": [

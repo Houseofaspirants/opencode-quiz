@@ -1,0 +1,1155 @@
+/* ============================================================================
+ * leaderboard.css | Global Leaderboard — premium gamified board
+ * ----------------------------------------------------------------------------
+ * Mobile-first (95%+ of traffic is phones): the base layer is the phone
+ * layout — stacked cards, thumb-sized targets, no tables anywhere. Tablet and
+ * desktop only widen the same markup.
+ *
+ * Everything is driven by the design tokens in style.css (--brand, --surface,
+ * --border, --r-*, --ease, --shadow) so light/dark and the brand palette are
+ * inherited, never redeclared.
+ * ========================================================================== */
+
+/* -------------------------------------------------------------- HERO ----- */
+.lb-hero {
+  position: relative;
+  overflow: hidden;
+}
+.lb-hero h1 { margin-bottom: 12px; }
+.lb-tagline {
+  font-size: clamp(1rem, 2.4vw, 1.14rem);
+  line-height: 1.65;
+  max-width: 64ch;
+  color: var(--text-2);
+}
+.lb-tagline b { color: var(--text); }
+
+.lb-hero-grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+/* ------------------------------------------------------- STATS CARDS ---- */
+.lb-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.lb-stat {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 16px 14px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.lb-stat::after {
+  content: "";
+  position: absolute;
+  inset: auto -30% -70% -30%;
+  height: 90px;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--brand) 22%, transparent), transparent);
+  opacity: 0;
+  transition: opacity 0.3s var(--ease);
+}
+.lb-stat:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); }
+.lb-stat:hover::after { opacity: 1; }
+.lb-stat--wide { grid-column: 1 / -1; }
+.lb-stat__ico { font-size: 1.35rem; line-height: 1; display: block; margin-bottom: 7px; }
+.lb-stat__num {
+  display: block;
+  font-size: clamp(1.35rem, 5vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1.1;
+}
+.lb-stat__lab {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ------------------------------------------------------- SEASON CARD ---- */
+.lb-season {
+  background:
+    linear-gradient(140deg,
+      color-mix(in srgb, var(--brand) 92%, #000) 0%,
+      color-mix(in srgb, var(--brand) 70%, var(--brand-3)) 120%),
+    var(--brand);
+  color: #fff;
+  border-radius: var(--r-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.lb-season::before {
+  content: "";
+  position: absolute;
+  right: -40px; top: -50px;
+  width: 170px; height: 170px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.13);
+}
+.lb-season::after {
+  content: "";
+  position: absolute;
+  right: 24px; bottom: -60px;
+  width: 110px; height: 110px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.09);
+}
+.lb-season__eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+.lb-season__title {
+  font-size: clamp(1.2rem, 4vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 6px 0 4px;
+  position: relative;
+  z-index: 1;
+}
+.lb-season__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  opacity: 0.95;
+  position: relative;
+  z-index: 1;
+}
+.lb-season__pill {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+.lb-season__track {
+  position: relative;
+  z-index: 1;
+  margin-top: 15px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+.lb-season__fill {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: #fff;
+  width: 0;
+  transition: width 1.1s var(--ease);
+}
+.lb-season__foot {
+  position: relative;
+  z-index: 1;
+  margin-top: 9px;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* ---------------------------------------------------------- TOOLBAR ----- */
+.lb-toolbar {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+/* Tabs — sliding pill behind the active label. */
+.lb-tabs {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  padding: 5px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+.lb-tabs::-webkit-scrollbar { display: none; }
+.lb-tabs__ink {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: calc(100% - 10px);
+  border-radius: 999px;
+  background: var(--brand-grad);
+  box-shadow: 0 6px 16px -6px var(--ring);
+  transition: transform 0.35s var(--ease), width 0.35s var(--ease);
+  pointer-events: none;
+  will-change: transform, width;
+}
+.lb-tab {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 42px;
+  /* clamp() keeps the strip from needing a horizontal scroll on a 320px phone
+     while still giving the pill comfortable padding once there is room. */
+  padding: 0 clamp(9px, 2.2vw, 16px);
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 700;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.25s var(--ease);
+}
+.lb-tab[aria-selected="true"] { color: #fff; }
+.lb-tab:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+/* Search */
+.lb-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.lb-search__ico {
+  position: absolute;
+  left: 15px;
+  font-size: 0.95rem;
+  pointer-events: none;
+  opacity: 0.7;
+}
+.lb-search input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 44px 12px 44px;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.95rem;
+  transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+.lb-search input::placeholder { color: var(--muted); }
+.lb-search input:focus {
+  outline: none;
+  border-color: var(--brand);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+.lb-search__clear {
+  position: absolute;
+  right: 8px;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--text-2);
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+.lb-search__clear:hover { background: color-mix(in srgb, var(--brand) 14%, var(--surface-2)); }
+.lb-search__clear:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+/* ----------------------------------------------------------- FILTERS ---- */
+.lb-filters { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; margin-bottom: 16px; }
+.lb-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  /* grid/flex children default to min-width:auto, which lets a nowrap chip
+     row push the whole page wide — always opt out. */
+  min-width: 0;
+}
+.lb-filter__lab {
+  flex: 0 0 auto;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  min-width: 62px;
+}
+.lb-chip {
+  min-height: 36px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  font: inherit;
+  font-size: 0.83rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.18s var(--ease);
+}
+.lb-chip:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-1px); }
+.lb-chip[aria-pressed="true"] {
+  background: var(--brand-grad);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 6px 16px -8px var(--ring);
+}
+.lb-chip:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.lb-chip--scroll {
+  flex: 1 1 auto;
+  min-width: 0;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 2px;
+}
+.lb-chip--scroll::-webkit-scrollbar { display: none; }
+
+.lb-sort {
+  margin-left: auto;
+  min-height: 38px;
+  padding: 7px 34px 7px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23646d7d' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E")
+    no-repeat right 12px center / 15px;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  appearance: none;
+  cursor: pointer;
+}
+.lb-sort:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+/* ------------------------------------------------------ SOURCE / META ---- */
+.lb-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.lb-source {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text-2);
+}
+.lb-source--live {
+  border-color: color-mix(in srgb, var(--success) 40%, transparent);
+  background: color-mix(in srgb, var(--success) 10%, var(--surface));
+  color: var(--success-text);
+}
+.lb-source--sample {
+  border-color: color-mix(in srgb, var(--warning) 45%, transparent);
+  background: color-mix(in srgb, var(--warning) 12%, var(--surface));
+  color: var(--warning-text);
+}
+.lb-count { font-size: 0.83rem; color: var(--muted); font-weight: 600; }
+
+.lb-notice {
+  display: flex;
+  gap: 11px;
+  align-items: flex-start;
+  padding: 13px 15px;
+  margin-bottom: 14px;
+  border-radius: var(--r-md);
+  border: 1px solid color-mix(in srgb, var(--warning) 40%, transparent);
+  background: color-mix(in srgb, var(--warning) 10%, var(--surface));
+  font-size: 0.87rem;
+  line-height: 1.55;
+  color: var(--text-2);
+}
+.lb-notice__ico { font-size: 1.05rem; line-height: 1.4; }
+.lb-notice__x {
+  margin-left: auto;
+  flex: 0 0 auto;
+  width: 28px; height: 28px;
+  border: 0; border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.lb-notice__x:hover { background: color-mix(in srgb, var(--warning) 22%, transparent); }
+
+/* ============================================================== LIST ===== */
+.lb-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.lb-row {
+  position: relative;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: transform 0.22s var(--ease), box-shadow 0.22s var(--ease),
+    border-color 0.22s var(--ease);
+}
+/* First paint only — later renders move rows with FLIP instead. */
+.lb-row.is-enter { animation: lb-rise 0.42s var(--ease) both; }
+@keyframes lb-rise {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@media (hover: hover) {
+  .lb-row:hover { transform: translateY(-3px); box-shadow: var(--shadow-lg); border-color: color-mix(in srgb, var(--brand) 35%, var(--border)); }
+}
+
+/* Top-3 podium treatments — gold / silver / bronze. */
+.lb-row--1 {
+  border-color: #f59e0b;
+  background:
+    linear-gradient(135deg, rgba(253, 230, 138, 0.55) 0%, rgba(245, 158, 11, 0.14) 55%, var(--surface) 100%);
+}
+.lb-row--2 {
+  border-color: #94a3b8;
+  background: linear-gradient(135deg, rgba(226, 232, 240, 0.8) 0%, rgba(148, 163, 184, 0.16) 55%, var(--surface) 100%);
+}
+.lb-row--3 {
+  border-color: #d97706;
+  background: linear-gradient(135deg, rgba(251, 191, 136, 0.5) 0%, rgba(217, 119, 6, 0.14) 55%, var(--surface) 100%);
+}
+html[data-theme="dark"] .lb-row--1 {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.26) 0%, rgba(245, 158, 11, 0.07) 55%, var(--surface) 100%);
+}
+html[data-theme="dark"] .lb-row--2 {
+  background: linear-gradient(135deg, rgba(148, 163, 184, 0.26) 0%, rgba(148, 163, 184, 0.07) 55%, var(--surface) 100%);
+}
+html[data-theme="dark"] .lb-row--3 {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.28) 0%, rgba(217, 119, 6, 0.07) 55%, var(--surface) 100%);
+}
+.lb-row.is-me {
+  border-color: color-mix(in srgb, var(--brand) 55%, var(--border));
+  background: color-mix(in srgb, var(--brand) 7%, var(--surface));
+}
+
+.lb-row__main {
+  display: grid;
+  /* Mobile: rank / person / chevron on line 1, the metric chips get the full
+     card width on line 2 so score + accuracy + time + streak never wrap. */
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rank who toggle"
+    "stats stats stats";
+  align-items: center;
+  gap: 4px 10px;
+  padding: 13px 13px 12px;
+}
+
+/* Rank + medal */
+.lb-rank {
+  grid-area: rank;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  height: 40px;
+  padding: 0 7px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 1rem;
+  background: var(--surface-2);
+  border: 1.5px solid var(--border);
+  color: var(--text-2);
+  font-variant-numeric: tabular-nums;
+}
+.lb-row--1 .lb-rank {
+  background: linear-gradient(135deg, #fde68a, #f59e0b);
+  border-color: #f59e0b;
+  color: #78350f;
+  box-shadow: 0 6px 16px -8px rgba(245, 158, 11, 0.9);
+}
+.lb-row--2 .lb-rank {
+  background: linear-gradient(135deg, #f1f5f9, #cbd5e1);
+  border-color: #94a3b8;
+  color: #334155;
+  box-shadow: 0 6px 16px -8px rgba(148, 163, 184, 0.9);
+}
+.lb-row--3 .lb-rank {
+  background: linear-gradient(135deg, #fed7aa, #f97316);
+  border-color: #f97316;
+  color: #7c2d12;
+  box-shadow: 0 6px 16px -8px rgba(249, 115, 22, 0.9);
+}
+
+/* Who */
+.lb-who {
+  grid-area: who;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.lb-avatar {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: #fff;
+  overflow: hidden;
+  border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1.5px var(--border);
+}
+.lb-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.lb-who__txt { min-width: 0; }
+.lb-who__name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 0;
+  background: none;
+  padding: 0;
+  font: inherit;
+  font-size: 0.96rem;
+  font-weight: 700;
+  color: var(--text);
+  cursor: pointer;
+  text-align: left;
+  max-width: 100%;
+}
+.lb-who__name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.lb-who__name:hover { color: var(--brand); }
+.lb-who__name:focus-visible { outline: 3px solid var(--ring); outline-offset: 3px; border-radius: 6px; }
+.lb-who__sub {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 7px;
+  font-size: 0.76rem;
+  color: var(--muted);
+  font-weight: 600;
+  overflow: hidden;
+}
+/* Each token stays whole: it drops to the next line rather than being cut,
+   and only ellipsises if it cannot fit on a line of its own. */
+.lb-who__sub > * { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lb-who__sub i { font-style: normal; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lb-sub__m { font-size: 0.73rem; }
+.lb-sub__m b { color: var(--text); font-weight: 800; }
+/* Earned-badge tally rides on the name line so it survives every width. */
+.lb-sub__b { flex: 0 0 auto; color: var(--brand); font-size: 0.74rem; font-style: normal; font-weight: 800; }
+/* Phone: level + XP + date live here instead of the wide XP block. */
+.lb-sub__u, .lb-sub__d { display: none; }
+.lb-verified { color: var(--info); font-size: 0.82rem; }
+.lb-you {
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--brand) 15%, transparent);
+  color: var(--brand);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Level + XP block — desktop/tablet only; on phones level, XP and the attempt
+   date are folded into .lb-sub__m so the name keeps its width. */
+.lb-xp {
+  grid-area: xp;
+  display: none;
+  text-align: right;
+  line-height: 1.15;
+}
+.lb-xp__lvl {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--brand) 13%, transparent);
+  color: var(--brand);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.lb-xp__val {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  margin-top: 3px;
+}
+.lb-xp__lab { font-size: 0.64rem; font-weight: 700; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; }
+
+/* Stat chips row */
+.lb-stats-row {
+  grid-area: stats;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding-top: 9px;
+  margin-top: 3px;
+  border-top: 1px dashed var(--border);
+}
+.lb-ms {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--text-2);
+  white-space: nowrap;
+}
+.lb-ms b { color: var(--text); font-variant-numeric: tabular-nums; }
+.lb-ms--score { background: color-mix(in srgb, var(--success) 11%, var(--surface-2)); border-color: color-mix(in srgb, var(--success) 30%, var(--border)); color: var(--success-text); }
+.lb-ms--streak {
+  background: color-mix(in srgb, var(--brand-3) 12%, var(--surface-2));
+  border-color: color-mix(in srgb, var(--brand-3) 34%, var(--border));
+  /* #f97316 is only 2.4:1 on this tinted chip in light mode — use a deep
+     amber instead and reserve the bright brand orange for dark mode. */
+  color: #9a3412;
+}
+html[data-theme="dark"] .lb-ms--streak { color: var(--brand-3); }
+/* Quiz chip is hidden on phones (space) — the name still appears in the
+   expanded detail panel for every viewport. */
+.lb-ms--quiz { display: none; max-width: 100%; }
+.lb-ms--quiz span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Expand toggle — one tap opens the full detail panel on every viewport. */
+.lb-toggle {
+  grid-area: toggle;
+  justify-self: end;
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+  color: var(--text-2);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease), background 0.2s;
+}
+.lb-toggle:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+
+/* Expanded detail panel */
+.lb-detail {
+  display: none;
+  padding: 0 13px 13px;
+  border-top: 1px solid var(--border);
+  margin-top: 2px;
+}
+.lb-row.is-open .lb-detail { display: block; animation: lb-fade 0.3s var(--ease) both; }
+@keyframes lb-fade { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
+.lb-detail__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  padding-top: 12px;
+}
+.lb-kv {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 9px 11px;
+}
+.lb-kv__k {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lb-kv__v {
+  display: block;
+  margin-top: 3px;
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lb-kv--full { grid-column: 1 / -1; }
+.lb-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.lb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  border: 1px solid color-mix(in srgb, var(--brand) 26%, transparent);
+  color: var(--brand);
+}
+.lb-badge--off { opacity: 0.42; filter: grayscale(1); }
+.lb-badge--new { animation: lb-pop 0.6s var(--ease) both; }
+@keyframes lb-pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  60% { transform: scale(1.14); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* ---------------------------------------------------------- SKELETON ---- */
+.lb-skeleton { display: grid; gap: 10px; }
+.lb-sk {
+  height: 92px;
+  border-radius: var(--r-lg);
+  background: linear-gradient(100deg, var(--surface) 30%, var(--surface-2) 50%, var(--surface) 70%);
+  background-size: 300% 100%;
+  animation: lb-shimmer 1.3s linear infinite;
+  border: 1px solid var(--border);
+}
+@keyframes lb-shimmer { from { background-position: 150% 0; } to { background-position: -150% 0; } }
+
+/* ------------------------------------------------------------ EMPTY ----- */
+.lb-empty { display: none; }
+.lb-empty.is-on { display: block; }
+.lb-empty__art {
+  font-size: clamp(3rem, 14vw, 4.4rem);
+  line-height: 1;
+  margin-bottom: 14px;
+  animation: lb-float 3.2s ease-in-out infinite;
+}
+@keyframes lb-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+.lb-empty h2 { font-size: clamp(1.15rem, 3.4vw, 1.4rem); margin-bottom: 8px; }
+.lb-empty p { max-width: 46ch; margin: 0 auto; color: var(--text-2); }
+
+/* ------------------------------------------------------- LOAD MORE ------ */
+.lb-more { display: flex; justify-content: center; margin-top: 18px; }
+.lb-sentinel { height: 1px; }
+
+/* =========================================================== MY RANK ==== */
+.lb-side { margin-top: 22px; }
+.lb-my {
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--brand) 45%, var(--border));
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow-lg);
+  padding: 17px;
+  position: relative;
+  overflow: hidden;
+}
+.lb-my::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--brand-grad);
+}
+.lb-my__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 13px;
+}
+.lb-my__title {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--brand);
+}
+.lb-my__rank {
+  font-size: clamp(1.7rem, 7vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.lb-my__of { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+.lb-my__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 13px 0;
+}
+.lb-my__cell {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 9px 7px;
+  text-align: center;
+}
+.lb-my__cell b {
+  display: block;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.lb-my__cell span {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.lb-my__prog-lab {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--text-2);
+  margin-bottom: 7px;
+}
+.lb-track {
+  height: 11px;
+  border-radius: 999px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.lb-track__fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: var(--brand-grad);
+  transition: width 1.1s var(--ease);
+}
+.lb-my__foot { margin-top: 9px; font-size: 0.76rem; color: var(--muted); font-weight: 600; }
+.lb-my__cta { display: grid; gap: 8px; margin-top: 13px; }
+
+/* ===================================================== QUIZ BOARDS ====== */
+.lb-quiz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.lb-qcard { padding: 17px; }
+.lb-qcard__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  margin-bottom: 13px;
+}
+.lb-qcard__name { font-size: 1rem; font-weight: 800; letter-spacing: -0.01em; }
+.lb-qcard__n {
+  flex: 0 0 auto;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  color: var(--brand);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+/* Pure #4f46e5 is only 2.5:1 on this tinted chip once the page goes dark. */
+html[data-theme="dark"] .lb-qcard__n { color: #a5b4fc; }
+html[data-theme="dark"] #lbMore { color: #a5b4fc; }
+html[data-theme="dark"] .lb-sub__b,
+html[data-theme="dark"] .lb-xp__lvl,
+html[data-theme="dark"] .lb-you,
+html[data-theme="dark"] .lb-my__title { color: #a5b4fc; }
+.lb-podium { list-style: none; margin: 0; padding: 0; display: grid; gap: 9px; }
+.lb-podium li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 0.87rem;
+}
+.lb-podium__m { font-size: 1rem; width: 22px; text-align: center; flex: 0 0 auto; }
+.lb-podium__n {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 700;
+  color: var(--text);
+}
+.lb-podium__s {
+  flex: 0 0 auto;
+  font-weight: 800;
+  color: var(--success-text);
+  font-variant-numeric: tabular-nums;
+}
+.lb-qcard__empty { font-size: 0.85rem; color: var(--muted); }
+
+/* ============================================================ MODAL ====== */
+.lb-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  align-items: end;
+  background: rgba(8, 12, 26, 0.62);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: lb-fade 0.24s var(--ease) both;
+}
+@media (min-width: 640px) {
+  .lb-modal { align-items: center; place-items: center; padding: 20px; }
+}
+.lb-modal[hidden] { display: none; }
+.lb-modal__panel {
+  width: 100%;
+  max-width: 560px;
+  max-height: 92vh;
+  overflow-y: auto;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 22px 22px 0 0;
+  box-shadow: var(--shadow-lg);
+  animation: lb-sheet 0.32s var(--ease) both;
+  -webkit-overflow-scrolling: touch;
+}
+@media (min-width: 640px) { .lb-modal__panel { border-radius: var(--r-xl); } }
+@keyframes lb-sheet { from { transform: translateY(30px); opacity: 0; } to { transform: none; opacity: 1; } }
+html.lb-locked, html.lb-locked body { overflow: hidden; }
+
+.lb-modal__hero {
+  position: relative;
+  padding: 24px 20px 20px;
+  background:
+    radial-gradient(420px 160px at 88% -30%, color-mix(in srgb, var(--brand) 34%, transparent), transparent 62%),
+    var(--surface-2);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.lb-modal__x {
+  position: absolute;
+  top: 12px; right: 12px;
+  width: 38px; height: 38px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--text-2);
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+.lb-modal__x:hover { background: var(--bg-2); }
+.lb-modal__x:focus-visible { outline: 3px solid var(--ring); outline-offset: 2px; }
+.lb-modal__avatar {
+  width: 78px; height: 78px;
+  margin: 0 auto 11px;
+  font-size: 1.5rem;
+  border-width: 3px;
+}
+.lb-modal__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font-size: 1.24rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.lb-modal__handle { font-size: 0.87rem; color: var(--muted); font-weight: 600; margin-top: 3px; }
+.lb-modal__chips { display: flex; flex-wrap: wrap; gap: 7px; justify-content: center; margin-top: 12px; }
+.lb-modal__body { padding: 18px 20px 24px; }
+.lb-modal__sec { margin-bottom: 18px; }
+.lb-modal__sec:last-child { margin-bottom: 0; }
+.lb-modal__h {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+.lb-modal__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(112px, 1fr));
+  gap: 9px;
+}
+.lb-modal__prog { margin-top: 4px; }
+.lb-hist { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.lb-hist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font-size: 0.85rem;
+}
+.lb-hist__n { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 700; }
+.lb-hist__s { font-weight: 800; color: var(--success-text); font-variant-numeric: tabular-nums; }
+.lb-hist__t { color: var(--muted); font-size: 0.76rem; flex: 0 0 auto; }
+
+/* ============================================================== CTA ====== */
+.lb-cta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 15px;
+  margin-bottom: 26px;
+}
+.lb-cta {
+  display: block;
+  padding: 19px;
+  text-decoration: none;
+  color: inherit;
+}
+.lb-cta__ico { font-size: 1.5rem; display: block; margin-bottom: 9px; }
+.lb-cta__t { font-size: 1.02rem; font-weight: 800; letter-spacing: -0.01em; margin-bottom: 5px; }
+.lb-cta__d { font-size: 0.87rem; color: var(--text-2); line-height: 1.55; }
+@media (hover: hover) {
+  .lb-cta:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--brand) 40%, var(--border)); }
+}
+
+/* ====================================================== MOBILE FIRST ===== */
+/* Rows become fully tappable cards; the detail panel is one tap away.       */
+@media (max-width: 767px) {
+  .lb-row.is-open .lb-toggle { transform: rotate(180deg); }
+
+  /* Sticky "My Rank" docked to the bottom of the phone screen. */
+  .lb-side {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    z-index: 90;
+    margin-top: 0;
+    padding: 0 10px calc(10px + env(safe-area-inset-bottom, 0px));
+    pointer-events: none;
+  }
+  .lb-side .lb-my {
+    pointer-events: auto;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 13px 14px;
+    box-shadow: 0 -8px 30px -12px rgba(15, 23, 42, 0.4);
+    border-radius: 18px 18px 0 0;
+    max-height: 44vh;
+    overflow-y: auto;
+  }
+  .lb-side.is-collapsed .lb-my__grid,
+  .lb-side.is-collapsed .lb-my__prog,
+  .lb-side.is-collapsed .lb-my__foot,
+  .lb-side.is-collapsed .lb-my__cta { display: none; }
+  body[data-page="leaderboard"] { padding-bottom: 104px; }
+}
+
+@media (min-width: 640px) {
+  .lb-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .lb-stat--wide { grid-column: auto; }
+  .lb-hero-grid { grid-template-columns: minmax(0, 1.55fr) minmax(250px, 1fr); align-items: stretch; }
+  .lb-detail__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ------------------------------------------------------- TABLET --------- */
+@media (min-width: 768px) {
+  .lb-toolbar { grid-template-columns: max-content minmax(0, 1fr); align-items: center; }
+  .lb-filters { gap: 10px; }
+  .lb-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .lb-stat { padding: 18px 12px; }
+  .lb-search { justify-self: end; width: 100%; max-width: 380px; }
+
+  /* Wide breakpoint restores the full row: handle under the name, the XP block
+     on the right, and the quiz chip back in the metric strip. */
+  .lb-xp { display: block; }
+  .lb-sub__m { display: none; }
+  .lb-sub__u, .lb-sub__d { display: inline; }
+
+  /* Rows stay compact: the detail panel opens on tap at every width, so the
+     always-open (and 300px-tall) desktop detail grid is dropped. */
+  .lb-row__main {
+    grid-template-columns: auto auto minmax(0, 1.6fr) auto auto;
+    grid-template-areas: "rank who stats xp toggle";
+    gap: 4px 14px;
+    padding: 14px 16px;
+    align-items: center;
+  }
+  .lb-stats-row {
+    border-top: 0;
+    padding-top: 0;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .lb-detail { padding: 0 16px 14px; }
+  .lb-detail__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); padding-top: 13px; }
+
+  /* My Rank returns to normal flow above the fold on tablets. */
+  .lb-side {
+    position: static;
+    margin-top: 22px;
+    padding: 0;
+    pointer-events: auto;
+  }
+  .lb-side .lb-my { border-radius: var(--r-lg); box-shadow: var(--shadow-lg); max-height: none; overflow: visible; }
+  body[data-page="leaderboard"] { padding-bottom: 0; }
+}
+
+/* ---------------------------------------------------------- DESKTOP ----- */
+/* The My Rank rail only takes its own column once the board is wide enough
+   that the metric strip still fits beside it (below this the list is full
+   width and My Rank flows underneath, as on tablets). */
+@media (min-width: 900px) {
+  /* Enough room for the quiz chip to sit on the same line as the other four. */
+  .lb-ms--quiz { display: inline-flex; }
+}
+@media (min-width: 1280px) {
+  .lb-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 26px;
+    align-items: start;
+  }
+  .lb-main { min-width: 0; }
+
+  /* My Rank pins beside the board while the list scrolls. */
+  .lb-side {
+    position: sticky;
+    top: calc(var(--header-h) + 16px);
+    align-self: start;
+    margin-top: 0;
+  }
+  .lb-row__main { grid-template-columns: auto auto minmax(0, 1.8fr) auto auto; }
+  .lb-detail__grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .lb-modal__grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+/* ------------------------------------------------------ REDUCED MOTION -- */
+@media (prefers-reduced-motion: reduce) {
+  .lb-row, .lb-detail, .lb-modal, .lb-modal__panel, .lb-notice { animation: none !important; }
+  .lb-stat, .lb-row, .lb-cta, .lb-chip { transition: none !important; transform: none !important; }
+  .lb-tabs__ink, .lb-track__fill, .lb-season__fill { transition: none !important; }
+  .lb-sk { animation: none; background: var(--surface-2); }
+  .lb-empty__art { animation: none; }
+}

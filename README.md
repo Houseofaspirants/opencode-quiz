@@ -717,6 +717,72 @@ must stay banner-free — enforced by `scripts/seo_check.py`.
 
 ---
 
+## 23. Leaderboard & gamification
+
+`leaderboard.html` is a mobile-first Global Rankings page (stats → season →
+Daily/Weekly/Monthly/All Time tabs → exam/category/sort filters + instant
+search → ranked rows → sticky **My Rank** → per-quiz boards → profile modal →
+CTA grid). No page redesigns elsewhere; it reuses the existing `.page-hero`,
+`.banner-telegram` and design tokens.
+
+**Config — `data/site.json` → `site.leaderboard`** (flows verbatim into
+`data/index.json` on every build):
+
+```json
+"leaderboard": { "enabled": true, "provider": "auto", "apiBase": "", "sample": true, "pageSize": 20 }
+```
+
+| `provider` | Meaning |
+|---|---|
+| `auto` *(default)* | Picks the first available one, in this order: `apiBase` set → `http` · Firebase configured → `firebase` · `sample` flag → `sample` · otherwise `local` |
+| `http` | Your REST backend at `site.leaderboard.apiBase` |
+| `firebase` | Firestore, using the rules in `firestore.rules` |
+| `sample` | Deterministic demo board (seeded, 186 students) shown **with an honest disclosure chip and notice** |
+| `local` | Only this device's attempts — never invents global rows |
+
+Whatever the provider, the visitor's own device attempts are merged in as a
+real `isMe` row, so **My Rank, XP, level, streak and percentile are always the
+user's own data**. A backend failure degrades to `sample` instead of dying.
+
+**Endpoint contract (the only TODO — `assets/js/leaderboard-api.js` →
+`ENDPOINTS`)**
+
+| Method | Path | Returns |
+|---|---|---|
+| GET | `/leaderboard?period=&exam=&category=&sort=&q=&page=&limit=` | `{entries: Entry[], total, hasMore}` |
+| GET | `/leaderboard/stats?period=` | `{students, attempts, accuracy, activeToday, highestToday}` |
+| GET | `/leaderboard/quizzes?period=` | `{quizzes: [{quizId, quizName, total, entries}]}` |
+| POST | `/leaderboard/attempts` (body = Entry) | `204` |
+
+Set `site.leaderboard.apiBase` and the `http` provider takes over — **no
+front-end change required**. Responses are already normalised by
+`fromApi()`/`paginate()`; ranking, filtering, search and pagination run
+client-side so every provider behaves identically. Move aggregation
+server-side above ~100k students.
+
+**Entry shape** — `userId, name, username, profilePhoto, quizName, score,
+totalQuestions, accuracy, timeTaken, xp, level, streak, badges[], attemptDate`
+(+ `rank`, `verified`, `isMe`, `percentile` once ranked).
+
+**Rules** live in `assets/js/gamification.js` (`HOA.game`): XP (+10/correct,
++100 perfect, +25 daily login, +150 7-day streak, +500 30-day, +1000 for 100
+tests), levels (L1 0, L2 250, L3 600, then a +45% gap rounded to ×5), the eight
+badges, and the monthly season countdown. `verified` is only ever set for real
+Google accounts — demo rows are never marked verified.
+
+**Files**
+
+| Piece | File |
+|---|---|
+| Page | `leaderboard.html` |
+| Styles | `assets/css/leaderboard.css` |
+| Controller | `assets/js/leaderboard.js` |
+| Provider abstraction | `assets/js/leaderboard-api.js` |
+| XP / levels / badges / season | `assets/js/gamification.js` |
+| Config | `data/site.json` → `site.leaderboard` |
+
+---
+
 ### Support
 
 * Telegram: [t.me/HouseOfAspirant](https://t.me/HouseOfAspirant)
