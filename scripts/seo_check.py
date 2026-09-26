@@ -46,6 +46,7 @@ KNOWN_TYPES = {
     "ContactPage", "CollectionPage", "BreadcrumbList", "ListItem", "SearchAction",
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
     "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
+    "Person", "LearningResource",
 }
 WEBPAGE_FAMILY = {"WebPage", "AboutPage", "ContactPage", "CollectionPage"}
 REQUIRED = {
@@ -63,7 +64,9 @@ REQUIRED = {
     "ContactPoint": ["contactType"],
     "ImageObject": ["url"],
     "ListItem": ["position", "name"],
-    "Article": ["headline", "image", "datePublished"],
+    "Article": ["headline", "image", "datePublished", "author", "mainEntityOfPage"],
+    "LearningResource": ["learningResourceType"],
+    "Person": ["name", "url"],
     # AEO layer: an FAQ must actually expose its questions and answers
     "FAQPage": ["mainEntity"],
     "Question": ["name", "acceptedAnswer"],
@@ -209,7 +212,11 @@ for page in PAGES:
     # node defined in block 1 may legitimately be referenced from block 2.
     # Site-level entities (defined on the home page) stay whitelisted.
     page_defined_ids, page_seen_ids, pending_refs = set(), set(), []
-    cross_page_ok = {f"{DOMAIN}/#website", f"{DOMAIN}/#organization", f"{DOMAIN}/#webpage"}
+    page_entities, collection_refs = {}, []   # CollectionPage -> ItemList check
+    cross_page_ok = {
+        f"{DOMAIN}/#website", f"{DOMAIN}/#organization",
+        f"{DOMAIN}/#webpage", f"{DOMAIN}/#person",
+    }
     for i, block in enumerate(re.findall(
             r'<script type="application/ld\+json"(?: id="[^"]*")?>(.*?)</script>', html, re.S)):
         if not block.strip():
@@ -239,7 +246,10 @@ for page in PAGES:
                     walk(v)
 
         walk(data)
-        page_defined_ids |= {n["@id"] for n in nodes if isinstance(n.get("@id"), str)}
+        for n in nodes:
+            if isinstance(n.get("@id"), str):
+                page_defined_ids.add(n["@id"])
+                page_entities[n["@id"]] = n
         seen_ids = page_seen_ids   # duplicate @id is a page-level defect too
 
         for n in nodes:
@@ -293,6 +303,17 @@ for page in PAGES:
             if tlist == ["ItemList"] and "numberOfItems" in n:
                 if n["numberOfItems"] != len(n.get("itemListElement") or []):
                     errors.append(f"{tag}: ItemList numberOfItems mismatch")
+            # A CollectionPage must expose its collection as an ItemList that
+            # Google can walk, referenced through @id (never inlined twice).
+            if "CollectionPage" in tlist:
+                me = n.get("mainEntity")
+                if not (isinstance(me, dict) and "@id" in me):
+                    errors.append(
+                        f"{tag}: CollectionPage.mainEntity must be an @id "
+                        f"reference to its ItemList"
+                    )
+                else:
+                    collection_refs.append((tag, me["@id"]))
 
         # defer reference resolution until every block on this page is known
         pending_refs.extend((tag, r) for r in refs_found)
@@ -317,6 +338,19 @@ for page in PAGES:
     for tag, r in pending_refs:
         if r not in page_defined_ids and r not in cross_page_ok:
             errors.append(f"{tag}: dangling @id reference {r}")
+
+    # ... and the CollectionPage's referenced node must really be an ItemList
+    for tag, me_id in collection_refs:
+        node = page_entities.get(me_id)
+        if node is None:
+            continue  # already reported as a dangling reference above
+        mt = node.get("@type")
+        mt = [mt] if isinstance(mt, str) else (mt or [])
+        if mt != ["ItemList"]:
+            errors.append(
+                f"{tag}: CollectionPage.mainEntity {me_id} must be an ItemList "
+                f"(found {mt})"
+            )
 
     # --- image attributes -------------------------------------------------
     for tag in re.findall(r"<img\b[^>]*>", html):
@@ -349,6 +383,24 @@ if 'href="index.html#subjects">All Subjects' not in core:
     errors.append("footer: All Subjects link must target index.html#subjects")
 if 'href="subject.html">' in core:
     errors.append("footer: bare subject.html link (soft-404 target)")
+
+# --- runtime structured data (not present in the static HTML) --------------
+# quiz.js builds Google's Education Q&A graph and subject.js builds the
+# CollectionPage's ItemList on the client, so seo_check can only assert that
+# the required pieces stay wired into those builders.
+quiz_js = (ROOT / "assets/js/quiz.js").read_text(encoding="utf-8")
+for marker in (
+    '"@type": "Question"',                    # Question nodes exist
+    'eduQuestionType: "Flashcard"',           # Google-required fixed value
+    'acceptedAnswer: { "@type": "Answer"',    # Google-required answer
+    "{ hasPart: flashcards }",                # Google-required Quiz.hasPart
+):
+    if marker not in quiz_js:
+        errors.append(f"quiz.js: Education Q&A builder missing {marker!r}")
+subj_js = (ROOT / "assets/js/subject.js").read_text(encoding="utf-8")
+for marker in ('"@type": "ItemList"', "`${canonical}#list`"):
+    if marker not in subj_js:
+        errors.append(f"subject.js: CollectionPage ItemList missing {marker!r}")
 
 # --- intelligent internal linking: the 13 destinations every page links to --
 # Header + footer are rendered from core.js on every page, so each destination
@@ -565,7 +617,10 @@ for tps in types_by_page.values():
     for t in tps:
         inv[t] = inv.get(t, 0) + 1
 notes.append("schema (static): " + ", ".join(f"{k}x{v}" for k, v in sorted(inv.items())))
-notes.append("schema (runtime): CollectionPage + BreadcrumbList via subject.js; WebPage + Quiz via quiz.js")
+notes.append(
+    "schema (runtime): CollectionPage + ItemList + BreadcrumbList via subject.js; "
+    "WebPage + Quiz + Question/Answer (Education Q&A) via quiz.js"
+)
 
 # --- performance + accessibility enforcement --------------------------------
 for page in PAGES:

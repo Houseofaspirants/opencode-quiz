@@ -774,6 +774,40 @@
   /* WebPage + Quiz schema mirrors the RESOLVED, indexable topic exactly.
      Personal sessions (daily/mock) and empty states were cleared earlier. */
   if (mode === "topic" && QUIZ.canonical) {
+    /* Google Education Q&A (Quiz / Question / Answer) — built from the SAME
+       normalized records the screen renders, so markup cannot drift from the
+       quiz. A prompt without a resolvable correct option is skipped rather
+       than guessed: schema never invents an answer.
+       `text` is Google's required property, `name` keeps these nodes aligned
+       with every other Question on the site (FAQPage reads `name`). */
+    const flashcards = QUIZ.questions
+      .map((q) => {
+        const text = String(q.q || "").trim();
+        const opts = Array.isArray(q.options) ? q.options : [];
+        const correct =
+          Number.isInteger(q.correct) && opts[q.correct] != null
+            ? String(opts[q.correct]).trim()
+            : "";
+        if (!text || !correct) return null;
+        const expl = String(q.explanation || "").trim();
+        // The accepted answer must stand alone: reuse the explanation when it
+        // already states the answer, otherwise prefix the correct option.
+        let answer = correct;
+        if (expl) {
+          answer = expl.toLowerCase().includes(correct.toLowerCase())
+            ? expl
+            : `${correct}. ${expl}`;
+        }
+        return {
+          "@type": "Question",
+          name: text,
+          text,
+          eduQuestionType: "Flashcard",
+          acceptedAnswer: { "@type": "Answer", text: answer },
+        };
+      })
+      .filter(Boolean);
+
     setLd({
       "@context": "https://schema.org",
       "@graph": [
@@ -795,6 +829,8 @@
           name: `${QUIZ.title} Quiz`,
           description: metaDescLd,
           about: { "@type": "Thing", name: QUIZ.title },
+          // Google's Education Q&A requires Quiz.hasPart -> Question[]
+          ...(flashcards.length ? { hasPart: flashcards } : {}),
           isPartOf: { "@id": `${QUIZ.canonical}#webpage` },
           inLanguage: "en-IN",
           isAccessibleForFree: true,

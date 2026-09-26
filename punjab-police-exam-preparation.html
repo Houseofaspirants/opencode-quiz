@@ -30,21 +30,33 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["Article", "WebPage"],
+        "@type": ["Article", "WebPage", "LearningResource"],
         "@id": "https://houseofaspirants.in/punjab-police-exam-preparation#webpage",
         "hasPart": { "@id": "https://houseofaspirants.in/punjab-police-exam-preparation#faq" },
         "name": "Punjab Police Exam Preparation: Constable, ASI & SI Strategy",
         "url": "https://houseofaspirants.in/punjab-police-exam-preparation",
         "headline": "Punjab Police Exam Preparation: Constable, ASI & SI Strategy",
         "description": "Step-by-step strategy for Punjab Police Constable, ASI, SI, Intelligence Assistant and Jail Warder - plan your day, master every subject and track progress.",
-        "image": "https://houseofaspirants.in/assets/img/og-cover.png",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://houseofaspirants.in/assets/img/og-cover.png#image",
+          "url": "https://houseofaspirants.in/assets/img/og-cover.png",
+          "width": 1200,
+          "height": 630
+        },
         "datePublished": "2026-09-25",
         "dateModified": "2026-09-26",
         "inLanguage": "en-IN",
-        "author": { "@id": "https://houseofaspirants.in/#organization" },
+        "learningResourceType": "Study guide",
+        "author": { "@id": "https://houseofaspirants.in/#person" },
         "publisher": { "@id": "https://houseofaspirants.in/#organization" },
         "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
-        "breadcrumb": { "@id": "https://houseofaspirants.in/punjab-police-exam-preparation#breadcrumb" }
+        "breadcrumb": { "@id": "https://houseofaspirants.in/punjab-police-exam-preparation#breadcrumb" },
+        "mainEntityOfPage": { "@id": "https://houseofaspirants.in/punjab-police-exam-preparation#webpage" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".answer-box p", ".faq-item h3", ".faq-item p"]
+        }
       },
       {
         "@type": "BreadcrumbList",

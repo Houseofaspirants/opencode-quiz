@@ -144,7 +144,12 @@
         const list = (level === "category" ? category.topics : subject.topics) || [];
         items = list
           .filter((t) => t.available)
-          .map((t) => ({ name: t.name, url: `${siteBase}/${topicHref(t)}` }));
+          .map((t) => ({
+            name: t.name,
+            // JSON-LD links the canonical URL; the anchor keeps its .html
+            // form so the static host keeps serving it without rewrites.
+            url: `${siteBase}/${topicHref(t).replace("quiz.html?", "quiz?")}`,
+          }));
       }
 
       const page = {
@@ -161,17 +166,24 @@
         inLanguage: "en-IN",
         breadcrumb: { "@id": `${canonical}#breadcrumb` },
       };
+      const graph = [page];
       if (items.length) {
-        page.mainEntity = {
+        page.mainEntity = { "@id": `${canonical}#list` };
+        graph.push({
           "@type": "ItemList",
+          "@id": `${canonical}#list`,
+          name:
+            level === "root"
+              ? `${subject.name} categories`
+              : `${level === "category" ? category.name : subject.name} topics`,
           numberOfItems: items.length,
           itemListElement: items.map((it, i) => ({
             "@type": "ListItem",
             position: i + 1,
             name: it.name,
-            url: it.url,
+            item: it.url,
           })),
-        };
+        });
       }
       const breadcrumb = {
         "@type": "BreadcrumbList",
@@ -183,8 +195,9 @@
           item: c.url,
         })),
       };
+      graph.push(breadcrumb);
       ldEl.textContent = JSON.stringify(
-        { "@context": "https://schema.org", "@graph": [page, breadcrumb] },
+        { "@context": "https://schema.org", "@graph": graph },
         null,
         2
       );

@@ -76,13 +76,26 @@
         "name": "House of Aspirants",
         "alternateName": "HOA Quiz",
         "url": "https://houseofaspirants.in/",
-        "logo": { "@type": "ImageObject", "url": "https://houseofaspirants.in/assets/img/logo-mark.png" },
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://houseofaspirants.in/#logo",
+          "url": "https://houseofaspirants.in/assets/img/logo-mark.png",
+          "width": 512,
+          "height": 512
+        },
         "areaServed": { "@type": "Country", "name": "India" },
         "sameAs": [
           "https://t.me/HouseOfAspirant",
           "https://instagram.com/si.gurpreetsingh.pp",
           "https://youtube.com/@houseofaspirants-y5s"
         ]
+      },
+      {
+        "@type": "Person",
+        "@id": "https://houseofaspirants.in/#person",
+        "name": "House of Aspirants Editorial Team",
+        "url": "https://houseofaspirants.in/about",
+        "worksFor": { "@id": "https://houseofaspirants.in/#organization" }
       },
       {
         "@type": "WebPage",
@@ -94,7 +107,18 @@
         "description": "Practice free Punjab Police MCQ quizzes - Punjab GK, reasoning, computer and current affairs. Topic-wise practice, daily quiz and mock tests for PSSSB and PPSC.",
         "isPartOf": { "@id": "https://houseofaspirants.in/#website" },
         "about": { "@id": "https://houseofaspirants.in/#organization" },
-        "inLanguage": "en-IN"
+        "inLanguage": "en-IN",
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "@id": "https://houseofaspirants.in/assets/img/og-cover.png#image",
+          "url": "https://houseofaspirants.in/assets/img/og-cover.png",
+          "width": 1200,
+          "height": 630
+        },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": [".answer-box p", ".faq-item h3", ".faq-item p"]
+        }
       }
     ]
   }
