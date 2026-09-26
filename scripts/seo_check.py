@@ -23,6 +23,8 @@ PAGES = [
     "contact.html", "privacy.html", "terms.html", "404.html",
     # Exam index (target: Punjab Government competitive exams)
     "punjab-exams.html",
+    # AEO hub: site-wide Q&A for answer engines
+    "faq.html",
     # Study-guides hub + registered articles (data/articles.json)
     "articles.html", "punjab-police-exam-preparation.html",
     "punjab-gk-study-guide.html", "current-affairs-preparation.html",
@@ -43,7 +45,7 @@ KNOWN_TYPES = {
     "WebSite", "Organization", "EducationalOrganization", "WebPage", "AboutPage",
     "ContactPage", "CollectionPage", "BreadcrumbList", "ListItem", "SearchAction",
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
-    "Article",
+    "Article", "FAQPage", "Question", "Answer", "Speakable",
 }
 WEBPAGE_FAMILY = {"WebPage", "AboutPage", "ContactPage", "CollectionPage"}
 REQUIRED = {
@@ -62,6 +64,10 @@ REQUIRED = {
     "ImageObject": ["url"],
     "ListItem": ["position", "name"],
     "Article": ["headline", "image", "datePublished"],
+    # AEO layer: an FAQ must actually expose its questions and answers
+    "FAQPage": ["mainEntity"],
+    "Question": ["name", "acceptedAnswer"],
+    "Answer": ["text"],
 }
 types_by_page = {}   # page -> set of schema types found (filled during scan)
 
@@ -483,7 +489,7 @@ for path in ROOT.rglob("*"):
 # --- schema coverage: requested types present where content allows ----------
 BC_PAGES = {"about.html", "bookmarks.html", "contact.html", "leaderboard.html",
             "mock.html", "privacy.html", "progress.html", "terms.html",
-            "articles.html", "punjab-exams.html",
+            "articles.html", "punjab-exams.html", "faq.html",
             "punjab-police-exam-preparation.html",
             "punjab-gk-study-guide.html", "current-affairs-preparation.html",
             "reasoning-quant-preparation.html"}
@@ -509,6 +515,43 @@ for t in ("WebSite", "SearchAction", "EntryPoint", "Organization",
           "EducationalOrganization", "WebPage"):
     if t not in types_by_page.get("index.html", set()):
         errors.append(f"index.html: missing {t} schema")
+
+# --- AEO / GEO layer: direct answers, FAQ, EEAT bylines, named sources -----
+# Every page that ranks for a question must answer it in the first screenful
+# (40-60 words in .answer-box) and expose the same Q&A as FAQPage schema.
+AEO_PAGES = {"index.html", "faq.html", "punjab-exams.html", "articles.html",
+             "about.html", "subject.html", "mock.html"} | ARTICLE_PAGES
+for p in sorted(AEO_PAGES):
+    h = (ROOT / p).read_text(encoding="utf-8")
+    if 'class="answer-box"' not in h:
+        errors.append(f"{p}: AEO quick-answer block (.answer-box) missing")
+    if "FAQPage" not in types_by_page.get(p, set()):
+        errors.append(f"{p}: missing FAQPage schema")
+
+# EEAT: attributed byline + a named, checkable source list on every guide
+for p in sorted(ARTICLE_PAGES):
+    h = (ROOT / p).read_text(encoding="utf-8")
+    if 'class="byline"' not in h:
+        errors.append(f"{p}: EEAT byline (author + review date) missing")
+    if 'class="sources"' not in h:
+        errors.append(f"{p}: named-sources block missing")
+    if 'href="contact.html"' not in h:
+        errors.append(f"{p}: corrections/contact link missing")
+
+# FAQ hub: enough real questions, and schema must mirror the visible page
+faq_html = (ROOT / "faq.html").read_text(encoding="utf-8")
+vis_q = len(re.findall(r'<div class="faq-item">', faq_html))
+sch_q = faq_html.count('"@type": "Question"')
+if vis_q < 30:
+    errors.append(f"faq.html: only {vis_q} visible Q&A items (want >= 30)")
+if sch_q != vis_q:
+    errors.append(f"faq.html: FAQPage schema has {sch_q} questions but {vis_q} are visible")
+if "faq.html" not in core:
+    errors.append("core.js: FAQ hub not linked from footer/drawer")
+if f"{DOMAIN}/faq" not in locs:
+    errors.append("sitemap: missing /faq URL")
+notes.append(f"aeo: {len(AEO_PAGES)} pages answer-first, {vis_q} FAQ pairs mirrored in schema, {len(ARTICLE_PAGES)} guides carry byline + sources")
+
 inv = {}
 for tps in types_by_page.values():
     for t in tps:

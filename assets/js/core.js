@@ -248,6 +248,7 @@ const HOA = (() => {
     <p class="mm-group">More</p>
     <a class="mm-link" data-nav="about" href="about.html">ℹ️ About</a>
     <a class="mm-link" data-nav="articles" href="articles.html">📚 Study Guides</a>
+    <a class="mm-link" data-nav="faq" href="faq.html">❓ FAQ &amp; Help</a>
     <a class="mm-link" data-nav="contact" href="contact.html">✉️ Contact</a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> Toggle theme</button>
     <button class="mm-link" data-action="install-app">⬇ Install App</button>
@@ -327,6 +328,7 @@ const HOA = (() => {
           <h2>Company</h2>
           <a href="about.html">About</a>
           <a href="articles.html">Study Guides</a>
+          <a href="faq.html">FAQ &amp; Help</a>
           <a href="contact.html">Contact</a>
           <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           <a href="privacy.html">Privacy Policy</a>

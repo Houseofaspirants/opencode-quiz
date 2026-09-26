@@ -97,6 +97,42 @@
     ]
   }
   </script>
+
+  <!-- AEO: the same five Q&As, structured so Google AI Overview, ChatGPT,
+       Gemini, Perplexity and Copilot can cite them directly. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is House of Aspirants really free?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every quiz, mock test, study guide, bookmark and leaderboard feature is free. There is no paid tier, no trial and no card required, and the portal carries no intrusive advertising." }
+      },
+      {
+        "@type": "Question",
+        "name": "Which exams does this portal cover?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Punjab Police Constable, ASI, SI, Intelligence Assistant and Jail Warder, plus PSSSB, PPSC and PSPCL posts such as Patwari, Forest Guard, Clerk, Senior Assistant and Lab Attendant." }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to sign in before taking a quiz?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Open any subject, pick a topic and start answering. Google sign-in is optional and is only used to save your scores, bookmarks and streaks across devices." }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the Daily Quiz?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A fresh mixed challenge published every day from all seven subjects. It takes a few minutes, resets daily and counts towards your streak and your leaderboard position." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I practise on my phone without internet?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. After the first visit the app shell is cached, so opened pages, saved quizzes and bookmarks keep working offline. The interface is mobile-first and installs to your home screen." }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body data-page="home">
@@ -203,6 +239,18 @@
             <p>Daily MCQs, PDFs, current affairs and recruitment alerts — free.</p>
             <span class="ac-go">Join the community →</span>
           </a>
+        </div>
+
+        <!-- AEO: the one paragraph answer engines should quote for
+             "what is House of Aspirants". Sits under the actions so the
+             action-first homepage order is untouched. -->
+        <div class="answer-box" style="margin-top:22px">
+          <span class="ab-label">In short</span>
+          <p>
+            House of Aspirants is a free MCQ practice portal for Punjab Police,
+            PSSSB and PPSC aspirants — topic-wise quizzes, a Daily Challenge, mock
+            tests and study guides, with <b>no fees and no advertising</b>.
+          </p>
         </div>
       </div>
     </section>
@@ -468,6 +516,45 @@
             <div class="stat-emoji">❓</div>
             <div class="stat-num" data-stat="questions">0</div>
             <div class="stat-label">Total Questions</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================== FAQ (AEO: on-page) -->
+    <!-- Every answer is a self-contained 30-50 word passage so an answer
+         engine can lift it without the surrounding page. -->
+    <section class="section" style="padding-top:0" aria-labelledby="faqTitle">
+      <div class="container" style="max-width:860px">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Quick Answers</span>
+            <h2 id="faqTitle">Frequently asked questions</h2>
+            <p>The questions new aspirants ask us most often.</p>
+          </div>
+          <a class="btn btn-soft" href="faq.html">All questions →</a>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>Is House of Aspirants really free?</h3>
+            <p>Yes. Every quiz, mock test, study guide, bookmark and leaderboard feature is free. There is no paid tier, no trial and no card required, and the portal carries no intrusive advertising.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Which exams does this portal cover?</h3>
+            <p>Punjab Police Constable, ASI, SI, Intelligence Assistant and Jail Warder, plus PSSSB, PPSC and PSPCL posts such as Patwari, Forest Guard, Clerk, Senior Assistant and Lab Attendant.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Do I need to sign in before taking a quiz?</h3>
+            <p>No. Open any subject, pick a topic and start answering. Google sign-in is optional and is only used to save your scores, bookmarks and streaks across devices.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What is the Daily Quiz?</h3>
+            <p>A fresh mixed challenge published every day from all seven subjects. It takes a few minutes, resets daily and counts towards your streak and your leaderboard position.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I practise on my phone without internet?</h3>
+            <p>Yes. After the first visit the app shell is cached, so opened pages, saved quizzes and bookmarks keep working offline. The interface is mobile-first and installs to your home screen.</p>
           </div>
         </div>
       </div>

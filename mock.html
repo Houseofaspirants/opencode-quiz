@@ -65,6 +65,34 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is a mock test different from a quiz?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A quiz is a short, topic-focused set. A mock test is a full-length, timed paper drawn from several subjects under exam conditions, which is the closest rehearsal to the real examination." }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I set my own time limit for a mock test?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You choose 5, 10, 15, 30 or 60 minutes and how many questions to attempt, so the same builder works for a quick section drill or a full-length paper." }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens when the mock test timer runs out?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Answers lock automatically at zero. Whatever you attempted is graded, and anything you left untouched is marked unattempted, exactly the behaviour of an online exam." }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I review my mock test?",
+        "acceptedAnswer": { "@type": "Answer", "text": "The result page shows your score, time taken, subject-wise breakdown and weak areas, then walks through every question with the correct answer and its explanation." }
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://t.me">
   <link rel="dns-prefetch" href="//t.me">
   <link rel="dns-prefetch" href="//instagram.com">
@@ -85,6 +113,14 @@
         <span class="eyebrow">Full Length Tests</span>
         <h1>Mock Test Builder</h1>
         <p class="muted" id="mockStatus">Loading available questions…</p>
+        <div class="answer-box">
+          <span class="ab-label">Quick answer</span>
+          <p>
+            A mock test is a full-length, timed paper you build yourself — choose the
+            scope, set the time limit, attempt it under exam conditions, then review
+            every answer with its explanation.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -161,6 +197,36 @@
           <a class="btn btn-lg" data-tg-cta href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
              style="margin-left:auto">Join →</a>
           <button type="button" class="tg-rot-pause" data-tg-pause aria-label="Pause banner rotation">⏸</button>
+        </div>
+      </div>
+    <!-- =========================================== FAQ (AEO: on-page) -->
+    <section class="section" style="padding-top:0">
+      <div class="container" style="max-width:860px">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Before You Start</span>
+            <h2>Mock test questions</h2>
+            <p>How scope, timing, marking and review actually work.</p>
+          </div>
+          <a class="btn btn-soft" href="faq.html">All questions →</a>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3>How is a mock test different from a quiz?</h3>
+            <p>A quiz is a short, topic-focused set. A mock test is a full-length, timed paper drawn from several subjects under exam conditions, which is the closest rehearsal to the real examination.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Can I set my own time limit?</h3>
+            <p>Yes. You choose 5, 10, 15, 30 or 60 minutes and how many questions to attempt, so the same builder works for a quick section drill or a full-length paper.</p>
+          </div>
+          <div class="faq-item">
+            <h3>What happens when the timer runs out?</h3>
+            <p>Answers lock automatically at zero. Whatever you attempted is graded, and anything you left untouched is marked unattempted — exactly the behaviour of an online exam.</p>
+          </div>
+          <div class="faq-item">
+            <h3>How do I review my mock test?</h3>
+            <p>The result page shows your score, time taken, subject-wise breakdown and weak areas, then walks through every question with the correct answer and its explanation.</p>
+          </div>
         </div>
       </div>
     </section>

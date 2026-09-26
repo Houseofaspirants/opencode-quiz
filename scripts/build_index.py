@@ -469,6 +469,7 @@ if site.get("url"):
     urls = [
         {"loc": f"{base}/", "p": "1.0"},
         {"loc": f"{base}/punjab-exams", "p": "0.9"},
+        {"loc": f"{base}/faq", "p": "0.9"},
         {"loc": f"{base}/articles", "p": "0.8"},
         {"loc": f"{base}/mock", "p": "0.9"},
         {"loc": f"{base}/leaderboard", "p": "0.7"},
