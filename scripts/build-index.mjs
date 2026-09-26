@@ -336,6 +336,47 @@ const outputSubjects = [...subjects.values()]
   })
   .sort((a, b) => a.order - b.order || a.name.localeCompare(b.name));
 
+/* -------------------------------------------- 4b. LANDING PAGE CROSS-REF
+ * data/landing-manifest.json is written by scripts/build_landing_pages.py.
+ * When a static landing page exists for an entity, its record carries a
+ * "landing" path so (a) the front-end canonicalises the query-string URL onto
+ * it and (b) the sitemap lists the clean URL instead. No manifest (or a page
+ * the generator has not built yet) keeps today's query-string behaviour. */
+const LANDING = new Map();
+const landPath = path.join(DATA_DIR, "landing-manifest.json");
+if (fs.existsSync(landPath)) {
+  try {
+    for (const p of JSON.parse(fs.readFileSync(landPath, "utf8")).pages || []) {
+      const f = String(p.file || "");
+      if (f.endsWith(".html") && fs.existsSync(path.join(ROOT, f))) {
+        LANDING.set(`${p.type}|${p.entity}`, `/${f.slice(0, -5)}`);
+      } else {
+        warn(`landing-manifest: file missing for ${f || p.url || "?"}`);
+      }
+    }
+  } catch (e) {
+    warn(`landing-manifest.json unreadable: ${e.message}`);
+  }
+}
+const land = (kind, entity) => LANDING.get(`${kind}|${entity}`);
+
+for (const s of outputSubjects) {
+  const sl = land("subject", s.id);
+  if (sl) s.landing = sl;
+  for (const c of s.categories) {
+    const cl = land("category", `${s.id}/${c.id}`);
+    if (cl) c.landing = cl;
+    for (const t of c.topics) {
+      const ql = land("quiz", `${s.id}/${t.id}`);
+      if (ql) t.landing = ql;
+    }
+  }
+  for (const t of s.topics) {
+    const ql = land("quiz", `${s.id}/${t.id}`);
+    if (ql) t.landing = ql;
+  }
+}
+
 const countTopics = (fn) =>
   outputSubjects.reduce((n, s) => n + s.topics.filter(fn).length, 0);
 const countCategories = () =>
@@ -407,13 +448,33 @@ if (site.url) {
     warn(`articles.json unreadable: ${e.message}`);
   }
   for (const s of outputSubjects) {
-    urls.push({ loc: `${base}/subject?subject=${s.id}`, p: "0.9" });
+    // Static landing page wins over the query-string variant; an entity the
+    // generator has not built yet keeps the URL it has today.
+    const sl = land("subject", s.id);
+    urls.push({ loc: sl ? `${base}${sl}` : `${base}/subject?subject=${s.id}`, p: "0.9" });
     for (const c of s.categories) {
-      urls.push({ loc: `${base}/subject?subject=${s.id}&category=${c.id}`, p: "0.85" });
+      const cl = land("category", `${s.id}/${c.id}`);
+      urls.push({
+        loc: cl ? `${base}${cl}` : `${base}/subject?subject=${s.id}&category=${c.id}`,
+        p: "0.85",
+      });
     }
     for (const t of s.topics.filter((x) => x.available)) {
-      const cat = t.category ? `&category=${encodeURIComponent(t.category)}` : "";
-      urls.push({ loc: `${base}/quiz?subject=${s.id}&topic=${t.id}${cat}`, p: "0.8" });
+      const tl = land("quiz", `${s.id}/${t.id}`);
+      if (tl) {
+        urls.push({ loc: `${base}${tl}`, p: "0.8" });
+      } else {
+        const cat = t.category ? `&category=${encodeURIComponent(t.category)}` : "";
+        urls.push({ loc: `${base}/quiz?subject=${s.id}&topic=${t.id}${cat}`, p: "0.8" });
+      }
+    }
+  }
+  // Landing pages with no query-string variant: topic guides + exam pages.
+  // (Subject, category and quiz landing pages are covered by the loops above.)
+  for (const [key, p] of [...LANDING.entries()].sort()) {
+    const kind = key.split("|")[0];
+    if (kind === "topic" || kind === "exam") {
+      urls.push({ loc: `${base}${p}`, p: kind === "topic" ? "0.8" : "0.85" });
     }
   }
   const xml =

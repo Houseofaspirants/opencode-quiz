@@ -64,15 +64,24 @@
   // "flat" = subject without categories (show its topics directly)
   const level = !hierarchical ? "flat" : category ? "category" : "root";
 
-  /* ------------------------------------------------- SEO + page header ----- */
-  let canonical = `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}`;
+  /* ------------------------------------------------- SEO + page header -----
+   * When the build has generated a static landing page for this entity
+   * (subject.landing / category.landing in data/index.json, written by
+   * scripts/build_landing_pages.py) the query-string URL canonicalises ONTO
+   * it, so the app view and the landing page never compete in the index.
+   * No landing page in the manifest = self-canonical, exactly as before. */
+  let canonical = subject.landing
+    ? `${siteBase}${subject.landing}`
+    : `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}`;
   let docTitle = `${subject.name} Quiz - House of Aspirants`;
   let h1 = subject.name;
   let desc = subject.description || "Topic-wise MCQ practice.";
   let icon = subject.icon;
 
   if (level === "category") {
-    canonical += `&category=${encodeURIComponent(category.id)}`;
+    canonical = category.landing
+      ? `${siteBase}${category.landing}`
+      : `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(category.id)}`;
     docTitle = `${category.name} - ${subject.name} Quiz - House of Aspirants`;
     h1 = category.name;
     desc = `All ${category.name} quizzes inside ${subject.name} — every topic in the folder is detected automatically.`;

@@ -12,11 +12,13 @@ import html as html_mod
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 from html.parser import HTMLParser
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://houseofaspirants.in"
+errors, warnings, notes = [], [], []
 PAGES = [
     "index.html", "subject.html", "quiz.html", "mock.html", "leaderboard.html",
     "bookmarks.html", "progress.html", "result.html", "about.html",
@@ -30,6 +32,44 @@ PAGES = [
     "punjab-gk-study-guide.html", "current-affairs-preparation.html",
     "reasoning-quant-preparation.html",
 ]
+# --- programmatic SEO landing pages (generated, committed) -------------------
+# scripts/build_landing_pages.py writes data/landing-manifest.json plus the
+# page files; the manifest is the single source of truth for what exists, so
+# the gate scans exactly those pages and never trusts prose in the report.
+LANDING_MANIFEST = ROOT / "data" / "landing-manifest.json"
+
+# Required auto-generated routes, labelled exactly as SEO-LANDING-REPORT.md
+# prints them so the gate can compare the report row against the shipped HTML.
+PAIR_LABEL = {
+    ("subject", "topic"): "Subject → Topic",
+    ("topic", "quiz"): "Topic → Quiz",
+    ("quiz", "subject"): "Quiz → Subject",
+    ("exam", "subject"): "Exam → Subject",
+    ("exam", "topic"): "Exam → Topic",
+}
+landing_pages = []          # ordered records from the manifest
+landing_files = set()       # generated .html filenames
+if not LANDING_MANIFEST.exists():
+    errors.append("data/landing-manifest.json missing - run scripts/build_landing_pages.py")
+else:
+    try:
+        _lm = json.loads(LANDING_MANIFEST.read_text(encoding="utf-8"))
+        landing_pages = [p for p in _lm.get("pages", []) if p.get("file")]
+        landing_files = {p["file"] for p in landing_pages}
+        for _p in landing_pages:
+            if _p.get("file") and _p["file"] not in PAGES:
+                PAGES.append(_p["file"])
+    except json.JSONDecodeError as e:
+        errors.append(f"data/landing-manifest.json: invalid JSON: {e}")
+
+    # every generated landing file on disk must be registered (stale files are
+    # as bad as missing ones: an unregistered page is invisible to the gate)
+    for _f in sorted(ROOT.glob("[a-z]*-*.html")):
+        if (_f.name.startswith(("subject-", "category-", "topic-", "quiz-", "exam-"))
+                and _f.name not in landing_files):
+            errors.append(f"{_f.name}: landing page on disk but absent from "
+                          f"landing-manifest.json")
+
 ART_HUB = "articles.html"
 REQUIRED_LINKS = [
     'href="index.html"', 'href="index.html#subjects"',
@@ -38,7 +78,6 @@ REQUIRED_LINKS = [
     'href="contact.html"', 'href="about.html"', 'href="privacy.html"',
     'href="terms.html"',
 ]
-errors, warnings, notes = [], [], []
 
 # --- schema.org validation vocabulary ---------------------------------------
 KNOWN_TYPES = {
@@ -552,7 +591,7 @@ BC_PAGES = {"about.html", "bookmarks.html", "contact.html", "leaderboard.html",
             "articles.html", "punjab-exams.html", "faq.html",
             "punjab-police-exam-preparation.html",
             "punjab-gk-study-guide.html", "current-affairs-preparation.html",
-            "reasoning-quant-preparation.html"}
+            "reasoning-quant-preparation.html"} | set(landing_files)
 ARTICLE_PAGES = {"punjab-police-exam-preparation.html", "punjab-gk-study-guide.html",
                  "current-affairs-preparation.html", "reasoning-quant-preparation.html"}
 for page in PAGES:
@@ -580,7 +619,7 @@ for t in ("WebSite", "SearchAction", "EntryPoint", "Organization",
 # Every page that ranks for a question must answer it in the first screenful
 # (40-60 words in .answer-box) and expose the same Q&A as FAQPage schema.
 AEO_PAGES = {"index.html", "faq.html", "punjab-exams.html", "articles.html",
-             "about.html", "subject.html", "mock.html"} | ARTICLE_PAGES
+             "about.html", "subject.html", "mock.html"} | ARTICLE_PAGES | set(landing_files)
 for p in sorted(AEO_PAGES):
     h = (ROOT / p).read_text(encoding="utf-8")
     if 'class="answer-box"' not in h:
@@ -611,6 +650,358 @@ if "faq.html" not in core:
 if f"{DOMAIN}/faq" not in locs:
     errors.append("sitemap: missing /faq URL")
 notes.append(f"aeo: {len(AEO_PAGES)} pages answer-first, {vis_q} FAQ pairs mirrored in schema, {len(ARTICLE_PAGES)} guides carry byline + sources")
+
+# --- programmatic SEO landing pages: per-type content contracts ------------
+# data/landing-manifest.json (written by scripts/build_landing_pages.py) is the
+# source of truth for WHICH pages exist; every promise below is re-derived from
+# data/index.json + data/exams.json + data/articles.json and measured against
+# the HTML on disk - never from SEO-LANDING-REPORT.md prose. Each landing file
+# is already in PAGES, so title/description/canonical uniqueness, robots,
+# chrome, resource hints and schema-family rules above apply to them too.
+MIN_INTRO_WORDS = {"subject": 250, "category": 150, "topic": 60, "quiz": 60,
+                   "exam": 90}
+
+
+def ld_nodes(page_html):
+    """Yield every JSON-LD object (flattening @graph) on a page."""
+    for blk in re.findall(r'<script type="application/ld\+json"[^>]*>(.*?)</script>',
+                          page_html, re.S):
+        if not blk.strip():          # runtime-managed placeholder (ldDynamic)
+            continue
+        try:
+            doc = json.loads(blk)
+        except json.JSONDecodeError:
+            continue
+        nodes = doc.get("@graph", [doc]) if isinstance(doc, dict) else []
+        for node in nodes:
+            if isinstance(node, dict):
+                yield node
+
+
+def ld_type(node):
+    t = node.get("@type", "")
+    return t if isinstance(t, list) else [t]
+
+
+def faq_count(page_html):
+    """Questions inside FAQPage only (a quiz page also has Quiz.hasPart)."""
+    n = 0
+    for node in ld_nodes(page_html):
+        if "FAQPage" in ld_type(node):
+            main = node.get("mainEntity") or []
+            n += len(main) if isinstance(main, list) else 1
+    return n
+
+
+def intro_words(page_html):
+    m = re.search(r'<div class="landing-intro" data-landing="intro">(.*?)</div>',
+                  page_html, re.S)
+    return len(re.sub(r"<[^>]+>", " ", m.group(1)).split()) if m else 0
+
+
+if landing_pages:
+    idx_land = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
+    subj_by_id = {s["id"]: s for s in idx_land.get("subjects", [])}
+    exams_land = json.loads((ROOT / "data" / "exams.json").read_text(encoding="utf-8")).get("exams", [])
+    exam_by_id = {e["id"]: e for e in exams_land}
+
+    # (subject_id, topic_id) -> topic record, walking flat topics + categories
+    topic_by_key = {}
+    for s in idx_land.get("subjects", []):
+        for t in s.get("topics", []) or []:
+            topic_by_key[(s["id"], t["id"])] = t
+        for c in s.get("categories", []) or []:
+            for t in c.get("topics", []) or []:
+                topic_by_key[(s["id"], t["id"])] = t
+
+    LINK_RX = re.compile(r'href="((?:subject|category|topic|quiz|exam)-[a-z0-9-]+\.html)"')
+    lpages = {r["file"]: r for r in landing_pages}
+    landing_h = {f: (ROOT / f).read_text(encoding="utf-8")
+                 for f in lpages if (ROOT / f).exists()}
+    links_of = {f: LINK_RX.findall(h) for f, h in landing_h.items()}
+
+    # --- manifest must describe the file that actually shipped --------------
+    for f, r in lpages.items():
+        h = landing_h.get(f)
+        if h is None:
+            continue                   # "missing file" already reported above
+        want_url = f"{DOMAIN}/{f[:-5]}" if f.endswith(".html") else ""
+        if r.get("url") != want_url:
+            errors.append(f"{f}: manifest url {r.get('url')!r} != expected {want_url!r}")
+        if canonical(h) != want_url:
+            errors.append(f"{f}: canonical {canonical(h)!r} != manifest url {want_url!r}")
+        if want_url not in locs:
+            errors.append(f"{f}: landing URL missing from sitemap.xml ({want_url})")
+        m = re.search(r"<title>(.*?)</title>", h, re.S)
+        ship_title = html_mod.unescape(m.group(1).strip()) if m else ""
+        if r.get("title") and r["title"] != ship_title:
+            errors.append(f"{f}: manifest title drifted from rendered <title>")
+        if r.get("description") and r["description"] != html_mod.unescape(meta(h, "description")):
+            errors.append(f"{f}: manifest description drifted from meta description")
+        w = intro_words(h)
+        floor = MIN_INTRO_WORDS.get(r.get("type", ""), 0)
+        if w < floor:
+            errors.append(f"{f}: intro {w} words (want >= {floor} for {r.get('type')})")
+
+    # duplicate CONTENT: no two landing pages may share an H1 or an intro
+    h1_seen, intro_seen = {}, {}
+    for f in landing_h:
+        h = landing_h[f]
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S)
+        if m:
+            key = " ".join(re.sub(r"<[^>]+>", " ", m.group(1)).split()).lower()
+            if key in h1_seen:
+                errors.append(f"duplicate H1 on {f} and {h1_seen[key]}")
+            h1_seen[key] = f
+        m = re.search(r'<div class="landing-intro" data-landing="intro">(.*?)</div>',
+                      h, re.S)
+        key = " ".join(re.sub(r"<[^>]+>", " ", m.group(1)).split()).lower() if m else ""
+        if len(key) > 40:
+            if key in intro_seen:
+                errors.append(f"duplicate intro copy on {f} and {intro_seen[key]}")
+            intro_seen[key] = f
+
+    # --- Subject page: 250-word intro, FAQ, Related Subjects/Exams/Quizzes --
+    for r in [x for x in landing_pages if x["type"] == "subject"]:
+        f, h = r["file"], landing_h.get(r["file"], "")
+        if not h:
+            continue
+        sid = r.get("entity", "")
+        for frag, label in (
+            ("<h2>Related subjects</h2>", "Related Subjects section"),
+            ("<h2>Related quizzes</h2>", "Related Quizzes section"),
+            (r"Exams that lean on ", "Related Exams section"),
+            ("<h2>All about ", "intro section"),
+        ):
+            if not re.search(frag, h):
+                errors.append(f"{f}: {label} missing")
+        if faq_count(h) < 3:
+            errors.append(f"{f}: needs >= 3 FAQ questions (has {faq_count(h)})")
+        # Subject -> Topic / Category: every child landing file must be linked
+        want = {c for c in links_of.get(r["file"], [])
+                if c.startswith((f"category-{sid}-", f"topic-{sid}-"))}
+        expected = {f2 for f2 in lpages
+                    if f2.startswith((f"category-{sid}-", f"topic-{sid}-"))}
+        missing = sorted(expected - want)
+        if missing:
+            errors.append(f"{f}: Subject->Topic links missing {missing}")
+
+    # --- Category page: links back to its parent subject + at least one quiz -
+    for r in [x for x in landing_pages if x["type"] == "category"]:
+        h = landing_h.get(r["file"], "")
+        if not h:
+            continue
+        sid = r.get("entity", "").split("/")[0]
+        if f"subject-{sid}.html" not in links_of.get(r["file"], []):
+            errors.append(f"{r['file']}: Category->Subject link missing")
+        if not any(l.startswith("quiz-") for l in links_of.get(r["file"], [])):
+            errors.append(f"{r['file']}: Category->Quiz link missing")
+
+    # --- Topic page: sections, facts, and Topic -> Quiz --------------------
+    for r in [x for x in landing_pages if x["type"] == "topic"]:
+        f, h = r["file"], landing_h.get(r["file"], "")
+        if not h:
+            continue
+        sid, tid = r.get("entity", "").split("/")
+        for frag, label in (
+            (r"<h2>What .* covers</h2>", "Topic Introduction"),
+            (r"<h2>Why .* is worth the hours</h2>", "Why Important"),
+            (r"<h2>Exams where .* matters</h2>", "Exam Relevance"),
+            (r"<h2>Expected questions from ", "Expected Questions"),
+            ("<h2>Previous Year Questions</h2>", "Previous Year Questions"),
+            ("<h2>Related topics</h2>", "Related Topics"),
+        ):
+            if not re.search(frag, h):
+                errors.append(f"{f}: topic section missing - {label}")
+        for label in ("Question count", "Estimated time", "Difficulty", "Last updated"):
+            if f'<div class="stat-label">{label}</div>' not in h:
+                errors.append(f"{f}: topic fact '{label}' missing")
+        if f"quiz-{sid}-{tid}.html" not in links_of.get(f, []):
+            errors.append(f"{f}: Topic->Quiz link missing (quiz-{sid}-{tid}.html)")
+        if f"subject-{sid}.html" not in links_of.get(f, []):
+            errors.append(f"{f}: Topic->Subject link missing")
+
+    # --- Quiz page: metadata facts, share, prev/next, Quiz schema, seed -----
+    for r in [x for x in landing_pages if x["type"] == "quiz"]:
+        f, h = r["file"], landing_h.get(r["file"], "")
+        if not h:
+            continue
+        sid, tid = r.get("entity", "").split("/")
+        for label in ("Question count", "Estimated time", "Difficulty", "Last updated"):
+            if f"<b>{label}:</b>" not in h:
+                errors.append(f"{f}: quiz fact '{label}' missing")
+        for frag, label in (
+            ("t.me/share", "Telegram share"),
+            ("wa.me", "WhatsApp share"),
+            ("twitter.com/intent", "X/Twitter share"),
+            ("data-copy-url", "copy-link share"),
+            ("<h2>Previous and next quizzes</h2>", "Previous/Next Quiz nav"),
+            ("<h2>Related quizzes</h2>", "Related Quiz section"),
+            ("<h2>About the ", "About this quiz section"),
+        ):
+            if frag not in h:
+                errors.append(f"{f}: {label} missing")
+        if f"subject-{sid}.html" not in links_of.get(f, []):
+            errors.append(f"{f}: Quiz->Subject link missing")
+        if f"topic-{sid}-{tid}.html" not in links_of.get(f, []):
+            errors.append(f"{f}: Quiz->Topic link missing")
+        # seed must be emitted BEFORE quiz.js so the engine boots from it
+        seed_at, engine_at = h.find("__HOA_QUIZ_SEED"), h.find("assets/js/quiz.js")
+        if seed_at < 0:
+            errors.append(f"{f}: window.__HOA_QUIZ_SEED block missing")
+        elif engine_at < 0:
+            errors.append(f"{f}: assets/js/quiz.js missing")
+        elif seed_at > engine_at:
+            errors.append(f"{f}: __HOA_QUIZ_SEED must load before assets/js/quiz.js")
+        # static JSON-LD owns the page: the runtime placeholder stays blank
+        if not re.search(r'<script type="application/ld\+json" id="ldDynamic">\s*</script>', h):
+            errors.append(f"{f}: ldDynamic placeholder must stay blank (static graph owns schema)")
+        # Quiz schema hasPart must match the question file exactly
+        quiz_nodes = [n for n in ld_nodes(h) if "Quiz" in ld_type(n)]
+        if not quiz_nodes:
+            errors.append(f"{f}: Quiz schema node missing")
+        else:
+            have = quiz_nodes[0].get("hasPart") or []
+            rec = topic_by_key.get((sid, tid))
+            if not rec:
+                errors.append(f"{f}: {sid}/{tid} not found in data/index.json")
+            else:
+                qf = ROOT / rec["file"]
+                try:
+                    raw = json.loads(qf.read_text(encoding="utf-8"))
+                    n_file = len(raw) if isinstance(raw, list) else len(raw.get("questions", []))
+                except (OSError, ValueError):
+                    n_file = -1
+                if n_file >= 0 and len(have) != n_file:
+                    errors.append(f"{f}: Quiz.hasPart has {len(have)} questions, "
+                                  f"{rec['file']} holds {n_file}")
+                if rec.get("count") and len(have) != rec["count"]:
+                    errors.append(f"{f}: Quiz.hasPart {len(have)} != index.json count {rec['count']}")
+                m = re.search(r"<b>Question count:</b>\s*(\d+)", h)
+                if m and int(m.group(1)) != len(have):
+                    errors.append(f"{f}: visible question count {m.group(1)} != hasPart {len(have)}")
+            for node in have[:3]:
+                if node.get("eduQuestionType") != "Flashcard":
+                    errors.append(f"{f}: hasPart entry missing eduQuestionType: Flashcard")
+                    break
+
+    # --- Exam page: Exam -> Subject (configured) and Exam -> Topic (derived)
+    for r in [x for x in landing_pages if x["type"] == "exam"]:
+        f, h = r["file"], landing_h.get(r["file"], "")
+        if not h:
+            continue
+        eid = r.get("entity", "")
+        e = exam_by_id.get(eid)
+        if e is None:
+            errors.append(f"{f}: {eid} not found in data/exams.json")
+            continue
+        if not re.search(r"<h2>What to study for ", h):
+            errors.append(f"{f}: exam route section (What to study for ...) missing")
+        got = links_of.get(f, [])
+        subj_ids = [sid for sid in (e.get("subjects") or []) if sid in subj_by_id]
+        want_subjects = {f"subject-{sid}.html" for sid in subj_ids}
+        if not subj_ids:
+            # honest fallback: unmapped exam still links the whole subject library
+            want_subjects = {f2 for f2 in lpages if f2.startswith("subject-")}
+            if len({s for s in got if s.startswith("subject-")}) < len(want_subjects):
+                errors.append(f"{f}: unmapped exam must link every subject page")
+        miss = sorted(want_subjects - set(got))
+        if miss and subj_ids:
+            errors.append(f"{f}: Exam->Subject links missing {miss}")
+        # Exam -> Topic: mirror the generator's derivation (subjects x live
+        # topics, filtered by the exam's declared categories, first 6)
+        cat_ids = [c for c in (e.get("categories") or []) if c]
+        want_topics = []
+        for sid in subj_ids:
+            s = subj_by_id.get(sid) or {}
+            flat = [(None, t) for t in s.get("topics", []) or []]
+            for c in s.get("categories", []) or []:
+                flat += [(c, t) for t in c.get("topics", []) or []]
+            for c, t in flat:
+                if cat_ids and c and c["id"] not in cat_ids:
+                    continue
+                tf = f"topic-{sid}-{t['id']}.html"
+                if tf in lpages and tf not in want_topics:
+                    want_topics.append(tf)
+        miss_t = [t for t in want_topics[:6] if t not in got]
+        if miss_t:
+            errors.append(f"{f}: Exam->Topic links missing {miss_t}")
+
+    # --- sitemap must never carry query-string (duplicate) URLs ------------
+    for u in locs:
+        if "?" in u:
+            errors.append(f"sitemap: query-string URL is a duplicate-content risk: {u}")
+
+    # --- SEO-LANDING-REPORT.md must describe THIS build -------------------
+    # The report is a deliverable: a stale or hand-edited count is as bad as no
+    # report. Recompute the headline numbers from the HTML and compare.
+    rep_path = ROOT / "SEO-LANDING-REPORT.md"
+    if not rep_path.exists():
+        errors.append("SEO-LANDING-REPORT.md missing (build_landing_pages.py did not write it)")
+    else:
+        rep = rep_path.read_text(encoding="utf-8")
+        m = re.search(r"## 1\. Pages optimized \((\d+)\)", rep)
+        if not m:
+            errors.append("report: 'Pages optimized (N)' heading missing")
+        elif int(m.group(1)) != len(landing_pages):
+            errors.append(f"report says {m.group(1)} pages, manifest has {len(landing_pages)}")
+        # recompute entity<->entity links from the shipped HTML
+        real_pairs = Counter()
+        for f, h in landing_h.items():
+            for dst in LINK_RX.findall(h):
+                if dst in lpages and dst != f:
+                    real_pairs[(lpages[f]["type"], lpages[dst]["type"])] += 1
+        real_entity = sum(real_pairs.values())
+        m = re.search(r"## 3\. Internal links created \((\d+)\)", rep)
+        if not m:
+            errors.append("report: 'Internal links created (N)' heading missing")
+        elif int(m.group(1)) != real_entity:
+            errors.append(f"report says {m.group(1)} internal links, HTML has {real_entity}")
+        # every required route must be reported with the count it really has
+        for pair, label in PAIR_LABEL.items():
+            m = re.search(re.escape(f"| {label} | ") + r"(\d+) \| (\S+)", rep)
+            if not m:
+                errors.append(f"report: required route row missing ({label})")
+                continue
+            n, tick = int(m.group(1)), m.group(2)
+            if n != real_pairs.get(pair, 0):
+                errors.append(f"report: {label} shows {n}, HTML has {real_pairs.get(pair, 0)}")
+            if n == 0 and tick.startswith("✅"):
+                errors.append(f"report: {label} has 0 links but is still ticked ✅")
+            if n > 0 and not tick.startswith("✅"):
+                errors.append(f"report: {label} has {n} links but is not ticked ✅")
+        if "250-word intro target" not in rep:
+            errors.append("report: subject 250-word intro statement missing")
+
+    # --- quiz.html stays a valid generator template -------------------------
+    # scripts/build_landing_pages.py transforms quiz.html by regex; if someone
+    # edits the template these anchors must still be findable or generation
+    # silently produces broken pages.
+    tpl = (ROOT / "quiz.html").read_text(encoding="utf-8")
+    for frag, label in (
+        ("<title>", "title"), ('name="description"', "meta description"),
+        ('rel="canonical"', "canonical"), ("<h1", "h1"),
+        ('id="ldDynamic"', "runtime JSON-LD slot"),
+        ("<main id=\"main\">", "main landmark"),
+        ("assets/js/quiz.js", "quiz engine script"),
+        ("assets/js/core.js", "core.js script"),
+    ):
+        if frag not in tpl:
+            errors.append(f"quiz.html: generator anchor missing ({label}): {frag!r}")
+    # core.js must stay deferred even though attribute order may vary
+    core_tags = [t for t in re.findall(r"<script\b[^>]*assets/js/core\.js[^>]*>", tpl)]
+    if not core_tags or any(" defer" not in t for t in core_tags):
+        errors.append("quiz.html: deferred core.js <script> anchor missing/changed")
+
+    n_links = sum(len(v) for v in links_of.values())
+    by_kind = {}
+    for rec in landing_pages:
+        by_kind[rec.get("type", "?")] = by_kind.get(rec.get("type", "?"), 0) + 1
+    kinds = " ".join(f"{k}={by_kind[k]}" for k in sorted(by_kind))
+    notes.append(
+        f"landing pages: {len(landing_pages)} generated ({kinds}), {n_links} internal "
+        f"links, sitemap + manifest + metadata all in sync"
+    )
 
 inv = {}
 for tps in types_by_page.values():

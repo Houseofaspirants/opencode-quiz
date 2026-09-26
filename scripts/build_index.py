@@ -40,6 +40,7 @@ import os
 import re
 import sys
 from datetime import datetime, timezone
+from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 QUESTIONS_DIR = os.path.join(ROOT, "questions")
@@ -428,6 +429,47 @@ for s in subjects.values():
 
 output_subjects.sort(key=lambda a: (a["order"], str(a["name"]).lower()))
 
+# ---------------------------------------------- 4b. LANDING PAGE CROSS-REF
+# data/landing-manifest.json is written by scripts/build_landing_pages.py.
+# When a static landing page exists for an entity, its record carries a
+# "landing" path so (a) the front-end canonicalises the query-string URL onto
+# it and (b) the sitemap lists the clean URL instead. No manifest (or a page
+# the generator has not built yet) keeps today's query-string behaviour.
+LANDING = {}
+land_path = os.path.join(DATA_DIR, "landing-manifest.json")
+if os.path.exists(land_path):
+    try:
+        for _p in read_json(land_path).get("pages", []):
+            _f = str(_p.get("file", ""))
+            if _f.endswith(".html") and os.path.exists(os.path.join(ROOT, _f)):
+                LANDING[(_p.get("type"), _p.get("entity"))] = "/" + _f[:-5]
+            else:
+                warn(f"landing-manifest: file missing for {_f or _p.get('url', '?')}")
+    except Exception as e:
+        warn(f"landing-manifest.json unreadable: {e}")
+
+
+def _land(kind, entity):
+    return LANDING.get((kind, entity))
+
+
+for s in output_subjects:
+    _lk = _land("subject", s["id"])
+    if _lk:
+        s["landing"] = _lk
+    for c in s["categories"]:
+        _lk = _land("category", f'{s["id"]}/{c["id"]}')
+        if _lk:
+            c["landing"] = _lk
+        for t in c["topics"]:
+            _lk = _land("quiz", f'{s["id"]}/{t["id"]}')
+            if _lk:
+                t["landing"] = _lk
+    for t in s["topics"]:
+        _lk = _land("quiz", f'{s["id"]}/{t["id"]}')
+        if _lk:
+            t["landing"] = _lk
+
 count_topics = sum(len(s["topics"]) for s in output_subjects)
 count_categories = sum(len(s["categories"]) for s in output_subjects)
 
@@ -495,12 +537,36 @@ if site.get("url"):
         except Exception as e:
             warn(f"articles.json unreadable: {e}")
     for s in output_subjects:
-        urls.append({"loc": f"{base}/subject?subject={s['id']}", "p": "0.9"})
+        # Static landing page wins over the query-string variant; an entity the
+        # generator has not built yet keeps the URL it has today.
+        sl = _land("subject", s["id"])
+        urls.append({"loc": (base + sl) if sl else f"{base}/subject?subject={s['id']}",
+                     "p": "0.9"})
         for c in s["categories"]:
-            urls.append({"loc": f"{base}/subject?subject={s['id']}&category={c['id']}", "p": "0.85"})
+            cl = _land("category", f'{s["id"]}/{c["id"]}')
+            urls.append({"loc": (base + cl) if cl
+                         else f"{base}/subject?subject={s['id']}&category={c['id']}",
+                         "p": "0.85"})
         for t in (x for x in s["topics"] if x["available"]):
-            cat = f"&category={t['category']}" if t.get("category") else ""
-            urls.append({"loc": f"{base}/quiz?subject={s['id']}&topic={t['id']}{cat}", "p": "0.8"})
+            tl = _land("quiz", f'{s["id"]}/{t["id"]}')
+            if tl:
+                urls.append({"loc": base + tl, "p": "0.8"})
+            else:
+                # Mirrors encodeURIComponent() in build-index.mjs so the local
+                # (Python) and deploy (Node) builders emit byte-identical XML.
+                # (encodeURIComponent leaves A-Za-z0-9 and -_.!~*'() alone.)
+                cat = ""
+                if t.get("category"):
+                    raw = str(t["category"])
+                    cat = "&category=" + quote(raw, safe="-_.!~*'()")
+                urls.append({"loc": f"{base}/quiz?subject={s['id']}&topic={t['id']}{cat}",
+                             "p": "0.8"})
+    # Landing pages with no query-string variant: topic guides + exam pages.
+    # (Subject, category and quiz landing pages are covered by the loops above.)
+    for _kind, _path in sorted(LANDING.items()):
+        if _kind[0] in ("topic", "exam"):
+            urls.append({"loc": base + _path,
+                         "p": "0.8" if _kind[0] == "topic" else "0.85"})
 
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',

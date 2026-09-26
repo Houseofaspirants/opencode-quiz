@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-09-26T15:14:43.466Z",
+  "generatedAt": "2026-09-26T17:53:50.784Z",
   "stats": {
     "subjects": 7,
     "categories": 6,
@@ -53,44 +53,51 @@
           "name": "Polity",
           "folder": "polity",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-polity"
         },
         {
           "id": "history",
           "name": "History",
           "folder": "history",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-history"
         },
         {
           "id": "punjab-gk",
           "name": "Punjab GK",
           "folder": "punjab-gk",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-punjab-gk"
         },
         {
           "id": "geography-environment",
           "name": "Geography & Environment",
           "folder": "geography-environment",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-geography-environment"
         },
         {
           "id": "economy",
           "name": "Economy",
           "folder": "economy",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-economy"
         },
         {
           "id": "others",
           "name": "Others",
           "folder": "others",
           "icon": "📁",
-          "topics": []
+          "topics": [],
+          "landing": "/category-gk-others"
         }
-      ]
+      ],
+      "landing": "/subject-gk"
     },
     {
       "id": "quant",
@@ -101,7 +108,8 @@
       "description": "Simplification, Percentage, Profit & Loss, TSD, DI and more.",
       "order": 2,
       "topics": [],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-quant"
     },
     {
       "id": "reasoning",
@@ -112,7 +120,8 @@
       "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
       "order": 3,
       "topics": [],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-reasoning"
     },
     {
       "id": "punjabi",
@@ -123,7 +132,8 @@
       "description": "Grammar, Muhavare, Akhan, Vocabulary, Literature and more.",
       "order": 4,
       "topics": [],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-punjabi"
     },
     {
       "id": "english",
@@ -134,7 +144,8 @@
       "description": "Grammar, Vocabulary, Idioms, One Word, Error Detection and more.",
       "order": 5,
       "topics": [],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-english"
     },
     {
       "id": "computer",
@@ -154,10 +165,12 @@
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790261912813.672
+          "updatedAt": 1790261912813.672,
+          "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
         }
       ],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-computer"
     },
     {
       "id": "current-affairs",
@@ -168,7 +181,8 @@
       "description": "Daily, National, International, Sports and Punjab Current Affairs.",
       "order": 7,
       "topics": [],
-      "categories": []
+      "categories": [],
+      "landing": "/subject-current-affairs"
     }
   ]
 }
