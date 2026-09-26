@@ -376,6 +376,7 @@ if (site.url) {
   // utility pages — the 404 page and runtime noindex modes stay out.)
   const urls = [
     { loc: `${base}/`, p: "1.0" },
+    { loc: `${base}/punjab-exams`, p: "0.9" },
     { loc: `${base}/articles`, p: "0.8" },
     { loc: `${base}/mock`, p: "0.9" },
     { loc: `${base}/leaderboard`, p: "0.7" },

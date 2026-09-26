@@ -1131,6 +1131,37 @@ html[data-theme="dark"] {
   padding: 6px 13px; border-radius: 999px;
 }
 
+/* --------------------------------------------------- exam coverage band -- */
+/* Names the exams this portal is built for, then routes every group to a
+   real practice destination — a tag cloud with somewhere to go. */
+.exam-groups {
+  display: grid; gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 900px) {
+  .exam-groups { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.exam-group { align-self: start; }
+.exam-group h3 {
+  font-size: 0.76rem; font-weight: 800; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+}
+.exam-chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; }
+.exam-chips a {
+  display: inline-block; padding: 6px 13px;
+  font-size: 0.8rem; font-weight: 700; color: var(--text-2);
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 999px; text-decoration: none;
+  transition: color 0.18s, border-color 0.18s, transform 0.18s;
+}
+.exam-chips a:hover {
+  color: var(--brand); border-color: var(--brand); transform: translateY(-1px);
+}
+@media (max-width: 719px) {
+  /* Chips are primary navigation on a phone, so they clear 44px like .btn. */
+  .exam-chips a { padding: 11px 15px; font-size: 0.87rem; }
+}
+
 /* ----------------------------------------------------- value proposition -- */
 .tg-value-grid { display: grid; gap: 16px; grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 560px) { .tg-value-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }

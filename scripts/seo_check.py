@@ -21,6 +21,8 @@ PAGES = [
     "index.html", "subject.html", "quiz.html", "mock.html", "leaderboard.html",
     "bookmarks.html", "progress.html", "result.html", "about.html",
     "contact.html", "privacy.html", "terms.html", "404.html",
+    # Exam index (target: Punjab Government competitive exams)
+    "punjab-exams.html",
     # Study-guides hub + registered articles (data/articles.json)
     "articles.html", "punjab-police-exam-preparation.html",
     "punjab-gk-study-guide.html", "current-affairs-preparation.html",
@@ -481,7 +483,8 @@ for path in ROOT.rglob("*"):
 # --- schema coverage: requested types present where content allows ----------
 BC_PAGES = {"about.html", "bookmarks.html", "contact.html", "leaderboard.html",
             "mock.html", "privacy.html", "progress.html", "terms.html",
-            "articles.html", "punjab-police-exam-preparation.html",
+            "articles.html", "punjab-exams.html",
+            "punjab-police-exam-preparation.html",
             "punjab-gk-study-guide.html", "current-affairs-preparation.html",
             "reasoning-quant-preparation.html"}
 ARTICLE_PAGES = {"punjab-police-exam-preparation.html", "punjab-gk-study-guide.html",
@@ -546,6 +549,21 @@ else:
     if 'loading="lazy"' not in brand[1]:
         errors.append("core.js: footer logo missing loading=lazy")
 
+# Google Analytics 4 — single source of truth in core.js (all 19 pages load it)
+GA_ID = "G-WHSFW3ZYZL"
+for frag, why in (
+    (GA_ID, "Measurement ID"),
+    ("googletagmanager.com/gtag/js", "gtag.js loader URL"),
+    ("send_page_view", "page_view config"),
+    ("s.async = true", "gtag.js must be async (never render-blocking)"),
+    ("isLocalHost", "localhost guard (dev traffic must not pollute the property)"),
+    ("startAnalytics()", "analytics must be started from init()"),
+    ("try {", "analytics must be wrapped so it cannot break the portal"),
+):
+    if frag not in core:
+        errors.append(f"core.js: GA4 missing {why} ({frag!r})")
+notes.append(f"analytics: GA4 {GA_ID} from core.js (async, localhost-exempt)")
+
 # cache headers (vercel.json)
 try:
     vj = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
@@ -553,7 +571,6 @@ try:
              for r in vj.get("headers", [])}
     expect = [
         ("/sw.js", "no-cache"),
-        ("/assets/(.*)", "max-age=86400"),
         ("/data/(.*)", "max-age=60"),
         ("/", "max-age=0, must-revalidate"),
         ("/manifest.webmanifest", "max-age=86400"),
@@ -564,6 +581,21 @@ try:
             errors.append(f"vercel.json: missing header rule {src}")
         elif frag not in rules[src]:
             errors.append(f"vercel.json: {src} Cache-Control lacks {frag!r} (got {rules[src]!r})")
+    # Shell assets are served cache-first by the service worker, so the HTTP
+    # cache must stay SHORT: a 24h max-age let a deploy push new CSS/JS while
+    # returning stale bytes from the HTTP cache for up to a day. Bounded at
+    # <= 1 hour + SWR so every push reaches devices quickly.
+    asset_cc = rules.get("/assets/(.*)", "")
+    m = re.search(r"max-age=(\d+)", asset_cc)
+    if not m:
+        errors.append(f"vercel.json: /assets/(.*) has no max-age (got {asset_cc!r})")
+    elif int(m.group(1)) > 3600:
+        errors.append(
+            f"vercel.json: /assets/(.*) max-age={m.group(1)} > 3600 — shell assets are "
+            "cache-first, long HTTP caching delays deploys (got %r)" % asset_cc
+        )
+    elif "stale-while-revalidate" not in asset_cc:
+        errors.append(f"vercel.json: /assets/(.*) missing stale-while-revalidate (got {asset_cc!r})")
     if not any("must-revalidate" in v and "max-age=0" in v for k, v in rules.items() if "index" in k):
         errors.append("vercel.json: no HTML rule with max-age=0, must-revalidate")
     if not any("index" in k and "articles" in k for k in rules):
@@ -640,8 +672,10 @@ for marker in (
 ):
     if marker not in idx_html:
         errors.append(f"index.html: missing Telegram growth marker {marker!r}")
-if idx_html.count("data-tg-rotator") < 2:
-    errors.append("index.html: expected >=2 rotating Telegram banner slots")
+# The homepage no longer carries rotator slots (mobile-first de-cluttering);
+# it must instead expose enough Telegram entry points to stay discoverable.
+if idx_html.count('href="https://t.me/HouseOfAspirant"') < 3:
+    errors.append("index.html: expected >=3 Telegram entry points")
 
 core_js = (ROOT / "assets/js" / "core.js").read_text(encoding="utf-8")
 for marker in (

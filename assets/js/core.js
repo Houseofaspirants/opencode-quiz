@@ -10,6 +10,7 @@
  *   6.  UI helpers           (toast, count-up, reveal, back-to-top)
  *   7.  Student features     (bookmarks, progress, achievements, leaderboard)
  *   8.  PWA                  (service-worker registration + install button)
+ *   9.  Analytics            (Google Analytics 4 — one Measurement ID, async)
  *
  * Every student feature talks to `HOA.db` only, so a future backend
  * (Firebase / Supabase / Node+Express) can replace one file without
@@ -237,6 +238,7 @@ const HOA = (() => {
     <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> Punjab GK</a>
 
     <p class="mm-group">Practice</p>
+    <a class="mm-link" data-nav="exams" href="punjab-exams.html">🏛️ Punjab Exams</a>
     <a class="mm-link" data-nav="daily" href="quiz.html?mode=daily">📅 Daily Quiz</a>
     <a class="mm-link" data-nav="mock" href="mock.html">🧪 Mock Tests</a>
     <a class="mm-link" data-nav="bookmarks" href="bookmarks.html">★ Bookmarks</a>
@@ -302,6 +304,7 @@ const HOA = (() => {
 
         <div class="footer-col">
           <h2>Practice</h2>
+          <a href="punjab-exams.html">Punjab Exams</a>
           <a href="quiz.html?mode=daily">Daily Quiz</a>
           <a href="mock.html">Mock Tests</a>
           <a href="subject.html?subject=gk">Previous Year Questions</a>
@@ -1047,8 +1050,72 @@ const HOA = (() => {
     if (join) join.focus();
   }
 
+  /* ================================================== ANALYTICS (GA4) ====
+     Google Analytics 4 lives in this one file so the Measurement ID exists in
+     exactly one place across all 19 pages instead of 19 <head> blocks.
+
+     Why here rather than an inline <head> snippet:
+       • core.js is already `defer`, so this runs right after the document is
+         parsed, before DOMContentLoaded — it never blocks rendering, the hero
+         or the quiz, and adds no render-blocking request.
+       • gtag.js is injected with `async`, so even that single third-party
+         fetch happens off the main thread.
+       • A try/catch wraps the whole thing: analytics failure can never break
+         the portal.
+
+     Localhost is excluded so development and testing traffic never lands in
+     the production property. `startAnalytics()` applies that policy;
+     `initAnalytics()` is the pure loader and stays callable on its own. */
+  const GA_ID = "G-WHSFW3ZYZL";
+  let gaStatus = "idle"; // idle | active | skipped-local | blocked
+
+  function isLocalHost() {
+    const host = location.hostname;
+    return (
+      host === "localhost" ||
+      host === "127.0.0.1" ||
+      host === "::1" ||
+      host === "[::1]" ||
+      host.endsWith(".local")
+    );
+  }
+
+  /** Injects gtag.js and queues the page_view. Idempotent. */
+  function initAnalytics(id = GA_ID) {
+    if (gaStatus === "active") return false;
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = window.gtag || function () {
+        window.dataLayer.push(arguments);
+      };
+      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+        const s = document.createElement("script");
+        s.async = true;
+        s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+        document.head.appendChild(s);
+      }
+      window.gtag("js", new Date());
+      window.gtag("config", id, { send_page_view: true });
+      gaStatus = "active";
+      return true;
+    } catch {
+      gaStatus = "blocked";
+      return false;
+    }
+  }
+
+  /** Production entry point: never reports from a local dev host. */
+  function startAnalytics() {
+    if (isLocalHost()) {
+      gaStatus = "skipped-local";
+      return false;
+    }
+    return initAnalytics(GA_ID);
+  }
+
   /* ================================================== INITIALISE ========= */
   function init() {
+    startAnalytics(); // first: gets the page_view queued before any UI work
     renderChrome();
     initTheme();
     initNav();
@@ -1070,6 +1137,12 @@ const HOA = (() => {
     db, loadIndex, loadQuestions, normalizeQuestions,
     toast, esc, seo, countUp, fmtTime, uid,
     bookmarks, progress, achievements, leaderboard,
+    analytics: {
+      id: GA_ID,
+      init: initAnalytics,
+      start: startAnalytics,
+      get status() { return gaStatus; },
+    },
   };
 })();
 
