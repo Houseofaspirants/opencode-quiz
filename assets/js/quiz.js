@@ -18,6 +18,33 @@
 
   /* ------------------------------------------------------- 0. BOOT ------ */
   const params = new URLSearchParams(location.search);
+  /* Programmatic SEO landing pages (quiz-<subject>-<topic>.html) carry their
+     entity in a seed object instead of the query string. The seed is only
+     honoured on a CLEAN landing URL - if the address already carries ?subject=
+     or ?mode=, SEED stays null and every existing link behaves exactly as
+     before. See scripts/build_landing_pages.py. */
+  const seedRaw = window.__HOA_QUIZ_SEED || null;
+  const SEED =
+    seedRaw && !params.get("subject") && !params.get("mode") && !params.get("count")
+      ? seedRaw
+      : null;
+  /* A landing page ships a STATIC JSON-LD graph that describes the clean
+     canonical URL - it is only true while SEED is active. The moment the address
+     carries ?subject= / ?mode= / ?count= this document is a RUNTIME page, so
+     that static graph would either duplicate the runtime one (two Quiz nodes)
+     or survive as schema on a noindex render - both contradict robots/canonical.
+     Drop it here and the head behaves exactly like classic quiz.html afterwards.
+     #ldDynamic is kept: the runtime writes its own graph into it below. */
+  if (seedRaw && !SEED) {
+    document.querySelectorAll('script[type="application/ld+json"]').forEach((el) => {
+      if (el.id !== "ldDynamic") el.remove();
+    });
+  }
+  if (SEED) {
+    params.set("subject", SEED.subject);
+    params.set("topic", SEED.topic);
+    if (SEED.category) params.set("category", SEED.category);
+  }
   const mode = params.get("mode") || "topic"; // topic | daily | mock
   const idx = await HOA.loadIndex();
   const site = idx.site || {};
@@ -228,7 +255,13 @@
       // Flat subjects keep the original autosave key (existing sessions
       // resume unchanged); categorized topics get their own namespace.
       key: `topic:${subject.id}${cat ? ":" + cat.id : ""}:${topic.id}`,
-      canonical: `${siteBase}/quiz?${qs}`,
+      // A seeded landing page canonicalises to ITSELF. For the classic
+      // ?subject=..&topic=.. URL the build's landing path wins when it exists
+      // (topic.landing in data/index.json), so both views consolidate onto the
+      // static page; without one the URL keeps its own canonical, as before.
+      canonical:
+        (SEED && SEED.canonical) ||
+        (topic.landing ? `${siteBase}${topic.landing}` : `${siteBase}/quiz?${qs}`),
       questions,
       defaultSeconds: perQ,
       // Configurable overall timer: file "timeLimit" (sec) wins, else Q × per-Q.
@@ -754,6 +787,14 @@
     showEmpty("No questions available yet.", hint);
     document.title = "No questions yet - House of Aspirants";
     setLd(null); // resolvable-but-empty topic → don't advertise a Quiz
+    if (SEED) {
+      // A seeded landing page must never keep serving the STATIC JSON-LD that
+      // promises questions once its question file has emptied out.
+      document
+        .querySelectorAll('script[type="application/ld+json"]')
+        .forEach((el) => el.remove());
+      HOA.seo({ robots: "noindex, nofollow" });
+    }
     return;
   }
 
@@ -764,16 +805,23 @@
     : `${QUIZ.subjectName || ""}${QUIZ.topicName && QUIZ.topicName !== QUIZ.title ? " · " + QUIZ.topicName : ""}`;
   const metaDescLd =
     `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs with timer, instant results and full answer review - free MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
-  HOA.seo({
-    title: `${QUIZ.title} Quiz - House of Aspirants`,
-    ogTitle: `${QUIZ.title} Quiz - House of Aspirants`,
-    ogDescription: `${QUIZ.subjectName ? QUIZ.subjectName + " · " : ""}${QUIZ.questions.length} MCQs with instant results & answer review.`,
-    description: metaDescLd,
-  });
+  /* A seeded landing page ships its OWN unique <title>/description/canonical
+     in static HTML - never overwrite them with the shared template values. */
+  if (!SEED) {
+    HOA.seo({
+      title: `${QUIZ.title} Quiz - House of Aspirants`,
+      ogTitle: `${QUIZ.title} Quiz - House of Aspirants`,
+      ogDescription: `${QUIZ.subjectName ? QUIZ.subjectName + " · " : ""}${QUIZ.questions.length} MCQs with instant results & answer review.`,
+      description: metaDescLd,
+    });
+  }
 
   /* WebPage + Quiz schema mirrors the RESOLVED, indexable topic exactly.
-     Personal sessions (daily/mock) and empty states were cleared earlier. */
-  if (mode === "topic" && QUIZ.canonical) {
+     Personal sessions (daily/mock) and empty states were cleared earlier.
+     Seeded landing pages carry the same graph as STATIC JSON-LD (built from
+     the identical question file at build time), so runtime emission is
+     skipped to keep exactly one copy on the page. */
+  if (mode === "topic" && QUIZ.canonical && !SEED) {
     /* Google Education Q&A (Quiz / Question / Answer) — built from the SAME
        normalized records the screen renders, so markup cannot drift from the
        quiz. A prompt without a resolvable correct option is skipped rather
