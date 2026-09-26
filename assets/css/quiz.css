@@ -520,3 +520,11 @@
 @media (max-width: 719px) {
   .kb-hint { display: none; }
 }
+
+/* During an attempt the only sticky chrome a phone needs is the quiz topbar
+   (title · timers · submit). Letting the global header scroll away hands its
+   66px back to the question instead of stacking two sticky bars. */
+@media (max-width: 899px) {
+  body[data-page="quiz"] .site-header { position: static; }
+  body[data-page="quiz"] .quiz-topbar { top: 0; }
+}
