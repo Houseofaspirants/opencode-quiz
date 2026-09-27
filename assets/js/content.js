@@ -67,7 +67,10 @@
   const toc = document.querySelector(".doc-toc");
   if (!toc || !("IntersectionObserver" in window)) return;
 
-  const links = Array.from(toc.querySelectorAll('a[href^="#"]'));
+  // English pages use fragment links (#section); the Punjabi edition publishes
+  // under /pa/ with <base href="/">, so its anchors carry the full page URL.
+  // Both spellings resolve through `a.hash`.
+  const links = Array.from(toc.querySelectorAll("a[href]"));
   const targets = links
     .map((a) => document.getElementById(decodeURIComponent(a.hash.slice(1))))
     .filter(Boolean);

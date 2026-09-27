@@ -747,6 +747,14 @@ if site.get("url"):
                     urls.append({"loc": u, "p": "0.6"})
                 else:
                     warn(f"content-manifest: page missing for {f or item.get('title', '?')}")
+            # Generated index pages (archives.html today) - same contract as
+            # hubs: the URL only ships when the file really exists on disk.
+            for page in cm.get("pages", []):
+                u, f = str(page.get("url", "")), str(page.get("file", ""))
+                if u.startswith(base) and os.path.exists(os.path.join(ROOT, f)):
+                    urls.append({"loc": u, "p": "0.7"})
+                else:
+                    warn(f"content-manifest: index page missing for {f or page.get('title', '?')}")
         except Exception as e:
             warn(f"content-manifest.json unreadable: {e}")
     for s in output_subjects:

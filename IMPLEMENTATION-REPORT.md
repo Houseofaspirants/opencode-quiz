@@ -236,3 +236,133 @@ actions 238–384px → at 900–1199px with the wordmark hidden the row needs
    without breaking the sign-in gate.
 5. **Cover images**: `cover_width`/`cover_height` are optional but
    recommended — the builder reserves the declared box either way.
+
+---
+
+# Phase 2 — Content Automation Engine
+
+Markdown stays the single source of truth; everything below is generated from
+it by the same `scripts/build_content.py` run. Nothing is hand-edited: the
+navigation, the content index, the search corpus, the feed and the archive are
+all outputs of one command.
+
+## 11. Content model
+
+| Folder | Prefix | Hub | State |
+|---|---|---|---|
+| `content/notes/` | `note-` | `study-notes.html` | unchanged |
+| `content/current-affairs/` | `ca-` | `current-affairs.html` | **new** |
+| `content/monthly-magazine/` | `magazine-` | `magazine.html` | renamed from `content/magazine/` ( URL unchanged ) |
+| `content/strategy/` | `strategy-` | `strategy.html` | unchanged |
+| `content/live-sessions/` | `session-` | `live-sessions.html` | renamed from `content/sessions/` ( URL unchanged ) |
+| `content/recruitment/` | `recruit-` | `recruitment.html` | unchanged |
+| `content/blogs/` | `blog-` | `blogs.html` | **new** |
+| `content/news/` | `news-` | `news.html` | **new** |
+| `content/announcements/` | `announce-` | `announcements.html` | **new** |
+| `content/pdfs/` | — | `pdfs.html` | unchanged (registry, no page) |
+
+**Front matter (all article collections):** `slug`, `language`, `author`,
+`reviewedBy`, `category`, `subject`/`subjects`, `exam`/`exams`, `tags`,
+`difficulty`, `readingTime` (editorial override of the 200-wpm estimate),
+`coverImage` (alias of `cover`), `pdf`, `quiz`, `featured`, `draft`.
+
+* `draft: true` → validated, but published **nowhere** (page, manifest, sitemap,
+  feed, search index, archive, homepage).
+* `language` must match the file variant (`en` for `.md`, `pa` for `.pa.md`).
+* `featured: true` renders a badge; popularity stays measured, never assumed.
+
+## 12. Language URLs — English at the root, Punjabi under `/pa/`
+
+| Edition | URL | Page |
+|---|---|---|
+| English | `houseofaspirants.in/<prefix>-<slug>` | `<prefix>-<slug>.html` |
+| Punjabi | `houseofaspirants.in/pa/<prefix>-<slug>` | `pa/<prefix>-<slug>.html` |
+
+* Punjabi pages carry `<base href="/">`, so the shared header, drawer and
+  footer (which link relatively) keep resolving from the site root — no chrome
+  markup was rewritten for this.
+* In-page anchors on `/pa/` pages are emitted as `/pa/<file>#section`; the
+  skip-to-content link is corrected at runtime when a `<base>` is present.
+* Reciprocal `hreflang` pair in `<head>` **and** a language badge on the body;
+  `seo_check.py` fails if either side stops cross-linking.
+* Canonical stays extensionless on `https://houseofaspirants.in` in both
+  editions, so English URLs are untouched (zero SEO churn).
+
+## 13. Generated outputs (one build, no manual HTML)
+
+| Output | Source of truth | Notes |
+|---|---|---|
+| `data/content-manifest.json` (Content Index) | `HUBS` + front matter | hubs, index pages (`pages`), every document with language pair, category, author, reading time |
+| `data/search-index.json` | documents + study guides + exam pages | title, description, body (1200 chars), tags, subjects, exams, category |
+| `feed.xml` | newest 20 documents | RSS 2.0, `pubDate` from `published` only → byte-identical on rebuild |
+| `archives.html` | manifest | latest, popular (only from `data/popularity.json`), by subject, by exam, by month |
+| nav blocks in `assets/js/core.js` | `HUBS` / `NAV_ENTRY` | Study menu + drawer Study group + footer Study column, between `<!-- HOA-NAV:* -->` markers |
+| homepage feed blocks, sitemap, `/pa/` cleanup | manifest | existing behaviour, extended to `pa/` |
+
+`data/popularity.json` ships **empty**: "Popular posts" renders only when real
+view counts are pasted in, so the section can never claim a number that does
+not exist.
+
+## 14. Search
+
+`Ctrl+K` / `/` / the 🔍 button opens the existing overlay. It now merges:
+
+1. the flat index built from `data/index.json` (subjects, categories, topics),
+2. the lazily fetched `data/search-index.json` (documents, guides, exams).
+
+Scoring is token-based (every word must match) and weighted: title 6 →
+tags/subjects/exams/category 4 → description 2 → body 1. The corpus is fetched
+on **first open only** — page load never waits for it.
+
+## 15. Learning path (automatic internal links)
+
+Every document renders a `Where this page fits` chain:
+current page → related quiz → *Previous Year Questions (reserved)* →
+*Expected MCQs (reserved)* → current affairs → magazine → strategy. Steps link
+only what exists (newest real page, else the hub); the two reserved steps are
+named but never linked, so the path stays honest until verified data exists.
+
+## 16. Files created / modified
+
+**Created:** `content/{current-affairs,blogs,news,announcements}/` (+ READMEs),
+`archives.html`, `feed.xml`, `data/search-index.json`, `data/popularity.json`,
+`current-affairs.html`, `blogs.html`, `news.html`, `announcements.html`.
+
+**Modified:** `scripts/build_content.py` (HUBS, front-matter contract, `/pa/`
+URLs, nav generation, chain, search/feed/archive writers), `scripts/seo_check.py`
+(pages + language pairs + search + RSS + popularity gates), `scripts/rich_results_check.py`
+(now audits `pa/*.html`), `scripts/build_index.py` + `scripts/build-index.mjs`
+(manifest `pages` → sitemap, parity-mirrored), `assets/js/core.js` (nav markers,
+full-site search, skip-link fix, i18n), `assets/js/content.js` (anchor-aware
+TOC), `assets/css/style.css` (`.doc-chain`, `.arch-*`), `sw.js` (`hoa-v36` +
+new hubs), `README.md` §24, `content/README.md`.
+
+**Renamed (URLs unchanged):** `content/magazine` → `content/monthly-magazine`,
+`content/sessions` → `content/live-sessions`.
+
+## 17. Verification
+
+* Every pipeline stage exercised with temporary content in **all 10**
+  collections (EN + PA), then deleted — stale cleanup removed all 10 pages
+  including `pa/`, leaving honest empty states.
+* Measured in the browser: archives lists every document once per axis; the
+  `/pa/` page resolves chrome, TOC, chain and language switch correctly;
+  search returns the exam page → study guide → document for
+  "punjab police constable" and both language editions for "revenue act";
+  Study menu, drawer and footer show all 11 hub links; header fit unchanged
+  (nav 547px inside a 1000px header — no new top-level items).
+* Gates: `build_content` → `build_index` → `seo_check` **PASS** (content: 10
+  hubs in sync, search/RSS/archives wired), `rich_results_check` **PASS** with
+  `pa/*.html` included in the audit.
+
+## 18. Known limitations (Phase 2)
+
+1. **Lighthouse** still unmeasurable locally; Phase 2 adds no render-blocking
+   asset (search corpus is fetched on first open only, CSS additions are small).
+2. **Node parity** (`build-index.mjs`) runs on push — the `pages` loop was
+   written byte-for-byte in both builders, but it has never executed locally.
+3. **`/pa/` clean URLs** depend on the host's extensionless rewrite, exactly
+   like the existing English canonicals; internal links keep `.html`, which
+   works with or without it.
+4. **Popular posts** needs a real analytics export before it renders anything.
+5. **Translation parity** gate still pending (known EN/PA defect noted above).

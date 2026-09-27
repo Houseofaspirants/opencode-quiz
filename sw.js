@@ -9,7 +9,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v35";
+const VERSION = "hoa-v36";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -37,10 +37,15 @@ const SHELL_FILES = [
   "./reasoning-quant-preparation.html",
   /* content hubs (Markdown-built, static) */
   "./study-notes.html",
+  "./current-affairs.html",
   "./magazine.html",
   "./strategy.html",
   "./live-sessions.html",
   "./recruitment.html",
+  "./blogs.html",
+  "./news.html",
+  "./announcements.html",
+  "./archives.html",
   "./pdfs.html",
   "./assets/css/style.css",
   "./assets/css/quiz.css",

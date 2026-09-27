@@ -659,6 +659,17 @@ if (site.url) {
           warn(`content-manifest: page missing for ${f || item.title || "?"}`);
         }
       }
+      // Generated index pages (archives.html today) - same contract as hubs:
+      // the URL only ships when the file really exists on disk.
+      for (const page of cm.pages || []) {
+        const u = String(page.url || "");
+        const f = String(page.file || "");
+        if (u.startsWith(base) && fs.existsSync(path.join(ROOT, f))) {
+          urls.push({ loc: u, p: "0.7" });
+        } else {
+          warn(`content-manifest: index page missing for ${f || page.title || "?"}`);
+        }
+      }
     }
   } catch (e) {
     warn(`content-manifest.json unreadable: ${e.message}`);

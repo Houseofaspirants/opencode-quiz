@@ -12,6 +12,7 @@ import html as html_mod
 import json
 import re
 import sys
+import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 from html.parser import HTMLParser
@@ -95,7 +96,8 @@ else:
         _cm0 = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8"))
         content_hubs = [h for h in _cm0.get("hubs", []) if h.get("file")]
         content_pages = [h["file"] for h in content_hubs] + \
-            [p["file"] for p in _cm0.get("items", []) if p.get("file")]
+            [p["file"] for p in _cm0.get("items", []) if p.get("file")] + \
+            [p["file"] for p in _cm0.get("pages", []) if p.get("file")]
         for _f in content_pages:
             if _f not in PAGES:
                 PAGES.append(_f)
@@ -640,6 +642,154 @@ if CONTENT_MANIFEST.exists():
         notes.append(f"content: {len(hubs_cm)} hubs + {len(items_cm)} document "
                      f"page(s) in sync with manifest, sitemap and chrome")
 
+        # --- generated index pages (archives.html) --------------------------
+        for pg in cm.get("pages", []):
+            f = pg.get("file", "")
+            if not f or not (ROOT / f).exists():
+                errors.append(f"content index page missing on disk: "
+                              f"{f or pg.get('title', '?')}")
+                continue
+            src_pg = (ROOT / f).read_text(encoding="utf-8")
+            if GEN_MARK not in src_pg:
+                errors.append(f"{f}: generated page edited by hand - rerun "
+                              f"scripts/build_content.py")
+            if f'href="{f}"' not in core:
+                errors.append(f"chrome missing content index link {f}")
+            want_pg = f"{DOMAIN}/{f[:-5]}"
+            if pg.get("url") != want_pg:
+                errors.append(f"{f}: manifest url {pg.get('url')!r} != {want_pg!r}")
+            if want_pg not in locs:
+                errors.append(f"sitemap: missing content index page {want_pg}")
+            if canonical(src_pg) != want_pg:
+                errors.append(f"{f}: canonical {canonical(src_pg)!r} != {want_pg!r}")
+            for p in items_cm:
+                if f'href="{p.get("file", "")}"' not in src_pg:
+                    errors.append(f"{f}: does not list document {p.get('file')}")
+                    break
+
+        # --- language pairs: /slug <-> /pa/slug -----------------------------
+        n_pairs = 0
+        for p in items_cm:
+            alt = p.get("alt")
+            if not alt or p.get("lang") != "en":
+                continue                # one pass per pair, from the EN side
+            n_pairs += 1
+            if p.get("file", "").startswith("pa/"):
+                errors.append(f'{p["file"]}: English edition must publish at '
+                              f'the site root')
+            if alt.get("lang") != "pa" or not alt.get("file", "").startswith("pa/"):
+                errors.append(f'{p["file"]}: Punjabi edition must publish under '
+                              f'/pa/ (got {alt.get("file")!r})')
+            for side, other in ((p, alt), (alt, p)):
+                if not (ROOT / side["file"]).exists():
+                    errors.append(f"language pair: missing {side['file']}")
+                    continue
+                src_p = (ROOT / side["file"]).read_text(encoding="utf-8")
+                if not any(f'href="{m}{other["file"]}"' in src_p
+                           for m in ("", "/")):
+                    errors.append(f'{side["file"]}: no link to its '
+                                  f'{other["lang"]} edition {other["file"]}')
+                want_href = (f'hreflang="{other["lang"]}"' in src_p)
+                if not want_href:
+                    errors.append(f'{side["file"]}: missing hreflang='
+                                  f'{other["lang"]} alternate')
+            pa_src = (ROOT / alt["file"]).read_text(encoding="utf-8") \
+                if (ROOT / alt["file"]).exists() else ""
+            if pa_src and '<base href="/">' not in pa_src:
+                errors.append(f'{alt["file"]}: Punjabi pages need '
+                              f'<base href="/"> so shared chrome resolves from '
+                              f'the site root')
+        notes.append(f"content: {n_pairs} language pair(s) cross-linked "
+                     f"(English at the root, Punjabi under /pa/)")
+        if not items_cm:
+            notes.append("content: no documents published yet - search corpus, "
+                         "RSS feed and archives are all empty but valid")
+
+        # --- search corpus (full-site search) --------------------------------
+        si_path = ROOT / "data" / "search-index.json"
+        if not si_path.exists():
+            errors.append("data/search-index.json missing - run scripts/build_content.py")
+        else:
+            try:
+                si = json.loads(si_path.read_text(encoding="utf-8"))
+                rows = si.get("items", [])
+                guide_urls = {"/" + str(g.get("url", ""))
+                              for g in (registry or []) if g.get("url")}
+                try:
+                    exam_urls = {f"/exam-{e.get('id')}.html" for e in json.loads(
+                        (ROOT / "data" / "exams.json").read_text(encoding="utf-8")
+                    ).get("exams", []) if e.get("id")}
+                except Exception:
+                    exam_urls = set()
+                want_urls = ({"/" + str(p.get("file", "")) for p in items_cm}
+                             | guide_urls | exam_urls)
+                got_urls = {str(r.get("u", "")) for r in rows}
+                for u in sorted(got_urls - want_urls):
+                    errors.append(f"search index: {u} is not a published page")
+                for u in sorted(want_urls - got_urls):
+                    errors.append(f"search index: missing {u}")
+                for row in rows:
+                    target = str(row.get("u", "")).lstrip("/")
+                    if not (ROOT / target).exists():
+                        errors.append(f"search index: dead link {row.get('u')!r}")
+                    for key in ("t", "d", "k", "l"):
+                        if not row.get(key):
+                            errors.append(f"search index: {row.get('u')} misses {key!r}")
+                if int(si.get("count", -1)) != len(rows):
+                    errors.append("search index: count field != number of items")
+                notes.append(f"search: {len(rows)} document(s) indexed across "
+                             f"title, description, body, tags, subjects and exams")
+            except json.JSONDecodeError as e:
+                errors.append(f"data/search-index.json: invalid JSON: {e}")
+
+        # --- popularity seed + RSS feed ---------------------------------------
+        pop_path = ROOT / "data" / "popularity.json"
+        if not pop_path.exists():
+            errors.append("data/popularity.json missing (ships empty - Popular "
+                          "posts stays off until real numbers exist)")
+        else:
+            try:
+                pop = json.loads(pop_path.read_text(encoding="utf-8"))
+                if not isinstance(pop.get("views"), dict):
+                    errors.append("data/popularity.json: 'views' must be an object")
+            except json.JSONDecodeError as e:
+                errors.append(f"data/popularity.json: invalid JSON: {e}")
+        feed_path = ROOT / "feed.xml"
+        if not feed_path.exists():
+            errors.append("feed.xml missing - run scripts/build_content.py")
+        else:
+            feed_src = feed_path.read_text(encoding="utf-8")
+            try:
+                tree = ET.fromstring(feed_src)
+            except ET.ParseError as e:
+                errors.append(f"feed.xml: invalid XML: {e}")
+                tree = None
+            if tree is not None:
+                chan = tree.find("channel")
+                if chan is None or chan.findtext("link") != f"{DOMAIN}/":
+                    errors.append("feed.xml: channel link must be the site root")
+                feed_links = ([i.findtext("link") for i in chan.findall("item")]
+                              if chan is not None else [])
+                if len(feed_links) != len(set(feed_links)):
+                    errors.append("feed.xml: duplicate item links")
+                item_urls = {str(p.get("url", "")) for p in items_cm}
+                for link in feed_links:
+                    if link not in item_urls:
+                        errors.append(f"feed.xml: item points at an unpublished "
+                                      f"page {link}")
+                if items_cm:
+                    newest_url = max(items_cm,
+                                     key=lambda r: (str(r.get("published", "")),
+                                                    str(r.get("title", "")))
+                                     ).get("url", "")
+                    if newest_url not in feed_links:
+                        errors.append("feed.xml: newest published document is "
+                                      f"missing from the feed ({newest_url})")
+                if not items_cm and "<item>" in feed_src:
+                    errors.append("feed.xml: no documents published but the feed "
+                                  "carries items")
+                notes.append(f"rss: {len(feed_links)} item(s) in feed.xml")
+
         # --- homepage feed blocks mirror exactly what the build produced ---
         home_src = (ROOT / "index.html").read_text(encoding="utf-8")
 
@@ -683,7 +833,7 @@ if CONTENT_MANIFEST.exists():
         check_feed("sessions", bool(upcoming),
                    (newest(upcoming) or {}).get("file"))
 
-        # current-affairs feed = newest CA notes + newest available CA sets
+        # current-affairs feed = newest CA documents + newest available CA sets
         try:
             idx_feed = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
             ca_subj = next((s for s in idx_feed.get("subjects", [])
@@ -691,10 +841,11 @@ if CONTENT_MANIFEST.exists():
             ca_topics = [t for t in ca_subj.get("topics", []) if t.get("available")]
         except Exception:
             ca_topics = []
-        ca_notes = [p for p in by_coll.get("notes", [])
-                    if "current-affairs" in (p.get("subjects") or [])]
-        check_feed("current-affairs", bool(ca_topics) or bool(ca_notes),
-                   (newest(ca_notes) or {}).get("file") if ca_notes else None)
+        ca_items = (by_coll.get("current-affairs", []) +
+                    [p for p in by_coll.get("notes", [])
+                     if "current-affairs" in (p.get("subjects") or [])])
+        check_feed("current-affairs", bool(ca_topics) or bool(ca_items),
+                   (newest(ca_items) or {}).get("file") if ca_items else None)
         if ca_topics:
             blk = feed_block("current-affairs") or ""
             newest_ca = max(ca_topics, key=lambda t: t.get("updatedAt") or 0)

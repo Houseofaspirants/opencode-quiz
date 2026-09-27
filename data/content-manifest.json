@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "domain": "https://houseofaspirants.in",
   "hubs": [
     {
@@ -8,6 +8,14 @@
       "url": "https://houseofaspirants.in/study-notes",
       "title": "Punjab Exam Study Notes | House of Aspirants",
       "description": "Free subject-wise study notes for Punjab Police, PSSSB and PPSC aspirants - reading time, difficulty, exam tags, table of contents and related quizzes.",
+      "count": 0
+    },
+    {
+      "collection": "current-affairs",
+      "file": "current-affairs.html",
+      "url": "https://houseofaspirants.in/current-affairs",
+      "title": "Punjab Current Affairs | House of Aspirants",
+      "description": "Current affairs for Punjab exam aspirants - explained in Punjabi and English, linked to the quiz set that tests them and to the monthly magazine issue.",
       "count": 0
     },
     {
@@ -43,6 +51,30 @@
       "count": 0
     },
     {
+      "collection": "blogs",
+      "file": "blogs.html",
+      "url": "https://houseofaspirants.in/blogs",
+      "title": "Preparation Blog | House of Aspirants",
+      "description": "Preparation blog for Punjab aspirants - study habits, book notes, mock test debriefs and honest attempts, written by the House of Aspirants editorial team.",
+      "count": 0
+    },
+    {
+      "collection": "news",
+      "file": "news.html",
+      "url": "https://houseofaspirants.in/news",
+      "title": "Exam News & Updates | House of Aspirants",
+      "description": "Exam news for Punjab aspirants - application dates, exam pattern changes and policy announcements, each restated only from the recruiting body's notification.",
+      "count": 0
+    },
+    {
+      "collection": "announcements",
+      "file": "announcements.html",
+      "url": "https://houseofaspirants.in/announcements",
+      "title": "Site Announcements | House of Aspirants",
+      "description": "Announcements from House of Aspirants - new sections, schedule changes, editorial updates and platform news, published by the team that runs this site.",
+      "count": 0
+    },
+    {
       "collection": "pdfs",
       "file": "pdfs.html",
       "url": "https://houseofaspirants.in/pdfs",
@@ -51,14 +83,26 @@
       "count": 0
     }
   ],
+  "pages": [
+    {
+      "file": "archives.html",
+      "url": "https://houseofaspirants.in/archives",
+      "title": "Punjab Exam Study Archive | House of Aspirants",
+      "description": "Every study note, current affairs article, magazine issue, strategy guide, live session and recruitment record here - newest first, by subject, exam and month."
+    }
+  ],
   "items": [],
   "pdfs": [],
   "counts": {
     "notes": 0,
+    "current-affairs": 0,
     "magazine": 0,
     "strategy": 0,
     "sessions": 0,
     "recruitment": 0,
+    "blogs": 0,
+    "news": 0,
+    "announcements": 0,
     "pdfs": 0
   },
   "generatedBy": "scripts/build_content.py"

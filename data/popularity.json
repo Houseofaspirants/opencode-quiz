@@ -1,0 +1,4 @@
+{
+  "$note": "Measured readership per page, url (extensionless, absolute or root-relative) -> views in the current reporting window. scripts/build_content.py renders the 'Popular posts' section on archives.html from this file only - it ships empty, so nothing popular is ever claimed without a number that can be checked. Fill it from analytics export (for example a GA4 page-view report) and regenerate.",
+  "views": {}
+}

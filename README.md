@@ -807,14 +807,24 @@ bash scripts/ci.sh                        # content → manifest → landing →
 | Folder | Becomes | Notes |
 |---|---|---|
 | `content/notes/*.md` | `note-<slug>.html` + cards on `study-notes.html` | + sibling `<slug>.pa.md` for the Punjabi edition |
-| `content/magazine/*.md` | `magazine-<slug>.html` + cards on `magazine.html` | cover, PDF, highlights, linked quiz |
+| `content/current-affairs/*.md` | `ca-<slug>.html` + cards on `current-affairs.html` | explained CA, linked to the CA quiz set |
+| `content/monthly-magazine/*.md` | `magazine-<slug>.html` + cards on `magazine.html` | cover, PDF, highlights, linked quiz |
 | `content/strategy/*.md` | `strategy-<slug>.html` + cards on `strategy.html` | study plans, revision, mistakes, motivation |
-| `content/sessions/*.md` | `session-<slug>.html` + cards on `live-sessions.html` | emits `Event` schema **only** with `date` + `start_time` |
+| `content/live-sessions/*.md` | `session-<slug>.html` + cards on `live-sessions.html` | emits `Event` schema **only** with `date` + `start_time` |
 | `content/recruitment/*.md` | `recruit-<slug>.html` + cards on `recruitment.html` | official source required |
+| `content/blogs/*.md` | `blog-<slug>.html` + cards on `blogs.html` | the reflective side of preparation |
+| `content/news/*.md` | `news-<slug>.html` + cards on `news.html` | restated only from the official notification |
+| `content/announcements/*.md` | `announce-<slug>.html` + cards on `announcements.html` | what changed on this platform, and when |
 | `content/pdfs/*.md` | record on `pdfs.html` (no page — the PDF *is* the artefact) | `file:` must exist |
 
 Each folder has its own `README.md` with the front-matter schema for that
 collection; `content/README.md` holds the hard rules.
+
+**Language URLs:** English publishes at the site root
+(`houseofaspirants.in/<prefix>-<slug>`), Punjabi under `/pa/`
+(`houseofaspirants.in/pa/<prefix>-<slug>`). The pair ships reciprocal
+`hreflang`, a language badge and a language switch — neither language is a
+hidden fallback.
 
 ### The rules the builder enforces
 
@@ -829,14 +839,37 @@ collection; `content/README.md` holds the hard rules.
   writer does that. Nothing is auto-generated.
 * Punjabi is opt-in per file (`<slug>.pa.md`); an English page never links to a
   Punjabi page that does not exist.
+* **Drafts are validated but never published** — `draft: true` keeps a document
+  out of the pages, sitemap, RSS, search index and archive until it is ready.
 
 ### What the build wires up automatically
 
 sitemap entry (0.6 priority) · `Article`/`Event`/`CollectionPage` JSON-LD ·
-BreadcrumbList · Open Graph + Twitter cards · reading time, difficulty, exam
-and subject badges · table of contents + scrollspy · related notes and related
-quizzes · previous/next · share row · homepage feed blocks (hidden until the
-first file exists) · stale-page cleanup.
+BreadcrumbList · Open Graph + Twitter cards · reciprocal `hreflang` · reading
+time, difficulty, exam and subject badges · table of contents + scrollspy ·
+related notes and related quizzes · previous/next · share row · homepage feed
+blocks (hidden until the first file exists) · stale-page cleanup (root **and**
+`/pa/`).
+
+### What Phase 2 added to the same run
+
+* **Navigation is data, not markup** — the Study menu, drawer Study group and
+  footer Study column are rewritten between `<!-- HOA-NAV:* -->` markers in
+  `assets/js/core.js` from the `HUBS` table, so a new folder reaches the header,
+  drawer, footer, sitemap and search index in one build.
+* **Content Index** — `data/content-manifest.json` (hubs, index pages, every
+  document with its language pair, category, author and reading time).
+* **Full-site search** — `data/search-index.json` over title, description,
+  body, tags, subjects, exams and categories; fetched lazily when the search
+  overlay first opens, so it costs nothing on page load.
+* **RSS** — `feed.xml` (RSS 2.0, newest 20, dates derived from `published`
+  only, so rebuilds are byte-identical).
+* **Archive** — `archives.html`: latest posts, popular posts (only when
+  `data/popularity.json` holds real counts) and every document grouped by
+  subject, exam and month.
+* **Learning path** — every document links the next real step (note → related
+  quiz → current affairs → magazine → strategy); Previous Year Questions and
+  Expected MCQs render as dimmed *reserved* steps until verified data exists.
 
 **Reserved, inactive until real data exists:** Previous Year Questions,
 Expected Questions and Mock paper pages. The types and templates are ready;

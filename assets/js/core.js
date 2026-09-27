@@ -200,7 +200,11 @@ const HOA = (() => {
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
-    "Search subjects and topics…": "ਵਿਸ਼ੇ ਅਤੇ ਟੌਪਿਕ ਖੋਜੋ…",
+    "Blog": "ਬਲੌਗ",
+    "News": "ਖ਼ਬਰਾਂ",
+    "Announcements": "ਘੋਸ਼ਣਾਵਾਂ",
+    "Archives": "ਆਰਕਾਈਵ",
+    "Search notes, quizzes, subjects…": "ਨੋਟ, ਕੁਇਜ਼, ਵਿਸ਼ੇ ਖੋਜੋ…",
 
     /* --- footer ---------------------------------------------------------- */
     "Company": "ਕੰਪਨੀ",
@@ -362,7 +366,15 @@ const HOA = (() => {
 
   function renderChrome() {
     const head = document.querySelector("[data-site-header]");
-    if (head) head.innerHTML = HEADER_HTML();
+    if (head) {
+      head.innerHTML = HEADER_HTML();
+      /* Punjabi pages under /pa/ carry <base href="/"> so this shared chrome
+         resolves from the site root; an in-page anchor must name its page. */
+      const skip = head.querySelector(".skip-link");
+      if (skip && document.querySelector("base")) {
+        skip.setAttribute("href", `${location.pathname}#main`);
+      }
+    }
     const foot = document.querySelector("[data-site-footer]");
     if (foot) foot.innerHTML = FOOTER_HTML();
   }
@@ -399,13 +411,19 @@ const HOA = (() => {
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
             <div class="nav-drop-menu">
+              <!-- HOA-NAV:menu -->
               <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
-              <a href="subject.html?subject=current-affairs"><span data-i18n="Current Affairs">Current Affairs</span></a>
+              <a data-nav="ca" href="current-affairs.html"><span data-i18n="Current Affairs">Current Affairs</span></a>
               <a data-nav="magazine" href="magazine.html"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
               <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
               <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
               <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
               <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
+              <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
+              <a data-nav="news" href="news.html"><span data-i18n="News">News</span></a>
+              <a data-nav="announcements" href="announcements.html"><span data-i18n="Announcements">Announcements</span></a>
+              <a data-nav="archives" href="archives.html"><span data-i18n="Archives">Archives</span></a>
+              <!-- /HOA-NAV:menu -->
             </div>
           </li>
           <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Quiz">Daily Quiz</span></a></li>
@@ -473,13 +491,19 @@ const HOA = (() => {
     <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> <span data-i18n="Punjab GK">Punjab GK</span></a>
 
     <p class="mm-group" data-i18n="Study">Study</p>
+    <!-- HOA-NAV:drawer -->
     <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
-    <a class="mm-link" href="subject.html?subject=current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
+    <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
     <a class="mm-link" data-nav="magazine" href="magazine.html"><span class="mm-emoji">📖</span> <span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
     <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
     <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
     <a class="mm-link" data-nav="recruitment" href="recruitment.html"><span class="mm-emoji">📋</span> <span data-i18n="Recruitment">Recruitment</span></a>
     <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
+    <a class="mm-link" data-nav="blogs" href="blogs.html"><span class="mm-emoji">✍️</span> <span data-i18n="Blog">Blog</span></a>
+    <a class="mm-link" data-nav="news" href="news.html"><span class="mm-emoji">📰</span> <span data-i18n="News">News</span></a>
+    <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">📣</span> <span data-i18n="Announcements">Announcements</span></a>
+    <a class="mm-link" data-nav="archives" href="archives.html"><span class="mm-emoji">🗂️</span> <span data-i18n="Archives">Archives</span></a>
+    <!-- /HOA-NAV:drawer -->
 
     <p class="mm-group" data-i18n="Practice">Practice</p>
     <a class="mm-link" data-nav="exams" href="punjab-exams.html"><span class="mm-emoji">🏛️</span> <span data-i18n="Punjab Exams">Punjab Exams</span></a>
@@ -503,9 +527,9 @@ const HOA = (() => {
     <div class="search-panel">
       <div class="search-box">
         <span aria-hidden="true">🔍</span>
-        <input id="searchInput" type="search" placeholder="Search subjects and topics…"
-               data-i18n-ph="Search subjects and topics…"
-               autocomplete="off" aria-label="Search subjects and topics">
+        <input id="searchInput" type="search" placeholder="Search notes, quizzes, subjects…"
+               data-i18n-ph="Search notes, quizzes, subjects…"
+               autocomplete="off" aria-label="Search notes, quizzes and subjects">
         <span class="kbd">Ctrl K</span>
         <button class="icon-btn" data-action="close-search" aria-label="Close search">✕</button>
       </div>
@@ -574,14 +598,20 @@ const HOA = (() => {
 
         <div class="footer-col">
           <h2 data-i18n="Study">Study</h2>
+          <!-- HOA-NAV:footer -->
           <a href="study-notes.html" data-i18n="Study Notes">Study Notes</a>
-          <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
-          <a href="subject.html?subject=current-affairs" data-i18n="Current Affairs">Current Affairs</a>
+          <a href="current-affairs.html" data-i18n="Current Affairs">Current Affairs</a>
           <a href="magazine.html" data-i18n="Monthly Magazine">Monthly Magazine</a>
           <a href="strategy.html" data-i18n="Preparation Strategy">Preparation Strategy</a>
           <a href="live-sessions.html" data-i18n="Live Sessions">Live Sessions</a>
           <a href="recruitment.html" data-i18n="Recruitment">Recruitment</a>
           <a href="pdfs.html" data-i18n="Free PDFs">Free PDFs</a>
+          <a href="blogs.html" data-i18n="Blog">Blog</a>
+          <a href="news.html" data-i18n="News">News</a>
+          <a href="announcements.html" data-i18n="Announcements">Announcements</a>
+          <a href="archives.html" data-i18n="Archives">Archives</a>
+          <!-- /HOA-NAV:footer -->
+          <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
         </div>
 
         <div class="footer-col">
@@ -792,22 +822,93 @@ const HOA = (() => {
         );
       });
 
-      const render = (q) => {
+      /* Full-site corpus: every published document and study guide with its
+         title, description, body, tags, subjects, exams and category. Fetched
+         once, lazily, the first time search opens - page load never waits for
+         it (Lighthouse stays untouched). */
+      let corpus = null;
+      const TYPE_LABEL = {
+        notes: "Study note", "current-affairs": "Current affairs",
+        magazine: "Magazine issue", strategy: "Strategy",
+        sessions: "Live session", recruitment: "Recruitment", blogs: "Blog",
+        news: "News", announcements: "Announcement", guide: "Study guide",
+        exam: "Exam",
+      };
+      const TYPE_ICON = {
+        notes: "📝", "current-affairs": "🗞️", magazine: "📖", strategy: "🎯",
+        sessions: "🎥", recruitment: "📋", blogs: "✍️", news: "📰",
+        announcements: "📣", guide: "📚", exam: "🎓",
+      };
+      const loadDocs = () => (corpus ||= fetch("data/search-index.json")
+        .then((r) => (r.ok ? r.json() : { items: [] }))
+        .then((d) => (d.items || []).map((row) => {
+          const subs = (row.s || []).join(" · ");
+          const tags = [(row.g || []).join(" "), subs,
+                        (row.e || []).join(" "), row.c || ""].join(" ");
+          return {
+            href: String(row.u || "").replace(/^\//, ""),
+            label: row.t || "",
+            lang: row.l || "en",
+            icon: TYPE_ICON[row.k] || "📄",
+            sub: [TYPE_LABEL[row.k] || "Document", subs].filter(Boolean)
+              .join(" · "),
+            hay: { title: String(row.t || "").toLowerCase(),
+                   fields: tags.toLowerCase(),
+                   desc: String(row.d || "").toLowerCase(),
+                   body: String(row.b || "").toLowerCase() },
+          };
+        }))
+        .catch(() => []));
+
+      let seq = 0;
+      const render = async (q) => {
+        const id = ++seq;
         const term = q.trim().toLowerCase();
         if (!term) {
-          results.innerHTML = `<p class="muted text-sm center">Type a subject or topic name…</p>`;
+          results.innerHTML = `<p class="muted text-sm center">Type a subject, topic or article name…</p>`;
           return;
         }
-        const hits = flat.filter((f) => f.label.toLowerCase().includes(term)).slice(0, 12);
-        results.innerHTML = hits.length
-          ? hits.map((h) => `
+        const docs = await loadDocs();
+        if (id !== seq) return;                 // a newer keystroke won
+        const toks = term.split(/\s+/).filter(Boolean);
+        /* Every word must appear somewhere in the document - title, tags,
+           subjects, exams, category, description or body - and each field is
+           weighted, so a title hit outranks a hit buried in the body. */
+        const docHits = docs
+          .map((d) => {
+            let s = 0;
+            for (const tk of toks) {
+              let t = 0;
+              if (d.hay.title.includes(tk)) t = 6;
+              else if (d.hay.fields.includes(tk)) t = 4;
+              else if (d.hay.desc.includes(tk)) t = 2;
+              else if (d.hay.body.includes(tk)) t = 1;
+              if (!t) return null;
+              s += t;
+            }
+            return { d, s };
+          })
+          .filter(Boolean)
+          .sort((a, b) => b.s - a.s || (a.d.label < b.d.label ? -1 : 1))
+          .slice(0, 8).map((x) => x.d);
+        const flatHits = flat.filter((f) => {
+          const hay = f.label.toLowerCase();
+          return toks.every((tk) => hay.includes(tk));
+        }).slice(0, 6);
+        const rows = flatHits.map((h) => `
             <a class="quiz-card card" href="${h.href}">
               <span class="qc-icon">${h.icon}</span>
               <span><h3>${esc(h.label)}</h3>
               <span class="qc-sub">${esc(h.sub)}${h.type === "topic" ? ` · ${h.count ?? 0} Q` : ""}</span></span>
               <span class="qc-go">→</span>
-            </a>`).join("")
-          : `<div class="empty-state"><div class="es-icon">🔎</div>
+            </a>`).join("") + docHits.map((h) => `
+            <a class="quiz-card card" href="${esc(h.href)}" lang="${esc(h.lang)}">
+              <span class="qc-icon" aria-hidden="true">${h.icon}</span>
+              <span><h3>${esc(h.label)}</h3>
+              <span class="qc-sub">${esc(h.sub)}</span></span>
+              <span class="qc-go">→</span>
+            </a>`).join("");
+        results.innerHTML = rows || `<div class="empty-state"><div class="es-icon">🔎</div>
              <h3>No match</h3><p>Nothing found for “${esc(q)}”. Try another keyword.</p></div>`;
       };
       render("");

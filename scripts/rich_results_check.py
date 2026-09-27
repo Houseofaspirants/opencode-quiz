@@ -199,7 +199,11 @@ def check(doc):
 
 def load_static():
     docs = []
-    for path in sorted(ROOT.glob("*.html")):
+    # Root pages plus the Punjabi editions under /pa/ (same contract, so the
+    # audit must see them too - a schema defect there is still a defect).
+    paths = sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("pa/*.html"))
+    for path in paths:
+        label = str(path.relative_to(ROOT))
         src = path.read_text(encoding="utf-8")
         blocks = [b for b in re.findall(
             r'<script type="application/ld\+json"(?: id="[^"]*")?>(.*?)</script>',
@@ -209,13 +213,13 @@ def load_static():
             try:
                 d = json.loads(b)
             except json.JSONDecodeError as e:
-                docs.append((path.name, {"__error__": str(e)}))
+                docs.append((label, {"__error__": str(e)}))
                 merged = None
                 break
             merged["@graph"].extend(d.get("@graph") or
                                     [k for k in [d] if k.get("@type")])
         if merged:
-            docs.append((path.name, merged))
+            docs.append((label, merged))
     return docs
 
 
