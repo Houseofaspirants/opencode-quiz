@@ -150,6 +150,193 @@ const HOA = (() => {
     });
   }
 
+  /* ========================================================== 3c. LANGUAGE ==
+   * PUNJABI FIRST. ENGLISH ALWAYS AVAILABLE.
+   *
+   * The interface defaults to Punjabi; one tap flips every label back to
+   * English. The rule that keeps this safe for SEO, for the audit gate and for
+   * screen readers:
+   *
+   *   templates stay ENGLISH  ->  the source Google reads, the keyword-bearing
+   *                               copy and the seo_check markers are untouched
+   *   [data-i18n] holds the ENGLISH source string as its VALUE, and the
+   *   dictionary below maps that string to Punjabi
+   *
+   * So a node is translated by swapping its text after render, and the English
+   * original is never lost - it is the key. Nodes with element children are
+   * skipped (swapping text would destroy nested markup), and every node we do
+   * translate is marked lang="pa" so assistive tech speaks it correctly while
+   * <html lang="en"> stays honest about the page's primary content.
+   * ========================================================================= */
+  const LANG_KEY = "lang";
+
+  const I18N = {
+    /* --- header / drawer navigation ------------------------------------- */
+    "Home": "ਹੋਮ",
+    "Subjects": "ਵਿਸ਼ੇ",
+    "Daily Quiz": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼",
+    "Mock Tests": "ਮੌਕ ਟੈਸਟ",
+    "Bookmarks": "ਬੁੱਕਮਾਰਕ",
+    "About": "ਬਾਰੇ",
+    "Contact": "ਸੰਪਰਕ",
+    "Practice": "ਅਭਿਆਸ",
+    "More": "ਹੋਰ",
+    "Punjab Exams": "ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ",
+    "Punjab GK": "ਪੰਜਾਬ ਜੀਕੇ",
+    "My Progress": "ਮੇਰੀ ਪ੍ਰਗਤੀ",
+    "Leaderboard": "ਲੀਡਰਬੋਰਡ",
+    "Study Guides": "ਅਧਿਐਨ ਗਾਈਡ",
+    "FAQ & Help": "ਸਵਾਲ-ਜਵਾਬ ਅਤੇ ਮਦਦ",
+    "Toggle theme": "ਥੀਮ ਬਦਲੋ",
+    "Install App": "ਐਪ ਇੰਸਟਾਲ ਕਰੋ",
+    "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
+    "Start Quiz": "ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ",
+    "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
+    "Search subjects and topics…": "ਵਿਸ਼ੇ ਅਤੇ ਟੌਪਿਕ ਖੋਜੋ…",
+
+    /* --- footer ---------------------------------------------------------- */
+    "Company": "ਕੰਪਨੀ",
+    "All Subjects": "ਸਾਰੇ ਵਿਸ਼ੇ",
+    "Previous Year Questions": "ਪਿਛਲੇ ਸਾਲਾਂ ਦੇ ਸਵਾਲ",
+    "Expected MCQs": "ਸੰਭਾਵਿਤ MCQs",
+    "Privacy Policy": "ਪਰਾਈਵੇਸੀ ਨੀਤੀ",
+    "Terms of Use": "ਵਰਤੋਂ ਦੀਆਂ ਸ਼ਰਤਾਂ",
+    "Editorial Policy": "ਸੰਪਾਦਕੀ ਨੀਤੀ",
+    "Telegram": "ਟੈਲੀਗ੍ਰਾਮ",
+    "Join thousands of aspirants preparing together.":
+      "ਇੱਕੋਜਿਹੇ ਹਜ਼ਾਰਾਂ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਮਿਲ ਕੇ ਤਿਆਰੀ ਕਰੋ।",
+    "House of Aspirants Telegram Community":
+      "House of Aspirants ਟੈਲੀਗ੍ਰਾਮ ਕਮਿਊਨਿਟੀ",
+    "Free Study Material": "ਮੁਫ਼ਤ ਅਧਿਆਨ ਸਮੱਗਰੀ",
+    "Current Affairs Magazine": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਮੈਗਜ਼ੀਨ",
+    "Personal Notes": "ਨਿੱਜੀ ਨੋਟਾਂ",
+    "Weekly Live Guidance": "ਹਫ਼ਤਾਵਾਰੀ ਲਾਈਵ ਮਾਰਗਦਰਸ਼ਨ",
+    "Recruitment Updates": "ਭਰਤੀ ਅਪਡੇਟ",
+    "Daily Expected MCQs": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs",
+    "Book Recommendations": "ਕਿਤਾਬਾਂ ਦੀਆਂ ਸਿਫਾਰਸ਼ਾਂ",
+    "House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.":
+      "House of Aspirants ਪੰਜਾਬ ਦੇ ਅਸਪਿਰੈਂਟਾਂ ਨੂੰ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਗੁਣਵੱਤਾ ਵਾਲੀ ਅਧਿਆਨ ਸਮੱਗਰੀ ਨਾਲ ਭਰੋਸੇ ਨਾਲ ਤਿਆਰੀ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹੈ।",
+
+    /* --- homepage -------------------------------------------------------- */
+    "Quick Start": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ",
+    "What do you want to do?": "ਤੁਸੀਂ ਕੀ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹੋ?",
+    "In short": "ਸੰਖੇਪ ਵਿੱਚ",
+    "Exam Coverage": "ਪ੍ਰੀਖਿਆ ਕਵਰੇਜ",
+    "Built for Punjab's competitive exams":
+      "ਪੰਜਾਬ ਦੀਆਂ ਮੁਕਾਬਲਾ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਬਣਾਇਆ ਗਿਆ",
+    "Choose a subject, master a topic": "ਵਿਸ਼ਾ ਚੁਣੋ, ਟੌਪਿਕ ਮਾਸਟਰ ਕਰੋ",
+    "Freshly published practice sets": "ਨਵੇਂ ਪ੍ਰਕਾਸ਼ਿਤ ਅਭਿਆਸ ਸੈੱਟ",
+    "Prepare smarter with free guides": "ਮੁਫ਼ਤ ਗਾਈਡਾਂ ਨਾਲ ਹੋਸ਼ਿਆਰ ਬਣੋ",
+    "Learn from Someone Who Cleared the Exam":
+      "ਉਸ ਵਿਅਕਤੀ ਤੋਂ ਸਿੱਖੋ ਜਿਸਨੇ ਪ੍ਰੀਖਿਆ ਪਾਸ ਕੀਤੀ",
+    "Everything you get after joining": "ਸ਼ਾਮਲ ਹੋਣ ਉੱਤੇ ਕੀ ਕੁਝ ਮਿਲਦਾ ਹੈ",
+    "The engine, by the numbers": "ਅੰਕੜਿਆਂ ਵਿੱਚ ਇੰਜਣ",
+    "Frequently asked questions": "ਅਕਸਰ ਪੁੱਛੇ ਜਾਣ ਵਾਲੇ ਸਵਾਲ",
+    "Pick a subject, choose a topic, start practising.":
+      "ਵਿਸ਼ਾ ਚੁਣੋ, ਟੌਪਿਕ ਚੁਣੋ, ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ।",
+    "A fresh mixed challenge every single day.":
+      "ਹਰ ਰੋਜ਼ ਨਵੀਂ ਮਿਕਸਡ ਚੁਣੌਤੀ।",
+    "Free guides, study plans and revision strategy.":
+      "ਮੁਫ਼ਤ ਗਾਈਡਾਂ, ਅਧਿਆਨ ਯੋਜਨਾਵਾਂ ਅਤੇ ਰਿਵਿਜ਼ਨ ਰਣਨੀਤੀ।",
+    "See how your scores rank against other aspirants.":
+      "ਵੇਖੋ ਤੁਹਾਡੇ ਸਕੋਰ ਹੋਰ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਕਿੱਥੇ ਹਨ।",
+    "Daily MCQs, PDFs, current affairs and recruitment alerts — free.":
+      "ਰੋਜ਼ਾਨਾ MCQs, PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਭਰਤੀ ਅਪਡੇਟ — ਮੁਫ਼ਤ।",
+    "Choose a topic →": "ਟੌਪਿਕ ਚੁਣੋ →",
+    "Play today's →": "ਅੱਜ ਦਾ ਖੇਡੋ →",
+    "Read notes →": "ਨੋਟ ਪੜ੍ਹੋ →",
+    "View ranks →": "ਰੈਂਕ ਵੇਖੋ →",
+    "Join the community →": "ਕਮਿਊਨਿਟੀ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ →",
+    "All Punjab exams →": "ਸਾਰੀਆਂ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ →",
+    "MCQ practice written for the posts these papers actually recruit.":
+      "ਉਹਨਾਂ ਅਸਾਮਲਿਆਂ ਲਈ ਲਿਖੀ MCQ ਅਭਿਆਸ, ਜਿਨ੍ਹਾਂ ਲਈ ਇਹ ਪੇਪਰ ਭਰਤੀ ਕਰਦੇ ਹਨ।",
+    "Start Learning in Punjabi Today": "ਅੱਜ ਹੀ ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖਣਾ ਸ਼ੁਰੂ ਕਰੋ",
+    "Study Smart. Learn in Punjabi.": "ਹੋਸ਼ਿਆਰੀ ਨਾਲ ਪੜ੍ਹੋ। ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖੋ।",
+    "Practice Exam-Level MCQs in Punjabi & English":
+      "ਪ੍ਰੀਖਿਆ ਪੱਧਰ ਦੇ MCQ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਰੋ",
+
+    /* --- homepage: philosophy, feature cards, trust --------------------- */
+    "Learn in Punjabi. Compete Everywhere.":
+      "ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖੋ। ਹਰ ਜਗ੍ਹਾ ਮੁਕਾਬਲਾ ਕਰੋ।",
+    "Every translated set sits beside its English twin — same questions, same order.":
+      "ਹਰ ਅਨੁਵਾਦ ਕੀਤਾ ਸੈੱਟ ਆਪਣੇ ਅੰਗਰੇਜ਼ੀ ਜੋੜੀ ਦੇ ਨਾਲ ਹੁੰਦਾ ਹੈ — ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ।",
+    "Switch mid-quiz: question number, answers, timer and score all stay put.":
+      "ਕੁਇਜ਼ ਵਿੱਚ ਹੀ ਭਾਸ਼ਾ ਬਦਲੋ: ਸਵਾਲ ਨੰਬਰ, ਜਵਾਬ, ਟਾਈਮਰ ਅਤੇ ਸਕੋਰ ਠੀਕ ਉਸੇ ਥਾਂ ਰਹਿੰਦੇ ਹਨ।",
+    "A badge tells you what is genuinely in Punjabi before you open a set.":
+      "ਬੈਜ ਤੁਹਾਨੂੰ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ ਦੱਸਦਾ ਹੈ ਕਿ ਪੰਜਾਬੀ ਵਿੱਚ ਕੀ ਅਸਲ ਵਿੱਚ ਮੌਜੂਦ ਹੈ।",
+    "Start in Punjabi →": "ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ →",
+    "Practice in English →": "ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਭਿਆਸ ਕਰੋ →",
+    "Start Daily Quiz": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ",
+    "Learning Features": "ਅਧਿਆਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
+    "Premium MCQs in Punjabi and English":
+      "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਪ੍ਰੀਮੀਅਮ MCQs",
+    "MCQs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ MCQs",
+    "Study Notes in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਧਿਆਨ ਨੋਟਾਂ",
+    "Current Affairs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਰੰਟ ਅਫੇਅਰਜ਼",
+    "Daily Quiz Practice": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼ ਅਭਿਆਸ",
+    "Punjab Police Exam Preparation": "ਪੰਜਾਬ ਪੁਲਿਸ ਪ੍ਰੀਖਿਆ ਦੀ ਤਿਆਰੀ",
+    "PSSSB & PPSC Preparation": "PSSSB ਅਤੇ PPSC ਦੀ ਤਿਆਰੀ",
+    "Why Punjabi": "ਪੰਜਾਬੀ ਕਿਉਂ",
+    "Why Punjab aspirants prefer learning concepts in Punjabi":
+      "ਪੰਜਾਬ ਦੇ ਅਸਪਿਰੈਂਟ ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖਣ ਨੂੰ ਕਿਉਂ ਤਰਜੀਹ ਦਿੰਦੇ ਹਨ",
+    "Free, and no advertising": "ਮੁਫ਼ਤ, ਅਤੇ ਬਿਨਾਂ ਵਿਗਿਆਪਨ",
+    "Both languages, honestly labelled": "ਦੋਵਾਂ ਭਾਸ਼ਾਵਾਂ, ਇਮਾਨਦਾਰ ਲੇਬਲ",
+    "Written by someone who cleared it": "ਉਸ ਵਿਅਕਤੀ ਵੱਲੋਂ ਲਿਖਿਆ ਜਿਸਨੇ ਪਾਸ ਕੀਤਾ",
+    "Built for the phone in your pocket": "ਤੁਹਾਡੀ ਜੇਬ ਦੇ ਫ਼ੋਨ ਲਈ ਬਣਾਇਆ ਗਿਆ",
+  };
+
+  function getLang() {
+    return db.get(LANG_KEY) === "en" ? "en" : "pa"; // Punjabi is the default
+  }
+
+  /** Swap every [data-i18n] node between English and Punjabi. */
+  function applyLang() {
+    const lang = getLang();
+
+    document.querySelectorAll("[data-i18n]").forEach((el) => {
+      if (el.children.length) return; // nested markup - never wipe it
+      const src = el.getAttribute("data-i18n");
+      const punjabi = lang === "pa" ? I18N[src] : "";
+      const out = punjabi || src;
+      if (el.textContent !== out) el.textContent = out;
+      if (punjabi) el.setAttribute("lang", "pa");
+      else el.removeAttribute("lang");
+    });
+
+    document.querySelectorAll("[data-i18n-ph]").forEach((el) => {
+      const src = el.getAttribute("data-i18n-ph");
+      const punjabi = lang === "pa" ? I18N[src] : "";
+      const out = punjabi || src;
+      if (el.getAttribute("placeholder") !== out) el.setAttribute("placeholder", out);
+      if (punjabi) el.setAttribute("lang", "pa");
+      else el.removeAttribute("lang");
+    });
+
+    document.querySelectorAll("[data-lang-btn]").forEach((b) => {
+      const on = b.getAttribute("data-lang-btn") === lang;
+      b.setAttribute("aria-pressed", String(on));
+      b.classList.toggle("is-on", on);
+    });
+
+    document.documentElement.setAttribute("data-lang", lang);
+    // Pages that render their own copy listen for this (quiz.js, home.js).
+    document.dispatchEvent(new CustomEvent("hoa:lang", { detail: { lang } }));
+  }
+
+  function initLang() {
+    applyLang();
+    document.addEventListener("click", (e) => {
+      const btn = e.target.closest("[data-lang-btn]");
+      if (!btn) return;
+      const next = btn.getAttribute("data-lang-btn") === "en" ? "en" : "pa";
+      if (next === getLang()) return;
+      db.set(LANG_KEY, next);
+      applyLang();
+    });
+    // Restored from the back/forward cache: the DOM is ours again.
+    window.addEventListener("pageshow", applyLang);
+  }
+
   /* ============================================ 3b. SHARED PAGE CHROME ====
    * One source of truth for <header>, mobile drawer, search modal and footer.
    * Pages just render <div data-site-header></div> / <div data-site-footer></div>,
@@ -183,10 +370,10 @@ const HOA = (() => {
 
       <nav class="main-nav" aria-label="Primary">
         <ul class="nav-list">
-          <li><a class="nav-link" data-nav="home" href="index.html">Home</a></li>
+          <li><a class="nav-link" data-nav="home" href="index.html"><span data-i18n="Home">Home</span></a></li>
           <li class="nav-drop" data-nav-drop>
             <button class="nav-link nav-drop-btn" aria-haspopup="true" aria-expanded="false">
-              Subjects
+              <span data-i18n="Subjects">Subjects</span>
               <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
@@ -197,15 +384,27 @@ const HOA = (() => {
               ).join("")}
             </div>
           </li>
-          <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily">Daily Quiz</a></li>
-          <li><a class="nav-link" data-nav="mock" href="mock.html">Mock Tests</a></li>
-          <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html">Bookmarks</a></li>
-          <li><a class="nav-link" data-nav="about" href="about.html">About</a></li>
-          <li><a class="nav-link" data-nav="contact" href="contact.html">Contact</a></li>
+          <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Quiz">Daily Quiz</span></a></li>
+          <li><a class="nav-link" data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
+          <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a></li>
+          <li><a class="nav-link" data-nav="about" href="about.html"><span data-i18n="About">About</span></a></li>
+          <li><a class="nav-link" data-nav="contact" href="contact.html"><span data-i18n="Contact">Contact</span></a></li>
         </ul>
       </nav>
 
       <div class="header-actions">
+        <!-- PUNJABI FIRST. ENGLISH ALWAYS AVAILABLE. Both languages are always
+             one tap away and neither is ever presented as the fallback. -->
+        <div class="lang-switch" role="group" aria-label="Interface language / ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ">
+          <button type="button" class="lang-btn" data-lang-btn="pa" lang="pa"
+                  aria-pressed="true" title="ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ">
+            <span class="lang-full">ਪੰਜਾਬੀ</span><span class="lang-short" aria-hidden="true">ਪੰ</span>
+          </button>
+          <button type="button" class="lang-btn" data-lang-btn="en" lang="en"
+                  aria-pressed="false" title="Read in English">
+            <span class="lang-full">English</span><span class="lang-short" aria-hidden="true">EN</span>
+          </button>
+        </div>
         <button class="icon-btn" data-action="open-search" aria-label="Search (Ctrl+K)">🔍</button>
         <button class="icon-btn" data-action="toggle-theme" aria-label="Toggle dark mode">
           <span data-theme-icon>🌙</span>
@@ -224,35 +423,47 @@ const HOA = (() => {
   <div class="mobile-menu" id="mobileMenu">
     <div class="mm-head">
       <span class="mm-title">🏠 House of Aspirants</span>
-      <button class="icon-btn" data-action="close-menu" aria-label="Close menu">✕</button>
+      <div class="mm-head-actions">
+        <div class="lang-switch" role="group" aria-label="Interface language / ਇੰਟਰਫੇਸ ਭਾਸ਼ਾ">
+          <button type="button" class="lang-btn" data-lang-btn="pa" lang="pa"
+                  aria-pressed="true" title="ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ">
+            <span class="lang-full">ਪੰਜਾਬੀ</span><span class="lang-short" aria-hidden="true">ਪੰ</span>
+          </button>
+          <button type="button" class="lang-btn" data-lang-btn="en" lang="en"
+                  aria-pressed="false" title="Read in English">
+            <span class="lang-full">English</span><span class="lang-short" aria-hidden="true">EN</span>
+          </button>
+        </div>
+        <button class="icon-btn" data-action="close-menu" aria-label="Close menu">✕</button>
+      </div>
     </div>
-    <a class="mm-link" data-nav="home" href="index.html">🏠 Home</a>
+    <a class="mm-link" data-nav="home" href="index.html"><span aria-hidden="true">🏠</span> <span data-i18n="Home">Home</span></a>
 
-    <p class="mm-group">Subjects</p>
+    <p class="mm-group" data-i18n="Subjects">Subjects</p>
     <div data-subject-list>
       ${SUBJECT_LINKS.map(
         ([id, icon, name]) =>
           `<a class="mm-link" data-nav="${id}" href="subject.html?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
-    <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> Punjab GK</a>
+    <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> <span data-i18n="Punjab GK">Punjab GK</span></a>
 
-    <p class="mm-group">Practice</p>
-    <a class="mm-link" data-nav="exams" href="punjab-exams.html">🏛️ Punjab Exams</a>
-    <a class="mm-link" data-nav="daily" href="quiz.html?mode=daily">📅 Daily Quiz</a>
-    <a class="mm-link" data-nav="mock" href="mock.html">🧪 Mock Tests</a>
-    <a class="mm-link" data-nav="bookmarks" href="bookmarks.html">★ Bookmarks</a>
-    <a class="mm-link" data-nav="progress" href="progress.html">📊 My Progress</a>
-    <a class="mm-link" data-nav="leaderboard" href="leaderboard.html">🏆 Leaderboard</a>
+    <p class="mm-group" data-i18n="Practice">Practice</p>
+    <a class="mm-link" data-nav="exams" href="punjab-exams.html"><span class="mm-emoji">🏛️</span> <span data-i18n="Punjab Exams">Punjab Exams</span></a>
+    <a class="mm-link" data-nav="daily" href="quiz.html?mode=daily"><span class="mm-emoji">📅</span> <span data-i18n="Daily Quiz">Daily Quiz</span></a>
+    <a class="mm-link" data-nav="mock" href="mock.html"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
+    <a class="mm-link" data-nav="bookmarks" href="bookmarks.html"><span class="mm-emoji">★</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
+    <a class="mm-link" data-nav="progress" href="progress.html"><span class="mm-emoji">📊</span> <span data-i18n="My Progress">My Progress</span></a>
+    <a class="mm-link" data-nav="leaderboard" href="leaderboard.html"><span class="mm-emoji">🏆</span> <span data-i18n="Leaderboard">Leaderboard</span></a>
 
-    <p class="mm-group">More</p>
-    <a class="mm-link" data-nav="about" href="about.html">ℹ️ About</a>
-    <a class="mm-link" data-nav="articles" href="articles.html">📚 Study Guides</a>
-    <a class="mm-link" data-nav="faq" href="faq.html">❓ FAQ &amp; Help</a>
-    <a class="mm-link" data-nav="contact" href="contact.html">✉️ Contact</a>
-    <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> Toggle theme</button>
-    <button class="mm-link" data-action="install-app">⬇ Install App</button>
-    <a class="mm-link mm-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
+    <p class="mm-group" data-i18n="More">More</p>
+    <a class="mm-link" data-nav="about" href="about.html"><span class="mm-emoji">ℹ️</span> <span data-i18n="About">About</span></a>
+    <a class="mm-link" data-nav="articles" href="articles.html"><span class="mm-emoji">📚</span> <span data-i18n="Study Guides">Study Guides</span></a>
+    <a class="mm-link" data-nav="faq" href="faq.html"><span class="mm-emoji">❓</span> <span data-i18n="FAQ &amp; Help">FAQ &amp; Help</span></a>
+    <a class="mm-link" data-nav="contact" href="contact.html"><span class="mm-emoji">✉️</span> <span data-i18n="Contact">Contact</span></a>
+    <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> <span data-i18n="Toggle theme">Toggle theme</span></button>
+    <button class="mm-link" data-action="install-app"><span aria-hidden="true">⬇</span> <span data-i18n="Install App">Install App</span></button>
+    <a class="mm-link mm-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">✈</span> <span data-i18n="Join Telegram">Join Telegram</span></a>
   </div>
 
   <div class="search-overlay hidden" id="searchOverlay" role="dialog" aria-label="Search">
@@ -260,6 +471,7 @@ const HOA = (() => {
       <div class="search-box">
         <span aria-hidden="true">🔍</span>
         <input id="searchInput" type="search" placeholder="Search subjects and topics…"
+               data-i18n-ph="Search subjects and topics…"
                autocomplete="off" aria-label="Search subjects and topics">
         <span class="kbd">Ctrl K</span>
         <button class="icon-btn" data-action="close-search" aria-label="Close search">✕</button>
@@ -273,19 +485,19 @@ const HOA = (() => {
     <div class="container">
       <div class="footer-tg">
         <div class="footer-tg-copy">
-          <h2>Join thousands of aspirants preparing together.</h2>
-          <p>House of Aspirants Telegram Community</p>
+          <h2 data-i18n="Join thousands of aspirants preparing together.">Join thousands of aspirants preparing together.</h2>
+          <p data-i18n="House of Aspirants Telegram Community">House of Aspirants Telegram Community</p>
         </div>
         <ul class="footer-tg-list">
-          <li>Free Study Material</li>
-          <li>Current Affairs Magazine</li>
-          <li>Personal Notes</li>
-          <li>Weekly Live Guidance</li>
-          <li>Recruitment Updates</li>
-          <li>Daily Expected MCQs</li>
-          <li>Book Recommendations</li>
+          <li data-i18n="Free Study Material">Free Study Material</li>
+          <li data-i18n="Current Affairs Magazine">Current Affairs Magazine</li>
+          <li data-i18n="Personal Notes">Personal Notes</li>
+          <li data-i18n="Weekly Live Guidance">Weekly Live Guidance</li>
+          <li data-i18n="Recruitment Updates">Recruitment Updates</li>
+          <li data-i18n="Daily Expected MCQs">Daily Expected MCQs</li>
+          <li data-i18n="Book Recommendations">Book Recommendations</li>
         </ul>
-        <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">📲 Join Telegram</a>
+        <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">📲</span> <span data-i18n="Join Telegram">Join Telegram</span></a>
       </div>
 
       <div class="footer-grid">
@@ -294,46 +506,49 @@ const HOA = (() => {
             <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="" title="House of Aspirants" loading="lazy" decoding="async">
             <span class="brand-name">House of Aspirants<span class="brand-sub">Quiz Portal</span></span>
           </a>
+          <!-- Brief item 9: the standing brand statement, in both languages. -->
+          <p class="footer-stand"
+             data-i18n="House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.">House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.</p>
           <p>Practice Daily. Crack Punjab Police. A free, fast and offline-ready MCQ portal for
              Punjab Police, PSSSB and competitive exam aspirants.</p>
           <div class="social-row">
-            <a class="social-link" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="social-link" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">✈</span> <span data-i18n="Telegram">Telegram</span></a>
             <a class="social-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener">📸 Instagram</a>
             <a class="social-link" href="https://youtube.com/@houseofaspirants-y5s" target="_blank" rel="noopener">▶ YouTube</a>
           </div>
         </div>
 
         <div class="footer-col">
-          <h2>Practice</h2>
-          <a href="punjab-exams.html">Punjab Exams</a>
-          <a href="quiz.html?mode=daily">Daily Quiz</a>
-          <a href="mock.html">Mock Tests</a>
-          <a href="subject.html?subject=gk">Previous Year Questions</a>
-          <a href="subject.html?subject=current-affairs">Expected MCQs</a>
-          <a href="bookmarks.html">Bookmarks</a>
-          <a href="progress.html">My Progress</a>
-          <a href="leaderboard.html">Leaderboard</a>
+          <h2 data-i18n="Practice">Practice</h2>
+          <a href="punjab-exams.html" data-i18n="Punjab Exams">Punjab Exams</a>
+          <a href="quiz.html?mode=daily" data-i18n="Daily Quiz">Daily Quiz</a>
+          <a href="mock.html" data-i18n="Mock Tests">Mock Tests</a>
+          <a href="subject.html?subject=gk" data-i18n="Previous Year Questions">Previous Year Questions</a>
+          <a href="subject.html?subject=current-affairs" data-i18n="Expected MCQs">Expected MCQs</a>
+          <a href="bookmarks.html" data-i18n="Bookmarks">Bookmarks</a>
+          <a href="progress.html" data-i18n="My Progress">My Progress</a>
+          <a href="leaderboard.html" data-i18n="Leaderboard">Leaderboard</a>
         </div>
 
         <div class="footer-col">
-          <h2>Subjects</h2>
-          <a href="index.html#subjects">All Subjects</a>
-          <a href="subject.html?subject=gk&amp;category=punjab-gk">📌 Punjab GK</a>
+          <h2 data-i18n="Subjects">Subjects</h2>
+          <a data-i18n="All Subjects" href="index.html#subjects">All Subjects</a>
+          <a href="subject.html?subject=gk&amp;category=punjab-gk"><span aria-hidden="true">📌</span> <span data-i18n="Punjab GK">Punjab GK</span></a>
           ${SUBJECT_LINKS.map(
             ([id, , name]) => `<a href="subject.html?subject=${id}">${name}</a>`
           ).join("")}
         </div>
 
         <div class="footer-col">
-          <h2>Company</h2>
-          <a href="about.html">About</a>
-          <a href="articles.html">Study Guides</a>
-          <a href="faq.html">FAQ &amp; Help</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="terms.html">Terms of Use</a>
-          <a href="editorial-policy.html">Editorial Policy</a>
+          <h2 data-i18n="Company">Company</h2>
+          <a href="about.html" data-i18n="About">About</a>
+          <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
+          <a href="faq.html" data-i18n="FAQ &amp; Help">FAQ &amp; Help</a>
+          <a href="contact.html" data-i18n="Contact">Contact</a>
+          <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener" data-i18n="Join Telegram">Join Telegram</a>
+          <a href="privacy.html" data-i18n="Privacy Policy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="Terms of Use">Terms of Use</a>
+          <a href="editorial-policy.html" data-i18n="Editorial Policy">Editorial Policy</a>
         </div>
       </div>
 
@@ -1180,6 +1395,7 @@ const HOA = (() => {
     startClarity(); // Clarity is a no-op off the live domain (skips non-prod)
     renderChrome();
     initTheme();
+    initLang();
     initNav();
     initSearch();
     initReveal();
@@ -1195,9 +1411,30 @@ const HOA = (() => {
     init();
   }
 
+  /**
+   * Availability pill for a question set.
+   * Markup is returned ONLY when data/index.json reports that the set really
+   * ships in both languages (`topic.variants`); a set with a single language
+   * renders nothing at all, so the interface never advertises a translation
+   * that is not actually on disk. Colours come from `.badge`, which already
+   * resolves correctly in light and dark themes.
+   */
+  function langBadge(variants) {
+    const v = variants || {};
+    if (!v.en || !v.pa) return "";
+    return (
+      `<span class="badge badge-lang" ` +
+      `title="Published in Punjabi and English — switch inside the quiz">` +
+      `ਪੰ · EN</span>`
+    );
+  }
+
   return {
     db, loadIndex, loadQuestions, normalizeQuestions,
-    toast, esc, seo, countUp, fmtTime, uid,
+    toast, esc, seo, countUp, fmtTime, uid, langBadge,
+    /* Punjabi-first interface language. quiz.js reads `lang.get()` so the
+       QUESTION file it opens matches the language the chrome is showing. */
+    lang: { get: getLang, apply: applyLang },
     bookmarks, progress, achievements, leaderboard,
     analytics: {
       id: GA_ID,

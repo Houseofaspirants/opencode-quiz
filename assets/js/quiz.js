@@ -91,6 +91,7 @@
     mark: document.getElementById("btnMark"),
     bookmark: document.getElementById("btnBookmark"),
     submit: document.getElementById("btnSubmit"),
+    quizLang: document.getElementById("quizLang"),
     main: document.getElementById("quizMain"),
     empty: document.getElementById("quizEmpty"),
     resumeBar: document.getElementById("resumeBar"),
@@ -224,15 +225,35 @@
 
     if (!subject || !topic) return null;
 
+    /* PUNJABI FIRST. A set can exist in more than one language, so open the one
+       that matches the reader's preference rather than always defaulting to the
+       primary (English) file. The URL, the topic id and the session key below
+       are all built from ids — switching language changes none of them. */
+    const variants = topic.variants || {};
+    const wantLang = (HOA.lang && HOA.lang.get()) || "pa";
+    const startFile = variants[wantLang] || topic.file || "";
+    const startLang = startFile
+      ? Object.keys(variants).find((k) => variants[k] === startFile) || ""
+      : "";
+
     let questions = [];
     let meta = {};
-    if (topic.available) {
+    if (topic.available && startFile) {
       try {
-        const data = await HOA.loadQuestions(topic.file);
+        const data = await HOA.loadQuestions(startFile);
         questions = data.questions;
         meta = data.meta;
       } catch (e) {
         console.warn("[HOA] topic load failed", e.message);
+        // The preferred translation failed to load — fall back to the primary
+        // file rather than showing the reader an empty quiz.
+        if (startFile !== topic.file) {
+          try {
+            const data2 = await HOA.loadQuestions(topic.file);
+            questions = data2.questions;
+            meta = data2.meta;
+          } catch { /* the primary file is broken too; showEmpty() reports it */ }
+        }
       }
     }
     const perQ = Number(meta.questionSeconds) || Number(site.questionSeconds) || 30;
@@ -251,7 +272,16 @@
       subjectIcon: subject.icon,
       topicName: topic.name, topicId: topic.id,
       categoryFolder: cat ? cat.folder || cat.id : "",
-      file: topic.file || "",
+      file: startFile,
+      // Every language this set really ships in, plus the one now loaded. The
+      // header renders its switch from THIS and nothing else, so a badge can
+      // never promise a translation that is not on disk.
+      variants,
+      lang: startLang,
+      // Question text from the file opened at start-up. Bookmarks key off this
+      // (bmKey) so a bookmark made in Punjabi is still the same bookmark after
+      // switching the screen to English. Deliberately never recomputed on swap.
+      keyTexts: questions.map((q) => (q && q.q) || ""),
       // Flat subjects keep the original autosave key (existing sessions
       // resume unchanged); categorized topics get their own namespace.
       key: `topic:${subject.id}${cat ? ":" + cat.id : ""}:${topic.id}`,
@@ -379,14 +409,55 @@
     });
   }
 
+  /* Bookmarks key off the text of the file opened at start-up (keyTexts) rather
+     than the text currently on screen, so switching language mid-attempt never
+     orphans a bookmark that was made in the other language. */
   const bmKey = () =>
-    `${QUIZ.key}:${S.i}:${(QUIZ.questions[S.i]?.q || "").slice(0, 40)}`;
+    `${QUIZ.key}:${S.i}:` +
+    `${(QUIZ.keyTexts?.[S.i] || QUIZ.questions[S.i]?.q || "").slice(0, 40)}`;
 
   /** Mark-button label — in place, so the control row never re-flows. */
   function paintMarkBtn() {
     els.mark.className = `btn ${S.marks[S.i] ? "btn-soft" : ""}`;
     els.mark.innerHTML = S.marks[S.i]
       ? "✔ Marked for Review" : "📌 Mark for Review";
+  }
+
+  /* =============================== IN-QUIZ LANGUAGE SWITCH (brief item 8) ==
+     Replaces ONLY the question text and its options. S.i (question number),
+     S.answers, S.marks, S.visited, the palette and both countdowns live in the
+     session rather than in the file, so a swap leaves every one of them — and
+     therefore the running score — exactly where it was.
+     The switch itself is rendered only when data/index.json reports more than
+     one variant for this topic: availability is read, never assumed. */
+  async function swapQuizLang() {
+    if (!QUIZ || !QUIZ.variants) return;
+    const lang = (HOA.lang && HOA.lang.get()) || "pa";
+    const file = QUIZ.variants[lang];
+    if (!file || file === QUIZ.file || !QUIZ.questions.length) return;
+
+    try {
+      const data = await HOA.loadQuestions(file);
+      const next = (data && data.questions) || [];
+      // Guard: a translation whose question count does not line up would quietly
+      // point saved answers at the wrong question. Refuse the swap instead.
+      if (next.length !== QUIZ.questions.length) {
+        toast("That translation does not line up with this set — keeping the current language.");
+        return;
+      }
+      const keepLeft = S.qLeft;     // renderQuestion() resets the per-question clock
+      QUIZ.questions = next;
+      QUIZ.file = file;
+      QUIZ.lang = lang;
+      renderQuestion();             // re-reads QUIZ.questions[S.i]; S is untouched
+      S.qLeft = keepLeft;
+      updateTimers();
+      save();
+      toast(lang === "pa" ? "ਸਵਾਲ ਹੁਣ ਪੰਜਾਬੀ ਵਿੱਚ" : "Questions are now in English");
+    } catch (e) {
+      console.warn("[HOA] language swap failed", e.message);
+      toast("Could not load that translation.");
+    }
   }
 
   /** Answer selection — class toggles ONLY (no innerHTML → no focus loss). */
@@ -799,6 +870,15 @@
   }
 
   /* ---------------------------------------------------- Header contents - */
+  /* The language switch is drawn ONLY when this set really ships in more than
+     one language. One state drives the whole site: core.js fires `hoa:lang`
+     whenever the header, drawer or this control is used, and swapQuizLang()
+     reacts by loading the matching question file in place. */
+  if (els.quizLang) {
+    els.quizLang.hidden = Object.keys(QUIZ.variants || {}).length < 2;
+  }
+  document.addEventListener("hoa:lang", swapQuizLang);
+
   els.title.textContent = QUIZ.title;
   els.sub.textContent = mode === "daily"
     ? "Daily Challenge"

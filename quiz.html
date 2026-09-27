@@ -62,6 +62,24 @@
           <small class="muted" id="quizSub"></small>
         </div>
 
+        <!-- Brief item 8 — in-quiz language switch. Uses the same data-lang-btn
+             as the header, so one state drives the whole site: flipping here
+             re-translates the chrome AND swaps the question file, while the
+             question number, every answer chosen, the marks, the palette and
+             both timers stay exactly where they were. Rendered only when
+             data/index.json reports more than one real variant. -->
+        <div class="lang-switch quiz-lang" id="quizLang" role="group" hidden
+             aria-label="Question language / ਸਵਾਲ ਦੀ ਭਾਸ਼ਾ">
+          <button type="button" class="lang-btn" data-lang-btn="pa" lang="pa"
+                  aria-pressed="false" title="ਪੰਜਾਬੀ ਵਿੱਚ ਸਵਾਲ ਪੜ੍ਹੋ">
+            <span class="lang-full">ਪੰਜਾਬੀ</span><span class="lang-short" aria-hidden="true">ਪੰ</span>
+          </button>
+          <button type="button" class="lang-btn" data-lang-btn="en" lang="en"
+                  aria-pressed="true" title="Read the questions in English">
+            <span class="lang-full">English</span><span class="lang-short" aria-hidden="true">EN</span>
+          </button>
+        </div>
+
         <div class="timers">
           <span class="timer-pill" id="qTimer" aria-label="Question timer">⏱ 00:30 <small>Q</small></span>
           <span class="timer-pill" id="oTimer" aria-label="Overall timer">⌛ 00:00 <small>Total</small></span>

@@ -293,7 +293,7 @@
        ${clickable ? "" : 'aria-disabled="true"'}>
       <span class="qc-icon">${icon}</span>
       <span>
-        <h3>${esc(t.name)}</h3>
+        <h3>${esc(t.name)}${HOA.langBadge(t.variants)}</h3>
         <span class="qc-sub">${
           clickable
             ? `${t.count} question${t.count === 1 ? "" : "s"} · Start quiz →`
