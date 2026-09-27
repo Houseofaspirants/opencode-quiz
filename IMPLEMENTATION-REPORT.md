@@ -865,3 +865,59 @@ in its name gets today's date *once*, not on every run.
   `seo_check.py` **PASS** → `rich_results_check.py` **PASS** →
   `bash scripts/ci.sh` **ALL GATES GREEN (6/6)** with the test files removed
   and the real PDF published (1 document page).
+
+## 40. Subfolder drops, and the two parity gaps `npm run build` exposed
+
+Running the Node twin of the index builder (`npm run build`, now that Node is
+installed locally) turned up two gaps that only appear once a second builder —
+or a second drop shape — enters the picture.
+
+**1. Subfolders never published.** PDF discovery was `cdir.iterdir()`: a file
+in `content/monthly-magazine/english/` simply did not exist as far as the site
+was concerned, which is exactly the "dropped it and nothing happened" failure
+the PDF work exists to prevent (and the shape the library on disk already has:
+`history/chapter 1/part 1 (english).pdf`). The collection folder is now walked
+(`rglob`, skipping hidden folders and `_drafts`), and the subfolder that
+carried the file is kept on the record so two identically named files in
+sibling folders say which one they are:
+
+```
+english/current affairs sheet.pdf  ->  Current Affairs Sheet
+punjabi/current affairs sheet.pdf  ->  Current Affairs Sheet (Punjabi)
+```
+
+The folder name is path data, not a guess, so no subject or language is
+invented; slugs stay deterministic (`…-2` on a clash).
+
+**2. The homepage-feed gate could not agree with the homepage.**
+`data/content-manifest.json` is written **alphabetically by file name** while
+records are ordered **newest first by `(published, title)`**. On a date tie —
+two August PDFs both first seen on the same day — `seo_check.py`'s
+`max(published)` resolved to a different file than the block the build
+rendered, failing the gate over a page that was correct. The check now
+resolves ties exactly as the build does: English pool first, Punjabi after it,
+`(published, title)` descending, and the current-affairs block still expects a
+current-affairs document before a study note.
+
+**3. `updatedAt` never round-tripped (step 3 of `scripts/ci.sh`).** Both
+builders stamp a quiz's `updatedAt` from its file mtime, but Python computed
+`st_mtime * 1000` and Node `statSync().mtimeMs` — two different doubles from
+the same nanosecond timestamp, serialised as `1790441705167.7627` and
+`1790441705167.763`. Any machine with Node installed failed the parity gate on
+a field unrelated to any change. Both now emit **whole milliseconds from
+nanoseconds** (`st_mtime_ns // 1_000_000` and `mtimeNs / 1000000n`), so the
+two writers emit identical bytes.
+
+**Verification (local)**
+
+* 3 real issues dropped into `content/monthly-magazine/` — one top level, one
+  in `english/`, one in `punjabi/` — all three publish (124 sitemap URLs,
+  3 document pages, hub cards, archives, search, RSS).
+* Deliberate collision (same file name in `english/` and `punjabi/`): titles
+  disambiguated, slugs `-2`, download hrefs nested and percent-encoded;
+  removed afterwards.
+* Full chain `build_content` → `build_index` → `build_landing_pages` →
+  `seo_check` **PASS** → `rich_results_check` **PASS**.
+* `node scripts/build-index.mjs` vs `python3 scripts/build_index.py`:
+  `data/index.json` and `sitemap.xml` byte-identical apart from the two
+  volatile fields the gate already normalises (`generatedAt`, `<lastmod>`).

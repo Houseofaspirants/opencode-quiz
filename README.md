@@ -840,6 +840,10 @@ python3 scripts/build_content.py
   otherwise the date the file first appeared is remembered in
   `data/pdf-meta.json`, so a rebuild on another machine emits the same bytes
   (the determinism rule `scripts/ci.sh` step 6 depends on).
+* **Subfolders count** — `content/monthly-magazine/english/CA August.pdf`
+  publishes too: the collection folder is walked, not just its top level.
+  Files with the same name in sibling folders are told apart by the folder
+  name in their title, never by a guess.
 * **Same name as a Markdown file** — `Quant Shortcuts.pdf` next to
   `quant-shortcuts.md` becomes that document's download, not a second page.
 * **`content/pdfs/`** — listed on `pdfs.html` with its download button (that

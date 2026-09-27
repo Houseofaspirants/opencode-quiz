@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 60,
-  "edges": 163,
+  "nodes": 66,
+  "edges": 189,
   "silos": 28,
   "clusters": 19,
   "pillars": 27
@@ -102,6 +102,30 @@
   {
    "id": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
    "url": "/content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
+   "url": "/content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
+   "url": "/content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -434,6 +458,54 @@
    "exams": [],
    "tags": [],
    "hub": "live-sessions.html"
+  },
+  {
+   "id": "magazine-ca-august-english",
+   "url": "/magazine-ca-august-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "magazine-ca-august-english.html",
+   "url": "/magazine-ca-august-english.html",
+   "type": "magazine",
+   "template": "monthly-magazine",
+   "title": "CA August English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "magazine.html"
+  },
+  {
+   "id": "magazine-current-affairs-august-punjabi",
+   "url": "/magazine-current-affairs-august-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "magazine-current-affairs-august-punjabi.html",
+   "url": "/magazine-current-affairs-august-punjabi.html",
+   "type": "magazine",
+   "template": "monthly-magazine",
+   "title": "Current Affairs August Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "magazine.html"
   },
   {
    "id": "magazine-current-affairs-july-2026",
@@ -811,6 +883,18 @@
   },
   {
    "from": "archives.html",
+   "to": "magazine-ca-august-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "magazine-current-affairs-august-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "magazine-current-affairs-july-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -1116,6 +1200,126 @@
    "weight": 1
   },
   {
+   "from": "magazine-ca-august-english.html",
+   "to": "content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "magazine-ca-august-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "magazine-current-affairs-august-punjabi.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "magazine-ca-august-english.html",
+   "to": "magazine-current-affairs-july-2026.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "magazine-current-affairs-august-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "magazine-ca-august-english.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-august-punjabi.html",
+   "to": "magazine-current-affairs-july-2026.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
    "from": "magazine-current-affairs-july-2026.html",
    "to": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
    "rel": "contextual",
@@ -1164,8 +1368,32 @@
    "weight": 1
   },
   {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "magazine-ca-august-english.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "magazine-current-affairs-august-punjabi.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
    "from": "magazine.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "magazine-ca-august-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "magazine-current-affairs-august-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },

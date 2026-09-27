@@ -201,6 +201,12 @@ keywords and author), RSS, sitemap, content graph, homepage feed.
 
 Rules worth knowing:
 
+* **Subfolders count** — `content/monthly-magazine/english/CA August.pdf`
+  publishes exactly like a top-level drop: the builder walks the collection
+  folder (only hidden folders and `_drafts` are skipped). When two files in
+  sibling folders would take the same title, the folder names them —
+  *Current Affairs Sheet* / *Current Affairs Sheet (Punjabi)* — instead of
+  inventing a subject.
 * **`<name>.pdf` next to `<name>.md`** — the PDF becomes that document's
   download instead of a second page (one file, one URL).
 * **`content/pdfs/`** — the registry hub has no pages: the PDF is listed on

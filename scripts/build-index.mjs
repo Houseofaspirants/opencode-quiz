@@ -462,7 +462,10 @@ for (const {
     empty: isEmpty,
     available: !isEmpty, // an "available" quiz = a quiz that has questions
     timeLimit: Number(isObj ? data.timeLimit : 0) || 0,
-    updatedAt: fs.statSync(full).mtimeMs,
+    // Whole milliseconds from nanoseconds - byte-identical to mtime_ms() in
+    // scripts/build_index.py, so the two builders pass the parity gate in
+    // scripts/ci.sh step 3 (a sub-ms float round-trips differently in Python).
+    updatedAt: Number(fs.statSync(full, { bigint: true }).mtimeNs / 1000000n),
     ...(categoryId ? { category: categoryId } : {}),
     language,
     variants: langVariants,

@@ -200,9 +200,14 @@ def number(value, default=0):
 
 
 def mtime_ms(full):
-    """st_mtime*1000 — emitted as an int when whole (matches JSON.stringify)."""
-    ms = os.stat(full).st_mtime * 1000
-    return int(ms) if ms == int(ms) else ms
+    """st_mtime in WHOLE milliseconds (nanoseconds truncated).
+
+    The Node twin (scripts/build-index.mjs) must emit the same bytes, and a
+    sub-millisecond float never round-trips identically through two JSON
+    writers: `1790441705167.7627` (Python) vs `1790441705167.763` (JS) is
+    enough to fail the parity gate in scripts/ci.sh step 3.
+    """
+    return os.stat(full).st_mtime_ns // 1_000_000
 
 
 def by_name(item):

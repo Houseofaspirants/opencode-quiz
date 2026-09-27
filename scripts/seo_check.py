@@ -939,9 +939,23 @@ if CONTENT_MANIFEST.exists():
             return home_src.split(s, 1)[1].split(e, 1)[0]
 
         def newest(pool, key="published"):
+            """The file the homepage block really shows.
+
+            scripts/build_content.py feeds a block from the English records
+            first and the Punjabi ones after them, each ordered newest-first by
+            (published, title) - while data/content-manifest.json is written
+            alphabetically by file name. Those two orders disagree on a date
+            tie (two August PDFs published the same day is enough), so a tie
+            has to be broken exactly the way the build breaks it."""
             if not pool:
                 return None
-            return max(pool, key=lambda r: str(r.get(key, "")))
+            groups = ([r for r in pool if str(r.get("lang", "")) != "pa"],
+                      [r for r in pool if str(r.get("lang", "")) == "pa"])
+            for group in groups:
+                if group:
+                    return max(group, key=lambda r: (str(r.get(key, "")),
+                                                     str(r.get("title", ""))))
+            return None
 
         def check_feed(kind, want, expect_file=None):
             blk = feed_block(kind)
@@ -982,8 +996,13 @@ if CONTENT_MANIFEST.exists():
         ca_items = (by_coll.get("current-affairs", []) +
                     [p for p in by_coll.get("notes", [])
                      if "current-affairs" in (p.get("subjects") or [])])
+        # The build leads with a current-affairs document when there is one and
+        # only falls back to a study note - so the expectation does too.
+        ca_docs = [p for p in ca_items if p.get("collection") == "current-affairs"]
+        ca_notes = [p for p in ca_items if p.get("collection") != "current-affairs"]
         check_feed("current-affairs", bool(ca_topics) or bool(ca_items),
-                   (newest(ca_items) or {}).get("file") if ca_items else None)
+                   ((newest(ca_docs) or newest(ca_notes)) or {}).get("file")
+                   if ca_items else None)
         if ca_topics:
             blk = feed_block("current-affairs") or ""
             newest_ca = max(ca_topics, key=lambda t: t.get("updatedAt") or 0)

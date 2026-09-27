@@ -2152,8 +2152,11 @@ def pdf_eyebrow(record, index=None):
 
 
 def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
-                     index):
-    """meta + body derived from the file name -> a normal document record."""
+                     index, folder=""):
+    """meta + body derived from the file name -> a normal document record.
+
+    `folder` is the subfolder the file was dropped in ("english"), kept on the
+    record so a second file of the same name can say which one it is."""
     label = NAV_ENTRY.get(coll, (HUBS[coll]["schema_hub"], ""))[0]
     title = pdf_title_from_name(path.stem) or label
     rel = str(path.relative_to(ROOT))
@@ -2178,6 +2181,7 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
                           required=required)
     if record is not None:
         record["pdfDrop"] = True
+        record["pdfFolder"] = folder
     return record
 
 
@@ -2195,6 +2199,10 @@ def dedupe_pdf_titles(all_records):
             if not r.get("pdfDrop"):
                 continue
             base = str(r["title"])
+            # A file in a subfolder says which one it is with that folder's
+            # name ("english") before it falls back to the collection label.
+            folder = pdf_title_from_name(r.get("pdfFolder") or "")
+            first = folder or label
             cand, n = base, 1
             while cand.lower() in used:
                 n += 1
@@ -2202,7 +2210,7 @@ def dedupe_pdf_titles(all_records):
                     err(f"{r['path']}: no unique title can be derived from this "
                         f"file name - rename the PDF")
                     break
-                cand = clip(f"{base} ({label if n == 2 else n})", 60)
+                cand = clip(f"{base} ({first if n == 2 else n})", 60)
             if cand != base:
                 r["title"] = cand
                 r["meta"]["title"] = cand
@@ -4984,10 +4992,16 @@ def main():
         # slug, description, date and download URL, and the record below lands
         # in exactly the same pipeline a Markdown document does.
         taken = {r["slug"] for r in all_records[coll]}
-        for path in sorted(p for p in cdir.iterdir() if p.is_file()
+        # Subfolders publish too: `content/history/chapter 1/part 1.pdf` is a
+        # drop like any other - only hidden folders and `_drafts` are skipped.
+        for path in sorted(p for p in cdir.rglob("*") if p.is_file()
                            and p.suffix.lower() == ".pdf"
-                           and not p.name.lower().startswith("readme")):
+                           and not p.name.lower().startswith("readme")
+                           and not any(part.startswith(".") or part == "_drafts"
+                                       for part in path.relative_to(cdir).parts[:-1])):
             where = str(path.relative_to(ROOT))
+            parts = path.relative_to(cdir).parts
+            folder = parts[-2] if len(parts) > 1 else ""
             slug = pdf_slug_from_name(path.stem)
             # `Quant Shortcuts.pdf` next to `quant-shortcuts.md` is that
             # document's download, not a second page: one file, one URL.
@@ -5011,7 +5025,7 @@ def main():
             published, updated = remember_pdf_dates(path, pdf_old, pdf_files,
                                                     fname_date)
             rec = build_pdf_record(coll, cfg, path, slug, published, updated,
-                                   fname_date, index)
+                                   fname_date, index, folder)
             if rec is None:
                 continue
             all_records[coll].append(rec)
