@@ -790,6 +790,61 @@ Google accounts — demo rows are never marked verified.
 
 ---
 
+## 24. Content system — Markdown to live pages (no CMS, no code)
+
+Everything on the site that is *written* (as opposed to *built*) lives as
+Markdown under **`content/`**. One command turns it into static HTML with its
+own metadata, schema, breadcrumbs, TOC and internal links:
+
+```bash
+python3 scripts/build_content.py          # build once
+python3 scripts/build_content.py --strict # build + fail on any warning
+bash scripts/ci.sh                        # content → manifest → landing → gates
+```
+
+### What lives where
+
+| Folder | Becomes | Notes |
+|---|---|---|
+| `content/notes/*.md` | `note-<slug>.html` + cards on `study-notes.html` | + sibling `<slug>.pa.md` for the Punjabi edition |
+| `content/magazine/*.md` | `magazine-<slug>.html` + cards on `magazine.html` | cover, PDF, highlights, linked quiz |
+| `content/strategy/*.md` | `strategy-<slug>.html` + cards on `strategy.html` | study plans, revision, mistakes, motivation |
+| `content/sessions/*.md` | `session-<slug>.html` + cards on `live-sessions.html` | emits `Event` schema **only** with `date` + `start_time` |
+| `content/recruitment/*.md` | `recruit-<slug>.html` + cards on `recruitment.html` | official source required |
+| `content/pdfs/*.md` | record on `pdfs.html` (no page — the PDF *is* the artefact) | `file:` must exist |
+
+Each folder has its own `README.md` with the front-matter schema for that
+collection; `content/README.md` holds the hard rules.
+
+### The rules the builder enforces
+
+* `title` ≤ 60 chars, `description` 140–160 chars, ISO dates — it refuses to
+  write anything if a file is off (fail-fast, nothing half-built).
+* **Recruitment links must be official** (`.gov.in`, `.nic.in`, `pspcl.co.in`)
+  and every field is a *summary of the notification*, never a paraphrase of a
+  rumour. Eligibility / syllabus / dates blocks render only when the Markdown
+  carries them — empty means honest silence, not filler.
+* **No invented byline.** Author is the House of Aspirants editorial brand.
+* **No fabricated facts.** The builder validates structure, not truth: the
+  writer does that. Nothing is auto-generated.
+* Punjabi is opt-in per file (`<slug>.pa.md`); an English page never links to a
+  Punjabi page that does not exist.
+
+### What the build wires up automatically
+
+sitemap entry (0.6 priority) · `Article`/`Event`/`CollectionPage` JSON-LD ·
+BreadcrumbList · Open Graph + Twitter cards · reading time, difficulty, exam
+and subject badges · table of contents + scrollspy · related notes and related
+quizzes · previous/next · share row · homepage feed blocks (hidden until the
+first file exists) · stale-page cleanup.
+
+**Reserved, inactive until real data exists:** Previous Year Questions,
+Expected Questions and Mock paper pages. The types and templates are ready;
+nothing renders and nothing is linked until verifiable sources land — see
+`content/README.md`.
+
+---
+
 ### Support
 
 * Telegram: [t.me/HouseOfAspirant](https://t.me/HouseOfAspirant)
