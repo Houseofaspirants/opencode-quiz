@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "domain": "https://houseofaspirants.in",
+  "hubs": [
+    {
+      "collection": "notes",
+      "file": "study-notes.html",
+      "url": "https://houseofaspirants.in/study-notes",
+      "title": "Punjab Exam Study Notes | House of Aspirants",
+      "description": "Free subject-wise study notes for Punjab Police, PSSSB and PPSC aspirants - reading time, difficulty, exam tags, table of contents and related quizzes.",
+      "count": 0
+    },
+    {
+      "collection": "magazine",
+      "file": "magazine.html",
+      "url": "https://houseofaspirants.in/magazine",
+      "title": "Current Affairs Monthly Magazine | House of Aspirants",
+      "description": "Monthly current affairs magazine for Punjab exam aspirants - cover, PDF download, online reading, highlights, expected MCQs and a quiz for every issue.",
+      "count": 0
+    },
+    {
+      "collection": "strategy",
+      "file": "strategy.html",
+      "url": "https://houseofaspirants.in/strategy",
+      "title": "Exam Preparation Strategy & Study Plans | House of Aspirants",
+      "description": "Preparation strategy for Punjab aspirants - study plans, daily and weekly timetables, book guidance, revision, mock test and mistake analysis method.",
+      "count": 0
+    },
+    {
+      "collection": "sessions",
+      "file": "live-sessions.html",
+      "url": "https://houseofaspirants.in/live-sessions",
+      "title": "Weekly Live Guidance Sessions | House of Aspirants",
+      "description": "Upcoming and past House of Aspirants live sessions - topic, date, time, platform, join link, session summary, important questions and student doubts.",
+      "count": 0
+    },
+    {
+      "collection": "recruitment",
+      "file": "recruitment.html",
+      "url": "https://houseofaspirants.in/recruitment",
+      "title": "Punjab Recruitment Updates | House of Aspirants",
+      "description": "Recruitment records for Punjab posts - official notification link, eligibility, syllabus, selection process, important dates and preparation links.",
+      "count": 0
+    },
+    {
+      "collection": "pdfs",
+      "file": "pdfs.html",
+      "url": "https://houseofaspirants.in/pdfs",
+      "title": "Free PDFs for Punjab Exams | House of Aspirants",
+      "description": "Free downloadable PDFs for Punjab exam preparation - notes, question sets and revision sheets, each with a subject, exam tags and a direct download button.",
+      "count": 0
+    }
+  ],
+  "items": [],
+  "pdfs": [],
+  "counts": {
+    "notes": 0,
+    "magazine": 0,
+    "strategy": 0,
+    "sessions": 0,
+    "recruitment": 0,
+    "pdfs": 0
+  },
+  "generatedBy": "scripts/build_content.py"
+}
