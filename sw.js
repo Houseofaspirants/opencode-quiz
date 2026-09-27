@@ -9,7 +9,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v37";
+const VERSION = "hoa-v38";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -49,6 +49,14 @@ const SHELL_FILES = [
   "./pdfs.html",
   "./expected-mcqs.html",
   "./previous-year-questions.html",
+  /* Phase 4 - the six new collections plus the generated search page */
+  "./personal-notes.html",
+  "./subject-guides.html",
+  "./topic-guides.html",
+  "./daily-practice.html",
+  "./success-stories.html",
+  "./book-recommendations.html",
+  "./search.html",
   "./assets/css/style.css",
   "./assets/css/quiz.css",
   "./assets/css/leaderboard.css",

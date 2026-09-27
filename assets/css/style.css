@@ -1825,6 +1825,10 @@ a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text
   align-items: start;
 }
 .doc-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+/* Tags and categories are links when their archive page exists (Phase 4) -
+   they keep the badge look, so a reader only notices they move. */
+a.badge { text-decoration: none; transition: border-color .15s ease, color .15s ease; }
+a.badge:hover, a.badge:focus-visible { color: var(--brand); border-color: color-mix(in srgb, var(--brand) 55%, transparent); }
 .doc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
 
 /* Table of contents — first in the DOM (phones read it first), parked in the

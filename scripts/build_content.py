@@ -213,18 +213,20 @@ def parse_front_matter(text, where):
                 im = re.match(r"^\s+-\s+(.*)$", item_line)
                 payload = im.group(1)
                 # nested mapping inside a list item: "- k: v" then deeper "k: v"
-                if re.match(r"^[A-Za-z0-9_]+:\s*\S", payload):
+                # (YAML needs the space after the colon - that is what keeps a
+                # bare URL like https://… from being read as a key)
+                if re.match(r"^[A-Za-z0-9_]+:\s+\S", payload):
                     entry = {}
-                    km = re.match(r"^([A-Za-z0-9_]+):\s*(.*)$", payload)
+                    km = re.match(r"^([A-Za-z0-9_]+):\s+(.*)$", payload)
                     entry[km.group(1)] = _scalar(km.group(2))
                     while i < n:
                         nxt = lines[i]
                         ind = len(nxt) - len(nxt.lstrip())
                         if not nxt.strip() or ind <= first_indent:
                             break
-                        if not re.match(r"^[A-Za-z0-9_]+:\s*\S", nxt.strip()):
+                        if not re.match(r"^[A-Za-z0-9_]+:\s+\S", nxt.strip()):
                             break
-                        km2 = re.match(r"^\s*([A-Za-z0-9_]+):\s*(.*)$", nxt)
+                        km2 = re.match(r"^\s*([A-Za-z0-9_]+):\s+(.*)$", nxt)
                         entry[km2.group(1)] = _scalar(km2.group(2))
                         i += 1
                     items.append(entry)
@@ -1122,7 +1124,7 @@ REQUIRED_FIELDS = {
 ARTICLE_COMMON = [
     "slug", "language", "author", "reviewedBy", "updated", "difficulty",
     "readingTime", "category", "tags", "subjects", "subject", "exams", "exam",
-    "quiz", "coverImage", "featured", "draft",
+    "quiz", "pdf", "coverImage", "featured", "draft",
     # Phase 4 - the full platform content model, allowed on every document:
     # identity (id), presentation (subtitle / thumbnail), search & SEO
     # (seoTitle / seoDescription / keywords / summary), structure (toc),
@@ -1506,7 +1508,8 @@ def validate_meta(coll, slug, meta, where):
             else:
                 text = str(res)
                 url = (text.split("::", 1)[1] if "::" in text else text).strip()
-            if not url.startswith(("https://", "/")):
+            if not url or ("://" in url and not url.startswith("https://")) \
+                    or url.lower().startswith(("javascript:", "data:", "//")):
                 err(f"{where}: session resource must be an https:// URL or a "
                     f"site path (got {url!r})")
     if meta.get("poster") and not (
@@ -1714,6 +1717,11 @@ def article_node(rec, url):
         "breadcrumb": {"@id": f"{url}#breadcrumb"},
         "mainEntityOfPage": {"@id": f"{url}#webpage"},
     }
+    # Editorial keywords (front matter) travel into the schema as well as the
+    # meta tag, so the document and its JSON-LD never disagree about topic.
+    kw = [k.strip() for k in str(keywords_for(rec)).split(",") if k.strip()]
+    if kw:
+        node["keywords"] = ", ".join(kw)
     return node
 
 
@@ -1900,6 +1908,29 @@ def related_quizzes(record, index, landing, limit=3):
 # =============================================================================
 # 6. ITEM PAGE RENDERING
 # =============================================================================
+# =============================================================================
+# TAXONOMY - the tag / category pages that really exist (Phase 4)
+# Computed once from the English documents before anything renders, so a badge
+# on a document and the archive page it points at can never disagree: if the
+# slug is not in here, the badge stays plain text and no dead link ships.
+# =============================================================================
+TAXONOMY = {"tag": {}, "category": {}}
+
+
+def build_taxonomy(all_records):
+    TAXONOMY["tag"], TAXONOMY["category"] = {}, {}
+    for rows in all_records.values():
+        for r in rows:
+            if r.get("lang") != "en":
+                continue                # archives are English-language pages
+            for t in r.get("tags") or []:
+                TAXONOMY["tag"].setdefault(_slug_facet(t), str(t))
+            if r.get("category"):
+                TAXONOMY["category"].setdefault(_slug_facet(r["category"]),
+                                                str(r["category"]))
+    return TAXONOMY
+
+
 def badge_row(record):
     bits = []
     meta = record.get("meta", {})
@@ -1921,15 +1952,29 @@ def badge_row(record):
     if coll == "recruitment" and record.get("official_source"):
         bits.append(f'<span class="badge">Official · {esc(str(record["official_source"]))}</span>')
     if coll == "strategy" and meta.get("category"):
-        bits.append(f'<span class="badge badge-muted">{esc(str(meta["category"]))}</span>')
+        cat_slug = _slug_facet(str(meta["category"]))
+        if cat_slug in TAXONOMY["category"]:
+            bits.append(f'<a class="badge badge-muted" '
+                        f'href="archive-category-{esc(cat_slug)}.html">'
+                        f'{esc(str(meta["category"]))}</a>')
+        else:
+            bits.append(f'<span class="badge badge-muted">'
+                        f'{esc(str(meta["category"]))}</span>')
     if record.get("readingMinutes"):
         bits.append(f'<span class="badge badge-muted">{record["readingMinutes"]} min read</span>')
     if record.get("difficulty"):
         bits.append(f'<span class="badge badge-muted">{esc(str(record["difficulty"]))}</span>')
     for exam in record.get("exams", [])[:4]:
         bits.append(f'<span class="badge badge-muted">{esc(exam)}</span>')
+    # Tags link to their archive page when that page exists - the document and
+    # its tag page link to each other, which is the whole point of a taxonomy.
     for tag in record.get("tags", [])[:4]:
-        bits.append(f'<span class="badge badge-muted">{esc(tag)}</span>')
+        tag_slug = _slug_facet(tag)
+        if tag_slug in TAXONOMY["tag"]:
+            bits.append(f'<a class="badge badge-muted" '
+                        f'href="archive-tag-{esc(tag_slug)}.html">{esc(tag)}</a>')
+        else:
+            bits.append(f'<span class="badge badge-muted">{esc(tag)}</span>')
     return f'<div class="doc-badges">{"".join(bits)}</div>' if bits else ""
 
 
@@ -2044,8 +2089,20 @@ def chain_html(record, quizzes):
 # there, and the reasons a candidate was chosen are recorded in
 # data/content-graph.json.
 def explore_links(coll):
-    """Contextual links used to guarantee the >=5 internal-link floor."""
-    return EXPLORE_BY_COLL.get(coll, []) + list(EXPLORE_COMMON)
+    """Contextual links used to guarantee the >=5 internal-link floor.
+
+    A collection's own links and the three common ones can point at the same
+    page (the daily quiz is both "practice for this collection" and "practice"
+    in general), so the pool is deduplicated by page - a reader must never see
+    the same card twice in one Explore module."""
+    out, seen = [], set()
+    for href, eyebrow, title in list(EXPLORE_BY_COLL.get(coll, [])) + list(EXPLORE_COMMON):
+        key = str(href).split("#", 1)[0].split("?", 1)[0]
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append((href, eyebrow, title))
+    return out
 
 
 EXPLORE_COMMON = [
@@ -3083,8 +3140,13 @@ def _slug_facet(value):
 
 
 def filter_facets(records, index):
-    """{facet: [(value, label), ...]} for values that really occur, keeping
-    only facets with at least two distinct values to pick from."""
+    """{facet: [(value, label), ...]} for values that really occur.
+
+    Two conditions before a facet is worth showing: the list has to hold more
+    than one document (a single card has nothing to filter), and the facet
+    itself has to offer at least two distinct values to pick between."""
+    if len(records) < 2:
+        return {}
     found = {f: {} for f in FILTER_FACETS}
     for r in records:
         for e in r.get("exams") or []:
@@ -3722,8 +3784,12 @@ def write_search_index(items, index):
         "e": r["exams"],
         # Phase 4 search contract: summary, keywords and author are first-class
         # search fields, next to title, body, subject, category and exam tags.
-        "m": str(r.get("summary") or r.get("subtitle") or "")[:220],
-        "w": [str(w) for w in as_list(r.get("keywords"))][:12],
+        # The description is the last fallback so a row is never blank - the
+        # gate in scripts/seo_check.py checks exactly this.
+        "m": str(r.get("summary") or r.get("subtitle") or r.get("description") or "")[:220],
+        # keywords_for() falls back to the document's own exams, tags and
+        # subjects, so a row is never blank here either (seo_check gates this).
+        "w": [w.strip() for w in keywords_for(r).split(",") if w.strip()][:12],
         "a": str(r.get("author") or BYLINE),
         "f": str(r.get("difficulty") or ""),
     } for r in items]
@@ -3951,6 +4017,28 @@ def archives_page(items, index, popularity):
             months.setdefault(r["published"][:7], []).append(r)
         for ym in sorted(months, reverse=True):
             sections.append(group(month_label(ym), "By month", months[ym]))
+
+    # Taxonomy: one link per tag / category that has a page of its own. These
+    # are the outbound half of the relationship - the tag page links back to
+    # here - so nothing that exists is ever only reachable from the footer.
+    for heading, key, plural in (("Browse by tag", "tag", "tags"),
+                                 ("Browse by category", "category", "categories")):
+        facets = sorted(TAXONOMY[key].items(), key=lambda kv: kv[1].lower())
+        if not facets:
+            continue
+        chips = "".join(
+            f'<a class="badge badge-muted" '
+            f'href="archive-{key}-{esc(slug)}.html">{esc(lab)} →</a>'
+            for slug, lab in facets)
+        sections.append(
+            f'<section class="section" style="padding-top:0">'
+            f'<div class="container"><div class="section-head reveal"><div>'
+            f'<span class="eyebrow">Taxonomy</span>'
+            f"<h2>{esc(heading)}</h2>"
+            f"<p>Every {plural} with a published document opens its own page, "
+            f"kept in step with this archive by the build.</p>"
+            f'</div></div><div class="doc-badges">{chips}</div>'
+            f'</div></section>')
 
     html = head(ARCHIVES_TITLE, ARCHIVES_DESC, ARCHIVES_KEYWORDS, url,
                 "website", jsonld)
@@ -4555,6 +4643,9 @@ def main():
         info(f"{drafts} draft document(s) validated but not published")
 
     RECRUITMENT = all_records["recruitment"]
+    # Which tag / category archive pages will exist - decided before the first
+    # document renders so badges and archives can never disagree.
+    build_taxonomy(all_records)
     # Learning-path targets are the newest real page in each chain collection.
     CHAIN_TARGETS = {c: all_records[c][0] for c in
                      ("current-affairs", "magazine", "strategy",
@@ -4655,30 +4746,8 @@ def main():
         "url": pdf_url,
     } for r in all_records["pdfs"] + punjabi["pdfs"]]
 
-    # ---- stale output removal --------------------------------------------
-    removed = []
-    for fn in sorted(os.listdir(ROOT)):
-        if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and fn not in expected:
-            (ROOT / fn).unlink()
-            removed.append(fn)
-    pa_dir = ROOT / "pa"
-    if pa_dir.is_dir():
-        for fn in sorted(os.listdir(pa_dir)):
-            if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and \
-                    f"pa/{fn}" not in expected:
-                (pa_dir / fn).unlink()
-                removed.append(f"pa/{fn}")
-        leftovers = [n for n in os.listdir(pa_dir) if n != ".DS_Store"]
-        if not leftovers:
-            for n in os.listdir(pa_dir):
-                if n != ".DS_Store":
-                    (pa_dir / n).unlink()
-            try:
-                pa_dir.rmdir()
-            except OSError:
-                pass
-    if removed:
-        warn("stale content pages removed: " + ", ".join(removed))
+    # ---- stale output removal (runs LAST, after every writer above has
+    # registered what it generated - see the end of this function) ----------
 
     # ---- homepage feed + engine ------------------------------------------
     popularity = load_popularity()
@@ -4730,6 +4799,34 @@ def main():
         })
     info(f"index pages: {len(phase4_manifest)} generated "
          f"(authors, tags, categories, search)")
+
+    # ---- stale output removal --------------------------------------------
+    # Every writer above has registered its files in `expected` by now, so a
+    # page nobody produced any more (a deleted draft, a retired tag archive)
+    # is removed exactly once, here.
+    removed = []
+    for fn in sorted(os.listdir(ROOT)):
+        if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and fn not in expected:
+            (ROOT / fn).unlink()
+            removed.append(fn)
+    pa_dir = ROOT / "pa"
+    if pa_dir.is_dir():
+        for fn in sorted(os.listdir(pa_dir)):
+            if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and \
+                    f"pa/{fn}" not in expected:
+                (pa_dir / fn).unlink()
+                removed.append(f"pa/{fn}")
+        leftovers = [n for n in os.listdir(pa_dir) if n != ".DS_Store"]
+        if not leftovers:
+            for n in os.listdir(pa_dir):
+                if n != ".DS_Store":
+                    (pa_dir / n).unlink()
+            try:
+                pa_dir.rmdir()
+            except OSError:
+                pass
+    if removed:
+        warn("stale content pages removed: " + ", ".join(removed))
 
     # ---- Phase 3: content graph + homepage engine -------------------------
     articles, landing_pages = [], []

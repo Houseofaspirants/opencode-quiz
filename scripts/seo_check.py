@@ -661,7 +661,15 @@ if CONTENT_MANIFEST.exists():
         notes.append(f"content: {len(hubs_cm)} hubs + {len(items_cm)} document "
                      f"page(s) in sync with manifest, sitemap and chrome")
 
-        # --- generated index pages (archives.html) --------------------------
+        # --- generated index pages (archives.html, tag/category archives,
+        #     author profiles, search) ---------------------------------------
+        # Two rules differ by page kind: the site-level index pages (archives,
+        # author profiles, search) live in the chrome footer, while a tag or
+        # category archive is reached through archives.html and through the
+        # documents that carry its tag - and only archives.html is supposed to
+        # list every document (the rest list exactly their own slice).
+        arch_src = ((ROOT / "archives.html").read_text(encoding="utf-8")
+                    if (ROOT / "archives.html").exists() else "")
         for pg in cm.get("pages", []):
             f = pg.get("file", "")
             if not f or not (ROOT / f).exists():
@@ -672,7 +680,11 @@ if CONTENT_MANIFEST.exists():
             if GEN_MARK not in src_pg:
                 errors.append(f"{f}: generated page edited by hand - rerun "
                               f"scripts/build_content.py")
-            if f'href="{f}"' not in core:
+            tax_page = f.startswith(("archive-tag-", "archive-category-"))
+            if tax_page:
+                if f'href="{f}"' not in arch_src:
+                    errors.append(f"{f}: not linked from archives.html")
+            elif f'href="{f}"' not in core:
                 errors.append(f"chrome missing content index link {f}")
             want_pg = f"{DOMAIN}/{f[:-5]}"
             if pg.get("url") != want_pg:
@@ -681,10 +693,11 @@ if CONTENT_MANIFEST.exists():
                 errors.append(f"sitemap: missing content index page {want_pg}")
             if canonical(src_pg) != want_pg:
                 errors.append(f"{f}: canonical {canonical(src_pg)!r} != {want_pg!r}")
-            for p in items_cm:
-                if f'href="{p.get("file", "")}"' not in src_pg:
-                    errors.append(f"{f}: does not list document {p.get('file')}")
-                    break
+            if f == "archives.html":
+                for p in items_cm:
+                    if f'href="{p.get("file", "")}"' not in src_pg:
+                        errors.append(f"{f}: does not list document {p.get('file')}")
+                        break
 
         # --- language pairs: /slug <-> /pa/slug -----------------------------
         n_pairs = 0
@@ -754,12 +767,117 @@ if CONTENT_MANIFEST.exists():
                     for key in ("t", "d", "k", "l"):
                         if not row.get(key):
                             errors.append(f"search index: {row.get('u')} misses {key!r}")
+                # Phase 4 search contract: a document row also carries summary,
+                # keywords, author and difficulty - the fields search.html and
+                # the Ctrl+K overlay fold into their haystack.
+                doc_files = {str(p.get("file", "")) for p in items_cm}
+                n_fields = 0
+                for row in rows:
+                    if str(row.get("u", "")).lstrip("/") not in doc_files:
+                        continue
+                    n_fields += 1
+                    for key, what in (("m", "summary"), ("w", "keywords"),
+                                      ("a", "author")):
+                        if not row.get(key):
+                            errors.append(f"search index: {row.get('u')} misses "
+                                          f"its {what} ({key!r})")
                 if int(si.get("count", -1)) != len(rows):
                     errors.append("search index: count field != number of items")
-                notes.append(f"search: {len(rows)} document(s) indexed across "
-                             f"title, description, body, tags, subjects and exams")
+                notes.append(f"search: {len(rows)} page(s) indexed across title, "
+                             f"description, body, tags, subjects, exams, category "
+                             f"+ {n_fields} document row(s) also carrying summary, "
+                             f"keywords, author and difficulty")
             except json.JSONDecodeError as e:
                 errors.append(f"data/search-index.json: invalid JSON: {e}")
+
+        # --- Phase 4: bylines, taxonomy pages, filter bars ------------------
+        # The author registry decides which bylines get a profile page, the
+        # taxonomy decides which tag/category pages exist, and both are checked
+        # here rather than trusted from the builder that produced them.
+        authors = []
+        au_path = ROOT / "data" / "authors.json"
+        if not au_path.exists():
+            errors.append("data/authors.json missing - the byline system has no registry")
+        else:
+            try:
+                authors = json.loads(au_path.read_text(encoding="utf-8")).get("authors", [])
+            except json.JSONDecodeError as e:
+                errors.append(f"data/authors.json: invalid JSON: {e}")
+        by_name = {str(a.get("name")): a for a in authors if a.get("name")}
+        profiled = {str(a.get("id")) for a in authors
+                    if a.get("id") and a.get("profile")}
+        pages_cm = {p.get("file"): p for p in cm.get("pages", [])}
+        n_byline = 0
+        for p in items_cm:
+            f = p.get("file", "")
+            who = str(p.get("author") or "")
+            reg = by_name.get(who)
+            if who and reg is None:
+                errors.append(f"{f}: byline {who!r} is not in data/authors.json")
+                continue
+            aid = str((reg or {}).get("id") or "")
+            if aid in profiled:
+                n_byline += 1
+                if f"author-{aid}.html" not in pages_cm:
+                    errors.append(f"{f}: author-{aid}.html is not a registered page")
+                if (ROOT / f).exists() and \
+                        f'href="author-{aid}.html"' not in (ROOT / f).read_text(encoding="utf-8"):
+                    errors.append(f"{f}: no link to its profile author-{aid}.html")
+        notes.append(f"bylines: {n_byline} document(s) link a registered profile, "
+                     f"{len(profiled)} profile page(s) in the registry")
+
+        # Taxonomy: every tag and category in use has a page, and archives.html
+        # links it (English only - the Punjabi edition shares the same taxonomy).
+        tax = lambda v: re.sub(r"[^a-z0-9]+", "-", str(v).strip().lower()).strip("-")
+        want_tax = set()
+        for p in items_cm:
+            if p.get("lang") != "en":
+                continue
+            for t in p.get("tags") or []:
+                want_tax.add(f"archive-tag-{tax(t)}.html")
+            if p.get("category"):
+                want_tax.add(f"archive-category-{tax(p['category'])}.html")
+        arch_txt = ((ROOT / "archives.html").read_text(encoding="utf-8")
+                    if (ROOT / "archives.html").exists() else "")
+        for f in sorted(want_tax):
+            if f not in pages_cm:
+                errors.append(f"taxonomy: {f} not registered although a document carries it")
+            elif f'href="{f}"' not in arch_txt:
+                errors.append(f"taxonomy: {f} not linked from archives.html")
+        notes.append(f"taxonomy: {len(want_tax)} tag/category page(s) registered "
+                     f"and linked from archives.html")
+
+        # Filter bar: a listing with more than one thing to pick between must
+        # ship the chips (the JS and CSS halves are checked with the assets).
+        by_coll = {}
+        for p in items_cm:
+            by_coll.setdefault(str(p.get("collection")), []).append(p)
+        n_filtered = 0
+        for h in hubs_cm:
+            rows = by_coll.get(str(h.get("collection")), [])
+            if len(rows) < 2:
+                continue
+            vals = {}
+            for p in rows:
+                for facet, got in (("exam", p.get("exams")),
+                                   ("subject", p.get("subjects")),
+                                   ("language", [p.get("lang")]),
+                                   ("difficulty", [p.get("difficulty")]),
+                                   ("category", [p.get("category")]),
+                                   ("date", [str(p.get("published") or "")[:7]])):
+                    for v in got:
+                        if v:
+                            vals.setdefault(facet, set()).add(str(v))
+            if not any(len(v) > 1 for v in vals.values()):
+                continue                      # nothing to choose between
+            src_h = (ROOT / h.get("file", ""))
+            if not src_h.exists() or "data-filter-list" not in src_h.read_text(encoding="utf-8"):
+                errors.append(f"{h.get('file')}: {len(rows)} items with choices to "
+                              f"filter but no filter bar")
+            else:
+                n_filtered += 1
+        notes.append(f"filters: {n_filtered} hub listing(s) expose a chip bar "
+                     f"(exam, subject, language, difficulty, date, category)")
 
         # --- popularity seed + RSS feed ---------------------------------------
         pop_path = ROOT / "data" / "popularity.json"
