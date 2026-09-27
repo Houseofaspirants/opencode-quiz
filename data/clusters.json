@@ -1,0 +1,347 @@
+{
+  "$note": "CONTENT CONFIG for the subject-cluster landing pages (cluster-<id>.html). Each entry is a study lane the portal will publish as its own SEO page. Fields: id (url slug), name (H1/title/breadcrumb), subject (a subject id from subjects.json - drives Cluster -> Subject links), category (an optional lane id inside that subject - drives Cluster -> Category links), difficulty (preparation guidance: Foundation / Moderate / Advanced - this is editorial guidance, never a measured property of a question set), topics (the syllabus areas the cluster covers, used for the Related Topics cards), intro (the answer-first paragraph measured by the gate; keep it unique, factual and free of dates, marks or eligibility rules). Related quizzes are derived from the question folders on disk, so a cluster with no verified question file shows an honest empty state instead of a link. To publish a NEW cluster: add an entry here, run python3 scripts/build_landing_pages.py, then python3 scripts/seo_check.py.",
+  "clusters": [
+    {
+      "id": "indian-polity",
+      "name": "Indian Polity",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Preamble", "Fundamental Rights", "Directive Principles", "Union Parliament", "President and Governors", "Judiciary", "Emergency Provisions", "Panchayati Raj"],
+      "intro": "Indian Polity is the highest-yield block in every Punjab competitive exam because the questions are rule-based: once a provision is understood it can be recalled under time pressure. The area covers how the Constitution is written and amended, how Parliament and the state legislatures are formed, how the executive and the judiciary sit against each other, and what happens during an emergency. Most aspirants lose marks here not on hard questions but on near-miss pairs - which list is on which schedule, which power belongs to which house, which body is constitutional and which is merely statutory. The lanes below split the subject into the sections an exam actually asks from, so you can revise one at a time and test each immediately rather than reading the whole subject in one sitting."
+    },
+    {
+      "id": "indian-history",
+      "name": "Indian History",
+      "subject": "gk",
+      "category": "history",
+      "difficulty": "Foundation",
+      "topics": ["Indus Valley Civilisation", "Vedic Age", "Mauryan and Gupta Empires", "Delhi Sultanate", "Mughal Empire", "British Colonial Rule", "Freedom Movement", "Post-Independence India"],
+      "intro": "Indian History is a large but predictable area: exam questions cluster around a handful of dynasties, treaties, movements and turning points rather than the whole timeline. The subject is usually split into the ancient, medieval and modern periods, and most marks come from knowing who ruled when, what changed under them and which event followed which. The practical way to prepare is chronological - build the timeline first, then attach names, dates and outcomes to it, so that a question about any single period can be placed in seconds. The lanes below break the period into the sections that recur most often in Punjab papers, each with its own revision route, so you can work through the timeline in order instead of jumping between topics."
+    },
+    {
+      "id": "modern-history",
+      "name": "Modern History",
+      "subject": "gk",
+      "category": "history",
+      "difficulty": "Moderate",
+      "topics": ["Arrival of the Europeans", "Company Rule and Reforms", "Revolt of 1857", "Formation of the Indian National Congress", "Gandhian Era", "Quit India and Partition", "Freedom Fighters of Punjab"],
+      "intro": "Modern History carries the densest question density in Punjab papers because it links events, organisations and personalities in a single chain. Exams tend to ask about the founding of bodies, the sequence of movements, key acts and agreements, and the leaders associated with each phase. Because the period is short compared with the ancient and medieval eras, it rewards careful sequencing: if you can place an event on the timeline, you can usually eliminate two of the four options immediately. Punjab papers also lean on the freedom movement as it played out in the province, so regional participation belongs in the same revision pass as the national story. Work through the lanes below in order to keep the sequence intact."
+    },
+    {
+      "id": "ancient-history",
+      "name": "Ancient History",
+      "subject": "gk",
+      "category": "history",
+      "difficulty": "Advanced",
+      "topics": ["Indus Valley Civilisation", "Vedic Literature", "Buddhism and Jainism", "Mauryan Administration", "Gupta Art and Science", "South Indian Dynasties"],
+      "intro": "Ancient History is the most fact-heavy lane in the history section, built around civilisations, dynasties, religious movements, literature and administration. Questions usually test recognition rather than analysis - which site belongs to which culture, which ruler issued which order, which text belongs to which period. The volume of names is what makes it feel hard, so the reliable method is grouping: study one civilisation or dynasty at a time, list its distinguishing features, then test the list until recall is automatic. Sites, seals, inscriptions and literary works are recurring question types, so they are called out separately in the lanes below. Start with the Indus Valley, since it anchors the rest of the period and appears in nearly every paper that covers ancient India."
+    },
+    {
+      "id": "medieval-history",
+      "name": "Medieval History",
+      "subject": "gk",
+      "category": "history",
+      "difficulty": "Moderate",
+      "topics": ["Delhi Sultanate", "Mughal Empire", "Bhakti and Sufi Movements", "Vijayanagara and Bahmani", "Regional Kingdoms", "Medieval Art and Architecture"],
+      "intro": "Medieval History in Indian exams runs from the establishment of the Delhi Sultanate through the Mughal period, with regional kingdoms and the Bhakti and Sufi movements covered alongside. Questions cluster around rulers, battles, administrative measures, architectural styles and the religious movements of the era. The period rewards structured revision: build the sequence of dynasties first, then attach each ruler to the achievement or event that makes them examinable. Architecture is a frequent source of questions, so monuments are grouped with the ruler who built them rather than treated separately. The lanes below follow that order, moving from political history to culture and regional kingdoms, so a single pass leaves you with a timeline you can recall rather than a list of disconnected names."
+    },
+    {
+      "id": "geography",
+      "name": "Geography",
+      "subject": "gk",
+      "category": "geography-environment",
+      "difficulty": "Foundation",
+      "topics": ["Physical Features of India", "Rivers and Drainage", "Climate and Monsoon", "Soils and Agriculture", "Minerals and Industries", "Population and Settlement", "World Geography"],
+      "intro": "Geography is one of the most scoring sections in Punjab competitive exams because its questions are stable - physical features, rivers, climate, soils, minerals and maps change very little from year to year. That makes it an ideal area for one careful revision followed by repeated testing. Most questions are visual or locational: which river drains which plateau, which soil suits which crop, which region produces which mineral. A map-based study habit therefore pays off faster than reading prose. The lanes below separate the physical, Indian and world portions of the subject so you can build the basics first and then attach data to them. Work from landforms outward to climate, then to the human and economic geography that examiners combine with the physical base."
+    },
+    {
+      "id": "punjab-geography",
+      "name": "Punjab Geography",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "difficulty": "Foundation",
+      "topics": ["Rivers of Punjab", "Physiographic Regions", "Soil Types", "Agriculture and Crops", "Climate", "Transport and Infrastructure", "Districts and Boundaries"],
+      "intro": "Punjab Geography is a compact, high-return lane because the state has a small number of features that examiners return to repeatedly: its rivers, its physiographic divisions, its soils, its crops and its climate. Questions are usually direct and rarely require interpretation, which makes the area ideal for daily short sets rather than long study sessions. Because district names and administrative boundaries change over time, always confirm the current configuration in an official notification instead of relying on an old note. The lanes below start with the rivers, since the drainage pattern explains both the physiographic regions and the agriculture that follows from them. Revise in that order and the rest of the subject tends to fall into place."
+    },
+    {
+      "id": "punjab-history",
+      "name": "Punjab History",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "difficulty": "Moderate",
+      "topics": ["Early History of Punjab", "Sikh Gurus and the Sikh Movement", "Maharaja Ranjit Singh", "Anglo-Sikh Relations", "Punjab in the Freedom Movement", "Integration of Punjab"],
+      "intro": "Punjab History is a core part of the Punjab GK section and appears in some form in nearly every state-level paper. The questions concentrate on the succession of rulers, the major battles and treaties, the Sikh movement and its leadership, and the province's role in the freedom struggle. Because the period is politically dense, sequencing matters more than detail: knowing what came immediately before and after an event is usually enough to eliminate two options. Regional participation in the national movement is a recurring theme, so it should be revised alongside the broader freedom story rather than separately. The lanes below run in roughly chronological order, which keeps the cause-and-effect chain visible and makes revision far faster than studying isolated facts."
+    },
+    {
+      "id": "punjab-culture",
+      "name": "Punjab Culture",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "difficulty": "Foundation",
+      "topics": ["Festivals of Punjab", "Folk Dances", "Cuisine and Food", "Costume and Dress", "Music and Instruments", "Traditions and Customs"],
+      "intro": "Punjab Culture is among the most approachable lanes in the Punjab GK section because the material is concrete and easy to visualise: festivals, folk dances, dishes, dress, music and the customs that surround them. Questions are usually direct and rarely ambiguous, which makes this an area worth securing fully rather than partially. The practical risk is mixing up paired items - which dance belongs to which occasion, which instrument accompanies which form, which dish belongs to which festival. The lanes below group the subject by theme so each pair can be learned and tested together instead of in isolation. Short daily sets work better here than long sessions, since the goal is instant recognition rather than deep analysis."
+    },
+    {
+      "id": "punjab-art",
+      "name": "Punjab Art",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "difficulty": "Moderate",
+      "topics": ["Phulkari Embroidery", "Fresco Painting", "Punjabi Folk Art", "Handicrafts", "Architecture", "Art and Culture in Punjab"],
+      "intro": "Punjab Art covers the craft and visual-heritage side of the Punjab GK section: embroidery traditions, fresco and wall painting, handicrafts and the architecture associated with the region. Questions here are recognition-based, asking which art form belongs to which practice or region, so the material is best learned visually and by pairing rather than by reading descriptions at length. The lane overlaps slightly with Punjab Culture, and the two are often revised together because examiners draw from both. The important habit is to attach each art form to the technique that defines it, since that is what separates the options in a question. Work through the lanes below one form at a time and test each before moving on."
+    },
+    {
+      "id": "economy",
+      "name": "Economy",
+      "subject": "gk",
+      "category": "economy",
+      "difficulty": "Moderate",
+      "topics": ["Indian Economy Basics", "Banking and Finance", "Budget and Taxation", "Agriculture and Allied Sectors", "Employment and Poverty", "Economic Organisations"],
+      "intro": "Economy is the section aspirants most often avoid, yet in Punjab papers it stays fairly formulaic: definitions, institutions, indices, budget terminology and the structure of the Indian economy. The questions rarely demand calculation, they demand correct vocabulary - knowing what a fiscal deficit measures, which body publishes which index, which sector counts as organised. That makes vocabulary-first revision the fastest route to marks. Because economic data and policy change regularly, treat any dated figure as something to confirm against an official source rather than memorise permanently. The lanes below move from the structural basics to institutions and then to the current-policy vocabulary examiners use most often, so you build the language of the subject before you are asked to apply it."
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["Physics Basics", "Chemistry Basics", "Biology Basics", "Everyday Science", "Scientific Instruments", "Units and Measurements", "Inventions and Discoveries"],
+      "intro": "Science is a broad but forgiving lane in Punjab papers, drawing simple questions from physics, chemistry and biology together with everyday scientific knowledge and the instruments used to measure things. Most questions test recall of facts you either know or do not, so the efficient approach is breadth rather than depth: cover the common definitions, units, phenomena and discoveries, then repeat them as short sets until recognition is instant. Everyday science questions are especially worth securing because they tend to recur across years with only the wording changed. The lanes below split the subject into its three branches plus the cross-cutting topics examiners like to mix, which lets you revise a branch completely before moving on rather than switching context constantly."
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Moderate",
+      "topics": ["Cell and Cell Structure", "Human Body Systems", "Nutrition and Digestion", "Plants and Photosynthesis", "Diseases and Pathogens", "Genetics and Reproduction"],
+      "intro": "Biology carries a dependable share of the science section in Punjab competitive exams, with questions concentrated on cell structure, human body systems, nutrition, plant processes, diseases and the basics of inheritance. The subject is terminology-heavy, so most lost marks come from confusing adjacent terms rather than from genuinely hard material. The reliable method is to learn each system as a unit - its parts, its function and the disorder associated with its failure - because examiners typically build questions around exactly those three links. Disease and pathogen questions are a recurring pattern and are worth treating as a standalone list. The lanes below follow that structure, starting from the cell and building up to whole systems, so each concept rests on one you have already revised."
+    },
+    {
+      "id": "physics",
+      "name": "Physics",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Moderate",
+      "topics": ["Motion and Force", "Work Energy and Power", "Light and Optics", "Sound and Waves", "Electricity and Magnetism", "Units and Measurements", "Daily Life Physics"],
+      "intro": "Physics in Punjab competitive exams is applied rather than mathematical: questions ask which phenomenon explains an everyday observation, which unit measures a given quantity, or how two variables in a familiar situation relate to each other. That makes it a scoring lane for candidates who revise the concepts as relationships instead of formulas. Units and instruments are a recurring question type and are worth memorising completely, because those marks are unambiguous once the unit is known. Optics, sound and electricity generate most of the conceptual questions, and each is best learned through the single principle that governs it. The lanes below follow the standard order of the subject, so every new topic builds on a principle already revised rather than arriving as an isolated rule."
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Moderate",
+      "topics": ["Structure of Atom", "Elements and Compounds", "Acids Bases and Salts", "Periodic Classification", "Chemical Reactions", "Everyday Chemistry", "Metals and Non-metals"],
+      "intro": "Chemistry contributes a steady share of the science section, with questions drawn from the structure of matter, the periodic table, acids and bases, reactions and the chemistry encountered in daily life. The subject rewards grouping: once the common elements, their symbols and their characteristic reactions are organised, most questions become recognition rather than reasoning. Everyday chemistry is especially worth securing, because those questions recur with changed wording across papers. Definitions and distinctions - element versus compound, physical change versus chemical change - are frequent sources of avoidable errors, so they belong in your first pass rather than your last. The lanes below move from the fundamentals of matter to reactions and applications, keeping each step dependent only on what you have already covered."
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "subject": "gk",
+      "category": "geography-environment",
+      "difficulty": "Foundation",
+      "topics": ["Ecosystems", "Biodiversity", "Pollution and Control", "Climate and Weather", "Conservation Efforts", "Natural Resources", "Environmental Organisations"],
+      "intro": "Environment is one of the fastest lanes to prepare in the geography and environment section, because the material is limited, stable and repeatedly examined. Questions come from ecosystems, biodiversity, sources and effects of pollution, conservation measures and the bodies associated with environmental governance. The subject also links naturally to current affairs, since environmental news regularly supplies exam questions. Because the underlying science does not change year to year, a single careful revision followed by repeated testing is more effective than continuous re-reading. The lanes below separate the ecological basics from pollution, conservation and institutions, so you can secure the definitions first and then attach the organisations and efforts to them. Confirm any dated measure against an official source before treating it as settled knowledge."
+    },
+    {
+      "id": "computer",
+      "name": "Computer",
+      "subject": "computer",
+      "category": null,
+      "difficulty": "Foundation",
+      "topics": ["Hardware and Software", "Operating Systems", "MS Office", "Internet and Networking", "Computer Security", "Abbreviations and Terminology", "Input and Output Devices"],
+      "intro": "Computer is among the most scoring lanes available to a Punjab exam candidate, because the questions are concrete, repeat often and rarely require interpretation. Marks come from hardware and software classification, operating system basics, common applications, internet and networking terms, security vocabulary and the abbreviations that fill the section. Almost every question has a single unmistakable answer once the terminology is familiar, which makes this an ideal area for daily short sets rather than long study sessions. Abbreviations and device classification are the two highest-frequency patterns and are worth drilling until recall is instant. The lanes below run from the physical machine outward to software, applications and the internet, so each topic rests on the vocabulary introduced in the one before it."
+    },
+    {
+      "id": "reasoning",
+      "name": "Reasoning",
+      "subject": "reasoning",
+      "category": null,
+      "difficulty": "Moderate",
+      "topics": ["Number and Letter Series", "Coding and Decoding", "Direction Sense", "Blood Relations", "Syllogism", "Ranking and Order", "Analogy and Classification"],
+      "intro": "Reasoning is the section where preparation converts into marks most directly, because the question types are fixed and improvement comes from practice rather than from reading. Exams draw from a stable set of patterns - series, coding and decoding, direction, relationships, syllogisms, ranking and analogy - and the same patterns recur with only the numbers and letters changed. The correct approach is therefore type-by-type: master one pattern completely, then move to the next, rather than mixing them and never reaching fluency. Speed matters more here than in any other section, so timed practice should follow untimed accuracy rather than replace it. The lanes below are ordered from the simplest recognition tasks to the multi-step problems, so your accuracy builds before the clock is introduced."
+    },
+    {
+      "id": "english",
+      "name": "English",
+      "subject": "english",
+      "category": null,
+      "difficulty": "Moderate",
+      "topics": ["Grammar Rules", "Error Spotting", "Vocabulary and Synonyms", "Antonyms and Word Usage", "Reading Comprehension", "Sentence Improvement", "Fill in the Blanks"],
+      "intro": "English is a section where steady daily practice beats occasional study, because the marks come from rule familiarity and vocabulary range rather than from insight. Punjab papers draw from grammar rules, error spotting, vocabulary pairs, comprehension and sentence correction, and the same rules resurface repeatedly across years. The most efficient route is to treat grammar as a checklist - tense, agreement, prepositions, articles, voice - and clear each item with examples before moving on. Vocabulary grows only through spaced repetition, so synonyms and antonyms are best revised a little and often. The lanes below follow that structure, opening with the rules that generate the most questions and moving toward the reading-based items that depend on the same foundation."
+    },
+    {
+      "id": "punjabi",
+      "name": "Punjabi",
+      "subject": "punjabi",
+      "category": null,
+      "difficulty": "Moderate",
+      "topics": ["Punjabi Grammar", "Vocabulary and Word Meaning", "Idioms and Phrases", "Literature Basics", "Comprehension", "Script and Usage"],
+      "intro": "Punjabi carries real weight in Punjab state-level papers and is often the section that decides a ranking, because candidates who treat it casually tend to lose easy marks. The questions come from grammar, vocabulary, idioms, comprehension and a working knowledge of the literature associated with the language. Because the rules are finite, the subject rewards the same checklist approach used for grammar in any language: settle the rules first, then build vocabulary through repeated exposure rather than one-off memorisation. Idioms and fixed phrases are a recurring question type and are worth revising as pairs with their meanings. The lanes below move from grammar to vocabulary and then to reading and literature, so each step relies only on what has already been practised."
+    },
+    {
+      "id": "current-affairs",
+      "name": "Current Affairs",
+      "subject": "current-affairs",
+      "category": null,
+      "difficulty": "Foundation",
+      "topics": ["National and International Events", "Economy and Policy", "Science and Technology", "Sports and Events", "Appointments and Awards", "Books and Honours"],
+      "intro": "Current Affairs is the lane that rewards consistency more than any other, because the material turns over continuously and cannot be covered in one sitting. Exams draw from national and international events, policy decisions, appointments, awards, sports, science and the economy, and the same period of news tends to produce questions across several papers at once. The effective habit is a short daily session that ends with testing, since reading without recall produces very little in an exam hall. Because facts in this lane have a short shelf life, always confirm dates and details against an official notification or a reputable report rather than memorising them from a secondary note. The lanes below group the year by theme so you can revise one category at a time."
+    },
+    {
+      "id": "punjab-current-affairs",
+      "name": "Punjab Current Affairs",
+      "subject": "current-affairs",
+      "category": null,
+      "difficulty": "Foundation",
+      "topics": ["Punjab Schemes and Programmes", "State Appointments", "Awards and Honours", "Sports from Punjab", "Governance and Policy", "State Events"],
+      "intro": "Punjab Current Affairs is a focused, high-return lane because the pool of material is far smaller than national news, yet state-level papers draw on it heavily. Questions cluster around state schemes, appointments, awards, sporting achievement and governance decisions taken during the year. Because the volume is manageable, this is one of the few current-affairs areas that can realistically be covered completely rather than sampled. The main risk is staleness: state details change quickly, so confirm anything dated against an official government source before treating it as settled. The lanes below keep the material organised by theme, which makes a weekly revision pass practical - read once during the week, then test the whole set at the weekend until recall is automatic."
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["Sports Terminology", "Trophies and Cups", "Games and Venues", "Players and Records", "National and International Events", "Sports Awards"],
+      "intro": "Sports is a dependable scoring lane in the general awareness section, because the questions are factual, limited in number and slow to change. Exams ask about trophies and cups, the venues and organisers of major events, terminology, notable players and the awards associated with achievement in sport. Much of the material is stable across years, so one careful revision followed by repeated testing works better than continuous reading. The recurring trap is pairing errors - associating a trophy with the wrong sport or an award with the wrong discipline - which is why the lanes below group each item with the category it belongs to rather than listing them separately. Secure the trophies and the event calendar first, since those account for the largest share of questions."
+    },
+    {
+      "id": "awards",
+      "name": "Awards and Honours",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["Civilian Awards", "Literature and Arts Awards", "Film Awards", "Sports Awards", "National Honours", "Award Categories"],
+      "intro": "Awards and Honours is a compact general-awareness lane built almost entirely on recognition: which award belongs to which field, who administers it, and what category it sits in. The civilian, literary, film and sporting awards are the recurring groups, and questions usually test the field or the administering body rather than a recipient's biography. Because award names are easily confused, the practical method is to learn them in families - national civilian honours together, literary prizes together, sporting honours together - so the distinctions stay sharp under time pressure. Recipients change every year and should be confirmed against an official announcement rather than memorised from a secondary note. The lanes below follow that family structure, starting with the national honours that account for most questions."
+    },
+    {
+      "id": "books-authors",
+      "name": "Books and Authors",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["Notable Indian Authors", "Literary Prizes", "Landmark Works", "Regional Literature", "Recent Releases", "Author and Title Pairs"],
+      "intro": "Books and Authors is a small but reliable lane in the general awareness section, and it is best prepared as a set of pairs: title with author, author with field, work with prize. The questions are almost never interpretive, so the entire lane comes down to recall accuracy, which makes spaced repetition far more effective than re-reading. Because new titles enter the examinable pool each year, recent releases and prize citations should be confirmed against a reputable report before being committed to memory. Regional and Punjabi literature deserves its own pass, since state-level papers draw from it more heavily than national papers do. The lanes below group the material by period and field so each pair is learned in context rather than as an isolated fact."
+    },
+    {
+      "id": "important-days",
+      "name": "Important Days and Dates",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["National Observances", "International Observances", "Health and Environment Days", "Commemorative Days", "Theme and Purpose", "Days of the Year"],
+      "intro": "Important Days is one of the most scoring lanes in general awareness, because the material is fixed in advance and can be fully covered before the exam. Questions ask which observance falls on which date, what purpose it serves and occasionally what theme is associated with it. Since the list changes very little from year to year, the lane rewards a single careful compilation followed by repeated testing rather than continuous revision. The common error is confusing observances with similar purposes, so the lanes below group them by theme - health, environment, commemorations, international days - which keeps adjacent items distinguishable. Always confirm the date of a lesser-known observance against an official source, since secondary notes are the usual source of small but examinable errors."
+    },
+    {
+      "id": "constitution",
+      "name": "Indian Constitution",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Preamble", "Parts and Schedules", "Amendment Procedure", "Sources of the Constitution", "Union and its Territory", "Citizenship", "Fundamental Framework"],
+      "intro": "The Constitution is the anchor of the polity section: almost every other lane in Indian Polity - rights, institutions, emergencies, local government - is really a question about a provision in this document. Exam questions concentrate on the Preamble, the structure of Parts and Schedules, how the Constitution can be amended, which countries borrowed which feature, and how citizenship and the union's territory are defined. Because the subject is organised rather than factual, it rewards learning the architecture first: know which Part deals with which subject and you can usually place a question before you recall its detail. The lanes below follow the document's own order, so revising them in sequence leaves you with the same mental index that an examiner assumes you have."
+    },
+    {
+      "id": "fundamental-rights",
+      "name": "Fundamental Rights",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Right to Equality", "Right to Freedom", "Right against Exploitation", "Freedom of Religion", "Cultural and Educational Rights", "Right to Constitutional Remedies", "Limitations on Rights"],
+      "intro": "Fundamental Rights is the most frequently examined chapter of Indian Polity because the rights are concrete, individually named and easy to frame questions around. Exams ask which article secures which guarantee, which restriction applies to which right, and how the rights interact with reasonable limits. The commonest error is pairing a protection with the wrong article, so the practical method is to learn each right together with the freedoms and safeguards attached to it rather than memorising the list in isolation. Constitutional remedies tie the whole chapter together and explain why the rights are justiciable at all. The lanes below follow the groupings used in the Constitution itself, which keeps each right with its exceptions and makes revision in sequence far more durable than a standalone list."
+    },
+    {
+      "id": "directive-principles",
+      "name": "Directive Principles of State Policy (DPSP)",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Moderate",
+      "topics": ["Socialist Principles", "Gandhian Principles", "Liberal-Intellectual Principles", "Part IV of the Constitution", "Relationship with Fundamental Rights", "Promotion of Welfare State"],
+      "intro": "The Directive Principles sit in Part IV of the Constitution and set out the aims the state should pursue while governing. They are the classic near-miss topic in Indian Polity: candidates confuse them with Fundamental Rights, which are enforceable in court, while the Directive Principles are not. That single distinction generates a large share of the questions in this lane, so it should be settled before anything else. The principles are conventionally read in three groups - socialist, Gandhian and liberal-intellectual - and examiners like to ask which category a given provision belongs to. The lanes below work through that grouping first and then through the relationship between the two sets of provisions, which is where the harder questions are drawn from."
+    },
+    {
+      "id": "fundamental-duties",
+      "name": "Fundamental Duties",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Article 51A Framework", "Original Duties", "Added Duties", "Relation to Fundamental Rights", "Citizenship and Responsibility", "Constitutional Amendments"],
+      "intro": "Fundamental Duties is the smallest lane in Indian Polity and therefore one of the easiest to secure completely. The duties are listed in a single constitutional provision and describe what the Constitution expects of citizens alongside the rights it guarantees them. Questions tend to ask which duty was added by a later amendment, which duty relates to education or culture, and how the duties differ from rights in terms of enforceability. Because the list is short and closed, one careful pass followed by testing is enough to make it reliable under exam pressure. The lanes below cover the duties in the order they appear, then the amendments that extended the list, then the way duties and rights are meant to balance one another."
+    },
+    {
+      "id": "parliament",
+      "name": "Parliament",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Moderate",
+      "topics": ["Lok Sabha", "Rajya Sabha", "Session and Procedure", "Money Bill and Ordinary Bill", "Budget Process", "Committees and Powers", "Relationship with the Executive"],
+      "intro": "Parliament is a high-frequency lane because it connects the constitutional framework to the machinery of day-to-day government. Questions come from the composition and tenure of each house, how a bill becomes law, the special treatment given to money bills, the budget cycle, and the powers each house holds over the executive. Most candidates lose marks on procedural distinctions - which house can do what, and which stage requires which house's agreement - rather than on constitutional text. Because the subject is procedural, it is best learned as a sequence: introduction, discussion, passage, assent. The lanes below follow that sequence and keep the two houses side by side throughout, so the differences between them stay visible rather than being memorised separately."
+    },
+    {
+      "id": "president",
+      "name": "President of India",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Election of the President", "Executive and Legislative Powers", "Judicial and Diplomatic Powers", "Ordinance Power", "Emoluments and Tenure", "Vice-President and Impeachment"],
+      "intro": "The President is a compact, definition-driven lane and one of the most reliable sources of polity questions. The subject covers how the President is elected, what the office does constitutionally, which powers are exercised on the advice of the Council of Ministers, and how the office relates to the Vice-President and the judiciary. The recurring trap is assuming that every power named in the Constitution is actually exercised independently, which is why the division between constitutional authority and real-world advice should be settled early. Because the office appears in several other lanes - emergencies, appointments, parliamentary procedure - revising it early makes the rest of Indian Polity easier to place. The lanes below separate the elective, executive, legislative and emergency functions."
+    },
+    {
+      "id": "prime-minister",
+      "name": "Prime Minister and Council of Ministers",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Appointment of the Prime Minister", "Council of Ministers", "Cabinet and Portfolio", "Collective Responsibility", "Prime Minister vs President", "Parliamentary Accountability"],
+      "intro": "The Prime Minister and the Council of Ministers form the practical centre of the executive, and this lane is where most candidates finally understand how the constitutional text maps onto actual government. Questions ask how the Prime Minister is appointed, how ministers take office, what collective responsibility means, and how the executive answers to Parliament. The important structural point is that real executive authority sits here rather than at the ceremonial head of state, and most exam questions are designed to test exactly that understanding. Because the lane interacts closely with parliamentary procedure and the President's office, it is best revised alongside both. The lanes below move from appointment to composition to accountability, which is the order the questions themselves tend to follow."
+    },
+    {
+      "id": "judiciary",
+      "name": "Judiciary",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Moderate",
+      "topics": ["Supreme Court", "High Courts", "Subordinate Courts", "Judicial Review", "Public Interest Litigation", "Writ Jurisdiction", "Appointment of Judges"],
+      "intro": "The judiciary lane covers the structure of the courts, how judges are appointed, the powers each level holds and the doctrines that let courts review legislation. Questions typically ask which court can hear which matter, what judicial review means, how a writ differs from an ordinary suit, and how the judiciary sits against the legislature and the executive. Because the subject is constitutional rather than procedural detail, understanding the reasoning behind the doctrines is more useful than memorising case names. The lane also supplies questions to several other areas - constitutional remedies, emergencies and local government disputes - so it pays to revise it early. The lanes below start with the court structure and then move to the powers and safeguards that define it."
+    },
+    {
+      "id": "emergency-provisions",
+      "name": "Emergency Provisions",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Advanced",
+      "topics": ["National Emergency", "President's Rule in a State", "Financial Emergency", "Effect on Fundamental Rights", "Who can Proclaim", "Consequences for the Centre-State"],
+      "intro": "Emergency provisions are the hardest lane in Indian Polity because everything changes when they operate - the normal distribution of power, the relationship between the Centre and the states, and even the way fundamental rights behave. The three situations a national emergency, President's Rule in a state and a financial emergency have different triggers, different durations and different consequences, and examiners frame questions precisely on those differences. Because the lane is fully interconnected, it should be revised only after the President, Parliament and fundamental rights are secure, since every emergency question assumes them. The lanes below take one emergency at a time and then compare them directly, which is where the majority of the harder questions come from."
+    },
+    {
+      "id": "panchayati-raj",
+      "name": "Panchayati Raj",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Three-Tier Structure", "Gram Panchayat", "Panchayat Samiti", "Zila Parishad", "Constitutional Status", "Elections and Reservation", "Finance and Functions"],
+      "intro": "Panchayati Raj is a well-scoring lane because the structure is fixed, clearly named and rarely ambiguous. The subject covers the three tiers of rural local government, the constitutional amendment that gave panchayats their status, how members are elected, how reservations apply and what finances each tier handles. Questions usually ask which body sits at which level or which function belongs to which tier, so learning the hierarchy as a single picture is more effective than studying the three tiers separately. Because the lane also appears under local government, both are best revised together. The lanes below work upward from the village level to the district level, then cover the constitutional framework and the elections that fill the seats."
+    },
+    {
+      "id": "local-government",
+      "name": "Local Government",
+      "subject": "gk",
+      "category": "polity",
+      "difficulty": "Foundation",
+      "topics": ["Urban Local Bodies", "Municipalities and Corporations", "Ward Committees", "Constitutional Amendment", "Functions and Powers", "State Election Commission", "Centre-State Relations"],
+      "intro": "Local Government covers the urban counterpart to Panchayati Raj and completes the three-level picture of governance that examiners expect candidates to know. Questions ask how urban bodies are classified, which institution handles which function, how their elections are conducted and what the constitutional amendment behind them provides. The subject is structural rather than detailed, which makes it one of the quicker lanes to prepare completely. Because the two local government lanes are so closely related, revising them back to back keeps the urban and rural structures from blurring together - a common source of avoidable errors. The lanes below separate the institutions, their functions and the constitutional framework that governs them."
+    },
+    {
+      "id": "static-gk",
+      "name": "Static GK",
+      "subject": "gk",
+      "category": "others",
+      "difficulty": "Foundation",
+      "topics": ["National Symbols", "Capitals and Currencies", "Firsts in India", "Important Institutions", "Sports and Culture Facts", "Geographical Records"],
+      "intro": "Static GK is the backlog of facts that stay true year after year - symbols, capitals, currencies, notable firsts, institutions and records - and it is the lane where preparation returns the most marks per hour spent. Almost every paper includes a slice of it, the material does not expire, and the questions rarely allow partial credit, so full coverage matters more than deep understanding. Because the pool is finite and stable, the most efficient method is a single well-organised compilation that you test yourself on repeatedly until recall is instant. The lanes below group the material by type rather than by source, so each list can be cleared in one sitting. Treat anything that could change as something to confirm against an official source."
+    }
+  ]
+}

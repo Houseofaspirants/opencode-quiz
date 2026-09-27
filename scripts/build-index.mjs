@@ -470,12 +470,14 @@ if (site.url) {
       }
     }
   }
-  // Landing pages with no query-string variant: topic guides + exam pages.
-  // (Subject, category and quiz landing pages are covered by the loops above.)
+  // Landing pages with no query-string variant: topic guides, exam pages and
+  // subject clusters. (Subject, category and quiz landing pages are covered
+  // by the loops above.)
   for (const [key, p] of [...LANDING.entries()].sort()) {
     const kind = key.split("|")[0];
-    if (kind === "topic" || kind === "exam") {
-      urls.push({ loc: `${base}${p}`, p: kind === "topic" ? "0.8" : "0.85" });
+    if (kind === "topic" || kind === "exam" || kind === "cluster") {
+      const prio = { topic: "0.8", exam: "0.85", cluster: "0.7" }[kind];
+      urls.push({ loc: `${base}${p}`, p: prio });
     }
   }
   const xml =

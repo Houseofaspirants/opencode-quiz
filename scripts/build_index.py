@@ -562,12 +562,14 @@ if site.get("url"):
                     cat = "&category=" + quote(raw, safe="-_.!~*'()")
                 urls.append({"loc": f"{base}/quiz?subject={s['id']}&topic={t['id']}{cat}",
                              "p": "0.8"})
-    # Landing pages with no query-string variant: topic guides + exam pages.
-    # (Subject, category and quiz landing pages are covered by the loops above.)
+    # Landing pages with no query-string variant: topic guides, exam pages and
+    # subject clusters. (Subject, category and quiz landing pages are covered
+    # by the loops above.)
     for _kind, _path in sorted(LANDING.items()):
-        if _kind[0] in ("topic", "exam"):
+        if _kind[0] in ("topic", "exam", "cluster"):
             urls.append({"loc": base + _path,
-                         "p": "0.8" if _kind[0] == "topic" else "0.85"})
+                         "p": {"topic": "0.8", "exam": "0.85",
+                               "cluster": "0.7"}[_kind[0]]})
 
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',

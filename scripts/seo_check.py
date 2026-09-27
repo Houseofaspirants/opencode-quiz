@@ -66,7 +66,8 @@ else:
     # every generated landing file on disk must be registered (stale files are
     # as bad as missing ones: an unregistered page is invisible to the gate)
     for _f in sorted(ROOT.glob("[a-z]*-*.html")):
-        if (_f.name.startswith(("subject-", "category-", "topic-", "quiz-", "exam-"))
+        if (_f.name.startswith(("subject-", "category-", "topic-", "quiz-",
+                                "exam-", "cluster-"))
                 and _f.name not in landing_files):
             errors.append(f"{_f.name}: landing page on disk but absent from "
                           f"landing-manifest.json")
@@ -662,7 +663,7 @@ notes.append(f"aeo: {len(AEO_PAGES)} pages answer-first, {vis_q} FAQ pairs mirro
 # is already in PAGES, so title/description/canonical uniqueness, robots,
 # chrome, resource hints and schema-family rules above apply to them too.
 MIN_INTRO_WORDS = {"subject": 250, "category": 150, "topic": 60, "quiz": 60,
-                   "exam": 90}
+                   "exam": 90, "cluster": 100}
 
 
 def ld_nodes(page_html):
@@ -707,6 +708,10 @@ if landing_pages:
     subj_by_id = {s["id"]: s for s in idx_land.get("subjects", [])}
     exams_land = json.loads((ROOT / "data" / "exams.json").read_text(encoding="utf-8")).get("exams", [])
     exam_by_id = {e["id"]: e for e in exams_land}
+    _cl_path = ROOT / "data" / "clusters.json"
+    clusters_land = (json.loads(_cl_path.read_text(encoding="utf-8")).get("clusters", [])
+                     if _cl_path.exists() else [])
+    cluster_by_id = {c["id"]: c for c in clusters_land}
 
     # (subject_id, topic_id) -> topic record, walking flat topics + categories
     topic_by_key = {}
@@ -717,7 +722,7 @@ if landing_pages:
             for t in c.get("topics", []) or []:
                 topic_by_key[(s["id"], t["id"])] = t
 
-    LINK_RX = re.compile(r'href="((?:subject|category|topic|quiz|exam)-[a-z0-9-]+\.html)"')
+    LINK_RX = re.compile(r'href="((?:subject|category|topic|quiz|exam|cluster)-[a-z0-9-]+\.html)"')
     lpages = {r["file"]: r for r in landing_pages}
     landing_h = {f: (ROOT / f).read_text(encoding="utf-8")
                  for f in lpages if (ROOT / f).exists()}
@@ -929,6 +934,42 @@ if landing_pages:
         miss_t = [t for t in want_topics[:6] if t not in got]
         if miss_t:
             errors.append(f"{f}: Exam->Topic links missing {miss_t}")
+
+    # --- Cluster: lane page must link its subject, its lane and its siblings --
+    for r in [x for x in landing_pages if x["type"] == "cluster"]:
+        f, h = r["file"], landing_h.get(r["file"], "")
+        if not h:
+            continue
+        cid = r.get("entity", "")
+        c = cluster_by_id.get(cid)
+        if c is None:
+            errors.append(f"{f}: {cid} not found in data/clusters.json")
+            continue
+        if not re.search(r"<h2>Inside ", h):
+            errors.append(f"{f}: Related Topics section (Inside ...) missing")
+        if not re.search(r'class="landing-intro"', h):
+            errors.append(f"{f}: answer-first intro block missing")
+        got = links_of.get(f, [])
+        sid = c.get("subject")
+        if sid in subj_by_id and f"subject-{sid}.html" not in got:
+            errors.append(f"{f}: Cluster->Subject link missing")
+        cat = c.get("category")
+        if sid and cat and f"category-{sid}-{cat}.html" not in got:
+            errors.append(f"{f}: Cluster->Category link missing")
+        if any(x.get("subject") == sid and x["id"] != cid for x in clusters_land) \
+                and not any(g.startswith("cluster-") for g in got):
+            errors.append(f"{f}: Cluster->Cluster links missing (lane subgraph unreachable)")
+        if faq_count(h) < 3:
+            errors.append(f"{f}: needs >= 3 FAQ questions (has {faq_count(h)})")
+
+    # --- no orphan cluster pages: a lane nobody links to is invisible ---------
+    inbound = {}
+    for _f, _dsts in links_of.items():
+        for _d in _dsts:
+            inbound.setdefault(_d, set()).add(_f)
+    for r in [x for x in landing_pages if x["type"] == "cluster"]:
+        if r["file"] not in inbound:
+            errors.append(f"{r['file']}: no inbound link from any landing page (orphan)")
 
     # --- sitemap must never carry query-string (duplicate) URLs ------------
     for u in locs:

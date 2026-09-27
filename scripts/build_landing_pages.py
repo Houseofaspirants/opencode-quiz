@@ -56,7 +56,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://houseofaspirants.in"
 DATA = os.path.join(ROOT, "data")
 
-GENERATED_PREFIXES = ("subject-", "category-", "topic-", "quiz-", "exam-")
+GENERATED_PREFIXES = ("subject-", "category-", "topic-", "quiz-", "exam-",
+                      "cluster-")
 
 WARNINGS = []
 LINKS = []          # every internal link the generator emits (for the report)
@@ -203,13 +204,20 @@ def section_head(eyebrow, title, hint="", button=""):
 
 
 def card_grid(items, cols=3):
-    """items: [(title, blurb, href, meta)] -> card grid (h3 inside an h2 section)."""
+    """items: [(title, blurb, href, meta)] -> card grid (h3 inside an h2 section).
+
+    An empty href renders a plain <h3>: syllabus-area cards are labels for
+    content that is not its own page, and a link that goes nowhere would be a
+    soft 404 (and would be caught by seo_check's internal-link audit).
+    """
     if not items:
         return ""
     out = [f'        <div class="grid grid-{cols}">']
     for title, blurb, href, meta in items:
         out.append('          <article class="card card-pad">')
-        out.append(f'            <h3><a class="ilink" href="{esc(href)}">{esc(title)}</a></h3>')
+        head = (f'<a class="ilink" href="{esc(href)}">{esc(title)}</a>' if href
+                else esc(title))
+        out.append(f"            <h3>{head}</h3>")
         if blurb:
             out.append(f'            <p class="muted">{esc(blurb)}</p>')
         if meta:
@@ -395,6 +403,7 @@ SITE_PASS = int(site.get("passPercent") or 40)
 
 articles = read_json(os.path.join(DATA, "articles.json")).get("articles", [])
 exams_cfg = read_json(os.path.join(DATA, "exams.json")).get("exams", [])
+clusters_cfg = read_json(os.path.join(DATA, "clusters.json")).get("clusters", [])
 copy_cfg = read_json(os.path.join(DATA, "seo_copy.json"))
 copy_subjects = copy_cfg.get("subjects", {})
 copy_categories = copy_cfg.get("categories", {})
@@ -422,6 +431,10 @@ def quiz_file(sid, tid):
 
 def exam_file(eid):
     return f"exam-{eid}.html"
+
+
+def cluster_file(cid):
+    return f"cluster-{cid}.html"
 
 
 def rel_url(filename):
@@ -758,6 +771,20 @@ def build_subject(s):
     for e in ex_list:
         link_record(filename, "subject", exam_file(e["id"]), "exam", e["name"])
 
+    # Subject -> Cluster. Without this the cluster pages would only ever link
+    # to each other, leaving the whole lane subgraph unreachable from the hub.
+    subj_clusters = [x for x in clusters_cfg if x.get("subject") == sid]
+    if subj_clusters:
+        body.append(card_section(
+            "Study lanes", f"What {name} covers",
+            "Each lane is its own page: the syllabus areas it covers and what to run first.",
+            [(x["name"],
+              "Covers " + ", ".join((x.get("topics") or ["the core syllabus"])[:3]),
+              cluster_file(x["id"]), x.get("difficulty") or "")
+             for x in subj_clusters[:12]]))
+        for x in subj_clusters:
+            link_record(filename, "subject", cluster_file(x["id"]), "cluster", x["name"])
+
     # Subject -> Subject
     body.append(card_section(
         "Keep going", "Related subjects",
@@ -932,6 +959,21 @@ def build_category(s, c):
             [(e["name"], e["summary"], exam_file(e["id"]), "") for e in ex_list]))
         for e in ex_list:
             link_record(filename, "category", exam_file(e["id"]), "exam", e["name"])
+
+    # Category -> Cluster (guarantees every lane has an inbound link even when
+    # the parent subject page caps how many lanes it shows)
+    lane_clusters = [x for x in clusters_cfg
+                     if x.get("subject") == sid and x.get("category") == cid]
+    if lane_clusters:
+        body.append(card_section(
+            "Study lanes", f"Study lanes inside {name}",
+            "The syllabus areas this lane splits into - each one is its own page.",
+            [(x["name"],
+              "Covers " + ", ".join((x.get("topics") or ["the core syllabus"])[:3]),
+              cluster_file(x["id"]), x.get("difficulty") or "")
+             for x in lane_clusters]))
+        for x in lane_clusters:
+            link_record(filename, "category", cluster_file(x["id"]), "cluster", x["name"])
 
     body.append(card_section(
         "Keep going", "Related subjects",
@@ -1584,6 +1626,22 @@ def build_exam(e):
         for x in related:
             link_record(filename, "exam", exam_file(x["id"]), "exam", x["name"])
 
+    # Exam -> Cluster: the syllabus lanes this paper draws on, so an exam page
+    # reaches the cluster subgraph instead of stopping at its subjects.
+    ex_clusters = [x for x in clusters_cfg
+                   if x.get("subject") in subj_ids
+                   or (cat_ids and x.get("category") in cat_ids)][:6]
+    if ex_clusters:
+        body.append(card_section(
+            "Study lanes", f"Lanes to revise for {name}",
+            "The syllabus areas this paper draws on - open one and start there.",
+            [(x["name"],
+              "Covers " + ", ".join((x.get("topics") or ["the core syllabus"])[:3]),
+              cluster_file(x["id"]), x.get("difficulty") or "")
+             for x in ex_clusters]))
+        for x in ex_clusters:
+            link_record(filename, "exam", cluster_file(x["id"]), "cluster", x["name"])
+
     body.append(section_wrap(cta_card(
         "Keep practising", f"Start preparing for {name}",
         "Open the exam hub for the full list, or take today's mixed set right now.",
@@ -1633,6 +1691,213 @@ def build_exam(e):
     register(filename, url, "exam", eid, title, description, h1, words(intro_html),
              {"WebPage", "BreadcrumbList", "FAQPage"})
     info(f"exam     {filename}  subjects={len(exam_subjects)} topics={len(derived)}")
+    return filename
+
+
+# =========================================================== CLUSTER PAGE ===
+def build_cluster(c):
+    """Subject-cluster landing page (data/clusters.json).
+
+    A cluster is a syllabus lane, not a question folder, so its Related Topics
+    are the areas an exam draws from rather than links to pages of their own.
+    Every anchor this emits is derived from something that really exists on
+    disk; where no verified question file covers the lane the page says so
+    instead of pointing at a quiz that is not there.
+    """
+    cid, name = c["id"], c["name"]
+    filename = cluster_file(cid)
+    url = u(filename)
+    subj = SUBJECTS_BY_ID.get(c.get("subject"))
+    cat_id = c.get("category")
+    cat = None
+    if subj and cat_id:
+        for cc in subj.get("categories", []):
+            if isinstance(cc, dict) and cc.get("id") == cat_id:
+                cat = cc
+    subj_name = subj["name"] if subj else ""
+    difficulty = (c.get("difficulty") or "Foundation").strip()
+    topics = [str(t).strip() for t in (c.get("topics") or []) if str(t).strip()]
+    intro_text = (c.get("intro") or "").strip()
+
+    # --- links that are real: sibling lanes, live question sets, exams --------
+    siblings = [x for x in clusters_cfg
+                if x["id"] != cid and x.get("subject") == c.get("subject")]
+    if cat_id:
+        same_lane = [x for x in siblings if x.get("category") == cat_id]
+        siblings = same_lane + [x for x in siblings if x not in same_lane]
+    siblings = siblings[:6]
+
+    live = []
+    if subj:
+        for cc, t in live_topics(subj):
+            if cat_id and (not cc or cc.get("id") != cat_id):
+                continue
+            live.append((subj, cc, t))
+
+    related_exams = [x for x in exams_cfg
+                     if c.get("subject") in (x.get("subjects") or [])
+                     or (cat_id and cat_id in (x.get("categories") or []))][:4]
+    guides = guides_for([subj["id"]] if subj else [], cat_id)
+
+    # --- metadata -------------------------------------------------------------
+    title = fit_title(f"{name}: Syllabus, Topics and Free MCQs",
+                      f"{name}: Topics and Free MCQs")
+    description = fit_desc(
+        f"Study {name} for Punjab competitive exams - what the syllabus covers, which "
+        f"areas to revise first and the free MCQ practice behind them.")
+    kw = keywords(f"{name} syllabus", f"{name} topics", f"{name} questions",
+                  f"{name} MCQs", "Punjab exam preparation")
+    h1 = f"{name} - Study Guide and Free MCQs"
+    lead = f"What {name} covers, which areas to revise first, and where to practise them."
+    answer = (f"{name} is a study lane under {subj_name or 'this portal'}"
+              + (f", inside {cat['name']}, " if cat else " ")
+              + f"split into {len(topics)} syllabus areas so you can revise one at a "
+                f"time instead of reading the whole subject. Each area links back to "
+                f"the page that hosts it, and question sets for this lane appear here "
+                f"as they are verified.")
+
+    intro_html = (f'        <div class="landing-intro" data-landing="intro">\n'
+                  + join_paras([intro_text]) + "\n        </div>")
+
+    facts = facts_grid([("Syllabus areas", str(len(topics))),
+                        ("Study lane", subj_name or "-"),
+                        ("Preparation level", difficulty),
+                        ("Live question sets", str(len(live)))])
+
+    body = []
+    # Answer-first intro (measured on .landing-intro by the gate)
+    body.append(section_wrap(
+        section_head("About this cluster", f"What {name} covers",
+                     "Why the lane is split this way and the order to work through it.")
+        + "\n" + intro_html))
+
+    # Related topics are syllabus areas, not pages: plain <h3>, never a dead link.
+    if topics:
+        body.append(section_wrap(
+            section_head("Related topics", f"Inside {name}",
+                         "Syllabus areas this lane is built from - revise them one at a time.")
+            + "\n" + card_grid([(t, "", "", "") for t in topics], 3)))
+
+    where = []
+    if subj:
+        where.append((subj_name, subj.get("description", ""),
+                      subject_file(subj["id"]), "Subject"))
+        link_record(filename, "cluster", subject_file(subj["id"]), "subject", subj_name)
+    if subj and cat:
+        where.append((cat["name"], f"Every lane inside {subj_name}",
+                      category_file(subj["id"], cat["id"]), "Lane"))
+        link_record(filename, "cluster", category_file(subj["id"], cat["id"]),
+                    "category", cat["name"])
+    if where:
+        body.append(card_section(
+            "Start here", f"Where {name} sits",
+            "Open the subject library, or the lane this cluster belongs to.",
+            where, cols=2))
+
+    if live:
+        body.append(card_section(
+            "Question sets", f"Quiz sets for {name}",
+            "Verified question files that sit inside this lane.",
+            [(t["name"], sub["name"] + (f" > {cc['name']}" if cc else ""),
+              quiz_file(sub["id"], t["id"]), f"{t.get('count', 0)} MCQs")
+             for sub, cc, t in live]))
+        for sub, cc, t in live:
+            link_record(filename, "cluster", quiz_file(sub["id"], t["id"]), "quiz", t["name"])
+    else:
+        body.append(section_wrap(note_box(
+            "No question file covers this lane yet",
+            "Topic sets are published as they are verified, so this page does not link to "
+            "a quiz that does not exist. The subject page lists what is live now.",
+            [(subj_name, subject_file(subj["id"])) if subj
+             else ("All subjects", "index.html#subjects")])))
+        if subj:
+            link_record(filename, "cluster", subject_file(subj["id"]), "subject", subj_name)
+
+    if siblings:
+        body.append(card_section(
+            "More study lanes", f"Lanes alongside {name}",
+            "Same subject, different area - jump across without going back to the hub.",
+            [(x["name"],
+              "Covers " + ", ".join((x.get("topics") or ["the core syllabus"])[:3]),
+              cluster_file(x["id"]), x.get("difficulty") or "")
+             for x in siblings]))
+        for x in siblings:
+            link_record(filename, "cluster", cluster_file(x["id"]), "cluster", x["name"])
+
+    if related_exams:
+        body.append(card_section(
+            "Related exams", f"Papers that draw on {name}",
+            "Same subject or lane, different recruitment.",
+            [(x["name"], x["summary"], exam_file(x["id"]), "") for x in related_exams]))
+        for x in related_exams:
+            link_record(filename, "cluster", exam_file(x["id"]), "exam", x["name"])
+
+    if guides:
+        body.append(card_section("Read next", f"Study guides for {name}",
+                                 "Written strategy that pairs with the lanes above.",
+                                 guide_cards(guides)))
+
+    body.append(section_wrap(cta_card(
+        "Keep practising", f"Practise {name} now",
+        "Open the subject hub for the full library, or take today's mixed set.",
+        [(subj_name or "All subjects",
+          subject_file(subj["id"]) if subj else "index.html#subjects"),
+         ("Daily Quiz", "quiz.html?mode=daily"),
+         ("Mock Tests", "mock.html"),
+         ("Study guides", "articles.html")]),
+        pad_top=False))
+
+    # ---- FAQ -----------------------------------------------------------------
+    area_list = ", ".join(topics[:4]) + (" and the rest" if len(topics) > 4 else "")
+    q1a = (f"{name} covers {area_list}. The lane sits under "
+           f"{subj_name or 'the subject library'}"
+           + (f", inside {cat['name']}. " if cat else ". ")
+           + "Every area listed above links back to the page that hosts it.")
+    q2a = (f"Revise one area at a time and test it before moving on - the topics above are "
+           f"ordered so each rests on the one before it. Once they are familiar, switch to "
+           f"timed practice: sets run at {SITE_Q_SECONDS} seconds a question and clear at "
+           f"{SITE_PASS}% accuracy.")
+    q3a = ("Yes. Every quiz, mock test and study guide on House of Aspirants is free, and no "
+           "sign-in is needed to open a set - Google sign-in is optional and only saves "
+           "scores, bookmarks and progress.")
+    faqs = [
+        (f"What does {name} cover?", q1a),
+        (f"How should I study {name}?", q2a),
+        ("Is the material on this portal free?", q3a),
+    ]
+
+    crumbs = [("Home", "index.html", f"{BASE}/")]
+    # A lane can share its subject's name (Computer, English, Punjabi ...); two
+    # identical crumbs in a row read as a bug, so the subject level is dropped
+    # when it adds nothing to the trail.
+    if subj and subj_name != name:
+        crumbs.append((subj_name, subject_file(subj["id"]), u(subject_file(subj["id"]))))
+        # Same rule one level down: the Economy lane sits inside the Economy
+        # category, and a level that repeats the next one adds no orientation.
+        if cat and cat["name"] != name:
+            crumbs.append((cat["name"], category_file(subj["id"], cat["id"]),
+                           u(category_file(subj["id"], cat["id"]))))
+    crumbs.append((name, None, None))
+
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                   has_part=[{"@id": f"{url}#faq"}]),
+        crumb_ld(url, [(l, i) for l, _, i in crumbs]),
+        faq_ld(url, faqs),
+    ]})]
+
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="Study lane", h1=h1, lead=lead,
+        answer=answer, facts=facts, body="\n".join(b for b in body if b),
+        faq=faq_section("Questions", f"{name} - common questions",
+                        "Answered the way this portal actually behaves.", faqs))
+
+    write_page(filename, html)
+    register(filename, url, "cluster", cid, title, description, h1, words(intro_html),
+             {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"cluster  {filename}  topics={len(topics)} live={len(live)} "
+         f"siblings={len(siblings)} exams={len(related_exams)}")
     return filename
 
 
@@ -1793,8 +2058,9 @@ def write_report(records):
         "topic": ("/topic-\<subject\>-\<topic\>", "`topic-<subject>-<topic>.html`"),
         "quiz": ("/quiz-\<subject\>-\<topic\>", "`quiz-<subject>-<topic>.html`"),
         "exam": ("/exam-\<id\>", "`exam-<id>.html`"),
+        "cluster": ("/cluster-\<id\>", "`cluster-<id>.html`"),
     }
-    for kind in ("subject", "category", "topic", "quiz", "exam"):
+    for kind in ("subject", "category", "topic", "quiz", "exam", "cluster"):
         if by_type.get(kind):
             add(f"| {kind.capitalize()} | {by_type[kind]} | {patterns[kind][1]} |")
     add(f"| **Total** | **{len(records)}** | emitted at repo root (relative assets, "
@@ -1843,6 +2109,7 @@ def write_report(records):
     add("| Topic | `<Topic>: Topic Guide and MCQ Practice` |")
     add("| Quiz | `<Topic> Quiz (<n> MCQs) - Free Online Test` |")
     add("| Exam | `<Exam>: Preparation, Subjects and Free MCQs` |")
+    add("| Cluster | `<Cluster>: Syllabus, Topics and Free MCQs` |")
     add("")
     add("All landing metadata is **static HTML** - it is present before JavaScript runs, so "
         "crawlers never have to render the page to see the title, description, canonical or "
@@ -1956,6 +2223,8 @@ def main():
             built.append(build_quiz(s, c, t))
     for e in exams_cfg:
         built.append(build_exam(e))
+    for c in clusters_cfg:
+        built.append(build_cluster(c))
 
     expected = set(built)
     removed = []
