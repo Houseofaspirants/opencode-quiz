@@ -122,7 +122,19 @@ def fit_desc(base):
     """Pad / trim a meta description into the 140-160 character window."""
     d = " ".join(str(base).split())
     if len(d) > 160:
-        d = d[:159].rsplit(" ", 1)[0].rstrip(",;:- ")
+        # Prefer the longest COMPLETE unit that fits the window: a whole
+        # sentence, else a whole clause, else a whole word - and always close
+        # the sentence, because an open clause is the bug this replaced.
+        head = d[:160]
+        cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "))
+        if cut >= 130:
+            d = head[:cut + 1]
+        else:
+            cut = max(head.rfind(", "), head.rfind("; "), head.rfind(" - "))
+            if cut >= 120:
+                d = head[:cut].rstrip() + "."
+            else:
+                d = head[:159].rsplit(" ", 1)[0].rstrip(",;:- ") + "."
     # Top up with the LONGEST natural tail that still fits the 160 ceiling,
     # repeating with shorter tails until the 140 floor is cleared. (A single
     # `break` here is what once left 132-char descriptions below the window.)
@@ -137,6 +149,9 @@ def fit_desc(base):
         tail = max(cands, key=len)
         seen.add(d + tail)
         d += tail
+    # Belt and braces: never ship a description that stops mid-sentence.
+    if d and not d.endswith((".", "!", "?", ":")):
+        d = (d + "." if len(d) < 160 else d[:159].rsplit(" ", 1)[0] + ".")
     return d
 
 
@@ -1072,7 +1087,7 @@ def build_topic(s, c, t):
     title = fit_title(f"{name}: Topic Guide and MCQ Practice",
                       f"{name} MCQ Practice")
     description = fit_desc(
-        f"{name} ({s['name']}) - why it is asked, what to expect, expected questions and "
+        f"{name} ({s['name']}) - why it is asked, what to expect, and "
         f"{count} free MCQs with instant answers and full explanations.")
     kw = keywords(name, f"{name} MCQs", f"{s['name']} quiz",
                   f"{cat_name} MCQs" if cat_name else "", "Punjab exam MCQs")
@@ -1946,6 +1961,25 @@ def check_unique(records):
     return dupes
 
 
+def check_descriptions(records):
+    """Every generated meta description must be a complete sentence inside the
+    140-160 window. fit_desc() used to hard-trim at 159 chars and only close
+    the sentence below 140 chars, which shipped 13 mid-sentence fragments -
+    this check makes that regression impossible to miss."""
+    bad = []
+    for r in records:
+        d = (r.get("description") or "").strip()
+        if not d:
+            continue
+        if not d.endswith((".", "!", "?")):
+            bad.append(f"{r['file']}: description stops mid-sentence: ...{d[-48:]!r}")
+        elif len(d) > 160:
+            bad.append(f"{r['file']}: description is {len(d)} chars (max 160)")
+        elif len(d) < 140:
+            bad.append(f"{r['file']}: description is {len(d)} chars (min 140)")
+    return bad
+
+
 def write_manifest(records):
     path = os.path.join(DATA, "landing-manifest.json")
     payload = {
@@ -2240,6 +2274,10 @@ def main():
     for d in dupes:
         warn(d)
 
+    desc_problems = check_descriptions(PAGES)
+    for d in desc_problems:
+        warn(d)
+
     manifest_path = write_manifest(PAGES)
     run_builder()          # fold landing paths into index.json + sitemap.xml
     report_path, _dupes, link_stats = write_report(PAGES)
@@ -2253,6 +2291,9 @@ def main():
     print(f"  report        : SEO-LANDING-REPORT.md")
     if dupes:
         print(f"  !! {len(dupes)} metadata collision(s) - seo_check.py will fail")
+        return 1
+    if desc_problems:
+        print(f"  !! {len(desc_problems)} malformed meta description(s) - see above")
         return 1
     return 0
 
