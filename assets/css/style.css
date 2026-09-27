@@ -1046,15 +1046,24 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .subjects-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr 1.2fr; }
+  .footer-grid { grid-template-columns: 1.35fr 1fr 1fr 1fr 1.1fr; }
 }
 
-/* 900–1099 is the tightest desktop band: the full nav and the header actions
-   have to share one 66px row. Tighten the links so the row always fits,
-   including when the auth chip / install button pop in. */
-@media (min-width: 900px) and (max-width: 1099px) {
-  .nav-link { padding: 9px 9px; font-size: 0.88rem; }
-  .brand-name { font-size: 0.97rem; }
+/* The desktop header is one fixed 66px row: brand + nav + actions. At 900px
+   the row only fits when the links are tightened (measured: eight nav items
+   need ~460px at 9px/8px padding), so the padding reduction applies to every
+   desktop width instead of only the tightest band. */
+@media (min-width: 900px) {
+  .nav-link { padding: 9px 8px; font-size: 0.87rem; }
+  .nav-list { gap: 1px; }
+}
+
+/* 900-1199 is the band where brand wordmark + eight links + actions cannot
+   share the row (the wordmark alone is ~150px). The logo + aria-label carry
+   the brand here and the wordmark returns at 1200, where everything fits with
+   room to spare - including when the auth chip and install button pop in. */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .brand-name { display: none; }
 }
 
 @media (min-width: 1100px) {
@@ -1803,3 +1812,146 @@ a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text
 
 /* --- Tiny type floor: supporting copy never below 12px ------------------ */
 .answer-box .ab-label, .bl-label, .fact-table th { font-size: 0.75rem; }
+
+/* ==========================================================================
+ * CONTENT PAGES — study notes, magazine, strategy, sessions, recruitment
+ * Rendered by scripts/build_content.py. Same tokens and card language as the
+ * rest of the portal; only the reading layout is new.
+ * ========================================================================== */
+.doc-layout {
+  display: grid;
+  gap: clamp(20px, 4vw, 34px);
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+}
+.doc-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.doc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+
+/* Table of contents — first in the DOM (phones read it first), parked in the
+   right rail from 1100px where the reading column stays at a comfortable
+   measure. Sticky so it tracks the scroll like a study sidebar. */
+.doc-toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 18px 20px;
+}
+.doc-toc h2 {
+  font-size: 0.78rem; letter-spacing: 0.07em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 10px;
+}
+.doc-toc ol { list-style: none; margin: 0; padding: 0; counter-reset: toc; }
+.doc-toc li { counter-increment: toc; margin: 0; }
+.doc-toc a {
+  display: block; position: relative; padding: 6px 0 6px 26px;
+  font-size: 0.92rem; color: var(--text-2); border-left: 2px solid transparent;
+}
+.doc-toc a::before {
+  content: counter(toc); position: absolute; left: 6px;
+  font-size: 0.76rem; font-weight: 700; color: var(--muted);
+}
+.doc-toc a:hover, .doc-toc a.is-active { color: var(--brand); border-left-color: var(--brand); }
+
+/* Article body ---------------------------------------------------------- */
+.doc-body { min-width: 0; }
+.prose { color: var(--text-2); font-size: 1.02rem; line-height: 1.76; max-width: 72ch; }
+.prose p { margin: 0 0 1.05em; }
+.prose h2, .prose h3, .prose h4 {
+  color: var(--text); line-height: 1.25; margin: 1.7em 0 0.55em;
+  scroll-margin-top: calc(var(--header-h) + 18px);
+}
+.prose h2 { font-size: clamp(1.22rem, 2.3vw, 1.45rem); }
+.prose h3 { font-size: clamp(1.06rem, 2vw, 1.2rem); }
+.prose h4 { font-size: 1rem; }
+.prose ul, .prose ol { margin: 0 0 1.1em; padding-left: 1.35em; }
+.prose li { margin-bottom: 0.42em; }
+.prose a { color: var(--brand); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+.prose strong, .prose b { color: var(--text); }
+.prose blockquote {
+  margin: 1.3em 0; padding: 12px 18px; border-left: 3px solid var(--brand);
+  background: var(--surface-2); border-radius: 0 var(--r-sm) var(--r-sm) 0;
+}
+.prose blockquote p:last-child { margin-bottom: 0; }
+.prose pre {
+  margin: 1.3em 0; padding: 14px 16px; overflow-x: auto;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: var(--r-sm); font-size: 0.9rem;
+}
+.prose code {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 6px; padding: 0.1em 0.35em; font-size: 0.92em;
+}
+.prose hr { border: 0; border-top: 1px solid var(--border); margin: 2em 0; }
+.prose .md-table { overflow-x: auto; margin: 1.3em 0; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+.prose th, .prose td { border: 1px solid var(--border); padding: 9px 13px; text-align: left; }
+.prose th { background: var(--surface-2); color: var(--text); font-size: 0.82rem;
+  letter-spacing: 0.04em; text-transform: uppercase; }
+
+/* Share row — plain links, so sharing works with JavaScript disabled and no
+   third-party SDK ever loads on the page. */
+.share-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 18px; }
+.share-label {
+  font-size: 0.76rem; font-weight: 700; letter-spacing: 0.07em;
+  text-transform: uppercase; color: var(--muted); margin-right: 2px;
+}
+.share-btn {
+  font-size: 0.86rem; font-weight: 600; padding: 7px 14px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-2);
+  cursor: pointer; transition: all 0.16s var(--ease);
+}
+.share-btn:hover { border-color: var(--brand); color: var(--brand); }
+
+/* Previous / next -------------------------------------------------------- */
+.prev-next { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+.pn-card {
+  display: flex; flex-direction: column; gap: 6px; padding: 17px 20px;
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  background: var(--surface); transition: border-color 0.16s var(--ease);
+}
+.pn-card:hover { border-color: var(--brand); }
+.pn-card:last-child { text-align: right; }
+.pn-label {
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted);
+}
+.pn-title { font-weight: 700; color: var(--text); line-height: 1.35; }
+.pn-empty { display: none; }
+
+@media (min-width: 720px) {
+  .prev-next { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Issue / session card (magazine cover, live-session details) ------------- */
+.doc-issue { display: flex; flex-wrap: wrap; gap: 22px; align-items: flex-start; }
+/* The width/height attributes reserve the box before the file loads, so the
+   card never jumps (and never reports a size it does not have). */
+.doc-cover {
+  display: block; width: 200px; max-width: 100%; height: auto; flex: none;
+  /* the inline aspect-ratio (from front matter) reserves the exact box the
+     file will occupy, so nothing moves when the image decodes */
+  object-fit: cover;
+  border-radius: var(--r-md); border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.doc-issue-body { flex: 1 1 260px; min-width: 0; }
+.doc-facts { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0 0; }
+.doc-fact {
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  background: var(--surface-2); padding: 9px 13px; min-width: 118px;
+}
+.doc-fact dt {
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--muted);
+}
+.doc-fact dd { margin: 3px 0 0; font-size: 0.92rem; font-weight: 700; color: var(--text); }
+.doc-issue .btn-row { margin-top: 16px; }
+
+@media (min-width: 720px) {
+  .doc-cover { width: 240px; }
+}
+@media (min-width: 1100px) {
+  .doc-layout { grid-template-columns: minmax(0, 1fr) 280px; }
+  .doc-toc { grid-column: 2; grid-row: 1; position: sticky; top: calc(var(--header-h) + 16px); }
+  .doc-body { grid-column: 1; grid-row: 1; }
+}

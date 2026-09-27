@@ -192,6 +192,14 @@ const HOA = (() => {
     "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
     "Start Quiz": "ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ",
     "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
+    /* Study menu + footer column (content hub navigation) */
+    "Study": "ਅਧਿਆਨ",
+    "Current Affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
+    "Monthly Magazine": "ਮਹੀਨਾਵਾਰੀ ਮੈਗਜ਼ੀਨ",
+    "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
+    "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
+    "Recruitment": "ਭਰਤੀ",
+    "Free PDFs": "ਮੁਫ਼ਤ PDFs",
     "Search subjects and topics…": "ਵਿਸ਼ੇ ਅਤੇ ਟੌਪਿਕ ਖੋਜੋ…",
 
     /* --- footer ---------------------------------------------------------- */
@@ -384,6 +392,22 @@ const HOA = (() => {
               ).join("")}
             </div>
           </li>
+          <li class="nav-drop" data-nav-drop>
+            <button class="nav-link nav-drop-btn" data-nav="notes" aria-haspopup="true" aria-expanded="false">
+              <span data-i18n="Study">Study</span>
+              <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-drop-menu">
+              <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
+              <a href="subject.html?subject=current-affairs"><span data-i18n="Current Affairs">Current Affairs</span></a>
+              <a data-nav="magazine" href="magazine.html"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
+              <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+              <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
+              <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
+              <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
+            </div>
+          </li>
           <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Quiz">Daily Quiz</span></a></li>
           <li><a class="nav-link" data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
           <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a></li>
@@ -447,6 +471,15 @@ const HOA = (() => {
       ).join("")}
     </div>
     <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> <span data-i18n="Punjab GK">Punjab GK</span></a>
+
+    <p class="mm-group" data-i18n="Study">Study</p>
+    <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
+    <a class="mm-link" href="subject.html?subject=current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
+    <a class="mm-link" data-nav="magazine" href="magazine.html"><span class="mm-emoji">📖</span> <span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
+    <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+    <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
+    <a class="mm-link" data-nav="recruitment" href="recruitment.html"><span class="mm-emoji">📋</span> <span data-i18n="Recruitment">Recruitment</span></a>
+    <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
 
     <p class="mm-group" data-i18n="Practice">Practice</p>
     <a class="mm-link" data-nav="exams" href="punjab-exams.html"><span class="mm-emoji">🏛️</span> <span data-i18n="Punjab Exams">Punjab Exams</span></a>
@@ -540,9 +573,20 @@ const HOA = (() => {
         </div>
 
         <div class="footer-col">
+          <h2 data-i18n="Study">Study</h2>
+          <a href="study-notes.html" data-i18n="Study Notes">Study Notes</a>
+          <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
+          <a href="subject.html?subject=current-affairs" data-i18n="Current Affairs">Current Affairs</a>
+          <a href="magazine.html" data-i18n="Monthly Magazine">Monthly Magazine</a>
+          <a href="strategy.html" data-i18n="Preparation Strategy">Preparation Strategy</a>
+          <a href="live-sessions.html" data-i18n="Live Sessions">Live Sessions</a>
+          <a href="recruitment.html" data-i18n="Recruitment">Recruitment</a>
+          <a href="pdfs.html" data-i18n="Free PDFs">Free PDFs</a>
+        </div>
+
+        <div class="footer-col">
           <h2 data-i18n="Company">Company</h2>
           <a href="about.html" data-i18n="About">About</a>
-          <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
           <a href="faq.html" data-i18n="FAQ &amp; Help">FAQ &amp; Help</a>
           <a href="contact.html" data-i18n="Contact">Contact</a>
           <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener" data-i18n="Join Telegram">Join Telegram</a>
@@ -593,14 +637,24 @@ const HOA = (() => {
     const body = document.body;
     const page = body.dataset.page || "";
 
-    // --- Desktop subject dropdown -----------------------------------------
-    const drop = document.querySelector("[data-nav-drop]");
-    if (drop) {
+    // --- Desktop dropdowns (Subjects, Study) ------------------------------
+    // Every [data-nav-drop] is wired the same way: click opens, a click
+    // outside closes, Escape closes - one handler each, so the second dropdown
+    // behaves exactly like the first.
+    document.querySelectorAll("[data-nav-drop]").forEach((drop) => {
       const btn = drop.querySelector(".nav-drop-btn");
+      if (!btn) return;
       btn.addEventListener("click", (e) => {
         e.stopPropagation();
         const open = drop.classList.toggle("open");
         btn.setAttribute("aria-expanded", String(open));
+        // never leave a sibling menu open behind this one
+        document.querySelectorAll("[data-nav-drop]").forEach((other) => {
+          if (other !== drop) {
+            other.classList.remove("open");
+            other.querySelector(".nav-drop-btn")?.setAttribute("aria-expanded", "false");
+          }
+        });
       });
       document.addEventListener("click", (e) => {
         if (!drop.contains(e.target)) {
@@ -608,7 +662,13 @@ const HOA = (() => {
           btn.setAttribute("aria-expanded", "false");
         }
       });
-    }
+      drop.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          drop.classList.remove("open");
+          btn.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
 
     // --- Mobile drawer -----------------------------------------------------
     const drawer = document.getElementById("mobileMenu");
