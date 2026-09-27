@@ -78,7 +78,7 @@ const GURMUKHI_RX = /[\u0A00-\u0A7F]/;
 /** Every .json under a language bucket, directly or one folder deeper.
  *  The repo has both shapes in use:
  *      questions/current-affairs/Punjabi/*.json
- *      questions/current-affairs/English /july /*.json
+ *      questions/current-affairs/English/july/*.json
  *  Returns [fullPath, relPath] pairs in a deterministic order so the Node and
  *  Python twins walk the folders identically. */
 function langFiles(subjectId, subjectDir, bucket) {

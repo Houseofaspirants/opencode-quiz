@@ -100,7 +100,9 @@ LANG_FOLDERS = {
 
 
 def lang_code(dirname):
-    """'Punjabi' | 'English ' | 'pa' -> 'pa' | 'en', else None."""
+    """'Punjabi' | 'English' | 'pa' -> 'pa' | 'en', else None.
+    The .strip() keeps legacy folders that once shipped with a trailing space
+    classified correctly (see git history for 'English ')."""
     key = str(dirname).strip().lower()
     return LANG_FOLDERS.get(key) or LANG_FOLDERS.get(slug(dirname))
 
@@ -110,7 +112,7 @@ def lang_files(subject_id, subject_dir, bucket):
 
     The repo has both shapes in use:
         questions/current-affairs/Punjabi/*.json
-        questions/current-affairs/English /july /*.json
+        questions/current-affairs/English/july/*.json
     Returns [(full_path, rel_path), …] in a deterministic order so the Python
     and Node twins walk the folders identically.
     """
