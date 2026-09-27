@@ -1,0 +1,28 @@
+name: gates
+
+# Every push and pull request must prove three things:
+#   1. both manifest builders still emit identical bytes (no silent drift)
+#   2. scripts/seo_check.py and scripts/rich_results_check.py pass
+#   3. the committed HTML/JSON is exactly what the builders generate
+# Run the same script locally with: bash scripts/ci.sh
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build, verify, diff
+        run: bash scripts/ci.sh
