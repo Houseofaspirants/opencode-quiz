@@ -97,6 +97,54 @@
       "title": "Free PDFs for Punjab Exams | House of Aspirants",
       "description": "Free downloadable PDFs for Punjab exam preparation - notes, question sets and revision sheets, each with a subject, exam tags and a direct download button.",
       "count": 0
+    },
+    {
+      "collection": "personal-notes",
+      "file": "personal-notes.html",
+      "url": "https://houseofaspirants.in/personal-notes",
+      "title": "Personal Study Notes | House of Aspirants",
+      "description": "Personal study notes from House of Aspirants - what changed in the method, what worked, what failed and the habits worth repeating before your next attempt.",
+      "count": 0
+    },
+    {
+      "collection": "subject-guides",
+      "file": "subject-guides.html",
+      "url": "https://houseofaspirants.in/subject-guides",
+      "title": "Subject Guides | House of Aspirants",
+      "description": "Free subject guides for Punjab Police, PSSSB and PPSC - what the syllabus asks, the order that works, what to practise first and where each topic is tested.",
+      "count": 0
+    },
+    {
+      "collection": "topic-guides",
+      "file": "topic-guides.html",
+      "url": "https://houseofaspirants.in/topic-guides",
+      "title": "Topic Guides | House of Aspirants",
+      "description": "Topic-wise guides for Punjab competitive exams - what each topic covers, how the exam asks it, the points to remember and the set that proves you know it.",
+      "count": 0
+    },
+    {
+      "collection": "daily-practice",
+      "file": "daily-practice.html",
+      "url": "https://houseofaspirants.in/daily-practice",
+      "title": "Daily Practice for Punjab Exams | House of Aspirants",
+      "description": "Daily practice sets for Punjab exams - the questions attempted today, why each answer is what it is and the revision notes that come out of the mistakes.",
+      "count": 0
+    },
+    {
+      "collection": "success-stories",
+      "file": "success-stories.html",
+      "url": "https://houseofaspirants.in/success-stories",
+      "title": "Success Stories | House of Aspirants",
+      "description": "Exam success stories told by the aspirant who lived them - the attempt, the mistakes, what changed in the preparation and the part of the method worth copying.",
+      "count": 0
+    },
+    {
+      "collection": "book-recommendations",
+      "file": "book-recommendations.html",
+      "url": "https://houseofaspirants.in/book-recommendations",
+      "title": "Book Recommendations | House of Aspirants",
+      "description": "Book recommendations for Punjab exam preparation - what each book covers, who it is actually for, which chapters matter and how to use it alongside free notes.",
+      "count": 0
     }
   ],
   "pages": [
@@ -105,6 +153,18 @@
       "url": "https://houseofaspirants.in/archives",
       "title": "Punjab Exam Study Archive | House of Aspirants",
       "description": "Every study note, current affairs article, magazine issue, strategy guide, live session and recruitment record here - newest first, by subject, exam and month."
+    },
+    {
+      "file": "author-gurpreet-singh.html",
+      "url": "https://houseofaspirants.in/author-gurpreet-singh",
+      "title": "Gurpreet Singh | House of Aspirants",
+      "description": "Gurpreet Singh - Founder, House of Aspirants. Credentials, topics covered and every document written and reviewed under this byline on House of Aspirants. Free"
+    },
+    {
+      "file": "search.html",
+      "url": "https://houseofaspirants.in/search",
+      "title": "Search | House of Aspirants",
+      "description": "Search every study note, current affairs article, magazine issue, strategy, quiz set and guide on House of Aspirants - by title, subject, exam tag, keyword,"
     }
   ],
   "items": [],
@@ -121,7 +181,13 @@
     "announcements": 0,
     "expected-mcqs": 0,
     "previous-year-questions": 0,
-    "pdfs": 0
+    "pdfs": 0,
+    "personal-notes": 0,
+    "subject-guides": 0,
+    "topic-guides": 0,
+    "daily-practice": 0,
+    "success-stories": 0,
+    "book-recommendations": 0
   },
   "generatedBy": "scripts/build_content.py"
 }

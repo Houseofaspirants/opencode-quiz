@@ -97,3 +97,160 @@
   targets.forEach((t) => io.observe(t));
   setActive(targets[0].id);
 })();
+
+/* ============================================================================
+ * List filters (Phase 4)
+ * ----------------------------------------------------------------------------
+ * The chip bar above every listing that has something to filter. Each chip is
+ * a plain <button> with aria-pressed, the rows carry their facet values as
+ * data-f-* attributes, and everything runs locally on the DOM that already
+ * shipped - no fetch, no layout thrash, no request.
+ *
+ * Selection is OR inside a facet (Punjab Police OR PSSSB) and AND across
+ * facets (Punjab Police AND English), which is how an aspirant actually narrows
+ * a list.
+ * ========================================================================== */
+(() => {
+  "use strict";
+  const bar = document.querySelector("[data-filter-bar]");
+  const list = document.querySelector("[data-filter-list]");
+  if (!bar || !list) return;
+
+  const rows = Array.from(list.children).filter((el) =>
+    Array.from(el.attributes).some((a) => a.name.startsWith("data-f-"))
+  );
+  if (!rows.length) return;
+
+  const chips = Array.from(bar.querySelectorAll("[data-filter-facet]"));
+  const reset = bar.querySelector("[data-filter-reset]");
+  const count = bar.querySelector("[data-filter-count]");
+  const active = Object.create(null);
+  const total = rows.length;
+
+  const apply = () => {
+    let shown = 0;
+    for (const row of rows) {
+      let ok = true;
+      for (const facet of Object.keys(active)) {
+        const chosen = active[facet];
+        if (!chosen || !chosen.size) continue;
+        const have = new Set(
+          (row.getAttribute("data-f-" + facet) || "")
+            .split(/\s+/)
+            .filter(Boolean)
+        );
+        let hit = false;
+        for (const v of chosen) if (have.has(v)) { hit = true; break; }
+        if (!hit) { ok = false; break; }
+      }
+      row.classList.toggle("is-filtered-out", !ok);
+      if (ok) shown += 1;
+    }
+    if (count) {
+      count.textContent =
+        shown === total ? total + " shown" : shown + " of " + total + " shown";
+      count.classList.toggle("is-muted", shown === total);
+    }
+    if (reset) reset.hidden = !chips.some((c) => c.getAttribute("aria-pressed") === "true");
+  };
+
+  bar.addEventListener("click", (e) => {
+    const chip = e.target.closest("[data-filter-facet]");
+    if (chip) {
+      const facet = chip.getAttribute("data-filter-facet");
+      const value = chip.getAttribute("data-filter-value");
+      const chosen = active[facet] || (active[facet] = new Set());
+      if (chosen.has(value)) chosen.delete(value);
+      else chosen.add(value);
+      chip.setAttribute("aria-pressed", chosen.has(value) ? "true" : "false");
+      apply();
+      return;
+    }
+    if (e.target.closest("[data-filter-reset]")) {
+      for (const facet of Object.keys(active)) active[facet].clear();
+      chips.forEach((c) => c.setAttribute("aria-pressed", "false"));
+      apply();
+    }
+  });
+
+  apply();
+})();
+
+/* ============================================================================
+ * search.html - results over the same corpus as the Ctrl+K overlay
+ * ----------------------------------------------------------------------------
+ * The GET form works with JavaScript off (the query rides in ?q=). This only
+ * fills the results box, after paint, with one lazy fetch - first paint never
+ * waits for it.
+ * ========================================================================== */
+(() => {
+  "use strict";
+  const box = document.querySelector("[data-search-results]");
+  if (!box) return;
+  const input = document.getElementById("search-q");
+  const q = new URLSearchParams(location.search).get("q") || "";
+  const term = q.trim();
+  if (input) input.value = q;
+  if (!term) return;
+
+  const esc = (s) =>
+    String(s == null ? "" : s).replace(/[&<>"']/g, (c) =>
+      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])
+    );
+  const LABEL = {
+    notes: "Study note", "current-affairs": "Current affairs",
+    magazine: "Magazine issue", strategy: "Strategy", sessions: "Live session",
+    recruitment: "Recruitment", blogs: "Blog", news: "News",
+    announcements: "Announcement", "personal-notes": "Personal note",
+    "subject-guides": "Subject guide", "topic-guides": "Topic guide",
+    "daily-practice": "Daily practice", "success-stories": "Success story",
+    "book-recommendations": "Book recommendation", guide: "Study guide",
+    exam: "Exam",
+  };
+
+  box.innerHTML = '<p class="search-meta">Searching…</p>';
+  fetch("data/search-index.json")
+    .then((r) => (r.ok ? r.json() : { items: [] }))
+    .then((data) => {
+      const needle = term.toLowerCase();
+      const hits = (data.items || []).filter((row) =>
+        [row.t, row.d, row.m, row.w, row.a, row.c, row.b,
+         (row.e || []).join(" "), (row.s || []).join(" "),
+         (row.g || []).join(" ")]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase()
+          .includes(needle)
+      );
+      if (!hits.length) {
+        box.innerHTML =
+          '<div class="empty-state"><span class="es-icon" aria-hidden="true">🔎</span>' +
+          "<h3>No document matches &ldquo;" + esc(term) + "&rdquo;</h3>" +
+          "<p>Try a subject (Punjab GK), an exam (Punjab Police) or a tag " +
+          "(current affairs) - the corpus is searched by title, summary, " +
+          "keywords, subject, category, author and body.</p></div>";
+        return;
+      }
+      box.innerHTML =
+        '<p class="search-meta">' + hits.length +
+        " result(s) for &ldquo;" + esc(term) + "&rdquo;</p>" +
+        '<div class="grid grid-3">' +
+        hits.slice(0, 60).map((row) => {
+          const href = String(row.u || "").replace(/^\//, "");
+          return (
+            '<a class="card card-pad" href="' + esc(href) + '">' +
+            '<span class="eyebrow">' + esc(LABEL[row.k] || "Document") +
+            (row.a ? " · " + esc(row.a) : "") + "</span>" +
+            "<h3>" + esc(row.t || "") + "</h3>" +
+            '<p class="muted">' + esc(row.d || "") + "</p>" +
+            '<p class="ilink">Read →</p></a>'
+          );
+        }).join("") +
+        "</div>";
+    })
+    .catch(() => {
+      box.innerHTML =
+        '<p class="search-meta">The search index could not be loaded - ' +
+        'use the archives to browse everything published.</p>';
+    });
+})();

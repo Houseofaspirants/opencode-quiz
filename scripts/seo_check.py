@@ -65,11 +65,25 @@ else:
         errors.append(f"data/landing-manifest.json: invalid JSON: {e}")
 
     # every generated landing file on disk must be registered (stale files are
-    # as bad as missing ones: an unregistered page is invisible to the gate)
+    # as bad as missing ones: an unregistered page is invisible to the gate).
+    # Pages registered by the content builder (subject-guides.html and the rest
+    # of the Phase 4 hubs) share this namespace but are not landing pages.
+    CONTENT_MANIFEST = ROOT / "data" / "content-manifest.json"
+    _cm_protected = set()
+    if CONTENT_MANIFEST.exists():
+        try:
+            _cpx = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8"))
+            _cm_protected = {str(h.get("file", "")) for h in _cpx.get("hubs", [])} | \
+                {str(p.get("file", "")) for p in _cpx.get("pages", [])} | \
+                {str(p.get("file", "")) for p in _cpx.get("items", [])}
+            _cm_protected.discard("")
+        except json.JSONDecodeError:
+            pass
     for _f in sorted(ROOT.glob("[a-z]*-*.html")):
         if (_f.name.startswith(("subject-", "category-", "topic-", "quiz-",
                                 "exam-", "cluster-"))
-                and _f.name not in landing_files):
+                and _f.name not in landing_files
+                and _f.name not in _cm_protected):
             errors.append(f"{_f.name}: landing page on disk but absent from "
                           f"landing-manifest.json")
 
@@ -111,8 +125,12 @@ KNOWN_TYPES = {
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
     "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
     "Person", "LearningResource", "Event",
+    # Phase 4: generated author profile pages (E-E-A-T) and the document-level
+    # `schemaType:` values a document may publish under.
+    "ProfilePage", "BlogPosting", "NewsArticle",
 }
-WEBPAGE_FAMILY = {"WebPage", "AboutPage", "ContactPage", "CollectionPage"}
+WEBPAGE_FAMILY = {"WebPage", "AboutPage", "ContactPage", "CollectionPage",
+                  "ProfilePage"}
 REQUIRED = {
     "WebSite": ["name", "url"],
     "Organization": ["name", "url", "logo"],
@@ -131,6 +149,7 @@ REQUIRED = {
     "Article": ["headline", "image", "datePublished", "author", "mainEntityOfPage"],
     "LearningResource": ["learningResourceType"],
     "Person": ["name", "url"],
+    "ProfilePage": ["url", "name", "description", "isPartOf", "mainEntity"],
     # Live sessions publish their slot honestly; no startDate, no Event schema.
     "Event": ["name", "startDate"],
     # AEO layer: an FAQ must actually expose its questions and answers

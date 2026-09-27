@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 47,
-  "edges": 102,
+  "nodes": 56,
+  "edges": 154,
   "silos": 28,
   "clusters": 19,
   "pillars": 27
@@ -64,6 +64,18 @@
    "hub": ""
   },
   {
+   "id": "author-gurpreet-singh.html",
+   "url": "/author-gurpreet-singh.html",
+   "type": "author",
+   "template": "",
+   "title": "Gurpreet Singh",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
    "id": "blogs.html",
    "url": "/blogs.html",
    "type": "hub",
@@ -74,6 +86,18 @@
    "exams": [],
    "tags": [],
    "hub": "blogs.html"
+  },
+  {
+   "id": "book-recommendations.html",
+   "url": "/book-recommendations.html",
+   "type": "hub",
+   "template": "",
+   "title": "Book Recommendations | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "book-recommendations.html"
   },
   {
    "id": "current-affairs-preparation.html",
@@ -98,6 +122,18 @@
    "exams": [],
    "tags": [],
    "hub": "current-affairs.html"
+  },
+  {
+   "id": "daily-practice.html",
+   "url": "/daily-practice.html",
+   "type": "hub",
+   "template": "",
+   "title": "Daily Practice for Punjab Exams | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "daily-practice.html"
   },
   {
    "id": "exam-clerk.html",
@@ -424,6 +460,18 @@
    "hub": "pdfs.html"
   },
   {
+   "id": "personal-notes.html",
+   "url": "/personal-notes.html",
+   "type": "hub",
+   "template": "",
+   "title": "Personal Study Notes | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "personal-notes.html"
+  },
+  {
    "id": "previous-year-questions.html",
    "url": "/previous-year-questions.html",
    "type": "hub",
@@ -434,6 +482,18 @@
    "exams": [],
    "tags": [],
    "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "progress.html",
+   "url": "/progress.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "punjab-exams.html",
@@ -556,6 +616,18 @@
    "hub": "recruitment.html"
   },
   {
+   "id": "search.html",
+   "url": "/search.html",
+   "type": "page",
+   "template": "",
+   "title": "Search",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
    "id": "strategy.html",
    "url": "/strategy.html",
    "type": "hub",
@@ -580,6 +652,18 @@
    "hub": "study-notes.html"
   },
   {
+   "id": "subject-guides.html",
+   "url": "/subject-guides.html",
+   "type": "hub",
+   "template": "",
+   "title": "Subject Guides | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "subject-guides.html"
+  },
+  {
    "id": "subject.html",
    "url": "/subject.html",
    "type": "page",
@@ -590,6 +674,30 @@
    "exams": [],
    "tags": [],
    "hub": ""
+  },
+  {
+   "id": "success-stories.html",
+   "url": "/success-stories.html",
+   "type": "hub",
+   "template": "",
+   "title": "Success Stories | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "success-stories.html"
+  },
+  {
+   "id": "topic-guides.html",
+   "url": "/topic-guides.html",
+   "type": "hub",
+   "template": "",
+   "title": "Topic Guides | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "topic-guides.html"
   }
  ],
  "edges": [
@@ -678,6 +786,48 @@
    "weight": 1
   },
   {
+   "from": "author-gurpreet-singh.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "blogs.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -715,6 +865,48 @@
   },
   {
    "from": "blogs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "pdfs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -758,6 +950,42 @@
   {
    "from": "current-affairs.html",
    "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "progress.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "daily-practice.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -948,6 +1176,42 @@
    "weight": 1
   },
   {
+   "from": "personal-notes.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "previous-year-questions.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -1122,6 +1386,36 @@
    "weight": 1
   },
   {
+   "from": "search.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "search.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "search.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "search.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "search.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -1202,6 +1496,132 @@
   {
    "from": "study-notes.html",
    "to": "reasoning-quant-preparation.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "pdfs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "subject-guides.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "announcements.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "success-stories.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "subject.html",
    "rel": "contextual",
    "weight": 1
   }

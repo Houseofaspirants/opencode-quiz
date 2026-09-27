@@ -204,8 +204,16 @@ const HOA = (() => {
     "Blog": "ਬਲੌਗ",
     "News": "ਖ਼ਬਰਾਂ",
     "Announcements": "ਘੋਸ਼ਣਾਵਾਂ",
+    /* Phase 4 collections */
+    "Personal Notes": "ਨਿੱਜੀ ਨੋਟਾਂ",
+    "Subject Guides": "ਵਿਸ਼ਾ ਗਾਈਡਾਂ",
+    "Topic Guides": "ਟਾਪਿਕ ਗਾਈਡਾਂ",
+    "Daily Practice": "ਰੋਜ਼ਾਨਾ ਅਭਿਆਸ",
+    "Success Stories": "ਕਾਮਯਾਬੀ ਦੀਆਂ ਕਹਾਣੀਆਂ",
+    "Books": "ਕਿਤਾਬਾਂ",
     "Archives": "ਆਰਕਾਈਵ",
     "Search notes, quizzes, subjects…": "ਨੋਟ, ਕੁਇਜ਼, ਵਿਸ਼ੇ ਖੋਜੋ…",
+    "Search": "ਖੋਜੋ",
 
     /* --- footer ---------------------------------------------------------- */
     "Company": "ਕੰਪਨੀ",
@@ -411,16 +419,22 @@ const HOA = (() => {
               <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="nav-drop-menu">
+            <div class="nav-drop-menu nav-cols">
               <!-- HOA-NAV:menu -->
               <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
+              <a data-nav="subject-guides" href="subject-guides.html"><span data-i18n="Subject Guides">Subject Guides</span></a>
+              <a data-nav="topic-guides" href="topic-guides.html"><span data-i18n="Topic Guides">Topic Guides</span></a>
+              <a data-nav="personal-notes" href="personal-notes.html"><span data-i18n="Personal Notes">Personal Notes</span></a>
               <a data-nav="ca" href="current-affairs.html"><span data-i18n="Current Affairs">Current Affairs</span></a>
               <a data-nav="magazine" href="magazine.html"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
               <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
               <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
+              <a data-nav="daily-practice" href="daily-practice.html"><span data-i18n="Daily Practice">Daily Practice</span></a>
               <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
               <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
               <a data-nav="previous-year-questions" href="previous-year-questions.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+              <a data-nav="success-stories" href="success-stories.html"><span data-i18n="Success Stories">Success Stories</span></a>
+              <a data-nav="book-recommendations" href="book-recommendations.html"><span data-i18n="Books">Books</span></a>
               <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
               <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
               <a data-nav="news" href="news.html"><span data-i18n="News">News</span></a>
@@ -496,13 +510,19 @@ const HOA = (() => {
     <p class="mm-group" data-i18n="Study">Study</p>
     <!-- HOA-NAV:drawer -->
     <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
+    <a class="mm-link" data-nav="subject-guides" href="subject-guides.html"><span class="mm-emoji">📚</span> <span data-i18n="Subject Guides">Subject Guides</span></a>
+    <a class="mm-link" data-nav="topic-guides" href="topic-guides.html"><span class="mm-emoji">📑</span> <span data-i18n="Topic Guides">Topic Guides</span></a>
+    <a class="mm-link" data-nav="personal-notes" href="personal-notes.html"><span class="mm-emoji">📓</span> <span data-i18n="Personal Notes">Personal Notes</span></a>
     <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
     <a class="mm-link" data-nav="magazine" href="magazine.html"><span class="mm-emoji">📖</span> <span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
     <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
     <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
+    <a class="mm-link" data-nav="daily-practice" href="daily-practice.html"><span class="mm-emoji">✅</span> <span data-i18n="Daily Practice">Daily Practice</span></a>
     <a class="mm-link" data-nav="recruitment" href="recruitment.html"><span class="mm-emoji">📋</span> <span data-i18n="Recruitment">Recruitment</span></a>
     <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
     <a class="mm-link" data-nav="previous-year-questions" href="previous-year-questions.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+    <a class="mm-link" data-nav="success-stories" href="success-stories.html"><span class="mm-emoji">🏆</span> <span data-i18n="Success Stories">Success Stories</span></a>
+    <a class="mm-link" data-nav="book-recommendations" href="book-recommendations.html"><span class="mm-emoji">📕</span> <span data-i18n="Books">Books</span></a>
     <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
     <a class="mm-link" data-nav="blogs" href="blogs.html"><span class="mm-emoji">✍️</span> <span data-i18n="Blog">Blog</span></a>
     <a class="mm-link" data-nav="news" href="news.html"><span class="mm-emoji">📰</span> <span data-i18n="News">News</span></a>
@@ -605,18 +625,26 @@ const HOA = (() => {
           <h2 data-i18n="Study">Study</h2>
           <!-- HOA-NAV:footer -->
           <a href="study-notes.html" data-i18n="Study Notes">Study Notes</a>
+          <a href="subject-guides.html" data-i18n="Subject Guides">Subject Guides</a>
+          <a href="topic-guides.html" data-i18n="Topic Guides">Topic Guides</a>
+          <a href="personal-notes.html" data-i18n="Personal Notes">Personal Notes</a>
           <a href="current-affairs.html" data-i18n="Current Affairs">Current Affairs</a>
           <a href="magazine.html" data-i18n="Monthly Magazine">Monthly Magazine</a>
           <a href="strategy.html" data-i18n="Preparation Strategy">Preparation Strategy</a>
           <a href="live-sessions.html" data-i18n="Live Sessions">Live Sessions</a>
+          <a href="daily-practice.html" data-i18n="Daily Practice">Daily Practice</a>
           <a href="recruitment.html" data-i18n="Recruitment">Recruitment</a>
           <a href="expected-mcqs.html" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions.html" data-i18n="Previous Year Questions">Previous Year Questions</a>
+          <a href="success-stories.html" data-i18n="Success Stories">Success Stories</a>
+          <a href="book-recommendations.html" data-i18n="Books">Books</a>
           <a href="pdfs.html" data-i18n="Free PDFs">Free PDFs</a>
           <a href="blogs.html" data-i18n="Blog">Blog</a>
           <a href="news.html" data-i18n="News">News</a>
           <a href="announcements.html" data-i18n="Announcements">Announcements</a>
           <a href="archives.html" data-i18n="Archives">Archives</a>
+          <a href="search.html" data-i18n="Search">Search</a>
+          <a href="author-gurpreet-singh.html" data-i18n="Gurpreet Singh">Gurpreet Singh</a>
           <!-- /HOA-NAV:footer -->
           <a href="articles.html" data-i18n="Study Guides">Study Guides</a>
         </div>
@@ -839,29 +867,41 @@ const HOA = (() => {
         magazine: "Magazine issue", strategy: "Strategy",
         sessions: "Live session", recruitment: "Recruitment", blogs: "Blog",
         news: "News", announcements: "Announcement", guide: "Study guide",
-        exam: "Exam",
+        exam: "Exam", "personal-notes": "Personal note",
+        "subject-guides": "Subject guide", "topic-guides": "Topic guide",
+        "daily-practice": "Daily practice", "success-stories": "Success story",
+        "book-recommendations": "Book recommendation",
       };
       const TYPE_ICON = {
         notes: "📝", "current-affairs": "🗞️", magazine: "📖", strategy: "🎯",
         sessions: "🎥", recruitment: "📋", blogs: "✍️", news: "📰",
         announcements: "📣", guide: "📚", exam: "🎓",
+        "personal-notes": "📓", "subject-guides": "📚", "topic-guides": "📑",
+        "daily-practice": "✅", "success-stories": "🏆",
+        "book-recommendations": "📕",
       };
       const loadDocs = () => (corpus ||= fetch("data/search-index.json")
         .then((r) => (r.ok ? r.json() : { items: [] }))
         .then((d) => (d.items || []).map((row) => {
           const subs = (row.s || []).join(" · ");
+          /* Title, summary, keywords, exam tags, subject, category, author
+             and body are all searchable (the Phase 4 search contract); the
+             weight below decides which field a hit counts from. */
           const tags = [(row.g || []).join(" "), subs,
-                        (row.e || []).join(" "), row.c || ""].join(" ");
+                        (row.e || []).join(" "), row.c || "",
+                        (row.w || []).join(" "), row.a || "",
+                        row.f || ""].join(" ");
           return {
             href: String(row.u || "").replace(/^\//, ""),
             label: row.t || "",
             lang: row.l || "en",
             icon: TYPE_ICON[row.k] || "📄",
-            sub: [TYPE_LABEL[row.k] || "Document", subs].filter(Boolean)
-              .join(" · "),
+            sub: [TYPE_LABEL[row.k] || "Document", subs, row.a || ""]
+              .filter(Boolean).join(" · "),
             hay: { title: String(row.t || "").toLowerCase(),
                    fields: tags.toLowerCase(),
-                   desc: String(row.d || "").toLowerCase(),
+                   desc: (String(row.d || "") + " " +
+                          String(row.m || "")).toLowerCase(),
                    body: String(row.b || "").toLowerCase() },
           };
         }))

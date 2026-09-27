@@ -338,6 +338,152 @@ TEMPLATES = {
                          "reviewed - this slot stays empty until then."},
         ],
     },
+    # ---- Phase 4: the remaining content collections of the platform -------
+    "personal-note": {
+        "label": "Personal Note",
+        "collection": "personal-notes",
+        "schema": "Article",
+        "summary": "A note that is already working: what changed in the "
+                   "method, what to repeat and where to practise it next.",
+        "required": ["title", "description", "published", "subject"],
+        "optional": ["difficulty", "exams", "tags", "updated"],
+        "outline": [
+            "## What I changed",
+            "## What worked",
+            "## What to repeat next week",
+        ],
+        "plan": [
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Prove it on a set", "limit": 3},
+            {"src": "subject", "eyebrow": "Related subject",
+             "title": "Keep going in this subject", "limit": 3},
+            {"src": "coll:notes", "eyebrow": "Related notes",
+             "title": "The concept behind the note", "limit": 3},
+            {"src": "coll:strategy", "eyebrow": "Related articles",
+             "title": "Turn it into a plan", "limit": 3},
+        ],
+    },
+    "subject-guide": {
+        "label": "Subject Guide",
+        "collection": "subject-guides",
+        "schema": "Article",
+        "summary": "One subject end to end: what the syllabus asks, how to "
+                   "study it and where to practise it on this portal.",
+        "required": ["title", "description", "published", "subject"],
+        "optional": ["difficulty", "exams", "tags", "updated"],
+        "outline": [
+            "## What the syllabus asks",
+            "## How to study this subject",
+            "## What to practise",
+        ],
+        "plan": [
+            {"src": "subject", "eyebrow": "Subject hub",
+             "title": "Everything for this subject", "limit": 1},
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Drill the syllabus", "limit": 3},
+            {"src": "coll:notes", "eyebrow": "Study notes",
+             "title": "Read the concept first", "limit": 3},
+            {"src": "coll:strategy", "eyebrow": "Preparation strategy",
+             "title": "Fit it into your week", "limit": 3},
+        ],
+    },
+    "topic-guide": {
+        "label": "Topic Guide",
+        "collection": "topic-guides",
+        "schema": "Article",
+        "summary": "One topic inside a subject: what it covers, how the exam "
+                   "asks it and the set that proves you know it.",
+        "required": ["title", "description", "published", "subject"],
+        "optional": ["topic", "difficulty", "exams", "tags", "updated"],
+        "outline": [
+            "## What this topic covers",
+            "## How it is asked in the exam",
+            "## Points to remember",
+        ],
+        "plan": [
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Test this topic now", "limit": 3},
+            {"src": "subject", "eyebrow": "Related subject",
+             "title": "The subject it belongs to", "limit": 1},
+            {"src": "coll:notes", "eyebrow": "Study notes",
+             "title": "Notes around this topic", "limit": 3},
+            {"src": "coll:expected-mcqs", "eyebrow": "Practice set",
+             "title": "Expected MCQs", "limit": 3,
+             "reserved": "Expected MCQs are published only after they are "
+                         "reviewed - this slot stays empty until then."},
+        ],
+    },
+    "daily-practice": {
+        "label": "Daily Practice",
+        "collection": "daily-practice",
+        "schema": "Article",
+        "summary": "The day's practice written down: the set, why each "
+                   "answer is what it is, and what to revise from it.",
+        "required": ["title", "description", "published", "subject"],
+        "optional": ["difficulty", "exams", "tags", "quiz", "updated"],
+        "outline": [
+            "## Today's focus",
+            "## The questions",
+            "## Why these answers",
+        ],
+        "plan": [
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Attempt the set", "limit": 3},
+            {"src": "coll:daily-practice", "eyebrow": "Yesterday's practice",
+             "title": "Keep the streak going", "limit": 3},
+            {"src": "subject", "eyebrow": "Related subject",
+             "title": "Keep going in this subject", "limit": 1},
+            {"src": "coll:notes", "eyebrow": "Study notes",
+             "title": "Read what you got wrong", "limit": 3},
+        ],
+    },
+    "success-story": {
+        "label": "Success Story",
+        "collection": "success-stories",
+        "schema": "Article",
+        "summary": "A real attempt, described honestly: what was tried, what "
+                   "changed and the part of the method worth copying.",
+        "required": ["title", "description", "published", "exam"],
+        "optional": ["post", "difficulty", "tags", "updated"],
+        "outline": [
+            "## The attempt",
+            "## What changed in the preparation",
+            "## What is worth copying",
+        ],
+        "plan": [
+            {"src": "coll:strategy", "eyebrow": "Preparation strategy",
+             "title": "The method behind it", "limit": 3},
+            {"src": "coll:notes", "eyebrow": "Study notes",
+             "title": "Study the material they used", "limit": 3},
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Start the same drill", "limit": 3},
+        ],
+    },
+    "book-recommend": {
+        "label": "Book Recommendation",
+        "collection": "book-recommendations",
+        "schema": "Article",
+        "summary": "One book, one subject: what it covers, who it is for and "
+                   "which chapters are actually worth the hours.",
+        "required": ["title", "description", "published", "subject"],
+        "optional": ["book", "book_author", "publisher", "exams", "tags",
+                     "difficulty", "updated"],
+        "outline": [
+            "## What the book covers",
+            "## Who it is for",
+            "## How to use it with this portal",
+        ],
+        "plan": [
+            {"src": "coll:notes", "eyebrow": "Study notes",
+             "title": "The notes to read alongside it", "limit": 3},
+            {"src": "hub:pdfs", "eyebrow": "Free PDFs",
+             "title": "Sheets to practise from", "limit": 1},
+            {"src": "quiz", "eyebrow": "Practice quiz",
+             "title": "Test what you read", "limit": 3},
+            {"src": "coll:strategy", "eyebrow": "Preparation strategy",
+             "title": "Fit reading into the week", "limit": 3},
+        ],
+    },
 }
 
 # Collection -> default template when a document does not name one. The
@@ -354,6 +500,13 @@ _DEFAULT_TEMPLATE = {
     "news": "exam-analysis",
     "expected-mcqs": "expected-mcq",
     "previous-year-questions": "previous-year-question",
+    # Phase 4 collections - one template each, no category branching.
+    "personal-notes": "personal-note",
+    "subject-guides": "subject-guide",
+    "topic-guides": "topic-guide",
+    "daily-practice": "daily-practice",
+    "success-stories": "success-story",
+    "book-recommendations": "book-recommend",
 }
 
 # Collections with no dedicated template fall back to this generic plan, so

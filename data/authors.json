@@ -1,0 +1,40 @@
+{
+  "authors": [
+    {
+      "id": "gurpreet-singh",
+      "name": "Gurpreet Singh",
+      "type": "Person",
+      "role": "Founder, House of Aspirants",
+      "credentials": [
+        "Punjab Police Sub Inspector",
+        "Founder of House of Aspirants",
+        "Competitive Exam Mentor",
+        "Monthly Current Affairs Author",
+        "Weekly Live Session Mentor"
+      ],
+      "bio": "Gurpreet Singh founded House of Aspirants and writes its monthly current affairs magazine, its weekly live session summaries and the preparation strategy pages. He reviews the exam-oriented material published on this portal against the official syllabus and the official notifications, and mentors aspirants preparing for Punjab Police, PSSSB and PPSC examinations.",
+      "topics": [
+        "Punjab current affairs",
+        "Exam strategy",
+        "Punjab Police",
+        "PSSSB",
+        "PPSC",
+        "Weekly live sessions"
+      ],
+      "profile": true
+    },
+    {
+      "id": "house-of-aspirants-editorial",
+      "name": "House of Aspirants Editorial Team",
+      "type": "Organization",
+      "role": "Editorial desk",
+      "bio": "The House of Aspirants editorial desk writes, fact-checks and reviews everything published on this portal - study notes, current affairs, magazine issues, quiz sets and exam notifications - against the official syllabus, the official notification and the source it cites.",
+      "topics": [
+        "Study notes",
+        "Quiz review",
+        "Official notifications"
+      ],
+      "profile": false
+    }
+  ]
+}

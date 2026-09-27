@@ -2271,10 +2271,26 @@ def main():
         built.append(build_cluster(c))
 
     expected = set(built)
+    # Pages another builder owns. build_content.py renders the content hubs
+    # (subject-guides.html, topic-guides.html ...) into the same root and its
+    # own prefixes deliberately avoid this builder's namespace - so a page
+    # registered in data/content-manifest.json is never "stale" here, even when
+    # its name starts with subject- or topic-.
+    protected = set()
+    _cm_path = os.path.join(DATA, "content-manifest.json")
+    if os.path.exists(_cm_path):
+        try:
+            _cm = json.loads(open(_cm_path, encoding="utf-8").read())
+            protected = {str(h.get("file", "")) for h in _cm.get("hubs", [])} | \
+                        {str(p.get("file", "")) for p in _cm.get("pages", [])} | \
+                        {str(p.get("file", "")) for p in _cm.get("items", [])}
+            protected.discard("")
+        except Exception as e:
+            warn(f"content-manifest.json unreadable, not protecting its pages: {e}")
     removed = []
     for fn in sorted(os.listdir(ROOT)):
         if (fn.endswith(".html") and fn.startswith(GENERATED_PREFIXES)
-                and fn not in expected):
+                and fn not in expected and fn not in protected):
             os.remove(os.path.join(ROOT, fn))
             removed.append(fn)
     if removed:
