@@ -366,3 +366,179 @@ new hubs), `README.md` §24, `content/README.md`.
    works with or without it.
 4. **Popular posts** needs a real analytics export before it renders anything.
 5. **Translation parity** gate still pending (known EN/PA defect noted above).
+
+---
+
+# Phase 3 — AI Content Engine
+
+Everything below is **architecture, not invented content**: templates,
+scoring, linking and reporting rules that only ever describe material that
+really exists in `content/`. The site ships with 0 documents published; every
+claim here was measured with temporary documents and then re-verified against
+the empty build.
+
+## 19. Content templates + scaffold
+
+`scripts/content_engine.py` (new) holds `TEMPLATES`: eleven page types, each
+with its label, collection, JSON-LD type, chapter behaviour, required fields
+and an ordered recommendation plan.
+
+| Template key | Type | Collection |
+|---|---|---|
+| `study-note` | Study Note | `notes/` |
+| `current-affairs` | Current Affairs | `current-affairs/` |
+| `monthly-magazine` | Monthly Magazine | `monthly-magazine/` |
+| `expected-mcq` | Expected MCQ | `expected-mcqs/` |
+| `previous-year-question` | Previous Year Question | `previous-year-questions/` |
+| `preparation-strategy` | Preparation Strategy | `strategy/` |
+| `motivation` | Motivation Article | `strategy/` |
+| `book-review` | Book Review | `strategy/` |
+| `live-session-summary` | Weekly Live Session | `live-sessions/` |
+| `recruitment-notification` | Recruitment | `recruitment/` |
+| `exam-analysis` | Exam Analysis | `blogs/` |
+
+Two collections were added so those two types can publish honestly:
+`expected-mcqs` (`expected-mcqs.html`) and `previous-year-questions`
+(`previous-year-questions.html`). Both ship an empty state, are registered in
+`HUBS`/nav/footer/sitemap, and their learning-path steps stay **reserved and
+unlinked** until a real document exists — `CHAIN_TARGETS` links the step only
+when there is a target to link to.
+
+`scripts/new_content.py` (new) scaffolds from a template:
+
+```bash
+python3 scripts/new_content.py --list
+python3 scripts/new_content.py --type study-note --slug punjab-history-sikh-period
+python3 scripts/new_content.py --type current-affairs --slug july-week-1 --pa
+```
+
+Scaffolds go to `content/_drafts/<collection>/<slug>.md`, a path the builder
+never loads, so an unfinished file cannot fail CI; titles/descriptions are
+placeholders the validator rejects if someone publishes them unchanged.
+
+The build validates `type` against both `TEMPLATES` and the collection it was
+filed under, and `main()` fails the run if a template's required fields are
+not enforced by its collection's contract.
+
+## 20. The recommendation engine (facets, not filler)
+
+`score()` weights: subject **6**, exam **4**, tag **3**, category **3**,
+difficulty **2**, featured **2**, shared section **1**; `language` (**2**) is
+deliberately **not** part of the score — `rank()` applies it as a tie-break
+between candidates that already overlap, so shared language can prefer a
+Punjabi edition but can never make two unrelated documents "related".
+
+`rank()` sorts by score, then reading time (shorter first), then newest; a
+slot only shows candidates that scored above zero unless it is explicitly
+marked `any` (the "More &lt;section&gt;" slot, where being in the same section
+*is* the relevance). Candidates are never their own recommendation, and the
+same target never appears twice in a plan.
+
+## 21. What each page type renders
+
+Every document ends with one "What to do with this page" section built from
+its plan, grouped by slot title, plus a TOC aside line
+(`≈ N min to finish · difficulty` = estimated completion time) and — for
+chaptered collections — previous/next chapter labels.
+
+* **Study note** → practice set (the document's own `quiz:` first, otherwise
+  a set that shares its subject), subject hub, current affairs, expected MCQs,
+  previous papers, more notes, guides.
+* **Current affairs** → practice set, latest magazine issue, related news,
+  government schemes (tag filter), Punjab GK subject hub.
+* **Recruitment** → eligibility, syllabus, strategy, free PDFs, previous
+  papers, expected questions, live session — with on-page anchors
+  (`#notification`, `#eligibility`, `#syllabus`, `#dates`) rendered only when
+  the document declares those fields.
+* **Reserved honesty** → a slot with no matching data renders one compact
+  line, e.g. `Reserved — Expected MCQs, Previous Year Questions …`, and is
+  never a link.
+
+## 22. Content graph, silos and pillars
+
+`data/content-graph.json` (new): **47 nodes, 102 contextual links, 28 silos
+(27 pillars, 19 clusters)** in the empty build.
+
+* Nodes are the documents, the 12 hubs and the archive; edges are re-read out
+  of the HTML that actually shipped, so the graph cannot describe a link the
+  site does not serve (share links on `t.me` / Twitter / WhatsApp are excluded
+  by host matching, and absolute links to our own domain are normalised to
+  their path).
+* Silos cover every subject and every exam: pillar (the guide named after the
+  silo, else the narrowest guide that shares its subjects, else `null`) → hub
+  (subject/exam landing page from `data/landing-manifest.json`) → clusters
+  (category + cluster + topic landing pages) → leaves (documents).
+
+## 23. Five contextual internal links, or the build fails
+
+`enforce_link_floor()` counts unique contextual links inside `<main>` and
+appends an "Explore the library" module (six links) when a generated page is
+short; seven hand-written pages that were below the floor — `contact`, `faq`,
+`mock`, `progress`, `result`, `bookmarks`, `subject` — received the same
+module as a "Where to go next" section. `seo_check.py` re-counts **all 115
+shipped pages** (404 excluded) with the builder's own `link_floor()` and fails
+the run if any page is below five.
+
+## 24. Homepage engine
+
+* `index.html` gained `#foryou` with `<!-- HOA-HOME:popular -->` (server
+  rendered by `patch_index()` from `data/popularity.json` — ships empty, so
+  Popular notes / Trending quiz stay hidden) and `<!-- HOA-HOME:data -->`
+  (the candidate list, EN documents only, embedded — no extra request).
+* `assets/js/home.js` scores that list against *this* reader: the subject
+  they last practised (`HOA.progress.get().lastSubject`) and their bookmarks
+  produce **Continue learning** and **Recommended for you** cards. With no
+  signal the section stays `hidden` — measured in the browser: seeded progress
+  → 3 cards and the section visible; cleared storage → section hidden; zero
+  console errors either way.
+
+## 25. Files created / modified
+
+**Created:** `scripts/content_engine.py`, `scripts/new_content.py`,
+`data/content-graph.json`, `expected-mcqs.html`,
+`previous-year-questions.html`.
+
+**Modified:** `scripts/build_content.py` (template-aware validation, plan
+renderer, `enforce_link_floor`, graph writer, homepage engine, `patch_index`
+args, chapter labels, recruitment anchors), `scripts/seo_check.py` (link
+floor, content-graph validity, template parity — one `link_floor()` shared
+with the builder), `assets/js/home.js` (engine cards), `assets/js/core.js`
+(nav markers + Punjabi labels for the two new hubs), `assets/css/style.css`
+(`.rec-title`, `.rec-reserved`, `.toc-meta`), `index.html` (`#foryou`),
+`sw.js` (`hoa-v37` + both hubs in the shell), seven static pages (link
+floor), `README.md` §24, `content/README.md`.
+
+## 26. Verification
+
+* Pipeline exercised end to end with **5 temporary documents** across notes
+  (EN + PA), current affairs and recruitment, then deleted: 5 pages built,
+  30 search entries, 5 RSS items, 63 nodes / 167 edges, stale cleanup removed
+  every page and the `pa/` twin, returning 47 nodes / 102 edges.
+* Measured in the browser on a document page: 4 recommendation groups, chain
+  `current → quiz → reserved PYQ → reserved Expected → current affairs →
+  magazine → strategy`, chapter labels, `≈ 1 min to finish · Easy`, heading
+  order `H1 H2×4 H3×8 H2` (no skips), 10 contextual links, no console errors;
+  computed styles confirm the new CSS (`.rec-title` uppercase 13.4px,
+  `.rec-reserved` dashed flex, `.toc-meta` bordered).
+* Recruitment anchors, eligibility/syllabus groups and the reserved
+  previous-papers line verified on a temporary notice; PA page verified with
+  `<base href="/">`, `/pa/…#section` anchors and 13 contextual links.
+* Gates: `build_landing_pages.py` → `seo_check.py` **PASS** with the three
+  new notes (`link floor`, `content graph … all resolving`,
+  `content templates: 11 …`), `rich_results_check.py` **PASS**,
+  `scripts/ci.sh` green with `generatedAt` restored.
+
+## 27. Known limitations (Phase 3)
+
+1. **Lighthouse** still unmeasurable locally; Phase 3 adds one CSS block, one
+   small JS function and no request on the homepage (the candidate list is
+   embedded, popularity ships empty).
+2. **Node parity** (`build-index.mjs`) still runs on push only.
+3. **Graph scope** — nodes/edges cover the content tree (documents, hubs,
+   archive), not the whole site; chrome-only pages such as `contact` are
+   counted by the link-floor gate but are not graph nodes.
+4. **Popular notes / Trending quiz** stay hidden until a real
+   `data/popularity.json` exists; nothing is guessed.
+5. **Personalisation** is client-side and first-party only (last subject +
+   bookmarks); there is no account-level profile to score against until the
+   backend phase.

@@ -454,15 +454,15 @@ def score(seed, candidate, same_collection=False):
         if a and b and a == b:
             s += weight
             reasons.append(f"same {facet}")
-    if seed.get("lang") and seed.get("lang") == candidate.get("lang"):
-        s += WEIGHTS["language"]
-        reasons.append("same language")
     if candidate.get("featured"):
         s += WEIGHTS["featured"]
         reasons.append("featured")
     if same_collection:
         s += WEIGHTS["collection"]
         reasons.append("same section")
+    # `language` is deliberately NOT in the score: sharing a language is a
+    # preference, not a reason to call two documents related. rank() applies
+    # it as a tie-break between candidates that already overlap on facets.
     return s, reasons
 
 
@@ -484,7 +484,7 @@ def rank(seed, pool, limit=3, exclude=(), prefer_lang=None, require_score=True):
         if require_score and s <= 0:
             continue
         if prefer_lang and cand.get("lang") == prefer_lang:
-            s += 1
+            s += WEIGHTS["language"]
             why.append("your language")
         out.append((s, _neg_date(cand.get("published", "")), key, cand, why))
     out.sort(key=lambda t: (-t[0], t[1], t[2]))
@@ -550,15 +550,26 @@ def build_silos(index, articles, exams, landing, records):
     Every URL is one the site really serves; a silo with no pillar still
     publishes with `pillar: null` rather than an invented one.
     """
-    subject_pages = {p.get("entity"): p.get("file")
-                     for p in (landing or [])
-                     if p.get("type") == "subject" and p.get("entity")}
-    exam_pages = {p.get("entity"): p.get("file")
-                  for p in (landing or []) if p.get("type") == "exam"}
-    category_pages = {}
+    by_type = {}
     for p in landing or []:
-        if p.get("type") == "category" and p.get("entity"):
-            category_pages.setdefault(p.get("entity"), []).append(p.get("file"))
+        if p.get("type") and p.get("entity"):
+            by_type.setdefault(p["type"], {})[str(p["entity"])] = p.get("file")
+    subject_pages = by_type.get("subject", {})
+    exam_pages = by_type.get("exam", {})
+    category_pages = by_type.get("category", {})
+    topic_pages = by_type.get("topic", {})
+    cluster_pages = by_type.get("cluster", {})
+    # entity "<subject>/<category>" -> "<subject>/<category-id>"
+    category_by_id = {}
+    for entity, file in category_pages.items():
+        if "/" in str(entity):
+            category_by_id[str(entity).split("/", 1)[1]] = file
+
+    def _page(landing_path):
+        if not landing_path:
+            return None
+        text = str(landing_path).strip()
+        return text[1:] if text.startswith("/") else text
 
     silos = []
     for subj in index.get("subjects", []):
@@ -566,17 +577,35 @@ def build_silos(index, articles, exams, landing, records):
         if not sid:
             continue
         pillars = [a for a in (articles or []) if sid in (a.get("subjects") or [])]
-        pillars.sort(key=lambda a: (len(a.get("subjects") or []), a.get("published", "")))
+        # A pillar must be about this subject: prefer the guide named after it,
+        # then the narrowest guide, then the newest.
+        subject_tokens = [t for t in re.split(r"[-\s]+", sid) if t]
+
+        def subject_pillar_key(a):
+            hay = f'{a.get("id", "")} {a.get("title", "")}'.lower()
+            matched = sum(1 for t in subject_tokens if t and t in hay)
+            return (-matched, len(a.get("subjects") or []),
+                    str(a.get("published", "")))
+
+        pillars.sort(key=subject_pillar_key)
         pillar = pillars[0] if pillars else None
         clusters = []
-        for topic in subj.get("topics", []):
-            if topic.get("landing"):
-                clusters.append(str(topic["landing"]).lstrip("/"))
-            elif topic.get("available"):
-                clusters.append(f'quiz.html?subject={sid}&topic={topic.get("id")}')
         for cat in subj.get("categories", []) or []:
-            for f in category_pages.get(cat, []):
-                clusters.append(f)
+            cid = cat.get("id") if isinstance(cat, dict) else str(cat)
+            file = (category_pages.get(f"{sid}/{cid}")
+                    or category_by_id.get(str(cid))
+                    or _page(cat.get("landing") if isinstance(cat, dict) else None))
+            if file:
+                clusters.append(file)
+        for topic in subj.get("topics", []) or []:
+            tid = topic.get("id")
+            file = (topic_pages.get(f"{sid}/{tid}")
+                    or cluster_pages.get(str(tid))
+                    or _page(topic.get("landing"))
+                    or (f"quiz.html?subject={sid}&topic={tid}"
+                        if topic.get("available") else None))
+            if file:
+                clusters.append(file)
         leaves = [node_id(r["file"]) for r in records
                   if sid in (r.get("subjects") or [])]
         silos.append({
@@ -584,7 +613,9 @@ def build_silos(index, articles, exams, landing, records):
             "kind": "subject",
             "name": subj.get("name", sid),
             "pillar": str(pillar["url"]).lstrip("/") if pillar else None,
-            "hub": subject_pages.get(sid) or f"subject.html?subject={sid}",
+            "hub": (subject_pages.get(sid)
+                    or _page(subj.get("landing"))
+                    or f"subject.html?subject={sid}"),
             "clusters": sorted(set(clusters)),
             "leaves": sorted(set(leaves)),
         })
@@ -596,15 +627,27 @@ def build_silos(index, articles, exams, landing, records):
         ex_subjects = set(str(s) for s in (ex.get("subjects") or []))
         pillars = [a for a in (articles or [])
                    if ex_subjects & set(a.get("subjects") or [])]
-        pillars.sort(key=lambda a: (len(a.get("subjects") or []), a.get("published", "")))
+        # Prefer the guide that is actually about this exam (title/id match),
+        # then the narrowest guide - a pillar must be about this silo, not just
+        # share one subject with it.
+        tokens = [t for t in re.split(r"[-\s]+", eid) if t]
+
+        def exam_pillar_key(a):
+            hay = f'{a.get("id", "")} {a.get("title", "")}'.lower()
+            matched = sum(1 for t in tokens if t and t in hay)
+            return (-matched, len(a.get("subjects") or []),
+                    str(a.get("published", "")))
+
+        pillars.sort(key=exam_pillar_key)
         pillar = pillars[0] if pillars else None
         name = str(ex.get("name") or eid)
         leaves = [node_id(r["file"]) for r in records
                   if name in [str(e) for e in (r.get("exams") or [])]]
         clusters = []
         for cat in ex.get("categories", []) or []:
-            for f in category_pages.get(cat, []):
-                clusters.append(f)
+            file = category_pages.get(str(cat)) or category_by_id.get(str(cat))
+            if file:
+                clusters.append(file)
         silos.append({
             "id": f"exam:{eid}",
             "kind": "exam",
@@ -637,14 +680,32 @@ def build_graph(nodes, edges, silos):
     }
 
 
+_INTERNAL_HOST = "houseofaspirants.in"
+
+
 def link_floor(html_main):
-    """Unique contextual internal links inside a page's <main>."""
-    hrefs = re.findall(r'href="([^"]+)"', html_main or "")
+    """Unique contextual internal links inside a page's <main>.
+
+    Two rules that matter: share links (t.me, twitter, wa.me) merely *embed*
+    the page URL, so host matching - not substring matching - decides what is
+    really ours; and an absolute link to our own domain is normalised to its
+    site-relative path so the graph and the >=5 floor never count the same
+    link twice.
+    """
     out = set()
-    for h in hrefs:
+    for href in re.findall(r'href="([^"]+)"', html_main or ""):
+        h = href.strip()
         if h.startswith(("#", "mailto:", "tel:", "//")):
             continue
-        if h.startswith("http") and "houseofaspirants.in" not in h:
-            continue
-        out.add(h)
+        if h.startswith(("http://", "https://")):
+            m = re.match(r"^https?://([^/:?#]+)", h)
+            host = m.group(1).lower() if m else ""
+            if host.startswith("www."):
+                host = host[4:]
+            if host != _INTERNAL_HOST:
+                continue                       # external (incl. share links)
+            h = h[m.end():]
+        h = h.split("#", 1)[0].split("?", 1)[0].lstrip("/")
+        if h:
+            out.add(h)
     return out

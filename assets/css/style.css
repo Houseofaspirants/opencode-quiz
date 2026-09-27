@@ -1851,6 +1851,10 @@ a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text
   font-size: 0.76rem; font-weight: 700; color: var(--muted);
 }
 .doc-toc a:hover, .doc-toc a.is-active { color: var(--brand); border-left-color: var(--brand); }
+.toc-meta {
+  margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--border);
+  font-size: 0.78rem; font-weight: 600; color: var(--muted);
+}
 
 /* Article body ---------------------------------------------------------- */
 .doc-body { min-width: 0; }
@@ -1941,6 +1945,22 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 }
 .chain-step.is-current { border-color: var(--brand); background: var(--surface-2); }
 .chain-step.is-reserved { border-style: dashed; color: var(--muted); }
+
+/* Recommendation plan (content templates, Phase 3) ------------------------- */
+.rec-group + .rec-group { margin-top: 26px; }
+.rec-title {
+  font-size: 0.84rem; font-weight: 800; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 12px;
+}
+/* A slot whose data does not exist yet stays visible and says so - it is
+   never linked to a page that is not there. */
+.rec-reserved {
+  display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap;
+  margin: 26px 0 0; padding: 13px 16px;
+  border: 1px dashed var(--border); border-radius: var(--r-md);
+  background: var(--surface-2);
+  font-size: 0.92rem; color: var(--muted); line-height: 1.55;
+}
 
 /* Archive index (archives.html) ------------------------------------------- */
 .arch-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }

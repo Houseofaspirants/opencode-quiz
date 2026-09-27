@@ -1431,8 +1431,17 @@ def content_chain(record, quizzes):
         steps.append(("The quiz that tests this", str(record["quiz"]), "link"))
     elif quizzes:
         steps.append((quizzes[0]["title"], quizzes[0]["href"], "link"))
-    for label in ("Previous Year Questions", "Expected MCQs"):
-        steps.append((label, "", "reserved"))
+    # Previous year papers and expected MCQs: linked the moment verified data
+    # exists, reserved (named, never linked) until then. The hub carries the
+    # honest empty state either way.
+    for coll in ("previous-year-questions", "expected-mcqs"):
+        hit = CHAIN_TARGETS.get(coll)
+        if hit and hit["file"] == record["file"]:
+            continue                      # this page IS that step - no self-link
+        if hit:
+            steps.append((hit["title"], hit["file"], "link"))
+        else:
+            steps.append((HUBS[coll]["schema_hub"], "", "reserved"))
     for coll, label in (("current-affairs", "Current affairs"),
                         ("magazine", "Monthly magazine"),
                         ("strategy", "Preparation strategy")):
@@ -1596,7 +1605,15 @@ def resolve_slot(record, spec, ctx, quizzes, anchors):
             edges.append((href, rel))
 
     if src == "quiz":
-        for q in quizzes[:limit]:
+        own = str(record.get("quiz") or "").strip()
+        if own:
+            # The document names the set that tests it: that is the practice
+            # link, not an unrelated set that happens to share a subject.
+            cards.append({"href": own, "eyebrow": "Practice quiz",
+                          "title": "The set that tests this", "sub": "",
+                          "meta": "Start the quiz →"})
+            keep(own, "practice-quiz")
+        for q in quizzes[:max(0, limit - len(cards))]:
             cards.append({"href": q["href"], "eyebrow": q["subject"] or "Practice",
                           "title": q["title"], "sub": "",
                           "meta": "Start the quiz →"})
@@ -1640,7 +1657,8 @@ def resolve_slot(record, spec, ctx, quizzes, anchors):
             picks = [(pool[0], "")] if pool else []
         else:
             picks = [(r, why) for r, _, why in
-                     rank(record, pool, limit, prefer_lang=record.get("lang"))]
+                     rank(record, pool, limit, prefer_lang=record.get("lang"),
+                          require_score=not spec.get("any"))]
         for r, _why in picks:
             cards.append(_doc_card(r, hub["schema_hub"] if hub else r["collection"]))
             keep(r["file"], "related-" + coll)
@@ -1686,9 +1704,12 @@ def effective_plan(record):
     seen = {str(s.get("src", "")) for s in plan}
     own = record.get("collection", "")
     label = NAV_ENTRY.get(own, (record.get("template") or "section", ""))[0]
+    # Same section first: a reader who opened a note wants more notes, even
+    # when this one's facets do not overlap with theirs.
+    own_src = f"coll:{own}"
     tail = [
-        {"src": f"coll:{own}", "eyebrow": "More to read",
-         "title": f"More {label.lower()}", "limit": 3},
+        {"src": own_src, "eyebrow": "More to read",
+         "title": f"More {label.lower()}", "limit": 3, "any": True},
         {"src": "coll:current-affairs", "eyebrow": "Related current affairs",
          "title": "Current affairs in this area", "limit": 3},
         {"src": "coll:strategy", "eyebrow": "Related articles",
@@ -1697,7 +1718,9 @@ def effective_plan(record):
     for spec in tail:
         src = str(spec["src"])
         coll = src.split(":", 1)[1]
-        if src in seen or coll == own:
+        if src in seen:
+            continue
+        if src != own_src and coll == own:
             continue
         plan.append(spec)
         seen.add(src)
@@ -1706,7 +1729,9 @@ def effective_plan(record):
 
 def card_html(c):
     sub = f'<p class="muted">{esc(c["sub"])}</p>' if c.get("sub") else ""
-    meta = f'<p class="ilink">{esc(c["meta"])} →</p>' if c.get("meta") else ""
+    # the arrow is the card's affordance - add it once, whatever the slot says
+    action = str(c.get("meta") or "").strip().rstrip("→ ").strip()
+    meta = f'<p class="ilink">{esc(action)} →</p>' if action else ""
     return (f'<a class="card card-pad reveal" href="{esc(c["href"])}">'
             f'<span class="eyebrow">{esc(c["eyebrow"])}</span>'
             f'<h3>{esc(c["title"])}</h3>{sub}{meta}</a>')
@@ -1779,7 +1804,7 @@ def enforce_link_floor(html, coll, page):
         f'<p class="ilink">Open →</p></a>'
         for href, eyebrow, title in explore_links(coll)
         if href not in have)
-    section = f"""<section class="section" style="padding-top:0">
+    section = f"""    <section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div>
           <span class="eyebrow">Keep going</span>
@@ -1790,7 +1815,8 @@ def enforce_link_floor(html, coll, page):
       </div>
     </section>
 """
-    body = m.group(2) + "\n" + section
+    # appended as its own indented section, leaving </main> where it was
+    body = m.group(2).rstrip() + "\n" + section + "  "
     have = link_floor(body)
     if len(have) < 5:
         err(f"{page}: {len(have)} contextual internal links after the explore "
@@ -3032,7 +3058,152 @@ def archives_page(items, index, popularity):
     return html
 
 
-def patch_index(items_by_kind, index):
+def _quiz_titles(index, landing):
+    """Landing path -> topic name, for the homepage's 'Trending quiz' card."""
+    titles = {}
+    for subj in index.get("subjects", []):
+        for topic in subj.get("topics", []):
+            path = landing.get((subj["id"], topic.get("id")))
+            if path and topic.get("name"):
+                key = str(path).lstrip("/")
+                titles[key[:-5] if key.endswith(".html") else key] = topic["name"]
+    return titles
+
+
+def home_engine_html(records, popularity, quiz_titles):
+    """Homepage 'Popular notes' + 'Trending quiz', measured only.
+
+    Both cards read data/popularity.json, which ships empty - so this returns
+    '' until real analytics numbers exist. Nothing popular is ever claimed
+    without a count someone can check.
+    """
+    pop = {}
+    for k, v in (popularity or {}).items():
+        key = str(k).replace(DOMAIN, "").strip("/")
+        pop[key[:-5] if key.endswith(".html") else key] = v
+
+    def views_for(r):
+        return pop.get(r["url"].replace(DOMAIN, "").strip("/"))
+
+    cards = []
+    for views, r in sorted(((v, r) for r in records if views_for(r)),
+                           key=lambda p: (-p[0], p[1]["file"]))[:3]:
+        cards.append(
+            f'<a class="card card-pad reveal" href="{esc(r["file"])}">'
+            f'<span class="eyebrow">Popular note · {views} reads</span>'
+            f'<h3>{esc(r["title"])}</h3>'
+            f'<p class="ilink">{r["readingMinutes"]} min read →</p></a>')
+
+    for views, path in sorted(((v, k) for k, v in pop.items()
+                               if (quiz_titles or {}).get(k)),
+                              key=lambda p: (-p[0], p[1]))[:2]:
+        href = path if path.endswith((".html", "/")) or "?" in path \
+            else path + ".html"
+        cards.append(
+            f'<a class="card card-pad reveal" href="{esc(href)}">'
+            f'<span class="eyebrow">Trending quiz · {views} attempts</span>'
+            f'<h3>{esc(quiz_titles[path])}</h3>'
+            f'<p class="ilink">Attempt the set →</p></a>')
+
+    return "".join(cards)
+
+
+def home_engine_data(records):
+    """Candidates for the personalised blocks, embedded so the homepage never
+    pays for a second request. home.js scores them with the same facets the
+    builder uses and only renders them for a reader who actually has a signal
+    (a practised subject or a bookmarked one)."""
+    rows = []
+    for r in records:
+        if r.get("lang") != "en" or not r.get("file"):
+            continue
+        rows.append({"u": r["file"], "t": r["title"],
+                     "c": r.get("collection", ""),
+                     "s": r.get("subjects") or [], "e": r.get("exams") or [],
+                     "m": r.get("readingMinutes", 1),
+                     "d": r.get("difficulty") or ""})
+        if len(rows) >= 80:
+            break
+    return json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
+
+
+def page_main(html):
+    """The <main> of a rendered page - what the content graph measures."""
+    m = re.search(r"<main[^>]*>(.*?)</main>", html, re.S)
+    return m.group(1) if m else ""
+
+
+def guess_node_type(path, hub_files, guide_urls):
+    if path in hub_files:
+        return "hub"
+    if path in guide_urls:
+        return "guide"
+    if path.startswith("exam-"):
+        return "exam-hub"
+    if path.startswith("subject-"):
+        return "subject-hub"
+    if path.startswith(("topic-", "cluster-", "category-", "punjab-",
+                        "articles", "index")):
+        return "landing"
+    if path.startswith("quiz"):
+        return "quiz"
+    if path.startswith(GEN_PREFIXES):
+        return "document"
+    return "page"
+
+
+def write_content_graph(ctx, index, exams, articles, landing_pages, records):
+    """data/content-graph.json - nodes, contextual edges, silos.
+
+    Edges are read back out of the HTML that actually shipped, so the graph
+    can never describe a link the site does not serve.
+    """
+    hub_files = {h["file"] for h in HUBS.values()}
+    guide_urls = {str(a.get("url", "")).lstrip("/") for a in (articles or [])}
+    known_rel = {}
+    for src, target, rel in ctx.get("edges", []):
+        t = target.split("#", 1)[0].split("?", 1)[0]
+        if t:
+            known_rel[(node_id(src), node_id(t))] = rel
+
+    # Pass 1: every page we published, with its real metadata. Pass 2: only
+    # then the targets those pages link to, so a hub keeps its own title even
+    # when something else linked to it first.
+    nodes = {}
+    for file, _main, node in ctx["pages"]:
+        nodes[node_id(file)] = node
+
+    edge_rel = {}
+    for file, main, _node in ctx["pages"]:
+        src = node_id(file)
+        for href in sorted(link_floor(main)):
+            target = href.split("#", 1)[0].split("?", 1)[0]
+            if not target:
+                continue
+            tid = node_id(target)
+            if tid not in nodes:
+                nodes[tid] = {
+                    "id": tid, "url": "/" + tid,
+                    "type": guess_node_type(tid, hub_files, guide_urls),
+                    "template": "", "title": "", "lang": "en",
+                    "subjects": [], "exams": [], "tags": [], "hub": "",
+                }
+            edge_rel.setdefault((src, tid), known_rel.get((src, tid),
+                                                          "contextual"))
+
+    edges = [make_edge(s, t, rel) for (s, t), rel in edge_rel.items()]
+    silos = build_silos(index, articles, exams, landing_pages, records)
+    doc = build_graph(list(nodes.values()), edges, silos)
+    GRAPH.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n",
+                     encoding="utf-8")
+    c = doc["counts"]
+    info(f"content graph: {c['nodes']} nodes, {c['edges']} contextual links, "
+         f"{c['silos']} silos ({c['pillars']} pillars, {c['clusters']} clusters)"
+         f" -> data/content-graph.json")
+
+
+def patch_index(items_by_kind, index, popularity=None, records=None,
+                quiz_titles=None):
     path = ROOT / "index.html"
     src = path.read_text(encoding="utf-8")
     out = src
@@ -3047,9 +3218,30 @@ def patch_index(items_by_kind, index):
         _, post = rest.split(end, 1)
         body = feed_html(kind, items_by_kind.get(kind, []), index)
         out = pre + start + ("\n" + body + "\n" if body else "") + end + post
+
+    # ---- Phase 3: the homepage engine ------------------------------------
+    # `popular` is measured (data/popularity.json) and rendered here; the
+    # personalised half is filled by home.js from the reader's own progress,
+    # so the section only shows what is really there.
+    popular_body = home_engine_html(records or [], popularity or {},
+                                    quiz_titles or {})
+    for marker, body in (("popular", popular_body),
+                         ("data", home_engine_data(records or []))):
+        start, end = f"<!-- HOA-HOME:{marker} -->", f"<!-- /HOA-HOME:{marker} -->"
+        if start not in out or end not in out:
+            err(f"index.html: engine marker {start!r} missing - restore it "
+                f"before running the content build")
+            return
+        pre, rest = out.split(start, 1)
+        _, post = rest.split(end, 1)
+        out = pre + start + body + end + post
+    if popular_body:
+        out = out.replace('<section class="section section-alt" id="foryou" hidden>',
+                          '<section class="section section-alt" id="foryou">')
+
     if out != src:
         path.write_text(out, encoding="utf-8")
-        info("index.html: homepage feed blocks refreshed")
+        info("index.html: homepage feed + engine blocks refreshed")
 
 
 # =============================================================================
@@ -3079,6 +3271,21 @@ def main():
         err(f"archives: title is {len(ARCHIVES_TITLE)} chars (max 60)")
     if not (140 <= len(ARCHIVES_DESC) <= 160):
         err(f"archives: description is {len(ARCHIVES_DESC)} chars (want 140-160)")
+
+    # Engine <-> builder parity: every template publishes into a collection
+    # that exists, and every field a template calls required is enforced by
+    # that collection's own contract (not merely suggested by the scaffold).
+    for _key, _tpl in TEMPLATES.items():
+        if _tpl["collection"] not in HUBS:
+            err(f"template {_key}: unknown collection {_tpl['collection']!r}")
+            continue
+        for _field in _tpl["required"]:
+            if _field not in REQUIRED_FIELDS.get(_tpl["collection"], []):
+                err(f"template {_key}: requires {_field!r} but content/"
+                    f"{_tpl['collection']}/ does not enforce it")
+    for _coll in NAV_ORDER:
+        if _coll not in HUBS or _coll not in NAV_ENTRY:
+            err(f"navigation: {_coll!r} has no hub or no label")
 
     global RECRUITMENT, CHAIN_TARGETS
     RECRUITMENT = []
@@ -3134,12 +3341,21 @@ def main():
     RECRUITMENT = all_records["recruitment"]
     # Learning-path targets are the newest real page in each chain collection.
     CHAIN_TARGETS = {c: all_records[c][0] for c in
-                     ("current-affairs", "magazine", "strategy")
+                     ("current-affairs", "magazine", "strategy",
+                      "expected-mcqs", "previous-year-questions")
                      if all_records.get(c)}
 
     expected = set()
     manifest_items = []
     rendered = []
+    # Recommendation context shared by every page: the pools the engine ranks
+    # over, the edges it emitted, and each rendered <main> for the graph.
+    ctx = {
+        "index": index,
+        "pools": {c: all_records[c] + punjabi[c] for c in HUBS},
+        "edges": [],
+        "pages": [],
+    }
 
     # ---- item pages -------------------------------------------------------
     for coll, cfg in HUBS.items():
@@ -3148,12 +3364,14 @@ def main():
         pool = all_records[coll]
         for rec in pool + punjabi[coll]:
             html_out, _ = render_item(rec, cfg, pool if rec["lang"] == "en"
-                                      else punjabi[coll], index, landing)
+                                      else punjabi[coll], index, landing, ctx)
             out_path = ROOT / rec["file"]
             out_path.parent.mkdir(parents=True, exist_ok=True)
             out_path.write_text(html_out, encoding="utf-8")
             expected.add(rec["file"])
             rendered.append(rec)
+            ctx["pages"].append((rec["file"], page_main(html_out),
+                                 make_node(rec, HUBS[coll]["file"])))
             manifest_items.append({k: rec[k] for k in
                                    ("collection", "file", "url", "title",
                                     "description", "published", "updated",
@@ -3194,6 +3412,11 @@ def main():
         html_out, live = hub_page(coll, cfg, pool, index, exams)
         (ROOT / cfg["file"]).write_text(html_out, encoding="utf-8")
         expected.add(cfg["file"])
+        ctx["pages"].append((cfg["file"], page_main(html_out), {
+            "id": cfg["file"], "url": f'/{cfg["file"]}', "type": "hub",
+            "template": "", "title": cfg["title"], "lang": "en",
+            "subjects": [], "exams": [], "tags": [], "hub": cfg["file"],
+        }))
         hubs_out.append({
             "collection": coll,
             "file": cfg["file"],
@@ -3241,7 +3464,8 @@ def main():
     if removed:
         warn("stale content pages removed: " + ", ".join(removed))
 
-    # ---- homepage feed ----------------------------------------------------
+    # ---- homepage feed + engine ------------------------------------------
+    popularity = load_popularity()
     feed_items = {
         "notes": all_records["notes"] + punjabi["notes"],
         "current-affairs": (all_records["current-affairs"] +
@@ -3251,19 +3475,41 @@ def main():
         "sessions": all_records["sessions"] + punjabi["sessions"],
         "recruitment": all_records["recruitment"] + punjabi["recruitment"],
     }
-    patch_index(feed_items, index)
+    patch_index(feed_items, index, popularity=popularity, records=rendered,
+                quiz_titles=_quiz_titles(index, landing))
 
     # ---- navigation -------------------------------------------------------
     patch_core_nav()
 
     # ---- Phase 2 artefacts ------------------------------------------------
-    popularity = load_popularity()
     write_search_index(rendered, index)
     write_feed(rendered)
-    (ROOT / ARCHIVES_FILE).write_text(
-        archives_page(rendered, index, popularity), encoding="utf-8")
+    arch_html = archives_page(rendered, index, popularity)
+    (ROOT / ARCHIVES_FILE).write_text(arch_html, encoding="utf-8")
     expected.add(ARCHIVES_FILE)
+    ctx["pages"].append((ARCHIVES_FILE, page_main(arch_html), {
+        "id": ARCHIVES_FILE, "url": f"/{ARCHIVES_FILE}", "type": "page",
+        "template": "", "title": ARCHIVES_TITLE, "lang": "en",
+        "subjects": [], "exams": [], "tags": [], "hub": ARCHIVES_FILE,
+    }))
     info(f"archives: {len(rendered)} document(s) indexed on {ARCHIVES_FILE}")
+
+    # ---- Phase 3: content graph + homepage engine -------------------------
+    articles, landing_pages = [], []
+    for _path, _key, _slot in (
+            (ROOT / "data" / "articles.json", "articles", "articles"),
+            (ROOT / "data" / "landing-manifest.json", "pages", "landing")):
+        try:
+            value = json.loads(_path.read_text(encoding="utf-8")).get(_key, [])
+        except Exception as e:
+            warn(f"{_path.name} unreadable: {e}")
+            value = []
+        if _slot == "articles":
+            articles = value
+        else:
+            landing_pages = value
+    write_content_graph(ctx, index, exams, articles, landing_pages,
+                        [r for r in rendered if r["lang"] == "en"])
 
     # ---- manifest ---------------------------------------------------------
     manifest = {

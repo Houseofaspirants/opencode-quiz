@@ -75,6 +75,22 @@
       "count": 0
     },
     {
+      "collection": "expected-mcqs",
+      "file": "expected-mcqs.html",
+      "url": "https://houseofaspirants.in/expected-mcqs",
+      "title": "Expected MCQs Punjab Exams | House of Aspirants",
+      "description": "Expected MCQs for Punjab aspirants - forecast questions drawn from the syllabus and the pattern of the exam, published here only after they are reviewed.",
+      "count": 0
+    },
+    {
+      "collection": "previous-year-questions",
+      "file": "previous-year-questions.html",
+      "url": "https://houseofaspirants.in/previous-year-questions",
+      "title": "Previous Year Questions Punjab Exams | House of Aspirants",
+      "description": "Previous year questions for Punjab exams - questions taken from the official paper itself, with the exam and year named, listed only when that paper exists.",
+      "count": 0
+    },
+    {
       "collection": "pdfs",
       "file": "pdfs.html",
       "url": "https://houseofaspirants.in/pdfs",
@@ -103,6 +119,8 @@
     "blogs": 0,
     "news": 0,
     "announcements": 0,
+    "expected-mcqs": 0,
+    "previous-year-questions": 0,
     "pdfs": 0
   },
   "generatedBy": "scripts/build_content.py"

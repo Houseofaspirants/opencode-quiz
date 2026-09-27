@@ -199,6 +199,7 @@ const HOA = (() => {
     "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
+    "Expected MCQs": "ਸੰਭਾਵਿਤ MCQ ਸਵਾਲ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
     "Blog": "ਬਲੌਗ",
     "News": "ਖ਼ਬਰਾਂ",
@@ -418,6 +419,8 @@ const HOA = (() => {
               <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
               <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
               <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
+              <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+              <a data-nav="previous-year-questions" href="previous-year-questions.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
               <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
               <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
               <a data-nav="news" href="news.html"><span data-i18n="News">News</span></a>
@@ -498,6 +501,8 @@ const HOA = (() => {
     <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
     <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
     <a class="mm-link" data-nav="recruitment" href="recruitment.html"><span class="mm-emoji">📋</span> <span data-i18n="Recruitment">Recruitment</span></a>
+    <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
+    <a class="mm-link" data-nav="previous-year-questions" href="previous-year-questions.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
     <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
     <a class="mm-link" data-nav="blogs" href="blogs.html"><span class="mm-emoji">✍️</span> <span data-i18n="Blog">Blog</span></a>
     <a class="mm-link" data-nav="news" href="news.html"><span class="mm-emoji">📰</span> <span data-i18n="News">News</span></a>
@@ -605,6 +610,8 @@ const HOA = (() => {
           <a href="strategy.html" data-i18n="Preparation Strategy">Preparation Strategy</a>
           <a href="live-sessions.html" data-i18n="Live Sessions">Live Sessions</a>
           <a href="recruitment.html" data-i18n="Recruitment">Recruitment</a>
+          <a href="expected-mcqs.html" data-i18n="Expected MCQs">Expected MCQs</a>
+          <a href="previous-year-questions.html" data-i18n="Previous Year Questions">Previous Year Questions</a>
           <a href="pdfs.html" data-i18n="Free PDFs">Free PDFs</a>
           <a href="blogs.html" data-i18n="Blog">Blog</a>
           <a href="news.html" data-i18n="News">News</a>

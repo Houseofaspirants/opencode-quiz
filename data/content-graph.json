@@ -1,0 +1,1492 @@
+{
+ "$note": "Built by scripts/build_content.py from the published tree only. Nodes are pages, edges are contextual internal links the builder actually rendered (from -> to, with the slot that produced it), silos connect a pillar page to its subject hub, exam hub, topic clusters and leaves. Deterministic: no run timestamps, so a rebuild either matches byte for byte or fails CI.",
+ "version": 1,
+ "facets": [
+  "subject",
+  "exam",
+  "category",
+  "difficulty",
+  "tags",
+  "language"
+ ],
+ "weights": {
+  "subject": 6,
+  "exam": 4,
+  "tag": 3,
+  "category": 3,
+  "difficulty": 2,
+  "language": 2,
+  "featured": 2,
+  "collection": 1
+ },
+ "counts": {
+  "nodes": 47,
+  "edges": 102,
+  "silos": 28,
+  "clusters": 19,
+  "pillars": 27
+ },
+ "nodes": [
+  {
+   "id": "announcements.html",
+   "url": "/announcements.html",
+   "type": "hub",
+   "template": "",
+   "title": "Site Announcements | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "announcements.html"
+  },
+  {
+   "id": "archives.html",
+   "url": "/archives.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Exam Study Archive | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "articles.html",
+   "url": "/articles.html",
+   "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "blogs.html",
+   "url": "/blogs.html",
+   "type": "hub",
+   "template": "",
+   "title": "Preparation Blog | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "blogs.html"
+  },
+  {
+   "id": "current-affairs-preparation.html",
+   "url": "/current-affairs-preparation.html",
+   "type": "guide",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "current-affairs.html",
+   "url": "/current-affairs.html",
+   "type": "hub",
+   "template": "",
+   "title": "Punjab Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "exam-clerk.html",
+   "url": "/exam-clerk.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-excise-inspector.html",
+   "url": "/exam-excise-inspector.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-food-supply-inspector.html",
+   "url": "/exam-food-supply-inspector.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-forest-guard.html",
+   "url": "/exam-forest-guard.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-lab-attendant.html",
+   "url": "/exam-lab-attendant.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-naib-tehsildar.html",
+   "url": "/exam-naib-tehsildar.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-patwari.html",
+   "url": "/exam-patwari.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-ppsc-posts.html",
+   "url": "/exam-ppsc-posts.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-pspcl-jobs.html",
+   "url": "/exam-pspcl-jobs.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-psssb.html",
+   "url": "/exam-psssb.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-asi.html",
+   "url": "/exam-punjab-police-asi.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-constable.html",
+   "url": "/exam-punjab-police-constable.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-driver.html",
+   "url": "/exam-punjab-police-driver.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-intelligence-assistant.html",
+   "url": "/exam-punjab-police-intelligence-assistant.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-it-cadre.html",
+   "url": "/exam-punjab-police-it-cadre.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-jail-warder.html",
+   "url": "/exam-punjab-police-jail-warder.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-sub-inspector.html",
+   "url": "/exam-punjab-police-sub-inspector.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-wireless-operator.html",
+   "url": "/exam-punjab-police-wireless-operator.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police.html",
+   "url": "/exam-punjab-police.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-revenue-officer.html",
+   "url": "/exam-revenue-officer.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-senior-assistant.html",
+   "url": "/exam-senior-assistant.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "expected-mcqs.html",
+   "url": "/expected-mcqs.html",
+   "type": "hub",
+   "template": "",
+   "title": "Expected MCQs Punjab Exams | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "expected-mcqs.html"
+  },
+  {
+   "id": "index.html",
+   "url": "/index.html",
+   "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "live-sessions.html",
+   "url": "/live-sessions.html",
+   "type": "hub",
+   "template": "",
+   "title": "Weekly Live Guidance Sessions | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "live-sessions.html"
+  },
+  {
+   "id": "magazine.html",
+   "url": "/magazine.html",
+   "type": "hub",
+   "template": "",
+   "title": "Current Affairs Monthly Magazine | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "magazine.html"
+  },
+  {
+   "id": "news.html",
+   "url": "/news.html",
+   "type": "hub",
+   "template": "",
+   "title": "Exam News & Updates | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "news.html"
+  },
+  {
+   "id": "pdfs.html",
+   "url": "/pdfs.html",
+   "type": "hub",
+   "template": "",
+   "title": "Free PDFs for Punjab Exams | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "pdfs.html"
+  },
+  {
+   "id": "previous-year-questions.html",
+   "url": "/previous-year-questions.html",
+   "type": "hub",
+   "template": "",
+   "title": "Previous Year Questions Punjab Exams | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "punjab-exams.html",
+   "url": "/punjab-exams.html",
+   "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "punjab-gk-study-guide.html",
+   "url": "/punjab-gk-study-guide.html",
+   "type": "guide",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "punjab-police-exam-preparation.html",
+   "url": "/punjab-police-exam-preparation.html",
+   "type": "guide",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz.html",
+   "url": "/quiz.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "reasoning-quant-preparation.html",
+   "url": "/reasoning-quant-preparation.html",
+   "type": "guide",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "recruitment.html",
+   "url": "/recruitment.html",
+   "type": "hub",
+   "template": "",
+   "title": "Punjab Recruitment Updates | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "recruitment.html"
+  },
+  {
+   "id": "strategy.html",
+   "url": "/strategy.html",
+   "type": "hub",
+   "template": "",
+   "title": "Exam Preparation Strategy & Study Plans | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "study-notes.html",
+   "url": "/study-notes.html",
+   "type": "hub",
+   "template": "",
+   "title": "Punjab Exam Study Notes | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-notes.html"
+  },
+  {
+   "id": "subject.html",
+   "url": "/subject.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  }
+ ],
+ "edges": [
+  {
+   "from": "announcements.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "blogs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "news.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "announcements.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "news.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "announcements.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "blogs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "announcements.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "news.html",
+   "to": "recruitment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-food-supply-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-lab-attendant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-naib-tehsildar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-ppsc-posts.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-pspcl-jobs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-asi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-driver.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-intelligence-assistant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-it-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-wireless-operator.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-revenue-officer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-senior-assistant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pdfs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "current-affairs-preparation.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "punjab-gk-study-guide.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "punjab-police-exam-preparation.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "reasoning-quant-preparation.html",
+   "rel": "contextual",
+   "weight": 1
+  }
+ ],
+ "silos": [
+  {
+   "id": "exam:clerk",
+   "kind": "exam",
+   "name": "Clerk",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-clerk.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:excise-inspector",
+   "kind": "exam",
+   "name": "Excise Inspector",
+   "pillar": "current-affairs-preparation.html",
+   "hub": "exam-excise-inspector.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:food-supply-inspector",
+   "kind": "exam",
+   "name": "Food Supply Inspector",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-food-supply-inspector.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:forest-guard",
+   "kind": "exam",
+   "name": "Forest Guard",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-forest-guard.html",
+   "clusters": [
+    "category-gk-geography-environment.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:lab-attendant",
+   "kind": "exam",
+   "name": "Lab Attendant",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-lab-attendant.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:naib-tehsildar",
+   "kind": "exam",
+   "name": "Naib Tehsildar",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-naib-tehsildar.html",
+   "clusters": [
+    "category-gk-polity.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:patwari",
+   "kind": "exam",
+   "name": "Patwari",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-patwari.html",
+   "clusters": [
+    "category-gk-geography-environment.html",
+    "category-gk-history.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:ppsc-posts",
+   "kind": "exam",
+   "name": "PPSC posts",
+   "pillar": null,
+   "hub": "exam-ppsc-posts.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:pspcl-jobs",
+   "kind": "exam",
+   "name": "PSPCL jobs",
+   "pillar": "reasoning-quant-preparation.html",
+   "hub": "exam-pspcl-jobs.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:psssb",
+   "kind": "exam",
+   "name": "PSSSB",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-psssb.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police",
+   "kind": "exam",
+   "name": "Punjab Police",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police.html",
+   "clusters": [
+    "category-gk-punjab-gk.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-asi",
+   "kind": "exam",
+   "name": "Punjab Police ASI",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-asi.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-constable",
+   "kind": "exam",
+   "name": "Punjab Police Constable",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-constable.html",
+   "clusters": [
+    "category-gk-punjab-gk.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-driver",
+   "kind": "exam",
+   "name": "Punjab Police Driver",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-driver.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-intelligence-assistant",
+   "kind": "exam",
+   "name": "Punjab Police Intelligence Assistant",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-intelligence-assistant.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-it-cadre",
+   "kind": "exam",
+   "name": "Punjab Police IT Cadre",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-it-cadre.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-jail-warder",
+   "kind": "exam",
+   "name": "Punjab Police Jail Warder",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-jail-warder.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-sub-inspector",
+   "kind": "exam",
+   "name": "Punjab Police Sub-Inspector (SI)",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-sub-inspector.html",
+   "clusters": [
+    "category-gk-polity.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-wireless-operator",
+   "kind": "exam",
+   "name": "Punjab Police Wireless Operator",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-wireless-operator.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:revenue-officer",
+   "kind": "exam",
+   "name": "Revenue Officer",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-revenue-officer.html",
+   "clusters": [
+    "category-gk-punjab-gk.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "exam:senior-assistant",
+   "kind": "exam",
+   "name": "Senior Assistant",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-senior-assistant.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "subject:computer",
+   "kind": "subject",
+   "name": "Computer",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "subject-computer.html",
+   "clusters": [
+    "topic-computer-mobile-phone-part1-25-mcqs.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "subject:current-affairs",
+   "kind": "subject",
+   "name": "Current Affairs",
+   "pillar": "current-affairs-preparation.html",
+   "hub": "subject-current-affairs.html",
+   "clusters": [
+    "topic-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+    "topic-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
+    "topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
+    "topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "subject:english",
+   "kind": "subject",
+   "name": "English",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "subject-english.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "subject:gk",
+   "kind": "subject",
+   "name": "General Knowledge",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "subject-gk.html",
+   "clusters": [
+    "category-gk-economy.html",
+    "category-gk-geography-environment.html",
+    "category-gk-history.html",
+    "category-gk-others.html",
+    "category-gk-polity.html",
+    "category-gk-punjab-gk.html"
+   ],
+   "leaves": []
+  },
+  {
+   "id": "subject:punjabi",
+   "kind": "subject",
+   "name": "Punjabi",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "subject-punjabi.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "subject:quant",
+   "kind": "subject",
+   "name": "Quantitative Aptitude",
+   "pillar": "reasoning-quant-preparation.html",
+   "hub": "subject-quant.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "subject:reasoning",
+   "kind": "subject",
+   "name": "Reasoning",
+   "pillar": "reasoning-quant-preparation.html",
+   "hub": "subject-reasoning.html",
+   "clusters": [],
+   "leaves": []
+  }
+ ]
+}

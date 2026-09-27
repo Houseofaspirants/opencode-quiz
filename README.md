@@ -871,6 +871,40 @@ blocks (hidden until the first file exists) · stale-page cleanup (root **and**
   quiz → current affairs → magazine → strategy); Previous Year Questions and
   Expected MCQs render as dimmed *reserved* steps until verified data exists.
 
+### What Phase 3 added to the same run
+
+* **11 content templates** (`scripts/content_engine.py`) — Study Note,
+  Current Affairs, Monthly Magazine, Expected MCQs, Previous Year Questions,
+  Preparation Strategy, Weekly Live Session Summary, Recruitment Notification,
+  Exam Analysis, Motivation Article, Book Review. Each one owns its front
+  matter contract, its JSON-LD type, its table-of-contents rules and its
+  recommendation plan.
+* **`scripts/new_content.py`** — scaffolds a correctly-shaped draft from a
+  template into `content/_drafts/` (never loaded by the build), so an
+  unfinished draft cannot break CI.
+* **Facet recommendation engine** — every document ranks its related content
+  on subject (6), exam (4), tags (3), category (3), difficulty (2), featured
+  (2) and shared section (1); language is a tie-break, never a reason to call
+  two documents related. Slots whose data does not exist yet render a single
+  honest *Reserved* line instead of a dead link.
+* **Recommendation blocks per page type** — a study note recommends the
+  practice quiz, subject hub, current affairs, expected MCQs and previous
+  papers plus next/previous chapter; current affairs recommends the magazine
+  issue, a set, related news, schemes and Punjab GK; recruitment recommends
+  eligibility, syllabus, strategy, books, papers, expected questions and the
+  live session, with on-page anchors for eligibility and syllabus when the
+  document declares them.
+* **`data/content-graph.json`** — nodes (every hub, document and archive),
+  contextual edges (re-read out of the shipped `<main>` markup, so the graph
+  can never claim a link the site does not serve) and 28 silos: subject and
+  exam pillar → hub → cluster → leaf.
+* **Link floor** — every page carries at least five contextual internal links
+  inside `<main>`; a page short of them gets an "Explore the library" module,
+  and `seo_check.py` fails the build if any page still falls below five.
+* **Homepage engine** — measured popularity for Popular notes / Trending quiz
+  (ships off) plus *Continue learning* and *Recommended for you* computed in
+  the browser from this reader's own last subject and bookmarks.
+
 **Reserved, inactive until real data exists:** Previous Year Questions,
 Expected Questions and Mock paper pages. The types and templates are ready;
 nothing renders and nothing is linked until verifiable sources land — see

@@ -869,6 +869,156 @@ else:
             errors.append(f"related.js: missing {frag}")
 notes.append("linking: 13 chrome destinations + related subjects/quizzes/guides modules enforced")
 
+# --- content graph + the >=5 contextual-link floor (Phase 3) ----------------
+# Two promises from the content engine, verified against the HTML that
+# actually ships: (a) no page is a dead end - five contextual internal links
+# inside <main> at minimum; (b) data/content-graph.json describes the real
+# tree - every page it names exists, every edge points at a file the site
+# serves, and every silo resolves to a pillar, a hub and its clusters.
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+try:
+    from content_engine import TEMPLATES, link_floor, plan_for  # noqa: E402
+except Exception as exc:                            # pragma: no cover
+    errors.append(f"content engine unavailable: {exc}")
+    TEMPLATES, link_floor, plan_for = {}, lambda html: set(), lambda key: []
+
+
+def main_links(html_text):
+    """The same link rule the builder uses - one implementation, one truth."""
+    m = re.search(r"<main[^>]*>(.*?)</main>", html_text, re.S)
+    return link_floor(m.group(1)) if m else set()
+
+
+def resolvable(target):
+    """`subject.html?subject=gk#x` -> does subject.html exist?
+
+    Production serves extensionless URLs, so a canonical
+    `https://houseofaspirants.in/note-x` resolves to `note-x.html`.
+    """
+    path = str(target).split("#", 1)[0].split("?", 1)[0].lstrip("/")
+    if not path:
+        return False
+    if (ROOT / path).exists():
+        return True
+    return not path.endswith((".html", ".xml", ".json")) and \
+        (ROOT / (path + ".html")).exists()
+
+
+page_floor = []
+for path in sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("pa/*.html")):
+    if path.name == "404.html":
+        continue
+    links = main_links(path.read_text(encoding="utf-8", errors="replace"))
+    if len(links) < 5:
+        page_floor.append(f"{path.as_posix()} ({len(links)})")
+if page_floor:
+    errors.append("link floor: pages with fewer than 5 contextual internal "
+                  "links inside <main>: " + ", ".join(page_floor))
+else:
+    notes.append("link floor: every page carries >=5 contextual internal links")
+
+cm_items = []
+if CONTENT_MANIFEST.exists():
+    try:
+        cm_items = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8")) \
+            .get("items", [])
+    except json.JSONDecodeError:
+        cm_items = []
+
+GRAPH_PATH = ROOT / "data" / "content-graph.json"
+if not GRAPH_PATH.exists():
+    errors.append("content graph missing: data/content-graph.json "
+                  "(rebuild with scripts/build_content.py)")
+else:
+    try:
+        graph = json.loads(GRAPH_PATH.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as e:
+        errors.append(f"content-graph.json: unreadable ({e})")
+        graph = None
+    if isinstance(graph, dict):
+        nodes = graph.get("nodes") or []
+        edges = graph.get("edges") or []
+        silos = graph.get("silos") or []
+        counts = graph.get("counts") or {}
+        for key, value in (("nodes", nodes), ("edges", edges), ("silos", silos)):
+            if counts.get(key) != len(value):
+                errors.append(f"content-graph.json: counts.{key} is "
+                              f"{counts.get(key)!r} but {len(value)} entries "
+                              f"are stored")
+        ids = [n.get("id") for n in nodes]
+        if len(ids) != len(set(ids)):
+            errors.append("content-graph.json: duplicate node ids")
+        node_ids = set(ids)
+
+        # every published content page must be a node
+        for hub in (content_hubs or []):
+            if hub.get("file") and hub["file"] not in node_ids:
+                errors.append(f"content-graph.json: hub {hub['file']} is not a "
+                              f"node")
+        for item in (cm_items or []):
+            if item.get("file") and item["file"] not in node_ids:
+                errors.append(f"content-graph.json: document "
+                              f"{item.get('file')} is not a node")
+        if "archives.html" not in node_ids:
+            errors.append("content-graph.json: archives.html is not a node")
+
+        # every edge must point at a page the site serves
+        dead = sorted({e.get("to") for e in edges
+                       if e.get("to") and not resolvable(e["to"])})
+        if dead:
+            errors.append("content-graph.json: edges point at pages that do "
+                          "not exist: " + ", ".join(dead[:8]))
+        for e in edges:
+            if e.get("from") not in node_ids:
+                errors.append(f"content-graph.json: edge from unknown node "
+                              f"{e.get('from')!r}")
+                break
+
+        # silos: pillar / hub / clusters must resolve, leaves must be nodes
+        missing_silo = []
+        for s in silos:
+            for key in ("pillar", "hub"):
+                target = s.get(key)
+                if target and not resolvable(target):
+                    missing_silo.append(f"{s.get('id')}:{key}={target}")
+            for c in s.get("clusters") or []:
+                if not resolvable(c):
+                    missing_silo.append(f"{s.get('id')}:cluster={c}")
+            for leaf in s.get("leaves") or []:
+                if leaf not in node_ids:
+                    missing_silo.append(f"{s.get('id')}:leaf={leaf}")
+        if missing_silo:
+            errors.append("content-graph.json: silos reference pages that do "
+                          "not exist: " + ", ".join(missing_silo[:8]))
+        if not silos:
+            errors.append("content-graph.json: no subject/exam silos built")
+
+        notes.append(f"content graph: {len(nodes)} nodes, {len(edges)} "
+                     f"contextual links, {len(silos)} silos "
+                     f"({counts.get('pillars', 0)} pillars, "
+                     f"{counts.get('clusters', 0)} clusters), all resolving")
+
+# --- the eleven content templates <-> the collections that publish them -----
+# The builder already fails the build when a template's required fields are
+# not enforced by its collection; here the shipped hub must exist for every
+# template and for every collection its plan recommends.
+if TEMPLATES:
+    hub_collections = {h.get("collection") for h in (content_hubs or [])}
+    for key, tpl in TEMPLATES.items():
+        if tpl.get("collection") not in hub_collections:
+            errors.append(f"template {key}: its collection "
+                          f"{tpl.get('collection')!r} has no hub page")
+        for slot in plan_for(key):
+            src = str(slot.get("src", ""))
+            if src.startswith("coll:"):
+                target = src[5:].split("?", 1)[0]
+                if target not in hub_collections:
+                    errors.append(f"template {key}: recommends collection "
+                                  f"{target!r} which has no hub")
+    notes.append(f"content templates: {len(TEMPLATES)} reusable templates "
+                 f"validated against their collections and plan slots")
+
 # --- site-wide: no vercel.app anywhere -------------------------------------
 for path in ROOT.rglob("*"):
     if path.is_file() and path.suffix in {".html", ".js", ".css", ".json", ".webmanifest", ".txt", ".xml", ".md"} \

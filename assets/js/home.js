@@ -110,7 +110,88 @@
       <h3>${title}</h3><p>${html}</p></div>`;
   }
 
-  /* ---------------------------------- 5. Hero search box → global search - */
+  /* ---------------------------- 5. Content engine: personalised feed -----
+     Two cards that can only exist on the reader's side: "Continue learning"
+     (the subject they last practised) and "Recommended for you" (the same
+     facet scoring the builder uses, run here over the embedded candidate
+     list in #engineData - no extra request, so the homepage stays fast).
+     Rule, same as everywhere else: no signal, no card. With nothing real to
+     show, the whole #foryou section stays hidden. */
+  function engineFeed() {
+    const section = document.getElementById("foryou");
+    const recs = document.getElementById("engineRecs");
+    if (!section || !recs) return;
+
+    let data = [];
+    try {
+      // The builder writes the payload between the HOA-HOME markers, so the
+      // marker comments themselves arrive as text - strip them before parsing.
+      const raw = (document.getElementById("engineData")?.textContent || "")
+        .replace(/<!--[\s\S]*?-->/g, "")
+        .trim();
+      data = raw ? JSON.parse(raw) : [];
+    } catch { data = []; }
+    if (!Array.isArray(data)) data = [];
+
+    const prog = HOA.progress.get();
+    const bookmarks = HOA.bookmarks.all() || [];
+    const last = String(prog.lastSubject || "").trim();
+    const affinity = new Set(
+      [last, ...bookmarks.map((b) => b.subject || String(b.key || "").split(":")[0])]
+        .map((s) => String(s || "").trim())
+        .filter((s) => s && s !== "mixed")
+    );
+
+    // No `reveal` class here: those elements are injected after the reveal
+    // observer has already run, so they must be visible as-is.
+    const card = (c) => `<a class="card card-pad" href="${esc(c.href)}">
+        <span class="eyebrow">${esc(c.eyebrow)}</span>
+        <h3>${esc(c.title)}</h3>
+        ${c.sub ? `<p class="muted">${esc(c.sub)}</p>` : ""}
+        <p class="ilink">${esc(c.meta)}</p></a>`;
+
+    const cards = [];
+
+    if (last && last !== "mixed") {
+      const subject = (idx.subjects || []).find((s) => s.id === last);
+      cards.push(card({
+        href: `subject.html?subject=${encodeURIComponent(last)}`,
+        eyebrow: "Continue learning",
+        title: subject ? subject.name : last,
+        sub: prog.quizzes
+          ? `${prog.quizzes} quiz${prog.quizzes === 1 ? "" : "zes"} attempted in this subject.`
+          : "Pick up where you left off.",
+        meta: "Resume →",
+      }));
+    }
+
+    if (affinity.size && data.length) {
+      const scored = data
+        .map((row, i) => ({
+          row, i,
+          score: (row.s || []).reduce(
+            (total, id) => total + (affinity.has(String(id)) ? 6 : 0), 0),
+        }))
+        .filter((x) => x.score > 0)
+        .sort((a, b) => b.score - a.score || a.i - b.i)
+        .slice(0, 3);
+      scored.forEach(({ row }) => cards.push(card({
+        href: row.u,
+        eyebrow: "Recommended for you",
+        title: row.t,
+        sub: [`${row.m} min read`, row.d].filter(Boolean).join(" · "),
+        meta: "Read it →",
+      })));
+    }
+
+    if (!cards.length) return;
+    recs.innerHTML = cards.join("");
+    recs.hidden = false;
+    section.hidden = false;
+  }
+  engineFeed();
+
+  /* ---------------------------------- 6. Hero search box → global search - */
   document.getElementById("homeSearch")?.addEventListener("focus", (e) => {
     e.target.blur(); // keep focus in the overlay input instead
     document.querySelector("[data-action='open-search']")?.click();

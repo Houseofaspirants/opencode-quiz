@@ -157,6 +157,88 @@ cross-linking or a Punjabi page publishes outside `/pa/`.
 7. **Drafts are validated but never published** — they cannot reach the
    sitemap, feed, search index or archive by accident.
 
+## Templates — eleven page types, one contract (Phase 3)
+
+`scripts/content_engine.py` holds the templates. A template owns four things:
+the front matter it requires from its collection, the JSON-LD type it emits,
+its table-of-contents rules and its **recommendation plan** — the ordered list
+of slots each page renders after the body.
+
+| `--type` key | Page type | Collection | Recommends (in order) |
+|---|---|---|---|
+| `study-note` | Study Note | `notes/` | the practice set, subject hub, current affairs, expected MCQs, previous papers |
+| `current-affairs` | Current Affairs | `current-affairs/` | the practice set, latest magazine issue, related news, government schemes, Punjab GK |
+| `monthly-magazine` | Monthly Magazine | `monthly-magazine/` | the practice set, current affairs, previous papers |
+| `expected-mcq` | Expected MCQ | `expected-mcqs/` | the practice set, study notes, previous papers |
+| `previous-year-question` | Previous Year Question | `previous-year-questions/` | the practice set, study notes, expected MCQs |
+| `preparation-strategy` | Preparation Strategy | `strategy/` | the practice set, study notes, free PDFs, latest magazine |
+| `motivation` | Motivation Article | `strategy/` | strategy guides, the practice set, live sessions |
+| `book-review` | Book Review | `strategy/` | free PDFs, study notes, the practice set |
+| `live-session-summary` | Weekly Live Session | `live-sessions/` | study notes, the practice set, strategy guides |
+| `recruitment-notification` | Recruitment | `recruitment/` | eligibility, syllabus, strategy, books (PDFs), previous papers, expected questions, live session |
+| `exam-analysis` | Exam Analysis | `blogs/` | the practice set, study notes, news |
+
+Three cross-section slots are appended to every plan so no page stops at its
+own section: **More &lt;section&gt;** (same collection, shown whenever it has
+another document), **Related current affairs** and **Guides worth reading
+next**. Study notes additionally carry previous/next chapter links when the
+subject has more than one note.
+
+### Recommendations are facets, not filler
+
+Candidates are scored against the page you are reading:
+
+| Facet | Weight | Facet | Weight |
+|---|---|---|---|
+| shared subject | 6 | difficulty | 2 |
+| shared exam | 4 | featured | 2 |
+| shared tag | 3 | shared section | 1 |
+| shared category | 3 | language | tie-break only |
+
+Language never makes two documents "related" — it only breaks ties between
+candidates that already overlap, so a Punjabi reader is served the Punjabi
+edition when one exists rather than any random item in the same language.
+A slot with no candidate above zero renders nothing; a slot whose data type
+the site does not publish at all (previous papers, expected MCQs, news for a
+note with no news) renders one dimmed **Reserved** line that explains why.
+Nothing is ever linked to a page that does not exist.
+
+### The link floor
+
+Every page must carry **at least five contextual internal links inside
+`<main>`**. The builder counts them with the same rule the graph uses, and
+appends an "Explore the library" module when a page is short;
+`scripts/seo_check.py` re-counts them across all shipped pages and fails the
+run if any page (404 excepted) falls below five.
+
+### Topic clusters, silos and the graph
+
+`data/content-graph.json` ships three views of the same tree:
+
+* **nodes** — every hub, document and the archive, with title, type, template,
+  language and facets;
+* **edges** — the contextual links actually present in the shipped HTML
+  (`<main>`), each with a relation label;
+* **silos** — one per subject and per exam: pillar (the guide that heads the
+  silo) → hub (subject/exam landing page) → clusters (category and cluster
+  landing pages) → leaves (documents). A silo with no pillar publishes
+  `pillar: null` rather than an invented one.
+
+### Scaffold instead of copying
+
+```bash
+python3 scripts/new_content.py --list                 # the 11 templates
+python3 scripts/new_content.py --type study-note --slug punjab-history-sikh-period
+python3 scripts/new_content.py --type current-affairs --slug july-week-1 --pa
+python3 scripts/new_content.py --type study-note --slug x --stdout   # print only
+```
+
+Scaffolds land in `content/_drafts/`, which the builder never loads: an
+unfinished file with placeholder text cannot reach a page, the sitemap, the
+feed or the search index. Fill the placeholders (titles ≤ 60 characters,
+descriptions 140–160) and `mv` the file into its collection folder when it is
+real.
+
 ## Content workflow
 
 1. Write `content/<collection>/<slug>.md` (optionally `<slug>.pa.md`).

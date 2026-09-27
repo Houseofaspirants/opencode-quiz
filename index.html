@@ -591,6 +591,31 @@
     <!-- HOA-FEED:sessions --><!-- /HOA-FEED:sessions -->
     <!-- HOA-FEED:recruitment --><!-- /HOA-FEED:recruitment -->
 
+    <!-- ============================================== CONTENT ENGINE (P3) ==
+         The engine's homepage strip. The popular/trending half is rendered
+         by scripts/build_content.py from measured views only
+         (data/popularity.json ships empty); home.js fills the personalised
+         half from THIS reader's own progress and bookmarks. The section
+         stays hidden until something real exists to show - it never
+         advertises a shelf it cannot fill. -->
+    <section class="section section-alt" id="foryou" hidden>
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Personalised</span>
+            <h2>Popular now, and next for you</h2>
+            <p>What aspirants are reading most, plus study material matched to the subjects you practise.</p>
+          </div>
+          <a class="btn btn-soft" href="archives.html">🗂 Everything published</a>
+        </div>
+        <div class="grid grid-3" id="engineGrid">
+          <!-- HOA-HOME:popular --><!-- /HOA-HOME:popular -->
+        </div>
+        <div class="grid grid-3" id="engineRecs" hidden></div>
+      </div>
+    </section>
+    <script type="application/json" id="engineData"><!-- HOA-HOME:data -->[]<!-- /HOA-HOME:data --></script>
+
     <!-- ================================================= MENTOR CREDIBILITY -->
     <section class="section" style="padding-top:0">
       <div class="container">
