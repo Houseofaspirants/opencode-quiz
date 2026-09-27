@@ -1325,8 +1325,8 @@ def build_quiz(s, c, t):
         + f"          <p>{esc(answer)}</p>\n        </div>\n"
         + '        <div class="landing-intro" data-landing="intro">\n'
         + join_paras([
-            f"The set pulls {count} questions from {s['name']}"
-            + (f", under the {c['name']} lane" if c else "")
+            f"{name} draws {count} questions from {s['name']}"
+            + (f" > {c['name']}" if c else "")
             + f", each timed at {SITE_Q_SECONDS} seconds. A question palette in the sidebar "
               f"tracks answered, skipped and marked questions, progress autosaves if you "
               f"leave mid-quiz, and the final screen replays every answer with its "

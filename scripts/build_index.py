@@ -87,6 +87,105 @@ def has_json(directory):
     return any(f.endswith(".json") for f in os.listdir(directory))
 
 
+# --------------------------------------------------------------- languages --
+# A language bucket is a folder named for the language of the files inside it
+# (questions/<subject>/<Language>/…).  It is a TRANSLATION axis, not a
+# syllabus category: "Punjabi" is not a lane of Current Affairs, it is the same
+# content in another language.  Two translations of one set are paired up by
+# language_variant_key() below and shipped as ONE topic carrying variants.
+LANG_FOLDERS = {
+    "english": "en", "eng": "en", "en": "en",
+    "punjabi": "pa", "panjabi": "pa", "pa": "pa", "gurmukhi": "pa",
+}
+
+
+def lang_code(dirname):
+    """'Punjabi' | 'English ' | 'pa' -> 'pa' | 'en', else None."""
+    key = str(dirname).strip().lower()
+    return LANG_FOLDERS.get(key) or LANG_FOLDERS.get(slug(dirname))
+
+
+def lang_files(subject_id, subject_dir, bucket):
+    """Every .json under a language bucket, directly or one folder deeper.
+
+    The repo has both shapes in use:
+        questions/current-affairs/Punjabi/*.json
+        questions/current-affairs/English /july /*.json
+    Returns [(full_path, rel_path), …] in a deterministic order so the Python
+    and Node twins walk the folders identically.
+    """
+    base = os.path.join(subject_dir, bucket)
+    out = []
+    for fname in sorted(f for f in os.listdir(base) if f.endswith(".json")):
+        out.append((os.path.join(base, fname),
+                    f"questions/{subject_id}/{bucket}/{fname}"))
+    for d in sorted(x for x in os.listdir(base)
+                    if os.path.isdir(os.path.join(base, x))):
+        sub_base = os.path.join(base, d)
+        for fname in sorted(f for f in os.listdir(sub_base) if f.endswith(".json")):
+            out.append((os.path.join(sub_base, fname),
+                        f"questions/{subject_id}/{bucket}/{d}/{fname}"))
+    return out
+
+
+PART_RX = re.compile(r"part[-_ ]?(\d+)", re.I)
+
+
+def set_topic_of(data):
+    """The name of a whole question SET.
+
+    The house format is a bare array of questions, where `topic` sits on every
+    question rather than on the file - so look at the file first, then fall
+    back to question 0.
+    """
+    if isinstance(data, dict):
+        return str(data.get("topic") or data.get("title") or "")
+    if isinstance(data, list) and data and isinstance(data[0], dict):
+        return str(data[0].get("topic") or data[0].get("title") or "")
+    return ""
+
+
+def language_variant_key(item, data):
+    """Key shared by every translation of one question set.
+
+    'current-affairs-july-2026-part1-geography-environment' (en) and
+    'current-affairs-july-2026-part1-punjabi'              (pa) must land on the
+    same key, so we pair on the part token plus the JSON topic rather than on
+    the stem, which carries language-specific suffixes.
+    """
+    stem = re.sub(r"\.json$", "", item["file"])
+    m = PART_RX.search(stem)
+    part = f"part{int(m.group(1))}" if m else ""
+    topic = slug(set_topic_of(data))
+    if part:
+        return f"{topic}/{part}" if topic else part
+    # No part token: fall back to the stem minus a trailing language marker.
+    return re.sub(r"[-_](english|eng|punjabi|panjabi|gurmukhi|en|pa)$", "", slug(stem))
+
+
+GURMUKHI_RX = re.compile(r"[\u0a00-\u0a7f]")
+
+
+def has_gurmukhi(questions):
+    """True when the questions are written in Gurmukhi script.
+
+    Used only for files that did NOT come from a language folder, where the
+    folder name gives no signal. Script is an observed property of the text,
+    not a guess about intent.
+    """
+    for q in questions:
+        qd = q if isinstance(q, dict) else {}
+        opts = qd.get("options") or qd.get("opts") or []
+        if not isinstance(opts, list):
+            opts = []
+        text = " ".join([str(qd.get("question") or qd.get("q") or ""),
+                         str(qd.get("explanation") or "")]
+                        + [str(o) for o in opts])
+        if GURMUKHI_RX.search(text):
+            return True
+    return False
+
+
 def number(value, default=0):
     """Mirror of JS Number(value) || default (NaN/0/falsy -> default)."""
     try:
@@ -222,6 +321,31 @@ else:
         )
 
         cfg_cats = config_categories(subject_id)
+
+        # Peel language buckets off BEFORE the flat/hierarchical decision: a
+        # folder named for a language holds translations of one question set
+        # ("Punjabi" is not a syllabus lane of Current Affairs), so it must
+        # never become a category or decide the subject's layout. An explicit
+        # category with the same name still wins.
+        configured = set()
+        for c in cfg_cats or []:
+            for k in (c.get("folder"), c.get("name"), c.get("id")):
+                if k:
+                    configured.add(slug(k))
+        lang_buckets = [d for d in sub_dirs
+                        if lang_code(d) and slug(d) not in configured]
+        if lang_buckets:
+            sub_dirs = [d for d in sub_dirs if d not in lang_buckets]
+            for bucket in lang_buckets:
+                for full, rel in lang_files(subject_id, subject_dir, bucket):
+                    question_files.append({
+                        "subjectId": subject_id,
+                        "file": os.path.basename(full),
+                        "full": full,
+                        "rel": rel,
+                        "lang": lang_code(bucket),
+                    })
+
         # JS: !!cfgCats — even an EMPTY list ("categories": []) means
         # hierarchical; only a MISSING key keeps the subject flat.
         hierarchical = cfg_cats is not None or any(
@@ -297,6 +421,57 @@ else:
                 "rel": f"questions/{subject_id}/{fname}",
             })
 
+# ------------------------------ 3b. PAIR THE TRANSLATIONS OF ONE SET ------
+def resolve_language_pairs(items):
+    """Collapse every translation of one question set to a single topic.
+
+    A Punjabi file and its English twin describe the SAME 20 questions, so
+    shipping both as separate topics would double the library and put two
+    near-identical cards on the page. The primary file becomes the topic and
+    its siblings ride along as `variants`, which is what the quiz page uses to
+    offer a language switch without leaving the question you are on.
+    """
+    normal = [i for i in items if not i.get("lang")]
+    multi = [i for i in items if i.get("lang")]
+    if not multi:
+        return items
+
+    groups = {}
+    for i in multi:
+        try:
+            data = read_json(i["full"])
+        except Exception:
+            data = None  # the record loop reports the parse error for us
+        key = (i["subjectId"],
+               language_variant_key(i, data if isinstance(data, dict) else None))
+        m = PART_RX.search(re.sub(r"\.json$", "", i["file"]))
+        groups.setdefault(key, []).append({
+            "item": i,
+            "part": int(m.group(1)) if m else 0,
+            "topic": set_topic_of(data),
+        })
+
+    out = list(normal)
+    for members in groups.values():
+        members.sort(key=lambda m: (m["item"]["lang"], m["item"]["file"]))
+        # The English file owns the topic id/URL when it exists (descriptive
+        # stems); the QUIZ page still decides what to SHOW from the reader's
+        # language preference, which defaults to Punjabi.
+        primary = next((m for m in members if m["item"]["lang"] == "en"),
+                       members[0])
+        variants = {}
+        for m in members:
+            variants.setdefault(m["item"]["lang"], m["item"]["rel"])
+        it = dict(primary["item"])
+        it["variants"] = variants
+        it["part"] = primary["part"]
+        it["setTopic"] = primary["topic"]
+        out.append(it)
+    return out
+
+
+question_files = resolve_language_pairs(question_files)
+
 total_questions = 0
 quiz_count = 0
 
@@ -361,6 +536,18 @@ for item in question_files:
         description = ""
         time_limit = 0
 
+    # Parts 1-4 of one month all carry the same JSON "topic", so without this
+    # they would be four identically named cards - and four identical <title>s.
+    if item.get("part") and item.get("setTopic"):
+        name = f'{item["setTopic"]} - Part {item["part"]}'
+
+    # Language: a folder named for it is authoritative; otherwise read the
+    # script the questions are actually written in. `variants` lists the
+    # translations that really exist on disk - every badge and the quiz page's
+    # language switch are driven by this field, never by an assumption.
+    lang = item.get("lang") or ("pa" if has_gurmukhi(questions) else "en")
+    variants = item.get("variants") or {lang: rel}
+
     record = {
         "id": topic_id,
         "name": name,
@@ -374,6 +561,8 @@ for item in question_files:
     }
     if category_id:
         record["category"] = category_id
+    record["language"] = lang
+    record["variants"] = variants
 
     if topic_id in subject["_topicsById"]:
         warn(f'{rel} - topic id "{topic_id}" already exists in subject "{subject_id}". Rename this file.')

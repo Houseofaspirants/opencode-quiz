@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 6,
-    "topics": 1,
-    "quizzes": 1,
-    "questions": 25,
+    "topics": 5,
+    "quizzes": 5,
+    "questions": 105,
     "studentsPracticed": 12500
   },
   "site": {
@@ -173,6 +173,10 @@
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790261912813.672,
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/mobile-phone-part1-25-mcqs.json"
+          },
           "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
         }
       ],
@@ -187,7 +191,76 @@
       "color": "#ef4444",
       "description": "Daily, National, International, Sports and Punjab Current Affairs.",
       "order": 7,
-      "topics": [],
+      "topics": [
+        {
+          "id": "current-affairs-july-2026-part1-geography-environment",
+          "name": "Current Affairs July 2026 - Part 1",
+          "description": "",
+          "file": "questions/current-affairs/English /july /current-affairs-july-2026-part1-geography-environment.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790441699392.4119,
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/English /july /current-affairs-july-2026-part1-geography-environment.json",
+            "pa": "questions/current-affairs/Punjabi/july /current-affairs-july-2026-part1-punjabi.json"
+          },
+          "landing": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment"
+        },
+        {
+          "id": "current-affairs-july-2026-part2-schemes-development",
+          "name": "Current Affairs July 2026 - Part 2",
+          "description": "",
+          "file": "questions/current-affairs/English /july /current-affairs-july-2026-part2-schemes-development.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790441701401.1165,
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/English /july /current-affairs-july-2026-part2-schemes-development.json",
+            "pa": "questions/current-affairs/Punjabi/july /current-affairs-july-2026-part2-punjabi.json"
+          },
+          "landing": "/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development"
+        },
+        {
+          "id": "current-affairs-july-2026-part3-governance-digital-services",
+          "name": "Current Affairs July 2026 - Part 3",
+          "description": "",
+          "file": "questions/current-affairs/English /july /current-affairs-july-2026-part3-governance-digital-services.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790441702188.9077,
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/English /july /current-affairs-july-2026-part3-governance-digital-services.json",
+            "pa": "questions/current-affairs/Punjabi/july /current-affairs-july-2026-part3-punjabi.json"
+          },
+          "landing": "/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services"
+        },
+        {
+          "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
+          "name": "Current Affairs July 2026 - Part 4",
+          "description": "",
+          "file": "questions/current-affairs/English /july /current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790441705167.7627,
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/English /july /current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.json",
+            "pa": "questions/current-affairs/Punjabi/july /current-affairs-july-2026-part4-punjabi.json"
+          },
+          "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
+        }
+      ],
       "categories": [],
       "landing": "/subject-current-affairs"
     }

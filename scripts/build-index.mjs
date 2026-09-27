@@ -54,6 +54,101 @@ const slug = (s) =>
 const hasJson = (dir) =>
   fs.readdirSync(dir).some((f) => f.endsWith(".json"));
 
+/* --------------------------------------------------------------- languages --
+ * A language bucket is a folder named for the language of the files inside it
+ * (questions/<subject>/<Language>/...). It is a TRANSLATION axis, not a syllabus
+ * category: "Punjabi" is not a lane of Current Affairs, it is the same content in
+ * another language. Two translations of one set are paired up by
+ * languageVariantKey() below and shipped as ONE topic carrying variants.
+ * Kept in lockstep with build_index.py - see the parity harness notes there.
+ */
+const LANG_FOLDERS = {
+  english: "en", eng: "en", en: "en",
+  punjabi: "pa", panjabi: "pa", pa: "pa", gurmukhi: "pa",
+};
+
+const langCode = (dirname) => {
+  const key = String(dirname).trim().toLowerCase();
+  return LANG_FOLDERS[key] || LANG_FOLDERS[slug(dirname)] || null;
+};
+
+const PART_RX = /part[-_ ]?(\d+)/i;
+const GURMUKHI_RX = /[\u0A00-\u0A7F]/;
+
+/** Every .json under a language bucket, directly or one folder deeper.
+ *  The repo has both shapes in use:
+ *      questions/current-affairs/Punjabi/*.json
+ *      questions/current-affairs/English /july /*.json
+ *  Returns [fullPath, relPath] pairs in a deterministic order so the Node and
+ *  Python twins walk the folders identically. */
+function langFiles(subjectId, subjectDir, bucket) {
+  const base = path.join(subjectDir, bucket);
+  const out = [];
+  for (const fname of fs.readdirSync(base).filter((f) => f.endsWith(".json")).sort()) {
+    out.push([path.join(base, fname), `questions/${subjectId}/${bucket}/${fname}`]);
+  }
+  const dirs = fs
+    .readdirSync(base, { withFileTypes: true })
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .sort();
+  for (const d of dirs) {
+    const subBase = path.join(base, d);
+    const files = fs.readdirSync(subBase).filter((f) => f.endsWith(".json")).sort();
+    for (const fname of files) {
+      out.push([path.join(subBase, fname), `questions/${subjectId}/${bucket}/${d}/${fname}`]);
+    }
+  }
+  return out;
+}
+
+/** The name of a whole question SET. The house format is a bare array of
+ *  questions, where `topic` sits on every question rather than on the file -
+ *  so look at the file first, then fall back to question 0. */
+const setTopicOf = (data) => {
+  if (Array.isArray(data)) {
+    const first = data[0] && typeof data[0] === "object" ? data[0] : null;
+    return String((first && (first.topic || first.title)) || "");
+  }
+  if (data && typeof data === "object") {
+    return String(data.topic || data.title || "");
+  }
+  return "";
+};
+
+/** Key shared by every translation of one question set.
+ *  'current-affairs-july-2026-part1-geography-environment' (en) and
+ *  'current-affairs-july-2026-part1-punjabi'              (pa) must land on the
+ *  same key, so we pair on the part token plus the JSON topic rather than on the
+ *  stem, which carries language-specific suffixes. */
+function languageVariantKey(item, data) {
+  const stem = item.file.replace(/\.json$/, "");
+  const m = PART_RX.exec(stem);
+  const part = m ? `part${Number(m[1])}` : "";
+  const topic = slug(setTopicOf(data));
+  if (part) return topic ? `${topic}/${part}` : part;
+  // No part token: fall back to the stem minus a trailing language marker.
+  return slug(stem).replace(/[-_](english|eng|punjabi|panjabi|gurmukhi|en|pa)$/, "");
+}
+
+/** True when the questions are written in Gurmukhi script. Used only for files
+ *  that did NOT come from a language folder, where the folder name gives no
+ *  signal. Script is an observed property of the text, not a guess about intent. */
+function hasGurmukhi(questions) {
+  for (const q of questions) {
+    const qd = q && typeof q === "object" ? q : {};
+    let opts = qd.options || qd.opts || [];
+    if (!Array.isArray(opts)) opts = [];
+    const text = [
+      String(qd.question || qd.q || ""),
+      String(qd.explanation || ""),
+      ...opts.map((o) => String(o)),
+    ].join(" ");
+    if (GURMUKHI_RX.test(text)) return true;
+  }
+  return false;
+}
+
 let warnings = 0;
 const warn = (msg) => {
   console.warn(`  \u26A0 ${msg}`);
@@ -145,13 +240,35 @@ if (!fs.existsSync(QUESTIONS_DIR)) {
     if (!entry.isDirectory()) continue; // ignore stray files / .gitkeep
     const subjectId = entry.name;
     const subjectDir = path.join(QUESTIONS_DIR, subjectId);
-    const subDirs = fs
+    let subDirs = fs
       .readdirSync(subjectDir, { withFileTypes: true })
       .filter((d) => d.isDirectory())
       .map((d) => d.name)
       .sort(); // deterministic order on every OS (parity with build_index.py)
 
     const cfgCats = configCategories(subjectId);
+
+    /* Peel language buckets off BEFORE the flat/hierarchical decision: a folder
+     * named for a language holds translations of one question set ("Punjabi" is
+     * not a syllabus lane of Current Affairs), so it must never become a category
+     * or decide the subject's layout. An explicit category with the same name
+     * still wins. */
+    const configured = new Set();
+    for (const c of cfgCats || []) {
+      for (const k of [c.folder, c.name, c.id]) if (k) configured.add(slug(k));
+    }
+    const langBuckets = subDirs.filter((d) => langCode(d) && !configured.has(slug(d)));
+    if (langBuckets.length) {
+      subDirs = subDirs.filter((d) => langBuckets.indexOf(d) === -1);
+      for (const bucket of langBuckets) {
+        for (const [full, rel] of langFiles(subjectId, subjectDir, bucket)) {
+          questionFiles.push({
+            subjectId, file: path.basename(full), full, rel, lang: langCode(bucket),
+          });
+        }
+      }
+    }
+
     const hierarchical = !!cfgCats || subDirs.some((d) => hasJson(path.join(subjectDir, d)));
 
     if (!hierarchical) {
@@ -222,10 +339,64 @@ if (!fs.existsSync(QUESTIONS_DIR)) {
   }
 }
 
+/* ------------------------------ 3b. PAIR THE TRANSLATIONS OF ONE SET ------
+ * A Punjabi file and its English twin describe the SAME 20 questions, so shipping
+ * both as separate topics would double the library and put two near-identical
+ * cards on the page. The primary file becomes the topic and its siblings ride
+ * along as `variants`, which is what the quiz page uses to offer a language switch
+ * without leaving the question you are on. */
+function resolveLanguagePairs(items) {
+  const normal = items.filter((i) => !i.lang);
+  const multi = items.filter((i) => i.lang);
+  if (!multi.length) return items;
+
+  const groups = new Map();
+  for (const i of multi) {
+    let data = null;
+    try {
+      data = readJSON(i.full);
+    } catch (err) {
+      data = null; // the record loop reports the parse error for us
+    }
+    const key = JSON.stringify([i.subjectId, languageVariantKey(i, data)]);
+    const m = PART_RX.exec(i.file.replace(/\.json$/, ""));
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push({
+      item: i,
+      part: m ? Number(m[1]) : 0,
+      topic: setTopicOf(data),
+    });
+  }
+
+  const out = normal.slice();
+  for (const members of groups.values()) {
+    // Code-point order (not localeCompare) so both twins sort identically.
+    members.sort((a, b) => {
+      const l = a.item.lang < b.item.lang ? -1 : a.item.lang > b.item.lang ? 1 : 0;
+      if (l) return l;
+      return a.item.file < b.item.file ? -1 : a.item.file > b.item.file ? 1 : 0;
+    });
+    // The English file owns the topic id/URL when it exists (descriptive stems);
+    // the QUIZ page still decides what to SHOW from the reader's language
+    // preference, which defaults to Punjabi.
+    const primary = members.find((m) => m.item.lang === "en") || members[0];
+    const variants = {};
+    for (const m of members) {
+      if (!(m.item.lang in variants)) variants[m.item.lang] = m.item.rel;
+    }
+    out.push({ ...primary.item, variants, part: primary.part, setTopic: primary.topic });
+  }
+  return out;
+}
+
+questionFiles = resolveLanguagePairs(questionFiles);
+
 let totalQuestions = 0;
 let quizCount = 0;
 
-for (const { subjectId, file, full, rel, categoryId } of questionFiles) {
+for (const {
+  subjectId, file, full, rel, categoryId, lang, variants, part, setTopic,
+} of questionFiles) {
   const id = file.replace(/\.json$/, "");
 
   let data;
@@ -268,9 +439,23 @@ for (const { subjectId, file, full, rel, categoryId } of questionFiles) {
 
   const subject = ensureSubject(subjectId);
   const isEmpty = questions.length === 0; // valid file, but 0 questions yet
+
+  const baseName = (isObj && (data.topic || data.title)) || humanize(id);
+  // Parts 1-4 of one month all carry the same JSON "topic", so without this they
+  // would be four identically named cards - and four identical <title>s.
+  const name = part && setTopic ? `${setTopic} - Part ${part}` : baseName;
+
+  // Language: a folder named for it is authoritative; otherwise read the script
+  // the questions are actually written in. `variants` lists the translations that
+  // really exist on disk - every badge and the quiz page's language switch are
+  // driven by this field, never by an assumption.
+  const language = lang || (hasGurmukhi(questions) ? "pa" : "en");
+  const langVariants =
+    variants && Object.keys(variants).length ? variants : { [language]: rel };
+
   const record = {
     id,
-    name: (isObj && (data.topic || data.title)) || humanize(id),
+    name,
     description: (isObj && data.description) || "",
     file: rel,
     count: questions.length,
@@ -279,6 +464,8 @@ for (const { subjectId, file, full, rel, categoryId } of questionFiles) {
     timeLimit: Number(isObj ? data.timeLimit : 0) || 0,
     updatedAt: fs.statSync(full).mtimeMs,
     ...(categoryId ? { category: categoryId } : {}),
+    language,
+    variants: langVariants,
   };
 
   if (subject._topicsById.has(id)) {
