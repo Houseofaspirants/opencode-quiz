@@ -793,9 +793,9 @@ def build_subject(s):
                f"from every subject on the portal.")
     if ex_list:
         names = ", ".join(e["name"] for e in ex_list[:4])
-        q2a = (f"{name} is the subject these papers lean on: {names}."
+        q2a = (f"{name} is the subject these papers lean on: {names}"
                + (f" and {len(ex_list) - 4} more" if len(ex_list) > 4 else "")
-               + " Each exam page on this portal lists the subjects to study and the sets to run.")
+               + ". Each exam page on this portal lists the subjects to study and the sets to run.")
     else:
         q2a = ("Every Punjab recruitment paper draws on general awareness, so this subject "
                "sits under all of them. The exam hub lists every paper this portal covers.")

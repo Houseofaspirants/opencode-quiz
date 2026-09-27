@@ -333,6 +333,7 @@ const HOA = (() => {
           <a href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">Join Telegram</a>
           <a href="privacy.html">Privacy Policy</a>
           <a href="terms.html">Terms of Use</a>
+          <a href="editorial-policy.html">Editorial Policy</a>
         </div>
       </div>
 

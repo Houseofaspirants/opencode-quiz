@@ -22,7 +22,8 @@ errors, warnings, notes = [], [], []
 PAGES = [
     "index.html", "subject.html", "quiz.html", "mock.html", "leaderboard.html",
     "bookmarks.html", "progress.html", "result.html", "about.html",
-    "contact.html", "privacy.html", "terms.html", "404.html",
+    "contact.html", "privacy.html", "terms.html", "editorial-policy.html",
+    "404.html",
     # Exam index (target: Punjab Government competitive exams)
     "punjab-exams.html",
     # AEO hub: site-wide Q&A for answer engines
@@ -588,6 +589,7 @@ for path in ROOT.rglob("*"):
 # --- schema coverage: requested types present where content allows ----------
 BC_PAGES = {"about.html", "bookmarks.html", "contact.html", "leaderboard.html",
             "mock.html", "privacy.html", "progress.html", "terms.html",
+            "editorial-policy.html",
             "articles.html", "punjab-exams.html", "faq.html",
             "punjab-police-exam-preparation.html",
             "punjab-gk-study-guide.html", "current-affairs-preparation.html",
@@ -619,7 +621,8 @@ for t in ("WebSite", "SearchAction", "EntryPoint", "Organization",
 # Every page that ranks for a question must answer it in the first screenful
 # (40-60 words in .answer-box) and expose the same Q&A as FAQPage schema.
 AEO_PAGES = {"index.html", "faq.html", "punjab-exams.html", "articles.html",
-             "about.html", "subject.html", "mock.html"} | ARTICLE_PAGES | set(landing_files)
+             "about.html", "subject.html", "mock.html",
+             "editorial-policy.html"} | ARTICLE_PAGES | set(landing_files)
 for p in sorted(AEO_PAGES):
     h = (ROOT / p).read_text(encoding="utf-8")
     if 'class="answer-box"' not in h:

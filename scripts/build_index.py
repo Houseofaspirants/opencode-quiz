@@ -522,6 +522,7 @@ if site.get("url"):
         {"loc": f"{base}/contact", "p": "0.6"},
         {"loc": f"{base}/privacy", "p": "0.4"},
         {"loc": f"{base}/terms", "p": "0.4"},
+        {"loc": f"{base}/editorial-policy", "p": "0.4"},
     ]
     # Study guides — config-driven from data/articles.json (same registry the
     # /articles hub, Related Articles modules and Article schema read).
