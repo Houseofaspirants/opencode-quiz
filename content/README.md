@@ -166,9 +166,10 @@ Optional, collection-specific fields (see `REQUIRED_FIELDS` /
 * **success-stories** — `exam` (required), `tags`, `references`, `faq`
 * **book-recommendations** — `book`, `book_author`, `publisher`
 * **topic-guides** — `topic`; **daily-practice** — `quiz` (the set to attempt)
-* **blogs** — `category` must be one of the seven subtypes when present:
-  `Preparation Experience`, `Study Plans`, `Time Management`, `Motivation`,
-  `Book Reviews`, `Mistakes`, `Strategy Articles`
+* **blogs** — `category` must normalise (spaces/underscores → hyphens) to one
+  of the eight subtypes: `preparation-experience`, `study-plans`,
+  `time-management`, `motivation`, `book-reviews`, `mistakes`,
+  `strategy-articles`, `exam-analysis`
 
 ## Language URLs — English at the root, Punjabi under `/pa/`
 

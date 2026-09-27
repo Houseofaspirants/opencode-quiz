@@ -816,6 +816,30 @@ bash scripts/ci.sh                        # content → manifest → landing →
 | `content/news/*.md` | `news-<slug>.html` + cards on `news.html` | restated only from the official notification |
 | `content/announcements/*.md` | `announce-<slug>.html` + cards on `announcements.html` | what changed on this platform, and when |
 | `content/pdfs/*.md` | record on `pdfs.html` (no page — the PDF *is* the artefact) | `file:` must exist |
+| `content/personal-notes/*.md` | `pnote-<slug>.html` + cards on `personal-notes.html` | a method that was really used, written up afterwards |
+| `content/subject-guides/*.md` | `sguide-<slug>.html` + cards on `subject-guides.html` | one subject end to end |
+| `content/topic-guides/*.md` | `tguide-<slug>.html` + cards on `topic-guides.html` | one topic: scope, exceptions, practice |
+| `content/daily-practice/*.md` | `practice-<slug>.html` + cards on `daily-practice.html` | a dated set and what to fix after attempting it |
+| `content/success-stories/*.md` | `story-<slug>.html` + cards on `success-stories.html` | one honest attempt (`exam:` required) |
+| `content/book-recommendations/*.md` | `book-<slug>.html` + cards on `book-recommendations.html` | one book, judged for this syllabus |
+
+### What the build generates around them (Phase 4)
+
+* **Index pages** — `search.html` (crawlable GET search), `author-<id>.html`
+  for every entry in `data/authors.json` with `profile: true`, and
+  `archive-tag-<slug>.html` / `archive-category-<slug>.html` for every tag and
+  category an English document really carries. All are registered in
+  `data/content-manifest.json`, so the sitemap, canonical tags and chrome
+  checks cover them, and each disappears again when the last document that
+  justified it goes.
+* **Filters** — listings with more than one document render a chip bar
+  (Exam / Subject / Language / Difficulty / Date / Category) that filters the
+  already-shipped DOM locally.
+* **Bylines** — `data/authors.json` decides who may sign a document; an
+  unknown name fails the build, a profiled author gets a `ProfilePage` and a
+  footer link, everything else stays the site Organization.
+* **Search fields** — every document row in `data/search-index.json` also
+  carries its summary, keywords, author and difficulty.
 
 Each folder has its own `README.md` with the front-matter schema for that
 collection; `content/README.md` holds the hard rules.

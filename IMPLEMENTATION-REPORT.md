@@ -542,3 +542,262 @@ floor), `README.md` §24, `content/README.md`.
 5. **Personalisation** is client-side and first-party only (last subject +
    bookmarks); there is no account-level profile to score against until the
    backend phase.
+
+# Phase 4 — Data-Driven Content Platform
+
+Phase 4 turned "pages we wrote" into "pages the content produces". The design
+did not change, the quiz engine did not change: every route below is generated
+from a Markdown file, a JSON registry or a table inside the builder, and a
+collection with nothing in it still publishes an honest empty state rather
+than a placeholder.
+
+## 28. Collections, folders and routes
+
+All 17 collections from the brief have a folder, a hub, a navigation entry, a
+sitemap entry, a search record and a filter bar. `news/` is the 18th hub (it
+predates Phase 4); *Important Notifications* maps to `announcements/`.
+
+| collection | folder | page prefix | hub | required beyond the shared fields |
+| --- | --- | --- | --- | --- |
+| Study Notes | `notes/` | `note-` | `study-notes.html` | `subject` |
+| Personal Notes | `personal-notes/` | `pnote-` | `personal-notes.html` | `subject` |
+| Punjab Current Affairs | `current-affairs/` | `ca-` | `current-affairs.html` | — |
+| Monthly CA Magazine | `monthly-magazine/` | `magazine-` | `magazine.html` | `month` |
+| Weekly Live Sessions | `live-sessions/` | `session-` | `live-sessions.html` | `date` |
+| Exam Strategies | `strategy/` | `strategy-` | `strategy.html` | `category` |
+| Preparation Blogs | `blogs/` | `blog-` | `blogs.html` | — |
+| Recruitment Updates | `recruitment/` | `recruit-` | `recruitment.html` | `post`, `official_url` |
+| Important PDFs | `pdfs/` | — (registry) | `pdfs.html` | `file` |
+| Expected MCQs | `expected-mcqs/` | `expected-` | `expected-mcqs.html` | `subject` |
+| Previous Year Questions | `previous-year-questions/` | `pyq-` | `previous-year-questions.html` | `exams` |
+| Subject Guides | `subject-guides/` | `sguide-` | `subject-guides.html` | `subject` |
+| Topic Guides | `topic-guides/` | `tguide-` | `topic-guides.html` | `subject` |
+| Daily Practice | `daily-practice/` | `practice-` | `daily-practice.html` | `subject` |
+| Success Stories | `success-stories/` | `story-` | `success-stories.html` | `exam` |
+| Book Recommendations | `book-recommendations/` | `book-` | `book-recommendations.html` | `subject` |
+| Important Notifications | `announcements/` | `announce-` | `announcements.html` | — |
+| News (extra) | `news/` | `news-` | `news.html` | — |
+
+**Generated routes** (extensionless URLs, English at the root, Punjabi under
+`/pa/`):
+
+* 18 collection hubs;
+* one page per document: `<prefix>-<slug>`, plus `pa/<prefix>-<slug>` when a
+  `.pa.md` edition exists;
+* `archives.html` (the index everything hangs off), `search.html`,
+  `author-<id>.html`, `archive-tag-<slug>.html`, `archive-category-<slug>.html`;
+* the landing set that already existed: subject / topic / category / cluster /
+  exam / quiz pages.
+
+`sitemap.xml` carries **121 URLs with no documents published**; every document,
+tag, category and author adds its own URL in the same build, registered through
+`data/content-manifest.json` so the sitemap, the canonical tag and the chrome
+check can never disagree.
+
+## 29. The document contract
+
+Every document carries the full platform model — `id`, `subtitle`, `language`,
+`category`, `subject`, `examTags`, `difficulty`, `publishDate`, `updatedDate`,
+`author`, `reviewedBy`, `readingTime`, `coverImage`, `thumbnail`, `seoTitle`,
+`seoDescription`, `keywords`, `summary`, `tableOfContents`, `body`,
+`relatedContent`, `relatedQuiz`, `downloadPDF`, `telegramLink`, `youtubeLink`,
+`references`, `faq`, `schemaType`, `featured`, `status` — validated before a
+single byte is written:
+
+* the brief's spellings are **aliases** (`publishDate → published`,
+  `updatedDate → updated`, `examTags → exams`, `relatedQuiz → quiz`,
+  `downloadPDF → pdf`, `tableOfContents → toc`), applied *before* validation,
+  so one canonical key per value;
+* titles ≤ 60, descriptions 140–160, `seoTitle` ≤ 60, `seoDescription`
+  140–160, ≤ 12 keywords × 48 chars, `summary` ≤ 320, dates `YYYY-MM-DD`;
+* `schemaType` ∈ `Article | BlogPosting | NewsArticle | WebPage`;
+  `status` ∈ `published | draft | archived` (sessions also `upcoming | past |
+  held`) — `draft`/`archived` render nowhere: no page, sitemap, feed, search
+  index or archive;
+* `faq` becomes a section **and** a real `FAQPage` node; `references` become a
+  *Sources* list; `relatedContent` only ever links a target that exists
+  (missing ones are reported, never shipped);
+* unknown keys warn, missing required keys fail the build.
+
+## 30. Generated page types (19)
+
+Home, Subjects, Subject, Topic, Notes, Magazine, Blogs, Strategies, Live
+Sessions, Recruitment, Current Affairs, PDF Library, Expected MCQs, PYQs, Daily
+Quiz, Search Results, Author Profile, Tag Archive, Category Archive — plus the
+archives index. Each is built from the manifest rather than edited:
+
+* **Search Results** — `search.html`: a GET form that works with JavaScript
+  off, filled by `content.js` from `data/search-index.json` after paint.
+* **Author Profile** — `author-<id>.html`, `@type: ProfilePage` with
+  `mainEntity` → the Person node.
+* **Tag / Category Archive** — created only when an English document really
+  carries the value, removed again when the last one goes.
+* **Subject / Topic / Category** landings keep the pre-existing
+  `build_landing_pages.py` set; its stale-deletion now skips anything the
+  content manifest registers (that is how `subject-guides.html` /
+  `topic-guides.html` survive it).
+
+## 31. Navigation, search and related content (all automatic)
+
+* **Navigation** — the header Study menu, drawer and footer are rewritten from
+  the `HUBS` table between the `<!-- HOA-NAV:* -->` markers in
+  `assets/js/core.js`; the footer also gains a *Search* link and every profiled
+  author. Adding a collection adds its menu entry, sitemap URL, search record
+  and chrome link in one run — no hand-edited HTML or JS.
+* **Search** — `data/search-index.json` now carries `m` (summary), `w`
+  (keywords), `a` (author) and `f` (difficulty) on each document row, next to
+  title, description, body, tags, subjects, exams and category. Both the Ctrl+K
+  overlay and `search.html` fold the same fields into one haystack.
+* **Filters** — a listing with >1 document and >1 value in any facet renders a
+  chip bar (Exam, Subject, Language, Difficulty, Date, Category); cards carry
+  `data-f-*`, and `assets/js/content.js` filters the DOM that already shipped
+  (OR inside a facet, AND across facets, one `Clear filters` button, a live
+  count). No request, no re-render, no control that cannot do anything.
+* **Related** — each of the 17 templates owns a recommendation plan (practice
+  quiz, subject hub, same-collection siblings, strategy, notes, reserved slots
+  for expected MCQs/PYQs with an honest "why this is empty" line), scored on
+  shared subject/exam/tag/category. `relatedContent` adds an editorial override,
+  and the **link floor** guarantees ≥ 5 contextual internal links in `<main>`
+  by appending an *Explore the library* module — topped up from the hubs when a
+  page's own collection cannot fill it, and deduplicated so the same card never
+  appears twice.
+
+## 32. Author system (E-E-A-T)
+
+`data/authors.json` is the registry: name, id, role, bio, credentials, topics
+and `profile: true|false`.
+
+* an `author:` value that is not in the registry **fails the build** — bylines
+  stay a known list, never free-running text;
+* a profiled author gets `author-<id>.html`, is linked from every document
+  carrying the byline and appears in the footer; the JSON-LD `author` becomes a
+  `Person` (`name`, `url`, `jobTitle`) pointing at that page;
+* a non-profiled entry (e.g. *House of Aspirants Editorial Team*) stays an
+  `Organization` node behind `/about` and gets no page, because nothing should
+  link to a person the site cannot introduce;
+* the example entry is *Gurpreet Singh — Punjab Police Sub Inspector, Founder of
+  House of Aspirants, Competitive Exam Mentor, Monthly Current Affairs Author,
+  Weekly Live Session Mentor*.
+
+## 33. Magazine, session and blog contracts
+
+* **Magazine** — cover (dimensions + file), PDF download, online reading,
+  highlights, `expected_mcqs`, `important_questions`, `revision_notes`, related
+  quiz. Each block renders only when written.
+* **Live sessions** — title, topic, date, time (`start_time` for the Event
+  slot), platform, join link, poster (640×360), recording link, resources
+  (https URL or a site path), questions covered, doubts, summary, and `status`
+  shown only for `upcoming`/`past`/`held`. No Event schema is published for a
+  slot that has no real start time.
+* **Blogs** — the seven subtypes (Preparation Experience, Study Plans, Time
+  Management, Motivation, Book Reviews, Mistakes, Strategy Articles) are
+  validated against the collection, normalised for the archive page.
+
+## 34. The CMS: no database
+
+```
+Markdown + JSON + static assets
+   │
+   ├─ scripts/build_content.py   validate → render → manifest → search index
+   │                             → RSS → archives → index pages → nav →
+   │                             homepage feed → stale-page cleanup
+   ├─ scripts/build_index.py     data/index.json + sitemap.xml
+   ├─ scripts/build_landing_pages.py  subject/topic/category/exam/quiz landings
+   └─ scripts/ci.sh              both index builders (+ Node parity), landing
+                                 set, seo_check, rich_results, drift check
+```
+
+One build updates the page, the sitemap, the search index, the navigation, the
+RSS feed, the JSON-LD and the internal links together; `scripts/new_content.py`
+scaffolds a valid draft (required fields included) for any of the 17 templates,
+and `content/_drafts/` is never read by the builder. Review happens in Git —
+the rendered HTML and `data/*` are committed alongside the Markdown because
+static hosting needs the bytes.
+
+## 35. SEO improvements
+
+* per-page `title` / `description` / canonical / Open Graph / Twitter from
+  `seoTitle`, `seoDescription`, `keywords` and `thumbnail` when present;
+* JSON-LD per document: `Article`-family node (or the declared `schemaType`),
+  `BreadcrumbList`, optional `FAQPage`, `Person`/`Organization` author, plus
+  `ProfilePage` for author pages and `CollectionPage` + `ItemList` for tag and
+  category archives;
+* taxonomy pages (`archive-tag-*`, `archive-category-*`) are in the sitemap and
+  reachable from `archives.html` **and** from every document that carries the
+  tag — nothing exists only in the footer;
+* a crawlable `search.html` with a real GET form, so the corpus is discoverable
+  without JavaScript;
+* `hreflang` pairs for every EN/PA document, English published at the root;
+* the link floor (≥ 5 contextual links in `<main>`) plus a graph of 56 nodes /
+  154 contextual edges / 28 silos, all resolving;
+* RSS 2.0 (`feed.xml`) fed from the same manifest.
+
+## 36. Files created / modified
+
+**Created:** `data/authors.json`, `content/personal-notes/README.md`,
+`content/subject-guides/README.md`, `content/topic-guides/README.md`,
+`content/daily-practice/README.md`, `content/success-stories/README.md`,
+`content/book-recommendations/README.md`, and (generated) `search.html`,
+`author-gurpreet-singh.html` with every `archive-tag-*` / `archive-category-*`
+page the moment documents exist.
+
+**Modified:** `scripts/build_content.py` (6 new hubs, nav tables, field
+contracts + aliases, author registry, byline/FAQ/references/related rendering,
+filter facets and bars, `index_shell` + author/tag/category/search pages,
+search-index fields, link-floor top-up, taxonomy badges, stale cleanup moved
+after every writer), `scripts/content_engine.py` (17 templates and their
+defaults), `scripts/seo_check.py` (`ProfilePage`/`BlogPosting`/`NewsArticle`,
+landing-stale exclusion, index-page rules, byline/taxonomy/filter/search-field
+gates), `scripts/build_landing_pages.py` (protects manifest-registered files),
+`scripts/new_content.py` (17 templates, valid-by-default required fields,
+`--pa` writes the EN/PA pair), `assets/js/core.js` (Punjabi labels, type
+labels/icons, search haystack, `nav-cols`, footer extras),
+`assets/js/content.js` (filter + search-page readers), `assets/css/style.css`
+(Phase 4 block, linked badges), `sw.js` (`hoa-v38` + the 6 hubs and
+`search.html` in the shell), `content/README.md` (content model + authoring
+guide).
+
+## 37. Verification
+
+* Pipeline exercised end to end with **10 temporary documents** across all six
+  new collections plus blogs, magazine and sessions (EN + PA), then deleted:
+  10 pages + 1 PA twin, 24 index pages (author, 22 tag/category archives,
+  search), 35 search rows, 10 RSS items, 101 nodes / 469 edges, sitemap 153
+  URLs; stale cleanup then removed every document page and archive and returned
+  to 56 nodes / 154 edges / 25 search rows / 121 URLs.
+* Scaffolds round-tripped: `new_content.py --type subject-guide` and
+  `--type success-story --pa` were moved into their collections and **built
+  clean** (required fields, description length and the EN/PA pairing all
+  satisfied by the stub itself).
+* Measured in the browser: filter chips on `personal-notes.html` narrow
+  `2 shown → 1 of 2 shown → Clear`, `search.html?q=polity` renders 5 results
+  with collection + author labels, the author page lists all 8 of its documents,
+  the hub hero/answer-box/typography are unchanged, `quiz.html?mode=daily`
+  renders its options with no console errors. Lighthouse (local): accessibility
+  **1.0**, best practices **1.0**, SEO **1.0**, zero failures; navigation
+  timings index 132 ms / hub 49 ms / quiz 95 ms.
+* Gates: `build_content.py` → `build_index.py` → `build_landing_pages.py` →
+  `seo_check.py` **PASS** (`18 hubs + 0 document page(s) in sync`, `bylines`,
+  `taxonomy`, `filters`, `link floor`, `content graph … all resolving`),
+  `rich_results_check.py` **PASS**, `bash scripts/ci.sh` **ALL GATES GREEN
+  (6/6)** with `data/index.json generatedAt` normalised back to
+  `2026-09-26T17:53:50.784Z`.
+
+## 38. Known limitations / future scalability
+
+1. **No documents ship.** The platform is architecture only, per the brief —
+   empty collections publish an honest empty state, and Expected MCQs / PYQs
+   stay reserved until verifiable data exists.
+2. **Adding a collection** is two edits: a folder + a `HUBS` entry (title,
+   description, prefix) and a `TEMPLATES` entry in `content_engine.py`.
+   Navigation, sitemap, search, filters, archive, RSS, chrome and the SEO gates
+   pick it up in the same run.
+3. **Adding an author** is one line in `data/authors.json`; their page,
+   bylines, footer entry and JSON-LD follow.
+4. **Node parity** (`build-index.mjs`) still runs on push only — no Node is
+   installed locally, so step 3 of `ci.sh` reports "skipped".
+5. **Lighthouse performance** is not part of the local audit run (the tool
+   returns accessibility / best practices / SEO only); Phase 4 adds one small
+   JS block and one CSS block, both lazy, and no new request on first paint.
+6. **Graph scope** remains the content tree; chrome-only pages are counted by
+   the link-floor gate but are not graph nodes.
