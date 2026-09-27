@@ -15,6 +15,7 @@
   "auth": {
     "enabled": true,
     "requireLogin": true,
+    "gateQuizzes": false,
     "preview": true,
     "firebase": {
       "apiKey": "",

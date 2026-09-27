@@ -1169,8 +1169,10 @@ except Exception as e:
     errors.append(f"vercel.json: header validation failed: {e}")
 notes.append("perf: deferred scripts, dns-prefetch x3, style+logo preloads, quantized images (-78%), explicit cache headers")
 
-# --- student quiz access flow: Google sign-in gate --------------------------
+# --- student access flow: Google sign-in (anonymous-first) -------------------
 # site.auth config (data/site.json) + auth.js on every page + flow buttons.
+# Policy: study content is public; only the personalised pages gate, quizzes
+# gate only if auth.gateQuizzes opts in.
 try:
     site_raw = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
     auth_cfg = site_raw.get("auth")
@@ -1180,7 +1182,11 @@ try:
         if auth_cfg.get("enabled") is not True:
             errors.append("site.json: auth.enabled must be true")
         if auth_cfg.get("requireLogin") is not True:
-            errors.append("site.json: auth.requireLogin must be true")
+            errors.append("site.json: auth.requireLogin must be true "
+                          "(progress + leaderboard must stay behind sign-in)")
+        if not isinstance(auth_cfg.get("gateQuizzes"), bool):
+            errors.append("site.json: auth.gateQuizzes must be an explicit boolean "
+                          "(false = anonymous-first: quizzes stay public)")
         if not isinstance(auth_cfg.get("preview"), bool):
             errors.append("site.json: auth.preview must be a boolean")
         fb = auth_cfg.get("firebase")
@@ -1204,6 +1210,9 @@ auth_js = (ROOT / "assets/js/auth.js").read_text(encoding="utf-8")
 for marker in ("Continue with Google", 'aria-modal="true"', "syncResult", "fetchScores"):
     if marker not in auth_js:
         errors.append(f"auth.js: missing required marker {marker!r}")
+if "ACCOUNT_PAGE_RX" not in auth_js or "QUIZ_PAGE_RX" not in auth_js:
+    errors.append("auth.js: no per-page gate - anonymous-first must keep "
+                  "progress/leaderboard behind sign-in while quizzes stay open")
 if "HOA.auth.ensure" not in (ROOT / "assets/js/mock.js").read_text(encoding="utf-8"):
     errors.append("mock.js: mock-test start is not gated by HOA.auth.ensure")
 if "cloudEnabled" not in (ROOT / "assets/js/leaderboard.js").read_text(encoding="utf-8"):
@@ -1224,7 +1233,7 @@ rules_path = ROOT / "firestore.rules"
 if not rules_path.exists() or "leaderboard" not in rules_path.read_text(encoding="utf-8"):
     errors.append("firestore.rules: missing or incomplete (Firestore security rules)")
 
-notes.append("access: Google-sign-in quiz gate (site.auth), auth.js on all pages, Firestore rules + result Dashboard/Attempt actions")
+notes.append("access: anonymous-first Google sign-in (site.auth) - quizzes and notes public, progress + leaderboard gated, auth.js on all pages, Firestore rules + result Dashboard/Attempt actions")
 
 # --- telegram growth & student conversion system ---------------------------
 # Presence-only checks: the flow must never force a join, block a quiz or

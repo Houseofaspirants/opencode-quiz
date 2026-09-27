@@ -423,9 +423,10 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
   "dailyQuizSize": 20,                 // questions in Daily Challenge
   "passPercent": 40,                   // pass line on result page
   "studentsPracticed": 12500,          // optional marketing number
-  "auth": {                            // Google-sign-in quiz gate (README §20)
+  "auth": {                            // Google sign-in, anonymous-first (§20)
     "enabled": true,                   // false = whole feature inert
-    "requireLogin": true,              // quizzes check sign-in before opening
+    "requireLogin": true,              // progress + leaderboard ask first
+    "gateQuizzes": false,              // true = quizzes ask too (opt-in)
     "preview": true,                   // demo sign-in until Firebase keys exist
     "firebase": {                      // public web config — see §20
       "apiKey": "", "authDomain": "", "projectId": "", "appId": ""
@@ -473,7 +474,7 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 * **Leaderboard** — today / weekly / all-time tabs, API-ready interface.
 * **Search** — instant subject + topic filter, `Ctrl/⌘+K`.
 * **Dark mode** — toggle, remembered, matches system by default.
-* **Google sign-in access flow** — every quiz entry (daily, topic, mock, related cards) opens a blurred sign-in modal for signed-out visitors, remembers students automatically, and syncs progress, attempts and the global leaderboard to their Google account ([§20](#20-google-sign-in--cloud-sync-firebase)).
+* **Google sign-in, anonymous-first** — every quiz, mock and note opens with no sign-in at all; the blurred **Continue with Google** modal appears only on the personalised pages (progress, leaderboard), remembers students automatically, and syncs progress, attempts and the global leaderboard to their Google account ([§20](#20-google-sign-in--cloud-sync-firebase)).
 * **PWA** — install button, offline quizzes, PNG app icons, shortcuts & splash colours.
 
 ---
@@ -594,12 +595,17 @@ subject pages straight from `subjects.json` + `index.json` + `articles.json`.
 
 ## 20. Google sign-in & cloud sync (Firebase)
 
-Every quiz entry point — Daily Quiz, topic quizzes, Latest-quiz cards,
-related-quiz links and Mock Tests — checks sign-in first. Signed-out
-visitors get a clean modal (background blur, benefits list, one
-**Continue with Google** button); after signing in they land **directly on the
-selected quiz**, never on an intermediate dashboard. Signed-in students are
-remembered automatically, so the gate never shows again.
+Study content is **anonymous-first**: Daily Quiz, topic quizzes, Latest-quiz
+cards, related-quiz links and Mock Tests open for signed-out visitors with no
+prompt at all. Sign-in is asked for only where an account adds something —
+the personalised pages (progress and leaderboard). Signed-out visitors there
+get a clean modal (background blur, benefits list, one **Continue with
+Google** button); after signing in they land **directly on the requested
+page**, never on an intermediate dashboard. Signed-in students are remembered
+automatically, so the modal never shows again.
+
+Set `auth.gateQuizzes: true` if you want the old behaviour where every quiz
+entry checks sign-in first.
 
 Everything is configured from `data/site.json` — no code changes, ever.
 
@@ -608,15 +614,16 @@ Everything is configured from `data/site.json` — no code changes, ever.
 | Key | Meaning |
 |---|---|
 | `enabled` | `false` → the whole feature is inert (old open behaviour) |
-| `requireLogin` | `true` → quizzes check sign-in; `false` → open access |
+| `requireLogin` | `true` → progress + leaderboard ask for sign-in; `false` → nothing asks |
+| `gateQuizzes` | `true` → quiz/mock entry asks too; `false` (shipped) → quizzes stay public |
 | `preview` | `true` → demo sign-in (local only) until real Firebase keys exist |
 | `firebase.*` | Your Firebase **web** config — public by design; `firestore.rules` guards the data |
 
-Shipped default: `enabled: true`, `requireLogin: true`, `preview: true` — the
-full flow (modal → sign-in → quiz → result buttons → dashboard → leaderboard)
-works immediately with a local demo profile. **The moment you paste real
-Firebase keys, preview sign-in switches itself off automatically** — demo
-profiles can never reach your Firestore.
+Shipped default: `enabled: true`, `requireLogin: true`, `gateQuizzes: false`,
+`preview: true` — every quiz and note is public, while the full flow (modal →
+sign-in → progress → leaderboard) works immediately with a local demo profile.
+**The moment you paste real Firebase keys, preview sign-in switches itself off
+automatically** — demo profiles can never reach your Firestore.
 
 ### 20.2 Go live in 6 steps (free Spark plan)
 
@@ -660,7 +667,7 @@ Sync rules of thumb:
 | “Google sign-in is switched off” | Authentication → Sign-in method → **Google → Enable**. |
 | Popup blocked by the browser | The flow automatically falls back to full-page redirect sign-in. |
 | Permission denied in Firestore console | Publish `firestore.rules` (step 6). |
-| Quizzes should be open again | `data/site.json` → `auth.requireLogin: false` → redeploy. |
+| Quizzes should demand sign-in again | `data/site.json` → `auth.gateQuizzes: true` → redeploy. |
 
 ---
 

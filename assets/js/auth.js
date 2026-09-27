@@ -1,12 +1,16 @@
 /* ============================================================================
- * auth.js | Student access flow — Google sign-in (Firebase) + quiz gate
+ * auth.js | Student access flow — Google sign-in (Firebase), anonymous-first
  * ----------------------------------------------------------------------------
- * Home → Start Quiz → (not signed in) modern modal → Google sign-in →
- * straight to the selected quiz.  Signed-in students start instantly.
+ * Study content is public: quizzes, mocks, notes and landing pages open with
+ * no sign-in at all. Google sign-in is asked for only where an account adds
+ * something — the personalised pages (progress, leaderboard) — and, if
+ * auth.gateQuizzes is switched on, at quiz entry too. Signed-in students
+ * never see the modal again.
  *
  * Config: data/site.json → "auth" (ships inside data/index.json):
  *   enabled      false = this file is completely inert
- *   requireLogin true  = every quiz entry point checks sign-in first
+ *   requireLogin true  = progress + leaderboard ask for sign-in first
+ *                        (false = nothing in the site asks)
  *   preview      true  = demo sign-in until real Firebase keys are pasted
  *   firebase     { apiKey, authDomain, projectId, appId, ... } — public web
  *                config (safe to ship; firestore.rules guards the data)
@@ -42,7 +46,12 @@
 
   const $ = (s, r = document) => r.querySelector(s);
   const esc = (s) => HOA.esc(String(s == null ? "" : s));
-  const isQuizPage = () => /(^|\/)quiz\.html$/.test(location.pathname);
+
+  /* Which pages demand sign-in. Anonymous-first: every study page (quizzes,
+     mocks, notes, landing pages) is public; only the personalised pages ask
+     who you are, plus quizzes when auth.gateQuizzes opts back in. */
+  const ACCOUNT_PAGE_RX = /(leaderboard|progress)\.html$/;
+  const QUIZ_PAGE_RX = /(quiz|mock)\.html$/;
 
   /* ---------------------------------------------------------- modal UI --- */
   const G_LOGO = `<svg class="g-logo" viewBox="0 0 48 48" width="18" height="18" aria-hidden="true" focusable="false">
@@ -91,9 +100,13 @@
   }
 
   /* ------------------------------------------------------------- state --- */
-  function required() {
-    return mode !== "off" && !!cfg && cfg.enabled !== false && cfg.requireLogin !== false;
+  function gates(path) {
+    if (mode === "off" || !cfg || cfg.enabled === false) return false;
+    if (cfg.requireLogin === false) return false;      // hard "everything open"
+    if (ACCOUNT_PAGE_RX.test(path)) return true;       // progress + leaderboard
+    return cfg.gateQuizzes === true && QUIZ_PAGE_RX.test(path);
   }
+  const required = () => gates(location.pathname);
   const signedIn = () => !!session;
   const cloudEnabled = () => mode === "firebase" && !!session && session.provider === "google";
   const isMe = (uid) => !!session && !!uid && session.uid === uid;
@@ -108,12 +121,19 @@
   }
 
   /* ------------------------------------------------------------- gate ---- */
-  /** Resolves true when the student may proceed, false when they dismissed. */
-  function ensure() {
+  /** Resolves true when `path` may be opened, false when the student
+   *  dismissed. Checking the TARGET path matters: a link from a public page
+   *  to a gated one must open the modal before we navigate, not after. */
+  function ensurePath(path) {
     return ready.then(() => {
-      if (!required() || signedIn()) return true;
+      if (!gates(path) || signedIn()) return true;
       return openGate();
     });
+  }
+
+  /** Resolves true when the page we are already on may be shown. */
+  function ensure() {
+    return ensurePath(location.pathname);
   }
 
   function openGate() {
@@ -499,17 +519,17 @@
     }
     if (e.target && e.target.closest && e.target.closest("#googleBtn")) return handleGoogle();
 
-    /* ---- quiz / mock entry gate (links) ---- */
+    /* ---- gate the pages that actually need an account (links) ---- */
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     const link = e.target && e.target.closest ? e.target.closest("a[href]") : null;
     if (!link || (link.target && link.target !== "_self") || link.hasAttribute("download")) return;
     let url;
     try { url = new URL(link.getAttribute("href"), location.href); } catch (_) { return; }
     if (url.origin !== location.origin) return;
-    if (!/(quiz|mock)\.html$/.test(url.pathname)) return;
+    if (!gates(url.pathname)) return;   // anonymous-first: never block content
     e.preventDefault();
     gateTarget = url.pathname + url.search + url.hash;
-    ensure()
+    ensurePath(url.pathname)
       .then((ok) => { if (ok) location.href = gateTarget; })
       .catch(() => { location.href = gateTarget; })   // fail open, never trap
       .then(() => { gateTarget = null; });
@@ -517,10 +537,10 @@
 
   /* -------------------------------------------------------------- boot --- */
   async function bootGate() {
-    // Direct visit / programmatic entry to a quiz while signed out.
+    // Direct visit / programmatic entry to a gated page while signed out.
     // NOTE: calls openGate() directly — awaiting ensure() inside `ready`
     // would deadlock (ensure waits on ready, ready waits on this).
-    if (!isQuizPage() || !required() || signedIn()) return;
+    if (!required() || signedIn()) return;
     const ok = await openGate();
     if (ok) location.reload();
     else location.replace("index.html");
