@@ -822,6 +822,34 @@ bash scripts/ci.sh                        # content → manifest → landing →
 | `content/daily-practice/*.md` | `practice-<slug>.html` + cards on `daily-practice.html` | a dated set and what to fix after attempting it |
 | `content/success-stories/*.md` | `story-<slug>.html` + cards on `success-stories.html` | one honest attempt (`exam:` required) |
 | `content/book-recommendations/*.md` | `book-<slug>.html` + cards on `book-recommendations.html` | one book, judged for this syllabus |
+| `content/<folder>/*.pdf` | `<prefix>-<slug>.html` (+ the collection hub card) | **a PDF alone is enough** — no Markdown, no front matter |
+
+### Drop a PDF, get a page
+
+A PDF in any collection folder publishes from its file name. The builder
+derives the title, slug, description, date and download URL, then runs the
+record through exactly the pipeline a Markdown document uses:
+
+```bash
+cp "Current Affairs July 2026.pdf" content/monthly-magazine/
+python3 scripts/build_content.py
+#  ℹ content/monthly-magazine/Current Affairs July 2026.pdf -> magazine-current-affairs-july-2026.html
+```
+
+* **Date** — `2026-08-12`, `July 2026` or `2026-07` in the name wins;
+  otherwise the date the file first appeared is remembered in
+  `data/pdf-meta.json`, so a rebuild on another machine emits the same bytes
+  (the determinism rule `scripts/ci.sh` step 6 depends on).
+* **Same name as a Markdown file** — `Quant Shortcuts.pdf` next to
+  `quant-shortcuts.md` becomes that document's download, not a second page.
+* **`content/pdfs/`** — listed on `pdfs.html` with its download button (that
+  hub has no pages: the PDF is the artefact).
+* **Fields a file name cannot carry** (`subject`, `post`, `official_url`)
+  are simply absent; the page and its card lead with *PDF download* instead
+  of inventing them. Nothing else changes — design, Quiz Engine, SEO rules
+  and the 95+ gates are untouched.
+* **English only** — a PDF has no Punjabi twin, so it publishes at the root
+  and the language switch stays honest.
 
 ### What the build generates around them (Phase 4)
 

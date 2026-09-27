@@ -16,6 +16,7 @@ import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
 from html.parser import HTMLParser
+from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://houseofaspirants.in"
@@ -1031,9 +1032,11 @@ def resolvable(target):
     """`subject.html?subject=gk#x` -> does subject.html exist?
 
     Production serves extensionless URLs, so a canonical
-    `https://houseofaspirants.in/note-x` resolves to `note-x.html`.
+    `https://houseofaspirants.in/note-x` resolves to `note-x.html`. A hosted
+    file we link (a PDF with spaces in its name) is percent-encoded in the
+    markup, so the path is decoded before it is looked up on disk.
     """
-    path = str(target).split("#", 1)[0].split("?", 1)[0].lstrip("/")
+    path = unquote(str(target).split("#", 1)[0].split("?", 1)[0]).lstrip("/")
     if not path:
         return False
     if (ROOT / path).exists():

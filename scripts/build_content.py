@@ -46,6 +46,17 @@ PUNJABI VARIANTS
     cross-linked from the English page and vice versa. Punjabi-first means the
     note itself can ship in Punjabi; English stays one tap away.
 
+PDF DROPS (a PDF alone is enough to publish)
+    content/<collection>/<file>.pdf is a document like any other. The builder
+    discovers it, derives every field it can from the file name (title, slug,
+    description, date, download URL), gives it a page in its own collection
+    hub and registers it in the manifest, the search corpus, the feed, the
+    archives and the sitemap - no Markdown required. A sibling `<slug>.md`
+    with the same name is still read first; in that case the PDF becomes that
+    document's download instead of a second page. `data/pdf-meta.json` keeps
+    the dates of already-published PDFs stable, so a rebuild on another machine
+    (or in CI) emits byte-identical files.
+
 DETERMINISM
     The output never contains a run timestamp: rebuilding without editing
     content emits byte-identical files, so `scripts/ci.sh` step 5 can prove the
@@ -57,6 +68,7 @@ USAGE
     python3 scripts/new_content.py --list       # the content templates
 ===============================================================================
 """
+import hashlib
 import html as html_mod
 import datetime
 import json
@@ -64,6 +76,7 @@ import os
 import re
 import sys
 from pathlib import Path
+from urllib.parse import quote
 
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
@@ -1307,7 +1320,15 @@ def author_href(author, lang="en"):
     return f"/{f}" if lang == "pa" else f
 
 
-def validate_meta(coll, slug, meta, where):
+def validate_meta(coll, slug, meta, where, required=None):
+    """Check one document's front matter against its collection contract.
+
+    `required` overrides the collection's required keys - only the PDF-drop
+    path uses it, because a PDF that was dropped into a folder cannot invent
+    the fields a hand-written document would carry (subject, post, official
+    URL...). Everything else - title, description, dates, schema, authors - is
+    still held to exactly the same rules.
+    """
     apply_aliases(meta, where)
     known = set(REQUIRED_FIELDS[coll]) | set(OPTIONAL_FIELDS[coll]) | KNOWN_EXTRA
     # Normalise list fields first: `exams: Punjab Police` (no brackets) is a
@@ -1318,7 +1339,7 @@ def validate_meta(coll, slug, meta, where):
         elif not isinstance(meta[key], list):
             err(f"{where}: {key} must be a list")
             meta[key] = []
-    for key in REQUIRED_FIELDS[coll]:
+    for key in (REQUIRED_FIELDS[coll] if required is None else required):
         if key not in meta or meta[key] in ("", None, []):
             err(f"{where}: required front matter field {key!r} missing or empty")
     if meta.get("type") is not None:
@@ -1778,19 +1799,23 @@ def read_variant(coll_dir, slug, pa):
     return path if path.exists() else None
 
 
-def build_record(coll, cfg, slug, path, index, lang):
+def build_record(coll, cfg, slug, path, index, lang, meta=None, body=None,
+                 required=None):
+    """One document -> one record. Markdown is read unless the caller (the
+    PDF-drop path below) hands over front matter and a body it already built."""
     where = str(path.relative_to(ROOT))
-    try:
-        raw = path.read_text(encoding="utf-8")
-        meta, body = parse_front_matter(raw, where)
-    except ValueError as e:
-        err(str(e))
-        return None
-    except UnicodeDecodeError:
-        err(f"{where}: not valid UTF-8")
-        return None
+    if meta is None or body is None:
+        try:
+            raw = path.read_text(encoding="utf-8")
+            meta, body = parse_front_matter(raw, where)
+        except ValueError as e:
+            err(str(e))
+            return None
+        except UnicodeDecodeError:
+            err(f"{where}: not valid UTF-8")
+            return None
 
-    validate_meta(coll, slug, meta, where)
+    validate_meta(coll, slug, meta, where, required=required)
     if errors:
         return None
 
@@ -1876,6 +1901,319 @@ def build_record(coll, cfg, slug, path, index, lang):
     record["template"] = (str(meta.get("type") or "").strip()
                           or template_for(coll, str(meta.get("category") or "")))
     return record
+
+
+# =============================================================================
+# 5b. PDF DROPS - a PDF alone is enough to publish
+# =============================================================================
+# Dropping a file into content/<collection>/ publishes it: the file name IS the
+# metadata. Nothing here invents a fact the file cannot carry - where the name
+# has no date, the day the PDF first appeared is remembered in
+# data/pdf-meta.json instead of being stamped afresh on every run, so the
+# output stays byte-identical (the determinism promise in the header).
+PDF_META = ROOT / "data" / "pdf-meta.json"
+PDF_PAGE_FIELDS = ("title", "description", "published")
+PDF_REGISTRY_FIELDS = ("title", "description", "file")   # content/pdfs/ has no page
+
+_MONTH_NAMES = ("january february march april may june july august september "
+                "october november december").split()
+MONTHS = {name: i for i, name in enumerate(_MONTH_NAMES, 1)}
+MONTHS.update({name[:3]: i for name, i in list(MONTHS.items())})
+PDF_SMALL_WORDS = {"a", "an", "the", "of", "for", "and", "or", "in", "on",
+                   "to", "at", "by", "from", "vs"}
+# The exam vocabulary that must keep its capitals; every other word in a file
+# name is title-cased, so `CURRENT AFFAIRS JULY 2026.pdf` reads as a title
+# while `PPSC 2024 PYQ.pdf` still reads as an acronym.
+PDF_ACRONYMS = {"ppsc", "psssb", "ssb", "pcs", "upsc", "ias", "ips", "ssc",
+                "ibps", "rbi", "nta", "clat", "neet", "jee", "aiims", "nda",
+                "cds", "afcat", "si", "asi", "po", "gk", "gs", "mcq", "mcqs",
+                "pyq", "pyqs", "pdf", "ca", "pstet", "ptet", "ctet", "reet",
+                "htet", "gb", "ukpsc", "hppsc", "jpse"}
+
+
+def clip(text, limit=60):
+    """Cut at a word boundary so a generated title stays readable."""
+    s = str(text).strip()
+    if len(s) <= limit:
+        return s
+    cut = s[:limit].rsplit(" ", 1)[0].rstrip(" ,;:-")
+    return cut or s[:limit]
+
+
+def pdf_href(path):
+    """href for a file we host ourselves: percent-encoded once, never twice."""
+    v = str(path or "")
+    if v.startswith(("http://", "https://")):
+        return v
+    return quote(v, safe="/%")
+
+
+def pdf_date_from_name(stem):
+    """`2026-07-15`, `July 2026`, `july-2026`, `2026-07` -> ISO date, else ''.
+
+    A date the file cannot prove (one still in the future) is ignored rather
+    than published."""
+    today = datetime.date.today().isoformat()
+    text = str(stem).lower()
+    found = ""
+    m = re.search(r"\b(20\d{2})-(\d{1,2})-(\d{1,2})\b", text)
+    if m:
+        try:
+            found = datetime.date(int(m.group(1)), int(m.group(2)),
+                                  int(m.group(3))).isoformat()
+        except ValueError:
+            found = ""
+    if not found:
+        for pat in (r"\b([a-z]{3,9})[\s._-]+(20\d{2})\b",
+                    r"\b(20\d{2})[\s._-]+([a-z]{3,9})\b"):
+            m = re.search(pat, text)
+            if not m:
+                continue
+            a, b = m.group(1), m.group(2)
+            month = MONTHS.get(a) or MONTHS.get(b)
+            if not month:
+                continue
+            year = int(b) if a in MONTHS else int(a)
+            found = f"{year:04d}-{month:02d}-01"
+            break
+    if not found:
+        m = re.search(r"\b(20\d{2})-(\d{1,2})\b", text)
+        if m and 1 <= int(m.group(2)) <= 12:
+            found = f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-01"
+    return "" if (found and found > today) else found
+
+
+def pdf_title_from_name(stem):
+    """`Current Affairs July 2026` <- `Current Affairs July 2026.pdf`.
+
+    Acronyms (PPSC, SI) and years keep their shape; everything else is title
+    cased, and the result is cut to the site's 60-character title limit."""
+    stem = str(stem)
+    # A date written into the name ("Sheet 2026-08-12") is part of the
+    # document, not a word to be re-spaced: it is parked while the rest of the
+    # name is title cased.
+    iso = re.search(r"\b20\d{2}-\d{1,2}(?:-\d{1,2})?\b", stem)
+    guard = iso.group(0) if iso else ""
+    if guard:
+        stem = stem.replace(guard, "Dateday", 1)
+    words = [w for w in re.split(r"[^A-Za-z0-9]+", stem) if w]
+    out = []
+    for w in words:
+        if w.isdigit() or any(c.isdigit() for c in w):
+            out.append(w)          # 2026, SI-2, v3 keep their shape
+        elif w.lower() in PDF_ACRONYMS:
+            out.append(w.upper())  # ppsc -> PPSC, ca -> CA, pyq -> PYQ
+        else:
+            out.append(w[0].upper() + w[1:].lower())
+    for i, w in enumerate(out):
+        if i and w.lower() in PDF_SMALL_WORDS:
+            out[i] = w.lower()
+    title = " ".join(out)
+    if guard:
+        # Clip the words around the date - never through it.
+        head, _, tail = title.partition("Dateday")
+        head = clip(head, max(10, 60 - len(guard) - 1))
+        title = f"{head.strip()} {guard} {tail.strip()}".strip()
+        if len(title) > 60:
+            title = clip(f"{head.strip()} {guard}", 60)
+    else:
+        title = clip(title, 60)
+    return " ".join(title.split())
+
+
+def pdf_slug_from_name(stem):
+    """Filename -> the slug rule every other document follows, or ''."""
+    s = re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", str(stem).lower())) \
+        .strip("-")[:64].rstrip("-")
+    return s if re.fullmatch(r"[a-z0-9][a-z0-9-]*", s) else ""
+
+
+def pdf_description(title, label):
+    """A 140-160 character meta description assembled from the title and the
+    collection label - truthful clauses only, never padded with claims."""
+    text = f"Download {title} as a PDF from House of Aspirants."
+    clauses = [
+        " One click, no sign-up and no email wall.",
+        f" {label} material, filed straight from the file name.",
+        " Free to download, print and keep for offline revision.",
+        " The page was generated from the file name.",
+        " Filed in the House of Aspirants library.",
+        " Hosted on this site.",
+        " No account needed.",
+        " Free.",
+    ]
+    for _ in range(4):
+        for clause in clauses:
+            if len(text) >= 140:
+                break
+            if len(text) + len(clause) <= 160:
+                text += clause
+        if len(text) >= 140:
+            break
+    if len(text) < 140:
+        # Nothing else fits whole: one longer sentence, then a word-boundary
+        # trim keeps the result inside the site's 140-160 window.
+        text += " Hosted on this site, indexed in the archives and free for " \
+                "every aspirant."
+    while len(text) > 160:
+        text = text.rsplit(" ", 1)[0]
+    if not (140 <= len(text) <= 160):          # pragma: no cover - guarded gate
+        err(f"generated PDF description for {title!r} is {len(text)} chars "
+            f"(the site range is 140-160)")
+    return text
+
+
+def file_size_label(path):
+    try:
+        size = Path(path).stat().st_size
+    except OSError:
+        return ""
+    return f"{size // 1024} KB" if size < 1024 * 1024 \
+        else f"{size / (1024 * 1024):.1f} MB"
+
+
+def pdf_body_text(title, rel, published, label):
+    """The honest body of a generated page: what the file is and where it is."""
+    href = pdf_href(rel)
+    size = file_size_label(ROOT / rel)
+    date_line = (f"- **Published:** {fmt_date(published)}\n"
+                 if published else "")
+    return (
+        f"## Download\n"
+        f"[Download {title} (PDF)]({href})"
+        + (f" - {size}, hosted on this site." if size else ".")
+        + " No sign-up, no email wall and no redirect through a third party.\n\n"
+        f"## About this file\n"
+        f"- **File name:** `{Path(rel).name}`\n"
+        + (f"- **Size:** {size}\n" if size else "")
+        + f"- **Filed under:** {label}\n"
+        f"{date_line}\n"
+        f"This page was generated automatically when the PDF was placed in "
+        f"`{Path(rel).parent.as_posix()}/`. Its title, slug, description and "
+        f"date come from the file name - the PDF itself is the document."
+    )
+
+
+def apply_pdf_body(record, label):
+    """Re-render the generated body (a title disambiguation changes it)."""
+    record["bodyHtml"], record["toc"] = md_to_html(
+        pdf_body_text(record["title"], record["path"],
+                      str(record.get("published") or ""), label))
+
+
+def load_pdf_sidecar():
+    """> {"version": 1, "files": {<path>: {hash, published, updated}}}."""
+    if not PDF_META.exists():
+        return {"version": 1, "files": {}}
+    try:
+        data = json.loads(PDF_META.read_text(encoding="utf-8"))
+        if not isinstance(data.get("files"), dict):
+            raise ValueError("'files' must be an object")
+        return {"version": 1, "files": data["files"]}
+    except Exception as e:
+        warn(f"data/pdf-meta.json unreadable ({e}) - regenerating it")
+        return {"version": 1, "files": {}}
+
+
+def remember_pdf_dates(path, old_files, new_files, fname_date):
+    """-> (published, updated), stable across rebuilds.
+
+    The file name wins when it carries a date. Otherwise the date the PDF was
+    first published is read back from data/pdf-meta.json - today's date is
+    stamped once, never on every run (which would look like content drift to
+    `scripts/ci.sh` step 6)."""
+    rel = str(path.relative_to(ROOT))
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    stored = old_files.get(rel) or {}
+    today = datetime.date.today().isoformat()
+    published = fname_date or str(stored.get("published") or "") or today
+    if str(stored.get("hash") or "") == digest:
+        updated = str(stored.get("updated") or "") or published
+    else:
+        updated = today if stored else published   # file replaced since first seen
+    entry = {"hash": digest, "published": published, "updated": updated}
+    new_files[rel] = entry
+    return published, updated
+
+
+def pdf_eyebrow(record, index=None):
+    """The one fact a generated PDF page can honestly lead with."""
+    if record.get("subjects") and index is not None:
+        return subject_name(index, record["subjects"][0])
+    if record.get("month"):
+        return f'Issue {record["month"]}'
+    if record.get("category"):
+        return str(record["category"])
+    if record.get("official_source"):
+        return str(record["official_source"])
+    if record.get("date"):
+        return fmt_date(str(record["date"]))
+    return "PDF download"
+
+
+def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
+                     index):
+    """meta + body derived from the file name -> a normal document record."""
+    label = NAV_ENTRY.get(coll, (HUBS[coll]["schema_hub"], ""))[0]
+    title = pdf_title_from_name(path.stem) or label
+    rel = str(path.relative_to(ROOT))
+    meta = {"title": title, "description": pdf_description(title, label)}
+    if coll == "pdfs":
+        # The PDF hub is a registry: the file is the artifact, so the record
+        # carries the download and never a date or a page of its own.
+        meta["file"] = rel
+        required = PDF_REGISTRY_FIELDS
+    else:
+        required = PDF_PAGE_FIELDS
+        meta["published"] = published
+        if updated and updated != published:
+            meta["updated"] = updated
+        meta["pdf"] = rel                     # the Download button
+        meta["keywords"] = [clip(title, 48), label, "PDF download"]
+        if coll == "magazine" and fname_date:
+            meta["month"] = fname_date[:7]    # "Issue 2026-07", from the name
+    record = build_record(coll, cfg, slug, path, index, "en",
+                          meta=meta,
+                          body=pdf_body_text(title, rel, published, label),
+                          required=required)
+    if record is not None:
+        record["pdfDrop"] = True
+    return record
+
+
+def dedupe_pdf_titles(all_records):
+    """Every <title> on the site is unique (gated in scripts/seo_check.py), so
+    a generated title is disambiguated with its collection label - and the
+    description and body that quote it are regenerated with it."""
+    used = {str(h.get("title", "")).lower() for h in HUBS.values()}
+    used.add(ARCHIVES_TITLE.lower())
+    for rows in all_records.values():
+        used.update(str(r["title"]).lower() for r in rows if not r.get("pdfDrop"))
+    for coll, rows in all_records.items():
+        label = NAV_ENTRY.get(coll, (coll, ""))[0]
+        for r in rows:
+            if not r.get("pdfDrop"):
+                continue
+            base = str(r["title"])
+            cand, n = base, 1
+            while cand.lower() in used:
+                n += 1
+                if n > 50:
+                    err(f"{r['path']}: no unique title can be derived from this "
+                        f"file name - rename the PDF")
+                    break
+                cand = clip(f"{base} ({label if n == 2 else n})", 60)
+            if cand != base:
+                r["title"] = cand
+                r["meta"]["title"] = cand
+                r["meta"]["description"] = pdf_description(cand, label)
+                r["description"] = r["meta"]["description"]
+                if r["meta"].get("keywords"):
+                    r["meta"]["keywords"][0] = clip(cand, 48)
+                    r["keywords"] = r["meta"]["keywords"]
+                apply_pdf_body(r, label)
+                info(f"{r['path']}: title disambiguated to {cand!r}")
+            used.add(str(r["title"]).lower())
 
 
 def subject_name(index, sid):
@@ -2544,7 +2882,10 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     # ---- hero -------------------------------------------------------------
     eyebrow_bits = []
-    if record["collection"] == "notes":
+    if record.get("pdfDrop"):
+        # Generated from a file name: lead with the one fact it really carries
+        eyebrow_bits.append(pdf_eyebrow(record, index))
+    elif record["collection"] == "notes":
         names = [subject_name(index, s) for s in record["subjects"]]
         eyebrow_bits.append(" · ".join(names) if names else "Study Note")
     elif record["collection"] == "magazine":
@@ -2566,7 +2907,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     pdf_html = ""
     if record.get("pdf"):
-        pdf_html = (f'<a class="btn btn-primary" href="{esc(str(record["pdf"]))}" '
+        pdf_html = (f'<a class="btn btn-primary" href="{esc(pdf_href(record["pdf"]))}" '
                     f'download>⬇ Download PDF</a>')
 
     # Community links the document itself points at - rendered only when the
@@ -2758,7 +3099,11 @@ def recruitment_sections(record):
             <a class="btn btn-soft" href="punjab-exams.html">Preparation guide</a>
           </p>
         </div>"""
-    blocks.append(block("Notification", notif, "Official source", "notification"))
+    # A notification can only be pointed at when the record actually names the
+    # official URL (a PDF dropped into this folder never does), so the block -
+    # and the anchor the recommendation plan links - appear only when real.
+    if off:
+        blocks.append(block("Notification", notif, "Official source", "notification"))
 
     if record["meta"].get("eligibility"):
         blocks.append(block("Eligibility",
@@ -2794,7 +3139,9 @@ def recruitment_anchors(record):
     """
     if record.get("collection") != "recruitment":
         return set()
-    out = {"notification"}
+    out = set()
+    if str(record["meta"].get("official_url") or "").strip():
+        out.add("notification")           # only when the block really rendered
     for key in ("eligibility", "syllabus", "selection", "dates",
                 "expected_questions", "previous_papers"):
         if record["meta"].get(key):
@@ -3216,7 +3563,7 @@ def hub_cards(coll, items, index, lang="en", facets=None):
     cards = []
     for r in items:
         if coll == "pdfs":
-            path = str(r["meta"].get("file", ""))
+            path = pdf_href(r["meta"].get("file", ""))
             cards.append(f'<div class="card card-pad">'
                          f'<span class="eyebrow">PDF download</span>'
                          f'<h3>{esc(r["title"])}</h3>'
@@ -3225,15 +3572,18 @@ def hub_cards(coll, items, index, lang="en", facets=None):
                          f'<a class="btn btn-primary" href="{esc(path)}" download>'
                          f'⬇ Download PDF</a></p></div>')
             continue
-        eyebrow = {
-            "notes": (subject_name(index, r["subjects"][0]) if r["subjects"]
-                      else "Study note"),
-            "magazine": f'Issue {r.get("month", "")}',
-            "strategy": str(r.get("category", "Strategy")),
-            "sessions": f'{r.get("date", "")} · {r.get("platform", "")}'.strip(" ·"),
-            "recruitment": str(r.get("official_source", "Official notification")),
-        }.get(coll, str(r.get("category") or r.get("post")
-                        or NAV_ENTRY.get(coll, ("", ""))[0] or "Article"))
+        eyebrow = (pdf_eyebrow(r, index) if r.get("pdfDrop")
+                   else {
+                       "notes": (subject_name(index, r["subjects"][0])
+                                 if r["subjects"] else "Study note"),
+                       "magazine": f'Issue {r.get("month", "")}',
+                       "strategy": str(r.get("category", "Strategy")),
+                       "sessions": (f'{r.get("date", "")} · {r.get("platform", "")}'
+                                    .strip(" ·")),
+                       "recruitment": str(r.get("official_source",
+                                                "Official notification")),
+                   }.get(coll, str(r.get("category") or r.get("post")
+                                   or NAV_ENTRY.get(coll, ("", ""))[0] or "Article")))
         if coll == "notes":
             meta = f'{r["readingMinutes"]} min read'
         elif coll == "sessions":
@@ -4598,6 +4948,9 @@ def main():
     all_records = {c: [] for c in HUBS}
     punjabi = {c: [] for c in HUBS}
     drafts = 0
+    pdf_old = load_pdf_sidecar()["files"]
+    pdf_files = {}                 # rebuilt from the PDFs that publish this run
+    pdf_drops = 0
 
     for coll, cfg in HUBS.items():
         cdir = CONTENT / cfg["dir"]
@@ -4626,6 +4979,44 @@ def main():
                 continue
             (punjabi if is_pa else all_records)[coll].append(rec)
 
+        # --- PDF drops -------------------------------------------------------
+        # A PDF alone is enough: the file name gives the document its title,
+        # slug, description, date and download URL, and the record below lands
+        # in exactly the same pipeline a Markdown document does.
+        taken = {r["slug"] for r in all_records[coll]}
+        for path in sorted(p for p in cdir.iterdir() if p.is_file()
+                           and p.suffix.lower() == ".pdf"
+                           and not p.name.lower().startswith("readme")):
+            where = str(path.relative_to(ROOT))
+            slug = pdf_slug_from_name(path.stem)
+            # `Quant Shortcuts.pdf` next to `quant-shortcuts.md` is that
+            # document's download, not a second page: one file, one URL.
+            host = next((r for r in all_records[coll]
+                         if not r.get("pdfDrop") and r.get("slug") == slug), None)
+            if host is not None:
+                if not host.get("pdf"):
+                    host["pdf"] = host["meta"]["pdf"] = where
+                    info(f"{where}: attached to {host['file']} as its download")
+                else:
+                    info(f"{where}: not published - {host['file']} already "
+                         f"links a download of its own")
+                continue
+            slug = slug or "pdf"
+            base, n = slug, 1
+            while slug in taken:
+                n += 1
+                slug = f"{base}-{n}"        # deterministic, never a build error
+            taken.add(slug)
+            fname_date = pdf_date_from_name(path.stem)
+            published, updated = remember_pdf_dates(path, pdf_old, pdf_files,
+                                                    fname_date)
+            rec = build_pdf_record(coll, cfg, path, slug, published, updated,
+                                   fname_date, index)
+            if rec is None:
+                continue
+            all_records[coll].append(rec)
+            pdf_drops += 1
+
     # Validate EVERYTHING before a single byte is written: a broken file fails
     # the build with nothing half-written on disk.
     if errors:
@@ -4634,6 +5025,18 @@ def main():
         print(f"\n\u274c content build FAILED with {len(errors)} error(s) - "
               f"no files were written.")
         return 1
+
+    # A generated title is made unique before anything renders from it.
+    dedupe_pdf_titles(all_records)
+    if pdf_drops:
+        info(f"pdf drops: {pdf_drops} PDF(s) published from their file names")
+    if pdf_files != pdf_old:
+        PDF_META.write_text(
+            json.dumps({"version": 1,
+                        "files": {k: pdf_files[k] for k in sorted(pdf_files)}},
+                       ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        info(f"pdf dates: {len(pdf_files)} file(s) recorded in "
+             f"data/pdf-meta.json")
 
     # deterministic order: newest first, then title
     for coll in all_records:

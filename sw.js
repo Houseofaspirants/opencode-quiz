@@ -5,11 +5,12 @@
  *   • App shell (HTML/CSS/JS/icons)  → cache-first, updated in background
  *   • data/index.json                → network-first (fresh stats), cached copy
  *   • question JSON files            → cache-first (quizzes work offline)
+ *   • content/*.pdf downloads        → never cached here (browser HTTP cache)
  *   • Everything else                → network with cache fallback
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v38";
+const VERSION = "hoa-v39";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -124,6 +125,11 @@ self.addEventListener("fetch", (event) => {
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // never touch CDNs / fonts
+
+  /* 0. Hosted documents (the PDFs behind content/<collection>/*.pdf) are
+        multi-megabyte downloads: let the browser's own HTTP cache handle
+        them instead of pinning them in the shell or data cache forever. */
+  if (url.pathname.toLowerCase().endsWith(".pdf")) return;
 
   /* 1. HTML pages: network first, cache fallback, offline shell last */
   if (req.mode === "navigate") {

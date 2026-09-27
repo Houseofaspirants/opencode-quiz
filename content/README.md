@@ -5,11 +5,13 @@ issue, strategy guide, live session, recruitment record, blog post, news item,
 announcement, PDF listing, personal note, subject guide, topic guide, daily
 practice set, success story and book recommendation on this site is a Markdown
 file in this folder, reviewed in Git and rendered to static HTML by
-`scripts/build_content.py`.
+`scripts/build_content.py` — and a PDF dropped into the same folder publishes
+from its file name alone (see **PDF drops** below).
 
 ```
 content/<collection>/<slug>.md     ──►  <prefix>-<slug>.html        (English, site root)
 content/<collection>/<slug>.pa.md  ──►  pa/<prefix>-<slug>.html     (Punjabi edition)
+content/<collection>/<file>.pdf    ──►  <prefix>-<slug>.html        (PDF drop)
                                      ──►  data/content-manifest.json  (Content Index)
                                      ──►  data/search-index.json      (full-site search)
                                      ──►  feed.xml                    (RSS 2.0)
@@ -170,6 +172,47 @@ Optional, collection-specific fields (see `REQUIRED_FIELDS` /
   of the eight subtypes: `preparation-experience`, `study-plans`,
   `time-management`, `motivation`, `book-reviews`, `mistakes`,
   `strategy-articles`, `exam-analysis`
+
+## PDF drops — a PDF alone is enough
+
+A PDF placed in any collection folder is a document. No Markdown, no front
+matter, no scaffold:
+
+```
+content/monthly-magazine/Current Affairs July 2026.pdf
+    ──►  magazine-current-affairs-july-2026.html   (page in its collection hub)
+    ──►  data/content-manifest.json + data/search-index.json + feed.xml
+    ──►  archives.html, sitemap.xml, the homepage feed, the nav
+```
+
+Everything the site needs is derived from the file name:
+
+| field | from the file name |
+| --- | --- |
+| `title` | `Current Affairs July 2026.pdf` → *Current Affairs July 2026* (title-cased, acronyms such as PPSC/SI/PYQ kept, cut to the site's 60-character limit) |
+| `slug` | `current-affairs-july-2026` (the same lowercase-hyphen rule every document follows; a clash gets `-2`, `-3`, never a failed build) |
+| `description` | assembled from the title and the collection label, always inside the site's 140–160 character window |
+| `date` | `2026-08-12`, `July 2026`, `2026-07` in the name wins; otherwise the date the PDF first appeared, remembered in `data/pdf-meta.json` so a rebuild on another machine emits the same bytes |
+| `download URL` | the file itself, percent-encoded (`content/pdfs/Punjab%20GK%20Sheet.pdf`) |
+
+The record then enters exactly the pipeline a Markdown document does: hub card,
+doc page with a Download button, archives, search corpus (with summary,
+keywords and author), RSS, sitemap, content graph, homepage feed.
+
+Rules worth knowing:
+
+* **`<name>.pdf` next to `<name>.md`** — the PDF becomes that document's
+  download instead of a second page (one file, one URL).
+* **`content/pdfs/`** — the registry hub has no pages: the PDF is listed on
+  `pdfs.html` with its download button, nothing else is generated.
+* **Required collection fields are relaxed** — a dropped PDF cannot invent a
+  `subject`, `post` or `official_url`. What the name does carry is used (a
+  magazine PDF named `… July 2026.pdf` gets `month: 2026-07`), everything else
+  is simply absent and the page leads with *PDF download* instead.
+* **English only** — there is no `.pa.md` twin to derive, so a dropped PDF
+  publishes at the site root and the language switch stays honest.
+* **Drafts are not a PDF concept** — anything in a collection folder is
+  published; `content/_drafts/` is still never read.
 
 ## Language URLs — English at the root, Punjabi under `/pa/`
 

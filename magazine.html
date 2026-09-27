@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://houseofaspirants.in/magazine#webpage",
       "name": "Current Affairs Monthly Magazine | House of Aspirants",
       "url": "https://houseofaspirants.in/magazine",
@@ -49,7 +49,24 @@
       },
       "breadcrumb": {
         "@id": "https://houseofaspirants.in/magazine#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://houseofaspirants.in/magazine#list"
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://houseofaspirants.in/magazine#list",
+      "name": "House of Aspirants Monthly Magazine",
+      "numberOfItems": 1,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Current Affairs July 2026",
+          "item": "https://houseofaspirants.in/magazine-current-affairs-july-2026"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -92,17 +109,12 @@
     </section>
 <section class="section">
       <div class="container"><div class="section-head reveal"><div>
-            <span class="eyebrow">Publishing pipeline</span>
-            <h2>No issue published yet</h2>
+            <span class="eyebrow">Published</span>
+            <h2>All published</h2>
+            <p>One issue per month, built from the events that matter to Punjab exams: a cover, a downloadable PDF, the highlights worth revising and the quiz that turns reading into marks.</p>
           </div></div>
-          <div class="empty-state">
-            <span class="es-icon" aria-hidden="true">✍️</span>
-            <h3>No issue published yet</h3>
-            <p>The first monthly issue is being assembled from this month&#x27;s current affairs sets. The current affairs quizzes are already live if you want to start there.</p>
-            <p class="btn-row" style="justify-content:center">
-              <a class="btn btn-soft" href="subject.html?subject=current-affairs">Practise current affairs</a>
-            </p>
-          </div></div>
+          
+          <div class="grid grid-3" data-filter-list><a class="card card-pad reveal" href="magazine-current-affairs-july-2026.html"><span class="eyebrow">Issue 2026-07</span><h3>Current Affairs July 2026</h3><p class="muted">Download Current Affairs July 2026 as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.</p><p class="ilink">Read more →</p></a></div></div>
     </section><section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div>

@@ -801,3 +801,67 @@ guide).
    JS block and one CSS block, both lazy, and no new request on first paint.
 6. **Graph scope** remains the content tree; chrome-only pages are counted by
    the link-floor gate but are not graph nodes.
+
+## 39. PDF drops — a PDF alone is enough to publish
+
+**Problem.** Uploading a PDF into a content folder never changed the site:
+`build_content.py` discovered documents with `cdir.glob("*.md")` only, so a
+`.pdf` file was invisible to every page, the manifest, search, the feed and
+the sitemap. The site behaved as if there were no content.
+
+**Design.** A PDF is now a document like any other, published from its file
+name alone — no Markdown, no front matter, no scaffold:
+
+| Derived | Rule |
+|---|---|
+| title | file name title-cased, acronyms (PPSC, SI, PYQ, CA) kept, ISO dates preserved, cut to 60 chars |
+| slug | the same lowercase-hyphen rule as every document; a clash gets `-2`, `-3` — never a failed build |
+| description | title + collection label, assembled inside the enforced 140–160 character window |
+| date | `2026-08-12` / `July 2026` / `2026-07` in the name wins; otherwise the first-seen date stored in `data/pdf-meta.json` |
+| download URL | the file itself, percent-encoded once (`…/Punjab%20GK%20Sheet.pdf`) |
+
+The record then enters the existing pipeline unchanged: hub card, doc page
+with a Download button, `data/content-manifest.json`, search corpus
+(summary/keywords/author), `feed.xml`, `archives.html`, taxonomy archives,
+`sitemap.xml`, content graph and the homepage feed blocks.
+
+**Edge cases handled**
+
+* `Quant Shortcuts.pdf` next to `quant-shortcuts.md` → the PDF becomes that
+  document's download instead of a second page (one file, one URL).
+* `content/pdfs/` keeps its registry semantics: the PDF is listed on
+  `pdfs.html`, no page is generated (hub count stays in sync with the
+  manifest).
+* Collection fields a file name cannot carry (`subject`, `post`,
+  `official_url`, …) are skipped under a relaxed contract; the card and hero
+  lead with *PDF download* rather than inventing data. The recruitment
+  "Notification" block and its plan anchor render only when `official_url`
+  exists, so no empty `href=""` is ever emitted.
+* Generated titles are deduplicated site-wide before rendering (a gate in
+  `seo_check.py`), disambiguated with the collection label —
+  `My Notes` / `My Notes (Study Notes)` — and the description and body that
+  quote the title are regenerated with it.
+* `sw.js` (`hoa-v39`) no longer pins multi-megabyte PDFs into the shell/data
+  caches; the browser's HTTP cache handles them.
+
+**Determinism.** `data/pdf-meta.json` remembers `{hash, published, updated}`
+per file, so a rebuilt tree on another machine (or in CI) is byte-identical —
+the promise `scripts/ci.sh` step 6 depends on. A dropped PDF without a date
+in its name gets today's date *once*, not on every run.
+
+**Verification (local)**
+
+* 12 test PDFs across notes, pdfs, recruitment, live-sessions,
+  subject-guides, success-stories, blogs, daily-practice, monthly-magazine:
+  11 doc pages + 1 registry record + 1 Markdown twin attachment, all visible
+  on their hub, in `archives.html`, in `search.html` (1 result for
+  "indian polity"), in `feed.xml` (11 items) and in the sitemap (132 URLs).
+* `title`/`description` fuzzed over ~4 000 synthetic file names × 17 labels:
+  0 descriptions outside 140–160, 0 empty or over-long titles.
+* HTTP: `content/monthly-magazine/Current%20Affairs%20July%202026.pdf` →
+  `200 application/pdf`, 5 853 735 bytes; schema on the generated page is
+  `Article + WebPage + BreadcrumbList`.
+* Gates: `build_content.py` → `build_index.py` → `build_landing_pages.py` →
+  `seo_check.py` **PASS** → `rich_results_check.py` **PASS** →
+  `bash scripts/ci.sh` **ALL GATES GREEN (6/6)** with the test files removed
+  and the real PDF published (1 document page).

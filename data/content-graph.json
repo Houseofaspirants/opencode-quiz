@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 56,
-  "edges": 154,
+  "nodes": 60,
+  "edges": 163,
   "silos": 28,
   "clusters": 19,
   "pillars": 27
@@ -98,6 +98,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
+   "url": "/content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "current-affairs-preparation.html",
@@ -424,6 +436,30 @@
    "hub": "live-sessions.html"
   },
   {
+   "id": "magazine-current-affairs-july-2026",
+   "url": "/magazine-current-affairs-july-2026",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "magazine-current-affairs-july-2026.html",
+   "url": "/magazine-current-affairs-july-2026.html",
+   "type": "magazine",
+   "template": "monthly-magazine",
+   "title": "Current Affairs July 2026",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "magazine.html"
+  },
+  {
    "id": "magazine.html",
    "url": "/magazine.html",
    "type": "hub",
@@ -434,6 +470,18 @@
    "exams": [],
    "tags": [],
    "hub": "magazine.html"
+  },
+  {
+   "id": "mock.html",
+   "url": "/mock.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "news.html",
@@ -751,12 +799,6 @@
   },
   {
    "from": "archives.html",
-   "to": "articles.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -764,6 +806,12 @@
   {
    "from": "archives.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "magazine-current-affairs-july-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1068,8 +1116,62 @@
    "weight": 1
   },
   {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "magazine-current-affairs-july-2026",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july-2026.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
    "from": "magazine.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "magazine-current-affairs-july-2026.html",
    "rel": "contextual",
    "weight": 1
   },
