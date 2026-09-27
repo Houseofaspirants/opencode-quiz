@@ -243,8 +243,18 @@ def card_grid(items, cols=3):
 
 
 def facts_grid(pairs):
+    """Stat cards for a landing page.
+
+    A count of 0 is not information about the page - it is an empty product
+    shot ("0 Questions") on a page we just chose to publish. Drop zero-valued
+    COUNTS; labels that carry a real value (a parent subject, an estimated
+    time) always stay. The whole grid disappears when nothing is left."""
+    cards = [(label, value) for label, value in pairs
+             if str(value).strip() != "0"]
+    if not cards:
+        return ""
     out = ['        <div class="stats-grid mt-3" style="max-width:760px">']
-    for label, value in pairs:
+    for label, value in cards:
         out.append('          <div class="stat-card">')
         out.append(f'            <div class="stat-num">{esc(value)}</div>')
         out.append(f'            <div class="stat-label">{esc(label)}</div>')
