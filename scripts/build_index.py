@@ -728,6 +728,27 @@ if site.get("url"):
                     warn(f"articles.json: page file missing for {a.get('id', '?')} ({page})")
         except Exception as e:
             warn(f"articles.json unreadable: {e}")
+    # Study notes, magazine, strategy, live sessions, recruitment and PDFs -
+    # config-driven from data/content-manifest.json (written by
+    # scripts/build_content.py, which runs before this builder).
+    content_path = os.path.join(DATA_DIR, "content-manifest.json")
+    if os.path.exists(content_path):
+        try:
+            cm = read_json(content_path)
+            for hub in cm.get("hubs", []):
+                u, f = str(hub.get("url", "")), str(hub.get("file", ""))
+                if u.startswith(base) and os.path.exists(os.path.join(ROOT, f)):
+                    urls.append({"loc": u, "p": "0.8"})
+                else:
+                    warn(f"content-manifest: hub missing for {f or hub.get('collection', '?')}")
+            for item in cm.get("items", []):
+                u, f = str(item.get("url", "")), str(item.get("file", ""))
+                if u.startswith(base) and os.path.exists(os.path.join(ROOT, f)):
+                    urls.append({"loc": u, "p": "0.6"})
+                else:
+                    warn(f"content-manifest: page missing for {f or item.get('title', '?')}")
+        except Exception as e:
+            warn(f"content-manifest.json unreadable: {e}")
     for s in output_subjects:
         # Static landing page wins over the query-string variant; an entity the
         # generator has not built yet keeps the URL it has today.

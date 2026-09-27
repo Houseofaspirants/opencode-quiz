@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 # ci.sh — the Phase 0 gate. Run it locally (`bash scripts/ci.sh`) and in CI.
 #
-#   1. rebuild the manifest with both builders (byte-parity when Node exists)
-#   2. rebuild the SEO landing set
-#   3. run scripts/seo_check.py
-#   4. run scripts/rich_results_check.py
-#   5. prove the committed tree is exactly what those builders emit
+#   1. rebuild every Markdown content page (hubs, notes, magazine, sessions…)
+#   2. rebuild the manifest with both builders (byte-parity when Node exists)
+#   3. rebuild the SEO landing set
+#   4. run scripts/seo_check.py
+#   5. run scripts/rich_results_check.py
+#   6. prove the committed tree is exactly what those builders emit
 #
-# Step 5 is what makes "the gates passed" meaningful: a green seo_check on a
+# Step 6 is what makes "the gates passed" meaningful: a green seo_check on a
 # stale checkout proves nothing. Only the four files that legitimately carry a
 # run timestamp are normalised back to their committed value first, so a real
 # content drift still fails the diff.
@@ -18,11 +19,14 @@ cd "$(dirname "$0")/.."
 
 step() { printf '\n\033[1m· %s\033[0m\n' "$1"; }
 
-step "1/5 manifest — python3 scripts/build_index.py"
+step "1/6 content pages — python3 scripts/build_content.py"
+python3 scripts/build_content.py
+
+step "2/6 manifest — python3 scripts/build_index.py"
 python3 scripts/build_index.py
 
 if command -v node >/dev/null 2>&1; then
-  step "2/5 manifest parity — node scripts/build-index.mjs"
+  step "3/6 manifest parity — node scripts/build-index.mjs"
   cp data/index.json /tmp/hoa-index.py.json
   cp sitemap.xml /tmp/hoa-sitemap.py.xml
   node scripts/build-index.mjs
@@ -38,17 +42,17 @@ if command -v node >/dev/null 2>&1; then
   fi
   echo "  parity OK (both builders emit the same bytes)"
 else
-  step "2/5 manifest parity — skipped (node not installed; CI runs it)"
+  step "3/6 manifest parity — skipped (node not installed; CI runs it)"
 fi
 
-step "3/5 landing pages — python3 scripts/build_landing_pages.py"
+step "4/6 landing pages — python3 scripts/build_landing_pages.py"
 python3 scripts/build_landing_pages.py
 
-step "4/5 gates"
+step "5/6 gates"
 python3 scripts/seo_check.py
 python3 scripts/rich_results_check.py
 
-step "5/5 committed tree matches the builders"
+step "6/6 committed tree matches the builders"
 python3 - <<'PY'
 """Rewrite the four run-timestamped fields to their committed values."""
 import re

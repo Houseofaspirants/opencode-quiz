@@ -635,6 +635,34 @@ if (site.url) {
   } catch (e) {
     warn(`articles.json unreadable: ${e.message}`);
   }
+  // Study notes, magazine, strategy, live sessions, recruitment and PDFs -
+  // config-driven from data/content-manifest.json (scripts/build_content.py).
+  try {
+    const contentPath = path.join(DATA_DIR, "content-manifest.json");
+    if (fs.existsSync(contentPath)) {
+      const cm = JSON.parse(fs.readFileSync(contentPath, "utf8"));
+      for (const hub of cm.hubs || []) {
+        const u = String(hub.url || "");
+        const f = String(hub.file || "");
+        if (u.startsWith(base) && fs.existsSync(path.join(ROOT, f))) {
+          urls.push({ loc: u, p: "0.8" });
+        } else {
+          warn(`content-manifest: hub missing for ${f || hub.collection || "?"}`);
+        }
+      }
+      for (const item of cm.items || []) {
+        const u = String(item.url || "");
+        const f = String(item.file || "");
+        if (u.startsWith(base) && fs.existsSync(path.join(ROOT, f))) {
+          urls.push({ loc: u, p: "0.6" });
+        } else {
+          warn(`content-manifest: page missing for ${f || item.title || "?"}`);
+        }
+      }
+    }
+  } catch (e) {
+    warn(`content-manifest.json unreadable: ${e.message}`);
+  }
   for (const s of outputSubjects) {
     // Static landing page wins over the query-string variant; an entity the
     // generator has not built yet keeps the URL it has today.
