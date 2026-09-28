@@ -24,12 +24,20 @@ content/<collection>/<file>.pdf    ──►  <prefix>-<slug>.html        (PDF d
                                      ──►  the generated nav blocks in assets/js/core.js
 ```
 
+The PDF half of that diagram has one extra hop, and it is the only thing on
+this site that walks the folders looking for files:
+`scripts/build_content_manifest.ts` scans `content/**` first and records every
+PDF in the manifest's **`drops`** inventory; `build_content.py` then publishes
+from that inventory (see **PDF drops** below).
+
 ## Commands
 
 ```bash
-python3 scripts/build_content.py            # build pages + manifest + homepage
-python3 scripts/build_content.py --strict   # warnings fail the build
-bash scripts/ci.sh                          # full gate (build + checks + drift)
+node scripts/build_content_manifest.ts     # scan PDFs -> the `drops` inventory
+python3 scripts/build_content.py           # build pages + manifest + homepage
+python3 scripts/build_content.py --strict  # warnings fail the build
+node scripts/build_content_manifest.ts --check   # inventory == what is on disk
+bash scripts/ci.sh                         # full gate (build + checks + drift)
 ```
 
 Nothing is written to disk until every file validates, so a broken document
@@ -185,7 +193,23 @@ content/monthly-magazine/Current Affairs July 2026.pdf
     ──►  archives.html, sitemap.xml, the homepage feed, the nav
 ```
 
-Everything the site needs is derived from the file name:
+Everything the site needs is derived from the file name — and the deriving
+happens in two automatic steps:
+
+1. **`node scripts/build_content_manifest.ts`** (the scanner) walks
+   `content/**`, derives every field below from each file name, stamps its
+   dates once in `data/pdf-meta.json` and writes the results as **`drops`** in
+   `data/content-manifest.json`.
+2. **`python3 scripts/build_content.py`** (the publisher) reads that list and
+   never opens a folder itself. The manifest is the single inventory — for the
+   pages, the sitemap and the SEO gate — so a file the scanner has not seen
+   cannot half-publish.
+
+Adding, renaming and deleting a drop are all the same operation: change the
+file and run the two commands (or just `bash scripts/ci.sh`, which runs them
+in that order). No HTML, no JS, no manifest is edited by hand;
+`scripts/seo_check.py` fails the build if the inventory and the disk disagree,
+and `--check` fails it before the build if the committed manifest is stale.
 
 | field | from the file name |
 | --- | --- |
@@ -194,6 +218,16 @@ Everything the site needs is derived from the file name:
 | `description` | assembled from the title and the collection label, always inside the site's 140–160 character window |
 | `date` | `2026-08-12`, `July 2026`, `2026-07` in the name wins; otherwise the date the PDF first appeared, remembered in `data/pdf-meta.json` so a rebuild on another machine emits the same bytes |
 | `download URL` | the file itself, percent-encoded (`content/pdfs/Punjab%20GK%20Sheet.pdf`) |
+| `language` | `pa` when the name or its subfolder says Punjabi (or is written in Gurmukhi), otherwise `en` — recorded on the drop, since a PDF has no `.pa.md` twin to switch to |
+| `scripts` | `latin`, `gurmukhi`, `mixed` or `none` — what the file name is written in |
+| `size` / `sizeLabel` | the file's bytes and their label (`5.1 MB`), shown on the page and in the inventory |
+| `modified` | the day its bytes last changed, stamped once (never read from the clock on every run, which would look like content drift to `scripts/ci.sh`) |
+
+English, Punjabi and mixed file names all derive:
+`ਪੰਜਾਬੀ ਨੋਟ.pdf` → title *ਪੰਜਾਬੀ ਨੋਟ* (Gurmukhi keeps its shape in a title),
+slug `panjabi-not` (transliterated for the URL), `language: pa`. Both the
+scanner and the publisher carry the same derivation, and `scripts/ci.sh` diffs
+their answers over a fixture list so the two can never drift apart.
 
 The record then enters exactly the pipeline a Markdown document does: hub card,
 doc page with a Download button, archives, search corpus (with summary,
@@ -202,11 +236,11 @@ keywords and author), RSS, sitemap, content graph, homepage feed.
 Rules worth knowing:
 
 * **Subfolders count** — `content/monthly-magazine/english/CA August.pdf`
-  publishes exactly like a top-level drop: the builder walks the collection
-  folder (only hidden folders and `_drafts` are skipped). When two files in
-  sibling folders would take the same title, the folder names them —
-  *Current Affairs Sheet* / *Current Affairs Sheet (Punjabi)* — instead of
-  inventing a subject.
+  publishes exactly like a top-level drop: the scanner walks the collection
+  folder (only hidden folders and `_drafts` are skipped) and the subfolder's
+  name becomes the drop's `category`. When two files in sibling folders would
+  take the same title, the folder names them — *Current Affairs Sheet* /
+  *Current Affairs Sheet (Punjabi)* — instead of inventing a subject.
 * **`<name>.pdf` next to `<name>.md`** — the PDF becomes that document's
   download instead of a second page (one file, one URL).
 * **`content/pdfs/`** — the registry hub has no pages: the PDF is listed on
@@ -215,8 +249,10 @@ Rules worth knowing:
   `subject`, `post` or `official_url`. What the name does carry is used (a
   magazine PDF named `… July 2026.pdf` gets `month: 2026-07`), everything else
   is simply absent and the page leads with *PDF download* instead.
-* **English only** — there is no `.pa.md` twin to derive, so a dropped PDF
-  publishes at the site root and the language switch stays honest.
+* **One root URL, either language** — a dropped PDF has no `.pa.md` twin, so
+  every drop publishes at the site root and the language switch stays honest.
+  The file's own language still matters and is recorded on the drop
+  (`ਪੰਜਾਬੀ ਨੋਟ.pdf` → `language: pa`, `scripts: gurmukhi`).
 * **Drafts are not a PDF concept** — anything in a collection folder is
   published; `content/_drafts/` is still never read.
 

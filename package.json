@@ -6,6 +6,8 @@
   "description": "House of Aspirants - Quiz Portal for Punjab Police, PSSSB & Competitive Exam aspirants. Pure HTML/CSS/JS + JSON question bank. No backend required.",
   "scripts": {
     "build": "node scripts/build-index.mjs",
+    "content": "node scripts/build_content_manifest.ts",
+    "content:check": "node scripts/build_content_manifest.ts --check",
     "typecheck": "npx --yes --package typescript@5.6.3 tsc --noEmit -p jsconfig.json",
     "dev": "node scripts/build-index.mjs && npx --yes serve .",
     "start": "npx --yes serve ."

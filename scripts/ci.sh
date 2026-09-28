@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # ci.sh — the Phase 0 gate. Run it locally (`bash scripts/ci.sh`) and in CI.
 #
-#   1. rebuild every Markdown content page (hubs, notes, magazine, sessions…)
+#   1. scan every PDF drop (node), rebuild every content page from that
+#      inventory (python), then re-read it back and prove the scanner and the
+#      builder derive the same document from the same file name
 #   2. rebuild the manifest with both builders (byte-parity when Node exists)
 #   3. rebuild the SEO landing set
 #   4. type-check the browser scripts (tsc --noEmit over jsconfig.json)
@@ -20,8 +22,57 @@ cd "$(dirname "$0")/.."
 
 step() { printf '\n\033[1m· %s\033[0m\n' "$1"; }
 
-step "1/7 content pages — python3 scripts/build_content.py"
-python3 scripts/build_content.py
+step "1/7 content — node scripts/build_content_manifest.ts + python3 scripts/build_content.py"
+if ! command -v node >/dev/null 2>&1; then
+  echo "FAIL: node is required - scripts/build_content_manifest.ts writes the" >&2
+  echo "      PDF inventory (drops) that scripts/build_content.py publishes from." >&2
+  exit 1
+fi
+node scripts/build_content_manifest.ts   # content/** -> data/content-manifest.json
+python3 scripts/build_content.py         # publish from `drops`, never from a walk
+node scripts/build_content_manifest.ts --check   # committed inventory == disk
+
+# The scanner and the publisher must derive the identical document from one
+# file name, or a drop would be described one way and published another.
+step "1/7 derivation parity — TS scanner vs python builder"
+FIXTURES=(
+  "mobile phone"
+  "Mobile Phone"
+  "Current Affairs July 2026"
+  "current affairs july-2026"
+  "PPSC 2024 PYQ"
+  "CA August (english)"
+  "current affairs August(punjabi)"
+  "Sheet 2026-08-12"
+  "sept 2026"
+  "2026-07"
+  "notes of punjab history"
+  "ਮੋਬਾਈਲ ਫੋਨ"
+  "ਪੰਜਾਬੀ ਨੋਟ"
+  "ਪੰਜਾਬੀ ਟੈਸਟ 2026-09-15"
+  "ਸਿੰਘ"
+  "ਗੁਰਮੁਖੀ ਨੋਟ"
+  "ਪੰਜਾਬੀ (english)"
+  "SI-2 notes"
+  "  spaced  out  "
+  "!!!"
+)
+node scripts/build_content_manifest.ts --derive "${FIXTURES[@]}" > /tmp/hoa-derive-ts.json
+python3 - "${FIXTURES[@]}" <<'PY' > /tmp/hoa-derive-py.json
+import json, sys
+sys.path.insert(0, "scripts")
+import build_content as bc
+rows = [{"stem": s, "title": bc.pdf_title_from_name(s),
+         "slug": bc.pdf_slug_from_name(s), "date": bc.pdf_date_from_name(s)}
+        for s in sys.argv[1:]]
+print(json.dumps(rows, ensure_ascii=False, indent=2))
+PY
+if ! diff -u /tmp/hoa-derive-py.json /tmp/hoa-derive-ts.json; then
+  echo "FAIL: build_content.py and build_content_manifest.ts disagree on" >&2
+  echo "      title/slug/date for a file name (see the fixture diff above)." >&2
+  exit 1
+fi
+echo "  derivation parity OK (${#FIXTURES[@]} names, both implementations agree)"
 
 step "2/7 manifest — python3 scripts/build_index.py"
 python3 scripts/build_index.py

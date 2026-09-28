@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "domain": "https://houseofaspirants.in",
   "hubs": [
     {
@@ -24,7 +24,7 @@
       "url": "https://houseofaspirants.in/magazine",
       "title": "Current Affairs Monthly Magazine | House of Aspirants",
       "description": "Monthly current affairs magazine for Punjab exam aspirants - cover, PDF download, online reading, highlights, expected MCQs and a quiz for every issue.",
-      "count": 3
+      "count": 0
     },
     {
       "collection": "strategy",
@@ -96,7 +96,7 @@
       "url": "https://houseofaspirants.in/pdfs",
       "title": "Free PDFs for Punjab Exams | House of Aspirants",
       "description": "Free downloadable PDFs for Punjab exam preparation - notes, question sets and revision sheets, each with a subject, exam tags and a direct download button.",
-      "count": 0
+      "count": 1
     },
     {
       "collection": "personal-notes",
@@ -104,7 +104,7 @@
       "url": "https://houseofaspirants.in/personal-notes",
       "title": "Personal Study Notes | House of Aspirants",
       "description": "Personal study notes from House of Aspirants - what changed in the method, what worked, what failed and the habits worth repeating before your next attempt.",
-      "count": 0
+      "count": 1
     },
     {
       "collection": "subject-guides",
@@ -169,11 +169,11 @@
   ],
   "items": [
     {
-      "collection": "magazine",
-      "file": "magazine-ca-august-english.html",
-      "url": "https://houseofaspirants.in/magazine-ca-august-english",
-      "title": "CA August English",
-      "description": "Download CA August English as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free to download, print and keep for offline revision.",
+      "collection": "personal-notes",
+      "file": "pnote-mobile-phone.html",
+      "url": "https://houseofaspirants.in/pnote-mobile-phone",
+      "title": "Mobile Phone (Personal Notes)",
+      "description": "Download Mobile Phone (Personal Notes) as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.",
       "published": "2026-09-28",
       "updated": "2026-09-28",
       "subjects": [],
@@ -182,53 +182,56 @@
       "readingMinutes": 1,
       "lang": "en",
       "featured": false,
-      "path": "content/monthly-magazine/english/CA August (english).pdf",
+      "path": "content/personal-notes/mobile phone.pdf",
       "category": "",
-      "pdf": "content/monthly-magazine/english/CA August (english).pdf"
-    },
-    {
-      "collection": "magazine",
-      "file": "magazine-current-affairs-august-punjabi.html",
-      "url": "https://houseofaspirants.in/magazine-current-affairs-august-punjabi",
-      "title": "Current Affairs August Punjabi",
-      "description": "Download Current Affairs August Punjabi as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.",
-      "published": "2026-09-28",
-      "updated": "2026-09-28",
-      "subjects": [],
-      "tags": [],
-      "exams": [],
-      "readingMinutes": 1,
-      "lang": "en",
-      "featured": false,
-      "path": "content/monthly-magazine/punjabi/current affairs August(punjabi).pdf",
-      "category": "",
-      "pdf": "content/monthly-magazine/punjabi/current affairs August(punjabi).pdf"
-    },
-    {
-      "collection": "magazine",
-      "file": "magazine-current-affairs-july-2026.html",
-      "url": "https://houseofaspirants.in/magazine-current-affairs-july-2026",
-      "title": "Current Affairs July 2026",
-      "description": "Download Current Affairs July 2026 as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.",
-      "published": "2026-07-01",
-      "updated": "2026-07-01",
-      "subjects": [],
-      "tags": [],
-      "exams": [],
-      "readingMinutes": 1,
-      "lang": "en",
-      "featured": false,
-      "path": "content/monthly-magazine/Current Affairs July 2026.pdf",
-      "category": "",
-      "month": "2026-07",
-      "pdf": "content/monthly-magazine/Current Affairs July 2026.pdf"
+      "pdf": "content/personal-notes/mobile phone.pdf"
     }
   ],
-  "pdfs": [],
+  "pdfs": [
+    {
+      "title": "Mobile Phone",
+      "description": "Download Mobile Phone as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free PDFs material, filed straight from the file name.",
+      "path": "content/pdfs/mobile phone.pdf",
+      "subjects": [],
+      "exams": [],
+      "lang": "en",
+      "url": "https://houseofaspirants.in/pdfs"
+    }
+  ],
+  "drops": [
+    {
+      "path": "content/pdfs/mobile phone.pdf",
+      "filename": "mobile phone.pdf",
+      "folder": "pdfs",
+      "category": "",
+      "title": "Mobile Phone",
+      "slug": "mobile-phone",
+      "language": "en",
+      "scripts": "latin",
+      "size": 5329231,
+      "sizeLabel": "5.1 MB",
+      "published": "2026-09-28",
+      "modified": "2026-09-28"
+    },
+    {
+      "path": "content/personal-notes/mobile phone.pdf",
+      "filename": "mobile phone.pdf",
+      "folder": "personal-notes",
+      "category": "",
+      "title": "Mobile Phone",
+      "slug": "mobile-phone",
+      "language": "en",
+      "scripts": "latin",
+      "size": 5329231,
+      "sizeLabel": "5.1 MB",
+      "published": "2026-09-28",
+      "modified": "2026-09-28"
+    }
+  ],
   "counts": {
     "notes": 0,
     "current-affairs": 0,
-    "magazine": 3,
+    "magazine": 0,
     "strategy": 0,
     "sessions": 0,
     "recruitment": 0,
@@ -237,8 +240,8 @@
     "announcements": 0,
     "expected-mcqs": 0,
     "previous-year-questions": 0,
-    "pdfs": 0,
-    "personal-notes": 0,
+    "pdfs": 1,
+    "personal-notes": 1,
     "subject-guides": 0,
     "topic-guides": 0,
     "daily-practice": 0,

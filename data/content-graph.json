@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 66,
-  "edges": 189,
+  "nodes": 61,
+  "edges": 165,
   "silos": 28,
-  "clusters": 23,
+  "clusters": 24,
   "pillars": 27
  },
  "nodes": [
@@ -100,8 +100,8 @@
    "hub": "book-recommendations.html"
   },
   {
-   "id": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
-   "url": "/content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
+   "id": "content/pdfs/mobile%20phone.pdf",
+   "url": "/content/pdfs/mobile%20phone.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -112,20 +112,8 @@
    "hub": ""
   },
   {
-   "id": "content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
-   "url": "/content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
-   "url": "/content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
+   "id": "content/personal-notes/mobile%20phone.pdf",
+   "url": "/content/personal-notes/mobile%20phone.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -460,78 +448,6 @@
    "hub": "live-sessions.html"
   },
   {
-   "id": "magazine-ca-august-english",
-   "url": "/magazine-ca-august-english",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "magazine-ca-august-english.html",
-   "url": "/magazine-ca-august-english.html",
-   "type": "magazine",
-   "template": "monthly-magazine",
-   "title": "CA August English",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "magazine.html"
-  },
-  {
-   "id": "magazine-current-affairs-august-punjabi",
-   "url": "/magazine-current-affairs-august-punjabi",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "magazine-current-affairs-august-punjabi.html",
-   "url": "/magazine-current-affairs-august-punjabi.html",
-   "type": "magazine",
-   "template": "monthly-magazine",
-   "title": "Current Affairs August Punjabi",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "magazine.html"
-  },
-  {
-   "id": "magazine-current-affairs-july-2026",
-   "url": "/magazine-current-affairs-july-2026",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "magazine-current-affairs-july-2026.html",
-   "url": "/magazine-current-affairs-july-2026.html",
-   "type": "magazine",
-   "template": "monthly-magazine",
-   "title": "Current Affairs July 2026",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "magazine.html"
-  },
-  {
    "id": "magazine.html",
    "url": "/magazine.html",
    "type": "hub",
@@ -585,6 +501,30 @@
    "type": "hub",
    "template": "",
    "title": "Personal Study Notes | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "personal-notes.html"
+  },
+  {
+   "id": "pnote-mobile-phone",
+   "url": "/pnote-mobile-phone",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pnote-mobile-phone.html",
+   "url": "/pnote-mobile-phone.html",
+   "type": "personal-notes",
+   "template": "personal-note",
+   "title": "Mobile Phone (Personal Notes)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -883,19 +823,7 @@
   },
   {
    "from": "archives.html",
-   "to": "magazine-ca-august-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "magazine-current-affairs-august-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "magazine-current-affairs-july-2026.html",
+   "to": "pnote-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1200,206 +1128,8 @@
    "weight": 1
   },
   {
-   "from": "magazine-ca-august-english.html",
-   "to": "content/monthly-magazine/english/CA%20August%20%28english%29.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "magazine-ca-august-english",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "magazine-current-affairs-august-punjabi.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "magazine-ca-august-english.html",
-   "to": "magazine-current-affairs-july-2026.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "content/monthly-magazine/punjabi/current%20affairs%20August%28punjabi%29.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "magazine-current-affairs-august-punjabi",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "magazine-ca-august-english.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-august-punjabi.html",
-   "to": "magazine-current-affairs-july-2026.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "content/monthly-magazine/Current%20Affairs%20July%202026.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "magazine-current-affairs-july-2026",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "magazine-ca-august-english.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "magazine-current-affairs-july-2026.html",
-   "to": "magazine-current-affairs-august-punjabi.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
    "from": "magazine.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine.html",
-   "to": "magazine-ca-august-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine.html",
-   "to": "magazine-current-affairs-august-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "magazine.html",
-   "to": "magazine-current-affairs-july-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1483,6 +1213,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/pdfs/mobile%20phone.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -1519,6 +1255,12 @@
   },
   {
    "from": "personal-notes.html",
+   "to": "pnote-mobile-phone.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "personal-notes.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
@@ -1539,6 +1281,60 @@
    "from": "personal-notes.html",
    "to": "study-notes.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "content/personal-notes/mobile%20phone.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "personal-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "pnote-mobile-phone",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
    "weight": 1
   },
   {
@@ -2208,6 +2004,7 @@
     "category-gk-others.html",
     "category-gk-polity.html",
     "category-gk-punjab-gk.html",
+    "topic-gk-five-year-plans-20-mcqs-.html",
     "topic-gk-sikhism-part1-20-mcqs.html",
     "topic-gk-sikhism-part2-20-mcqs.html",
     "topic-gk-sikhism-part3-20-mcqs.html",

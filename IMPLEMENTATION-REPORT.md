@@ -846,7 +846,7 @@ with a Download button, `data/content-manifest.json`, search corpus
 
 **Determinism.** `data/pdf-meta.json` remembers `{hash, published, updated}`
 per file, so a rebuilt tree on another machine (or in CI) is byte-identical —
-the promise `scripts/ci.sh` step 6 depends on. A dropped PDF without a date
+the promise `scripts/ci.sh` step 7 depends on. A dropped PDF without a date
 in its name gets today's date *once*, not on every run.
 
 **Verification (local)**
@@ -1012,3 +1012,76 @@ won.
   current affairs 4, computer 1; search returns 4 Sikhism quizzes, not 8.
 * Sitemap 124 → 132 URLs: eight new clean canonicals
   (`quiz-gk-sikhism-part1…4`, `topic-gk-sikhism-part1…4`), no query strings.
+
+## 42. PDF inventory on the manifest — the scanner reads, the publisher writes
+
+**Problem.** §39 made a PDF publishable, but *discovery* still lived inside
+`build_content.py`: the publisher opened every collection folder itself
+(`cdir.rglob`) and decided what was there as a side effect of rendering. The
+requirement moved one step further — the site must read **only** a generated
+inventory: drop a file into a supported `content/` folder and its metadata
+(filename, title, slug, category, size, modified date) is derived and
+published; delete or rename it and the pages follow — with no HTML, no JS and
+no hand-edited manifest anywhere.
+
+**Design.** Discovery became its own dependency-free TypeScript builder
+(`type: module`, plain `node`, type-stripped — no bundler, no transpile, no
+install), and the publisher became a pure reader:
+
+| step | command | reads | writes |
+|---|---|---|---|
+| 1. scan | `node scripts/build_content_manifest.ts` | `content/**` (every `.pdf`; hidden folders, `_drafts`, `README*` skipped) + `data/pdf-meta.json` | `drops[]` in `data/content-manifest.json`, stamped `data/pdf-meta.json` |
+| 2. publish | `python3 scripts/build_content.py` | `drops[]` + the Markdown | every page, sitemap, search, feed, and the same manifest (now `version: 3`, `drops` carried through verbatim) |
+| 3. verify | `… --check` and `scripts/seo_check.py` | manifest vs disk | — |
+
+One record per PDF — `path, filename, folder, category, title, slug,
+language, scripts, size, sizeLabel, published, modified` — and:
+
+* **The publisher never walks a folder.** `drops` is the only list, so a file
+  the scanner has not seen cannot half-publish, and a `drops` entry pointing at
+  nothing stops the build with the command that fixes it.
+* **Derivation parity is a gate, not a hope.** The same helpers exist in both
+  languages; `ci.sh` step 1 feeds a 20-name fixture list (English, Punjabi,
+  mixed, dated, acronym, punctuation-only, malformed dates) to `--derive` in
+  TypeScript and to Python, and diffs the JSON — before any page renders.
+* **Gurmukhi, in both implementations.** The word-split class gained
+  `\u0A00-\u0A7F` (byte-identical for Latin names), a Gurmukhi word keeps its
+  own shape in a title, and a transliteration table — plus the rule that a
+  nasal carries its syllable's inherent vowel (`ਪੰ` = p + a + n) — turns
+  `ਪੰਜਾਬੀ ਨੋਟ.pdf` into the slug `panjabi-not`, where Python used to return an
+  empty slug and fall back to a numbered placeholder. `asciiFold()` runs before
+  every `\b` regex so Python's Unicode-aware and JavaScript's ASCII boundary
+  semantics mean the same thing.
+* **Language is inventory data, not a route.** `language` (`en`/`pa`) and
+  `scripts` (`latin`/`gurmukhi`/`mixed`/`none`) describe the file for the
+  inventory and its gates; the page still publishes at the root as §39 designed
+  it, so no design, routing or language-switch change entered the site —
+  backend architecture only.
+* **Dates stay stamped, never measured.** `published`/`modified` are written
+  once per content hash; an mtime in a committed file would fail the tree gate
+  on every fresh checkout.
+* **Unsupported folders fail loudly.** A drop outside the `HUBS` table produces
+  an actionable error and nothing is written; `seo_check.py` re-checks the
+  inventory (field shape, slug and date patterns, size label, file on disk,
+  every drop published), so a hand-edited manifest cannot pass either.
+
+**Verification (local)**
+
+* Stale inventory: drop a file, run `--check` → exit 1 with
+  `+ content/notes/… (new on disk, not in the manifest)` and the command to fix.
+* Punjabi drop → `note-panjabi-taist-2026-09-15.html`,
+  `<title>ਪੰਜਾਬੀ ਟੈਸਟ 2026-09-15</title>`, slug `panjabi-taist-2026-09-15`,
+  `language: pa`, `scripts: gurmukhi`, `published` `2026-09-15` taken from the
+  name, and listed in the sitemap (133 URLs while the drop existed).
+* Rename (the transliteration fix changed the slug) → the orphan sweep removed
+  the old page: `⚠ stale content pages removed: note-pnjabi-taist-….html`.
+* Delete → `2 file(s) described`, the page and the manifest drop both gone.
+* Unsupported folder → `❌ content/random-folder/stray.pdf: … is not a
+  registered collection - add it to HUBS …` and `content build FAILED - no
+  files were written`.
+* Gates: `node scripts/build_content_manifest.ts` → `build_content.py` →
+  `--check` → derivation parity (20 names) → `build_index.py` → Python↔Node
+  manifest parity → type check → `build_landing_pages.py` → `seo_check`
+  **PASS** (note: *content: 2 PDF drop(s) described by the scanner's inventory
+  and published*) → `rich_results_check` **PASS** → committed tree matches the
+  builders.

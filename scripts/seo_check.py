@@ -657,6 +657,59 @@ if CONTENT_MANIFEST.exists():
             want = f"{DOMAIN}/{f[:-5]}"
             if want not in locs:
                 errors.append(f"sitemap: missing content page {want}")
+
+        # --- PDF drops: the scanner's inventory is the whole contract --------
+        # scripts/build_content_manifest.ts describes every PDF under content/;
+        # this gate proves the inventory matches the disk, is well formed, and
+        # that every file it lists actually reached the published site.
+        drops = cm.get("drops")
+        if cm.get("version", 0) < 3 or not isinstance(drops, list):
+            errors.append(f"content-manifest: no `drops` inventory (version "
+                          f"{cm.get('version')}) - run node "
+                          f"scripts/build_content_manifest.ts")
+            drops = []
+        on_disk = {p.get("path", "") for p in cm.get("pdfs", [])}
+        on_disk.update(i.get("path", "") for i in items_cm)
+        on_disk.update(i.get("pdf", "") for i in items_cm)
+        on_disk.discard("")
+        for d in drops:
+            rel = d.get("path") or d.get("filename") or "?"
+            absent = [k for k in ("path", "filename", "folder", "category",
+                                  "title", "slug", "language", "scripts", "size",
+                                  "sizeLabel", "published", "modified")
+                      if k not in d]
+            if absent:
+                errors.append(f"content-manifest drop {rel}: missing field(s) "
+                              f"{', '.join(absent)}")
+                continue
+            parts = Path(d["path"]).parts
+            if not d["path"].startswith("content/") or len(parts) < 3:
+                errors.append(f"content-manifest drop {rel}: must live under "
+                              f"content/<collection>/")
+                continue
+            if not (ROOT / d["path"]).is_file():
+                errors.append(f"content-manifest drop {rel}: no such file on disk")
+            if d["filename"] != parts[-1] or d["folder"] != parts[1]:
+                errors.append(f"{rel}: filename/folder fields disagree with its path")
+            if d["language"] not in ("en", "pa"):
+                errors.append(f"{rel}: language {d['language']!r} must be en or pa")
+            if d["scripts"] not in ("latin", "gurmukhi", "mixed", "none"):
+                errors.append(f"{rel}: scripts {d['scripts']!r} is not a known set")
+            if d["slug"] and not re.fullmatch(r"[a-z0-9][a-z0-9-]*", d["slug"]):
+                errors.append(f"{rel}: slug {d['slug']!r} must be lowercase URL letters")
+            for key in ("published", "modified"):
+                if d[key] and not re.fullmatch(r"20\d{2}-\d{2}-\d{2}", d[key]):
+                    errors.append(f"{rel}: {key} {d[key]!r} is not an ISO date")
+            if not isinstance(d["size"], int) or d["size"] <= 0:
+                errors.append(f"{rel}: size {d['size']!r} is not a byte count")
+            elif not re.fullmatch(r"(\d+ KB|\d+\.\d MB)", d["sizeLabel"]):
+                errors.append(f"{rel}: sizeLabel {d['sizeLabel']!r} is malformed")
+            if d["path"] not in on_disk:
+                errors.append(f"{rel}: dropped into content/{d['folder']}/ but "
+                              f"never published - rerun scripts/build_content.py")
+        if drops:
+            notes.append(f"content: {len(drops)} PDF drop(s) described by the "
+                         f"scanner's inventory and published")
         if not hubs_cm:
             errors.append("content-manifest: no hubs registered")
         notes.append(f"content: {len(hubs_cm)} hubs + {len(items_cm)} document "

@@ -1929,6 +1929,90 @@ PDF_ACRONYMS = {"ppsc", "psssb", "ssb", "pcs", "upsc", "ias", "ips", "ssc",
                 "cds", "afcat", "si", "asi", "po", "gk", "gs", "mcq", "mcqs",
                 "pyq", "pyqs", "pdf", "ca", "pstet", "ptet", "ctet", "reet",
                 "htet", "gb", "ukpsc", "hppsc", "jpse"}
+# Gurmukhi -> Latin, so a Punjabi file name still earns a readable URL.
+# ASCII passes through untouched: every name this site has ever had derives
+# exactly as it did before this table existed. scripts/build_content_manifest.ts
+# carries the same table and scripts/ci.sh diffs both answers over a fixture
+# list, so the two can never drift apart.
+GURMUKHI_COMBOS = {"\u0A38\u0A3C": "sh"}     # ਸ + nukta, the sequence spelling ਸ਼
+GURMUKHI = {
+    # independent vowels
+    "\u0A05": "a", "\u0A06": "a", "\u0A07": "i", "\u0A08": "i",
+    "\u0A09": "u", "\u0A0A": "u", "\u0A0F": "e", "\u0A10": "ai",
+    "\u0A13": "o", "\u0A14": "au",
+    # dependent vowel signs (long and short map to one Latin vowel each)
+    "\u0A3E": "a", "\u0A3F": "i", "\u0A40": "i", "\u0A41": "u",
+    "\u0A42": "u", "\u0A47": "e", "\u0A48": "ai", "\u0A4B": "o",
+    "\u0A4C": "au",
+    # signs: virama implies the half form, tippi and bindi nasalise
+    "\u0A4D": "", "\u0A02": "n", "\u0A03": "", "\u0A3C": "", "\u0A70": "n",
+    "\u0A71": "", "\u0A74": "",
+    # consonants
+    "\u0A15": "k", "\u0A16": "kh", "\u0A17": "g", "\u0A18": "gh",
+    "\u0A19": "ng", "\u0A1A": "ch", "\u0A1B": "chh", "\u0A1C": "j",
+    "\u0A1D": "jh", "\u0A1E": "nj", "\u0A1F": "t", "\u0A20": "th",
+    "\u0A21": "d", "\u0A22": "dh", "\u0A23": "n", "\u0A24": "t",
+    "\u0A25": "th", "\u0A26": "d", "\u0A27": "dh", "\u0A28": "n",
+    "\u0A2A": "p", "\u0A2B": "ph", "\u0A2C": "b", "\u0A2D": "bh",
+    "\u0A2E": "m", "\u0A2F": "y", "\u0A30": "r", "\u0A32": "l",
+    "\u0A33": "l", "\u0A35": "v", "\u0A36": "sh", "\u0A38": "s",
+    "\u0A39": "h",
+    # letters written with a nukta
+    "\u0A59": "kh", "\u0A5A": "gh", "\u0A5B": "z", "\u0A5C": "r",
+    "\u0A5E": "f",
+    # digits
+    "\u0A66": "0", "\u0A67": "1", "\u0A68": "2", "\u0A69": "3",
+    "\u0A6A": "4", "\u0A6B": "5", "\u0A6C": "6", "\u0A6D": "7",
+    "\u0A6E": "8", "\u0A6F": "9",
+}
+
+
+GURMUKHI_CONSONANT = re.compile(r"[\u0A15-\u0A39\u0A59-\u0A5E]")   # letters only
+GURMUKHI_NASAL = {"\u0A02", "\u0A70"}          # bindi, tippi
+
+
+def translit_gurmukhi(text):
+    """Gurmukhi letters to Latin, one code point at a time.
+
+    ASCII is returned unchanged, which is what keeps this a pure addition:
+    `mobile phone.pdf` still derives `mobile phone` -> `mobile-phone`.
+
+    A nasal carries its syllable's inherent vowel, so `ਪੰਜਾਬੀ ਟੈਸਟ` becomes
+    `panjabi-taist` and never `pnjabi-taist` - the same rule
+    scripts/build_content_manifest.ts applies, which scripts/ci.sh diffs."""
+    chars = list(str(text))
+    out, i, pending = [], 0, False
+    while i < len(chars):
+        c = chars[i]
+        two = c + (chars[i + 1] if i + 1 < len(chars) else "")
+        if two in GURMUKHI_COMBOS:
+            out.append(GURMUKHI_COMBOS[two])
+            pending = True
+            i += 2
+            continue
+        mapped = GURMUKHI.get(c, c)
+        if c in GURMUKHI_NASAL:
+            if pending:
+                out.append("a")          # the syllable's inherent vowel
+            out.append("n")
+            pending = False
+        elif GURMUKHI_CONSONANT.match(c):
+            out.append(mapped)
+            pending = True
+        else:
+            out.append(mapped)
+            pending = False
+        i += 1
+    return "".join(out)
+
+
+def ascii_fold(text):
+    """Non-ASCII runs become one space.
+
+    Python's `\\b` is Unicode-aware and JavaScript's is not, so every boundary
+    regex below runs over this folded copy in BOTH builders and means the same
+    thing. For the ASCII file names the site has always had, it is a no-op."""
+    return re.sub(r"[^\x00-\x7F]+", " ", str(text))
 
 
 def clip(text, limit=60):
@@ -1954,7 +2038,7 @@ def pdf_date_from_name(stem):
     A date the file cannot prove (one still in the future) is ignored rather
     than published."""
     today = datetime.date.today().isoformat()
-    text = str(stem).lower()
+    text = ascii_fold(stem).lower()
     found = ""
     m = re.search(r"\b(20\d{2})-(\d{1,2})-(\d{1,2})\b", text)
     if m:
@@ -1992,14 +2076,16 @@ def pdf_title_from_name(stem):
     # A date written into the name ("Sheet 2026-08-12") is part of the
     # document, not a word to be re-spaced: it is parked while the rest of the
     # name is title cased.
-    iso = re.search(r"\b20\d{2}-\d{1,2}(?:-\d{1,2})?\b", stem)
+    iso = re.search(r"\b20\d{2}-\d{1,2}(?:-\d{1,2})?\b", ascii_fold(stem))
     guard = iso.group(0) if iso else ""
     if guard:
         stem = stem.replace(guard, "Dateday", 1)
-    words = [w for w in re.split(r"[^A-Za-z0-9]+", stem) if w]
+    words = [w for w in re.split(r"[^A-Za-z0-9\u0A00-\u0A7F]+", stem) if w]
     out = []
     for w in words:
-        if w.isdigit() or any(c.isdigit() for c in w):
+        if not w.isascii():
+            out.append(w)          # Gurmukhi keeps its own shape
+        elif w.isdigit() or any(c.isdigit() for c in w):
             out.append(w)          # 2026, SI-2, v3 keep their shape
         elif w.lower() in PDF_ACRONYMS:
             out.append(w.upper())  # ppsc -> PPSC, ca -> CA, pyq -> PYQ
@@ -2022,8 +2108,12 @@ def pdf_title_from_name(stem):
 
 
 def pdf_slug_from_name(stem):
-    """Filename -> the slug rule every other document follows, or ''."""
-    s = re.sub(r"-{2,}", "-", re.sub(r"[^a-z0-9]+", "-", str(stem).lower())) \
+    """Filename -> the slug rule every other document follows, or ''.
+
+    Punjabi and mixed names are transliterated first, so `ਪੰਜਾਬੀ ਨੋਟ.pdf`
+    earns `panjabi-not` instead of falling back to a numbered placeholder."""
+    s = re.sub(r"-{2,}", "-",
+               re.sub(r"[^a-z0-9]+", "-", translit_gurmukhi(stem).lower())) \
         .strip("-")[:64].rstrip("-")
     return s if re.fullmatch(r"[a-z0-9][a-z0-9-]*", s) else ""
 
@@ -2113,6 +2203,56 @@ def load_pdf_sidecar():
     except Exception as e:
         warn(f"data/pdf-meta.json unreadable ({e}) - regenerating it")
         return {"version": 1, "files": {}}
+
+
+def load_drops():
+    """The PDF inventory scripts/build_content_manifest.ts wrote.
+
+    This builder reads that list and never walks content/ itself: the manifest
+    is the single list, exactly as data/index.json is for quizzes. A missing or
+    stale inventory stops the build with instructions rather than publishing a
+    folder nobody scanned."""
+    if not MANIFEST.exists():
+        err("data/content-manifest.json is missing - run node "
+            "scripts/build_content_manifest.ts (the PDF scanner)")
+        return []
+    try:
+        data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    except Exception as e:
+        err(f"data/content-manifest.json unreadable ({e}) - run node "
+            f"scripts/build_content_manifest.ts")
+        return []
+    drops = data.get("drops")
+    if not isinstance(drops, list):
+        err("data/content-manifest.json carries no `drops` inventory - run "
+            "node scripts/build_content_manifest.ts (the PDF scanner)")
+        return []
+    return drops
+
+
+def check_drop(drop, path, cfg):
+    """The scanner and this builder must describe the same document.
+
+    scripts/build_content_manifest.ts derives the title, slug, folder and
+    category from the file name; this script derives them again for the page it
+    renders. A disagreement means the manifest is out of date - and a stale
+    manifest is a silently wrong page - so it fails the build with the exact
+    command that fixes it."""
+    where = str(path.relative_to(ROOT))
+    rel = path.relative_to(CONTENT / cfg["dir"])
+    parent = rel.parts[-2] if len(rel.parts) > 1 else ""
+    stem = path.stem
+    for key, want in (("path", where), ("filename", path.name),
+                      ("folder", cfg["dir"]), ("category", parent),
+                      ("title", pdf_title_from_name(stem)),
+                      ("slug", pdf_slug_from_name(stem))):
+        have = drop.get(key)
+        have = "" if have is None else have
+        if str(have) != want:
+            err(f"{where}: content manifest says {key}={have!r}, this build "
+                f"derives {want!r} - run node scripts/build_content_manifest.ts")
+            return False
+    return True
 
 
 def remember_pdf_dates(path, old_files, new_files, fname_date):
@@ -4988,21 +5128,41 @@ def main():
                 continue
             (punjabi if is_pa else all_records)[coll].append(rec)
 
-        # --- PDF drops -------------------------------------------------------
+    # --- PDF drops: data/content-manifest.json is the scanner's view ---------
+    # scripts/build_content_manifest.ts walks content/**, derives every file's
+    # metadata from its name and writes `drops`; this builder publishes from
+    # that list. Drop -> manifest -> page, and nothing in between is manual.
+    drops = load_drops()
+    dir_coll = {cfg["dir"]: coll for coll, cfg in HUBS.items()}
+    drops_by_coll = {c: [] for c in HUBS}
+    for drop in drops:
+        folder_name = str(drop.get("folder") or "")
+        coll = dir_coll.get(folder_name)
+        if coll is None:
+            err(f"{drop.get('path')}: content/{folder_name}/ is not a "
+                f"registered collection - add it to HUBS in "
+                f"scripts/build_content.py before dropping files there")
+            continue
+        drops_by_coll[coll].append(drop)
+
+    for coll, cfg in HUBS.items():
         # A PDF alone is enough: the file name gives the document its title,
         # slug, description, date and download URL, and the record below lands
         # in exactly the same pipeline a Markdown document does.
         taken = {r["slug"] for r in all_records[coll]}
         # Subfolders publish too: `content/history/chapter 1/part 1.pdf` is a
         # drop like any other - only hidden folders and `_drafts` are skipped.
-        for path in sorted(p for p in cdir.rglob("*") if p.is_file()
-                           and p.suffix.lower() == ".pdf"
-                           and not p.name.lower().startswith("readme")
-                           and not any(part.startswith(".") or part == "_drafts"
-                                       for part in path.relative_to(cdir).parts[:-1])):
+        for drop in drops_by_coll[coll]:
+            path = ROOT / str(drop.get("path") or "")
+            if not path.is_file():
+                err(f"{drop.get('path')}: listed in data/content-manifest.json "
+                    f"but missing from disk - run node "
+                    f"scripts/build_content_manifest.ts")
+                continue
+            if not check_drop(drop, path, cfg):
+                continue
             where = str(path.relative_to(ROOT))
-            parts = path.relative_to(cdir).parts
-            folder = parts[-2] if len(parts) > 1 else ""
+            folder = str(drop.get("category") or "")
             slug = pdf_slug_from_name(path.stem)
             # `Quant Shortcuts.pdf` next to `quant-shortcuts.md` is that
             # document's download, not a second page: one file, one URL.
@@ -5025,6 +5185,13 @@ def main():
             fname_date = pdf_date_from_name(path.stem)
             published, updated = remember_pdf_dates(path, pdf_old, pdf_files,
                                                     fname_date)
+            if (str(drop.get("published") or "") != published
+                    or str(drop.get("modified") or "") != updated):
+                err(f"{where}: content manifest dates "
+                    f"{drop.get('published')!r}/{drop.get('modified')!r} but "
+                    f"the sidecar stamped {published!r}/{updated!r} - run node "
+                    f"scripts/build_content_manifest.ts")
+                continue
             rec = build_pdf_record(coll, cfg, path, slug, published, updated,
                                    fname_date, index, folder)
             if rec is None:
@@ -5045,6 +5212,13 @@ def main():
     dedupe_pdf_titles(all_records)
     if pdf_drops:
         info(f"pdf drops: {pdf_drops} PDF(s) published from their file names")
+    # One stamp per PDF that still exists. A file this run did not publish - a
+    # download attached to a host page, or a folder that is not a registered
+    # collection - keeps its date instead of being dropped, because the scanner
+    # stamps every file on disk and the two views must not fight each other.
+    for rel, entry in pdf_old.items():
+        if rel not in pdf_files and (ROOT / rel).is_file():
+            pdf_files[rel] = entry
     if pdf_files != pdf_old:
         PDF_META.write_text(
             json.dumps({"version": 1,
@@ -5264,8 +5438,11 @@ def main():
                         [r for r in rendered if r["lang"] == "en"])
 
     # ---- manifest ---------------------------------------------------------
+    # `drops` is the scanner's inventory, carried through byte for byte: the
+    # manifest is the single list the site, the sitemap and the SEO gate read,
+    # so nothing here re-derives what scripts/build_content_manifest.ts found.
     manifest = {
-        "version": 2,
+        "version": 3,
         "domain": DOMAIN,
         "hubs": hubs_out,
         "pages": [{
@@ -5276,13 +5453,15 @@ def main():
         }] + phase4_manifest,
         "items": sorted(manifest_items, key=lambda r: r["file"]),
         "pdfs": pdfs,
+        "drops": drops,
         "counts": {c: len(all_records[c]) + len(punjabi[c]) for c in HUBS},
         "generatedBy": "scripts/build_content.py",
     }
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
                         encoding="utf-8")
     info(f"manifest: {len(hubs_out)} hubs, {len(manifest_items)} document page(s), "
-         f"{len(pdfs)} pdf record(s) -> data/content-manifest.json")
+         f"{len(pdfs)} pdf record(s), {len(drops)} pdf drop(s) -> "
+         f"data/content-manifest.json")
 
     # ---- report -----------------------------------------------------------
     for w in warnings:

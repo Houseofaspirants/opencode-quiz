@@ -800,9 +800,10 @@ Markdown under **`content/`**. One command turns it into static HTML with its
 own metadata, schema, breadcrumbs, TOC and internal links:
 
 ```bash
-python3 scripts/build_content.py          # build once
+node scripts/build_content_manifest.ts # scan the PDFs in content/ first
+python3 scripts/build_content.py       # build once (Markdown + the PDF inventory)
 python3 scripts/build_content.py --strict # build + fail on any warning
-bash scripts/ci.sh                        # content → manifest → landing → gates
+bash scripts/ci.sh                     # scan → content → manifest → landing → gates
 ```
 
 ### What lives where
@@ -829,24 +830,34 @@ bash scripts/ci.sh                        # content → manifest → landing →
 
 ### Drop a PDF, get a page
 
-A PDF in any collection folder publishes from its file name. The builder
-derives the title, slug, description, date and download URL, then runs the
-record through exactly the pipeline a Markdown document uses:
+A PDF in any collection folder publishes from its file name. The scanner
+derives the metadata and the builder runs the record through exactly the
+pipeline a Markdown document uses:
 
 ```bash
 cp "Current Affairs July 2026.pdf" content/monthly-magazine/
+node scripts/build_content_manifest.ts
+#  ℹ pdf drops: 1 file(s) described -> data/content-manifest.json
 python3 scripts/build_content.py
 #  ℹ content/monthly-magazine/Current Affairs July 2026.pdf -> magazine-current-affairs-july-2026.html
 ```
 
+* **Two steps, both automatic** — `scripts/build_content_manifest.ts` walks
+  `content/**`, derives each file's metadata and writes it into the **`drops`**
+  inventory of `data/content-manifest.json` (stamping `data/pdf-meta.json` on
+  the way). `build_content.py` then publishes *from that inventory* and never
+  opens a folder itself, so the manifest is the one list the pages, the sitemap
+  and the SEO gate read. Adding, renaming or deleting a file needs no other
+  edit anywhere — `node scripts/build_content_manifest.ts --check` fails the
+  build if the committed inventory is stale.
 * **Date** — `2026-08-12`, `July 2026` or `2026-07` in the name wins;
   otherwise the date the file first appeared is remembered in
   `data/pdf-meta.json`, so a rebuild on another machine emits the same bytes
-  (the determinism rule `scripts/ci.sh` step 6 depends on).
+  (the determinism rule `scripts/ci.sh` step 7 depends on).
 * **Subfolders count** — `content/monthly-magazine/english/CA August.pdf`
-  publishes too: the collection folder is walked, not just its top level.
-  Files with the same name in sibling folders are told apart by the folder
-  name in their title, never by a guess.
+  publishes too: the scanner walks the collection folder, not just its top
+  level. Files with the same name in sibling folders are told apart by the
+  folder name in their title, never by a guess.
 * **Same name as a Markdown file** — `Quant Shortcuts.pdf` next to
   `quant-shortcuts.md` becomes that document's download, not a second page.
 * **`content/pdfs/`** — listed on `pdfs.html` with its download button (that
@@ -855,8 +866,10 @@ python3 scripts/build_content.py
   are simply absent; the page and its card lead with *PDF download* instead
   of inventing them. Nothing else changes — design, Quiz Engine, SEO rules
   and the 95+ gates are untouched.
-* **English only** — a PDF has no Punjabi twin, so it publishes at the root
-  and the language switch stays honest.
+* **English, Punjabi and mixed names** — `ਪੰਜਾਬੀ ਨੋਟ.pdf` derives title
+  *ਪੰਜਾਬੀ ਨੋਟ*, slug `panjabi-not` and `language: pa` in the inventory. A PDF
+  has no Punjabi twin to switch to, so it still publishes at the root and the
+  language switch stays honest.
 
 ### What the build generates around them (Phase 4)
 
@@ -917,7 +930,9 @@ blocks (hidden until the first file exists) · stale-page cleanup (root **and**
   `assets/js/core.js` from the `HUBS` table, so a new folder reaches the header,
   drawer, footer, sitemap and search index in one build.
 * **Content Index** — `data/content-manifest.json` (hubs, index pages, every
-  document with its language pair, category, author and reading time).
+  document with its language pair, category, author and reading time, plus
+  `drops`: the PDF inventory written by `scripts/build_content_manifest.ts`
+  and read by the publisher, the sitemap and the SEO gate).
 * **Full-site search** — `data/search-index.json` over title, description,
   body, tags, subjects, exams and categories; fetched lazily when the search
   overlay first opens, so it costs nothing on page load.

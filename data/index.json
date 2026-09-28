@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 6,
-    "topics": 9,
-    "quizzes": 9,
-    "questions": 200,
+    "topics": 10,
+    "quizzes": 10,
+    "questions": 220,
     "studentsPracticed": 12500
   },
   "site": {
@@ -55,6 +55,36 @@
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
       "order": 1,
       "topics": [
+        {
+          "id": "five-year-plans-20-mcqs-",
+          "name": "Five Year Plans 20 Mcqs ",
+          "description": "",
+          "file": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790614960193,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+            "pa": "questions/gk/economy/five-year-plans-20-mcqs-.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Five Year Plans 20 Mcqs ",
+            "pa": "Five Year Plans 20 Mcqs "
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-gk-five-year-plans-20-mcqs-"
+        },
         {
           "id": "sikhism-part1-20-mcqs",
           "name": "Sikhism (Sikh Dharam) - Part 1",
@@ -335,7 +365,38 @@
           "name": "Economy",
           "folder": "economy",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "five-year-plans-20-mcqs-",
+              "name": "Five Year Plans 20 Mcqs ",
+              "description": "",
+              "file": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790614960193,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+                "pa": "questions/gk/economy/five-year-plans-20-mcqs-.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Five Year Plans 20 Mcqs ",
+                "pa": "Five Year Plans 20 Mcqs "
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-five-year-plans-20-mcqs-"
+            }
+          ],
           "landing": "/category-gk-economy"
         },
         {
