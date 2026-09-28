@@ -1746,6 +1746,47 @@ def article_node(rec, url):
     return node
 
 
+def learning_resource_node(rec, url):
+    """What a generated PDF page IS, in schema: a downloadable learning
+    resource whose encoding is the file itself and whose abstract is the
+    first page of that file, read by the scanner.
+
+    No `numberOfPages` here: schema.org scopes that property to Book, and a
+    page count the gates cannot verify would be worse than none."""
+    node = {
+        "@type": "LearningResource",
+        "@id": f"{url}#learning-resource",
+        "name": rec["title"],
+        "url": url,
+        "description": rec["description"],
+        "learningResourceType": "PDF",
+        "inLanguage": "en-IN",
+        "publisher": {"@id": f"{DOMAIN}/#organization"},
+    }
+    summary = str(rec.get("summary") or "").strip()
+    if summary:
+        node["abstract"] = summary
+    pdf = str((rec.get("meta") or {}).get("pdf") or "")
+    if pdf:
+        # DataDownload is the file's own type; MediaObject is the type that
+        # owns contentUrl, so the node carries both and every property it
+        # states is one schema.org really declares.
+        node["encoding"] = {
+            "@type": ["DataDownload", "MediaObject"],
+            "contentUrl": f"{DOMAIN}/{pdf_href(pdf)}",
+            "encodingFormat": "application/pdf",
+        }
+    src = str(rec.get("pdfPreview") or "")
+    if src:
+        w = int(rec.get("pdfPreviewW") or 0)
+        h = int(rec.get("pdfPreviewH") or 0)
+        node["image"] = {"@type": "ImageObject", "url": f"{DOMAIN}/{src}"}
+        if w > 0 and h > 0:
+            node["image"]["width"] = w
+            node["image"]["height"] = h
+    return node
+
+
 def breadcrumb_node(crumbs):
     return {
         "@type": "BreadcrumbList",
@@ -2162,33 +2203,62 @@ def file_size_label(path):
         else f"{size / (1024 * 1024):.1f} MB"
 
 
-def pdf_body_text(title, rel, published, label):
-    """The honest body of a generated page: what the file is and where it is."""
+def pdf_summary_md(summary):
+    """The scanner's first-page text, shown as the file wrote it: every
+    character that Markdown would otherwise take for its own is quoted."""
+    return re.sub(r"([\\`*_\[\]#>])", r"\\\1", str(summary or "").strip())
+
+
+def pdf_body_text(title, rel, published, label, record=None):
+    """The honest body of a generated page: what the file is, what is inside
+    it (read out of the PDF by the scanner) and where it is."""
+    rec = record or {}
     href = pdf_href(rel)
     size = file_size_label(ROOT / rel)
+    pages = int(rec.get("pdfPages") or 0)
+    summary = pdf_summary_md(rec.get("summary"))
+    facts = ", ".join(x for x in (size, f"{pages} pages" if pages else "")
+                      if x)
     date_line = (f"- **Published:** {fmt_date(published)}\n"
                  if published else "")
     return (
-        f"## Download\n"
-        f"[Download {title} (PDF)]({href})"
-        + (f" - {size}, hosted on this site." if size else ".")
+        (f"## Summary\n{summary}\n\n" if summary else "")
+        + f"## Download\n"
+        + f"[Download {title} (PDF)]({href})"
+        + (f" - {facts}, hosted on this site." if facts else ".")
         + " No sign-up, no email wall and no redirect through a third party.\n\n"
         f"## About this file\n"
         f"- **File name:** `{Path(rel).name}`\n"
+        + (f"- **Pages:** {pages}\n" if pages else "")
         + (f"- **Size:** {size}\n" if size else "")
         + f"- **Filed under:** {label}\n"
         f"{date_line}\n"
         f"This page was generated automatically when the PDF was placed in "
         f"`{Path(rel).parent.as_posix()}/`. Its title, slug, description and "
-        f"date come from the file name - the PDF itself is the document."
+        f"date come from the file name, and its page count and summary were "
+        f"read out of the PDF itself - the file is the document."
     )
+
+
+def pdf_preview_html(record):
+    """The scanner's first-page preview, if it drew one: the same box the
+    issue covers use, sized by the pixels that were actually written so the
+    page never shifts while the image decodes."""
+    src = str(record.get("pdfPreview") or "")
+    w, h = int(record.get("pdfPreviewW") or 0), int(record.get("pdfPreviewH") or 0)
+    if not src or w <= 0 or h <= 0 or not (ROOT / src).is_file():
+        return ""
+    return (f'<img class="doc-cover" src="{esc(src)}" alt="First page of '
+            f'{esc(record["title"])}" width="{w}" height="{h}" '
+            f'decoding="async" style="aspect-ratio:{w} / {h}">')
 
 
 def apply_pdf_body(record, label):
     """Re-render the generated body (a title disambiguation changes it)."""
     record["bodyHtml"], record["toc"] = md_to_html(
         pdf_body_text(record["title"], record["path"],
-                      str(record.get("published") or ""), label))
+                      str(record.get("published") or ""), label, record))
+    record["bodyHtml"] = pdf_preview_html(record) + record["bodyHtml"]
 
 
 def load_pdf_sidecar():
@@ -2292,14 +2362,21 @@ def pdf_eyebrow(record, index=None):
 
 
 def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
-                     index, folder=""):
+                     index, folder="", drop=None):
     """meta + body derived from the file name -> a normal document record.
 
     `folder` is the subfolder the file was dropped in ("english"), kept on the
-    record so a second file of the same name can say which one it is."""
+    record so a second file of the same name can say which one it is.
+    `drop` is the scanner's row for this file - the facts it read out of the
+    PDF itself (page count, first-page summary, first-page preview), which no
+    file name could ever have told us."""
     label = NAV_ENTRY.get(coll, (HUBS[coll]["schema_hub"], ""))[0]
     title = pdf_title_from_name(path.stem) or label
     rel = str(path.relative_to(ROOT))
+    drop = drop or {}
+    pages = int(drop.get("pages") or 0)
+    summary = clip(str(drop.get("summary") or "").strip(), 300)
+    body_facts = {"pdfPages": pages, "summary": summary}
     meta = {"title": title, "description": pdf_description(title, label)}
     if coll == "pdfs":
         # The PDF hub is a registry: the file is the artifact, so the record
@@ -2313,15 +2390,25 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
             meta["updated"] = updated
         meta["pdf"] = rel                     # the Download button
         meta["keywords"] = [clip(title, 48), label, "PDF download"]
+        if summary:
+            # The first page of the file, in the file's own words: it feeds
+            # the on-page Summary, the search row and the JSON-LD abstract.
+            meta["summary"] = summary
         if coll == "magazine" and fname_date:
             meta["month"] = fname_date[:7]    # "Issue 2026-07", from the name
     record = build_record(coll, cfg, slug, path, index, "en",
                           meta=meta,
-                          body=pdf_body_text(title, rel, published, label),
+                          body=pdf_body_text(title, rel, published, label,
+                                             body_facts),
                           required=required)
     if record is not None:
         record["pdfDrop"] = True
         record["pdfFolder"] = folder
+        record["pdfPages"] = pages
+        record["pdfPreview"] = str(drop.get("thumbnail") or "")
+        record["pdfPreviewW"] = int(drop.get("thumbW") or 0)
+        record["pdfPreviewH"] = int(drop.get("thumbH") or 0)
+        record["bodyHtml"] = pdf_preview_html(record) + record["bodyHtml"]
     return record
 
 
@@ -2362,6 +2449,37 @@ def dedupe_pdf_titles(all_records):
                 apply_pdf_body(r, label)
                 info(f"{r['path']}: title disambiguated to {cand!r}")
             used.add(str(r["title"]).lower())
+
+
+def link_related_pdfs(all_records, punjabi):
+    """A generated PDF page shows the PDFs it sits beside: its own folder
+    first, then its collection, then the rest of the library - three at most.
+
+    The choice comes from the inventory alone (folder, collection, title), so
+    it never claims two files are about the same subject when only their
+    names say so. Runs after dedupe_pdf_titles, because the titles on the
+    cards have to be the ones the site ends up publishing."""
+    def live(r):
+        return bool(HUBS.get(r["collection"], {}).get("prefix")) and \
+            bool(r.get("file"))
+
+    pages = [r for rows in all_records.values() for r in rows if live(r)]
+    for coll in punjabi:
+        pages += [r for r in punjabi[coll] if live(r)]
+    for rec in pages:
+        mine = str(rec.get("pdfFolder") or "")
+        others = [o for o in pages
+                  if o is not rec and o["file"] != rec["file"]]
+        others.sort(key=lambda o: (
+            0 if mine and str(o.get("pdfFolder") or "") == mine else 1,
+            0 if o["collection"] == rec["collection"] else 1,
+            str(o["title"]).lower(), o["file"]))
+        rec["relatedPdfs"] = [
+            {"href": o["file"],
+             "eyebrow": NAV_ENTRY.get(o["collection"],
+                                      (o["collection"], ""))[0],
+             "title": o["title"], "sub": "", "meta": "Open the page"}
+            for o in others[:3]]
 
 
 def subject_name(index, sid):
@@ -2890,6 +3008,13 @@ def recommend_sections(record, ctx, quizzes, anchors):
         reserved.extend(res)
         edges.extend((e, rel) for e, rel in ed)
 
+    # A generated PDF page leads with the PDFs it sits beside - one group the
+    # plan never has to know about, on the same cards every other slot uses.
+    related = record.get("relatedPdfs") or []
+    if related:
+        groups.insert(0, ({"title": "Related PDFs"}, related))
+        edges.extend((c["href"], "related-pdf") for c in related)
+
     if not groups and not reserved:
         return "", edges
 
@@ -2999,6 +3124,11 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
                         (hub["schema_hub"], hub_url),
                         (record["title"], url)]}
     nodes = [article_node(record, url), breadcrumb_node(crumbs)]
+
+    if record.get("pdfDrop"):
+        # The document node says what was published; this one says what the
+        # thing is - a PDF, encoded as the file the reader can download.
+        nodes.insert(1, learning_resource_node(record, url))
 
     if record["collection"] == "sessions" and record.get("start_time") and \
             record.get("date"):
@@ -5193,7 +5323,7 @@ def main():
                     f"scripts/build_content_manifest.ts")
                 continue
             rec = build_pdf_record(coll, cfg, path, slug, published, updated,
-                                   fname_date, index, folder)
+                                   fname_date, index, folder, drop)
             if rec is None:
                 continue
             all_records[coll].append(rec)
@@ -5210,6 +5340,7 @@ def main():
 
     # A generated title is made unique before anything renders from it.
     dedupe_pdf_titles(all_records)
+    link_related_pdfs(all_records, punjabi)
     if pdf_drops:
         info(f"pdf drops: {pdf_drops} PDF(s) published from their file names")
     # One stamp per PDF that still exists. A file this run did not publish - a

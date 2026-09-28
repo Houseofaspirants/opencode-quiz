@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 61,
-  "edges": 165,
+  "nodes": 67,
+  "edges": 195,
   "silos": 28,
   "clusters": 24,
   "pillars": 27
@@ -88,6 +88,54 @@
    "hub": "blogs.html"
   },
   {
+   "id": "book-five-year-plan-english",
+   "url": "/book-five-year-plan-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "book-five-year-plan-english.html",
+   "url": "/book-five-year-plan-english.html",
+   "type": "book-recommendations",
+   "template": "book-recommend",
+   "title": "Five Year Plan English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "book-recommendations.html"
+  },
+  {
+   "id": "book-five-year-plan-punjabi",
+   "url": "/book-five-year-plan-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "book-five-year-plan-punjabi.html",
+   "url": "/book-five-year-plan-punjabi.html",
+   "type": "book-recommendations",
+   "template": "book-recommend",
+   "title": "Five Year Plan Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "book-recommendations.html"
+  },
+  {
    "id": "book-recommendations.html",
    "url": "/book-recommendations.html",
    "type": "hub",
@@ -98,6 +146,30 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
+   "url": "/content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/book-recommendations/five%20year%20plan%20punjabi.pdf",
+   "url": "/content/book-recommendations/five%20year%20plan%20punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/pdfs/mobile%20phone.pdf",
@@ -811,6 +883,18 @@
   },
   {
    "from": "archives.html",
+   "to": "book-five-year-plan-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "book-five-year-plan-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -930,8 +1014,164 @@
    "weight": 1
   },
   {
+   "from": "book-five-year-plan-english.html",
+   "to": "book-five-year-plan-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "book-recommendations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "book-five-year-plan-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "pnote-mobile-phone.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-english.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "book-five-year-plan-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "book-recommendations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "content/book-recommendations/five%20year%20plan%20punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "book-five-year-plan-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "pnote-mobile-phone.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "book-five-year-plan-punjabi.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "book-recommendations.html",
    "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "book-five-year-plan-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "book-recommendations.html",
+   "to": "book-five-year-plan-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1335,6 +1575,18 @@
    "from": "pnote-mobile-phone.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "book-five-year-plan-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pnote-mobile-phone.html",
+   "to": "book-five-year-plan-punjabi.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {

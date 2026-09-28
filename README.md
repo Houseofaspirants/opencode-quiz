@@ -870,6 +870,24 @@ python3 scripts/build_content.py
   *ਪੰਜਾਬੀ ਨੋਟ*, slug `panjabi-not` and `language: pa` in the inventory. A PDF
   has no Punjabi twin to switch to, so it still publishes at the root and the
   language switch stays honest.
+* **Read out of the file, not the name** — the scanner also opens the PDF:
+  `pages` (the page count it declares), `summary` (the first page that reads
+  like prose — clipped to 300 characters) and `thumbnail` (a preview of page
+  one, drawn once to `assets/img/pdf/<hash>.jpg` and committed, with the
+  `thumbW`/`thumbH` of the pixels actually written). A summary never quotes
+  the welcome page every PDF opens with, because the brand match runs on the
+  page's **opening** only — every page carries the brand in its footer — and
+  where the file's own `/ToUnicode` maps a glyph to itself the glyph's name
+  inside the embedded font decides what it really says.
+* **What that puts on the page** — a first-page preview at the top (the
+  issue-cover box, so the layout does not move), a **Summary** section in the
+  file's own words (also the search row and the JSON-LD `abstract`), `11
+  pages` beside the size on the Download line, a **Related PDFs** group of
+  the PDFs it sits beside (its folder first, then its collection, then the
+  rest of the library — three at most, chosen from the inventory alone), and
+  `LearningResource` JSON-LD: `learningResourceType: PDF`, the file as its
+  `encoding` (`DataDownload` + `contentUrl`), the summary as its `abstract`.
+  `scripts/seo_check.py` checks all five new inventory fields.
 
 ### What the build generates around them (Phase 4)
 

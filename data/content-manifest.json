@@ -144,7 +144,7 @@
       "url": "https://houseofaspirants.in/book-recommendations",
       "title": "Book Recommendations | House of Aspirants",
       "description": "Book recommendations for Punjab exam preparation - what each book covers, who it is actually for, which chapters matter and how to use it alongside free notes.",
-      "count": 0
+      "count": 2
     }
   ],
   "pages": [
@@ -168,6 +168,42 @@
     }
   ],
   "items": [
+    {
+      "collection": "book-recommendations",
+      "file": "book-five-year-plan-english.html",
+      "url": "https://houseofaspirants.in/book-five-year-plan-english",
+      "title": "Five Year Plan English",
+      "description": "Download Five Year Plan English as a PDF from House of Aspirants. One click, no sign-up and no email wall. Books material, filed straight from the file name.",
+      "published": "2026-09-29",
+      "updated": "2026-09-29",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 1,
+      "lang": "en",
+      "featured": false,
+      "path": "content/book-recommendations/five year plan (english).pdf",
+      "category": "",
+      "pdf": "content/book-recommendations/five year plan (english).pdf"
+    },
+    {
+      "collection": "book-recommendations",
+      "file": "book-five-year-plan-punjabi.html",
+      "url": "https://houseofaspirants.in/book-five-year-plan-punjabi",
+      "title": "Five Year Plan Punjabi",
+      "description": "Download Five Year Plan Punjabi as a PDF from House of Aspirants. One click, no sign-up and no email wall. Books material, filed straight from the file name.",
+      "published": "2026-09-29",
+      "updated": "2026-09-29",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 1,
+      "lang": "en",
+      "featured": false,
+      "path": "content/book-recommendations/five year plan punjabi.pdf",
+      "category": "",
+      "pdf": "content/book-recommendations/five year plan punjabi.pdf"
+    },
     {
       "collection": "personal-notes",
       "file": "pnote-mobile-phone.html",
@@ -200,6 +236,44 @@
   ],
   "drops": [
     {
+      "path": "content/book-recommendations/five year plan (english).pdf",
+      "filename": "five year plan (english).pdf",
+      "folder": "book-recommendations",
+      "category": "",
+      "title": "Five Year Plan English",
+      "slug": "five-year-plan-english",
+      "language": "en",
+      "scripts": "latin",
+      "size": 2129166,
+      "sizeLabel": "2.0 MB",
+      "published": "2026-09-29",
+      "modified": "2026-09-29",
+      "pages": 11,
+      "summary": "FIVE YEAR PLANS (1951–2017) Introduction Economic Planning refers to the systematic and efficient utilization of a country's available resources to achieve long-term economic development. In India, Five Year Plans were introduced to promote balanced growth in agriculture, industry, employment",
+      "thumbnail": "assets/img/pdf/d880847e2137.jpg",
+      "thumbW": 450,
+      "thumbH": 600
+    },
+    {
+      "path": "content/book-recommendations/five year plan punjabi.pdf",
+      "filename": "five year plan punjabi.pdf",
+      "folder": "book-recommendations",
+      "category": "",
+      "title": "Five Year Plan Punjabi",
+      "slug": "five-year-plan-punjabi",
+      "language": "pa",
+      "scripts": "latin",
+      "size": 2147447,
+      "sizeLabel": "2.0 MB",
+      "published": "2026-09-29",
+      "modified": "2026-09-29",
+      "pages": 11,
+      "summary": "FIVE YEAR PLANS (ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ) Introduction ਆਰਥਿਕ ਯੋਜਨਾ (Economic Planning) ਦਾ ਅਰਥ ਹੈ ਦੇਸ਼ ਦੇ ਉਪਲਬਧ ਸਰੋਤਾਂ (Resources) ਦੀ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਵਰਤੋਂ ਕਰਕੇ ਲੰਬੇ ਸਮੇਂ ਲਈ ਆਰਥਿਕ ਵਿਕਾਸ ਕਰਨਾ। ਭਾਰਤ ਵਿੱਚ Five Year Plans ਦਾ ਉਦੇਸ਼ ਖੇਤੀਬਾੜੀ, ਉਦਯੋਗ, ਰੁਜ਼ਗਾਰ, ਬੁਨਿਆਦੀ ਢਾਂਚਾ ਅਤੇ ਸਮਾਜਿਕ ਵਿਕਾਸ ਨੂੰ ਯੋਜਨਾਬੱਧ ਢੰਗ ਨਾਲ ਅੱਗੇ",
+      "thumbnail": "assets/img/pdf/c94ac6dbe255.jpg",
+      "thumbW": 450,
+      "thumbH": 600
+    },
+    {
       "path": "content/pdfs/mobile phone.pdf",
       "filename": "mobile phone.pdf",
       "folder": "pdfs",
@@ -211,7 +285,12 @@
       "size": 5329231,
       "sizeLabel": "5.1 MB",
       "published": "2026-09-28",
-      "modified": "2026-09-28"
+      "modified": "2026-09-28",
+      "pages": 18,
+      "summary": "MOBILE PHONES (CELLULAR PHONES) A Mobile Phone (Cell Phone) is an electronic communication device used to make and receive calls using radio frequency signals (electromagnetic waves) while the user is moving within a cellular network coverage area. Mobile phones communicate through a network of",
+      "thumbnail": "assets/img/pdf/2e424874b957.jpg",
+      "thumbW": 450,
+      "thumbH": 600
     },
     {
       "path": "content/personal-notes/mobile phone.pdf",
@@ -225,7 +304,12 @@
       "size": 5329231,
       "sizeLabel": "5.1 MB",
       "published": "2026-09-28",
-      "modified": "2026-09-28"
+      "modified": "2026-09-28",
+      "pages": 18,
+      "summary": "MOBILE PHONES (CELLULAR PHONES) A Mobile Phone (Cell Phone) is an electronic communication device used to make and receive calls using radio frequency signals (electromagnetic waves) while the user is moving within a cellular network coverage area. Mobile phones communicate through a network of",
+      "thumbnail": "assets/img/pdf/2e424874b957.jpg",
+      "thumbW": 450,
+      "thumbH": 600
     }
   ],
   "counts": {
@@ -246,7 +330,7 @@
     "topic-guides": 0,
     "daily-practice": 0,
     "success-stories": 0,
-    "book-recommendations": 0
+    "book-recommendations": 2
   },
   "generatedBy": "scripts/build_content.py"
 }

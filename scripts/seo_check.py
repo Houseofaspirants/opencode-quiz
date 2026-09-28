@@ -126,6 +126,9 @@ KNOWN_TYPES = {
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
     "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
     "Person", "LearningResource", "Event",
+    # A generated PDF page declares its file: DataDownload is the download,
+    # MediaObject is the type that owns contentUrl.
+    "DataDownload", "MediaObject",
     # Phase 4: generated author profile pages (E-E-A-T) and the document-level
     # `schemaType:` values a document may publish under.
     "ProfilePage", "BlogPosting", "NewsArticle",
@@ -676,7 +679,9 @@ if CONTENT_MANIFEST.exists():
             rel = d.get("path") or d.get("filename") or "?"
             absent = [k for k in ("path", "filename", "folder", "category",
                                   "title", "slug", "language", "scripts", "size",
-                                  "sizeLabel", "published", "modified")
+                                  "sizeLabel", "published", "modified",
+                                  "pages", "summary", "thumbnail",
+                                  "thumbW", "thumbH")
                       if k not in d]
             if absent:
                 errors.append(f"content-manifest drop {rel}: missing field(s) "
@@ -704,6 +709,33 @@ if CONTENT_MANIFEST.exists():
                 errors.append(f"{rel}: size {d['size']!r} is not a byte count")
             elif not re.fullmatch(r"(\d+ KB|\d+\.\d MB)", d["sizeLabel"]):
                 errors.append(f"{rel}: sizeLabel {d['sizeLabel']!r} is malformed")
+            # What the scanner read out of the file itself: the pages it
+            # counted, the first page it quoted and the preview it drew. A
+            # thumbnail is either fully stated (path and the pixels that were
+            # written) or absent, so no page can claim a size it does not have
+            # and no summary can quote the welcome page every PDF opens with.
+            if not isinstance(d["pages"], int) or d["pages"] < 0:
+                errors.append(f"{rel}: pages {d['pages']!r} is not a page count")
+            summary = str(d["summary"])
+            if len(summary) > 320:
+                errors.append(f"{rel}: summary is {len(summary)} chars (max 320)")
+            if re.search(r"house\s+of\s+aspirants", summary[:90], re.I):
+                errors.append(f"{rel}: summary opens with the site's own welcome "
+                              f"page instead of the file's first page")
+            thumb = str(d["thumbnail"])
+            if thumb and not re.fullmatch(
+                    r"assets/img/pdf/[0-9a-f]{12}\.(jpg|png)", thumb):
+                errors.append(f"{rel}: thumbnail {thumb!r} must be "
+                              f"assets/img/pdf/<hash>.jpg or .png")
+            elif thumb and not (ROOT / thumb).is_file():
+                errors.append(f"{rel}: thumbnail {thumb} is missing - run node "
+                              f"scripts/build_content_manifest.ts")
+            for key in ("thumbW", "thumbH"):
+                if not isinstance(d[key], int) or d[key] < 0:
+                    errors.append(f"{rel}: {key} {d[key]!r} is not a pixel count")
+                elif bool(d[key]) != bool(thumb):
+                    errors.append(f"{rel}: {key} is {d[key]} but the thumbnail "
+                                  f"is {'stated' if thumb else 'absent'}")
             if d["path"] not in on_disk:
                 errors.append(f"{rel}: dropped into content/{d['folder']}/ but "
                               f"never published - rerun scripts/build_content.py")

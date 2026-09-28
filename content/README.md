@@ -229,9 +229,47 @@ slug `panjabi-not` (transliterated for the URL), `language: pa`. Both the
 scanner and the publisher carry the same derivation, and `scripts/ci.sh` diffs
 their answers over a fixture list so the two can never drift apart.
 
+A second pass reads **the file itself**, because a file name can never know
+these:
+
+| field | read out of the PDF |
+| --- | --- |
+| `pages` | the page count the file declares — a *Pages* bullet and the size/`pages` pair on the Download line |
+| `summary` | the first page that is neither the welcome page every PDF opens with nor text another drop already quotes, clipped to 300 characters. It feeds the on-page **Summary** section, the search row (`m`) and the JSON-LD `abstract`. |
+| `thumbnail` | a preview of page one, drawn once to `assets/img/pdf/<sha256[:12]>.jpg` and committed. `thumbW` / `thumbH` are the pixels actually written, so the `<img>` reserves its box before it decodes. |
+
+Three rules keep the summary honest. A page only counts as prose if it
+*reads* like prose (≥70% letters, digits, punctuation and spaces, ≥40
+characters), so a decoded table never becomes a summary. The welcome page is
+matched on its **opening** only — every page carries the brand in its footer,
+so a whole-page match would mark every page as front matter. And where the
+file's own `/ToUnicode` admits it does not know a glyph (it maps the code to
+itself), the glyph's name inside the embedded font program decides what it
+really says, so `ਵਰਤੋਂ` never comes back as `ਵਰਤ=`.
+
+Previews are drawn only when the scanner **writes** — never under `--check`,
+which must be a pure read — and a preview no drop points at anymore is
+deleted. On Linux CI there is no `sips`/`qlmanage`, so the manifest stores the
+path the committed file already occupies and both machines emit the same
+bytes. `scripts/seo_check.py` checks the five new fields (a summary may not
+quote the welcome page, a thumbnail must exist and carry its own size), while
+the name-derivation parity gate stays name-derived: page count and summary
+are facts of the file, not of its name.
+
 The record then enters exactly the pipeline a Markdown document does: hub card,
 doc page with a Download button, archives, search corpus (with summary,
-keywords and author), RSS, sitemap, content graph, homepage feed.
+keywords and author), RSS, sitemap, content graph, homepage feed — and on the
+page itself:
+
+* a **first-page preview** at the top, reusing the issue-cover box;
+* a **Summary** section in the file's own first-page words;
+* **Related PDFs** — the PDFs it sits beside (its own folder first, then its
+  collection, then the rest of the library, three at most), chosen from the
+  inventory alone so nothing claims two files share a subject when only their
+  names say so;
+* **`LearningResource` JSON-LD** naming `learningResourceType: PDF`, the file
+  as its `encoding` (`DataDownload` + `contentUrl`) and the summary as its
+  `abstract`.
 
 Rules worth knowing:
 

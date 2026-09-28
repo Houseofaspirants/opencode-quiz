@@ -1085,3 +1085,88 @@ language, scripts, size, sizeLabel, published, modified` — and:
   **PASS** (note: *content: 2 PDF drop(s) described by the scanner's inventory
   and published*) → `rich_results_check` **PASS** → committed tree matches the
   builders.
+
+## 43. Reading the PDF itself — summary, preview, LearningResource, related
+
+**Problem.** §42 made the *name* authoritative, and a name can only say so
+much. A page built from `five year plan (english).pdf` could not say how long
+the file is, what is inside it, or what page one even looks like: the reader
+landed on a Download button and a description assembled from the title and
+the folder label.
+
+**Design.** The scanner opened each file a second time — while it was already
+reading it — and the publisher consumed what it found:
+
+| field | read out of the PDF | used by |
+|---|---|---|
+| `pages` | the page count the file declares (`/Count`, with a raw `/Type /Page` count as fallback) | the *Pages* bullet, `2.0 MB, 11 pages` on the Download line |
+| `summary` | the first of the first three pages that reads like prose, clipped to 300 chars | `## Summary`, the search row `m`, the JSON-LD `abstract` |
+| `thumbnail` + `thumbW` / `thumbH` | a JPEG of page one at `assets/img/pdf/<sha256[:12]>.jpg` (`/usr/bin/sips`, `qlmanage` fallback), dimensions read back out of the bytes | the `<img>` at the top of the body |
+
+* **Text extraction is a decoder, not a guess.** Each text object is looked
+  up inside its own `endobj` bound; per-font `/ToUnicode` CMaps are parsed for
+  both `bfchar` and `bfrange` against the codespace width; ligatures are
+  spelled out; and the Gurmukhi pre-base matra is put back where the script
+  writes it, because the file stores glyphs in visual order.
+* **Run separators come from geometry.** Every drawn string carries the
+  translation of its `cm` *and* its `Tm`; a space is emitted only when the
+  baseline moves more than half the font size (a new line) or when the last
+  character ended a sentence (`. , ; : ! ? ) ]`). Ligature runs and Punjabi's
+  explicit space glyphs therefore neither gain nor lose a word:
+  `ef fi cient` → `efficient`, `for. Thank` stays two words, and
+  `(Cell Phone)` no longer becomes `( Cell Phone)`.
+* **The welcome page is matched on its opening only.** Every page carries
+  `House of Aspirants` in its footer, so a whole-page match marked every page
+  as front matter and the summary always fell back to page 1. The brand test
+  now runs on the first ~90 characters, so page 1 is front matter and page 2
+  is content.
+* **A glyph the file itself does not know.** The Gurmukhi PDFs ship
+  `/ToUnicode` entries that map a code to its own ASCII character
+  (`<3d><3d><003d>`) — the producer's placeholder for "unknown glyph". The
+  embedded `FontFile2` still carries a `cmap` (formats 0/4/6/12) and a
+  format-2 `post`, so the scanner reads the glyph's *name*
+  (`MatraIiBindi.gm`), learns each font's name→Unicode map from the codes the
+  file does know, splits a compound name by longest-prefix match, and inserts
+  U+0A4D (halant) between two consonants. `ਵਰਤ=` becomes `ਵਰਤੋਂ`, `RaHa.gm`
+  becomes `ਰ੍ਹ`. A code with no witness is left exactly as the file says —
+  the repair only ever improves an answer it can prove.
+* **Previews are a cache, not an output.** They are drawn only inside
+  `write()` (never under `--check`, which must stay a pure read), named by
+  content hash so an unchanged file keeps its bytes, and swept when no drop
+  points at them anymore. Linux CI has no `sips`/`qlmanage`, so the path is
+  computed from the committed file's existence and both machines emit the
+  same bytes.
+
+**On the page.** The preview is prepended to `bodyHtml` through one helper
+used by both the first build and any later re-render, reusing the existing
+`.doc-cover` box — so the layout does not move — with `alt` / `width` /
+`height` / `decoding` and an inline `aspect-ratio`. A **Related PDFs**
+`rec-group` is prepended in `recommend_sections`, built from the same
+`card_html` every other slot uses: candidates are PDF drops that publish a
+page, ranked own-folder → own collection → anywhere else, three at most, with
+`(href, "related-pdf")` edges recorded in the content graph. A
+`LearningResource` node is inserted at `nodes.insert(1, …)` for every
+`pdfDrop`, carrying `learningResourceType: "PDF"`, `encoding` typed
+`["DataDownload", "MediaObject"]` (the second type is the one `contentUrl` is
+actually declared on), the preview as `image` and the summary as `abstract`.
+No `numberOfPages`: schema.org scopes that property to `Book`, and a property
+the gates cannot verify would be worse than none.
+
+**Verification (local)**
+
+* `bash scripts/ci.sh` → steps 1/7 through 6/7 green; step 7 fails only
+  because it diffs the working tree against `HEAD` (the regenerated files are
+  not committed yet).
+* Summaries, verbatim from `data/content-manifest.json`:
+  * `FIVE YEAR PLANS (1951–2017) Introduction Economic Planning refers to the systematic and efficient utilization of a country's available resources …`
+  * `FIVE YEAR PLANS ( ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ) Introduction ਆਰਥਿਕ ਯੋਜਨਾ (Economic Planning) ਦਾ ਅਰਥ ਹੈ … ਦੀ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਵਰਤੋਂ ਕਰਕੇ ਲੰਬੇ ਸਮੇਂ ਲਈ …`
+  * `MOBILE PHONES (CELLULAR PHONES) A Mobile Phone (Cell Phone) is an electronic communication device …`
+  * page counts 18 / 11 / 11 / 18; three previews written (450×600 JPEG,
+    57–67 KB) — the fourth drop is byte-identical to another, so it reuses
+    the same hash.
+* `seo_check` → *content: 4 PDF drop(s) described by the scanner's inventory
+  and published*, schema line including `LearningResourcex7`, `DataDownloadx3`,
+  `MediaObjectx3`, **RESULT: PASS — no hard failures**; `rich_results_check`
+  → **RESULT: PASS**. `index.html` markers still 3× `Gurpreet Singh`, 1×
+  `Prepare Smarter`, 4× `t.me/HouseOfAspirant`; `404.html` still carries zero
+  `<script type="application/ld+json">`.

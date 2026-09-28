@@ -20,7 +20,8 @@
  * Contract
  *   * one record per PDF: path, filename, folder, category (the subfolder the
  *     file was dropped in), title, slug, language, scripts, size, sizeLabel,
- *     published, modified;
+ *     published, modified - plus what only the bytes can say: pages, summary,
+ *     thumbnail, thumbW, thumbH;
  *   * English, Punjabi and mixed file names all derive - Gurmukhi keeps its own
  *     shape in the title and is transliterated for the slug;
  *   * add / delete / rename are the same operation: rescan. Nothing is edited
@@ -39,8 +40,10 @@
  */
 
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
+import { inflateRawSync, inflateSync } from "node:zlib";
 import { fileURLToPath } from "node:url";
 
 // ---------------------------------------------------------------------------
@@ -61,6 +64,11 @@ type Drop = {
   sizeLabel: string;   // "5.1 MB"
   published: string;   // ISO date the document claims: its name, or first seen
   modified: string;    // ISO date its bytes last changed (stamped once)
+  pages: number;       // page count read out of the file (0 = the file proves none)
+  summary: string;     // <=300 chars read out of the file ("" = nothing readable)
+  thumbnail: string;   // "assets/img/pdf/<hash>.jpg" when the preview exists, else ""
+  thumbW: number;      // preview width in px (0 without a preview)
+  thumbH: number;      // preview height in px (0 without a preview)
 };
 
 type SidecarEntry = { hash: string; published: string; updated: string };
@@ -77,6 +85,7 @@ type Derive = { stem: string; title: string; slug: string; date: string };
 const DROP_KEYS: (keyof Drop)[] = [
   "path", "filename", "folder", "category", "title", "slug", "language",
   "scripts", "size", "sizeLabel", "published", "modified",
+  "pages", "summary", "thumbnail", "thumbW", "thumbH",
 ];
 
 // ---------------------------------------------------------------------------
@@ -425,6 +434,626 @@ const scriptsOf = (stem: string): string => {
 };
 
 // ---------------------------------------------------------------------------
+// file content: page count, opening text, first-page preview
+//
+// A file name says what a PDF is called; only its bytes say how many pages it
+// has, what it opens with and what page one looks like. Everything here reads
+// the file and writes nothing, so the answer is the same on any machine - and
+// a PDF this parser cannot open (a scanned page with no text layer, a
+// compressed object tree) leaves its field empty instead of guessing.
+// ---------------------------------------------------------------------------
+
+/** One char per byte - exactly what Python's latin-1 decode answers. */
+const asLatin1 = (buf: Buffer): string => buf.toString("latin1");
+
+/** How one font turns the bytes it draws into characters. */
+type FontText = {
+  table: Map<number, string> | null;   // the file's own /ToUnicode CMap
+  wide: boolean;                       // codes are two bytes wide (CID font)
+  enc: string;                         // TextDecoder label when there is no table
+};
+
+/** The dictionary of object `num`, never the stream bytes that may follow it. */
+const objectDict = (txt: string, num: number): string => {
+  const m = new RegExp(`(?:^|[^0-9])${num}\\s+0\\s+obj`).exec(txt);
+  if (!m) return "";
+  const start = m.index + m[0].length;
+  const stop = txt.indexOf("endobj", start);
+  return txt.slice(start, stop < 0 ? start + 16384 : Math.min(stop, start + 16384));
+};
+
+/** The indirect reference `/Key N 0 R` in a dictionary, or 0. */
+const refIn = (txt: string, key: string): number => {
+  const m = new RegExp(`/${key}\\s+(\\d+)\\s+\\d+\\s+R`).exec(txt);
+  return m ? Number(m[1]) : 0;
+};
+
+/** The dictionary that follows `/Key`, read with balanced `<<` `>>`. */
+const dictAfter = (txt: string, key: string): string => {
+  const at = txt.indexOf(`/${key}`);
+  const open = at < 0 ? -1 : txt.indexOf("<<", at);
+  if (open < 0) return "";
+  let depth = 0;
+  for (let i = open; i + 1 < txt.length; i++) {
+    if (txt[i] === "<" && txt[i + 1] === "<") { depth++; i++; continue; }
+    if (txt[i] === ">" && txt[i + 1] === ">") {
+      depth--; i++;
+      if (!depth) return txt.slice(open + 2, i - 1);
+    }
+  }
+  return "";
+};
+
+const inflateAny = (raw: Buffer): Buffer | null => {
+  const trim = Buffer.from(raw.toString("latin1").replace(/[\r\n]+$/, ""), "latin1");
+  for (const buf of raw.length === trim.length ? [raw] : [raw, trim]) {
+    try { return inflateSync(buf); } catch { /* not the zlib-wrapped form */ }
+    try { return inflateRawSync(buf); } catch { /* not deflate at all */ }
+  }
+  return null;
+};
+
+/** The FlateDecode stream of object `num`, or null when there is none. */
+const streamOf = (txt: string, num: number): Buffer | null => {
+  const m = new RegExp(`(?:^|[^0-9])${num}\\s+0\\s+obj`).exec(txt);
+  if (!m) return null;
+  const start = m.index + m[0].length;
+  const dict = txt.slice(start, start + 16384);
+  const sm = /stream\r?\n/.exec(dict);
+  if (!sm) return null;
+  const data = start + sm.index + sm[0].length;
+  const lm = /\/Length\s+(\d+)(\s+\d+\s+R)?/.exec(dict.slice(0, sm.index));
+  if (lm && !lm[2]) {
+    const buf = inflateAny(Buffer.from(txt.slice(data, data + Number(lm[1])), "latin1"));
+    if (buf) return buf;
+  }
+  const end = txt.indexOf("endstream", data);
+  return end < 0 ? null : inflateAny(Buffer.from(txt.slice(data, end), "latin1"));
+};
+
+/** The page count the file declares: /Count on the page tree, else the number
+ *  of page objects. A file that declares neither reads 0 - never a guess. */
+const pageCountOf = (txt: string): number => {
+  const roots = [...txt.matchAll(/\/Root\s+(\d+)\s+\d+\s+R/g)];
+  if (roots.length) {
+    const cat = objectDict(txt, Number(roots[roots.length - 1][1]));
+    const tree = refIn(cat, "Pages");
+    if (tree) {
+      const m = /\/Count\s+(\d+)/.exec(objectDict(txt, tree));
+      if (m && Number(m[1]) > 0) return Number(m[1]);
+    }
+  }
+  return (txt.match(/\/Type\s*\/Page(?![sA-Za-z])/g) || []).length;
+};
+
+/** Object numbers of the first `want` pages, in document order. */
+const pageObjects = (txt: string, want: number): number[] => {
+  const roots = [...txt.matchAll(/\/Root\s+(\d+)\s+\d+\s+R/g)];
+  if (!roots.length) return [];
+  const tree = refIn(objectDict(txt, Number(roots[roots.length - 1][1])), "Pages");
+  if (!tree) return [];
+  const out: number[] = [];
+  const walk = (num: number, depth: number): void => {
+    if (out.length >= want || depth > 12) return;
+    const obj = objectDict(txt, num);
+    if (!obj) return;
+    if (/\/Type\s*\/Page(?![sA-Za-z])/.test(obj)) { out.push(num); return; }
+    const kids = /\/Kids\s*\[([^\]]*)\]/.exec(obj);
+    if (!kids) return;
+    for (const k of kids[1].matchAll(/(\d+)\s+\d+\s+R/g)) {
+      walk(Number(k[1]), depth + 1);
+      if (out.length >= want) return;
+    }
+  };
+  walk(tree, 0);
+  return out;
+};
+
+const hexBytes = (hex: string): number[] => {
+  const s = hex.replace(/\s+/g, "");
+  const body = s.length % 2 ? s + "0" : s;
+  const out: number[] = [];
+  for (let i = 0; i < body.length; i += 2) out.push(parseInt(body.slice(i, i + 2), 16));
+  return out;
+};
+
+const utf16Be = (bytes: number[]): string => {
+  let out = "";
+  for (let i = 0; i + 1 < bytes.length; i += 2) out += String.fromCharCode((bytes[i] << 8) | bytes[i + 1]);
+  return out;
+};
+
+/** A font's /ToUnicode CMap: the code -> character table the file ships, plus
+ *  whether a code is two bytes wide (a CID font) or one (a simple font). */
+const toUnicode = (txt: string, num: number): { table: Map<number, string>; wide: boolean } | null => {
+  const raw = streamOf(txt, num);
+  if (!raw) return null;
+  const cmap = asLatin1(raw);
+  const table = new Map<number, string>();
+  for (const block of cmap.match(/beginbfchar[\s\S]*?endbfchar/g) || []) {
+    for (const m of block.matchAll(/<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>/g)) {
+      const value = utf16Be(hexBytes(m[2]));
+      if (value) table.set(parseInt(m[1], 16), value);
+    }
+  }
+  for (const block of cmap.match(/beginbfrange[\s\S]*?endbfrange/g) || []) {
+    for (const m of block.matchAll(/<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>/g)) {
+      const lo = parseInt(m[1], 16);
+      const hi = parseInt(m[2], 16);
+      const value = utf16Be(hexBytes(m[3]));
+      if (!value || hi < lo || hi - lo > 65535) continue;
+      const first = value.codePointAt(0) || 0;
+      for (let i = 0; i <= hi - lo; i++) table.set(lo + i, String.fromCodePoint(first + i));
+    }
+    for (const m of block.matchAll(/<([0-9A-Fa-f]+)>\s*<([0-9A-Fa-f]+)>\s*\[([\s\S]*?)\]/g)) {
+      const lo = parseInt(m[1], 16);
+      [...m[3].matchAll(/<([0-9A-Fa-f]+)>/g)].forEach((v, i) => {
+        const value = utf16Be(hexBytes(v[1]));
+        if (value) table.set(lo + i, value);
+      });
+    }
+  }
+  const span = /begincodespacerange\s*<([0-9A-Fa-f]+)>/.exec(cmap);
+  return table.size ? { table, wide: span ? span[1].length >= 4 : false } : null;
+};
+
+// ---------------------------------------------------------------------------
+// When the file does not know a glyph either
+// ---------------------------------------------------------------------------
+
+const u16At = (s: string, o: number): number => (s.charCodeAt(o) << 8) | s.charCodeAt(o + 1);
+const u32At = (s: string, o: number): number => ((u16At(s, o) * 65536) + u16At(s, o + 2)) >>> 0;
+
+/** The tables an sfnt font program declares: tag -> [offset, length]. */
+const sfntTables = (sfnt: string): Map<string, [number, number]> => {
+  const out = new Map<string, [number, number]>();
+  if (sfnt.length < 12) return out;
+  const count = u16At(sfnt, 4);
+  if (count < 1 || count > 64 || 12 + 16 * count > sfnt.length) return out;
+  for (let i = 0; i < count; i++) {
+    const o = 12 + 16 * i;
+    out.set(sfnt.slice(o, o + 4), [u32At(sfnt, o + 8), u32At(sfnt, o + 12)]);
+  }
+  return out;
+};
+
+/** code -> glyph index, as the font declares it (cmap formats 0/4/6/12). */
+const sfntGlyphs = (sfnt: string, tables: Map<string, [number, number]>): Map<number, number> => {
+  const out = new Map<number, number>();
+  const cmap = tables.get("cmap");
+  if (!cmap) return out;
+  const subtables = u16At(sfnt, cmap[0] + 2);
+  for (let i = 0; i < subtables && !out.size; i++) {
+    const rec = cmap[0] + 4 + 8 * i;
+    if (rec + 8 > sfnt.length) break;
+    const sub = cmap[0] + u32At(sfnt, rec + 4);
+    if (sub + 10 > sfnt.length) continue;
+    const fmt = u16At(sfnt, sub);
+    if (fmt === 0) {
+      for (let c = 0; c < 256 && sub + 6 + c < sfnt.length; c++) out.set(c, sfnt.charCodeAt(sub + 6 + c));
+    } else if (fmt === 6) {
+      const first = u16At(sfnt, sub + 6), count = u16At(sfnt, sub + 8);
+      for (let k = 0; k < count && sub + 11 + 2 * k < sfnt.length; k++) {
+        out.set(first + k, u16At(sfnt, sub + 10 + 2 * k));
+      }
+    } else if (fmt === 4) {
+      const seg2 = u16At(sfnt, sub + 6), seg = seg2 >> 1;
+      const ends = sub + 14, starts = ends + seg2 + 2, deltas = starts + seg2, ros = deltas + seg2;
+      for (let k = 0; k < seg && ros + 2 * k + 1 < sfnt.length; k++) {
+        const from = u16At(sfnt, starts + 2 * k), to = u16At(sfnt, ends + 2 * k);
+        const delta = u16At(sfnt, deltas + 2 * k), ro = u16At(sfnt, ros + 2 * k);
+        for (let c = from; c <= to; c++) {
+          let g: number;
+          if (ro === 0) g = (c + delta) & 0xffff;
+          else {
+            const gi = ros + 2 * k + ro + 2 * (c - from);
+            if (gi + 1 >= sfnt.length) continue;
+            g = u16At(sfnt, gi);
+            if (g) g = (g + delta) & 0xffff;
+          }
+          if (g) out.set(c, g);
+        }
+      }
+    } else if (fmt === 12) {
+      const groups = u32At(sfnt, sub + 12);
+      for (let k = 0; k < groups; k++) {
+        const o = sub + 16 + 12 * k;
+        if (o + 12 > sfnt.length) break;
+        const from = u32At(sfnt, o), to = u32At(sfnt, o + 4), g0 = u32At(sfnt, o + 8);
+        for (let c = from; c <= to && c - from < 4096; c++) out.set(c, g0 + (c - from));
+      }
+    }
+  }
+  return out;
+};
+
+/** glyph index -> glyph name. A format-2 `post` is the only place a subset
+ *  font still says what a glyph is called. */
+const sfntNames = (sfnt: string, tables: Map<string, [number, number]>): Map<number, string> => {
+  const out = new Map<number, string>();
+  const post = tables.get("post");
+  if (!post || u32At(sfnt, post[0]) !== 0x00020000) return out;
+  const base = post[0], end = Math.min(base + post[1], sfnt.length);
+  if (base + 34 > end) return out;
+  const glyphs = u16At(sfnt, base + 32);
+  const strings: string[] = [];
+  let o = base + 34 + 2 * glyphs;
+  while (o < end) {
+    const size = sfnt.charCodeAt(o);
+    if (o + 1 + size > end) break;
+    strings.push(sfnt.slice(o + 1, o + 1 + size));
+    o += 1 + size;
+  }
+  for (let g = 0; g < glyphs && base + 35 + 2 * g < end; g++) {
+    const idx = u16At(sfnt, base + 34 + 2 * g);
+    if (idx >= 258 && idx - 258 < strings.length) out.set(g, strings[idx - 258]);
+  }
+  return out;
+};
+
+/** The font program a font dictionary points at (a subset TrueType file). */
+const fontProgram = (txt: string, fontDict: string): string => {
+  const desc = refIn(fontDict, "FontDescriptor");
+  const dict = desc ? objectDict(txt, desc) : fontDict;
+  const ref = refIn(dict, "FontFile2");
+  const buf = ref ? streamOf(txt, ref) : null;
+  return buf ? asLatin1(buf) : "";
+};
+
+const isOwnAscii = (code: number, value: string): boolean =>
+  value.length === 1 && value.charCodeAt(0) === code && code >= 0x20 && code < 0x7f;
+
+/** Codes a producer maps to their own ASCII character - its way of saying "I
+ *  do not know this glyph". In a font that writes real Unicode everywhere
+ *  else that is a hole in the text layer (the Gurmukhi ligature for "ੋਂ"
+ *  comes back as the equals sign), and the glyph's own name in the embedded
+ *  font program is the last witness: "MatraOoBindi.gm" is that ligature.
+ *  Names are learned from the codes the file does know, a compound name is
+ *  read as its parts, and anything still unheard of is left alone. */
+const repairUnknownGlyphs = (table: Map<number, string>, txt: string, fontObj: number): void => {
+  const holes: number[] = [];
+  for (const [code, value] of table) if (isOwnAscii(code, value)) holes.push(code);
+  if (!holes.length) return;
+  const sfnt = fontProgram(txt, objectDict(txt, fontObj));
+  if (!sfnt) return;
+  const tables = sfntTables(sfnt);
+  const glyphs = sfntGlyphs(sfnt, tables);
+  const names = sfntNames(sfnt, tables);
+  if (!glyphs.size || !names.size) return;
+  const known = new Map<string, string>();          // name stem -> character
+  const stemOf = new Map<number, string>();
+  for (const [code, value] of table) {
+    const gid = glyphs.get(code);
+    const name = gid === undefined ? undefined : names.get(gid);
+    if (!name) continue;
+    stemOf.set(code, name.split(".")[0]);
+    if (!isOwnAscii(code, value)) known.set(name.split(".")[0], value);
+  }
+  for (const code of holes) {
+    const stem = stemOf.get(code);
+    if (!stem) continue;                            // no witness: keep the file's answer
+    const direct = known.get(stem);
+    if (direct !== undefined) { table.set(code, direct); continue; }
+    for (let i = stem.length - 1; i > 1; i--) {     // a compound: "MatraOo" + "Bindi"
+      const head = known.get(stem.slice(0, i));
+      const tail = known.get(stem.slice(i));
+      if (head === undefined || tail === undefined) continue;
+      const conjunct = GURMUKHI_CONSONANT.test(head[0]) && GURMUKHI_CONSONANT.test(tail[0]);
+      table.set(code, conjunct ? head + "\u0A4D" + tail : head + tail);
+      break;
+    }
+  }
+};
+
+/** The built-in encoding named by a simple font, as a TextDecoder label. */
+const ENCODINGS: Record<string, string> = {
+  MacRomanEncoding: "macintosh",
+  WinAnsiEncoding: "windows-1252",
+  StandardEncoding: "latin1",
+  PDFDocEncoding: "latin1",
+};
+
+const DECODERS = new Map<string, TextDecoder | null>();
+
+/** Bytes -> text through the font's own encoding. */
+const decodeBytes = (bytes: number[], font: FontText | null): string => {
+  if (!bytes.length) return "";
+  if (font && font.table) {
+    const out: string[] = [];
+    if (font.wide) {
+      for (let i = 0; i + 1 < bytes.length; i += 2) out.push(font.table.get((bytes[i] << 8) | bytes[i + 1]) ?? "");
+    } else {
+      for (const b of bytes) out.push(font.table.get(b) ?? (b >= 32 && b < 127 ? String.fromCharCode(b) : ""));
+    }
+    return out.join("");
+  }
+  if (font && font.wide) return utf16Be(bytes);
+  const label = font ? font.enc : "latin1";
+  if (label === "latin1") return Buffer.from(bytes).toString("latin1");
+  let decoder = DECODERS.get(label);
+  if (decoder === undefined) {
+    try { decoder = new TextDecoder(label); } catch { decoder = null; }
+    DECODERS.set(label, decoder);
+  }
+  return decoder ? decoder.decode(Uint8Array.from(bytes)) : Buffer.from(bytes).toString("latin1");
+};
+
+/** A literal PDF string `( ... )` -> its bytes, escapes resolved. */
+const unescapePdf = (s: string): number[] => {
+  const simple: Record<string, number> = { n: 10, r: 13, t: 9, b: 8, f: 12, "(": 40, ")": 41, "\\": 92 };
+  const out: number[] = [];
+  let i = 0;
+  while (i < s.length) {
+    const ch = s[i];
+    if (ch !== "\\") { out.push(s.charCodeAt(i) & 0xff); i++; continue; }
+    const nx = s[i + 1];
+    if (nx === undefined) break;
+    if (nx === "\n" || nx === "\r") { i += nx === "\r" && s[i + 2] === "\n" ? 3 : 2; continue; }
+    if (nx in simple) { out.push(simple[nx]); i += 2; continue; }
+    if (nx >= "0" && nx <= "7") {
+      let oct = "", j = i + 1;
+      while (j < s.length && oct.length < 3 && s[j] >= "0" && s[j] <= "7") { oct += s[j]; j++; }
+      out.push(parseInt(oct, 8) & 0xff); i = j; continue;
+    }
+    i += 2;                                  // a backslash before anything else
+  }
+  return out;
+};
+
+/** Every font one page can draw with, keyed by its resource name. */
+const pageFonts = (txt: string, page: string): { byName: Map<string, number>; fonts: Map<number, FontText> } => {
+  const resRef = refIn(page, "Resources");
+  const res = resRef ? objectDict(txt, resRef) : page;
+  const byName = new Map<string, number>();
+  const fonts = new Map<number, FontText>();
+  for (const m of dictAfter(res, "Font").matchAll(/\/([A-Za-z0-9]+)\s+(\d+)\s+\d+\s+R/g)) {
+    byName.set(m[1], Number(m[2]));
+  }
+  for (const num of new Set(byName.values())) {
+    const dict = objectDict(txt, num);
+    const tu = refIn(dict, "ToUnicode");
+    const mapped = tu ? toUnicode(txt, tu) : null;
+    if (mapped) repairUnknownGlyphs(mapped.table, txt, num);
+    const cid = /\/Encoding\s+\d+\s+\d+\s+R/.test(dict);   // a CID font draws 2-byte codes
+    const name = /\/Encoding\s+\/([A-Za-z0-9+-]+)/.exec(dict);
+    fonts.set(num, {
+      table: mapped ? mapped.table : null,
+      wide: mapped ? mapped.wide : cid,
+      enc: (name && ENCODINGS[name[1]]) || "latin1",
+    });
+  }
+  return { byName, fonts };
+};
+
+/** The text a page draws, in the order the file draws it. */
+const pageText = (txt: string, pageObj: number): string => {
+  const page = objectDict(txt, pageObj);
+  if (!page) return "";
+  const { byName, fonts } = pageFonts(txt, page);
+  const refs: number[] = [];
+  const one = refIn(page, "Contents");
+  if (one) refs.push(one);
+  else {
+    const arr = /\/Contents\s*\[([^\]]*)\]/.exec(page);
+    if (arr) for (const m of arr[1].matchAll(/(\d+)\s+\d+\s+R/g)) refs.push(Number(m[1]));
+  }
+  let stream = "";
+  for (const r of refs) {
+    const buf = streamOf(txt, r);
+    if (buf) stream += asLatin1(buf);
+  }
+  if (!stream) return "";
+  const parts: string[] = [];
+  let font: FontText | null = null;
+  // Where the next glyph lands: the graphics translation (cm) plus the text
+  // matrix (Tm). A run that drops down the page opens a new line, so a space
+  // is owed; runs that stay put are one sentence drawn in pieces - a ligature
+  // is often its own run, and spacing those would spell "ef fi cient".
+  let gx = 0, gy = 0, scaleX = 1, tx = 0, ty = 0, size = 12;
+  let prevY: number | null = null;
+  let last = "";
+  const tokens =
+    /(-?[\d.]+\s+){5}-?[\d.]+\s+(?:cm|Tm)|\/([A-Za-z0-9]+)\s+[\d.]+\s+Tf|\((?:\\.|[^\\()])*\)|<[0-9A-Fa-f\s]+>|\bTJ\b|\bTj\b|\bT\*|\bTD\b|\bTd\b|\bBT\b|\bET\b/g;
+  const show = (text: string): void => {
+    const y = gy + ty;
+    if (prevY !== null) {
+      const downThePage = Math.abs(y - prevY) > Math.max(1, size * 0.5);
+      const atSentenceEdge = last !== "" && /[.,;:!?)\]]/.test(last);
+      if (downThePage || atSentenceEdge) parts.push(" ");
+    }
+    parts.push(text);
+    prevY = y;
+    last = text.slice(-1);
+  };
+  for (const m of stream.matchAll(tokens)) {
+    const tok = m[0];
+    if (/cm$/.test(tok)) {
+      const n = tok.match(/-?[\d.]+/g) || [];
+      if (n.length >= 6) { gx = +n[4]; gy = +n[5]; scaleX = Math.abs(+n[0]) || 1; }
+      continue;
+    }
+    if (/Tm$/.test(tok)) {
+      const n = tok.match(/-?[\d.]+/g) || [];
+      if (n.length >= 6) {
+        size = Math.abs(+n[0]) * scaleX || size;
+        tx = +n[4]; ty = +n[5];
+      }
+      continue;
+    }
+    if (tok[0] === "/") { font = fonts.get(byName.get(m[2]) ?? -1) ?? null; continue; }
+    if (tok[0] === "(") { show(decodeBytes(unescapePdf(tok.slice(1, -1)), font)); continue; }
+    if (tok[0] === "<") { show(decodeBytes(hexBytes(tok.slice(1, -1)), font)); continue; }
+  }
+  return parts.join("");
+};
+
+/** The ligatures a font draws as one glyph, spelled out the way prose reads. */
+const LIGATURES: Record<string, string> = {
+  "\uFB00": "ff", "\uFB01": "fi", "\uFB02": "fl", "\uFB03": "ffi",
+  "\uFB04": "ffl", "\uFB05": "st", "\uFB06": "st",
+};
+/** The house welcome page every PDF is bound to open with - front matter.
+ *  Every page carries the brand in its footer, so only the opening of a page
+ *  can tell front matter from content. */
+const HOUSE_PAGE = /house\s+of\s+aspirants/i;
+const isFrontMatter = (s: string): boolean => HOUSE_PAGE.test(s.slice(0, 90));
+
+/** Drawn text -> text a page can quote: control characters out, ligatures
+ *  spelled out, the Gurmukhi pre-base matra put back where the script writes
+ *  it (the file stores glyphs in visual order), whitespace collapsed. */
+const cleanText = (raw: string): string => {
+  let s = raw.replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F]/g, "");
+  s = s.replace(/[\uFB00-\uFB06]/g, (c) => LIGATURES[c] || c);
+  s = s.replace(/\u0A3F([\u0A15-\u0A39\u0A59-\u0A5E])/g, "$1\u0A3F");
+  s = s.replace(/\s+/g, " ").trim();
+  return s.replace(/^[^\p{L}\p{N}]+/u, "");
+};
+
+/** Readable means letters and words - not a code table decoded as noise. */
+const isReadable = (s: string): boolean => {
+  const chars = Array.from(s);
+  if (chars.length < 40) return false;
+  const good = chars.filter((c) => /[\p{L}\p{N}\p{P}\p{S}\s]/u.test(c)).length;
+  return good / chars.length >= 0.7;
+};
+
+// ---------------------------------------------------------------------------
+// first-page preview: assets/img/pdf/<hash>.<ext>
+// ---------------------------------------------------------------------------
+
+const PREVIEW_DIR = path.join(ROOT, "assets", "img", "pdf");
+const PREVIEW_EDGE = 600;                     // px on the long edge of page one
+const PREVIEW_NAME = /^[0-9a-f]{12}\.(jpg|png)$/;
+let previewsMade = 0;
+
+/** PNG IHDR / JPEG SOF - the two formats a preview can be written as. */
+const imageSize = (buf: Buffer): { width: number; height: number } => {
+  if (buf.length > 24 && buf.toString("latin1", 0, 8) === "\x89PNG\r\n\u001a\n") {
+    return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+  }
+  let i = 2;
+  while (i + 9 < buf.length) {
+    if (buf[i] !== 0xff) { i++; continue; }
+    const marker = buf[i + 1];
+    if (marker === 0xd8 || marker === 0x01 || (marker >= 0xd0 && marker <= 0xd7)) { i += 2; continue; }
+    if (marker >= 0xc0 && marker <= 0xcf && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+      return { width: buf.readUInt16BE(i + 7), height: buf.readUInt16BE(i + 5) };
+    }
+    const len = buf.readUInt16BE(i + 2);
+    if (len < 2) return { width: 0, height: 0 };
+    i += 2 + len;
+  }
+  return { width: 0, height: 0 };
+};
+
+/** Draw page one. Every tool here is optional - a machine without one simply
+ *  has no preview to make, and reads the committed file instead. */
+const rasterize = (src: string, png: string, jpg: string): string => {
+  try {
+    execFileSync("/usr/bin/sips",
+      ["-s", "format", "jpeg", "-s", "formatOptions", "70",
+       "-Z", String(PREVIEW_EDGE), src, "--out", jpg], { stdio: "ignore" });
+    if (fs.existsSync(jpg)) return jpg;
+  } catch { /* sips is not on this machine */ }
+  try {
+    execFileSync("/usr/bin/qlmanage",
+      ["-t", "-s", String(PREVIEW_EDGE), "-o", PREVIEW_DIR, src], { stdio: "ignore" });
+    const made = path.join(PREVIEW_DIR, path.basename(src) + ".png");
+    if (fs.existsSync(made)) { fs.renameSync(made, png); return png; }
+  } catch { /* Quick Look is not on this machine */ }
+  return "";
+};
+
+/**
+ * The preview of one PDF: read when the file already draws it (a preview is
+ * generated once and committed, so a machine with no rasteriser reproduces the
+ * same manifest instead of failing), drawn only when it does not exist yet.
+ */
+const ensurePreview = (file: string, digest: string, allowCreate: boolean):
+  { path: string; width: number; height: number } => {
+  const stem = digest.slice(0, 12);
+  for (const ext of ["jpg", "png"]) {
+    const full = path.join(PREVIEW_DIR, `${stem}.${ext}`);
+    if (fs.existsSync(full)) {
+      const size = imageSize(fs.readFileSync(full));
+      if (size.width && size.height) {
+        return { path: `assets/img/pdf/${stem}.${ext}`, width: size.width, height: size.height };
+      }
+    }
+  }
+  if (!allowCreate) return { path: "", width: 0, height: 0 };
+  fs.mkdirSync(PREVIEW_DIR, { recursive: true });
+  const made = rasterize(file, path.join(PREVIEW_DIR, `${stem}.png`),
+                         path.join(PREVIEW_DIR, `${stem}.jpg`));
+  if (!made) return { path: "", width: 0, height: 0 };
+  const size = imageSize(fs.readFileSync(made));
+  if (!size.width || !size.height) { fs.unlinkSync(made); return { path: "", width: 0, height: 0 } };
+  previewsMade += 1;
+  return { path: `assets/img/pdf/${path.basename(made)}`, width: size.width, height: size.height };
+};
+
+/**
+ * What only the bytes know: page count, opening text, first-page preview.
+ *
+ * The summary is the first page that says something THIS file says alone - a
+ * welcome page shipped in every PDF is front matter, not a summary of the
+ * document, so the scan walks on to page two and three before it quotes
+ * anything. When every opening page is front matter, the first one is quoted
+ * anyway: it really is what the file opens with.
+ */
+const describeContent = (drops: Drop[], allowCreate: boolean): Drop[] => {
+  type Opened = { pages: number; texts: string[]; file: string; digest: string };
+  const opened: Opened[] = [];
+  const count = new Map<string, number>();
+  const key = (s: string): string => s.slice(0, 120).toLowerCase();
+
+  for (const drop of drops) {
+    const file = path.join(ROOT, drop.path);
+    const digest = sha256(file);
+    const txt = asLatin1(fs.readFileSync(file));
+    const pages = pageCountOf(txt);
+    const texts: string[] = [];
+    for (const obj of pageObjects(txt, 3)) {
+      const text = cleanText(pageText(txt, obj));
+      if (text && isReadable(text)) texts.push(text);
+    }
+    for (const t of texts) count.set(key(t), (count.get(key(t)) || 0) + 1);
+    opened.push({ pages, texts, file, digest });
+  }
+
+  return drops.map((drop, i) => {
+    const { pages, texts, file, digest } = opened[i];
+    const shared = (t: string): boolean => (count.get(key(t)) || 0) > 1;
+    const pick = texts.find((t) => !isFrontMatter(t) && !shared(t))
+      || texts.find((t) => !isFrontMatter(t))
+      || texts[0]
+      || "";
+    const preview = ensurePreview(file, digest, allowCreate);
+    return {
+      ...drop,
+      pages,
+      summary: clip(pick, 300),
+      thumbnail: preview.path,
+      thumbW: preview.width,
+      thumbH: preview.height,
+    };
+  });
+};
+
+/** A preview no drop points at anymore (its file changed) is dead weight. */
+const sweepPreviews = (drops: Drop[]): void => {
+  if (!fs.existsSync(PREVIEW_DIR)) return;
+  const live = new Set(drops.map((d) => path.basename(d.thumbnail)).filter(Boolean));
+  let gone = 0;
+  for (const name of fs.readdirSync(PREVIEW_DIR)) {
+    if (live.has(name) || !PREVIEW_NAME.test(name)) continue;
+    fs.unlinkSync(path.join(PREVIEW_DIR, name));
+    gone += 1;
+  }
+  if (gone) process.stdout.write(`  \u2139 pdf previews: ${gone} stale preview(s) removed\n`);
+};
+
+// ---------------------------------------------------------------------------
 // scan
 // ---------------------------------------------------------------------------
 
@@ -495,6 +1124,11 @@ const scan = (): Drop[] => {
         sizeLabel: sizeLabel(size),
         published: pdfDateFromName(stem),
         modified: "",
+        pages: 0,
+        summary: "",
+        thumbnail: "",
+        thumbW: 0,
+        thumbH: 0,
       });
     }
   }
@@ -592,10 +1226,11 @@ const domainOf = (): string => {
   return "https://houseofaspirants.in";
 };
 
-/** The inventory, freshly derived - reading files, writing nothing. */
-const inventory = (): { drops: Drop[]; sidecar: Sidecar } => {
+/** The inventory, freshly derived - reading files, writing nothing (unless
+ *  `allowCreate` draws the first-page previews that do not exist yet). */
+const inventory = (allowCreate = false): { drops: Drop[]; sidecar: Sidecar } => {
   const old = readSidecar();
-  const drops = scan().map((d) => stampDates(d, old.files));
+  const drops = describeContent(scan().map((d) => stampDates(d, old.files)), allowCreate);
   return { drops, sidecar: stampSidecar(drops, old) };
 };
 
@@ -605,13 +1240,19 @@ const fail = (message: string): never => {
 };
 
 const write = (): number => {
-  const { drops, sidecar } = inventory();
+  const { drops, sidecar } = inventory(true);
   const manifest = readManifest();
   if (typeof manifest.version !== "number") manifest.version = 3;
   if (typeof manifest.domain !== "string") manifest.domain = domainOf();
   manifest.drops = drops;
   fs.writeFileSync(MANIFEST_FILE, json(manifest), "utf8");
   fs.writeFileSync(SIDECAR_FILE, json(sidecar), "utf8");
+  sweepPreviews(drops);
+  if (previewsMade) {
+    process.stdout.write(
+      `  \u2139 pdf previews: ${previewsMade} first-page preview(s) drawn -> assets/img/pdf/\n`
+    );
+  }
   process.stdout.write(
     `  \u2139 pdf drops: ${drops.length} file(s) described -> data/content-manifest.json\n`
   );
