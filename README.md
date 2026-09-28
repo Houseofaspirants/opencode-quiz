@@ -35,6 +35,9 @@ Punjab Government Exam and other competitive exam aspirants.
 20. [Google sign-in & cloud sync (Firebase)](#20-google-sign-in--cloud-sync-firebase)
 21. [Troubleshooting](#21-troubleshooting)
 22. [Telegram growth & conversion system](#22-telegram-growth--conversion-system)
+23. [Leaderboard & gamification](#23-leaderboard--gamification)
+24. [Content system — Markdown to live pages (no CMS, no code)](#24-content-system--markdown-to-live-pages-no-cms-no-code)
+25. [Multilingual quizzes — one topic, many languages](#25-multilingual-quizzes--one-topic-many-languages)
 
 ---
 
@@ -972,5 +975,95 @@ nothing renders and nothing is linked until verifiable sources land — see
 
 * Telegram: [t.me/HouseOfAspirant](https://t.me/HouseOfAspirant)
 * Instagram · YouTube — links in the site footer.
+
+---
+
+## 25. Multilingual quizzes — one topic, many languages
+
+**One quiz = one topic.** Language is a *view* of a quiz, never part of its
+identity. The topic id, the URL, search, bookmarks, XP, progress, the
+leaderboard and analytics are all keyed on the topic id alone — so switching
+language never restarts a quiz, never drops an answer and never creates a
+second card.
+
+### How a translation is recognised (no config to write)
+
+Drop a translation next to the original and mark it with a **file-name
+language marker**, or put it in a **language folder**:
+
+| Shape | Example |
+| --- | --- |
+| folder | `questions/gk/punjab-gk/English/sikhism-part1.json` + `…/Punjabi/sikhism-part1.json` |
+| word marker | `sikhism-part1-punjabi.json`, `…-english.json`, `…-gurmukhi.json` |
+| dotted code | `sikhism-part1.en.json`, `sikhism-part1.pa.json`, **`sikhism-part1.ta.json`** |
+
+The dotted form accepts any 2–3 letter ISO code, so **adding a language is a
+data change only**: copy a JSON file, translate it, save it as `topic.ta.json`,
+run the build — Tamil appears in the badge, in the in-quiz switch and in the
+manifest with zero code changes. (Word markers are table-driven in `LANG_WORDS`
+inside both builders, because `…-mcq` and `…-ta` cannot be told apart by
+shape.)
+
+Two files become one topic when **either** their stems match with the language
+marker stripped, **or** their JSON `topic` + part token match — always within
+the same subject and category. Two files in the *same* language are never
+grouped (that would swallow a topic instead of pairing it). The English file
+becomes the primary record when it exists, otherwise the first by
+`(language, file)`.
+
+### What the build emits
+
+Each record in `data/index.json` carries the topic and its translations:
+
+```json
+{
+  "id": "sikhism-part1-20-mcqs",
+  "variants":            { "en": "…/sikhism-part1-20-mcqs.json", "pa": "…/…-punjabi.json" },
+  "availableLanguages":  ["en", "pa"],
+  "titles":              { "en": "Sikhism (Sikh Dharam) - Part 1", "pa": "Sikhism (Sikh Dharam) - Part 1" },
+  "counts":              { "en": 30, "pa": 30 }
+}
+```
+
+`data/quiz-manifest.json` is a flat, timestamp-free projection of exactly that
+(`version`, `topics[]` with `id`, `subject`, `category`,
+`availableLanguages`, `count`, `counts`, `titles`, `variants`) — the contract
+tooling and future front ends should read instead of walking question files at
+page load. Both builders emit it byte-for-byte identically and `ci.sh` diffs it.
+
+### What the reader sees
+
+* **one card per quiz** — the four Sikhism sets are four cards, not eight —
+  with a `ਪੰ · EN` badge only when two languages really exist, and a plain
+  `English` / `Punjabi` label on a single-language subject card;
+* the quiz opens in the reader's language (Punjabi by default) and switches
+  **inside** the quiz: question text and options are replaced while the
+  question number, answers, marks, palette, running score and both countdowns
+  stay exactly where they were;
+* a missing translation falls back preferred language → English → whatever
+  exists, and never errors;
+* search, the Daily Challenge and Mock Tests resolve through the same helper
+  (`pickVariantFile()`), so one search for "Sikhism" returns four quizzes, not
+  eight.
+
+### Validation — warnings, never crashes
+
+At build time every pair must agree on question count, question ids, option
+count and the option marked correct (saved answers are indices, so drift would
+silently re-point them). A disagreement prints
+`Translation mismatch: <file> …` once per pair and the build still succeeds.
+The browser runs the same check when switching language: it refuses the swap,
+warns in the console and keeps the current language.
+
+### Type checking (no bundler, no transpile)
+
+The site ships plain scripts, so type safety comes from `// @ts-check` +
+JSDoc, `jsconfig.json` and `assets/js/hoa-types.d.ts` (the `window.HOA`,
+`gtag`, `dataLayer` globals):
+
+```bash
+npm run typecheck      # tsc --noEmit -p jsconfig.json — 0 errors
+bash scripts/ci.sh     # 7 gates, including the type check
+```
 
 **© House of Aspirants** — Practice Daily. Crack Punjab Police.

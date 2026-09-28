@@ -1386,14 +1386,34 @@ if landing_pages:
                 errors.append(f"{f}: {label} missing")
         if faq_count(h) < 3:
             errors.append(f"{f}: needs >= 3 FAQ questions (has {faq_count(h)})")
-        # Subject -> Topic / Category: every child landing file must be linked
+        # Subject -> Category / Topic: every DIRECT child landing file must be
+        # linked. A topic that sits inside a category is a grandchild — its page
+        # belongs to that category's page (verified by the Category -> Topic rule
+        # below), so demanding it here too would force the subject page to
+        # duplicate the category's contents. Top-level topics remain the
+        # subject's own children and are still expected here.
+        direct_topics = {f"topic-{sid}-{tid}.html"
+                         for (s_id, tid), t in topic_by_key.items()
+                         if s_id == sid and not t.get("category")}
         want = {c for c in links_of.get(r["file"], [])
                 if c.startswith((f"category-{sid}-", f"topic-{sid}-"))}
         expected = {f2 for f2 in lpages
-                    if f2.startswith((f"category-{sid}-", f"topic-{sid}-"))}
+                    if f2.startswith(f"category-{sid}-")} | direct_topics
         missing = sorted(expected - want)
         if missing:
             errors.append(f"{f}: Subject->Topic links missing {missing}")
+
+    # --- Category page: must link every topic page it owns. This is the other
+    # half of the subject silo (subject -> category -> topic): without it a
+    # categorized topic's page could sit behind no inbound link at all, since
+    # the subject page deliberately links only its own direct children.
+    for (s_id, tid), t in sorted(topic_by_key.items()):
+        cid = t.get("category")
+        if not cid:
+            continue
+        parent, child = f"category-{s_id}-{cid}.html", f"topic-{s_id}-{tid}.html"
+        if parent in lpages and child in lpages and child not in links_of.get(parent, []):
+            errors.append(f"{parent}: Category->Topic links missing [{child}]")
 
     # --- Category page: links back to its parent subject + at least one quiz -
     for r in [x for x in landing_pages if x["type"] == "category"]:
@@ -1523,9 +1543,12 @@ if landing_pages:
         want_topics = []
         for sid in subj_ids:
             s = subj_by_id.get(sid) or {}
-            flat = [(None, t) for t in s.get("topics", []) or []]
-            for c in s.get("categories", []) or []:
-                flat += [(c, t) for t in c.get("topics", []) or []]
+            # One pass over the subject's flat topic list (it already holds the
+            # categorized quizzes — see all_topics() in build_landing_pages),
+            # with the category each record declares attached to it.
+            by_cat = {c.get("id"): c for c in (s.get("categories") or [])}
+            flat = [(by_cat.get(t.get("category")), t)
+                    for t in (s.get("topics") or [])]
             for c, t in flat:
                 if cat_ids and c and c["id"] not in cat_ids:
                     continue

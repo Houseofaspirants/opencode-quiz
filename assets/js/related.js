@@ -72,8 +72,10 @@
         out.push({ href, name: t.name, count: t.count || 0,
                    icon: s.icon, subjectName: s.name, rank });
       };
+      // One pass over the subject's flat topic list: it already holds the
+      // categorized quizzes (each carrying its own `category`), so also walking
+      // s.categories would push every one of them into the rail twice.
       (s.topics || []).forEach((t) => add(t, t.category || ""));
-      (s.categories || []).forEach((c) => (c.topics || []).forEach((t) => add(t, c.id)));
     });
     return out.sort((a, b) => a.rank - b.rank); // Array#sort is stable
   }

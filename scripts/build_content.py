@@ -3819,9 +3819,10 @@ def quiz_href(t):
 def subject_strip(index):
     cards = []
     for s in index.get("subjects", []):
-        n = sum(1 for c in s.get("categories", []) for t in c.get("topics", [])
-                if t.get("available")) + \
-            sum(1 for t in s.get("topics", []) if t.get("available"))
+        # One pass over the subject's flat topic list: it already contains the
+        # categorized quizzes, so also summing categories[].topics would count
+        # every one of them twice (e.g. "8 sets" where 4 sets exist).
+        n = sum(1 for t in s.get("topics", []) if t.get("available"))
         if not n:
             continue
         cards.append(f'<a class="card card-pad reveal" href="subject.html?subject={s["id"]}">'

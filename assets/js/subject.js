@@ -1,3 +1,4 @@
+// @ts-check
 /* ============================================================================
  * subject.js | Subject page — 3-level hierarchy: Subject › Category › Topic
  * ----------------------------------------------------------------------------
@@ -23,11 +24,15 @@
   const wrap = document.getElementById("topicGrid");
   const titleEl = document.getElementById("subjectTitle");
   const crumbSubject = document.getElementById("crumbSubject");
-  const crumbSubjectLink = document.getElementById("crumbSubjectLink");
+  const crumbSubjectLink = /** @type {HTMLAnchorElement | null} */ (
+    document.getElementById("crumbSubjectLink")
+  );
   const crumbSep = document.getElementById("crumbSep");
   const crumbCategory = document.getElementById("crumbCategory");
   const descEl = document.getElementById("subjectDesc");
-  const filterEl = document.getElementById("topicFilter");
+  const filterEl = /** @type {HTMLInputElement | null} */ (
+    document.getElementById("topicFilter")
+  );
   const secEyebrow = document.getElementById("secEyebrow");
   const secTitle = document.getElementById("secTitle");
   const secHint = document.getElementById("secHint");
@@ -175,7 +180,9 @@
         inLanguage: "en-IN",
         breadcrumb: { "@id": `${canonical}#breadcrumb` },
       };
-      const graph = [page];
+      // Schema.org nodes are deliberately shapeless: each @type carries only
+      // the fields that apply to it, so the array is not one fixed interface.
+      const graph = /** @type {any[]} */ ([page]);
       if (items.length) {
         page.mainEntity = { "@id": `${canonical}#list` };
         graph.push({
@@ -293,7 +300,7 @@
        ${clickable ? "" : 'aria-disabled="true"'}>
       <span class="qc-icon">${icon}</span>
       <span>
-        <h3>${esc(t.name)}${HOA.langBadge(t.variants)}</h3>
+        <h3>${esc(t.name)}${HOA.langBadge(t.variants, { single: true })}</h3>
         <span class="qc-sub">${
           clickable
             ? `${t.count} question${t.count === 1 ? "" : "s"} · Start quiz →`

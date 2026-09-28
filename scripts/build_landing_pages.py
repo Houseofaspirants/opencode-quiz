@@ -481,11 +481,16 @@ def link_record(src, src_type, dst, dst_type, anchor):
 
 # ------------------------------------------------------- entity collection --
 def all_topics(subject):
-    """[(category_or_None, topic)] for a subject, manifest order preserved."""
-    out = [(None, t) for t in subject.get("topics", [])]
-    for c in subject.get("categories", []):
-        out += [(c, t) for t in c.get("topics", [])]
-    return out
+    """[(category_or_None, topic)] for a subject, manifest order preserved.
+
+    A subject's `topics` list holds EVERY topic it owns — a categorized one is
+    listed there AND again under its category — so this walks that one list and
+    attaches the category each record declares. Walking both lists would visit
+    every categorized quiz twice: two landing pages for one quiz, double-counted
+    set totals, and the "landing pages share title" failure it produces.
+    """
+    by_cat = {c.get("id"): c for c in subject.get("categories", [])}
+    return [(by_cat.get(t.get("category")), t) for t in subject.get("topics", [])]
 
 
 def live_topics(subject):

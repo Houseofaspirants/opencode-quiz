@@ -59,7 +59,7 @@ const hasJson = (dir) =>
  * (questions/<subject>/<Language>/...). It is a TRANSLATION axis, not a syllabus
  * category: "Punjabi" is not a lane of Current Affairs, it is the same content in
  * another language. Two translations of one set are paired up by
- * languageVariantKey() below and shipped as ONE topic carrying variants.
+ * resolveLanguagePairs() below and shipped as ONE topic carrying variants.
  * Kept in lockstep with build_index.py - see the parity harness notes there.
  */
 const LANG_FOLDERS = {
@@ -71,6 +71,58 @@ const langCode = (dirname) => {
   const key = String(dirname).trim().toLowerCase();
   return LANG_FOLDERS[key] || LANG_FOLDERS[slug(dirname)] || null;
 };
+
+/* A language can also be written into a FILE name, which is how a translation
+ * that has no folder of its own ships:
+ *     questions/gk/punjab-gk/sikhism-part1-20-mcqs.json          (English)
+ *     questions/gk/punjab-gk/sikhism-part1-20-mcqs-punjabi.json  (Punjabi)
+ *     questions/gk/punjab-gk/sikhism-part1-20-mcqs.hi.json       (Hindi)
+ * The dotted form takes ANY 2-3 letter code, so a new language is data-only:
+ * drop `topic.ta.json` next to `topic.en.json` and Tamil is available, with no
+ * table below to extend. The word form needs a table because `…-mcq` and
+ * `…-ta` are indistinguishable by shape alone. */
+const LANG_WORDS = {
+  english: "en", eng: "en", en: "en",
+  punjabi: "pa", panjabi: "pa", gurmukhi: "pa", pa: "pa",
+  hindi: "hi", hi: "hi",
+  tamil: "ta", ta: "ta",
+  marathi: "mr", mr: "mr",
+  gujarati: "gu", gu: "gu",
+};
+const MARKER_RX = new RegExp(`[-_](${Object.keys(LANG_WORDS).join("|")})$`, "i");
+const DOTTED_RX = /\.([a-z]{2,3})$/;
+// Not languages, even though they are 2-3 letters (`sikhism.pdf.json`).
+const NON_LANG_SUFFIXES = new Set(["pdf", "txt", "doc", "md", "csv", "xml", "zip"]);
+
+/** `['sikhism-part1-20-mcqs', 'pa']` from `sikhism-part1-20-mcqs-punjabi`.
+ *
+ *  Both markers sit at the END of the stem (never a token in the middle of one)
+ *  and may stack (`topic-punjabi.en`), so this runs until there is nothing left
+ *  to strip; a dotted code wins over a word marker when both appear.
+ *
+ *  Returns [base, lang], where `base` is what the topic's id is built from: the
+ *  file name with its language removed, so no topic id ever carries one. */
+function langFromStem(stem) {
+  let base = stem;
+  let wordLang = "";
+  let dottedLang = "";
+  for (let n = 0; n < 4; n++) {
+    const dotted = DOTTED_RX.exec(base);
+    if (dotted && !NON_LANG_SUFFIXES.has(dotted[1])) {
+      dottedLang = dotted[1];
+      base = base.slice(0, dotted.index);
+      continue;
+    }
+    const m = MARKER_RX.exec(base);
+    if (m) {
+      if (!dottedLang) wordLang = LANG_WORDS[m[1].toLowerCase()];
+      base = base.slice(0, m.index);
+      continue;
+    }
+    break;
+  }
+  return [base, dottedLang || wordLang];
+}
 
 const PART_RX = /part[-_ ]?(\d+)/i;
 const GURMUKHI_RX = /[\u0A00-\u0A7F]/;
@@ -116,19 +168,106 @@ const setTopicOf = (data) => {
   return "";
 };
 
-/** Key shared by every translation of one question set.
+/** The JSON-topic + part identity of one question set: `…-2026/part1`.
  *  'current-affairs-july-2026-part1-geography-environment' (en) and
- *  'current-affairs-july-2026-part1-punjabi'              (pa) must land on the
- *  same key, so we pair on the part token plus the JSON topic rather than on the
- *  stem, which carries language-specific suffixes. */
-function languageVariantKey(item, data) {
-  const stem = item.file.replace(/\.json$/, "");
-  const m = PART_RX.exec(stem);
-  const part = m ? `part${Number(m[1])}` : "";
+ *  'current-affairs-july-2026-part1-punjabi' (pa) describe the same set even
+ *  though their stems differ everywhere but the part token, so this key - not
+ *  the stem - is what links them. Empty when the file carries no part token:
+ *  those are covered by the stem key (language markers removed) instead. */
+function setKey(data, base) {
+  const m = PART_RX.exec(base);
+  if (!m) return "";
   const topic = slug(setTopicOf(data));
-  if (part) return topic ? `${topic}/${part}` : part;
-  // No part token: fall back to the stem minus a trailing language marker.
-  return slug(stem).replace(/[-_](english|eng|punjabi|panjabi|gurmukhi|en|pa)$/, "");
+  const part = `part${Number(m[1])}`;
+  return topic ? `${topic}/${part}` : part;
+}
+
+/** The question array inside a file, whichever house shape it uses. */
+function questionsOf(data) {
+  if (Array.isArray(data)) return data;
+  if (data && typeof data === "object") {
+    const q = data.questions || data.mcqs || data.quiz;
+    return Array.isArray(q) ? q : [];
+  }
+  return [];
+}
+
+/** The title one translation of a set carries - the rule the record loop has
+ *  always used for the primary file, applied to every translation too. */
+function variantTitle(data, stemId, part, setTopic) {
+  let name =
+    data && typeof data === "object"
+      ? data.topic || data.title || humanize(stemId)
+      : humanize(stemId);
+  // Parts 1-4 of one month all carry the same JSON "topic", so without this
+  // they would be four identically named cards - and four identical <title>s.
+  if (part && setTopic) name = `${setTopic} - Part ${part}`;
+  return name;
+}
+
+/** The option a question marks correct, resolved the way the site does it:
+ *  an int index, a letter, or the option's own text. */
+function answerIndex(qd, opts) {
+  let value = null;
+  for (const key of ["correct", "answer", "key"]) {
+    if (qd[key] !== undefined && qd[key] !== null && qd[key] !== "") {
+      value = qd[key];
+      break;
+    }
+  }
+  if (value === null) return null;
+  if (typeof value === "string") {
+    const text = value.trim();
+    if (text.length === 1 && /[a-z]/i.test(text)) {
+      const letter = text.toUpperCase().charCodeAt(0) - 65;
+      if (letter >= 0 && letter < opts.length) return letter;
+    }
+    for (let i = 0; i < opts.length; i++) {
+      if (String(opts[i]).trim().toLowerCase() === text.toLowerCase()) return i;
+    }
+    return text;
+  }
+  return value;
+}
+
+/** The first way two translations of one set disagree, as one sentence.
+ *
+ *  Question count, question ids, answer and option count must line up or a
+ *  language switch would silently point saved answers at a different question.
+ *  A warning only - a partial translation must never take the site down - and
+ *  never more than one line per pair, so a broken pair cannot bury the log. */
+function translationProblem(primary, other) {
+  const a = primary.questions;
+  const b = other.questions;
+  const relA = primary.item.rel;
+  const relB = other.item.rel;
+  if (a.length !== b.length) return `${relB} has ${b.length} questions, ${relA} has ${a.length}`;
+  for (let i = 0; i < a.length; i++) {
+    const da = a[i] && typeof a[i] === "object" ? a[i] : {};
+    const db = b[i] && typeof b[i] === "object" ? b[i] : {};
+    const ida = Number.isInteger(da.id) ? da.id : null;
+    const idb = Number.isInteger(db.id) ? db.id : null;
+    if ((ida === null) !== (idb === null)) {
+      return `${relB} Q${i + 1} has an id in only one of the two files`;
+    }
+    if (ida !== null && ida !== idb) {
+      return `${relB} Q${i + 1} carries id ${idb}, ${relA} has ${ida}`;
+    }
+    let optsA = da.options || da.opts || [];
+    let optsB = db.options || db.opts || [];
+    if (!Array.isArray(optsA)) optsA = [];
+    if (!Array.isArray(optsB)) optsB = [];
+    if (optsA.length !== optsB.length) {
+      return `${relB} Q${i + 1} has ${optsB.length} options, ${relA} has ${optsA.length}`;
+    }
+    if (answerIndex(da, optsA) !== answerIndex(db, optsB)) {
+      return (
+        `${relB} Q${i + 1} answers differently from ${relA} ` +
+        `(the two files disagree on the correct option)`
+      );
+    }
+  }
+  return "";
 }
 
 /** True when the questions are written in Gurmukhi script. Used only for files
@@ -340,51 +479,137 @@ if (!fs.existsSync(QUESTIONS_DIR)) {
 }
 
 /* ------------------------------ 3b. PAIR THE TRANSLATIONS OF ONE SET ------
- * A Punjabi file and its English twin describe the SAME 20 questions, so shipping
+ * A Punjabi file and its English twin describe the SAME questions, so shipping
  * both as separate topics would double the library and put two near-identical
  * cards on the page. The primary file becomes the topic and its siblings ride
- * along as `variants`, which is what the quiz page uses to offer a language switch
- * without leaving the question you are on. */
+ * along as `variants`, which is what the quiz page uses to offer a language
+ * switch without leaving the question you are on.
+ *
+ * Two files are linked inside one subject+category when EITHER key matches:
+ *   * their stems are the same once language markers are removed
+ *     (`sikhism-part1-20-mcqs` / `sikhism-part1-20-mcqs-punjabi`), or
+ *   * their JSON topic + part token match
+ *     (`…-part1-geography-environment` / `…-part1-punjabi`).
+ * The stem key is what pairs files that live in a CATEGORY folder, which the
+ * language-bucket pass never sees; the set key pairs folders whose stems differ
+ * everywhere but the part number.
+ *
+ * Files in the SAME language are never linked: two English files sharing a key
+ * are two topics (or a duplicate to be warned about), never a pair - so
+ * grouping can add a translation to a set but can never swallow a file. */
 function resolveLanguagePairs(items) {
-  const normal = items.filter((i) => !i.lang);
-  const multi = items.filter((i) => i.lang);
-  if (!multi.length) return items;
-
-  const groups = new Map();
-  for (const i of multi) {
+  const staged = [];
+  for (const item of items) {
+    const [base, markerLang] = langFromStem(item.file.replace(/\.json$/, ""));
+    let lang = item.lang || markerLang;
     let data = null;
     try {
-      data = readJSON(i.full);
-    } catch (err) {
+      data = readJSON(item.full);
+    } catch {
       data = null; // the record loop reports the parse error for us
     }
-    const key = JSON.stringify([i.subjectId, languageVariantKey(i, data)]);
-    const m = PART_RX.exec(i.file.replace(/\.json$/, ""));
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push({
-      item: i,
-      part: m ? Number(m[1]) : 0,
+    const questions = questionsOf(data);
+    // No folder and no marker: the script the questions are written in is the
+    // only honest signal left (see hasGurmukhi).
+    lang = lang || (hasGurmukhi(questions) ? "pa" : "en");
+    const partM = PART_RX.exec(base);
+    item.lang = lang; // the record loop reads these two
+    item.base = base;
+    staged.push({
+      item, lang, base, data, questions,
+      part: partM ? Number(partM[1]) : 0,
       topic: setTopicOf(data),
     });
   }
 
-  const out = normal.slice();
-  for (const members of groups.values()) {
-    // Code-point order (not localeCompare) so both twins sort identically.
+  // --- union-find over the two keys, refusing any union that would put two
+  // files of one language in the same group -------------------------------
+  const parent = staged.map((_, i) => i);
+  const find = (x) => {
+    let r = x;
+    while (parent[r] !== r) {
+      parent[r] = parent[parent[r]];
+      r = parent[r];
+    }
+    return r;
+  };
+  const rootLangs = new Map();
+  staged.forEach((s, i) => rootLangs.set(i, new Set([s.lang])));
+
+  const keysFor = (st) => {
+    const scope = `${st.item.subjectId}|${st.item.categoryId || ""}`;
+    const sk = setKey(st.data, st.base);
+    return [`${scope}|stem:${slug(st.base)}`, sk ? `${scope}|set:${sk}` : null];
+  };
+
+  const claimed = new Map();
+  staged.forEach((st, pos) => {
+    for (const key of keysFor(st)) {
+      if (key === null) continue;
+      if (!claimed.has(key)) claimed.set(key, pos);
+      const other = claimed.get(key);
+      if (other === pos || staged[other].lang === st.lang) continue; // one language = one file per key
+      let a = find(other);
+      let b = find(pos);
+      if (a === b) continue;
+      if (b < a) { const swap = a; a = b; b = swap; } // lower position roots the group
+      const setA = rootLangs.get(a);
+      const setB = rootLangs.get(b);
+      if ([...setA].some((l) => setB.has(l))) continue; // joining would collide a language
+      parent[b] = a;
+      for (const l of setB) setA.add(l);
+      rootLangs.delete(b);
+    }
+  });
+
+  const out = [];
+  const emitted = new Set();
+  for (let pos = 0; pos < staged.length; pos++) {
+    const root = find(pos);
+    if (emitted.has(root)) continue;
+    emitted.add(root);
+    const members = [];
+    for (let p = 0; p < staged.length; p++) if (find(p) === root) members.push(staged[p]);
+    if (members.length === 1) {
+      out.push(members[0].item); // nothing to pair: file untouched
+      continue;
+    }
+    // Every translation, ordered so both twins build the same bytes.
     members.sort((a, b) => {
-      const l = a.item.lang < b.item.lang ? -1 : a.item.lang > b.item.lang ? 1 : 0;
+      const l = a.lang < b.lang ? -1 : a.lang > b.lang ? 1 : 0;
       if (l) return l;
       return a.item.file < b.item.file ? -1 : a.item.file > b.item.file ? 1 : 0;
     });
     // The English file owns the topic id/URL when it exists (descriptive stems);
     // the QUIZ page still decides what to SHOW from the reader's language
     // preference, which defaults to Punjabi.
-    const primary = members.find((m) => m.item.lang === "en") || members[0];
+    const primary = members.find((m) => m.lang === "en") || members[0];
+    for (const m of members) {
+      if (m === primary) continue;
+      const problem = translationProblem(primary, m);
+      if (problem) warn(`Translation mismatch: ${problem}`);
+    }
     const variants = {};
     for (const m of members) {
-      if (!(m.item.lang in variants)) variants[m.item.lang] = m.item.rel;
+      if (!(m.lang in variants)) variants[m.lang] = m.item.rel;
     }
-    out.push({ ...primary.item, variants, part: primary.part, setTopic: primary.topic });
+    // Each translation's OWN title and question count: the manifest shows what
+    // a reader would really get in each language, and the counts are the
+    // numbers the mismatch warning above compares.
+    const titles = {};
+    const counts = {};
+    for (const m of members) {
+      titles[m.lang] = variantTitle(m.data, m.base, m.part, m.topic);
+      counts[m.lang] = m.questions.length;
+    }
+    out.push({
+      ...primary.item,
+      variants,
+      part: primary.part,
+      setTopic: primary.topic,
+      titles,
+      counts,
+    });
   }
   return out;
 }
@@ -396,8 +621,12 @@ let quizCount = 0;
 
 for (const {
   subjectId, file, full, rel, categoryId, lang, variants, part, setTopic,
+  base, titles: variantTitles, counts: variantCounts,
 } of questionFiles) {
-  const id = file.replace(/\.json$/, "");
+  // ONE id per topic, and never a language inside it: `…-punjabi` is the same
+  // topic as its English twin, so the id comes from the marker-stripped stem the
+  // pairing pass worked out (quiz?subject=…&topic=<this>).
+  const id = base || file.replace(/\.json$/, "");
 
   let data;
   try {
@@ -440,18 +669,30 @@ for (const {
   const subject = ensureSubject(subjectId);
   const isEmpty = questions.length === 0; // valid file, but 0 questions yet
 
-  const baseName = (isObj && (data.topic || data.title)) || humanize(id);
   // Parts 1-4 of one month all carry the same JSON "topic", so without this they
   // would be four identically named cards - and four identical <title>s.
-  const name = part && setTopic ? `${setTopic} - Part ${part}` : baseName;
+  const name = variantTitle(data, id, part, setTopic);
 
-  // Language: a folder named for it is authoritative; otherwise read the script
-  // the questions are actually written in. `variants` lists the translations that
-  // really exist on disk - every badge and the quiz page's language switch are
-  // driven by this field, never by an assumption.
+  // Language: a folder named for it is authoritative, then the file name, then -
+  // for a file carrying neither - the script the questions are written in.
+  // `variants` lists the translations that really exist on disk - every badge and
+  // the quiz page's language switch are driven by this field, never by an
+  // assumption.
   const language = lang || (hasGurmukhi(questions) ? "pa" : "en");
   const langVariants =
     variants && Object.keys(variants).length ? variants : { [language]: rel };
+  // One topic object, every language it ships in - the shape the manifest and the
+  // front end both read:
+  //   { id: "sikhism-part1-20-mcqs", availableLanguages: ["en", "pa"] }
+  const availableLanguages = Object.keys(langVariants).sort();
+  const titles =
+    variantTitles && Object.keys(variantTitles).length
+      ? variantTitles
+      : { [language]: name };
+  const counts =
+    variantCounts && Object.keys(variantCounts).length
+      ? variantCounts
+      : { [language]: questions.length };
 
   const record = {
     id,
@@ -469,6 +710,9 @@ for (const {
     ...(categoryId ? { category: categoryId } : {}),
     language,
     variants: langVariants,
+    availableLanguages,
+    titles,
+    counts,
   };
 
   if (subject._topicsById.has(id)) {
@@ -598,6 +842,42 @@ if (index.stats.questions === 0) {
     "  \u2139 Database is EMPTY (as intended). Add questions/<subject>/<category>/<topic>.json to publish a quiz."
   );
 }
+
+/* ------------------------------------------------------ 5b. QUIZ MANIFEST
+ * data/quiz-manifest.json is the multilingual TOPIC manifest: one entry per topic
+ * with its id, subject, the languages it ships in, its question count and each
+ * language's own title. It is derived from the exact records above in the same
+ * pass, so it can never drift from data/index.json, and it carries no timestamp -
+ * byte-stable, so both twins can be diffed on it in scripts/ci.sh. The site
+ * itself reads index.json (one request, no second fetch per page); this manifest
+ * is the flat contract for tooling and for future front ends. */
+const manifestTopic = (s, t) => ({
+  id: t.id,
+  subject: s.id,
+  category: t.category || "",
+  availableLanguages: t.availableLanguages,
+  count: t.count,
+  counts: t.counts,
+  titles: t.titles,
+  variants: t.variants,
+});
+
+const quizManifest = {
+  version: 1,
+  // One entry per TOPIC, once: a subject's `topics` list already holds its
+  // categorized topics too (they are also listed under `categories[].topics`),
+  // so walking only `s.topics` keeps every topic exactly once.
+  topics: outputSubjects.flatMap((s) => s.topics.map((t) => manifestTopic(s, t))),
+};
+
+fs.writeFileSync(
+  path.join(DATA_DIR, "quiz-manifest.json"),
+  JSON.stringify(quizManifest, null, 2)
+);
+info(
+  `data/quiz-manifest.json - ${quizManifest.topics.length} topic(s), ` +
+    `${quizManifest.topics.reduce((n, t) => n + t.availableLanguages.length, 0)} translation(s)`
+);
 
 /* ----------------------------------------------------------- 6. SITEMAP */
 if (site.url) {

@@ -4,11 +4,12 @@
 #   1. rebuild every Markdown content page (hubs, notes, magazine, sessions…)
 #   2. rebuild the manifest with both builders (byte-parity when Node exists)
 #   3. rebuild the SEO landing set
-#   4. run scripts/seo_check.py
-#   5. run scripts/rich_results_check.py
-#   6. prove the committed tree is exactly what those builders emit
+#   4. type-check the browser scripts (tsc --noEmit over jsconfig.json)
+#   5. run scripts/seo_check.py
+#   6. run scripts/rich_results_check.py
+#   7. prove the committed tree is exactly what those builders emit
 #
-# Step 6 is what makes "the gates passed" meaningful: a green seo_check on a
+# Step 7 is what makes "the gates passed" meaningful: a green seo_check on a
 # stale checkout proves nothing. Only the four files that legitimately carry a
 # run timestamp are normalised back to their committed value first, so a real
 # content drift still fails the diff.
@@ -19,15 +20,16 @@ cd "$(dirname "$0")/.."
 
 step() { printf '\n\033[1m· %s\033[0m\n' "$1"; }
 
-step "1/6 content pages — python3 scripts/build_content.py"
+step "1/7 content pages — python3 scripts/build_content.py"
 python3 scripts/build_content.py
 
-step "2/6 manifest — python3 scripts/build_index.py"
+step "2/7 manifest — python3 scripts/build_index.py"
 python3 scripts/build_index.py
 
 if command -v node >/dev/null 2>&1; then
-  step "3/6 manifest parity — node scripts/build-index.mjs"
+  step "3/7 manifest parity — node scripts/build-index.mjs"
   cp data/index.json /tmp/hoa-index.py.json
+  cp data/quiz-manifest.json /tmp/hoa-quiz-manifest.py.json
   cp sitemap.xml /tmp/hoa-sitemap.py.xml
   node scripts/build-index.mjs
   # volatile fields (generatedAt, lastmod) are allowed to differ between runs
@@ -36,23 +38,37 @@ if command -v node >/dev/null 2>&1; then
     echo "FAIL: build_index.py and build-index.mjs disagree on data/index.json" >&2
     exit 1
   fi
+  # quiz-manifest.json carries no timestamp, so it must match byte for byte -
+  # it is the multilingual topic contract (id, languages, counts, titles).
+  if ! diff -u /tmp/hoa-quiz-manifest.py.json data/quiz-manifest.json; then
+    echo "FAIL: build_index.py and build-index.mjs disagree on data/quiz-manifest.json" >&2
+    exit 1
+  fi
   if ! diff -u <(norm < /tmp/hoa-sitemap.py.xml) <(norm < sitemap.xml); then
     echo "FAIL: build_index.py and build-index.mjs disagree on sitemap.xml" >&2
     exit 1
   fi
   echo "  parity OK (both builders emit the same bytes)"
 else
-  step "3/6 manifest parity — skipped (node not installed; CI runs it)"
+  step "3/7 manifest parity — skipped (node not installed; CI runs it)"
 fi
 
-step "4/6 landing pages — python3 scripts/build_landing_pages.py"
+step "4/7 type check — tsc --noEmit (jsconfig.json)"
+if npx --yes --package typescript@5.6.3 tsc --version >/dev/null 2>&1; then
+  npx --yes --package typescript@5.6.3 tsc --noEmit -p jsconfig.json
+  echo "  type check OK (0 errors)"
+else
+  echo "  type check skipped (typescript unavailable offline; CI runs it)"
+fi
+
+step "5/7 landing pages — python3 scripts/build_landing_pages.py"
 python3 scripts/build_landing_pages.py
 
-step "5/6 gates"
+step "6/7 gates"
 python3 scripts/seo_check.py
 python3 scripts/rich_results_check.py
 
-step "6/6 committed tree matches the builders"
+step "7/7 committed tree matches the builders"
 python3 - <<'PY'
 """Rewrite the four run-timestamped fields to their committed values."""
 import re

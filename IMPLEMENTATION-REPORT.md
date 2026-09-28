@@ -921,3 +921,94 @@ two writers emit identical bytes.
 * `node scripts/build-index.mjs` vs `python3 scripts/build_index.py`:
   `data/index.json` and `sitemap.xml` byte-identical apart from the two
   volatile fields the gate already normalises (`generatedAt`, `<lastmod>`).
+
+---
+
+## 41. Multilingual topic architecture — language is UI state
+
+**The bug it fixes.** Punjabi and English copies of a quiz were two unrelated
+records: `sikhism-part1-20-mcqs.json` and `sikhism-part1-20-mcqs-punjabi.json`
+never met the pairing logic (which only looked inside `English/` and `Punjabi/`
+folders), so General Knowledge showed **eight cards for four quizzes**, two
+sitemap entries per set, and a reader's language preference was ignored by
+anything that had no folder of its own.
+
+**The rule.** One topic, never language-bearing: `topicId` is the file stem with
+its language marker stripped. Language lives on the record (`variants`,
+`availableLanguages`, `titles`, `counts`) and in the browser as UI state — the
+URL stays `quiz?subject=…&topic=…`, so search, bookmarks, XP, progress,
+leaderboard and analytics can all key on `topicId` alone.
+
+*Discovery.* A marker is either a folder name (`English/`, `Punjabi/`, …) or a
+file-name suffix: the word form from the curated `LANG_WORDS` table
+(`-punjabi`, `-english`, `-gurmukhi`, `-hindi`, …) or the generic dotted form —
+any 2–3 letter code that is not `pdf`/`txt`/`md`/…, so `topic.ta.json` needs no
+table edit. Markers may stack; the dotted code wins.
+
+*Pairing.* Union-find over two keys inside one subject + category: the
+marker-stripped stem, and the JSON `topic` + `part` key (which is what links
+`…-part1-geography-environment` to `…-part1-punjabi`). A group can never hold
+two files of the same language — that guard is what stops grouping from
+swallowing a topic instead of pairing it. English is the primary record when it
+exists, otherwise the first by `(language, file)`; members are emitted in that
+same order so both builders write identical bytes.
+
+*Contract.* `data/quiz-manifest.json` is new: flat, timestamp-free, and
+byte-identical from `build_index.py` and `build-index.mjs` (`ci.sh` step 3
+diffs it alongside `index.json` and `sitemap.xml`).
+
+*Validation — warnings, never crashes.* Question count, ids, option count and
+the resolved answer index are compared per pair; the first disagreement per pair
+prints `Translation mismatch: …` and the build still succeeds. It immediately
+found a real one: Punjabi Current Affairs part 3 Q16 ordered options 1 and 2 the
+other way round — both files content-correct, but `answer: 2` against `answer:
+1`, which would flip that question's score the moment a reader switched
+language mid-quiz. Fixed in the data (options reordered to match the English
+source, wording untouched).
+
+*Front end.* `pickVariantFile()` resolves preferred language → English → first
+available → primary file for topic, Daily Challenge and Mock Test alike;
+`swapQuizLang()` refuses any translation that would re-point saved answers and
+names the reason in the console (`translationMismatch()`); bookmark keys are now
+`${topicKey}:${index}` — language-neutral — with prefix tolerance for legacy
+keys that carried a snippet of question text; legacy `?topic=…-punjabi` URLs
+resolve through a marker-stripping alias; `langBadge()` gained generic labels
+plus `{single: true}`, used only by subject cards so home/related markup is
+byte-for-byte unchanged.
+
+**The double-count this exposed.** A subject's `topics` list already holds its
+categorized topics (they are *also* listed under `categories[].topics`). With
+General Knowledge empty that shape had never been exercised, so four consumers
+walked **both** lists and counted every categorized quiz twice:
+
+| Where | Symptom |
+| --- | --- |
+| `build_landing_pages.py::all_topics` | two landing pages per quiz → "landing pages share title" |
+| `seo_check.py` exam → topic derivation | wrong candidate set |
+| `build_content.py::subject_strip` | "8 sets" where 4 exist |
+| `related.js` related-quizzes rail | every card listed twice |
+
+All four now walk the flat list once and attach the category each record
+declares. The silo gate was then realigned with the real hierarchy: a subject
+page links its *direct* children (categories + top-level topics) and a new
+**Category → Topic** rule proves each categorized topic page is linked from its
+category — so `topic-gk-sikhism-*` pages are verified reachable rather than
+demanded twice.
+
+**Type checking.** `jsconfig.json` + `// @ts-check` on `core.js`, `quiz.js` and
+`subject.js`, with `assets/js/hoa-types.d.ts` describing the `window.HOA` /
+`gtag` / `dataLayer` globals. Annotations only — no bundler, no transpile, no
+deploy change — and `npm run typecheck` / `ci.sh` step 4 enforce it. 56 errors
+resolved down to zero; it also caught two duplicate keys in the Punjabi
+dictionary (`Expected MCQs`, `Personal Notes`) where the later entry silently
+won.
+
+**Verification (local)**
+
+* `bash scripts/ci.sh` **green (7/7)**: content, manifest, Python↔Node parity
+  (index + quiz-manifest + sitemap), type check, landing pages, `seo_check`
+  **PASS**, `rich_results_check` **PASS**, committed tree matches builders.
+* Manifest: 9 topics, 17 translations — GK now 4 topics (`en` + `pa` each),
+  current affairs 4, computer 1; search returns 4 Sikhism quizzes, not 8.
+* Sitemap 124 → 132 URLs: eight new clean canonicals
+  (`quiz-gk-sikhism-part1…4`, `topic-gk-sikhism-part1…4`), no query strings.

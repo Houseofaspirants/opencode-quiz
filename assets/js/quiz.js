@@ -1,3 +1,4 @@
+// @ts-check
 /* ============================================================================
  * quiz.js | QUIZ ENGINE
  * ----------------------------------------------------------------------------
@@ -85,10 +86,10 @@
     progressText: document.getElementById("progressText"),
     qTimer: document.getElementById("qTimer"),
     oTimer: document.getElementById("oTimer"),
-    prev: document.getElementById("btnPrev"),
-    next: document.getElementById("btnNext"),
-    skip: document.getElementById("btnSkip"),
-    mark: document.getElementById("btnMark"),
+    prev: /** @type {HTMLButtonElement} */ (document.getElementById("btnPrev")),
+    next: /** @type {HTMLButtonElement} */ (document.getElementById("btnNext")),
+    skip: /** @type {HTMLButtonElement} */ (document.getElementById("btnSkip")),
+    mark: /** @type {HTMLButtonElement} */ (document.getElementById("btnMark")),
     bookmark: document.getElementById("btnBookmark"),
     submit: document.getElementById("btnSubmit"),
     quizLang: document.getElementById("quizLang"),
@@ -138,6 +139,22 @@
   }
 
   /* ============================================ 1. RESOLVE QUIZ CONTENT = */
+
+  /* WHICH FILE to open for a topic. Language is UI state, never part of the
+     topic id or the URL, so the same quiz always resolves to the same topic and
+     only the FILE follows the reader: preferred language -> English -> whatever
+     the set actually ships -> its primary file. A missing translation therefore
+     falls back instead of erroring, and a new language (topic.hi.json) is
+     picked up with no code change. Used by topic, daily and mock modes alike. */
+  const pickVariantFile = (t) => {
+    const v = (t && t.variants) || {};
+    const want = (HOA.lang && HOA.lang.get()) || "pa";
+    if (v[want]) return v[want];
+    if (v.en) return v.en;
+    const first = Object.values(v)[0];
+    return first || (t && t.file) || "";
+  };
+
   async function resolveQuiz() {
     /* ----------------------------- DAILY: seeded random from ALL quizzes - */
     if (mode === "daily") {
@@ -159,7 +176,9 @@
       const questions = [];
       for (const { s, t } of picked) {
         try {
-          const data = await HOA.loadQuestions(t.file);
+          // The reader's language applies to the Daily Challenge too — same
+          // fallback chain as a topic quiz (English when no translation exists).
+          const data = await HOA.loadQuestions(pickVariantFile(t));
           shuffleWith(data.questions, rand).slice(0, 5).forEach((q) =>
             questions.push({ ...q, subject: q.subject || s.id, topic: q.topic || t.name })
           );
@@ -198,7 +217,9 @@
         const { s, t } = order[i % order.length];
         i++;
         try {
-          const data = await HOA.loadQuestions(t.file);
+          // Mock pools honour the reader's language the same way a topic quiz
+          // does; a set with no translation stays in English rather than failing.
+          const data = await HOA.loadQuestions(pickVariantFile(t));
           shuffleWith(data.questions, rand).forEach((q) => {
             if (questions.length < count)
               questions.push({ ...q, subject: q.subject || s.id, topic: q.topic || t.name });
@@ -221,7 +242,18 @@
     const subjectId = params.get("subject") || "";
     const topicId = params.get("topic") || "";
     const subject = SUBJECTS.find((s) => s.id === subjectId);
-    const topic = subject?.topics.find((t) => t.id === topicId);
+    /* ONE topic per quiz, whatever the URL says. Topic ids carry no language
+       (pairing stripped it at build time), but links and bookmarks saved before
+       that may still end in a marker — `…-20-mcqs-punjabi`. Strip it and
+       resolve the real topic instead of dropping the attempt on the floor. */
+    const stripLangMarker = (id) =>
+      String(id).replace(
+        /[-_.](english|eng|punjabi|panjabi|gurmukhi|en|pa|hi|ta|mr|gu)$/i, ""
+      );
+    let topic = subject?.topics.find((t) => t.id === topicId);
+    if (!topic && topicId && stripLangMarker(topicId) !== topicId) {
+      topic = subject?.topics.find((t) => t.id === stripLangMarker(topicId));
+    }
 
     if (!subject || !topic) return null;
 
@@ -231,7 +263,7 @@
        are all built from ids — switching language changes none of them. */
     const variants = topic.variants || {};
     const wantLang = (HOA.lang && HOA.lang.get()) || "pa";
-    const startFile = variants[wantLang] || topic.file || "";
+    const startFile = pickVariantFile(topic);
     const startLang = startFile
       ? Object.keys(variants).find((k) => variants[k] === startFile) || ""
       : "";
@@ -278,10 +310,6 @@
       // never promise a translation that is not on disk.
       variants,
       lang: startLang,
-      // Question text from the file opened at start-up. Bookmarks key off this
-      // (bmKey) so a bookmark made in Punjabi is still the same bookmark after
-      // switching the screen to English. Deliberately never recomputed on swap.
-      keyTexts: questions.map((q) => (q && q.q) || ""),
       // Flat subjects keep the original autosave key (existing sessions
       // resume unchanged); categorized topics get their own namespace.
       key: `topic:${subject.id}${cat ? ":" + cat.id : ""}:${topic.id}`,
@@ -356,7 +384,7 @@
 
       // Releasing focus before replacing an option button stops mobile
       // browsers from re-anchoring (scrolling) the page.
-      const act = document.activeElement;
+      const act = /** @type {HTMLElement | null} */ (document.activeElement);
       if (act && els.options.contains(act) && act.blur) act.blur();
 
       els.qCount.textContent = `Question ${S.i + 1} of ${QUIZ.questions.length}`;
@@ -409,18 +437,39 @@
     });
   }
 
-  /* Bookmarks key off the text of the file opened at start-up (keyTexts) rather
-     than the text currently on screen, so switching language mid-attempt never
-     orphans a bookmark that was made in the other language. */
-  const bmKey = () =>
-    `${QUIZ.key}:${S.i}:` +
-    `${(QUIZ.keyTexts?.[S.i] || QUIZ.questions[S.i]?.q || "").slice(0, 40)}`;
+  /* Bookmarks are addressed by TOPIC + QUESTION, never by language:
+     `${topicKey}:${questionIndex}`. The question index is identical across
+     translations — the build publishes a warning and refuses to line up a pair
+     whose ids, counts or answers disagree — so a bookmark made while the screen
+     was in Punjabi is still the same bookmark in English, and nothing here
+     depends on which file happened to be open. Bookmarks saved before this rule
+     also carried a snippet of the question text after the index;
+     HOA.bookmarks still recognises those (see sameKey in core.js). */
+  const bmKey = () => `${QUIZ.key}:${S.i}`;
 
   /** Mark-button label — in place, so the control row never re-flows. */
   function paintMarkBtn() {
     els.mark.className = `btn ${S.marks[S.i] ? "btn-soft" : ""}`;
     els.mark.innerHTML = S.marks[S.i]
       ? "✔ Marked for Review" : "📌 Mark for Review";
+  }
+
+  /* Why `file` cannot take over from what is on screen, as one sentence — or ""
+     when the two line up. A translation must keep the SAME question count, the
+     same option count and the same correct option in the same position, because
+     S.answers stores INDICES: anything less would re-point every saved answer at
+     a different choice and quietly change the score. */
+  function translationMismatch(file, next) {
+    const cur = (QUIZ && QUIZ.questions) || [];
+    if (next.length !== cur.length) {
+      return `${file} has ${next.length} questions, ${QUIZ.file || ""} has ${cur.length}`;
+    }
+    const i = next.findIndex((q, k) => {
+      const c = cur[k];
+      return !q || !c || q.correct !== c.correct || q.options.length !== c.options.length;
+    });
+    if (i < 0) return "";
+    return `${file} Q${i + 1} marks a different option correct than ${QUIZ.file || ""}`;
   }
 
   /* =============================== IN-QUIZ LANGUAGE SWITCH (brief item 8) ==
@@ -433,19 +482,19 @@
   async function swapQuizLang() {
     if (!QUIZ || !QUIZ.variants) return;
     const lang = (HOA.lang && HOA.lang.get()) || "pa";
-    const file = QUIZ.variants[lang];
+    const file = pickVariantFile(QUIZ);
     if (!file || file === QUIZ.file || !QUIZ.questions.length) return;
 
     try {
       const data = await HOA.loadQuestions(file);
       const next = (data && data.questions) || [];
-      // Guard: a translation whose question count does not line up would quietly
-      // point saved answers at the wrong question. Refuse the swap instead.
-      if (next.length !== QUIZ.questions.length) {
+      const keepLeft = S.qLeft;     // renderQuestion() resets the per-question clock
+      const mismatch = translationMismatch(file, next);
+      if (mismatch) {
+        console.warn(`[HOA] Translation mismatch: ${mismatch}. Keeping the current language.`);
         toast("That translation does not line up with this set — keeping the current language.");
         return;
       }
-      const keepLeft = S.qLeft;     // renderQuestion() resets the per-question clock
       QUIZ.questions = next;
       QUIZ.file = file;
       QUIZ.lang = lang;
@@ -462,7 +511,7 @@
 
   /** Answer selection — class toggles ONLY (no innerHTML → no focus loss). */
   function paintOptions() {
-    [...els.options.children].forEach((btn) => {
+    [...els.options.children].forEach((/** @type {HTMLButtonElement} */ btn) => {
       const i = Number(btn.dataset.opt);
       const sel = S.answers[S.i] === i;
       btn.classList.toggle("selected", sel);
@@ -686,17 +735,21 @@
     ov.querySelector("#ccContinue").addEventListener("click", () => { cleanup(); go(); });
     ov.addEventListener("click", (e) => { if (e.target === ov) { cleanup(); go(); } });
     document.addEventListener("keydown", onKey);
-    ov.querySelector("#ccContinue").focus();
+    /** @type {HTMLElement} */ (ov.querySelector("#ccContinue")).focus();
   }
 
   /* =============================================== 7. EVENT WIRING ======= */
   function wire() {
     els.options.addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-opt]");
+      const btn = /** @type {HTMLElement | null} */ (
+        /** @type {Element} */ (e.target).closest("[data-opt]")
+      );
       if (btn) choose(Number(btn.dataset.opt));
     });
     els.palette.addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-goto]");
+      const btn = /** @type {HTMLElement | null} */ (
+        /** @type {Element} */ (e.target).closest("[data-goto]")
+      );
       if (btn) go(Number(btn.dataset.goto));
     });
     els.prev.addEventListener("click", () => go(S.i - 1));
@@ -745,7 +798,7 @@
 
     // ---- Keyboard navigation --------------------------------------------
     document.addEventListener("keydown", (e) => {
-      if (e.target.matches("input, textarea, select")) return;
+      if (/** @type {Element | null} */ (e.target).matches("input, textarea, select")) return;
       if (e.key === "ArrowRight") go(S.i + 1);
       else if (e.key === "ArrowLeft") go(S.i - 1);
       else if (["1", "2", "3", "4"].includes(e.key)) {
@@ -797,8 +850,10 @@
         </div>
       </div>`;
     document.body.appendChild(ov);
-    ov.querySelector("[data-close]").onclick = () => ov.remove();
-    ov.querySelector("[data-confirm]").onclick = () => { ov.remove(); S.locked = true; finish(); };
+    /** @type {HTMLElement} */ (ov.querySelector("[data-close]")).onclick = () => ov.remove();
+    /** @type {HTMLElement} */ (ov.querySelector("[data-confirm]")).onclick = () => {
+      ov.remove(); S.locked = true; finish();
+    };
   }
 
   /* ============================================= 8. EMPTY / START ======= */

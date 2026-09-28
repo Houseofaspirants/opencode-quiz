@@ -1,3 +1,4 @@
+// @ts-check
 /* ============================================================================
  * core.js | House of Aspirants Quiz Portal
  * ----------------------------------------------------------------------------
@@ -127,7 +128,9 @@ const HOA = (() => {
   const THEME_KEY = "theme";
   function applyTheme(t) {
     document.documentElement.setAttribute("data-theme", t);
-    const meta = document.querySelector('meta[name="theme-color"]');
+    const meta = /** @type {HTMLMetaElement | null} */ (
+      document.querySelector('meta[name="theme-color"]')
+    );
     if (meta) meta.content = t === "dark" ? "#0b1020" : "#4f46e5";
     document.querySelectorAll("[data-theme-icon]").forEach((el) => {
       el.textContent = t === "dark" ? "☀️" : "🌙";
@@ -138,7 +141,7 @@ const HOA = (() => {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     applyTheme(saved || (prefersDark ? "dark" : "light"));
     document.addEventListener("click", (e) => {
-      if (e.target.closest("[data-action='toggle-theme']")) {
+      if (/** @type {Element} */ (e.target).closest("[data-action='toggle-theme']")) {
         const next =
           document.documentElement.getAttribute("data-theme") === "dark"
             ? "light"
@@ -199,13 +202,11 @@ const HOA = (() => {
     "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
-    "Expected MCQs": "ਸੰਭਾਵਿਤ MCQ ਸਵਾਲ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
     "Blog": "ਬਲੌਗ",
     "News": "ਖ਼ਬਰਾਂ",
     "Announcements": "ਘੋਸ਼ਣਾਵਾਂ",
     /* Phase 4 collections */
-    "Personal Notes": "ਨਿੱਜੀ ਨੋਟਾਂ",
     "Subject Guides": "ਵਿਸ਼ਾ ਗਾਈਡਾਂ",
     "Topic Guides": "ਟਾਪਿਕ ਗਾਈਡਾਂ",
     "Daily Practice": "ਰੋਜ਼ਾਨਾ ਅਭਿਆਸ",
@@ -347,7 +348,7 @@ const HOA = (() => {
   function initLang() {
     applyLang();
     document.addEventListener("click", (e) => {
-      const btn = e.target.closest("[data-lang-btn]");
+      const btn = /** @type {Element | null} */ (e.target).closest("[data-lang-btn]");
       if (!btn) return;
       const next = btn.getAttribute("data-lang-btn") === "en" ? "en" : "pa";
       if (next === getLang()) return;
@@ -722,13 +723,13 @@ const HOA = (() => {
         });
       });
       document.addEventListener("click", (e) => {
-        if (!drop.contains(e.target)) {
+        if (!drop.contains(/** @type {Node} */ (e.target))) {
           drop.classList.remove("open");
           btn.setAttribute("aria-expanded", "false");
         }
       });
       drop.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
+        if (/** @type {KeyboardEvent} */ (e).key === "Escape") {
           drop.classList.remove("open");
           btn.setAttribute("aria-expanded", "false");
         }
@@ -748,7 +749,7 @@ const HOA = (() => {
     openBtn?.addEventListener("click", () => setDrawer(true));
     closeBtn?.addEventListener("click", () => setDrawer(false));
     drawer?.addEventListener("click", (e) => {
-      if (e.target.closest("a")) setDrawer(false);
+      if (/** @type {Element} */ (e.target).closest("a")) setDrawer(false);
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") setDrawer(false);
@@ -804,7 +805,7 @@ const HOA = (() => {
     const triggers = document.querySelectorAll("[data-action='open-search']");
     const overlay = document.getElementById("searchOverlay");
     if (!overlay) return;
-    const input = overlay.querySelector("#searchInput");
+    const input = /** @type {HTMLInputElement} */ (overlay.querySelector("#searchInput"));
     const results = overlay.querySelector("#searchResults");
     const close = () => {
       overlay.classList.add("hidden");
@@ -961,7 +962,7 @@ const HOA = (() => {
       render("");
       input.addEventListener("input", () => render(input.value));
       results.addEventListener("click", (e) => {
-        if (e.target.closest("a")) close();
+        if (/** @type {Element} */ (e.target).closest("a")) close();
       });
     });
   }
@@ -972,9 +973,15 @@ const HOA = (() => {
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
-  /* Dynamic SEO helpers — pages addressed by query params (?subject=, ?topic=,
-     ?mode=) refresh their own canonical / robots / social tags so every topic
-     has a unique, indexable identity. Safe to call more than once. */
+  /**
+   * Dynamic SEO helpers — pages addressed by query params (?subject=, ?topic=,
+   * ?mode=) refresh their own canonical / robots / social tags so every topic
+   * has a unique, indexable identity. Safe to call more than once.
+   *
+   * @param {{title?: string, canonical?: string, robots?: string,
+   *          ogTitle?: string, ogDescription?: string,
+   *          description?: string}} [opts] every field optional
+   */
   function seo({ title, canonical, robots, ogTitle, ogDescription, description } = {}) {
     if (title) document.title = title;
 
@@ -982,7 +989,9 @@ const HOA = (() => {
        when no explicit description is passed). */
     const desc = description || ogDescription;
     if (desc) {
-      let d = document.querySelector('meta[name="description"]');
+      let d = /** @type {HTMLMetaElement | null} */ (
+        document.querySelector('meta[name="description"]')
+      );
       if (!d) {
         d = document.createElement("meta");
         d.name = "description";
@@ -992,7 +1001,9 @@ const HOA = (() => {
     }
 
     if (robots) {
-      let m = document.querySelector('meta[name="robots"]');
+      let m = /** @type {HTMLMetaElement | null} */ (
+        document.querySelector('meta[name="robots"]')
+      );
       if (!m) {
         m = document.createElement("meta");
         m.name = "robots";
@@ -1002,7 +1013,9 @@ const HOA = (() => {
     }
 
     if (canonical) {
-      let l = document.querySelector('link[rel="canonical"]');
+      let l = /** @type {HTMLLinkElement | null} */ (
+        document.querySelector('link[rel="canonical"]')
+      );
       if (!l) {
         l = document.createElement("link");
         l.rel = "canonical";
@@ -1013,14 +1026,18 @@ const HOA = (() => {
 
     const setPair = (key, val) => {
       if (!val) return;
-      let og = document.querySelector(`meta[property="og:${key}"]`);
+      let og = /** @type {HTMLMetaElement | null} */ (
+        document.querySelector(`meta[property="og:${key}"]`)
+      );
       if (!og) {
         og = document.createElement("meta");
         og.setAttribute("property", `og:${key}`);
         document.head.appendChild(og);
       }
       og.content = val;
-      const tw = document.querySelector(`meta[name="twitter:${key}"]`);
+      const tw = /** @type {HTMLMetaElement | null} */ (
+        document.querySelector(`meta[name="twitter:${key}"]`)
+      );
       if (tw) tw.content = val;
     };
     setPair("title", ogTitle || title);
@@ -1101,12 +1118,18 @@ const HOA = (() => {
   }
 
   /* ============================ 7a. BOOKMARKS ============================ */
+  /* A bookmark is identified by TOPIC + QUESTION and never by language, so the
+     same saved question still matches after the screen changes language.
+     Keys written before that rule also carried a question-text snippet after
+     the index (text that depended on which file was open); `sameKey` accepts
+     those too, so old saves keep working and can still be removed. */
+  const sameKey = (stored, key) => stored === key || String(stored).startsWith(`${key}:`);
   const bookmarks = {
     all: () => db.get("bookmarks", []),
-    has: (key) => db.get("bookmarks", []).some((b) => b.key === key),
+    has: (key) => db.get("bookmarks", []).some((b) => sameKey(b.key, key)),
     toggle(entry) {
       const list = db.get("bookmarks", []);
-      const i = list.findIndex((b) => b.key === entry.key);
+      const i = list.findIndex((b) => sameKey(b.key, entry.key));
       if (i >= 0) {
         list.splice(i, 1);
         db.set("bookmarks", list);
@@ -1117,7 +1140,7 @@ const HOA = (() => {
       return true;
     },
     remove: (key) => {
-      const list = db.get("bookmarks", []).filter((b) => b.key !== key);
+      const list = db.get("bookmarks", []).filter((b) => !sameKey(b.key, key));
       db.set("bookmarks", list);
     },
     clear: () => db.set("bookmarks", []),
@@ -1262,7 +1285,7 @@ const HOA = (() => {
       });
     });
     document.addEventListener("click", async (e) => {
-      if (!e.target.closest("[data-action='install-app']")) return;
+      if (/** @type {Element} */ (e.target).closest("[data-action='install-app']")) return;
       if (deferred) {
         deferred.prompt();
         await deferred.userChoice;
@@ -1440,7 +1463,7 @@ const HOA = (() => {
   }
 
   function showExitPopup() {
-    const prevFocus = document.activeElement;
+    const prevFocus = /** @type {HTMLElement | null} */ (document.activeElement);
     const ov = document.createElement("div");
     ov.className = "tg-exit-overlay";
     ov.innerHTML = `
@@ -1619,21 +1642,53 @@ const HOA = (() => {
     init();
   }
 
+  /* Names of the languages the data layer can carry. Latin names keep the
+     `title=` text and single-language cards readable in either UI language;
+     unknown codes fall back to their upper-case form, so a future
+     `topic.ta.json` needs no edit here to show up. */
+  const LANG_NAMES = {
+    pa: "Punjabi", en: "English", hi: "Hindi", ta: "Tamil",
+    mr: "Marathi", gu: "Gujarati",
+  };
+  /* The compact form used when a set ships in more than one language — the
+     Punjabi-first pair the cards have always shown. */
+  const LANG_SHORT = { pa: "ਪੰ", en: "EN" };
+
+  /** Punjabi leads (the site's own language), everything else in code order. */
+  const byDisplayOrder = (a, b) =>
+    (a === "pa" ? 0 : 1) - (b === "pa" ? 0 : 1) || (a < b ? -1 : a > b ? 1 : 0);
+
+  const langName = (code) =>
+    LANG_NAMES[String(code || "").toLowerCase()] || String(code || "").toUpperCase();
+
   /**
-   * Availability pill for a question set.
-   * Markup is returned ONLY when data/index.json reports that the set really
-   * ships in both languages (`topic.variants`); a set with a single language
-   * renders nothing at all, so the interface never advertises a translation
-   * that is not actually on disk. Colours come from `.badge`, which already
-   * resolves correctly in light and dark themes.
+   * Availability pill for a question set. Markup is returned ONLY from what
+   * data/index.json reports the set really ships in (`topic.variants`), so the
+   * interface never advertises a translation that is not actually on disk:
+   *
+   *   two languages  ->  `ਪੰ · EN` plus a title naming both (unchanged)
+   *   one language   ->  nothing, unless the caller passes `{single: true}`,
+   *                      which makes a subject card say which language it is in
+   *
+   * Colours come from `.badge`, which already resolves correctly in light and
+   * dark themes.
    */
-  function langBadge(variants) {
-    const v = variants || {};
-    if (!v.en || !v.pa) return "";
+  function langBadge(variants, opts) {
+    const langs = Object.keys(variants || {}).sort(byDisplayOrder);
+    if (!langs.length) return "";
+    if (langs.length === 1) {
+      if (!opts || !opts.single) return "";
+      return `<span class="badge badge-lang">${langName(langs[0])}</span>`;
+    }
+    const names = langs.map(langName);
+    const title = `${names.slice(0, -1).join(", ")} and ${names[names.length - 1]}`;
+    const short = langs
+      .map((c) => LANG_SHORT[String(c).toLowerCase()] || String(c).toUpperCase())
+      .join(" · ");
     return (
       `<span class="badge badge-lang" ` +
-      `title="Published in Punjabi and English — switch inside the quiz">` +
-      `ਪੰ · EN</span>`
+      `title="Published in ${title} — switch inside the quiz">` +
+      `${short}</span>`
     );
   }
 
