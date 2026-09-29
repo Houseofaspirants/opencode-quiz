@@ -3,7 +3,7 @@
   "generatedAt": "2026-09-29T13:37:57.268Z",
   "stats": {
     "subjects": 7,
-    "categories": 6,
+    "categories": 10,
     "topics": 11,
     "quizzes": 11,
     "questions": 245,
@@ -208,20 +208,99 @@
       ],
       "categories": [
         {
-          "id": "polity",
-          "name": "Polity",
-          "folder": "polity",
-          "icon": "📁",
-          "topics": [],
-          "landing": "/category-gk-polity"
-        },
-        {
           "id": "history",
           "name": "History",
           "folder": "history",
           "icon": "📁",
           "topics": [],
           "landing": "/category-gk-history"
+        },
+        {
+          "id": "ancient-history",
+          "name": "Ancient History",
+          "folder": "ancient-history",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-ancient-history"
+        },
+        {
+          "id": "medieval-history",
+          "name": "Medieval History",
+          "folder": "medieval-history",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-medieval-history"
+        },
+        {
+          "id": "modern-history",
+          "name": "Modern History",
+          "folder": "modern-history",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-modern-history"
+        },
+        {
+          "id": "polity",
+          "name": "Indian Polity",
+          "folder": "polity",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-polity"
+        },
+        {
+          "id": "geography-environment",
+          "name": "Geography & Environment",
+          "folder": "geography-environment",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-geography-environment"
+        },
+        {
+          "id": "economy",
+          "name": "Indian Economy",
+          "folder": "economy",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "five-year-plans-20-mcqs-",
+              "name": "Five Year Plans 20 Mcqs ",
+              "description": "",
+              "file": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790614960193,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
+                "pa": "questions/gk/economy/five-year-plans-20-mcqs-.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Five Year Plans 20 Mcqs ",
+                "pa": "Five Year Plans 20 Mcqs "
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-five-year-plans-20-mcqs-"
+            }
+          ],
+          "landing": "/category-gk-economy"
+        },
+        {
+          "id": "science-technology",
+          "name": "Science & Technology",
+          "folder": "science-technology",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-science-technology"
         },
         {
           "id": "punjab-gk",
@@ -351,53 +430,6 @@
             }
           ],
           "landing": "/category-gk-punjab-gk"
-        },
-        {
-          "id": "geography-environment",
-          "name": "Geography & Environment",
-          "folder": "geography-environment",
-          "icon": "📁",
-          "topics": [],
-          "landing": "/category-gk-geography-environment"
-        },
-        {
-          "id": "economy",
-          "name": "Economy",
-          "folder": "economy",
-          "icon": "📁",
-          "topics": [
-            {
-              "id": "five-year-plans-20-mcqs-",
-              "name": "Five Year Plans 20 Mcqs ",
-              "description": "",
-              "file": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
-              "count": 20,
-              "empty": false,
-              "available": true,
-              "timeLimit": 0,
-              "updatedAt": 1790614960193,
-              "category": "economy",
-              "language": "en",
-              "variants": {
-                "en": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
-                "pa": "questions/gk/economy/five-year-plans-20-mcqs-.pa.json"
-              },
-              "availableLanguages": [
-                "en",
-                "pa"
-              ],
-              "titles": {
-                "en": "Five Year Plans 20 Mcqs ",
-                "pa": "Five Year Plans 20 Mcqs "
-              },
-              "counts": {
-                "en": 20,
-                "pa": 20
-              },
-              "landing": "/quiz-gk-five-year-plans-20-mcqs-"
-            }
-          ],
-          "landing": "/category-gk-economy"
         },
         {
           "id": "others",

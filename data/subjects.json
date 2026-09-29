@@ -11,12 +11,16 @@
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
       "order": 1,
       "categories": [
-        "Polity",
-        "History",
-        "Punjab GK",
-        "Geography & Environment",
-        "Economy",
-        "Others"
+        { "name": "History", "id": "history", "folder": "history" },
+        { "name": "Ancient History", "id": "ancient-history", "folder": "ancient-history" },
+        { "name": "Medieval History", "id": "medieval-history", "folder": "medieval-history" },
+        { "name": "Modern History", "id": "modern-history", "folder": "modern-history" },
+        { "name": "Indian Polity", "id": "polity", "folder": "polity" },
+        { "name": "Geography & Environment", "id": "geography-environment", "folder": "geography-environment" },
+        { "name": "Indian Economy", "id": "economy", "folder": "economy" },
+        { "name": "Science & Technology", "id": "science-technology", "folder": "science-technology" },
+        { "name": "Punjab GK", "id": "punjab-gk", "folder": "punjab-gk" },
+        { "name": "Others", "id": "others", "folder": "others" }
       ]
     },
     {

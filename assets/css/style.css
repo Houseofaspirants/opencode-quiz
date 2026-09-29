@@ -1083,6 +1083,20 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 .quiz-card.disabled .qc-icon { background: var(--surface-2); }
 .quiz-card.disabled .qc-go { background: var(--surface-2); color: var(--muted); }
 
+/* CATEGORY GROUP — a category that owns sub-categories renders them directly
+   beneath it behind a rule, so General Knowledge reads as
+   History -> Ancient / Medieval / Modern instead of ten sibling cards with no
+   hint of the syllabus nesting. The group spans the full grid with the same
+   `1 / -1` the empty state and footer already use, and the children are a
+   plain `.grid.grid-3`, which carries the site's responsive column
+   breakpoints — one set of breakpoints to maintain, not two. Same tokens,
+   same cards: this adds structure, not a new visual language. */
+.cat-group { grid-column: 1 / -1; display: grid; gap: clamp(14px, 2.6vw, 18px); }
+.cat-group-kids {
+  padding-left: clamp(14px, 3vw, 22px);
+  border-left: 2px solid color-mix(in srgb, var(--brand) 26%, transparent);
+}
+
 /* Empty state */
 .empty-state {
   grid-column: 1 / -1;

@@ -69,6 +69,42 @@
   // "flat" = subject without categories (show its topics directly)
   const level = !hierarchical ? "flat" : category ? "category" : "root";
 
+  /* -------------------------------------------------------- Category groups -
+   * The data model is Subject > Category > Topic — there is no fourth level,
+   * and inventing one would mean new routes and a new build step. So a group
+   * is a PRESENTATION relationship only: the parent category keeps its own
+   * landing page, every child keeps its own, and no URL changes. What changes
+   * is that a student opening General Knowledge sees
+   *   History  ->  Ancient / Medieval / Modern History
+   * instead of ten sibling cards with no hint of the syllabus nesting.
+   *
+   * An entry applies only when EVERY id it names is present in
+   * data/index.json, so renaming or deleting a category in
+   * data/subjects.json falls back to the flat list rather than leaving a
+   * dead heading or a broken link. Keys are subject ids from that file. */
+  const CATEGORY_GROUPS = {
+    gk: [
+      {
+        parent: "history",
+        children: ["ancient-history", "medieval-history", "modern-history"],
+      },
+    ],
+  };
+
+  /** Groups whose parent AND every child are in `list` (post-filter). */
+  function resolveGroups(list) {
+    const byId = new Map(list.map((c) => [c.id, c]));
+    return (CATEGORY_GROUPS[subject.id] || [])
+      .map(({ parent, children }) => {
+        const p = byId.get(parent);
+        const kids = children.map((id) => byId.get(id)).filter(Boolean);
+        // A filter can remove the parent or some children; unless all of the
+        // group survives, render it flat so nothing disappears silently.
+        return p && kids.length === children.length ? { parent: p, kids } : null;
+      })
+      .filter(Boolean);
+  }
+
   /* ------------------------------------------------- SEO + page header -----
    * When the build has generated a static landing page for this entity
    * (subject.landing / category.landing in data/index.json, written by
@@ -268,12 +304,14 @@
   /* -------------------------------------------------------- Render helpers - */
   const showCategories = level === "root";
 
-  function categoryCard(c) {
+  function categoryCard(c, subOverride) {
     const n = c.topics.length;
     const q = c.topics.reduce((a, t) => a + t.count, 0);
-    const sub = !n
-      ? "No quizzes yet — add a JSON file"
-      : `${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"} · Open →`;
+    const sub =
+      subOverride ||
+      (!n
+        ? "No quizzes yet — add a JSON file"
+        : `${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"} · Open →`);
     return `
     <a class="card quiz-card" href="subject.html?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
       <span class="qc-icon">${c.icon || "📁"}</span>
@@ -283,6 +321,41 @@
       </span>
       <span class="qc-go">→</span>
     </a>`;
+  }
+
+  /* A parent category that owns sub-categories: its own card first, then the
+     children on the same card grid behind a rule that reads as nesting. */
+  function groupBlock(g) {
+    const parts = [];
+    parts.push(`${g.kids.length} categor${g.kids.length === 1 ? "y" : "ies"}`);
+    const n = g.parent.topics.length;
+    if (n) {
+      const q = g.parent.topics.reduce((a, t) => a + t.count, 0);
+      parts.push(`${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"}`);
+    }
+    parts.push("Open →");
+    return `<div class="cat-group" role="group" aria-label="${esc(g.parent.name)}">
+      ${categoryCard(g.parent, parts.join(" · "))}
+      <div class="grid grid-3 cat-group-kids">
+        ${g.kids.map((k) => categoryCard(k)).join("")}
+      </div>
+    </div>`;
+  }
+
+  /** Categories in configured order, with each group emitted where its parent sits. */
+  function categoryMarkup(list) {
+    const groups = resolveGroups(list);
+    if (!groups.length) return list.map((c) => categoryCard(c)).join("");
+    const byParent = new Map(groups.map((g) => [g.parent.id, g]));
+    const grouped = new Set(groups.flatMap((g) => g.kids.map((k) => k.id)));
+    return list
+      .map((c) => {
+        const g = byParent.get(c.id);
+        if (g) return groupBlock(g);
+        if (grouped.has(c.id)) return ""; // already rendered inside its parent
+        return categoryCard(c);
+      })
+      .join("");
   }
 
   /** Categorized topics link with &category= (matches the sitemap canonical). */
@@ -341,7 +414,7 @@
       return;
     }
     if (showCategories) {
-      wrap.innerHTML = list.length ? list.map(categoryCard).join("") : noMatch("category");
+      wrap.innerHTML = list.length ? categoryMarkup(list) : noMatch("category");
       return;
     }
     const full = level === "category" ? category.topics : subject.topics;
