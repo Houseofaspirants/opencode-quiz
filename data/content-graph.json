@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 60,
-  "edges": 163,
+  "nodes": 61,
+  "edges": 164,
   "silos": 28,
   "clusters": 25,
   "pillars": 27
@@ -102,6 +102,18 @@
   {
    "id": "content/monthly-magazine/current-affairs-july%20.pdf",
    "url": "/content/monthly-magazine/current-affairs-july%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/pdfs/five-year-plan.pdf",
+   "url": "/content/pdfs/five-year-plan.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1250,6 +1262,12 @@
   {
    "from": "pdfs.html",
    "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/pdfs/five-year-plan.pdf",
    "rel": "contextual",
    "weight": 1
   },
