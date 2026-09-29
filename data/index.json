@@ -3,7 +3,7 @@
   "generatedAt": "2026-09-29T13:37:57.268Z",
   "stats": {
     "subjects": 7,
-    "categories": 10,
+    "categories": 15,
     "topics": 11,
     "quizzes": 11,
     "questions": 245,
@@ -430,6 +430,46 @@
             }
           ],
           "landing": "/category-gk-punjab-gk"
+        },
+        {
+          "id": "history-of-punjab",
+          "name": "History of Punjab",
+          "folder": "history-of-punjab",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-history-of-punjab"
+        },
+        {
+          "id": "culture-of-punjab",
+          "name": "Culture of Punjab",
+          "folder": "culture-of-punjab",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-culture-of-punjab"
+        },
+        {
+          "id": "punjab-literature",
+          "name": "Punjab Literature",
+          "folder": "punjab-literature",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-punjab-literature"
+        },
+        {
+          "id": "geography-of-punjab",
+          "name": "Geography of Punjab",
+          "folder": "geography-of-punjab",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-geography-of-punjab"
+        },
+        {
+          "id": "economy-of-punjab",
+          "name": "Economy of Punjab",
+          "folder": "economy-of-punjab",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-gk-economy-of-punjab"
         },
         {
           "id": "others",

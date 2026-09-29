@@ -88,6 +88,19 @@
         parent: "history",
         children: ["ancient-history", "medieval-history", "modern-history"],
       },
+      /* Punjab GK owns the five state lanes. Its own folder still holds the
+         published Sikhism sets, so the parent card reports both:
+         "5 categories · 4 topics · 95 questions". */
+      {
+        parent: "punjab-gk",
+        children: [
+          "history-of-punjab",
+          "culture-of-punjab",
+          "punjab-literature",
+          "geography-of-punjab",
+          "economy-of-punjab",
+        ],
+      },
     ],
   };
 
