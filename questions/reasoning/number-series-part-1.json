@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "question": "Find the next number: 4, 8, 12, 16, 20, ?",
+    "options": [
+      "22",
+      "24",
+      "26",
+      "28"
+    ],
+    "answer": 1,
+    "explanation": "Constant addition (+4).",
+    "difficulty": "easy",
+    "topic": "Constant Addition"
+  },
+  {
+    "id": 2,
+    "question": "13,18,23,28,33,?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "answer": 2,
+    "explanation": "+5",
+    "difficulty": "easy",
+    "topic": "Constant Addition"
+  },
+  {
+    "id": 3,
+    "question": "25,31,37,43,49,?",
+    "options": [
+      "53",
+      "54",
+      "55",
+      "56"
+    ],
+    "answer": 2,
+    "explanation": "+6",
+    "difficulty": "easy",
+    "topic": "Constant Addition"
+  },
+  {
+    "id": 4,
+    "question": "7,14,21,28,35,?",
+    "options": [
+      "40",
+      "41",
+      "42",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "+7",
+    "difficulty": "easy",
+    "topic": "Constant Addition"
+  },
+  {
+    "id": 5,
+    "question": "56,64,72,80,88,?",
+    "options": [
+      "94",
+      "95",
+      "96",
+      "98"
+    ],
+    "answer": 2,
+    "explanation": "+8",
+    "difficulty": "easy",
+    "topic": "Constant Addition"
+  },
+  {
+    "id": 6,
+    "question": "3,5,8,12,17,?",
+    "options": [
+      "22",
+      "23",
+      "24",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "Diff +2,+3,+4,+5,+6",
+    "difficulty": "easy",
+    "topic": "Increasing Addition"
+  },
+  {
+    "id": 7,
+    "question": "9,11,14,18,23,?",
+    "options": [
+      "28",
+      "29",
+      "30",
+      "31"
+    ],
+    "answer": 1,
+    "explanation": "Next +6",
+    "difficulty": "easy",
+    "topic": "Increasing Addition"
+  },
+  {
+    "id": 8,
+    "question": "15,18,22,27,33,?",
+    "options": [
+      "39",
+      "40",
+      "41",
+      "42"
+    ],
+    "answer": 1,
+    "explanation": "Next +7",
+    "difficulty": "easy",
+    "topic": "Increasing Addition"
+  },
+  {
+    "id": 9,
+    "question": "30,34,39,45,52,?",
+    "options": [
+      "59",
+      "60",
+      "61",
+      "62"
+    ],
+    "answer": 1,
+    "explanation": "Next +8",
+    "difficulty": "easy",
+    "topic": "Increasing Addition"
+  },
+  {
+    "id": 10,
+    "question": "50,55,61,68,76,?",
+    "options": [
+      "83",
+      "84",
+      "85",
+      "86"
+    ],
+    "answer": 2,
+    "explanation": "Next +9",
+    "difficulty": "easy",
+    "topic": "Increasing Addition"
+  },
+  {
+    "id": 11,
+    "question": "60,55,50,45,40,?",
+    "options": [
+      "35",
+      "36",
+      "37",
+      "38"
+    ],
+    "answer": 0,
+    "explanation": "-5",
+    "difficulty": "easy",
+    "topic": "Constant Subtraction"
+  },
+  {
+    "id": 12,
+    "question": "95,90,85,80,75,?",
+    "options": [
+      "69",
+      "70",
+      "71",
+      "72"
+    ],
+    "answer": 1,
+    "explanation": "-5",
+    "difficulty": "easy",
+    "topic": "Constant Subtraction"
+  },
+  {
+    "id": 13,
+    "question": "84,78,72,66,60,?",
+    "options": [
+      "55",
+      "54",
+      "53",
+      "52"
+    ],
+    "answer": 1,
+    "explanation": "-6",
+    "difficulty": "easy",
+    "topic": "Constant Subtraction"
+  },
+  {
+    "id": 14,
+    "question": "100,96,92,88,84,?",
+    "options": [
+      "79",
+      "80",
+      "81",
+      "82"
+    ],
+    "answer": 1,
+    "explanation": "-4",
+    "difficulty": "easy",
+    "topic": "Constant Subtraction"
+  },
+  {
+    "id": 15,
+    "question": "72,65,58,51,44,?",
+    "options": [
+      "37",
+      "38",
+      "39",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "-7",
+    "difficulty": "easy",
+    "topic": "Constant Subtraction"
+  },
+  {
+    "id": 16,
+    "question": "40,38,35,31,26,?",
+    "options": [
+      "19",
+      "20",
+      "21",
+      "22"
+    ],
+    "answer": 1,
+    "explanation": "-2,-3,-4,-5,-6",
+    "difficulty": "medium",
+    "topic": "Increasing Subtraction"
+  },
+  {
+    "id": 17,
+    "question": "90,89,87,84,80,?",
+    "options": [
+      "73",
+      "74",
+      "75",
+      "76"
+    ],
+    "answer": 2,
+    "explanation": "next -5",
+    "difficulty": "medium",
+    "topic": "Increasing Subtraction"
+  },
+  {
+    "id": 18,
+    "question": "75,72,68,63,57,?",
+    "options": [
+      "49",
+      "50",
+      "51",
+      "52"
+    ],
+    "answer": 1,
+    "explanation": "next -7",
+    "difficulty": "medium",
+    "topic": "Increasing Subtraction"
+  },
+  {
+    "id": 19,
+    "question": "120,116,111,105,98,?",
+    "options": [
+      "90",
+      "89",
+      "88",
+      "87"
+    ],
+    "answer": 0,
+    "explanation": "next -8",
+    "difficulty": "medium",
+    "topic": "Increasing Subtraction"
+  },
+  {
+    "id": 20,
+    "question": "150,145,139,132,124,?",
+    "options": [
+      "115",
+      "116",
+      "117",
+      "118"
+    ],
+    "answer": 0,
+    "explanation": "next -9",
+    "difficulty": "medium",
+    "topic": "Increasing Subtraction"
+  },
+  {
+    "id": 21,
+    "question": "2,3,5,7,11,?",
+    "options": [
+      "12",
+      "13",
+      "15",
+      "17"
+    ],
+    "answer": 1,
+    "explanation": "Next prime",
+    "difficulty": "easy",
+    "topic": "Prime"
+  },
+  {
+    "id": 22,
+    "question": "11,13,17,19,23,?",
+    "options": [
+      "25",
+      "27",
+      "29",
+      "31"
+    ],
+    "answer": 2,
+    "explanation": "Next prime",
+    "difficulty": "easy",
+    "topic": "Prime"
+  },
+  {
+    "id": 23,
+    "question": "29,31,37,41,43,?",
+    "options": [
+      "45",
+      "47",
+      "49",
+      "51"
+    ],
+    "answer": 1,
+    "explanation": "Next prime",
+    "difficulty": "easy",
+    "topic": "Prime"
+  },
+  {
+    "id": 24,
+    "question": "53,59,61,67,71,?",
+    "options": [
+      "73",
+      "75",
+      "77",
+      "79"
+    ],
+    "answer": 0,
+    "explanation": "Next prime",
+    "difficulty": "easy",
+    "topic": "Prime"
+  },
+  {
+    "id": 25,
+    "question": "79,83,89,97,?",
+    "options": [
+      "99",
+      "101",
+      "103",
+      "107"
+    ],
+    "answer": 1,
+    "explanation": "Next prime",
+    "difficulty": "easy",
+    "topic": "Prime"
+  }
+]
