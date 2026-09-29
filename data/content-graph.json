@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 73,
-  "edges": 211,
+  "nodes": 60,
+  "edges": 163,
   "silos": 28,
   "clusters": 25,
   "pillars": 27
@@ -88,54 +88,6 @@
    "hub": "blogs.html"
   },
   {
-   "id": "book-five-year-plan-english",
-   "url": "/book-five-year-plan-english",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "book-five-year-plan-english.html",
-   "url": "/book-five-year-plan-english.html",
-   "type": "book-recommendations",
-   "template": "book-recommend",
-   "title": "Five Year Plan English",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "book-recommendations.html"
-  },
-  {
-   "id": "book-five-year-plan-punjabi",
-   "url": "/book-five-year-plan-punjabi",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "book-five-year-plan-punjabi.html",
-   "url": "/book-five-year-plan-punjabi.html",
-   "type": "book-recommendations",
-   "template": "book-recommend",
-   "title": "Five Year Plan Punjabi",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "book-recommendations.html"
-  },
-  {
    "id": "book-recommendations.html",
    "url": "/book-recommendations.html",
    "type": "hub",
@@ -148,80 +100,8 @@
    "hub": "book-recommendations.html"
   },
   {
-   "id": "ca-five-year-plan",
-   "url": "/ca-five-year-plan",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "ca-five-year-plan.html",
-   "url": "/ca-five-year-plan.html",
-   "type": "current-affairs",
-   "template": "current-affairs",
-   "title": "Five Year Plan",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "current-affairs.html"
-  },
-  {
-   "id": "content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
-   "url": "/content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/book-recommendations/five%20year%20plan%20punjabi.pdf",
-   "url": "/content/book-recommendations/five%20year%20plan%20punjabi.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/current-affairs/five-year-plan.pdf",
-   "url": "/content/current-affairs/five-year-plan.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/monthly-magazine/five-year-plan.pdf",
-   "url": "/content/monthly-magazine/five-year-plan.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/personal-notes/mobile%20phone.pdf",
-   "url": "/content/personal-notes/mobile%20phone.pdf",
+   "id": "content/monthly-magazine/current-affairs-july%20.pdf",
+   "url": "/content/monthly-magazine/current-affairs-july%20.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -556,8 +436,8 @@
    "hub": "live-sessions.html"
   },
   {
-   "id": "magazine-five-year-plan",
-   "url": "/magazine-five-year-plan",
+   "id": "magazine-current-affairs-july",
+   "url": "/magazine-current-affairs-july",
    "type": "document",
    "template": "",
    "title": "",
@@ -568,11 +448,11 @@
    "hub": ""
   },
   {
-   "id": "magazine-five-year-plan.html",
-   "url": "/magazine-five-year-plan.html",
+   "id": "magazine-current-affairs-july.html",
+   "url": "/magazine-current-affairs-july.html",
    "type": "magazine",
    "template": "monthly-magazine",
-   "title": "Five Year Plan (Monthly Magazine)",
+   "title": "Current Affairs July",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -633,30 +513,6 @@
    "type": "hub",
    "template": "",
    "title": "Personal Study Notes | House of Aspirants",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "personal-notes.html"
-  },
-  {
-   "id": "pnote-mobile-phone",
-   "url": "/pnote-mobile-phone",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "pnote-mobile-phone.html",
-   "url": "/pnote-mobile-phone.html",
-   "type": "personal-notes",
-   "template": "personal-note",
-   "title": "Mobile Phone",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -844,18 +700,6 @@
    "hub": "study-notes.html"
   },
   {
-   "id": "subject-gk.html",
-   "url": "/subject-gk.html",
-   "type": "subject-hub",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "subject-guides.html",
    "url": "/subject-guides.html",
    "type": "hub",
@@ -949,19 +793,13 @@
   },
   {
    "from": "archives.html",
-   "to": "book-five-year-plan-english.html",
+   "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "book-five-year-plan-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "ca-five-year-plan.html",
+   "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -973,13 +811,25 @@
   },
   {
    "from": "archives.html",
-   "to": "magazine-five-year-plan.html",
+   "to": "magazine-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "pnote-mobile-phone.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1068,152 +918,8 @@
    "weight": 1
   },
   {
-   "from": "book-five-year-plan-english.html",
-   "to": "book-five-year-plan-english",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "book-recommendations.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "content/book-recommendations/five%20year%20plan%20%28english%29.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "book-five-year-plan-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "ca-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "magazine-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-english.html",
-   "to": "pdfs.html",
-   "rel": "section-pdfs",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "book-five-year-plan-punjabi",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "book-recommendations.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "content/book-recommendations/five%20year%20plan%20punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "book-five-year-plan-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "ca-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "magazine-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "book-five-year-plan-punjabi.html",
-   "to": "pdfs.html",
-   "rel": "section-pdfs",
-   "weight": 1
-  },
-  {
    "from": "book-recommendations.html",
    "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-recommendations.html",
-   "to": "book-five-year-plan-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "book-recommendations.html",
-   "to": "book-five-year-plan-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1254,80 +960,8 @@
    "weight": 1
   },
   {
-   "from": "ca-five-year-plan.html",
-   "to": "ca-five-year-plan",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "content/current-affairs/five-year-plan.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "book-five-year-plan-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "book-five-year-plan-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "magazine-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-five-year-plan.html",
-   "to": "subject-gk.html",
-   "rel": "subject-hub",
-   "weight": 1
-  },
-  {
    "from": "current-affairs.html",
    "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs.html",
-   "to": "ca-five-year-plan.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1482,63 +1116,51 @@
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
-   "to": "content/monthly-magazine/five-year-plan.pdf",
+   "from": "magazine-current-affairs-july.html",
+   "to": "content/monthly-magazine/current-affairs-july%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
-   "to": "magazine-five-year-plan",
+   "from": "magazine-current-affairs-july.html",
+   "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
+   "from": "magazine-current-affairs-july.html",
+   "to": "magazine-current-affairs-july",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
+   "from": "magazine-current-affairs-july.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
+   "from": "magazine-current-affairs-july.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
+   "from": "magazine-current-affairs-july.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "magazine-five-year-plan.html",
+   "from": "magazine-current-affairs-july.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "magazine-five-year-plan.html",
-   "to": "book-five-year-plan-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "magazine-five-year-plan.html",
-   "to": "book-five-year-plan-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "magazine-five-year-plan.html",
-   "to": "ca-five-year-plan.html",
-   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -1549,7 +1171,7 @@
   },
   {
    "from": "magazine.html",
-   "to": "magazine-five-year-plan.html",
+   "to": "magazine-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1669,12 +1291,6 @@
   },
   {
    "from": "personal-notes.html",
-   "to": "pnote-mobile-phone.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "personal-notes.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
@@ -1695,66 +1311,6 @@
    "from": "personal-notes.html",
    "to": "study-notes.html",
    "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "content/personal-notes/mobile%20phone.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "personal-notes.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "pnote-mobile-phone",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "book-five-year-plan-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "ca-five-year-plan.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pnote-mobile-phone.html",
-   "to": "magazine-five-year-plan.html",
-   "rel": "related-pdf",
    "weight": 1
   },
   {
