@@ -378,7 +378,10 @@ a.ilink:hover { text-decoration-thickness: 3px; }
    a no-JS visitor (noscript fallback) simply sees the rail's space unused. */
 [data-site-header] { min-height: calc(var(--ann-h) + var(--header-h) + 1px); }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; min-width: 0; }
-.brand-logo { width: 38px; height: 38px; flex: none; border-radius: 11px; box-shadow: var(--shadow); }
+/* max-width:none keeps the mark square on narrow desktop windows: without it
+   the brand row squeezes the image (38x38 -> 36x38) and the aspect ratio no
+   longer matches. The word beside it is what gives way, not the logo. */
+.brand-logo { width: 38px; height: 38px; flex: none; max-width: none; border-radius: 11px; box-shadow: var(--shadow); }
 /* Logo has its own black background — give it an edge on the dark header. */
 html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid var(--border); }
 .brand-name { font-size: 1.02rem; letter-spacing: -0.02em; line-height: 1.1; min-width: 0; }
@@ -2512,6 +2515,13 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
   flex: 0 0 74px; font-size: 0.7rem; font-weight: 800;
   letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
 }
+/* revision.html - the chapter chips are tap targets on their own, so they get
+   the 24px minimum height the touch-target guideline asks for. Scoped to this
+   page's cards so nothing else that reuses .area-chip moves. */
+.rev-card .area-chip {
+  min-height: 24px; display: inline-flex; align-items: center;
+}
+
 /* pyq.html - group headings inside the exam / paper grids. */
 .pyq-group-title {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem); margin: 4px 0 14px;
