@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 6,
-    "topics": 10,
-    "quizzes": 10,
-    "questions": 220,
+    "topics": 11,
+    "quizzes": 11,
+    "questions": 245,
     "studentsPracticed": 12500
   },
   "site": {
@@ -430,7 +430,33 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
       "order": 3,
-      "topics": [],
+      "topics": [
+        {
+          "id": "number-series-part-1",
+          "name": "Number Series Part 1",
+          "description": "",
+          "file": "questions/reasoning/number-series-part-1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790310924152,
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/number-series-part-1.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Number Series Part 1"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-reasoning-number-series-part-1"
+        }
+      ],
       "categories": [],
       "landing": "/subject-reasoning"
     },
