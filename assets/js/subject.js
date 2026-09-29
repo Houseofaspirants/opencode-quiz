@@ -127,7 +127,7 @@
   let canonical = subject.landing
     ? `${siteBase}${subject.landing}`
     : `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}`;
-  let docTitle = `${subject.name} Quiz - House of Aspirants`;
+  let docTitle = `${subject.name} Expected MCQs - House of Aspirants`;
   let h1 = subject.name;
   let desc = subject.description || "Topic-wise MCQ practice.";
   let icon = subject.icon;
@@ -136,17 +136,17 @@
     canonical = category.landing
       ? `${siteBase}${category.landing}`
       : `${siteBase}/subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(category.id)}`;
-    docTitle = `${category.name} - ${subject.name} Quiz - House of Aspirants`;
+    docTitle = `${category.name} - ${subject.name} Expected MCQs - House of Aspirants`;
     h1 = category.name;
-    desc = `All ${category.name} quizzes inside ${subject.name} — every topic in the folder is detected automatically.`;
+    desc = `All ${category.name} expected MCQs inside ${subject.name} — every topic in the folder is detected automatically.`;
     icon = category.icon || subject.icon;
   }
   /* SERP meta description sized for the 140-160 snippet window — the short
      `desc` above remains the visible subtitle under the h1. */
   const metaDesc =
     level === "category"
-      ? `${category.name} quizzes inside ${subject.name} - pick any topic and start free MCQ practice instantly for Punjab Police, PSSSB and competitive exams.`
-      : `Free ${subject.name} quiz with instant results and answer review - topic wise MCQ practice for Punjab Police, PSSSB and Punjab Government exam aspirants.`;
+      ? `${category.name} expected MCQs inside ${subject.name} - pick any topic and start free MCQ practice instantly for Punjab Police, PSSSB and competitive exams.`
+      : `Free ${subject.name} expected MCQs with instant results and answer review - topic wise MCQ practice for Punjab Police, PSSSB and Punjab Government exam aspirants.`;
   HOA.seo({
     title: docTitle,
     canonical,
@@ -221,8 +221,8 @@
         url: canonical,
         name:
           level === "category"
-            ? `${category.name} - ${subject.name} Quizzes`
-            : `${subject.name} Quizzes`,
+            ? `${category.name} - ${subject.name} Expected MCQs`
+            : `${subject.name} Expected MCQs`,
         description: metaDesc,
         isPartOf: { "@id": `${siteBase}/#website` },
         publisher: { "@id": `${siteBase}/#organization` },
@@ -296,7 +296,7 @@
       secEyebrow.textContent = "Categories";
       secTitle.textContent = "Pick a category to start";
       secHint.textContent =
-        "Each category opens its quiz topics — every JSON file inside the category folder appears automatically.";
+        "Each category opens its MCQ sets — every JSON file inside the category folder appears automatically.";
     } else if (level === "category") {
       secEyebrow.textContent = "Topics";
       secTitle.textContent = "Pick a topic to start";
@@ -323,7 +323,7 @@
     const sub =
       subOverride ||
       (!n
-        ? "No quizzes yet — add a JSON file"
+        ? "No MCQ sets yet — add a JSON file"
         : `${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"} · Open →`);
     return `
     <a class="card quiz-card" href="subject.html?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
@@ -389,7 +389,7 @@
         <h3>${esc(t.name)}${HOA.langBadge(t.variants, { single: true })}</h3>
         <span class="qc-sub">${
           clickable
-            ? `${t.count} question${t.count === 1 ? "" : "s"} · Start quiz →`
+            ? `${t.count} question${t.count === 1 ? "" : "s"} · Start set →`
             : `No questions available yet.`
         }</span>
       </span>

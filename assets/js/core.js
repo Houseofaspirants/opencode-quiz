@@ -177,7 +177,6 @@ const HOA = (() => {
     /* --- header / drawer navigation ------------------------------------- */
     "Home": "ਹੋਮ",
     "Subjects": "ਵਿਸ਼ੇ",
-    "Daily Quiz": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼",
     "Mock Tests": "ਮੌਕ ਟੈਸਟ",
     "Bookmarks": "ਬੁੱਕਮਾਰਕ",
     "About": "ਬਾਰੇ",
@@ -197,7 +196,7 @@ const HOA = (() => {
     "Toggle theme": "ਥੀਮ ਬਦਲੋ",
     "Install App": "ਐਪ ਇੰਸਟਾਲ ਕਰੋ",
     "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
-    "Start Quiz": "ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ",
+    "Start Expected MCQs": "ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
     "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
     /* Study menu + footer column (content hub navigation) */
     "Study": "ਅਧਿਆਨ",
@@ -217,7 +216,7 @@ const HOA = (() => {
     "Success Stories": "ਕਾਮਯਾਬੀ ਦੀਆਂ ਕਹਾਣੀਆਂ",
     "Books": "ਕਿਤਾਬਾਂ",
     "Archives": "ਆਰਕਾਈਵ",
-    "Search notes, quizzes, subjects…": "ਨੋਟ, ਕੁਇਜ਼, ਵਿਸ਼ੇ ਖੋਜੋ…",
+    "Search notes, expected MCQs, subjects…": "ਨੋਟ, ਸੰਭਾਵਿਤ MCQs, ਵਿਸ਼ੇ ਖੋਜੋ…",
     "Search": "ਖੋਜੋ",
 
     /* --- footer ---------------------------------------------------------- */
@@ -286,20 +285,20 @@ const HOA = (() => {
       "ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖੋ। ਹਰ ਜਗ੍ਹਾ ਮੁਕਾਬਲਾ ਕਰੋ।",
     "Every translated set sits beside its English twin — same questions, same order.":
       "ਹਰ ਅਨੁਵਾਦ ਕੀਤਾ ਸੈੱਟ ਆਪਣੇ ਅੰਗਰੇਜ਼ੀ ਜੋੜੀ ਦੇ ਨਾਲ ਹੁੰਦਾ ਹੈ — ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ।",
-    "Switch mid-quiz: question number, answers, timer and score all stay put.":
-      "ਕੁਇਜ਼ ਵਿੱਚ ਹੀ ਭਾਸ਼ਾ ਬਦਲੋ: ਸਵਾਲ ਨੰਬਰ, ਜਵਾਬ, ਟਾਈਮਰ ਅਤੇ ਸਕੋਰ ਠੀਕ ਉਸੇ ਥਾਂ ਰਹਿੰਦੇ ਹਨ।",
+    "Switch mid-set: question number, answers, timer and score all stay put.":
+      "ਸੈੱਟ ਵਿੱਚ ਹੀ ਭਾਸ਼ਾ ਬਦਲੋ: ਸਵਾਲ ਨੰਬਰ, ਜਵਾਬ, ਟਾਈਮਰ ਅਤੇ ਸਕੋਰ ਠੀਕ ਉਸੇ ਥਾਂ ਰਹਿੰਦੇ ਹਨ।",
     "A badge tells you what is genuinely in Punjabi before you open a set.":
       "ਬੈਜ ਤੁਹਾਨੂੰ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ ਦੱਸਦਾ ਹੈ ਕਿ ਪੰਜਾਬੀ ਵਿੱਚ ਕੀ ਅਸਲ ਵਿੱਚ ਮੌਜੂਦ ਹੈ।",
     "Start in Punjabi →": "ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ →",
     "Practice in English →": "ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਭਿਆਸ ਕਰੋ →",
-    "Start Daily Quiz": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ",
+    "Start Daily Expected MCQs": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
     "Learning Features": "ਅਧਿਆਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
     "Premium MCQs in Punjabi and English":
       "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਪ੍ਰੀਮੀਅਮ MCQs",
     "MCQs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ MCQs",
     "Study Notes in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਧਿਆਨ ਨੋਟਾਂ",
     "Current Affairs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਰੰਟ ਅਫੇਅਰਜ਼",
-    "Daily Quiz Practice": "ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼ ਅਭਿਆਸ",
+    "Daily Expected MCQ Practice": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs ਅਭਿਆਸ",
     "Punjab Police Exam Preparation": "ਪੰਜਾਬ ਪੁਲਿਸ ਪ੍ਰੀਖਿਆ ਦੀ ਤਿਆਰੀ",
     "PSSSB & PPSC Preparation": "PSSSB ਅਤੇ PPSC ਦੀ ਤਿਆਰੀ",
     "Why Punjabi": "ਪੰਜਾਬੀ ਕਿਉਂ",
@@ -458,7 +457,7 @@ const HOA = (() => {
               <!-- /HOA-NAV:menu -->
             </div>
           </li>
-          <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Quiz">Daily Quiz</span></a></li>
+          <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Expected MCQs">Daily Expected MCQs</span></a></li>
           <li><a class="nav-link" data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
           <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about.html"><span data-i18n="About">About</span></a></li>
@@ -551,9 +550,9 @@ const HOA = (() => {
     <div class="search-panel">
       <div class="search-box">
         <span aria-hidden="true">🔍</span>
-        <input id="searchInput" type="search" placeholder="Search notes, quizzes, subjects…"
-               data-i18n-ph="Search notes, quizzes, subjects…"
-               autocomplete="off" aria-label="Search notes, quizzes and subjects">
+        <input id="searchInput" type="search" placeholder="Search notes, expected MCQs, subjects…"
+               data-i18n-ph="Search notes, expected MCQs, subjects…"
+               autocomplete="off" aria-label="Search notes, expected MCQs and subjects">
         <span class="kbd">Ctrl K</span>
         <button class="icon-btn" data-action="close-search" aria-label="Close search">✕</button>
       </div>
@@ -603,7 +602,7 @@ const HOA = (() => {
         <div class="footer-col">
           <h2 data-i18n="Practice">Practice</h2>
           <a href="punjab-exams.html" data-i18n="Punjab Exams">Punjab Exams</a>
-          <a href="quiz.html?mode=daily" data-i18n="Daily Quiz">Daily Quiz</a>
+          <a href="quiz.html?mode=daily" data-i18n="Daily Expected MCQs">Daily Expected MCQs</a>
           <a href="mock.html" data-i18n="Mock Tests">Mock Tests</a>
           <a href="subject.html?subject=gk" data-i18n="Previous Year Questions">Previous Year Questions</a>
           <a href="subject.html?subject=current-affairs" data-i18n="Expected MCQs">Expected MCQs</a>
@@ -685,7 +684,7 @@ const HOA = (() => {
       <li><a class="mn-link" data-nav="home" href="index.html">
         <span class="mn-ico" aria-hidden="true">🏠</span><span>Home</span></a></li>
       <li><a class="mn-link" data-nav="daily" href="quiz.html?mode=daily">
-        <span class="mn-ico" aria-hidden="true">📝</span><span>Daily Quiz</span></a></li>
+        <span class="mn-ico" aria-hidden="true">📝</span><span>Daily Expected MCQs</span></a></li>
       <li><a class="mn-link" data-nav="articles" href="articles.html">
         <span class="mn-ico" aria-hidden="true">📚</span><span>Notes</span></a></li>
       <li><a class="mn-link" data-nav="leaderboard" href="leaderboard.html">

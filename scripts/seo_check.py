@@ -1928,7 +1928,7 @@ if "cloudEnabled" not in (ROOT / "assets/js/leaderboard.js").read_text(encoding=
     errors.append("leaderboard.js: no global-board (cloud) rendering path")
 
 result_html = (ROOT / "result.html").read_text(encoding="utf-8")
-for marker in ("View Dashboard", 'href="progress.html"', "Attempt Another Quiz"):
+for marker in ("View Dashboard", 'href="progress.html"', "Attempt Another Set"):
     if marker not in result_html:
         errors.append(f"result.html: missing quiz-result action {marker!r}")
 
@@ -1949,7 +1949,7 @@ notes.append("access: anonymous-first Google sign-in (site.auth) - quizzes and n
 # hide a result — quiz attempt pages carry no rotator and no exit popup.
 idx_html = (ROOT / "index.html").read_text(encoding="utf-8")
 for marker in (
-    "Prepare Smarter", "Join Telegram", "Start Free Quiz",
+    "Prepare Smarter", "Join Telegram", "Start Free Expected MCQs",
     "Learn from Someone Who Cleared the Exam", "Gurpreet Singh",
     "tg-value-grid", "subjects-layout", 'class="tg-rail"',
 ):
