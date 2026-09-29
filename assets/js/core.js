@@ -800,6 +800,88 @@ const HOA = (() => {
   }
 
   /* ============================================== 5. INSTANT SEARCH ======= */
+
+  /* ------------------------------------------------- search destinations -
+   * Subjects, categories and question sets are derived from data/index.json,
+   * and documents come from data/search-index.json — but nothing derives the
+   * site's own sections. There is no subject called "Mock Tests" and no
+   * topic called "Previous Year Questions", so a student searching for them
+   * used to find nothing at all, and the search box pointed at four of the
+   * platform's main destinations.
+   *
+   * One list, used by BOTH the Ctrl+K overlay and search.html, so the two
+   * surfaces can never drift apart in what they call a section or where they
+   * send you. An entry is skipped when a real subject, category or set
+   * already owns the same name, so a hub can never shadow live content. */
+  const SEARCH_DESTINATIONS = [
+    { type: "hub", label: "Study Notes",
+      sub: "Concept notes, in Punjabi and English",
+      href: "study-notes.html", icon: "📝" },
+    { type: "hub", label: "Expected MCQs",
+      sub: "Topic-wise expected question sets",
+      href: "expected-mcqs.html", icon: "🎯" },
+    { type: "hub", label: "Mock Tests",
+      sub: "Full-length timed practice papers",
+      href: "mock.html", icon: "⏱️" },
+    { type: "hub", label: "Previous Year Questions",
+      sub: "Solved papers by exam — Punjab Police, PSSSB, SSC",
+      href: "previous-year-questions.html", icon: "📚" },
+    { type: "hub", label: "Download Centre",
+      sub: "PDFs, notes and papers in one place",
+      href: "pdfs.html", icon: "📥" },
+  ];
+
+  /**
+   * Everything structural search can reach — subjects, their categories,
+   * their question sets and the hub destinations above — as one flat list.
+   *
+   * Built in exactly one place so the overlay and search.html return the same
+   * rows for the same query. Resolves rather than rejects: a missing or
+   * malformed index must degrade to "fewer results", never to a broken page.
+   *
+   * @returns {Promise<Array<{type: string, label: string, sub: string,
+   *                          href: string, icon?: string, count?: number}>>}
+   */
+  function searchEntries() {
+    return loadIndex()
+      .then((idx) => {
+        const flat = [];
+        (idx.subjects || []).forEach((s) => {
+          flat.push({ type: "subject", label: s.name, sub: `${s.topics.length} topics`,
+                      href: `subject.html?subject=${s.id}`, icon: s.icon });
+          const catNames = {};
+          (s.categories || []).forEach((c) => {
+            catNames[c.id] = c.name;
+            flat.push({ type: "category", label: c.name, sub: s.name,
+                        href: `subject.html?subject=${s.id}&category=${c.id}`,
+                        icon: c.icon || s.icon });
+          });
+          s.topics.forEach((t) =>
+            flat.push({
+              type: "topic", label: t.name,
+              sub: t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name,
+              href: t.available
+                ? `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`
+                : `subject.html?subject=${s.id}${t.category ? `&category=${t.category}` : ""}`,
+              icon: s.icon, count: t.count,
+            })
+          );
+        });
+        const seen = new Set(flat.map((f) => String(f.label).toLowerCase()));
+        SEARCH_DESTINATIONS.forEach((d) => {
+          const key = d.label.toLowerCase();
+          if (seen.has(key)) return;
+          seen.add(key);
+          flat.push(d);
+        });
+        return flat;
+      })
+      .catch((err) => {
+        console.warn("[HOA] search index unavailable:", err.message);
+        return [];
+      });
+  }
+
   function initSearch() {
     const triggers = document.querySelectorAll("[data-action='open-search']");
     const overlay = document.getElementById("searchOverlay");
@@ -832,31 +914,9 @@ const HOA = (() => {
       }
     });
 
-    loadIndex().then((idx) => {
-      // Build a flat search index once: subjects + categories + topics.
-      const flat = [];
-      (idx.subjects || []).forEach((s) => {
-        flat.push({ type: "subject", label: s.name, sub: `${s.topics.length} topics`,
-                    href: `subject.html?subject=${s.id}`, icon: s.icon });
-        const catNames = {};
-        (s.categories || []).forEach((c) => {
-          catNames[c.id] = c.name;
-          flat.push({ type: "category", label: c.name, sub: s.name,
-                      href: `subject.html?subject=${s.id}&category=${c.id}`,
-                      icon: c.icon || s.icon });
-        });
-        s.topics.forEach((t) =>
-          flat.push({
-            type: "topic", label: t.name,
-            sub: t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name,
-            href: t.available
-              ? `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`
-              : `subject.html?subject=${s.id}${t.category ? `&category=${t.category}` : ""}`,
-            icon: s.icon, count: t.count,
-          })
-        );
-      });
-
+    /* Subjects, categories, question sets and the hub destinations — shared
+       with search.html so both surfaces return the same rows. */
+    searchEntries().then((flat) => {
       /* Full-site corpus: every published document and study guide with its
          title, description, body, tags, subjects, exams and category. Fetched
          once, lazily, the first time search opens - page load never waits for
@@ -1694,6 +1754,10 @@ const HOA = (() => {
   return {
     db, loadIndex, loadQuestions, normalizeQuestions,
     toast, esc, seo, countUp, fmtTime, uid, langBadge,
+    /* The one search index builder, and the sections it folds in. search.html
+       reads both so the full-page search and the Ctrl+K overlay agree on what
+       exists and where it lives. */
+    searchEntries, SEARCH_DESTINATIONS,
     /* Punjabi-first interface language. quiz.js reads `lang.get()` so the
        QUESTION file it opens matches the language the chrome is showing. */
     lang: { get: getLang, apply: applyLang },

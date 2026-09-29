@@ -208,34 +208,95 @@
     exam: "Exam",
   };
 
+  /* Structural destinations come from HOA.searchEntries(), the same builder
+     the Ctrl+K overlay uses. Before this, search.html only ever searched the
+     document corpus, so the platform's own subjects, chapters and sections
+     were invisible here — typing "General Knowledge" or "Mock Tests" found
+     nothing. `topic` reads as Expected MCQs because that is what a set is. */
+  const KIND = {
+    subject: "Subject", category: "Category", topic: "Expected MCQs",
+    hub: "Section",
+  };
+
   box.innerHTML = '<p class="search-meta">Searching…</p>';
-  fetch("data/search-index.json")
+  const toks = term.toLowerCase().split(/\s+/).filter(Boolean);
+  const every = (hay) => toks.every((t) => hay.includes(t));
+  const corpusReq = fetch("data/search-index.json")
     .then((r) => (r.ok ? r.json() : { items: [] }))
-    .then((data) => {
-      const needle = term.toLowerCase();
-      const hits = (data.items || []).filter((row) =>
-        [row.t, row.d, row.m, row.w, row.a, row.c, row.b,
-         (row.e || []).join(" "), (row.s || []).join(" "),
-         (row.g || []).join(" ")]
-          .filter(Boolean)
-          .join(" ")
-          .toLowerCase()
-          .includes(needle)
-      );
-      if (!hits.length) {
+    .catch(() => ({ items: [] }));
+  const entriesReq =
+    window.HOA && typeof window.HOA.searchEntries === "function"
+      ? window.HOA.searchEntries()
+      : Promise.resolve([]);
+
+  Promise.all([corpusReq, entriesReq])
+    .then(([data, entries]) => {
+      /* Destinations rank first: when a student types the exact name of a
+         subject or a section, that is what they meant, and a document that
+         merely mentions it is a lesser answer. */
+      const dest = entries
+        .filter((e) => every(String(e.label || "").toLowerCase()))
+        .map((e) => ({
+          href: e.href,
+          eyebrow:
+            (KIND[e.type] || "Section") +
+            (e.type === "topic" && e.count ? " · " + e.count + " Q" : ""),
+          title: e.label,
+          desc: e.sub || "",
+        }));
+
+      /* Weighted exactly as the overlay is: every word of the query must land
+         somewhere, and a title hit outranks a word buried in a body
+         paragraph — so both surfaces also agree on the order. */
+      const docs = (data.items || [])
+        .map((row) => {
+          const hay = {
+            title: String(row.t || "").toLowerCase(),
+            fields: [(row.g || []).join(" "), (row.s || []).join(" "),
+                     (row.e || []).join(" "), row.c || "",
+                     (row.w || []).join(" "), row.a || "", row.f || ""]
+              .join(" ").toLowerCase(),
+            desc: (String(row.d || "") + " " + String(row.m || "")).toLowerCase(),
+            body: String(row.b || "").toLowerCase(),
+          };
+          let s = 0;
+          for (const tk of toks) {
+            let t = 0;
+            if (hay.title.includes(tk)) t = 6;
+            else if (hay.fields.includes(tk)) t = 4;
+            else if (hay.desc.includes(tk)) t = 2;
+            else if (hay.body.includes(tk)) t = 1;
+            if (!t) { s = 0; break; }
+            s += t;
+          }
+          return s ? { row, s } : null;
+        })
+        .filter(Boolean)
+        .sort((a, b) => b.s - a.s || String(a.row.t).localeCompare(String(b.row.t)))
+        .map((x) => x.row);
+
+      if (!dest.length && !docs.length) {
         box.innerHTML =
           '<div class="empty-state"><span class="es-icon" aria-hidden="true">🔎</span>' +
-          "<h3>No document matches &ldquo;" + esc(term) + "&rdquo;</h3>" +
+          "<h3>No match for &ldquo;" + esc(term) + "&rdquo;</h3>" +
           "<p>Try a subject (Punjab GK), an exam (Punjab Police) or a tag " +
-          "(current affairs) - the corpus is searched by title, summary, " +
-          "keywords, subject, category, author and body.</p></div>";
+          "(current affairs) - subjects, chapters, sections and the document " +
+          "corpus are all searched by title, summary, keywords, subject, " +
+          "category, author and body.</p></div>";
         return;
       }
       box.innerHTML =
-        '<p class="search-meta">' + hits.length +
+        '<p class="search-meta">' + (dest.length + docs.length) +
         " result(s) for &ldquo;" + esc(term) + "&rdquo;</p>" +
         '<div class="grid grid-3">' +
-        hits.slice(0, 60).map((row) => {
+        dest.map((r) =>
+          '<a class="card card-pad" href="' + esc(r.href) + '">' +
+          '<span class="eyebrow">' + esc(r.eyebrow) + "</span>" +
+          "<h3>" + esc(r.title) + "</h3>" +
+          '<p class="muted">' + esc(r.desc) + "</p>" +
+          '<p class="ilink">Open →</p></a>'
+        ).join("") +
+        docs.slice(0, 60).map((row) => {
           const href = String(row.u || "").replace(/^\//, "");
           return (
             '<a class="card card-pad" href="' + esc(href) + '">' +
