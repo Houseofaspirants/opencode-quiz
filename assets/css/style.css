@@ -2489,3 +2489,30 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 }
 .search-page-form .btn { padding: 12px 22px; }
 .search-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+
+/* books.html - the shelf card. Additive only: it reuses .card, .eyebrow and
+   .btn, so nothing outside this page's own containers is affected. */
+.book-card { position: relative; }
+.book-cover {
+  display: flex; align-items: center; justify-content: center;
+  width: 46px; height: 62px; margin-bottom: 12px;
+  font-size: 1rem; font-weight: 800; letter-spacing: 0.02em;
+  color: #fff; background: linear-gradient(155deg, var(--brand), color-mix(in srgb, var(--brand) 55%, #111));
+  border-radius: 3px 7px 7px 3px;
+  box-shadow: inset 3px 0 0 rgba(0,0,0,.22), var(--shadow-sm);
+}
+.book-rating .star-half { opacity: .45; }
+.book-meta {
+  list-style: none; margin: 8px 0 10px; padding: 8px 10px;
+  background: color-mix(in srgb, var(--brand) 5%, transparent);
+  border: 1px solid var(--border); border-radius: var(--r-sm);
+}
+.book-meta li { display: flex; gap: 8px; padding: 2px 0; }
+.book-meta li > span {
+  flex: 0 0 74px; font-size: 0.7rem; font-weight: 800;
+  letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted);
+}
+/* pyq.html - group headings inside the exam / paper grids. */
+.pyq-group-title {
+  font-size: clamp(1.05rem, 2.2vw, 1.25rem); margin: 4px 0 14px;
+}

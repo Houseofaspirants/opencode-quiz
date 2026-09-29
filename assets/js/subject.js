@@ -46,6 +46,7 @@
     titleEl.textContent = "Subject not found";
     descEl.textContent = "Pick a subject from the home page.";
     if (crumbSubject) crumbSubject.textContent = "Not found";
+    document.getElementById("practiceSection")?.setAttribute("hidden", "");
     wrap.innerHTML = `<div class="empty-state"><div class="es-icon">🤔</div>
       <h3>Unknown subject</h3>
       <p>This subject is not in your configuration. Check <code>data/subjects.json</code> or the folder name inside <code>questions/</code>.</p>
@@ -286,32 +287,84 @@
   setStat(countQuizzes, topicList.filter((t) => t.available).length);
   setStat(countQuestions, topicList.reduce((n, t) => n + t.count, 0));
 
-  /* --------------------------------------------------------- Section head -- */
+  /* --------------------------------------------------------- Section head --
+   * STUDY MATERIAL - the first of the subject's two halves. The label is the
+   * student's, not the pipeline's: "categories" and "topics" are how the
+   * folders are built, "study material" is what a candidate came here for. */
   const folderPath =
     level === "category"
       ? `questions/${subject.id}/${category.folder || category.id}/`
       : `questions/${subject.id}/`;
   if (secEyebrow && secTitle && secHint) {
+    secEyebrow.textContent = "Study Material";
     if (level === "root") {
-      secEyebrow.textContent = "Categories";
-      secTitle.textContent = "Pick a category to start";
+      secTitle.textContent = "Pick a category to study";
       secHint.textContent =
-        "Each category opens its MCQ sets — every JSON file inside the category folder appears automatically.";
+        "Each category opens its chapters — every JSON file inside the category folder appears automatically.";
     } else if (level === "category") {
-      secEyebrow.textContent = "Topics";
-      secTitle.textContent = "Pick a topic to start";
+      secTitle.textContent = "Pick a chapter to study";
       secHint.innerHTML =
-        `Topics appear automatically when a JSON file is added to <code>${esc(folderPath)}</code>.`;
+        `Chapters appear automatically when a JSON file is added to <code>${esc(folderPath)}</code>.`;
     } else {
-      secEyebrow.textContent = "Topics";
-      secTitle.textContent = "Pick a topic to start";
+      secTitle.textContent = "Pick a chapter to study";
       secHint.textContent =
-        "Topics appear automatically when a JSON file is added to this subject folder.";
+        "Chapters appear automatically when a JSON file is added to this subject folder.";
     }
   }
   if (filterEl && level === "root") {
     filterEl.placeholder = "Filter categories…";
     filterEl.setAttribute("aria-label", "Filter categories");
+  }
+
+  /* ------------------------------------------------------------- Practice -
+   * Every subject has exactly two halves: Study Material above, and these
+   * four doors below. This is wayfinding on the subject page — the quiz
+   * engine, its routes and its internal labels are untouched, and a student
+   * meets the same four options in the same order everywhere on the site. */
+  const practiceGrid = document.getElementById("practiceGrid");
+  if (practiceGrid) {
+    const shown = level === "category" ? category.topics : subject.topics;
+    const live = shown.filter((t) => t.available).length;
+    const qs = shown.reduce((n, t) => n + (t.count || 0), 0);
+    const doors = [
+      {
+        eyebrow: "1 · Learn then test",
+        title: "Expected MCQs",
+        body: live
+          ? `${live} chapter set${live === 1 ? "" : "s"} ready in ${subject.name} — ${qs} question${qs === 1 ? "" : "s"}, each with its explanation.`
+          : `Chapter-wise forecast sets for ${subject.name}, written from the syllabus and the recent pattern.`,
+        href: "expected-mcqs.html",
+      },
+      {
+        eyebrow: "2 · Under exam conditions",
+        title: "Mock Tests",
+        body: `Build a timed paper mixing ${subject.name} with the rest of the syllabus, then read every answer back.`,
+        href: "mock.html",
+      },
+      {
+        eyebrow: "3 · What the paper really asks",
+        title: "Previous Year Questions",
+        body: "Exam-wise old papers, year by year, with solved versions and official answer keys.",
+        href: "pyq.html",
+      },
+      {
+        eyebrow: "4 · Bring it back",
+        title: "Revision Tests",
+        body: `Re-attempt a ${subject.name} chapter cold, days after you studied it, before the facts fade.`,
+        href: "revision.html",
+      },
+    ];
+    practiceGrid.innerHTML = doors
+      .map(
+        (d) => `
+    <a class="card card-pad" href="${d.href}">
+      <span class="eyebrow">${esc(d.eyebrow)}</span>
+      <h3>${esc(d.title)}</h3>
+      <p class="text-sm muted">${esc(d.body)}</p>
+      <p class="ilink">Open &rarr;</p>
+    </a>`
+      )
+      .join("");
   }
 
   /* -------------------------------------------------------- Render helpers - */

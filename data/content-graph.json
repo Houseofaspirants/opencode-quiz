@@ -20,11 +20,11 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 63,
-  "edges": 175,
-  "silos": 28,
-  "clusters": 34,
-  "pillars": 27
+  "nodes": 70,
+  "edges": 182,
+  "silos": 35,
+  "clusters": 37,
+  "pillars": 34
  },
  "nodes": [
   {
@@ -160,6 +160,30 @@
    "hub": "daily-practice.html"
   },
   {
+   "id": "exam-banking.html",
+   "url": "/exam-banking.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-capf.html",
+   "url": "/exam-capf.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "exam-clerk.html",
    "url": "/exam-clerk.html",
    "type": "exam-hub",
@@ -280,6 +304,18 @@
    "hub": ""
   },
   {
+   "id": "exam-punjab-pcs.html",
+   "url": "/exam-punjab-pcs.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "exam-punjab-police-asi.html",
    "url": "/exam-punjab-police-asi.html",
    "type": "exam-hub",
@@ -306,6 +342,18 @@
   {
    "id": "exam-punjab-police-driver.html",
    "url": "/exam-punjab-police-driver.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-punjab-police-head-constable.html",
+   "url": "/exam-punjab-police-head-constable.html",
    "type": "exam-hub",
    "template": "",
    "title": "",
@@ -388,6 +436,18 @@
    "hub": ""
   },
   {
+   "id": "exam-railways.html",
+   "url": "/exam-railways.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "exam-revenue-officer.html",
    "url": "/exam-revenue-officer.html",
    "type": "exam-hub",
@@ -402,6 +462,30 @@
   {
    "id": "exam-senior-assistant.html",
    "url": "/exam-senior-assistant.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-ssc.html",
+   "url": "/exam-ssc.html",
+   "type": "exam-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "exam-upsc.html",
+   "url": "/exam-upsc.html",
    "type": "exam-hub",
    "template": "",
    "title": "",
@@ -1459,6 +1543,18 @@
   },
   {
    "from": "recruitment.html",
+   "to": "exam-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-capf.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
    "to": "exam-clerk.html",
    "rel": "contextual",
    "weight": 1
@@ -1519,6 +1615,12 @@
   },
   {
    "from": "recruitment.html",
+   "to": "exam-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
    "to": "exam-punjab-police-asi.html",
    "rel": "contextual",
    "weight": 1
@@ -1532,6 +1634,12 @@
   {
    "from": "recruitment.html",
    "to": "exam-punjab-police-driver.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-punjab-police-head-constable.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1573,6 +1681,12 @@
   },
   {
    "from": "recruitment.html",
+   "to": "exam-railways.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
    "to": "exam-revenue-officer.html",
    "rel": "contextual",
    "weight": 1
@@ -1580,6 +1694,18 @@
   {
    "from": "recruitment.html",
    "to": "exam-senior-assistant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-ssc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "recruitment.html",
+   "to": "exam-upsc.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1838,6 +1964,24 @@
  ],
  "silos": [
   {
+   "id": "exam:banking",
+   "kind": "exam",
+   "name": "Banking Exams",
+   "pillar": "reasoning-quant-preparation.html",
+   "hub": "exam-banking.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:capf",
+   "kind": "exam",
+   "name": "Central Armed Police Forces",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-capf.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
    "id": "exam:clerk",
    "kind": "exam",
    "name": "Clerk",
@@ -1935,6 +2079,17 @@
    "leaves": []
   },
   {
+   "id": "exam:punjab-pcs",
+   "kind": "exam",
+   "name": "Punjab Civil Services",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-punjab-pcs.html",
+   "clusters": [
+    "category-gk-polity.html"
+   ],
+   "leaves": []
+  },
+  {
    "id": "exam:punjab-police",
    "kind": "exam",
    "name": "Punjab Police",
@@ -1972,6 +2127,17 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "exam-punjab-police-driver.html",
    "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:punjab-police-head-constable",
+   "kind": "exam",
+   "name": "Punjab Police Head Constable",
+   "pillar": "punjab-police-exam-preparation.html",
+   "hub": "exam-punjab-police-head-constable.html",
+   "clusters": [
+    "category-gk-punjab-gk.html"
+   ],
    "leaves": []
   },
   {
@@ -2022,6 +2188,15 @@
    "leaves": []
   },
   {
+   "id": "exam:railways",
+   "kind": "exam",
+   "name": "Railway Recruitment",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-railways.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
    "id": "exam:revenue-officer",
    "kind": "exam",
    "name": "Revenue Officer",
@@ -2039,6 +2214,26 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "exam-senior-assistant.html",
    "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:ssc",
+   "kind": "exam",
+   "name": "Staff Selection Commission",
+   "pillar": "reasoning-quant-preparation.html",
+   "hub": "exam-ssc.html",
+   "clusters": [],
+   "leaves": []
+  },
+  {
+   "id": "exam:upsc",
+   "kind": "exam",
+   "name": "Union Public Service Commission",
+   "pillar": "punjab-gk-study-guide.html",
+   "hub": "exam-upsc.html",
+   "clusters": [
+    "category-gk-polity.html"
+   ],
    "leaves": []
   },
   {

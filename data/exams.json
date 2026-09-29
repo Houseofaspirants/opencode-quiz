@@ -147,6 +147,55 @@
       "summary": "PSSSB recruitment. Whichever post you are writing, general awareness, Punjabi and reasoning are the shared subjects you can practise here as daily MCQs.",
       "subjects": ["gk", "punjabi", "reasoning"],
       "categories": []
+    },
+    {
+      "id": "punjab-police-head-constable",
+      "name": "Punjab Police Head Constable",
+      "summary": "The communication and clerical tier of Punjab Police. Punjabi, English and general knowledge carry the paper, and computer awareness is worth real marks.",
+      "subjects": ["gk", "english", "punjabi"],
+      "categories": ["punjab-gk"]
+    },
+    {
+      "id": "punjab-pcs",
+      "name": "Punjab Civil Services",
+      "summary": "The state civil services paper. Polity, history and economy run deep here, and the descriptive sections reward candidates who have read a subject rather than skimmed it.",
+      "subjects": ["gk", "current-affairs"],
+      "categories": ["polity"]
+    },
+    {
+      "id": "ssc",
+      "name": "Staff Selection Commission",
+      "summary": "The central recruitment ladder most aspirants attempt alongside a state paper. Arithmetic, reasoning and English decide the score; general awareness decides the cutoff.",
+      "subjects": ["quant", "reasoning", "english"],
+      "categories": []
+    },
+    {
+      "id": "railways",
+      "name": "Railway Recruitment",
+      "summary": "A high-volume, high-speed paper. Arithmetic, reasoning and general awareness asked at a pace that punishes anyone still working out method during the attempt.",
+      "subjects": ["reasoning", "quant", "gk"],
+      "categories": []
+    },
+    {
+      "id": "banking",
+      "name": "Banking Exams",
+      "summary": "Quantitative aptitude and reasoning at speed, with a separate English section and a general awareness paper that moves with the financial news cycle.",
+      "subjects": ["quant", "reasoning", "english"],
+      "categories": []
+    },
+    {
+      "id": "upsc",
+      "name": "Union Public Service Commission",
+      "summary": "The civil services examination. The preliminary paper tests a broad syllabus on precision, and the preparation it needs is the preparation a state services candidate needs too.",
+      "subjects": ["gk", "current-affairs"],
+      "categories": ["polity"]
+    },
+    {
+      "id": "capf",
+      "name": "Central Armed Police Forces",
+      "summary": "General ability, general knowledge, comprehension and essay for the central forces. The paper rewards candidates who read widely and write clearly under time.",
+      "subjects": ["gk", "english"],
+      "categories": []
     }
   ]
 }

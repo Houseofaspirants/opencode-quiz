@@ -178,6 +178,7 @@ const HOA = (() => {
     "Home": "ਹੋਮ",
     "Subjects": "ਵਿਸ਼ੇ",
     "Mock Tests": "ਮੌਕ ਟੈਸਟ",
+    "Revision Tests": "ਰੀਵਿਜ਼ਨ ਟੈਸਟ",
     "Bookmarks": "ਬੁੱਕਮਾਰਕ",
     "About": "ਬਾਰੇ",
     "Contact": "ਸੰਪਰਕ",
@@ -377,6 +378,39 @@ const HOA = (() => {
     ["current-affairs", "📰", "Current Affairs"],
   ];
 
+  /* NAVIGATION DE-DUPLICATION ---------------------------------------------
+   * The Study shelf (header), the drawer's Study group and the footer's Study
+   * column are rewritten from the content pipeline on every build, so they
+   * carry every published collection — including the practice and books hubs.
+   * Those now have exactly one home: Practice for Expected MCQs, Mock Tests,
+   * Previous Year Questions and Revision Tests, and the Books link for the
+   * book shelf. Drop them from the shelf so no destination appears twice in
+   * the navigation. Only the generated blocks are touched; the hand-authored
+   * Practice menu is marked and left alone. */
+  const SHELF_DEMOTED = [
+    "expected-mcqs.html",
+    "previous-year-questions.html",
+    "book-recommendations.html",
+  ];
+  function demoteShelfLinks(root) {
+    if (!root) return;
+    const drop = (scope) => {
+      if (!scope) return;
+      scope.querySelectorAll("a").forEach((a) => {
+        if (a.classList.contains("mm-practice")) return;
+        const href = (a.getAttribute("href") || "").split("?")[0];
+        if (SHELF_DEMOTED.indexOf(href) !== -1) a.remove();
+      });
+    };
+    drop(root.querySelector(".main-nav .nav-cols")); // desktop Study menu
+    drop(root.querySelector(".mobile-menu"));        // drawer Study group
+    // Match the column on its data-i18n key, never on its rendered text:
+    // the i18n pass may already have re-labelled it by the time this runs.
+    root.querySelectorAll('.footer-col h2[data-i18n="Study"]').forEach((h2) => {
+      drop(h2.parentElement);
+    });
+  }
+
   function renderChrome() {
     const head = document.querySelector("[data-site-header]");
     if (head) {
@@ -390,6 +424,8 @@ const HOA = (() => {
     }
     const foot = document.querySelector("[data-site-footer]");
     if (foot) foot.innerHTML = FOOTER_HTML();
+    demoteShelfLinks(head);
+    demoteShelfLinks(foot);
   }
 
   /* THIN ANNOUNCEMENT RAIL — the credibility line sits above the sticky header
@@ -457,8 +493,24 @@ const HOA = (() => {
               <!-- /HOA-NAV:menu -->
             </div>
           </li>
-          <li><a class="nav-link" data-nav="daily" href="quiz.html?mode=daily"><span data-i18n="Daily Expected MCQs">Daily Expected MCQs</span></a></li>
-          <li><a class="nav-link" data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
+          <!-- PRACTICE — the four things a student does AFTER studying. Sits
+               immediately after Study so the header reads learning first,
+               practice second. Hand-authored, so it is deliberately outside
+               the HOA-NAV markers the content build rewrites. -->
+          <li class="nav-drop" data-nav-drop>
+            <button class="nav-link nav-drop-btn" data-nav="practice" aria-haspopup="true" aria-expanded="false">
+              <span data-i18n="Practice">Practice</span>
+              <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                   stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="nav-drop-menu nav-practice">
+              <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+              <a data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a>
+              <a data-nav="previous-year-questions" href="pyq.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+              <a data-nav="revision" href="revision.html"><span data-i18n="Revision Tests">Revision Tests</span></a>
+            </div>
+          </li>
+          <li><a class="nav-link" data-nav="books" href="books.html"><span data-i18n="Books">Books</span></a></li>
           <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about.html"><span data-i18n="About">About</span></a></li>
           <li><a class="nav-link" data-nav="contact" href="contact.html"><span data-i18n="Contact">Contact</span></a></li>
@@ -529,13 +581,17 @@ const HOA = (() => {
     <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
     <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
     <!-- /HOA-NAV:drawer -->
+    <a class="mm-link" data-nav="books" href="books.html"><span class="mm-emoji">📚</span> <span data-i18n="Books">Books</span></a>
 
     <!-- MOBILE DRAWER — deliberately short. The old drawer listed 34 links;
          the footer (rendered on every page) still carries all of them, so
          simplifying here costs nobody a destination and makes the common
          twelve findable without scrolling. -->
     <p class="mm-group" data-i18n="Practice">Practice</p>
-    <a class="mm-link" data-nav="mock" href="mock.html"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
+    <a class="mm-link mm-practice" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
+    <a class="mm-link mm-practice" data-nav="mock" href="mock.html"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
+    <a class="mm-link mm-practice" data-nav="previous-year-questions" href="pyq.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+    <a class="mm-link mm-practice" data-nav="revision" href="revision.html"><span class="mm-emoji">🔁</span> <span data-i18n="Revision Tests">Revision Tests</span></a>
 
     <p class="mm-group" data-i18n="Updates">Updates</p>
     <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">🔔</span> <span data-i18n="Notifications">Notifications</span></a>
@@ -603,9 +659,10 @@ const HOA = (() => {
           <h2 data-i18n="Practice">Practice</h2>
           <a href="punjab-exams.html" data-i18n="Punjab Exams">Punjab Exams</a>
           <a href="quiz.html?mode=daily" data-i18n="Daily Expected MCQs">Daily Expected MCQs</a>
+          <a href="expected-mcqs.html" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="mock.html" data-i18n="Mock Tests">Mock Tests</a>
-          <a href="subject.html?subject=gk" data-i18n="Previous Year Questions">Previous Year Questions</a>
-          <a href="subject.html?subject=current-affairs" data-i18n="Expected MCQs">Expected MCQs</a>
+          <a href="pyq.html" data-i18n="Previous Year Questions">Previous Year Questions</a>
+          <a href="revision.html" data-i18n="Revision Tests">Revision Tests</a>
           <a href="bookmarks.html" data-i18n="Bookmarks">Bookmarks</a>
           <a href="progress.html" data-i18n="My Progress">My Progress</a>
           <a href="leaderboard.html" data-i18n="Leaderboard">Leaderboard</a>
@@ -683,8 +740,8 @@ const HOA = (() => {
     <ul>
       <li><a class="mn-link" data-nav="home" href="index.html">
         <span class="mn-ico" aria-hidden="true">🏠</span><span>Home</span></a></li>
-      <li><a class="mn-link" data-nav="daily" href="quiz.html?mode=daily">
-        <span class="mn-ico" aria-hidden="true">📝</span><span>Daily Expected MCQs</span></a></li>
+      <li><a class="mn-link" data-nav="subjects" href="index.html#subjects">
+        <span class="mn-ico" aria-hidden="true">📚</span><span>Subjects</span></a></li>
       <li><a class="mn-link" data-nav="articles" href="articles.html">
         <span class="mn-ico" aria-hidden="true">📚</span><span>Notes</span></a></li>
       <li><a class="mn-link" data-nav="leaderboard" href="leaderboard.html">

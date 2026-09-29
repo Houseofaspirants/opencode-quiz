@@ -10,7 +10,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v39";
+const VERSION = "hoa-v40";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -58,6 +58,10 @@ const SHELL_FILES = [
   "./success-stories.html",
   "./book-recommendations.html",
   "./search.html",
+  /* Practice + shelf destinations (hand-written, config-driven content) */
+  "./books.html",
+  "./revision.html",
+  "./pyq.html",
   "./assets/css/style.css",
   "./assets/css/quiz.css",
   "./assets/css/leaderboard.css",
@@ -76,6 +80,10 @@ const SHELL_FILES = [
   "./assets/js/leaderboard.js",
   "./assets/js/dashboard.js",
   "./assets/js/contact.js",
+  "./assets/js/books.js",
+  "./assets/js/revision.js",
+  "./assets/js/pyq.js",
+  "./data/books.json",
   "./assets/img/logo-mark.png",
   "./assets/img/logo-sm.png",
   "./assets/img/favicon-32.png",

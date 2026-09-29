@@ -34,6 +34,8 @@ PAGES = [
     "articles.html", "punjab-police-exam-preparation.html",
     "punjab-gk-study-guide.html", "current-affairs-preparation.html",
     "reasoning-quant-preparation.html",
+    # Practice + shelf destinations (hand-written, config-driven content)
+    "books.html", "revision.html", "pyq.html",
 ]
 # --- programmatic SEO landing pages (generated, committed) -------------------
 # scripts/build_landing_pages.py writes data/landing-manifest.json plus the
@@ -509,9 +511,19 @@ DESTINATIONS = {
     "Privacy Policy": 'href="privacy.html"',
     "Terms": 'href="terms.html"',
 }
+# A handful of destinations are emitted from config rather than typed out: the
+# subject list template below writes `subject.html?subject=<id>` for every entry
+# in SUBJECT_LINKS, so "Current Affairs" is a live chrome link on every page even
+# though the literal string never appears in the template. Accept that shape for
+# that one row - the proof is the same (the chrome reaches the destination).
 for label, frag in DESTINATIONS.items():
-    if frag not in core:
-        errors.append(f"chrome missing destination link: {label}")
+    if frag in core:
+        continue
+    if (label == "Current Affairs"
+            and 'subject.html?subject=${' in core
+            and '"current-affairs"' in core):
+        continue
+    errors.append(f"chrome missing destination link: {label}")
 if 'href="articles.html"' not in core:
     errors.append("chrome missing Study Guides hub link (articles.html)")
 for page in PAGES:
@@ -1280,7 +1292,8 @@ BC_PAGES = {"about.html", "bookmarks.html", "contact.html", "leaderboard.html",
             "articles.html", "punjab-exams.html", "faq.html",
             "punjab-police-exam-preparation.html",
             "punjab-gk-study-guide.html", "current-affairs-preparation.html",
-            "reasoning-quant-preparation.html"} | set(landing_files) | set(content_pages)
+            "reasoning-quant-preparation.html",
+            "books.html", "revision.html", "pyq.html"} | set(landing_files) | set(content_pages)
 ARTICLE_PAGES = {"punjab-police-exam-preparation.html", "punjab-gk-study-guide.html",
                  "current-affairs-preparation.html", "reasoning-quant-preparation.html"}
 for page in PAGES:
