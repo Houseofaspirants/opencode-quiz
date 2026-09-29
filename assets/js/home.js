@@ -309,3 +309,35 @@
     }
   }
 })();
+
+/* ---------------------------------------------------------- sticky ribbon
+   The Sunday-guidance banner is fixed across the bottom of the viewport, and
+   the thing sitting there at first paint is the mentor credential caption —
+   "Gurpreet Singh, Founder & Mentor" — which is the whole reason the hero
+   exists. So the banner waits until that caption has scrolled clear of it,
+   then slides up and stays. The test is measured against the caption's real
+   bottom versus the banner's real top rather than a scroll offset, so it
+   holds at any viewport width and on any page where the caption moves. */
+(() => {
+  "use strict";
+  const ribbon = document.querySelector(".live-ribbon");
+  if (!ribbon) return;
+  const anchor = document.querySelector(".mentor-caption");
+  /* No caption to protect (short viewport, later layout): show it at once. */
+  if (!anchor) { ribbon.classList.add("is-on"); return; }
+
+  /* Called directly on scroll rather than via requestAnimationFrame: scroll
+     events are already coalesced to roughly one per frame, and rAF does not
+     run at all in a backgrounded or hidden document — which would leave the
+     banner stuck retracted when the tab is refocused. The work is two
+     getBoundingClientRect calls and a classList toggle, so there is nothing
+     worth throttling. */
+  const sync = () => {
+    const cap = anchor.getBoundingClientRect();
+    const bar = ribbon.getBoundingClientRect();
+    ribbon.classList.toggle("is-on", cap.bottom <= bar.top);
+  };
+  addEventListener("scroll", sync, { passive: true });
+  addEventListener("resize", sync, { passive: true });
+  sync();
+})();

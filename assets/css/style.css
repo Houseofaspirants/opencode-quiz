@@ -138,6 +138,12 @@ h3 { font-size: clamp(1.1rem, 2.2vw, 1.35rem); }
   margin-inline: auto;
   padding-inline: 18px;
 }
+/* On the narrowest phones (iPhone SE class) those 18px per side were enough
+   to push the fixed-width header actions off the right edge of the screen.
+   Four more pixels of content width clears it without touching anything. */
+@media (max-width: 359px) {
+  .container { padding-inline: 14px; }
+}
 
 .section { padding: clamp(46px, 7vw, 84px) 0; }
 .section-alt { background: var(--bg-2); }
@@ -668,14 +674,26 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
 html[data-theme="dark"] .lang-btn.is-on { color: #fff; }
 /* Short forms only on the narrowest phones, where the full words would push
    the brand into a sliver. The full labels stay in the DOM for screen readers. */
+/* Short forms only where the full words would push the header past the
+   screen: the actions row (language + search + menu) is fixed-width and the
+   brand cannot shrink below its longest word, so full labels start causing a
+   horizontal scroll around 430px. The full labels stay in the DOM for screen
+   readers. */
 .lang-short { display: none; }
 @media (max-width: 719px) {
   .lang-btn { min-height: 44px; padding: 11px 13px; font-size: 0.82rem; }
 }
-@media (max-width: 379px) {
+@media (max-width: 449px) {
   .lang-btn { padding: 11px 12px; }
   .lang-full { display: none; }
   .lang-short { display: inline; }
+}
+/* Below ~380px the header's fixed-width actions still overran the screen
+   even with the short language forms. The search glyph is the only one that
+   can go without losing anything: the footer links to search.html, the same
+   overlay, on every page. */
+@media (max-width: 379px) {
+  .header-actions > [data-action="open-search"] { display: none; }
 }
 .mm-head-actions { display: flex; align-items: center; gap: 8px; flex: none; }
 
@@ -761,6 +779,39 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
    without spending a third button on the two-CTA hierarchy above. */
 .hero-alt { margin-top: 15px; font-size: 0.88rem; color: var(--muted); }
 .hero-alt a { font-weight: 700; color: var(--brand); text-underline-offset: 3px; }
+
+/* Hero language badges — the Punjabi/English promise, stated above the fold.
+   Pill-shaped, token-coloured and large enough to read at a glance without
+   competing with the two primary buttons directly above them. */
+.lang-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.lang-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text-2);
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.lang-badge.is-pa {
+  border-color: color-mix(in srgb, var(--brand) 35%, transparent);
+  background: color-mix(in srgb, var(--brand) 9%, transparent);
+  color: var(--brand);
+}
+.lang-badge-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+}
 
 /* PHONE HERO: less empty space, a headline that fits, and two full-width
    tap targets so the first action never needs a zoomed-in thumb. */
@@ -1310,7 +1361,8 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 /* Print */
 @media print {
   .site-header, .site-footer, .to-top, .toast-wrap, .ad-slot,
-  .tg-float, .tg-exit-overlay, .banner-telegram, .ann-bar { display: none !important; }
+  .tg-float, .tg-exit-overlay, .banner-telegram, .ann-bar,
+  .live-ribbon { display: none !important; }
 }
 
 /* ==========================================================================
@@ -1680,6 +1732,64 @@ html[data-theme="dark"] {
   /* Phones already carry a Telegram slot in the bottom nav — a second
      floating pill would just cover content. */
   .tg-float { display: none; }
+}
+
+/* ------------------------------------------------- live guidance ribbon ----
+   The one appointment the platform keeps, kept in view. Centred on desktop so
+   it lands in the empty middle between the Telegram pill (bottom-left) and the
+   back-to-top button (bottom-right); on phones it sits directly above the
+   thumb bar and both of those move clear of it. */
+.live-ribbon {
+  position: fixed;
+  left: 50%;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  transform: translateX(-50%);
+  z-index: 85;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: min(540px, calc(100vw - 380px));
+  padding: 8px 8px 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  box-shadow: var(--shadow-lg);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 700;
+  /* Retracted until home.js releases it. Visibility (not just opacity) so the
+     Join Now link is neither clickable nor tabbable while it is away, and
+     deliberately without a transform change: the reveal is measured against
+     this element's own box, and moving it would make the test flap. */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.28s var(--ease), visibility 0s linear 0.28s;
+}
+.live-ribbon.is-on {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.28s var(--ease), visibility 0s;
+}
+.lr-ico { font-size: 1rem; line-height: 1; }
+/* min-width:0 is what lets a flex item shrink below its content width —
+   without it the nowrap text forces the fixed ribbon wider than the screen
+   and drags the whole page into a horizontal scroll. */
+.lr-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lr-text b { color: var(--brand); }
+.live-ribbon .btn { flex: none; }
+@media (max-width: 899px) {
+  .live-ribbon {
+    left: 14px;
+    right: 14px;
+    bottom: calc(62px + env(safe-area-inset-bottom, 0px));
+    transform: none;
+    max-width: none;
+    justify-content: center;
+    padding: 8px 8px 8px 14px;
+  }
+  /* Content clears the ribbon as well as the thumb bar underneath it. */
+  body { padding-bottom: calc(116px + env(safe-area-inset-bottom, 0px)); }
+  .to-top { bottom: calc(122px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* ---------------------------------------------------- exit-intent popup ---- */

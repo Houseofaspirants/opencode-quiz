@@ -184,6 +184,10 @@ const HOA = (() => {
     "Contact": "ਸੰਪਰਕ",
     "Practice": "ਅਭਿਆਸ",
     "More": "ਹੋਰ",
+    "Updates": "ਅਪਡੇਟਸ",
+    "Notifications": "ਸੂਚਨਾਵਾਂ",
+    "Meet Your Mentor": "ਆਪਣੇ ਮੈਂਟਰ ਨਾਲ ਮਿਲੋ",
+    "Instagram": "ਇੰਸਟਾਗ੍ਰਾਮ",
     "Punjab Exams": "ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ",
     "Punjab GK": "ਪੰਜਾਬ ਜੀਕੇ",
     "My Progress": "ਮੇਰੀ ਪ੍ਰਗਤੀ",
@@ -521,39 +525,23 @@ const HOA = (() => {
     <p class="mm-group" data-i18n="Study">Study</p>
     <!-- HOA-NAV:drawer -->
     <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
-    <a class="mm-link" data-nav="subject-guides" href="subject-guides.html"><span class="mm-emoji">📚</span> <span data-i18n="Subject Guides">Subject Guides</span></a>
-    <a class="mm-link" data-nav="topic-guides" href="topic-guides.html"><span class="mm-emoji">📑</span> <span data-i18n="Topic Guides">Topic Guides</span></a>
-    <a class="mm-link" data-nav="personal-notes" href="personal-notes.html"><span class="mm-emoji">📓</span> <span data-i18n="Personal Notes">Personal Notes</span></a>
     <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
-    <a class="mm-link" data-nav="magazine" href="magazine.html"><span class="mm-emoji">📖</span> <span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
     <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
     <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
-    <a class="mm-link" data-nav="daily-practice" href="daily-practice.html"><span class="mm-emoji">✅</span> <span data-i18n="Daily Practice">Daily Practice</span></a>
-    <a class="mm-link" data-nav="recruitment" href="recruitment.html"><span class="mm-emoji">📋</span> <span data-i18n="Recruitment">Recruitment</span></a>
     <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
-    <a class="mm-link" data-nav="previous-year-questions" href="previous-year-questions.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-    <a class="mm-link" data-nav="success-stories" href="success-stories.html"><span class="mm-emoji">🏆</span> <span data-i18n="Success Stories">Success Stories</span></a>
-    <a class="mm-link" data-nav="book-recommendations" href="book-recommendations.html"><span class="mm-emoji">📕</span> <span data-i18n="Books">Books</span></a>
-    <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
-    <a class="mm-link" data-nav="blogs" href="blogs.html"><span class="mm-emoji">✍️</span> <span data-i18n="Blog">Blog</span></a>
-    <a class="mm-link" data-nav="news" href="news.html"><span class="mm-emoji">📰</span> <span data-i18n="News">News</span></a>
-    <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">📣</span> <span data-i18n="Announcements">Announcements</span></a>
-    <a class="mm-link" data-nav="archives" href="archives.html"><span class="mm-emoji">🗂️</span> <span data-i18n="Archives">Archives</span></a>
     <!-- /HOA-NAV:drawer -->
 
+    <!-- MOBILE DRAWER — deliberately short. The old drawer listed 34 links;
+         the footer (rendered on every page) still carries all of them, so
+         simplifying here costs nobody a destination and makes the common
+         twelve findable without scrolling. -->
     <p class="mm-group" data-i18n="Practice">Practice</p>
-    <a class="mm-link" data-nav="exams" href="punjab-exams.html"><span class="mm-emoji">🏛️</span> <span data-i18n="Punjab Exams">Punjab Exams</span></a>
-    <a class="mm-link" data-nav="daily" href="quiz.html?mode=daily"><span class="mm-emoji">📅</span> <span data-i18n="Daily Quiz">Daily Quiz</span></a>
     <a class="mm-link" data-nav="mock" href="mock.html"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
-    <a class="mm-link" data-nav="bookmarks" href="bookmarks.html"><span class="mm-emoji">★</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
-    <a class="mm-link" data-nav="progress" href="progress.html"><span class="mm-emoji">📊</span> <span data-i18n="My Progress">My Progress</span></a>
-    <a class="mm-link" data-nav="leaderboard" href="leaderboard.html"><span class="mm-emoji">🏆</span> <span data-i18n="Leaderboard">Leaderboard</span></a>
 
-    <p class="mm-group" data-i18n="More">More</p>
-    <a class="mm-link" data-nav="about" href="about.html"><span class="mm-emoji">ℹ️</span> <span data-i18n="About">About</span></a>
-    <a class="mm-link" data-nav="articles" href="articles.html"><span class="mm-emoji">📚</span> <span data-i18n="Study Guides">Study Guides</span></a>
-    <a class="mm-link" data-nav="faq" href="faq.html"><span class="mm-emoji">❓</span> <span data-i18n="FAQ &amp; Help">FAQ &amp; Help</span></a>
-    <a class="mm-link" data-nav="contact" href="contact.html"><span class="mm-emoji">✉️</span> <span data-i18n="Contact">Contact</span></a>
+    <p class="mm-group" data-i18n="Updates">Updates</p>
+    <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">🔔</span> <span data-i18n="Notifications">Notifications</span></a>
+    <a class="mm-link" data-nav="about" href="about.html"><span class="mm-emoji">🧑‍🏫</span> <span data-i18n="Meet Your Mentor">Meet Your Mentor</span></a>
+    <a class="mm-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener"><span class="mm-emoji">📸</span> <span data-i18n="Instagram">Instagram</span></a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> <span data-i18n="Toggle theme">Toggle theme</span></button>
     <button class="mm-link" data-action="install-app"><span aria-hidden="true">⬇</span> <span data-i18n="Install App">Install App</span></button>
     <a class="mm-link mm-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">✈</span> <span data-i18n="Join Telegram">Join Telegram</span></a>

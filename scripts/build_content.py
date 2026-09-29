@@ -4271,12 +4271,22 @@ def feed_html(kind, items, index):
     return ""
 
 
+# The phone drawer is a shortlist, not a sitemap: these are the sections an
+# aspirant opens between classes. Everything else still ships in the footer,
+# the header dropdown and the thumb bar, so trimming the drawer removes no
+# destination — only the scroll it used to cost.
+DRAWER_HUBS = ("study-notes.html", "current-affairs.html", "strategy.html",
+               "live-sessions.html", "expected-mcqs.html")
+
+
 def nav_lines(kind):
     """(href, label, emoji, data-nav) for every hub, in publication order."""
     entries = [(HUBS[c]["file"],) + NAV_ENTRY[c] + (HUB_NAV[HUBS[c]["file"][:-5]],)
                for c in NAV_ORDER]
     entries += [(f, label, emoji, HUB_NAV.get(f[:-5], ""))
                 for f, label, emoji in NAV_EXTRA]
+    if kind == "drawer":
+        entries = [e for e in entries if e[0] in DRAWER_HUBS]
     if kind == "footer":
         entries += [(f, label, emoji, "")
                      for f, label, emoji in FOOT_EXTRA]
