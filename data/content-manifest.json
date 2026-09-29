@@ -96,7 +96,7 @@
       "url": "https://houseofaspirants.in/pdfs",
       "title": "Free PDFs for Punjab Exams | House of Aspirants",
       "description": "Free downloadable PDFs for Punjab exam preparation - notes, question sets and revision sheets, each with a subject, exam tags and a direct download button.",
-      "count": 1
+      "count": 0
     },
     {
       "collection": "personal-notes",
@@ -206,17 +206,7 @@
       "pdf": "content/monthly-magazine/current-affairs-july .pdf"
     }
   ],
-  "pdfs": [
-    {
-      "title": "Five Year Plan",
-      "description": "Download Five Year Plan as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free PDFs material, filed straight from the file name.",
-      "path": "content/pdfs/five-year-plan.pdf",
-      "subjects": [],
-      "exams": [],
-      "lang": "en",
-      "url": "https://houseofaspirants.in/pdfs"
-    }
-  ],
+  "pdfs": [],
   "drops": [
     {
       "path": "content/monthly-magazine/august-2026-english.pdf",
@@ -255,25 +245,6 @@
       "thumbnail": "assets/img/pdf/ef4545fe3831.jpg",
       "thumbW": 450,
       "thumbH": 600
-    },
-    {
-      "path": "content/pdfs/five-year-plan.pdf",
-      "filename": "five-year-plan.pdf",
-      "folder": "pdfs",
-      "category": "",
-      "title": "Five Year Plan",
-      "slug": "five-year-plan",
-      "language": "en",
-      "scripts": "latin",
-      "size": 2129166,
-      "sizeLabel": "2.0 MB",
-      "published": "2026-09-29",
-      "modified": "2026-09-29",
-      "pages": 11,
-      "summary": "FIVE YEAR PLANS (1951–2017) Introduction Economic Planning refers to the systematic and efficient utilization of a country's available resources to achieve long-term economic development. In India, Five Year Plans were introduced to promote balanced growth in agriculture, industry, employment",
-      "thumbnail": "assets/img/pdf/d880847e2137.jpg",
-      "thumbW": 450,
-      "thumbH": 600
     }
   ],
   "counts": {
@@ -288,7 +259,7 @@
     "announcements": 0,
     "expected-mcqs": 0,
     "previous-year-questions": 0,
-    "pdfs": 1,
+    "pdfs": 0,
     "personal-notes": 0,
     "subject-guides": 0,
     "topic-guides": 0,
