@@ -1099,4 +1099,81 @@ npm run typecheck      # tsc --noEmit -p jsconfig.json — 0 errors
 bash scripts/ci.sh     # 7 gates, including the type check
 ```
 
+## 26. Auto-publish watcher — you never run `npm run publish`
+
+`scripts/watch_content.mjs` watches `content/` recursively. The moment a PDF
+is **added, modified or deleted**, it runs `npm run publish` end to end, then
+commits anything left over and pushes `main`.
+
+```bash
+npm run watch                 # foreground — useful to watch it work
+```
+
+### Run it in the background (macOS, survives restarts)
+
+```bash
+bash scripts/watch_service.sh install    # start now, and at every login
+bash scripts/watch_service.sh status     # is it alive?
+bash scripts/watch_service.sh logs       # follow its output
+bash scripts/watch_service.sh restart    # bounce it
+bash scripts/watch_service.sh stop       # stop until the next login
+bash scripts/watch_service.sh uninstall  # stop for good
+```
+
+`install` writes `~/Library/LaunchAgents/com.houseofaspirants.content-watch.plist`
+and boots it into launchd. `RunAtLoad` starts it the moment you log in and
+`KeepAlive` restarts it if it ever crashes, so **after a computer restart you
+do nothing — it is already watching**. Output accumulates in
+`~/Library/Logs/houseofaspirants-content-watch.log`.
+
+Verify it after a restart:
+
+```bash
+bash scripts/watch_service.sh status
+# ✓ loaded in launchd
+# ✓ process running (pid …)
+```
+
+### What you see
+
+```
+✓ PDF detected
+✓ Publishing...
+✓ Build successful
+✓ Pushing...
+✓ Website Live
+```
+
+### How the events are handled
+
+| behaviour | how |
+| --- | --- |
+| duplicate events ignored | every event re-stats every PDF under `content/`; only a real difference counts |
+| waits for the copy to finish | the 3-second timer restarts on each event, so publishing starts 3 s after the **last** change |
+| a folder of PDFs copied at once publishes **once** | all changes collect into a single batch, one publish |
+| PDFs only | `content/README.md` and other non-PDF files are never a trigger |
+| never two builds at once | a change arriving mid-build is queued for the next cycle |
+
+### Where the commits come from
+
+1. `publish.sh` commits its own build output as `publish content`.
+2. The watcher then runs `git add -A` and, **if anything is still uncommitted**
+   (a change made outside the build), commits it as `content: auto publish`.
+3. `git push origin main` → `✓ Website Live`.
+
+### One-time setup: push authentication
+
+The watcher pushes over **SSH**, so it never needs a password or a GUI
+keychain prompt — neither of which a background job could answer.
+
+```bash
+[ -f ~/.ssh/id_ed25519 ] || ssh-keygen -t ed25519 -N "" -C "houseofaspirants-autowatch" -f ~/.ssh/id_ed25519
+cat ~/.ssh/id_ed25519.pub      # → GitHub → Settings → SSH and GPG keys → New SSH key
+ssh -T git@github.com          # expect: Hi Houseofaspirants/opencode-quiz! …
+```
+
+Until the key is added, every publish still builds, gates and commits — only
+the push fails, and the watcher logs the reason instead of `✓ Website Live`.
+Nothing is ever lost; the next run pushes the backlog.
+
 **© House of Aspirants** — Practice Daily. Crack Punjab Police.
