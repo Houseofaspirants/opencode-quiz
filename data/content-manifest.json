@@ -24,7 +24,7 @@
       "url": "https://houseofaspirants.in/magazine",
       "title": "Current Affairs Monthly Magazine | House of Aspirants",
       "description": "Monthly current affairs magazine for Punjab exam aspirants - cover, PDF download, online reading, highlights, expected MCQs and a quiz for every issue.",
-      "count": 1
+      "count": 2
     },
     {
       "collection": "strategy",
@@ -170,6 +170,25 @@
   "items": [
     {
       "collection": "magazine",
+      "file": "magazine-august-2026-english.html",
+      "url": "https://houseofaspirants.in/magazine-august-2026-english",
+      "title": "August 2026 English",
+      "description": "Download August 2026 English as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free to download, print and keep for offline revision.",
+      "published": "2026-08-01",
+      "updated": "2026-08-01",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 1,
+      "lang": "en",
+      "featured": false,
+      "path": "content/monthly-magazine/august-2026-english.pdf",
+      "category": "",
+      "month": "2026-08",
+      "pdf": "content/monthly-magazine/august-2026-english.pdf"
+    },
+    {
+      "collection": "magazine",
       "file": "magazine-current-affairs-july.html",
       "url": "https://houseofaspirants.in/magazine-current-affairs-july",
       "title": "Current Affairs July",
@@ -199,6 +218,25 @@
     }
   ],
   "drops": [
+    {
+      "path": "content/monthly-magazine/august-2026-english.pdf",
+      "filename": "august-2026-english.pdf",
+      "folder": "monthly-magazine",
+      "category": "",
+      "title": "August 2026 English",
+      "slug": "august-2026-english",
+      "language": "en",
+      "scripts": "latin",
+      "size": 6479324,
+      "sizeLabel": "6.2 MB",
+      "published": "2026-08-01",
+      "modified": "2026-08-01",
+      "pages": 81,
+      "summary": "1 ! House of Aspirants | FREE Notes • MCQs • Previous Year Papers • Live Guidance \" Join Telegram: House Of Aspirants! House of Aspirants | FREE Notes • MCQs • Previous Year Papers • Live Guidance \" Join Telegram: House Of Aspirants",
+      "thumbnail": "assets/img/pdf/8c2b9904c102.jpg",
+      "thumbW": 450,
+      "thumbH": 600
+    },
     {
       "path": "content/monthly-magazine/current-affairs-july .pdf",
       "filename": "current-affairs-july .pdf",
@@ -241,7 +279,7 @@
   "counts": {
     "notes": 0,
     "current-affairs": 0,
-    "magazine": 1,
+    "magazine": 2,
     "strategy": 0,
     "sessions": 0,
     "recruitment": 0,
