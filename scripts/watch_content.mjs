@@ -32,6 +32,7 @@ import {
   readFileSync,
   writeFileSync,
   unlinkSync,
+  existsSync,
 } from "node:fs";
 import { spawn } from "node:child_process";
 import { join, resolve, dirname, relative } from "node:path";
@@ -59,6 +60,19 @@ process.env.PATH = [
 ]
   .filter(Boolean)
   .join(":");
+
+/**
+ * A background job must never block on ssh asking a question. BatchMode turns
+ * any prompt into an immediate failure instead of a hang, accept-new clears the
+ * one-off host-key question, ConnectTimeout bounds a dead network, and
+ * IdentitiesOnly pins the key we generated rather than whatever an agent holds.
+ */
+const SSH_KEY = process.env.HOME ? join(process.env.HOME, ".ssh", "id_ed25519") : "";
+if (SSH_KEY && existsSync(SSH_KEY)) {
+  process.env.GIT_SSH_COMMAND =
+    `ssh -o BatchMode=yes -o StrictHostKeyChecking=accept-new` +
+    ` -o ConnectTimeout=15 -o IdentitiesOnly=yes -i ${JSON.stringify(SSH_KEY)}`;
+}
 
 // ---------------------------------------------------------------- logging --
 
@@ -129,6 +143,27 @@ function run(cmd, args, { echo = true } = {}) {
   });
 }
 
+const sleep = (ms) => new Promise((resolveSleep) => setTimeout(resolveSleep, ms));
+
+// A single dropped connection must not leave a finished build unpublished, so
+// the push retries with backoff. Authentication failures are never retried:
+// they need a human (README §26), and retrying only delays the diagnosis.
+const AUTH_FAILURE = /Permission denied|Host key verification failed|could not read Username/i;
+const PUSH_BACKOFF_MS = [5000, 15000];
+
+async function pushWithRetry() {
+  let result;
+  for (let attempt = 0; ; attempt += 1) {
+    result = await run("git", ["push", "origin", "main"], { echo: false });
+    if (result.ok || attempt >= PUSH_BACKOFF_MS.length || AUTH_FAILURE.test(result.out)) {
+      return result;
+    }
+    const wait = PUSH_BACKOFF_MS[attempt];
+    detail(`push did not go through — retrying in ${wait / 1000}s (attempt ${attempt + 2}/${PUSH_BACKOFF_MS.length + 1})`);
+    await sleep(wait);
+  }
+}
+
 // ----------------------------------------------------------- publish pass --
 
 async function publishCycle() {
@@ -168,7 +203,7 @@ async function publishCycle() {
     }
 
     say("✓ Pushing...");
-    const push = await run("git", ["push", "origin", "main"], { echo: false });
+    const push = await pushWithRetry();
     const lines = push.out.trim().split("\n").filter(Boolean);
     if (push.ok) {
       for (const line of lines) detail(line.trim());
