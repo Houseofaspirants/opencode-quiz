@@ -30,6 +30,14 @@ step "5/5 bash scripts/ci.sh"
 bash scripts/ci.sh
 
 git add -A
+
+if git diff --cached --quiet; then
+  echo "================================="
+  echo "✅ NOTHING NEW TO PUBLISH"
+  echo "================================="
+  exit 0
+fi
+
 git commit -m "publish content"
 
 echo "================================="
