@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "House of Aspirants - Quiz Portal for Punjab Police, PSSSB & Competitive Exam aspirants. Pure HTML/CSS/JS + JSON question bank. No backend required.",
+  "description": "House of Aspirants - a free Competitive Exam Learning Platform for Punjab Police, PSSSB & Competitive Exam aspirants. Pure HTML/CSS/JS + JSON question bank. No backend required.",
   "scripts": {
     "watch": "node scripts/watch_content.mjs",
     "publish": "bash publish.sh",

@@ -1,6 +1,6 @@
 // @ts-check
 /* ============================================================================
- * core.js | House of Aspirants Quiz Portal
+ * core.js | House of Aspirants — Free Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * Shared, dependency-free core:
  *   1.  Storage layer        (namespaced localStorage + safe fallback)
@@ -389,13 +389,23 @@ const HOA = (() => {
     if (foot) foot.innerHTML = FOOTER_HTML();
   }
 
+  /* THIN ANNOUNCEMENT RAIL — the credibility line sits above the sticky header
+     on every page. It scrolls away with the page, so --header-h (and every
+     scroll-padding / sticky offset derived from it) stays exactly what it was. */
   const HEADER_HTML = () => `
   <a class="skip-link" href="#main">Skip to content</a>
+  <div class="ann-bar">
+    <div class="container ann-inner">
+      <span class="ann-item"><span class="ann-ico" aria-hidden="true">🏆</span><span class="ann-full">Prepared by </span>Punjab Police SI Rank 2 (713/800 Marks)</span>
+      <span class="ann-item"><span class="ann-ico" aria-hidden="true">📚</span> FREE Study Material in Punjabi &amp; English</span>
+      <span class="ann-item"><span class="ann-ico" aria-hidden="true">🎯</span> Weekly LIVE Guidance Every Sunday</span>
+    </div>
+  </div>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="House of Aspirants Quiz Portal - go to home">
+      <a class="brand" href="index.html" aria-label="House of Aspirants Free Exam Learning Platform - go to home">
         <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="House of Aspirants logo" title="House of Aspirants" decoding="async">
-        <span class="brand-name">House of Aspirants <span class="brand-sub">Quiz Portal</span></span>
+        <span class="brand-name">House of Aspirants <span class="brand-sub">Free Exam Learning Platform</span></span>
       </a>
 
       <nav class="main-nav" aria-label="Primary">
@@ -587,13 +597,14 @@ const HOA = (() => {
         <div class="footer-brand">
           <a class="brand" href="index.html">
             <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="" title="House of Aspirants" loading="lazy" decoding="async">
-            <span class="brand-name">House of Aspirants<span class="brand-sub">Quiz Portal</span></span>
+            <span class="brand-name">House of Aspirants<span class="brand-sub">Free Exam Learning Platform</span></span>
           </a>
           <!-- Brief item 9: the standing brand statement, in both languages. -->
           <p class="footer-stand"
              data-i18n="House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.">House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.</p>
-          <p>Practice Daily. Crack Punjab Police. A free, fast and offline-ready MCQ portal for
-             Punjab Police, PSSSB and competitive exam aspirants.</p>
+          <p>A free Competitive Exam Learning Platform — study notes, expected MCQs,
+             mock tests and current affairs for Punjab Police, PSSSB and Punjab
+             Government aspirants, in Punjabi and English.</p>
           <div class="social-row">
             <a class="social-link" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">✈</span> <span data-i18n="Telegram">Telegram</span></a>
             <a class="social-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener">📸 Instagram</a>

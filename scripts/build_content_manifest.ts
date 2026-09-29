@@ -1013,7 +1013,11 @@ const describeContent = (drops: Drop[], allowCreate: boolean): Drop[] => {
     const txt = asLatin1(fs.readFileSync(file));
     const pages = pageCountOf(txt);
     const texts: string[] = [];
-    for (const obj of pageObjects(txt, 3)) {
+    // 14, not 3: a magazine issue opens with several pages of house front
+    // matter, so the first three can be entirely brand boilerplate and leave
+    // the scanner nothing to quote but the welcome page (which seo_check
+    // rejects). 14 pages walks past the front matter into the issue itself.
+    for (const obj of pageObjects(txt, 14)) {
       const text = cleanText(pageText(txt, obj));
       if (text && isReadable(text)) texts.push(text);
     }

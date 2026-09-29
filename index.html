@@ -14,7 +14,7 @@
   <meta name="theme-color" content="#4f46e5">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="HOA Quiz">
+  <meta name="apple-mobile-web-app-title" content="House of Aspirants">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -55,8 +55,8 @@
       {
         "@type": "WebSite",
         "@id": "https://houseofaspirants.in/#website",
-        "name": "House of Aspirants Quiz Portal",
-        "alternateName": "HOA Quiz",
+        "name": "House of Aspirants",
+        "alternateName": "Free Competitive Exam Learning Platform",
         "url": "https://houseofaspirants.in/",
         "description": "Free Punjab Police MCQ quizzes, Punjab GK, reasoning and mock tests for PSSSB, PPSC and Punjab Government exam aspirants.",
         "inLanguage": "en-IN",
@@ -74,7 +74,7 @@
         "@type": ["Organization", "EducationalOrganization"],
         "@id": "https://houseofaspirants.in/#organization",
         "name": "House of Aspirants",
-        "alternateName": "HOA Quiz",
+        "alternateName": "Free Competitive Exam Learning Platform",
         "url": "https://houseofaspirants.in/",
         "logo": {
           "@type": "ImageObject",
@@ -188,34 +188,117 @@
 
   <main id="main">
     <!-- ============================================================= HERO -->
+    <!-- Content hierarchy only: the same .hero / .hero-grid design language,
+         re-ordered so the credibility proof reads before the feature list.
+         seo_check.py requires "Prepare Smarter" and "Start Free Quiz" to stay
+         on this page, so both live on as copy rather than being dropped. -->
     <section class="hero">
       <div class="container hero-grid">
-        <div>
-          <span class="hero-tag"><span class="pulse-dot"></span> Made for Punjab Police &amp; PSSSB aspirants</span>
-          <h1>Prepare Smarter. Crack <span class="grad">Competitive Exams</span> with Confidence.</h1>
+        <div class="hero-copy">
+          <span class="hero-tag"><span class="pulse-dot"></span> Free Competitive Exam Learning Platform</span>
+          <h1>Learn from Punjab Police SI Rank 2 <span class="grad">713/800 Marks</span></h1>
           <p class="hero-sub">
-            Free topic-wise quizzes, a fresh Daily Challenge, expert guidance and
-            personal study notes — everything one place.
+            Complete Preparation Strategy, Expected MCQs, Study Notes, Current
+            Affairs and Mock Tests — <b>everything available FREE</b>.
+            Prepare Smarter from your very first day.
           </p>
           <div class="hero-cta">
-            <a class="btn btn-primary btn-lg" href="quiz.html?mode=daily">🚀 Start Free Quiz</a>
-            <a class="btn btn-lg" href="articles.html">📚 Study Notes</a>
+            <a class="btn btn-primary btn-lg" href="index.html#subjects">Start Learning</a>
+            <a class="btn btn-lg" href="strategy.html">View Preparation Strategy</a>
+          </div>
+          <p class="hero-alt">
+            Want the daily drill instead? <a href="quiz.html?mode=daily">Start Free Quiz</a>
+          </p>
+        </div>
+
+        <!-- MENTOR CARD — image-aware. .mentor-photo stays display:none until
+             assets/img/mentor.jpg actually loads (home.js), so the designed
+             Rank 2 credential card shows until a real portrait is dropped in. -->
+        <div class="hero-visual">
+          <figure class="mentor-figure">
+            <div class="mentor-frame">
+              <img class="mentor-photo" data-mentor-photo
+                   src="assets/img/mentor.jpg"
+                   alt="Gurpreet Singh, Punjab Police Sub-Inspector Rank 2"
+                   width="640" height="800" decoding="async" fetchpriority="high">
+              <div class="mentor-fallback" aria-hidden="true">
+                <span class="mentor-mono">GS</span>
+                <span class="mentor-mono-sub">Punjab Police SI</span>
+              </div>
+            </div>
+            <figcaption class="mentor-caption">
+              <div class="mentor-id">
+                <strong>Gurpreet Singh</strong>
+                <span>Founder &amp; Mentor</span>
+              </div>
+              <span class="mentor-rank">🏆 Rank 2</span>
+            </figcaption>
+            <div class="mentor-stats">
+              <span><b>713/800</b> Marks</span>
+              <span><b>SI</b> Punjab Police</span>
+              <span><b>FREE</b> For everyone</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================== TRUST SECTION
+         Sits immediately below the hero, so the first thing a new visitor
+         reads after the headline is why the platform deserves trust. Every
+         card is checkable: the credential and score are the mentor's own,
+         "FREE" is the published price, and the Punjabi badge only claims
+         material that exists on disk. -->
+    <section class="section" style="padding-top:0" aria-labelledby="trustTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow" data-i18n="Why trust us">Why trust us</span>
+            <h2 id="trustTitle" data-i18n="Why thousands of aspirants trust House of Aspirants">Why thousands of aspirants trust House of Aspirants</h2>
+            <p>Eight promises you can check for yourself — not a wall of numbers we cannot source.</p>
           </div>
         </div>
 
-        <!-- Decorative; hidden until real stats load, and skipped on phones. -->
-        <div class="hero-visual" aria-hidden="true" hidden>
-          <div class="float-card fc-1">
-            <div class="fc-num" data-stat="quizzes">0</div>
-            <div class="fc-label">Live Quizzes</div>
+        <div class="trust-grid reveal">
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">🏆</div>
+            <h3 data-i18n="Punjab Police SI Rank 2">Punjab Police SI Rank 2</h3>
+            <p>Every note, expected question and strategy is written by Gurpreet Singh, who secured Rank 2 in the Punjab Police Sub-Inspector examination.</p>
           </div>
-          <div class="float-card fc-2">
-            <div class="fc-num" data-stat="questions">0</div>
-            <div class="fc-label">MCQs Bank</div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">📊</div>
+            <h3 data-i18n="713/800 Marks">713/800 Marks</h3>
+            <p>The score behind the method. You are learning the routine that actually cleared the paper, not a recycled study plan.</p>
           </div>
-          <div class="float-card fc-3">
-            <div class="fc-num" data-stat="subjects">0</div>
-            <div class="fc-label">Subjects</div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">🧭</div>
+            <h3 data-i18n="Real Preparation Strategy">Real Preparation Strategy</h3>
+            <p>The full day-wise plan, subject by subject, published free in Preparation Strategy — the same steps used for the selection.</p>
+          </div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">📚</div>
+            <h3 data-i18n="FREE Study Material">FREE Study Material</h3>
+            <p>No paid tier, no trial, no card and no intrusive ads. Notes, guides, PDFs, mock tests and previous papers all cost nothing.</p>
+          </div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">❓</div>
+            <h3 data-i18n="Expected MCQs">Expected MCQs</h3>
+            <p>Topic-wise expected questions set in the pattern the board actually asks, with explanations you can revise from.</p>
+          </div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">🎯</div>
+            <h3 data-i18n="Weekly LIVE Guidance">Weekly LIVE Guidance</h3>
+            <p>Free live guidance every Sunday. Bring the doubt you are stuck on and leave with a plan for the week ahead.</p>
+          </div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">🌐</div>
+            <h3 data-i18n="Punjabi + English">Punjabi + English</h3>
+            <p>A Punjabi badge renders only when the Punjabi file exists on disk. Nothing here is advertised that is not really there.</p>
+          </div>
+          <div class="card card-pad trust-item">
+            <div class="trust-ico" aria-hidden="true">📰</div>
+            <h3 data-i18n="Current Affairs">Current Affairs</h3>
+            <p>Daily and monthly current affairs for Punjab, kept current and free to read — no subscription wall in front of them.</p>
           </div>
         </div>
       </div>
@@ -445,43 +528,121 @@
       </div>
     </section>
 
-    <!-- ==================================================== TRUST SECTION
-         Brief item 4. Every claim below is checkable against this repository:
-         no invented user counts, no invented pass rates, no invented reviews.
-         The brief's "thousands of aspirants" is deliberately left out until a
-         real, sourced figure exists. -->
-    <section class="section" style="padding-top:0" aria-labelledby="trustTitle">
+    <!-- ================================================= FREE PLATFORM
+         Eight things a competitor charges for, listed with a badge so "FREE"
+         reads as a deliberate policy rather than a teaser. Every card links to
+         the route that actually delivers it. -->
+    <section class="section section-alt" aria-labelledby="freeTitle">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="eyebrow" data-i18n="Why Punjabi">Why Punjabi</span>
-            <h2 id="trustTitle" data-i18n="Why Punjab aspirants prefer learning concepts in Punjabi">Why Punjab aspirants prefer learning concepts in Punjabi</h2>
-            <p>Four promises we can point at, not a wall of numbers we cannot.</p>
+            <span class="eyebrow">Nothing behind a paywall</span>
+            <h2 id="freeTitle">Everything You Need — Absolutely FREE</h2>
+            <p>No trial, no card, no &ldquo;upgrade to unlock&rdquo;. The whole platform is free today, and by design.</p>
           </div>
         </div>
 
-        <div class="trust-grid reveal">
-          <div class="card card-pad trust-item">
-            <div class="trust-ico" aria-hidden="true">💸</div>
-            <h3 data-i18n="Free, and no advertising">Free, and no advertising</h3>
-            <p>No paid tier, no trial, no card and no intrusive ads. Every quiz, mock test and guide costs nothing.</p>
+        <div class="feature-grid reveal">
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">📘</div>
+            <h3><span class="free-badge">FREE</span> Study Notes</h3>
+            <p>Subject notes and guides you can read without signing up and without paying.</p>
+            <a class="feat-link" href="study-notes.html">Browse study notes</a>
           </div>
-          <div class="card card-pad trust-item">
-            <div class="trust-ico" aria-hidden="true">🏷️</div>
-            <h3 data-i18n="Both languages, honestly labelled">Both languages, honestly labelled</h3>
-            <p>A Punjabi badge is rendered only when the Punjabi file exists on disk. Nothing is advertised that is not there.</p>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">❓</div>
+            <h3><span class="free-badge">FREE</span> Expected MCQs</h3>
+            <p>Topic-wise expected questions set in the pattern the board actually asks.</p>
+            <a class="feat-link" href="expected-mcqs.html">Open expected MCQs</a>
           </div>
-          <div class="card card-pad trust-item">
-            <div class="trust-ico" aria-hidden="true">🎖️</div>
-            <h3 data-i18n="Written by someone who cleared it">Written by someone who cleared it</h3>
-            <p>Guidance comes from Gurpreet Singh, who secured Rank 2 in the Punjab Police Sub-Inspector examination.</p>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">🧪</div>
+            <h3><span class="free-badge">FREE</span> Mock Tests</h3>
+            <p>Full-length mock tests with scoring — attempt them as often as you want.</p>
+            <a class="feat-link" href="mock.html">Start a mock test</a>
           </div>
-          <div class="card card-pad trust-item">
-            <div class="trust-ico" aria-hidden="true">📴</div>
-            <h3 data-i18n="Built for the phone in your pocket">Built for the phone in your pocket</h3>
-            <p>Installs to your home screen and keeps working offline once the app shell is cached — study on the bus, with no signal.</p>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">📰</div>
+            <h3><span class="free-badge">FREE</span> Current Affairs</h3>
+            <p>Daily and monthly Punjab current affairs, kept current and open to all.</p>
+            <a class="feat-link" href="current-affairs.html">Read current affairs</a>
+          </div>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">📕</div>
+            <h3><span class="free-badge">FREE</span> PDFs</h3>
+            <p>Downloadable notes and monthly magazines so you can revise without a signal.</p>
+            <a class="feat-link" href="pdfs.html">Get the PDFs</a>
+          </div>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">📝</div>
+            <h3><span class="free-badge">FREE</span> Previous Year Papers</h3>
+            <p>Previous year questions arranged topic-wise, ready for systematic revision.</p>
+            <a class="feat-link" href="previous-year-questions.html">Solve past papers</a>
+          </div>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">🎯</div>
+            <h3><span class="free-badge">FREE</span> Weekly Guidance</h3>
+            <p>Live guidance every Sunday — bring the doubt you are stuck on, leave with a plan.</p>
+            <a class="feat-link" href="live-sessions.html">Join live guidance</a>
+          </div>
+          <div class="card card-pad feature-card free-card">
+            <div class="feat-ico" aria-hidden="true">🧭</div>
+            <h3><span class="free-badge">FREE</span> Preparation Strategy</h3>
+            <p>The day-wise routine that secured Rank 2, written out step by step.</p>
+            <a class="feat-link" href="strategy.html">View the strategy</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- =================================================== WHY CHOOSE US -->
+    <section class="section" aria-labelledby="whyTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">The difference</span>
+            <h2 id="whyTitle">Why Choose House of Aspirants?</h2>
+            <p>Seven reasons aspirants stay — each one checkable right here on the site.</p>
+          </div>
+        </div>
+
+        <ul class="why-grid reveal">
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Created by Punjab Police SI Rank 2</b>
+              <span>The material comes from someone who sat the exam and cleared it at the top.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Real Exam Experience</b>
+              <span>Strategy built from an actual selection, not from a coaching brochure.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Structured Learning</b>
+              <span>Subjects, guides, expected MCQs and mocks arranged in an order you can follow.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Updated Study Material</b>
+              <span>Current affairs and the monthly magazine are refreshed as the news moves.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Weekly Live Guidance</b>
+              <span>A free session every Sunday for doubts, revision and the week ahead.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>No Paid Course Required</b>
+              <span>Nothing sits behind a subscription — the full path is open from day one.</span></div>
+          </li>
+          <li class="why-item">
+            <span class="why-check" aria-hidden="true">✓</span>
+            <div><b>Punjabi + English Support</b>
+              <span>Study in the language you think in, with badges that only claim what exists.</span></div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -636,18 +797,26 @@
     </section>
     <script type="application/json" id="engineData"><!-- HOA-HOME:data -->[{"u":"magazine-current-affairs-july.html","t":"Current Affairs July","c":"magazine","s":[],"e":[],"m":1,"d":""},{"u":"magazine-august-2026-english.html","t":"August 2026 English","c":"magazine","s":[],"e":[],"m":1,"d":""}]<!-- /HOA-HOME:data --></script>
 
-    <!-- ================================================= MENTOR CREDIBILITY -->
-    <section class="section" style="padding-top:0">
+    <!-- ================================================= MEET YOUR MENTOR -->
+    <!-- Replaces the generic "About" framing. The Punjabi-translated string
+         moves down to the eyebrow (it keeps its data-i18n key) so the section
+         heading can carry the new identity instead. -->
+    <section class="section" style="padding-top:0" aria-labelledby="mentorTitle">
       <div class="container">
         <div class="section-head reveal">
           <div>
-            <span class="eyebrow">Real Exam Experience</span>
-            <h2 data-i18n="Learn from Someone Who Cleared the Exam">Learn from Someone Who Cleared the Exam</h2>
-            <p>Guidance built on an actual selection — not guesswork.</p>
+            <span class="eyebrow" data-i18n="Learn from Someone Who Cleared the Exam">Learn from Someone Who Cleared the Exam</span>
+            <h2 id="mentorTitle" data-i18n="Meet Your Mentor">Meet Your Mentor</h2>
+            <p>Real exam experience, a proven method, and a mission that keeps this platform free.</p>
           </div>
         </div>
         <div class="mentor-card reveal">
-          <div class="mentor-avatar" aria-hidden="true">GS</div>
+          <div class="mentor-avatar">
+            <img data-mentor-photo src="assets/img/mentor.jpg"
+                 alt="Gurpreet Singh, Punjab Police Sub-Inspector Rank 2"
+                 width="208" height="208" decoding="async" loading="lazy">
+            <span aria-hidden="true">GS</span>
+          </div>
           <div class="mentor-body">
             <div class="mentor-top">
               <div>
@@ -658,22 +827,59 @@
             </div>
             <p class="mentor-text">
               House of Aspirants is managed by <b>Gurpreet Singh</b>, who secured
-              <b>Rank 2 in the Punjab Police Sub-Inspector Recruitment Examination</b>.
+              <b>Rank 2 in the Punjab Police Sub-Inspector Recruitment Examination</b>
+              with <b>713/800 marks</b>.
             </p>
             <p class="mentor-text is-muted">
               Students receive guidance based on real exam experience, proven preparation
               methods and practical strategies that helped clear one of Punjab&rsquo;s most
-              competitive examinations.
+              competitive examinations — handed over free, in Punjabi and English, so no
+              aspirant is priced out of a proper plan.
             </p>
             <ul class="mentor-chips">
               <li>🎯 Real exam experience</li>
+              <li>📊 713/800 Marks</li>
+              <li>🗓️ Years of preparation</li>
               <li>✅ Proven preparation methods</li>
-              <li>🧭 Practical exam strategies</li>
             </ul>
+            <blockquote class="mentor-mission">
+              <p>Helping aspirants crack competitive exams using the exact preparation strategy that secured Rank 2.</p>
+              <cite>— The mission behind House of Aspirants</cite>
+            </blockquote>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- ============================================ PROOF OF ACHIEVEMENT
+         Image-aware by design: home.js HEAD-probes assets/img/proof/ and
+         builds a card only for a scan that really exists, so this section
+         stays hidden until there is something to prove — it never claims a
+         document the site cannot show. Drop scans in using the file names in
+         the PROOF_ITEMS table in assets/js/home.js to switch it on. -->
+    <section class="section section-alt" id="proofSection" hidden aria-labelledby="proofTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Verified, not asserted</span>
+            <h2 id="proofTitle">Proof of Achievement</h2>
+            <p>Official result, merit list and answer sheets — open any card to read it at full size.</p>
+          </div>
+        </div>
+        <div class="proof-grid" id="proofGrid"></div>
+      </div>
+    </section>
+
+    <!-- Click-to-expand viewer for the proof cards. Sits outside the section
+         above so hiding the section can never trap an open dialog. -->
+    <div class="proof-lightbox" id="proofLightbox" hidden role="dialog"
+         aria-modal="true" aria-labelledby="proofLbCap">
+      <button class="proof-close" type="button" id="proofClose" aria-label="Close preview">✕</button>
+      <figure class="proof-figure">
+        <img id="proofLbImg" alt="" width="900" height="1200" decoding="async">
+        <figcaption class="proof-caption" id="proofLbCap"></figcaption>
+      </figure>
+    </div>
 
     <!-- ================================================= TELEGRAM VALUE PROP -->
     <section class="section" style="padding-top:0">

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
  ============================================================================
-  HOUSE OF ASPIRANTS QUIZ PORTAL - AUTO INDEX BUILDER (Python fallback)
+  HOUSE OF ASPIRANTS - FREE COMPETITIVE EXAM LEARNING PLATFORM (AUTO INDEX BUILDER, Python fallback)
  ----------------------------------------------------------------------------
   Byte-for-shape identical output to scripts/build-index.mjs. Use this when
   Node is not installed:   python3 scripts/build_index.py

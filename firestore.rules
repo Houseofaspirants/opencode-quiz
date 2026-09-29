@@ -1,6 +1,6 @@
 rules_version = '2';
 
-// Firestore security rules for the House of Aspirants quiz portal.
+// Firestore security rules for the House of Aspirants learning platform.
 // Publish with:  firebase deploy --only firestore:rules
 // (or paste into Firebase Console → Firestore → Rules → Publish)
 //

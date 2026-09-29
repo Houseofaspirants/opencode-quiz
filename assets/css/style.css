@@ -1,5 +1,5 @@
 /* ============================================================================
-   HOUSE OF ASPIRANTS - QUIZ PORTAL
+   HOUSE OF ASPIRANTS - FREE COMPETITIVE EXAM LEARNING PLATFORM
    style.css  |  Design system, layout & reusable components
    Mobile-first. Light + Dark theme via CSS custom properties.
    ========================================================================== */
@@ -44,6 +44,9 @@
   --r-xl: 30px;
   --container: 1200px;
   --header-h: 66px;
+  /* Height of the announcement rail above the header. Declared as a token so
+     the CLS reservation below stays pixel-exact with the rendered bar. */
+  --ann-h: 36px;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -315,6 +318,43 @@ a.ilink:hover { text-decoration-thickness: 3px; }
 }
 
 /* ---------------------------------------------------------------- 6. HEADER */
+/* ANNOUNCEMENT RAIL — a thin credibility line above the sticky header on every
+   page. It sits OUTSIDE .site-header on purpose: the header keeps its exact
+   66px sticky height, so scroll-padding, sticky TOCs and .tg-rail offsets are
+   untouched, and the rail simply scrolls away with the page. */
+.ann-bar {
+  height: var(--ann-h);
+  background: var(--brand-grad);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.ann-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(14px, 3vw, 40px);
+  height: 100%;
+}
+.ann-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+.ann-ico { font-size: 0.82rem; line-height: 1; }
+/* Phones carry only the rank line — one line, one fixed height, no reflow. */
+@media (max-width: 759px) {
+  .ann-item { font-size: 0.7rem; }
+  .ann-item:nth-child(n + 2) { display: none; }
+  .ann-full { display: none; }
+}
+@media (max-width: 359px) { .ann-item { font-size: 0.66rem; } }
+
 .site-header {
   position: sticky; top: 0; z-index: 90;
   background: var(--header-bg);
@@ -327,9 +367,10 @@ a.ilink:hover { text-decoration-thickness: 3px; }
   display: flex; align-items: center; gap: 14px;
 }
 /* CLS: reserve the injected header's slot before core.js runs; exactly the
-   rendered header height (header-inner + 1px border), so the filled state is
-   pixel-identical. min-height is a floor only — real content always wins. */
-[data-site-header] { min-height: calc(var(--header-h) + 1px); }
+   rendered height (rail + header-inner + 1px border), so the filled state is
+   pixel-identical. min-height is a floor only — real content always wins, and
+   a no-JS visitor (noscript fallback) simply sees the rail's space unused. */
+[data-site-header] { min-height: calc(var(--ann-h) + var(--header-h) + 1px); }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-weight: 800; min-width: 0; }
 .brand-logo { width: 38px; height: 38px; flex: none; border-radius: 11px; box-shadow: var(--shadow); }
 /* Logo has its own black background — give it an edge on the dark header. */
@@ -456,6 +497,137 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
   letter-spacing: 0.08em; text-transform: uppercase;
   color: var(--brand);
 }
+
+/* ------------------------------------------------- FREE platform section -- */
+/* "FREE" is set as a badge inside the heading, so the promise is the loudest
+   thing in the card instead of a claim buried in the body copy. Brand gradient
+   only — no new hues enter the palette. */
+.free-badge {
+  display: inline-block;
+  padding: 2px 9px 3px;
+  border-radius: 999px;
+  background: var(--brand-grad);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+  vertical-align: 2px;
+  box-shadow: 0 4px 12px -6px rgba(79, 70, 229, 0.7);
+}
+.feat-link {
+  margin-top: auto; padding-top: 12px;
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--brand);
+  text-decoration: none;
+}
+.feat-link::after { content: " →"; }
+.feat-link:hover, .feat-link:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+
+/* --------------------------------------------------------- Why choose us -- */
+.why-grid {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: grid; gap: 14px;
+}
+@media (min-width: 700px) { .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1080px) { .why-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.why-item {
+  display: flex; align-items: flex-start; gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  box-shadow: var(--shadow);
+}
+.why-check {
+  flex: none;
+  width: 26px; height: 26px;
+  margin-top: 1px;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  background: color-mix(in srgb, var(--success) 15%, transparent);
+  color: var(--success-text);
+  font-size: 0.82rem; font-weight: 900;
+}
+.why-item b { display: block; font-size: 0.97rem; line-height: 1.35; }
+.why-item span { display: block; margin-top: 4px; font-size: 0.87rem; line-height: 1.55; color: var(--muted); }
+/* Phones: one column, roomier tap area, no cramped 3-up. */
+@media (max-width: 699px) { .why-item { padding: 14px 15px; } }
+
+/* ---------------------------------------------- Proof of achievement ----- */
+.proof-grid { display: grid; gap: 16px; }
+@media (min-width: 640px) { .proof-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .proof-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+/* A <button>, so a keyboard user can open a document without a pointer. */
+.proof-card {
+  display: flex; flex-direction: column; gap: 11px;
+  font: inherit; color: inherit; text-align: left; cursor: pointer;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: var(--shadow);
+  padding: 14px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+.proof-card:hover, .proof-card:focus-visible {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.proof-thumb {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+}
+.proof-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.proof-zoom {
+  position: absolute; right: 8px; bottom: 8px;
+  padding: 4px 10px; border-radius: 999px;
+  background: rgba(15, 23, 42, 0.74);
+  backdrop-filter: blur(6px);
+  color: #fff; font-size: 0.7rem; font-weight: 700;
+}
+.proof-card h3 { margin: 0; font-size: 0.99rem; }
+.proof-card p { margin: 0; font-size: 0.86rem; line-height: 1.55; color: var(--muted); }
+
+/* Author rules always outrank the UA's [hidden] { display: none }, so the
+   open state is expressed with :not([hidden]) rather than a bare display. */
+.proof-lightbox { display: none; }
+.proof-lightbox:not([hidden]) {
+  position: fixed; inset: 0; z-index: 160;
+  display: grid; place-items: center;
+  padding: 20px;
+  background: rgba(8, 11, 24, 0.88);
+  backdrop-filter: blur(8px);
+}
+.proof-figure {
+  margin: 0;
+  display: flex; flex-direction: column; gap: 11px;
+  max-width: min(940px, 94vw);
+}
+.proof-figure img {
+  display: block;
+  max-width: 100%; max-height: 76vh;
+  margin-inline: auto;
+  object-fit: contain;
+  background: #fff;
+  border-radius: var(--r-md);
+}
+.proof-caption { color: #e7eaf3; font-size: 0.9rem; line-height: 1.5; text-align: center; }
+.proof-close {
+  position: absolute; top: 16px; right: 18px;
+  width: 44px; height: 44px;
+  display: grid; place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff; font-size: 1.05rem; cursor: pointer;
+}
+.proof-close:hover, .proof-close:focus-visible { background: rgba(255, 255, 255, 0.24); }
 
 /* 3. Trust section — claims only, no invented counters. */
 .trust-grid { display: grid; gap: 16px; }
@@ -585,6 +757,10 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
 }
 .hero-sub { color: var(--muted); max-width: 56ch; margin-bottom: 24px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
+/* Tertiary path to the daily drill — keeps "Start Free Quiz" one tap away
+   without spending a third button on the two-CTA hierarchy above. */
+.hero-alt { margin-top: 15px; font-size: 0.88rem; color: var(--muted); }
+.hero-alt a { font-weight: 700; color: var(--brand); text-underline-offset: 3px; }
 
 /* PHONE HERO: less empty space, a headline that fits, and two full-width
    tap targets so the first action never needs a zoomed-in thumb. */
@@ -597,27 +773,77 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
   .hero-tag { font-size: 0.76rem; padding: 7px 13px; }
 }
 
-/* Hero visual cards — decorative only, so phones skip the 260px of
-   floating-card real estate and go straight to the actions. */
-.hero-visual { position: relative; min-height: 260px; }
-@media (max-width: 899px) { .hero-visual { display: none; } }
-.float-card {
-  position: absolute;
+/* ------------------------------------------------------ 7a. HERO MENTOR CARD
+   The hero's right column is now the credibility proof instead of decorative
+   float-cards. Same surface / border / radius / shadow language as every other
+   card, and it stacks UNDER the copy on phones so both CTAs stay above the
+   fold. .mentor-photo is display:none until home.js sees it load, so a missing
+   assets/img/mentor.jpg degrades to the designed credential card, not a
+   broken image. */
+.hero-visual { position: relative; }
+.mentor-figure {
+  position: relative;
+  margin: 0;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--r-lg);
+  border-radius: var(--r-xl);
   box-shadow: var(--shadow-lg);
-  padding: 16px 18px;
-  animation: floaty 6s ease-in-out infinite;
+  padding: 13px;
 }
-.float-card .fc-num { font-size: 1.5rem; font-weight: 800; color: var(--brand); }
-.float-card .fc-label { font-size: 0.78rem; color: var(--muted); font-weight: 600; }
-.fc-1 { top: 6%; left: 4%; }
-.fc-2 { top: 38%; right: 2%; animation-delay: 1.4s; }
-.fc-3 { bottom: 4%; left: 16%; animation-delay: 2.6s; }
-@keyframes floaty {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-13px); }
+.mentor-frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  border-radius: calc(var(--r-xl) - 6px);
+  overflow: hidden;
+  background:
+    radial-gradient(120% 90% at 20% 0%, color-mix(in srgb, #fff 26%, transparent), transparent 55%),
+    var(--brand-grad);
+  display: grid;
+  place-items: center;
+}
+.mentor-photo {
+  display: none;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.mentor-figure.has-photo .mentor-photo { display: block; }
+.mentor-figure.has-photo .mentor-fallback { display: none; }
+.mentor-fallback {
+  display: flex; flex-direction: column; align-items: center; gap: 7px;
+  color: #fff; text-align: center; padding: 18px;
+}
+.mentor-mono {
+  font-size: clamp(3.2rem, 8vw, 4.6rem);
+  font-weight: 800; letter-spacing: -0.04em; line-height: 1;
+  text-shadow: 0 8px 28px rgba(15, 23, 42, 0.32);
+}
+.mentor-mono-sub {
+  font-size: 0.72rem; font-weight: 800;
+  letter-spacing: 0.18em; text-transform: uppercase; opacity: 0.92;
+}
+.mentor-caption {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; padding: 14px 5px 2px;
+}
+.mentor-id { display: flex; flex-direction: column; min-width: 0; }
+.mentor-id strong { font-size: 1.04rem; letter-spacing: -0.015em; }
+.mentor-id span { font-size: 0.8rem; color: var(--muted); font-weight: 600; margin-top: 2px; }
+.mentor-stats {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  border-top: 1px solid var(--border);
+  margin-top: 8px; padding-top: 13px;
+}
+.mentor-stats span {
+  display: flex; flex-direction: column; gap: 2px;
+  font-size: 0.72rem; color: var(--muted); font-weight: 600;
+  text-align: center;
+}
+.mentor-stats b { font-size: 0.95rem; color: var(--text); font-weight: 800; }
+/* Phones: a shorter frame keeps the card a supporting act, not the headline. */
+@media (max-width: 899px) {
+  .mentor-frame { aspect-ratio: 16 / 9; }
+  .mentor-mono { font-size: clamp(2.6rem, 12vw, 3.4rem); }
 }
 
 /* ------------------------------------------------------ 7b. QUICK ACTIONS
@@ -1084,7 +1310,7 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 /* Print */
 @media print {
   .site-header, .site-footer, .to-top, .toast-wrap, .ad-slot,
-  .tg-float, .tg-exit-overlay, .banner-telegram { display: none !important; }
+  .tg-float, .tg-exit-overlay, .banner-telegram, .ann-bar { display: none !important; }
 }
 
 /* ==========================================================================
@@ -1277,6 +1503,38 @@ html[data-theme="dark"] {
   font-size: 0.8rem; font-weight: 700; color: var(--text-2);
   background: var(--surface-2); border: 1px solid var(--border);
   padding: 6px 13px; border-radius: 999px;
+}
+/* Portrait slot: the "GS" monogram is the shipped state and the real photo
+   layers over it only when assets/img/mentor.jpg loads (home.js). */
+.mentor-avatar { position: relative; overflow: hidden; }
+.mentor-avatar img {
+  display: none;
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+}
+.mentor-avatar.has-photo img { display: block; }
+.mentor-avatar.has-photo span { visibility: hidden; }
+/* Mission statement — the one line the whole platform is built to deliver. */
+.mentor-mission {
+  margin: 18px 0 0;
+  padding: 15px 18px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--brand);
+  border-radius: var(--r-md);
+}
+.mentor-mission p {
+  margin: 0;
+  font-size: clamp(0.95rem, 1.9vw, 1.05rem);
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--text);
+}
+.mentor-mission cite {
+  display: block; margin-top: 8px;
+  font-size: 0.8rem; font-style: normal;
+  font-weight: 700; color: var(--muted);
 }
 
 /* --------------------------------------------------- exam coverage band -- */

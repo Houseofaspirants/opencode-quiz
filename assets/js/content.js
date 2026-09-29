@@ -1,5 +1,5 @@
 /* ============================================================================
- * content.js | House of Aspirants Quiz Portal
+ * content.js | House of Aspirants - Free Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * Behaviour for the Markdown-generated pages (notes, magazine, strategy,
  * sessions, recruitment): copy-link sharing and a table-of-contents

@@ -1,4 +1,4 @@
-# House of Aspirants - Quiz Portal
+# House of Aspirants - Free Competitive Exam Learning Platform
 
 > **An empty, production-ready quiz ENGINE.**
 > It contains **zero questions, zero MCQs and zero sample data** on purpose —
@@ -325,7 +325,7 @@ third level — this is how General Knowledge works today:
 ```bash
 git init
 git add .
-git commit -m "House of Aspirants Quiz Portal"
+git commit -m "House of Aspirants"
 git branch -M main
 git remote add origin https://github.com/<your-username>/house-of-aspirants.git
 git push -u origin main
