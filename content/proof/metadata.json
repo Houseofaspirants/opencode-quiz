@@ -1,0 +1,17 @@
+{
+  "$note": "OPTIONAL corrections, keyed by the file's own name. Every key is optional: leave a file out and its title is built from its name, its size and type are measured off the file, and no date is shown. Only write a key when you are stating a fact about that document.",
+  "$schema": {
+    "title": "human title for the card",
+    "note": "one honest sentence about what the document is",
+    "uploaded": "YYYY-MM-DD, only when you know the real date",
+    "questions": [
+      {
+        "n": 1,
+        "text": "the question exactly as it was asked",
+        "selected": "option marked on the sheet",
+        "correct": "the answer the key gives",
+        "explanation": "only when one exists"
+      }
+    ]
+  }
+}
