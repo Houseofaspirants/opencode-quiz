@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 104,
-  "edges": 381,
+  "nodes": 107,
+  "edges": 394,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -122,6 +122,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "url": "/content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
@@ -736,6 +748,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-mobail-phon",
+   "url": "/material-mobail-phon",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-mobail-phon.html",
+   "url": "/material-mobail-phon.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਮੋਬਾਈਲ ਫ਼ੋਨ - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-part-1-english-en",
    "url": "/material-part-1-english-en",
    "type": "document",
@@ -1327,12 +1363,6 @@
   },
   {
    "from": "archive-category-computer.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -1351,19 +1381,7 @@
   },
   {
    "from": "archive-category-computer.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "study-notes.html",
+   "to": "material-mobail-phon.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1466,6 +1484,12 @@
   {
    "from": "archives.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-mobail-phon.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1915,13 +1939,13 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-part-1-english-en.html",
+   "to": "material-mobail-phon.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-part-1-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -1993,13 +2017,91 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-part-1-english-en.html",
+   "to": "material-mobail-phon.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-part-1-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "material-mobail-phon",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "material-part-1-english-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3253,6 +3355,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
@@ -3338,6 +3446,12 @@
   {
    "from": "study-material.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-mobail-phon.html",
    "rel": "contextual",
    "weight": 1
   },

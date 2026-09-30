@@ -23,9 +23,9 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 2,
+      "count": 3,
       "newest": "2026-09-30",
-      "totalSize": 4503166,
+      "totalSize": 8077761,
       "languages": [
         {
           "id": "pa",
@@ -51,7 +51,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "fundamentals-of-computer",
@@ -62,11 +62,26 @@
                   "n": 1
                 }
               ]
+            },
+            {
+              "id": "mobail-phon",
+              "name": "Mobail Phon",
+              "parts": [
+                {
+                  "file": "material-mobail-phon.html",
+                  "n": 1
+                }
+              ]
+            },
+            {
+              "id": "mobile phones",
+              "name": "Mobile Phones",
+              "parts": []
             }
           ]
         }
       ],
-      "chapters": 2
+      "chapters": 4
     },
     {
       "id": "english",
@@ -483,6 +498,6 @@
       "chapters": 0
     }
   ],
-  "total": 12,
+  "total": 13,
   "generatedBy": "scripts/study_material.py"
 }
