@@ -172,18 +172,6 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
-   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
    "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
    "type": "page",
@@ -222,6 +210,18 @@
   {
    "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-1-english-en.pdf",
    "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-1-english-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-2-english-en.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-2-english-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -772,8 +772,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-part-2-english",
-   "url": "/material-part-2-english",
+   "id": "material-part-2-english-en",
+   "url": "/material-part-2-english-en",
    "type": "document",
    "template": "",
    "title": "",
@@ -784,11 +784,11 @@
    "hub": ""
   },
   {
-   "id": "material-part-2-english.html",
-   "url": "/material-part-2-english.html",
+   "id": "material-part-2-english-en.html",
+   "url": "/material-part-2-english-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 2 English",
+   "title": "Part 2 English En",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1219,7 +1219,7 @@
   },
   {
    "from": "archive-category-chapter-1-arrival-of-europeans.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1339,7 +1339,7 @@
   },
   {
    "from": "archives.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1891,7 +1891,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -1963,7 +1963,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2029,7 +2029,7 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2046,73 +2046,73 @@
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
-   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
+   "from": "material-part-2-english-en.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-2-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "magazine-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
-   "to": "material-part-2-english",
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-2-english-en",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "material-part-1-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "material-part-3-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-part-2-english.html",
+   "from": "material-part-2-english-en.html",
    "to": "material-part-4-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -2179,7 +2179,7 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2257,7 +2257,7 @@
   },
   {
    "from": "material-part-4-english.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2335,7 +2335,7 @@
   },
   {
    "from": "material-part-5-english.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2761,12 +2761,6 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
    "rel": "contextual",
    "weight": 1
@@ -2786,6 +2780,12 @@
   {
    "from": "study-material.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-1-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part-2-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -2815,7 +2815,7 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-part-2-english.html",
+   "to": "material-part-2-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
