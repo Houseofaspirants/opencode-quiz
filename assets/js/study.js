@@ -766,9 +766,12 @@
               no: i + 1,
               total,
               // The languages this same chapter is published in beside the
-              // one you are reading — measured, never assumed.
+              // one you are reading — measured, never assumed, and with the
+              // language you are standing in named first.
               languages: langs
                 .filter((l) => (l.chapters || []).some((x) => x.id === c.id))
+                .sort((a, b) => (a.id === languageId ? -1
+                  : b.id === languageId ? 1 : 0))
                 .map((l) => l.name),
             } : null)).join("")
         : emptyState("📖", `No ${langName} chapters in ${nodeName} yet`,
