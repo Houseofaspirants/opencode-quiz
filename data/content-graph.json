@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 114,
-  "edges": 438,
+  "nodes": 118,
+  "edges": 465,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -69,6 +69,18 @@
    "type": "archive",
    "template": "",
    "title": "Polity",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-reasoning.html",
+   "url": "/archive-category-reasoning.html",
+   "type": "archive",
+   "template": "",
+   "title": "Reasoning",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -306,6 +318,18 @@
   {
    "id": "content/study-material/polity/articles%20.pdf",
    "url": "/content/study-material/polity/articles%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/reasoning/number%20series%20.pdf",
+   "url": "/content/study-material/reasoning/number%20series%20.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -849,6 +873,30 @@
    "type": "study-material",
    "template": "",
    "title": "Mobile Phone - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-number-series",
+   "url": "/material-number-series",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-number-series.html",
+   "url": "/material-number-series.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Number Series - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1590,6 +1638,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-reasoning.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "material-number-series.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archives.html",
    "to": "archive-category-computer.html",
    "rel": "contextual",
@@ -1604,6 +1694,12 @@
   {
    "from": "archives.html",
    "to": "archive-category-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-category-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1640,6 +1736,12 @@
   {
    "from": "archives.html",
    "to": "material-mobile-phone.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-number-series.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2426,6 +2528,102 @@
   {
    "from": "material-mobile-phone.html",
    "to": "material-mobail-phon.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "content/study-material/reasoning/number%20series%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-number-series",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-articles.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3769,6 +3967,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/reasoning/number%20series%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -3800,6 +4004,12 @@
   {
    "from": "study-material.html",
    "to": "material-mobile-phone.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-number-series.html",
    "rel": "contextual",
    "weight": 1
   },

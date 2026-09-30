@@ -79,6 +79,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 import study_material            # data/study-manifest.json (Study's subject list)
+import proof_documents           # data/proof-manifest.json (the Blueprint's scans)
 
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
@@ -6559,6 +6560,16 @@ def main():
     study_manifest = study_material.build(all_records[STUDY_DIR], study_registry())
     info(f"study subjects: {len(study_manifest['subjects'])} folder(s), "
          f"{study_manifest['total']} material(s) -> data/study-manifest.json")
+
+    # ---- Rank 2 Blueprint document shelf ---------------------------------
+    # data/proof-manifest.json: every scan in assets/proof/, with the byte size
+    # and file type measured off the file itself. The Blueprint's Official
+    # Documents section reads it and grows a card for each new drop - so
+    # publishing a scan is a file plus `npm run publish`, never an HTML edit.
+    proof_manifest = proof_documents.build()
+    filled = sum(1 for s in proof_manifest["slots"] if s["doc"])
+    info(f"proof: {proof_manifest['total']} scan(s), {filled}/"
+         f"{len(proof_manifest['slots'])} slot(s) filled -> data/proof-manifest.json")
 
     # ---- manifest ---------------------------------------------------------
     # `drops` is the scanner's inventory, carried through byte for byte: the

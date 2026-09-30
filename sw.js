@@ -10,7 +10,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v46";
+const VERSION = "hoa-v47";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -168,9 +168,13 @@ self.addEventListener("fetch", (event) => {
   }
 
   /* 2. Manifest index + article registry: always try network so new quizzes
-        and guides show up fast (offline copy kept as fallback) */
+        and guides show up fast (offline copy kept as fallback).
+        The Blueprint's document shelf rides with them: an answer sheet
+        published a minute ago must be visible on the next load, not on the
+        load after the next one. */
   if (url.pathname.includes("/data/index.json") ||
-      url.pathname.includes("/data/articles.json")) {
+      url.pathname.includes("/data/articles.json") ||
+      url.pathname.includes("/data/proof-manifest.json")) {
     event.respondWith(
       fetch(req)
         .then((res) => {

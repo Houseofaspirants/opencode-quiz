@@ -13,6 +13,12 @@
       "name": "English",
       "native": "English",
       "flag": "🇬🇧"
+    },
+    {
+      "id": "punjabgk",
+      "name": "Punjab GK",
+      "native": "",
+      "flag": ""
     }
   ],
   "subjects": [
@@ -84,6 +90,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 4
@@ -112,6 +126,14 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
@@ -144,6 +166,14 @@
           "flag": "🇬🇧",
           "count": 0,
           "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 0
@@ -155,9 +185,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-09-30",
+      "totalSize": 678350,
       "languages": [
         {
           "id": "pa",
@@ -172,11 +202,30 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
+          "count": 1,
+          "chapters": [
+            {
+              "id": "number-series",
+              "name": "Number Series",
+              "parts": [
+                {
+                  "file": "material-number-series.html",
+                  "n": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 1
     },
     {
       "id": "quant",
@@ -204,34 +253,12 @@
           "flag": "🇬🇧",
           "count": 0,
           "chapters": []
-        }
-      ],
-      "chapters": 0
-    },
-    {
-      "id": "gk",
-      "name": "General Knowledge",
-      "icon": "🏛️",
-      "color": "#6366f1",
-      "description": "Static GK, Punjab GK, firsts, awards, books and important days.",
-      "order": 6,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
-      "languages": [
-        {
-          "id": "pa",
-          "name": "Punjabi",
-          "native": "ਪੰਜਾਬੀ",
-          "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
         },
         {
-          "id": "en",
-          "name": "English",
-          "native": "English",
-          "flag": "🇬🇧",
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
@@ -262,6 +289,14 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
@@ -305,6 +340,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 1
@@ -389,6 +432,14 @@
               ]
             }
           ]
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 2
@@ -417,6 +468,14 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
@@ -449,6 +508,14 @@
           "flag": "🇬🇧",
           "count": 0,
           "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 0
@@ -477,6 +544,14 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
           "count": 0,
           "chapters": []
         }
@@ -509,11 +584,57 @@
           "flag": "🇬🇧",
           "count": 0,
           "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
+    },
+    {
+      "id": "Punjab GK",
+      "name": "Punjab Gk",
+      "icon": "📚",
+      "color": "#4f46e5",
+      "description": "",
+      "order": 100,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
         }
       ],
       "chapters": 0
     }
   ],
-  "total": 15,
+  "total": 16,
   "generatedBy": "scripts/study_material.py"
 }
