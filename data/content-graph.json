@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 107,
-  "edges": 394,
+  "nodes": 110,
+  "edges": 411,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -124,18 +124,6 @@
    "hub": "book-recommendations.html"
   },
   {
-   "id": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
-   "url": "/content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "url": "/content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "type": "page",
@@ -148,8 +136,32 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "url": "/content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
    "url": "/content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "url": "/content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -764,7 +776,31 @@
    "url": "/material-mobail-phon.html",
    "type": "study-material",
    "template": "",
-   "title": "ਮੋਬਾਈਲ ਫ਼ੋਨ - Part 1 (English)",
+   "title": "Mobile Phones - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-mobile-phone",
+   "url": "/material-mobile-phone",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-mobile-phone.html",
+   "url": "/material-mobile-phone.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Mobile Phone - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1386,6 +1422,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-computer.html",
+   "to": "material-mobile-phone.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-history.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -1490,6 +1532,12 @@
   {
    "from": "archives.html",
    "to": "material-mobail-phon.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1945,7 +1993,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-part-1-english-en.html",
+   "to": "material-mobile-phone.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -2023,13 +2071,13 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-part-1-english-en.html",
+   "to": "material-mobile-phone.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "to": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -2101,7 +2149,85 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-part-1-english-en.html",
+   "to": "material-mobile-phone.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "material-mobile-phone",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "material-mobail-phon.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3355,19 +3481,25 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/english/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3452,6 +3584,12 @@
   {
    "from": "study-material.html",
    "to": "material-mobail-phon.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },

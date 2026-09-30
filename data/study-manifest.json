@@ -23,16 +23,16 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 3,
+      "count": 4,
       "newest": "2026-09-30",
-      "totalSize": 8077761,
+      "totalSize": 13406992,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "fundamentals-of-computer",
@@ -40,6 +40,16 @@
               "parts": [
                 {
                   "file": "material-fundamentals-of-computer-punjabi.html",
+                  "n": 1
+                }
+              ]
+            },
+            {
+              "id": "mobile phones",
+              "name": "Mobile Phones",
+              "parts": [
+                {
+                  "file": "material-mobail-phon.html",
                   "n": 1
                 }
               ]
@@ -64,19 +74,14 @@
               ]
             },
             {
-              "id": "mobail-phon",
-              "name": "Mobail Phon",
+              "id": "mobile phone",
+              "name": "Mobile Phone",
               "parts": [
                 {
-                  "file": "material-mobail-phon.html",
+                  "file": "material-mobile-phone.html",
                   "n": 1
                 }
               ]
-            },
-            {
-              "id": "mobile phones",
-              "name": "Mobile Phones",
-              "parts": []
             }
           ]
         }
@@ -498,6 +503,6 @@
       "chapters": 0
     }
   ],
-  "total": 13,
+  "total": 14,
   "generatedBy": "scripts/study_material.py"
 }
