@@ -449,6 +449,48 @@ def _render_list(items, ordered, depth):
 # intro/lead copy for hubs: honest, evergreen, and specific about what lives
 # in the section TODAY (empty collections say so rather than pretending).
 HUBS = {
+    # --- STEP 2/3: the STUDY MATERIAL shelf -------------------------------
+    # content/study-material/<subject>/<file> is the only authoring surface:
+    # the folder is the registration, the file name is the metadata, and the
+    # scanner above walks it exactly as it walks every other collection. It
+    # sits first because it is the Study system's unified listing - one
+    # section, one heading, no per-file-type shelves beside it.
+    "study-material": {
+        "file": "study-material.html",
+        "dir": "study-material",
+        "prefix": "material",
+        "eyebrow": "Free to read & download",
+        "h1": "Study Material",
+        "title": "Free Study Material for Punjab Competitive Exams",
+        "description": (
+            "Free study material for Punjab Police, PSSSB and PPSC exams - "
+            "PDFs, notes and downloads for every subject, discovered from the "
+            "files themselves with no sign-up."
+        ),
+        "keywords": ("Free Study Material Punjab, Punjab Police study material "
+                     "PDF, PSSSB notes download, study material in Punjabi"),
+        "lead": (
+            "Every file dropped into the Study Material folders lands here: "
+            "the subject it belongs to, the language it is written in, when it "
+            "was last updated and how long it takes to read - all derived from "
+            "the file itself, none of it typed in by hand."
+        ),
+        "answer": (
+            "Study material here is free and needs no account: PDFs, notes and "
+            "downloads are listed together under one heading whatever their "
+            "format, filtered by subject and language, and searchable by title, "
+            "file name and keyword."
+        ),
+        "empty_h3": "No study material published yet",
+        "empty_p": (
+            "Files dropped into content/study-material/ appear on this page "
+            "with their subject, language and file size already filled in. "
+            "Until the first set lands, the study notes and the practice "
+            "system are ready to use."
+        ),
+        "empty_cta": ("study.html", "Open the Study system"),
+        "schema_hub": "Study Material",
+    },
     "notes": {
         "file": "study-notes.html",
         "dir": "notes",
@@ -1071,6 +1113,7 @@ HUB_NAV = {                          # hub file stem -> data-nav highlight key
 }
 
 NAV_ENTRY = {                        # collection -> (English label, emoji)
+    "study-material": ("Study Material", "\U0001f4da"),
     "notes": ("Study Notes", "\U0001f4dd"),
     "current-affairs": ("Current Affairs", "\U0001f5de️"),
     "magazine": ("Monthly Magazine", "\U0001f4d6"),
@@ -1093,7 +1136,8 @@ NAV_ENTRY = {                        # collection -> (English label, emoji)
 # Publication order of the Study menu (drives the header menu, the drawer
 # group and the footer column - one table, three surfaces). Phase 4 inserts the
 # new collections where an aspirant would look for them, not at the end.
-NAV_ORDER = ["notes", "subject-guides", "topic-guides", "personal-notes",
+NAV_ORDER = ["study-material",
+             "notes", "subject-guides", "topic-guides", "personal-notes",
              "current-affairs", "magazine", "strategy", "sessions",
              "daily-practice", "recruitment", "expected-mcqs",
              "previous-year-questions", "success-stories",
