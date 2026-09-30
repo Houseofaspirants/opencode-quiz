@@ -189,8 +189,6 @@
     const indexSubject = indexSubjects.find((s) => s.id === subjectId);
     const name = (shelfSubject && shelfSubject.name) ||
                  (indexSubject && indexSubject.name) || subjectId;
-    const blurb = (shelfSubject && shelfSubject.description) ||
-                  (indexSubject && indexSubject.description) || "";
 
     if (!shelfSubject && !indexSubject) {
       if (rootEl) rootEl.hidden = false;
@@ -293,9 +291,12 @@
     const count = document.getElementById("studyStepCount");
     const body = document.getElementById("studyStepBody");
 
+    // The eyebrow names where you are inside Study — never repeats the <h1>,
+    // and never grows past a fixed set of words however long a subject's
+    // blurb is.
     if (eyebrow) {
       eyebrow.textContent = step === "language"
-        ? `Study Material${blurb ? ` · ${blurb}` : ""}`
+        ? "Study Material"
         : `Study Material · ${langName}`;
     }
     if (head) {
@@ -332,8 +333,15 @@
     const setCount = (text) => { if (count) count.textContent = text; };
 
     const languageCard = (l) => {
-      const ch = (l.chapters || []).length;
+      const chs = l.chapters || [];
+      const ch = chs.length;
       const n = Number(l.count) || 0;
+      // The counts live in the badges; this line says *what* is here — the
+      // chapters themselves — so the card never prints the same fact twice.
+      const names = chs.slice(0, 3).map((c) => c.name).join(", ");
+      const under = n
+        ? (names ? `${names}${chs.length > 3 ? ` and ${chs.length - 3} more` : ""}` : `${plural(ch, "chapter")}`)
+        : `No chapters in ${l.name} yet.`;
       return `
         <a class="card lang-card" style="--sc:${esc(color)}"
            href="${esc(hrefFor(l.id))}">
@@ -341,9 +349,7 @@
           <h3>${esc(l.name)}</h3>
           ${l.native && l.native !== l.name
             ? `<p class="lang-native">${esc(l.native)}</p>` : ""}
-          <p class="muted">${n
-            ? `${plural(ch, "chapter")} · ${plural(n, "file")}`
-            : `Nothing filed under ${l.name} in ${name} yet.`}</p>
+          <p class="muted">${esc(under)}</p>
           <div class="subject-meta">
             <span class="badge ${ch ? "badge-success" : "badge-muted"}">${plural(ch, "chapter")}</span>
             <span class="badge ${n ? "badge-success" : "badge-muted"}">${plural(n, "file")}</span>

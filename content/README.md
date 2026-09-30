@@ -294,47 +294,61 @@ Rules worth knowing:
 * **Drafts are not a PDF concept** — anything in a collection folder is
   published; `content/_drafts/` is still never read.
 
-## Study material — the folder *is* the subject
+## Study material — the folders *are* the hierarchy
 
 Study is the one system that is not written as Markdown documents. Everything
 under `content/study-material/` is discovered, never registered:
 
 ```
-content/study-material/README.md              the authoring contract (full detail)
-content/study-material/metadata.json          optional subject decoration (name/icon/color/order)
-content/study-material/<subject>/             ← a folder is a subject
-content/study-material/<subject>/README.md    optional, never published
-content/study-material/<subject>/metadata.json  optional, keyed by file name
-content/study-material/<subject>/<file>       ← any file is material
+content/study-material/README.md                 the authoring contract (full detail)
+content/study-material/metadata.json             optional subject decoration (name/icon/color/order)
+content/study-material/<subject>/                ← a folder is a subject
+content/study-material/<subject>/README.md       optional, never published
+content/study-material/<subject>/metadata.json   optional, keyed by file name
+content/study-material/<subject>/<language>/     ← a folder is a language
+content/study-material/<subject>/<language>/<chapter>/   ← a folder is a chapter
+content/study-material/<subject>/<language>/<chapter>/<file>   ← a file is a part
 ```
+
+Four levels, always in that order: **subject → language → chapter → part**. The
+reader walks them in the same order — every subject opens on its language cards
+(🇵🇺 Punjabi and 🇬🇧 English are always there) and lists *nothing* until one is
+chosen, then that language's chapters, then that chapter's parts in reading
+order.
 
 The thirteen subjects are the thirteen folders: `computer`, `english`,
 `punjabi`, `reasoning`, `quant`, `gk`, `current-affairs`, `economy`, `history`,
 `geography`, `polity`, `science`, `miscellaneous`. Drop a fourteenth folder and
 it becomes a fourteenth subject — in the shelf, in the Study menu and in
-`data/study-manifest.json` — with no code, no JSON and no HTML touched.
+`data/study-manifest.json` — with no code, no JSON and no HTML touched. The
+same holds for every level: `english/` and `punjabi/` are the languages, a new
+`urdu/` folder is a fourth language the moment it exists, and any folder inside
+it is a chapter.
 
-**Adding material is three steps and no edits:**
+**Adding material is two steps and no edits:**
 
 ```bash
-cp "my new notes.pdf" content/study-material/computer/
+mkdir -p content/study-material/history/english/medieval-history
+cp "part-1.pdf" content/study-material/history/english/medieval-history/
 npm run publish
 ```
 
-and it appears at **Study → Computer → Study Material**. From the file name
-alone the build derives the title, the slug, the description, the language, the
-keywords, the page URL and the search row; `metadata.json` beside it can
-*override* any of that (badges, dates, reading time, description) but is never
-required. A `.md`, `.json` or a future format works exactly like a `.pdf`.
+and it appears at **Study → History → English → Medieval History → Part 1**.
+From the folder names and the file name alone the build derives the title, the
+slug, the description, the language, the chapter, the part number, the keywords,
+the page URL and the search row; `metadata.json` beside it can *override* any of
+that (badges, dates, reading time, description) but is never required. A `.md`,
+`.json` or a future format works exactly like a `.pdf`.
 
-A subject page renders **one** section headed `Study Material` — never a PDFs
-list, a Notes list and a Guides list. Every file, whatever it is, is listed
-together with its language, last update, reading time, file size, optional
-Featured/New/Popular badge and a Download/Open button, ordered Featured →
-Newest → Alphabetical.
+A subject page renders **one** section — never a PDFs list, a Notes list and a
+Guides list. Every file, whatever it is, is listed with its language, last
+update, reading time, file size, optional Featured/New/Popular badge and a
+Download/Open button, ordered Featured → Newest → Alphabetical; inside a
+chapter, parts are ordered by their part number because a chapter is a
+sequence.
 
-The full contract — supported files, the derived-fields table, both
-`metadata.json` shapes, ordering, badges and every surface a file reaches — is
+The full contract — supported files, the derived-fields table, every
+`metadata.json` shape, ordering, badges and every surface a file reaches — is
 in `content/study-material/README.md`.
 
 ## Language URLs — English at the root, Punjabi under `/pa/`

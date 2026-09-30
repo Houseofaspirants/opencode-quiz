@@ -4,6 +4,33 @@
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/archive-category-fundamentals-of-computer",
+      "destination": "/archive-category-computer",
+      "permanent": true
+    },
+    {
+      "source": "/archive-category-arrival-of-europeans",
+      "destination": "/archive-category-history",
+      "permanent": true
+    },
+    {
+      "source": "/archive-category-chapter-1-arrival-of-europeans",
+      "destination": "/archive-category-history",
+      "permanent": true
+    },
+    {
+      "source": "/archive-category-english",
+      "destination": "/study-material",
+      "permanent": true
+    },
+    {
+      "source": "/archive-category-punjabi",
+      "destination": "/study-material",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/sw.js",

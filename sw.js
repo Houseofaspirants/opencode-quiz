@@ -10,7 +10,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v45";
+const VERSION = "hoa-v46";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
