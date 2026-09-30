@@ -423,7 +423,9 @@ def build(records, registry=None):
                        "native": e.get("native") or "",
                        "flag": e.get("flag") or ""} for e in universe],
         "subjects": rows,
-        "total": sum(r["count"] for r in rows),
+        # Folders folded into a hierarchy keep their row (their material pages
+        # link to it) but are not counted twice on the shelf.
+        "total": sum(r["count"] for r in rows if not r.get("hidden")),
         "generatedBy": "scripts/study_material.py",
     }
     OUT.parent.mkdir(parents=True, exist_ok=True)
