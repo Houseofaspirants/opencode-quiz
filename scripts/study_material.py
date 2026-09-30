@@ -168,7 +168,6 @@ def _merge_languages(row_by_folder, folders):
     # language somebody actually published in.
     site = set(_bc().STUDY_LANG)
     merged = [n for n in merged if n["count"] > 0 or n["id"] in site]
-    merged.sort(key=lambda n: (str(n["name"]).lower(), n["id"]))
     return merged
 
 
