@@ -31,9 +31,18 @@
       "label": "Merit List",
       "required": true,
       "analytics": "",
-      "doc": null
-       
-       
+      "doc": {
+        "file": "assets/proof/merit-list.pdf",
+        "name": "merit-list.pdf",
+        "kind": "pdf",
+        "type": "PDF",
+        "bytes": 132723,
+        "size": "129.6 KB",
+        "uploaded": "2026-10-05",
+        "title": "Official Merit List",
+        "note": "Official merit list released by Punjab Police.",
+        "questions": []
+      }
     },
     {
       "id": "paper-1",
@@ -48,9 +57,9 @@
         "type": "PDF",
         "bytes": 1798128,
         "size": "1.7 MB",
-        "uploaded": "",
-        "title": "",
-        "note": "",
+        "uploaded": "2026-10-05",
+        "title": "Paper 1 Original Answer Sheet",
+        "note": "Official response sheet released by Punjab Police.",
         "questions": []
       }
     },
@@ -67,9 +76,9 @@
         "type": "PDF",
         "bytes": 2448147,
         "size": "2.3 MB",
-        "uploaded": "",
-        "title": "",
-        "note": "",
+        "uploaded": "2026-10-05",
+        "title": "Paper 2 Original Answer Sheet",
+        "note": "Official response sheet released by Punjab Police.",
         "questions": []
       }
     },
@@ -79,9 +88,18 @@
       "label": "Paper 3 Answer Sheet",
       "required": true,
       "analytics": "paper-3",
-      "doc": null
-        
-      
+      "doc": {
+        "file": "assets/proof/answer-sheet-3.pdf",
+        "name": "answer-sheet-3.pdf",
+        "kind": "pdf",
+        "type": "PDF",
+        "bytes": 894878,
+        "size": "873.9 KB",
+        "uploaded": "2026-10-05",
+        "title": "Paper 3 Original Answer Sheet",
+        "note": "Official response sheet released by Punjab Police.",
+        "questions": []
+      }
     },
     {
       "id": "result-official-result",
@@ -96,12 +114,12 @@
         "type": "PNG",
         "bytes": 664693,
         "size": "649.1 KB",
-        "uploaded": "",
-        "title": "",
-        "note": "",
+        "uploaded": "2026-10-05",
+        "title": "Official Result Card",
+        "note": "Official result card released by Punjab Police.",
         "questions": []
       }
     }
   ],
-  "total": 4
+  "total": 6
 }

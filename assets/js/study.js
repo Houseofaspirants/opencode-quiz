@@ -205,7 +205,48 @@
       ${action || ""}
     </div>`;
 
-  /* ------------------------------------------------------- shared cards ---
+  /* ------------------------------------------------------- saved chapters -
+     Study keeps its own bookmarks. `HOA.bookmarks` stores saved *questions*
+     and renders them as question cards with a "Show answer" button, so a
+     chapter saved there would land as an empty card; these live on the
+     device, under Study, and are listed again at the top of any chapter
+     list so a star always leads somewhere. Nothing leaves the browser. */
+  const SAVED_KEY = "hoa.study.savedChapters";
+
+  const savedChapters = () => {
+    try {
+      const v = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
+      return Array.isArray(v) ? v.filter((b) => b && b.key && b.href) : [];
+    } catch {
+      return [];
+    }
+  };
+
+  /** false when storage is unavailable (private mode): the star still
+      toggles for this page view, it just will not be waiting tomorrow. */
+  const writeSaved = (list) => {
+    try {
+      localStorage.setItem(SAVED_KEY, JSON.stringify(list.slice(0, 200)));
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
+  const toggleSaved = (entry) => {
+    const list = savedChapters();
+    const i = list.findIndex((b) => b.key === entry.key);
+    if (i >= 0) {
+      list.splice(i, 1);
+      writeSaved(list);
+      return false;
+    }
+    list.unshift(entry);
+    writeSaved(list);
+    return true;
+  };
+
+  /* --------------------------------------------------------- shared cards ---
      The three cards every step of Study is built from. They live up here
      rather than inside the subject branch so a deeper branch - General
      Knowledge's Region -> Category -> Sub Category steps - renders exactly
@@ -237,15 +278,82 @@
         </a>`;
   };
 
-  const chapterCard = (c, href, langName) => {
+  /* A chapter card. Without `opts` it is the plain card every subject has
+     always had. With them — General Knowledge's hierarchy, and only there —
+     it is the full card the brief asks for: chapter number, title, estimated
+     reading time, pages, last updated, available languages, a bookmark and
+     the PDF itself. Every one of those numbers is read off the part rows the
+     build published, so the card cannot claim a page nobody uploaded. */
+  const chapterCard = (c, href, langName, opts) => {
     const parts = (c.parts || []).length;
-    return `
+    if (!opts) {
+      return `
         <a class="card card-pad study-card" href="${esc(href)}">
           <span class="eyebrow">${esc(langName)} · Chapter</span>
           <h3>${esc(c.name)}</h3>
           <p class="muted">${plural(parts, "part")}, in reading order.</p>
           <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}</p>
         </a>`;
+    }
+
+    const rows = (c.parts || []).map(partItem);
+    const mins = rows.reduce((s, p) => s + (Number(p.readingMinutes) || 0), 0);
+    const updated = rows
+      .map((p) => String(p.updated || p.published || "").slice(0, 10))
+      .filter(Boolean).sort().slice(-1)[0] || "";
+    const pages = Number(c.pages) || 0;
+    const withLangs = Array.isArray(opts.languages) ? opts.languages : [];
+    const pdf = rows.find((p) => p.type === "pdf" && (p.path || p.source));
+    const src = String((pdf && (pdf.path || pdf.source)) || "");
+    const key = href;
+    const saved = savedChapters().some((b) => b.key === key);
+    const badges = [
+      `<span class="badge ${saved ? "badge-success" : "badge-muted"}">Chapter ${Number(opts.no) || 1} of ${Number(opts.total) || 1}</span>`,
+      pages ? `<span class="badge badge-muted">${plural(pages, "page")}</span>` : "",
+      mins ? `<span class="badge badge-muted">${mins} min read</span>` : "",
+      updated ? `<span class="badge badge-muted">Updated ${fmtDate(updated)}</span>` : "",
+      withLangs.length
+        ? `<span class="badge badge-muted">🌐 ${esc(withLangs.join(", "))}</span>` : "",
+    ].filter(Boolean).join("");
+    return `
+        <div class="card card-pad study-card">
+          <div class="card-badges">${badges}</div>
+          <span class="eyebrow">${esc(langName)} · Chapter</span>
+          <h3><a href="${esc(href)}">${esc(c.name)}</a></h3>
+          <p class="muted">${plural(parts, "part")}, in reading order${src ? " — Open PDF starts at Part 1" : ""}.</p>
+          <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}${pages ? ` · ${plural(pages, "page")}` : ""}</p>
+          <p class="btn-row" style="margin-top:14px">
+            ${src
+              ? `<a class="btn btn-primary st-act" href="${esc(src)}">Open PDF</a>`
+              : `<a class="btn btn-soft st-act" href="${esc(href)}">Read online</a>`}
+            <button type="button" class="btn btn-soft st-act"
+                    data-study-bookmark="${esc(key)}"
+                    data-study-title="${esc(c.name)}"
+                    aria-pressed="${saved ? "true" : "false"}">${saved ? "★ Saved" : "☆ Save"}</button>
+          </p>
+        </div>`;
+  };
+
+  /** The reader's own saved chapters, as one strip across the top of a
+      chapter list. Absent entirely when there are none, so a first visit
+      sees the same page it always did. */
+  const savedStrip = () => {
+    const list = savedChapters();
+    if (!list.length) return "";
+    return `
+        <div class="st-saved">
+          <p class="eyebrow">Saved on this device</p>
+          <p class="muted">${plural(list.length, "chapter")} starred — the star on any chapter card adds or removes it here.</p>
+          <ul class="st-saved-list">
+            ${list.map((b) => `
+              <li>
+                <a href="${esc(b.href)}">★ ${esc(b.title)}</a>
+                <button type="button" class="st-saved-x"
+                        data-study-unsave="${esc(b.key)}"
+                        aria-label="Remove ${esc(b.title)} from saved chapters">✕</button>
+              </li>`).join("")}
+          </ul>
+        </div>`;
   };
 
   /** A part, as the content build describes it: the tree supplies the `file`
@@ -651,13 +759,23 @@
     };
 
     const renderChapters = () => {
-      setBody(chapters.length
-        ? chapters.map((c) => chapterCard(c, hrefFor(languageId, c.id), langName)).join("")
+      const total = chapters.length;
+      setBody((hier ? savedStrip() : "") + (total
+        ? chapters.map((c, i) => chapterCard(c, hrefFor(languageId, c.id), langName,
+            hier ? {
+              no: i + 1,
+              total,
+              // The languages this same chapter is published in beside the
+              // one you are reading — measured, never assumed.
+              languages: langs
+                .filter((l) => (l.chapters || []).some((x) => x.id === c.id))
+                .map((l) => l.name),
+            } : null)).join("")
         : emptyState("📖", `No ${langName} chapters in ${nodeName} yet`,
             `Create a chapter folder under ` +
             `<code>content/study-material/${esc(folderId)}/${esc(languageId)}/</code> ` +
             `and its parts appear here on the next build — no page to write.`,
-            `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor())}">Choose another language</a></p>`),
+            `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor())}">Choose another language</a></p>`)),
         "grid grid-3");
       setCount(`${plural(chapters.length, "chapter")} in ${langName} · ${plural(Number(lang && lang.count) || 0, "file")}`);
     };
@@ -701,6 +819,43 @@
         if (q) renderSearch(q.toLowerCase());
         else if (step === "chapter") renderChapters();
         else renderParts();
+      });
+    }
+
+    /* The chapter cards' two controls — the star and the removal from the
+       saved strip — are bound once, on the body container, which only ever
+       has its innerHTML replaced. One listener survives every re-render and
+       no card ever needs its own. */
+    const bodyNode = document.getElementById("studyStepBody");
+    if (bodyNode) {
+      bodyNode.addEventListener("click", (ev) => {
+        const target = ev.target;
+        if (!(target instanceof Element)) return;
+        const star = /** @type {HTMLElement | null} */ (
+          target.closest("[data-study-bookmark]"));
+        if (star && star.dataset.studyBookmark) {
+          ev.preventDefault();
+          const key = String(star.dataset.studyBookmark);
+          const on = toggleSaved({
+            key,
+            href: key,
+            title: String(star.dataset.studyTitle || "Chapter"),
+          });
+          if (typeof HOA.toast === "function") {
+            HOA.toast(on ? "Chapter saved on this device" : "Chapter removed");
+          }
+          renderChapters();
+          return;
+        }
+        const drop = /** @type {HTMLElement | null} */ (
+          target.closest("[data-study-unsave]"));
+        if (drop && drop.dataset.studyUnsave) {
+          ev.preventDefault();
+          const key = String(drop.dataset.studyUnsave);
+          writeSaved(savedChapters().filter((b) => b.key !== key));
+          if (typeof HOA.toast === "function") HOA.toast("Chapter removed");
+          renderChapters();
+        }
       });
     }
 

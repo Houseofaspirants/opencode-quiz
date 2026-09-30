@@ -353,13 +353,15 @@ def language_rows(subject, records, universe):
                                  "name": bc.study_nice_name(chapter),
                                  "parts": []})
 
+    by_chapter = {}
     for rec in records:
         lid = str(rec.get("studyLanguage") or "") or "en"
         chapters = by_lang.setdefault(lid, {})
         chapter_id = str(rec.get("studyChapter") or "")
+        node_id = chapter_id or "part"
         node = chapters.setdefault(
-            chapter_id or "part",
-            {"id": chapter_id or "part",
+            node_id,
+            {"id": node_id,
              "name": str(rec.get("studyChapterName") or ""),
              "parts": []})
         if not node["name"]:
@@ -368,6 +370,7 @@ def language_rows(subject, records, universe):
                                                            )).stem)
         node["parts"].append({"file": str(rec.get("file") or ""),
                               "n": int(rec.get("studyPart") or 1)})
+        by_chapter.setdefault((lid, node_id), []).append(rec)
 
     rows = []
     for entry in universe:
@@ -376,6 +379,13 @@ def language_rows(subject, records, universe):
         for node in (by_lang.get(lid) or {}).values():
             node["parts"].sort(key=lambda p: (p["n"], p["file"]))
             node["parts"] = [p for p in node["parts"] if p["file"]]
+            # The page count of a chapter, measured by the same rule the
+            # region and category cards use. It lives here rather than being
+            # worked out in the browser because only this build can see
+            # `pdfPages`, which is read out of the file itself; a chapter
+            # with no files under it honestly reports zero.
+            node["pages"] = sum(_pages_of(r)
+                                for r in by_chapter.get((lid, node["id"]), []))
             chapters.append(node)
         chapters.sort(key=lambda c: (c["name"].lower(), c["id"]))
         rows.append({"id": lid, "name": entry["name"],

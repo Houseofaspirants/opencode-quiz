@@ -1070,6 +1070,50 @@ a.card:hover, .card.hoverable:hover {
    same object as a folder of files. */
 .st-open { display: block; margin-top: 16px; font-weight: 800; font-size: 0.9rem; }
 
+/* A grouped subject's chapter card carries two actions — Open PDF and the
+   bookmark — so they share a row instead of the .study-card default of one
+   full-width button per line. On a phone .btn-row already becomes a grid and
+   each button takes a whole column, which is the target size a thumb wants. */
+.study-card .btn-row .st-act { width: auto; flex: 1 1 140px; }
+
+/* The reader's own saved chapters: one strip spanning the whole grid above
+   the chapter list, drawn as a dashed outline so it never reads as material
+   the site published. Hidden entirely when nothing has been starred. */
+.st-saved {
+  grid-column: 1 / -1;
+  padding: 16px 18px;
+  background: var(--surface);
+  border: 1px dashed var(--border);
+  border-radius: var(--r-md);
+}
+.st-saved .eyebrow { margin-bottom: 6px; }
+.st-saved .muted { font-size: 0.9rem; }
+.st-saved-list {
+  list-style: none; margin: 12px 0 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.st-saved-list li {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 6px 5px 14px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  font-size: 0.86rem;
+}
+.st-saved-list a { color: var(--text); font-weight: 600; text-decoration: none; }
+.st-saved-list a:hover, .st-saved-list a:focus-visible { color: var(--brand); }
+.st-saved-x {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 32px; min-height: 32px;
+  border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted);
+  font: inherit; line-height: 1; cursor: pointer;
+}
+.st-saved-x:hover, .st-saved-x:focus-visible {
+  color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 12%, transparent);
+}
+
 /* Quiz / topic card */
 .quiz-card { padding: 18px 20px; display: flex; align-items: center; gap: 16px; }
 .quiz-card .qc-icon {
