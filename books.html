@@ -139,19 +139,20 @@
           </div>
         </div>
 
+        <!-- Filter bar: the chips are generated from data/books.json, so the
+             dimensions and every value in them come from the books that
+             exist. Row 1 picks WHAT to filter by, row 2 shows the values of
+             that dimension. Nothing here is hardcoded. -->
         <div class="filter-bar" id="bookFilters">
-          <span class="fg-label">Exam</span>
-          <div class="filter-group" role="group" aria-label="Filter books by exam">
-            <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All books</button>
-            <button type="button" class="filter-chip" data-filter="punjab-police" aria-pressed="false">Punjab Police</button>
-            <button type="button" class="filter-chip" data-filter="pcs" aria-pressed="false">Punjab PCS</button>
-            <button type="button" class="filter-chip" data-filter="psssb" aria-pressed="false">PSSSB</button>
-            <button type="button" class="filter-chip" data-filter="ssc" aria-pressed="false">SSC</button>
-            <button type="button" class="filter-chip" data-filter="banking" aria-pressed="false">Banking</button>
-            <button type="button" class="filter-chip" data-filter="railways" aria-pressed="false">Railways</button>
-            <button type="button" class="filter-chip" data-filter="upsc" aria-pressed="false">UPSC</button>
-            <button type="button" class="filter-chip" data-filter="capf" aria-pressed="false">CAPF</button>
-            <button type="button" class="filter-chip" data-filter="general" aria-pressed="false">General</button>
+          <div class="fg-row">
+            <span class="fg-label">Filter by</span>
+            <div class="filter-group" role="group" aria-label="Choose what to filter books by" data-facets></div>
+            <span class="filter-count" data-filter-count></span>
+          </div>
+          <div class="fg-row">
+            <span class="fg-label" data-facet-name></span>
+            <div class="filter-group" role="group" aria-label="Filter books" data-values></div>
+            <button type="button" class="filter-reset" data-filter-reset hidden>Clear filter</button>
           </div>
         </div>
 

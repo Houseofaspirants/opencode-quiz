@@ -997,15 +997,47 @@ const HOA = (() => {
   ];
 
   /**
+   * The Books shelf, as search rows.
+   *
+   * Read from data/books.json — the payload scripts/books_engine.py publishes
+   * from content/books/*.json — which already carries `search`, the
+   * pre-lowercased string the shelf matches on: title, author, publisher,
+   * subject, keywords, topics, exams, language, difficulty and edition. It is
+   * sw.js-precached, so the first search pays no extra request, and it is
+   * fetched lazily: page load never waits for it.
+   *
+   * Resolves to `[]` on any failure so a missing shelf is simply "fewer
+   * results" and the rest of the corpus still searches.
+   *
+   * @returns {Promise<Array<{type: string, label: string, sub: string,
+   *                          href: string, icon: string, hay: string}>>}
+   */
+  function searchBooks() {
+    return fetch("data/books.json")
+      .then((r) => (r.ok ? r.json() : null))
+      .then((d) => ((d && d.books) || []).map((b) => ({
+        type: "book",
+        label: String(b.title || ""),
+        sub: [b.author, b.subjectLabel].filter(Boolean).join(" · "),
+        href: String(b.file || `book-${b.id}.html`),
+        icon: "📕",
+        hay: String(b.search || b.title || ""),
+      })))
+      .catch(() => []);
+  }
+
+  /**
    * Everything structural search can reach — subjects, their categories,
-   * their question sets and the hub destinations above — as one flat list.
+   * their question sets, the books on the shelf and the hub destinations
+   * above — as one flat list.
    *
    * Built in exactly one place so the overlay and search.html return the same
    * rows for the same query. Resolves rather than rejects: a missing or
    * malformed index must degrade to "fewer results", never to a broken page.
    *
    * @returns {Promise<Array<{type: string, label: string, sub: string,
-   *                          href: string, icon?: string, count?: number}>>}
+   *                          href: string, icon?: string, count?: number,
+   *                          hay?: string}>>}
    */
   function searchEntries() {
     return loadIndex()
@@ -1039,7 +1071,22 @@ const HOA = (() => {
           seen.add(key);
           flat.push(d);
         });
-        return flat;
+        /* Books last: they are content, so a subject or a section that shares
+           their name still wins the slot *at that href*. Deduping on the
+           destination rather than on the label is what keeps them findable -
+           "Indian Polity" and "Quantitative Aptitude" are both book titles
+           AND study topics, and a student searching an author must still reach
+           the book. Each row carries its own `hay`, so an author, a publisher
+           or an exam name finds the book too. */
+        const seenHrefs = new Set(flat.map((f) => f.href));
+        return searchBooks().then((rows) => {
+          rows.forEach((r) => {
+            if (!r.label || seenHrefs.has(r.href)) return;
+            seenHrefs.add(r.href);
+            flat.push(r);
+          });
+          return flat;
+        });
       })
       .catch((err) => {
         console.warn("[HOA] search index unavailable:", err.message);
@@ -1163,8 +1210,12 @@ const HOA = (() => {
           .filter(Boolean)
           .sort((a, b) => b.s - a.s || (a.d.label < b.d.label ? -1 : 1))
           .slice(0, 8).map((x) => x.d);
+        /* A row may carry its own haystack (`hay`) - the books do, so that
+           "Laxmikanth" or "Punjab Police" finds a book that never says either
+           word in its title. Rows without one match on their label exactly as
+           they always have. */
         const flatHits = flat.filter((f) => {
-          const hay = f.label.toLowerCase();
+          const hay = String(f.hay || f.label).toLowerCase();
           return toks.every((tk) => hay.includes(tk));
         }).slice(0, 6);
         const rows = flatHits.map((h) => `
@@ -1786,6 +1837,34 @@ const HOA = (() => {
     return initAnalytics(GA_ID);
   }
 
+  /* ----------------------------------------------- AFFILIATE (Books) -----
+     Every outbound buy button the Books system renders carries `data-affiliate`
+     plus the book and the provider it was built for, and its href is always a
+     /go/ hop - the store's own URL is never in the page. This is the reporting
+     half: one GA4 event per click, fired at click time so the navigation that
+     follows can never cancel it. GA4 already attaches country, device, browser
+     and referrer to every event, so the payload only carries the two facts
+     nobody else knows. The redirect stub owns the local ledger.
+
+     Delegated on the document, so a shelf that re-renders its cards on every
+     keystroke never loses the listener, and nothing has to be re-bound. */
+  function initAffiliateTracking() {
+    document.addEventListener("click", (ev) => {
+      try {
+        const hit = /** @type {HTMLElement | null} */ (ev.target);
+        const el = hit && hit.closest ? hit.closest("[data-affiliate]") : null;
+        if (!el || typeof window.gtag !== "function") return;
+        window.gtag("event", "affiliate_click", {
+          book_id: el.getAttribute("data-book") || "",
+          provider: el.getAttribute("data-provider") || "",
+          link_url: el.getAttribute("href") || "",
+        });
+      } catch {
+        /* analytics failure must never break the click that caused it */
+      }
+    });
+  }
+
   /* ============================================= CLARITY (Microsoft) =====
      Microsoft Clarity (heatmaps + session replay) is injected from this one
      file, exactly like GA4 above, so the project id exists in one place
@@ -1847,6 +1926,7 @@ const HOA = (() => {
   /* ================================================== INITIALISE ========= */
   function init() {
     startAnalytics(); // first: gets the page_view queued before any UI work
+    initAffiliateTracking(); // Books buy buttons, before any of them can render
     startClarity(); // Clarity is a no-op off the live domain (skips non-prod)
     renderChrome();
     initTheme();

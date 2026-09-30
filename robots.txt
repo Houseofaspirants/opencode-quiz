@@ -1,10 +1,14 @@
 # House of Aspirants - Free Competitive Exam Learning Platform
-# NOTE: no "Disallow" rules on purpose - Google must be able to fetch every
-# page and read the <meta name="robots"> tag it declares. Personal, session-
-# based quiz modes (?mode=daily / ?mode=mock) flip themselves to noindex at
-# runtime, and the 404 page ships with noindex. Blocking those URLs here
+# NOTE: almost no "Disallow" rules on purpose - Google must be able to fetch
+# every page and read the <meta name="robots"> tag it declares. Personal,
+# session-based quiz modes (?mode=daily / ?mode=mock) flip themselves to noindex
+# at runtime, and the 404 page ships with noindex. Blocking those URLs here
 # would hide those directives from search engines.
+# The one exception is /go/: those are tracked affiliate redirects to a store,
+# not content of ours. There is no page and no directive to hide there, and a
+# crawler has nothing to gain from following them.
 User-agent: *
 Allow: /
+Disallow: /go/
 
 Sitemap: https://houseofaspirants.in/sitemap.xml

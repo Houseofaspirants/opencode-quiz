@@ -1,0 +1,83 @@
+{
+  "$note": "THE ONE PLACE A LINK LIVES. Every outbound purchase or read link on the Books system is configured here and nowhere else - never inside content/books/*.json, never inside a template, never in assets/js. A book only ever records WHICH providers it is available on through this file; changing a URL, adding a provider or retiring one is a single edit here and a rebuild. scripts/books_engine.py resolves this file into (a) the provider buttons rendered on books.html and book-<id>.html and (b) the internal redirect stubs under go/book/<id>/<provider>.html, which is what the site links to - the raw URL never ships in a book page or in data/books.json.",
+  "settings": {
+    "$note": "Applied by the engine to every external target it writes. `query` is merged into the target's query string (existing keys win, so a URL that already carries a parameter is never clobbered). `amazonAssociateTag`, when set, is written as Amazon's `tag` parameter - leave empty until the Associates account is live.",
+    "redirectBase": "/go/book",
+    "rel": "sponsored noopener nofollow",
+    "amazonAssociateTag": "",
+    "query": {
+      "utm_source": "houseofaspirants",
+      "utm_medium": "affiliate",
+      "utm_campaign": "books"
+    }
+  },
+  "providers": [
+    {
+      "id": "amazon",
+      "label": "Buy on Amazon",
+      "shortLabel": "Amazon",
+      "host": "amazon.in",
+      "external": true
+    },
+    {
+      "id": "flipkart",
+      "label": "Buy on Flipkart",
+      "shortLabel": "Flipkart",
+      "host": "flipkart.com",
+      "external": true
+    },
+    {
+      "id": "house-of-aspirants",
+      "label": "Read it free here",
+      "shortLabel": "Free here",
+      "host": "houseofaspirants.in",
+      "external": false
+    }
+  ],
+  "futureProviders": [
+    {
+      "$note": "Reserve for the next network (Agoda, EarnKaro, a direct advertiser). Add the id here, add its label/host/external, then give books a URL under `books.<id>.<new-id>` - the engine picks it up with no template, component or build change. Nothing below is wired to anything yet.",
+      "id": "",
+      "label": ""
+    }
+  ],
+  "books": {
+    "$note": "book id -> provider id -> destination URL. A book id with no entry, or a provider with an empty/absent URL, is simply NOT AVAILABLE: the engine renders 'Currently unavailable' for it instead of a button. Order follows `providers` above, so adding a network reorders every button consistently.",
+    "lucent-general-knowledge": {
+      "amazon": "https://www.amazon.in/s?k=lucent+general+knowledge+book"
+    },
+    "objective-general-english": {
+      "amazon": "https://www.amazon.in/s?k=objective+general+english+sp+bakshi"
+    },
+    "rs-aggarwal-quantitative-aptitude": {
+      "amazon": "https://www.amazon.in/s?k=quantitative+aptitude+rs+agarwal"
+    },
+    "fast-track-arithmetic": {
+      "amazon": "https://www.amazon.in/s?k=fast+track+objective+arithmetic+rajesh+verma"
+    },
+    "rs-aggarwal-reasoning": {
+      "amazon": "https://www.amazon.in/s?k=modern+approach+verbal+non+verbal+reasoning+agarwal"
+    },
+    "laxmikanth-indian-polity": {
+      "amazon": "https://www.amazon.in/s?k=indian+polity+laxmikanth"
+    },
+    "lucent-general-science": {
+      "amazon": "https://www.amazon.in/s?k=lucent+general+science"
+    },
+    "wren-martin-grammar": {
+      "amazon": "https://www.amazon.in/s?k=wren+and+martin+english+grammar"
+    },
+    "objective-computer-awareness": {
+      "amazon": "https://www.amazon.in/s?k=objective+computer+awareness+book"
+    },
+    "india-year-book": {
+      "amazon": "https://www.amazon.in/s?k=india+year+book+publications+division"
+    },
+    "pratiyogita-darpan": {
+      "amazon": "https://www.amazon.in/s?k=pratiyogita+darpan"
+    },
+    "punjab-gk-study-material": {
+      "house-of-aspirants": "subject.html?subject=gk&category=punjab-gk"
+    }
+  }
+}

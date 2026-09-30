@@ -921,6 +921,24 @@ if (site.url) {
   } catch (e) {
     warn(`pages.json unreadable: ${e.message}`);
   }
+  // Books - config-driven from data/books-manifest.json. The engine that
+  // writes it runs only in the Python builder; both builders read the same
+  // registry so the two sitemaps stay byte-identical.
+  try {
+    const booksPath = path.join(DATA_DIR, "books-manifest.json");
+    if (fs.existsSync(booksPath)) {
+      for (const p of JSON.parse(fs.readFileSync(booksPath, "utf8")).pages || []) {
+        const f = String(p.file || "");
+        if (f.endsWith(".html") && fs.existsSync(path.join(ROOT, f))) {
+          urls.push({ loc: `${base}/${f.slice(0, -5)}`, p: String(p.priority || "0.7") });
+        } else {
+          warn(`books-manifest: file missing for ${f || p.title || "?"}`);
+        }
+      }
+    }
+  } catch (e) {
+    warn(`books-manifest.json unreadable: ${e.message}`);
+  }
   // Study guides — config-driven from data/articles.json (same registry the
   // /articles hub, Related Articles modules and Article schema read).
   try {

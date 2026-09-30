@@ -945,6 +945,29 @@ with open(os.path.join(DATA_DIR, "quiz-manifest.json"), "w", encoding="utf-8") a
 info(f'data/quiz-manifest.json - {len(quiz_manifest["topics"])} topic(s), '
      f'{sum(len(t["availableLanguages"]) for t in quiz_manifest["topics"])} translation(s)')
 
+# ------------------------------------------------- 5c. BOOKS ENGINE (affiliate)
+# The Books system is content-driven end to end: scripts/books_engine.py reads
+# content/books/*.json (book copy) and config/affiliate-links.json (every
+# destination, the only place a link may live), validates them against each
+# other, then publishes the shelf payload (data/books.json), every book detail
+# page (book-<id>.html), the tracked affiliate hops (go/book/<id>/<provider>)
+# and data/books-manifest.json - the registry both index builders read below
+# and scripts/seo_check.py gates on.
+#
+# Hooked here rather than in ci.sh / publish.sh so no build step can ever
+# forget the books, and so the Node twin has nothing to run - it only reads.
+try:
+    import books_engine
+except Exception as e:                                   # pragma: no cover
+    print(f"\n\u274C scripts/books_engine.py could not be imported: {e}\n",
+          file=sys.stderr)
+    sys.exit(1)
+try:
+    books_engine.build()
+except books_engine.BuildError as e:
+    print(f"\n\u274C books: {e}\n", file=sys.stderr)
+    sys.exit(1)
+
 # ----------------------------------------------------------- 6. SITEMAP
 if site.get("url"):
     base = str(site["url"]).rstrip("/")
@@ -984,6 +1007,21 @@ if site.get("url"):
                     warn(f"pages.json: file missing for {f or p.get('title', '?')}")
         except Exception as e:
             warn(f"pages.json unreadable: {e}")
+    # Books - config-driven from data/books-manifest.json, written by
+    # scripts/books_engine.py (hooked in just above). The Node twin never runs
+    # the engine, it reads the same registry, so both sitemaps stay identical.
+    books_path = os.path.join(DATA_DIR, "books-manifest.json")
+    if os.path.exists(books_path):
+        try:
+            for p in read_json(books_path).get("pages", []):
+                f = str(p.get("file", ""))
+                if f.endswith(".html") and os.path.exists(os.path.join(ROOT, f)):
+                    urls.append({"loc": f"{base}/{f[:-5]}",
+                                 "p": str(p.get("priority", "0.7"))})
+                else:
+                    warn(f"books-manifest: file missing for {f or p.get('title', '?')}")
+        except Exception as e:
+            warn(f"books-manifest.json unreadable: {e}")
     # Study guides — config-driven from data/articles.json (same registry the
     # /articles hub, Related Articles modules and Article schema read).
     guides_path = os.path.join(DATA_DIR, "articles.json")

@@ -215,7 +215,7 @@
      nothing. `topic` reads as Expected MCQs because that is what a set is. */
   const KIND = {
     subject: "Subject", category: "Category", topic: "Expected MCQs",
-    hub: "Section",
+    hub: "Section", book: "Book",
   };
 
   box.innerHTML = '<p class="search-meta">Searching…</p>';
@@ -233,9 +233,11 @@
     .then(([data, entries]) => {
       /* Destinations rank first: when a student types the exact name of a
          subject or a section, that is what they meant, and a document that
-         merely mentions it is a lesser answer. */
+         merely mentions it is a lesser answer. A row may carry its own
+         `hay` (the books do, so an author or a publisher finds them) and
+         falls back to its label exactly as it always has. */
       const dest = entries
-        .filter((e) => every(String(e.label || "").toLowerCase()))
+        .filter((e) => every(String(e.hay || e.label || "").toLowerCase()))
         .map((e) => ({
           href: e.href,
           eyebrow:
