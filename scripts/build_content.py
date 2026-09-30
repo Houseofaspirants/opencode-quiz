@@ -1437,13 +1437,18 @@ def validate_meta(coll, slug, meta, where, required=None):
                 meta[bkey] = False
     if meta.get("language") is not None:
         got = str(meta["language"]).strip().lower()
-        if got not in ("en", "pa"):
+        if coll == STUDY_DIR and re.fullmatch(r"[a-z]{2,8}", got or " "):
+            # Study material's language is the language the FILE is written
+            # in, read from the language folder it sits in (or its name or its
+            # sidecar). It says nothing about which URL the page lives at, and
+            # a subject may be published in any language, so a folder this
+            # site has never seen is a language rather than a build error.
+            meta["language"] = got
+        elif got not in ("en", "pa"):
             err(f"{where}: language must be 'en' or 'pa' (got {meta['language']!r})")
         elif coll == STUDY_DIR:
-            # Study material's language is the language the FILE is written
-            # in, read from its name or its sidecar. It says nothing about
-            # which URL the page lives at, so it is never held to the .pa.md
-            # variant rule that governs authored documents.
+            # never held to the .pa.md variant rule that governs authored
+            # documents: a study file's language is a display field.
             meta["language"] = got
         else:
             want = "pa" if where.endswith(".pa.md") else "en"
@@ -1936,83 +1941,273 @@ def study_subject_name(folder):
     return study_subject_names().get(folder) or folder.replace("-", " ").title()
 
 
+# ---------------------------------------------------------------------------
+# content/study-material/<subject>/<language>/<chapter>/<part file>
+# ---------------------------------------------------------------------------
+# The hierarchy below is READ, never configured. The first folder under the
+# collection is a subject; the folder under it is the language the material is
+# written in; the folder under that is the chapter; the files under them are
+# the parts. Adding any of the four means creating a folder - there is no list
+# of subjects, languages or chapters anywhere in this file to append to, and a
+# subject with no language yet is still a subject (that is where the next
+# folder goes).
+STUDY_LANG = {
+    "pa": {"code": "pa", "name": "Punjabi", "native": "\u0a2a\u0a70\u0a1c\u0a3e\u0a2c\u0a40",
+           "flag": "\U0001f1f5\U0001f1fa"},
+    "en": {"code": "en", "name": "English", "native": "English",
+           "flag": "\U0001f1ec\U0001f1e7"},
+}
+# Folder spellings that mean one of the languages above. Anything not in this
+# table is still a language - its folder name simply becomes its name - so a
+# `hindi/` folder is Hindi without a line of code changing.
+STUDY_LANG_ALIAS = {"punjabi": "pa", "panjabi": "pa", "gurmukhi": "pa",
+                    "gurumukhi": "pa", "pbi": "pa", "pa": "pa",
+                    "english": "en", "en": "en"}
+
+
+def _is_material(path):
+    """A publishable material file: never a README, never a metadata.json."""
+    return (path.is_file()
+            and not path.name.lower().startswith("readme")
+            and path.name != "metadata.json"
+            and path.suffix.lower() in (".pdf",) + STUDY_EXTS)
+
+
+def study_locator(path):
+    """(subject folder, language folder, chapter folder) for one file.
+
+    Shorter layouts still resolve, so nothing already on disk has to move
+    before this rule takes effect: a file straight under a subject has no
+    language or chapter folder yet, and one folder deep is the language it
+    was dropped in."""
+    parts = Path(path).parts
+    if STUDY_DIR not in parts:
+        return "", "", ""
+    tail = list(parts[parts.index(STUDY_DIR) + 1:])
+    if len(tail) < 2:
+        return "", "", ""           # configuration at the collection root
+    dirs = tail[1:-1]               # the folders between subject and file
+    return tail[0], (dirs[0] if len(dirs) >= 1 else ""), \
+        (dirs[1] if len(dirs) >= 2 else "")
+
+
+def study_lang_id(folder):
+    """Folder name -> language id.
+
+    The two languages this site is written in map onto their codes; any other
+    folder becomes a language of its own, so languages are discovered rather
+    than listed."""
+    raw = str(folder or "").strip()
+    if not raw:
+        return ""
+    if any("\u0a00" <= c <= "\u0a7f" for c in raw):
+        return "pa"
+    key = re.sub(r"[^a-z0-9]+", "-", raw.lower()).strip("-")
+    return STUDY_LANG_ALIAS.get(key) or re.sub(r"[^a-z0-9]+", "", key) or ""
+
+
+def study_lang(folder):
+    """The display facts of one language folder: id, code, name, native name
+    and flag. A language the site has never seen keeps its folder name as its
+    name and carries no flag rather than a wrong one."""
+    lid = study_lang_id(folder)
+    if not lid:
+        return {"id": "", "code": "", "name": "", "native": "", "flag": ""}
+    known = STUDY_LANG.get(lid) or {}
+    return {"id": lid, "code": lid,
+            "name": known.get("name") or study_nice_name(folder),
+            "native": known.get("native") or "",
+            "flag": known.get("flag") or ""}
+
+
+def study_language_from_name(stem):
+    """The language a file claims, used only when it has no language folder.
+
+    A folder always wins: where a file sits is something the publisher
+    decided, and a name is only a guess."""
+    text = str(stem).lower()
+    if re.search(r"(^|[^a-z])(punjabi|panjabi|gurmukhi)([^a-z]|$)", text) \
+            or any("\u0a00" <= c <= "\u0a7f" for c in str(stem)):
+        return "pa"
+    return "en"
+
+
+def study_nice_name(folder):
+    """`arrival-of-europeans` -> `Arrival of Europeans`.
+
+    A numbered folder keeps its number and gains a colon, so
+    `chapter-1-arrival-of-europeans` reads `Chapter 1: Arrival of Europeans`
+    instead of four title-cased words in a row."""
+    text = re.sub(r"\s+", " ", re.sub(r"[_\-]+", " ", str(folder or ""))).strip()
+    if not text:
+        return str(folder or "")
+    m = re.match(r"(?i)\b(chapter|lesson|unit|part|book|topic)\s+(\d+)\s+(.+)$",
+                 text)
+    if m:
+        return clip(f"{pdf_title_from_name(m.group(1))} {m.group(2)}: "
+                    f"{pdf_title_from_name(m.group(3))}")
+    return pdf_title_from_name(text)
+
+
+def study_part_number(stem):
+    """`part-3-english` / `part 3 (english)` / `part_4` -> the number."""
+    m = re.search(r"(?i)\bpart[\s._-]*(\d+)\b", ascii_fold(stem))
+    return int(m.group(1)) if m else 0
+
+
+def study_part_key(path):
+    """Reading order: the number written into the name, then the name.
+
+    `part 2` sorts before `part 10`, and a file carrying no number - a single
+    `notes.pdf`, a chapter's one and only part - sorts last and still gets a
+    position of its own."""
+    n = study_part_number(path.stem)
+    return (0 if n else 1, n, path.name.lower())
+
+
+def study_siblings(path):
+    """Every file in this one folder, in reading order (cached per folder)."""
+    full = Path(path)
+    if not full.is_absolute():
+        full = ROOT / full
+    folder = full.parent
+    if folder not in _STUDY_SIBLINGS:
+        try:
+            kids = [p for p in folder.iterdir() if _is_material(p)]
+        except OSError:
+            kids = []
+        _STUDY_SIBLINGS[folder] = sorted(kids, key=study_part_key)
+    return _STUDY_SIBLINGS[folder]
+
+
+_STUDY_SIBLINGS = {}
+
+
+def study_part_of(path):
+    """(1-based position of this part, how many parts its chapter holds)."""
+    sibs = study_siblings(path)
+    full = Path(path)
+    if not full.is_absolute():
+        full = ROOT / full
+    try:
+        return sibs.index(full) + 1, len(sibs)
+    except ValueError:
+        return 1, max(1, len(sibs))
+
+
+def study_title_for(path):
+    """`Arrival of Europeans - Part 3 (English)`.
+
+    The title is assembled from the folders the file sits in and the part's
+    position among its siblings - not from the file name - so `part 3
+    (english).pdf` and `part-3-english-en.pdf` read as the same part of the
+    same chapter, and the language is on the face of the page because an
+    English part and a Punjabi part of one chapter share a name."""
+    subject, lang_folder, chapter = study_locator(path)
+    language = study_lang_id(lang_folder) or study_language_from_name(path.stem)
+    if lang_folder:
+        lang_name = study_lang(lang_folder).get("name") or "English"
+    else:
+        lang_name = (STUDY_LANG.get(language) or {}).get("name") or "English"
+    position, _ = study_part_of(path)
+    chapter_name = study_nice_name(chapter or path.stem)
+    return clip(f"{chapter_name} - Part {position} ({lang_name})")
+
+
 def study_files(subject):
-    """The content files of one subject folder, sorted - never metadata.json."""
+    """Every material file of one subject, at any depth, sorted by path.
+
+    A new chapter folder under a language folder needs no registration
+    anywhere: it publishes on the next build because it is a folder."""
     d = CONTENT / STUDY_DIR / subject
     if not d.is_dir():
         return []
-    return sorted(p for p in d.iterdir()
-                  if p.is_file() and not p.name.lower().startswith("readme")
-                  and p.name != "metadata.json"
-                  and p.suffix.lower() in (".pdf",) + STUDY_EXTS)
+    return sorted(p for p in d.rglob("*")
+                  if _is_material(p) and not any(
+                      part.startswith((".", "_"))
+                      for part in p.relative_to(d).parts[:-1]))
 
 
 def study_paths():
-    """Every non-PDF material file, one level deep: content/<coll>/<subject>/.
+    """Every non-PDF material file in the collection, at any depth.
 
-    Depth is enforced, not assumed: anything at the root of the collection
-    (this README, the subject registry) is configuration, and anything deeper
-    than one folder belongs to no subject, so neither can publish."""
+    The collection root is configuration (this README, the subject registry)
+    and publishes nothing: a file has to sit under a subject folder."""
     cdir = CONTENT / STUDY_DIR
     if not cdir.is_dir():
         return []
     out = []
     for subject_dir in sorted(p for p in cdir.iterdir()
                               if p.is_dir() and not p.name.startswith((".", "_"))):
-        out.extend(p for p in sorted(subject_dir.iterdir())
-                   if p.is_file() and not p.name.lower().startswith("readme")
-                   and p.name != "metadata.json"
-                   and p.suffix.lower() in STUDY_EXTS)
-    return out
+        out.extend(p for p in study_files(subject_dir.name)
+                   if p.suffix.lower() in STUDY_EXTS)
+    return sorted(out)
 
 
-def study_overrides(subject, filename):
-    """The metadata.json sitting beside a file, keyed by that file's name.
+def study_overrides(path):
+    """The metadata.json layers sitting beside a file, nearest one winning.
 
-    Two shapes are accepted and nothing else, so a sidecar can never be
-    misread: the documented map keyed by file name, and - for a folder holding
-    exactly one material file - a plain object applied to that file."""
-    data = _study_json(CONTENT / STUDY_DIR / subject / "metadata.json",
-                       "study material overrides")
-    if not data:
+    A sidecar may live in the file's own folder, in a language folder or in
+    the subject folder; each layer is merged over the one before it, so the
+    word closest to the file is the word that counts. Two shapes are accepted
+    and nothing else, so a sidecar can never be misread: the documented map
+    keyed by file name, and - for a folder holding exactly one material file -
+    a plain object applied to that file."""
+    path = Path(path)
+    subject, _, _ = study_locator(path)
+    if not subject:
         return {}
+    subject_dir = CONTENT / STUDY_DIR / subject
+    layers, here = [], path.parent
+    while True:
+        side = here / "metadata.json"
+        if side.is_file():
+            layers.append((side, here))
+        if here == subject_dir or here == here.parent:
+            break
+        here = here.parent
 
     def _clean(node):
         # `$note`, `_comment` and friends are for the person reading the file;
         # they are never a field of the document it describes.
         return {k: v for k, v in node.items() if not str(k).startswith(("$", "_"))}
 
-    node = data.get(filename)
-    if isinstance(node, dict):
-        return _clean(node)
-    if any(str(k).lower().endswith((".pdf", ".md", ".json")) for k in data):
-        return {}                     # a filename map without this file's key
-    files = study_files(subject)
-    if len(files) == 1 and files[0].name == filename:
-        return _clean(data)
-    return {}
+    out = {}
+    for side, folder in reversed(layers):        # furthest first, nearest last
+        data = _study_json(side, "study material overrides")
+        if not data:
+            continue
+        node = data.get(path.name)
+        if isinstance(node, dict):
+            out.update(_clean(node))
+            continue
+        if any(str(k).lower().endswith((".pdf", ".md", ".json")) for k in data):
+            continue                             # a map without this file's key
+        files = [p for p in folder.iterdir() if _is_material(p)]
+        if len(files) == 1 and files[0].name == path.name:
+            out.update(_clean(data))
+    return out
 
 
 def study_auto_meta(path, subject):
     """What the build knows about a file before anything is written down.
 
-    The name carries the title, the language and any date; the subject comes
-    from the folder; the description is generated in the site's 140-160
-    character window. The generator is study-specific rather than the PDF one
-    on purpose: an .md or .json file is not something you "download as a PDF",
-    and a description that lies about the format is worse than no description."""
+    The folders carry the subject, the language and the chapter; the name
+    carries the part number and any date; the description is generated in the
+    site's 140-160 character window. The generator is study-specific rather
+    than the PDF one on purpose: an .md or .json file is not something you
+    "download as a PDF", and a description that lies about the format is worse
+    than no description."""
     stem = path.stem
-    title = pdf_title_from_name(stem) or path.name
+    _, lang_folder, _ = study_locator(path)
+    title = study_title_for(path)
     name = study_subject_name(subject)
     meta = {
         "title": title,
         "description": study_description(title, name),
         "category": name,
-        "keywords": [title, name, "Study Material", stem],
-        "language": "pa" if (re.search(r"(^|[^a-z])(punjabi|panjabi|gurmukhi)"
-                                       r"([^a-z]|$)", stem.lower())
-                             or any("\u0a00" <= c <= "\u0a7f" for c in stem))
-                    else "en",
+        "keywords": [clip(title, 48), name, "Study Material", stem],
+        "language": study_lang_id(lang_folder) or study_language_from_name(stem),
     }
     when = pdf_date_from_name(stem)
     if when:
@@ -2028,7 +2223,7 @@ def study_description(title, subject):
     describe a file it has never been told the type of."""
     text = f"{title} - free study material from House of Aspirants."
     clauses = [
-        f" {subject} material, filed straight from the file name.",
+        f" {subject} material, filed under its subject, language and chapter.",
         " Read it online or keep it for offline revision.",
         " No sign-up, no email wall, no paid tier.",
         " Listed under Study Material with its language and reading time.",
@@ -2128,30 +2323,45 @@ def study_document(path, subject):
             raise SystemExit(1)
         apply_aliases(file_meta, where)
         merged = study_merge(auto, file_meta)
-    merged = study_merge(merged, study_overrides(subject, path.name))
+    merged = study_merge(merged, study_overrides(path))
     merged["category"] = str(merged.get("category") or study_subject_name(subject))
     return merged, body
 
 
 def stamp_study_fields(records):
-    """The shelf's own fields: subject, language, size, badges, haystack.
+    """The shelf's own fields: subject, language, chapter, part, size, badges.
 
     Derived once, from the path and the sidecar, so the shelf, the hub page,
-    the search index and the JSON-LD can never disagree about what a file is.
-    Nothing here reads the clock: a "new" badge has to come from metadata, or
-    a rebuild on a different day would produce a different tree."""
+    the part page, the search index and the JSON-LD can never disagree about
+    what a file is. Nothing here reads the clock: a "new" badge has to come
+    from metadata, or a rebuild on a different day would produce a different
+    tree."""
     names = study_subject_names()
     for rec in records:
-        rel = Path(rec["path"])
-        parts = rel.parts                       # content/study-material/<s>/<f>
-        folder = parts[2] if len(parts) > 3 else ""
+        rel = Path(rec["path"])                 # content/study-material/...
+        full = ROOT / rel
         meta = rec.get("meta") or {}
+        folder, lang_folder, chapter = study_locator(rel)
+        if not chapter:
+            # A file dropped straight into a subject has no chapter folder
+            # yet: its own name is the chapter it forms, so the tree stays
+            # complete instead of silently missing a level.
+            chapter = pdf_slug_from_name(rel.stem) or "part"
+        position, total = study_part_of(full)
+        lang = study_lang(lang_folder) if lang_folder else {}
         rec["studySubject"] = folder
         rec["subjectName"] = names.get(folder) or study_subject_name(folder)
         rec["category"] = str(meta.get("category") or rec["subjectName"])
-        rec["language"] = str(meta.get("language") or "en")
+        rec["language"] = str(meta.get("language") or lang.get("code")
+                              or study_language_from_name(rel.stem))
+        rec["studyLanguage"] = str(meta.get("language") or lang.get("code") or "")
+        rec["studyLanguageName"] = lang.get("name") or \
+            study_language_label(rec["studyLanguage"])
+        rec["studyChapter"] = chapter
+        rec["studyChapterName"] = study_nice_name(chapter)
+        rec["studyPart"] = position
+        rec["studyParts"] = total
         rec["type"] = rel.suffix.lower().lstrip(".")
-        full = ROOT / rel
         rec["size"] = full.stat().st_size if full.exists() else 0
         rec["sizeLabel"] = file_size_label(full)
         said = int((rec.get("meta") or {}).get("readingTime") or 0)
@@ -2169,10 +2379,84 @@ def stamp_study_fields(records):
         hay = " ".join([str(rec.get("title") or ""),
                         str(rec.get("description") or ""),
                         rel.name, folder, rec["subjectName"],
+                        rec["studyLanguageName"], rec["studyChapterName"],
+                        str(rec.get("studyPart") and f"part {rec['studyPart']}"),
                         " ".join(str(k) for k in (rec.get("keywords") or [])),
                         " ".join(str(s) for s in (rec.get("subjects") or [])),
                         " ".join(str(e) for e in (rec.get("exams") or []))])
         rec["search"] = re.sub(r"\s+", " ", hay).strip().lower()
+
+
+def study_language_label(code):
+    """How one language code is written on screen.
+
+    English and Punjabi are named in full (Punjabi in the script it is read
+    in); a language this site has not named before still gets a readable
+    label built from its code rather than a blank."""
+    text = str(code or "").strip().lower()
+    if not text:
+        return ""
+    known = (STUDY_LANG.get(text) or {}).get("name")
+    if known:
+        return known
+    return study_nice_name(text) if len(text) >= 3 else text
+
+
+def study_nav(records):
+    """Where every part sits: what comes before it, what comes after it, and
+    which chapters of the same subject a reader could go to next.
+
+    Everything is grouped from the records the build just stamped, so a
+    chapter folder added tonight is walked tomorrow with no configuration,
+    and a chapter published in two languages is reachable from either one."""
+    def row(r):
+        return {"file": r["file"], "title": r["title"]}
+
+    def href(key):
+        subject, lang, chapter = key
+        return "study.html?subject={0}&language={1}&chapter={2}".format(
+            quote(str(subject), safe=""), quote(str(lang), safe=""),
+            quote(str(chapter), safe=""))
+
+    by_chapter = {}
+    for r in records:
+        key = (str(r.get("studySubject") or ""),
+               str(r.get("studyLanguage") or ""),
+               str(r.get("studyChapter") or ""))
+        by_chapter.setdefault(key, []).append(r)
+
+    chapters = {}
+    for key, rows in by_chapter.items():
+        rows.sort(key=lambda r: (int(r.get("studyPart") or 0), r["file"]))
+        chapters[key] = {"name": str(rows[0].get("studyChapterName") or ""),
+                         "count": len(rows)}
+        for i, r in enumerate(rows):
+            r["partNav"] = {
+                "prev": row(rows[i - 1]) if i > 0 else None,
+                "next": row(rows[i + 1]) if i + 1 < len(rows) else None,
+            }
+
+    def card(key, info):
+        return {"href": href(key), "eyebrow": "Chapter",
+                "title": info["name"] or "Study Material", "sub": "",
+                "meta": f'{info["count"]} part'
+                        f'{"s" if info["count"] != 1 else ""}'
+                        f' · {study_language_label(key[1])}'}
+
+    for key, info in chapters.items():
+        subject, lang, _ = key
+        mine = sorted(((k, m) for k, m in chapters.items()
+                       if k[0] == subject and k[1] == lang and k != key),
+                      key=lambda kv: (kv[1]["name"].lower(), kv[0][2]))
+        elsewhere = sorted(((k, m) for k, m in chapters.items()
+                            if k[0] == subject and k[1] != lang),
+                           key=lambda kv: (kv[1]["name"].lower(),
+                                           kv[0][1], kv[0][2]))
+        related = [card(k, m) for k, m in mine[:3]]
+        related += [card(k, m) for k, m in elsewhere[:max(0, 3 - len(related))]]
+        for r in by_chapter[key]:
+            r["relatedChapters"] = related
+    return records
 
 
 def study_date_label(iso):
@@ -2217,7 +2501,7 @@ def study_card(r, facets=None):
         for b in (r.get("badges") or []) if b in badge_kind)
     meta = []
     lang = str(r.get("language") or ("pa" if r.get("lang") == "pa" else "en"))
-    meta.append("ਪੰਜਾਬੀ" if lang == "pa" else "English")
+    meta.append(study_language_label(lang) or "English")
     when = study_date_label(r.get("updated") or r.get("published"))
     if when:
         meta.append(f"Updated {when}")
@@ -2688,6 +2972,55 @@ def pdf_body_text(title, rel, published, label, record=None):
     )
 
 
+def study_pdf_body(title, rel, published, label, record=None):
+    """The honest body of a study part page.
+
+    Where the file sits - subject, language, chapter and its place among the
+    parts beside it - is the fact a reader needs before downloading and the
+    whole of the authoring surface for the person who published it, so it is
+    written down here instead of living in a README nobody opens. Everything
+    else is what the scanner read out of the file itself."""
+    rec = record or {}
+    href = pdf_href(rel)
+    subject, lang_folder, chapter = study_locator(rel)
+    position, total = study_part_of(rel)
+    lang = study_lang(lang_folder) if lang_folder else {}
+    pages = int(rec.get("pdfPages") or 0)
+    size = file_size_label(ROOT / rel)
+    summary = pdf_summary_md(rec.get("summary"))
+    facts = ", ".join(x for x in (size, f"{pages} pages" if pages else "") if x)
+    lang_name = lang.get("name") or study_language_label(
+        study_lang_id(lang_folder) or "en")
+    where = Path(rel).parent.as_posix()
+    return (
+        (f"## Summary\n{summary}\n\n" if summary else "")
+        + f"## Download\n"
+        + f"[Download {title} (PDF)]({href})"
+        + (f" - {facts}, hosted on this site." if facts else ".")
+        + " No sign-up, no email wall and no redirect through a third party.\n\n"
+        f"## About this file\n"
+        f"- **File name:** `{Path(rel).name}`\n"
+        + (f"- **Pages:** {pages}\n" if pages else "")
+        + (f"- **Size:** {size}\n" if size else "")
+        + (f"- **Published:** {fmt_date(published)}\n" if published else "")
+        + f"- **Filed under:** {label}\n"
+        f"\n## Where this file sits\n"
+        f"- **Subject:** {study_subject_name(subject)}\n"
+        f"- **Language:** {lang_name}"
+        + (f" ({lang['native']})" if lang.get("native") and
+           lang.get("native") != lang_name else "")
+        + "\n"
+        + (f"- **Chapter:** {study_nice_name(chapter)}\n" if chapter else "")
+        + (f"- **Part:** Part {position} of {total}\n" if total > 1
+           or position > 0 else "")
+        + f"\nThis page was generated automatically from `{where}/`. Its "
+        f"subject, language and chapter come from the folders the file sits "
+        f"in, its part number from its place among the files beside it, and "
+        f"its title, slug and description from those. The page count and the "
+        f"summary were read out of the PDF itself - the file is the document."
+    )
+
+
 def pdf_preview_html(record):
     """The scanner's first-page preview, if it drew one: the same box the
     issue covers use, sized by the pixels that were actually written so the
@@ -2823,6 +3156,11 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
     download itself, which is this file and not a link somebody typed."""
     label = NAV_ENTRY.get(coll, (HUBS[coll]["schema_hub"], ""))[0]
     title = pdf_title_from_name(path.stem) or label
+    if coll == STUDY_DIR:
+        # A study file's title is the folders it sits in plus its place among
+        # its siblings, never the raw file name: `part 3 (english).pdf` is the
+        # third part of its chapter, and which chapter is on the page too.
+        title = study_title_for(path)
     rel = str(path.relative_to(ROOT))
     drop = drop or {}
     pages = int(drop.get("pages") or 0)
@@ -2848,16 +3186,19 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
         if coll == "magazine" and fname_date:
             meta["month"] = fname_date[:7]    # "Issue 2026-07", from the name
         if coll == STUDY_DIR:
-            # The scanner read the language out of the file name and the
-            # subject out of the folder; a sidecar may say otherwise. The
-            # generated description is rewritten so it never claims the file
-            # is a PDF when the record also knows its real type.
-            meta["language"] = str(drop.get("language") or "en")
-            meta["category"] = study_subject_name(folder)
-            meta["description"] = study_description(title,
-                                                    study_subject_name(folder))
-            meta["keywords"] = [clip(title, 48), study_subject_name(folder),
-                                "Study Material", path.stem]
+            # The folders say which subject this file belongs to, which
+            # language it is written in and which chapter it is part of; the
+            # file name only breaks a tie where no language folder exists.
+            # A sidecar may still say otherwise - it is merged in below and
+            # beats every derivation.
+            subject, lang_folder, _ = study_locator(path)
+            name = study_subject_name(subject)
+            meta["language"] = (study_lang_id(lang_folder)
+                                or str(drop.get("language") or "en"))
+            meta["category"] = name
+            meta["description"] = study_description(title, name)
+            meta["keywords"] = [clip(title, 48), name, "Study Material",
+                                path.stem]
     if extra:
         meta.update({k: v for k, v in extra.items() if v not in (None, "", [])})
     if coll != "pdfs":
@@ -2865,10 +3206,15 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
         meta.setdefault("published", published)
     record = build_record(coll, cfg, slug, path, index, "en",
                           meta=meta,
-                          body=pdf_body_text(str(meta.get("title") or title),
-                                             rel,
-                                             str(meta.get("published") or published),
-                                             label, body_facts),
+                          body=(study_pdf_body(str(meta.get("title") or title),
+                                               rel,
+                                               str(meta.get("published") or published),
+                                               label, body_facts)
+                                if coll == STUDY_DIR else
+                                pdf_body_text(str(meta.get("title") or title),
+                                              rel,
+                                              str(meta.get("published") or published),
+                                              label, body_facts)),
                           required=required)
     if record is not None:
         record["pdfDrop"] = True
@@ -2897,7 +3243,10 @@ def dedupe_pdf_titles(all_records):
             base = str(r["title"])
             # A file in a subfolder says which one it is with that folder's
             # name ("english") before it falls back to the collection label.
-            folder = pdf_title_from_name(r.get("pdfFolder") or "")
+            # A study file already has its chapter on the face of the title,
+            # so it disambiguates with the subject instead.
+            folder = pdf_title_from_name(r.get("studySubject")
+                                          or r.get("pdfFolder") or "")
             first = folder or label
             cand, n = base, 1
             while cand.lower() in used:
@@ -2910,7 +3259,9 @@ def dedupe_pdf_titles(all_records):
             if cand != base:
                 r["title"] = cand
                 r["meta"]["title"] = cand
-                r["meta"]["description"] = pdf_description(cand, label)
+                r["meta"]["description"] = (
+                    study_description(cand, str(r.get("subjectName") or first))
+                    if r.get("studySubject") else pdf_description(cand, label))
                 r["description"] = r["meta"]["description"]
                 if r["meta"].get("keywords"):
                     r["meta"]["keywords"][0] = clip(cand, 48)
@@ -3088,6 +3439,24 @@ def prev_next(record, pool):
                 f'<span class="pn-title">{esc(r["title"])}</span></a>')
 
     return card(older, "prev"), card(newer, "next")
+
+
+def part_prev_next(record):
+    """The parts either side of this one, in chapter order.
+
+    Derived in study_nav() from the chapter folder itself, so part 3 knows
+    part 2 and part 4 exist whether the file names say `part-3` or `Part 3`."""
+    nav = record.get("partNav") or {}
+
+    def card(row, kind):
+        if not row:
+            return '<span class="pn-card pn-empty"></span>'
+        arrow = "Next part →" if kind == "next" else "← Previous part"
+        return (f'<a class="pn-card" href="{esc(row["file"])}">'
+                f'<span class="pn-label">{arrow}</span>'
+                f'<span class="pn-title">{esc(row["title"])}</span></a>')
+
+    return card(nav.get("prev"), "prev"), card(nav.get("next"), "next")
 
 
 def content_chain(record, quizzes):
@@ -3479,9 +3848,13 @@ def recommend_sections(record, ctx, quizzes, anchors):
 
     # A generated PDF page leads with the PDFs it sits beside - one group the
     # plan never has to know about, on the same cards every other slot uses.
-    related = record.get("relatedPdfs") or []
+    # A study part leads with the chapters around it instead: its own chapter
+    # already covers the file, so the useful next step is a different chapter.
+    related = record.get("relatedChapters") or record.get("relatedPdfs") or []
     if related:
-        groups.insert(0, ({"title": "Related PDFs"}, related))
+        title = ("Related Chapters" if record.get("relatedChapters")
+                 else "Related PDFs")
+        groups.insert(0, ({"title": title}, related))
         edges.extend((c["href"], "related-pdf") for c in related)
 
     if not groups and not reserved:
@@ -3588,10 +3961,43 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     # Article also carries the WebPage type, so one node covers both rules and
     # there is never a duplicate @id on the page.
+    # A study part is reached through subject -> language -> chapter, so the
+    # trail (in JSON-LD and on screen) walks that chain rather than jumping
+    # from the shelf straight to the file.
     crumbs = {"id": f"{url}#breadcrumb",
               "items": [("Home", f"{DOMAIN}/"),
                         (hub["schema_hub"], hub_url),
                         (record["title"], url)]}
+    crumb_tail = ""
+    if record.get("studySubject"):
+        def _q(value):
+            return quote(str(value), safe="")
+        trail, tail = [(hub["schema_hub"], hub_url)], ""
+        sid = _q(record["studySubject"])
+        sname = str(record["subjectName"])
+        subject_url = f"{DOMAIN}/study?subject={sid}"
+        trail.append((sname, subject_url))
+        tail += f'<a href="study.html?subject={sid}">{esc(sname)}</a><span>/</span>'
+        level = subject_url
+        if record.get("studyLanguage"):
+            lang_id = _q(record["studyLanguage"])
+            lang_name = str(record.get("studyLanguageName")
+                             or record["studyLanguage"])
+            level = f"{subject_url}&language={lang_id}"
+            trail.append((lang_name, level))
+            tail += (f'<a href="study.html?subject={sid}&amp;language={lang_id}">'
+                     f'{esc(lang_name)}</a><span>/</span>')
+        if record.get("studyChapter"):
+            chap_id = _q(record["studyChapter"])
+            chap_name = str(record["studyChapterName"])
+            trail.append((chap_name, f"{level}&chapter={chap_id}"))
+            tail += (f'<a href="study.html?subject={sid}'
+                     f'&amp;language={_q(record.get("studyLanguage") or "")}'
+                     f'&amp;chapter={chap_id}">{esc(chap_name)}</a>'
+                     f'<span>/</span>')
+        trail.append((record["title"], url))
+        crumbs["items"] = trail
+        crumb_tail = tail
     nodes = [article_node(record, url), breadcrumb_node(crumbs)]
 
     if record.get("pdfDrop"):
@@ -3629,7 +4035,14 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     # ---- hero -------------------------------------------------------------
     eyebrow_bits = []
-    if record.get("pdfDrop"):
+    if record.get("studySubject"):
+        # Subject · Language · Chapter: the three folders the file sits in,
+        # so the page says where it belongs before it says anything else.
+        eyebrow_bits.append(" · ".join(
+            b for b in (str(record.get("subjectName") or ""),
+                        str(record.get("studyLanguageName") or ""),
+                        str(record.get("studyChapterName") or "")) if b))
+    elif record.get("pdfDrop"):
         # Generated from a file name: lead with the one fact it really carries
         eyebrow_bits.append(pdf_eyebrow(record, index))
     elif record["collection"] == "notes":
@@ -3656,6 +4069,10 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     if record.get("pdf"):
         pdf_html = (f'<a class="btn btn-primary" href="{esc(pdf_href(record["pdf"]))}" '
                     f'download>⬇ Download PDF</a>')
+    if record.get("studySubject"):
+        # Read it here first; keep the file only if that is what you want.
+        pdf_html = ('<a class="btn btn-soft" href="#read">📖 Read Online</a>'
+                    + pdf_html)
 
     # Community links the document itself points at - rendered only when the
     # front matter carries them.
@@ -3758,10 +4175,17 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     if chain:
         sections.append(chain)
 
-    prev_card, next_card = prev_next(record, pool)
+    if record.get("partNav"):
+        # A study part belongs to a chapter's own sequence, so it walks that
+        # sequence rather than the publication order of the whole shelf.
+        prev_card, next_card = part_prev_next(record)
+        pn_label = "Previous and next part"
+    else:
+        prev_card, next_card = prev_next(record, pool)
+        pn_label = "Previous and next note"
     sections.append(f"""<section class="section" style="padding-top:0">
       <div class="container">
-        <nav class="prev-next" aria-label="Previous and next note">{prev_card}{next_card}</nav>
+        <nav class="prev-next" aria-label="{pn_label}">{prev_card}{next_card}</nav>
       </div>
     </section>""")
 
@@ -3780,7 +4204,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span>
-          <a href="{hub['file']}">{esc(hub["schema_hub"])}</a><span>/</span>
+          <a href="{hub['file']}">{esc(hub["schema_hub"])}</a><span>/</span>{crumb_tail}
           <span>{esc(record["title"])}</span>
         </nav>
         <span class="eyebrow">{esc(" · ".join(eyebrow_bits) or hub["eyebrow"])}</span>
@@ -4223,10 +4647,10 @@ def keywords_for(record):
 # control that cannot do anything.
 # =============================================================================
 FILTER_FACETS = ("exam", "subject", "language", "difficulty", "date",
-                 "category")
+                 "category", "chapter")
 FILTER_LABEL = {"exam": "Exam", "subject": "Subject", "language": "Language",
                 "difficulty": "Difficulty", "date": "Date",
-                "category": "Category"}
+                "category": "Category", "chapter": "Chapter"}
 
 
 def _slug_facet(value):
@@ -4249,10 +4673,10 @@ def filter_facets(records, index):
             found["subject"][s] = subject_name(index, s)
         lang_v = str(r.get("language") or r.get("lang") or "")
         if lang_v:
-            # Study material states its OWN language (read from the file name
-            # or the sidecar); everything else falls back to the page language.
-            found["language"][lang_v] = ("English" if lang_v == "en"
-                                         else "ਪੰਜਾਬੀ")
+            # Study material states its OWN language (the language folder the
+            # file sits in, or its name or sidecar); everything else falls
+            # back to the page language.
+            found["language"][lang_v] = study_language_label(lang_v)
         if r.get("difficulty"):
             found["difficulty"][_slug_facet(r["difficulty"])] = \
                 str(r["difficulty"])
@@ -4262,6 +4686,9 @@ def filter_facets(records, index):
         if r.get("category"):
             found["category"][_slug_facet(r["category"])] = \
                 str(r["category"])
+        if r.get("studyChapter"):
+            found["chapter"][_slug_facet(r["studyChapter"])] = str(
+                r.get("studyChapterName") or r["studyChapter"])
     return {f: sorted(vals.items(), key=lambda kv: kv[1].lower())
             for f, vals in found.items() if len(vals) >= 2}
 
@@ -4276,6 +4703,8 @@ def filter_attrs(r, facets):
         "difficulty": [_slug_facet(r["difficulty"])] if r.get("difficulty") else [],
         "date": [str(r["published"])[:7]] if r.get("published") else [],
         "category": [_slug_facet(r["category"])] if r.get("category") else [],
+        "chapter": [_slug_facet(r["studyChapter"])]
+                   if r.get("studyChapter") else [],
     }
     out = ""
     for f in facets:
@@ -5741,7 +6170,7 @@ def main():
                 continue
             name = path.name
             if study:
-                subject = path.parent.name
+                subject = study_locator(path)[0] or path.parent.name
                 is_pa = False   # language is a display field, not a URL, here
                 # Any name is a valid name here. "Chapter 1 Notes.md" gets the
                 # same transliteration and hyphenation a PDF gets, so a file
@@ -5848,7 +6277,7 @@ def main():
             rec = build_pdf_record(
                 coll, cfg, path, slug, published, updated, fname_date, index,
                 folder, drop,
-                study_overrides(folder, path.name) if coll == STUDY_DIR
+                study_overrides(path) if coll == STUDY_DIR
                 else None)
             if rec is None:
                 continue
@@ -5872,6 +6301,10 @@ def main():
     stamp_study_fields(all_records[STUDY_DIR])
     dedupe_pdf_titles(all_records)
     link_related_pdfs(all_records, punjabi)
+    # Part order and the chapters beside them: derived from the records above,
+    # so a part page always knows what comes next and which chapter to read
+    # after this one.
+    study_nav(all_records[STUDY_DIR])
     if pdf_drops:
         info(f"pdf drops: {pdf_drops} PDF(s) published from their file names")
     # One stamp per PDF that still exists. A file this run did not publish - a
@@ -5954,7 +6387,10 @@ def main():
                 # Study renderer searches. Scalars only - the page itself is
                 # the long form, the manifest stays a listing.
                 **({k: rec[k] for k in ("language", "subjectName",
-                                        "studySubject", "size", "sizeLabel",
+                                        "studySubject", "studyLanguage",
+                                        "studyLanguageName", "studyChapter",
+                                        "studyChapterName", "studyPart",
+                                        "studyParts", "size", "sizeLabel",
                                         "type", "source", "badges", "search")
                     if k in rec}),
                 **({"author": str(rec["author"])} if rec.get("author") else {}),

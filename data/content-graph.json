@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 103,
-  "edges": 371,
+  "nodes": 104,
+  "edges": 381,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -40,11 +40,11 @@
    "hub": "announcements.html"
   },
   {
-   "id": "archive-category-arrival-of-europeans.html",
-   "url": "/archive-category-arrival-of-europeans.html",
+   "id": "archive-category-computer.html",
+   "url": "/archive-category-computer.html",
    "type": "archive",
    "template": "",
-   "title": "Arrival Of Europeans",
+   "title": "Computer",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -52,11 +52,11 @@
    "hub": "archives.html"
   },
   {
-   "id": "archive-category-fundamentals-of-computer.html",
-   "url": "/archive-category-fundamentals-of-computer.html",
+   "id": "archive-category-history.html",
+   "url": "/archive-category-history.html",
    "type": "archive",
    "template": "",
-   "title": "Fundamentals Of Computer",
+   "title": "History",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -716,7 +716,7 @@
    "url": "/material-fundamentals-of-computer-punjabi.html",
    "type": "study-material",
    "template": "",
-   "title": "Fundamentals of Computer Punjabi",
+   "title": "Fundamentals of Computer - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -728,7 +728,7 @@
    "url": "/material-fundamentals-of-computer.html",
    "type": "study-material",
    "template": "",
-   "title": "Fundamentals of Computer",
+   "title": "Fundamentals of Computer - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -752,7 +752,7 @@
    "url": "/material-part-1-english-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 1 English En",
+   "title": "Arrival of Europeans - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -776,7 +776,7 @@
    "url": "/material-part-1-punjabi-pa.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 1 Punjabi Pa",
+   "title": "Arrival of Europeans - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -800,7 +800,7 @@
    "url": "/material-part-2-english-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 2 English En",
+   "title": "Arrival of Europeans - Part 2 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -824,7 +824,7 @@
    "url": "/material-part-2-punjabi-pa.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 2 Punjabi Pa",
+   "title": "Arrival of Europeans - Part 2 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -848,7 +848,7 @@
    "url": "/material-part-3-english.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 3 English",
+   "title": "Arrival of Europeans - Part 3 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -872,7 +872,7 @@
    "url": "/material-part-3-punjabi.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 3 Punjabi",
+   "title": "Arrival of Europeans - Part 3 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -896,7 +896,7 @@
    "url": "/material-part-4-english-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 4 English En",
+   "title": "Arrival of Europeans - Part 4 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -920,7 +920,7 @@
    "url": "/material-part-4-punjabi.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 4 Punjabi",
+   "title": "Arrival of Europeans - Part 4 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -944,7 +944,7 @@
    "url": "/material-part-5-english-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 5 English En",
+   "title": "Arrival of Europeans - Part 5 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -968,7 +968,7 @@
    "url": "/material-part-5-punjabi-pa.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 5 Punjabi Pa",
+   "title": "Arrival of Europeans - Part 5 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1216,6 +1216,18 @@
    "hub": "study-notes.html"
   },
   {
+   "id": "study.html",
+   "url": "/study.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-guides.html",
    "url": "/subject-guides.html",
    "type": "hub",
@@ -1308,134 +1320,134 @@
    "weight": 1
   },
   {
-   "from": "archive-category-arrival-of-europeans.html",
+   "from": "archive-category-computer.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-1-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-1-punjabi-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-2-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-2-punjabi-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-3-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-3-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-4-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-4-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-5-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-arrival-of-europeans.html",
-   "to": "material-part-5-punjabi-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-fundamentals-of-computer.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "material-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-fundamentals-of-computer.html",
+   "from": "archive-category-computer.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archives.html",
-   "to": "archive-category-arrival-of-europeans.html",
+   "from": "archive-category-history.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-part-5-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "archive-category-fundamentals-of-computer.html",
+   "to": "archive-category-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-category-history.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1891,20 +1903,26 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-part-1-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -1963,20 +1981,26 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "material-part-1-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -1994,12 +2018,6 @@
   {
    "from": "material-part-1-english-en.html",
    "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-1-english-en.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2041,20 +2059,26 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "material-part-1-punjabi-pa.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-english-en.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-english-en.html",
    "to": "material-part-2-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2113,20 +2137,26 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-punjabi-pa.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-punjabi-pa.html",
    "to": "material-part-2-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2155,6 +2185,12 @@
   },
   {
    "from": "material-part-2-english-en.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2185,20 +2221,26 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-english-en.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-english-en.html",
    "to": "material-part-2-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2227,7 +2269,7 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "material-part-3-english.html",
+   "to": "material-part-3-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2263,20 +2305,26 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-punjabi-pa.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-punjabi-pa.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2299,19 +2347,13 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "material-part-2-punjabi-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-3-english.html",
    "to": "material-part-3-english",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-3-english.html",
-   "to": "material-part-3-punjabi.html",
+   "to": "material-part-4-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2347,20 +2389,26 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-3-english.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-3-english.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2383,7 +2431,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "material-part-3-english.html",
+   "to": "material-part-2-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2395,7 +2443,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "material-part-4-english-en.html",
+   "to": "material-part-4-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2431,20 +2479,26 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-3-punjabi.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-3-punjabi.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2467,7 +2521,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "material-part-3-punjabi.html",
+   "to": "material-part-3-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2479,7 +2533,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "material-part-4-punjabi.html",
+   "to": "material-part-5-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2515,20 +2569,26 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-4-english-en.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-4-english-en.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2551,7 +2611,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "material-part-4-english-en.html",
+   "to": "material-part-3-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2563,7 +2623,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "material-part-5-english-en.html",
+   "to": "material-part-5-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2599,20 +2659,26 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-4-punjabi.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-4-punjabi.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2635,19 +2701,13 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "material-part-4-punjabi.html",
+   "to": "material-part-4-english-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-5-english-en.html",
    "to": "material-part-5-english-en",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-5-english-en.html",
-   "to": "material-part-5-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2683,20 +2743,26 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-5-english-en.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-5-english-en.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2719,7 +2785,7 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "material-part-5-english-en.html",
+   "to": "material-part-4-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2761,20 +2827,26 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "rel": "related-study-material",
    "weight": 1
   },
   {

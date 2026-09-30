@@ -67,12 +67,12 @@
       {
         "@type": "Question",
         "name": "How do I move through a subject?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Open the subject and you land on its Study Material: every file filed under it under one heading, featured and newest first. Use the search box to narrow it by title or keyword, or choose Browse chapters to walk the category, chapter and part tree when you would rather follow the syllabus than skim a shelf." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Open a subject and choose a language first: the page shows only its language cards until you do. Then you get that language's chapters, then the parts of a chapter in reading order. Each part opens with Read Online, Download, Related Chapters and the part before and after it, so you can read straight through without going back to the shelf." }
       },
       {
         "@type": "Question",
         "name": "Is the material available in Punjabi?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each card states the language the file itself is written in, so a Punjabi file reads on the card in Punjabi before you open it. Where a note exists in both, neither language is treated as a translation of the other." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes, and choosing a language comes before anything else, so a Punjabi reader never passes an English page to reach Punjabi material. Every part states the language it is written in, and where a chapter exists in both, neither language is treated as a translation of the other." }
       },
       {
         "@type": "Question",
@@ -100,17 +100,18 @@
         </nav>
         <span class="eyebrow">Study</span>
         <h1 id="studyTitle">Study Material</h1>
-        <p class="muted" id="studyLead">Every subject, every file, one list. Pick a subject and read or download
-          whatever is filed under it — with its language, when it was last updated and how long it takes to
-          read. Reading only. No questions in here.</p>
+        <p class="muted" id="studyLead">Subject → language → chapter → part. Pick a subject, choose the
+          language you want to read in, open a chapter and take its parts one after another — online or as a
+          download — with the language, the last update and the reading time on every part. Reading only. No
+          questions in here.</p>
         <div class="answer-box" id="studyAnswer">
           <span class="ab-label">How Study works</span>
           <p>
-            Pick a subject and you land on its <strong>Study Material</strong>: every file filed under that
-            subject, whatever kind of file it is, under one heading. Search it by title or keyword, or open
-            <em>Browse chapters</em> to walk the category → chapter → part tree when you want the syllabus
-            instead of a shelf. Nothing in Study will interrupt you with a test — when you are done reading,
-            that is what <a href="practice.html">Practice</a> is for.
+            Every subject opens on its <strong>languages</strong> first, and nothing else shows until you
+            have chosen one. Then you get that language's chapters, then the parts of the chapter you picked
+            in reading order, and every part opens with <em>Read Online</em>, <em>Download</em>, the chapters
+            beside it and the part before and after it. Nothing in Study will interrupt you with a test — when
+            you are done reading, that is what <a href="practice.html">Practice</a> is for.
           </p>
         </div>
       </div>
@@ -122,36 +123,29 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <span class="eyebrow" id="studySubjectEyebrow">Subject</span>
-              <h2 id="studySubjectHead">Study Material</h2>
-              <p id="studySubjectDesc">Everything filed under this subject, in one list.</p>
+              <span class="eyebrow" id="studyStepEyebrow">Study Material</span>
+              <h2 id="studyStepHead">Choose a language</h2>
+              <p id="studyStepDesc">Nothing is listed until a language is chosen.</p>
             </div>
-            <a class="btn btn-soft" id="studySubjectBack" href="study.html">All subjects →</a>
+            <a class="btn btn-soft" id="studyBack" href="study.html">← All subjects</a>
           </div>
 
           <!-- ==================== THE ONE SECTION: STUDY MATERIAL ========
-               Every file under this subject appears here together. There is no
-               separate PDFs list, no separate Notes list and no separate
-               Guides list: a reader never chose the format, so the page never
-               asks them to. -->
-          <div id="studyMaterial">
-            <div class="material-tools">
-              <label class="visually-hidden" for="studySearch">Search study material</label>
-              <input type="search" id="studySearch" class="material-search" autocomplete="off"
-                     placeholder="Search by title, keyword or file name">
-              <a class="btn btn-soft" id="studyChapters" href="study.html">Browse chapters →</a>
-            </div>
-            <p class="material-count" id="studyMaterialCount" aria-live="polite"></p>
-            <div id="studyMaterialBody" class="grid grid-3">
-              <div class="skeleton" style="height:190px"></div>
-            </div>
+               One container, four steps: language → chapter → part → the
+               part's own page. The step body is rendered entirely from
+               data/study-manifest.json (the tree the content build walks off
+               disk) joined to data/content-manifest.json (the card fields),
+               so a folder added today is a row tomorrow with no markup
+               touched. Nothing renders before a language is chosen. -->
+          <div class="material-tools" id="studyTools" hidden>
+            <label class="visually-hidden" for="studySearch">Search this subject</label>
+            <input type="search" id="studySearch" class="material-search" autocomplete="off"
+                   placeholder="Search by title, keyword or file name">
           </div>
-
-          <!-- ============ chapter browser, behind ?view=chapters ==========
-               The category → chapter → part tree still exists, but one tap
-               further in: the shelf is what a reader came for, the syllabus is
-               what they came for on purpose. -->
-          <div id="studyChaptersBody" hidden></div>
+          <p class="material-count" id="studyStepCount" aria-live="polite"></p>
+          <div id="studyStepBody" class="grid grid-3">
+            <div class="skeleton" style="height:190px"></div>
+          </div>
         </div>
       </section>
     </div>
@@ -204,16 +198,18 @@
             </div>
             <div class="faq-item">
               <h3>How do I move through a subject?</h3>
-              <p>Open the subject and you land on its Study Material: every file filed under it under one
-                 heading, newest and featured first. Use the search box to narrow it by title or keyword, or
-                 choose <em>Browse chapters</em> to walk the category → chapter → part tree when you would
-                 rather follow the syllabus than skim a shelf.</p>
+              <p>Open a subject and choose a language first — the page shows only its language cards until
+                 you do. Then you get that language's chapters, then the parts of a chapter in reading order.
+                 Each part opens with <em>Read Online</em>, <em>Download</em>, <em>Related Chapters</em> and
+                 the part before and after it, so you can read straight through without going back to the
+                 shelf.</p>
             </div>
             <div class="faq-item">
               <h3>Is the material available in Punjabi?</h3>
-              <p>Yes. Each card states the language the file itself is written in, so a Punjabi file reads
-                 ਪੰਜਾਬੀ on the card before you open it. Where a note exists in both, neither language is
-                 treated as the translation of the other.</p>
+              <p>Yes, and choosing a language comes before anything else, so a Punjabi reader never passes an
+                 English page to reach Punjabi material. Every part states the language it is written in, and
+                 where a chapter exists in both, neither language is treated as the translation of the
+                 other.</p>
             </div>
             <div class="faq-item">
               <h3>Do I have to pay for anything?</h3>

@@ -1,6 +1,20 @@
 {
-  "version": 1,
+  "version": 2,
   "domain": "https://houseofaspirants.in",
+  "languages": [
+    {
+      "id": "pa",
+      "name": "Punjabi",
+      "native": "ਪੰਜਾਬੀ",
+      "flag": "🇵🇺"
+    },
+    {
+      "id": "en",
+      "name": "English",
+      "native": "English",
+      "flag": "🇬🇧"
+    }
+  ],
   "subjects": [
     {
       "id": "computer",
@@ -11,7 +25,48 @@
       "order": 1,
       "count": 2,
       "newest": "2026-09-30",
-      "totalSize": 4503166
+      "totalSize": 4503166,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 1,
+          "chapters": [
+            {
+              "id": "fundamentals-of-computer",
+              "name": "Fundamentals of Computer",
+              "parts": [
+                {
+                  "file": "material-fundamentals-of-computer-punjabi.html",
+                  "n": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 1,
+          "chapters": [
+            {
+              "id": "fundamentals-of-computer",
+              "name": "Fundamentals of Computer",
+              "parts": [
+                {
+                  "file": "material-fundamentals-of-computer.html",
+                  "n": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "chapters": 2
     },
     {
       "id": "english",
@@ -22,7 +77,26 @@
       "order": 2,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "punjabi",
@@ -33,7 +107,26 @@
       "order": 3,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "reasoning",
@@ -44,7 +137,26 @@
       "order": 4,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "quant",
@@ -55,7 +167,26 @@
       "order": 5,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "gk",
@@ -66,7 +197,26 @@
       "order": 6,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "current-affairs",
@@ -77,7 +227,26 @@
       "order": 7,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "polity",
@@ -88,7 +257,26 @@
       "order": 8,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "history",
@@ -99,7 +287,80 @@
       "order": 9,
       "count": 10,
       "newest": "2026-09-30",
-      "totalSize": 17113048
+      "totalSize": 17113048,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 5,
+          "chapters": [
+            {
+              "id": "arrival-of-europeans",
+              "name": "Arrival of Europeans",
+              "parts": [
+                {
+                  "file": "material-part-1-punjabi-pa.html",
+                  "n": 1
+                },
+                {
+                  "file": "material-part-2-punjabi-pa.html",
+                  "n": 2
+                },
+                {
+                  "file": "material-part-3-punjabi.html",
+                  "n": 3
+                },
+                {
+                  "file": "material-part-4-punjabi.html",
+                  "n": 4
+                },
+                {
+                  "file": "material-part-5-punjabi-pa.html",
+                  "n": 5
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 5,
+          "chapters": [
+            {
+              "id": "arrival-of-europeans",
+              "name": "Arrival of Europeans",
+              "parts": [
+                {
+                  "file": "material-part-1-english-en.html",
+                  "n": 1
+                },
+                {
+                  "file": "material-part-2-english-en.html",
+                  "n": 2
+                },
+                {
+                  "file": "material-part-3-english.html",
+                  "n": 3
+                },
+                {
+                  "file": "material-part-4-english-en.html",
+                  "n": 4
+                },
+                {
+                  "file": "material-part-5-english-en.html",
+                  "n": 5
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "chapters": 2
     },
     {
       "id": "geography",
@@ -110,7 +371,26 @@
       "order": 10,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "economy",
@@ -121,7 +401,26 @@
       "order": 11,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "science",
@@ -132,7 +431,26 @@
       "order": 12,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     },
     {
       "id": "miscellaneous",
@@ -143,7 +461,26 @@
       "order": 13,
       "count": 0,
       "newest": "",
-      "totalSize": 0
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0
     }
   ],
   "total": 12,

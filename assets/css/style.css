@@ -2699,3 +2699,56 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 }
 .material-tools .btn { min-height: 44px; }
 .material-count { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }
+
+/* ----------------------------------------------- Study: language cards ---
+   A subject opens on its languages and on nothing else — no chapter, no
+   part, no file until a language is chosen — so the choice has to read as
+   the page's only real decision. The flag leads, the native script sits
+   under it, and the card is the full tap target (>= 44px on every screen).
+   Additive: it reuses .card, .badge and .subject-meta and adds its own
+   class names only. */
+.lang-card {
+  display: flex; flex-direction: column; align-items: flex-start;
+  padding: 26px 24px; min-height: 44px;
+}
+.lang-flag { font-size: 2.2rem; line-height: 1.1; }
+.lang-card h3 { margin: 10px 0 2px; font-size: 1.35rem; }
+.lang-native { margin: 0 0 10px; color: var(--muted); font-size: 1.05rem; }
+.lang-card .muted { font-size: 0.88rem; margin-bottom: 0; }
+.lang-card .subject-meta { margin-top: auto; padding-top: 16px; }
+
+/* ----------------------------------------------- Study: part rows --------
+   Parts are a sequence, not a shelf: they are listed in reading order down
+   one column with the part number leading, because on a phone a reader is
+   walking forward one part at a time. Each row is the whole tap target
+   (min-height 44px floor) and never scrolls sideways. */
+.part-wrap { display: block; }
+.part-rows { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.part-rows > li { display: block; }
+.part-row {
+  display: grid; gap: 6px; padding: 15px 16px; min-height: 44px;
+  border: 1px solid var(--border); border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--surface) 75%, transparent);
+  color: var(--text); text-decoration: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+.part-row:hover, .part-row:focus-visible {
+  border-color: var(--brand);
+  box-shadow: 0 4px 16px color-mix(in srgb, var(--brand) 12%, transparent);
+}
+.pr-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.pr-num { font-weight: 800; font-size: 1.02rem; letter-spacing: .01em; }
+.pr-badges { display: inline-flex; gap: 6px; }
+.pr-desc {
+  margin: 0; font-size: 0.9rem; line-height: 1.5; color: var(--muted);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.pr-meta {
+  font-size: 0.74rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--muted);
+}
+@media (max-width: 480px) {
+  .lang-card { padding: 22px 20px; }
+  .part-row { padding: 14px 14px; }
+}
