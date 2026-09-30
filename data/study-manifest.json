@@ -392,6 +392,68 @@
                 ],
                 "subCategories": [
                   {
+                    "id": "ancient-history",
+                    "name": "Ancient History",
+                    "description": "",
+                    "chapters": [],
+                    "stats": {
+                      "files": 0,
+                      "chapters": 0,
+                      "pages": 0,
+                      "totalSize": 0,
+                      "newest": ""
+                    },
+                    "languages": [
+                      {
+                        "id": "pa",
+                        "name": "Punjabi",
+                        "native": "ਪੰਜਾਬੀ",
+                        "flag": "🇵🇺",
+                        "count": 0,
+                        "chapters": []
+                      },
+                      {
+                        "id": "en",
+                        "name": "English",
+                        "native": "English",
+                        "flag": "🇬🇧",
+                        "count": 0,
+                        "chapters": []
+                      }
+                    ]
+                  },
+                  {
+                    "id": "medieval-history",
+                    "name": "Medieval History",
+                    "description": "",
+                    "chapters": [],
+                    "stats": {
+                      "files": 0,
+                      "chapters": 0,
+                      "pages": 0,
+                      "totalSize": 0,
+                      "newest": ""
+                    },
+                    "languages": [
+                      {
+                        "id": "pa",
+                        "name": "Punjabi",
+                        "native": "ਪੰਜਾਬੀ",
+                        "flag": "🇵🇺",
+                        "count": 0,
+                        "chapters": []
+                      },
+                      {
+                        "id": "en",
+                        "name": "English",
+                        "native": "English",
+                        "flag": "🇬🇧",
+                        "count": 0,
+                        "chapters": []
+                      }
+                    ]
+                  },
+                  {
                     "id": "modern-history",
                     "name": "Modern History",
                     "description": "",

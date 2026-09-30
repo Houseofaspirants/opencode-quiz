@@ -183,6 +183,76 @@
       ${action || ""}
     </div>`;
 
+  /* ------------------------------------------------------- shared cards ---
+     The three cards every step of Study is built from. They live up here
+     rather than inside the subject branch so a deeper branch - General
+     Knowledge's Region -> Category -> Sub Category steps - renders exactly
+     the same markup a plain subject does. One card, one place, one look. */
+
+  /** A language card: flag, name, what is inside it, and the two counts. */
+  const languageCard = (l, href, color) => {
+    const chs = l.chapters || [];
+    const ch = chs.length;
+    const n = Number(l.count) || 0;
+    // The counts live in the badges; this line says *what* is here — the
+    // chapters themselves — so the card never prints the same fact twice.
+    const names = chs.slice(0, 3).map((c) => c.name).join(", ");
+    const under = n
+      ? (names ? `${names}${chs.length > 3 ? ` and ${chs.length - 3} more` : ""}` : `${plural(ch, "chapter")}`)
+      : `No chapters in ${l.name} yet.`;
+    return `
+        <a class="card lang-card" style="--sc:${esc(color)}"
+           href="${esc(href)}">
+          <span class="lang-flag" aria-hidden="true">${esc(l.flag || "🌐")}</span>
+          <h3>${esc(l.name)}</h3>
+          ${l.native && l.native !== l.name
+            ? `<p class="lang-native">${esc(l.native)}</p>` : ""}
+          <p class="muted">${esc(under)}</p>
+          <div class="subject-meta">
+            <span class="badge ${ch ? "badge-success" : "badge-muted"}">${plural(ch, "chapter")}</span>
+            <span class="badge ${n ? "badge-success" : "badge-muted"}">${plural(n, "file")}</span>
+          </div>
+        </a>`;
+  };
+
+  const chapterCard = (c, href, langName) => {
+    const parts = (c.parts || []).length;
+    return `
+        <a class="card card-pad study-card" href="${esc(href)}">
+          <span class="eyebrow">${esc(langName)} · Chapter</span>
+          <h3>${esc(c.name)}</h3>
+          <p class="muted">${plural(parts, "part")}, in reading order.</p>
+          <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}</p>
+        </a>`;
+  };
+
+  /** A part, as the content build describes it: the tree supplies the `file`
+      and the card fields all come from the manifest row behind it. */
+  const partRow = (part) => {
+    const it = partItem(part);
+    const n = Number(part.n) || 0;
+    const badges = (Array.isArray(it.badges) ? it.badges : [])
+      .map((b) => BADGE[String(b)]).filter(Boolean)
+      .map(([cls, label]) => `<span class="badge ${cls}">${label}</span>`).join("");
+    const meta = [];
+    if (it.type) meta.push(String(it.type).toUpperCase());
+    if (it.sizeLabel) meta.push(String(it.sizeLabel));
+    if (it.readingMinutes) meta.push(`${it.readingMinutes} min read`);
+    const when = fmtDate(it.updated || it.published);
+    if (when) meta.push(`Updated ${when}`);
+    return `
+        <li>
+          <a class="part-row" href="${esc(it.file)}">
+            <span class="pr-head">
+              <span class="pr-num">Part ${n}</span>
+              ${badges ? `<span class="pr-badges">${badges}</span>` : ""}
+            </span>
+            ${it.description ? `<span class="pr-desc">${esc(it.description)}</span>` : ""}
+            ${meta.length ? `<span class="pr-meta">${esc(meta.join(" · "))}</span>` : ""}
+          </a>
+        </li>`;
+  };
+
   /* ============================================================== SUBJECT == */
   if (subjectId) {
     const shelfSubject = shelf.find((r) => r && r.id === subjectId);

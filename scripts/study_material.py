@@ -172,12 +172,15 @@ def _merge_languages(row_by_folder, folders):
 
 
 def _languages_of_sub(languages, claimed):
-    """The same language rows narrowed to the chapters one sub head claims."""
+    """The same language rows narrowed to the chapters one sub head claims.
+
+    Every language stays on the list even when nothing has been filed under
+    this head yet - that is what a reader choosing Punjabi inside an empty
+    sub category still gets: an honest "no chapters here" rather than a
+    language that silently disappears."""
     out = []
     for lang in languages:
         chapters = [c for c in (lang.get("chapters") or []) if c["id"] in claimed]
-        if not chapters:
-            continue
         out.append({**{k: lang[k] for k in ("id", "name", "native", "flag")},
                     "count": sum(len(c.get("parts") or []) for c in chapters),
                     "chapters": chapters})
@@ -214,21 +217,24 @@ def build_hierarchies(registry, by_subject, row_by_folder):
                 for sub in (cat.get("subCategories") or []):
                     if not isinstance(sub, dict):
                         continue
+                    sub_id = str(sub.get("id") or sub.get("name") or "")
+                    sub_name = str(sub.get("name") or "")
+                    if not sub_id or not sub_name:
+                        continue
                     ids = {str(c) for c in (sub.get("chapters") or [])}
-                    if not ids:
-                        continue                      # a head with nothing in it
                     mine = [r for r in recs
                             if str(r.get("studyChapter") or "") in ids]
-                    if not mine:
-                        continue                      # ids that do not exist
                     real = {str(r.get("studyChapter") or "") for r in mine}
+                    # A head with nothing filed under it still earns its card -
+                    # that is where the next chapter goes - and it says so
+                    # plainly rather than pretending there is something to read.
                     subs_out.append({
-                        "id": str(sub.get("id") or sub.get("name") or ""),
-                        "name": str(sub.get("name") or ""),
+                        "id": sub_id,
+                        "name": sub_name,
                         "description": str(sub.get("description") or ""),
                         "chapters": sorted(real),
                         "stats": _stats(mine),
-                        "languages": _languages_of_sub(languages, ids),
+                        "languages": _languages_of_sub(languages, real),
                     })
                     claimed_ch |= real
                 cats_out.append({
