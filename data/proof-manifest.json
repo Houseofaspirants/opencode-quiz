@@ -13,15 +13,15 @@
       "required": true,
       "analytics": "",
       "doc": {
-        "file": "assets/proof/official-result.png",
-        "name": "official-result.png",
+        "file": "assets/proof/official-result-1.png",
+        "name": "official-result-1.png",
         "kind": "image",
         "type": "PNG",
-        "bytes": 74172,
-        "size": "72.4 KB",
-        "uploaded": "2026-10-04",
-        "title": "Result card — Rank 2",
-        "note": "Release copy, as published by the recruitment board.",
+        "bytes": 664689,
+        "size": "649.1 KB",
+        "uploaded": "",
+        "title": "",
+        "note": "",
         "questions": []
       }
     },
@@ -44,33 +44,12 @@
         "name": "answer-sheet-1.pdf",
         "kind": "pdf",
         "type": "PDF",
-        "bytes": 678350,
-        "size": "662.5 KB",
-        "uploaded": "2026-10-05",
-        "title": "Paper 1 original answer sheet",
-        "note": "Response sheet as released with the result.",
-        "questions": [
-          {
-            "n": 1,
-            "text": "Which article of the Constitution deals with the Right to Constitutional Remedies?",
-            "selected": "B",
-            "correct": "C",
-            "explanation": "Article 32 is the Right to Constitutional Remedies; Article 226 is the High Court's equivalent."
-          },
-          {
-            "n": 2,
-            "text": "The First Five Year Plan of India focused on which sector?",
-            "selected": "A",
-            "correct": "A",
-            "explanation": "Agriculture and irrigation."
-          },
-          {
-            "n": 3,
-            "text": "Who was the first Governor-General of independent India?",
-            "selected": "D",
-            "correct": "B"
-          }
-        ]
+        "bytes": 1798128,
+        "size": "1.7 MB",
+        "uploaded": "",
+        "title": "",
+        "note": "",
+        "questions": []
       }
     },
     {
@@ -79,7 +58,18 @@
       "label": "Paper 2 Answer Sheet",
       "required": true,
       "analytics": "paper-2",
-      "doc": null
+      "doc": {
+        "file": "assets/proof/answer-sheet-2.pdf",
+        "name": "answer-sheet-2.pdf",
+        "kind": "pdf",
+        "type": "PDF",
+        "bytes": 2448147,
+        "size": "2.3 MB",
+        "uploaded": "",
+        "title": "",
+        "note": "",
+        "questions": []
+      }
     },
     {
       "id": "paper-3",
@@ -88,7 +78,26 @@
       "required": true,
       "analytics": "paper-3",
       "doc": null
+    },
+    {
+      "id": "result-official-result",
+      "slot": "result",
+      "label": "Result Card · official-result.png",
+      "required": false,
+      "analytics": "",
+      "doc": {
+        "file": "assets/proof/official-result.png",
+        "name": "official-result.png",
+        "kind": "image",
+        "type": "PNG",
+        "bytes": 664693,
+        "size": "649.1 KB",
+        "uploaded": "",
+        "title": "",
+        "note": "",
+        "questions": []
+      }
     }
   ],
-  "total": 2
+  "total": 4
 }

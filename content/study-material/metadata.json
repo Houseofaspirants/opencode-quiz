@@ -1,5 +1,144 @@
 {
   "$note": "STUDY MATERIAL SUBJECTS (optional). A folder under content/study-material/ is a subject whether or not it is listed here - this file only decorates it. name/icon/color/description/order are all optional; anything missing is derived from the folder name. A subject listed here with no folder is ignored, so nothing here can invent a page.",
+  "hierarchies": {
+    "gk": {
+      "name": "General Knowledge",
+      "short": "GK",
+      "icon": "🏛️",
+      "color": "#6366f1",
+      "order": 6,
+      "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
+      "regions": [
+        {
+          "id": "india-gk",
+          "name": "India GK",
+          "description": "The national paper: history, polity, geography, science and the economy of India.",
+          "categories": [
+            {
+              "id": "history",
+              "name": "History",
+              "folders": [
+                "history"
+              ],
+              "description": "Ancient, medieval and modern India with the freedom movement.",
+              "subCategories": [
+                {
+                  "id": "ancient-history",
+                  "name": "Ancient History"
+                },
+                {
+                  "id": "medieval-history",
+                  "name": "Medieval History"
+                },
+                {
+                  "id": "modern-history",
+                  "name": "Modern History",
+                  "chapters": [
+                    "arrival-of-europeans"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "polity",
+              "name": "Indian Polity",
+              "folders": [
+                "polity"
+              ],
+              "description": "The Constitution, Parliament, judiciary and panchayati raj."
+            },
+            {
+              "id": "geography-environment",
+              "name": "Geography & Environment",
+              "folders": [
+                "geography"
+              ],
+              "description": "Rivers, soils, climate, agriculture and the maps that get asked."
+            },
+            {
+              "id": "science-technology",
+              "name": "Science & Technology",
+              "folders": [
+                "science"
+              ],
+              "description": "Physics, chemistry and biology at the level the papers ask."
+            },
+            {
+              "id": "economy",
+              "name": "Indian Economy",
+              "folders": [
+                "economy"
+              ],
+              "description": "Budget, banking, taxes, schemes and five-year plans."
+            },
+            {
+              "id": "miscellaneous",
+              "name": "Miscellaneous",
+              "folders": [
+                "miscellaneous"
+              ],
+              "description": "Real exam content that belongs to no single subject."
+            }
+          ]
+        },
+        {
+          "id": "punjab-gk",
+          "name": "Punjab GK",
+          "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
+          "categories": [
+            {
+              "id": "history-of-punjab",
+              "name": "History of Punjab",
+              "folders": [
+                "history-of-punjab"
+              ],
+              "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past."
+            },
+            {
+              "id": "culture-of-punjab",
+              "name": "Culture of Punjab",
+              "folders": [
+                "culture-of-punjab"
+              ],
+              "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state."
+            },
+            {
+              "id": "punjab-literature",
+              "name": "Punjab Literature",
+              "folders": [
+                "punjab-literature"
+              ],
+              "description": "Punjabi poets and writers, the scripture's authors and the literary awards."
+            },
+            {
+              "id": "geography-of-punjab",
+              "name": "Geography of Punjab",
+              "folders": [
+                "geography-of-punjab"
+              ],
+              "description": "Rivers, canals, soils, crops, districts and the borders that shape the state."
+            },
+            {
+              "id": "economy-of-punjab",
+              "name": "Economy of Punjab",
+              "folders": [
+                "economy-of-punjab"
+              ],
+              "description": "Agriculture, industry, the power sector, schemes and the state budget."
+            },
+            {
+              "id": "others",
+              "name": "Others",
+              "folders": [
+                "Punjab GK"
+              ],
+              "description": "Punjab GK that belongs to no single head: firsts, awards, days and institutions."
+            }
+          ]
+        }
+      ]
+    }
+  },
   "subjects": {
     "computer": {
       "name": "Computer",
@@ -91,6 +230,41 @@
       "color": "#64748b",
       "order": 13,
       "description": "Real exam content that belongs to no single subject."
+    },
+    "history-of-punjab": {
+      "name": "History of Punjab",
+      "icon": "📜",
+      "color": "#f59e0b",
+      "order": 14,
+      "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past."
+    },
+    "culture-of-punjab": {
+      "name": "Culture of Punjab",
+      "icon": "🎭",
+      "color": "#ec4899",
+      "order": 15,
+      "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state."
+    },
+    "punjab-literature": {
+      "name": "Punjab Literature",
+      "icon": "📖",
+      "color": "#8b5cf6",
+      "order": 16,
+      "description": "Punjabi poets and writers, the scripture's authors and the literary awards."
+    },
+    "geography-of-punjab": {
+      "name": "Geography of Punjab",
+      "icon": "🗺️",
+      "color": "#10b981",
+      "order": 17,
+      "description": "Rivers, canals, soils, crops, districts and the borders that shape the state."
+    },
+    "economy-of-punjab": {
+      "name": "Economy of Punjab",
+      "icon": "💰",
+      "color": "#0ea5e9",
+      "order": 18,
+      "description": "Agriculture, industry, the power sector, schemes and the state budget."
     }
   }
 }

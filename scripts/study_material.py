@@ -66,6 +66,226 @@ def decorate(folder, registry):
     }
 
 
+# ---------------------------------------------------------------- hierarchy -
+# One folder can hold a lot, and General Knowledge holds the most. A
+# *hierarchy* is an optional grouping declared in
+# content/study-material/metadata.json that folds existing subject folders
+# under one card and gives the reader two more steps before the language
+# step - Region, then Category, then (only when the category declares one)
+# Sub Category.
+#
+# Three rules keep it as honest as the rest of the shelf:
+#   1. a declared node may only name folders that exist - a folder nobody
+#      listed is still a subject, and a listed folder with no directory is
+#      dropped rather than rendered as a card that leads nowhere;
+#   2. every number on every card is measured off the records behind those
+#      folders, so nothing here can claim a chapter nobody published;
+#   3. with the block absent, nothing at all changes: every folder keeps
+#      rendering exactly the subject card it renders today.
+def _hierarchies(registry):
+    """{"gk": {name, icon, color, order, description, regions: [...]}}."""
+    raw = (registry or {}).get("hierarchies")
+    if not isinstance(raw, dict):
+        return {}
+    return {k: v for k, v in raw.items() if isinstance(v, dict)}
+
+
+def _pages_of(rec):
+    """Page count of one file, or 0 when it has none.
+
+    `pdfPages` is the count read out of the PDF itself; for a PDF the build
+    also stamps reading minutes as one page a minute, so that is the fallback.
+    An .md or .json has no pages and honestly reports none."""
+    try:
+        n = int(rec.get("pdfPages") or 0)
+    except (TypeError, ValueError):
+        n = 0
+    if n > 0:
+        return n
+    if str(rec.get("type") or "").lower() == "pdf":
+        try:
+            return max(0, int(rec.get("readingMinutes") or 0))
+        except (TypeError, ValueError):
+            return 0
+    return 0
+
+
+def _stats(recs):
+    """Measured facts for one node: files, distinct chapters, pages, newest."""
+    chapters = sorted({str(r.get("studyChapter") or "").strip()
+                       for r in recs if str(r.get("studyChapter") or "").strip()})
+    return {
+        "files": len(recs),
+        "chapters": len(chapters),
+        "pages": sum(_pages_of(r) for r in recs),
+        "totalSize": sum(int(r.get("size") or 0) for r in recs),
+        "newest": max((str(r.get("updated") or r.get("published") or "")[:10]
+                       for r in recs), default=""),
+    }
+
+
+def _records_for(folders, by_subject):
+    """Every record filed under any of `folders`, in folder order."""
+    out = []
+    for fid in folders:
+        out.extend(by_subject.get(fid, []) or [])
+    return out
+
+
+def _merge_languages(row_by_folder, folders):
+    """Language rows from several folders, merged into one list.
+
+    A chapter written in two languages is one chapter in two rows; a chapter
+    that somehow lands under two folders is counted once."""
+    merged, seen = [], {}
+    for fid in folders:
+        row = row_by_folder.get(fid)
+        if not row:
+            continue
+        for lang in (row.get("languages") or []):
+            key = str(lang.get("id") or "")
+            node = seen.get(key)
+            if node is None:
+                node = {"id": key, "name": str(lang.get("name") or ""),
+                        "native": str(lang.get("native") or ""),
+                        "flag": str(lang.get("flag") or ""),
+                        "count": 0, "chapters": []}
+                seen[key] = node
+                merged.append(node)
+            node["count"] += int(lang.get("count") or 0)
+            have = {c["id"] for c in node["chapters"]}
+            for ch in (lang.get("chapters") or []):
+                if ch["id"] in have:
+                    continue
+                node["chapters"].append(ch)
+                have.add(ch["id"])
+    for node in merged:
+        node["chapters"].sort(key=lambda c: (str(c["name"]).lower(), c["id"]))
+    # The site's own languages are always on offer - that is what a category
+    # with no files of its own still offers its reader - and any other
+    # language earns its place by having something in it. This keeps a
+    # folder-name artefact out of a category card without ever removing a
+    # language somebody actually published in.
+    site = set(_bc().STUDY_LANG)
+    merged = [n for n in merged if n["count"] > 0 or n["id"] in site]
+    merged.sort(key=lambda n: (str(n["name"]).lower(), n["id"]))
+    return merged
+
+
+def _languages_of_sub(languages, claimed):
+    """The same language rows narrowed to the chapters one sub head claims."""
+    out = []
+    for lang in languages:
+        chapters = [c for c in (lang.get("chapters") or []) if c["id"] in claimed]
+        if not chapters:
+            continue
+        out.append({**{k: lang[k] for k in ("id", "name", "native", "flag")},
+                    "count": sum(len(c.get("parts") or []) for c in chapters),
+                    "chapters": chapters})
+    return out
+
+
+def build_hierarchies(registry, by_subject, row_by_folder):
+    """-> (hierarchy subject rows, folder ids they claim).
+
+    The rows look like any other subject row - id, name, icon, colour, count -
+    so the Study root grid, the header menu and `study.html?subject=<id>` all
+    keep working without knowing a hierarchy exists. The extra `hierarchy`
+    key carries the two steps underneath it and is only read by a renderer
+    that recognises it."""
+    claimed_all, rows = set(), []
+    for hid, cfg in _hierarchies(registry).items():
+        regions_out, region_folders = [], []
+        for reg in (cfg.get("regions") or []):
+            if not isinstance(reg, dict):
+                continue
+            cats_out, cat_folders = [], []
+            for cat in (reg.get("categories") or []):
+                if not isinstance(cat, dict):
+                    continue
+                # A category reads from folders that exist. One that names
+                # nothing real is dropped rather than shipped as a dead card.
+                folders = [str(f) for f in (cat.get("folders") or [])
+                           if str(f) in row_by_folder]
+                if not folders:
+                    continue
+                recs = _records_for(folders, by_subject)
+                languages = _merge_languages(row_by_folder, folders)
+                subs_out, claimed_ch = [], set()
+                for sub in (cat.get("subCategories") or []):
+                    if not isinstance(sub, dict):
+                        continue
+                    ids = {str(c) for c in (sub.get("chapters") or [])}
+                    if not ids:
+                        continue                      # a head with nothing in it
+                    mine = [r for r in recs
+                            if str(r.get("studyChapter") or "") in ids]
+                    if not mine:
+                        continue                      # ids that do not exist
+                    real = {str(r.get("studyChapter") or "") for r in mine}
+                    subs_out.append({
+                        "id": str(sub.get("id") or sub.get("name") or ""),
+                        "name": str(sub.get("name") or ""),
+                        "description": str(sub.get("description") or ""),
+                        "chapters": sorted(real),
+                        "stats": _stats(mine),
+                        "languages": _languages_of_sub(languages, ids),
+                    })
+                    claimed_ch |= real
+                cats_out.append({
+                    "id": str(cat.get("id") or cat.get("name") or ""),
+                    "name": str(cat.get("name") or ""),
+                    "description": str(cat.get("description") or ""),
+                    "folders": folders,
+                    "stats": _stats(recs),
+                    "languages": languages,
+                    "subCategories": subs_out,
+                    "claimedChapters": sorted(claimed_ch),
+                })
+                cat_folders += folders
+            if not cats_out:
+                continue
+            reg_recs = _records_for(cat_folders, by_subject)
+            regions_out.append({
+                "id": str(reg.get("id") or reg.get("name") or ""),
+                "name": str(reg.get("name") or ""),
+                "description": str(reg.get("description") or ""),
+                "stats": dict(_stats(reg_recs), categories=len(cats_out)),
+                "categories": cats_out,
+            })
+            region_folders += cat_folders
+        if not regions_out:
+            continue
+
+        mine = _records_for(region_folders, by_subject)
+        stats = _stats(mine)
+        stats["categories"] = sum(len(r["categories"]) for r in regions_out)
+        stats["regions"] = len(regions_out)
+        claimed_all |= set(region_folders)
+        rows.append({
+            "id": hid,
+            "name": str(cfg.get("name") or hid),
+            "icon": str(cfg.get("icon") or DEFAULT_ICON),
+            "color": str(cfg.get("color") or DEFAULT_COLOR),
+            "description": str(cfg.get("description") or ""),
+            "order": int(cfg["order"]) if isinstance(cfg.get("order"),
+                                                      (int, float)) else 100,
+            "count": stats["files"],
+            "newest": stats["newest"],
+            "totalSize": stats["totalSize"],
+            "chapters": stats["chapters"],
+            "languages": [],
+            "hierarchy": {
+                "id": hid,
+                "name": str(cfg.get("name") or hid),
+                "description": str(cfg.get("description") or ""),
+                "stats": stats,
+                "regions": regions_out,
+            },
+        })
+    return rows, claimed_all
+
+
 def _bc():
     """The Study helpers build_content.py already owns.
 
@@ -183,6 +403,18 @@ def build(records, registry=None):
         row["languages"] = language_rows(folder, mine, universe)
         row["chapters"] = sum(len(l["chapters"]) for l in row["languages"])
         rows.append(row)
+
+    # A hierarchy folds folders into one card. The folders keep their own rows
+    # - `study.html?subject=history` is linked from every History material
+    # page and must keep resolving - they are simply marked `hidden` so the
+    # shelf grid and the header menu list the group instead of its parts.
+    by_id = {r["id"]: r for r in rows}
+    hier_rows, claimed = build_hierarchies(registry, by_subject, by_id)
+    for r in rows:
+        if r["id"] in claimed:
+            r["hidden"] = True
+    rows.extend(hier_rows)
+
     rows.sort(key=lambda r: (r["order"], r["name"].lower(), r["id"]))
 
     manifest = {

@@ -266,6 +266,736 @@
       "chapters": 0
     },
     {
+      "id": "gk",
+      "name": "General Knowledge",
+      "icon": "🏛️",
+      "color": "#6366f1",
+      "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
+      "order": 6,
+      "count": 11,
+      "newest": "2026-09-30",
+      "totalSize": 19647585,
+      "chapters": 2,
+      "languages": [],
+      "hierarchy": {
+        "id": "gk",
+        "name": "General Knowledge",
+        "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
+        "stats": {
+          "files": 11,
+          "chapters": 2,
+          "pages": 91,
+          "totalSize": 19647585,
+          "newest": "2026-09-30",
+          "categories": 12,
+          "regions": 2
+        },
+        "regions": [
+          {
+            "id": "india-gk",
+            "name": "India GK",
+            "description": "The national paper: history, polity, geography, science and the economy of India.",
+            "stats": {
+              "files": 11,
+              "chapters": 2,
+              "pages": 91,
+              "totalSize": 19647585,
+              "newest": "2026-09-30",
+              "categories": 6
+            },
+            "categories": [
+              {
+                "id": "history",
+                "name": "History",
+                "description": "Ancient, medieval and modern India with the freedom movement.",
+                "folders": [
+                  "history"
+                ],
+                "stats": {
+                  "files": 10,
+                  "chapters": 1,
+                  "pages": 79,
+                  "totalSize": 17113048,
+                  "newest": "2026-09-30"
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 5,
+                    "chapters": [
+                      {
+                        "id": "arrival-of-europeans",
+                        "name": "Arrival of Europeans",
+                        "parts": [
+                          {
+                            "file": "material-part-1-english-en.html",
+                            "n": 1
+                          },
+                          {
+                            "file": "material-part-2-english-en.html",
+                            "n": 2
+                          },
+                          {
+                            "file": "material-part-3-english.html",
+                            "n": 3
+                          },
+                          {
+                            "file": "material-part-4-english-en.html",
+                            "n": 4
+                          },
+                          {
+                            "file": "material-part-5-english-en.html",
+                            "n": 5
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 5,
+                    "chapters": [
+                      {
+                        "id": "arrival-of-europeans",
+                        "name": "Arrival of Europeans",
+                        "parts": [
+                          {
+                            "file": "material-part-1-punjabi-pa.html",
+                            "n": 1
+                          },
+                          {
+                            "file": "material-part-2-punjabi-pa.html",
+                            "n": 2
+                          },
+                          {
+                            "file": "material-part-3-punjabi.html",
+                            "n": 3
+                          },
+                          {
+                            "file": "material-part-4-punjabi.html",
+                            "n": 4
+                          },
+                          {
+                            "file": "material-part-5-punjabi-pa.html",
+                            "n": 5
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "subCategories": [
+                  {
+                    "id": "modern-history",
+                    "name": "Modern History",
+                    "description": "",
+                    "chapters": [
+                      "arrival-of-europeans"
+                    ],
+                    "stats": {
+                      "files": 10,
+                      "chapters": 1,
+                      "pages": 79,
+                      "totalSize": 17113048,
+                      "newest": "2026-09-30"
+                    },
+                    "languages": [
+                      {
+                        "id": "en",
+                        "name": "English",
+                        "native": "English",
+                        "flag": "🇬🇧",
+                        "count": 5,
+                        "chapters": [
+                          {
+                            "id": "arrival-of-europeans",
+                            "name": "Arrival of Europeans",
+                            "parts": [
+                              {
+                                "file": "material-part-1-english-en.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-part-2-english-en.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-part-3-english.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-part-4-english-en.html",
+                                "n": 4
+                              },
+                              {
+                                "file": "material-part-5-english-en.html",
+                                "n": 5
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": "pa",
+                        "name": "Punjabi",
+                        "native": "ਪੰਜਾਬੀ",
+                        "flag": "🇵🇺",
+                        "count": 5,
+                        "chapters": [
+                          {
+                            "id": "arrival-of-europeans",
+                            "name": "Arrival of Europeans",
+                            "parts": [
+                              {
+                                "file": "material-part-1-punjabi-pa.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-part-2-punjabi-pa.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-part-3-punjabi.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-part-4-punjabi.html",
+                                "n": 4
+                              },
+                              {
+                                "file": "material-part-5-punjabi-pa.html",
+                                "n": 5
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "claimedChapters": [
+                  "arrival-of-europeans"
+                ]
+              },
+              {
+                "id": "polity",
+                "name": "Indian Polity",
+                "description": "The Constitution, Parliament, judiciary and panchayati raj.",
+                "folders": [
+                  "polity"
+                ],
+                "stats": {
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 12,
+                  "totalSize": 2534537,
+                  "newest": "2026-09-30"
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "articles",
+                        "name": "Articles",
+                        "parts": [
+                          {
+                            "file": "material-articles.html",
+                            "n": 1
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "geography-environment",
+                "name": "Geography & Environment",
+                "description": "Rivers, soils, climate, agriculture and the maps that get asked.",
+                "folders": [
+                  "geography"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "science-technology",
+                "name": "Science & Technology",
+                "description": "Physics, chemistry and biology at the level the papers ask.",
+                "folders": [
+                  "science"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "economy",
+                "name": "Indian Economy",
+                "description": "Budget, banking, taxes, schemes and five-year plans.",
+                "folders": [
+                  "economy"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "miscellaneous",
+                "name": "Miscellaneous",
+                "description": "Real exam content that belongs to no single subject.",
+                "folders": [
+                  "miscellaneous"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              }
+            ]
+          },
+          {
+            "id": "punjab-gk",
+            "name": "Punjab GK",
+            "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
+            "stats": {
+              "files": 0,
+              "chapters": 0,
+              "pages": 0,
+              "totalSize": 0,
+              "newest": "",
+              "categories": 6
+            },
+            "categories": [
+              {
+                "id": "history-of-punjab",
+                "name": "History of Punjab",
+                "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past.",
+                "folders": [
+                  "history-of-punjab"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "culture-of-punjab",
+                "name": "Culture of Punjab",
+                "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state.",
+                "folders": [
+                  "culture-of-punjab"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "punjab-literature",
+                "name": "Punjab Literature",
+                "description": "Punjabi poets and writers, the scripture's authors and the literary awards.",
+                "folders": [
+                  "punjab-literature"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "geography-of-punjab",
+                "name": "Geography of Punjab",
+                "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
+                "folders": [
+                  "geography-of-punjab"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "economy-of-punjab",
+                "name": "Economy of Punjab",
+                "description": "Agriculture, industry, the power sector, schemes and the state budget.",
+                "folders": [
+                  "economy-of-punjab"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "others",
+                "name": "Others",
+                "description": "Punjab GK that belongs to no single head: firsts, awards, days and institutions.",
+                "folders": [
+                  "Punjab GK"
+                ],
+                "stats": {
+                  "files": 0,
+                  "chapters": 0,
+                  "pages": 0,
+                  "totalSize": 0,
+                  "newest": ""
+                },
+                "languages": [
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "punjabgk",
+                    "name": "Punjab GK",
+                    "native": "",
+                    "flag": "",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
       "id": "current-affairs",
       "name": "Current Affairs",
       "icon": "📰",
@@ -350,7 +1080,8 @@
           "chapters": []
         }
       ],
-      "chapters": 1
+      "chapters": 1,
+      "hidden": true
     },
     {
       "id": "history",
@@ -442,7 +1173,8 @@
           "chapters": []
         }
       ],
-      "chapters": 2
+      "chapters": 2,
+      "hidden": true
     },
     {
       "id": "geography",
@@ -480,7 +1212,8 @@
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 0,
+      "hidden": true
     },
     {
       "id": "economy",
@@ -518,7 +1251,8 @@
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 0,
+      "hidden": true
     },
     {
       "id": "science",
@@ -556,7 +1290,8 @@
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 0,
+      "hidden": true
     },
     {
       "id": "miscellaneous",
@@ -594,7 +1329,203 @@
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 0,
+      "hidden": true
+    },
+    {
+      "id": "history-of-punjab",
+      "name": "History of Punjab",
+      "icon": "📜",
+      "color": "#f59e0b",
+      "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past.",
+      "order": 14,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0,
+      "hidden": true
+    },
+    {
+      "id": "culture-of-punjab",
+      "name": "Culture of Punjab",
+      "icon": "🎭",
+      "color": "#ec4899",
+      "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state.",
+      "order": 15,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0,
+      "hidden": true
+    },
+    {
+      "id": "punjab-literature",
+      "name": "Punjab Literature",
+      "icon": "📖",
+      "color": "#8b5cf6",
+      "description": "Punjabi poets and writers, the scripture's authors and the literary awards.",
+      "order": 16,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0,
+      "hidden": true
+    },
+    {
+      "id": "geography-of-punjab",
+      "name": "Geography of Punjab",
+      "icon": "🗺️",
+      "color": "#10b981",
+      "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
+      "order": 17,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0,
+      "hidden": true
+    },
+    {
+      "id": "economy-of-punjab",
+      "name": "Economy of Punjab",
+      "icon": "💰",
+      "color": "#0ea5e9",
+      "description": "Agriculture, industry, the power sector, schemes and the state budget.",
+      "order": 18,
+      "count": 0,
+      "newest": "",
+      "totalSize": 0,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "punjabgk",
+          "name": "Punjab GK",
+          "native": "",
+          "flag": "",
+          "count": 0,
+          "chapters": []
+        }
+      ],
+      "chapters": 0,
+      "hidden": true
     },
     {
       "id": "Punjab GK",
@@ -632,9 +1563,10 @@
           "chapters": []
         }
       ],
-      "chapters": 0
+      "chapters": 0,
+      "hidden": true
     }
   ],
-  "total": 16,
+  "total": 27,
   "generatedBy": "scripts/study_material.py"
 }
