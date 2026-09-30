@@ -901,6 +901,26 @@ if (site.url) {
     { loc: `${base}/terms`, p: "0.4" },
     { loc: `${base}/editorial-policy`, p: "0.4" },
   ];
+  // Hand-written pages - config-driven from data/pages.json, so a page added
+  // by hand enters the sitemap without this builder (or its Python twin) being
+  // edited. Same contract as the readers below: only ship a URL when the file
+  // really exists on disk. Emitted before the registries so both builders list
+  // pages in the same order.
+  try {
+    const pagesPath = path.join(DATA_DIR, "pages.json");
+    if (fs.existsSync(pagesPath)) {
+      for (const p of JSON.parse(fs.readFileSync(pagesPath, "utf8")).pages || []) {
+        const f = String(p.file || "");
+        if (f.endsWith(".html") && fs.existsSync(path.join(ROOT, f))) {
+          urls.push({ loc: `${base}/${f.slice(0, -5)}`, p: String(p.priority || "0.7") });
+        } else {
+          warn(`pages.json: file missing for ${f || p.title || "?"}`);
+        }
+      }
+    }
+  } catch (e) {
+    warn(`pages.json unreadable: ${e.message}`);
+  }
   // Study guides — config-driven from data/articles.json (same registry the
   // /articles hub, Related Articles modules and Article schema read).
   try {

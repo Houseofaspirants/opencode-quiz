@@ -967,6 +967,23 @@ if site.get("url"):
         {"loc": f"{base}/terms", "p": "0.4"},
         {"loc": f"{base}/editorial-policy", "p": "0.4"},
     ]
+    # Hand-written pages - config-driven from data/pages.json, so a page added
+    # by hand enters the sitemap without this builder (or its Node twin) being
+    # edited. Same contract as the manifest readers below: only ship a URL when
+    # the file really exists on disk. Emitted before the registries so both
+    # builders list pages in the same order.
+    pages_path = os.path.join(DATA_DIR, "pages.json")
+    if os.path.exists(pages_path):
+        try:
+            for p in read_json(pages_path).get("pages", []):
+                f = str(p.get("file", ""))
+                if f.endswith(".html") and os.path.exists(os.path.join(ROOT, f)):
+                    urls.append({"loc": f"{base}/{f[:-5]}",
+                                 "p": str(p.get("priority", "0.7"))})
+                else:
+                    warn(f"pages.json: file missing for {f or p.get('title', '?')}")
+        except Exception as e:
+            warn(f"pages.json unreadable: {e}")
     # Study guides — config-driven from data/articles.json (same registry the
     # /articles hub, Related Articles modules and Article schema read).
     guides_path = os.path.join(DATA_DIR, "articles.json")
