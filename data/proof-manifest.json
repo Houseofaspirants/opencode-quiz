@@ -31,10 +31,9 @@
       "label": "Merit List",
       "required": true,
       "analytics": "",
-      "doc": {
-        "file": "assets/proof/merit-list.pdf",
-        "name": "merit-list.pdf",
-       }
+      "doc": null
+       
+       
     },
     {
       "id": "paper-1",
@@ -80,10 +79,9 @@
       "label": "Paper 3 Answer Sheet",
       "required": true,
       "analytics": "paper-3",
-      "doc": {
-        "file": "assets/proof/answer-sheet-3.pdf",
-        "name": "answer-sheet-3.pdf",
-      }
+      "doc": null
+        
+      
     },
     {
       "id": "result-official-result",
@@ -105,5 +103,5 @@
       }
     }
   ],
-  "total": 6
+  "total": 4
 }
