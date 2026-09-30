@@ -882,8 +882,8 @@ HUBS = {
         ),
         "empty_h3": "No PDF published yet",
         "empty_p": ("PDF sheets are being typeset from the notes and question "
-                    "sets. Until they land, every quiz works offline once the app "
-                    "is installed."),
+                    "sets. Until they land, every quiz works offline once you "
+                    "have visited the site."),
         "empty_cta": ("quiz.html?mode=daily", "Open the daily quiz"),
         "schema_hub": "Free PDFs",
     },
