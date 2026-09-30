@@ -320,49 +320,6 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 5,
-                    "chapters": [
-                      {
-                        "id": "arrival-of-europeans",
-                        "name": "Arrival of Europeans",
-                        "parts": [
-                          {
-                            "file": "material-part-1-english-en.html",
-                            "n": 1
-                          },
-                          {
-                            "file": "material-part-2-english-en.html",
-                            "n": 2
-                          },
-                          {
-                            "file": "material-part-3-english.html",
-                            "n": 3
-                          },
-                          {
-                            "file": "material-part-4-english-en.html",
-                            "n": 4
-                          },
-                          {
-                            "file": "material-part-5-english-en.html",
-                            "n": 5
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
@@ -396,6 +353,41 @@
                         ]
                       }
                     ]
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 5,
+                    "chapters": [
+                      {
+                        "id": "arrival-of-europeans",
+                        "name": "Arrival of Europeans",
+                        "parts": [
+                          {
+                            "file": "material-part-1-english-en.html",
+                            "n": 1
+                          },
+                          {
+                            "file": "material-part-2-english-en.html",
+                            "n": 2
+                          },
+                          {
+                            "file": "material-part-3-english.html",
+                            "n": 3
+                          },
+                          {
+                            "file": "material-part-4-english-en.html",
+                            "n": 4
+                          },
+                          {
+                            "file": "material-part-5-english-en.html",
+                            "n": 5
+                          }
+                        ]
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [
@@ -414,41 +406,6 @@
                       "newest": "2026-09-30"
                     },
                     "languages": [
-                      {
-                        "id": "en",
-                        "name": "English",
-                        "native": "English",
-                        "flag": "🇬🇧",
-                        "count": 5,
-                        "chapters": [
-                          {
-                            "id": "arrival-of-europeans",
-                            "name": "Arrival of Europeans",
-                            "parts": [
-                              {
-                                "file": "material-part-1-english-en.html",
-                                "n": 1
-                              },
-                              {
-                                "file": "material-part-2-english-en.html",
-                                "n": 2
-                              },
-                              {
-                                "file": "material-part-3-english.html",
-                                "n": 3
-                              },
-                              {
-                                "file": "material-part-4-english-en.html",
-                                "n": 4
-                              },
-                              {
-                                "file": "material-part-5-english-en.html",
-                                "n": 5
-                              }
-                            ]
-                          }
-                        ]
-                      },
                       {
                         "id": "pa",
                         "name": "Punjabi",
@@ -483,6 +440,41 @@
                             ]
                           }
                         ]
+                      },
+                      {
+                        "id": "en",
+                        "name": "English",
+                        "native": "English",
+                        "flag": "🇬🇧",
+                        "count": 5,
+                        "chapters": [
+                          {
+                            "id": "arrival-of-europeans",
+                            "name": "Arrival of Europeans",
+                            "parts": [
+                              {
+                                "file": "material-part-1-english-en.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-part-2-english-en.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-part-3-english.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-part-4-english-en.html",
+                                "n": 4
+                              },
+                              {
+                                "file": "material-part-5-english-en.html",
+                                "n": 5
+                              }
+                            ]
+                          }
+                        ]
                       }
                     ]
                   }
@@ -507,6 +499,14 @@
                 },
                 "languages": [
                   {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
                     "id": "en",
                     "name": "English",
                     "native": "English",
@@ -524,22 +524,6 @@
                         ]
                       }
                     ]
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "pa",
-                    "name": "Punjabi",
-                    "native": "ਪੰਜਾਬੀ",
-                    "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
                   }
                 ],
                 "subCategories": [],
@@ -561,26 +545,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -604,26 +580,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -647,26 +615,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -690,26 +650,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -748,26 +700,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -791,26 +735,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -834,26 +770,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -877,26 +805,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -920,26 +840,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -963,26 +875,18 @@
                 },
                 "languages": [
                   {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "punjabgk",
-                    "name": "Punjab GK",
-                    "native": "",
-                    "flag": "",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
                     "id": "pa",
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
                   }
@@ -1567,6 +1471,6 @@
       "hidden": true
     }
   ],
-  "total": 27,
+  "total": 16,
   "generatedBy": "scripts/study_material.py"
 }
