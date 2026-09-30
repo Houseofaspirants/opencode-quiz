@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 65,
-  "edges": 166,
+  "nodes": 103,
+  "edges": 371,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -38,6 +38,30 @@
    "exams": [],
    "tags": [],
    "hub": "announcements.html"
+  },
+  {
+   "id": "archive-category-arrival-of-europeans.html",
+   "url": "/archive-category-arrival-of-europeans.html",
+   "type": "archive",
+   "template": "",
+   "title": "Arrival Of Europeans",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-fundamentals-of-computer.html",
+   "url": "/archive-category-fundamentals-of-computer.html",
+   "type": "archive",
+   "template": "",
+   "title": "Fundamentals Of Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
   },
   {
    "id": "archives.html",
@@ -98,6 +122,150 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "url": "/content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "url": "/content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
+   "url": "/content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
+   "url": "/content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
+   "url": "/content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
+   "url": "/content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
+   "url": "/content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
+   "url": "/content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
+   "url": "/content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
+   "url": "/content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
+   "url": "/content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
+   "url": "/content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "current-affairs-preparation.html",
@@ -520,6 +688,306 @@
    "hub": "magazine.html"
   },
   {
+   "id": "material-fundamentals-of-computer",
+   "url": "/material-fundamentals-of-computer",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamentals-of-computer-punjabi",
+   "url": "/material-fundamentals-of-computer-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamentals-of-computer-punjabi.html",
+   "url": "/material-fundamentals-of-computer-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Fundamentals of Computer Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-fundamentals-of-computer.html",
+   "url": "/material-fundamentals-of-computer.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Fundamentals of Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-1-english-en",
+   "url": "/material-part-1-english-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-1-english-en.html",
+   "url": "/material-part-1-english-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 1 English En",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-1-punjabi-pa",
+   "url": "/material-part-1-punjabi-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-1-punjabi-pa.html",
+   "url": "/material-part-1-punjabi-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 1 Punjabi Pa",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-2-english-en",
+   "url": "/material-part-2-english-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-2-english-en.html",
+   "url": "/material-part-2-english-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 2 English En",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-2-punjabi-pa",
+   "url": "/material-part-2-punjabi-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-2-punjabi-pa.html",
+   "url": "/material-part-2-punjabi-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 2 Punjabi Pa",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-3-english",
+   "url": "/material-part-3-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-3-english.html",
+   "url": "/material-part-3-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 3 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-3-punjabi",
+   "url": "/material-part-3-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-3-punjabi.html",
+   "url": "/material-part-3-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 3 Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-4-english-en",
+   "url": "/material-part-4-english-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-4-english-en.html",
+   "url": "/material-part-4-english-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 4 English En",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-4-punjabi",
+   "url": "/material-part-4-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-4-punjabi.html",
+   "url": "/material-part-4-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 4 Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-5-english-en",
+   "url": "/material-part-5-english-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-5-english-en.html",
+   "url": "/material-part-5-english-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 5 English En",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-5-punjabi-pa",
+   "url": "/material-part-5-punjabi-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-5-punjabi-pa.html",
+   "url": "/material-part-5-punjabi-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 5 Punjabi Pa",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "mock.html",
+   "url": "/mock.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "news.html",
    "url": "/news.html",
    "type": "hub",
@@ -748,18 +1216,6 @@
    "hub": "study-notes.html"
   },
   {
-   "id": "study.html",
-   "url": "/study.html",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "subject-guides.html",
    "url": "/subject-guides.html",
    "type": "hub",
@@ -852,20 +1308,134 @@
    "weight": 1
   },
   {
-   "from": "archives.html",
+   "from": "archive-category-arrival-of-europeans.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archives.html",
-   "to": "articles.html",
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-arrival-of-europeans.html",
+   "to": "material-part-5-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-fundamentals-of-computer.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "current-affairs.html",
+   "to": "archive-category-arrival-of-europeans.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-category-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -877,19 +1447,73 @@
   },
   {
    "from": "archives.html",
-   "to": "punjab-exams.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "quiz.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "study-notes.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-5-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1209,6 +1833,948 @@
    "from": "magazine.html",
    "to": "subject.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-part-1-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-part-1-punjabi-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-2-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-2-punjabi-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-3-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-3-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-4-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-4-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-5-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-5-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-5-punjabi-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -1615,7 +3181,73 @@
   },
   {
    "from": "study-material.html",
-   "to": "archives.html",
+   "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -1627,19 +3259,73 @@
   },
   {
    "from": "study-material.html",
-   "to": "punjab-exams.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "quiz.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "study.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-4-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-5-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },

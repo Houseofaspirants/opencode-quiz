@@ -9,9 +9,9 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0
+      "count": 2,
+      "newest": "2026-09-30",
+      "totalSize": 4503166
     },
     {
       "id": "english",
@@ -97,9 +97,9 @@
       "color": "#f59e0b",
       "description": "Ancient, medieval and modern India with the freedom movement.",
       "order": 9,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0
+      "count": 10,
+      "newest": "2026-09-30",
+      "totalSize": 17113048
     },
     {
       "id": "geography",
@@ -146,6 +146,6 @@
       "totalSize": 0
     }
   ],
-  "total": 0,
+  "total": 12,
   "generatedBy": "scripts/study_material.py"
 }

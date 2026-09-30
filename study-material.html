@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://houseofaspirants.in/study-material#webpage",
       "name": "Free Study Material for Punjab Competitive Exams",
       "url": "https://houseofaspirants.in/study-material",
@@ -49,7 +49,90 @@
       },
       "breadcrumb": {
         "@id": "https://houseofaspirants.in/study-material#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://houseofaspirants.in/study-material#list"
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://houseofaspirants.in/study-material#list",
+      "name": "House of Aspirants Study Material",
+      "numberOfItems": 12,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Fundamentals of Computer",
+          "item": "https://houseofaspirants.in/material-fundamentals-of-computer"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fundamentals of Computer Punjabi",
+          "item": "https://houseofaspirants.in/material-fundamentals-of-computer-punjabi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Part 1 English En",
+          "item": "https://houseofaspirants.in/material-part-1-english-en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Part 1 Punjabi Pa",
+          "item": "https://houseofaspirants.in/material-part-1-punjabi-pa"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Part 2 English En",
+          "item": "https://houseofaspirants.in/material-part-2-english-en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Part 2 Punjabi Pa",
+          "item": "https://houseofaspirants.in/material-part-2-punjabi-pa"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Part 3 English",
+          "item": "https://houseofaspirants.in/material-part-3-english"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Part 3 Punjabi",
+          "item": "https://houseofaspirants.in/material-part-3-punjabi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Part 4 English En",
+          "item": "https://houseofaspirants.in/material-part-4-english-en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "Part 4 Punjabi",
+          "item": "https://houseofaspirants.in/material-part-4-punjabi"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "Part 5 English En",
+          "item": "https://houseofaspirants.in/material-part-5-english-en"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Part 5 Punjabi Pa",
+          "item": "https://houseofaspirants.in/material-part-5-punjabi-pa"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -92,27 +175,12 @@
     </section>
 <section class="section">
       <div class="container"><div class="section-head reveal"><div>
-            <span class="eyebrow">Publishing pipeline</span>
-            <h2>No study material published yet</h2>
+            <span class="eyebrow">Every format, one list</span>
+            <h2>Study Material</h2>
+            <p>Every file dropped into the Study Material folders lands here: the subject it belongs to, the language it is written in, when it was last updated and how long it takes to read - all derived from the file itself, none of it typed in by hand.</p>
           </div></div>
-          <div class="empty-state">
-            <span class="es-icon" aria-hidden="true">✍️</span>
-            <h3>No study material published yet</h3>
-            <p>Files dropped into content/study-material/ appear on this page with their subject, language and file size already filled in. Until the first set lands, the study notes and the practice system are ready to use.</p>
-            <p class="btn-row" style="justify-content:center">
-              <a class="btn btn-soft" href="study.html">Open the Study system</a>
-            </p>
-          </div></div>
-    </section>
-    <section class="section" style="padding-top:0">
-      <div class="container">
-        <div class="section-head reveal"><div>
-          <span class="eyebrow">Keep going</span>
-          <h2>Explore the library</h2>
-          <p>The parts of House of Aspirants that connect to this page.</p>
-        </div></div>
-        <div class="grid grid-3"><a class="card card-pad reveal" href="punjab-exams.html"><span class="eyebrow">Exam hub</span><h3>Every Punjab exam guide in one place</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="quiz.html?mode=daily"><span class="eyebrow">Practice</span><h3>Today&#x27;s daily challenge</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="archives.html"><span class="eyebrow">Archive</span><h3>Everything published, by subject and month</h3><p class="ilink">Open →</p></a></div>
-      </div>
+          <div class="filter-bar" data-filter-bar><div class="filter-group" role="group" aria-label="Language"><span class="fg-label">Language</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="language" data-filter-value="en">English</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="language" data-filter-value="pa">ਪੰਜਾਬੀ</button></div><div class="filter-group" role="group" aria-label="Subject"><span class="fg-label">Subject</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="category" data-filter-value="arrival-of-europeans">Arrival Of Europeans</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="category" data-filter-value="fundamentals-of-computer">Fundamentals Of Computer</button></div><button type="button" class="filter-reset" data-filter-reset hidden>Clear filters</button><p class="filter-count" data-filter-count aria-live="polite"></p></div>
+          <div class="grid grid-3" data-filter-list><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="fundamentals-of-computer"><span class="eyebrow">Fundamentals Of Computer</span><h3><a href="material-fundamentals-of-computer.html">Fundamentals of Computer</a></h3><p class="muted">Fundamentals of Computer - free study material from House of Aspirants. Fundamentals Of Computer material, filed straight from the file name.</p><p class="study-meta">English · Updated 30 Sep 2026 · 14 min read · 2.0 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="fundamentals-of-computer"><span class="eyebrow">Fundamentals Of Computer</span><h3><a href="material-fundamentals-of-computer-punjabi.html">Fundamentals of Computer Punjabi</a></h3><p class="muted">Fundamentals of Computer Punjabi - free study material from House of Aspirants. Fundamentals Of Computer material, filed straight from the file name.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 12 min read · 2.3 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-1-english-en.html">Part 1 English En</a></h3><p class="muted">Part 1 English En - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">English · Updated 30 Sep 2026 · 9 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-1-punjabi-pa.html">Part 1 Punjabi Pa</a></h3><p class="muted">Part 1 Punjabi Pa - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 8 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-2-english-en.html">Part 2 English En</a></h3><p class="muted">Part 2 English En - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">English · Updated 30 Sep 2026 · 7 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-2-punjabi-pa.html">Part 2 Punjabi Pa</a></h3><p class="muted">Part 2 Punjabi Pa - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 7 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-3-english.html">Part 3 English</a></h3><p class="muted">Part 3 English - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">English · Updated 30 Sep 2026 · 9 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-3-punjabi.html">Part 3 Punjabi</a></h3><p class="muted">Part 3 Punjabi - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 9 min read · 1.7 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-4-english-en.html">Part 4 English En</a></h3><p class="muted">Part 4 English En - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">English · Updated 30 Sep 2026 · 8 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-4-punjabi.html">Part 4 Punjabi</a></h3><p class="muted">Part 4 Punjabi - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 9 min read · 1.7 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="en" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-5-english-en.html">Part 5 English En</a></h3><p class="muted">Part 5 English En - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">English · Updated 30 Sep 2026 · 6 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf" download>⬇ Download</a></p></div><div class="card card-pad reveal study-card" data-f-language="pa" data-f-category="arrival-of-europeans"><span class="eyebrow">Arrival Of Europeans</span><h3><a href="material-part-5-punjabi-pa.html">Part 5 Punjabi Pa</a></h3><p class="muted">Part 5 Punjabi Pa - free study material from House of Aspirants. Arrival Of Europeans material, filed straight from the file name. Free for every aspirant.</p><p class="study-meta">ਪੰਜਾਬੀ · Updated 30 Sep 2026 · 7 min read · 1.6 MB</p><p class="btn-row" style="margin-top:14px"><a class="btn btn-primary" href="content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf" download>⬇ Download</a></p></div></div></div>
     </section>
   </main>
 
