@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 118,
-  "edges": 465,
+  "nodes": 121,
+  "edges": 495,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -146,6 +146,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/previous-year-questions/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
+   "url": "/content/previous-year-questions/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
@@ -1252,6 +1264,30 @@
    "hub": ""
   },
   {
+   "id": "pyq-pp-head-constable-15-oct-2022-paper-1",
+   "url": "/pyq-pp-head-constable-15-oct-2022-paper-1",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "url": "/pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "type": "previous-year-questions",
+   "template": "previous-year-question",
+   "title": "Pp Head Constable 15 Oct 2022 Paper 1",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "url": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "type": "quiz",
@@ -1806,6 +1842,12 @@
    "weight": 1
   },
   {
+   "from": "archives.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "author-gurpreet-singh.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -2149,6 +2191,12 @@
   },
   {
    "from": "material-articles.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2245,6 +2293,12 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2318,6 +2372,12 @@
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "material-fundamentals-of-computer",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2401,6 +2461,12 @@
   },
   {
    "from": "material-mobail-phon.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2479,6 +2545,12 @@
   },
   {
    "from": "material-mobile-phone.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2552,6 +2624,12 @@
   {
    "from": "material-number-series.html",
    "to": "material-number-series",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2653,6 +2731,12 @@
   },
   {
    "from": "material-part-1-english-en.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2726,6 +2810,12 @@
   {
    "from": "material-part-1-punjabi-pa.html",
    "to": "material-part-1-punjabi-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2815,6 +2905,12 @@
   },
   {
    "from": "material-part-2-english-en.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2899,6 +2995,12 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2978,6 +3080,12 @@
   {
    "from": "material-part-3-english.html",
    "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3073,6 +3181,12 @@
   },
   {
    "from": "material-part-3-punjabi.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3158,6 +3272,12 @@
   {
    "from": "material-part-4-english-en.html",
    "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3253,6 +3373,12 @@
   },
   {
    "from": "material-part-4-punjabi.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3337,6 +3463,12 @@
   },
   {
    "from": "material-part-5-english-en.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3416,6 +3548,12 @@
   {
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-5-punjabi-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3607,6 +3745,12 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
@@ -3615,6 +3759,78 @@
    "from": "previous-year-questions.html",
    "to": "study-notes.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "content/previous-year-questions/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "pyq-pp-head-constable-15-oct-2022-paper-1",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
