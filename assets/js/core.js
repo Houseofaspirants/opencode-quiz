@@ -986,7 +986,12 @@ const HOA = (() => {
      * a file adds a number; adding a folder adds a row. The seven subjects the
      * question tree also knows about are already in the column, so they are
      * re-ordered rather than duplicated, and nothing here is written by hand. */
-    loadStudySubjects().then((rows) => {
+    loadStudySubjects().then((allRows) => {
+      /* A folder a hierarchy has claimed keeps its row in the manifest — a
+       * link to `study.html?subject=<folder>` has to keep resolving — but it
+       * is not listed here: the group is the row the reader picks. Nothing
+       * else about it changes, so an ungrouped subject is untouched. */
+      const rows = (allRows || []).filter((r) => r && !r.hidden);
       if (!rows.length) return;
       const pos = new Map(rows.map((r, i) => [String(r.id), i]));
       document

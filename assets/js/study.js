@@ -110,6 +110,28 @@
 
   const plural = (n, word) => `${n} ${word}${n === 1 ? "" : "s"}`;
 
+  /** `plural` only knows how to append an "s", so words that do not obey it
+      — category/categories, page/pages — name both forms themselves. */
+  const many = (n, one, few) => `${n} ${n === 1 ? one : few}`;
+
+  /** Chapters in a category that none of its declared sub heads has claimed.
+      A head list is a grouping, not a filter: anything it misses stays on the
+      category page rather than disappearing. */
+  const unclaimedChapters = (cat) => {
+    const claimed = new Set(
+      Array.isArray(cat && cat.claimedChapters) ? cat.claimedChapters : []);
+    const out = [];
+    const seen = new Set();
+    ((cat && Array.isArray(cat.languages)) ? cat.languages : []).forEach((l) =>
+      (l.chapters || []).forEach((c) => {
+        if (!claimed.has(c.id) && !seen.has(c.id)) {
+          seen.add(c.id);
+          out.push(c);
+        }
+      }));
+    return out;
+  };
+
   /* STEP 7: Featured → Newest → Alphabetical. Recomputed here rather than
      trusted from the file so the shelf, the hub page and this renderer can
      never drift apart — and so a cache serving an older manifest still lists
@@ -274,10 +296,99 @@
     if (subjEl) subjEl.hidden = false;
     if (answerEl) answerEl.hidden = true;
 
+    /* --- General Knowledge: one card that holds a shelf of folders ---------
+       The manifest marks a subject as a hierarchy when its folders are
+       grouped under it, and General Knowledge is the only one today:
+
+           General Knowledge → Region → Category → (Sub Category) → language
+
+       Only those three steps above the language step are new, and only this
+       block knows about them. From the language step down every level still
+       reads the same folder tree every other subject reads, so a category is
+       nothing more than a subject row with a different name in front of it. */
+    const hier = (shelfSubject && shelfSubject.hierarchy) || null;
+    const ALL_SUBS = "__all__";
+    let gRegion = null;
+    let gCat = null;
+    let gSub = null;
+    let gAll = false;
+    let hierStep = null; // a card still to choose, or null for a plain step
+
+    if (hier) {
+      const regions = Array.isArray(hier.regions) ? hier.regions : [];
+      gRegion = regions.find((r) => r && r.id === params.get("region")) || null;
+      const cats = gRegion && Array.isArray(gRegion.categories)
+        ? gRegion.categories : [];
+      gCat = cats.find((c) => c && c.id === params.get("cat")) || null;
+      const subs = gCat && Array.isArray(gCat.subCategories)
+        ? gCat.subCategories : [];
+      const wanted = params.get("sub") || "";
+      gSub = subs.find((s) => s && s.id === wanted) || null;
+      gAll = wanted === ALL_SUBS;
+      if (!gRegion) {
+        hierStep = { kind: "region", list: regions, parent: null };
+      } else if (!gCat) {
+        hierStep = { kind: "category", list: cats, parent: gRegion };
+      } else if (subs.length && !gSub && !gAll) {
+        // "Everything else" is offered next to the heads so a chapter no head
+        // claims is never further away than the ones that do.
+        hierStep = { kind: "sub", list: subs, parent: gCat,
+                     loose: unclaimedChapters(gCat).length };
+      }
+    }
+
+    /** The levels already chosen, deepest last. One list feeds the
+        breadcrumb, the JSON-LD trail and the head tags, so the three can
+        never disagree about where this page says it is. */
+    const hierSteps = () => {
+      if (!hier) return [];
+      const sid = encodeURIComponent(subjectId);
+      const at = (q) => `study.html?subject=${sid}${q ? `&${q}` : ""}`;
+      const out = [{ name, href: at(""), item: `${siteBase}/study?subject=${sid}` }];
+      if (gRegion) {
+        const q = `region=${encodeURIComponent(gRegion.id)}`;
+        out.push({ name: gRegion.name, href: at(q),
+                   item: `${siteBase}/study?subject=${sid}&${q}` });
+      }
+      if (gCat) {
+        const q = `region=${encodeURIComponent(gRegion.id)}` +
+                  `&cat=${encodeURIComponent(gCat.id)}`;
+        out.push({ name: gCat.name, href: at(q),
+                   item: `${siteBase}/study?subject=${sid}&${q}` });
+      }
+      if (gSub) {
+        const q = `region=${encodeURIComponent(gRegion.id)}` +
+                  `&cat=${encodeURIComponent(gCat.id)}` +
+                  `&sub=${encodeURIComponent(gSub.id)}`;
+        out.push({ name: gSub.name, href: at(q),
+                   item: `${siteBase}/study?subject=${sid}&${q}` });
+      }
+      return out;
+    };
+
+    /** Every link this page hands out keeps the levels already chosen, so
+        drilling down never walks the reader back up to the shelf. */
+    const hierQ = [];
+    if (hier && gRegion) hierQ.push(`region=${encodeURIComponent(gRegion.id)}`);
+    if (hier && gCat) hierQ.push(`cat=${encodeURIComponent(gCat.id)}`);
+    if (hier && gSub) hierQ.push(`sub=${encodeURIComponent(gSub.id)}`);
+    if (hier && gAll && !gSub) hierQ.push(`sub=${ALL_SUBS}`);
+
+    /** The rows every step below here reads: the node you are standing on,
+        or the subject itself. */
+    const active = hier ? (gSub || gCat || null) : shelfSubject;
+    /** What this step is called in prose — the category you opened, never the
+        card the shelf shows. The <h1> stays with the subject. */
+    const nodeName = (active && active.name) || name;
+    /** The folder a "nothing filed yet" message should point at. */
+    const folderId = (hier && gCat && Array.isArray(gCat.folders) && gCat.folders[0])
+      ? gCat.folders[0] : subjectId;
+
     /** The language tree the content build found for this subject. */
-    const langs = (shelfSubject && Array.isArray(shelfSubject.languages))
-      ? shelfSubject.languages : [];
-    const subjectCount = Number(shelfSubject && shelfSubject.count) || 0;
+    const langs = (active && Array.isArray(active.languages)) ? active.languages : [];
+    const subjectCount = hier
+      ? Number((active && active.stats && active.stats.files) || 0)
+      : Number(shelfSubject && shelfSubject.count) || 0;
     const color = (shelfSubject && shelfSubject.color) || "#4f46e5";
 
     /* --- which step are we on? -------------------------------------------
@@ -287,7 +398,7 @@
     let languageId = langParam;
     let chapterId = chapterParam;
 
-    if (!languageId && categoryId) {
+    if (!hier && !languageId && categoryId) {
       const hits = langs.filter((l) =>
         (l.chapters || []).some((c) => c.id === categoryId));
       if (hits.length === 1) {
@@ -297,7 +408,7 @@
         chapterId = "";
       }
     }
-    if (!languageId && view === "chapters") {
+    if (!hier && !languageId && view === "chapters") {
       const withChapters = langs.filter((l) => (l.chapters || []).length);
       if (withChapters.length === 1) languageId = withChapters[0].id;
     }
@@ -315,27 +426,27 @@
 
     /* -------------------------------------------------------- page chrome - */
     const hrefFor = (language, ch) => {
-      const q = [`subject=${encodeURIComponent(subjectId)}`];
+      const q = [`subject=${encodeURIComponent(subjectId)}`].concat(hierQ);
       if (language) q.push(`language=${encodeURIComponent(language)}`);
       if (ch) q.push(`chapter=${encodeURIComponent(ch)}`);
       return `study.html?${q.join("&")}`;
     };
 
+
     const crumb = document.getElementById("studyBreadcrumb");
     if (crumb) {
+      // Every chosen level, deepest last: whoever reads the breadcrumb, the
+      // JSON-LD and the head tags sees the same trail because all three are
+      // built from this one array.
+      const steps = hier ? hierSteps() : [{ name, href: hrefFor(), item: "" }];
+      if (langName) steps.push({ name: langName, href: hrefFor(languageId), item: "" });
+      if (chapterName) steps.push({ name: chapterName, href: hrefFor(languageId, chapterId), item: "" });
       const trail = [
         `<a href="index.html">Home</a><span>/</span>`,
         `<a href="study.html">Study</a><span>/</span>`,
-        step === "language"
-          ? `<span>${esc(name)}</span>`
-          : `<a href="${esc(hrefFor())}">${esc(name)}</a><span>/</span>`,
-      ];
-      if (step !== "language") {
-        trail.push(step === "chapter"
-          ? `<span>${esc(langName)}</span>`
-          : `<a href="${esc(hrefFor(languageId))}">${esc(langName)}</a><span>/</span>`);
-      }
-      if (step === "part") trail.push(`<span>${esc(chapterName)}</span>`);
+      ].concat(steps.map((s, i) => i === steps.length - 1
+        ? `<span>${esc(s.name)}</span>`
+        : `<a href="${esc(s.href)}">${esc(s.name)}</a><span>/</span>`));
       crumb.innerHTML = trail.join("");
     }
 
@@ -346,11 +457,16 @@
     if (title) title.textContent = name;
     const lead = document.getElementById("studyLead");
     if (lead) {
-      lead.textContent =
-        `Subject → language → chapter → part. Choose the language you want to ` +
-        `read ${name} in, open a chapter, then take its parts in order — ` +
-        `online or as a download. Reading only; the questions for this ` +
-        `subject live on the Practice door.`;
+      lead.textContent = hier
+        ? `Region → category → language → chapter → part. ${name} is one card ` +
+          `over a shelf of folders: open a region, then a category, then the ` +
+          `language you want to read it in, then a chapter and its parts in ` +
+          `order — online or as a download. Reading only; the questions for ` +
+          `this subject live on the Practice door.`
+        : `Subject → language → chapter → part. Choose the language you want to ` +
+          `read ${name} in, open a chapter, then take its parts in order — ` +
+          `online or as a download. Reading only; the questions for this ` +
+          `subject live on the Practice door.`;
     }
 
     const eyebrow = document.getElementById("studyStepEyebrow");
@@ -376,21 +492,30 @@
     }
     if (desc) {
       desc.textContent = step === "language"
-        ? `Every chapter in ${name} is filed under the language it is written ` +
+        ? `Every chapter in ${nodeName} is filed under the language it is written ` +
           `in. Nothing is listed until you choose one.`
         : step === "chapter"
           ? `${plural(chapters.length, "chapter")} published in ${langName} under ` +
-             `${name}. Open one to see its parts.`
+             `${nodeName}. Open one to see its parts.`
           : `${plural(chapterParts.length, "part")} in reading order, in ${langName}. ` +
              `Read online or download — the part before and after it is always one tap away.`;
     }
     if (back instanceof HTMLAnchorElement) {
-      back.href = step === "language" ? "study.html"
+      let backHref = step === "language" ? "study.html"
         : step === "chapter" ? hrefFor()
         : hrefFor(languageId);
-      back.textContent = step === "language" ? "← All subjects"
+      let backLabel = step === "language" ? "← All subjects"
         : step === "chapter" ? "← Choose a language"
         : `← ${langName} chapters`;
+      // Inside a hierarchy the previous card is one level up, not the shelf.
+      if (step === "language" && hier && gCat) {
+        const sid = encodeURIComponent(subjectId);
+        backHref = `study.html?subject=${sid}&region=${encodeURIComponent(gRegion.id)}` +
+          (gSub ? `&cat=${encodeURIComponent(gCat.id)}` : "");
+        backLabel = gSub ? "← Choose a sub category" : "← Choose a category";
+      }
+      back.href = backHref;
+      back.textContent = backLabel;
     }
     if (tools) tools.hidden = step === "language";
 
@@ -402,85 +527,135 @@
     };
     const setCount = (text) => { if (count) count.textContent = text; };
 
-    const languageCard = (l) => {
-      const chs = l.chapters || [];
-      const ch = chs.length;
-      const n = Number(l.count) || 0;
-      // The counts live in the badges; this line says *what* is here — the
-      // chapters themselves — so the card never prints the same fact twice.
-      const names = chs.slice(0, 3).map((c) => c.name).join(", ");
-      const under = n
-        ? (names ? `${names}${chs.length > 3 ? ` and ${chs.length - 3} more` : ""}` : `${plural(ch, "chapter")}`)
-        : `No chapters in ${l.name} yet.`;
-      return `
-        <a class="card lang-card" style="--sc:${esc(color)}"
-           href="${esc(hrefFor(l.id))}">
-          <span class="lang-flag" aria-hidden="true">${esc(l.flag || "🌐")}</span>
-          <h3>${esc(l.name)}</h3>
-          ${l.native && l.native !== l.name
-            ? `<p class="lang-native">${esc(l.native)}</p>` : ""}
-          <p class="muted">${esc(under)}</p>
-          <div class="subject-meta">
-            <span class="badge ${ch ? "badge-success" : "badge-muted"}">${plural(ch, "chapter")}</span>
-            <span class="badge ${n ? "badge-success" : "badge-muted"}">${plural(n, "file")}</span>
-          </div>
-        </a>`;
-    };
+    /* ------------------------------------------------- hierarchy card steps -
+       Region, Category and Sub Category are all the same card: a folder
+       icon, a title, the numbers measured off the files behind it, and an
+       "Open →". They step aside the moment a language is chosen, from which
+       point Study's own language / chapter / part renderers take over. */
+    let hierSeo = null;
 
-    const chapterCard = (c) => {
-      const parts = (c.parts || []).length;
-      return `
-        <a class="card card-pad study-card" href="${esc(hrefFor(languageId, c.id))}">
-          <span class="eyebrow">${esc(langName)} · Chapter</span>
-          <h3>${esc(c.name)}</h3>
-          <p class="muted">${plural(parts, "part")}, in reading order.</p>
-          <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}</p>
+    const renderHierarchy = () => {
+      const kind = hierStep.kind;
+      const list = Array.isArray(hierStep.list) ? hierStep.list : [];
+      const parent = hierStep.parent;
+      const st = (n) => (n && n.stats) || {};
+      const badge = (v, label, lead) => {
+        const num = Number(v) || 0;
+        return `<span class="badge ${num && lead ? "badge-success" : "badge-muted"}">${label(num)}</span>`;
+      };
+      const sid = encodeURIComponent(subjectId);
+      const at = (q) => `study.html?subject=${sid}${q ? `&${q}` : ""}`;
+      const nodeCard = (href, title, description, badges) => `
+        <a class="card subject-card" style="--sc:${esc(color)}" href="${esc(href)}">
+          <span class="subject-icon" aria-hidden="true">📁</span>
+          <h3>${esc(title)}</h3>
+          ${description ? `<p>${esc(description)}</p>` : ""}
+          <div class="subject-meta">${badges}</div>
+          <span class="ilink st-open">Open →</span>
         </a>`;
-    };
 
-    const partRow = (part) => {
-      const it = partItem(part);
-      const n = Number(part.n) || 0;
-      const badges = (Array.isArray(it.badges) ? it.badges : [])
-        .map((b) => BADGE[String(b)]).filter(Boolean)
-        .map(([cls, label]) => `<span class="badge ${cls}">${label}</span>`).join("");
-      const meta = [];
-      if (it.type) meta.push(String(it.type).toUpperCase());
-      if (it.sizeLabel) meta.push(String(it.sizeLabel));
-      if (it.readingMinutes) meta.push(`${it.readingMinutes} min read`);
-      const when = fmtDate(it.updated || it.published);
-      if (when) meta.push(`Updated ${when}`);
-      return `
-        <li>
-          <a class="part-row" href="${esc(it.file)}">
-            <span class="pr-head">
-              <span class="pr-num">Part ${n}</span>
-              ${badges ? `<span class="pr-badges">${badges}</span>` : ""}
-            </span>
-            ${it.description ? `<span class="pr-desc">${esc(it.description)}</span>` : ""}
-            ${meta.length ? `<span class="pr-meta">${esc(meta.join(" · "))}</span>` : ""}
-          </a>
-        </li>`;
+      let html = "";
+      let eyebrowText = "Study Material";
+      let headText = "";
+      let descText = "";
+      let backHref = "study.html";
+      let backLabel = "← All subjects";
+      let countText = "";
+      let seoTitle = `${name} Study Material | House of Aspirants`;
+      let seoDesc = "";
+
+      if (kind === "region") {
+        headText = "Choose a region";
+        descText = `${many(list.length, "region", "regions")} sit under ${name}. ` +
+          `Open one to see its categories.`;
+        countText = `${many(list.length, "region", "regions")} · ` +
+          `${plural(Number(hier.stats && hier.stats.files) || 0, "file")} under ${name}`;
+        html = list.map((r) => nodeCard(
+          at(`region=${encodeURIComponent(r.id)}`), r.name, r.description || "",
+          badge(st(r).categories, (n) => many(n, "category", "categories"), true) +
+          badge(st(r).chapters, (n) => plural(n, "chapter")) +
+          badge(st(r).pages, (n) => plural(n, "page")))).join("");
+        seoDesc = `${many(list.length, "region", "regions")} of free ${name} study ` +
+          `material for Punjab competitive exams — open a region, then a category, ` +
+          `then a language.`;
+      } else if (kind === "category") {
+        const q0 = `region=${encodeURIComponent(parent.id)}`;
+        eyebrowText = `Study Material · ${parent.name}`;
+        headText = "Choose a category";
+        descText = `${many(list.length, "category", "categories")} in ${parent.name}. ` +
+          `Open one to see its languages.`;
+        backHref = at("");
+        backLabel = `← ${name}`;
+        countText = `${many(list.length, "category", "categories")} · ` +
+          `${plural(Number(parent.stats && parent.stats.files) || 0, "file")} in ${parent.name}`;
+        html = list.map((c) => {
+          const subs = Array.isArray(c.subCategories) ? c.subCategories.length : 0;
+          return nodeCard(at(`${q0}&cat=${encodeURIComponent(c.id)}`), c.name,
+            c.description || "",
+            (subs ? badge(subs, (n) => many(n, "category", "categories"), true) : "") +
+            badge(st(c).chapters, (n) => plural(n, "chapter"), !subs) +
+            badge(st(c).pages, (n) => plural(n, "page")));
+        }).join("");
+        seoTitle = `${parent.name} — ${name} | House of Aspirants`;
+        seoDesc = `${many(list.length, "category", "categories")} inside ${parent.name}, ` +
+          `part of ${name} — each one opens on its languages, then chapters, then parts.`;
+      } else {
+        const q0 = `region=${encodeURIComponent(gRegion.id)}` +
+                   `&cat=${encodeURIComponent(parent.id)}`;
+        eyebrowText = `Study Material · ${parent.name}`;
+        headText = "Choose a sub category";
+        descText = `${many(list.length, "sub category", "sub categories")} in ` +
+          `${parent.name}. Open one to choose a language.`;
+        backHref = at(`region=${encodeURIComponent(gRegion.id)}`);
+        backLabel = "← Choose a category";
+        countText = `${many(list.length, "sub category", "sub categories")} · ` +
+          `${plural(Number(parent.stats && parent.stats.files) || 0, "file")} in ${parent.name}`;
+        html = list.map((s) => nodeCard(
+          at(`${q0}&sub=${encodeURIComponent(s.id)}`), s.name, s.description || "",
+          badge(st(s).chapters, (n) => plural(n, "chapter"), true) +
+          badge(st(s).pages, (n) => plural(n, "page")))).join("");
+        if (hierStep.loose) {
+          const loose = hierStep.loose;
+          html += `<p class="mt-2"><a class="btn btn-soft" href="${esc(
+            at(`${q0}&sub=${ALL_SUBS}`))}">Everything else · ${plural(loose, "chapter")} ` +
+            `no head claims</a></p>`;
+        }
+        seoTitle = `${parent.name} — ${gRegion.name} | House of Aspirants`;
+        seoDesc = `${many(list.length, "sub category", "sub categories")} inside ` +
+          `${parent.name}, part of ${gRegion.name} inside ${name}.`;
+      }
+
+      if (eyebrow) eyebrow.textContent = eyebrowText;
+      if (head) head.textContent = headText;
+      if (desc) desc.textContent = descText;
+      if (back instanceof HTMLAnchorElement) {
+        back.href = backHref;
+        back.textContent = backLabel;
+      }
+      if (tools) tools.hidden = true;
+      setBody(html, "grid grid-3 subjects-grid");
+      setCount(countText);
+      hierSeo = { steps: hierSteps(), title: seoTitle, desc: seoDesc };
     };
 
     const renderLanguages = () => {
       setBody(langs.length
-        ? langs.map(languageCard).join("")
+        ? langs.map((l) => languageCard(l, hrefFor(l.id), color)).join("")
         : emptyState("🌐", "No languages here yet",
             `Study material publishes into a language folder under ` +
-            `<code>content/study-material/${esc(subjectId)}/</code>. Until one ` +
+            `<code>content/study-material/${esc(folderId)}/</code>. Until one ` +
             `exists there is nothing to choose.`,
             `<p class="mt-2"><a class="btn btn-soft" href="study-material.html">All study material →</a></p>`),
         "grid grid-3 subjects-grid");
-      setCount(`${plural(langs.length, "language")} · ${plural(subjectCount, "file")} in ${name} · nothing is listed until you choose one`);
+      setCount(`${plural(langs.length, "language")} · ${plural(subjectCount, "file")} in ${nodeName} · nothing is listed until you choose one`);
     };
 
     const renderChapters = () => {
       setBody(chapters.length
-        ? chapters.map(chapterCard).join("")
-        : emptyState("📖", `No ${langName} chapters in ${name} yet`,
+        ? chapters.map((c) => chapterCard(c, hrefFor(languageId, c.id), langName)).join("")
+        : emptyState("📖", `No ${langName} chapters in ${nodeName} yet`,
             `Create a chapter folder under ` +
-            `<code>content/study-material/${esc(subjectId)}/${esc(languageId)}/</code> ` +
+            `<code>content/study-material/${esc(folderId)}/${esc(languageId)}/</code> ` +
             `and its parts appear here on the next build — no page to write.`,
             `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor())}">Choose another language</a></p>`),
         "grid grid-3");
@@ -492,7 +667,7 @@
         ? `<ol class="part-rows">${chapterParts.map(partRow).join("")}</ol>`
         : emptyState("📄", "This chapter has no parts yet",
             `Drop a file into ` +
-            `<code>content/study-material/${esc(subjectId)}/${esc(languageId)}/${esc(chapterId)}/</code> ` +
+            `<code>content/study-material/${esc(folderId)}/${esc(languageId)}/${esc(chapterId)}/</code> ` +
             `and it becomes part one on the next build.`,
             `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor(languageId))}">All ${esc(langName)} chapters →</a></p>`),
         "part-wrap");
@@ -511,7 +686,7 @@
       setBody(shown.length
         ? shown.map(materialCard).join("")
         : emptyState("🔎", "Nothing matches that",
-            `No file in ${name} · ${langName} carries that word. Try the title, ` +
+            `No file in ${nodeName} · ${langName} carries that word. Try the title, ` +
             `the chapter or a keyword.`,
             `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor(languageId))}">Back to the chapters</a></p>`),
         "grid grid-3");
@@ -529,36 +704,60 @@
       });
     }
 
+    if (hierStep) {
+      renderHierarchy();
+      setStepSeo(hierSeo);
+      return;
+    }
+
     if (step === "language") renderLanguages();
     else if (step === "chapter") renderChapters();
     else renderParts();
 
-    setStepSeo();
+    setStepSeo(hier ? {
+      steps: hierSteps(),
+      title: chapterName
+        ? `${chapterName} (${langName}) — parts | House of Aspirants`
+        : langName
+          ? `${nodeName} — ${langName} chapters | House of Aspirants`
+          : `${nodeName} — ${name} | House of Aspirants`,
+      desc: chapterName
+        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, free for every aspirant.`
+        : langName
+          ? `${plural(chapters.length, "chapter")} of free ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
+          : `${subjectCount} file(s) of free ${nodeName} study material inside ${name} — open a language, then a chapter, then a part.`,
+    } : undefined);
     return;
 
     /** Per-step head tags + JSON-LD, so a URL deep in the hierarchy has its
         own identity while the subject remains the page that owns it. */
-    function setStepSeo() {
+    function setStepSeo(opts) {
       const url = `${siteBase}/study?${["subject=" + encodeURIComponent(subjectId)]
+        .concat(hierQ)
         .concat(languageId ? ["language=" + encodeURIComponent(languageId)] : [])
         .concat(chapterId ? ["chapter=" + encodeURIComponent(chapterId)] : [])
         .join("&")}`;
+      // `steps` carries every level above the language; each keeps its own
+      // URL so the JSON-LD trail describes the shelf and not just this page.
+      const steps = opts && Array.isArray(opts.steps) && opts.steps.length
+        ? opts.steps
+        : [{ name, item: url }];
       const trail = [{ name: "Home", item: `${siteBase}/` },
-                     { name: "Study", item: `${siteBase}/study` },
-                     { name, item: url }];
-      if (langName) trail.push({ name: langName, item: url });
-      if (chapterName) trail.push({ name: chapterName, item: url });
+                     { name: "Study", item: `${siteBase}/study` }]
+        .concat(steps.map((s) => ({ name: s.name, item: s.item || url })))
+        .concat(langName ? [{ name: langName, item: url }] : [])
+        .concat(chapterName ? [{ name: chapterName, item: url }] : []);
 
-      const pageTitle = chapterName
+      const pageTitle = (opts && opts.title) || (chapterName
         ? `${chapterName} (${langName}) — parts | House of Aspirants`
         : langName
-          ? `${name} — ${langName} chapters | House of Aspirants`
-          : `${name} Study Material | House of Aspirants`;
-      const desc = chapterName
-        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${name}. Read online or download, free for every aspirant.`
+          ? `${nodeName} — ${langName} chapters | House of Aspirants`
+          : `${nodeName} Study Material | House of Aspirants`);
+      const desc = (opts && opts.desc) || (chapterName
+        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, free for every aspirant.`
         : langName
-          ? `${plural(chapters.length, "chapter")} of free ${name} study material in ${langName} — read online or download, no sign-up and no paid tier.`
-          : `${subjectCount} file(s) of free ${name} study material for Punjab competitive exams — choose a language, then a chapter, then a part.`;
+          ? `${plural(chapters.length, "chapter")} of free ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
+          : `${subjectCount} file(s) of free ${nodeName} study material for Punjab competitive exams — choose a language, then a chapter, then a part.`);
 
       if (typeof (/** @type {any} */ (HOA).seo) === "function") {
         (/** @type {any} */ (HOA).seo)({
@@ -609,14 +808,19 @@
 
   /* One grid, from the manifest. A folder with no files still earns a card —
      that is where the next file goes — and it says so plainly rather than
-     pretending there is something to read. */
-  const rows = shelf.length
+     pretending there is something to read.
+
+     A folder a hierarchy has claimed keeps its row in the manifest — its
+     material pages still link to `study.html?subject=<folder>` and that URL
+     must keep resolving — but it gives up its place on the shelf, because
+     the group is what the reader is asked to choose. */
+  const rows = (shelf.length
     ? shelf
     : indexSubjects.map((s) => ({
         id: s.id, name: s.name, icon: s.icon, color: s.color,
         description: s.description, order: 0, count: 0, newest: "",
         totalSize: 0, languages: [],
-      }));
+      }))).filter((r) => r && !r.hidden);
 
   grid.innerHTML = rows.map((r) => {
     const n = Number(r.count) || 0;
