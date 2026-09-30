@@ -27,7 +27,7 @@ Punjab Government Exam and other competitive exam aspirants.
 12. [Configuration files](#12-configuration-files)
 13. [Features list](#13-features-list)
 14. [SEO files](#14-seo-files)
-15. [PWA - install & offline](#15-pwa---install--offline)
+15. [Offline - service worker](#15-offline---service-worker)
 16. [Advertisement slots](#16-advertisement-slots)
 17. [Future backend migration](#17-future-backend-migration)
 18. [Scalability notes](#18-scalability-notes)
@@ -49,7 +49,7 @@ Punjab Government Exam and other competitive exam aspirants.
 | Tech | HTML5 · CSS3 · Vanilla JS · JSON · No backend, no framework, no database |
 | Quiz engine | Palette, progress bar, per-question timer, overall timer, auto-next, answer lock, mark for review, skip, keyboard nav, autosave/resume, bookmark |
 | Result | Score ring, accuracy, pass/fail, time taken, subject-wise performance, weak/strong areas, full answer review with explanation & reference |
-| Extras | Dark/light mode, instant search, streaks, achievements, leaderboard (backend-ready), Telegram branding, ad slots, offline PWA with install button |
+| Extras | Dark/light mode, instant search, streaks, achievements, leaderboard (backend-ready), Telegram branding, ad slots, offline PWA |
 | Content | **Ships 100% empty** — `questions/` contains only empty folders (each with a `.gitkeep`) |
 
 **You only ever edit two kinds of files:**
@@ -112,7 +112,7 @@ house-of-aspirants/
 │
 ├── assets/
 │   ├── css/   style.css, quiz.css
-│   ├── js/    core.js (shared header/footer/search/PWA/storage),
+│   ├── js/    core.js (shared header/footer/search/offline/storage),
 │   │          home.js, subject.js, related.js (related subjects/quizzes/guides),
 │   │          quiz.js, result.js, mock.js,
 │   │          bookmarks.js, leaderboard.js, dashboard.js, contact.js
@@ -120,7 +120,7 @@ house-of-aspirants/
 │              og-cover.png (1200×630), icon-180.png, icon-192.png, icon-512.png
 │
 ├── sw.js                      ← Service worker (offline support)
-├── manifest.webmanifest       ← PWA manifest (install button, shortcuts)
+├── manifest.webmanifest       ← PWA manifest (icons, shortcuts)
 ├── robots.txt · sitemap.xml   ← SEO (sitemap also auto-regenerated at build)
 ├── vercel.json                ← Vercel deployment config
 └── package.json               ← npm build/start shortcuts
@@ -478,7 +478,7 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 * **Search** — instant subject + topic filter, `Ctrl/⌘+K`.
 * **Dark mode** — toggle, remembered, matches system by default.
 * **Google sign-in, anonymous-first** — every quiz, mock and note opens with no sign-in at all; the blurred **Continue with Google** modal appears only on the personalised pages (progress, leaderboard), remembers students automatically, and syncs progress, attempts and the global leaderboard to their Google account ([§20](#20-google-sign-in--cloud-sync-firebase)).
-* **PWA** — install button, offline quizzes, PNG app icons, shortcuts & splash colours.
+* **Offline** — offline quizzes, PNG app icons, shortcuts & splash colours.
 
 ---
 
@@ -495,11 +495,11 @@ Any static server works: `npx serve .` · `php -S localhost:8000` · VS Code
 
 ---
 
-## 15. PWA - install & offline
+## 15. Offline - service worker
 
 * `manifest.webmanifest` — name, colours, PNG icons (192/512 + maskable) and shortcuts (Daily Quiz, Leaderboard).
 * `sw.js` — app shell + question JSON are cached; quizzes work **fully offline** after first visit.
-* Install button appears automatically (Chrome/Edge). iOS: Share → *Add to Home Screen*.
+* The site ships **no install UI**: no prompt, no banner, no toast. Adding it to a home screen is done from the browser's own menu.
 
 After changing core files, bump `VERSION` in `sw.js` so returning users get the update.
 

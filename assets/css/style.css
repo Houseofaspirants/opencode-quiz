@@ -1310,10 +1310,6 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 }
 .to-top.show { opacity: 1; pointer-events: auto; transform: none; }
 
-/* Install PWA bar */
-.install-bar { display: none; }
-.install-bar.show { display: inline-flex; }
-
 /* Skeleton loading */
 .skeleton {
   background: linear-gradient(90deg, var(--surface-2) 25%, var(--border) 37%, var(--surface-2) 63%);

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 78,
-  "edges": 219,
+  "nodes": 94,
+  "edges": 307,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -38,6 +38,18 @@
    "exams": [],
    "tags": [],
    "hub": "announcements.html"
+  },
+  {
+   "id": "archive-category-chapter-1-arrival-of-europeans.html",
+   "url": "/archive-category-chapter-1-arrival-of-europeans.html",
+   "type": "archive",
+   "template": "",
+   "title": "Chapter 1 Arrival Of Europeans",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
   },
   {
    "id": "archive-category-computer.html",
@@ -150,6 +162,66 @@
   {
    "id": "content/study-material/computer/fundamentals-of-computer.pdf",
    "url": "/content/study-material/computer/fundamentals-of-computer.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%201%28english%29.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%201%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%204%20%28english%29.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%204%20%28english%29.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%205%20%28english%29.pdf",
+   "url": "/content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%205%20%28english%29.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -676,6 +748,126 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-part-1-english",
+   "url": "/material-part-1-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-1-english.html",
+   "url": "/material-part-1-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 1 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-2-english",
+   "url": "/material-part-2-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-2-english.html",
+   "url": "/material-part-2-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 2 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-3-english",
+   "url": "/material-part-3-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-3-english.html",
+   "url": "/material-part-3-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 3 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-4-english",
+   "url": "/material-part-4-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-4-english.html",
+   "url": "/material-part-4-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 4 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-5-english",
+   "url": "/material-part-5-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-5-english.html",
+   "url": "/material-part-5-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 5 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "mock.html",
    "url": "/mock.html",
    "type": "page",
@@ -1008,6 +1200,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "material-part-1-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "material-part-2-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "material-part-4-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-chapter-1-arrival-of-europeans.html",
+   "to": "material-part-5-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-computer.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -1057,6 +1291,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-chapter-1-arrival-of-europeans.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-computer.html",
    "rel": "contextual",
    "weight": 1
@@ -1088,6 +1328,36 @@
   {
    "from": "archives.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-1-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-2-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-4-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-5-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1567,6 +1837,12 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-fundamentals-of-computer-punjabi",
    "rel": "contextual",
    "weight": 1
@@ -1603,19 +1879,19 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "magazine-august-2026-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "magazine-current-affairs-july.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-2-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -1628,6 +1904,12 @@
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "magazine-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1669,19 +1951,397 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "magazine-august-2026-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "magazine-current-affairs-july.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer.html",
    "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-2-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%201%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "material-part-1-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "material-part-2-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "material-part-3-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english.html",
+   "to": "material-part-4-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "material-part-2-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "material-part-3-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english.html",
+   "to": "material-part-4-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-3-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-2-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "material-part-4-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%204%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "material-part-4-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "material-part-5-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "material-part-2-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english.html",
+   "to": "material-part-3-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%205%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "material-part-4-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "material-part-5-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "material-part-1-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "material-part-2-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english.html",
+   "to": "material-part-3-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -2101,6 +2761,36 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%201%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%202%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%203%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%204%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/part%205%20%28english%29.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -2114,6 +2804,36 @@
   {
    "from": "study-material.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-1-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-2-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-4-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-5-english.html",
    "rel": "contextual",
    "weight": 1
   },

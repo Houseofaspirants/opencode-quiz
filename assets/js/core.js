@@ -10,7 +10,7 @@
  *   5.  Instant search       (subjects + topics, Ctrl+K)
  *   6.  UI helpers           (toast, count-up, reveal, back-to-top)
  *   7.  Student features     (bookmarks, progress, achievements, leaderboard)
- *   8.  PWA                  (service-worker registration + install button)
+ *   8.  Offline              (service-worker registration)
  *   9.  Analytics            (Google Analytics 4 — one Measurement ID, async)
  *
  * Every student feature talks to `HOA.db` only, so a future backend
@@ -212,7 +212,6 @@ const HOA = (() => {
     "Study Guides": "ਅਧਿਐਨ ਗਾਈਡ",
     "FAQ & Help": "ਸਵਾਲ-ਜਵਾਬ ਅਤੇ ਮਦਦ",
     "Toggle theme": "ਥੀਮ ਬਦਲੋ",
-    "Install App": "ਐਪ ਇੰਸਟਾਲ ਕਰੋ",
     "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
     "Start Expected MCQs": "ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
     "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
@@ -635,7 +634,6 @@ const HOA = (() => {
         <a class="icon-btn auth-chip hidden" id="authChip" href="progress.html" title="Your account" aria-label="Your account">
           <span class="auth-chip-face" id="authChipFace">?</span>
         </a>
-        <button class="btn btn-sm btn-soft install-bar hidden" data-action="install-app">⬇ Install</button>
         <!-- Phones carry Telegram in the bottom bar + drawer instead. -->
         <a class="btn btn-sm btn-telegram hide-sm" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
         <button class="icon-btn menu-toggle" data-action="open-menu" aria-label="Open menu" aria-expanded="false">☰</button>
@@ -720,7 +718,6 @@ const HOA = (() => {
     <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">🔔</span> <span data-i18n="Notifications">Notifications</span></a>
     <a class="mm-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener"><span class="mm-emoji">📸</span> <span data-i18n="Instagram">Instagram</span></a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> <span data-i18n="Toggle theme">Toggle theme</span></button>
-    <button class="mm-link" data-action="install-app"><span aria-hidden="true">⬇</span> <span data-i18n="Install App">Install App</span></button>
     <a class="mm-link mm-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span aria-hidden="true">✈</span> <span data-i18n="Join Telegram">Join Telegram</span></a>
   </div>
 
@@ -1609,9 +1606,12 @@ const HOA = (() => {
   const uid = () =>
     Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 
-  /* ==================================================== 8. PWA =========== */
-  function initPWA() {
-    // --- Service worker (offline support) ---------------------------------
+  /* ==================================================== 8. OFFLINE ========
+   * Service-worker registration only. The site deliberately offers no install
+   * UI of any kind — the browser's own menu is where that decision belongs,
+   * and it is the visitor's to make, not the site's.
+   * ======================================================================= */
+  function initServiceWorker() {
     if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
       window.addEventListener("load", () => {
         navigator.serviceWorker.register("sw.js").catch((e) =>
@@ -1619,31 +1619,6 @@ const HOA = (() => {
         );
       });
     }
-
-    // --- Install button ---------------------------------------------------
-    let deferred = null;
-    window.addEventListener("beforeinstallprompt", (e) => {
-      e.preventDefault();
-      deferred = e;
-      document.querySelectorAll("[data-action='install-app']").forEach((b) => {
-        b.classList.remove("hidden");
-        b.classList.add("show");
-      });
-    });
-    document.addEventListener("click", async (e) => {
-      if (/** @type {Element} */ (e.target).closest("[data-action='install-app']")) return;
-      if (deferred) {
-        deferred.prompt();
-        await deferred.userChoice;
-        deferred = null;
-      } else {
-        toast("Use your browser menu → “Add to Home Screen” 📲", 3200);
-      }
-    });
-    window.addEventListener("appinstalled", () => {
-      toast("Installed! Open House of Aspirants from your home screen ✅");
-      document.querySelectorAll("[data-action='install-app']").forEach((b) => b.classList.add("hidden"));
-    });
   }
 
   /* ========================================== 9. TELEGRAM GROWTH ========= */
@@ -2008,7 +1983,7 @@ const HOA = (() => {
     initBackToTop();
     initTgRotators();
     initExitIntent();
-    initPWA();
+    initServiceWorker();
   }
 
   if (document.readyState === "loading") {
