@@ -114,7 +114,7 @@
     {
       "id": "number-series-part-1",
       "subject": "reasoning",
-      "category": "",
+      "category": "number-series",
       "availableLanguages": [
         "en"
       ],
@@ -126,13 +126,35 @@
         "en": "Number Series Part 1"
       },
       "variants": {
-        "en": "questions/reasoning/number-series-part-1.json"
+        "en": "questions/reasoning/NUMBER SERIES/number-series-part-1.json"
+      }
+    },
+    {
+      "id": "fundamentals-of-computers-part1",
+      "subject": "computer",
+      "category": "fundamentals-of-computer",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 20,
+      "counts": {
+        "en": 20,
+        "pa": 20
+      },
+      "titles": {
+        "en": "Fundamentals of Computers - Part 1",
+        "pa": "Fundamentals of Computers - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
+        "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
       }
     },
     {
       "id": "mobile-phone-part1-25-mcqs",
       "subject": "computer",
-      "category": "",
+      "category": "mobile-phones",
       "availableLanguages": [
         "en"
       ],
@@ -144,13 +166,13 @@
         "en": "Mobile Phone Part1 25 Mcqs"
       },
       "variants": {
-        "en": "questions/computer/mobile-phone-part1-25-mcqs.json"
+        "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
       }
     },
     {
       "id": "current-affairs-july-2026-part1-geography-environment",
       "subject": "current-affairs",
-      "category": "",
+      "category": "july",
       "availableLanguages": [
         "en",
         "pa"
@@ -165,14 +187,14 @@
         "pa": "Current Affairs July 2026 - Part 1"
       },
       "variants": {
-        "en": "questions/current-affairs/English/july/current-affairs-july-2026-part1-geography-environment.json",
-        "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part1-punjabi.json"
+        "en": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
+        "pa": "questions/current-affairs/july/current-affairs-july-2026-part1-pa.json"
       }
     },
     {
       "id": "current-affairs-july-2026-part2-schemes-development",
       "subject": "current-affairs",
-      "category": "",
+      "category": "july",
       "availableLanguages": [
         "en",
         "pa"
@@ -187,14 +209,14 @@
         "pa": "Current Affairs July 2026 - Part 2"
       },
       "variants": {
-        "en": "questions/current-affairs/English/july/current-affairs-july-2026-part2-schemes-development.json",
-        "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part2-punjabi.json"
+        "en": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
+        "pa": "questions/current-affairs/july/current-affairs-july-2026-part2-pa.json"
       }
     },
     {
       "id": "current-affairs-july-2026-part3-governance-digital-services",
       "subject": "current-affairs",
-      "category": "",
+      "category": "july",
       "availableLanguages": [
         "en",
         "pa"
@@ -209,14 +231,14 @@
         "pa": "Current Affairs July 2026 - Part 3"
       },
       "variants": {
-        "en": "questions/current-affairs/English/july/current-affairs-july-2026-part3-governance-digital-services.json",
-        "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part3-punjabi.json"
+        "en": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
+        "pa": "questions/current-affairs/july/current-affairs-july-2026-part3-punjabi-pa.json"
       }
     },
     {
       "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
       "subject": "current-affairs",
-      "category": "",
+      "category": "july",
       "availableLanguages": [
         "en",
         "pa"
@@ -231,8 +253,8 @@
         "pa": "Current Affairs July 2026 - Part 4"
       },
       "variants": {
-        "en": "questions/current-affairs/English/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.json",
-        "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part4-punjabi.json"
+        "en": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
+        "pa": "questions/current-affairs/july/current-affairs-july-2026-part4-pa.json"
       }
     }
   ]

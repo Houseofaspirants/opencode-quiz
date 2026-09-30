@@ -10,27 +10,27 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 
 ---
 
-## 1. Pages optimized (110)
+## 1. Pages optimized (116)
 
 | Type | Pages | URL pattern |
 | --- | ---: | --- |
 | Subject | 7 | `subject-<id>.html` |
-| Category | 15 | `category-<subject>-<category>.html` |
-| Topic | 11 | `topic-<subject>-<topic>.html` |
-| Quiz | 11 | `quiz-<subject>-<topic>.html` |
+| Category | 19 | `category-<subject>-<category>.html` |
+| Topic | 12 | `topic-<subject>-<topic>.html` |
+| Quiz | 12 | `quiz-<subject>-<topic>.html` |
 | Exam | 28 | `exam-<id>.html` |
 | Cluster | 38 | `cluster-<id>.html` |
-| **Total** | **110** | emitted at repo root (relative assets, shared chrome) |
+| **Total** | **116** | emitted at repo root (relative assets, shared chrome) |
 
 | # | URL | Type | Title (chars) | Meta description (chars) | H1 | Intro words | Schema |
 | ---: | --- | --- | --- | --- | --- | ---: | --- |
 | 1 | `/subject-gk` | subject | General Knowledge Quiz: Free MCQs for Punjab Exams (50) | 159 | General Knowledge MCQs for Punjab Exams | 368 | BreadcrumbList, FAQPage, WebPage |
 | 2 | `/subject-quant` | subject | Quantitative Aptitude Quiz: Free MCQs for Punjab Exams (54) | 149 | Quantitative Aptitude MCQs for Punjab Exams | 297 | BreadcrumbList, FAQPage, WebPage |
-| 3 | `/subject-reasoning` | subject | Reasoning Quiz: Free MCQs for Punjab Exams (42) | 150 | Reasoning MCQs for Punjab Exams | 303 | BreadcrumbList, FAQPage, WebPage |
+| 3 | `/subject-reasoning` | subject | Reasoning Quiz: Free MCQs for Punjab Exams (42) | 150 | Reasoning MCQs for Punjab Exams | 311 | BreadcrumbList, FAQPage, WebPage |
 | 4 | `/subject-punjabi` | subject | Punjabi Quiz: Free MCQs for Punjab Exams (40) | 154 | Punjabi MCQs for Punjab Exams | 283 | BreadcrumbList, FAQPage, WebPage |
 | 5 | `/subject-english` | subject | English Quiz: Free MCQs for Punjab Exams (40) | 154 | English MCQs for Punjab Exams | 293 | BreadcrumbList, FAQPage, WebPage |
-| 6 | `/subject-computer` | subject | Computer Quiz: Free MCQs for Punjab Exams (41) | 149 | Computer MCQs for Punjab Exams | 296 | BreadcrumbList, FAQPage, WebPage |
-| 7 | `/subject-current-affairs` | subject | Current Affairs Quiz: Free MCQs for Punjab Exams (48) | 156 | Current Affairs MCQs for Punjab Exams | 293 | BreadcrumbList, FAQPage, WebPage |
+| 6 | `/subject-computer` | subject | Computer Quiz: Free MCQs for Punjab Exams (41) | 149 | Computer MCQs for Punjab Exams | 307 | BreadcrumbList, FAQPage, WebPage |
+| 7 | `/subject-current-affairs` | subject | Current Affairs Quiz: Free MCQs for Punjab Exams (48) | 156 | Current Affairs MCQs for Punjab Exams | 300 | BreadcrumbList, FAQPage, WebPage |
 | 8 | `/category-gk-history` | category | History Quiz: General Knowledge MCQs for Punjab Exams (53) | 148 | History MCQs for Punjab Exams | 190 | BreadcrumbList, FAQPage, WebPage |
 | 9 | `/category-gk-ancient-history` | category | Ancient History MCQs for Punjab Exams (37) | 156 | Ancient History MCQs for Punjab Exams | 210 | BreadcrumbList, FAQPage, WebPage |
 | 10 | `/category-gk-medieval-history` | category | Medieval History MCQs for Punjab Exams (38) | 157 | Medieval History MCQs for Punjab Exams | 211 | BreadcrumbList, FAQPage, WebPage |
@@ -46,102 +46,108 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 20 | `/category-gk-geography-of-punjab` | category | Geography of Punjab MCQs for Punjab Exams (41) | 160 | Geography of Punjab MCQs for Punjab Exams | 213 | BreadcrumbList, FAQPage, WebPage |
 | 21 | `/category-gk-economy-of-punjab` | category | Economy of Punjab MCQs for Punjab Exams (39) | 158 | Economy of Punjab MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
 | 22 | `/category-gk-others` | category | Others Quiz: General Knowledge MCQs for Punjab Exams (52) | 147 | Others MCQs for Punjab Exams | 182 | BreadcrumbList, FAQPage, WebPage |
-| 23 | `/topic-gk-five-year-plans-20-mcqs-` | topic | Five Year Plans 20 Mcqs : Topic Guide and MCQ Practice (54) | 158 | Five Year Plans 20 Mcqs  - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, WebPage |
-| 24 | `/topic-gk-sikhism-part1-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 1: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
-| 25 | `/topic-gk-sikhism-part2-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 2: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 2 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
-| 26 | `/topic-gk-sikhism-part3-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 3: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 3 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
-| 27 | `/topic-gk-sikhism-part4-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 4: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 4 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
-| 28 | `/topic-reasoning-number-series-part-1` | topic | Number Series Part 1: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 1 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, WebPage |
-| 29 | `/topic-computer-mobile-phone-part1-25-mcqs` | topic | Mobile Phone Part1 25 Mcqs: Topic Guide and MCQ Practice (56) | 152 | Mobile Phone Part1 25 Mcqs - Topic Guide and MCQs | 91 | BreadcrumbList, FAQPage, WebPage |
-| 30 | `/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic | Current Affairs July 2026 - Part 1 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 1 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, WebPage |
-| 31 | `/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic | Current Affairs July 2026 - Part 2 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 2 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, WebPage |
-| 32 | `/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic | Current Affairs July 2026 - Part 3 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 3 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, WebPage |
-| 33 | `/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic | Current Affairs July 2026 - Part 4 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 4 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, WebPage |
-| 34 | `/quiz-gk-five-year-plans-20-mcqs-` | quiz | Five Year Plans 20 Mcqs Quiz (20 MCQs) - Free Online Test (57) | 158 | Five Year Plans 20 Mcqs  | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 35 | `/quiz-gk-sikhism-part1-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 1 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 36 | `/quiz-gk-sikhism-part2-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 2 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 37 | `/quiz-gk-sikhism-part3-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 3 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 38 | `/quiz-gk-sikhism-part4-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 4 Quiz - Free MCQs (47) | 153 | Sikhism (Sikh Dharam) - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 39 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 40 | `/quiz-computer-mobile-phone-part1-25-mcqs` | quiz | Mobile Phone Part1 25 Mcqs Quiz (25 MCQs) - Free Online Test (60) | 158 | Mobile Phone Part1 25 Mcqs | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 41 | `/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment` | quiz | Current Affairs July 2026 - Part 1 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 42 | `/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development` | quiz | Current Affairs July 2026 - Part 2 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 43 | `/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | quiz | Current Affairs July 2026 - Part 3 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 44 | `/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | quiz | Current Affairs July 2026 - Part 4 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 45 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
-| 46 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 47 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 48 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 49 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 50 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 149 | BreadcrumbList, FAQPage, WebPage |
-| 51 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 52 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 53 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 54 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 55 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 56 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 57 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 58 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 59 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 123 | BreadcrumbList, FAQPage, WebPage |
-| 60 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 61 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 62 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 63 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 106 | BreadcrumbList, FAQPage, WebPage |
-| 64 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
-| 65 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 66 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 141 | BreadcrumbList, FAQPage, WebPage |
-| 67 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
-| 68 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 69 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 70 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 71 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 145 | BreadcrumbList, FAQPage, WebPage |
-| 72 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 73 | `/cluster-indian-polity` | cluster | Indian Polity: Syllabus, Topics and Free MCQs (45) | 143 | Indian Polity - Study Guide and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 74 | `/cluster-indian-history` | cluster | Indian History: Syllabus, Topics and Free MCQs (46) | 144 | Indian History - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 75 | `/cluster-modern-history` | cluster | Modern History: Syllabus, Topics and Free MCQs (46) | 144 | Modern History - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 76 | `/cluster-ancient-history` | cluster | Ancient History: Syllabus, Topics and Free MCQs (47) | 145 | Ancient History - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 77 | `/cluster-medieval-history` | cluster | Medieval History: Syllabus, Topics and Free MCQs (48) | 146 | Medieval History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 78 | `/cluster-geography` | cluster | Geography: Syllabus, Topics and Free MCQs (41) | 158 | Geography - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 79 | `/cluster-punjab-geography` | cluster | Punjab Geography: Syllabus, Topics and Free MCQs (48) | 146 | Punjab Geography - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 80 | `/cluster-punjab-history` | cluster | Punjab History: Syllabus, Topics and Free MCQs (46) | 144 | Punjab History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 81 | `/cluster-punjab-culture` | cluster | Punjab Culture: Syllabus, Topics and Free MCQs (46) | 144 | Punjab Culture - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 82 | `/cluster-punjab-art` | cluster | Punjab Art: Syllabus, Topics and Free MCQs (42) | 140 | Punjab Art - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 83 | `/cluster-economy` | cluster | Economy: Syllabus, Topics and Free MCQs (39) | 156 | Economy - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 84 | `/cluster-science` | cluster | Science: Syllabus, Topics and Free MCQs (39) | 156 | Science - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 85 | `/cluster-biology` | cluster | Biology: Syllabus, Topics and Free MCQs (39) | 156 | Biology - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 86 | `/cluster-physics` | cluster | Physics: Syllabus, Topics and Free MCQs (39) | 156 | Physics - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 87 | `/cluster-chemistry` | cluster | Chemistry: Syllabus, Topics and Free MCQs (41) | 158 | Chemistry - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 88 | `/cluster-environment` | cluster | Environment: Syllabus, Topics and Free MCQs (43) | 141 | Environment - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 89 | `/cluster-computer` | cluster | Computer: Syllabus, Topics and Free MCQs (40) | 157 | Computer - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 90 | `/cluster-reasoning` | cluster | Reasoning: Syllabus, Topics and Free MCQs (41) | 158 | Reasoning - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 91 | `/cluster-english` | cluster | English: Syllabus, Topics and Free MCQs (39) | 156 | English - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 92 | `/cluster-punjabi` | cluster | Punjabi: Syllabus, Topics and Free MCQs (39) | 156 | Punjabi - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 93 | `/cluster-current-affairs` | cluster | Current Affairs: Syllabus, Topics and Free MCQs (47) | 145 | Current Affairs - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 94 | `/cluster-punjab-current-affairs` | cluster | Punjab Current Affairs: Syllabus, Topics and Free MCQs (54) | 152 | Punjab Current Affairs - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 95 | `/cluster-sports` | cluster | Sports: Syllabus, Topics and Free MCQs (38) | 155 | Sports - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 96 | `/cluster-awards` | cluster | Awards and Honours: Syllabus, Topics and Free MCQs (50) | 148 | Awards and Honours - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 97 | `/cluster-books-authors` | cluster | Books and Authors: Syllabus, Topics and Free MCQs (49) | 147 | Books and Authors - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 98 | `/cluster-important-days` | cluster | Important Days and Dates: Syllabus, Topics and Free MCQs (56) | 154 | Important Days and Dates - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 99 | `/cluster-constitution` | cluster | Indian Constitution: Syllabus, Topics and Free MCQs (51) | 149 | Indian Constitution - Study Guide and Free MCQs | 136 | BreadcrumbList, FAQPage, WebPage |
-| 100 | `/cluster-fundamental-rights` | cluster | Fundamental Rights: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Rights - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 101 | `/cluster-directive-principles` | cluster | Directive Principles of State Policy (DPSP): Topics and (55) | 152 | Directive Principles of State Policy (DPSP) - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 102 | `/cluster-fundamental-duties` | cluster | Fundamental Duties: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Duties - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 103 | `/cluster-parliament` | cluster | Parliament: Syllabus, Topics and Free MCQs (42) | 140 | Parliament - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 104 | `/cluster-president` | cluster | President of India: Syllabus, Topics and Free MCQs (50) | 148 | President of India - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 105 | `/cluster-prime-minister` | cluster | Prime Minister and Council of Ministers: Topics and Free (56) | 157 | Prime Minister and Council of Ministers - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 106 | `/cluster-judiciary` | cluster | Judiciary: Syllabus, Topics and Free MCQs (41) | 158 | Judiciary - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 107 | `/cluster-emergency-provisions` | cluster | Emergency Provisions: Syllabus, Topics and Free MCQs (52) | 150 | Emergency Provisions - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 108 | `/cluster-panchayati-raj` | cluster | Panchayati Raj: Syllabus, Topics and Free MCQs (46) | 144 | Panchayati Raj - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 109 | `/cluster-local-government` | cluster | Local Government: Syllabus, Topics and Free MCQs (48) | 146 | Local Government - Study Guide and Free MCQs | 119 | BreadcrumbList, FAQPage, WebPage |
-| 110 | `/cluster-static-gk` | cluster | Static GK: Syllabus, Topics and Free MCQs (41) | 158 | Static GK - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 23 | `/category-reasoning-number-series` | category | NUMBER SERIES Quiz: Reasoning MCQs for Punjab Exams (51) | 152 | NUMBER SERIES MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
+| 24 | `/category-computer-fundamentals-of-computer` | category | FUNDAMENTALS OF COMPUTER MCQs for Punjab Exams (46) | 143 | FUNDAMENTALS OF COMPUTER MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
+| 25 | `/category-computer-mobile-phones` | category | MOBILE PHONES Quiz: Computer MCQs for Punjab Exams (50) | 151 | MOBILE PHONES MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
+| 26 | `/category-current-affairs-july` | category | July Quiz: Current Affairs MCQs for Punjab Exams (48) | 149 | July MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
+| 27 | `/topic-gk-five-year-plans-20-mcqs-` | topic | Five Year Plans 20 Mcqs : Topic Guide and MCQ Practice (54) | 158 | Five Year Plans 20 Mcqs  - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, WebPage |
+| 28 | `/topic-gk-sikhism-part1-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 1: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 29 | `/topic-gk-sikhism-part2-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 2: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 2 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 30 | `/topic-gk-sikhism-part3-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 3: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 3 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 31 | `/topic-gk-sikhism-part4-20-mcqs` | topic | Sikhism (Sikh Dharam) - Part 4: Topic Guide and MCQ Practice (60) | 146 | Sikhism (Sikh Dharam) - Part 4 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 32 | `/topic-reasoning-number-series-part-1` | topic | Number Series Part 1: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, WebPage |
+| 33 | `/topic-computer-fundamentals-of-computers-part1` | topic | Fundamentals of Computers - Part 1 MCQ Practice (47) | 141 | Fundamentals of Computers - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 34 | `/topic-computer-mobile-phone-part1-25-mcqs` | topic | Mobile Phone Part1 25 Mcqs: Topic Guide and MCQ Practice (56) | 152 | Mobile Phone Part1 25 Mcqs - Topic Guide and MCQs | 91 | BreadcrumbList, FAQPage, WebPage |
+| 35 | `/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic | Current Affairs July 2026 - Part 1 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 36 | `/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic | Current Affairs July 2026 - Part 2 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 2 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 37 | `/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic | Current Affairs July 2026 - Part 3 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 3 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 38 | `/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic | Current Affairs July 2026 - Part 4 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 4 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, WebPage |
+| 39 | `/quiz-gk-five-year-plans-20-mcqs-` | quiz | Five Year Plans 20 Mcqs Quiz (20 MCQs) - Free Online Test (57) | 158 | Five Year Plans 20 Mcqs  | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 40 | `/quiz-gk-sikhism-part1-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 1 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 41 | `/quiz-gk-sikhism-part2-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 2 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 42 | `/quiz-gk-sikhism-part3-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 3 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 43 | `/quiz-gk-sikhism-part4-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 4 Quiz - Free MCQs (47) | 153 | Sikhism (Sikh Dharam) - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 44 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 45 | `/quiz-computer-fundamentals-of-computers-part1` | quiz | Fundamentals of Computers - Part 1 Quiz - Free MCQs (51) | 155 | Fundamentals of Computers - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 46 | `/quiz-computer-mobile-phone-part1-25-mcqs` | quiz | Mobile Phone Part1 25 Mcqs Quiz (25 MCQs) - Free Online Test (60) | 158 | Mobile Phone Part1 25 Mcqs | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 47 | `/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment` | quiz | Current Affairs July 2026 - Part 1 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 48 | `/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development` | quiz | Current Affairs July 2026 - Part 2 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 49 | `/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | quiz | Current Affairs July 2026 - Part 3 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 50 | `/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | quiz | Current Affairs July 2026 - Part 4 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 51 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
+| 52 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 53 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 54 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 55 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 56 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 149 | BreadcrumbList, FAQPage, WebPage |
+| 57 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 58 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 59 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 60 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 61 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 62 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 63 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 64 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 65 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 123 | BreadcrumbList, FAQPage, WebPage |
+| 66 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 67 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 68 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 69 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 106 | BreadcrumbList, FAQPage, WebPage |
+| 70 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
+| 71 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 72 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 141 | BreadcrumbList, FAQPage, WebPage |
+| 73 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
+| 74 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 75 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 76 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 77 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 145 | BreadcrumbList, FAQPage, WebPage |
+| 78 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 79 | `/cluster-indian-polity` | cluster | Indian Polity: Syllabus, Topics and Free MCQs (45) | 143 | Indian Polity - Study Guide and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 80 | `/cluster-indian-history` | cluster | Indian History: Syllabus, Topics and Free MCQs (46) | 144 | Indian History - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 81 | `/cluster-modern-history` | cluster | Modern History: Syllabus, Topics and Free MCQs (46) | 144 | Modern History - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 82 | `/cluster-ancient-history` | cluster | Ancient History: Syllabus, Topics and Free MCQs (47) | 145 | Ancient History - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 83 | `/cluster-medieval-history` | cluster | Medieval History: Syllabus, Topics and Free MCQs (48) | 146 | Medieval History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 84 | `/cluster-geography` | cluster | Geography: Syllabus, Topics and Free MCQs (41) | 158 | Geography - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 85 | `/cluster-punjab-geography` | cluster | Punjab Geography: Syllabus, Topics and Free MCQs (48) | 146 | Punjab Geography - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 86 | `/cluster-punjab-history` | cluster | Punjab History: Syllabus, Topics and Free MCQs (46) | 144 | Punjab History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 87 | `/cluster-punjab-culture` | cluster | Punjab Culture: Syllabus, Topics and Free MCQs (46) | 144 | Punjab Culture - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 88 | `/cluster-punjab-art` | cluster | Punjab Art: Syllabus, Topics and Free MCQs (42) | 140 | Punjab Art - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 89 | `/cluster-economy` | cluster | Economy: Syllabus, Topics and Free MCQs (39) | 156 | Economy - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 90 | `/cluster-science` | cluster | Science: Syllabus, Topics and Free MCQs (39) | 156 | Science - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 91 | `/cluster-biology` | cluster | Biology: Syllabus, Topics and Free MCQs (39) | 156 | Biology - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 92 | `/cluster-physics` | cluster | Physics: Syllabus, Topics and Free MCQs (39) | 156 | Physics - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 93 | `/cluster-chemistry` | cluster | Chemistry: Syllabus, Topics and Free MCQs (41) | 158 | Chemistry - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 94 | `/cluster-environment` | cluster | Environment: Syllabus, Topics and Free MCQs (43) | 141 | Environment - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 95 | `/cluster-computer` | cluster | Computer: Syllabus, Topics and Free MCQs (40) | 157 | Computer - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 96 | `/cluster-reasoning` | cluster | Reasoning: Syllabus, Topics and Free MCQs (41) | 158 | Reasoning - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 97 | `/cluster-english` | cluster | English: Syllabus, Topics and Free MCQs (39) | 156 | English - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 98 | `/cluster-punjabi` | cluster | Punjabi: Syllabus, Topics and Free MCQs (39) | 156 | Punjabi - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 99 | `/cluster-current-affairs` | cluster | Current Affairs: Syllabus, Topics and Free MCQs (47) | 145 | Current Affairs - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 100 | `/cluster-punjab-current-affairs` | cluster | Punjab Current Affairs: Syllabus, Topics and Free MCQs (54) | 152 | Punjab Current Affairs - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 101 | `/cluster-sports` | cluster | Sports: Syllabus, Topics and Free MCQs (38) | 155 | Sports - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 102 | `/cluster-awards` | cluster | Awards and Honours: Syllabus, Topics and Free MCQs (50) | 148 | Awards and Honours - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 103 | `/cluster-books-authors` | cluster | Books and Authors: Syllabus, Topics and Free MCQs (49) | 147 | Books and Authors - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 104 | `/cluster-important-days` | cluster | Important Days and Dates: Syllabus, Topics and Free MCQs (56) | 154 | Important Days and Dates - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 105 | `/cluster-constitution` | cluster | Indian Constitution: Syllabus, Topics and Free MCQs (51) | 149 | Indian Constitution - Study Guide and Free MCQs | 136 | BreadcrumbList, FAQPage, WebPage |
+| 106 | `/cluster-fundamental-rights` | cluster | Fundamental Rights: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Rights - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 107 | `/cluster-directive-principles` | cluster | Directive Principles of State Policy (DPSP): Topics and (55) | 152 | Directive Principles of State Policy (DPSP) - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 108 | `/cluster-fundamental-duties` | cluster | Fundamental Duties: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Duties - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 109 | `/cluster-parliament` | cluster | Parliament: Syllabus, Topics and Free MCQs (42) | 140 | Parliament - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 110 | `/cluster-president` | cluster | President of India: Syllabus, Topics and Free MCQs (50) | 148 | President of India - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 111 | `/cluster-prime-minister` | cluster | Prime Minister and Council of Ministers: Topics and Free (56) | 157 | Prime Minister and Council of Ministers - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 112 | `/cluster-judiciary` | cluster | Judiciary: Syllabus, Topics and Free MCQs (41) | 158 | Judiciary - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 113 | `/cluster-emergency-provisions` | cluster | Emergency Provisions: Syllabus, Topics and Free MCQs (52) | 150 | Emergency Provisions - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 114 | `/cluster-panchayati-raj` | cluster | Panchayati Raj: Syllabus, Topics and Free MCQs (46) | 144 | Panchayati Raj - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 115 | `/cluster-local-government` | cluster | Local Government: Syllabus, Topics and Free MCQs (48) | 146 | Local Government - Study Guide and Free MCQs | 119 | BreadcrumbList, FAQPage, WebPage |
+| 116 | `/cluster-static-gk` | cluster | Static GK: Syllabus, Topics and Free MCQs (41) | 158 | Static GK - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
 
-Intro word counts: min 76, max 368. Every subject page clears the 250-word intro target.
+Intro word counts: min 81, max 368. Every subject page clears the 250-word intro target.
 
 ## 2. Metadata generated
 
-- **Unique titles:** 110/110 ✅
-- **Unique meta descriptions:** 110/110 ✅
-- **Unique canonical URLs:** 110/110 ✅
+- **Unique titles:** 116/116 ✅
+- **Unique meta descriptions:** 116/116 ✅
+- **Unique canonical URLs:** 116/116 ✅
 - **Title length:** 37-60 chars (Google truncates at ~60)
 - **Description length:** 140-160 chars (target window 140-160)
 - **Robots:** `index, follow` on every landing page; canonical is the page's own extensionless URL (`https://houseofaspirants.in/<slug>`).
@@ -159,49 +165,49 @@ Title templates (entity name + real site data only, no invented facts):
 
 All landing metadata is **static HTML** - it is present before JavaScript runs, so crawlers never have to render the page to see the title, description, canonical or JSON-LD.
 
-## 3. Internal links created (1588)
+## 3. Internal links created (1658)
 
-- Links between generated entities: **1588**
-- Every internal anchor on the 110 generated pages: **3204** (includes links to site guides, `/faq`, `/mock` and the app views)
+- Links between generated entities: **1658**
+- Every internal anchor on the 116 generated pages: **3356** (includes links to site guides, `/faq`, `/mock` and the app views)
 - Counts are re-read from the shipped HTML, not from the generator's log, so this table cannot drift from the pages themselves.
 - Every link is a plain `<a href>` in static HTML (no JS-dependent navigation).
 
 | Route | Count | Required by spec | Examples |
 | --- | ---: | --- | --- |
-| Subject → Topic | 6 | ✅ | `Number Series Part 1`: subject-reasoning.html → topic-reasoning-number-series-part-1.html; `Mobile Phone Part1 25 Mcqs`: subject-computer.html → topic-computer-mobile-phone-part1-25-mcqs.html; `Current Affairs July 2026 - Part 1`: subject-current-affairs.html → topic-current-affairs-current-affairs-july-2026-part1-geography-environment.html |
-| Topic → Quiz | 35 | ✅ | `Sikhism (Sikh Dharam) - Part 1`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-sikhism-part1-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 2`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-sikhism-part2-20-mcqs.html; `Start Five Year Plans 20 Mcqs quiz`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-five-year-plans-20-mcqs-.html |
-| Quiz → Subject | 22 | ✅ | `General Knowledge`: quiz-gk-five-year-plans-20-mcqs-.html → subject-gk.html; `General Knowledge page`: quiz-gk-five-year-plans-20-mcqs-.html → subject-gk.html; `General Knowledge`: quiz-gk-sikhism-part1-20-mcqs.html → subject-gk.html |
+| Subject → Topic | 0 | ❌ MISSING | — |
+| Topic → Quiz | 37 | ✅ | `Sikhism (Sikh Dharam) - Part 1`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-sikhism-part1-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 2`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-sikhism-part2-20-mcqs.html; `Start Five Year Plans 20 Mcqs quiz`: topic-gk-five-year-plans-20-mcqs-.html → quiz-gk-five-year-plans-20-mcqs-.html |
+| Quiz → Subject | 24 | ✅ | `General Knowledge`: quiz-gk-five-year-plans-20-mcqs-.html → subject-gk.html; `General Knowledge page`: quiz-gk-five-year-plans-20-mcqs-.html → subject-gk.html; `General Knowledge`: quiz-gk-sikhism-part1-20-mcqs.html → subject-gk.html |
 | Exam → Subject | 65 | ✅ | `General Knowledge`: exam-punjab-police-constable.html → subject-gk.html; `Current Affairs`: exam-punjab-police-constable.html → subject-current-affairs.html; `English`: exam-punjab-police-asi.html → subject-english.html |
-| Exam → Topic | 80 | ✅ | `Sikhism (Sikh Dharam) - Part 1`: exam-punjab-police-constable.html → topic-gk-sikhism-part1-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 2`: exam-punjab-police-constable.html → topic-gk-sikhism-part2-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 3`: exam-punjab-police-constable.html → topic-gk-sikhism-part3-20-mcqs.html |
+| Exam → Topic | 71 | ✅ | `Sikhism (Sikh Dharam) - Part 1`: exam-punjab-police-constable.html → topic-gk-sikhism-part1-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 2`: exam-punjab-police-constable.html → topic-gk-sikhism-part2-20-mcqs.html; `Sikhism (Sikh Dharam) - Part 3`: exam-punjab-police-constable.html → topic-gk-sikhism-part3-20-mcqs.html |
 
 Additional routes generated automatically:
 
 | Route | Count |
 | --- | ---: |
 | Cluster → Cluster | 194 |
+| Category → Subject | 165 |
 | Cluster → Exam | 152 |
 | Cluster → Subject | 138 |
-| Category → Subject | 133 |
 | Exam → Cluster | 117 |
 | Exam → Exam | 108 |
-| Topic → Exam | 75 |
+| Topic → Exam | 80 |
 | Cluster → Category | 63 |
 | Subject → Exam | 58 |
-| Quiz → Quiz | 53 |
-| Category → Quiz | 44 |
+| Quiz → Quiz | 58 |
+| Category → Quiz | 51 |
 | Subject → Subject | 42 |
+| Topic → Topic | 34 |
 | Category → Cluster | 32 |
-| Topic → Topic | 32 |
-| Cluster → Quiz | 27 |
-| Topic → Subject | 22 |
-| Subject → Quiz | 20 |
+| Cluster → Quiz | 28 |
+| Topic → Subject | 24 |
+| Subject → Quiz | 21 |
+| Subject → Category | 19 |
 | Subject → Cluster | 18 |
-| Subject → Category | 15 |
+| Category → Topic | 12 |
+| Topic → Category | 12 |
+| Quiz → Category | 12 |
+| Quiz → Topic | 12 |
 | Category → Exam | 11 |
-| Quiz → Topic | 11 |
-| Category → Topic | 5 |
-| Topic → Category | 5 |
-| Quiz → Category | 5 |
 
 ## 4. Potential duplicate content
 

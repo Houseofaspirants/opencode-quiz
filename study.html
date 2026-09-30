@@ -67,12 +67,12 @@
       {
         "@type": "Question",
         "name": "How do I move through a subject?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Open the subject, choose a category, then a chapter, then a part. Inside you get the study notes, the PDF version of the same notes, a revision sheet and links to the related chapters you should read beside it." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Open the subject and you land on its Study Material: every file filed under it under one heading, featured and newest first. Use the search box to narrow it by title or keyword, or choose Browse chapters to walk the category, chapter and part tree when you would rather follow the syllabus than skim a shelf." }
       },
       {
         "@type": "Question",
         "name": "Is the material available in Punjabi?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Where a note has been written in Punjabi, the Punjabi version is the one you land on and English is one tap away. Nothing here is treated as a translation of the other." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Each card states the language the file itself is written in, so a Punjabi file reads on the card in Punjabi before you open it. Where a note exists in both, neither language is treated as a translation of the other." }
       },
       {
         "@type": "Question",
@@ -100,16 +100,17 @@
         </nav>
         <span class="eyebrow">Study</span>
         <h1 id="studyTitle">Study Material</h1>
-        <p class="muted" id="studyLead">Seven subjects, broken into categories, chapters and parts — each one
-          carrying its notes, a PDF of the same notes, a revision sheet and the chapters that belong beside it.
-          Reading only. No questions in here.</p>
-        <div class="answer-box">
+        <p class="muted" id="studyLead">Every subject, every file, one list. Pick a subject and read or download
+          whatever is filed under it — with its language, when it was last updated and how long it takes to
+          read. Reading only. No questions in here.</p>
+        <div class="answer-box" id="studyAnswer">
           <span class="ab-label">How Study works</span>
           <p>
-            Pick a subject, open a category, choose a chapter, read its part. Every part gives you the study
-            notes, a downloadable PDF of those notes, a revision sheet for the last ten minutes before a paper,
-            and links to the chapters you should read next. When you are done reading, that is what
-            <a href="practice.html">Practice</a> is for.
+            Pick a subject and you land on its <strong>Study Material</strong>: every file filed under that
+            subject, whatever kind of file it is, under one heading. Search it by title or keyword, or open
+            <em>Browse chapters</em> to walk the category → chapter → part tree when you want the syllabus
+            instead of a shelf. Nothing in Study will interrupt you with a test — when you are done reading,
+            that is what <a href="practice.html">Practice</a> is for.
           </p>
         </div>
       </div>
@@ -121,80 +122,64 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <span class="eyebrow" id="studySubjectEyebrow">Chapters</span>
-              <h2 id="studySubjectHead">Chapters in this subject</h2>
-              <p id="studySubjectDesc">Choose a category, then a chapter, then a part.</p>
+              <span class="eyebrow" id="studySubjectEyebrow">Subject</span>
+              <h2 id="studySubjectHead">Study Material</h2>
+              <p id="studySubjectDesc">Everything filed under this subject, in one list.</p>
             </div>
             <a class="btn btn-soft" id="studySubjectBack" href="study.html">All subjects →</a>
           </div>
-          <div id="studySubjectBody">
-            <div class="skeleton" style="height:180px"></div>
+
+          <!-- ==================== THE ONE SECTION: STUDY MATERIAL ========
+               Every file under this subject appears here together. There is no
+               separate PDFs list, no separate Notes list and no separate
+               Guides list: a reader never chose the format, so the page never
+               asks them to. -->
+          <div id="studyMaterial">
+            <div class="material-tools">
+              <label class="visually-hidden" for="studySearch">Search study material</label>
+              <input type="search" id="studySearch" class="material-search" autocomplete="off"
+                     placeholder="Search by title, keyword or file name">
+              <a class="btn btn-soft" id="studyChapters" href="study.html">Browse chapters →</a>
+            </div>
+            <p class="material-count" id="studyMaterialCount" aria-live="polite"></p>
+            <div id="studyMaterialBody" class="grid grid-3">
+              <div class="skeleton" style="height:190px"></div>
+            </div>
           </div>
+
+          <!-- ============ chapter browser, behind ?view=chapters ==========
+               The category → chapter → part tree still exists, but one tap
+               further in: the shelf is what a reader came for, the syllabus is
+               what they came for on purpose. -->
+          <div id="studyChaptersBody" hidden></div>
         </div>
       </section>
     </div>
 
     <!-- ================================= ROOT VIEW ========================== -->
     <div id="studyRoot">
+      <!-- ======================== THE ONE SECTION: STUDY MATERIAL ==========
+           One heading, thirteen folders on disk, zero lists maintained by
+           hand. The grid below is rendered from data/study-manifest.json -
+           every folder under content/study-material/ becomes a card with its
+           material count on it, so a folder added today appears here tonight
+           without a line of markup being touched. -->
       <section class="section" style="padding-top:0">
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <span class="eyebrow">Pick a subject</span>
-              <h2>Where you want to start reading</h2>
-              <p>Each subject opens on its categories. Nothing here launches a test — that is a separate door
-                 and it stays separate.</p>
+              <span class="eyebrow">Study Material</span>
+              <h2>Choose the subject you are reading</h2>
+              <p>One folder per subject, one list of files per folder — pick one and read or download
+                 whatever is filed under it. Nothing here launches a test.</p>
             </div>
-            <a class="btn btn-soft" href="practice.html">I want to solve questions →</a>
+            <a class="btn btn-soft" href="study-material.html">All material →</a>
           </div>
-          <div id="studySubjects" class="grid grid-2 subjects-grid">
+          <div id="studySubjects" class="grid grid-3 subjects-grid">
             <div class="skeleton" style="height:190px"></div>
             <div class="skeleton" style="height:190px"></div>
           </div>
-        </div>
-      </section>
-
-      <!-- ----------------------------------------------- the chapter chain -->
-      <section class="section" style="padding-top:0">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <span class="eyebrow">The chain</span>
-              <h2>How one chapter is put together</h2>
-              <p>The same seven steps for every subject, so you always know what a click will give you.</p>
-            </div>
-          </div>
-          <div class="grid grid-4">
-            <a class="card card-pad reveal" href="study.html"><span class="eyebrow">Step 1</span><h3>Category</h3><p>The folder a chapter sits in — Punjab GK, Polity, Economy.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="study.html"><span class="eyebrow">Step 2</span><h3>Chapter</h3><p>The topic itself, kept whole across every part it is split into.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="study.html"><span class="eyebrow">Step 3</span><h3>Part</h3><p>Long chapters are split so you can finish one sitting instead of none.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="study-notes.html"><span class="eyebrow">Step 4</span><h3>Study notes</h3><p>The reading itself — plain sentences, no padding, no sales pitch.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="pdfs.html"><span class="eyebrow">Step 5</span><h3>PDF notes</h3><p>The same notes as a file you can keep offline on a slow connection.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="revision.html"><span class="eyebrow">Step 6</span><h3>Revision notes</h3><p>The short version, built for the hour before the paper.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="topic-guides.html"><span class="eyebrow">Step 7</span><h3>Related chapters</h3><p>The chapters that only make sense once you have read these.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="practice.html"><span class="eyebrow">Afterwards</span><h3>Then practise it</h3><p>Reading finishes here. Questions start on the Practice door.</p><p class="ilink">Open →</p></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- --------------------------------------------- every kind of material -->
-      <section class="section" style="padding-top:0">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <span class="eyebrow">The shelves</span>
-              <h2>Every kind of material in Study</h2>
-              <p>Six shelves, all free, all readable without an account.</p>
-            </div>
-          </div>
-          <div class="grid grid-3">
-            <a class="card card-pad reveal" href="study-notes.html"><span class="eyebrow">Notes</span><h3>Study notes</h3><p>The long-form reading, chapter by chapter.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="subject-guides.html"><span class="eyebrow">Guides</span><h3>Subject guides</h3><p>What a whole subject actually contains, and in what order.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="topic-guides.html"><span class="eyebrow">Guides</span><h3>Topic guides</h3><p>One chapter at a time, read end to end.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="pdfs.html"><span class="eyebrow">Offline</span><h3>Free PDFs</h3><p>Downloadable notes and magazines for when the signal drops.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="personal-notes.html"><span class="eyebrow">Notes</span><h3>Personal notes</h3><p>Short field notes written the way you would write them.</p><p class="ilink">Open →</p></a>
-            <a class="card card-pad reveal" href="articles.html"><span class="eyebrow">Long reads</span><h3>Preparation guides</h3><p>One long read each on how to approach a subject properly.</p><p class="ilink">Open →</p></a>
-          </div>
+          <p class="material-count" id="studySubjectsMeta" aria-live="polite"></p>
         </div>
       </section>
 
@@ -219,14 +204,16 @@
             </div>
             <div class="faq-item">
               <h3>How do I move through a subject?</h3>
-              <p>Open the subject, choose a category, then a chapter, then a part. Inside you get the study
-                 notes, the PDF of the same notes, a revision sheet, and links to the related chapters you
-                 should read beside it.</p>
+              <p>Open the subject and you land on its Study Material: every file filed under it under one
+                 heading, newest and featured first. Use the search box to narrow it by title or keyword, or
+                 choose <em>Browse chapters</em> to walk the category → chapter → part tree when you would
+                 rather follow the syllabus than skim a shelf.</p>
             </div>
             <div class="faq-item">
               <h3>Is the material available in Punjabi?</h3>
-              <p>Yes. Where a note has been written in Punjabi, the Punjabi version is the one you land on and
-                 English is one tap away. Neither language is treated as the translation of the other.</p>
+              <p>Yes. Each card states the language the file itself is written in, so a Punjabi file reads
+                 ਪੰਜਾਬੀ on the card before you open it. Where a note exists in both, neither language is
+                 treated as the translation of the other.</p>
             </div>
             <div class="faq-item">
               <h3>Do I have to pay for anything?</h3>

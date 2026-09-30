@@ -78,6 +78,8 @@ import sys
 from pathlib import Path
 from urllib.parse import quote
 
+import study_material            # data/study-manifest.json (Study's subject list)
+
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
                             make_node, make_edge, node_id, link_floor)
@@ -93,7 +95,7 @@ BYLINE = "House of Aspirants Editorial Team"
 BRAND_SUFFIX = " | House of Aspirants"
 
 # Generated page prefixes - used for idempotent cleanup of stale output.
-GEN_PREFIXES = ("note-", "ca-", "magazine-", "strategy-", "session-", "recruit-",
+GEN_PREFIXES = ("material-", "note-", "ca-", "magazine-", "strategy-", "session-", "recruit-",
                 "blog-", "news-", "announce-", "expected-", "pyq-",
                 # Phase 4 collections. The prefixes are deliberately NOT the
                 # collection names: build_landing_pages.py already owns
@@ -1100,6 +1102,9 @@ HUBS = {
 # hand - seo_check fails the build if any hub drops out of the chrome.
 # =============================================================================
 HUB_NAV = {                          # hub file stem -> data-nav highlight key
+    # Study Material is a Study page like every other hub in the Study menu,
+    # so it lights up the same `notes` key the drawer and header already use.
+    "study-material": "notes",
     "study-notes": "notes", "current-affairs": "ca", "magazine": "magazine",
     "strategy": "strategy", "live-sessions": "sessions",
     "recruitment": "recruitment", "blogs": "blogs", "news": "news",
@@ -1152,6 +1157,11 @@ FOOT_EXTRA = [("search.html", "Search", "\U0001f50d")]
 # Front matter contract per collection: required + optional keys (used for
 # validation and for the authoring guide in content/README.md).
 REQUIRED_FIELDS = {
+    # Study material is discovered, never authored: title and description are
+    # DERIVED from the file name when the file does not carry them, so the two
+    # keys are guaranteed present by the time validation runs and are listed
+    # here only as the contract a metadata.json override has to satisfy.
+    "study-material": ["title", "description"],
     "notes": ["title", "description", "published", "subject"],
     "current-affairs": ["title", "description", "published"],
     "magazine": ["title", "description", "published", "month"],
@@ -1222,6 +1232,14 @@ BLOG_CATEGORIES = ("preparation-experience", "study-plans", "time-management",
                    "exam-analysis")
 
 OPTIONAL_FIELDS = {
+    # Study material: everything the optional metadata.json sidecar may carry.
+    # Dates are optional on purpose - a file with no date in its name and no
+    # override simply has none, and the card shows no "last updated" rather
+    # than inventing one (a fabricated date would drift on every rebuild).
+    "study-material": ["published", "updated", "language", "keywords",
+                       "featured", "new", "popular", "readingTime",
+                       "difficulty", "subject", "subjects", "exams", "tags",
+                       "category", "slug", "file", "pdf", "author"],
     "notes": ["updated", "author", "difficulty", "exams", "subjects", "tags",
               "pdf", "slug"],
     "magazine": ["updated", "month", "pdf", "quiz", "highlights", "tags",
@@ -1410,7 +1428,7 @@ def validate_meta(coll, slug, meta, where, required=None):
         if meta.get(dkey) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(meta[dkey])):
             err(f"{where}: {dkey} must be YYYY-MM-DD (got {meta[dkey]!r})")
     # --- Phase 2 publishing fields ------------------------------------------
-    for bkey in ("featured", "draft"):
+    for bkey in ("featured", "draft", "new", "popular"):
         if bkey in meta and not isinstance(meta[bkey], bool):
             if str(meta[bkey]).strip().lower() in ("yes", "1", "no", "0"):
                 meta[bkey] = str(meta[bkey]).strip().lower() in ("yes", "1", "true")
@@ -1418,13 +1436,20 @@ def validate_meta(coll, slug, meta, where, required=None):
                 err(f"{where}: {bkey} must be true or false (got {meta[bkey]!r})")
                 meta[bkey] = False
     if meta.get("language") is not None:
-        want = "pa" if where.endswith(".pa.md") else "en"
         got = str(meta["language"]).strip().lower()
         if got not in ("en", "pa"):
             err(f"{where}: language must be 'en' or 'pa' (got {meta['language']!r})")
-        elif got != want:
-            err(f"{where}: language {got!r} contradicts the file variant "
-                f"(a .pa.md file publishes as 'pa', a .md file as 'en')")
+        elif coll == STUDY_DIR:
+            # Study material's language is the language the FILE is written
+            # in, read from its name or its sidecar. It says nothing about
+            # which URL the page lives at, so it is never held to the .pa.md
+            # variant rule that governs authored documents.
+            meta["language"] = got
+        else:
+            want = "pa" if where.endswith(".pa.md") else "en"
+            if got != want:
+                err(f"{where}: language {got!r} contradicts the file variant "
+                    f"(a .pa.md file publishes as 'pa', a .md file as 'en')")
     if meta.get("readingTime") is not None and (
             not str(meta["readingTime"]).isdigit() or int(meta["readingTime"]) < 1):
         err(f"{where}: readingTime must be a whole number of minutes "
@@ -1840,6 +1865,385 @@ def breadcrumb_node(crumbs):
 
 
 # =============================================================================
+# 4b. STUDY MATERIAL - folder discovery, file-name defaults, sidecar overrides
+# -----------------------------------------------------------------------------
+# content/study-material/<subject>/<file> is the Study system's only authoring
+# surface, and nothing in this block is a list of anything. The folders on disk
+# ARE the subjects, the file names ARE the titles, and the two metadata.json
+# sidecars only decorate what was already derived. Drop a file, run the build,
+# and it is discovered: no page to write, no registry to append to, no JSON to
+# edit by hand.
+#
+# The PDFs are described twice - once here, once by build_content_manifest.ts
+# (ci.sh diffs both answers) - so the file-name derivation is deliberately the
+# SAME helpers the PDF drops use: title, slug, date, description. One naming
+# rule across the whole platform.
+# =============================================================================
+STUDY_DIR = "study-material"           # content/study-material/
+STUDY_EXTS = (".md", ".json")          # .pdf arrives through the scanner
+STUDY_JSON_META = {                    # keys a .json file may carry itself
+    "title", "description", "keywords", "language", "published", "updated",
+    "featured", "new", "popular", "difficulty", "readingTime", "subject",
+    "subjects", "exams", "tags", "category", "slug", "author",
+}
+
+
+def _study_json(path, what):
+    """Read a JSON sidecar/file, failing the build loudly and precisely."""
+    where = str(path.relative_to(ROOT))
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        return None
+    except (UnicodeDecodeError, json.JSONDecodeError) as e:
+        err(f"{where}: {what} is not valid JSON: {e}")
+        return None
+    if data is None:
+        return None
+    if not isinstance(data, dict):
+        err(f"{where}: {what} must be a JSON object")
+        return None
+    return data
+
+
+def study_registry():
+    """The optional subject registry: content/study-material/metadata.json.
+
+    Read once per subject-name lookup by design - a sidecar can change between
+    runs and every reader (the shelf, the nav, the Study renderer) must see the
+    same answer within one build."""
+    return _study_json(CONTENT / STUDY_DIR / "metadata.json", "subject registry")
+
+
+def study_subject_names():
+    """folder id -> display name, from the optional subject registry.
+
+    A folder is a subject whether or not it is listed here: anything missing is
+    derived from the folder name, and a subject listed with no folder is
+    ignored - so content/study-material/metadata.json can decorate a page but
+    can never invent one."""
+    reg = study_registry()
+    out = {}
+    for fid, cfg in (reg or {}).get("subjects", {}).items():
+        if isinstance(cfg, str):
+            cfg = {"name": cfg}
+        if isinstance(cfg, dict):
+            out[str(fid)] = str(cfg.get("name") or fid)
+    return out
+
+
+def study_subject_name(folder):
+    return study_subject_names().get(folder) or folder.replace("-", " ").title()
+
+
+def study_files(subject):
+    """The content files of one subject folder, sorted - never metadata.json."""
+    d = CONTENT / STUDY_DIR / subject
+    if not d.is_dir():
+        return []
+    return sorted(p for p in d.iterdir()
+                  if p.is_file() and not p.name.lower().startswith("readme")
+                  and p.name != "metadata.json"
+                  and p.suffix.lower() in (".pdf",) + STUDY_EXTS)
+
+
+def study_paths():
+    """Every non-PDF material file, one level deep: content/<coll>/<subject>/.
+
+    Depth is enforced, not assumed: anything at the root of the collection
+    (this README, the subject registry) is configuration, and anything deeper
+    than one folder belongs to no subject, so neither can publish."""
+    cdir = CONTENT / STUDY_DIR
+    if not cdir.is_dir():
+        return []
+    out = []
+    for subject_dir in sorted(p for p in cdir.iterdir()
+                              if p.is_dir() and not p.name.startswith((".", "_"))):
+        out.extend(p for p in sorted(subject_dir.iterdir())
+                   if p.is_file() and not p.name.lower().startswith("readme")
+                   and p.name != "metadata.json"
+                   and p.suffix.lower() in STUDY_EXTS)
+    return out
+
+
+def study_overrides(subject, filename):
+    """The metadata.json sitting beside a file, keyed by that file's name.
+
+    Two shapes are accepted and nothing else, so a sidecar can never be
+    misread: the documented map keyed by file name, and - for a folder holding
+    exactly one material file - a plain object applied to that file."""
+    data = _study_json(CONTENT / STUDY_DIR / subject / "metadata.json",
+                       "study material overrides")
+    if not data:
+        return {}
+
+    def _clean(node):
+        # `$note`, `_comment` and friends are for the person reading the file;
+        # they are never a field of the document it describes.
+        return {k: v for k, v in node.items() if not str(k).startswith(("$", "_"))}
+
+    node = data.get(filename)
+    if isinstance(node, dict):
+        return _clean(node)
+    if any(str(k).lower().endswith((".pdf", ".md", ".json")) for k in data):
+        return {}                     # a filename map without this file's key
+    files = study_files(subject)
+    if len(files) == 1 and files[0].name == filename:
+        return _clean(data)
+    return {}
+
+
+def study_auto_meta(path, subject):
+    """What the build knows about a file before anything is written down.
+
+    The name carries the title, the language and any date; the subject comes
+    from the folder; the description is generated in the site's 140-160
+    character window. The generator is study-specific rather than the PDF one
+    on purpose: an .md or .json file is not something you "download as a PDF",
+    and a description that lies about the format is worse than no description."""
+    stem = path.stem
+    title = pdf_title_from_name(stem) or path.name
+    name = study_subject_name(subject)
+    meta = {
+        "title": title,
+        "description": study_description(title, name),
+        "category": name,
+        "keywords": [title, name, "Study Material", stem],
+        "language": "pa" if (re.search(r"(^|[^a-z])(punjabi|panjabi|gurmukhi)"
+                                       r"([^a-z]|$)", stem.lower())
+                             or any("\u0a00" <= c <= "\u0a7f" for c in stem))
+                    else "en",
+    }
+    when = pdf_date_from_name(stem)
+    if when:
+        meta["published"] = when
+    return meta
+
+
+def study_description(title, subject):
+    """140-160 characters, assembled from the title and the subject.
+
+    Same window as every other page on the site, but the clauses are true of
+    any file format - PDF, Markdown or JSON - because this generator has to
+    describe a file it has never been told the type of."""
+    text = f"{title} - free study material from House of Aspirants."
+    clauses = [
+        f" {subject} material, filed straight from the file name.",
+        " Read it online or keep it for offline revision.",
+        " No sign-up, no email wall, no paid tier.",
+        " Listed under Study Material with its language and reading time.",
+        " Free for every aspirant.",
+    ]
+    for _ in range(4):
+        for clause in clauses:
+            if len(text) >= 140:
+                break
+            if len(text) + len(clause) <= 160:
+                text += clause
+        if len(text) >= 140:
+            break
+    if len(text) < 140:
+        text += " Free to read and download, generated from the file name."
+    while len(text) > 160:
+        text = text.rsplit(" ", 1)[0]
+    if not (140 <= len(text) <= 160):          # pragma: no cover - guarded gate
+        err(f"generated study description for {title!r} is {len(text)} chars "
+            f"(the site range is 140-160)")
+    return text
+
+
+def study_merge(base, *layers):
+    """Later layers win; blanks never erase a value that was already derived."""
+    out = dict(base)
+    for layer in layers:
+        if not isinstance(layer, dict):
+            continue
+        for k, v in layer.items():
+            if v not in (None, "", []):
+                out[k] = v
+    return out
+
+
+def study_json_document(raw):
+    """-> (meta, markdown) for a .json study file.
+
+    A JSON file is its own metadata file: title, description, language and
+    dates are read from its keys when present. Whatever it does not describe
+    about itself is rendered - string content as Markdown, sections as
+    headings, and anything else as a fenced block, because a study file that
+    renders as unreadable braces is a study file nobody opens."""
+    data = _study_json_flex(raw)
+    if not isinstance(data, dict):
+        data = {"content": raw.strip()}
+    meta = {k: v for k, v in data.items() if k in STUDY_JSON_META}
+    rest = {k: v for k, v in data.items() if k not in STUDY_JSON_META}
+    body = data.get("content") or data.get("body") or data.get("text") or ""
+    if not body and isinstance(data.get("sections"), list):
+        parts = []
+        for i, sec in enumerate(data["sections"], 1):
+            if isinstance(sec, str):
+                parts.append(sec)
+            elif isinstance(sec, dict):
+                head = sec.get("heading") or sec.get("title") or f"Section {i}"
+                text = sec.get("text") or sec.get("content") or ""
+                items = sec.get("items")
+                parts.append(f"## {head}\n\n{text}".rstrip())
+                if isinstance(items, list) and items:
+                    parts.append("\n".join(f"- {x}" for x in items))
+        body = "\n\n".join(p for p in parts if p)
+    if not body and rest:
+        body = ("```json\n"
+                + json.dumps(rest, indent=2, ensure_ascii=False)
+                + "\n```")
+    return meta, str(body)
+
+
+def _study_json_flex(raw):
+    try:
+        return json.loads(raw)
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        return None
+
+
+def study_document(path, subject):
+    """-> (meta, body): file name, then the file's own words, then sidecar.
+
+    Nothing here requires the author to know what a front matter block is: an
+    empty Markdown file still earns a title, a description, a subject, a
+    language and a keyword list."""
+    auto = study_auto_meta(path, subject)
+    if path.suffix.lower() == ".json":
+        raw = path.read_text(encoding="utf-8")
+        file_meta, body = study_json_document(raw)
+        where = str(path.relative_to(ROOT))
+        apply_aliases(file_meta, where)
+        merged = study_merge(auto, file_meta)
+    else:
+        raw = path.read_text(encoding="utf-8")
+        where = str(path.relative_to(ROOT))
+        try:
+            file_meta, body = parse_front_matter(raw, where)
+        except ValueError as e:
+            err(f"{where}: {e}")
+            raise SystemExit(1)
+        apply_aliases(file_meta, where)
+        merged = study_merge(auto, file_meta)
+    merged = study_merge(merged, study_overrides(subject, path.name))
+    merged["category"] = str(merged.get("category") or study_subject_name(subject))
+    return merged, body
+
+
+def stamp_study_fields(records):
+    """The shelf's own fields: subject, language, size, badges, haystack.
+
+    Derived once, from the path and the sidecar, so the shelf, the hub page,
+    the search index and the JSON-LD can never disagree about what a file is.
+    Nothing here reads the clock: a "new" badge has to come from metadata, or
+    a rebuild on a different day would produce a different tree."""
+    names = study_subject_names()
+    for rec in records:
+        rel = Path(rec["path"])
+        parts = rel.parts                       # content/study-material/<s>/<f>
+        folder = parts[2] if len(parts) > 3 else ""
+        meta = rec.get("meta") or {}
+        rec["studySubject"] = folder
+        rec["subjectName"] = names.get(folder) or study_subject_name(folder)
+        rec["category"] = str(meta.get("category") or rec["subjectName"])
+        rec["language"] = str(meta.get("language") or "en")
+        rec["type"] = rel.suffix.lower().lstrip(".")
+        full = ROOT / rel
+        rec["size"] = full.stat().st_size if full.exists() else 0
+        rec["sizeLabel"] = file_size_label(full)
+        said = int((rec.get("meta") or {}).get("readingTime") or 0)
+        if said > 0:
+            rec["readingMinutes"] = said          # the author said it out loud
+        elif rec.get("type") == "pdf" and int(rec.get("pdfPages") or 0) > 0:
+            # The body text the build writes for a PDF is a summary of it, not
+            # the file, so word-count would read "1 min" for a 40-page chapter.
+            # The page count is the only honest estimate available: one page a
+            # minute at the 200-words-a-minute pace the site assumes elsewhere.
+            rec["readingMinutes"] = max(1, int(rec["pdfPages"]))
+        rec["source"] = f"{DOMAIN}/{quote(str(rel))}" if rec.get("path") else ""
+        rec["badges"] = [b for b in ("featured", "new", "popular")
+                         if rec.get(b)]
+        hay = " ".join([str(rec.get("title") or ""),
+                        str(rec.get("description") or ""),
+                        rel.name, folder, rec["subjectName"],
+                        " ".join(str(k) for k in (rec.get("keywords") or [])),
+                        " ".join(str(s) for s in (rec.get("subjects") or [])),
+                        " ".join(str(e) for e in (rec.get("exams") or []))])
+        rec["search"] = re.sub(r"\s+", " ", hay).strip().lower()
+
+
+def study_date_label(iso):
+    """`2026-09-30` -> `30 Sep 2026`; anything unparseable stays unstated
+    rather than being shown as a date the file never had."""
+    s = str(iso or "")[:10]
+    try:
+        d = datetime.date.fromisoformat(s)
+    except ValueError:
+        return ""
+    return f"{d.day} {d.strftime('%b %Y')}"
+
+
+def study_sort_key(rec):
+    """STEP 7: Featured -> Newest -> Alphabetical, computed not maintained.
+
+    One sort key, applied once at build time, so the hub page, the sitemap
+    order, the search results and the Study renderer can never disagree about
+    what a student sees first."""
+    when = str(rec.get("updated") or rec.get("published") or "")[:10]
+    try:
+        newest = -int(when.replace("-", ""))
+    except ValueError:
+        newest = 0
+    return (0 if rec.get("featured") else 1, newest,
+            str(rec.get("title") or "").lower())
+
+
+def study_card(r, facets=None):
+    """One Study Material card - STEP 6 in one markup block.
+
+    Title, short description, language, last updated, reading time, file size,
+    optional Featured/New/Popular badges and a Download/Open button. It is a
+    <div> rather than an <a> because the card holds two destinations - the
+    generated page and the file itself - and a browser will not forgive an
+    anchor inside an anchor: the title is the link, the button is the action."""
+    badge_kind = {"featured": ("success", "Featured"),
+                  "new": ("warn", "New"),
+                  "popular": ("muted", "Popular")}
+    badges = "".join(
+        f'<span class="badge badge-{badge_kind[b][0]}">{badge_kind[b][1]}</span>'
+        for b in (r.get("badges") or []) if b in badge_kind)
+    meta = []
+    lang = str(r.get("language") or ("pa" if r.get("lang") == "pa" else "en"))
+    meta.append("ਪੰਜਾਬੀ" if lang == "pa" else "English")
+    when = study_date_label(r.get("updated") or r.get("published"))
+    if when:
+        meta.append(f"Updated {when}")
+    if r.get("readingMinutes"):
+        meta.append(f'{r["readingMinutes"]} min read')
+    if r.get("sizeLabel"):
+        meta.append(str(r["sizeLabel"]))
+    source = pdf_href(str(r.get("path") or ""))
+    is_pdf = str(r.get("type") or "") == "pdf"
+    button = (f'<a class="btn btn-primary" href="{esc(source)}" download>'
+              f'⬇ Download</a>' if is_pdf and source else
+              f'<a class="btn btn-soft" href="{esc(source)}">Open file</a>'
+              if source else "")
+    attrs = filter_attrs(r, facets) if facets else ""
+    return (f'<div class="card card-pad reveal study-card"{attrs}>'
+            f'{f"""<div class="card-badges">{badges}</div>""" if badges else ""}'
+            f'<span class="eyebrow">{esc(str(r.get("category") or "Study Material"))}</span>'
+            f'<h3><a href="{esc(r["file"])}">{esc(r["title"])}</a></h3>'
+            f'<p class="muted">{esc(r["description"])}</p>'
+            f'<p class="study-meta">{esc(" · ".join(m for m in meta if m))}</p>'
+            + (f'<p class="btn-row" style="margin-top:14px">{button}</p>'
+               if button else "")
+            + '</div>')
+
+
+# =============================================================================
 # 5. CONTENT LOADING
 # =============================================================================
 def load_subject_ids():
@@ -1966,7 +2370,7 @@ def build_record(coll, cfg, slug, path, index, lang, meta=None, body=None,
                   "references", "faq", "schemaType", "topic", "book",
                   "book_author", "publisher", "poster", "recording",
                   "resources", "important_questions", "revision_notes",
-                  "cover_alt"):
+                  "cover_alt", "new", "popular"):
         if meta.get(extra) not in (None, "", []):
             record[extra] = meta[extra]
     # `toc:` (alias `tableOfContents:`) is a SHOW/HIDE flag; `record["toc"]`
@@ -2406,14 +2810,17 @@ def pdf_eyebrow(record, index=None):
 
 
 def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
-                     index, folder="", drop=None):
+                     index, folder="", drop=None, extra=None):
     """meta + body derived from the file name -> a normal document record.
 
     `folder` is the subfolder the file was dropped in ("english"), kept on the
     record so a second file of the same name can say which one it is.
     `drop` is the scanner's row for this file - the facts it read out of the
     PDF itself (page count, first-page summary, first-page preview), which no
-    file name could ever have told us."""
+    file name could ever have told us.
+    `extra` is the study material sidecar: whatever the author wrote down for
+    this one file, merged last so it beats every derivation - except the
+    download itself, which is this file and not a link somebody typed."""
     label = NAV_ENTRY.get(coll, (HUBS[coll]["schema_hub"], ""))[0]
     title = pdf_title_from_name(path.stem) or label
     rel = str(path.relative_to(ROOT))
@@ -2440,10 +2847,28 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
             meta["summary"] = summary
         if coll == "magazine" and fname_date:
             meta["month"] = fname_date[:7]    # "Issue 2026-07", from the name
+        if coll == STUDY_DIR:
+            # The scanner read the language out of the file name and the
+            # subject out of the folder; a sidecar may say otherwise. The
+            # generated description is rewritten so it never claims the file
+            # is a PDF when the record also knows its real type.
+            meta["language"] = str(drop.get("language") or "en")
+            meta["category"] = study_subject_name(folder)
+            meta["description"] = study_description(title,
+                                                    study_subject_name(folder))
+            meta["keywords"] = [clip(title, 48), study_subject_name(folder),
+                                "Study Material", path.stem]
+    if extra:
+        meta.update({k: v for k, v in extra.items() if v not in (None, "", [])})
+    if coll != "pdfs":
+        meta["pdf"] = rel                     # not overridable - it is the file
+        meta.setdefault("published", published)
     record = build_record(coll, cfg, slug, path, index, "en",
                           meta=meta,
-                          body=pdf_body_text(title, rel, published, label,
-                                             body_facts),
+                          body=pdf_body_text(str(meta.get("title") or title),
+                                             rel,
+                                             str(meta.get("published") or published),
+                                             label, body_facts),
                           required=required)
     if record is not None:
         record["pdfDrop"] = True
@@ -3822,9 +4247,12 @@ def filter_facets(records, index):
             found["exam"][_slug_facet(e)] = str(e)
         for s in r.get("subjects") or []:
             found["subject"][s] = subject_name(index, s)
-        if r.get("lang"):
-            found["language"][r["lang"]] = ("English" if r["lang"] == "en"
-                                            else "ਪੰਜਾਬੀ")
+        lang_v = str(r.get("language") or r.get("lang") or "")
+        if lang_v:
+            # Study material states its OWN language (read from the file name
+            # or the sidecar); everything else falls back to the page language.
+            found["language"][lang_v] = ("English" if lang_v == "en"
+                                         else "ਪੰਜਾਬੀ")
         if r.get("difficulty"):
             found["difficulty"][_slug_facet(r["difficulty"])] = \
                 str(r["difficulty"])
@@ -3840,10 +4268,11 @@ def filter_facets(records, index):
 
 def filter_attrs(r, facets):
     """data-f-* attributes on one listing card, limited to the facets shown."""
+    lang_v = str(r.get("language") or r.get("lang") or "")
     vals = {
         "exam": [_slug_facet(e) for e in (r.get("exams") or [])],
         "subject": list(r.get("subjects") or []),
-        "language": [r["lang"]] if r.get("lang") else [],
+        "language": [lang_v] if lang_v else [],
         "difficulty": [_slug_facet(r["difficulty"])] if r.get("difficulty") else [],
         "date": [str(r["published"])[:7]] if r.get("published") else [],
         "category": [_slug_facet(r["category"])] if r.get("category") else [],
@@ -3855,10 +4284,15 @@ def filter_attrs(r, facets):
     return out
 
 
-def filter_bar(facets):
-    """The chip row above a listing. Rendered only from real facet values."""
+def filter_bar(facets, labels=None):
+    """The chip row above a listing. Rendered only from real facet values.
+
+    `labels` lets one collection name a facet the way its readers would: on a
+    Study Material shelf the `category` facet IS the subject, and calling it
+    "Category" would be a word the brief explicitly does not want on screen."""
     if not facets:
         return ""
+    labels = {**FILTER_LABEL, **(labels or {})}
     groups = []
     for f in FILTER_FACETS:
         values = facets.get(f)
@@ -3870,8 +4304,8 @@ def filter_bar(facets):
             f'{esc(label)}</button>'
             for v, label in values)
         groups.append(f'<div class="filter-group" role="group" '
-                      f'aria-label="{FILTER_LABEL[f]}">'
-                      f'<span class="fg-label">{FILTER_LABEL[f]}</span>'
+                      f'aria-label="{labels[f]}">'
+                      f'<span class="fg-label">{labels[f]}</span>'
                       f'{chips}</div>')
     return (f'<div class="filter-bar" data-filter-bar>'
             f'{"".join(groups)}'
@@ -3884,6 +4318,9 @@ def filter_bar(facets):
 def hub_cards(coll, items, index, lang="en", facets=None):
     cards = []
     for r in items:
+        if coll == STUDY_DIR:
+            cards.append(study_card(r, facets))
+            continue
         if coll == "pdfs":
             path = pdf_href(r["meta"].get("file", ""))
             cards.append(f'<div class="card card-pad">'
@@ -3964,12 +4401,17 @@ def hub_page(coll, cfg, items, index, exams):
     # --- primary listing ---------------------------------------------------
     if live:
         facets = filter_facets(live, index)
+        # STEP 5: one section, one heading. Study material is never split into
+        # a PDFs list, a notes list and a guides list - every file, whatever it
+        # is, appears under the same heading.
+        heading = "Study Material" if coll == STUDY_DIR else (
+            "Latest notes" if coll == "notes" else "All published")
         head_html = f"""<div class="section-head reveal"><div>
-            <span class="eyebrow">Published</span>
-            <h2>{"Latest notes" if coll == "notes" else "All published"}</h2>
+            <span class="eyebrow">{"Published" if coll != STUDY_DIR else "Every format, one list"}</span>
+            <h2>{heading}</h2>
             <p>{esc(hub["lead"])}</p>
           </div></div>
-          {filter_bar(facets)}
+          {filter_bar(facets, {"category": "Subject"} if coll == STUDY_DIR else None)}
           <div class="grid grid-3" data-filter-list>{hub_cards(coll, live, index, facets=facets)}</div>"""
     else:
         cta_href, cta_text = hub["empty_cta"]
@@ -5289,28 +5731,55 @@ def main():
         cdir = CONTENT / cfg["dir"]
         if not cdir.exists():
             continue
-        for path in sorted(cdir.glob("*.md")):
+        # Study material lives one level deeper - content/study-material/
+        # <subject>/<file> - and takes Markdown and JSON as well as the PDFs
+        # the scanner owns. Every other collection keeps its flat *.md layout.
+        study = (coll == STUDY_DIR)
+        taken = {r["slug"] for r in all_records[coll]}
+        for path in (study_paths() if study else sorted(cdir.glob("*.md"))):
             if path.name in ("README.md",):
                 continue
             name = path.name
-            is_pa = name.endswith(".pa.md")
-            slug = name[:-6] if is_pa else name[:-3]
-            if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", slug):
-                err(f"content/{cfg['dir']}/{name}: filename must be lowercase "
-                    f"letters, digits and hyphens only")
-                continue
-            if is_pa:
-                if not (cdir / f"{slug}.md").exists():
-                    err(f"content/{cfg['dir']}/{name}: Punjabi variant without an "
-                        f"English original ({slug}.md)")
+            if study:
+                subject = path.parent.name
+                is_pa = False   # language is a display field, not a URL, here
+                # Any name is a valid name here. "Chapter 1 Notes.md" gets the
+                # same transliteration and hyphenation a PDF gets, so a file
+                # nobody styled still publishes instead of failing a naming
+                # rule they were never told about.
+                slug = pdf_slug_from_name(path.stem) or ""
+                if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", slug or " "):
+                    err(f"content/{cfg['dir']}/{subject}/{name}: no slug could "
+                        f"be derived from this file name")
                     continue
-            rec = build_record(coll, cfg, slug, path, index, "pa" if is_pa else "en")
+                base, n = slug, 1
+                while slug in taken:
+                    n += 1
+                    slug = f"{base}-{n}"      # deterministic, never a build error
+                taken.add(slug)
+                meta, body = study_document(path, subject)
+                rec = build_record(coll, cfg, slug, path, index, "en",
+                                   meta=meta, body=body)
+            else:
+                is_pa = name.endswith(".pa.md")
+                slug = name[:-6] if is_pa else name[:-3]
+                if not re.fullmatch(r"[a-z0-9][a-z0-9-]*", slug):
+                    err(f"content/{cfg['dir']}/{name}: filename must be lowercase "
+                        f"letters, digits and hyphens only")
+                    continue
+                if is_pa:
+                    if not (cdir / f"{slug}.md").exists():
+                        err(f"content/{cfg['dir']}/{name}: Punjabi variant without an "
+                            f"English original ({slug}.md)")
+                        continue
+                rec = build_record(coll, cfg, slug, path, index,
+                                   "pa" if is_pa else "en")
             if rec is None:
                 continue
             if rec.get("draft"):
                 drafts += 1                 # validated, never published
                 continue
-            (punjabi if is_pa else all_records)[coll].append(rec)
+            (punjabi if (not study and is_pa) else all_records)[coll].append(rec)
 
     # --- PDF drops: data/content-manifest.json is the scanner's view ---------
     # scripts/build_content_manifest.ts walks content/**, derives every file's
@@ -5376,8 +5845,11 @@ def main():
                     f"the sidecar stamped {published!r}/{updated!r} - run node "
                     f"scripts/build_content_manifest.ts")
                 continue
-            rec = build_pdf_record(coll, cfg, path, slug, published, updated,
-                                   fname_date, index, folder, drop)
+            rec = build_pdf_record(
+                coll, cfg, path, slug, published, updated, fname_date, index,
+                folder, drop,
+                study_overrides(folder, path.name) if coll == STUDY_DIR
+                else None)
             if rec is None:
                 continue
             all_records[coll].append(rec)
@@ -5393,6 +5865,11 @@ def main():
         return 1
 
     # A generated title is made unique before anything renders from it.
+    # The shelf's own fields - subject, language, size, badges, the one string
+    # the shelf searches - are stamped once, from the path and the sidecar, so
+    # the hub page, the Study renderer and the search index can never disagree
+    # about what a file is.
+    stamp_study_fields(all_records[STUDY_DIR])
     dedupe_pdf_titles(all_records)
     link_related_pdfs(all_records, punjabi)
     if pdf_drops:
@@ -5414,7 +5891,15 @@ def main():
 
     # deterministic order: newest first, then title
     for coll in all_records:
-        all_records[coll].sort(key=lambda r: (r["published"], r["title"]), reverse=True)
+        if coll == STUDY_DIR:
+            # STEP 7 has its own answer - Featured -> Newest -> Alphabetical -
+            # computed once here so the hub page, the sitemap, the search rows
+            # and the Study renderer all read the same first card. The general
+            # rule below would flatten it straight back out.
+            all_records[coll].sort(key=study_sort_key)
+        else:
+            all_records[coll].sort(key=lambda r: (r["published"], r["title"]),
+                                   reverse=True)
         punjabi[coll].sort(key=lambda r: (r["published"], r["title"]), reverse=True)
     if drafts:
         info(f"{drafts} draft document(s) validated but not published")
@@ -5464,6 +5949,14 @@ def main():
                                    if k in rec} | {
                 "path": rec["path"],
                 "category": str(rec.get("category") or ""),
+                # Study material carries the shelf's own fields (STEP 6/7/9):
+                # subject, language, file size, badges and the haystack the
+                # Study renderer searches. Scalars only - the page itself is
+                # the long form, the manifest stays a listing.
+                **({k: rec[k] for k in ("language", "subjectName",
+                                        "studySubject", "size", "sizeLabel",
+                                        "type", "source", "badges", "search")
+                    if k in rec}),
                 **({"author": str(rec["author"])} if rec.get("author") else {}),
                 **({"reviewedBy": str(rec["reviewedBy"])} if rec.get("reviewedBy") else {}),
                 **({"difficulty": str(rec["difficulty"])} if rec.get("difficulty") else {}),
@@ -5621,6 +6114,15 @@ def main():
             landing_pages = value
     write_content_graph(ctx, index, exams, articles, landing_pages,
                         [r for r in rendered if r["lang"] == "en"])
+
+    # ---- Study subject registry ------------------------------------------
+    # data/study-manifest.json: the folders on disk plus the counts above, for
+    # the Study menu in core.js and the subject grid on study.html. Written
+    # before the content manifest so a single build always leaves both files
+    # describing the same run.
+    study_manifest = study_material.build(all_records[STUDY_DIR], study_registry())
+    info(f"study subjects: {len(study_manifest['subjects'])} folder(s), "
+         f"{study_manifest['total']} material(s) -> data/study-manifest.json")
 
     # ---- manifest ---------------------------------------------------------
     # `drops` is the scanner's inventory, carried through byte for byte: the

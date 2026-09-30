@@ -3,6 +3,14 @@
   "domain": "https://houseofaspirants.in",
   "hubs": [
     {
+      "collection": "study-material",
+      "file": "study-material.html",
+      "url": "https://houseofaspirants.in/study-material",
+      "title": "Free Study Material for Punjab Competitive Exams",
+      "description": "Free study material for Punjab Police, PSSSB and PPSC exams - PDFs, notes and downloads for every subject, discovered from the files themselves with no sign-up.",
+      "count": 2
+    },
+    {
       "collection": "notes",
       "file": "study-notes.html",
       "url": "https://houseofaspirants.in/study-notes",
@@ -96,7 +104,7 @@
       "url": "https://houseofaspirants.in/pdfs",
       "title": "Free PDFs for Punjab Exams | House of Aspirants",
       "description": "Free downloadable PDFs for Punjab exam preparation - notes, question sets and revision sheets, each with a subject, exam tags and a direct download button.",
-      "count": 2
+      "count": 0
     },
     {
       "collection": "personal-notes",
@@ -161,6 +169,12 @@
       "description": "Gurpreet Singh - Founder, House of Aspirants. Credentials, topics covered and every document written and reviewed under this byline on House of Aspirants. Free"
     },
     {
+      "file": "archive-category-computer.html",
+      "url": "https://houseofaspirants.in/archive-category-computer",
+      "title": "Computer | House of Aspirants",
+      "description": "Every document categorised as Computer on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
       "file": "search.html",
       "url": "https://houseofaspirants.in/search",
       "title": "Search | House of Aspirants",
@@ -204,28 +218,67 @@
       "path": "content/monthly-magazine/current-affairs-july .pdf",
       "category": "",
       "pdf": "content/monthly-magazine/current-affairs-july .pdf"
-    }
-  ],
-  "pdfs": [
-    {
-      "title": "Fundamentals of Computer Punjabi",
-      "description": "Download Fundamentals of Computer Punjabi as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.",
-      "path": "content/pdfs/chapter 1 /fundamentals-of-computer-punjabi.pdf",
-      "subjects": [],
-      "exams": [],
-      "lang": "en",
-      "url": "https://houseofaspirants.in/pdfs"
     },
     {
-      "title": "Fundamentals of Computer English",
-      "description": "Download Fundamentals of Computer English as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.",
-      "path": "content/pdfs/chapter 1 /fundamentals-of-Computer-english.pdf",
+      "collection": "study-material",
+      "file": "material-fundamentals-of-computer-punjabi.html",
+      "url": "https://houseofaspirants.in/material-fundamentals-of-computer-punjabi",
+      "title": "Fundamentals of Computer Punjabi",
+      "description": "Computer fundamentals in Punjabi: MS Office, internet, networking, operating systems and cyber basics for Punjab Police and PSSSB aspirants, free to read.",
+      "published": "2026-09-30",
+      "updated": "2026-09-30",
       "subjects": [],
+      "tags": [],
       "exams": [],
+      "readingMinutes": 45,
       "lang": "en",
-      "url": "https://houseofaspirants.in/pdfs"
+      "featured": false,
+      "path": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+      "category": "Computer",
+      "language": "pa",
+      "subjectName": "Computer",
+      "studySubject": "computer",
+      "size": 2374329,
+      "sizeLabel": "2.3 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+      "badges": [
+        "new"
+      ],
+      "search": "fundamentals of computer punjabi computer fundamentals in punjabi: ms office, internet, networking, operating systems and cyber basics for punjab police and psssb aspirants, free to read. fundamentals-of-computer-punjabi.pdf computer computer computer fundamentals punjabi ਪੰਜਾਬੀ ਕੰਪਿਊਟਰ ਨੋਟਸ punjab police computer notes ms office punjabi psssb computer notes",
+      "pdf": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf"
+    },
+    {
+      "collection": "study-material",
+      "file": "material-fundamentals-of-computer.html",
+      "url": "https://houseofaspirants.in/material-fundamentals-of-computer",
+      "title": "Fundamentals of Computer",
+      "description": "Download the Fundamentals of Computer notes as a PDF: MS Office, internet, networking, operating systems and cyber basics for Punjab Police and PSSSB exams.",
+      "published": "2026-09-30",
+      "updated": "2026-09-30",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 45,
+      "lang": "en",
+      "featured": true,
+      "path": "content/study-material/computer/fundamentals-of-computer.pdf",
+      "category": "Computer",
+      "language": "en",
+      "subjectName": "Computer",
+      "studySubject": "computer",
+      "size": 2128837,
+      "sizeLabel": "2.0 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/computer/fundamentals-of-computer.pdf",
+      "badges": [
+        "featured"
+      ],
+      "search": "fundamentals of computer download the fundamentals of computer notes as a pdf: ms office, internet, networking, operating systems and cyber basics for punjab police and psssb exams. fundamentals-of-computer.pdf computer computer computer fundamentals punjab police computer notes ms office notes internet and networking cyber security basics psssb computer notes",
+      "pdf": "content/study-material/computer/fundamentals-of-computer.pdf"
     }
   ],
+  "pdfs": [],
   "drops": [
     {
       "path": "content/monthly-magazine/august-2026-english.pdf",
@@ -305,6 +358,7 @@
     }
   ],
   "counts": {
+    "study-material": 2,
     "notes": 0,
     "current-affairs": 0,
     "magazine": 2,
@@ -316,7 +370,7 @@
     "announcements": 0,
     "expected-mcqs": 0,
     "previous-year-questions": 0,
-    "pdfs": 2,
+    "pdfs": 0,
     "personal-notes": 0,
     "subject-guides": 0,
     "topic-guides": 0,

@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 72,
-  "edges": 184,
+  "nodes": 78,
+  "edges": 219,
   "silos": 35,
-  "clusters": 37,
+  "clusters": 42,
   "pillars": 34
  },
  "nodes": [
@@ -38,6 +38,18 @@
    "exams": [],
    "tags": [],
    "hub": "announcements.html"
+  },
+  {
+   "id": "archive-category-computer.html",
+   "url": "/archive-category-computer.html",
+   "type": "archive",
+   "template": "",
+   "title": "Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
   },
   {
    "id": "archives.html",
@@ -124,8 +136,8 @@
    "hub": ""
   },
   {
-   "id": "content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
-   "url": "/content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
+   "id": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "url": "/content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -136,8 +148,8 @@
    "hub": ""
   },
   {
-   "id": "content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
-   "url": "/content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
+   "id": "content/study-material/computer/fundamentals-of-computer.pdf",
+   "url": "/content/study-material/computer/fundamentals-of-computer.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -616,6 +628,54 @@
    "hub": "magazine.html"
   },
   {
+   "id": "material-fundamentals-of-computer",
+   "url": "/material-fundamentals-of-computer",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamentals-of-computer-punjabi",
+   "url": "/material-fundamentals-of-computer-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamentals-of-computer-punjabi.html",
+   "url": "/material-fundamentals-of-computer-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Fundamentals of Computer Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-fundamentals-of-computer.html",
+   "url": "/material-fundamentals-of-computer.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Fundamentals of Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "mock.html",
    "url": "/mock.html",
    "type": "page",
@@ -832,6 +892,18 @@
    "hub": "strategy.html"
   },
   {
+   "id": "study-material.html",
+   "url": "/study-material.html",
+   "type": "hub",
+   "template": "",
+   "title": "Free Study Material for Punjab Competitive Exams",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "study-notes.html",
    "url": "/study-notes.html",
    "type": "hub",
@@ -936,14 +1008,56 @@
    "weight": 1
   },
   {
-   "from": "archives.html",
+   "from": "archive-category-computer.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archives.html",
+   "from": "archive-category-computer.html",
    "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-category-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -967,19 +1081,13 @@
   },
   {
    "from": "archives.html",
-   "to": "punjab-exams.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "study-notes.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1320,6 +1428,18 @@
    "weight": 1
   },
   {
+   "from": "magazine-august-2026-english.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "magazine-august-2026-english.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
    "from": "magazine-current-affairs-july.html",
    "to": "content/monthly-magazine/current-affairs-july%20.pdf",
    "rel": "contextual",
@@ -1374,6 +1494,18 @@
    "weight": 1
   },
   {
+   "from": "magazine-current-affairs-july.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "magazine-current-affairs-july.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
    "from": "magazine.html",
    "to": "index.html",
    "rel": "contextual",
@@ -1422,6 +1554,138 @@
    "weight": 1
   },
   {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "magazine-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "content/study-material/computer/fundamentals-of-computer.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "magazine-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "magazine-current-affairs-july.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
    "from": "news.html",
    "to": "announcements.html",
    "rel": "contextual",
@@ -1466,18 +1730,6 @@
   {
    "from": "pdfs.html",
    "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -1832,6 +2084,36 @@
   {
    "from": "strategy.html",
    "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/fundamentals-of-computer.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2279,6 +2561,9 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-computer.html",
    "clusters": [
+    "category-computer-fundamentals-of-computer.html",
+    "category-computer-mobile-phones.html",
+    "topic-computer-fundamentals-of-computers-part1.html",
     "topic-computer-mobile-phone-part1-25-mcqs.html"
    ],
    "leaves": []
@@ -2290,6 +2575,7 @@
    "pillar": "current-affairs-preparation.html",
    "hub": "subject-current-affairs.html",
    "clusters": [
+    "category-current-affairs-july.html",
     "topic-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
     "topic-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
     "topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
@@ -2361,6 +2647,7 @@
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-reasoning.html",
    "clusters": [
+    "category-reasoning-number-series.html",
     "topic-reasoning-number-series-part-1.html"
    ],
    "leaves": []

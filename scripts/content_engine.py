@@ -601,11 +601,15 @@ def score(seed, candidate, same_collection=False):
         if shared:
             s += WEIGHTS[key] * len(shared)
             reasons.append(label)
-    for facet, weight in (("category", "category"), ("difficulty", "difficulty")):
+    for facet in ("category", "difficulty"):
         a = str(seed.get(facet) or "").strip().lower()
         b = str(candidate.get(facet) or "").strip().lower()
         if a and b and a == b:
-            s += weight
+            # The weight, not the facet's name: this loop used to add the
+            # string "category"/"difficulty" to an int, which only surfaced
+            # once two records really did share a category - Study material,
+            # where every file in a subject folder shares one by definition.
+            s += WEIGHTS[facet]
             reasons.append(f"same {facet}")
     if candidate.get("featured"):
         s += WEIGHTS["featured"]

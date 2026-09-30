@@ -294,6 +294,49 @@ Rules worth knowing:
 * **Drafts are not a PDF concept** — anything in a collection folder is
   published; `content/_drafts/` is still never read.
 
+## Study material — the folder *is* the subject
+
+Study is the one system that is not written as Markdown documents. Everything
+under `content/study-material/` is discovered, never registered:
+
+```
+content/study-material/README.md              the authoring contract (full detail)
+content/study-material/metadata.json          optional subject decoration (name/icon/color/order)
+content/study-material/<subject>/             ← a folder is a subject
+content/study-material/<subject>/README.md    optional, never published
+content/study-material/<subject>/metadata.json  optional, keyed by file name
+content/study-material/<subject>/<file>       ← any file is material
+```
+
+The thirteen subjects are the thirteen folders: `computer`, `english`,
+`punjabi`, `reasoning`, `quant`, `gk`, `current-affairs`, `economy`, `history`,
+`geography`, `polity`, `science`, `miscellaneous`. Drop a fourteenth folder and
+it becomes a fourteenth subject — in the shelf, in the Study menu and in
+`data/study-manifest.json` — with no code, no JSON and no HTML touched.
+
+**Adding material is three steps and no edits:**
+
+```bash
+cp "my new notes.pdf" content/study-material/computer/
+npm run publish
+```
+
+and it appears at **Study → Computer → Study Material**. From the file name
+alone the build derives the title, the slug, the description, the language, the
+keywords, the page URL and the search row; `metadata.json` beside it can
+*override* any of that (badges, dates, reading time, description) but is never
+required. A `.md`, `.json` or a future format works exactly like a `.pdf`.
+
+A subject page renders **one** section headed `Study Material` — never a PDFs
+list, a Notes list and a Guides list. Every file, whatever it is, is listed
+together with its language, last update, reading time, file size, optional
+Featured/New/Popular badge and a Download/Open button, ordered Featured →
+Newest → Alphabetical.
+
+The full contract — supported files, the derived-fields table, both
+`metadata.json` shapes, ordering, badges and every surface a file reaches — is
+in `content/study-material/README.md`.
+
 ## Language URLs — English at the root, Punjabi under `/pa/`
 
 Add `<slug>.pa.md` next to `<slug>.md`. It carries **its own** front matter —

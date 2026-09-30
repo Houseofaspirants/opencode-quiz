@@ -3,10 +3,10 @@
   "generatedAt": "2026-09-29T13:37:57.268Z",
   "stats": {
     "subjects": 7,
-    "categories": 15,
-    "topics": 11,
-    "quizzes": 11,
-    "questions": 245,
+    "categories": 19,
+    "topics": 12,
+    "quizzes": 12,
+    "questions": 265,
     "studentsPracticed": 12500
   },
   "site": {
@@ -507,15 +507,16 @@
           "id": "number-series-part-1",
           "name": "Number Series Part 1",
           "description": "",
-          "file": "questions/reasoning/number-series-part-1.json",
+          "file": "questions/reasoning/NUMBER SERIES/number-series-part-1.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790310924152,
+          "category": "number-series",
           "language": "en",
           "variants": {
-            "en": "questions/reasoning/number-series-part-1.json"
+            "en": "questions/reasoning/NUMBER SERIES/number-series-part-1.json"
           },
           "availableLanguages": [
             "en"
@@ -529,7 +530,43 @@
           "landing": "/quiz-reasoning-number-series-part-1"
         }
       ],
-      "categories": [],
+      "categories": [
+        {
+          "id": "number-series",
+          "name": "NUMBER SERIES",
+          "folder": "NUMBER SERIES",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "number-series-part-1",
+              "name": "Number Series Part 1",
+              "description": "",
+              "file": "questions/reasoning/NUMBER SERIES/number-series-part-1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790310924152,
+              "category": "number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/NUMBER SERIES/number-series-part-1.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Number Series Part 1"
+              },
+              "counts": {
+                "en": 25
+              },
+              "landing": "/quiz-reasoning-number-series-part-1"
+            }
+          ],
+          "landing": "/category-reasoning-number-series"
+        }
+      ],
       "landing": "/subject-reasoning"
     },
     {
@@ -566,18 +603,49 @@
       "order": 6,
       "topics": [
         {
+          "id": "fundamentals-of-computers-part1",
+          "name": "Fundamentals of Computers - Part 1",
+          "description": "",
+          "file": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790753838000,
+          "category": "fundamentals-of-computer",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
+            "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamentals of Computers - Part 1",
+            "pa": "Fundamentals of Computers - Part 1"
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-computer-fundamentals-of-computers-part1"
+        },
+        {
           "id": "mobile-phone-part1-25-mcqs",
           "name": "Mobile Phone Part1 25 Mcqs",
           "description": "",
-          "file": "questions/computer/mobile-phone-part1-25-mcqs.json",
+          "file": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790261912813,
+          "category": "mobile-phones",
           "language": "en",
           "variants": {
-            "en": "questions/computer/mobile-phone-part1-25-mcqs.json"
+            "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
           },
           "availableLanguages": [
             "en"
@@ -591,7 +659,82 @@
           "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
         }
       ],
-      "categories": [],
+      "categories": [
+        {
+          "id": "fundamentals-of-computer",
+          "name": "FUNDAMENTALS OF COMPUTER",
+          "folder": "FUNDAMENTALS OF COMPUTER",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "fundamentals-of-computers-part1",
+              "name": "Fundamentals of Computers - Part 1",
+              "description": "",
+              "file": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790753838000,
+              "category": "fundamentals-of-computer",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
+                "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Fundamentals of Computers - Part 1",
+                "pa": "Fundamentals of Computers - Part 1"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-computer-fundamentals-of-computers-part1"
+            }
+          ],
+          "landing": "/category-computer-fundamentals-of-computer"
+        },
+        {
+          "id": "mobile-phones",
+          "name": "MOBILE PHONES",
+          "folder": "MOBILE PHONES",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "mobile-phone-part1-25-mcqs",
+              "name": "Mobile Phone Part1 25 Mcqs",
+              "description": "",
+              "file": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790261912813,
+              "category": "mobile-phones",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Mobile Phone Part1 25 Mcqs"
+              },
+              "counts": {
+                "en": 25
+              },
+              "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
+            }
+          ],
+          "landing": "/category-computer-mobile-phones"
+        }
+      ],
       "landing": "/subject-computer"
     },
     {
@@ -607,16 +750,17 @@
           "id": "current-affairs-july-2026-part1-geography-environment",
           "name": "Current Affairs July 2026 - Part 1",
           "description": "",
-          "file": "questions/current-affairs/English/july/current-affairs-july-2026-part1-geography-environment.json",
+          "file": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
           "count": 20,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790441699392,
+          "category": "july",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/English/july/current-affairs-july-2026-part1-geography-environment.json",
-            "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part1-punjabi.json"
+            "en": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
+            "pa": "questions/current-affairs/july/current-affairs-july-2026-part1-pa.json"
           },
           "availableLanguages": [
             "en",
@@ -636,16 +780,17 @@
           "id": "current-affairs-july-2026-part2-schemes-development",
           "name": "Current Affairs July 2026 - Part 2",
           "description": "",
-          "file": "questions/current-affairs/English/july/current-affairs-july-2026-part2-schemes-development.json",
+          "file": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
           "count": 20,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790441701401,
+          "category": "july",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/English/july/current-affairs-july-2026-part2-schemes-development.json",
-            "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part2-punjabi.json"
+            "en": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
+            "pa": "questions/current-affairs/july/current-affairs-july-2026-part2-pa.json"
           },
           "availableLanguages": [
             "en",
@@ -665,16 +810,17 @@
           "id": "current-affairs-july-2026-part3-governance-digital-services",
           "name": "Current Affairs July 2026 - Part 3",
           "description": "",
-          "file": "questions/current-affairs/English/july/current-affairs-july-2026-part3-governance-digital-services.json",
+          "file": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
           "count": 20,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790441702188,
+          "category": "july",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/English/july/current-affairs-july-2026-part3-governance-digital-services.json",
-            "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part3-punjabi.json"
+            "en": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
+            "pa": "questions/current-affairs/july/current-affairs-july-2026-part3-punjabi-pa.json"
           },
           "availableLanguages": [
             "en",
@@ -694,16 +840,17 @@
           "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
           "name": "Current Affairs July 2026 - Part 4",
           "description": "",
-          "file": "questions/current-affairs/English/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.json",
+          "file": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
           "count": 20,
           "empty": false,
           "available": true,
           "timeLimit": 0,
           "updatedAt": 1790441705167,
+          "category": "july",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/English/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.json",
-            "pa": "questions/current-affairs/Punjabi/july/current-affairs-july-2026-part4-punjabi.json"
+            "en": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
+            "pa": "questions/current-affairs/july/current-affairs-july-2026-part4-pa.json"
           },
           "availableLanguages": [
             "en",
@@ -720,7 +867,137 @@
           "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
         }
       ],
-      "categories": [],
+      "categories": [
+        {
+          "id": "july",
+          "name": "July",
+          "folder": "july",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "current-affairs-july-2026-part1-geography-environment",
+              "name": "Current Affairs July 2026 - Part 1",
+              "description": "",
+              "file": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790441699392,
+              "category": "july",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
+                "pa": "questions/current-affairs/july/current-affairs-july-2026-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs July 2026 - Part 1",
+                "pa": "Current Affairs July 2026 - Part 1"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment"
+            },
+            {
+              "id": "current-affairs-july-2026-part2-schemes-development",
+              "name": "Current Affairs July 2026 - Part 2",
+              "description": "",
+              "file": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790441701401,
+              "category": "july",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
+                "pa": "questions/current-affairs/july/current-affairs-july-2026-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs July 2026 - Part 2",
+                "pa": "Current Affairs July 2026 - Part 2"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development"
+            },
+            {
+              "id": "current-affairs-july-2026-part3-governance-digital-services",
+              "name": "Current Affairs July 2026 - Part 3",
+              "description": "",
+              "file": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790441702188,
+              "category": "july",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
+                "pa": "questions/current-affairs/july/current-affairs-july-2026-part3-punjabi-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs July 2026 - Part 3",
+                "pa": "Current Affairs July 2026 - Part 3"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services"
+            },
+            {
+              "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
+              "name": "Current Affairs July 2026 - Part 4",
+              "description": "",
+              "file": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790441705167,
+              "category": "july",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
+                "pa": "questions/current-affairs/july/current-affairs-july-2026-part4-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs July 2026 - Part 4",
+                "pa": "Current Affairs July 2026 - Part 4"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
+            }
+          ],
+          "landing": "/category-current-affairs-july"
+        }
+      ],
       "landing": "/subject-current-affairs"
     }
   ]

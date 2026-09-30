@@ -1263,6 +1263,11 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   border-bottom: 1px solid var(--border);
 }
 .breadcrumb { display: flex; gap: 8px; align-items: center; font-size: 0.84rem; color: var(--muted); margin-bottom: 12px; flex-wrap: wrap; }
+/* A breadcrumb trail is the way back out, so it has to be tappable with a
+   thumb: a bare inline link boxes at the font's own ascent (~22px), under the
+   24px floor. Giving the flex item a minimum height grows the row by four
+   pixels and nothing else. */
+.breadcrumb a { display: inline-flex; align-items: center; min-height: 26px; }
 .breadcrumb a:hover { color: var(--brand); }
 .breadcrumb span { opacity: 0.6; }
 
@@ -2643,3 +2648,58 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
   font-size: 0.52em; font-weight: 700; letter-spacing: -0.01em;
   color: var(--muted); -webkit-text-fill-color: var(--muted);
 }
+
+/* ==========================================================================
+   STUDY MATERIAL — the shelf card (study.html?subject=… and study-material.html)
+   --------------------------------------------------------------------------
+   The build prints this card and study.js prints it again for the SPA view, so
+   both are styled by the same rules and a reader never sees two shapes for the
+   same file. Additive only: it reuses .card, .card-pad, .eyebrow, .badge and
+   .btn, and only touches its own class names.
+   ========================================================================== */
+.study-card { display: flex; flex-direction: column; }
+.study-card h3 { margin-bottom: 6px; }
+/* The title is the way in, exactly like the book shelf's: it inherits the
+   card's typography instead of reading as an inline hyperlink, and it stays a
+   real link so it works with JavaScript off and in a screen reader's list.
+   `display:inline-block` plus matched padding/margin is what gives it a
+   thumb-sized hit area (~30px) without moving a single line of the layout —
+   an inline link only boxes to its font's own ascent, which is under the
+   24px floor the site holds its tap targets to. */
+.study-card h3 a { color: inherit; text-decoration: none; display: inline-block; padding-block: 4px; margin-block: -4px; }
+.study-card h3 a:hover, .study-card h3 a:focus-visible { color: var(--brand); }
+.study-card .muted { font-size: 0.9rem; }
+
+/* Badges sit in the flow above the eyebrow rather than floating over the
+   title: a long subject name and an absolutely-positioned pill will collide on
+   a 320px screen, and an overlapping badge is worse than a taller card. */
+.card-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+
+/* Language · updated · reading time · size — the four facts a reader picks a
+   file by. `margin-top:auto` drops the row (and the button) to the bottom of
+   the column, so every card in a row lines up however long its description is. */
+.study-meta {
+  margin-top: auto; padding-top: 14px;
+  font-size: 0.82rem; line-height: 1.5; color: var(--muted);
+}
+.study-card .btn-row { margin-top: 12px !important; margin-bottom: 0; }
+.study-card .btn { width: 100%; justify-content: center; }
+
+/* Search above the shelf: one row that wraps to a full-width field on a
+   phone, with a 44px-tall target — the floor for a thumb, not a mouse. */
+.material-tools {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center;
+  margin-bottom: 12px;
+}
+.material-search {
+  flex: 1 1 240px; min-width: 0; min-height: 44px;
+  font: inherit; font-size: 1rem; padding: 11px 15px;
+  color: var(--text); background: var(--surface);
+  border: 1px solid var(--border); border-radius: var(--r-md);
+}
+.material-search:focus {
+  outline: none; border-color: var(--brand);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand) 22%, transparent);
+}
+.material-tools .btn { min-height: 44px; }
+.material-count { font-size: 0.85rem; color: var(--muted); margin-bottom: 14px; }

@@ -937,6 +937,24 @@ def build_category(s, c):
         f"Run a set untimed first to find the gaps, then repeat it against the clock. The "
         f"questions you miss twice are your revision list - keep them to one line each and "
         f"revise the file the night before the paper.")
+    if not authored.get("intro"):
+        # Authored copy is an enrichment, never a requirement: a lane that
+        # appears the day somebody drops a question folder in has no writer
+        # behind it, and a page with no copy fails the SEO gate. So the
+        # generated intro carries its own weight - how to work the set and what
+        # happens as the lane grows - and only a human who wants to say more
+        # has to say anything at all.
+        intro.append(
+            f"Work each set twice. The first pass is open-book: read the material with the "
+            f"explanations beside you, so the reasoning lands before the fact does. The "
+            f"second is closed - answer cold, then read only the questions you missed. "
+            f"Anything you miss twice goes into one column, one line each, the fact and "
+            f"not the sentence.")
+        intro.append(
+            f"A lane this size also grows without being rewritten. When the next topic set "
+            f"publishes it arrives here with its own page, its own timer and its own "
+            f"explanation, so what you are reading stays true to what is inside the folder "
+            f"without anybody coming back to edit this page by hand.")
     if ex_list:
         intro.append(
             f"Papers that ask for it: {', '.join(e['name'] for e in ex_list[:4])}.")

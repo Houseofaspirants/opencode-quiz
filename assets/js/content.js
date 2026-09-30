@@ -215,7 +215,7 @@
      nothing. `topic` reads as Expected MCQs because that is what a set is. */
   const KIND = {
     subject: "Subject", category: "Category", topic: "Expected MCQs",
-    hub: "Section", book: "Book",
+    hub: "Section", book: "Book", "study-material": "Study Material",
   };
 
   box.innerHTML = '<p class="search-meta">Searching…</p>';

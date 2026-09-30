@@ -1,0 +1,28 @@
+{
+  "$note": "STEP 4 - the only place anything is written down about a file, and every key is optional. Keyed by the file name in this folder; a key you leave out is derived from the file name itself. Supported keys: title, description, keywords, language, category, published, updated, readingTime, featured, new, popular.",
+  "fundamentals-of-computer.pdf": {
+    "featured": true,
+    "readingTime": 45,
+    "description": "Download the Fundamentals of Computer notes as a PDF: MS Office, internet, networking, operating systems and cyber basics for Punjab Police and PSSSB exams.",
+    "keywords": [
+      "Computer Fundamentals",
+      "Punjab Police Computer Notes",
+      "MS Office Notes",
+      "Internet and Networking",
+      "Cyber Security Basics",
+      "PSSSB Computer Notes"
+    ]
+  },
+  "fundamentals-of-computer-punjabi.pdf": {
+    "new": true,
+    "readingTime": 45,
+    "description": "Computer fundamentals in Punjabi: MS Office, internet, networking, operating systems and cyber basics for Punjab Police and PSSSB aspirants, free to read.",
+    "keywords": [
+      "Computer Fundamentals Punjabi",
+      "ਪੰਜਾਬੀ ਕੰਪਿਊਟਰ ਨੋਟਸ",
+      "Punjab Police Computer Notes",
+      "MS Office Punjabi",
+      "PSSSB Computer Notes"
+    ]
+  }
+}

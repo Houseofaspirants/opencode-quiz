@@ -76,6 +76,23 @@ const HOA = (() => {
     return indexPromise;
   }
 
+  /* Study's subject list: data/study-manifest.json, written by the content
+   * build from the folders under content/study-material/. It is a separate
+   * fetch from data/index.json because the two describe different things -
+   * index.json is the question tree, study-manifest.json is the shelf - and a
+   * subject can exist in one and not the other. Missing or unreadable is not an
+   * error: the menu simply keeps the subjects it already renders. */
+  let studySubjectsPromise = null;
+  function loadStudySubjects() {
+    if (!studySubjectsPromise) {
+      studySubjectsPromise = fetch("data/study-manifest.json", { cache: "no-cache" })
+        .then((r) => (r.ok ? r.json() : { subjects: [] }))
+        .then((d) => (Array.isArray(d && d.subjects) ? d.subjects : []))
+        .catch(() => []);
+    }
+    return studySubjectsPromise;
+  }
+
   /** Fetches one topic JSON file (one quiz) and normalises its questions. */
   async function loadQuestions(file) {
     const res = await fetch(file, { cache: "no-cache" });
@@ -529,6 +546,7 @@ const HOA = (() => {
               <div class="nav-col">
                 <span class="nav-col-head" data-i18n="Study material">Study material</span>
                 <!-- HOA-NAV:menu -->
+                <a data-nav="notes" href="study-material.html"><span data-i18n="Study Material">Study Material</span></a>
                 <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
                 <a data-nav="subject-guides" href="subject-guides.html"><span data-i18n="Subject Guides">Subject Guides</span></a>
                 <a data-nav="topic-guides" href="topic-guides.html"><span data-i18n="Topic Guides">Topic Guides</span></a>
@@ -784,6 +802,7 @@ const HOA = (() => {
         <div class="footer-col">
           <h2 data-i18n="Study">Study</h2>
           <!-- HOA-NAV:footer -->
+          <a href="study-material.html" data-i18n="Study Material">Study Material</a>
           <a href="study-notes.html" data-i18n="Study Notes">Study Notes</a>
           <a href="subject-guides.html" data-i18n="Subject Guides">Subject Guides</a>
           <a href="topic-guides.html" data-i18n="Topic Guides">Topic Guides</a>
@@ -934,11 +953,18 @@ const HOA = (() => {
     // under two different renderers, so the destination lives on the container
     // as data-subject-base instead of being assumed here. Static entries from
     // SUBJECT_LINKS are deduped by their href.
+    //
+    // Study's OWN tree is deliberately not filled in here: a subject exists in
+    // Study because a folder holds material for it, and the number beside it is
+    // how many files are in that folder. That list comes from
+    // data/study-manifest.json in the block below, so the column can never
+    // promise a subject the shelf does not have.
     loadIndex().then((idx) => {
       document.querySelectorAll("[data-subject-list]").forEach((list) => {
-        const isMobile = !!list.closest(".mobile-menu");
         const base =
           list.getAttribute("data-subject-base") || "subject.html?subject=";
+        if (base.startsWith("study.html")) return;
+        const isMobile = !!list.closest(".mobile-menu");
         (idx.subjects || []).forEach((s) => {
           const href = base + encodeURIComponent(s.id);
           if (list.querySelector(`a[href="${href}"]`)) return; // already static
@@ -956,6 +982,51 @@ const HOA = (() => {
           list.appendChild(a);
         });
       });
+    });
+
+    /* Study's subject tree: content/study-material/<subject>/ read back to the
+     * menu, in the shelf's own order, with each folder's material count. Adding
+     * a file adds a number; adding a folder adds a row. The seven subjects the
+     * question tree also knows about are already in the column, so they are
+     * re-ordered rather than duplicated, and nothing here is written by hand. */
+    loadStudySubjects().then((rows) => {
+      if (!rows.length) return;
+      const pos = new Map(rows.map((r, i) => [String(r.id), i]));
+      document
+        .querySelectorAll('[data-subject-list][data-subject-base^="study.html"]')
+        .forEach((list) => {
+          const isMobile = !!list.closest(".mobile-menu");
+          const inMenu = !!list.closest(".nav-drop-menu");
+          rows.forEach((r) => {
+            const href = `study.html?subject=${encodeURIComponent(r.id)}`;
+            let a = /** @type {HTMLAnchorElement | null} */ (
+              list.querySelector(`a[href="${href}"]`));
+            if (!a) {
+              a = document.createElement("a");
+              a.href = href;
+              if (isMobile) a.className = "mm-link";
+              a.dataset.navStudy = String(r.id);
+              a.innerHTML = isMobile
+                ? `<span class="mm-emoji">${esc(r.icon || "📚")}</span> ${esc(r.name)}`
+                : `${esc(r.icon || "📚")} ${esc(r.name)}`;
+              list.appendChild(a);
+            }
+            // Only the desktop column has room for a count: `.cnt` is styled
+            // to sit at the far right there, and a bare number in the mobile
+            // drawer would just be noise between two tap targets.
+            if (inMenu && Number(r.count) > 0 && !a.querySelector(".cnt")) {
+              a.insertAdjacentHTML(
+                "beforeend", ` <span class="cnt">${Number(r.count)}</span>`);
+            }
+          });
+          // The column reads the way the shelf reads: manifest order, so the
+          // menu and study.html agree on which subject comes first.
+          (/** @type {HTMLAnchorElement[]} */ (
+            [...list.querySelectorAll(":scope > a")]))
+            .sort((x, y) => (pos.get(x.dataset.navStudy || "") ?? 999) -
+                            (pos.get(y.dataset.navStudy || "") ?? 999))
+            .forEach((a) => list.appendChild(a));
+        });
     });
 
     // --- Footer / drawer year ---------------------------------------------
@@ -1997,7 +2068,7 @@ const HOA = (() => {
   }
 
   return {
-    db, loadIndex, loadQuestions, normalizeQuestions,
+    db, loadIndex, loadQuestions, normalizeQuestions, loadStudySubjects,
     toast, esc, seo, countUp, fmtTime, uid, langBadge,
     /* The one search index builder, and the sections it folds in. search.html
        reads both so the full-page search and the Ctrl+K overlay agree on what
