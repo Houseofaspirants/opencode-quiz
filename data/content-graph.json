@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 110,
-  "edges": 406,
+  "nodes": 109,
+  "edges": 413,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -40,18 +40,6 @@
    "hub": "announcements.html"
   },
   {
-   "id": "archive-category-computer.html",
-   "url": "/archive-category-computer.html",
-   "type": "archive",
-   "template": "",
-   "title": "Computer",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "archives.html"
-  },
-  {
    "id": "archive-category-english.html",
    "url": "/archive-category-english.html",
    "type": "archive",
@@ -68,7 +56,7 @@
    "url": "/archive-category-punjabi.html",
    "type": "archive",
    "template": "",
-   "title": "Punjabi",
+   "title": "Punjabi ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -160,8 +148,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
-   "url": "/content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "id": "content/study-material/computer/English%20/fundamentals-of-computer.pdf",
+   "url": "/content/study-material/computer/English%20/fundamentals-of-computer.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -172,8 +160,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/fundamentals-of-computer.pdf",
-   "url": "/content/study-material/computer/fundamentals-of-computer.pdf",
+   "id": "content/study-material/computer/Punjabi%20/fundamentals-of-computer-punjabi.pdf",
+   "url": "/content/study-material/computer/Punjabi%20/fundamentals-of-computer-punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1392,62 +1380,20 @@
    "weight": 1
   },
   {
-   "from": "archive-category-computer.html",
+   "from": "archive-category-english.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-computer.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
+   "from": "archive-category-english.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-computer.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
+   "from": "archive-category-english.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "study-notes.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-english.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-english.html",
-   "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1495,6 +1441,12 @@
   },
   {
    "from": "archive-category-punjabi.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
    "to": "material-part-1-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
@@ -1520,12 +1472,6 @@
   {
    "from": "archive-category-punjabi.html",
    "to": "material-part-5-punjabi-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "archive-category-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2095,7 +2041,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "to": "content/study-material/computer/Punjabi%20/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -2166,8 +2112,20 @@
    "weight": 1
   },
   {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-part-3-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-fundamentals-of-computer.html",
-   "to": "content/study-material/computer/fundamentals-of-computer.pdf",
+   "to": "content/study-material/computer/English%20/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -2235,6 +2193,18 @@
    "from": "material-fundamentals-of-computer.html",
    "to": "material-part-1-punjabi-pa.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-part-3-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2322,6 +2292,12 @@
    "weight": 1
   },
   {
+   "from": "material-part-1-english-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-1-punjabi-pa.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/punjabi/part-1-punjabi-pa.pdf",
    "rel": "contextual",
@@ -2403,6 +2379,12 @@
    "from": "material-part-1-punjabi-pa.html",
    "to": "material-part-4-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2490,6 +2472,12 @@
    "weight": 1
   },
   {
+   "from": "material-part-2-english-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-2-punjabi-pa.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/punjabi/part-2-punjabi-pa.pdf",
    "rel": "contextual",
@@ -2571,6 +2559,12 @@
    "from": "material-part-2-punjabi-pa.html",
    "to": "material-part-4-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2658,6 +2652,12 @@
    "weight": 1
   },
   {
+   "from": "material-part-3-english.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-3-punjabi.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/punjabi/part%203%28punjabi%29.pdf",
    "rel": "contextual",
@@ -2739,6 +2739,12 @@
    "from": "material-part-3-punjabi.html",
    "to": "material-part-4-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2826,6 +2832,12 @@
    "weight": 1
   },
   {
+   "from": "material-part-4-english-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-4-punjabi.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/punjabi/part%204%20%28punjabi%29.pdf",
    "rel": "contextual",
@@ -2907,6 +2919,12 @@
    "from": "material-part-4-punjabi.html",
    "to": "material-part-3-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -2994,6 +3012,12 @@
    "weight": 1
   },
   {
+   "from": "material-part-5-english-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-5-punjabi-pa.html",
    "to": "content/study-material/history/chapter%201%20Arrival%20Of%20Europeans/punjabi/part-5-punjabi-pa.pdf",
    "rel": "contextual",
@@ -3069,6 +3093,12 @@
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-3-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -3475,13 +3505,13 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/fundamentals-of-computer-punjabi.pdf",
+   "to": "content/study-material/computer/English%20/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/fundamentals-of-computer.pdf",
+   "to": "content/study-material/computer/Punjabi%20/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
