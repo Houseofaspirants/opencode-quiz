@@ -423,7 +423,11 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
 }
 .nav-drop-menu a:hover { background: color-mix(in srgb, var(--brand) 9%, transparent); color: var(--brand); }
 .nav-drop-menu .cnt { margin-left: auto; font-size: 0.74rem; color: var(--muted); font-weight: 700; }
-.nav-caret { transition: transform 0.2s var(--ease); }
+/* The global `img, svg { display: block }` reset (line 106) would otherwise
+   push this caret onto a line of its own below its label — the dropdown button
+   is inline-block, so a block-level child breaks the flow. Scope it back to
+   inline so label and caret stay on the one row the nav expects. */
+.nav-caret { display: inline-block; vertical-align: -1px; transition: transform 0.2s var(--ease); }
 .nav-drop.open .nav-caret { transform: rotate(180deg); }
 
 .header-actions { margin-left: auto; display: flex; align-items: center; gap: 8px; min-width: 0; }
@@ -1343,21 +1347,48 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   .footer-grid { grid-template-columns: 1.35fr 1fr 1fr 1fr 1.1fr; }
 }
 
-/* The desktop header is one fixed 66px row: brand + nav + actions. At 900px
-   the row only fits when the links are tightened (measured: eight nav items
-   need ~460px at 9px/8px padding), so the padding reduction applies to every
-   desktop width instead of only the tightest band. */
+/* -------------------------------------------------------- TWO-TIER HEADER
+   Measured constraint: .container is hard-capped at 1200px, so the header row
+   has exactly 1148px of content width at ANY viewport — a 2560px monitor gets
+   no more room than a 1200px laptop. In English the brand (logo + wordmark),
+   the gaps and the action cluster (language, search, theme, Telegram) consume
+   640px of that, leaving 508px, and the nine desktop items measure 799px. The
+   ten-item top nav and the wordmark therefore cannot share one line: the gap
+   was 291px, not something padding could close.
+
+   So .header-inner wraps instead of shrinking. Row 1 is the brand and the
+   actions; row 2 is the whole navigation at its natural 799px — which also
+   fits at the 900px breakpoint (848px of budget), so no item is ever
+   truncated, dropped into a submenu or scrolled sideways. Because the brand
+   no longer competes for the first row, the wordmark can stay at every
+   desktop width and the old rule that hid it between 900–1199px goes away.
+
+   Mobile (<900px) is untouched: one 66px row, drawer for everything, which is
+   what 95% of readers see. */
 @media (min-width: 900px) {
-  .nav-link { padding: 9px 8px; font-size: 0.87rem; }
+  :root { --header-h: 88px; }
+  .header-inner { flex-wrap: wrap; align-content: center; row-gap: 0; }
+  .brand { order: 1; }
+  .header-actions { order: 2; }
+  .main-nav { order: 3; flex: 1 0 100%; }
+
+  /* Nav links stay at tightened padding: the second row still has to fit
+     inside 848px at the 900px floor. Measured in English the nine items plus
+     their two carets span 846px at 8px side padding — 2px of slack, which is
+     no slack at all once a locale or a fallback font shifts a glyph. 6px
+     brings it to ~810 and leaves ~38px, enough that the row can never be
+     squeezed into wrapping its caret again. */
+  .nav-link { padding: 9px 6px; font-size: 0.87rem; }
   .nav-list { gap: 1px; }
 }
 
-/* 900-1199 is the band where brand wordmark + eight links + actions cannot
-   share the row (the wordmark alone is ~150px). The logo + aria-label carry
-   the brand here and the wordmark returns at 1200, where everything fits with
-   room to spare - including when the auth chip and install button pop in. */
-@media (min-width: 900px) and (max-width: 1199px) {
-  .brand-name { display: none; }
+/* Column headings inside the Study and Practice dropdowns. Each one now
+   carries two trees — the subject list and that system's own material — so
+   the reader can see which is which before scanning either. */
+.nav-col-head {
+  display: block; padding: 7px 12px 3px;
+  font-size: 0.68rem; font-weight: 800; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
 }
 
 @media (min-width: 1100px) {
@@ -2469,9 +2500,12 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 /* `faq:` - the front-matter Q&A reuses the .faq-item contract of faq.html. */
 .faq-list { display: grid; gap: 12px; }
 
-/* Two columns keep an 18-item Study menu inside its max-height without a
-   scrollbar on desktop; below this width the menu scrolls as it always did. */
-@media (min-width: 1100px) {
+/* Two columns keep the Study menu (7 subjects + 6 material) and the Practice
+   menu (7 subjects + 8 test types) inside their max-height without a scrollbar
+   at every desktop width. The dropdown hangs off the left edge of its button,
+   so at the 900px floor a 560px panel starting near x=190 still clears the
+   viewport by ~150px. */
+@media (min-width: 900px) {
   .nav-drop-menu.nav-cols {
     display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
     width: min(560px, calc(100vw - 24px));
@@ -2525,4 +2559,54 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 /* pyq.html - group headings inside the exam / paper grids. */
 .pyq-group-title {
   font-size: clamp(1.05rem, 2.2vw, 1.25rem); margin: 4px 0 14px;
+}
+
+/* ============================================================ STUDY SYSTEM
+   study.html - the category / chapter / part / material blocks. This surface
+   is reading-only, so it deliberately carries no badge that counts quizzes and
+   no control that looks like it launches a test; the only interactive thing in
+   a chapter block is a link to a note. */
+.study-cat { margin-bottom: 34px; }
+.study-cat .section-head { margin-bottom: 16px; }
+.study-cat .section-head h3 { margin: 4px 0 4px; }
+
+.part-list { list-style: none; margin: 12px 0 0; padding: 0; display: grid; gap: 8px; }
+.part-list li {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  padding: 9px 12px; min-height: 24px;
+  border: 1px solid var(--border); border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+}
+.part-name {
+  font-size: 0.87rem; font-weight: 600; color: var(--text);
+  min-width: 0; overflow-wrap: anywhere;
+}
+.part-meta {
+  font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--muted); white-space: nowrap;
+}
+.part-count { font-size: 0.8rem; color: var(--muted); margin: 4px 0 0; }
+
+/* Notes attached to a chapter. auto-fit means a subject with one note does not
+   leave three empty columns beside it. */
+.material-grid {
+  display: grid; gap: 14px; margin-top: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+/* An honest empty shelf beats a broken-looking one: the pipeline has not
+   published a note for this chapter yet, and the reader is told where the
+   notes that do exist are. */
+.material-empty {
+  font-size: 0.86rem; line-height: 1.6; color: var(--muted);
+  margin-top: 14px; padding: 12px 14px;
+  border: 1px dashed var(--border); border-radius: var(--r-md);
+  background: color-mix(in srgb, var(--surface) 60%, transparent);
+}
+.material-empty a { color: var(--brand); font-weight: 600; }
+
+/* rank-2-blueprint.html - "713" with the "/ 800" set back so the score reads
+   first without the denominator competing with it. */
+.stat-out {
+  font-size: 0.52em; font-weight: 700; letter-spacing: -0.01em;
+  color: var(--muted); -webkit-text-fill-color: var(--muted);
 }

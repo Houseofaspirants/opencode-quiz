@@ -36,6 +36,8 @@ PAGES = [
     "reasoning-quant-preparation.html",
     # Practice + shelf destinations (hand-written, config-driven content)
     "books.html", "revision.html", "pyq.html",
+    # Learning-first module roots: five systems, each with one entry point.
+    "study.html", "practice.html", "rank-2-blueprint.html",
 ]
 # --- programmatic SEO landing pages (generated, committed) -------------------
 # scripts/build_landing_pages.py writes data/landing-manifest.json plus the

@@ -10,7 +10,7 @@
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v40";
+const VERSION = "hoa-v41";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -62,6 +62,10 @@ const SHELL_FILES = [
   "./books.html",
   "./revision.html",
   "./pyq.html",
+  /* Learning-first module roots (Study, Practice, Rank 2 Blueprint) */
+  "./study.html",
+  "./practice.html",
+  "./rank-2-blueprint.html",
   "./assets/css/style.css",
   "./assets/css/quiz.css",
   "./assets/css/leaderboard.css",
@@ -83,6 +87,10 @@ const SHELL_FILES = [
   "./assets/js/books.js",
   "./assets/js/revision.js",
   "./assets/js/pyq.js",
+  "./assets/js/proof.js",
+  "./assets/js/study.js",
+  "./assets/js/practice.js",
+  "./assets/js/rank2.js",
   "./data/books.json",
   "./assets/img/logo-mark.png",
   "./assets/img/logo-sm.png",

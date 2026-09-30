@@ -220,6 +220,15 @@ const HOA = (() => {
     "Search notes, expected MCQs, subjects…": "ਨੋਟ, ਸੰਭਾਵਿਤ MCQs, ਵਿਸ਼ੇ ਖੋਜੋ…",
     "Search": "ਖੋਜੋ",
 
+    /* --- the ten-item top nav -------------------------------------------- */
+    "Rank 2 Blueprint": "ਰੈਂਕ 2 ਬਲੂਪ੍ਰਿੰਟ",
+    "Previous Year Papers": "ਪਿਛਲੇ ਸਾਲਾਂ ਦੇ ਪੇਪਰ",
+    "Live Guidance": "ਲਾਈਵ ਗਾਈਡੈਂਸ",
+    "Full Tests": "ਫੁਲ ਟੈਸਟ",
+    "By subject": "ਵਿਸ਼ੇ ਅਨੁਸਾਰ",
+    "Study material": "ਅਧਿਆਨ ਸਮੱਗਰੀ",
+    "Test types": "ਟੈਸਟ ਦੀਆਂ ਕਿਸਮਾਂ",
+
     /* --- footer ---------------------------------------------------------- */
     "Company": "ਕੰਪਨੀ",
     "All Subjects": "ਸਾਰੇ ਵਿਸ਼ੇ",
@@ -392,22 +401,62 @@ const HOA = (() => {
     "previous-year-questions.html",
     "book-recommendations.html",
   ];
+  /* SYSTEM SEPARATION -------------------------------------------------------
+   * The five systems each own a door now — Study, Practice, Previous Year
+   * Papers, Books, Current Affairs — so the generated STUDY menu must not also
+   * carry links belonging to those systems. Left in place, one destination
+   * would sit in two places in the same header and two systems would be mixed
+   * into one list. Dropped from the STUDY menu only: the footer keeps every one
+   * of them, so nothing becomes unreachable and no link is orphaned. */
+  const STUDY_MENU_DEMOTED = [
+    "current-affairs.html", "magazine.html", "archives.html",
+    "live-sessions.html", "daily-practice.html", "success-stories.html",
+    "recruitment.html", "blogs.html", "news.html", "announcements.html",
+  ];
+  const MENU_DEMOTED = SHELF_DEMOTED.concat(STUDY_MENU_DEMOTED);
+
   function demoteShelfLinks(root) {
     if (!root) return;
-    const drop = (scope) => {
+    const drop = (scope, list) => {
       if (!scope) return;
       scope.querySelectorAll("a").forEach((a) => {
         if (a.classList.contains("mm-practice")) return;
         const href = (a.getAttribute("href") || "").split("?")[0];
-        if (SHELF_DEMOTED.indexOf(href) !== -1) a.remove();
+        if (list.indexOf(href) !== -1) a.remove();
       });
     };
-    drop(root.querySelector(".main-nav .nav-cols")); // desktop Study menu
-    drop(root.querySelector(".mobile-menu"));        // drawer Study group
-    // Match the column on its data-i18n key, never on its rendered text:
-    // the i18n pass may already have re-labelled it by the time this runs.
+    /* Menus get the full list. */
+    drop(root.querySelector(".main-nav .nav-cols"), MENU_DEMOTED);
+    drop(root.querySelector("[data-mm-study]"), MENU_DEMOTED);
+    // The footer's Study column is the site's complete index rather than a
+    // menu, so it only loses the three shelf duplicates. Match the column on
+    // its data-i18n key, never on its rendered text: the i18n pass may already
+    // have re-labelled it by the time this runs.
     root.querySelectorAll('.footer-col h2[data-i18n="Study"]').forEach((h2) => {
-      drop(h2.parentElement);
+      drop(h2.parentElement, SHELF_DEMOTED);
+    });
+    /* ONE DESTINATION PER MENU, enforced rather than hoped for. The header
+       nav and the drawer are each assembled from several independent sources —
+       hand-written entries, the pipeline's HOA-NAV blocks and the dynamic
+       subject appender — so a link can legitimately arrive twice. Fold each
+       menu down to its first occurrence, keyed on the resolved destination,
+       and the "every feature exists exactly once" rule holds even if a future
+       build adds a hub to a block that already carries it. The footer is left
+       alone: it is an index, not a menu, and repeats none of these anyway. */
+    [".main-nav", ".mobile-menu"].forEach((sel) => {
+      const scope = root.querySelector(sel);
+      if (!scope) return;
+      const seen = Object.create(null);
+      scope.querySelectorAll("a[href]").forEach((a) => {
+        // Local pages fold to their bare filename so a query string cannot
+        // smuggle a second copy past the key; external URLs key on themselves.
+        const raw = a.getAttribute("href") || "";
+        const key = /^[a-z][a-z0-9.-]*\.html/.test(raw)
+          ? raw.split("?")[0]
+          : raw;
+        if (seen[key]) a.remove();
+        else seen[key] = 1;
+      });
     });
   }
 
@@ -447,22 +496,22 @@ const HOA = (() => {
         <span class="brand-name">House of Aspirants <span class="brand-sub">Free Exam Learning Platform</span></span>
       </a>
 
+      <!-- TWO-TIER ON DESKTOP. The .header-inner row wraps, so row 1 is the
+           brand and the actions and row 2 is the full ten-item navigation.
+           The row can never exceed --container (1200px), so a single row had
+           no room for the brand wordmark and nine items at once — wrapping
+           keeps every item literal and visible with nothing truncated and
+           nothing to scroll. Below 900px the nav is hidden entirely and the
+           drawer carries it. -->
       <nav class="main-nav" aria-label="Primary">
         <ul class="nav-list">
           <li><a class="nav-link" data-nav="home" href="index.html"><span data-i18n="Home">Home</span></a></li>
-          <li class="nav-drop" data-nav-drop>
-            <button class="nav-link nav-drop-btn" aria-haspopup="true" aria-expanded="false">
-              <span data-i18n="Subjects">Subjects</span>
-              <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
-                   stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
-            </button>
-            <div class="nav-drop-menu" data-subject-list>
-              ${SUBJECT_LINKS.map(
-                ([id, icon, name]) =>
-                  `<a data-nav="${id}" href="subject.html?subject=${id}">${icon} ${name}</a>`
-              ).join("")}
-            </div>
-          </li>
+          <li><a class="nav-link" data-nav="rank-2-blueprint" href="rank-2-blueprint.html"><span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a></li>
+
+          <!-- STUDY — learning only. Column 1 is the subject tree opening the
+               Study renderer; column 2 is the material the content build
+               publishes. No question paper is reachable from this menu: that
+               is what the Practice door next to it is for. -->
           <li class="nav-drop" data-nav-drop>
             <button class="nav-link nav-drop-btn" data-nav="notes" aria-haspopup="true" aria-expanded="false">
               <span data-i18n="Study">Study</span>
@@ -470,50 +519,81 @@ const HOA = (() => {
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
             <div class="nav-drop-menu nav-cols">
-              <!-- HOA-NAV:menu -->
-              <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
-              <a data-nav="subject-guides" href="subject-guides.html"><span data-i18n="Subject Guides">Subject Guides</span></a>
-              <a data-nav="topic-guides" href="topic-guides.html"><span data-i18n="Topic Guides">Topic Guides</span></a>
-              <a data-nav="personal-notes" href="personal-notes.html"><span data-i18n="Personal Notes">Personal Notes</span></a>
-              <a data-nav="ca" href="current-affairs.html"><span data-i18n="Current Affairs">Current Affairs</span></a>
-              <a data-nav="magazine" href="magazine.html"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
-              <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
-              <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
-              <a data-nav="daily-practice" href="daily-practice.html"><span data-i18n="Daily Practice">Daily Practice</span></a>
-              <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
-              <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
-              <a data-nav="previous-year-questions" href="previous-year-questions.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-              <a data-nav="success-stories" href="success-stories.html"><span data-i18n="Success Stories">Success Stories</span></a>
-              <a data-nav="book-recommendations" href="book-recommendations.html"><span data-i18n="Books">Books</span></a>
-              <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
-              <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
-              <a data-nav="news" href="news.html"><span data-i18n="News">News</span></a>
-              <a data-nav="announcements" href="announcements.html"><span data-i18n="Announcements">Announcements</span></a>
-              <a data-nav="archives" href="archives.html"><span data-i18n="Archives">Archives</span></a>
-              <!-- /HOA-NAV:menu -->
+              <div class="nav-col" data-subject-list data-subject-base="study.html?subject=">
+                <span class="nav-col-head" data-i18n="By subject">By subject</span>
+                ${SUBJECT_LINKS.map(
+                  ([id, icon, name]) =>
+                    `<a data-nav-study="${id}" href="study.html?subject=${id}">${icon} ${name}</a>`
+                ).join("")}
+              </div>
+              <div class="nav-col">
+                <span class="nav-col-head" data-i18n="Study material">Study material</span>
+                <!-- HOA-NAV:menu -->
+                <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
+                <a data-nav="subject-guides" href="subject-guides.html"><span data-i18n="Subject Guides">Subject Guides</span></a>
+                <a data-nav="topic-guides" href="topic-guides.html"><span data-i18n="Topic Guides">Topic Guides</span></a>
+                <a data-nav="personal-notes" href="personal-notes.html"><span data-i18n="Personal Notes">Personal Notes</span></a>
+                <a data-nav="ca" href="current-affairs.html"><span data-i18n="Current Affairs">Current Affairs</span></a>
+                <a data-nav="magazine" href="magazine.html"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
+                <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+                <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
+                <a data-nav="daily-practice" href="daily-practice.html"><span data-i18n="Daily Practice">Daily Practice</span></a>
+                <a data-nav="recruitment" href="recruitment.html"><span data-i18n="Recruitment">Recruitment</span></a>
+                <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+                <a data-nav="previous-year-questions" href="previous-year-questions.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+                <a data-nav="success-stories" href="success-stories.html"><span data-i18n="Success Stories">Success Stories</span></a>
+                <a data-nav="book-recommendations" href="book-recommendations.html"><span data-i18n="Books">Books</span></a>
+                <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
+                <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
+                <a data-nav="news" href="news.html"><span data-i18n="News">News</span></a>
+                <a data-nav="announcements" href="announcements.html"><span data-i18n="Announcements">Announcements</span></a>
+                <a data-nav="archives" href="archives.html"><span data-i18n="Archives">Archives</span></a>
+                <!-- /HOA-NAV:menu -->
+              </div>
             </div>
           </li>
-          <!-- PRACTICE — the four things a student does AFTER studying. Sits
-               immediately after Study so the header reads learning first,
-               practice second. Hand-authored, so it is deliberately outside
-               the HOA-NAV markers the content build rewrites. -->
+
+          <!-- PRACTICE — the four things a student does AFTER studying, plus
+               the three instruments that read the result. Sits immediately
+               after Study so the header reads learning first, practice second.
+               Hand-authored, so it is deliberately outside the HOA-NAV markers
+               the content build rewrites. -->
           <li class="nav-drop" data-nav-drop>
             <button class="nav-link nav-drop-btn" data-nav="practice" aria-haspopup="true" aria-expanded="false">
               <span data-i18n="Practice">Practice</span>
               <svg class="nav-caret" width="12" height="12" viewBox="0 0 24 24" fill="none"
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
-            <div class="nav-drop-menu nav-practice">
-              <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
-              <a data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a>
-              <a data-nav="previous-year-questions" href="pyq.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-              <a data-nav="revision" href="revision.html"><span data-i18n="Revision Tests">Revision Tests</span></a>
+            <div class="nav-drop-menu nav-cols nav-practice">
+              <div class="nav-col" data-subject-list>
+                <span class="nav-col-head" data-i18n="By subject">By subject</span>
+                ${SUBJECT_LINKS.map(
+                  ([id, icon, name]) =>
+                    `<a data-nav="${id}" href="subject.html?subject=${id}">${icon} ${name}</a>`
+                ).join("")}
+              </div>
+              <div class="nav-col">
+                <span class="nav-col-head" data-i18n="Test types">Test types</span>
+                <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+                <a data-nav="mock" href="mock.html"><span data-i18n="Mock Tests">Mock Tests</span></a>
+                <a data-nav="revision" href="revision.html"><span data-i18n="Revision Tests">Revision Tests</span></a>
+                <a data-nav="full-test" href="quiz.html?mode=mock"><span data-i18n="Full Tests">Full Tests</span></a>
+                <a data-nav="daily" href="daily-practice.html"><span data-i18n="Daily Practice">Daily Practice</span></a>
+                <a data-nav="leaderboard" href="leaderboard.html"><span data-i18n="Leaderboard">Leaderboard</span></a>
+                <a data-nav="progress" href="progress.html"><span data-i18n="My Progress">My Progress</span></a>
+                <a data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a>
+              </div>
             </div>
           </li>
+
+          <!-- THE REMAINING SYSTEMS. Each gets exactly one entry at the top
+               level — no destination appears in this list twice, and none of
+               them is nested under Study or Practice. -->
+          <li><a class="nav-link" data-nav="pyq" href="pyq.html"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
           <li><a class="nav-link" data-nav="books" href="books.html"><span data-i18n="Books">Books</span></a></li>
-          <li><a class="nav-link" data-nav="bookmarks" href="bookmarks.html"><span data-i18n="Bookmarks">Bookmarks</span></a></li>
+          <li><a class="nav-link" data-nav="ca" href="current-affairs.html"><span data-i18n="Current Affairs">Current Affairs</span></a></li>
+          <li><a class="nav-link" data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Guidance">Live Guidance</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about.html"><span data-i18n="About">About</span></a></li>
-          <li><a class="nav-link" data-nav="contact" href="contact.html"><span data-i18n="Contact">Contact</span></a></li>
         </ul>
       </nav>
 
@@ -563,39 +643,63 @@ const HOA = (() => {
       </div>
     </div>
     <a class="mm-link" data-nav="home" href="index.html"><span aria-hidden="true">🏠</span> <span data-i18n="Home">Home</span></a>
+    <a class="mm-link" data-nav="rank-2-blueprint" href="rank-2-blueprint.html"><span aria-hidden="true">🏅</span> <span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a>
 
-    <p class="mm-group" data-i18n="Subjects">Subjects</p>
+    <!-- The drawer mirrors the header exactly: same ten items, same order,
+         same two subject trees. Study's tree opens the Study renderer and
+         Practice's opens the question tree, so the two doors stay separate
+         here too. Subjects are inline rather than one tap deeper because the
+         whole point of this menu is reaching content in three taps. -->
+    <p class="mm-group" data-i18n="Study">Study</p>
+    <div data-subject-list data-subject-base="study.html?subject=">
+      ${SUBJECT_LINKS.map(
+        ([id, icon, name]) =>
+          `<a class="mm-link" data-nav-study="${id}" href="study.html?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
+      ).join("")}
+    </div>
+    <div data-mm-study>
+      <!-- HOA-NAV:drawer -->
+      <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
+      <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
+      <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+      <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
+      <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
+      <!-- /HOA-NAV:drawer -->
+      <!-- The pipeline's drawer shortlist (DRAWER_HUBS) deliberately carries
+           only two of the six Study hubs, so the other four are written here
+           to keep the drawer a faithful mirror of the header's Study menu —
+           same six destinations, same order. -->
+      <a class="mm-link" data-nav="subject-guides" href="subject-guides.html"><span class="mm-emoji">🗂️</span> <span data-i18n="Subject Guides">Subject Guides</span></a>
+      <a class="mm-link" data-nav="topic-guides" href="topic-guides.html"><span class="mm-emoji">🧭</span> <span data-i18n="Topic Guides">Topic Guides</span></a>
+      <a class="mm-link" data-nav="personal-notes" href="personal-notes.html"><span class="mm-emoji">📓</span> <span data-i18n="Personal Notes">Personal Notes</span></a>
+      <a class="mm-link" data-nav="pdfs" href="pdfs.html"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
+    </div>
+
+    <p class="mm-group" data-i18n="Practice">Practice</p>
     <div data-subject-list>
       ${SUBJECT_LINKS.map(
         ([id, icon, name]) =>
           `<a class="mm-link" data-nav="${id}" href="subject.html?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
-    <a class="mm-link" href="subject.html?subject=gk&amp;category=punjab-gk"><span class="mm-emoji">📌</span> <span data-i18n="Punjab GK">Punjab GK</span></a>
-
-    <p class="mm-group" data-i18n="Study">Study</p>
-    <!-- HOA-NAV:drawer -->
-    <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
-    <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
-    <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
-    <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
-    <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
-    <!-- /HOA-NAV:drawer -->
-    <a class="mm-link" data-nav="books" href="books.html"><span class="mm-emoji">📚</span> <span data-i18n="Books">Books</span></a>
-
-    <!-- MOBILE DRAWER — deliberately short. The old drawer listed 34 links;
-         the footer (rendered on every page) still carries all of them, so
-         simplifying here costs nobody a destination and makes the common
-         twelve findable without scrolling. -->
-    <p class="mm-group" data-i18n="Practice">Practice</p>
     <a class="mm-link mm-practice" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
     <a class="mm-link mm-practice" data-nav="mock" href="mock.html"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
-    <a class="mm-link mm-practice" data-nav="previous-year-questions" href="pyq.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
     <a class="mm-link mm-practice" data-nav="revision" href="revision.html"><span class="mm-emoji">🔁</span> <span data-i18n="Revision Tests">Revision Tests</span></a>
+    <a class="mm-link mm-practice" href="quiz.html?mode=mock"><span class="mm-emoji">📝</span> <span data-i18n="Full Tests">Full Tests</span></a>
+    <a class="mm-link mm-practice" href="leaderboard.html"><span class="mm-emoji">🏆</span> <span data-i18n="Leaderboard">Leaderboard</span></a>
+    <a class="mm-link mm-practice" href="progress.html"><span class="mm-emoji">📈</span> <span data-i18n="My Progress">My Progress</span></a>
+    <a class="mm-link mm-practice" href="bookmarks.html"><span class="mm-emoji">🔖</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
+
+    <!-- The other three systems, each once. -->
+    <p class="mm-group" data-i18n="More">More</p>
+    <a class="mm-link" data-nav="pyq" href="pyq.html"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Papers">Previous Year Papers</span></a>
+    <a class="mm-link" data-nav="books" href="books.html"><span class="mm-emoji">📚</span> <span data-i18n="Books">Books</span></a>
+    <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
+    <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Guidance">Live Guidance</span></a>
+    <a class="mm-link" data-nav="about" href="about.html"><span class="mm-emoji">🧑‍🏫</span> <span data-i18n="Meet Your Mentor">Meet Your Mentor</span></a>
 
     <p class="mm-group" data-i18n="Updates">Updates</p>
     <a class="mm-link" data-nav="announcements" href="announcements.html"><span class="mm-emoji">🔔</span> <span data-i18n="Notifications">Notifications</span></a>
-    <a class="mm-link" data-nav="about" href="about.html"><span class="mm-emoji">🧑‍🏫</span> <span data-i18n="Meet Your Mentor">Meet Your Mentor</span></a>
     <a class="mm-link" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener"><span class="mm-emoji">📸</span> <span data-i18n="Instagram">Instagram</span></a>
     <button class="mm-link" data-action="toggle-theme"><span data-theme-icon>🌙</span> <span data-i18n="Toggle theme">Toggle theme</span></button>
     <button class="mm-link" data-action="install-app"><span aria-hidden="true">⬇</span> <span data-i18n="Install App">Install App</span></button>
@@ -825,13 +929,18 @@ const HOA = (() => {
       document.querySelectorAll(`[data-nav="${k}"], [data-nav-subject="${k}"]`).forEach(mark)
     );
 
-    // Append dynamically detected subjects (new folders in /questions) to both
-    // menus. Static entries from SUBJECT_LINKS are deduped by their href.
+    // Append dynamically detected subjects (new folders in /questions) to every
+    // subject tree. Study's tree and Practice's tree are the same subjects
+    // under two different renderers, so the destination lives on the container
+    // as data-subject-base instead of being assumed here. Static entries from
+    // SUBJECT_LINKS are deduped by their href.
     loadIndex().then((idx) => {
       document.querySelectorAll("[data-subject-list]").forEach((list) => {
         const isMobile = !!list.closest(".mobile-menu");
+        const base =
+          list.getAttribute("data-subject-base") || "subject.html?subject=";
         (idx.subjects || []).forEach((s) => {
-          const href = `subject.html?subject=${encodeURIComponent(s.id)}`;
+          const href = base + encodeURIComponent(s.id);
           if (list.querySelector(`a[href="${href}"]`)) return; // already static
           const a = document.createElement("a");
           a.href = href;
