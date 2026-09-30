@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 70,
-  "edges": 182,
+  "nodes": 72,
+  "edges": 184,
   "silos": 35,
   "clusters": 37,
   "pillars": 34
@@ -114,6 +114,30 @@
   {
    "id": "content/monthly-magazine/current-affairs-july%20.pdf",
    "url": "/content/monthly-magazine/current-affairs-july%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
+   "url": "/content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
+   "url": "/content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1442,6 +1466,18 @@
   {
    "from": "pdfs.html",
    "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/pdfs/chapter%201%20/fundamentals-of-Computer-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/pdfs/chapter%201%20/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
