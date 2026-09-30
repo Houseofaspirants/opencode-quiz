@@ -3198,6 +3198,12 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
 /* ------------------------------------------------------- 5. MISTAKES ----- */
 .rb-mistake { display: flex; flex-direction: column; gap: 10px; }
 .rb-mistake--clean { border-color: color-mix(in srgb, var(--success) 34%, var(--border)); }
+/* The shared .badge-warn paints with raw --warning (#f59e0b), which lands at
+   1.9:1 on its own tinted background — axe's worst hit on this page. The dark
+   amber token is the same hue at 4.6:1 and reads as a warning just the same,
+   so the badge is corrected here rather than touching the global rule every
+   other page inherits. */
+.rb-mistake .badge-warn { color: var(--warning-text); }
 .rb-mistake-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .rb-mistake-n {
   font-size: 0.78rem;

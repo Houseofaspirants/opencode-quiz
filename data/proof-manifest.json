@@ -12,7 +12,18 @@
       "label": "Result Card",
       "required": true,
       "analytics": "",
-      "doc": null
+      "doc": {
+        "file": "assets/proof/official-result.png",
+        "name": "official-result.png",
+        "kind": "image",
+        "type": "PNG",
+        "bytes": 74172,
+        "size": "72.4 KB",
+        "uploaded": "2026-10-04",
+        "title": "Result card — Rank 2",
+        "note": "Release copy, as published by the recruitment board.",
+        "questions": []
+      }
     },
     {
       "id": "merit",
@@ -28,7 +39,39 @@
       "label": "Paper 1 Answer Sheet",
       "required": true,
       "analytics": "paper-1",
-      "doc": null
+      "doc": {
+        "file": "assets/proof/answer-sheet-1.pdf",
+        "name": "answer-sheet-1.pdf",
+        "kind": "pdf",
+        "type": "PDF",
+        "bytes": 678350,
+        "size": "662.5 KB",
+        "uploaded": "2026-10-05",
+        "title": "Paper 1 original answer sheet",
+        "note": "Response sheet as released with the result.",
+        "questions": [
+          {
+            "n": 1,
+            "text": "Which article of the Constitution deals with the Right to Constitutional Remedies?",
+            "selected": "B",
+            "correct": "C",
+            "explanation": "Article 32 is the Right to Constitutional Remedies; Article 226 is the High Court's equivalent."
+          },
+          {
+            "n": 2,
+            "text": "The First Five Year Plan of India focused on which sector?",
+            "selected": "A",
+            "correct": "A",
+            "explanation": "Agriculture and irrigation."
+          },
+          {
+            "n": 3,
+            "text": "Who was the first Governor-General of independent India?",
+            "selected": "D",
+            "correct": "B"
+          }
+        ]
+      }
     },
     {
       "id": "paper-2",
@@ -47,5 +90,5 @@
       "doc": null
     }
   ],
-  "total": 0
+  "total": 2
 }

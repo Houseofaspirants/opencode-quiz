@@ -1,0 +1,17 @@
+{
+  "official-result.png": {
+    "title": "Result card — Rank 2",
+    "note": "Release copy, as published by the recruitment board.",
+    "uploaded": "2026-10-04"
+  },
+  "answer-sheet-1.pdf": {
+    "title": "Paper 1 original answer sheet",
+    "note": "Response sheet as released with the result.",
+    "uploaded": "2026-10-05",
+    "questions": [
+      {"n": 1, "text": "Which article of the Constitution deals with the Right to Constitutional Remedies?", "selected": "B", "correct": "C", "explanation": "Article 32 is the Right to Constitutional Remedies; Article 226 is the High Court's equivalent."},
+      {"n": 2, "text": "The First Five Year Plan of India focused on which sector?", "selected": "A", "correct": "A", "explanation": "Agriculture and irrigation."},
+      {"n": 3, "text": "Who was the first Governor-General of independent India?", "selected": "D", "correct": "B"}
+    ]
+  }
+}
