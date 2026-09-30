@@ -1,0 +1,96 @@
+{
+  "$note": "STUDY MATERIAL SUBJECTS (optional). A folder under content/study-material/ is a subject whether or not it is listed here - this file only decorates it. name/icon/color/description/order are all optional; anything missing is derived from the folder name. A subject listed here with no folder is ignored, so nothing here can invent a page.",
+  "subjects": {
+    "computer": {
+      "name": "Computer",
+      "icon": "💻",
+      "color": "#8b5cf6",
+      "order": 1,
+      "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security."
+    },
+    "english": {
+      "name": "English",
+      "icon": "Aa",
+      "color": "#10b981",
+      "order": 2,
+      "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection."
+    },
+    "punjabi": {
+      "name": "Punjabi",
+      "icon": "ਸ",
+      "color": "#ec4899",
+      "order": 3,
+      "description": "ਵ्यਾਕਰण, ਮੁਹਾਵਰੇ, ਅਖਾਂ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬੀ ਸਾਹਿਤਿਕ."
+    },
+    "reasoning": {
+      "name": "Reasoning",
+      "icon": "🧠",
+      "color": "#f59e0b",
+      "order": 4,
+      "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles."
+    },
+    "quant": {
+      "name": "Quantitative Aptitude",
+      "icon": "➗",
+      "color": "#0ea5e9",
+      "order": 5,
+      "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic."
+    },
+    "gk": {
+      "name": "General Knowledge",
+      "icon": "🏛️",
+      "color": "#6366f1",
+      "order": 6,
+      "description": "Static GK, Punjab GK, firsts, awards, books and important days."
+    },
+    "current-affairs": {
+      "name": "Current Affairs",
+      "icon": "📰",
+      "color": "#ef4444",
+      "order": 7,
+      "description": "Daily, national, international, sports and Punjab current affairs."
+    },
+    "polity": {
+      "name": "Polity",
+      "icon": "⚖️",
+      "color": "#6366f1",
+      "order": 8,
+      "description": "The Constitution, Parliament, judiciary and panchayati raj."
+    },
+    "history": {
+      "name": "History",
+      "icon": "📜",
+      "color": "#f59e0b",
+      "order": 9,
+      "description": "Ancient, medieval and modern India with the freedom movement."
+    },
+    "geography": {
+      "name": "Geography",
+      "icon": "🌍",
+      "color": "#10b981",
+      "order": 10,
+      "description": "Rivers, soils, climate, agriculture and the maps that get asked."
+    },
+    "economy": {
+      "name": "Economy",
+      "icon": "💰",
+      "color": "#0ea5e9",
+      "order": 11,
+      "description": "Budget, banking, taxes, schemes and five-year plans."
+    },
+    "science": {
+      "name": "Science",
+      "icon": "🔬",
+      "color": "#8b5cf6",
+      "order": 12,
+      "description": "Physics, chemistry and biology at the level the papers ask."
+    },
+    "miscellaneous": {
+      "name": "Miscellaneous",
+      "icon": "🗂️",
+      "color": "#64748b",
+      "order": 13,
+      "description": "Real exam content that belongs to no single subject."
+    }
+  }
+}

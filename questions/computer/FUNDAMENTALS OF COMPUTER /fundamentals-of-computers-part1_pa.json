@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ computer ਦੀ ਸਭ ਤੋਂ ਸਹੀ ਪਰਿਭਾਸ਼ਾ ਕਿਹੜੀ ਹੈ?",
+    "options": [
+      "ਇੱਕ device ਜੋ ਸਿਰਫ਼ data store ਕਰਦੀ ਹੈ",
+      "ਇੱਕ ਪੂਰੀ ਤਰ੍ਹਾਂ mechanical calculating device",
+      "ਇੱਕ electronic device ਜੋ data ਲੈਂਦੀ, process ਕਰਦੀ, store ਕਰਦੀ ਅਤੇ output ਦਿੰਦੀ ਹੈ",
+      "ਇੱਕ device ਜੋ ਸਿਰਫ਼ documents print ਕਰਨ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ"
+    ],
+    "answer": 2,
+    "explanation": "Computer ਇੱਕ electronic device ਹੈ ਜੋ data ਨੂੰ ਲੈਂਦੀ, process ਕਰਦੀ, store ਕਰਦੀ ਅਤੇ ਲਾਭਦਾਇਕ information ਨੂੰ output ਵਜੋਂ ਦਿੰਦੀ ਹੈ।",
+    "tags": [
+      "Computer",
+      "Definition"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "Computer ਵਿੱਚ ਪਾਏ ਗਏ ਕੱਚੇ, ਅਣਵਿਵਸਥਿਤ ਤੱਥਾਂ ਨੂੰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Data",
+      "Information",
+      "Output",
+      "Instructions"
+    ],
+    "answer": 0,
+    "explanation": "Data ਕੱਚੀ, ਅਣਵਿਵਸਥਿਤ ਜਾਣਕਾਰੀ ਹੁੰਦੀ ਹੈ, ਜਿਵੇਂ 45, 78, 92, ਜੋ input devices ਰਾਹੀਂ ਪਾਈ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "Data",
+      "Basic Terms"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "Data + Processing = ?",
+    "options": [
+      "Instructions",
+      "Memory",
+      "Storage",
+      "Information"
+    ],
+    "answer": 3,
+    "explanation": "Information ਪ੍ਰੋਸੈਸ ਕੀਤਾ ਅਤੇ ਵਿਵਸਥਿਤ data ਹੁੰਦਾ ਹੈ, ਇਸ ਲਈ Data + Processing = Information।",
+    "tags": [
+      "Information",
+      "Basic Terms"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "Computer ਦੇ ਮੁੱਢਲੇ ਕੰਮ-ਚੱਕਰ ਦਾ ਸਹੀ ਕ੍ਰਮ ਕਿਹੜਾ ਹੈ?",
+    "options": [
+      "Processing → Input → Output",
+      "Input → Processing → Output",
+      "Output → Processing → Input",
+      "Input → Output → Processing"
+    ],
+    "answer": 1,
+    "explanation": "ਪਹਿਲਾਂ data ਪਾਇਆ ਜਾਂਦਾ ਹੈ (input), ਫਿਰ CPU ਉਸਨੂੰ process ਕਰਦੀ ਹੈ ਅਤੇ ਅੰਤ ਵਿੱਚ output ਵਜੋਂ ਦਿਖਾਇਆ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "IPO Cycle",
+      "Working"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "ਕਿਸੇ ਖ਼ਾਸ ਕੰਮ ਲਈ computer ਨੂੰ ਦਿੱਤੇ ਗਏ ਹੁਕਮਾਂ ਨੂੰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Data",
+      "Instructions",
+      "Information",
+      "Output"
+    ],
+    "answer": 1,
+    "explanation": "Instructions ਉਹ commands ਹਨ ਜਿਵੇਂ file save ਕਰਨਾ, folder open ਕਰਨਾ ਜਾਂ document print ਕਰਨਾ।",
+    "tags": [
+      "Instructions",
+      "Basic Terms"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "Computer ਦਾ 'ਦਿਮਾਗ਼' ਕਿਸ ਨੂੰ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Motherboard",
+      "RAM",
+      "Monitor",
+      "CPU"
+    ],
+    "answer": 3,
+    "explanation": "CPU ਗਣਨਾਵਾਂ ਕਰਦੀ, ਕਾਰਜਾਂ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਅਤੇ data ਨੂੰ process ਕਰਦੀ ਹੈ, ਇਸ ਲਈ ਇਸਨੂੰ computer ਦਾ ਦਿਮਾਗ਼ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "CPU",
+      "Brain of Computer"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ input device ਹੈ?",
+    "options": [
+      "Keyboard",
+      "Monitor",
+      "Printer",
+      "Speaker"
+    ],
+    "answer": 0,
+    "explanation": "Keyboard ਰਾਹੀਂ computer ਵਿੱਚ text ਪਾਇਆ ਜਾਂਦਾ ਹੈ; monitor, printer ਅਤੇ speaker output devices ਹਨ।",
+    "tags": [
+      "Input Device",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Easy",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ output device ਹੈ?",
+    "options": [
+      "Mouse",
+      "Scanner",
+      "Monitor",
+      "Webcam"
+    ],
+    "answer": 2,
+    "explanation": "Monitor process ਕੀਤੀ ਜਾਣਕਾਰੀ ਦਿਖਾਉਂਦਾ ਹੈ। Mouse, scanner ਅਤੇ webcam input devices ਹਨ।",
+    "tags": [
+      "Output Device",
+      "Monitor"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Computer ਦੀ speed ਤੋਂ ਕੀ ਭਾਵ ਹੈ?",
+    "options": [
+      "ਮਾਨੀਟਰ ਦੀ screen ਦਾ ਆਕਾਰ",
+      "ਹਾਰਡ ਡਿਸਕ ਦੀ storage capacity",
+      "Computer ਵਰਤਣ ਵਾਲੇ users ਦੀ ਗਿਣਤੀ",
+      "ਇੱਕ ਸਕਿੰਟ ਵਿੱਚ process ਹੋਣ ਵਾਲੀਆਂ instructions ਦੀ ਗਿਣਤੀ"
+    ],
+    "answer": 3,
+    "explanation": "Speed ਇੱਕ ਸਕਿੰਟ ਵਿੱਚ computer ਦੁਆਰਾ process ਕੀਤੀਆਂ ਜਾਣ ਵਾਲੀਆਂ instructions ਦੀ ਗਿਣਤੀ ਹੁੰਦੀ ਹੈ।",
+    "tags": [
+      "Speed",
+      "Basic Terms"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Computer ਦੀ speed ਮਾਪਣ ਲਈ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਇਕਾਈਆਂ ਵਿੱਚੋਂ ਸਭ ਤੋਂ ਛੋਟੀ ਕਿਹੜੀ ਹੈ?",
+    "options": [
+      "Nanosecond (ns)",
+      "Picosecond (ps)",
+      "Microsecond (μs)",
+      "Millisecond (ms)"
+    ],
+    "answer": 1,
+    "explanation": "Picosecond (10⁻¹² s) nanosecond (10⁻⁹ s), microsecond (10⁻⁶ s) ਅਤੇ millisecond (10⁻³ s) ਤੋਂ ਛੋਟੀ ਹੁੰਦੀ ਹੈ।",
+    "tags": [
+      "Units of Speed",
+      "Time"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Intel Core i7 ਅਤੇ AMD Ryzen ਕਿਸ ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਹਨ?",
+    "options": [
+      "Storage devices",
+      "Output devices",
+      "Processors (CPU)",
+      "Operating systems"
+    ],
+    "answer": 2,
+    "explanation": "ਇਹ processors (CPU) ਹਨ ਜੋ instructions ਨੂੰ execute ਕਰਦੇ ਅਤੇ data ਨੂੰ process ਕਰਦੇ ਹਨ।",
+    "tags": [
+      "Processor",
+      "CPU"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਸਥਾਈ (permanent) storage device ਹੈ?",
+    "options": [
+      "SSD",
+      "RAM",
+      "Cache Memory",
+      "Motherboard"
+    ],
+    "answer": 0,
+    "explanation": "HDD, SSD, pen drive ਅਤੇ CD/DVD data ਨੂੰ ਸਥਾਈ ਤੌਰ 'ਤੇ ਸਟੋਰ ਕਰਦੇ ਹਨ, ਜਦਕਿ RAM ਅਤੇ cache ਅਸਥਾਈ memory ਹਨ।",
+    "tags": [
+      "Storage",
+      "SSD"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Computer ਦੇ ਸਾਰੇ ਹਿੱਸਿਆਂ ਨੂੰ ਜੋੜਨ ਵਾਲਾ ਮੁੱਖ circuit board ਕਿਹੜਾ ਹੈ?",
+    "options": [
+      "Motherboard",
+      "Hard Disk Drive",
+      "Cache Memory",
+      "Scanner"
+    ],
+    "answer": 0,
+    "explanation": "Motherboard CPU, RAM, storage, input ਅਤੇ output devices ਨੂੰ ਜੋੜਦਾ ਹੈ; ਇਹ computer ਦੀ ਰੀੜ੍ਹ ਦੀ ਹੱਡੀ (backbone) ਹੈ।",
+    "tags": [
+      "Motherboard",
+      "Backbone"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Memory ਅਤੇ Storage ਬਾਰੇ ਕਿਹੜਾ ਕਥਨ ਸਹੀ ਹੈ?",
+    "options": [
+      "Memory ਸਥਾਈ ਹੈ, Storage ਅਸਥਾਈ ਹੈ",
+      "Memory ਅਤੇ Storage ਦੋਵੇਂ ਸਥਾਈ ਹਨ",
+      "Memory ਅਸਥਾਈ ਹੈ, Storage ਸਥਾਈ ਹੈ",
+      "Memory ਅਤੇ Storage ਦੋਵੇਂ ਅਸਥਾਈ ਹਨ"
+    ],
+    "answer": 2,
+    "explanation": "Memory processing ਦੌਰਾਨ data ਨੂੰ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਰੱਖਦੀ ਹੈ, ਜਦਕਿ storage data ਨੂੰ ਸਥਾਈ ਤੌਰ 'ਤੇ ਸੰਭਾਲਦੀ ਹੈ।",
+    "tags": [
+      "Memory",
+      "Storage"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ storage device ਨਹੀਂ ਹੈ?",
+    "options": [
+      "Pen Drive",
+      "Scanner",
+      "SSD",
+      "CD/DVD"
+    ],
+    "answer": 1,
+    "explanation": "Scanner ਇੱਕ input device ਹੈ ਜੋ documents ਸਕੈਨ ਕਰਦੀ ਹੈ; ਬਾਕੀ ਸਾਰੇ data ਸਟੋਰ ਕਰਦੇ ਹਨ।",
+    "tags": [
+      "Storage",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Medium",
+    "question": "Computer ਵਿੱਚ ਆਵਾਜ਼ (sound) ਪਾਉਣ ਲਈ ਕਿਹੜੀ device ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "Speaker",
+      "Projector",
+      "Printer",
+      "Microphone"
+    ],
+    "answer": 3,
+    "explanation": "Microphone ਆਵਾਜ਼ ਦੀ input device ਹੈ, ਜਦਕਿ speaker ਆਵਾਜ਼ ਨੂੰ output ਵਜੋਂ ਪੈਦਾ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "Input Device",
+      "Microphone"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Hard",
+    "question": "CPU ਦੀ ਕਿਹੜੀ unit computer ਦੀਆਂ ਸਾਰੀਆਂ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਕੰਟਰੋਲ ਅਤੇ ਤਾਲਮੇਲ ਕਰਦੀ ਹੈ?",
+    "options": [
+      "Arithmetic Logic Unit (ALU)",
+      "Control Unit (CU)",
+      "Memory Unit",
+      "Cache Memory"
+    ],
+    "answer": 1,
+    "explanation": "Control Unit (CU) ਸਾਰੀਆਂ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦੀ ਹੈ, ਜਦਕਿ ALU arithmetic ਅਤੇ logical operations ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "CU",
+      "CPU"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Hard",
+    "question": "CPU ਕਿਹਨਾਂ ਭਾਗਾਂ ਤੋਂ ਬਣੀ ਹੁੰਦੀ ਹੈ?",
+    "options": [
+      "CU + ALU + Memory Unit",
+      "ALU + RAM + Hard Disk",
+      "CU + Monitor + Keyboard",
+      "Motherboard + ALU + Printer"
+    ],
+    "answer": 0,
+    "explanation": "ਨੋਟਸ ਅਨੁਸਾਰ CPU = CU + ALU + Memory Unit।",
+    "tags": [
+      "CPU",
+      "ALU"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Hard",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਸੂਚੀ ਵਿੱਚ ਸਿਰਫ਼ input devices ਹਨ?",
+    "options": [
+      "Keyboard, Printer, Mouse",
+      "Monitor, Speaker, Scanner",
+      "Projector, Webcam, Microphone",
+      "Keyboard, Scanner, Webcam"
+    ],
+    "answer": 3,
+    "explanation": "Keyboard, scanner ਅਤੇ webcam ਤਿੰਨੇ input devices ਹਨ; ਬਾਕੀ ਹਰ ਸੂਚੀ ਵਿੱਚ printer, monitor, speaker ਜਾਂ projector ਵਰਗੀ output device ਹੈ।",
+    "tags": [
+      "Input Devices",
+      "Output Devices"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers",
+    "difficulty": "Hard",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੇ memory (ਅਸਥਾਈ ਸਟੋਰੇਜ) ਦੀਆਂ ਉਦਾਹਰਣਾਂ ਹਨ?",
+    "options": [
+      "HDD ਅਤੇ SSD",
+      "Pen Drive ਅਤੇ CD/DVD",
+      "RAM ਅਤੇ Cache Memory",
+      "CPU ਅਤੇ Motherboard"
+    ],
+    "answer": 2,
+    "explanation": "RAM ਅਤੇ Cache Memory processing ਦੌਰਾਨ data ਨੂੰ ਅਸਥਾਈ ਤੌਰ 'ਤੇ ਰੱਖਦੀਆਂ ਹਨ ਅਤੇ CPU ਨਾਲ ਤੇਜ਼ ਸੰਚਾਰ ਸੰਭਵ ਬਣਾਉਂਦੀਆਂ ਹਨ।",
+    "tags": [
+      "RAM",
+      "Cache Memory"
+    ]
+  }
+]
