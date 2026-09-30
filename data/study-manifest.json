@@ -275,9 +275,9 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-09-30",
+      "totalSize": 2534537,
       "languages": [
         {
           "id": "pa",
@@ -292,11 +292,22 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "articles",
+              "name": "Articles",
+              "parts": [
+                {
+                  "file": "material-articles.html",
+                  "n": 1
+                }
+              ]
+            }
+          ]
         }
       ],
-      "chapters": 0
+      "chapters": 1
     },
     {
       "id": "history",
@@ -503,6 +514,6 @@
       "chapters": 0
     }
   ],
-  "total": 14,
+  "total": 15,
   "generatedBy": "scripts/study_material.py"
 }

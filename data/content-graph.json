@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 110,
-  "edges": 411,
+  "nodes": 114,
+  "edges": 438,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -57,6 +57,18 @@
    "type": "archive",
    "template": "",
    "title": "History",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-polity.html",
+   "url": "/archive-category-polity.html",
+   "type": "archive",
+   "template": "",
+   "title": "Polity",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -282,6 +294,18 @@
   {
    "id": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
    "url": "/content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/polity/articles%20.pdf",
+   "url": "/content/study-material/polity/articles%20.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -710,6 +734,30 @@
    "exams": [],
    "tags": [],
    "hub": "magazine.html"
+  },
+  {
+   "id": "material-articles",
+   "url": "/material-articles",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-articles.html",
+   "url": "/material-articles.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Articles - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
   },
   {
    "id": "material-fundamentals-of-computer",
@@ -1500,6 +1548,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-polity.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "material-articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archives.html",
    "to": "archive-category-computer.html",
    "rel": "contextual",
@@ -1513,7 +1603,19 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-articles.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1917,6 +2019,102 @@
    "from": "magazine.html",
    "to": "subject.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "content/study-material/polity/articles%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-articles",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-mobail-phon.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -3565,7 +3763,19 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/polity/articles%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-articles.html",
    "rel": "contextual",
    "weight": 1
   },
