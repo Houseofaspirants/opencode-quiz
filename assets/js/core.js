@@ -403,6 +403,17 @@ const HOA = (() => {
     ["current-affairs", "📰", "Current Affairs"],
   ];
 
+  /* ONE HOME FOR CURRENT AFFAIRS ------------------------------------------
+    * Study is the academic shelf: General Knowledge, Quantitative Aptitude,
+    * Reasoning, Punjabi, English, Computer and nothing else. Current Affairs
+    * has exactly one home — the Current Affairs door in the top navigation —
+    * so it is filtered out of the two places that are specifically STUDY's
+    * subject trees (the header's Study column and the drawer's Study group).
+    * The Practice dropdown and the footer's Subjects column are the quiz
+    * system, not the shelf, so they keep the full SUBJECT_LINKS list, and the
+    * footer's Study column keeps its index link to current-affairs.html. */
+  const STUDY_SUBJECT_LINKS = SUBJECT_LINKS.filter(([id]) => id !== "current-affairs");
+
   /* NAVIGATION DE-DUPLICATION ---------------------------------------------
    * The Study shelf (header), the drawer's Study group and the footer's Study
    * column are rewritten from the content pipeline on every build, so they
@@ -537,7 +548,7 @@ const HOA = (() => {
             <div class="nav-drop-menu nav-cols">
               <div class="nav-col" data-subject-list data-subject-base="study.html?subject=">
                 <span class="nav-col-head" data-i18n="By subject">By subject</span>
-                ${SUBJECT_LINKS.map(
+                ${STUDY_SUBJECT_LINKS.map(
                   ([id, icon, name]) =>
                     `<a data-nav-study="${id}" href="study.html?subject=${id}">${icon} ${name}</a>`
                 ).join("")}
@@ -668,7 +679,7 @@ const HOA = (() => {
          whole point of this menu is reaching content in three taps. -->
     <p class="mm-group" data-i18n="Study">Study</p>
     <div data-subject-list data-subject-base="study.html?subject=">
-      ${SUBJECT_LINKS.map(
+      ${STUDY_SUBJECT_LINKS.map(
         ([id, icon, name]) =>
           `<a class="mm-link" data-nav-study="${id}" href="study.html?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}

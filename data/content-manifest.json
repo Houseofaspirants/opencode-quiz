@@ -8,7 +8,7 @@
       "url": "https://houseofaspirants.in/study-material",
       "title": "Free Study Material for Punjab Competitive Exams",
       "description": "Free study material for Punjab Police, PSSSB and PPSC exams - PDFs, notes and downloads for every subject, discovered from the files themselves with no sign-up.",
-      "count": 28
+      "count": 29
     },
     {
       "collection": "notes",
@@ -256,9 +256,9 @@
       "readingMinutes": 1,
       "lang": "en",
       "featured": false,
-      "path": "content/current-affairs/english/August /august-2026-english.pdf",
+      "path": "content/current-affairs/english/August 2026/august-2026-english.pdf",
       "category": "",
-      "pdf": "content/current-affairs/english/August /august-2026-english.pdf"
+      "pdf": "content/current-affairs/english/August 2026/august-2026-english.pdf"
     },
     {
       "collection": "current-affairs",
@@ -274,9 +274,9 @@
       "readingMinutes": 1,
       "lang": "en",
       "featured": false,
-      "path": "content/current-affairs/punjabi/August /current-affairs-august.pdf",
+      "path": "content/current-affairs/punjabi/August 2026/current-affairs-august.pdf",
       "category": "",
-      "pdf": "content/current-affairs/punjabi/August /current-affairs-august.pdf"
+      "pdf": "content/current-affairs/punjabi/August 2026/current-affairs-august.pdf"
     },
     {
       "collection": "current-affairs",
@@ -292,9 +292,9 @@
       "readingMinutes": 1,
       "lang": "en",
       "featured": false,
-      "path": "content/current-affairs/english/july /current-affairs-july.pdf",
+      "path": "content/current-affairs/english/July 2026/current-affairs-july.pdf",
       "category": "",
-      "pdf": "content/current-affairs/english/july /current-affairs-july.pdf"
+      "pdf": "content/current-affairs/english/July 2026/current-affairs-july.pdf"
     },
     {
       "collection": "study-material",
@@ -530,6 +530,39 @@
       "badges": [],
       "search": "mobile phone - part 1 (english) mobile phone - part 1 (english) - free study material from house of aspirants. computer material, filed under its subject, language and chapter. mobile phone.pdf computer computer english mobile phone part 1 mobile phone - part 1 (english) computer study material mobile phone",
       "pdf": "content/study-material/computer/english/mobile phone/mobile phone.pdf"
+    },
+    {
+      "collection": "study-material",
+      "file": "material-ms-word-pa.html",
+      "url": "https://houseofaspirants.in/material-ms-word-pa",
+      "title": "M S Word - Part 1 (Punjabi)",
+      "description": "M S Word - Part 1 (Punjabi) - free study material from House of Aspirants. Computer material, filed under its subject, language and chapter.",
+      "published": "2026-10-01",
+      "updated": "2026-10-01",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 21,
+      "lang": "en",
+      "featured": false,
+      "path": "content/study-material/computer/punjabi/M S word /ms-word-pa.pdf",
+      "category": "Computer",
+      "language": "pa",
+      "subjectName": "Computer",
+      "studySubject": "computer",
+      "studyLanguage": "pa",
+      "studyLanguageName": "Punjabi",
+      "studyChapter": "M S word ",
+      "studyChapterName": "M S Word",
+      "studyPart": 1,
+      "studyParts": 1,
+      "size": 4328069,
+      "sizeLabel": "4.1 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+      "badges": [],
+      "search": "m s word - part 1 (punjabi) m s word - part 1 (punjabi) - free study material from house of aspirants. computer material, filed under its subject, language and chapter. ms-word-pa.pdf computer computer punjabi m s word part 1 m s word - part 1 (punjabi) computer study material ms-word-pa",
+      "pdf": "content/study-material/computer/punjabi/M S word /ms-word-pa.pdf"
     },
     {
       "collection": "study-material",
@@ -1282,10 +1315,10 @@
   "pdfs": [],
   "drops": [
     {
-      "path": "content/current-affairs/english/August /august-2026-english.pdf",
+      "path": "content/current-affairs/english/August 2026/august-2026-english.pdf",
       "filename": "august-2026-english.pdf",
       "folder": "current-affairs",
-      "category": "August ",
+      "category": "August 2026",
       "title": "August 2026 English",
       "slug": "august-2026-english",
       "language": "en",
@@ -1301,10 +1334,10 @@
       "thumbH": 600
     },
     {
-      "path": "content/current-affairs/english/july /current-affairs-july.pdf",
+      "path": "content/current-affairs/english/July 2026/current-affairs-july.pdf",
       "filename": "current-affairs-july.pdf",
       "folder": "current-affairs",
-      "category": "july ",
+      "category": "July 2026",
       "title": "Current Affairs July",
       "slug": "current-affairs-july",
       "language": "en",
@@ -1320,10 +1353,10 @@
       "thumbH": 600
     },
     {
-      "path": "content/current-affairs/punjabi/August /current-affairs-august.pdf",
+      "path": "content/current-affairs/punjabi/August 2026/current-affairs-august.pdf",
       "filename": "current-affairs-august.pdf",
       "folder": "current-affairs",
-      "category": "August ",
+      "category": "August 2026",
       "title": "Current Affairs August",
       "slug": "current-affairs-august",
       "language": "en",
@@ -1564,6 +1597,25 @@
       "summary": "MOBILE PHONES (CELLULAR PHONES) A Mobile Phone (Cell Phone) is an electronic communication device used to make and receive calls using radio frequency signals (electromagnetic waves) while the user is moving within a cellular network coverage area. Mobile phones communicate through a network of",
       "thumbnail": "assets/img/pdf/2e424874b957.jpg",
       "thumbW": 450,
+      "thumbH": 600
+    },
+    {
+      "path": "content/study-material/computer/punjabi/M S word /ms-word-pa.pdf",
+      "filename": "ms-word-pa.pdf",
+      "folder": "study-material",
+      "category": "M S word ",
+      "title": "Ms Word Pa",
+      "slug": "ms-word-pa",
+      "language": "en",
+      "scripts": "latin",
+      "size": 4328069,
+      "sizeLabel": "4.1 MB",
+      "published": "2026-10-01",
+      "modified": "2026-10-01",
+      "pages": 21,
+      "summary": "HOUSE OF ASPIRANT Punjab Police • PSSSB • Punjab PCS • Government Exam Preparation ! ਉਸ ਵਿਅਕਤੀ ˛ˇ $ K ਤ) ਸਿੱਖੋ ਜਿਸ ˛ˇ ( Gਨ/ ਪਹਿਲਾਂ ਹੀ ਉਹ ਹਾਸਲ ਕਰ ਲਿਆ ਹੈ ਜਿਸ ਲਈ ਤੁਈਡਸ: ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ। ਇਹ ˛ˇ ( Kਨ$ਟਸ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਤੁਹਾਡਾ ਧੰਨਵਾਦ। ਜੇ ਤੁਹਾਨੂੰ ਇਹ ˛ˇ ( Kਨ$ਟਸ ਵਧੀਆ ਲੱਗੇ ਹਨ ਅਤੇ ਤੁੂਂਸ> ਇਸੇ ਤੁMੀ>?ਾਂ ਦੇ ਹੋਰ",
+      "thumbnail": "assets/img/pdf/d1324cf566ae.jpg",
+      "thumbW": 424,
       "thumbH": 600
     },
     {
@@ -2062,7 +2114,7 @@
     }
   ],
   "counts": {
-    "study-material": 28,
+    "study-material": 29,
     "notes": 0,
     "current-affairs": 3,
     "magazine": 0,

@@ -29,7 +29,6 @@ content/study-material/
 ├── reasoning/
 ├── quant/
 ├── gk/
-├── current-affairs/
 ├── economy/
 ├── geography/
 ├── polity/

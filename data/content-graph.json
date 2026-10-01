@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 188,
-  "edges": 844,
+  "nodes": 191,
+  "edges": 862,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -256,8 +256,8 @@
    "hub": "current-affairs.html"
   },
   {
-   "id": "content/current-affairs/english/August%20/august-2026-english.pdf",
-   "url": "/content/current-affairs/english/August%20/august-2026-english.pdf",
+   "id": "content/current-affairs/english/August%202026/august-2026-english.pdf",
+   "url": "/content/current-affairs/english/August%202026/august-2026-english.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -268,8 +268,8 @@
    "hub": ""
   },
   {
-   "id": "content/current-affairs/english/july%20/current-affairs-july.pdf",
-   "url": "/content/current-affairs/english/july%20/current-affairs-july.pdf",
+   "id": "content/current-affairs/english/July%202026/current-affairs-july.pdf",
+   "url": "/content/current-affairs/english/July%202026/current-affairs-july.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -280,8 +280,8 @@
    "hub": ""
   },
   {
-   "id": "content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
-   "url": "/content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
+   "id": "content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
+   "url": "/content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -426,6 +426,18 @@
   {
    "id": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
    "url": "/content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+   "url": "/content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1329,6 +1341,30 @@
    "type": "study-material",
    "template": "",
    "title": "Mobile Phone - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-ms-word-pa",
+   "url": "/material-ms-word-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-ms-word-pa.html",
+   "url": "/material-ms-word-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "M S Word - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2372,6 +2408,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-computer.html",
+   "to": "material-ms-word-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-culture-of-punjab.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -2769,6 +2811,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-ms-word-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-number-series-en.html",
    "rel": "contextual",
    "weight": 1
@@ -3045,7 +3093,7 @@
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "content/current-affairs/english/August%20/august-2026-english.pdf",
+   "to": "content/current-affairs/english/August%202026/august-2026-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3123,7 +3171,7 @@
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
+   "to": "content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3201,7 +3249,7 @@
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "content/current-affairs/english/july%20/current-affairs-july.pdf",
+   "to": "content/current-affairs/english/July%202026/current-affairs-july.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3831,7 +3879,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-mobile-phone.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3915,7 +3963,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-mobile-phone.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3999,7 +4047,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-mobile-phone.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -4083,6 +4131,90 @@
   },
   {
    "from": "material-mobile-phone.html",
+   "to": "material-ms-word-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "material-ms-word-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
    "to": "material-mobail-phon.html",
    "rel": "related-study-material",
    "weight": 1
@@ -6867,6 +6999,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -7066,6 +7204,12 @@
   {
    "from": "study-material.html",
    "to": "material-mobile-phone.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-ms-word-pa.html",
    "rel": "contextual",
    "weight": 1
   },

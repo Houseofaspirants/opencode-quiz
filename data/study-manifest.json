@@ -23,16 +23,16 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 4,
-      "newest": "2026-09-30",
-      "totalSize": 13406992,
+      "count": 5,
+      "newest": "2026-10-01",
+      "totalSize": 17735061,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "fundamentals-of-computer",
@@ -44,6 +44,17 @@
                 }
               ],
               "pages": 12
+            },
+            {
+              "id": "M S word ",
+              "name": "M S Word",
+              "parts": [
+                {
+                  "file": "material-ms-word-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 21
             },
             {
               "id": "mobile phones",
@@ -90,7 +101,7 @@
           ]
         }
       ],
-      "chapters": 4
+      "chapters": 5
     },
     {
       "id": "english",
@@ -1051,36 +1062,6 @@
       }
     },
     {
-      "id": "current-affairs",
-      "name": "Current Affairs",
-      "icon": "📰",
-      "color": "#ef4444",
-      "description": "Daily, national, international, sports and Punjab current affairs.",
-      "order": 7,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
-      "languages": [
-        {
-          "id": "pa",
-          "name": "Punjabi",
-          "native": "ਪੰਜਾਬੀ",
-          "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
-        },
-        {
-          "id": "en",
-          "name": "English",
-          "native": "English",
-          "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
-        }
-      ],
-      "chapters": 0
-    },
-    {
       "id": "polity",
       "name": "Polity",
       "icon": "⚖️",
@@ -1615,6 +1596,6 @@
       "hidden": true
     }
   ],
-  "total": 28,
+  "total": 29,
   "generatedBy": "scripts/study_material.py"
 }
