@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 133,
-  "edges": 560,
+  "nodes": 134,
+  "edges": 546,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -1408,9 +1408,9 @@
    "hub": ""
   },
   {
-   "id": "pyq-2022-question-paper",
-   "url": "/pyq-2022-question-paper",
-   "type": "document",
+   "id": "pyq.html",
+   "url": "/pyq.html",
+   "type": "page",
    "template": "",
    "title": "",
    "lang": "en",
@@ -1420,14 +1420,30 @@
    "hub": ""
   },
   {
-   "id": "pyq-2022-question-paper.html",
-   "url": "/pyq-2022-question-paper.html",
-   "type": "previous-year-questions",
-   "template": "previous-year-question",
-   "title": "2022 Question Paper",
+   "id": "pyq/punjab-police-constable/index.html",
+   "url": "/pyq/punjab-police-constable/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Police Constable Previous Year Papers",
    "lang": "en",
    "subjects": [],
-   "exams": [],
+   "exams": [
+    "Punjab Police Constable Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-police-head-constable/index.html",
+   "url": "/pyq/punjab-police-head-constable/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Police Head Constable Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Police Head Constable Previous Year Papers"
+   ],
    "tags": [],
    "hub": "previous-year-questions.html"
   },
@@ -2010,12 +2026,6 @@
    "weight": 1
   },
   {
-   "from": "archives.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
    "from": "author-gurpreet-singh.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -2359,12 +2369,6 @@
   },
   {
    "from": "material-articles.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-articles.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2455,12 +2459,6 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2534,12 +2532,6 @@
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "material-fundamentals-of-computer",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2623,12 +2615,6 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobail-phon.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2702,12 +2688,6 @@
   {
    "from": "material-mobile-phone.html",
    "to": "material-mobile-phone",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2791,12 +2771,6 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-number-series-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2875,12 +2849,6 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-1-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2954,12 +2922,6 @@
   {
    "from": "material-part-1-english-en.html",
    "to": "material-part-1-english-en",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-1-english-en.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3049,12 +3011,6 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-1-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3133,12 +3089,6 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-1-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3212,12 +3162,6 @@
   {
    "from": "material-part-2-en.html",
    "to": "material-part-2-en",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-2-en.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3307,12 +3251,6 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-2-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3386,12 +3324,6 @@
   {
    "from": "material-part-2-pa.html",
    "to": "material-part-2-pa",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-2-pa.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3481,12 +3413,6 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-2-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3566,12 +3492,6 @@
   {
    "from": "material-part-3-english.html",
    "to": "material-part-4-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-3-english.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3667,12 +3587,6 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-3-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3758,12 +3672,6 @@
   {
    "from": "material-part-4-english-en.html",
    "to": "material-part-5-english-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-4-english-en.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3859,12 +3767,6 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-4-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3949,12 +3851,6 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "pyq-2022-question-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-5-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -4034,12 +3930,6 @@
   {
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-5-punjabi-pa",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-part-5-punjabi-pa.html",
-   "to": "pyq-2022-question-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4207,18 +4097,6 @@
   },
   {
    "from": "previous-year-questions.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "previous-year-questions.html",
-   "to": "expected-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "previous-year-questions.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -4231,92 +4109,146 @@
   },
   {
    "from": "previous-year-questions.html",
-   "to": "pyq-2022-question-paper.html",
+   "to": "pyq.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "previous-year-questions.html",
-   "to": "quiz.html",
+   "to": "pyq/punjab-police-constable/index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "previous-year-questions.html",
-   "to": "study-notes.html",
+   "to": "pyq/punjab-police-head-constable/index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "current-affairs.html",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "exam-punjab-police-constable.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "magazine.html",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "expected-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable/index.html",
    "to": "previous-year-questions.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "pyq-2022-question-paper",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "strategy.html",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "pyq.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "pyq/punjab-police-constable/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "exam-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
    "to": "index.html",
-   "rel": "practice-quiz",
+   "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
+   "from": "pyq/punjab-police-head-constable/index.html",
    "to": "mock.html",
-   "rel": "practice-quiz",
+   "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "material-part-1-en.html",
-   "rel": "related-pdf",
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "material-part-1-pa.html",
-   "rel": "related-pdf",
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper.html",
-   "to": "material-part-2-en.html",
-   "rel": "related-pdf",
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "pyq/punjab-police-head-constable/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "study.html",
+   "rel": "contextual",
    "weight": 1
   },
   {

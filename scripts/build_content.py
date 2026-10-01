@@ -4858,15 +4858,31 @@ def pyq_exam_page(exam):
         </div>""")
         else:
             blocks.append(f'        <div class="prose">{body}</div>')
+    if blocks:
+        overview_body = "\n".join(blocks)
+    else:
+        # A folder whose sidecar has not been written up still publishes: the
+        # table below is complete, and this says so in as many words rather
+        # than inventing a paragraph about an exam nobody has described yet.
+        overview_body = (
+            '        <div class="empty-state"><span class="es-icon" '
+            'aria-hidden="true">\U0001F4C4</span>'
+            '<h3>No overview written yet</h3>'
+            "<p>The table below is complete either way. An overview is added "
+            "as <code>overview.en.md</code> beside this exam's folder.</p>"
+            "</div>")
+    editions = ", ".join(esc({"en": "English", "pa": "Punjabi"}.get(l, l))
+                         for l in exam["languages"])
+    n_ed = len(exam["languages"])
     overview = f"""    <section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div>
           <span class="eyebrow">Overview</span>
           <h2>About this exam</h2>
           <p>{esc(exam["organization"])} &middot; {esc(exam["category"])} &middot;
-             {" · ".join(esc(l) for l in exam["languages"])} edition{"s" if len(exam["languages"]) > 1 else ""} published</p>
+             {editions} edition{"s" if n_ed > 1 else ""} published</p>
         </div></div>
-{chr(10).join(blocks) if blocks else '        <div class="empty-state"><span class="es-icon" aria-hidden="true">📄</span><h3>No overview written yet</h3><p>The table below is complete either way - an overview is added as overview.en.md beside this exam\'s folder.</p></div>'}
+{overview_body}
       </div>
     </section>"""
 
@@ -5546,7 +5562,7 @@ def load_popularity():
     return out
 
 
-def write_search_index(items, index):
+def write_search_index(items, index, pyq_exams=()):
     """data/search-index.json - the full-site corpus behind Ctrl+K.
 
     Title, description, body, tags, subjects, exams and category for every
@@ -5629,6 +5645,33 @@ def write_search_index(items, index):
             "m": "",
             "w": [str(k) for k in ex.get("keywords", [])][:12]
                  if isinstance(ex.get("keywords"), list) else [],
+            "a": BYLINE,
+            "f": "",
+        })
+    # Previous Year Questions: one row per exam folder, so a search for an
+    # exam's papers lands on the table that lists them rather than on nothing.
+    # The body is the exam's own overview - real words from overview.en.md /
+    # overview.pa.md, never a summary invented here.
+    exam_names = {str(ex.get("id", "")): str(ex.get("name", ""))
+                  for ex in exam_rows}
+    for ex in (pyq_exams or []):
+        overview = re.sub(r"^#+\s*", "", " ".join(
+            ex.get("overview", {}).values() or []), flags=re.M)
+        corpus.append({
+            "u": "/" + ex["file"],
+            "t": ex["title"],
+            "d": ex["description"],
+            "b": plain_text(overview)[:BODY_LIMIT],
+            "k": "previous-year-questions",
+            "l": "en",
+            "c": str(ex.get("category") or ""),
+            "g": [],
+            "s": [],
+            "e": [n for n in (exam_names.get(str(ex.get("id", ""))),) if n],
+            "m": str(ex.get("description") or "")[:220],
+            "w": [str(w) for w in (ex.get("title"), ex.get("organization"),
+                                   ex.get("category"), "Previous Year Questions",
+                                   "official answer key") if w][:12],
             "a": BYLINE,
             "f": "",
         })
@@ -6721,7 +6764,7 @@ def main():
     patch_core_nav()
 
     # ---- Phase 2 artefacts ------------------------------------------------
-    write_search_index(rendered, index)
+    write_search_index(rendered, index, pyq_exams)
     write_feed(rendered)
     arch_html = archives_page(rendered, index, popularity)
     (ROOT / ARCHIVES_FILE).write_text(arch_html, encoding="utf-8")
@@ -6792,6 +6835,34 @@ def main():
         if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and fn not in expected:
             (ROOT / fn).unlink()
             removed.append(fn)
+    # Nested routes live one level down (pyq/<slug>/index.html), which the root
+    # scan above cannot see into: an exam folder that no longer exists, or a
+    # slug that was renamed in its metadata.json, is cleaned up here - the
+    # directory with it, so no empty route is left behind on disk.
+    pyq_dir = ROOT / "pyq"
+    if pyq_dir.is_dir():
+        for name in sorted(os.listdir(pyq_dir)):
+            if name.startswith("."):
+                continue
+            sub = pyq_dir / name
+            if sub.is_dir():
+                for fn in sorted(os.listdir(sub)):
+                    rel = f"pyq/{name}/{fn}"
+                    if fn.endswith(".html") and rel not in expected:
+                        (sub / fn).unlink()
+                        removed.append(rel)
+                if not [n for n in os.listdir(sub)
+                        if n != ".DS_Store" and not n.startswith(".")]:
+                    sub.rmdir()
+            elif name.endswith(".html") and f"pyq/{name}" not in expected:
+                sub.unlink()
+                removed.append(f"pyq/{name}")
+        if not [n for n in os.listdir(pyq_dir)
+                if n != ".DS_Store" and not n.startswith(".")]:
+            try:
+                pyq_dir.rmdir()
+            except OSError:
+                pass
     pa_dir = ROOT / "pa"
     if pa_dir.is_dir():
         for fn in sorted(os.listdir(pa_dir)):
@@ -6860,7 +6931,7 @@ def main():
             "url": f"{DOMAIN}/archives",
             "title": ARCHIVES_TITLE,
             "description": ARCHIVES_DESC,
-        }] + phase4_manifest,
+        }] + phase4_manifest + pyq_page_entries,
         "items": sorted(manifest_items, key=lambda r: r["file"]),
         "pdfs": pdfs,
         "drops": drops,

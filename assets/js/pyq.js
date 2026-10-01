@@ -1,7 +1,7 @@
 /* ============================================================================
  * pyq.js | House of Aspirants - Free Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
- * Two lists, both read from config:
+ * Three lists, all read from config:
  *
  *   1. EXAMS  — data/exams.json. Every registered exam becomes an exam card
  *               linking to its own generated landing page. Add an exam to that
@@ -9,10 +9,16 @@
  *
  *   2. PAPERS — data/content-manifest.json. The PDF scanner writes one `drops`
  *               record per file under content/, so a paper dropped into
- *               content/previous-year-questions/<exam>/<year>.pdf is picked up
- *               on the next publish with no page, no markup and no code
- *               written for it. `folder` is the collection, `category` the exam
- *               sub-folder, the filename carries the year.
+ *               content/previous-year-questions/<exam>/<year>-question-paper.pdf
+ *               is picked up on the next publish with no page, no markup and no
+ *               code written for it. `folder` is the collection, `category` the
+ *               exam sub-folder, the filename carries the year.
+ *
+ *   3. FOLDERS — data/pyq-manifest.json. One entry per exam folder, with the
+ *               file name of that exam's own page (pyq/<slug>/index.html) and
+ *               how many papers and answer keys it holds. An exam with a folder
+ *               links straight to its year-by-year table; one without keeps
+ *               linking to its landing page.
  * ========================================================================== */
 (() => {
   "use strict";
@@ -49,18 +55,29 @@
   let exams = [];
   let term = "";
 
+  /* The folder-per-exam collection (data/pyq-manifest.json). An exam that has
+     one gets its own year-by-year table at pyq/<slug>/index.html and is linked
+     there from its card; an exam that has not keeps linking to its landing
+     page. Either way the href comes from a generated manifest, never from
+     markup - a new exam folder appears without this file being touched. */
+  let folders = [];
+  let folderById = new Map();
+
   function examCard(e) {
     const subs = (e.subjects || [])
       .map((id) => SUBJECT_LABEL[id] || id)
       .join(" · ");
-    const published = papers.filter((p) => p.exam === e.id).length;
+    const folder = folderById.get(e.id);
+    const listed = folder
+      ? folder.count
+      : papers.filter((p) => p.category === e.id).length;
     return `
-    <a class="card card-pad" href="exam-${encodeURIComponent(e.id)}.html">
+    <a class="card card-pad" href="${esc(folder ? folder.file : `exam-${encodeURIComponent(e.id)}.html`)}">
       <span class="eyebrow">${band(e.id) === "central" ? "Central exam" : "Punjab exam"}${subs ? " · " + esc(subs) : ""}</span>
       <h3>${esc(e.name)}</h3>
       <p class="text-sm muted">${esc(e.summary || "")}</p>
-      <p class="text-sm">${published ? `${published} paper${published === 1 ? "" : "s"} published` : "Syllabus, subjects and practice sets"}</p>
-      <p class="ilink">Open exam &rarr;</p>
+      <p class="text-sm">${listed ? `${listed} paper${listed === 1 ? "" : "s"} published` : "Syllabus, subjects and practice sets"}</p>
+      <p class="ilink">${folder ? "Papers by year" : "Open exam"} &rarr;</p>
     </a>`;
   }
 
@@ -103,6 +120,7 @@
 
   function paperCard(d) {
     const exam = exams.find((e) => e.id === d.category);
+    const folder = folderById.get(d.category);
     const year = yearOf(d);
     return `
     <article class="card card-pad">
@@ -111,6 +129,7 @@
       <p class="text-sm muted">${esc(d.sizeLabel || "")}${d.pages ? ` · ${d.pages} pages` : ""} · ${d.language === "pa" ? "Punjabi" : "English"}</p>
       <p class="btn-row" style="margin-bottom:0">
         <a class="btn btn-soft" href="${esc(d.path)}" target="_blank" rel="noopener">Download PDF ↓</a>
+        ${folder ? `<a class="btn btn-soft" href="${esc(folder.file)}">All years &rarr;</a>` : ""}
         ${exam ? `<a class="btn btn-soft" href="exam-${encodeURIComponent(exam.id)}.html">Exam page →</a>` : ""}
       </p>
     </article>`;
@@ -153,10 +172,16 @@
     renderExams();
   });
 
-  Promise.all([fetchJSON("data/exams.json"), fetchJSON("data/content-manifest.json")]).then(
-    ([ex, cm]) => {
+  Promise.all([
+    fetchJSON("data/exams.json"),
+    fetchJSON("data/content-manifest.json"),
+    fetchJSON("data/pyq-manifest.json"),
+  ]).then(
+    ([ex, cm, pyq]) => {
       exams = (ex && ex.exams) || [];
       papers = ((cm && cm.drops) || []).filter(isPaper);
+      folders = (pyq && pyq.exams) || [];
+      folderById = new Map(folders.map((f) => [f.id, f]));
       if (!exams.length) {
         examGrid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
           <div class="es-icon">📂</div><h3>No exam registered yet</h3>

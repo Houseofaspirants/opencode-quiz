@@ -2280,6 +2280,109 @@ a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text
 .answer-box .ab-label, .bl-label, .fact-table th { font-size: 0.75rem; }
 
 /* ==========================================================================
+ * PREVIOUS YEAR QUESTIONS — the per-exam paper table (pyq/<slug>/index.html)
+ * Built by scripts/build_content.py from the folders in
+ * content/previous-year-questions/. One row per year: the question paper and
+ * the official answer key side by side, or the words "Not published" for a
+ * key the conducting body has not released. Nothing here is a placeholder -
+ * the cell is empty because the file is.
+ * ========================================================================== */
+.pyq-table-wrap { position: relative; }
+.pyq-papers {
+  width: 100%;
+  border-collapse: collapse;
+  font-variant-numeric: tabular-nums;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+}
+.pyq-papers thead th {
+  text-align: left;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: var(--surface-2);
+  padding: 12px 14px;
+  border-bottom: 2px solid var(--border);
+}
+.pyq-papers tbody th,
+.pyq-papers tbody td {
+  padding: 15px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+.pyq-papers tbody th[scope="row"] {
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  width: 1%;
+}
+.pyq-papers tbody tr:last-child > * { border-bottom: 0; }
+.pyq-papers tbody tr { transition: background 0.15s ease; }
+.pyq-papers tbody tr:hover { background: color-mix(in srgb, var(--brand) 5%, transparent); }
+.pyq-dl { white-space: nowrap; }
+.pyq-filemeta { display: block; margin-top: 7px; font-size: 0.78rem; color: var(--muted); }
+.pyq-none { display: inline-block; font-size: 0.88rem; font-style: italic; color: var(--muted); }
+
+/* The Punjabi edition of an overview sits under its own label, in its own
+   script, without changing the language of the chrome around it. */
+.pyq-alt {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--border);
+}
+.pyq-alt h3 { font-size: 1rem; margin-bottom: 10px; }
+
+/* Phone: one card per year with labelled rows — the same stacked-table
+   pattern revision.html uses, so a 360px screen never scrolls sideways. */
+@media (max-width: 640px) {
+  .pyq-papers thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .pyq-papers,
+  .pyq-papers tbody,
+  .pyq-papers tr,
+  .pyq-papers th,
+  .pyq-papers td { display: block; width: auto; }
+  .pyq-papers tbody tr {
+    border: 1px solid var(--border);
+    border-radius: var(--r-md);
+    margin-bottom: 14px;
+    background: var(--surface);
+    overflow: hidden;
+  }
+  .pyq-papers tbody tr:last-child { margin-bottom: 0; }
+  .pyq-papers tbody th,
+  .pyq-papers tbody td {
+    padding: 12px 14px;
+    border-bottom: 1px dashed var(--border);
+    width: auto;
+  }
+  .pyq-papers tbody tr > *:last-child { border-bottom: 0; }
+  .pyq-papers tbody th[scope="row"]::before,
+  .pyq-papers tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.68rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+}
+
+/* ==========================================================================
  * CONTENT PAGES — study notes, magazine, strategy, sessions, recruitment
  * Rendered by scripts/build_content.py. Same tokens and card language as the
  * rest of the portal; only the reading layout is new.

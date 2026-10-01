@@ -134,15 +134,13 @@ def _overview(folder, lang):
     return path.read_text(encoding="utf-8").strip()
 
 
-def _description(title, organization, years):
+def _description(title, organization):
     """140-160 characters: the window every meta description on the site sits
-    in. Built from the sidecar's own fields, never from a template that could
-    describe an exam that does not exist."""
-    span = (f"{years} year of papers" if years == 1
-            else f"{years} years of papers")
+    in. Built from the sidecar's own fields only - never from a year count,
+    which changes the moment a paper lands and would rewrite the page's meta
+    description on every publish."""
     return (f"{title} from {organization} - question papers and official "
-            f"answer keys by year, {span} listed with a download for each "
-            f"document.")
+            f"answer keys by year, with a download for each document.")
 
 
 def build(drops, err, warn, info=None):
@@ -195,7 +193,7 @@ def build(drops, err, warn, info=None):
         taken[slug] = folder
 
         rows, others = {}, []
-        for drop in groups[folder]:
+        for drop in groups.get(folder, []):
             name = str(drop.get("filename") or "")
             m = PAPER_RE.match(name)
             if m:
@@ -239,8 +237,7 @@ def build(drops, err, warn, info=None):
             "languages": langs,
             "description": str(meta.get("description") or "").strip()
                            or _description(title,
-                                           str(meta["organization"]).strip(),
-                                           years),
+                                           str(meta["organization"]).strip()),
             "overview": {k: v for k, v in overview.items() if v},
             "papers": papers,
             "others": [file_row(d) for d in
