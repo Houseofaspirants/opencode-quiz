@@ -2408,6 +2408,7 @@ a.tg-lock { display: flex; flex-direction: column; gap: 7px; padding: 20px; text
 a.badge { text-decoration: none; transition: border-color .15s ease, color .15s ease; }
 a.badge:hover, a.badge:focus-visible { color: var(--brand); border-color: color-mix(in srgb, var(--brand) 55%, transparent); }
 .doc-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+.affiliate-note { margin-top: 18px; max-width: 70ch; }
 
 /* Table of contents — first in the DOM (phones read it first), parked in the
    right rail from 1100px where the reading column stays at a comfortable

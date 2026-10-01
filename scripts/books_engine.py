@@ -704,6 +704,12 @@ def keep_going(book: dict) -> str:
             f'<div class="grid grid-3">{body}</div></div></section>')
 
 
+# Amazon Associates requires this disclosure wherever affiliate links appear.
+# books.html carries the same sentence under the shelf.
+AFFILIATE_NOTE = ('<p class="text-sm muted affiliate-note">As an Amazon Associate, '
+                  'House of Aspirants earns from qualifying purchases.</p>')
+
+
 def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
     bid, title = book["id"], book["title"]
     file = f"book-{bid}.html"
@@ -746,6 +752,7 @@ def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
               <p>{esc(book["recommendation"])}</p>
             </div>
             <div class="doc-actions">{provider_buttons(book, providers)}</div>
+            {AFFILIATE_NOTE if any(p["external"] for p in providers) else ""}
           </div>
         </div>
       </div>

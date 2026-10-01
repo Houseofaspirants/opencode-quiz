@@ -10,10 +10,24 @@
       "url": "https://houseofaspirants.in/books",
       "title": "Recommended Books for Punjab Exams | House of Aspirants",
       "description": "Compare preparation books for Punjab Police, PSSSB, PPSC, SSC, banking and railway exams - what each one covers, who it suits and who should skip it.",
-      "count": 6
+      "count": 10
     }
   ],
   "pages": [
+    {
+      "file": "book-spectrum-modern-india.html",
+      "url": "https://houseofaspirants.in/book-spectrum-modern-india",
+      "title": "Spectrum Modern India by Rajiv Ahir: Who It Suits",
+      "description": "Rajiv Ahir's A Brief History of Modern India (Spectrum) - what it covers, who it suits for Punjab PCS, PSSSB and Police, plus free history MCQs to practise.",
+      "priority": "0.7"
+    },
+    {
+      "file": "book-arihant-computer-awareness.html",
+      "url": "https://houseofaspirants.in/book-arihant-computer-awareness",
+      "title": "Arihant Computer Awareness: Who It Suits",
+      "description": "Arihant's Computer Awareness by Shaifali Saini - what it covers, who it suits for Punjab Police, PSSSB and Patwari, plus free computer MCQs to practise.",
+      "priority": "0.7"
+    },
     {
       "file": "book-wren-martin-english-grammar.html",
       "url": "https://houseofaspirants.in/book-wren-martin-english-grammar",
@@ -43,6 +57,13 @@
       "priority": "0.7"
     },
     {
+      "file": "book-punjabi-vyakaran-manish-chalana.html",
+      "url": "https://houseofaspirants.in/book-punjabi-vyakaran-manish-chalana",
+      "title": "Punjabi Vyakaran by Manish Chalana: Who It Suits",
+      "description": "Manish Chalana's Punjabi Vyakaran (ਪੰਜਾਬੀ ਵਿਆਕਰਨ) with 4000+ MCQs - who it suits for Patwari, PSSSB Clerk and Punjab Police, with free Punjabi practice.",
+      "priority": "0.7"
+    },
+    {
       "file": "book-rs-aggarwal-reasoning.html",
       "url": "https://houseofaspirants.in/book-rs-aggarwal-reasoning",
       "title": "R.S. Aggarwal Reasoning: Review and Prep Use",
@@ -55,9 +76,73 @@
       "title": "R.S. Aggarwal Quantitative Aptitude: Review",
       "description": "What R.S. Aggarwal's Quantitative Aptitude covers, who it suits, which chapters to work and who should skip it - plus free quant practice sets beside it.",
       "priority": "0.7"
+    },
+    {
+      "file": "book-sadda-punjab-munish-jindal.html",
+      "url": "https://houseofaspirants.in/book-sadda-punjab-munish-jindal",
+      "title": "Sadda Punjab by Munish Jindal: Punjab GK Book",
+      "description": "Sadda Punjab by Munish Jindal - a Punjabi-medium Punjab GK theory book. Who it suits for Punjab Police, PSSSB and PCS, plus free Punjab GK MCQs to practise.",
+      "priority": "0.7"
     }
   ],
   "items": [
+    {
+      "id": "spectrum-modern-india",
+      "file": "book-spectrum-modern-india.html",
+      "url": "https://houseofaspirants.in/book-spectrum-modern-india",
+      "title": "Spectrum Modern India by Rajiv Ahir: Who It Suits",
+      "description": "Rajiv Ahir's A Brief History of Modern India (Spectrum) - what it covers, who it suits for Punjab PCS, PSSSB and Police, plus free history MCQs to practise.",
+      "name": "A Brief History of Modern India",
+      "author": "Rajiv Ahir (Spectrum)",
+      "publisher": "Spectrum Books",
+      "subject": "gk",
+      "exams": [
+        "punjab-pcs",
+        "psssb",
+        "punjab-police",
+        "upsc",
+        "general"
+      ],
+      "languages": [
+        "English"
+      ],
+      "difficulty": "Intermediate",
+      "rating": null,
+      "featured": true,
+      "cover": "",
+      "topics": [],
+      "keywords": "modern history book, Spectrum modern India, Rajiv Ahir, history book for Punjab exams",
+      "lastUpdated": "2026-10-02"
+    },
+    {
+      "id": "arihant-computer-awareness",
+      "file": "book-arihant-computer-awareness.html",
+      "url": "https://houseofaspirants.in/book-arihant-computer-awareness",
+      "title": "Arihant Computer Awareness: Who It Suits",
+      "description": "Arihant's Computer Awareness by Shaifali Saini - what it covers, who it suits for Punjab Police, PSSSB and Patwari, plus free computer MCQs to practise.",
+      "name": "Computer Awareness",
+      "author": "Shaifali Saini (Arihant)",
+      "publisher": "Arihant Publications",
+      "subject": "computer",
+      "exams": [
+        "punjab-police",
+        "psssb",
+        "patwari",
+        "ssc",
+        "banking",
+        "general"
+      ],
+      "languages": [
+        "English"
+      ],
+      "difficulty": "Beginner",
+      "rating": null,
+      "featured": true,
+      "cover": "",
+      "topics": [],
+      "keywords": "computer awareness book, Arihant Computer Awareness, Shaifali Saini, computer book for Punjab exams",
+      "lastUpdated": "2026-10-02"
+    },
     {
       "id": "wren-martin-english-grammar",
       "file": "book-wren-martin-english-grammar.html",
@@ -205,6 +290,35 @@
       "lastUpdated": "2026-09-30"
     },
     {
+      "id": "punjabi-vyakaran-manish-chalana",
+      "file": "book-punjabi-vyakaran-manish-chalana.html",
+      "url": "https://houseofaspirants.in/book-punjabi-vyakaran-manish-chalana",
+      "title": "Punjabi Vyakaran by Manish Chalana: Who It Suits",
+      "description": "Manish Chalana's Punjabi Vyakaran (ਪੰਜਾਬੀ ਵਿਆਕਰਨ) with 4000+ MCQs - who it suits for Patwari, PSSSB Clerk and Punjab Police, with free Punjabi practice.",
+      "name": "Punjabi Vyakaran (ਪੰਜਾਬੀ ਵਿਆਕਰਨ)",
+      "author": "Manish Chalana",
+      "publisher": "Chalana Publications",
+      "subject": "punjabi",
+      "exams": [
+        "punjab-police",
+        "psssb",
+        "patwari",
+        "pspcl",
+        "excise-inspector",
+        "general"
+      ],
+      "languages": [
+        "Punjabi"
+      ],
+      "difficulty": "Intermediate",
+      "rating": null,
+      "featured": true,
+      "cover": "",
+      "topics": [],
+      "keywords": "Punjabi grammar book, Punjabi Vyakaran, Manish Chalana, ਪੰਜਾਬੀ ਵਿਆਕਰਨ, Punjabi book for Punjab exams",
+      "lastUpdated": "2026-10-02"
+    },
+    {
       "id": "rs-aggarwal-reasoning",
       "file": "book-rs-aggarwal-reasoning.html",
       "url": "https://houseofaspirants.in/book-rs-aggarwal-reasoning",
@@ -279,11 +393,39 @@
       ],
       "keywords": "Quantitative Aptitude book, R.S. Aggarwal, quant book for Punjab exams",
       "lastUpdated": "2026-09-30"
+    },
+    {
+      "id": "sadda-punjab-munish-jindal",
+      "file": "book-sadda-punjab-munish-jindal.html",
+      "url": "https://houseofaspirants.in/book-sadda-punjab-munish-jindal",
+      "title": "Sadda Punjab by Munish Jindal: Punjab GK Book",
+      "description": "Sadda Punjab by Munish Jindal - a Punjabi-medium Punjab GK theory book. Who it suits for Punjab Police, PSSSB and PCS, plus free Punjab GK MCQs to practise.",
+      "name": "Sadda Punjab - Punjab General Knowledge",
+      "author": "Munish Jindal",
+      "publisher": "MM Writings",
+      "subject": "gk",
+      "exams": [
+        "punjab-police",
+        "psssb",
+        "punjab-pcs",
+        "patwari",
+        "general"
+      ],
+      "languages": [
+        "Punjabi"
+      ],
+      "difficulty": "Intermediate",
+      "rating": null,
+      "featured": false,
+      "cover": "",
+      "topics": [],
+      "keywords": "Sadda Punjab book, Munish Jindal, Punjab GK book in Punjabi, Punjab general knowledge book",
+      "lastUpdated": "2026-10-02"
     }
   ],
   "redirects": [],
   "counts": {
-    "books": 6,
+    "books": 10,
     "covers": 0,
     "providers": 3
   }
