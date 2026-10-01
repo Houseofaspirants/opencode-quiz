@@ -1,8 +1,8 @@
 {
   "version": 1,
   "domain": "https://houseofaspirants.in",
-  "total": 2,
-  "papers": 1,
+  "total": 3,
+  "papers": 4,
   "keys": 0,
   "exams": [
     {
@@ -65,6 +65,86 @@
       "keys": 0,
       "file": "pyq/punjab-police-head-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-head-constable",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-police-sub-inspector",
+      "slug": "punjab-police-sub-inspector",
+      "title": "Punjab Police Sub-Inspector Previous Year Papers",
+      "organization": "Punjab Police",
+      "category": "Punjab state exams",
+      "languages": [
+        "en"
+      ],
+      "description": "Punjab Police Sub-Inspector Previous Year Papers from Punjab Police - question papers and official answer keys by year, with a download for each document.",
+      "overview": {
+        "en": "## What is on this page\n\nOne row for every year with a paper in this folder: the question paper and the\nofficial answer key beside it, each with a download. The files are the ones\nthe conducting body released. Where a key has not been published yet the cell\nreads *Not published* - it is never filled in from memory, and a paper is\nnever held back while it waits for its key.\n\n## About the exam\n\nThe papers below are the ones released for this post, so they are the only\nhonest description of what is actually asked - treat them as the syllabus's\nproof rather than as a mock with a score attached. Read one untimed before\nyou plan your preparation, so that the syllabus you work through is the one\nthe paper tests. Attempt each one afterwards under a strict clock, and mark\nit only against an official key: until a key appears in the table, the paper\nis practice, not a score."
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "paper": {
+            "path": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+            "filename": "2023-question-paper.pdf",
+            "title": "2023 Question Paper",
+            "size": 25663595,
+            "sizeLabel": "24.5 MB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-01",
+            "modified": "2026-10-01"
+          },
+          "key": null
+        },
+        {
+          "year": "2022",
+          "paper": {
+            "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
+            "filename": "2022-question-paper.pdf",
+            "title": "2022 Question Paper",
+            "size": 24480942,
+            "sizeLabel": "23.3 MB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-01",
+            "modified": "2026-10-01"
+          },
+          "key": null
+        },
+        {
+          "year": "2021",
+          "paper": {
+            "path": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
+            "filename": "2021-question-paper.pdf",
+            "title": "2021 Question Paper",
+            "size": 27501189,
+            "sizeLabel": "26.2 MB",
+            "pages": 742,
+            "language": "en",
+            "published": "2026-10-01",
+            "modified": "2026-10-01"
+          },
+          "key": null
+        }
+      ],
+      "others": [
+        {
+          "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+          "filename": "2022-question-paper2.pdf",
+          "title": "2022 Question paper2",
+          "size": 24719144,
+          "sizeLabel": "23.6 MB",
+          "pages": 0,
+          "language": "en",
+          "published": "2026-10-01",
+          "modified": "2026-10-01"
+        }
+      ],
+      "years": 3,
+      "count": 3,
+      "keys": 0,
+      "file": "pyq/punjab-police-sub-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-police-sub-inspector",
       "hub": "previous-year-questions.html"
     }
   ],
