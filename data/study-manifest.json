@@ -168,15 +168,38 @@
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 2,
+          "chapters": [
+            {
+              "id": "part-1-pa",
+              "name": "Part 1: Pa",
+              "parts": [
+                {
+                  "file": "material-part-1-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 19
+            },
+            {
+              "id": "part-2-pa",
+              "name": "Part 2: Pa",
+              "parts": [
+                {
+                  "file": "material-part-2-pa.html",
+                  "n": 2
+                }
+              ],
+              "pages": 14
+            }
+          ]
         },
         {
           "id": "en",
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 3,
           "chapters": [
             {
               "id": "number-series-en",
@@ -184,7 +207,7 @@
               "parts": [
                 {
                   "file": "material-number-series-en.html",
-                  "n": 5
+                  "n": 3
                 }
               ],
               "pages": 40
@@ -201,37 +224,15 @@
               "pages": 21
             },
             {
-              "id": "part-1-pa",
-              "name": "Part 1: Pa",
-              "parts": [
-                {
-                  "file": "material-part-1-pa.html",
-                  "n": 2
-                }
-              ],
-              "pages": 19
-            },
-            {
               "id": "part-2-en",
               "name": "Part 2: En",
               "parts": [
                 {
                   "file": "material-part-2-en.html",
-                  "n": 3
+                  "n": 2
                 }
               ],
               "pages": 10
-            },
-            {
-              "id": "part-2-pa",
-              "name": "Part 2: Pa",
-              "parts": [
-                {
-                  "file": "material-part-2-pa.html",
-                  "n": 4
-                }
-              ],
-              "pages": 14
             }
           ]
         }

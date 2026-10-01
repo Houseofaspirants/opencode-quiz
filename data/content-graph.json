@@ -340,8 +340,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/number-series-en%20.pdf",
-   "url": "/content/study-material/reasoning/number-series-en%20.pdf",
+   "id": "content/study-material/reasoning/english%20/number-series-en%20.pdf",
+   "url": "/content/study-material/reasoning/english%20/number-series-en%20.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -352,8 +352,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/part-1-en.pdf",
-   "url": "/content/study-material/reasoning/part-1-en.pdf",
+   "id": "content/study-material/reasoning/english%20/part-1-en.pdf",
+   "url": "/content/study-material/reasoning/english%20/part-1-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -364,8 +364,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/part-1-pa.pdf",
-   "url": "/content/study-material/reasoning/part-1-pa.pdf",
+   "id": "content/study-material/reasoning/english%20/part-2-en.pdf",
+   "url": "/content/study-material/reasoning/english%20/part-2-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -376,8 +376,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/part-2-en.pdf",
-   "url": "/content/study-material/reasoning/part-2-en.pdf",
+   "id": "content/study-material/reasoning/punjabi/part-1-pa.pdf",
+   "url": "/content/study-material/reasoning/punjabi/part-1-pa.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -388,8 +388,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/part-2-pa.pdf",
-   "url": "/content/study-material/reasoning/part-2-pa.pdf",
+   "id": "content/study-material/reasoning/punjabi/part-2-pa.pdf",
+   "url": "/content/study-material/reasoning/punjabi/part-2-pa.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -956,7 +956,7 @@
    "url": "/material-number-series-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Number Series En - Part 5 (English)",
+   "title": "Number Series En - Part 3 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1028,7 +1028,7 @@
    "url": "/material-part-1-pa.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 1: Pa - Part 2 (English)",
+   "title": "Part 1: Pa - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1076,7 +1076,7 @@
    "url": "/material-part-2-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 2: En - Part 3 (English)",
+   "title": "Part 2: En - Part 2 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1124,7 +1124,7 @@
    "url": "/material-part-2-pa.html",
    "type": "study-material",
    "template": "",
-   "title": "Part 2: Pa - Part 4 (English)",
+   "title": "Part 2: Pa - Part 2 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2773,7 +2773,7 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "content/study-material/reasoning/number-series-en%20.pdf",
+   "to": "content/study-material/reasoning/english%20/number-series-en%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -2857,7 +2857,7 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "content/study-material/reasoning/part-1-en.pdf",
+   "to": "content/study-material/reasoning/english%20/part-1-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3025,7 +3025,7 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "content/study-material/reasoning/part-1-pa.pdf",
+   "to": "content/study-material/reasoning/punjabi/part-1-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3193,7 +3193,7 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "content/study-material/reasoning/part-2-en.pdf",
+   "to": "content/study-material/reasoning/english%20/part-2-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3367,7 +3367,7 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "content/study-material/reasoning/part-2-pa.pdf",
+   "to": "content/study-material/reasoning/punjabi/part-2-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4669,31 +4669,31 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/number-series-en%20.pdf",
+   "to": "content/study-material/reasoning/english%20/number-series-en%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/part-1-en.pdf",
+   "to": "content/study-material/reasoning/english%20/part-1-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/part-1-pa.pdf",
+   "to": "content/study-material/reasoning/english%20/part-2-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/part-2-en.pdf",
+   "to": "content/study-material/reasoning/punjabi/part-1-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/part-2-pa.pdf",
+   "to": "content/study-material/reasoning/punjabi/part-2-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
