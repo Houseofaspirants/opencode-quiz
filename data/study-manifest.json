@@ -264,7 +264,7 @@
       "order": 6,
       "count": 18,
       "newest": "2026-10-01",
-      "totalSize": 37006007,
+      "totalSize": 35344081,
       "chapters": 9,
       "languages": [],
       "hierarchy": {
@@ -274,8 +274,8 @@
         "stats": {
           "files": 18,
           "chapters": 9,
-          "pages": 160,
-          "totalSize": 37006007,
+          "pages": 158,
+          "totalSize": 35344081,
           "newest": "2026-10-01",
           "categories": 12,
           "regions": 2
@@ -735,8 +735,8 @@
             "stats": {
               "files": 7,
               "chapters": 7,
-              "pages": 69,
-              "totalSize": 17358422,
+              "pages": 67,
+              "totalSize": 15696496,
               "newest": "2026-10-01",
               "categories": 6
             },
@@ -924,6 +924,53 @@
                   "geography-of-punjab"
                 ],
                 "stats": {
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 9,
+                  "totalSize": 467240,
+                  "newest": "2026-10-01"
+                },
+                "languages": [
+                  {
+                    "id": "pa",
+                    "name": "Punjabi",
+                    "native": "ਪੰਜਾਬੀ",
+                    "flag": "🇵🇺",
+                    "count": 0,
+                    "chapters": []
+                  },
+                  {
+                    "id": "en",
+                    "name": "English",
+                    "native": "English",
+                    "flag": "🇬🇧",
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "rivers-of-punjab",
+                        "name": "Rivers of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-rivers-of-punjab.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 9
+                      }
+                    ]
+                  }
+                ],
+                "subCategories": [],
+                "claimedChapters": []
+              },
+              {
+                "id": "economy-of-punjab",
+                "name": "Economy of Punjab",
+                "description": "Agriculture, industry, the power sector, schemes and the state budget.",
+                "folders": [
+                  "economy-of-punjab"
+                ],
+                "stats": {
                   "files": 0,
                   "chapters": 0,
                   "pages": 0,
@@ -946,53 +993,6 @@
                     "flag": "🇬🇧",
                     "count": 0,
                     "chapters": []
-                  }
-                ],
-                "subCategories": [],
-                "claimedChapters": []
-              },
-              {
-                "id": "economy-of-punjab",
-                "name": "Economy of Punjab",
-                "description": "Agriculture, industry, the power sector, schemes and the state budget.",
-                "folders": [
-                  "economy-of-punjab"
-                ],
-                "stats": {
-                  "files": 1,
-                  "chapters": 1,
-                  "pages": 11,
-                  "totalSize": 2129166,
-                  "newest": "2026-10-01"
-                },
-                "languages": [
-                  {
-                    "id": "pa",
-                    "name": "Punjabi",
-                    "native": "ਪੰਜਾਬੀ",
-                    "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 1,
-                    "chapters": [
-                      {
-                        "id": "Five-year-plan",
-                        "name": "Five Year Plan",
-                        "parts": [
-                          {
-                            "file": "material-five-year-plan.html",
-                            "n": 1
-                          }
-                        ],
-                        "pages": 11
-                      }
-                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1492,6 +1492,49 @@
       "color": "#10b981",
       "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
       "order": 17,
+      "count": 1,
+      "newest": "2026-10-01",
+      "totalSize": 467240,
+      "languages": [
+        {
+          "id": "pa",
+          "name": "Punjabi",
+          "native": "ਪੰਜਾਬੀ",
+          "flag": "🇵🇺",
+          "count": 0,
+          "chapters": []
+        },
+        {
+          "id": "en",
+          "name": "English",
+          "native": "English",
+          "flag": "🇬🇧",
+          "count": 1,
+          "chapters": [
+            {
+              "id": "rivers-of-punjab",
+              "name": "Rivers of Punjab",
+              "parts": [
+                {
+                  "file": "material-rivers-of-punjab.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            }
+          ]
+        }
+      ],
+      "chapters": 1,
+      "hidden": true
+    },
+    {
+      "id": "economy-of-punjab",
+      "name": "Economy of Punjab",
+      "icon": "💰",
+      "color": "#0ea5e9",
+      "description": "Agriculture, industry, the power sector, schemes and the state budget.",
+      "order": 18,
       "count": 0,
       "newest": "",
       "totalSize": 0,
@@ -1514,49 +1557,6 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
-    },
-    {
-      "id": "economy-of-punjab",
-      "name": "Economy of Punjab",
-      "icon": "💰",
-      "color": "#0ea5e9",
-      "description": "Agriculture, industry, the power sector, schemes and the state budget.",
-      "order": 18,
-      "count": 1,
-      "newest": "2026-10-01",
-      "totalSize": 2129166,
-      "languages": [
-        {
-          "id": "pa",
-          "name": "Punjabi",
-          "native": "ਪੰਜਾਬੀ",
-          "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
-        },
-        {
-          "id": "en",
-          "name": "English",
-          "native": "English",
-          "flag": "🇬🇧",
-          "count": 1,
-          "chapters": [
-            {
-              "id": "Five-year-plan",
-              "name": "Five Year Plan",
-              "parts": [
-                {
-                  "file": "material-five-year-plan.html",
-                  "n": 1
-                }
-              ],
-              "pages": 11
-            }
-          ]
-        }
-      ],
-      "chapters": 1,
       "hidden": true
     },
     {

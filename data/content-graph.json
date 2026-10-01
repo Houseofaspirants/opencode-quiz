@@ -64,11 +64,11 @@
    "hub": "archives.html"
   },
   {
-   "id": "archive-category-economy-of-punjab.html",
-   "url": "/archive-category-economy-of-punjab.html",
+   "id": "archive-category-geography-of-punjab.html",
+   "url": "/archive-category-geography-of-punjab.html",
    "type": "archive",
    "template": "",
-   "title": "Economy of Punjab",
+   "title": "Geography of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -400,8 +400,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
-   "url": "/content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+   "id": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
+   "url": "/content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1120,30 +1120,6 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-five-year-plan",
-   "url": "/material-five-year-plan",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-five-year-plan.html",
-   "url": "/material-five-year-plan.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Five Year Plan - Part 1 (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
    "id": "material-fundamentals-of-computer",
    "url": "/material-fundamentals-of-computer",
    "type": "document",
@@ -1641,6 +1617,30 @@
    "type": "study-material",
    "template": "",
    "title": "Punajb Folk Dances - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-rivers-of-punjab",
+   "url": "/material-rivers-of-punjab",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-rivers-of-punjab.html",
+   "url": "/material-rivers-of-punjab.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Rivers of Punjab - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2252,43 +2252,43 @@
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
-   "to": "material-five-year-plan.html",
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "material-rivers-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-category-economy-of-punjab.html",
+   "from": "archive-category-geography-of-punjab.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -2511,7 +2511,7 @@
   },
   {
    "from": "archives.html",
-   "to": "archive-category-economy-of-punjab.html",
+   "to": "archive-category-geography-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2560,12 +2560,6 @@
   {
    "from": "archives.html",
    "to": "material-cultural-fairs-pa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-five-year-plan.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2692,6 +2686,12 @@
   {
    "from": "archives.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-rivers-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3310,108 +3310,6 @@
   {
    "from": "material-cultural-fairs-pa.html",
    "to": "material-punjab-folk-dance-pa.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-five-year-plan",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "pyq-2022-question-paper2-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-part-1-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-part-1-pa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-part-2-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-cultural-fairs-en.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-cultural-fairs-pa.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-five-year-plan.html",
-   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -5252,6 +5150,108 @@
    "weight": 1
   },
   {
+   "from": "material-rivers-of-punjab.html",
+   "to": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-rivers-of-punjab",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-sikhism-en.html",
    "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
    "rel": "contextual",
@@ -6399,7 +6399,7 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+   "to": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -6537,12 +6537,6 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-five-year-plan.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
@@ -6664,6 +6658,12 @@
   {
    "from": "study-material.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-rivers-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
