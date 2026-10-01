@@ -12,7 +12,8 @@
     "content:check": "node scripts/build_content_manifest.ts --check",
     "typecheck": "npx --yes --package typescript@5.6.3 tsc --noEmit -p jsconfig.json",
     "dev": "node scripts/build-index.mjs && npx --yes serve .",
-    "start": "npx --yes serve ."
+    "start": "npx --yes serve .",
+    "mcq": "python3 scripts/mcq_import.py"
   },
   "keywords": [
     "quiz",

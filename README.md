@@ -235,6 +235,27 @@ git push
 
 Vercel rebuilds in ~10 seconds and the quiz card is live.
 
+### Faster: write MCQs as plain text (English or Punjabi)
+
+Skip the JSON. Write the set the way you would in Word or a Telegram post,
+save it as `.txt` (or `.docx`), and run:
+
+```bash
+npm run mcq -- my-set.txt            # or: python3 scripts/mcq_import.py my-set.txt
+npm run mcq -- my-set.txt --dry-run  # check only, write nothing
+```
+
+Start from `templates/mcq-sample-english.txt` or `templates/mcq-sample-punjabi.txt`.
+The top lines say where it goes (`Topic:`, `Subject:`, `Category:`). Options can
+be `A)`, `(a)`, `A.`, `(ੳ)` or `1)`. Answers can be `Answer: B`, `ਉੱਤਰ: ਅ`, a `*` after
+the right option, or an answer-key block at the end (`1-B 2-C 3-A`).
+
+The script writes `questions/<subject>/<category>/<slug>.json` (or `…-punjabi.json`
+for Gurmukhi text). Give both language copies the same `Topic:` and they become
+one quiz with a language switch. It refuses to write if a question has no answer,
+duplicate options or more than 4 options, and checks that the English and Punjabi
+copies have the same count and the same correct options. Then `npm run publish`.
+
 ---
 
 ## 5. JSON format cheat-sheet

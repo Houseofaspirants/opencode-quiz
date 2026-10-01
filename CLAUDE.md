@@ -21,6 +21,7 @@ python3 scripts/build_landing_pages.py     # SEO landing pages (subject-/categor
 python3 scripts/seo_check.py               # SEO gate
 python3 scripts/rich_results_check.py      # structured-data gate
 python3 scripts/new_content.py --list      # scaffold a content draft (--type <t> --slug <s> [--pa])
+python3 scripts/mcq_import.py set.txt     # plain-text MCQs (EN or Gurmukhi, .txt/.docx) → questions/…json [--dry-run]
 npm run dev                                # build index + serve . (fetch() needs http, not file://)
 npm run watch                              # auto-publish watcher (scripts/watch_service.sh runs it under launchd)
 ```
