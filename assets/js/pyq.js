@@ -86,11 +86,16 @@
 
   function renderExams() {
     const q = term.trim().toLowerCase();
+    /* A card is offered only when content/previous-year-questions/<exam>/
+       exists: the grid mirrors the folders on disk, so the cards it shows are
+       exactly the exams this collection holds papers for. An exam present in
+       data/exams.json with no folder of its own stays off this grid. */
+    const available = exams.filter((e) => folderById.has(e.id));
     const list = q
-      ? exams.filter(
+      ? available.filter(
           (e) => e.name.toLowerCase().includes(q) || String(e.summary || "").toLowerCase().includes(q)
         )
-      : exams;
+      : available;
     if (!list.length) {
       examGrid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
         <div class="es-icon">🔎</div><h3>No exam matches “${esc(term)}”</h3>
