@@ -4799,23 +4799,38 @@ def hub_cards(coll, items, index, lang="en", facets=None):
     return "".join(cards)
 
 
-def _pyq_download(cell):
-    """One download cell: the file itself, or the honest words for a key the
-    conducting body has not published. Never a placeholder, never a guess."""
-    if not cell:
-        return '<span class="pyq-none">Not published</span>'
+def _pyq_one_download(cell, label=None):
+    """A single download link plus the facts measured off the file itself."""
+    bits = [f'<a class="btn btn-soft pyq-dl" href="{esc(pdf_href(cell["path"]))}"'
+            f' download>Download &darr;</a>']
+    if label:
+        bits.append(f'<span class="pyq-file">{esc(label)}</span>')
     meta = [f'{cell["pages"]} pages' if cell.get("pages") else "",
             str(cell.get("sizeLabel") or "")]
-    meta_html = (f'<span class="pyq-filemeta">'
-                 f'{" · ".join(m for m in meta if m)}</span>') if any(meta) else ""
-    return (f'<a class="btn btn-soft pyq-dl" href="{esc(pdf_href(cell["path"]))}" '
-            f'download>Download &darr;</a>{meta_html}')
+    meta = [m for m in meta if m]
+    if meta:
+        bits.append(f'<span class="pyq-filemeta">{" · ".join(meta)}</span>')
+    return "".join(bits)
+
+
+def _pyq_download(cells):
+    """One table cell: every file the year is on record for, or the honest
+    words for a document the conducting body has not published. Never a
+    placeholder, never a guess. A year that ran in more than one shift keeps
+    every shift, named, so the reader can tell them apart."""
+    if not cells:
+        return '<span class="pyq-none">Not published</span>'
+    many = len(cells) > 1
+    return "".join(
+        f'<span class="pyq-dl-row">{_pyq_one_download(c, c["filename"] if many else None)}</span>'
+        for c in cells)
 
 
 def _pyq_row(paper):
     return (f'<tr><th scope="row" data-label="Year">{esc(paper["year"])}</th>'
-            f'<td data-label="Question Paper">{_pyq_download(paper["paper"])}</td>'
-            f'<td data-label="Official Answer Key">{_pyq_download(paper["key"])}</td>'
+            f'<td data-label="Question Paper">{_pyq_download(paper["papers"])}</td>'
+            f'<td data-label="Official Answer Key">'
+            f'{_pyq_download([paper["key"]] if paper["key"] else [])}</td>'
             f'</tr>')
 
 

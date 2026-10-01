@@ -1,0 +1,352 @@
+[
+  {
+    "id": 26,
+    "question": "10,12,15,20,27,?",
+    "options": [
+      "36",
+      "37",
+      "38",
+      "39"
+    ],
+    "answer": 2,
+    "explanation": "Prime differences +2,+3,+5,+7,+11",
+    "difficulty": "medium",
+    "topic": "Prime Difference"
+  },
+  {
+    "id": 27,
+    "question": "20,23,28,35,46,?",
+    "options": [
+      "57",
+      "59",
+      "61",
+      "63"
+    ],
+    "answer": 1,
+    "explanation": "+13",
+    "difficulty": "medium",
+    "topic": "Prime Difference"
+  },
+  {
+    "id": 28,
+    "question": "5,7,12,19,30,?",
+    "options": [
+      "41",
+      "43",
+      "45",
+      "47"
+    ],
+    "answer": 1,
+    "explanation": "+13",
+    "difficulty": "medium",
+    "topic": "Prime Difference"
+  },
+  {
+    "id": 29,
+    "question": "100,102,105,110,117,?",
+    "options": [
+      "126",
+      "128",
+      "130",
+      "132"
+    ],
+    "answer": 1,
+    "explanation": "+11",
+    "difficulty": "medium",
+    "topic": "Prime Difference"
+  },
+  {
+    "id": 30,
+    "question": "50,53,58,65,76,?",
+    "options": [
+      "87",
+      "89",
+      "91",
+      "93"
+    ],
+    "answer": 1,
+    "explanation": "+13",
+    "difficulty": "medium",
+    "topic": "Prime Difference"
+  },
+  {
+    "id": 31,
+    "question": "1,4,9,16,25,?",
+    "options": [
+      "36",
+      "49",
+      "64",
+      "81"
+    ],
+    "answer": 0,
+    "explanation": "Squares",
+    "difficulty": "easy",
+    "topic": "Square"
+  },
+  {
+    "id": 32,
+    "question": "16,25,36,49,64,?",
+    "options": [
+      "72",
+      "81",
+      "90",
+      "100"
+    ],
+    "answer": 1,
+    "explanation": "9\u00b2",
+    "difficulty": "easy",
+    "topic": "Square"
+  },
+  {
+    "id": 33,
+    "question": "49,64,81,100,?",
+    "options": [
+      "111",
+      "121",
+      "144",
+      "169"
+    ],
+    "answer": 1,
+    "explanation": "11\u00b2",
+    "difficulty": "easy",
+    "topic": "Square"
+  },
+  {
+    "id": 34,
+    "question": "81,100,121,144,169,?",
+    "options": [
+      "196",
+      "200",
+      "210",
+      "225"
+    ],
+    "answer": 0,
+    "explanation": "14\u00b2",
+    "difficulty": "easy",
+    "topic": "Square"
+  },
+  {
+    "id": 35,
+    "question": "225,256,289,324,361,?",
+    "options": [
+      "380",
+      "400",
+      "420",
+      "441"
+    ],
+    "answer": 1,
+    "explanation": "20\u00b2",
+    "difficulty": "easy",
+    "topic": "Square"
+  },
+  {
+    "id": 36,
+    "question": "2,3,7,16,32,?",
+    "options": [
+      "57",
+      "58",
+      "59",
+      "60"
+    ],
+    "answer": 0,
+    "explanation": "Square differences",
+    "difficulty": "medium",
+    "topic": "Difference of Squares"
+  },
+  {
+    "id": 37,
+    "question": "5,9,18,34,59,?",
+    "options": [
+      "95",
+      "94",
+      "93",
+      "92"
+    ],
+    "answer": 0,
+    "explanation": "Next diff 36",
+    "difficulty": "medium",
+    "topic": "Difference of Squares"
+  },
+  {
+    "id": 38,
+    "question": "10,11,15,24,40,?",
+    "options": [
+      "60",
+      "64",
+      "65",
+      "66"
+    ],
+    "answer": 2,
+    "explanation": "Next diff25",
+    "difficulty": "medium",
+    "topic": "Difference of Squares"
+  },
+  {
+    "id": 39,
+    "question": "1,8,27,64,125,?",
+    "options": [
+      "196",
+      "216",
+      "225",
+      "243"
+    ],
+    "answer": 1,
+    "explanation": "6 cube",
+    "difficulty": "easy",
+    "topic": "Cube"
+  },
+  {
+    "id": 40,
+    "question": "1,2,10,37,101,?",
+    "options": [
+      "216",
+      "221",
+      "226",
+      "231"
+    ],
+    "answer": 2,
+    "explanation": "Cube differences",
+    "difficulty": "medium",
+    "topic": "Cube"
+  },
+  {
+    "id": 41,
+    "question": "4,12,36,108,324,?",
+    "options": [
+      "648",
+      "729",
+      "864",
+      "972"
+    ],
+    "answer": 3,
+    "explanation": "\u00d73",
+    "difficulty": "easy",
+    "topic": "Multiplication"
+  },
+  {
+    "id": 42,
+    "question": "5,20,80,320,?",
+    "options": [
+      "960",
+      "1280",
+      "1440",
+      "1600"
+    ],
+    "answer": 1,
+    "explanation": "\u00d74",
+    "difficulty": "easy",
+    "topic": "Multiplication"
+  },
+  {
+    "id": 43,
+    "question": "6,18,54,162,?",
+    "options": [
+      "324",
+      "486",
+      "648",
+      "972"
+    ],
+    "answer": 1,
+    "explanation": "\u00d73",
+    "difficulty": "easy",
+    "topic": "Multiplication"
+  },
+  {
+    "id": 44,
+    "question": "336,168,84,42,21,?",
+    "options": [
+      "10",
+      "10.5",
+      "11",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "\u00f72",
+    "difficulty": "medium",
+    "topic": "Division"
+  },
+  {
+    "id": 45,
+    "question": "7200,3600,1200,300,60,?",
+    "options": [
+      "8",
+      "10",
+      "12",
+      "15"
+    ],
+    "answer": 1,
+    "explanation": "\u00f72\u00f73\u00f74\u00f75\u00f76",
+    "difficulty": "medium",
+    "topic": "Division"
+  },
+  {
+    "id": 46,
+    "question": "24,72,36,108,54,?",
+    "options": [
+      "108",
+      "144",
+      "162",
+      "216"
+    ],
+    "answer": 2,
+    "explanation": "\u00d73 \u00f72",
+    "difficulty": "medium",
+    "topic": "Mixed"
+  },
+  {
+    "id": 47,
+    "question": "5,11,23,47,95,?",
+    "options": [
+      "189",
+      "190",
+      "191",
+      "192"
+    ],
+    "answer": 2,
+    "explanation": "\u00d72+1",
+    "difficulty": "medium",
+    "topic": "Multiply+Add"
+  },
+  {
+    "id": 48,
+    "question": "5,11,24,51,106,?",
+    "options": [
+      "212",
+      "214",
+      "217",
+      "219"
+    ],
+    "answer": 2,
+    "explanation": "\u00d72 + consecutive",
+    "difficulty": "hard",
+    "topic": "Multiply+Add"
+  },
+  {
+    "id": 49,
+    "question": "3,6,15,48,195,?",
+    "options": [
+      "975",
+      "978",
+      "980",
+      "983"
+    ],
+    "answer": 1,
+    "explanation": "Increasing mult +3",
+    "difficulty": "hard",
+    "topic": "Multiply+Add"
+  },
+  {
+    "id": 50,
+    "question": "5,25,7,22,9,19,11,?",
+    "options": [
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "answer": 2,
+    "explanation": "Alternate",
+    "difficulty": "medium",
+    "topic": "Alternate"
+  }
+]
