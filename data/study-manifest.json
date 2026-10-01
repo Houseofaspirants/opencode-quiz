@@ -23,9 +23,9 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 5,
+      "count": 6,
       "newest": "2026-10-01",
-      "totalSize": 17735061,
+      "totalSize": 21185811,
       "languages": [
         {
           "id": "pa",
@@ -74,7 +74,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "fundamentals-of-computer",
@@ -97,11 +97,22 @@
                 }
               ],
               "pages": 18
+            },
+            {
+              "id": "MS word",
+              "name": "Ms Word",
+              "parts": [
+                {
+                  "file": "material-m-s-word.html",
+                  "n": 1
+                }
+              ],
+              "pages": 25
             }
           ]
         }
       ],
-      "chapters": 5
+      "chapters": 6
     },
     {
       "id": "english",
@@ -1596,6 +1607,6 @@
       "hidden": true
     }
   ],
-  "total": 29,
+  "total": 30,
   "generatedBy": "scripts/study_material.py"
 }

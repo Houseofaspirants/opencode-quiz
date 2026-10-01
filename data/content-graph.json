@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 191,
-  "edges": 862,
+  "nodes": 194,
+  "edges": 880,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -402,6 +402,18 @@
   {
    "id": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
    "url": "/content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
+   "url": "/content/study-material/computer/english/MS%20word/m-s-word.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1293,6 +1305,30 @@
    "type": "study-material",
    "template": "",
    "title": "Fundamentals of Computer - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-m-s-word",
+   "url": "/material-m-s-word",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-m-s-word.html",
+   "url": "/material-m-s-word.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Ms Word - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2397,6 +2433,12 @@
   },
   {
    "from": "archive-category-computer.html",
+   "to": "material-m-s-word.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
    "to": "material-mobail-phon.html",
    "rel": "contextual",
    "weight": 1
@@ -2794,6 +2836,12 @@
   {
    "from": "archives.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-m-s-word.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3873,7 +3921,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-mobail-phon.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -3957,12 +4005,96 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-mobail-phon.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
+   "to": "material-ms-word-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "material-m-s-word",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "material-fundamentals-of-computer-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
    "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
@@ -4035,13 +4167,13 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -4119,13 +4251,13 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -4215,7 +4347,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "material-mobail-phon.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -6987,6 +7119,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
@@ -7192,6 +7330,12 @@
   {
    "from": "study-material.html",
    "to": "material-fundamentals-of-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-m-s-word.html",
    "rel": "contextual",
    "weight": 1
   },
