@@ -262,9 +262,9 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 18,
+      "count": 19,
       "newest": "2026-10-01",
-      "totalSize": 35344081,
+      "totalSize": 37596974,
       "chapters": 9,
       "languages": [],
       "hierarchy": {
@@ -272,10 +272,10 @@
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 18,
+          "files": 19,
           "chapters": 9,
-          "pages": 158,
-          "totalSize": 35344081,
+          "pages": 162,
+          "totalSize": 37596974,
           "newest": "2026-10-01",
           "categories": 12,
           "regions": 2
@@ -733,10 +733,10 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 7,
+              "files": 8,
               "chapters": 7,
-              "pages": 67,
-              "totalSize": 15696496,
+              "pages": 71,
+              "totalSize": 17949389,
               "newest": "2026-10-01",
               "categories": 6
             },
@@ -924,10 +924,10 @@
                   "geography-of-punjab"
                 ],
                 "stats": {
-                  "files": 1,
+                  "files": 2,
                   "chapters": 1,
-                  "pages": 9,
-                  "totalSize": 467240,
+                  "pages": 13,
+                  "totalSize": 2720133,
                   "newest": "2026-10-01"
                 },
                 "languages": [
@@ -936,8 +936,20 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "rivers-of-punjab",
+                        "name": "Rivers of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-rivers-of-punjab-pa.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 4
+                      }
+                    ]
                   },
                   {
                     "id": "en",
@@ -1492,17 +1504,29 @@
       "color": "#10b981",
       "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
       "order": 17,
-      "count": 1,
+      "count": 2,
       "newest": "2026-10-01",
-      "totalSize": 467240,
+      "totalSize": 2720133,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "rivers-of-punjab",
+              "name": "Rivers of Punjab",
+              "parts": [
+                {
+                  "file": "material-rivers-of-punjab-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 4
+            }
+          ]
         },
         {
           "id": "en",
@@ -1525,7 +1549,7 @@
           ]
         }
       ],
-      "chapters": 1,
+      "chapters": 2,
       "hidden": true
     },
     {
@@ -1591,6 +1615,6 @@
       "hidden": true
     }
   ],
-  "total": 27,
+  "total": 28,
   "generatedBy": "scripts/study_material.py"
 }

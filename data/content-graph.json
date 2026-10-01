@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 175,
-  "edges": 784,
+  "nodes": 178,
+  "edges": 799,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -400,8 +400,20 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
-   "url": "/content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
+   "id": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
+   "url": "/content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
+   "url": "/content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1636,6 +1648,30 @@
    "hub": ""
   },
   {
+   "id": "material-rivers-of-punjab-pa",
+   "url": "/material-rivers-of-punjab-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-rivers-of-punjab-pa.html",
+   "url": "/material-rivers-of-punjab-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Rivers of Punjab - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-rivers-of-punjab.html",
    "url": "/material-rivers-of-punjab.html",
    "type": "study-material",
@@ -2271,6 +2307,12 @@
   },
   {
    "from": "archive-category-geography-of-punjab.html",
+   "to": "material-rivers-of-punjab-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
    "to": "material-rivers-of-punjab.html",
    "rel": "contextual",
    "weight": 1
@@ -2686,6 +2728,12 @@
   {
    "from": "archives.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-rivers-of-punjab-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5150,8 +5198,92 @@
    "weight": 1
   },
   {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "material-rivers-of-punjab-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-rivers-of-punjab-pa.html",
+   "to": "material-rivers-of-punjab.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-rivers-of-punjab.html",
-   "to": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
+   "to": "content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5193,12 +5325,6 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-rivers-of-punjab.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -5217,19 +5343,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-part-1-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-rivers-of-punjab.html",
-   "to": "material-part-1-pa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-rivers-of-punjab.html",
-   "to": "material-part-2-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -5241,13 +5355,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-cultural-fairs-pa.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-rivers-of-punjab-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -6399,7 +6513,13 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/geography-of-punjab/english%20/rivers-of%20punjab.pdf",
+   "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -6658,6 +6778,12 @@
   {
    "from": "study-material.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-rivers-of-punjab-pa.html",
    "rel": "contextual",
    "weight": 1
   },
