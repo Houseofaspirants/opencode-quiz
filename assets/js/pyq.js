@@ -64,7 +64,6 @@
      and the sitemap sitewide. */
   let folders = [];
   let folderById = new Map();
-  let foldersAvailable = false;
 
   function examCard(e) {
     const subs = (e.subjects || [])
