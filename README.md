@@ -38,6 +38,7 @@ Punjab Government Exam and other competitive exam aspirants.
 23. [Leaderboard & gamification](#23-leaderboard--gamification)
 24. [Content system — Markdown to live pages (no CMS, no code)](#24-content-system--markdown-to-live-pages-no-cms-no-code)
 25. [Multilingual quizzes — one topic, many languages](#25-multilingual-quizzes--one-topic-many-languages)
+26. [Auto-publish watcher — you never run `npm run publish`](#26-auto-publish-watcher--you-never-run-npm-run-publish)
 
 ---
 
