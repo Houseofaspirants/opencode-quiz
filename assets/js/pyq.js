@@ -3,9 +3,9 @@
  * ----------------------------------------------------------------------------
  * Three lists, all read from config:
  *
- *   1. EXAMS  — data/exams.json. Every registered exam becomes an exam card
- *               linking to its own generated landing page. Add an exam to that
- *               file, rerun the build, and it appears here automatically.
+ *   1. EXAMS  — data/exams.json. Names the exam a paper belongs to and links
+ *               its landing page. Add an exam to that file, rerun the build,
+ *               and every paper filed under it picks the name up here.
  *
  *   2. PAPERS — data/content-manifest.json. The PDF scanner writes one `drops`
  *               record per file under content/, so a paper dropped into
@@ -16,16 +16,13 @@
  *
  *   3. FOLDERS — data/pyq-manifest.json. One entry per exam folder, with the
  *               file name of that exam's own page (pyq/<slug>/index.html) and
- *               how many papers and answer keys it holds. An exam with a folder
- *               links straight to its year-by-year table; one without keeps
- *               linking to its landing page.
+ *               how many papers and answer keys it holds. A paper whose exam
+ *               has a folder gains the "All years" link to that table.
  * ========================================================================== */
 (() => {
   "use strict";
-  const examGrid = document.getElementById("pyqExams");
   const paperGrid = document.getElementById("pyqPapers");
-  const searchEl = document.getElementById("pyqSearch");
-  if (!examGrid || !paperGrid) return;
+  if (!paperGrid) return;
 
   const esc = (s) =>
     String(s).replace(/[&<>"'/]/g, (c) =>
@@ -41,81 +38,14 @@
   const PAPER_FOLDERS = ["previous-year-questions", "previous-year-papers"];
   const isPaper = (d) => PAPER_FOLDERS.includes(String(d.folder || ""));
 
-  /** State exams first — that is who a Punjab aspirant is actually writing. */
-  const CENTRAL = new Set(["ssc", "railways", "banking", "upsc", "capf"]);
-  const band = (id) => (CENTRAL.has(id) ? "central" : "state");
-
-  const SUBJECT_LABEL = {
-    gk: "General Knowledge", quant: "Quantitative Aptitude", reasoning: "Reasoning",
-    punjabi: "Punjabi", english: "English", computer: "Computer",
-    "current-affairs": "Current Affairs",
-  };
-
   /* ------------------------------------------------------------ exams ----- */
   let exams = [];
-  let term = "";
 
-  /* The folder-per-exam collection (data/pyq-manifest.json). This is the ONLY
-     source the Browse by Exam grid is allowed to list from: a card promises
-     papers, so an exam gets a card exactly when content/previous-year-questions/
-     <exam>/ exists, and loses it the day that folder does. Nothing in this grid
-     is a hand-maintained list of exams - data/exams.json is deliberately not
-     used for presence, because that file also owns exam-*.html landing pages
-     and the sitemap sitewide. */
+  /* The folder-per-exam collection (data/pyq-manifest.json): which exams hold
+     a folder of their own under content/previous-year-questions/, and the file
+     name of each folder's year-by-year table. */
   let folders = [];
   let folderById = new Map();
-
-  function examCard(e) {
-    const subs = (e.subjects || [])
-      .map((id) => SUBJECT_LABEL[id] || id)
-      .join(" · ");
-    const folder = folderById.get(e.id);
-    const listed = folder
-      ? folder.count
-      : papers.filter((p) => p.category === e.id).length;
-    return `
-    <a class="card card-pad" href="${esc(folder ? folder.file : `exam-${encodeURIComponent(e.id)}.html`)}">
-      <span class="eyebrow">${band(e.id) === "central" ? "Central exam" : "Punjab exam"}${subs ? " · " + esc(subs) : ""}</span>
-      <h3>${esc(e.name)}</h3>
-      <p class="text-sm muted">${esc(e.summary || "")}</p>
-      <p class="text-sm">${listed ? `${listed} paper${listed === 1 ? "" : "s"} published` : "Syllabus, subjects and practice sets"}</p>
-      <p class="ilink">${folder ? "Papers by year" : "Open exam"} &rarr;</p>
-    </a>`;
-  }
-
-  function renderExams() {
-    const q = term.trim().toLowerCase();
-    /* A card is offered only when content/previous-year-questions/<exam>/
-       exists: the grid mirrors the folders on disk, so the cards it shows are
-       exactly the exams this collection holds papers for. An exam present in
-       data/exams.json with no folder of its own stays off this grid. */
-    const available = exams.filter((e) => folderById.has(e.id));
-    const list = q
-      ? available.filter(
-          (e) => e.name.toLowerCase().includes(q) || String(e.summary || "").toLowerCase().includes(q)
-        )
-      : available;
-    if (!list.length) {
-      examGrid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-        <div class="es-icon">🔎</div><h3>No exam matches “${esc(term)}”</h3>
-        <p>Try another keyword.</p></div>`;
-      return;
-    }
-    const groups = [
-      ["Punjab state exams", list.filter((e) => band(e.id) === "state")],
-      ["Central exams", list.filter((e) => band(e.id) === "central")],
-    ];
-    examGrid.innerHTML = groups
-      .filter(([, g]) => g.length)
-      .map(
-        ([label, g]) => `
-      <div class="pyq-group" style="grid-column:1/-1">
-        <h2 class="pyq-group-title">${label}</h2>
-        <div class="grid grid-3">${g.map(examCard).join("")}</div>
-      </div>`
-      )
-      .join("");
-  }
 
   /* ---------------------------------------------------------- papers ------ */
   let papers = [];
@@ -174,11 +104,6 @@
       .join("");
   }
 
-  searchEl?.addEventListener("input", () => {
-    term = /** @type {HTMLInputElement} */ (searchEl).value;
-    renderExams();
-  });
-
   Promise.all([
     fetchJSON("data/exams.json"),
     fetchJSON("data/content-manifest.json"),
@@ -189,13 +114,6 @@
       papers = ((cm && cm.drops) || []).filter(isPaper);
       folders = (pyq && pyq.exams) || [];
       folderById = new Map(folders.map((f) => [f.id, f]));
-      if (!exams.length) {
-        examGrid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
-          <div class="es-icon">📂</div><h3>No exam registered yet</h3>
-          <p>Exams are registered in configuration, not in markup.</p></div>`;
-      } else {
-        renderExams();
-      }
       renderPapers();
     }
   );
