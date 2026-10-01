@@ -836,7 +836,7 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
    float-cards. Same surface / border / radius / shadow language as every other
    card, and it stacks UNDER the copy on phones so both CTAs stay above the
    fold. .mentor-photo is display:none until home.js sees it load, so a missing
-   assets/img/mentor.jpg degrades to the designed credential card, not a
+   founder portrait degrades to the designed credential card, not a
    broken image. */
 .hero-visual { position: relative; }
 .mentor-figure {

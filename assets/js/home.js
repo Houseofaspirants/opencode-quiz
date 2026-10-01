@@ -48,7 +48,7 @@
 
   /* ---------------------------------------- 1b. Mentor portrait ----------
      Every mentor slot ships with a designed credential fallback and upgrades
-     to the real portrait only once assets/img/mentor.jpg actually loads, so a
+     to the real portrait only once its own data-mentor-photo source loads, so a
      file that has not been added yet can never render a broken image on a live
      page. The `complete` branch covers a photo that resolved before this
      deferred script ran. */
