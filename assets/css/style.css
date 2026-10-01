@@ -604,6 +604,15 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
   backdrop-filter: blur(6px);
   color: #fff; font-size: 0.7rem; font-weight: 700;
 }
+a.proof-card { text-decoration: none; }
+.proof-thumb-pdf { display: grid; place-items: center; }
+.proof-pdf-icon {
+  font-weight: 800; font-size: 1.4rem; letter-spacing: 0.06em;
+  color: var(--brand);
+  padding: 14px 18px; border-radius: var(--r-md);
+  border: 2px solid currentColor;
+}
+.proof-badge { align-self: flex-start; font-size: 0.72rem; font-weight: 700; color: var(--muted); }
 .proof-card h3 { margin: 0; font-size: 0.99rem; }
 .proof-card p { margin: 0; font-size: 0.86rem; line-height: 1.55; color: var(--muted); }
 

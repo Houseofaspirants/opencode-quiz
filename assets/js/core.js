@@ -1142,7 +1142,9 @@ const HOA = (() => {
               type: "topic", label: t.name,
               sub: t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name,
               href: t.available
-                ? `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`
+                ? (t.landing && /^\/quiz-/.test(t.landing)
+                    ? `${t.landing.replace(/^\//, "")}.html`
+                    : `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`)
                 : `subject.html?subject=${s.id}${t.category ? `&category=${t.category}` : ""}`,
               icon: s.icon, count: t.count,
             })

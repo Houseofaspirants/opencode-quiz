@@ -490,8 +490,12 @@ def quiz_pool(index: dict, subject_id: str):
             if not topic.get("available"):
                 continue
             cat = topic.get("category") or ""
-            href = (f'quiz.html?subject={subject["id"]}&topic={topic["id"]}'
-                    + (f"&category={cat}" if cat else ""))
+            landing = topic.get("landing") or ""
+            if landing.startswith("/quiz-"):
+                href = landing.lstrip("/") + ".html"
+            else:
+                href = (f'quiz.html?subject={subject["id"]}&topic={topic["id"]}'
+                        + (f"&category={cat}" if cat else ""))
             out.append({
                 "href": href,
                 "label": topic.get("name") or topic["id"],

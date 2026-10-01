@@ -111,7 +111,7 @@
       latestWrap.innerHTML = live
         .slice(0, 8)
         .map((t) => `
-        <a class="card quiz-card" href="quiz.html?subject=${encodeURIComponent(t.subject.id)}&topic=${encodeURIComponent(t.id)}${t.category ? `&category=${encodeURIComponent(t.category)}` : ""}">
+        <a class="card quiz-card" href="${quizHref(t)}">
           <span class="qc-icon">${t.subject.icon}</span>
           <span>
             <h3>${esc(t.name)}${HOA.langBadge(t.variants)}</h3>
@@ -121,6 +121,16 @@
         </a>`)
         .join("");
     }
+  }
+
+  /* Link to the quiz's static landing page (its canonical URL, indexable)
+     when the build gave it one; the dynamic quiz URL is the fallback. */
+  /** @param {any} t */
+  function quizHref(t) {
+    if (t.landing && /^\/quiz-/.test(t.landing)) {
+      return `${t.landing.replace(/^\//, "")}.html`;
+    }
+    return `quiz.html?subject=${encodeURIComponent(t.subject.id)}&topic=${encodeURIComponent(t.id)}${t.category ? `&category=${encodeURIComponent(t.category)}` : ""}`;
   }
 
   /* ------------------------------------------ 4. Shared empty-state HTML - */
