@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 121,
-  "edges": 495,
+  "nodes": 133,
+  "edges": 560,
   "silos": 35,
   "clusters": 42,
   "pillars": 34
@@ -340,8 +340,56 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/number%20series%20.pdf",
-   "url": "/content/study-material/reasoning/number%20series%20.pdf",
+   "id": "content/study-material/reasoning/number-series-en%20.pdf",
+   "url": "/content/study-material/reasoning/number-series-en%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/reasoning/part-1-en.pdf",
+   "url": "/content/study-material/reasoning/part-1-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/reasoning/part-1-pa.pdf",
+   "url": "/content/study-material/reasoning/part-1-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/reasoning/part-2-en.pdf",
+   "url": "/content/study-material/reasoning/part-2-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/reasoning/part-2-pa.pdf",
+   "url": "/content/study-material/reasoning/part-2-pa.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -892,8 +940,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-number-series",
-   "url": "/material-number-series",
+   "id": "material-number-series-en",
+   "url": "/material-number-series-en",
    "type": "document",
    "template": "",
    "title": "",
@@ -904,11 +952,35 @@
    "hub": ""
   },
   {
-   "id": "material-number-series.html",
-   "url": "/material-number-series.html",
+   "id": "material-number-series-en.html",
+   "url": "/material-number-series-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Number Series - Part 1 (English)",
+   "title": "Number Series En - Part 5 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-1-en",
+   "url": "/material-part-1-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-1-en.html",
+   "url": "/material-part-1-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 1: En - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -940,6 +1012,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-part-1-pa",
+   "url": "/material-part-1-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-1-pa.html",
+   "url": "/material-part-1-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 1: Pa - Part 2 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-part-1-punjabi-pa",
    "url": "/material-part-1-punjabi-pa",
    "type": "document",
@@ -964,6 +1060,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-part-2-en",
+   "url": "/material-part-2-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-2-en.html",
+   "url": "/material-part-2-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 2: En - Part 3 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-part-2-english-en",
    "url": "/material-part-2-english-en",
    "type": "document",
@@ -981,6 +1101,30 @@
    "type": "study-material",
    "template": "",
    "title": "Arrival of Europeans - Part 2 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-2-pa",
+   "url": "/material-part-2-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-2-pa.html",
+   "url": "/material-part-2-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Part 2: Pa - Part 4 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1681,37 +1825,37 @@
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-reasoning.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-number-series.html",
+   "to": "material-number-series-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "punjab-exams.html",
+   "to": "material-part-1-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "quiz.html",
+   "to": "material-part-1-pa.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "study-notes.html",
+   "to": "material-part-2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "material-part-2-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1777,7 +1921,13 @@
   },
   {
    "from": "archives.html",
-   "to": "material-number-series.html",
+   "to": "material-number-series-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-1-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -1789,13 +1939,31 @@
   },
   {
    "from": "archives.html",
+   "to": "material-part-1-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-part-1-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
+   "to": "material-part-2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-part-2-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2251,19 +2419,19 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-articles.html",
    "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-mobail-phon.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-part-1-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -2604,104 +2772,170 @@
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "content/study-material/reasoning/number%20series%20.pdf",
+   "from": "material-number-series-en.html",
+   "to": "content/study-material/reasoning/number-series-en%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "material-number-series",
+   "from": "material-number-series-en.html",
+   "to": "material-number-series-en",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "pyq-pp-head-constable-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
+   "from": "material-number-series-en.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "material-part-1-english-en.html",
+   "from": "material-number-series-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-number-series.html",
-   "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-number-series.html",
-   "to": "material-articles.html",
+   "from": "material-number-series-en.html",
+   "to": "material-part-1-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "from": "material-number-series-en.html",
+   "to": "material-part-1-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-number-series.html",
-   "to": "material-fundamentals-of-computer.html",
+   "from": "material-number-series-en.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "content/study-material/reasoning/part-1-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "material-part-1-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "pyq-pp-head-constable-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
+   "to": "material-part-2-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -2790,6 +3024,90 @@
    "weight": 1
   },
   {
+   "from": "material-part-1-pa.html",
+   "to": "content/study-material/reasoning/part-1-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "material-part-1-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "pyq-pp-head-constable-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-part-1-punjabi-pa.html",
    "to": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
    "rel": "contextual",
@@ -2870,6 +3188,90 @@
   {
    "from": "material-part-1-punjabi-pa.html",
    "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "content/study-material/reasoning/part-2-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "material-part-2-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "pyq-pp-head-constable-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "material-part-1-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -2960,6 +3362,90 @@
   {
    "from": "material-part-2-english-en.html",
    "to": "material-part-2-punjabi-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "content/study-material/reasoning/part-2-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "material-part-2-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "pyq-pp-head-constable-2022-paper-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "material-part-1-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -4183,7 +4669,31 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/number%20series%20.pdf",
+   "to": "content/study-material/reasoning/number-series-en%20.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/reasoning/part-1-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/reasoning/part-1-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/reasoning/part-2-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/reasoning/part-2-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4225,7 +4735,13 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-number-series.html",
+   "to": "material-number-series-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-1-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4237,13 +4753,31 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-part-1-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-part-1-punjabi-pa.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
+   "to": "material-part-2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-part-2-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-2-pa.html",
    "rel": "contextual",
    "weight": 1
   },

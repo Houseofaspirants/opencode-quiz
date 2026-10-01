@@ -159,9 +159,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 1,
-      "newest": "2026-09-30",
-      "totalSize": 678350,
+      "count": 5,
+      "newest": "2026-10-01",
+      "totalSize": 10610119,
       "languages": [
         {
           "id": "pa",
@@ -176,23 +176,67 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 5,
           "chapters": [
             {
-              "id": "number-series",
-              "name": "Number Series",
+              "id": "number-series-en",
+              "name": "Number Series En",
               "parts": [
                 {
-                  "file": "material-number-series.html",
-                  "n": 1
+                  "file": "material-number-series-en.html",
+                  "n": 5
                 }
               ],
               "pages": 40
+            },
+            {
+              "id": "part-1-en",
+              "name": "Part 1: En",
+              "parts": [
+                {
+                  "file": "material-part-1-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 21
+            },
+            {
+              "id": "part-1-pa",
+              "name": "Part 1: Pa",
+              "parts": [
+                {
+                  "file": "material-part-1-pa.html",
+                  "n": 2
+                }
+              ],
+              "pages": 19
+            },
+            {
+              "id": "part-2-en",
+              "name": "Part 2: En",
+              "parts": [
+                {
+                  "file": "material-part-2-en.html",
+                  "n": 3
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "part-2-pa",
+              "name": "Part 2: Pa",
+              "parts": [
+                {
+                  "file": "material-part-2-pa.html",
+                  "n": 4
+                }
+              ],
+              "pages": 14
             }
           ]
         }
       ],
-      "chapters": 1
+      "chapters": 5
     },
     {
       "id": "quant",
@@ -1396,6 +1440,6 @@
       "hidden": true
     }
   ],
-  "total": 16,
+  "total": 20,
   "generatedBy": "scripts/study_material.py"
 }
