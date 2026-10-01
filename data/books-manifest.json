@@ -234,28 +234,7 @@
       "lastUpdated": "2026-09-30"
     }
   ],
-  "redirects": [
-    {
-      "book": "laxmikanth-indian-polity",
-      "provider": "amazon",
-      "file": "go/book/laxmikanth-indian-polity/amazon.html"
-    },
-    {
-      "book": "lucent-general-knowledge",
-      "provider": "amazon",
-      "file": "go/book/lucent-general-knowledge/amazon.html"
-    },
-    {
-      "book": "rs-aggarwal-reasoning",
-      "provider": "amazon",
-      "file": "go/book/rs-aggarwal-reasoning/amazon.html"
-    },
-    {
-      "book": "rs-aggarwal-quantitative-aptitude",
-      "provider": "amazon",
-      "file": "go/book/rs-aggarwal-quantitative-aptitude/amazon.html"
-    }
-  ],
+  "redirects": [],
   "counts": {
     "books": 5,
     "covers": 0,

@@ -1890,12 +1890,12 @@ const HOA = (() => {
 
   /* ----------------------------------------------- AFFILIATE (Books) -----
      Every outbound buy button the Books system renders carries `data-affiliate`
-     plus the book and the provider it was built for, and its href is always a
-     /go/ hop - the store's own URL is never in the page. This is the reporting
-     half: one GA4 event per click, fired at click time so the navigation that
-     follows can never cancel it. GA4 already attaches country, device, browser
-     and referrer to every event, so the payload only carries the two facts
-     nobody else knows. The redirect stub owns the local ledger.
+     plus the book and the provider it was built for. Its href points straight
+     at the store - one click, no popup, no intermediate page - so this is the
+     reporting half: one GA4 event per click, fired at click time so the
+     navigation that follows can never cancel it. GA4 already attaches country,
+     device, browser and referrer to every event, so the payload only carries
+     the two facts nobody else knows.
 
      Delegated on the document, so a shelf that re-renders its cards on every
      keystroke never loses the listener, and nothing has to be re-bound. */

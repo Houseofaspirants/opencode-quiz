@@ -950,9 +950,9 @@ info(f'data/quiz-manifest.json - {len(quiz_manifest["topics"])} topic(s), '
 # content/books/*.json (book copy) and config/affiliate-links.json (every
 # destination, the only place a link may live), validates them against each
 # other, then publishes the shelf payload (data/books.json), every book detail
-# page (book-<id>.html), the tracked affiliate hops (go/book/<id>/<provider>)
-# and data/books-manifest.json - the registry both index builders read below
-# and scripts/seo_check.py gates on.
+# page (book-<id>.html) with a single "View on Amazon" button linking straight
+# to the store, and data/books-manifest.json - the registry both index
+# builders read below and scripts/seo_check.py gates on.
 #
 # Hooked here rather than in ci.sh / publish.sh so no build step can ever
 # forget the books, and so the Node twin has nothing to run - it only reads.

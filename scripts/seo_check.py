@@ -1220,9 +1220,12 @@ if CONTENT_MANIFEST.exists():
 # declares, the shelf links to every published page, every store destination
 # is reached through the tracked /go/ hop - never by linking the store
 # directly - and robots.txt keeps those hops out of the crawl.
-FACET_SOURCE = (("exam", "examTags"), ("subject", "subject"),
-                ("publisher", "publisher"), ("author", "author"),
-                ("language", "languages"), ("difficulty", "difficulty"))
+# The shelf groups by subject and by nothing else. exam, publisher, author,
+# language, difficulty, featured and rating were all filter dimensions the
+# redesign dropped, so requiring them here would be gating a UI that no longer
+# exists. The invariant that still matters: every book's `group` must have a
+# row, or the chip bar would hide it.
+FACET_SOURCE = (("group", "group"),)
 if BOOKS_MANIFEST.exists() and book_pages:
     shelf = None
     if not (ROOT / "data" / "books.json").exists():
@@ -1271,9 +1274,13 @@ if BOOKS_MANIFEST.exists() and book_pages:
                               f"(no provider in config/affiliate-links.json)")
             for p in b.get("providers") or []:
                 href = str(p.get("href", ""))
-                if p.get("external") and not href.startswith("go/book/"):
-                    errors.append(f"{f}: provider {p.get('id')} must hop through "
-                                  f"/go/, got {href!r}")
+                # One click: an external provider must BE the destination, so
+                # the button opens the store directly in a new tab with no
+                # popup and no intermediate page in between.
+                if p.get("external") and not href.startswith(("http://",
+                                                               "https://")):
+                    errors.append(f"{f}: provider {p.get('id')} must link "
+                                  f"straight to the store, got {href!r}")
 
     # the store's own hosts may never appear as a link in a book page
     aff_path = ROOT / "config" / "affiliate-links.json"
@@ -1319,13 +1326,32 @@ if BOOKS_MANIFEST.exists() and book_pages:
             errors.append(f"{f}: meta description != the manifest's description")
         if want not in locs:
             errors.append(f"sitemap: missing book page {want}")
+        # The shelf now links straight to the store, so the destination is
+        # necessarily in the href - the /go/ hop that used to hide it is gone.
+        # What still has to hold is the link policy itself: every store anchor
+        # carries rel=sponsored + noopener, and the raw URL is never rendered
+        # as VISIBLE text on the page.
         m_main = re.search(r"<main[^>]*>(.*?)</main>", src, re.S)
-        for href in re.findall(r'href="(https?://[^"]+)"',
-                               m_main.group(1) if m_main else ""):
-            host = re.sub(r"^https?://", "", href).split("/", 1)[0].lower()
-            if host in store_hosts:
-                errors.append(f"{f}: links {host} directly - every destination "
-                              f"must go through the tracked /go/ hop")
+        for anchor in re.findall(r"<a\s[^>]*>.*?</a>", m_main.group(1)
+                                 if m_main else "", re.S):
+            m_href = re.search(r'href="(https?://[^"]+)"', anchor)
+            if not m_href:
+                continue
+            host = re.sub(r"^https?://", "", m_href.group(1)).split("/", 1)[0].lower()
+            # Match on the marker, not only on the host: a provider URL may
+            # be shortened or on a host other than the one configured
+            # (amazon.in), and keying purely on host would let the very
+            # affiliate button this gate exists to police slip past it.
+            if host not in store_hosts and "data-affiliate" not in anchor:
+                continue
+            m_rel = re.search(r'\brel="([^"]*)"', anchor)
+            rels = set(m_rel.group(1).split()) if m_rel else set()
+            if "sponsored" not in rels or "noopener" not in rels:
+                errors.append(f"{f}: link to {host} must carry "
+                              f"rel=\"sponsored noopener nofollow\"")
+            if m_href.group(1) in re.sub(r"<[^>]+>", " ", anchor):
+                errors.append(f"{f}: renders its affiliate URL as visible text - "
+                              f"the link belongs in the href only")
     notes.append(f"books: {len(book_pages)} book page(s), {len(shelf_books)} on "
                  f"the shelf, {n_hop} tracked affiliate hop(s)")
 
