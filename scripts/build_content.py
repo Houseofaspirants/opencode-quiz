@@ -80,6 +80,7 @@ from urllib.parse import quote
 
 import study_material            # data/study-manifest.json (Study's subject list)
 import proof_documents           # data/proof-manifest.json (the Blueprint's scans)
+import pyq_collection            # data/pyq-manifest.json (the PYQ exam folders)
 
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
@@ -1630,14 +1631,17 @@ def official_url_ok(url):
 #                    seo_check treats generated pages exactly like the rest)
 # =============================================================================
 def head(title, desc, keywords, url, og_type, jsonld, lang="en", alternates=(),
-         image=""):
+         image="", nested=False):
     """Page scaffold. `lang` drives <html lang>, the /pa/ base URL and hreflang.
 
     Punjabi pages publish under /pa/, so they carry <base href="/">: the shared
     chrome (header, drawer, footer) links the whole site with relative URLs and
     the base element keeps every one of them resolving from the site root.
+    `nested` says the same for a page that lives in a sub-directory of its own
+    (a Previous Year Questions exam page at pyq/<slug>/index.html): one base,
+    no depth-aware asset prefixes threaded through every chrome block.
     """
-    base = '  <base href="/">\n' if lang == "pa" else ""
+    base = '  <base href="/">\n' if (lang == "pa" or nested) else ""
     og_image = image or OG_ABS
     if og_image.startswith("/"):
         og_image = f"{DOMAIN}{og_image}"
@@ -1698,6 +1702,10 @@ def og_page_key(url):
     stem = path.strip("/").split(".", 1)[0]   # English page's nav key
     if stem in HUB_NAV:
         return HUB_NAV[stem]
+    if path.startswith("/pyq/"):
+        # A Previous Year Questions exam page (pyq/<slug>/index.html) lights up
+        # the same nav key pyq.html and the collection hub already use.
+        return "previous-year-questions"
     for key, prefix in (("ca", "/ca-"), ("blogs", "/blog-"),
                         ("news", "/news-"), ("announcements", "/announce-"),
                         ("notes", "/note"), ("magazine", "/magazine"),
@@ -4791,7 +4799,197 @@ def hub_cards(coll, items, index, lang="en", facets=None):
     return "".join(cards)
 
 
-def hub_page(coll, cfg, items, index, exams):
+def _pyq_download(cell):
+    """One download cell: the file itself, or the honest words for a key the
+    conducting body has not published. Never a placeholder, never a guess."""
+    if not cell:
+        return '<span class="pyq-none">Not published</span>'
+    meta = [f'{cell["pages"]} pages' if cell.get("pages") else "",
+            str(cell.get("sizeLabel") or "")]
+    meta_html = (f'<span class="pyq-filemeta">'
+                 f'{" · ".join(m for m in meta if m)}</span>') if any(meta) else ""
+    return (f'<a class="btn btn-soft pyq-dl" href="{esc(pdf_href(cell["path"]))}" '
+            f'download>Download &darr;</a>{meta_html}')
+
+
+def _pyq_row(paper):
+    return (f'<tr><th scope="row" data-label="Year">{esc(paper["year"])}</th>'
+            f'<td data-label="Question Paper">{_pyq_download(paper["paper"])}</td>'
+            f'<td data-label="Official Answer Key">{_pyq_download(paper["key"])}</td>'
+            f'</tr>')
+
+
+def pyq_exam_page(exam):
+    """content/previous-year-questions/<exam>/ -> pyq/<slug>/index.html.
+
+    The page IS the table: one row per year, the question paper and the
+    official answer key side by side, every cell either a download or the
+    words "Not published". Above it sit metadata.json and the overview files;
+    below it, only links to pages this site really serves. A folder with no
+    paper yet still publishes - with the table saying so - so the first PDF
+    that lands is a file plus `npm run publish`, never an HTML edit.
+    """
+    url, file = exam["url"], exam["file"]
+    hub_file = exam["hub"]
+    title, desc = exam["title"], exam["description"]
+    hub_url = f"{DOMAIN}/{hub_file[:-5]}"
+    crumbs = {"id": f"{url}#breadcrumb",
+              "items": [("Home", f"{DOMAIN}/"),
+                        ("Previous Year Questions", f"{DOMAIN}/pyq"),
+                        (title, url)]}
+    jsonld = graph([webpage_node(url, title, desc, f"{url}#breadcrumb"),
+                    breadcrumb_node(crumbs)])
+    keywords = ", ".join(dict.fromkeys([
+        title, f'{exam["organization"]} previous year questions',
+        str(exam["category"]), "Punjab exam question papers",
+        "official answer key", "House of Aspirants"]))[:300]
+
+    # ---- overview: one block per language the sidecar declares -------------
+    blocks = []
+    for lang in exam["languages"]:
+        src = exam["overview"].get(lang)
+        if not src:
+            continue                       # warned about while the manifest
+        body, _toc = md_to_html(src)       # was built; never filled in here
+        if lang == "pa":
+            blocks.append(f"""        <div class="pyq-alt" lang="pa">
+          <h3 lang="pa">ਪੰਜਾਬੀ ਵਿੱਚ</h3>
+          <div class="prose">{body}</div>
+        </div>""")
+        else:
+            blocks.append(f'        <div class="prose">{body}</div>')
+    overview = f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Overview</span>
+          <h2>About this exam</h2>
+          <p>{esc(exam["organization"])} &middot; {esc(exam["category"])} &middot;
+             {" · ".join(esc(l) for l in exam["languages"])} edition{"s" if len(exam["languages"]) > 1 else ""} published</p>
+        </div></div>
+{chr(10).join(blocks) if blocks else '        <div class="empty-state"><span class="es-icon" aria-hidden="true">📄</span><h3>No overview written yet</h3><p>The table below is complete either way - an overview is added as overview.en.md beside this exam\'s folder.</p></div>'}
+      </div>
+    </section>"""
+
+    # ---- the table ---------------------------------------------------------
+    if exam["papers"]:
+        rows = "".join(_pyq_row(p) for p in exam["papers"])
+        listing = f"""<div class="pyq-table-wrap">
+        <table class="pyq-papers">
+          <caption class="sr-only">{esc(title)} - question papers and official
+            answer keys, newest year first</caption>
+          <thead>
+            <tr><th scope="col">Year</th><th scope="col">Question Paper</th>
+                <th scope="col">Official Answer Key</th></tr>
+          </thead>
+          <tbody>{rows}</tbody>
+        </table>
+      </div>"""
+    else:
+        listing = """<div class="empty-state">
+          <span class="es-icon" aria-hidden="true">📄</span>
+          <h3>No paper published yet</h3>
+          <p>Nothing has been dropped into this exam's folder, so this page
+             lists nothing rather than describing a paper that does not exist
+             here. The day a question paper is added it appears in the table
+             above on the very next publish.</p>
+          <p class="btn-row" style="justify-content:center">
+            <a class="btn btn-soft" href="pyq.html">Every published paper</a>
+            <a class="btn btn-soft" href="mock.html">Attempt a timed mock</a>
+          </p>
+        </div>"""
+    table_section = f"""    <section class="section" id="papers" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">By year</span>
+          <h2>Papers and answer keys</h2>
+          <p>One row per year. The question paper is published the moment it
+             exists; its official answer key joins the same row when the
+             conducting body releases one.</p>
+        </div></div>
+        {listing}
+      </div>
+    </section>"""
+
+    # ---- other documents in the same folder -------------------------------
+    others = ""
+    if exam["others"]:
+        items = "".join(
+            f'<li><a href="pyq-{pdf_slug_from_name(Path(o["filename"]).stem)}.html">'
+            f'{esc(o["title"])}</a><span class="part-meta">'
+            f'{esc(o["sizeLabel"])}</span></li>'
+            for o in exam["others"])
+        others = f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Same folder</span>
+          <h2>Other documents for this exam</h2>
+        </div></div>
+        <ul class="part-list">{items}</ul>
+      </div>
+    </section>"""
+
+    exam_page = f"exam-{exam['id']}.html"
+    cross = [a for a in (
+        (exam_page, "Exam guide", "Syllabus, pattern and subjects"),
+        ("previous-year-questions.html", "Collection",
+         "Every published paper, by exam"),
+    ) if (ROOT / a[0]).exists()]
+    cross_cards = "".join(
+        f'<a class="card card-pad reveal" href="{esc(href)}">'
+        f'<span class="eyebrow">{esc(kind)}</span><h3>{esc(what)}</h3>'
+        f'<p class="ilink">Open &rarr;</p></a>' for href, kind, what in cross)
+
+    html = head(title, desc, keywords, url, "website", jsonld, nested=True)
+    html += f"""  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span><a href="pyq.html">Previous Year Questions</a><span>/</span><span>{esc(title)}</span>
+        </nav>
+        <span class="eyebrow">{esc(exam["organization"])} &middot; {esc(exam["category"])}</span>
+        <h1>{esc(title)}</h1>
+        <p class="muted">Official papers only - named with the exam and the year
+           they came from, with the conducting body's answer key beside each one.</p>
+        <div class="answer-box">
+          <span class="ab-label">Quick answer</span>
+          <p>{esc(desc)}</p>
+        </div>
+        <div class="doc-actions">
+          <a class="btn btn-soft" href="#papers">Jump to the table &darr;</a>
+          <a class="btn btn-soft" href="pyq.html">All previous year papers</a>
+        </div>
+      </div>
+    </section>
+{overview}
+{table_section}
+{others}
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Keep going</span>
+          <h2>Where to go next</h2>
+          <p>The parts of House of Aspirants that connect to this page.</p>
+        </div></div>
+        <div class="grid grid-3">{cross_cards}
+          <a class="card card-pad reveal" href="punjab-exams.html"><span class="eyebrow">Exam hub</span><h3>Every Punjab exam guide</h3><p class="ilink">Open &rarr;</p></a>
+          <a class="card card-pad reveal" href="expected-mcqs.html"><span class="eyebrow">Practice</span><h3>Chapter-wise Expected MCQs</h3><p class="ilink">Open &rarr;</p></a>
+          <a class="card card-pad reveal" href="mock.html"><span class="eyebrow">Practice</span><h3>Timed full-length mocks</h3><p class="ilink">Open &rarr;</p></a>
+          <a class="card card-pad reveal" href="study.html?subject=gk"><span class="eyebrow">Study material</span><h3>Build the base a paper tests</h3><p class="ilink">Open &rarr;</p></a>
+          <a class="card card-pad reveal" href="archives.html"><span class="eyebrow">Archive</span><h3>Everything published, by subject and month</h3><p class="ilink">Open &rarr;</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+"""
+    # `#papers` is an in-page anchor on a page that sets <base href="/">, so
+    # the target has to name the page it belongs to - the same rule the
+    # Punjabi edition and the study parts follow.
+    html = html.replace('href="#papers"', f'href="/{file}#papers"')
+    html += TAIL
+    return html
+
+
+def hub_page(coll, cfg, items, index, exams, pyq_exams=()):
     hub = HUBS[coll]
     url = f"{DOMAIN}/{hub['file'][:-5]}"
     prefix = cfg["prefix"]
@@ -4903,6 +5101,35 @@ def hub_page(coll, cfg, items, index, exams):
           <h2>Current affairs sets</h2>
           <p>The published quiz sets each issue draws from.</p>
         </div><a class="btn btn-soft" href="subject.html?subject=current-affairs">All current affairs</a></div>
+        <div class="grid grid-3">{cards}</div>
+      </div>
+    </section>""")
+
+    elif coll == "previous-year-questions":
+        # Every exam folder publishes a page of its own at pyq/<slug>/index.html.
+        # The collection hub links them, so a paper is never a dead end and the
+        # SEO gate has one static place to check the link from: a new exam
+        # appears here the day its folder does, with no page edited by hand.
+        cards = "".join(
+            f'<a class="card card-pad reveal" href="{esc(e["file"])}">'
+            f'<span class="eyebrow">📁 {esc(e["category"])}</span>'
+            f'<h3>{esc(e["title"])}</h3>'
+            f'<p class="text-sm muted">{esc(e["organization"])}</p>'
+            f'<p class="text-sm">{e["years"]} year'
+            f'{"s" if e["years"] != 1 else ""} · {e["count"]} paper'
+            f'{"s" if e["count"] != 1 else ""} · {e["keys"]} answer key'
+            f'{"s" if e["keys"] != 1 else ""}</p>'
+            f'<p class="ilink">Open &rarr;</p></a>'
+            for e in pyq_exams)
+        if cards:
+            sections.append(f"""<section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">By exam</span>
+          <h2>Papers, exam by exam</h2>
+          <p>Each exam is a folder: its question paper and the official answer
+             key beside it, one row per year, with a download for each file.</p>
+        </div><a class="btn btn-soft" href="pyq.html">Browse every paper</a></div>
         <div class="grid grid-3">{cards}</div>
       </div>
     </section>""")
@@ -6228,6 +6455,17 @@ def main():
             continue
         drops_by_coll[coll].append(drop)
 
+    # ---- Previous Year Questions: one folder per exam ----------------------
+    # content/previous-year-questions/<exam>/ is the collection's authoring
+    # surface: metadata.json describes the exam, overview.en.md / overview.pa.md
+    # write it up, and YYYY-question-paper.pdf + YYYY-official-answer-key.pdf
+    # are paired by year into the table the exam page renders. Built before the
+    # validation gate below so a broken sidecar fails with nothing half-written
+    # on disk; the pages are rendered from this object later in main().
+    pyq_manifest = pyq_collection.build(drops, err, warn, info)
+    pyq_exams = pyq_manifest.get("exams", [])
+    claimed = {d.get("path") for d in drops if pyq_collection.claims(d)}
+
     for coll, cfg in HUBS.items():
         # A PDF alone is enough: the file name gives the document its title,
         # slug, description, date and download URL, and the record below lands
@@ -6245,6 +6483,15 @@ def main():
             if not check_drop(drop, path, cfg):
                 continue
             where = str(path.relative_to(ROOT))
+            # Previous Year Questions: a file named YYYY-question-paper.pdf or
+            # YYYY-official-answer-key.pdf inside an exam folder is published
+            # as a download inside that exam page's table, so it never earns a
+            # page of its own. `drops` still carries it (pyq.html's paper grid
+            # and the inventory gate read that list unchanged); only the
+            # per-document page is skipped, because the table is its page.
+            if str(drop.get("path") or "") in claimed:
+                info(f"{where}: published as a download on its exam page")
+                continue
             folder = str(drop.get("category") or "")
             slug = pdf_slug_from_name(path.stem)
             # `Quant Shortcuts.pdf` next to `quant-shortcuts.md` is that
@@ -6423,7 +6670,7 @@ def main():
     hubs_out = []
     for coll, cfg in HUBS.items():
         pool = all_records[coll] + punjabi[coll]
-        html_out, live = hub_page(coll, cfg, pool, index, exams)
+        html_out, live = hub_page(coll, cfg, pool, index, exams, pyq_exams)
         (ROOT / cfg["file"]).write_text(html_out, encoding="utf-8")
         expected.add(cfg["file"])
         ctx["pages"].append((cfg["file"], page_main(html_out), {
@@ -6506,6 +6753,35 @@ def main():
         })
     info(f"index pages: {len(phase4_manifest)} generated "
          f"(authors, tags, categories, search)")
+
+    # ---- Previous Year Questions exam pages -------------------------------
+    # One page per exam folder, written into its own directory so the URL is
+    # /pyq/<slug> in production (cleanUrls in vercel.json). Each one is
+    # registered in the manifest like every other generated index page, so the
+    # sitemap, the SEO gate and the search corpus all pick it up in this run -
+    # and each carries the same "generated, do not edit" marker as the rest.
+    pyq_page_entries = []
+    for _exam in pyq_exams:
+        _html = pyq_exam_page(_exam)
+        _path = ROOT / _exam["file"]
+        _path.parent.mkdir(parents=True, exist_ok=True)
+        _path.write_text(_html, encoding="utf-8")
+        expected.add(_exam["file"])
+        pyq_page_entries.append({
+            "file": _exam["file"],
+            "url": _exam["url"],
+            "title": _exam["title"],
+            "description": _exam["description"],
+        })
+        ctx["pages"].append((_exam["file"], page_main(_html), {
+            "id": _exam["file"], "url": f'/{_exam["file"]}', "type": "page",
+            "template": "", "title": _exam["title"], "lang": "en",
+            "subjects": [], "exams": [_exam["title"]], "tags": [],
+            "hub": _exam["hub"],
+        }))
+    if pyq_page_entries:
+        info(f"pyq pages: {len(pyq_page_entries)} exam page(s) written under "
+             f"pyq/")
 
     # ---- stale output removal --------------------------------------------
     # Every writer above has registered its files in `expected` by now, so a
