@@ -3760,3 +3760,20 @@ body.rbv-open { overflow: hidden; }
   .rbv-spin { animation: none !important; transition: none !important; }
   .rb-fact--link:hover { transform: none; }
 }
+
+/* current-affairs.html and /current-affairs/<language> - the two doors and
+   the month-by-month magazine list. */
+.ca-door h2 { margin: 6px 0 6px; font-size: clamp(1.15rem, 2.4vw, 1.4rem); }
+.ca-months { display: grid; gap: 16px; }
+.ca-month-head {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 8px 16px; margin-bottom: 8px;
+}
+.ca-month-head h3 { margin: 0; }
+.ca-month-links { display: inline-flex; gap: 14px; font-size: .9rem; }
+.ca-month .part-list { margin: 0; }
+.ca-month .part-list li { justify-content: flex-start; flex-wrap: wrap; }
+.ca-month .part-list li a { flex: 1 1 auto; font-weight: 600; }
+@media (max-width: 560px) { .ca-month .part-meta { flex-basis: 100%; white-space: normal; } }
+.ca-month .badge { margin-right: 6px; vertical-align: middle; }
+

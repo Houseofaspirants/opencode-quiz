@@ -1086,6 +1086,11 @@ if CONTENT_MANIFEST.exists():
             rows = by_coll.get(str(h.get("collection")), [])
             if len(rows) < 2:
                 continue
+            # The Current Affairs hub lists its issues grouped by month with a
+            # language label on each row, and links a page per language - that
+            # grouping is its filter, so it ships no chip bar.
+            if str(h.get("collection")) == "current-affairs":
+                continue
             vals = {}
             for p in rows:
                 for facet, got in (("exam", p.get("exams")),

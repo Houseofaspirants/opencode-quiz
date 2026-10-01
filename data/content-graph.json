@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 203,
-  "edges": 924,
+  "nodes": 201,
+  "edges": 917,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -182,18 +182,6 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
-  },
-  {
-   "id": "books.html",
-   "url": "/books.html",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
   },
   {
    "id": "ca-august-2026-english",
@@ -2056,18 +2044,6 @@
    "hub": "personal-notes.html"
   },
   {
-   "id": "practice.html",
-   "url": "/practice.html",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "previous-year-questions.html",
    "url": "/previous-year-questions.html",
    "type": "hub",
@@ -3495,7 +3471,25 @@
   },
   {
    "from": "current-affairs.html",
+   "to": "current-affairs/english/august-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
    "to": "current-affairs/english/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "current-affairs/english/july-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "current-affairs/punjabi/august-2026/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3512,8 +3506,26 @@
    "weight": 1
   },
   {
-   "from": "current-affairs/english/august-2026/index.html",
-   "to": "books.html",
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3538,30 +3550,6 @@
   {
    "from": "current-affairs/english/august-2026/index.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/august-2026/index.html",
-   "to": "practice.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/august-2026/index.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/august-2026/index.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/index.html",
-   "to": "books.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3603,43 +3591,37 @@
   },
   {
    "from": "current-affairs/english/index.html",
+   "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "practice.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "pyq.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/index.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/july-2026/index.html",
-   "to": "books.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3668,30 +3650,6 @@
    "weight": 1
   },
   {
-   "from": "current-affairs/english/july-2026/index.html",
-   "to": "practice.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/july-2026/index.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/english/july-2026/index.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/punjabi/august-2026/index.html",
-   "to": "books.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
    "from": "current-affairs/punjabi/august-2026/index.html",
    "to": "ca-current-affairs-august.html",
    "rel": "contextual",
@@ -3716,30 +3674,6 @@
    "weight": 1
   },
   {
-   "from": "current-affairs/punjabi/august-2026/index.html",
-   "to": "practice.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/punjabi/august-2026/index.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/punjabi/august-2026/index.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/punjabi/index.html",
-   "to": "books.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
    "from": "current-affairs/punjabi/index.html",
    "to": "ca-current-affairs-august.html",
    "rel": "contextual",
@@ -3748,6 +3682,12 @@
   {
    "from": "current-affairs/punjabi/index.html",
    "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "current-affairs/english/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3771,31 +3711,25 @@
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "practice.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "pyq.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs/punjabi/index.html",
-   "to": "subject.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
    "rel": "contextual",
    "weight": 1
   },
