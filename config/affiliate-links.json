@@ -44,22 +44,22 @@
   "books": {
     "$note": "book id -> provider id -> destination URL. A book id with no entry, or a provider with an empty/absent URL, is simply NOT AVAILABLE: the engine renders 'Currently unavailable' for it instead of a button. Order follows `providers` above, so adding a network reorders every button consistently.",
     "lucent-general-knowledge": {
-      "amazon": "https://www.amazon.in/s?k=lucent+general+knowledge+book"
+      "amazon": "https://link.amazon/B0fNjysQP"
     },
     "objective-general-english": {
       "amazon": "https://www.amazon.in/s?k=objective+general+english+sp+bakshi"
     },
     "rs-aggarwal-quantitative-aptitude": {
-      "amazon": "https://www.amazon.in/s?k=quantitative+aptitude+rs+agarwal"
+      "amazon": "https://link.amazon/B09flD9su"
     },
     "fast-track-arithmetic": {
       "amazon": "https://www.amazon.in/s?k=fast+track+objective+arithmetic+rajesh+verma"
     },
     "rs-aggarwal-reasoning": {
-      "amazon": "https://www.amazon.in/s?k=modern+approach+verbal+non+verbal+reasoning+agarwal"
+      "amazon": "https://link.amazon/B09N8duOs"
     },
     "laxmikanth-indian-polity": {
-      "amazon": "https://www.amazon.in/s?k=indian+polity+laxmikanth"
+      "amazon": "https://link.amazon/B0hJpc7h7"
     },
     "lucent-general-science": {
       "amazon": "https://www.amazon.in/s?k=lucent+general+science"
