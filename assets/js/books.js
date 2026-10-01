@@ -68,17 +68,10 @@
          + `${esc(p.label)}</a>`;
   }
 
-  /** Large cover when one exists; the initials block until you drop one in. */
+  /** The cover image, only when one has been added to assets/books/covers/. */
   function media(b) {
     const title = String(b.title || "");
-    if (!b.cover) {
-      // No image yet: a typographic cover (title + author) in the same box,
-      // so the card still reads as a book and a real cover drops in later
-      // with no reflow.
-      return `<div class="book-cover book-cover-text" aria-hidden="true">`
-           + `<span class="bct-title">${esc(title)}</span>`
-           + `<span class="bct-author">${esc(b.author)}</span></div>`;
-    }
+    if (!b.cover) return "";
     const dims = b.coverW && b.coverH
       ? ` width="${Number(b.coverW)}" height="${Number(b.coverH)}"` : "";
     return `<img class="book-card-cover" src="${esc(b.cover)}" `
@@ -90,7 +83,7 @@
     const rec = String(b.recommendation || "");
     return `
     <article class="card book-card">
-      <div class="book-card-media">${media(b)}</div>
+      ${b.cover ? `<div class="book-card-media">${media(b)}</div>` : ""}
       <div class="book-card-body">
         ${b.group ? `<span class="book-card-group">${esc(b.group)}</span>` : ""}
         <h3><a href="book-${esc(b.id)}.html">${esc(title)}</a></h3>

@@ -723,9 +723,8 @@ def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
                  f'alt="{esc(title)} cover" width="{size[0]}" height="{size[1]}" '
                  f'loading="lazy" decoding="async" '
                  f'style="aspect-ratio:{size[0]} / {size[1]}">')
-    else:
-        cover = ('<div class="book-cover book-cover-lg" aria-hidden="true">'
-                 f'<span>{esc(title[:2])}</span></div>')
+    # No placeholder block when there is no cover image: the page leads
+    # with the author, the reason and the button instead of an empty box.
 
     # Everything this page used to carry besides the cover - badges, the
     # specifications table, "Buy it if", "Skip it if", pros and cons - is

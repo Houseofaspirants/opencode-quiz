@@ -2753,38 +2753,30 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
   padding-bottom: 8px; border-bottom: 1px solid var(--border);
 }
 
-/* The shelf grid: as many ~200px columns as fit (two on a phone, four to
-   five on a desktop), so a handful of books never stretches into giant
-   single cards. */
+/* The shelf grid: compact text cards, no cover block unless a real cover
+   image has been added. One column on a phone, three to four on a desktop;
+   every card in a row is the same height and the buttons line up. */
 .book-grid {
-  display: grid; gap: 16px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  display: grid; gap: 14px;
+  grid-template-columns: minmax(0, 1fr);
 }
 @media (min-width: 640px) {
-  .book-grid { gap: 20px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  .book-grid { gap: 18px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 }
-.book-grid .book-card-body { padding: 12px 12px 14px; }
-.book-grid .book-card h3 { font-size: .98rem; }
+.book-grid .book-card { height: 100%; }
+.book-grid .book-card-media { aspect-ratio: auto; height: 180px; }
+.book-grid .book-card-cover { object-fit: contain; background: var(--surface-2); }
+.book-grid .book-card-body { padding: 16px 18px 18px; }
+.book-grid .book-card h3 { font-size: 1.02rem; }
 .book-grid .book-card-rec {
-  flex: 0 0 auto; margin-bottom: 12px; font-size: .86rem; -webkit-line-clamp: 3;
+  flex: 0 0 auto; margin: 8px 0 14px; font-size: .9rem; -webkit-line-clamp: 3;
 }
-.book-grid .book-cta {
-  margin-top: auto; padding: 10px 8px; font-size: .88rem; white-space: nowrap;
-}
-/* A text-only placeholder does not need a full 2:3 cover's height. */
-.book-grid .book-card-media:has(.book-cover-text) { aspect-ratio: 4 / 5; }
+.book-grid .book-cta { margin-top: auto; padding: 10px 14px; font-size: .92rem; }
 .book-card-group {
-  display: block; margin-bottom: 4px;
+  display: block; margin-bottom: 6px;
   font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
   color: var(--brand);
 }
-/* Typographic cover used until a real image is added. */
-.book-card-media .book-cover-text {
-  flex-direction: column; align-items: flex-start; justify-content: flex-end;
-  gap: 8px; padding: 18px 16px 18px 20px; text-align: left; font-size: 1rem;
-}
-.bct-title { font-size: 1.05rem; line-height: 1.25; font-weight: 800; }
-.bct-author { font-size: .75rem; font-weight: 600; opacity: .85; letter-spacing: 0; }
 
 /* The initials fallback, filling the card's cover box: it reads as a cover
    placeholder rather than an icon, and an image dropped into
