@@ -5098,14 +5098,17 @@ def ca_section_page(page):
         h1 = f"{esc(name)} Current Affairs"
         lead = (f"Monthly current affairs in {esc(name)}, with the practice "
                 f"set and every download beside it.")
-        answer = (f"{name} current affairs for Punjab exams: "
-                  f"{page['count']} document(s) published, newest "
+        answer = (f"{name} current affairs for Punjab exams: {n_doc} document"
+                  f"{'s' if n_doc != 1 else ''} published, newest "
                   f"{fmt_date(page['newest']) or 'not yet'}.")
 
     # --- the four doors (language pages only) -------------------------------
     doors = ""
     if not is_month:
-        here = f"/{file}"
+        # A page under <base href="/"> resolves `#anchor` against the base, so
+        # the two in-page targets are written as root-relative paths to this
+        # page - the clean URL plus the fragment, no `.html` in between.
+        here = "/" + file.rsplit("/", 1)[0]
         tiles = (
             ("Daily", "Daily Current Affairs",
              "Open the current affairs practice set.",

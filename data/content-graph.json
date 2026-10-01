@@ -20,7 +20,7 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 201,
+  "nodes": 203,
   "edges": 924,
   "silos": 35,
   "clusters": 45,
@@ -808,6 +808,18 @@
    "hub": "current-affairs.html"
   },
   {
+   "id": "current-affairs/english",
+   "url": "/current-affairs/english",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "current-affairs/english/august-2026/index.html",
    "url": "/current-affairs/english/august-2026/index.html",
    "type": "page",
@@ -842,6 +854,18 @@
    "exams": [],
    "tags": [],
    "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/punjabi",
+   "url": "/current-affairs/punjabi",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "current-affairs/punjabi/august-2026/index.html",
@@ -3561,13 +3585,13 @@
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "current-affairs/english/august-2026/index.html",
+   "to": "current-affairs/english",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "current-affairs/english/index.html",
+   "to": "current-affairs/english/august-2026/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3729,13 +3753,13 @@
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "current-affairs/punjabi/august-2026/index.html",
+   "to": "current-affairs/punjabi",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "current-affairs/punjabi/index.html",
+   "to": "current-affairs/punjabi/august-2026/index.html",
    "rel": "contextual",
    "weight": 1
   },

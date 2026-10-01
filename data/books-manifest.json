@@ -10,10 +10,17 @@
       "url": "https://houseofaspirants.in/books",
       "title": "Recommended Books for Punjab Exams | House of Aspirants",
       "description": "Compare preparation books for Punjab Police, PSSSB, PPSC, SSC, banking and railway exams - what each one covers, who it suits and who should skip it.",
-      "count": 5
+      "count": 6
     }
   ],
   "pages": [
+    {
+      "file": "book-wren-martin-english-grammar.html",
+      "url": "https://houseofaspirants.in/book-wren-martin-english-grammar",
+      "title": "Wren & Martin English Grammar Book Review for Punjab Exams",
+      "description": "Complete review of Wren & Martin High School English Grammar and Composition: what it covers, who it suits and how to use it for Punjab Police, PSSSB and SSC.",
+      "priority": "0.8"
+    },
     {
       "file": "book-laxmikanth-indian-polity.html",
       "url": "https://houseofaspirants.in/book-laxmikanth-indian-polity",
@@ -51,6 +58,46 @@
     }
   ],
   "items": [
+    {
+      "id": "wren-martin-english-grammar",
+      "file": "book-wren-martin-english-grammar.html",
+      "url": "https://houseofaspirants.in/book-wren-martin-english-grammar",
+      "title": "Wren & Martin English Grammar Book Review for Punjab Exams",
+      "description": "Complete review of Wren & Martin High School English Grammar and Composition: what it covers, who it suits and how to use it for Punjab Police, PSSSB and SSC.",
+      "name": "High School English Grammar & Composition",
+      "author": "Wren & Martin",
+      "publisher": "S. Chand Publishing",
+      "subject": "english",
+      "exams": [
+        "punjab-police",
+        "psssb",
+        "ssc",
+        "banking",
+        "railway",
+        "general"
+      ],
+      "languages": [
+        "English"
+      ],
+      "difficulty": "Intermediate",
+      "rating": null,
+      "featured": true,
+      "cover": "",
+      "topics": [
+        "Parts of Speech",
+        "Tenses",
+        "Articles",
+        "Subject-Verb Agreement",
+        "Voice",
+        "Narration",
+        "Prepositions",
+        "Sentence Correction",
+        "Vocabulary",
+        "Composition"
+      ],
+      "keywords": "Wren and Martin, English Grammar, Punjab Police English Book, PSSSB English Book, SSC English Grammar",
+      "lastUpdated": "2026-10-01"
+    },
     {
       "id": "laxmikanth-indian-polity",
       "file": "book-laxmikanth-indian-polity.html",
@@ -236,7 +283,7 @@
   ],
   "redirects": [],
   "counts": {
-    "books": 5,
+    "books": 6,
     "covers": 0,
     "providers": 3
   }
