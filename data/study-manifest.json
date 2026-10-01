@@ -262,20 +262,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 17,
+      "count": 18,
       "newest": "2026-10-01",
-      "totalSize": 34876841,
-      "chapters": 8,
+      "totalSize": 37006007,
+      "chapters": 9,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 17,
-          "chapters": 8,
-          "pages": 149,
-          "totalSize": 34876841,
+          "files": 18,
+          "chapters": 9,
+          "pages": 160,
+          "totalSize": 37006007,
           "newest": "2026-10-01",
           "categories": 12,
           "regions": 2
@@ -733,10 +733,10 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 6,
-              "chapters": 6,
-              "pages": 58,
-              "totalSize": 15229256,
+              "files": 7,
+              "chapters": 7,
+              "pages": 69,
+              "totalSize": 17358422,
               "newest": "2026-10-01",
               "categories": 6
             },
@@ -959,11 +959,11 @@
                   "economy-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 11,
+                  "totalSize": 2129166,
+                  "newest": "2026-10-01"
                 },
                 "languages": [
                   {
@@ -979,8 +979,20 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "Five-year-plan",
+                        "name": "Five Year Plan",
+                        "parts": [
+                          {
+                            "file": "material-five-year-plan.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 11
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1511,9 +1523,9 @@
       "color": "#0ea5e9",
       "description": "Agriculture, industry, the power sector, schemes and the state budget.",
       "order": 18,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-01",
+      "totalSize": 2129166,
       "languages": [
         {
           "id": "pa",
@@ -1528,11 +1540,23 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "Five-year-plan",
+              "name": "Five Year Plan",
+              "parts": [
+                {
+                  "file": "material-five-year-plan.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 1,
       "hidden": true
     },
     {
@@ -1567,6 +1591,6 @@
       "hidden": true
     }
   ],
-  "total": 26,
+  "total": 27,
   "generatedBy": "scripts/study_material.py"
 }

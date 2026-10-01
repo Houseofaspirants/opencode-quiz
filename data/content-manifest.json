@@ -8,7 +8,7 @@
       "url": "https://houseofaspirants.in/study-material",
       "title": "Free Study Material for Punjab Competitive Exams",
       "description": "Free study material for Punjab Police, PSSSB and PPSC exams - PDFs, notes and downloads for every subject, discovered from the files themselves with no sign-up.",
-      "count": 26
+      "count": 27
     },
     {
       "collection": "notes",
@@ -181,6 +181,12 @@
       "description": "Every document categorised as Culture of Punjab on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Free"
     },
     {
+      "file": "archive-category-economy-of-punjab.html",
+      "url": "https://houseofaspirants.in/archive-category-economy-of-punjab",
+      "title": "Economy of Punjab | House of Aspirants",
+      "description": "Every document categorised as Economy of Punjab on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Free"
+    },
+    {
       "file": "archive-category-history.html",
       "url": "https://houseofaspirants.in/archive-category-history",
       "title": "History | House of Aspirants",
@@ -334,6 +340,39 @@
       "badges": [],
       "search": "cultural fairs - part 1 (punjabi) cultural fairs - part 1 (punjabi) - free study material from house of aspirants. culture of punjab material, filed under its subject, language and chapter. cultural-fairs-pa.pdf culture-of-punjab culture of punjab punjabi cultural fairs part 1 cultural fairs - part 1 (punjabi) culture of punjab study material cultural-fairs-pa",
       "pdf": "content/study-material/culture-of-punjab/Punjabi /Cultural Fairs/cultural-fairs-pa.pdf"
+    },
+    {
+      "collection": "study-material",
+      "file": "material-five-year-plan.html",
+      "url": "https://houseofaspirants.in/material-five-year-plan",
+      "title": "Five Year Plan - Part 1 (English)",
+      "description": "Five Year Plan - Part 1 (English) - free study material from House of Aspirants. Economy of Punjab material, filed under its subject, language and chapter.",
+      "published": "2026-10-01",
+      "updated": "2026-10-01",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 11,
+      "lang": "en",
+      "featured": false,
+      "path": "content/study-material/economy-of-punjab/english /Five-year-plan/five-year-plan.pdf",
+      "category": "Economy of Punjab",
+      "language": "en",
+      "subjectName": "Economy of Punjab",
+      "studySubject": "economy-of-punjab",
+      "studyLanguage": "en",
+      "studyLanguageName": "English",
+      "studyChapter": "Five-year-plan",
+      "studyChapterName": "Five Year Plan",
+      "studyPart": 1,
+      "studyParts": 1,
+      "size": 2129166,
+      "sizeLabel": "2.0 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+      "badges": [],
+      "search": "five year plan - part 1 (english) five year plan - part 1 (english) - free study material from house of aspirants. economy of punjab material, filed under its subject, language and chapter. five-year-plan.pdf economy-of-punjab economy of punjab english five year plan part 1 five year plan - part 1 (english) economy of punjab study material five-year-plan",
+      "pdf": "content/study-material/economy-of-punjab/english /Five-year-plan/five-year-plan.pdf"
     },
     {
       "collection": "study-material",
@@ -1498,6 +1537,25 @@
       "thumbH": 600
     },
     {
+      "path": "content/study-material/economy-of-punjab/english /Five-year-plan/five-year-plan.pdf",
+      "filename": "five-year-plan.pdf",
+      "folder": "study-material",
+      "category": "Five-year-plan",
+      "title": "Five Year Plan",
+      "slug": "five-year-plan",
+      "language": "en",
+      "scripts": "latin",
+      "size": 2129166,
+      "sizeLabel": "2.0 MB",
+      "published": "2026-10-01",
+      "modified": "2026-10-01",
+      "pages": 11,
+      "summary": "FIVE YEAR PLANS (1951–2017) Introduction Economic Planning refers to the systematic and efficient utilization of a country's available resources to achieve long-term economic development. In India, Five Year Plans were introduced to promote balanced growth in agriculture, industry, employment",
+      "thumbnail": "assets/img/pdf/d880847e2137.jpg",
+      "thumbW": 450,
+      "thumbH": 600
+    },
+    {
       "path": "content/study-material/history/english/arrival-of-europeans/part 3 (english).pdf",
       "filename": "part 3 (english).pdf",
       "folder": "study-material",
@@ -1841,7 +1899,7 @@
     }
   ],
   "counts": {
-    "study-material": 26,
+    "study-material": 27,
     "notes": 0,
     "current-affairs": 0,
     "magazine": 0,

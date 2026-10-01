@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 171,
-  "edges": 756,
+  "nodes": 175,
+  "edges": 784,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -57,6 +57,18 @@
    "type": "archive",
    "template": "",
    "title": "Culture of Punjab",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-economy-of-punjab.html",
+   "url": "/archive-category-economy-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "Economy of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -378,6 +390,18 @@
   {
    "id": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
    "url": "/content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+   "url": "/content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1089,6 +1113,30 @@
    "type": "study-material",
    "template": "",
    "title": "Cultural Fairs - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-five-year-plan",
+   "url": "/material-five-year-plan",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-five-year-plan.html",
+   "url": "/material-five-year-plan.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Five Year Plan - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2204,6 +2252,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "material-five-year-plan.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-history-of-punjab.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -2421,6 +2511,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-economy-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-history-of-punjab.html",
    "rel": "contextual",
    "weight": 1
@@ -2464,6 +2560,12 @@
   {
    "from": "archives.html",
    "to": "material-cultural-fairs-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-five-year-plan.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3208,6 +3310,108 @@
   {
    "from": "material-cultural-fairs-pa.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-five-year-plan",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-five-year-plan.html",
+   "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -6195,6 +6399,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/economy-of-punjab/english%20/Five-year-plan/five-year-plan.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
    "rel": "contextual",
    "weight": 1
@@ -6322,6 +6532,12 @@
   {
    "from": "study-material.html",
    "to": "material-cultural-fairs-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-five-year-plan.html",
    "rel": "contextual",
    "weight": 1
   },
