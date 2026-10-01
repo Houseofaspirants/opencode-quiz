@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 163,
-  "edges": 715,
+  "nodes": 165,
+  "edges": 726,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -170,6 +170,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+   "url": "/content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
@@ -1754,6 +1766,20 @@
    "exams": [],
    "tags": [],
    "hub": ""
+  },
+  {
+   "id": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "url": "/pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Police Constable Intelligence Investigation Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Police Constable Intelligence Investigation Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
   },
   {
    "id": "pyq/punjab-police-constable/index.html",
@@ -5233,6 +5259,12 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq/punjab-police-constable/index.html",
    "rel": "contextual",
    "weight": 1
@@ -5319,6 +5351,66 @@
    "from": "pyq-2022-question-paper2.html",
    "to": "material-part-2-en.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "study.html",
+   "rel": "contextual",
    "weight": 1
   },
   {

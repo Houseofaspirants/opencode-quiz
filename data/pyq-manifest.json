@@ -1,10 +1,48 @@
 {
   "version": 1,
   "domain": "https://houseofaspirants.in",
-  "total": 3,
-  "papers": 6,
+  "total": 4,
+  "papers": 7,
   "keys": 0,
   "exams": [
+    {
+      "id": "punjab-police-constable-intelligence-investigation",
+      "slug": "punjab-police-constable-intelligence-investigation",
+      "title": "Punjab Police Constable Intelligence Investigation Previous Year Papers",
+      "organization": "Punjab Police",
+      "category": "Punjab state exams",
+      "languages": [
+        "en"
+      ],
+      "description": "Punjab Police Constable Intelligence Investigation Previous Year Papers from Punjab Police - question papers and official answer keys by year, with a download for each document.",
+      "overview": {},
+      "papers": [
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+              "filename": "2021-question-paper.pdf",
+              "title": "2021 Question Paper",
+              "size": 9432472,
+              "sizeLabel": "9.0 MB",
+              "pages": 369,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
+          "key": null
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "file": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-police-constable-intelligence-investigation",
+      "hub": "previous-year-questions.html"
+    },
     {
       "id": "punjab-police-constable",
       "slug": "punjab-police-constable",
