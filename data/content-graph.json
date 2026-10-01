@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 161,
-  "edges": 713,
+  "nodes": 162,
+  "edges": 714,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -170,6 +170,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
+   "url": "/content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
@@ -5300,6 +5312,12 @@
   {
    "from": "pyq/punjab-police-constable/index.html",
    "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable/index.html",
+   "to": "content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
    "rel": "contextual",
    "weight": 1
   },

@@ -2,7 +2,7 @@
   "version": 1,
   "domain": "https://houseofaspirants.in",
   "total": 3,
-  "papers": 4,
+  "papers": 5,
   "keys": 0,
   "exams": [
     {
@@ -18,10 +18,28 @@
       "overview": {
         "en": "## What is on this page\n\nEvery Punjab Police Constable question paper published here, one row per year,\nwith the official answer key beside it and a download for each file. The\nanswer-key cell reads *Not published* until the conducting body releases one -\nit is never reconstructed from memory, and a paper appears as soon as it\nexists rather than waiting for its key.\n\n## About the exam\n\nConstable is the highest-volume recruitment on the Punjab list, which is why\nthe papers below are worth more than another mock: they are the only record of\nwhat the board actually asked. Build the base first - Punjab GK and current\naffairs - then drill reasoning until speed is automatic. Attempt the first\npaper after one full pass of the syllabus, untimed; the second strictly timed."
       },
-      "papers": [],
+      "papers": [
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
+              "filename": "2021-question-paper.pdf",
+              "title": "2021 Question Paper",
+              "size": 23087837,
+              "sizeLabel": "22.0 MB",
+              "pages": 160,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
+          "key": null
+        }
+      ],
       "others": [],
-      "years": 0,
-      "count": 0,
+      "years": 1,
+      "count": 1,
       "keys": 0,
       "file": "pyq/punjab-police-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-constable",
