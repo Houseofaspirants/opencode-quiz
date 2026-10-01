@@ -22,6 +22,13 @@
       "priority": "0.7"
     },
     {
+      "file": "book-arihant-new-approach-reasoning.html",
+      "url": "https://houseofaspirants.in/book-arihant-new-approach-reasoning",
+      "title": "Arihant A New Approach to Reasoning: Who It Suits",
+      "description": "Arihant's A New Approach to Reasoning by B.S. and Indu Sijwali - what it covers, who it suits for Punjab Police and PSSSB, plus free reasoning MCQs to practise.",
+      "priority": "0.7"
+    },
+    {
       "file": "book-arihant-computer-awareness.html",
       "url": "https://houseofaspirants.in/book-arihant-computer-awareness",
       "title": "Arihant Computer Awareness: Who It Suits",
@@ -54,13 +61,6 @@
       "url": "https://houseofaspirants.in/book-punjabi-vyakaran-manish-chalana",
       "title": "Punjabi Vyakaran by Manish Chalana: Who It Suits",
       "description": "Manish Chalana's Punjabi Vyakaran (ਪੰਜਾਬੀ ਵਿਆਕਰਨ) with 4000+ MCQs - who it suits for Patwari, PSSSB Clerk and Punjab Police, with free Punjabi practice.",
-      "priority": "0.7"
-    },
-    {
-      "file": "book-rs-aggarwal-reasoning.html",
-      "url": "https://houseofaspirants.in/book-rs-aggarwal-reasoning",
-      "title": "R.S. Aggarwal Reasoning: Review and Prep Use",
-      "description": "What A Modern Approach to Verbal and Non-Verbal Reasoning covers, who it suits, which chapters to drill and who should skip it - plus free reasoning sets.",
       "priority": "0.7"
     },
     {
@@ -105,6 +105,35 @@
       "cover": "",
       "topics": [],
       "keywords": "modern history book, Spectrum modern India, Rajiv Ahir, history book for Punjab exams",
+      "lastUpdated": "2026-10-02"
+    },
+    {
+      "id": "arihant-new-approach-reasoning",
+      "file": "book-arihant-new-approach-reasoning.html",
+      "url": "https://houseofaspirants.in/book-arihant-new-approach-reasoning",
+      "title": "Arihant A New Approach to Reasoning: Who It Suits",
+      "description": "Arihant's A New Approach to Reasoning by B.S. and Indu Sijwali - what it covers, who it suits for Punjab Police and PSSSB, plus free reasoning MCQs to practise.",
+      "name": "A New Approach to Reasoning",
+      "author": "B.S. Sijwali & Indu Sijwali (Arihant)",
+      "publisher": "Arihant Publications",
+      "subject": "reasoning",
+      "exams": [
+        "punjab-police",
+        "psssb",
+        "patwari",
+        "ssc",
+        "banking",
+        "general"
+      ],
+      "languages": [
+        "English"
+      ],
+      "difficulty": "Intermediate",
+      "rating": null,
+      "featured": true,
+      "cover": "",
+      "topics": [],
+      "keywords": "reasoning book, Arihant A New Approach to Reasoning, BS Sijwali, reasoning book for Punjab exams",
       "lastUpdated": "2026-10-02"
     },
     {
@@ -275,44 +304,6 @@
       "topics": [],
       "keywords": "Punjabi grammar book, Punjabi Vyakaran, Manish Chalana, ਪੰਜਾਬੀ ਵਿਆਕਰਨ, Punjabi book for Punjab exams",
       "lastUpdated": "2026-10-02"
-    },
-    {
-      "id": "rs-aggarwal-reasoning",
-      "file": "book-rs-aggarwal-reasoning.html",
-      "url": "https://houseofaspirants.in/book-rs-aggarwal-reasoning",
-      "title": "R.S. Aggarwal Reasoning: Review and Prep Use",
-      "description": "What A Modern Approach to Verbal and Non-Verbal Reasoning covers, who it suits, which chapters to drill and who should skip it - plus free reasoning sets.",
-      "name": "A Modern Approach to Verbal & Non-Verbal Reasoning",
-      "author": "R.S. Aggarwal",
-      "publisher": "S. Chand Publishing",
-      "subject": "reasoning",
-      "exams": [
-        "punjab-police",
-        "psssb",
-        "ssc",
-        "banking",
-        "railways",
-        "capf",
-        "general"
-      ],
-      "languages": [
-        "English",
-        "Hindi"
-      ],
-      "difficulty": "Intermediate",
-      "rating": 4.5,
-      "featured": false,
-      "cover": "",
-      "topics": [
-        "Series",
-        "Coding-decoding",
-        "Blood relations",
-        "Direction sense",
-        "Syllogisms",
-        "Non-verbal figures"
-      ],
-      "keywords": "A Modern Approach to Verbal & Non-Verbal Reasoning book, R.S. Aggarwal, reasoning book for Punjab exams",
-      "lastUpdated": "2026-09-30"
     },
     {
       "id": "rs-aggarwal-quantitative-aptitude",
