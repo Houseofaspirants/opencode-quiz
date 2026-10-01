@@ -546,6 +546,13 @@ core = (ROOT / "assets/js/core.js").read_text(encoding="utf-8")
 PYQ_HUB = "previous-year-questions.html"
 pyq_hub_src = ((ROOT / PYQ_HUB).read_text(encoding="utf-8")
                if (ROOT / PYQ_HUB).exists() else "")
+# The Current Affairs section is the other nested route family: its language
+# pages hang off the Current Affairs hub, and a month page off the language
+# page that owns it. The hub is what lists the languages, so that is where a
+# language page's link coverage is proved.
+CA_HUB = "current-affairs.html"
+ca_hub_src = ((ROOT / CA_HUB).read_text(encoding="utf-8")
+              if (ROOT / CA_HUB).exists() else "")
 for link in REQUIRED_LINKS:
     if link not in core:
         errors.append(f"footer/nav missing internal link {link}")
@@ -886,6 +893,23 @@ if CONTENT_MANIFEST.exists():
                 # global chrome: the hub is the page that lists it.
                 if f'href="{f}"' not in pyq_hub_src:
                     errors.append(f"{f}: not linked from {PYQ_HUB}")
+            elif f.startswith("current-affairs/"):
+                # Same rule, one level deeper. current-affairs.html lists the
+                # language pages; a month page is listed by the language page
+                # that owns it, because the hub is a door and never a month
+                # index. One of those two pages has to link it, or the route
+                # is reachable from nowhere.
+                parts_f = f.split("/")
+                if len(parts_f) <= 3:
+                    parents, linked = [CA_HUB], f'href="{f}"' in ca_hub_src
+                else:
+                    parent = f"current-affairs/{parts_f[1]}/index.html"
+                    parents = [parent]
+                    linked = f'href="{f}"' in (
+                        (ROOT / parent).read_text(encoding="utf-8")
+                        if (ROOT / parent).exists() else "")
+                if not linked:
+                    errors.append(f"{f}: not linked from {' or '.join(parents)}")
             elif f'href="{f}"' not in core:
                 errors.append(f"chrome missing content index link {f}")
             want_pg = page_url(f)

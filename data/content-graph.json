@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 194,
-  "edges": 880,
+  "nodes": 201,
+  "edges": 924,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -182,6 +182,18 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "books.html",
+   "url": "/books.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "ca-august-2026-english",
@@ -789,6 +801,66 @@
    "type": "hub",
    "template": "",
    "title": "Punjab Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/english/august-2026/index.html",
+   "url": "/current-affairs/english/august-2026/index.html",
+   "type": "page",
+   "template": "",
+   "title": "August 2026 English Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/english/index.html",
+   "url": "/current-affairs/english/index.html",
+   "type": "page",
+   "template": "",
+   "title": "English Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/english/july-2026/index.html",
+   "url": "/current-affairs/english/july-2026/index.html",
+   "type": "page",
+   "template": "",
+   "title": "July 2026 English Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/punjabi/august-2026/index.html",
+   "url": "/current-affairs/punjabi/august-2026/index.html",
+   "type": "page",
+   "template": "",
+   "title": "August 2026 Punjabi Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/punjabi/index.html",
+   "url": "/current-affairs/punjabi/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjabi Current Affairs | House of Aspirants",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -1958,6 +2030,18 @@
    "exams": [],
    "tags": [],
    "hub": "personal-notes.html"
+  },
+  {
+   "id": "practice.html",
+   "url": "/practice.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "previous-year-questions.html",
@@ -3369,12 +3453,6 @@
   },
   {
    "from": "current-affairs.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "current-affairs.html",
    "to": "ca-august-2026-english.html",
    "rel": "contextual",
    "weight": 1
@@ -3393,36 +3471,306 @@
   },
   {
    "from": "current-affairs.html",
+   "to": "current-affairs/english/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "current-affairs.html",
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "books.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "current-affairs/english/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/august-2026/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "books.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "current-affairs/english/august-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "current-affairs/english/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "current-affairs/english/july-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "current-affairs.html",
-   "to": "news.html",
+   "from": "current-affairs/english/index.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "current-affairs.html",
-   "to": "punjab-exams.html",
+   "from": "current-affairs/english/index.html",
+   "to": "pyq.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "current-affairs.html",
-   "to": "quiz.html",
+   "from": "current-affairs/english/index.html",
+   "to": "study.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "current-affairs.html",
+   "from": "current-affairs/english/index.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "books.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "current-affairs/english/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/july-2026/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "books.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/august-2026/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "books.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "current-affairs/punjabi/august-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
    "to": "subject.html",
    "rel": "contextual",
    "weight": 1

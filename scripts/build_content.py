@@ -81,6 +81,7 @@ from urllib.parse import quote
 import study_material            # data/study-manifest.json (Study's subject list)
 import proof_documents           # data/proof-manifest.json (the Blueprint's scans)
 import pyq_collection            # data/pyq-manifest.json (the PYQ exam folders)
+import current_affairs           # current-affairs/<language>/<Month YYYY>/ -> nested pages
 
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
@@ -1706,6 +1707,11 @@ def og_page_key(url):
         # A Previous Year Questions exam page (pyq/<slug>/index.html) lights up
         # the same nav key pyq.html and the collection hub already use.
         return "previous-year-questions"
+    if path.startswith("/current-affairs/"):
+        # A Current Affairs language or month page lights up the same nav key
+        # current-affairs.html uses: they are the one Current Affairs door,
+        # not a second section.
+        return HUB_NAV.get("current-affairs", "ca")
     for key, prefix in (("ca", "/ca-"), ("blogs", "/blog-"),
                         ("news", "/news-"), ("announcements", "/announce-"),
                         ("notes", "/note"), ("magazine", "/magazine"),
@@ -5020,7 +5026,249 @@ def pyq_exam_page(exam):
     return html
 
 
-def hub_page(coll, cfg, items, index, exams, pyq_exams=()):
+def ca_section_page(page):
+    """current-affairs/<language>/[<month>/]index.html -> /current-affairs/...
+
+    Two page kinds, one shape. A language page carries the four doors the
+    section is built from - Daily Current Affairs, Monthly Magazine, PDF
+    Downloads, Archives - then the months it has published and every file it
+    holds. A month page carries that month's files and the months beside it.
+
+    Both set <base href="/">, exactly like the PYQ exam pages three directories
+    above the root do, so the shared header and footer keep resolving from a
+    nested URL; and because a page under a <base> resolves `#anchor` against
+    the base rather than itself, the two in-page anchors are written as full
+    paths - the same rule pyq/<exam>/index.html follows for `#papers`.
+
+    Every number on the page comes from the records this run published. A
+    language with nothing filed under it publishes an empty month list that
+    says so, rather than describing months that are not on disk.
+    """
+    file, url = page["file"], page["url"]
+    lang, is_month = page["language"], page["kind"] == "month"
+    name, folder = lang["name"], lang["folder"]
+    label = str(page.get("label") or "")
+    crumb_items = [("Home", f"{DOMAIN}/"),
+                   ("Current Affairs", f"{DOMAIN}/current-affairs"),
+                   (name, f"{DOMAIN}/current-affairs/{folder}")]
+    if is_month:
+        crumb_items.append((label, url))
+    crumbs = {"id": f"{url}#breadcrumb", "items": crumb_items}
+
+    nodes = [webpage_node(url, page["title"], page["description"],
+                          f"{url}#breadcrumb"),
+             breadcrumb_node(crumbs)]
+
+    trail = '<a href="index.html">Home</a><span>/</span>'
+    trail += f'<a href="current-affairs.html">Current Affairs</a><span>/</span>'
+    trail += (f'<a href="current-affairs/{folder}/index.html">{esc(name)}</a>'
+              if is_month else f"<span>{esc(name)}</span>")
+    if is_month:
+        trail += f'<span>/</span><span>{esc(label)}</span>'
+
+    if is_month:
+        items = page["items"]
+        rows = "".join(
+            f'<li><a href="{esc(i["file"])}">{esc(i["title"])}</a>'
+            f'<span class="part-meta">{esc(fmt_date(i["published"]))}'
+            + (f' &middot; {i["pages"]} pages' if i["pages"] else "")
+            + (f' &middot; {esc(i["size"])}' if i["size"] else "")
+            + "</span></li>"
+            for i in items)
+        listing = f'<ul class="part-list">{rows}</ul>' if rows else """
+          <div class="empty-state">
+            <span class="es-icon" aria-hidden="true">🗞️</span>
+            <h3>Nothing published for this month yet</h3>
+            <p>This page exists because the folder is on disk. The day a file
+               is dropped into it, the document appears here on the very next
+               publish - nothing has to be edited.</p>
+          </div>"""
+        eyebrow = f"{esc(name)} &middot; {esc(label)}"
+        h1 = f"{esc(label)} {esc(name)} Current Affairs"
+        lead = (f"Everything published in {esc(name)} for {esc(label)}, newest "
+                f"first. One list, one tap to read or download.")
+        answer = (f"{len(items)} document{'s' if len(items) != 1 else ''} of "
+                  f"{name} current affairs for {label}, free to read online or "
+                  f"download as a PDF.")
+    else:
+        listing = ""
+        n_doc = int(page["count"])
+        eyebrow = (f"{esc(name)} &middot; {n_doc} document"
+                   f"{'s' if n_doc != 1 else ''}")
+        h1 = f"{esc(name)} Current Affairs"
+        lead = (f"Monthly current affairs in {esc(name)}, with the practice "
+                f"set and every download beside it.")
+        answer = (f"{name} current affairs for Punjab exams: "
+                  f"{page['count']} document(s) published, newest "
+                  f"{fmt_date(page['newest']) or 'not yet'}.")
+
+    # --- the four doors (language pages only) -------------------------------
+    doors = ""
+    if not is_month:
+        here = f"/{file}"
+        tiles = (
+            ("Daily", "Daily Current Affairs",
+             "Open the current affairs practice set.",
+             "subject.html?subject=current-affairs", "Start now"),
+            ("Monthly", "Monthly Magazine",
+             "Every issue, filed by month.", "magazine.html", "Open the shelf"),
+            ("Archive", "PDF Downloads",
+             "Every file in this language, ready to save.",
+             f"{here}#downloads", "Jump to the list"),
+            ("Archive", "Archives",
+             "Month by month, newest first.",
+             f"{here}#archives", "Browse the months"),
+        )
+        cards = "".join(
+            f'<a class="card card-pad reveal" href="{esc(href)}">'
+            f'<span class="eyebrow">{esc(eb)}</span><h3>{esc(title)}</h3>'
+            f'<p class="muted">{esc(sub)}</p>'
+            f'<p class="ilink">{esc(action)} &rarr;</p></a>'
+            for eb, title, sub, href, action in tiles)
+        doors = f"""    <section class="section">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Start here</span>
+          <h2>Four ways in</h2>
+          <p>The section is the same in either language: today's practice
+             set, the monthly magazine, the downloads and the archive.</p>
+        </div></div>
+        <div class="grid grid-2">{cards}</div>
+      </div>
+    </section>"""
+
+    # --- archives: the months, newest first ---------------------------------
+    months = page.get("months", [])
+    if is_month:
+        month_html = ""
+    elif months:
+        month_html = f"""    <section class="section" id="archives" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Archives</span>
+          <h2>Month by month</h2>
+          <p>Every month published in {esc(name)}, newest first. A new month
+             appears here the moment its folder exists.</p>
+        </div></div>
+        <div class="grid grid-3">{''.join(
+            f'<a class="card card-pad reveal" href="{esc(m["file"])}">'
+            f'<span class="eyebrow">{esc(m["label"])}</span>'
+            f'<h3>{esc(m["label"])}</h3>'
+            f'<p class="muted">{len(m["items"])} document'
+            f'{"s" if len(m["items"]) != 1 else ""} &middot; updated '
+            f'{esc(fmt_date(m["newest"]))}</p>'
+            f'<p class="ilink">Open the month &rarr;</p></a>'
+            for m in months)}</div>
+      </div>
+    </section>"""
+    else:
+        month_html = """    <section class="section" id="archives" style="padding-top:0">
+      <div class="container">
+        <div class="empty-state">
+          <span class="es-icon" aria-hidden="true">🗂️</span>
+          <h3>No month published in this language yet</h3>
+          <p>A month exists when a folder is created under this language with
+             the month and the year in its name - for example
+             <code>August 2026</code>. It publishes on the next build with no
+             page edited by hand.</p>
+        </div>
+      </div>
+    </section>"""
+
+    # --- downloads: every file this language holds --------------------------
+    files = page.get("items", [])
+    downloads = ""
+    if not is_month:
+        if files:
+            rows = "".join(
+                f'<li><a href="{esc(i["file"])}">{esc(i["title"])}</a>'
+                f'<span class="part-meta">{esc(fmt_date(i["published"]))}'
+                + (f' &middot; {i["pages"]} pages' if i["pages"] else "")
+                + (f' &middot; {esc(i["size"])}' if i["size"] else "")
+                + "</span></li>"
+                for i in files)
+            body = f'<ul class="part-list">{rows}</ul>'
+        else:
+            body = """
+          <div class="empty-state">
+            <span class="es-icon" aria-hidden="true">📄</span>
+            <h3>No download published in this language yet</h3>
+            <p>Files land here on the next build. Nothing is described that is
+               not on disk.</p>
+          </div>"""
+        downloads = f"""    <section class="section" id="downloads" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Downloads</span>
+          <h2>PDF downloads</h2>
+          <p>Every {esc(name)} file, newest first - one click, no sign-up and
+             no email wall.</p>
+        </div></div>
+        {body}
+      </div>
+    </section>"""
+
+    cross = [
+        ("current-affairs.html", "Current Affairs", "The other language"),
+        ("study.html", "Study material", "Build the base a paper tests"),
+        ("practice.html", "Practice", "Turn reading into marks"),
+        ("pyq.html", "Previous Year Papers", "See how they actually ask"),
+        ("books.html", "Books", "What to buy, and what to skip"),
+        ("index.html", "Home", "Back to the front page"),
+    ]
+    keep = "".join(
+        f'<a class="card card-pad reveal" href="{esc(href)}">'
+        f'<span class="eyebrow">{esc(kind)}</span><h3>{esc(what)}</h3>'
+        f'<p class="ilink">Open &rarr;</p></a>'
+        for href, kind, what in cross)
+
+    if is_month:
+        sections = [f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">This month</span>
+          <h2>In {esc(label)}</h2>
+          <p>The documents published under this month, newest first.</p>
+        </div></div>
+        {listing}
+      </div>
+    </section>"""]
+    else:
+        sections = [doors, month_html, downloads]
+    sections.append(f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Keep going</span>
+          <h2>Where to go next</h2>
+          <p>The other parts of House of Aspirants, one click away.</p>
+        </div></div>
+        <div class="grid grid-3">{keep}</div>
+      </div>
+    </section>""")
+
+    html = head(page["title"], page["description"], page["keywords"], url,
+                "website", graph(nodes), nested=True)
+    html += f"""  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">{trail}</nav>
+        <span class="eyebrow">{eyebrow}</span>
+        <h1>{h1}</h1>
+        <p class="muted" style="max-width:70ch">{lead}</p>
+        <div class="answer-box">
+          <span class="ab-label">Quick answer</span>
+          <p>{esc(answer)}</p>
+        </div>
+      </div>
+    </section>
+{chr(10).join(sections)}
+  </main>
+"""
+    html += TAIL
+    return html
+
+
+def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
     hub = HUBS[coll]
     url = f"{DOMAIN}/{hub['file'][:-5]}"
     prefix = cfg["prefix"]
@@ -5089,6 +5337,17 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=()):
     sections.append(f"""<section class="section">
       <div class="container">{head_html}</div>
     </section>""")
+
+    # --- Current Affairs opens with a choice, not a list --------------------
+    # /current-affairs is a door, not a feed: the first thing a reader sees is
+    # Punjabi and English as the two big language cards, because every month,
+    # magazine issue and download lives behind one of them. The published list
+    # below stays exactly where it was - it is what the hub's schema and its
+    # sitemap entry describe - so nothing that worked stops working.
+    if coll == "current-affairs":
+        langs = (ca_section or {}).get("languages") or []
+        if langs:
+            sections.insert(0, ca_language_section(langs, index))
 
     # --- collection-specific extras (always real links, never invented) ----
     if coll == "notes":
@@ -5258,6 +5517,53 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=()):
 def quiz_href(t):
     return (t["landing"].lstrip("/") + ".html") if t.get("landing") else \
         f'quiz.html?subject=current-affairs&topic={t["id"]}'
+
+
+def ca_language_section(languages, index):
+    """The "Choose your language" cards at the top of /current-affairs.
+
+    The same .lang-card the Study shelf renders its language step from, with
+    the same two badges - months and PDFs - counted off the records this run
+    published. Nothing here is typed: a language with no folder under it
+    would publish saying so, and a new language folder becomes a card on the
+    next build with no line of this file touched."""
+    color = next((str(s.get("color") or "")
+                  for s in index.get("subjects", [])
+                  if s.get("id") == "current-affairs"), "")
+    style = f' style="--sc:{esc(color)}"' if color else ""
+    cards = []
+    for lang in languages:
+        labels = [m["label"] for m in lang.get("months", [])]
+        shown = ", ".join(labels[:3])
+        if len(labels) > 3:
+            shown += f" and {len(labels) - 3} more"
+        n_month, n_pdf = len(labels), int(lang.get("count") or 0)
+        native = (f'<p class="lang-native">{esc(lang["native"])}</p>'
+                  if lang.get("native") and lang["native"] != lang["name"]
+                  else "")
+        cards.append(
+            f'<a class="card lang-card reveal"{style} href="{esc(lang["file"])}">'
+            f'<span class="lang-flag" aria-hidden="true">'
+            f'{esc(lang.get("flag") or chr(0x1F310))}</span>'
+            f'<h3>{esc(lang["name"])}</h3>{native}'
+            f'<p class="muted">{esc(shown) or "Nothing published yet."}</p>'
+            f'<div class="subject-meta">'
+            f'<span class="badge {"badge-success" if n_month else "badge-muted"}">'
+            f'{n_month} month{"s" if n_month != 1 else ""}</span>'
+            f'<span class="badge {"badge-success" if n_pdf else "badge-muted"}">'
+            f'{n_pdf} PDF{"s" if n_pdf != 1 else ""}</span>'
+            f'</div></a>')
+    return f"""<section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div>
+          <span class="eyebrow">Language</span>
+          <h2>Choose your language</h2>
+          <p>Every month, magazine issue and download lives behind one of
+             these two. Pick a language and the rest is one tap away.</p>
+        </div></div>
+        <div class="grid grid-2">{''.join(cards)}</div>
+      </div>
+    </section>"""
 
 
 def subject_strip(index):
@@ -6653,6 +6959,14 @@ def main():
                       "expected-mcqs", "previous-year-questions")
                      if all_records.get(c)}
 
+    # ---- Current Affairs: one section, one home --------------------------
+    # content/current-affairs/<language>/<Month YYYY>/ decides which language
+    # and which month page exists, so the whole /current-affairs/... tree is
+    # decided here, before the first byte is written, and can never disagree
+    # with what the hub links to below.
+    ca_section = current_affairs.build(
+        all_records["current-affairs"], drops, study_lang, warn, info)
+
     expected = set()
     manifest_items = []
     rendered = []
@@ -6728,7 +7042,8 @@ def main():
     hubs_out = []
     for coll, cfg in HUBS.items():
         pool = all_records[coll] + punjabi[coll]
-        html_out, live = hub_page(coll, cfg, pool, index, exams, pyq_exams)
+        html_out, live = hub_page(coll, cfg, pool, index, exams, pyq_exams,
+                                  ca_section)
         (ROOT / cfg["file"]).write_text(html_out, encoding="utf-8")
         expected.add(cfg["file"])
         ctx["pages"].append((cfg["file"], page_main(html_out), {
@@ -6841,6 +7156,36 @@ def main():
         info(f"pyq pages: {len(pyq_page_entries)} exam page(s) written under "
              f"pyq/")
 
+    # ---- Current Affairs section pages ------------------------------------
+    # One page per language and one per month, written into their own
+    # directories so the URLs are /current-affairs/<language> and
+    # /current-affairs/<language>/<month> in production (cleanUrls in
+    # vercel.json). Registered in the manifest like every other generated index
+    # page, so the sitemap, the SEO gate and the reachability rule above all
+    # pick them up in this run - and each carries the same "generated, do not
+    # edit" marker as the rest.
+    ca_page_entries = []
+    for _page in ca_section.get("pages", []):
+        _html = ca_section_page(_page)
+        _path = ROOT / _page["file"]
+        _path.parent.mkdir(parents=True, exist_ok=True)
+        _path.write_text(_html, encoding="utf-8")
+        expected.add(_page["file"])
+        ca_page_entries.append({
+            "file": _page["file"],
+            "url": _page["url"],
+            "title": _page["title"],
+            "description": _page["description"],
+        })
+        ctx["pages"].append((_page["file"], page_main(_html), {
+            "id": _page["file"], "url": f'/{_page["file"]}', "type": "page",
+            "template": "", "title": _page["title"], "lang": "en",
+            "subjects": [], "exams": [], "tags": [], "hub": "current-affairs.html",
+        }))
+    if ca_page_entries:
+        info(f"current affairs pages: {len(ca_page_entries)} page(s) written "
+             f"under current-affairs/")
+
     # ---- stale output removal --------------------------------------------
     # Every writer above has registered its files in `expected` by now, so a
     # page nobody produced any more (a deleted draft, a retired tag archive)
@@ -6894,6 +7239,28 @@ def main():
                 pa_dir.rmdir()
             except OSError:
                 pass
+    # The Current Affairs section is two directories deep
+    # (current-affairs/<language>/[<month>/]), which the root scan above cannot
+    # see into: a language folder, or a month folder, that no longer exists on
+    # disk is cleaned up here - and the directories they leave empty go with
+    # them, so no empty route survives.
+    ca_dir = ROOT / "current-affairs"
+    if ca_dir.is_dir():
+        for sub in sorted(p for p in ca_dir.rglob("*") if p.is_file()):
+            rel = sub.relative_to(ROOT).as_posix()
+            if sub.suffix == ".html" and rel not in expected:
+                sub.unlink()
+                removed.append(rel)
+        for sub in sorted((p for p in ca_dir.rglob("*") if p.is_dir()),
+                          key=lambda p: len(p.parts), reverse=True):
+            try:
+                sub.rmdir()
+            except OSError:
+                pass                            # still holds a file: keep it
+        try:
+            ca_dir.rmdir()
+        except OSError:
+            pass
     if removed:
         warn("stale content pages removed: " + ", ".join(removed))
 
@@ -6946,7 +7313,7 @@ def main():
             "url": f"{DOMAIN}/archives",
             "title": ARCHIVES_TITLE,
             "description": ARCHIVES_DESC,
-        }] + phase4_manifest + pyq_page_entries,
+        }] + phase4_manifest + pyq_page_entries + ca_page_entries,
         "items": sorted(manifest_items, key=lambda r: r["file"]),
         "pdfs": pdfs,
         "drops": drops,
