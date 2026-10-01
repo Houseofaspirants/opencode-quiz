@@ -184,8 +184,8 @@
    "hub": ""
   },
   {
-   "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
-   "url": "/content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
+   "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+   "url": "/content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -196,8 +196,8 @@
    "hub": ""
   },
   {
-   "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP_Constable_Intelligence_and_Investigation_14_oct_2022_Paper.pdf",
-   "url": "/content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP_Constable_Intelligence_and_Investigation_14_oct_2022_Paper.pdf",
+   "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
+   "url": "/content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1756,6 +1756,30 @@
    "hub": ""
   },
   {
+   "id": "pyq-2022-question-paper1",
+   "url": "/pyq-2022-question-paper1",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pyq-2022-question-paper1.html",
+   "url": "/pyq-2022-question-paper1.html",
+   "type": "previous-year-questions",
+   "template": "previous-year-question",
+   "title": "2022 Question paper1",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq-2022-question-paper2",
    "url": "/pyq-2022-question-paper2",
    "type": "document",
@@ -1768,59 +1792,35 @@
    "hub": ""
   },
   {
+   "id": "pyq-2022-question-paper2-2",
+   "url": "/pyq-2022-question-paper2-2",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pyq-2022-question-paper2-2.html",
+   "url": "/pyq-2022-question-paper2-2.html",
+   "type": "previous-year-questions",
+   "template": "previous-year-question",
+   "title": "2022 Question paper2 (Punjab Police Sub Inspector)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq-2022-question-paper2.html",
    "url": "/pyq-2022-question-paper2.html",
    "type": "previous-year-questions",
    "template": "previous-year-question",
    "title": "2022 Question paper2",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "previous-year-questions.html"
-  },
-  {
-   "id": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper",
-   "url": "/pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "url": "/pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "type": "previous-year-questions",
-   "template": "previous-year-question",
-   "title": "Pp Constable Intelligence and Investigation 14 Oct 2022",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "previous-year-questions.html"
-  },
-  {
-   "id": "pyq-pp-head-constable-15-oct-2022-paper-1",
-   "url": "/pyq-pp-head-constable-15-oct-2022-paper-1",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "url": "/pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "type": "previous-year-questions",
-   "template": "previous-year-question",
-   "title": "Pp Head Constable 15 Oct 2022 Paper 1",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2607,19 +2607,19 @@
   },
   {
    "from": "archives.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pyq-2022-question-paper2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2967,7 +2967,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3069,7 +3069,7 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3153,7 +3153,7 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3237,7 +3237,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3321,7 +3321,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3405,7 +3405,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3489,7 +3489,7 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3573,7 +3573,7 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3657,7 +3657,7 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3741,7 +3741,7 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3831,7 +3831,7 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3915,7 +3915,7 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3999,7 +3999,7 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4089,7 +4089,7 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4173,7 +4173,7 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4263,7 +4263,7 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4353,7 +4353,7 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4449,7 +4449,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4545,7 +4545,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4641,7 +4641,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4731,7 +4731,7 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4821,7 +4821,7 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4905,7 +4905,7 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4989,7 +4989,7 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5073,7 +5073,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5157,7 +5157,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5331,19 +5331,19 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq-2022-question-paper2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "previous-year-questions.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "previous-year-questions.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5378,8 +5378,152 @@
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-2022-question-paper1.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "pyq-2022-question-paper1",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper1.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
    "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-2022-question-paper2-2",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5439,157 +5583,13 @@
   },
   {
    "from": "pyq-2022-question-paper2.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper1.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pyq-2022-question-paper2.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP_Constable_Intelligence_and_Investigation_14_oct_2022_Paper.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "previous-year-questions.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "material-part-1-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "pyq-2022-question-paper2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/PP%20Head%20Constable%2015%20oct%202022%20Paper%201%20.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "previous-year-questions.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "strategy.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "material-part-1-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "pyq-2022-question-paper2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper2-2.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -5637,13 +5637,13 @@
   },
   {
    "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-   "to": "pyq-pp-constable-intelligence-and-investigation-14-oct-2022-paper.html",
+   "to": "pyq-2022-question-paper1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-   "to": "pyq-pp-head-constable-15-oct-2022-paper-1.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
