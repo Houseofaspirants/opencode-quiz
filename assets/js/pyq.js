@@ -55,13 +55,16 @@
   let exams = [];
   let term = "";
 
-  /* The folder-per-exam collection (data/pyq-manifest.json). An exam that has
-     one gets its own year-by-year table at pyq/<slug>/index.html and is linked
-     there from its card; an exam that has not keeps linking to its landing
-     page. Either way the href comes from a generated manifest, never from
-     markup - a new exam folder appears without this file being touched. */
+  /* The folder-per-exam collection (data/pyq-manifest.json). This is the ONLY
+     source the Browse by Exam grid is allowed to list from: a card promises
+     papers, so an exam gets a card exactly when content/previous-year-questions/
+     <exam>/ exists, and loses it the day that folder does. Nothing in this grid
+     is a hand-maintained list of exams - data/exams.json is deliberately not
+     used for presence, because that file also owns exam-*.html landing pages
+     and the sitemap sitewide. */
   let folders = [];
   let folderById = new Map();
+  let foldersAvailable = false;
 
   function examCard(e) {
     const subs = (e.subjects || [])
