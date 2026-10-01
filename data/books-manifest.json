@@ -10,7 +10,7 @@
       "url": "https://houseofaspirants.in/books",
       "title": "Recommended Books for Punjab Exams | House of Aspirants",
       "description": "Compare preparation books for Punjab Police, PSSSB, PPSC, SSC, banking and railway exams - what each one covers, who it suits and who should skip it.",
-      "count": 10
+      "count": 9
     }
   ],
   "pages": [
@@ -47,13 +47,6 @@
       "url": "https://houseofaspirants.in/book-lucent-general-knowledge",
       "title": "Lucent's General Knowledge: Review and Prep Use",
       "description": "What Lucent's General Knowledge covers, who it suits, which chapters to read and who should skip it - plus free Punjab exam notes to study beside it.",
-      "priority": "0.7"
-    },
-    {
-      "file": "book-punjab-gk-study-material.html",
-      "url": "https://houseofaspirants.in/book-punjab-gk-study-material",
-      "title": "Punjab GK Study Material: Free Notes and MCQs",
-      "description": "Free Punjab GK study material for Punjab Police, PSSSB and PPSC - history, culture, literature, geography and economy in Punjabi and English.",
       "priority": "0.7"
     },
     {
@@ -255,41 +248,6 @@
       "lastUpdated": "2026-09-30"
     },
     {
-      "id": "punjab-gk-study-material",
-      "file": "book-punjab-gk-study-material.html",
-      "url": "https://houseofaspirants.in/book-punjab-gk-study-material",
-      "title": "Punjab GK Study Material: Free Notes and MCQs",
-      "description": "Free Punjab GK study material for Punjab Police, PSSSB and PPSC - history, culture, literature, geography and economy in Punjabi and English.",
-      "name": "Punjab GK study material",
-      "author": "House of Aspirants",
-      "publisher": "House of Aspirants",
-      "subject": "gk",
-      "exams": [
-        "punjab-police",
-        "psssb",
-        "punjab-pcs",
-        "patwari",
-        "general"
-      ],
-      "languages": [
-        "Punjabi",
-        "English"
-      ],
-      "difficulty": "Beginner",
-      "rating": 4.5,
-      "featured": true,
-      "cover": "",
-      "topics": [
-        "Punjab history",
-        "Punjab culture",
-        "Punjabi literature",
-        "Punjab geography",
-        "Punjab economy"
-      ],
-      "keywords": "Punjab GK study material book, House of Aspirants, gk book for Punjab exams",
-      "lastUpdated": "2026-09-30"
-    },
-    {
       "id": "punjabi-vyakaran-manish-chalana",
       "file": "book-punjabi-vyakaran-manish-chalana.html",
       "url": "https://houseofaspirants.in/book-punjabi-vyakaran-manish-chalana",
@@ -425,7 +383,7 @@
   ],
   "redirects": [],
   "counts": {
-    "books": 10,
+    "books": 9,
     "covers": 0,
     "providers": 3
   }

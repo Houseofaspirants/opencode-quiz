@@ -29,6 +29,11 @@
       "source": "/archive-category-punjabi",
       "destination": "/study-material",
       "permanent": true
+    },
+    {
+      "source": "/book-punjab-gk-study-material",
+      "destination": "/punjab-gk-study-guide",
+      "permanent": true
     }
   ],
   "headers": [
