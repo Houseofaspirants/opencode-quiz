@@ -45,17 +45,19 @@
       "papers": [
         {
           "year": "2022",
-          "paper": {
-            "path": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
-            "filename": "2022-question-paper.pdf",
-            "title": "2022 Question Paper",
-            "size": 25498181,
-            "sizeLabel": "24.3 MB",
-            "pages": 45,
-            "language": "en",
-            "published": "2026-10-01",
-            "modified": "2026-10-01"
-          },
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
+              "filename": "2022-question-paper.pdf",
+              "title": "2022 Question Paper",
+              "size": 25498181,
+              "sizeLabel": "24.3 MB",
+              "pages": 45,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
           "key": null
         }
       ],
@@ -83,47 +85,53 @@
       "papers": [
         {
           "year": "2023",
-          "paper": {
-            "path": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
-            "filename": "2023-question-paper.pdf",
-            "title": "2023 Question Paper",
-            "size": 25663595,
-            "sizeLabel": "24.5 MB",
-            "pages": 0,
-            "language": "en",
-            "published": "2026-10-01",
-            "modified": "2026-10-01"
-          },
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+              "filename": "2023-question-paper.pdf",
+              "title": "2023 Question Paper",
+              "size": 25663595,
+              "sizeLabel": "24.5 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
           "key": null
         },
         {
           "year": "2022",
-          "paper": {
-            "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
-            "filename": "2022-question-paper.pdf",
-            "title": "2022 Question Paper",
-            "size": 24480942,
-            "sizeLabel": "23.3 MB",
-            "pages": 0,
-            "language": "en",
-            "published": "2026-10-01",
-            "modified": "2026-10-01"
-          },
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
+              "filename": "2022-question-paper.pdf",
+              "title": "2022 Question Paper",
+              "size": 24480942,
+              "sizeLabel": "23.3 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
           "key": null
         },
         {
           "year": "2021",
-          "paper": {
-            "path": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
-            "filename": "2021-question-paper.pdf",
-            "title": "2021 Question Paper",
-            "size": 27501189,
-            "sizeLabel": "26.2 MB",
-            "pages": 742,
-            "language": "en",
-            "published": "2026-10-01",
-            "modified": "2026-10-01"
-          },
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
+              "filename": "2021-question-paper.pdf",
+              "title": "2021 Question Paper",
+              "size": 27501189,
+              "sizeLabel": "26.2 MB",
+              "pages": 742,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
           "key": null
         }
       ],

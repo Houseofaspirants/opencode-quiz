@@ -262,21 +262,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 11,
-      "newest": "2026-09-30",
-      "totalSize": 19647585,
-      "chapters": 2,
+      "count": 17,
+      "newest": "2026-10-01",
+      "totalSize": 34876841,
+      "chapters": 8,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 11,
-          "chapters": 2,
-          "pages": 91,
-          "totalSize": 19647585,
-          "newest": "2026-09-30",
+          "files": 17,
+          "chapters": 8,
+          "pages": 149,
+          "totalSize": 34876841,
+          "newest": "2026-10-01",
           "categories": 12,
           "regions": 2
         },
@@ -733,11 +733,11 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 0,
-              "chapters": 0,
-              "pages": 0,
-              "totalSize": 0,
-              "newest": "",
+              "files": 6,
+              "chapters": 6,
+              "pages": 58,
+              "totalSize": 15229256,
+              "newest": "2026-10-01",
               "categories": 6
             },
             "categories": [
@@ -749,11 +749,11 @@
                   "history-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 2,
+                  "chapters": 2,
+                  "pages": 31,
+                  "totalSize": 6895715,
+                  "newest": "2026-10-01"
                 },
                 "languages": [
                   {
@@ -761,16 +761,40 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "sikhism-pa",
+                        "name": "Sikhism Pa",
+                        "parts": [
+                          {
+                            "file": "material-sikhism-pa.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 15
+                      }
+                    ]
                   },
                   {
                     "id": "en",
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "sikhism ",
+                        "name": "Sikhism",
+                        "parts": [
+                          {
+                            "file": "material-sikhism-en.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 16
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -784,11 +808,11 @@
                   "culture-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 4,
+                  "chapters": 4,
+                  "pages": 27,
+                  "totalSize": 8333541,
+                  "newest": "2026-10-01"
                 },
                 "languages": [
                   {
@@ -796,16 +820,62 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 2,
+                    "chapters": [
+                      {
+                        "id": "Cultural Fairs",
+                        "name": "Cultural Fairs",
+                        "parts": [
+                          {
+                            "file": "material-cultural-fairs-pa.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 13
+                      },
+                      {
+                        "id": "Punajb Folk dances",
+                        "name": "Punajb Folk Dances",
+                        "parts": [
+                          {
+                            "file": "material-punjab-folk-dance-pa.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 3
+                      }
+                    ]
                   },
                   {
                     "id": "en",
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 2,
+                    "chapters": [
+                      {
+                        "id": "cultural fairs ",
+                        "name": "Cultural Fairs",
+                        "parts": [
+                          {
+                            "file": "material-cultural-fairs-en.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
+                      },
+                      {
+                        "id": "punjab folk dance",
+                        "name": "Punjab Folk Dance",
+                        "parts": [
+                          {
+                            "file": "material-punjab-folk-dance-en.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 3
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1247,28 +1317,52 @@
       "color": "#f59e0b",
       "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past.",
       "order": 14,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 2,
+      "newest": "2026-10-01",
+      "totalSize": 6895715,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "sikhism-pa",
+              "name": "Sikhism Pa",
+              "parts": [
+                {
+                  "file": "material-sikhism-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
+            }
+          ]
         },
         {
           "id": "en",
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "sikhism ",
+              "name": "Sikhism",
+              "parts": [
+                {
+                  "file": "material-sikhism-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 16
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 2,
       "hidden": true
     },
     {
@@ -1278,28 +1372,74 @@
       "color": "#ec4899",
       "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state.",
       "order": 15,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 4,
+      "newest": "2026-10-01",
+      "totalSize": 8333541,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 2,
+          "chapters": [
+            {
+              "id": "Cultural Fairs",
+              "name": "Cultural Fairs",
+              "parts": [
+                {
+                  "file": "material-cultural-fairs-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "Punajb Folk dances",
+              "name": "Punajb Folk Dances",
+              "parts": [
+                {
+                  "file": "material-punjab-folk-dance-pa.html",
+                  "n": 1
+                }
+              ],
+              "pages": 3
+            }
+          ]
         },
         {
           "id": "en",
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 2,
+          "chapters": [
+            {
+              "id": "cultural fairs ",
+              "name": "Cultural Fairs",
+              "parts": [
+                {
+                  "file": "material-cultural-fairs-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "punjab folk dance",
+              "name": "Punjab Folk Dance",
+              "parts": [
+                {
+                  "file": "material-punjab-folk-dance-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 3
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 4,
       "hidden": true
     },
     {
@@ -1427,6 +1567,6 @@
       "hidden": true
     }
   ],
-  "total": 20,
+  "total": 26,
   "generatedBy": "scripts/study_material.py"
 }

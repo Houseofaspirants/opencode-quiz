@@ -197,25 +197,30 @@ def build(drops, err, warn, info=None):
             name = str(drop.get("filename") or "")
             m = PAPER_RE.match(name)
             if m:
-                rows.setdefault(int(m.group(1)), {"year": m.group(1)})["paper"] = drop
+                # A list, not a slot: a year that ran in more than one shift
+                # keeps every paper, and the table names each one.
+                rows.setdefault(int(m.group(1)),
+                                {"year": m.group(1), "papers": []}
+                                )["papers"].append(drop)
                 continue
             m = KEY_RE.match(name)
             if m:
-                rows.setdefault(int(m.group(1)), {"year": m.group(1)})["key"] = drop
+                rows.setdefault(int(m.group(1)),
+                                {"year": m.group(1), "papers": []})["key"] = drop
                 continue
             others.append(drop)
 
         papers = []
         for year in sorted(rows, reverse=True):
             slot = rows[year]
-            paper, key = slot.get("paper"), slot.get("key")
-            if key is not None and paper is None:
+            sheets, key = slot.get("papers") or [], slot.get("key")
+            if key is not None and not sheets:
                 warn(f"content/{COLL}/{folder}/{key.get('filename')}: an answer "
                      f"key with no {year} question paper beside it - published "
                      f"as a row with the paper cell marked Not published")
             papers.append({
                 "year": slot["year"],
-                "paper": file_row(paper) if paper else None,
+                "papers": [file_row(d) for d in sheets],
                 "key": file_row(key) if key else None,
             })
 
@@ -243,7 +248,7 @@ def build(drops, err, warn, info=None):
             "others": [file_row(d) for d in
                        sorted(others, key=lambda d: str(d.get("filename") or ""))],
             "years": years,
-            "count": sum(1 for p in papers if p["paper"]),
+            "count": sum(len(p["papers"]) for p in papers),
             "keys": sum(1 for p in papers if p["key"]),
             "file": f"pyq/{slug}/index.html",
             "url": f"{DOMAIN}/pyq/{slug}",

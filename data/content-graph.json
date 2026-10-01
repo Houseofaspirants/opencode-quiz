@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 134,
-  "edges": 546,
+  "nodes": 161,
+  "edges": 713,
   "silos": 35,
-  "clusters": 42,
+  "clusters": 45,
   "pillars": 34
  },
  "nodes": [
@@ -45,6 +45,30 @@
    "type": "archive",
    "template": "",
    "title": "Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-culture-of-punjab.html",
+   "url": "/archive-category-culture-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "Culture of Punjab",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-history-of-punjab.html",
+   "url": "/archive-category-history-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "History of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -160,6 +184,54 @@
    "hub": ""
   },
   {
+   "id": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
+   "url": "/content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
+   "url": "/content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "url": "/content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+   "url": "/content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "url": "/content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "type": "page",
@@ -198,6 +270,78 @@
   {
    "id": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
    "url": "/content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
+   "url": "/content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
+   "url": "/content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
+   "url": "/content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "url": "/content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
+   "url": "/content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
+   "url": "/content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -844,6 +988,54 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-cultural-fairs-en",
+   "url": "/material-cultural-fairs-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-cultural-fairs-en.html",
+   "url": "/material-cultural-fairs-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Cultural Fairs - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-cultural-fairs-pa",
+   "url": "/material-cultural-fairs-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-cultural-fairs-pa.html",
+   "url": "/material-cultural-fairs-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Cultural Fairs - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-fundamentals-of-computer",
    "url": "/material-fundamentals-of-computer",
    "type": "document",
@@ -1300,6 +1492,102 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-punjab-folk-dance-en",
+   "url": "/material-punjab-folk-dance-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-punjab-folk-dance-en.html",
+   "url": "/material-punjab-folk-dance-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Punjab Folk Dance - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-punjab-folk-dance-pa",
+   "url": "/material-punjab-folk-dance-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-punjab-folk-dance-pa.html",
+   "url": "/material-punjab-folk-dance-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Punajb Folk Dances - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-sikhism-en",
+   "url": "/material-sikhism-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-sikhism-en.html",
+   "url": "/material-sikhism-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Sikhism - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-sikhism-pa",
+   "url": "/material-sikhism-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-sikhism-pa.html",
+   "url": "/material-sikhism-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Sikhism Pa - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "mock.html",
    "url": "/mock.html",
    "type": "page",
@@ -1408,6 +1696,30 @@
    "hub": ""
   },
   {
+   "id": "pyq-2022-question-paper2",
+   "url": "/pyq-2022-question-paper2",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pyq-2022-question-paper2.html",
+   "url": "/pyq-2022-question-paper2.html",
+   "type": "previous-year-questions",
+   "template": "previous-year-question",
+   "title": "2022 Question paper2",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq.html",
    "url": "/pyq.html",
    "type": "page",
@@ -1443,6 +1755,20 @@
    "subjects": [],
    "exams": [
     "Punjab Police Head Constable Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-police-sub-inspector/index.html",
+   "url": "/pyq/punjab-police-sub-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Police Sub-Inspector Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Police Sub-Inspector Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -1720,6 +2046,90 @@
    "weight": 1
   },
   {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "material-sikhism-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "material-sikhism-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-history.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -1883,6 +2293,18 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-culture-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-category-history-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-history.html",
    "rel": "contextual",
    "weight": 1
@@ -1908,6 +2330,18 @@
   {
    "from": "archives.html",
    "to": "material-articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-cultural-fairs-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2022,6 +2456,36 @@
   {
    "from": "archives.html",
    "to": "material-part-5-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-sikhism-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-sikhism-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2369,6 +2833,12 @@
   },
   {
    "from": "material-articles.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2423,13 +2893,187 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-cultural-fairs-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-number-series-en.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "material-cultural-fairs-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-en.html",
+   "to": "material-punjab-folk-dance-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "material-cultural-fairs-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-cultural-fairs-pa.html",
+   "to": "material-punjab-folk-dance-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -2454,6 +3098,12 @@
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-fundamentals-of-computer-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2537,6 +3187,12 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2610,6 +3266,12 @@
   {
    "from": "material-mobail-phon.html",
    "to": "material-mobail-phon",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2693,6 +3355,12 @@
   },
   {
    "from": "material-mobile-phone.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2766,6 +3434,12 @@
   {
    "from": "material-number-series-en.html",
    "to": "material-number-series-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-number-series-en.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -2849,6 +3523,12 @@
   },
   {
    "from": "material-part-1-en.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -2922,6 +3602,12 @@
   {
    "from": "material-part-1-english-en.html",
    "to": "material-part-1-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-english-en.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3011,6 +3697,12 @@
   },
   {
    "from": "material-part-1-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3089,6 +3781,12 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-1-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3162,6 +3860,12 @@
   {
    "from": "material-part-2-en.html",
    "to": "material-part-2-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-en.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3251,6 +3955,12 @@
   },
   {
    "from": "material-part-2-english-en.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-english-en.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3324,6 +4034,12 @@
   {
    "from": "material-part-2-pa.html",
    "to": "material-part-2-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-pa.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3413,6 +4129,12 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-2-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3492,6 +4214,12 @@
   {
    "from": "material-part-3-english.html",
    "to": "material-part-4-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-english.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3587,6 +4315,12 @@
   },
   {
    "from": "material-part-3-punjabi.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3672,6 +4406,12 @@
   {
    "from": "material-part-4-english-en.html",
    "to": "material-part-5-english-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-english-en.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3767,6 +4507,12 @@
   },
   {
    "from": "material-part-4-punjabi.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-4-punjabi.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3846,6 +4592,12 @@
   {
    "from": "material-part-5-english-en.html",
    "to": "material-part-5-english-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-english-en.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3935,6 +4687,12 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-5-punjabi-pa.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -3984,6 +4742,342 @@
   {
    "from": "material-part-5-punjabi-pa.html",
    "to": "material-part-2-english-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "material-punjab-folk-dance-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-en.html",
+   "to": "material-punjab-folk-dance-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "material-punjab-folk-dance-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "material-cultural-fairs-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjab-folk-dance-pa.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "material-sikhism-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-en.html",
+   "to": "material-sikhism-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-sikhism-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-sikhism-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -4103,7 +5197,7 @@
   },
   {
    "from": "previous-year-questions.html",
-   "to": "punjab-exams.html",
+   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4123,6 +5217,84 @@
    "from": "previous-year-questions.html",
    "to": "pyq/punjab-police-head-constable/index.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/punjab-police-sub-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "pyq-2022-question-paper2",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq-2022-question-paper2.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -4247,6 +5419,90 @@
   },
   {
    "from": "pyq/punjab-police-head-constable/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "exam-punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "pyq/punjab-police-sub-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
    "to": "study.html",
    "rel": "contextual",
    "weight": 1
@@ -4535,6 +5791,42 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
    "rel": "contextual",
    "weight": 1
@@ -4638,6 +5930,18 @@
   {
    "from": "study-material.html",
    "to": "material-articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-cultural-fairs-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-cultural-fairs-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4752,6 +6056,30 @@
   {
    "from": "study-material.html",
    "to": "material-part-5-punjabi-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-punjab-folk-dance-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-sikhism-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-sikhism-pa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5286,7 +6614,10 @@
    "hub": "subject-reasoning.html",
    "clusters": [
     "category-reasoning-number-series.html",
-    "topic-reasoning-number-series-part-1.html"
+    "topic-reasoning-number-series-part-1.html",
+    "topic-reasoning-number-series-part-2.html",
+    "topic-reasoning-number-series-part-3.html",
+    "topic-reasoning-number-series-part-4.html"
    ],
    "leaves": []
   }

@@ -130,6 +130,60 @@
       }
     },
     {
+      "id": "number-series-part-2",
+      "subject": "reasoning",
+      "category": "number-series",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "Number Series Part 2"
+      },
+      "variants": {
+        "en": "questions/reasoning/NUMBER SERIES/number-series-part-2.json"
+      }
+    },
+    {
+      "id": "number-series-part-3",
+      "subject": "reasoning",
+      "category": "number-series",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "Number Series Part 3"
+      },
+      "variants": {
+        "en": "questions/reasoning/NUMBER SERIES/number-series-part-3.json"
+      }
+    },
+    {
+      "id": "number-series-part-4",
+      "subject": "reasoning",
+      "category": "number-series",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "Number Series Part 4"
+      },
+      "variants": {
+        "en": "questions/reasoning/NUMBER SERIES/number-series-part-4.json"
+      }
+    },
+    {
       "id": "fundamentals-of-computers-part1",
       "subject": "computer",
       "category": "fundamentals-of-computer",

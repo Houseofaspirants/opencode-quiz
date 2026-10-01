@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-01T08:52:07.389Z",
+  "generatedAt": "2026-10-01T14:39:19.593Z",
   "stats": {
     "subjects": 7,
     "categories": 19,
-    "topics": 12,
-    "quizzes": 12,
-    "questions": 265,
+    "topics": 15,
+    "quizzes": 15,
+    "questions": 340,
     "studentsPracticed": 12500
   },
   "site": {
@@ -528,6 +528,84 @@
             "en": 25
           },
           "landing": "/quiz-reasoning-number-series-part-1"
+        },
+        {
+          "id": "number-series-part-2",
+          "name": "Number Series Part 2",
+          "description": "",
+          "file": "questions/reasoning/NUMBER SERIES/number-series-part-2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790310931640,
+          "category": "number-series",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/NUMBER SERIES/number-series-part-2.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Number Series Part 2"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-reasoning-number-series-part-2"
+        },
+        {
+          "id": "number-series-part-3",
+          "name": "Number Series Part 3",
+          "description": "",
+          "file": "questions/reasoning/NUMBER SERIES/number-series-part-3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790310953245,
+          "category": "number-series",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/NUMBER SERIES/number-series-part-3.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Number Series Part 3"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-reasoning-number-series-part-3"
+        },
+        {
+          "id": "number-series-part-4",
+          "name": "Number Series Part 4",
+          "description": "",
+          "file": "questions/reasoning/NUMBER SERIES/number-series-part-4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790311070443,
+          "category": "number-series",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/NUMBER SERIES/number-series-part-4.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Number Series Part 4"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-reasoning-number-series-part-4"
         }
       ],
       "categories": [
@@ -562,6 +640,84 @@
                 "en": 25
               },
               "landing": "/quiz-reasoning-number-series-part-1"
+            },
+            {
+              "id": "number-series-part-2",
+              "name": "Number Series Part 2",
+              "description": "",
+              "file": "questions/reasoning/NUMBER SERIES/number-series-part-2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790310931640,
+              "category": "number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/NUMBER SERIES/number-series-part-2.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Number Series Part 2"
+              },
+              "counts": {
+                "en": 25
+              },
+              "landing": "/quiz-reasoning-number-series-part-2"
+            },
+            {
+              "id": "number-series-part-3",
+              "name": "Number Series Part 3",
+              "description": "",
+              "file": "questions/reasoning/NUMBER SERIES/number-series-part-3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790310953245,
+              "category": "number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/NUMBER SERIES/number-series-part-3.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Number Series Part 3"
+              },
+              "counts": {
+                "en": 25
+              },
+              "landing": "/quiz-reasoning-number-series-part-3"
+            },
+            {
+              "id": "number-series-part-4",
+              "name": "Number Series Part 4",
+              "description": "",
+              "file": "questions/reasoning/NUMBER SERIES/number-series-part-4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790311070443,
+              "category": "number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/NUMBER SERIES/number-series-part-4.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Number Series Part 4"
+              },
+              "counts": {
+                "en": 25
+              },
+              "landing": "/quiz-reasoning-number-series-part-4"
             }
           ],
           "landing": "/category-reasoning-number-series"
