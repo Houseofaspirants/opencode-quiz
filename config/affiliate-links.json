@@ -1,8 +1,7 @@
 {
-  "$note": "THE ONE PLACE A LINK LIVES. Every outbound purchase or read link on the Books system is configured here and nowhere else - never inside content/books/*.json, never inside a template, never in assets/js. A book only ever records WHICH providers it is available on through this file; changing a URL, adding a provider or retiring one is a single edit here and a rebuild. scripts/books_engine.py resolves this file into (a) the provider buttons rendered on books.html and book-<id>.html and (b) the internal redirect stubs under go/book/<id>/<provider>.html, which is what the site links to - the raw URL never ships in a book page or in data/books.json.",
+  "$note": "THE ONE PLACE A LINK LIVES. Every outbound purchase or read link on the Books system is configured here and nowhere else - never inside content/books/*.json, never inside a template, never in assets/js. A book only ever records WHICH providers it is available on through this file; changing a URL, adding a provider or retiring one is a single edit here and a rebuild. scripts/books_engine.py resolves this file into the buttons rendered on books.html and book-<id>.html. A provider's href IS the destination: the button opens the store directly in a new tab - one click, no popup, no redirect stub in between. UTM parameters and amazonAssociateTag are merged onto that URL at build time, so the raw link appears only as the button's href and is never printed as visible text.",
   "settings": {
     "$note": "Applied by the engine to every external target it writes. `query` is merged into the target's query string (existing keys win, so a URL that already carries a parameter is never clobbered). `amazonAssociateTag`, when set, is written as Amazon's `tag` parameter - leave empty until the Associates account is live.",
-    "redirectBase": "/go/book",
     "rel": "sponsored noopener nofollow",
     "amazonAssociateTag": "",
     "query": {
@@ -14,14 +13,14 @@
   "providers": [
     {
       "id": "amazon",
-      "label": "Buy on Amazon",
+      "label": "View on Amazon",
       "shortLabel": "Amazon",
       "host": "amazon.in",
       "external": true
     },
     {
       "id": "flipkart",
-      "label": "Buy on Flipkart",
+      "label": "View on Flipkart",
       "shortLabel": "Flipkart",
       "host": "flipkart.com",
       "external": true

@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://houseofaspirants.in/current-affairs#webpage",
       "name": "Punjab Current Affairs | House of Aspirants",
       "url": "https://houseofaspirants.in/current-affairs",
@@ -49,7 +49,36 @@
       },
       "breadcrumb": {
         "@id": "https://houseofaspirants.in/current-affairs#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://houseofaspirants.in/current-affairs#list"
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://houseofaspirants.in/current-affairs#list",
+      "name": "House of Aspirants Current Affairs",
+      "numberOfItems": 3,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Current Affairs July",
+          "item": "https://houseofaspirants.in/ca-current-affairs-july"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Current Affairs August",
+          "item": "https://houseofaspirants.in/ca-current-affairs-august"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "August 2026 English",
+          "item": "https://houseofaspirants.in/ca-august-2026-english"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -92,17 +121,12 @@
     </section>
 <section class="section">
       <div class="container"><div class="section-head reveal"><div>
-            <span class="eyebrow">Publishing pipeline</span>
-            <h2>No current affairs article published yet</h2>
+            <span class="eyebrow">Published</span>
+            <h2>All published</h2>
+            <p>Current affairs is the section that moves fastest and is revised least honestly. Here every article states what happened, links the official source where one exists and points at the set that tests it.</p>
           </div></div>
-          <div class="empty-state">
-            <span class="es-icon" aria-hidden="true">✍️</span>
-            <h3>No current affairs article published yet</h3>
-            <p>The daily current affairs sets are already live on the subject page. Explained articles will be published here as they are written and reviewed.</p>
-            <p class="btn-row" style="justify-content:center">
-              <a class="btn btn-soft" href="subject.html?subject=current-affairs">Practise current affairs sets</a>
-            </p>
-          </div></div>
+          <div class="filter-bar" data-filter-bar><div class="filter-group" role="group" aria-label="Date"><span class="fg-label">Date</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="date" data-filter-value="2026-08">August 2026</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="date" data-filter-value="2026-10">October 2026</button></div><button type="button" class="filter-reset" data-filter-reset hidden>Clear filters</button><p class="filter-count" data-filter-count aria-live="polite"></p></div>
+          <div class="grid grid-3" data-filter-list><a class="card card-pad reveal" href="ca-current-affairs-july.html" data-f-date="2026-10"><span class="eyebrow">PDF download</span><h3>Current Affairs July</h3><p class="muted">Download Current Affairs July as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free to download, print and keep for offline revision.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="ca-current-affairs-august.html" data-f-date="2026-10"><span class="eyebrow">PDF download</span><h3>Current Affairs August</h3><p class="muted">Download Current Affairs August as a PDF from House of Aspirants. One click, no sign-up and no email wall. The page was generated from the file name.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="ca-august-2026-english.html" data-f-date="2026-08"><span class="eyebrow">PDF download</span><h3>August 2026 English</h3><p class="muted">Download August 2026 English as a PDF from House of Aspirants. One click, no sign-up and no email wall. Free to download, print and keep for offline revision.</p><p class="ilink">Read more →</p></a></div></div>
     </section>
     <section class="section" style="padding-top:0">
       <div class="container">

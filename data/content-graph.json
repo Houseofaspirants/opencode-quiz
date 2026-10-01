@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 178,
-  "edges": 799,
+  "nodes": 188,
+  "edges": 844,
   "silos": 35,
   "clusters": 45,
   "pillars": 34
@@ -182,6 +182,114 @@
    "exams": [],
    "tags": [],
    "hub": "book-recommendations.html"
+  },
+  {
+   "id": "ca-august-2026-english",
+   "url": "/ca-august-2026-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "ca-august-2026-english.html",
+   "url": "/ca-august-2026-english.html",
+   "type": "current-affairs",
+   "template": "current-affairs",
+   "title": "August 2026 English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "ca-current-affairs-august",
+   "url": "/ca-current-affairs-august",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "ca-current-affairs-august.html",
+   "url": "/ca-current-affairs-august.html",
+   "type": "current-affairs",
+   "template": "current-affairs",
+   "title": "Current Affairs August",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "ca-current-affairs-july",
+   "url": "/ca-current-affairs-july",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "ca-current-affairs-july.html",
+   "url": "/ca-current-affairs-july.html",
+   "type": "current-affairs",
+   "template": "current-affairs",
+   "title": "Current Affairs July",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "content/current-affairs/english/August%20/august-2026-english.pdf",
+   "url": "/content/current-affairs/english/August%20/august-2026-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/current-affairs/english/july%20/current-affairs-july.pdf",
+   "url": "/content/current-affairs/english/july%20/current-affairs-july.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
+   "url": "/content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
@@ -2124,6 +2232,18 @@
    "hub": ""
   },
   {
+   "id": "subject-gk.html",
+   "url": "/subject-gk.html",
+   "type": "subject-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-guides.html",
    "url": "/subject-guides.html",
    "type": "hub",
@@ -2583,6 +2703,24 @@
   },
   {
    "from": "archives.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -2900,8 +3038,260 @@
    "weight": 1
   },
   {
+   "from": "ca-august-2026-english.html",
+   "to": "ca-august-2026-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "content/current-affairs/english/August%20/august-2026-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-august-2026-english.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "ca-current-affairs-august",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "content/current-affairs/punjabi/August%20/current-affairs-august.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "ca-current-affairs-july",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "content/current-affairs/english/july%20/current-affairs-july.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
    "from": "current-affairs.html",
    "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "ca-august-2026-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "ca-current-affairs-august.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3093,13 +3483,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "content/study-material/polity/articles%20.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/polity/articles%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3195,13 +3585,13 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3279,13 +3669,13 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3363,13 +3753,13 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/computer/punjabi/fundamentals-of-computer/fundamentals-of-computer-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3447,13 +3837,13 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3531,13 +3921,13 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/computer/punjabi/mobile%20phones/%E0%A8%AE%E0%A9%8B%E0%A8%AC%E0%A8%BE%E0%A8%88%E0%A8%B2%20%E0%A8%AB%E0%A8%BC%E0%A9%8B%E0%A8%A8%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3615,13 +4005,13 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3699,13 +4089,13 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "content/study-material/reasoning/english%20/number%20series/number-series-en%20.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-number-series-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/reasoning/english%20/number%20series/number-series-en%20.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3783,13 +4173,13 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "content/study-material/reasoning/english%20/Analogy%20/part-1-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/reasoning/english%20/Analogy%20/part-1-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3867,13 +4257,13 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-1-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -3951,13 +4341,13 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "content/study-material/reasoning/punjabi/analogy%20/part-1-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/reasoning/punjabi/analogy%20/part-1-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4041,13 +4431,13 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-1-punjabi-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4125,13 +4515,13 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "content/study-material/reasoning/english%20/Analogy%20/part-2-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/reasoning/english%20/Analogy%20/part-2-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4209,13 +4599,13 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-2-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4299,13 +4689,13 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "content/study-material/reasoning/punjabi/analogy%20/part-2-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/reasoning/punjabi/analogy%20/part-2-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4383,13 +4773,13 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-2-punjabi-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4473,13 +4863,13 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-3-english.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4563,13 +4953,13 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%203%28punjabi%29.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4659,13 +5049,13 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-4-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4755,13 +5145,13 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part%204%20%28punjabi%29.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4851,13 +5241,13 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/english/arrival-of-europeans/part-5-english-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -4941,13 +5331,13 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history/punjabi/arrival-of-europeans/part-5-punjabi-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5031,13 +5421,13 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5115,13 +5505,13 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5199,13 +5589,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5283,13 +5673,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5367,13 +5757,13 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5451,13 +5841,13 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "current-affairs.html",
+   "to": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5697,13 +6087,13 @@
   },
   {
    "from": "pyq-2022-question-paper1.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pyq-2022-question-paper1.html",
-   "to": "current-affairs.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5769,13 +6159,13 @@
   },
   {
    "from": "pyq-2022-question-paper2-2.html",
-   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pyq-2022-question-paper2-2.html",
-   "to": "current-affairs.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -5841,13 +6231,13 @@
   },
   {
    "from": "pyq-2022-question-paper2.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
+   "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pyq-2022-question-paper2.html",
-   "to": "current-affairs.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
    "rel": "contextual",
    "weight": 1
   },

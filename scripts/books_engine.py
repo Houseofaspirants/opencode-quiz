@@ -9,15 +9,20 @@ The whole Books system, generated from two config files:
 
     content/books/*.json ─┐
                          ├─ scripts/books_engine.py ─┬─ book-<id>.html
-    config/affiliate-     │                           ├─ go/book/<id>/<provider>.html
-    links.json ───────────┘                           ├─ data/books.json        (shelf API)
-                                                     └─ data/books-manifest.json (SEO registry)
+    config/affiliate-     │                           ├─ data/books.json        (shelf API)
+    links.json ───────────┘                           └─ data/books-manifest.json (SEO registry)
 
 NO MANUAL REGISTRATION. A file dropped into content/books/ publishes itself: the
 detail page, the sitemap entry (through data/books-manifest.json, read by BOTH
-index builders), the search corpus, every filter facet, the related-content
+index builders), the search corpus, the subject grouping, the related-content
 modules and the JSON-LD all fall out of the same pass. Delete the file and the
-page, the sitemap entry and the redirect stubs are pruned on the next run.
+page and the sitemap entry are pruned on the next run.
+
+THE SHELF IS A RECOMMENDATION LIST, NOT A CATALOGUE. A card carries exactly
+four things - cover, title, author and one recommendation line - under a
+"View on Amazon" button. No price, no rating, no publisher, no difficulty, no
+"buy it if". Grouping is by subject, derived from each book's `group`, so a
+new subject appears the moment a book carries it.
 
 WHERE IT RUNS
     scripts/build_index.py imports and calls build() just before it assembles
@@ -27,6 +32,14 @@ WHERE IT RUNS
     (the Node twin Vercel runs) does not execute this engine - it only READS
     data/books-manifest.json - so both builders still emit byte-identical
     sitemap.xml while Python stays the single writer.
+
+LINKS
+    config/affiliate-links.json is still the only file a destination may live
+    in, and content/books/*.json may still never hold one (see FORBIDDEN_KEYS
+    below). The difference is where the button POINTS: a provider href is now
+    the store's own URL, written straight into the anchor so the reader lands
+    on Amazon in one click - no popup, no /go/ redirect stub in between.
+    UTM params and the Associates tag are merged onto that URL at build time.
 
 LAYERING
     Nothing is re-implemented here. esc/head/graph/webpage_node/breadcrumb_node
@@ -73,10 +86,8 @@ GO_DIR = ROOT / "go" / "book"
 
 HUB_FILE = "books.html"
 HUB_URL = f"{DOMAIN}/books"
-BRAND = "House of Aspirants"
 
 DIFFICULTY_ORDER = ["Beginner", "Intermediate", "Advanced"]
-RATING_BUCKETS = (4.0, 4.5)
 MAX_RELATED = 4
 
 # Optional, site-internal "read these too" seeds. Everything else in the
@@ -173,11 +184,39 @@ def image_size(path: Path):
 
 
 # ---------------------------------------------------------------- validation --
-REQUIRED_STR = ("id", "slug", "title", "author", "publisher", "subject",
-                "difficulty", "edition", "description", "bestFor", "buyIf",
-                "avoidIf", "howToUse", "keywords", "lastUpdated")
-REQUIRED_LIST = ("languages", "examTags", "pros", "cons", "topicsCovered")
+# What a book MUST carry. The shelf shows only cover, title, author, one
+# recommendation line and the CTA, so a new book is a short file; everything
+# the schema or the related-content ranker still wants but the reader never
+# sees lives in OPTIONAL_DEFAULTS and is filled by normalize() before any of
+# this module reads it. No reader guards for a missing key.
+REQUIRED_STR = ("id", "slug", "title", "author", "subject",
+                "recommendation", "keywords", "lastUpdated")
+REQUIRED_LIST = ()
 REQUIRED_TEXT = ("seoTitle", "seoDescription")
+
+# Optional fields and the value they fall back to. `list` defaults are copied,
+# so two books never share an array. Filled in normalize() after validation,
+# which is why an absent field is never a validation error for these.
+OPTIONAL_DEFAULTS = {
+    "publisher": "",
+    "difficulty": "",
+    "edition": "",
+    "bestFor": "",
+    "buyIf": "",
+    "avoidIf": "",
+    "howToUse": "",
+    "description": "",
+    "languages": [],
+    "examTags": [],
+    "pros": [],
+    "cons": [],
+    "topicsCovered": [],
+}
+
+# A recommendation is ONE line: two lines at a phone's card width is ~110
+# characters, and the shelf clamps to two lines anyway. Capping it here keeps
+# an editor from quietly turning the shelf back into a review.
+RECOMMENDATION_MAX = 140
 
 
 def validate(book: dict, where: str, subject_ids: set, seen: set,
@@ -254,6 +293,14 @@ def validate(book: dict, where: str, subject_ids: set, seen: set,
             r"20\d{2}-\d{2}-\d{2}", str(book.get("lastUpdated", ""))):
         problems.append(f"`lastUpdated` {book.get('lastUpdated')!r} is not YYYY-MM-DD")
 
+    # The shelf's whole message is this one line, so it stays one line.
+    rec = str(book.get("recommendation", ""))
+    if rec and len(rec) > RECOMMENDATION_MAX:
+        problems.append(f"`recommendation` is {len(rec)} chars - the shelf shows "
+                        f"one line of at most {RECOMMENDATION_MAX}")
+    if "group" in book and len(str(book["group"])) > 40:
+        problems.append("`group` must be a short subject name (max 40 chars)")
+
     # The affiliate-link quarantine: content may never hold a destination.
     # The related* arrays are the one exception, because they are site-internal
     # navigation (books.html, study-notes.html) - they are validated below.
@@ -304,6 +351,26 @@ def validate(book: dict, where: str, subject_ids: set, seen: set,
     return problems
 
 
+def normalize(book: dict) -> dict:
+    """Fill every optional field once, after validation passes.
+
+    Callers below then read book["publisher"], book["examTags"] and friends
+    without guarding: a four-field JSON file publishes the same way a
+    twenty-field one does. `description` falls back to `recommendation` (the
+    two serve different readers - schema and ranking see the first, the shelf
+    the second), and `group` falls back to the book's subject name so the
+    shelf groups correctly with no group written at all.
+    """
+    for key, default in OPTIONAL_DEFAULTS.items():
+        if key not in book:
+            book[key] = list(default) if isinstance(default, list) else default
+    if not str(book.get("description", "")).strip():
+        book["description"] = book.get("recommendation", "")
+    if not str(book.get("group", "")).strip():
+        book["group"] = label_for(SUBJECT_LABELS, str(book.get("subject", "")))
+    return book
+
+
 # -------------------------------------------------------------- affiliates --
 def load_affiliates() -> dict:
     if not AFFILIATE_FILE.exists():
@@ -320,7 +387,6 @@ def load_affiliates() -> dict:
         p.setdefault("host", "")
         p.setdefault("external", True)
     settings = data.get("settings") or {}
-    settings.setdefault("redirectBase", "/go/book")
     settings.setdefault("rel", "sponsored noopener nofollow")
     settings.setdefault("query", {})
     settings.setdefault("amazonAssociateTag", "")
@@ -359,7 +425,12 @@ def providers_for(book_id: str, aff: dict) -> list:
             "label": provider["label"],
             "shortLabel": provider["shortLabel"],
             "external": external,
-            "href": (f'go/book/{book_id}/{pid}' if external else target),
+            # One click: the destination IS the href, so the reader lands on
+            # the shop straight from the shelf. No popup, no /go/ stub in
+            # between. `with_tracking` has already merged the UTM params and
+            # the Associates tag onto it, and `target` is kept beside it for
+            # anything that wants the plain destination.
+            "href": target,
             "target": target,
             # the rel the shelf must put on an outbound anchor, read from the
             # config so no page or script ever hardcodes a link policy.
@@ -537,48 +608,49 @@ def bc_rank(seed, pool, limit=MAX_RELATED):
 
 
 # ------------------------------------------------------------ page fragments --
-def stars(rating) -> str:
-    r = float(rating or 0)
-    full = int(r)
-    half = (r - full) >= 0.5
-    rest = max(0, 5 - full - (1 if half else 0))
-    return "★" * full + ("★" if half else "") + "☆" * rest
-
-
 def faq_for(book: dict) -> list:
-    """Four questions the page already answers, verbatim. No invented copy."""
+    """Questions the page actually answers, answered verbatim from the file.
+
+    The old set leaned on buyIf / avoidIf / howToUse - the review scaffolding
+    this shelf no longer shows. Every answer here comes from a field the
+    reader can still see on the page, so the FAQ copy and the JSON-LD built
+    from the same list can never disagree.
+    """
     title = book["title"]
-    return [
-        {"q": f"Who is {title} for?",
-         "a": book["bestFor"]},
-        {"q": f"When should I buy {title}?",
-         "a": book["buyIf"]},
-        {"q": f"When should I skip {title}?",
-         "a": book["avoidIf"]},
-        {"q": f"How should I use {title}?",
-         "a": book["howToUse"]},
+    out = [
+        {"q": f"Who is {title} for?", "a": book["recommendation"]},
+        {"q": f"What does {title} cover?", "a": book["description"]},
     ]
+    exams = [label_for(EXAM_LABELS, e) for e in book["examTags"]]
+    if exams:
+        out.append({"q": f"Which exams is {title} useful for?",
+                    "a": ", ".join(exams) + "."})
+    return out
 
 
-def provider_buttons(book: dict, providers: list, subject: str) -> str:
+def provider_buttons(book: dict, providers: list) -> str:
+    """ONE CTA, and it is the page's reason to exist.
+
+    Label and destination both come from config/affiliate-links.json, so no
+    page and no script owns either: changing "View on Amazon" to something
+    else is a config edit. The button points straight at the store and opens
+    in a new tab - no popup, no intermediate page. The old "Free <subject>
+    sets" shortcut is gone: it was a second CTA competing with this one.
+    """
     out = []
     for p in providers:
-        rel = f' rel="{esc(BOOK["settings"]["rel"])}"' if p["external"] else ' rel="noopener"'
+        rel = (f' rel="{esc(BOOK["settings"]["rel"])}"' if p["external"]
+               else ' rel="noopener"')
         attrs = (f' data-affiliate data-book="{esc(book["id"])}" '
                  f'data-provider="{esc(p["id"])}"') if p["external"] else ""
         cls = "btn btn-primary" if p["external"] else "btn btn-soft"
-        out.append(f'<a class="{cls}" href="{esc(p["href"])}"{attrs}{rel}>'
-                   f'{esc(p["label"])} →</a>')
+        tab = ' target="_blank"' if p["external"] else ""
+        out.append(f'<a class="{cls}" href="{esc(p["href"])}"{attrs}{rel}{tab}>'
+                   f'{esc(p["label"])}</a>')
     if not out:
         out.append('<span class="btn btn-soft" aria-disabled="true">'
                    'Currently unavailable</span>')
-    out.append(f'<a class="btn btn-soft" href="subject.html?subject={esc(subject)}">'
-               f'Free {esc(label_for(SUBJECT_LABELS, subject))} sets</a>')
     return "".join(out)
-
-
-def toc_li(anchor: str, label: str) -> str:
-    return f'<li><a href="#{anchor}">{esc(label)}</a></li>'
 
 
 def section_head(eyebrow: str, title: str, blurb: str) -> str:
@@ -645,48 +717,9 @@ def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
         cover = ('<div class="book-cover book-cover-lg" aria-hidden="true">'
                  f'<span>{esc(title[:2])}</span></div>')
 
-    badges = [
-        f'<span class="badge badge-muted" aria-label="Rated {esc(book["rating"])} '
-        f'out of 5"><span aria-hidden="true">{stars(book["rating"])}</span> '
-        f'{esc(book["rating"])}</span>',
-        f'<span class="badge badge-muted">{esc(book["difficulty"])}</span>',
-        f'<span class="badge badge-muted">{esc(book["edition"])}</span>',
-    ]
-    badges += [f'<span class="badge badge-muted">{esc(lang)}</span>'
-               for lang in book["languages"]]
-    badges += [f'<span class="badge badge-muted">{esc(label_for(EXAM_LABELS, e))}</span>'
-               for e in book["examTags"][:6]]
-    if book.get("featured"):
-        badges.insert(0, '<span class="badge badge-warn">Featured</span>')
-
-    facts = [
-        ("Author", book["author"]),
-        ("Publisher", book["publisher"]),
-        ("Edition", book["edition"]),
-        ("Language", " · ".join(book["languages"])),
-        ("Subject", label_for(SUBJECT_LABELS, book["subject"])),
-        ("Difficulty", book["difficulty"]),
-        ("Rating", f'{book["rating"]} / 5'),
-        ("Updated", book["lastUpdated"]),
-    ]
-    fact_html = "".join(
-        f'<div class="doc-fact"><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>'
-        for k, v in facts)
-
-    toc = "".join(toc_li(a, l) for a, l in (
-        ("specifications", "Specifications"),
-        ("best-for", "Who it is for"),
-        ("buy-if", "Buy it if"),
-        ("avoid-if", "Avoid it if"),
-        ("how-to-use", "How to use it"),
-        ("pros-and-cons", "Pros and cons"),
-        ("topics-covered", "Topics covered"),
-        ("book-questions", "Book questions"),
-    ))
-
-    pros = "".join(f"<li>{esc(v)}</li>" for v in book["pros"])
-    cons = "".join(f"<li>{esc(v)}</li>" for v in book["cons"])
-    topics = "".join(f"<li>{esc(v)}</li>" for v in book["topicsCovered"])
+    # Everything this page used to carry besides the cover - badges, the
+    # specifications table, "Buy it if", "Skip it if", pros and cons - is
+    # gone. A book page here recommends; it does not review.
     faq_html = "".join(
         f'<div class="faq-item"><h3>{esc(item["q"])}</h3><p>{esc(item["a"])}</p></div>'
         for item in faq)
@@ -697,57 +730,42 @@ def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span><a href="books.html">Books</a><span>/</span><span>{esc(title)}</span>
         </nav>
-        <span class="eyebrow">{esc(label_for(SUBJECT_LABELS, book["subject"]))} · {esc(book["difficulty"])}</span>
+        <span class="eyebrow">{esc(book["group"])}</span>
         <h1>{esc(title)}</h1>
         {f'<p class="muted">{esc(book["subtitle"])}</p>' if book.get("subtitle") else ''}
-        <div class="doc-badges">{''.join(badges)}</div>
-        <div class="answer-box">
-          <span class="ab-label">Quick answer</span>
-          <p>{esc(book["description"])}</p>
+        <div class="book-pick">
+{cover}
+          <div class="book-pick-body">
+            <p class="book-pick-author">{esc(book["author"])}</p>
+            <div class="answer-box">
+              <span class="ab-label">Why this one</span>
+              <p>{esc(book["recommendation"])}</p>
+            </div>
+            <div class="doc-actions">{provider_buttons(book, providers)}</div>
+          </div>
         </div>
-        <div class="doc-actions">{provider_buttons(book, providers, book["subject"])}</div>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
-      <div class="container doc-layout">
-        <aside class="doc-toc" aria-label="On this page"><h2>On this page</h2><ol>{toc}</ol><p class="toc-meta">Honest review · no paid placement</p></aside>
-        <article class="doc-body prose">
-{cover}
-<h2 id="specifications">Specifications</h2>
-<dl class="doc-facts">{fact_html}</dl>
-<h2 id="best-for">Who it is for</h2>
-<p>{esc(book["bestFor"])}</p>
-<h2 id="buy-if">Buy it if</h2>
-<p>{esc(book["buyIf"])}</p>
-<h2 id="avoid-if">Avoid it if</h2>
-<p>{esc(book["avoidIf"])}</p>
-<h2 id="how-to-use">How to use it</h2>
-<p>{esc(book["howToUse"])}</p>
-<h2 id="pros-and-cons">Pros and cons</h2>
-<h3>Pros</h3>
-<ul>{pros}</ul>
-<h3>Cons</h3>
-<ul>{cons}</ul>
-<h2 id="topics-covered">Topics covered</h2>
-<ul>{topics}</ul>
-<h2 id="book-questions">Book questions</h2>
-<div class="faq-list">{faq_html}</div>
-        </article>
+      <div class="container" style="max-width:860px">
+        {section_head("Book questions", "What this book is for",
+                      "Answered from the same facts the shelf shows, nothing more.")}
+        <div class="faq-list">{faq_html}</div>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
       <div class="container">
         {section_head("Recommended", "Learn it, then prove it",
-                      "Matched on subject, exam tags, difficulty and topics - "
-                      "the same facets this page is filed under.")}
+                      "The free material this book is meant to work beside, "
+                      "not instead of.")}
         {rec_group("Related notes", related["notes"], "Read →")}
         {rec_group("Related MCQs", related["mcqs"], "Attempt →")}
         {rec_group("Practice tests", related["practice"], "Start →")}
         {rec_group("Previous year questions", related["pyq"], "Open →")}
         {rec_group("Current affairs", related["currentAffairs"], "Read →")}
-        {rec_group("Related books", related["books"], "View book →")}
+        {rec_group("Related books", related["books"], "Open →")}
       </div>
     </section>
 {keep_going(book)}
@@ -775,13 +793,23 @@ def book_nodes(book: dict, url: str) -> list:
         "name": book["title"],
         "url": url,
         "description": book["description"],
-        "inLanguage": [str(lang) for lang in book["languages"]],
         "author": {"@type": "Person", "name": book["author"]},
-        "publisher": {"@type": "Organization", "name": book["publisher"]},
-        "bookEdition": book["edition"],
         "genre": label_for(SUBJECT_LABELS, book["subject"]),
-        "about": [{"@type": "Thing", "name": t} for t in book["topicsCovered"]],
     }
+    # Optional schema fields, added only when the file actually carries them.
+    # A short book JSON omits publisher, edition and topic list entirely -
+    # emitting them as empty nodes would be markup rich results drop, not
+    # markup rich results reward.
+    if book["languages"]:
+        book_node["inLanguage"] = [str(lang) for lang in book["languages"]]
+    if book["publisher"]:
+        book_node["publisher"] = {"@type": "Organization",
+                                  "name": book["publisher"]}
+    if book["edition"]:
+        book_node["bookEdition"] = book["edition"]
+    if book["topicsCovered"]:
+        book_node["about"] = [{"@type": "Thing", "name": t}
+                              for t in book["topicsCovered"]]
     if book.get("cover"):
         size = image_size(ROOT / book["cover"]) or (600, 900)
         book_node["image"] = {"@type": "ImageObject",
@@ -807,54 +835,9 @@ def book_nodes(book: dict, url: str) -> list:
 
 
 # ----------------------------------------------------------------- redirects --
-def go_stub(book_id: str, provider: dict, label: str) -> str:
-    """One static hop: count it, record it, hand the reader over.
-
-    The GA4 `affiliate_click` event is fired by core.js at click time on the
-    page where gtag.js is already live - a redirect stub has no analytics
-    loaded and must not wait for one. This file only owns the durable parts:
-    the per-device click ledger and the redirect itself, so a no-JS reader
-    still lands on the shop through <noscript>.
-    """
-    target = esc(provider["target"])
-    raw = json.dumps(provider["target"], ensure_ascii=False)
-    return f"""<!DOCTYPE html>
-<!-- {MARKER} -->
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex, nofollow, noarchive">
-  <title>Opening {esc(label)} - {BRAND}</title>
-  <link rel="icon" href="../../../assets/img/favicon-32.png" type="image/png" sizes="32x32">
-  <noscript><meta http-equiv="refresh" content="0;url={target}"></noscript>
-</head>
-<body>
-  <p>Opening {esc(label)}… <a href="{target}" rel="sponsored noopener nofollow">Continue</a></p>
-  <script>
-  (function () {{
-    var target = {raw}, book = {json.dumps(book_id)}, provider = {json.dumps(provider["id"])};
-    try {{
-      var key = "hoa:affiliate:clicks";
-      var ledger = JSON.parse(localStorage.getItem(key) || "{{}}");
-      var slot = ledger[book + "/" + provider] || {{ count: 0 }};
-      slot.count = (slot.count | 0) + 1;
-      slot.last = new Date().toISOString();
-      ledger[book + "/" + provider] = slot;
-      localStorage.setItem(key, JSON.stringify(ledger));
-      localStorage.setItem("hoa:affiliate:last", JSON.stringify({{
-        book: book, provider: provider, timestamp: slot.last,
-        referrer: document.referrer, path: location.pathname,
-        device: (window.matchMedia && matchMedia("(pointer:coarse)").matches) ? "mobile" : "desktop",
-        userAgent: navigator.userAgent, language: navigator.language
-      }}));
-    }} catch (e) {{}}
-    location.replace(target);
-  }})();
-  </script>
-</body>
-</html>
-"""
+# There are none any more. A provider href is the store's own URL (see
+# providers_for), so a reader reaches Amazon in one click with no /go/ stub in
+# between; the prune pass in build() removes stubs older builds published.
 
 
 # --------------------------------------------------------------------- build --
@@ -891,84 +874,35 @@ def load_books(subject_ids: set, reserved: set, affiliate_ids: set) -> list:
     return loaded
 
 
-# The filter dimensions of the shelf, declared once. The VALUES in each
-# dimension are always derived from the books that exist (see facets()), so
-# nothing about the shelf is hardcoded in a page or in a script - a new exam,
-# subject or publisher simply appears when a book carries it.
+# The shelf has ONE dimension: the subject a book belongs to. `group` is the
+# display name each book carries ("Polity", "Punjab GK", ...) and the rows are
+# always derived from the books that exist (see facets()), so a new subject
+# appears the moment a book does - no chip list to maintain, nothing hardcoded
+# in a page or in a script.
 FACET_SPEC = (
-    ("exam", "Exam", "examTags", "any"),
-    ("subject", "Subject", "subject", "is"),
-    ("publisher", "Publisher", "publisher", "is"),
-    ("author", "Author", "author", "is"),
-    ("language", "Language", "languages", "any"),
-    ("difficulty", "Difficulty", "difficulty", "is"),
-    ("featured", "Featured", "featured", "flag"),
-    ("rating", "Rating", "rating", "min"),
+    ("group", "Subject", "group", "is"),
 )
 
 
 def facets(books: list) -> dict:
-    """Every filter dimension, derived from the books that exist.
+    """The subject groups, derived from the books that exist.
 
-    `match` tells the shelf how a chip applies to a record (`any`: the value is
-    in the list, `is`: the field equals it, `flag`: the field is truthy, `min`:
-    the number is at least it), so assets/js/books.js stays generic and never
-    has to know what a facet means.
+    Exactly the shape every former facet had - a label, how a chip applies to
+    a record, and the rows that actually exist - which is what
+    scripts/seo_check.py validates and what the shelf renders. There is simply
+    only one of them now: exam, publisher, author, language, difficulty, the
+    featured flag and the rating buckets were all filters this page dropped.
     """
-    def tally(key, order=None):
-        counts = {}
-        for book in books:
-            values = book.get(key) or []
-            if isinstance(values, str):
-                values = [values]
-            for value in values:
-                value = str(value)
-                counts[value] = counts.get(value, 0) + 1
-        rows = [{"id": v, "label": label_for(_labels_for(key), v), "count": c}
-                for v, c in counts.items()]
-        if order:
-            rows.sort(key=lambda r: order.index(r["id"]) if r["id"] in order else 99)
-        else:
-            rows.sort(key=lambda r: (-r["count"], r["label"].lower()))
-        return rows
-
-    def scalar(key, order=None):
-        counts = {}
-        for book in books:
-            value = str(book.get(key) or "")
-            if value:
-                counts[value] = counts.get(value, 0) + 1
-        rows = [{"id": v, "label": v, "count": c} for v, c in counts.items()]
-        if order:
-            rows.sort(key=lambda r: order.index(r["id"]) if r["id"] in order else 99)
-        else:
-            rows.sort(key=lambda r: (-r["count"], r["label"].lower()))
-        return rows
-
-    derived = {
-        "exam": lambda: tally("examTags"),
-        "subject": lambda: tally("subject", order=list(SUBJECT_LABELS)),
-        "publisher": lambda: scalar("publisher"),
-        "author": lambda: scalar("author"),
-        "language": lambda: tally("languages"),
-        "difficulty": lambda: scalar("difficulty", order=DIFFICULTY_ORDER),
-        "featured": lambda: [{"id": "featured", "label": "Featured",
-                              "count": sum(1 for x in books if x.get("featured"))}],
-        "rating": lambda: [{"id": f"{b:g}", "label": f"{b:g}\u2605 and up",
-                            "count": sum(1 for x in books
-                                         if float(x.get("rating") or 0) >= b)}
-                           for b in RATING_BUCKETS
-                           if any(float(x.get("rating") or 0) >= b for x in books)],
-    }
-    out = {}
-    for key, label, field, match in FACET_SPEC:
-        out[key] = {"key": key, "label": label, "field": field, "match": match,
-                    "rows": derived[key]()}
-    return out
-
-
-def _labels_for(key):
-    return {"subject": SUBJECT_LABELS, "examTags": EXAM_LABELS}.get(key, {})
+    counts = {}
+    for book in books:
+        value = str(book.get("group") or "")
+        if value:
+            counts[value] = counts.get(value, 0) + 1
+    rows = [{"id": v, "label": v, "count": c} for v, c in counts.items()]
+    rows.sort(key=lambda r: (-r["count"], r["label"].lower()))
+    return {key: {"key": key, "label": label, "field": field, "match": match,
+                  "rows": rows}
+            for key, label, field, match in FACET_SPEC}
 
 
 def haystack(book: dict) -> str:
@@ -976,7 +910,9 @@ def haystack(book: dict) -> str:
     matches against. Built here so the browser never has to know which fields
     matter - adding a searchable field is an engine change, not a JS change."""
     parts = [book.get("id", ""), book.get("title", ""), book.get("subtitle", ""),
-             book.get("author", ""), book.get("publisher", ""), book.get("edition", ""),
+             book.get("author", ""), book.get("group", ""),
+             book.get("recommendation", ""),
+             book.get("publisher", ""), book.get("edition", ""),
              book.get("difficulty", ""), book.get("description", ""),
              book.get("keywords", ""), book.get("bestFor", ""),
              book.get("subject", ""), label_for(SUBJECT_LABELS, book["subject"])]
@@ -993,6 +929,10 @@ def shelf_record(book: dict, providers: list) -> dict:
         "title": book["title"],
         "subtitle": book.get("subtitle", ""),
         "author": book["author"],
+        # The shelf card's two new fields: the subject it files itself under
+        # and the one line the card prints under the author.
+        "group": book["group"],
+        "recommendation": book["recommendation"],
         "publisher": book["publisher"],
         "cover": book.get("cover", ""),
         "coverW": size[0] if size else 0,
@@ -1034,7 +974,10 @@ def build() -> dict:
                 if p.name != "README.md"} if (
                     ROOT / "content" / "book-recommendations").is_dir() else set()
 
-    books = load_books(subject_ids, reserved, affiliate_ids)
+    # Optional fields are filled before anything downstream reads them, so a
+    # short JSON file (id, title, author, group, recommendation, cover) builds
+    # the same page a full one does.
+    books = [normalize(b) for b in load_books(subject_ids, reserved, affiliate_ids)]
     index = read_json(ROOT / "data" / "index.json", {}) or {}
     pool = manifest_pool()
 
@@ -1080,13 +1023,11 @@ def build() -> dict:
                                           book_nodes(book, url)))
         produced.add(file)
 
-        for provider in providers:
-            if not provider["external"]:
-                continue
-            stub = f'go/book/{bid}/{provider["id"]}.html'
-            write_text(ROOT / stub, go_stub(bid, provider, provider["label"]))
-            produced.add(stub)
-            redirects.append({"book": bid, "provider": provider["id"], "file": stub})
+        # No redirect stub is written: every provider href already IS the
+        # destination (see providers_for), so there is nothing to hop through.
+        # `redirects` stays in the manifest as an empty list for shape
+        # compatibility, and the prune pass below deletes any /go/ stub an
+        # earlier build left behind.
 
         if book.get("cover"):
             cover_count += 1

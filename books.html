@@ -110,13 +110,15 @@
         </nav>
         <span class="eyebrow">Study Material</span>
         <h1>Books Worth Buying</h1>
-        <p class="muted">One book per subject, judged honestly: what it covers, who it is for, and who should spend the money elsewhere.</p>
+        <p class="muted">One book per subject. See the cover, the author and
+           why it is the pick, then go straight to Amazon.</p>
         <div class="answer-box">
           <span class="ab-label">Quick answer</span>
           <p>
-            You need one reference book for the subject you are weakest in and nothing
-            else. Start with the free notes and Expected MCQs here, find the chapters
-            that cost you marks, and buy the book that explains exactly those chapters.
+            One reference book for the subject you are weakest in is enough.
+            Start with the free notes and Expected MCQs here, find the chapters
+            that cost you marks, then get the book that explains exactly those
+            chapters.
           </p>
         </div>
       </div>
@@ -127,9 +129,8 @@
         <div class="section-head">
           <div>
             <span class="eyebrow">The Shelf</span>
-            <h2>Browse by exam, subject or keyword</h2>
-            <p>Every entry states its coverage plainly. Filter down to your exam, then
-               read the "skip it if" line before you add anything to your cart.
+            <h2>Browse by subject</h2>
+            <p>Every book below is filed under the subject it is for.
                <a class="ilink" href="book-recommendations.html">How a book earns a place on this shelf →</a></p>
           </div>
           <div class="search-box" style="min-width:min(300px,100%)">
@@ -139,27 +140,19 @@
           </div>
         </div>
 
-        <!-- Filter bar: the chips are generated from data/books.json, so the
-             dimensions and every value in them come from the books that
-             exist. Row 1 picks WHAT to filter by, row 2 shows the values of
-             that dimension. Nothing here is hardcoded. -->
-        <div class="filter-bar" id="bookFilters">
-          <div class="fg-row">
-            <span class="fg-label">Filter by</span>
-            <div class="filter-group" role="group" aria-label="Choose what to filter books by" data-facets></div>
-            <span class="filter-count" data-filter-count></span>
-          </div>
-          <div class="fg-row">
-            <span class="fg-label" data-facet-name></span>
-            <div class="filter-group" role="group" aria-label="Filter books" data-values></div>
-            <button type="button" class="filter-reset" data-filter-reset hidden>Clear filter</button>
-          </div>
-        </div>
+        <!-- Subject chips, rendered from data/books.json by books.js. The
+             rows and their order are derived from the books that exist at
+             build time, so a new subject appears with the book that carries
+             it - there is no chip list to maintain here. -->
+        <div class="group-chips" id="bookGroups" role="group"
+             aria-label="Browse books by subject"></div>
 
-        <div class="grid grid-3" id="bookGrid">
-          <div class="skeleton" style="height:260px"></div>
-          <div class="skeleton" style="height:260px"></div>
-          <div class="skeleton" style="height:260px"></div>
+        <div id="bookShelf">
+          <div class="grid grid-3" id="bookGrid">
+            <div class="skeleton" style="height:260px"></div>
+            <div class="skeleton" style="height:260px"></div>
+            <div class="skeleton" style="height:260px"></div>
+          </div>
         </div>
 
         <div class="banner-telegram reveal" style="margin-top:34px" data-tg-rotator>
