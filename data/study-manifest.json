@@ -171,26 +171,19 @@
           "count": 2,
           "chapters": [
             {
-              "id": "part-1-pa",
-              "name": "Part 1: Pa",
+              "id": "analogy ",
+              "name": "Analogy",
               "parts": [
                 {
                   "file": "material-part-1-pa.html",
                   "n": 1
-                }
-              ],
-              "pages": 19
-            },
-            {
-              "id": "part-2-pa",
-              "name": "Part 2: Pa",
-              "parts": [
+                },
                 {
                   "file": "material-part-2-pa.html",
                   "n": 2
                 }
               ],
-              "pages": 14
+              "pages": 33
             }
           ]
         },
@@ -202,42 +195,35 @@
           "count": 3,
           "chapters": [
             {
-              "id": "number-series-en",
-              "name": "Number Series En",
-              "parts": [
-                {
-                  "file": "material-number-series-en.html",
-                  "n": 3
-                }
-              ],
-              "pages": 40
-            },
-            {
-              "id": "part-1-en",
-              "name": "Part 1: En",
+              "id": "Analogy ",
+              "name": "Analogy",
               "parts": [
                 {
                   "file": "material-part-1-en.html",
                   "n": 1
-                }
-              ],
-              "pages": 21
-            },
-            {
-              "id": "part-2-en",
-              "name": "Part 2: En",
-              "parts": [
+                },
                 {
                   "file": "material-part-2-en.html",
                   "n": 2
                 }
               ],
-              "pages": 10
+              "pages": 31
+            },
+            {
+              "id": "number series",
+              "name": "Number Series",
+              "parts": [
+                {
+                  "file": "material-number-series-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 40
             }
           ]
         }
       ],
-      "chapters": 5
+      "chapters": 3
     },
     {
       "id": "quant",
