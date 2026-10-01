@@ -2,7 +2,7 @@
   "version": 1,
   "domain": "https://houseofaspirants.in",
   "total": 3,
-  "papers": 5,
+  "papers": 6,
   "keys": 0,
   "exams": [
     {
@@ -77,11 +77,28 @@
             }
           ],
           "key": null
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2021-question-paper.pdf",
+              "filename": "2021-question-paper.pdf",
+              "title": "2021 Question Paper",
+              "size": 35195764,
+              "sizeLabel": "33.6 MB",
+              "pages": 896,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
+          "key": null
         }
       ],
       "others": [],
-      "years": 1,
-      "count": 1,
+      "years": 2,
+      "count": 2,
       "keys": 0,
       "file": "pyq/punjab-police-head-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-head-constable",
