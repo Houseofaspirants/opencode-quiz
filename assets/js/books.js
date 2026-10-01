@@ -72,8 +72,12 @@
   function media(b) {
     const title = String(b.title || "");
     if (!b.cover) {
-      return `<div class="book-cover" aria-hidden="true">`
-           + `<span>${esc(title.slice(0, 2))}</span></div>`;
+      // No image yet: a typographic cover (title + author) in the same box,
+      // so the card still reads as a book and a real cover drops in later
+      // with no reflow.
+      return `<div class="book-cover book-cover-text" aria-hidden="true">`
+           + `<span class="bct-title">${esc(title)}</span>`
+           + `<span class="bct-author">${esc(b.author)}</span></div>`;
     }
     const dims = b.coverW && b.coverH
       ? ` width="${Number(b.coverW)}" height="${Number(b.coverH)}"` : "";
@@ -88,6 +92,7 @@
     <article class="card book-card">
       <div class="book-card-media">${media(b)}</div>
       <div class="book-card-body">
+        ${b.group ? `<span class="book-card-group">${esc(b.group)}</span>` : ""}
         <h3><a href="book-${esc(b.id)}.html">${esc(title)}</a></h3>
         <p class="book-card-author">${esc(b.author)}</p>
         ${rec ? `<p class="book-card-rec">${esc(rec)}</p>` : ""}
@@ -134,26 +139,22 @@
       (b) => matchesSearch(b) && (!active || b.group === active));
     if (!visible.length) {
       const what = query();
-      grid.className = "grid grid-3";
+      grid.className = "book-grid";
       grid.innerHTML = what
         ? emptyState(`No book matches “${esc(what)}”`)
         : emptyState("Nothing filed under this subject yet");
       return;
     }
 
-    // One <section> per subject, in the engine's order: subjects with no
-    // matching book are skipped rather than shown as an empty heading.
+    // One compact grid, in the engine's subject order. Each card carries
+    // its subject as a small label, so a subject with a single book no
+    // longer gets a full-width row of its own.
     const order = rows.map((r) => r.id).concat(
       [...new Set(visible.map((b) => b.group))].filter((g) => !rows.some((r) => r.id === g)));
-    grid.className = "";
-    grid.innerHTML = order.map((group) => {
-      const inGroup = visible.filter((b) => b.group === group);
-      if (!inGroup.length) return "";
-      return `<section class="book-group">
-          <h2 class="book-group-title">${esc(group)}</h2>
-          <div class="grid grid-3">${inGroup.map(card).join("")}</div>
-        </section>`;
-    }).join("");
+    const rank = (g) => { const i = order.indexOf(g); return i === -1 ? order.length : i; };
+    const sorted = visible.slice().sort((x, y) => rank(x.group) - rank(y.group));
+    grid.className = "book-grid";
+    grid.innerHTML = sorted.map(card).join("");
   }
 
   if (groupsEl) {

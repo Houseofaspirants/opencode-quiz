@@ -2753,6 +2753,39 @@ a.chain-step:hover { border-color: var(--brand); color: var(--brand); }
   padding-bottom: 8px; border-bottom: 1px solid var(--border);
 }
 
+/* The shelf grid: as many ~200px columns as fit (two on a phone, four to
+   five on a desktop), so a handful of books never stretches into giant
+   single cards. */
+.book-grid {
+  display: grid; gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+@media (min-width: 640px) {
+  .book-grid { gap: 20px; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+}
+.book-grid .book-card-body { padding: 12px 12px 14px; }
+.book-grid .book-card h3 { font-size: .98rem; }
+.book-grid .book-card-rec {
+  flex: 0 0 auto; margin-bottom: 12px; font-size: .86rem; -webkit-line-clamp: 3;
+}
+.book-grid .book-cta {
+  margin-top: auto; padding: 10px 8px; font-size: .88rem; white-space: nowrap;
+}
+/* A text-only placeholder does not need a full 2:3 cover's height. */
+.book-grid .book-card-media:has(.book-cover-text) { aspect-ratio: 4 / 5; }
+.book-card-group {
+  display: block; margin-bottom: 4px;
+  font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--brand);
+}
+/* Typographic cover used until a real image is added. */
+.book-card-media .book-cover-text {
+  flex-direction: column; align-items: flex-start; justify-content: flex-end;
+  gap: 8px; padding: 18px 16px 18px 20px; text-align: left; font-size: 1rem;
+}
+.bct-title { font-size: 1.05rem; line-height: 1.25; font-weight: 800; }
+.bct-author { font-size: .75rem; font-weight: 600; opacity: .85; letter-spacing: 0; }
+
 /* The initials fallback, filling the card's cover box: it reads as a cover
    placeholder rather than an icon, and an image dropped into
    assets/books/covers/ occupies exactly the same box - no reflow. */
