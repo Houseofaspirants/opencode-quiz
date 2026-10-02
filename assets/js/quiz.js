@@ -288,7 +288,12 @@
         }
       }
     }
-    const perQ = Number(meta.questionSeconds) || Number(site.questionSeconds) || 30;
+    // Per-question time: the file's own value wins, then the subject's
+    // (site.json "subjectQuestionSeconds" - 60 s for reasoning and quant,
+    // where every question needs working), then the site-wide default.
+    const perQ = Number(meta.questionSeconds)
+      || Number((site.subjectQuestionSeconds || {})[subject.id])
+      || Number(site.questionSeconds) || 30;
     // Categorized topics carry their category id on the record (set by the
     // build). The category is read from the MANIFEST, never from the URL, so
     // session keys and canonicals stay stable with or without &category=.

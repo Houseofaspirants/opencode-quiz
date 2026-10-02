@@ -73,10 +73,10 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 47 | `/quiz-gk-sikhism-part2-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 2 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 48 | `/quiz-gk-sikhism-part3-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 3 Quiz - Free MCQs (47) | 151 | Sikhism (Sikh Dharam) - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 49 | `/quiz-gk-sikhism-part4-20-mcqs` | quiz | Sikhism (Sikh Dharam) - Part 4 Quiz - Free MCQs (47) | 153 | Sikhism (Sikh Dharam) - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 50 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 51 | `/quiz-reasoning-number-series-part-2` | quiz | Number Series Part 2 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 52 | `/quiz-reasoning-number-series-part-3` | quiz | Number Series Part 3 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 53 | `/quiz-reasoning-number-series-part-4` | quiz | Number Series Part 4 Quiz (25 MCQs) - Free Online Test (54) | 157 | Number Series Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 50 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 51 | `/quiz-reasoning-number-series-part-2` | quiz | Number Series Part 2 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 52 | `/quiz-reasoning-number-series-part-3` | quiz | Number Series Part 3 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 53 | `/quiz-reasoning-number-series-part-4` | quiz | Number Series Part 4 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 54 | `/quiz-computer-fundamentals-of-computers-part1` | quiz | Fundamentals of Computers - Part 1 Quiz - Free MCQs (51) | 155 | Fundamentals of Computers - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 55 | `/quiz-computer-mobile-phone-part1-25-mcqs` | quiz | Mobile Phone Part1 25 Mcqs Quiz (25 MCQs) - Free Online Test (60) | 158 | Mobile Phone Part1 25 Mcqs | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 56 | `/quiz-computer-ms-word-part-1` | quiz | MS Word (Microsoft Word) - Part 1 Quiz - Free MCQs (50) | 156 | MS Word (Microsoft Word) - Part 1 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
@@ -85,34 +85,34 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 59 | `/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development` | quiz | Current Affairs July 2026 - Part 2 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 2 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 60 | `/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | quiz | Current Affairs July 2026 - Part 3 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 3 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 61 | `/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | quiz | Current Affairs July 2026 - Part 4 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 4 | - | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 62 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
-| 63 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 64 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 65 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 66 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 67 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 149 | BreadcrumbList, FAQPage, WebPage |
-| 68 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 69 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 70 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 71 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 72 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 73 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 74 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 75 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 76 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 123 | BreadcrumbList, FAQPage, WebPage |
-| 77 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 78 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 79 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 80 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 106 | BreadcrumbList, FAQPage, WebPage |
-| 81 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
-| 82 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 83 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 141 | BreadcrumbList, FAQPage, WebPage |
-| 84 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
-| 85 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 86 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 87 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 88 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 145 | BreadcrumbList, FAQPage, WebPage |
-| 89 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 62 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 148 | BreadcrumbList, FAQPage, WebPage |
+| 63 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 137 | BreadcrumbList, FAQPage, WebPage |
+| 64 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 149 | BreadcrumbList, FAQPage, WebPage |
+| 65 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 66 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
+| 67 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 158 | BreadcrumbList, FAQPage, WebPage |
+| 68 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
+| 69 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
+| 70 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 141 | BreadcrumbList, FAQPage, WebPage |
+| 71 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 143 | BreadcrumbList, FAQPage, WebPage |
+| 72 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
+| 73 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 142 | BreadcrumbList, FAQPage, WebPage |
+| 74 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 144 | BreadcrumbList, FAQPage, WebPage |
+| 75 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
+| 76 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 77 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 149 | BreadcrumbList, FAQPage, WebPage |
+| 78 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 143 | BreadcrumbList, FAQPage, WebPage |
+| 79 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
+| 80 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 112 | BreadcrumbList, FAQPage, WebPage |
+| 81 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 82 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 141 | BreadcrumbList, FAQPage, WebPage |
+| 83 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 150 | BreadcrumbList, FAQPage, WebPage |
+| 84 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 153 | BreadcrumbList, FAQPage, WebPage |
+| 85 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 143 | BreadcrumbList, FAQPage, WebPage |
+| 86 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 143 | BreadcrumbList, FAQPage, WebPage |
+| 87 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 142 | BreadcrumbList, FAQPage, WebPage |
+| 88 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 154 | BreadcrumbList, FAQPage, WebPage |
+| 89 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 143 | BreadcrumbList, FAQPage, WebPage |
 | 90 | `/cluster-indian-polity` | cluster | Indian Polity: Syllabus, Topics and Free MCQs (45) | 143 | Indian Polity - Study Guide and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
 | 91 | `/cluster-indian-history` | cluster | Indian History: Syllabus, Topics and Free MCQs (46) | 144 | Indian History - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
 | 92 | `/cluster-modern-history` | cluster | Modern History: Syllabus, Topics and Free MCQs (46) | 144 | Modern History - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |

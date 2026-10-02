@@ -423,6 +423,25 @@ site = index.get("site", {})
 subjects = index.get("subjects", [])
 stats = index.get("stats", {})
 SITE_Q_SECONDS = int(site.get("questionSeconds") or 30)
+SUBJECT_Q_SECONDS = {str(k): int(v) for k, v in
+                     (site.get("subjectQuestionSeconds") or {}).items() if v}
+
+
+def q_seconds(sid):
+    """Seconds per question for a subject: its own value, else the site default."""
+    return SUBJECT_Q_SECONDS.get(str(sid), SITE_Q_SECONDS)
+
+
+def timer_phrase():
+    """'30 seconds a question' plus the subjects that run longer, for mixed pages."""
+    extra = {}
+    for sid, sec in SUBJECT_Q_SECONDS.items():
+        if sec != SITE_Q_SECONDS:
+            name = next((x.get("name", sid) for x in subjects if x.get("id") == sid), sid)
+            extra.setdefault(sec, []).append(name)
+    tail = "".join(f", {sec} for {' and '.join(names)}"
+                   for sec, names in sorted(extra.items()))
+    return f"{SITE_Q_SECONDS} seconds a question{tail}"
 SITE_DAILY = int(site.get("dailyQuizSize") or 20)
 SITE_PASS = int(site.get("passPercent") or 40)
 
@@ -714,7 +733,7 @@ def build_subject(s):
             + ", ".join(c["name"] for c in cats) + " -" if cats else "")
     intro.append(
         f"{name} on House of Aspirants publishes as separate, self-contained sets{lane} "
-        f"rather than one endless paper. Each set runs {SITE_Q_SECONDS} seconds per question "
+        f"rather than one endless paper. Each set runs {q_seconds(s['id'])} seconds per question "
         f"with four options and a written explanation, so a wrong answer teaches the next "
         f"attempt instead of only scoring it.")
     intro.append(
@@ -856,10 +875,10 @@ def build_subject(s):
     else:
         q2a = ("Every Punjab recruitment paper draws on general awareness, so this subject "
                "sits under all of them. The exam hub lists every paper this portal covers.")
-    q3a = (f"Each question is timed at {SITE_Q_SECONDS} seconds, so a {q_total}-question set "
-           f"runs to about {fmt_duration(q_total * SITE_Q_SECONDS)}. Sets are cleared at "
+    q3a = (f"Each question is timed at {q_seconds(s['id'])} seconds, so a {q_total}-question set "
+           f"runs to about {fmt_duration(q_total * q_seconds(s['id']))}. Sets are cleared at "
            f"{SITE_PASS}% accuracy, and you can retake them as often as you like.") \
-        if n_topics else (f"Question sets are timed at {SITE_Q_SECONDS} seconds each. Once a "
+        if n_topics else (f"Question sets are timed at {q_seconds(s['id'])} seconds each. Once a "
                            f"set publishes for {name} its length and estimated time appear "
                            f"here before you start.")
     q4a = ("No. You can open any quiz and answer questions immediately. A Google sign-in is "
@@ -931,7 +950,7 @@ def build_category(s, c):
     intro.append(
         f"This lane sits inside {s['name']} ({len(s.get('categories', []))} lanes in total), "
         f"so it stays narrow on purpose: {len(topics)} topic sets and {q_total} questions "
-        f"currently publish under {name}. Every question is timed at {SITE_Q_SECONDS} "
+        f"currently publish under {name}. Every question is timed at {q_seconds(s['id'])} "
         f"seconds, carries four options and explains why the right answer is right.")
     intro.append(
         f"Run a set untimed first to find the gaps, then repeat it against the clock. The "
@@ -1106,7 +1125,7 @@ def build_topic(s, c, t):
     available = bool(t.get("available"))
     qs = load_topic_questions(t) if available else []
     cards_nodes = flashcards(qs)
-    est = fmt_duration(count * SITE_Q_SECONDS)
+    est = fmt_duration(count * q_seconds(s['id']))
     updated = fmt_date(t.get("updatedAt"))
     diff = difficulty_label(qs)
     cat_name = c["name"] if c else ""
@@ -1130,7 +1149,7 @@ def build_topic(s, c, t):
     answer = authored.get("answer") or (
         f"{name} is a topic inside {s['name']}"
         + (f" ({cat_name})" if cat_name else "")
-        + f". It runs {count} MCQs at {SITE_Q_SECONDS} seconds each - roughly {est} - and "
+        + f". It runs {count} MCQs at {q_seconds(s['id'])} seconds each - roughly {est} - and "
           f"every question explains its answer the moment you submit it.")
 
     intro = list(authored.get("intro", []))
@@ -1139,7 +1158,7 @@ def build_topic(s, c, t):
             f"{name} sits inside {s['name']}"
             + (f", under the {cat_name} lane" if cat_name else "")
             + f", and the portal keeps it as one self-contained set: {count} questions, four "
-              f"options each, {SITE_Q_SECONDS} seconds on the clock and a written explanation "
+              f"options each, {q_seconds(s['id'])} seconds on the clock and a written explanation "
               f"behind every answer.")
         intro.append(
             "Attempt it untimed first to find the gaps, read why each distractor is wrong, "
@@ -1237,7 +1256,7 @@ def build_topic(s, c, t):
     link_record(filename, "topic", subject_file(sid), "subject", s["name"])
 
     if count:
-        q1a = (f"{name} runs {count} questions - about {est} at {SITE_Q_SECONDS} seconds each. "
+        q1a = (f"{name} runs {count} questions - about {est} at {q_seconds(s['id'])} seconds each. "
                f"The set clears at {SITE_PASS}% and you can retake it as often as you like.")
     else:
         q1a = (f"The first file for this topic has not been added yet. The build scans the "
@@ -1297,7 +1316,7 @@ def build_quiz(s, c, t):
     available = bool(t.get("available"))
     qs = load_topic_questions(t) if available else []
     cards_nodes = flashcards(qs)
-    est = fmt_duration(count * SITE_Q_SECONDS)
+    est = fmt_duration(count * q_seconds(s['id']))
     updated = fmt_date(t.get("updatedAt"))
     diff = difficulty_label(qs)
 
@@ -1311,15 +1330,15 @@ def build_quiz(s, c, t):
     h1 = name
     lead = (f"{count} questions from {s['name']}"
             + (f" > {c['name']}" if c else "")
-            + f" - {SITE_Q_SECONDS} seconds a question, about {est} in total.")
-    answer = (f"{name} is a timed topic quiz: {count} questions at {SITE_Q_SECONDS} seconds "
+            + f" - {q_seconds(s['id'])} seconds a question, about {est} in total.")
+    answer = (f"{name} is a timed topic quiz: {count} questions at {q_seconds(s['id'])} seconds "
               f"each, about {est} in all. You get a question palette, instant scoring, a "
               f"{SITE_PASS}% pass mark and a full answer review - free, and no sign-in is "
               f"needed to start.")
 
     faqs = [
         (f"How many questions are in the {name} quiz?",
-         f"{count} questions, about {est} at {SITE_Q_SECONDS} seconds each. Every question "
+         f"{count} questions, about {est} at {q_seconds(s['id'])} seconds each. Every question "
          f"has four options, and the review screen shows the explanation behind each answer."),
         ("What counts as a pass?",
          f"A set is cleared at {SITE_PASS}% - that is {max(1, round(count * SITE_PASS / 100))} "
@@ -1375,7 +1394,7 @@ def build_quiz(s, c, t):
         + join_paras([
             f"{name} draws {count} questions from {s['name']}"
             + (f" > {c['name']}" if c else "")
-            + f", each timed at {SITE_Q_SECONDS} seconds. A question palette in the sidebar "
+            + f", each timed at {q_seconds(s['id'])} seconds. A question palette in the sidebar "
               f"tracks answered, skipped and marked questions, progress autosaves if you "
               f"leave mid-quiz, and the final screen replays every answer with its "
               f"explanation.",
@@ -1442,7 +1461,7 @@ def build_quiz(s, c, t):
                               "How the portal runs this set.", faqs))
 
     # ---- static JSON-LD (Education Q&A) -------------------------------------
-    minutes = max(1, round(count * SITE_Q_SECONDS / 60)) if count else 0
+    minutes = max(1, round(count * q_seconds(s['id']) / 60)) if count else 0
     quiz_node = {
         "@type": "Quiz",
         "@id": f"{url}#quiz",
@@ -1608,7 +1627,7 @@ def build_exam(e):
               "question set takes two clicks.")
         intro.append(
             "Practise in the order the marks come: untimed topic sets until the pattern is "
-            f"familiar, then the same sets against the {SITE_Q_SECONDS}-second clock, then a "
+            f"familiar, then the same sets against the clock ({timer_phrase()}), then a "
             f"full mock test at {SITE_PASS}% to clear. Wrong answers save themselves to "
             "bookmarks, so revision stays inside the tool you practise in.")
     else:
@@ -1618,7 +1637,7 @@ def build_exam(e):
             "your timeline, run the subject library as short timed sets, and finish with a "
             "full mock test to find the lane costing you marks.")
         intro.append(
-            f"Every set is timed at {SITE_Q_SECONDS} seconds a question, clears at "
+            f"Every set is timed at {timer_phrase()}, clears at "
             f"{SITE_PASS}% and explains each answer the moment you submit it.")
     intro_html = f'        <div class="landing-intro" data-landing="intro">\n{join_paras(intro)}\n        </div>'
 
@@ -1903,7 +1922,7 @@ def build_cluster(c):
            + "Every area listed above links back to the page that hosts it.")
     q2a = (f"Revise one area at a time and test it before moving on - the topics above are "
            f"ordered so each rests on the one before it. Once they are familiar, switch to "
-           f"timed practice: sets run at {SITE_Q_SECONDS} seconds a question and clear at "
+           f"timed practice: sets run at {timer_phrase()} and clear at "
            f"{SITE_PASS}% accuracy.")
     q3a = ("Yes. Every quiz, mock test and study guide on House of Aspirants is free, and no "
            "sign-in is needed to open a set - Google sign-in is optional and only saves "

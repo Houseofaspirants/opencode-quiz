@@ -21,6 +21,10 @@
     "youtube": "https://youtube.com/@houseofaspirants-y5s",
     "studentsPracticed": 12500,
     "questionSeconds": 30,
+    "subjectQuestionSeconds": {
+      "reasoning": 60,
+      "quant": 60
+    },
     "dailyQuizSize": 20,
     "passPercent": 40,
     "auth": {
