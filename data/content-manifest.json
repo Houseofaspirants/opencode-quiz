@@ -40,7 +40,7 @@
       "url": "https://houseofaspirants.in/strategy",
       "title": "Exam Preparation Strategy & Study Plans | House of Aspirants",
       "description": "Preparation strategy for Punjab aspirants - study plans, daily and weekly timetables, book guidance, revision, mock test and mistake analysis method.",
-      "count": 10
+      "count": 12
     },
     {
       "collection": "sessions",
@@ -233,6 +233,18 @@
       "url": "https://houseofaspirants.in/archive-tag-exam-pattern",
       "title": "exam pattern | House of Aspirants",
       "description": "Every document tagged exam pattern on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
+      "file": "archive-tag-excise-and-taxation-inspector.html",
+      "url": "https://houseofaspirants.in/archive-tag-excise-and-taxation-inspector",
+      "title": "excise and taxation inspector | House of Aspirants",
+      "description": "Every document tagged excise and taxation inspector on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for"
+    },
+    {
+      "file": "archive-tag-excise-inspector.html",
+      "url": "https://houseofaspirants.in/archive-tag-excise-inspector",
+      "title": "excise inspector | House of Aspirants",
+      "description": "Every document tagged excise inspector on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
     },
     {
       "file": "archive-tag-investigation-cadre.html",
@@ -1586,6 +1598,45 @@
     },
     {
       "collection": "strategy",
+      "file": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+      "url": "https://houseofaspirants.in/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+      "title": "PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੈਟਰਨ",
+      "description": "PSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਭਰਤੀ ਬਾਰੇ ਸਭ ਕੁਝ official notification ਤੋਂ: 41 ਅਸਾਮੀਆਂ, ਯੋਗਤਾ, ਉਮਰ ਹੱਦ, ਫ਼ੀਸ, 35,400 ਤਨਖ਼ਾਹ, ਪੰਜਾਬੀ ਟੈਸਟ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ।",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "computer",
+        "punjabi",
+        "english"
+      ],
+      "tags": [
+        "psssb",
+        "excise inspector",
+        "excise and taxation inspector",
+        "eligibility",
+        "exam pattern"
+      ],
+      "exams": [
+        "Excise Inspector"
+      ],
+      "readingMinutes": 4,
+      "lang": "pa",
+      "featured": false,
+      "path": "content/strategy/psssb-excise-inspector-recruitment-exam-pattern.pa.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Intermediate",
+      "alt": {
+        "lang": "en",
+        "file": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+        "url": "https://houseofaspirants.in/strategy-psssb-excise-inspector-recruitment-exam-pattern"
+      }
+    },
+    {
+      "collection": "strategy",
       "file": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
       "url": "https://houseofaspirants.in/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
       "title": "ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
@@ -1832,6 +1883,45 @@
       "path": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
       "category": "",
       "pdf": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf"
+    },
+    {
+      "collection": "strategy",
+      "file": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+      "url": "https://houseofaspirants.in/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+      "title": "PSSSB Excise Inspector Recruitment, Eligibility & Pattern",
+      "description": "PSSSB Excise and Taxation Inspector recruitment from the official notification - 41 posts, eligibility, age, fee, Rs 35,400 pay, Punjabi test and exam pattern.",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "computer",
+        "punjabi",
+        "english"
+      ],
+      "tags": [
+        "psssb",
+        "excise inspector",
+        "excise and taxation inspector",
+        "eligibility",
+        "exam pattern"
+      ],
+      "exams": [
+        "Excise Inspector"
+      ],
+      "readingMinutes": 4,
+      "lang": "en",
+      "featured": false,
+      "path": "content/strategy/psssb-excise-inspector-recruitment-exam-pattern.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Intermediate",
+      "alt": {
+        "lang": "pa",
+        "file": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+        "url": "https://houseofaspirants.in/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern"
+      }
     },
     {
       "collection": "strategy",
@@ -4108,7 +4198,7 @@
     "notes": 0,
     "current-affairs": 3,
     "magazine": 0,
-    "strategy": 10,
+    "strategy": 12,
     "sessions": 0,
     "recruitment": 0,
     "blogs": 0,

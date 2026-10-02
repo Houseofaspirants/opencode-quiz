@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 344,
-  "edges": 1720,
+  "nodes": 351,
+  "edges": 1817,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -174,6 +174,34 @@
    "exams": [],
    "tags": [
     "exam-pattern"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-excise-and-taxation-inspector.html",
+   "url": "/archive-tag-excise-and-taxation-inspector.html",
+   "type": "archive",
+   "template": "",
+   "title": "excise and taxation inspector",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "excise-and-taxation-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-excise-inspector.html",
+   "url": "/archive-tag-excise-inspector.html",
+   "type": "archive",
+   "template": "",
+   "title": "excise inspector",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "excise-inspector"
    ],
    "hub": "archives.html"
   },
@@ -375,6 +403,18 @@
    "id": "articles.html",
    "url": "/articles.html",
    "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
+   "url": "/assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
+   "type": "page",
    "template": "",
    "title": "",
    "lang": "en",
@@ -3120,6 +3160,45 @@
    "hub": "news.html"
   },
   {
+   "id": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Excise Inspector"
+   ],
+   "tags": [
+    "psssb",
+    "excise inspector",
+    "excise and taxation inspector",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
    "url": "/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
    "type": "page",
@@ -4097,6 +4176,45 @@
    "hub": "archives.html"
   },
   {
+   "id": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Excise Inspector Recruitment, Eligibility & Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Excise Inspector"
+   ],
+   "tags": [
+    "psssb",
+    "excise inspector",
+    "excise and taxation inspector",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
    "url": "/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
    "type": "document",
@@ -4751,6 +4869,12 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -4895,6 +5019,12 @@
   },
   {
    "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -4914,6 +5044,12 @@
   {
    "from": "archive-tag-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4948,6 +5084,90 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-and-taxation-inspector.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-excise-inspector.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-investigation-cadre.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -5058,6 +5278,12 @@
   {
    "from": "archive-tag-psssb.html",
    "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5543,6 +5769,18 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-excise-and-taxation-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-investigation-cadre.html",
    "rel": "contextual",
    "weight": 1
@@ -5825,6 +6063,12 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -5873,6 +6117,12 @@
   },
   {
    "from": "archives.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -5915,6 +6165,12 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -5940,6 +6196,12 @@
   {
    "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9376,6 +9638,198 @@
    "weight": 1
   },
   {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-excise-and-taxation-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "exam-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-excise-taxation-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -9461,6 +9915,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
@@ -9497,6 +9957,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -9527,19 +9993,19 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -9552,12 +10018,6 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -9671,6 +10131,12 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -9707,19 +10173,19 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -9875,6 +10341,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -9905,19 +10377,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -10061,6 +10533,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -10103,26 +10581,20 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -10211,6 +10683,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -10259,6 +10737,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -10295,26 +10779,20 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -13258,6 +13736,180 @@
    "weight": 1
   },
   {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-excise-and-taxation-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "exam-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-excise-taxation-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -13403,6 +14055,18 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
@@ -13410,18 +14074,12 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -13559,6 +14217,18 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
@@ -13566,13 +14236,13 @@
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -13745,20 +14415,26 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -13919,20 +14595,26 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -14093,20 +14775,26 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -14124,6 +14812,12 @@
   {
    "from": "strategy.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14154,6 +14848,12 @@
   {
    "from": "strategy.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14757,7 +15457,9 @@
    "pillar": "current-affairs-preparation.html",
    "hub": "exam-excise-inspector.html",
    "clusters": [],
-   "leaves": []
+   "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html"
+   ]
   },
   {
    "id": "exam:food-supply-inspector",
@@ -15020,6 +15722,7 @@
     "topic-computer-ms-word-part-2.html"
    ],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
@@ -15051,6 +15754,7 @@
    "hub": "subject-english.html",
    "clusters": [],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -15088,6 +15792,7 @@
     "topic-gk-sikhism-part4-20-mcqs.html"
    ],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -15103,6 +15808,7 @@
    "hub": "subject-punjabi.html",
    "clusters": [],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -15118,6 +15824,7 @@
    "hub": "subject-quant.html",
    "clusters": [],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -15139,6 +15846,7 @@
     "topic-reasoning-number-series-part-4.html"
    ],
    "leaves": [
+    "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
