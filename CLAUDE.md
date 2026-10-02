@@ -71,3 +71,5 @@ See `content/README.md` for the full front-matter contract. Key rules: `title` â
 ### Publishing flow
 
 `publish.sh` builds, gates and commits as `publish content`. `scripts/watch_content.mjs` watches `content/` for PDF changes (3 s debounce, batched), runs publish, and pushes `main` over SSH.
+
+After a push to `main`, `.github/workflows/notify.yml` runs `scripts/notify_new_content.py`: it diffs `data/index.json`, `data/content-manifest.json` and `data/books.json` against the previous commit and posts a Punjabi announcement with the page link for each new item to the Telegram channel (secret `TELEGRAM_BOT_TOKEN`; vars `TELEGRAM_CHANNEL`, `TELEGRAM_OWNER_CHAT_ID`). Run it locally with `--before <sha> --dry-run` to preview the messages.
