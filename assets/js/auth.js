@@ -380,7 +380,10 @@
   function mergeStats(a, b) {
     if (!b) return a;
     const days = Array.from(new Set([...(a.days || []), ...(b.days || [])])).sort().slice(-120);
-    const history = [...(a.history || []), ...(b.history || [])].slice(-100);
+    // Both sides already hold the merged history after the first sync, so
+    // concatenating them doubled it on every pull - keep the longer one.
+    const ha = a.history || [], hb = b.history || [];
+    const history = (ha.length >= hb.length ? ha : hb).slice(-100);
     const max = (x, y) => Math.max(Number(x) || 0, Number(y) || 0);
     return {
       ...a,

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 201,
-  "edges": 917,
+  "nodes": 220,
+  "edges": 1031,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -112,6 +112,18 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-category-preparation-strategy.html",
+   "url": "/archive-category-preparation-strategy.html",
+   "type": "archive",
+   "template": "",
+   "title": "preparation-strategy",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-category-reasoning.html",
    "url": "/archive-category-reasoning.html",
    "type": "archive",
@@ -121,6 +133,76 @@
    "subjects": [],
    "exams": [],
    "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-2026.html",
+   "url": "/archive-tag-2026.html",
+   "type": "archive",
+   "template": "",
+   "title": "2026",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "2026"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-exam-pattern.html",
+   "url": "/archive-tag-exam-pattern.html",
+   "type": "archive",
+   "template": "",
+   "title": "exam pattern",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "exam-pattern"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-police-constable.html",
+   "url": "/archive-tag-punjab-police-constable.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab police constable",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-police-constable"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-study-plan.html",
+   "url": "/archive-tag-study-plan.html",
+   "type": "archive",
+   "template": "",
+   "title": "study plan",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "study-plan"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-syllabus.html",
+   "url": "/archive-tag-syllabus.html",
+   "type": "archive",
+   "template": "",
+   "title": "syllabus",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "syllabus"
+   ],
    "hub": "archives.html"
   },
   {
@@ -139,6 +221,18 @@
    "id": "articles.html",
    "url": "/articles.html",
    "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/punjab-police-constable-notification-2026.pdf",
+   "url": "/assets/pdfs/punjab-police-constable-notification-2026.pdf",
+   "type": "page",
    "template": "",
    "title": "",
    "lang": "en",
@@ -1252,6 +1346,18 @@
    "hub": ""
   },
   {
+   "id": "leaderboard.html",
+   "url": "/leaderboard.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "live-sessions.html",
    "url": "/live-sessions.html",
    "type": "hub",
@@ -2020,6 +2126,45 @@
    "hub": "news.html"
   },
   {
+   "id": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "url": "/pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "url": "/pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ 2026 ਅਤੇ ਭਰਤੀ 2027",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Constable"
+   ],
+   "tags": [
+    "punjab police constable",
+    "syllabus",
+    "exam pattern",
+    "2026",
+    "study plan"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pdfs.html",
    "url": "/pdfs.html",
    "type": "hub",
@@ -2244,6 +2389,42 @@
    "hub": "previous-year-questions.html"
   },
   {
+   "id": "quiz-computer-fundamentals-of-computers-part1.html",
+   "url": "/quiz-computer-fundamentals-of-computers-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "url": "/quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-ms-word-part-1.html",
+   "url": "/quiz-computer-ms-word-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "url": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "type": "quiz",
@@ -2282,6 +2463,54 @@
   {
    "id": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
    "url": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "url": "/quiz-gk-five-year-plans-20-mcqs-.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "url": "/quiz-gk-sikhism-part1-20-mcqs.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-number-series-part-1.html",
+   "url": "/quiz-reasoning-number-series-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -2338,6 +2567,45 @@
    "exams": [],
    "tags": [],
    "hub": "archives.html"
+  },
+  {
+   "id": "strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "url": "/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "url": "/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab Police Constable Syllabus 2026 & Bharti 2027",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Constable"
+   ],
+   "tags": [
+    "punjab police constable",
+    "syllabus",
+    "exam pattern",
+    "2026",
+    "study plan"
+   ],
+   "hub": "strategy.html"
   },
   {
    "id": "strategy.html",
@@ -2786,6 +3054,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-reasoning.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -2828,6 +3138,216 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-2026.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-2026.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-constable.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archives.html",
    "to": "archive-category-computer.html",
    "rel": "contextual",
@@ -2865,7 +3385,43 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-study-plan.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3075,6 +3631,12 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pyq-2022-question-paper1.html",
    "rel": "contextual",
    "weight": 1
@@ -3088,6 +3650,18 @@
   {
    "from": "archives.html",
    "to": "pyq-2022-question-paper2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "subject.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3117,6 +3691,12 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
@@ -3124,6 +3704,12 @@
   {
    "from": "author-gurpreet-singh.html",
    "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3243,7 +3829,7 @@
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3321,7 +3907,7 @@
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3399,7 +3985,7 @@
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3915,7 +4501,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4017,7 +4603,7 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4101,7 +4687,7 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4185,7 +4771,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4269,7 +4855,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4353,7 +4939,7 @@
   },
   {
    "from": "material-m-s-word.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4437,7 +5023,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4521,7 +5107,7 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4605,7 +5191,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4689,7 +5275,7 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4773,7 +5359,7 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4857,7 +5443,7 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4947,7 +5533,7 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5031,7 +5617,7 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5115,7 +5701,7 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5205,7 +5791,7 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5289,7 +5875,7 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5379,7 +5965,7 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5469,7 +6055,7 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5565,7 +6151,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5661,7 +6247,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5757,7 +6343,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5847,7 +6433,7 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5937,7 +6523,7 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6021,7 +6607,7 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6105,7 +6691,7 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6189,7 +6775,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6273,7 +6859,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6357,7 +6943,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6441,7 +7027,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6533,6 +7119,186 @@
    "from": "news.html",
    "to": "recruitment.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "assets/pdfs/punjab-police-constable-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "exam-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "leaderboard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
    "weight": 1
   },
   {
@@ -6687,7 +7453,7 @@
   },
   {
    "from": "pyq-2022-question-paper1.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6759,7 +7525,7 @@
   },
   {
    "from": "pyq-2022-question-paper2-2.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6831,7 +7597,7 @@
   },
   {
    "from": "pyq-2022-question-paper2.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7376,6 +8142,180 @@
    "weight": 1
   },
   {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "assets/pdfs/punjab-police-constable-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "exam-punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "leaderboard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper2-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper1.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pyq-2022-question-paper2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7401,6 +8341,12 @@
   },
   {
    "from": "strategy.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "pdfs.html",
    "rel": "contextual",
    "weight": 1
@@ -7414,6 +8360,12 @@
   {
    "from": "strategy.html",
    "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8108,7 +9060,9 @@
    "clusters": [
     "category-gk-punjab-gk.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "exam:punjab-police-driver",
@@ -8241,7 +9195,9 @@
     "topic-computer-ms-word-part-1.html",
     "topic-computer-ms-word-part-2.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "subject:current-affairs",
@@ -8265,7 +9221,9 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-english.html",
    "clusters": [],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "subject:gk",
@@ -8296,7 +9254,9 @@
     "topic-gk-sikhism-part3-20-mcqs.html",
     "topic-gk-sikhism-part4-20-mcqs.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "subject:punjabi",
@@ -8305,7 +9265,9 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-punjabi.html",
    "clusters": [],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "subject:quant",
@@ -8314,7 +9276,9 @@
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-quant.html",
    "clusters": [],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "subject:reasoning",
@@ -8329,7 +9293,9 @@
     "topic-reasoning-number-series-part-3.html",
     "topic-reasoning-number-series-part-4.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+   ]
   }
  ]
 }
