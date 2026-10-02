@@ -45,8 +45,15 @@ DOMAIN = "https://houseofaspirants.in"
 
 # The two file names the collection recognises. Anything else in an exam
 # folder is a document of some other kind and keeps its own page.
-PAPER_RE = re.compile(r"^(\d{4})-question-paper\.pdf$", re.IGNORECASE)
-KEY_RE = re.compile(r"^(\d{4})-official-answer-key\.pdf$", re.IGNORECASE)
+# An optional suffix names one of several files for the same year - a shift,
+# a set, a date or a subject: 2021-question-paper-27-aug-shift-1.pdf,
+# 2022-official-answer-key-set-b.pdf. The suffix becomes the file's label.
+PAPER_RE = re.compile(r"^(\d{4})-question-paper(?:-?([a-z0-9][a-z0-9-]*))?\.pdf$",
+                      re.IGNORECASE)
+KEY_RE = re.compile(r"^(\d{4})-official-answer-key(?:-?([a-z0-9][a-z0-9-]*))?\.pdf$",
+                    re.IGNORECASE)
+MONTHS = {m.lower(): m for m in ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul",
+                                 "Aug", "Sep", "Oct", "Nov", "Dec")}
 SLUG_RE = re.compile(r"[a-z0-9][a-z0-9-]*")
 LANGS = ("en", "pa")
 REQUIRED = ("title", "slug", "organization", "category", "languages")
@@ -59,6 +66,48 @@ def year_of(filename):
         if m:
             return m.group(1)
     return ""
+
+
+def label_of(filename):
+    """The human label a file's suffix carries: `27-aug-shift-1` -> "27 Aug,
+    Shift 1", `set-b-revised` -> "Set B Revised", a bare `2` -> "Paper 2".
+    "" when the file has no suffix."""
+    name = str(filename or "")
+    m = PAPER_RE.match(name) or KEY_RE.match(name)
+    if not m or not m.group(2):
+        return ""
+    words = [w for w in m.group(2).lower().split("-") if w]
+    if len(words) == 1 and words[0].isdigit():
+        return f"Paper {words[0]}"
+    out, phrase, i = [], [], 0
+
+    def flush():
+        if phrase:
+            out.append(" ".join(phrase))
+            phrase.clear()
+
+    while i < len(words):
+        w = words[i]
+        nxt = words[i + 1] if i + 1 < len(words) else ""
+        if w in ("set", "shift", "paper") and nxt and len(nxt) <= 2:
+            flush()
+            out.append(f"{w.title()} {nxt.upper() if w == 'set' else nxt}")
+            i += 2
+            continue
+        if w.isdigit() and nxt in MONTHS:
+            flush()
+            out.append(f"{int(w)} {MONTHS[nxt]}")
+            i += 2
+            continue
+        if w in MONTHS:
+            phrase.append(MONTHS[w])
+        elif len(w) <= 3 and not w.isdigit() and w not in ("all", "set", "and", "the", "of"):
+            phrase.append(w.upper())
+        else:
+            phrase.append(w.title())
+        i += 1
+    flush()
+    return ", ".join(out)
 
 
 def claims(drop):
@@ -76,6 +125,7 @@ def file_row(drop):
     return {
         "path": str(drop.get("path") or ""),
         "filename": str(drop.get("filename") or ""),
+        "label": label_of(drop.get("filename")),
         "title": str(drop.get("title") or ""),
         "size": int(drop.get("size") or 0),
         "sizeLabel": str(drop.get("sizeLabel") or ""),
@@ -206,22 +256,28 @@ def build(drops, err, warn, info=None):
             m = KEY_RE.match(name)
             if m:
                 rows.setdefault(int(m.group(1)),
-                                {"year": m.group(1), "papers": []})["key"] = drop
+                                {"year": m.group(1), "papers": []}
+                                ).setdefault("keys", []).append(drop)
                 continue
             others.append(drop)
 
         papers = []
         for year in sorted(rows, reverse=True):
             slot = rows[year]
-            sheets, key = slot.get("papers") or [], slot.get("key")
-            if key is not None and not sheets:
-                warn(f"content/{COLL}/{folder}/{key.get('filename')}: an answer "
-                     f"key with no {year} question paper beside it - published "
-                     f"as a row with the paper cell marked Not published")
+            by_name = lambda d: str(d.get("filename") or "")
+            sheets = sorted(slot.get("papers") or [], key=by_name)
+            keys = sorted(slot.get("keys") or [], key=by_name)
+            if keys and not sheets:
+                warn(f"content/{COLL}/{folder}/{keys[0].get('filename')}: an "
+                     f"answer key with no {year} question paper beside it - "
+                     f"published as a row with the paper cell marked Not "
+                     f"published")
+            key_rows = [file_row(d) for d in keys]
             papers.append({
                 "year": slot["year"],
                 "papers": [file_row(d) for d in sheets],
-                "key": file_row(key) if key else None,
+                "key": key_rows[0] if key_rows else None,
+                "keys": key_rows,
             })
 
         title = str(meta["title"]).strip()
@@ -238,6 +294,7 @@ def build(drops, err, warn, info=None):
             "slug": slug,
             "title": title,
             "organization": str(meta["organization"]).strip(),
+            "exam": str(meta.get("exam") or folder).strip(),
             "category": str(meta["category"]).strip(),
             "languages": langs,
             "description": str(meta.get("description") or "").strip()
@@ -250,6 +307,7 @@ def build(drops, err, warn, info=None):
             "years": years,
             "count": sum(len(p["papers"]) for p in papers),
             "keys": sum(1 for p in papers if p["key"]),
+            "keyFiles": sum(len(p["keys"]) for p in papers),
             "file": f"pyq/{slug}/index.html",
             "url": f"{DOMAIN}/pyq/{slug}",
             "hub": "previous-year-questions.html",

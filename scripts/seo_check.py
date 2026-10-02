@@ -786,7 +786,8 @@ if CONTENT_MANIFEST.exists():
         # would read as dropped and never published.
         for row in (pyq_data.get("exams") or []):
             for slot in (row.get("papers") or []):
-                for cell in list(slot.get("papers") or []) + [slot.get("key")]:
+                for cell in (list(slot.get("papers") or []) + [slot.get("key")]
+                             + list(slot.get("keys") or [])):
                     if isinstance(cell, dict) and cell.get("path"):
                         on_disk.add(cell["path"])
             for other in (row.get("others") or []):

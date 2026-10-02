@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 220,
-  "edges": 1031,
+  "nodes": 327,
+  "edges": 1520,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -164,6 +164,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-investigation-cadre.html",
+   "url": "/archive-tag-investigation-cadre.html",
+   "type": "archive",
+   "template": "",
+   "title": "investigation cadre",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "investigation-cadre"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-punjab-police-constable.html",
    "url": "/archive-tag-punjab-police-constable.html",
    "type": "archive",
@@ -178,6 +192,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-punjab-police-head-constable.html",
+   "url": "/archive-tag-punjab-police-head-constable.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab police head constable",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-police-head-constable"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-police-si.html",
+   "url": "/archive-tag-punjab-police-si.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab police si",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-police-si"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-study-plan.html",
    "url": "/archive-tag-study-plan.html",
    "type": "archive",
@@ -188,6 +230,20 @@
    "exams": [],
    "tags": [
     "study-plan"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-sub-inspector.html",
+   "url": "/archive-tag-sub-inspector.html",
+   "type": "archive",
+   "template": "",
+   "title": "sub inspector",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "sub-inspector"
    ],
    "hub": "archives.html"
   },
@@ -232,6 +288,30 @@
   {
    "id": "assets/pdfs/punjab-police-constable-notification-2026.pdf",
    "url": "/assets/pdfs/punjab-police-constable-notification-2026.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/punjab-police-head-constable-notification-2021.pdf",
+   "url": "/assets/pdfs/punjab-police-head-constable-notification-2021.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/punjab-police-sub-inspector-notification-2023.pdf",
+   "url": "/assets/pdfs/punjab-police-sub-inspector-notification-2023.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -376,6 +456,798 @@
   {
    "id": "content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
    "url": "/content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-cooperative-inspector/2022-question-paper.pdf",
+   "url": "/content/previous-year-questions/ppsc-cooperative-inspector/2022-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-draftsman/2022-question-paper-all-sets.pdf",
+   "url": "/content/previous-year-questions/ppsc-draftsman/2022-question-paper-all-sets.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-naib-tehsildar/2022-official-answer-key-set-a.pdf",
+   "url": "/content/previous-year-questions/ppsc-naib-tehsildar/2022-official-answer-key-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-naib-tehsildar/2022-question-paper-set-a.pdf",
+   "url": "/content/previous-year-questions/ppsc-naib-tehsildar/2022-question-paper-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-naib-tehsildar/2023-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/ppsc-naib-tehsildar/2023-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-naib-tehsildar/2023-question-paper-18-jun.pdf",
+   "url": "/content/previous-year-questions/ppsc-naib-tehsildar/2023-question-paper-18-jun.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-naib-tehsildar/ppsc-naib-tehsildar-syllabus-and-information.pdf",
+   "url": "/content/previous-year-questions/ppsc-naib-tehsildar/ppsc-naib-tehsildar-syllabus-and-information.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/ppsc-punjab-civil-services/ppsc-pcs-2020-syllabus-and-information.pdf",
+   "url": "/content/previous-year-questions/ppsc-punjab-civil-services/ppsc-pcs-2020-syllabus-and-information.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-anganwadi-supervisor/2022-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-question-paper-set-c.pdf",
+   "url": "/content/previous-year-questions/psssb-anganwadi-supervisor/2022-question-paper-set-c.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-accounts/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-accounts/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-accounts/2021-question-paper-11-dec.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-accounts/2021-question-paper-11-dec.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-accounts/2022-official-answer-key-set-d.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-accounts/2022-official-answer-key-set-d.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-accounts/2022-question-paper-19-nov.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-accounts/2022-question-paper-19-nov.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-question-paper-25-jun.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-question-paper-25-jun.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2021-question-paper-11-dec.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2021-question-paper-11-dec.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-a.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-b.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-b.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-c.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-c.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-d.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-d.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-it/2022-question-paper-22-oct.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-it/2022-question-paper-22-oct.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk-legal/2023-question-paper.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk-legal/2023-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk/2021-question-paper-evening-shift.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk/2021-question-paper-evening-shift.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-clerk/2021-question-paper-morning-shift.pdf",
+   "url": "/content/previous-year-questions/psssb-clerk/2021-question-paper-morning-shift.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-dairy-development-inspector/2022-question-paper-set-b.pdf",
+   "url": "/content/previous-year-questions/psssb-dairy-development-inspector/2022-question-paper-set-b.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-driver/2023-question-paper-9-jul.pdf",
+   "url": "/content/previous-year-questions/psssb-driver/2023-question-paper-9-jul.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-excise-taxation-inspector/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-question-paper-3-oct.pdf",
+   "url": "/content/previous-year-questions/psssb-excise-taxation-inspector/2021-question-paper-3-oct.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-official-answer-key-provisional.pdf",
+   "url": "/content/previous-year-questions/psssb-excise-taxation-inspector/2023-official-answer-key-provisional.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-question-paper-set-c.pdf",
+   "url": "/content/previous-year-questions/psssb-excise-taxation-inspector/2023-question-paper-set-c.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
+   "url": "/content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-b-revised.pdf",
+   "url": "/content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-b-revised.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-forest-guard/2022-question-paper-set-a.pdf",
+   "url": "/content/previous-year-questions/psssb-forest-guard/2022-question-paper-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
+   "url": "/content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-forester/2022-question-paper-set-b.pdf",
+   "url": "/content/previous-year-questions/psssb-forester/2022-question-paper-set-b.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-horticulture-supervisor/2022-question-paper-set-a.pdf",
+   "url": "/content/previous-year-questions/psssb-horticulture-supervisor/2022-question-paper-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-hostel-superintendent/2022-question-paper.pdf",
+   "url": "/content/previous-year-questions/psssb-hostel-superintendent/2022-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-1.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-1.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-2.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-2.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-1.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-1.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-2.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-2.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-1.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-1.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-2.pdf",
+   "url": "/content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-2.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-junior-draftsman/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-junior-draftsman/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-junior-draftsman/2021-question-paper-4-oct.pdf",
+   "url": "/content/previous-year-questions/psssb-junior-draftsman/2021-question-paper-4-oct.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-panchayat-secretary/2016-question-paper-oct.pdf",
+   "url": "/content/previous-year-questions/psssb-panchayat-secretary/2016-question-paper-oct.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2016-question-paper-20-nov.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2016-question-paper-20-nov.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2016-question-paper-24-jan.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2016-question-paper-24-jan.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-1-8-aug.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2021-question-paper-paper-1-8-aug.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-2-5-sep.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2021-question-paper-paper-2-5-sep.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-a.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-a.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-patwari/2023-question-paper-joint-exam.pdf",
+   "url": "/content/previous-year-questions/psssb-patwari/2023-question-paper-joint-exam.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-restorer-lab-assistant/2023-question-paper.pdf",
+   "url": "/content/previous-year-questions/psssb-restorer-lab-assistant/2023-question-paper.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-school-librarian/2022-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-school-librarian/2022-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-school-librarian/2022-question-paper-set-c.pdf",
+   "url": "/content/previous-year-questions/psssb-school-librarian/2022-question-paper-set-c.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-chemistry.pdf",
+   "url": "/content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-chemistry.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-mathematics.pdf",
+   "url": "/content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-mathematics.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-steno-typist/2023-question-paper-punjabi-qualifying.pdf",
+   "url": "/content/previous-year-questions/psssb-steno-typist/2023-question-paper-punjabi-qualifying.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-technical-assistant/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-technical-assistant/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-technical-assistant/2021-question-paper-22-aug.pdf",
+   "url": "/content/previous-year-questions/psssb-technical-assistant/2021-question-paper-22-aug.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-veterinary-inspector/2021-official-answer-key.pdf",
+   "url": "/content/previous-year-questions/psssb-veterinary-inspector/2021-official-answer-key.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-veterinary-inspector/2021-question-paper-21-aug.pdf",
+   "url": "/content/previous-year-questions/psssb-veterinary-inspector/2021-question-paper-21-aug.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-veterinary-inspector/2023-official-answer-key-first.pdf",
+   "url": "/content/previous-year-questions/psssb-veterinary-inspector/2023-official-answer-key-first.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/previous-year-questions/psssb-veterinary-inspector/2023-question-paper-7-may.pdf",
+   "url": "/content/previous-year-questions/psssb-veterinary-inspector/2023-question-paper-7-may.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2165,6 +3037,84 @@
    "hub": "strategy.html"
   },
   {
+   "id": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "url": "/pa/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "url": "/pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Head Constable"
+   ],
+   "tags": [
+    "punjab police head constable",
+    "investigation cadre",
+    "syllabus",
+    "exam pattern",
+    "study plan"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-punjab-police-si-syllabus-exam-pattern",
+   "url": "/pa/strategy-punjab-police-si-syllabus-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "url": "/pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI ਸਿਲੇਬਸ, ਪੈਟਰਨ ਅਤੇ ਰੈਂਕ 2 ਰਣਨੀਤੀ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector"
+   ],
+   "tags": [
+    "punjab police si",
+    "sub inspector",
+    "syllabus",
+    "exam pattern",
+    "study plan"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pdfs.html",
    "url": "/pdfs.html",
    "type": "hub",
@@ -2249,8 +3199,8 @@
    "hub": ""
   },
   {
-   "id": "pyq-2022-question-paper1",
-   "url": "/pyq-2022-question-paper1",
+   "id": "pyq-ppsc-naib-tehsildar-syllabus-and-information",
+   "url": "/pyq-ppsc-naib-tehsildar-syllabus-and-information",
    "type": "document",
    "template": "",
    "title": "",
@@ -2261,11 +3211,11 @@
    "hub": ""
   },
   {
-   "id": "pyq-2022-question-paper1.html",
-   "url": "/pyq-2022-question-paper1.html",
+   "id": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "url": "/pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "type": "previous-year-questions",
    "template": "previous-year-question",
-   "title": "2022 Question paper1",
+   "title": "PPSC Naib Tehsildar Syllabus and Information",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2273,8 +3223,8 @@
    "hub": "previous-year-questions.html"
   },
   {
-   "id": "pyq-2022-question-paper2",
-   "url": "/pyq-2022-question-paper2",
+   "id": "pyq-ppsc-pcs-2020-syllabus-and-information",
+   "url": "/pyq-ppsc-pcs-2020-syllabus-and-information",
    "type": "document",
    "template": "",
    "title": "",
@@ -2285,23 +3235,11 @@
    "hub": ""
   },
   {
-   "id": "pyq-2022-question-paper2-2",
-   "url": "/pyq-2022-question-paper2-2",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "pyq-2022-question-paper2-2.html",
-   "url": "/pyq-2022-question-paper2-2.html",
+   "id": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "url": "/pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "type": "previous-year-questions",
    "template": "previous-year-question",
-   "title": "2022 Question paper2 (Punjab Police Sub Inspector)",
+   "title": "PPSC PCS 2020 Syllabus and Information",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2309,11 +3247,23 @@
    "hub": "previous-year-questions.html"
   },
   {
-   "id": "pyq-2022-question-paper2.html",
-   "url": "/pyq-2022-question-paper2.html",
+   "id": "pyq-psssb-forest-guard-lab-attendant-combined-paper",
+   "url": "/pyq-psssb-forest-guard-lab-attendant-combined-paper",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "url": "/pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "type": "previous-year-questions",
    "template": "previous-year-question",
-   "title": "2022 Question paper2",
+   "title": "PSSSB Forest Guard Lab Attendant Combined Paper",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2333,15 +3283,393 @@
    "hub": ""
   },
   {
+   "id": "pyq/ppsc-cooperative-inspector/index.html",
+   "url": "/pyq/ppsc-cooperative-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Cooperative Inspector Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Cooperative Inspector Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-draftsman/index.html",
+   "url": "/pyq/ppsc-draftsman/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Draftsman & Head Draftsman Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Draftsman & Head Draftsman Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-naib-tehsildar/index.html",
+   "url": "/pyq/ppsc-naib-tehsildar/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Naib Tehsildar Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Naib Tehsildar Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-punjab-civil-services/index.html",
+   "url": "/pyq/ppsc-punjab-civil-services/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Punjab Civil Services (PCS) Papers & Syllabus",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Punjab Civil Services (PCS) Papers & Syllabus"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-anganwadi-supervisor/index.html",
+   "url": "/pyq/psssb-anganwadi-supervisor/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Anganwadi Supervisor Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Anganwadi Supervisor Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-clerk-accounts/index.html",
+   "url": "/pyq/psssb-clerk-accounts/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Clerk Accounts Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Clerk Accounts Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "url": "/pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Clerk cum Data Entry Operator Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Clerk cum Data Entry Operator Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-clerk-it/index.html",
+   "url": "/pyq/psssb-clerk-it/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Clerk IT Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Clerk IT Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-clerk-legal/index.html",
+   "url": "/pyq/psssb-clerk-legal/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Clerk Legal Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Clerk Legal Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-clerk/index.html",
+   "url": "/pyq/psssb-clerk/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Clerk Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Clerk Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-dairy-development-inspector/index.html",
+   "url": "/pyq/psssb-dairy-development-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Dairy Development Inspector Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Dairy Development Inspector Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-driver/index.html",
+   "url": "/pyq/psssb-driver/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Driver Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Driver Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-excise-taxation-inspector/index.html",
+   "url": "/pyq/psssb-excise-taxation-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Excise & Taxation Inspector Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Excise & Taxation Inspector Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-forest-guard/index.html",
+   "url": "/pyq/psssb-forest-guard/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Forest Guard Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Forest Guard Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-forester/index.html",
+   "url": "/pyq/psssb-forester/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Forester Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Forester Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-horticulture-supervisor/index.html",
+   "url": "/pyq/psssb-horticulture-supervisor/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Supervisor (Horticulture) Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Supervisor (Horticulture) Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-hostel-superintendent/index.html",
+   "url": "/pyq/psssb-hostel-superintendent/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Hostel Superintendent cum PTI Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Hostel Superintendent cum PTI Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-jail-warder/index.html",
+   "url": "/pyq/psssb-jail-warder/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Jail Warder Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Jail Warder Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-junior-draftsman/index.html",
+   "url": "/pyq/psssb-junior-draftsman/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Junior Draftsman (Civil) Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Junior Draftsman (Civil) Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-panchayat-secretary/index.html",
+   "url": "/pyq/psssb-panchayat-secretary/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Panchayat Secretary Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Panchayat Secretary Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-patwari/index.html",
+   "url": "/pyq/psssb-patwari/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Patwari Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Patwari Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-restorer-lab-assistant/index.html",
+   "url": "/pyq/psssb-restorer-lab-assistant/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Restorer & Lab Assistant (Agriculture) Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Restorer & Lab Assistant (Agriculture) Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-school-librarian/index.html",
+   "url": "/pyq/psssb-school-librarian/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB School Librarian Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB School Librarian Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-senior-technical-assistant/index.html",
+   "url": "/pyq/psssb-senior-technical-assistant/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Senior Technical Assistant Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Senior Technical Assistant Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-steno-typist/index.html",
+   "url": "/pyq/psssb-steno-typist/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Steno-Typist Punjabi Qualifying Paper",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Steno-Typist Punjabi Qualifying Paper"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-technical-assistant/index.html",
+   "url": "/pyq/psssb-technical-assistant/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Technical Assistant Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Technical Assistant Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-veterinary-inspector/index.html",
+   "url": "/pyq/psssb-veterinary-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Veterinary Inspector Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Veterinary Inspector Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq/punjab-police-constable-intelligence-investigation/index.html",
    "url": "/pyq/punjab-police-constable-intelligence-investigation/index.html",
    "type": "page",
    "template": "",
-   "title": "Punjab Police Constable Intelligence Investigation Previous Year Papers",
+   "title": "Punjab Police Intelligence Constable Previous Year Papers",
    "lang": "en",
    "subjects": [],
    "exams": [
-    "Punjab Police Constable Intelligence Investigation Previous Year Papers"
+    "Punjab Police Intelligence Constable Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -2603,6 +3931,84 @@
     "syllabus",
     "exam pattern",
     "2026",
+    "study plan"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "url": "/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "url": "/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab Police Head Constable Syllabus & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Head Constable"
+   ],
+   "tags": [
+    "punjab police head constable",
+    "investigation cadre",
+    "syllabus",
+    "exam pattern",
+    "study plan"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-punjab-police-si-syllabus-exam-pattern",
+   "url": "/strategy-punjab-police-si-syllabus-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "url": "/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab Police SI & ASI Syllabus, Pattern & Rank 2 Plan",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector"
+   ],
+   "tags": [
+    "punjab police si",
+    "sub inspector",
+    "syllabus",
+    "exam pattern",
     "study plan"
    ],
    "hub": "strategy.html"
@@ -3061,25 +4467,7 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-preparation-strategy.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-preparation-strategy.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-preparation-strategy.html",
-   "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3091,7 +4479,13 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
-   "to": "study-notes.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3187,25 +4581,7 @@
   },
   {
    "from": "archive-tag-exam-pattern.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-exam-pattern.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-exam-pattern.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-exam-pattern.html",
-   "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3217,6 +4593,54 @@
   },
   {
    "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-investigation-cadre.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -3264,14 +4688,92 @@
    "weight": 1
   },
   {
-   "from": "archive-tag-study-plan.html",
+   "from": "archive-tag-punjab-police-head-constable.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-tag-study-plan.html",
+   "from": "archive-tag-punjab-police-head-constable.html",
    "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-head-constable.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-head-constable.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-head-constable.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-head-constable.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-head-constable.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3283,24 +4785,60 @@
   },
   {
    "from": "archive-tag-study-plan.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-study-plan.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-study-plan.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-tag-study-plan.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-plan.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sub-inspector.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -3313,25 +4851,7 @@
   },
   {
    "from": "archive-tag-syllabus.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-syllabus.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-syllabus.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-syllabus.html",
-   "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3343,7 +4863,13 @@
   },
   {
    "from": "archive-tag-syllabus.html",
-   "to": "study-notes.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3409,13 +4935,37 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-investigation-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-punjab-police-constable.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-study-plan.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-sub-inspector.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3637,25 +5187,49 @@
   },
   {
    "from": "archives.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "pyq-2022-question-paper2.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3667,25 +5241,7 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "live-sessions.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3697,13 +5253,13 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "punjab-exams.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "quiz.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3715,7 +5271,13 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "strategy.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3823,13 +5385,13 @@
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3871,7 +5433,7 @@
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -3901,13 +5463,13 @@
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -3949,7 +5511,7 @@
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -3979,13 +5541,13 @@
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4027,7 +5589,7 @@
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -4495,13 +6057,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4597,13 +6159,13 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4681,13 +6243,13 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4765,13 +6327,13 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4849,13 +6411,13 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4933,13 +6495,13 @@
   },
   {
    "from": "material-m-s-word.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-m-s-word.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5017,13 +6579,13 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5101,13 +6663,13 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5185,13 +6747,13 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5269,13 +6831,13 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-number-series-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5353,13 +6915,13 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5437,13 +6999,13 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5527,13 +7089,13 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5611,13 +7173,13 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5695,13 +7257,13 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5785,13 +7347,13 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5869,13 +7431,13 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5959,13 +7521,13 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6049,13 +7611,13 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-3-english.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6145,13 +7707,13 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6241,13 +7803,13 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6337,13 +7899,13 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6427,13 +7989,13 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6517,13 +8079,13 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6601,13 +8163,13 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6685,13 +8247,13 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6769,13 +8331,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6853,13 +8415,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6937,13 +8499,13 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7021,13 +8583,13 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7213,7 +8775,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7279,24 +8841,396 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper1.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-investigation-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-police-head-constable-notification-2021.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "exam-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "leaderboard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-police-sub-inspector-notification-2023.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "exam-punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -7375,25 +9309,187 @@
   },
   {
    "from": "previous-year-questions.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "previous-year-questions.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "previous-year-questions.html",
-   "to": "pyq-2022-question-paper2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "previous-year-questions.html",
    "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-cooperative-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-naib-tehsildar/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-punjab-civil-services/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-anganwadi-supervisor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-clerk-accounts/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-clerk-it/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-clerk-legal/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-dairy-development-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-driver/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-excise-taxation-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-forest-guard/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-forester/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-horticulture-supervisor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-hostel-superintendent/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-jail-warder/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-junior-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-panchayat-secretary/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-patwari/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-restorer-lab-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-school-librarian/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-senior-technical-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-steno-typist/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-technical-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-veterinary-inspector/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7422,219 +9518,2139 @@
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "to": "content/previous-year-questions/ppsc-naib-tehsildar/ppsc-naib-tehsildar-syllabus-and-information.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "previous-year-questions.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
-   "to": "pyq-2022-question-paper1",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper1.html",
-   "to": "pyq-2022-question-paper2.html",
+   "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
-   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "to": "content/previous-year-questions/ppsc-punjab-civil-services/ppsc-pcs-2020-syllabus-and-information.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "previous-year-questions.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
-   "to": "pyq-2022-question-paper2-2",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
-   "to": "pyq-2022-question-paper1.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2-2.html",
-   "to": "pyq-2022-question-paper2.html",
+   "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "ca-current-affairs-july.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
-   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "previous-year-questions.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
-   "to": "pyq-2022-question-paper2",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "material-part-1-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
-   "to": "pyq-2022-question-paper1.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "pyq-2022-question-paper2.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "content/previous-year-questions/ppsc-cooperative-inspector/2022-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "pyq/ppsc-cooperative-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-cooperative-inspector/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "content/previous-year-questions/ppsc-draftsman/2022-question-paper-all-sets.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "pyq/ppsc-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-draftsman/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "content/previous-year-questions/ppsc-naib-tehsildar/2022-official-answer-key-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "content/previous-year-questions/ppsc-naib-tehsildar/2022-question-paper-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "content/previous-year-questions/ppsc-naib-tehsildar/2023-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "content/previous-year-questions/ppsc-naib-tehsildar/2023-question-paper-18-jun.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "exam-naib-tehsildar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "pyq/ppsc-naib-tehsildar/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-naib-tehsildar/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "exam-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "pyq/ppsc-punjab-civil-services/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-punjab-civil-services/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-question-paper-set-c.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "pyq/psssb-anganwadi-supervisor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-anganwadi-supervisor/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-accounts/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-accounts/2021-question-paper-11-dec.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-accounts/2022-official-answer-key-set-d.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-accounts/2022-question-paper-19-nov.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "pyq/psssb-clerk-accounts/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-accounts/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-question-paper-25-jun.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2021-question-paper-11-dec.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-b.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-c.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-d.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-it/2022-question-paper-22-oct.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "pyq/psssb-clerk-it/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-it/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "content/previous-year-questions/psssb-clerk-legal/2023-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "pyq/psssb-clerk-legal/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk-legal/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "content/previous-year-questions/psssb-clerk/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "content/previous-year-questions/psssb-clerk/2021-question-paper-evening-shift.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "content/previous-year-questions/psssb-clerk/2021-question-paper-morning-shift.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "pyq/psssb-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-clerk/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-dairy-development-inspector/2022-question-paper-set-b.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "pyq/psssb-dairy-development-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-dairy-development-inspector/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "content/previous-year-questions/psssb-driver/2023-question-paper-9-jul.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "pyq/psssb-driver/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-driver/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-question-paper-3-oct.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-official-answer-key-provisional.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-question-paper-set-c.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "exam-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "pyq/psssb-excise-taxation-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-excise-taxation-inspector/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-b-revised.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "content/previous-year-questions/psssb-forest-guard/2022-question-paper-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "exam-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "pyq/psssb-forest-guard/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forest-guard/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "content/previous-year-questions/psssb-forester/2022-question-paper-set-b.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "pyq/psssb-forester/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-forester/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "content/previous-year-questions/psssb-horticulture-supervisor/2022-question-paper-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "pyq/psssb-horticulture-supervisor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-horticulture-supervisor/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "content/previous-year-questions/psssb-hostel-superintendent/2022-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "pyq/psssb-hostel-superintendent/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-1.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-1.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-1.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "exam-punjab-police-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "pyq/psssb-jail-warder/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-jail-warder/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "content/previous-year-questions/psssb-junior-draftsman/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "content/previous-year-questions/psssb-junior-draftsman/2021-question-paper-4-oct.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "pyq/psssb-junior-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "content/previous-year-questions/psssb-panchayat-secretary/2016-question-paper-oct.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "pyq/psssb-panchayat-secretary/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-panchayat-secretary/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2016-question-paper-20-nov.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2016-question-paper-24-jan.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-1-8-aug.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-2-5-sep.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-a.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "content/previous-year-questions/psssb-patwari/2023-question-paper-joint-exam.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "exam-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "pyq/psssb-patwari/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-patwari/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "content/previous-year-questions/psssb-restorer-lab-assistant/2023-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "pyq/psssb-restorer-lab-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-restorer-lab-assistant/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "content/previous-year-questions/psssb-school-librarian/2022-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "content/previous-year-questions/psssb-school-librarian/2022-question-paper-set-c.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "pyq/psssb-school-librarian/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-school-librarian/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-chemistry.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-mathematics.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "pyq/psssb-senior-technical-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-senior-technical-assistant/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "content/previous-year-questions/psssb-steno-typist/2023-question-paper-punjabi-qualifying.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "pyq/psssb-steno-typist/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-steno-typist/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "content/previous-year-questions/psssb-technical-assistant/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "content/previous-year-questions/psssb-technical-assistant/2021-question-paper-22-aug.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "pyq/psssb-technical-assistant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-technical-assistant/index.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-veterinary-inspector/2021-official-answer-key.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-veterinary-inspector/2021-question-paper-21-aug.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-veterinary-inspector/2023-official-answer-key-first.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "content/previous-year-questions/psssb-veterinary-inspector/2023-question-paper-7-may.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "pyq/psssb-veterinary-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "study.html",
+   "rel": "contextual",
    "weight": 1
   },
   {
@@ -7646,6 +11662,18 @@
   {
    "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
    "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+   "to": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -7676,18 +11704,6 @@
   {
    "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
    "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-   "to": "pyq-2022-question-paper1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7867,6 +11883,12 @@
   },
   {
    "from": "pyq/punjab-police-sub-inspector/index.html",
+   "to": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-police-sub-inspector/index.html",
    "to": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
    "rel": "contextual",
    "weight": 1
@@ -7904,12 +11926,6 @@
   {
    "from": "pyq/punjab-police-sub-inspector/index.html",
    "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pyq/punjab-police-sub-inspector/index.html",
-   "to": "pyq-2022-question-paper2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8215,13 +12231,19 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "previous-year-questions.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper2-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8293,19 +12315,19 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper1.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pyq-2022-question-paper2.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -8316,26 +12338,338 @@
    "weight": 1
   },
   {
-   "from": "strategy.html",
-   "to": "archives.html",
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "strategy.html",
-   "to": "articles.html",
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "strategy.html",
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-investigation-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-police-head-constable-notification-2021.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "exam-punjab-police-head-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "leaderboard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-police-sub-inspector-notification-2023.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "exam-punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy.html",
-   "to": "live-sessions.html",
+   "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8347,25 +12681,31 @@
   },
   {
    "from": "strategy.html",
-   "to": "pdfs.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy.html",
-   "to": "quiz.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9082,7 +13422,9 @@
    "clusters": [
     "category-gk-punjab-gk.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html"
+   ]
   },
   {
    "id": "exam:punjab-police-intelligence-assistant",
@@ -9196,7 +13538,9 @@
     "topic-computer-ms-word-part-2.html"
    ],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   },
   {
@@ -9222,7 +13566,9 @@
    "hub": "subject-english.html",
    "clusters": [],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   },
   {
@@ -9255,7 +13601,9 @@
     "topic-gk-sikhism-part4-20-mcqs.html"
    ],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   },
   {
@@ -9266,7 +13614,9 @@
    "hub": "subject-punjabi.html",
    "clusters": [],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   },
   {
@@ -9277,7 +13627,9 @@
    "hub": "subject-quant.html",
    "clusters": [],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   },
   {
@@ -9294,7 +13646,9 @@
     "topic-reasoning-number-series-part-4.html"
    ],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+    "strategy-punjab-police-si-syllabus-exam-pattern.html"
    ]
   }
  ]

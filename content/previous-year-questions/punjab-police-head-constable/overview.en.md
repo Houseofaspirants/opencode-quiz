@@ -8,7 +8,8 @@ never held back while it waits for its key.
 
 ## About the exam
 
-Head Constable is the communication and clerical tier of Punjab Police.
+Head Constable (Investigation Cadre) is a graduate-level direct recruitment in
+Punjab Police: two papers of 100 questions each, with negative marking.
 Punjabi, English and general knowledge carry the paper, and computer
 awareness is worth real marks. Attempt the first paper untimed, to learn the
 shape of the thing; attempt the second strictly timed, to learn what the

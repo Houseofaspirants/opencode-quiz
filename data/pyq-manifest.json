@@ -1,69 +1,1966 @@
 {
   "version": 1,
   "domain": "https://houseofaspirants.in",
-  "total": 4,
-  "papers": 7,
-  "keys": 0,
+  "total": 31,
+  "papers": 52,
+  "keys": 17,
   "exams": [
     {
-      "id": "punjab-police-constable-intelligence-investigation",
-      "slug": "punjab-police-constable-intelligence-investigation",
-      "title": "Punjab Police Constable Intelligence Investigation Previous Year Papers",
-      "organization": "Punjab Police",
+      "id": "ppsc-cooperative-inspector",
+      "slug": "ppsc-cooperative-inspector",
+      "title": "PPSC Cooperative Inspector Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "ppsc-cooperative-inspector",
       "category": "Punjab state exams",
       "languages": [
-        "en"
+        "en",
+        "pa"
       ],
-      "description": "Punjab Police Constable Intelligence Investigation Previous Year Papers from Punjab Police - question papers and official answer keys by year, with a download for each document.",
-      "overview": {},
+      "description": "Free PPSC Cooperative Inspector previous year question papers with official answer keys, sorted year by year - download every PPSC paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Cooperative Inspector paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper (Set A)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-cooperative-inspector/2022-question-paper.pdf",
+              "filename": "2022-question-paper.pdf",
+              "label": "",
+              "title": "2022 Question Paper",
+              "size": 1956663,
+              "sizeLabel": "1.9 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/ppsc-cooperative-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-cooperative-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-draftsman",
+      "slug": "ppsc-draftsman",
+      "title": "PPSC Draftsman & Head Draftsman Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "ppsc-draftsman",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Draftsman & Head Draftsman previous year question papers with official answer keys, sorted year by year - download every PPSC paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Draftsman & Head Draftsman paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper, all sets in one file\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਡਰਾਫ਼ਟਸਮੈਨ ਅਤੇ ਹੈੱਡ ਡਰਾਫ਼ਟਸਮੈਨ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਸਾਰੇ sets ਇੱਕੋ file ਵਿੱਚ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-draftsman/2022-question-paper-all-sets.pdf",
+              "filename": "2022-question-paper-all-sets.pdf",
+              "label": "All Sets",
+              "title": "2022 Question Paper All Sets",
+              "size": 1182187,
+              "sizeLabel": "1.1 MB",
+              "pages": 84,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/ppsc-draftsman/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-draftsman",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-naib-tehsildar",
+      "slug": "ppsc-naib-tehsildar",
+      "title": "PPSC Naib Tehsildar Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "naib-tehsildar",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Naib Tehsildar previous year question papers from PPSC, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Naib Tehsildar paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper (Set A) with the revised official answer key\n- 2023: re-conducted exam held on 18 June 2023, with the official answer key\n- Official syllabus and general information for the 78 Naib Tehsildar posts\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A) ਅਤੇ revised official answer key\n- 2023: 18 ਜੂਨ 2023 ਨੂੰ ਦੁਬਾਰਾ ਹੋਇਆ ਪੇਪਰ, official answer key ਸਮੇਤ\n- 78 ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਅਸਾਮੀਆਂ ਦਾ official ਸਿਲੇਬਸ ਅਤੇ ਜਾਣਕਾਰੀ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-naib-tehsildar/2023-question-paper-18-jun.pdf",
+              "filename": "2023-question-paper-18-jun.pdf",
+              "label": "18 Jun",
+              "title": "2023 Question Paper 18 Jun",
+              "size": 7313428,
+              "sizeLabel": "7.0 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/ppsc-naib-tehsildar/2023-official-answer-key.pdf",
+            "filename": "2023-official-answer-key.pdf",
+            "label": "",
+            "title": "2023 Official Answer Key",
+            "size": 44659,
+            "sizeLabel": "43 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/ppsc-naib-tehsildar/2023-official-answer-key.pdf",
+              "filename": "2023-official-answer-key.pdf",
+              "label": "",
+              "title": "2023 Official Answer Key",
+              "size": 44659,
+              "sizeLabel": "43 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-naib-tehsildar/2022-question-paper-set-a.pdf",
+              "filename": "2022-question-paper-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Question Paper Set a",
+              "size": 1833746,
+              "sizeLabel": "1.7 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/ppsc-naib-tehsildar/2022-official-answer-key-set-a.pdf",
+            "filename": "2022-official-answer-key-set-a.pdf",
+            "label": "Set A",
+            "title": "2022 Official Answer Key Set a",
+            "size": 93492,
+            "sizeLabel": "91 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/ppsc-naib-tehsildar/2022-official-answer-key-set-a.pdf",
+              "filename": "2022-official-answer-key-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Official Answer Key Set a",
+              "size": 93492,
+              "sizeLabel": "91 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [
+        {
+          "path": "content/previous-year-questions/ppsc-naib-tehsildar/ppsc-naib-tehsildar-syllabus-and-information.pdf",
+          "filename": "ppsc-naib-tehsildar-syllabus-and-information.pdf",
+          "label": "",
+          "title": "PPSC Naib Tehsildar Syllabus and Information",
+          "size": 1454379,
+          "sizeLabel": "1.4 MB",
+          "pages": 0,
+          "language": "en",
+          "published": "2026-10-02",
+          "modified": "2026-10-02"
+        }
+      ],
+      "years": 2,
+      "count": 2,
+      "keys": 2,
+      "keyFiles": 2,
+      "file": "pyq/ppsc-naib-tehsildar/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-naib-tehsildar",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-punjab-civil-services",
+      "slug": "ppsc-punjab-civil-services",
+      "title": "PPSC Punjab Civil Services (PCS) Papers & Syllabus",
+      "organization": "PPSC",
+      "exam": "punjab-pcs",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Punjab Civil Services (PCS) previous year question papers with official answer keys, sorted year by year - download every PPSC paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Punjab Civil Services (PCS) paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- Official syllabus and general information for the PCS Combined Competitive Examination 2020\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਪੰਜਾਬ ਸਿਵਲ ਸੇਵਾਵਾਂ (PCS) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- PCS ਸੰਯੁਕਤ ਮੁਕਾਬਲਾ ਪ੍ਰੀਖਿਆ 2020 ਦਾ official ਸਿਲੇਬਸ ਅਤੇ ਜਾਣਕਾਰੀ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [],
+      "others": [
+        {
+          "path": "content/previous-year-questions/ppsc-punjab-civil-services/ppsc-pcs-2020-syllabus-and-information.pdf",
+          "filename": "ppsc-pcs-2020-syllabus-and-information.pdf",
+          "label": "",
+          "title": "PPSC PCS 2020 Syllabus and Information",
+          "size": 583162,
+          "sizeLabel": "569 KB",
+          "pages": 37,
+          "language": "en",
+          "published": "2026-10-02",
+          "modified": "2026-10-02"
+        }
+      ],
+      "years": 0,
+      "count": 0,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/ppsc-punjab-civil-services/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-punjab-civil-services",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-anganwadi-supervisor",
+      "slug": "psssb-anganwadi-supervisor",
+      "title": "PSSSB Anganwadi Supervisor Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-anganwadi-supervisor",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Anganwadi Supervisor previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Anganwadi Supervisor paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: paper of 25 September 2022 (Set C), with the final answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਆਂਗਣਵਾੜੀ ਸੁਪਰਵਾਈਜ਼ਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: 25 ਸਤੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set C), final answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-question-paper-set-c.pdf",
+              "filename": "2022-question-paper-set-c.pdf",
+              "label": "Set C",
+              "title": "2022 Question Paper Set C",
+              "size": 2013876,
+              "sizeLabel": "1.9 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-official-answer-key.pdf",
+            "filename": "2022-official-answer-key.pdf",
+            "label": "",
+            "title": "2022 Official Answer Key",
+            "size": 271049,
+            "sizeLabel": "264 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-anganwadi-supervisor/2022-official-answer-key.pdf",
+              "filename": "2022-official-answer-key.pdf",
+              "label": "",
+              "title": "2022 Official Answer Key",
+              "size": 271049,
+              "sizeLabel": "264 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-anganwadi-supervisor/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-anganwadi-supervisor",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-clerk-accounts",
+      "slug": "psssb-clerk-accounts",
+      "title": "PSSSB Clerk Accounts Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Clerk Accounts previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Clerk Accounts paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 11 December 2021, with the revised official answer key (all clerk posts)\n- 2022: paper of 19 November 2022, with the answer key for Set D\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (ਅਕਾਊਂਟਸ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 11 ਦਸੰਬਰ 2021 ਦਾ ਪੇਪਰ, revised official answer key ਸਮੇਤ (ਸਾਰੀਆਂ ਕਲਰਕ ਅਸਾਮੀਆਂ)\n- 2022: 19 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ, Set D ਦੀ answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-accounts/2022-question-paper-19-nov.pdf",
+              "filename": "2022-question-paper-19-nov.pdf",
+              "label": "19 Nov",
+              "title": "2022 Question Paper 19 Nov",
+              "size": 5106547,
+              "sizeLabel": "4.9 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-accounts/2022-official-answer-key-set-d.pdf",
+            "filename": "2022-official-answer-key-set-d.pdf",
+            "label": "Set D",
+            "title": "2022 Official Answer Key Set D",
+            "size": 398807,
+            "sizeLabel": "389 KB",
+            "pages": 3,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-accounts/2022-official-answer-key-set-d.pdf",
+              "filename": "2022-official-answer-key-set-d.pdf",
+              "label": "Set D",
+              "title": "2022 Official Answer Key Set D",
+              "size": 398807,
+              "sizeLabel": "389 KB",
+              "pages": 3,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-accounts/2021-question-paper-11-dec.pdf",
+              "filename": "2021-question-paper-11-dec.pdf",
+              "label": "11 Dec",
+              "title": "2021 Question Paper 11 Dec",
+              "size": 1102941,
+              "sizeLabel": "1.1 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-accounts/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 2274670,
+            "sizeLabel": "2.2 MB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-accounts/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 2274670,
+              "sizeLabel": "2.2 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 2,
+      "count": 2,
+      "keys": 2,
+      "keyFiles": 2,
+      "file": "pyq/psssb-clerk-accounts/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-clerk-accounts",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-clerk-cum-data-entry-operator",
+      "slug": "psssb-clerk-cum-data-entry-operator",
+      "title": "PSSSB Clerk cum Data Entry Operator Papers",
+      "organization": "PSSSB",
+      "exam": "clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Clerk cum Data Entry Operator previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Clerk cum Data Entry Operator paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: paper of 25 June 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ-ਕਮ-ਡਾਟਾ ਐਂਟਰੀ ਆਪਰੇਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 25 ਜੂਨ 2023 ਦਾ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-question-paper-25-jun.pdf",
+              "filename": "2023-question-paper-25-jun.pdf",
+              "label": "25 Jun",
+              "title": "2023 Question Paper 25 Jun",
+              "size": 2018630,
+              "sizeLabel": "1.9 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-clerk-cum-data-entry-operator",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-clerk-it",
+      "slug": "psssb-clerk-it",
+      "title": "PSSSB Clerk IT Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Clerk IT previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Clerk IT paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 11 December 2021, with the revised official answer key (all clerk posts)\n- 2022: paper of 22 October 2022, with final answer keys for Sets A, B, C and D\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (IT) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 11 ਦਸੰਬਰ 2021 ਦਾ ਪੇਪਰ, revised official answer key ਸਮੇਤ (ਸਾਰੀਆਂ ਕਲਰਕ ਅਸਾਮੀਆਂ)\n- 2022: 22 ਅਕਤੂਬਰ 2022 ਦਾ ਪੇਪਰ, Set A, B, C ਅਤੇ D ਦੀਆਂ final answer keys ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2022-question-paper-22-oct.pdf",
+              "filename": "2022-question-paper-22-oct.pdf",
+              "label": "22 Oct",
+              "title": "2022 Question Paper 22 Oct",
+              "size": 3504113,
+              "sizeLabel": "3.3 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-a.pdf",
+            "filename": "2022-official-answer-key-set-a.pdf",
+            "label": "Set A",
+            "title": "2022 Official Answer Key Set a",
+            "size": 772361,
+            "sizeLabel": "754 KB",
+            "pages": 2,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-a.pdf",
+              "filename": "2022-official-answer-key-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Official Answer Key Set a",
+              "size": 772361,
+              "sizeLabel": "754 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-b.pdf",
+              "filename": "2022-official-answer-key-set-b.pdf",
+              "label": "Set B",
+              "title": "2022 Official Answer Key Set B",
+              "size": 774055,
+              "sizeLabel": "755 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-c.pdf",
+              "filename": "2022-official-answer-key-set-c.pdf",
+              "label": "Set C",
+              "title": "2022 Official Answer Key Set C",
+              "size": 773679,
+              "sizeLabel": "755 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2022-official-answer-key-set-d.pdf",
+              "filename": "2022-official-answer-key-set-d.pdf",
+              "label": "Set D",
+              "title": "2022 Official Answer Key Set D",
+              "size": 773916,
+              "sizeLabel": "755 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2021-question-paper-11-dec.pdf",
+              "filename": "2021-question-paper-11-dec.pdf",
+              "label": "11 Dec",
+              "title": "2021 Question Paper 11 Dec",
+              "size": 2939418,
+              "sizeLabel": "2.8 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-it/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 2274670,
+            "sizeLabel": "2.2 MB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 2274670,
+              "sizeLabel": "2.2 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 2,
+      "count": 2,
+      "keys": 2,
+      "keyFiles": 5,
+      "file": "pyq/psssb-clerk-it/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-clerk-it",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-clerk-legal",
+      "slug": "psssb-clerk-legal",
+      "title": "PSSSB Clerk Legal Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Clerk Legal previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Clerk Legal paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (ਲੀਗਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-legal/2023-question-paper.pdf",
+              "filename": "2023-question-paper.pdf",
+              "label": "",
+              "title": "2023 Question Paper",
+              "size": 3749310,
+              "sizeLabel": "3.6 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-clerk-legal/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-clerk-legal",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-clerk",
+      "slug": "psssb-clerk",
+      "title": "PSSSB Clerk Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Clerk previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Clerk paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: morning and evening shift papers (exam of 11-12 December 2021), with the revised official answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: ਸਵੇਰ ਅਤੇ ਸ਼ਾਮ ਦੀ ਸ਼ਿਫ਼ਟ ਦੇ ਪੇਪਰ (11-12 ਦਸੰਬਰ 2021), revised official answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
       "papers": [
         {
           "year": "2021",
           "papers": [
             {
-              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
-              "filename": "2021-question-paper.pdf",
-              "title": "2021 Question Paper",
-              "size": 9432472,
-              "sizeLabel": "9.0 MB",
-              "pages": 369,
+              "path": "content/previous-year-questions/psssb-clerk/2021-question-paper-evening-shift.pdf",
+              "filename": "2021-question-paper-evening-shift.pdf",
+              "label": "Evening Shift",
+              "title": "2021 Question Paper Evening Shift",
+              "size": 3910081,
+              "sizeLabel": "3.7 MB",
+              "pages": 0,
               "language": "en",
-              "published": "2026-10-01",
-              "modified": "2026-10-01"
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2021-question-paper-morning-shift.pdf",
+              "filename": "2021-question-paper-morning-shift.pdf",
+              "label": "Morning Shift",
+              "title": "2021 Question Paper Morning Shift",
+              "size": 2699990,
+              "sizeLabel": "2.6 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
             }
           ],
-          "key": null
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 2274670,
+            "sizeLabel": "2.2 MB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 2274670,
+              "sizeLabel": "2.2 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 2,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-clerk/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-clerk",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-dairy-development-inspector",
+      "slug": "psssb-dairy-development-inspector",
+      "title": "PSSSB Dairy Development Inspector Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-dairy-development-inspector",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Dairy Development Inspector previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Dairy Development Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: paper of 20 November 2022 (Set B)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਡੇਅਰੀ ਵਿਕਾਸ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: 20 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set B)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-dairy-development-inspector/2022-question-paper-set-b.pdf",
+              "filename": "2022-question-paper-set-b.pdf",
+              "label": "Set B",
+              "title": "2022 Question Paper Set B",
+              "size": 3278710,
+              "sizeLabel": "3.1 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-dairy-development-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-dairy-development-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-driver",
+      "slug": "psssb-driver",
+      "title": "PSSSB Driver Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-driver",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Driver previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Driver paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: paper of 9 July 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਡਰਾਈਵਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 9 ਜੁਲਾਈ 2023 ਦਾ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-driver/2023-question-paper-9-jul.pdf",
+              "filename": "2023-question-paper-9-jul.pdf",
+              "label": "9 Jul",
+              "title": "2023 Question Paper 9 Jul",
+              "size": 4580089,
+              "sizeLabel": "4.4 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-driver/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-driver",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-excise-taxation-inspector",
+      "slug": "psssb-excise-taxation-inspector",
+      "title": "PSSSB Excise & Taxation Inspector Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "excise-inspector",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Excise & Taxation Inspector previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Excise & Taxation Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 3 October 2021, with the final answer key (Advt. 09 of 2021)\n- 2023: paper of 21 May 2023 (Set C), with the provisional answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 3 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 09 of 2021)\n- 2023: 21 ਮਈ 2023 ਦਾ ਪੇਪਰ (Set C), provisional answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-question-paper-set-c.pdf",
+              "filename": "2023-question-paper-set-c.pdf",
+              "label": "Set C",
+              "title": "2023 Question Paper Set C",
+              "size": 3474346,
+              "sizeLabel": "3.3 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-official-answer-key-provisional.pdf",
+            "filename": "2023-official-answer-key-provisional.pdf",
+            "label": "Provisional",
+            "title": "2023 Official Answer Key Provisional",
+            "size": 201568,
+            "sizeLabel": "196 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2023-official-answer-key-provisional.pdf",
+              "filename": "2023-official-answer-key-provisional.pdf",
+              "label": "Provisional",
+              "title": "2023 Official Answer Key Provisional",
+              "size": 201568,
+              "sizeLabel": "196 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-question-paper-3-oct.pdf",
+              "filename": "2021-question-paper-3-oct.pdf",
+              "label": "3 Oct",
+              "title": "2021 Question Paper 3 Oct",
+              "size": 1618116,
+              "sizeLabel": "1.5 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 420210,
+            "sizeLabel": "410 KB",
+            "pages": 5,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 420210,
+              "sizeLabel": "410 KB",
+              "pages": 5,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 2,
+      "count": 2,
+      "keys": 2,
+      "keyFiles": 2,
+      "file": "pyq/psssb-excise-taxation-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-excise-taxation-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-forest-guard",
+      "slug": "psssb-forest-guard",
+      "title": "PSSSB Forest Guard Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "forest-guard",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Forest Guard previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Forest Guard paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: paper of 13 November 2022 (Set A), with answer keys for Sets A and B\n- An older combined paper for Forest Guard, Lab Attendant, Library Restorer and Assistant Treasurer (year not printed on the paper)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵਣ ਗਾਰਡ (Forest Guard) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: 13 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set A), Set A ਅਤੇ B ਦੀਆਂ answer keys ਸਮੇਤ\n- Forest Guard, Lab Attendant, Library Restorer ਅਤੇ Assistant Treasurer ਦਾ ਇੱਕ ਪੁਰਾਣਾ ਸਾਂਝਾ ਪੇਪਰ (ਪੇਪਰ 'ਤੇ ਸਾਲ ਨਹੀਂ ਛਪਿਆ)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-question-paper-set-a.pdf",
+              "filename": "2022-question-paper-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Question Paper Set a",
+              "size": 2783783,
+              "sizeLabel": "2.7 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
+            "filename": "2022-official-answer-key-set-a.pdf",
+            "label": "Set A",
+            "title": "2022 Official Answer Key Set a",
+            "size": 413606,
+            "sizeLabel": "403 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
+              "filename": "2022-official-answer-key-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Official Answer Key Set a",
+              "size": 413606,
+              "sizeLabel": "403 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-b-revised.pdf",
+              "filename": "2022-official-answer-key-set-b-revised.pdf",
+              "label": "Set B, Revised",
+              "title": "2022 Official Answer Key Set B Revised",
+              "size": 430311,
+              "sizeLabel": "420 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
         }
       ],
       "others": [
         {
-          "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
-          "filename": "2022-question-paper1.pdf",
-          "title": "2022 Question paper1",
-          "size": 25498181,
-          "sizeLabel": "24.3 MB",
-          "pages": 45,
+          "path": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
+          "filename": "psssb-forest-guard-lab-attendant-combined-paper.pdf",
+          "label": "",
+          "title": "PSSSB Forest Guard Lab Attendant Combined Paper",
+          "size": 455993,
+          "sizeLabel": "445 KB",
+          "pages": 20,
           "language": "en",
-          "published": "2026-10-01",
-          "modified": "2026-10-01"
-        },
-        {
-          "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
-          "filename": "2022-question-paper2.pdf",
-          "title": "2022 Question paper2",
-          "size": 11416608,
-          "sizeLabel": "10.9 MB",
-          "pages": 46,
-          "language": "en",
-          "published": "2026-10-01",
-          "modified": "2026-10-01"
+          "published": "2026-10-02",
+          "modified": "2026-10-02"
         }
       ],
       "years": 1,
       "count": 1,
+      "keys": 1,
+      "keyFiles": 2,
+      "file": "pyq/psssb-forest-guard/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-forest-guard",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-forester",
+      "slug": "psssb-forester",
+      "title": "PSSSB Forester Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-forester",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Forester previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Forester paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: paper of 20 November 2022 (Set B)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਫੋਰੈਸਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: 20 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set B)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-forester/2022-question-paper-set-b.pdf",
+              "filename": "2022-question-paper-set-b.pdf",
+              "label": "Set B",
+              "title": "2022 Question Paper Set B",
+              "size": 5957588,
+              "sizeLabel": "5.7 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
       "keys": 0,
-      "file": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-      "url": "https://houseofaspirants.in/pyq/punjab-police-constable-intelligence-investigation",
+      "keyFiles": 0,
+      "file": "pyq/psssb-forester/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-forester",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-hostel-superintendent",
+      "slug": "psssb-hostel-superintendent",
+      "title": "PSSSB Hostel Superintendent cum PTI Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-hostel-superintendent",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Hostel Superintendent cum PTI previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Hostel Superintendent cum PTI paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ-ਕਮ-PTI ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-hostel-superintendent/2022-question-paper.pdf",
+              "filename": "2022-question-paper.pdf",
+              "label": "",
+              "title": "2022 Question Paper",
+              "size": 3783000,
+              "sizeLabel": "3.6 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-hostel-superintendent/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-hostel-superintendent",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-jail-warder",
+      "slug": "psssb-jail-warder",
+      "title": "PSSSB Jail Warder Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "punjab-police-jail-warder",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Jail Warder previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Jail Warder paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: all six shift papers from 27, 28 and 29 August 2021\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 27, 28 ਅਤੇ 29 ਅਗਸਤ 2021 ਦੀਆਂ ਸਾਰੀਆਂ ਛੇ ਸ਼ਿਫ਼ਟਾਂ ਦੇ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-1.pdf",
+              "filename": "2021-question-paper-27-aug-shift-1.pdf",
+              "label": "27 Aug, Shift 1",
+              "title": "2021 Question Paper 27 Aug Shift 1",
+              "size": 2334868,
+              "sizeLabel": "2.2 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-27-aug-shift-2.pdf",
+              "filename": "2021-question-paper-27-aug-shift-2.pdf",
+              "label": "27 Aug, Shift 2",
+              "title": "2021 Question Paper 27 Aug Shift 2",
+              "size": 4228058,
+              "sizeLabel": "4.0 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-1.pdf",
+              "filename": "2021-question-paper-28-aug-shift-1.pdf",
+              "label": "28 Aug, Shift 1",
+              "title": "2021 Question Paper 28 Aug Shift 1",
+              "size": 5398150,
+              "sizeLabel": "5.1 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-28-aug-shift-2.pdf",
+              "filename": "2021-question-paper-28-aug-shift-2.pdf",
+              "label": "28 Aug, Shift 2",
+              "title": "2021 Question Paper 28 Aug Shift 2",
+              "size": 4371193,
+              "sizeLabel": "4.2 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-1.pdf",
+              "filename": "2021-question-paper-29-aug-shift-1.pdf",
+              "label": "29 Aug, Shift 1",
+              "title": "2021 Question Paper 29 Aug Shift 1",
+              "size": 2765250,
+              "sizeLabel": "2.6 MB",
+              "pages": 22,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-2.pdf",
+              "filename": "2021-question-paper-29-aug-shift-2.pdf",
+              "label": "29 Aug, Shift 2",
+              "title": "2021 Question Paper 29 Aug Shift 2",
+              "size": 2779917,
+              "sizeLabel": "2.7 MB",
+              "pages": 21,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 6,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-jail-warder/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-jail-warder",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-junior-draftsman",
+      "slug": "psssb-junior-draftsman",
+      "title": "PSSSB Junior Draftsman (Civil) Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-junior-draftsman",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Junior Draftsman (Civil) previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Junior Draftsman (Civil) paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 4 October 2021, with the final answer key (Advt. 12/2021)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੂਨੀਅਰ ਡਰਾਫ਼ਟਸਮੈਨ (ਸਿਵਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 4 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 12/2021)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-junior-draftsman/2021-question-paper-4-oct.pdf",
+              "filename": "2021-question-paper-4-oct.pdf",
+              "label": "4 Oct",
+              "title": "2021 Question Paper 4 Oct",
+              "size": 1977703,
+              "sizeLabel": "1.9 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-junior-draftsman/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 445189,
+            "sizeLabel": "434 KB",
+            "pages": 5,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-junior-draftsman/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 445189,
+              "sizeLabel": "434 KB",
+              "pages": 5,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-junior-draftsman/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-junior-draftsman",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-restorer-lab-assistant",
+      "slug": "psssb-restorer-lab-assistant",
+      "title": "PSSSB Restorer & Lab Assistant (Agriculture) Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-restorer-lab-assistant",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Restorer & Lab Assistant (Agriculture) previous year question papers from PSSSB, sorted year by year with official answer keys where released.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Restorer & Lab Assistant (Agriculture) paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਰੀਸਟੋਰਰ ਅਤੇ ਲੈਬ ਅਸਿਸਟੈਂਟ (ਖੇਤੀਬਾੜੀ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-restorer-lab-assistant/2023-question-paper.pdf",
+              "filename": "2023-question-paper.pdf",
+              "label": "",
+              "title": "2023 Question Paper",
+              "size": 4348126,
+              "sizeLabel": "4.1 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-restorer-lab-assistant/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-restorer-lab-assistant",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-school-librarian",
+      "slug": "psssb-school-librarian",
+      "title": "PSSSB School Librarian Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-school-librarian",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB School Librarian previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB School Librarian paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper (Set C), with the final answer key (Advt. 04 of 2021)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸਕੂਲ ਲਾਇਬ੍ਰੇਰੀਅਨ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set C), final answer key ਸਮੇਤ (Advt. 04 of 2021)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-school-librarian/2022-question-paper-set-c.pdf",
+              "filename": "2022-question-paper-set-c.pdf",
+              "label": "Set C",
+              "title": "2022 Question Paper Set C",
+              "size": 3781935,
+              "sizeLabel": "3.6 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-school-librarian/2022-official-answer-key.pdf",
+            "filename": "2022-official-answer-key.pdf",
+            "label": "",
+            "title": "2022 Official Answer Key",
+            "size": 797298,
+            "sizeLabel": "778 KB",
+            "pages": 0,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-school-librarian/2022-official-answer-key.pdf",
+              "filename": "2022-official-answer-key.pdf",
+              "label": "",
+              "title": "2022 Official Answer Key",
+              "size": 797298,
+              "sizeLabel": "778 KB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-school-librarian/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-school-librarian",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-senior-technical-assistant",
+      "slug": "psssb-senior-technical-assistant",
+      "title": "PSSSB Senior Technical Assistant Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-senior-technical-assistant",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Senior Technical Assistant previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Senior Technical Assistant paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: Chemistry and Mathematics papers\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸੀਨੀਅਰ ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਰਸਾਇਣ ਵਿਗਿਆਨ (Chemistry) ਅਤੇ ਗਣਿਤ (Mathematics) ਦੇ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-chemistry.pdf",
+              "filename": "2022-question-paper-chemistry.pdf",
+              "label": "Chemistry",
+              "title": "2022 Question Paper Chemistry",
+              "size": 1884152,
+              "sizeLabel": "1.8 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-senior-technical-assistant/2022-question-paper-mathematics.pdf",
+              "filename": "2022-question-paper-mathematics.pdf",
+              "label": "Mathematics",
+              "title": "2022 Question Paper Mathematics",
+              "size": 2437201,
+              "sizeLabel": "2.3 MB",
+              "pages": 23,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 2,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-senior-technical-assistant/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-senior-technical-assistant",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-steno-typist",
+      "slug": "psssb-steno-typist",
+      "title": "PSSSB Steno-Typist Punjabi Qualifying Paper",
+      "organization": "PSSSB",
+      "exam": "psssb-steno-typist",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Steno-Typist Punjabi Qualifying Paper previous year question papers from PSSSB, sorted year by year with official answer keys where released.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Steno-Typist Punjabi Qualifying Paper paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Punjabi qualifying paper of 11 March 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਪੰਜਾਬੀ qualifying ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 11 ਮਾਰਚ 2023 ਦਾ ਪੰਜਾਬੀ qualifying ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-steno-typist/2023-question-paper-punjabi-qualifying.pdf",
+              "filename": "2023-question-paper-punjabi-qualifying.pdf",
+              "label": "Punjabi Qualifying",
+              "title": "2023 Question Paper Punjabi Qualifying",
+              "size": 1270628,
+              "sizeLabel": "1.2 MB",
+              "pages": 0,
+              "language": "pa",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-steno-typist/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-steno-typist",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-horticulture-supervisor",
+      "slug": "psssb-horticulture-supervisor",
+      "title": "PSSSB Supervisor (Horticulture) Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-horticulture-supervisor",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Supervisor (Horticulture) previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Supervisor (Horticulture) paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper (Set A)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸੁਪਰਵਾਈਜ਼ਰ (ਬਾਗ਼ਬਾਨੀ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-horticulture-supervisor/2022-question-paper-set-a.pdf",
+              "filename": "2022-question-paper-set-a.pdf",
+              "label": "Set A",
+              "title": "2022 Question Paper Set a",
+              "size": 4186903,
+              "sizeLabel": "4.0 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-horticulture-supervisor/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-horticulture-supervisor",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-technical-assistant",
+      "slug": "psssb-technical-assistant",
+      "title": "PSSSB Technical Assistant Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-technical-assistant",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Technical Assistant previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Technical Assistant paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 22 August 2021, with the answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 22 ਅਗਸਤ 2021 ਦਾ ਪੇਪਰ, answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-technical-assistant/2021-question-paper-22-aug.pdf",
+              "filename": "2021-question-paper-22-aug.pdf",
+              "label": "22 Aug",
+              "title": "2021 Question Paper 22 Aug",
+              "size": 1954290,
+              "sizeLabel": "1.9 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-technical-assistant/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 1329526,
+            "sizeLabel": "1.3 MB",
+            "pages": 5,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-technical-assistant/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 1329526,
+              "sizeLabel": "1.3 MB",
+              "pages": 5,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-technical-assistant/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-technical-assistant",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-veterinary-inspector",
+      "slug": "psssb-veterinary-inspector",
+      "title": "PSSSB Veterinary Inspector Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-veterinary-inspector",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Veterinary Inspector previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Veterinary Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 21 August 2021, with the final answer key (Advt. 14 of 2021)\n- 2023: Veterinary Inspector & Livestock Supervisor paper of 7 May 2023, with the first answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 21 ਅਗਸਤ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 14 of 2021)\n- 2023: ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਅਤੇ ਲਾਈਵਸਟਾਕ ਸੁਪਰਵਾਈਜ਼ਰ ਦਾ 7 ਮਈ 2023 ਦਾ ਪੇਪਰ, ਪਹਿਲੀ answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-veterinary-inspector/2023-question-paper-7-may.pdf",
+              "filename": "2023-question-paper-7-may.pdf",
+              "label": "7 May",
+              "title": "2023 Question Paper 7 May",
+              "size": 1861589,
+              "sizeLabel": "1.8 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-veterinary-inspector/2023-official-answer-key-first.pdf",
+            "filename": "2023-official-answer-key-first.pdf",
+            "label": "First",
+            "title": "2023 Official Answer Key First",
+            "size": 109305,
+            "sizeLabel": "106 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-veterinary-inspector/2023-official-answer-key-first.pdf",
+              "filename": "2023-official-answer-key-first.pdf",
+              "label": "First",
+              "title": "2023 Official Answer Key First",
+              "size": 109305,
+              "sizeLabel": "106 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-veterinary-inspector/2021-question-paper-21-aug.pdf",
+              "filename": "2021-question-paper-21-aug.pdf",
+              "label": "21 Aug",
+              "title": "2021 Question Paper 21 Aug",
+              "size": 1472648,
+              "sizeLabel": "1.4 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-veterinary-inspector/2021-official-answer-key.pdf",
+            "filename": "2021-official-answer-key.pdf",
+            "label": "",
+            "title": "2021 Official Answer Key",
+            "size": 96748,
+            "sizeLabel": "94 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-veterinary-inspector/2021-official-answer-key.pdf",
+              "filename": "2021-official-answer-key.pdf",
+              "label": "",
+              "title": "2021 Official Answer Key",
+              "size": 96748,
+              "sizeLabel": "94 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 2,
+      "count": 2,
+      "keys": 2,
+      "keyFiles": 2,
+      "file": "pyq/psssb-veterinary-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-veterinary-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-panchayat-secretary",
+      "slug": "psssb-panchayat-secretary",
+      "title": "Punjab Panchayat Secretary Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-panchayat-secretary",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Punjab Panchayat Secretary previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab Panchayat Secretary paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2016: paper of October 2016\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਪੰਚਾਇਤ ਸਕੱਤਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2016: ਅਕਤੂਬਰ 2016 ਦਾ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2016",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-panchayat-secretary/2016-question-paper-oct.pdf",
+              "filename": "2016-question-paper-oct.pdf",
+              "label": "Oct",
+              "title": "2016 Question Paper Oct",
+              "size": 2568716,
+              "sizeLabel": "2.4 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-panchayat-secretary/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-panchayat-secretary",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-patwari",
+      "slug": "psssb-patwari",
+      "title": "Punjab Patwari Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "patwari",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Punjab Patwari previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab Patwari paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2016: papers of 24 January 2016 and 20 November 2016\n- 2021: Paper 1 (8 August 2021) and Paper 2 (5 September 2021)\n- 2023: Patwari and other posts joint exam, with the Set A answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2016: 24 ਜਨਵਰੀ 2016 ਅਤੇ 20 ਨਵੰਬਰ 2016 ਦੇ ਪੇਪਰ\n- 2021: ਪੇਪਰ-1 (8 ਅਗਸਤ 2021) ਅਤੇ ਪੇਪਰ-2 (5 ਸਤੰਬਰ 2021)\n- 2023: ਪਟਵਾਰੀ ਅਤੇ ਹੋਰ ਅਸਾਮੀਆਂ ਦਾ ਸਾਂਝਾ ਪੇਪਰ, Set A answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2023-question-paper-joint-exam.pdf",
+              "filename": "2023-question-paper-joint-exam.pdf",
+              "label": "Joint Exam",
+              "title": "2023 Question Paper Joint Exam",
+              "size": 2798750,
+              "sizeLabel": "2.7 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-a.pdf",
+            "filename": "2023-official-answer-key-set-a.pdf",
+            "label": "Set A",
+            "title": "2023 Official Answer Key Set a",
+            "size": 36611,
+            "sizeLabel": "35 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-10-02",
+            "modified": "2026-10-02"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-a.pdf",
+              "filename": "2023-official-answer-key-set-a.pdf",
+              "label": "Set A",
+              "title": "2023 Official Answer Key Set a",
+              "size": 36611,
+              "sizeLabel": "35 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-1-8-aug.pdf",
+              "filename": "2021-question-paper-paper-1-8-aug.pdf",
+              "label": "Paper 1, 8 Aug",
+              "title": "2021 Question Paper Paper 1 8 Aug",
+              "size": 1181978,
+              "sizeLabel": "1.1 MB",
+              "pages": 17,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2021-question-paper-paper-2-5-sep.pdf",
+              "filename": "2021-question-paper-paper-2-5-sep.pdf",
+              "label": "Paper 2, 5 Sep",
+              "title": "2021 Question Paper Paper 2 5 Sep",
+              "size": 3124097,
+              "sizeLabel": "3.0 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2016",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2016-question-paper-20-nov.pdf",
+              "filename": "2016-question-paper-20-nov.pdf",
+              "label": "20 Nov",
+              "title": "2016 Question Paper 20 Nov",
+              "size": 860037,
+              "sizeLabel": "839 KB",
+              "pages": 13,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2016-question-paper-24-jan.pdf",
+              "filename": "2016-question-paper-24-jan.pdf",
+              "label": "24 Jan",
+              "title": "2016 Question Paper 24 Jan",
+              "size": 2018971,
+              "sizeLabel": "1.9 MB",
+              "pages": 14,
+              "language": "en",
+              "published": "2026-10-02",
+              "modified": "2026-10-02"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 3,
+      "count": 5,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/psssb-patwari/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-patwari",
       "hub": "previous-year-questions.html"
     },
     {
@@ -71,6 +1968,7 @@
       "slug": "punjab-police-constable",
       "title": "Punjab Police Constable Previous Year Papers",
       "organization": "Punjab Police",
+      "exam": "punjab-police-constable",
       "category": "Punjab state exams",
       "languages": [
         "en"
@@ -86,6 +1984,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-constable/2021-question-paper.pdf",
               "filename": "2021-question-paper.pdf",
+              "label": "",
               "title": "2021 Question Paper",
               "size": 23087837,
               "sizeLabel": "22.0 MB",
@@ -95,13 +1994,15 @@
               "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         }
       ],
       "others": [],
       "years": 1,
       "count": 1,
       "keys": 0,
+      "keyFiles": 0,
       "file": "pyq/punjab-police-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-constable",
       "hub": "previous-year-questions.html"
@@ -111,6 +2012,7 @@
       "slug": "punjab-police-head-constable",
       "title": "Punjab Police Head Constable Previous Year Papers",
       "organization": "Punjab Police",
+      "exam": "punjab-police-head-constable",
       "category": "Punjab state exams",
       "languages": [
         "en",
@@ -118,8 +2020,8 @@
       ],
       "description": "Punjab Police Head Constable Previous Year Papers from Punjab Police - question papers and official answer keys by year, with a download for each document.",
       "overview": {
-        "en": "## What is on this page\n\nOne row for every year this exam has been held: the question paper and the\nofficial answer key beside it, each with a download. The files are the ones\nthe conducting body released. Where a key has not been published yet the cell\nreads *Not published* - it is never filled in from memory, and a paper is\nnever held back while it waits for its key.\n\n## About the exam\n\nHead Constable is the communication and clerical tier of Punjab Police.\nPunjabi, English and general knowledge carry the paper, and computer\nawareness is worth real marks. Attempt the first paper untimed, to learn the\nshape of the thing; attempt the second strictly timed, to learn what the\nclock will do to you on exam day. Separate every mistake into a concept gap\nor a speed gap before you move on.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਹਰ ਸਾਲ ਲਈ ਇੱਕ ਲਾਈਨ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ ਅਤੇ ਉਸ ਦੇ ਨਾਲ ਅਧਿਕਾਰਿਤ ਉੱਤਰ-ਕੁੰਜੀ, ਦੋਵਾਂ ਦਾ\nਡਾਊਨਲੋਡ। ਜਿਸ ਸਾਲ ਉੱਤਰ-ਕੁੰਜੀ ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉਸ ਥਾਂ ਲਿਖਿਆ ਹੈ *ਜਾਰੀ ਨਹੀਂ ਕੀਤਾ ਗਿਆ* -\nਇਹ ਕਦੇ ਵੀ ਅੰਦਾਜ਼ੇ ਨਾਲ ਨਹੀਂ ਭਰਿਆ ਜਾਂਦਾ, ਅਤੇ ਪੇਪਰ ਉੱਤਰ-ਕੁੰਜੀ ਦੀ ਉਡੀਕ ਵਿੱਚ ਰੁਕਦਾ ਨਹੀਂ।\n\n## ਪੇਪਰ ਬਾਰੇ\n\nਹੈੱਡ ਕਾਂਸਟੇਬਲ ਪੰਜਾਬ ਪੁਲਿਸ ਦਾ ਸੰਚਾਰ ਅਤੇ ਦਫ਼ਤਰੀ ਪੱਧਰ ਹੈ। ਪੰਜਾਬੀ, ਅੰਗਰੇਜ਼ੀ ਅਤੇ\nਜਨਰਲ ਨਾਲੇ ਕੰਪਿਊਟਰ ਜਾਣਕਾਰੀ ਦੀ ਵੀ ਪੇਪਰ ਵਿੱਚ ਅਹਿਮੀਅਤ ਹੈ। ਪਹਿਲਾਂ ਬਿਨਾਂ ਸਮੇਂ ਹੱਲ ਕਰੋ,\nਫਿਰ ਸਟਾਪਵਾਚ ਨਾਲ, ਅਤੇ ਅੱਗੇ ਵਧਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ\nਵਿੱਚ ਵੰਡੋ।"
+        "en": "## What is on this page\n\nOne row for every year this exam has been held: the question paper and the\nofficial answer key beside it, each with a download. The files are the ones\nthe conducting body released. Where a key has not been published yet the cell\nreads *Not published* - it is never filled in from memory, and a paper is\nnever held back while it waits for its key.\n\n## About the exam\n\nHead Constable (Investigation Cadre) is a graduate-level direct recruitment in\nPunjab Police: two papers of 100 questions each, with negative marking.\nPunjabi, English and general knowledge carry the paper, and computer\nawareness is worth real marks. Attempt the first paper untimed, to learn the\nshape of the thing; attempt the second strictly timed, to learn what the\nclock will do to you on exam day. Separate every mistake into a concept gap\nor a speed gap before you move on.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਹਰ ਸਾਲ ਲਈ ਇੱਕ ਲਾਈਨ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ ਅਤੇ ਉਸ ਦੇ ਨਾਲ ਅਧਿਕਾਰਿਤ ਉੱਤਰ-ਕੁੰਜੀ, ਦੋਵਾਂ ਦਾ\nਡਾਊਨਲੋਡ। ਜਿਸ ਸਾਲ ਉੱਤਰ-ਕੁੰਜੀ ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉਸ ਥਾਂ ਲਿਖਿਆ ਹੈ *ਜਾਰੀ ਨਹੀਂ ਕੀਤਾ ਗਿਆ* -\nਇਹ ਕਦੇ ਵੀ ਅੰਦਾਜ਼ੇ ਨਾਲ ਨਹੀਂ ਭਰਿਆ ਜਾਂਦਾ, ਅਤੇ ਪੇਪਰ ਉੱਤਰ-ਕੁੰਜੀ ਦੀ ਉਡੀਕ ਵਿੱਚ ਰੁਕਦਾ ਨਹੀਂ।\n\n## ਪੇਪਰ ਬਾਰੇ\n\nਹੈੱਡ ਕਾਂਸਟੇਬਲ (ਇਨਵੈਸਟੀਗੇਸ਼ਨ ਕਾਡਰ) ਪੰਜਾਬ ਪੁਲਿਸ ਵਿੱਚ ਗ੍ਰੈਜੂਏਟ ਪੱਧਰ ਦੀ ਸਿੱਧੀ ਭਰਤੀ ਹੈ:\n100-100 ਸਵਾਲਾਂ ਦੇ ਦੋ ਪੇਪਰ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ ਨਾਲ। ਪੰਜਾਬੀ, ਅੰਗਰੇਜ਼ੀ ਅਤੇ\nਜਨਰਲ ਨਾਲੇ ਕੰਪਿਊਟਰ ਜਾਣਕਾਰੀ ਦੀ ਵੀ ਪੇਪਰ ਵਿੱਚ ਅਹਿਮੀਅਤ ਹੈ। ਪਹਿਲਾਂ ਬਿਨਾਂ ਸਮੇਂ ਹੱਲ ਕਰੋ,\nਫਿਰ ਸਟਾਪਵਾਚ ਨਾਲ, ਅਤੇ ਅੱਗੇ ਵਧਣ ਤੋਂ ਪਹਿਲਾਂ ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ\nਵਿੱਚ ਵੰਡੋ।"
       },
       "papers": [
         {
@@ -128,6 +2030,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-head-constable/2022-question-paper.pdf",
               "filename": "2022-question-paper.pdf",
+              "label": "",
               "title": "2022 Question Paper",
               "size": 25498181,
               "sizeLabel": "24.3 MB",
@@ -137,7 +2040,8 @@
               "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         },
         {
           "year": "2021",
@@ -145,6 +2049,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-head-constable/2021-question-paper.pdf",
               "filename": "2021-question-paper.pdf",
+              "label": "",
               "title": "2021 Question Paper",
               "size": 35195764,
               "sizeLabel": "33.6 MB",
@@ -154,15 +2059,94 @@
               "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         }
       ],
       "others": [],
       "years": 2,
       "count": 2,
       "keys": 0,
+      "keyFiles": 0,
       "file": "pyq/punjab-police-head-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-head-constable",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-police-constable-intelligence-investigation",
+      "slug": "punjab-police-constable-intelligence-investigation",
+      "title": "Punjab Police Intelligence Constable Previous Year Papers",
+      "organization": "Punjab Police",
+      "exam": "punjab-police-constable-intelligence-investigation",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Punjab Police Constable (Intelligence & Investigation) previous year question papers, sorted year by year - download every paper as a PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab Police Constable (Intelligence and Investigation cadre) question paper we have, one row per year, with a download for each file. Where an official answer key has not been released, the cell says so.\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ (ਇੰਟੈਲੀਜੈਂਸ ਅਤੇ ਇਨਵੈਸਟੀਗੇਸ਼ਨ ਕਾਡਰ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਹਰ ਸਾਲ ਦੀ ਇੱਕ ਲਾਈਨ, ਹਰ file ਦੇ download ਨਾਲ। ਜਿੱਥੇ official answer key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper1.pdf",
+              "filename": "2022-question-paper1.pdf",
+              "label": "Paper 1",
+              "title": "2022 Question paper1",
+              "size": 25498181,
+              "sizeLabel": "24.3 MB",
+              "pages": 45,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-question-paper2.pdf",
+              "filename": "2022-question-paper2.pdf",
+              "label": "Paper 2",
+              "title": "2022 Question paper2",
+              "size": 11416608,
+              "sizeLabel": "10.9 MB",
+              "pages": 46,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2021-question-paper.pdf",
+              "filename": "2021-question-paper.pdf",
+              "label": "",
+              "title": "2021 Question Paper",
+              "size": 9432472,
+              "sizeLabel": "9.0 MB",
+              "pages": 369,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 2,
+      "count": 3,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/punjab-police-constable-intelligence-investigation/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-police-constable-intelligence-investigation",
       "hub": "previous-year-questions.html"
     },
     {
@@ -170,6 +2154,7 @@
       "slug": "punjab-police-sub-inspector",
       "title": "Punjab Police Sub-Inspector Previous Year Papers",
       "organization": "Punjab Police",
+      "exam": "punjab-police-sub-inspector",
       "category": "Punjab state exams",
       "languages": [
         "en"
@@ -185,6 +2170,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-sub-inspector/2023-question-paper.pdf",
               "filename": "2023-question-paper.pdf",
+              "label": "",
               "title": "2023 Question Paper",
               "size": 25663595,
               "sizeLabel": "24.5 MB",
@@ -194,7 +2180,8 @@
               "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         },
         {
           "year": "2022",
@@ -202,6 +2189,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper.pdf",
               "filename": "2022-question-paper.pdf",
+              "label": "",
               "title": "2022 Question Paper",
               "size": 24480942,
               "sizeLabel": "23.3 MB",
@@ -209,9 +2197,22 @@
               "language": "en",
               "published": "2026-10-01",
               "modified": "2026-10-01"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
+              "filename": "2022-question-paper2.pdf",
+              "label": "Paper 2",
+              "title": "2022 Question paper2",
+              "size": 24719144,
+              "sizeLabel": "23.6 MB",
+              "pages": 0,
+              "language": "en",
+              "published": "2026-10-01",
+              "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         },
         {
           "year": "2021",
@@ -219,6 +2220,7 @@
             {
               "path": "content/previous-year-questions/punjab-police-sub-inspector/2021-question-paper.pdf",
               "filename": "2021-question-paper.pdf",
+              "label": "",
               "title": "2021 Question Paper",
               "size": 27501189,
               "sizeLabel": "26.2 MB",
@@ -228,25 +2230,15 @@
               "modified": "2026-10-01"
             }
           ],
-          "key": null
+          "key": null,
+          "keys": []
         }
       ],
-      "others": [
-        {
-          "path": "content/previous-year-questions/punjab-police-sub-inspector/2022-question-paper2.pdf",
-          "filename": "2022-question-paper2.pdf",
-          "title": "2022 Question paper2",
-          "size": 24719144,
-          "sizeLabel": "23.6 MB",
-          "pages": 0,
-          "language": "en",
-          "published": "2026-10-01",
-          "modified": "2026-10-01"
-        }
-      ],
+      "others": [],
       "years": 3,
-      "count": 3,
+      "count": 4,
       "keys": 0,
+      "keyFiles": 0,
       "file": "pyq/punjab-police-sub-inspector/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-sub-inspector",
       "hub": "previous-year-questions.html"

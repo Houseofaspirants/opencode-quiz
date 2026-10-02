@@ -14,7 +14,6 @@ summary: ਪੇਪਰ-1 ਵਿੱਚ 100 ਸਵਾਲ, 100 ਅੰਕ, 2 ਘੰ�
 seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ 2026 ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ
 keywords: [ਪੰਜਾਬ ਪੁਲਿਸ ਭਰਤੀ 2027, punjab police bharti 2027, ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ, ਪੰਜਾਬ ਪੁਲਿਸ ਭਰਤੀ 2026, ਪੰਜਾਬ ਪੁਲਿਸ ਪੇਪਰ ਪੈਟਰਨ, punjab police constable syllabus 2026, punjab police constable exam pattern, punjab police bharti 2026]
 schemaType: Article
-pdf: assets/pdfs/punjab-police-constable-notification-2026.pdf
 telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [exam-punjab-police-constable.html, previous-year-questions.html, current-affairs.html]
 faq:
@@ -39,7 +38,6 @@ references:
 
 ਮੈਂ ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ-ਇੰਸਪੈਕਟਰ ਦਾ ਪੇਪਰ ਰੈਂਕ 2 ਨਾਲ ਪਾਸ ਕੀਤਾ ਸੀ। ਉਸ ਤਿਆਰੀ ਦਾ ਸਭ ਤੋਂ ਵੱਡਾ ਸਬਕ ਇਹ ਸੀ: **ਕਿਤਾਬ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ ਪੇਪਰ ਦਾ ਪੈਟਰਨ ਸਮਝੋ।** ਹੇਠਾਂ ਦਿੱਤੀ ਸਾਰੀ ਜਾਣਕਾਰੀ ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ 2026 ਦੇ official notification ਤੋਂ ਲਈ ਗਈ ਹੈ, ਤਾਂ ਜੋ ਤੁਸੀਂ ਅਸਲ ਜਾਣਕਾਰੀ ਨਾਲ ਤਿਆਰੀ ਕਰ ਸਕੋ।
 
-**Official notification:** [ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ 2026 ਦਾ notification download ਕਰੋ (PDF, 17 ਪੰਨੇ)](assets/pdfs/punjab-police-constable-notification-2026.pdf)
 
 ## ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਭਰਤੀ 2027: ਅਗਲੀ ਭਰਤੀ
 
@@ -174,3 +172,9 @@ references:
 - [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
 
 ਹਰ set ਮੁਫ਼ਤ ਹੈ, ਪੰਜਾਬੀ ਅਤੇ English ਦੋਵਾਂ ਵਿੱਚ, ਅਤੇ ਹਰ ਜਵਾਬ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ਇੱਕ ਵਾਰ sign in ਕਰੋ, ਤੁਹਾਡਾ ਸਕੋਰ [ਲਾਈਵ ਲੀਡਰਬੋਰਡ](leaderboard.html) 'ਤੇ ਆ ਜਾਵੇਗਾ।
+
+## Official notification download ਕਰੋ
+
+ਉੱਪਰ ਦਿੱਤੀ ਪੂਰੀ ਗਾਈਡ ਪੜ੍ਹਨ ਤੋਂ ਬਾਅਦ, ਅਸਲ notification ਆਪਣੇ ਕੋਲ ਸੰਭਾਲ ਕੇ ਰੱਖੋ।
+
+**[ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ 2026 ਦਾ official notification download ਕਰੋ (PDF, 17 ਪੰਨੇ)](assets/pdfs/punjab-police-constable-notification-2026.pdf)**

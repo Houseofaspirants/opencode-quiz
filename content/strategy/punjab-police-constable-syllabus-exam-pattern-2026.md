@@ -14,7 +14,6 @@ summary: Paper I has 100 questions for 100 marks in 2 hours with no negative mar
 seoTitle: Punjab Police Constable Syllabus 2026 & Exam Pattern
 keywords: [punjab police bharti 2027, punjab police constable 2027, punjab police constable syllabus 2026, punjab police constable exam pattern, punjab police constable 2026, punjab police bharti 2026, punjab police paper pattern, punjab police constable preparation]
 schemaType: Article
-pdf: assets/pdfs/punjab-police-constable-notification-2026.pdf
 telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [exam-punjab-police-constable.html, previous-year-questions.html, current-affairs.html]
 faq:
@@ -39,7 +38,6 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with Rank 2. The single biggest lesson from that preparation: **know the pattern before you open a book.** Everything below comes from the official Punjab Police Constable 2026 notification, so you can prepare from the real thing.
 
-**Official notification:** [Download the Punjab Police Constable 2026 notification (PDF, 17 pages)](assets/pdfs/punjab-police-constable-notification-2026.pdf)
 
 ## Punjab Police Constable 2027: the next recruitment
 
@@ -174,3 +172,9 @@ Start running now. Physical tests come soon after the result, and the 1,600 m in
 - [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
 
 Every set is free, in Punjabi and English, with an explanation for each answer. Sign in once and your score appears on the [live leaderboard](leaderboard.html).
+
+## Download the official notification
+
+Read the full guide above first, then keep the original notification for reference.
+
+**[Download the Punjab Police Constable 2026 official notification (PDF, 17 pages)](assets/pdfs/punjab-police-constable-notification-2026.pdf)**

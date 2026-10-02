@@ -3777,3 +3777,45 @@ body.rbv-open { overflow: hidden; }
 @media (max-width: 560px) { .ca-month .part-meta { flex-basis: 100%; white-space: normal; } }
 .ca-month .badge { margin-right: 6px; vertical-align: middle; }
 
+
+/* Official-notification download at the end of a guide: a Markdown link to a
+   PDF renders as a full-width button, so students find it after reading. */
+.doc-body a[href$=".pdf"] {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin: 14px 0 6px; padding: 14px 18px;
+  border-radius: var(--r-md);
+  background: var(--brand-grad); color: #fff;
+  font-weight: 800; text-decoration: none; text-align: center;
+  box-shadow: var(--shadow);
+}
+.doc-body a[href$=".pdf"]::before { content: "⬇"; font-size: 1.1em; }
+.doc-body a[href$=".pdf"]:hover { filter: brightness(1.06); }
+
+/* pyq.html - search, organisation filter and exam cards. */
+.pyq-tools { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 0 0 22px; }
+.pyq-search {
+  flex: 1 1 260px; min-height: 44px; padding: 10px 14px; font: inherit;
+  color: var(--text); background: var(--surface, var(--bg));
+  border: 1px solid var(--border); border-radius: var(--r-sm, 10px);
+}
+.pyq-search:focus { outline: 2px solid var(--brand); outline-offset: 1px; }
+.pyq-tools .filter-chip { min-height: 36px; cursor: pointer; font: inherit; font-size: 0.9rem; }
+.pyq-group { margin-bottom: 30px; }
+.pyq-group-title { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pyq-group-pa { font-size: 0.9rem; font-weight: 500; color: var(--muted); }
+.pyq-group-count { margin-left: auto; font-size: 0.82rem; font-weight: 500; color: var(--muted); }
+.pyq-exam h3 { font-size: 1.02rem; margin-bottom: 10px; }
+.pyq-exam h3 a { color: inherit; text-decoration: none; }
+.pyq-exam h3 a:hover { color: var(--brand); }
+.pyq-years { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.pyq-year {
+  display: inline-block; padding: 2px 9px; font-size: 0.78rem; font-weight: 600;
+  border-radius: 999px; color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 10%, transparent);
+}
+.pyq-year-none { color: var(--muted); background: color-mix(in srgb, var(--muted) 12%, transparent); }
+.pyq-file { display: inline-block; margin-left: 8px; font-size: 0.85rem; font-weight: 600; }
+.pyq-dl-row { display: block; }
+.pyq-dl-row + .pyq-dl-row { margin-top: 10px; }
+.pyq-exam .btn-row { flex-wrap: nowrap; gap: 8px; }
+.pyq-exam .btn-row .btn { flex: 1 1 0; min-width: 0; justify-content: center; padding-left: 10px; padding-right: 10px; }

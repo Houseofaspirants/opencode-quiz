@@ -4826,7 +4826,9 @@ def _pyq_download(cells):
         return '<span class="pyq-none">Not published</span>'
     many = len(cells) > 1
     return "".join(
-        f'<span class="pyq-dl-row">{_pyq_one_download(c, c["filename"] if many else None)}</span>'
+        f'<span class="pyq-dl-row">'
+        f'{_pyq_one_download(c, c.get("label") or (c["filename"] if many else None))}'
+        f'</span>'
         for c in cells)
 
 
@@ -4834,7 +4836,7 @@ def _pyq_row(paper):
     return (f'<tr><th scope="row" data-label="Year">{esc(paper["year"])}</th>'
             f'<td data-label="Question Paper">{_pyq_download(paper["papers"])}</td>'
             f'<td data-label="Official Answer Key">'
-            f'{_pyq_download([paper["key"]] if paper["key"] else [])}</td>'
+            f'{_pyq_download(paper.get("keys") or ([paper["key"]] if paper["key"] else []))}</td>'
             f'</tr>')
 
 
@@ -4963,7 +4965,7 @@ def pyq_exam_page(exam):
       </div>
     </section>"""
 
-    exam_page = f"exam-{exam['id']}.html"
+    exam_page = f"exam-{exam.get('exam') or exam['id']}.html"
     cross = [a for a in (
         (exam_page, "Exam guide", "Syllabus, pattern and subjects"),
         ("previous-year-questions.html", "Collection",
@@ -5288,26 +5290,43 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
         # The collection hub links them, so a paper is never a dead end and the
         # SEO gate has one static place to check the link from: a new exam
         # appears here the day its folder does, with no page edited by hand.
-        cards = "".join(
-            f'<a class="card card-pad reveal" href="{esc(e["file"])}">'
-            f'<span class="eyebrow">📁 {esc(e["category"])}</span>'
-            f'<h3>{esc(e["title"])}</h3>'
-            f'<p class="text-sm muted">{esc(e["organization"])}</p>'
-            f'<p class="text-sm">{e["years"]} year'
-            f'{"s" if e["years"] != 1 else ""} · {e["count"]} paper'
-            f'{"s" if e["count"] != 1 else ""} · {e["keys"]} answer key'
-            f'{"s" if e["keys"] != 1 else ""}</p>'
-            f'<p class="ilink">Open &rarr;</p></a>'
-            for e in pyq_exams)
-        if cards:
-            sections.append(f"""<section class="section" style="padding-top:0">
+        def _pyq_card(e):
+            years = ", ".join(p["year"] for p in e["papers"][:4])
+            return (f'<a class="card card-pad reveal" href="{esc(e["file"])}">'
+                    f'<span class="eyebrow">📁 {esc(e["organization"])}</span>'
+                    f'<h3>{esc(e["title"])}</h3>'
+                    f'<p class="text-sm muted">{esc(years) or "Papers coming soon"}</p>'
+                    f'<p class="text-sm">{e["count"]} paper'
+                    f'{"s" if e["count"] != 1 else ""} · {e.get("keyFiles", e["keys"])} answer key'
+                    f'{"s" if e.get("keyFiles", e["keys"]) != 1 else ""}</p>'
+                    f'<p class="ilink">Open &rarr;</p></a>')
+        org_order = ["Punjab Police", "PSSSB", "PPSC"]
+        orgs = {}
+        for e in pyq_exams:
+            orgs.setdefault(e["organization"], []).append(e)
+        ordered = sorted(orgs, key=lambda o: (org_order.index(o) if o in org_order
+                                              else len(org_order), o))
+        org_names = {
+            "Punjab Police": "Punjab Police",
+            "PSSSB": "PSSSB - Subordinate Services Selection Board, Punjab",
+            "PPSC": "PPSC - Punjab Public Service Commission",
+        }
+        for n, org in enumerate(ordered):
+            group = orgs[org]
+            cards = "".join(_pyq_card(e) for e in group)
+            papers_n = sum(e["count"] for e in group)
+            intro = ("""
+          <p>Each exam is a folder: its question papers and the official answer
+             keys beside them, one row per year, with a download for each file.</p>"""
+                     if n == 0 else "")
+            browse = ('<a class="btn btn-soft" href="pyq.html">Browse every paper</a>'
+                      if n == 0 else "")
+            sections.append(f"""<section class="section" style="padding-top:0" id="org-{esc(slugify(org))}">
       <div class="container">
         <div class="section-head reveal"><div>
-          <span class="eyebrow">By exam</span>
-          <h2>Papers, exam by exam</h2>
-          <p>Each exam is a folder: its question paper and the official answer
-             key beside it, one row per year, with a download for each file.</p>
-        </div><a class="btn btn-soft" href="pyq.html">Browse every paper</a></div>
+          <span class="eyebrow">{len(group)} exam{"s" if len(group) != 1 else ""} · {papers_n} paper{"s" if papers_n != 1 else ""}</span>
+          <h2>{esc(org_names.get(org, org))}</h2>{intro}
+        </div>{browse}</div>
         <div class="grid grid-3">{cards}</div>
       </div>
     </section>""")
