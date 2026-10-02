@@ -69,25 +69,47 @@
       correct: r.correct, total: r.total, percent: r.percent, at: r.at,
     });
     HOA.db.set("submittedResults", [...submitted, r.id].slice(-50));
-    // Cloud sync — saves the attempt, the leaderboard score and merged stats
-    // to the student's Google account. No-op unless signed in with Firebase.
-    if (HOA.auth) HOA.auth.syncResult(r);
-    // Backend-ready push (assets/js/leaderboard-api.js). Routes to the HTTP
-    // leaderboard API when one is configured in data/site.json and returns
-    // immediately otherwise — the local + cloud writes above are untouched.
-    if (HOA.lbApi) {
-      HOA.lbApi.submit({
-        name: "You", quizName: r.title || "Quiz",
-        score: r.correct, totalQuestions: r.total,
-        accuracy: r.accuracy, timeTaken: r.seconds,
-        attemptDate: r.at || Date.now(),
-      });
+    // Cloud sync — saves the attempt and updates the student's public
+    // leaderboard row. No-op (null) unless signed in with Google.
+    if (HOA.auth) {
+      Promise.resolve(HOA.auth.ready)
+        .then(() => HOA.auth.syncResult(r))
+        .then(showBoardResult)
+        .catch(() => {});
     }
   }
+  showJoinPrompt();
   const rows = HOA.leaderboard.get("all");
   const myIndex = rows.findIndex((x) => x.at === r.at && x.me);
   $("rankVal").textContent = myIndex >= 0 ? `#${myIndex + 1}` : "—";
   $("rankLab").textContent = `of ${rows.length} attempts`;
+
+  /** Signed-in: replace the device-only rank with live leaderboard points. */
+  function showBoardResult(res) {
+    if (!res) return;
+    $("rankVal").textContent = res.gained > 0 ? `+${res.gained}` : `${res.today || 0}`;
+    $("rankLab").innerHTML = res.gained > 0
+      ? `points added · <a href="leaderboard.html">${res.today} today on the leaderboard →</a>`
+      : `points today · <a href="leaderboard.html">best score on this set already counted →</a>`;
+  }
+
+  /** Signed-out: one quiet line inviting the student onto the live board. */
+  function showJoinPrompt() {
+    if (!HOA.auth) return;
+    Promise.resolve(HOA.auth.ready).then(() => {
+      if (HOA.auth.mode !== "firebase" || HOA.auth.cloudEnabled()) return;
+      const lab = $("rankLab");
+      lab.innerHTML = `on this device · <a href="#" id="joinBoard">Sign in to join the live leaderboard</a>`;
+      $("joinBoard").addEventListener("click", (e) => {
+        e.preventDefault();
+        HOA.auth.signIn().then((ok) => {
+          if (!ok) return;
+          // The attempt just finished counts too.
+          HOA.auth.syncResult(r).then(showBoardResult);
+        });
+      });
+    });
+  }
 
   /* -------------------------------------- 4. SUBJECT-WISE PERFORMANCE ---- */
   const bySubject = groupBy(r.review, (x) => x.subject || r.subjectName || "Mixed");

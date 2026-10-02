@@ -17,14 +17,14 @@
     "enabled": true,
     "requireLogin": true,
     "gateQuizzes": false,
-    "preview": true,
+    "preview": false,
     "firebase": {
-      "apiKey": "",
-      "authDomain": "",
-      "projectId": "",
-      "appId": "",
-      "messagingSenderId": "",
-      "storageBucket": ""
+      "apiKey": "AIzaSyASzDD-NJV-oX2xmWeXbbb0JlFACw8AYvk",
+      "authDomain": "houseofaspirants-52875.firebaseapp.com",
+      "projectId": "houseofaspirants-52875",
+      "appId": "1:390220721503:web:63a9966c62774e0e7f9aea",
+      "messagingSenderId": "390220721503",
+      "storageBucket": "houseofaspirants-52875.firebasestorage.app"
     }
   },
   "leaderboard": {

@@ -1,751 +1,347 @@
 /* ============================================================================
- * leaderboard.js | Global Leaderboard page controller
+ * leaderboard.js | Live leaderboard page (UI only — data comes from HOA.lbApi)
  * ----------------------------------------------------------------------------
- * Components (one function each, all pure render + one shared state):
- *   StatsCards · SeasonCard · LeaderboardTabs · Filters · SearchBar
- *   SkeletonLoader · LeaderboardCard · MyRankCard · ProfileModal · QuizBoards
- *
- * Data comes exclusively from HOA.lbApi (assets/js/leaderboard-api.js), which
- * picks the backend. This file never touches a database.
- *
- * Existing behaviour is untouched: HOA.leaderboard (core.js) and
- * HOA.auth.syncResult (auth.js) still record every attempt exactly as before;
- * the global board is a read-side only.
+ * Public to read. Joining needs Google sign-in (HOA.auth.signIn); after that
+ * every finished quiz updates the student's row from result.js.
+ * Punjabi-first copy, re-rendered on the site's language switch (hoa:lang).
  * ========================================================================== */
 (() => {
   "use strict";
 
-  const { esc, fmtTime, countUp } = HOA;
-  const game = HOA.game;
-  const api = HOA.lbApi;
-
+  const HOA = window.HOA;
   const $ = (id) => document.getElementById(id);
-  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const isPhone = () => window.matchMedia("(max-width: 767px)").matches;
+  const esc = (s) => HOA.esc(String(s == null ? "" : s));
+  const fmt = (n) => (Number(n) || 0).toLocaleString("en-IN");
 
-  /* ------------------------------------------------------------- STATE --- */
-  const state = {
-    period: "day",
-    exam: "all",
-    category: "all",
-    sort: "score",
-    search: "",
-    page: 1,
-    entries: [],
-    total: 0,
-    hasMore: false,
-    loading: false,
-    seq: 0,
-    firstPaint: true,
+  const PERIODS = ["day", "week", "month", "all"];
+  let period = PERIODS.includes((location.hash || "").slice(1)) ? location.hash.slice(1) : "day";
+  let state = { status: "loading", rows: [], fetchedAt: 0 };
+  let mine = null;
+  let rankedN = null;
+  let busy = false;
+  let lastForce = 0;
+  let myRowObserver = null;
+
+  /* ---------------------------------------------------------- copy ----- */
+  const pa = () => !HOA.lang || HOA.lang.get() !== "en";
+  const t = (en, pun) => (pa() ? pun : en);
+
+  const COPY = {
+    lbLiveText: ["Live rankings", "ਲਾਈਵ ਰੈਂਕਿੰਗ"],
+    lbTagline: [
+      "Real scores from real Punjab Police and PSSSB aspirants. Every correct answer on the site earns points - sign in once and your name climbs the board automatically after each quiz.",
+      "ਪੰਜਾਬ ਪੁਲਿਸ ਅਤੇ PSSSB ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਅਸਲੀ ਵਿਦਿਆਰਥੀਆਂ ਦੇ ਅਸਲੀ ਸਕੋਰ। ਹਰ ਸਹੀ ਜਵਾਬ ਨਾਲ points ਮਿਲਦੇ ਹਨ - ਇੱਕ ਵਾਰ sign in ਕਰੋ, ਫਿਰ ਹਰ quiz ਤੋਂ ਬਾਅਦ ਤੁਹਾਡਾ ਨਾਮ ਆਪਣੇ ਆਪ ਉੱਪਰ ਚੜ੍ਹੇਗਾ।",
+    ],
+    lbSeasonLab: ["Season", "ਸੀਜ਼ਨ"],
+    lbSumLab1: ["Students ranked", "ਰੈਂਕ ਵਿੱਚ ਵਿਦਿਆਰਥੀ"],
+    lbSumLab2: ["Top score", "ਸਭ ਤੋਂ ਵੱਧ"],
+    lbSumLab3: ["Your rank", "ਤੁਹਾਡਾ ਰੈਂਕ"],
+    lbColName: ["Student", "ਵਿਦਿਆਰਥੀ"],
+    lbColQ: ["Quizzes", "Quiz"],
+    lbColAcc: ["Accuracy", "ਸ਼ੁੱਧਤਾ"],
+    lbColPts: ["Points", "Points"],
+    lbRulesTitle: ["How points work", "Points ਕਿਵੇਂ ਮਿਲਦੇ ਹਨ"],
   };
-
-  const MEDALS = { 1: "🥇", 2: "🥈", 3: "🥉" };
-  const PERIOD_LABEL = { day: "today", week: "this week", month: "this month", all: "all time" };
-
-  /* rAF is throttled (and may never run) in a backgrounded tab — so every
-   * animated value is written to the DOM FIRST and only then animated. A
-   * stuck "0" on a real phone is worse than a missed count-up. */
-  const fmt = (v) => (Number(v) || 0).toLocaleString("en-IN");
-
-  function animNum(el, value, suffix) {
-    const final = fmt(value) + (suffix || "");
-    el.textContent = final;
-    if (!reduce.matches && document.visibilityState === "visible") countUp(el, Number(value) || 0, suffix || "");
-  }
-
-  function growTo(el, pct) {
-    const p = Math.max(0, Math.min(100, Number(pct) || 0));
-    if (reduce.matches || document.visibilityState !== "visible") { el.style.width = p + "%"; return; }
-    el.style.width = "0%";
-    requestAnimationFrame(() => { el.style.width = p + "%"; });
-  }
-
-  /* ================================================= STATS CARDS ========= */
-  const StatsCards = {
-    render(s) {
-      const cards = [
-        { ico: "👨‍🎓", v: s.students, lab: "Total Students" },
-        { ico: "📝", v: s.attempts, lab: "Total Quiz Attempts" },
-        { ico: "🏆", v: s.highestToday, suf: "%", lab: "Highest Score Today" },
-        { ico: "⭐", v: s.accuracy, suf: "%", lab: "Average Accuracy" },
-        { ico: "🔥", v: s.activeToday, lab: "Active Students Today", wide: true },
-      ];
-      const nodes = $("lbStats").querySelectorAll(".lb-stat");
-      cards.forEach((c, i) => {
-        const node = nodes[i];
-        if (!node) return;
-        node.className = "lb-stat" + (c.wide ? " lb-stat--wide" : "");
-        node.innerHTML =
-          `<span class="lb-stat__ico" aria-hidden="true">${c.ico}</span>` +
-          `<b class="lb-stat__num">0</b>` +
-          `<span class="lb-stat__lab">${c.lab}</span>`;
-        const num = node.querySelector(".lb-stat__num");
-        animNum(num, c.v, c.suf || "");
-      });
-    },
+  const TABS = {
+    day: ["Today", "ਅੱਜ"], week: ["This week", "ਇਸ ਹਫ਼ਤੇ"],
+    month: ["This month", "ਇਸ ਮਹੀਨੇ"], all: ["All time", "ਹੁਣ ਤੱਕ"],
   };
+  const RULES = [
+    ["<b>+10</b> for every correct answer", "ਹਰ ਸਹੀ ਜਵਾਬ ਲਈ <b>+10</b>"],
+    ["<b>+50</b> bonus for 100% on a set of 10 or more", "10 ਜਾਂ ਵੱਧ ਸਵਾਲਾਂ ਵਾਲੇ set ਵਿੱਚ 100% ਲਈ <b>+50</b> bonus"],
+    ["Only your <b>best</b> score on a set counts - a retake adds just the improvement",
+      "ਇੱਕ set ਦਾ ਸਿਰਫ਼ ਤੁਹਾਡਾ <b>ਸਭ ਤੋਂ ਵਧੀਆ</b> ਸਕੋਰ ਗਿਣਿਆ ਜਾਂਦਾ ਹੈ - ਦੁਬਾਰਾ ਦੇਣ 'ਤੇ ਸਿਰਫ਼ ਸੁਧਾਰ ਜੁੜਦਾ ਹੈ"],
+    ["The <a href=\"quiz.html?mode=daily\">Daily Challenge</a> is a new set every day",
+      "<a href=\"quiz.html?mode=daily\">Daily Challenge</a> ਹਰ ਰੋਜ਼ ਨਵਾਂ set ਹੁੰਦਾ ਹੈ"],
+    ["Today resets at midnight (IST), the week on Monday, the month on the 1st",
+      "ਅੱਜ ਦਾ ਬੋਰਡ ਰਾਤ 12 ਵਜੇ, ਹਫ਼ਤੇ ਦਾ ਸੋਮਵਾਰ ਨੂੰ ਅਤੇ ਮਹੀਨੇ ਦਾ 1 ਤਾਰੀਖ਼ ਨੂੰ ਨਵਾਂ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ"],
+  ];
+  const PA_MONTHS = ["ਜਨਵਰੀ", "ਫ਼ਰਵਰੀ", "ਮਾਰਚ", "ਅਪ੍ਰੈਲ", "ਮਈ", "ਜੂਨ", "ਜੁਲਾਈ", "ਅਗਸਤ", "ਸਤੰਬਰ", "ਅਕਤੂਬਰ", "ਨਵੰਬਰ", "ਦਸੰਬਰ"];
+  const periodName = (p) => t(TABS[p][0].toLowerCase(), TABS[p][1]);
 
-  /* ================================================== SEASON CARD ======== */
-  const SeasonCard = {
-    render() {
-      const s = game.season();
-      $("lbSeasonTitle").textContent = s.label;
-      $("lbSeasonEnds").textContent = `Ends in ${s.endsInDays} Day${s.endsInDays === 1 ? "" : "s"}`;
-      $("lbSeasonFoot").textContent =
-        `Runs ${s.startedOn} – ${s.endsOn}. Top performers earn exclusive recognition.`;
-      const fill = $("lbSeasonFill");
-      growTo(fill, s.progressPct);
-    },
-  };
-
-  /* ============================================ LEADERBOARD TABS ========= */
-  const LeaderboardTabs = {
-    tabs: [],
-    ink: null,
-    init() {
-      this.tabs = [...document.querySelectorAll(".lb-tab")];
-      this.ink = $("lbTabsInk");
-      this.tabs.forEach((t) => {
-        t.addEventListener("click", () => this.select(t));
-        t.addEventListener("keydown", (e) => {
-          const i = this.tabs.indexOf(t);
-          let n = -1;
-          if (e.key === "ArrowRight") n = (i + 1) % this.tabs.length;
-          if (e.key === "ArrowLeft") n = (i - 1 + this.tabs.length) % this.tabs.length;
-          if (e.key === "Home") n = 0;
-          if (e.key === "End") n = this.tabs.length - 1;
-          if (n >= 0) { e.preventDefault(); this.tabs[n].focus(); this.select(this.tabs[n]); }
-        });
-      });
-      window.addEventListener("resize", () => this.moveInk());
-      this.moveInk();
-    },
-    select(btn) {
-      this.tabs.forEach((t) => {
-        const on = t === btn;
-        t.setAttribute("aria-selected", on ? "true" : "false");
-        t.tabIndex = on ? 0 : -1;
-      });
-      this.moveInk();
-      state.period = btn.dataset.period;
-      state.page = 1;
-      state.entries = [];
-      refresh({ skeleton: true });
-    },
-    moveInk() {
-      const active = this.tabs.find((t) => t.getAttribute("aria-selected") === "true");
-      if (!active || !this.ink) return;
-      const box = active.getBoundingClientRect();
-      const host = active.parentElement.getBoundingClientRect();
-      if (!box.width) return;
-      this.ink.style.width = box.width + "px";
-      this.ink.style.transform = `translateX(${box.left - host.left}px)`;
-      // keep the active tab in view when the strip scrolls
-      active.scrollIntoView({ block: "nearest", inline: "nearest",
-        behavior: reduce.matches ? "auto" : "smooth" });
-    },
-  };
-
-  /* ==================================================== FILTERS ========== */
-  const Filters = {
-    init() {
-      this.renderExams();
-      this.renderCategories();
-      $("lbSort").addEventListener("change", (e) => {
-        state.sort = e.target.value;
-        state.page = 1;
-        refresh({ skeleton: true });
-      });
-    },
-    chips(host, items, key) {
-      host.innerHTML = items
-        .map((it) =>
-          `<button type="button" class="lb-chip" data-val="${esc(it.id)}" ` +
-          `aria-pressed="${state[key] === it.id ? "true" : "false"}">${esc(it.label)}</button>`)
-        .join("");
-      host.querySelectorAll(".lb-chip").forEach((c) =>
-        c.addEventListener("click", () => {
-          state[key] = c.dataset.val;
-          host.querySelectorAll(".lb-chip").forEach((o) =>
-            o.setAttribute("aria-pressed", o === c ? "true" : "false"));
-          c.scrollIntoView({ block: "nearest", inline: "nearest",
-            behavior: reduce.matches ? "auto" : "smooth" });
-          state.page = 1;
-          refresh({ skeleton: true });
-        })
-      );
-    },
-    renderExams() {
-      const tax = api.taxonomy;
-      const items = (tax && tax.examFilters) || [{ id: "all", label: "All Exams" }];
-      this.chips($("lbExamChips"), items, "exam");
-    },
-    renderCategories() {
-      const tax = api.taxonomy;
-      const items = (tax && tax.categoryFilters) || [{ id: "all", label: "All Categories" }];
-      this.chips($("lbCatChips"), items, "category");
-    },
-  };
-
-  /* ==================================================== SEARCH BAR ======= */
-  const SearchBar = {
-    timer: null,
-    init() {
-      const input = $("lbSearch");
-      const clear = $("lbSearchClear");
-      input.addEventListener("input", () => {
-        clear.hidden = !input.value;
-        clearTimeout(this.timer);
-        this.timer = setTimeout(() => {
-          state.search = input.value.trim();
-          state.page = 1;
-          refresh({ skeleton: true });
-        }, 220);
-      });
-      clear.addEventListener("click", () => {
-        input.value = "";
-        clear.hidden = true;
-        input.focus();
-        state.search = "";
-        state.page = 1;
-        refresh({ skeleton: true });
-      });
-    },
-  };
-
-  /* ================================================= SKELETON LOADER ====== */
-  const SkeletonLoader = {
-    show() {
-      $("lbSkeleton").hidden = false;
-      $("lbList").hidden = true;
-      $("lbEmpty").classList.remove("is-on");
-    },
-    hide() {
-      $("lbSkeleton").hidden = true;
-      $("lbList").hidden = false;
-    },
-  };
-
-  /* ================================================= EMPTY STATE ========== */
-  const EmptyState = {
-    set(on, msg) {
-      const box = $("lbEmpty");
-      box.classList.toggle("is-on", !!on);
-      if (on) {
-        const p = box.querySelector("p");
-        p.textContent = msg || "Be the first to complete today's quiz.";
-        $("lbList").hidden = true;
-        $("lbMoreWrap").hidden = true;
-      }
-    },
-  };
-
-  /* =============================================== LEADERBOARD CARD ====== */
-  const LeaderboardCard = {
-    avatar(e, cls) {
-      const hue = game.hueFor(e.userId);
-      const style = `background:linear-gradient(135deg,hsl(${hue} 70% 58%),hsl(${(hue + 42) % 360} 72% 46%))`;
-      const inner = e.profilePhoto
-        ? `<img src="${esc(e.profilePhoto)}" alt="" width="44" height="44" loading="lazy">`
-        : esc(game.initials(e.name));
-      return `<span class="lb-avatar ${cls || ""}" style="${style}" aria-hidden="true">${inner}</span>`;
-    },
-
-    statChips(e) {
-      const chips = [
-        `<span class="lb-ms lb-ms--score">🎯 <b>${e.score}/${e.totalQuestions}</b></span>`,
-        `<span class="lb-ms">📈 <b>${e.accuracy}%</b></span>`,
-        e.timeTaken ? `<span class="lb-ms">⏱ <b>${fmtTime(e.timeTaken)}</b></span>` : "",
-        `<span class="lb-ms lb-ms--streak">🔥 <b>${e.streak}</b> day${e.streak === 1 ? "" : "s"}</span>`,
-        `<span class="lb-ms lb-ms--quiz">📝 <span>${esc(e.quizName)}</span></span>`,
-      ];
-      return chips.join("");
-    },
-
-    badgesHTML(e) {
-      const list = (e.badges || []).filter((b) => b && b.earned);
-      if (!list.length) {
-        return `<span class="lb-kv__k">Badges</span><span class="lb-kv__v">None yet — keep practising</span>`;
-      }
-      return (
-        `<span class="lb-kv__k">Badges</span>` +
-        `<span class="lb-badges" style="margin-top:6px">` +
-        list.map((b) => `<span class="lb-badge" title="${esc(b.desc)}">${b.icon} ${esc(b.name)}</span>`).join("") +
-        `</span>`
-      );
-    },
-
-    kv(k, v) {
-      return `<div class="lb-kv"><span class="lb-kv__k">${k}</span><span class="lb-kv__v">${v}</span></div>`;
-    },
-
-    row(e) {
-      const medal = MEDALS[e.rank];
-      const cls = ["lb-row"];
-      if (e.rank <= 3) cls.push(`lb-row--${e.rank}`);
-      if (e.isMe) cls.push("is-me");
-      const date = e.attemptDate
-        ? new Date(e.attemptDate).toLocaleDateString("en-IN", { day: "numeric", month: "short" })
-        : "—";
-      const earned = (e.badges || []).filter((b) => b && b.earned).length;
-
-      return `<li class="${cls.join(" ")}" data-uid="${esc(e.userId)}" data-rank="${e.rank}">
-        <div class="lb-row__main">
-          <span class="lb-rank" aria-label="Rank ${e.rank}">${medal || e.rank}</span>
-
-          <div class="lb-who">
-            ${this.avatar(e)}
-            <span class="lb-who__txt">
-              <button type="button" class="lb-who__name" data-profile="${esc(e.userId)}">
-                <span>${esc(e.name)}</span>${e.verified ? '<i class="lb-verified" title="Verified account">✔</i>' : ""}
-                ${earned
-                  ? `<i class="lb-sub__b" title="${earned} badge${earned === 1 ? "" : "s"} earned">🏅${earned}</i>`
-                  : ""}
-              </button>
-              <span class="lb-who__sub">
-                <i class="lb-sub__u">@${esc(e.username)}</i>
-                <span class="lb-sub__m"><b>Lv ${e.level}</b> · ${game.fmtInt(e.xp)} XP · ${date}</span>
-                <i class="lb-sub__d">${date}</i>
-                ${e.isMe ? '<span class="lb-you">You</span>' : ""}
-              </span>
-            </span>
-          </div>
-
-          <div class="lb-xp">
-            <span class="lb-xp__lvl">Lv ${e.level}</span>
-            <b class="lb-xp__val">${game.fmtInt(e.xp)}</b>
-            <span class="lb-xp__lab">XP</span>
-          </div>
-
-          <div class="lb-stats-row">${this.statChips(e)}</div>
-
-          <button type="button" class="lb-toggle" aria-expanded="false"
-                  aria-label="Show details for ${esc(e.name)}">▾</button>
-        </div>
-
-        <div class="lb-detail">
-          <div class="lb-detail__grid">
-            ${this.kv("Rank", `#${e.rank}`)}
-            ${this.kv("Level", e.level)}
-            ${this.kv("XP", game.fmtInt(e.xp))}
-            ${this.kv("Score", `${e.score}/${e.totalQuestions}`)}
-            ${this.kv("Accuracy", `${e.accuracy}%`)}
-            ${this.kv("Time Taken", e.timeTaken ? fmtTime(e.timeTaken) : "—")}
-            ${this.kv("Quiz", esc(e.quizName))}
-            ${this.kv("Current Streak", `${e.streak} day${e.streak === 1 ? "" : "s"}`)}
-            ${this.kv("Attempt Date", date)}
-            <div class="lb-kv lb-kv--full">${this.badgesHTML(e)}</div>
-          </div>
-        </div>
-      </li>`;
-    },
-
-    /** FLIP: rows that already existed glide to their new rank. */
-    render(entries) {
-      const list = $("lbList");
-      const first = new Map();
-      if (!state.firstPaint && !reduce.matches) {
-        list.querySelectorAll(".lb-row").forEach((n) =>
-          first.set(n.dataset.uid, n.getBoundingClientRect().top));
-      }
-      const html = entries.map((e) => this.row(e)).join("");
-      if (state.firstPaint) {
-        list.innerHTML = html;
-        if (!reduce.matches) list.querySelectorAll(".lb-row").forEach((n) => n.classList.add("is-enter"));
-        state.firstPaint = false;
-      } else {
-        list.innerHTML = html;
-        if (!reduce.matches && first.size) {
-          list.querySelectorAll(".lb-row").forEach((n) => {
-            const prev = first.get(n.dataset.uid);
-            if (prev == null) return;
-            const dy = prev - n.getBoundingClientRect().top;
-            if (!dy) return;
-            n.style.transition = "none";
-            n.style.transform = `translateY(${dy}px)`;
-            requestAnimationFrame(() => {
-              n.style.transition = "transform .42s cubic-bezier(.22,1,.36,1)";
-              n.style.transform = "";
-            });
-          });
-        }
-      }
-      bindRowInteractions();
-    },
-  };
-
-  function bindRowInteractions() {
-    $("lbList").querySelectorAll(".lb-toggle").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const row = btn.closest(".lb-row");
-        const open = row.classList.toggle("is-open");
-        btn.setAttribute("aria-expanded", open ? "true" : "false");
-      });
+  function applyCopy() {
+    Object.entries(COPY).forEach(([id, [en, pun]]) => {
+      const el = $(id);
+      if (el) { el.textContent = t(en, pun); el.lang = pa() ? "pa" : "en"; }
     });
-    $("lbList").querySelectorAll("[data-profile]").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const entry = state.entries.find((e) => e.userId === btn.dataset.profile);
-        if (entry) ProfileModal.open(entry, btn);
-      });
+    document.querySelectorAll(".lb2-tab").forEach((b) => {
+      const [en, pun] = TABS[b.dataset.period];
+      b.textContent = t(en, pun);
     });
+    $("lbRulesList").innerHTML = RULES.map(([en, pun]) => `<li>${t(en, pun)}</li>`).join("");
+    renderSeason();
   }
 
-  /* ================================================== MY RANK CARD ======= */
-  const MyRankCard = {
-    async render() {
-      const me = await api.myRank({ period: state.period, sort: state.sort });
-      const side = $("lbSide");
-      if (!me || !me.rank) {
-        $("lbMyRankVal").textContent = "—";
-        $("lbMyRankOf").textContent = "Complete a quiz to appear";
-        $("lbMyXp").textContent = "0";
-        $("lbMyFoot").textContent =
-          "Finish your first quiz and your rank, XP and percentile appear here.";
-        side.hidden = false;
-        return;
+  /* -------------------------------------------------------- season ----- */
+  function renderSeason() {
+    const d = new Date(Date.now() + 330 * 60e3);           // IST calendar
+    const y = d.getUTCFullYear(), m = d.getUTCMonth();
+    const start = Date.UTC(y, m, 1), end = Date.UTC(y, m + 1, 1);
+    const left = Math.max(1, Math.ceil((end - d) / 864e5));
+    const pct = Math.round(((d - start) / (end - start)) * 100);
+    const monthEn = new Date(start).toLocaleDateString("en-IN", { month: "long", timeZone: "UTC" });
+    $("lbSeasonTitle").textContent = t(`${monthEn} ${y}`, `${PA_MONTHS[m]} ${y}`);
+    $("lbSeasonFill").style.width = pct + "%";
+    $("lbSeasonFoot").textContent = t(
+      `${left} day${left === 1 ? "" : "s"} left - the month's No. 1 is announced on our Telegram channel.`,
+      `${left} ਦਿਨ ਬਾਕੀ - ਮਹੀਨੇ ਦੇ No. 1 ਦਾ ਐਲਾਨ ਸਾਡੇ Telegram channel 'ਤੇ ਹੋਵੇਗਾ।`);
+  }
+
+  /* --------------------------------------------------------- avatar ---- */
+  function avatar(row) {
+    const g = HOA.game;
+    const ini = g ? g.initials(row.name) : (row.name || "?").charAt(0);
+    const hue = g ? g.hueFor(row.uid) : 240;
+    const img = row.photo
+      ? `<img src="${esc(row.photo)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">`
+      : "";
+    return `<span class="lb2-av" style="--h:${hue}" aria-hidden="true">${esc(ini)}${img}</span>`;
+  }
+  const you = () => `<span class="lb2-you">${t("You", "ਤੁਸੀਂ")}</span>`;
+
+  /* --------------------------------------------------------- podium ---- */
+  function renderPodium(rows) {
+    const box = $("lbPodium");
+    if (!rows.length) { box.innerHTML = ""; return; }
+    const medals = ["🥇", "🥈", "🥉"];
+    box.innerHTML = [0, 1, 2].map((i) => {
+      const r = rows[i];
+      if (!r) {
+        return `<div class="lb2-pod lb2-pod--${i + 1} lb2-pod--empty">
+          <span class="lb2-pod__medal" aria-hidden="true">${medals[i]}</span>
+          <span class="lb2-av" style="--h:230">?</span>
+          <span class="lb2-pod__name">${t("Your spot?", "ਤੁਹਾਡੀ ਥਾਂ?")}</span>
+          <span class="lb2-pod__meta">${t("Open", "ਖਾਲੀ")}</span></div>`;
       }
-      $("lbMyRankVal").textContent = "#" + game.fmtInt(me.rank);
-      $("lbMyRankOf").textContent = `of ${game.fmtInt(me.total)} students`;
-      animNum($("lbMyXp"), me.xp);
-      $("lbMyLevel").textContent = me.progress.level;
-      $("lbMyPct").textContent = me.percentile + "%";
+      return `<div class="lb2-pod lb2-pod--${i + 1}${r.isMe ? " is-me" : ""}">
+        <span class="lb2-pod__medal" aria-hidden="true">${medals[i]}</span>
+        ${avatar(r)}
+        <span class="lb2-pod__name" title="${esc(r.name)}">${esc(r.name)}</span>
+        <span class="lb2-pod__pts">${fmt(r.points)}<small>pts</small></span>
+        <span class="lb2-pod__meta">${r.accuracy}% · ${r.quizzes} ${t("quiz", "quiz")}</span>
+      </div>`;
+    }).join("");
+  }
 
-      const p = me.progress;
-      const lab = p.maxed
-        ? "Max level reached"
-        : `${game.fmtInt(p.have)} / ${game.fmtInt(p.need)} XP to Level ${p.level + 1}`;
-      $("lbMyProgLab").textContent = lab;
-      $("lbMyProgPct").textContent = Math.round(p.pct) + "%";
-      const track = $("lbMyTrack");
-      track.setAttribute("aria-valuenow", String(Math.round(p.pct)));
-      const fill = $("lbMyFill");
-      growTo(fill, p.pct);
+  /* ---------------------------------------------------------- table ---- */
+  function rowHTML(r, rank) {
+    const sub = r.streak > 1
+      ? `🔥 ${r.streak} ${t("day streak", "ਦਿਨ ਲਗਾਤਾਰ")}`
+      : (r.lastQuiz ? esc(r.lastQuiz) : "");
+    return `<div class="lb2-row${r.isMe ? " is-me" : ""}" role="row"${r.isMe ? ' id="lbMyRow"' : ""}>
+      <span class="c-rank" role="cell">${rank}</span>
+      <span class="c-name" role="cell">${avatar(r)}
+        <span class="lb2-who"><b>${esc(r.name)}${r.isMe ? you() : ""}</b><small>${sub}</small></span></span>
+      <span class="c-q" role="cell">${r.quizzes}</span>
+      <span class="c-acc" role="cell"><span class="lb2-acc"><i style="--w:${r.accuracy}%"></i>${r.accuracy}%</span></span>
+      <span class="c-pts" role="cell">${fmt(r.points)}</span>
+    </div>`;
+  }
 
-      $("lbMyFoot").textContent = me.nextRank && me.nextRank.gap > 0
-        ? `Need ${game.fmtInt(me.nextRank.gap)} more XP to reach rank #${me.nextRank.rank}.`
-        : "You are at the top — hold that streak.";
-      side.hidden = false;
-    },
-  };
+  function renderTable(rows) {
+    const rest = rows.slice(3);
+    $("lbRows").innerHTML = rest.map((r, i) => rowHTML(r, i + 4)).join("");
+    $("lbTable").classList.toggle("is-empty", !rest.length);
+  }
 
-  /* ================================================== PROFILE MODAL ======= */
-  const ProfileModal = {
-    lastFocus: null,
-    open(entry, trigger) {
-      const modal = $("lbModal");
-      this.lastFocus = trigger || document.activeElement;
-      modal.hidden = false;
-      document.documentElement.classList.add("lb-locked");
-      this.render({ loading: true, entry });
-      api.profile(entry)
-        .then((p) => this.render({ profile: p, entry }))
-        .catch((e) => {
-          console.warn("[leaderboard] profile failed:", e && e.message);
-          this.render({ profile: null, entry });
-        });
-      $("lbModalX").focus();
-      document.addEventListener("keydown", this.onKey);
-    },
-    close() {
-      const modal = $("lbModal");
-      if (modal.hidden) return;
-      modal.hidden = true;
-      document.documentElement.classList.remove("lb-locked");
-      document.removeEventListener("keydown", this.onKey);
-      if (this.lastFocus && this.lastFocus.focus) this.lastFocus.focus();
-    },
-    onKey(e) {
-      if (e.key === "Escape") { ProfileModal.close(); return; }
-      if (e.key !== "Tab") return;
-      const panel = $("lbModalPanel");
-      const f = [...panel.querySelectorAll(
-        'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])')]
-        .filter((n) => n.offsetParent !== null);
-      if (!f.length) return;
-      const first = f[0], last = f[f.length - 1];
-      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
-      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
-    },
+  function skeleton() {
+    $("lbPodium").innerHTML = "";
+    $("lbTable").classList.remove("is-empty");
+    $("lbRows").innerHTML = '<div class="lb2-sk"></div>'.repeat(6);
+    $("lbState").hidden = true;
+  }
 
-    kv(k, v) {
-      return `<div class="lb-kv"><span class="lb-kv__k">${k}</span><span class="lb-kv__v">${v}</span></div>`;
-    },
-
-    render({ profile, entry }) {
-      const e = profile || entry;
-      const avatarHost = $("lbModalAvatar");
-      const hue = game.hueFor(e.userId);
-      avatarHost.style.background =
-        `linear-gradient(135deg,hsl(${hue} 70% 58%),hsl(${(hue + 42) % 360} 72% 46%))`;
-      avatarHost.innerHTML = e.photo
-        ? `<img src="${esc(e.photo)}" alt="" width="78" height="78">`
-        : esc(game.initials(e.name));
-
-      $("lbModalName").innerHTML =
-        esc(e.name) + (e.verified ? '<i class="lb-verified" title="Verified account">✔</i>' : "");
-      $("lbModalHandle").textContent = "@" + e.username;
-
-      const chips = [];
-      if (e.rank) chips.push(`<span class="badge">🏅 Rank #${game.fmtInt(e.rank)}</span>`);
-      chips.push(`<span class="badge">⭐ Level ${e.level || 1}</span>`);
-      chips.push(`<span class="badge">🔥 ${e.streak || 0} day streak</span>`);
-      if (e.isMe) chips.push(`<span class="badge">You</span>`);
-      $("lbModalChips").innerHTML = chips.join("");
-
-      if (!profile) {
-        $("lbModalBody").innerHTML =
-          `<div class="lb-modal__sec"><div class="lb-modal__h">Profile</div>` +
-          `<p class="muted text-sm">Full statistics for this student are unavailable right now. ` +
-          `Try again in a moment.</p></div>`;
-        return;
-      }
-
-      const p = profile.progress;
-      const badges = (profile.badges || []);
-      const recent = profile.recent || [];
-
-      $("lbModalBody").innerHTML = `
-        <div class="lb-modal__sec">
-          <div class="lb-modal__h">Level progress</div>
-          <div class="lb-modal__prog">
-            <div class="lb-my__prog-lab">
-              <span>${p.maxed ? "Max level reached"
-                : `${game.fmtInt(p.have)} / ${game.fmtInt(p.need)} XP to Level ${p.level + 1}`}</span>
-              <span>${Math.round(p.pct)}%</span>
-            </div>
-            <div class="lb-track" role="progressbar" aria-valuemin="0" aria-valuemax="100"
-                 aria-valuenow="${Math.round(p.pct)}">
-              <span class="lb-track__fill" style="width:${p.pct}%"></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="lb-modal__sec">
-          <div class="lb-modal__h">Statistics</div>
-          <div class="lb-modal__grid">
-            ${this.kv("Current Rank", profile.rank ? "#" + game.fmtInt(profile.rank) : "—")}
-            ${this.kv("Total XP", game.fmtInt(profile.xp))}
-            ${this.kv("Accuracy", profile.accuracy + "%")}
-            ${this.kv("Total Tests", game.fmtInt(profile.totalTests))}
-            ${this.kv("Correct Answers", game.fmtInt(profile.correct))}
-            ${this.kv("Wrong Answers", game.fmtInt(profile.wrong))}
-            ${this.kv("Average Time", profile.avgTime ? fmtTime(profile.avgTime) : "—")}
-            ${this.kv("Current Streak", profile.streak + " day" + (profile.streak === 1 ? "" : "s"))}
-            ${this.kv("Longest Streak", profile.longestStreak + " day" + (profile.longestStreak === 1 ? "" : "s"))}
-            ${profile.percentile ? this.kv("Percentile", profile.percentile + "%") : ""}
-          </div>
-        </div>
-
-        <div class="lb-modal__sec">
-          <div class="lb-modal__h">Badges</div>
-          <div class="lb-badges">
-            ${badges.length
-              ? badges.map((b, i) =>
-                  `<span class="lb-badge ${b.earned ? "lb-badge--new" : "lb-badge--off"}" ` +
-                  `style="animation-delay:${i * 70}ms" title="${esc(b.desc)}">${b.icon} ${esc(b.name)}</span>`)
-                .join("")
-              : '<span class="muted text-sm">No badges yet.</span>'}
-          </div>
-        </div>
-
-        <div class="lb-modal__sec">
-          <div class="lb-modal__h">Recent Quiz History</div>
-          ${recent.length
-            ? `<ul class="lb-hist">${recent.map((r) => `
-                <li>
-                  <span class="lb-hist__n">${esc(r.quizName)}</span>
-                  <span class="lb-hist__s">${r.correct}/${r.total} · ${r.accuracy}%</span>
-                  <span class="lb-hist__t">${r.at
-                    ? new Date(r.at).toLocaleDateString("en-IN", { day: "numeric", month: "short" })
-                    : (r.seconds ? fmtTime(r.seconds) : "")}</span>
-                </li>`).join("")}</ul>`
-            : '<p class="muted text-sm">No attempts recorded yet.</p>'}
-        </div>`;
-    },
-  };
-
-  /* ================================================== QUIZ BOARDS ======== */
-  const QuizBoards = {
-    render(list) {
-      const host = $("lbQuizBoards");
-      if (!list.length) {
-        host.innerHTML =
-          `<div class="card card-pad lb-qcard"><div class="empty-state" style="border:0;padding:0">` +
-          `<div class="lb-empty__art" aria-hidden="true">📝</div>` +
-          `<h2>No quiz boards yet.</h2><p>Complete a quiz and its own leaderboard appears here.</p>` +
-          `<div class="btn-row mt-3" style="justify-content:center">` +
-          `<a class="btn btn-primary" href="quiz.html?mode=daily">Start a quiz</a></div></div></div>`;
-        return;
-      }
-      host.innerHTML = list
-        .map((b) => `
-          <div class="card lb-qcard">
-            <div class="lb-qcard__top">
-              <span class="lb-qcard__name">${esc(b.quizName)}</span>
-              <span class="lb-qcard__n">${game.fmtInt(b.total)} players</span>
-            </div>
-            ${b.entries.length
-              ? `<ol class="lb-podium">${b.entries.map((e, i) => `
-                  <li>
-                    <span class="lb-podium__m" aria-hidden="true">${MEDALS[i + 1] || i + 1}</span>
-                    <span class="lb-podium__n">${esc(e.name)}</span>
-                    <span class="lb-podium__s">${e.score}/${e.totalQuestions} · ${e.accuracy}%</span>
-                  </li>`).join("")}</ol>`
-              : '<div class="lb-qcard__empty">No attempts in this period yet.</div>'}
-          </div>`)
-        .join("");
-    },
-  };
-
-  /* ================================================= SOURCE DISCLOSURE ==== */
-  function renderSource() {
-    const n = api.notice;
-    const box = $("lbSource");
-    const map = {
-      live: { cls: "lb-source lb-source--live", ico: "🌐" },
-      sample: { cls: "lb-source lb-source--sample", ico: "🧪" },
-      local: { cls: "lb-source", ico: "📱" },
-    };
-    const m = map[n.kind] || map.local;
-    box.className = m.cls;
-    const label = { live: "Global rankings", sample: "Sample rankings", local: "This device" };
-    box.textContent = `${m.ico} ${label[n.kind] || label.local}`;
-
-    const notice = $("lbNotice");
-    const dismissed = HOA.db.get("lbNoticeDismissed", "");
-    if (n.kind !== "live" && dismissed !== n.kind) {
-      $("lbNoticeText").textContent = n.text;
-      notice.classList.remove("hidden");
+  /* --------------------------------------------------------- states ---- */
+  function renderState() {
+    const box = $("lbState");
+    const live = $("lbLive");
+    live.classList.toggle("is-off", state.status !== "live");
+    if (state.status === "unconfigured") {
+      box.innerHTML = `<div class="lb2-state__art">🏁</div>
+        <h2>${t("The live leaderboard is almost ready", "ਲਾਈਵ ਲੀਡਰਬੋਰਡ ਜਲਦੀ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ")}</h2>
+        <p>${t("Keep practising - your progress is saved on this device in the meantime.",
+          "ਤਿਆਰੀ ਜਾਰੀ ਰੱਖੋ - ਉਦੋਂ ਤੱਕ ਤੁਹਾਡੀ progress ਇਸ device 'ਤੇ save ਹੋ ਰਹੀ ਹੈ।")}</p>
+        <div class="btn-row"><a class="btn btn-primary" href="quiz.html?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a></div>`;
+    } else if (state.status === "offline") {
+      box.innerHTML = `<div class="lb2-state__art">📡</div>
+        <h2>${t("Couldn't load the rankings", "ਰੈਂਕਿੰਗ load ਨਹੀਂ ਹੋ ਸਕੀ")}</h2>
+        <p>${t("Check your internet connection and tap Refresh.", "ਆਪਣਾ internet ਚੈੱਕ ਕਰੋ ਅਤੇ Refresh ਦਬਾਓ।")}</p>`;
+    } else if (state.status === "live" && !state.rows.length) {
+      box.innerHTML = `<div class="lb2-state__art">🏆</div>
+        <h2>${t(`Nobody on ${periodName(period)}'s board yet`, `${periodName(period)} ਦੇ ਬੋਰਡ 'ਤੇ ਹਾਲੇ ਕੋਈ ਨਹੀਂ`)}</h2>
+        <p>${t("Finish any quiz now and take the No. 1 spot.", "ਹੁਣੇ ਕੋਈ ਵੀ quiz ਪੂਰਾ ਕਰੋ ਅਤੇ No. 1 'ਤੇ ਆਓ।")}</p>
+        <div class="btn-row"><a class="btn btn-primary" href="quiz.html?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a>
+          <a class="btn" href="index.html#subjects">${t("Browse subjects", "ਵਿਸ਼ੇ ਦੇਖੋ")}</a></div>`;
     } else {
-      notice.classList.add("hidden");
-    }
-  }
-
-  /* ==================================================== REFRESH ========== */
-  async function refresh({ skeleton = false, append = false } = {}) {
-    const seq = ++state.seq;
-    state.loading = true;
-    if (skeleton && !append) SkeletonLoader.show();
-
-    try {
-      const res = await api.list({
-        period: state.period, exam: state.exam, category: state.category,
-        sort: state.sort, search: state.search, page: state.page,
-      });
-      if (seq !== state.seq) return; // stale — a newer request already won
-
-      state.entries = append ? state.entries.concat(res.entries) : res.entries;
-      state.total = res.total;
-      state.hasMore = res.hasMore;
-
-      SkeletonLoader.hide();
-      EmptyState.set(!state.entries.length,
-        state.search
-          ? `No student matches “${state.search}”. Try a different name.`
-          : `Be the first to complete today's quiz.`);
-
-      if (state.entries.length) {
-        LeaderboardCard.render(state.entries);
-        $("lbCount").textContent =
-          `${game.fmtInt(state.total)} student${state.total === 1 ? "" : "s"} · showing ${PERIOD_LABEL[state.period]}`;
-      } else {
-        $("lbList").innerHTML = "";
-        $("lbCount").textContent = "";
-      }
-
-      $("lbMoreWrap").hidden = !(state.hasMore && state.entries.length);
-      renderSource();
-    } catch (err) {
-      console.error("[leaderboard] render failed:", err);
-      SkeletonLoader.hide();
-      EmptyState.set(true, "Rankings could not be loaded. Please try again.");
-    } finally {
-      if (seq === state.seq) state.loading = false;
-    }
-  }
-
-  async function loadMore() {
-    if (state.loading || !state.hasMore) return;
-    state.page += 1;
-    await refresh({ append: true });
-  }
-
-  async function loadExtras() {
-    try {
-      const [s, boards] = await Promise.all([
-        api.stats({ period: state.period }),
-        api.quizBoards({ period: state.period }),
-      ]);
-      StatsCards.render(s || {});
-      QuizBoards.render(boards || []);
-    } catch (err) {
-      console.warn("[leaderboard] extras failed:", err);
-    }
-  }
-
-  /* ======================================================= INIT ========== */
-  function init() {
-    if (!api || !game) {
-      console.error("[leaderboard] gamification/api layer missing");
+      box.hidden = true;
       return;
     }
+    box.hidden = false;
+    $("lbPodium").innerHTML = "";
+    $("lbTable").classList.add("is-empty");
+  }
 
-    SeasonCard.render();
-    LeaderboardTabs.init();
-    SearchBar.init();
+  /* -------------------------------------------------------- summary ---- */
+  function renderSummary() {
+    const rows = state.rows;
+    $("lbSummary").hidden = state.status !== "live";
+    $("lbSumRanked").textContent = rankedN != null ? fmt(rankedN)
+      : rows.length >= HOA.lbApi.LIMIT ? `${HOA.lbApi.LIMIT}+` : fmt(rows.length);
+    $("lbSumTop").textContent = rows.length ? fmt(rows[0].points) : "-";
+    $("lbSumMe").textContent = mine && mine.rank ? `#${fmt(mine.rank)}`
+      : mine && mine.row && mine.row.points ? `${HOA.lbApi.LIMIT}+` : "-";
+  }
 
-    api.init()
-      .then(() => {
-        Filters.init();
-        refresh({ skeleton: true });
-        loadExtras();
-        MyRankCard.render();
-      })
-      .catch((err) => {
-        console.error("[leaderboard] boot failed:", err);
-        SkeletonLoader.hide();
-        EmptyState.set(true, "Rankings could not be loaded. Please try again.");
+  /* -------------------------------------------------------- my card ---- */
+  function renderMe() {
+    const box = $("lbMe");
+    if (state.status === "unconfigured") { box.innerHTML = ""; return; }
+    const auth = HOA.auth;
+    if (!auth || !auth.cloudEnabled()) {
+      box.innerHTML = `<div class="lb2-me__join">
+        <h2>${t("Put your name on the board", "ਬੋਰਡ 'ਤੇ ਆਪਣਾ ਨਾਮ ਲਿਆਓ")}</h2>
+        <p>${t("Sign in once with Google. After that, every quiz you finish adds points to your row - nothing else to do.",
+          "ਇੱਕ ਵਾਰ Google ਨਾਲ sign in ਕਰੋ। ਉਸ ਤੋਂ ਬਾਅਦ ਹਰ quiz ਦੇ points ਆਪਣੇ ਆਪ ਜੁੜਦੇ ਜਾਣਗੇ।")}</p>
+        <ul class="lb2-me__perks">
+          <li>${t("Free, takes 3 seconds", "Free, 3 ਸਕਿੰਟ ਲੱਗਦੇ ਹਨ")}</li>
+          <li>${t("Only your name and photo are shown - never your email", "ਸਿਰਫ਼ ਨਾਮ ਅਤੇ photo ਦਿਖਦੀ ਹੈ - email ਕਦੇ ਨਹੀਂ")}</li>
+          <li>${t("Your progress is saved across phone and laptop", "Phone ਅਤੇ laptop ਦੋਵਾਂ 'ਤੇ progress save")}</li>
+        </ul>
+        <button class="btn btn-google" type="button" id="lbJoin">${t("Continue with Google", "Google ਨਾਲ ਜਾਰੀ ਰੱਖੋ")}</button>
+      </div>`;
+      $("lbJoin").addEventListener("click", () => {
+        auth.signIn().then((ok) => { if (ok) load(true); });
       });
-
-    // Infinite scroll (falls back to the visible "Load more" button).
-    if ("IntersectionObserver" in window) {
-      const io = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) loadMore();
-        },
-        { rootMargin: "400px 0px" }
-      );
-      io.observe($("lbSentinel"));
+      return;
     }
-    $("lbMore").addEventListener("click", loadMore);
+    const u = auth.user();
+    const r = mine && mine.row;
+    const head = `<div class="lb2-me__head">${avatar({ uid: u.uid, name: u.name, photo: u.photo })}
+      <div><div class="lb2-me__name">${esc(u.name)}</div>
+      <div class="lb2-me__sub">${t("Signed in with Google", "Google ਨਾਲ signed in")}</div></div></div>`;
 
-    // Modal wiring
-    $("lbModalX").addEventListener("click", () => ProfileModal.close());
-    $("lbModal").addEventListener("click", (e) => {
-      if (e.target === $("lbModal")) ProfileModal.close();
-    });
-
-    // Notice dismissal
-    $("lbNoticeX").addEventListener("click", () => {
-      $("lbNotice").classList.add("hidden");
-      HOA.db.set("lbNoticeDismissed", api.source);
-    });
-
-    // Re-rank when the cloud session changes (sign-in / sign-out).
-    if (HOA.auth && typeof HOA.auth.cloudEnabled === "function") {
-      window.addEventListener("storage", () => refresh({ skeleton: true }));
+    if (!r || !r.points) {
+      box.innerHTML = `${head}
+        <p class="lb2-me__note">${t(`You're not on ${periodName(period)}'s board yet. Finish any quiz and you're in.`,
+          `ਤੁਸੀਂ ਹਾਲੇ ${periodName(period)} ਦੇ ਬੋਰਡ 'ਤੇ ਨਹੀਂ ਹੋ। ਕੋਈ ਵੀ quiz ਪੂਰਾ ਕਰੋ ਅਤੇ ਤੁਸੀਂ ਬੋਰਡ 'ਤੇ ਹੋਵੋਗੇ।`)}</p>
+        <a class="btn btn-primary" href="quiz.html?mode=daily">${t("Take today's Daily Challenge", "ਅੱਜ ਦਾ Daily Challenge ਦਿਓ")}</a>`;
+      return;
     }
-
-    // Recompute the tab pill on breakpoint changes (the strip re-flows).
-    window.addEventListener("resize", () => LeaderboardTabs.moveInk());
-    document.fonts && document.fonts.ready
-      ? document.fonts.ready.then(() => LeaderboardTabs.moveInk())
-      : LeaderboardTabs.moveInk();
+    let note = "";
+    if (mine.rank && mine.rank > 1 && state.rows[mine.rank - 2]) {
+      const gap = state.rows[mine.rank - 2].points - r.points + 10;
+      note = t(`${fmt(gap)} more points to overtake #${mine.rank - 1}.`,
+        `#${mine.rank - 1} ਤੋਂ ਅੱਗੇ ਨਿਕਲਣ ਲਈ ${fmt(gap)} points ਹੋਰ।`);
+    } else if (mine.rank === 1) {
+      note = t("You're No. 1 - keep going to hold the spot!", "ਤੁਸੀਂ No. 1 ਹੋ - ਇਹ ਥਾਂ ਬਣਾਈ ਰੱਖੋ!");
+    }
+    box.innerHTML = `${head}
+      <div class="lb2-me__rank"><b>${mine.rank ? "#" + fmt(mine.rank) : HOA.lbApi.LIMIT + "+"}</b>
+        <span>${t(`rank ${periodName(period)}`, `${periodName(period)} ਦਾ ਰੈਂਕ`)}</span></div>
+      <div class="lb2-me__grid">
+        <div class="lb2-me__cell"><b>${fmt(r.points)}</b><span>Points</span></div>
+        <div class="lb2-me__cell"><b>${r.quizzes}</b><span>Quiz</span></div>
+        <div class="lb2-me__cell"><b>${r.accuracy}%</b><span>${t("Accuracy", "ਸ਼ੁੱਧਤਾ")}</span></div>
+      </div>
+      ${note ? `<p class="lb2-me__note">${note}</p>` : ""}
+      <a class="btn btn-primary" href="quiz.html?mode=daily">${t("Earn more points", "ਹੋਰ points ਕਮਾਓ")}</a>`;
   }
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init);
-  } else {
-    init();
+  /* ----------------------------------------------------- mobile dock --- */
+  function renderDock() {
+    const dock = $("lbDock");
+    if (myRowObserver) { myRowObserver.disconnect(); myRowObserver = null; }
+    const r = mine && mine.row;
+    if (!r || !r.points || (mine.rank && mine.rank <= 3)) { dock.hidden = true; return; }
+    dock.innerHTML = `<b>${mine.rank ? "#" + fmt(mine.rank) : HOA.lbApi.LIMIT + "+"}</b>
+      ${avatar(r)}<span>${t("You", "ਤੁਸੀਂ")}</span>
+      <span class="lb2-dock__pts">${fmt(r.points)} pts</span>`;
+    const row = $("lbMyRow");
+    if (!row || !("IntersectionObserver" in window)) { dock.hidden = false; return; }
+    myRowObserver = new IntersectionObserver(([e]) => { dock.hidden = e.isIntersecting; });
+    myRowObserver.observe(row);
   }
+
+  /* ---------------------------------------------------------- render --- */
+  function render() {
+    applyCopy();
+    document.querySelectorAll(".lb2-tab").forEach((b) => {
+      const on = b.dataset.period === period;
+      b.setAttribute("aria-selected", String(on));
+      b.tabIndex = on ? 0 : -1;
+    });
+    if (state.status === "loading") { skeleton(); renderMe(); return; }
+    renderState();
+    if (state.status === "live" && state.rows.length) {
+      renderPodium(state.rows);
+      renderTable(state.rows);
+    }
+    renderSummary();
+    renderMe();
+    renderDock();
+    renderUpdated();
+  }
+
+  function renderUpdated() {
+    const el = $("lbUpdated");
+    if (!state.fetchedAt) { el.textContent = t("Refresh", "Refresh"); return; }
+    const s = Math.round((Date.now() - state.fetchedAt) / 1000);
+    el.textContent = s < 45 ? t("Updated just now", "ਹੁਣੇ update ਹੋਇਆ")
+      : t(`Updated ${Math.round(s / 60)} min ago`, `${Math.round(s / 60)} ਮਿੰਟ ਪਹਿਲਾਂ update`);
+  }
+
+  /* ------------------------------------------------------------ load --- */
+  async function load(force) {
+    if (busy) return;
+    busy = true;
+    $("lbRefresh").classList.add("is-busy");
+    if (!state.rows.length || force === "tab") { state = { ...state, status: "loading" }; render(); }
+    const want = period;
+    try {
+      const res = await HOA.lbApi.board(want, { force: force === true });
+      if (want !== period) return;                    // tab changed mid-flight
+      state = res;
+      mine = null; rankedN = null;
+      if (res.status === "live") {
+        [mine, rankedN] = await Promise.all([
+          HOA.lbApi.mine(want, res.rows).catch(() => null),
+          HOA.lbApi.ranked(want).catch(() => null),
+        ]);
+      }
+    } finally {
+      busy = false;
+      $("lbRefresh").classList.remove("is-busy");
+      if (want === period) render();
+    }
+  }
+
+  /* ----------------------------------------------------------- wiring --- */
+  $("lbTabs").addEventListener("click", (e) => {
+    const b = e.target.closest(".lb2-tab");
+    if (!b || b.dataset.period === period) return;
+    period = b.dataset.period;
+    history.replaceState(null, "", period === "day" ? location.pathname : `#${period}`);
+    busy = false;
+    load("tab");
+  });
+  $("lbTabs").addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const i = PERIODS.indexOf(period) + (e.key === "ArrowRight" ? 1 : -1);
+    const next = PERIODS[(i + PERIODS.length) % PERIODS.length];
+    document.querySelector(`.lb2-tab[data-period="${next}"]`).click();
+    document.querySelector(`.lb2-tab[data-period="${next}"]`).focus();
+  });
+  $("lbRefresh").addEventListener("click", () => {
+    if (Date.now() - lastForce < 10000) { load(false); return; }  // gentle on quota
+    lastForce = Date.now();
+    load(true);
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (!document.hidden && state.fetchedAt && Date.now() - state.fetchedAt > 60000) load(false);
+  });
+  document.addEventListener("hoa:lang", () => render());
+  setInterval(renderUpdated, 30000);
+
+  render();
+  Promise.resolve(HOA.auth && HOA.auth.ready).then(() => load(false));
 })();

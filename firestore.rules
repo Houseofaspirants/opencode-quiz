@@ -7,9 +7,12 @@ rules_version = '2';
 // Model: every signed-in student owns their own documents.
 //   users/{uid}                       profile + merged progress stats
 //   users/{uid}/attempts/{resultId}   one document per completed quiz
-//   leaderboard/{uid}_{at}            public attempt for the global board
-// The leaderboard is readable by everyone but only the owning student can
-// write their own rows, and only with a sane score shape.
+//   scores/{uid}                      ONE public leaderboard row per student
+// The leaderboard is readable by everyone. Only the owning student can write
+// their own row, points can only go up, and each write can add at most what
+// the newly answered questions could earn (10 per question + 50 bonus), with
+// at least 20 seconds between writes — so a hand-made request cannot jump
+// someone to the top.
 
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -41,16 +44,81 @@ service cloud.firestore {
       }
     }
 
-    // -------------------------------------------------------- leaderboard ---
+    // ------------------------------------------------------- leaderboard ---
+    // One row per student (assets/js/auth.js → nextScore). `pts` is all-time;
+    // the live period points sit in fields named after the IST day, week and
+    // month (d20261002 / w202640 / m202610). The rules rebuild those three
+    // names from the server clock, so a row can only ever carry the CURRENT
+    // periods, and each one must move by exactly the same points as `pts`.
+    match /scores/{uid} {
+      allow read: if true;                                  // public rankings
+
+      allow create: if isOwner(uid)
+        && validScore(request.resource.data, uid)
+        && request.resource.data.answered <= 200
+        && request.resource.data.pts <= request.resource.data.answered * 10 + 50
+        && request.resource.data[dayKey()] == request.resource.data.pts
+        && request.resource.data[weekKey()] == request.resource.data.pts
+        && request.resource.data[monthKey()] == request.resource.data.pts;
+
+      allow update: if isOwner(uid)
+        && validScore(request.resource.data, uid)
+        && validStep(request.resource.data, resource.data);
+
+      allow delete: if isOwner(uid);
+    }
+
+    function p2(n) {
+      return n < 10 ? '0' + string(n) : string(n);
+    }
+    function ist() {
+      return request.time + duration.value(330, 'm');
+    }
+    function dayKey() {
+      return 'd' + string(ist().year()) + p2(ist().month()) + p2(ist().day());
+    }
+    function weekKey() {
+      return 'w' + string(ist().year())
+        + p2(math.floor((ist().dayOfYear() - ist().dayOfWeek() + 10) / 7));
+    }
+    function monthKey() {
+      return 'm' + string(ist().year()) + p2(ist().month());
+    }
+
+    function validScore(d, uid) {
+      return d.uid == uid
+        && d.name is string && d.name.size() > 0 && d.name.size() <= 40
+        && d.pts is int && d.pts >= 0
+        && d.quizzes is int && d.quizzes >= 0
+        && d.correct is int && d.correct >= 0
+        && d.answered is int && d.answered >= 0
+        && d.correct <= d.answered
+        && d.updatedAt == request.time
+        && d.keys().hasOnly(['uid', 'name', 'photo', 'pts', 'quizzes', 'correct',
+             'answered', 'best', 'days', 'streak', 'per', 'last', 'updatedAt',
+             dayKey(), weekKey(), monthKey()])
+        && d.keys().hasAll([dayKey(), weekKey(), monthKey()]);
+    }
+
+    // Points only go up, by at most 10 per newly answered question (+50
+    // perfect bonus), the period fields move in lock-step with `pts`, and a
+    // write needs at least 2 seconds per new question since the last one.
+    function validStep(d, o) {
+      return d.pts >= o.pts
+        && d.answered > o.answered
+        && d.answered - o.answered <= 200
+        && d.pts - o.pts <= (d.answered - o.answered) * 10 + 50
+        && d[dayKey()] == o.get(dayKey(), 0) + (d.pts - o.pts)
+        && d[weekKey()] == o.get(weekKey(), 0) + (d.pts - o.pts)
+        && d[monthKey()] == o.get(monthKey(), 0) + (d.pts - o.pts)
+        && request.time > o.updatedAt + duration.value((d.answered - o.answered) * 2, 's');
+    }
+
+    // Old per-attempt board (before October 2026) — read-only, kept so
+    // nothing already written is lost.
     match /leaderboard/{attemptId} {
-      allow read: if true;                       // public rankings
-      allow create, update: if signedIn()
-        && request.resource.data.uid == request.auth.uid
-        && validAttempt(request.resource.data)
-        && request.resource.data.name is string
-        && request.resource.data.name.size() <= 60;
-      allow delete: if signedIn()
-        && resource.data.uid == request.auth.uid; // students can clean up
+      allow read: if true;
+      allow delete: if signedIn() && resource.data.uid == request.auth.uid;
     }
   }
 }

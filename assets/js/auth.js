@@ -22,7 +22,11 @@
  * Firestore layout (see firestore.rules at the repo root):
  *   users/{uid}                      profile + merged progress stats
  *   users/{uid}/attempts/{resultId}  one document per completed quiz
- *   leaderboard/{uid}_{at}           public attempt for the global rank board
+ *   scores/{uid}                     ONE public leaderboard row per student:
+ *                                    all-time points plus a field per live
+ *                                    period (d20261002 / w202640 / m202610),
+ *                                    so every board is a single-field query
+ *                                    (no composite index to create).
  * ========================================================================== */
 (() => {
   "use strict";
@@ -48,9 +52,11 @@
   const esc = (s) => HOA.esc(String(s == null ? "" : s));
 
   /* Which pages demand sign-in. Anonymous-first: every study page (quizzes,
-     mocks, notes, landing pages) is public; only the personalised pages ask
-     who you are, plus quizzes when auth.gateQuizzes opts back in. */
-  const ACCOUNT_PAGE_RX = /(leaderboard|progress)\.html$/;
+     mocks, notes, landing pages) is public; only the personal dashboard asks
+     who you are, plus quizzes when auth.gateQuizzes opts back in. The
+     leaderboard is PUBLIC to read — joining it is what needs an account, and
+     leaderboard.js offers that sign-in inline. */
+  const ACCOUNT_PAGE_RX = /progress\.html$/;
   const QUIZ_PAGE_RX = /(quiz|mock)\.html$/;
 
   /* ---------------------------------------------------------- modal UI --- */
@@ -221,7 +227,8 @@
 
     setBusy(true, "Opening Google…");
     try {
-      const { auth, GoogleAuthProvider } = await loadFirebase();
+      const { auth, firebase } = await loadFirebase();
+      const GoogleAuthProvider = firebase.auth.GoogleAuthProvider;
       if (auth.currentUser) {                       // remembered from before
         setBusy(false);
         return completeSignIn(profileOf(auth.currentUser));
@@ -402,11 +409,102 @@
     HOA.db.set(SYNC_KEY, Date.now());
   }
 
-  /** One call from the result page: attempt history + leaderboard + stats. */
+  /* ------------------------------------------------------ leaderboard --- */
+  /* Points: 10 per correct answer, +50 for a perfect score on a set of 10+.
+   * Only a student's BEST result on a given set counts — re-taking the same
+   * set adds just the improvement, so the board rewards new practice rather
+   * than farming one easy set. The Daily Challenge key carries the date, so
+   * it is a fresh set every day. */
+  const PTS = Object.freeze({ correct: 10, perfect: 50, perfectMin: 10 });
+  const MAX_DAYS = 60;
+
+  function pointsFor(r) {
+    const total = Math.max(0, Number(r.total) || 0);
+    const correct = Math.max(0, Math.min(Number(r.correct) || 0, total));
+    return correct * PTS.correct + (total >= PTS.perfectMin && correct === total ? PTS.perfect : 0);
+  }
+
+  /** Period keys in India time (IST), the clock every student lives on.
+   *  firestore.rules recomputes these exact strings from request.time, so the
+   *  formulas must stay identical on both sides (week = floor((doy-dow+10)/7),
+   *  Monday-start, numbered within the IST calendar year). */
+  function periodKeys(t) {
+    const d = new Date((Number(t) || Date.now()) + 330 * 60e3); // IST as UTC
+    const y = d.getUTCFullYear(), m = d.getUTCMonth() + 1, day = d.getUTCDate();
+    const p2 = (n) => String(n).padStart(2, "0");
+    const doy = Math.round((Date.UTC(y, m - 1, day) - Date.UTC(y, 0, 1)) / 864e5) + 1;
+    const dow = d.getUTCDay() || 7;                       // 1 Mon … 7 Sun
+    const wk = Math.floor((doy - dow + 10) / 7);
+    return {
+      iso: `${y}-${p2(m)}-${p2(day)}`,
+      d: `d${y}${p2(m)}${p2(day)}`,
+      w: `w${y}${p2(wk)}`,
+      m: `m${y}${p2(m)}`,
+    };
+  }
+
+  /** Stable, Firestore-safe id for "the same set" (mock ids drop the nonce). */
+  function quizKey(r) {
+    let k = String(r.key || "");
+    if (!k) k = `${r.mode || "topic"}:${r.title || "quiz"}`;
+    if (k.startsWith("mock:")) k = k.split(":").slice(0, 3).join(":");
+    return k.toLowerCase().replace(/[^a-z0-9_-]+/g, "_").slice(0, 120);
+  }
+
+  function streakOf(days, todayIso) {
+    const set = new Set(days);
+    const d = new Date(todayIso + "T00:00:00Z");
+    if (!set.has(todayIso)) d.setUTCDate(d.getUTCDate() - 1);
+    let n = 0;
+    while (set.has(d.toISOString().slice(0, 10))) { n++; d.setUTCDate(d.getUTCDate() - 1); }
+    return n;
+  }
+
+  /** Pure: previous scores doc + one finished attempt → the next doc. */
+  function nextScore(prev, r, me, now) {
+    const P = prev || {};
+    const keys = periodKeys(now);
+    const pts = pointsFor(r);
+    const qk = quizKey(r);
+    const best = { ...(P.best || {}) };
+    const gained = Math.max(0, pts - (Number(best[qk]) || 0));
+    if (pts > (Number(best[qk]) || 0)) best[qk] = pts;
+    const total = Math.max(0, Number(r.total) || 0);
+    const correct = Math.max(0, Math.min(Number(r.correct) || 0, total));
+
+    const per = {};
+    ["d", "w", "m"].forEach((p) => {
+      const old = (P.per && P.per[p] && P.per[p].k === keys[p]) ? P.per[p] : { k: keys[p], quizzes: 0, correct: 0, answered: 0 };
+      per[p] = { k: keys[p], quizzes: old.quizzes + 1, correct: old.correct + correct, answered: old.answered + total };
+    });
+    const days = Array.from(new Set([...(P.days || []), keys.iso])).sort().slice(-MAX_DAYS);
+
+    // set() WITHOUT merge: last period's d…/w…/m… fields fall away on their own.
+    const doc = {
+      uid: me.uid,
+      name: String(me.name || "Aspirant").trim().slice(0, 40) || "Aspirant",
+      photo: me.photo || null,
+      pts: (Number(P.pts) || 0) + gained,
+      quizzes: (Number(P.quizzes) || 0) + 1,
+      correct: (Number(P.correct) || 0) + correct,
+      answered: (Number(P.answered) || 0) + total,
+      best, days, streak: streakOf(days, keys.iso), per,
+      last: { quiz: String(r.title || "Quiz").slice(0, 80), percent: Number(r.percent) || 0, at: Number(r.at) || now },
+    };
+    ["d", "w", "m"].forEach((p) => {
+      const kept = P[keys[p]] != null ? Number(P[keys[p]]) || 0 : 0;
+      doc[keys[p]] = kept + gained;
+    });
+    return { doc, gained, pts };
+  }
+
+  /** One call from the result page: attempt history + leaderboard + stats.
+   *  Resolves { gained, total, today } (or null when not signed in). */
   async function syncResult(r) {
-    if (!cloudEnabled() || !r) return;
+    if (!cloudEnabled() || !r) return null;
+    let out = null;
     try {
-      const { db } = await loadFirebase();
+      const { db, firebase } = await loadFirebase();
       const uid = session.uid;
       const at = Number(r.at) || Date.now();
       await usersRef(db, uid).collection("attempts").doc(String(r.id || at)).set({
@@ -416,44 +514,58 @@
         total: Number(r.total) || 0, attempted: Number(r.attempted) || 0,
         seconds: Number(r.seconds) || 0, at,
       }, { merge: true });
-      await db.collection("leaderboard").doc(`${uid}_${at}`).set({
-        uid, name: session.name || "Aspirant", photo: session.photo || null,
-        quiz: r.title || "Quiz", correct: Number(r.correct) || 0,
-        total: Number(r.total) || 0, percent: Number(r.percent) || 0, at,
+
+      const ref = db.collection("scores").doc(uid);
+      out = await db.runTransaction(async (tx) => {
+        const snap = await tx.get(ref);
+        const res = nextScore(snap.exists ? snap.data() : null, r, session, Date.now());
+        tx.set(ref, { ...res.doc, updatedAt: firebase.firestore.FieldValue.serverTimestamp() });
+        const k = periodKeys(Date.now());
+        return { gained: res.gained, total: res.doc.pts, today: res.doc[k.d] };
       });
+      // The leaderboard page caches reads for 60 s — drop them so the new
+      // points show the moment the student opens it.
+      try {
+        Object.keys(sessionStorage).filter((x) => x.startsWith("lb2:"))
+          .forEach((x) => sessionStorage.removeItem(x));
+      } catch (_) {}
       await pullStats(true);
     } catch (e) {
       console.warn("[HOA.auth] cloud sync failed (attempt saved locally):", e && e.message);
     }
+    return out;
   }
 
-  /** Global board: top scores, newest periods filtered client-side. */
-  async function fetchScores(limit) {
-    const { db } = await loadFirebase();
-    const snap = await db.collection("leaderboard")
-      .orderBy("percent", "desc")
-      .limit(Number(limit) || 200)
-      .get();
-    return snap.docs.map((d) => ({ ...d.data(), id: d.id }));
+  /** Field to rank by for a board period: day | week | month | all. */
+  function boardField(period, t) {
+    const k = periodKeys(t);
+    return period === "day" ? k.d : period === "week" ? k.w : period === "month" ? k.m : "pts";
   }
 
-  /**
-   * Rows for the Global Leaderboard within a time window.
-   * HOA.lbApi normalises whatever comes back (README §23), so this stays the
-   * ONLY Firestore read for the board.
-   *
-   * Ordering and filtering both use `at`, so no composite index is required —
-   * the page works the moment keys are pasted. Ranking and deeper pagination
-   * are done client-side today; a server-side aggregation (Cloud Function or
-   * REST backend) should replace `limit` for >100k students — see the TODO in
-   * assets/js/leaderboard-api.js.
-   */
-  async function fetchLeaderboard({ since = 0, limit = 500 } = {}) {
+  /** Top of one board — a single-field query, so no index setup is needed. */
+  async function fetchBoard(period, limit) {
     const { db } = await loadFirebase();
-    let ref = db.collection("leaderboard");
-    ref = Number(since) > 0 ? ref.where("at", ">=", Number(since)) : ref;
-    const snap = await ref.orderBy("at", "desc").limit(Number(limit) || 500).get();
-    return snap.docs.map((d) => ({ ...d.data(), id: d.id }));
+    const field = boardField(period);
+    const snap = await db.collection("scores").orderBy(field, "desc").limit(Number(limit) || 50).get();
+    return snap.docs.map((d) => ({ ...d.data(), id: d.id, score: Number(d.get(field)) || 0 }))
+      .filter((x) => x.score > 0);
+  }
+  const fetchScores = (limit) => fetchBoard("all", limit);
+
+  /** The signed-in student's own row (null when signed out or not yet ranked). */
+  async function fetchMine() {
+    if (!cloudEnabled()) return null;
+    const { db } = await loadFirebase();
+    const snap = await db.collection("scores").doc(session.uid).get();
+    return snap.exists ? { ...snap.data(), id: snap.id } : null;
+  }
+
+  /** How many students score above `value` on a board (null if unsupported). */
+  async function countAbove(period, value) {
+    const { db } = await loadFirebase();
+    const q = db.collection("scores").where(boardField(period), ">", Number(value) || 0);
+    if (typeof q.count !== "function") return null;
+    try { const agg = await q.count().get(); return agg.data().count; } catch (_) { return null; }
   }
 
   async function signOut() {
@@ -584,6 +696,11 @@
     // Which backend auth is running against — firebase | preview | unconf | off.
     // HOA.lbApi picks its data source from this (never from the session).
     get mode() { return mode; },
-    fetchScores, fetchLeaderboard, syncResult, signOut,
+    fetchScores, fetchBoard, fetchMine, countAbove, syncResult, signOut,
+    /** Opens Google sign-in straight from a click (keeps the popup gesture);
+     *  resolves true once signed in, false if the student backs out. */
+    signIn: () => { const p = openGate(); if (mode === "firebase") handleGoogle(); return p; },
+    // Pure helpers shared with the leaderboard page (and unit-checked).
+    pointsFor, periodKeys, boardField, nextScore, quizKey, PTS,
   };
 })();

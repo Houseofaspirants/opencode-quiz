@@ -25,8 +25,6 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="assets/css/style.css" as="style">
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/css/quiz.css" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css">
   <link rel="preload" href="assets/css/leaderboard.css" as="style">
   <link rel="stylesheet" href="assets/css/leaderboard.css">
   <script type="application/ld+json">
@@ -82,190 +80,85 @@
 
   <main id="main">
     <!-- ===================================================== HERO ======== -->
-    <section class="page-hero lb-hero">
+    <section class="page-hero lb2-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="index.html">Home</a><span>/</span><span>Leaderboard</span>
         </nav>
-        <span class="eyebrow">Global Rankings</span>
-        <h1>Leaderboard 🏆</h1>
-        <p class="lb-tagline">
-          Compete with <b>thousands of Punjab Police &amp; PSSSB aspirants</b>.
-          Improve your score, earn XP, maintain your streak and climb the
-          leaderboard — take the <a class="ilink" href="quiz.html?mode=daily">Daily Expected MCQs</a>
-          every day and measure yourself against the whole board.
-        </p>
-
-        <div class="lb-hero-grid">
-          <!-- Top statistics -->
-          <div class="lb-stats" id="lbStats" aria-live="polite">
-            <div class="lb-stat"><span class="lb-stat__ico">👨‍🎓</span><b class="lb-stat__num">—</b><span class="lb-stat__lab">Total Students</span></div>
-            <div class="lb-stat"><span class="lb-stat__ico">📝</span><b class="lb-stat__num">—</b><span class="lb-stat__lab">Total MCQ Attempts</span></div>
-            <div class="lb-stat"><span class="lb-stat__ico">🏆</span><b class="lb-stat__num">—</b><span class="lb-stat__lab">Highest Score Today</span></div>
-            <div class="lb-stat"><span class="lb-stat__ico">⭐</span><b class="lb-stat__num">—</b><span class="lb-stat__lab">Average Accuracy</span></div>
-            <div class="lb-stat lb-stat--wide"><span class="lb-stat__ico">🔥</span><b class="lb-stat__num">—</b><span class="lb-stat__lab">Active Students Today</span></div>
+        <div class="lb2-hero__row">
+          <div class="lb2-hero__copy">
+            <span class="eyebrow"><span class="lb2-live" id="lbLive" aria-hidden="true"></span> <span id="lbLiveText">Live rankings</span></span>
+            <h1>Leaderboard</h1>
+            <p class="lb2-tagline" id="lbTagline">
+              Real scores from real Punjab Police and PSSSB aspirants. Every
+              correct answer on the site earns points - sign in once and your
+              name climbs the board automatically after each quiz.
+            </p>
           </div>
-
-          <!-- Season -->
-          <aside class="lb-season" id="lbSeason" aria-label="Current season">
-            <span class="lb-season__eyebrow">Season</span>
-            <div class="lb-season__title" id="lbSeasonTitle">—</div>
-            <div class="lb-season__meta">
-              <span class="lb-season__pill" id="lbSeasonEnds">Ends in — Days</span>
-            </div>
-            <div class="lb-season__track"><span class="lb-season__fill" id="lbSeasonFill"></span></div>
-            <div class="lb-season__foot" id="lbSeasonFoot">
-              Top performers earn exclusive recognition when the season closes.
-            </div>
-          </aside>
+          <div class="lb2-season" id="lbSeason" aria-label="Current season">
+            <span class="lb2-season__lab" id="lbSeasonLab">Season</span>
+            <b class="lb2-season__title" id="lbSeasonTitle">-</b>
+            <div class="lb2-season__track"><span id="lbSeasonFill"></span></div>
+            <span class="lb2-season__foot" id="lbSeasonFoot"></span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ================================================== MAIN BOARD ===== -->
-    <section class="section">
-      <div class="container lb-layout">
-        <div class="lb-main">
-          <!-- Tabs + search -->
-          <div class="lb-toolbar">
-            <div class="lb-tabs" role="tablist" aria-label="Leaderboard period" id="lbTabs">
-              <span class="lb-tabs__ink" id="lbTabsInk" aria-hidden="true"></span>
-              <button class="lb-tab" role="tab" data-period="day" aria-selected="true" id="tabDay" tabindex="0">Daily</button>
-              <button class="lb-tab" role="tab" data-period="week" aria-selected="false" id="tabWeek" tabindex="-1">Weekly</button>
-              <button class="lb-tab" role="tab" data-period="month" aria-selected="false" id="tabMonth" tabindex="-1">Monthly</button>
-              <button class="lb-tab" role="tab" data-period="all" aria-selected="false" id="tabAll" tabindex="-1">All Time</button>
+    <section class="section lb2">
+      <div class="container lb2-layout">
+        <div class="lb2-main">
+          <div class="lb2-bar">
+            <div class="lb2-tabs" role="tablist" aria-label="Leaderboard period" id="lbTabs">
+              <button class="lb2-tab" role="tab" data-period="day" aria-selected="true" tabindex="0">Today</button>
+              <button class="lb2-tab" role="tab" data-period="week" aria-selected="false" tabindex="-1">This week</button>
+              <button class="lb2-tab" role="tab" data-period="month" aria-selected="false" tabindex="-1">This month</button>
+              <button class="lb2-tab" role="tab" data-period="all" aria-selected="false" tabindex="-1">All time</button>
             </div>
+            <button class="lb2-refresh" id="lbRefresh" type="button" aria-label="Refresh rankings">
+              <span aria-hidden="true">&#x21bb;</span> <span id="lbUpdated">Refresh</span>
+            </button>
+          </div>
 
-            <div class="lb-search">
-              <span class="lb-search__ico" aria-hidden="true">🔍</span>
-              <label class="sr-only" for="lbSearch">Search student by name or username</label>
-              <input type="search" id="lbSearch" placeholder="Search by name or username…" autocomplete="off" spellcheck="false">
-              <button class="lb-search__clear" id="lbSearchClear" type="button" aria-label="Clear search" hidden>✕</button>
+          <div class="lb2-summary" id="lbSummary" aria-live="polite">
+            <div class="lb2-sum"><span class="lb2-sum__lab" id="lbSumLab1">Students ranked</span><b id="lbSumRanked">-</b></div>
+            <div class="lb2-sum"><span class="lb2-sum__lab" id="lbSumLab2">Top score</span><b id="lbSumTop">-</b></div>
+            <div class="lb2-sum"><span class="lb2-sum__lab" id="lbSumLab3">Your rank</span><b id="lbSumMe">-</b></div>
+          </div>
+
+          <div class="lb2-podium" id="lbPodium" aria-label="Top three"></div>
+
+          <div class="lb2-table" id="lbTable" role="table" aria-label="Rankings">
+            <div class="lb2-row lb2-row--head" role="row">
+              <span role="columnheader" class="c-rank">#</span>
+              <span role="columnheader" class="c-name" id="lbColName">Student</span>
+              <span role="columnheader" class="c-q" id="lbColQ">Quizzes</span>
+              <span role="columnheader" class="c-acc" id="lbColAcc">Accuracy</span>
+              <span role="columnheader" class="c-pts" id="lbColPts">Points</span>
             </div>
+            <div id="lbRows" role="rowgroup"></div>
           </div>
 
-          <!-- Filters -->
-          <div class="lb-filters">
-            <div class="lb-filter" id="lbExamFilter">
-              <span class="lb-filter__lab">Exam</span>
-              <div class="lb-filter lb-chip--scroll" id="lbExamChips" role="group" aria-label="Filter by exam"></div>
-            </div>
-            <div class="lb-filter" id="lbCatFilter">
-              <span class="lb-filter__lab">Category</span>
-              <div class="lb-filter lb-chip--scroll" id="lbCatChips" role="group" aria-label="Filter by category"></div>
-            </div>
-            <div class="lb-filter">
-              <span class="lb-filter__lab">Sort</span>
-              <label class="sr-only" for="lbSort">Sort leaderboard</label>
-              <select class="lb-sort" id="lbSort">
-                <option value="score">Highest Score</option>
-                <option value="xp">Highest XP</option>
-                <option value="accuracy">Highest Accuracy</option>
-                <option value="time">Fastest Time</option>
-                <option value="newest">Newest</option>
-              </select>
-            </div>
-          </div>
-
-          <!-- Source disclosure + result count -->
-          <div class="lb-meta">
-            <span class="lb-source" id="lbSource">🌐 Loading rankings…</span>
-            <span class="lb-count" id="lbCount" aria-live="polite"></span>
-          </div>
-
-          <div class="lb-notice hidden" id="lbNotice">
-            <span class="lb-notice__ico" aria-hidden="true">ℹ️</span>
-            <span id="lbNoticeText"></span>
-            <button class="lb-notice__x" id="lbNoticeX" type="button" aria-label="Dismiss notice">✕</button>
-          </div>
-
-          <!-- Loading skeletons (fixed height → no layout shift) -->
-          <div class="lb-skeleton" id="lbSkeleton" aria-hidden="true">
-            <div class="lb-sk"></div><div class="lb-sk"></div><div class="lb-sk"></div>
-            <div class="lb-sk"></div><div class="lb-sk"></div>
-          </div>
-
-          <!-- Ranked rows -->
-          <ol class="lb-list" id="lbList"></ol>
-
-          <!-- Empty state -->
-          <div class="lb-empty empty-state" id="lbEmpty">
-            <div class="lb-empty__art" aria-hidden="true">🏆</div>
-            <h2>No rankings available yet.</h2>
-            <p>Be the first to complete today's set.</p>
-            <div class="btn-row mt-3" style="justify-content:center">
-              <a class="btn btn-primary" href="quiz.html?mode=daily">Start a quiz</a>
-              <a class="btn" href="index.html#subjects">Browse subjects</a>
-            </div>
-          </div>
-
-          <div class="lb-more" id="lbMoreWrap" hidden>
-            <button class="btn btn-soft" id="lbMore" type="button">Load more students</button>
-          </div>
-          <div class="lb-sentinel" id="lbSentinel" aria-hidden="true"></div>
+          <div class="lb2-state" id="lbState" hidden></div>
         </div>
 
-        <!-- My rank (sticky sidebar on desktop, fixed dock on phones) -->
-        <aside class="lb-side" id="lbSide" aria-label="My rank">
-          <div class="lb-my" id="lbMyRank">
-            <div class="lb-my__head">
-              <span class="lb-my__title">My Rank</span>
-              <span class="lb-my__of" id="lbMyRankOf"></span>
-            </div>
-            <div class="lb-my__rank" id="lbMyRankVal">—</div>
-            <div class="lb-my__grid">
-              <div class="lb-my__cell"><b id="lbMyXp">0</b><span>XP</span></div>
-              <div class="lb-my__cell"><b id="lbMyLevel">1</b><span>Level</span></div>
-              <div class="lb-my__cell"><b id="lbMyPct">—</b><span>Percentile</span></div>
-            </div>
-            <div class="lb-my__prog">
-              <div class="lb-my__prog-lab">
-                <span id="lbMyProgLab">Level progress</span>
-                <span id="lbMyProgPct">0%</span>
-              </div>
-              <div class="lb-track" role="progressbar" aria-labelledby="lbMyProgLab" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="lbMyTrack">
-                <span class="lb-track__fill" id="lbMyFill"></span>
-              </div>
-            </div>
-            <div class="lb-my__foot" id="lbMyFoot"></div>
-            <div class="lb-my__cta">
-              <a class="btn btn-primary btn-sm" href="quiz.html?mode=daily">Take today's quiz</a>
-            </div>
+        <aside class="lb2-side">
+          <div class="lb2-me" id="lbMe" aria-live="polite"></div>
+          <div class="lb2-rules" id="lbRules">
+            <h2 id="lbRulesTitle">How points work</h2>
+            <ul id="lbRulesList">
+              <li><b>+10</b> for every correct answer</li>
+              <li><b>+50</b> bonus for 100% on a set of 10 or more</li>
+              <li>Only your <b>best</b> score on a set counts - a retake adds just the improvement</li>
+              <li>The Daily Challenge is a new set every day</li>
+              <li>Today resets at midnight (IST), the week on Monday, the month on the 1st</li>
+            </ul>
           </div>
         </aside>
       </div>
+      <div class="lb2-dock" id="lbDock" hidden></div>
     </section>
-
-    <!-- ============================================== QUIZ LEADERBOARDS == -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <span class="eyebrow">Per set</span>
-            <h2>Expected MCQ Leaderboards</h2>
-            <p class="muted text-sm">
-              Every MCQ set keeps its own board — see who tops the Daily Expected MCQs,
-              Punjab GK and Computer tests this period.
-            </p>
-          </div>
-        </div>
-        <div class="lb-quiz-grid" id="lbQuizBoards"></div>
-      </div>
-    </section>
-
-    <!-- ==================================================== PROFILE ====== -->
-    <div class="lb-modal" id="lbModal" role="dialog" aria-modal="true" aria-labelledby="lbModalName" hidden>
-      <div class="lb-modal__panel" id="lbModalPanel">
-        <div class="lb-modal__hero">
-          <button class="lb-modal__x" id="lbModalX" type="button" aria-label="Close profile">✕</button>
-          <span class="lb-avatar lb-modal__avatar" id="lbModalAvatar">?</span>
-          <div class="lb-modal__name" id="lbModalName">—</div>
-          <div class="lb-modal__handle" id="lbModalHandle"></div>
-          <div class="lb-modal__chips" id="lbModalChips"></div>
-        </div>
-        <div class="lb-modal__body" id="lbModalBody"></div>
-      </div>
-    </div>
 
     <!-- ======================================================== CTA ======= -->
     <section class="section">

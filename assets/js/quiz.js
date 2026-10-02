@@ -681,6 +681,8 @@
       mode,
       href: QUIZ.href || "quiz.html?mode=" + mode,   // used by "Retake"
       subjectName: QUIZ.subjectName || "",
+      key: QUIZ.key || "",                   // leaderboard: "same set" identity
+      subject: QUIZ.subject || "",
       total, attempted: attemptedN, correct, wrong, skipped,
       accuracy, percent,
       score: correct,
