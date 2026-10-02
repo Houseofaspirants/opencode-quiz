@@ -1,6 +1,6 @@
 ---
-title: ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI ਸਿਲੇਬਸ, ਪੈਟਰਨ ਅਤੇ ਰੈਂਕ 2 ਰਣਨੀਤੀ
-description: ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ-ਇੰਸਪੈਕਟਰ ਦਾ ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈਟਰਨ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ, ਪਾਸ ਅੰਕ ਅਤੇ ਫਿਜ਼ੀਕਲ ਟੈਸਟ official notification ਤੋਂ, ਨਾਲ ਰੈਂਕ 2 ਟਾਪਰ ਦੀ ਰਣਨੀਤੀ।
+title: ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI 2027 ਸਿਲੇਬਸ, ਪੈਟਰਨ ਅਤੇ ਰੈਂਕ 2 ਰਣਨੀਤੀ
+description: ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI 2027 ਦਾ ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈਟਰਨ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ, ਪਾਸ ਅੰਕ ਅਤੇ ਫਿਜ਼ੀਕਲ ਟੈਸਟ official notification ਤੋਂ, ਨਾਲ ਰੈਂਕ 2 ਟਾਪਰ ਦੀ ਰਣਨੀਤੀ।
 published: 2026-10-02
 language: pa
 author: Gurpreet Singh
@@ -11,8 +11,8 @@ subjects: [gk, reasoning, quant, computer, punjabi, english]
 tags: [punjab police si, sub inspector, syllabus, exam pattern, study plan]
 subtitle: Official notification ਤੋਂ SI ਦਾ ਪੂਰਾ ਪੈਟਰਨ, ਅਤੇ ਮੈਂ 713/800 ਅੰਕ ਲੈ ਕੇ ਰੈਂਕ 2 ਕਿਵੇਂ ਹਾਸਲ ਕੀਤਾ।
 summary: ਪੰਜਾਬ ਪੁਲਿਸ SI ਵਿੱਚ 400-400 ਅੰਕਾਂ ਦੇ ਦੋ ਮੈਰਿਟ ਪੇਪਰ ਹਨ (100 ਸਵਾਲ, ਹਰ ਸਵਾਲ 4 ਅੰਕ, ਗ਼ਲਤ 'ਤੇ 1 ਅੰਕ ਕੱਟ) ਅਤੇ ਪੰਜਾਬੀ ਦਾ qualifying ਪੇਪਰ। ਹਰ ਮੈਰਿਟ ਪੇਪਰ ਵਿੱਚ 40% (ਰਾਖਵੇਂ ਵਰਗਾਂ ਲਈ 35%) ਅਤੇ ਪੰਜਾਬੀ ਵਿੱਚ 50% ਜ਼ਰੂਰੀ।
-seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ SI ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ - ਰੈਂਕ 2 ਗਾਈਡ
-keywords: [ਪੰਜਾਬ ਪੁਲਿਸ ASI ਭਰਤੀ 2027, punjab police asi recruitment, ਪੰਜਾਬ ਪੁਲਿਸ SI ਸਿਲੇਬਸ, ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਪੰਜਾਬ ਪੁਲਿਸ SI ਪੇਪਰ ਪੈਟਰਨ, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si bharti]
+seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI 2027 ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ
+keywords: [ਪੰਜਾਬ ਪੁਲਿਸ SI ਭਰਤੀ 2027, punjab police si recruitment 2027, ਪੰਜਾਬ ਪੁਲਿਸ ASI ਭਰਤੀ 2027, punjab police asi recruitment, ਪੰਜਾਬ ਪੁਲਿਸ SI ਸਿਲੇਬਸ, ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਪੰਜਾਬ ਪੁਲਿਸ SI ਪੇਪਰ ਪੈਟਰਨ, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si bharti]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [exam-punjab-police-sub-inspector.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
@@ -39,7 +39,7 @@ references:
 
 > ਪੰਜਾਬ ਪੁਲਿਸ SI ਦੀ ਪਿਛਲੀ ਭਰਤੀ 31 ਜਨਵਰੀ 2023 ਨੂੰ ਨੋਟੀਫਾਈ ਹੋਈ ਸੀ (Advt. No. 01 of 2023)। ਉਸ ਤੋਂ ਬਾਅਦ SI ਦਾ ਕੋਈ ਨਵਾਂ notification ਨਹੀਂ ਆਇਆ। ਇਸੇ ਪੈਟਰਨ 'ਤੇ ਤਿਆਰੀ ਕਰੋ; ਨਵਾਂ notification ਆਉਂਦੇ ਹੀ ਇਹ ਪੰਨਾ update ਕਰਾਂਗੇ।
 
-## ਅਗਲੀ ਭਰਤੀ: ਪੰਜਾਬ ਪੁਲਿਸ ASI ਦੀ ਸਿੱਧੀ ਭਰਤੀ
+## ਅਗਲੀ ਭਰਤੀ: ਪੰਜਾਬ ਪੁਲਿਸ ASI ਦੀ ਸਿੱਧੀ ਭਰਤੀ - 2027 ਦੀ ਤਿਆਰੀ
 
 ਪੰਜਾਬ ਪੁਲਿਸ ਵਿੱਚ ਗ੍ਰੈਜੂਏਟ ਪੱਧਰ ਦੀ ਅਗਲੀ ਸਿੱਧੀ ਭਰਤੀ SI ਦੀ ਥਾਂ **ਸਹਾਇਕ ਸਬ-ਇੰਸਪੈਕਟਰ (ASI)** ਦੇ ਰੈਂਕ 'ਤੇ ਹੋਣ ਦੀ ਉਮੀਦ ਹੈ।
 

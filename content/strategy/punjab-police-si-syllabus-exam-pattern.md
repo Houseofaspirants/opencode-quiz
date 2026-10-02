@@ -1,6 +1,6 @@
 ---
-title: Punjab Police SI & ASI Syllabus, Pattern & Rank 2 Plan
-description: Punjab Police SI syllabus, exam pattern, negative marking, cut-off rules and physical test from the official notification - plus a Rank 2 topper's strategy.
+title: Punjab Police SI & ASI 2027 Syllabus, Pattern & Rank 2 Plan
+description: Punjab Police SI & ASI 2027 syllabus, exam pattern, negative marking, cut-off rules and physical test from the official notification - plus a Rank 2 plan.
 published: 2026-10-02
 language: en
 author: Gurpreet Singh
@@ -11,8 +11,8 @@ subjects: [gk, reasoning, quant, computer, punjabi, english]
 tags: [punjab police si, sub inspector, syllabus, exam pattern, study plan]
 subtitle: The full SI pattern from the official notification, and how I scored 713/800 to get Rank 2.
 summary: Punjab Police SI has two merit papers of 400 marks each (100 questions, 4 marks per question, 1 mark negative) and a qualifying Punjabi paper. You need 40% in each merit paper (35% for reserved categories) and 50% in Punjabi.
-seoTitle: Punjab Police SI Syllabus & Exam Pattern - Rank 2 Guide
-keywords: [punjab police asi recruitment 2027, punjab police asi syllabus, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si recruitment, punjab police si preparation, punjab police si negative marking, punjab police si bharti]
+seoTitle: Punjab Police SI & ASI 2027 Syllabus & Exam Pattern
+keywords: [punjab police si recruitment 2027, punjab police si syllabus 2027, punjab police asi recruitment 2027, punjab police asi syllabus, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si recruitment, punjab police si preparation, punjab police si negative marking, punjab police si bharti]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [exam-punjab-police-sub-inspector.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
@@ -39,7 +39,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2, scoring 713 out of
 
 > The latest Punjab Police SI recruitment was notified on 31 January 2023 (Advt. No. 01 of 2023). No newer SI notification has been published yet. Prepare on this pattern, and we will update this page when the next one comes.
 
-## Coming next: Punjab Police ASI direct recruitment
+## Coming next: Punjab Police ASI direct recruitment - preparing for 2027
 
 The next graduate-level entry into Punjab Police is expected at the **Assistant Sub Inspector (ASI)** rank, not SI.
 
