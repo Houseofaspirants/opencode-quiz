@@ -60,7 +60,7 @@ IMAGE_EXT = {".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"}
 # only exist once a file claims them, so a page with no appointment letter does
 # not carry an empty appointment card.
 SLOTS = (
-    {"id": "result",      "label": "Result Card",          "keys": ("result", "marksheet", "mark-sheet", "scorecard")},
+    {"id": "result",      "label": "Result Card",          "keys": ("result", "marksheet", "mark-sheet", "scorecard"), "optional": True},
     {"id": "merit",       "label": "Merit List",           "keys": ("merit",)},
     {"id": "paper-1",     "label": "Paper 1 Answer Sheet", "keys": ("paper-1", "answer-sheet-1", "answersheet-1", "sheet-1")},
     {"id": "paper-2",     "label": "Paper 2 Answer Sheet", "keys": ("paper-2", "answer-sheet-2", "answersheet-2", "sheet-2")},
@@ -159,6 +159,10 @@ def build():
         over = sidecar.get(p.name)
         if not isinstance(over, dict):
             over = {}
+        # `"hidden": true` in metadata.json keeps a file off every page
+        # (a duplicate scan, a superseded copy) without deleting it.
+        if over.get("hidden") is True:
+            continue
         try:
             size = p.stat().st_size
         except OSError:                      # vanished mid-scan: not a document

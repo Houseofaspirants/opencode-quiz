@@ -7,25 +7,6 @@
   ],
   "slots": [
     {
-      "id": "result",
-      "slot": "result",
-      "label": "Result Card",
-      "required": true,
-      "analytics": "",
-      "doc": {
-        "file": "assets/proof/official-result-1.png",
-        "name": "official-result-1.png",
-        "kind": "image",
-        "type": "PNG",
-        "bytes": 664689,
-        "size": "649.1 KB",
-        "uploaded": "",
-        "title": "",
-        "note": "",
-        "questions": []
-      }
-    },
-    {
       "id": "merit",
       "slot": "merit",
       "label": "Merit List",
@@ -98,25 +79,6 @@
         "uploaded": "2026-10-05",
         "title": "Paper 3 Original Answer Sheet",
         "note": "Official response sheet released by Punjab Police.",
-        "questions": []
-      }
-    },
-    {
-      "id": "result-official-result",
-      "slot": "result",
-      "label": "Result Card · official-result.png",
-      "required": false,
-      "analytics": "",
-      "doc": {
-        "file": "assets/proof/official-result.png",
-        "name": "official-result.png",
-        "kind": "image",
-        "type": "PNG",
-        "bytes": 664693,
-        "size": "649.1 KB",
-        "uploaded": "2026-10-05",
-        "title": "Official Result Card",
-        "note": "Official result card released by Punjab Police.",
         "questions": []
       }
     }
