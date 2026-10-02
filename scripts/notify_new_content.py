@@ -10,8 +10,8 @@ direct link to the page where it lives.
 DELIVERY (Oct 2026, owner's choice): the messages go ONLY to the owner's own
 chat with the bot (TELEGRAM_OWNER_CHAT_ID - the "House of Aspirants Update"
 bot chat), never straight to the channel. The owner copies them into the
-channel at a time of his choosing. Each message arrives twice: ready for the
-Telegram channel (formatted) and as plain text for WhatsApp. Set the repo
+channel at a time of his choosing (formatted, ready to paste; no separate
+WhatsApp copy any more). Set the repo
 variable TELEGRAM_POST_TO_CHANNEL=1 to go back to posting on the channel
 automatically. The daily morning message (daily_motivation.py) is separate and
 still posts to the channel by itself.
@@ -360,8 +360,7 @@ def main(argv=None):
     failed = 0
     if not dry and not to_channel:
         send(token, owner, f"📝 <b>{len(msgs)} ਨਵਾਂ message ਤਿਆਰ ਹੈ</b>\n"
-                           "ਹੇਠਾਂ ਵਾਲਾ message copy ਕਰਕੇ ਆਪਣੇ ਸਮੇਂ 'ਤੇ channel ਵਿੱਚ ਪਾਓ।\n"
-                           "(ਉਸ ਤੋਂ ਬਾਅਦ WhatsApp ਲਈ ਸਾਦਾ copy ਵੀ ਹੈ)")
+                           "ਹੇਠਾਂ ਵਾਲਾ message copy ਕਰਕੇ ਆਪਣੇ ਸਮੇਂ 'ਤੇ channel ਵਿੱਚ ਪਾਓ।")
     for text, plain in msgs:
         print("-" * 60 + "\n" + text)
         if dry:
@@ -371,8 +370,6 @@ def main(argv=None):
                 failed += 1
         elif not send(token, owner, text):
             failed += 1
-        if owner:
-            send(token, owner, "📋 WhatsApp ਲਈ copy ਕਰੋ:\n\n" + plain, parse_html=False)
         time.sleep(2)            # stay well under Telegram's rate limit
     return 1 if failed else 0
 
