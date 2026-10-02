@@ -1,0 +1,31 @@
+name: daily-motivation
+
+# Every morning around 7 AM India time: one Punjabi motivational post on the
+# Telegram channel, with a link to one House of Aspirants feature
+# (scripts/daily_motivation.py). Uses the same TELEGRAM_BOT_TOKEN secret and
+# TELEGRAM_CHANNEL / TELEGRAM_OWNER_CHAT_ID variables as notify.yml.
+#
+# GitHub starts scheduled jobs a few minutes late at busy times, so the cron is
+# set to 6:50 AM IST (01:20 UTC) to land close to 7:00.
+# "Run workflow" on the Actions tab sends today's post immediately (for testing).
+on:
+  schedule:
+    - cron: "20 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Post today's motivation to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ vars.TELEGRAM_CHANNEL }}
+          TELEGRAM_OWNER_CHAT_ID: ${{ vars.TELEGRAM_OWNER_CHAT_ID }}
+        run: python3 scripts/daily_motivation.py
