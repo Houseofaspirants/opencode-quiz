@@ -1,0 +1,86 @@
+name: notify
+
+# After every push to main, prepare the Telegram announcement for new MCQ sets,
+# study material, current affairs, previous-year papers and books - but post it
+# to the channel ONLY after the owner approves it.
+#
+#   1. preview  - sends the exact draft to the owner's own Telegram chat
+#                 (TELEGRAM_OWNER_CHAT_ID) with a link to this run.
+#   2. announce - waits in the "telegram-channel" environment until the owner
+#                 clicks "Review deployments -> Approve" on GitHub (web or the
+#                 GitHub mobile app). Reject, or ignore it, and nothing is posted.
+#
+# The daily 7 AM motivation (daily-motivation.yml) is NOT gated - it posts by
+# itself as before.
+#
+# One-time setup (GitHub repo -> Settings):
+#   Environments -> New environment "telegram-channel" -> tick
+#     "Required reviewers" -> add yourself -> Save protection rules.
+#     (Without this rule the announce job would post without waiting.)
+#   Secrets and variables -> Actions:
+#     Secret    TELEGRAM_BOT_TOKEN      bot must be an admin of the channel
+#     Variable  TELEGRAM_OWNER_CHAT_ID  your own chat id - the preview goes here
+#     Variable  TELEGRAM_CHANNEL        optional, default @HouseOfAspirant
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/index.json"
+      - "data/content-manifest.json"
+      - "data/pyq-manifest.json"
+      - "data/books.json"
+
+concurrency:
+  group: notify
+  cancel-in-progress: false
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    outputs:
+      count: ${{ steps.draft.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Send the draft to the owner for approval
+        id: draft
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_OWNER_CHAT_ID: ${{ vars.TELEGRAM_OWNER_CHAT_ID }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: >
+          python3 scripts/notify_new_content.py
+          --before "${{ github.event.before }}"
+          --after "${{ github.sha }}"
+          --preview
+
+  announce:
+    needs: preview
+    if: needs.preview.outputs.count != '0' && needs.preview.outputs.count != ''
+    runs-on: ubuntu-latest
+    environment: telegram-channel
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Post the approved message to the channel
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ vars.TELEGRAM_CHANNEL }}
+          TELEGRAM_OWNER_CHAT_ID: ${{ vars.TELEGRAM_OWNER_CHAT_ID }}
+        run: >
+          python3 scripts/notify_new_content.py
+          --before "${{ github.event.before }}"
+          --after "${{ github.sha }}"
+          --wait-live

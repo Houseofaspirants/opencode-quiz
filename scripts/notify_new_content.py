@@ -100,17 +100,36 @@ def book_items(books):
     return out
 
 
+def pyq_exams(manifest):
+    """{exam id: record} for every exam folder in data/pyq-manifest.json that
+    holds at least one question paper - one announcement per exam, not one
+    per PDF, so a big upload of papers reads as a single list."""
+    out = {}
+    for e in manifest.get("exams", []) or []:
+        if not e.get("count"):
+            continue
+        out[e.get("id")] = {
+            "kind": "previous-year-questions",
+            "title": (f'{e.get("title", "")} '
+                      f'({e.get("count")} ਪੇਪਰ)').strip(),
+            "lang": "",
+            "url": e.get("url") or f'{SITE}/pyq/{e.get("slug")}',
+        }
+    return out
+
+
 def collect(sha):
     return {
         "quiz": quiz_sets(git_json(sha, "data/index.json")),
         "content": content_items(git_json(sha, "data/content-manifest.json")),
         "book": book_items(git_json(sha, "data/books.json")),
+        "pyq": pyq_exams(git_json(sha, "data/pyq-manifest.json")),
     }
 
 
 def new_items(before, after):
     found = []
-    for group in ("quiz", "content", "book"):
+    for group in ("quiz", "content", "book", "pyq"):
         for key, rec in after[group].items():
             if key not in before[group]:
                 found.append(rec)
@@ -243,7 +262,10 @@ def digest(items):
         lines.append(f"{icons.get(it['kind'], '📖')} <b>{html.escape(it['title'])}</b>{extra}")
         lines.append(f"   👉 {it['url']}")
     if len(items) > 15:
-        lines.append(f"…ਅਤੇ {len(items) - 15} ਹੋਰ - {SITE}")
+        rest = items[15:]
+        more = (f"{SITE}/pyq" if all(i["kind"] == "previous-year-questions"
+                                     for i in rest) else SITE)
+        lines.append(f"…ਅਤੇ {len(rest)} ਹੋਰ 👉 {more}")
     lines += ["", "ਸਭ ਕੁਝ ਬਿਲਕੁਲ FREE - ਅੱਜ ਹੀ ਸ਼ੁਰੂ ਕਰੋ 💪"]
     text = "\n".join(lines) + TAIL
     return text, re.sub(r"</?b>", "*", html.unescape(text)).replace("**", "")
