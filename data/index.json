@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-01T20:38:48.313Z",
+  "generatedAt": "2026-10-02T07:32:56.068Z",
   "stats": {
     "subjects": 7,
     "categories": 20,
-    "topics": 17,
-    "quizzes": 17,
-    "questions": 390,
+    "topics": 18,
+    "quizzes": 18,
+    "questions": 410,
     "studentsPracticed": 12500
   },
   "site": {
@@ -59,6 +59,36 @@
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
       "order": 1,
       "topics": [
+        {
+          "id": "dpsp-fundamental-duties-part-1",
+          "name": "DPSP & Fundamental Duties - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1790926374843,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
+            "pa": "questions/gk/polity/dpsp-fundamental-duties-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "DPSP & Fundamental Duties - Part 1",
+            "pa": "ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1"
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
+        },
         {
           "id": "five-year-plans-20-mcqs-",
           "name": "Five Year Plans 20 Mcqs ",
@@ -248,7 +278,38 @@
           "name": "Indian Polity",
           "folder": "polity",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "dpsp-fundamental-duties-part-1",
+              "name": "DPSP & Fundamental Duties - Part 1",
+              "description": "",
+              "file": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1790926374843,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
+                "pa": "questions/gk/polity/dpsp-fundamental-duties-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "DPSP & Fundamental Duties - Part 1",
+                "pa": "ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
+            }
+          ],
           "landing": "/category-gk-polity"
         },
         {
@@ -1289,5 +1350,79 @@
       ],
       "landing": "/subject-current-affairs"
     }
-  ]
+  ],
+  "stamps": {
+    "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json": [
+      "0ab8699ad8f51c1e",
+      1790753838000
+    ],
+    "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json": [
+      "d805d14f14b9a9bd",
+      1790261912813
+    ],
+    "questions/computer/MS WORD/ms-word-part-1_en.json": [
+      "1f9031b41d82ee16",
+      1790920521909
+    ],
+    "questions/computer/MS WORD/ms-word-part-2_en.json": [
+      "bf9d4ea6d6a1273a",
+      1790920521911
+    ],
+    "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
+      "c81b46122364bc1c",
+      1790441699392
+    ],
+    "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json": [
+      "8728fddd92440779",
+      1790441701401
+    ],
+    "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json": [
+      "166b895243b7f2f9",
+      1790441702188
+    ],
+    "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json": [
+      "4fd8d301ef88156e",
+      1790441705167
+    ],
+    "questions/gk/economy/five-year-plans-20-mcqs-.en.json": [
+      "c6cc6df338a1d2c9",
+      1790614960193
+    ],
+    "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
+      "5050449425caa85f",
+      1790926374843
+    ],
+    "questions/gk/punjab-gk/sikhism-part1-20-mcqs.json": [
+      "52d70d2abc76f5ab",
+      1790442325847
+    ],
+    "questions/gk/punjab-gk/sikhism-part2-20-mcqs.json": [
+      "418884dc1bed4b7c",
+      1790442327362
+    ],
+    "questions/gk/punjab-gk/sikhism-part3-20-mcqs.json": [
+      "7347054b5ec6fbd3",
+      1790442329545
+    ],
+    "questions/gk/punjab-gk/sikhism-part4-20-mcqs.json": [
+      "69bc2f7a456b81e1",
+      1790442330237
+    ],
+    "questions/reasoning/NUMBER SERIES/number-series-part-1.json": [
+      "d95e5b916fbfeea9",
+      1790310924152
+    ],
+    "questions/reasoning/NUMBER SERIES/number-series-part-2.json": [
+      "a6d435f2efbd3d1b",
+      1790310931640
+    ],
+    "questions/reasoning/NUMBER SERIES/number-series-part-3.json": [
+      "8b64e9bda5c45225",
+      1790310953245
+    ],
+    "questions/reasoning/NUMBER SERIES/number-series-part-4.json": [
+      "532703c9cd6589fc",
+      1790311070443
+    ]
+  }
 }

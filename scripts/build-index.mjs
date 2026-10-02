@@ -31,6 +31,7 @@
  *    • Errors never crash the build: bad files are reported and skipped.
  * ============================================================================
  */
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -39,6 +40,41 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const QUESTIONS_DIR = path.join(ROOT, "questions");
 const DATA_DIR = path.join(ROOT, "data");
+
+/* Stamps - same rule as build_index.py: a question file keeps the updatedAt
+   it had while its bytes are unchanged (data/index.json -> "stamps"), so a
+   fresh clone (new mtimes) builds byte-identical output. New or edited bytes
+   get "now". With no "stamps" yet, the committed updatedAt is adopted once. */
+const PREV = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(DATA_DIR, "index.json"), "utf8")); }
+  catch { return {}; }
+})();
+const PREV_STAMPS =
+  PREV.stamps && typeof PREV.stamps === "object" && !Array.isArray(PREV.stamps)
+    ? PREV.stamps : null;
+const LEGACY = {};
+if (!PREV_STAMPS) {
+  for (const s of PREV.subjects || []) {
+    for (const t of s.topics || []) {
+      if (!Number.isInteger(t.updatedAt)) continue;
+      for (const rel of [t.file, ...Object.values(t.variants || {})]) {
+        if (rel) LEGACY[rel] = t.updatedAt;
+      }
+    }
+  }
+}
+const STAMPS = {};
+const NOW_MS = Date.now();
+function stampMs(rel, full) {
+  const sha = crypto.createHash("sha256").update(fs.readFileSync(full)).digest("hex").slice(0, 16);
+  const prev = PREV_STAMPS ? PREV_STAMPS[rel] : undefined;
+  let ts;
+  if (Array.isArray(prev) && prev.length === 2 && prev[0] === sha) ts = prev[1];
+  else if (!PREV_STAMPS && rel in LEGACY) ts = LEGACY[rel];
+  else ts = NOW_MS;
+  STAMPS[rel] = [sha, ts];
+  return ts;
+}
 
 const readJSON = (p) => JSON.parse(fs.readFileSync(p, "utf8"));
 const humanize = (id) =>
@@ -706,7 +742,7 @@ for (const {
     // Whole milliseconds from nanoseconds - byte-identical to mtime_ms() in
     // scripts/build_index.py, so the two builders pass the parity gate in
     // scripts/ci.sh step 3 (a sub-ms float round-trips differently in Python).
-    updatedAt: Number(fs.statSync(full, { bigint: true }).mtimeNs / 1000000n),
+    updatedAt: stampMs(rel, full),
     ...(categoryId ? { category: categoryId } : {}),
     language,
     variants: langVariants,
@@ -829,6 +865,7 @@ const index = {
   },
   site,
   subjects: outputSubjects,
+  stamps: Object.fromEntries(Object.keys(STAMPS).sort().map((k) => [k, STAMPS[k]])),
 };
 
 fs.mkdirSync(DATA_DIR, { recursive: true });

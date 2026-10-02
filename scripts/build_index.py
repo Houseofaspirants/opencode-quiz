@@ -35,6 +35,7 @@
     • Errors never crash the build: bad files are reported and skipped.
  ============================================================================
 """
+import hashlib
 import json
 import os
 import re
@@ -337,6 +338,52 @@ def mtime_ms(full):
     enough to fail the parity gate in scripts/ci.sh step 3.
     """
     return os.stat(full).st_mtime_ns // 1_000_000
+
+
+# ---------------------------------------------------------- stamps ------
+# `updatedAt` must be the same on every machine that builds the site - the
+# owner's Mac, GitHub Actions and Vercel - or scripts/ci.sh step 7 sees drift
+# on every fresh checkout (a clone gives every file a new mtime). So the build
+# remembers, per question file, a short content hash and the time that content
+# was first seen (data/index.json -> "stamps"). Unchanged bytes keep their old
+# time; new or edited bytes get "now". The Node twin applies the same rule.
+def _load_prev():
+    try:
+        with open(os.path.join(DATA_DIR, "index.json"), encoding="utf-8") as fh:
+            return json.load(fh)
+    except (OSError, ValueError):
+        return {}
+
+
+_PREV = _load_prev()
+_PREV_STAMPS = _PREV.get("stamps") if isinstance(_PREV.get("stamps"), dict) else None
+_LEGACY = {}
+if _PREV_STAMPS is None:
+    # One-time migration from the mtime era: adopt the committed updatedAt.
+    for _s in _PREV.get("subjects", []) or []:
+        for _t in _s.get("topics", []) or []:
+            _ts = _t.get("updatedAt")
+            if not isinstance(_ts, int):
+                continue
+            for _rel in [_t.get("file")] + list((_t.get("variants") or {}).values()):
+                if _rel:
+                    _LEGACY[_rel] = _ts
+STAMPS = {}
+_NOW_MS = int(datetime.now(timezone.utc).timestamp() * 1000)
+
+
+def stamp_ms(rel, full):
+    with open(full, "rb") as fh:
+        sha = hashlib.sha256(fh.read()).hexdigest()[:16]
+    prev = (_PREV_STAMPS or {}).get(rel)
+    if isinstance(prev, list) and len(prev) == 2 and prev[0] == sha:
+        ts = prev[1]
+    elif _PREV_STAMPS is None and rel in _LEGACY:
+        ts = _LEGACY[rel]
+    else:
+        ts = _NOW_MS
+    STAMPS[rel] = [sha, ts]
+    return ts
 
 
 def by_name(item):
@@ -770,7 +817,7 @@ for item in question_files:
         "empty": is_empty,
         "available": not is_empty,  # an "available" quiz = one that has questions
         "timeLimit": time_limit,
-        "updatedAt": mtime_ms(full),
+        "updatedAt": stamp_ms(rel, full),
     }
     if category_id:
         record["category"] = category_id
@@ -891,6 +938,7 @@ index = {
     },
     "site": site,
     "subjects": output_subjects,
+    "stamps": {k: STAMPS[k] for k in sorted(STAMPS)},
 }
 
 os.makedirs(DATA_DIR, exist_ok=True)
