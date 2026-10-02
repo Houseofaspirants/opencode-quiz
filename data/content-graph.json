@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 327,
-  "edges": 1520,
+  "nodes": 344,
+  "edges": 1720,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -150,6 +150,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-eligibility.html",
+   "url": "/archive-tag-eligibility.html",
+   "type": "archive",
+   "template": "",
+   "title": "eligibility",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "eligibility"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-exam-pattern.html",
    "url": "/archive-tag-exam-pattern.html",
    "type": "archive",
@@ -174,6 +188,76 @@
    "exams": [],
    "tags": [
     "investigation-cadre"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-ppsc.html",
+   "url": "/archive-tag-ppsc.html",
+   "type": "archive",
+   "template": "",
+   "title": "ppsc",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "ppsc"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-psssb.html",
+   "url": "/archive-tag-psssb.html",
+   "type": "archive",
+   "template": "",
+   "title": "psssb",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "psssb"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-civil-services.html",
+   "url": "/archive-tag-punjab-civil-services.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab civil services",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-civil-services"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-patwari.html",
+   "url": "/archive-tag-punjab-patwari.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab patwari",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-patwari"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-pcs.html",
+   "url": "/archive-tag-punjab-pcs.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab pcs",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-pcs"
    ],
    "hub": "archives.html"
   },
@@ -216,6 +300,20 @@
    "exams": [],
    "tags": [
     "punjab-police-si"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-revenue-patwari.html",
+   "url": "/archive-tag-revenue-patwari.html",
+   "type": "archive",
+   "template": "",
+   "title": "revenue patwari",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "revenue-patwari"
    ],
    "hub": "archives.html"
   },
@@ -277,6 +375,30 @@
    "id": "articles.html",
    "url": "/articles.html",
    "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/punjab-patwari-notification-2021.pdf",
+   "url": "/assets/pdfs/punjab-patwari-notification-2021.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/punjab-pcs-notification-2025.pdf",
+   "url": "/assets/pdfs/punjab-pcs-notification-2025.pdf",
+   "type": "page",
    "template": "",
    "title": "",
    "lang": "en",
@@ -2998,6 +3120,84 @@
    "hub": "news.html"
   },
   {
+   "id": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "url": "/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "url": "/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Patwari"
+   ],
+   "tags": [
+    "punjab patwari",
+    "psssb",
+    "revenue patwari",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-punjab-pcs-syllabus-exam-pattern",
+   "url": "/pa/strategy-punjab-pcs-syllabus-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "url": "/pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ PCS ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈਟਰਨ ਅਤੇ ਯੋਗਤਾ 2025",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english",
+    "current-affairs"
+   ],
+   "exams": [
+    "Punjab Civil Services"
+   ],
+   "tags": [
+    "punjab pcs",
+    "ppsc",
+    "punjab civil services",
+    "syllabus",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "url": "/pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "type": "page",
@@ -3897,6 +4097,84 @@
    "hub": "archives.html"
   },
   {
+   "id": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "url": "/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "url": "/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab Patwari Recruitment, Eligibility & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Patwari"
+   ],
+   "tags": [
+    "punjab patwari",
+    "psssb",
+    "revenue patwari",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-punjab-pcs-syllabus-exam-pattern",
+   "url": "/strategy-punjab-pcs-syllabus-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "url": "/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab PCS Syllabus, Exam Pattern & Eligibility 2025",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english",
+    "current-affairs"
+   ],
+   "exams": [
+    "Punjab Civil Services"
+   ],
+   "tags": [
+    "punjab pcs",
+    "ppsc",
+    "punjab civil services",
+    "syllabus",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "url": "/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "type": "document",
@@ -4473,6 +4751,18 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -4574,6 +4864,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-eligibility.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-exam-pattern.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -4582,6 +4914,18 @@
   {
    "from": "archive-tag-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4646,6 +4990,216 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-ppsc.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-ppsc.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-civil-services.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-patwari.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-pcs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-punjab-police-constable.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -4767,6 +5321,48 @@
   },
   {
    "from": "archive-tag-punjab-police-si.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revenue-patwari.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -4852,6 +5448,12 @@
   {
    "from": "archive-tag-syllabus.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4929,6 +5531,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -4936,6 +5544,36 @@
   {
    "from": "archives.html",
    "to": "archive-tag-investigation-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-ppsc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-civil-services.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-pcs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -4954,6 +5592,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-revenue-patwari.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5181,6 +5825,18 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -5217,6 +5873,18 @@
   },
   {
    "from": "archives.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -5247,6 +5915,18 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -5260,6 +5940,18 @@
   {
    "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8684,6 +9376,378 @@
    "weight": 1
   },
   {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-punjab-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-revenue-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "assets/pdfs/punjab-patwari-notification-2021.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "exam-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq/psssb-patwari/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-ppsc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-civil-services.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-pcs-notification-2025.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "exam-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq/ppsc-punjab-civil-services/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -8841,20 +9905,26 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -8991,6 +10061,18 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -9021,20 +10103,26 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -9171,6 +10259,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -9201,20 +10295,26 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -12158,6 +13258,336 @@
    "weight": 1
   },
   {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-punjab-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "archive-tag-revenue-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "assets/pdfs/punjab-patwari-notification-2021.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "exam-patwari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pyq/psssb-patwari/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-ppsc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-civil-services.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "assets/pdfs/punjab-pcs-notification-2025.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "exam-punjab-pcs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pyq/ppsc-punjab-civil-services/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -12315,7 +13745,13 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -12328,7 +13764,7 @@
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -12483,7 +13919,13 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -12496,7 +13938,7 @@
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -12568,6 +14010,12 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12645,7 +14093,13 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -12658,7 +14112,7 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-pdf",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -12670,6 +14124,18 @@
   {
    "from": "strategy.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12688,6 +14154,18 @@
   {
    "from": "strategy.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13331,7 +14809,9 @@
     "category-gk-geography-environment.html",
     "category-gk-history.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html"
+   ]
   },
   {
    "id": "exam:ppsc-posts",
@@ -13369,7 +14849,9 @@
    "clusters": [
     "category-gk-polity.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-pcs-syllabus-exam-pattern.html"
+   ]
   },
   {
    "id": "exam:punjab-police",
@@ -13538,6 +15020,7 @@
     "topic-computer-ms-word-part-2.html"
    ],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"
@@ -13556,7 +15039,9 @@
     "topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
     "topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html"
    ],
-   "leaves": []
+   "leaves": [
+    "strategy-punjab-pcs-syllabus-exam-pattern.html"
+   ]
   },
   {
    "id": "subject:english",
@@ -13566,6 +15051,8 @@
    "hub": "subject-english.html",
    "clusters": [],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+    "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"
@@ -13601,6 +15088,8 @@
     "topic-gk-sikhism-part4-20-mcqs.html"
    ],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+    "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"
@@ -13614,6 +15103,8 @@
    "hub": "subject-punjabi.html",
    "clusters": [],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+    "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"
@@ -13627,6 +15118,8 @@
    "hub": "subject-quant.html",
    "clusters": [],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+    "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"
@@ -13646,6 +15139,8 @@
     "topic-reasoning-number-series-part-4.html"
    ],
    "leaves": [
+    "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+    "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
     "strategy-punjab-police-si-syllabus-exam-pattern.html"

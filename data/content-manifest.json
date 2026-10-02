@@ -40,7 +40,7 @@
       "url": "https://houseofaspirants.in/strategy",
       "title": "Exam Preparation Strategy & Study Plans | House of Aspirants",
       "description": "Preparation strategy for Punjab aspirants - study plans, daily and weekly timetables, book guidance, revision, mock test and mistake analysis method.",
-      "count": 6
+      "count": 10
     },
     {
       "collection": "sessions",
@@ -223,6 +223,12 @@
       "description": "Every document tagged 2026 on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive exams,"
     },
     {
+      "file": "archive-tag-eligibility.html",
+      "url": "https://houseofaspirants.in/archive-tag-eligibility",
+      "title": "eligibility | House of Aspirants",
+      "description": "Every document tagged eligibility on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive"
+    },
+    {
       "file": "archive-tag-exam-pattern.html",
       "url": "https://houseofaspirants.in/archive-tag-exam-pattern",
       "title": "exam pattern | House of Aspirants",
@@ -233,6 +239,36 @@
       "url": "https://houseofaspirants.in/archive-tag-investigation-cadre",
       "title": "investigation cadre | House of Aspirants",
       "description": "Every document tagged investigation cadre on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab"
+    },
+    {
+      "file": "archive-tag-ppsc.html",
+      "url": "https://houseofaspirants.in/archive-tag-ppsc",
+      "title": "ppsc | House of Aspirants",
+      "description": "Every document tagged ppsc on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive exams,"
+    },
+    {
+      "file": "archive-tag-psssb.html",
+      "url": "https://houseofaspirants.in/archive-tag-psssb",
+      "title": "psssb | House of Aspirants",
+      "description": "Every document tagged psssb on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive Free"
+    },
+    {
+      "file": "archive-tag-punjab-civil-services.html",
+      "url": "https://houseofaspirants.in/archive-tag-punjab-civil-services",
+      "title": "punjab civil services | House of Aspirants",
+      "description": "Every document tagged punjab civil services on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab"
+    },
+    {
+      "file": "archive-tag-punjab-patwari.html",
+      "url": "https://houseofaspirants.in/archive-tag-punjab-patwari",
+      "title": "punjab patwari | House of Aspirants",
+      "description": "Every document tagged punjab patwari on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
+      "file": "archive-tag-punjab-pcs.html",
+      "url": "https://houseofaspirants.in/archive-tag-punjab-pcs",
+      "title": "punjab pcs | House of Aspirants",
+      "description": "Every document tagged punjab pcs on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive"
     },
     {
       "file": "archive-tag-punjab-police-constable.html",
@@ -251,6 +287,12 @@
       "url": "https://houseofaspirants.in/archive-tag-punjab-police-si",
       "title": "punjab police si | House of Aspirants",
       "description": "Every document tagged punjab police si on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
+      "file": "archive-tag-revenue-patwari.html",
+      "url": "https://houseofaspirants.in/archive-tag-revenue-patwari",
+      "title": "revenue patwari | House of Aspirants",
+      "description": "Every document tagged revenue patwari on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
     },
     {
       "file": "archive-tag-study-plan.html",
@@ -1544,6 +1586,84 @@
     },
     {
       "collection": "strategy",
+      "file": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+      "url": "https://houseofaspirants.in/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+      "title": "ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+      "description": "ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ PSSSB ਦੇ official notification ਤੋਂ: ਅਸਾਮੀਆਂ, ਯੋਗਤਾ, ਉਮਰ ਹੱਦ, ਫ਼ੀਸ, ਤਨਖ਼ਾਹ, ਦੋ ਪੜਾਵਾਂ ਦਾ ਪੇਪਰ, 40% ਪਾਸ ਅੰਕ ਅਤੇ ਭਰਤੀ 2026 ਦੀ ਖ਼ਬਰ।",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "computer",
+        "punjabi",
+        "english"
+      ],
+      "tags": [
+        "punjab patwari",
+        "psssb",
+        "revenue patwari",
+        "eligibility",
+        "exam pattern"
+      ],
+      "exams": [
+        "Patwari"
+      ],
+      "readingMinutes": 4,
+      "lang": "pa",
+      "featured": false,
+      "path": "content/strategy/punjab-patwari-recruitment-eligibility-exam-pattern.pa.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Beginner",
+      "alt": {
+        "lang": "en",
+        "file": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+        "url": "https://houseofaspirants.in/strategy-punjab-patwari-recruitment-eligibility-exam-pattern"
+      }
+    },
+    {
+      "collection": "strategy",
+      "file": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+      "url": "https://houseofaspirants.in/pa/strategy-punjab-pcs-syllabus-exam-pattern",
+      "title": "ਪੰਜਾਬ PCS ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈਟਰਨ ਅਤੇ ਯੋਗਤਾ 2025",
+      "description": "ਪੰਜਾਬ PCS ਦਾ ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ PPSC ਦੇ 2025 ਦੇ official notification ਤੋਂ: ਪ੍ਰੀਲਿਮਜ਼, CSAT, ਮੇਨਜ਼, ਇੰਟਰਵਿਊ, ਉਮਰ ਹੱਦ, attempts ਅਤੇ DSP ਫਿਜ਼ੀਕਲ।",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "punjabi",
+        "english",
+        "current-affairs"
+      ],
+      "tags": [
+        "punjab pcs",
+        "ppsc",
+        "punjab civil services",
+        "syllabus",
+        "exam pattern"
+      ],
+      "exams": [
+        "Punjab Civil Services"
+      ],
+      "readingMinutes": 5,
+      "lang": "pa",
+      "featured": false,
+      "path": "content/strategy/punjab-pcs-syllabus-exam-pattern.pa.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Advanced",
+      "alt": {
+        "lang": "en",
+        "file": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+        "url": "https://houseofaspirants.in/strategy-punjab-pcs-syllabus-exam-pattern"
+      }
+    },
+    {
+      "collection": "strategy",
       "file": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
       "url": "https://houseofaspirants.in/pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
       "title": "ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ 2026 ਅਤੇ ਭਰਤੀ 2027",
@@ -1712,6 +1832,84 @@
       "path": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
       "category": "",
       "pdf": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf"
+    },
+    {
+      "collection": "strategy",
+      "file": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+      "url": "https://houseofaspirants.in/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+      "title": "Punjab Patwari Recruitment, Eligibility & Exam Pattern",
+      "description": "Punjab Patwari recruitment from the official PSSSB notification - posts, eligibility, age limit, fee, pay, two-stage exam, 40% cut-off - plus Bharti 2026 news.",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "computer",
+        "punjabi",
+        "english"
+      ],
+      "tags": [
+        "punjab patwari",
+        "psssb",
+        "revenue patwari",
+        "eligibility",
+        "exam pattern"
+      ],
+      "exams": [
+        "Patwari"
+      ],
+      "readingMinutes": 4,
+      "lang": "en",
+      "featured": false,
+      "path": "content/strategy/punjab-patwari-recruitment-eligibility-exam-pattern.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Beginner",
+      "alt": {
+        "lang": "pa",
+        "file": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+        "url": "https://houseofaspirants.in/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern"
+      }
+    },
+    {
+      "collection": "strategy",
+      "file": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+      "url": "https://houseofaspirants.in/strategy-punjab-pcs-syllabus-exam-pattern",
+      "title": "Punjab PCS Syllabus, Exam Pattern & Eligibility 2025",
+      "description": "Punjab PCS syllabus and exam pattern from the official PPSC 2025 notification - prelims, CSAT, mains, interview, age limit, attempts and DSP physical test.",
+      "published": "2026-10-02",
+      "updated": "2026-10-02",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "quant",
+        "punjabi",
+        "english",
+        "current-affairs"
+      ],
+      "tags": [
+        "punjab pcs",
+        "ppsc",
+        "punjab civil services",
+        "syllabus",
+        "exam pattern"
+      ],
+      "exams": [
+        "Punjab Civil Services"
+      ],
+      "readingMinutes": 5,
+      "lang": "en",
+      "featured": false,
+      "path": "content/strategy/punjab-pcs-syllabus-exam-pattern.md",
+      "category": "preparation-strategy",
+      "author": "Gurpreet Singh",
+      "difficulty": "Advanced",
+      "alt": {
+        "lang": "pa",
+        "file": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+        "url": "https://houseofaspirants.in/pa/strategy-punjab-pcs-syllabus-exam-pattern"
+      }
     },
     {
       "collection": "strategy",
@@ -3910,7 +4108,7 @@
     "notes": 0,
     "current-affairs": 3,
     "magazine": 0,
-    "strategy": 6,
+    "strategy": 10,
     "sessions": 0,
     "recruitment": 0,
     "blogs": 0,
