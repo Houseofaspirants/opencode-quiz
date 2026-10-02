@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 357,
-  "edges": 1904,
+  "nodes": 380,
+  "edges": 2190,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -150,6 +150,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-animal-husbandry.html",
+   "url": "/archive-tag-animal-husbandry.html",
+   "type": "archive",
+   "template": "",
+   "title": "animal husbandry",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "animal-husbandry"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-clerk.html",
+   "url": "/archive-tag-clerk.html",
+   "type": "archive",
+   "template": "",
+   "title": "clerk",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "clerk"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-cooperative-inspector.html",
    "url": "/archive-tag-cooperative-inspector.html",
    "type": "archive",
@@ -248,6 +276,48 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-jail-warder.html",
+   "url": "/archive-tag-jail-warder.html",
+   "type": "archive",
+   "template": "",
+   "title": "jail warder",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "jail-warder"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-matron.html",
+   "url": "/archive-tag-matron.html",
+   "type": "archive",
+   "template": "",
+   "title": "matron",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "matron"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-physical-test.html",
+   "url": "/archive-tag-physical-test.html",
+   "type": "archive",
+   "template": "",
+   "title": "physical test",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "physical-test"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-ppsc.html",
    "url": "/archive-tag-ppsc.html",
    "type": "archive",
@@ -258,6 +328,20 @@
    "exams": [],
    "tags": [
     "ppsc"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-psssb-clerk.html",
+   "url": "/archive-tag-psssb-clerk.html",
+   "type": "archive",
+   "template": "",
+   "title": "psssb clerk",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "psssb-clerk"
    ],
    "hub": "archives.html"
   },
@@ -416,6 +500,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-typing-test.html",
+   "url": "/archive-tag-typing-test.html",
+   "type": "archive",
+   "template": "",
+   "title": "typing test",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "typing-test"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-veterinary-inspector.html",
+   "url": "/archive-tag-veterinary-inspector.html",
+   "type": "archive",
+   "template": "",
+   "title": "veterinary inspector",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "veterinary-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archives.html",
    "url": "/archives.html",
    "type": "page",
@@ -440,8 +552,44 @@
    "hub": ""
   },
   {
+   "id": "assets/pdfs/psssb-clerk-notification-2026.pdf",
+   "url": "/assets/pdfs/psssb-clerk-notification-2026.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
    "url": "/assets/pdfs/psssb-excise-inspector-notification-2024.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/psssb-jail-warder-matron-notification-2026.pdf",
+   "url": "/assets/pdfs/psssb-jail-warder-matron-notification-2026.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "assets/pdfs/psssb-veterinary-inspector-notification-2026.pdf",
+   "url": "/assets/pdfs/psssb-veterinary-inspector-notification-2026.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -3225,6 +3373,46 @@
    "hub": "strategy.html"
   },
   {
+   "id": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "url": "/pa/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "url": "/pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਕਲਰਕ ਭਰਤੀ 2026 - ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Clerk"
+   ],
+   "tags": [
+    "psssb",
+    "clerk",
+    "psssb clerk",
+    "eligibility",
+    "exam pattern",
+    "typing test"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "page",
@@ -3258,6 +3446,81 @@
     "psssb",
     "excise inspector",
     "excise and taxation inspector",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "url": "/pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "url": "/pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਅਤੇ ਮੇਟਰਨ 2026 - ਯੋਗਤਾ, PMT ਅਤੇ PET",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Jail Warder"
+   ],
+   "tags": [
+    "psssb",
+    "jail warder",
+    "matron",
+    "physical test",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "url": "/pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "url": "/pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ 2026 - ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Veterinary Inspector"
+   ],
+   "tags": [
+    "psssb",
+    "veterinary inspector",
+    "animal husbandry",
     "eligibility",
     "exam pattern"
    ],
@@ -4278,6 +4541,46 @@
    "hub": "strategy.html"
   },
   {
+   "id": "strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "url": "/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "url": "/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Clerk 2026 Recruitment, Eligibility & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "computer",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Clerk"
+   ],
+   "tags": [
+    "psssb",
+    "clerk",
+    "psssb clerk",
+    "eligibility",
+    "exam pattern",
+    "typing test"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "document",
@@ -4311,6 +4614,81 @@
     "psssb",
     "excise inspector",
     "excise and taxation inspector",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "url": "/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "url": "/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Jail Warder & Matron 2026 - Eligibility, PMT & PET",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Jail Warder"
+   ],
+   "tags": [
+    "psssb",
+    "jail warder",
+    "matron",
+    "physical test",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "url": "/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "url": "/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Veterinary Inspector 2026 - Eligibility & Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "punjabi",
+    "english"
+   ],
+   "exams": [
+    "Veterinary Inspector"
+   ],
+   "tags": [
+    "psssb",
+    "veterinary inspector",
+    "animal husbandry",
     "eligibility",
     "exam pattern"
    ],
@@ -4977,7 +5355,25 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5096,6 +5492,90 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-animal-husbandry.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-clerk.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-cooperative-inspector.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -5157,7 +5637,19 @@
   },
   {
    "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5187,7 +5679,25 @@
   },
   {
    "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5390,6 +5900,132 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-jail-warder.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-jail-warder.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-matron.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-physical-test.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-ppsc.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -5438,14 +6074,50 @@
    "weight": 1
   },
   {
-   "from": "archive-tag-psssb.html",
+   "from": "archive-tag-psssb-clerk.html",
    "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "archive-tag-psssb.html",
+   "from": "archive-tag-psssb-clerk.html",
    "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb-clerk.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb-clerk.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb-clerk.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb-clerk.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb-clerk.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "archives.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5457,13 +6129,7 @@
   },
   {
    "from": "archive-tag-psssb.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-psssb.html",
-   "to": "quiz.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5475,13 +6141,19 @@
   },
   {
    "from": "archive-tag-psssb.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-tag-psssb.html",
-   "to": "study-notes.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5884,6 +6556,90 @@
   {
    "from": "archive-tag-syllabus.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-typing-test.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-veterinary-inspector.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -5943,6 +6699,18 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-animal-husbandry.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-cooperative-inspector.html",
    "rel": "contextual",
    "weight": 1
@@ -5985,7 +6753,31 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-matron.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-physical-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-ppsc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-psssb-clerk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6052,6 +6844,18 @@
   {
    "from": "archives.html",
    "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-typing-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-veterinary-inspector.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6267,7 +7071,25 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6327,7 +7149,25 @@
   },
   {
    "from": "archives.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6381,7 +7221,25 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6423,7 +7281,25 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6567,7 +7443,7 @@
   },
   {
    "from": "ca-august-2026-english.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6645,7 +7521,7 @@
   },
   {
    "from": "ca-current-affairs-august.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6723,7 +7599,7 @@
   },
   {
    "from": "ca-current-affairs-july.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7239,7 +8115,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7341,7 +8217,7 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7425,7 +8301,7 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7509,7 +8385,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7593,7 +8469,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7677,7 +8553,7 @@
   },
   {
    "from": "material-m-s-word.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7761,7 +8637,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7845,7 +8721,7 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7929,7 +8805,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8013,7 +8889,7 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8097,7 +8973,7 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8181,7 +9057,7 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8271,7 +9147,7 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8355,7 +9231,7 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8439,7 +9315,7 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8529,7 +9405,7 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8613,7 +9489,7 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8703,7 +9579,7 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8793,7 +9669,7 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8889,7 +9765,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8985,7 +9861,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9081,7 +9957,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9171,7 +10047,7 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9261,7 +10137,7 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9345,7 +10221,7 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9429,7 +10305,7 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9513,7 +10389,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9597,7 +10473,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9681,7 +10557,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9765,7 +10641,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9993,13 +10869,13 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -10011,7 +10887,13 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -10023,6 +10905,216 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-psssb-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "assets/pdfs/psssb-clerk-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk-it/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -10149,6 +11241,12 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -10197,8 +11295,14 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -10215,12 +11319,396 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-matron.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-physical-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-jail-warder-matron-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "exam-punjab-police-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-jail-warder/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-animal-husbandry.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-veterinary-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-veterinary-inspector-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-dairy-development-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-veterinary-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -10407,8 +11895,14 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -10420,12 +11914,6 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -10599,7 +12087,7 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -10803,13 +12291,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -11007,7 +12495,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -11211,7 +12699,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -11553,7 +13041,7 @@
   },
   {
    "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11625,7 +13113,7 @@
   },
   {
    "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11697,7 +13185,7 @@
   },
   {
    "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14289,7 +15777,7 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -14301,18 +15789,210 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-psssb-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "assets/pdfs/psssb-clerk-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "exam-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk-it/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pyq/psssb-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-computer-ms-word-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -14380,6 +16060,12 @@
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14469,13 +16155,13 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -14493,12 +16179,366 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-matron.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-physical-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-jail-warder-matron-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "exam-punjab-police-jail-warder.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-jail-warder/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-animal-husbandry.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "archive-tag-veterinary-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "assets/pdfs/psssb-veterinary-inspector-notification-2026.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-dairy-development-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-veterinary-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-reasoning-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -14667,19 +16707,19 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -14781,6 +16821,12 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -14835,7 +16881,7 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -14985,6 +17031,12 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "rel": "contextual",
    "weight": 1
@@ -15033,14 +17085,8 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -15219,8 +17265,14 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -15399,8 +17451,14 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -15435,7 +17493,25 @@
   },
   {
    "from": "strategy.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15477,7 +17553,25 @@
   },
   {
    "from": "strategy.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16072,7 +18166,9 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "exam-clerk.html",
    "clusters": [],
-   "leaves": []
+   "leaves": [
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html"
+   ]
   },
   {
    "id": "exam:excise-inspector",
@@ -16346,6 +18442,7 @@
     "topic-computer-ms-word-part-2.html"
    ],
    "leaves": [
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -16379,7 +18476,10 @@
    "hub": "subject-english.html",
    "clusters": [],
    "leaves": [
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+    "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -16418,7 +18518,10 @@
    ],
    "leaves": [
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+    "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -16434,7 +18537,10 @@
    "hub": "subject-punjabi.html",
    "clusters": [],
    "leaves": [
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+    "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -16451,7 +18557,9 @@
    "clusters": [],
    "leaves": [
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -16474,7 +18582,10 @@
    ],
    "leaves": [
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+    "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
