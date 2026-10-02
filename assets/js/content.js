@@ -99,6 +99,39 @@
 })();
 
 /* ============================================================================
+ * Language folders (hub pages)
+ * ----------------------------------------------------------------------------
+ * A hub that holds the same guides in English and in Punjabi shows two folder
+ * buttons. The list then shows one language at a time - the folder the reader
+ * last opened, else the site language from the header toggle (Punjabi by
+ * default). Cards carry data-lang; CSS hides the other language.
+ * ========================================================================== */
+(() => {
+  "use strict";
+  const box = document.querySelector("[data-lang-folders]");
+  const list = document.querySelector("[data-filter-list]");
+  if (!box || !list) return;
+  const KEY = "hoa-folder-lang";
+  let start = null;
+  try { start = localStorage.getItem(KEY); } catch (e) { start = null; }
+  if (start !== "en" && start !== "pa") {
+    start = document.documentElement.getAttribute("data-lang") === "en" ? "en" : "pa";
+  }
+  const set = (lang, save) => {
+    list.setAttribute("data-lang-view", lang);
+    box.querySelectorAll("[data-lang-folder]").forEach((b) =>
+      b.setAttribute("aria-pressed", String(b.getAttribute("data-lang-folder") === lang)));
+    if (save) { try { localStorage.setItem(KEY, lang); } catch (e) { /* private mode */ } }
+    document.dispatchEvent(new CustomEvent("hoa:folder", { detail: { lang } }));
+  };
+  box.addEventListener("click", (e) => {
+    const b = /** @type {Element} */ (e.target).closest("[data-lang-folder]");
+    if (b) set(b.getAttribute("data-lang-folder") === "en" ? "en" : "pa", true);
+  });
+  set(start, false);
+})();
+
+/* ============================================================================
  * List filters (Phase 4)
  * ----------------------------------------------------------------------------
  * The chip bar above every listing that has something to filter. Each chip is
@@ -129,6 +162,9 @@
 
   const apply = () => {
     let shown = 0;
+    const view = list.getAttribute("data-lang-view");
+    const inView = (row) => !view || (row.getAttribute("data-lang") || "en") === view;
+    const visible = rows.filter(inView).length;
     for (const row of rows) {
       let ok = true;
       for (const facet of Object.keys(active)) {
@@ -144,12 +180,12 @@
         if (!hit) { ok = false; break; }
       }
       row.classList.toggle("is-filtered-out", !ok);
-      if (ok) shown += 1;
+      if (ok && inView(row)) shown += 1;
     }
     if (count) {
       count.textContent =
-        shown === total ? total + " shown" : shown + " of " + total + " shown";
-      count.classList.toggle("is-muted", shown === total);
+        shown === visible ? visible + " shown" : shown + " of " + visible + " shown";
+      count.classList.toggle("is-muted", shown === visible);
     }
     if (reset) reset.hidden = !chips.some((c) => c.getAttribute("aria-pressed") === "true");
   };
@@ -173,6 +209,7 @@
     }
   });
 
+  document.addEventListener("hoa:folder", apply);
   apply();
 })();
 

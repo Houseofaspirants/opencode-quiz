@@ -4793,6 +4793,7 @@ def hub_cards(coll, items, index, lang="en", facets=None):
             meta = "Read more"
         cards.append(
             f'<a class="card card-pad reveal" href="{r["file"]}"'
+            + f' data-lang="{esc(r["lang"] or "en")}"'
             + (' lang="pa"' if r["lang"] == "pa" else "")
             + (filter_attrs(r, facets) if facets else "") + '>'
             f'<span class="eyebrow">{esc(eyebrow)}</span>'
@@ -5195,12 +5196,36 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
         # is, appears under the same heading.
         heading = "Study Material" if coll == STUDY_DIR else (
             "Latest notes" if coll == "notes" else "All published")
+        # Two language folders: a guide published in English and in Punjabi
+        # is one article in two languages, so the list opens on ONE language
+        # (the reader's) instead of showing every guide twice. The folder is
+        # chosen in content.js; without JavaScript both languages show.
+        n_lang = {"en": 0, "pa": 0}
+        for r in live:
+            n_lang["pa" if r.get("lang") == "pa" else "en"] += 1
+        folders = (coll not in (STUDY_DIR, "pdfs")
+                   and n_lang["en"] > 0 and n_lang["pa"] > 0)
+        bar_facets = ({k: v for k, v in facets.items() if k != "language"}
+                      if folders else facets)
+        folder_html = (f"""<div class="lang-folders" role="group" aria-label="Language" data-lang-folders>
+            <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="pa">
+              <span class="lf-ico" aria-hidden="true">📁</span>
+              <span class="lf-name" lang="pa">ਪੰਜਾਬੀ</span>
+              <span class="lf-count" lang="pa">{n_lang["pa"]} ਲੇਖ</span>
+            </button>
+            <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="en">
+              <span class="lf-ico" aria-hidden="true">📁</span>
+              <span class="lf-name">English</span>
+              <span class="lf-count">{n_lang["en"]} article{"s" if n_lang["en"] != 1 else ""}</span>
+            </button>
+          </div>""" if folders else "")
         head_html = f"""<div class="section-head reveal"><div>
             <span class="eyebrow">{"Published" if coll != STUDY_DIR else "Every format, one list"}</span>
             <h2>{heading}</h2>
             <p>{esc(hub["lead"])}</p>
           </div></div>
-          {filter_bar(facets, {"category": "Subject"} if coll == STUDY_DIR else None)}
+          {folder_html}
+          {filter_bar(bar_facets, {"category": "Subject"} if coll == STUDY_DIR else None)}
           <div class="grid grid-3" data-filter-list>{hub_cards(coll, live, index, facets=facets)}</div>"""
     else:
         cta_href, cta_text = hub["empty_cta"]

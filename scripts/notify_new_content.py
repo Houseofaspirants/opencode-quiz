@@ -7,16 +7,22 @@ what is new - MCQ sets, study material, current affairs, PYQ papers, books -
 and posts one Punjabi message per new item on the Telegram channel, with the
 direct link to the page where it lives.
 
-It also sends a plain-text copy of every message to the owner's own Telegram
-chat (TELEGRAM_OWNER_CHAT_ID, optional) so it can be forwarded to WhatsApp in
-one copy-paste - WhatsApp Channels have no official posting API.
+DELIVERY (Oct 2026, owner's choice): the messages go ONLY to the owner's own
+chat with the bot (TELEGRAM_OWNER_CHAT_ID - the "House of Aspirants Update"
+bot chat), never straight to the channel. The owner copies them into the
+channel at a time of his choosing. Each message arrives twice: ready for the
+Telegram channel (formatted) and as plain text for WhatsApp. Set the repo
+variable TELEGRAM_POST_TO_CHANNEL=1 to go back to posting on the channel
+automatically. The daily morning message (daily_motivation.py) is separate and
+still posts to the channel by itself.
 
     python3 scripts/notify_new_content.py --before <sha> [--after HEAD] [--dry-run]
 
 Environment (GitHub repo -> Settings -> Secrets and variables -> Actions):
     TELEGRAM_BOT_TOKEN      secret - from @BotFather (the bot must be a channel admin)
     TELEGRAM_CHANNEL        variable, optional - default @HouseOfAspirant
-    TELEGRAM_OWNER_CHAT_ID  variable, optional - your own chat id for the WhatsApp copy
+    TELEGRAM_OWNER_CHAT_ID  variable - your own chat id; the messages are delivered here
+    TELEGRAM_POST_TO_CHANNEL variable, optional - "1" posts on the channel as well
 
 Without a token it prints the messages and sends nothing, so it is safe to run
 anywhere. Standard library only.
@@ -339,16 +345,31 @@ def main(argv=None):
     owner = os.environ.get("TELEGRAM_OWNER_CHAT_ID", "").strip()
     dry = a.dry_run or not token
 
-    print(f"{len(items)} new item(s) -> {len(msgs)} message(s) for {channel}"
+    to_channel = os.environ.get("TELEGRAM_POST_TO_CHANNEL", "").strip() == "1"
+    where = channel if to_channel else "owner chat only (copy to the channel yourself)"
+    print(f"{len(items)} new item(s) -> {len(msgs)} message(s) for {where}"
           + (" [DRY RUN - nothing sent]" if dry else ""))
+    if not dry and not to_channel and not owner:
+        print("  ! TELEGRAM_OWNER_CHAT_ID is not set - nothing sent (the channel "
+              "is skipped on purpose; set the variable to receive the drafts)")
+        for text, _plain in msgs:
+            print("-" * 60 + "\n" + text)
+        return 0
     if a.wait_live and not dry:
         wait_live([i["url"] for i in items])
     failed = 0
+    if not dry and not to_channel:
+        send(token, owner, f"📝 <b>{len(msgs)} ਨਵਾਂ message ਤਿਆਰ ਹੈ</b>\n"
+                           "ਹੇਠਾਂ ਵਾਲਾ message copy ਕਰਕੇ ਆਪਣੇ ਸਮੇਂ 'ਤੇ channel ਵਿੱਚ ਪਾਓ।\n"
+                           "(ਉਸ ਤੋਂ ਬਾਅਦ WhatsApp ਲਈ ਸਾਦਾ copy ਵੀ ਹੈ)")
     for text, plain in msgs:
         print("-" * 60 + "\n" + text)
         if dry:
             continue
-        if not send(token, channel, text):
+        if to_channel:
+            if not send(token, channel, text):
+                failed += 1
+        elif not send(token, owner, text):
             failed += 1
         if owner:
             send(token, owner, "📋 WhatsApp ਲਈ copy ਕਰੋ:\n\n" + plain, parse_html=False)

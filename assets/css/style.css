@@ -3819,3 +3819,23 @@ body.rbv-open { overflow: hidden; }
 .pyq-dl-row + .pyq-dl-row { margin-top: 10px; }
 .pyq-exam .btn-row { flex-wrap: nowrap; gap: 8px; }
 .pyq-exam .btn-row .btn { flex: 1 1 0; min-width: 0; justify-content: center; padding-left: 10px; padding-right: 10px; }
+
+/* Hub language folders: one language of guides at a time. */
+.lang-folders { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0 0 18px; }
+.lang-folder {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 2px;
+  padding: 14px 16px; min-height: 64px; cursor: pointer; font: inherit; text-align: left;
+  color: var(--text); background: var(--surface, var(--bg));
+  border: 1.5px solid var(--border); border-radius: var(--r-md, 14px);
+  transition: border-color .15s ease, background .15s ease;
+}
+.lang-folder:hover { border-color: var(--brand); }
+.lang-folder[aria-pressed="true"] {
+  border-color: var(--brand);
+  background: color-mix(in srgb, var(--brand) 9%, var(--surface, var(--bg)));
+}
+.lang-folder .lf-ico { font-size: 1.3rem; line-height: 1; }
+.lang-folder .lf-name { font-weight: 700; font-size: 1.02rem; }
+.lang-folder .lf-count { font-size: 0.8rem; color: var(--muted); }
+[data-lang-view="en"] > [data-lang="pa"],
+[data-lang-view="pa"] > [data-lang="en"] { display: none !important; }
