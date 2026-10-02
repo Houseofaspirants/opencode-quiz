@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "Page setup ਵਿੱਚ binding ਲਈ pages ਦੇ ਅੰਦਰਲੇ ਪਾਸੇ ਜੋੜੀ ਗਈ ਵਾਧੂ margin ਨੂੰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Header margin",
+      "Indent",
+      "Gutter margin",
+      "Mirror margin"
+    ],
+    "answer": 2,
+    "explanation": "Gutter margin side ਜਾਂ top margin ਵਿੱਚ ਵਾਧੂ ਥਾਂ ਜੋੜਦੀ ਹੈ ਤਾਂ ਜੋ document bind ਕਰਨ ਤੋਂ ਬਾਅਦ text ਨਾ ਲੁਕੇ।",
+    "tags": [
+      "Layout tab",
+      "Margins"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "Margins, Orientation, Size ਅਤੇ Columns, Layout (Page Layout) tab ਦੇ ਕਿਹੜੇ group ਦਾ ਹਿੱਸਾ ਹਨ?",
+    "options": [
+      "Paragraph",
+      "Arrange",
+      "Page Background",
+      "Page Setup"
+    ],
+    "answer": 3,
+    "explanation": "Layout tab ਦੇ Page Setup group ਵਿੱਚ Margins, Orientation, Size, Columns, Breaks, Line Numbers ਅਤੇ Hyphenation ਹੁੰਦੇ ਹਨ।",
+    "tags": [
+      "Layout tab",
+      "Page Setup"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "MS Word ਵਿੱਚ ਨਵੇਂ document ਦੀ default page orientation ਕਿਹੜੀ ਹੁੰਦੀ ਹੈ?",
+    "options": [
+      "Portrait",
+      "Landscape",
+      "Vertical-Landscape",
+      "Horizontal"
+    ],
+    "answer": 0,
+    "explanation": "ਨਵਾਂ document Portrait orientation (ਚੌੜਾਈ ਨਾਲੋਂ ਉਚਾਈ ਵੱਧ) ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ। Landscape, Layout > Orientation ਤੋਂ ਚੁਣੀ ਜਾ ਸਕਦੀ ਹੈ।",
+    "tags": [
+      "Orientation",
+      "Default"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "MS Word ਦੀ ਕਿਹੜੀ tab ਨਾਲ Table of Contents insert ਕੀਤਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Insert",
+      "References",
+      "Home",
+      "Review"
+    ],
+    "answer": 1,
+    "explanation": "Table of Contents, Footnotes, Citations & Bibliography, Captions, Index ਅਤੇ Table of Authorities ਸਾਰੇ References tab ਵਿੱਚ ਹਨ।",
+    "tags": [
+      "References tab",
+      "Table of Contents"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "ਜੋ note ਪੂਰੇ document ਦੇ ਅੰਤ ਵਿੱਚ ਆਉਂਦਾ ਹੈ (page ਦੇ ਹੇਠਾਂ ਨਹੀਂ), ਉਸ ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "Footnote",
+      "Footer",
+      "Endnote",
+      "Caption"
+    ],
+    "answer": 2,
+    "explanation": "Footnote ਉਸੇ page ਦੇ ਹੇਠਾਂ ਆਉਂਦਾ ਹੈ; endnote document ਜਾਂ section ਦੇ ਅੰਤ ਵਿੱਚ ਇਕੱਠੇ ਹੁੰਦੇ ਹਨ। ਦੋਵੇਂ References tab ਤੋਂ insert ਹੁੰਦੇ ਹਨ।",
+    "tags": [
+      "References tab",
+      "Footnote"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Hard",
+    "question": "MS Word ਦੀ References tab ਵਿੱਚ 'Table of Authorities' ਮੁੱਖ ਤੌਰ 'ਤੇ ਕਿਸ ਦੀ ਸੂਚੀ ਬਣਾਉਣ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "Figures ਅਤੇ tables",
+      "Page numbers ਸਮੇਤ chapter headings",
+      "Document ਦੇ authors",
+      "ਕਾਨੂੰਨੀ references ਜਿਵੇਂ cases ਅਤੇ statutes"
+    ],
+    "answer": 3,
+    "explanation": "Table of Authorities ਕਾਨੂੰਨੀ document ਵਿੱਚ legal citations (cases, statutes, rules) ਦੀ ਸੂਚੀ ਹੁੰਦੀ ਹੈ। Page numbers ਸਮੇਤ chapter headings, Table of Contents ਬਣਾਉਂਦੇ ਹਨ।",
+    "tags": [
+      "References tab"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "ਇੱਕ school 500 ਮਾਪਿਆਂ ਨੂੰ ਇੱਕੋ invitation letter ਭੇਜਣਾ ਚਾਹੁੰਦਾ ਹੈ, ਹਰ ਇੱਕ 'ਤੇ ਵੱਖਰਾ ਨਾਮ ਅਤੇ ਪਤਾ ਹੋਵੇ। MS Word ਦਾ ਕਿਹੜਾ feature ਸਭ ਤੋਂ ਢੁਕਵਾਂ ਹੈ?",
+    "options": [
+      "Mail Merge",
+      "Macro",
+      "Track Changes",
+      "Compare"
+    ],
+    "answer": 0,
+    "explanation": "Mail Merge (Mailings tab) ਇੱਕ main document ਨੂੰ ਨਾਵਾਂ ਅਤੇ ਪਤਿਆਂ ਵਾਲੇ data source ਨਾਲ ਜੋੜ ਕੇ ਹਰ ਇੱਕ ਲਈ ਵੱਖਰੀ copy ਬਣਾਉਂਦਾ ਹੈ।",
+    "tags": [
+      "Mailings tab",
+      "Mail Merge"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "Mail Merge ਇੱਕ main document ਨੂੰ ਕਿਸ ਨਾਲ ਜੋੜਦਾ ਹੈ?",
+    "options": [
+      "Template",
+      "Data source",
+      "Macro",
+      "Style sheet"
+    ],
+    "answer": 1,
+    "explanation": "Mail Merge = main document + data source (ਜਿਵੇਂ Excel sheet, Outlook contacts ਜਾਂ Word table ਦੀ ਸੂਚੀ)।",
+    "tags": [
+      "Mailings tab",
+      "Mail Merge"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "MS Word ਵਿੱਚ Spelling & Grammar check ਕਿਹੜੀ function key ਨਾਲ ਖੁੱਲ੍ਹਦਾ ਹੈ?",
+    "options": [
+      "F5",
+      "F12",
+      "F7",
+      "F1"
+    ],
+    "answer": 2,
+    "explanation": "F7 ਨਾਲ Spelling & Grammar check ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ। F1 Help, F5 Go To ਅਤੇ F12 Save As ਖੋਲ੍ਹਦੀ ਹੈ।",
+    "tags": [
+      "Review tab",
+      "Function keys"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "Thesaurus, ਜੋ 'Happy' ਲਈ 'Joyful' ਵਰਗੇ synonyms ਦੱਸਦਾ ਹੈ, ਕਿਸ ਨਾਲ ਖੁੱਲ੍ਹਦਾ ਹੈ?",
+    "options": [
+      "Ctrl + F7",
+      "Alt + F7",
+      "F7",
+      "Shift + F7"
+    ],
+    "answer": 3,
+    "explanation": "Shift + F7 ਨਾਲ Thesaurus ਖੁੱਲ੍ਹਦਾ ਹੈ। ਇਹ Review tab ਦੇ Proofing group ਵਿੱਚ ਹੁੰਦਾ ਹੈ।",
+    "tags": [
+      "Review tab",
+      "Thesaurus"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Hard",
+    "question": "MS Word ਵਿੱਚ Word Count dialog box ਖੋਲ੍ਹਣ ਲਈ ਸਹੀ keyboard shortcut ਕਿਹੜੀ ਹੈ?",
+    "options": [
+      "Ctrl + Shift + G",
+      "Ctrl + Shift + W",
+      "Ctrl + Shift + 9",
+      "Alt + Shift + W"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl + Shift + G ਨਾਲ Word Count dialog ਖੁੱਲ੍ਹਦਾ ਹੈ, ਜੋ pages, words, characters, paragraphs ਅਤੇ lines ਦੱਸਦਾ ਹੈ। Word Count, Review tab ਦੇ Proofing group ਵਿੱਚ ਵੀ ਹੈ।",
+    "tags": [
+      "Review tab",
+      "Word count",
+      "Shortcut keys"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "MS Word ਦਾ ਕਿਹੜਾ feature ਹਰ insertion, deletion ਅਤੇ formatting ਤਬਦੀਲੀ ਨੂੰ record ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ reviewer ਬਾਅਦ ਵਿੱਚ ਉਹਨਾਂ ਨੂੰ accept ਜਾਂ reject ਕਰ ਸਕੇ?",
+    "options": [
+      "Compare",
+      "Track Changes",
+      "Restrict Editing",
+      "Comments"
+    ],
+    "answer": 1,
+    "explanation": "Track Changes (Review tab) ਹਰ edit ਨੂੰ mark ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਉਸ ਨੂੰ accept ਜਾਂ reject ਕੀਤਾ ਜਾ ਸਕੇ। Compare ਦੋ ਵੱਖਰੇ documents ਵਿਚਲਾ ਫ਼ਰਕ ਦਿਖਾਉਂਦਾ ਹੈ।",
+    "tags": [
+      "Review tab",
+      "Track Changes"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "ਦੂਜਿਆਂ ਨੂੰ document edit ਕਰਨ ਤੋਂ ਰੋਕਣ ਲਈ, password ਲਾਉਣ ਦੀ ਸਹੂਲਤ ਸਮੇਤ, Review tab ਦਾ ਕਿਹੜਾ option ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "Compare",
+      "Track Changes",
+      "Restrict Editing",
+      "Accept"
+    ],
+    "answer": 2,
+    "explanation": "Restrict Editing (Review tab ਦਾ Protect group) ਇਹ ਸੀਮਿਤ ਕਰਦਾ ਹੈ ਕਿ ਦੂਜੇ document ਵਿੱਚ ਕੀ ਬਦਲ ਸਕਦੇ ਹਨ ਅਤੇ ਇਸ 'ਤੇ password ਲਾਇਆ ਜਾ ਸਕਦਾ ਹੈ।",
+    "tags": [
+      "Review tab",
+      "Restrict Editing"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ MS Word ਦਾ document view ਨਹੀਂ ਹੈ?",
+    "options": [
+      "Read Mode",
+      "Web Layout",
+      "Draft",
+      "Slide Sorter"
+    ],
+    "answer": 3,
+    "explanation": "Word ਦੇ views ਹਨ: Read Mode, Print Layout, Web Layout, Outline ਅਤੇ Draft। Slide Sorter, MS PowerPoint ਦਾ view ਹੈ।",
+    "tags": [
+      "View tab",
+      "Document views"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "MS Word ਦਾ ਨਵਾਂ document default ਤੌਰ 'ਤੇ ਕਿਹੜੇ view ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ, ਜੋ page ਨੂੰ ਬਿਲਕੁਲ ਉਸੇ ਤਰ੍ਹਾਂ ਦਿਖਾਉਂਦਾ ਹੈ ਜਿਵੇਂ ਉਹ print ਹੋਵੇਗਾ?",
+    "options": [
+      "Print Layout",
+      "Draft",
+      "Outline",
+      "Web Layout"
+    ],
+    "answer": 0,
+    "explanation": "Print Layout default view ਹੈ; ਇਹ margins, headers, footers ਅਤੇ page ਦੀਆਂ ਹੱਦਾਂ ਉਸੇ ਤਰ੍ਹਾਂ ਦਿਖਾਉਂਦਾ ਹੈ ਜਿਵੇਂ ਕਾਗ਼ਜ਼ 'ਤੇ ਆਉਣਗੀਆਂ।",
+    "tags": [
+      "View tab",
+      "Print Layout"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "MS Word ਵਿੱਚ Macro ਕੀ ਹੈ?",
+    "options": [
+      "Paragraph ਦਾ ਵੱਡਾ ਪਹਿਲਾ ਅੱਖਰ",
+      "ਵਾਰ-ਵਾਰ ਹੋਣ ਵਾਲੇ ਕੰਮਾਂ ਨੂੰ automate ਕਰਨ ਲਈ record ਕੀਤੀ commands ਦੀ ਲੜੀ",
+      "Letters ਲਈ ਇੱਕ ਕਿਸਮ ਦਾ template",
+      "ਦੋ documents ਦੀ ਤੁਲਨਾ ਕਰਨ ਵਾਲਾ tool"
+    ],
+    "answer": 1,
+    "explanation": "Macro commands ਅਤੇ keystrokes ਦੀ ਲੜੀ record ਕਰਦਾ ਹੈ ਤਾਂ ਜੋ ਵਾਰ-ਵਾਰ ਹੋਣ ਵਾਲਾ ਕੰਮ ਇੱਕ click ਨਾਲ ਹੋ ਸਕੇ। Macros, View tab ਵਿੱਚ ਹਨ ਅਤੇ save ਕਰਨ ਲਈ .docm/.dotm file ਚਾਹੀਦੀ ਹੈ।",
+    "tags": [
+      "View tab",
+      "Macro"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "Ruler, Gridlines ਅਤੇ Navigation Pane ਨੂੰ View tab ਦੇ ਕਿਹੜੇ group ਤੋਂ ਦਿਖਾਇਆ ਜਾਂ ਲੁਕਾਇਆ ਜਾ ਸਕਦਾ ਹੈ?",
+    "options": [
+      "Zoom",
+      "Window",
+      "Show",
+      "Views"
+    ],
+    "answer": 2,
+    "explanation": "View tab ਦੇ Show group ਵਿੱਚ Ruler, Gridlines ਅਤੇ Navigation Pane ਦੇ check boxes ਹੁੰਦੇ ਹਨ।",
+    "tags": [
+      "View tab",
+      "Show group"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "ਕਿਹੜੀ shortcut cursor ਨੂੰ ਸਿੱਧਾ document ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲੈ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "Home",
+      "Page Up",
+      "Ctrl + Up Arrow",
+      "Ctrl + Home"
+    ],
+    "answer": 3,
+    "explanation": "Ctrl + Home document ਦੇ ਸ਼ੁਰੂ ਅਤੇ Ctrl + End ਅੰਤ ਵਿੱਚ ਲੈ ਜਾਂਦੀ ਹੈ। ਸਿਰਫ਼ Home key ਮੌਜੂਦਾ line ਦੇ ਸ਼ੁਰੂ ਵਿੱਚ ਲੈ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "Shortcut keys",
+      "Navigation"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Hard",
+    "question": "MS Word ਵਿੱਚ Ctrl + Backspace ਕੀ ਕਰਦੀ ਹੈ?",
+    "options": [
+      "Cursor ਦੇ ਖੱਬੇ ਪਾਸੇ ਦਾ ਪੂਰਾ ਸ਼ਬਦ delete ਕਰਦੀ ਹੈ",
+      "Cursor ਦੇ ਸੱਜੇ ਪਾਸੇ ਦਾ ਇੱਕ character delete ਕਰਦੀ ਹੈ",
+      "ਪੂਰੀ line delete ਕਰਦੀ ਹੈ",
+      "ਆਖ਼ਰੀ action ਨੂੰ undo ਕਰਦੀ ਹੈ"
+    ],
+    "answer": 0,
+    "explanation": "Ctrl + Backspace cursor ਦੇ ਖੱਬੇ ਪਾਸੇ ਦਾ ਸ਼ਬਦ ਅਤੇ Ctrl + Delete ਸੱਜੇ ਪਾਸੇ ਦਾ ਸ਼ਬਦ delete ਕਰਦੀ ਹੈ। ਸਿਰਫ਼ Backspace ਖੱਬੇ ਪਾਸੇ ਦਾ ਇੱਕ character delete ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "Shortcut keys",
+      "Editing"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ key MS Word ਵਿੱਚ 'Save As' dialog box ਖੋਲ੍ਹਦੀ ਹੈ?",
+    "options": [
+      "Shift + F12",
+      "F12",
+      "Ctrl + F12",
+      "F10"
+    ],
+    "answer": 1,
+    "explanation": "F12 ਨਾਲ Save As ਖੁੱਲ੍ਹਦਾ ਹੈ। Shift + F12 document save ਕਰਦੀ ਹੈ ਅਤੇ Ctrl + F12 document open ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "Function keys",
+      "Save As"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "MS Word ਵਿੱਚ hyperlink insert ਕਰਨ ਲਈ ਕਿਹੜੀ shortcut ਵਰਤੀ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "Ctrl + H",
+      "Ctrl + L",
+      "Ctrl + K",
+      "Ctrl + Shift + H"
+    ],
+    "answer": 2,
+    "explanation": "Ctrl + K ਨਾਲ Insert Hyperlink dialog ਖੁੱਲ੍ਹਦਾ ਹੈ। Hyperlink ਕਿਸੇ website, email address ਜਾਂ ਹੋਰ document ਨਾਲ ਜੋੜ ਸਕਦਾ ਹੈ।",
+    "tags": [
+      "Insert tab",
+      "Links",
+      "Shortcut keys"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "MS Word ਵਿੱਚ ਕ੍ਰਮਵਾਰ ਮੌਜੂਦਾ date ਅਤੇ ਮੌਜੂਦਾ time ਪਾਉਣ ਲਈ shortcuts ਦਾ ਕਿਹੜਾ ਜੋੜਾ ਹੈ?",
+    "options": [
+      "Ctrl + D ਅਤੇ Ctrl + T",
+      "Alt + D ਅਤੇ Alt + T",
+      "Ctrl + Shift + D ਅਤੇ Ctrl + Shift + T",
+      "Alt + Shift + D ਅਤੇ Alt + Shift + T"
+    ],
+    "answer": 3,
+    "explanation": "Alt + Shift + D ਮੌਜੂਦਾ date ਅਤੇ Alt + Shift + T ਮੌਜੂਦਾ time ਪਾਉਂਦੀ ਹੈ। Ctrl + D Font dialog ਖੋਲ੍ਹਦੀ ਹੈ ਅਤੇ Ctrl + T hanging indent ਬਣਾਉਂਦੀ ਹੈ।",
+    "tags": [
+      "Shortcut keys",
+      "Date & Time"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Hard",
+    "question": "MS Word ਦੀਆਂ shortcut keys ਬਾਰੇ ਹੇਠ ਲਿਖੇ ਕਥਨਾਂ 'ਤੇ ਵਿਚਾਰ ਕਰੋ:\n1. Ctrl + ] font size ਨੂੰ ਇੱਕ point ਵਧਾਉਂਦੀ ਹੈ।\n2. Ctrl + 2 double line spacing ਲਾਗੂ ਕਰਦੀ ਹੈ।\n3. Ctrl + T hanging indent ਬਣਾਉਂਦੀ ਹੈ।\nਉਪਰੋਕਤ ਵਿੱਚੋਂ ਕਿਹੜੇ ਕਥਨ ਸਹੀ ਹਨ?",
+    "options": [
+      "ਸਿਰਫ਼ 1 ਅਤੇ 2",
+      "ਸਿਰਫ਼ 2 ਅਤੇ 3",
+      "ਸਿਰਫ਼ 1 ਅਤੇ 3",
+      "1, 2 ਅਤੇ 3"
+    ],
+    "answer": 3,
+    "explanation": "ਤਿੰਨੋਂ ਸਹੀ ਹਨ: Ctrl + ] / Ctrl + [ font size ਨੂੰ 1 point ਬਦਲਦੀਆਂ ਹਨ, Ctrl + 1 / Ctrl + 2 single / double spacing ਲਾਗੂ ਕਰਦੀਆਂ ਹਨ, ਅਤੇ Ctrl + T hanging indent ਬਣਾਉਂਦੀ ਹੈ।",
+    "tags": [
+      "Shortcut keys",
+      "Statement"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Easy",
+    "question": "MS Word ਵਿੱਚ ਕਿਸੇ ਸ਼ਬਦ 'ਤੇ double-click ਕਰਨ ਨਾਲ ਸ਼ਬਦ select ਹੁੰਦਾ ਹੈ। Triple-click ਕਰਨ ਨਾਲ ਕੀ select ਹੁੰਦਾ ਹੈ?",
+    "options": [
+      "ਪੂਰਾ paragraph",
+      "ਸਿਰਫ਼ ਪੂਰੀ line",
+      "ਪੂਰਾ document",
+      "ਸਿਰਫ਼ sentence"
+    ],
+    "answer": 0,
+    "explanation": "Double-click ਨਾਲ ਸ਼ਬਦ ਅਤੇ triple-click ਨਾਲ ਪੂਰਾ paragraph select ਹੁੰਦਾ ਹੈ। Ctrl + A ਪੂਰਾ document select ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "Selection",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "MS Word (Microsoft Word)",
+    "difficulty": "Medium",
+    "question": "MS Word ਵਿੱਚ cursor ਵਾਲੀ ਥਾਂ 'ਤੇ bookmark ਲਾਉਣ ਲਈ ਕਿਹੜੀ shortcut ਹੈ?",
+    "options": [
+      "Ctrl + B",
+      "Ctrl + Shift + F5",
+      "Shift + F5",
+      "Ctrl + Shift + B"
+    ],
+    "answer": 1,
+    "explanation": "Ctrl + Shift + F5 ਨਾਲ Bookmark dialog ਖੁੱਲ੍ਹਦਾ ਹੈ। Shift + F5 cursor ਨੂੰ ਆਖ਼ਰੀ edit ਵਾਲੀ ਥਾਂ 'ਤੇ ਲੈ ਜਾਂਦੀ ਹੈ ਅਤੇ Ctrl + B Bold ਹੈ।",
+    "tags": [
+      "Shortcut keys",
+      "Bookmark"
+    ]
+  }
+]

@@ -224,6 +224,50 @@
       }
     },
     {
+      "id": "ms-word-part-1",
+      "subject": "computer",
+      "category": "ms-word",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "MS Word (Microsoft Word) - Part 1",
+        "pa": "MS Word (Microsoft Word) - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/MS WORD/ms-word-part-1_en.json",
+        "pa": "questions/computer/MS WORD/ms-word-part-1_pa.json"
+      }
+    },
+    {
+      "id": "ms-word-part-2",
+      "subject": "computer",
+      "category": "ms-word",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "MS Word (Microsoft Word) - Part 2",
+        "pa": "MS Word (Microsoft Word) - Part 2"
+      },
+      "variants": {
+        "en": "questions/computer/MS WORD/ms-word-part-2_en.json",
+        "pa": "questions/computer/MS WORD/ms-word-part-2_pa.json"
+      }
+    },
+    {
       "id": "current-affairs-july-2026-part1-geography-environment",
       "subject": "current-affairs",
       "category": "july",
