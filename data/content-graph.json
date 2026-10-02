@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 380,
-  "edges": 2190,
+  "nodes": 387,
+  "edges": 2261,
   "silos": 35,
   "clusters": 49,
   "pillars": 34
@@ -192,6 +192,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-doubt-session.html",
+   "url": "/archive-tag-doubt-session.html",
+   "type": "archive",
+   "template": "",
+   "title": "doubt session",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "doubt-session"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-eligibility.html",
    "url": "/archive-tag-eligibility.html",
    "type": "archive",
@@ -290,6 +304,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-live-session.html",
+   "url": "/archive-tag-live-session.html",
+   "type": "archive",
+   "template": "",
+   "title": "live session",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "live-session"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-matron.html",
    "url": "/archive-tag-matron.html",
    "type": "archive",
@@ -328,6 +356,20 @@
    "exams": [],
    "tags": [
     "ppsc"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-preparation-strategy.html",
+   "url": "/archive-tag-preparation-strategy.html",
+   "type": "archive",
+   "template": "",
+   "title": "preparation strategy",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "preparation-strategy"
    ],
    "hub": "archives.html"
   },
@@ -3336,6 +3378,39 @@
    "hub": "news.html"
   },
   {
+   "id": "pa/session-sunday-live-doubt-session-2026-10-04",
+   "url": "/pa/session-sunday-live-doubt-session-2026-10-04",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "url": "/pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "type": "sessions",
+   "template": "live-session-summary",
+   "title": "ਐਤਵਾਰ Live - Doubts ਅਤੇ ਰੈਂਕ 2 ਰਣਨੀਤੀ (4 ਅਕਤੂਬਰ 2026)",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "punjabi",
+    "current-affairs"
+   ],
+   "exams": [],
+   "tags": [
+    "live session",
+    "doubt session",
+    "preparation strategy"
+   ],
+   "hub": "live-sessions.html"
+  },
+  {
    "id": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "url": "/pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "type": "page",
@@ -4504,6 +4579,39 @@
    "hub": "archives.html"
   },
   {
+   "id": "session-sunday-live-doubt-session-2026-10-04",
+   "url": "/session-sunday-live-doubt-session-2026-10-04",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "session-sunday-live-doubt-session-2026-10-04.html",
+   "url": "/session-sunday-live-doubt-session-2026-10-04.html",
+   "type": "sessions",
+   "template": "live-session-summary",
+   "title": "Sunday Live - Doubts & Rank 2 Strategy (4 Oct 2026)",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "punjabi",
+    "current-affairs"
+   ],
+   "exams": [],
+   "tags": [
+    "live session",
+    "doubt session",
+    "preparation strategy"
+   ],
+   "hub": "live-sessions.html"
+  },
+  {
    "id": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "url": "/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "type": "document",
@@ -5618,6 +5726,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-doubt-session.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-doubt-session.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-eligibility.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -5942,6 +6092,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-live-session.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-live-session.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-matron.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -6069,6 +6261,48 @@
   },
   {
    "from": "archive-tag-ppsc.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-preparation-strategy.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -6717,6 +6951,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-doubt-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-eligibility.html",
    "rel": "contextual",
    "weight": 1
@@ -6759,6 +6999,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-live-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-matron.html",
    "rel": "contextual",
    "weight": 1
@@ -6772,6 +7018,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-ppsc.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-preparation-strategy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7065,6 +7317,12 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -7143,6 +7401,12 @@
   },
   {
    "from": "archives.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -7215,6 +7479,12 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -7270,6 +7540,12 @@
   {
    "from": "author-gurpreet-singh.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8031,6 +8307,12 @@
   },
   {
    "from": "live-sessions.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
@@ -8038,6 +8320,12 @@
   {
    "from": "live-sessions.html",
    "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "live-sessions.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10733,6 +11021,132 @@
    "from": "news.html",
    "to": "recruitment.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-doubt-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-live-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -15650,6 +16064,126 @@
    "weight": 1
   },
   {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-doubt-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-live-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "archive-tag-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "live-sessions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "session-sunday-live-doubt-session-2026-10-04",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -18464,6 +18998,7 @@
     "topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html"
    ],
    "leaves": [
+    "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html"
    ]
@@ -18517,6 +19052,7 @@
     "topic-gk-sikhism-part4-20-mcqs.html"
    ],
    "leaves": [
+    "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
@@ -18537,6 +19073,7 @@
    "hub": "subject-punjabi.html",
    "clusters": [],
    "leaves": [
+    "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
@@ -18581,6 +19118,7 @@
     "topic-reasoning-number-series-part-4.html"
    ],
    "leaves": [
+    "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",

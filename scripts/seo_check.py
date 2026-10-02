@@ -157,7 +157,7 @@ KNOWN_TYPES = {
     "ContactPage", "CollectionPage", "BreadcrumbList", "ListItem", "SearchAction",
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
     "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
-    "Person", "LearningResource", "Event",
+    "Person", "LearningResource", "Event", "VirtualLocation",
     # A generated PDF page declares its file: DataDownload is the download,
     # MediaObject is the type that owns contentUrl.
     "DataDownload", "MediaObject",

@@ -4026,7 +4026,14 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
             "name": record["title"],
             "description": record["description"],
             "startDate": f'{record["date"]}T{record["start_time"]}:00+05:30',
-            "eventAttendanceMode": "OnlineEventAttendance",
+            "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "isAccessibleForFree": True,
+            # The join link (Telegram) lives on the page itself; schema URLs
+            # stay on-domain, so the virtual location is the session page.
+            "location": {"@type": "VirtualLocation", "url": url},
+            "organizer": {"@type": "Organization", "name": "House of Aspirants",
+                          "url": DOMAIN + "/"},
             "url": url,
         })
 

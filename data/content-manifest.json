@@ -48,7 +48,7 @@
       "url": "https://houseofaspirants.in/live-sessions",
       "title": "Weekly Live Guidance Sessions | House of Aspirants",
       "description": "Upcoming and past House of Aspirants live sessions - topic, date, time, platform, join link, session summary, important questions and student doubts.",
-      "count": 0
+      "count": 2
     },
     {
       "collection": "recruitment",
@@ -241,6 +241,12 @@
       "description": "Every document tagged cooperative inspector on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab"
     },
     {
+      "file": "archive-tag-doubt-session.html",
+      "url": "https://houseofaspirants.in/archive-tag-doubt-session",
+      "title": "doubt session | House of Aspirants",
+      "description": "Every document tagged doubt session on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
       "file": "archive-tag-eligibility.html",
       "url": "https://houseofaspirants.in/archive-tag-eligibility",
       "title": "eligibility | House of Aspirants",
@@ -283,6 +289,12 @@
       "description": "Every document tagged jail warder on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive"
     },
     {
+      "file": "archive-tag-live-session.html",
+      "url": "https://houseofaspirants.in/archive-tag-live-session",
+      "title": "live session | House of Aspirants",
+      "description": "Every document tagged live session on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free"
+    },
+    {
       "file": "archive-tag-matron.html",
       "url": "https://houseofaspirants.in/archive-tag-matron",
       "title": "matron | House of Aspirants",
@@ -299,6 +311,12 @@
       "url": "https://houseofaspirants.in/archive-tag-ppsc",
       "title": "ppsc | House of Aspirants",
       "description": "Every document tagged ppsc on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab competitive exams,"
+    },
+    {
+      "file": "archive-tag-preparation-strategy.html",
+      "url": "https://houseofaspirants.in/archive-tag-preparation-strategy",
+      "title": "preparation strategy | House of Aspirants",
+      "description": "Every document tagged preparation strategy on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab"
     },
     {
       "file": "archive-tag-psssb.html",
@@ -1657,6 +1675,40 @@
       "pdf": "content/study-material/history-of-punjab/Punjabi /Sikhism-pa.pdf"
     },
     {
+      "collection": "sessions",
+      "file": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+      "url": "https://houseofaspirants.in/pa/session-sunday-live-doubt-session-2026-10-04",
+      "title": "ਐਤਵਾਰ Live - Doubts ਅਤੇ ਰੈਂਕ 2 ਰਣਨੀਤੀ (4 ਅਕਤੂਬਰ 2026)",
+      "description": "ਹਰ ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ Telegram 'ਤੇ ਮੁਫ਼ਤ live - ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ (ਪੰਜਾਬ ਪੁਲਿਸ SI ਰੈਂਕ 2) ਨੂੰ ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ, ਤਿਆਰੀ ਜਾਂ ਵੈੱਬਸਾਈਟ ਬਾਰੇ ਕੋਈ ਵੀ doubt ਪੁੱਛੋ।",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "punjabi",
+        "current-affairs"
+      ],
+      "tags": [
+        "live session",
+        "doubt session",
+        "preparation strategy"
+      ],
+      "exams": [],
+      "readingMinutes": 2,
+      "lang": "pa",
+      "featured": false,
+      "path": "content/live-sessions/sunday-live-doubt-session-2026-10-04.pa.md",
+      "category": "",
+      "author": "Gurpreet Singh",
+      "date": "2026-10-04",
+      "status": "upcoming",
+      "alt": {
+        "lang": "en",
+        "file": "session-sunday-live-doubt-session-2026-10-04.html",
+        "url": "https://houseofaspirants.in/session-sunday-live-doubt-session-2026-10-04"
+      }
+    },
+    {
       "collection": "strategy",
       "file": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
       "url": "https://houseofaspirants.in/pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
@@ -2095,6 +2147,40 @@
       "path": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf",
       "category": "",
       "pdf": "content/previous-year-questions/psssb-forest-guard/psssb-forest-guard-lab-attendant-combined-paper.pdf"
+    },
+    {
+      "collection": "sessions",
+      "file": "session-sunday-live-doubt-session-2026-10-04.html",
+      "url": "https://houseofaspirants.in/session-sunday-live-doubt-session-2026-10-04",
+      "title": "Sunday Live - Doubts & Rank 2 Strategy (4 Oct 2026)",
+      "description": "Free Sunday live on Telegram at 8 PM - ask Gurpreet Singh (Punjab Police SI Rank 2) any doubt about Punjab exams, preparation strategy or the website.",
+      "published": "2026-10-03",
+      "updated": "2026-10-03",
+      "subjects": [
+        "gk",
+        "reasoning",
+        "punjabi",
+        "current-affairs"
+      ],
+      "tags": [
+        "live session",
+        "doubt session",
+        "preparation strategy"
+      ],
+      "exams": [],
+      "readingMinutes": 2,
+      "lang": "en",
+      "featured": false,
+      "path": "content/live-sessions/sunday-live-doubt-session-2026-10-04.md",
+      "category": "",
+      "author": "Gurpreet Singh",
+      "date": "2026-10-04",
+      "status": "upcoming",
+      "alt": {
+        "lang": "pa",
+        "file": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+        "url": "https://houseofaspirants.in/pa/session-sunday-live-doubt-session-2026-10-04"
+      }
     },
     {
       "collection": "strategy",
@@ -4563,7 +4649,7 @@
     "current-affairs": 3,
     "magazine": 0,
     "strategy": 20,
-    "sessions": 0,
+    "sessions": 2,
     "recruitment": 0,
     "blogs": 0,
     "news": 0,
