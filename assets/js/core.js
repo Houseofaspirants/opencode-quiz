@@ -871,10 +871,10 @@ const HOA = (() => {
     <ul>
       <li><a class="mn-link" data-nav="home" href="index.html">
         <span class="mn-ico" aria-hidden="true">🏠</span><span>Home</span></a></li>
-      <li><a class="mn-link" data-nav="subjects" href="index.html#subjects">
-        <span class="mn-ico" aria-hidden="true">📚</span><span>Subjects</span></a></li>
-      <li><a class="mn-link" data-nav="articles" href="articles.html">
-        <span class="mn-ico" aria-hidden="true">📚</span><span>Notes</span></a></li>
+      <li><a class="mn-link" data-mn="mcq" href="practice.html#subjects">
+        <span class="mn-ico" aria-hidden="true">🧠</span><span>MCQs</span></a></li>
+      <li><a class="mn-link" data-mn="notes" href="study.html">
+        <span class="mn-ico" aria-hidden="true">📖</span><span>Notes</span></a></li>
       <li><a class="mn-link" data-nav="leaderboard" href="leaderboard.html">
         <span class="mn-ico" aria-hidden="true">🏆</span><span>Leaderboard</span></a></li>
       <li><a class="mn-link mn-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">
@@ -955,6 +955,13 @@ const HOA = (() => {
     keys.forEach((k) =>
       document.querySelectorAll(`[data-nav="${k}"], [data-nav-subject="${k}"]`).forEach(mark)
     );
+    // Bottom tab bar: "Subjects" is the MCQ side (practice.html → subject.html
+    // → quiz), "Notes" is the reading side (study.html → notes and PDFs).
+    const tab = ["practice", "subject", "quiz", "mock", "revision", "expected-mcqs"].includes(page)
+      ? "mcq"
+      : ["study", "notes"].includes(page) || page.startsWith("material-")
+        ? "notes" : "";
+    if (tab) document.querySelectorAll(`.mobile-nav [data-mn="${tab}"]`).forEach(mark);
 
     // Append dynamically detected subjects (new folders in /questions) to every
     // subject tree. Study's tree and Practice's tree are the same subjects
