@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-03T05:15:29.952Z",
+  "generatedAt": "2026-10-03T06:18:42.729Z",
   "stats": {
     "subjects": 7,
     "categories": 20,
-    "topics": 18,
-    "quizzes": 18,
-    "questions": 410,
+    "topics": 20,
+    "quizzes": 20,
+    "questions": 460,
     "studentsPracticed": 12500
   },
   "site": {
@@ -88,6 +88,66 @@
             "pa": 20
           },
           "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
+        },
+        {
+          "id": "expansion-of-british-power-part-1",
+          "name": "Expansion of British Power - Part 1",
+          "description": "",
+          "file": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791007734569,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+            "pa": "questions/gk/modern-history/expansion-of-british-power-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Expansion of British Power - Part 1",
+            "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-expansion-of-british-power-part-1"
+        },
+        {
+          "id": "expansion-of-british-power-part-2",
+          "name": "Expansion of British Power - Part 2",
+          "description": "",
+          "file": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791007734569,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+            "pa": "questions/gk/modern-history/expansion-of-british-power-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Expansion of British Power - Part 2",
+            "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-expansion-of-british-power-part-2"
         },
         {
           "id": "five-year-plans-20-mcqs-",
@@ -270,7 +330,68 @@
           "name": "Modern History",
           "folder": "modern-history",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "expansion-of-british-power-part-1",
+              "name": "Expansion of British Power - Part 1",
+              "description": "",
+              "file": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791007734569,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+                "pa": "questions/gk/modern-history/expansion-of-british-power-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Expansion of British Power - Part 1",
+                "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-expansion-of-british-power-part-1"
+            },
+            {
+              "id": "expansion-of-british-power-part-2",
+              "name": "Expansion of British Power - Part 2",
+              "description": "",
+              "file": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791007734569,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+                "pa": "questions/gk/modern-history/expansion-of-british-power-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Expansion of British Power - Part 2",
+                "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-expansion-of-british-power-part-2"
+            }
+          ],
           "landing": "/category-gk-modern-history"
         },
         {
@@ -1387,6 +1508,14 @@
     "questions/gk/economy/five-year-plans-20-mcqs-.en.json": [
       "c6cc6df338a1d2c9",
       1790614960193
+    ],
+    "questions/gk/modern-history/expansion-of-british-power-part-1.en.json": [
+      "c5ddeb1d59206866",
+      1791007734569
+    ],
+    "questions/gk/modern-history/expansion-of-british-power-part-2.en.json": [
+      "3fb8f635b5611add",
+      1791007734569
     ],
     "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
       "5050449425caa85f",

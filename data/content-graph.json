@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 420,
-  "edges": 2477,
+  "nodes": 422,
+  "edges": 2505,
   "silos": 35,
-  "clusters": 49,
+  "clusters": 51,
   "pillars": 34
  },
  "nodes": [
@@ -4881,6 +4881,30 @@
   {
    "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-expansion-of-british-power-part-1.html",
+   "url": "/quiz-gk-expansion-of-british-power-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-expansion-of-british-power-part-2.html",
+   "url": "/quiz-gk-expansion-of-british-power-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -12663,13 +12687,13 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -12801,6 +12825,18 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12825,13 +12861,13 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -13011,6 +13047,12 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -13035,13 +13077,13 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -13209,6 +13251,12 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -13239,13 +13287,13 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -13407,6 +13455,12 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -13437,13 +13491,13 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -13629,13 +13683,13 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -13809,6 +13863,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -13839,13 +13899,13 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -14007,6 +14067,18 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -14031,13 +14103,13 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -14211,6 +14283,18 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -14235,13 +14319,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -14403,6 +14487,18 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -14439,13 +14535,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -14613,6 +14709,18 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -14643,13 +14751,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -17697,13 +17805,13 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -17817,6 +17925,18 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -17847,13 +17967,13 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18009,6 +18129,12 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -18039,13 +18165,13 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18195,6 +18321,12 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -18225,13 +18357,13 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18375,6 +18507,12 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -18411,13 +18549,13 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18585,13 +18723,13 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18741,6 +18879,12 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -18771,13 +18915,13 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18915,6 +19059,18 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -18945,13 +19101,13 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19119,6 +19275,18 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -19149,13 +19317,13 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19305,6 +19473,18 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -19329,13 +19509,13 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19491,6 +19671,18 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -19515,13 +19707,13 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20737,6 +20929,8 @@
     "category-gk-punjab-literature.html",
     "category-gk-science-technology.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
+    "topic-gk-expansion-of-british-power-part-1.html",
+    "topic-gk-expansion-of-british-power-part-2.html",
     "topic-gk-five-year-plans-20-mcqs-.html",
     "topic-gk-sikhism-part1-20-mcqs.html",
     "topic-gk-sikhism-part2-20-mcqs.html",
