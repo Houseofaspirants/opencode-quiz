@@ -284,21 +284,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 19,
-      "newest": "2026-10-01",
-      "totalSize": 37596974,
-      "chapters": 9,
+      "count": 30,
+      "newest": "2026-10-03",
+      "totalSize": 57596851,
+      "chapters": 10,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 19,
-          "chapters": 9,
-          "pages": 162,
-          "totalSize": 37596974,
-          "newest": "2026-10-01",
+          "files": 30,
+          "chapters": 10,
+          "pages": 247,
+          "totalSize": 57596851,
+          "newest": "2026-10-03",
           "categories": 12,
           "regions": 2
         },
@@ -308,11 +308,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 11,
-              "chapters": 2,
-              "pages": 91,
-              "totalSize": 19647585,
-              "newest": "2026-09-30",
+              "files": 22,
+              "chapters": 3,
+              "pages": 176,
+              "totalSize": 39647462,
+              "newest": "2026-10-03",
               "categories": 6
             },
             "categories": [
@@ -324,11 +324,11 @@
                   "history"
                 ],
                 "stats": {
-                  "files": 10,
-                  "chapters": 1,
-                  "pages": 79,
-                  "totalSize": 17113048,
-                  "newest": "2026-09-30"
+                  "files": 21,
+                  "chapters": 2,
+                  "pages": 164,
+                  "totalSize": 37112925,
+                  "newest": "2026-10-03"
                 },
                 "languages": [
                   {
@@ -336,7 +336,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 5,
+                    "count": 10,
                     "chapters": [
                       {
                         "id": "arrival-of-europeans",
@@ -364,6 +364,33 @@
                           }
                         ],
                         "pages": 40
+                      },
+                      {
+                        "id": "expansion-of-british-power",
+                        "name": "Expansion of British Power",
+                        "parts": [
+                          {
+                            "file": "material-expansion-of-british-power-part-1-pa.html",
+                            "n": 1
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-2-pa.html",
+                            "n": 2
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-3-pa.html",
+                            "n": 3
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-4-pa.html",
+                            "n": 4
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-5-pa.html",
+                            "n": 5
+                          }
+                        ],
+                        "pages": 42
                       }
                     ]
                   },
@@ -372,7 +399,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 5,
+                    "count": 11,
                     "chapters": [
                       {
                         "id": "arrival-of-europeans",
@@ -400,6 +427,37 @@
                           }
                         ],
                         "pages": 39
+                      },
+                      {
+                        "id": "expansion-of-british-power",
+                        "name": "Expansion of British Power",
+                        "parts": [
+                          {
+                            "file": "material-expansion-of-british-power-part-1-en.html",
+                            "n": 1
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-2-en.html",
+                            "n": 2
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-3-en.html",
+                            "n": 3
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-4-en.html",
+                            "n": 4
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-5-en.html",
+                            "n": 5
+                          },
+                          {
+                            "file": "material-expansion-of-british-power-part-6-en.html",
+                            "n": 6
+                          }
+                        ],
+                        "pages": 43
                       }
                     ]
                   }
@@ -1122,16 +1180,16 @@
       "color": "#f59e0b",
       "description": "Ancient, medieval and modern India with the freedom movement.",
       "order": 9,
-      "count": 10,
-      "newest": "2026-09-30",
-      "totalSize": 17113048,
+      "count": 21,
+      "newest": "2026-10-03",
+      "totalSize": 37112925,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 5,
+          "count": 10,
           "chapters": [
             {
               "id": "arrival-of-europeans",
@@ -1159,6 +1217,33 @@
                 }
               ],
               "pages": 40
+            },
+            {
+              "id": "expansion-of-british-power",
+              "name": "Expansion of British Power",
+              "parts": [
+                {
+                  "file": "material-expansion-of-british-power-part-1-pa.html",
+                  "n": 1
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-2-pa.html",
+                  "n": 2
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-3-pa.html",
+                  "n": 3
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-4-pa.html",
+                  "n": 4
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-5-pa.html",
+                  "n": 5
+                }
+              ],
+              "pages": 42
             }
           ]
         },
@@ -1167,7 +1252,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 11,
           "chapters": [
             {
               "id": "arrival-of-europeans",
@@ -1195,11 +1280,42 @@
                 }
               ],
               "pages": 39
+            },
+            {
+              "id": "expansion-of-british-power",
+              "name": "Expansion of British Power",
+              "parts": [
+                {
+                  "file": "material-expansion-of-british-power-part-1-en.html",
+                  "n": 1
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-2-en.html",
+                  "n": 2
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-3-en.html",
+                  "n": 3
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-4-en.html",
+                  "n": 4
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-5-en.html",
+                  "n": 5
+                },
+                {
+                  "file": "material-expansion-of-british-power-part-6-en.html",
+                  "n": 6
+                }
+              ],
+              "pages": 43
             }
           ]
         }
       ],
-      "chapters": 2,
+      "chapters": 4,
       "hidden": true
     },
     {
@@ -1607,6 +1723,6 @@
       "hidden": true
     }
   ],
-  "total": 30,
+  "total": 41,
   "generatedBy": "scripts/study_material.py"
 }
