@@ -25,6 +25,11 @@ python3 scripts/build_index.py
 
 step "4/5 python3 scripts/build_landing_pages.py"
 python3 scripts/build_landing_pages.py
+# Share cards (og:image) for new or renamed pages, then point the pages at
+# them. Without Pillow the script exits 0 and pages keep og-cover.png.
+if python3 scripts/build_og_images.py; then
+  python3 scripts/build_landing_pages.py >/dev/null
+fi
 
 # ci.sh's step 7 is `git diff` — worktree vs index — so the build's output has
 # to be staged *before* the gate, otherwise "there is a new build" and "the

@@ -247,6 +247,154 @@
     "https://t.me/HouseOfAspirant";
   document.querySelectorAll("[data-telegram]").forEach((a) => (a.href = tgLink));
 
+  /* ------------------------------------------- 10. SHARE MY SCORE ------
+   * A 1080x1080 card drawn on a canvas in the site's navy-and-gold style:
+   * the quiz, the score and the link. Phones get the native share sheet
+   * (WhatsApp, Instagram, Telegram) with the image attached; a browser that
+   * cannot share files gets a preview with Download + WhatsApp buttons.
+   * Every share brings a new student to the quiz and the name to search. */
+  const shareBtn = $("shareScore");
+  const quizUrl = (() => {
+    try {
+      const u = new URL(r.href || "index.html", location.origin);
+      u.searchParams.set("utm_source", "score_card");
+      return u.toString();
+    } catch { return location.origin; }
+  })();
+  const shareText =
+    `I scored ${r.score}/${r.total} (${r.percent}%) in "${r.title}" on House of Aspirants. ` +
+    `Can you beat me? ${quizUrl}`;
+
+  function wrapLines(ctx, text, maxW, maxLines) {
+    const words = String(text).split(/\s+/);
+    const lines = [];
+    let cur = "";
+    for (const w of words) {
+      const t = cur ? cur + " " + w : w;
+      if (ctx.measureText(t).width <= maxW || !cur) cur = t;
+      else { lines.push(cur); cur = w; }
+    }
+    if (cur) lines.push(cur);
+    if (lines.length > maxLines) {
+      lines.length = maxLines;
+      lines[maxLines - 1] = lines[maxLines - 1].replace(/\s*\S*$/, "") + "…";
+    }
+    return lines;
+  }
+
+  function loadImg(src) {
+    return new Promise((res) => {
+      const im = new Image();
+      im.onload = () => res(im);
+      im.onerror = () => res(null);
+      im.src = src;
+    });
+  }
+
+  async function drawScoreCard() {
+    const S = 1080;
+    const c = document.createElement("canvas");
+    c.width = S; c.height = S;
+    const x = c.getContext("2d");
+    const FONT = 'system-ui, -apple-system, "Segoe UI", "Noto Sans Gurmukhi", "Noto Sans", sans-serif';
+    // background + glow
+    x.fillStyle = "#0b0f19"; x.fillRect(0, 0, S, S);
+    const g = x.createRadialGradient(820, 180, 40, 820, 180, 720);
+    g.addColorStop(0, "rgba(37,74,170,.85)"); g.addColorStop(1, "rgba(11,15,25,0)");
+    x.fillStyle = g; x.fillRect(0, 0, S, S);
+    // brand line
+    x.fillStyle = "#f5c040"; x.fillRect(80, 106, 52, 4);
+    x.font = `700 30px ${FONT}`; x.textBaseline = "alphabetic";
+    x.fillText("HOUSE OF ASPIRANTS", 150, 118);
+    // logo tile
+    const logo = await loadImg("assets/img/logo-mark.png");
+    if (logo) {
+      x.save();
+      const lx = S - 80 - 170, ly = 64, ls = 170, rr = 26;
+      x.beginPath();
+      x.roundRect ? x.roundRect(lx, ly, ls, ls, rr) : x.rect(lx, ly, ls, ls);
+      x.clip(); x.drawImage(logo, lx, ly, ls, ls); x.restore();
+    }
+    // subject + quiz title
+    x.fillStyle = "#a8b2cc"; x.font = `600 32px ${FONT}`;
+    x.fillText(String(r.subjectName || "Quiz").toUpperCase().slice(0, 40), 80, 300);
+    x.fillStyle = "#ffffff"; x.font = `800 58px ${FONT}`;
+    let y = 380;
+    for (const line of wrapLines(x, r.title || "Quiz", S - 160, 3)) {
+      x.fillText(line, 80, y); y += 72;
+    }
+    // score
+    y += 40;
+    x.fillStyle = "#f5c040";
+    const big = `${r.score}/${r.total}`;
+    let bigSize = 200;                       // 100/100 must still leave room for the %
+    do { x.font = `800 ${bigSize}px ${FONT}`; bigSize -= 10; }
+    while (x.measureText(big).width > 560 && bigSize > 90);
+    x.fillText(big, 72, y + 160);
+    const bw = x.measureText(big).width;
+    x.fillStyle = "#ffffff"; x.font = `800 64px ${FONT}`;
+    x.fillText(`${r.percent}%`, 72 + bw + 36, y + 90);
+    x.fillStyle = r.passed ? "#4ade80" : "#fbbf24"; x.font = `700 36px ${FONT}`;
+    x.fillText(r.passed ? "PASSED ✓" : "KEEP GOING", 72 + bw + 36, y + 150);
+    // challenge + footer
+    x.fillStyle = "#ffffff"; x.font = `700 44px ${FONT}`;
+    x.fillText("Can you beat my score?", 80, 900);
+    x.fillStyle = "#344060"; x.fillRect(80, 950, S - 160, 2);
+    x.fillStyle = "#f5c040"; x.font = `700 36px ${FONT}`;
+    x.fillText("houseofaspirants.in", 80, 1010);
+    x.fillStyle = "#a8b2cc"; x.font = `600 30px ${FONT}`;
+    const tail = "Free MCQs · Punjab exams";
+    x.fillText(tail, S - 80 - x.measureText(tail).width, 1010);
+    return new Promise((res) => c.toBlob((b) => res(b), "image/png"));
+  }
+
+  function showSharePreview(blob) {
+    const url = URL.createObjectURL(blob);
+    const ov = document.createElement("div");
+    ov.className = "lock-overlay";
+    ov.innerHTML = `
+      <div class="lock-box" style="max-width:420px">
+        <img src="${url}" alt="Your score card" width="360" height="360"
+             style="width:100%;height:auto;border-radius:14px;display:block">
+        <div class="btn-row mt-3" style="justify-content:center">
+          <a class="btn btn-primary" download="house-of-aspirants-score.png" href="${url}">⬇ Download</a>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://wa.me/?text=${encodeURIComponent(shareText)}">WhatsApp</a>
+          <button class="btn" data-close>Close</button>
+        </div>
+      </div>`;
+    document.body.appendChild(ov);
+    ov.querySelector("[data-close]").addEventListener("click", () => {
+      ov.remove(); URL.revokeObjectURL(url);
+    });
+  }
+
+  if (shareBtn) {
+    shareBtn.hidden = false;
+    shareBtn.addEventListener("click", async () => {
+      shareBtn.disabled = true;
+      try {
+        const blob = await drawScoreCard();
+        if (!blob) throw new Error("no image");
+        const file = new File([blob], "house-of-aspirants-score.png", { type: "image/png" });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          HOA.analytics?.track?.("share", { method: "score_card_native", page: "result" });
+          await navigator.share({ files: [file], text: shareText, title: "My score" });
+        } else {
+          HOA.analytics?.track?.("share", { method: "score_card_preview", page: "result" });
+          showSharePreview(blob);
+        }
+      } catch (err) {
+        if (!(err && err.name === "AbortError")) {
+          try { await navigator.clipboard.writeText(shareText); HOA.toast?.("Score text copied - paste it anywhere"); }
+          catch { /* nothing else to try */ }
+        }
+      } finally {
+        shareBtn.disabled = false;
+      }
+    });
+  }
+
   /* -------------------------------------------------- 9. RETAKE BUTTON --
    * Opens the same quiz again with a clean session (fresh attempt). */
   document.getElementById("retryBtn")?.addEventListener("click", () => {

@@ -329,12 +329,12 @@ HEAD_TMPL = """<!DOCTYPE html>
   <meta property="og:url" content="{url}">
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
-  <meta property="og:image" content="{base}/assets/img/og-cover.png">
+  <meta property="og:image" content="{og_image}">{og_extra}
   <meta property="og:locale" content="{locale}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
-  <meta name="twitter:image" content="{base}/assets/img/og-cover.png">
+  <meta name="twitter:image" content="{og_image}">
   <link rel="canonical" href="{url}">{alternates}
 {ld}
   <link rel="preconnect" href="https://t.me">
@@ -392,6 +392,22 @@ HERO_TMPL = """    <section class="page-hero">
     </section>"""
 
 
+OG_DEFAULT = f"{BASE}/assets/img/og-cover.png"
+OG_SIZE = ('\n  <meta property="og:image:width" content="1200">'
+           '\n  <meta property="og:image:height" content="630">')
+
+
+def og_image_for(url):
+    """The page's own share card (scripts/build_og_images.py) when it has been
+    drawn, else the site cover. A card is named after the page's path:
+    pa/topic-x.html -> assets/img/og/pa-topic-x.jpg."""
+    rel = url[len(BASE):].strip("/")
+    name = rel.replace("/", "-") + ".jpg"
+    if rel and os.path.exists(os.path.join(ROOT, "assets", "img", "og", name)):
+        return f"{BASE}/assets/img/og/{name}"
+    return OG_DEFAULT
+
+
 def render_page(*, title, description, kw, url, ld_blocks, crumbs, eyebrow, h1,
                 lead, answer, facts="", body="", faq="", lang="en", alternates=(),
                 answer_label=""):
@@ -413,7 +429,8 @@ def render_page(*, title, description, kw, url, ld_blocks, crumbs, eyebrow, h1,
         hero=hero, body=body, faq=faq, lang=lang,
         locale="pa_IN" if lang == "pa" else "en_IN",
         base_tag='  <base href="/">\n' if lang == "pa" else "",
-        alternates=alt)
+        alternates=alt, og_image=og_image_for(url),
+        og_extra=OG_SIZE if og_image_for(url) != OG_DEFAULT else "")
 
 
 def register(filename, url, kind, entity, title, description, h1, intro_words,
@@ -1798,6 +1815,12 @@ def build_quiz(s, c, t):
         "twitter:description")
     rep(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">',
         "canonical")
+    og_img = og_image_for(url)
+    rep(r'<meta property="og:image" content="[^"]*">',
+        f'<meta property="og:image" content="{og_img}">'
+        + (OG_SIZE if og_img != OG_DEFAULT else ""), "og:image")
+    rep(r'<meta name="twitter:image" content="[^"]*">',
+        f'<meta name="twitter:image" content="{og_img}">', "twitter:image")
     rep(r'<h1 class="quiz-title" id="quizTitle">.*?</h1>',
         f'<h1 class="quiz-title" id="quizTitle">{esc(name)}</h1>', "h1")
 
