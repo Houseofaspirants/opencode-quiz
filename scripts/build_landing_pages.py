@@ -127,7 +127,8 @@ def fit_desc(base):
         # sentence, else a whole clause, else a whole word - and always close
         # the sentence, because an open clause is the bug this replaced.
         head = d[:160]
-        cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "))
+        cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "),
+                  head.rfind("। "))
         if cut >= 130:
             d = head[:cut + 1]
         else:
@@ -141,7 +142,7 @@ def fit_desc(base):
     # `break` here is what once left 132-char descriptions below the window.)
     seen = set()
     while len(d) < 140:
-        if not d.endswith((".", "!", "?", ":")):
+        if not d.endswith((".", "!", "?", ":", "।")):
             d += "."
         room = 160 - len(d)
         cands = [t for t in DESC_TAILS if len(t) <= room and d + t not in seen]
@@ -151,7 +152,7 @@ def fit_desc(base):
         seen.add(d + tail)
         d += tail
     # Belt and braces: never ship a description that stops mid-sentence.
-    if d and not d.endswith((".", "!", "?", ":")):
+    if d and not d.endswith((".", "!", "?", ":", "।")):
         d = (d + "." if len(d) < 160 else d[:159].rsplit(" ", 1)[0] + ".")
     return d
 
@@ -314,11 +315,11 @@ def webpage_ld(url, name, description, crumb_id, has_part=None):
 
 # ----------------------------------------------------------- page skeleton --
 HEAD_TMPL = """<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="{lang}" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>{title}</title>
+{base_tag}  <title>{title}</title>
   <meta name="description" content="{description}">
   <meta name="keywords" content="{keywords}">
   <meta name="robots" content="index, follow">
@@ -329,12 +330,12 @@ HEAD_TMPL = """<!DOCTYPE html>
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{description}">
   <meta property="og:image" content="{base}/assets/img/og-cover.png">
-  <meta property="og:locale" content="en_IN">
+  <meta property="og:locale" content="{locale}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{description}">
   <meta name="twitter:image" content="{base}/assets/img/og-cover.png">
-  <link rel="canonical" href="{url}">
+  <link rel="canonical" href="{url}">{alternates}
 {ld}
   <link rel="preconnect" href="https://t.me">
   <link rel="dns-prefetch" href="//t.me">
@@ -392,14 +393,27 @@ HERO_TMPL = """    <section class="page-hero">
 
 
 def render_page(*, title, description, kw, url, ld_blocks, crumbs, eyebrow, h1,
-                lead, answer, facts="", body="", faq=""):
+                lead, answer, facts="", body="", faq="", lang="en", alternates=(),
+                answer_label=""):
+    """`lang` = "pa" renders a Punjabi page that lives under /pa/: <html
+    lang="pa">, a pa_IN locale and <base href="/"> so the shared chrome's
+    relative links resolve from the site root. `alternates` = [(hreflang,
+    url)] for the language pair (both pages carry the same set)."""
     hero = HERO_TMPL.format(
         crumbs=crumb_nav(crumbs), eyebrow=esc(eyebrow), h1=esc(h1),
         lead=esc(lead), facts=facts, answer=esc(answer))
+    if answer_label:
+        hero = hero.replace('<span class="ab-label">Quick answer</span>',
+                            f'<span class="ab-label">{esc(answer_label)}</span>')
+    alt = "".join(f'\n  <link rel="alternate" hreflang="{h}" href="{esc(u_)}">'
+                  for h, u_ in alternates)
     return HEAD_TMPL.format(
         title=esc(title), description=esc(description), keywords=esc(kw),
         url=url, ld="\n".join(ld_blocks), base=BASE,
-        hero=hero, body=body, faq=faq)
+        hero=hero, body=body, faq=faq, lang=lang,
+        locale="pa_IN" if lang == "pa" else "en_IN",
+        base_tag='  <base href="/">\n' if lang == "pa" else "",
+        alternates=alt)
 
 
 def register(filename, url, kind, entity, title, description, h1, intro_words,
@@ -1255,6 +1269,11 @@ def build_topic(s, c, t):
         section_head("Topic introduction", f"What {name} covers",
                      "The shape of the set before you start it.")
         + "\n" + intro_html))
+    if qs:
+        body.append(section_wrap(
+            section_head("Question bank", f"{name}: all {len(qs)} questions",
+                         "Read the question, pick an option, then open the answer.")
+            + "\n" + question_bank_html(qs, "en")))
 
     body.append(section_wrap(section_head(
         "Why it matters", f"Why {name} is worth the hours",
@@ -1369,12 +1388,193 @@ def build_topic(s, c, t):
         crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="Topic", h1=h1, lead=lead,
         answer=answer, facts=facts, body="\n".join(b for b in body if b),
         faq=faq_section("Questions", f"{name} - common questions",
-                        "Answered against the set as it is published today.", faqs))
+                        "Answered against the set as it is published today.", faqs),
+        alternates=topic_alternates(sid, tid) if (available and topic_pa_variant(t)) else ())
 
     write_page(filename, html)
     register(filename, url, "topic", key, title, description, h1, words(intro_html),
              {"WebPage", "BreadcrumbList", "FAQPage"})
     info(f"topic    {filename}  {count}q  intro={words(intro_html)}w  faq={len(faqs)}")
+    return filename
+
+
+
+# ---------------------------------------------------------- question bank --
+# The questions themselves, as crawlable HTML. Students search for the exact
+# wording of a question; a page that only carries template prose (and the
+# questions inside JavaScript) can never match that search. Each answer sits
+# in a <details> so the page still works as practice: read, guess, open.
+QB_LABELS = {
+    "en": {"show": "Show answer", "answer": "Answer", "why": "Explanation"},
+    "pa": {"show": "ਉੱਤਰ ਵੇਖੋ", "answer": "ਸਹੀ ਉੱਤਰ", "why": "ਵਿਆਖਿਆ"},
+}
+
+
+def question_bank_html(qs, lang="en"):
+    lab = QB_LABELS[lang]
+    out = ['        <ol class="qb-list" data-landing="question-bank">']
+    for q in qs:
+        text = str(q.get("q") or "").strip()
+        opts = [str(o).strip() for o in (q.get("options") or [])]
+        if not text or not opts:
+            continue
+        correct = q.get("correct")
+        out.append('          <li class="qb-item card card-pad">')
+        out.append(f'            <p class="qb-q">{esc(text)}</p>')
+        out.append('            <ol class="qb-opts" type="A">')
+        for o in opts:
+            out.append(f"              <li>{esc(o)}</li>")
+        out.append("            </ol>")
+        if isinstance(correct, int) and 0 <= correct < len(opts):
+            expl = str(q.get("explanation") or "").strip()
+            out.append(f'            <details class="qb-ans"><summary>{lab["show"]}</summary>')
+            out.append(f'              <p><strong>{lab["answer"]}:</strong> '
+                       f'({chr(65 + correct)}) {esc(opts[correct])}</p>')
+            if expl:
+                out.append(f'              <p><strong>{lab["why"]}:</strong> {esc(expl)}</p>')
+            out.append("            </details>")
+        out.append("          </li>")
+    out.append("        </ol>")
+    return "\n".join(out)
+
+
+def topic_pa_variant(t):
+    """Path of the topic's Punjabi question file, or ''."""
+    v = (t.get("variants") or {}).get("pa") or ""
+    return v if v and os.path.exists(os.path.join(ROOT, v)) else ""
+
+
+def topic_pa_file(sid, tid):
+    return f"pa/topic-{sid}-{tid}.html"
+
+
+def load_variant_questions(path):
+    try:
+        data = read_json(os.path.join(ROOT, path))
+    except Exception as err:
+        warn(f"{path}: cannot read ({err})")
+        return []
+    raw = data if isinstance(data, list) else (
+        data.get("questions") or data.get("mcqs") or data.get("quiz") or [])
+    return normalize_questions(raw)
+
+
+_QM = read_json(os.path.join(DATA, "quiz-manifest.json")).get("topics", [])
+PA_TITLE = {(x.get("subject"), x.get("id")): (x.get("titles") or {}).get("pa", "")
+            for x in _QM}
+SUBJECT_PA = {"gk": "ਜਨਰਲ ਨਾਲੇਜ", "reasoning": "ਰੀਜ਼ਨਿੰਗ", "computer": "ਕੰਪਿਊਟਰ",
+              "current-affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼", "quant": "ਗਣਿਤ", "english": "ਅੰਗਰੇਜ਼ੀ",
+              "punjabi": "ਪੰਜਾਬੀ"}
+
+
+def topic_alternates(sid, tid):
+    en_url, pa_url = u(topic_file(sid, tid)), u(topic_pa_file(sid, tid))
+    return [("en", en_url), ("pa", pa_url), ("x-default", en_url)]
+
+def build_topic_pa(s, c, t):
+    """pa/topic-<subject>-<topic>.html - the Punjabi twin of a topic page:
+    the same set's Punjabi questions as crawlable HTML, Punjabi head and
+    copy, hreflang to the English page and back."""
+    sid, tid = s["id"], t["id"]
+    filename = topic_pa_file(sid, tid)
+    url = u(filename)
+    qs = load_variant_questions(topic_pa_variant(t))
+    count = len(qs)
+    en_name = t["name"]
+    name = PA_TITLE.get((sid, tid)) or en_name
+    subj_pa = SUBJECT_PA.get(sid, s["name"])
+    est = fmt_duration(count * q_seconds(sid))
+    mins = est.replace(" min", " ਮਿੰਟ").replace(" sec", " ਸਕਿੰਟ")
+
+    title = fit_title(f"{name} | MCQ ਪੰਜਾਬੀ ਵਿੱਚ",
+                      f"{name} MCQ")
+    _d1 = f"{name}: {count} MCQ ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ, ਹਰ ਸਵਾਲ ਦਾ ਸਹੀ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ। "
+    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
+              "Punjab Police ਅਤੇ PSSSB ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+    description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
+                                _d1 + _tails[-1]))
+    kw = keywords(name, f"{name} MCQ", f"{subj_pa} ਸਵਾਲ", f"{en_name} MCQ in Punjabi",
+                  "ਪੰਜਾਬੀ ਵਿੱਚ MCQ", "Punjab exam MCQs Punjabi")
+    h1 = f"{name} - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ"
+    lead = (f"{subj_pa} ਦੇ {count} ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ। ਹਰ ਸਵਾਲ ਹੇਠਾਂ \"ਉੱਤਰ ਵੇਖੋ\" "
+            f"ਦਬਾ ਕੇ ਸਹੀ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ ਪੜ੍ਹੋ।")
+    answer = (f"ਇਸ ਸੈੱਟ ਵਿੱਚ {count} ਸਵਾਲ ਹਨ, ਲਗਭਗ {mins} ਦਾ ਅਭਿਆਸ। ਪਹਿਲਾਂ ਇੱਥੇ "
+              f"ਸਵਾਲ ਪੜ੍ਹ ਕੇ ਆਪ ਉੱਤਰ ਸੋਚੋ, ਫਿਰ ਟਾਈਮਡ ਕੁਇਜ਼ ਵਿੱਚ ਆਪਣਾ ਸਕੋਰ ਵੇਖੋ।")
+    intro = [
+        f"ਇਹ ਸਵਾਲ ਪੰਜਾਬ ਦੀਆਂ ਸਰਕਾਰੀ ਪ੍ਰੀਖਿਆਵਾਂ ਦੇ ਪੈਟਰਨ ਉੱਤੇ ਬਣਾਏ ਗਏ ਹਨ: ਚਾਰ ਵਿਕਲਪ, "
+        f"ਇੱਕ ਸਹੀ ਉੱਤਰ ਅਤੇ ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ। ਇਹੀ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਮੌਜੂਦ ਹੈ।",
+        "ਜਿਹੜਾ ਸਵਾਲ ਦੋ ਵਾਰ ਗਲਤ ਹੋਵੇ, ਉਹਨੂੰ ਆਪਣੀ ਕਾਪੀ ਵਿੱਚ ਲਿਖ ਲਓ - ਪ੍ਰੀਖਿਆ ਤੋਂ "
+        "ਪਹਿਲਾਂ ਦੁਹਰਾਈ ਲਈ ਇਹੀ ਸਭ ਤੋਂ ਕੰਮ ਦੀ ਸੂਚੀ ਹੈ।",
+    ]
+    intro_html = (f'        <div class="landing-intro" data-landing="intro" lang="pa">\n'
+                  f'{join_paras(intro)}\n        </div>')
+    facts = facts_grid([("ਸਵਾਲ", str(count)), ("ਸਮਾਂ", f"ਲਗਭਗ {mins}"),
+                        ("ਭਾਸ਼ਾ", "ਪੰਜਾਬੀ"), ("ਵਿਸ਼ਾ", subj_pa)])
+
+    body = [section_wrap(section_head("ਜਾਣ-ਪਛਾਣ", f"{name} ਬਾਰੇ",
+                                      "ਸੈੱਟ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ।") + "\n" + intro_html)]
+    body.append(section_wrap(
+        section_head("ਸਵਾਲ ਬੈਂਕ", f"{name}: ਸਾਰੇ {count} ਸਵਾਲ",
+                     "ਹਰ ਸਵਾਲ ਦਾ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ ਉਸਦੇ ਹੇਠਾਂ ਹੈ।")
+        + "\n" + question_bank_html(qs, "pa")))
+
+    ex_list = (exams_for(category_id=c["id"]) if c else []) or exams_for(subject_id=sid)
+    if ex_list:
+        body.append(card_section(
+            "ਪ੍ਰੀਖਿਆਵਾਂ", "ਇਹ ਸਵਾਲ ਕਿਹੜੀਆਂ ਪ੍ਰੀਖਿਆਵਾਂ ਵਿੱਚ ਆਉਂਦੇ ਹਨ",
+            "ਪ੍ਰੀਖਿਆ ਦਾ ਪੰਨਾ ਖੋਲ੍ਹੋ: ਸਿਲੇਬਸ, ਪਿਛਲੇ ਪੇਪਰ ਅਤੇ ਨੋਟਸ।",
+            [(e["name"], "", exam_file(e["id"]), "") for e in ex_list[:6]]))
+        for e in ex_list[:6]:
+            link_record(filename, "topic-pa", exam_file(e["id"]), "exam", e["name"])
+
+    siblings = [(c2, t2) for c2, t2 in all_topics(s)
+                if t2["id"] != tid and topic_pa_variant(t2)]
+    if siblings:
+        items = [(PA_TITLE.get((sid, t2["id"])) or t2["name"], "",
+                  topic_pa_file(sid, t2["id"]), f"{t2.get('count', 0)} MCQ")
+                 for _c2, t2 in siblings[:6]]
+        body.append(card_section("ਅੱਗੇ ਪੜ੍ਹੋ", "ਹੋਰ ਪੰਜਾਬੀ ਸੈੱਟ",
+                                 f"{subj_pa} ਦੇ ਹੋਰ ਸਵਾਲ, ਪੰਜਾਬੀ ਵਿੱਚ।", items))
+        for _n, _b, href, _m in items:
+            link_record(filename, "topic-pa", href, "topic-pa", _n)
+
+    body.append(section_wrap(cta_card(
+        "ਟਾਈਮਡ ਅਭਿਆਸ", "ਹੁਣ ਘੜੀ ਨਾਲ ਕੁਇਜ਼ ਦਿਓ",
+        f"{count} ਸਵਾਲ, ਤੁਰੰਤ ਸਕੋਰ ਅਤੇ ਅੰਤ ਵਿੱਚ ਪੂਰਾ ਰਿਵਿਊ।",
+        [("ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ", quiz_file(sid, tid)),
+         ("English version", topic_file(sid, tid)),
+         ("ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼", "quiz.html?mode=daily")]), pad_top=False))
+    link_record(filename, "topic-pa", quiz_file(sid, tid), "quiz", "ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ")
+    link_record(filename, "topic-pa", topic_file(sid, tid), "topic", en_name)
+
+    faqs = [
+        (f"{name} ਵਿੱਚ ਕਿੰਨੇ ਸਵਾਲ ਹਨ?",
+         f"ਇਸ ਸੈੱਟ ਵਿੱਚ {count} ਸਵਾਲ ਹਨ। ਹਰ ਸਵਾਲ ਦੇ ਚਾਰ ਵਿਕਲਪ ਹਨ ਅਤੇ ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਦਿੱਤੀ ਗਈ ਹੈ।"),
+        ("ਕੀ ਇਹ ਸਵਾਲ ਮੁਫ਼ਤ ਹਨ?",
+         "ਹਾਂ। House of Aspirants ਦੇ ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਮੁਫ਼ਤ ਹਨ ਅਤੇ ਖੋਲ੍ਹਣ ਲਈ ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।"),
+        ("ਕੀ ਇਹੀ ਸਵਾਲ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
+         "ਹਾਂ। ਉੱਪਰ \"English version\" ਬਟਨ ਨਾਲ ਇਹੀ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ।"),
+    ]
+    crumbs = [("Home", "index.html", f"{BASE}/"),
+              (s["name"], subject_file(sid), u(subject_file(sid))),
+              (en_name, topic_file(sid, tid), u(topic_file(sid, tid))),
+              ("ਪੰਜਾਬੀ", None, None)]
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    page_ld["inLanguage"] = "pa-IN"
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]})]
+
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਪੰਜਾਬੀ MCQ", h1=h1, lead=lead,
+        answer=answer, facts=facts, body="\n".join(b for b in body if b),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", "ਇਸ ਸੈੱਟ ਬਾਰੇ।", faqs),
+        lang="pa", alternates=topic_alternates(sid, tid), answer_label="ਛੋਟਾ ਜਵਾਬ")
+    write_page(filename, html)
+    register(filename, url, "topic-pa", f"{sid}/{tid}", title, description, h1,
+             words(intro_html), {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"topic-pa {filename}  {count}q")
     return filename
 
 
@@ -2146,7 +2346,7 @@ def check_descriptions(records):
         d = (r.get("description") or "").strip()
         if not d:
             continue
-        if not d.endswith((".", "!", "?")):
+        if not d.endswith((".", "!", "?", "\u0964")):  # \u0964 = Punjabi full stop
             bad.append(f"{r['file']}: description stops mid-sentence: ...{d[-48:]!r}")
         elif len(d) > 160:
             bad.append(f"{r['file']}: description is {len(d)} chars (max 160)")
@@ -2430,6 +2630,11 @@ def main():
     for s in subjects:
         for c, t in live_topics(s):
             built.append(build_quiz(s, c, t))
+    os.makedirs(os.path.join(ROOT, "pa"), exist_ok=True)
+    for s in subjects:
+        for c, t in live_topics(s):
+            if topic_pa_variant(t):
+                built.append(build_topic_pa(s, c, t))
     for e in exams_cfg:
         built.append(build_exam(e))
     for c in clusters_cfg:
@@ -2458,6 +2663,11 @@ def main():
                 and fn not in expected and fn not in protected):
             os.remove(os.path.join(ROOT, fn))
             removed.append(fn)
+    for fn in sorted(os.listdir(os.path.join(ROOT, "pa"))):
+        rel = f"pa/{fn}"
+        if fn.startswith("topic-") and fn.endswith(".html") and rel not in expected:
+            os.remove(os.path.join(ROOT, rel))
+            removed.append(rel)
     if removed:
         warn("stale landing pages removed: " + ", ".join(removed))
 

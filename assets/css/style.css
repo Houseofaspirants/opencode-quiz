@@ -3970,3 +3970,13 @@ body.rbv-open { overflow: hidden; }
 .lang-folder .lf-count { font-size: 0.8rem; color: var(--muted); }
 [data-lang-view="en"] > [data-lang="pa"],
 [data-lang-view="pa"] > [data-lang="en"] { display: none !important; }
+
+/* Question bank on topic pages (crawlable questions, answers behind <details>) */
+.qb-list{list-style:decimal outside;padding-left:1.4rem;display:grid;gap:14px;margin:0}
+.qb-item{padding:16px 18px}
+.qb-q{font-weight:600;margin:0 0 8px}
+.qb-opts{margin:0 0 10px;padding-left:1.6rem;display:grid;gap:4px;list-style:upper-alpha}
+.qb-opts li{display:list-item}
+.qb-ans summary{cursor:pointer;color:var(--primary,#4f46e5);font-weight:600;min-height:44px;display:flex;align-items:center}
+.qb-ans p{margin:6px 0 0}
+@media print{.qb-ans{display:block}.qb-ans summary{display:none}}

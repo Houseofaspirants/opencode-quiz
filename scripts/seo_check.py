@@ -1731,7 +1731,7 @@ if landing_pages:
             for t in c.get("topics", []) or []:
                 topic_by_key[(s["id"], t["id"])] = t
 
-    LINK_RX = re.compile(r'href="((?:subject|category|topic|quiz|exam|cluster)-[a-z0-9-]+\.html)"')
+    LINK_RX = re.compile(r'href="((?:pa/)?(?:subject|category|topic|quiz|exam|cluster)-[a-z0-9-]+\.html)"')
     lpages = {r["file"]: r for r in landing_pages}
     landing_h = {f: (ROOT / f).read_text(encoding="utf-8")
                  for f in lpages if (ROOT / f).exists()}

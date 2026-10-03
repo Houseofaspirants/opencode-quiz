@@ -1143,9 +1143,9 @@ if site.get("url"):
     # subject clusters. (Subject, category and quiz landing pages are covered
     # by the loops above.)
     for _kind, _path in sorted(LANDING.items()):
-        if _kind[0] in ("topic", "exam", "cluster"):
+        if _kind[0] in ("topic", "topic-pa", "exam", "cluster"):
             urls.append({"loc": base + _path,
-                         "p": {"topic": "0.8", "exam": "0.85",
+                         "p": {"topic": "0.8", "topic-pa": "0.8", "exam": "0.85",
                                "cluster": "0.7"}[_kind[0]]})
 
     # data/noindex.json: crawlable pages kept out of the index stay out of
