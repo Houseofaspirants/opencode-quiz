@@ -1022,6 +1022,7 @@ if (site.url) {
       for (const page of cm.pages || []) {
         const u = String(page.url || "");
         const f = String(page.file || "");
+        if (page.noindex) continue; // crawlable, never indexed
         if (u.startsWith(base) && fs.existsSync(path.join(ROOT, f))) {
           urls.push({ loc: u, p: "0.7" });
         } else {
@@ -1063,6 +1064,17 @@ if (site.url) {
       const prio = { topic: "0.8", exam: "0.85", cluster: "0.7" }[kind];
       urls.push({ loc: `${base}${p}`, p: prio });
     }
+  }
+  // data/noindex.json: crawlable pages kept out of the index stay out of
+  // the sitemap too (same filter as build_index.py).
+  const noindexPath = path.join(DATA_DIR, "noindex.json");
+  if (fs.existsSync(noindexPath)) {
+    const skip = new Set(
+      (JSON.parse(fs.readFileSync(noindexPath, "utf8")).pages || [])
+        .filter((f) => String(f).endsWith(".html"))
+        .map((f) => `${base}/${String(f).slice(0, -5)}`)
+    );
+    for (let i = urls.length - 1; i >= 0; i--) if (skip.has(urls[i].loc)) urls.splice(i, 1);
   }
   const xml =
     `<?xml version="1.0" encoding="UTF-8"?>\n` +

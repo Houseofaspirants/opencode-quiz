@@ -1629,6 +1629,24 @@ def official_url_ok(url):
 # 4. PAGE SCAFFOLD  (head + chrome hooks - mirrors the hand-written pages so
 #                    seo_check treats generated pages exactly like the rest)
 # =============================================================================
+def _noindex_urls():
+    """Canonical URLs listed in data/noindex.json (crawlable, never indexed)."""
+    try:
+        cfg = json.loads((ROOT / "data" / "noindex.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return set()
+    return {f"{DOMAIN}/{str(f)[:-5]}" for f in cfg.get("pages", [])
+            if str(f).endswith(".html")}
+
+
+NOINDEX_URLS = _noindex_urls()
+ARCHIVE_MIN_DOCS = 3   # tag/category archives below this stay noindex
+
+
+def robots_for(url):
+    return "noindex, follow" if url in NOINDEX_URLS else "index, follow"
+
+
 def head(title, desc, keywords, url, og_type, jsonld, lang="en", alternates=(),
          image="", nested=False):
     """Page scaffold. `lang` drives <html lang>, the /pa/ base URL and hreflang.
@@ -1658,7 +1676,7 @@ def head(title, desc, keywords, url, og_type, jsonld, lang="en", alternates=(),
 {base}  <title>{esc(title)}</title>
   <meta name="description" content="{esc(desc)}">
   <meta name="keywords" content="{esc(keywords)}">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{robots_for(url)}">
   <meta name="theme-color" content="#4f46e5">
   <link rel="canonical" href="{esc(url)}">{hreflang}
   <link rel="alternate" type="application/rss+xml" title="House of Aspirants"
@@ -6776,6 +6794,11 @@ def phase4_pages(records, index):
         if not rows:
             continue
         f = f"archive-{kind}-{slug}.html"
+        if len(rows) < ARCHIVE_MIN_DOCS:
+            # one or two documents = a thin list that only repeats links the
+            # documents' own hubs already carry: crawlable, kept out of the
+            # index (and the sitemap) until the tag grows
+            NOINDEX_URLS.add(f"{DOMAIN}/{f[:-5]}")
         html = archive_index_html(kind, slug, label, rows, index)
         out.append((f, html, {
             "id": f, "url": f"/{f}", "type": "archive", "template": "",
@@ -7216,6 +7239,7 @@ def main():
             "url": f"{DOMAIN}/{_f[:-5]}",
             "title": (_t.group(1) if _t else ""),
             "description": (_d.group(1) if _d else ""),
+            **({"noindex": True} if f"{DOMAIN}/{_f[:-5]}" in NOINDEX_URLS else {}),
         })
     info(f"index pages: {len(phase4_manifest)} generated "
          f"(authors, tags, categories, search)")

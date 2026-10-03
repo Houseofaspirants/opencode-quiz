@@ -1,5 +1,5 @@
 {
-  "$note": "EXAM CONFIG (no coding needed). This file registers the recruitment papers that get their own SEO landing page (exam-<id>.html). Each entry needs: id (url slug), name (used in the H1, title and breadcrumb), summary (1-2 sentences describing the paper - keep it factual, never dates/marks/eligibility), subjects (subject ids from subjects.json this paper leans on - drives Exam -> Subject links), categories (optional category folder ids, e.g. 'punjab-gk' - drives Exam -> Topic links through that category). Topic links are derived automatically from subjects/categories, so you never list topics by hand. `tagLabels` (optional) gives a human label to a topic filter tag that is not an exam id of its own - the Books shelf and any tag chip read their labels from `exams[].name` first and from `tagLabels` second, so labels are never hardcoded in a page. To publish a NEW exam: add an entry here, run python3 scripts/build_landing_pages.py, then python3 scripts/seo_check.py. The generator also refreshes SEO-LANDING-REPORT.md and the sitemap entries.",
+  "$note": "EXAM CONFIG (no coding needed). This file registers the recruitment papers that get their own SEO landing page (exam-<id>.html). Each entry needs: id (url slug), name (used in the H1, title and breadcrumb), summary (1-2 sentences describing the paper - keep it factual, never dates/marks/eligibility), subjects (subject ids from subjects.json this paper leans on - drives Exam -> Subject links), categories (optional category folder ids, e.g. 'punjab-gk' - drives Exam -> Topic links through that category). Topic links are derived automatically from subjects/categories, so you never list topics by hand. `tagLabels` (optional) gives a human label to a topic filter tag that is not an exam id of its own - the Books shelf and any tag chip read their labels from `exams[].name` first and from `tagLabels` second, so labels are never hardcoded in a page. `strategy` (optional) lists content/strategy slugs and `pyq` (optional) lists Previous Year Questions exam ids from data/pyq-manifest.json - the exam page links each one, so a hub reaches its official pattern and its papers in one click. To publish a NEW exam: add an entry here, run python3 scripts/build_landing_pages.py, then python3 scripts/seo_check.py. The generator also refreshes SEO-LANDING-REPORT.md and the sitemap entries.",
   "tagLabels": {
     "general": "General competitive"
   },
@@ -8,43 +8,54 @@
       "id": "punjab-police-constable",
       "name": "Punjab Police Constable",
       "summary": "The highest-volume recruitment on this list. Build your base with Punjab GK and current affairs, then drill reasoning until speed is automatic.",
-      "subjects": ["gk", "current-affairs"],
-      "categories": ["punjab-gk"]
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english", "current-affairs"],
+      "categories": ["punjab-gk"],
+      "strategy": ["punjab-police-constable-syllabus-exam-pattern-2026"],
+      "pyq": ["punjab-police-constable"]
     },
     {
       "id": "punjab-police-asi",
       "name": "Punjab Police ASI",
       "summary": "Assistant Sub-Inspector papers separate candidates on English and Punjabi accuracy as much as on general awareness. Practise language daily.",
-      "subjects": ["english", "punjabi"],
-      "categories": []
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english", "current-affairs"],
+      "categories": [],
+      "strategy": ["punjab-police-si-syllabus-exam-pattern"],
+      "pyq": ["punjab-police-sub-inspector"]
     },
     {
       "id": "punjab-police-sub-inspector",
       "name": "Punjab Police Sub-Inspector (SI)",
       "summary": "The most competitive paper here. Polity, history and quant reasoning decide the rank - so take full timed mocks before the exam.",
-      "subjects": ["gk", "quant"],
-      "categories": ["polity"]
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english", "current-affairs"],
+      "categories": ["polity"],
+      "strategy": ["punjab-police-si-syllabus-exam-pattern"],
+      "pyq": ["punjab-police-sub-inspector"]
     },
     {
       "id": "punjab-police-intelligence-assistant",
       "name": "Punjab Police Intelligence Assistant",
       "summary": "Data handling, mental ability and computer awareness carry most of the weight. Use short topic sets and check every explanation.",
       "subjects": ["quant", "computer"],
-      "categories": []
+      "categories": [],
+      "pyq": ["punjab-police-constable-intelligence-investigation"]
     },
     {
       "id": "punjab-police-jail-warder",
       "name": "Punjab Police Jail Warder",
       "summary": "A tighter syllabus: general awareness, Punjabi and basic reasoning. Perfect for a daily quiz habit - short sessions, high consistency.",
-      "subjects": ["reasoning", "punjabi"],
-      "categories": []
+      "subjects": ["gk", "reasoning", "quant", "punjabi", "english"],
+      "categories": [],
+      "strategy": ["psssb-jail-warder-matron-recruitment-exam-pattern"],
+      "pyq": ["psssb-jail-warder"]
     },
     {
       "id": "punjab-police",
       "name": "Punjab Police",
       "summary": "Punjab Police recruits across several posts - Constable, ASI, Sub-Inspector, Intelligence Assistant and Jail Warder each have their own page below. Start with your post, then drill the shared subjects as daily MCQs.",
       "subjects": ["gk", "current-affairs"],
-      "categories": ["punjab-gk"]
+      "categories": ["punjab-gk"],
+      "strategy": ["punjab-police-constable-syllabus-exam-pattern-2026", "punjab-police-head-constable-syllabus-exam-pattern", "punjab-police-si-syllabus-exam-pattern"],
+      "pyq": ["punjab-police-constable", "punjab-police-head-constable", "punjab-police-sub-inspector", "punjab-police-constable-intelligence-investigation"]
     },
     {
       "id": "punjab-police-driver",
@@ -71,29 +82,35 @@
       "id": "patwari",
       "name": "Patwari",
       "summary": "Revenue work starts with Punjab geography, history and current affairs. Add quant for the sections that reward calculation speed.",
-      "subjects": ["gk", "quant"],
-      "categories": ["geography-environment", "history"]
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english"],
+      "categories": ["geography-environment", "history"],
+      "strategy": ["punjab-patwari-recruitment-eligibility-exam-pattern"],
+      "pyq": ["psssb-patwari"]
     },
     {
       "id": "excise-inspector",
       "name": "Excise Inspector",
       "summary": "General awareness and English carry this paper. Track Punjab policy news daily and revise it as MCQs, not as notes.",
-      "subjects": ["current-affairs", "english"],
-      "categories": []
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english", "current-affairs"],
+      "categories": [],
+      "strategy": ["psssb-excise-inspector-recruitment-exam-pattern"],
+      "pyq": ["psssb-excise-taxation-inspector"]
     },
     {
       "id": "forest-guard",
       "name": "Forest Guard",
       "summary": "Environment, geography and general science, with a physical test after the written paper. Keep science revision short and frequent.",
       "subjects": ["gk"],
-      "categories": ["geography-environment"]
+      "categories": ["geography-environment"],
+      "pyq": ["psssb-forest-guard", "psssb-forester"]
     },
     {
       "id": "naib-tehsildar",
       "name": "Naib Tehsildar",
       "summary": "Land records, Punjab history and polity, plus data interpretation. A strong polity base is the fastest score to build.",
       "subjects": ["gk", "quant"],
-      "categories": ["polity"]
+      "categories": ["polity"],
+      "pyq": ["ppsc-naib-tehsildar"]
     },
     {
       "id": "senior-assistant",
@@ -106,8 +123,10 @@
       "id": "clerk",
       "name": "Clerk",
       "summary": "Grammar, comprehension, typing and basic computer knowledge. Accuracy beats speed here - review every wrong answer.",
-      "subjects": ["english", "computer"],
-      "categories": []
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english"],
+      "categories": [],
+      "strategy": ["psssb-clerk-recruitment-exam-pattern-2026"],
+      "pyq": ["psssb-clerk", "psssb-clerk-it", "psssb-clerk-accounts", "psssb-clerk-legal", "psssb-clerk-cum-data-entry-operator"]
     },
     {
       "id": "revenue-officer",
@@ -135,7 +154,9 @@
       "name": "PPSC posts",
       "summary": "Punjab Public Service Commission papers are syllabus-heavy and spread over months. Follow a study plan and revise on a fixed cycle.",
       "subjects": [],
-      "categories": []
+      "categories": [],
+      "strategy": ["ppsc-cooperative-inspector-recruitment-exam-pattern", "punjab-pcs-syllabus-exam-pattern"],
+      "pyq": ["ppsc-cooperative-inspector", "ppsc-draftsman", "ppsc-naib-tehsildar", "ppsc-punjab-civil-services"]
     },
     {
       "id": "pspcl-jobs",
@@ -149,21 +170,27 @@
       "name": "PSSSB",
       "summary": "PSSSB recruitment. Whichever post you are writing, general awareness, Punjabi and reasoning are the shared subjects you can practise here as daily MCQs.",
       "subjects": ["gk", "punjabi", "reasoning"],
-      "categories": []
+      "categories": [],
+      "strategy": ["psssb-clerk-recruitment-exam-pattern-2026", "psssb-excise-inspector-recruitment-exam-pattern", "psssb-jail-warder-matron-recruitment-exam-pattern", "psssb-veterinary-inspector-recruitment-exam-pattern", "punjab-patwari-recruitment-eligibility-exam-pattern"],
+      "pyq": ["psssb-anganwadi-supervisor", "psssb-clerk-accounts", "psssb-clerk-cum-data-entry-operator", "psssb-clerk-it", "psssb-clerk-legal", "psssb-clerk", "psssb-dairy-development-inspector", "psssb-driver", "psssb-excise-taxation-inspector", "psssb-forest-guard", "psssb-forester", "psssb-hostel-superintendent", "psssb-jail-warder", "psssb-junior-draftsman", "psssb-restorer-lab-assistant", "psssb-school-librarian", "psssb-senior-technical-assistant", "psssb-steno-typist", "psssb-horticulture-supervisor", "psssb-technical-assistant", "psssb-veterinary-inspector", "psssb-panchayat-secretary", "psssb-patwari"]
     },
     {
       "id": "punjab-police-head-constable",
       "name": "Punjab Police Head Constable",
       "summary": "The communication and clerical tier of Punjab Police. Punjabi, English and general knowledge carry the paper, and computer awareness is worth real marks.",
-      "subjects": ["gk", "english", "punjabi"],
-      "categories": ["punjab-gk"]
+      "subjects": ["gk", "reasoning", "quant", "computer", "punjabi", "english", "current-affairs"],
+      "categories": ["punjab-gk"],
+      "strategy": ["punjab-police-head-constable-syllabus-exam-pattern"],
+      "pyq": ["punjab-police-head-constable"]
     },
     {
       "id": "punjab-pcs",
       "name": "Punjab Civil Services",
       "summary": "The state civil services paper. Polity, history and economy run deep here, and the descriptive sections reward candidates who have read a subject rather than skimmed it.",
       "subjects": ["gk", "current-affairs"],
-      "categories": ["polity"]
+      "categories": ["polity"],
+      "strategy": ["punjab-pcs-syllabus-exam-pattern"],
+      "pyq": ["ppsc-punjab-civil-services"]
     },
     {
       "id": "ssc",

@@ -42,6 +42,7 @@
   Then:   python3 scripts/seo_check.py          (enforced gate)
  ============================================================================
 """
+import difflib
 import html as html_mod
 import json
 import os
@@ -619,6 +620,80 @@ def exams_for(subject_id=None, category_id=None):
         elif category_id and category_id in (e.get("categories") or []):
             out.append(e)
     return out
+
+
+# ------------------------------------------- exam -> strategy / PYQ / notes --
+# An exam page is the hub that ranks for its exam, so it links DOWN to every
+# kind of page that serves that exam: the official pattern (strategy guides),
+# the papers (Previous Year Questions), the notes (Study) and the quizzes.
+# Strategy and PYQ links are named in data/exams.json (`strategy`, `pyq`);
+# notes are derived from the exam's subjects + categories through the Study
+# hierarchy, so a chapter added under content/study-material links itself.
+_content_items = read_json(os.path.join(DATA, "content-manifest.json")).get("items", [])
+STRATEGY_BY_SLUG = {}
+for _it in _content_items:
+    _f = str(_it.get("file", ""))
+    if _it.get("collection") == "strategy" and _f.startswith("strategy-"):
+        STRATEGY_BY_SLUG[_f[len("strategy-"):-5]] = _it
+PYQ_BY_ID = {x["id"]: x for x in
+             read_json(os.path.join(DATA, "pyq-manifest.json")).get("exams", [])}
+_study = read_json(os.path.join(DATA, "study-manifest.json")).get("subjects", [])
+STUDY_BY_ID = {x.get("id"): x for x in _study}
+_meta = read_json(os.path.join(ROOT, "content", "study-material", "metadata.json"))
+GK_FOLDERS_BY_CAT, GK_FOLDERS = {}, []
+for _r in ((_meta.get("hierarchies") or {}).get("gk") or {}).get("regions", []):
+    for _c in _r.get("categories", []):
+        _fs = [f for f in (_c.get("folders") or []) if f in STUDY_BY_ID]
+        GK_FOLDERS_BY_CAT[_c.get("id")] = _fs
+        GK_FOLDERS_BY_CAT.setdefault(_r.get("id"), []).extend(_fs)
+        GK_FOLDERS.extend(_fs)
+
+
+def exam_strategy(e):
+    return [STRATEGY_BY_SLUG[x] for x in (e.get("strategy") or []) if x in STRATEGY_BY_SLUG]
+
+
+def exam_pyq(e):
+    return [PYQ_BY_ID[x] for x in (e.get("pyq") or []) if x in PYQ_BY_ID]
+
+
+def exam_notes(e, limit=6):
+    """[(chapter name, first-part file, languages, pages)] for the exam's
+    subjects, the exam's own categories first. One card per chapter."""
+    folders = []
+    for c in e.get("categories") or []:
+        folders += GK_FOLDERS_BY_CAT.get(c, [])
+    for sid in e.get("subjects") or []:
+        folders += GK_FOLDERS if sid == "gk" else ([sid] if sid in STUDY_BY_ID else [])
+    seen, out = set(), []
+    for f in folders:
+        if f in seen:
+            continue
+        seen.add(f)
+        chapters = {}
+        for lang in STUDY_BY_ID[f].get("languages", []):
+            for ch in lang.get("chapters", []):
+                key = re.sub(r"[^a-z0-9]+", "", str(ch.get("name", "")).lower())
+                # the same chapter is filed per language, sometimes with a typo
+                # or a plural in one of them ("Punajb Folk Dances") - merge
+                # near-identical names so a chapter is one card, not two
+                key = next((k for k in chapters
+                            if difflib.SequenceMatcher(None, k, key).ratio() >= 0.85), key)
+                parts = sorted(ch.get("parts") or [], key=lambda x: x.get("n", 0))
+                if not parts:
+                    continue
+                row = chapters.setdefault(key, {"name": ch.get("name"), "file": "",
+                                                "langs": [], "pages": 0, "parts": 0})
+                if lang.get("id") == "en" or not row["file"]:
+                    row["name"] = ch.get("name") or row["name"]
+                    row["file"] = parts[0]["file"]
+                    row["pages"] = int(ch.get("pages") or 0)
+                    row["parts"] = len(parts)
+                row["langs"].append(lang.get("name"))
+        for row in chapters.values():
+            if os.path.exists(os.path.join(ROOT, row["file"])):
+                out.append(row)
+    return out[:limit]
 
 
 def related_subjects(subject, limit=6):
@@ -1591,10 +1666,24 @@ def build_exam(e):
     derived = []
     for s in exam_subjects:
         for c, t in live_topics(s):
-            if cat_ids and c and c["id"] not in cat_ids and subj_ids:
-                continue
             derived.append((s, c, t))
-    derived = derived[:6]
+    # the exam's own lanes first (up to 4), then one set per subject in
+    # turn, so a hub shows the spread of the paper rather than one subject
+    own = [x for x in derived if x[1] and x[1]["id"] in cat_ids][:4]
+    rest = [x for x in derived if x not in own]
+    by_subj = defaultdict(list)
+    for x in rest:
+        by_subj[x[0]["id"]].append(x)
+    queues = [by_subj[sid] for sid in subj_ids if by_subj.get(sid)]
+    mixed = []
+    while any(queues):
+        for q in queues:
+            if q:
+                mixed.append(q.pop(0))
+    derived = (own + mixed)[:9]
+    ex_strategy = exam_strategy(e)
+    ex_pyq = exam_pyq(e)
+    ex_notes = exam_notes(e)
     related = [x for x in exams_cfg
                if x["id"] != eid
                and (set(x.get("subjects") or []) & set(subj_ids)
@@ -1643,8 +1732,8 @@ def build_exam(e):
 
     facts = facts_grid([("Subjects mapped", str(len(exam_subjects))),
                         ("Topic quizzes", str(len(derived))),
-                        ("Study guides", str(len(ex_guides))),
-                        ("Related exams", str(len(related)))])
+                        ("PYQ exams", str(len(ex_pyq))),
+                        ("Notes chapters", str(len(ex_notes)))])
 
     body = []
     # Answer-first intro (measured on .landing-intro by the gate)
@@ -1664,6 +1753,29 @@ def build_exam(e):
     for s in (exam_subjects or subjects):
         link_record(filename, "exam", subject_file(s["id"]), "subject", s["name"])
 
+    if ex_strategy:
+        body.append(card_section(
+            "Official pattern", f"{name} syllabus and exam pattern",
+            "Read from the official notification - marks, sections and how to plan.",
+            [(x["title"], x.get("description", ""), x["file"],
+              f"{x.get('readingMinutes', 0)} min read" if x.get("readingMinutes") else "")
+             for x in ex_strategy]))
+        for x in ex_strategy:
+            link_record(filename, "exam", x["file"], "strategy", x["title"])
+
+    if ex_pyq:
+        body.append(card_section(
+            "Previous year papers", f"{name} previous year question papers",
+            "Real papers and official answer keys, free to open.",
+            [(x["title"], "Papers from "
+              + ", ".join(sorted({str(g.get("year")) for g in (x.get("papers") or [])
+                                  if g.get("year")}, reverse=True)[:4]),
+              x["file"],
+              f"{x.get('count', 0)} file{'s' if x.get('count', 0) != 1 else ''}")
+             for x in ex_pyq]))
+        for x in ex_pyq:
+            link_record(filename, "exam", x["file"], "pyq", x["title"])
+
     if derived:
         body.append(card_section(
             "Question sets", f"Topic quizzes for {name}",
@@ -1679,6 +1791,17 @@ def build_exam(e):
             "Topic sets are added as question files are verified. Until then the daily quiz "
             "and the mock test still cover the general sections.",
             [("Daily Quiz", "quiz.html?mode=daily"), ("Mock Tests", "mock.html")])))
+
+    if ex_notes:
+        body.append(card_section(
+            "Notes", f"Free notes for {name}",
+            "Chapter notes for the subjects this paper tests - read online or download the PDF.",
+            [(x["name"], f"{x['parts']} part{'s' if x['parts'] != 1 else ''}"
+              + (f" \u00b7 {x['pages']} pages" if x["pages"] else ""),
+              x["file"], " + ".join(dict.fromkeys(x["langs"])))
+             for x in ex_notes]))
+        for x in ex_notes:
+            link_record(filename, "exam", x["file"], "material", x["name"])
 
     if ex_guides:
         body.append(card_section("Read next", f"Study guides for {name}",

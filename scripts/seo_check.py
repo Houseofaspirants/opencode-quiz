@@ -19,6 +19,19 @@ from html.parser import HTMLParser
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
+try:
+    NOINDEX_PAGES = set(json.loads((ROOT / "data" / "noindex.json").read_text(
+        encoding="utf-8")).get("pages", []))
+except (OSError, ValueError):
+    NOINDEX_PAGES = set()
+# generated index pages the content builder flags noindex (thin archives)
+try:
+    NOINDEX_PAGES |= {p.get("file") for p in json.loads(
+        (ROOT / "data" / "content-manifest.json").read_text(encoding="utf-8")
+    ).get("pages", []) if p.get("noindex")}
+except (OSError, ValueError):
+    pass
+
 DOMAIN = "https://houseofaspirants.in"
 errors, warnings, notes = [], [], []
 PAGES = [
@@ -303,6 +316,10 @@ for page in PAGES:
     if page == "404.html":
         if "noindex" not in robots:
             errors.append(f"404.html: must be noindex (got: {robots!r})")
+    elif page in NOINDEX_PAGES:
+        if robots != "noindex, follow":
+            errors.append(f"{page}: listed in data/noindex.json, robots must be "
+                          f"'noindex, follow' (got: {robots!r})")
     else:
         if robots != "index, follow":
             errors.append(f"{page}: robots must be 'index, follow' (got: {robots!r})")
@@ -635,6 +652,10 @@ if f"Sitemap: {DOMAIN}/sitemap.xml" not in robots_txt:
 if "vercel.app" in robots_txt:
     errors.append("robots.txt: vercel.app reference")
 
+# --- data/noindex.json: crawlable, never indexed, never in the sitemap -----
+for _f in sorted(NOINDEX_PAGES):
+    if not (ROOT / _f).exists():
+        errors.append(f"data/noindex.json: {_f} does not exist")
 # --- sitemap.xml -----------------------------------------------------------
 sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
 locs = re.findall(r"<loc>(.*?)</loc>", sm)
@@ -649,6 +670,9 @@ for u in locs:
     if u in seen:
         errors.append(f"sitemap: duplicate URL {u}")
     seen.add(u)
+for _f in sorted(NOINDEX_PAGES):
+    if f"{DOMAIN}/{_f[:-5]}" in locs:
+        errors.append(f"sitemap: {_f} is in data/noindex.json but listed")
 notes.append(f"sitemap: {len(locs)} URLs")
 
 # --- study guides: registry <-> pages <-> sitemap <-> hub cross-links --------
@@ -916,7 +940,10 @@ if CONTENT_MANIFEST.exists():
             want_pg = page_url(f)
             if pg.get("url") != want_pg:
                 errors.append(f"{f}: manifest url {pg.get('url')!r} != {want_pg!r}")
-            if want_pg not in locs:
+            if f in NOINDEX_PAGES:
+                if want_pg in locs:
+                    errors.append(f"sitemap: noindex page listed {want_pg}")
+            elif want_pg not in locs:
                 errors.append(f"sitemap: missing content index page {want_pg}")
             if canonical(src_pg) != want_pg:
                 errors.append(f"{f}: canonical {canonical(src_pg)!r} != {want_pg!r}")
@@ -1918,27 +1945,45 @@ if landing_pages:
         miss = sorted(want_subjects - set(got))
         if miss and subj_ids:
             errors.append(f"{f}: Exam->Subject links missing {miss}")
-        # Exam -> Topic: mirror the generator's derivation (subjects x live
-        # topics, filtered by the exam's declared categories, first 6)
+        # Exam -> Topic: mirror the generator's derivation in build_exam():
+        # the exam's own category lanes first (up to 4), then one set per
+        # subject in turn, first 9 in all.
         cat_ids = [c for c in (e.get("categories") or []) if c]
-        want_topics = []
+        own, by_subj = [], {}
         for sid in subj_ids:
             s = subj_by_id.get(sid) or {}
             # One pass over the subject's flat topic list (it already holds the
             # categorized quizzes — see all_topics() in build_landing_pages),
             # with the category each record declares attached to it.
             by_cat = {c.get("id"): c for c in (s.get("categories") or [])}
-            flat = [(by_cat.get(t.get("category")), t)
-                    for t in (s.get("topics") or [])]
-            for c, t in flat:
-                if cat_ids and c and c["id"] not in cat_ids:
-                    continue
+            for t in (s.get("topics") or []):
+                c = by_cat.get(t.get("category"))
                 tf = f"topic-{sid}-{t['id']}.html"
-                if tf in lpages and tf not in want_topics:
-                    want_topics.append(tf)
-        miss_t = [t for t in want_topics[:6] if t not in got]
+                if tf not in lpages:
+                    continue
+                if c and c["id"] in cat_ids and len(own) < 4 and tf not in own:
+                    own.append(tf)
+                else:
+                    by_subj.setdefault(sid, []).append(tf)
+        queues = [list(by_subj[sid]) for sid in subj_ids if by_subj.get(sid)]
+        mixed = []
+        while any(queues):
+            for q in queues:
+                if q:
+                    mixed.append(q.pop(0))
+        want_topics = (own + [t for t in mixed if t not in own])[:9]
+        miss_t = [t for t in want_topics if t not in got]
         if miss_t:
             errors.append(f"{f}: Exam->Topic links missing {miss_t}")
+        # Exam -> strategy / PYQ: every one the exam config names is linked
+        for slug in (e.get("strategy") or []):
+            want = f"strategy-{slug}.html"
+            if (ROOT / want).exists() and f'href="{want}"' not in h:
+                errors.append(f"{f}: strategy link missing {want}")
+        for pid in (e.get("pyq") or []):
+            want = f"pyq/{pid}/index.html"
+            if (ROOT / want).exists() and f'href="{want}"' not in h:
+                errors.append(f"{f}: PYQ link missing {want}")
 
     # --- Cluster: lane page must link its subject, its lane and its siblings --
     for r in [x for x in landing_pages if x["type"] == "cluster"]:

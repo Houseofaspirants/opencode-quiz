@@ -1106,6 +1106,8 @@ if site.get("url"):
             # hubs: the URL only ships when the file really exists on disk.
             for page in cm.get("pages", []):
                 u, f = str(page.get("url", "")), str(page.get("file", ""))
+                if page.get("noindex"):
+                    continue               # crawlable, never indexed
                 if u.startswith(base) and os.path.exists(os.path.join(ROOT, f)):
                     urls.append({"loc": u, "p": "0.7"})
                 else:
@@ -1146,6 +1148,14 @@ if site.get("url"):
                          "p": {"topic": "0.8", "exam": "0.85",
                                "cluster": "0.7"}[_kind[0]]})
 
+    # data/noindex.json: crawlable pages kept out of the index stay out of
+    # the sitemap too (a sitemap URL that says noindex is a mixed signal).
+    noindex_path = os.path.join(DATA_DIR, "noindex.json")
+    if os.path.exists(noindex_path):
+        skip = {f"{base}/{str(f)[:-5]}"
+                for f in read_json(noindex_path).get("pages", [])
+                if str(f).endswith(".html")}
+        urls = [x for x in urls if x["loc"] not in skip]
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',

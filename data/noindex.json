@@ -1,0 +1,9 @@
+{
+  "$note": "Pages that stay crawlable (robots.txt allows them) but are kept OUT of Google's index and OUT of sitemap.xml: they only show something after a student acts (a score, saved questions, a search query), so to a crawler they are empty pages. Read by build_content.py (robots meta), build_index.py + build-index.mjs (sitemap filter) and seo_check.py (gate).",
+  "pages": [
+    "result.html",
+    "progress.html",
+    "bookmarks.html",
+    "search.html"
+  ]
+}
