@@ -1,0 +1,20 @@
+{
+  "_note": "Gurmukhi names for Punjabi quiz sets whose JSON 'topic' is in English. Keys are lowercase English names without ' - Part N' or 'NN MCQs'. 'words' translates titles word by word (months, Current Affairs) so new monthly sets get Gurmukhi titles automatically. A Punjabi JSON whose 'topic' is already Gurmukhi needs nothing here.",
+  "topics": {
+    "sikhism (sikh dharam)": "ਸਿੱਖ ਧਰਮ",
+    "sikhism": "ਸਿੱਖ ਧਰਮ",
+    "five year plans": "ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ",
+    "fundamentals of computers": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ",
+    "fundamentals of computer": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ",
+    "ms word (microsoft word)": "ਐਮ.ਐਸ. ਵਰਡ",
+    "ms word": "ਐਮ.ਐਸ. ਵਰਡ",
+    "mobile phone": "ਮੋਬਾਈਲ ਫ਼ੋਨ",
+    "number series": "ਨੰਬਰ ਸੀਰੀਜ਼"
+  },
+  "words": {
+    "current affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
+    "january": "ਜਨਵਰੀ", "february": "ਫ਼ਰਵਰੀ", "march": "ਮਾਰਚ", "april": "ਅਪ੍ਰੈਲ",
+    "may": "ਮਈ", "june": "ਜੂਨ", "july": "ਜੁਲਾਈ", "august": "ਅਗਸਤ",
+    "september": "ਸਤੰਬਰ", "october": "ਅਕਤੂਬਰ", "november": "ਨਵੰਬਰ", "december": "ਦਸੰਬਰ"
+  }
+}

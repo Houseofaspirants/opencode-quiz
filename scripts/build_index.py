@@ -238,6 +238,37 @@ def variant_title(data, stem_id, part, set_topic):
     return name
 
 
+# Punjabi titles: a Punjabi set whose JSON "topic" is English gets its
+# Gurmukhi name from data/pa-titles.json (whole names, then word by word -
+# months and "Current Affairs" - so new monthly sets need nothing).
+try:
+    with open(os.path.join(DATA_DIR, "pa-titles.json"), encoding="utf-8") as _fh:
+        _PA = json.load(_fh)
+except (OSError, ValueError):
+    _PA = {}
+_PA_TOPICS = {k.lower(): v for k, v in (_PA.get("topics") or {}).items()}
+_PA_WORDS = sorted(((k.lower(), v) for k, v in (_PA.get("words") or {}).items()),
+                   key=lambda kv: -len(kv[0]))
+_GURMUKHI = re.compile("[\u0A00-\u0A7F]")
+
+
+def pa_title(name):
+    """The Gurmukhi form of a Punjabi set's title, or the name unchanged."""
+    if not name or _GURMUKHI.search(name):
+        return name
+    m = re.match(r"^(.*?)(\s*-\s*Part\s*\d+)?\s*$", name)
+    base, suffix = m.group(1), (m.group(2) or "").strip()
+    key = re.sub(r"\s+", " ", re.sub(r"\s*\d+\s*mcqs?\s*$", "", base.strip(), flags=re.I)).strip().lower()
+    out = _PA_TOPICS.get(key)
+    if not out:
+        out = key
+        for word, pa in _PA_WORDS:
+            out = re.sub(r"(?<![a-z])" + re.escape(word) + r"(?![a-z])", pa, out)
+        if re.search("[a-z]", out):
+            return name
+    return f"{out} {suffix}" if suffix else out
+
+
 def answer_index(qd, opts):
     """The option a question marks correct, resolved the way the site does it:
     an int index, a letter, or the option's own text."""
@@ -718,6 +749,11 @@ def resolve_language_pairs(items):
         it["titles"] = {m["lang"]: variant_title(m["data"], m["base"],
                                                  m["part"], m["topic"])
                         for m in members}
+        if "pa" in it["titles"]:
+            it["titles"]["pa"] = pa_title(it["titles"]["pa"])
+            if not _GURMUKHI.search(it["titles"]["pa"]):
+                warn(f"Punjabi title not in Gurmukhi: {it['titles']['pa']!r} "
+                     "- add its name to data/pa-titles.json")
         it["counts"] = {m["lang"]: len(m["questions"]) for m in members}
         out.append(it)
     return out

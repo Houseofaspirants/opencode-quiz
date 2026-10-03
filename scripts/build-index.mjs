@@ -228,6 +228,34 @@ function questionsOf(data) {
   return [];
 }
 
+// Punjabi titles: twin of pa_title() in build_index.py.
+const PA = (() => {
+  try { return JSON.parse(fs.readFileSync(path.join(DATA_DIR, "pa-titles.json"), "utf8")); }
+  catch { return {}; }
+})();
+const PA_TOPICS = Object.fromEntries(Object.entries(PA.topics || {}).map(([k, v]) => [k.toLowerCase(), v]));
+const PA_WORDS = Object.entries(PA.words || {}).map(([k, v]) => [k.toLowerCase(), v])
+  .sort((a, b) => b[0].length - a[0].length);
+const GURMUKHI = /[\u0A00-\u0A7F]/;
+const reEsc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+function paTitle(name) {
+  if (!name || GURMUKHI.test(name)) return name;
+  const m = name.match(/^(.*?)(\s*-\s*Part\s*\d+)?\s*$/);
+  const base = m[1];
+  const suffix = (m[2] || "").trim();
+  const key = base.trim().replace(/\s*\d+\s*mcqs?\s*$/i, "").replace(/\s+/g, " ").trim().toLowerCase();
+  let out = PA_TOPICS[key];
+  if (!out) {
+    out = key;
+    for (const [word, pa] of PA_WORDS) {
+      out = out.replace(new RegExp(`(?<![a-z])${reEsc(word)}(?![a-z])`, "g"), pa);
+    }
+    if (/[a-z]/.test(out)) return name;
+  }
+  return suffix ? `${out} ${suffix}` : out;
+}
+
 /** The title one translation of a set carries - the rule the record loop has
  *  always used for the primary file, applied to every translation too. */
 function variantTitle(data, stemId, part, setTopic) {
@@ -637,6 +665,12 @@ function resolveLanguagePairs(items) {
     for (const m of members) {
       titles[m.lang] = variantTitle(m.data, m.base, m.part, m.topic);
       counts[m.lang] = m.questions.length;
+    }
+    if ("pa" in titles) {
+      titles.pa = paTitle(titles.pa);
+      if (!GURMUKHI.test(titles.pa)) {
+        warn(`Punjabi title not in Gurmukhi: '${titles.pa}' - add its name to data/pa-titles.json`);
+      }
     }
     out.push({
       ...primary.item,

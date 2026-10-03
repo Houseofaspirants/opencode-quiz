@@ -230,7 +230,9 @@ def main():
         if not card:
             continue
         name = out_name(page["file"])
-        key = hashlib.sha1(json.dumps([VERSION, HAS_GURMUKHI, card],
+        # the card's own Gurmukhi flag (not the font's presence) keys it, so
+        # adding the font redraws only the cards that print Gurmukhi
+        key = hashlib.sha1(json.dumps([VERSION, bool(card[3]), card],
                                       ensure_ascii=False).encode()).hexdigest()[:16]
         new[name] = key
         if old.get(name) == key and (OUT / name).exists():
