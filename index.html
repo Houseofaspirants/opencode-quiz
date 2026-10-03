@@ -85,6 +85,13 @@
         },
         "areaServed": { "@type": "Country", "name": "India" },
         "email": "houseofaspirants.edu@gmail.com",
+        "founder": {
+          "@type": "Person",
+          "name": "Gurpreet Singh",
+          "url": "https://houseofaspirants.in/author-gurpreet-singh",
+          "jobTitle": "Founder, House of Aspirants",
+          "award": "Rank 2, Punjab Police Sub-Inspector recruitment examination (713/800 marks)"
+        },
         "sameAs": [
           "https://t.me/HouseOfAspirant",
           "https://instagram.com/si.gurpreetsingh.pp",
@@ -264,6 +271,18 @@
       <span class="lr-text">FREE LIVE Guidance <b>Every Sunday 8 PM</b></span>
       <a class="btn btn-sm btn-primary" href="live-sessions.html">Join Now</a>
     </aside>
+
+    <!-- ==================================================== MY EXAM
+         One question for a new visitor - which exam? - and from then on the
+         home page opens on that exam's syllabus, papers and quizzes.
+         core.js (initMyExam) fills it from data/exams.json; the choice lives
+         in this browser only. Without JavaScript the section stays hidden. -->
+    <section class="section" style="padding-top:0" id="myExam" data-my-exam hidden
+             aria-labelledby="myExamTitle">
+      <div class="container">
+        <div class="card card-pad my-exam" data-my-exam-body></div>
+      </div>
+    </section>
 
     <!-- ==================================================== TRUST SECTION
          Sits immediately below the hero, so the first thing a new visitor

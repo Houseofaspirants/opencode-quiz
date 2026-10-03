@@ -3980,3 +3980,12 @@ body.rbv-open { overflow: hidden; }
 .qb-ans summary{cursor:pointer;color:var(--primary,#4f46e5);font-weight:600;min-height:44px;display:flex;align-items:center}
 .qb-ans p{margin:6px 0 0}
 @media print{.qb-ans{display:block}.qb-ans summary{display:none}}
+
+/* My exam (home): exam choices as tappable pills, "Change" as a quiet link */
+.my-exam .chip-wrap{display:flex;flex-wrap:wrap;gap:10px}
+.my-exam [data-pick],.my-exam a.chip-filter{display:inline-flex;align-items:center;min-height:44px;
+  padding:8px 16px;border:1.5px solid var(--border);border-radius:999px;background:var(--surface);
+  color:var(--text);font:inherit;font-weight:600;cursor:pointer;text-decoration:none}
+.my-exam [data-pick]:hover,.my-exam [data-pick]:focus-visible{border-color:#4f46e5;color:#4f46e5}
+.my-exam [data-my-exam-change]{background:none;border:0;color:var(--muted);text-decoration:underline;
+  min-height:44px;padding:0 8px;cursor:pointer;font:inherit}

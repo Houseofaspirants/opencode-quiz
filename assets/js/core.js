@@ -2202,6 +2202,107 @@ const HOA = (() => {
      the first second (students often never scroll). The × hides it for the
      rest of the visit. Home has its own ribbon; a quiz attempt is never
      interrupted. */
+  /* --------------------------------------------------- MY EXAM ---------
+     One question - which exam are you preparing for? - stored in this
+     browser (hoa:myExam). The home page then opens on that exam's syllabus,
+     previous papers and quizzes; every exam page offers "Make this my exam".
+     Exam ids, names, strategy guides and PYQ folders come from
+     data/exams.json, so a new exam needs no code. */
+  const MY_EXAM_PICKS = [
+    "punjab-police-constable", "punjab-police-head-constable",
+    "punjab-police-sub-inspector", "punjab-police-asi", "patwari",
+    "clerk", "psssb", "excise-inspector", "naib-tehsildar", "punjab-pcs",
+  ];
+  let examsCache = null;
+  async function loadExams() {
+    if (examsCache) return examsCache;
+    try {
+      const res = await fetch("data/exams.json", { cache: "force-cache" });
+      examsCache = (await res.json()).exams || [];
+    } catch {
+      examsCache = [];
+    }
+    return examsCache;
+  }
+
+  async function initMyExam() {
+    const home = document.querySelector("[data-my-exam]");
+    const examPage = /\/exam-([a-z0-9-]+)(\.html)?$/.exec(location.pathname);
+    if (!home && !examPage) return;
+    const exams = await loadExams();
+    if (!exams.length) return;
+    const byId = Object.fromEntries(exams.map((e) => [e.id, e]));
+    const pa = getLang() === "pa";
+    const T = pa
+      ? { ask: "ਤੁਸੀਂ ਕਿਹੜੇ exam ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ?", hint: "ਇੱਕ ਚੁਣੋ, ਫਿਰ ਇਹ ਪੰਨਾ ਸਿੱਧਾ ਤੁਹਾਡੇ exam ਦੀ ਤਿਆਰੀ ਵਿਖਾਵੇਗਾ।",
+          mine: "ਤੁਹਾਡਾ exam", syl: "ਸਿਲੇਬਸ ਅਤੇ ਪੈਟਰਨ", pyq: "ਪਿਛਲੇ ਪੇਪਰ", quiz: "ਪ੍ਰੈਕਟਿਸ ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ",
+          change: "ਬਦਲੋ", other: "ਹੋਰ exams →", set: "⭐ ਇਸਨੂੰ ਮੇਰਾ exam ਬਣਾਓ", isSet: "✓ ਇਹ ਤੁਹਾਡਾ exam ਹੈ" }
+      : { ask: "Which exam are you preparing for?", hint: "Pick one and this page opens on your exam's preparation every time.",
+          mine: "Your exam", syl: "Syllabus & pattern", pyq: "Previous papers", quiz: "Practice quizzes & notes",
+          change: "Change", other: "Other exams →", set: "⭐ Make this my exam", isSet: "✓ This is your exam" };
+
+    const choose = (id) => {
+      db.set("myExam", id);
+      track("exam_select", { exam_id: id, page: location.pathname });
+    };
+
+    if (home) {
+      const body = home.querySelector("[data-my-exam-body]");
+      const render = () => {
+        const e = byId[db.get("myExam") || ""];
+        if (e) {
+          const links = [];
+          const st = (e.strategy || [])[0];
+          if (st) links.push([`strategy-${st}.html`, "📘 " + T.syl]);
+          const pq = (e.pyq || [])[0];
+          if (pq) links.push([`pyq/${pq}/index.html`, "📄 " + T.pyq]);
+          links.push([`exam-${e.id}.html`, "🧠 " + T.quiz]);
+          body.innerHTML = `
+            <span class="eyebrow">${esc(T.mine)}</span>
+            <h2 id="myExamTitle" style="margin:4px 0 12px">${esc(e.name)}</h2>
+            <div class="btn-row">
+              ${links.map(([h, l], i) => `<a class="btn ${i === 0 ? "btn-primary" : "btn-soft"}" href="${esc(h)}">${esc(l)}</a>`).join("")}
+              <button type="button" data-my-exam-change>${esc(T.change)}</button>
+            </div>`;
+          body.querySelector("[data-my-exam-change]").addEventListener("click", () => {
+            db.remove("myExam");
+            render();
+          });
+        } else {
+          const picks = MY_EXAM_PICKS.map((id) => byId[id]).filter(Boolean);
+          body.innerHTML = `
+            <h2 id="myExamTitle" style="margin:0 0 6px">${esc(T.ask)}</h2>
+            <p class="muted" style="margin:0 0 12px">${esc(T.hint)}</p>
+            <div class="chip-wrap">
+              ${picks.map((x) => `<button type="button" class="chip-filter" data-pick="${esc(x.id)}">${esc(x.name)}</button>`).join("")}
+              <a class="chip-filter" href="punjab-exams.html">${esc(T.other)}</a>
+            </div>`;
+          body.querySelectorAll("[data-pick]").forEach((b) =>
+            b.addEventListener("click", () => { choose(b.getAttribute("data-pick") || ""); render(); }));
+        }
+        home.hidden = false;
+      };
+      render();
+    }
+
+    if (examPage && byId[examPage[1]]) {
+      const id = examPage[1];
+      const hero = document.querySelector(".page-hero .container");
+      if (!hero) return;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "btn btn-soft btn-sm mt-2";
+      const paint = () => {
+        const mine = db.get("myExam") === id;
+        btn.textContent = mine ? T.isSet : T.set;
+        btn.disabled = mine;
+      };
+      btn.addEventListener("click", () => { choose(id); paint(); toast(T.isSet); });
+      paint();
+      hero.appendChild(btn);
+    }
+  }
+
   function initLiveFloat() {
     const page = document.body.dataset.page || "";
     // Result pages carry the full card right under the score instead.
@@ -2317,6 +2418,7 @@ const HOA = (() => {
     initTheme();
     initLang();
     initLiveHeadline();
+    initMyExam();          // home: which exam? / exam pages: make it mine
     initLiveCard();
     initLiveFloat();
     initDownloadNudge();

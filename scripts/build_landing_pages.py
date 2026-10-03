@@ -296,6 +296,43 @@ def faq_ld(url, faqs, faq_id=None):
     }
 
 
+_authors = read_json(os.path.join(ROOT, "data", "authors.json")).get("authors", [])
+CURATOR = next((a for a in _authors if a.get("id") == "gurpreet-singh"), None)
+CURATOR_URL = f"{BASE}/author-gurpreet-singh"
+
+
+def curator_ld():
+    """The person who curates the question sets and exam pages (E-E-A-T)."""
+    if not CURATOR:
+        return None
+    node = {"@type": "Person", "name": CURATOR["name"], "url": CURATOR_URL,
+            "jobTitle": CURATOR.get("role", "")}
+    if CURATOR.get("award"):
+        node["award"] = CURATOR["award"]
+    return node
+
+
+def curator_box(lang="en"):
+    """A one-line trust strip: who curates this page and why to trust him."""
+    if not CURATOR:
+        return ""
+    if lang == "pa":
+        line = ("ਤਿਆਰ ਕਰਤਾ: <a class=\"ilink\" href=\"author-gurpreet-singh.html\">"
+                f"{esc(CURATOR['name'])}</a> · Punjab Police SI, Rank 2 (713/800) · "
+                "House of Aspirants ਦੇ ਸੰਸਥਾਪਕ")
+        more = "ਕਹਾਣੀ ਪੜ੍ਹੋ"
+    else:
+        line = ("Curated by <a class=\"ilink\" href=\"author-gurpreet-singh.html\">"
+                f"{esc(CURATOR['name'])}</a> · Punjab Police SI, Rank 2 (713/800) · "
+                "Founder, House of Aspirants")
+        more = "Read his story"
+    return section_wrap(
+        '        <div class="card card-pad curator-box" data-landing="curator">\n'
+        f'          <p class="text-sm" style="margin:0">{line} · '
+        f'<a class="ilink" href="about.html">{more} →</a></p>\n'
+        '        </div>', pad_top=False)
+
+
 def webpage_ld(url, name, description, crumb_id, has_part=None):
     node = {
         "@type": "WebPage",
@@ -310,6 +347,8 @@ def webpage_ld(url, name, description, crumb_id, has_part=None):
     }
     if has_part:
         node["hasPart"] = has_part
+    if curator_ld():
+        node["editor"] = curator_ld()
     return node
 
 
@@ -1286,6 +1325,7 @@ def build_topic(s, c, t):
         section_head("Topic introduction", f"What {name} covers",
                      "The shape of the set before you start it.")
         + "\n" + intro_html))
+    body.append(curator_box())
     if qs:
         body.append(section_wrap(
             section_head("Question bank", f"{name}: all {len(qs)} questions",
@@ -1552,6 +1592,7 @@ def build_topic_pa(s, c, t):
 
     body = [section_wrap(section_head("ਜਾਣ-ਪਛਾਣ", f"{name} ਬਾਰੇ",
                                       "ਸੈੱਟ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ।") + "\n" + intro_html)]
+    body.append(curator_box("pa"))
     body.append(section_wrap(
         section_head("ਸਵਾਲ ਬੈਂਕ", f"{name}: ਸਾਰੇ {count} ਸਵਾਲ",
                      "ਹਰ ਸਵਾਲ ਦਾ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ ਉਸਦੇ ਹੇਠਾਂ ਹੈ।")
@@ -1771,6 +1812,7 @@ def build_quiz(s, c, t):
     link_record(filename, "quiz", subject_file(sid), "subject", s["name"])
     link_record(filename, "quiz", topic_file(sid, tid), "topic", f"{name} guide")
 
+    bottom.append(curator_box())
     bottom.append(faq_section("Questions", f"{name} quiz - common questions",
                               "How the portal runs this set.", faqs))
 
@@ -1974,6 +2016,7 @@ def build_exam(e):
         section_head("About this exam", f"Preparing for {name}",
                      "Why this paper is on the portal and what to run for it.")
         + "\n" + intro_html))
+    body.append(curator_box())
     body.append(section_wrap(
         section_head("Start here", f"What to study for {name}",
                      ("Subjects first - every one opens its own landing page."

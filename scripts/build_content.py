@@ -1801,6 +1801,10 @@ def author_jsonld(rec):
                 "url": f"{DOMAIN}/{author_profile_file(a)[:-5]}"}
         if a.get("role"):
             node["jobTitle"] = str(a["role"])
+        if a.get("award"):
+            node["award"] = str(a["award"])
+        if a.get("sameAs"):
+            node["sameAs"] = [str(x) for x in a["sameAs"]]
         return node
     return {
         "@type": "Organization",
@@ -6662,6 +6666,10 @@ def author_page_html(a, records):
 
     person = {"@type": "Person", "@id": f"{url}#person", "name": name,
               "url": url, "jobTitle": role, "description": bio}
+    if a.get("award"):
+        person["award"] = str(a["award"])
+    if a.get("sameAs"):
+        person["sameAs"] = [str(x) for x in a["sameAs"]]
     if topics:
         person["knowsAbout"] = topics
     title = f"{name} | House of Aspirants"
