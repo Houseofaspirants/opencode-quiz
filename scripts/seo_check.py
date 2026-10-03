@@ -867,9 +867,9 @@ if CONTENT_MANIFEST.exists():
                               f"page instead of the file's first page")
             thumb = str(d["thumbnail"])
             if thumb and not re.fullmatch(
-                    r"assets/img/pdf/[0-9a-f]{12}\.(jpg|png)", thumb):
+                    r"assets/img/pdf/[0-9a-f]{12}\.(webp|jpg|png)", thumb):
                 errors.append(f"{rel}: thumbnail {thumb!r} must be "
-                              f"assets/img/pdf/<hash>.jpg or .png")
+                              f"assets/img/pdf/<hash>.webp, .jpg or .png")
             elif thumb and not (ROOT / thumb).is_file():
                 errors.append(f"{rel}: thumbnail {thumb} is missing - run node "
                               f"scripts/build_content_manifest.ts")

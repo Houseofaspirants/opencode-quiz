@@ -66,7 +66,7 @@ type Drop = {
   modified: string;    // ISO date its bytes last changed (stamped once)
   pages: number;       // page count read out of the file (0 = the file proves none)
   summary: string;     // <=300 chars read out of the file ("" = nothing readable)
-  thumbnail: string;   // "assets/img/pdf/<hash>.jpg" when the preview exists, else ""
+  thumbnail: string;   // "assets/img/pdf/<hash>.webp" (or .jpg/.png) when the preview exists, else ""
   thumbW: number;      // preview width in px (0 without a preview)
   thumbH: number;      // preview height in px (0 without a preview)
 };
@@ -923,11 +923,27 @@ const isReadable = (s: string): boolean => {
 
 const PREVIEW_DIR = path.join(ROOT, "assets", "img", "pdf");
 const PREVIEW_EDGE = 600;                     // px on the long edge of page one
-const PREVIEW_NAME = /^[0-9a-f]{12}\.(jpg|png)$/;
+const PREVIEW_NAME = /^[0-9a-f]{12}\.(webp|jpg|png)$/;
 let previewsMade = 0;
 
-/** PNG IHDR / JPEG SOF - the two formats a preview can be written as. */
+/** WebP (VP8 / VP8L / VP8X), PNG IHDR or JPEG SOF - the formats a preview
+ *  can be stored as. */
 const imageSize = (buf: Buffer): { width: number; height: number } => {
+  if (buf.length > 30 && buf.toString("latin1", 0, 4) === "RIFF"
+      && buf.toString("latin1", 8, 12) === "WEBP") {
+    const kind = buf.toString("latin1", 12, 16);
+    if (kind === "VP8X") {
+      return { width: 1 + buf.readUIntLE(24, 3), height: 1 + buf.readUIntLE(27, 3) };
+    }
+    if (kind === "VP8L") {
+      const b = buf.readUInt32LE(21);
+      return { width: 1 + (b & 0x3fff), height: 1 + ((b >> 14) & 0x3fff) };
+    }
+    if (kind === "VP8 ") {
+      return { width: buf.readUInt16LE(26) & 0x3fff, height: buf.readUInt16LE(28) & 0x3fff };
+    }
+    return { width: 0, height: 0 };
+  }
   if (buf.length > 24 && buf.toString("latin1", 0, 8) === "\x89PNG\r\n\u001a\n") {
     return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
   }
@@ -964,6 +980,31 @@ const rasterize = (src: string, png: string, jpg: string): string => {
   return "";
 };
 
+/** A new preview is drawn as JPEG/PNG (sips / Quick Look cannot write WebP)
+ *  and re-encoded as WebP when this machine can: about 60% fewer bytes for the
+ *  same picture. cwebp first, then Python + Pillow; with neither, the JPEG
+ *  stays (scripts/previews_to_webp.py converts it later). */
+const toWebp = (img: string): string => {
+  const out = img.replace(/\.(jpg|png)$/, ".webp");
+  const tries: [string, string[]][] = [
+    ["cwebp", ["-quiet", "-q", "72", "-m", "6", img, "-o", out]],
+    ["python3", ["-c", "import sys;from PIL import Image;"
+      + "Image.open(sys.argv[1]).convert('RGB').save(sys.argv[2],'WEBP',quality=72,method=6)",
+      img, out]],
+  ];
+  for (const [cmd, args] of tries) {
+    try {
+      execFileSync(cmd, args, { stdio: "ignore" });
+      if (fs.existsSync(out) && imageSize(fs.readFileSync(out)).width) {
+        fs.unlinkSync(img);
+        return out;
+      }
+    } catch { /* tool not on this machine */ }
+    try { if (fs.existsSync(out)) fs.unlinkSync(out); } catch { /* ignore */ }
+  }
+  return img;
+};
+
 /**
  * The preview of one PDF: read when the file already draws it (a preview is
  * generated once and committed, so a machine with no rasteriser reproduces the
@@ -972,7 +1013,7 @@ const rasterize = (src: string, png: string, jpg: string): string => {
 const ensurePreview = (file: string, digest: string, allowCreate: boolean):
   { path: string; width: number; height: number } => {
   const stem = digest.slice(0, 12);
-  for (const ext of ["jpg", "png"]) {
+  for (const ext of ["webp", "jpg", "png"]) {
     const full = path.join(PREVIEW_DIR, `${stem}.${ext}`);
     if (fs.existsSync(full)) {
       const size = imageSize(fs.readFileSync(full));
@@ -983,9 +1024,10 @@ const ensurePreview = (file: string, digest: string, allowCreate: boolean):
   }
   if (!allowCreate) return { path: "", width: 0, height: 0 };
   fs.mkdirSync(PREVIEW_DIR, { recursive: true });
-  const made = rasterize(file, path.join(PREVIEW_DIR, `${stem}.png`),
+  let made = rasterize(file, path.join(PREVIEW_DIR, `${stem}.png`),
                          path.join(PREVIEW_DIR, `${stem}.jpg`));
   if (!made) return { path: "", width: 0, height: 0 };
+  made = toWebp(made);
   const size = imageSize(fs.readFileSync(made));
   if (!size.width || !size.height) { fs.unlinkSync(made); return { path: "", width: 0, height: 0 } };
   previewsMade += 1;
