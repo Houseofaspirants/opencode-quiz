@@ -170,7 +170,7 @@ KNOWN_TYPES = {
     "ContactPage", "CollectionPage", "BreadcrumbList", "ListItem", "SearchAction",
     "EntryPoint", "ImageObject", "Quiz", "Thing", "Country", "ContactPoint", "ItemList",
     "Article", "FAQPage", "Question", "Answer", "SpeakableSpecification",
-    "Person", "LearningResource", "Event", "VirtualLocation",
+    "Person", "LearningResource", "Event", "VirtualLocation", "AlignmentObject",
     # A generated PDF page declares its file: DataDownload is the download,
     # MediaObject is the type that owns contentUrl.
     "DataDownload", "MediaObject",
@@ -588,14 +588,13 @@ if 'href="subject.html">' in core:
 # CollectionPage's ItemList on the client, so seo_check can only assert that
 # the required pieces stay wired into those builders.
 quiz_js = (ROOT / "assets/js/quiz.js").read_text(encoding="utf-8")
-for marker in (
-    '"@type": "Question"',                    # Question nodes exist
-    'eduQuestionType: "Flashcard"',           # Google-required fixed value
-    'acceptedAnswer: { "@type": "Answer"',    # Google-required answer
-    "{ hasPart: flashcards }",                # Google-required Quiz.hasPart
-):
-    if marker not in quiz_js:
-        errors.append(f"quiz.js: Education Q&A builder missing {marker!r}")
+# Education Q&A requires the questions to be immediately visible on the page.
+# The quiz screen shows one question at a time during an attempt, so its
+# runtime graph must NOT carry flashcards - the topic page owns them.
+for marker in ('eduQuestionType: "Flashcard"', "hasPart: flashcards"):
+    if marker in quiz_js:
+        errors.append(f"quiz.js: runtime Quiz must not carry flashcards ({marker!r}) - "
+                      f"its questions are not visible on the page")
 subj_js = (ROOT / "assets/js/subject.js").read_text(encoding="utf-8")
 for marker in ('"@type": "ItemList"', "`${canonical}#list`"):
     if marker not in subj_js:
@@ -1857,6 +1856,25 @@ if landing_pages:
             errors.append(f"{f}: Topic->Quiz link missing (quiz-{sid}-{tid}.html)")
         if f"subject-{sid}.html" not in links_of.get(f, []):
             errors.append(f"{f}: Topic->Subject link missing")
+        # Education Q&A: the Quiz node mirrors the visible question bank -
+        # one flashcard per printed question that shows its answer.
+        quiz_nodes = [n for n in ld_nodes(h) if "Quiz" in ld_type(n)]
+        visible = h.count('<details class="qb-ans">')
+        if visible and not quiz_nodes:
+            errors.append(f"{f}: question bank without its Quiz (Education Q&A) schema")
+        for qn in quiz_nodes:
+            have = qn.get("hasPart") or []
+            if len(have) != visible:
+                errors.append(f"{f}: Quiz.hasPart has {len(have)} flashcards, the page "
+                              f"shows {visible} answered questions")
+            for node in have:
+                if node.get("eduQuestionType") != "Flashcard":
+                    errors.append(f"{f}: hasPart entry missing eduQuestionType: Flashcard")
+                    break
+                if html_mod.escape(str(node.get("text", "")), quote=True) not in h:
+                    errors.append(f"{f}: flashcard text not visible on the page: "
+                                  f"{str(node.get('text', ''))[:50]!r}")
+                    break
 
     # --- Quiz page: metadata facts, share, prev/next, Quiz schema, seed -----
     for r in [x for x in landing_pages if x["type"] == "quiz"]:
@@ -1893,34 +1911,13 @@ if landing_pages:
         # static JSON-LD owns the page: the runtime placeholder stays blank
         if not re.search(r'<script type="application/ld\+json" id="ldDynamic">\s*</script>', h):
             errors.append(f"{f}: ldDynamic placeholder must stay blank (static graph owns schema)")
-        # Quiz schema hasPart must match the question file exactly
-        quiz_nodes = [n for n in ld_nodes(h) if "Quiz" in ld_type(n)]
-        if not quiz_nodes:
-            errors.append(f"{f}: Quiz schema node missing")
-        else:
-            have = quiz_nodes[0].get("hasPart") or []
-            rec = topic_by_key.get((sid, tid))
-            if not rec:
-                errors.append(f"{f}: {sid}/{tid} not found in data/index.json")
-            else:
-                qf = ROOT / rec["file"]
-                try:
-                    raw = json.loads(qf.read_text(encoding="utf-8"))
-                    n_file = len(raw) if isinstance(raw, list) else len(raw.get("questions", []))
-                except (OSError, ValueError):
-                    n_file = -1
-                if n_file >= 0 and len(have) != n_file:
-                    errors.append(f"{f}: Quiz.hasPart has {len(have)} questions, "
-                                  f"{rec['file']} holds {n_file}")
-                if rec.get("count") and len(have) != rec["count"]:
-                    errors.append(f"{f}: Quiz.hasPart {len(have)} != index.json count {rec['count']}")
-                m = re.search(r"<b>Question count:</b>\s*(\d+)", h)
-                if m and int(m.group(1)) != len(have):
-                    errors.append(f"{f}: visible question count {m.group(1)} != hasPart {len(have)}")
-            for node in have[:3]:
-                if node.get("eduQuestionType") != "Flashcard":
-                    errors.append(f"{f}: hasPart entry missing eduQuestionType: Flashcard")
-                    break
+        # Education Q&A needs the questions visible on the page; a quiz page
+        # shows them only during the attempt, so it must not carry them as
+        # schema (they live on the topic page, see below).
+        for n in ld_nodes(h):
+            if "Quiz" in ld_type(n) and n.get("hasPart"):
+                errors.append(f"{f}: Quiz.hasPart on a quiz page - its questions are "
+                              f"not visible; the topic page owns the Quiz schema")
 
     # --- Exam page: Exam -> Subject (configured) and Exam -> Topic (derived)
     for r in [x for x in landing_pages if x["type"] == "exam"]:

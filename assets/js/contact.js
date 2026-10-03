@@ -25,7 +25,7 @@
       `Name: ${name}\nEmail: ${email}\nTopic: ${topic}\n\n${msg}`
     );
     // Primary path: hand off to the visitor's mail client (works with zero backend).
-    window.location.href = `mailto:contact@houseofaspirants.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:houseofaspirants.edu@gmail.com?subject=${subject}&body=${body}`;
     HOA.toast("Opening your mail app… you can also DM us on Telegram 📨", 3200);
   });
 })();

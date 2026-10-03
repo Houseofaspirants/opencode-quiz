@@ -1376,12 +1376,34 @@ def build_topic(s, c, t):
         crumbs.append((cat_name, category_file(sid, c["id"]), u(category_file(sid, c["id"]))))
     crumbs.append((name, None, None))
 
-    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+    graph = [
         webpage_ld(url, h1, description, f"{url}#breadcrumb",
-                   has_part=[{"@id": f"{url}#faq"}]),
+                   has_part=([{"@id": f"{url}#quiz"}] if cards_nodes else [])
+                   + [{"@id": f"{url}#faq"}]),
         crumb_ld(url, [(l, i) for l, _, i in crumbs]),
-        faq_ld(url, faqs),
-    ]})]
+    ]
+    if cards_nodes:
+        # Education Q&A: every question below is printed on this page (the
+        # question bank), so the flashcards mirror visible content exactly.
+        quiz_node = {
+            "@type": "Quiz",
+            "@id": f"{url}#quiz",
+            "name": f"{name} MCQs",
+            "url": url,
+            "description": description,
+            "about": {"@type": "Thing", "name": cat_name or s["name"]},
+            "inLanguage": "en-IN",
+            "isAccessibleForFree": True,
+            "provider": {"@id": f"{BASE}/#organization"},
+            "hasPart": cards_nodes,
+        }
+        if ex_list:
+            quiz_node["educationalAlignment"] = [
+                {"@type": "AlignmentObject", "alignmentType": "educationalSubject",
+                 "targetName": e["name"]} for e in ex_list[:6]]
+        graph.append(quiz_node)
+    graph.append(faq_ld(url, faqs))
+    ld = [ld_script({"@context": "https://schema.org", "@graph": graph})]
 
     html = render_page(
         title=title, description=description, kw=kw, url=url, ld_blocks=ld,
@@ -1393,7 +1415,7 @@ def build_topic(s, c, t):
 
     write_page(filename, html)
     register(filename, url, "topic", key, title, description, h1, words(intro_html),
-             {"WebPage", "BreadcrumbList", "FAQPage"})
+             {"WebPage", "BreadcrumbList", "FAQPage"} | ({"Quiz"} if cards_nodes else set()))
     info(f"topic    {filename}  {count}q  intro={words(intro_html)}w  faq={len(faqs)}")
     return filename
 
@@ -1735,27 +1757,15 @@ def build_quiz(s, c, t):
     bottom.append(faq_section("Questions", f"{name} quiz - common questions",
                               "How the portal runs this set.", faqs))
 
-    # ---- static JSON-LD (Education Q&A) -------------------------------------
-    minutes = max(1, round(count * q_seconds(s['id']) / 60)) if count else 0
-    quiz_node = {
-        "@type": "Quiz",
-        "@id": f"{url}#quiz",
-        "name": f"{name} Quiz",
-        "url": url,
-        "description": description,
-        "about": {"@type": "Thing", "name": s["name"]},
-        "inLanguage": "en-IN",
-        "isAccessibleForFree": True,
-        "provider": {"@id": f"{BASE}/#organization"},
-        "hasPart": cards_nodes,
-    }
-    if minutes:
-        quiz_node["timeRequired"] = f"PT{minutes}M"
+    # ---- static JSON-LD ---------------------------------------------------
+    # No Quiz / Education Q&A node here: Google requires the questions to be
+    # "immediately visible" on the page, and this page shows them one at a
+    # time only after the attempt starts. The Quiz node lives on the topic
+    # page, which prints every question (build_topic -> question_bank_html).
     graph = [
         webpage_ld(url, h1, description, f"{url}#breadcrumb",
-                   has_part=[{"@id": f"{url}#quiz"}, {"@id": f"{url}#faq"}]),
+                   has_part=[{"@id": f"{url}#faq"}]),
         crumb_ld(url, [(l, i) for l, _, i in crumbs]),
-        quiz_node,
         faq_ld(url, faqs),
     ]
 
@@ -1847,7 +1857,7 @@ def build_quiz(s, c, t):
 
     write_page(filename, page)
     register(filename, url, "quiz", key, title, description, h1, 0,
-             {"WebPage", "BreadcrumbList", "FAQPage", "Quiz"})
+             {"WebPage", "BreadcrumbList", "FAQPage"})
     info(f"quiz     {filename}  {count}q  flashcards={len(cards_nodes)}  faq={len(faqs)}")
     return filename
 

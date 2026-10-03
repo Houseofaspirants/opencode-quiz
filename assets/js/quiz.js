@@ -699,6 +699,11 @@
       correct, total, attempted: attemptedN,
       seconds: secs, subject: QUIZ.subject || "mixed",
     });
+    HOA.analytics?.track?.("quiz_complete", {
+      quiz_id: QUIZ.key || "", subject: QUIZ.subject || "", mode,
+      questions: total, correct, percent, passed, seconds: secs,
+      quiz_lang: QUIZ.lang || "",
+    });
     // Score is submitted to the leaderboard exactly once, by result.js
     // (keeps a single write path and prevents duplicate entries).
     showCompletion(result);
@@ -965,39 +970,10 @@
      the identical question file at build time), so runtime emission is
      skipped to keep exactly one copy on the page. */
   if (mode === "topic" && QUIZ.canonical && !SEED) {
-    /* Google Education Q&A (Quiz / Question / Answer) — built from the SAME
-       normalized records the screen renders, so markup cannot drift from the
-       quiz. A prompt without a resolvable correct option is skipped rather
-       than guessed: schema never invents an answer.
-       `text` is Google's required property, `name` keeps these nodes aligned
-       with every other Question on the site (FAQPage reads `name`). */
-    const flashcards = QUIZ.questions
-      .map((q) => {
-        const text = String(q.q || "").trim();
-        const opts = Array.isArray(q.options) ? q.options : [];
-        const correct =
-          Number.isInteger(q.correct) && opts[q.correct] != null
-            ? String(opts[q.correct]).trim()
-            : "";
-        if (!text || !correct) return null;
-        const expl = String(q.explanation || "").trim();
-        // The accepted answer must stand alone: reuse the explanation when it
-        // already states the answer, otherwise prefix the correct option.
-        let answer = correct;
-        if (expl) {
-          answer = expl.toLowerCase().includes(correct.toLowerCase())
-            ? expl
-            : `${correct}. ${expl}`;
-        }
-        return {
-          "@type": "Question",
-          name: text,
-          text,
-          eduQuestionType: "Flashcard",
-          acceptedAnswer: { "@type": "Answer", text: answer },
-        };
-      })
-      .filter(Boolean);
+    /* No flashcards (Quiz.hasPart) here: Google's Education Q&A requires the
+       questions to be immediately visible on the page, and this screen shows
+       one question at a time during an attempt. The topic page prints every
+       question and carries the Quiz flashcards (scripts/build_landing_pages.py). */
 
     setLd({
       "@context": "https://schema.org",
@@ -1020,8 +996,6 @@
           name: `${QUIZ.title} Quiz`,
           description: metaDescLd,
           about: { "@type": "Thing", name: QUIZ.title },
-          // Google's Education Q&A requires Quiz.hasPart -> Question[]
-          ...(flashcards.length ? { hasPart: flashcards } : {}),
           isPartOf: { "@id": `${QUIZ.canonical}#webpage` },
           inLanguage: "en-IN",
           isAccessibleForFree: true,
@@ -1058,6 +1032,10 @@
   buildPalette();
   renderQuestion();
   startTimers();
+  HOA.analytics?.track?.("quiz_start", {
+    quiz_id: QUIZ.key || "", subject: QUIZ.subject || "", mode,
+    questions: n, quiz_lang: QUIZ.lang || "", resumed: !!(saved && !saved.locked),
+  });
 
   // Restart / reloads land on the exact same scroll position. The restore
   // runs immediately AND again after `load` + 2 frames: the browser's own

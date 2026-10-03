@@ -1908,6 +1908,60 @@ const HOA = (() => {
     return initAnalytics(GA_ID);
   }
 
+  /** One GA4 event, never throws. Pages call HOA.analytics.track(). */
+  function track(name, params) {
+    try {
+      if (typeof window.gtag === "function") window.gtag("event", name, params || {});
+    } catch {
+      /* analytics failure must never break the action that caused it */
+    }
+  }
+
+  /* --------------------------------------------- GROWTH EVENTS (GA4) -----
+     The few actions that say whether the site is working, measured where
+     they happen. Delegated on the document, like the affiliate listener:
+       telegram_click  any link into the Telegram channel (not share links)
+       share           t.me/share, wa.me, twitter intent, copy-link button
+       pdf_download    a link to a .pdf (notes, papers, magazines)
+       live_join       the live-session headline, pill and cards
+       lang_switch     the interface language toggle
+     quiz_start / quiz_complete are sent by quiz.js. */
+  function initGrowthTracking() {
+    document.addEventListener("click", (ev) => {
+      try {
+        const hit = /** @type {HTMLElement | null} */ (ev.target);
+        if (!hit || !hit.closest) return;
+        const copy = hit.closest("[data-copy-url]");
+        if (copy) { track("share", { method: "copy_link", page: location.pathname }); return; }
+        const a = /** @type {HTMLAnchorElement | null} */ (hit.closest("a[href]"));
+        if (!a) return;
+        const href = a.getAttribute("href") || "";
+        const where = location.pathname;
+        if (a.closest("[data-live-headline], .live-float, .live-card, .cc-live")) {
+          track("live_join", { page: where });
+        }
+        if (/t\.me\/share|wa\.me|whatsapp\.com\/send|twitter\.com\/intent|x\.com\/intent/i.test(href)) {
+          const method = /t\.me/i.test(href) ? "telegram" : /wa\.me|whatsapp/i.test(href) ? "whatsapp" : "x";
+          track("share", { method, page: where });
+        } else if (/(^|\/\/)(t\.me|telegram\.me)\//i.test(href)) {
+          track("telegram_click", { page: where, link_url: href });
+        } else if (/\.pdf($|[?#])/i.test(href)) {
+          track("pdf_download", { page: where, file_name: href.split("/").pop() || href });
+        }
+      } catch {
+        /* never break the click */
+      }
+    }, true);
+    // hoa:lang also fires when the page first applies the stored language,
+    // so only a real change between two languages counts as a switch.
+    let lastLang = getLang();
+    document.addEventListener("hoa:lang", () => {
+      const now = getLang();
+      if (now !== lastLang) track("lang_switch", { lang: now });
+      lastLang = now;
+    });
+  }
+
   /* ----------------------------------------------- AFFILIATE (Books) -----
      Every outbound buy button the Books system renders carries `data-affiliate`
      plus the book and the provider it was built for. Its href points straight
@@ -2257,6 +2311,7 @@ const HOA = (() => {
   function init() {
     startAnalytics(); // first: gets the page_view queued before any UI work
     initAffiliateTracking(); // Books buy buttons, before any of them can render
+    initGrowthTracking();    // Telegram, share, PDF, live, language (GA4)
     startClarity(); // Clarity is a no-op off the live domain (skips non-prod)
     renderChrome();
     initTheme();
@@ -2345,6 +2400,7 @@ const HOA = (() => {
       id: GA_ID,
       init: initAnalytics,
       start: startAnalytics,
+      track,
       get status() { return gaStatus; },
     },
     clarity: {
