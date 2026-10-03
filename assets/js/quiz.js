@@ -715,12 +715,13 @@
         <div class="cc-icon" aria-hidden="true">🎉</div>
         <h2 id="ccTitle">Congratulations!</h2>
         <p class="cc-sub">You have completed ${result.mode === "daily" ? "today&#39;s quiz" : "this quiz"}.</p>
+        <p class="cc-live"><span class="ann-dot" aria-hidden="true"></span> Got a doubt from this quiz? Ask me <b>LIVE every Sunday at 8 PM</b> on Telegram.</p>
         <p class="cc-lead">Continue your preparation with</p>
         <ul class="cc-list">
           <li>✅ Personal Notes</li>
           <li>✅ Current Affairs Magazine</li>
           <li>✅ Daily Expected MCQs</li>
-          <li>✅ Weekly Live Sessions</li>
+          <li>✅ Sunday 8 PM Live Doubt Session</li>
           <li>✅ Recruitment Updates</li>
         </ul>
         <div class="cc-actions">

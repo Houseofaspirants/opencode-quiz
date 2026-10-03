@@ -353,11 +353,127 @@ a.ilink:hover { text-decoration-thickness: 3px; }
   white-space: nowrap;
 }
 .ann-ico { font-size: 0.82rem; line-height: 1; }
-/* Phones carry only the rank line — one line, one fixed height, no reflow. */
+/* LIVE HEADLINE — the Sunday Telegram live, on every page. core.js swaps the
+   copy by IST clock: weekly line, "tomorrow"/"today" (.is-soon) and LIVE NOW
+   (.is-live, pulsing red dot). One line, fixed rail height, no reflow. */
+.ann-live {
+  color: #fff;
+  text-decoration: none;
+  min-width: 0;
+  max-width: 100%;
+}
+.ann-live > span:not(.ann-dot) { overflow: hidden; text-overflow: ellipsis; }
+.ann-live:hover .ann-cta, .ann-live:focus-visible .ann-cta { background: rgba(255, 255, 255, 0.32); }
+.ann-dot {
+  flex: none;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0.85;
+}
+.ann-cta {
+  flex: none;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+}
+.ann-live.is-soon .ann-dot { background: #ffd54a; opacity: 1; }
+.ann-live.is-live .ann-dot {
+  background: #ff3b3b;
+  opacity: 1;
+  box-shadow: 0 0 0 0 rgba(255, 59, 59, 0.7);
+  animation: ann-pulse 1.6s ease-out infinite;
+}
+.ann-live.is-live .ann-cta { background: #ff3b3b; }
+@keyframes ann-pulse {
+  70% { box-shadow: 0 0 0 7px rgba(255, 59, 59, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 59, 59, 0); }
+}
+@media (prefers-reduced-motion: reduce) { .ann-live.is-live .ann-dot { animation: none; } }
+
+/* LIVE CARD — the Sunday live, offered below a quiz result and at the end of
+   every content page (core.js initLiveCard). */
+.live-card-section { padding-top: 0; }
+.live-card {
+  display: flex;
+  align-items: center;
+  gap: 18px 24px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  padding: 20px 22px;
+  border-radius: var(--radius-lg, 18px);
+  background: var(--brand-grad);
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+}
+.live-card .lc-body { flex: 1 1 320px; min-width: 0; }
+.lc-eyebrow {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 0.74rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase;
+  opacity: 0.95;
+}
+.lc-title { margin: 6px 0 4px; font-size: clamp(1.08rem, 2.2vw, 1.32rem); color: #fff; }
+.lc-sub { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.92; }
+.lc-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.live-card .btn-telegram { background: #fff; color: #1a7ba6; }
+.live-card .btn-telegram:hover { background: #eef7fb; }
+.live-card .btn-soft { background: rgba(255, 255, 255, 0.18); color: #fff; }
+.live-card.is-soon .ann-dot { background: #ffd54a; opacity: 1; }
+.live-card.is-live .ann-dot { background: #ff3b3b; opacity: 1; animation: ann-pulse 1.6s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .live-card.is-live .ann-dot { animation: none; } }
+@media (max-width: 599px) {
+  .live-card { padding: 18px 16px; }
+  .lc-actions, .lc-actions .btn { width: 100%; }
+  .lc-actions .btn { justify-content: center; }
+}
+
+/* DOWNLOAD NUDGE — a small non-blocking card after a PDF download starts. */
+.dl-nudge {
+  position: fixed;
+  right: 18px;
+  bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+  z-index: 95;
+  width: min(340px, calc(100vw - 28px));
+  padding: 14px 40px 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s linear 0.25s;
+}
+.dl-nudge.is-on { opacity: 1; visibility: visible; transform: none; transition: opacity 0.25s var(--ease), transform 0.25s var(--ease), visibility 0s; }
+.dl-title { font-weight: 700; color: #1f9d55; }
+.dl-sub { margin: 4px 0 10px; font-size: 0.88rem; line-height: 1.45; }
+.dl-x {
+  position: absolute; top: 6px; right: 8px;
+  width: 30px; height: 30px; border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted, #667); font-size: 1.3rem; cursor: pointer;
+}
+@media (max-width: 899px) {
+  .dl-nudge { left: 14px; right: 14px; width: auto; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+}
+
+/* Quiz completion screen: the live line sits above the list. */
+.cc-live {
+  display: block; text-align: center;
+  margin: 4px auto 10px; padding: 8px 12px;
+  border-radius: 12px;
+  background: color-mix(in srgb, #ff3b3b 10%, transparent);
+  font-size: 0.92rem;
+}
+.cc-live .ann-dot { display: inline-block; vertical-align: middle; margin-right: 6px; background: #ff3b3b; opacity: 1; }
+/* Phones carry only the live headline — the one line a visitor can act on. */
 @media (max-width: 759px) {
   .ann-item { font-size: 0.7rem; }
-  .ann-item:nth-child(n + 2) { display: none; }
+  .ann-item:not(.ann-live) { display: none; }
   .ann-full { display: none; }
+  .ann-inner { padding-left: 12px; padding-right: 12px; }
+  .ann-cta { padding: 1px 7px; }
 }
 @media (max-width: 359px) { .ann-item { font-size: 0.66rem; } }
 
@@ -1469,7 +1585,7 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
 @media print {
   .site-header, .site-footer, .to-top, .toast-wrap, .ad-slot,
   .tg-float, .tg-exit-overlay, .banner-telegram, .ann-bar,
-  .live-ribbon { display: none !important; }
+  .live-ribbon, .live-card, .dl-nudge { display: none !important; }
 }
 
 /* ==========================================================================

@@ -513,7 +513,7 @@ const HOA = (() => {
     <div class="container ann-inner">
       <span class="ann-item"><span class="ann-ico" aria-hidden="true">🏆</span><span class="ann-full">Prepared by </span>Punjab Police SI Rank 2 (713/800 Marks)</span>
       <span class="ann-item"><span class="ann-ico" aria-hidden="true">📚</span> FREE Study Material in Punjabi &amp; English</span>
-      <span class="ann-item"><span class="ann-ico" aria-hidden="true">🎯</span> Weekly LIVE Guidance Every Sunday</span>
+      <a class="ann-item ann-live" data-live-headline href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span class="ann-dot" aria-hidden="true"></span><span data-live-text>FREE LIVE doubt session every Sunday 8 PM</span><span class="ann-cta" data-live-cta>Join on Telegram →</span></a>
     </div>
   </div>
   <header class="site-header">
@@ -1995,6 +1995,206 @@ const HOA = (() => {
   }
 
   /* ================================================== INITIALISE ========= */
+  /* LIVE HEADLINE — the Sunday 8 PM Telegram live, announced on every page
+     from the shared header rail. The wording follows the clock in India
+     (IST, whatever the visitor's own time zone): "LIVE NOW" from 8 to 10 PM
+     on Sunday, "today" earlier on Sunday, "tomorrow" on Saturday, and the
+     weekly line the rest of the week. It re-checks every minute and on a
+     language switch, so an open tab flips to LIVE NOW on its own. */
+  const LIVE_SLOT = { day: 0, startMin: 20 * 60, endMin: 22 * 60 }; // Sun 20:00-22:00 IST
+  /** @type {Record<string, Record<string, string[]>>} */
+  const LIVE_COPY = {
+    now: { en: ["LIVE NOW: doubt session with the Rank 2 topper", "Join on Telegram →"],
+           pa: ["ਹੁਣ LIVE ਹਾਂ: ਰੈਂਕ 2 ਟਾਪਰ ਨਾਲ doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
+    today: { en: ["Today 8 PM: FREE LIVE doubt session", "Join on Telegram →"],
+             pa: ["ਅੱਜ ਰਾਤ 8 ਵਜੇ: ਮੁਫ਼ਤ LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
+    tomorrow: { en: ["Tomorrow 8 PM: FREE LIVE doubt session", "Send your doubt →"],
+                pa: ["ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ: ਮੁਫ਼ਤ LIVE doubt session", "doubt ਭੇਜੋ →"] },
+    week: { en: ["FREE LIVE doubt session every Sunday 8 PM", "Join on Telegram →"],
+            pa: ["ਹਰ ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ ਮੁਫ਼ਤ LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
+  };
+
+  /** Where the week stands in IST: "now" | "today" | "tomorrow" | "week". */
+  function liveState(date = new Date()) {
+    const ist = new Date(date.getTime() + (date.getTimezoneOffset() + 330) * 60000);
+    const day = ist.getDay();
+    const min = ist.getHours() * 60 + ist.getMinutes();
+    if (day === LIVE_SLOT.day) {
+      if (min >= LIVE_SLOT.startMin && min < LIVE_SLOT.endMin) return "now";
+      if (min < LIVE_SLOT.startMin) return "today";
+      return "week";
+    }
+    if (day === (LIVE_SLOT.day + 6) % 7) return "tomorrow";
+    return "week";
+  }
+
+  function initLiveHeadline() {
+    const link = document.querySelector("[data-live-headline]");
+    if (!link) return;
+    const text = link.querySelector("[data-live-text]");
+    const cta = link.querySelector("[data-live-cta]");
+    const paint = () => {
+      const state = liveState();
+      const lang = getLang() === "pa" ? "pa" : "en";
+      const [line, action] = LIVE_COPY[state][lang];
+      if (text && text.textContent !== line) text.textContent = line;
+      if (cta && cta.textContent !== action) cta.textContent = action;
+      link.setAttribute("lang", lang);
+      link.classList.toggle("is-live", state === "now");
+      link.classList.toggle("is-soon", state === "today" || state === "tomorrow");
+      link.setAttribute("aria-label", `${line} - ${action.replace(" →", "")}`);
+    };
+    paint();
+    document.addEventListener("hoa:lang", paint);
+    setInterval(paint, 60000);
+    document.addEventListener("visibilitychange", () => {
+      if (!document.hidden) paint();
+    });
+  }
+
+  /* LIVE CARD + DOWNLOAD NUDGE — the Sunday live, offered where a student
+     has just done something: below a quiz result, at the end of every notes,
+     MCQ, leaderboard or paper page, and right after a PDF download starts.
+     Rules kept from the rest of this file: never during a quiz attempt,
+     never blocking, the copy follows liveState(), and a download nudge
+     appears at most once a minute and closes itself. */
+  const LIVE_CARD_COPY = {
+    en: {
+      eyebrow: "Sunday LIVE · 8 PM",
+      title: {
+        now: "We are LIVE right now on Telegram",
+        today: "Today 8 PM: ask your doubts LIVE",
+        tomorrow: "Tomorrow 8 PM: ask your doubts LIVE",
+        week: "Stuck somewhere? Ask me LIVE every Sunday",
+      },
+      sub: "Free doubt session with Gurpreet Singh, Punjab Police SI Rank 2 (713/800). Exam doubts, strategy, how to use this site - send your question in the channel.",
+      join: "Join on Telegram",
+      more: "Session details",
+      dlTitle: "Download started ✓",
+      dlSub: "Doubt in this paper or topic? Ask it LIVE on Sunday 8 PM.",
+      close: "Close",
+    },
+    pa: {
+      eyebrow: "ਐਤਵਾਰ LIVE · ਰਾਤ 8 ਵਜੇ",
+      title: {
+        now: "ਅਸੀਂ ਹੁਣ Telegram 'ਤੇ LIVE ਹਾਂ",
+        today: "ਅੱਜ ਰਾਤ 8 ਵਜੇ: ਆਪਣੇ doubts LIVE ਪੁੱਛੋ",
+        tomorrow: "ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ: ਆਪਣੇ doubts LIVE ਪੁੱਛੋ",
+        week: "ਕਿਤੇ ਫਸ ਗਏ ਹੋ? ਹਰ ਐਤਵਾਰ ਮੈਨੂੰ LIVE ਪੁੱਛੋ",
+      },
+      sub: "ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ (ਪੰਜਾਬ ਪੁਲਿਸ SI ਰੈਂਕ 2, 713/800) ਨਾਲ ਮੁਫ਼ਤ doubt session। ਪੇਪਰ ਦੇ doubts, ਰਣਨੀਤੀ, ਵੈੱਬਸਾਈਟ ਕਿਵੇਂ ਵਰਤਣੀ ਹੈ - ਆਪਣਾ ਸਵਾਲ channel ਵਿੱਚ ਭੇਜੋ।",
+      join: "Telegram 'ਤੇ ਜੁੜੋ",
+      more: "Session ਬਾਰੇ",
+      dlTitle: "Download ਸ਼ੁਰੂ ✓",
+      dlSub: "ਇਸ ਪੇਪਰ ਜਾਂ ਵਿਸ਼ੇ ਵਿੱਚ doubt ਹੈ? ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ LIVE ਪੁੱਛੋ।",
+      close: "ਬੰਦ ਕਰੋ",
+    },
+  };
+
+  function liveLang() { return getLang() === "pa" ? "pa" : "en"; }
+
+  function initLiveCard() {
+    const page = document.body.dataset.page || "";
+    // Home has its own ribbon, the sessions pages ARE the offer, and a quiz
+    // attempt is never interrupted.
+    if (page === "home" || page === "quiz" || page === "sessions") return;
+    if (/(^|\/)session-/.test(location.pathname)) return;
+    const main = document.querySelector("main");
+    if (!main || main.querySelector(".live-card")) return;
+
+    const card = document.createElement("aside");
+    card.className = "live-card";
+    card.setAttribute("aria-label", "Sunday live doubt session");
+    card.innerHTML = `
+      <div class="lc-body">
+        <span class="lc-eyebrow"><span class="ann-dot" aria-hidden="true"></span><span data-lc="eyebrow"></span></span>
+        <h2 class="lc-title" data-lc="title"></h2>
+        <p class="lc-sub" data-lc="sub"></p>
+      </div>
+      <div class="lc-actions">
+        <a class="btn btn-telegram" href="${TG_URL}" target="_blank" rel="noopener" data-telegram data-lc="join"></a>
+        <a class="btn btn-soft" href="live-sessions.html" data-lc="more"></a>
+      </div>`;
+
+    const paint = () => {
+      const c = LIVE_CARD_COPY[liveLang()];
+      const state = liveState();
+      /** @type {Record<string, string>} */
+      const map = { eyebrow: c.eyebrow, title: c.title[state], sub: c.sub, join: c.join + " →", more: c.more };
+      card.querySelectorAll("[data-lc]").forEach((el) => {
+        const v = map[el.getAttribute("data-lc") || ""];
+        if (v && el.textContent !== v) el.textContent = v;
+      });
+      card.setAttribute("lang", liveLang());
+      card.classList.toggle("is-live", state === "now");
+      card.classList.toggle("is-soon", state === "today" || state === "tomorrow");
+    };
+    paint();
+    document.addEventListener("hoa:lang", paint);
+    setInterval(paint, 60000);
+
+    // Right under the score on a result page; otherwise at the end of the
+    // page's own content, just above the footer.
+    const afterResult = document.querySelector("#resultBody > .btn-row");
+    if (afterResult && afterResult.parentNode) {
+      afterResult.parentNode.insertBefore(card, afterResult.nextSibling);
+    } else {
+      const wrap = document.createElement("section");
+      wrap.className = "section live-card-section";
+      const inner = document.createElement("div");
+      inner.className = "container";
+      inner.appendChild(card);
+      wrap.appendChild(inner);
+      main.appendChild(wrap);
+    }
+  }
+
+  function initDownloadNudge() {
+    if ((document.body.dataset.page || "") === "quiz") return;
+    let lastShown = 0;
+    /** @type {HTMLElement | null} */
+    let box = null;
+    /** @type {number | undefined} */
+    let hideTimer;
+
+    const hide = () => {
+      if (box) box.classList.remove("is-on");
+    };
+    const show = () => {
+      const c = LIVE_CARD_COPY[liveLang()];
+      if (!box) {
+        box = document.createElement("div");
+        box.className = "dl-nudge";
+        box.setAttribute("role", "status");
+        document.body.appendChild(box);
+      }
+      box.setAttribute("lang", liveLang());
+      box.innerHTML = `
+        <button type="button" class="dl-x" aria-label="${esc(c.close)}">×</button>
+        <div class="dl-title">${esc(c.dlTitle)}</div>
+        <div class="dl-sub">${esc(c.dlSub)}</div>
+        <a class="btn btn-sm btn-telegram" href="${TG_URL}" target="_blank" rel="noopener" data-telegram>${esc(c.join)} →</a>`;
+      const x = box.querySelector(".dl-x");
+      if (x) x.addEventListener("click", hide);
+      // next frame, so the slide-in transition runs
+      requestAnimationFrame(() => box && box.classList.add("is-on"));
+      window.clearTimeout(hideTimer);
+      hideTimer = window.setTimeout(hide, 12000);
+    };
+
+    document.addEventListener("click", (e) => {
+      const target = /** @type {Element | null} */ (e.target);
+      const a = target && target.closest ? target.closest("a[href]") : null;
+      if (!a) return;
+      const href = (a.getAttribute("href") || "").split(/[?#]/)[0].toLowerCase();
+      if (!a.hasAttribute("download") && !href.endsWith(".pdf")) return;
+      const now = Date.now();
+      if (now - lastShown < 60000) return;
+      lastShown = now;
+      show();
+    });
+  }
+
   function init() {
     startAnalytics(); // first: gets the page_view queued before any UI work
     initAffiliateTracking(); // Books buy buttons, before any of them can render
@@ -2002,6 +2202,9 @@ const HOA = (() => {
     renderChrome();
     initTheme();
     initLang();
+    initLiveHeadline();
+    initLiveCard();
+    initDownloadNudge();
     initNav();
     initSearch();
     initReveal();
