@@ -1883,12 +1883,21 @@ const HOA = (() => {
       window.gtag = window.gtag || function () {
         window.dataLayer.push(arguments);
       };
-      if (!document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) {
+      // The page_view is queued in dataLayer right now; only the ~150 KB
+      // gtag.js download waits until the page has loaded, so it never
+      // competes with the hero for bandwidth (PageSpeed LCP).
+      const inject = () => {
+        if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]')) return;
         const s = document.createElement("script");
         s.async = true;
         s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
         document.head.appendChild(s);
-      }
+      };
+      const idle = () => (window.requestIdleCallback
+        ? window.requestIdleCallback(inject, { timeout: 3000 })
+        : setTimeout(inject, 1500));
+      if (document.readyState === "complete") idle();
+      else window.addEventListener("load", idle, { once: true });
       window.gtag("js", new Date());
       window.gtag("config", id, { send_page_view: true });
       gaStatus = "active";

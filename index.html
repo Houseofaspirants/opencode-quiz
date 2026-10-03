@@ -45,6 +45,7 @@
   <link rel="dns-prefetch" href="//instagram.com">
   <link rel="dns-prefetch" href="//youtube.com">
   <link rel="preload" href="assets/img/logo-sm.png" as="image" type="image/png">
+  <link rel="preload" href="assets/founder/gurpreet-singh.webp" as="image" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- Schema.org -->
@@ -238,7 +239,8 @@
               <img class="mentor-photo" data-mentor-photo
                    src="assets/founder/gurpreet-singh.webp"
                    alt="Gurpreet Singh, Punjab Police Sub-Inspector Rank 2"
-                   width="640" height="800" decoding="async" fetchpriority="high">
+                   width="640" height="800" decoding="sync" fetchpriority="high"
+                   onerror="this.remove()">
               <div class="mentor-fallback" aria-hidden="true">
                 <span class="mentor-mono">GS</span>
                 <span class="mentor-mono-sub">Punjab Police SI</span>
@@ -872,7 +874,7 @@
         </div>
         <div class="mentor-card reveal">
           <div class="mentor-avatar">
-            <img data-mentor-photo src="assets/img/mentor.jpg"
+            <img data-mentor-photo src="assets/founder/gurpreet-singh.webp"
                  alt="Gurpreet Singh, Punjab Police Sub-Inspector Rank 2"
                  width="208" height="208" decoding="async" loading="lazy">
             <span aria-hidden="true">GS</span>
