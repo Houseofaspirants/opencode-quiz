@@ -530,14 +530,15 @@
                     "name": "Modern History",
                     "description": "",
                     "chapters": [
-                      "arrival-of-europeans"
+                      "arrival-of-europeans",
+                      "expansion-of-british-power"
                     ],
                     "stats": {
-                      "files": 10,
-                      "chapters": 1,
-                      "pages": 79,
-                      "totalSize": 17113048,
-                      "newest": "2026-09-30"
+                      "files": 21,
+                      "chapters": 2,
+                      "pages": 164,
+                      "totalSize": 37000809,
+                      "newest": "2026-10-03"
                     },
                     "languages": [
                       {
@@ -545,7 +546,7 @@
                         "name": "Punjabi",
                         "native": "ਪੰਜਾਬੀ",
                         "flag": "🇵🇺",
-                        "count": 5,
+                        "count": 10,
                         "chapters": [
                           {
                             "id": "arrival-of-europeans",
@@ -573,6 +574,33 @@
                               }
                             ],
                             "pages": 40
+                          },
+                          {
+                            "id": "expansion-of-british-power",
+                            "name": "Expansion of British Power",
+                            "parts": [
+                              {
+                                "file": "material-expansion-of-british-power-part-1-pa.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-2-pa.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-3-pa.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-4-pa.html",
+                                "n": 4
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-5-pa.html",
+                                "n": 5
+                              }
+                            ],
+                            "pages": 42
                           }
                         ]
                       },
@@ -581,7 +609,7 @@
                         "name": "English",
                         "native": "English",
                         "flag": "🇬🇧",
-                        "count": 5,
+                        "count": 11,
                         "chapters": [
                           {
                             "id": "arrival-of-europeans",
@@ -609,6 +637,37 @@
                               }
                             ],
                             "pages": 39
+                          },
+                          {
+                            "id": "expansion-of-british-power",
+                            "name": "Expansion of British Power",
+                            "parts": [
+                              {
+                                "file": "material-expansion-of-british-power-part-1-en.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-2-en.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-3-en.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-4-en.html",
+                                "n": 4
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-5-en.html",
+                                "n": 5
+                              },
+                              {
+                                "file": "material-expansion-of-british-power-part-6-en.html",
+                                "n": 6
+                              }
+                            ],
+                            "pages": 43
                           }
                         ]
                       }
@@ -616,7 +675,8 @@
                   }
                 ],
                 "claimedChapters": [
-                  "arrival-of-europeans"
+                  "arrival-of-europeans",
+                  "expansion-of-british-power"
                 ]
               },
               {
