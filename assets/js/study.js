@@ -282,7 +282,7 @@
      always had. With them — General Knowledge's hierarchy, and only there —
      it is the full card the brief asks for: chapter number, title, estimated
      reading time, pages, last updated, available languages, a bookmark and
-     the PDF itself. Every one of those numbers is read off the part rows the
+     a link into the chapter (its parts hold the PDFs). Every one of those numbers is read off the part rows the
      build published, so the card cannot claim a page nobody uploaded. */
   const chapterCard = (c, href, langName, opts) => {
     const parts = (c.parts || []).length;
@@ -303,8 +303,6 @@
       .filter(Boolean).sort().slice(-1)[0] || "";
     const pages = Number(c.pages) || 0;
     const withLangs = Array.isArray(opts.languages) ? opts.languages : [];
-    const pdf = rows.find((p) => p.type === "pdf" && (p.path || p.source));
-    const src = String((pdf && (pdf.path || pdf.source)) || "");
     const key = href;
     const saved = savedChapters().some((b) => b.key === key);
     const badges = [
@@ -320,12 +318,10 @@
           <div class="card-badges">${badges}</div>
           <span class="eyebrow">${esc(langName)} · Chapter</span>
           <h3><a href="${esc(href)}">${esc(c.name)}</a></h3>
-          <p class="muted">${plural(parts, "part")}, in reading order${src ? " — Open PDF starts at Part 1" : ""}.</p>
+          <p class="muted">${plural(parts, "part")}, in reading order.</p>
           <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}${pages ? ` · ${plural(pages, "page")}` : ""}</p>
           <p class="btn-row" style="margin-top:14px">
-            ${src
-              ? `<a class="btn btn-primary st-act" href="${esc(src)}">Open PDF</a>`
-              : `<a class="btn btn-soft st-act" href="${esc(href)}">Read online</a>`}
+            <a class="btn btn-primary st-act" href="${esc(href)}">Open chapter →</a>
             <button type="button" class="btn btn-soft st-act"
                     data-study-bookmark="${esc(key)}"
                     data-study-title="${esc(c.name)}"
