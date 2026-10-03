@@ -2097,8 +2097,7 @@ const HOA = (() => {
     const page = document.body.dataset.page || "";
     // Home has its own ribbon, the sessions pages ARE the offer, and a quiz
     // attempt is never interrupted.
-    if (page === "home" || page === "quiz" || page === "sessions") return;
-    if (/(^|\/)session-/.test(location.pathname)) return;
+    if (page !== "result") return;
     const main = document.querySelector("main");
     if (!main || main.querySelector(".live-card")) return;
 
@@ -2133,24 +2132,84 @@ const HOA = (() => {
     document.addEventListener("hoa:lang", paint);
     setInterval(paint, 60000);
 
-    // Right under the score on a result page; otherwise at the end of the
-    // page's own content, just above the footer.
-    const afterResult = document.querySelector("#resultBody > .btn-row");
-    if (afterResult && afterResult.parentNode) {
-      afterResult.parentNode.insertBefore(card, afterResult.nextSibling);
-    } else {
-      const wrap = document.createElement("section");
-      wrap.className = "section live-card-section";
-      const inner = document.createElement("div");
-      inner.className = "container";
-      inner.appendChild(card);
-      wrap.appendChild(inner);
-      main.appendChild(wrap);
+    // Students rarely scroll to the end, so on a result page the offer is
+    // the first thing under the score.
+    const resultBody = document.getElementById("resultBody");
+    if (page === "result" && resultBody) {
+      resultBody.insertBefore(card, resultBody.firstChild);
+      card.classList.add("lc-top");
+      return;
     }
+    // Every other page gets the floating pill (initLiveFloat) instead: it is
+    // on screen from the first second, whatever the student scrolls to.
+  }
+
+  /* Floating live pill — the Sunday live, kept on screen on every page from
+     the first second (students often never scroll). The × hides it for the
+     rest of the visit. Home has its own ribbon; a quiz attempt is never
+     interrupted. */
+  function initLiveFloat() {
+    const page = document.body.dataset.page || "";
+    // Result pages carry the full card right under the score instead.
+    if (page === "home" || page === "sessions" || page === "result" || isQuizAttempt()) return;
+    if (/(^|\/)session-/.test(location.pathname)) return;
+    if (document.querySelector(".live-ribbon")) return;
+    try { if (sessionStorage.getItem("hoa-live-float-off") === "1") return; } catch (e) {}
+
+    const pill = document.createElement("aside");
+    pill.className = "live-ribbon live-float";
+    pill.setAttribute("aria-label", "Sunday live doubt session");
+    pill.innerHTML = `
+      <span class="ann-dot" aria-hidden="true"></span>
+      <span class="lr-text" data-lf="text"></span>
+      <a class="btn btn-sm btn-telegram" href="${TG_URL}" target="_blank" rel="noopener" data-telegram data-lf="join"></a>
+      <button type="button" class="lf-x" data-lf-close>×</button>`;
+    document.body.appendChild(pill);
+
+    /** @type {Record<string, Record<string, string>>} */
+    const TEXT = {
+      en: { now: "We are LIVE now - ask your doubt", today: "Today 8 PM: LIVE doubt session",
+            tomorrow: "Tomorrow 8 PM: LIVE doubt session", week: "LIVE doubts every Sunday 8 PM",
+            join: "Join", close: "Hide" },
+      pa: { now: "ਹੁਣ LIVE ਹਾਂ - doubt ਪੁੱਛੋ", today: "ਅੱਜ ਰਾਤ 8 ਵਜੇ LIVE doubt session",
+            tomorrow: "ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ LIVE doubt session", week: "ਹਰ ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ LIVE doubts",
+            join: "ਜੁੜੋ", close: "ਲੁਕਾਓ" },
+    };
+    const paint = () => {
+      const t = TEXT[liveLang()];
+      const state = liveState();
+      const txt = pill.querySelector('[data-lf="text"]');
+      const join = pill.querySelector('[data-lf="join"]');
+      const x = pill.querySelector("[data-lf-close]");
+      if (txt) txt.textContent = t[state];
+      if (join) join.textContent = t.join + " →";
+      if (x) x.setAttribute("aria-label", t.close);
+      pill.setAttribute("lang", liveLang());
+      pill.classList.toggle("is-live", state === "now");
+      pill.classList.toggle("is-soon", state === "today" || state === "tomorrow");
+    };
+    paint();
+    document.addEventListener("hoa:lang", paint);
+    setInterval(paint, 60000);
+
+    // On screen from the start - a student who never scrolls still sees it.
+    requestAnimationFrame(() => pill.classList.add("is-on"));
+
+    const close = pill.querySelector("[data-lf-close]");
+    if (close) close.addEventListener("click", () => {
+      pill.remove();
+      try { sessionStorage.setItem("hoa-live-float-off", "1"); } catch (e) {}
+    });
+  }
+
+  /** A quiz in progress: quiz.html and every quiz-*.html set page run the
+   *  attempt in place (body data-page="quiz"), with a timer on screen. */
+  function isQuizAttempt() {
+    return (document.body.dataset.page || "") === "quiz";
   }
 
   function initDownloadNudge() {
-    if ((document.body.dataset.page || "") === "quiz") return;
+    if (isQuizAttempt()) return;
     let lastShown = 0;
     /** @type {HTMLElement | null} */
     let box = null;
@@ -2204,6 +2263,7 @@ const HOA = (() => {
     initLang();
     initLiveHeadline();
     initLiveCard();
+    initLiveFloat();
     initDownloadNudge();
     initNav();
     initSearch();

@@ -394,7 +394,22 @@ a.ilink:hover { text-decoration-thickness: 3px; }
 
 /* LIVE CARD — the Sunday live, offered below a quiz result and at the end of
    every content page (core.js initLiveCard). */
-.live-card-section { padding-top: 0; }
+.live-card.lc-top { margin: 0 0 22px; }
+
+/* Floating live pill on every page (home keeps its own ribbon). Reuses the
+   .live-ribbon box and its phone offsets; shown from first paint. */
+.live-float { padding-left: 14px; }
+.live-float .lf-x {
+  flex: none;
+  width: 28px; height: 28px;
+  border: 0; border-radius: 50%;
+  background: transparent; color: var(--muted, #667);
+  font-size: 1.2rem; line-height: 1; cursor: pointer;
+}
+.live-float .ann-dot { background: var(--brand); opacity: 1; }
+.live-float.is-soon .ann-dot { background: #f2b400; }
+.live-float.is-live .ann-dot { background: #ff3b3b; animation: ann-pulse 1.6s ease-out infinite; }
+@media (prefers-reduced-motion: reduce) { .live-float.is-live .ann-dot { animation: none; } }
 .live-card {
   display: flex;
   align-items: center;
@@ -455,7 +470,7 @@ a.ilink:hover { text-decoration-thickness: 3px; }
   background: transparent; color: var(--muted, #667); font-size: 1.3rem; cursor: pointer;
 }
 @media (max-width: 899px) {
-  .dl-nudge { left: 14px; right: 14px; width: auto; bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+  .dl-nudge { left: 14px; right: 14px; width: auto; bottom: calc(124px + env(safe-area-inset-bottom, 0px)); }
 }
 
 /* Quiz completion screen: the live line sits above the list. */
