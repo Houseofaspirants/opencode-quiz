@@ -23,28 +23,17 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 8,
+      "count": 6,
       "newest": "2026-10-04",
-      "totalSize": 36090170,
+      "totalSize": 21185811,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 3,
           "chapters": [
-            {
-              "id": "evolution of computers",
-              "name": "Evolution of Computers",
-              "parts": [
-                {
-                  "file": "material-evolution-of-computers-pa.html",
-                  "n": 1
-                }
-              ],
-              "pages": 8
-            },
             {
               "id": "fundamentals-of-computer",
               "name": "Fundamentals of Computer",
@@ -85,22 +74,11 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 3,
           "chapters": [
             {
-              "id": "evolution of computers",
-              "name": "Evolution of Computers",
-              "parts": [
-                {
-                  "file": "material-evolution-of-computer-en.html",
-                  "n": 1
-                }
-              ],
-              "pages": 9
-            },
-            {
-              "id": "fundamentals-of-computer",
-              "name": "Fundamentals of Computer",
+              "id": "chapter 1 fundamentals-of-computer",
+              "name": "Chapter 1: Fundamentals of Computer",
               "parts": [
                 {
                   "file": "material-fundamentals-of-computer.html",
@@ -134,7 +112,7 @@
           ]
         }
       ],
-      "chapters": 8
+      "chapters": 6
     },
     {
       "id": "english",
@@ -203,9 +181,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 5,
-      "newest": "2026-10-01",
-      "totalSize": 10610119,
+      "count": 7,
+      "newest": "2026-10-04",
+      "totalSize": 15641055,
       "languages": [
         {
           "id": "pa",
@@ -236,7 +214,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 5,
           "chapters": [
             {
               "id": "Analogy ",
@@ -249,9 +227,17 @@
                 {
                   "file": "material-part-2-en.html",
                   "n": 2
+                },
+                {
+                  "file": "material-part-3-english-2.html",
+                  "n": 3
+                },
+                {
+                  "file": "material-part-4-english.html",
+                  "n": 4
                 }
               ],
-              "pages": 31
+              "pages": 58
             },
             {
               "id": "number series",
