@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 428,
-  "edges": 2545,
+  "nodes": 431,
+  "edges": 2564,
   "silos": 35,
   "clusters": 51,
   "pillars": 34
@@ -2274,6 +2274,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/reasoning/punjabi/analogy%20/part-3-pa.pdf",
+   "url": "/content/study-material/reasoning/punjabi/analogy%20/part-3-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "current-affairs-preparation.html",
    "url": "/current-affairs-preparation.html",
    "type": "guide",
@@ -3527,6 +3539,30 @@
    "type": "study-material",
    "template": "",
    "title": "Arrival of Europeans - Part 3 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-part-3-pa",
+   "url": "/material-part-3-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-part-3-pa.html",
+   "url": "/material-part-3-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Analogy - Part 3 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6123,6 +6159,12 @@
   },
   {
    "from": "archive-category-reasoning.html",
+   "to": "material-part-3-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
    "to": "material-part-4-english.html",
    "rel": "contextual",
    "weight": 1
@@ -7893,6 +7935,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-part-3-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-part-3-punjabi.html",
    "rel": "contextual",
    "weight": 1
@@ -9117,7 +9165,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-part-4-english.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10863,13 +10911,13 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "material-part-1-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-number-series-en.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10953,13 +11001,13 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "material-number-series-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-en.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11133,13 +11181,13 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "material-number-series-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11313,13 +11361,13 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "material-number-series-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-en.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11499,13 +11547,13 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "material-number-series-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11691,7 +11739,7 @@
   },
   {
    "from": "material-part-3-english-2.html",
-   "to": "material-part-1-en.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11794,6 +11842,96 @@
   {
    "from": "material-part-3-english.html",
    "to": "material-expansion-of-british-power-part-2-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "content/study-material/reasoning/punjabi/analogy%20/part-3-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "material-part-2-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "material-part-3-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "material-number-series-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "material-part-3-english-2.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-part-3-pa.html",
+   "to": "material-part-4-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12063,13 +12201,13 @@
   },
   {
    "from": "material-part-4-english.html",
-   "to": "material-part-1-en.html",
+   "to": "material-part-3-english-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-part-4-english.html",
-   "to": "material-part-3-english-2.html",
+   "to": "material-part-3-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20445,6 +20583,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/reasoning/punjabi/analogy%20/part-3-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -20632,6 +20776,12 @@
   {
    "from": "study-material.html",
    "to": "material-part-3-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-part-3-pa.html",
    "rel": "contextual",
    "weight": 1
   },

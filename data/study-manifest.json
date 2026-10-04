@@ -181,16 +181,16 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 7,
+      "count": 8,
       "newest": "2026-10-04",
-      "totalSize": 15641055,
+      "totalSize": 18041653,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "analogy ",
@@ -203,9 +203,13 @@
                 {
                   "file": "material-part-2-pa.html",
                   "n": 2
+                },
+                {
+                  "file": "material-part-3-pa.html",
+                  "n": 3
                 }
               ],
-              "pages": 33
+              "pages": 47
             }
           ]
         },
@@ -1791,6 +1795,6 @@
       "hidden": true
     }
   ],
-  "total": 43,
+  "total": 44,
   "generatedBy": "scripts/study_material.py"
 }
