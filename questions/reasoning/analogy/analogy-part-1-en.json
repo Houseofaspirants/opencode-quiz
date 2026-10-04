@@ -1,0 +1,302 @@
+[
+  {
+    "id": "analogy-part-1-q01",
+    "q": "Choose the option with the same relationship: Australia : Canberra :: Austria : ?",
+    "options": [
+      "Vienna",
+      "Dhaka",
+      "Thimpu",
+      "Baghdad"
+    ],
+    "correct": 0,
+    "explanation": "The second term is the capital of the first. Here, Australia is paired with Canberra; likewise, Austria is paired with Vienna."
+  },
+  {
+    "id": "analogy-part-1-q02",
+    "q": "Choose the option with the same relationship: Austria : Vienna :: Bangladesh : ?",
+    "options": [
+      "Thimpu",
+      "Dhaka",
+      "Baghdad",
+      "Copenhagen"
+    ],
+    "correct": 1,
+    "explanation": "The second term is the capital of the first. Here, Austria is paired with Vienna; likewise, Bangladesh is paired with Dhaka."
+  },
+  {
+    "id": "analogy-part-1-q03",
+    "q": "Choose the option with the same relationship: Bangladesh : Dhaka :: Bhutan : ?",
+    "options": [
+      "Baghdad",
+      "Copenhagen",
+      "Thimpu",
+      "Jakarta"
+    ],
+    "correct": 2,
+    "explanation": "The second term is the capital of the first. Here, Bangladesh is paired with Dhaka; likewise, Bhutan is paired with Thimpu."
+  },
+  {
+    "id": "analogy-part-1-q04",
+    "q": "Choose the option with the same relationship: Bhutan : Thimpu :: Iraq : ?",
+    "options": [
+      "Copenhagen",
+      "Jakarta",
+      "Lisbon",
+      "Baghdad"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the capital of the first. Here, Bhutan is paired with Thimpu; likewise, Iraq is paired with Baghdad."
+  },
+  {
+    "id": "analogy-part-1-q05",
+    "q": "Choose the option with the same relationship: Iraq : Baghdad :: Denmark : ?",
+    "options": [
+      "Copenhagen",
+      "Jakarta",
+      "Lisbon",
+      "Colombo"
+    ],
+    "correct": 0,
+    "explanation": "The second term is the capital of the first. Here, Iraq is paired with Baghdad; likewise, Denmark is paired with Copenhagen."
+  },
+  {
+    "id": "analogy-part-1-q06",
+    "q": "Choose the option with the same relationship: Maharashtra : Mumbai :: Karnataka : ?",
+    "options": [
+      "Bhubaneshwar",
+      "Bangalore",
+      "Gandhinagar",
+      "Shimla"
+    ],
+    "correct": 1,
+    "explanation": "The second term is the capital of the first state. Here, Maharashtra is paired with Mumbai; likewise, Karnataka is paired with Bangalore."
+  },
+  {
+    "id": "analogy-part-1-q07",
+    "q": "Choose the option with the same relationship: Karnataka : Bangalore :: Orissa : ?",
+    "options": [
+      "Gandhinagar",
+      "Shimla",
+      "Bhubaneshwar",
+      "Chennai"
+    ],
+    "correct": 2,
+    "explanation": "The second term is the capital of the first state. Here, Karnataka is paired with Bangalore; likewise, Orissa is paired with Bhubaneshwar."
+  },
+  {
+    "id": "analogy-part-1-q08",
+    "q": "Choose the option with the same relationship: Orissa : Bhubaneshwar :: Gujarat : ?",
+    "options": [
+      "Shimla",
+      "Chennai",
+      "Mumbai",
+      "Gandhinagar"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the capital of the first state. Here, Orissa is paired with Bhubaneshwar; likewise, Gujarat is paired with Gandhinagar."
+  },
+  {
+    "id": "analogy-part-1-q09",
+    "q": "Choose the option with the same relationship: India : Rupee :: Argentina : ?",
+    "options": [
+      "Peso",
+      "Yuan",
+      "Dinar",
+      "Baht"
+    ],
+    "correct": 0,
+    "explanation": "The second term is a currency of the first country. Here, India is paired with Rupee; likewise, Argentina is paired with Peso."
+  },
+  {
+    "id": "analogy-part-1-q10",
+    "q": "Choose the option with the same relationship: Argentina : Peso :: China : ?",
+    "options": [
+      "Dinar",
+      "Yuan",
+      "Baht",
+      "Peseta"
+    ],
+    "correct": 1,
+    "explanation": "The second term is a currency of the first country. Here, Argentina is paired with Peso; likewise, China is paired with Yuan."
+  },
+  {
+    "id": "analogy-part-1-q11",
+    "q": "Choose the option with the same relationship: China : Yuan :: Iraq : ?",
+    "options": [
+      "Baht",
+      "Peseta",
+      "Dinar",
+      "Guilder"
+    ],
+    "correct": 2,
+    "explanation": "The second term is a currency of the first country. Here, China is paired with Yuan; likewise, Iraq is paired with Dinar."
+  },
+  {
+    "id": "analogy-part-1-q12",
+    "q": "Choose the option with the same relationship: Barometer : Pressure :: Thermometer : ?",
+    "options": [
+      "Humidity",
+      "Current",
+      "Earthquakes",
+      "Temperature"
+    ],
+    "correct": 3,
+    "explanation": "The second term is what the instrument in the first term measures. Here, Barometer is paired with Pressure; likewise, Thermometer is paired with Temperature."
+  },
+  {
+    "id": "analogy-part-1-q13",
+    "q": "Choose the option with the same relationship: Thermometer : Temperature :: Hygrometer : ?",
+    "options": [
+      "Humidity",
+      "Current",
+      "Earthquakes",
+      "Wind"
+    ],
+    "correct": 0,
+    "explanation": "The second term is what the instrument in the first term measures. Here, Thermometer is paired with Temperature; likewise, Hygrometer is paired with Humidity."
+  },
+  {
+    "id": "analogy-part-1-q14",
+    "q": "Choose the option with the same relationship: Hygrometer : Humidity :: Ammeter : ?",
+    "options": [
+      "Earthquakes",
+      "Current",
+      "Wind",
+      "Mass"
+    ],
+    "correct": 1,
+    "explanation": "The second term is what the instrument in the first term measures. Here, Hygrometer is paired with Humidity; likewise, Ammeter is paired with Current."
+  },
+  {
+    "id": "analogy-part-1-q15",
+    "q": "Choose the option with the same relationship: Ammeter : Current :: Seismograph : ?",
+    "options": [
+      "Wind",
+      "Mass",
+      "Earthquakes",
+      "Blood pressure"
+    ],
+    "correct": 2,
+    "explanation": "The second term is what the instrument in the first term measures. Here, Ammeter is paired with Current; likewise, Seismograph is paired with Earthquakes."
+  },
+  {
+    "id": "analogy-part-1-q16",
+    "q": "Choose the option with the same relationship: Length : Metre :: Mass : ?",
+    "options": [
+      "Joule",
+      "Radian",
+      "Hectare",
+      "Kilogram"
+    ],
+    "correct": 3,
+    "explanation": "The second term is a unit used to measure the first quantity. Here, Length is paired with Metre; likewise, Mass is paired with Kilogram."
+  },
+  {
+    "id": "analogy-part-1-q17",
+    "q": "Choose the option with the same relationship: Mass : Kilogram :: Energy : ?",
+    "options": [
+      "Joule",
+      "Radian",
+      "Hectare",
+      "Candela"
+    ],
+    "correct": 0,
+    "explanation": "The second term is a unit used to measure the first quantity. Here, Mass is paired with Kilogram; likewise, Energy is paired with Joule."
+  },
+  {
+    "id": "analogy-part-1-q18",
+    "q": "Choose the option with the same relationship: Energy : Joule :: Angle : ?",
+    "options": [
+      "Joule",
+      "Radian",
+      "Hectare",
+      "Candela"
+    ],
+    "correct": 1,
+    "explanation": "The second term is a unit used to measure the first quantity. Here, Energy is paired with Joule; likewise, Angle is paired with Radian."
+  },
+  {
+    "id": "analogy-part-1-q19",
+    "q": "Choose the option with the same relationship: Angle : Radian :: Work : ?",
+    "options": [
+      "Hectare",
+      "Candela",
+      "Joule",
+      "Newton"
+    ],
+    "correct": 2,
+    "explanation": "The second term is a unit used to measure the first quantity. Here, Angle is paired with Radian; likewise, Work is paired with Joule."
+  },
+  {
+    "id": "analogy-part-1-q20",
+    "q": "Choose the option with the same relationship: Sailors : Crew :: Cattle : ?",
+    "options": [
+      "Swarm",
+      "Bunch",
+      "Army",
+      "Herd"
+    ],
+    "correct": 3,
+    "explanation": "The second term names a group of the individuals in the first term. Here, Sailors is paired with Crew; likewise, Cattle is paired with Herd."
+  },
+  {
+    "id": "analogy-part-1-q21",
+    "q": "Choose the option with the same relationship: Cattle : Herd :: Bees : ?",
+    "options": [
+      "Swarm",
+      "Bunch",
+      "Army",
+      "Team"
+    ],
+    "correct": 0,
+    "explanation": "The second term names a group of the individuals in the first term. Here, Cattle is paired with Herd; likewise, Bees is paired with Swarm."
+  },
+  {
+    "id": "analogy-part-1-q22",
+    "q": "Choose the option with the same relationship: Bees : Swarm :: Grapes : ?",
+    "options": [
+      "Army",
+      "Bunch",
+      "Team",
+      "Council"
+    ],
+    "correct": 1,
+    "explanation": "The second term names a group of the individuals in the first term. Here, Bees is paired with Swarm; likewise, Grapes is paired with Bunch."
+  },
+  {
+    "id": "analogy-part-1-q23",
+    "q": "Choose the option with the same relationship: Cow : Calf :: Bear : ?",
+    "options": [
+      "Duckling",
+      "Puppy",
+      "Cub",
+      "Chick"
+    ],
+    "correct": 2,
+    "explanation": "The second term is the young one of the animal in the first term. Here, Cow is paired with Calf; likewise, Bear is paired with Cub."
+  },
+  {
+    "id": "analogy-part-1-q24",
+    "q": "Choose the option with the same relationship: Bear : Cub :: Duck : ?",
+    "options": [
+      "Puppy",
+      "Chick",
+      "Lamb",
+      "Duckling"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the young one of the animal in the first term. Here, Bear is paired with Cub; likewise, Duck is paired with Duckling."
+  },
+  {
+    "id": "analogy-part-1-q25",
+    "q": "Choose the option with the same relationship: Duck : Duckling :: Dog : ?",
+    "options": [
+      "Puppy",
+      "Chick",
+      "Lamb",
+      "Fawn"
+    ],
+    "correct": 0,
+    "explanation": "The second term is the young one of the animal in the first term. Here, Duck is paired with Duckling; likewise, Dog is paired with Puppy."
+  }
+]

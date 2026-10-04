@@ -1,0 +1,302 @@
+[
+  {
+    "id": "analogy-part-2-q01",
+    "q": "Choose the option with the same relationship: Grapes : Bunch :: Soldiers : ?",
+    "options": [
+      "Team",
+      "Army",
+      "Council",
+      "Colony"
+    ],
+    "correct": 1,
+    "explanation": "The second term names a group of the individuals in the first term. Here, Grapes is paired with Bunch; likewise, Soldiers is paired with Army."
+  },
+  {
+    "id": "analogy-part-2-q02",
+    "q": "Choose the option with the same relationship: Soldiers : Army :: Players : ?",
+    "options": [
+      "Council",
+      "Colony",
+      "Team",
+      "Flock"
+    ],
+    "correct": 2,
+    "explanation": "The second term names a group of the individuals in the first term. Here, Soldiers is paired with Army; likewise, Players is paired with Team."
+  },
+  {
+    "id": "analogy-part-2-q03",
+    "q": "Choose the option with the same relationship: Dog : Puppy :: Hen : ?",
+    "options": [
+      "Lamb",
+      "Fawn",
+      "Kitten",
+      "Chick"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the young one of the animal in the first term. Here, Dog is paired with Puppy; likewise, Hen is paired with Chick."
+  },
+  {
+    "id": "analogy-part-2-q04",
+    "q": "Choose the option with the same relationship: Hen : Chick :: Sheep : ?",
+    "options": [
+      "Lamb",
+      "Fawn",
+      "Kitten",
+      "Tadpole"
+    ],
+    "correct": 0,
+    "explanation": "The second term is the young one of the animal in the first term. Here, Hen is paired with Chick; likewise, Sheep is paired with Lamb."
+  },
+  {
+    "id": "analogy-part-2-q05",
+    "q": "Choose the option with the same relationship: Horse : Mare :: Dog : ?",
+    "options": [
+      "Vixen",
+      "Bitch",
+      "Niece",
+      "Sister"
+    ],
+    "correct": 1,
+    "explanation": "The second term is the female counterpart of the first. Here, Horse is paired with Mare; likewise, Dog is paired with Bitch."
+  },
+  {
+    "id": "analogy-part-2-q06",
+    "q": "Choose the option with the same relationship: Dog : Bitch :: Fox : ?",
+    "options": [
+      "Niece",
+      "Sister",
+      "Vixen",
+      "Cow"
+    ],
+    "correct": 2,
+    "explanation": "The second term is the female counterpart of the first. Here, Dog is paired with Bitch; likewise, Fox is paired with Vixen."
+  },
+  {
+    "id": "analogy-part-2-q07",
+    "q": "Choose the option with the same relationship: Fox : Vixen :: Nephew : ?",
+    "options": [
+      "Sister",
+      "Cow",
+      "Doe",
+      "Niece"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the female counterpart of the first. Here, Fox is paired with Vixen; likewise, Nephew is paired with Niece."
+  },
+  {
+    "id": "analogy-part-2-q08",
+    "q": "Choose the option with the same relationship: Duck : Waddle :: Bird : ?",
+    "options": [
+      "Fly",
+      "Flit",
+      "Amble",
+      "Prowl"
+    ],
+    "correct": 0,
+    "explanation": "The second term names a characteristic movement of the animal in the first term. Here, Duck is paired with Waddle; likewise, Bird is paired with Fly."
+  },
+  {
+    "id": "analogy-part-2-q09",
+    "q": "Choose the option with the same relationship: Bird : Fly :: Owl : ?",
+    "options": [
+      "Amble",
+      "Flit",
+      "Prowl",
+      "Strut"
+    ],
+    "correct": 1,
+    "explanation": "The second term names a characteristic movement of the animal in the first term. Here, Bird is paired with Fly; likewise, Owl is paired with Flit."
+  },
+  {
+    "id": "analogy-part-2-q10",
+    "q": "Choose the option with the same relationship: Owl : Flit :: Elephant : ?",
+    "options": [
+      "Prowl",
+      "Strut",
+      "Amble",
+      "Lumber"
+    ],
+    "correct": 2,
+    "explanation": "The second term names a characteristic movement of the animal in the first term. Here, Owl is paired with Flit; likewise, Elephant is paired with Amble."
+  },
+  {
+    "id": "analogy-part-2-q11",
+    "q": "Choose the option with the same relationship: Lion : Roar :: Donkey : ?",
+    "options": [
+      "Neigh",
+      "Squeak",
+      "Crow",
+      "Bray"
+    ],
+    "correct": 3,
+    "explanation": "The second term is the sound produced by the first. Here, Lion is paired with Roar; likewise, Donkey is paired with Bray."
+  },
+  {
+    "id": "analogy-part-2-q12",
+    "q": "Choose the option with the same relationship: Donkey : Bray :: Horse : ?",
+    "options": [
+      "Neigh",
+      "Squeak",
+      "Crow",
+      "Caw"
+    ],
+    "correct": 0,
+    "explanation": "The second term is the sound produced by the first. Here, Donkey is paired with Bray; likewise, Horse is paired with Neigh."
+  },
+  {
+    "id": "analogy-part-2-q13",
+    "q": "Choose the option with the same relationship: Horse : Neigh :: Mice : ?",
+    "options": [
+      "Crow",
+      "Squeak",
+      "Caw",
+      "Croak"
+    ],
+    "correct": 1,
+    "explanation": "The second term is the sound produced by the first. Here, Horse is paired with Neigh; likewise, Mice is paired with Squeak."
+  },
+  {
+    "id": "analogy-part-2-q14",
+    "q": "Choose the option with the same relationship: Spider : Web :: Peasant : ?",
+    "options": [
+      "Stable",
+      "Prison",
+      "Cottage",
+      "Palace"
+    ],
+    "correct": 2,
+    "explanation": "The second term is a dwelling or place associated with the first. Here, Spider is paired with Web; likewise, Peasant is paired with Cottage."
+  },
+  {
+    "id": "analogy-part-2-q15",
+    "q": "Choose the option with the same relationship: Peasant : Cottage :: Horse : ?",
+    "options": [
+      "Prison",
+      "Palace",
+      "Monastery",
+      "Stable"
+    ],
+    "correct": 3,
+    "explanation": "The second term is a dwelling or place associated with the first. Here, Peasant is paired with Cottage; likewise, Horse is paired with Stable."
+  },
+  {
+    "id": "analogy-part-2-q16",
+    "q": "Choose the option with the same relationship: Horse : Stable :: Convict : ?",
+    "options": [
+      "Prison",
+      "Palace",
+      "Monastery",
+      "Barracks"
+    ],
+    "correct": 0,
+    "explanation": "The second term is a dwelling or place associated with the first. Here, Horse is paired with Stable; likewise, Convict is paired with Prison."
+  },
+  {
+    "id": "analogy-part-2-q17",
+    "q": "Choose the option with the same relationship: Vigilant : Alert :: Viable : ?",
+    "options": [
+      "Cultivated",
+      "Feasible",
+      "Urbane",
+      "Alert"
+    ],
+    "correct": 1,
+    "explanation": "The second term is a synonym of the first. Here, Vigilant is paired with Alert; likewise, Viable is paired with Feasible."
+  },
+  {
+    "id": "analogy-part-2-q18",
+    "q": "Choose the option with the same relationship: Viable : Feasible :: Highbrow : ?",
+    "options": [
+      "Urbane",
+      "Alert",
+      "Cultivated",
+      "Feasible"
+    ],
+    "correct": 2,
+    "explanation": "The second term is a synonym of the first. Here, Viable is paired with Feasible; likewise, Highbrow is paired with Cultivated."
+  },
+  {
+    "id": "analogy-part-2-q19",
+    "q": "Choose the option with the same relationship: Giant : Dwarf :: Genius : ?",
+    "options": [
+      "Sorrow",
+      "Hardship",
+      "Moderate",
+      "Idiot"
+    ],
+    "correct": 3,
+    "explanation": "The two terms are opposites. Here, Giant is paired with Dwarf; likewise, Genius is paired with Idiot."
+  },
+  {
+    "id": "analogy-part-2-q20",
+    "q": "Choose the option with the same relationship: Genius : Idiot :: Happiness : ?",
+    "options": [
+      "Sorrow",
+      "Hardship",
+      "Moderate",
+      "Flabby"
+    ],
+    "correct": 0,
+    "explanation": "The two terms are opposites. Here, Genius is paired with Idiot; likewise, Happiness is paired with Sorrow."
+  },
+  {
+    "id": "analogy-part-2-q21",
+    "q": "Choose the option with the same relationship: Botany : Plants :: Entomology : ?",
+    "options": [
+      "Environment",
+      "Insects",
+      "Tissues",
+      "Man"
+    ],
+    "correct": 1,
+    "explanation": "The first term names a field that studies the subject in the second. Here, Botany is paired with Plants; likewise, Entomology is paired with Insects."
+  },
+  {
+    "id": "analogy-part-2-q22",
+    "q": "Choose the option with the same relationship: Pulp : Paper :: Hemp : ?",
+    "options": [
+      "Cigarette",
+      "Jewellery",
+      "Rope",
+      "Furniture"
+    ],
+    "correct": 2,
+    "explanation": "The first term is a material used to make the second. Here, Pulp is paired with Paper; likewise, Hemp is paired with Rope."
+  },
+  {
+    "id": "analogy-part-2-q23",
+    "q": "Choose the option with the same relationship: Newspaper : Press :: Cloth : ?",
+    "options": [
+      "Bakery",
+      "Kiln",
+      "Press",
+      "Mill"
+    ],
+    "correct": 3,
+    "explanation": "The second term is a place where the first is made. Here, Newspaper is paired with Press; likewise, Cloth is paired with Mill."
+  },
+  {
+    "id": "analogy-part-2-q24",
+    "q": "Choose the option with the same relationship: Acting : Theatre :: Gambling : ?",
+    "options": [
+      "Casino",
+      "Court",
+      "Ring",
+      "Theatre"
+    ],
+    "correct": 0,
+    "explanation": "The second term is a venue where the activity in the first is performed. Here, Acting is paired with Theatre; likewise, Gambling is paired with Casino."
+  },
+  {
+    "id": "analogy-part-2-q25",
+    "q": "Choose the option with the same relationship: Gambling : Casino :: Tennis : ?",
+    "options": [
+      "Ring",
+      "Court",
+      "Theatre",
+      "Casino"
+    ],
+    "correct": 1,
+    "explanation": "The second term is a venue where the activity in the first is performed. Here, Gambling is paired with Casino; likewise, Tennis is paired with Court."
+  }
+]
