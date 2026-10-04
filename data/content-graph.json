@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 422,
-  "edges": 2505,
+  "nodes": 428,
+  "edges": 2541,
   "silos": 35,
   "clusters": 51,
   "pillars": 34
@@ -1770,6 +1770,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "url": "/content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "url": "/content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "type": "page",
@@ -1796,6 +1808,18 @@
   {
    "id": "content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
    "url": "/content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/punjabi/evolution%20of%20computers/evolution-of-computers-pa.pdf",
+   "url": "/content/study-material/computer/punjabi/evolution%20of%20computers/evolution-of-computers-pa.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2831,6 +2855,54 @@
    "type": "study-material",
    "template": "",
    "title": "Cultural Fairs - Part 1 (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-evolution-of-computer-en",
+   "url": "/material-evolution-of-computer-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-evolution-of-computer-en.html",
+   "url": "/material-evolution-of-computer-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Evolution of Computers - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-evolution-of-computers-pa",
+   "url": "/material-evolution-of-computers-pa",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-evolution-of-computers-pa.html",
+   "url": "/material-evolution-of-computers-pa.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Evolution of Computers - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5583,6 +5655,18 @@
   },
   {
    "from": "archive-category-computer.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
    "to": "material-fundamentals-of-computer-punjabi.html",
    "rel": "contextual",
    "weight": 1
@@ -7641,6 +7725,18 @@
   },
   {
    "from": "archives.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-expansion-of-british-power-part-1-en.html",
    "rel": "contextual",
    "weight": 1
@@ -9009,13 +9105,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-expansion-of-british-power-part-1-en.html",
+   "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-expansion-of-british-power-part-1-pa.html",
+   "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -9190,6 +9286,174 @@
   {
    "from": "material-cultural-fairs-pa.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computer-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computer-en.html",
+   "to": "material-m-s-word.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "content/study-material/computer/punjabi/evolution%20of%20computers/evolution-of-computers-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "material-evolution-of-computers-pa",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-pa.html",
+   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10263,19 +10527,19 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer-punjabi.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-m-s-word.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10347,19 +10611,19 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computer.html",
+   "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamentals-of-computer.html",
    "to": "material-m-s-word.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10431,19 +10695,19 @@
   },
   {
    "from": "material-m-s-word.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-m-s-word.html",
+   "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-m-s-word.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10515,19 +10779,19 @@
   },
   {
    "from": "material-mobail-phon.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobail-phon.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobail-phon.html",
-   "to": "material-m-s-word.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobail-phon.html",
-   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10599,19 +10863,19 @@
   },
   {
    "from": "material-mobile-phone.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-mobile-phone.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-m-s-word.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -10683,19 +10947,19 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-ms-word-pa.html",
+   "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-ms-word-pa.html",
    "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-ms-word-pa.html",
-   "to": "material-m-s-word.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12297,7 +12561,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-expansion-of-british-power-part-1-en.html",
+   "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12381,7 +12645,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-expansion-of-british-power-part-1-en.html",
+   "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12465,7 +12729,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-expansion-of-british-power-part-1-en.html",
+   "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12549,7 +12813,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-expansion-of-british-power-part-1-en.html",
+   "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19905,6 +20169,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/english/fundamentals-of-computer/fundamentals-of-computer.pdf",
    "rel": "contextual",
    "weight": 1
@@ -19918,6 +20188,12 @@
   {
    "from": "study-material.html",
    "to": "content/study-material/computer/punjabi/M%20S%20word%20/ms-word-pa.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/punjabi/evolution%20of%20computers/evolution-of-computers-pa.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -20164,6 +20440,18 @@
   {
    "from": "study-material.html",
    "to": "material-cultural-fairs-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-evolution-of-computers-pa.html",
    "rel": "contextual",
    "weight": 1
   },
