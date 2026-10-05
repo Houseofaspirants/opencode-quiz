@@ -147,6 +147,14 @@
       .localeCompare(String(b.title || "").toLowerCase());
   };
 
+  // Chapter labels often contain numbers (for example, "Ch 2" and "Ch 10").
+  // Numeric collation keeps the displayed shelf in chapter order even when an
+  // older or cached manifest was generated with ordinary alphabetical sorting.
+  const chapterCollator = new Intl.Collator(undefined, {
+    numeric: true,
+    sensitivity: "base",
+  });
+
   const BADGE = {
     featured: ["badge-success", "Featured"],
     new: ["badge-warn", "New"],
@@ -755,9 +763,13 @@
     };
 
     const renderChapters = () => {
-      const total = chapters.length;
+      const orderedChapters = [...chapters].sort((a, b) =>
+        chapterCollator.compare(String(a.name || a.id || ""),
+                                String(b.name || b.id || "")) ||
+        chapterCollator.compare(String(a.id || ""), String(b.id || "")));
+      const total = orderedChapters.length;
       setBody((hier ? savedStrip() : "") + (total
-        ? chapters.map((c, i) => chapterCard(c, hrefFor(languageId, c.id), langName,
+        ? orderedChapters.map((c, i) => chapterCard(c, hrefFor(languageId, c.id), langName,
             hier ? {
               no: i + 1,
               total,
@@ -776,7 +788,7 @@
             `and its parts appear here on the next build — no page to write.`,
             `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor())}">Choose another language</a></p>`)),
         "grid grid-3");
-      setCount(`${plural(chapters.length, "chapter")} in ${langName} · ${plural(Number(lang && lang.count) || 0, "file")}`);
+      setCount(`${plural(orderedChapters.length, "chapter")} in ${langName} · ${plural(Number(lang && lang.count) || 0, "file")}`);
     };
 
     const renderParts = () => {

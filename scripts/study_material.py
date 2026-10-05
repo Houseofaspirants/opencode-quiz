@@ -14,7 +14,8 @@ Mirrors scripts/books_engine.py: a small module build_content.py calls once,
 writing one generated file. It is deliberately timestamp-free - ci.sh's final
 `git diff --exit-code` would otherwise drift on the clock alone - and sorted by
 `order`, then name, so the nav, the Study root grid, the subject pages and the
-sitemap all read the same rows in the same order.
+sitemap all read the same rows in the same order. Chapter labels use natural
+numeric ordering so `Ch 2` appears before `Ch 10`.
 
 Owned by the Study system only. The item-level records (title, description,
 size, badges, dates, search haystack) live in data/content-manifest.json - the
@@ -24,6 +25,7 @@ by `file`, never a second copy of them.
 """
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,6 +35,12 @@ OUT = ROOT / "data" / "study-manifest.json"
 
 DEFAULT_ICON = "\U0001f4da"        # books
 DEFAULT_COLOR = "#4f46e5"          # the site's brand indigo
+
+
+def natural_sort_key(value):
+    """Sort labels containing numbers in human reading order (Ch 2 before Ch 10)."""
+    return tuple((1, int(part)) if part.isdigit() else (0, part.casefold())
+                 for part in re.split(r"(\d+)", str(value)))
 
 
 def folders(base):
@@ -160,7 +168,8 @@ def _merge_languages(row_by_folder, folders):
                 node["chapters"].append(ch)
                 have.add(ch["id"])
     for node in merged:
-        node["chapters"].sort(key=lambda c: (str(c["name"]).lower(), c["id"]))
+        node["chapters"].sort(key=lambda c: (natural_sort_key(c["name"]),
+                                             natural_sort_key(c["id"])))
     # The site's own languages are always on offer - that is what a category
     # with no files of its own still offers its reader - and any other
     # language earns its place by having something in it. This keeps a
@@ -387,7 +396,8 @@ def language_rows(subject, records, universe):
             node["pages"] = sum(_pages_of(r)
                                 for r in by_chapter.get((lid, node["id"]), []))
             chapters.append(node)
-        chapters.sort(key=lambda c: (c["name"].lower(), c["id"]))
+        chapters.sort(key=lambda c: (natural_sort_key(c["name"]),
+                                     natural_sort_key(c["id"])))
         rows.append({"id": lid, "name": entry["name"],
                      "native": entry.get("native") or "",
                      "flag": entry.get("flag") or "",
