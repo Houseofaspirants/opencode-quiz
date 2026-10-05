@@ -173,16 +173,16 @@
       "color": "#ec4899",
       "description": "ਵ्यਾਕਰण, ਮੁਹਾਵਰੇ, ਅਖਾਂ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬੀ ਸਾਹਿਤਿਕ.",
       "order": 3,
-      "count": 1,
+      "count": 21,
       "newest": "2026-10-05",
-      "totalSize": 2688296,
+      "totalSize": 57128984,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 1,
+          "count": 21,
           "chapters": [
             {
               "id": "ch 1",
@@ -194,6 +194,226 @@
                 }
               ],
               "pages": 9
+            },
+            {
+              "id": "ch 10",
+              "name": "Ch 10",
+              "parts": [
+                {
+                  "file": "material-kiria-visheshn.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "ch 11",
+              "name": "Ch 11",
+              "parts": [
+                {
+                  "file": "material-sanbandhk.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 12",
+              "name": "Ch 12",
+              "parts": [
+                {
+                  "file": "material-yojk.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 13",
+              "name": "Ch 13",
+              "parts": [
+                {
+                  "file": "material-vismik.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 14",
+              "name": "Ch 14",
+              "parts": [
+                {
+                  "file": "material-smas-rchna.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 15",
+              "name": "Ch 15",
+              "parts": [
+                {
+                  "file": "material-vak-bodh.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "ch 16",
+              "name": "Ch 16",
+              "parts": [
+                {
+                  "file": "material-shudh-ashudh.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "ch 17",
+              "name": "Ch 17",
+              "parts": [
+                {
+                  "file": "material-muhavre.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "ch 18",
+              "name": "Ch 18",
+              "parts": [
+                {
+                  "file": "material-smanarthk-ate-virodhi-shbd.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "ch 19",
+              "name": "Ch 19",
+              "parts": [
+                {
+                  "file": "material-akhan.html",
+                  "n": 1
+                }
+              ],
+              "pages": 16
+            },
+            {
+              "id": "ch 2",
+              "name": "Ch 2",
+              "parts": [
+                {
+                  "file": "material-lipi-bodh.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 20 ",
+              "name": "Ch 20",
+              "parts": [
+                {
+                  "file": "material-angreji-ton-panjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 23
+            },
+            {
+              "id": "ch 21",
+              "name": "Ch 21",
+              "parts": [
+                {
+                  "file": "material-shbd-bdl.html",
+                  "n": 1
+                }
+              ],
+              "pages": 25
+            },
+            {
+              "id": "ch 3",
+              "name": "Ch 3",
+              "parts": [
+                {
+                  "file": "material-shbd-bodh.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 4",
+              "name": "Ch 4",
+              "parts": [
+                {
+                  "file": "material-nanv.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 5",
+              "name": "Ch 5",
+              "parts": [
+                {
+                  "file": "material-ling.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
+            },
+            {
+              "id": "ch 6",
+              "name": "Ch 6",
+              "parts": [
+                {
+                  "file": "material-vchn.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "ch 7",
+              "name": "Ch 7",
+              "parts": [
+                {
+                  "file": "material-kark.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "ch 8",
+              "name": "Ch 8",
+              "parts": [
+                {
+                  "file": "material-prnanv.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            },
+            {
+              "id": "ch 9",
+              "name": "Ch 9",
+              "parts": [
+                {
+                  "file": "material-visheshn.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         },
@@ -206,7 +426,7 @@
           "chapters": []
         }
       ],
-      "chapters": 1
+      "chapters": 21
     },
     {
       "id": "reasoning",
@@ -1829,6 +2049,6 @@
       "hidden": true
     }
   ],
-  "total": 47,
+  "total": 67,
   "generatedBy": "scripts/study_material.py"
 }
