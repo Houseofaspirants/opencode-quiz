@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 437,
-  "edges": 2600,
+  "nodes": 441,
+  "edges": 2628,
   "silos": 35,
   "clusters": 56,
   "pillars": 34
@@ -117,6 +117,18 @@
    "type": "archive",
    "template": "",
    "title": "preparation-strategy",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-punjabi.html",
+   "url": "/archive-category-punjabi.html",
+   "type": "archive",
+   "template": "",
+   "title": "Punjabi",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2214,6 +2226,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/punjabi/punjabi%20/ch%201/%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE.pdf",
+   "url": "/content/study-material/punjabi/punjabi%20/ch%201/%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/reasoning/english%20/Analogy%20/part%203%20%28english%29.pdf",
    "url": "/content/study-material/reasoning/english%20/Analogy%20/part%203%20%28english%29.pdf",
    "type": "page",
@@ -2843,6 +2867,30 @@
    "type": "study-material",
    "template": "",
    "title": "Articles - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-bhasha-ate-panjabi-bhasha",
+   "url": "/material-bhasha-ate-panjabi-bhasha",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-bhasha-ate-panjabi-bhasha.html",
+   "url": "/material-bhasha-ate-panjabi-bhasha.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Ch 1 - Part 1 (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6194,6 +6242,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-punjabi.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-punjabi.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-reasoning.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7617,6 +7707,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-reasoning.html",
    "rel": "contextual",
    "weight": 1
@@ -7834,6 +7930,12 @@
   {
    "from": "archives.html",
    "to": "material-articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9249,18 +9351,120 @@
   },
   {
    "from": "material-articles.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
    "to": "material-evolution-of-computer-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
+   "to": "material-fundamentals-of-computer.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "ca-current-affairs-july.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "content/study-material/punjabi/punjabi%20/ch%201/%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "material-bhasha-ate-panjabi-bhasha",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "material-part-1-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "material-part-1-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "material-part-2-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
+   "to": "material-evolution-of-computer-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
    "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-articles.html",
+   "from": "material-bhasha-ate-panjabi-bhasha.html",
    "to": "material-fundamentals-of-computer.html",
    "rel": "related-study-material",
    "weight": 1
@@ -12987,7 +13191,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13071,7 +13275,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13155,7 +13359,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13239,7 +13443,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20817,6 +21021,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/punjabi/punjabi%20/ch%201/%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/reasoning/english%20/Analogy%20/part%203%20%28english%29.pdf",
    "rel": "contextual",
    "weight": 1
@@ -20872,6 +21082,12 @@
   {
    "from": "study-material.html",
    "to": "material-articles.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-bhasha-ate-panjabi-bhasha.html",
    "rel": "contextual",
    "weight": 1
   },
