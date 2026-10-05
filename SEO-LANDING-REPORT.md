@@ -213,7 +213,7 @@ All landing metadata is **static HTML** - it is present before JavaScript runs, 
 ## 3. Internal links created (2713)
 
 - Links between generated entities: **2713**
-- Every internal anchor on the 161 generated pages: **5344** (includes links to site guides, `/faq`, `/mock` and the app views)
+- Every internal anchor on the 161 generated pages: **5345** (includes links to site guides, `/faq`, `/mock` and the app views)
 - Counts are re-read from the shipped HTML, not from the generator's log, so this table cannot drift from the pages themselves.
 - Every link is a plain `<a href>` in static HTML (no JS-dependent navigation).
 
