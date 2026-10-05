@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-04T07:56:26.818Z",
   "stats": {
     "subjects": 7,
-    "categories": 20,
-    "topics": 20,
-    "quizzes": 20,
-    "questions": 460,
+    "categories": 21,
+    "topics": 24,
+    "quizzes": 24,
+    "questions": 560,
     "studentsPracticed": 12500
   },
   "site": {
@@ -690,6 +690,126 @@
       "order": 3,
       "topics": [
         {
+          "id": "analogy-part-1",
+          "name": "Analogy Part 1",
+          "description": "",
+          "file": "questions/reasoning/analogy/analogy-part-1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791177066444,
+          "category": "analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/analogy/analogy-part-1-en.json",
+            "pa": "questions/reasoning/analogy/analogy-part-1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy Part 1",
+            "pa": "Analogy Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-analogy-part-1"
+        },
+        {
+          "id": "analogy-part-2",
+          "name": "Analogy Part 2",
+          "description": "",
+          "file": "questions/reasoning/analogy/analogy-part-2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791177066444,
+          "category": "analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/analogy/analogy-part-2-en.json",
+            "pa": "questions/reasoning/analogy/analogy-part-2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy Part 2",
+            "pa": "Analogy Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-analogy-part-2"
+        },
+        {
+          "id": "analogy-part-3",
+          "name": "Analogy Part 3",
+          "description": "",
+          "file": "questions/reasoning/analogy/analogy-part-3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791177066444,
+          "category": "analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/analogy/analogy-part-3-en.json",
+            "pa": "questions/reasoning/analogy/analogy-part-3-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy Part 3",
+            "pa": "Analogy Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-analogy-part-3"
+        },
+        {
+          "id": "analogy-part-4",
+          "name": "Analogy Part 4",
+          "description": "",
+          "file": "questions/reasoning/analogy/analogy-part-4-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791177066444,
+          "category": "analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/analogy/analogy-part-4-en.json",
+            "pa": "questions/reasoning/analogy/analogy-part-4-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy Part 4",
+            "pa": "Analogy Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-analogy-part-4"
+        },
+        {
           "id": "number-series-part-1",
           "name": "Number Series Part 1",
           "description": "",
@@ -907,6 +1027,135 @@
             }
           ],
           "landing": "/category-reasoning-number-series"
+        },
+        {
+          "id": "analogy",
+          "name": "Analogy",
+          "folder": "analogy",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "analogy-part-1",
+              "name": "Analogy Part 1",
+              "description": "",
+              "file": "questions/reasoning/analogy/analogy-part-1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791177066444,
+              "category": "analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/analogy/analogy-part-1-en.json",
+                "pa": "questions/reasoning/analogy/analogy-part-1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy Part 1",
+                "pa": "Analogy Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-analogy-part-1"
+            },
+            {
+              "id": "analogy-part-2",
+              "name": "Analogy Part 2",
+              "description": "",
+              "file": "questions/reasoning/analogy/analogy-part-2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791177066444,
+              "category": "analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/analogy/analogy-part-2-en.json",
+                "pa": "questions/reasoning/analogy/analogy-part-2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy Part 2",
+                "pa": "Analogy Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-analogy-part-2"
+            },
+            {
+              "id": "analogy-part-3",
+              "name": "Analogy Part 3",
+              "description": "",
+              "file": "questions/reasoning/analogy/analogy-part-3-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791177066444,
+              "category": "analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/analogy/analogy-part-3-en.json",
+                "pa": "questions/reasoning/analogy/analogy-part-3-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy Part 3",
+                "pa": "Analogy Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-analogy-part-3"
+            },
+            {
+              "id": "analogy-part-4",
+              "name": "Analogy Part 4",
+              "description": "",
+              "file": "questions/reasoning/analogy/analogy-part-4-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791177066444,
+              "category": "analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/analogy/analogy-part-4-en.json",
+                "pa": "questions/reasoning/analogy/analogy-part-4-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy Part 4",
+                "pa": "Analogy Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-analogy-part-4"
+            }
+          ],
+          "landing": "/category-reasoning-analogy"
         }
       ],
       "landing": "/subject-reasoning"
@@ -1552,6 +1801,22 @@
     "questions/reasoning/NUMBER SERIES/number-series-part-4.json": [
       "532703c9cd6589fc",
       1790311070443
+    ],
+    "questions/reasoning/analogy/analogy-part-1-en.json": [
+      "e85e682fb635a8fc",
+      1791177066444
+    ],
+    "questions/reasoning/analogy/analogy-part-2-en.json": [
+      "cd81f119b356ac75",
+      1791177066444
+    ],
+    "questions/reasoning/analogy/analogy-part-3-en.json": [
+      "0cc05dcf29d0e734",
+      1791177066444
+    ],
+    "questions/reasoning/analogy/analogy-part-4-en.json": [
+      "5124057fcfca5d67",
+      1791177066444
     ]
   }
 }

@@ -178,6 +178,94 @@
       }
     },
     {
+      "id": "analogy-part-1",
+      "subject": "reasoning",
+      "category": "analogy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Analogy Part 1",
+        "pa": "Analogy Part 1"
+      },
+      "variants": {
+        "en": "questions/reasoning/analogy/analogy-part-1-en.json",
+        "pa": "questions/reasoning/analogy/analogy-part-1-pa.json"
+      }
+    },
+    {
+      "id": "analogy-part-2",
+      "subject": "reasoning",
+      "category": "analogy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Analogy Part 2",
+        "pa": "Analogy Part 2"
+      },
+      "variants": {
+        "en": "questions/reasoning/analogy/analogy-part-2-en.json",
+        "pa": "questions/reasoning/analogy/analogy-part-2-pa.json"
+      }
+    },
+    {
+      "id": "analogy-part-3",
+      "subject": "reasoning",
+      "category": "analogy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Analogy Part 3",
+        "pa": "Analogy Part 3"
+      },
+      "variants": {
+        "en": "questions/reasoning/analogy/analogy-part-3-en.json",
+        "pa": "questions/reasoning/analogy/analogy-part-3-pa.json"
+      }
+    },
+    {
+      "id": "analogy-part-4",
+      "subject": "reasoning",
+      "category": "analogy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Analogy Part 4",
+        "pa": "Analogy Part 4"
+      },
+      "variants": {
+        "en": "questions/reasoning/analogy/analogy-part-4-en.json",
+        "pa": "questions/reasoning/analogy/analogy-part-4-pa.json"
+      }
+    },
+    {
       "id": "number-series-part-1",
       "subject": "reasoning",
       "category": "number-series",
