@@ -354,3 +354,20 @@
         'use the archives to browse everything published.</p>';
     });
 })();
+
+/* ============================================================================
+ * PDF reader loader
+ * ----------------------------------------------------------------------------
+ * A page with an inline reader (.pdf-reader) or a "Read" button
+ * ([data-pdf-preview]) gets assets/js/pdf-reader.js, fetched from the same
+ * folder as this file. Pages without one never download it.
+ * ========================================================================== */
+(() => {
+  "use strict";
+  if (!document.querySelector(".pdf-reader[data-pdf-src], [data-pdf-preview]")) return;
+  const me = document.querySelector('script[src*="assets/js/content.js"]');
+  const s = document.createElement("script");
+  s.src = me ? me.src.replace(/content\.js(\?.*)?$/, "pdf-reader.js") : "/assets/js/pdf-reader.js";
+  s.defer = true;
+  document.head.appendChild(s);
+})();

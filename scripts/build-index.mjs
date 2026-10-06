@@ -241,7 +241,7 @@ const reEsc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 
 function paTitle(name) {
   if (!name || GURMUKHI.test(name)) return name;
-  const m = name.match(/^(.*?)(\s*-\s*Part\s*\d+)?\s*$/);
+  const m = name.match(/^(.*?)(\s*-?\s*Part\s*\d+)?\s*$/);
   const base = m[1];
   const suffix = (m[2] || "").trim();
   const key = base.trim().replace(/\s*\d+\s*mcqs?\s*$/i, "").replace(/\s+/g, " ").trim().toLowerCase();

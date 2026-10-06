@@ -2076,6 +2076,20 @@ def study_nice_name(folder):
     text = re.sub(r"\s+", " ", re.sub(r"[_\-]+", " ", str(folder or ""))).strip()
     if not text:
         return str(folder or "")
+    # The language is already on the page: `sikhism-pa` reads `Sikhism`.
+    bare = re.sub(r"(?i)\s+(pa|en|punjabi|english)$", "", text).strip()
+    if bare:
+        text = bare
+    # `01 - Naav (Noun)` / `3 Naav`: the number orders the shelf and reads as
+    # the chapter number - `Chapter 1: Naav (Noun)`.
+    m = re.match(r"^0*(\d+)\s*[.)]?\s+(.+)$", text)
+    if m:
+        rest = m.group(2)
+        # Keep an English gloss in brackets: `ਨਾਂਵ (Noun)`.
+        pm = re.match(r"^(.*?)\s*\(([^)]+)\)\s*$", rest)
+        label = (f"{pdf_title_from_name(pm.group(1))} ({pdf_title_from_name(pm.group(2))})"
+                 if pm and pm.group(1).strip() else pdf_title_from_name(rest))
+        return clip(f"Chapter {int(m.group(1))}: {label}")
     m = re.match(r"(?i)\b(chapter|lesson|unit|part|book|topic)\s+(\d+)\s+(.+)$",
                  text)
     if m:
@@ -2144,8 +2158,12 @@ def study_title_for(path):
         lang_name = study_lang(lang_folder).get("name") or "English"
     else:
         lang_name = (STUDY_LANG.get(language) or {}).get("name") or "English"
-    position, _ = study_part_of(path)
+    position, total = study_part_of(path)
     chapter_name = study_nice_name(chapter or path.stem)
+    # A chapter with one file has no parts to tell apart: "Part 1" would be
+    # noise on the page, the card and the download.
+    if total <= 1:
+        return clip(f"{chapter_name} ({lang_name})")
     return clip(f"{chapter_name} - Part {position} ({lang_name})")
 
 
@@ -2546,7 +2564,8 @@ def study_card(r, facets=None):
         meta.append(str(r["sizeLabel"]))
     source = pdf_href(str(r.get("path") or ""))
     is_pdf = str(r.get("type") or "") == "pdf"
-    button = (f'<a class="btn btn-primary" href="{esc(source)}" download>'
+    button = (f'<a class="btn btn-primary" href="{esc(r["file"])}">📖 Read online</a>'
+              f'<a class="btn btn-ghost btn-sm" href="{esc(source)}" download>'
               f'⬇ Download</a>' if is_pdf and source else
               f'<a class="btn btn-soft" href="{esc(source)}">Open file</a>'
               if source else "")
@@ -3046,8 +3065,7 @@ def study_pdf_body(title, rel, published, label, record=None):
            lang.get("native") != lang_name else "")
         + "\n"
         + (f"- **Chapter:** {study_nice_name(chapter)}\n" if chapter else "")
-        + (f"- **Part:** Part {position} of {total}\n" if total > 1
-           or position > 0 else "")
+        + (f"- **Part:** Part {position} of {total}\n" if total > 1 else "")
         + f"\nThis page was generated automatically from `{where}/`. Its "
         f"subject, language and chapter come from the folders the file sits "
         f"in, its part number from its place among the files beside it, and "
@@ -3362,6 +3380,67 @@ def related_quizzes(record, index, landing, limit=3):
             if len(out) >= limit:
                 return out
     return out
+
+
+_QZ_STOP = {"part", "chapter", "english", "punjabi", "the", "and", "for", "with",
+            "mcq", "mcqs", "current", "affairs", "notes", "pdf", "free", "study",
+            "material", "paper", "question", "questions", "from", "into"}
+
+
+def _qz_tokens(text):
+    """Comparable words of a title: lower-case, no stop words, plural 's' off."""
+    out = set()
+    for w in re.findall(r"[a-z]+", str(text).lower()):
+        if len(w) < 3 or w in _QZ_STOP:
+            continue
+        out.add(w[:-1] if len(w) > 4 and w.endswith("s") else w)
+    return out
+
+
+def practice_link(record, index, landing):
+    """Where "Practice MCQs" on a reading page goes: the quiz whose name shares
+    the most words with this document (its own subject wins a tie), else the
+    subject's practice page, else the Practice hub. Always a real page."""
+    want = _qz_tokens(" ".join(str(record.get(k) or "") for k in
+                               ("title", "studyChapterName", "subtitle")))
+    subs = set(record.get("subjects") or [])
+    if record.get("studySubject"):
+        subs.add(str(record["studySubject"]))
+    if "current-affairs" in str(record.get("collection") or ""):
+        subs.add("current-affairs")
+    # A document whose subject has a quiz shelf only ever points into that
+    # shelf, so "One Word Substitution" (Punjabi) can never land on MS Word.
+    quiz_subjects = {s_["id"] for s_ in index.get("subjects", [])}
+    only = subs & quiz_subjects
+    part_rx = re.compile(r"part\s*-?\s*(\d+)", re.I)
+    pm = part_rx.search(str(record.get("title") or ""))
+    my_part = pm.group(1) if pm else "1"
+    best, best_score = None, 0.0
+    for subj in index.get("subjects", []):
+        if only and subj["id"] not in only:
+            continue
+        for t in subj.get("topics", []):
+            if not t.get("available"):
+                continue
+            score = float(len(want & _qz_tokens(t.get("name", ""))))
+            if not score:
+                continue
+            if subj["id"] in subs:
+                score += 0.5
+            tm = part_rx.search(str(t.get("name") or "") + " " + str(t.get("id") or ""))
+            if tm and tm.group(1) == my_part:
+                score += 0.25
+            if score > best_score:
+                best, best_score = (subj, t), score
+    if best:
+        subj, t = best
+        path = landing.get((subj["id"], t["id"])) or \
+            f"quiz.html?subject={subj['id']}&topic={t['id']}"
+        return path.lstrip("/") + ".html" if path.startswith("/quiz-") else path
+    for sid in sorted(subs):
+        if (ROOT / f"subject-{sid}.html").exists():
+            return f"subject-{sid}.html"
+    return "practice.html"
 
 
 # =============================================================================
@@ -4108,13 +4187,27 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
         meta_line.append(f'Updated {fmt_date(record["updated"])}')
 
     pdf_html = ""
+    reader_html = ""
     if record.get("pdf"):
-        pdf_html = (f'<a class="btn btn-primary" href="{esc(pdf_href(record["pdf"]))}" '
-                    f'download>⬇ Download PDF</a>')
-    if record.get("studySubject"):
-        # Read it here first; keep the file only if that is what you want.
-        pdf_html = ('<a class="btn btn-soft" href="#read">📖 Read Online</a>'
-                    + pdf_html)
+        # Read it here first, then practise; the file itself comes last.
+        src = esc(pdf_href(record["pdf"]))
+        read_href = f'/{record["file"]}#read' if record["lang"] == "pa" else "#read"
+        quiz_href = esc(practice_link(record, index, landing))
+        pages = int(record.get("pdfPages") or 0)
+        pdf_html = (f'<a class="btn btn-primary" href="{read_href}" data-pdf-open>📖 Read Online</a>'
+                    f'<a class="btn btn-soft" href="{quiz_href}" data-practice-link>📝 Practice MCQs</a>'
+                    f'<a class="btn btn-ghost btn-sm" href="{src}" download>⬇ Download PDF</a>')
+        reader_html = (
+            f'<div class="pdf-reader" data-pdf-src="{src}">'
+            f'<div class="pr-head"><span class="pr-label">📖 Read online'
+            f'{f" · {pages} pages" if pages else ""}</span>'
+            f'<a class="pr-dl" href="{src}" download>⬇ Download</a></div>'
+            f'<div class="pr-pages"><button type="button" class="btn btn-primary" '
+            f'data-pdf-open>📖 Start reading</button></div>'
+            f'<div class="pr-end"><p><b>Finished reading?</b> Check what you remember '
+            f'with a quick MCQ test.</p><p class="btn-row"><a class="btn btn-primary" '
+            f'href="{quiz_href}" data-practice-link>📝 Practice MCQs</a></p></div>'
+            f'</div>\n')
 
     # Community links the document itself points at - rendered only when the
     # front matter carries them.
@@ -4267,7 +4360,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
       <div class="container doc-layout">
         {toc_slot}
         <article class="doc-body prose">
-{record["bodyHtml"]}
+{reader_html}{record["bodyHtml"]}
         </article>
       </div>
     </section>
@@ -4835,7 +4928,11 @@ def hub_cards(coll, items, index, lang="en", facets=None):
 
 def _pyq_one_download(cell, label=None):
     """A single download link plus the facts measured off the file itself."""
-    bits = [f'<a class="btn btn-soft pyq-dl" href="{esc(pdf_href(cell["path"]))}"'
+    href = esc(pdf_href(cell["path"]))
+    bits = [f'<button type="button" class="btn btn-primary btn-sm pyq-dl" '
+            f'data-pdf-preview="{href}" data-pdf-title="{esc(cell.get("title") or cell.get("filename") or "")}">'
+            f'📖 Read</button>'
+            f'<a class="btn btn-ghost btn-sm pyq-dl" href="{href}"'
             f' download>Download &darr;</a>']
     if label:
         bits.append(f'<span class="pyq-file">{esc(label)}</span>')

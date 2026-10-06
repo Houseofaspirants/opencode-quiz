@@ -108,10 +108,10 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 82 | `/pa/topic-gk-sikhism-part2-20-mcqs` | topic-pa | ਸਿੱਖ ਧਰਮ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (35) | 156 | ਸਿੱਖ ਧਰਮ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 83 | `/pa/topic-gk-sikhism-part3-20-mcqs` | topic-pa | ਸਿੱਖ ਧਰਮ - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (35) | 156 | ਸਿੱਖ ਧਰਮ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 84 | `/pa/topic-gk-sikhism-part4-20-mcqs` | topic-pa | ਸਿੱਖ ਧਰਮ - Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (35) | 156 | ਸਿੱਖ ਧਰਮ - Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 85 | `/pa/topic-reasoning-analogy-part-1` | topic-pa | Analogy Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | Analogy Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 86 | `/pa/topic-reasoning-analogy-part-2` | topic-pa | Analogy Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | Analogy Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 87 | `/pa/topic-reasoning-analogy-part-3` | topic-pa | Analogy Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | Analogy Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 88 | `/pa/topic-reasoning-analogy-part-4` | topic-pa | Analogy Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | Analogy Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 85 | `/pa/topic-reasoning-analogy-part-1` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 86 | `/pa/topic-reasoning-analogy-part-2` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 87 | `/pa/topic-reasoning-analogy-part-3` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 88 | `/pa/topic-reasoning-analogy-part-4` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 89 | `/pa/topic-computer-fundamentals-of-computers-part1` | topic-pa | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 90 | `/pa/topic-computer-ms-word-part-1` | topic-pa | ਐਮ.ਐਸ. ਵਰਡ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (37) | 158 | ਐਮ.ਐਸ. ਵਰਡ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 91 | `/pa/topic-computer-ms-word-part-2` | topic-pa | ਐਮ.ਐਸ. ਵਰਡ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (37) | 158 | ਐਮ.ਐਸ. ਵਰਡ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
@@ -193,7 +193,7 @@ Intro word counts: min 13, max 371. Every subject page clears the 250-word intro
 - **Unique titles:** 161/161 ✅
 - **Unique meta descriptions:** 161/161 ✅
 - **Unique canonical URLs:** 161/161 ✅
-- **Title length:** 32-60 chars (Google truncates at ~60)
+- **Title length:** 35-60 chars (Google truncates at ~60)
 - **Description length:** 140-160 chars (target window 140-160)
 - **Robots:** `index, follow` on every landing page; canonical is the page's own extensionless URL (`https://houseofaspirants.in/<slug>`).
 

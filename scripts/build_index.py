@@ -256,7 +256,7 @@ def pa_title(name):
     """The Gurmukhi form of a Punjabi set's title, or the name unchanged."""
     if not name or _GURMUKHI.search(name):
         return name
-    m = re.match(r"^(.*?)(\s*-\s*Part\s*\d+)?\s*$", name)
+    m = re.match(r"^(.*?)(\s*-?\s*Part\s*\d+)?\s*$", name)
     base, suffix = m.group(1), (m.group(2) or "").strip()
     key = re.sub(r"\s+", " ", re.sub(r"\s*\d+\s*mcqs?\s*$", "", base.strip(), flags=re.I)).strip().lower()
     out = _PA_TOPICS.get(key)

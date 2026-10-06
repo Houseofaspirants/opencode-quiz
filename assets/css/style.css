@@ -3993,3 +3993,29 @@ body.rbv-open { overflow: hidden; }
 .my-exam [data-pick]:hover,.my-exam [data-pick]:focus-visible{border-color:#4f46e5;color:#4f46e5}
 .my-exam [data-my-exam-change]{background:none;border:0;color:var(--muted);text-decoration:underline;
   min-height:44px;padding:0 8px;cursor:pointer;font:inherit}
+
+/* ------------------------------------------------ PDF reader (pdf-reader.js)
+   Read a PDF on the page first; the download sits beside it, smaller. */
+.pdf-reader { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface); margin: 0 0 26px; overflow: hidden; }
+.pr-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--border); font-weight: 600; font-size: 0.92rem; }
+.pr-tools { display: inline-flex; align-items: center; gap: 12px; }
+.prose .pr-dl, .pr-dl { font-size: 0.84rem; font-weight: 500; color: var(--muted); text-decoration: none; white-space: nowrap; }
+.pr-pages { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 12px; min-height: 140px; background: var(--bg-2); }
+.pr-page { position: relative; width: 100%; max-width: 900px; background: #fff; box-shadow: 0 1px 5px rgba(15, 23, 42, 0.2); }
+.pr-page canvas { display: block; width: 100%; height: auto; }
+.pr-num { position: absolute; right: 8px; bottom: 6px; font-size: 0.72rem; color: #555; background: rgba(255, 255, 255, 0.9); padding: 1px 7px; border-radius: 8px; }
+.pr-msg { color: var(--muted); text-align: center; margin: 0; padding: 18px; }
+.pr-end { padding: 16px 14px; border-top: 1px solid var(--border); text-align: center; }
+.pr-end p { margin: 0 0 10px; }
+.pr-end .btn-row { justify-content: center; margin: 0; }
+.prose .pdf-reader .btn { text-decoration: none; }
+.prose .pdf-reader .btn-primary, .prose .pdf-reader .btn-primary:hover { color: #fff; }
+.pr-on .doc-cover { display: none; }
+.doc-body .pdf-reader a.pr-dl { display: inline; min-height: 0; padding: 0; border: 0; background: none; box-shadow: none; color: var(--muted); font-weight: 500; font-size: 0.84rem; }
+.doc-body .pdf-reader a.pr-dl::before { content: none; }
+.pr-lock, .pr-lock body { overflow: hidden; }
+.pr-modal { position: fixed; inset: 0; z-index: 1000; display: flex; justify-content: center; background: rgba(2, 6, 23, 0.65); }
+.pr-modal .pdf-reader { display: flex; flex-direction: column; width: 100%; max-width: 980px; margin: 0; border-radius: 0; }
+.pr-modal .pr-pages { flex: 1; overflow: auto; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
+.pr-x { border: 0; background: var(--bg-2); color: var(--text); width: 34px; height: 34px; border-radius: 50%; font-size: 1rem; cursor: pointer; }
+@media (min-width: 768px) { .pr-modal { padding: 24px; } .pr-modal .pdf-reader { border-radius: var(--r-md); } }

@@ -54,7 +54,7 @@
                   "n": 1
                 }
               ],
-              "pages": 45
+              "pages": 12
             },
             {
               "id": "M S word ",
@@ -96,7 +96,7 @@
                   "n": 1
                 }
               ],
-              "pages": 45
+              "pages": 14
             },
             {
               "id": "evolution of computers",
@@ -174,7 +174,7 @@
       "description": "ਵ्यਾਕਰण, ਮੁਹਾਵਰੇ, ਅਖਾਂ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬੀ ਸਾਹਿਤਿਕ.",
       "order": 3,
       "count": 21,
-      "newest": "2026-10-05",
+      "newest": "2026-10-06",
       "totalSize": 57128984,
       "languages": [
         {
@@ -185,8 +185,8 @@
           "count": 21,
           "chapters": [
             {
-              "id": "ch 1",
-              "name": "Ch 1",
+              "id": "01 - ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language)",
+              "name": "Chapter 1: ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language)",
               "parts": [
                 {
                   "file": "material-bhasha-ate-panjabi-bhasha.html",
@@ -196,8 +196,8 @@
               "pages": 9
             },
             {
-              "id": "ch 2",
-              "name": "Ch 2",
+              "id": "02 - ਲਿਪੀ ਬੋਧ (Gurmukhi Script)",
+              "name": "Chapter 2: ਲਿਪੀ ਬੋਧ (Gurmukhi Script)",
               "parts": [
                 {
                   "file": "material-lipi-bodh.html",
@@ -207,8 +207,8 @@
               "pages": 7
             },
             {
-              "id": "ch 3",
-              "name": "Ch 3",
+              "id": "03 - ਸ਼ਬਦ ਬੋਧ (Words)",
+              "name": "Chapter 3: ਸ਼ਬਦ ਬੋਧ (Words)",
               "parts": [
                 {
                   "file": "material-shbd-bodh.html",
@@ -218,8 +218,8 @@
               "pages": 7
             },
             {
-              "id": "ch 4",
-              "name": "Ch 4",
+              "id": "04 - ਨਾਂਵ (Noun)",
+              "name": "Chapter 4: ਨਾਂਵ (Noun)",
               "parts": [
                 {
                   "file": "material-nanv.html",
@@ -229,8 +229,8 @@
               "pages": 7
             },
             {
-              "id": "ch 5",
-              "name": "Ch 5",
+              "id": "05 - ਲਿੰਗ (Gender)",
+              "name": "Chapter 5: ਲਿੰਗ (Gender)",
               "parts": [
                 {
                   "file": "material-ling.html",
@@ -240,8 +240,8 @@
               "pages": 7
             },
             {
-              "id": "ch 6",
-              "name": "Ch 6",
+              "id": "06 - ਵਚਨ (Number)",
+              "name": "Chapter 6: ਵਚਨ (Number)",
               "parts": [
                 {
                   "file": "material-vchn.html",
@@ -251,8 +251,8 @@
               "pages": 8
             },
             {
-              "id": "ch 7",
-              "name": "Ch 7",
+              "id": "07 - ਕਾਰਕ (Case)",
+              "name": "Chapter 7: ਕਾਰਕ (Case)",
               "parts": [
                 {
                   "file": "material-kark.html",
@@ -262,8 +262,8 @@
               "pages": 8
             },
             {
-              "id": "ch 8",
-              "name": "Ch 8",
+              "id": "08 - ਪੜਨਾਂਵ (Pronoun)",
+              "name": "Chapter 8: ਪੜਨਾਂਵ (Pronoun)",
               "parts": [
                 {
                   "file": "material-prnanv.html",
@@ -273,8 +273,8 @@
               "pages": 8
             },
             {
-              "id": "ch 9",
-              "name": "Ch 9",
+              "id": "09 - ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
+              "name": "Chapter 9: ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
               "parts": [
                 {
                   "file": "material-visheshn.html",
@@ -284,8 +284,8 @@
               "pages": 7
             },
             {
-              "id": "ch 10",
-              "name": "Ch 10",
+              "id": "10 - ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
+              "name": "Chapter 10: ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
               "parts": [
                 {
                   "file": "material-kiria-visheshn.html",
@@ -295,8 +295,8 @@
               "pages": 8
             },
             {
-              "id": "ch 11",
-              "name": "Ch 11",
+              "id": "11 - ਸੰਬੰਧਕ (Preposition)",
+              "name": "Chapter 11: ਸੰਬੰਧਕ (Preposition)",
               "parts": [
                 {
                   "file": "material-sanbandhk.html",
@@ -306,8 +306,8 @@
               "pages": 7
             },
             {
-              "id": "ch 12",
-              "name": "Ch 12",
+              "id": "12 - ਯੋਜਕ (Conjunction)",
+              "name": "Chapter 12: ਯੋਜਕ (Conjunction)",
               "parts": [
                 {
                   "file": "material-yojk.html",
@@ -317,8 +317,8 @@
               "pages": 7
             },
             {
-              "id": "ch 13",
-              "name": "Ch 13",
+              "id": "13 - ਵਿਸਮਿਕ (Interjection)",
+              "name": "Chapter 13: ਵਿਸਮਿਕ (Interjection)",
               "parts": [
                 {
                   "file": "material-vismik.html",
@@ -328,8 +328,8 @@
               "pages": 7
             },
             {
-              "id": "ch 14",
-              "name": "Ch 14",
+              "id": "14 - ਸਮਾਸ ਰਚਨਾ (Compound Words)",
+              "name": "Chapter 14: ਸਮਾਸ ਰਚਨਾ (Compound Words)",
               "parts": [
                 {
                   "file": "material-smas-rchna.html",
@@ -339,8 +339,8 @@
               "pages": 7
             },
             {
-              "id": "ch 15",
-              "name": "Ch 15",
+              "id": "15 - ਵਾਕ ਬੋਧ (Sentence)",
+              "name": "Chapter 15: ਵਾਕ ਬੋਧ (Sentence)",
               "parts": [
                 {
                   "file": "material-vak-bodh.html",
@@ -350,8 +350,8 @@
               "pages": 10
             },
             {
-              "id": "ch 16",
-              "name": "Ch 16",
+              "id": "16 - ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ (Correct Usage)",
+              "name": "Chapter 16: ਸ਼ੁੱਧ ਅਸ਼ੁੱਧ (Correct Usage)",
               "parts": [
                 {
                   "file": "material-shudh-ashudh.html",
@@ -361,8 +361,8 @@
               "pages": 8
             },
             {
-              "id": "ch 17",
-              "name": "Ch 17",
+              "id": "17 - ਮੁਹਾਵਰੇ (Idioms)",
+              "name": "Chapter 17: ਮੁਹਾਵਰੇ (Idioms)",
               "parts": [
                 {
                   "file": "material-muhavre.html",
@@ -372,8 +372,8 @@
               "pages": 12
             },
             {
-              "id": "ch 18",
-              "name": "Ch 18",
+              "id": "18 - ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms and Antonyms)",
+              "name": "Chapter 18: ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms and Antonyms)",
               "parts": [
                 {
                   "file": "material-smanarthk-ate-virodhi-shbd.html",
@@ -383,8 +383,8 @@
               "pages": 13
             },
             {
-              "id": "ch 19",
-              "name": "Ch 19",
+              "id": "19 - ਅਖਾਣ (Proverbs)",
+              "name": "Chapter 19: ਅਖਾਣ (Proverbs)",
               "parts": [
                 {
                   "file": "material-akhan.html",
@@ -394,8 +394,8 @@
               "pages": 16
             },
             {
-              "id": "ch 20 ",
-              "name": "Ch 20",
+              "id": "20 - ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ (Translation)",
+              "name": "Chapter 20: ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ (Translation)",
               "parts": [
                 {
                   "file": "material-angreji-ton-panjabi.html",
@@ -405,8 +405,8 @@
               "pages": 23
             },
             {
-              "id": "ch 21",
-              "name": "Ch 21",
+              "id": "21 - ਸ਼ਬਦ ਬਦਲ (One Word Substitution)",
+              "name": "Chapter 21: ਸ਼ਬਦ ਬਦਲ (One Word Substitution)",
               "parts": [
                 {
                   "file": "material-shbd-bdl.html",
@@ -1171,7 +1171,7 @@
                     "chapters": [
                       {
                         "id": "sikhism-pa",
-                        "name": "Sikhism Pa",
+                        "name": "Sikhism",
                         "parts": [
                           {
                             "file": "material-sikhism-pa.html",
@@ -1788,7 +1788,7 @@
           "chapters": [
             {
               "id": "sikhism-pa",
-              "name": "Sikhism Pa",
+              "name": "Sikhism",
               "parts": [
                 {
                   "file": "material-sikhism-pa.html",

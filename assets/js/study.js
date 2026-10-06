@@ -191,8 +191,11 @@
     // The path, not an absolute URL: every other file link on the site is
     // relative, so this works from a preview build and from production.
     const src = String(it.path || it.source || "");
+    // Read on the site first (the page carries the reader and the practice
+    // link); the file itself is the smaller, second button.
     const btn = src && it.type === "pdf"
-      ? `<a class="btn btn-primary" href="${esc(src)}" download>⬇ Download</a>`
+      ? `<a class="btn btn-primary" href="${esc(it.file)}">📖 Read online</a>` +
+        `<a class="btn btn-ghost btn-sm" href="${esc(src)}" download>⬇ Download</a>`
       : src ? `<a class="btn btn-soft" href="${esc(src)}">Open file</a>` : "";
     return `
       <div class="card card-pad study-card">
@@ -294,13 +297,24 @@
      build published, so the card cannot claim a page nobody uploaded. */
   const chapterCard = (c, href, langName, opts) => {
     const parts = (c.parts || []).length;
+    // One file in the chapter: no parts page to pass through - the card
+    // opens the material itself and says what it is (PDF, size, minutes).
+    const single = parts === 1 ? partItem(c.parts[0]) : null;
+    if (single && single.file) href = single.file;
+    const singleMeta = single ? [
+      single.type ? String(single.type).toUpperCase() : "",
+      single.sizeLabel ? String(single.sizeLabel) : "",
+      single.readingMinutes ? `${single.readingMinutes} min read` : "",
+    ].filter(Boolean).join(" · ") : "";
+    const lead = single ? "Read online, then practise the MCQs." : `${plural(parts, "part")}, in reading order.`;
+    const metaLine = single ? (singleMeta || langName) : `${langName} · ${plural(parts, "part")}`;
     if (!opts) {
       return `
         <a class="card card-pad study-card" href="${esc(href)}">
           <span class="eyebrow">${esc(langName)} · Chapter</span>
           <h3>${esc(c.name)}</h3>
-          <p class="muted">${plural(parts, "part")}, in reading order.</p>
-          <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}</p>
+          <p class="muted">${esc(lead)}</p>
+          <p class="study-meta">${esc(metaLine)}</p>
         </a>`;
     }
 
@@ -326,8 +340,8 @@
           <div class="card-badges">${badges}</div>
           <span class="eyebrow">${esc(langName)} · Chapter</span>
           <h3><a href="${esc(href)}">${esc(c.name)}</a></h3>
-          <p class="muted">${plural(parts, "part")}, in reading order.</p>
-          <p class="study-meta">${esc(langName)} · ${plural(parts, "part")}${pages ? ` · ${plural(pages, "page")}` : ""}</p>
+          <p class="muted">${esc(lead)}</p>
+          <p class="study-meta">${esc(single ? metaLine : `${langName} · ${plural(parts, "part")}`)}${!single && pages ? ` · ${plural(pages, "page")}` : ""}</p>
           <p class="btn-row" style="margin-top:14px">
             <a class="btn btn-primary st-act" href="${esc(href)}">Open chapter →</a>
             <button type="button" class="btn btn-soft st-act"
@@ -362,8 +376,9 @@
 
   /** A part, as the content build describes it: the tree supplies the `file`
       and the card fields all come from the manifest row behind it. */
-  const partRow = (part) => {
+  const partRow = (part, _i, all) => {
     const it = partItem(part);
+    const only = Array.isArray(all) && all.length === 1;
     const n = Number(part.n) || 0;
     const badges = (Array.isArray(it.badges) ? it.badges : [])
       .map((b) => BADGE[String(b)]).filter(Boolean)
@@ -378,7 +393,7 @@
         <li>
           <a class="part-row" href="${esc(it.file)}">
             <span class="pr-head">
-              <span class="pr-num">Part ${n}</span>
+              <span class="pr-num">${only ? "Read chapter" : `Part ${n}`}</span>
               ${badges ? `<span class="pr-badges">${badges}</span>` : ""}
             </span>
             ${it.description ? `<span class="pr-desc">${esc(it.description)}</span>` : ""}
@@ -609,8 +624,10 @@
         : step === "chapter"
           ? `${plural(chapters.length, "chapter")} published in ${langName} under ` +
              `${nodeName}. Open one to see its parts.`
-          : `${plural(chapterParts.length, "part")} in reading order, in ${langName}. ` +
-             `Read online or download — the part before and after it is always one tap away.`;
+          : chapterParts.length === 1
+            ? `Read online or download, in ${langName}.`
+            : `${plural(chapterParts.length, "part")} in reading order, in ${langName}. ` +
+              `Read online or download — the part before and after it is always one tap away.`;
     }
     if (back instanceof HTMLAnchorElement) {
       let backHref = step === "language" ? "study.html"
@@ -800,7 +817,8 @@
             `and it becomes part one on the next build.`,
             `<p class="mt-2"><a class="btn btn-soft" href="${esc(hrefFor(languageId))}">All ${esc(langName)} chapters →</a></p>`),
         "part-wrap");
-      setCount(`${plural(chapterParts.length, "part")} in reading order · ${langName}`);
+      setCount(chapterParts.length === 1 ? langName
+        : `${plural(chapterParts.length, "part")} in reading order · ${langName}`);
     };
 
     /* Search starts only once a language is chosen, and it stays inside that
