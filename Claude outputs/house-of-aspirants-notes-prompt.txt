@@ -1,0 +1,136 @@
+You are formatting study notes for "House of Aspirants" (houseofaspirants.in), a Punjab government-exam prep academy (Punjab Police, PSSSB, PPSC). Output ONE complete HTML file, in a single code block, that follows the template below exactly: same <style>, same class names, same opener block. Do not add your own CSS, colours or fonts.
+
+CHAPTER DETAILS
+- Subject: [SUBJECT, e.g. Logical Reasoning / Computer / Punjab GK / English Grammar / Punjabi]
+- Chapter number: [NO]
+- Title (English): [TITLE EN]
+- Title (Punjabi): [TITLE PA]
+- Language: [Bilingual: English first, then the same in Punjabi (Gurmukhi)  OR  English only  OR  Punjabi only]
+
+SOURCE CONTENT
+[Paste the chapter text here, or attach the old PDF.]
+
+MODE (keep one line, delete the other)
+- KEEP CONTENT: Do not add, remove or reword any fact, sentence or MCQ. Only place the existing content into the template: headings → h2/h3, definitions and key facts → .box.concept, tips → .box.exam, tables → table, MCQs → ol.mcq, answers → .key. Keep every table row and every list item.
+- IMPROVE CONTENT: Keep everything useful, fix errors, remove filler, and cover every question type asked in Punjab Police/PSSSB/SSC papers. For each type: short method, a .trick box if a real shortcut exists, 4–6 worked examples (.ex) with 4 options and a step-by-step solution. Add SVG figures where a picture helps (family tree, direction path, Venn diagram, seating plan, figure series). End with 50 practice MCQs (answers spread evenly over A/B/C/D, never the same letter 3 times in a row, exactly one correct option), an answer key with one-line explanations, and a quick-revision box. Check every answer yourself.
+
+RULES
+- Bilingual pattern: an English element is followed by the same content in Punjabi with class "pa" (p.pa, .q.pa, h2 > span.pa).
+- Natural Gurmukhi as in Punjab exam books; keep common English terms (Venn diagram, code, option) in English.
+- No emojis, no meta sentences like "this chapter covers the next topic".
+- Fill the "In this chapter" list with 4–6 short items.
+- If the output is too long for one reply, continue in the next reply from exactly where you stopped (I will join the parts).
+
+TEMPLATE
+```html
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@700&family=Poppins:wght@500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+@page { size: 768.24pt 1023.84pt; margin: 56pt 58pt 56pt 58pt }
+* { box-sizing: border-box }
+html { -webkit-print-color-adjust: exact; print-color-adjust: exact }
+body { margin: 0; font-family: 'Inter','Noto Sans Gurmukhi',sans-serif; font-size: 11.6pt; line-height: 1.6; color: #1d2740 }
+.wm { position: fixed; top: 50%; left: 50%; width: 400pt; transform: translate(-50%,-50%); opacity: .09; z-index: -1 }
+.pa, [lang=pa] { font-family: 'Noto Sans Gurmukhi','Inter',sans-serif; color: #34405e }
+p { margin: 0 0 7pt }
+p.pa { margin-top: -3pt; font-size: 11.2pt }
+b, strong { color: #0b1d4a; font-weight: 700 }
+/* chapter opener */
+.opener { border-radius: 14pt; overflow: hidden; margin-bottom: 18pt; break-inside: avoid; border: 1pt solid #e3dccb }
+.opener .bar { background: linear-gradient(135deg,#132c66,#0b1d4a); color: #fff; padding: 22pt 24pt 18pt; border-bottom: 4pt solid #c9962b }
+.opener .no { font: 600 11pt 'Poppins',sans-serif; letter-spacing: 3pt; color: #e8c66a; text-transform: uppercase }
+.opener h1 { font: 700 30pt/1.15 'Lora',serif; margin: 6pt 0 2pt; color: #fff }
+.opener .pt { font: 600 17pt 'Noto Sans Gurmukhi',sans-serif; color: #dfe6f6 }
+.opener .learn { background: #fffdf7; padding: 14pt 24pt 12pt }
+.opener .learn h4 { margin: 0 0 6pt; font: 700 10pt 'Poppins',sans-serif; letter-spacing: 2pt; color: #8a6a1f; text-transform: uppercase }
+.opener .learn ul { margin: 0; padding: 0; list-style: none; columns: 2; column-gap: 20pt }
+.opener .learn li { break-inside: avoid; padding-left: 14pt; position: relative; font-size: 11pt; margin-bottom: 4pt }
+.opener .learn li:before { content: ""; position: absolute; left: 0; top: 7pt; width: 6pt; height: 6pt; border-radius: 50%; background: #c9962b }
+/* headings */
+h2 { font: 700 19pt/1.25 'Lora',serif; color: #0b1d4a; margin: 22pt 0 10pt; padding: 0 0 6pt; border-bottom: 2pt solid #c9962b; break-after: avoid }
+h2 .pa { display: block; font: 600 13.5pt 'Noto Sans Gurmukhi',sans-serif; color: #6b5a2e; margin-top: 2pt }
+h2.type .tag { display: inline-block; font: 700 9.5pt 'Poppins',sans-serif; letter-spacing: 1.5pt; background: #0b1d4a; color: #e8c66a;
+  padding: 3pt 8pt; border-radius: 4pt; vertical-align: 4pt; margin-right: 8pt; text-transform: uppercase }
+h3 { font: 700 13.5pt 'Poppins','Noto Sans Gurmukhi',sans-serif; color: #0b1d4a; margin: 16pt 0 6pt; break-after: avoid }
+h3 .pa { font-weight: 600; font-size: 12pt; color: #6b5a2e }
+/* boxes */
+.box { border-radius: 10pt; padding: 12pt 15pt 8pt; margin: 10pt 0 12pt; break-inside: avoid; border: 1pt solid; position: relative }
+.box > .lbl { font: 700 9.5pt 'Poppins',sans-serif; letter-spacing: 1.5pt; text-transform: uppercase; margin-bottom: 5pt; display: block }
+.concept { background: #f4f7fd; border-color: #d5def0 } .concept > .lbl { color: #132c66 }
+.trick { background: #fff8e6; border-color: #f0d792 } .trick > .lbl { color: #8a6a1f }
+.mistake { background: #fdf1f0; border-color: #f2cdc9 } .mistake > .lbl { color: #a3342a }
+.exam { background: #eef8f2; border-color: #c8e6d3 } .exam > .lbl { color: #1f7a45 }
+.revise { background: #0b1d4a; color: #fff; border-color: #0b1d4a } .revise > .lbl { color: #e8c66a }
+.revise b { color: #e8c66a } .revise .pa { color: #d5dcef }
+.box ul, .box ol { margin: 2pt 0 4pt; padding-left: 17pt } .box li { margin-bottom: 3pt }
+/* tables */
+table { width: 100%; border-collapse: collapse; margin: 8pt 0 14pt; font-size: 10.8pt; break-inside: avoid }
+th { background: #0b1d4a; color: #fff; font: 600 10pt 'Poppins','Noto Sans Gurmukhi',sans-serif; text-align: left; padding: 6pt 8pt }
+td { padding: 5pt 8pt; border-bottom: 1pt solid #e4e0d4; vertical-align: top }
+tr:nth-child(even) td { background: rgba(244,242,236,.7) }
+/* worked examples */
+.ex { border: 1pt solid #e1dccd; border-left: 4pt solid #0b1d4a; border-radius: 8pt; padding: 10pt 14pt 8pt; margin: 9pt 0; background: rgba(255,255,255,.85); break-inside: avoid }
+.ex .q { font-weight: 600; color: #0b1d4a }
+.ex .q:before { content: attr(data-n); display: inline-block; min-width: 26pt; font: 700 10pt 'Poppins',sans-serif; color: #c9962b; }
+.ex .q.pa { font-weight: 500; color: #34405e } .ex .q.pa:before { content: ""; min-width: 26pt }
+.opts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3pt 10pt; margin: 4pt 0 4pt 26pt; font-size: 11pt }
+.opts.two { grid-template-columns: repeat(2, 1fr) } .opts.one { grid-template-columns: 1fr }
+.opts span b { color: #c9962b; margin-right: 3pt }
+.sol { margin: 6pt 0 2pt 26pt; padding-top: 6pt; border-top: 1pt dashed #d8d2c2; font-size: 11pt }
+.sol .ans { display: inline-block; background: #0b1d4a; color: #fff; font: 600 10pt 'Poppins','Noto Sans Gurmukhi',sans-serif; padding: 2pt 8pt; border-radius: 10pt; margin-bottom: 4pt }
+.sol .ans b { color: #e8c66a }
+.sol ol, .sol ul { margin: 2pt 0; padding-left: 16pt }
+/* figures */
+figure { margin: 8pt 0 12pt; text-align: center; break-inside: avoid }
+figure svg { max-width: 100%; height: auto }
+figcaption { font-size: 10pt; color: #5b6580; margin-top: 4pt }
+.figrow { display: flex; gap: 10pt; justify-content: center; align-items: flex-end; flex-wrap: wrap }
+.figrow .cell { text-align: center; font: 600 10pt 'Poppins',sans-serif; color: #0b1d4a }
+.figrow .cell svg { display: block; border: 1pt solid #d9d3c3; border-radius: 6pt; background: #fff; margin-bottom: 3pt }
+/* practice */
+.practice-head { break-before: page }
+ol.mcq { list-style: none; padding: 0; margin: 0; counter-reset: q }
+ol.mcq > li { counter-increment: q; break-inside: avoid; padding: 7pt 0 6pt; border-bottom: 1pt solid #ebe6da }
+ol.mcq > li > .q { font-weight: 600; color: #0b1d4a }
+ol.mcq > li > .q:before { content: counter(q) "."; display: inline-block; min-width: 26pt; font: 700 10.5pt 'Poppins',sans-serif; color: #c9962b }
+ol.mcq > li > .q.pa { font-weight: 500; color: #34405e } ol.mcq > li > .q.pa:before { content: ""; }
+ol.mcq > li > figure { margin: 4pt 0 4pt 26pt; text-align: left }
+.key { break-before: page }
+.keygrid { display: grid; grid-template-columns: repeat(10, 1fr); gap: 4pt; margin: 6pt 0 14pt }
+.keygrid span { border: 1pt solid #ddd6c4; border-radius: 5pt; text-align: center; padding: 3pt 0; font: 600 10pt 'Poppins',sans-serif; background: #fff }
+.keygrid span b { color: #c9962b }
+ol.expl { padding-left: 0; list-style: none; font-size: 10.6pt }
+ol.expl li { break-inside: avoid; padding: 4pt 0; border-bottom: 1pt dotted #ddd6c4 }
+ol.expl li > b:first-child { color: #c9962b; display: inline-block; min-width: 40pt }
+.keep { break-inside: avoid }
+.pb { break-before: page }
+code, .mono { font-family: 'DejaVu Sans Mono',monospace; font-size: 10.5pt; background: #f1eee5; padding: 0 3pt; border-radius: 3pt }
+</style></head><body>
+<img class="wm" src="logo.png" alt="">
+<div class="learn"><h4>In this chapter · ਇਸ ਅਧਿਆਇ ਵਿੱਚ</h4><ul><li>…</li><li>…</li><li>…</li><li>…</li></ul></div></div>
+
+<!-- COMPONENTS (use exactly these classes) -->
+<h2>Section heading<span class="pa">ਪੰਜਾਬੀ ਸਿਰਲੇਖ</span></h2>
+<p>English paragraph.</p><p class="pa">ਪੰਜਾਬੀ ਪੈਰਾ।</p>
+<h2 class="type"><span class="tag">Type 1</span>Question type name<span class="pa">ਪੰਜਾਬੀ ਨਾਂ</span></h2>
+<h3>Sub heading <span class="pa">ਉਪ-ਸਿਰਲੇਖ</span></h3>
+<div class="box concept"><span class="lbl">Key idea · ਮੁੱਖ ਗੱਲ</span><p>…</p><p class="pa">…</p></div>
+<div class="box trick"><span class="lbl">Shortcut · ਸ਼ਾਰਟਕੱਟ</span><p>…</p></div>
+<div class="box mistake"><span class="lbl">Common mistake · ਆਮ ਗਲਤੀ</span><p>…</p></div>
+<div class="box exam"><span class="lbl">Exam tip · ਪ੍ਰੀਖਿਆ ਸੁਝਾਅ</span><p>…</p></div>
+<table><tr><th>Column</th><th>Column</th></tr><tr><td>…</td><td>…</td></tr></table>
+<div class="ex"><p class="q" data-n="Ex 1">English question?</p><p class="q pa">ਪੰਜਾਬੀ ਸਵਾਲ?</p>
+ <div class="opts"><span><b>A)</b> …</span><span><b>B)</b> …</span><span><b>C)</b> …</span><span><b>D)</b> …</span></div>
+ <div class="sol"><span class="ans">Answer: <b>B</b> — …</span><p>Step-by-step solution.</p><p class="pa">ਹੱਲ ਪੰਜਾਬੀ ਵਿੱਚ।</p></div></div>
+<figure><svg viewBox="0 0 300 150" width="300"><!-- simple navy #0b1d4a / gold #c9962b drawing --></svg><figcaption>Caption</figcaption></figure>
+
+<h2 class="practice-head">Practice Set: 50 MCQs<span class="pa">ਅਭਿਆਸ ਸੈੱਟ</span></h2>
+<ol class="mcq"><li><p class="q">Question?</p><p class="q pa">ਸਵਾਲ?</p>
+ <div class="opts"><span><b>A)</b> …</span><span><b>B)</b> …</span><span><b>C)</b> …</span><span><b>D)</b> …</span></div></li></ol>
+<div class="key"><h2>Answer Key<span class="pa">ਉੱਤਰ ਕੁੰਜੀ</span></h2>
+ <div class="keygrid"><span>1 <b>B</b></span><span>2 <b>D</b></span></div>
+ <ol class="expl"><li><b>1. B</b> One-line explanation.</li></ol></div>
+<div class="box revise"><span class="lbl">Quick revision · ਝਟਪਟ ਦੁਹਰਾਈ</span><ul><li>…</li></ul></div>
+</body></html>
+```
