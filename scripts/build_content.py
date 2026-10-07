@@ -2082,14 +2082,19 @@ def study_nice_name(folder):
         text = bare
     # `01 - Naav (Noun)` / `3 Naav`: the number orders the shelf and reads as
     # the chapter number - `Chapter 1: Naav (Noun)`.
-    m = re.match(r"^0*(\d+)\s*[.)]?\s+(.+)$", text)
+    # `09A - Primary Memory` is a chapter slotted in after 9 without
+    # renumbering the rest: it reads `Chapter 9A: Primary Memory`.
+    # Only a two-digit number takes a capital letter (`09A`), so a name such
+    # as `5G Technology` is never read as a chapter number.
+    m = (re.match(r"^0*(\d\d)([A-Z])\s+(.+)$", text)
+         or re.match(r"^0*(\d+)()\s*[.)]?\s+(.+)$", text))
     if m:
-        rest = m.group(2)
+        rest = m.group(3)
         # Keep an English gloss in brackets: `ਨਾਂਵ (Noun)`.
         pm = re.match(r"^(.*?)\s*\(([^)]+)\)\s*$", rest)
         label = (f"{pdf_title_from_name(pm.group(1))} ({pdf_title_from_name(pm.group(2))})"
                  if pm and pm.group(1).strip() else pdf_title_from_name(rest))
-        return clip(f"Chapter {int(m.group(1))}: {label}")
+        return clip(f"Chapter {int(m.group(1))}{m.group(2).upper()}: {label}")
     m = re.match(r"(?i)\b(chapter|lesson|unit|part|book|topic)\s+(\d+)\s+(.+)$",
                  text)
     if m:
