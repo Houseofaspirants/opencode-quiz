@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 516,
-  "edges": 3104,
+  "nodes": 520,
+  "edges": 3121,
   "silos": 35,
-  "clusters": 56,
+  "clusters": 61,
   "pillars": 34
  },
  "nodes": [
@@ -750,8 +750,8 @@
    "hub": "book-recommendations.html"
   },
   {
-   "id": "ca-august-2026-english",
-   "url": "/ca-august-2026-english",
+   "id": "ca-house-of-aspirants-current-affairs-august-2026-english",
+   "url": "/ca-house-of-aspirants-current-affairs-august-2026-english",
    "type": "document",
    "template": "",
    "title": "",
@@ -762,11 +762,11 @@
    "hub": ""
   },
   {
-   "id": "ca-august-2026-english.html",
-   "url": "/ca-august-2026-english.html",
+   "id": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "url": "/ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "type": "current-affairs",
    "template": "current-affairs",
-   "title": "August 2026 English",
+   "title": "House of Aspirants Current Affairs August 2026 English",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -774,8 +774,8 @@
    "hub": "current-affairs.html"
   },
   {
-   "id": "ca-current-affairs-august",
-   "url": "/ca-current-affairs-august",
+   "id": "ca-house-of-aspirants-current-affairs-august-2026-punjabi",
+   "url": "/ca-house-of-aspirants-current-affairs-august-2026-punjabi",
    "type": "document",
    "template": "",
    "title": "",
@@ -786,11 +786,11 @@
    "hub": ""
   },
   {
-   "id": "ca-current-affairs-august.html",
-   "url": "/ca-current-affairs-august.html",
+   "id": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "url": "/ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "type": "current-affairs",
    "template": "current-affairs",
-   "title": "Current Affairs August",
+   "title": "House of Aspirants Current Affairs August 2026 Punjabi",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -798,8 +798,8 @@
    "hub": "current-affairs.html"
   },
   {
-   "id": "ca-current-affairs-july",
-   "url": "/ca-current-affairs-july",
+   "id": "ca-house-of-aspirants-current-affairs-july-2026-english",
+   "url": "/ca-house-of-aspirants-current-affairs-july-2026-english",
    "type": "document",
    "template": "",
    "title": "",
@@ -810,11 +810,11 @@
    "hub": ""
   },
   {
-   "id": "ca-current-affairs-july.html",
-   "url": "/ca-current-affairs-july.html",
+   "id": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "url": "/ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "type": "current-affairs",
    "template": "current-affairs",
-   "title": "Current Affairs July",
+   "title": "House of Aspirants Current Affairs July 2026 English",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -870,8 +870,8 @@
    "hub": "current-affairs.html"
   },
   {
-   "id": "content/current-affairs/english/August%202026/august-2026-english.pdf",
-   "url": "/content/current-affairs/english/August%202026/august-2026-english.pdf",
+   "id": "content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
+   "url": "/content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -882,8 +882,8 @@
    "hub": ""
   },
   {
-   "id": "content/current-affairs/english/July%202026/current-affairs-july.pdf",
-   "url": "/content/current-affairs/english/July%202026/current-affairs-july.pdf",
+   "id": "content/current-affairs/english/July%202026/House-of-Aspirants-Current-Affairs-july-2026-English.pdf",
+   "url": "/content/current-affairs/english/July%202026/House-of-Aspirants-Current-Affairs-july-2026-English.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -906,8 +906,8 @@
    "hub": ""
   },
   {
-   "id": "content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
-   "url": "/content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
+   "id": "content/current-affairs/punjabi/August%202026/House-of-Aspirants-Current-Affairs-August-2026-Punjabi.pdf",
+   "url": "/content/current-affairs/punjabi/August%202026/House-of-Aspirants-Current-Affairs-August-2026-Punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -5935,6 +5935,54 @@
    "hub": ""
   },
   {
+   "id": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "url": "/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "url": "/quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "url": "/quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "url": "/quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
    "type": "quiz",
@@ -8901,19 +8949,19 @@
   },
   {
    "from": "archives.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9716,265 +9764,271 @@
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
-   "to": "ca-august-2026-english",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
-   "to": "content/current-affairs/english/August%202026/august-2026-english.pdf",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "to": "content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "subject-current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-august-2026-english.html",
-   "to": "magazine.html",
-   "rel": "related-magazine",
-   "weight": 1
-  },
-  {
-   "from": "ca-august-2026-english.html",
-   "to": "ca-current-affairs-august.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-august-2026-english.html",
-   "to": "ca-current-affairs-july.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-august-2026-english.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "ca-august-2026-english.html",
-   "to": "subject-gk.html",
-   "rel": "subject-hub",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "ca-current-affairs-august",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "content/current-affairs/punjabi/August%202026/current-affairs-august.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "subject-current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "ca-current-affairs-august.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "related-current-affairs",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-august.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "magazine.html",
    "rel": "related-magazine",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-august.html",
-   "to": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-august.html",
-   "to": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-august.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-august.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "to": "subject-gk.html",
    "rel": "subject-hub",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
-   "to": "ca-current-affairs-july",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
-   "to": "content/current-affairs/english/July%202026/current-affairs-july.pdf",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "content/current-affairs/punjabi/August%202026/House-of-Aspirants-Current-Affairs-August-2026-Punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "subject-current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "related-current-affairs",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "content/current-affairs/english/July%202026/House-of-Aspirants-Current-Affairs-july-2026-English.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "related-current-affairs",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "magazine.html",
    "rel": "related-magazine",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
-   "to": "ca-august-2026-english.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
-   "to": "ca-current-affairs-august.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "ca-current-affairs-july.html",
+   "from": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "to": "subject-gk.html",
    "rel": "subject-hub",
    "weight": 1
@@ -10005,13 +10059,13 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "to": "subject-current-affairs.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10047,19 +10101,19 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-english.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -10095,13 +10149,13 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "to": "subject-current-affairs.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10137,19 +10191,19 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -10161,19 +10215,19 @@
   },
   {
    "from": "current-affairs.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10262,8 +10316,32 @@
    "weight": 1
   },
   {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "current-affairs/english/august-2026/index.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10287,13 +10365,13 @@
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "ca-august-2026-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "current-affairs/english/index.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10370,8 +10448,32 @@
    "weight": 1
   },
   {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "current-affairs/english/july-2026/index.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-july-2026-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10419,7 +10521,7 @@
   },
   {
    "from": "current-affairs/punjabi/august-2026/index.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10443,7 +10545,7 @@
   },
   {
    "from": "current-affairs/punjabi/index.html",
-   "to": "ca-current-affairs-august.html",
+   "to": "ca-house-of-aspirants-current-affairs-august-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10510,6 +10612,30 @@
   {
    "from": "current-affairs/punjabi/index.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10695,13 +10821,37 @@
   },
   {
    "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
    "to": "subject.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-akhan.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10791,7 +10941,7 @@
   },
   {
    "from": "material-angreji-ton-panjabi.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10881,7 +11031,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10989,7 +11139,7 @@
   },
   {
    "from": "material-bhasha-ate-panjabi-bhasha.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11079,7 +11229,7 @@
   },
   {
    "from": "material-cultural-fairs-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11169,7 +11319,7 @@
   },
   {
    "from": "material-cultural-fairs-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11259,7 +11409,7 @@
   },
   {
    "from": "material-evolution-of-computer-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11349,7 +11499,7 @@
   },
   {
    "from": "material-evolution-of-computers-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11439,7 +11589,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-1-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11529,7 +11679,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-1-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11619,7 +11769,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-2-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11715,7 +11865,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-2-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11811,7 +11961,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-3-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11907,7 +12057,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-3-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12009,7 +12159,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-4-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12111,7 +12261,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-4-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12213,7 +12363,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-5-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12315,7 +12465,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-5-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12411,7 +12561,7 @@
   },
   {
    "from": "material-expansion-of-british-power-part-6-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12507,7 +12657,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12597,7 +12747,7 @@
   },
   {
    "from": "material-fundamentals-of-computer.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12687,7 +12837,7 @@
   },
   {
    "from": "material-kark.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12777,7 +12927,7 @@
   },
   {
    "from": "material-kiria-visheshn.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12867,7 +13017,7 @@
   },
   {
    "from": "material-ling.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12957,7 +13107,7 @@
   },
   {
    "from": "material-lipi-bodh.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13047,7 +13197,7 @@
   },
   {
    "from": "material-m-s-word.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13137,7 +13287,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13227,7 +13377,7 @@
   },
   {
    "from": "material-mobile-phone.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13317,7 +13467,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13407,7 +13557,7 @@
   },
   {
    "from": "material-muhavre.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13497,7 +13647,7 @@
   },
   {
    "from": "material-nanv.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13587,7 +13737,7 @@
   },
   {
    "from": "material-number-series-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13677,7 +13827,7 @@
   },
   {
    "from": "material-part-1-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13773,7 +13923,7 @@
   },
   {
    "from": "material-part-1-english-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13869,7 +14019,7 @@
   },
   {
    "from": "material-part-1-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13965,7 +14115,7 @@
   },
   {
    "from": "material-part-1-punjabi-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14061,7 +14211,7 @@
   },
   {
    "from": "material-part-2-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14157,7 +14307,7 @@
   },
   {
    "from": "material-part-2-english-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14259,7 +14409,7 @@
   },
   {
    "from": "material-part-2-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14355,7 +14505,7 @@
   },
   {
    "from": "material-part-2-punjabi-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14457,7 +14607,7 @@
   },
   {
    "from": "material-part-3-english-2.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14553,7 +14703,7 @@
   },
   {
    "from": "material-part-3-english.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14655,7 +14805,7 @@
   },
   {
    "from": "material-part-3-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14751,7 +14901,7 @@
   },
   {
    "from": "material-part-3-punjabi.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14853,7 +15003,7 @@
   },
   {
    "from": "material-part-4-english-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14955,7 +15105,7 @@
   },
   {
    "from": "material-part-4-english.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15045,7 +15195,7 @@
   },
   {
    "from": "material-part-4-punjabi.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15147,7 +15297,7 @@
   },
   {
    "from": "material-part-5-english-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15243,7 +15393,7 @@
   },
   {
    "from": "material-part-5-punjabi-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15339,7 +15489,7 @@
   },
   {
    "from": "material-prnanv.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15429,7 +15579,7 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15519,7 +15669,7 @@
   },
   {
    "from": "material-punjab-folk-dance-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15609,7 +15759,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15699,7 +15849,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15789,7 +15939,7 @@
   },
   {
    "from": "material-sanbandhk.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15879,7 +16029,7 @@
   },
   {
    "from": "material-shbd-bdl.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15969,7 +16119,7 @@
   },
   {
    "from": "material-shbd-bodh.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16059,7 +16209,7 @@
   },
   {
    "from": "material-shudh-ashudh.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16149,7 +16299,7 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16239,7 +16389,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16329,7 +16479,7 @@
   },
   {
    "from": "material-smanarthk-ate-virodhi-shbd.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16419,7 +16569,7 @@
   },
   {
    "from": "material-smas-rchna.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16509,7 +16659,7 @@
   },
   {
    "from": "material-vak-bodh.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16599,7 +16749,7 @@
   },
   {
    "from": "material-vchn.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16689,7 +16839,7 @@
   },
   {
    "from": "material-visheshn.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16779,7 +16929,7 @@
   },
   {
    "from": "material-vismik.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16869,7 +17019,7 @@
   },
   {
    "from": "material-yojk.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17025,7 +17175,7 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17163,7 +17313,7 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17355,7 +17505,7 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17571,7 +17721,7 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17781,7 +17931,7 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17985,7 +18135,7 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18177,7 +18327,7 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18393,7 +18543,7 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18597,7 +18747,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18813,7 +18963,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19029,7 +19179,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19485,7 +19635,7 @@
   },
   {
    "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19563,7 +19713,7 @@
   },
   {
    "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19641,7 +19791,7 @@
   },
   {
    "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22167,7 +22317,7 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22299,7 +22449,7 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22467,7 +22617,7 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22671,7 +22821,7 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22863,7 +23013,7 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23055,7 +23205,7 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23229,7 +23379,7 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23421,7 +23571,7 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23613,7 +23763,7 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23823,7 +23973,7 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24021,7 +24171,7 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "ca-current-affairs-july.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25598,10 +25748,15 @@
    "hub": "subject-current-affairs.html",
    "clusters": [
     "category-current-affairs-july.html",
+    "category-current-affairs-september.html",
     "topic-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
     "topic-current-affairs-current-affairs-july-2026-part2-schemes-development.html",
     "topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services.html",
-    "topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html"
+    "topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy.html",
+    "topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+    "topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
+    "topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
+    "topic-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-07T02:34:51.628Z",
+  "generatedAt": "2026-10-07T08:59:28.636Z",
   "stats": {
     "subjects": 7,
-    "categories": 21,
-    "topics": 24,
-    "quizzes": 24,
-    "questions": 560,
+    "categories": 22,
+    "topics": 28,
+    "quizzes": 28,
+    "questions": 660,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1585,6 +1585,126 @@
             "pa": 20
           },
           "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
+        },
+        {
+          "id": "current-affairs-september-2026-part1-punjab-national-states",
+          "name": "Current Affairs September 2026 - Part 1",
+          "description": "",
+          "file": "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791363494163,
+          "category": "september",
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json",
+            "pa": "questions/current-affairs/september/current-affairs-september-2026-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Current Affairs September 2026 - Part 1",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states"
+        },
+        {
+          "id": "current-affairs-september-2026-part2-international-economy-banking",
+          "name": "Current Affairs September 2026 - Part 2",
+          "description": "",
+          "file": "questions/current-affairs/september/current-affairs-september-2026-part2-international-economy-banking-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791363494163,
+          "category": "september",
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/september/current-affairs-september-2026-part2-international-economy-banking-en.json",
+            "pa": "questions/current-affairs/september/current-affairs-september-2026-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Current Affairs September 2026 - Part 2",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking"
+        },
+        {
+          "id": "current-affairs-september-2026-part3-defence-science-environment",
+          "name": "Current Affairs September 2026 - Part 3",
+          "description": "",
+          "file": "questions/current-affairs/september/current-affairs-september-2026-part3-defence-science-environment-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791363494163,
+          "category": "september",
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/september/current-affairs-september-2026-part3-defence-science-environment-en.json",
+            "pa": "questions/current-affairs/september/current-affairs-september-2026-part3-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Current Affairs September 2026 - Part 3",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment"
+        },
+        {
+          "id": "current-affairs-september-2026-part4-awards-sports-rankings-static-gk",
+          "name": "Current Affairs September 2026 - Part 4",
+          "description": "",
+          "file": "questions/current-affairs/september/current-affairs-september-2026-part4-awards-sports-rankings-static-gk-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791363494163,
+          "category": "september",
+          "language": "en",
+          "variants": {
+            "en": "questions/current-affairs/september/current-affairs-september-2026-part4-awards-sports-rankings-static-gk-en.json",
+            "pa": "questions/current-affairs/september/current-affairs-september-2026-part4-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Current Affairs September 2026 - Part 4",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk"
         }
       ],
       "categories": [
@@ -1716,6 +1836,135 @@
             }
           ],
           "landing": "/category-current-affairs-july"
+        },
+        {
+          "id": "september",
+          "name": "September",
+          "folder": "september",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "current-affairs-september-2026-part1-punjab-national-states",
+              "name": "Current Affairs September 2026 - Part 1",
+              "description": "",
+              "file": "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791363494163,
+              "category": "september",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json",
+                "pa": "questions/current-affairs/september/current-affairs-september-2026-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs September 2026 - Part 1",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states"
+            },
+            {
+              "id": "current-affairs-september-2026-part2-international-economy-banking",
+              "name": "Current Affairs September 2026 - Part 2",
+              "description": "",
+              "file": "questions/current-affairs/september/current-affairs-september-2026-part2-international-economy-banking-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791363494163,
+              "category": "september",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/september/current-affairs-september-2026-part2-international-economy-banking-en.json",
+                "pa": "questions/current-affairs/september/current-affairs-september-2026-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs September 2026 - Part 2",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking"
+            },
+            {
+              "id": "current-affairs-september-2026-part3-defence-science-environment",
+              "name": "Current Affairs September 2026 - Part 3",
+              "description": "",
+              "file": "questions/current-affairs/september/current-affairs-september-2026-part3-defence-science-environment-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791363494163,
+              "category": "september",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/september/current-affairs-september-2026-part3-defence-science-environment-en.json",
+                "pa": "questions/current-affairs/september/current-affairs-september-2026-part3-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs September 2026 - Part 3",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment"
+            },
+            {
+              "id": "current-affairs-september-2026-part4-awards-sports-rankings-static-gk",
+              "name": "Current Affairs September 2026 - Part 4",
+              "description": "",
+              "file": "questions/current-affairs/september/current-affairs-september-2026-part4-awards-sports-rankings-static-gk-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791363494163,
+              "category": "september",
+              "language": "en",
+              "variants": {
+                "en": "questions/current-affairs/september/current-affairs-september-2026-part4-awards-sports-rankings-static-gk-en.json",
+                "pa": "questions/current-affairs/september/current-affairs-september-2026-part4-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Current Affairs September 2026 - Part 4",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk"
+            }
+          ],
+          "landing": "/category-current-affairs-september"
         }
       ],
       "landing": "/subject-current-affairs"
@@ -1753,6 +2002,22 @@
     "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json": [
       "4fd8d301ef88156e",
       1790441705167
+    ],
+    "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json": [
+      "eef2a3d52880d39e",
+      1791363494163
+    ],
+    "questions/current-affairs/september/current-affairs-september-2026-part2-international-economy-banking-en.json": [
+      "645062a6aa552cb2",
+      1791363494163
+    ],
+    "questions/current-affairs/september/current-affairs-september-2026-part3-defence-science-environment-en.json": [
+      "714abf8690e68d27",
+      1791363494163
+    ],
+    "questions/current-affairs/september/current-affairs-september-2026-part4-awards-sports-rankings-static-gk-en.json": [
+      "4db03bbd84f1a308",
+      1791363494163
     ],
     "questions/gk/economy/five-year-plans-20-mcqs-.en.json": [
       "c6cc6df338a1d2c9",
