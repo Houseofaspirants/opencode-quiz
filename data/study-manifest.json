@@ -143,9 +143,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-08",
+      "totalSize": 2685088,
       "languages": [
         {
           "id": "pa",
@@ -160,11 +160,23 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - Subject and Predicate",
+              "name": "Chapter 1: Subject and Predicate",
+              "parts": [
+                {
+                  "file": "material-subject-predicate.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            }
+          ]
         }
       ],
-      "chapters": 0
+      "chapters": 1
     },
     {
       "id": "punjabi",
@@ -435,9 +447,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 8,
-      "newest": "2026-10-04",
-      "totalSize": 18041653,
+      "count": 6,
+      "newest": "2026-10-08",
+      "totalSize": 18492286,
       "languages": [
         {
           "id": "pa",
@@ -447,23 +459,37 @@
           "count": 3,
           "chapters": [
             {
-              "id": "analogy ",
-              "name": "Analogy",
+              "id": "01 - Number Series",
+              "name": "Chapter 1: Number Series",
               "parts": [
                 {
-                  "file": "material-part-1-pa.html",
+                  "file": "material-01-number-series-2.html",
                   "n": 1
-                },
-                {
-                  "file": "material-part-2-pa.html",
-                  "n": 2
-                },
-                {
-                  "file": "material-part-3-pa.html",
-                  "n": 3
                 }
               ],
-              "pages": 47
+              "pages": 36
+            },
+            {
+              "id": "02 - Analogy",
+              "name": "Chapter 2: Analogy",
+              "parts": [
+                {
+                  "file": "material-02-analogy-2.html",
+                  "n": 1
+                }
+              ],
+              "pages": 28
+            },
+            {
+              "id": "03 - Verbal Classifications",
+              "name": "Chapter 3: Verbal Classifications",
+              "parts": [
+                {
+                  "file": "material-03-verbal-classifications-2.html",
+                  "n": 1
+                }
+              ],
+              "pages": 28
             }
           ]
         },
@@ -472,46 +498,45 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 3,
           "chapters": [
             {
-              "id": "Analogy ",
-              "name": "Analogy",
+              "id": "01 - Number Series",
+              "name": "Chapter 1: Number Series",
               "parts": [
                 {
-                  "file": "material-part-1-en.html",
+                  "file": "material-01-number-series.html",
                   "n": 1
-                },
-                {
-                  "file": "material-part-2-en.html",
-                  "n": 2
-                },
-                {
-                  "file": "material-part-3-english-2.html",
-                  "n": 3
-                },
-                {
-                  "file": "material-part-4-english.html",
-                  "n": 4
                 }
               ],
-              "pages": 58
+              "pages": 36
             },
             {
-              "id": "number series",
-              "name": "Number Series",
+              "id": "02 - Analogy",
+              "name": "Chapter 2: Analogy",
               "parts": [
                 {
-                  "file": "material-number-series-en.html",
+                  "file": "material-02-analogy.html",
                   "n": 1
                 }
               ],
-              "pages": 40
+              "pages": 28
+            },
+            {
+              "id": "03 - Verbal Classifications",
+              "name": "Chapter 3: Verbal Classifications",
+              "parts": [
+                {
+                  "file": "material-03-verbal-classifications.html",
+                  "n": 1
+                }
+              ],
+              "pages": 28
             }
           ]
         }
       ],
-      "chapters": 3
+      "chapters": 6
     },
     {
       "id": "quant",
@@ -2049,6 +2074,6 @@
       "hidden": true
     }
   ],
-  "total": 67,
+  "total": 66,
   "generatedBy": "scripts/study_material.py"
 }

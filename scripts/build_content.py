@@ -6377,6 +6377,8 @@ def archives_page(items, index, popularity):
             sections.append(group(e, "By exam", exams[e]))
         months = {}
         for r in items:
+            if len(r.get("published") or "") < 7:
+                continue  # undated item (e.g. a quiz JSON filed as study material)
             months.setdefault(r["published"][:7], []).append(r)
         for ym in sorted(months, reverse=True):
             sections.append(group(month_label(ym), "By month", months[ym]))
