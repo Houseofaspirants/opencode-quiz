@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Verbal Classifications"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-051",
+      "number": 51,
+      "question": "Choose the odd word: Rose, Lotus, Jasmine, Carrot.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rose"
+        },
+        {
+          "label": "B",
+          "text": "Carrot"
+        },
+        {
+          "label": "C",
+          "text": "Lotus"
+        },
+        {
+          "label": "D",
+          "text": "Jasmine"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Carrot belongs to a different category."
+    },
+    {
+      "id": "03-052",
+      "number": 52,
+      "question": "Choose the odd word: Copper, Iron, Silver, Rubber.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Copper"
+        },
+        {
+          "label": "B",
+          "text": "Iron"
+        },
+        {
+          "label": "C",
+          "text": "Rubber"
+        },
+        {
+          "label": "D",
+          "text": "Silver"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Rubber belongs to a different category."
+    },
+    {
+      "id": "03-053",
+      "number": 53,
+      "question": "Choose the odd word: Square, Triangle, Rectangle, Sphere.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Square"
+        },
+        {
+          "label": "B",
+          "text": "Triangle"
+        },
+        {
+          "label": "C",
+          "text": "Rectangle"
+        },
+        {
+          "label": "D",
+          "text": "Sphere"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Sphere belongs to a different category."
+    },
+    {
+      "id": "03-054",
+      "number": 54,
+      "question": "Choose the odd word: Violin, Guitar, Sitar, Flute.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Flute"
+        },
+        {
+          "label": "B",
+          "text": "Violin"
+        },
+        {
+          "label": "C",
+          "text": "Guitar"
+        },
+        {
+          "label": "D",
+          "text": "Sitar"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Flute belongs to a different category."
+    },
+    {
+      "id": "03-055",
+      "number": 55,
+      "question": "Choose the odd word: January, March, May, Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "January"
+        },
+        {
+          "label": "B",
+          "text": "Monday"
+        },
+        {
+          "label": "C",
+          "text": "March"
+        },
+        {
+          "label": "D",
+          "text": "May"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Monday belongs to a different category."
+    },
+    {
+      "id": "03-056",
+      "number": 56,
+      "question": "Choose the odd word: Rose, Lotus, Jasmine, Carrot.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rose"
+        },
+        {
+          "label": "B",
+          "text": "Lotus"
+        },
+        {
+          "label": "C",
+          "text": "Carrot"
+        },
+        {
+          "label": "D",
+          "text": "Jasmine"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Carrot belongs to a different category."
+    },
+    {
+      "id": "03-057",
+      "number": 57,
+      "question": "Choose the odd word: Copper, Iron, Silver, Rubber.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Copper"
+        },
+        {
+          "label": "B",
+          "text": "Iron"
+        },
+        {
+          "label": "C",
+          "text": "Silver"
+        },
+        {
+          "label": "D",
+          "text": "Rubber"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Rubber belongs to a different category."
+    },
+    {
+      "id": "03-058",
+      "number": 58,
+      "question": "Choose the odd word: Square, Triangle, Rectangle, Sphere.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sphere"
+        },
+        {
+          "label": "B",
+          "text": "Square"
+        },
+        {
+          "label": "C",
+          "text": "Triangle"
+        },
+        {
+          "label": "D",
+          "text": "Rectangle"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Sphere belongs to a different category."
+    },
+    {
+      "id": "03-059",
+      "number": 59,
+      "question": "Choose the odd word: Violin, Guitar, Sitar, Flute.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Violin"
+        },
+        {
+          "label": "B",
+          "text": "Flute"
+        },
+        {
+          "label": "C",
+          "text": "Guitar"
+        },
+        {
+          "label": "D",
+          "text": "Sitar"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Flute belongs to a different category."
+    },
+    {
+      "id": "03-060",
+      "number": 60,
+      "question": "Choose the odd word: January, March, May, Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "January"
+        },
+        {
+          "label": "B",
+          "text": "March"
+        },
+        {
+          "label": "C",
+          "text": "Monday"
+        },
+        {
+          "label": "D",
+          "text": "May"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Monday belongs to a different category."
+    },
+    {
+      "id": "03-061",
+      "number": 61,
+      "question": "Choose the odd word: Rose, Lotus, Jasmine, Carrot.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rose"
+        },
+        {
+          "label": "B",
+          "text": "Lotus"
+        },
+        {
+          "label": "C",
+          "text": "Jasmine"
+        },
+        {
+          "label": "D",
+          "text": "Carrot"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Carrot belongs to a different category."
+    },
+    {
+      "id": "03-062",
+      "number": 62,
+      "question": "Choose the odd word: Copper, Iron, Silver, Rubber.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rubber"
+        },
+        {
+          "label": "B",
+          "text": "Copper"
+        },
+        {
+          "label": "C",
+          "text": "Iron"
+        },
+        {
+          "label": "D",
+          "text": "Silver"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Rubber belongs to a different category."
+    },
+    {
+      "id": "03-063",
+      "number": 63,
+      "question": "Choose the odd word: Square, Triangle, Rectangle, Sphere.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Square"
+        },
+        {
+          "label": "B",
+          "text": "Sphere"
+        },
+        {
+          "label": "C",
+          "text": "Triangle"
+        },
+        {
+          "label": "D",
+          "text": "Rectangle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Sphere belongs to a different category."
+    },
+    {
+      "id": "03-064",
+      "number": 64,
+      "question": "Choose the odd word: Violin, Guitar, Sitar, Flute.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Violin"
+        },
+        {
+          "label": "B",
+          "text": "Guitar"
+        },
+        {
+          "label": "C",
+          "text": "Flute"
+        },
+        {
+          "label": "D",
+          "text": "Sitar"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Flute belongs to a different category."
+    },
+    {
+      "id": "03-065",
+      "number": 65,
+      "question": "Choose the odd word: January, March, May, Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "January"
+        },
+        {
+          "label": "B",
+          "text": "March"
+        },
+        {
+          "label": "C",
+          "text": "May"
+        },
+        {
+          "label": "D",
+          "text": "Monday"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Monday belongs to a different category."
+    },
+    {
+      "id": "03-066",
+      "number": 66,
+      "question": "Choose the odd word: Rose, Lotus, Jasmine, Carrot.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Carrot"
+        },
+        {
+          "label": "B",
+          "text": "Rose"
+        },
+        {
+          "label": "C",
+          "text": "Lotus"
+        },
+        {
+          "label": "D",
+          "text": "Jasmine"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Carrot belongs to a different category."
+    },
+    {
+      "id": "03-067",
+      "number": 67,
+      "question": "Choose the odd word: Copper, Iron, Silver, Rubber.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Copper"
+        },
+        {
+          "label": "B",
+          "text": "Rubber"
+        },
+        {
+          "label": "C",
+          "text": "Iron"
+        },
+        {
+          "label": "D",
+          "text": "Silver"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Rubber belongs to a different category."
+    },
+    {
+      "id": "03-068",
+      "number": 68,
+      "question": "Choose the odd word: Square, Triangle, Rectangle, Sphere.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Square"
+        },
+        {
+          "label": "B",
+          "text": "Triangle"
+        },
+        {
+          "label": "C",
+          "text": "Sphere"
+        },
+        {
+          "label": "D",
+          "text": "Rectangle"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Sphere belongs to a different category."
+    },
+    {
+      "id": "03-069",
+      "number": 69,
+      "question": "Choose the odd word: Violin, Guitar, Sitar, Flute.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Violin"
+        },
+        {
+          "label": "B",
+          "text": "Guitar"
+        },
+        {
+          "label": "C",
+          "text": "Sitar"
+        },
+        {
+          "label": "D",
+          "text": "Flute"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Flute belongs to a different category."
+    },
+    {
+      "id": "03-070",
+      "number": 70,
+      "question": "Choose the odd word: January, March, May, Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monday"
+        },
+        {
+          "label": "B",
+          "text": "January"
+        },
+        {
+          "label": "C",
+          "text": "March"
+        },
+        {
+          "label": "D",
+          "text": "May"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Monday belongs to a different category."
+    },
+    {
+      "id": "03-071",
+      "number": 71,
+      "question": "Choose the odd word: Rose, Lotus, Jasmine, Carrot.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rose"
+        },
+        {
+          "label": "B",
+          "text": "Carrot"
+        },
+        {
+          "label": "C",
+          "text": "Lotus"
+        },
+        {
+          "label": "D",
+          "text": "Jasmine"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Carrot belongs to a different category."
+    },
+    {
+      "id": "03-072",
+      "number": 72,
+      "question": "Choose the odd word: Copper, Iron, Silver, Rubber.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Copper"
+        },
+        {
+          "label": "B",
+          "text": "Iron"
+        },
+        {
+          "label": "C",
+          "text": "Rubber"
+        },
+        {
+          "label": "D",
+          "text": "Silver"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first three belong to the same category; Rubber belongs to a different category."
+    },
+    {
+      "id": "03-073",
+      "number": 73,
+      "question": "Choose the odd word: Square, Triangle, Rectangle, Sphere.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Square"
+        },
+        {
+          "label": "B",
+          "text": "Triangle"
+        },
+        {
+          "label": "C",
+          "text": "Rectangle"
+        },
+        {
+          "label": "D",
+          "text": "Sphere"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first three belong to the same category; Sphere belongs to a different category."
+    },
+    {
+      "id": "03-074",
+      "number": 74,
+      "question": "Choose the odd word: Violin, Guitar, Sitar, Flute.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Flute"
+        },
+        {
+          "label": "B",
+          "text": "Violin"
+        },
+        {
+          "label": "C",
+          "text": "Guitar"
+        },
+        {
+          "label": "D",
+          "text": "Sitar"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first three belong to the same category; Flute belongs to a different category."
+    },
+    {
+      "id": "03-075",
+      "number": 75,
+      "question": "Choose the odd word: January, March, May, Monday.",
+      "options": [
+        {
+          "label": "A",
+          "text": "January"
+        },
+        {
+          "label": "B",
+          "text": "Monday"
+        },
+        {
+          "label": "C",
+          "text": "March"
+        },
+        {
+          "label": "D",
+          "text": "May"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first three belong to the same category; Monday belongs to a different category."
+    }
+  ],
+  "answer_key": [
+    {
+      "number": 51,
+      "answer": "B"
+    },
+    {
+      "number": 52,
+      "answer": "C"
+    },
+    {
+      "number": 53,
+      "answer": "D"
+    },
+    {
+      "number": 54,
+      "answer": "A"
+    },
+    {
+      "number": 55,
+      "answer": "B"
+    },
+    {
+      "number": 56,
+      "answer": "C"
+    },
+    {
+      "number": 57,
+      "answer": "D"
+    },
+    {
+      "number": 58,
+      "answer": "A"
+    },
+    {
+      "number": 59,
+      "answer": "B"
+    },
+    {
+      "number": 60,
+      "answer": "C"
+    },
+    {
+      "number": 61,
+      "answer": "D"
+    },
+    {
+      "number": 62,
+      "answer": "A"
+    },
+    {
+      "number": 63,
+      "answer": "B"
+    },
+    {
+      "number": 64,
+      "answer": "C"
+    },
+    {
+      "number": 65,
+      "answer": "D"
+    },
+    {
+      "number": 66,
+      "answer": "A"
+    },
+    {
+      "number": 67,
+      "answer": "B"
+    },
+    {
+      "number": 68,
+      "answer": "C"
+    },
+    {
+      "number": 69,
+      "answer": "D"
+    },
+    {
+      "number": 70,
+      "answer": "A"
+    },
+    {
+      "number": 71,
+      "answer": "B"
+    },
+    {
+      "number": 72,
+      "answer": "C"
+    },
+    {
+      "number": 73,
+      "answer": "D"
+    },
+    {
+      "number": 74,
+      "answer": "A"
+    },
+    {
+      "number": 75,
+      "answer": "B"
+    }
+  ]
+}

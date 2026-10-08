@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "Analogy"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-076",
+      "number": 76,
+      "question": "Complete the analogy: Bird : Nest :: Bee : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nest"
+        },
+        {
+          "label": "B",
+          "text": "Hive"
+        },
+        {
+          "label": "C",
+          "text": "Stable"
+        },
+        {
+          "label": "D",
+          "text": "Den"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A bird's home is a nest; a bee's home is a hive."
+    },
+    {
+      "id": "02-077",
+      "number": 77,
+      "question": "Complete: Puppy : Dog :: Kitten : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dog"
+        },
+        {
+          "label": "B",
+          "text": "Calf"
+        },
+        {
+          "label": "C",
+          "text": "Cat"
+        },
+        {
+          "label": "D",
+          "text": "Horse"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A puppy grows into a dog; a kitten grows into a cat."
+    },
+    {
+      "id": "02-078",
+      "number": 78,
+      "question": "Complete: Pen : Write :: Knife : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Write"
+        },
+        {
+          "label": "B",
+          "text": "Drink"
+        },
+        {
+          "label": "C",
+          "text": "Eat"
+        },
+        {
+          "label": "D",
+          "text": "Cut"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A pen is used for writing; a knife is used for cutting."
+    },
+    {
+      "id": "02-079",
+      "number": 79,
+      "question": "Choose the pair with the same opposite relationship: Hot : Cold :: ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Up : Down"
+        },
+        {
+          "label": "B",
+          "text": "Begin : Start"
+        },
+        {
+          "label": "C",
+          "text": "Big : Large"
+        },
+        {
+          "label": "D",
+          "text": "Fast : Quick"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Up and down are opposites, like hot and cold."
+    },
+    {
+      "id": "02-080",
+      "number": 80,
+      "question": "Complete: Doctor : Hospital :: Teacher : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "School"
+        },
+        {
+          "label": "B",
+          "text": "Hospital"
+        },
+        {
+          "label": "C",
+          "text": "Kitchen"
+        },
+        {
+          "label": "D",
+          "text": "Court"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A doctor is associated with a hospital; the same person-to-workplace relation completes the analogy."
+    },
+    {
+      "id": "02-081",
+      "number": 81,
+      "question": "Complete the analogy: Bird : Nest :: Bee : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nest"
+        },
+        {
+          "label": "B",
+          "text": "Stable"
+        },
+        {
+          "label": "C",
+          "text": "Hive"
+        },
+        {
+          "label": "D",
+          "text": "Den"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A bird's home is a nest; a bee's home is a hive."
+    },
+    {
+      "id": "02-082",
+      "number": 82,
+      "question": "Complete: Puppy : Dog :: Kitten : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dog"
+        },
+        {
+          "label": "B",
+          "text": "Calf"
+        },
+        {
+          "label": "C",
+          "text": "Horse"
+        },
+        {
+          "label": "D",
+          "text": "Cat"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A puppy grows into a dog; a kitten grows into a cat."
+    },
+    {
+      "id": "02-083",
+      "number": 83,
+      "question": "Complete: Pen : Write :: Knife : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cut"
+        },
+        {
+          "label": "B",
+          "text": "Write"
+        },
+        {
+          "label": "C",
+          "text": "Drink"
+        },
+        {
+          "label": "D",
+          "text": "Eat"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A pen is used for writing; a knife is used for cutting."
+    },
+    {
+      "id": "02-084",
+      "number": 84,
+      "question": "Choose the pair with the same opposite relationship: Hot : Cold :: ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Begin : Start"
+        },
+        {
+          "label": "B",
+          "text": "Up : Down"
+        },
+        {
+          "label": "C",
+          "text": "Big : Large"
+        },
+        {
+          "label": "D",
+          "text": "Fast : Quick"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Up and down are opposites, like hot and cold."
+    },
+    {
+      "id": "02-085",
+      "number": 85,
+      "question": "Complete: Doctor : Hospital :: Teacher : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "School"
+        },
+        {
+          "label": "B",
+          "text": "Kitchen"
+        },
+        {
+          "label": "C",
+          "text": "Hospital"
+        },
+        {
+          "label": "D",
+          "text": "Court"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A doctor is associated with a hospital; the same person-to-workplace relation completes the analogy."
+    },
+    {
+      "id": "02-086",
+      "number": 86,
+      "question": "Complete the analogy: Bird : Nest :: Bee : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nest"
+        },
+        {
+          "label": "B",
+          "text": "Stable"
+        },
+        {
+          "label": "C",
+          "text": "Den"
+        },
+        {
+          "label": "D",
+          "text": "Hive"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A bird's home is a nest; a bee's home is a hive."
+    },
+    {
+      "id": "02-087",
+      "number": 87,
+      "question": "Complete: Puppy : Dog :: Kitten : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cat"
+        },
+        {
+          "label": "B",
+          "text": "Dog"
+        },
+        {
+          "label": "C",
+          "text": "Calf"
+        },
+        {
+          "label": "D",
+          "text": "Horse"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A puppy grows into a dog; a kitten grows into a cat."
+    },
+    {
+      "id": "02-088",
+      "number": 88,
+      "question": "Complete: Pen : Write :: Knife : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Write"
+        },
+        {
+          "label": "B",
+          "text": "Cut"
+        },
+        {
+          "label": "C",
+          "text": "Drink"
+        },
+        {
+          "label": "D",
+          "text": "Eat"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A pen is used for writing; a knife is used for cutting."
+    },
+    {
+      "id": "02-089",
+      "number": 89,
+      "question": "Choose the pair with the same opposite relationship: Hot : Cold :: ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Begin : Start"
+        },
+        {
+          "label": "B",
+          "text": "Big : Large"
+        },
+        {
+          "label": "C",
+          "text": "Up : Down"
+        },
+        {
+          "label": "D",
+          "text": "Fast : Quick"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Up and down are opposites, like hot and cold."
+    },
+    {
+      "id": "02-090",
+      "number": 90,
+      "question": "Complete: Doctor : Hospital :: Teacher : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "School"
+        },
+        {
+          "label": "B",
+          "text": "Kitchen"
+        },
+        {
+          "label": "C",
+          "text": "Court"
+        },
+        {
+          "label": "D",
+          "text": "Hospital"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A doctor is associated with a hospital; the same person-to-workplace relation completes the analogy."
+    },
+    {
+      "id": "02-091",
+      "number": 91,
+      "question": "Complete the analogy: Bird : Nest :: Bee : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hive"
+        },
+        {
+          "label": "B",
+          "text": "Nest"
+        },
+        {
+          "label": "C",
+          "text": "Stable"
+        },
+        {
+          "label": "D",
+          "text": "Den"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A bird's home is a nest; a bee's home is a hive."
+    },
+    {
+      "id": "02-092",
+      "number": 92,
+      "question": "Complete: Puppy : Dog :: Kitten : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dog"
+        },
+        {
+          "label": "B",
+          "text": "Cat"
+        },
+        {
+          "label": "C",
+          "text": "Calf"
+        },
+        {
+          "label": "D",
+          "text": "Horse"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A puppy grows into a dog; a kitten grows into a cat."
+    },
+    {
+      "id": "02-093",
+      "number": 93,
+      "question": "Complete: Pen : Write :: Knife : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Write"
+        },
+        {
+          "label": "B",
+          "text": "Drink"
+        },
+        {
+          "label": "C",
+          "text": "Cut"
+        },
+        {
+          "label": "D",
+          "text": "Eat"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A pen is used for writing; a knife is used for cutting."
+    },
+    {
+      "id": "02-094",
+      "number": 94,
+      "question": "Choose the pair with the same opposite relationship: Hot : Cold :: ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Begin : Start"
+        },
+        {
+          "label": "B",
+          "text": "Big : Large"
+        },
+        {
+          "label": "C",
+          "text": "Fast : Quick"
+        },
+        {
+          "label": "D",
+          "text": "Up : Down"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Up and down are opposites, like hot and cold."
+    },
+    {
+      "id": "02-095",
+      "number": 95,
+      "question": "Complete: Doctor : Hospital :: Teacher : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hospital"
+        },
+        {
+          "label": "B",
+          "text": "School"
+        },
+        {
+          "label": "C",
+          "text": "Kitchen"
+        },
+        {
+          "label": "D",
+          "text": "Court"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A doctor is associated with a hospital; the same person-to-workplace relation completes the analogy."
+    },
+    {
+      "id": "02-096",
+      "number": 96,
+      "question": "Complete the analogy: Bird : Nest :: Bee : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Nest"
+        },
+        {
+          "label": "B",
+          "text": "Hive"
+        },
+        {
+          "label": "C",
+          "text": "Stable"
+        },
+        {
+          "label": "D",
+          "text": "Den"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A bird's home is a nest; a bee's home is a hive."
+    },
+    {
+      "id": "02-097",
+      "number": 97,
+      "question": "Complete: Puppy : Dog :: Kitten : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dog"
+        },
+        {
+          "label": "B",
+          "text": "Calf"
+        },
+        {
+          "label": "C",
+          "text": "Cat"
+        },
+        {
+          "label": "D",
+          "text": "Horse"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A puppy grows into a dog; a kitten grows into a cat."
+    },
+    {
+      "id": "02-098",
+      "number": 98,
+      "question": "Complete: Pen : Write :: Knife : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Write"
+        },
+        {
+          "label": "B",
+          "text": "Drink"
+        },
+        {
+          "label": "C",
+          "text": "Eat"
+        },
+        {
+          "label": "D",
+          "text": "Cut"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A pen is used for writing; a knife is used for cutting."
+    },
+    {
+      "id": "02-099",
+      "number": 99,
+      "question": "Choose the pair with the same opposite relationship: Hot : Cold :: ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Up : Down"
+        },
+        {
+          "label": "B",
+          "text": "Begin : Start"
+        },
+        {
+          "label": "C",
+          "text": "Big : Large"
+        },
+        {
+          "label": "D",
+          "text": "Fast : Quick"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Up and down are opposites, like hot and cold."
+    },
+    {
+      "id": "02-100",
+      "number": 100,
+      "question": "Complete: Doctor : Hospital :: Teacher : ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "School"
+        },
+        {
+          "label": "B",
+          "text": "Hospital"
+        },
+        {
+          "label": "C",
+          "text": "Kitchen"
+        },
+        {
+          "label": "D",
+          "text": "Court"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A doctor is associated with a hospital; the same person-to-workplace relation completes the analogy."
+    }
+  ],
+  "answer_key": [
+    {
+      "number": 76,
+      "answer": "B"
+    },
+    {
+      "number": 77,
+      "answer": "C"
+    },
+    {
+      "number": 78,
+      "answer": "D"
+    },
+    {
+      "number": 79,
+      "answer": "A"
+    },
+    {
+      "number": 80,
+      "answer": "B"
+    },
+    {
+      "number": 81,
+      "answer": "C"
+    },
+    {
+      "number": 82,
+      "answer": "D"
+    },
+    {
+      "number": 83,
+      "answer": "A"
+    },
+    {
+      "number": 84,
+      "answer": "B"
+    },
+    {
+      "number": 85,
+      "answer": "C"
+    },
+    {
+      "number": 86,
+      "answer": "D"
+    },
+    {
+      "number": 87,
+      "answer": "A"
+    },
+    {
+      "number": 88,
+      "answer": "B"
+    },
+    {
+      "number": 89,
+      "answer": "C"
+    },
+    {
+      "number": 90,
+      "answer": "D"
+    },
+    {
+      "number": 91,
+      "answer": "A"
+    },
+    {
+      "number": 92,
+      "answer": "B"
+    },
+    {
+      "number": 93,
+      "answer": "C"
+    },
+    {
+      "number": 94,
+      "answer": "D"
+    },
+    {
+      "number": 95,
+      "answer": "A"
+    },
+    {
+      "number": 96,
+      "answer": "B"
+    },
+    {
+      "number": 97,
+      "answer": "C"
+    },
+    {
+      "number": 98,
+      "answer": "D"
+    },
+    {
+      "number": 99,
+      "answer": "A"
+    },
+    {
+      "number": 100,
+      "answer": "B"
+    }
+  ]
+}

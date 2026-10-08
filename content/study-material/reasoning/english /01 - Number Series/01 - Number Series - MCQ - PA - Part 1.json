@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 1,
+    "title": "ਸੰਖਿਆ ਲੜੀ"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-001",
+      "number": 1,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 3, 5, 7, 9, 11, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 2 ਜੋੜਿਆ ਗਿਆ ਹੈ: 11 + 2 = 13।"
+    },
+    {
+      "id": "01-002",
+      "number": 2,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 4, 9, 14, 19, 24, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "29"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 5 ਜੋੜਿਆ ਗਿਆ ਹੈ: 24 + 5 = 29।"
+    },
+    {
+      "id": "01-003",
+      "number": 3,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 5, 13, 21, 29, 37, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "29"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "53"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 8 ਜੋੜਿਆ ਗਿਆ ਹੈ: 37 + 8 = 45।"
+    },
+    {
+      "id": "01-004",
+      "number": 4,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 6, 17, 28, 39, 50, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "61"
+        },
+        {
+          "label": "B",
+          "text": "39"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 11 ਜੋੜਿਆ ਗਿਆ ਹੈ: 50 + 11 = 61।"
+    },
+    {
+      "id": "01-005",
+      "number": 5,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 7, 10, 13, 16, 19, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "22"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 3 ਜੋੜਿਆ ਗਿਆ ਹੈ: 19 + 3 = 22।"
+    },
+    {
+      "id": "01-006",
+      "number": 6,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 8, 14, 20, 26, 32, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "44"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 6 ਜੋੜਿਆ ਗਿਆ ਹੈ: 32 + 6 = 38।"
+    },
+    {
+      "id": "01-007",
+      "number": 7,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 9, 18, 27, 36, 45, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "45"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "54"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 9 ਜੋੜਿਆ ਗਿਆ ਹੈ: 45 + 9 = 54।"
+    },
+    {
+      "id": "01-008",
+      "number": 8,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 10, 22, 34, 46, 58, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "46"
+        },
+        {
+          "label": "C",
+          "text": "58"
+        },
+        {
+          "label": "D",
+          "text": "82"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 12 ਜੋੜਿਆ ਗਿਆ ਹੈ: 58 + 12 = 70।"
+    },
+    {
+      "id": "01-009",
+      "number": 9,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 11, 15, 19, 23, 27, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "31"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 4 ਜੋੜਿਆ ਗਿਆ ਹੈ: 27 + 4 = 31।"
+    },
+    {
+      "id": "01-010",
+      "number": 10,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 3, 10, 17, 24, 31, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "31"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 7 ਜੋੜਿਆ ਗਿਆ ਹੈ: 31 + 7 = 38।"
+    },
+    {
+      "id": "01-011",
+      "number": 11,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 4, 14, 24, 34, 44, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "54"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 10 ਜੋੜਿਆ ਗਿਆ ਹੈ: 44 + 10 = 54।"
+    },
+    {
+      "id": "01-012",
+      "number": 12,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 5, 7, 9, 11, 13, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 2 ਜੋੜਿਆ ਗਿਆ ਹੈ: 13 + 2 = 15।"
+    },
+    {
+      "id": "01-013",
+      "number": 13,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 6, 11, 16, 21, 26, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "31"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 5 ਜੋੜਿਆ ਗਿਆ ਹੈ: 26 + 5 = 31।"
+    },
+    {
+      "id": "01-014",
+      "number": 14,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 7, 15, 23, 31, 39, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "39"
+        },
+        {
+          "label": "C",
+          "text": "47"
+        },
+        {
+          "label": "D",
+          "text": "55"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 8 ਜੋੜਿਆ ਗਿਆ ਹੈ: 39 + 8 = 47।"
+    },
+    {
+      "id": "01-015",
+      "number": 15,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 8, 19, 30, 41, 52, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "52"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 11 ਜੋੜਿਆ ਗਿਆ ਹੈ: 52 + 11 = 63।"
+    },
+    {
+      "id": "01-016",
+      "number": 16,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 9, 12, 15, 18, 21, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 3 ਜੋੜਿਆ ਗਿਆ ਹੈ: 21 + 3 = 24।"
+    },
+    {
+      "id": "01-017",
+      "number": 17,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 10, 16, 22, 28, 34, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "46"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 6 ਜੋੜਿਆ ਗਿਆ ਹੈ: 34 + 6 = 40।"
+    },
+    {
+      "id": "01-018",
+      "number": 18,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 11, 20, 29, 38, 47, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "38"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 9 ਜੋੜਿਆ ਗਿਆ ਹੈ: 47 + 9 = 56।"
+    },
+    {
+      "id": "01-019",
+      "number": 19,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 3, 15, 27, 39, 51, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "75"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 12 ਜੋੜਿਆ ਗਿਆ ਹੈ: 51 + 12 = 63।"
+    },
+    {
+      "id": "01-020",
+      "number": 20,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 4, 8, 12, 16, 20, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 4 ਜੋੜਿਆ ਗਿਆ ਹੈ: 20 + 4 = 24।"
+    },
+    {
+      "id": "01-021",
+      "number": 21,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 5, 12, 19, 26, 33, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "33"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 7 ਜੋੜਿਆ ਗਿਆ ਹੈ: 33 + 7 = 40।"
+    },
+    {
+      "id": "01-022",
+      "number": 22,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 6, 16, 26, 36, 46, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "46"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 10 ਜੋੜਿਆ ਗਿਆ ਹੈ: 46 + 10 = 56।"
+    },
+    {
+      "id": "01-023",
+      "number": 23,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 7, 9, 11, 13, 15, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 2 ਜੋੜਿਆ ਗਿਆ ਹੈ: 15 + 2 = 17।"
+    },
+    {
+      "id": "01-024",
+      "number": 24,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 8, 13, 18, 23, 28, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "33"
+        },
+        {
+          "label": "B",
+          "text": "23"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 5 ਜੋੜਿਆ ਗਿਆ ਹੈ: 28 + 5 = 33।"
+    },
+    {
+      "id": "01-025",
+      "number": 25,
+      "question": "ਅਗਲੀ ਸੰਖਿਆ ਲੱਭੋ: 9, 17, 25, 33, 41, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "33"
+        },
+        {
+          "label": "B",
+          "text": "49"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "57"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅਗਲੀ ਸੰਖਿਆ ਵਿੱਚ 8 ਜੋੜਿਆ ਗਿਆ ਹੈ: 41 + 8 = 49।"
+    }
+  ],
+  "answer_key": [
+    {
+      "number": 1,
+      "answer": "B"
+    },
+    {
+      "number": 2,
+      "answer": "C"
+    },
+    {
+      "number": 3,
+      "answer": "D"
+    },
+    {
+      "number": 4,
+      "answer": "A"
+    },
+    {
+      "number": 5,
+      "answer": "B"
+    },
+    {
+      "number": 6,
+      "answer": "C"
+    },
+    {
+      "number": 7,
+      "answer": "D"
+    },
+    {
+      "number": 8,
+      "answer": "A"
+    },
+    {
+      "number": 9,
+      "answer": "B"
+    },
+    {
+      "number": 10,
+      "answer": "C"
+    },
+    {
+      "number": 11,
+      "answer": "D"
+    },
+    {
+      "number": 12,
+      "answer": "A"
+    },
+    {
+      "number": 13,
+      "answer": "B"
+    },
+    {
+      "number": 14,
+      "answer": "C"
+    },
+    {
+      "number": 15,
+      "answer": "D"
+    },
+    {
+      "number": 16,
+      "answer": "A"
+    },
+    {
+      "number": 17,
+      "answer": "B"
+    },
+    {
+      "number": 18,
+      "answer": "C"
+    },
+    {
+      "number": 19,
+      "answer": "D"
+    },
+    {
+      "number": 20,
+      "answer": "A"
+    },
+    {
+      "number": 21,
+      "answer": "B"
+    },
+    {
+      "number": 22,
+      "answer": "C"
+    },
+    {
+      "number": 23,
+      "answer": "D"
+    },
+    {
+      "number": 24,
+      "answer": "A"
+    },
+    {
+      "number": 25,
+      "answer": "B"
+    }
+  ]
+}
