@@ -338,6 +338,24 @@
       }
     },
     {
+      "id": "01-subject-and-predicate-part-1",
+      "subject": "english",
+      "category": "",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "01 Subject And Predicate Part 1"
+      },
+      "variants": {
+        "en": "questions/english/01-subject-and-predicate-part-1-en.json"
+      }
+    },
+    {
       "id": "fundamentals-of-computers-part1",
       "subject": "computer",
       "category": "fundamentals-of-computer",

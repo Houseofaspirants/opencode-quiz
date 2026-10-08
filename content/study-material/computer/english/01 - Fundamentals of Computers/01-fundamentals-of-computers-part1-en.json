@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "According to the chapter, a computer is a man-made ______ machine.",
+    "options": [
+      "Mechanical",
+      "Hydraulic",
+      "Electronic",
+      "Magnetic"
+    ],
+    "answer": 2,
+    "explanation": "A computer is a man-made electronic machine that receives data, processes it and produces information.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Definition"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "What is the correct order of the basic working cycle of a computer?",
+    "options": [
+      "Input → Processing → Output",
+      "Processing → Input → Output",
+      "Output → Processing → Input",
+      "Input → Output → Processing"
+    ],
+    "answer": 0,
+    "explanation": "The basic working of a computer follows the Input → Processing → Output cycle.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Basic Working"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "When you type \"2 + 3\" on a keyboard and \"5\" appears on the screen, the display of \"5\" is which stage?",
+    "options": [
+      "Input",
+      "Processing",
+      "Storage",
+      "Output"
+    ],
+    "answer": 3,
+    "explanation": "In the chapter's example, \"5\" displayed on the screen is the Output stage.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Basic Working"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "In the example of students' marks, the computer calculating the percentage belongs to which stage?",
+    "options": [
+      "Processing",
+      "Input",
+      "Output",
+      "Storage"
+    ],
+    "answer": 0,
+    "explanation": "Typing marks is Input, calculating percentage is Processing and displaying it is Output.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Basic Working"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Raw, unorganized information entered into a computer through input devices is called:",
+    "options": [
+      "Information",
+      "Output",
+      "Data",
+      "Instruction"
+    ],
+    "answer": 2,
+    "explanation": "Data is raw, unorganized information entered through input devices such as keyboard, mouse or scanner.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Data"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Processed and organized data that becomes meaningful and useful is called:",
+    "options": [
+      "Information",
+      "Data",
+      "Input",
+      "Instruction"
+    ],
+    "answer": 0,
+    "explanation": "Information is processed and organized data that is meaningful and useful.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Information"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Data + Processing = ?",
+    "options": [
+      "Input",
+      "Instruction",
+      "Information",
+      "Storage"
+    ],
+    "answer": 2,
+    "explanation": "The chapter states: Data + Processing = Information.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Information"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "In the chapter's example, the data 45, 78, 92 is converted into which information?",
+    "options": [
+      "Average Marks = 78",
+      "Average Marks = 71.67",
+      "Average Marks = 71.33",
+      "Average Marks = 72.67"
+    ],
+    "answer": 1,
+    "explanation": "Data 45, 78, 92 becomes the information Average Marks = 71.67.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Information"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "The data entered into a computer is called:",
+    "options": [
+      "Output",
+      "Input",
+      "Information",
+      "Storage"
+    ],
+    "answer": 1,
+    "explanation": "The data entered into a computer is called Input.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Input"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "The information produced by a computer after processing is called:",
+    "options": [
+      "Output",
+      "Input",
+      "Data",
+      "Instruction"
+    ],
+    "answer": 0,
+    "explanation": "The information produced by a computer after processing is called Output.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Output"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is an example of Output as given in the chapter?",
+    "options": [
+      "Clicking with mouse",
+      "Audio through speakers",
+      "Scanning a document",
+      "Typing through keyboard"
+    ],
+    "answer": 1,
+    "explanation": "Display on monitor, printed report and audio through speakers are examples of output.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Output"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Commands given to the computer to perform a specific task, such as \"Save a file\", are called:",
+    "options": [
+      "Data",
+      "Information",
+      "Output",
+      "Instructions"
+    ],
+    "answer": 3,
+    "explanation": "Instructions are commands given to the computer to perform a specific task, e.g. save a file, print a document.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Instructions"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Computer speed refers to the number of instructions processed by the computer in:",
+    "options": [
+      "One minute",
+      "One hour",
+      "One second",
+      "One day"
+    ],
+    "answer": 2,
+    "explanation": "Computer speed is the number of instructions processed in one second.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Speed of Computer"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "Among the units of computer speed, the symbol \"μs\" stands for:",
+    "options": [
+      "Microsecond",
+      "Millisecond",
+      "Nanosecond",
+      "Picosecond"
+    ],
+    "answer": 0,
+    "explanation": "The units of speed listed are Millisecond (ms), Microsecond (μs), Nanosecond (ns) and Picosecond (ps).",
+    "tags": [
+      "Fundamentals of Computers",
+      "Speed of Computer"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Which component executes instructions from software and hardware?",
+    "options": [
+      "Motherboard",
+      "Monitor",
+      "Pen Drive",
+      "Processor (CPU)"
+    ],
+    "answer": 3,
+    "explanation": "The Processor (CPU) executes instructions from software and hardware.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is given in the chapter as an example of a processor?",
+    "options": [
+      "Solid State Drive",
+      "AMD Ryzen",
+      "Cache Memory",
+      "PARAM 8000"
+    ],
+    "answer": 1,
+    "explanation": "Intel Core i5, Intel Core i7 and AMD Ryzen are examples of processors.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Which part is called the \"Brain of the Computer\"?",
+    "options": [
+      "CPU",
+      "Monitor",
+      "Keyboard",
+      "Hard Disk"
+    ],
+    "answer": 0,
+    "explanation": "CPU is called the brain of the computer.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which unit performs arithmetic and logical operations?",
+    "options": [
+      "CU",
+      "Memory Unit",
+      "Motherboard",
+      "ALU"
+    ],
+    "answer": 3,
+    "explanation": "ALU performs arithmetic and logical operations.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which unit controls all the activities of a computer?",
+    "options": [
+      "ALU",
+      "RAM",
+      "CU",
+      "SSD"
+    ],
+    "answer": 2,
+    "explanation": "CU (Control Unit) controls all activities of the computer.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "According to the chapter's quick revision, CPU = ?",
+    "options": [
+      "CU + ALU + Monitor",
+      "CU + ALU + Memory Unit",
+      "ALU + RAM + Hard Disk",
+      "CU + Motherboard + Storage"
+    ],
+    "answer": 1,
+    "explanation": "Quick revision: CPU = CU + ALU + Memory Unit.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Processor (CPU)"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Memory is used for ______ storage of data and instructions while processing.",
+    "options": [
+      "Permanent",
+      "Offline",
+      "Temporary",
+      "External"
+    ],
+    "answer": 2,
+    "explanation": "Memory is used for temporary storage; remember Memory = Temporary, Storage = Permanent.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Memory"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is given in the chapter as an example of Memory?",
+    "options": [
+      "Pen Drive",
+      "CD/DVD",
+      "Hard Disk Drive",
+      "Cache Memory"
+    ],
+    "answer": 3,
+    "explanation": "RAM and Cache Memory are the examples of memory given in the chapter.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Memory"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "The main circuit board that connects all components of a computer is called:",
+    "options": [
+      "Processor",
+      "Hard Disk",
+      "Memory",
+      "Motherboard"
+    ],
+    "answer": 3,
+    "explanation": "The Motherboard is the main circuit board that connects all components of a computer.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which component is called the \"Backbone of Computer\"?",
+    "options": [
+      "Motherboard",
+      "CPU",
+      "RAM",
+      "Monitor"
+    ],
+    "answer": 0,
+    "explanation": "Remember: Motherboard = Backbone of Computer.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Which of the following is a storage device that stores data permanently?",
+    "options": [
+      "RAM",
+      "Solid State Drive (SSD)",
+      "Cache Memory",
+      "ALU"
+    ],
+    "answer": 1,
+    "explanation": "A storage device stores data permanently, e.g. HDD, SSD, Pen Drive, CD/DVD.",
+    "tags": [
+      "Fundamentals of Computers",
+      "Storage Device"
+    ]
+  }
+]

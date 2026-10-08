@@ -23,9 +23,9 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 8,
-      "newest": "2026-10-05",
-      "totalSize": 36432099,
+      "count": 9,
+      "newest": "2026-10-09",
+      "totalSize": 22923503,
       "languages": [
         {
           "id": "pa",
@@ -85,56 +85,46 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
-              "id": "chapter 1 fundamentals-of-computer",
-              "name": "Chapter 1: Fundamentals of Computer",
+              "id": "01 - Fundamentals of Computers",
+              "name": "Chapter 1: Fundamentals of Computers",
               "parts": [
                 {
-                  "file": "material-fundamentals-of-computer.html",
+                  "file": "material-01-fundamentals-of-computers-part1-en.html",
                   "n": 1
+                },
+                {
+                  "file": "material-01-fundamentals-of-computers-part2-en.html",
+                  "n": 2
+                },
+                {
+                  "file": "material-fundamentals-of-computers-en.html",
+                  "n": 3
                 }
               ],
-              "pages": 14
+              "pages": 11
             },
             {
-              "id": "evolution of computers",
-              "name": "Evolution of Computers",
+              "id": "02 - Evolution of Computers",
+              "name": "Chapter 2: Evolution of Computers",
               "parts": [
                 {
-                  "file": "material-evolution-of-computer-en.html",
+                  "file": "material-02-evolution-of-computers-part1-en.html",
                   "n": 1
-                }
-              ],
-              "pages": 9
-            },
-            {
-              "id": "mobile phone",
-              "name": "Mobile Phone",
-              "parts": [
+                },
                 {
-                  "file": "material-mobile-phone.html",
-                  "n": 1
+                  "file": "material-evolution-of-computers-en.html",
+                  "n": 2
                 }
               ],
-              "pages": 18
-            },
-            {
-              "id": "MS word",
-              "name": "Ms Word",
-              "parts": [
-                {
-                  "file": "material-m-s-word.html",
-                  "n": 1
-                }
-              ],
-              "pages": 25
+              "pages": 7
             }
           ]
         }
       ],
-      "chapters": 8
+      "chapters": 6
     },
     {
       "id": "english",
@@ -143,9 +133,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 1,
-      "newest": "2026-10-08",
-      "totalSize": 2685088,
+      "count": 2,
+      "newest": "2026-10-09",
+      "totalSize": 5317234,
       "languages": [
         {
           "id": "pa",
@@ -160,7 +150,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "01 - Subject and Predicate",
@@ -172,11 +162,22 @@
                 }
               ],
               "pages": 13
+            },
+            {
+              "id": "02 - Clauses and Phrases",
+              "name": "Chapter 2: Clauses and Phrases",
+              "parts": [
+                {
+                  "file": "material-clauses-phrases.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
             }
           ]
         }
       ],
-      "chapters": 1
+      "chapters": 2
     },
     {
       "id": "punjabi",
@@ -2074,6 +2075,6 @@
       "hidden": true
     }
   ],
-  "total": 66,
+  "total": 68,
   "generatedBy": "scripts/study_material.py"
 }

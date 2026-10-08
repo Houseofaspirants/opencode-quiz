@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 517,
-  "edges": 3106,
+  "nodes": 524,
+  "edges": 3136,
   "silos": 35,
-  "clusters": 61,
+  "clusters": 62,
   "pillars": 34
  },
  "nodes": [
@@ -1854,8 +1854,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
-   "url": "/content/study-material/computer/english/MS%20word/m-s-word.pdf",
+   "id": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part1-en.json",
+   "url": "/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part1-en.json",
    "type": "page",
    "template": "",
    "title": "",
@@ -1866,8 +1866,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/english/chapter%201%20fundamentals-of-computer/fundamentals-of-computer.pdf",
-   "url": "/content/study-material/computer/english/chapter%201%20fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "id": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part2-en.json",
+   "url": "/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part2-en.json",
    "type": "page",
    "template": "",
    "title": "",
@@ -1878,8 +1878,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
-   "url": "/content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "id": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/fundamentals-of-computers-en.pdf",
+   "url": "/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/fundamentals-of-computers-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -1890,8 +1890,20 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
-   "url": "/content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "id": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/02-evolution-of-computers-part1-en.json",
+   "url": "/content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/02-evolution-of-computers-part1-en.json",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-en.pdf",
+   "url": "/content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2000,6 +2012,18 @@
   {
    "id": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "url": "/content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
+   "url": "/content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -3186,6 +3210,54 @@
    "hub": "magazine.html"
   },
   {
+   "id": "material-01-fundamentals-of-computers-part1-en",
+   "url": "/material-01-fundamentals-of-computers-part1-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-01-fundamentals-of-computers-part1-en.html",
+   "url": "/material-01-fundamentals-of-computers-part1-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Fundamentals of Computers - Part 1 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-01-fundamentals-of-computers-part2-en",
+   "url": "/material-01-fundamentals-of-computers-part2-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-01-fundamentals-of-computers-part2-en.html",
+   "url": "/material-01-fundamentals-of-computers-part2-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Fundamentals of Computers - Part 2 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-01-number-series",
    "url": "/material-01-number-series",
    "type": "document",
@@ -3275,6 +3347,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 2: Analogy (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-02-evolution-of-computers-part1-en",
+   "url": "/material-02-evolution-of-computers-part1-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-02-evolution-of-computers-part1-en.html",
+   "url": "/material-02-evolution-of-computers-part1-en.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 2: Evolution of Computers - Part 1 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -3426,6 +3522,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-clauses-phrases",
+   "url": "/material-clauses-phrases",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-clauses-phrases.html",
+   "url": "/material-clauses-phrases.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 2: Clauses and Phrases (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-cultural-fairs-en",
    "url": "/material-cultural-fairs-en",
    "type": "document",
@@ -3474,8 +3594,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-evolution-of-computer-en",
-   "url": "/material-evolution-of-computer-en",
+   "id": "material-evolution-of-computers-en",
+   "url": "/material-evolution-of-computers-en",
    "type": "document",
    "template": "",
    "title": "",
@@ -3486,11 +3606,11 @@
    "hub": ""
   },
   {
-   "id": "material-evolution-of-computer-en.html",
-   "url": "/material-evolution-of-computer-en.html",
+   "id": "material-evolution-of-computers-en.html",
+   "url": "/material-evolution-of-computers-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Evolution of Computers (English)",
+   "title": "Chapter 2: Evolution of Computers - Part 2 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -3786,18 +3906,6 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-fundamentals-of-computer",
-   "url": "/material-fundamentals-of-computer",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "material-fundamentals-of-computer-punjabi",
    "url": "/material-fundamentals-of-computer-punjabi",
    "type": "document",
@@ -3822,11 +3930,23 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-fundamentals-of-computer.html",
-   "url": "/material-fundamentals-of-computer.html",
+   "id": "material-fundamentals-of-computers-en",
+   "url": "/material-fundamentals-of-computers-en",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamentals-of-computers-en.html",
+   "url": "/material-fundamentals-of-computers-en.html",
    "type": "study-material",
    "template": "",
-   "title": "Chapter 1: Fundamentals of Computer (English)",
+   "title": "Chapter 1: Fundamentals of Computers - Part 3 (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -3930,30 +4050,6 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-m-s-word",
-   "url": "/material-m-s-word",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-m-s-word.html",
-   "url": "/material-m-s-word.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Ms Word (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
    "id": "material-mobail-phon",
    "url": "/material-mobail-phon",
    "type": "document",
@@ -3971,30 +4067,6 @@
    "type": "study-material",
    "template": "",
    "title": "Mobile Phones (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-mobile-phone",
-   "url": "/material-mobile-phone",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-mobile-phone.html",
-   "url": "/material-mobile-phone.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Mobile Phone (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5959,6 +6031,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-english-01-subject-and-predicate-part-1.html",
+   "url": "/quiz-english-01-subject-and-predicate-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
    "type": "quiz",
@@ -6723,7 +6807,25 @@
   },
   {
    "from": "archive-category-computer.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-01-fundamentals-of-computers-part1-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-01-fundamentals-of-computers-part2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-02-evolution-of-computers-part1-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6741,25 +6843,13 @@
   },
   {
    "from": "archive-category-computer.html",
-   "to": "material-fundamentals-of-computer.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "material-m-s-word.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-computer.html",
    "to": "material-mobail-phon.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-computer.html",
-   "to": "material-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6820,6 +6910,12 @@
   {
    "from": "archive-category-english.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-english.html",
+   "to": "material-clauses-phrases.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9045,6 +9141,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-clauses-phrases.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-cultural-fairs-en.html",
    "rel": "contextual",
    "weight": 1
@@ -9057,7 +9159,7 @@
   },
   {
    "from": "archives.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9141,7 +9243,7 @@
   },
   {
    "from": "archives.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9171,19 +9273,7 @@
   },
   {
    "from": "archives.html",
-   "to": "material-m-s-word.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
    "to": "material-mobail-phon.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10844,6 +10934,174 @@
    "weight": 1
   },
   {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "material-01-fundamentals-of-computers-part1-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "material-01-fundamentals-of-computers-part2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "material-evolution-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part1-en.html",
+   "to": "material-fundamentals-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "material-01-fundamentals-of-computers-part1-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "material-01-fundamentals-of-computers-part2-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "material-evolution-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-fundamentals-of-computers-part2-en.html",
+   "to": "material-fundamentals-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-01-number-series-2.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -11200,6 +11458,84 @@
   {
    "from": "material-02-analogy.html",
    "to": "material-02-analogy-2.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "material-02-evolution-of-computers-part1-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "material-evolution-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "material-evolution-of-computers-pa.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-02-evolution-of-computers-part1-en.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11655,19 +11991,19 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-01-number-series.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11758,6 +12094,96 @@
   {
    "from": "material-bhasha-ate-panjabi-bhasha.html",
    "to": "material-kark.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "material-clauses-phrases",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "subject-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "material-evolution-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "material-fundamentals-of-computers-en.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-clauses-phrases.html",
+   "to": "material-subject-predicate.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11942,92 +12368,98 @@
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
-   "to": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "from": "material-evolution-of-computers-en.html",
+   "to": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
-   "to": "material-evolution-of-computer-en",
+   "from": "material-evolution-of-computers-en.html",
+   "to": "material-02-evolution-of-computers-part1-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
+   "to": "material-evolution-of-computers-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-evolution-of-computers-en.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "quiz-computer-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
+   "from": "material-evolution-of-computers-en.html",
    "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
-   "to": "material-fundamentals-of-computer.html",
+   "from": "material-evolution-of-computers-en.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-evolution-of-computer-en.html",
-   "to": "material-m-s-word.html",
+   "from": "material-evolution-of-computers-en.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12105,19 +12537,19 @@
   },
   {
    "from": "material-evolution-of-computers-pa.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-evolution-of-computers-pa.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-evolution-of-computers-pa.html",
-   "to": "material-m-s-word.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13263,7 +13695,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13275,97 +13707,103 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "content/study-material/computer/english/chapter%201%20fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "from": "material-fundamentals-of-computers-en.html",
+   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/fundamentals-of-computers-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "material-fundamentals-of-computer",
+   "from": "material-fundamentals-of-computers-en.html",
+   "to": "material-01-fundamentals-of-computers-part2-en.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
+   "to": "material-fundamentals-of-computers-en",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "quiz-computer-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "material-evolution-of-computer-en.html",
+   "from": "material-fundamentals-of-computers-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
+   "from": "material-fundamentals-of-computers-en.html",
    "to": "material-evolution-of-computers-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-fundamentals-of-computer.html",
-   "to": "material-m-s-word.html",
+   "from": "material-fundamentals-of-computers-en.html",
+   "to": "material-ms-word-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13730,96 +14168,6 @@
    "weight": 1
   },
   {
-   "from": "material-m-s-word.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "material-m-s-word",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "study.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "material-evolution-of-computer-en.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "material-evolution-of-computers-pa.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-m-s-word.html",
-   "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
    "from": "material-mobail-phon.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -13893,7 +14241,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13905,97 +14253,7 @@
   },
   {
    "from": "material-mobail-phon.html",
-   "to": "material-fundamentals-of-computer.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-mobile-phone",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "study.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-evolution-of-computer-en.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-evolution-of-computers-pa.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-mobile-phone.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14073,7 +14331,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14085,7 +14343,7 @@
   },
   {
    "from": "material-ms-word-pa.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15609,13 +15867,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15699,13 +15957,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16149,13 +16407,13 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16239,13 +16497,13 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16467,6 +16725,12 @@
   },
   {
    "from": "material-subject-predicate.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -16474,18 +16738,6 @@
   {
    "from": "material-subject-predicate.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-subject-predicate.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-subject-predicate.html",
-   "to": "subject-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16509,37 +16761,25 @@
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-subject-predicate.html",
-   "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-subject-predicate.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-clauses-phrases.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-01-number-series.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24345,25 +24585,31 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/english/MS%20word/m-s-word.pdf",
+   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part1-en.json",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/english/chapter%201%20fundamentals-of-computer/fundamentals-of-computer.pdf",
+   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/01-fundamentals-of-computers-part2-en.json",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/english/evolution%20of%20computers/evolution-of-computer-en.pdf",
+   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/fundamentals-of-computers-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/computer/english/mobile%20phone/mobile%20phone.pdf",
+   "to": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/02-evolution-of-computers-part1-en.json",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-en.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -24418,6 +24664,12 @@
   {
    "from": "study-material.html",
    "to": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -24747,6 +24999,18 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-01-fundamentals-of-computers-part1-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-01-fundamentals-of-computers-part2-en.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-01-number-series-2.html",
    "rel": "contextual",
    "weight": 1
@@ -24766,6 +25030,12 @@
   {
    "from": "study-material.html",
    "to": "material-02-analogy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-02-evolution-of-computers-part1-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24807,6 +25077,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-clauses-phrases.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-cultural-fairs-en.html",
    "rel": "contextual",
    "weight": 1
@@ -24819,7 +25095,7 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-evolution-of-computer-en.html",
+   "to": "material-evolution-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24903,7 +25179,7 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-fundamentals-of-computer.html",
+   "to": "material-fundamentals-of-computers-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24933,19 +25209,7 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-m-s-word.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "material-mobail-phon.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-mobile-phone.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25644,7 +25908,9 @@
    "name": "English",
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-english.html",
-   "clusters": [],
+   "clusters": [
+    "topic-english-01-subject-and-predicate-part-1.html"
+   ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
