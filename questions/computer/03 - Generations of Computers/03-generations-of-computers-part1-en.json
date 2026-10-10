@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "A \"Generation of Computers\" refers to:",
+    "options": [
+      "A brand of computer manufacturer",
+      "A stage in the development of computer technology",
+      "The storage capacity of a computer",
+      "A type of programming language"
+    ],
+    "answer": 1,
+    "explanation": "A Generation of Computers refers to a stage in the development of computer technology.",
+    "tags": [
+      "Generations of Computers",
+      "Introduction"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "What was the period of First Generation computers?",
+    "options": [
+      "1959–1965",
+      "1965–1971",
+      "1946–1959",
+      "1971–1980"
+    ],
+    "answer": 2,
+    "explanation": "First Generation computers: 1946–1959.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Which was the main electronic component of First Generation computers?",
+    "options": [
+      "Vacuum Tubes",
+      "Transistors",
+      "Integrated Circuits",
+      "Microprocessors"
+    ],
+    "answer": 0,
+    "explanation": "Vacuum tubes were used as the main electronic components in First Generation computers.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which were the input devices of First Generation computers?",
+    "options": [
+      "Keyboard and Mouse",
+      "Scanner and Light Pen",
+      "Punch Cards and Paper Tape",
+      "Touch Screen and Joystick"
+    ],
+    "answer": 2,
+    "explanation": "First Generation input devices were Punch Cards and Paper Tape.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which internal storage was used in First Generation computers?",
+    "options": [
+      "Magnetic Core Memory",
+      "Magnetic Drum",
+      "Magnetic Disk",
+      "Semiconductor Memory"
+    ],
+    "answer": 1,
+    "explanation": "Internal storage of First Generation computers was the Magnetic Drum.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which programming language was used in First Generation computers?",
+    "options": [
+      "Assembly Language",
+      "COBOL",
+      "C",
+      "Machine Language"
+    ],
+    "answer": 3,
+    "explanation": "First Generation computers used Machine Language.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Machine Language is a binary language consisting of only:",
+    "options": [
+      "0 to 9",
+      "A to Z",
+      "0 to 7",
+      "0 and 1"
+    ],
+    "answer": 3,
+    "explanation": "Machine Language is a binary language consisting of only 0 and 1.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "First Generation computers used a Batch Processing System. In such a system:",
+    "options": [
+      "Jobs were processed one after another without user interaction",
+      "Many users shared the CPU interactively at the same time",
+      "Jobs were processed instantly as data arrived",
+      "Jobs were spread across many connected computers"
+    ],
+    "answer": 0,
+    "explanation": "In batch processing, jobs were processed one after another without user interaction.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is a First Generation computer?",
+    "options": [
+      "IBM 7094",
+      "IBM 360",
+      "DEC 10",
+      "IBM-701"
+    ],
+    "answer": 3,
+    "explanation": "ENIAC, EDVAC, UNIVAC-I, IBM-701 and IBM-650 were First Generation computers.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ENIAC belongs to which generation of computers?",
+    "options": [
+      "Second",
+      "Third",
+      "First",
+      "Fourth"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: ENIAC belongs to the First Generation.",
+    "tags": [
+      "Generations of Computers",
+      "First Generation"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "What was the period of Second Generation computers?",
+    "options": [
+      "1946–1959",
+      "1959–1965",
+      "1965–1971",
+      "1971–1980"
+    ],
+    "answer": 1,
+    "explanation": "Second Generation computers: 1959–1965.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Second Generation computers used which main technology?",
+    "options": [
+      "Vacuum Tubes",
+      "Integrated Circuits",
+      "Transistors",
+      "VLSI"
+    ],
+    "answer": 2,
+    "explanation": "Transistors replaced vacuum tubes in the Second Generation.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "The transistor was invented at:",
+    "options": [
+      "IBM",
+      "Bell Laboratories",
+      "C-DAC",
+      "University of Cambridge"
+    ],
+    "answer": 1,
+    "explanation": "The transistor was invented at Bell Laboratories.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which primary memory was used in Second Generation computers?",
+    "options": [
+      "Magnetic Drum",
+      "Paper Tape",
+      "Cache Memory",
+      "Magnetic Core Memory"
+    ],
+    "answer": 3,
+    "explanation": "Second Generation primary memory was Magnetic Core Memory.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "COBOL and FORTRAN were introduced in which generation?",
+    "options": [
+      "First",
+      "Fourth",
+      "Second",
+      "Fifth"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: COBOL and FORTRAN were introduced in the Second Generation.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "Which operating systems were used in Second Generation computers?",
+    "options": [
+      "Real-Time OS and Distributed OS",
+      "Time Sharing and Remote Processing",
+      "Real-Time OS and Time Sharing OS",
+      "Batch Processing and Multiprogramming"
+    ],
+    "answer": 3,
+    "explanation": "Second Generation operating systems: Batch Processing and Multiprogramming.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is a Second Generation computer?",
+    "options": [
+      "IBM-650",
+      "IBM 370/168",
+      "PDP 11",
+      "IBM 7094"
+    ],
+    "answer": 3,
+    "explanation": "IBM 1620, IBM 7094, CDC 1604, CDC 3600 and UNIVAC 1108 were Second Generation computers.",
+    "tags": [
+      "Generations of Computers",
+      "Second Generation"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "What was the period of Third Generation computers?",
+    "options": [
+      "1965–1971",
+      "1959–1965",
+      "1971–1980",
+      "1946–1959"
+    ],
+    "answer": 0,
+    "explanation": "Third Generation computers: 1965–1971.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Third Generation computers were based on:",
+    "options": [
+      "Integrated Circuits (ICs)",
+      "Vacuum Tubes",
+      "Transistors",
+      "ULSI"
+    ],
+    "answer": 0,
+    "explanation": "In the Third Generation, ICs replaced transistors.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Who invented the Integrated Circuit (IC)?",
+    "options": [
+      "Charles Babbage",
+      "Douglas Engelbart",
+      "Jack Kilby",
+      "John W. Mauchly"
+    ],
+    "answer": 2,
+    "explanation": "The Integrated Circuit was invented by Jack Kilby.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "Keyboard and Monitor were introduced in which generation of computers?",
+    "options": [
+      "Third",
+      "First",
+      "Second",
+      "Fifth"
+    ],
+    "answer": 0,
+    "explanation": "Exam Point: Keyboard and Monitor were introduced in the Third Generation.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "Mini Computers were introduced in which generation?",
+    "options": [
+      "Third",
+      "Second",
+      "Fourth",
+      "Fifth"
+    ],
+    "answer": 0,
+    "explanation": "Exam Point: Mini Computers were introduced in the Third Generation.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "Remote Processing, along with Multiprogramming and Time Sharing, was an operating system feature of which generation?",
+    "options": [
+      "First",
+      "Third",
+      "Second",
+      "Fifth"
+    ],
+    "answer": 1,
+    "explanation": "Third Generation operating systems: Multiprogramming, Time Sharing and Remote Processing.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "The IBM 360 Series belongs to which generation of computers?",
+    "options": [
+      "First",
+      "Third",
+      "Second",
+      "Fourth"
+    ],
+    "answer": 1,
+    "explanation": "IBM 360 Series, IBM 370/168, Honeywell 6000, PDP and TDC-316 were Third Generation computers.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Generations of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "What is the full form of PDP, a Third Generation computer?",
+    "options": [
+      "Programmed Data Processor",
+      "Personal Data Processor",
+      "Programmed Digital Processor",
+      "Parallel Data Processor"
+    ],
+    "answer": 0,
+    "explanation": "PDP stands for Programmed Data Processor.",
+    "tags": [
+      "Generations of Computers",
+      "Third Generation"
+    ]
+  }
+]

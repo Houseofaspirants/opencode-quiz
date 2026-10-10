@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਅਧਿਆਇ ਅਨੁਸਾਰ, ਕੰਪਿਊਟਰ ਇੱਕ ਮਨੁੱਖ ਦੁਆਰਾ ਬਣਾਈ ______ ਮਸ਼ੀਨ ਹੈ।",
+    "options": [
+      "ਮਕੈਨੀਕਲ",
+      "ਹਾਈਡ੍ਰੌਲਿਕ",
+      "ਇਲੈਕਟ੍ਰਾਨਿਕ",
+      "ਚੁੰਬਕੀ"
+    ],
+    "answer": 2,
+    "explanation": "ਕੰਪਿਊਟਰ ਮਨੁੱਖ ਦੁਆਰਾ ਬਣਾਈ ਇਲੈਕਟ੍ਰਾਨਿਕ ਮਸ਼ੀਨ ਹੈ ਜੋ ਡਾਟਾ ਲੈ ਕੇ, ਪ੍ਰੋਸੈਸ ਕਰਕੇ ਸੂਚਨਾ ਦਿੰਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪਰਿਭਾਸ਼ਾ"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰ ਦੇ ਮੁੱਢਲੇ ਕਾਰਜ-ਚੱਕਰ ਦਾ ਸਹੀ ਕ੍ਰਮ ਕਿਹੜਾ ਹੈ?",
+    "options": [
+      "Input → Processing → Output",
+      "Processing → Input → Output",
+      "Output → Processing → Input",
+      "Input → Output → Processing"
+    ],
+    "answer": 0,
+    "explanation": "ਕੰਪਿਊਟਰ ਦਾ ਮੁੱਢਲਾ ਕੰਮ Input → Processing → Output ਚੱਕਰ ਅਨੁਸਾਰ ਹੁੰਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮੁੱਢਲੀ ਕਾਰਜ-ਪ੍ਰਣਾਲੀ"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਜਦੋਂ ਤੁਸੀਂ ਕੀਬੋਰਡ 'ਤੇ \"2 + 3\" ਟਾਈਪ ਕਰਦੇ ਹੋ ਅਤੇ ਸਕਰੀਨ 'ਤੇ \"5\" ਦਿਖਾਈ ਦਿੰਦਾ ਹੈ, ਤਾਂ \"5\" ਦਾ ਦਿਖਾਈ ਦੇਣਾ ਕਿਹੜਾ ਪੜਾਅ ਹੈ?",
+    "options": [
+      "ਇਨਪੁੱਟ",
+      "ਪ੍ਰੋਸੈਸਿੰਗ",
+      "ਸਟੋਰੇਜ",
+      "ਆਊਟਪੁੱਟ"
+    ],
+    "answer": 3,
+    "explanation": "ਅਧਿਆਇ ਦੀ ਉਦਾਹਰਨ ਵਿੱਚ ਸਕਰੀਨ 'ਤੇ \"5\" ਦਿਖਾਈ ਦੇਣਾ ਆਊਟਪੁੱਟ ਪੜਾਅ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮੁੱਢਲੀ ਕਾਰਜ-ਪ੍ਰਣਾਲੀ"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਵਿਦਿਆਰਥੀਆਂ ਦੇ ਅੰਕਾਂ ਵਾਲੀ ਉਦਾਹਰਨ ਵਿੱਚ ਕੰਪਿਊਟਰ ਦੁਆਰਾ ਪ੍ਰਤੀਸ਼ਤ ਦੀ ਗਣਨਾ ਕਰਨਾ ਕਿਹੜੇ ਪੜਾਅ ਨਾਲ ਸਬੰਧਤ ਹੈ?",
+    "options": [
+      "ਪ੍ਰੋਸੈਸਿੰਗ",
+      "ਇਨਪੁੱਟ",
+      "ਆਊਟਪੁੱਟ",
+      "ਸਟੋਰੇਜ"
+    ],
+    "answer": 0,
+    "explanation": "ਅੰਕ ਟਾਈਪ ਕਰਨਾ ਇਨਪੁੱਟ, ਪ੍ਰਤੀਸ਼ਤ ਦੀ ਗਣਨਾ ਪ੍ਰੋਸੈਸਿੰਗ ਅਤੇ ਉਸਨੂੰ ਦਿਖਾਉਣਾ ਆਊਟਪੁੱਟ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮੁੱਢਲੀ ਕਾਰਜ-ਪ੍ਰਣਾਲੀ"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਇਨਪੁੱਟ ਡਿਵਾਈਸਾਂ ਰਾਹੀਂ ਕੰਪਿਊਟਰ ਵਿੱਚ ਦਾਖਲ ਕੀਤੀ ਕੱਚੀ ਅਤੇ ਅਸੰਗਠਿਤ ਜਾਣਕਾਰੀ ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਸੂਚਨਾ",
+      "ਆਊਟਪੁੱਟ",
+      "ਡਾਟਾ",
+      "ਹਦਾਇਤ"
+    ],
+    "answer": 2,
+    "explanation": "ਡਾਟਾ ਕੱਚੀ, ਅਸੰਗਠਿਤ ਜਾਣਕਾਰੀ ਹੈ ਜੋ ਕੀਬੋਰਡ, ਮਾਊਸ, ਸਕੈਨਰ ਆਦਿ ਰਾਹੀਂ ਦਾਖਲ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਡਾਟਾ"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਪ੍ਰੋਸੈਸ ਕੀਤਾ ਅਤੇ ਸੰਗਠਿਤ ਡਾਟਾ, ਜੋ ਅਰਥਪੂਰਨ ਅਤੇ ਲਾਭਦਾਇਕ ਬਣ ਜਾਂਦਾ ਹੈ, ਉਸਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਸੂਚਨਾ",
+      "ਡਾਟਾ",
+      "ਇਨਪੁੱਟ",
+      "ਹਦਾਇਤ"
+    ],
+    "answer": 0,
+    "explanation": "ਸੂਚਨਾ ਪ੍ਰੋਸੈਸ ਕੀਤਾ ਅਤੇ ਸੰਗਠਿਤ ਡਾਟਾ ਹੈ ਜੋ ਅਰਥਪੂਰਨ ਅਤੇ ਲਾਭਦਾਇਕ ਹੁੰਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਸੂਚਨਾ"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਡਾਟਾ + ਪ੍ਰੋਸੈਸਿੰਗ = ?",
+    "options": [
+      "ਇਨਪੁੱਟ",
+      "ਹਦਾਇਤ",
+      "ਸੂਚਨਾ",
+      "ਸਟੋਰੇਜ"
+    ],
+    "answer": 2,
+    "explanation": "ਅਧਿਆਇ ਅਨੁਸਾਰ: ਡਾਟਾ + ਪ੍ਰੋਸੈਸਿੰਗ = ਸੂਚਨਾ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਸੂਚਨਾ"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "ਅਧਿਆਇ ਦੀ ਉਦਾਹਰਨ ਵਿੱਚ ਡਾਟਾ 45, 78, 92 ਨੂੰ ਕਿਹੜੀ ਸੂਚਨਾ ਵਿੱਚ ਬਦਲਿਆ ਗਿਆ ਹੈ?",
+    "options": [
+      "ਔਸਤ ਅੰਕ = 78",
+      "ਔਸਤ ਅੰਕ = 71.67",
+      "ਔਸਤ ਅੰਕ = 71.33",
+      "ਔਸਤ ਅੰਕ = 72.67"
+    ],
+    "answer": 1,
+    "explanation": "ਡਾਟਾ 45, 78, 92 ਤੋਂ ਸੂਚਨਾ ਔਸਤ ਅੰਕ = 71.67 ਬਣਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਸੂਚਨਾ"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰ ਵਿੱਚ ਦਾਖਲ ਕੀਤੇ ਗਏ ਡਾਟੇ ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਆਊਟਪੁੱਟ",
+      "ਇਨਪੁੱਟ",
+      "ਸੂਚਨਾ",
+      "ਸਟੋਰੇਜ"
+    ],
+    "answer": 1,
+    "explanation": "ਕੰਪਿਊਟਰ ਵਿੱਚ ਦਾਖਲ ਕੀਤੇ ਡਾਟੇ ਨੂੰ ਇਨਪੁੱਟ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਇਨਪੁੱਟ"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਪ੍ਰੋਸੈਸਿੰਗ ਤੋਂ ਬਾਅਦ ਕੰਪਿਊਟਰ ਦੁਆਰਾ ਤਿਆਰ ਕੀਤੀ ਸੂਚਨਾ ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਆਊਟਪੁੱਟ",
+      "ਇਨਪੁੱਟ",
+      "ਡਾਟਾ",
+      "ਹਦਾਇਤ"
+    ],
+    "answer": 0,
+    "explanation": "ਪ੍ਰੋਸੈਸਿੰਗ ਤੋਂ ਬਾਅਦ ਕੰਪਿਊਟਰ ਦੁਆਰਾ ਤਿਆਰ ਸੂਚਨਾ ਨੂੰ ਆਊਟਪੁੱਟ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਆਊਟਪੁੱਟ"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਅਧਿਆਇ ਅਨੁਸਾਰ ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਆਊਟਪੁੱਟ ਦੀ ਉਦਾਹਰਨ ਹੈ?",
+    "options": [
+      "ਮਾਊਸ ਨਾਲ ਕਲਿੱਕ ਕਰਨਾ",
+      "ਸਪੀਕਰਾਂ ਰਾਹੀਂ ਆਡੀਓ",
+      "ਦਸਤਾਵੇਜ਼ ਸਕੈਨ ਕਰਨਾ",
+      "ਕੀਬੋਰਡ ਰਾਹੀਂ ਟਾਈਪ ਕਰਨਾ"
+    ],
+    "answer": 1,
+    "explanation": "ਮਾਨੀਟਰ 'ਤੇ ਡਿਸਪਲੇ, ਪ੍ਰਿੰਟ ਕੀਤੀ ਰਿਪੋਰਟ ਅਤੇ ਸਪੀਕਰਾਂ ਰਾਹੀਂ ਆਡੀਓ ਆਊਟਪੁੱਟ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਹਨ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਆਊਟਪੁੱਟ"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕੰਪਿਊਟਰ ਨੂੰ ਕੋਈ ਖਾਸ ਕੰਮ ਕਰਨ ਲਈ ਦਿੱਤੇ ਗਏ ਆਦੇਸ਼, ਜਿਵੇਂ \"ਫਾਈਲ ਸੇਵ ਕਰੋ\", ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਡਾਟਾ",
+      "ਸੂਚਨਾ",
+      "ਆਊਟਪੁੱਟ",
+      "ਹਦਾਇਤਾਂ"
+    ],
+    "answer": 3,
+    "explanation": "ਹਦਾਇਤਾਂ ਕੰਪਿਊਟਰ ਨੂੰ ਖਾਸ ਕੰਮ ਕਰਨ ਲਈ ਦਿੱਤੇ ਆਦੇਸ਼ ਹਨ, ਜਿਵੇਂ ਫਾਈਲ ਸੇਵ ਕਰਨਾ, ਦਸਤਾਵੇਜ਼ ਪ੍ਰਿੰਟ ਕਰਨਾ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਹਦਾਇਤਾਂ"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕੰਪਿਊਟਰ ਦੀ ਗਤੀ ਤੋਂ ਭਾਵ ਹੈ ਕੰਪਿਊਟਰ ਦੁਆਰਾ ______ ਵਿੱਚ ਪ੍ਰੋਸੈਸ ਕੀਤੀਆਂ ਹਦਾਇਤਾਂ ਦੀ ਗਿਣਤੀ।",
+    "options": [
+      "ਇੱਕ ਮਿੰਟ",
+      "ਇੱਕ ਘੰਟੇ",
+      "ਇੱਕ ਸਕਿੰਟ",
+      "ਇੱਕ ਦਿਨ"
+    ],
+    "answer": 2,
+    "explanation": "ਕੰਪਿਊਟਰ ਦੀ ਗਤੀ ਇੱਕ ਸਕਿੰਟ ਵਿੱਚ ਪ੍ਰੋਸੈਸ ਕੀਤੀਆਂ ਹਦਾਇਤਾਂ ਦੀ ਗਿਣਤੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਕੰਪਿਊਟਰ ਦੀ ਗਤੀ"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "ਕੰਪਿਊਟਰ ਦੀ ਗਤੀ ਦੀਆਂ ਇਕਾਈਆਂ ਵਿੱਚ ਚਿੰਨ੍ਹ \"μs\" ਦਾ ਅਰਥ ਹੈ:",
+    "options": [
+      "ਮਾਈਕ੍ਰੋਸਕਿੰਟ",
+      "ਮਿਲੀਸਕਿੰਟ",
+      "ਨੈਨੋਸਕਿੰਟ",
+      "ਪਿਕੋਸਕਿੰਟ"
+    ],
+    "answer": 0,
+    "explanation": "ਗਤੀ ਦੀਆਂ ਇਕਾਈਆਂ: ਮਿਲੀਸਕਿੰਟ (ms), ਮਾਈਕ੍ਰੋਸਕਿੰਟ (μs), ਨੈਨੋਸਕਿੰਟ (ns) ਅਤੇ ਪਿਕੋਸਕਿੰਟ (ps)।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਕੰਪਿਊਟਰ ਦੀ ਗਤੀ"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕਿਹੜਾ ਭਾਗ ਸਾਫਟਵੇਅਰ ਅਤੇ ਹਾਰਡਵੇਅਰ ਤੋਂ ਮਿਲੀਆਂ ਹਦਾਇਤਾਂ ਨੂੰ ਲਾਗੂ (execute) ਕਰਦਾ ਹੈ?",
+    "options": [
+      "ਮਦਰਬੋਰਡ",
+      "ਮਾਨੀਟਰ",
+      "ਪੈੱਨ ਡਰਾਈਵ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ],
+    "answer": 3,
+    "explanation": "ਪ੍ਰੋਸੈਸਰ (CPU) ਸਾਫਟਵੇਅਰ ਅਤੇ ਹਾਰਡਵੇਅਰ ਦੀਆਂ ਹਦਾਇਤਾਂ ਨੂੰ ਲਾਗੂ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਅਧਿਆਇ ਵਿੱਚ ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਸਨੂੰ ਪ੍ਰੋਸੈਸਰ ਦੀ ਉਦਾਹਰਨ ਵਜੋਂ ਦਿੱਤਾ ਗਿਆ ਹੈ?",
+    "options": [
+      "ਸਾਲਿਡ ਸਟੇਟ ਡਰਾਈਵ",
+      "AMD Ryzen",
+      "ਕੈਸ਼ ਮੈਮਰੀ",
+      "PARAM 8000"
+    ],
+    "answer": 1,
+    "explanation": "Intel Core i5, Intel Core i7 ਅਤੇ AMD Ryzen ਪ੍ਰੋਸੈਸਰ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਹਨ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕਿਸ ਭਾਗ ਨੂੰ \"ਕੰਪਿਊਟਰ ਦਾ ਦਿਮਾਗ\" ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "CPU",
+      "ਮਾਨੀਟਰ",
+      "ਕੀਬੋਰਡ",
+      "ਹਾਰਡ ਡਿਸਕ"
+    ],
+    "answer": 0,
+    "explanation": "CPU ਨੂੰ ਕੰਪਿਊਟਰ ਦਾ ਦਿਮਾਗ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕਿਹੜੀ ਇਕਾਈ ਗਣਿਤਕ (arithmetic) ਅਤੇ ਤਾਰਕਿਕ (logical) ਕਾਰਜ ਕਰਦੀ ਹੈ?",
+    "options": [
+      "CU",
+      "ਮੈਮਰੀ ਯੂਨਿਟ",
+      "ਮਦਰਬੋਰਡ",
+      "ALU"
+    ],
+    "answer": 3,
+    "explanation": "ALU ਗਣਿਤਕ ਅਤੇ ਤਾਰਕਿਕ ਕਾਰਜ ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕਿਹੜੀ ਇਕਾਈ ਕੰਪਿਊਟਰ ਦੀਆਂ ਸਾਰੀਆਂ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦੀ ਹੈ?",
+    "options": [
+      "ALU",
+      "RAM",
+      "CU",
+      "SSD"
+    ],
+    "answer": 2,
+    "explanation": "CU (ਕੰਟਰੋਲ ਯੂਨਿਟ) ਕੰਪਿਊਟਰ ਦੀਆਂ ਸਾਰੀਆਂ ਗਤੀਵਿਧੀਆਂ ਨੂੰ ਨਿਯੰਤਰਿਤ ਕਰਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Hard",
+    "question": "ਅਧਿਆਇ ਦੀ ਤੁਰੰਤ ਦੁਹਰਾਈ ਅਨੁਸਾਰ, CPU = ?",
+    "options": [
+      "CU + ALU + ਮਾਨੀਟਰ",
+      "CU + ALU + ਮੈਮਰੀ ਯੂਨਿਟ",
+      "ALU + RAM + ਹਾਰਡ ਡਿਸਕ",
+      "CU + ਮਦਰਬੋਰਡ + ਸਟੋਰੇਜ"
+    ],
+    "answer": 1,
+    "explanation": "ਤੁਰੰਤ ਦੁਹਰਾਈ: CPU = CU + ALU + ਮੈਮਰੀ ਯੂਨਿਟ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਪ੍ਰੋਸੈਸਰ (CPU)"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਮੈਮਰੀ ਦੀ ਵਰਤੋਂ ਪ੍ਰੋਸੈਸਿੰਗ ਦੌਰਾਨ ਡਾਟਾ ਅਤੇ ਹਦਾਇਤਾਂ ਦੇ ______ ਭੰਡਾਰਨ ਲਈ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+    "options": [
+      "ਸਥਾਈ",
+      "ਔਫਲਾਈਨ",
+      "ਅਸਥਾਈ",
+      "ਬਾਹਰੀ"
+    ],
+    "answer": 2,
+    "explanation": "ਮੈਮਰੀ ਅਸਥਾਈ ਭੰਡਾਰਨ ਲਈ ਹੈ; ਯਾਦ ਰੱਖੋ ਮੈਮਰੀ = ਅਸਥਾਈ, ਸਟੋਰੇਜ = ਸਥਾਈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮੈਮਰੀ"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਅਧਿਆਇ ਵਿੱਚ ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਸਨੂੰ ਮੈਮਰੀ ਦੀ ਉਦਾਹਰਨ ਵਜੋਂ ਦਿੱਤਾ ਗਿਆ ਹੈ?",
+    "options": [
+      "ਪੈੱਨ ਡਰਾਈਵ",
+      "CD/DVD",
+      "ਹਾਰਡ ਡਿਸਕ ਡਰਾਈਵ",
+      "ਕੈਸ਼ ਮੈਮਰੀ"
+    ],
+    "answer": 3,
+    "explanation": "ਅਧਿਆਇ ਵਿੱਚ RAM ਅਤੇ ਕੈਸ਼ ਮੈਮਰੀ ਨੂੰ ਮੈਮਰੀ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਵਜੋਂ ਦਿੱਤਾ ਗਿਆ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮੈਮਰੀ"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰ ਦੇ ਸਾਰੇ ਭਾਗਾਂ ਨੂੰ ਜੋੜਨ ਵਾਲੇ ਮੁੱਖ ਸਰਕਟ ਬੋਰਡ ਨੂੰ ਕੀ ਕਹਿੰਦੇ ਹਨ?",
+    "options": [
+      "ਪ੍ਰੋਸੈਸਰ",
+      "ਹਾਰਡ ਡਿਸਕ",
+      "ਮੈਮਰੀ",
+      "ਮਦਰਬੋਰਡ"
+    ],
+    "answer": 3,
+    "explanation": "ਮਦਰਬੋਰਡ ਮੁੱਖ ਸਰਕਟ ਬੋਰਡ ਹੈ ਜੋ ਕੰਪਿਊਟਰ ਦੇ ਸਾਰੇ ਭਾਗਾਂ ਨੂੰ ਜੋੜਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮਦਰਬੋਰਡ"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕਿਸ ਭਾਗ ਨੂੰ \"ਕੰਪਿਊਟਰ ਦੀ ਰੀੜ੍ਹ ਦੀ ਹੱਡੀ (Backbone)\" ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "ਮਦਰਬੋਰਡ",
+      "CPU",
+      "RAM",
+      "ਮਾਨੀਟਰ"
+    ],
+    "answer": 0,
+    "explanation": "ਯਾਦ ਰੱਖੋ: ਮਦਰਬੋਰਡ = ਕੰਪਿਊਟਰ ਦੀ ਰੀੜ੍ਹ ਦੀ ਹੱਡੀ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਮਦਰਬੋਰਡ"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Fundamentals of Computers - Part 1",
+    "difficulty": "Easy",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ ਸਟੋਰੇਜ ਡਿਵਾਈਸ ਹੈ ਜੋ ਡਾਟਾ ਸਥਾਈ ਤੌਰ 'ਤੇ ਸਟੋਰ ਕਰਦੀ ਹੈ?",
+    "options": [
+      "RAM",
+      "ਸਾਲਿਡ ਸਟੇਟ ਡਰਾਈਵ (SSD)",
+      "ਕੈਸ਼ ਮੈਮਰੀ",
+      "ALU"
+    ],
+    "answer": 1,
+    "explanation": "ਸਟੋਰੇਜ ਡਿਵਾਈਸ ਡਾਟਾ ਸਥਾਈ ਤੌਰ 'ਤੇ ਸਟੋਰ ਕਰਦੀ ਹੈ, ਜਿਵੇਂ HDD, SSD, ਪੈੱਨ ਡਰਾਈਵ, CD/DVD।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਦੇ ਮੂਲ ਤੱਤ",
+      "ਸਟੋਰੇਜ ਡਿਵਾਈਸ"
+    ]
+  }
+]

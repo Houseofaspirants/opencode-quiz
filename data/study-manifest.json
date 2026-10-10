@@ -23,31 +23,20 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 9,
-      "newest": "2026-10-09",
-      "totalSize": 22923503,
+      "count": 6,
+      "newest": "2026-10-10",
+      "totalSize": 17847256,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 3,
           "chapters": [
             {
-              "id": "evolution of computers",
-              "name": "Evolution of Computers",
-              "parts": [
-                {
-                  "file": "material-evolution-of-computers-pa.html",
-                  "n": 1
-                }
-              ],
-              "pages": 8
-            },
-            {
-              "id": "fundamentals-of-computer",
-              "name": "Fundamentals of Computer",
+              "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
+              "name": "Chapter 1: ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
               "parts": [
                 {
                   "file": "material-fundamentals-of-computer-punjabi.html",
@@ -57,26 +46,26 @@
               "pages": 12
             },
             {
-              "id": "M S word ",
-              "name": "M S Word",
+              "id": "02 - ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
+              "name": "Chapter 2: ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
               "parts": [
                 {
-                  "file": "material-ms-word-pa.html",
+                  "file": "material-aivolushn-aph-kanpiutrs.html",
                   "n": 1
                 }
               ],
-              "pages": 21
+              "pages": 8
             },
             {
-              "id": "mobile phones",
-              "name": "Mobile Phones",
+              "id": "03 - ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
+              "name": "Chapter 3: ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
               "parts": [
                 {
-                  "file": "material-mobail-phon.html",
+                  "file": "material-jainreshnj-aph-kanpiutrs.html",
                   "n": 1
                 }
               ],
-              "pages": 19
+              "pages": 10
             }
           ]
         },
@@ -85,23 +74,15 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 3,
           "chapters": [
             {
               "id": "01 - Fundamentals of Computers",
               "name": "Chapter 1: Fundamentals of Computers",
               "parts": [
                 {
-                  "file": "material-01-fundamentals-of-computers-part1-en.html",
-                  "n": 1
-                },
-                {
-                  "file": "material-01-fundamentals-of-computers-part2-en.html",
-                  "n": 2
-                },
-                {
                   "file": "material-fundamentals-of-computers-en.html",
-                  "n": 3
+                  "n": 1
                 }
               ],
               "pages": 11
@@ -111,15 +92,22 @@
               "name": "Chapter 2: Evolution of Computers",
               "parts": [
                 {
-                  "file": "material-02-evolution-of-computers-part1-en.html",
-                  "n": 1
-                },
-                {
                   "file": "material-evolution-of-computers-en.html",
-                  "n": 2
+                  "n": 1
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "03 - Generations of Computers",
+              "name": "Chapter 3: Generations of Computers",
+              "parts": [
+                {
+                  "file": "material-generations-of-computers-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
             }
           ]
         }
@@ -2075,6 +2063,6 @@
       "hidden": true
     }
   ],
-  "total": 68,
+  "total": 65,
   "generatedBy": "scripts/study_material.py"
 }

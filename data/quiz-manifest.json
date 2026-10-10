@@ -356,6 +356,24 @@
       }
     },
     {
+      "id": "02-clauses-and-phrases-part-1",
+      "subject": "english",
+      "category": "",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "02 Clauses And Phrases Part 1"
+      },
+      "variants": {
+        "en": "questions/english/02-clauses-and-phrases-part-1-en.json"
+      }
+    },
+    {
       "id": "fundamentals-of-computers-part1",
       "subject": "computer",
       "category": "fundamentals-of-computer",
@@ -375,68 +393,6 @@
       "variants": {
         "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
         "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
-      }
-    },
-    {
-      "id": "mobile-phone-part1-25-mcqs",
-      "subject": "computer",
-      "category": "mobile-phones",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Mobile Phone Part1 25 Mcqs"
-      },
-      "variants": {
-        "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
-      }
-    },
-    {
-      "id": "ms-word-part-1",
-      "subject": "computer",
-      "category": "ms-word",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "MS Word (Microsoft Word) - Part 1",
-        "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 1"
-      },
-      "variants": {
-        "en": "questions/computer/MS WORD/ms-word-part-1_en.json",
-        "pa": "questions/computer/MS WORD/ms-word-part-1_pa.json"
-      }
-    },
-    {
-      "id": "ms-word-part-2",
-      "subject": "computer",
-      "category": "ms-word",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "MS Word (Microsoft Word) - Part 2",
-        "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 2"
-      },
-      "variants": {
-        "en": "questions/computer/MS WORD/ms-word-part-2_en.json",
-        "pa": "questions/computer/MS WORD/ms-word-part-2_pa.json"
       }
     },
     {

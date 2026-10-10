@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-08T18:49:35.626Z",
+  "generatedAt": "2026-10-10T09:56:05.509Z",
   "stats": {
     "subjects": 7,
-    "categories": 22,
-    "topics": 29,
-    "quizzes": 29,
-    "questions": 685,
+    "categories": 20,
+    "topics": 27,
+    "quizzes": 27,
+    "questions": 635,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1205,6 +1205,31 @@
             "en": 25
           },
           "landing": "/quiz-english-01-subject-and-predicate-part-1"
+        },
+        {
+          "id": "02-clauses-and-phrases-part-1",
+          "name": "02 Clauses And Phrases Part 1",
+          "description": "",
+          "file": "questions/english/02-clauses-and-phrases-part-1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791626076105,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/02-clauses-and-phrases-part-1-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "02 Clauses And Phrases Part 1"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-02-clauses-and-phrases-part-1"
         }
       ],
       "categories": [],
@@ -1248,92 +1273,6 @@
             "pa": 20
           },
           "landing": "/quiz-computer-fundamentals-of-computers-part1"
-        },
-        {
-          "id": "mobile-phone-part1-25-mcqs",
-          "name": "Mobile Phone Part1 25 Mcqs",
-          "description": "",
-          "file": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1790261912813,
-          "category": "mobile-phones",
-          "language": "en",
-          "variants": {
-            "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
-          },
-          "availableLanguages": [
-            "en"
-          ],
-          "titles": {
-            "en": "Mobile Phone Part1 25 Mcqs"
-          },
-          "counts": {
-            "en": 25
-          },
-          "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
-        },
-        {
-          "id": "ms-word-part-1",
-          "name": "MS Word (Microsoft Word) - Part 1",
-          "description": "",
-          "file": "questions/computer/MS WORD/ms-word-part-1_en.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1790920521909,
-          "category": "ms-word",
-          "language": "en",
-          "variants": {
-            "en": "questions/computer/MS WORD/ms-word-part-1_en.json",
-            "pa": "questions/computer/MS WORD/ms-word-part-1_pa.json"
-          },
-          "availableLanguages": [
-            "en",
-            "pa"
-          ],
-          "titles": {
-            "en": "MS Word (Microsoft Word) - Part 1",
-            "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 1"
-          },
-          "counts": {
-            "en": 25,
-            "pa": 25
-          },
-          "landing": "/quiz-computer-ms-word-part-1"
-        },
-        {
-          "id": "ms-word-part-2",
-          "name": "MS Word (Microsoft Word) - Part 2",
-          "description": "",
-          "file": "questions/computer/MS WORD/ms-word-part-2_en.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1790920521911,
-          "category": "ms-word",
-          "language": "en",
-          "variants": {
-            "en": "questions/computer/MS WORD/ms-word-part-2_en.json",
-            "pa": "questions/computer/MS WORD/ms-word-part-2_pa.json"
-          },
-          "availableLanguages": [
-            "en",
-            "pa"
-          ],
-          "titles": {
-            "en": "MS Word (Microsoft Word) - Part 2",
-            "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 2"
-          },
-          "counts": {
-            "en": 25,
-            "pa": 25
-          },
-          "landing": "/quiz-computer-ms-word-part-2"
         }
       ],
       "categories": [
@@ -1375,110 +1314,6 @@
             }
           ],
           "landing": "/category-computer-fundamentals-of-computer"
-        },
-        {
-          "id": "mobile-phones",
-          "name": "MOBILE PHONES",
-          "folder": "MOBILE PHONES",
-          "icon": "📁",
-          "topics": [
-            {
-              "id": "mobile-phone-part1-25-mcqs",
-              "name": "Mobile Phone Part1 25 Mcqs",
-              "description": "",
-              "file": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json",
-              "count": 25,
-              "empty": false,
-              "available": true,
-              "timeLimit": 0,
-              "updatedAt": 1790261912813,
-              "category": "mobile-phones",
-              "language": "en",
-              "variants": {
-                "en": "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json"
-              },
-              "availableLanguages": [
-                "en"
-              ],
-              "titles": {
-                "en": "Mobile Phone Part1 25 Mcqs"
-              },
-              "counts": {
-                "en": 25
-              },
-              "landing": "/quiz-computer-mobile-phone-part1-25-mcqs"
-            }
-          ],
-          "landing": "/category-computer-mobile-phones"
-        },
-        {
-          "id": "ms-word",
-          "name": "MS WORD",
-          "folder": "MS WORD",
-          "icon": "📁",
-          "topics": [
-            {
-              "id": "ms-word-part-1",
-              "name": "MS Word (Microsoft Word) - Part 1",
-              "description": "",
-              "file": "questions/computer/MS WORD/ms-word-part-1_en.json",
-              "count": 25,
-              "empty": false,
-              "available": true,
-              "timeLimit": 0,
-              "updatedAt": 1790920521909,
-              "category": "ms-word",
-              "language": "en",
-              "variants": {
-                "en": "questions/computer/MS WORD/ms-word-part-1_en.json",
-                "pa": "questions/computer/MS WORD/ms-word-part-1_pa.json"
-              },
-              "availableLanguages": [
-                "en",
-                "pa"
-              ],
-              "titles": {
-                "en": "MS Word (Microsoft Word) - Part 1",
-                "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 1"
-              },
-              "counts": {
-                "en": 25,
-                "pa": 25
-              },
-              "landing": "/quiz-computer-ms-word-part-1"
-            },
-            {
-              "id": "ms-word-part-2",
-              "name": "MS Word (Microsoft Word) - Part 2",
-              "description": "",
-              "file": "questions/computer/MS WORD/ms-word-part-2_en.json",
-              "count": 25,
-              "empty": false,
-              "available": true,
-              "timeLimit": 0,
-              "updatedAt": 1790920521911,
-              "category": "ms-word",
-              "language": "en",
-              "variants": {
-                "en": "questions/computer/MS WORD/ms-word-part-2_en.json",
-                "pa": "questions/computer/MS WORD/ms-word-part-2_pa.json"
-              },
-              "availableLanguages": [
-                "en",
-                "pa"
-              ],
-              "titles": {
-                "en": "MS Word (Microsoft Word) - Part 2",
-                "pa": "ਐਮ.ਐਸ. ਵਰਡ - Part 2"
-              },
-              "counts": {
-                "en": 25,
-                "pa": 25
-              },
-              "landing": "/quiz-computer-ms-word-part-2"
-            }
-          ],
-          "landing": "/category-computer-ms-word"
         }
       ],
       "landing": "/subject-computer"
@@ -2001,18 +1836,6 @@
       "0ab8699ad8f51c1e",
       1790753838000
     ],
-    "questions/computer/MOBILE PHONES/mobile-phone-part1-25-mcqs.json": [
-      "d805d14f14b9a9bd",
-      1790261912813
-    ],
-    "questions/computer/MS WORD/ms-word-part-1_en.json": [
-      "1f9031b41d82ee16",
-      1790920521909
-    ],
-    "questions/computer/MS WORD/ms-word-part-2_en.json": [
-      "bf9d4ea6d6a1273a",
-      1790920521911
-    ],
     "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
       "c81b46122364bc1c",
       1790441699392
@@ -2048,6 +1871,10 @@
     "questions/english/01-subject-and-predicate-part-1-en.json": [
       "505add78614d920e",
       1791485219513
+    ],
+    "questions/english/02-clauses-and-phrases-part-1-en.json": [
+      "394e4587b39996b7",
+      1791626076105
     ],
     "questions/gk/economy/five-year-plans-20-mcqs-.en.json": [
       "c6cc6df338a1d2c9",
