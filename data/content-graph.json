@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 519,
+  "nodes": 522,
   "edges": 3099,
   "silos": 35,
-  "clusters": 58,
+  "clusters": 64,
   "pillars": 34
  },
  "nodes": [
@@ -5827,6 +5827,42 @@
    "hub": "previous-year-questions.html"
   },
   {
+   "id": "quiz-computer-01-fundamentals-of-computers-part1.html",
+   "url": "/quiz-computer-01-fundamentals-of-computers-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-02-evolution-of-computers-part1.html",
+   "url": "/quiz-computer-02-evolution-of-computers-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-03-generations-of-computers-part1.html",
+   "url": "/quiz-computer-03-generations-of-computers-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-computer-fundamentals-of-computers-part1.html",
    "url": "/quiz-computer-fundamentals-of-computers-part1.html",
    "type": "quiz",
@@ -11415,7 +11451,7 @@
   },
   {
    "from": "material-aivolushn-aph-kanpiutrs.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-02-evolution-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12153,7 +12189,7 @@
   },
   {
    "from": "material-evolution-of-computers-en.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-02-evolution-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13311,7 +13347,7 @@
   },
   {
    "from": "material-fundamentals-of-computer-punjabi.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-02-evolution-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13401,7 +13437,7 @@
   },
   {
    "from": "material-fundamentals-of-computers-en.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13491,7 +13527,7 @@
   },
   {
    "from": "material-generations-of-computers-en.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-03-generations-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13581,7 +13617,7 @@
   },
   {
    "from": "material-jainreshnj-aph-kanpiutrs.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
+   "to": "quiz-computer-03-generations-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25579,8 +25615,14 @@
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-computer.html",
    "clusters": [
-    "category-computer-fundamentals-of-computer.html",
-    "topic-computer-fundamentals-of-computers-part1.html"
+    "category-computer-01-fundamentals-of-computers.html",
+    "category-computer-02-evolution-of-computers.html",
+    "category-computer-03-generations-of-computers.html",
+    "topic-computer-01-fundamentals-of-computers-part1.html",
+    "topic-computer-01-fundamentals-of-computers-part2.html",
+    "topic-computer-02-evolution-of-computers-part1.html",
+    "topic-computer-03-generations-of-computers-part1.html",
+    "topic-computer-03-generations-of-computers-part2.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-10T09:56:05.509Z",
+  "generatedAt": "2026-10-11T12:27:04.065Z",
   "stats": {
     "subjects": 7,
     "categories": 22,
-    "topics": 31,
-    "quizzes": 31,
-    "questions": 740,
+    "topics": 32,
+    "quizzes": 32,
+    "questions": 765,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1230,6 +1230,30 @@
             "en": 25
           },
           "landing": "/quiz-english-02-clauses-and-phrases-part-1"
+        },
+        {
+          "id": "03-types-of-sentences-part-1",
+          "name": "03 Types Of Sentences Part 1",
+          "description": "",
+          "file": "questions/english/03-types-of-sentences-part-1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791721623921,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/03-types-of-sentences-part-1-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "03 Types Of Sentences Part 1"
+          },
+          "counts": {
+            "en": 25
+          }
         }
       ],
       "categories": [],
@@ -2149,6 +2173,10 @@
     "questions/english/02-clauses-and-phrases-part-1-en.json": [
       "394e4587b39996b7",
       1791626076105
+    ],
+    "questions/english/03-types-of-sentences-part-1-en.json": [
+      "06004b7d4972d6cb",
+      1791721623921
     ],
     "questions/gk/economy/five-year-plans-20-mcqs-.en.json": [
       "c6cc6df338a1d2c9",
