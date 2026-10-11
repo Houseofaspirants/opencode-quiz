@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-10T09:56:05.509Z",
   "stats": {
     "subjects": 7,
-    "categories": 20,
-    "topics": 27,
-    "quizzes": 27,
-    "questions": 635,
+    "categories": 22,
+    "topics": 31,
+    "quizzes": 31,
+    "questions": 740,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1245,75 +1245,333 @@
       "order": 6,
       "topics": [
         {
-          "id": "fundamentals-of-computers-part1",
-          "name": "Fundamentals of Computers - Part 1",
+          "id": "02-evolution-of-computers-part1",
+          "name": "Evolution of Computers - Part 1 - Part 1",
           "description": "",
-          "file": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
-          "count": 20,
+          "file": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json",
+          "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790753838000,
-          "category": "fundamentals-of-computer",
+          "updatedAt": 1791721589543,
+          "category": "02-evolution-of-computers",
           "language": "en",
           "variants": {
-            "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
-            "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
+            "en": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json",
+            "pa": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Fundamentals of Computers - Part 1",
-            "pa": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1"
+            "en": "Evolution of Computers - Part 1 - Part 1",
+            "pa": "Evolution of Computers - Part 1 - Part 1"
           },
           "counts": {
-            "en": 20,
-            "pa": 20
+            "en": 25,
+            "pa": 25
           },
-          "landing": "/quiz-computer-fundamentals-of-computers-part1"
+          "landing": "/quiz-computer-02-evolution-of-computers-part1"
+        },
+        {
+          "id": "01-fundamentals-of-computers-part1",
+          "name": "Fundamentals of Computers - Part 1 - Part 1",
+          "description": "",
+          "file": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791721589543,
+          "category": "01-fundamentals-of-computers",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json",
+            "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamentals of Computers - Part 1 - Part 1",
+            "pa": "Fundamentals of Computers - Part 1 - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-01-fundamentals-of-computers-part1"
+        },
+        {
+          "id": "01-fundamentals-of-computers-part2",
+          "name": "Fundamentals of Computers - Part 2 - Part 2",
+          "description": "",
+          "file": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791721589543,
+          "category": "01-fundamentals-of-computers",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json",
+            "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamentals of Computers - Part 2 - Part 2",
+            "pa": "Fundamentals of Computers - Part 2 - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-01-fundamentals-of-computers-part2"
+        },
+        {
+          "id": "03-generations-of-computers-part1",
+          "name": "Generations of Computers - Part 1 - Part 1",
+          "description": "",
+          "file": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791721589543,
+          "category": "03-generations-of-computers",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json",
+            "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Generations of Computers - Part 1 - Part 1",
+            "pa": "Generations of Computers - Part 1 - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-03-generations-of-computers-part1"
+        },
+        {
+          "id": "03-generations-of-computers-part2",
+          "name": "Generations of Computers - Part 2 - Part 2",
+          "description": "",
+          "file": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1791721589543,
+          "category": "03-generations-of-computers",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json",
+            "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Generations of Computers - Part 2 - Part 2",
+            "pa": "Generations of Computers - Part 2 - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-03-generations-of-computers-part2"
         }
       ],
       "categories": [
         {
-          "id": "fundamentals-of-computer",
-          "name": "FUNDAMENTALS OF COMPUTER",
-          "folder": "FUNDAMENTALS OF COMPUTER",
+          "id": "01-fundamentals-of-computers",
+          "name": "01   Fundamentals Of Computers",
+          "folder": "01 - Fundamentals of Computers",
           "icon": "📁",
           "topics": [
             {
-              "id": "fundamentals-of-computers-part1",
-              "name": "Fundamentals of Computers - Part 1",
+              "id": "01-fundamentals-of-computers-part1",
+              "name": "Fundamentals of Computers - Part 1 - Part 1",
               "description": "",
-              "file": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
-              "count": 20,
+              "file": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1790753838000,
-              "category": "fundamentals-of-computer",
+              "updatedAt": 1791721589543,
+              "category": "01-fundamentals-of-computers",
               "language": "en",
               "variants": {
-                "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
-                "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
+                "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json",
+                "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Fundamentals of Computers - Part 1",
-                "pa": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1"
+                "en": "Fundamentals of Computers - Part 1 - Part 1",
+                "pa": "Fundamentals of Computers - Part 1 - Part 1"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-computer-fundamentals-of-computers-part1"
+              "landing": "/quiz-computer-01-fundamentals-of-computers-part1"
+            },
+            {
+              "id": "01-fundamentals-of-computers-part2",
+              "name": "Fundamentals of Computers - Part 2 - Part 2",
+              "description": "",
+              "file": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791721589543,
+              "category": "01-fundamentals-of-computers",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json",
+                "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Fundamentals of Computers - Part 2 - Part 2",
+                "pa": "Fundamentals of Computers - Part 2 - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-01-fundamentals-of-computers-part2"
             }
           ],
-          "landing": "/category-computer-fundamentals-of-computer"
+          "landing": "/category-computer-01-fundamentals-of-computers"
+        },
+        {
+          "id": "02-evolution-of-computers",
+          "name": "02   Evolution Of Computers",
+          "folder": "02 - Evolution of Computers",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "02-evolution-of-computers-part1",
+              "name": "Evolution of Computers - Part 1 - Part 1",
+              "description": "",
+              "file": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791721589543,
+              "category": "02-evolution-of-computers",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json",
+                "pa": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Evolution of Computers - Part 1 - Part 1",
+                "pa": "Evolution of Computers - Part 1 - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-02-evolution-of-computers-part1"
+            }
+          ],
+          "landing": "/category-computer-02-evolution-of-computers"
+        },
+        {
+          "id": "03-generations-of-computers",
+          "name": "03   Generations Of Computers",
+          "folder": "03 - Generations of Computers",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "03-generations-of-computers-part1",
+              "name": "Generations of Computers - Part 1 - Part 1",
+              "description": "",
+              "file": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791721589543,
+              "category": "03-generations-of-computers",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json",
+                "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Generations of Computers - Part 1 - Part 1",
+                "pa": "Generations of Computers - Part 1 - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-03-generations-of-computers-part1"
+            },
+            {
+              "id": "03-generations-of-computers-part2",
+              "name": "Generations of Computers - Part 2 - Part 2",
+              "description": "",
+              "file": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1791721589543,
+              "category": "03-generations-of-computers",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json",
+                "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Generations of Computers - Part 2 - Part 2",
+                "pa": "Generations of Computers - Part 2 - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-03-generations-of-computers-part2"
+            }
+          ],
+          "landing": "/category-computer-03-generations-of-computers"
         }
       ],
       "landing": "/subject-computer"
@@ -1832,9 +2090,25 @@
     }
   ],
   "stamps": {
-    "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json": [
-      "0ab8699ad8f51c1e",
-      1790753838000
+    "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json": [
+      "6d6fe389b7f2aa20",
+      1791721589543
+    ],
+    "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json": [
+      "019d8f5aff1b19ea",
+      1791721589543
+    ],
+    "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json": [
+      "6b114fee528caa1a",
+      1791721589543
+    ],
+    "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json": [
+      "bd841f6ec5e332a7",
+      1791721589543
+    ],
+    "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json": [
+      "488d0ccc9a6a79b7",
+      1791721589543
     ],
     "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
       "c81b46122364bc1c",

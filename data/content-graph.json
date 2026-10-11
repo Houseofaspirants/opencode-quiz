@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 515,
-  "edges": 3084,
+  "nodes": 519,
+  "edges": 3099,
   "silos": 35,
-  "clusters": 63,
+  "clusters": 58,
   "pillars": 34
  },
  "nodes": [
@@ -1988,6 +1988,18 @@
   {
    "id": "content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
    "url": "/content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
+   "url": "/content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4614,6 +4626,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-types-of-sentences",
+   "url": "/material-types-of-sentences",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-types-of-sentences.html",
+   "url": "/material-types-of-sentences.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 3: Types of Sentences (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-vak-bodh",
    "url": "/material-vak-bodh",
    "type": "document",
@@ -6558,6 +6594,18 @@
    "hub": ""
   },
   {
+   "id": "subject-english.html",
+   "url": "/subject-english.html",
+   "type": "subject-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-gk.html",
    "url": "/subject-gk.html",
    "type": "subject-hub",
@@ -6777,12 +6825,6 @@
   },
   {
    "from": "archive-category-english.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-english.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -6801,19 +6843,7 @@
   },
   {
    "from": "archive-category-english.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-english.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-english.html",
-   "to": "study-notes.html",
+   "to": "material-types-of-sentences.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9315,6 +9345,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-types-of-sentences.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-vak-bodh.html",
    "rel": "contextual",
    "weight": 1
@@ -11721,7 +11757,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-generations-of-computers-en.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -11895,13 +11931,13 @@
   },
   {
    "from": "material-clauses-phrases.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-subject-predicate.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-clauses-phrases.html",
-   "to": "material-subject-predicate.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15489,13 +15525,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-rivers-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-rivers-of-punjab.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15579,13 +15615,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-rivers-of-punjab-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-rivers-of-punjab-pa.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16029,13 +16065,13 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-sikhism-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-sikhism-pa.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16119,13 +16155,13 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-sikhism-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-sikhism-en.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16395,7 +16431,97 @@
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-fundamentals-of-computer-punjabi.html",
+   "to": "material-types-of-sentences.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "material-types-of-sentences",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "subject-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "material-aivolushn-aph-kanpiutrs.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "material-clauses-phrases.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-types-of-sentences.html",
+   "to": "material-subject-predicate.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24273,6 +24399,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
    "rel": "contextual",
    "weight": 1
@@ -24957,6 +25089,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-types-of-sentences.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-vak-bodh.html",
    "rel": "contextual",
    "weight": 1
@@ -25442,12 +25580,7 @@
    "hub": "subject-computer.html",
    "clusters": [
     "category-computer-fundamentals-of-computer.html",
-    "category-computer-mobile-phones.html",
-    "category-computer-ms-word.html",
-    "topic-computer-fundamentals-of-computers-part1.html",
-    "topic-computer-mobile-phone-part1-25-mcqs.html",
-    "topic-computer-ms-word-part-1.html",
-    "topic-computer-ms-word-part-2.html"
+    "topic-computer-fundamentals-of-computers-part1.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",

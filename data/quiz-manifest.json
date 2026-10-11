@@ -374,25 +374,113 @@
       }
     },
     {
-      "id": "fundamentals-of-computers-part1",
+      "id": "02-evolution-of-computers-part1",
       "subject": "computer",
-      "category": "fundamentals-of-computer",
+      "category": "02-evolution-of-computers",
       "availableLanguages": [
         "en",
         "pa"
       ],
-      "count": 20,
+      "count": 25,
       "counts": {
-        "en": 20,
-        "pa": 20
+        "en": 25,
+        "pa": 25
       },
       "titles": {
-        "en": "Fundamentals of Computers - Part 1",
-        "pa": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1"
+        "en": "Evolution of Computers - Part 1 - Part 1",
+        "pa": "Evolution of Computers - Part 1 - Part 1"
       },
       "variants": {
-        "en": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_en.json",
-        "pa": "questions/computer/FUNDAMENTALS OF COMPUTER /fundamentals-of-computers-part1_pa.json"
+        "en": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-en.json",
+        "pa": "questions/computer/02 - Evolution of Computers/02-evolution-of-computers-part1-pa.json"
+      }
+    },
+    {
+      "id": "01-fundamentals-of-computers-part1",
+      "subject": "computer",
+      "category": "01-fundamentals-of-computers",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Fundamentals of Computers - Part 1 - Part 1",
+        "pa": "Fundamentals of Computers - Part 1 - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-en.json",
+        "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part1-pa.json"
+      }
+    },
+    {
+      "id": "01-fundamentals-of-computers-part2",
+      "subject": "computer",
+      "category": "01-fundamentals-of-computers",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Fundamentals of Computers - Part 2 - Part 2",
+        "pa": "Fundamentals of Computers - Part 2 - Part 2"
+      },
+      "variants": {
+        "en": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-en.json",
+        "pa": "questions/computer/01 - Fundamentals of Computers/01-fundamentals-of-computers-part2-pa.json"
+      }
+    },
+    {
+      "id": "03-generations-of-computers-part1",
+      "subject": "computer",
+      "category": "03-generations-of-computers",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Generations of Computers - Part 1 - Part 1",
+        "pa": "Generations of Computers - Part 1 - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-en.json",
+        "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part1-pa.json"
+      }
+    },
+    {
+      "id": "03-generations-of-computers-part2",
+      "subject": "computer",
+      "category": "03-generations-of-computers",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Generations of Computers - Part 2 - Part 2",
+        "pa": "Generations of Computers - Part 2 - Part 2"
+      },
+      "variants": {
+        "en": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-en.json",
+        "pa": "questions/computer/03 - Generations of Computers/03-generations-of-computers-part2-pa.json"
       }
     },
     {
