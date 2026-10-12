@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A hardware device that allows a user to enter data, instructions or control signals into a computer is called:",
+    "options": [
+      "Output Device",
+      "Storage Device",
+      "Input Device",
+      "Processor"
+    ],
+    "answer": 2,
+    "explanation": "An Input Device allows a user to enter data, instructions or control signals into a computer.",
+    "tags": [
+      "Input Devices",
+      "Definition"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which is the most commonly used input device to enter text, numbers, symbols and commands?",
+    "options": [
+      "Mouse",
+      "Scanner",
+      "Joystick",
+      "Keyboard"
+    ],
+    "answer": 3,
+    "explanation": "A Keyboard is the most commonly used input device to enter text, numbers, symbols and commands.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "A wireless keyboard, as mentioned in the chapter, connects through:",
+    "options": [
+      "Bluetooth",
+      "USB cable",
+      "Magnetic ink",
+      "Paper tape"
+    ],
+    "answer": 0,
+    "explanation": "Keyboard connectivity: USB Keyboard (Wired) and Bluetooth Keyboard (Wireless).",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which is the most commonly used keyboard layout in the world?",
+    "options": [
+      "AZERTY",
+      "DVORAK",
+      "QWERTY",
+      "QWERTZ"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: Most commonly used keyboard = QWERTY.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "A standard QWERTY keyboard usually contains how many keys?",
+    "options": [
+      "104",
+      "84",
+      "101",
+      "110"
+    ],
+    "answer": 0,
+    "explanation": "The QWERTY keyboard usually contains 104 keys.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "Keys that are used to switch a function ON or OFF are called:",
+    "options": [
+      "Modifier Keys",
+      "Toggle Keys",
+      "Function Keys",
+      "Arrow Keys"
+    ],
+    "answer": 1,
+    "explanation": "Toggle Keys are used to switch a function ON or OFF.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is a Toggle Key?",
+    "options": [
+      "Caps Lock",
+      "Shift",
+      "Ctrl",
+      "Alt"
+    ],
+    "answer": 0,
+    "explanation": "Caps Lock, Num Lock and Scroll Lock are toggle keys.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is a Modifier (Combination) Key, used along with another key?",
+    "options": [
+      "Num Lock",
+      "Scroll Lock",
+      "Caps Lock",
+      "Alt"
+    ],
+    "answer": 3,
+    "explanation": "Shift, Ctrl and Alt are modifier (combination) keys.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "The AZERTY keyboard is mainly used in:",
+    "options": [
+      "India and China",
+      "USA and Canada",
+      "France and Belgium",
+      "Japan and Korea"
+    ],
+    "answer": 2,
+    "explanation": "AZERTY is mainly used in France, Belgium and some European countries (French keyboard).",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which keyboard was developed to improve typing speed?",
+    "options": [
+      "QWERTY",
+      "DVORAK",
+      "AZERTY",
+      "Numeric keypad"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: DVORAK = Fast Typing Keyboard.",
+    "tags": [
+      "Input Devices",
+      "Keyboard"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Who invented the computer mouse?",
+    "options": [
+      "Douglas C. Engelbart",
+      "C. B. Mirick",
+      "Jack Kilby",
+      "Frank Beck"
+    ],
+    "answer": 0,
+    "explanation": "The mouse was invented by Douglas C. Engelbart.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In which year did Douglas C. Engelbart invent the mouse?",
+    "options": [
+      "1955",
+      "1971",
+      "1999",
+      "1963"
+    ],
+    "answer": 3,
+    "explanation": "Douglas C. Engelbart invented the mouse in 1963.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A laptop uses which device instead of a traditional mouse?",
+    "options": [
+      "Joystick",
+      "Light Pen",
+      "Digitizer",
+      "Touchpad"
+    ],
+    "answer": 3,
+    "explanation": "A laptop uses a Touchpad instead of a traditional mouse.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Which type of mouse contains a ball fixed inside the device that the user rotates with fingers?",
+    "options": [
+      "Optical Mouse",
+      "Trackball Mouse",
+      "Wireless Mouse",
+      "Mechanical Mouse"
+    ],
+    "answer": 1,
+    "explanation": "A Trackball Mouse contains a fixed ball which the user rotates using fingers.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Which mouse uses a ball and rollers, collects dust and requires regular cleaning?",
+    "options": [
+      "Optical Mouse",
+      "Mechanical Mouse",
+      "Wireless Mouse",
+      "Touchpad"
+    ],
+    "answer": 1,
+    "explanation": "A Mechanical Mouse uses a ball and rollers; its drawback is that it collects dust.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "An Optical Mouse works using:",
+    "options": [
+      "Ball and rollers",
+      "Magnetic ink",
+      "LED and optical sensor",
+      "Photomultiplier tube"
+    ],
+    "answer": 2,
+    "explanation": "An Optical Mouse uses LED, optical sensor and digital signal processing; it has no ball mechanism.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "Microsoft introduced optical mouse technology commercially in:",
+    "options": [
+      "1999",
+      "1963",
+      "1984",
+      "1977"
+    ],
+    "answer": 0,
+    "explanation": "Microsoft introduced optical mouse technology commercially in 1999.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Moving the mouse pointer over an object without clicking it is called:",
+    "options": [
+      "Dragging",
+      "Scrolling",
+      "Double-clicking",
+      "Hovering"
+    ],
+    "answer": 3,
+    "explanation": "Hovering means moving the mouse pointer over an object without clicking it.",
+    "tags": [
+      "Input Devices",
+      "Mouse"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A Scanner converts printed documents, photographs or images into:",
+    "options": [
+      "Sound",
+      "Magnetic ink",
+      "Printed copies",
+      "Digital form"
+    ],
+    "answer": 3,
+    "explanation": "A Scanner converts printed documents, photographs or images into digital form.",
+    "tags": [
+      "Input Devices",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which is the most commonly used type of scanner?",
+    "options": [
+      "Flatbed Scanner",
+      "Drum Scanner",
+      "Sheetfed Scanner",
+      "Photo Scanner"
+    ],
+    "answer": 0,
+    "explanation": "The Flatbed Scanner is the most commonly used scanner; the document is placed on a glass surface.",
+    "tags": [
+      "Input Devices",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "A Barcode Scanner is an example of which type of scanner?",
+    "options": [
+      "Handheld Scanner",
+      "Flatbed Scanner",
+      "Drum Scanner",
+      "Sheetfed Scanner"
+    ],
+    "answer": 0,
+    "explanation": "Barcode Scanner is a handheld scanner, held in hand and moved over the item.",
+    "tags": [
+      "Input Devices",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "In which scanner does the paper move through the scanner while the scanner remains stationary, best for single-page documents?",
+    "options": [
+      "Flatbed Scanner",
+      "Sheetfed Scanner",
+      "Handheld Scanner",
+      "Drum Scanner"
+    ],
+    "answer": 1,
+    "explanation": "In a Sheetfed Scanner the paper moves through a stationary scanner; best for single-page documents.",
+    "tags": [
+      "Input Devices",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "Which scanner uses a PMT (Photomultiplier Tube) and gives extremely high resolution?",
+    "options": [
+      "Flatbed Scanner",
+      "Handheld Scanner",
+      "Drum Scanner",
+      "Sheetfed Scanner"
+    ],
+    "answer": 2,
+    "explanation": "A Drum Scanner uses PMT (Photomultiplier Tube) and offers extremely high resolution.",
+    "tags": [
+      "Input Devices",
+      "Scanner"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Who is credited as the inventor of the Joystick in the chapter?",
+    "options": [
+      "Douglas C. Engelbart",
+      "C. B. Mirick",
+      "Bent Stumpe",
+      "Jack Kilby"
+    ],
+    "answer": 1,
+    "explanation": "Joystick inventor: C. B. Mirick.",
+    "tags": [
+      "Input Devices",
+      "Joystick"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A Joystick is mainly used for:",
+    "options": [
+      "Reading bank cheques",
+      "Scanning documents",
+      "Video games and flight simulators",
+      "Recording voice"
+    ],
+    "answer": 2,
+    "explanation": "Joystick uses: video games, flight simulators and military applications.",
+    "tags": [
+      "Input Devices",
+      "Joystick"
+    ]
+  }
+]

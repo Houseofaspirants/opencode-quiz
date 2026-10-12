@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "A pen-shaped pointing device containing a light-sensitive sensor that detects objects on the screen is:",
+    "options": [
+      "Light Pen",
+      "Stylus",
+      "Joystick",
+      "Digitizer"
+    ],
+    "answer": 0,
+    "explanation": "A Light Pen is a pen-shaped pointing device with a light-sensitive sensor.",
+    "tags": [
+      "Input Devices",
+      "Light Pen"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "The Light Pen was developed around 1955 under which project?",
+    "options": [
+      "ENIAC Project",
+      "PARAM Project (C-DAC)",
+      "EDSAC Project (Cambridge)",
+      "Whirlwind Project (MIT)"
+    ],
+    "answer": 3,
+    "explanation": "The Light Pen was invented around 1955 under the Whirlwind Project at MIT.",
+    "tags": [
+      "Input Devices",
+      "Light Pen"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "According to the exam facts in the chapter, a Light Pen is NOT used with:",
+    "options": [
+      "Drawing applications",
+      "Selecting objects",
+      "LCD screens",
+      "Pointing on the screen"
+    ],
+    "answer": 2,
+    "explanation": "Exam fact: Light Pen is not used with LCD screens.",
+    "tags": [
+      "Input Devices",
+      "Light Pen"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "A Digitizer is also known as:",
+    "options": [
+      "Touchpad",
+      "Graphics Tablet",
+      "Light Pen",
+      "Trackball"
+    ],
+    "answer": 1,
+    "explanation": "Digitizer (Graphics Tablet) is a flat input device used with a stylus.",
+    "tags": [
+      "Input Devices",
+      "Digitizer"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "A Digitizer is a flat input device that is used with a:",
+    "options": [
+      "Stylus",
+      "Joystick",
+      "Trackball",
+      "Barcode reader"
+    ],
+    "answer": 0,
+    "explanation": "A Digitizer is used with a stylus to convert hand-drawn images into digital form.",
+    "tags": [
+      "Input Devices",
+      "Digitizer"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which input device is especially used in CAD and AutoCAD?",
+    "options": [
+      "Microphone",
+      "Digitizer",
+      "MICR",
+      "Webcam"
+    ],
+    "answer": 1,
+    "explanation": "Exam fact: Digitizer is used in CAD and AutoCAD.",
+    "tags": [
+      "Input Devices",
+      "Digitizer"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which input device is used to record voice for video conferencing and online meetings?",
+    "options": [
+      "Scanner",
+      "Light Pen",
+      "Joystick",
+      "Microphone"
+    ],
+    "answer": 3,
+    "explanation": "A Microphone enters sound; used for voice recording, voice calls and video conferencing.",
+    "tags": [
+      "Input Devices",
+      "Microphone"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "What is the full form of MICR?",
+    "options": [
+      "Magnetic Ink Code Reader",
+      "Magnetic Ink Character Recognition",
+      "Micro Ink Character Recognition",
+      "Magnetic Image Character Reader"
+    ],
+    "answer": 1,
+    "explanation": "MICR stands for Magnetic Ink Character Recognition.",
+    "tags": [
+      "Input Devices",
+      "MICR"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "MICR is mainly used for:",
+    "options": [
+      "Bank cheque processing",
+      "Video games",
+      "Digital drawing",
+      "Face unlock"
+    ],
+    "answer": 0,
+    "explanation": "Exam Point: MICR is used on bank cheques.",
+    "tags": [
+      "Input Devices",
+      "MICR"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "What is the full form of OCR?",
+    "options": [
+      "Optical Code Reader",
+      "Online Character Recognition",
+      "Optical Character Recognition",
+      "Optical Character Reader"
+    ],
+    "answer": 2,
+    "explanation": "OCR stands for Optical Character Recognition.",
+    "tags": [
+      "Input Devices",
+      "OCR"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "OCR converts printed or handwritten text into:",
+    "options": [
+      "Magnetic ink characters",
+      "Audio signals",
+      "Barcodes",
+      "Editable digital text"
+    ],
+    "answer": 3,
+    "explanation": "OCR converts printed or handwritten text into editable digital text.",
+    "tags": [
+      "Input Devices",
+      "OCR"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "According to the OCR vs MICR comparison in the chapter, which statement is correct?",
+    "options": [
+      "MICR has very high accuracy, OCR has high accuracy",
+      "OCR has very high accuracy, MICR has high accuracy",
+      "OCR uses magnetic technology",
+      "MICR is mainly used for documents"
+    ],
+    "answer": 0,
+    "explanation": "OCR: optical, used for documents, high accuracy; MICR: magnetic, used for cheques, very high accuracy.",
+    "tags": [
+      "Input Devices",
+      "OCR vs MICR"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which device acts as both an input device and an output device?",
+    "options": [
+      "Keyboard",
+      "Scanner",
+      "Microphone",
+      "Touch Screen"
+    ],
+    "answer": 3,
+    "explanation": "A Touch Screen is both an input and an output device.",
+    "tags": [
+      "Input Devices",
+      "Touch Screen"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "The Touch Screen was developed in the early 1970s by:",
+    "options": [
+      "Mauchly and Eckert",
+      "Douglas Engelbart and C. B. Mirick",
+      "Jack Kilby and Bell Laboratories",
+      "Frank Beck and Bent Stumpe"
+    ],
+    "answer": 3,
+    "explanation": "Touch Screen inventors: Frank Beck and Bent Stumpe, developed in the early 1970s.",
+    "tags": [
+      "Input Devices",
+      "Touch Screen"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following is a use of Touch Screens mentioned in the chapter?",
+    "options": [
+      "Bank cheque reading",
+      "Flight simulators",
+      "ATM machines and kiosks",
+      "Drum scanning"
+    ],
+    "answer": 2,
+    "explanation": "Touch Screens are used in smartphones, tablets, ATM machines and kiosks.",
+    "tags": [
+      "Input Devices",
+      "Touch Screen"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which technology creates a computer-generated environment that appears real to the user?",
+    "options": [
+      "Virtual Reality (VR)",
+      "OCR",
+      "MICR",
+      "Digitizer"
+    ],
+    "answer": 0,
+    "explanation": "Virtual Reality (VR) creates a computer-generated environment that appears real to the user.",
+    "tags": [
+      "Input Devices",
+      "Virtual Reality"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following devices is used in Virtual Reality?",
+    "options": [
+      "MICR reader",
+      "Drum Scanner",
+      "VR Headset",
+      "Barcode Scanner"
+    ],
+    "answer": 2,
+    "explanation": "Devices used in VR: VR Headset, Gloves and Headphones.",
+    "tags": [
+      "Input Devices",
+      "Virtual Reality"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "A camera connected to a computer, used for video calls and online classes, is called:",
+    "options": [
+      "Webcam",
+      "Scanner",
+      "Digitizer",
+      "Light Pen"
+    ],
+    "answer": 0,
+    "explanation": "A Webcam is a camera connected to a computer, used for video calls, online classes and recording videos.",
+    "tags": [
+      "Input Devices",
+      "Webcam"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Biometric devices identify a person using:",
+    "options": [
+      "Magnetic ink characters",
+      "Printed barcodes",
+      "Unique biological characteristics",
+      "Typed passwords"
+    ],
+    "answer": 2,
+    "explanation": "Biometric Devices identify a person using unique biological characteristics.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which is the most commonly used biometric device?",
+    "options": [
+      "Retina Scanner",
+      "Fingerprint Scanner",
+      "Voice Scanner",
+      "Hand Scanner"
+    ],
+    "answer": 1,
+    "explanation": "The Fingerprint Scanner is the most common biometric device.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "A Hand Scanner identifies a person using:",
+    "options": [
+      "Palm vein patterns",
+      "Facial measurements",
+      "Voice characteristics",
+      "The retina"
+    ],
+    "answer": 0,
+    "explanation": "A Hand Scanner uses palm vein patterns.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "According to the chapter, which biological feature is even more unique than fingerprints?",
+    "options": [
+      "Voice",
+      "Palm veins",
+      "Face",
+      "Handwriting"
+    ],
+    "answer": 1,
+    "explanation": "Palm veins are even more unique than fingerprints.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which biometric device uses the eye for identification and provides high security?",
+    "options": [
+      "Face Scanner",
+      "Voice Scanner",
+      "Retina/Iris Scanner",
+      "Hand Scanner"
+    ],
+    "answer": 2,
+    "explanation": "Retina/Iris Scanner uses the eye for identification; Retina Scanner provides high security.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "\"Face Unlock\" in smartphones is an example of which biometric device?",
+    "options": [
+      "Hand Scanner",
+      "Face Scanner",
+      "Voice Scanner",
+      "Retina Scanner"
+    ],
+    "answer": 1,
+    "explanation": "A Face Scanner identifies a person using facial measurements, e.g. Face Unlock in smartphones.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Input Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which biometric device uses voice characteristics for identification?",
+    "options": [
+      "Face Scanner",
+      "Fingerprint Scanner",
+      "Hand Scanner",
+      "Voice Scanner"
+    ],
+    "answer": 3,
+    "explanation": "A Voice Scanner uses voice characteristics for identification.",
+    "tags": [
+      "Input Devices",
+      "Biometric Devices"
+    ]
+  }
+]
