@@ -23,16 +23,16 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 6,
-      "newest": "2026-10-10",
-      "totalSize": 17847256,
+      "count": 8,
+      "newest": "2026-10-12",
+      "totalSize": 22735794,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
@@ -66,6 +66,17 @@
                 }
               ],
               "pages": 10
+            },
+            {
+              "id": "04 - ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
+              "name": "Chapter 4: ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
+              "parts": [
+                {
+                  "file": "material-input-divaisan.html",
+                  "n": 1
+                }
+              ],
+              "pages": 14
             }
           ]
         },
@@ -74,7 +85,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "01 - Fundamentals of Computers",
@@ -108,11 +119,22 @@
                 }
               ],
               "pages": 10
+            },
+            {
+              "id": "04 - Input Devices",
+              "name": "Chapter 4: Input Devices",
+              "parts": [
+                {
+                  "file": "material-input-devices-en.html",
+                  "n": 1
+                }
+              ],
+              "pages": 14
             }
           ]
         }
       ],
-      "chapters": 6
+      "chapters": 8
     },
     {
       "id": "english",
@@ -2074,6 +2096,6 @@
       "hidden": true
     }
   ],
-  "total": 66,
+  "total": 68,
   "generatedBy": "scripts/study_material.py"
 }
