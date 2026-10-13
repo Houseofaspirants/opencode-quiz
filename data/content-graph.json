@@ -23,7 +23,7 @@
   "nodes": 532,
   "edges": 3156,
   "silos": 35,
-  "clusters": 65,
+  "clusters": 68,
   "pillars": 34
  },
  "nodes": [
@@ -5971,6 +5971,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-computer-04-input-devices-part1.html",
+   "url": "/quiz-computer-04-input-devices-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-computer-fundamentals-of-computers-part1.html",
    "url": "/quiz-computer-fundamentals-of-computers-part1.html",
    "type": "quiz",
@@ -6729,18 +6741,6 @@
    "id": "study.html",
    "url": "/study.html",
    "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "subject-computer.html",
-   "url": "/subject-computer.html",
-   "type": "subject-hub",
    "template": "",
    "title": "",
    "lang": "en",
@@ -13773,6 +13773,12 @@
   },
   {
    "from": "material-input-devices-en.html",
+   "to": "quiz-computer-04-input-devices-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-input-devices-en.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -13780,12 +13786,6 @@
   {
    "from": "material-input-devices-en.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-input-devices-en.html",
-   "to": "subject-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13863,6 +13863,12 @@
   },
   {
    "from": "material-input-divaisan.html",
+   "to": "quiz-computer-04-input-devices-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-input-divaisan.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -13870,12 +13876,6 @@
   {
    "from": "material-input-divaisan.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-input-divaisan.html",
-   "to": "subject-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26080,11 +26080,14 @@
     "category-computer-01-fundamentals-of-computers.html",
     "category-computer-02-evolution-of-computers.html",
     "category-computer-03-generations-of-computers.html",
+    "category-computer-04-input-devices.html",
     "topic-computer-01-fundamentals-of-computers-part1.html",
     "topic-computer-01-fundamentals-of-computers-part2.html",
     "topic-computer-02-evolution-of-computers-part1.html",
     "topic-computer-03-generations-of-computers-part1.html",
-    "topic-computer-03-generations-of-computers-part2.html"
+    "topic-computer-03-generations-of-computers-part2.html",
+    "topic-computer-04-input-devices-part1.html",
+    "topic-computer-04-input-devices-part2.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
