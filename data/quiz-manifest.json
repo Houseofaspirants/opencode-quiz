@@ -502,6 +502,50 @@
       }
     },
     {
+      "id": "04-input-devices-part1",
+      "subject": "computer",
+      "category": "04-input-devices",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Input Devices - Part 1 - Part 1",
+        "pa": "Input Devices - Part 1 - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/04 - Input Devices/04-input-devices-part1-en.json",
+        "pa": "questions/computer/04 - Input Devices/04-input-devices-part1-pa.json"
+      }
+    },
+    {
+      "id": "04-input-devices-part2",
+      "subject": "computer",
+      "category": "04-input-devices",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Input Devices - Part 2 - Part 2",
+        "pa": "Input Devices - Part 2 - Part 2"
+      },
+      "variants": {
+        "en": "questions/computer/04 - Input Devices/04-input-devices-part2-en.json",
+        "pa": "questions/computer/04 - Input Devices/04-input-devices-part2-pa.json"
+      }
+    },
+    {
       "id": "current-affairs-july-2026-part1-geography-environment",
       "subject": "current-affairs",
       "category": "july",

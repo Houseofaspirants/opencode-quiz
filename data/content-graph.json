@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 529,
-  "edges": 3137,
+  "nodes": 532,
+  "edges": 3156,
   "silos": 35,
   "clusters": 65,
   "pillars": 34
@@ -2024,6 +2024,18 @@
   {
    "id": "content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
    "url": "/content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
+   "url": "/content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4626,6 +4638,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-simple-compound-complex-sentences",
+   "url": "/material-simple-compound-complex-sentences",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-simple-compound-complex-sentences.html",
+   "url": "/material-simple-compound-complex-sentences.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 4: Simple Compound and Complex Sentences (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-smanarthk-ate-virodhi-shbd",
    "url": "/material-smanarthk-ate-virodhi-shbd",
    "type": "document",
@@ -6964,6 +7000,12 @@
   {
    "from": "archive-category-english.html",
    "to": "material-clauses-phrases.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-english.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9471,6 +9513,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-simple-compound-complex-sentences.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-smanarthk-ate-virodhi-shbd.html",
    "rel": "contextual",
    "weight": 1
@@ -11901,7 +11949,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-types-of-sentences.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12069,7 +12117,7 @@
   },
   {
    "from": "material-clauses-phrases.html",
-   "to": "material-input-devices-en.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15849,13 +15897,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-input-divaisan.html",
+   "to": "material-rivers-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-rivers-of-punjab.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15939,13 +15987,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-input-divaisan.html",
+   "to": "material-rivers-of-punjab-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-rivers-of-punjab-pa.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16389,13 +16437,13 @@
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-input-divaisan.html",
+   "to": "material-sikhism-pa.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-en.html",
-   "to": "material-sikhism-pa.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16479,13 +16527,103 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-input-divaisan.html",
+   "to": "material-sikhism-en.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-sikhism-en.html",
+   "to": "material-simple-compound-complex-sentences.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "material-simple-compound-complex-sentences",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "quiz-english-03-types-of-sentences-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "material-clauses-phrases.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "material-subject-predicate.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-simple-compound-complex-sentences.html",
+   "to": "material-types-of-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16749,7 +16887,7 @@
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-input-devices-en.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16839,7 +16977,7 @@
   },
   {
    "from": "material-types-of-sentences.html",
-   "to": "material-input-devices-en.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24741,6 +24879,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
    "rel": "contextual",
    "weight": 1
@@ -25414,6 +25558,12 @@
   {
    "from": "study-material.html",
    "to": "material-sikhism-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "contextual",
    "weight": 1
   },

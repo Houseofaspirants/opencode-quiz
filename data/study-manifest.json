@@ -143,9 +143,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 3,
-      "newest": "2026-10-11",
-      "totalSize": 7987945,
+      "count": 4,
+      "newest": "2026-10-13",
+      "totalSize": 10681750,
       "languages": [
         {
           "id": "pa",
@@ -160,7 +160,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "01 - Subject and Predicate",
@@ -194,11 +194,22 @@
                 }
               ],
               "pages": 13
+            },
+            {
+              "id": "04 - Simple, Compound and Complex Sentences",
+              "name": "Chapter 4: Simple Compound and Complex Sentences",
+              "parts": [
+                {
+                  "file": "material-simple-compound-complex-sentences.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
             }
           ]
         }
       ],
-      "chapters": 3
+      "chapters": 4
     },
     {
       "id": "punjabi",
@@ -2096,6 +2107,6 @@
       "hidden": true
     }
   ],
-  "total": 68,
+  "total": 69,
   "generatedBy": "scripts/study_material.py"
 }
