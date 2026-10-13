@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 532,
-  "edges": 3156,
+  "nodes": 530,
+  "edges": 3150,
   "silos": 35,
   "clusters": 68,
   "pillars": 34
@@ -5983,42 +5983,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-computer-fundamentals-of-computers-part1.html",
-   "url": "/quiz-computer-fundamentals-of-computers-part1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "url": "/quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-computer-ms-word-part-1.html",
-   "url": "/quiz-computer-ms-word-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "url": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "type": "quiz",
@@ -6832,6 +6796,18 @@
    "exams": [],
    "tags": [],
    "hub": "success-stories.html"
+  },
+  {
+   "id": "topic-computer-01-fundamentals-of-computers-part1.html",
+   "url": "/topic-computer-01-fundamentals-of-computers-part1.html",
+   "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "topic-guides.html",
@@ -17907,18 +17883,6 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -17938,6 +17902,18 @@
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18111,18 +18087,6 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -18148,6 +18112,18 @@
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18321,12 +18297,6 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -18352,6 +18322,12 @@
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18723,18 +18699,6 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -18760,6 +18724,18 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19131,24 +19107,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -19180,6 +19138,18 @@
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19335,24 +19305,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -19396,6 +19348,18 @@
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19557,24 +19521,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -19612,6 +19558,18 @@
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23007,18 +22965,6 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -23044,6 +22990,18 @@
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23199,18 +23157,6 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -23236,6 +23182,18 @@
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23391,12 +23349,6 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -23428,6 +23380,12 @@
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23757,18 +23715,6 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -23794,6 +23740,18 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24141,24 +24099,6 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -24196,6 +24136,18 @@
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24339,24 +24291,6 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -24388,6 +24322,18 @@
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24537,24 +24483,6 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-mobile-phone-part1-25-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-computer-ms-word-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "rel": "contextual",
    "weight": 1
@@ -24586,6 +24514,18 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "subject.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },

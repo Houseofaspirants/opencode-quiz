@@ -707,18 +707,18 @@
         `<span class="n">${num(t.count)} Q</span></a></li>`).join("");
       const more = topics.length > 6
         ? `<p class="rb-empty-note">+ ${topics.length - 6} more sets on
-             <a class="ilink" href="practice.html">Practice</a>.</p>` : "";
+             <a class="ilink" href="practice">Practice</a>.</p>` : "";
       const empty = topics.length
         ? ""
         : `<p class="rb-empty-note">Sets for this subject are being added on
-             <a class="ilink" href="practice.html">Practice</a>.</p>`;
+             <a class="ilink" href="practice">Practice</a>.</p>`;
       return (
         `<div class="card card-pad rb-grp">` +
         `<div class="rb-grp-top"><h3>${esc(s.name)}</h3>` +
         `<span class="badge badge-muted">${topics.length} set${topics.length === 1 ? "" : "s"}` +
         (qs ? ` · ${qs} Q` : "") + `</span></div>` +
         (rows ? `<ul class="rb-quizlinks">${rows}</ul>` : "") + more + empty +
-        `<div class="btn-row"><a class="btn btn-soft btn-sm" href="practice.html">Open subject practice</a></div>` +
+        `<div class="btn-row"><a class="btn btn-soft btn-sm" href="practice">Open subject practice</a></div>` +
         `</div>`
       );
     }).join("");
@@ -748,9 +748,9 @@
         (b.description ? `<p class="rb-book-desc">${esc(b.description)}</p>` : "") +
         `<div class="btn-row">` +
         `<a class="btn btn-primary btn-sm" href="book-${encodeURIComponent(b.id)}.html">Open Book</a>` +
-        `<a class="btn btn-soft btn-sm" href="study.html?subject=${encodeURIComponent(b.subject)}">Open Notes</a>` +
+        `<a class="btn btn-soft btn-sm" href="study?subject=${encodeURIComponent(b.subject)}">Open Notes</a>` +
         (b.subject
-          ? `<a class="btn btn-soft btn-sm" href="quiz.html?mode=mock&subject=${encodeURIComponent(b.subject)}">Open Quiz</a>`
+          ? `<a class="btn btn-soft btn-sm" href="quiz?mode=mock&subject=${encodeURIComponent(b.subject)}">Open Quiz</a>`
           : "") +
         `</div></article>`
       );

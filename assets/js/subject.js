@@ -50,7 +50,7 @@
     wrap.innerHTML = `<div class="empty-state"><div class="es-icon">🤔</div>
       <h3>Unknown subject</h3>
       <p>This subject is not in your configuration. Check <code>data/subjects.json</code> or the folder name inside <code>questions/</code>.</p>
-      <p class="mt-2"><a class="btn btn-primary" href="index.html">Back to Home</a></p></div>`;
+      <p class="mt-2"><a class="btn btn-primary" href="./">Back to Home</a></p></div>`;
     /* Soft-404: a bare /subject or an unknown ?subject= must not be indexed
        (same handling as an unknown ?category=). */
     HOA.seo({ robots: "noindex, nofollow" });
@@ -167,7 +167,7 @@
     if (crumbSubject) crumbSubject.classList.add("hidden");
     if (crumbSubjectLink) {
       crumbSubjectLink.textContent = subject.name;
-      crumbSubjectLink.href = `subject.html?subject=${encodeURIComponent(subject.id)}`;
+      crumbSubjectLink.href = `subject?subject=${encodeURIComponent(subject.id)}`;
       crumbSubjectLink.classList.remove("hidden");
     }
     if (crumbSep) crumbSep.classList.remove("hidden");
@@ -379,7 +379,7 @@
         ? "No MCQ sets yet — add a JSON file"
         : `${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"} · Open →`);
     return `
-    <a class="card quiz-card" href="subject.html?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
+    <a class="card quiz-card" href="subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
       <span class="qc-icon">${c.icon || "📁"}</span>
       <span>
         <h3>${esc(c.name)}</h3>
@@ -476,7 +476,7 @@
         <h3>Category not found</h3>
         <p><code>${esc(categoryId)}</code> is not a category of ${esc(subject.name)}.
         Pick one from the subject page.</p>
-        <p class="mt-2"><a class="btn btn-primary" href="subject.html?subject=${encodeURIComponent(subject.id)}">Back to ${esc(subject.name)}</a></p></div>`;
+        <p class="mt-2"><a class="btn btn-primary" href="subject?subject=${encodeURIComponent(subject.id)}">Back to ${esc(subject.name)}</a></p></div>`;
       return;
     }
     if (showCategories) {

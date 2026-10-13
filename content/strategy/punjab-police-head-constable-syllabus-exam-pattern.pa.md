@@ -157,9 +157,9 @@ references:
 - [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 
 **ਡਿਜੀਟਲ ਸਾਖਰਤਾ**
-- [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](quiz-computer-fundamentals-of-computers-part1.html)
-- [MS Word ਭਾਗ 1](quiz-computer-ms-word-part-1.html)
-- [ਮੋਬਾਈਲ ਫ਼ੋਨ](quiz-computer-mobile-phone-part1-25-mcqs.html)
+- [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
+- [MS Word ਭਾਗ 1](subject.html?subject=computer)
+- [ਮੋਬਾਈਲ ਫ਼ੋਨ](subject.html?subject=computer)
 
 **ਕਰੰਟ ਅਫੇਅਰਜ਼**
 - [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)

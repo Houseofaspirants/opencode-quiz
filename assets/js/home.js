@@ -78,7 +78,7 @@
           const live = s.topics.filter((t) => t.available);
           const qCount = live.reduce((n, t) => n + t.count, 0);
           return `
-          <a class="card subject-card" style="--sc:${s.color}" href="subject.html?subject=${encodeURIComponent(s.id)}">
+          <a class="card subject-card" style="--sc:${s.color}" href="subject?subject=${encodeURIComponent(s.id)}">
             <span class="subject-icon">${s.icon}</span>
             <h3>${esc(s.name)}</h3>
             <p>${esc(s.description || "Topic-wise MCQ practice.")}</p>
@@ -184,7 +184,7 @@
     if (last && last !== "mixed") {
       const subject = (idx.subjects || []).find((s) => s.id === last);
       cards.push(card({
-        href: `subject.html?subject=${encodeURIComponent(last)}`,
+        href: `subject?subject=${encodeURIComponent(last)}`,
         eyebrow: "Continue learning",
         title: subject ? subject.name : last,
         sub: prog.quizzes

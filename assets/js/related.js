@@ -128,7 +128,7 @@
     if (index) {
       cards.push(card("Neighbourhood", "Related subjects",
         relatedSubjects(index, cur.subjectId).map((s) =>
-          `<li><a class="ilink" href="subject.html?subject=${encodeURIComponent(s.id)}">${esc(s.icon)} ${esc(s.name)}</a></li>`)));
+          `<li><a class="ilink" href="subject?subject=${encodeURIComponent(s.id)}">${esc(s.icon)} ${esc(s.name)}</a></li>`)));
 
       cards.push(card("Keep practising", "Related quizzes",
         relatedQuizzes(index, cur).slice(0, 6).map((q) =>

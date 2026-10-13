@@ -109,8 +109,8 @@ The fee is not refunded.
 
 - [PSSSB Clerk previous year papers](pyq/psssb-clerk/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
-- [Fundamentals of Computers](quiz-computer-fundamentals-of-computers-part1.html)
-- [MS Word Part 1](quiz-computer-ms-word-part-1.html)
+- [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
+- [MS Word Part 1](subject.html?subject=computer)
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Sikhism Part 1](quiz-gk-sikhism-part1-20-mcqs.html)
 - [Current affairs](current-affairs.html)

@@ -470,7 +470,7 @@
     const hierSteps = () => {
       if (!hier) return [];
       const sid = encodeURIComponent(subjectId);
-      const at = (q) => `study.html?subject=${sid}${q ? `&${q}` : ""}`;
+      const at = (q) => `study?subject=${sid}${q ? `&${q}` : ""}`;
       const out = [{ name, href: at(""), item: `${siteBase}/study?subject=${sid}` }];
       if (gRegion) {
         const q = `region=${encodeURIComponent(gRegion.id)}`;
@@ -556,7 +556,7 @@
       const q = [`subject=${encodeURIComponent(subjectId)}`].concat(hierQ);
       if (language) q.push(`language=${encodeURIComponent(language)}`);
       if (ch) q.push(`chapter=${encodeURIComponent(ch)}`);
-      return `study.html?${q.join("&")}`;
+      return `study?${q.join("&")}`;
     };
 
 
@@ -569,8 +569,8 @@
       if (langName) steps.push({ name: langName, href: hrefFor(languageId), item: "" });
       if (chapterName) steps.push({ name: chapterName, href: hrefFor(languageId, chapterId), item: "" });
       const trail = [
-        `<a href="index.html">Home</a><span>/</span>`,
-        `<a href="study.html">Study</a><span>/</span>`,
+        `<a href="./">Home</a><span>/</span>`,
+        `<a href="study">Study</a><span>/</span>`,
       ].concat(steps.map((s, i) => i === steps.length - 1
         ? `<span>${esc(s.name)}</span>`
         : `<a href="${esc(s.href)}">${esc(s.name)}</a><span>/</span>`));
@@ -630,7 +630,7 @@
               `Read online or download — the part before and after it is always one tap away.`;
     }
     if (back instanceof HTMLAnchorElement) {
-      let backHref = step === "language" ? "study.html"
+      let backHref = step === "language" ? "study"
         : step === "chapter" ? hrefFor()
         : hrefFor(languageId);
       let backLabel = step === "language" ? "← All subjects"
@@ -639,7 +639,7 @@
       // Inside a hierarchy the previous card is one level up, not the shelf.
       if (step === "language" && hier && gCat) {
         const sid = encodeURIComponent(subjectId);
-        backHref = `study.html?subject=${sid}&region=${encodeURIComponent(gRegion.id)}` +
+        backHref = `study?subject=${sid}&region=${encodeURIComponent(gRegion.id)}` +
           (gSub ? `&cat=${encodeURIComponent(gCat.id)}` : "");
         backLabel = gSub ? "← Choose a sub category" : "← Choose a category";
       }
@@ -673,7 +673,7 @@
         return `<span class="badge ${num && lead ? "badge-success" : "badge-muted"}">${label(num)}</span>`;
       };
       const sid = encodeURIComponent(subjectId);
-      const at = (q) => `study.html?subject=${sid}${q ? `&${q}` : ""}`;
+      const at = (q) => `study?subject=${sid}${q ? `&${q}` : ""}`;
       const nodeCard = (href, title, description, badges) => `
         <a class="card subject-card" style="--sc:${esc(color)}" href="${esc(href)}">
           <span class="subject-icon" aria-hidden="true">📁</span>
@@ -687,7 +687,7 @@
       let eyebrowText = "Study Material";
       let headText = "";
       let descText = "";
-      let backHref = "study.html";
+      let backHref = "study";
       let backLabel = "← All subjects";
       let countText = "";
       let seoTitle = `${name} Study Material | House of Aspirants`;
@@ -774,7 +774,7 @@
             `Study material publishes into a language folder under ` +
             `<code>content/study-material/${esc(folderId)}/</code>. Until one ` +
             `exists there is nothing to choose.`,
-            `<p class="mt-2"><a class="btn btn-soft" href="study-material.html">All study material →</a></p>`),
+            `<p class="mt-2"><a class="btn btn-soft" href="study-material">All study material →</a></p>`),
         "grid grid-3 subjects-grid");
       setCount(`${plural(langs.length, "language")} · ${plural(subjectCount, "file")} in ${nodeName} · nothing is listed until you choose one`);
     };
@@ -995,7 +995,7 @@
      pretending there is something to read.
 
      A folder a hierarchy has claimed keeps its row in the manifest — its
-     material pages still link to `study.html?subject=<folder>` and that URL
+     material pages still link to `study?subject=<folder>` and that URL
      must keep resolving — but it gives up its place on the shelf, because
      the group is what the reader is asked to choose. */
   const rows = (shelf.length
@@ -1012,7 +1012,7 @@
     const languages = (r.languages || []).filter((l) => Number(l.count) > 0);
     return `
       <a class="card subject-card" style="--sc:${esc(r.color || "#4f46e5")}"
-         href="study.html?subject=${esc(r.id)}">
+         href="study?subject=${esc(r.id)}">
         <span class="subject-icon">${esc(r.icon || "📚")}</span>
         <h3>${esc(r.name)}</h3>
         <p>${esc(r.description || "Notes, PDFs and downloads for this subject.")}</p>

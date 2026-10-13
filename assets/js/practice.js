@@ -32,7 +32,7 @@
       const chapters = new Set(live.map((t) => String(t.id).replace(/-part\d+(?=-|$)/i, ""))).size;
       const questions = live.reduce((n, t) => n + (t.count || 0), 0);
       return `
-        <a class="card subject-card" style="--sc:${s.color}" href="subject.html?subject=${esc(s.id)}">
+        <a class="card subject-card" style="--sc:${s.color}" href="subject?subject=${esc(s.id)}">
           <span class="subject-icon">${s.icon}</span>
           <h3>${esc(s.name)}</h3>
           <p>${esc(s.description || "Topic-wise MCQ practice for this subject.")}</p>

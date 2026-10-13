@@ -881,7 +881,7 @@
         <h3>${esc(message)}</h3>
         <p>${hint}</p>
         <div class="btn-row mt-3" style="justify-content:center">
-          <a class="btn btn-primary" href="index.html">Browse subjects</a>
+          <a class="btn btn-primary" href="./">Browse subjects</a>
           <a class="btn btn-telegram" href="${site.telegram || "https://t.me/HouseOfAspirant"}"
              target="_blank" rel="noopener">Join Telegram</a>
         </div>

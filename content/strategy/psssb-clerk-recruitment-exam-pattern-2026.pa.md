@@ -109,8 +109,8 @@ references:
 
 - [PSSSB ਕਲਰਕ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-clerk/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
-- [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](quiz-computer-fundamentals-of-computers-part1.html)
-- [MS Word ਭਾਗ 1](quiz-computer-ms-word-part-1.html)
+- [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
+- [MS Word ਭਾਗ 1](subject.html?subject=computer)
 - [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਸਿੱਖ ਧਰਮ ਭਾਗ 1](quiz-gk-sikhism-part1-20-mcqs.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)

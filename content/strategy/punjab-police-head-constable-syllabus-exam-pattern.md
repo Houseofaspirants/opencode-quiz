@@ -157,9 +157,9 @@ The pattern is very close to SI, so the [Punjab Police SI guide](strategy-punjab
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 
 **Digital Literacy**
-- [Fundamentals of Computers](quiz-computer-fundamentals-of-computers-part1.html)
-- [MS Word Part 1](quiz-computer-ms-word-part-1.html)
-- [Mobile Phones](quiz-computer-mobile-phone-part1-25-mcqs.html)
+- [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
+- [MS Word Part 1](subject.html?subject=computer)
+- [Mobile Phones](subject.html?subject=computer)
 
 **Current affairs**
 - [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)

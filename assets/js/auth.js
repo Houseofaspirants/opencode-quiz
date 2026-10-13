@@ -597,7 +597,7 @@
         <div class="aa-sub">${esc(p.email)}${preview ? ' · <b class="aa-preview">Preview mode</b>' : " · Signed in with Google"}</div>
       </div>
       <div class="aa-actions">
-        <a class="btn btn-sm" href="leaderboard.html">🏅 Leaderboard</a>
+        <a class="btn btn-sm" href="leaderboard">🏅 Leaderboard</a>
         <button class="btn btn-sm btn-soft" type="button" data-auth-action="signout">Sign out</button>
       </div>`;
   }

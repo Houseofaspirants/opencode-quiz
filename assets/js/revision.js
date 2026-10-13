@@ -45,8 +45,8 @@
       <p class="text-sm muted">Attempt these cold. Do not reread the notes first.</p>
       ${chips ? `<div class="chip-wrap">${chips}</div>` : `<p class="text-sm muted">No live set yet.</p>`}
       <p class="btn-row" style="margin-bottom:0">
-        <a class="btn btn-soft" href="subject.html?subject=${encodeURIComponent(s.id)}">All chapters →</a>
-        <a class="btn btn-soft" href="mock.html">Mixed test →</a>
+        <a class="btn btn-soft" href="subject?subject=${encodeURIComponent(s.id)}">All chapters →</a>
+        <a class="btn btn-soft" href="mock">Mixed test →</a>
       </p>
     </article>`;
   }

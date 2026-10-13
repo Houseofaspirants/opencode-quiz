@@ -112,8 +112,8 @@ One **objective (MCQ) written exam** in two parts:
 
 - [Excise Inspector previous year papers](pyq/psssb-excise-taxation-inspector/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
-- [Fundamentals of Computers](quiz-computer-fundamentals-of-computers-part1.html)
-- [MS Word Part 1](quiz-computer-ms-word-part-1.html)
+- [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
+- [MS Word Part 1](subject.html?subject=computer)
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
 

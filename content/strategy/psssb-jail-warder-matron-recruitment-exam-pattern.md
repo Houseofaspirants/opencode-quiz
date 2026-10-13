@@ -134,7 +134,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Jail W
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Sikhism Part 1](quiz-gk-sikhism-part1-20-mcqs.html)
-- [Fundamentals of Computers](quiz-computer-fundamentals-of-computers-part1.html)
+- [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
 - [Current affairs](current-affairs.html)
 
 ## Download the official notification

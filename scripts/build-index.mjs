@@ -1124,6 +1124,10 @@ if (site.url) {
   info(`sitemap.xml - ${urls.length} URLs`);
 }
 
+// Point internal links at the clean URLs Vercel serves (no .html redirects).
+const { cleanLinks } = await import("./clean-links.mjs");
+cleanLinks();
+
 console.log(`\n\u2705 Index build complete.\n`);
 if (warnings > 0) {
   console.log(

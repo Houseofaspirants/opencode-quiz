@@ -161,7 +161,7 @@
         <h2>${t("The live leaderboard is almost ready", "ਲਾਈਵ ਲੀਡਰਬੋਰਡ ਜਲਦੀ ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ ਹੈ")}</h2>
         <p>${t("Keep practising - your progress is saved on this device in the meantime.",
           "ਤਿਆਰੀ ਜਾਰੀ ਰੱਖੋ - ਉਦੋਂ ਤੱਕ ਤੁਹਾਡੀ progress ਇਸ device 'ਤੇ save ਹੋ ਰਹੀ ਹੈ।")}</p>
-        <div class="btn-row"><a class="btn btn-primary" href="quiz.html?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a></div>`;
+        <div class="btn-row"><a class="btn btn-primary" href="quiz?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a></div>`;
     } else if (state.status === "offline") {
       box.innerHTML = `<div class="lb2-state__art">📡</div>
         <h2>${t("Couldn't load the rankings", "ਰੈਂਕਿੰਗ load ਨਹੀਂ ਹੋ ਸਕੀ")}</h2>
@@ -170,8 +170,8 @@
       box.innerHTML = `<div class="lb2-state__art">🏆</div>
         <h2>${t(`Nobody on ${periodName(period)}'s board yet`, `${periodName(period)} ਦੇ ਬੋਰਡ 'ਤੇ ਹਾਲੇ ਕੋਈ ਨਹੀਂ`)}</h2>
         <p>${t("Finish any quiz now and take the No. 1 spot.", "ਹੁਣੇ ਕੋਈ ਵੀ quiz ਪੂਰਾ ਕਰੋ ਅਤੇ No. 1 'ਤੇ ਆਓ।")}</p>
-        <div class="btn-row"><a class="btn btn-primary" href="quiz.html?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a>
-          <a class="btn" href="index.html#subjects">${t("Browse subjects", "ਵਿਸ਼ੇ ਦੇਖੋ")}</a></div>`;
+        <div class="btn-row"><a class="btn btn-primary" href="quiz?mode=daily">${t("Start the Daily Challenge", "Daily Challenge ਸ਼ੁਰੂ ਕਰੋ")}</a>
+          <a class="btn" href="./#subjects">${t("Browse subjects", "ਵਿਸ਼ੇ ਦੇਖੋ")}</a></div>`;
     } else {
       box.hidden = true;
       return;
@@ -224,7 +224,7 @@
       box.innerHTML = `${head}
         <p class="lb2-me__note">${t(`You're not on ${periodName(period)}'s board yet. Finish any quiz and you're in.`,
           `ਤੁਸੀਂ ਹਾਲੇ ${periodName(period)} ਦੇ ਬੋਰਡ 'ਤੇ ਨਹੀਂ ਹੋ। ਕੋਈ ਵੀ quiz ਪੂਰਾ ਕਰੋ ਅਤੇ ਤੁਸੀਂ ਬੋਰਡ 'ਤੇ ਹੋਵੋਗੇ।`)}</p>
-        <a class="btn btn-primary" href="quiz.html?mode=daily">${t("Take today's Daily Challenge", "ਅੱਜ ਦਾ Daily Challenge ਦਿਓ")}</a>`;
+        <a class="btn btn-primary" href="quiz?mode=daily">${t("Take today's Daily Challenge", "ਅੱਜ ਦਾ Daily Challenge ਦਿਓ")}</a>`;
       return;
     }
     let note = "";
@@ -244,7 +244,7 @@
         <div class="lb2-me__cell"><b>${r.accuracy}%</b><span>${t("Accuracy", "ਸ਼ੁੱਧਤਾ")}</span></div>
       </div>
       ${note ? `<p class="lb2-me__note">${note}</p>` : ""}
-      <a class="btn btn-primary" href="quiz.html?mode=daily">${t("Earn more points", "ਹੋਰ points ਕਮਾਓ")}</a>`;
+      <a class="btn btn-primary" href="quiz?mode=daily">${t("Earn more points", "ਹੋਰ points ਕਮਾਓ")}</a>`;
   }
 
   /* ----------------------------------------------------- mobile dock --- */

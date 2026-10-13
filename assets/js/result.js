@@ -15,7 +15,7 @@
         <div class="es-icon">🧾</div>
         <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:8px">No result to show yet.</h2>
         <p>Finish a quiz and your result — with a full answer review — will appear here.</p>
-        <p class="mt-2"><a class="btn btn-primary" href="index.html">Start a quiz</a></p>
+        <p class="mt-2"><a class="btn btn-primary" href="./">Start a quiz</a></p>
       </div>`;
     $("resultHero").classList.add("hidden");
     return;
@@ -89,8 +89,8 @@
     if (!res) return;
     $("rankVal").textContent = res.gained > 0 ? `+${res.gained}` : `${res.today || 0}`;
     $("rankLab").innerHTML = res.gained > 0
-      ? `points added · <a href="leaderboard.html">${res.today} today on the leaderboard →</a>`
-      : `points today · <a href="leaderboard.html">best score on this set already counted →</a>`;
+      ? `points added · <a href="leaderboard">${res.today} today on the leaderboard →</a>`
+      : `points today · <a href="leaderboard">best score on this set already counted →</a>`;
   }
 
   /** Signed-out: one quiet line inviting the student onto the live board. */
