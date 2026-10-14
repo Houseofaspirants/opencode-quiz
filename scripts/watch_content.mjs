@@ -49,6 +49,13 @@ const RETRY_MS = 60000;
 const POLL_MS = 15000;
 const DRY_RUN = process.argv.includes("--dry-run");
 const LOCK = join(tmpdir(), "houseofaspirants-content-watch.lock");
+// Manual publishing is the safe default when the setting is absent or invalid.
+let AUTO_PUSH = false;
+try {
+  AUTO_PUSH = JSON.parse(readFileSync(join(ROOT, "config", "publishing.json"), "utf8")).autoPush === true;
+} catch {
+  // Building and committing still work; publishing stays in GitHub Desktop.
+}
 
 /**
  * launchd starts processes with a near-empty PATH, so the tools the pipeline
@@ -210,6 +217,10 @@ async function publishCycle() {
       return;
     }
 
+    if (!AUTO_PUSH) {
+      say("✓ Build committed locally — use Push origin in GitHub Desktop to update the website");
+      return;
+    }
     say("✓ Pushing...");
     const push = await pushWithRetry();
     const lines = push.out.trim().split("\n").filter(Boolean);
@@ -329,6 +340,7 @@ say(` root:      ${ROOT}`);
 say(` watching:  content/ + questions/ (PDF, Markdown, JSON)`);
 say(` debounce:  ${DEBOUNCE_MS / 1000}s after the last change`);
 say(` mode:      ${DRY_RUN ? "dry run (publishing disabled)" : "live"}`);
+say(` push:      ${AUTO_PUSH ? "automatic" : "manual — GitHub Desktop"}`);
 say(" stop:      Ctrl+C  |  background: bash scripts/watch_service.sh install");
 say("────────────────────────────────────────");
 

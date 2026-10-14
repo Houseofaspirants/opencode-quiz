@@ -1162,8 +1162,7 @@ bash scripts/watch_service.sh status
 ✓ Source change detected
 ✓ Publishing...
 ✓ Build successful
-✓ Pushing...
-✓ Website Live
+✓ Build committed locally — use Push origin in GitHub Desktop to update the website
 ```
 
 ### How the events are handled
@@ -1190,11 +1189,14 @@ local watcher to publish automatically.
 1. `publish.sh` commits its own build output as `publish content`.
 2. The watcher then runs `git add -A` and, **if anything is still uncommitted**
    (a change made outside the build), commits it as `content: auto publish`.
-3. `git push origin main` → `✓ Website Live`.
+3. With `config/publishing.json` set to `"autoPush": false`, click **Push origin**
+   in GitHub Desktop to publish. The watcher builds and commits without trying
+   an unattended login. Automatic push is only used when `autoPush` is `true`.
 
 ### One-time setup: push authentication
 
-The watcher pushes over **SSH**, so it never needs a password or a GUI
+When automatic push is enabled, the watcher requires working Git authentication,
+so it never needs a password or a GUI
 keychain prompt — neither of which a background job could answer.
 
 ```bash

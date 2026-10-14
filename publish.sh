@@ -86,5 +86,6 @@ fi
 git commit -m "publish content"
 
 echo "================================="
-echo "✅ WEBSITE PUBLISHED SUCCESSFULLY"
+echo "✅ BUILD VERIFIED AND COMMITTED"
+echo "Push origin to update the live website."
 echo "================================="
