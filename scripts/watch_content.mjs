@@ -246,9 +246,9 @@ function schedule() {
 }
 
 function onFsEvent(_event, filename) {
-  // Fast path: the filename is enough to rule out everything but a PDF.
-  // filename can be null on some events, in which case the snapshot decides.
-  if (filename && !isPdf(filename)) return;
+  // Directory renames/removals may report only the folder name, even when
+  // they remove many PDFs. Always compare the inventory; non-PDF edits still
+  // produce an empty diff and never trigger a publish.
 
   const next = snapshot();
   const changed = diff(known, next);

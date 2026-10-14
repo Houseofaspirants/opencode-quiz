@@ -108,7 +108,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 82 | `/quiz-english-01-subject-and-predicate-part-1` | quiz | 01 Subject And Predicate Part 1 Quiz - Free MCQs (48) | 154 | 01 Subject And Predicate Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 83 | `/quiz-english-02-clauses-and-phrases-part-1` | quiz | 02 Clauses And Phrases Part 1 Quiz - Free MCQs (46) | 152 | 02 Clauses And Phrases Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 84 | `/quiz-english-03-types-of-sentences-part-1` | quiz | 03 Types Of Sentences Part 1 Quiz - Free MCQs (45) | 151 | 03 Types Of Sentences Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 85 | `/quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | quiz | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 (58) | 158 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM | - | BreadcrumbList, FAQPage, WebPage |
+| 85 | `/quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | quiz | 04 Simple Compound And Complex Sentences Part 1 En Quiz (55) | 158 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM | - | BreadcrumbList, FAQPage, WebPage |
 | 86 | `/quiz-computer-02-evolution-of-computers-part1` | quiz | Evolution of Computers - Part 1 - Part 1 Quiz - Free MCQs (57) | 144 | Evolution of Computers - Part 1 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 87 | `/quiz-computer-01-fundamentals-of-computers-part1` | quiz | Fundamentals of Computers - Part 1 - Part 1 Quiz - Free MCQs (60) | 147 | Fundamentals of Computers - Part 1 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 88 | `/quiz-computer-01-fundamentals-of-computers-part2` | quiz | Fundamentals of Computers - Part 2 - Part 2 Quiz - Free MCQs (60) | 147 | Fundamentals of Computers - Part 2 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
@@ -222,7 +222,7 @@ Intro word counts: min 13, max 371. Every subject page clears the 250-word intro
 
 ## 2. Metadata generated
 
-- **Unique titles:** 192/193 ❌
+- **Unique titles:** 193/193 ✅
 - **Unique meta descriptions:** 193/193 ✅
 - **Unique canonical URLs:** 193/193 ✅
 - **Title length:** 35-60 chars (Google truncates at ~60)
@@ -245,7 +245,7 @@ All landing metadata is **static HTML** - it is present before JavaScript runs, 
 ## 3. Internal links created (3292)
 
 - Links between generated entities: **3292**
-- Every internal anchor on the 193 generated pages: **6396** (includes links to site guides, `/faq`, `/mock` and the app views)
+- Every internal anchor on the 193 generated pages: **6384** (includes links to site guides, `/faq`, `/mock` and the app views)
 - Counts are re-read from the shipped HTML, not from the generator's log, so this table cannot drift from the pages themselves.
 - Every link is a plain `<a href>` in static HTML (no JS-dependent navigation).
 
@@ -293,9 +293,7 @@ Additional routes generated automatically:
 
 ## 4. Potential duplicate content
 
-⚠️ **Collisions found (fix before publishing):**
-
-- landing pages share title: topic-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html / quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html ('04 Simple Compound And Complex Sentences Part 1 En 9.16.34')
+- **Metadata collisions: none.** Every landing title, description and canonical is unique, and none matches an existing root page.
 
 Parameter URLs are canonicalised onto their landing page at runtime (`assets/js/subject.js`, `assets/js/quiz.js`), so the app views never compete with the landing pages:
 
@@ -313,7 +311,3 @@ Residual risk notes:
 - Landing pages share site chrome (header, footer, related cards) by design; body copy, H1, FAQ answers and link sets are entity-specific, so pages stay distinguishable even where sections rhyme.
 - Lanes with no question file yet publish an explicit 'being published' state rather than padded content - no doorway pages, no invented counts.
 - `sitemap.xml` is built from `data/landing-manifest.json`, so a landing URL can never enter the sitemap without its file existing on disk.
-
-### Generator warnings
-
-- landing pages share title: topic-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html / quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html ('04 Simple Compound And Complex Sentences Part 1 En 9.16.34')

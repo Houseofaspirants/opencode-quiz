@@ -97,7 +97,7 @@ def join_paras(paras):
 
 
 # ---------------------------------------------------------------- metadata --
-def fit_title(base, fallback):
+def fit_title(base, fallback, trim_suffix=""):
     """Keep titles at or under 60 chars (Google truncation point)."""
     t = " ".join(str(base).split())
     if len(t) <= 60:
@@ -105,8 +105,8 @@ def fit_title(base, fallback):
     t = " ".join(str(fallback).split())
     if len(t) <= 60:
         return t
-    if len(t) > 60:  # last resort: hard trim at a word boundary
-        t = t[:60].rsplit(" ", 1)[0]
+    if len(t) > 60:  # last resort: trim, preserving the page's purpose
+        t = t[:60 - len(trim_suffix)].rsplit(" ", 1)[0] + trim_suffix
     return t
 
 
@@ -1676,7 +1676,7 @@ def build_quiz(s, c, t):
     diff = difficulty_label(qs)
 
     title = fit_title(f"{name} Quiz ({count} MCQs) - Free Online Test",
-                      f"{name} Quiz - Free MCQs")
+                      f"{name} Quiz - Free MCQs", trim_suffix=" Quiz")
     description = fit_desc(
         f"Practise {name} online: {count} MCQs in about {est}, instant scoring, question "
         f"palette and a full answer review. Free topic quiz for Punjab exam preparation.")
