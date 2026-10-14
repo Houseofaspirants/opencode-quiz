@@ -23,60 +23,357 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 8,
-      "newest": "2026-10-12",
-      "totalSize": 22735794,
+      "count": 62,
+      "newest": "2026-10-14",
+      "totalSize": 213934867,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 31,
           "chapters": [
             {
               "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
               "name": "Chapter 1: ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
               "parts": [
                 {
-                  "file": "material-fundamentals-of-computer-punjabi.html",
+                  "file": "material-computer-pa-ch01.html",
                   "n": 1
                 }
               ],
-              "pages": 12
+              "pages": 11
             },
             {
               "id": "02 - ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
               "name": "Chapter 2: ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
               "parts": [
                 {
-                  "file": "material-aivolushn-aph-kanpiutrs.html",
+                  "file": "material-computer-pa-ch02.html",
                   "n": 1
                 }
               ],
-              "pages": 8
+              "pages": 9
             },
             {
               "id": "03 - ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
               "name": "Chapter 3: ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
               "parts": [
                 {
-                  "file": "material-jainreshnj-aph-kanpiutrs.html",
+                  "file": "material-computer-pa-ch03.html",
                   "n": 1
                 }
               ],
-              "pages": 10
+              "pages": 9
             },
             {
               "id": "04 - ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
               "name": "Chapter 4: ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
               "parts": [
                 {
-                  "file": "material-input-divaisan.html",
+                  "file": "material-computer-pa-ch04.html",
+                  "n": 1
+                }
+              ],
+              "pages": 18
+            },
+            {
+              "id": "05 - ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices)",
+              "name": "Chapter 5: ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch05.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
+            },
+            {
+              "id": "06 - ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
+              "name": "Chapter 6: ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch06.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "07 - ਕੰਪਿਊਟਰ ਸਿਸਟਮ (Computer System)",
+              "name": "Chapter 7: ਕੰਪਿਊਟਰ ਸਿਸਟਮ (Computer System)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch07.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "08 - ਸਾਫਟਵੇਅਰ (Software)",
+              "name": "Chapter 8: ਸਾਫਟਵੇਅਰ (Software)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch08.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "09 - ਕੰਪਿਊਟਰ ਮੈਮੋਰੀ (Computer Memory)",
+              "name": "Chapter 9: ਕੰਪਿਊਟਰ ਮੈਮੋਰੀ (Computer Memory)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch09.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "09A - ਮੁੱਖ ਮੈਮੋਰੀ (Primary Memory)",
+              "name": "Chapter 9A: ਮੁੱਖ ਮੈਮੋਰੀ (Primary Memory)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch09a.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            },
+            {
+              "id": "09B - ਸੈਕੰਡਰੀ ਮੈਮੋਰੀ (Secondary Memory)",
+              "name": "Chapter 9B: ਸੈਕੰਡਰੀ ਮੈਮੋਰੀ (Secondary Memory)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch09b.html",
+                  "n": 1
+                }
+              ],
+              "pages": 17
+            },
+            {
+              "id": "10 - ਪ੍ਰੋਗ੍ਰਾਮਿੰਗ ਭਾਸ਼ਾ (Programming Language)",
+              "name": "Chapter 10: ਪ੍ਰੋਗ੍ਰਾਮਿੰਗ ਭਾਸ਼ਾ (Programming Language)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch10.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "11 - ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ (Computer Network)",
+              "name": "Chapter 11: ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ (Computer Network)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch11.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
+            },
+            {
+              "id": "12 - ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ ਆਰਕੀਟੈਕਚਰ (Network Architecture)",
+              "name": "Chapter 12: ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ ਆਰਕੀਟੈਕਚਰ (Network Architecture)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch12.html",
+                  "n": 1
+                }
+              ],
+              "pages": 17
+            },
+            {
+              "id": "13 - ਮੋਡੂਲੇਸ਼ਨ ਅਤੇ ਡੀਮੋਡੂਲੇਸ਼ਨ (Modulation)",
+              "name": "Chapter 13: ਮੋਡੂਲੇਸ਼ਨ ਅਤੇ ਡੀਮੋਡੂਲੇਸ਼ਨ (Modulation)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch13.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "14 - ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ ਮਾਡਲ (Network Models)",
+              "name": "Chapter 14: ਕੰਪਿਊਟਰ ਨੈੱਟਵਰਕ ਮਾਡਲ (Network Models)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch14.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
+            },
+            {
+              "id": "15 - ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ (Operating System)",
+              "name": "Chapter 15: ਓਪਰੇਟਿੰਗ ਸਿਸਟਮ (Operating System)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch15.html",
+                  "n": 1
+                }
+              ],
+              "pages": 22
+            },
+            {
+              "id": "16 - ਇੰਟਰਨੈੱਟ (Internet)",
+              "name": "Chapter 16: ਇੰਟਰਨੈੱਟ (Internet)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch16.html",
+                  "n": 1
+                }
+              ],
+              "pages": 19
+            },
+            {
+              "id": "17 - ਈਮੇਲ (Email)",
+              "name": "Chapter 17: ਈਮੇਲ (Email)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch17.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "18 - ਸਾਈਬਰ ਸੁਰੱਖਿਆ (Cyber Security)",
+              "name": "Chapter 18: ਸਾਈਬਰ ਸੁਰੱਖਿਆ (Cyber Security)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch18.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "19 - ਨੁਕਸਾਨਦਾਇਕ ਸਾਫਟਵੇਅਰ (Malware)",
+              "name": "Chapter 19: ਨੁਕਸਾਨਦਾਇਕ ਸਾਫਟਵੇਅਰ (Malware)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch19.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            },
+            {
+              "id": "20 - ਨੈੱਟਵਰਕ ਸੁਰੱਖਿਆ (Network Security)",
+              "name": "Chapter 20: ਨੈੱਟਵਰਕ ਸੁਰੱਖਿਆ (Network Security)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch20.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "21 - ਡਾਟਾ ਇਨਕ੍ਰਿਪਸ਼ਨ ਅਤੇ ਕ੍ਰਿਪਟੋਗ੍ਰਾਫੀ (Encryption)",
+              "name": "Chapter 21: ਡਾਟਾ ਇਨਕ੍ਰਿਪਸ਼ਨ ਅਤੇ ਕ੍ਰਿਪਟੋਗ੍ਰਾਫੀ (Encryption)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch21.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "22 - ਵੈੱਬ ਸਰਚ ਇੰਜਣ (Web Search Engines)",
+              "name": "Chapter 22: ਵੈੱਬ ਸਰਚ ਇੰਜਣ (Web Search Engines)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch22.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "23 - ਵੌਇਸ ਓਵਰ ਇੰਟਰਨੈੱਟ ਪ੍ਰੋਟੋਕੋਲ (Internet Calls)",
+              "name": "Chapter 23: ਵੌਇਸ ਓਵਰ ਇੰਟਰਨੈੱਟ ਪ੍ਰੋਟੋਕੋਲ (Internet Calls)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch23.html",
                   "n": 1
                 }
               ],
               "pages": 14
+            },
+            {
+              "id": "24 - ਸੋਸ਼ਲ ਮੀਡੀਆ ਪਲੇਟਫਾਰਮ (Social Media)",
+              "name": "Chapter 24: ਸੋਸ਼ਲ ਮੀਡੀਆ ਪਲੇਟਫਾਰਮ (Social Media)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch24.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "25 - ਮਾਈਕ੍ਰੋਸਾਫਟ ਵਰਡ (Word)",
+              "name": "Chapter 25: ਮਾਈਕ੍ਰੋਸਾਫਟ ਵਰਡ (Word)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch25.html",
+                  "n": 1
+                }
+              ],
+              "pages": 23
+            },
+            {
+              "id": "26 - ਮਾਈਕ੍ਰੋਸਾਫਟ ਐਕਸਲ (Excel)",
+              "name": "Chapter 26: ਮਾਈਕ੍ਰੋਸਾਫਟ ਐਕਸਲ (Excel)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch26.html",
+                  "n": 1
+                }
+              ],
+              "pages": 23
+            },
+            {
+              "id": "27 - ਮਾਈਕ੍ਰੋਸਾਫਟ ਪਾਵਰਪੁਆਇੰਟ (Presentation)",
+              "name": "Chapter 27: ਮਾਈਕ੍ਰੋਸਾਫਟ ਪਾਵਰਪੁਆਇੰਟ (Presentation)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch27.html",
+                  "n": 1
+                }
+              ],
+              "pages": 21
+            },
+            {
+              "id": "28 - ਕੰਪਿਊਟਰ ਦੇ ਹੋਰ ਮਹੱਤਵਪੂਰਨ ਤੱਥ (Key Facts)",
+              "name": "Chapter 28: ਕੰਪਿਊਟਰ ਦੇ ਹੋਰ ਮਹੱਤਵਪੂਰਨ ਤੱਥ (Key Facts)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch28.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            },
+            {
+              "id": "29 - ਮੋਬਾਈਲ ਫੋਨ (Mobile Phone)",
+              "name": "Chapter 29: ਮੋਬਾਈਲ ਫੋਨ (Mobile Phone)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch29.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
             }
           ]
         },
@@ -85,25 +382,25 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 31,
           "chapters": [
             {
               "id": "01 - Fundamentals of Computers",
               "name": "Chapter 1: Fundamentals of Computers",
               "parts": [
                 {
-                  "file": "material-fundamentals-of-computers-en.html",
+                  "file": "material-computer-en-ch01.html",
                   "n": 1
                 }
               ],
-              "pages": 11
+              "pages": 10
             },
             {
               "id": "02 - Evolution of Computers",
               "name": "Chapter 2: Evolution of Computers",
               "parts": [
                 {
-                  "file": "material-evolution-of-computers-en.html",
+                  "file": "material-computer-en-ch02.html",
                   "n": 1
                 }
               ],
@@ -114,18 +411,315 @@
               "name": "Chapter 3: Generations of Computers",
               "parts": [
                 {
-                  "file": "material-generations-of-computers-en.html",
+                  "file": "material-computer-en-ch03.html",
                   "n": 1
                 }
               ],
-              "pages": 10
+              "pages": 9
             },
             {
               "id": "04 - Input Devices",
               "name": "Chapter 4: Input Devices",
               "parts": [
                 {
-                  "file": "material-input-devices-en.html",
+                  "file": "material-computer-en-ch04.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "05 - Output Devices",
+              "name": "Chapter 5: Output Devices",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch05.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "06 - Central Processing Unit",
+              "name": "Chapter 6: Central Processing Unit",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch06.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "07 - Computer System",
+              "name": "Chapter 7: Computer System",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch07.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "08 - Software",
+              "name": "Chapter 8: Software",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch08.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "09 - Computer Memory",
+              "name": "Chapter 9: Computer Memory",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch09.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "09A - Primary Memory",
+              "name": "Chapter 9A: Primary Memory",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch09a.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "09B - Secondary Memory",
+              "name": "Chapter 9B: Secondary Memory",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch09b.html",
+                  "n": 1
+                }
+              ],
+              "pages": 14
+            },
+            {
+              "id": "10 - Programming Language",
+              "name": "Chapter 10: Programming Language",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch10.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            },
+            {
+              "id": "11 - Computer Network",
+              "name": "Chapter 11: Computer Network",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch11.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "12 - Computer Network Architectures",
+              "name": "Chapter 12: Computer Network Architectures",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch12.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
+            },
+            {
+              "id": "13 - Modulation and Demodulation",
+              "name": "Chapter 13: Modulation and Demodulation",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch13.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "14 - Computer Network Models",
+              "name": "Chapter 14: Computer Network Models",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch14.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "15 - Operating System",
+              "name": "Chapter 15: Operating System",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch15.html",
+                  "n": 1
+                }
+              ],
+              "pages": 20
+            },
+            {
+              "id": "16 - Internet",
+              "name": "Chapter 16: Internet",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch16.html",
+                  "n": 1
+                }
+              ],
+              "pages": 17
+            },
+            {
+              "id": "17 - Email",
+              "name": "Chapter 17: Email",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch17.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "18 - Cyber Security",
+              "name": "Chapter 18: Cyber Security",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch18.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "19 - Malicious Software (Malware)",
+              "name": "Chapter 19: Malicious Software (Malware)",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch19.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "20 - Network Security",
+              "name": "Chapter 20: Network Security",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch20.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
+            },
+            {
+              "id": "21 - Data Encryption and Cryptography",
+              "name": "Chapter 21: Data Encryption and Cryptography",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch21.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
+            },
+            {
+              "id": "22 - Web Search Engines",
+              "name": "Chapter 22: Web Search Engines",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch22.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
+            },
+            {
+              "id": "23 - Voice Over Internet Protocol",
+              "name": "Chapter 23: Voice Over Internet Protocol",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch23.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
+            },
+            {
+              "id": "24 - Social Media Platforms and Instant Messaging",
+              "name": "Chapter 24: Social Media Platforms and Instant Messaging",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch24.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "25 - Microsoft Word",
+              "name": "Chapter 25: Microsoft Word",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch25.html",
+                  "n": 1
+                }
+              ],
+              "pages": 22
+            },
+            {
+              "id": "26 - Microsoft Excel",
+              "name": "Chapter 26: Microsoft Excel",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch26.html",
+                  "n": 1
+                }
+              ],
+              "pages": 21
+            },
+            {
+              "id": "27 - Microsoft PowerPoint",
+              "name": "Chapter 27: Microsoft Powerpoint",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch27.html",
+                  "n": 1
+                }
+              ],
+              "pages": 19
+            },
+            {
+              "id": "28 - Computer Miscellaneous Facts",
+              "name": "Chapter 28: Computer Miscellaneous Facts",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch28.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
+            },
+            {
+              "id": "29 - Mobile Phones",
+              "name": "Chapter 29: Mobile Phones",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch29.html",
                   "n": 1
                 }
               ],
@@ -134,7 +728,7 @@
           ]
         }
       ],
-      "chapters": 8
+      "chapters": 62
     },
     {
       "id": "english",
