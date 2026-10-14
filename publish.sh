@@ -30,6 +30,7 @@ python3 scripts/build_landing_pages.py
 if python3 scripts/build_og_images.py; then
   python3 scripts/build_landing_pages.py >/dev/null
 fi
+node scripts/clean-links.mjs
 
 # ci.sh's step 7 is `git diff` — worktree vs index — so the build's output has
 # to be staged *before* the gate, otherwise "there is a new build" and "the

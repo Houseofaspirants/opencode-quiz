@@ -114,6 +114,7 @@ fi
 
 step "5/7 landing pages — python3 scripts/build_landing_pages.py"
 python3 scripts/build_landing_pages.py
+node scripts/clean-links.mjs
 
 step "6/7 gates"
 python3 scripts/seo_check.py

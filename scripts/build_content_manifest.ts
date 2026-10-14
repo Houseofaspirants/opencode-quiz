@@ -1072,7 +1072,6 @@ const describeContent = (drops: Drop[], allowCreate: boolean): Drop[] => {
     const shared = (t: string): boolean => (count.get(key(t)) || 0) > 1;
     const pick = texts.find((t) => !isFrontMatter(t) && !shared(t))
       || texts.find((t) => !isFrontMatter(t))
-      || texts[0]
       || "";
     const preview = ensurePreview(file, digest, allowCreate);
     return {

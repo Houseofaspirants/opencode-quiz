@@ -1159,7 +1159,7 @@ bash scripts/watch_service.sh status
 ### What you see
 
 ```
-✓ PDF detected
+✓ Source change detected
 ✓ Publishing...
 ✓ Build successful
 ✓ Pushing...
@@ -1170,11 +1170,20 @@ bash scripts/watch_service.sh status
 
 | behaviour | how |
 | --- | --- |
-| duplicate events ignored | every event re-stats every PDF under `content/`; only a real difference counts |
+| duplicate events ignored | every event checks PDFs, Markdown and JSON in `content/` and `questions/`; only a real difference counts |
 | waits for the copy to finish | the 3-second timer restarts on each event, so publishing starts 3 s after the **last** change |
 | a folder of PDFs copied at once publishes **once** | all changes collect into a single batch, one publish |
-| PDFs only | `content/README.md` and other non-PDF files are never a trigger |
+| source deletion | deleting a file or folder rebuilds manifests and removes its generated pages; empty chapter folders are hidden |
+| missed events | the source trees are checked every 15 seconds and rebuilt when the publisher starts |
+| failed publishing | failed changes stay queued and retry after one minute |
 | never two builds at once | a change arriving mid-build is queued for the next cycle |
+
+Vercel also runs `bash scripts/build_site.sh` on every deployment. A deletion
+committed and pushed from GitHub Desktop therefore rebuilds the content pages
+and inventories even when the local watcher was stopped. Generated HTML and
+`data/` files are outputs: delete the source in `content/` or `questions/` to
+remove an item permanently. The computer needs to be awake and online for the
+local watcher to publish automatically.
 
 ### Where the commits come from
 

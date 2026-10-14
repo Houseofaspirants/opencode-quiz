@@ -2,7 +2,7 @@
 /**
  * watch_content.mjs — hands-free publishing.
  *
- * Watches content/ recursively and, whenever a PDF is added, changed or
+ * Watches content/ and questions/ recursively and, whenever a source is added, changed or
  * removed, runs `npm run publish` (build → gates → commit), then commits
  * anything left uncommitted as "content: auto publish" and pushes main.
  *
@@ -11,11 +11,11 @@
  *
  * Design notes:
  *
- *   - fs.watch reports the *signal*; a stat snapshot of every PDF under
- *     content/ is the *truth*. Copying one file on macOS emits create + write
+ *   - fs.watch reports the *signal*; a stat snapshot of the source trees
+ *     is the *truth*. Copying one file on macOS emits create + write
  *     + rename events, and comparing snapshots is what collapses them into a
  *     single "something changed" — duplicate events never start a second
- *     publish, and edits to non-PDF files (content/README.md) are invisible.
+ *     publish. PDFs, Markdown and JSON metadata/questions are tracked.
  *
  *   - the debounce restarts on every event, so a folder of PDFs copied in at
  *     once publishes exactly once, 3 seconds after the last byte lands.
@@ -42,7 +42,11 @@ import process from "node:process";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const CONTENT = join(ROOT, "content");
+const QUESTIONS = join(ROOT, "questions");
+const SOURCE_ROOTS = [CONTENT, QUESTIONS];
 const DEBOUNCE_MS = 3000;
+const RETRY_MS = 60000;
+const POLL_MS = 15000;
 const DRY_RUN = process.argv.includes("--dry-run");
 const LOCK = join(tmpdir(), "houseofaspirants-content-watch.lock");
 
@@ -81,9 +85,9 @@ const detail = (line) => console.log(`    ${line}`);
 
 // -------------------------------------------------------------- snapshot --
 
-const isPdf = (name) => name.toLowerCase().endsWith(".pdf");
+const isSource = (name) => /\.(pdf|md|json)$/i.test(name);
 
-/** Map of content-relative PDF path -> "mtime:size". */
+/** Map of repository-relative source path -> "mtime:size". */
 function snapshot() {
   const seen = new Map();
   const walk = (dir) => {
@@ -97,17 +101,17 @@ function snapshot() {
       const full = join(dir, entry.name);
       if (entry.isDirectory()) {
         walk(full);
-      } else if (entry.isFile() && isPdf(entry.name)) {
+      } else if (entry.isFile() && isSource(entry.name)) {
         try {
           const st = statSync(full);
-          seen.set(relative(CONTENT, full), `${st.mtimeMs}:${st.size}`);
+          seen.set(relative(ROOT, full), `${st.mtimeMs}:${st.size}`);
         } catch {
           // still being written, or already gone — the next event re-checks
         }
       }
     }
   };
-  walk(CONTENT);
+  for (const dir of SOURCE_ROOTS) walk(dir);
   return seen;
 }
 
@@ -171,17 +175,19 @@ async function publishCycle() {
   running = true;
   const changed = [...batch];
   batch.clear();
+  let failed = false;
 
   try {
     say("✓ Publishing...");
     if (DRY_RUN) {
-      detail(`dry run — would publish ${changed.length} PDF change(s): ${changed.join(", ")}`);
+      detail(`dry run — would publish ${changed.length} source change(s): ${changed.join(", ")}`);
       return;
     }
 
     // publish.sh builds, runs every gate and commits its own output.
     const build = await run("npm", ["run", "publish"]);
     if (!build.ok) {
+      failed = true;
       say(`✗ Publish failed (exit ${build.code}) — nothing was committed, still watching`);
       return;
     }
@@ -194,10 +200,12 @@ async function publishCycle() {
     if (staged.code === 1) {
       const commit = await run("git", ["commit", "-m", "content: auto publish"]);
       if (!commit.ok) {
+        failed = true;
         say(`✗ Commit failed (exit ${commit.code}) — not pushing`);
         return;
       }
     } else if (staged.code > 1) {
+      failed = true;
       detail(`could not read the index (exit ${staged.code}) — skipping the push`);
       return;
     }
@@ -209,18 +217,25 @@ async function publishCycle() {
       for (const line of lines) detail(line.trim());
       say("✓ Website Live");
     } else {
+      failed = true;
       say(`⚠ Push failed (exit ${push.code})`);
       for (const line of lines.slice(-4)) detail(line.trim());
       detail("→ commits are safe locally; push from GitHub Desktop, or add the");
       detail("  SSH key to GitHub (README §26) so the next push is automatic.");
     }
   } catch (err) {
+    failed = true;
     say(`✗ Unexpected error: ${err && err.message ? err.message : String(err)}`);
   } finally {
     running = false;
+    if (failed) {
+      // Keep failed deletions queued. A later retry or source correction must
+      // publish them even when fs.watch sends no further event for that file.
+      for (const path of changed) batch.add(path);
+    }
     if (rerunAfter || batch.size > 0) {
       rerunAfter = false;
-      schedule();
+      schedule(failed ? RETRY_MS : DEBOUNCE_MS);
     }
   }
 }
@@ -233,7 +248,7 @@ let timer = null;
 let running = false;
 let rerunAfter = false;
 
-function schedule() {
+function schedule(delay = DEBOUNCE_MS) {
   if (timer) clearTimeout(timer);
   timer = setTimeout(() => {
     timer = null;
@@ -242,20 +257,20 @@ function schedule() {
       return;
     }
     void publishCycle();
-  }, DEBOUNCE_MS);
+  }, delay);
 }
 
 function onFsEvent(_event, filename) {
   // Directory renames/removals may report only the folder name, even when
-  // they remove many PDFs. Always compare the inventory; non-PDF edits still
+  // they remove many files. Always compare the inventory; unrelated edits
   // produce an empty diff and never trigger a publish.
 
   const next = snapshot();
   const changed = diff(known, next);
   known = next;
-  if (changed.length === 0) return; // duplicate event, or a non-PDF change
+  if (changed.length === 0) return; // duplicate event or unrelated change
 
-  if (batch.size === 0) say("✓ PDF detected");
+  if (batch.size === 0) say("✓ Source change detected");
   for (const path of changed) {
     if (batch.has(path)) continue; // already reported for this batch
     batch.add(path);
@@ -311,19 +326,22 @@ if (!takeLock()) {
 say("────────────────────────────────────────");
 say(" content watcher");
 say(` root:      ${ROOT}`);
-say(` watching:  content/  (recursive, *.pdf)`);
+say(` watching:  content/ + questions/ (PDF, Markdown, JSON)`);
 say(` debounce:  ${DEBOUNCE_MS / 1000}s after the last change`);
 say(` mode:      ${DRY_RUN ? "dry run (publishing disabled)" : "live"}`);
 say(" stop:      Ctrl+C  |  background: bash scripts/watch_service.sh install");
 say("────────────────────────────────────────");
 
-let watcher;
+let watchers = [];
 try {
-  watcher = watch(CONTENT, { recursive: true }, onFsEvent);
-  watcher.on("error", (err) => {
-    say(`✗ lost the content/ watcher: ${err.message}`);
-    process.exit(1); // launchd restarts it
-  });
+  for (const dir of SOURCE_ROOTS) {
+    const watcher = watch(dir, { recursive: true }, onFsEvent);
+    watcher.on("error", (err) => {
+      say(`✗ lost the source watcher: ${err.message}`);
+      process.exit(1); // launchd restarts it
+    });
+    watchers.push(watcher);
+  }
 } catch (err) {
   releaseLock();
   fail(`✗ cannot watch ${CONTENT}: ${err.message}`);
@@ -332,7 +350,7 @@ try {
 for (const signal of ["SIGINT", "SIGTERM"]) {
   process.on(signal, () => {
     try {
-      watcher.close();
+      for (const watcher of watchers) watcher.close();
     } catch {
       // already closed
     }
@@ -347,3 +365,9 @@ process.on("uncaughtException", (err) => {
   releaseLock();
   process.exit(1); // launchd restarts it
 });
+
+// Reconcile deletions made while the service was stopped, then periodically
+// compare the tree in case macOS coalesces or misses a directory event.
+batch.add("startup source reconciliation");
+schedule();
+setInterval(() => onFsEvent("poll", null), POLL_MS);

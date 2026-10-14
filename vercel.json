@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "buildCommand": "node scripts/build-index.mjs",
+  "buildCommand": "bash scripts/build_site.sh",
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,

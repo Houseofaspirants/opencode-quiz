@@ -12,6 +12,7 @@ import html as html_mod
 import json
 import re
 import sys
+from functools import lru_cache
 import xml.etree.ElementTree as ET
 from collections import Counter
 from pathlib import Path
@@ -19,6 +20,14 @@ from html.parser import HTMLParser
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+@lru_cache(maxsize=None)
+def audit_html_exists(target):
+    try:
+        return (ROOT / target).is_file()
+    except OSError:
+        return False
 
 
 def read_audit_source(path, **kwargs):
@@ -33,7 +42,10 @@ def read_audit_source(path, **kwargs):
         return source
 
     def route(match):
-        quote, value = match.group(1), match.group(2)
+        attr, quote, value = match.group(1), match.group(2), match.group(3)
+        tag_start = source.rfind("<", 0, match.start())
+        if source[tag_start:match.start()].startswith("<base "):
+            return match.group(0)
         if value.startswith(("http:", "https:", "//", "#", "mailto:", "tel:")):
             return match.group(0)
         parts = re.split(r"([?#])", value, maxsplit=1)
@@ -43,12 +55,16 @@ def read_audit_source(path, **kwargs):
             target = "index.html"
         elif not target.endswith(".html"):
             candidate = target.removeprefix("./").lstrip("/") + ".html"
-            if not (ROOT / candidate).is_file():
+            index = target.removeprefix("./").lstrip("/").rstrip("/") + "/index.html"
+            if audit_html_exists(candidate):
+                target += ".html"
+            elif audit_html_exists(index):
+                target = target.rstrip("/") + "/index.html"
+            else:
                 return match.group(0)
-            target += ".html"
-        return quote + target + tail + quote
+        return attr + quote + target + tail + quote
 
-    return re.sub(r"([\"'`])([^\"'`<>\n]+)\1", route, source)
+    return re.sub(r"(\bhref=|data-subject-base=)([\"'`])([^\"'`<>\n]+)\2", route, source)
 
 try:
     NOINDEX_PAGES = set(json.loads(read_audit_source(ROOT / "data" / "noindex.json", encoding="utf-8")).get("pages", []))
@@ -1759,7 +1775,7 @@ if landing_pages:
             for t in c.get("topics", []) or []:
                 topic_by_key[(s["id"], t["id"])] = t
 
-    LINK_RX = re.compile(r'href="((?:pa/)?(?:subject|category|topic|quiz|exam|cluster)-[a-z0-9-]+\.html)"')
+    LINK_RX = re.compile(r'href="((?:pa/)?(?:subject|category|topic|quiz|exam|cluster)-[^\"<>]+\.html)"')
     lpages = {r["file"]: r for r in landing_pages}
     landing_h = {f: read_audit_source(ROOT / f, encoding="utf-8")
                  for f in lpages if (ROOT / f).exists()}

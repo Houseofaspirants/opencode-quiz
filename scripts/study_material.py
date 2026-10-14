@@ -388,6 +388,10 @@ def language_rows(subject, records, universe):
         for node in (by_lang.get(lid) or {}).values():
             node["parts"].sort(key=lambda p: (p["n"], p["file"]))
             node["parts"] = [p for p in node["parts"] if p["file"]]
+            # Deleting the last part often leaves its folder on disk. Only
+            # published parts make a chapter visible on the website.
+            if not node["parts"]:
+                continue
             # The page count of a chapter, measured by the same rule the
             # region and category cards use. It lives here rather than being
             # worked out in the browser because only this build can see
