@@ -19,15 +19,45 @@ from html.parser import HTMLParser
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def read_audit_source(path, **kwargs):
+    """Compare equivalent clean URLs and .html links using existing site files.
+
+    Only the audit's in-memory view changes; published URLs and canonicals stay
+    untouched. Decoding also preserves links to filenames containing spaces.
+    Missing destinations are never supplied by this normalization.
+    """
+    source = path.read_text(**kwargs)
+    if path.suffix not in (".html", ".js"):
+        return source
+
+    def route(match):
+        quote, value = match.group(1), match.group(2)
+        if value.startswith(("http:", "https:", "//", "#", "mailto:", "tel:")):
+            return match.group(0)
+        parts = re.split(r"([?#])", value, maxsplit=1)
+        target = unquote(parts[0])
+        tail = "".join(parts[1:])
+        if target in ("./", "/"):
+            target = "index.html"
+        elif not target.endswith(".html"):
+            candidate = target.removeprefix("./").lstrip("/") + ".html"
+            if not (ROOT / candidate).is_file():
+                return match.group(0)
+            target += ".html"
+        return quote + target + tail + quote
+
+    return re.sub(r"([\"'`])([^\"'`<>\n]+)\1", route, source)
+
 try:
-    NOINDEX_PAGES = set(json.loads((ROOT / "data" / "noindex.json").read_text(
-        encoding="utf-8")).get("pages", []))
+    NOINDEX_PAGES = set(json.loads(read_audit_source(ROOT / "data" / "noindex.json", encoding="utf-8")).get("pages", []))
 except (OSError, ValueError):
     NOINDEX_PAGES = set()
 # generated index pages the content builder flags noindex (thin archives)
 try:
     NOINDEX_PAGES |= {p.get("file") for p in json.loads(
-        (ROOT / "data" / "content-manifest.json").read_text(encoding="utf-8")
+        read_audit_source(ROOT / "data" / "content-manifest.json", encoding="utf-8")
     ).get("pages", []) if p.get("noindex")}
 except (OSError, ValueError):
     pass
@@ -73,7 +103,7 @@ if not LANDING_MANIFEST.exists():
     errors.append("data/landing-manifest.json missing - run scripts/build_landing_pages.py")
 else:
     try:
-        _lm = json.loads(LANDING_MANIFEST.read_text(encoding="utf-8"))
+        _lm = json.loads(read_audit_source(LANDING_MANIFEST, encoding="utf-8"))
         landing_pages = [p for p in _lm.get("pages", []) if p.get("file")]
         landing_files = {p["file"] for p in landing_pages}
         for _p in landing_pages:
@@ -90,7 +120,7 @@ else:
     _cm_protected = set()
     if CONTENT_MANIFEST.exists():
         try:
-            _cpx = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8"))
+            _cpx = json.loads(read_audit_source(CONTENT_MANIFEST, encoding="utf-8"))
             _cm_protected = {str(h.get("file", "")) for h in _cpx.get("hubs", [])} | \
                 {str(p.get("file", "")) for p in _cpx.get("pages", [])} | \
                 {str(p.get("file", "")) for p in _cpx.get("items", [])}
@@ -117,7 +147,7 @@ if not BOOKS_MANIFEST.exists():
                   "scripts/build_index.py (it runs the Books engine)")
 else:
     try:
-        _bm = json.loads(BOOKS_MANIFEST.read_text(encoding="utf-8"))
+        _bm = json.loads(read_audit_source(BOOKS_MANIFEST, encoding="utf-8"))
         book_pages = [p for p in _bm.get("pages", []) if p.get("file")]
         book_files = {p["file"] for p in book_pages}
         for _bp in book_pages:
@@ -153,7 +183,7 @@ if not CONTENT_MANIFEST.exists():
     errors.append("data/content-manifest.json missing - run scripts/build_content.py")
 else:
     try:
-        _cm0 = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8"))
+        _cm0 = json.loads(read_audit_source(CONTENT_MANIFEST, encoding="utf-8"))
         content_hubs = [h for h in _cm0.get("hubs", []) if h.get("file")]
         content_pages = [h["file"] for h in content_hubs] + \
             [p["file"] for p in _cm0.get("items", []) if p.get("file")] + \
@@ -258,8 +288,7 @@ def load_pyq() -> dict:
     An absent or unreadable file reads as an empty collection, so the gates
     below then report those papers as unpublished: which would be the truth."""
     try:
-        data = json.loads((ROOT / "data" / "pyq-manifest.json")
-                          .read_text(encoding="utf-8"))
+        data = json.loads(read_audit_source(ROOT / "data" / "pyq-manifest.json", encoding="utf-8"))
     except (OSError, ValueError):
         return {}
     return data if isinstance(data, dict) else {}
@@ -288,7 +317,7 @@ for page in PAGES:
     if not path.exists():
         errors.append(f"{page}: missing file")
         continue
-    html = path.read_text(encoding="utf-8")
+    html = read_audit_source(path, encoding="utf-8")
 
     # --- title (measured RENDERED, entities unescaped) --------------------
     m = re.search(r"<title>(.*?)</title>", html, re.S)
@@ -556,19 +585,19 @@ for c, pages in cans.items():
         errors.append(f"duplicate canonical {c} on {pages}")
 
 # --- shared chrome: internal link coverage --------------------------------
-core = (ROOT / "assets/js/core.js").read_text(encoding="utf-8")
+core = read_audit_source(ROOT / "assets/js/core.js", encoding="utf-8")
 # The Previous Year Questions collection publishes nested pages under pyq/.
 # They are deliberately not in the global chrome - the hub is what lists them,
 # so this is the file their link coverage is proved against.
 PYQ_HUB = "previous-year-questions.html"
-pyq_hub_src = ((ROOT / PYQ_HUB).read_text(encoding="utf-8")
+pyq_hub_src = (read_audit_source(ROOT / PYQ_HUB, encoding="utf-8")
                if (ROOT / PYQ_HUB).exists() else "")
 # The Current Affairs section is the other nested route family: its language
 # pages hang off the Current Affairs hub, and a month page off the language
 # page that owns it. The hub is what lists the languages, so that is where a
 # language page's link coverage is proved.
 CA_HUB = "current-affairs.html"
-ca_hub_src = ((ROOT / CA_HUB).read_text(encoding="utf-8")
+ca_hub_src = (read_audit_source(ROOT / CA_HUB, encoding="utf-8")
               if (ROOT / CA_HUB).exists() else "")
 for link in REQUIRED_LINKS:
     if link not in core:
@@ -587,7 +616,7 @@ if 'href="subject.html">' in core:
 # quiz.js builds Google's Education Q&A graph and subject.js builds the
 # CollectionPage's ItemList on the client, so seo_check can only assert that
 # the required pieces stay wired into those builders.
-quiz_js = (ROOT / "assets/js/quiz.js").read_text(encoding="utf-8")
+quiz_js = read_audit_source(ROOT / "assets/js/quiz.js", encoding="utf-8")
 # Education Q&A requires the questions to be immediately visible on the page.
 # The quiz screen shows one question at a time during an attempt, so its
 # runtime graph must NOT carry flashcards - the topic page owns them.
@@ -595,7 +624,7 @@ for marker in ('eduQuestionType: "Flashcard"', "hasPart: flashcards"):
     if marker in quiz_js:
         errors.append(f"quiz.js: runtime Quiz must not carry flashcards ({marker!r}) - "
                       f"its questions are not visible on the page")
-subj_js = (ROOT / "assets/js/subject.js").read_text(encoding="utf-8")
+subj_js = read_audit_source(ROOT / "assets/js/subject.js", encoding="utf-8")
 for marker in ('"@type": "ItemList"', "`${canonical}#list`"):
     if marker not in subj_js:
         errors.append(f"subject.js: CollectionPage ItemList missing {marker!r}")
@@ -634,7 +663,7 @@ for label, frag in DESTINATIONS.items():
 if 'href="articles.html"' not in core:
     errors.append("chrome missing Study Guides hub link (articles.html)")
 for page in PAGES:
-    html = (ROOT / page).read_text(encoding="utf-8")
+    html = read_audit_source(ROOT / page, encoding="utf-8")
     if "data-site-header" not in html or "data-site-footer" not in html:
         errors.append(f"{page}: shared chrome placeholder missing")
 
@@ -645,7 +674,7 @@ for tag in re.findall(r"<img\b[^>]*>", core):
             errors.append(f"core.js <img> missing {attr}: {tag[:80]}")
 
 # --- robots.txt ------------------------------------------------------------
-robots_txt = (ROOT / "robots.txt").read_text(encoding="utf-8")
+robots_txt = read_audit_source(ROOT / "robots.txt", encoding="utf-8")
 if f"Sitemap: {DOMAIN}/sitemap.xml" not in robots_txt:
     errors.append("robots.txt: sitemap line missing or off-domain")
 if "vercel.app" in robots_txt:
@@ -656,7 +685,7 @@ for _f in sorted(NOINDEX_PAGES):
     if not (ROOT / _f).exists():
         errors.append(f"data/noindex.json: {_f} does not exist")
 # --- sitemap.xml -----------------------------------------------------------
-sm = (ROOT / "sitemap.xml").read_text(encoding="utf-8")
+sm = read_audit_source(ROOT / "sitemap.xml", encoding="utf-8")
 locs = re.findall(r"<loc>(.*?)</loc>", sm)
 if not locs:
     errors.append("sitemap.xml: no <loc> entries")
@@ -677,15 +706,15 @@ notes.append(f"sitemap: {len(locs)} URLs")
 # --- study guides: registry <-> pages <-> sitemap <-> hub cross-links --------
 registry = None
 try:
-    registry = json.loads((ROOT / "data/articles.json").read_text(encoding="utf-8")).get("articles", [])
+    registry = json.loads(read_audit_source(ROOT / "data/articles.json", encoding="utf-8")).get("articles", [])
 except Exception as e:
     errors.append(f"data/articles.json unreadable: {e}")
 if registry is not None:
     if not registry:
         errors.append("data/articles.json: no articles registered")
     subj_ids = {s.get("id") for s in json.loads(
-        (ROOT / "data/subjects.json").read_text(encoding="utf-8")).get("subjects", [])}
-    hub_html = (ROOT / ART_HUB).read_text(encoding="utf-8") if (ROOT / ART_HUB).exists() else ""
+        read_audit_source(ROOT / "data/subjects.json", encoding="utf-8")).get("subjects", [])}
+    hub_html = read_audit_source(ROOT / ART_HUB, encoding="utf-8") if (ROOT / ART_HUB).exists() else ""
     if not hub_html:
         errors.append(f"{ART_HUB}: hub page missing")
     seen_urls, seen_titles = set(), set()
@@ -715,7 +744,7 @@ if registry is not None:
         if not url.endswith(".html") or not (ROOT / url).exists():
             errors.append(f"articles.json[{aid}]: page file missing ({url})")
             continue
-        html = (ROOT / url).read_text(encoding="utf-8")
+        html = read_audit_source(ROOT / url, encoding="utf-8")
         m = re.search(r"<title>(.*?)</title>", html, re.S)
         page_title = html_mod.unescape(m.group(1).strip()) if m else ""
         if page_title != title:
@@ -746,7 +775,7 @@ GEN_MARK = "generated by scripts/build_content.py"
 pyq_data = load_pyq()
 if CONTENT_MANIFEST.exists():
     try:
-        cm = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8"))
+        cm = json.loads(read_audit_source(CONTENT_MANIFEST, encoding="utf-8"))
     except json.JSONDecodeError:
         cm = None
     if cm is not None:
@@ -758,7 +787,7 @@ if CONTENT_MANIFEST.exists():
             if not f or not (ROOT / f).exists():
                 errors.append(f"content hub missing on disk: {f or h.get('collection')}")
                 continue
-            src = (ROOT / f).read_text(encoding="utf-8")
+            src = read_audit_source(ROOT / f, encoding="utf-8")
             if GEN_MARK not in src:
                 errors.append(f"{f}: generated page edited by hand - rerun "
                               f"scripts/build_content.py")
@@ -780,7 +809,7 @@ if CONTENT_MANIFEST.exists():
                 errors.append(f"content-manifest: page missing on disk "
                               f"({f or p.get('title', '?')})")
                 continue
-            src = (ROOT / f).read_text(encoding="utf-8")
+            src = read_audit_source(ROOT / f, encoding="utf-8")
             if GEN_MARK not in src:
                 errors.append(f"{f}: generated page edited by hand - rerun "
                               f"scripts/build_content.py")
@@ -896,7 +925,7 @@ if CONTENT_MANIFEST.exists():
         # category archive is reached through archives.html and through the
         # documents that carry its tag - and only archives.html is supposed to
         # list every document (the rest list exactly their own slice).
-        arch_src = ((ROOT / "archives.html").read_text(encoding="utf-8")
+        arch_src = (read_audit_source(ROOT / "archives.html", encoding="utf-8")
                     if (ROOT / "archives.html").exists() else "")
         for pg in cm.get("pages", []):
             f = pg.get("file", "")
@@ -904,7 +933,7 @@ if CONTENT_MANIFEST.exists():
                 errors.append(f"content index page missing on disk: "
                               f"{f or pg.get('title', '?')}")
                 continue
-            src_pg = (ROOT / f).read_text(encoding="utf-8")
+            src_pg = read_audit_source(ROOT / f, encoding="utf-8")
             if GEN_MARK not in src_pg:
                 errors.append(f"{f}: generated page edited by hand - rerun "
                               f"scripts/build_content.py")
@@ -930,7 +959,7 @@ if CONTENT_MANIFEST.exists():
                     parent = f"current-affairs/{parts_f[1]}/index.html"
                     parents = [parent]
                     linked = f'href="{f}"' in (
-                        (ROOT / parent).read_text(encoding="utf-8")
+                        read_audit_source(ROOT / parent, encoding="utf-8")
                         if (ROOT / parent).exists() else "")
                 if not linked:
                     errors.append(f"{f}: not linked from {' or '.join(parents)}")
@@ -969,7 +998,7 @@ if CONTENT_MANIFEST.exists():
                 if not (ROOT / side["file"]).exists():
                     errors.append(f"language pair: missing {side['file']}")
                     continue
-                src_p = (ROOT / side["file"]).read_text(encoding="utf-8")
+                src_p = read_audit_source(ROOT / side["file"], encoding="utf-8")
                 if not any(f'href="{m}{other["file"]}"' in src_p
                            for m in ("", "/")):
                     errors.append(f'{side["file"]}: no link to its '
@@ -978,7 +1007,7 @@ if CONTENT_MANIFEST.exists():
                 if not want_href:
                     errors.append(f'{side["file"]}: missing hreflang='
                                   f'{other["lang"]} alternate')
-            pa_src = (ROOT / alt["file"]).read_text(encoding="utf-8") \
+            pa_src = read_audit_source(ROOT / alt["file"], encoding="utf-8") \
                 if (ROOT / alt["file"]).exists() else ""
             if pa_src and '<base href="/">' not in pa_src:
                 errors.append(f'{alt["file"]}: Punjabi pages need '
@@ -996,13 +1025,13 @@ if CONTENT_MANIFEST.exists():
             errors.append("data/search-index.json missing - run scripts/build_content.py")
         else:
             try:
-                si = json.loads(si_path.read_text(encoding="utf-8"))
+                si = json.loads(read_audit_source(si_path, encoding="utf-8"))
                 rows = si.get("items", [])
                 guide_urls = {"/" + str(g.get("url", ""))
                               for g in (registry or []) if g.get("url")}
                 try:
                     exam_urls = {f"/exam-{e.get('id')}.html" for e in json.loads(
-                        (ROOT / "data" / "exams.json").read_text(encoding="utf-8")
+                        read_audit_source(ROOT / "data" / "exams.json", encoding="utf-8")
                     ).get("exams", []) if e.get("id")}
                 except Exception:
                     exam_urls = set()
@@ -1056,7 +1085,7 @@ if CONTENT_MANIFEST.exists():
             errors.append("data/authors.json missing - the byline system has no registry")
         else:
             try:
-                authors = json.loads(au_path.read_text(encoding="utf-8")).get("authors", [])
+                authors = json.loads(read_audit_source(au_path, encoding="utf-8")).get("authors", [])
             except json.JSONDecodeError as e:
                 errors.append(f"data/authors.json: invalid JSON: {e}")
         by_name = {str(a.get("name")): a for a in authors if a.get("name")}
@@ -1077,7 +1106,7 @@ if CONTENT_MANIFEST.exists():
                 if f"author-{aid}.html" not in pages_cm:
                     errors.append(f"{f}: author-{aid}.html is not a registered page")
                 if (ROOT / f).exists() and \
-                        f'href="author-{aid}.html"' not in (ROOT / f).read_text(encoding="utf-8"):
+                        f'href="author-{aid}.html"' not in read_audit_source(ROOT / f, encoding="utf-8"):
                     errors.append(f"{f}: no link to its profile author-{aid}.html")
         notes.append(f"bylines: {n_byline} document(s) link a registered profile, "
                      f"{len(profiled)} profile page(s) in the registry")
@@ -1093,7 +1122,7 @@ if CONTENT_MANIFEST.exists():
                 want_tax.add(f"archive-tag-{tax(t)}.html")
             if p.get("category"):
                 want_tax.add(f"archive-category-{tax(p['category'])}.html")
-        arch_txt = ((ROOT / "archives.html").read_text(encoding="utf-8")
+        arch_txt = (read_audit_source(ROOT / "archives.html", encoding="utf-8")
                     if (ROOT / "archives.html").exists() else "")
         for f in sorted(want_tax):
             if f not in pages_cm:
@@ -1132,7 +1161,7 @@ if CONTENT_MANIFEST.exists():
             if not any(len(v) > 1 for v in vals.values()):
                 continue                      # nothing to choose between
             src_h = (ROOT / h.get("file", ""))
-            if not src_h.exists() or "data-filter-list" not in src_h.read_text(encoding="utf-8"):
+            if not src_h.exists() or "data-filter-list" not in read_audit_source(src_h, encoding="utf-8"):
                 errors.append(f"{h.get('file')}: {len(rows)} items with choices to "
                               f"filter but no filter bar")
             else:
@@ -1147,7 +1176,7 @@ if CONTENT_MANIFEST.exists():
                           "posts stays off until real numbers exist)")
         else:
             try:
-                pop = json.loads(pop_path.read_text(encoding="utf-8"))
+                pop = json.loads(read_audit_source(pop_path, encoding="utf-8"))
                 if not isinstance(pop.get("views"), dict):
                     errors.append("data/popularity.json: 'views' must be an object")
             except json.JSONDecodeError as e:
@@ -1156,7 +1185,7 @@ if CONTENT_MANIFEST.exists():
         if not feed_path.exists():
             errors.append("feed.xml missing - run scripts/build_content.py")
         else:
-            feed_src = feed_path.read_text(encoding="utf-8")
+            feed_src = read_audit_source(feed_path, encoding="utf-8")
             try:
                 tree = ET.fromstring(feed_src)
             except ET.ParseError as e:
@@ -1189,7 +1218,7 @@ if CONTENT_MANIFEST.exists():
                 notes.append(f"rss: {len(feed_links)} item(s) in feed.xml")
 
         # --- homepage feed blocks mirror exactly what the build produced ---
-        home_src = (ROOT / "index.html").read_text(encoding="utf-8")
+        home_src = read_audit_source(ROOT / "index.html", encoding="utf-8")
 
         def feed_block(kind):
             s, e = f"<!-- HOA-FEED:{kind} -->", f"<!-- /HOA-FEED:{kind} -->"
@@ -1247,7 +1276,7 @@ if CONTENT_MANIFEST.exists():
 
         # current-affairs feed = newest CA documents + newest available CA sets
         try:
-            idx_feed = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
+            idx_feed = json.loads(read_audit_source(ROOT / "data" / "index.json", encoding="utf-8"))
             ca_subj = next((s for s in idx_feed.get("subjects", [])
                             if s.get("id") == "current-affairs"), {})
             ca_topics = [t for t in ca_subj.get("topics", []) if t.get("available")]
@@ -1288,7 +1317,7 @@ if BOOKS_MANIFEST.exists() and book_pages:
         errors.append("data/books.json missing - run python3 scripts/build_index.py")
     else:
         try:
-            shelf = json.loads((ROOT / "data" / "books.json").read_text(encoding="utf-8"))
+            shelf = json.loads(read_audit_source(ROOT / "data" / "books.json", encoding="utf-8"))
         except json.JSONDecodeError as e:
             errors.append(f"data/books.json: invalid JSON: {e}")
     shelf_books = (shelf or {}).get("books", [])
@@ -1346,7 +1375,7 @@ if BOOKS_MANIFEST.exists() and book_pages:
         store_hosts = set()
     else:
         try:
-            _aff = json.loads(aff_path.read_text(encoding="utf-8"))
+            _aff = json.loads(read_audit_source(aff_path, encoding="utf-8"))
             store_hosts = {str(p.get("host", "")).lower()
                            for p in _aff.get("providers", [])
                            if p.get("external") and p.get("host")}
@@ -1364,7 +1393,7 @@ if BOOKS_MANIFEST.exists() and book_pages:
         if not f or not (ROOT / f).exists():
             errors.append(f"book page missing on disk: {f or bp.get('title', '?')}")
             continue
-        src = (ROOT / f).read_text(encoding="utf-8")
+        src = read_audit_source(ROOT / f, encoding="utf-8")
         if GEN_MARK not in src:
             errors.append(f"{f}: generated page edited by hand - rerun "
                           f"python3 scripts/build_index.py")
@@ -1416,7 +1445,7 @@ if "Disallow: /go/" not in robots_txt:
                   "(they are redirects, not content)")
 
 # --- related-content modules (subject pages) --------------------------------
-subj_html = (ROOT / "subject.html").read_text(encoding="utf-8")
+subj_html = read_audit_source(ROOT / "subject.html", encoding="utf-8")
 if 'id="relatedSection"' not in subj_html or 'id="relatedGrid"' not in subj_html:
     errors.append("subject.html: related-content module placeholder missing")
 if "assets/js/related.js" not in subj_html:
@@ -1425,7 +1454,7 @@ rel_js_path = ROOT / "assets/js/related.js"
 if not rel_js_path.exists():
     errors.append("assets/js/related.js missing")
 else:
-    rel_js = rel_js_path.read_text(encoding="utf-8")
+    rel_js = read_audit_source(rel_js_path, encoding="utf-8")
     for frag in ("data/index.json", "data/articles.json", "subject.html?subject="):
         if frag not in rel_js:
             errors.append(f"related.js: missing {frag}")
@@ -1473,7 +1502,7 @@ page_floor = []
 for path in sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("pa/*.html")):
     if path.name == "404.html":
         continue
-    links = main_links(path.read_text(encoding="utf-8", errors="replace"))
+    links = main_links(read_audit_source(path, encoding="utf-8", errors="replace"))
     if len(links) < 5:
         page_floor.append(f"{path.as_posix()} ({len(links)})")
 if page_floor:
@@ -1485,7 +1514,7 @@ else:
 cm_items = []
 if CONTENT_MANIFEST.exists():
     try:
-        cm_items = json.loads(CONTENT_MANIFEST.read_text(encoding="utf-8")) \
+        cm_items = json.loads(read_audit_source(CONTENT_MANIFEST, encoding="utf-8")) \
             .get("items", [])
     except json.JSONDecodeError:
         cm_items = []
@@ -1496,7 +1525,7 @@ if not GRAPH_PATH.exists():
                   "(rebuild with scripts/build_content.py)")
 else:
     try:
-        graph = json.loads(GRAPH_PATH.read_text(encoding="utf-8"))
+        graph = json.loads(read_audit_source(GRAPH_PATH, encoding="utf-8"))
     except json.JSONDecodeError as e:
         errors.append(f"content-graph.json: unreadable ({e})")
         graph = None
@@ -1588,7 +1617,7 @@ for path in ROOT.rglob("*"):
     if path.is_file() and path.suffix in {".html", ".js", ".css", ".json", ".webmanifest", ".txt", ".xml", ".md"} \
             and "node_modules" not in path.parts and ".git" not in path.parts:
         try:
-            if "vercel.app" in path.read_text(encoding="utf-8"):
+            if "vercel.app" in read_audit_source(path, encoding="utf-8"):
                 errors.append(f"vercel.app reference in {path.relative_to(ROOT)}")
         except (UnicodeDecodeError, OSError):
             pass
@@ -1633,7 +1662,7 @@ AEO_PAGES = {"index.html", "faq.html", "punjab-exams.html", "articles.html",
              "about.html", "subject.html", "mock.html",
              "editorial-policy.html"} | ARTICLE_PAGES | set(landing_files)
 for p in sorted(AEO_PAGES):
-    h = (ROOT / p).read_text(encoding="utf-8")
+    h = read_audit_source(ROOT / p, encoding="utf-8")
     if 'class="answer-box"' not in h:
         errors.append(f"{p}: AEO quick-answer block (.answer-box) missing")
     if "FAQPage" not in types_by_page.get(p, set()):
@@ -1641,7 +1670,7 @@ for p in sorted(AEO_PAGES):
 
 # EEAT: attributed byline + a named, checkable source list on every guide
 for p in sorted(ARTICLE_PAGES):
-    h = (ROOT / p).read_text(encoding="utf-8")
+    h = read_audit_source(ROOT / p, encoding="utf-8")
     if 'class="byline"' not in h:
         errors.append(f"{p}: EEAT byline (author + review date) missing")
     if 'class="sources"' not in h:
@@ -1650,7 +1679,7 @@ for p in sorted(ARTICLE_PAGES):
         errors.append(f"{p}: corrections/contact link missing")
 
 # FAQ hub: enough real questions, and schema must mirror the visible page
-faq_html = (ROOT / "faq.html").read_text(encoding="utf-8")
+faq_html = read_audit_source(ROOT / "faq.html", encoding="utf-8")
 vis_q = len(re.findall(r'<div class="faq-item">', faq_html))
 sch_q = faq_html.count('"@type": "Question"')
 if vis_q < 30:
@@ -1712,12 +1741,12 @@ def intro_words(page_html):
 
 
 if landing_pages:
-    idx_land = json.loads((ROOT / "data" / "index.json").read_text(encoding="utf-8"))
+    idx_land = json.loads(read_audit_source(ROOT / "data" / "index.json", encoding="utf-8"))
     subj_by_id = {s["id"]: s for s in idx_land.get("subjects", [])}
-    exams_land = json.loads((ROOT / "data" / "exams.json").read_text(encoding="utf-8")).get("exams", [])
+    exams_land = json.loads(read_audit_source(ROOT / "data" / "exams.json", encoding="utf-8")).get("exams", [])
     exam_by_id = {e["id"]: e for e in exams_land}
     _cl_path = ROOT / "data" / "clusters.json"
-    clusters_land = (json.loads(_cl_path.read_text(encoding="utf-8")).get("clusters", [])
+    clusters_land = (json.loads(read_audit_source(_cl_path, encoding="utf-8")).get("clusters", [])
                      if _cl_path.exists() else [])
     cluster_by_id = {c["id"]: c for c in clusters_land}
 
@@ -1732,7 +1761,7 @@ if landing_pages:
 
     LINK_RX = re.compile(r'href="((?:pa/)?(?:subject|category|topic|quiz|exam|cluster)-[a-z0-9-]+\.html)"')
     lpages = {r["file"]: r for r in landing_pages}
-    landing_h = {f: (ROOT / f).read_text(encoding="utf-8")
+    landing_h = {f: read_audit_source(ROOT / f, encoding="utf-8")
                  for f in lpages if (ROOT / f).exists()}
     links_of = {f: LINK_RX.findall(h) for f, h in landing_h.items()}
 
@@ -2030,7 +2059,7 @@ if landing_pages:
     if not rep_path.exists():
         errors.append("SEO-LANDING-REPORT.md missing (build_landing_pages.py did not write it)")
     else:
-        rep = rep_path.read_text(encoding="utf-8")
+        rep = read_audit_source(rep_path, encoding="utf-8")
         m = re.search(r"## 1\. Pages optimized \((\d+)\)", rep)
         if not m:
             errors.append("report: 'Pages optimized (N)' heading missing")
@@ -2068,7 +2097,7 @@ if landing_pages:
     # scripts/build_landing_pages.py transforms quiz.html by regex; if someone
     # edits the template these anchors must still be findable or generation
     # silently produces broken pages.
-    tpl = (ROOT / "quiz.html").read_text(encoding="utf-8")
+    tpl = read_audit_source(ROOT / "quiz.html", encoding="utf-8")
     for frag, label in (
         ("<title>", "title"), ('name="description"', "meta description"),
         ('rel="canonical"', "canonical"), ("<h1", "h1"),
@@ -2106,7 +2135,7 @@ notes.append(
 
 # --- performance + accessibility enforcement --------------------------------
 for page in PAGES:
-    html = (ROOT / page).read_text(encoding="utf-8")
+    html = read_audit_source(ROOT / page, encoding="utf-8")
     # no render-blocking scripts: every external script must be defer/async
     for tag in re.findall(r"<script\b[^>]*\bsrc=[^>]*>", html):
         if " defer" not in tag and " async" not in tag:
@@ -2169,7 +2198,7 @@ for frag, why in (
     if frag not in core:
         errors.append(f"core.js: Clarity missing {why} ({frag!r})")
 for page in PAGES:
-    html = (ROOT / page).read_text(encoding="utf-8")
+    html = read_audit_source(ROOT / page, encoding="utf-8")
     if "clarity" in html.lower():
         errors.append(f"{page}: Clarity must ship only from core.js, not inline")
     if "assets/js/core.js" not in html:
@@ -2178,7 +2207,7 @@ notes.append(f"analytics: Clarity {CLARITY_ID} from core.js (async, production-o
 
 # cache headers (vercel.json)
 try:
-    vj = json.loads((ROOT / "vercel.json").read_text(encoding="utf-8"))
+    vj = json.loads(read_audit_source(ROOT / "vercel.json", encoding="utf-8"))
     rules = {r.get("source", ""): " ".join(h.get("value", "") for h in r.get("headers", []))
              for r in vj.get("headers", [])}
     expect = [
@@ -2221,7 +2250,7 @@ notes.append("perf: deferred scripts, dns-prefetch x3, style+logo preloads, quan
 # Policy: study content is public; only the personalised pages gate, quizzes
 # gate only if auth.gateQuizzes opts in.
 try:
-    site_raw = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
+    site_raw = json.loads(read_audit_source(ROOT / "data" / "site.json", encoding="utf-8"))
     auth_cfg = site_raw.get("auth")
     if not isinstance(auth_cfg, dict):
         errors.append("site.json: missing auth block (student access flow)")
@@ -2247,37 +2276,37 @@ except Exception as e:
     errors.append(f"site.json: auth validation failed: {e}")
 
 for page in PAGES:
-    html = (ROOT / page).read_text(encoding="utf-8")
+    html = read_audit_source(ROOT / page, encoding="utf-8")
     if 'assets/js/auth.js' not in html:
         errors.append(f"{page}: missing auth.js script tag")
     elif html.find("assets/js/auth.js") < html.find("assets/js/core.js"):
         errors.append(f"{page}: auth.js must load after core.js")
 
-auth_js = (ROOT / "assets/js/auth.js").read_text(encoding="utf-8")
+auth_js = read_audit_source(ROOT / "assets/js/auth.js", encoding="utf-8")
 for marker in ("Continue with Google", 'aria-modal="true"', "syncResult", "fetchScores"):
     if marker not in auth_js:
         errors.append(f"auth.js: missing required marker {marker!r}")
 if "ACCOUNT_PAGE_RX" not in auth_js or "QUIZ_PAGE_RX" not in auth_js:
     errors.append("auth.js: no per-page gate - anonymous-first must keep "
                   "progress/leaderboard behind sign-in while quizzes stay open")
-if "HOA.auth.ensure" not in (ROOT / "assets/js/mock.js").read_text(encoding="utf-8"):
+if "HOA.auth.ensure" not in read_audit_source(ROOT / "assets/js/mock.js", encoding="utf-8"):
     errors.append("mock.js: mock-test start is not gated by HOA.auth.ensure")
-if "cloudEnabled" not in (ROOT / "assets/js/leaderboard.js").read_text(encoding="utf-8"):
+if "cloudEnabled" not in read_audit_source(ROOT / "assets/js/leaderboard.js", encoding="utf-8"):
     errors.append("leaderboard.js: no global-board (cloud) rendering path")
 
-result_html = (ROOT / "result.html").read_text(encoding="utf-8")
+result_html = read_audit_source(ROOT / "result.html", encoding="utf-8")
 for marker in ("View Dashboard", 'href="progress.html"', "Attempt Another Set"):
     if marker not in result_html:
         errors.append(f"result.html: missing quiz-result action {marker!r}")
 
-progress_html = (ROOT / "progress.html").read_text(encoding="utf-8")
+progress_html = read_audit_source(ROOT / "progress.html", encoding="utf-8")
 if 'id="authAccount"' not in progress_html:
     errors.append("progress.html: missing #authAccount container")
-if 'id="authChip"' not in (ROOT / "assets/js" / "core.js").read_text(encoding="utf-8"):
+if 'id="authChip"' not in read_audit_source(ROOT / "assets/js" / "core.js", encoding="utf-8"):
     errors.append("core.js: missing #authChip account chip in header chrome")
 
 rules_path = ROOT / "firestore.rules"
-if not rules_path.exists() or "leaderboard" not in rules_path.read_text(encoding="utf-8"):
+if not rules_path.exists() or "leaderboard" not in read_audit_source(rules_path, encoding="utf-8"):
     errors.append("firestore.rules: missing or incomplete (Firestore security rules)")
 
 notes.append("access: anonymous-first Google sign-in (site.auth) - quizzes and notes public, progress + leaderboard gated, auth.js on all pages, Firestore rules + result Dashboard/Attempt actions")
@@ -2285,7 +2314,7 @@ notes.append("access: anonymous-first Google sign-in (site.auth) - quizzes and n
 # --- telegram growth & student conversion system ---------------------------
 # Presence-only checks: the flow must never force a join, block a quiz or
 # hide a result — quiz attempt pages carry no rotator and no exit popup.
-idx_html = (ROOT / "index.html").read_text(encoding="utf-8")
+idx_html = read_audit_source(ROOT / "index.html", encoding="utf-8")
 for marker in (
     "Prepare Smarter", "Join Telegram", "Start Free Expected MCQs",
     "Learn from Someone Who Cleared the Exam", "Gurpreet Singh",
@@ -2298,7 +2327,7 @@ for marker in (
 if idx_html.count('href="https://t.me/HouseOfAspirant"') < 3:
     errors.append("index.html: expected >=3 Telegram entry points")
 
-core_js = (ROOT / "assets/js" / "core.js").read_text(encoding="utf-8")
+core_js = read_audit_source(ROOT / "assets/js" / "core.js", encoding="utf-8")
 for marker in (
     "TG_BANNERS", "initTgRotators", "initExitIntent", "hoa_exit_intent",
     "tg-float", "data-tg-rotator", "Join thousands of aspirants",
@@ -2307,7 +2336,7 @@ for marker in (
     if marker not in core_js:
         errors.append(f"core.js: missing Telegram growth marker {marker!r}")
 
-quiz_js = (ROOT / "assets/js" / "quiz.js").read_text(encoding="utf-8")
+quiz_js = read_audit_source(ROOT / "assets/js" / "quiz.js", encoding="utf-8")
 for marker in ("Continue to Result", "Congratulations", "completion-overlay"):
     if marker not in quiz_js:
         errors.append(f"quiz.js: missing completion-screen marker {marker!r}")
@@ -2318,18 +2347,18 @@ for page, markers in (
     ("articles.html", ("tg-lock-grid", "Premium Resources")),
     ("result.html", ("data-tg-rotator",)),
 ):
-    text = (ROOT / page).read_text(encoding="utf-8")
+    text = read_audit_source(ROOT / page, encoding="utf-8")
     for marker in markers:
         if marker not in text:
             errors.append(f"{page}: missing Telegram growth marker {marker!r}")
 
 rot_slots = sum(
-    (ROOT / page).read_text(encoding="utf-8").count("data-tg-rotator")
+    read_audit_source(ROOT / page, encoding="utf-8").count("data-tg-rotator")
     for page in PAGES
 )
 if rot_slots < 8:
     errors.append(f"rotating Telegram banners: expected >=8 slots, found {rot_slots}")
-if "data-tg-rotator" in (ROOT / "quiz.html").read_text(encoding="utf-8"):
+if "data-tg-rotator" in read_audit_source(ROOT / "quiz.html", encoding="utf-8"):
     errors.append("quiz.html: rotating banners must not appear on the quiz attempt")
 
 notes.append(
