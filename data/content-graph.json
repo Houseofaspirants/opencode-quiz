@@ -21,9 +21,9 @@
  },
  "counts": {
   "nodes": 575,
-  "edges": 3374,
+  "edges": 3386,
   "silos": 35,
-  "clusters": 82,
+  "clusters": 96,
   "pillars": 34
  },
  "nodes": [
@@ -19281,7 +19281,7 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19413,6 +19413,12 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -19455,7 +19461,7 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19671,7 +19677,7 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19881,7 +19887,7 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20085,7 +20091,7 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20277,7 +20283,7 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20439,6 +20445,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -20493,7 +20505,7 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20655,6 +20667,12 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -20697,7 +20715,7 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20853,6 +20871,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -20907,7 +20931,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21051,6 +21075,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21117,7 +21147,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21267,6 +21297,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21327,7 +21363,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24399,7 +24435,7 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24513,6 +24549,12 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -24561,7 +24603,7 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24759,7 +24801,7 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24951,7 +24993,7 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25143,7 +25185,7 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25317,7 +25359,7 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25455,6 +25497,12 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
@@ -25509,7 +25557,7 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25647,6 +25695,12 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -25695,7 +25749,7 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25845,6 +25899,12 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -25905,7 +25965,7 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26037,6 +26097,12 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26091,7 +26157,7 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26229,6 +26295,12 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26283,7 +26355,7 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27995,6 +28067,20 @@
     "category-gk-punjab-gk.html",
     "category-gk-punjab-literature.html",
     "category-gk-science-technology.html",
+    "quiz.html?subject=gk&topic=baba-banda-singh-bahadur-punjabi-set",
+    "quiz.html?subject=gk&topic=dal-khalsa-punjabi-set",
+    "quiz.html?subject=gk&topic=five-takhts-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-amar-das-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-angad-dev-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-arjan-dev-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-gobind-singh-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-granth-sahib-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-har-krishan-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-har-rai-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-hargobind-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-nanak-dev-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-ram-das-ji-punjabi-set",
+    "quiz.html?subject=gk&topic=guru-teg-bahadur-ji-punjabi-set",
     "topic-gk-baba-banda-singh-bahadur.html",
     "topic-gk-dal-khalsa.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
