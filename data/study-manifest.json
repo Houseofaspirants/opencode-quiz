@@ -630,20 +630,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 30,
+      "count": 29,
       "newest": "2026-10-03",
-      "totalSize": 57484735,
-      "chapters": 10,
+      "totalSize": 54037782,
+      "chapters": 9,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 30,
-          "chapters": 10,
-          "pages": 247,
-          "totalSize": 57484735,
+          "files": 29,
+          "chapters": 9,
+          "pages": 231,
+          "totalSize": 54037782,
           "newest": "2026-10-03",
           "categories": 12,
           "regions": 2
@@ -1219,10 +1219,10 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 8,
-              "chapters": 7,
-              "pages": 71,
-              "totalSize": 17949389,
+              "files": 7,
+              "chapters": 6,
+              "pages": 55,
+              "totalSize": 14502436,
               "newest": "2026-10-01",
               "categories": 6
             },
@@ -1235,10 +1235,10 @@
                   "history-of-punjab"
                 ],
                 "stats": {
-                  "files": 2,
-                  "chapters": 2,
-                  "pages": 31,
-                  "totalSize": 6895715,
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 15,
+                  "totalSize": 3448762,
                   "newest": "2026-10-01"
                 },
                 "languages": [
@@ -1267,20 +1267,8 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 1,
-                    "chapters": [
-                      {
-                        "id": "sikhism ",
-                        "name": "Sikhism",
-                        "parts": [
-                          {
-                            "file": "material-sikhism-en.html",
-                            "n": 1
-                          }
-                        ],
-                        "pages": 16
-                      }
-                    ]
+                    "count": 0,
+                    "chapters": []
                   }
                 ],
                 "subCategories": [],
@@ -1855,9 +1843,9 @@
       "color": "#f59e0b",
       "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past.",
       "order": 14,
-      "count": 2,
+      "count": 1,
       "newest": "2026-10-01",
-      "totalSize": 6895715,
+      "totalSize": 3448762,
       "languages": [
         {
           "id": "pa",
@@ -1884,23 +1872,11 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
-          "chapters": [
-            {
-              "id": "sikhism ",
-              "name": "Sikhism",
-              "parts": [
-                {
-                  "file": "material-sikhism-en.html",
-                  "n": 1
-                }
-              ],
-              "pages": 16
-            }
-          ]
+          "count": 0,
+          "chapters": []
         }
       ],
-      "chapters": 2,
+      "chapters": 1,
       "hidden": true
     },
     {
@@ -2129,6 +2105,6 @@
       "hidden": true
     }
   ],
-  "total": 71,
+  "total": 70,
   "generatedBy": "scripts/study_material.py"
 }

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 538,
-  "edges": 3188,
+  "nodes": 535,
+  "edges": 3172,
   "silos": 35,
   "clusters": 72,
   "pillars": 34
@@ -2096,18 +2096,6 @@
   {
    "id": "content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
    "url": "/content/study-material/history-of-punjab/Punjabi%20/Sikhism-pa.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
-   "url": "/content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4662,30 +4650,6 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-sikhism-en",
-   "url": "/material-sikhism-en",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-sikhism-en.html",
-   "url": "/material-sikhism-en.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Sikhism (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
    "id": "material-sikhism-pa",
    "url": "/material-sikhism-pa",
    "type": "document",
@@ -7173,12 +7137,6 @@
   },
   {
    "from": "archive-category-history-of-punjab.html",
-   "to": "material-sikhism-en.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-history-of-punjab.html",
    "to": "material-sikhism-pa.html",
    "rel": "contextual",
    "weight": 1
@@ -9592,12 +9550,6 @@
   {
    "from": "archives.html",
    "to": "material-shudh-ashudh.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-sikhism-en.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16634,96 +16586,6 @@
    "weight": 1
   },
   {
-   "from": "material-sikhism-en.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "material-sikhism-en",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "study.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "material-computer-en-ch01.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "material-computer-en-ch02.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-sikhism-en.html",
-   "to": "material-sikhism-pa.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
    "from": "material-sikhism-pa.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16773,6 +16635,12 @@
   },
   {
    "from": "material-sikhism-pa.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -16791,7 +16659,19 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "study.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-sikhism-pa.html",
+   "to": "material-part-2-english-en.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -16809,7 +16689,7 @@
   },
   {
    "from": "material-sikhism-pa.html",
-   "to": "material-sikhism-en.html",
+   "to": "material-computer-en-ch03.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25155,12 +25035,6 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/history-of-punjab/english%20/sikhism%20/sikhism-en.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "content/study-material/history/english/arrival-of-europeans/part%203%20%28english%29.pdf",
    "rel": "contextual",
    "weight": 1
@@ -25810,12 +25684,6 @@
   {
    "from": "study-material.html",
    "to": "material-shudh-ashudh.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-sikhism-en.html",
    "rel": "contextual",
    "weight": 1
   },
