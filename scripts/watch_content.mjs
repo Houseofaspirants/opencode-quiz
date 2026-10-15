@@ -142,19 +142,47 @@ function run(cmd, args, { echo = true } = {}) {
     const child = spawn(cmd, args, {
       cwd: ROOT,
       env: process.env,
-      stdio: echo ? "inherit" : ["ignore", "pipe", "pipe"],
+      stdio: ["ignore", "pipe", "pipe"],
     });
+    // Always captured, so a failed publish can say *why* in a notification;
+    // `echo` additionally streams it to the log as it happens.
     let out = "";
-    if (!echo) {
-      child.stdout?.on("data", (chunk) => (out += chunk));
-      child.stderr?.on("data", (chunk) => (out += chunk));
-    }
+    const take = (stream) => (chunk) => {
+      out += chunk;
+      if (echo) stream.write(chunk);
+    };
+    child.stdout?.on("data", take(process.stdout));
+    child.stderr?.on("data", take(process.stderr));
     child.on("error", (err) => resolveRun({ code: 127, ok: false, out: `${out}${err.message}` }));
     child.on("close", (code) => resolveRun({ code: code ?? 1, ok: code === 0, out }));
   });
 }
 
 const sleep = (ms) => new Promise((resolveSleep) => setTimeout(resolveSleep, ms));
+
+/**
+ * A failed build leaves the live site on its previous deployment, so a silent
+ * failure looks exactly like "my change never showed up". Raise a macOS
+ * notification with the first error line — once per distinct error, so the
+ * 60 s retry loop does not repeat the same alert.
+ */
+let lastAlert = "";
+function alertFailure(output) {
+  const lines = output.split("\n").map((l) => l.trim()).filter(Boolean);
+  const reason =
+    lines.find((l) => l.startsWith("❌")) ||
+    lines.find((l) => /error|FAIL/i.test(l)) ||
+    lines.at(-1) ||
+    "unknown error";
+  const msg = reason.replace(/^❌\s*/, "").replace(/^.*\/content\//, "content/").slice(0, 220);
+  if (msg === lastAlert) return;
+  lastAlert = msg;
+  if (process.platform !== "darwin") return;
+  const q = (s) => JSON.stringify(s);
+  spawn("osascript", ["-e",
+    `display notification ${q(msg)} with title "Publish FAILED - website not updated" sound name "Basso"`,
+  ], { stdio: "ignore" }).on("error", () => {});
+}
 
 // A single dropped connection must not leave a finished build unpublished, so
 // the push retries with backoff. Authentication failures are never retried:
@@ -196,8 +224,10 @@ async function publishCycle() {
     if (!build.ok) {
       failed = true;
       say(`✗ Publish failed (exit ${build.code}) — nothing was committed, still watching`);
+      alertFailure(build.out);
       return;
     }
+    lastAlert = "";
     say("✓ Build successful");
 
     // Anything the build itself did not commit (edits made outside it) still
