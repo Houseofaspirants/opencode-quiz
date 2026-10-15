@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A hardware device that receives processed data from a computer and presents it to the user in a meaningful form is called:",
+    "options": [
+      "Input device",
+      "Storage device",
+      "Output device",
+      "Pointing device"
+    ],
+    "answer": 2,
+    "explanation": "An output device receives processed data from the computer and presents it as text, images, audio, video or printed documents.",
+    "tags": [
+      "Output Devices",
+      "Definition"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which of the following is an example of an output device?",
+    "options": [
+      "Projector",
+      "Keyboard",
+      "Mouse",
+      "Scanner"
+    ],
+    "answer": 0,
+    "explanation": "Monitor, Printer, Projector, Speakers and Plotter are examples of output devices.",
+    "tags": [
+      "Output Devices",
+      "Examples"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In the Input → Processing → Output cycle, which component performs the processing?",
+    "options": [
+      "Monitor",
+      "Keyboard",
+      "Printer",
+      "CPU"
+    ],
+    "answer": 3,
+    "explanation": "In the cycle, data goes from the input device to the CPU (processing) and then to the output device.",
+    "tags": [
+      "Output Devices",
+      "Input-Processing-Output Cycle"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which is the primary (most common) output device of a computer?",
+    "options": [
+      "Printer",
+      "Monitor",
+      "Speaker",
+      "Plotter"
+    ],
+    "answer": 1,
+    "explanation": "A Monitor is the primary and most common output device of a computer.",
+    "tags": [
+      "Output Devices",
+      "Monitor"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A monitor is also known as:",
+    "options": [
+      "Visual Display Unit (VDU)",
+      "Video Data Unit (VDU)",
+      "Visual Data Unit (VDU)",
+      "Virtual Display Unit (VDU)"
+    ],
+    "answer": 0,
+    "explanation": "Monitor is also called the Visual Display Unit (VDU).",
+    "tags": [
+      "Output Devices",
+      "Monitor"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "CRT stands for:",
+    "options": [
+      "Cathode Radiation Tube",
+      "Colour Ray Tube",
+      "Central Ray Tube",
+      "Cathode Ray Tube"
+    ],
+    "answer": 3,
+    "explanation": "CRT stands for Cathode Ray Tube.",
+    "tags": [
+      "Output Devices",
+      "CRT Monitor"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In a CRT monitor, which part generates the electron beams?",
+    "options": [
+      "Deflection Plate",
+      "Electron Gun",
+      "Face Plate",
+      "Glass Envelope"
+    ],
+    "answer": 1,
+    "explanation": "In a CRT, an electron gun generates electron beams that strike the phosphor-coated screen.",
+    "tags": [
+      "Output Devices",
+      "CRT Monitor"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In a CRT monitor, phosphor dots of which colours glow to create images?",
+    "options": [
+      "Red, Yellow and Blue",
+      "Red, Green and Blue",
+      "Cyan, Magenta and Yellow",
+      "Black, White and Grey"
+    ],
+    "answer": 1,
+    "explanation": "Red, Green and Blue (RGB) phosphor dots glow to create images on a CRT screen.",
+    "tags": [
+      "Output Devices",
+      "CRT Monitor"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "Which of the following is NOT one of the main components of a CRT monitor?",
+    "options": [
+      "Liquid Crystal Layer",
+      "Electron Gun",
+      "Deflection Plate",
+      "Fluorescent Screen"
+    ],
+    "answer": 0,
+    "explanation": "Main components of a CRT are Electron Gun, Deflection Plate, Fluorescent Screen, Glass Envelope and Face Plate; liquid crystals belong to LCD.",
+    "tags": [
+      "Output Devices",
+      "CRT Monitor"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "LCD stands for:",
+    "options": [
+      "Light Crystal Display",
+      "Liquid Colour Display",
+      "Laser Crystal Display",
+      "Liquid Crystal Display"
+    ],
+    "answer": 3,
+    "explanation": "LCD stands for Liquid Crystal Display.",
+    "tags": [
+      "Output Devices",
+      "LCD Monitor"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "An LCD is a flat-panel display that uses liquid crystals between two layers of:",
+    "options": [
+      "Polarized glass",
+      "Phosphor-coated glass",
+      "Metal plates",
+      "Mercury cells"
+    ],
+    "answer": 0,
+    "explanation": "LCD uses liquid crystals placed between two layers of polarized glass.",
+    "tags": [
+      "Output Devices",
+      "LCD Monitor"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In an LCD monitor, what aligns the liquid crystals?",
+    "options": [
+      "Electron beam",
+      "Ultraviolet light",
+      "Electric current",
+      "Laser beam"
+    ],
+    "answer": 2,
+    "explanation": "In LCD, electric current aligns the liquid crystals, which control the light passing through the screen.",
+    "tags": [
+      "Output Devices",
+      "LCD Monitor"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "LED monitors are improved versions of which monitors?",
+    "options": [
+      "LCD monitors",
+      "CRT monitors",
+      "Plasma monitors",
+      "DLP monitors"
+    ],
+    "answer": 0,
+    "explanation": "LED monitors are improved versions of LCD monitors (LED is an advanced LCD).",
+    "tags": [
+      "Output Devices",
+      "LED Monitor"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "According to the LCD vs LED comparison, an LCD monitor uses which type of backlight?",
+    "options": [
+      "LED backlight",
+      "CCFL backlight",
+      "Plasma backlight",
+      "Laser backlight"
+    ],
+    "answer": 1,
+    "explanation": "LCD uses a CCFL backlight, while LED uses an LED backlight.",
+    "tags": [
+      "Output Devices",
+      "LCD vs LED"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Compared to an LCD monitor, an LED monitor has:",
+    "options": [
+      "Higher power consumption and less brightness",
+      "Higher power consumption and more brightness",
+      "Lower power consumption and less brightness",
+      "Lower power consumption and more brightness"
+    ],
+    "answer": 3,
+    "explanation": "LED monitors have lower power consumption and more brightness than LCD monitors.",
+    "tags": [
+      "Output Devices",
+      "LCD vs LED"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "A Plasma monitor uses small cells filled with:",
+    "options": [
+      "Liquid crystals",
+      "Powdered toner",
+      "Noble gases and mercury",
+      "Liquid ink"
+    ],
+    "answer": 2,
+    "explanation": "A Plasma Monitor uses small cells filled with noble gases and mercury.",
+    "tags": [
+      "Output Devices",
+      "Plasma Monitor"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "A Plasma display uses:",
+    "options": [
+      "Liquid crystals",
+      "Electron beams",
+      "Ionized gas (plasma)",
+      "Tiny mirrors"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: Plasma Display uses ionized gas (plasma).",
+    "tags": [
+      "Output Devices",
+      "Plasma Monitor"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "In a Plasma monitor, the plasma emits which type of light that creates images on the screen?",
+    "options": [
+      "Infrared light",
+      "Ultraviolet light",
+      "Laser light",
+      "Polarized light"
+    ],
+    "answer": 1,
+    "explanation": "Electric voltage converts gas into plasma, plasma emits ultraviolet light, and UV light creates images.",
+    "tags": [
+      "Output Devices",
+      "Plasma Monitor"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Plasma monitors are mainly used for:",
+    "options": [
+      "Home theatres and large-screen displays",
+      "Smartphones",
+      "Tablets",
+      "Laptops"
+    ],
+    "answer": 0,
+    "explanation": "Plasma monitors are used in home theatres, sports viewing and large-screen displays.",
+    "tags": [
+      "Output Devices",
+      "Plasma Monitor"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "In the comparison of monitors, which monitor is large in size and heavy in weight?",
+    "options": [
+      "LCD",
+      "LED",
+      "Plasma",
+      "CRT"
+    ],
+    "answer": 3,
+    "explanation": "The comparison table lists CRT as Large in size and Heavy in weight.",
+    "tags": [
+      "Output Devices",
+      "Comparison of Monitors"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Hard",
+    "question": "According to the comparison table, which two monitors have HIGH power consumption?",
+    "options": [
+      "CRT and Plasma",
+      "LCD and LED",
+      "CRT and LCD",
+      "LED and Plasma"
+    ],
+    "answer": 0,
+    "explanation": "Power consumption: CRT – High, LCD – Medium, LED – Low, Plasma – High.",
+    "tags": [
+      "Output Devices",
+      "Comparison of Monitors"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "Which monitor is described as 'Very Thin' and 'Very Light' with 'Low' power consumption?",
+    "options": [
+      "CRT",
+      "LCD",
+      "LED",
+      "Plasma"
+    ],
+    "answer": 2,
+    "explanation": "In the comparison table, LED is Very Thin, Very Light and has Low power consumption.",
+    "tags": [
+      "Output Devices",
+      "Comparison of Monitors"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "Which output device projects images, videos and presentations onto a large screen or wall?",
+    "options": [
+      "Plotter",
+      "Monitor",
+      "Speaker",
+      "Projector"
+    ],
+    "answer": 3,
+    "explanation": "A Projector projects images, videos and presentations onto a large screen or wall.",
+    "tags": [
+      "Output Devices",
+      "Projector"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Easy",
+    "question": "In DLP Projector, DLP stands for:",
+    "options": [
+      "Digital Laser Projection",
+      "Direct Light Processing",
+      "Digital Light Processing",
+      "Digital Liquid Panel"
+    ],
+    "answer": 2,
+    "explanation": "DLP stands for Digital Light Processing.",
+    "tags": [
+      "Output Devices",
+      "Projector"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 1",
+    "difficulty": "Medium",
+    "question": "A DLP projector works by using:",
+    "options": [
+      "Liquid crystal display technology",
+      "Thousands of tiny mirrors",
+      "An electron gun",
+      "Cells filled with noble gases"
+    ],
+    "answer": 1,
+    "explanation": "A DLP projector uses thousands of tiny mirrors and is widely used in theatres.",
+    "tags": [
+      "Output Devices",
+      "Projector"
+    ]
+  }
+]

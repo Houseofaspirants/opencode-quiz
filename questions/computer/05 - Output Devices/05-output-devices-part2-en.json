@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "A printer produces which type of output?",
+    "options": [
+      "Soft copy",
+      "Hard copy (permanent copy on paper)",
+      "Audio output",
+      "Projected output"
+    ],
+    "answer": 1,
+    "explanation": "A Printer produces a permanent copy of information on paper, i.e. hard copy.",
+    "tags": [
+      "Output Devices",
+      "Printer"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Impact printers print by:",
+    "options": [
+      "Spraying tiny droplets of liquid ink",
+      "Striking an ink ribbon against paper",
+      "Using a laser and powdered toner",
+      "Using electrostatic charge"
+    ],
+    "answer": 1,
+    "explanation": "Impact printers print by striking an ink ribbon against paper.",
+    "tags": [
+      "Output Devices",
+      "Impact Printer"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following is a characteristic of impact printers?",
+    "options": [
+      "They operate quietly",
+      "They give high print quality",
+      "They have no contact with paper",
+      "They can print carbon copies"
+    ],
+    "answer": 3,
+    "explanation": "Impact printers are noisy, have low print quality and can print carbon copies.",
+    "tags": [
+      "Output Devices",
+      "Impact Printer"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "The speed of character printers, which print one character at a time, is measured in:",
+    "options": [
+      "LPM (Lines Per Minute)",
+      "PPM (Pages Per Minute)",
+      "DPI (Dots Per Inch)",
+      "CPS (Characters Per Second)"
+    ],
+    "answer": 3,
+    "explanation": "Character printers print one character at a time; their unit is Characters Per Second (CPS).",
+    "tags": [
+      "Output Devices",
+      "Character Printers"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which of the following is an impact printer?",
+    "options": [
+      "Laser Printer",
+      "Dot Matrix Printer",
+      "Inkjet Printer",
+      "Electrostatic Plotter"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: Dot Matrix = Impact Printer.",
+    "tags": [
+      "Output Devices",
+      "Dot Matrix Printer"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "A Dot Matrix printer creates characters using:",
+    "options": [
+      "Tiny nozzles that spray ink",
+      "A rotating drum of characters",
+      "Pins in a print head that form dots",
+      "A flower-shaped wheel"
+    ],
+    "answer": 2,
+    "explanation": "Dot Matrix printer uses pins in a print head to create characters using dots.",
+    "tags": [
+      "Output Devices",
+      "Dot Matrix Printer"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "What is the approximate speed of a Dot Matrix printer?",
+    "options": [
+      "25–50 CPS",
+      "200–500 CPS",
+      "500–3000 LPM",
+      "600 DPI"
+    ],
+    "answer": 1,
+    "explanation": "Dot Matrix printer speed is approximately 200–500 CPS.",
+    "tags": [
+      "Output Devices",
+      "Dot Matrix Printer"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Who is credited as the inventor of the Daisy Wheel printer?",
+    "options": [
+      "Charles Babbage",
+      "David S. Lee",
+      "Douglas Engelbart",
+      "Chester Carlson"
+    ],
+    "answer": 1,
+    "explanation": "The Daisy Wheel printer was invented by David S. Lee.",
+    "tags": [
+      "Output Devices",
+      "Daisy Wheel Printer"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which printer uses a flower-shaped wheel, prints only text and cannot print graphics?",
+    "options": [
+      "Dot Matrix Printer",
+      "Laser Printer",
+      "Inkjet Printer",
+      "Daisy Wheel Printer"
+    ],
+    "answer": 3,
+    "explanation": "Daisy Wheel printer uses a daisy-shaped wheel, prints only text, cannot print graphics and is very slow.",
+    "tags": [
+      "Output Devices",
+      "Daisy Wheel Printer"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "What is the speed of a Daisy Wheel printer?",
+    "options": [
+      "25–50 CPS",
+      "200–500 CPS",
+      "500–3000 CPS",
+      "300 CPS"
+    ],
+    "answer": 0,
+    "explanation": "Daisy Wheel printer speed is 25–50 CPS, which makes it very slow.",
+    "tags": [
+      "Output Devices",
+      "Daisy Wheel Printer"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Line printers print:",
+    "options": [
+      "One character at a time",
+      "One dot at a time",
+      "One complete line at a time",
+      "Only graphics"
+    ],
+    "answer": 2,
+    "explanation": "Line printers print one complete line at a time.",
+    "tags": [
+      "Output Devices",
+      "Line Printers"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "What is the speed range of line printers?",
+    "options": [
+      "25–50 LPM",
+      "200–500 LPM",
+      "500–3000 LPM",
+      "5000–9000 LPM"
+    ],
+    "answer": 2,
+    "explanation": "Line printers have a speed of 500–3000 Lines Per Minute (LPM).",
+    "tags": [
+      "Output Devices",
+      "Line Printers"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a type of line printer?",
+    "options": [
+      "Daisy Wheel Printer",
+      "Drum Printer",
+      "Chain Printer",
+      "Band Printer"
+    ],
+    "answer": 0,
+    "explanation": "Types of line printers are Drum, Chain and Band printers; Daisy Wheel is a character printer.",
+    "tags": [
+      "Output Devices",
+      "Line Printers"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which printer uses a rotating chain with embossed characters?",
+    "options": [
+      "Chain Printer",
+      "Drum Printer",
+      "Daisy Wheel Printer",
+      "Dot Matrix Printer"
+    ],
+    "answer": 0,
+    "explanation": "A Chain Printer uses a rotating chain with embossed characters; a Drum Printer uses a rotating drum.",
+    "tags": [
+      "Output Devices",
+      "Line Printers"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which of the following is a characteristic of non-impact printers?",
+    "options": [
+      "Very noisy operation",
+      "Low-quality output",
+      "Quiet operation",
+      "Slower than impact printers"
+    ],
+    "answer": 2,
+    "explanation": "Non-impact printers have quiet operation, high-quality output and are faster than impact printers.",
+    "tags": [
+      "Output Devices",
+      "Non-Impact Printer"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "The speed of non-impact printers is measured in:",
+    "options": [
+      "CPS (Characters Per Second)",
+      "LPM (Lines Per Minute)",
+      "RPM (Rotations Per Minute)",
+      "PPM (Pages Per Minute)"
+    ],
+    "answer": 3,
+    "explanation": "The unit for non-impact printers is Pages Per Minute (PPM).",
+    "tags": [
+      "Output Devices",
+      "Non-Impact Printer"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "A Laser printer uses:",
+    "options": [
+      "Liquid ink",
+      "Ink ribbon",
+      "Toner",
+      "Pens"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: Laser Printer uses Toner, not Ink.",
+    "tags": [
+      "Output Devices",
+      "Laser Printer"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "What is the resolution of a Laser printer as given in the chapter?",
+    "options": [
+      "600 DPI or more",
+      "At least 300 DPI",
+      "200–500 DPI",
+      "25–50 DPI"
+    ],
+    "answer": 0,
+    "explanation": "Laser printer resolution is 600 DPI (Dots per Inch) or more; inkjet is at least 300 DPI.",
+    "tags": [
+      "Output Devices",
+      "Laser Printer"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which printer prints by spraying tiny droplets of liquid ink through nozzles?",
+    "options": [
+      "Inkjet Printer",
+      "Laser Printer",
+      "Dot Matrix Printer",
+      "Drum Printer"
+    ],
+    "answer": 0,
+    "explanation": "An Inkjet printer uses tiny nozzles to spray droplets of liquid ink on paper.",
+    "tags": [
+      "Output Devices",
+      "Inkjet Printer"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Speakers convert electrical signals into:",
+    "options": [
+      "Images",
+      "Printed text",
+      "Digital data",
+      "Sound"
+    ],
+    "answer": 3,
+    "explanation": "Speakers convert electrical signals into sound; Speaker = Audio Output Device.",
+    "tags": [
+      "Output Devices",
+      "Speakers"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Easy",
+    "question": "Which output device is specially used for engineering drawings and CAD applications?",
+    "options": [
+      "Plotter",
+      "Speaker",
+      "Dot Matrix Printer",
+      "Projector"
+    ],
+    "answer": 0,
+    "explanation": "A Plotter produces high-quality graphics and engineering drawings and is used for CAD.",
+    "tags": [
+      "Output Devices",
+      "Plotter"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Compared with a printer, a plotter is:",
+    "options": [
+      "Less accurate and used for small-size printing",
+      "Highly accurate and used for small-size printing",
+      "Highly accurate and used for large-size printing",
+      "Less accurate and used for large-size printing"
+    ],
+    "answer": 2,
+    "explanation": "A plotter draws precise graphics, does large-size printing and is highly accurate.",
+    "tags": [
+      "Output Devices",
+      "Printer vs Plotter"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "A Cutting Plotter is also called:",
+    "options": [
+      "Pen Plotter",
+      "Vinyl Cutter",
+      "Laser Plotter",
+      "Drum Cutter"
+    ],
+    "answer": 1,
+    "explanation": "Cutting Plotter is also called Vinyl Cutter and is used for sign making, vehicle graphics and apparel design.",
+    "tags": [
+      "Output Devices",
+      "Types of Plotters"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Hard",
+    "question": "Which type of plotter uses electrostatic charge to attract toner?",
+    "options": [
+      "Pen Plotter",
+      "Inkjet Plotter",
+      "Cutting Plotter",
+      "Electrostatic Plotter"
+    ],
+    "answer": 3,
+    "explanation": "Electrostatic Plotter uses electrostatic charge to attract toner and gives high resolution.",
+    "tags": [
+      "Output Devices",
+      "Types of Plotters"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Output Devices - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following is an example of a soft copy?",
+    "options": [
+      "A PDF displayed on the screen",
+      "A printed PDF",
+      "A printed certificate",
+      "A printed photograph"
+    ],
+    "answer": 0,
+    "explanation": "Soft copy is in electronic form and displayed on a monitor, e.g. a PDF on screen; a printed PDF is hard copy.",
+    "tags": [
+      "Output Devices",
+      "Soft Copy vs Hard Copy"
+    ]
+  }
+]

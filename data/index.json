@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-14T13:54:01.613Z",
   "stats": {
     "subjects": 7,
-    "categories": 23,
-    "topics": 35,
-    "quizzes": 35,
-    "questions": 840,
+    "categories": 24,
+    "topics": 37,
+    "quizzes": 37,
+    "questions": 890,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1503,6 +1503,66 @@
             "pa": 25
           },
           "landing": "/quiz-computer-04-input-devices-part2"
+        },
+        {
+          "id": "05-output-devices-part1",
+          "name": "Output Devices - Part 1 - Part 1",
+          "description": "",
+          "file": "questions/computer/05 - Output Devices/05-output-devices-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792044138562,
+          "category": "05-output-devices",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/05 - Output Devices/05-output-devices-part1-en.json",
+            "pa": "questions/computer/05 - Output Devices/05-output-devices-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Output Devices - Part 1 - Part 1",
+            "pa": "Output Devices - Part 1 - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-05-output-devices-part1"
+        },
+        {
+          "id": "05-output-devices-part2",
+          "name": "Output Devices - Part 2 - Part 2",
+          "description": "",
+          "file": "questions/computer/05 - Output Devices/05-output-devices-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792044138562,
+          "category": "05-output-devices",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/05 - Output Devices/05-output-devices-part2-en.json",
+            "pa": "questions/computer/05 - Output Devices/05-output-devices-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Output Devices - Part 2 - Part 2",
+            "pa": "Output Devices - Part 2 - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-05-output-devices-part2"
         }
       ],
       "categories": [
@@ -1751,6 +1811,75 @@
             }
           ],
           "landing": "/category-computer-04-input-devices"
+        },
+        {
+          "id": "05-output-devices",
+          "name": "05   Output Devices",
+          "folder": "05 - Output Devices",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "05-output-devices-part1",
+              "name": "Output Devices - Part 1 - Part 1",
+              "description": "",
+              "file": "questions/computer/05 - Output Devices/05-output-devices-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792044138562,
+              "category": "05-output-devices",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/05 - Output Devices/05-output-devices-part1-en.json",
+                "pa": "questions/computer/05 - Output Devices/05-output-devices-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Output Devices - Part 1 - Part 1",
+                "pa": "Output Devices - Part 1 - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-05-output-devices-part1"
+            },
+            {
+              "id": "05-output-devices-part2",
+              "name": "Output Devices - Part 2 - Part 2",
+              "description": "",
+              "file": "questions/computer/05 - Output Devices/05-output-devices-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792044138562,
+              "category": "05-output-devices",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/05 - Output Devices/05-output-devices-part2-en.json",
+                "pa": "questions/computer/05 - Output Devices/05-output-devices-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Output Devices - Part 2 - Part 2",
+                "pa": "Output Devices - Part 2 - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-05-output-devices-part2"
+            }
+          ],
+          "landing": "/category-computer-05-output-devices"
         }
       ],
       "landing": "/subject-computer"
@@ -2296,6 +2425,14 @@
     "questions/computer/04 - Input Devices/04-input-devices-part2-en.json": [
       "baf6ef619b3c07fc",
       1791868947535
+    ],
+    "questions/computer/05 - Output Devices/05-output-devices-part1-en.json": [
+      "6c60bf69c5997951",
+      1792044138562
+    ],
+    "questions/computer/05 - Output Devices/05-output-devices-part2-en.json": [
+      "807e04fd37e8b308",
+      1792044138562
     ],
     "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
       "c81b46122364bc1c",
