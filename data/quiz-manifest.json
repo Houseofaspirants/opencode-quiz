@@ -2,6 +2,42 @@
   "version": 1,
   "topics": [
     {
+      "id": "baba-banda-singh-bahadur-mcq",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 35,
+      "counts": {
+        "en": 35
+      },
+      "titles": {
+        "en": "Baba Banda Singh Bahadur Mcq"
+      },
+      "variants": {
+        "en": "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json"
+      }
+    },
+    {
+      "id": "dal-khalsa-mcq",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 40,
+      "counts": {
+        "en": 40
+      },
+      "titles": {
+        "en": "Dal Khalsa Mcq"
+      },
+      "variants": {
+        "en": "questions/gk/punjab-gk/dal-khalsa-mcq.json"
+      }
+    },
+    {
       "id": "dpsp-fundamental-duties-part-1",
       "subject": "gk",
       "category": "polity",
@@ -175,6 +211,42 @@
       "variants": {
         "en": "questions/gk/punjab-gk/sikhism-part4-20-mcqs.json",
         "pa": "questions/gk/punjab-gk/sikhism-part4-20-mcqs-punjabi.json"
+      }
+    },
+    {
+      "id": "ਦਲ-ਖ਼ਾਲਸਾ-mcq",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "availableLanguages": [
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "pa": 25
+      },
+      "titles": {
+        "pa": "ਦਲ ਖ਼ਾਲਸਾ Mcq"
+      },
+      "variants": {
+        "pa": "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json"
+      }
+    },
+    {
+      "id": "ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq",
+      "subject": "gk",
+      "category": "punjab-gk",
+      "availableLanguages": [
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "pa": 25
+      },
+      "titles": {
+        "pa": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ Mcq"
+      },
+      "variants": {
+        "pa": "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json"
       }
     },
     {

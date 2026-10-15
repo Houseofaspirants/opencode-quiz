@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-14T13:54:01.613Z",
+  "generatedAt": "2026-10-15T09:45:19.749Z",
   "stats": {
     "subjects": 7,
     "categories": 24,
-    "topics": 37,
-    "quizzes": 37,
-    "questions": 890,
+    "topics": 41,
+    "quizzes": 41,
+    "questions": 1015,
     "studentsPracticed": 12500
   },
   "site": {
@@ -59,6 +59,58 @@
       "description": "History, Polity, Geography, Punjab GK, Science and more.",
       "order": 1,
       "topics": [
+        {
+          "id": "baba-banda-singh-bahadur-mcq",
+          "name": "Baba Banda Singh Bahadur Mcq",
+          "description": "",
+          "file": "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json",
+          "count": 35,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792057479167,
+          "category": "punjab-gk",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Baba Banda Singh Bahadur Mcq"
+          },
+          "counts": {
+            "en": 35
+          },
+          "landing": "/quiz-gk-baba-banda-singh-bahadur-mcq"
+        },
+        {
+          "id": "dal-khalsa-mcq",
+          "name": "Dal Khalsa Mcq",
+          "description": "",
+          "file": "questions/gk/punjab-gk/dal-khalsa-mcq.json",
+          "count": 40,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792057479167,
+          "category": "punjab-gk",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/punjab-gk/dal-khalsa-mcq.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "Dal Khalsa Mcq"
+          },
+          "counts": {
+            "en": 40
+          },
+          "landing": "/quiz-gk-dal-khalsa-mcq"
+        },
         {
           "id": "dpsp-fundamental-duties-part-1",
           "name": "DPSP & Fundamental Duties - Part 1",
@@ -298,6 +350,56 @@
             "pa": 25
           },
           "landing": "/quiz-gk-sikhism-part4-20-mcqs"
+        },
+        {
+          "id": "ਦਲ-ਖ਼ਾਲਸਾ-mcq",
+          "name": "ਦਲ ਖ਼ਾਲਸਾ Mcq",
+          "description": "",
+          "file": "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792057519577,
+          "category": "punjab-gk",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਦਲ ਖ਼ਾਲਸਾ Mcq"
+          },
+          "counts": {
+            "pa": 25
+          }
+        },
+        {
+          "id": "ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq",
+          "name": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ Mcq",
+          "description": "",
+          "file": "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792057519577,
+          "category": "punjab-gk",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ Mcq"
+          },
+          "counts": {
+            "pa": 25
+          }
         }
       ],
       "categories": [
@@ -495,6 +597,58 @@
           "icon": "📁",
           "topics": [
             {
+              "id": "baba-banda-singh-bahadur-mcq",
+              "name": "Baba Banda Singh Bahadur Mcq",
+              "description": "",
+              "file": "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json",
+              "count": 35,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792057479167,
+              "category": "punjab-gk",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Baba Banda Singh Bahadur Mcq"
+              },
+              "counts": {
+                "en": 35
+              },
+              "landing": "/quiz-gk-baba-banda-singh-bahadur-mcq"
+            },
+            {
+              "id": "dal-khalsa-mcq",
+              "name": "Dal Khalsa Mcq",
+              "description": "",
+              "file": "questions/gk/punjab-gk/dal-khalsa-mcq.json",
+              "count": 40,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792057479167,
+              "category": "punjab-gk",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/punjab-gk/dal-khalsa-mcq.json"
+              },
+              "availableLanguages": [
+                "en"
+              ],
+              "titles": {
+                "en": "Dal Khalsa Mcq"
+              },
+              "counts": {
+                "en": 40
+              },
+              "landing": "/quiz-gk-dal-khalsa-mcq"
+            },
+            {
               "id": "sikhism-part1-20-mcqs",
               "name": "Sikhism (Sikh Dharam) - Part 1",
               "description": "",
@@ -613,6 +767,56 @@
                 "pa": 25
               },
               "landing": "/quiz-gk-sikhism-part4-20-mcqs"
+            },
+            {
+              "id": "ਦਲ-ਖ਼ਾਲਸਾ-mcq",
+              "name": "ਦਲ ਖ਼ਾਲਸਾ Mcq",
+              "description": "",
+              "file": "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792057519577,
+              "category": "punjab-gk",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਦਲ ਖ਼ਾਲਸਾ Mcq"
+              },
+              "counts": {
+                "pa": 25
+              }
+            },
+            {
+              "id": "ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq",
+              "name": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ Mcq",
+              "description": "",
+              "file": "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792057519577,
+              "category": "punjab-gk",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ Mcq"
+              },
+              "counts": {
+                "pa": 25
+              }
             }
           ],
           "landing": "/category-gk-punjab-gk"
@@ -2498,6 +2702,14 @@
       "5050449425caa85f",
       1790926374843
     ],
+    "questions/gk/punjab-gk/baba-banda-singh-bahadur-mcq.json": [
+      "f808dfa514870d6d",
+      1792057479167
+    ],
+    "questions/gk/punjab-gk/dal-khalsa-mcq.json": [
+      "7f6f435ca1f7cfcd",
+      1792057479167
+    ],
     "questions/gk/punjab-gk/sikhism-part1-20-mcqs.json": [
       "52d70d2abc76f5ab",
       1790442325847
@@ -2513,6 +2725,14 @@
     "questions/gk/punjab-gk/sikhism-part4-20-mcqs.json": [
       "69bc2f7a456b81e1",
       1790442330237
+    ],
+    "questions/gk/punjab-gk/ਦਲ-ਖ਼ਾਲਸਾ-mcq.json": [
+      "bda564f1a5c1b13b",
+      1792057519577
+    ],
+    "questions/gk/punjab-gk/ਬਾਬਾ-ਬੰਦਾ-ਸਿੰਘ-ਬਹਾਦਰ-mcq.json": [
+      "d1f42b4108f3d482",
+      1792057519577
     ],
     "questions/reasoning/NUMBER SERIES/number-series-part-1.json": [
       "d95e5b916fbfeea9",
