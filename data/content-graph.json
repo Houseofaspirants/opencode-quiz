@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 537,
+  "nodes": 538,
   "edges": 3188,
   "silos": 35,
-  "clusters": 69,
+  "clusters": 72,
   "pillars": 34
  },
  "nodes": [
@@ -6045,6 +6045,18 @@
   {
    "id": "quiz-computer-04-input-devices-part1.html",
    "url": "/quiz-computer-04-input-devices-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-05-output-devices-part1.html",
+   "url": "/quiz-computer-05-output-devices-part1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -12519,7 +12531,7 @@
   },
   {
    "from": "material-computer-en-ch05.html",
-   "to": "quiz-computer-04-input-devices-part1.html",
+   "to": "quiz-computer-05-output-devices-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12969,7 +12981,7 @@
   },
   {
    "from": "material-computer-pa-ch05.html",
-   "to": "quiz-computer-04-input-devices-part1.html",
+   "to": "quiz-computer-05-output-devices-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26333,13 +26345,16 @@
     "category-computer-02-evolution-of-computers.html",
     "category-computer-03-generations-of-computers.html",
     "category-computer-04-input-devices.html",
+    "category-computer-05-output-devices.html",
     "topic-computer-01-fundamentals-of-computers-part1.html",
     "topic-computer-01-fundamentals-of-computers-part2.html",
     "topic-computer-02-evolution-of-computers-part1.html",
     "topic-computer-03-generations-of-computers-part1.html",
     "topic-computer-03-generations-of-computers-part2.html",
     "topic-computer-04-input-devices-part1.html",
-    "topic-computer-04-input-devices-part2.html"
+    "topic-computer-04-input-devices-part2.html",
+    "topic-computer-05-output-devices-part1.html",
+    "topic-computer-05-output-devices-part2.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
