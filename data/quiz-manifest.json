@@ -6,35 +6,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 35,
-      "counts": {
-        "en": 35
-      },
-      "titles": {
-        "en": "Baba Banda Singh Bahadur"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/baba-banda-singh-bahadur.json"
-      }
-    },
-    {
-      "id": "baba-banda-singh-bahadur-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 25,
+      "count": 40,
       "counts": {
-        "pa": 25
+        "en": 40,
+        "pa": 40
       },
       "titles": {
-        "pa": "Baba Banda Singh Bahadur Punjabi Set"
+        "en": "Baba Banda Singh Bahadur",
+        "pa": "ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/baba-banda-singh-bahadur-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/baba-banda-singh-bahadur.json",
+        "pa": "questions/gk/history-of-punjab/baba-banda-singh-bahadur.pa.json"
       }
     },
     {
@@ -42,35 +28,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 40,
-      "counts": {
-        "en": 40
-      },
-      "titles": {
-        "en": "Dal Khalsa"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/dal-khalsa.json"
-      }
-    },
-    {
-      "id": "dal-khalsa-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 25,
+      "count": 49,
       "counts": {
-        "pa": 25
+        "en": 49,
+        "pa": 49
       },
       "titles": {
-        "pa": "Dal Khalsa Punjabi Set"
+        "en": "Dal Khalsa",
+        "pa": "ਦਲ ਖ਼ਾਲਸਾ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/dal-khalsa-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/dal-khalsa.json",
+        "pa": "questions/gk/history-of-punjab/dal-khalsa.pa.json"
       }
     },
     {
@@ -144,35 +116,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 35,
-      "counts": {
-        "en": 35
-      },
-      "titles": {
-        "en": "Five Takhts"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/five-takhts.json"
-      }
-    },
-    {
-      "id": "five-takhts-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 25,
+      "count": 37,
       "counts": {
-        "pa": 25
+        "en": 37,
+        "pa": 37
       },
       "titles": {
-        "pa": "Five Takhts Punjabi Set"
+        "en": "Five Takhts",
+        "pa": "ਪੰਜ ਤਖ਼ਤ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/five-takhts-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/five-takhts.json",
+        "pa": "questions/gk/history-of-punjab/five-takhts.pa.json"
       }
     },
     {
@@ -202,35 +160,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Amar Das Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-amar-das-ji.json"
-      }
-    },
-    {
-      "id": "guru-amar-das-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 30,
       "counts": {
+        "en": 30,
         "pa": 30
       },
       "titles": {
-        "pa": "Guru Amar Das Ji Punjabi Set"
+        "en": "Guru Amar Das Ji",
+        "pa": "ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-amar-das-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-amar-das-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-amar-das-ji.pa.json"
       }
     },
     {
@@ -238,35 +182,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Angad Dev Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-angad-dev-ji.json"
-      }
-    },
-    {
-      "id": "guru-angad-dev-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 30,
       "counts": {
+        "en": 30,
         "pa": 30
       },
       "titles": {
-        "pa": "Guru Angad Dev Ji Punjabi Set"
+        "en": "Guru Angad Dev Ji",
+        "pa": "ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-angad-dev-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-angad-dev-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-angad-dev-ji.pa.json"
       }
     },
     {
@@ -274,35 +204,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 40,
-      "counts": {
-        "en": 40
-      },
-      "titles": {
-        "en": "Guru Arjan Dev Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-arjan-dev-ji.json"
-      }
-    },
-    {
-      "id": "guru-arjan-dev-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 40,
       "counts": {
+        "en": 40,
         "pa": 40
       },
       "titles": {
-        "pa": "Guru Arjan Dev Ji Punjabi Set"
+        "en": "Guru Arjan Dev Ji",
+        "pa": "ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-arjan-dev-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-arjan-dev-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-arjan-dev-ji.pa.json"
       }
     },
     {
@@ -310,35 +226,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 60,
-      "counts": {
-        "en": 60
-      },
-      "titles": {
-        "en": "Guru Gobind Singh Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-gobind-singh-ji.json"
-      }
-    },
-    {
-      "id": "guru-gobind-singh-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 60,
+      "count": 63,
       "counts": {
-        "pa": 60
+        "en": 63,
+        "pa": 63
       },
       "titles": {
-        "pa": "Guru Gobind Singh Ji Punjabi Set"
+        "en": "Guru Gobind Singh Ji",
+        "pa": "ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-gobind-singh-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-gobind-singh-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-gobind-singh-ji.pa.json"
       }
     },
     {
@@ -346,35 +248,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Granth Sahib Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-granth-sahib-ji.json"
-      }
-    },
-    {
-      "id": "guru-granth-sahib-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 25,
+      "count": 41,
       "counts": {
-        "pa": 25
+        "en": 41,
+        "pa": 41
       },
       "titles": {
-        "pa": "Guru Granth Sahib Ji Punjabi Set"
+        "en": "Guru Granth Sahib Ji",
+        "pa": "ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-granth-sahib-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-granth-sahib-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-granth-sahib-ji.pa.json"
       }
     },
     {
@@ -382,35 +270,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Har Krishan Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-har-krishan-ji.json"
-      }
-    },
-    {
-      "id": "guru-har-krishan-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 30,
       "counts": {
+        "en": 30,
         "pa": 30
       },
       "titles": {
-        "pa": "Guru Har Krishan Ji Punjabi Set"
+        "en": "Guru Har Krishan Ji",
+        "pa": "ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-har-krishan-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-har-krishan-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-har-krishan-ji.pa.json"
       }
     },
     {
@@ -418,35 +292,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Har Rai Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-har-rai-ji.json"
-      }
-    },
-    {
-      "id": "guru-har-rai-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 30,
       "counts": {
+        "en": 30,
         "pa": 30
       },
       "titles": {
-        "pa": "Guru Har Rai Ji Punjabi Set"
+        "en": "Guru Har Rai Ji",
+        "pa": "ਗੁਰੂ ਹਰਿ ਰਾਇ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-har-rai-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-har-rai-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-har-rai-ji.pa.json"
       }
     },
     {
@@ -454,35 +314,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 40,
-      "counts": {
-        "en": 40
-      },
-      "titles": {
-        "en": "Guru Hargobind Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-hargobind-ji.json"
-      }
-    },
-    {
-      "id": "guru-hargobind-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 40,
       "counts": {
+        "en": 40,
         "pa": 40
       },
       "titles": {
-        "pa": "Guru Hargobind Ji Punjabi Set"
+        "en": "Guru Hargobind Ji",
+        "pa": "ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-hargobind-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-hargobind-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-hargobind-ji.pa.json"
       }
     },
     {
@@ -490,35 +336,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 45,
-      "counts": {
-        "en": 45
-      },
-      "titles": {
-        "en": "Guru Nanak Dev Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-nanak-dev-ji.json"
-      }
-    },
-    {
-      "id": "guru-nanak-dev-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
-      "count": 40,
+      "count": 50,
       "counts": {
-        "pa": 40
+        "en": 50,
+        "pa": 50
       },
       "titles": {
-        "pa": "Guru Nanak Dev Ji Punjabi Set"
+        "en": "Guru Nanak Dev Ji",
+        "pa": "ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-nanak-dev-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-nanak-dev-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-nanak-dev-ji.pa.json"
       }
     },
     {
@@ -526,35 +358,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 30,
-      "counts": {
-        "en": 30
-      },
-      "titles": {
-        "en": "Guru Ram Das Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-ram-das-ji.json"
-      }
-    },
-    {
-      "id": "guru-ram-das-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 30,
       "counts": {
+        "en": 30,
         "pa": 30
       },
       "titles": {
-        "pa": "Guru Ram Das Ji Punjabi Set"
+        "en": "Guru Ram Das Ji",
+        "pa": "ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-ram-das-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-ram-das-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-ram-das-ji.pa.json"
       }
     },
     {
@@ -562,35 +380,21 @@
       "subject": "gk",
       "category": "history-of-punjab",
       "availableLanguages": [
-        "en"
-      ],
-      "count": 40,
-      "counts": {
-        "en": 40
-      },
-      "titles": {
-        "en": "Guru Teg Bahadur Ji"
-      },
-      "variants": {
-        "en": "questions/gk/history-of-punjab/guru-teg-bahadur-ji.json"
-      }
-    },
-    {
-      "id": "guru-teg-bahadur-ji-punjabi-set",
-      "subject": "gk",
-      "category": "history-of-punjab",
-      "availableLanguages": [
+        "en",
         "pa"
       ],
       "count": 40,
       "counts": {
+        "en": 40,
         "pa": 40
       },
       "titles": {
-        "pa": "Guru Teg Bahadur Ji Punjabi Set"
+        "en": "Guru Teg Bahadur Ji",
+        "pa": "ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ"
       },
       "variants": {
-        "pa": "questions/gk/history-of-punjab/guru-teg-bahadur-ji-punjabi-set.pa.json"
+        "en": "questions/gk/history-of-punjab/guru-teg-bahadur-ji.json",
+        "pa": "questions/gk/history-of-punjab/guru-teg-bahadur-ji.pa.json"
       }
     },
     {

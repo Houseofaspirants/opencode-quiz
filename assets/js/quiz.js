@@ -248,7 +248,7 @@
        resolve the real topic instead of dropping the attempt on the floor. */
     const stripLangMarker = (id) =>
       String(id).replace(
-        /[-_.](english|eng|punjabi|panjabi|gurmukhi|en|pa|hi|ta|mr|gu)$/i, ""
+        /[-_.](english|eng|punjabi-set|punjabi|panjabi|gurmukhi|en|pa|hi|ta|mr|gu)$/i, ""
       );
     let topic = subject?.topics.find((t) => t.id === topicId);
     if (!topic && topicId && stripLangMarker(topicId) !== topicId) {
