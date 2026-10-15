@@ -2264,7 +2264,7 @@ def study_auto_meta(path, subject):
         "title": title,
         "description": study_description(title, name),
         "category": name,
-        "keywords": [clip(title, 48), name, "Study Material", stem],
+        "keywords": [clip(title, 48), name, "Study Material", clip(stem, 48)],
         "language": study_lang_id(lang_folder) or study_language_from_name(stem),
     }
     when = pdf_date_from_name(stem)
@@ -3256,7 +3256,7 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
             meta["category"] = name
             meta["description"] = study_description(title, name)
             meta["keywords"] = [clip(title, 48), name, "Study Material",
-                                path.stem]
+                                clip(path.stem, 48)]
     if extra:
         meta.update({k: v for k, v in extra.items() if v not in (None, "", [])})
     if coll != "pdfs":
