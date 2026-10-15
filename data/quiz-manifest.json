@@ -2,6 +2,42 @@
   "version": 1,
   "topics": [
     {
+      "id": "baba-banda-singh-bahadur",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 35,
+      "counts": {
+        "en": 35
+      },
+      "titles": {
+        "en": "Baba Banda Singh Bahadur"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/baba-banda-singh-bahadur.json"
+      }
+    },
+    {
+      "id": "dal-khalsa",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 40,
+      "counts": {
+        "en": 40
+      },
+      "titles": {
+        "en": "Dal Khalsa"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/dal-khalsa.json"
+      }
+    },
+    {
       "id": "dpsp-fundamental-duties-part-1",
       "subject": "gk",
       "category": "polity",
@@ -68,6 +104,24 @@
       }
     },
     {
+      "id": "five-takhts",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 35,
+      "counts": {
+        "en": 35
+      },
+      "titles": {
+        "en": "Five Takhts"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/five-takhts.json"
+      }
+    },
+    {
       "id": "five-year-plans-20-mcqs-",
       "subject": "gk",
       "category": "economy",
@@ -87,6 +141,204 @@
       "variants": {
         "en": "questions/gk/economy/five-year-plans-20-mcqs-.en.json",
         "pa": "questions/gk/economy/five-year-plans-20-mcqs-.pa.json"
+      }
+    },
+    {
+      "id": "guru-amar-das-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Amar Das Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-amar-das-ji.json"
+      }
+    },
+    {
+      "id": "guru-angad-dev-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Angad Dev Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-angad-dev-ji.json"
+      }
+    },
+    {
+      "id": "guru-arjan-dev-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 40,
+      "counts": {
+        "en": 40
+      },
+      "titles": {
+        "en": "Guru Arjan Dev Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-arjan-dev-ji.json"
+      }
+    },
+    {
+      "id": "guru-gobind-singh-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 60,
+      "counts": {
+        "en": 60
+      },
+      "titles": {
+        "en": "Guru Gobind Singh Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-gobind-singh-ji.json"
+      }
+    },
+    {
+      "id": "guru-granth-sahib-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Granth Sahib Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-granth-sahib-ji.json"
+      }
+    },
+    {
+      "id": "guru-har-krishan-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Har Krishan Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-har-krishan-ji.json"
+      }
+    },
+    {
+      "id": "guru-har-rai-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Har Rai Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-har-rai-ji.json"
+      }
+    },
+    {
+      "id": "guru-hargobind-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 40,
+      "counts": {
+        "en": 40
+      },
+      "titles": {
+        "en": "Guru Hargobind Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-hargobind-ji.json"
+      }
+    },
+    {
+      "id": "guru-nanak-dev-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 45,
+      "counts": {
+        "en": 45
+      },
+      "titles": {
+        "en": "Guru Nanak Dev Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-nanak-dev-ji.json"
+      }
+    },
+    {
+      "id": "guru-ram-das-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 30,
+      "counts": {
+        "en": 30
+      },
+      "titles": {
+        "en": "Guru Ram Das Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-ram-das-ji.json"
+      }
+    },
+    {
+      "id": "guru-teg-bahadur-ji",
+      "subject": "gk",
+      "category": "history-of-punjab",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 40,
+      "counts": {
+        "en": 40
+      },
+      "titles": {
+        "en": "Guru Teg Bahadur Ji"
+      },
+      "variants": {
+        "en": "questions/gk/history-of-punjab/guru-teg-bahadur-ji.json"
       }
     },
     {
