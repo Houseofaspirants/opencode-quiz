@@ -17,6 +17,7 @@
   const params = new URLSearchParams(location.search);
   const subjectId = params.get("subject") || "";
   const categoryId = params.get("category") || "";
+  const chapterParam = params.get("chapter") || "";
   const idx = await HOA.loadIndex();
   const siteBase = String((idx.site && idx.site.url) || "").replace(/\/+$/, "");
   const subject = (idx.subjects || []).find((s) => s.id === subjectId);
@@ -274,6 +275,82 @@
    * At the category level the counts scope down to that category; a
    * hierarchical subject root shows how many CATEGORIES it has. */
   const topicList = level === "category" ? category.topics : subject.topics;
+
+  /* -------------------------------------------------------------- Chapters -
+   * Same shape as the Study shelf: chapter folders first, the chapter's
+   * parts (one MCQ set each) inside. A chapter is the topic id with its
+   * `-part-N` tail removed, so `04-guru-teg-bahadur-…-part-2` files under
+   * `04-guru-teg-bahadur-…`. Presentation only — quiz URLs are unchanged and
+   * `&chapter=` merely opens one folder. */
+  const PART_RE = /-part-?(\d+)(?:-.*)?$/i;
+  const SMALL = new Set(["and", "of", "the", "in", "to", "a", "an", "for", "on"]);
+  const WORDS = { mcqs: "MCQs", mcq: "MCQ", dpsp: "DPSP", gk: "GK" };
+  const humanize = (key) =>
+    key
+      .replace(/^\d+[-_]/, "")
+      .split(/[-_\s]+/)
+      .filter(Boolean)
+      .map((w, i) => {
+        const lw = w.toLowerCase();
+        if (WORDS[lw]) return WORDS[lw];
+        if (i && SMALL.has(lw)) return lw;
+        return lw.charAt(0).toUpperCase() + lw.slice(1);
+      })
+      .join(" ");
+  const partOf = (t) => {
+    const m = PART_RE.exec(String(t.id));
+    return m ? Number(m[1]) : 0;
+  };
+  const chapterCollator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+  /** @type {{id: string, name: string, num: number, topics: any[]}[]} */
+  const chapterList = [];
+  if (level !== "root") {
+    const byKey = new Map();
+    for (const t of topicList || []) {
+      const key = String(t.id).replace(PART_RE, "") || String(t.id);
+      if (!byKey.has(key)) {
+        const num = /^(\d+)[-_]/.exec(key);
+        const ch = { id: key, name: humanize(key) || t.name, num: num ? Number(num[1]) : 0, topics: [] };
+        byKey.set(key, ch);
+        chapterList.push(ch);
+      }
+      byKey.get(key).topics.push(t);
+    }
+    chapterList.forEach((c) =>
+      c.topics.sort((a, b) => partOf(a) - partOf(b) || chapterCollator.compare(a.id, b.id))
+    );
+    // Numbered chapters in syllabus order, then the rest A-Z.
+    chapterList.sort(
+      (a, b) =>
+        (a.num ? 0 : 1) - (b.num ? 0 : 1) ||
+        a.num - b.num ||
+        chapterCollator.compare(a.name, b.name)
+    );
+  }
+  const chapter = chapterList.find((c) => c.id === chapterParam) || null;
+  const chapterBase =
+    level === "category"
+      ? `subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(category.id)}`
+      : `subject?subject=${encodeURIComponent(subject.id)}`;
+  const chapterHref = (c) => `${chapterBase}&chapter=${encodeURIComponent(c.id)}`;
+
+  /* Chapter crumb: the last crumb becomes a link back to the folder list and
+     the chapter name follows it — flat siblings, as the markup requires. */
+  if (chapter) {
+    const last = document.getElementById(level === "category" ? "crumbCategory" : "crumbSubject");
+    if (last) {
+      const a = document.createElement("a");
+      a.href = chapterBase;
+      a.textContent = last.textContent;
+      const sep = document.createElement("span");
+      sep.textContent = "/";
+      const cur = document.createElement("span");
+      cur.textContent = chapter.name;
+      last.replaceWith(a, sep, cur);
+    }
+    titleEl.textContent = chapter.name;
+    descEl.textContent = `${chapter.topics.length} MCQ set${chapter.topics.length === 1 ? "" : "s"} in this chapter — open one to start.`;
+  }
   /* Zero means "nothing here yet" — drop the card rather than printing a 0. */
   const setStat = (el, value) => {
     if (!el) return;
@@ -281,11 +358,16 @@
     else el.closest(".stat-card")?.setAttribute("hidden", "");
   };
   if (countTopics && countTopicsLabel) {
-    countTopicsLabel.textContent = level === "root" ? "Categories" : "Topics";
-    setStat(countTopics, level === "root" ? categories.length : topicList.length);
+    countTopicsLabel.textContent =
+      level === "root" ? "Categories" : chapter ? "Parts" : "Chapters";
+    setStat(
+      countTopics,
+      level === "root" ? categories.length : chapter ? chapter.topics.length : chapterList.length
+    );
   }
-  setStat(countQuizzes, topicList.filter((t) => t.available).length);
-  setStat(countQuestions, topicList.reduce((n, t) => n + t.count, 0));
+  const statList = chapter ? chapter.topics : topicList;
+  setStat(countQuizzes, statList.filter((t) => t.available).length);
+  setStat(countQuestions, statList.reduce((n, t) => n + t.count, 0));
 
   /* --------------------------------------------------------- Section head --
    * STUDY MATERIAL - the first of the subject's two halves. The label is the
@@ -301,6 +383,9 @@
       secTitle.textContent = "Pick a category to study";
       secHint.textContent =
         "Each category opens its chapters — every JSON file inside the category folder appears automatically.";
+    } else if (chapter) {
+      secTitle.textContent = "Pick a part to start";
+      secHint.innerHTML = `<a href="${esc(chapterBase)}">← All chapters</a>`;
     } else if (level === "category") {
       secTitle.textContent = "Pick a chapter to study";
       secHint.innerHTML =
@@ -314,6 +399,9 @@
   if (filterEl && level === "root") {
     filterEl.placeholder = "Filter categories…";
     filterEl.setAttribute("aria-label", "Filter categories");
+  } else if (filterEl && !chapter) {
+    filterEl.placeholder = "Filter chapters…";
+    filterEl.setAttribute("aria-label", "Filter chapters");
   }
 
   /* ------------------------------------------------------------- Practice -
@@ -430,7 +518,39 @@
     return `quiz.html?subject=${encodeURIComponent(subject.id)}&topic=${encodeURIComponent(t.id)}${cat}`;
   }
 
-  function topicCard(t) {
+  /** One chapter folder. A single-set chapter links straight to its quiz,
+      as the Study shelf does — no folder page to click through. */
+  function chapterCard(c) {
+    const n = c.topics.length;
+    const q = c.topics.reduce((a, t) => a + (t.count || 0), 0);
+    const only = n === 1 ? c.topics[0] : null;
+    if (only && !only.available) return topicCard(only, c.name);
+    const href = only ? topicHref(only) : chapterHref(c);
+    const bits = [];
+    if (c.num) bits.push(`Chapter ${c.num}`);
+    bits.push(only ? "1 set" : `${n} parts`);
+    bits.push(`${q} question${q === 1 ? "" : "s"}`);
+    bits.push(only ? "Start set →" : "Open →");
+    return `
+    <a class="card quiz-card" href="${esc(href)}">
+      <span class="qc-icon">📂</span>
+      <span>
+        <h3>${esc(c.name)}${only ? HOA.langBadge(only.variants, { single: true }) : ""}</h3>
+        <span class="qc-sub">${bits.join(" · ")}</span>
+      </span>
+      <span class="qc-go">→</span>
+    </a>`;
+  }
+
+  /** Inside a chapter: "Part N" leads, the set's own subtitle follows. */
+  function partCard(t) {
+    const n = partOf(t);
+    if (!n) return topicCard(t);
+    const sub = String(t.name).replace(/\s*[-–:]\s*Part\s*\d+\s*$/i, "").trim();
+    return topicCard(t, `Part ${n}`, sub);
+  }
+
+  function topicCard(t, heading, subtitle) {
     const clickable = t.available;
     const tag = clickable ? "a" : "div";
     const href = clickable ? topicHref(t) : "javascript:void(0)";
@@ -439,10 +559,10 @@
        ${clickable ? "" : 'aria-disabled="true"'}>
       <span class="qc-icon">${icon}</span>
       <span>
-        <h3>${esc(t.name)}${HOA.langBadge(t.variants, { single: true })}</h3>
+        <h3>${esc(heading || t.name)}${HOA.langBadge(t.variants, { single: true })}</h3>
         <span class="qc-sub">${
           clickable
-            ? `${t.count} question${t.count === 1 ? "" : "s"} · Start set →`
+            ? `${subtitle ? `${esc(subtitle)} · ` : ""}${t.count} question${t.count === 1 ? "" : "s"} · Start set →`
             : `No questions available yet.`
         }</span>
       </span>
@@ -488,10 +608,14 @@
       wrap.innerHTML = emptyTopics();
       return;
     }
-    wrap.innerHTML = list.length ? list.map(topicCard).join("") : noMatch("topic");
+    if (chapter) {
+      wrap.innerHTML = list.length ? list.map(partCard).join("") : noMatch("part");
+      return;
+    }
+    wrap.innerHTML = list.length ? list.map(chapterCard).join("") : noMatch("chapter");
   }
 
-  const initial = showCategories ? categories : topicList;
+  const initial = showCategories ? categories : chapter ? chapter.topics : chapterList;
   render(initial);
 
   /* ------------------------------------------------- Instant filter (same) - */
@@ -499,7 +623,9 @@
     const term = filterEl.value.trim().toLowerCase();
     const match = (item) =>
       item.name.toLowerCase().includes(term) ||
-      (item.description || "").toLowerCase().includes(term);
+      (item.description || "").toLowerCase().includes(term) ||
+      // A chapter folder also matches on the sets inside it.
+      (item.topics || []).some((t) => String(t.name).toLowerCase().includes(term));
     render(!term ? initial : initial.filter(match));
   });
 })();
