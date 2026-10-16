@@ -133,7 +133,7 @@ references:
 - [ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-jail-warder/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
 - [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
-- [ਸਿੱਖ ਧਰਮ ਭਾਗ 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)
 

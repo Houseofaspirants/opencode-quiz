@@ -882,6 +882,18 @@
    "hub": "current-affairs.html"
   },
   {
+   "id": "category-gk-punjab-gk.html",
+   "url": "/category-gk-punjab-gk.html",
+   "type": "landing",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
    "url": "/content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
    "type": "page",
@@ -6777,18 +6789,6 @@
   {
    "id": "quiz-gk-guru-har-rai-ji.html",
    "url": "/quiz-gk-guru-har-rai-ji.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-sikhism-part1-20-mcqs.html",
-   "url": "/quiz-gk-sikhism-part1-20-mcqs.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -19611,6 +19611,12 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -19660,12 +19666,6 @@
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19803,6 +19803,12 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -19864,12 +19870,6 @@
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20229,6 +20229,12 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -20278,12 +20284,6 @@
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "pyq/psssb-jail-warder/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20625,6 +20625,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -20680,12 +20686,6 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pyq/psssb-patwari/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20841,6 +20841,12 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -20902,12 +20908,6 @@
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21045,6 +21045,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -21100,12 +21106,6 @@
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21255,6 +21255,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "exam-punjab-police-head-constable.html",
    "rel": "contextual",
    "weight": 1
@@ -21298,12 +21304,6 @@
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21465,6 +21465,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -21514,12 +21520,6 @@
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24729,6 +24729,12 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -24760,12 +24766,6 @@
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24897,6 +24897,12 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -24946,12 +24952,6 @@
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25293,6 +25293,12 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -25330,12 +25336,6 @@
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "pyq/psssb-jail-warder/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25659,6 +25659,12 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -25696,12 +25702,6 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pyq/psssb-patwari/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25851,6 +25851,12 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -25894,12 +25900,6 @@
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26043,6 +26043,12 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -26092,12 +26098,6 @@
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26247,6 +26247,12 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "exam-punjab-police-head-constable.html",
    "rel": "contextual",
    "weight": 1
@@ -26284,12 +26290,6 @@
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26439,6 +26439,12 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "category-gk-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -26476,12 +26482,6 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-sikhism-part1-20-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },

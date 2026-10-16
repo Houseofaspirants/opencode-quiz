@@ -131,7 +131,7 @@ One **pen-and-paper exam on an OMR sheet**, 2 hours long:
 
 - [Cooperative Inspector previous year paper](pyq/ppsc-cooperative-inspector/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
-- [Sikhism Part 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [Punjab GK practice](category-gk-punjab-gk.html)
 - [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)

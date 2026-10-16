@@ -161,7 +161,7 @@ Apart from the compulsory race, you must clear **any two** of the other three ev
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
 - [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
-- [Sikhism Part 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [Punjab GK practice](category-gk-punjab-gk.html)
 - [Current affairs](current-affairs.html)
 
 ## Download the official notification

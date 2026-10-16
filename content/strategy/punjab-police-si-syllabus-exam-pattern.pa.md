@@ -166,7 +166,7 @@ references:
 
 **ਆਮ ਗਿਆਨ**
 - [DPSP ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
-- [ਸਿੱਖ ਧਰਮ ਭਾਗ 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ](quiz-gk-five-year-plans-20-mcqs-.html)
 
 **ਤਰਕ**

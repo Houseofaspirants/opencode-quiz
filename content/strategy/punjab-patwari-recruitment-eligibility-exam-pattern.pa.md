@@ -119,7 +119,7 @@ Notification ਵਿੱਚ ਲਿਖਿਆ ਸੀ ਕਿ ਪੂਰਾ ਸਿਲ�
 ## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ
 
 - [ਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-patwari/index.html)
-- [ਸਿੱਖ ਧਰਮ ਭਾਗ 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
 - [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)

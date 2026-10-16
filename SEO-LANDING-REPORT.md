@@ -73,8 +73,8 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 47 | `/topic-gk-guru-nanak-dev-ji` | topic | Guru Nanak Dev Ji: Topic Guide and MCQ Practice (47) | 152 | Guru Nanak Dev Ji - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 48 | `/topic-gk-guru-ram-das-ji` | topic | Guru Ram Das Ji: Topic Guide and MCQ Practice (45) | 150 | Guru Ram Das Ji - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 49 | `/topic-gk-guru-teg-bahadur-ji` | topic | Guru Teg Bahadur Ji: Topic Guide and MCQ Practice (49) | 154 | Guru Teg Bahadur Ji - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 50 | `/topic-gk-01-making-of-the-indian-constitution-part1` | topic | Making of the Indian Constitution - Part 1 - Part 1 MCQ (55) | 154 | Making of the Indian Constitution - Part 1 - Part 1 - Topic Guide and MCQs | 89 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 51 | `/topic-gk-01-making-of-the-indian-constitution-part2` | topic | Making of the Indian Constitution - Part 2 - Part 2 MCQ (55) | 154 | Making of the Indian Constitution - Part 2 - Part 2 - Topic Guide and MCQs | 89 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 50 | `/topic-gk-01-making-of-the-indian-constitution-part1` | topic | Making of the Indian Constitution - Part 1 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 1 - Topic Guide and MCQs | 86 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 51 | `/topic-gk-01-making-of-the-indian-constitution-part2` | topic | Making of the Indian Constitution - Part 2 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 2 - Topic Guide and MCQs | 86 | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 52 | `/topic-reasoning-analogy-part-1` | topic | Analogy Part 1: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 1 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 53 | `/topic-reasoning-analogy-part-2` | topic | Analogy Part 2: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 2 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
 | 54 | `/topic-reasoning-analogy-part-3` | topic | Analogy Part 3: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 3 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
@@ -122,8 +122,8 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 96 | `/quiz-gk-guru-nanak-dev-ji` | quiz | Guru Nanak Dev Ji Quiz (50 MCQs) - Free Online Test (51) | 152 | Guru Nanak Dev Ji | - | BreadcrumbList, FAQPage, WebPage |
 | 97 | `/quiz-gk-guru-ram-das-ji` | quiz | Guru Ram Das Ji Quiz (30 MCQs) - Free Online Test (49) | 150 | Guru Ram Das Ji | - | BreadcrumbList, FAQPage, WebPage |
 | 98 | `/quiz-gk-guru-teg-bahadur-ji` | quiz | Guru Teg Bahadur Ji Quiz (40 MCQs) - Free Online Test (53) | 154 | Guru Teg Bahadur Ji | - | BreadcrumbList, FAQPage, WebPage |
-| 99 | `/quiz-gk-01-making-of-the-indian-constitution-part1` | quiz | Making of the Indian Constitution - Part 1 - Part 1 Quiz (56) | 155 | Making of the Indian Constitution - Part 1 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 100 | `/quiz-gk-01-making-of-the-indian-constitution-part2` | quiz | Making of the Indian Constitution - Part 2 - Part 2 Quiz (56) | 155 | Making of the Indian Constitution - Part 2 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 99 | `/quiz-gk-01-making-of-the-indian-constitution-part1` | quiz | Making of the Indian Constitution - Part 1 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 100 | `/quiz-gk-01-making-of-the-indian-constitution-part2` | quiz | Making of the Indian Constitution - Part 2 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
 | 101 | `/quiz-reasoning-analogy-part-1` | quiz | Analogy Part 1 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 102 | `/quiz-reasoning-analogy-part-2` | quiz | Analogy Part 2 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 2 | - | BreadcrumbList, FAQPage, WebPage |
 | 103 | `/quiz-reasoning-analogy-part-3` | quiz | Analogy Part 3 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 3 | - | BreadcrumbList, FAQPage, WebPage |
@@ -171,8 +171,8 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 145 | `/pa/topic-gk-guru-nanak-dev-ji` | topic-pa | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (34) | 155 | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 146 | `/pa/topic-gk-guru-ram-das-ji` | topic-pa | ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 147 | `/pa/topic-gk-guru-teg-bahadur-ji` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (35) | 156 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 148 | `/pa/topic-gk-01-making-of-the-indian-constitution-part1` | topic-pa | Making of the Indian Constitution - Part 1 - Part 1 MCQ (55) | 149 | Making of the Indian Constitution - Part 1 - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 149 | `/pa/topic-gk-01-making-of-the-indian-constitution-part2` | topic-pa | Making of the Indian Constitution - Part 2 - Part 2 MCQ (55) | 149 | Making of the Indian Constitution - Part 2 - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 148 | `/pa/topic-gk-01-making-of-the-indian-constitution-part1` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 149 | `/pa/topic-gk-01-making-of-the-indian-constitution-part2` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 150 | `/pa/topic-reasoning-analogy-part-1` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 151 | `/pa/topic-reasoning-analogy-part-2` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
 | 152 | `/pa/topic-reasoning-analogy-part-3` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
@@ -265,7 +265,7 @@ Intro word counts: min 13, max 371. Every subject page clears the 250-word intro
 
 ## 2. Metadata generated
 
-- **Unique titles:** 234/236 ❌
+- **Unique titles:** 236/236 ✅
 - **Unique meta descriptions:** 236/236 ✅
 - **Unique canonical URLs:** 236/236 ✅
 - **Title length:** 26-60 chars (Google truncates at ~60)
@@ -336,10 +336,7 @@ Additional routes generated automatically:
 
 ## 4. Potential duplicate content
 
-⚠️ **Collisions found (fix before publishing):**
-
-- landing pages share title: topic-gk-01-making-of-the-indian-constitution-part1.html / pa/topic-gk-01-making-of-the-indian-constitution-part1.html ('Making of the Indian Constitution - Part 1 - Part 1 MCQ')
-- landing pages share title: topic-gk-01-making-of-the-indian-constitution-part2.html / pa/topic-gk-01-making-of-the-indian-constitution-part2.html ('Making of the Indian Constitution - Part 2 - Part 2 MCQ')
+- **Metadata collisions: none.** Every landing title, description and canonical is unique, and none matches an existing root page.
 
 Parameter URLs are canonicalised onto their landing page at runtime (`assets/js/subject.js`, `assets/js/quiz.js`), so the app views never compete with the landing pages:
 
@@ -357,8 +354,3 @@ Residual risk notes:
 - Landing pages share site chrome (header, footer, related cards) by design; body copy, H1, FAQ answers and link sets are entity-specific, so pages stay distinguishable even where sections rhyme.
 - Lanes with no question file yet publish an explicit 'being published' state rather than padded content - no doorway pages, no invented counts.
 - `sitemap.xml` is built from `data/landing-manifest.json`, so a landing URL can never enter the sitemap without its file existing on disk.
-
-### Generator warnings
-
-- landing pages share title: topic-gk-01-making-of-the-indian-constitution-part1.html / pa/topic-gk-01-making-of-the-indian-constitution-part1.html ('Making of the Indian Constitution - Part 1 - Part 1 MCQ')
-- landing pages share title: topic-gk-01-making-of-the-indian-constitution-part2.html / pa/topic-gk-01-making-of-the-indian-constitution-part2.html ('Making of the Indian Constitution - Part 2 - Part 2 MCQ')

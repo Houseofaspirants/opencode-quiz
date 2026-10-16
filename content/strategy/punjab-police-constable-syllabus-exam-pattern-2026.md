@@ -157,7 +157,7 @@ Start running now. Physical tests come soon after the result, and the 1,600 m in
 
 **General Awareness**
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
-- [Sikhism Part 1](quiz-gk-sikhism-part1-20-mcqs.html)
+- [Punjab GK practice](category-gk-punjab-gk.html)
 - [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
 
 **Reasoning**
