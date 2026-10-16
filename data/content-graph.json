@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 582,
-  "edges": 3405,
+  "nodes": 585,
+  "edges": 3424,
   "silos": 35,
   "clusters": 84,
   "pillars": 34
@@ -2072,6 +2072,18 @@
   {
    "id": "content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
    "url": "/content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/english/english%20/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/subject-predicate-complete-simple.pdf",
+   "url": "/content/study-material/english/english%20/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/subject-predicate-complete-simple.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -5238,6 +5250,30 @@
    "hub": ""
   },
   {
+   "id": "material-subject-predicate-complete-simple",
+   "url": "/material-subject-predicate-complete-simple",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-subject-predicate-complete-simple.html",
+   "url": "/material-subject-predicate-complete-simple.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 5: Subject and Predicate (Complete and Simple",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-subject-predicate.html",
    "url": "/material-subject-predicate.html",
    "type": "study-material",
@@ -7618,6 +7654,12 @@
   {
    "from": "archive-category-english.html",
    "to": "material-simple-compound-complex-sentences.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-english.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10246,6 +10288,12 @@
   {
    "from": "archives.html",
    "to": "material-smas-rchna.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13449,12 +13497,6 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "to": "material-articles.html",
    "rel": "related-study-material",
    "weight": 1
@@ -13462,6 +13504,12 @@
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13719,12 +13767,6 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-articles.html",
    "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
@@ -13732,6 +13774,12 @@
   {
    "from": "material-articles.html",
    "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-articles.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13899,12 +13947,6 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
@@ -13912,6 +13954,12 @@
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-articles.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13995,7 +14043,7 @@
   },
   {
    "from": "material-clauses-phrases.html",
-   "to": "material-subject-predicate.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18579,7 +18627,7 @@
   },
   {
    "from": "material-simple-compound-complex-sentences.html",
-   "to": "material-subject-predicate.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18770,6 +18818,96 @@
    "weight": 1
   },
   {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "content/study-material/english/english%20/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/subject-predicate-complete-simple.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "material-subject-predicate-complete-simple",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "material-clauses-phrases.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "material-simple-compound-complex-sentences.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-subject-predicate-complete-simple.html",
+   "to": "material-types-of-sentences.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-subject-predicate.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -18843,13 +18981,13 @@
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-clauses-phrases.html",
+   "to": "material-simple-compound-complex-sentences.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-subject-predicate.html",
-   "to": "material-simple-compound-complex-sentences.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18945,7 +19083,7 @@
   },
   {
    "from": "material-types-of-sentences.html",
-   "to": "material-subject-predicate.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -26823,6 +26961,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/english/english%20/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/subject-predicate-complete-simple.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27670,6 +27814,12 @@
   {
    "from": "study-material.html",
    "to": "material-smas-rchna.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-subject-predicate-complete-simple.html",
    "rel": "contextual",
    "weight": 1
   },

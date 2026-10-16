@@ -165,9 +165,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 4,
-      "newest": "2026-10-13",
-      "totalSize": 10681750,
+      "count": 5,
+      "newest": "2026-10-16",
+      "totalSize": 13342588,
       "languages": [
         {
           "id": "pa",
@@ -182,7 +182,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "01 - Subject and Predicate",
@@ -227,11 +227,22 @@
                 }
               ],
               "pages": 13
+            },
+            {
+              "id": "05 - Subject and Predicate (Complete and Simple Forms)",
+              "name": "Chapter 5: Subject and Predicate (Complete and Simple Forms)",
+              "parts": [
+                {
+                  "file": "material-subject-predicate-complete-simple.html",
+                  "n": 1
+                }
+              ],
+              "pages": 18
             }
           ]
         }
       ],
-      "chapters": 4
+      "chapters": 5
     },
     {
       "id": "punjabi",
@@ -2395,6 +2406,6 @@
       "hidden": true
     }
   ],
-  "total": 83,
+  "total": 84,
   "generatedBy": "scripts/study_material.py"
 }
