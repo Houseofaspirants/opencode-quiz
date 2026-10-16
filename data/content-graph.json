@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 586,
-  "edges": 3436,
+  "nodes": 578,
+  "edges": 3424,
   "silos": 35,
-  "clusters": 82,
+  "clusters": 70,
   "pillars": 34
  },
  "nodes": [
@@ -6703,54 +6703,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-   "url": "/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
-   "url": "/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
    "type": "quiz",
@@ -6789,54 +6741,6 @@
   {
    "id": "quiz-gk-five-year-plans-20-mcqs-.html",
    "url": "/quiz-gk-five-year-plans-20-mcqs-.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
-   "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
-   "url": "/quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
-   "url": "/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11841,13 +11745,13 @@
   },
   {
    "from": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
-   "to": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12381,13 +12285,13 @@
   },
   {
    "from": "material-02-guru-amar-das-ji-guru-ram-das-ji-and-guru-arjan-dev-ji.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-02-guru-amar-das-ji-guru-ram-das-ji-and-guru-arjan-dev-ji.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12561,13 +12465,13 @@
   },
   {
    "from": "material-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji.html",
-   "to": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12921,13 +12825,13 @@
   },
   {
    "from": "material-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji.html",
-   "to": "quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13107,7 +13011,7 @@
   },
   {
    "from": "material-05-guru-granth-sahib-ji-and-the-five-takhts.html",
-   "to": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
+   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13281,13 +13185,13 @@
   },
   {
    "from": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19665,19 +19569,19 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19815,12 +19719,6 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -19845,19 +19743,19 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20061,19 +19959,19 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20271,19 +20169,19 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20475,19 +20373,19 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20667,19 +20565,19 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20847,12 +20745,6 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -20889,19 +20781,19 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21069,12 +20961,6 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21099,19 +20985,19 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21273,12 +21159,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21315,19 +21195,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21477,12 +21357,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21531,19 +21405,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -21699,12 +21573,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -21747,19 +21615,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24819,19 +24687,19 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24951,12 +24819,6 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -24987,19 +24849,19 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25185,19 +25047,19 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25377,19 +25239,19 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25569,19 +25431,19 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25743,19 +25605,19 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25899,12 +25761,6 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -25941,19 +25797,19 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26097,12 +25953,6 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26133,19 +25983,19 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26301,12 +26151,6 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26349,19 +26193,19 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26499,12 +26343,6 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26541,19 +26379,19 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26697,12 +26535,6 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-five-year-plans-20-mcqs-.html",
    "rel": "contextual",
    "weight": 1
@@ -26739,19 +26571,19 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-gk-expansion-of-british-power-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -28501,22 +28333,10 @@
     "category-gk-science-technology.html",
     "topic-gk-01-making-of-the-indian-constitution-part1.html",
     "topic-gk-01-making-of-the-indian-constitution-part2.html",
-    "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-    "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
-    "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
-    "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
-    "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
-    "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-    "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
     "topic-gk-expansion-of-british-power-part-1.html",
     "topic-gk-expansion-of-british-power-part-2.html",
-    "topic-gk-five-year-plans-20-mcqs-.html",
-    "topic-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
-    "topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-    "topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
-    "topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
-    "topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2.html"
+    "topic-gk-five-year-plans-20-mcqs-.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
