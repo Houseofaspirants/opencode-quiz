@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 581,
+  "nodes": 582,
   "edges": 3405,
   "silos": 35,
-  "clusters": 82,
+  "clusters": 84,
   "pillars": 34
  },
  "nodes": [
@@ -6633,6 +6633,18 @@
   {
    "id": "quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html",
    "url": "/quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-01-making-of-the-indian-constitution-part1.html",
+   "url": "/quiz-gk-01-making-of-the-indian-constitution-part1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -13839,13 +13851,13 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-01-making-of-the-indian-constitution-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28253,6 +28265,8 @@
     "category-gk-punjab-gk.html",
     "category-gk-punjab-literature.html",
     "category-gk-science-technology.html",
+    "topic-gk-01-making-of-the-indian-constitution-part1.html",
+    "topic-gk-01-making-of-the-indian-constitution-part2.html",
     "topic-gk-baba-banda-singh-bahadur.html",
     "topic-gk-dal-khalsa.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
