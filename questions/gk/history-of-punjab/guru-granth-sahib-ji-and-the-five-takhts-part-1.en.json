@@ -1,0 +1,527 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "How many Angs does Guru Granth Sahib Ji contain?",
+    "options": [
+      "1,100",
+      "1,300",
+      "1,430",
+      "1,604"
+    ],
+    "answer": 2,
+    "explanation": "The notes give the total as 1,430 Angs. The other three figures do not match the stated total. The notes also identify six Sikh Gurus among the contributors.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 2,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about the writing of the scripture:\n1. Bhai Gurdas Ji served as the scribe.\n2. The writing was undertaken under the guidance of Guru Arjan Dev Ji.\nWhich of the above is/are correct?",
+    "options": [
+      "Both 1 and 2",
+      "1 only",
+      "2 only",
+      "Neither 1 nor 2"
+    ],
+    "answer": 0,
+    "explanation": "Statement 1 is correct because the notes identify Bhai Gurdas Ji as the scribe. Statement 2 is also correct because they expressly mention the guidance of Guru Arjan Dev Ji. The distinction between the scribe and the guiding Guru is useful for avoiding confusion in examination questions.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 3,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "At which shrine was the first installation of the scripture performed?",
+    "options": [
+      "Takht Sri Patna Sahib",
+      "Takht Sri Hazur Sahib",
+      "Takht Sri Keshgarh Sahib",
+      "Harmandir Sahib"
+    ],
+    "answer": 3,
+    "explanation": "The notes identify Harmandir Sahib as the site of the first installation. Patna Sahib, Hazur Sahib and Keshgarh Sahib are not named as the installation site. The first-installation year given in the notes is 1604.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Who served as the first Granthi of the scripture?",
+    "options": [
+      "Bhai Gurdas Ji",
+      "Baba Buddha Ji",
+      "Kabir Ji",
+      "Sheikh Farid Ji"
+    ],
+    "answer": 1,
+    "explanation": "The notes name Baba Buddha Ji as the first Granthi. Bhai Gurdas Ji is identified as the scribe, while Kabir Ji and Sheikh Farid Ji are listed among the Bhagat contributors. The first Granthi and the scribe therefore represent different roles in the notes.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 5,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "difficult",
+    "type": "statement",
+    "question": "Consider the following statements about the Guru contributors to the scripture:\n1. The first five Sikh Gurus are included.\n2. Guru Teg Bahadur Ji is also included.\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 2,
+    "explanation": "Statement 1 is correct because the notes include the first five Sikh Gurus among the contributors. Statement 2 is correct because Guru Teg Bahadur Ji is separately included. Together, these entries account for the six Gurus mentioned in the quick revision section.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 6,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "difficult",
+    "type": "match",
+    "question": "Match List I with List II according to the notes.\nList I\nA. Bhagat contributors\nB. Bhatt contributors\nC. Seats of Sikh authority\nList II\n1. Five\n2. Eleven\n3. Fifteen\nSelect the correct code in the order A–B–C.",
+    "options": [
+      "2–3–1",
+      "3–2–1",
+      "3–1–2",
+      "1–2–3"
+    ],
+    "answer": 1,
+    "explanation": "The notes list fifteen Bhagats, so A matches 3. They list eleven Bhatts, so B matches 2. The five seats of Sikh authority are the five Takhts, so C matches 1. The correct code is therefore 3–2–1, and each alternative mismatches at least two entries.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "not-correct",
+    "question": "Which of the following is NOT listed in the notes as a Bhagat contributor to the scripture?",
+    "options": [
+      "Kabir Ji",
+      "Ravidas Ji",
+      "Sheikh Farid Ji",
+      "Bhai Gurdas Ji"
+    ],
+    "answer": 3,
+    "explanation": "The notes list Kabir Ji, Ravidas Ji and Sheikh Farid Ji as examples of Bhagat contributors. Bhai Gurdas Ji is instead identified as the scribe, so he is the required answer. The notes describe Bhagats as saints or devotees.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "How are the Bhatts described in the contributor classification?",
+    "options": [
+      "Poet-scholars",
+      "Fort builders",
+      "First Granthis",
+      "Takht founders"
+    ],
+    "answer": 0,
+    "explanation": "The notes describe the Bhatts as poet-scholars. Fort builders, first Granthis and Takht founders are not the description given for this contributor group. The notes distinguish them from Bhagats, who are described as saints or devotees.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about Guru Gobind Singh Ji’s compositions:\n1. They are not included in Guru Granth Sahib Ji.\n2. They are associated with the Dasam Granth.\nWhich of the above is/are correct?",
+    "options": [
+      "Both 1 and 2",
+      "1 only",
+      "2 only",
+      "Neither 1 nor 2"
+    ],
+    "answer": 0,
+    "explanation": "Statement 1 is correct because the notes explicitly exclude Guru Gobind Singh Ji’s compositions from Guru Granth Sahib Ji. Statement 2 is correct because the notes place these compositions in the Dasam Granth. This distinction is highlighted as a common mistake, while Guru Teg Bahadur Ji is included among the scripture’s Guru contributors.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): The Takht known as the “Eternal Throne” is the oldest of the Takhts.\nReason (R): “Eternal Throne” is an alternative name for Sri Akal Takht Sahib.\nSelect the correct answer.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 1,
+    "explanation": "Assertion A is true because the notes identify Akal Takht Sahib as the oldest Takht. Reason R is also true because “Eternal Throne” is its alternative name. However, the alternative name does not explain its historical seniority, so R is not the correct explanation of A. The notes separately date its foundation to 1606.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "difficult",
+    "type": "match",
+    "question": "Match List I with List II.\nList I\nA. Sri Akal Takht Sahib\nB. Takht Sri Damdama Sahib\nC. Takht Sri Keshgarh Sahib\nList II\n1. Anandpur Sahib, Rupnagar\n2. Amritsar\n3. Talwandi Sabo, Bathinda\nSelect the correct code in the order A–B–C.",
+    "options": [
+      "1–3–2",
+      "2–1–3",
+      "2–3–1",
+      "3–2–1"
+    ],
+    "answer": 2,
+    "explanation": "A matches 2 because Sri Akal Takht Sahib is in Amritsar. B matches 3 because Damdama Sahib is at Talwandi Sabo in Bathinda. C matches 1 because Keshgarh Sahib is at Anandpur Sahib in Rupnagar. Thus, 2–3–1 is correct; the other codes interchange the locations, and the town–district combinations are useful revision points.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Who founded the Takht that the notes call the oldest?",
+    "options": [
+      "Guru Arjan Dev Ji",
+      "Guru Teg Bahadur Ji",
+      "Guru Gobind Singh Ji",
+      "Guru Hargobind Ji"
+    ],
+    "answer": 3,
+    "explanation": "The notes credit Guru Hargobind Ji with founding the oldest Takht. Guru Arjan Dev Ji, Guru Teg Bahadur Ji and Guru Gobind Singh Ji are not credited with this foundation. The institution concerned is Sri Akal Takht Sahib.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Guru–Takht pairing correctly identifies the preparation of the final version of the scripture?",
+    "options": [
+      "Guru Gobind Singh Ji — Takht Sri Damdama Sahib",
+      "Guru Gobind Singh Ji — Takht Sri Patna Sahib",
+      "Guru Arjan Dev Ji — Takht Sri Damdama Sahib",
+      "Guru Arjan Dev Ji — Takht Sri Patna Sahib"
+    ],
+    "answer": 0,
+    "explanation": "The notes associate preparation of the final version with Guru Gobind Singh Ji at Damdama Sahib. The second option changes the place, the third changes the Guru, and the fourth changes both. The same Takht is also called Guru Ki Kashi.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which Takht is also known as “Guru Ki Kashi”?",
+    "options": [
+      "Takht Sri Hazur Sahib",
+      "Takht Sri Patna Sahib",
+      "Takht Sri Keshgarh Sahib",
+      "Takht Sri Damdama Sahib"
+    ],
+    "answer": 3,
+    "explanation": "The notes give “Guru Ki Kashi” as another name for Damdama Sahib. They do not assign this name to Hazur Sahib, Patna Sahib or Keshgarh Sahib. The notes associate this Takht with preparation of the final version of the scripture.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Guru is credited with building the Takht associated with the birthplace of the Khalsa?",
+    "options": [
+      "Guru Hargobind Ji",
+      "Guru Gobind Singh Ji",
+      "Guru Arjan Dev Ji",
+      "Guru Teg Bahadur Ji"
+    ],
+    "answer": 1,
+    "explanation": "The notes credit Guru Gobind Singh Ji with building the Takht associated with the birthplace of the Khalsa. They do not credit Guru Hargobind Ji, Guru Arjan Dev Ji or Guru Teg Bahadur Ji with this construction. The Takht referred to is Keshgarh Sahib.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 16,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "What original function is stated for the structure built at the birthplace of the Khalsa?",
+    "options": [
+      "A scripture-writing centre",
+      "A seat for the first Granthi",
+      "A defence fort",
+      "A residence for Bhatt poets"
+    ],
+    "answer": 2,
+    "explanation": "The notes state that the structure was built as a defence fort. A scripture-writing centre, a seat for the first Granthi and a residence for Bhatt poets are not the stated building purpose. The structure described is Keshgarh Sahib, whose entry records both its religious association and its defensive function.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 17,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Takht is identified as the birthplace of the Khalsa?",
+    "options": [
+      "Takht Sri Keshgarh Sahib",
+      "Takht Sri Damdama Sahib",
+      "Takht Sri Hazur Sahib",
+      "Takht Sri Patna Sahib"
+    ],
+    "answer": 0,
+    "explanation": "The notes identify Keshgarh Sahib as the birthplace of the Khalsa. Damdama Sahib, Hazur Sahib and Patna Sahib are not assigned this event. The year given for the birth of the Khalsa is 1699.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 18,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about the location of the Takht associated with Jyoti Jot:\n1. It is situated at Nanded.\n2. It is situated in Bihar.\nWhich of the above is/are correct?",
+    "options": [
+      "Both 1 and 2",
+      "2 only",
+      "1 only",
+      "Neither 1 nor 2"
+    ],
+    "answer": 2,
+    "explanation": "Statement 1 is correct because the notes locate the Takht associated with Jyoti Jot at Nanded. Statement 2 is incorrect because the state given is Maharashtra, not Bihar. The Takht concerned is Hazur Sahib, and the town–state pairing to retain is Nanded–Maharashtra.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 19,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "On the bank of which river is the Takht associated with Jyoti Jot situated?",
+    "options": [
+      "Ravi",
+      "Beas",
+      "Sutlej",
+      "Godavari"
+    ],
+    "answer": 3,
+    "explanation": "The notes place this Takht on the bank of the Godavari. Ravi, Beas and Sutlej do not match the river named for this site. The riverside location is recorded in the entry for Hazur Sahib.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 20,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Guru–Takht pairing is correctly associated with Jyoti Jot?",
+    "options": [
+      "Guru Arjan Dev Ji — Hazur Sahib",
+      "Guru Gobind Singh Ji — Hazur Sahib",
+      "Guru Hargobind Ji — Hazur Sahib",
+      "Guru Teg Bahadur Ji — Hazur Sahib"
+    ],
+    "answer": 1,
+    "explanation": "The notes associate the Jyoti Jot at this Takht with Guru Gobind Singh Ji. They do not associate this particular event there with Guru Arjan Dev Ji, Guru Hargobind Ji or Guru Teg Bahadur Ji. The Takht concerned is Hazur Sahib, and Jyoti Jot is explained as departure for the heavenly abode.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 21,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "difficult",
+    "type": "assertion-reason",
+    "question": "Assertion (A): Both Takhts situated outside Punjab share the same named builder in the notes.\nReason (R): The notes credit Maharaja Ranjit Singh with building both Hazur Sahib and Patna Sahib.\nSelect the correct answer.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 0,
+    "explanation": "Assertion A is true because the notes assign a common builder to the two Takhts outside Punjab. Reason R is true because Maharaja Ranjit Singh is named as the builder of Hazur Sahib and Patna Sahib separately. R explains A by identifying the common builder and the two buildings concerned. The shortcut section expressly draws attention to this shared construction association.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 22,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Takht–city–state combination is correctly matched?",
+    "options": [
+      "Takht Sri Patna Sahib — Patna — Maharashtra",
+      "Takht Sri Patna Sahib — Nanded — Bihar",
+      "Takht Sri Patna Sahib — Nanded — Maharashtra",
+      "Takht Sri Patna Sahib — Patna — Bihar"
+    ],
+    "answer": 3,
+    "explanation": "The notes locate Patna Sahib at Patna in Bihar. The first option changes the state, the second changes the city, and the third changes both. The notes also associate this Takht with the birthplace of Guru Gobind Singh Ji.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 23,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which Takht is associated with the birthplace of Guru Gobind Singh Ji?",
+    "options": [
+      "Takht Sri Damdama Sahib",
+      "Takht Sri Hazur Sahib",
+      "Takht Sri Patna Sahib",
+      "Sri Akal Takht Sahib"
+    ],
+    "answer": 2,
+    "explanation": "The notes identify Patna Sahib with the birthplace of Guru Gobind Singh Ji. Damdama Sahib, Hazur Sahib and Akal Takht Sahib are not given this birthplace association. The notes credit Maharaja Ranjit Singh with building this Takht.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 24,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about the geographical distribution of the Takhts:\n1. Three are situated in Punjab.\n2. Two are situated outside Punjab.\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "Both 1 and 2",
+      "2 only",
+      "Neither 1 nor 2"
+    ],
+    "answer": 1,
+    "explanation": "Statement 1 is correct because the notes specify three Takhts within Punjab. Statement 2 is correct because they specify two outside Punjab. The two outside Punjab are Hazur Sahib and Patna Sahib.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  },
+  {
+    "id": 25,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Granth Sahib Ji and the Five Takhts",
+    "difficulty": "difficult",
+    "type": "chronology",
+    "question": "Arrange the following events in chronological order, from earliest to latest:\n1. Birth of the Khalsa\n2. First installation of the scripture\n3. Foundation of the oldest Takht\nSelect the correct sequence.",
+    "options": [
+      "2–3–1",
+      "3–2–1",
+      "2–1–3",
+      "1–3–2"
+    ],
+    "answer": 0,
+    "explanation": "The notes date the first installation to 1604, the foundation of the oldest Takht to 1606, and the birth of the Khalsa to 1699. Therefore, event 2 precedes event 3, which precedes event 1. The other sequences reverse at least one of these relationships. For revision, the three events belong to the scripture, Akal Takht Sahib and the Khalsa respectively.",
+    "tags": [
+      "History of Punjab",
+      "Guru Granth Sahib Ji and the Five Takhts"
+    ]
+  }
+]

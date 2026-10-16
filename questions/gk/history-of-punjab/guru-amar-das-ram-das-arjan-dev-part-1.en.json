@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Ram Das Ji",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "What was the original name of Guru Ram Das Ji?",
+    "options": [
+      "Bhai Mohri Ji",
+      "Bhai Mohan Ji",
+      "Bhai Jetha Ji",
+      "Bhai Gurdas Ji"
+    ],
+    "answer": 2,
+    "explanation": "The notes identify Bhai Jetha Ji as the original name of Guru Ram Das Ji. Mohri Ji, Mohan Ji and Bhai Gurdas Ji are separately named persons in the chapter, rather than alternative names of Guru Ram Das Ji. The notes also place Guru Ram Das Ji in the Sodhi family.",
+    "tags": [
+      "History of Punjab",
+      "Guru Ram Das Ji"
+    ]
+  },
+  {
+    "id": 2,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Amar Das Ji",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about the family of Guru Amar Das Ji:\n1. His wife was Mansa Devi Ji.\n2. Bibi Dani Ji and Bibi Bhani Ji are not included among his children in the notes.\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 0,
+    "explanation": "Statement 1 is correct because the family table names Mansa Devi Ji as the wife of Guru Amar Das Ji. Statement 2 is incorrect because Bibi Dani Ji and Bibi Bhani Ji are both listed among his children. The same list also includes Mohri Ji and Mohan Ji, giving four named children in the notes.",
+    "tags": [
+      "History of Punjab",
+      "Guru Amar Das Ji"
+    ]
+  },
+  {
+    "id": 3,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Arjan Dev Ji",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Who is named as the son of Guru Arjan Dev Ji in the notes?",
+    "options": [
+      "Guru Hargobind Sahib Ji",
+      "Guru Ram Das Ji",
+      "Guru Amar Das Ji",
+      "Guru Nanak Dev Ji"
+    ],
+    "answer": 0,
+    "explanation": "The family table names Guru Hargobind Sahib Ji as the son of Guru Arjan Dev Ji. Guru Ram Das Ji, Guru Amar Das Ji and Guru Nanak Dev Ji are not identified as his son. The chapter presents Guru Arjan Dev Ji as the fifth Sikh Guru.",
+    "tags": [
+      "History of Punjab",
+      "Guru Arjan Dev Ji"
+    ]
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Family Relationships",
+    "difficulty": "difficult",
+    "type": "match",
+    "question": "Match List I with List II:\nList I (Guru)\nA. Guru Amar Das Ji\nB. Guru Ram Das Ji\nC. Guru Arjan Dev Ji\nList II (Parents)\n1. Hari Das Ji and Mata Daya Kaur\n2. Guru Ram Das Ji and Bibi Bhani Ji\n3. Tej Bhan Ji and Mata Bakht Kaur\nSelect the correct code:",
+    "options": [
+      "A–1, B–2, C–3",
+      "A–2, B–3, C–1",
+      "A–3, B–2, C–1",
+      "A–3, B–1, C–2"
+    ],
+    "answer": 3,
+    "explanation": "Guru Amar Das Ji was the child of Tej Bhan Ji and Mata Bakht Kaur, so A matches 3. Guru Ram Das Ji was the child of Hari Das Ji and Mata Daya Kaur, so B matches 1. Guru Arjan Dev Ji was the child of Guru Ram Das Ji and Bibi Bhani Ji, so C matches 2. These relationships also identify Bibi Bhani Ji as the mother of Guru Arjan Dev Ji.",
+    "tags": [
+      "History of Punjab",
+      "Family Relationships"
+    ]
+  },
+  {
+    "id": 5,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Manji System",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "How many preaching centres, called Manjis, did Guru Amar Das Ji establish?",
+    "options": [
+      "12",
+      "22",
+      "24",
+      "25"
+    ],
+    "answer": 1,
+    "explanation": "The notes state that Guru Amar Das Ji established 22 Manjis. The other three numbers do not match the number of preaching centres given in the chapter. These centres helped Guru Nanak Dev Ji’s bani reach people and connected them with the Guru’s teachings.",
+    "tags": [
+      "History of Punjab",
+      "Manji System"
+    ]
+  },
+  {
+    "id": 6,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Birth Chronology",
+    "difficulty": "moderate",
+    "type": "chronology",
+    "question": "Arrange the following in chronological order of birth, from earliest to latest:\n1. Guru Arjan Dev Ji\n2. Guru Amar Das Ji\n3. Guru Ram Das Ji",
+    "options": [
+      "1 → 2 → 3",
+      "2 → 3 → 1",
+      "3 → 1 → 2",
+      "3 → 2 → 1"
+    ],
+    "answer": 1,
+    "explanation": "Guru Amar Das Ji was born on 5 May 1479, making entry 2 the earliest. Guru Ram Das Ji was born on 24 September 1534, followed by Guru Arjan Dev Ji on 15 April 1563. Therefore, 2 → 3 → 1 is the only sequence that follows the birth dates in the notes.",
+    "tags": [
+      "History of Punjab",
+      "Birth Chronology"
+    ]
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Masand System",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): Under the Masand system described in the notes, collected offerings were to remain with the Masands rather than be delivered to the Guru.\nReason (R): Masands were appointed to spread Guru Nanak Dev Ji’s message and collect offerings and donations from followers.\nSelect the correct option:",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 3,
+    "explanation": "A is false because Masands were required to deliver the collected offerings and donations to the Guru. R is true because spreading Guru Nanak Dev Ji’s message and collecting contributions were their stated duties. The notes place the appointment of these representatives among Guru Ram Das Ji’s achievements.",
+    "tags": [
+      "History of Punjab",
+      "Masand System"
+    ]
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Arjan Dev Ji",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Guru is associated with the title “Sachcha Padshah” in the chapter?",
+    "options": [
+      "Guru Nanak Dev Ji",
+      "Guru Amar Das Ji",
+      "Guru Ram Das Ji",
+      "Guru Arjan Dev Ji"
+    ],
+    "answer": 3,
+    "explanation": "The revision table assigns the title Sachcha Padshah to Guru Arjan Dev Ji. It does not assign this title to any of the other three Gurus listed in the options. The notes give its English meaning as “True Emperor”.",
+    "tags": [
+      "History of Punjab",
+      "Guru Arjan Dev Ji"
+    ]
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Reforms of Guru Amar Das Ji",
+    "difficulty": "moderate",
+    "type": "not-correct",
+    "question": "Which statement about Guru Amar Das Ji’s reforms is NOT correct?",
+    "options": [
+      "He opposed the Sati system.",
+      "He opposed the Purdah system.",
+      "He made participation in langar optional before meeting the Guru.",
+      "He introduced Sikh rites for birth, marriage and death."
+    ],
+    "answer": 2,
+    "explanation": "The statement about optional participation in langar is incorrect because the notes describe langar as compulsory before meeting the Guru. The statements about opposing Sati and Purdah are both correct. The introduction of Sikh rites for birth, marriage and death is also explicitly listed. The associated principle is “Pehle Pangat, Pichhe Sangat”.",
+    "tags": [
+      "History of Punjab",
+      "Reforms of Guru Amar Das Ji"
+    ]
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Guru Amar Das Ji",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Where was Guru Amar Das Ji born?",
+    "options": [
+      "Goindwal Sahib",
+      "Chuna Mandi, Lahore",
+      "Basarke, Amritsar",
+      "Kartarpur, Jalandhar"
+    ],
+    "answer": 2,
+    "explanation": "The notes give Basarke in Amritsar as the birthplace of Guru Amar Das Ji. Goindwal Sahib, Chuna Mandi in Lahore and Kartarpur in Jalandhar do not match his birthplace in the revision table. His birth is recorded as being in the Bhalla family.",
+    "tags": [
+      "History of Punjab",
+      "Guru Amar Das Ji"
+    ]
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Contents of the Adi Granth",
+    "difficulty": "difficult",
+    "type": "statement",
+    "question": "Consider the following statements about the contents of the Adi Granth described in the notes:\n1. It includes the bani of the first five Sikh Gurus.\n2. It includes the bani of Bhagat Kabir Ji and Bhagat Ravidas Ji.\n3. It excludes the bani of Sheikh Farid Ji.\nWhich of the above are correct?",
+    "options": [
+      "1 and 3 only",
+      "1 and 2 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 1,
+    "explanation": "Statement 1 is correct because the notes mention the bani of the first five Gurus. Statement 2 is correct because Bhagat Kabir Ji and Bhagat Ravidas Ji are explicitly named. Statement 3 is incorrect because Sheikh Farid Ji’s bani is also included. The chapter separately describes the Goindwal Pothis as a collection of the bani of earlier Gurus, Bhagat Kabir Ji and Bhagat Namdev Ji.",
+    "tags": [
+      "History of Punjab",
+      "Contents of the Adi Granth"
+    ]
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Events under Guru Arjan Dev Ji",
+    "difficulty": "difficult",
+    "type": "chronology",
+    "question": "Arrange the following events from earliest to latest:\n1. Completion of the Adi Granth\n2. Founding of Tarn Taran\n3. Martyrdom of Guru Arjan Dev Ji\n4. Founding of Kartarpur in Jalandhar",
+    "options": [
+      "2 → 4 → 1 → 3",
+      "2 → 1 → 4 → 3",
+      "4 → 2 → 3 → 1",
+      "4 → 1 → 2 → 3"
+    ],
+    "answer": 0,
+    "explanation": "The notes date the founding of Tarn Taran to 1590 and Kartarpur in Jalandhar to 1594. They give 1604 for completion of the Adi Granth and 1606 for Guru Arjan Dev Ji’s martyrdom. These dates produce the sequence 2 → 4 → 1 → 3. The location qualifier Jalandhar identifies which Kartarpur is intended.",
+    "tags": [
+      "History of Punjab",
+      "Events under Guru Arjan Dev Ji"
+    ]
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Bani of Guru Ram Das Ji",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "What is the total number of hymns of Guru Ram Das Ji stated in the chapter?",
+    "options": [
+      "608",
+      "618",
+      "638",
+      "648"
+    ],
+    "answer": 2,
+    "explanation": "The exam-tip box gives 638 as the total number of hymns of Guru Ram Das Ji. The figures 608, 618 and 648 do not match the stated total. The chapter separately lists Ghorian among his compositions and describes them as songs sung during marriage ceremonies.",
+    "tags": [
+      "History of Punjab",
+      "Bani of Guru Ram Das Ji"
+    ]
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Dasvandh System",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): The Dasvandh system introduced by Guru Arjan Dev Ji supported religious and social work.\nReason (R): It directed one-tenth of income towards community welfare, including the upkeep of gurdwaras and langar.\nSelect the correct option:",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 0,
+    "explanation": "A is true because the notes identify religious and social work as purposes supported by Dasvandh. R is also true because one-tenth of income was contributed for community welfare, including gurdwaras and langar. R correctly explains A by describing how resources were raised for those activities. The notes also connect the practice with cooperation, seva and economic unity in the sangat.",
+    "tags": [
+      "History of Punjab",
+      "Dasvandh System"
+    ]
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Compositions and Authors",
+    "difficulty": "moderate",
+    "type": "not-correct",
+    "question": "Which composition–author pair is NOT correctly matched?",
+    "options": [
+      "Sukhmani Sahib — Guru Arjan Dev Ji",
+      "Lavan — Guru Arjan Dev Ji",
+      "Barah Maha (Majh) — Guru Arjan Dev Ji",
+      "Bavan Akhri — Guru Arjan Dev Ji"
+    ],
+    "answer": 1,
+    "explanation": "Lavan is attributed to Guru Ram Das Ji, so its pairing with Guru Arjan Dev Ji is incorrect. Sukhmani Sahib is correctly associated with Guru Arjan Dev Ji and is described as “The Psalm of Peace”. Barah Maha (Majh) is also listed among Guru Arjan Dev Ji’s works. Bavan Akhri is likewise listed among his works, while Lavan is described as an essential part of Anand Karaj.",
+    "tags": [
+      "History of Punjab",
+      "Compositions and Authors"
+    ]
+  },
+  {
+    "id": 16,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Martyrdom of Guru Arjan Dev Ji",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "On whose orders was Guru Arjan Dev Ji martyred, according to the notes?",
+    "options": [
+      "Emperor Akbar",
+      "Emperor Jahangir",
+      "Prince Khusrau",
+      "Mian Mir Ji"
+    ],
+    "answer": 1,
+    "explanation": "The notes explicitly state that Guru Arjan Dev Ji was martyred on Emperor Jahangir’s orders. Akbar, Khusrau and Mian Mir Ji are mentioned elsewhere but are not named as issuing those orders. The martyrdom took place at Lahore on the bank of the river Ravi.",
+    "tags": [
+      "History of Punjab",
+      "Martyrdom of Guru Arjan Dev Ji"
+    ]
+  },
+  {
+    "id": 17,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Water Structures",
+    "difficulty": "difficult",
+    "type": "match",
+    "question": "Match List I with List II:\nList I\nA. Baoli Sahib at Goindwal Sahib\nB. Beginning the excavation of the Amritsar sarovar\nC. Construction of Santokhsar and Ramsar sarovars\nList II\n1. Guru Arjan Dev Ji\n2. Guru Amar Das Ji\n3. Guru Ram Das Ji\nSelect the correct code:",
+    "options": [
+      "A–1, B–2, C–3",
+      "A–2, B–1, C–3",
+      "A–3, B–2, C–1",
+      "A–2, B–3, C–1"
+    ],
+    "answer": 3,
+    "explanation": "The notes associate Baoli Sahib at Goindwal Sahib with Guru Amar Das Ji, so A matches 2. Guru Ram Das Ji began digging the Amritsar sarovar, so B matches 3. Guru Arjan Dev Ji built Santokhsar and Ramsar, so C matches 1. Baoli Sahib is specifically described as a step-well.",
+    "tags": [
+      "History of Punjab",
+      "Water Structures"
+    ]
+  },
+  {
+    "id": 18,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Appointment of Bhai Gurdas Ji",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "Which Guru appointed Bhai Gurdas Ji to preach Guru Nanak Dev Ji’s teachings?",
+    "options": [
+      "Guru Ram Das Ji",
+      "Guru Amar Das Ji",
+      "Guru Arjan Dev Ji",
+      "Guru Nanak Dev Ji"
+    ],
+    "answer": 0,
+    "explanation": "The notes place Bhai Gurdas Ji’s appointment as a preacher under Guru Ram Das Ji’s achievements. They do not attribute this particular appointment to the other three Gurus in the options. In the same section, the city associated with Guru Ram Das Ji is Amritsar, earlier called Chak Ram Das, Guru Ka Chak and Ramdaspur.",
+    "tags": [
+      "History of Punjab",
+      "Appointment of Bhai Gurdas Ji"
+    ]
+  },
+  {
+    "id": 19,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Preparation and Service of the Adi Granth",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements:\n1. Bhai Gurdas Ji wrote down the Adi Granth under Guru Arjan Dev Ji’s guidance.\n2. Baba Buddha Ji served as its first Granthi.\n3. The Adi Granth was ceremonially installed in Harmandir Sahib.\nWhich of the above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 3,
+    "explanation": "Statement 1 is correct because the notes distinguish Bhai Gurdas Ji’s writing role from Guru Arjan Dev Ji’s guidance. Statement 2 is correct because Baba Buddha Ji is named as the first Granthi. Statement 3 is correct because Harmandir Sahib is named as the place of ceremonial installation. The chapter also credits Guru Arjan Dev Ji with completing the construction of Harmandir Sahib.",
+    "tags": [
+      "History of Punjab",
+      "Preparation and Service of the Adi Granth"
+    ]
+  },
+  {
+    "id": 20,
+    "part": 1,
+    "subject": "History of Punjab",
+    "topic": "Prince Khusrau’s Visit",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about Prince Khusrau:\n1. The notes describe him as Jahangir’s rebel son.\n2. He met Guru Arjan Dev Ji.\nWhich of the above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 2,
+    "explanation": "Statement 1 is correct because Khusrau is described as the rebel son of Jahangir. Statement 2 is correct because the notes record his meeting with Guru Arjan Dev Ji. The chapter also describes Guru Arjan Dev Ji as the first great martyr.",
+    "tags": [
+      "History of Punjab",
+      "Prince Khusrau’s Visit"
+    ]
+  }
+]
