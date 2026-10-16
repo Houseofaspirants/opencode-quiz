@@ -2228,7 +2228,9 @@ try:
              for r in vj.get("headers", [])}
     expect = [
         ("/sw.js", "no-cache"),
-        ("/data/(.*)", "max-age=60"),
+        ("/data/(.*)", "max-age=0, must-revalidate"),
+        ("/questions/(.*)", "max-age=0, must-revalidate"),
+        ("/assets/(.*)", "max-age=0, must-revalidate"),
         ("/", "max-age=0, must-revalidate"),
         ("/manifest.webmanifest", "max-age=86400"),
         ("/(robots.txt|sitemap.xml)", "max-age=3600"),
@@ -2238,21 +2240,10 @@ try:
             errors.append(f"vercel.json: missing header rule {src}")
         elif frag not in rules[src]:
             errors.append(f"vercel.json: {src} Cache-Control lacks {frag!r} (got {rules[src]!r})")
-    # Shell assets are served cache-first by the service worker, so the HTTP
-    # cache must stay SHORT: a 24h max-age let a deploy push new CSS/JS while
-    # returning stale bytes from the HTTP cache for up to a day. Bounded at
-    # <= 1 hour + SWR so every push reaches devices quickly.
-    asset_cc = rules.get("/assets/(.*)", "")
-    m = re.search(r"max-age=(\d+)", asset_cc)
-    if not m:
-        errors.append(f"vercel.json: /assets/(.*) has no max-age (got {asset_cc!r})")
-    elif int(m.group(1)) > 3600:
-        errors.append(
-            f"vercel.json: /assets/(.*) max-age={m.group(1)} > 3600 — shell assets are "
-            "cache-first, long HTTP caching delays deploys (got %r)" % asset_cc
-        )
-    elif "stale-while-revalidate" not in asset_cc:
-        errors.append(f"vercel.json: /assets/(.*) missing stale-while-revalidate (got {asset_cc!r})")
+    # Content inventories, question files and shell assets have unversioned
+    # URLs, so any max-age (or stale-while-revalidate) let a browser keep
+    # showing deleted items and hide new MCQs/content after a deploy.
+    # max-age=0 + ETag revalidation costs a 304 when nothing changed.
     if not any("must-revalidate" in v and "max-age=0" in v for k, v in rules.items() if "index" in k):
         errors.append("vercel.json: no HTML rule with max-age=0, must-revalidate")
     if not any("index" in k and "articles" in k for k in rules):

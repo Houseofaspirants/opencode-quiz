@@ -1639,7 +1639,7 @@ const HOA = (() => {
   function initServiceWorker() {
     if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register("sw.js").catch((e) =>
+        navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch((e) =>
           console.warn("[HOA] SW registration failed:", e.message)
         );
       });
@@ -2226,7 +2226,7 @@ const HOA = (() => {
   async function loadExams() {
     if (examsCache) return examsCache;
     try {
-      const res = await fetch("data/exams.json", { cache: "force-cache" });
+      const res = await fetch("data/exams.json", { cache: "no-cache" });
       examsCache = (await res.json()).exams || [];
     } catch {
       examsCache = [];

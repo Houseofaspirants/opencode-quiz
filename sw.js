@@ -1,16 +1,15 @@
 /* ============================================================================
  * sw.js | Service Worker - offline support (PWA)
  * ----------------------------------------------------------------------------
- * Strategy:
- *   • App shell (HTML/CSS/JS/icons)  → cache-first, updated in background
- *   • data/index.json                → network-first (fresh stats), cached copy
- *   • question JSON files            → cache-first (quizzes work offline)
+ * Strategy: the network is always the truth, the cache is only for offline.
+ *   • HTML pages                     → network-first, cached copy offline
+ *   • data/, questions/, JS, CSS     → network-first (ETag revalidated),
+ *                                      cached copy offline; 404 evicts it
  *   • content/*.pdf downloads        → never cached here (browser HTTP cache)
- *   • Everything else                → network with cache fallback
  *
  * Bump VERSION whenever core assets change.
  * ========================================================================== */
-const VERSION = "hoa-v81";
+const VERSION = "hoa-v82";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -138,9 +137,34 @@ self.addEventListener("activate", (event) => {
 });
 
 /* -------------------------------------------------------------- FETCH ----- */
+/**
+ * Fetches `req` past the browser's HTTP cache (an ETag revalidation, so an
+ * unchanged file costs a 304, not a download) and keeps the cache in step with
+ * the server: a good answer replaces the stored copy, and a 404/410 deletes it,
+ * so a removed quiz or document stops being served instead of living on here.
+ */
+function fresh(req, cacheName) {
+  let live = req;
+  try {
+    live = new Request(req, { cache: "no-cache" });
+  } catch (_) {
+    // e.g. an only-if-cached request: send it as it came
+  }
+  return fetch(live).then((res) => {
+    if (res.ok && res.type === "basic") {
+      const copy = res.clone();
+      caches.open(cacheName).then((c) => c.put(req, copy));
+    } else if (res.status === 404 || res.status === 410) {
+      caches.keys().then((keys) => keys.forEach((k) => caches.open(k).then((c) => c.delete(req))));
+    }
+    return res;
+  });
+}
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
+  if (req.headers.has("range")) return; // media seeking: leave to the browser
 
   const url = new URL(req.url);
   if (url.origin !== self.location.origin) return; // never touch CDNs / fonts
@@ -155,8 +179,10 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
       fetch(req)
         .then((res) => {
-          const copy = res.clone();
-          caches.open(SHELL).then((c) => c.put(req, copy));
+          if (res.ok && res.type === "basic") {
+            const copy = res.clone();
+            caches.open(SHELL).then((c) => c.put(req, copy));
+          }
           return res;
         })
         .catch(async () =>
@@ -168,39 +194,13 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  /* 2. Content inventories: always try network so additions and deletions
-        appear on the first load (offline copy kept as fallback).
-        The Blueprint's document shelf rides with them: an answer sheet
-        published a minute ago must be visible on the next load, not on the
-        load after the next one. */
-  if (url.pathname.includes("/data/") && url.pathname.endsWith(".json")) {
-    event.respondWith(
-      fetch(req)
-        .then((res) => {
-          const copy = res.clone();
-          caches.open(DATA).then((c) => c.put(req, copy));
-          return res;
-        })
-        .catch(async () => (await caches.match(req)) || Response.error())
-    );
-    return;
-  }
-
-  /* 3. Everything else (incl. question JSON): cache-first + background refresh */
+  /* 2. Everything else - data/*.json inventories, questions/*.json, JS, CSS,
+        images: network first, cache only as the offline fallback. Serving the
+        cached copy first is what made added MCQs, content and documents
+        invisible (and deleted ones linger) until a second or third reload. */
+  const bucket =
+    url.pathname.includes("/data/") || url.pathname.includes("/questions/") ? DATA : SHELL;
   event.respondWith(
-    caches.match(req).then((cached) => {
-      const network = fetch(req)
-        .then((res) => {
-          if (res.ok) {
-            const copy = res.clone();
-            caches
-              .open(url.pathname.includes("/questions/") ? DATA : SHELL)
-              .then((c) => c.put(req, copy));
-          }
-          return res;
-        })
-        .catch(() => cached);
-      return cached || network;
-    })
+    fresh(req, bucket).catch(async () => (await caches.match(req)) || Response.error())
   );
 });
