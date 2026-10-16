@@ -630,21 +630,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 40,
-      "newest": "2026-10-15",
-      "totalSize": 71703401,
-      "chapters": 20,
+      "count": 42,
+      "newest": "2026-10-16",
+      "totalSize": 75655194,
+      "chapters": 22,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 40,
-          "chapters": 20,
-          "pages": 270,
-          "totalSize": 71703401,
-          "newest": "2026-10-15",
+          "files": 42,
+          "chapters": 22,
+          "pages": 285,
+          "totalSize": 75655194,
+          "newest": "2026-10-16",
           "categories": 12,
           "regions": 2
         },
@@ -654,11 +654,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 22,
-              "chapters": 3,
-              "pages": 176,
-              "totalSize": 39535346,
-              "newest": "2026-10-03",
+              "files": 24,
+              "chapters": 5,
+              "pages": 191,
+              "totalSize": 43487139,
+              "newest": "2026-10-16",
               "categories": 6
             },
             "categories": [
@@ -1033,11 +1033,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 1,
-                  "chapters": 1,
-                  "pages": 12,
-                  "totalSize": 2534537,
-                  "newest": "2026-09-30"
+                  "files": 3,
+                  "chapters": 3,
+                  "pages": 27,
+                  "totalSize": 6486330,
+                  "newest": "2026-10-16"
                 },
                 "languages": [
                   {
@@ -1045,15 +1045,27 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+                        "name": "ਅਧਿਆਇ 01 ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+                        "parts": [
+                          {
+                            "file": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
+                      }
+                    ]
                   },
                   {
                     "id": "en",
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
                         "id": "articles",
@@ -1065,6 +1077,17 @@
                           }
                         ],
                         "pages": 12
+                      },
+                      {
+                        "id": "Chapter 01 - Making of the Indian Constitution",
+                        "name": "Chapter 01: Making of the Indian Constitution",
+                        "parts": [
+                          {
+                            "file": "material-chapter-01-making-of-the-indian-constitution.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 7
                       }
                     ]
                   }
@@ -1653,24 +1676,36 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 1,
-      "newest": "2026-09-30",
-      "totalSize": 2534537,
+      "count": 3,
+      "newest": "2026-10-16",
+      "totalSize": 6486330,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+              "name": "ਅਧਿਆਇ 01 ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+              "parts": [
+                {
+                  "file": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
+            }
+          ]
         },
         {
           "id": "en",
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "articles",
@@ -1682,11 +1717,22 @@
                 }
               ],
               "pages": 12
+            },
+            {
+              "id": "Chapter 01 - Making of the Indian Constitution",
+              "name": "Chapter 01: Making of the Indian Constitution",
+              "parts": [
+                {
+                  "file": "material-chapter-01-making-of-the-indian-constitution.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         }
       ],
-      "chapters": 1,
+      "chapters": 3,
       "hidden": true
     },
     {
@@ -2349,6 +2395,6 @@
       "hidden": true
     }
   ],
-  "total": 81,
+  "total": 83,
   "generatedBy": "scripts/study_material.py"
 }
