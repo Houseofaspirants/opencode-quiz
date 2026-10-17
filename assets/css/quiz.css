@@ -3,8 +3,11 @@
    ========================================================================== */
 
 /* ------------------------------------------------------------ QUIZ TOP BAR */
+/* Static on purpose: the site header scrolls away (its sticky box is confined
+   to the [data-site-header] wrapper), so a sticky bar here floated mid-screen
+   with page content showing above it. The bar now stays where it sits. */
 .quiz-topbar {
-  position: sticky; top: var(--header-h); z-index: 60;
+  position: relative; z-index: 60;
   background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -492,15 +495,15 @@
        breathing space below the columns when natural content is shorter. */
     min-height: 800px;
   }
-  /* STICKY side panel: parks exactly below header + top bar (JS publishes
-     --topbar-h). Capped so it always stays shorter than its grid row; inner
+  /* STICKY side panel: parks near the top of the viewport (neither the header
+     nor the quiz top bar stays on screen while scrolling). Capped so it always stays shorter than its grid row; inner
      scroll + overscroll containment → wheeling over the palette scrolls ONLY
      the palette, never the page. */
   .quiz-side {
     position: sticky;
-    top: calc(var(--header-h) + var(--topbar-h, 90px) + 12px);
+    top: 12px;
     display: grid; gap: 16px;
-    max-height: min(680px, calc(100vh - var(--header-h) - var(--topbar-h, 90px) - 26px));
+    max-height: min(680px, calc(100vh - 24px));
     overflow-y: auto;
     overscroll-behavior: contain;
   }
@@ -521,10 +524,8 @@
   .kb-hint { display: none; }
 }
 
-/* During an attempt the only sticky chrome a phone needs is the quiz topbar
-   (title · timers · submit). Letting the global header scroll away hands its
-   66px back to the question instead of stacking two sticky bars. */
+/* During an attempt no chrome sticks on a phone: the global header scrolls
+   away and hands its 66px back to the question. */
 @media (max-width: 899px) {
   body[data-page="quiz"] .site-header { position: static; }
-  body[data-page="quiz"] .quiz-topbar { top: 0; }
 }

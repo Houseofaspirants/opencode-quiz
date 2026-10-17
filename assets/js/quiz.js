@@ -133,16 +133,6 @@
     });
   }
 
-  /* Publish the sticky top-bar height (CSS: --topbar-h) so the palette always
-     parks exactly below it, whatever the title length / loaded font. */
-  const topbarEl = document.getElementById("quizTop");
-  if (topbarEl && "ResizeObserver" in window) {
-    const syncTopbar = () =>
-      document.documentElement.style.setProperty("--topbar-h", `${topbarEl.offsetHeight}px`);
-    syncTopbar();
-    new ResizeObserver(syncTopbar).observe(topbarEl);
-  }
-
   /* ============================================ 1. RESOLVE QUIZ CONTENT = */
 
   /* WHICH FILE to open for a topic. Language is UI state, never part of the
