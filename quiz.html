@@ -120,6 +120,10 @@
             <h2 class="q-text" id="qText">Loading question…</h2>
 
             <div class="options" id="options"><!-- buttons injected --></div>
+
+            <!-- Practice only: right / wrong verdict + explanation, shown the
+                 moment an option is chosen (filled by quiz.js). -->
+            <div class="q-feedback hidden" id="qFeedback" aria-live="polite"></div>
           </div>
 
           <div class="q-controls">
@@ -144,6 +148,7 @@
 
             <ul class="legend">
               <li><span class="sw ok"></span> Answered</li>
+              <li id="legendWrong"><span class="sw bad"></span> Wrong answer</li>
               <li><span class="sw no"></span> Not answered</li>
               <li><span class="sw mk"></span> Marked for review</li>
               <li><span class="sw vs"></span> Visited / skipped</li>

@@ -50,6 +50,15 @@
   // Only a mock test runs against the clock. Topic and daily practice are
   // untimed, and their Submit appears only once every question is answered.
   const timed = mode === "mock";
+  /* Practice reveals each answer the moment it is chosen: the right option
+     turns green, a wrong pick turns red, and the explanation is one tap away.
+     A revealed answer is final (no changing it after seeing the key). */
+  const instant = !timed;
+  /** Has the current (or given) question already been answered and revealed? */
+  const revealed = (i = S.i) =>
+    instant && S.answers[i] !== null && S.answers[i] !== undefined;
+  /** UI copy in the reader's language (Punjabi or English). */
+  const say = (pa, en) => ((HOA.lang && HOA.lang.get()) === "pa" ? pa : en);
   const idx = await HOA.loadIndex();
   const site = idx.site || {};
 
@@ -84,6 +93,7 @@
     qText: document.getElementById("qText"),
     qBody: document.getElementById("qBody"),
     options: document.getElementById("options"),
+    feedback: document.getElementById("qFeedback"),
     palette: document.getElementById("palette"),
     fill: document.getElementById("progressFill"),
     progressText: document.getElementById("progressText"),
@@ -416,12 +426,14 @@
         .map((opt, i) => {
           const sel = S.answers[S.i] === i;
           return `<button class="option${sel ? " selected" : ""}" data-opt="${i}"
-            ${S.locked ? "disabled" : ""} aria-pressed="${sel}">
+            ${S.locked || revealed() ? "disabled" : ""} aria-pressed="${sel}">
             <span class="opt-key">${String.fromCharCode(65 + i)}</span>
             <span>${esc(opt)}</span>
           </button>`;
         })
         .join("");
+      paintOptions();
+      paintFeedback(false);
 
       // Controls state — persistent nodes, updated in place (never replaced)
       els.prev.disabled = S.i === 0 || S.locked;
@@ -526,8 +538,43 @@
       const sel = S.answers[S.i] === i;
       btn.classList.toggle("selected", sel);
       btn.setAttribute("aria-pressed", String(sel));
-      if (S.locked) btn.disabled = true;
+      const show = revealed();
+      btn.classList.toggle("correct", show && i === QUIZ.questions[S.i].correct);
+      btn.classList.toggle("wrong", show && sel && i !== QUIZ.questions[S.i].correct);
+      if (S.locked || show) btn.disabled = true;
     });
+  }
+
+  /** Practice verdict under the options: right / wrong, the correct option
+      when the pick was wrong, and an explanation toggle. */
+  function paintFeedback(openExplanation) {
+    if (!els.feedback) return;
+    if (!revealed()) {
+      els.feedback.classList.add("hidden");
+      els.feedback.innerHTML = "";
+      return;
+    }
+    const q = QUIZ.questions[S.i];
+    const ok = S.answers[S.i] === q.correct;
+    const key = String.fromCharCode(65 + q.correct);
+    const why = q.explanation
+      ? `<p>${esc(q.explanation)}</p>`
+      : `<p class="muted">${say("ਇਸ ਸਵਾਲ ਦੀ ਵਿਆਖਿਆ ਹਾਲੇ ਨਹੀਂ ਜੋੜੀ ਗਈ।", "No explanation has been added for this question yet.")}</p>`;
+    const ref = q.reference
+      ? `<p class="qf-ref"><b>${say("ਹਵਾਲਾ", "Reference")}:</b> ${esc(q.reference)}</p>` : "";
+    els.feedback.className = `q-feedback ${ok ? "is-correct" : "is-wrong"}`;
+    els.feedback.innerHTML = `
+      <div class="qf-verdict">
+        <span class="qf-icon" aria-hidden="true">${ok ? "✅" : "❌"}</span>
+        <div>
+          <b>${ok ? say("ਸਹੀ ਜਵਾਬ!", "Correct!") : say("ਗਲਤ ਜਵਾਬ", "Wrong answer")}</b>
+          ${ok ? "" : `<span class="qf-key">${say("ਸਹੀ ਜਵਾਬ", "Correct answer")}: <b>${key}. ${esc(q.options[q.correct] ?? "")}</b></span>`}
+        </div>
+        <button type="button" class="btn btn-soft qf-toggle" aria-expanded="${openExplanation ? "true" : "false"}">
+          📖 ${say("ਵਿਆਖਿਆ", "Explanation")}
+        </button>
+      </div>
+      <div class="qf-explain${openExplanation ? "" : " hidden"}">${why}${ref}</div>`;
   }
 
   /** One-time palette build — cells are never recreated afterwards. */
@@ -545,6 +592,7 @@
       cell.className = [
         "pal-btn",
         S.answers[i] !== null ? "answered" : "",
+        revealed(i) ? (S.answers[i] === QUIZ.questions[i].correct ? "right" : "wrong") : "",
         S.marks[i] ? "marked" : "",
         S.visited[i] ? "visited" : "",
         i === S.i ? "current" : "",
@@ -593,11 +641,12 @@
   }
 
   function choose(optIndex) {
-    if (S.locked) return;
+    if (S.locked || revealed()) return;
     keepScroll(() => {
       const wasDone = allAnswered();
       S.answers[S.i] = optIndex;
       paintOptions();  // class-only: the tapped button stays put & focused
+      paintFeedback(false);
       paintPalette();
       updateProgress();
       save();          // silent auto-save (localStorage only, no UI)
@@ -605,8 +654,9 @@
         toast("All questions answered ✓ You can submit now 📤", 2200);
       }
     });
-    // Auto-advance is deliberate: tap answer → next question (scroll untouched).
-    if (S.i < QUIZ.questions.length - 1) {
+    // Mock: tap answer → next question (scroll untouched). Practice stays put
+    // so the verdict and explanation can be read; Next moves on.
+    if (!instant && S.i < QUIZ.questions.length - 1) {
       setTimeout(() => go(S.i + 1), 260);
     }
   }
@@ -820,6 +870,13 @@
       toast(added ? "Saved to bookmarks ★" : "Bookmark removed");
     });
     els.submit.addEventListener("click", confirmSubmit);
+    els.feedback?.addEventListener("click", (e) => {
+      const btn = /** @type {Element} */ (e.target).closest(".qf-toggle");
+      if (!btn) return;
+      const box = els.feedback.querySelector(".qf-explain");
+      const open = box.classList.toggle("hidden") === false;
+      btn.setAttribute("aria-expanded", String(open));
+    });
     els.remaining?.addEventListener("click", () => {
       const i = nextUnanswered();
       if (i >= 0) go(i);
@@ -976,6 +1033,11 @@
     els.quizLang.hidden = Object.keys(QUIZ.variants || {}).length < 2;
   }
   document.addEventListener("hoa:lang", swapQuizLang);
+  // Re-word an open verdict in the new language, keeping the explanation state.
+  document.addEventListener("hoa:lang", () => {
+    const box = els.feedback && els.feedback.querySelector(".qf-explain");
+    paintFeedback(!!box && !box.classList.contains("hidden"));
+  });
 
   els.title.textContent = QUIZ.title;
   els.sub.textContent = mode === "daily"
@@ -1061,6 +1123,7 @@
   wire();
   buildPalette();
   renderQuestion();
+  if (timed) document.getElementById("legendWrong")?.classList.add("hidden");
   if (timed) {
     els.timers?.classList.remove("hidden");
     startTimers();

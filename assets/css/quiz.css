@@ -122,6 +122,51 @@
 .option.selected .opt-key { background: var(--brand-grad); color: #fff; border-color: transparent; }
 .option:disabled { cursor: not-allowed; opacity: 0.75; }
 
+/* Practice: instant verdict on the chosen option */
+.option.correct, .option.wrong { opacity: 1; cursor: default; box-shadow: none; }
+.option.correct {
+  border-color: var(--success);
+  background: color-mix(in srgb, var(--success) 10%, var(--surface));
+}
+.option.correct .opt-key { background: var(--success); color: #fff; border-color: transparent; }
+.option.wrong {
+  border-color: var(--danger);
+  background: color-mix(in srgb, var(--danger) 9%, var(--surface));
+}
+.option.wrong .opt-key { background: var(--danger); color: #fff; border-color: transparent; }
+
+.q-feedback {
+  margin-top: 14px; padding: 14px 16px;
+  border-radius: var(--r-md); border: 1.5px solid var(--border);
+  background: var(--surface-2);
+  animation: qf-in 0.2s var(--ease);
+}
+.q-feedback.is-correct {
+  border-color: color-mix(in srgb, var(--success) 45%, transparent);
+  background: color-mix(in srgb, var(--success) 7%, var(--surface));
+}
+.q-feedback.is-wrong {
+  border-color: color-mix(in srgb, var(--danger) 45%, transparent);
+  background: color-mix(in srgb, var(--danger) 6%, var(--surface));
+}
+.qf-verdict { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.qf-verdict > div { flex: 1 1 220px; min-width: 0; }
+.qf-icon { font-size: 1.4rem; line-height: 1; }
+.q-feedback.is-correct .qf-verdict b:first-child { color: var(--success-text); }
+.q-feedback.is-wrong .qf-verdict > div > b { color: var(--danger-text); }
+.qf-key { display: block; margin-top: 3px; font-size: 0.92rem; color: var(--text-2); }
+.qf-key b { color: var(--success-text); }
+.qf-toggle { flex: none; }
+.qf-explain {
+  margin-top: 12px; padding-top: 12px;
+  border-top: 1px dashed var(--border);
+  font-size: 0.94rem; line-height: 1.6; color: var(--text-2);
+}
+.qf-explain p + p { margin-top: 8px; }
+.qf-ref { font-size: 0.86rem; }
+@keyframes qf-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .q-feedback { animation: none; } }
+
 /* Question controls */
 .q-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 22px; }
 .q-controls .grow { flex: 1 1 auto; }
@@ -162,6 +207,7 @@
 .pal-btn.answered { background: color-mix(in srgb, var(--success) 16%, var(--surface)); border-color: var(--success); color: var(--success); }
 .pal-btn.marked { background: color-mix(in srgb, var(--warning) 18%, var(--surface)); border-color: var(--warning); color: var(--warning); }
 .pal-btn.answered.marked { background: color-mix(in srgb, var(--warning) 18%, var(--surface)); border-color: var(--warning); color: var(--warning); }
+.pal-btn.answered.wrong:not(.marked) { background: color-mix(in srgb, var(--danger) 14%, var(--surface)); border-color: var(--danger); color: var(--danger-text); }
 .pal-btn.current { box-shadow: 0 0 0 3px var(--ring); border-color: var(--brand); }
 .pal-btn.visited:not(.answered):not(.marked) { border-style: dashed; }
 
@@ -170,6 +216,7 @@
 .legend .sw { width: 17px; height: 17px; border-radius: 5px; border: 1.5px solid var(--border); flex: none; }
 .legend .sw.ok { background: color-mix(in srgb, var(--success) 30%, transparent); border-color: var(--success); }
 .legend .sw.mk { background: color-mix(in srgb, var(--warning) 34%, transparent); border-color: var(--warning); }
+.legend .sw.bad { background: color-mix(in srgb, var(--danger) 26%, transparent); border-color: var(--danger); }
 .legend .sw.no { background: var(--surface-2); }
 .legend .sw.vs { background: var(--surface-2); border-style: dashed; }
 
