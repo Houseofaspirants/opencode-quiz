@@ -311,8 +311,8 @@ const HOA = (() => {
       "ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖੋ। ਹਰ ਜਗ੍ਹਾ ਮੁਕਾਬਲਾ ਕਰੋ।",
     "Every translated set sits beside its English twin — same questions, same order.":
       "ਹਰ ਅਨੁਵਾਦ ਕੀਤਾ ਸੈੱਟ ਆਪਣੇ ਅੰਗਰੇਜ਼ੀ ਜੋੜੀ ਦੇ ਨਾਲ ਹੁੰਦਾ ਹੈ — ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ।",
-    "Switch mid-set: question number, answers, timer and score all stay put.":
-      "ਸੈੱਟ ਵਿੱਚ ਹੀ ਭਾਸ਼ਾ ਬਦਲੋ: ਸਵਾਲ ਨੰਬਰ, ਜਵਾਬ, ਟਾਈਮਰ ਅਤੇ ਸਕੋਰ ਠੀਕ ਉਸੇ ਥਾਂ ਰਹਿੰਦੇ ਹਨ।",
+    "Switch mid-set: question number, answers, marks and score all stay put.":
+      "ਸੈੱਟ ਵਿੱਚ ਹੀ ਭਾਸ਼ਾ ਬਦਲੋ: ਸਵਾਲ ਨੰਬਰ, ਜਵਾਬ, ਨਿਸ਼ਾਨ ਅਤੇ ਸਕੋਰ ਠੀਕ ਉਸੇ ਥਾਂ ਰਹਿੰਦੇ ਹਨ।",
     "A badge tells you what is genuinely in Punjabi before you open a set.":
       "ਬੈਜ ਤੁਹਾਨੂੰ ਖੋਲ੍ਹਣ ਤੋਂ ਪਹਿਲਾਂ ਦੱਸਦਾ ਹੈ ਕਿ ਪੰਜਾਬੀ ਵਿੱਚ ਕੀ ਅਸਲ ਵਿੱਚ ਮੌਜੂਦ ਹੈ।",
     "Start in Punjabi →": "ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ →",
@@ -2367,7 +2367,7 @@ const HOA = (() => {
   }
 
   /** A quiz in progress: quiz.html and every quiz-*.html set page run the
-   *  attempt in place (body data-page="quiz"), with a timer on screen. */
+   *  attempt in place (body data-page="quiz"), with the question palette on screen. */
   function isQuizAttempt() {
     return (document.body.dataset.page || "") === "quiz";
   }

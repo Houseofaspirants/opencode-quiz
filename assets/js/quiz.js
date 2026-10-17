@@ -47,6 +47,9 @@
     if (SEED.category) params.set("category", SEED.category);
   }
   const mode = params.get("mode") || "topic"; // topic | daily | mock
+  // Only a mock test runs against the clock. Topic and daily practice are
+  // untimed, and their Submit appears only once every question is answered.
+  const timed = mode === "mock";
   const idx = await HOA.loadIndex();
   const site = idx.site || {};
 
@@ -92,6 +95,8 @@
     mark: /** @type {HTMLButtonElement} */ (document.getElementById("btnMark")),
     bookmark: document.getElementById("btnBookmark"),
     submit: document.getElementById("btnSubmit"),
+    remaining: document.getElementById("btnRemaining"),
+    timers: document.getElementById("quizTimers"),
     quizLang: document.getElementById("quizLang"),
     main: document.getElementById("quizMain"),
     empty: document.getElementById("quizEmpty"),
@@ -372,6 +377,16 @@
     });
 
   const attempted = () => S.answers.filter((a) => a !== null).length;
+  const allAnswered = () => attempted() === QUIZ.questions.length;
+  /** First unanswered question after the current one (wrapping), or -1. */
+  const nextUnanswered = () => {
+    const n = QUIZ.questions.length;
+    for (let k = 1; k <= n; k++) {
+      const i = (S.i + k) % n;
+      if (S.answers[i] === null || S.answers[i] === undefined) return i;
+    }
+    return -1;
+  };
 
   /* ==================================================== 3. RENDERING ====
    * PARTIAL UPDATES ONLY — the page is never rebuilt:
@@ -554,6 +569,19 @@
     els.fill.style.width = pct + "%";
     els.progressText.textContent =
       `${done} of ${QUIZ.questions.length} answered (${pct}%)`;
+    paintSubmit();
+  }
+
+  /** Untimed practice: Submit only once every question has an answer; until
+      then a "N left" button jumps to the next unanswered question. */
+  function paintSubmit() {
+    if (!els.remaining) return;
+    const left = QUIZ.questions.length - attempted();
+    const ready = timed || left === 0 || S.locked;
+    els.submit.classList.toggle("hidden", !ready);
+    els.remaining.classList.toggle("hidden", ready);
+    els.remaining.textContent = `⏳ ${left} left`;
+    els.remaining.title = "Go to the next unanswered question";
   }
 
   function updateTimers() {
@@ -577,11 +605,15 @@
   function choose(optIndex) {
     if (S.locked) return;
     keepScroll(() => {
+      const wasDone = allAnswered();
       S.answers[S.i] = optIndex;
       paintOptions();  // class-only: the tapped button stays put & focused
       paintPalette();
       updateProgress();
       save();          // silent auto-save (localStorage only, no UI)
+      if (!timed && !wasDone && allAnswered()) {
+        toast("All questions answered ✓ You can submit now 📤", 2200);
+      }
     });
     // Auto-advance is deliberate: tap answer → next question (scroll untouched).
     if (S.i < QUIZ.questions.length - 1) {
@@ -798,6 +830,10 @@
       toast(added ? "Saved to bookmarks ★" : "Bookmark removed");
     });
     els.submit.addEventListener("click", confirmSubmit);
+    els.remaining?.addEventListener("click", () => {
+      const i = nextUnanswered();
+      if (i >= 0) go(i);
+    });
 
     // Restart: wipe the autosaved session and reload a fresh attempt.
     // The scroll position is stored first and restored after the reload, so
@@ -819,7 +855,7 @@
         if (idxNum < QUIZ.questions[S.i].options.length) choose(idxNum);
       } else if (e.key.toLowerCase() === "m") els.mark.click();
       else if (e.key.toLowerCase() === "s") els.skip.click();
-      else if (e.key === "Enter") confirmSubmit();
+      else if (e.key === "Enter" && (timed || allAnswered())) confirmSubmit();
     });
 
     // Label swaps (Mark / Bookmark) must not resize their buttons — with
@@ -846,6 +882,10 @@
 
   function confirmSubmit() {
     if (S.locked) { finish(); return; }
+    if (!timed && !allAnswered()) {
+      toast("Answer every question first, then submit.");
+      return;
+    }
     const un = QUIZ.questions.length - attempted();
     const ov = document.createElement("div");
     ov.className = "lock-overlay";
@@ -952,7 +992,7 @@
     ? "Daily Challenge"
     : `${QUIZ.subjectName || ""}${QUIZ.topicName && QUIZ.topicName !== QUIZ.title ? " · " + QUIZ.topicName : ""}`;
   const metaDescLd =
-    `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs with timer, instant results and full answer review - free MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
+    `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs, instant results and full answer review - free MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
   /* A seeded landing page ships its OWN unique <title>/description/canonical
      in static HTML - never overwrite them with the shared template values. */
   if (!SEED) {
@@ -1031,7 +1071,10 @@
   wire();
   buildPalette();
   renderQuestion();
-  startTimers();
+  if (timed) {
+    els.timers?.classList.remove("hidden");
+    startTimers();
+  }
   HOA.analytics?.track?.("quiz_start", {
     quiz_id: QUIZ.key || "", subject: QUIZ.subject || "", mode,
     questions: n, quiz_lang: QUIZ.lang || "", resumed: !!(saved && !saved.locked),

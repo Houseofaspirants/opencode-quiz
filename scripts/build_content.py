@@ -544,7 +544,7 @@ HUBS = {
                      "daily current affairs MCQ, current affairs magazine"),
         "lead": (
             "Two things, in Punjabi and English: the monthly current affairs "
-            "magazine to read, and timed MCQ sets to practise the same months."
+            "magazine to read, and MCQ sets to practise the same months at your own pace."
         ),
         "answer": (
             "Current affairs pages explain one development at a time in Punjabi "
@@ -3769,7 +3769,7 @@ EXPLORE_BY_COLL = {
         ("current-affairs.html", "Current affairs", "The topic in the news"),
     ],
     "daily-practice": [
-        ("quiz.html?mode=daily", "Daily quiz", "The same set, timed"),
+        ("quiz.html?mode=daily", "Daily quiz", "A fresh set every day"),
         ("study-notes.html", "Study notes", "Read what you got wrong"),
         ("progress.html", "Progress", "Your streak and accuracy"),
     ],
@@ -5229,7 +5229,7 @@ def ca_section_page(page):
                    f"{'s' if n_doc != 1 else ''}")
         h1 = f"{esc(name)} Current Affairs"
         lead = (f"The monthly current affairs magazine in {esc(name)}, and "
-                f"timed MCQ sets to practise the same months.")
+                f"MCQ sets to practise the same months at your own pace.")
         answer = (f"{name} current affairs for Punjab exams: {n_doc} document"
                   f"{'s' if n_doc != 1 else ''} published, newest "
                   f"{fmt_date(page['newest']) or 'not yet'}.")
@@ -5640,7 +5640,7 @@ def ca_doors(mag_href, practice_href, n_issues, n_sets, lang_name=""):
          f"{lang_name or 'Punjabi and English'} - read online or download the PDF.",
          mag_href, "Open the magazine"),
         ("Practice", "Practice Current Affairs",
-         f"{n_sets} timed MCQ set{'s' if n_sets != 1 else ''} on the same months, "
+         f"{n_sets} MCQ set{'s' if n_sets != 1 else ''} on the same months, "
          "with answers explained.", practice_href, "Start practising"),
     )
     cards = "".join(
@@ -5767,7 +5767,7 @@ def ca_practice_section(index):
         <div class="section-head reveal"><div>
           <span class="eyebrow">Practice</span>
           <h2>Practice Current Affairs</h2>
-          <p>Timed MCQ sets, newest first. Switch between Punjabi and English
+          <p>Untimed MCQ sets, newest first. Switch between Punjabi and English
              inside any set.</p>
         </div></div>
         {body}

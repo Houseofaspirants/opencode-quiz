@@ -115,7 +115,7 @@ One **objective (MCQ) written exam** in two parts:
 - [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word Part 1](subject.html?subject=computer)
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
-- [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
+- [Basic Concepts of Economy](quiz-gk-basic-concepts-of-economy-part-1.html)
 
 ## Download the official notification
 

@@ -158,7 +158,7 @@ Start running now. Physical tests come soon after the result, and the 1,600 m in
 **General Awareness**
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
-- [Five Year Plans](quiz-gk-five-year-plans-20-mcqs-.html)
+- [Basic Concepts of Economy](quiz-gk-basic-concepts-of-economy-part-1.html)
 
 **Reasoning**
 - [Number Series Part 1](quiz-reasoning-number-series-part-1.html)

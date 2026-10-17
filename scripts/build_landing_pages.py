@@ -503,16 +503,6 @@ def q_seconds(sid):
     return SUBJECT_Q_SECONDS.get(str(sid), SITE_Q_SECONDS)
 
 
-def timer_phrase():
-    """'30 seconds a question' plus the subjects that run longer, for mixed pages."""
-    extra = {}
-    for sid, sec in SUBJECT_Q_SECONDS.items():
-        if sec != SITE_Q_SECONDS:
-            name = next((x.get("name", sid) for x in subjects if x.get("id") == sid), sid)
-            extra.setdefault(sec, []).append(name)
-    tail = "".join(f", {sec} for {' and '.join(names)}"
-                   for sec, names in sorted(extra.items()))
-    return f"{SITE_Q_SECONDS} seconds a question{tail}"
 SITE_DAILY = int(site.get("dailyQuizSize") or 20)
 SITE_PASS = int(site.get("passPercent") or 40)
 
@@ -865,11 +855,11 @@ def build_subject(s):
     kw = keywords(f"{name} MCQs", f"{name} quiz", f"{name} questions",
                   "Punjab Police MCQ", "Free online MCQ test", cfg_desc)
     h1 = f"{name} MCQs for Punjab Exams"
-    lead = (f"{cfg_desc.rstrip('.')} - organised into short, timed sets you can "
+    lead = (f"{cfg_desc.rstrip('.')} - organised into short, untimed sets you can "
             f"finish between two study sessions.")
     answer = authored.get("answer") or (
         f"{name} is one of the subjects every Punjab recruitment tests. Practise it here "
-        f"as short timed MCQ sets with instant answers and a full explanation after every "
+        f"as short untimed MCQ sets with instant answers and a full explanation after every "
         f"question, then track which lane is costing you marks.")
 
     # ---- intro: authored paragraphs first, generated facts after ------------
@@ -878,7 +868,7 @@ def build_subject(s):
             + ", ".join(c["name"] for c in cats) + " -" if cats else "")
     intro.append(
         f"{name} on House of Aspirants publishes as separate, self-contained sets{lane} "
-        f"rather than one endless paper. Each set runs {q_seconds(s['id'])} seconds per question "
+        f"rather than one endless paper. Each set is untimed, every question comes "
         f"with four options and a written explanation, so a wrong answer teaches the next "
         f"attempt instead of only scoring it.")
     intro.append(
@@ -1020,10 +1010,10 @@ def build_subject(s):
     else:
         q2a = ("Every Punjab recruitment paper draws on general awareness, so this subject "
                "sits under all of them. The exam hub lists every paper this portal covers.")
-    q3a = (f"Each question is timed at {q_seconds(s['id'])} seconds, so a {q_total}-question set "
-           f"runs to about {fmt_duration(q_total * q_seconds(s['id']))}. Sets are cleared at "
+    q3a = (f"Topic sets are untimed, so work at your own pace - a {q_total}-question set "
+           f"takes about {fmt_duration(q_total * q_seconds(s['id']))}. Sets are cleared at "
            f"{SITE_PASS}% accuracy, and you can retake them as often as you like.") \
-        if n_topics else (f"Question sets are timed at {q_seconds(s['id'])} seconds each. Once a "
+        if n_topics else (f"Question sets are untimed. Once a "
                            f"set publishes for {name} its length and estimated time appear "
                            f"here before you start.")
     q4a = ("No. You can open any quiz and answer questions immediately. A Google sign-in is "
@@ -1088,17 +1078,17 @@ def build_category(s, c):
     lead = (f"A focused lane inside {s['name']} - one folder, one set of facts, "
             f"and a short quiz to prove you know them.")
     answer = authored.get("answer") or (
-        f"{name} is a lane inside {s['name']}. Practise it here as short timed MCQ sets with "
+        f"{name} is a lane inside {s['name']}. Practise it here as short untimed MCQ sets with "
         f"four options, an instant result and a full explanation after every question.")
 
     intro = list(authored.get("intro", []))
     intro.append(
         f"This lane sits inside {s['name']} ({len(s.get('categories', []))} lanes in total), "
         f"so it stays narrow on purpose: {len(topics)} topic sets and {q_total} questions "
-        f"currently publish under {name}. Every question is timed at {q_seconds(s['id'])} "
-        f"seconds, carries four options and explains why the right answer is right.")
+        f"currently publish under {name}. Every set is untimed; each question "
+        f"carries four options and explains why the right answer is right.")
     intro.append(
-        f"Run a set untimed first to find the gaps, then repeat it against the clock. The "
+        f"Run a set once to find the gaps, then retake it a few days later. The "
         f"questions you miss twice are your revision list - keep them to one line each and "
         f"revise the file the night before the paper.")
     if not authored.get("intro"):
@@ -1116,7 +1106,7 @@ def build_category(s, c):
             f"not the sentence.")
         intro.append(
             f"A lane this size also grows without being rewritten. When the next topic set "
-            f"publishes it arrives here with its own page, its own timer and its own "
+            f"publishes it arrives here with its own page, its own questions and its own "
             f"explanation, so what you are reading stays true to what is inside the folder "
             f"without anybody coming back to edit this page by hand.")
     if ex_list:
@@ -1294,8 +1284,8 @@ def build_topic(s, c, t):
     answer = authored.get("answer") or (
         f"{name} is a topic inside {s['name']}"
         + (f" ({cat_name})" if cat_name else "")
-        + f". It runs {count} MCQs at {q_seconds(s['id'])} seconds each - roughly {est} - and "
-          f"every question explains its answer the moment you submit it.")
+        + f". It runs {count} untimed MCQs - roughly {est} - and the review "
+          f"explains every answer once you submit.")
 
     intro = list(authored.get("intro", []))
     if not intro:
@@ -1303,11 +1293,11 @@ def build_topic(s, c, t):
             f"{name} sits inside {s['name']}"
             + (f", under the {cat_name} lane" if cat_name else "")
             + f", and the portal keeps it as one self-contained set: {count} questions, four "
-              f"options each, {q_seconds(s['id'])} seconds on the clock and a written explanation "
+              f"options each, no clock and a written explanation "
               f"behind every answer.")
         intro.append(
-            "Attempt it untimed first to find the gaps, read why each distractor is wrong, "
-            "then repeat the same set against the clock. The questions you miss twice are "
+            "Attempt it once to find the gaps, read why each distractor is wrong, "
+            "then retake the same set a few days later. The questions you miss twice are "
             "the ones worth writing down.")
     intro_html = f'        <div class="landing-intro" data-landing="intro">\n{join_paras(intro)}\n        </div>'
 
@@ -1407,7 +1397,7 @@ def build_topic(s, c, t):
     link_record(filename, "topic", subject_file(sid), "subject", s["name"])
 
     if count:
-        q1a = (f"{name} runs {count} questions - about {est} at {q_seconds(s['id'])} seconds each. "
+        q1a = (f"{name} runs {count} untimed questions - about {est} at a steady pace. "
                f"The set clears at {SITE_PASS}% and you can retake it as often as you like.")
     else:
         q1a = (f"The first file for this topic has not been added yet. The build scans the "
@@ -1681,19 +1671,19 @@ def build_quiz(s, c, t):
         f"Practise {name} online: {count} MCQs in about {est}, instant scoring, question "
         f"palette and a full answer review. Free topic quiz for Punjab exam preparation.")
     kw = keywords(f"{name} quiz", f"{name} MCQs", f"{s['name']} MCQs",
-                  "MCQ quiz with timer", "Free online MCQ test")
+                  "MCQ practice test", "Free online MCQ test")
     h1 = name
     lead = (f"{count} questions from {s['name']}"
             + (f" > {c['name']}" if c else "")
-            + f" - {q_seconds(s['id'])} seconds a question, about {est} in total.")
-    answer = (f"{name} is a timed topic quiz: {count} questions at {q_seconds(s['id'])} seconds "
-              f"each, about {est} in all. You get a question palette, instant scoring, a "
+            + f" - untimed, about {est} at a steady pace.")
+    answer = (f"{name} is an untimed topic quiz: {count} questions, about {est} at a "
+              f"steady pace. You get a question palette, instant scoring, a "
               f"{SITE_PASS}% pass mark and a full answer review - free, and no sign-in is "
               f"needed to start.")
 
     faqs = [
         (f"How many questions are in the {name} quiz?",
-         f"{count} questions, about {est} at {q_seconds(s['id'])} seconds each. Every question "
+         f"{count} questions with no timer, about {est} at a steady pace. Every question "
          f"has four options, and the review screen shows the explanation behind each answer."),
         ("What counts as a pass?",
          f"A set is cleared at {SITE_PASS}% - that is {max(1, round(count * SITE_PASS / 100))} "
@@ -1749,15 +1739,15 @@ def build_quiz(s, c, t):
         + join_paras([
             f"{name} draws {count} questions from {s['name']}"
             + (f" > {c['name']}" if c else "")
-            + f", each timed at {q_seconds(s['id'])} seconds. A question palette in the sidebar "
-              f"tracks answered, skipped and marked questions, progress autosaves if you "
+            + f", with no timer. A question palette in the sidebar "
+              f"tracks answered, skipped and marked questions, Submit appears once all are answered, progress autosaves if you "
               f"leave mid-quiz, and the final screen replays every answer with its "
               f"explanation.",
             (f"Difficulty is reported as {diff} because "
              + ("the file already tags its questions by level."
                 if diff != "Mixed" else
                 "this set does not carry per-question difficulty tags yet - treat your first "
-                "timed attempt as the baseline and let the score decide.")
+                "attempt as the baseline and let the score decide.")
              + f" The last build refreshed this page on {updated or 'the next deploy'}."),
         ]) + "\n        </div>",
         pad_top=False))
@@ -1976,7 +1966,7 @@ def build_exam(e):
             f"quizzes second, mock tests last.")
     answer = (f"To prepare for {name}, study the subjects it leans on"
               + (f" - {', '.join(s['name'] for s in exam_subjects[:3])}" if exam_subjects else "")
-              + f", run their topic quizzes as timed sets, then finish with a full mock test. "
+              + f", run their topic quizzes at your own pace, then finish with a full mock test. "
                 f"Every part of that route links out from this page.")
 
     intro = [summary] if summary else []
@@ -1991,17 +1981,16 @@ def build_exam(e):
               "question set takes two clicks.")
         intro.append(
             "Practise in the order the marks come: untimed topic sets until the pattern is "
-            f"familiar, then the same sets against the clock ({timer_phrase()}), then a "
-            f"full mock test at {SITE_PASS}% to clear. Wrong answers save themselves to "
+            f"familiar, then a timed full mock test at {SITE_PASS}% to clear. Wrong answers save themselves to "
             "bookmarks, so revision stays inside the tool you practise in.")
     else:
         intro.append(
             f"{name} papers are syllabus-heavy, so this portal does not guess at a subject "
             "list for them. The route below still works: pick the study guide that matches "
-            "your timeline, run the subject library as short timed sets, and finish with a "
+            "your timeline, run the subject library as short untimed sets, and finish with a "
             "full mock test to find the lane costing you marks.")
         intro.append(
-            f"Every set is timed at {timer_phrase()}, clears at "
+            f"Every topic set is untimed and opens Submit once all questions are answered; it clears at "
             f"{SITE_PASS}% and explains each answer the moment you submit it.")
     intro_html = f'        <div class="landing-intro" data-landing="intro">\n{join_paras(intro)}\n        </div>'
 
@@ -2321,7 +2310,7 @@ def build_cluster(c):
            + "Every area listed above links back to the page that hosts it.")
     q2a = (f"Revise one area at a time and test it before moving on - the topics above are "
            f"ordered so each rests on the one before it. Once they are familiar, switch to "
-           f"timed practice: sets run at {timer_phrase()} and clear at "
+           f"a timed mock test, which clears at "
            f"{SITE_PASS}% accuracy.")
     q3a = ("Yes. Every quiz, mock test and study guide on House of Aspirants is free, and no "
            "sign-in is needed to open a set - Google sign-in is optional and only saves "

@@ -132,7 +132,7 @@ references:
 - [ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/ppsc-cooperative-inspector/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
-- [ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ](quiz-gk-five-year-plans-20-mcqs-.html)
+- [ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ](quiz-gk-basic-concepts-of-economy-part-1.html)
 - [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
 - [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)

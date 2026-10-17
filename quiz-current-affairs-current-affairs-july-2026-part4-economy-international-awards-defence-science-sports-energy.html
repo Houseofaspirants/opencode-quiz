@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Current Affairs July 2026 - Part 4 Quiz - Free MCQs</title>
   <meta name="description" content="Practise Current Affairs July 2026 - Part 4 online: 20 MCQs in about 10 min, instant scoring, question palette and a full answer review. Free MCQ practice.">
-  <meta name="keywords" content="Current Affairs July 2026 - Part 4 quiz, Current Affairs July 2026 - Part 4 MCQs, Current Affairs MCQs, MCQ quiz with timer, Free online MCQ test">
+  <meta name="keywords" content="Current Affairs July 2026 - Part 4 quiz, Current Affairs July 2026 - Part 4 MCQs, Current Affairs MCQs, MCQ practice test, Free online MCQ test">
   <!-- Topic quizzes are indexable; quiz.js flips this to noindex for ?mode=daily / ?mode=mock -->
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#4f46e5">
@@ -118,7 +118,7 @@
           "name": "How many questions are in the Current Affairs July 2026 - Part 4 quiz?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "20 questions, about 10 min at 30 seconds each. Every question has four options, and the review screen shows the explanation behind each answer."
+            "text": "20 questions with no timer, about 10 min at a steady pace. Every question has four options, and the review screen shows the explanation behind each answer."
           }
         },
         {
@@ -185,12 +185,15 @@
           </button>
         </div>
 
-        <div class="timers">
+        <div class="timers hidden" id="quizTimers">
           <span class="timer-pill" id="qTimer" aria-label="Question timer">⏱ 00:30 <small>Q</small></span>
           <span class="timer-pill" id="oTimer" aria-label="Overall timer">⌛ 00:00 <small>Total</small></span>
         </div>
 
-        <button class="btn btn-primary" id="btnSubmit">📤 Submit</button>
+        <!-- Practice: Submit appears only once every question is answered;
+             until then this button counts what is left and jumps to it. -->
+        <button class="btn btn-soft" id="btnRemaining" type="button">⏳ 0 left</button>
+        <button class="btn btn-primary hidden" id="btnSubmit">📤 Submit</button>
       </div>
 
       <div class="mt-2">
@@ -248,7 +251,7 @@
 
           <p class="muted text-sm mt-2 kb-hint">
             Keyboard: <b>←</b>/<b>→</b> navigate · <b>1–4</b> answer · <b>M</b> mark ·
-            <b>S</b> skip · <b>Enter</b> submit · answers auto-save.
+            <b>S</b> skip · <b>Enter</b> submit (once all are answered) · answers auto-save.
           </p>
         </section>
 
@@ -294,11 +297,11 @@
         </div>
         <div class="answer-box">
           <span class="ab-label">Quick answer</span>
-          <p>Current Affairs July 2026 - Part 4 is a timed topic quiz: 20 questions at 30 seconds each, about 10 min in all. You get a question palette, instant scoring, a 40% pass mark and a full answer review - free, and no sign-in is needed to start.</p>
+          <p>Current Affairs July 2026 - Part 4 is an untimed topic quiz: 20 questions, about 10 min at a steady pace. You get a question palette, instant scoring, a 40% pass mark and a full answer review - free, and no sign-in is needed to start.</p>
         </div>
         <div class="landing-intro" data-landing="intro">
-      <p>Current Affairs July 2026 - Part 4 draws 20 questions from Current Affairs &gt; July, each timed at 30 seconds. A question palette in the sidebar tracks answered, skipped and marked questions, progress autosaves if you leave mid-quiz, and the final screen replays every answer with its explanation.</p>
-      <p>Difficulty is reported as Mixed because this set does not carry per-question difficulty tags yet - treat your first timed attempt as the baseline and let the score decide. The last build refreshed this page on 26 Sep 2026.</p>
+      <p>Current Affairs July 2026 - Part 4 draws 20 questions from Current Affairs &gt; July, with no timer. A question palette in the sidebar tracks answered, skipped and marked questions, Submit appears once all are answered, progress autosaves if you leave mid-quiz, and the final screen replays every answer with its explanation.</p>
+      <p>Difficulty is reported as Mixed because this set does not carry per-question difficulty tags yet - treat your first attempt as the baseline and let the score decide. The last build refreshed this page on 26 Sep 2026.</p>
         </div>
       </div>
     </section>
@@ -406,7 +409,7 @@
         <div class="faq-list">
           <div class="faq-item">
             <h3>How many questions are in the Current Affairs July 2026 - Part 4 quiz?</h3>
-            <p>20 questions, about 10 min at 30 seconds each. Every question has four options, and the review screen shows the explanation behind each answer.</p>
+            <p>20 questions with no timer, about 10 min at a steady pace. Every question has four options, and the review screen shows the explanation behind each answer.</p>
           </div>
           <div class="faq-item">
             <h3>What counts as a pass?</h3>

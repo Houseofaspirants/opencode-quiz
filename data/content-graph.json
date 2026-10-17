@@ -23,7 +23,7 @@
   "nodes": 594,
   "edges": 3481,
   "silos": 35,
-  "clusters": 82,
+  "clusters": 84,
   "pillars": 34
  },
  "nodes": [
@@ -6847,6 +6847,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-basic-concepts-of-economy-part-1.html",
+   "url": "/quiz-gk-basic-concepts-of-economy-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
    "type": "quiz",
@@ -6873,18 +6885,6 @@
   {
    "id": "quiz-gk-expansion-of-british-power-part-2.html",
    "url": "/quiz-gk-expansion-of-british-power-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-five-year-plans-20-mcqs-.html",
-   "url": "/quiz-gk-five-year-plans-20-mcqs-.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -13623,13 +13623,13 @@
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14163,13 +14163,13 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20157,13 +20157,13 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20571,7 +20571,7 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21411,13 +21411,13 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21615,13 +21615,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21819,13 +21819,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22041,13 +22041,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25293,13 +25293,13 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25677,7 +25677,7 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26439,13 +26439,13 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26643,13 +26643,13 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26841,13 +26841,13 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27039,13 +27039,13 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-five-year-plans-20-mcqs-.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28875,6 +28875,8 @@
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+    "topic-gk-basic-concepts-of-economy-part-1.html",
+    "topic-gk-basic-concepts-of-economy-part-2.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
     "topic-gk-expansion-of-british-power-part-1.html",
     "topic-gk-expansion-of-british-power-part-2.html",

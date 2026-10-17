@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 24,
-    "topics": 47,
-    "quizzes": 47,
-    "questions": 1068,
+    "topics": 49,
+    "quizzes": 49,
+    "questions": 1104,
     "studentsPracticed": 12500
   },
   "site": {
@@ -148,6 +148,66 @@
             "pa": 24
           },
           "landing": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2"
+        },
+        {
+          "id": "basic-concepts-of-economy-part-1",
+          "name": "Basic Concepts of Economy - Part 1",
+          "description": "",
+          "file": "questions/gk/economy/basic-concepts-of-economy-part-1.en.json",
+          "count": 18,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792234581862,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/basic-concepts-of-economy-part-1.en.json",
+            "pa": "questions/gk/economy/basic-concepts-of-economy-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Basic Concepts of Economy - Part 1",
+            "pa": "ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1"
+          },
+          "counts": {
+            "en": 18,
+            "pa": 18
+          },
+          "landing": "/quiz-gk-basic-concepts-of-economy-part-1"
+        },
+        {
+          "id": "basic-concepts-of-economy-part-2",
+          "name": "Basic Concepts of Economy - Part 2",
+          "description": "",
+          "file": "questions/gk/economy/basic-concepts-of-economy-part-2.en.json",
+          "count": 18,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792234581862,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/basic-concepts-of-economy-part-2.en.json",
+            "pa": "questions/gk/economy/basic-concepts-of-economy-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Basic Concepts of Economy - Part 2",
+            "pa": "ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2"
+          },
+          "counts": {
+            "en": 18,
+            "pa": 18
+          },
+          "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
         },
         {
           "id": "04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2",
@@ -776,7 +836,68 @@
           "name": "Indian Economy",
           "folder": "economy",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "basic-concepts-of-economy-part-1",
+              "name": "Basic Concepts of Economy - Part 1",
+              "description": "",
+              "file": "questions/gk/economy/basic-concepts-of-economy-part-1.en.json",
+              "count": 18,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792234581862,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/basic-concepts-of-economy-part-1.en.json",
+                "pa": "questions/gk/economy/basic-concepts-of-economy-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Basic Concepts of Economy - Part 1",
+                "pa": "ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1"
+              },
+              "counts": {
+                "en": 18,
+                "pa": 18
+              },
+              "landing": "/quiz-gk-basic-concepts-of-economy-part-1"
+            },
+            {
+              "id": "basic-concepts-of-economy-part-2",
+              "name": "Basic Concepts of Economy - Part 2",
+              "description": "",
+              "file": "questions/gk/economy/basic-concepts-of-economy-part-2.en.json",
+              "count": 18,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792234581862,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/basic-concepts-of-economy-part-2.en.json",
+                "pa": "questions/gk/economy/basic-concepts-of-economy-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Basic Concepts of Economy - Part 2",
+                "pa": "ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2"
+              },
+              "counts": {
+                "en": 18,
+                "pa": 18
+              },
+              "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
+            }
+          ],
           "landing": "/category-gk-economy"
         },
         {
@@ -3049,6 +3170,14 @@
     "questions/english/05-subject-and-predicate-complete-and-simple-forms-part-1-en.json": [
       "baa1941338d8f2c1",
       1792229193819
+    ],
+    "questions/gk/economy/basic-concepts-of-economy-part-1.en.json": [
+      "612f37faa36a54b0",
+      1792234581862
+    ],
+    "questions/gk/economy/basic-concepts-of-economy-part-2.en.json": [
+      "7c533f01cba78c78",
+      1792234581862
     ],
     "questions/gk/history-of-punjab/03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.en.json": [
       "c43059a64a96729e",
