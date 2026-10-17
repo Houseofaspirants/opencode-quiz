@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 590,
-  "edges": 3465,
+  "nodes": 593,
+  "edges": 3481,
   "silos": 35,
   "clusters": 82,
   "pillars": 34
@@ -2058,6 +2058,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/economy/punjabi%20/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA.pdf",
+   "url": "/content/study-material/economy/punjabi%20/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "url": "/content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "type": "page",
@@ -3863,6 +3875,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-adhiai-01-arthvivstha-de-mudhle-sanklp",
+   "url": "/material-adhiai-01-arthvivstha-de-mudhle-sanklp",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "url": "/material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 01 ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ Basic Concepts of",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -7713,6 +7749,12 @@
   },
   {
    "from": "archive-category-economy.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
    "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "contextual",
    "weight": 1
@@ -10048,6 +10090,12 @@
   {
    "from": "archives.html",
    "to": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13538,6 +13586,96 @@
    "weight": 1
   },
   {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "content/study-material/economy/punjabi%20/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -13611,13 +13749,13 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-articles.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-articles.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13881,13 +14019,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14037,12 +14175,6 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-basic-concepts-of-economy.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -14061,20 +14193,14 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-part-1-english-en.html",
+   "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-part-1-punjabi-pa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-part-2-english-en.html",
-   "rel": "related-pdf",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -14086,12 +14212,6 @@
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
    "to": "material-chapter-01-making-of-the-indian-constitution.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-subject-predicate-complete-simple.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14169,6 +14289,12 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
@@ -14176,12 +14302,6 @@
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-articles.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18303,7 +18423,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18393,7 +18513,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -27237,6 +27357,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/economy/punjabi%20/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27766,6 +27892,12 @@
   {
    "from": "study-material.html",
    "to": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "contextual",
    "weight": 1
   },

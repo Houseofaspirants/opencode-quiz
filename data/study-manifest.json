@@ -641,20 +641,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 43,
+      "count": 44,
       "newest": "2026-10-17",
-      "totalSize": 77408852,
-      "chapters": 23,
+      "totalSize": 79250758,
+      "chapters": 24,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 43,
-          "chapters": 23,
-          "pages": 291,
-          "totalSize": 77408852,
+          "files": 44,
+          "chapters": 24,
+          "pages": 297,
+          "totalSize": 79250758,
           "newest": "2026-10-17",
           "categories": 12,
           "regions": 2
@@ -665,10 +665,10 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 25,
-              "chapters": 6,
-              "pages": 197,
-              "totalSize": 45240797,
+              "files": 26,
+              "chapters": 7,
+              "pages": 203,
+              "totalSize": 47082703,
               "newest": "2026-10-17",
               "categories": 6
             },
@@ -1184,10 +1184,10 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 1,
-                  "chapters": 1,
-                  "pages": 6,
-                  "totalSize": 1753658,
+                  "files": 2,
+                  "chapters": 2,
+                  "pages": 12,
+                  "totalSize": 3595564,
                   "newest": "2026-10-17"
                 },
                 "languages": [
@@ -1196,8 +1196,20 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
+                        "name": "ਅਧਿਆਇ 01 ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ Basic Concepts of Economy",
+                        "parts": [
+                          {
+                            "file": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 6
+                      }
+                    ]
                   },
                   {
                     "id": "en",
@@ -1941,17 +1953,29 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 1,
+      "count": 2,
       "newest": "2026-10-17",
-      "totalSize": 1753658,
+      "totalSize": 3595564,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
+              "name": "ਅਧਿਆਇ 01 ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ Basic Concepts of Economy",
+              "parts": [
+                {
+                  "file": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
+                  "n": 1
+                }
+              ],
+              "pages": 6
+            }
+          ]
         },
         {
           "id": "en",
@@ -1974,7 +1998,7 @@
           ]
         }
       ],
-      "chapters": 1,
+      "chapters": 2,
       "hidden": true
     },
     {
@@ -2430,6 +2454,6 @@
       "hidden": true
     }
   ],
-  "total": 85,
+  "total": 86,
   "generatedBy": "scripts/study_material.py"
 }
