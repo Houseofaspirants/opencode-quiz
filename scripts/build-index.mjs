@@ -265,7 +265,11 @@ function variantTitle(data, stemId, part, setTopic) {
       : humanize(stemId);
   // Parts 1-4 of one month all carry the same JSON "topic", so without this
   // they would be four identically named cards - and four identical <title>s.
-  if (part && setTopic) name = `${setTopic} - Part ${part}`;
+  // A topic that already ends in its own "Part N" keeps it once, not twice.
+  if (part && setTopic) {
+    name = new RegExp(`\\bpart\\s*${part}$`, "i").test(setTopic)
+      ? setTopic : `${setTopic} - Part ${part}`;
+  }
   return name;
 }
 

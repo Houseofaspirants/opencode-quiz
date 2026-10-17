@@ -233,8 +233,10 @@ def variant_title(data, stem_id, part, set_topic):
         name = humanize(stem_id)
     # Parts 1-4 of one month all carry the same JSON "topic", so without this
     # they would be four identically named cards - and four identical <title>s.
+    # A topic that already ends in its own "Part N" keeps it once, not twice.
     if part and set_topic:
-        name = f"{set_topic} - Part {part}"
+        name = (set_topic if re.search(rf"\bpart\s*{part}$", set_topic, re.I)
+                else f"{set_topic} - Part {part}")
     return name
 
 

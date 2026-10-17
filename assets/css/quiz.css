@@ -509,24 +509,31 @@
   .dash-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 }
 
-/* PHONE QUIZ CHROME — title and Submit share the top row (submit always
-   reachable), timers get their own row underneath. Total chrome height stays
-   under ~150px so the question still owns most of the screen. */
+/* PHONE QUIZ CHROME — one slim row: the set title (one line) and the
+   "N left" / Submit button, then a thin progress line. The subject line and
+   the language switch are dropped here: the site header already carries the
+   same ਪੰ / EN toggle (one shared state), so the bar stays ~80px tall and the
+   question owns the screen. */
 @media (max-width: 560px) {
-  /* Header (66px) is sticky too, so this bar must stay slim or it eats a
-     quarter of a phone screen before the question even starts. */
-  .quiz-topbar { padding: 8px 0; }
-  .quiz-topbar-inner { gap: 8px; }
+  .quiz-topbar { padding: 8px 0 6px; }
+  .quiz-topbar-inner { gap: 10px; flex-wrap: nowrap; }
   .quiz-topbar-inner > div:first-child { flex: 1 1 auto; min-width: 0; }
-  .quiz-topbar .quiz-title small { display: none; }
+  .quiz-topbar .quiz-title {
+    font-size: 0.92rem;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .quiz-topbar .quiz-title small,
+  .quiz-topbar #quizSub,
+  .quiz-topbar .quiz-lang { display: none; }
   .quiz-topbar-inner > .btn {
     order: 2; flex: none;
-    min-height: 44px; padding: 9px 16px; font-size: 0.9rem;
+    min-height: 36px; padding: 6px 13px; font-size: 0.84rem;
   }
+  .progress-track { height: 6px; }
   .timers { order: 3; width: 100%; margin-left: 0; justify-content: space-between; gap: 8px; }
   .timer-pill { flex: 1 1 0; justify-content: center; padding: 5px 8px; font-size: 0.8rem; }
   .quiz-topbar .mt-2 { margin-top: 6px; }
-  .progress-meta { font-size: 0.72rem; margin-top: 5px; }
+  .progress-meta { font-size: 0.7rem; margin-top: 4px; }
   .q-card { padding: 16px 15px; }
   .quiz-layout { gap: 16px; padding: 16px 0 30px; }
 }
