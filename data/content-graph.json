@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 586,
-  "edges": 3436,
+  "nodes": 590,
+  "edges": 3465,
   "silos": 35,
   "clusters": 82,
   "pillars": 34
@@ -57,6 +57,18 @@
    "type": "archive",
    "template": "",
    "title": "Culture of Punjab",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-economy.html",
+   "url": "/archive-category-economy.html",
+   "type": "archive",
+   "template": "",
+   "title": "Economy",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2034,6 +2046,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
+   "url": "/content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "url": "/content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "type": "page",
@@ -3959,6 +3983,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language) (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-chapter-01-basic-concepts-of-economy",
+   "url": "/material-chapter-01-basic-concepts-of-economy",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-chapter-01-basic-concepts-of-economy.html",
+   "url": "/material-chapter-01-basic-concepts-of-economy.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 01: Basic Concepts of Economy (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -7646,6 +7694,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-economy.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-english.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -9579,6 +9669,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-english.html",
    "rel": "contextual",
    "weight": 1
@@ -9982,6 +10078,12 @@
   {
    "from": "archives.html",
    "to": "material-bhasha-ate-panjabi-bhasha.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13515,13 +13617,13 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-subject-predicate-complete-simple.html",
+   "to": "material-chapter-01-making-of-the-indian-constitution.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13785,13 +13887,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-subject-predicate-complete-simple.html",
+   "to": "material-chapter-01-making-of-the-indian-constitution.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13886,6 +13988,114 @@
    "weight": 1
   },
   {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-chapter-01-basic-concepts-of-economy",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-part-1-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-part-1-punjabi-pa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-part-2-english-en.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-subject-predicate-complete-simple.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -13971,7 +14181,7 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-subject-predicate-complete-simple.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18099,7 +18309,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18189,7 +18399,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -27021,6 +27231,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27580,6 +27796,12 @@
   {
    "from": "study-material.html",
    "to": "material-bhasha-ate-panjabi-bhasha.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-chapter-01-basic-concepts-of-economy.html",
    "rel": "contextual",
    "weight": 1
   },

@@ -641,21 +641,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 42,
-      "newest": "2026-10-16",
-      "totalSize": 75655194,
-      "chapters": 22,
+      "count": 43,
+      "newest": "2026-10-17",
+      "totalSize": 77408852,
+      "chapters": 23,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 42,
-          "chapters": 22,
-          "pages": 285,
-          "totalSize": 75655194,
-          "newest": "2026-10-16",
+          "files": 43,
+          "chapters": 23,
+          "pages": 291,
+          "totalSize": 77408852,
+          "newest": "2026-10-17",
           "categories": 12,
           "regions": 2
         },
@@ -665,11 +665,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 24,
-              "chapters": 5,
-              "pages": 191,
-              "totalSize": 43487139,
-              "newest": "2026-10-16",
+              "files": 25,
+              "chapters": 6,
+              "pages": 197,
+              "totalSize": 45240797,
+              "newest": "2026-10-17",
               "categories": 6
             },
             "categories": [
@@ -1184,11 +1184,11 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 6,
+                  "totalSize": 1753658,
+                  "newest": "2026-10-17"
                 },
                 "languages": [
                   {
@@ -1204,8 +1204,20 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "Chapter 01 - Basic Concepts of Economy",
+                        "name": "Chapter 01: Basic Concepts of Economy",
+                        "parts": [
+                          {
+                            "file": "material-chapter-01-basic-concepts-of-economy.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 6
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1929,9 +1941,9 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-17",
+      "totalSize": 1753658,
       "languages": [
         {
           "id": "pa",
@@ -1946,11 +1958,23 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "Chapter 01 - Basic Concepts of Economy",
+              "name": "Chapter 01: Basic Concepts of Economy",
+              "parts": [
+                {
+                  "file": "material-chapter-01-basic-concepts-of-economy.html",
+                  "n": 1
+                }
+              ],
+              "pages": 6
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 1,
       "hidden": true
     },
     {
@@ -2406,6 +2430,6 @@
       "hidden": true
     }
   ],
-  "total": 84,
+  "total": 85,
   "generatedBy": "scripts/study_material.py"
 }
