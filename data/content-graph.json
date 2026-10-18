@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 566,
+  "nodes": 567,
   "edges": 3280,
   "silos": 35,
-  "clusters": 84,
+  "clusters": 87,
   "pillars": 34
  },
  "nodes": [
@@ -6549,6 +6549,18 @@
   {
    "id": "quiz-gk-expansion-of-british-power-part-1.html",
    "url": "/quiz-gk-expansion-of-british-power-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
+   "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -14277,7 +14289,7 @@
   },
   {
    "from": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
-   "to": "quiz-gk-expansion-of-british-power-part-1.html",
+   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14367,7 +14379,7 @@
   },
   {
    "from": "material-chapter-03-extension-of-british-paramountcy-through-administrati.html",
-   "to": "quiz-gk-expansion-of-british-power-part-1.html",
+   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27338,6 +27350,9 @@
     "topic-gk-dpsp-fundamental-duties-part-1.html",
     "topic-gk-expansion-of-british-power-part-1.html",
     "topic-gk-expansion-of-british-power-part-2.html",
+    "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
+    "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
+    "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
     "topic-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
     "topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
     "topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",

@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-18T05:56:17.399Z",
+  "generatedAt": "2026-10-18T07:54:40.519Z",
   "stats": {
     "subjects": 7,
     "categories": 24,
-    "topics": 49,
-    "quizzes": 49,
-    "questions": 1104,
+    "topics": 55,
+    "quizzes": 55,
+    "questions": 1239,
     "studentsPracticed": 12500
   },
   "site": {
@@ -88,6 +88,66 @@
             "pa": 9
           },
           "landing": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2"
+        },
+        {
+          "id": "arrival-of-european-in-india-part-1",
+          "name": "Arrival of Europeans - Part 1",
+          "description": "",
+          "file": "questions/gk/modern-history/arrival-of-european-in-india-part-1.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310077118,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/arrival-of-european-in-india-part-1.en.json",
+            "pa": "questions/gk/modern-history/arrival-of-european-in-india-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Arrival of Europeans - Part 1",
+            "pa": "Arrival of Europeans - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-arrival-of-european-in-india-part-1"
+        },
+        {
+          "id": "arrival-of-european-in-india-part-2",
+          "name": "Arrival of Europeans - Part 2",
+          "description": "",
+          "file": "questions/gk/modern-history/arrival-of-european-in-india-part-2.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310077118,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/arrival-of-european-in-india-part-2.en.json",
+            "pa": "questions/gk/modern-history/arrival-of-european-in-india-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Arrival of Europeans - Part 2",
+            "pa": "Arrival of Europeans - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-arrival-of-european-in-india-part-2"
         },
         {
           "id": "baba-banda-singh-bahadur-and-the-dal-khalsa-part-1",
@@ -210,6 +270,36 @@
           "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
         },
         {
+          "id": "expansion-of-english-east-india-company-in-india-part-1",
+          "name": "Bengal - Part 1",
+          "description": "",
+          "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310077118,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.en.json",
+            "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Bengal - Part 1",
+            "pa": "ਬੰਗਾਲ - Part 1"
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-1"
+        },
+        {
           "id": "04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2",
           "name": "Birthplace of Guru Teg Bahadur Ji - Part 2",
           "description": "",
@@ -270,64 +360,94 @@
           "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
         },
         {
-          "id": "expansion-of-british-power-part-1",
-          "name": "Expansion of British Power - Part 1",
+          "id": "extension-of-british-paramountcy-through-administrative-policy-part-1",
+          "name": "Extension of British Paramountcy - Part 1",
           "description": "",
-          "file": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+          "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.en.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1791007734569,
+          "updatedAt": 1792310035261,
           "category": "modern-history",
           "language": "en",
           "variants": {
-            "en": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
-            "pa": "questions/gk/modern-history/expansion-of-british-power-part-1.pa.json"
+            "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.en.json",
+            "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Expansion of British Power - Part 1",
-            "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 1"
+            "en": "Extension of British Paramountcy - Part 1",
+            "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1"
           },
           "counts": {
             "en": 25,
             "pa": 25
           },
-          "landing": "/quiz-gk-expansion-of-british-power-part-1"
+          "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1"
         },
         {
-          "id": "expansion-of-british-power-part-2",
-          "name": "Expansion of British Power - Part 2",
+          "id": "extension-of-british-paramountcy-through-administrative-policy-part-2",
+          "name": "Extension of British Paramountcy - Part 2",
           "description": "",
-          "file": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+          "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.en.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1791007734569,
+          "updatedAt": 1792310035261,
           "category": "modern-history",
           "language": "en",
           "variants": {
-            "en": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
-            "pa": "questions/gk/modern-history/expansion-of-british-power-part-2.pa.json"
+            "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.en.json",
+            "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Expansion of British Power - Part 2",
-            "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 2"
+            "en": "Extension of British Paramountcy - Part 2",
+            "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2"
           },
           "counts": {
             "en": 25,
             "pa": 25
           },
-          "landing": "/quiz-gk-expansion-of-british-power-part-2"
+          "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2"
+        },
+        {
+          "id": "extension-of-british-paramountcy-through-administrative-policy-part-3",
+          "name": "Extension of British Paramountcy - Part 3",
+          "description": "",
+          "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310035261,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json",
+            "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Extension of British Paramountcy - Part 3",
+            "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3"
         },
         {
           "id": "04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3",
@@ -358,6 +478,36 @@
             "pa": 12
           },
           "landing": "/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3"
+        },
+        {
+          "id": "expansion-of-english-east-india-company-in-india-part-2",
+          "name": "First Anglo-Maratha War - Part 2",
+          "description": "",
+          "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310077118,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.en.json",
+            "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "First Anglo-Maratha War - Part 2",
+            "pa": "ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2"
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-2"
         },
         {
           "id": "guru-granth-sahib-ji-and-the-five-takhts-part-1",
@@ -628,6 +778,36 @@
             "pa": 25
           },
           "landing": "/quiz-gk-01-making-of-the-indian-constitution-part2"
+        },
+        {
+          "id": "expansion-of-english-east-india-company-in-india-part-3",
+          "name": "Punjab administration - Part 3",
+          "description": "",
+          "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.en.json",
+          "count": 20,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792310077118,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.en.json",
+            "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Punjab administration - Part 3",
+            "pa": "ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3"
+          },
+          "counts": {
+            "en": 20,
+            "pa": 20
+          },
+          "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-3"
         }
       ],
       "categories": [
@@ -662,64 +842,244 @@
           "icon": "📁",
           "topics": [
             {
-              "id": "expansion-of-british-power-part-1",
-              "name": "Expansion of British Power - Part 1",
+              "id": "arrival-of-european-in-india-part-1",
+              "name": "Arrival of Europeans - Part 1",
               "description": "",
-              "file": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
+              "file": "questions/gk/modern-history/arrival-of-european-in-india-part-1.en.json",
               "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1791007734569,
+              "updatedAt": 1792310077118,
               "category": "modern-history",
               "language": "en",
               "variants": {
-                "en": "questions/gk/modern-history/expansion-of-british-power-part-1.en.json",
-                "pa": "questions/gk/modern-history/expansion-of-british-power-part-1.pa.json"
+                "en": "questions/gk/modern-history/arrival-of-european-in-india-part-1.en.json",
+                "pa": "questions/gk/modern-history/arrival-of-european-in-india-part-1.pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Expansion of British Power - Part 1",
-                "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 1"
+                "en": "Arrival of Europeans - Part 1",
+                "pa": "Arrival of Europeans - Part 1"
               },
               "counts": {
                 "en": 25,
                 "pa": 25
               },
-              "landing": "/quiz-gk-expansion-of-british-power-part-1"
+              "landing": "/quiz-gk-arrival-of-european-in-india-part-1"
             },
             {
-              "id": "expansion-of-british-power-part-2",
-              "name": "Expansion of British Power - Part 2",
+              "id": "arrival-of-european-in-india-part-2",
+              "name": "Arrival of Europeans - Part 2",
               "description": "",
-              "file": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
+              "file": "questions/gk/modern-history/arrival-of-european-in-india-part-2.en.json",
               "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1791007734569,
+              "updatedAt": 1792310077118,
               "category": "modern-history",
               "language": "en",
               "variants": {
-                "en": "questions/gk/modern-history/expansion-of-british-power-part-2.en.json",
-                "pa": "questions/gk/modern-history/expansion-of-british-power-part-2.pa.json"
+                "en": "questions/gk/modern-history/arrival-of-european-in-india-part-2.en.json",
+                "pa": "questions/gk/modern-history/arrival-of-european-in-india-part-2.pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Expansion of British Power - Part 2",
-                "pa": "ਭਾਰਤ ਵਿੱਚ ਬ੍ਰਿਟਿਸ਼ ਸ਼ਕਤੀ ਦਾ ਵਿਸਥਾਰ - Part 2"
+                "en": "Arrival of Europeans - Part 2",
+                "pa": "Arrival of Europeans - Part 2"
               },
               "counts": {
                 "en": 25,
                 "pa": 25
               },
-              "landing": "/quiz-gk-expansion-of-british-power-part-2"
+              "landing": "/quiz-gk-arrival-of-european-in-india-part-2"
+            },
+            {
+              "id": "expansion-of-english-east-india-company-in-india-part-1",
+              "name": "Bengal - Part 1",
+              "description": "",
+              "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310077118,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.en.json",
+                "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Bengal - Part 1",
+                "pa": "ਬੰਗਾਲ - Part 1"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-1"
+            },
+            {
+              "id": "extension-of-british-paramountcy-through-administrative-policy-part-1",
+              "name": "Extension of British Paramountcy - Part 1",
+              "description": "",
+              "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310035261,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.en.json",
+                "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Extension of British Paramountcy - Part 1",
+                "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1"
+            },
+            {
+              "id": "extension-of-british-paramountcy-through-administrative-policy-part-2",
+              "name": "Extension of British Paramountcy - Part 2",
+              "description": "",
+              "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310035261,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.en.json",
+                "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Extension of British Paramountcy - Part 2",
+                "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2"
+            },
+            {
+              "id": "extension-of-british-paramountcy-through-administrative-policy-part-3",
+              "name": "Extension of British Paramountcy - Part 3",
+              "description": "",
+              "file": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310035261,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json",
+                "pa": "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Extension of British Paramountcy - Part 3",
+                "pa": "ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3"
+            },
+            {
+              "id": "expansion-of-english-east-india-company-in-india-part-2",
+              "name": "First Anglo-Maratha War - Part 2",
+              "description": "",
+              "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310077118,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.en.json",
+                "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "First Anglo-Maratha War - Part 2",
+                "pa": "ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-2"
+            },
+            {
+              "id": "expansion-of-english-east-india-company-in-india-part-3",
+              "name": "Punjab administration - Part 3",
+              "description": "",
+              "file": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.en.json",
+              "count": 20,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792310077118,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.en.json",
+                "pa": "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Punjab administration - Part 3",
+                "pa": "ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3"
+              },
+              "counts": {
+                "en": 20,
+                "pa": 20
+              },
+              "landing": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-3"
             }
           ],
           "landing": "/category-gk-modern-history"
@@ -3227,13 +3587,37 @@
       "f3af314ad4231ee5",
       1792140917152
     ],
-    "questions/gk/modern-history/expansion-of-british-power-part-1.en.json": [
-      "c5ddeb1d59206866",
-      1791007734569
+    "questions/gk/modern-history/arrival-of-european-in-india-part-1.en.json": [
+      "175d5dc19b2a2d20",
+      1792310077118
     ],
-    "questions/gk/modern-history/expansion-of-british-power-part-2.en.json": [
-      "3fb8f635b5611add",
-      1791007734569
+    "questions/gk/modern-history/arrival-of-european-in-india-part-2.en.json": [
+      "057afe17ef76a207",
+      1792310077118
+    ],
+    "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-1.en.json": [
+      "317888fb1733db84",
+      1792310077118
+    ],
+    "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-2.en.json": [
+      "71c197792a823958",
+      1792310077118
+    ],
+    "questions/gk/modern-history/expansion-of-english-east-india-company-in-india-part-3.en.json": [
+      "ad39c5af515e94c8",
+      1792310077118
+    ],
+    "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-1.en.json": [
+      "1b4ea41cc0286592",
+      1792310035261
+    ],
+    "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-2.en.json": [
+      "8e1944581c9a153a",
+      1792310035261
+    ],
+    "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json": [
+      "1ecd8a60c4dc9c52",
+      1792310035261
     ],
     "questions/gk/polity/01-making-of-the-indian-constitution-part1-en.json": [
       "77bb59bd797fbe17",
