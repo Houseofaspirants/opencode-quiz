@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 567,
+  "nodes": 568,
   "edges": 3280,
   "silos": 35,
-  "clusters": 87,
+  "clusters": 90,
   "pillars": 34
  },
  "nodes": [
@@ -6499,8 +6499,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "id": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "url": "/quiz-gk-arrival-of-european-in-india-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6511,8 +6511,20 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "id": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "url": "/quiz-gk-arrival-of-european-in-india-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6547,8 +6559,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-expansion-of-british-power-part-1.html",
-   "url": "/quiz-gk-expansion-of-british-power-part-1.html",
+   "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
+   "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -13731,13 +13743,13 @@
   },
   {
    "from": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13821,13 +13833,13 @@
   },
   {
    "from": "material-chapter-01-arrival-of-european-in-india.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-01-arrival-of-european-in-india.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14097,13 +14109,13 @@
   },
   {
    "from": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
-   "to": "quiz-gk-expansion-of-british-power-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14193,13 +14205,13 @@
   },
   {
    "from": "material-chapter-02-expansion-of-english-east-india-company-in-india.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-chapter-02-expansion-of-english-east-india-company-in-india.html",
-   "to": "quiz-gk-expansion-of-british-power-part-1.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16785,13 +16797,13 @@
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-punjab-folk-dance-en.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16965,13 +16977,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17055,13 +17067,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18585,13 +18597,13 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18765,13 +18777,13 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -18981,13 +18993,13 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19191,13 +19203,13 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19395,13 +19407,13 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19587,13 +19599,13 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -19809,13 +19821,13 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20019,13 +20031,13 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20235,13 +20247,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20451,13 +20463,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -20667,13 +20679,13 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -23739,13 +23751,13 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -23907,13 +23919,13 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24105,13 +24117,13 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24297,13 +24309,13 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24489,13 +24501,13 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24663,13 +24675,13 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -24861,13 +24873,13 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25053,13 +25065,13 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25269,13 +25281,13 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25461,13 +25473,13 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -25659,13 +25671,13 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27343,13 +27355,16 @@
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
+    "topic-gk-arrival-of-european-in-india-part-1.html",
+    "topic-gk-arrival-of-european-in-india-part-2.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
     "topic-gk-basic-concepts-of-economy-part-1.html",
     "topic-gk-basic-concepts-of-economy-part-2.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
-    "topic-gk-expansion-of-british-power-part-1.html",
-    "topic-gk-expansion-of-british-power-part-2.html",
+    "topic-gk-expansion-of-english-east-india-company-in-india-part-1.html",
+    "topic-gk-expansion-of-english-east-india-company-in-india-part-2.html",
+    "topic-gk-expansion-of-english-east-india-company-in-india-part-3.html",
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",

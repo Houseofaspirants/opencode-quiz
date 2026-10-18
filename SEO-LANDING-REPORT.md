@@ -371,7 +371,3 @@ Residual risk notes:
 - Landing pages share site chrome (header, footer, related cards) by design; body copy, H1, FAQ answers and link sets are entity-specific, so pages stay distinguishable even where sections rhyme.
 - Lanes with no question file yet publish an explicit 'being published' state rather than padded content - no doorway pages, no invented counts.
 - `sitemap.xml` is built from `data/landing-manifest.json`, so a landing URL can never enter the sitemap without its file existing on disk.
-
-### Generator warnings
-
-- stale landing pages removed: quiz-gk-expansion-of-british-power-part-1.html, quiz-gk-expansion-of-british-power-part-2.html, topic-gk-expansion-of-british-power-part-1.html, topic-gk-expansion-of-british-power-part-2.html, pa/topic-gk-expansion-of-british-power-part-1.html, pa/topic-gk-expansion-of-british-power-part-2.html
