@@ -864,13 +864,17 @@
                     "id": "modern-history",
                     "name": "Modern History",
                     "description": "",
-                    "chapters": [],
+                    "chapters": [
+                      "Chapter 01 - Arrival of European in India",
+                      "Chapter 02 - Expansion of English East India Company in India",
+                      "Chapter 03 - Extension of British Paramountcy Through Administrative Policy"
+                    ],
                     "stats": {
-                      "files": 0,
-                      "chapters": 0,
-                      "pages": 0,
-                      "totalSize": 0,
-                      "newest": ""
+                      "files": 12,
+                      "chapters": 3,
+                      "pages": 6,
+                      "totalSize": 17521738,
+                      "newest": "2026-10-18"
                     },
                     "languages": [
                       {
@@ -878,21 +882,117 @@
                         "name": "Punjabi",
                         "native": "ਪੰਜਾਬੀ",
                         "flag": "🇵🇺",
-                        "count": 0,
-                        "chapters": []
+                        "count": 6,
+                        "chapters": [
+                          {
+                            "id": "Chapter 01 - Arrival of European in India",
+                            "name": "Chapter 01: Arrival of European in India",
+                            "parts": [
+                              {
+                                "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
+                          },
+                          {
+                            "id": "Chapter 02 - Expansion of English East India Company in India",
+                            "name": "Chapter 02: Expansion of English East India Company in India",
+                            "parts": [
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-2-pa.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-3-pa.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
+                                "n": 4
+                              }
+                            ],
+                            "pages": 1
+                          },
+                          {
+                            "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+                            "name": "Chapter 03: Extension of British Paramountcy Through",
+                            "parts": [
+                              {
+                                "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
+                          }
+                        ]
                       },
                       {
                         "id": "en",
                         "name": "English",
                         "native": "English",
                         "flag": "🇬🇧",
-                        "count": 0,
-                        "chapters": []
+                        "count": 6,
+                        "chapters": [
+                          {
+                            "id": "Chapter 01 - Arrival of European in India",
+                            "name": "Chapter 01: Arrival of European in India",
+                            "parts": [
+                              {
+                                "file": "material-chapter-01-arrival-of-european-in-india.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
+                          },
+                          {
+                            "id": "Chapter 02 - Expansion of English East India Company in India",
+                            "name": "Chapter 02: Expansion of English East India Company in India",
+                            "parts": [
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-1-en.html",
+                                "n": 1
+                              },
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-2-en.html",
+                                "n": 2
+                              },
+                              {
+                                "file": "material-expansion-of-english-east-india-company-in-india-part-3-en.html",
+                                "n": 3
+                              },
+                              {
+                                "file": "material-chapter-02-expansion-of-english-east-india-company-in-india.html",
+                                "n": 4
+                              }
+                            ],
+                            "pages": 1
+                          },
+                          {
+                            "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+                            "name": "Chapter 03: Extension of British Paramountcy Through",
+                            "parts": [
+                              {
+                                "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
+                          }
+                        ]
                       }
                     ]
                   }
                 ],
-                "claimedChapters": []
+                "claimedChapters": [
+                  "Chapter 01 - Arrival of European in India",
+                  "Chapter 02 - Expansion of English East India Company in India",
+                  "Chapter 03 - Extension of British Paramountcy Through Administrative Policy"
+                ]
               },
               {
                 "id": "polity",
