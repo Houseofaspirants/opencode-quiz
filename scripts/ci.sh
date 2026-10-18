@@ -31,6 +31,7 @@ fi
 node scripts/build_content_manifest.ts   # content/** -> data/content-manifest.json
 python3 scripts/build_content.py         # publish from `drops`, never from a walk
 node scripts/build_content_manifest.ts --check   # committed inventory == disk
+python3 scripts/test_study_subcategories.py  # folder-based period assignment
 
 # The scanner and the publisher must derive the identical document from one
 # file name, or a drop would be described one way and published another.

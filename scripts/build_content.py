@@ -1977,7 +1977,7 @@ def study_subject_name(folder):
 
 
 # ---------------------------------------------------------------------------
-# content/study-material/<subject>/<language>/<chapter>/<part file>
+# content/study-material/<subject>/[<subcategory>/]<language>/<chapter>/<part file>
 # ---------------------------------------------------------------------------
 # The hierarchy below is READ, never configured. The first folder under the
 # collection is a subject; the folder under it is the language the material is
@@ -2008,22 +2008,57 @@ def _is_material(path):
             and path.suffix.lower() in (".pdf",) + STUDY_EXTS)
 
 
-def study_locator(path):
-    """(subject folder, language folder, chapter folder) for one file.
+def study_subcategory_folders(subject):
+    """Declared subcategory folder spellings -> stable subcategory ids."""
+    out = {}
+    for hierarchy in (study_registry() or {}).get("hierarchies", {}).values():
+        for region in hierarchy.get("regions", []):
+            for category in region.get("categories", []):
+                if subject not in category.get("folders", []):
+                    continue
+                for sub in category.get("subCategories", []):
+                    sid = str(sub.get("id") or "")
+                    if sid:
+                        for label in (sid, sub.get("name") or sid):
+                            out[str(label).strip().casefold()] = sid
+    return out
 
-    Shorter layouts still resolve, so nothing already on disk has to move
-    before this rule takes effect: a file straight under a subject has no
-    language or chapter folder yet, and one folder deep is the language it
-    was dropped in."""
+
+def study_layout(path):
+    """Read both subject/language/chapter and subject/subcategory/language/chapter."""
     parts = Path(path).parts
     if STUDY_DIR not in parts:
-        return "", "", ""
-    tail = list(parts[parts.index(STUDY_DIR) + 1:])
+        return "", "", "", ""
+    tail = parts[parts.index(STUDY_DIR) + 1:]
     if len(tail) < 2:
-        return "", "", ""           # configuration at the collection root
-    dirs = tail[1:-1]               # the folders between subject and file
-    return tail[0], (dirs[0] if len(dirs) >= 1 else ""), \
-        (dirs[1] if len(dirs) >= 2 else "")
+        return "", "", "", ""
+    subject, dirs = tail[0], list(tail[1:-1])
+    sub = study_subcategory_folders(subject).get(dirs[0].strip().casefold(), "") if dirs else ""
+    if sub:
+        dirs = dirs[1:]
+    return subject, sub, (dirs[0] if dirs else ""), (dirs[1] if len(dirs) > 1 else "")
+
+
+def study_locator(path):
+    """Subject, language and chapter; optional subcategory is handled centrally."""
+    subject, _, language, chapter = study_layout(path)
+    return subject, language, chapter
+
+
+def study_language_folders(subject):
+    """Language directories from both supported layouts, never subcategory names."""
+    base = CONTENT / STUDY_DIR / subject
+    subfolders = study_subcategory_folders(subject)
+    result = []
+    for folder in sorted(base.iterdir()) if base.is_dir() else []:
+        if not folder.is_dir() or folder.name.startswith((".", "_")):
+            continue
+        if folder.name.strip().casefold() in subfolders:
+            result.extend(p for p in sorted(folder.iterdir())
+                          if p.is_dir() and not p.name.startswith((".", "_")))
+        else:
+            result.append(folder)
+    return result
 
 
 def study_lang_id(folder):
@@ -2167,9 +2202,10 @@ def study_title_for(path):
     chapter_name = study_nice_name(chapter or path.stem)
     # A chapter with one file has no parts to tell apart: "Part 1" would be
     # noise on the page, the card and the download.
-    if total <= 1:
-        return clip(f"{chapter_name} ({lang_name})")
-    return clip(f"{chapter_name} - Part {position} ({lang_name})")
+    suffix = (f" ({lang_name})" if total <= 1
+              else f" - Part {position} ({lang_name})")
+    # Keep the part and language visible even when the chapter name is long.
+    return clip(chapter_name, max(1, 60 - len(suffix))) + suffix
 
 
 def study_files(subject):
@@ -2399,7 +2435,7 @@ def stamp_study_fields(records):
         rel = Path(rec["path"])                 # content/study-material/...
         full = ROOT / rel
         meta = rec.get("meta") or {}
-        folder, lang_folder, chapter = study_locator(rel)
+        folder, subcategory, lang_folder, chapter = study_layout(rel)
         if not chapter:
             # A file dropped straight into a subject has no chapter folder
             # yet: its own name is the chapter it forms, so the tree stays
@@ -2415,7 +2451,8 @@ def stamp_study_fields(records):
         rec["studyLanguage"] = str(meta.get("language") or lang.get("code") or "")
         rec["studyLanguageName"] = lang.get("name") or \
             study_language_label(rec["studyLanguage"])
-        rec["studyChapter"] = chapter
+        rec["studySubcategory"] = subcategory
+        rec["studyChapter"] = f"{subcategory}/{chapter}" if subcategory else chapter
         rec["studyChapterName"] = study_nice_name(chapter)
         rec["studyPart"] = position
         rec["studyParts"] = total
@@ -6382,6 +6419,10 @@ def archives_page(items, index, popularity):
             months.setdefault(r["published"][:7], []).append(r)
         for ym in sorted(months, reverse=True):
             sections.append(group(month_label(ym), "By month", months[ym]))
+        # JSON study parts can have neither dates nor quiz-subject tags.
+        # Keep those documents reachable without inventing a publication date.
+        undated = [r for r in items if len(r.get("published") or "") < 7]
+        sections.append(group("Undated documents", "By date", undated))
 
     # Taxonomy: one link per tag / category that has a page of its own. These
     # are the outbound half of the relationship - the tag page links back to
@@ -7235,7 +7276,7 @@ def main():
                 # Study renderer searches. Scalars only - the page itself is
                 # the long form, the manifest stays a listing.
                 **({k: rec[k] for k in ("language", "subjectName",
-                                        "studySubject", "studyLanguage",
+                                        "studySubject", "studySubcategory", "studyLanguage",
                                         "studyLanguageName", "studyChapter",
                                         "studyChapterName", "studyPart",
                                         "studyParts", "size", "sizeLabel",

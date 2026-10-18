@@ -1,32 +1,21 @@
 # History — Study Material
 
-Folders, not lists, are the registration. Four levels, in order:
+Add chapters inside their period folder. No chapter registration or special PDF name is needed:
 
-    <this subject>/README.md
-    <this subject>/metadata.json                 optional, keyed by file name
-    <this subject>/<language>/<chapter>/<file>    a folder is a language, a
-                                                  folder is a chapter, a file
-                                                  is a part
+    history/ancient-history/english/<chapter>/<file.pdf>
+    history/ancient-history/punjabi/<chapter>/<file.pdf>
+    history/medieval-history/english/<chapter>/<file.pdf>
+    history/medieval-history/punjabi/<chapter>/<file.pdf>
+    history/modern-history/english/<chapter>/<file.pdf>
+    history/modern-history/punjabi/<chapter>/<file.pdf>
 
-```bash
-mkdir -p content/study-material/history/english/my-chapter
-cp "part-1.pdf" content/study-material/history/english/my-chapter/
-npm run publish
-```
+Put multiple parts in the same chapter folder. Use the same chapter folder name
+in English and Punjabi to count them as translations of one chapter. PDF file
+names may differ; the chapter label comes from its folder. A new chapter in one
+period cannot collide with an identically named chapter in another period.
 
-and a reader reaches it at **Study → History → English → my-chapter → Part 1**.
-Nothing is registered by hand: no subject list, no language list, no chapter
-list.
+Run `npm run publish` after adding files, then push through your usual flow.
+The website groups new chapters under the period automatically on the next build.
 
-The subject page shows **only** its language cards (🇵🇺 Punjabi / 🇬🇧 English)
-until one is chosen — then that language's chapters, then that chapter's parts
-in reading order. Languages are discovered from folder names, so a folder this
-site has never seen (`urdu/`, `hindi/`) becomes a language of its own on the
-next build.
-
-- What can be uploaded and what gets derived: `content/study-material/README.md`
-- Optional overrides: `metadata.json` here (all of this subject), beside a
-  chapter, or beside the file itself — the nearest one wins
-- Supported: `.pdf`, `.md`, `.json` — `README.md` is ignored
-
-Ancient, medieval and modern India, plus the freedom movement.
+Older `history/<language>/<chapter>/<file>` paths still work, but new uploads
+should use a period folder so they are assigned automatically.

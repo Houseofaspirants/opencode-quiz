@@ -543,7 +543,15 @@
     const lang = langs.find((l) => l.id === languageId);
     if (languageId && !lang) { languageId = ""; chapterId = ""; }
     const chapters = (lang && Array.isArray(lang.chapters)) ? lang.chapters : [];
-    const chapter = chapters.find((c) => c.id === chapterId);
+    let chapter = chapters.find((c) => c.id === chapterId);
+    // Keep saved links to chapters moved into a subcategory working.
+    if (!chapter && chapterId && !chapterId.includes("/")) {
+      const matches = chapters.filter((c) => c.id.endsWith("/" + chapterId));
+      if (matches.length === 1) {
+        chapter = matches[0];
+        chapterId = chapter.id;
+      }
+    }
     if (chapterId && !chapter) chapterId = "";
 
     const step = !languageId ? "language" : !chapterId ? "chapter" : "part";

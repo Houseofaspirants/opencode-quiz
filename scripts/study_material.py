@@ -2,7 +2,7 @@
 
 The Study system reads its shape straight off disk:
 
-    content/study-material/<subject>/<language>/<chapter>/<part file>
+    content/study-material/<subject>/[<subcategory>/]<language>/<chapter>/<part file>
 
 so this module's whole job is to walk that tree and write down what it found:
 which subjects exist, which languages each one is published in, which chapters
@@ -232,7 +232,9 @@ def build_hierarchies(registry, by_subject, row_by_folder):
                         continue
                     ids = {str(c) for c in (sub.get("chapters") or [])}
                     mine = [r for r in recs
-                            if str(r.get("studyChapter") or "") in ids]
+                            if (str(r.get("studySubcategory") or "") == sub_id
+                                or (not r.get("studySubcategory")
+                                    and str(r.get("studyChapter") or "") in ids))]
                     real = {str(r.get("studyChapter") or "") for r in mine}
                     # A head with nothing filed under it still earns its card -
                     # that is where the next chapter goes - and it says so
@@ -322,8 +324,8 @@ def language_universe(all_records):
     bc = _bc()
     found = {}
     for subject in folders(CONTENT / COLL):
-        for lang in folders(CONTENT / COLL / subject):
-            info = bc.study_lang(lang)
+        for lang in bc.study_language_folders(subject):
+            info = bc.study_lang(lang.name)
             if info["id"]:
                 found.setdefault(info["id"], info)
     for rec in all_records:
@@ -350,17 +352,7 @@ def language_rows(subject, records, universe):
     shallower than the documented shape still lands under the folders it does
     have, so nothing can be published but invisible."""
     bc = _bc()
-    base = CONTENT / COLL / subject
     by_lang = {}
-    for lang in folders(base):
-        info = bc.study_lang(lang)
-        lid = info["id"] or lang
-        chapters = by_lang.setdefault(lid, {})
-        for chapter in folders(base / lang):
-            chapters.setdefault(chapter,
-                                {"id": chapter,
-                                 "name": bc.study_nice_name(chapter),
-                                 "parts": []})
 
     by_chapter = {}
     for rec in records:
