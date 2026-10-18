@@ -641,21 +641,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 44,
-      "newest": "2026-10-17",
-      "totalSize": 79250758,
-      "chapters": 24,
+      "count": 35,
+      "newest": "2026-10-18",
+      "totalSize": 59771687,
+      "chapters": 25,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 44,
-          "chapters": 24,
-          "pages": 297,
-          "totalSize": 79250758,
-          "newest": "2026-10-17",
+          "files": 35,
+          "chapters": 25,
+          "pages": 139,
+          "totalSize": 59771687,
+          "newest": "2026-10-18",
           "categories": 12,
           "regions": 2
         },
@@ -665,11 +665,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 26,
-              "chapters": 7,
-              "pages": 203,
-              "totalSize": 47082703,
-              "newest": "2026-10-17",
+              "files": 17,
+              "chapters": 8,
+              "pages": 45,
+              "totalSize": 27603632,
+              "newest": "2026-10-18",
               "categories": 6
             },
             "categories": [
@@ -681,11 +681,11 @@
                   "history"
                 ],
                 "stats": {
-                  "files": 21,
-                  "chapters": 2,
-                  "pages": 164,
-                  "totalSize": 37000809,
-                  "newest": "2026-10-03"
+                  "files": 12,
+                  "chapters": 3,
+                  "pages": 6,
+                  "totalSize": 17521738,
+                  "newest": "2026-10-18"
                 },
                 "languages": [
                   {
@@ -693,61 +693,52 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 10,
+                    "count": 6,
                     "chapters": [
                       {
-                        "id": "arrival-of-europeans",
-                        "name": "Arrival of Europeans",
+                        "id": "Chapter 01 - Arrival of European in India",
+                        "name": "Chapter 01: Arrival of European in India",
                         "parts": [
                           {
-                            "file": "material-part-1-punjabi-pa.html",
+                            "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
                             "n": 1
-                          },
-                          {
-                            "file": "material-part-2-punjabi-pa.html",
-                            "n": 2
-                          },
-                          {
-                            "file": "material-part-3-punjabi.html",
-                            "n": 3
-                          },
-                          {
-                            "file": "material-part-4-punjabi.html",
-                            "n": 4
-                          },
-                          {
-                            "file": "material-part-5-punjabi-pa.html",
-                            "n": 5
                           }
                         ],
-                        "pages": 40
+                        "pages": 1
                       },
                       {
-                        "id": "expansion-of-british-power",
-                        "name": "Expansion of British Power",
+                        "id": "Chapter 02 - Expansion of English East India Company in India",
+                        "name": "Chapter 02: Expansion of English East India Company in India",
                         "parts": [
                           {
-                            "file": "material-expansion-of-british-power-part-1-pa.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
                             "n": 1
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-2-pa.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-2-pa.html",
                             "n": 2
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-3-pa.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-3-pa.html",
                             "n": 3
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-4-pa.html",
+                            "file": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
                             "n": 4
-                          },
-                          {
-                            "file": "material-expansion-of-british-power-part-5-pa.html",
-                            "n": 5
                           }
                         ],
-                        "pages": 42
+                        "pages": 1
+                      },
+                      {
+                        "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+                        "name": "Chapter 03: Extension of British Paramountcy Through",
+                        "parts": [
+                          {
+                            "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 1
                       }
                     ]
                   },
@@ -756,65 +747,52 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 11,
+                    "count": 6,
                     "chapters": [
                       {
-                        "id": "arrival-of-europeans",
-                        "name": "Arrival of Europeans",
+                        "id": "Chapter 01 - Arrival of European in India",
+                        "name": "Chapter 01: Arrival of European in India",
                         "parts": [
                           {
-                            "file": "material-part-1-english-en.html",
+                            "file": "material-chapter-01-arrival-of-european-in-india.html",
                             "n": 1
-                          },
-                          {
-                            "file": "material-part-2-english-en.html",
-                            "n": 2
-                          },
-                          {
-                            "file": "material-part-3-english.html",
-                            "n": 3
-                          },
-                          {
-                            "file": "material-part-4-english-en.html",
-                            "n": 4
-                          },
-                          {
-                            "file": "material-part-5-english-en.html",
-                            "n": 5
                           }
                         ],
-                        "pages": 39
+                        "pages": 1
                       },
                       {
-                        "id": "expansion-of-british-power",
-                        "name": "Expansion of British Power",
+                        "id": "Chapter 02 - Expansion of English East India Company in India",
+                        "name": "Chapter 02: Expansion of English East India Company in India",
                         "parts": [
                           {
-                            "file": "material-expansion-of-british-power-part-1-en.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-1-en.html",
                             "n": 1
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-2-en.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-2-en.html",
                             "n": 2
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-3-en.html",
+                            "file": "material-expansion-of-english-east-india-company-in-india-part-3-en.html",
                             "n": 3
                           },
                           {
-                            "file": "material-expansion-of-british-power-part-4-en.html",
+                            "file": "material-chapter-02-expansion-of-english-east-india-company-in-india.html",
                             "n": 4
-                          },
-                          {
-                            "file": "material-expansion-of-british-power-part-5-en.html",
-                            "n": 5
-                          },
-                          {
-                            "file": "material-expansion-of-british-power-part-6-en.html",
-                            "n": 6
                           }
                         ],
-                        "pages": 43
+                        "pages": 1
+                      },
+                      {
+                        "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+                        "name": "Chapter 03: Extension of British Paramountcy Through",
+                        "parts": [
+                          {
+                            "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 1
                       }
                     ]
                   }
@@ -886,16 +864,13 @@
                     "id": "modern-history",
                     "name": "Modern History",
                     "description": "",
-                    "chapters": [
-                      "arrival-of-europeans",
-                      "expansion-of-british-power"
-                    ],
+                    "chapters": [],
                     "stats": {
-                      "files": 21,
-                      "chapters": 2,
-                      "pages": 164,
-                      "totalSize": 37000809,
-                      "newest": "2026-10-03"
+                      "files": 0,
+                      "chapters": 0,
+                      "pages": 0,
+                      "totalSize": 0,
+                      "newest": ""
                     },
                     "languages": [
                       {
@@ -903,138 +878,21 @@
                         "name": "Punjabi",
                         "native": "ਪੰਜਾਬੀ",
                         "flag": "🇵🇺",
-                        "count": 10,
-                        "chapters": [
-                          {
-                            "id": "arrival-of-europeans",
-                            "name": "Arrival of Europeans",
-                            "parts": [
-                              {
-                                "file": "material-part-1-punjabi-pa.html",
-                                "n": 1
-                              },
-                              {
-                                "file": "material-part-2-punjabi-pa.html",
-                                "n": 2
-                              },
-                              {
-                                "file": "material-part-3-punjabi.html",
-                                "n": 3
-                              },
-                              {
-                                "file": "material-part-4-punjabi.html",
-                                "n": 4
-                              },
-                              {
-                                "file": "material-part-5-punjabi-pa.html",
-                                "n": 5
-                              }
-                            ],
-                            "pages": 40
-                          },
-                          {
-                            "id": "expansion-of-british-power",
-                            "name": "Expansion of British Power",
-                            "parts": [
-                              {
-                                "file": "material-expansion-of-british-power-part-1-pa.html",
-                                "n": 1
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-2-pa.html",
-                                "n": 2
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-3-pa.html",
-                                "n": 3
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-4-pa.html",
-                                "n": 4
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-5-pa.html",
-                                "n": 5
-                              }
-                            ],
-                            "pages": 42
-                          }
-                        ]
+                        "count": 0,
+                        "chapters": []
                       },
                       {
                         "id": "en",
                         "name": "English",
                         "native": "English",
                         "flag": "🇬🇧",
-                        "count": 11,
-                        "chapters": [
-                          {
-                            "id": "arrival-of-europeans",
-                            "name": "Arrival of Europeans",
-                            "parts": [
-                              {
-                                "file": "material-part-1-english-en.html",
-                                "n": 1
-                              },
-                              {
-                                "file": "material-part-2-english-en.html",
-                                "n": 2
-                              },
-                              {
-                                "file": "material-part-3-english.html",
-                                "n": 3
-                              },
-                              {
-                                "file": "material-part-4-english-en.html",
-                                "n": 4
-                              },
-                              {
-                                "file": "material-part-5-english-en.html",
-                                "n": 5
-                              }
-                            ],
-                            "pages": 39
-                          },
-                          {
-                            "id": "expansion-of-british-power",
-                            "name": "Expansion of British Power",
-                            "parts": [
-                              {
-                                "file": "material-expansion-of-british-power-part-1-en.html",
-                                "n": 1
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-2-en.html",
-                                "n": 2
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-3-en.html",
-                                "n": 3
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-4-en.html",
-                                "n": 4
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-5-en.html",
-                                "n": 5
-                              },
-                              {
-                                "file": "material-expansion-of-british-power-part-6-en.html",
-                                "n": 6
-                              }
-                            ],
-                            "pages": 43
-                          }
-                        ]
+                        "count": 0,
+                        "chapters": []
                       }
                     ]
                   }
                 ],
-                "claimedChapters": [
-                  "arrival-of-europeans",
-                  "expansion-of-british-power"
-                ]
+                "claimedChapters": []
               },
               {
                 "id": "polity",
@@ -1777,70 +1635,61 @@
       "color": "#f59e0b",
       "description": "Ancient, medieval and modern India with the freedom movement.",
       "order": 9,
-      "count": 21,
-      "newest": "2026-10-03",
-      "totalSize": 37000809,
+      "count": 12,
+      "newest": "2026-10-18",
+      "totalSize": 17521738,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 10,
+          "count": 6,
           "chapters": [
             {
-              "id": "arrival-of-europeans",
-              "name": "Arrival of Europeans",
+              "id": "Chapter 01 - Arrival of European in India",
+              "name": "Chapter 01: Arrival of European in India",
               "parts": [
                 {
-                  "file": "material-part-1-punjabi-pa.html",
+                  "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
                   "n": 1
-                },
-                {
-                  "file": "material-part-2-punjabi-pa.html",
-                  "n": 2
-                },
-                {
-                  "file": "material-part-3-punjabi.html",
-                  "n": 3
-                },
-                {
-                  "file": "material-part-4-punjabi.html",
-                  "n": 4
-                },
-                {
-                  "file": "material-part-5-punjabi-pa.html",
-                  "n": 5
                 }
               ],
-              "pages": 40
+              "pages": 1
             },
             {
-              "id": "expansion-of-british-power",
-              "name": "Expansion of British Power",
+              "id": "Chapter 02 - Expansion of English East India Company in India",
+              "name": "Chapter 02: Expansion of English East India Company in India",
               "parts": [
                 {
-                  "file": "material-expansion-of-british-power-part-1-pa.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
                   "n": 1
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-2-pa.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-2-pa.html",
                   "n": 2
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-3-pa.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-3-pa.html",
                   "n": 3
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-4-pa.html",
+                  "file": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
                   "n": 4
-                },
-                {
-                  "file": "material-expansion-of-british-power-part-5-pa.html",
-                  "n": 5
                 }
               ],
-              "pages": 42
+              "pages": 1
+            },
+            {
+              "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+              "name": "Chapter 03: Extension of British Paramountcy Through",
+              "parts": [
+                {
+                  "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
+                  "n": 1
+                }
+              ],
+              "pages": 1
             }
           ]
         },
@@ -1849,70 +1698,57 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 11,
+          "count": 6,
           "chapters": [
             {
-              "id": "arrival-of-europeans",
-              "name": "Arrival of Europeans",
+              "id": "Chapter 01 - Arrival of European in India",
+              "name": "Chapter 01: Arrival of European in India",
               "parts": [
                 {
-                  "file": "material-part-1-english-en.html",
+                  "file": "material-chapter-01-arrival-of-european-in-india.html",
                   "n": 1
-                },
-                {
-                  "file": "material-part-2-english-en.html",
-                  "n": 2
-                },
-                {
-                  "file": "material-part-3-english.html",
-                  "n": 3
-                },
-                {
-                  "file": "material-part-4-english-en.html",
-                  "n": 4
-                },
-                {
-                  "file": "material-part-5-english-en.html",
-                  "n": 5
                 }
               ],
-              "pages": 39
+              "pages": 1
             },
             {
-              "id": "expansion-of-british-power",
-              "name": "Expansion of British Power",
+              "id": "Chapter 02 - Expansion of English East India Company in India",
+              "name": "Chapter 02: Expansion of English East India Company in India",
               "parts": [
                 {
-                  "file": "material-expansion-of-british-power-part-1-en.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-1-en.html",
                   "n": 1
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-2-en.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-2-en.html",
                   "n": 2
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-3-en.html",
+                  "file": "material-expansion-of-english-east-india-company-in-india-part-3-en.html",
                   "n": 3
                 },
                 {
-                  "file": "material-expansion-of-british-power-part-4-en.html",
+                  "file": "material-chapter-02-expansion-of-english-east-india-company-in-india.html",
                   "n": 4
-                },
-                {
-                  "file": "material-expansion-of-british-power-part-5-en.html",
-                  "n": 5
-                },
-                {
-                  "file": "material-expansion-of-british-power-part-6-en.html",
-                  "n": 6
                 }
               ],
-              "pages": 43
+              "pages": 1
+            },
+            {
+              "id": "Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
+              "name": "Chapter 03: Extension of British Paramountcy Through",
+              "parts": [
+                {
+                  "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati.html",
+                  "n": 1
+                }
+              ],
+              "pages": 1
             }
           ]
         }
       ],
-      "chapters": 4,
+      "chapters": 6,
       "hidden": true
     },
     {
@@ -2454,6 +2290,6 @@
       "hidden": true
     }
   ],
-  "total": 86,
+  "total": 77,
   "generatedBy": "scripts/study_material.py"
 }
