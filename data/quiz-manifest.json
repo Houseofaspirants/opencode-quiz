@@ -846,6 +846,28 @@
       }
     },
     {
+      "id": "06-central-processing-unit-part1",
+      "subject": "computer",
+      "category": "06-central-processing-unit",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Central Processing Unit - Part 1",
+        "pa": "Central Processing Unit - Part 1"
+      },
+      "variants": {
+        "en": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json",
+        "pa": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-pa.json"
+      }
+    },
+    {
       "id": "02-evolution-of-computers-part1",
       "subject": "computer",
       "category": "02-evolution-of-computers",

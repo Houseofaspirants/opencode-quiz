@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Which component is often called the 'Brain of the Computer'?",
+    "options": [
+      "CPU",
+      "Monitor",
+      "Hard Disk",
+      "Keyboard"
+    ],
+    "answer": 0,
+    "explanation": "The CPU is called the Brain of the Computer because it controls and performs almost all processing operations.",
+    "tags": [
+      "Central Processing Unit",
+      "Introduction"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU stands for:",
+    "options": [
+      "Central Program Unit",
+      "Control Processing Unit",
+      "Central Processing Unit",
+      "Computer Processing Unit"
+    ],
+    "answer": 2,
+    "explanation": "CPU stands for Central Processing Unit.",
+    "tags": [
+      "Central Processing Unit",
+      "Introduction"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT another name for the CPU?",
+    "options": [
+      "Motherboard",
+      "Processor",
+      "Central Processor",
+      "Microprocessor"
+    ],
+    "answer": 0,
+    "explanation": "The CPU is also known as Processor, Central Processor or Microprocessor; the motherboard holds the CPU socket.",
+    "tags": [
+      "Central Processing Unit",
+      "Introduction"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "Converting raw data into meaningful information is which function of the CPU?",
+    "options": [
+      "Executing instructions",
+      "Managing input and output devices",
+      "Running software",
+      "Processing data"
+    ],
+    "answer": 3,
+    "explanation": "Under 'Processes Data', the CPU converts raw data into meaningful information.",
+    "tags": [
+      "Central Processing Unit",
+      "Functions of CPU"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "The CPU is installed in a special socket called the CPU Socket, which is located on the:",
+    "options": [
+      "Hard Disk",
+      "RAM module",
+      "Motherboard",
+      "Monitor"
+    ],
+    "answer": 2,
+    "explanation": "The CPU Socket that holds the CPU is located on the Motherboard.",
+    "tags": [
+      "Central Processing Unit",
+      "Location of CPU"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Which was the world's first microprocessor?",
+    "options": [
+      "Intel 4004",
+      "Intel 8086",
+      "Intel Core i3",
+      "AMD Ryzen 3"
+    ],
+    "answer": 0,
+    "explanation": "The world's first microprocessor was the Intel 4004, developed by Intel Corporation.",
+    "tags": [
+      "Central Processing Unit",
+      "First Microprocessor"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "In which year was the Intel 4004 microprocessor introduced?",
+    "options": [
+      "1969",
+      "1971",
+      "1975",
+      "1981"
+    ],
+    "answer": 1,
+    "explanation": "Intel 4004 was developed by Intel Corporation in 1971.",
+    "tags": [
+      "Central Processing Unit",
+      "First Microprocessor"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "The CPU mainly consists of:",
+    "options": [
+      "Control Unit, ALU and Hard Disk",
+      "ALU, Monitor and Registers",
+      "Control Unit, Keyboard and ALU",
+      "Control Unit, ALU and Registers"
+    ],
+    "answer": 3,
+    "explanation": "The main components of the CPU are the Control Unit (CU), Arithmetic Logic Unit (ALU) and Registers (Memory Unit).",
+    "tags": [
+      "Central Processing Unit",
+      "Components of CPU"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Which part of the CPU controls and coordinates all operations of the computer?",
+    "options": [
+      "Arithmetic Logic Unit (ALU)",
+      "Registers",
+      "Control Unit (CU)",
+      "CPU Socket"
+    ],
+    "answer": 2,
+    "explanation": "The Control Unit controls and coordinates all operations of the computer (CU = Controls Everything).",
+    "tags": [
+      "Central Processing Unit",
+      "Control Unit"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "The Control Unit is compared to which of the following, directing the flow of information inside the computer?",
+    "options": [
+      "A Traffic Police Officer",
+      "A Calculator",
+      "A Librarian",
+      "A Postman"
+    ],
+    "answer": 0,
+    "explanation": "The Control Unit acts like a Traffic Police Officer directing the flow of information inside the computer.",
+    "tags": [
+      "Central Processing Unit",
+      "Control Unit"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "Which function of the Control Unit ensures that instructions are executed in the correct order?",
+    "options": [
+      "Decodes Instructions",
+      "Maintains Instruction Sequence",
+      "Generates Control Signals",
+      "Controls Data Flow"
+    ],
+    "answer": 1,
+    "explanation": "'Maintains Instruction Sequence' ensures instructions are executed in the correct order.",
+    "tags": [
+      "Central Processing Unit",
+      "Functions of Control Unit"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "Converting instructions into understandable signals is which function of the Control Unit?",
+    "options": [
+      "Coordinating operations",
+      "Maintaining instruction sequence",
+      "Storing results",
+      "Decoding instructions"
+    ],
+    "answer": 3,
+    "explanation": "Under 'Decodes Instructions', the CU converts instructions into understandable signals.",
+    "tags": [
+      "Central Processing Unit",
+      "Functions of Control Unit"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "The Program Counter (PC) stores:",
+    "options": [
+      "The result of the last calculation",
+      "The address of the next instruction",
+      "The opcode of the current instruction",
+      "The clock speed of the CPU"
+    ],
+    "answer": 1,
+    "explanation": "The Program Counter stores the address of the next instruction.",
+    "tags": [
+      "Central Processing Unit",
+      "Working of Control Unit"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "During decoding, what does the Opcode tell the CPU?",
+    "options": [
+      "On which data the operation should be performed",
+      "What operation must be performed",
+      "Where the result must be stored",
+      "The address of the next instruction"
+    ],
+    "answer": 1,
+    "explanation": "Opcode tells the CPU what operation must be performed; Operand tells on which data it is performed.",
+    "tags": [
+      "Central Processing Unit",
+      "Working of Control Unit"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Which part of the CPU performs arithmetic and logical operations?",
+    "options": [
+      "Control Unit",
+      "Program Counter",
+      "ALU",
+      "CPU Socket"
+    ],
+    "answer": 2,
+    "explanation": "The Arithmetic Logic Unit (ALU) performs arithmetic and logical operations; it is the calculator and decision-maker of the CPU.",
+    "tags": [
+      "Central Processing Unit",
+      "Arithmetic Logic Unit"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "When the ALU checks whether '50 > 30' is true or false, it is performing a:",
+    "options": [
+      "Arithmetic operation",
+      "Fetch operation",
+      "Storage operation",
+      "Logical operation"
+    ],
+    "answer": 3,
+    "explanation": "Comparisons such as Greater Than (>) are logical operations performed by the ALU.",
+    "tags": [
+      "Central Processing Unit",
+      "Arithmetic Logic Unit"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "According to the CU vs ALU comparison, which statement is correct?",
+    "options": [
+      "CU processes data, while ALU does not",
+      "Both CU and ALU process data",
+      "CU does not process data, while ALU does",
+      "Neither CU nor ALU processes data"
+    ],
+    "answer": 2,
+    "explanation": "Data processing: Control Unit – No, ALU – Yes; CU is the supervisor and ALU the calculator.",
+    "tags": [
+      "Central Processing Unit",
+      "Control Unit vs ALU"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Which is the fastest memory in a computer?",
+    "options": [
+      "Hard Disk",
+      "Registers",
+      "RAM",
+      "Pen Drive"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: Registers are the fastest memory in a computer; they are very small, very fast memory locations inside the CPU.",
+    "tags": [
+      "Central Processing Unit",
+      "Registers"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "The register abbreviated as MAR stands for:",
+    "options": [
+      "Main Access Register",
+      "Memory Arithmetic Register",
+      "Machine Address Register",
+      "Memory Address Register"
+    ],
+    "answer": 3,
+    "explanation": "Examples of registers include PC, IR, MAR (Memory Address Register) and MDR (Memory Data Register).",
+    "tags": [
+      "Central Processing Unit",
+      "Registers"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "The clock speed of modern CPUs is measured in:",
+    "options": [
+      "Gigahertz (GHz)",
+      "Megabytes (MB)",
+      "Dots Per Inch (DPI)",
+      "Pages Per Minute (PPM)"
+    ],
+    "answer": 0,
+    "explanation": "The unit of clock speed is Hertz (Hz); modern CPUs are measured in Gigahertz (GHz).",
+    "tags": [
+      "Central Processing Unit",
+      "CPU Clock Speed"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "A processor running at 4.0 GHz can perform approximately how many clock cycles per second?",
+    "options": [
+      "4 million",
+      "4 thousand",
+      "40 billion",
+      "4 billion"
+    ],
+    "answer": 3,
+    "explanation": "A 4.0 GHz processor performs approximately 4 billion clock cycles per second.",
+    "tags": [
+      "Central Processing Unit",
+      "CPU Clock Speed"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "A CPU with 6 cores is called:",
+    "options": [
+      "Hexa-Core",
+      "Quad-Core",
+      "Octa-Core",
+      "Dual-Core"
+    ],
+    "answer": 0,
+    "explanation": "Single-Core 1, Dual-Core 2, Quad-Core 4, Hexa-Core 6, Octa-Core 8 cores.",
+    "tags": [
+      "Central Processing Unit",
+      "Types of CPUs by Cores"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "The Instruction Cycle is also called the:",
+    "options": [
+      "Fetch-Decode-Execute Cycle",
+      "Input-Output Cycle",
+      "Clock-Core Cycle",
+      "Read-Write Cycle"
+    ],
+    "answer": 0,
+    "explanation": "The Instruction Cycle, the sequence of operations to execute an instruction, is also called the Fetch-Decode-Execute Cycle.",
+    "tags": [
+      "Central Processing Unit",
+      "Instruction Cycle"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "In the fetch step of the Instruction Cycle, the fetched instruction is stored in the:",
+    "options": [
+      "MDR (Memory Data Register)",
+      "CIR (Current Instruction Register)",
+      "ALU",
+      "CPU Socket"
+    ],
+    "answer": 1,
+    "explanation": "In the fetch step, the instruction is fetched from main memory and stored in the CIR (Current Instruction Register).",
+    "tags": [
+      "Central Processing Unit",
+      "Instruction Cycle"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Ryzen 3, Ryzen 5, Ryzen 7 and Ryzen 9 processors are made by:",
+    "options": [
+      "Intel",
+      "IBM",
+      "AMD",
+      "Apple"
+    ],
+    "answer": 2,
+    "explanation": "Intel (Core i3, i5, i7, i9) and AMD (Ryzen 3, 5, 7, 9) are the two most popular CPU manufacturers.",
+    "tags": [
+      "Central Processing Unit",
+      "CPU Manufacturers"
+    ]
+  }
+]

@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 575,
-  "edges": 3325,
+  "nodes": 583,
+  "edges": 3363,
   "silos": 35,
-  "clusters": 92,
+  "clusters": 94,
   "pillars": 34
  },
  "nodes": [
@@ -1950,6 +1950,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
+   "url": "/content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/computer/punjabi/01%20-%20%E0%A8%AB%E0%A9%B0%E0%A8%A1%E0%A8%BE%E0%A8%AE%E0%A9%88%E0%A8%82%E0%A8%9F%E0%A8%B2%E0%A8%9C%E0%A8%BC%20%E0%A8%86%E0%A8%AB%20%E0%A8%95%E0%A9%B0%E0%A8%AA%E0%A8%BF%E0%A8%8A%E0%A8%9F%E0%A8%B0%E0%A8%B8%20%28Computer%20Basics%29/computer-pa-ch01.pdf",
    "url": "/content/study-material/computer/punjabi/01%20-%20%E0%A8%AB%E0%A9%B0%E0%A8%A1%E0%A8%BE%E0%A8%AE%E0%A9%88%E0%A8%82%E0%A8%9F%E0%A8%B2%E0%A8%9C%E0%A8%BC%20%E0%A8%86%E0%A8%AB%20%E0%A8%95%E0%A9%B0%E0%A8%AA%E0%A8%BF%E0%A8%8A%E0%A8%9F%E0%A8%B0%E0%A8%B8%20%28Computer%20Basics%29/computer-pa-ch01.pdf",
    "type": "page",
@@ -2000,6 +2012,18 @@
   {
    "id": "content/study-material/computer/punjabi/05%20-%20%E0%A8%86%E0%A8%89%E0%A8%9F%E0%A8%AA%E0%A9%81%E0%A9%B1%E0%A8%9F%20%E0%A8%A1%E0%A8%BF%E0%A8%B5%E0%A8%BE%E0%A8%88%E0%A8%B8%E0%A8%BE%E0%A8%82%20%28Output%20Devices%29/computer-pa-ch05.pdf",
    "url": "/content/study-material/computer/punjabi/05%20-%20%E0%A8%86%E0%A8%89%E0%A8%9F%E0%A8%AA%E0%A9%81%E0%A9%B1%E0%A8%9F%20%E0%A8%A1%E0%A8%BF%E0%A8%B5%E0%A8%BE%E0%A8%88%E0%A8%B8%E0%A8%BE%E0%A8%82%20%28Output%20Devices%29/computer-pa-ch05.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/computer-pa-ch06.pdf",
+   "url": "/content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/computer-pa-ch06.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4338,6 +4362,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-computer-en-ch06",
+   "url": "/material-computer-en-ch06",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-computer-en-ch06.html",
+   "url": "/material-computer-en-ch06.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 6: Central Processing Unit (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-computer-pa-ch01",
    "url": "/material-computer-pa-ch01",
    "type": "document",
@@ -4451,6 +4499,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 5: ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices) (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-computer-pa-ch06",
+   "url": "/material-computer-pa-ch06",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-computer-pa-ch06.html",
+   "url": "/material-computer-pa-ch06.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 6: ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor) (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6391,6 +6463,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-computer-06-central-processing-unit-part1.html",
+   "url": "/quiz-computer-06-central-processing-unit-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "url": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html",
    "type": "quiz",
@@ -7254,6 +7338,18 @@
    "hub": ""
   },
   {
+   "id": "subject-computer.html",
+   "url": "/subject-computer.html",
+   "type": "subject-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-current-affairs.html",
    "url": "/subject-current-affairs.html",
    "type": "subject-hub",
@@ -7449,6 +7545,12 @@
   },
   {
    "from": "archive-category-computer.html",
+   "to": "material-computer-en-ch06.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
    "to": "material-computer-pa-ch01.html",
    "rel": "contextual",
    "weight": 1
@@ -7474,6 +7576,12 @@
   {
    "from": "archive-category-computer.html",
    "to": "material-computer-pa-ch05.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-computer.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10011,6 +10119,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-computer-en-ch06.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-computer-pa-ch01.html",
    "rel": "contextual",
    "weight": 1
@@ -10036,6 +10150,12 @@
   {
    "from": "archives.html",
    "to": "material-computer-pa-ch05.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11787,13 +11907,13 @@
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12237,13 +12357,13 @@
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14949,13 +15069,13 @@
   },
   {
    "from": "material-computer-en-ch01.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-en-ch01.html",
-   "to": "material-computer-en-ch04.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15039,13 +15159,13 @@
   },
   {
    "from": "material-computer-en-ch02.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-en-ch02.html",
-   "to": "material-computer-en-ch04.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15129,13 +15249,13 @@
   },
   {
    "from": "material-computer-en-ch03.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-en-ch03.html",
-   "to": "material-computer-en-ch04.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15219,13 +15339,13 @@
   },
   {
    "from": "material-computer-en-ch04.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-en-ch04.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15309,13 +15429,103 @@
   },
   {
    "from": "material-computer-en-ch05.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-en-ch05.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "material-computer-en-ch06",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "quiz-computer-06-central-processing-unit-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "material-computer-en-ch01.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "material-computer-en-ch02.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-en-ch06.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15399,13 +15609,13 @@
   },
   {
    "from": "material-computer-pa-ch01.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-pa-ch01.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15489,13 +15699,13 @@
   },
   {
    "from": "material-computer-pa-ch02.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-pa-ch02.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15579,13 +15789,13 @@
   },
   {
    "from": "material-computer-pa-ch03.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-pa-ch03.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15669,13 +15879,13 @@
   },
   {
    "from": "material-computer-pa-ch04.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-pa-ch04.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15759,13 +15969,103 @@
   },
   {
    "from": "material-computer-pa-ch05.html",
-   "to": "material-computer-en-ch02.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-computer-pa-ch05.html",
-   "to": "material-computer-en-ch03.html",
+   "to": "material-computer-pa-ch06.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/computer-pa-ch06.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "material-computer-pa-ch06",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "subject-computer.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "material-computer-en-ch01.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "material-computer-en-ch02.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-computer-pa-ch06.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -26229,6 +26529,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/computer/punjabi/01%20-%20%E0%A8%AB%E0%A9%B0%E0%A8%A1%E0%A8%BE%E0%A8%AE%E0%A9%88%E0%A8%82%E0%A8%9F%E0%A8%B2%E0%A8%9C%E0%A8%BC%20%E0%A8%86%E0%A8%AB%20%E0%A8%95%E0%A9%B0%E0%A8%AA%E0%A8%BF%E0%A8%8A%E0%A8%9F%E0%A8%B0%E0%A8%B8%20%28Computer%20Basics%29/computer-pa-ch01.pdf",
    "rel": "contextual",
    "weight": 1
@@ -26254,6 +26560,12 @@
   {
    "from": "study-material.html",
    "to": "content/study-material/computer/punjabi/05%20-%20%E0%A8%86%E0%A8%89%E0%A8%9F%E0%A8%AA%E0%A9%81%E0%A9%B1%E0%A8%9F%20%E0%A8%A1%E0%A8%BF%E0%A8%B5%E0%A8%BE%E0%A8%88%E0%A8%B8%E0%A8%BE%E0%A8%82%20%28Output%20Devices%29/computer-pa-ch05.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/computer-pa-ch06.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -26919,6 +27231,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-computer-en-ch06.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-computer-pa-ch01.html",
    "rel": "contextual",
    "weight": 1
@@ -26944,6 +27262,12 @@
   {
    "from": "study-material.html",
    "to": "material-computer-pa-ch05.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-computer-pa-ch06.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27612,6 +27936,7 @@
     "category-computer-03-generations-of-computers.html",
     "category-computer-04-input-devices.html",
     "category-computer-05-output-devices.html",
+    "category-computer-06-central-processing-unit.html",
     "topic-computer-01-fundamentals-of-computers-part1.html",
     "topic-computer-01-fundamentals-of-computers-part2.html",
     "topic-computer-02-evolution-of-computers-part1.html",
@@ -27620,7 +27945,8 @@
     "topic-computer-04-input-devices-part1.html",
     "topic-computer-04-input-devices-part2.html",
     "topic-computer-05-output-devices-part1.html",
-    "topic-computer-05-output-devices-part2.html"
+    "topic-computer-05-output-devices-part2.html",
+    "topic-computer-06-central-processing-unit-part1.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",

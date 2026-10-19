@@ -10,17 +10,17 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 
 ---
 
-## 1. Pages optimized (259)
+## 1. Pages optimized (263)
 
 | Type | Pages | URL pattern |
 | --- | ---: | --- |
 | Subject | 7 | `subject-<id>.html` |
-| Category | 24 | `category-<subject>-<category>.html` |
-| Topic | 57 | `topic-<subject>-<topic>.html` |
-| Quiz | 57 | `quiz-<subject>-<topic>.html` |
+| Category | 25 | `category-<subject>-<category>.html` |
+| Topic | 58 | `topic-<subject>-<topic>.html` |
+| Quiz | 58 | `quiz-<subject>-<topic>.html` |
 | Exam | 28 | `exam-<id>.html` |
 | Cluster | 38 | `cluster-<id>.html` |
-| **Total** | **259** | emitted at repo root (relative assets, shared chrome) |
+| **Total** | **263** | emitted at repo root (relative assets, shared chrome) |
 
 | # | URL | Type | Title (chars) | Meta description (chars) | H1 | Intro words | Schema |
 | ---: | --- | --- | --- | --- | --- | ---: | --- |
@@ -29,7 +29,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 3 | `/subject-reasoning` | subject | Reasoning Quiz: Free MCQs for Punjab Exams (42) | 151 | Reasoning MCQs for Punjab Exams | 312 | BreadcrumbList, FAQPage, WebPage |
 | 4 | `/subject-punjabi` | subject | Punjabi Quiz: Free MCQs for Punjab Exams (40) | 154 | Punjabi MCQs for Punjab Exams | 284 | BreadcrumbList, FAQPage, WebPage |
 | 5 | `/subject-english` | subject | English Quiz: Free MCQs for Punjab Exams (40) | 149 | English MCQs for Punjab Exams | 295 | BreadcrumbList, FAQPage, WebPage |
-| 6 | `/subject-computer` | subject | Computer Quiz: Free MCQs for Punjab Exams (41) | 150 | Computer MCQs for Punjab Exams | 323 | BreadcrumbList, FAQPage, WebPage |
+| 6 | `/subject-computer` | subject | Computer Quiz: Free MCQs for Punjab Exams (41) | 151 | Computer MCQs for Punjab Exams | 327 | BreadcrumbList, FAQPage, WebPage |
 | 7 | `/subject-current-affairs` | subject | Current Affairs Quiz: Free MCQs for Punjab Exams (48) | 157 | Current Affairs MCQs for Punjab Exams | 303 | BreadcrumbList, FAQPage, WebPage |
 | 8 | `/category-gk-history` | category | History Quiz: General Knowledge MCQs for Punjab Exams (53) | 148 | History MCQs for Punjab Exams | 189 | BreadcrumbList, FAQPage, WebPage |
 | 9 | `/category-gk-ancient-history` | category | Ancient History MCQs for Punjab Exams (37) | 156 | Ancient History MCQs for Punjab Exams | 209 | BreadcrumbList, FAQPage, WebPage |
@@ -53,244 +53,248 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 27 | `/category-computer-03-generations-of-computers` | category | 03 Generations Of Computers MCQs for Punjab Exams (49) | 146 | 03   Generations Of Computers MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
 | 28 | `/category-computer-04-input-devices` | category | 04 Input Devices Quiz: Computer MCQs for Punjab Exams (53) | 154 | 04   Input Devices MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
 | 29 | `/category-computer-05-output-devices` | category | 05 Output Devices Quiz: Computer MCQs for Punjab Exams (54) | 155 | 05   Output Devices MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
-| 30 | `/category-current-affairs-july` | category | July Quiz: Current Affairs MCQs for Punjab Exams (48) | 149 | July MCQs for Punjab Exams | 205 | BreadcrumbList, FAQPage, WebPage |
-| 31 | `/category-current-affairs-september` | category | September Quiz: Current Affairs MCQs for Punjab Exams (53) | 155 | September MCQs for Punjab Exams | 205 | BreadcrumbList, FAQPage, WebPage |
-| 32 | `/topic-gk-guru-amar-das-ram-das-arjan-dev-part-2` | topic | Anand Sahib - Part 2: Topic Guide and MCQ Practice (50) | 154 | Anand Sahib - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 33 | `/topic-gk-arrival-of-european-in-india-part-1` | topic | Arrival of Europeans - Part 1: Topic Guide and MCQ Practice (59) | 145 | Arrival of Europeans - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 34 | `/topic-gk-arrival-of-european-in-india-part-2` | topic | Arrival of Europeans - Part 2: Topic Guide and MCQ Practice (59) | 145 | Arrival of Europeans - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 35 | `/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | topic | Baba Banda Singh Bahadur: early life - Part 1 MCQ Practice (58) | 148 | Baba Banda Singh Bahadur: early life - Part 1 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 36 | `/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | topic | Baba Banda Singh Bahadur: early life - Part 2 MCQ Practice (58) | 148 | Baba Banda Singh Bahadur: early life - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 37 | `/topic-gk-basic-concepts-of-economy-part-1` | topic | Basic Concepts of Economy - Part 1 MCQ Practice (47) | 150 | Basic Concepts of Economy - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 38 | `/topic-gk-basic-concepts-of-economy-part-2` | topic | Basic Concepts of Economy - Part 2 MCQ Practice (47) | 150 | Basic Concepts of Economy - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 39 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-1` | topic | Bengal - Part 1: Topic Guide and MCQ Practice (45) | 150 | Bengal - Part 1 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 40 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | topic | Birthplace of Guru Teg Bahadur Ji - Part 2 MCQ Practice (55) | 158 | Birthplace of Guru Teg Bahadur Ji - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 41 | `/topic-gk-dpsp-fundamental-duties-part-1` | topic | DPSP & Fundamental Duties - Part 1 MCQ Practice (47) | 150 | DPSP & Fundamental Duties - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 42 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | topic | Extension of British Paramountcy - Part 1 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 43 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | topic | Extension of British Paramountcy - Part 2 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 44 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | topic | Extension of British Paramountcy - Part 3 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 3 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 45 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | topic | Family of Guru Teg Bahadur Ji - Part 3 MCQ Practice (51) | 154 | Family of Guru Teg Bahadur Ji - Part 3 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 46 | `/topic-gk-01-financial-position-and-agriculture-of-punjab-part-1` | topic | Financial Position and Agriculture of Punjab - Part 1 MCQ (57) | 156 | Financial Position and Agriculture of Punjab - Part 1 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 47 | `/topic-gk-01-financial-position-and-agriculture-of-punjab-part-2` | topic | Financial Position and Agriculture of Punjab - Part 2 MCQ (57) | 156 | Financial Position and Agriculture of Punjab - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 48 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-2` | topic | First Anglo-Maratha War - Part 2 MCQ Practice (45) | 148 | First Anglo-Maratha War - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 49 | `/topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | topic | Guru Granth Sahib Ji and the Five Takhts - Part 1 MCQ (53) | 152 | Guru Granth Sahib Ji and the Five Takhts - Part 1 - Topic Guide and MCQs | 87 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 50 | `/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | topic | Guru Hargobind Ji - Part 1: Topic Guide and MCQ Practice (56) | 142 | Guru Hargobind Ji - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 51 | `/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | topic | Guru Hargobind Ji - Part 2: Topic Guide and MCQ Practice (56) | 142 | Guru Hargobind Ji - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 52 | `/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | topic | Guru Nanak Dev Ji: birthplace - Part 1 MCQ Practice (51) | 154 | Guru Nanak Dev Ji: birthplace - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 53 | `/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | topic | Guru Nanak Dev Ji: introduction of Langar - Part 2 MCQ (54) | 152 | Guru Nanak Dev Ji: introduction of Langar - Part 2 - Topic Guide and MCQs | 86 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 54 | `/topic-gk-guru-amar-das-ram-das-arjan-dev-part-1` | topic | Guru Ram Das Ji - Part 1: Topic Guide and MCQ Practice (54) | 140 | Guru Ram Das Ji - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 55 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | topic | Guru Teg Bahadur Ji - Part 1: Topic Guide and MCQ Practice (58) | 144 | Guru Teg Bahadur Ji - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 56 | `/topic-gk-01-making-of-the-indian-constitution-part1` | topic | Making of the Indian Constitution - Part 1 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 57 | `/topic-gk-01-making-of-the-indian-constitution-part2` | topic | Making of the Indian Constitution - Part 2 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 2 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 58 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-3` | topic | Punjab administration - Part 3: Topic Guide and MCQ Practice (60) | 146 | Punjab administration - Part 3 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 59 | `/topic-reasoning-analogy-part-1` | topic | Analogy Part 1: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 1 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 60 | `/topic-reasoning-analogy-part-2` | topic | Analogy Part 2: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 2 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 61 | `/topic-reasoning-analogy-part-3` | topic | Analogy Part 3: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 3 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 62 | `/topic-reasoning-analogy-part-4` | topic | Analogy Part 4: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 4 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 63 | `/topic-reasoning-number-series-part-1` | topic | Number Series Part 1: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 1 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 64 | `/topic-reasoning-number-series-part-2` | topic | Number Series Part 2: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 2 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 65 | `/topic-reasoning-number-series-part-3` | topic | Number Series Part 3: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 3 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 66 | `/topic-reasoning-number-series-part-4` | topic | Number Series Part 4: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 4 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 67 | `/topic-english-01-subject-and-predicate-part-1` | topic | 01 Subject And Predicate Part 1 MCQ Practice (44) | 156 | 01 Subject And Predicate Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 68 | `/topic-english-02-clauses-and-phrases-part-1` | topic | 02 Clauses And Phrases Part 1: Topic Guide and MCQ Practice (59) | 154 | 02 Clauses And Phrases Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 69 | `/topic-english-03-types-of-sentences-part-1` | topic | 03 Types Of Sentences Part 1: Topic Guide and MCQ Practice (58) | 153 | 03 Types Of Sentences Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 70 | `/topic-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | topic | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 (58) | 154 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 71 | `/topic-english-05-subject-and-predicate-complete-and-simple-forms-part-1` | topic | 05 Subject And Predicate Complete And Simple Forms Part 1 (57) | 150 | 05 Subject And Predicate Complete And Simple Forms Part 1 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 72 | `/topic-computer-02-evolution-of-computers-part1` | topic | Evolution of Computers - Part 1 MCQ Practice (44) | 157 | Evolution of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 73 | `/topic-computer-01-fundamentals-of-computers-part1` | topic | Fundamentals of Computers - Part 1 MCQ Practice (47) | 141 | Fundamentals of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 74 | `/topic-computer-01-fundamentals-of-computers-part2` | topic | Fundamentals of Computers - Part 2 MCQ Practice (47) | 141 | Fundamentals of Computers - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 75 | `/topic-computer-03-generations-of-computers-part1` | topic | Generations of Computers - Part 1 MCQ Practice (46) | 140 | Generations of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 76 | `/topic-computer-03-generations-of-computers-part2` | topic | Generations of Computers - Part 2 MCQ Practice (46) | 140 | Generations of Computers - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 77 | `/topic-computer-04-input-devices-part1` | topic | Input Devices - Part 1: Topic Guide and MCQ Practice (52) | 148 | Input Devices - Part 1 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 78 | `/topic-computer-04-input-devices-part2` | topic | Input Devices - Part 2: Topic Guide and MCQ Practice (52) | 148 | Input Devices - Part 2 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 79 | `/topic-computer-05-output-devices-part1` | topic | Output Devices - Part 1: Topic Guide and MCQ Practice (53) | 149 | Output Devices - Part 1 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 80 | `/topic-computer-05-output-devices-part2` | topic | Output Devices - Part 2: Topic Guide and MCQ Practice (53) | 149 | Output Devices - Part 2 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 81 | `/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic | Current Affairs July 2026 - Part 1 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 82 | `/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic | Current Affairs July 2026 - Part 2 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 83 | `/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic | Current Affairs July 2026 - Part 3 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 3 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 84 | `/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic | Current Affairs July 2026 - Part 4 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 4 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 85 | `/topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | topic | Current Affairs September 2026 - Part 1 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 86 | `/topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | topic | Current Affairs September 2026 - Part 2 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 87 | `/topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | topic | Current Affairs September 2026 - Part 3 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 3 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 88 | `/topic-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | topic | Current Affairs September 2026 - Part 4 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 4 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
-| 89 | `/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2` | quiz | Anand Sahib - Part 2 Quiz (9 MCQs) - Free Online Test (53) | 155 | Anand Sahib - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 90 | `/quiz-gk-arrival-of-european-in-india-part-1` | quiz | Arrival of Europeans - Part 1 Quiz - Free MCQs (46) | 152 | Arrival of Europeans - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 91 | `/quiz-gk-arrival-of-european-in-india-part-2` | quiz | Arrival of Europeans - Part 2 Quiz - Free MCQs (46) | 152 | Arrival of Europeans - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 92 | `/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | quiz | Baba Banda Singh Bahadur: early life - Part 1 Quiz - Quiz (57) | 147 | Baba Banda Singh Bahadur: early life - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 93 | `/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | quiz | Baba Banda Singh Bahadur: early life - Part 2 Quiz - Quiz (57) | 147 | Baba Banda Singh Bahadur: early life - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 94 | `/quiz-gk-basic-concepts-of-economy-part-1` | quiz | Basic Concepts of Economy - Part 1 Quiz - Free MCQs (51) | 154 | Basic Concepts of Economy - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 95 | `/quiz-gk-basic-concepts-of-economy-part-2` | quiz | Basic Concepts of Economy - Part 2 Quiz - Free MCQs (51) | 154 | Basic Concepts of Economy - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 96 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-1` | quiz | Bengal - Part 1 Quiz (20 MCQs) - Free Online Test (49) | 150 | Bengal - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 97 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | quiz | Birthplace of Guru Teg Bahadur Ji - Part 2 Quiz - Free MCQs (59) | 144 | Birthplace of Guru Teg Bahadur Ji - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 98 | `/quiz-gk-dpsp-fundamental-duties-part-1` | quiz | DPSP & Fundamental Duties - Part 1 Quiz - Free MCQs (51) | 155 | DPSP & Fundamental Duties - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 99 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | quiz | Extension of British Paramountcy - Part 1 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 100 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | quiz | Extension of British Paramountcy - Part 2 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 101 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | quiz | Extension of British Paramountcy - Part 3 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 102 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | quiz | Family of Guru Teg Bahadur Ji - Part 3 Quiz - Free MCQs (55) | 158 | Family of Guru Teg Bahadur Ji - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 103 | `/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1` | quiz | Financial Position and Agriculture of Punjab - Part 1 Quiz (58) | 157 | Financial Position and Agriculture of Punjab - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 104 | `/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2` | quiz | Financial Position and Agriculture of Punjab - Part 2 Quiz (58) | 157 | Financial Position and Agriculture of Punjab - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 105 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-2` | quiz | First Anglo-Maratha War - Part 2 Quiz - Free MCQs (49) | 153 | First Anglo-Maratha War - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 106 | `/quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | quiz | Guru Granth Sahib Ji and the Five Takhts - Part 1 Quiz Quiz (59) | 153 | Guru Granth Sahib Ji and the Five Takhts - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 107 | `/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | quiz | Guru Hargobind Ji - Part 1 Quiz (18 MCQs) - Free Online Test (60) | 155 | Guru Hargobind Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 108 | `/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | quiz | Guru Hargobind Ji - Part 2 Quiz (17 MCQs) - Free Online Test (60) | 157 | Guru Hargobind Ji - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 109 | `/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | quiz | Guru Nanak Dev Ji: birthplace - Part 1 Quiz - Free MCQs (55) | 142 | Guru Nanak Dev Ji: birthplace - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 110 | `/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | quiz | Guru Nanak Dev Ji: introduction of Langar - Part 2 Quiz (55) | 150 | Guru Nanak Dev Ji: introduction of Langar - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 111 | `/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1` | quiz | Guru Ram Das Ji - Part 1 Quiz (20 MCQs) - Free Online Test (58) | 159 | Guru Ram Das Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 112 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | quiz | Guru Teg Bahadur Ji - Part 1 Quiz - Free MCQs (45) | 158 | Guru Teg Bahadur Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 113 | `/quiz-gk-01-making-of-the-indian-constitution-part1` | quiz | Making of the Indian Constitution - Part 1 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 114 | `/quiz-gk-01-making-of-the-indian-constitution-part2` | quiz | Making of the Indian Constitution - Part 2 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 115 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-3` | quiz | Punjab administration - Part 3 Quiz - Free MCQs (47) | 151 | Punjab administration - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 116 | `/quiz-reasoning-analogy-part-1` | quiz | Analogy Part 1 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 117 | `/quiz-reasoning-analogy-part-2` | quiz | Analogy Part 2 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 118 | `/quiz-reasoning-analogy-part-3` | quiz | Analogy Part 3 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 119 | `/quiz-reasoning-analogy-part-4` | quiz | Analogy Part 4 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 4 | - | BreadcrumbList, FAQPage, WebPage |
-| 120 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 121 | `/quiz-reasoning-number-series-part-2` | quiz | Number Series Part 2 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 122 | `/quiz-reasoning-number-series-part-3` | quiz | Number Series Part 3 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 123 | `/quiz-reasoning-number-series-part-4` | quiz | Number Series Part 4 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 4 | - | BreadcrumbList, FAQPage, WebPage |
-| 124 | `/quiz-english-01-subject-and-predicate-part-1` | quiz | 01 Subject And Predicate Part 1 Quiz - Free MCQs (48) | 154 | 01 Subject And Predicate Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 125 | `/quiz-english-02-clauses-and-phrases-part-1` | quiz | 02 Clauses And Phrases Part 1 Quiz - Free MCQs (46) | 152 | 02 Clauses And Phrases Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 126 | `/quiz-english-03-types-of-sentences-part-1` | quiz | 03 Types Of Sentences Part 1 Quiz - Free MCQs (45) | 151 | 03 Types Of Sentences Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 127 | `/quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | quiz | 04 Simple Compound And Complex Sentences Part 1 En Quiz (55) | 158 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM | - | BreadcrumbList, FAQPage, WebPage |
-| 128 | `/quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1` | quiz | 05 Subject And Predicate Complete And Simple Forms Quiz (55) | 154 | 05 Subject And Predicate Complete And Simple Forms Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 129 | `/quiz-computer-02-evolution-of-computers-part1` | quiz | Evolution of Computers - Part 1 Quiz - Free MCQs (48) | 154 | Evolution of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 130 | `/quiz-computer-01-fundamentals-of-computers-part1` | quiz | Fundamentals of Computers - Part 1 Quiz - Free MCQs (51) | 157 | Fundamentals of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 131 | `/quiz-computer-01-fundamentals-of-computers-part2` | quiz | Fundamentals of Computers - Part 2 Quiz - Free MCQs (51) | 157 | Fundamentals of Computers - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 132 | `/quiz-computer-03-generations-of-computers-part1` | quiz | Generations of Computers - Part 1 Quiz - Free MCQs (50) | 156 | Generations of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 133 | `/quiz-computer-03-generations-of-computers-part2` | quiz | Generations of Computers - Part 2 Quiz - Free MCQs (50) | 156 | Generations of Computers - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 134 | `/quiz-computer-04-input-devices-part1` | quiz | Input Devices - Part 1 Quiz (25 MCQs) - Free Online Test (56) | 159 | Input Devices - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 135 | `/quiz-computer-04-input-devices-part2` | quiz | Input Devices - Part 2 Quiz (25 MCQs) - Free Online Test (56) | 159 | Input Devices - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 136 | `/quiz-computer-05-output-devices-part1` | quiz | Output Devices - Part 1 Quiz (25 MCQs) - Free Online Test (57) | 155 | Output Devices - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 137 | `/quiz-computer-05-output-devices-part2` | quiz | Output Devices - Part 2 Quiz (25 MCQs) - Free Online Test (57) | 155 | Output Devices - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 138 | `/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment` | quiz | Current Affairs July 2026 - Part 1 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 139 | `/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development` | quiz | Current Affairs July 2026 - Part 2 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 140 | `/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | quiz | Current Affairs July 2026 - Part 3 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 141 | `/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | quiz | Current Affairs July 2026 - Part 4 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 4 | - | BreadcrumbList, FAQPage, WebPage |
-| 142 | `/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | quiz | Current Affairs September 2026 - Part 1 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 143 | `/quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | quiz | Current Affairs September 2026 - Part 2 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 144 | `/quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | quiz | Current Affairs September 2026 - Part 3 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
-| 145 | `/quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | quiz | Current Affairs September 2026 - Part 4 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 4 | - | BreadcrumbList, FAQPage, WebPage |
-| 146 | `/pa/topic-gk-guru-amar-das-ram-das-arjan-dev-part-2` | topic-pa | ਅਨੰਦ ਸਾਹਿਬ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (37) | 157 | ਅਨੰਦ ਸਾਹਿਬ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 147 | `/pa/topic-gk-arrival-of-european-in-india-part-1` | topic-pa | Arrival of Europeans - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (47) | 149 | Arrival of Europeans - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 148 | `/pa/topic-gk-arrival-of-european-in-india-part-2` | topic-pa | Arrival of Europeans - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (47) | 149 | Arrival of Europeans - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 149 | `/pa/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | topic-pa | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 150 | `/pa/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | topic-pa | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 151 | `/pa/topic-gk-basic-concepts-of-economy-part-1` | topic-pa | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 152 | `/pa/topic-gk-basic-concepts-of-economy-part-2` | topic-pa | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 153 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-1` | topic-pa | ਬੰਗਾਲ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | ਬੰਗਾਲ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 154 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜਨਮ ਸਥਾਨ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (56) | 158 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜਨਮ ਸਥਾਨ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 155 | `/pa/topic-gk-dpsp-fundamental-duties-part-1` | topic-pa | ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1 MCQ (49) | 143 | ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 156 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 157 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 158 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 159 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਪਰਿਵਾਰ - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (54) | 156 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਪਰਿਵਾਰ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 160 | `/pa/topic-gk-01-financial-position-and-agriculture-of-punjab-part-1` | topic-pa | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 161 | `/pa/topic-gk-01-financial-position-and-agriculture-of-punjab-part-2` | topic-pa | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 162 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-2` | topic-pa | ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (49) | 151 | ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 163 | `/pa/topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | topic-pa | ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ - Part 1 MCQ (50) | 144 | ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 164 | `/pa/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | topic-pa | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 165 | `/pa/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | topic-pa | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 166 | `/pa/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | topic-pa | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਜਨਮ ਸਥਾਨ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (53) | 155 | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਜਨਮ ਸਥਾਨ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 167 | `/pa/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | topic-pa | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਲੰਗਰ ਪ੍ਰਥਾ ਦੀ ਸ਼ੁਰੂਆਤ - Part 2 MCQ (52) | 145 | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਲੰਗਰ ਪ੍ਰਥਾ ਦੀ ਸ਼ੁਰੂਆਤ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 168 | `/pa/topic-gk-guru-amar-das-ram-das-arjan-dev-part-1` | topic-pa | ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (42) | 144 | ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 169 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 170 | `/pa/topic-gk-01-making-of-the-indian-constitution-part1` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 171 | `/pa/topic-gk-01-making-of-the-indian-constitution-part2` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 172 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-3` | topic-pa | ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 173 | `/pa/topic-reasoning-analogy-part-1` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 174 | `/pa/topic-reasoning-analogy-part-2` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 175 | `/pa/topic-reasoning-analogy-part-3` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 176 | `/pa/topic-reasoning-analogy-part-4` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 177 | `/pa/topic-computer-02-evolution-of-computers-part1` | topic-pa | Evolution of Computers - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (49) | 151 | Evolution of Computers - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 178 | `/pa/topic-computer-01-fundamentals-of-computers-part1` | topic-pa | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 179 | `/pa/topic-computer-01-fundamentals-of-computers-part2` | topic-pa | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 180 | `/pa/topic-computer-03-generations-of-computers-part1` | topic-pa | Generations of Computers - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (51) | 153 | Generations of Computers - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 181 | `/pa/topic-computer-03-generations-of-computers-part2` | topic-pa | Generations of Computers - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (51) | 153 | Generations of Computers - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 182 | `/pa/topic-computer-04-input-devices-part1` | topic-pa | Input Devices - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | Input Devices - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 183 | `/pa/topic-computer-04-input-devices-part2` | topic-pa | Input Devices - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | Input Devices - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 184 | `/pa/topic-computer-05-output-devices-part1` | topic-pa | Output Devices - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | Output Devices - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 185 | `/pa/topic-computer-05-output-devices-part2` | topic-pa | Output Devices - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | Output Devices - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 186 | `/pa/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 187 | `/pa/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 188 | `/pa/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 189 | `/pa/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 190 | `/pa/topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 191 | `/pa/topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 192 | `/pa/topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 193 | `/pa/topic-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
-| 194 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
-| 195 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 196 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
-| 197 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 124 | BreadcrumbList, FAQPage, WebPage |
-| 198 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 199 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 142 | BreadcrumbList, FAQPage, WebPage |
-| 200 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 201 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 202 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
-| 203 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 204 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 205 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 206 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 207 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 122 | BreadcrumbList, FAQPage, WebPage |
-| 208 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 122 | BreadcrumbList, FAQPage, WebPage |
-| 209 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 210 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
-| 211 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 123 | BreadcrumbList, FAQPage, WebPage |
-| 212 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 111 | BreadcrumbList, FAQPage, WebPage |
-| 213 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 118 | BreadcrumbList, FAQPage, WebPage |
-| 214 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
-| 215 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 216 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 137 | BreadcrumbList, FAQPage, WebPage |
-| 217 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
-| 218 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
-| 219 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 220 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
-| 221 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
-| 222 | `/cluster-indian-polity` | cluster | Indian Polity: Syllabus, Topics and Free MCQs (45) | 143 | Indian Polity - Study Guide and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
-| 223 | `/cluster-indian-history` | cluster | Indian History: Syllabus, Topics and Free MCQs (46) | 144 | Indian History - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 224 | `/cluster-modern-history` | cluster | Modern History: Syllabus, Topics and Free MCQs (46) | 144 | Modern History - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 225 | `/cluster-ancient-history` | cluster | Ancient History: Syllabus, Topics and Free MCQs (47) | 145 | Ancient History - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 226 | `/cluster-medieval-history` | cluster | Medieval History: Syllabus, Topics and Free MCQs (48) | 146 | Medieval History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 227 | `/cluster-geography` | cluster | Geography: Syllabus, Topics and Free MCQs (41) | 158 | Geography - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 228 | `/cluster-punjab-geography` | cluster | Punjab Geography: Syllabus, Topics and Free MCQs (48) | 146 | Punjab Geography - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 229 | `/cluster-punjab-history` | cluster | Punjab History: Syllabus, Topics and Free MCQs (46) | 144 | Punjab History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 230 | `/cluster-punjab-culture` | cluster | Punjab Culture: Syllabus, Topics and Free MCQs (46) | 144 | Punjab Culture - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 231 | `/cluster-punjab-art` | cluster | Punjab Art: Syllabus, Topics and Free MCQs (42) | 140 | Punjab Art - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 232 | `/cluster-economy` | cluster | Economy: Syllabus, Topics and Free MCQs (39) | 156 | Economy - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 233 | `/cluster-science` | cluster | Science: Syllabus, Topics and Free MCQs (39) | 156 | Science - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 234 | `/cluster-biology` | cluster | Biology: Syllabus, Topics and Free MCQs (39) | 156 | Biology - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 235 | `/cluster-physics` | cluster | Physics: Syllabus, Topics and Free MCQs (39) | 156 | Physics - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 236 | `/cluster-chemistry` | cluster | Chemistry: Syllabus, Topics and Free MCQs (41) | 158 | Chemistry - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 237 | `/cluster-environment` | cluster | Environment: Syllabus, Topics and Free MCQs (43) | 141 | Environment - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 238 | `/cluster-computer` | cluster | Computer: Syllabus, Topics and Free MCQs (40) | 157 | Computer - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 239 | `/cluster-reasoning` | cluster | Reasoning: Syllabus, Topics and Free MCQs (41) | 158 | Reasoning - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 240 | `/cluster-english` | cluster | English: Syllabus, Topics and Free MCQs (39) | 156 | English - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 241 | `/cluster-punjabi` | cluster | Punjabi: Syllabus, Topics and Free MCQs (39) | 156 | Punjabi - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 242 | `/cluster-current-affairs` | cluster | Current Affairs: Syllabus, Topics and Free MCQs (47) | 145 | Current Affairs - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 243 | `/cluster-punjab-current-affairs` | cluster | Punjab Current Affairs: Syllabus, Topics and Free MCQs (54) | 152 | Punjab Current Affairs - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 244 | `/cluster-sports` | cluster | Sports: Syllabus, Topics and Free MCQs (38) | 155 | Sports - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 245 | `/cluster-awards` | cluster | Awards and Honours: Syllabus, Topics and Free MCQs (50) | 148 | Awards and Honours - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 246 | `/cluster-books-authors` | cluster | Books and Authors: Syllabus, Topics and Free MCQs (49) | 147 | Books and Authors - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
-| 247 | `/cluster-important-days` | cluster | Important Days and Dates: Syllabus, Topics and Free MCQs (56) | 154 | Important Days and Dates - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 248 | `/cluster-constitution` | cluster | Indian Constitution: Syllabus, Topics and Free MCQs (51) | 149 | Indian Constitution - Study Guide and Free MCQs | 136 | BreadcrumbList, FAQPage, WebPage |
-| 249 | `/cluster-fundamental-rights` | cluster | Fundamental Rights: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Rights - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
-| 250 | `/cluster-directive-principles` | cluster | Directive Principles of State Policy (DPSP): Topics and (55) | 152 | Directive Principles of State Policy (DPSP) - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 251 | `/cluster-fundamental-duties` | cluster | Fundamental Duties: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Duties - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
-| 252 | `/cluster-parliament` | cluster | Parliament: Syllabus, Topics and Free MCQs (42) | 140 | Parliament - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
-| 253 | `/cluster-president` | cluster | President of India: Syllabus, Topics and Free MCQs (50) | 148 | President of India - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
-| 254 | `/cluster-prime-minister` | cluster | Prime Minister and Council of Ministers: Topics and Free (56) | 157 | Prime Minister and Council of Ministers - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
-| 255 | `/cluster-judiciary` | cluster | Judiciary: Syllabus, Topics and Free MCQs (41) | 158 | Judiciary - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
-| 256 | `/cluster-emergency-provisions` | cluster | Emergency Provisions: Syllabus, Topics and Free MCQs (52) | 150 | Emergency Provisions - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
-| 257 | `/cluster-panchayati-raj` | cluster | Panchayati Raj: Syllabus, Topics and Free MCQs (46) | 144 | Panchayati Raj - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
-| 258 | `/cluster-local-government` | cluster | Local Government: Syllabus, Topics and Free MCQs (48) | 146 | Local Government - Study Guide and Free MCQs | 119 | BreadcrumbList, FAQPage, WebPage |
-| 259 | `/cluster-static-gk` | cluster | Static GK: Syllabus, Topics and Free MCQs (41) | 158 | Static GK - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 30 | `/category-computer-06-central-processing-unit` | category | 06 Central Processing Unit MCQs for Punjab Exams (48) | 145 | 06   Central Processing Unit MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
+| 31 | `/category-current-affairs-july` | category | July Quiz: Current Affairs MCQs for Punjab Exams (48) | 149 | July MCQs for Punjab Exams | 205 | BreadcrumbList, FAQPage, WebPage |
+| 32 | `/category-current-affairs-september` | category | September Quiz: Current Affairs MCQs for Punjab Exams (53) | 155 | September MCQs for Punjab Exams | 205 | BreadcrumbList, FAQPage, WebPage |
+| 33 | `/topic-gk-guru-amar-das-ram-das-arjan-dev-part-2` | topic | Anand Sahib - Part 2: Topic Guide and MCQ Practice (50) | 154 | Anand Sahib - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 34 | `/topic-gk-arrival-of-european-in-india-part-1` | topic | Arrival of Europeans - Part 1: Topic Guide and MCQ Practice (59) | 145 | Arrival of Europeans - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 35 | `/topic-gk-arrival-of-european-in-india-part-2` | topic | Arrival of Europeans - Part 2: Topic Guide and MCQ Practice (59) | 145 | Arrival of Europeans - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 36 | `/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | topic | Baba Banda Singh Bahadur: early life - Part 1 MCQ Practice (58) | 148 | Baba Banda Singh Bahadur: early life - Part 1 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 37 | `/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | topic | Baba Banda Singh Bahadur: early life - Part 2 MCQ Practice (58) | 148 | Baba Banda Singh Bahadur: early life - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 38 | `/topic-gk-basic-concepts-of-economy-part-1` | topic | Basic Concepts of Economy - Part 1 MCQ Practice (47) | 150 | Basic Concepts of Economy - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 39 | `/topic-gk-basic-concepts-of-economy-part-2` | topic | Basic Concepts of Economy - Part 2 MCQ Practice (47) | 150 | Basic Concepts of Economy - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 40 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-1` | topic | Bengal - Part 1: Topic Guide and MCQ Practice (45) | 150 | Bengal - Part 1 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 41 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | topic | Birthplace of Guru Teg Bahadur Ji - Part 2 MCQ Practice (55) | 158 | Birthplace of Guru Teg Bahadur Ji - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 42 | `/topic-gk-dpsp-fundamental-duties-part-1` | topic | DPSP & Fundamental Duties - Part 1 MCQ Practice (47) | 150 | DPSP & Fundamental Duties - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 43 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | topic | Extension of British Paramountcy - Part 1 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 44 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | topic | Extension of British Paramountcy - Part 2 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 45 | `/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | topic | Extension of British Paramountcy - Part 3 MCQ Practice (54) | 157 | Extension of British Paramountcy - Part 3 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 46 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | topic | Family of Guru Teg Bahadur Ji - Part 3 MCQ Practice (51) | 154 | Family of Guru Teg Bahadur Ji - Part 3 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 47 | `/topic-gk-01-financial-position-and-agriculture-of-punjab-part-1` | topic | Financial Position and Agriculture of Punjab - Part 1 MCQ (57) | 156 | Financial Position and Agriculture of Punjab - Part 1 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 48 | `/topic-gk-01-financial-position-and-agriculture-of-punjab-part-2` | topic | Financial Position and Agriculture of Punjab - Part 2 MCQ (57) | 156 | Financial Position and Agriculture of Punjab - Part 2 - Topic Guide and MCQs | 85 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 49 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-2` | topic | First Anglo-Maratha War - Part 2 MCQ Practice (45) | 148 | First Anglo-Maratha War - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 50 | `/topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | topic | Guru Granth Sahib Ji and the Five Takhts - Part 1 MCQ (53) | 152 | Guru Granth Sahib Ji and the Five Takhts - Part 1 - Topic Guide and MCQs | 87 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 51 | `/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | topic | Guru Hargobind Ji - Part 1: Topic Guide and MCQ Practice (56) | 142 | Guru Hargobind Ji - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 52 | `/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | topic | Guru Hargobind Ji - Part 2: Topic Guide and MCQ Practice (56) | 142 | Guru Hargobind Ji - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 53 | `/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | topic | Guru Nanak Dev Ji: birthplace - Part 1 MCQ Practice (51) | 154 | Guru Nanak Dev Ji: birthplace - Part 1 - Topic Guide and MCQs | 84 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 54 | `/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | topic | Guru Nanak Dev Ji: introduction of Langar - Part 2 MCQ (54) | 152 | Guru Nanak Dev Ji: introduction of Langar - Part 2 - Topic Guide and MCQs | 86 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 55 | `/topic-gk-guru-amar-das-ram-das-arjan-dev-part-1` | topic | Guru Ram Das Ji - Part 1: Topic Guide and MCQ Practice (54) | 140 | Guru Ram Das Ji - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 56 | `/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | topic | Guru Teg Bahadur Ji - Part 1: Topic Guide and MCQ Practice (58) | 144 | Guru Teg Bahadur Ji - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 57 | `/topic-gk-01-making-of-the-indian-constitution-part1` | topic | Making of the Indian Constitution - Part 1 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 1 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 58 | `/topic-gk-01-making-of-the-indian-constitution-part2` | topic | Making of the Indian Constitution - Part 2 MCQ Practice (55) | 158 | Making of the Indian Constitution - Part 2 - Topic Guide and MCQs | 83 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 59 | `/topic-gk-expansion-of-english-east-india-company-in-india-part-3` | topic | Punjab administration - Part 3: Topic Guide and MCQ Practice (60) | 146 | Punjab administration - Part 3 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 60 | `/topic-reasoning-analogy-part-1` | topic | Analogy Part 1: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 1 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 61 | `/topic-reasoning-analogy-part-2` | topic | Analogy Part 2: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 2 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 62 | `/topic-reasoning-analogy-part-3` | topic | Analogy Part 3: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 3 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 63 | `/topic-reasoning-analogy-part-4` | topic | Analogy Part 4: Topic Guide and MCQ Practice (44) | 158 | Analogy Part 4 - Topic Guide and MCQs | 76 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 64 | `/topic-reasoning-number-series-part-1` | topic | Number Series Part 1: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 1 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 65 | `/topic-reasoning-number-series-part-2` | topic | Number Series Part 2: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 2 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 66 | `/topic-reasoning-number-series-part-3` | topic | Number Series Part 3: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 3 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 67 | `/topic-reasoning-number-series-part-4` | topic | Number Series Part 4: Topic Guide and MCQ Practice (50) | 160 | Number Series Part 4 - Topic Guide and MCQs | 78 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 68 | `/topic-english-01-subject-and-predicate-part-1` | topic | 01 Subject And Predicate Part 1 MCQ Practice (44) | 156 | 01 Subject And Predicate Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 69 | `/topic-english-02-clauses-and-phrases-part-1` | topic | 02 Clauses And Phrases Part 1: Topic Guide and MCQ Practice (59) | 154 | 02 Clauses And Phrases Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 70 | `/topic-english-03-types-of-sentences-part-1` | topic | 03 Types Of Sentences Part 1: Topic Guide and MCQ Practice (58) | 153 | 03 Types Of Sentences Part 1 - Topic Guide and MCQs | 75 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 71 | `/topic-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | topic | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 (58) | 154 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 72 | `/topic-english-05-subject-and-predicate-complete-and-simple-forms-part-1` | topic | 05 Subject And Predicate Complete And Simple Forms Part 1 (57) | 150 | 05 Subject And Predicate Complete And Simple Forms Part 1 - Topic Guide and MCQs | 79 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 73 | `/topic-computer-06-central-processing-unit-part1` | topic | Central Processing Unit - Part 1 MCQ Practice (45) | 158 | Central Processing Unit - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 74 | `/topic-computer-02-evolution-of-computers-part1` | topic | Evolution of Computers - Part 1 MCQ Practice (44) | 157 | Evolution of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 75 | `/topic-computer-01-fundamentals-of-computers-part1` | topic | Fundamentals of Computers - Part 1 MCQ Practice (47) | 141 | Fundamentals of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 76 | `/topic-computer-01-fundamentals-of-computers-part2` | topic | Fundamentals of Computers - Part 2 MCQ Practice (47) | 141 | Fundamentals of Computers - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 77 | `/topic-computer-03-generations-of-computers-part1` | topic | Generations of Computers - Part 1 MCQ Practice (46) | 140 | Generations of Computers - Part 1 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 78 | `/topic-computer-03-generations-of-computers-part2` | topic | Generations of Computers - Part 2 MCQ Practice (46) | 140 | Generations of Computers - Part 2 - Topic Guide and MCQs | 82 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 79 | `/topic-computer-04-input-devices-part1` | topic | Input Devices - Part 1: Topic Guide and MCQ Practice (52) | 148 | Input Devices - Part 1 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 80 | `/topic-computer-04-input-devices-part2` | topic | Input Devices - Part 2: Topic Guide and MCQ Practice (52) | 148 | Input Devices - Part 2 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 81 | `/topic-computer-05-output-devices-part1` | topic | Output Devices - Part 1: Topic Guide and MCQ Practice (53) | 149 | Output Devices - Part 1 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 82 | `/topic-computer-05-output-devices-part2` | topic | Output Devices - Part 2: Topic Guide and MCQ Practice (53) | 149 | Output Devices - Part 2 - Topic Guide and MCQs | 80 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 83 | `/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic | Current Affairs July 2026 - Part 1 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 84 | `/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic | Current Affairs July 2026 - Part 2 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 85 | `/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic | Current Affairs July 2026 - Part 3 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 3 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 86 | `/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic | Current Affairs July 2026 - Part 4 MCQ Practice (47) | 148 | Current Affairs July 2026 - Part 4 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 87 | `/topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | topic | Current Affairs September 2026 - Part 1 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 1 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 88 | `/topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | topic | Current Affairs September 2026 - Part 2 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 2 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 89 | `/topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | topic | Current Affairs September 2026 - Part 3 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 3 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 90 | `/topic-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | topic | Current Affairs September 2026 - Part 4 MCQ Practice (52) | 153 | Current Affairs September 2026 - Part 4 - Topic Guide and MCQs | 81 | BreadcrumbList, FAQPage, Quiz, WebPage |
+| 91 | `/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2` | quiz | Anand Sahib - Part 2 Quiz (9 MCQs) - Free Online Test (53) | 155 | Anand Sahib - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 92 | `/quiz-gk-arrival-of-european-in-india-part-1` | quiz | Arrival of Europeans - Part 1 Quiz - Free MCQs (46) | 152 | Arrival of Europeans - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 93 | `/quiz-gk-arrival-of-european-in-india-part-2` | quiz | Arrival of Europeans - Part 2 Quiz - Free MCQs (46) | 152 | Arrival of Europeans - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 94 | `/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | quiz | Baba Banda Singh Bahadur: early life - Part 1 Quiz - Quiz (57) | 147 | Baba Banda Singh Bahadur: early life - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 95 | `/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | quiz | Baba Banda Singh Bahadur: early life - Part 2 Quiz - Quiz (57) | 147 | Baba Banda Singh Bahadur: early life - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 96 | `/quiz-gk-basic-concepts-of-economy-part-1` | quiz | Basic Concepts of Economy - Part 1 Quiz - Free MCQs (51) | 154 | Basic Concepts of Economy - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 97 | `/quiz-gk-basic-concepts-of-economy-part-2` | quiz | Basic Concepts of Economy - Part 2 Quiz - Free MCQs (51) | 154 | Basic Concepts of Economy - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 98 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-1` | quiz | Bengal - Part 1 Quiz (20 MCQs) - Free Online Test (49) | 150 | Bengal - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 99 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | quiz | Birthplace of Guru Teg Bahadur Ji - Part 2 Quiz - Free MCQs (59) | 144 | Birthplace of Guru Teg Bahadur Ji - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 100 | `/quiz-gk-dpsp-fundamental-duties-part-1` | quiz | DPSP & Fundamental Duties - Part 1 Quiz - Free MCQs (51) | 155 | DPSP & Fundamental Duties - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 101 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | quiz | Extension of British Paramountcy - Part 1 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 102 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | quiz | Extension of British Paramountcy - Part 2 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 103 | `/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | quiz | Extension of British Paramountcy - Part 3 Quiz - Free MCQs (58) | 145 | Extension of British Paramountcy - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 104 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | quiz | Family of Guru Teg Bahadur Ji - Part 3 Quiz - Free MCQs (55) | 158 | Family of Guru Teg Bahadur Ji - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 105 | `/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1` | quiz | Financial Position and Agriculture of Punjab - Part 1 Quiz (58) | 157 | Financial Position and Agriculture of Punjab - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 106 | `/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2` | quiz | Financial Position and Agriculture of Punjab - Part 2 Quiz (58) | 157 | Financial Position and Agriculture of Punjab - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 107 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-2` | quiz | First Anglo-Maratha War - Part 2 Quiz - Free MCQs (49) | 153 | First Anglo-Maratha War - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 108 | `/quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | quiz | Guru Granth Sahib Ji and the Five Takhts - Part 1 Quiz Quiz (59) | 153 | Guru Granth Sahib Ji and the Five Takhts - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 109 | `/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | quiz | Guru Hargobind Ji - Part 1 Quiz (18 MCQs) - Free Online Test (60) | 155 | Guru Hargobind Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 110 | `/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | quiz | Guru Hargobind Ji - Part 2 Quiz (17 MCQs) - Free Online Test (60) | 157 | Guru Hargobind Ji - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 111 | `/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | quiz | Guru Nanak Dev Ji: birthplace - Part 1 Quiz - Free MCQs (55) | 142 | Guru Nanak Dev Ji: birthplace - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 112 | `/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | quiz | Guru Nanak Dev Ji: introduction of Langar - Part 2 Quiz (55) | 150 | Guru Nanak Dev Ji: introduction of Langar - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 113 | `/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1` | quiz | Guru Ram Das Ji - Part 1 Quiz (20 MCQs) - Free Online Test (58) | 159 | Guru Ram Das Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 114 | `/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | quiz | Guru Teg Bahadur Ji - Part 1 Quiz - Free MCQs (45) | 158 | Guru Teg Bahadur Ji - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 115 | `/quiz-gk-01-making-of-the-indian-constitution-part1` | quiz | Making of the Indian Constitution - Part 1 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 116 | `/quiz-gk-01-making-of-the-indian-constitution-part2` | quiz | Making of the Indian Constitution - Part 2 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 117 | `/quiz-gk-expansion-of-english-east-india-company-in-india-part-3` | quiz | Punjab administration - Part 3 Quiz - Free MCQs (47) | 151 | Punjab administration - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 118 | `/quiz-reasoning-analogy-part-1` | quiz | Analogy Part 1 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 119 | `/quiz-reasoning-analogy-part-2` | quiz | Analogy Part 2 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 120 | `/quiz-reasoning-analogy-part-3` | quiz | Analogy Part 3 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 121 | `/quiz-reasoning-analogy-part-4` | quiz | Analogy Part 4 Quiz (25 MCQs) - Free Online Test (48) | 149 | Analogy Part 4 | - | BreadcrumbList, FAQPage, WebPage |
+| 122 | `/quiz-reasoning-number-series-part-1` | quiz | Number Series Part 1 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 123 | `/quiz-reasoning-number-series-part-2` | quiz | Number Series Part 2 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 124 | `/quiz-reasoning-number-series-part-3` | quiz | Number Series Part 3 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 125 | `/quiz-reasoning-number-series-part-4` | quiz | Number Series Part 4 Quiz (25 MCQs) - Free Online Test (54) | 155 | Number Series Part 4 | - | BreadcrumbList, FAQPage, WebPage |
+| 126 | `/quiz-english-01-subject-and-predicate-part-1` | quiz | 01 Subject And Predicate Part 1 Quiz - Free MCQs (48) | 154 | 01 Subject And Predicate Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 127 | `/quiz-english-02-clauses-and-phrases-part-1` | quiz | 02 Clauses And Phrases Part 1 Quiz - Free MCQs (46) | 152 | 02 Clauses And Phrases Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 128 | `/quiz-english-03-types-of-sentences-part-1` | quiz | 03 Types Of Sentences Part 1 Quiz - Free MCQs (45) | 151 | 03 Types Of Sentences Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 129 | `/quiz-english-04-simple-compound-and-complex-sentences-part-1-en 9.16.34 PM` | quiz | 04 Simple Compound And Complex Sentences Part 1 En Quiz (55) | 158 | 04 Simple Compound And Complex Sentences Part 1 En 9.16.34 PM | - | BreadcrumbList, FAQPage, WebPage |
+| 130 | `/quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1` | quiz | 05 Subject And Predicate Complete And Simple Forms Quiz (55) | 154 | 05 Subject And Predicate Complete And Simple Forms Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 131 | `/quiz-computer-06-central-processing-unit-part1` | quiz | Central Processing Unit - Part 1 Quiz - Free MCQs (49) | 155 | Central Processing Unit - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 132 | `/quiz-computer-02-evolution-of-computers-part1` | quiz | Evolution of Computers - Part 1 Quiz - Free MCQs (48) | 154 | Evolution of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 133 | `/quiz-computer-01-fundamentals-of-computers-part1` | quiz | Fundamentals of Computers - Part 1 Quiz - Free MCQs (51) | 157 | Fundamentals of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 134 | `/quiz-computer-01-fundamentals-of-computers-part2` | quiz | Fundamentals of Computers - Part 2 Quiz - Free MCQs (51) | 157 | Fundamentals of Computers - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 135 | `/quiz-computer-03-generations-of-computers-part1` | quiz | Generations of Computers - Part 1 Quiz - Free MCQs (50) | 156 | Generations of Computers - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 136 | `/quiz-computer-03-generations-of-computers-part2` | quiz | Generations of Computers - Part 2 Quiz - Free MCQs (50) | 156 | Generations of Computers - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 137 | `/quiz-computer-04-input-devices-part1` | quiz | Input Devices - Part 1 Quiz (25 MCQs) - Free Online Test (56) | 159 | Input Devices - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 138 | `/quiz-computer-04-input-devices-part2` | quiz | Input Devices - Part 2 Quiz (25 MCQs) - Free Online Test (56) | 159 | Input Devices - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 139 | `/quiz-computer-05-output-devices-part1` | quiz | Output Devices - Part 1 Quiz (25 MCQs) - Free Online Test (57) | 155 | Output Devices - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 140 | `/quiz-computer-05-output-devices-part2` | quiz | Output Devices - Part 2 Quiz (25 MCQs) - Free Online Test (57) | 155 | Output Devices - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 141 | `/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment` | quiz | Current Affairs July 2026 - Part 1 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 142 | `/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development` | quiz | Current Affairs July 2026 - Part 2 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 143 | `/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | quiz | Current Affairs July 2026 - Part 3 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 144 | `/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | quiz | Current Affairs July 2026 - Part 4 Quiz - Free MCQs (51) | 155 | Current Affairs July 2026 - Part 4 | - | BreadcrumbList, FAQPage, WebPage |
+| 145 | `/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | quiz | Current Affairs September 2026 - Part 1 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 146 | `/quiz-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | quiz | Current Affairs September 2026 - Part 2 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 147 | `/quiz-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | quiz | Current Affairs September 2026 - Part 3 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 3 | - | BreadcrumbList, FAQPage, WebPage |
+| 148 | `/quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | quiz | Current Affairs September 2026 - Part 4 Quiz - Free MCQs (56) | 143 | Current Affairs September 2026 - Part 4 | - | BreadcrumbList, FAQPage, WebPage |
+| 149 | `/pa/topic-gk-guru-amar-das-ram-das-arjan-dev-part-2` | topic-pa | ਅਨੰਦ ਸਾਹਿਬ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (37) | 157 | ਅਨੰਦ ਸਾਹਿਬ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 150 | `/pa/topic-gk-arrival-of-european-in-india-part-1` | topic-pa | Arrival of Europeans - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (47) | 149 | Arrival of Europeans - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 151 | `/pa/topic-gk-arrival-of-european-in-india-part-2` | topic-pa | Arrival of Europeans - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (47) | 149 | Arrival of Europeans - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 152 | `/pa/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1` | topic-pa | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 153 | `/pa/topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2` | topic-pa | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ: ਮੁੱਢਲਾ ਜੀਵਨ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 154 | `/pa/topic-gk-basic-concepts-of-economy-part-1` | topic-pa | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 155 | `/pa/topic-gk-basic-concepts-of-economy-part-2` | topic-pa | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 156 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-1` | topic-pa | ਬੰਗਾਲ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (32) | 153 | ਬੰਗਾਲ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 157 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜਨਮ ਸਥਾਨ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (56) | 158 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਜਨਮ ਸਥਾਨ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 158 | `/pa/topic-gk-dpsp-fundamental-duties-part-1` | topic-pa | ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1 MCQ (49) | 143 | ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 159 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 160 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 161 | `/pa/topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3` | topic-pa | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3 (57) | 155 | ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਵਿਸਥਾਰ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 162 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਪਰਿਵਾਰ - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (54) | 156 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਦਾ ਪਰਿਵਾਰ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 163 | `/pa/topic-gk-01-financial-position-and-agriculture-of-punjab-part-1` | topic-pa | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 164 | `/pa/topic-gk-01-financial-position-and-agriculture-of-punjab-part-2` | topic-pa | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (60) | 140 | ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 165 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-2` | topic-pa | ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (49) | 151 | ਪਹਿਲਾ ਐਂਗਲੋ-ਮਰਾਠਾ ਯੁੱਧ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 166 | `/pa/topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1` | topic-pa | ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ - Part 1 MCQ (50) | 144 | ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 167 | `/pa/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1` | topic-pa | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 168 | `/pa/topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2` | topic-pa | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਹਰਿਗੋਬਿੰਦ ਜੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 169 | `/pa/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1` | topic-pa | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਜਨਮ ਸਥਾਨ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (53) | 155 | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਜਨਮ ਸਥਾਨ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 170 | `/pa/topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2` | topic-pa | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਲੰਗਰ ਪ੍ਰਥਾ ਦੀ ਸ਼ੁਰੂਆਤ - Part 2 MCQ (52) | 145 | ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ: ਲੰਗਰ ਪ੍ਰਥਾ ਦੀ ਸ਼ੁਰੂਆਤ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 171 | `/pa/topic-gk-guru-amar-das-ram-das-arjan-dev-part-1` | topic-pa | ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (42) | 144 | ਗੁਰੂ ਰਾਮ ਦਾਸ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 172 | `/pa/topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1` | topic-pa | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (44) | 146 | ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 173 | `/pa/topic-gk-01-making-of-the-indian-constitution-part1` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 174 | `/pa/topic-gk-01-making-of-the-indian-constitution-part2` | topic-pa | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 175 | `/pa/topic-gk-expansion-of-english-east-india-company-in-india-part-3` | topic-pa | ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | ਪੰਜਾਬ ਪ੍ਰਸ਼ਾਸਨ - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 176 | `/pa/topic-reasoning-analogy-part-1` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 177 | `/pa/topic-reasoning-analogy-part-2` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 178 | `/pa/topic-reasoning-analogy-part-3` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 179 | `/pa/topic-reasoning-analogy-part-4` | topic-pa | ਸਮਾਨਤਾ (Analogy) Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | ਸਮਾਨਤਾ (Analogy) Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 180 | `/pa/topic-computer-06-central-processing-unit-part1` | topic-pa | Central Processing Unit - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | Central Processing Unit - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 181 | `/pa/topic-computer-02-evolution-of-computers-part1` | topic-pa | Evolution of Computers - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (49) | 151 | Evolution of Computers - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 182 | `/pa/topic-computer-01-fundamentals-of-computers-part1` | topic-pa | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 183 | `/pa/topic-computer-01-fundamentals-of-computers-part2` | topic-pa | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (52) | 154 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 184 | `/pa/topic-computer-03-generations-of-computers-part1` | topic-pa | Generations of Computers - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (51) | 153 | Generations of Computers - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 185 | `/pa/topic-computer-03-generations-of-computers-part2` | topic-pa | Generations of Computers - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (51) | 153 | Generations of Computers - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 186 | `/pa/topic-computer-04-input-devices-part1` | topic-pa | Input Devices - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | Input Devices - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 187 | `/pa/topic-computer-04-input-devices-part2` | topic-pa | Input Devices - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (40) | 142 | Input Devices - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 188 | `/pa/topic-computer-05-output-devices-part1` | topic-pa | Output Devices - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | Output Devices - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 189 | `/pa/topic-computer-05-output-devices-part2` | topic-pa | Output Devices - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (41) | 143 | Output Devices - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 190 | `/pa/topic-current-affairs-current-affairs-july-2026-part1-geography-environment` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 191 | `/pa/topic-current-affairs-current-affairs-july-2026-part2-schemes-development` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 192 | `/pa/topic-current-affairs-current-affairs-july-2026-part3-governance-digital-services` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 193 | `/pa/topic-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 194 | `/pa/topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 1 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 195 | `/pa/topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 2 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 196 | `/pa/topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 3 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 197 | `/pa/topic-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk` | topic-pa | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4 | MCQ ਪੰਜਾਬੀ ਵਿੱਚ (50) | 152 | ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 - Part 4 - MCQ ਸਵਾਲ ਅਤੇ ਉੱਤਰ | 13 | BreadcrumbList, FAQPage, WebPage |
+| 198 | `/exam-punjab-police-constable` | exam | Punjab Police Constable: Preparation, Subjects and Free MCQs (60) | 150 | Punjab Police Constable - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
+| 199 | `/exam-punjab-police-asi` | exam | Punjab Police ASI: Preparation, Subjects and Free MCQs (54) | 144 | Punjab Police ASI - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 200 | `/exam-punjab-police-sub-inspector` | exam | Punjab Police Sub-Inspector (SI): Preparation and Free MCQs (59) | 159 | Punjab Police Sub-Inspector (SI) - Preparation and Free MCQs | 139 | BreadcrumbList, FAQPage, WebPage |
+| 201 | `/exam-punjab-police-intelligence-assistant` | exam | Punjab Police Intelligence Assistant: Preparation and Free (58) | 153 | Punjab Police Intelligence Assistant - Preparation and Free MCQs | 124 | BreadcrumbList, FAQPage, WebPage |
+| 202 | `/exam-punjab-police-jail-warder` | exam | Punjab Police Jail Warder: Preparation and Free MCQs (52) | 152 | Punjab Police Jail Warder - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 203 | `/exam-punjab-police` | exam | Punjab Police: Preparation, Subjects and Free MCQs (50) | 140 | Punjab Police - Preparation and Free MCQs | 142 | BreadcrumbList, FAQPage, WebPage |
+| 204 | `/exam-punjab-police-driver` | exam | Punjab Police Driver: Preparation, Subjects and Free MCQs (57) | 147 | Punjab Police Driver - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 205 | `/exam-punjab-police-wireless-operator` | exam | Punjab Police Wireless Operator: Preparation and Free MCQs (58) | 158 | Punjab Police Wireless Operator - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 206 | `/exam-punjab-police-it-cadre` | exam | Punjab Police IT Cadre: Preparation, Subjects and Free MCQs (59) | 149 | Punjab Police IT Cadre - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
+| 207 | `/exam-patwari` | exam | Patwari: Preparation, Subjects and Free MCQs (44) | 153 | Patwari - Preparation and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 208 | `/exam-excise-inspector` | exam | Excise Inspector: Preparation, Subjects and Free MCQs (53) | 143 | Excise Inspector - Preparation and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 209 | `/exam-forest-guard` | exam | Forest Guard: Preparation, Subjects and Free MCQs (49) | 158 | Forest Guard - Preparation and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 210 | `/exam-naib-tehsildar` | exam | Naib Tehsildar: Preparation, Subjects and Free MCQs (51) | 141 | Naib Tehsildar - Preparation and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 211 | `/exam-senior-assistant` | exam | Senior Assistant: Preparation, Subjects and Free MCQs (53) | 143 | Senior Assistant - Preparation and Free MCQs | 122 | BreadcrumbList, FAQPage, WebPage |
+| 212 | `/exam-clerk` | exam | Clerk: Preparation, Subjects and Free MCQs (42) | 151 | Clerk - Preparation and Free MCQs | 122 | BreadcrumbList, FAQPage, WebPage |
+| 213 | `/exam-revenue-officer` | exam | Revenue Officer: Preparation, Subjects and Free MCQs (52) | 142 | Revenue Officer - Preparation and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 214 | `/exam-food-supply-inspector` | exam | Food Supply Inspector: Preparation, Subjects and Free MCQs (58) | 148 | Food Supply Inspector - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
+| 215 | `/exam-lab-attendant` | exam | Lab Attendant: Preparation, Subjects and Free MCQs (50) | 140 | Lab Attendant - Preparation and Free MCQs | 123 | BreadcrumbList, FAQPage, WebPage |
+| 216 | `/exam-ppsc-posts` | exam | PPSC posts: Preparation, Subjects and Free MCQs (47) | 156 | PPSC posts - Preparation and Free MCQs | 111 | BreadcrumbList, FAQPage, WebPage |
+| 217 | `/exam-pspcl-jobs` | exam | PSPCL jobs: Preparation, Subjects and Free MCQs (47) | 156 | PSPCL jobs - Preparation and Free MCQs | 118 | BreadcrumbList, FAQPage, WebPage |
+| 218 | `/exam-psssb` | exam | PSSSB: Preparation, Subjects and Free MCQs (42) | 151 | PSSSB - Preparation and Free MCQs | 125 | BreadcrumbList, FAQPage, WebPage |
+| 219 | `/exam-punjab-police-head-constable` | exam | Punjab Police Head Constable: Preparation and Free MCQs (55) | 155 | Punjab Police Head Constable - Preparation and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 220 | `/exam-punjab-pcs` | exam | Punjab Civil Services: Preparation, Subjects and Free MCQs (58) | 148 | Punjab Civil Services - Preparation and Free MCQs | 137 | BreadcrumbList, FAQPage, WebPage |
+| 221 | `/exam-ssc` | exam | Staff Selection Commission: Preparation and Free MCQs (53) | 153 | Staff Selection Commission - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
+| 222 | `/exam-railways` | exam | Railway Recruitment: Preparation, Subjects and Free MCQs (56) | 146 | Railway Recruitment - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
+| 223 | `/exam-banking` | exam | Banking Exams: Preparation, Subjects and Free MCQs (50) | 140 | Banking Exams - Preparation and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 224 | `/exam-upsc` | exam | Union Public Service Commission: Preparation and Free MCQs (58) | 158 | Union Public Service Commission - Preparation and Free MCQs | 138 | BreadcrumbList, FAQPage, WebPage |
+| 225 | `/exam-capf` | exam | Central Armed Police Forces: Preparation and Free MCQs (54) | 154 | Central Armed Police Forces - Preparation and Free MCQs | 127 | BreadcrumbList, FAQPage, WebPage |
+| 226 | `/cluster-indian-polity` | cluster | Indian Polity: Syllabus, Topics and Free MCQs (45) | 143 | Indian Polity - Study Guide and Free MCQs | 140 | BreadcrumbList, FAQPage, WebPage |
+| 227 | `/cluster-indian-history` | cluster | Indian History: Syllabus, Topics and Free MCQs (46) | 144 | Indian History - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 228 | `/cluster-modern-history` | cluster | Modern History: Syllabus, Topics and Free MCQs (46) | 144 | Modern History - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 229 | `/cluster-ancient-history` | cluster | Ancient History: Syllabus, Topics and Free MCQs (47) | 145 | Ancient History - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 230 | `/cluster-medieval-history` | cluster | Medieval History: Syllabus, Topics and Free MCQs (48) | 146 | Medieval History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 231 | `/cluster-geography` | cluster | Geography: Syllabus, Topics and Free MCQs (41) | 158 | Geography - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 232 | `/cluster-punjab-geography` | cluster | Punjab Geography: Syllabus, Topics and Free MCQs (48) | 146 | Punjab Geography - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 233 | `/cluster-punjab-history` | cluster | Punjab History: Syllabus, Topics and Free MCQs (46) | 144 | Punjab History - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 234 | `/cluster-punjab-culture` | cluster | Punjab Culture: Syllabus, Topics and Free MCQs (46) | 144 | Punjab Culture - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 235 | `/cluster-punjab-art` | cluster | Punjab Art: Syllabus, Topics and Free MCQs (42) | 140 | Punjab Art - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 236 | `/cluster-economy` | cluster | Economy: Syllabus, Topics and Free MCQs (39) | 156 | Economy - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 237 | `/cluster-science` | cluster | Science: Syllabus, Topics and Free MCQs (39) | 156 | Science - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 238 | `/cluster-biology` | cluster | Biology: Syllabus, Topics and Free MCQs (39) | 156 | Biology - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 239 | `/cluster-physics` | cluster | Physics: Syllabus, Topics and Free MCQs (39) | 156 | Physics - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 240 | `/cluster-chemistry` | cluster | Chemistry: Syllabus, Topics and Free MCQs (41) | 158 | Chemistry - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 241 | `/cluster-environment` | cluster | Environment: Syllabus, Topics and Free MCQs (43) | 141 | Environment - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 242 | `/cluster-computer` | cluster | Computer: Syllabus, Topics and Free MCQs (40) | 157 | Computer - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 243 | `/cluster-reasoning` | cluster | Reasoning: Syllabus, Topics and Free MCQs (41) | 158 | Reasoning - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 244 | `/cluster-english` | cluster | English: Syllabus, Topics and Free MCQs (39) | 156 | English - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 245 | `/cluster-punjabi` | cluster | Punjabi: Syllabus, Topics and Free MCQs (39) | 156 | Punjabi - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 246 | `/cluster-current-affairs` | cluster | Current Affairs: Syllabus, Topics and Free MCQs (47) | 145 | Current Affairs - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 247 | `/cluster-punjab-current-affairs` | cluster | Punjab Current Affairs: Syllabus, Topics and Free MCQs (54) | 152 | Punjab Current Affairs - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 248 | `/cluster-sports` | cluster | Sports: Syllabus, Topics and Free MCQs (38) | 155 | Sports - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 249 | `/cluster-awards` | cluster | Awards and Honours: Syllabus, Topics and Free MCQs (50) | 148 | Awards and Honours - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 250 | `/cluster-books-authors` | cluster | Books and Authors: Syllabus, Topics and Free MCQs (49) | 147 | Books and Authors - Study Guide and Free MCQs | 134 | BreadcrumbList, FAQPage, WebPage |
+| 251 | `/cluster-important-days` | cluster | Important Days and Dates: Syllabus, Topics and Free MCQs (56) | 154 | Important Days and Dates - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 252 | `/cluster-constitution` | cluster | Indian Constitution: Syllabus, Topics and Free MCQs (51) | 149 | Indian Constitution - Study Guide and Free MCQs | 136 | BreadcrumbList, FAQPage, WebPage |
+| 253 | `/cluster-fundamental-rights` | cluster | Fundamental Rights: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Rights - Study Guide and Free MCQs | 135 | BreadcrumbList, FAQPage, WebPage |
+| 254 | `/cluster-directive-principles` | cluster | Directive Principles of State Policy (DPSP): Topics and (55) | 152 | Directive Principles of State Policy (DPSP) - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 255 | `/cluster-fundamental-duties` | cluster | Fundamental Duties: Syllabus, Topics and Free MCQs (50) | 148 | Fundamental Duties - Study Guide and Free MCQs | 131 | BreadcrumbList, FAQPage, WebPage |
+| 256 | `/cluster-parliament` | cluster | Parliament: Syllabus, Topics and Free MCQs (42) | 140 | Parliament - Study Guide and Free MCQs | 130 | BreadcrumbList, FAQPage, WebPage |
+| 257 | `/cluster-president` | cluster | President of India: Syllabus, Topics and Free MCQs (50) | 148 | President of India - Study Guide and Free MCQs | 129 | BreadcrumbList, FAQPage, WebPage |
+| 258 | `/cluster-prime-minister` | cluster | Prime Minister and Council of Ministers: Topics and Free (56) | 157 | Prime Minister and Council of Ministers - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
+| 259 | `/cluster-judiciary` | cluster | Judiciary: Syllabus, Topics and Free MCQs (41) | 158 | Judiciary - Study Guide and Free MCQs | 132 | BreadcrumbList, FAQPage, WebPage |
+| 260 | `/cluster-emergency-provisions` | cluster | Emergency Provisions: Syllabus, Topics and Free MCQs (52) | 150 | Emergency Provisions - Study Guide and Free MCQs | 128 | BreadcrumbList, FAQPage, WebPage |
+| 261 | `/cluster-panchayati-raj` | cluster | Panchayati Raj: Syllabus, Topics and Free MCQs (46) | 144 | Panchayati Raj - Study Guide and Free MCQs | 126 | BreadcrumbList, FAQPage, WebPage |
+| 262 | `/cluster-local-government` | cluster | Local Government: Syllabus, Topics and Free MCQs (48) | 146 | Local Government - Study Guide and Free MCQs | 119 | BreadcrumbList, FAQPage, WebPage |
+| 263 | `/cluster-static-gk` | cluster | Static GK: Syllabus, Topics and Free MCQs (41) | 158 | Static GK - Study Guide and Free MCQs | 133 | BreadcrumbList, FAQPage, WebPage |
 
 Intro word counts: min 13, max 371. Every subject page clears the 250-word intro target.
 
 ## 2. Metadata generated
 
-- **Unique titles:** 259/259 ✅
-- **Unique meta descriptions:** 259/259 ✅
-- **Unique canonical URLs:** 259/259 ✅
+- **Unique titles:** 263/263 ✅
+- **Unique meta descriptions:** 263/263 ✅
+- **Unique canonical URLs:** 263/263 ✅
 - **Title length:** 32-60 chars (Google truncates at ~60)
 - **Description length:** 140-160 chars (target window 140-160)
 - **Robots:** `index, follow` on every landing page; canonical is the page's own extensionless URL (`https://houseofaspirants.in/<slug>`).
@@ -308,52 +312,52 @@ Title templates (entity name + real site data only, no invented facts):
 
 All landing metadata is **static HTML** - it is present before JavaScript runs, so crawlers never have to render the page to see the title, description, canonical or JSON-LD.
 
-## 3. Internal links created (5181)
+## 3. Internal links created (5254)
 
-- Links between generated entities: **5181**
-- Every internal anchor on the 259 generated pages: **9231** (includes links to site guides, `/faq`, `/mock` and the app views)
+- Links between generated entities: **5254**
+- Every internal anchor on the 263 generated pages: **9359** (includes links to site guides, `/faq`, `/mock` and the app views)
 - Counts are re-read from the shipped HTML, not from the generator's log, so this table cannot drift from the pages themselves.
 - Every link is a plain `<a href>` in static HTML (no JS-dependent navigation).
 
 | Route | Count | Required by spec | Examples |
 | --- | ---: | --- | --- |
 | Subject → Topic | 5 | ✅ | `01 Subject And Predicate Part 1`: subject-english.html → topic-english-01-subject-and-predicate-part-1.html; `02 Clauses And Phrases Part 1`: subject-english.html → topic-english-02-clauses-and-phrases-part-1.html; `03 Types Of Sentences Part 1`: subject-english.html → topic-english-03-types-of-sentences-part-1.html |
-| Topic → Quiz | 171 | ✅ | `Arrival of Europeans - Part 1`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-arrival-of-european-in-india-part-1.html; `Arrival of Europeans - Part 2`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-arrival-of-european-in-india-part-2.html; `Start Anand Sahib - Part 2 quiz`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html |
-| Quiz → Subject | 114 | ✅ | `General Knowledge`: quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → subject-gk.html; `General Knowledge page`: quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → subject-gk.html; `General Knowledge`: quiz-gk-arrival-of-european-in-india-part-1.html → subject-gk.html |
+| Topic → Quiz | 174 | ✅ | `Arrival of Europeans - Part 1`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-arrival-of-european-in-india-part-1.html; `Arrival of Europeans - Part 2`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-arrival-of-european-in-india-part-2.html; `Start Anand Sahib - Part 2 quiz`: topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html |
+| Quiz → Subject | 116 | ✅ | `General Knowledge`: quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → subject-gk.html; `General Knowledge page`: quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html → subject-gk.html; `General Knowledge`: quiz-gk-arrival-of-european-in-india-part-1.html → subject-gk.html |
 | Exam → Subject | 100 | ✅ | `General Knowledge`: exam-punjab-police-constable.html → subject-gk.html; `Reasoning`: exam-punjab-police-constable.html → subject-reasoning.html; `Quantitative Aptitude`: exam-punjab-police-constable.html → subject-quant.html |
-| Exam → Topic | 242 | ✅ | `Anand Sahib - Part 2`: exam-punjab-police-constable.html → topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html; `Analogy Part 1`: exam-punjab-police-constable.html → topic-reasoning-analogy-part-1.html; `Evolution of Computers - Part 1`: exam-punjab-police-constable.html → topic-computer-02-evolution-of-computers-part1.html |
+| Exam → Topic | 242 | ✅ | `Anand Sahib - Part 2`: exam-punjab-police-constable.html → topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html; `Analogy Part 1`: exam-punjab-police-constable.html → topic-reasoning-analogy-part-1.html; `Central Processing Unit - Part 1`: exam-punjab-police-constable.html → topic-computer-06-central-processing-unit-part1.html |
 
 Additional routes generated automatically:
 
 | Route | Count |
 | --- | ---: |
-| Topic → Topic | 906 |
-| Topic → Exam | 862 |
-| Quiz → Quiz | 283 |
-| Topic-pa → Exam | 282 |
-| Topic-pa → Topic-pa | 276 |
-| Category → Subject | 202 |
+| Topic → Topic | 924 |
+| Topic → Exam | 873 |
+| Quiz → Quiz | 288 |
+| Topic-pa → Exam | 288 |
+| Topic-pa → Topic-pa | 282 |
+| Category → Subject | 210 |
 | Cluster → Cluster | 194 |
 | Cluster → Exam | 152 |
 | Exam → Cluster | 132 |
 | Cluster → Subject | 129 |
-| Topic → Subject | 114 |
+| Topic → Subject | 116 |
 | Exam → Exam | 108 |
-| Topic-pa → Topic | 96 |
+| Topic-pa → Topic | 98 |
 | Subject → Exam | 93 |
-| Category → Quiz | 82 |
-| Cluster → Quiz | 76 |
-| Subject → Quiz | 63 |
+| Category → Quiz | 83 |
+| Cluster → Quiz | 77 |
+| Subject → Quiz | 64 |
 | Cluster → Category | 63 |
-| Quiz → Topic | 57 |
-| Category → Topic | 52 |
-| Topic → Category | 52 |
-| Quiz → Category | 52 |
-| Topic-pa → Subject | 48 |
-| Topic-pa → Quiz | 48 |
+| Quiz → Topic | 58 |
+| Category → Topic | 53 |
+| Topic → Category | 53 |
+| Quiz → Category | 53 |
+| Topic-pa → Subject | 49 |
+| Topic-pa → Quiz | 49 |
 | Subject → Subject | 42 |
 | Category → Cluster | 32 |
-| Subject → Category | 24 |
+| Subject → Category | 25 |
 | Subject → Cluster | 18 |
 | Category → Exam | 11 |
 

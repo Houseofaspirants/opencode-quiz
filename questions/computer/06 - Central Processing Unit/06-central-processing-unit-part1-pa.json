@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕਿਸ ਭਾਗ ਨੂੰ ਅਕਸਰ 'ਕੰਪਿਊਟਰ ਦਾ ਦਿਮਾਗ਼' ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "CPU",
+      "ਮਾਨੀਟਰ",
+      "ਹਾਰਡ ਡਿਸਕ",
+      "ਕੀਬੋਰਡ"
+    ],
+    "answer": 0,
+    "explanation": "CPU ਨੂੰ ਕੰਪਿਊਟਰ ਦਾ ਦਿਮਾਗ਼ ਕਿਹਾ ਜਾਂਦਾ ਹੈ ਕਿਉਂਕਿ ਇਹ ਲਗਭਗ ਸਾਰੇ ਪ੍ਰੋਸੈਸਿੰਗ ਕਾਰਜਾਂ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦਾ ਅਤੇ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਜਾਣ-ਪਛਾਣ"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Central Program Unit",
+      "Control Processing Unit",
+      "Central Processing Unit",
+      "Computer Processing Unit"
+    ],
+    "answer": 2,
+    "explanation": "CPU ਦਾ ਪੂਰਾ ਰੂਪ Central Processing Unit ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਜਾਣ-ਪਛਾਣ"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ CPU ਦਾ ਦੂਜਾ ਨਾਮ ਨਹੀਂ ਹੈ?",
+    "options": [
+      "ਮਦਰਬੋਰਡ",
+      "ਪ੍ਰੋਸੈਸਰ",
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਰ",
+      "ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ"
+    ],
+    "answer": 0,
+    "explanation": "CPU ਨੂੰ ਪ੍ਰੋਸੈਸਰ, ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਰ ਜਾਂ ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ ਵੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ; ਮਦਰਬੋਰਡ ਉੱਤੇ CPU ਸਾਕਟ ਹੁੰਦੀ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਜਾਣ-ਪਛਾਣ"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕੱਚੇ ਡਾਟਾ ਨੂੰ ਅਰਥਪੂਰਨ ਜਾਣਕਾਰੀ ਵਿੱਚ ਬਦਲਣਾ CPU ਦਾ ਕਿਹੜਾ ਕਾਰਜ ਹੈ?",
+    "options": [
+      "ਹਦਾਇਤਾਂ ਲਾਗੂ (execute) ਕਰਨਾ",
+      "ਇਨਪੁੱਟ ਅਤੇ ਆਊਟਪੁੱਟ ਡਿਵਾਈਸਾਂ ਦਾ ਪ੍ਰਬੰਧ ਕਰਨਾ",
+      "ਸਾਫ਼ਟਵੇਅਰ ਚਲਾਉਣਾ",
+      "ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਕਰਨਾ"
+    ],
+    "answer": 3,
+    "explanation": "'ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਕਰਨਾ' ਕਾਰਜ ਅਧੀਨ CPU ਕੱਚੇ ਡਾਟਾ ਨੂੰ ਅਰਥਪੂਰਨ ਜਾਣਕਾਰੀ ਵਿੱਚ ਬਦਲਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਦੇ ਕਾਰਜ"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU ਇੱਕ ਖ਼ਾਸ ਸਾਕਟ (CPU Socket) ਵਿੱਚ ਲਗਾਇਆ ਜਾਂਦਾ ਹੈ, ਜੋ ਕਿੱਥੇ ਸਥਿਤ ਹੁੰਦੀ ਹੈ?",
+    "options": [
+      "ਹਾਰਡ ਡਿਸਕ",
+      "RAM ਮੋਡਿਊਲ",
+      "ਮਦਰਬੋਰਡ",
+      "ਮਾਨੀਟਰ"
+    ],
+    "answer": 2,
+    "explanation": "CPU ਨੂੰ ਰੱਖਣ ਵਾਲੀ CPU ਸਾਕਟ ਮਦਰਬੋਰਡ ਉੱਤੇ ਹੁੰਦੀ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਦੀ ਸਥਿਤੀ"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "ਦੁਨੀਆ ਦਾ ਪਹਿਲਾ ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ ਕਿਹੜਾ ਸੀ?",
+    "options": [
+      "Intel 4004",
+      "Intel 8086",
+      "Intel Core i3",
+      "AMD Ryzen 3"
+    ],
+    "answer": 0,
+    "explanation": "ਦੁਨੀਆ ਦਾ ਪਹਿਲਾ ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ Intel 4004 ਸੀ, ਜੋ Intel Corporation ਨੇ ਬਣਾਇਆ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਪਹਿਲਾ ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "Intel 4004 ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ ਕਿਸ ਸਾਲ ਪੇਸ਼ ਕੀਤਾ ਗਿਆ ਸੀ?",
+    "options": [
+      "1969",
+      "1971",
+      "1975",
+      "1981"
+    ],
+    "answer": 1,
+    "explanation": "Intel 4004 ਨੂੰ Intel Corporation ਨੇ 1971 ਵਿੱਚ ਵਿਕਸਿਤ ਕੀਤਾ ਸੀ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਪਹਿਲਾ ਮਾਈਕ੍ਰੋਪ੍ਰੋਸੈਸਰ"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU ਮੁੱਖ ਤੌਰ 'ਤੇ ਕਿਨ੍ਹਾਂ ਭਾਗਾਂ ਤੋਂ ਬਣਿਆ ਹੁੰਦਾ ਹੈ?",
+    "options": [
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ, ALU ਅਤੇ ਹਾਰਡ ਡਿਸਕ",
+      "ALU, ਮਾਨੀਟਰ ਅਤੇ ਰਜਿਸਟਰ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ, ਕੀਬੋਰਡ ਅਤੇ ALU",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ, ALU ਅਤੇ ਰਜਿਸਟਰ"
+    ],
+    "answer": 3,
+    "explanation": "CPU ਦੇ ਮੁੱਖ ਭਾਗ ਕੰਟਰੋਲ ਯੂਨਿਟ (CU), ਅਰਿਥਮੈਟਿਕ ਲੌਜਿਕ ਯੂਨਿਟ (ALU) ਅਤੇ ਰਜਿਸਟਰ (ਮੈਮਰੀ ਯੂਨਿਟ) ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਦੇ ਭਾਗ"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU ਦਾ ਕਿਹੜਾ ਭਾਗ ਕੰਪਿਊਟਰ ਦੇ ਸਾਰੇ ਕਾਰਜਾਂ ਨੂੰ ਕੰਟਰੋਲ ਅਤੇ ਤਾਲਮੇਲ ਕਰਦਾ ਹੈ?",
+    "options": [
+      "ਅਰਿਥਮੈਟਿਕ ਲੌਜਿਕ ਯੂਨਿਟ (ALU)",
+      "ਰਜਿਸਟਰ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ (CU)",
+      "CPU ਸਾਕਟ"
+    ],
+    "answer": 2,
+    "explanation": "ਕੰਟਰੋਲ ਯੂਨਿਟ ਕੰਪਿਊਟਰ ਦੇ ਸਾਰੇ ਕਾਰਜਾਂ ਨੂੰ ਕੰਟਰੋਲ ਅਤੇ ਤਾਲਮੇਲ ਕਰਦਾ ਹੈ (CU = ਸਭ ਕੁਝ ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ)।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਕੰਪਿਊਟਰ ਅੰਦਰ ਜਾਣਕਾਰੀ ਦੇ ਵਹਾਅ ਨੂੰ ਨਿਰਦੇਸ਼ਿਤ ਕਰਨ ਕਰਕੇ ਕੰਟਰੋਲ ਯੂਨਿਟ ਦੀ ਤੁਲਨਾ ਕਿਸ ਨਾਲ ਕੀਤੀ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "ਟ੍ਰੈਫ਼ਿਕ ਪੁਲਿਸ ਅਫ਼ਸਰ",
+      "ਕੈਲਕੁਲੇਟਰ",
+      "ਲਾਇਬ੍ਰੇਰੀਅਨ",
+      "ਡਾਕੀਆ"
+    ],
+    "answer": 0,
+    "explanation": "ਕੰਟਰੋਲ ਯੂਨਿਟ ਇੱਕ ਟ੍ਰੈਫ਼ਿਕ ਪੁਲਿਸ ਅਫ਼ਸਰ ਵਾਂਗ ਕੰਪਿਊਟਰ ਅੰਦਰ ਜਾਣਕਾਰੀ ਦੇ ਵਹਾਅ ਨੂੰ ਨਿਰਦੇਸ਼ਿਤ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "ਕੰਟਰੋਲ ਯੂਨਿਟ ਦਾ ਕਿਹੜਾ ਕਾਰਜ ਯਕੀਨੀ ਬਣਾਉਂਦਾ ਹੈ ਕਿ ਹਦਾਇਤਾਂ ਸਹੀ ਕ੍ਰਮ ਵਿੱਚ ਲਾਗੂ ਹੋਣ?",
+    "options": [
+      "ਹਦਾਇਤਾਂ ਨੂੰ ਡੀਕੋਡ ਕਰਨਾ",
+      "ਹਦਾਇਤਾਂ ਦਾ ਕ੍ਰਮ ਕਾਇਮ ਰੱਖਣਾ",
+      "ਕੰਟਰੋਲ ਸਿਗਨਲ ਪੈਦਾ ਕਰਨਾ",
+      "ਡਾਟਾ ਦੇ ਵਹਾਅ ਨੂੰ ਕੰਟਰੋਲ ਕਰਨਾ"
+    ],
+    "answer": 1,
+    "explanation": "'ਹਦਾਇਤਾਂ ਦਾ ਕ੍ਰਮ ਕਾਇਮ ਰੱਖਣਾ' ਯਕੀਨੀ ਬਣਾਉਂਦਾ ਹੈ ਕਿ ਹਦਾਇਤਾਂ ਸਹੀ ਕ੍ਰਮ ਵਿੱਚ ਲਾਗੂ ਹੋਣ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ ਦੇ ਕਾਰਜ"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਹਦਾਇਤਾਂ ਨੂੰ ਸਮਝਣਯੋਗ ਸਿਗਨਲਾਂ ਵਿੱਚ ਬਦਲਣਾ ਕੰਟਰੋਲ ਯੂਨਿਟ ਦਾ ਕਿਹੜਾ ਕਾਰਜ ਹੈ?",
+    "options": [
+      "ਕਾਰਜਾਂ ਦਾ ਤਾਲਮੇਲ ਕਰਨਾ",
+      "ਹਦਾਇਤਾਂ ਦਾ ਕ੍ਰਮ ਕਾਇਮ ਰੱਖਣਾ",
+      "ਨਤੀਜੇ ਸਟੋਰ ਕਰਨਾ",
+      "ਹਦਾਇਤਾਂ ਨੂੰ ਡੀਕੋਡ ਕਰਨਾ"
+    ],
+    "answer": 3,
+    "explanation": "'ਹਦਾਇਤਾਂ ਡੀਕੋਡ ਕਰਨਾ' ਅਧੀਨ CU ਹਦਾਇਤਾਂ ਨੂੰ ਸਮਝਣਯੋਗ ਸਿਗਨਲਾਂ ਵਿੱਚ ਬਦਲਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ ਦੇ ਕਾਰਜ"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "ਪ੍ਰੋਗਰਾਮ ਕਾਊਂਟਰ (PC) ਕੀ ਸਟੋਰ ਕਰਦਾ ਹੈ?",
+    "options": [
+      "ਪਿਛਲੀ ਗਣਨਾ ਦਾ ਨਤੀਜਾ",
+      "ਅਗਲੀ ਹਦਾਇਤ ਦਾ ਪਤਾ (address)",
+      "ਮੌਜੂਦਾ ਹਦਾਇਤ ਦਾ opcode",
+      "CPU ਦੀ ਕਲਾਕ ਸਪੀਡ"
+    ],
+    "answer": 1,
+    "explanation": "ਪ੍ਰੋਗਰਾਮ ਕਾਊਂਟਰ ਅਗਲੀ ਹਦਾਇਤ ਦਾ ਪਤਾ (address) ਸਟੋਰ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ ਦੀ ਕਾਰਜ-ਪ੍ਰਣਾਲੀ"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਡੀਕੋਡਿੰਗ ਦੌਰਾਨ Opcode CPU ਨੂੰ ਕੀ ਦੱਸਦਾ ਹੈ?",
+    "options": [
+      "ਕਾਰਜ ਕਿਸ ਡਾਟਾ ਉੱਤੇ ਕਰਨਾ ਹੈ",
+      "ਕਿਹੜਾ ਕਾਰਜ (operation) ਕਰਨਾ ਹੈ",
+      "ਨਤੀਜਾ ਕਿੱਥੇ ਸਟੋਰ ਕਰਨਾ ਹੈ",
+      "ਅਗਲੀ ਹਦਾਇਤ ਦਾ ਪਤਾ"
+    ],
+    "answer": 1,
+    "explanation": "Opcode ਦੱਸਦਾ ਹੈ ਕਿ ਕਿਹੜਾ ਕਾਰਜ ਕਰਨਾ ਹੈ; Operand ਦੱਸਦਾ ਹੈ ਕਿ ਕਿਸ ਡਾਟਾ ਉੱਤੇ ਕਰਨਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ ਦੀ ਕਾਰਜ-ਪ੍ਰਣਾਲੀ"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "CPU ਦਾ ਕਿਹੜਾ ਭਾਗ ਗਣਿਤਕ (arithmetic) ਅਤੇ ਤਾਰਕਿਕ (logical) ਕਾਰਜ ਕਰਦਾ ਹੈ?",
+    "options": [
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ",
+      "ਪ੍ਰੋਗਰਾਮ ਕਾਊਂਟਰ",
+      "ALU",
+      "CPU ਸਾਕਟ"
+    ],
+    "answer": 2,
+    "explanation": "ਅਰਿਥਮੈਟਿਕ ਲੌਜਿਕ ਯੂਨਿਟ (ALU) ਗਣਿਤਕ ਅਤੇ ਤਾਰਕਿਕ ਕਾਰਜ ਕਰਦਾ ਹੈ; ਇਹ CPU ਦਾ ਕੈਲਕੁਲੇਟਰ ਅਤੇ ਫ਼ੈਸਲਾ ਲੈਣ ਵਾਲਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਅਰਿਥਮੈਟਿਕ ਲੌਜਿਕ ਯੂਨਿਟ"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਜਦੋਂ ALU ਜਾਂਚਦਾ ਹੈ ਕਿ '50 > 30' ਸਹੀ ਹੈ ਜਾਂ ਗ਼ਲਤ, ਤਾਂ ਇਹ ਕਿਹੜਾ ਕਾਰਜ ਕਰ ਰਿਹਾ ਹੁੰਦਾ ਹੈ?",
+    "options": [
+      "ਗਣਿਤਕ (arithmetic) ਕਾਰਜ",
+      "ਫੈੱਚ ਕਾਰਜ",
+      "ਸਟੋਰੇਜ ਕਾਰਜ",
+      "ਤਾਰਕਿਕ (logical) ਕਾਰਜ"
+    ],
+    "answer": 3,
+    "explanation": "ਵੱਧ ਤੋਂ (>) ਵਰਗੀਆਂ ਤੁਲਨਾਵਾਂ ALU ਦੁਆਰਾ ਕੀਤੇ ਜਾਂਦੇ ਤਾਰਕਿਕ ਕਾਰਜ ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਅਰਿਥਮੈਟਿਕ ਲੌਜਿਕ ਯੂਨਿਟ"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "CU ਅਤੇ ALU ਦੀ ਤੁਲਨਾ ਅਨੁਸਾਰ ਕਿਹੜਾ ਕਥਨ ਸਹੀ ਹੈ?",
+    "options": [
+      "CU ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਕਰਦਾ ਹੈ, ਜਦਕਿ ALU ਨਹੀਂ ਕਰਦਾ",
+      "CU ਅਤੇ ALU ਦੋਵੇਂ ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਕਰਦੇ ਹਨ",
+      "CU ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਨਹੀਂ ਕਰਦਾ, ਜਦਕਿ ALU ਕਰਦਾ ਹੈ",
+      "ਨਾ CU ਅਤੇ ਨਾ ALU ਡਾਟਾ ਪ੍ਰੋਸੈੱਸ ਕਰਦਾ ਹੈ"
+    ],
+    "answer": 2,
+    "explanation": "ਡਾਟਾ ਪ੍ਰੋਸੈਸਿੰਗ: ਕੰਟਰੋਲ ਯੂਨਿਟ – ਨਹੀਂ, ALU – ਹਾਂ; CU ਨਿਗਰਾਨ (supervisor) ਹੈ ਅਤੇ ALU ਕੈਲਕੁਲੇਟਰ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੰਟਰੋਲ ਯੂਨਿਟ ਬਨਾਮ ALU"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰ ਵਿੱਚ ਸਭ ਤੋਂ ਤੇਜ਼ ਮੈਮਰੀ ਕਿਹੜੀ ਹੈ?",
+    "options": [
+      "ਹਾਰਡ ਡਿਸਕ",
+      "ਰਜਿਸਟਰ",
+      "RAM",
+      "ਪੈੱਨ ਡਰਾਈਵ"
+    ],
+    "answer": 1,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: ਰਜਿਸਟਰ ਕੰਪਿਊਟਰ ਦੀ ਸਭ ਤੋਂ ਤੇਜ਼ ਮੈਮਰੀ ਹਨ; ਇਹ CPU ਅੰਦਰ ਬਹੁਤ ਛੋਟੀਆਂ ਅਤੇ ਬਹੁਤ ਤੇਜ਼ ਮੈਮਰੀ ਥਾਵਾਂ ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਰਜਿਸਟਰ"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "MAR ਨਾਮਕ ਰਜਿਸਟਰ ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Main Access Register",
+      "Memory Arithmetic Register",
+      "Machine Address Register",
+      "Memory Address Register"
+    ],
+    "answer": 3,
+    "explanation": "ਰਜਿਸਟਰਾਂ ਦੀਆਂ ਉਦਾਹਰਨਾਂ ਵਿੱਚ PC, IR, MAR (Memory Address Register) ਅਤੇ MDR (Memory Data Register) ਸ਼ਾਮਲ ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਰਜਿਸਟਰ"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "ਆਧੁਨਿਕ CPU ਦੀ ਕਲਾਕ ਸਪੀਡ ਕਿਸ ਵਿੱਚ ਮਾਪੀ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "ਗੀਗਾਹਰਟਜ਼ (GHz)",
+      "ਮੈਗਾਬਾਈਟ (MB)",
+      "ਡੌਟਸ ਪਰ ਇੰਚ (DPI)",
+      "ਪੇਜਿਜ਼ ਪਰ ਮਿੰਟ (PPM)"
+    ],
+    "answer": 0,
+    "explanation": "ਕਲਾਕ ਸਪੀਡ ਦੀ ਇਕਾਈ ਹਰਟਜ਼ (Hz) ਹੈ; ਆਧੁਨਿਕ CPU ਗੀਗਾਹਰਟਜ਼ (GHz) ਵਿੱਚ ਮਾਪੇ ਜਾਂਦੇ ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਕਲਾਕ ਸਪੀਡ"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "4.0 GHz ਉੱਤੇ ਚੱਲਣ ਵਾਲਾ ਪ੍ਰੋਸੈਸਰ ਪ੍ਰਤੀ ਸਕਿੰਟ ਲਗਭਗ ਕਿੰਨੇ ਕਲਾਕ ਸਾਈਕਲ ਕਰ ਸਕਦਾ ਹੈ?",
+    "options": [
+      "40 ਲੱਖ (4 million)",
+      "4 ਹਜ਼ਾਰ",
+      "40 ਅਰਬ (billion)",
+      "4 ਅਰਬ (billion)"
+    ],
+    "answer": 3,
+    "explanation": "4.0 GHz ਪ੍ਰੋਸੈਸਰ ਪ੍ਰਤੀ ਸਕਿੰਟ ਲਗਭਗ 4 ਅਰਬ ਕਲਾਕ ਸਾਈਕਲ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਕਲਾਕ ਸਪੀਡ"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "6 ਕੋਰਾਂ ਵਾਲੇ CPU ਨੂੰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "ਹੈਕਸਾ-ਕੋਰ",
+      "ਕਵਾਡ-ਕੋਰ",
+      "ਔਕਟਾ-ਕੋਰ",
+      "ਡਿਊਲ-ਕੋਰ"
+    ],
+    "answer": 0,
+    "explanation": "ਸਿੰਗਲ-ਕੋਰ 1, ਡਿਊਲ-ਕੋਰ 2, ਕਵਾਡ-ਕੋਰ 4, ਹੈਕਸਾ-ਕੋਰ 6, ਔਕਟਾ-ਕੋਰ 8 ਕੋਰਾਂ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਕੋਰਾਂ ਅਨੁਸਾਰ CPU ਦੀਆਂ ਕਿਸਮਾਂ"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Medium",
+    "question": "ਇੰਸਟ੍ਰਕਸ਼ਨ ਸਾਈਕਲ ਨੂੰ ਹੋਰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "ਫੈੱਚ-ਡੀਕੋਡ-ਐਗਜ਼ੀਕਿਊਟ ਸਾਈਕਲ",
+      "ਇਨਪੁੱਟ-ਆਊਟਪੁੱਟ ਸਾਈਕਲ",
+      "ਕਲਾਕ-ਕੋਰ ਸਾਈਕਲ",
+      "ਰੀਡ-ਰਾਈਟ ਸਾਈਕਲ"
+    ],
+    "answer": 0,
+    "explanation": "ਇੰਸਟ੍ਰਕਸ਼ਨ ਸਾਈਕਲ, ਜੋ ਹਦਾਇਤ ਲਾਗੂ ਕਰਨ ਲਈ ਕਾਰਜਾਂ ਦਾ ਕ੍ਰਮ ਹੈ, ਨੂੰ ਫੈੱਚ-ਡੀਕੋਡ-ਐਗਜ਼ੀਕਿਊਟ ਸਾਈਕਲ ਵੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਇੰਸਟ੍ਰਕਸ਼ਨ ਸਾਈਕਲ"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Hard",
+    "question": "ਇੰਸਟ੍ਰਕਸ਼ਨ ਸਾਈਕਲ ਦੇ ਫੈੱਚ ਪੜਾਅ ਵਿੱਚ ਲਿਆਂਦੀ ਗਈ ਹਦਾਇਤ ਕਿੱਥੇ ਸਟੋਰ ਹੁੰਦੀ ਹੈ?",
+    "options": [
+      "MDR (Memory Data Register)",
+      "CIR (Current Instruction Register)",
+      "ALU",
+      "CPU ਸਾਕਟ"
+    ],
+    "answer": 1,
+    "explanation": "ਫੈੱਚ ਪੜਾਅ ਵਿੱਚ ਹਦਾਇਤ ਮੁੱਖ ਮੈਮਰੀ ਤੋਂ ਲਿਆ ਕੇ CIR (Current Instruction Register) ਵਿੱਚ ਸਟੋਰ ਕੀਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "ਇੰਸਟ੍ਰਕਸ਼ਨ ਸਾਈਕਲ"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Central Processing Unit - Part 1",
+    "difficulty": "Easy",
+    "question": "Ryzen 3, Ryzen 5, Ryzen 7 ਅਤੇ Ryzen 9 ਪ੍ਰੋਸੈਸਰ ਕੌਣ ਬਣਾਉਂਦਾ ਹੈ?",
+    "options": [
+      "Intel",
+      "IBM",
+      "AMD",
+      "Apple"
+    ],
+    "answer": 2,
+    "explanation": "Intel (Core i3, i5, i7, i9) ਅਤੇ AMD (Ryzen 3, 5, 7, 9) ਦੋ ਸਭ ਤੋਂ ਪ੍ਰਸਿੱਧ CPU ਨਿਰਮਾਤਾ ਹਨ।",
+    "tags": [
+      "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ",
+      "CPU ਨਿਰਮਾਤਾ"
+    ]
+  }
+]

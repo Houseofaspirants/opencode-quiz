@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-18T07:54:40.519Z",
   "stats": {
     "subjects": 7,
-    "categories": 24,
-    "topics": 57,
-    "quizzes": 57,
-    "questions": 1289,
+    "categories": 25,
+    "topics": 58,
+    "quizzes": 58,
+    "questions": 1314,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2461,6 +2461,36 @@
       "order": 6,
       "topics": [
         {
+          "id": "06-central-processing-unit-part1",
+          "name": "Central Processing Unit - Part 1",
+          "description": "",
+          "file": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792428546806,
+          "category": "06-central-processing-unit",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json",
+            "pa": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Central Processing Unit - Part 1",
+            "pa": "Central Processing Unit - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-06-central-processing-unit-part1"
+        },
+        {
           "id": "02-evolution-of-computers-part1",
           "name": "Evolution of Computers - Part 1",
           "description": "",
@@ -3046,6 +3076,45 @@
             }
           ],
           "landing": "/category-computer-05-output-devices"
+        },
+        {
+          "id": "06-central-processing-unit",
+          "name": "06   Central Processing Unit",
+          "folder": "06 - Central Processing Unit",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "06-central-processing-unit-part1",
+              "name": "Central Processing Unit - Part 1",
+              "description": "",
+              "file": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792428546806,
+              "category": "06-central-processing-unit",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json",
+                "pa": "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Central Processing Unit - Part 1",
+                "pa": "Central Processing Unit - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-06-central-processing-unit-part1"
+            }
+          ],
+          "landing": "/category-computer-06-central-processing-unit"
         }
       ],
       "landing": "/subject-computer"
@@ -3599,6 +3668,10 @@
     "questions/computer/05 - Output Devices/05-output-devices-part2-en.json": [
       "807e04fd37e8b308",
       1792044138562
+    ],
+    "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json": [
+      "8fc8499710880fba",
+      1792428546806
     ],
     "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
       "c81b46122364bc1c",

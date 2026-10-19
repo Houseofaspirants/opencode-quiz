@@ -23,16 +23,16 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 10,
-      "newest": "2026-10-14",
-      "totalSize": 34827720,
+      "count": 12,
+      "newest": "2026-10-19",
+      "totalSize": 41464625,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
@@ -88,6 +88,17 @@
                 }
               ],
               "pages": 15
+            },
+            {
+              "id": "06 - ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
+              "name": "Chapter 6: ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch06.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
             }
           ]
         },
@@ -96,7 +107,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "01 - Fundamentals of Computers",
@@ -152,11 +163,22 @@
                 }
               ],
               "pages": 12
+            },
+            {
+              "id": "06 - Central Processing Unit",
+              "name": "Chapter 6: Central Processing Unit",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch06.html",
+                  "n": 1
+                }
+              ],
+              "pages": 9
             }
           ]
         }
       ],
-      "chapters": 10
+      "chapters": 12
     },
     {
       "id": "english",
@@ -2438,6 +2460,6 @@
       "hidden": true
     }
   ],
-  "total": 79,
+  "total": 81,
   "generatedBy": "scripts/study_material.py"
 }
