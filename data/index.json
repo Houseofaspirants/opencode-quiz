@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 24,
-    "topics": 55,
-    "quizzes": 55,
-    "questions": 1239,
+    "topics": 57,
+    "quizzes": 57,
+    "questions": 1289,
     "studentsPracticed": 12500
   },
   "site": {
@@ -478,6 +478,66 @@
             "pa": 12
           },
           "landing": "/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3"
+        },
+        {
+          "id": "01-financial-position-and-agriculture-of-punjab-part-1",
+          "name": "Financial Position and Agriculture of Punjab - Part 1",
+          "description": "",
+          "file": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792409195616,
+          "category": "economy-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json",
+            "pa": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Financial Position and Agriculture of Punjab - Part 1",
+            "pa": "ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1"
+        },
+        {
+          "id": "01-financial-position-and-agriculture-of-punjab-part-2",
+          "name": "Financial Position and Agriculture of Punjab - Part 2",
+          "description": "",
+          "file": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792409195616,
+          "category": "economy-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json",
+            "pa": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Financial Position and Agriculture of Punjab - Part 2",
+            "pa": "ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2"
         },
         {
           "id": "expansion-of-english-east-india-company-in-india-part-2",
@@ -1674,7 +1734,68 @@
           "name": "Economy of Punjab",
           "folder": "economy-of-punjab",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "01-financial-position-and-agriculture-of-punjab-part-1",
+              "name": "Financial Position and Agriculture of Punjab - Part 1",
+              "description": "",
+              "file": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792409195616,
+              "category": "economy-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json",
+                "pa": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Financial Position and Agriculture of Punjab - Part 1",
+                "pa": "ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1"
+            },
+            {
+              "id": "01-financial-position-and-agriculture-of-punjab-part-2",
+              "name": "Financial Position and Agriculture of Punjab - Part 2",
+              "description": "",
+              "file": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792409195616,
+              "category": "economy-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json",
+                "pa": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Financial Position and Agriculture of Punjab - Part 2",
+                "pa": "ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2"
+            }
+          ],
           "landing": "/category-gk-economy-of-punjab"
         },
         {
@@ -3530,6 +3651,14 @@
     "questions/english/05-subject-and-predicate-complete-and-simple-forms-part-1-en.json": [
       "baa1941338d8f2c1",
       1792229193819
+    ],
+    "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json": [
+      "acf5d2c4abcf5afd",
+      1792409195616
+    ],
+    "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json": [
+      "74c9b95126089c1f",
+      1792409195616
     ],
     "questions/gk/economy/basic-concepts-of-economy-part-1.en.json": [
       "52cb6a889b232d85",
