@@ -8,7 +8,7 @@
       "url": "https://houseofaspirants.in/study-material",
       "title": "Free Study Material for Punjab Competitive Exams",
       "description": "Free study material for Punjab Police, PSSSB and PPSC exams - PDFs, notes and downloads for every subject, discovered from the files themselves with no sign-up.",
-      "count": 77
+      "count": 78
     },
     {
       "collection": "notes",
@@ -185,6 +185,13 @@
       "url": "https://houseofaspirants.in/archive-category-economy",
       "title": "Economy | House of Aspirants",
       "description": "Every document categorised as Economy on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Punjab Free",
+      "noindex": true
+    },
+    {
+      "file": "archive-category-economy-of-punjab.html",
+      "url": "https://houseofaspirants.in/archive-category-economy-of-punjab",
+      "title": "Economy of Punjab | House of Aspirants",
+      "description": "Every document categorised as Economy of Punjab on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for Free",
       "noindex": true
     },
     {
@@ -774,6 +781,40 @@
       "path": "content/current-affairs/punjabi/September-2026/House-of-Aspirants-Current-Affairs-September-2026-Punjabi.pdf",
       "category": "",
       "pdf": "content/current-affairs/punjabi/September-2026/House-of-Aspirants-Current-Affairs-September-2026-Punjabi.pdf"
+    },
+    {
+      "collection": "study-material",
+      "file": "material-01-financial-position-and-agriculture-of-punjab.html",
+      "url": "https://houseofaspirants.in/material-01-financial-position-and-agriculture-of-punjab",
+      "title": "Chapter 1: Financial Position and Agriculture of (English)",
+      "description": "Chapter 1: Financial Position and Agriculture of (English) - free study material from House of Aspirants. Read it online or keep it for offline revision.",
+      "published": "2026-10-19",
+      "updated": "2026-10-19",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 5,
+      "lang": "en",
+      "featured": false,
+      "path": "content/study-material/economy-of-punjab/english /01 - Financial Position and Agriculture of Punjab/01 - Financial Position and Agriculture of Punjab.pdf",
+      "category": "Economy of Punjab",
+      "language": "en",
+      "subjectName": "Economy of Punjab",
+      "studySubject": "economy-of-punjab",
+      "studySubcategory": "",
+      "studyLanguage": "en",
+      "studyLanguageName": "English",
+      "studyChapter": "01 - Financial Position and Agriculture of Punjab",
+      "studyChapterName": "Chapter 1: Financial Position and Agriculture of Punjab",
+      "studyPart": 1,
+      "studyParts": 1,
+      "size": 1830335,
+      "sizeLabel": "1.7 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
+      "badges": [],
+      "search": "chapter 1: financial position and agriculture of (english) chapter 1: financial position and agriculture of (english) - free study material from house of aspirants. read it online or keep it for offline revision. 01 - financial position and agriculture of punjab.pdf economy-of-punjab economy of punjab english chapter 1: financial position and agriculture of punjab part 1 chapter 1: financial position and agriculture economy of punjab study material 01 - financial position and agriculture of",
+      "pdf": "content/study-material/economy-of-punjab/english /01 - Financial Position and Agriculture of Punjab/01 - Financial Position and Agriculture of Punjab.pdf"
     },
     {
       "collection": "study-material",
@@ -6128,6 +6169,25 @@
       "thumbH": 600
     },
     {
+      "path": "content/study-material/economy-of-punjab/english /01 - Financial Position and Agriculture of Punjab/01 - Financial Position and Agriculture of Punjab.pdf",
+      "filename": "01 - Financial Position and Agriculture of Punjab.pdf",
+      "folder": "study-material",
+      "category": "01 - Financial Position and Agriculture of Punjab",
+      "title": "01 Financial Position and Agriculture of Punjab",
+      "slug": "01-financial-position-and-agriculture-of-punjab",
+      "language": "en",
+      "scripts": "latin",
+      "size": 1830335,
+      "sizeLabel": "1.7 MB",
+      "published": "2026-10-19",
+      "modified": "2026-10-19",
+      "pages": 5,
+      "summary": "PUNJAB POLICE • PSSSB • PUNJAB PCS • GOVERNMENT EXAMS ECONOMY OF PUNJAB CHAPTER 1 Financial Position and Agriculture of Punjab ★ Prepared by someone who has already achieved what you are preparing for. WEBSITE houseofaspirants. in EDITION October 2026 LANGUAGE Punjabi & English",
+      "thumbnail": "assets/img/pdf/188f73fb5e16.webp",
+      "thumbW": 450,
+      "thumbH": 600
+    },
+    {
       "path": "content/study-material/english/english /01 - Subject and Predicate/subject-predicate.pdf",
       "filename": "subject-predicate.pdf",
       "folder": "study-material",
@@ -7174,7 +7234,7 @@
     }
   ],
   "counts": {
-    "study-material": 77,
+    "study-material": 78,
     "notes": 0,
     "current-affairs": 5,
     "magazine": 0,

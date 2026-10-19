@@ -641,21 +641,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 35,
-      "newest": "2026-10-18",
-      "totalSize": 59771687,
-      "chapters": 25,
+      "count": 36,
+      "newest": "2026-10-19",
+      "totalSize": 61602022,
+      "chapters": 26,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 35,
-          "chapters": 25,
-          "pages": 139,
-          "totalSize": 59771687,
-          "newest": "2026-10-18",
+          "files": 36,
+          "chapters": 26,
+          "pages": 144,
+          "totalSize": 61602022,
+          "newest": "2026-10-19",
           "categories": 12,
           "regions": 2
         },
@@ -1235,11 +1235,11 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 18,
-              "chapters": 17,
-              "pages": 94,
-              "totalSize": 32168055,
-              "newest": "2026-10-15",
+              "files": 19,
+              "chapters": 18,
+              "pages": 99,
+              "totalSize": 33998390,
+              "newest": "2026-10-19",
               "categories": 6
             },
             "categories": [
@@ -1595,11 +1595,11 @@
                   "economy-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 5,
+                  "totalSize": 1830335,
+                  "newest": "2026-10-19"
                 },
                 "languages": [
                   {
@@ -1615,8 +1615,20 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "01 - Financial Position and Agriculture of Punjab",
+                        "name": "Chapter 1: Financial Position and Agriculture of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-01-financial-position-and-agriculture-of-punjab.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -2334,9 +2346,9 @@
       "color": "#0ea5e9",
       "description": "Agriculture, industry, the power sector, schemes and the state budget.",
       "order": 18,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-19",
+      "totalSize": 1830335,
       "languages": [
         {
           "id": "pa",
@@ -2351,11 +2363,23 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - Financial Position and Agriculture of Punjab",
+              "name": "Chapter 1: Financial Position and Agriculture of Punjab",
+              "parts": [
+                {
+                  "file": "material-01-financial-position-and-agriculture-of-punjab.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 1,
       "hidden": true
     },
     {
@@ -2390,6 +2414,6 @@
       "hidden": true
     }
   ],
-  "total": 77,
+  "total": 78,
   "generatedBy": "scripts/study_material.py"
 }

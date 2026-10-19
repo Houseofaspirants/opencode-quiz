@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 568,
-  "edges": 3280,
+  "nodes": 572,
+  "edges": 3307,
   "silos": 35,
   "clusters": 90,
   "pillars": 34
@@ -57,6 +57,18 @@
    "type": "archive",
    "template": "",
    "title": "Culture of Punjab",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-economy-of-punjab.html",
+   "url": "/archive-category-economy-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "Economy of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2046,6 +2058,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
+   "url": "/content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
    "url": "/content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
    "type": "page",
@@ -3340,6 +3364,30 @@
    "exams": [],
    "tags": [],
    "hub": "magazine.html"
+  },
+  {
+   "id": "material-01-financial-position-and-agriculture-of-punjab",
+   "url": "/material-01-financial-position-and-agriculture-of-punjab",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "url": "/material-01-financial-position-and-agriculture-of-punjab.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Financial Position and Agriculture of (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
   },
   {
    "id": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji",
@@ -7430,6 +7478,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy-of-punjab.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-economy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -9357,6 +9447,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-economy-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-economy.html",
    "rel": "contextual",
    "weight": 1
@@ -9628,6 +9724,12 @@
   {
    "from": "archives.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11558,6 +11660,102 @@
    "weight": 1
   },
   {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-articles.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-chapter-02-expansion-of-english-east-india-company-in-india-punj.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-01-guru-nanak-dev-ji-and-guru-angad-dev-ji.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -13251,13 +13449,13 @@
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13341,13 +13539,13 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-articles.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-articles.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13611,13 +13809,13 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-articles.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13971,6 +14169,12 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-basic-concepts-of-economy.html",
    "to": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
    "rel": "related-study-material",
    "weight": 1
@@ -13978,12 +14182,6 @@
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
    "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14061,6 +14259,12 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
    "rel": "related-study-material",
    "weight": 1
@@ -14068,12 +14272,6 @@
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
    "to": "material-articles.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17025,13 +17223,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17115,13 +17313,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25953,6 +26151,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
    "rel": "contextual",
    "weight": 1
@@ -26332,6 +26536,12 @@
   {
    "from": "study-material.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
