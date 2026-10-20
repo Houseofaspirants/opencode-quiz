@@ -5961,23 +5961,26 @@ def feed_html(kind, items, index):
     </section>"""
 
     if kind == "sessions":
-        up = [r for r in items if str(r.get("status", "")) == "upcoming"]
-        if not up:
+        # The live is weekly, so the homepage states the standing slot, never
+        # one session's date: a dated heading goes stale the day after and
+        # makes the site look abandoned. home.js prints the next Sunday's date
+        # into [data-next-sunday] in the reader's own browser.
+        if not items:
             return ""
-        r = up[0]
-        join = f'<a class="btn btn-primary" href="{esc(str(r.get("join", "")))}" target="_blank" rel="noopener">Join session</a>' \
+        r = items[0]
+        join = f'<a class="btn btn-primary" href="{esc(str(r.get("join", "")))}" target="_blank" rel="noopener">Join on Telegram</a>' \
             if r.get("join") else ""
         return f"""    <section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal">
           <div>
             <span class="eyebrow">Weekly Live Session</span>
-            <h2>{esc(r["title"])}</h2>
-            <p>{esc(r.get("date", ""))} · {esc(str(r.get("time", "")))} · {esc(str(r.get("platform", "")))}</p>
+            <h2>Sunday Live - Doubts &amp; Rank 2 Strategy</h2>
+            <p>Every Sunday · {esc(str(r.get("time", "")))} · {esc(str(r.get("platform", "")))}<span data-next-sunday></span></p>
           </div>
           <a class="btn btn-soft" href="live-sessions.html">All sessions</a>
         </div>
-        <div class="btn-row reveal">{join}<a class="btn btn-soft" href="{r["file"]}">Session details →</a></div>
+        <div class="btn-row reveal">{join}</div>
       </div>
     </section>"""
 
@@ -6616,6 +6619,32 @@ def write_content_graph(ctx, index, exams, articles, landing_pages, records):
          f" -> data/content-graph.json")
 
 
+def home_latest_html(index):
+    """The eight newest MCQ sets as static cards, the same markup home.js
+    renders, so the "Latest Expected MCQs" shelf is full before (and
+    without) JavaScript - crawlers and slow phones never see empty boxes."""
+    live = []
+    for s in index.get("subjects", []):
+        for t in s.get("topics", []):
+            if t.get("available"):
+                live.append((s, t))
+    live.sort(key=lambda st: st[1].get("updatedAt") or 0, reverse=True)
+    cards = []
+    for s, t in live[:8]:
+        href = (t["landing"].lstrip("/") + ".html") if t.get("landing") else \
+            f'quiz.html?subject={s["id"]}&topic={t["id"]}'
+        badge = ('<span class="badge badge-lang">ਪੰ · EN</span>'
+                 if "pa" in (t.get("variants") or {}) else "")
+        n = t.get("count", 0)
+        cards.append(
+            f'\n        <a class="card quiz-card" href="{esc(href)}">'
+            f'<span class="qc-icon">{s.get("icon", "")}</span>'
+            f'<span><h3>{esc(t.get("name", ""))}{badge}</h3>'
+            f'<span class="qc-sub">{esc(s.get("name", ""))} · {n} question{"" if n == 1 else "s"}</span></span>'
+            f'<span class="qc-go">→</span></a>')
+    return "".join(cards) + ("\n        " if cards else "")
+
+
 def patch_index(items_by_kind, index, popularity=None, records=None,
                 quiz_titles=None):
     path = ROOT / "index.html"
@@ -6640,7 +6669,8 @@ def patch_index(items_by_kind, index, popularity=None, records=None,
     popular_body = home_engine_html(records or [], popularity or {},
                                     quiz_titles or {})
     for marker, body in (("popular", popular_body),
-                         ("data", home_engine_data(records or []))):
+                         ("data", home_engine_data(records or [])),
+                         ("latest", home_latest_html(index))):
         start, end = f"<!-- HOA-HOME:{marker} -->", f"<!-- /HOA-HOME:{marker} -->"
         if start not in out or end not in out:
             err(f"index.html: engine marker {start!r} missing - restore it "

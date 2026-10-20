@@ -93,6 +93,15 @@
     }
   }
 
+  /* ----------------------------------------- 2b. Next Sunday live -------
+     The build prints the standing weekly slot; the date is computed here,
+     in the reader's own browser, so it is never stale. */
+  document.querySelectorAll("[data-next-sunday]").forEach((el) => {
+    const d = new Date();
+    d.setDate(d.getDate() + ((7 - d.getDay()) % 7));
+    el.textContent = ` · next: ${d.toLocaleDateString("en-IN", { weekday: "short", day: "numeric", month: "short" })}`;
+  });
+
   /* -------------------------------------------- 3. Latest quiz cards ----- */
   const latestWrap = document.getElementById("latestQuizzes");
   if (latestWrap) {

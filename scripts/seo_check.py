@@ -1285,10 +1285,11 @@ if CONTENT_MANIFEST.exists():
                    (newest(by_coll.get("magazine", [])) or {}).get("file"))
         check_feed("recruitment", bool(by_coll.get("recruitment")),
                    (newest(by_coll.get("recruitment", [])) or {}).get("file"))
-        upcoming = [p for p in by_coll.get("sessions", [])
-                    if str(p.get("status", "")) == "upcoming"]
-        check_feed("sessions", bool(upcoming),
-                   (newest(upcoming) or {}).get("file"))
+        # The sessions block states the standing weekly slot (no dated
+        # heading that goes stale), so it shows whenever any session exists
+        # and links the hub rather than one session page.
+        check_feed("sessions", bool(by_coll.get("sessions")),
+                   "live-sessions.html" if by_coll.get("sessions") else None)
 
         # current-affairs feed = newest CA documents + newest available CA sets
         try:

@@ -1192,8 +1192,13 @@ def build_category(s, c):
         "Start practising", f"Practise {name} now",
         "Open the live subject view with this lane pre-selected, or take today's mixed set.",
         [(f"Open {s['name']} view", f"subject.html?subject={sid}&category={cid}"),
-         ("Parent subject", subject_file(sid)), ("Daily Quiz", "quiz.html?mode=daily")]),
+         ("Parent subject", subject_file(sid)), ("Daily Quiz", "quiz.html?mode=daily")]
+        + ([("ਪੰਜਾਬੀ ਵਿੱਚ (Punjabi)", category_pa_file(sid, cid))]
+           if category_pa_topics(c) else [])),
         pad_top=False))
+    if category_pa_topics(c):
+        link_record(filename, "category", category_pa_file(sid, cid), "category-pa",
+                    f"{name} MCQ in Punjabi")
 
     if topics:
         q1a = (f"{len(topics)} topic sets publish under {name}, carrying {q_total} questions "
@@ -1229,7 +1234,8 @@ def build_category(s, c):
         title=title, description=description, kw=kw, url=url, ld_blocks=ld,
         crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="Category", h1=h1, lead=lead,
         answer=answer, facts=facts, body="\n".join(b for b in body if b),
-        faq=faq_section("Questions", f"{name} - common questions", "", faqs))
+        faq=faq_section("Questions", f"{name} - common questions", "", faqs),
+        alternates=category_alternates(sid, cid) if category_pa_topics(c) else ())
 
     write_page(filename, html)
     register(filename, url, "category", f"{sid}/{cid}", title, description, h1,
@@ -1612,8 +1618,13 @@ def build_topic_pa(s, c, t):
         "ਟਾਈਮਡ ਅਭਿਆਸ", "ਹੁਣ ਘੜੀ ਨਾਲ ਕੁਇਜ਼ ਦਿਓ",
         f"{count} ਸਵਾਲ, ਤੁਰੰਤ ਸਕੋਰ ਅਤੇ ਅੰਤ ਵਿੱਚ ਪੂਰਾ ਰਿਵਿਊ।",
         [("ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ", quiz_file(sid, tid)),
-         ("English version", topic_file(sid, tid)),
-         ("ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼", "quiz.html?mode=daily")]), pad_top=False))
+         ("English version", topic_file(sid, tid))]
+        + ([(f"ਪੂਰਾ ਅਧਿਆਇ: {CATEGORY_PA.get(c['id'], c['name'])}",
+             category_pa_file(sid, c["id"]))] if c else [])
+        + [("ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼", "quiz.html?mode=daily")]), pad_top=False))
+    if c:
+        link_record(filename, "topic-pa", category_pa_file(sid, c["id"]), "category-pa",
+                    CATEGORY_PA.get(c["id"], c["name"]))
     link_record(filename, "topic-pa", quiz_file(sid, tid), "quiz", "ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ")
     link_record(filename, "topic-pa", topic_file(sid, tid), "topic", en_name)
 
@@ -1645,6 +1656,153 @@ def build_topic_pa(s, c, t):
     register(filename, url, "topic-pa", f"{sid}/{tid}", title, description, h1,
              words(intro_html), {"WebPage", "BreadcrumbList", "FAQPage"})
     info(f"topic-pa {filename}  {count}q")
+    return filename
+
+
+# ======================================================= PUNJABI CHAPTER ====
+# One Punjabi page per chapter (category) - "Punjab History MCQ in Punjabi" -
+# so a search for the whole chapter lands on a page that lists every Punjabi
+# set inside it, instead of on one set or on the English lane page.
+# Gurmukhi chapter names; a chapter missing here falls back to its English name.
+CATEGORY_PA = {
+    "history-of-punjab": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ", "modern-history": "ਆਧੁਨਿਕ ਭਾਰਤ ਦਾ ਇਤਿਹਾਸ",
+    "polity": "ਭਾਰਤੀ ਰਾਜਨੀਤੀ ਅਤੇ ਸੰਵਿਧਾਨ", "economy": "ਭਾਰਤੀ ਅਰਥਵਿਵਸਥਾ",
+    "economy-of-punjab": "ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ", "geography-of-punjab": "ਪੰਜਾਬ ਦਾ ਭੂਗੋਲ",
+    "culture-of-punjab": "ਪੰਜਾਬ ਦਾ ਸੱਭਿਆਚਾਰ", "punjab-gk": "ਪੰਜਾਬ ਜੀ.ਕੇ.",
+    "punjab-literature": "ਪੰਜਾਬੀ ਸਾਹਿਤ", "ancient-history": "ਪ੍ਰਾਚੀਨ ਭਾਰਤ ਦਾ ਇਤਿਹਾਸ",
+    "medieval-history": "ਮੱਧਕਾਲੀ ਭਾਰਤ ਦਾ ਇਤਿਹਾਸ", "science-technology": "ਵਿਗਿਆਨ ਅਤੇ ਤਕਨੀਕ",
+    "analogy": "ਸਮਾਨਤਾ (Analogy)", "number-series": "ਨੰਬਰ ਲੜੀ (Number Series)",
+    "july": "ਜੁਲਾਈ ਕਰੰਟ ਅਫੇਅਰਜ਼", "september": "ਸਤੰਬਰ ਕਰੰਟ ਅਫੇਅਰਜ਼",
+    "01-fundamentals-of-computers": "ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ",
+    "02-evolution-of-computers": "ਕੰਪਿਊਟਰ ਦਾ ਵਿਕਾਸ",
+    "03-generations-of-computers": "ਕੰਪਿਊਟਰ ਦੀਆਂ ਪੀੜ੍ਹੀਆਂ",
+    "04-input-devices": "ਇਨਪੁੱਟ ਡਿਵਾਈਸਾਂ", "05-output-devices": "ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ",
+    "06-central-processing-unit": "ਸੈਂਟਰਲ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (CPU)",
+}
+# The English phrase aspirants actually type, where it differs from the folder name.
+CATEGORY_SEARCH_EN = {"history-of-punjab": "Punjab History",
+                      "economy-of-punjab": "Punjab Economy",
+                      "geography-of-punjab": "Punjab Geography",
+                      "culture-of-punjab": "Punjab Culture",
+                      "01-fundamentals-of-computers": "Computer Fundamentals",
+                      "02-evolution-of-computers": "Evolution of Computers",
+                      "03-generations-of-computers": "Generations of Computers",
+                      "04-input-devices": "Computer Input Devices",
+                      "05-output-devices": "Computer Output Devices",
+                      "06-central-processing-unit": "CPU (Central Processing Unit)",
+                      "july": "Current Affairs July", "september": "Current Affairs September"}
+
+
+def category_pa_file(sid, cid):
+    return f"pa/category-{sid}-{cid}.html"
+
+
+def category_pa_topics(c):
+    """Live topics of a chapter that have a Punjabi question file."""
+    return [t for t in c.get("topics", []) if t.get("available") and topic_pa_variant(t)]
+
+
+def category_alternates(sid, cid):
+    en_url, pa_url = u(category_file(sid, cid)), u(category_pa_file(sid, cid))
+    return [("en", en_url), ("pa", pa_url), ("x-default", en_url)]
+
+
+def build_category_pa(s, c):
+    """pa/category-<subject>-<chapter>.html - every Punjabi set of one chapter
+    on one page, with sample questions as crawlable Gurmukhi text."""
+    sid, cid = s["id"], c["id"]
+    filename = category_pa_file(sid, cid)
+    url = u(filename)
+    sets = category_pa_topics(c)
+    en_name = CATEGORY_SEARCH_EN.get(cid, c["name"])
+    name = CATEGORY_PA.get(cid, c["name"])
+    subj_pa = SUBJECT_PA.get(sid, s["name"])
+    q_total = sum(int(t.get("count") or 0) for t in sets)
+
+    title = fit_title(f"{name} MCQ ਪੰਜਾਬੀ ਵਿੱਚ | {en_name} MCQ in Punjabi",
+                      f"{en_name} MCQ in Punjabi | {name}")
+    _d1 = (f"{en_name} MCQ in Punjabi: {name} ਦੇ {len(sets)} ਸੈੱਟ, {q_total} ਸਵਾਲ, "
+           f"ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ")
+    _tails = ["Punjab Police ਅਤੇ PSSSB ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।", ""]
+    description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
+                                _d1.strip()))
+    kw = keywords(f"{en_name} MCQ in Punjabi", f"{name} MCQ", f"{name} ਸਵਾਲ",
+                  f"{subj_pa} MCQ ਪੰਜਾਬੀ")
+    h1 = f"{name} MCQ ਪੰਜਾਬੀ ਵਿੱਚ"
+    lead = f"{en_name} MCQ in Punjabi - {len(sets)} ਸੈੱਟ ਅਤੇ {q_total} ਸਵਾਲ, ਇੱਕੋ ਥਾਂ।"
+    answer = (f"{name} ਦੇ ਸਾਰੇ ਪੰਜਾਬੀ ਸੈੱਟ ਹੇਠਾਂ ਹਨ। ਹਰ ਸੈੱਟ ਵਿੱਚ ਚਾਰ ਵਿਕਲਪ, ਸਹੀ ਉੱਤਰ "
+              f"ਅਤੇ ਵਿਆਖਿਆ ਹੈ, ਅਤੇ ਹਰ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਮੌਜੂਦ ਹੈ।")
+    set_names = [PA_TITLE.get((sid, t["id"])) or t["name"] for t in sets]
+    intro = [
+        f"ਇਸ ਪੰਨੇ ਉੱਤੇ {subj_pa} ਦੇ ਅਧਿਆਇ \"{name}\" ਦੇ {len(sets)} ਪੰਜਾਬੀ ਸੈੱਟ ਹਨ, ਕੁੱਲ "
+        f"{q_total} ਸਵਾਲ। ਸੈੱਟ: {', '.join(set_names[:6])}"
+        + (" ਅਤੇ ਹੋਰ।" if len(set_names) > 6 else "।"),
+        "ਪਹਿਲਾਂ ਹਰ ਸੈੱਟ ਦੇ ਸਵਾਲ ਪੜ੍ਹ ਕੇ ਆਪ ਉੱਤਰ ਸੋਚੋ, ਫਿਰ ਟਾਈਮਡ ਕੁਇਜ਼ ਦਿਓ। ਜਿਹੜਾ ਸਵਾਲ "
+        "ਦੋ ਵਾਰ ਗਲਤ ਹੋਵੇ, ਉਹ ਦੁਹਰਾਈ ਦੀ ਸੂਚੀ ਵਿੱਚ ਲਿਖ ਲਓ।",
+    ]
+    intro_html = (f'        <div class="landing-intro" data-landing="intro" lang="pa">\n'
+                  f'{join_paras(intro)}\n        </div>')
+    facts = facts_grid([("ਸੈੱਟ", str(len(sets))), ("ਸਵਾਲ", str(q_total)),
+                        ("ਭਾਸ਼ਾ", "ਪੰਜਾਬੀ + English"), ("ਵਿਸ਼ਾ", subj_pa)])
+
+    body = [section_wrap(section_head("ਜਾਣ-ਪਛਾਣ", f"{name} ਬਾਰੇ",
+                                      "ਸੈੱਟ ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ।") + "\n" + intro_html)]
+    items = [(n, "", topic_pa_file(sid, t["id"]), f"{t.get('count', 0)} MCQ")
+             for n, t in zip(set_names, sets)]
+    body.append(card_section("ਸੈੱਟ", f"{name}: ਸਾਰੇ ਪੰਜਾਬੀ ਸੈੱਟ",
+                             "ਹਰ ਸੈੱਟ ਦੇ ਸਾਰੇ ਸਵਾਲ ਅਤੇ ਉੱਤਰ ਉਸਦੇ ਪੰਨੇ ਉੱਤੇ ਹਨ।", items))
+    for _n, _b, href, _m in items:
+        link_record(filename, "category-pa", href, "topic-pa", _n)
+
+    # Two questions from each set: real Gurmukhi text for the chapter query,
+    # without copying every set's full bank onto this page.
+    sample = []
+    for t in sets:
+        sample.extend(load_variant_questions(topic_pa_variant(t))[:2])
+    if sample:
+        body.append(section_wrap(
+            section_head("ਨਮੂਨਾ ਸਵਾਲ", f"{name}: ਨਮੂਨੇ ਦੇ ਸਵਾਲ",
+                         "ਹਰ ਸੈੱਟ ਵਿੱਚੋਂ ਦੋ ਸਵਾਲ - ਉੱਤਰ ਵੇਖਣ ਲਈ ਦਬਾਓ।")
+            + "\n" + question_bank_html(sample[:20], "pa")))
+
+    body.append(section_wrap(cta_card(
+        "ਅਭਿਆਸ", f"{name} ਦਾ ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ",
+        "ਪਹਿਲਾ ਸੈੱਟ ਖੋਲ੍ਹੋ, ਜਾਂ ਇਹੀ ਅਧਿਆਇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੇਖੋ।",
+        [("ਪਹਿਲਾ ਸੈੱਟ", topic_pa_file(sid, sets[0]["id"])),
+         ("English version", category_file(sid, cid)),
+         ("ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼", "quiz.html?mode=daily")]), pad_top=False))
+    link_record(filename, "category-pa", category_file(sid, cid), "category", c["name"])
+
+    faqs = [
+        (f"{name} ਵਿੱਚ ਕਿੰਨੇ ਪੰਜਾਬੀ ਸਵਾਲ ਹਨ?",
+         f"ਇਸ ਵੇਲੇ {len(sets)} ਸੈੱਟ ਅਤੇ ਕੁੱਲ {q_total} ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ ਹਨ। ਨਵਾਂ ਸੈੱਟ "
+         f"ਛਪਦੇ ਹੀ ਇਸ ਪੰਨੇ ਉੱਤੇ ਜੁੜ ਜਾਂਦਾ ਹੈ।"),
+        ("ਕੀ ਇਹ ਸਵਾਲ ਮੁਫ਼ਤ ਹਨ?",
+         "ਹਾਂ। ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਮੁਫ਼ਤ ਹਨ ਅਤੇ ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।"),
+        (f"ਕੀ {name} ਦੇ ਸਵਾਲ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
+         "ਹਾਂ। ਹਰ ਪੰਜਾਬੀ ਸੈੱਟ ਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਹੈ - ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ। \"English "
+         "version\" ਬਟਨ ਨਾਲ ਖੋਲ੍ਹੋ।"),
+    ]
+    crumbs = [("Home", "index.html", f"{BASE}/"),
+              (s["name"], subject_file(sid), u(subject_file(sid))),
+              (c["name"], category_file(sid, cid), u(category_file(sid, cid))),
+              ("ਪੰਜਾਬੀ", None, None)]
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    page_ld["inLanguage"] = "pa-IN"
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]})]
+
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਪੰਜਾਬੀ MCQ", h1=h1, lead=lead,
+        answer=answer, facts=facts, body="\n".join(b for b in body if b),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", f"{name} ਬਾਰੇ।", faqs),
+        lang="pa", alternates=category_alternates(sid, cid), answer_label="ਛੋਟਾ ਜਵਾਬ")
+    write_page(filename, html)
+    register(filename, url, "category-pa", f"{sid}/{cid}", title, description, h1,
+             words(intro_html), {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"category-pa {filename}  {len(sets)} sets, {q_total}q")
     return filename
 
 
@@ -2700,6 +2858,10 @@ def main():
         for c, t in live_topics(s):
             if topic_pa_variant(t):
                 built.append(build_topic_pa(s, c, t))
+    for s in subjects:
+        for c in s.get("categories", []):
+            if category_pa_topics(c):
+                built.append(build_category_pa(s, c))
     for e in exams_cfg:
         built.append(build_exam(e))
     for c in clusters_cfg:
@@ -2730,7 +2892,8 @@ def main():
             removed.append(fn)
     for fn in sorted(os.listdir(os.path.join(ROOT, "pa"))):
         rel = f"pa/{fn}"
-        if fn.startswith("topic-") and fn.endswith(".html") and rel not in expected:
+        if fn.startswith(("topic-", "category-")) and fn.endswith(".html") \
+                and rel not in expected:
             os.remove(os.path.join(ROOT, rel))
             removed.append(rel)
     if removed:

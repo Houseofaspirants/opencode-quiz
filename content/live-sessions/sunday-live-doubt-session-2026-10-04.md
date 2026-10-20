@@ -7,7 +7,7 @@ time: 8:00 PM (IST)
 start_time: "20:00"
 platform: Telegram (live in the channel)
 join: https://t.me/HouseOfAspirant
-status: upcoming
+status: held
 author: Gurpreet Singh
 tags: [live session, doubt session, preparation strategy]
 subjects: [gk, reasoning, punjabi, current-affairs]

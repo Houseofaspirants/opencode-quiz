@@ -1098,8 +1098,8 @@ if (site.url) {
   // by the loops above.)
   for (const [key, p] of [...LANDING.entries()].sort()) {
     const kind = key.split("|")[0];
-    if (kind === "topic" || kind === "topic-pa" || kind === "exam" || kind === "cluster") {
-      const prio = { topic: "0.8", "topic-pa": "0.8", exam: "0.85", cluster: "0.7" }[kind];
+    if (kind === "topic" || kind === "topic-pa" || kind === "category-pa" || kind === "exam" || kind === "cluster") {
+      const prio = { topic: "0.8", "topic-pa": "0.8", "category-pa": "0.8", exam: "0.85", cluster: "0.7" }[kind];
       urls.push({ loc: `${base}${p}`, p: prio });
     }
   }
