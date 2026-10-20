@@ -826,6 +826,25 @@ def guide_cards(guides):
     return [(a["title"], a["description"], a["url"], "Study guide") for a in guides]
 
 
+# Study-material folders that are their own quiz subject; every other folder
+# (history-of-punjab, polity, economy ...) is General Knowledge.
+STUDY_TO_QUIZ_SUBJECT = {"punjabi": "punjabi", "computer": "computer",
+                         "reasoning": "reasoning", "english": "english",
+                         "quant": "quant", "current-affairs": "current-affairs"}
+
+
+def study_items_for(sid):
+    """Study-material pages for one quiz subject, in folder (chapter) order."""
+    try:
+        man = read_json(os.path.join(DATA, "content-manifest.json"))
+    except Exception:
+        return []
+    out = [r for r in man.get("items", [])
+           if r.get("collection") == "study-material" and r.get("file")
+           and STUDY_TO_QUIZ_SUBJECT.get(str(r.get("studySubject", "")), "gk") == sid]
+    return sorted(out, key=lambda r: str(r.get("path", "")))
+
+
 # ============================================================ SUBJECT PAGE ===
 def build_subject(s):
     sid, name = s["id"], s["name"]
@@ -920,6 +939,20 @@ def build_subject(s):
                     "Meanwhile the daily quiz and the mock test keep the subject covered.",
                     [("Daily Quiz", "quiz.html?mode=daily"), ("Mock Tests", "mock.html"),
                      ("Open the subject view", f"subject.html?subject={sid}")]))))
+
+    # Subject -> Study material. A subject with few or no quizzes (Punjabi)
+    # can still hold dozens of chapters of notes; without this section the
+    # subject page never mentions them.
+    notes = study_items_for(sid)
+    if notes:
+        body.append(card_section(
+            "Study material", f"{name} notes, chapter by chapter",
+            "Read online or download - every chapter in the language it was written in.",
+            [(r["title"], "", r["file"],
+              f"{r.get('readingMinutes') or 1} min read") for r in notes[:24]],
+            button='          <a class="btn btn-soft" href="study-material.html">All study material</a>'))
+        for r in notes[:24]:
+            link_record(filename, "subject", r["file"], "study", r["title"])
 
     # Subject -> Quiz
     own_quizzes = [(t["name"], "", quiz_file(sid, t["id"]), f"{t.get('count', 0)} MCQs")
