@@ -1,314 +1,518 @@
-[
-  {
-    "id": 1,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: early life",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Banda Singh Bahadur was born on which date?",
-    "options": ["27 October 1670", "12 May 1710", "9 June 1716", "February 1762"],
-    "answer": 0,
-    "explanation": "The notes state that Banda Singh Bahadur was born on 27 October 1670. 12 May 1710 was the date of the Battle of Chappar Chiri, while 9 June 1716 was his execution date. February 1762 is associated with the Wadda Ghallughara.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 2,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: early life",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "What was the original name of Baba Banda Singh Bahadur?",
-    "options": ["Lachhman Dev", "Ajai Singh", "Baj Singh", "Binod Singh"],
-    "answer": 0,
-    "explanation": "The source identifies Lachhman Dev as the original name of Banda Singh Bahadur. Ajai Singh was his four-year-old son, whereas Baj Singh and Binod Singh were among the five Sikhs in the advisory council. Later in life, Lachhman Dev was known as Madho Das and then as Banda Singh.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 3,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: transformation",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about Banda Singh Bahadur:\n1. As an ascetic, he was known as Madho Das.\n2. Guru Gobind Singh Ji named him Gurbakhsh Singh.\n3. He became famous as Banda Singh.\nWhich of the statements given above are correct?",
-    "options": ["1 and 2 only", "2 and 3 only", "1, 2 and 3", "1 and 3 only"],
-    "answer": 2,
-    "explanation": "All three statements are correct according to the notes. Lachhman Dev became Madho Das as an ascetic, Guru Gobind Singh Ji named him Gurbakhsh Singh, and he became famous as Banda Singh. Therefore, every statement listed is supported by the source.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 4,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: meeting with Guru Gobind Singh Ji",
-    "difficulty": "moderate",
-    "type": "assertion-reason",
-    "question": "Assertion (A): Banda Singh took an oath to seek justice against Wazir Khan.\nReason (R): Wazir Khan was the Governor of Sirhind.\nChoose the correct answer.",
-    "options": ["Both A and R are true and R is the correct explanation of A", "Both A and R are true but R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
-    "answer": 1,
-    "explanation": "Both the assertion and reason are true. The notes say Banda Singh vowed to seek justice against Wazir Khan, who was Governor of Sirhind, as well as to avenge the martyrdom of the Guru's sons. The reason identifies Wazir Khan's office but is not the explanation of the oath.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 5,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: symbols of sovereignty",
-    "difficulty": "moderate",
-    "type": "match",
-    "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Nagara and nishan\n2. Five arrows\n3. Binod Singh, Kahan Singh, Baj Singh, Daya Singh and Ram Singh\n\nList-II\nA. Advisory council\nB. Symbols of sovereignty\nC. Representation of divine authority",
-    "options": ["1-B, 2-C, 3-A", "1-C, 2-A, 3-B", "1-A, 2-B, 3-C", "1-B, 2-A, 3-C"],
-    "answer": 0,
-    "explanation": "Guru Gobind Singh Ji gave a drum and banner as symbols of sovereignty, five arrows representing divine authority, and an advisory council of five Sikhs. Hence 1-B, 2-C and 3-A is correct. The other codes wrongly interchange the meanings of these three grants.",
-    "tags": ["History of Punjab", "Guru Gobind Singh Ji"]
-  },
-  {
-    "id": 6,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: administration",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "After capturing Sirhind, which fort did Banda Singh make his capital and rename Lohgarh?",
-    "options": ["Rajouri", "Sirhind", "Lohgarh", "Mukhlisgarh"],
-    "answer": 3,
-    "explanation": "The notes state that Banda Singh made Mukhlisgarh fort his capital and renamed it Lohgarh, meaning 'Fort of Steel'. Rajouri was his birthplace, Sirhind was captured after Chappar Chiri, and Lohgarh was the new name of Mukhlisgarh. This change followed the capture of Sirhind.",
-    "tags": ["History of Punjab", "Lohgarh"]
-  },
-  {
-    "id": 7,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: administration",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements regarding Banda Singh Bahadur's administration:\n1. His official seals and coins bore the names of Guru Nanak Dev Ji and Guru Gobind Singh Ji.\n2. Persian was retained as the language of administration.\n3. The Zamindari system was abolished and land was given to the tillers.\nWhich of the statements given above are correct?",
-    "options": ["1 and 2 only", "2 and 3 only", "1, 2 and 3", "1 and 3 only"],
-    "answer": 2,
-    "explanation": "All three statements are stated in the notes. Banda Singh introduced seals and coins bearing the names of Guru Nanak Dev Ji and Guru Gobind Singh Ji, retained Persian for administration, and abolished the Zamindari system in favour of tillers. Thus the correct option includes statements 1, 2 and 3.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur", "Administration"]
-  },
-  {
-    "id": 8,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Battle of Chappar Chiri",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Which event is correctly associated with 12 May 1710?",
-    "options": ["Formation of Sarbat Khalsa meetings", "Capture of Banda Singh Bahadur", "Death of Jassa Singh Ahluwalia", "Victory of Banda Singh at Chappar Chiri"],
-    "answer": 3,
-    "explanation": "On 12 May 1710, Banda Singh won his most important victory at the Battle of Chappar Chiri. Sarbat Khalsa meetings began from 1733, his capture occurred in December 1715, and Jassa Singh Ahluwalia died in 1783. The Chappar Chiri victory led to the capture of Sirhind.",
-    "tags": ["History of Punjab", "Chappar Chiri"]
-  },
-  {
-    "id": 9,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: martyrdom",
-    "difficulty": "difficult",
-    "type": "chronology",
-    "question": "Arrange the following events in chronological order:\n1. Banda Singh Bahadur was captured.\n2. Battle of Chappar Chiri.\n3. Banda Singh Bahadur was executed.\n4. Birth of Banda Singh Bahadur.",
-    "options": ["4-2-1-3", "4-1-2-3", "2-4-1-3", "4-2-3-1"],
-    "answer": 0,
-    "explanation": "Banda Singh was born in 1670, fought the Battle of Chappar Chiri in 1710, was captured in December 1715, and was executed in 1716. Therefore 4-2-1-3 is the correct order. The notes identify 9 June 1716 as the date of his execution.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 10,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: martyrdom",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "Banda Singh Bahadur was captured in December 1715 by forces of which Mughal emperor?",
-    "options": ["Zakariya Khan", "Farrukhsiyar", "Yahiya Khan", "Wazir Khan"],
-    "answer": 1,
-    "explanation": "The notes say that Banda Singh's rule ended when forces of Mughal emperor Farrukhsiyar captured him in December 1715. Zakariya Khan was Governor of Lahore, Yahiya Khan led Mughal forces during the Chhota Ghallughara, and Wazir Khan was Governor of Sirhind. Banda Singh was subsequently taken to Delhi.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur"]
-  },
-  {
-    "id": 11,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Baba Banda Singh Bahadur: martyrdom",
-    "difficulty": "difficult",
-    "type": "statement",
-    "question": "Consider the following statements about the final days of Banda Singh Bahadur:\n1. He was taken to the tomb of Khwaja Qutb-ud-Din Bakhtiyar Kaki in Delhi.\n2. He was offered a choice between conversion to Islam and death.\n3. His four-year-old son Ajai Singh was killed before his eyes after he refused to convert.\nWhich of the statements given above are correct?",
-    "options": ["1 and 2 only", "2 and 3 only", "1, 2 and 3", "1 and 3 only"],
-    "answer": 2,
-    "explanation": "Each statement is explicitly given in the source notes. Banda Singh was taken to the tomb in Delhi, refused conversion to Islam, and witnessed the killing of his four-year-old son Ajai Singh. He was then executed on 9 June 1716 and became a martyr for the Sikh cause.",
-    "tags": ["History of Punjab", "Baba Banda Singh Bahadur", "Martyrdom"]
-  },
-  {
-    "id": 12,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sarbat Khalsa",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which of the following statements about the Sarbat Khalsa is NOT correct according to the notes?",
-    "options": ["The meetings began from 1733.", "They were held at Amritsar.", "They focused on the safety and progress of the Sikh community.", "They were held once every year on Baisakhi."],
-    "answer": 3,
-    "explanation": "The incorrect statement is that the Sarbat Khalsa met once every year on Baisakhi. The notes state that meetings were held twice a year at Amritsar, on Vaisakhi and Diwali, from 1733. Their stated purpose was the safety and progress of the Sikh community.",
-    "tags": ["History of Punjab", "Sarbat Khalsa"]
-  },
-  {
-    "id": 13,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sarbat Khalsa",
-    "difficulty": "moderate",
-    "type": "assertion-reason",
-    "question": "Assertion (A): Nawab Kapur Singh became the leader of the Sarbat Khalsa.\nReason (R): Zakariya Khan, Governor of Lahore, gave him the title 'Nawab' to win over the Sikhs.\nChoose the correct answer.",
-    "options": ["Both A and R are true and R is the correct explanation of A", "Both A and R are true but R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
-    "answer": 1,
-    "explanation": "Both the assertion and reason are true, but the reason does not explain why Kapur Singh became leader of the Sarbat Khalsa. The notes separately state his leadership and the fact that Zakariya Khan bestowed the title 'Nawab' to win over the Sikhs. Therefore, the correct relationship is that both are true without an explanatory link.",
-    "tags": ["History of Punjab", "Nawab Kapur Singh", "Sarbat Khalsa"]
-  },
-  {
-    "id": 14,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sikh resistance",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "In 1739, Sikh forces looted the returning army of which invading ruler?",
-    "options": ["Ahmad Shah Abdali", "Nadir Shah", "Farrukhsiyar", "Zakariya Khan"],
-    "answer": 1,
-    "explanation": "The notes state that Nadir Shah, ruler of Persia (Iran), invaded India in 1739 and Sikh forces looted his army of its plunder while it returned through Punjab. Ahmad Shah Abdali is connected with later invasions and the Wadda Ghallughara. Farrukhsiyar and Zakariya Khan were Mughal figures, not the 1739 Persian invader.",
-    "tags": ["History of Punjab", "Nadir Shah"]
-  },
-  {
-    "id": 15,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Dal Khalsa: military organisation",
-    "difficulty": "easy",
-    "type": "match",
-    "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Buddha Dal\n2. Taruna Dal\n\nList-II\nA. Young and energetic warriors\nB. Veteran soldiers who trained younger recruits",
-    "options": ["1-A, 2-B", "1-A, 2-A", "1-B, 2-A", "1-B, 2-B"],
-    "answer": 2,
-    "explanation": "Nawab Kapur Singh divided the Sikh forces into Buddha Dal and Taruna Dal. Buddha Dal consisted of veteran, older soldiers who trained younger recruits, while Taruna Dal consisted of young and energetic warriors. Thus 1-B and 2-A is the correct matching.",
-    "tags": ["History of Punjab", "Dal Khalsa", "Nawab Kapur Singh"]
-  },
-  {
-    "id": 16,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Chhota Ghallughara",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "The Chhota Ghallughara took place in 1746 at which place?",
-    "options": ["Chappar Chiri", "Sirhind", "Kup-Rahira", "Kahnuwan"],
-    "answer": 3,
-    "explanation": "According to the notes, the Chhota Ghallughara occurred in 1746 at Kahnuwan, near Gurdaspur. Kup-Rahira near Malerkotla is the site of the Wadda Ghallughara. Chappar Chiri and Sirhind are associated with Banda Singh Bahadur's 1710 campaign.",
-    "tags": ["History of Punjab", "Chhota Ghallughara"]
-  },
-  {
-    "id": 17,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Chhota Ghallughara",
-    "difficulty": "difficult",
-    "type": "statement",
-    "question": "Consider the following statements regarding the Chhota Ghallughara:\n1. The execution of Bhai Mani Singh in 1738 caused deep resentment among the Sikhs.\n2. Bhai Mani Singh was Head Granthi of Harmandir Sahib.\n3. Mughal forces led by Yahiya Khan killed about 7,000 Sikhs.\nWhich of the statements given above are correct?",
-    "options": ["1, 2 and 3", "2 and 3 only", "1 and 2 only", "1 and 3 only"],
-    "answer": 0,
-    "explanation": "All three statements are correct in the notes. Bhai Mani Singh, Head Granthi of Harmandir Sahib, was executed by Zakariya Khan in 1738, leading to resentment and growing conflict. During the Chhota Ghallughara, Mughal forces led by Yahiya Khan killed about 7,000 Sikhs.",
-    "tags": ["History of Punjab", "Chhota Ghallughara", "Bhai Mani Singh"]
-  },
-  {
-    "id": 18,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Wadda Ghallughara",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "Which battle immediately preceded the Wadda Ghallughara, according to the notes?",
-    "options": ["Battle of Chappar Chiri", "Third Battle of Panipat", "Chhota Ghallughara", "Capture of Sirhind"],
-    "answer": 1,
-    "explanation": "The notes state that after the Third Battle of Panipat in 1761, Ahmad Shah Abdali's forces attacked the Sikhs. This attack resulted in the Wadda Ghallughara in February 1762. Chappar Chiri, the Chhota Ghallughara, and the capture of Sirhind belong to other events in the chapter.",
-    "tags": ["History of Punjab", "Wadda Ghallughara"]
-  },
-  {
-    "id": 19,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Wadda Ghallughara",
-    "difficulty": "difficult",
-    "type": "assertion-reason",
-    "question": "Assertion (A): The Wadda Ghallughara is described in the notes as the darkest period in Sikh history.\nReason (R): About 50,000 Sikhs were killed when Ahmad Shah Abdali's forces attacked them.\nChoose the correct answer.",
-    "options": ["Both A and R are true and R is the correct explanation of A", "Both A and R are true but R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
-    "answer": 0,
-    "explanation": "Both the assertion and reason are true. The notes describe the Wadda Ghallughara as the darkest period in Sikh history because Ahmad Shah Abdali's forces killed about 50,000 Sikhs. Therefore, the reason correctly explains the assertion.",
-    "tags": ["History of Punjab", "Wadda Ghallughara"]
-  },
-  {
-    "id": 20,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Revival of the Dal Khalsa",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "Under whose leadership did the Sikhs unite again after Ahmad Shah Abdali's 1748 invasion weakened the Mughal army?",
-    "options": ["Nawab Kapur Singh", "Baba Deep Singh", "Charat Singh", "Sardar Jassa Singh Ahluwalia"],
-    "answer": 3,
-    "explanation": "The notes state that the Sikhs united again under Sardar Jassa Singh Ahluwalia after Ahmad Shah Abdali's 1748 invasion weakened the Mughal army. Nawab Kapur Singh led the Sarbat Khalsa, Baba Deep Singh led the Shaheedan Misl, and Charat Singh is listed with the Sukerchakia Misl. Jassa Singh Ahluwalia was also called Sultan-ul-Qaum.",
-    "tags": ["History of Punjab", "Jassa Singh Ahluwalia", "Dal Khalsa"]
-  },
-  {
-    "id": 21,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Misl system",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which of the following statements about the Misl system is NOT correct?",
-    "options": ["The Dal Khalsa was organised into twelve Misls.", "Only eleven Misls were part of the main confederacy.", "The Phulkian Misl was part of the Dal Khalsa confederacy.", "The Misls were confederate units."],
-    "answer": 2,
-    "explanation": "The source says the Dal Khalsa was organised into twelve Misls, but only eleven formed the main confederacy. It specifically notes that the Phulkian Misl remained independent and was outside the Dal Khalsa confederacy. Therefore, the third option is the NOT-correct statement.",
-    "tags": ["History of Punjab", "Misls", "Dal Khalsa"]
-  },
-  {
-    "id": 22,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Misl system",
-    "difficulty": "moderate",
-    "type": "match",
-    "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Ahluwalia Misl\n2. Bhangi Misl\n3. Kanhaiya Misl\n4. Nakai Misl\n\nList-II\nA. Hira Singh Nakai\nB. Jai Singh Kanhaiya\nC. Jassa Singh Ahluwalia\nD. Chhajja Singh / Hari Singh",
-    "options": ["1-D, 2-C, 3-B, 4-A", "1-C, 2-D, 3-B, 4-A", "1-C, 2-B, 3-D, 4-A", "1-B, 2-D, 3-C, 4-A"],
-    "answer": 1,
-    "explanation": "The notes pair the Ahluwalia Misl with Jassa Singh Ahluwalia, the Bhangi Misl with Chhajja Singh / Hari Singh, the Kanhaiya Misl with Jai Singh Kanhaiya, and the Nakai Misl with Hira Singh Nakai. Thus 1-C, 2-D, 3-B and 4-A is correct. Each other code mismatches at least one leader with a different Misl.",
-    "tags": ["History of Punjab", "Misls"]
-  },
-  {
-    "id": 23,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Misl system",
-    "difficulty": "difficult",
-    "type": "chronology",
-    "question": "Arrange the following in chronological order:\n1. Nadir Shah invaded India.\n2. Chhota Ghallughara.\n3. Ahmad Shah Abdali invaded and weakened the Mughal army.\n4. Wadda Ghallughara.",
-    "options": ["1-3-2-4", "2-1-3-4", "1-2-3-4", "1-2-4-3"],
-    "answer": 2,
-    "explanation": "Nadir Shah invaded in 1739, the Chhota Ghallughara occurred in 1746, Ahmad Shah Abdali's relevant invasion occurred in 1748, and the Wadda Ghallughara took place in 1762. Hence 1-2-3-4 is correct. The notes place the Sikh revival under Jassa Singh Ahluwalia after the 1748 invasion.",
-    "tags": ["History of Punjab", "Ghallugharas", "Dal Khalsa"]
-  },
-  {
-    "id": 24,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Dal Khalsa: territorial expansion",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "After the Wadda Ghallughara, the Sikhs took back lands extending from which river to which river?",
-    "options": ["Rajouri to Amritsar", "Kahnuwan to Kup-Rahira", "Sirhind to Lohgarh", "Indus to Yamuna"],
-    "answer": 3,
-    "explanation": "The notes state that after the Wadda Ghallughara, the Sikhs regrouped and took back lands from the Indus to the Yamuna. The other place pairs occur in different contexts in the chapter and are not stated as the extent of this expansion. The Dal Khalsa later weakened after Jassa Singh Ahluwalia's death in 1783.",
-    "tags": ["History of Punjab", "Dal Khalsa", "Territorial expansion"]
-  }
-]
+{
+  "topic": "Baba Banda Singh Bahadur and the Dal Khalsa",
+  "questions": [
+    {
+      "id": 1,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: early life",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Banda Singh Bahadur was born on which date?",
+      "options": [
+        "27 October 1670",
+        "12 May 1710",
+        "9 June 1716",
+        "February 1762"
+      ],
+      "answer": 0,
+      "explanation": "The notes state that Banda Singh Bahadur was born on 27 October 1670. 12 May 1710 was the date of the Battle of Chappar Chiri, while 9 June 1716 was his execution date. February 1762 is associated with the Wadda Ghallughara.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 2,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: early life",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "What was the original name of Baba Banda Singh Bahadur?",
+      "options": [
+        "Lachhman Dev",
+        "Ajai Singh",
+        "Baj Singh",
+        "Binod Singh"
+      ],
+      "answer": 0,
+      "explanation": "The source identifies Lachhman Dev as the original name of Banda Singh Bahadur. Ajai Singh was his four-year-old son, whereas Baj Singh and Binod Singh were among the five Sikhs in the advisory council. Later in life, Lachhman Dev was known as Madho Das and then as Banda Singh.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 3,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: transformation",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about Banda Singh Bahadur:\n1. As an ascetic, he was known as Madho Das.\n2. Guru Gobind Singh Ji named him Gurbakhsh Singh.\n3. He became famous as Banda Singh.\nWhich of the statements given above are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1, 2 and 3",
+        "1 and 3 only"
+      ],
+      "answer": 2,
+      "explanation": "All three statements are correct according to the notes. Lachhman Dev became Madho Das as an ascetic, Guru Gobind Singh Ji named him Gurbakhsh Singh, and he became famous as Banda Singh. Therefore, every statement listed is supported by the source.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 4,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: meeting with Guru Gobind Singh Ji",
+      "difficulty": "moderate",
+      "type": "assertion-reason",
+      "question": "Assertion (A): Banda Singh took an oath to seek justice against Wazir Khan.\nReason (R): Wazir Khan was the Governor of Sirhind.\nChoose the correct answer.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "explanation": "Both the assertion and reason are true. The notes say Banda Singh vowed to seek justice against Wazir Khan, who was Governor of Sirhind, as well as to avenge the martyrdom of the Guru's sons. The reason identifies Wazir Khan's office but is not the explanation of the oath.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 5,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: symbols of sovereignty",
+      "difficulty": "moderate",
+      "type": "match",
+      "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Nagara and nishan\n2. Five arrows\n3. Binod Singh, Kahan Singh, Baj Singh, Daya Singh and Ram Singh\n\nList-II\nA. Advisory council\nB. Symbols of sovereignty\nC. Representation of divine authority",
+      "options": [
+        "1-B, 2-C, 3-A",
+        "1-C, 2-A, 3-B",
+        "1-A, 2-B, 3-C",
+        "1-B, 2-A, 3-C"
+      ],
+      "answer": 0,
+      "explanation": "Guru Gobind Singh Ji gave a drum and banner as symbols of sovereignty, five arrows representing divine authority, and an advisory council of five Sikhs. Hence 1-B, 2-C and 3-A is correct. The other codes wrongly interchange the meanings of these three grants.",
+      "tags": [
+        "History of Punjab",
+        "Guru Gobind Singh Ji"
+      ]
+    },
+    {
+      "id": 6,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: administration",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "After capturing Sirhind, which fort did Banda Singh make his capital and rename Lohgarh?",
+      "options": [
+        "Rajouri",
+        "Sirhind",
+        "Lohgarh",
+        "Mukhlisgarh"
+      ],
+      "answer": 3,
+      "explanation": "The notes state that Banda Singh made Mukhlisgarh fort his capital and renamed it Lohgarh, meaning 'Fort of Steel'. Rajouri was his birthplace, Sirhind was captured after Chappar Chiri, and Lohgarh was the new name of Mukhlisgarh. This change followed the capture of Sirhind.",
+      "tags": [
+        "History of Punjab",
+        "Lohgarh"
+      ]
+    },
+    {
+      "id": 7,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: administration",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements regarding Banda Singh Bahadur's administration:\n1. His official seals and coins bore the names of Guru Nanak Dev Ji and Guru Gobind Singh Ji.\n2. Persian was retained as the language of administration.\n3. The Zamindari system was abolished and land was given to the tillers.\nWhich of the statements given above are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1, 2 and 3",
+        "1 and 3 only"
+      ],
+      "answer": 2,
+      "explanation": "All three statements are stated in the notes. Banda Singh introduced seals and coins bearing the names of Guru Nanak Dev Ji and Guru Gobind Singh Ji, retained Persian for administration, and abolished the Zamindari system in favour of tillers. Thus the correct option includes statements 1, 2 and 3.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur",
+        "Administration"
+      ]
+    },
+    {
+      "id": 8,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Battle of Chappar Chiri",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Which event is correctly associated with 12 May 1710?",
+      "options": [
+        "Formation of Sarbat Khalsa meetings",
+        "Capture of Banda Singh Bahadur",
+        "Death of Jassa Singh Ahluwalia",
+        "Victory of Banda Singh at Chappar Chiri"
+      ],
+      "answer": 3,
+      "explanation": "On 12 May 1710, Banda Singh won his most important victory at the Battle of Chappar Chiri. Sarbat Khalsa meetings began from 1733, his capture occurred in December 1715, and Jassa Singh Ahluwalia died in 1783. The Chappar Chiri victory led to the capture of Sirhind.",
+      "tags": [
+        "History of Punjab",
+        "Chappar Chiri"
+      ]
+    },
+    {
+      "id": 9,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: martyrdom",
+      "difficulty": "difficult",
+      "type": "chronology",
+      "question": "Arrange the following events in chronological order:\n1. Banda Singh Bahadur was captured.\n2. Battle of Chappar Chiri.\n3. Banda Singh Bahadur was executed.\n4. Birth of Banda Singh Bahadur.",
+      "options": [
+        "4-2-1-3",
+        "4-1-2-3",
+        "2-4-1-3",
+        "4-2-3-1"
+      ],
+      "answer": 0,
+      "explanation": "Banda Singh was born in 1670, fought the Battle of Chappar Chiri in 1710, was captured in December 1715, and was executed in 1716. Therefore 4-2-1-3 is the correct order. The notes identify 9 June 1716 as the date of his execution.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 10,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: martyrdom",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "Banda Singh Bahadur was captured in December 1715 by forces of which Mughal emperor?",
+      "options": [
+        "Zakariya Khan",
+        "Farrukhsiyar",
+        "Yahiya Khan",
+        "Wazir Khan"
+      ],
+      "answer": 1,
+      "explanation": "The notes say that Banda Singh's rule ended when forces of Mughal emperor Farrukhsiyar captured him in December 1715. Zakariya Khan was Governor of Lahore, Yahiya Khan led Mughal forces during the Chhota Ghallughara, and Wazir Khan was Governor of Sirhind. Banda Singh was subsequently taken to Delhi.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur"
+      ]
+    },
+    {
+      "id": 11,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Baba Banda Singh Bahadur: martyrdom",
+      "difficulty": "difficult",
+      "type": "statement",
+      "question": "Consider the following statements about the final days of Banda Singh Bahadur:\n1. He was taken to the tomb of Khwaja Qutb-ud-Din Bakhtiyar Kaki in Delhi.\n2. He was offered a choice between conversion to Islam and death.\n3. His four-year-old son Ajai Singh was killed before his eyes after he refused to convert.\nWhich of the statements given above are correct?",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1, 2 and 3",
+        "1 and 3 only"
+      ],
+      "answer": 2,
+      "explanation": "Each statement is explicitly given in the source notes. Banda Singh was taken to the tomb in Delhi, refused conversion to Islam, and witnessed the killing of his four-year-old son Ajai Singh. He was then executed on 9 June 1716 and became a martyr for the Sikh cause.",
+      "tags": [
+        "History of Punjab",
+        "Baba Banda Singh Bahadur",
+        "Martyrdom"
+      ]
+    },
+    {
+      "id": 12,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sarbat Khalsa",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which of the following statements about the Sarbat Khalsa is NOT correct according to the notes?",
+      "options": [
+        "The meetings began from 1733.",
+        "They were held at Amritsar.",
+        "They focused on the safety and progress of the Sikh community.",
+        "They were held once every year on Baisakhi."
+      ],
+      "answer": 3,
+      "explanation": "The incorrect statement is that the Sarbat Khalsa met once every year on Baisakhi. The notes state that meetings were held twice a year at Amritsar, on Vaisakhi and Diwali, from 1733. Their stated purpose was the safety and progress of the Sikh community.",
+      "tags": [
+        "History of Punjab",
+        "Sarbat Khalsa"
+      ]
+    },
+    {
+      "id": 13,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sarbat Khalsa",
+      "difficulty": "moderate",
+      "type": "assertion-reason",
+      "question": "Assertion (A): Nawab Kapur Singh became the leader of the Sarbat Khalsa.\nReason (R): Zakariya Khan, Governor of Lahore, gave him the title 'Nawab' to win over the Sikhs.\nChoose the correct answer.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "explanation": "Both the assertion and reason are true, but the reason does not explain why Kapur Singh became leader of the Sarbat Khalsa. The notes separately state his leadership and the fact that Zakariya Khan bestowed the title 'Nawab' to win over the Sikhs. Therefore, the correct relationship is that both are true without an explanatory link.",
+      "tags": [
+        "History of Punjab",
+        "Nawab Kapur Singh",
+        "Sarbat Khalsa"
+      ]
+    },
+    {
+      "id": 14,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sikh resistance",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "In 1739, Sikh forces looted the returning army of which invading ruler?",
+      "options": [
+        "Ahmad Shah Abdali",
+        "Nadir Shah",
+        "Farrukhsiyar",
+        "Zakariya Khan"
+      ],
+      "answer": 1,
+      "explanation": "The notes state that Nadir Shah, ruler of Persia (Iran), invaded India in 1739 and Sikh forces looted his army of its plunder while it returned through Punjab. Ahmad Shah Abdali is connected with later invasions and the Wadda Ghallughara. Farrukhsiyar and Zakariya Khan were Mughal figures, not the 1739 Persian invader.",
+      "tags": [
+        "History of Punjab",
+        "Nadir Shah"
+      ]
+    },
+    {
+      "id": 15,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Dal Khalsa: military organisation",
+      "difficulty": "easy",
+      "type": "match",
+      "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Buddha Dal\n2. Taruna Dal\n\nList-II\nA. Young and energetic warriors\nB. Veteran soldiers who trained younger recruits",
+      "options": [
+        "1-A, 2-B",
+        "1-A, 2-A",
+        "1-B, 2-A",
+        "1-B, 2-B"
+      ],
+      "answer": 2,
+      "explanation": "Nawab Kapur Singh divided the Sikh forces into Buddha Dal and Taruna Dal. Buddha Dal consisted of veteran, older soldiers who trained younger recruits, while Taruna Dal consisted of young and energetic warriors. Thus 1-B and 2-A is the correct matching.",
+      "tags": [
+        "History of Punjab",
+        "Dal Khalsa",
+        "Nawab Kapur Singh"
+      ]
+    },
+    {
+      "id": 16,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Chhota Ghallughara",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "The Chhota Ghallughara took place in 1746 at which place?",
+      "options": [
+        "Chappar Chiri",
+        "Sirhind",
+        "Kup-Rahira",
+        "Kahnuwan"
+      ],
+      "answer": 3,
+      "explanation": "According to the notes, the Chhota Ghallughara occurred in 1746 at Kahnuwan, near Gurdaspur. Kup-Rahira near Malerkotla is the site of the Wadda Ghallughara. Chappar Chiri and Sirhind are associated with Banda Singh Bahadur's 1710 campaign.",
+      "tags": [
+        "History of Punjab",
+        "Chhota Ghallughara"
+      ]
+    },
+    {
+      "id": 17,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Chhota Ghallughara",
+      "difficulty": "difficult",
+      "type": "statement",
+      "question": "Consider the following statements regarding the Chhota Ghallughara:\n1. The execution of Bhai Mani Singh in 1738 caused deep resentment among the Sikhs.\n2. Bhai Mani Singh was Head Granthi of Harmandir Sahib.\n3. Mughal forces led by Yahiya Khan killed about 7,000 Sikhs.\nWhich of the statements given above are correct?",
+      "options": [
+        "1, 2 and 3",
+        "2 and 3 only",
+        "1 and 2 only",
+        "1 and 3 only"
+      ],
+      "answer": 0,
+      "explanation": "All three statements are correct in the notes. Bhai Mani Singh, Head Granthi of Harmandir Sahib, was executed by Zakariya Khan in 1738, leading to resentment and growing conflict. During the Chhota Ghallughara, Mughal forces led by Yahiya Khan killed about 7,000 Sikhs.",
+      "tags": [
+        "History of Punjab",
+        "Chhota Ghallughara",
+        "Bhai Mani Singh"
+      ]
+    },
+    {
+      "id": 18,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Wadda Ghallughara",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "Which battle immediately preceded the Wadda Ghallughara, according to the notes?",
+      "options": [
+        "Battle of Chappar Chiri",
+        "Third Battle of Panipat",
+        "Chhota Ghallughara",
+        "Capture of Sirhind"
+      ],
+      "answer": 1,
+      "explanation": "The notes state that after the Third Battle of Panipat in 1761, Ahmad Shah Abdali's forces attacked the Sikhs. This attack resulted in the Wadda Ghallughara in February 1762. Chappar Chiri, the Chhota Ghallughara, and the capture of Sirhind belong to other events in the chapter.",
+      "tags": [
+        "History of Punjab",
+        "Wadda Ghallughara"
+      ]
+    },
+    {
+      "id": 19,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Wadda Ghallughara",
+      "difficulty": "difficult",
+      "type": "assertion-reason",
+      "question": "Assertion (A): The Wadda Ghallughara is described in the notes as the darkest period in Sikh history.\nReason (R): About 50,000 Sikhs were killed when Ahmad Shah Abdali's forces attacked them.\nChoose the correct answer.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 0,
+      "explanation": "Both the assertion and reason are true. The notes describe the Wadda Ghallughara as the darkest period in Sikh history because Ahmad Shah Abdali's forces killed about 50,000 Sikhs. Therefore, the reason correctly explains the assertion.",
+      "tags": [
+        "History of Punjab",
+        "Wadda Ghallughara"
+      ]
+    },
+    {
+      "id": 20,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Revival of the Dal Khalsa",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "Under whose leadership did the Sikhs unite again after Ahmad Shah Abdali's 1748 invasion weakened the Mughal army?",
+      "options": [
+        "Nawab Kapur Singh",
+        "Baba Deep Singh",
+        "Charat Singh",
+        "Sardar Jassa Singh Ahluwalia"
+      ],
+      "answer": 3,
+      "explanation": "The notes state that the Sikhs united again under Sardar Jassa Singh Ahluwalia after Ahmad Shah Abdali's 1748 invasion weakened the Mughal army. Nawab Kapur Singh led the Sarbat Khalsa, Baba Deep Singh led the Shaheedan Misl, and Charat Singh is listed with the Sukerchakia Misl. Jassa Singh Ahluwalia was also called Sultan-ul-Qaum.",
+      "tags": [
+        "History of Punjab",
+        "Jassa Singh Ahluwalia",
+        "Dal Khalsa"
+      ]
+    },
+    {
+      "id": 21,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Misl system",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which of the following statements about the Misl system is NOT correct?",
+      "options": [
+        "The Dal Khalsa was organised into twelve Misls.",
+        "Only eleven Misls were part of the main confederacy.",
+        "The Phulkian Misl was part of the Dal Khalsa confederacy.",
+        "The Misls were confederate units."
+      ],
+      "answer": 2,
+      "explanation": "The source says the Dal Khalsa was organised into twelve Misls, but only eleven formed the main confederacy. It specifically notes that the Phulkian Misl remained independent and was outside the Dal Khalsa confederacy. Therefore, the third option is the NOT-correct statement.",
+      "tags": [
+        "History of Punjab",
+        "Misls",
+        "Dal Khalsa"
+      ]
+    },
+    {
+      "id": 22,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Misl system",
+      "difficulty": "moderate",
+      "type": "match",
+      "question": "Match List-I with List-II and select the correct code:\nList-I\n1. Ahluwalia Misl\n2. Bhangi Misl\n3. Kanhaiya Misl\n4. Nakai Misl\n\nList-II\nA. Hira Singh Nakai\nB. Jai Singh Kanhaiya\nC. Jassa Singh Ahluwalia\nD. Chhajja Singh / Hari Singh",
+      "options": [
+        "1-D, 2-C, 3-B, 4-A",
+        "1-C, 2-D, 3-B, 4-A",
+        "1-C, 2-B, 3-D, 4-A",
+        "1-B, 2-D, 3-C, 4-A"
+      ],
+      "answer": 1,
+      "explanation": "The notes pair the Ahluwalia Misl with Jassa Singh Ahluwalia, the Bhangi Misl with Chhajja Singh / Hari Singh, the Kanhaiya Misl with Jai Singh Kanhaiya, and the Nakai Misl with Hira Singh Nakai. Thus 1-C, 2-D, 3-B and 4-A is correct. Each other code mismatches at least one leader with a different Misl.",
+      "tags": [
+        "History of Punjab",
+        "Misls"
+      ]
+    },
+    {
+      "id": 23,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Misl system",
+      "difficulty": "difficult",
+      "type": "chronology",
+      "question": "Arrange the following in chronological order:\n1. Nadir Shah invaded India.\n2. Chhota Ghallughara.\n3. Ahmad Shah Abdali invaded and weakened the Mughal army.\n4. Wadda Ghallughara.",
+      "options": [
+        "1-3-2-4",
+        "2-1-3-4",
+        "1-2-3-4",
+        "1-2-4-3"
+      ],
+      "answer": 2,
+      "explanation": "Nadir Shah invaded in 1739, the Chhota Ghallughara occurred in 1746, Ahmad Shah Abdali's relevant invasion occurred in 1748, and the Wadda Ghallughara took place in 1762. Hence 1-2-3-4 is correct. The notes place the Sikh revival under Jassa Singh Ahluwalia after the 1748 invasion.",
+      "tags": [
+        "History of Punjab",
+        "Ghallugharas",
+        "Dal Khalsa"
+      ]
+    },
+    {
+      "id": 24,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Dal Khalsa: territorial expansion",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "After the Wadda Ghallughara, the Sikhs took back lands extending from which river to which river?",
+      "options": [
+        "Rajouri to Amritsar",
+        "Kahnuwan to Kup-Rahira",
+        "Sirhind to Lohgarh",
+        "Indus to Yamuna"
+      ],
+      "answer": 3,
+      "explanation": "The notes state that after the Wadda Ghallughara, the Sikhs regrouped and took back lands from the Indus to the Yamuna. The other place pairs occur in different contexts in the chapter and are not stated as the extent of this expansion. The Dal Khalsa later weakened after Jassa Singh Ahluwalia's death in 1783.",
+      "tags": [
+        "History of Punjab",
+        "Dal Khalsa",
+        "Territorial expansion"
+      ]
+    }
+  ]
+}

@@ -1,380 +1,383 @@
-[
-  {
-    "id": 1,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "In the concept of Miri and Piri, what does Miri represent?",
-    "options": [
-      "Spiritual power",
-      "Herbal medicine",
-      "Temporal power",
-      "A preaching mission"
-    ],
-    "answer": 2,
-    "explanation": "The notes define Miri as temporal power. Spiritual power refers to Piri, while herbal medicine and preaching missions are different subjects in the chapter. Guru Hargobind Ji introduced the combined concept of Miri and Piri.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 2,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Rai Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "How many soldiers were in the cavalry maintained by Guru Har Rai Ji?",
-    "options": [
-      "2,000",
-      "2,200",
-      "2,400",
-      "2,600"
-    ],
-    "answer": 1,
-    "explanation": "The notes state that Guru Har Rai Ji maintained a cavalry of 2,200 soldiers. The other three figures do not match the strength recorded in the chapter. He also established three preaching missions.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Rai Ji"
-    ]
-  },
-  {
-    "id": 3,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Krishan Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Which title of Guru Har Krishan Ji means “Child Prophet”?",
-    "options": [
-      "Miri",
-      "Piri",
-      "Bakhshishes",
-      "Bala Pir"
-    ],
-    "answer": 3,
-    "explanation": "Guru Har Krishan Ji is given the title Bala Pir, meaning Child Prophet. Miri and Piri refer to temporal and spiritual power, while Bakhshishes refers to preaching missions. The notes identify Guru Har Krishan Ji as the eighth Sikh Guru.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Krishan Ji"
-    ]
-  },
-  {
-    "id": 4,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Which pair correctly identifies the parents of Guru Hargobind Ji?",
-    "options": [
-      "Guru Arjan Dev Ji and Mata Ganga Ji",
-      "Baba Gurditta Ji and Mata Nihal Kaur Ji",
-      "Guru Har Rai Ji and Mata Kishan Kaur Ji",
-      "Guru Arjan Dev Ji and Mata Kishan Kaur Ji"
-    ],
-    "answer": 0,
-    "explanation": "The notes name Guru Arjan Dev Ji and Mata Ganga Ji as the parents of Guru Hargobind Ji. The second pair belongs to Guru Har Rai Ji, the third to Guru Har Krishan Ji, and the fourth incorrectly substitutes Mata Kishan Kaur Ji for Mata Ganga Ji. Guru Hargobind Ji was born at Guru Ki Wadali near Amritsar.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 5,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Rai Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "In which year was Guru Har Rai Ji born?",
-    "options": [
-      "1595",
-      "1606",
-      "1630",
-      "1656"
-    ],
-    "answer": 2,
-    "explanation": "Guru Har Rai Ji was born on 16 January 1630. The year 1595 belongs to Guru Hargobind Ji’s birth, 1606 marks the beginning of his Guruship, and 1656 belongs to Guru Har Krishan Ji’s birth. Guru Har Rai Ji’s birthplace was Kiratpur Sahib.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Rai Ji"
-    ]
-  },
-  {
-    "id": 6,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "Where is Guru Ki Maseet, mentioned among Guru Hargobind Ji’s constructions, located?",
-    "options": [
-      "Amritsar",
-      "Sri Hargobindpur",
-      "Kiratpur Sahib",
-      "Delhi"
-    ],
-    "answer": 1,
-    "explanation": "The notes locate Guru Ki Maseet at Sri Hargobindpur. Amritsar is linked to Lohgarh Fort, Kiratpur Sahib to the city founded by Guru Hargobind Ji, and Delhi to Guru Har Krishan Ji’s stay. Guru Ki Maseet was a mosque built for Muslims.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 7,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Krishan Ji",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "What was the birthplace of Guru Har Krishan Ji?",
-    "options": [
-      "Kiratpur Sahib",
-      "Guru Ki Wadali",
-      "Sri Hargobindpur",
-      "Delhi"
-    ],
-    "answer": 0,
-    "explanation": "Guru Har Krishan Ji was born at Kiratpur Sahib. Guru Ki Wadali was Guru Hargobind Ji’s birthplace, Sri Hargobindpur is associated with Guru Ki Maseet, and Delhi was where Guru Har Krishan Ji attained Jyoti Jot. His birth date was 7 July 1656.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Krishan Ji"
-    ]
-  },
-  {
-    "id": 8,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about Guru Hargobind Ji:\n1. His Guruship lasted 38 years.\n2. The notes describe his Guruship as the longest.\nWhich of the above is/are correct?",
-    "options": [
-      "Neither 1 nor 2",
-      "1 only",
-      "2 only",
-      "Both 1 and 2"
-    ],
-    "answer": 3,
-    "explanation": "Statement 1 is correct because the notes give the duration as 38 years. Statement 2 is also correct because the same entry describes it as the longest Guruship. The period recorded is 1606–1644.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 9,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Rai Ji",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about Guru Har Rai Ji:\n1. His father was Baba Gurditta Ji.\n2. His mother was Mata Nihal Kaur (Ananti) Ji.\nWhich of the above is/are correct?",
-    "options": [
-      "Both 1 and 2",
-      "1 only",
-      "Neither 1 nor 2",
-      "2 only"
-    ],
-    "answer": 0,
-    "explanation": "Statement 1 is correct: Baba Gurditta Ji is named as Guru Har Rai Ji’s father. Statement 2 is correct: Mata Nihal Kaur, also named Ananti, is recorded as his mother. The notes name Mata Kishan Kaur (Sulakhani) Ji as his wife.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Rai Ji"
-    ]
-  },
-  {
-    "id": 10,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Krishan Ji",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about Guru Har Krishan Ji:\n1. His Guruship lasted about three years.\n2. His Guruship was the longest.\nWhich of the above is/are correct?",
-    "options": [
-      "Both 1 and 2",
-      "2 only",
-      "1 only",
-      "Neither 1 nor 2"
-    ],
-    "answer": 2,
-    "explanation": "Statement 1 is correct because the notes give his Guruship as about three years. Statement 2 is incorrect because it is described as the shortest, not the longest. The recorded period is 1661–1664.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Krishan Ji"
-    ]
-  },
-  {
-    "id": 11,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about the prisoners whose release is commemorated on Bandi Chhor Diwas:\n1. They numbered 52.\n2. They were hill kings.\nWhich of the above is/are correct?",
-    "options": [
-      "Both 1 and 2",
-      "2 only",
-      "1 only",
-      "Neither 1 nor 2"
-    ],
-    "answer": 0,
-    "explanation": "Statement 1 is correct because the notes record the release of 52 prisoners. Statement 2 is correct because those prisoners are identified as hill kings. Guru Hargobind Ji secured their release along with himself and returned to Harmandir Sahib.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 12,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which statement about Akal Takht is NOT correct according to the notes?",
-    "options": [
-      "Its name means “Eternal Throne”.",
-      "It stands in front of Harmandir Sahib.",
-      "It was built by Guru Hargobind Ji.",
-      "It was the herbal dispensary established by Guru Har Rai Ji."
-    ],
-    "answer": 3,
-    "explanation": "The fourth statement is incorrect because the herbal dispensary is a separate contribution of Guru Har Rai Ji. The first statement correctly gives the meaning Eternal Throne. The second and third statements correctly describe its position and its builder. The notes date the construction of Akal Takht to 1606.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 13,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Har Rai Ji",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which statement about Phul is NOT supported by the notes?",
-    "options": [
-      "He received Guru Har Rai Ji’s blessing as a child.",
-      "His descendants founded Patiala state.",
-      "He personally founded all three states: Patiala, Nabha and Jind.",
-      "His descendants founded Nabha and Jind states."
-    ],
-    "answer": 2,
-    "explanation": "The third statement is incorrect because the notes attribute the founding of the three states to Phul’s descendants. The first statement correctly records Guru Har Rai Ji’s blessing to the child Phul. The second and fourth statements correctly express the connection between his descendants and the states. The same section also records Dara Shikoh’s visit to seek Guru Har Rai Ji’s blessings.",
-    "tags": [
-      "History of Punjab",
-      "Guru Har Rai Ji"
-    ]
-  },
-  {
-    "id": 14,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sikh Gurus: Sixth to Eighth",
-    "difficulty": "difficult",
-    "type": "match",
-    "question": "Match List I with List II.\nList I (Guru): A. Guru Hargobind Ji; B. Guru Har Rai Ji; C. Guru Har Krishan Ji.\nList II (Position among Sikh Gurus): 1. Eighth; 2. Sixth; 3. Seventh.\nSelect the correct code.",
-    "options": [
-      "A–1, B–2, C–3",
-      "A–2, B–3, C–1",
-      "A–3, B–1, C–2",
-      "A–2, B–1, C–3"
-    ],
-    "answer": 1,
-    "explanation": "A matches 2 because Guru Hargobind Ji was the sixth Sikh Guru. B matches 3 because Guru Har Rai Ji was the seventh Sikh Guru. C matches 1 because Guru Har Krishan Ji was the eighth Sikh Guru. The chapter presents these three Gurus together as Gurus six to eight. Guru Har Krishan Ji was born on 7 July 1656.",
-    "tags": [
-      "History of Punjab",
-      "Sikh Gurus: Sixth to Eighth"
-    ]
-  },
-  {
-    "id": 15,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sikh Gurus: Sixth to Eighth",
-    "difficulty": "difficult",
-    "type": "match",
-    "question": "Match List I with List II.\nList I: A. City founded by Guru Hargobind Ji; B. Guru Har Rai Ji’s preaching missions; C. Present shrine at the haveli where Guru Har Krishan Ji stayed in Delhi.\nList II: 1. Bakhshishes; 2. Gurdwara Bangla Sahib; 3. Kiratpur Sahib.\nSelect the correct code.",
-    "options": [
-      "A–3, B–1, C–2",
-      "A–1, B–3, C–2",
-      "A–2, B–1, C–3",
-      "A–3, B–2, C–1"
-    ],
-    "answer": 0,
-    "explanation": "A matches 3 because Guru Hargobind Ji founded Kiratpur Sahib. B matches 1 because Guru Har Rai Ji’s preaching missions are called Bakhshishes. C matches 2 because the haveli associated with Guru Har Krishan Ji’s Delhi stay is now Gurdwara Bangla Sahib. The notes place Kiratpur Sahib in Rupnagar.",
-    "tags": [
-      "History of Punjab",
-      "Sikh Gurus: Sixth to Eighth"
-    ]
-  },
-  {
-    "id": 16,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sikh Gurus: Sixth to Eighth",
-    "difficulty": "difficult",
-    "type": "chronology",
-    "question": "Arrange the following accessions to the Guruship from earliest to latest:\nA. Guru Har Rai Ji\nB. Guru Har Krishan Ji\nC. Guru Hargobind Ji",
-    "options": [
-      "A → C → B",
-      "B → A → C",
-      "C → B → A",
-      "C → A → B"
-    ],
-    "answer": 3,
-    "explanation": "Guru Hargobind Ji’s Guruship began in 1606, so C comes first. Guru Har Rai Ji’s Guruship began in 1644, placing A second. Guru Har Krishan Ji’s Guruship began in 1661, placing B last. Thus the correct order is C → A → B; Guru Har Rai Ji’s Guruship lasted 17 years.",
-    "tags": [
-      "History of Punjab",
-      "Sikh Gurus: Sixth to Eighth"
-    ]
-  },
-  {
-    "id": 17,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Hargobind Ji",
-    "difficulty": "difficult",
-    "type": "assertion-reason",
-    "question": "Assertion (A): Guru Hargobind Ji kept 52 soldiers as personal bodyguards.\nReason (R): The fort associated with his release on Bandi Chhor Diwas was Gwalior Fort.\nSelect the correct option.",
-    "options": [
-      "Both A and R are true and R is the correct explanation of A",
-      "Both A and R are true but R is not the correct explanation of A",
-      "A is true but R is false",
-      "A is false but R is true"
-    ],
-    "answer": 1,
-    "explanation": "A is true because the notes record 52 soldiers as Guru Hargobind Ji’s personal bodyguards. R is also true because Gwalior Fort is the fort named in the release account. The location of that release does not explain the number of personal bodyguards, so R is not the correct explanation of A. The release account also records Guru Ji’s return to Harmandir Sahib.",
-    "tags": [
-      "History of Punjab",
-      "Guru Hargobind Ji"
-    ]
-  },
-  {
-    "id": 18,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Sikh Gurus: Sixth to Eighth",
-    "difficulty": "moderate",
-    "type": "assertion-reason",
-    "question": "Assertion (A): Guru Hargobind Ji attained Jyoti Jot at Kiratpur Sahib.\nReason (R): Guru Har Rai Ji also attained Jyoti Jot at Kiratpur Sahib.\nSelect the correct option.",
-    "options": [
-      "Both A and R are true and R is the correct explanation of A",
-      "Both A and R are true but R is not the correct explanation of A",
-      "A is true but R is false",
-      "A is false but R is true"
-    ],
-    "answer": 1,
-    "explanation": "A is true because the notes give Kiratpur Sahib as the place where Guru Hargobind Ji attained Jyoti Jot. R is also true because the same place is recorded for Guru Har Rai Ji. These are two separate biographical facts, so R does not explain A. Their respective Jyoti Jot years were 1644 and 1661.",
-    "tags": [
-      "History of Punjab",
-      "Sikh Gurus: Sixth to Eighth"
-    ]
-  }
-]
+{
+  "topic": "Guru Hargobind Ji, Har Rai Ji & Har Krishan Ji",
+  "questions": [
+    {
+      "id": 1,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "In the concept of Miri and Piri, what does Miri represent?",
+      "options": [
+        "Spiritual power",
+        "Herbal medicine",
+        "Temporal power",
+        "A preaching mission"
+      ],
+      "answer": 2,
+      "explanation": "The notes define Miri as temporal power. Spiritual power refers to Piri, while herbal medicine and preaching missions are different subjects in the chapter. Guru Hargobind Ji introduced the combined concept of Miri and Piri.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 2,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Rai Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "How many soldiers were in the cavalry maintained by Guru Har Rai Ji?",
+      "options": [
+        "2,000",
+        "2,200",
+        "2,400",
+        "2,600"
+      ],
+      "answer": 1,
+      "explanation": "The notes state that Guru Har Rai Ji maintained a cavalry of 2,200 soldiers. The other three figures do not match the strength recorded in the chapter. He also established three preaching missions.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Rai Ji"
+      ]
+    },
+    {
+      "id": 3,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Krishan Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Which title of Guru Har Krishan Ji means “Child Prophet”?",
+      "options": [
+        "Miri",
+        "Piri",
+        "Bakhshishes",
+        "Bala Pir"
+      ],
+      "answer": 3,
+      "explanation": "Guru Har Krishan Ji is given the title Bala Pir, meaning Child Prophet. Miri and Piri refer to temporal and spiritual power, while Bakhshishes refers to preaching missions. The notes identify Guru Har Krishan Ji as the eighth Sikh Guru.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Krishan Ji"
+      ]
+    },
+    {
+      "id": 4,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Which pair correctly identifies the parents of Guru Hargobind Ji?",
+      "options": [
+        "Guru Arjan Dev Ji and Mata Ganga Ji",
+        "Baba Gurditta Ji and Mata Nihal Kaur Ji",
+        "Guru Har Rai Ji and Mata Kishan Kaur Ji",
+        "Guru Arjan Dev Ji and Mata Kishan Kaur Ji"
+      ],
+      "answer": 0,
+      "explanation": "The notes name Guru Arjan Dev Ji and Mata Ganga Ji as the parents of Guru Hargobind Ji. The second pair belongs to Guru Har Rai Ji, the third to Guru Har Krishan Ji, and the fourth incorrectly substitutes Mata Kishan Kaur Ji for Mata Ganga Ji. Guru Hargobind Ji was born at Guru Ki Wadali near Amritsar.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 5,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Rai Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "In which year was Guru Har Rai Ji born?",
+      "options": [
+        "1595",
+        "1606",
+        "1630",
+        "1656"
+      ],
+      "answer": 2,
+      "explanation": "Guru Har Rai Ji was born on 16 January 1630. The year 1595 belongs to Guru Hargobind Ji’s birth, 1606 marks the beginning of his Guruship, and 1656 belongs to Guru Har Krishan Ji’s birth. Guru Har Rai Ji’s birthplace was Kiratpur Sahib.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Rai Ji"
+      ]
+    },
+    {
+      "id": 6,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "Where is Guru Ki Maseet, mentioned among Guru Hargobind Ji’s constructions, located?",
+      "options": [
+        "Amritsar",
+        "Sri Hargobindpur",
+        "Kiratpur Sahib",
+        "Delhi"
+      ],
+      "answer": 1,
+      "explanation": "The notes locate Guru Ki Maseet at Sri Hargobindpur. Amritsar is linked to Lohgarh Fort, Kiratpur Sahib to the city founded by Guru Hargobind Ji, and Delhi to Guru Har Krishan Ji’s stay. Guru Ki Maseet was a mosque built for Muslims.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 7,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Krishan Ji",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "What was the birthplace of Guru Har Krishan Ji?",
+      "options": [
+        "Kiratpur Sahib",
+        "Guru Ki Wadali",
+        "Sri Hargobindpur",
+        "Delhi"
+      ],
+      "answer": 0,
+      "explanation": "Guru Har Krishan Ji was born at Kiratpur Sahib. Guru Ki Wadali was Guru Hargobind Ji’s birthplace, Sri Hargobindpur is associated with Guru Ki Maseet, and Delhi was where Guru Har Krishan Ji attained Jyoti Jot. His birth date was 7 July 1656.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Krishan Ji"
+      ]
+    },
+    {
+      "id": 8,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about Guru Hargobind Ji:\n1. His Guruship lasted 38 years.\n2. The notes describe his Guruship as the longest.\nWhich of the above is/are correct?",
+      "options": [
+        "Neither 1 nor 2",
+        "1 only",
+        "2 only",
+        "Both 1 and 2"
+      ],
+      "answer": 3,
+      "explanation": "Statement 1 is correct because the notes give the duration as 38 years. Statement 2 is also correct because the same entry describes it as the longest Guruship. The period recorded is 1606–1644.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 9,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Rai Ji",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about Guru Har Rai Ji:\n1. His father was Baba Gurditta Ji.\n2. His mother was Mata Nihal Kaur (Ananti) Ji.\nWhich of the above is/are correct?",
+      "options": [
+        "Both 1 and 2",
+        "1 only",
+        "Neither 1 nor 2",
+        "2 only"
+      ],
+      "answer": 0,
+      "explanation": "Statement 1 is correct: Baba Gurditta Ji is named as Guru Har Rai Ji’s father. Statement 2 is correct: Mata Nihal Kaur, also named Ananti, is recorded as his mother. The notes name Mata Kishan Kaur (Sulakhani) Ji as his wife.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Rai Ji"
+      ]
+    },
+    {
+      "id": 10,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Krishan Ji",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about Guru Har Krishan Ji:\n1. His Guruship lasted about three years.\n2. His Guruship was the longest.\nWhich of the above is/are correct?",
+      "options": [
+        "Both 1 and 2",
+        "2 only",
+        "1 only",
+        "Neither 1 nor 2"
+      ],
+      "answer": 2,
+      "explanation": "Statement 1 is correct because the notes give his Guruship as about three years. Statement 2 is incorrect because it is described as the shortest, not the longest. The recorded period is 1661–1664.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Krishan Ji"
+      ]
+    },
+    {
+      "id": 11,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about the prisoners whose release is commemorated on Bandi Chhor Diwas:\n1. They numbered 52.\n2. They were hill kings.\nWhich of the above is/are correct?",
+      "options": [
+        "Both 1 and 2",
+        "2 only",
+        "1 only",
+        "Neither 1 nor 2"
+      ],
+      "answer": 0,
+      "explanation": "Statement 1 is correct because the notes record the release of 52 prisoners. Statement 2 is correct because those prisoners are identified as hill kings. Guru Hargobind Ji secured their release along with himself and returned to Harmandir Sahib.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 12,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which statement about Akal Takht is NOT correct according to the notes?",
+      "options": [
+        "Its name means “Eternal Throne”.",
+        "It stands in front of Harmandir Sahib.",
+        "It was built by Guru Hargobind Ji.",
+        "It was the herbal dispensary established by Guru Har Rai Ji."
+      ],
+      "answer": 3,
+      "explanation": "The fourth statement is incorrect because the herbal dispensary is a separate contribution of Guru Har Rai Ji. The first statement correctly gives the meaning Eternal Throne. The second and third statements correctly describe its position and its builder. The notes date the construction of Akal Takht to 1606.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 13,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Har Rai Ji",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which statement about Phul is NOT supported by the notes?",
+      "options": [
+        "He received Guru Har Rai Ji’s blessing as a child.",
+        "His descendants founded Patiala state.",
+        "He personally founded all three states: Patiala, Nabha and Jind.",
+        "His descendants founded Nabha and Jind states."
+      ],
+      "answer": 2,
+      "explanation": "The third statement is incorrect because the notes attribute the founding of the three states to Phul’s descendants. The first statement correctly records Guru Har Rai Ji’s blessing to the child Phul. The second and fourth statements correctly express the connection between his descendants and the states. The same section also records Dara Shikoh’s visit to seek Guru Har Rai Ji’s blessings.",
+      "tags": [
+        "History of Punjab",
+        "Guru Har Rai Ji"
+      ]
+    },
+    {
+      "id": 14,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sikh Gurus: Sixth to Eighth",
+      "difficulty": "difficult",
+      "type": "match",
+      "question": "Match List I with List II.\nList I (Guru): A. Guru Hargobind Ji; B. Guru Har Rai Ji; C. Guru Har Krishan Ji.\nList II (Position among Sikh Gurus): 1. Eighth; 2. Sixth; 3. Seventh.\nSelect the correct code.",
+      "options": [
+        "A–1, B–2, C–3",
+        "A–2, B–3, C–1",
+        "A–3, B–1, C–2",
+        "A–2, B–1, C–3"
+      ],
+      "answer": 1,
+      "explanation": "A matches 2 because Guru Hargobind Ji was the sixth Sikh Guru. B matches 3 because Guru Har Rai Ji was the seventh Sikh Guru. C matches 1 because Guru Har Krishan Ji was the eighth Sikh Guru. The chapter presents these three Gurus together as Gurus six to eight. Guru Har Krishan Ji was born on 7 July 1656.",
+      "tags": [
+        "History of Punjab",
+        "Sikh Gurus: Sixth to Eighth"
+      ]
+    },
+    {
+      "id": 15,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sikh Gurus: Sixth to Eighth",
+      "difficulty": "difficult",
+      "type": "match",
+      "question": "Match List I with List II.\nList I: A. City founded by Guru Hargobind Ji; B. Guru Har Rai Ji’s preaching missions; C. Present shrine at the haveli where Guru Har Krishan Ji stayed in Delhi.\nList II: 1. Bakhshishes; 2. Gurdwara Bangla Sahib; 3. Kiratpur Sahib.\nSelect the correct code.",
+      "options": [
+        "A–3, B–1, C–2",
+        "A–1, B–3, C–2",
+        "A–2, B–1, C–3",
+        "A–3, B–2, C–1"
+      ],
+      "answer": 0,
+      "explanation": "A matches 3 because Guru Hargobind Ji founded Kiratpur Sahib. B matches 1 because Guru Har Rai Ji’s preaching missions are called Bakhshishes. C matches 2 because the haveli associated with Guru Har Krishan Ji’s Delhi stay is now Gurdwara Bangla Sahib. The notes place Kiratpur Sahib in Rupnagar.",
+      "tags": [
+        "History of Punjab",
+        "Sikh Gurus: Sixth to Eighth"
+      ]
+    },
+    {
+      "id": 16,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sikh Gurus: Sixth to Eighth",
+      "difficulty": "difficult",
+      "type": "chronology",
+      "question": "Arrange the following accessions to the Guruship from earliest to latest:\nA. Guru Har Rai Ji\nB. Guru Har Krishan Ji\nC. Guru Hargobind Ji",
+      "options": [
+        "A → C → B",
+        "B → A → C",
+        "C → B → A",
+        "C → A → B"
+      ],
+      "answer": 3,
+      "explanation": "Guru Hargobind Ji’s Guruship began in 1606, so C comes first. Guru Har Rai Ji’s Guruship began in 1644, placing A second. Guru Har Krishan Ji’s Guruship began in 1661, placing B last. Thus the correct order is C → A → B; Guru Har Rai Ji’s Guruship lasted 17 years.",
+      "tags": [
+        "History of Punjab",
+        "Sikh Gurus: Sixth to Eighth"
+      ]
+    },
+    {
+      "id": 17,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Hargobind Ji",
+      "difficulty": "difficult",
+      "type": "assertion-reason",
+      "question": "Assertion (A): Guru Hargobind Ji kept 52 soldiers as personal bodyguards.\nReason (R): The fort associated with his release on Bandi Chhor Diwas was Gwalior Fort.\nSelect the correct option.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "explanation": "A is true because the notes record 52 soldiers as Guru Hargobind Ji’s personal bodyguards. R is also true because Gwalior Fort is the fort named in the release account. The location of that release does not explain the number of personal bodyguards, so R is not the correct explanation of A. The release account also records Guru Ji’s return to Harmandir Sahib.",
+      "tags": [
+        "History of Punjab",
+        "Guru Hargobind Ji"
+      ]
+    },
+    {
+      "id": 18,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Sikh Gurus: Sixth to Eighth",
+      "difficulty": "moderate",
+      "type": "assertion-reason",
+      "question": "Assertion (A): Guru Hargobind Ji attained Jyoti Jot at Kiratpur Sahib.\nReason (R): Guru Har Rai Ji also attained Jyoti Jot at Kiratpur Sahib.\nSelect the correct option.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "explanation": "A is true because the notes give Kiratpur Sahib as the place where Guru Hargobind Ji attained Jyoti Jot. R is also true because the same place is recorded for Guru Har Rai Ji. These are two separate biographical facts, so R does not explain A. Their respective Jyoti Jot years were 1644 and 1661.",
+      "tags": [
+        "History of Punjab",
+        "Sikh Gurus: Sixth to Eighth"
+      ]
+    }
+  ]
+}

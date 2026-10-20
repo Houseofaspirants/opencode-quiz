@@ -5336,6 +5336,61 @@ def ca_section_page(page):
     return html
 
 
+# Study-material records of this run, for the hubs whose own folder is still
+# empty (main() fills it before the hubs render).
+STUDY_RECORDS = []
+
+
+def hub_fallback(coll, index):
+    """What an empty hub shows instead of "nothing published yet" when the
+    thing it names already lives elsewhere on the site: the Expected MCQs nav
+    item opens on the live MCQ sets, Free PDFs and Study Notes on the study
+    material. Empty string when there is nothing real to show either."""
+    if coll == "expected-mcqs":
+        sets = [(s, t) for s in index.get("subjects", [])
+                for t in s.get("topics", []) if t.get("available")]
+        if not sets:
+            return ""
+        sets.sort(key=lambda st: st[1].get("updatedAt") or 0, reverse=True)
+        subj = [s for s in index.get("subjects", [])
+                if any(t.get("available") for t in s.get("topics", []))]
+        chips = "".join(
+            f'<a class="btn btn-sm btn-soft" href="subject.html?subject={esc(s["id"])}">'
+            f'{s.get("icon", "")} {esc(s["name"])} · '
+            f'{sum(1 for t in s["topics"] if t.get("available"))}</a>' for s in subj)
+        cards = "".join(
+            f'<a class="card card-pad reveal" href="{esc(quiz_href(t) if t.get("landing") else "quiz.html?subject=" + s["id"] + "&topic=" + t["id"])}">'
+            f'<span class="eyebrow">{esc(s["name"])} · {t.get("count", 0)} MCQs'
+            f'{" · ਪੰਜਾਬੀ + English" if "pa" in (t.get("variants") or {}) else ""}</span>'
+            f'<h3>{esc(t.get("name", ""))}</h3>'
+            f'<p class="ilink">Attempt the set →</p></a>' for s, t in sets[:24])
+        return f"""<div class="section-head reveal"><div>
+            <span class="eyebrow">Live now · {len(sets)} sets</span>
+            <h2>Expected MCQ sets by subject</h2>
+            <p>Topic-wise sets in the pattern Punjab exams ask, each with an explanation behind every answer. Newest first.</p>
+          </div></div>
+          <div class="btn-row reveal" style="margin-bottom:18px">{chips}</div>
+          <div class="grid grid-3">{cards}</div>"""
+    if coll in ("pdfs", "notes") and STUDY_RECORDS:
+        recs = sorted(STUDY_RECORDS, key=lambda r: str(r.get("published", "")),
+                      reverse=True)
+        if coll == "pdfs":
+            recs = [r for r in recs if str(r.get("type") or "") == "pdf"]
+        if not recs:
+            return ""
+        what = "PDF" if coll == "pdfs" else "chapter"
+        extra = ('<a class="btn btn-soft" href="previous-year-questions.html">Previous year papers (PDF)</a>'
+                 if coll == "pdfs" else "")
+        return f"""<div class="section-head reveal"><div>
+            <span class="eyebrow">{len(recs)} {what}s · Punjabi &amp; English</span>
+            <h2>{"Study material PDFs" if coll == "pdfs" else "Chapter-wise study notes"}</h2>
+            <p>Read online or download - newest first.</p>
+          </div>
+          <div class="btn-row"><a class="btn btn-soft" href="study-material.html">All study material</a>{extra}</div></div>
+          <div class="grid grid-3">{"".join(study_card(r) for r in recs[:30])}</div>"""
+    return ""
+
+
 def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
     hub = HUBS[coll]
     url = f"{DOMAIN}/{hub['file'][:-5]}"
@@ -5412,6 +5467,8 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
           {folder_html}
           {filter_bar(bar_facets, {"category": "Subject"} if coll == STUDY_DIR else None)}
           <div class="grid grid-3" data-filter-list>{hub_cards(coll, live, index, facets=facets)}</div>"""
+    elif hub_fallback(coll, index):
+        head_html = hub_fallback(coll, index)
     else:
         cta_href, cta_text = hub["empty_cta"]
         head_html = f"""<div class="section-head reveal"><div>
@@ -7356,6 +7413,7 @@ def main():
 
     # ---- hubs -------------------------------------------------------------
     hubs_out = []
+    STUDY_RECORDS[:] = all_records[STUDY_DIR] + punjabi[STUDY_DIR]
     for coll, cfg in HUBS.items():
         pool = all_records[coll] + punjabi[coll]
         html_out, live = hub_page(coll, cfg, pool, index, exams, pyq_exams,

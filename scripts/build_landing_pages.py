@@ -1857,7 +1857,8 @@ def build_quiz(s, c, t):
     diff = difficulty_label(qs)
 
     title = fit_title(f"{name} Quiz ({count} MCQs) - Free Online Test",
-                      f"{name} Quiz - Free MCQs", trim_suffix=" Quiz")
+                      f"{name} Quiz - Free MCQs" if len(f"{name} Quiz - Free MCQs") <= 60
+                      else f"{name} Quiz", trim_suffix=" Quiz")
     description = fit_desc(
         f"Practise {name} online: {count} MCQs in about {est}, instant scoring, question "
         f"palette and a full answer review. Free topic quiz for Punjab exam preparation.")

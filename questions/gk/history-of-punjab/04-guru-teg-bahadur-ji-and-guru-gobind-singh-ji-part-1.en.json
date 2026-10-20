@@ -1,422 +1,425 @@
-[
-  {
-    "id": 1,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Teg Bahadur Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Which title is associated with Guru Teg Bahadur Ji in the notes?",
-    "options": [
-      "Guru Ki Kashi",
-      "Hind Di Chadar",
-      "Chali Mukte",
-      "Panj Pyare"
-    ],
-    "answer": 1,
-    "explanation": "Guru Teg Bahadur Ji is identified as Hind Di Chadar, meaning Shield of India. Guru Ki Kashi is a name for Damdama Sahib, while Chali Mukte refers to the forty Sikhs associated with Khidrana. Panj Pyare refers to the Five Beloved Ones, and the chapter identifies Guru Teg Bahadur Ji as the ninth Sikh Guru.",
-    "tags": [
-      "History of Punjab",
-      "Guru Teg Bahadur Ji"
-    ]
-  },
-  {
-    "id": 2,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guru Gobind Singh Ji",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Where was Guru Gobind Singh Ji born?",
-    "options": [
-      "Amritsar",
-      "Anandpur Sahib",
-      "Patna",
-      "Nanded"
-    ],
-    "answer": 2,
-    "explanation": "Guru Gobind Singh Ji was born at Patna in Bihar. Amritsar is listed as the birthplace of Guru Teg Bahadur Ji, Anandpur Sahib is associated with the creation of the Khalsa, and Nanded with Guru Gobind Singh Ji’s Jyoti Jot. The notes identify Guru Gobind Singh Ji as the tenth Sikh Guru.",
-    "tags": [
-      "History of Punjab",
-      "Guru Gobind Singh Ji"
-    ]
-  },
-  {
-    "id": 3,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Recognition at Baba Bakala",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Who recognised Guru Teg Bahadur Ji at Baba Bakala and persuaded him to accept Sikh leadership?",
-    "options": [
-      "Makhan Shah Lubana",
-      "Lakhi Shah Lubana",
-      "Bhai Jaita Ji",
-      "Chaudhary Dalla"
-    ],
-    "answer": 0,
-    "explanation": "The notes assign this role to Makhan Shah Lubana. Lakhi Shah Lubana cremated Guru Ji’s body, Bhai Jaita Ji carried the sacred head, and Chaudhary Dalla invited Guru Gobind Singh Ji to Talwandi Sabo. Baba Bakala is therefore associated with the recognition of Guru Teg Bahadur Ji in this chapter.",
-    "tags": [
-      "History of Punjab",
-      "Recognition at Baba Bakala"
-    ]
-  },
-  {
-    "id": 4,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Creation of the Khalsa",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "In which year did Guru Gobind Singh Ji establish the Khalsa Panth?",
-    "options": [
-      "1666",
-      "1675",
-      "1688",
-      "1699"
-    ],
-    "answer": 3,
-    "explanation": "The notes place the establishment of the Khalsa Panth in 1699. The other years refer to Guru Gobind Singh Ji’s birth, the beginning of his Guruship, and the Battle of Bhangani respectively. The chapter connects the founding of the Khalsa with Vaisakhi.",
-    "tags": [
-      "History of Punjab",
-      "Creation of the Khalsa"
-    ]
-  },
-  {
-    "id": 5,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Literary compositions",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "Which composition is described as Guru Gobind Singh Ji’s autobiography?",
-    "options": [
-      "Akal Ustat",
-      "Bachittar Natak",
-      "Chandi Charitra",
-      "Chaubis Avtar"
-    ],
-    "answer": 1,
-    "explanation": "Bachittar Natak is explicitly labelled an autobiography in the notes. Akal Ustat, Chandi Charitra and Chaubis Avtar are also listed as compositions, but they are not given that description. The same list includes Var Sri Bhagauti Ji Ki, also called Chandi di Var, as a Punjabi composition.",
-    "tags": [
-      "History of Punjab",
-      "Literary compositions"
-    ]
-  },
-  {
-    "id": 6,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Nanded",
-    "difficulty": "moderate",
-    "type": "direct",
-    "question": "On which river is Nanded situated, according to the notes?",
-    "options": [
-      "Godavari",
-      "Sutlej",
-      "Beas",
-      "Ravi"
-    ],
-    "answer": 0,
-    "explanation": "The notes place Nanded on the Godavari river. Sutlej, Beas and Ravi do not match the river named for Nanded in the source. Sachkhand Sri Hazur Sahib at Nanded is associated with Guru Gobind Singh Ji’s Jyoti Jot.",
-    "tags": [
-      "History of Punjab",
-      "Nanded"
-    ]
-  },
-  {
-    "id": 7,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Institutional changes",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Which system did Guru Gobind Singh Ji abolish?",
-    "options": [
-      "Panj Pyare institution",
-      "Khalsa Panth",
-      "Masand system",
-      "Khande di Pahul"
-    ],
-    "answer": 2,
-    "explanation": "The notes explicitly state that Guru Gobind Singh Ji abolished the Masand system. The other options are institutions or practices linked to the creation of the Khalsa, rather than the system identified as abolished. The Panj Pyare are described as a democratic institution.",
-    "tags": [
-      "History of Punjab",
-      "Institutional changes"
-    ]
-  },
-  {
-    "id": 8,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Care of the sacred head",
-    "difficulty": "easy",
-    "type": "direct",
-    "question": "Who carried Guru Teg Bahadur Ji’s sacred head after his martyrdom?",
-    "options": [
-      "Bhai Mani Singh",
-      "Bhai Daya Singh",
-      "Bhai Dharam Singh",
-      "Bhai Jaita Ji"
-    ],
-    "answer": 3,
-    "explanation": "Bhai Jaita Ji carried the sacred head of Guru Teg Bahadur Ji. Bhai Mani Singh is associated with the scriptural work described in the chapter, while Bhai Daya Singh and Bhai Dharam Singh carried the Zafarnama. The sacred head was taken to Anandpur Sahib.",
-    "tags": [
-      "History of Punjab",
-      "Care of the sacred head"
-    ]
-  },
-  {
-    "id": 9,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Guruship and city foundation",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about Guru Teg Bahadur Ji:\n1. The notes give his period of Guruship as eleven years.\n2. The city he founded is also called Chakk Nanaki.\nWhich of the above is/are correct?",
-    "options": [
-      "1 only",
-      "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
-    ],
-    "answer": 2,
-    "explanation": "Statement 1 is correct because the revision box records eleven years of Guruship. Statement 2 is correct because the city founded by Guru Ji is identified as Anandpur Sahib, also known as Chakk Nanaki. Thus both statements are correct; the same revision box names Mata Gujri Ji as his wife.",
-    "tags": [
-      "History of Punjab",
-      "Guruship and city foundation"
-    ]
-  },
-  {
-    "id": 10,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Literary compositions",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about the compositions listed in the chapter:\n1. Gyan Prabodh is included among Guru Gobind Singh Ji’s compositions.\n2. Khalse di Mahima is excluded from that list.\nWhich of the above is/are correct?",
-    "options": [
-      "2 only",
-      "1 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
-    ],
-    "answer": 1,
-    "explanation": "Statement 1 is correct because Gyan Prabodh appears in the list of key compositions. Statement 2 is incorrect because Khalse di Mahima also appears in that list. Only statement 1 is correct, and Swayye is another entry in the same list.",
-    "tags": [
-      "History of Punjab",
-      "Literary compositions"
-    ]
-  },
-  {
-    "id": 11,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Zafarnama",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about the Zafarnama:\n1. It was addressed to Mughal emperor Aurangzeb.\n2. It was written at village Dina.\nWhich of the above is/are correct?",
-    "options": [
-      "1 only",
-      "2 only",
-      "Neither 1 nor 2",
-      "Both 1 and 2"
-    ],
-    "answer": 3,
-    "explanation": "Statement 1 is correct: the notes describe the Zafarnama as a letter to Aurangzeb. Statement 2 is also correct: the place of writing is given as village Dina. Both statements are therefore correct, and the letter was sent through Bhai Daya Singh and Bhai Dharam Singh.",
-    "tags": [
-      "History of Punjab",
-      "Zafarnama"
-    ]
-  },
-  {
-    "id": 12,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Battle of Nadaun",
-    "difficulty": "moderate",
-    "type": "statement",
-    "question": "Consider the following statements about the Battle of Nadaun as presented in the notes:\n1. Alif Khan is listed on the opposing side.\n2. The result is recorded as a defeat for Guru Gobind Singh Ji.\nWhich of the above is/are correct?",
-    "options": [
-      "1 only",
-      "2 only",
-      "Both 1 and 2",
-      "Neither 1 nor 2"
-    ],
-    "answer": 0,
-    "explanation": "Statement 1 is correct because the battle table lists Alif Khan on the opposing side. Statement 2 is incorrect because the result column records a victory. Only statement 1 is correct, and the table identifies Alif Khan with the Mughals.",
-    "tags": [
-      "History of Punjab",
-      "Battle of Nadaun"
-    ]
-  },
-  {
-    "id": 13,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Family of Guru Gobind Singh Ji",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which of the following is NOT listed as a wife of Guru Gobind Singh Ji in the notes?",
-    "options": [
-      "Mata Jito Ji",
-      "Mata Nanki Ji",
-      "Mata Sundari Ji",
-      "Mata Sahib Devan Ji"
-    ],
-    "answer": 1,
-    "explanation": "Mata Nanki Ji is not included in the wives row for Guru Gobind Singh Ji. The notes list Mata Jito Ji, Mata Sundari Ji and Mata Sahib Devan Ji in that row. Mata Nanki Ji is instead named as the mother of Guru Teg Bahadur Ji.",
-    "tags": [
-      "History of Punjab",
-      "Family of Guru Gobind Singh Ji"
-    ]
-  },
-  {
-    "id": 14,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Five Ks",
-    "difficulty": "moderate",
-    "type": "not-correct",
-    "question": "Which group does NOT consist entirely of the Five Ks listed in the notes?",
-    "options": [
-      "Kachhera, Kara, Kirpan",
-      "Kangha, Kesh, Kara",
-      "Kangha, Kesh, Khande di Pahul",
-      "Kirpan, Kara, Kesh"
-    ],
-    "answer": 2,
-    "explanation": "The third group contains Khande di Pahul, which is Amrit initiation rather than one of the Five Ks. The other three groups contain only items from the list: Kachhera, Kara, Kirpan, Kangha and Kesh. The notes connect the giving of Khande di Pahul with the founding of the Khalsa.",
-    "tags": [
-      "History of Punjab",
-      "Five Ks"
-    ]
-  },
-  {
-    "id": 15,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Gurdwaras and associated events",
-    "difficulty": "moderate",
-    "type": "match",
-    "question": "Match List I with List II:\nList I (Gurdwara)\nA. Sis Ganj Sahib\nB. Rakab Ganj Sahib\nC. Sachkhand Sri Hazur Sahib\nList II (Associated event)\n1. Guru Gobind Singh Ji’s Jyoti Jot\n2. Guru Teg Bahadur Ji’s martyrdom\n3. Cremation of Guru Teg Bahadur Ji’s body\nSelect the correct code.",
-    "options": [
-      "A-2, B-3, C-1",
-      "A-3, B-2, C-1",
-      "A-2, B-1, C-3",
-      "A-1, B-3, C-2"
-    ],
-    "answer": 0,
-    "explanation": "Sis Ganj Sahib marks the place of Guru Teg Bahadur Ji’s martyrdom, giving A-2. Rakab Ganj Sahib marks the place where his body was cremated, giving B-3. Sachkhand Sri Hazur Sahib is associated with Guru Gobind Singh Ji’s Jyoti Jot, giving C-1. The notes place the martyrdom site at Chandni Chowk in Delhi.",
-    "tags": [
-      "History of Punjab",
-      "Gurdwaras and associated events"
-    ]
-  },
-  {
-    "id": 16,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Battle chronology",
-    "difficulty": "difficult",
-    "type": "match",
-    "question": "Match the battles with their years according to the notes:\nList I\nA. Bhangani\nB. Basoli\nC. Chamkaur\nList II\n1. 1688\n2. 1702\n3. 1704\nSelect the correct code.",
-    "options": [
-      "A-2, B-1, C-3",
-      "A-1, B-3, C-2",
-      "A-3, B-2, C-1",
-      "A-1, B-2, C-3"
-    ],
-    "answer": 3,
-    "explanation": "Bhangani is dated 1688, so A matches 1. Basoli is dated 1702, so B matches 2. Chamkaur is dated 1704, so C matches 3. The battle table records the martyrdom of Sahibzada Ajit Singh and Sahibzada Jujhar Singh at Chamkaur.",
-    "tags": [
-      "History of Punjab",
-      "Battle chronology"
-    ]
-  },
-  {
-    "id": 17,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Life events and Guruship",
-    "difficulty": "moderate",
-    "type": "chronology",
-    "question": "Arrange the following events from earliest to latest:\nA. Birth of Guru Gobind Singh Ji\nB. Beginning of Guru Teg Bahadur Ji’s Guruship\nC. Beginning of Guru Gobind Singh Ji’s Guruship",
-    "options": [
-      "B-A-C",
-      "A-B-C",
-      "B-C-A",
-      "C-B-A"
-    ],
-    "answer": 0,
-    "explanation": "Guru Teg Bahadur Ji’s Guruship began in 1664, so B comes first. Guru Gobind Singh Ji was born in 1666, placing A next. Guru Gobind Singh Ji’s Guruship began in 1675, placing C last. The notes give his period of Guruship as 33 years.",
-    "tags": [
-      "History of Punjab",
-      "Life events and Guruship"
-    ]
-  },
-  {
-    "id": 18,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Events of 1706–1707",
-    "difficulty": "difficult",
-    "type": "chronology",
-    "question": "Arrange the following events from earliest to latest:\nA. Guru Gobind Singh Ji’s meeting with Bahadur Shah at Agra\nB. Writing of the Zafarnama\nC. Guru Gobind Singh Ji’s assistance to Bahadur Shah in the Battle of Jajau",
-    "options": [
-      "A-B-C",
-      "B-A-C",
-      "B-C-A",
-      "C-B-A"
-    ],
-    "answer": 2,
-    "explanation": "The notes date the writing of the Zafarnama to 1706, placing B first. The Battle of Jajau is dated 8 June 1707, placing C second. The meeting at Agra is dated 23 July 1707, placing A last. The notes state that Bahadur Shah was victorious before that meeting.",
-    "tags": [
-      "History of Punjab",
-      "Events of 1706–1707"
-    ]
-  },
-  {
-    "id": 19,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Khidrana and Mai Bhago",
-    "difficulty": "difficult",
-    "type": "assertion-reason",
-    "question": "Assertion (A): The notes record that only twenty Sikhs died fighting at Khidrana.\nReason (R): Mai Bhago, from Jhabal, fought heroically and led the Sikhs there.\nSelect the correct answer.",
-    "options": [
-      "Both A and R are true and R is the correct explanation of A",
-      "Both A and R are true but R is not the correct explanation of A",
-      "A is true but R is false",
-      "A is false but R is true"
-    ],
-    "answer": 3,
-    "explanation": "Assertion A is false because the notes record forty Sikh deaths, not twenty. Reason R is true because Mai Bhago is described as coming from Jhabal and leading the Sikhs heroically. These forty Sikhs are referred to as the Chali Mukte.",
-    "tags": [
-      "History of Punjab",
-      "Khidrana and Mai Bhago"
-    ]
-  },
-  {
-    "id": 20,
-    "part": 1,
-    "subject": "History of Punjab",
-    "topic": "Scriptural preparation and compilation",
-    "difficulty": "difficult",
-    "type": "assertion-reason",
-    "question": "Assertion (A): Guru Gobind Singh Ji prepared the final version of Sri Guru Granth Sahib by adding Guru Teg Bahadur Ji’s bani.\nReason (R): The Dasam Granth, a collection of Guru Gobind Singh Ji’s own writings, was compiled later by Bhai Mani Singh.\nSelect the correct answer.",
-    "options": [
-      "Both A and R are true and R is the correct explanation of A",
-      "Both A and R are true but R is not the correct explanation of A",
-      "A is true but R is false",
-      "A is false but R is true"
-    ],
-    "answer": 1,
-    "explanation": "Assertion A is true according to the source’s account of the final version of Sri Guru Granth Sahib. Reason R is also true: the source attributes the later compilation of the Dasam Granth to Bhai Mani Singh. R concerns a separate collection and does not explain the addition described in A. The notes locate the preparation of the final version of Sri Guru Granth Sahib at Talwandi Sabo, also called Damdama Sahib.",
-    "tags": [
-      "History of Punjab",
-      "Scriptural preparation and compilation"
-    ]
-  }
-]
+{
+  "topic": "Guru Teg Bahadur Ji and Guru Gobind Singh Ji",
+  "questions": [
+    {
+      "id": 1,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Teg Bahadur Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Which title is associated with Guru Teg Bahadur Ji in the notes?",
+      "options": [
+        "Guru Ki Kashi",
+        "Hind Di Chadar",
+        "Chali Mukte",
+        "Panj Pyare"
+      ],
+      "answer": 1,
+      "explanation": "Guru Teg Bahadur Ji is identified as Hind Di Chadar, meaning Shield of India. Guru Ki Kashi is a name for Damdama Sahib, while Chali Mukte refers to the forty Sikhs associated with Khidrana. Panj Pyare refers to the Five Beloved Ones, and the chapter identifies Guru Teg Bahadur Ji as the ninth Sikh Guru.",
+      "tags": [
+        "History of Punjab",
+        "Guru Teg Bahadur Ji"
+      ]
+    },
+    {
+      "id": 2,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guru Gobind Singh Ji",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Where was Guru Gobind Singh Ji born?",
+      "options": [
+        "Amritsar",
+        "Anandpur Sahib",
+        "Patna",
+        "Nanded"
+      ],
+      "answer": 2,
+      "explanation": "Guru Gobind Singh Ji was born at Patna in Bihar. Amritsar is listed as the birthplace of Guru Teg Bahadur Ji, Anandpur Sahib is associated with the creation of the Khalsa, and Nanded with Guru Gobind Singh Ji’s Jyoti Jot. The notes identify Guru Gobind Singh Ji as the tenth Sikh Guru.",
+      "tags": [
+        "History of Punjab",
+        "Guru Gobind Singh Ji"
+      ]
+    },
+    {
+      "id": 3,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Recognition at Baba Bakala",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Who recognised Guru Teg Bahadur Ji at Baba Bakala and persuaded him to accept Sikh leadership?",
+      "options": [
+        "Makhan Shah Lubana",
+        "Lakhi Shah Lubana",
+        "Bhai Jaita Ji",
+        "Chaudhary Dalla"
+      ],
+      "answer": 0,
+      "explanation": "The notes assign this role to Makhan Shah Lubana. Lakhi Shah Lubana cremated Guru Ji’s body, Bhai Jaita Ji carried the sacred head, and Chaudhary Dalla invited Guru Gobind Singh Ji to Talwandi Sabo. Baba Bakala is therefore associated with the recognition of Guru Teg Bahadur Ji in this chapter.",
+      "tags": [
+        "History of Punjab",
+        "Recognition at Baba Bakala"
+      ]
+    },
+    {
+      "id": 4,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Creation of the Khalsa",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "In which year did Guru Gobind Singh Ji establish the Khalsa Panth?",
+      "options": [
+        "1666",
+        "1675",
+        "1688",
+        "1699"
+      ],
+      "answer": 3,
+      "explanation": "The notes place the establishment of the Khalsa Panth in 1699. The other years refer to Guru Gobind Singh Ji’s birth, the beginning of his Guruship, and the Battle of Bhangani respectively. The chapter connects the founding of the Khalsa with Vaisakhi.",
+      "tags": [
+        "History of Punjab",
+        "Creation of the Khalsa"
+      ]
+    },
+    {
+      "id": 5,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Literary compositions",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "Which composition is described as Guru Gobind Singh Ji’s autobiography?",
+      "options": [
+        "Akal Ustat",
+        "Bachittar Natak",
+        "Chandi Charitra",
+        "Chaubis Avtar"
+      ],
+      "answer": 1,
+      "explanation": "Bachittar Natak is explicitly labelled an autobiography in the notes. Akal Ustat, Chandi Charitra and Chaubis Avtar are also listed as compositions, but they are not given that description. The same list includes Var Sri Bhagauti Ji Ki, also called Chandi di Var, as a Punjabi composition.",
+      "tags": [
+        "History of Punjab",
+        "Literary compositions"
+      ]
+    },
+    {
+      "id": 6,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Nanded",
+      "difficulty": "moderate",
+      "type": "direct",
+      "question": "On which river is Nanded situated, according to the notes?",
+      "options": [
+        "Godavari",
+        "Sutlej",
+        "Beas",
+        "Ravi"
+      ],
+      "answer": 0,
+      "explanation": "The notes place Nanded on the Godavari river. Sutlej, Beas and Ravi do not match the river named for Nanded in the source. Sachkhand Sri Hazur Sahib at Nanded is associated with Guru Gobind Singh Ji’s Jyoti Jot.",
+      "tags": [
+        "History of Punjab",
+        "Nanded"
+      ]
+    },
+    {
+      "id": 7,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Institutional changes",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Which system did Guru Gobind Singh Ji abolish?",
+      "options": [
+        "Panj Pyare institution",
+        "Khalsa Panth",
+        "Masand system",
+        "Khande di Pahul"
+      ],
+      "answer": 2,
+      "explanation": "The notes explicitly state that Guru Gobind Singh Ji abolished the Masand system. The other options are institutions or practices linked to the creation of the Khalsa, rather than the system identified as abolished. The Panj Pyare are described as a democratic institution.",
+      "tags": [
+        "History of Punjab",
+        "Institutional changes"
+      ]
+    },
+    {
+      "id": 8,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Care of the sacred head",
+      "difficulty": "easy",
+      "type": "direct",
+      "question": "Who carried Guru Teg Bahadur Ji’s sacred head after his martyrdom?",
+      "options": [
+        "Bhai Mani Singh",
+        "Bhai Daya Singh",
+        "Bhai Dharam Singh",
+        "Bhai Jaita Ji"
+      ],
+      "answer": 3,
+      "explanation": "Bhai Jaita Ji carried the sacred head of Guru Teg Bahadur Ji. Bhai Mani Singh is associated with the scriptural work described in the chapter, while Bhai Daya Singh and Bhai Dharam Singh carried the Zafarnama. The sacred head was taken to Anandpur Sahib.",
+      "tags": [
+        "History of Punjab",
+        "Care of the sacred head"
+      ]
+    },
+    {
+      "id": 9,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Guruship and city foundation",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about Guru Teg Bahadur Ji:\n1. The notes give his period of Guruship as eleven years.\n2. The city he founded is also called Chakk Nanaki.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "answer": 2,
+      "explanation": "Statement 1 is correct because the revision box records eleven years of Guruship. Statement 2 is correct because the city founded by Guru Ji is identified as Anandpur Sahib, also known as Chakk Nanaki. Thus both statements are correct; the same revision box names Mata Gujri Ji as his wife.",
+      "tags": [
+        "History of Punjab",
+        "Guruship and city foundation"
+      ]
+    },
+    {
+      "id": 10,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Literary compositions",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about the compositions listed in the chapter:\n1. Gyan Prabodh is included among Guru Gobind Singh Ji’s compositions.\n2. Khalse di Mahima is excluded from that list.\nWhich of the above is/are correct?",
+      "options": [
+        "2 only",
+        "1 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "answer": 1,
+      "explanation": "Statement 1 is correct because Gyan Prabodh appears in the list of key compositions. Statement 2 is incorrect because Khalse di Mahima also appears in that list. Only statement 1 is correct, and Swayye is another entry in the same list.",
+      "tags": [
+        "History of Punjab",
+        "Literary compositions"
+      ]
+    },
+    {
+      "id": 11,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Zafarnama",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about the Zafarnama:\n1. It was addressed to Mughal emperor Aurangzeb.\n2. It was written at village Dina.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Neither 1 nor 2",
+        "Both 1 and 2"
+      ],
+      "answer": 3,
+      "explanation": "Statement 1 is correct: the notes describe the Zafarnama as a letter to Aurangzeb. Statement 2 is also correct: the place of writing is given as village Dina. Both statements are therefore correct, and the letter was sent through Bhai Daya Singh and Bhai Dharam Singh.",
+      "tags": [
+        "History of Punjab",
+        "Zafarnama"
+      ]
+    },
+    {
+      "id": 12,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Battle of Nadaun",
+      "difficulty": "moderate",
+      "type": "statement",
+      "question": "Consider the following statements about the Battle of Nadaun as presented in the notes:\n1. Alif Khan is listed on the opposing side.\n2. The result is recorded as a defeat for Guru Gobind Singh Ji.\nWhich of the above is/are correct?",
+      "options": [
+        "1 only",
+        "2 only",
+        "Both 1 and 2",
+        "Neither 1 nor 2"
+      ],
+      "answer": 0,
+      "explanation": "Statement 1 is correct because the battle table lists Alif Khan on the opposing side. Statement 2 is incorrect because the result column records a victory. Only statement 1 is correct, and the table identifies Alif Khan with the Mughals.",
+      "tags": [
+        "History of Punjab",
+        "Battle of Nadaun"
+      ]
+    },
+    {
+      "id": 13,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Family of Guru Gobind Singh Ji",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which of the following is NOT listed as a wife of Guru Gobind Singh Ji in the notes?",
+      "options": [
+        "Mata Jito Ji",
+        "Mata Nanki Ji",
+        "Mata Sundari Ji",
+        "Mata Sahib Devan Ji"
+      ],
+      "answer": 1,
+      "explanation": "Mata Nanki Ji is not included in the wives row for Guru Gobind Singh Ji. The notes list Mata Jito Ji, Mata Sundari Ji and Mata Sahib Devan Ji in that row. Mata Nanki Ji is instead named as the mother of Guru Teg Bahadur Ji.",
+      "tags": [
+        "History of Punjab",
+        "Family of Guru Gobind Singh Ji"
+      ]
+    },
+    {
+      "id": 14,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Five Ks",
+      "difficulty": "moderate",
+      "type": "not-correct",
+      "question": "Which group does NOT consist entirely of the Five Ks listed in the notes?",
+      "options": [
+        "Kachhera, Kara, Kirpan",
+        "Kangha, Kesh, Kara",
+        "Kangha, Kesh, Khande di Pahul",
+        "Kirpan, Kara, Kesh"
+      ],
+      "answer": 2,
+      "explanation": "The third group contains Khande di Pahul, which is Amrit initiation rather than one of the Five Ks. The other three groups contain only items from the list: Kachhera, Kara, Kirpan, Kangha and Kesh. The notes connect the giving of Khande di Pahul with the founding of the Khalsa.",
+      "tags": [
+        "History of Punjab",
+        "Five Ks"
+      ]
+    },
+    {
+      "id": 15,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Gurdwaras and associated events",
+      "difficulty": "moderate",
+      "type": "match",
+      "question": "Match List I with List II:\nList I (Gurdwara)\nA. Sis Ganj Sahib\nB. Rakab Ganj Sahib\nC. Sachkhand Sri Hazur Sahib\nList II (Associated event)\n1. Guru Gobind Singh Ji’s Jyoti Jot\n2. Guru Teg Bahadur Ji’s martyrdom\n3. Cremation of Guru Teg Bahadur Ji’s body\nSelect the correct code.",
+      "options": [
+        "A-2, B-3, C-1",
+        "A-3, B-2, C-1",
+        "A-2, B-1, C-3",
+        "A-1, B-3, C-2"
+      ],
+      "answer": 0,
+      "explanation": "Sis Ganj Sahib marks the place of Guru Teg Bahadur Ji’s martyrdom, giving A-2. Rakab Ganj Sahib marks the place where his body was cremated, giving B-3. Sachkhand Sri Hazur Sahib is associated with Guru Gobind Singh Ji’s Jyoti Jot, giving C-1. The notes place the martyrdom site at Chandni Chowk in Delhi.",
+      "tags": [
+        "History of Punjab",
+        "Gurdwaras and associated events"
+      ]
+    },
+    {
+      "id": 16,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Battle chronology",
+      "difficulty": "difficult",
+      "type": "match",
+      "question": "Match the battles with their years according to the notes:\nList I\nA. Bhangani\nB. Basoli\nC. Chamkaur\nList II\n1. 1688\n2. 1702\n3. 1704\nSelect the correct code.",
+      "options": [
+        "A-2, B-1, C-3",
+        "A-1, B-3, C-2",
+        "A-3, B-2, C-1",
+        "A-1, B-2, C-3"
+      ],
+      "answer": 3,
+      "explanation": "Bhangani is dated 1688, so A matches 1. Basoli is dated 1702, so B matches 2. Chamkaur is dated 1704, so C matches 3. The battle table records the martyrdom of Sahibzada Ajit Singh and Sahibzada Jujhar Singh at Chamkaur.",
+      "tags": [
+        "History of Punjab",
+        "Battle chronology"
+      ]
+    },
+    {
+      "id": 17,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Life events and Guruship",
+      "difficulty": "moderate",
+      "type": "chronology",
+      "question": "Arrange the following events from earliest to latest:\nA. Birth of Guru Gobind Singh Ji\nB. Beginning of Guru Teg Bahadur Ji’s Guruship\nC. Beginning of Guru Gobind Singh Ji’s Guruship",
+      "options": [
+        "B-A-C",
+        "A-B-C",
+        "B-C-A",
+        "C-B-A"
+      ],
+      "answer": 0,
+      "explanation": "Guru Teg Bahadur Ji’s Guruship began in 1664, so B comes first. Guru Gobind Singh Ji was born in 1666, placing A next. Guru Gobind Singh Ji’s Guruship began in 1675, placing C last. The notes give his period of Guruship as 33 years.",
+      "tags": [
+        "History of Punjab",
+        "Life events and Guruship"
+      ]
+    },
+    {
+      "id": 18,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Events of 1706–1707",
+      "difficulty": "difficult",
+      "type": "chronology",
+      "question": "Arrange the following events from earliest to latest:\nA. Guru Gobind Singh Ji’s meeting with Bahadur Shah at Agra\nB. Writing of the Zafarnama\nC. Guru Gobind Singh Ji’s assistance to Bahadur Shah in the Battle of Jajau",
+      "options": [
+        "A-B-C",
+        "B-A-C",
+        "B-C-A",
+        "C-B-A"
+      ],
+      "answer": 2,
+      "explanation": "The notes date the writing of the Zafarnama to 1706, placing B first. The Battle of Jajau is dated 8 June 1707, placing C second. The meeting at Agra is dated 23 July 1707, placing A last. The notes state that Bahadur Shah was victorious before that meeting.",
+      "tags": [
+        "History of Punjab",
+        "Events of 1706–1707"
+      ]
+    },
+    {
+      "id": 19,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Khidrana and Mai Bhago",
+      "difficulty": "difficult",
+      "type": "assertion-reason",
+      "question": "Assertion (A): The notes record that only twenty Sikhs died fighting at Khidrana.\nReason (R): Mai Bhago, from Jhabal, fought heroically and led the Sikhs there.\nSelect the correct answer.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 3,
+      "explanation": "Assertion A is false because the notes record forty Sikh deaths, not twenty. Reason R is true because Mai Bhago is described as coming from Jhabal and leading the Sikhs heroically. These forty Sikhs are referred to as the Chali Mukte.",
+      "tags": [
+        "History of Punjab",
+        "Khidrana and Mai Bhago"
+      ]
+    },
+    {
+      "id": 20,
+      "part": 1,
+      "subject": "History of Punjab",
+      "topic": "Scriptural preparation and compilation",
+      "difficulty": "difficult",
+      "type": "assertion-reason",
+      "question": "Assertion (A): Guru Gobind Singh Ji prepared the final version of Sri Guru Granth Sahib by adding Guru Teg Bahadur Ji’s bani.\nReason (R): The Dasam Granth, a collection of Guru Gobind Singh Ji’s own writings, was compiled later by Bhai Mani Singh.\nSelect the correct answer.",
+      "options": [
+        "Both A and R are true and R is the correct explanation of A",
+        "Both A and R are true but R is not the correct explanation of A",
+        "A is true but R is false",
+        "A is false but R is true"
+      ],
+      "answer": 1,
+      "explanation": "Assertion A is true according to the source’s account of the final version of Sri Guru Granth Sahib. Reason R is also true: the source attributes the later compilation of the Dasam Granth to Bhai Mani Singh. R concerns a separate collection and does not explain the addition described in A. The notes locate the preparation of the final version of Sri Guru Granth Sahib at Talwandi Sabo, also called Damdama Sahib.",
+      "tags": [
+        "History of Punjab",
+        "Scriptural preparation and compilation"
+      ]
+    }
+  ]
+}
