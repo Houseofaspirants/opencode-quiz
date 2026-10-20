@@ -2205,7 +2205,24 @@ def study_title_for(path):
     suffix = (f" ({lang_name})" if total <= 1
               else f" - Part {position} ({lang_name})")
     # Keep the part and language visible even when the chapter name is long.
-    return clip(chapter_name, max(1, 60 - len(suffix))) + suffix
+    room = max(1, 60 - len(suffix))
+    if len(chapter_name) <= room:
+        return chapter_name + suffix
+    # Too long: the "Chapter 2:" label goes first (the shelf already orders
+    # by it), then whole words - never stopping on "of" / "and", which left
+    # titles such as "Financial Position and Agriculture of (English)".
+    bare = re.sub(r"^(?:Chapter|Lesson|Unit|ਅਧਿਆਇ)\s+\w+:\s*", "", chapter_name)
+    cut = clip(bare, room)
+    while True:
+        words = cut.split()
+        if len(words) > 1 and words[-1].lower() in TITLE_TAIL_STOPWORDS:
+            cut = " ".join(words[:-1]).rstrip(" ,;:-")
+            continue
+        return cut + suffix
+
+
+TITLE_TAIL_STOPWORDS = {"of", "and", "the", "in", "to", "for", "a", "an", "on",
+                        "with", "through", "ਅਤੇ", "ਦੀ", "ਦਾ", "ਦੇ", "ਦੀਆਂ", "ਤੇ"}
 
 
 def study_files(subject):
