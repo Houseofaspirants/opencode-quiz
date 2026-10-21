@@ -37,6 +37,19 @@ DEFAULT_ICON = "\U0001f4da"        # books
 DEFAULT_COLOR = "#4f46e5"          # the site's brand indigo
 
 
+def page_slug(subject_id):
+    """`Punjab GK` -> `punjab-gk`: the static page /study-<slug> (and
+    /pa/study-<slug>) build_content.py writes for one subject row."""
+    return re.sub(r"[^a-z0-9]+", "-", str(subject_id).lower()).strip("-")
+
+
+def write(manifest):
+    """Write the manifest again after build_content.py has stamped the static
+    page of every subject and multi-part chapter onto it."""
+    OUT.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
+                   encoding="utf-8")
+
+
 def natural_sort_key(value):
     """Sort labels containing numbers in human reading order (Ch 2 before Ch 10)."""
     return tuple((1, int(part)) if part.isdigit() else (0, part.casefold())

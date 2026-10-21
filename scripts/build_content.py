@@ -2618,6 +2618,31 @@ def stamp_study_languages(records):
             desc = study_description(title, subject, "pa")
         rec["title"] = rec["meta"]["title"] = title
         rec["description"] = rec["meta"]["description"] = desc
+        rec["studyChapterName"] = study_title_pa(rec.get("studyChapterName") or "")
+
+    # A Punjabi chapter whose folder is named in English takes its name from
+    # its notes' Gurmukhi titles: the note itself for a one-part chapter, the
+    # parts' shared stem (without " - ਭਾਗ N") for a longer one.
+    chapters = {}
+    for rec in records:
+        if rec.get("pageLang") == "pa":
+            chapters.setdefault((rec.get("studySubject"), rec.get("studyChapter")),
+                                []).append(rec)
+    for rows in chapters.values():
+        name = str(rows[0].get("studyChapterName") or "")
+        if _gurmukhi_share(re.sub(r"\([^)]*\)", "", name)) >= 0.5:
+            continue
+        rows.sort(key=lambda r: int(r.get("studyPart") or 0))
+        stem = re.sub(r"\s+-\s+(?:ਭਾਗ \d+|ਪੂਰੀ PDF)$", "", str(rows[0]["title"]))
+        stem = re.sub(r"^ਅਧਿਆਇ \d+[A-Z]?:\s*", "", stem)
+        num = re.match(r"^(ਅਧਿਆਇ \d+[A-Z]?):", name)
+        new = (f"{num.group(1)}: {stem}" if num else stem) if len(rows) > 1 or num \
+            else str(rows[0]["title"])
+        for r in rows:
+            r["studyChapterName"] = new
+    for rec in records:
+        if rec.get("pageLang") == "pa" and rec.get("pdfDrop"):
+            apply_pdf_body(rec, "")             # the body, in Punjabi
         rec["search"] = re.sub(r"\s+", " ",
                                f'{rec.get("search", "")} {title} {desc}'.lower())
 
@@ -2663,10 +2688,10 @@ def study_nav(records):
         return {"file": r["file"], "title": r["title"]}
 
     def href(key):
-        subject, lang, chapter = key
-        return "study.html?subject={0}&language={1}&chapter={2}".format(
-            quote(str(subject), safe=""), quote(str(lang), safe=""),
-            quote(str(chapter), safe=""))
+        # A chapter of several parts has a page of its own; a one-part
+        # chapter is its note (stamp_study_pages).
+        first = by_chapter[key][0]
+        return first.get("studyChapterPage") or first["file"]
 
     by_chapter = {}
     for r in records:
@@ -3243,6 +3268,29 @@ def study_pdf_body(title, rel, published, label, record=None):
     lang_name = lang.get("name") or study_language_label(
         study_lang_id(lang_folder) or "en")
     where = Path(rel).parent.as_posix()
+    if rec.get("pageLang") == "pa":
+        facts = ", ".join(x for x in (size, f"{pages} ਪੰਨੇ" if pages else "") if x)
+        return (
+            (f"## ਸਾਰ\n{summary}\n\n" if summary else "")
+            + "## ਡਾਊਨਲੋਡ\n"
+            + f"[{title} (PDF) ਡਾਊਨਲੋਡ ਕਰੋ]({href})"
+            + (f" - {facts}, ਇਸੇ ਸਾਈਟ ਉੱਤੇ।" if facts else "।")
+            + " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਈਮੇਲ ਨਹੀਂ, ਕਿਸੇ ਹੋਰ ਸਾਈਟ ਰਾਹੀਂ ਨਹੀਂ।\n\n"
+            "## ਇਸ ਫ਼ਾਈਲ ਬਾਰੇ\n"
+            f"- **ਫ਼ਾਈਲ ਦਾ ਨਾਮ:** `{Path(rel).name}`\n"
+            + (f"- **ਪੰਨੇ:** {pages}\n" if pages else "")
+            + (f"- **ਆਕਾਰ:** {size}\n" if size else "")
+            + (f"- **ਪ੍ਰਕਾਸ਼ਿਤ:** {pa_date(published)}\n" if published else "")
+            + "- **ਸ਼੍ਰੇਣੀ:** ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ\n"
+            "\n## ਇਹ ਫ਼ਾਈਲ ਕਿੱਥੇ ਹੈ\n"
+            f"- **ਵਿਸ਼ਾ:** {STUDY_SUBJECT_PA.get(subject) or study_subject_name(subject)}\n"
+            "- **ਭਾਸ਼ਾ:** ਪੰਜਾਬੀ\n"
+            + (f"- **ਅਧਿਆਇ:** {rec.get('studyChapterName') or study_title_pa(study_nice_name(chapter))}\n" if chapter else "")
+            + (f"- **ਭਾਗ:** {total} ਵਿੱਚੋਂ {position}\n" if total > 1 else "")
+            + f"\nਇਹ ਪੰਨਾ `{where}/` ਤੋਂ ਆਪਣੇ-ਆਪ ਬਣਿਆ ਹੈ। ਵਿਸ਼ਾ, ਭਾਸ਼ਾ ਅਤੇ ਅਧਿਆਇ "
+            "ਫ਼ਾਈਲ ਦੇ ਫੋਲਡਰਾਂ ਤੋਂ ਲਏ ਗਏ ਹਨ, ਅਤੇ ਪੰਨਿਆਂ ਦੀ ਗਿਣਤੀ ਤੇ ਸਾਰ ਖ਼ੁਦ PDF "
+            "ਵਿੱਚੋਂ ਪੜ੍ਹੇ ਗਏ ਹਨ।"
+        )
     return (
         (f"## Summary\n{summary}\n\n" if summary else "")
         + f"## Download\n"
@@ -3286,9 +3334,10 @@ def pdf_preview_html(record):
 
 def apply_pdf_body(record, label):
     """Re-render the generated body (a title disambiguation changes it)."""
+    body = (study_pdf_body if record.get("studySubject") else pdf_body_text)
     record["bodyHtml"], record["toc"] = md_to_html(
-        pdf_body_text(record["title"], record["path"],
-                      str(record.get("published") or ""), label, record))
+        body(record["title"], record["path"],
+             str(record.get("published") or ""), label, record))
     record["bodyHtml"] = pdf_preview_html(record) + record["bodyHtml"]
 
 
@@ -3470,6 +3519,7 @@ def build_pdf_record(coll, cfg, path, slug, published, updated, fname_date,
         record["pdfDrop"] = True
         record["pdfFolder"] = folder
         record["pdfPages"] = pages
+        record["summary"] = summary         # re-rendered bodies (a Punjabi note)
         record["pdfPreview"] = str(drop.get("thumbnail") or "")
         record["pdfPreviewW"] = int(drop.get("thumbW") or 0)
         record["pdfPreviewH"] = int(drop.get("thumbH") or 0)
@@ -4307,31 +4357,22 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
                         (record["title"], url)]}
     crumb_tail = ""
     if record.get("studySubject"):
-        def _q(value):
-            return quote(str(value), safe="")
+        # Study -> subject page (in the note's language) -> chapter page when
+        # the chapter has several parts -> this note. The language is the
+        # page's own, so it is not a level of its own any more.
+        pa = record.get("pageLang") == "pa"
         trail, tail = [(hub["schema_hub"], hub_url)], ""
-        sid = _q(record["studySubject"])
-        sname = str(record["subjectName"])
-        subject_url = f"{DOMAIN}/study?subject={sid}"
-        trail.append((sname, subject_url))
-        tail += f'<a href="study.html?subject={sid}">{esc(sname)}</a><span>/</span>'
-        level = subject_url
-        if record.get("studyLanguage"):
-            lang_id = _q(record["studyLanguage"])
-            lang_name = str(record.get("studyLanguageName")
-                             or record["studyLanguage"])
-            level = f"{subject_url}&language={lang_id}"
-            trail.append((lang_name, level))
-            tail += (f'<a href="study.html?subject={sid}&amp;language={lang_id}">'
-                     f'{esc(lang_name)}</a><span>/</span>')
-        if record.get("studyChapter"):
-            chap_id = _q(record["studyChapter"])
+        sname = (STUDY_SUBJECT_PA.get(str(record["studySubject"]))
+                 if pa else None) or str(record["subjectName"])
+        spage = str(record.get("studySubjectPage") or "")
+        if spage:
+            trail.append((sname, f"{DOMAIN}/{spage[:-5]}"))
+            tail += f'<a href="{esc(spage)}">{esc(sname)}</a><span>/</span>'
+        cpage = str(record.get("studyChapterPage") or "")
+        if cpage:
             chap_name = str(record["studyChapterName"])
-            trail.append((chap_name, f"{level}&chapter={chap_id}"))
-            tail += (f'<a href="study.html?subject={sid}'
-                     f'&amp;language={_q(record.get("studyLanguage") or "")}'
-                     f'&amp;chapter={chap_id}">{esc(chap_name)}</a>'
-                     f'<span>/</span>')
+            trail.append((chap_name, f"{DOMAIN}/{cpage[:-5]}"))
+            tail += f'<a href="{esc(cpage)}">{esc(chap_name)}</a><span>/</span>'
         trail.append((record["title"], url))
         crumbs["items"] = trail
         crumb_tail = tail
@@ -4382,9 +4423,11 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     if record.get("studySubject"):
         # Subject · Language · Chapter: the three folders the file sits in,
         # so the page says where it belongs before it says anything else.
+        pa = record.get("pageLang") == "pa"
         eyebrow_bits.append(" · ".join(
-            b for b in (str(record.get("subjectName") or ""),
-                        str(record.get("studyLanguageName") or ""),
+            b for b in ((STUDY_SUBJECT_PA.get(str(record["studySubject"])) if pa
+                         else None) or str(record.get("subjectName") or ""),
+                        "ਪੰਜਾਬੀ" if pa else str(record.get("studyLanguageName") or ""),
                         str(record.get("studyChapterName") or "")) if b))
     elif record.get("pdfDrop"):
         # Generated from a file name: lead with the one fact it really carries
@@ -4601,6 +4644,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     # Content-graph contract: every published page carries at least five
     # contextual internal links, or the build fails here.
     html = enforce_link_floor(html, coll, record["file"])
+    if record.get("pageLang") == "pa":
+        html = localize_pa_ui(html)
     html += TAIL
     return html, jsonld
 
@@ -5369,7 +5414,7 @@ def pyq_exam_page(exam):
           <a class="card card-pad reveal" href="punjab-exams.html"><span class="eyebrow">Exam hub</span><h3>Every Punjab exam guide</h3><p class="ilink">Open &rarr;</p></a>
           <a class="card card-pad reveal" href="expected-mcqs.html"><span class="eyebrow">Practice</span><h3>Chapter-wise Expected MCQs</h3><p class="ilink">Open &rarr;</p></a>
           <a class="card card-pad reveal" href="mock.html"><span class="eyebrow">Practice</span><h3>Timed full-length mocks</h3><p class="ilink">Open &rarr;</p></a>
-          <a class="card card-pad reveal" href="study.html?subject=gk"><span class="eyebrow">Study material</span><h3>Build the base a paper tests</h3><p class="ilink">Open &rarr;</p></a>
+          <a class="card card-pad reveal" href="study-gk.html"><span class="eyebrow">Study material</span><h3>Build the base a paper tests</h3><p class="ilink">Open &rarr;</p></a>
           <a class="card card-pad reveal" href="archives.html"><span class="eyebrow">Archive</span><h3>Everything published, by subject and month</h3><p class="ilink">Open &rarr;</p></a>
         </div>
       </div>
@@ -5506,6 +5551,554 @@ def ca_section_page(page):
 """
     html += TAIL
     return html
+
+
+# =============================================================================
+# Study section pages: /study-<subject> and /pa/study-<subject>
+# -----------------------------------------------------------------------------
+# study.html renders its levels in the browser from query strings; these are
+# the same levels written as static pages, one per subject and language, plus
+# one per chapter that holds more than one part (a one-part chapter is its
+# note). Title, description, canonical and hreflang are in the HTML. Every old
+# study.html?... URL whose target is known 301s here (study_redirects).
+
+STUDY_UI = {
+    "en": {"home": "Home", "study": "Study", "notes": "notes", "note": "note",
+           "parts": "parts", "pages": "pages", "min": "min read",
+           "empty_h": "No notes here yet",
+           "empty_p": "This page exists because the subject folder is on disk. "
+                      "The day a note is added it appears here on the next publish.",
+           "soon": "coming soon", "chapters_h": "Chapters",
+           "parts_h": "Parts of this chapter", "lang": "English",
+           "regions_h": "Pick a paper", "others_h": "Other subjects"},
+    "pa": {"home": "ਮੁੱਖ ਪੰਨਾ", "study": "ਪੜ੍ਹਾਈ", "notes": "ਨੋਟਸ", "note": "ਨੋਟ",
+           "parts": "ਭਾਗ", "pages": "ਪੰਨੇ", "min": "ਮਿੰਟ ਦੀ ਪੜ੍ਹਾਈ",
+           "empty_h": "ਇੱਥੇ ਹਾਲੇ ਕੋਈ ਨੋਟਸ ਨਹੀਂ",
+           "empty_p": "ਇਹ ਪੰਨਾ ਇਸ ਲਈ ਹੈ ਕਿਉਂਕਿ ਵਿਸ਼ੇ ਦਾ ਫੋਲਡਰ ਮੌਜੂਦ ਹੈ। "
+                      "ਜਿਸ ਦਿਨ ਕੋਈ ਨੋਟ ਜੋੜਿਆ ਜਾਵੇਗਾ, ਉਹ ਅਗਲੀ ਵਾਰ ਇੱਥੇ ਦਿਖੇਗਾ।",
+           "soon": "ਜਲਦੀ ਆ ਰਿਹਾ", "chapters_h": "ਅਧਿਆਇ",
+           "parts_h": "ਇਸ ਅਧਿਆਇ ਦੇ ਭਾਗ", "lang": "ਪੰਜਾਬੀ",
+           "regions_h": "ਪੇਪਰ ਚੁਣੋ", "others_h": "ਹੋਰ ਵਿਸ਼ੇ"},
+}
+
+# GK region and sub-category names, in Punjabi (categories use STUDY_SUBJECT_PA
+# by their folder).
+STUDY_GK_PA = {"gk": "ਜਨਰਲ ਨਾਲਿਜ (GK)", "india-gk": "ਭਾਰਤ GK",
+               "punjab-gk": "ਪੰਜਾਬ GK", "others": "ਹੋਰ",
+               "ancient-history": "ਪ੍ਰਾਚੀਨ ਇਤਿਹਾਸ",
+               "medieval-history": "ਮੱਧਕਾਲੀ ਇਤਿਹਾਸ",
+               "modern-history": "ਆਧੁਨਿਕ ਇਤਿਹਾਸ"}
+
+PA_MONTHS = ["ਜਨਵਰੀ", "ਫ਼ਰਵਰੀ", "ਮਾਰਚ", "ਅਪ੍ਰੈਲ", "ਮਈ", "ਜੂਨ", "ਜੁਲਾਈ",
+             "ਅਗਸਤ", "ਸਤੰਬਰ", "ਅਕਤੂਬਰ", "ਨਵੰਬਰ", "ਦਸੰਬਰ"]
+
+
+def study_subject_label(row, lang):
+    """A subject row's name in `lang`."""
+    if lang == "pa":
+        return (STUDY_SUBJECT_PA.get(row["id"]) or STUDY_GK_PA.get(row["id"])
+                or row["name"])
+    return row["name"]
+
+
+def study_page_for(subject_id):
+    """The study page another page links to for a subject id: its section
+    page when the subject is a study folder or hierarchy, else the shelf."""
+    sid = str(subject_id or "")
+    if sid and ((CONTENT / STUDY_DIR / sid).is_dir()
+                or sid in ((study_registry() or {}).get("hierarchies") or {})):
+        return study_page_file(sid, "en")
+    return "study.html"
+
+
+def study_page_file(subject_id, lang, chapter_slug=""):
+    """`study-quant.html` / `pa/study-quant.html` / `study-history-...html`."""
+    stem = "study-" + study_material.page_slug(subject_id) + (
+        f"-{chapter_slug}" if chapter_slug else "")
+    return f"pa/{stem}.html" if lang == "pa" else f"{stem}.html"
+
+
+def _study_chapter_slug(chapter):
+    """`modern-history/Chapter 02 - Expansion of ...` ->
+    `modern-history-02-expansion-of-...` (a Gurmukhi-only name is
+    transliterated the way note slugs are)."""
+    parts = [re.sub(r"(?i)^(?:chapter|lesson|unit)\s*", "", x)
+             for x in str(chapter).split("/")]
+    slug = study_material.page_slug(" ".join(parts))
+    return slug if re.search(r"[a-z]", slug) else (
+        pdf_slug_from_name(" ".join(parts)) or slug)
+
+
+def stamp_study_pages(records):
+    """Which static page lists each note: its subject page in the note's
+    folder language and, for a chapter of several parts, that chapter's page.
+
+    A chapter page's slug is shared by both languages - taken from the English
+    chapter when the pair has one - so /study-x-<slug> and /pa/study-x-<slug>
+    are twins exactly like every other en/pa pair on the site."""
+    chapters = {}
+    for r in records:
+        key = (r.get("studySubject"), r.get("studyLanguage"), r.get("studyChapter"))
+        chapters.setdefault(key, []).append(r)
+    slug_of = {}
+    for (subject, lang, chapter), rows in chapters.items():
+        if lang == "en" and len(rows) > 1:
+            slug_of[_study_pair_key(rows[0])[:3]] = _study_chapter_slug(chapter)
+    for (subject, lang, chapter), rows in chapters.items():
+        page_lang = "pa" if lang == "pa" else "en"
+        chapter_page = ""
+        if len(rows) > 1:
+            slug = (slug_of.get(_study_pair_key(rows[0])[:3])
+                    or _study_chapter_slug(chapter))
+            chapter_page = study_page_file(subject, page_lang, slug)
+        for r in rows:
+            r["studySubjectPage"] = study_page_file(subject, page_lang)
+            r["studyChapterPage"] = chapter_page
+
+
+def fit_study_description(text, clauses, fallback):
+    """Grow `text` with whole clauses into the site's 140-160 character window."""
+    for _ in range(4):
+        for clause in clauses:
+            if len(text) >= 140:
+                break
+            if len(text) + len(clause) <= 160:
+                text += clause
+        if len(text) >= 140:
+            break
+    if len(text) < 140:
+        text += fallback
+    while len(text) > 160:
+        text = text.rsplit(" ", 1)[0]
+    return text
+
+
+def localize_head(html, lang):
+    """<html lang> + data-page-lang, og:locale and JSON-LD inLanguage for a
+    page in `lang` - the parts of head() that assume English."""
+    html = re.sub(r'<html lang="[a-z]+" data-theme="light">',
+                  f'<html lang="{lang}" data-theme="light" data-page-lang="{lang}">',
+                  html, count=1)
+    if lang == "pa":
+        html = html.replace('<meta property="og:locale" content="en_IN">',
+                            '<meta property="og:locale" content="pa_IN">', 1)
+        html = html.replace('"inLanguage": "en-IN"', '"inLanguage": "pa-IN"')
+    return html
+
+
+# The interface text of a note page, as rendered for English, and the Punjabi
+# a Punjabi note shows instead. Exact fragments (tag included where a bare
+# word would be ambiguous), applied to <main> only; the CI scan in
+# scripts/seo_check.py lists anything English left on a Punjabi study page.
+PA_UI_FRAGMENTS = [
+    ('<a href="index.html">Home</a>', '<a href="index.html">ਮੁੱਖ ਪੰਨਾ</a>'),
+    ('<a href="./">Home</a>', '<a href="./">ਮੁੱਖ ਪੰਨਾ</a>'),
+    (">Study Material</a>", ">ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ</a>"),
+    ('<span class="eyebrow">Study Material</span>', '<span class="eyebrow">ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ</span>'),
+    ('<span class="ab-label">Quick answer</span>', '<span class="ab-label">ਸੰਖੇਪ ਉੱਤਰ</span>'),
+    ("Written &amp; reviewed by", "ਲੇਖਕ ਅਤੇ ਸਮੀਖਿਆ"),
+    ("House of Aspirants Editorial Team", "House of Aspirants ਸੰਪਾਦਕੀ ਟੀਮ"),
+    ("📖 Read Online", "📖 ਆਨਲਾਈਨ ਪੜ੍ਹੋ"),
+    ("📝 Practice MCQs", "📝 MCQ ਅਭਿਆਸ"),
+    ("⬇ Download PDF", "⬇ PDF ਡਾਊਨਲੋਡ"),
+    (">⬇ Download</a>", ">⬇ ਡਾਊਨਲੋਡ</a>"),
+    ('<span class="share-label">Share</span>', '<span class="share-label">ਸਾਂਝਾ ਕਰੋ</span>'),
+    ("🔗 Copy link", "🔗 ਲਿੰਕ ਕਾਪੀ ਕਰੋ"),
+    ("<h2>In this page</h2>", "<h2>ਇਸ ਪੰਨੇ ਵਿੱਚ</h2>"),
+    ("📖 Start reading", "📖 ਪੜ੍ਹਨਾ ਸ਼ੁਰੂ ਕਰੋ"),
+    ("<b>Finished reading?</b> Check what you remember with a quick MCQ test.",
+     "<b>ਪੜ੍ਹ ਲਿਆ?</b> ਇੱਕ ਛੋਟੇ MCQ ਟੈਸਟ ਨਾਲ ਜਾਂਚੋ ਕਿ ਕੀ ਯਾਦ ਰਿਹਾ।"),
+    ('alt="First page of ', 'alt="ਪਹਿਲਾ ਪੰਨਾ: '),
+    ('<span class="eyebrow">Recommended</span>', '<span class="eyebrow">ਸੁਝਾਅ</span>'),
+    ("<h2>What to do with this page</h2>", "<h2>ਅੱਗੇ ਕੀ ਕਰੀਏ</h2>"),
+    ("Matched on subject, exam, category, difficulty, tags and language - the "
+     "same facets you search with.",
+     "ਵਿਸ਼ੇ, ਪ੍ਰੀਖਿਆ, ਸ਼੍ਰੇਣੀ, ਪੱਧਰ, ਟੈਗ ਅਤੇ ਭਾਸ਼ਾ ਦੇ ਆਧਾਰ ਉੱਤੇ ਚੁਣੇ ਗਏ।"),
+    (">Related Chapters</h3>", ">ਸਬੰਧਿਤ ਅਧਿਆਇ</h3>"),
+    ('<span class="eyebrow">Chapter</span>', '<span class="eyebrow">ਅਧਿਆਇ</span>'),
+    (">Practise this topic</h3>", ">ਇਸ ਵਿਸ਼ੇ ਦਾ ਅਭਿਆਸ ਕਰੋ</h3>"),
+    ('<span class="eyebrow">Daily</span>', '<span class="eyebrow">ਰੋਜ਼ਾਨਾ</span>'),
+    ("<h3>Today&#x27;s Daily Challenge</h3>", "<h3>ਅੱਜ ਦੀ ਡੇਲੀ ਚੁਣੌਤੀ</h3>"),
+    ("Start the quiz →", "ਕਵਿਜ਼ ਸ਼ੁਰੂ ਕਰੋ →"),
+    ('<span class="eyebrow">All subjects</span>', '<span class="eyebrow">ਸਾਰੇ ਵਿਸ਼ੇ</span>'),
+    ("<h3>Pick a subject to drill</h3>", "<h3>ਅਭਿਆਸ ਲਈ ਵਿਸ਼ਾ ਚੁਣੋ</h3>"),
+    ('<span class="eyebrow">Full paper</span>', '<span class="eyebrow">ਪੂਰਾ ਪੇਪਰ</span>'),
+    ("<h3>Take a mock test</h3>", "<h3>ਮੌਕ ਟੈਸਟ ਦਿਓ</h3>"),
+    (">More study material</h3>", ">ਹੋਰ ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ</h3>"),
+    ('<span class="eyebrow">Learning path</span>', '<span class="eyebrow">ਸਿੱਖਣ ਦਾ ਰਾਹ</span>'),
+    ("<h2>Where this page fits</h2>", "<h2>ਇਹ ਪੰਨਾ ਕਿੱਥੇ ਆਉਂਦਾ ਹੈ</h2>"),
+    ("<span>Expected MCQs</span>", "<span>ਸੰਭਾਵੀ MCQ</span>"),
+    ("<span>Monthly magazine</span>", "<span>ਮਾਸਿਕ ਮੈਗਜ਼ੀਨ</span>"),
+    ("<em>reserved</em>", "<em>ਜਲਦੀ</em>"),
+    ("← Previous part", "← ਪਿਛਲਾ ਭਾਗ"),
+    ("Next part →", "ਅਗਲਾ ਭਾਗ →"),
+    ("Reviewed by the editorial team", "ਸੰਪਾਦਕੀ ਟੀਮ ਵੱਲੋਂ ਸਮੀਖਿਆ"),
+]
+PA_UI_PATTERNS = [
+    (r"One step, one real link\. Reserved steps appear so the path is\s+"
+     r"honest about what this platform does not publish yet\.",
+     "ਹਰ ਕਦਮ ਇੱਕ ਅਸਲ ਲਿੰਕ ਹੈ। ਜੋ ਹਾਲੇ ਪ੍ਰਕਾਸ਼ਿਤ ਨਹੀਂ ਹੋਇਆ, ਉਹ ਵੀ ਦਿਖਾਇਆ ਗਿਆ ਹੈ।"),
+    (r"(\d+) min read", r"\1 ਮਿੰਟ ਦੀ ਪੜ੍ਹਾਈ"),
+    (r"≈ (\d+) min to finish", r"≈ \1 ਮਿੰਟ ਵਿੱਚ ਪੂਰਾ"),
+    (r"📖 Read online · (\d+) pages", r"📖 ਆਨਲਾਈਨ ਪੜ੍ਹੋ · \1 ਪੰਨੇ"),
+    (r"📖 Read online", "📖 ਆਨਲਾਈਨ ਪੜ੍ਹੋ"),
+    (r"(\d+) parts? · (?:Punjabi|ਪੰਜਾਬੀ)", r"\1 ਭਾਗ · ਪੰਜਾਬੀ"),
+    (r"(\d+) parts? · English", r"\1 ਭਾਗ · ਅੰਗਰੇਜ਼ੀ"),
+    (r"Published (\d{1,2}) (\w+) (\d{4})", lambda m: "ਪ੍ਰਕਾਸ਼ਿਤ " + _pa_dmy(m)),
+    (r"Updated (\d{1,2}) (\w+) (\d{4})", lambda m: "ਅੱਪਡੇਟ " + _pa_dmy(m)),
+]
+_EN_MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"]
+
+
+def _pa_dmy(m):
+    """`6`, `October`, `2026` (a regex match) -> `6 ਅਕਤੂਬਰ 2026`."""
+    name = m.group(2)
+    idx = next((i for i, x in enumerate(_EN_MONTHS) if x.startswith(name[:3])), -1)
+    return f"{m.group(1)} {PA_MONTHS[idx] if idx >= 0 else name} {m.group(3)}"
+
+
+def localize_pa_ui(html):
+    """A Punjabi note's <main>, with the shared template's English replaced."""
+    start, end = html.find("<main"), html.rfind("</main>")
+    if start < 0 or end < 0:
+        return html
+    main = html[start:end]
+    for old, new in PA_UI_FRAGMENTS:
+        main = main.replace(old, new)
+    for rx, new in PA_UI_PATTERNS:
+        main = re.sub(rx, new, main)
+    return html[:start] + main + html[end:]
+
+
+def pa_date(iso):
+    """`2026-10-06` -> `6 ਅਕਤੂਬਰ 2026`."""
+    m = re.match(r"(\d{4})-(\d{2})-(\d{2})", str(iso or ""))
+    return (f"{int(m.group(3))} {PA_MONTHS[int(m.group(2)) - 1]} {m.group(1)}"
+            if m else "")
+
+
+def study_section_plan(manifest, records):
+    """Every study section page this run writes, and the old study.html URL
+    each one replaces. Stamps `page` (and `pages` per language) onto the
+    manifest rows and `page` onto multi-part chapters, so the shelf, the
+    header menu and study.html's fallback read the same targets."""
+    by_file = {r["file"]: r for r in records}
+    rows = manifest["subjects"]
+    pages, redirects = [], []
+    for row in rows:
+        row["page"] = study_page_file(row["id"], "en")
+        row["pages"] = {"en": row["page"], "pa": study_page_file(row["id"], "pa")}
+        if row.get("hierarchy"):
+            for lang in ("en", "pa"):
+                has = any(c["stats"].get("files") for reg in row["hierarchy"]["regions"]
+                          for c in reg["categories"] if c.get("folders"))
+                pages.append({"kind": "gk", "row": row, "lang": lang,
+                              "file": row["pages"][lang], "indexable": has})
+            continue
+        langs = {l["id"]: l for l in row.get("languages", [])}
+        for lang in ("en", "pa"):
+            chapters = (langs.get(lang) or {}).get("chapters", [])
+            pages.append({"kind": "subject", "row": row, "lang": lang,
+                          "file": row["pages"][lang], "chapters": chapters,
+                          "indexable": bool(chapters)})
+            for ch in chapters:
+                recs = [by_file[p["file"]] for p in ch["parts"] if p["file"] in by_file]
+                if len(recs) > 1 and recs[0].get("studyChapterPage"):
+                    ch["page"] = recs[0]["studyChapterPage"]
+                    pages.append({"kind": "chapter", "row": row, "lang": lang,
+                                  "file": ch["page"], "chapter": ch,
+                                  "indexable": True})
+                target = ch.get("page") or (recs[0]["file"] if recs else "")
+                if target:
+                    redirects.append(({"subject": row["id"], "language": lang,
+                                       "chapter": ch["id"]}, target))
+            redirects.append(({"subject": row["id"], "language": lang},
+                              row["pages"][lang]))
+        redirects.append(({"subject": row["id"]}, row["page"]))
+    # GK levels: the hub, a region, and a category (to its folder's page).
+    for row in rows:
+        if not row.get("hierarchy"):
+            continue
+        redirects.append(({"subject": row["id"]}, row["page"]))
+        for reg in row["hierarchy"]["regions"]:
+            redirects.append(({"subject": row["id"], "region": reg["id"]}, row["page"]))
+            for cat in reg["categories"]:
+                folder = (cat.get("folders") or [""])[0]
+                if folder:
+                    for lang in ("en", "pa"):
+                        redirects.append(({"subject": row["id"], "region": reg["id"],
+                                           "cat": cat["id"], "language": lang},
+                                          study_page_file(folder, lang)))
+                    redirects.append(({"subject": row["id"], "region": reg["id"],
+                                       "cat": cat["id"]}, study_page_file(folder, "en")))
+    by_page = {p["file"]: p for p in pages}
+    for p in pages:
+        other = by_page.get(p["file"][3:] if p["lang"] == "pa" else f"pa/{p['file']}")
+        p["twin"] = other
+    return pages, redirects
+
+
+def _chapter_label(ch, by_file):
+    """A Punjabi chapter's name: the one stamp_study_languages gave its notes."""
+    for x in ch["parts"]:
+        if x["file"] in by_file:
+            return str(by_file[x["file"]].get("studyChapterName") or ch["name"])
+    return study_title_pa(ch["name"])
+
+
+def _study_note_li(rec, lang):
+    """One note in a list: its title, then pages · size · reading time."""
+    t = STUDY_UI[lang]
+    bits = []
+    if rec.get("pdfPages"):
+        bits.append(f'{rec["pdfPages"]} {t["pages"]}')
+    if rec.get("sizeLabel"):
+        bits.append(str(rec["sizeLabel"]))
+    if rec.get("readingMinutes"):
+        bits.append(f'{rec["readingMinutes"]} {t["min"]}')
+    return (f'<li><a href="{esc(rec["file"])}">{esc(rec["title"])}</a>'
+            f'<span class="part-meta">{" &middot; ".join(esc(b) for b in bits)}'
+            f'</span></li>')
+
+
+def study_section_page(p, by_file, rows_by_id):
+    """Render one study section page (subject, GK hub or chapter)."""
+    lang, row, kind = p["lang"], p["row"], p["kind"]
+    t = STUDY_UI[lang]
+    file = p["file"]
+    url = f"{DOMAIN}/{file[:-5]}"
+    name = study_subject_label(row, lang)
+    icon = row.get("icon") or ""
+    crumbs = [(t["home"], f"{DOMAIN}/", "index.html"),
+              (t["study"], f"{DOMAIN}/study", "study.html")]
+    gk = rows_by_id.get("gk")
+    if row.get("hidden") and gk:
+        crumbs.append((study_subject_label(gk, lang), f"{DOMAIN}/{gk['pages'][lang][:-5]}",
+                       gk["pages"][lang]))
+    sections = []
+    items = []
+
+    if kind == "gk":
+        title = (f"{name} ਦੇ ਨੋਟਸ - ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK" if lang == "pa"
+                 else f"{name} Study Notes - India GK and Punjab GK")
+        h1 = f"{name} ਦੇ ਪੜ੍ਹਾਈ ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
+        lead = ("ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK, ਉਸੇ ਤਰਤੀਬ ਵਿੱਚ ਜਿਵੇਂ ਪੇਪਰ ਵਿੱਚ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।"
+                if lang == "pa" else str(row.get("description") or ""))
+        blocks = []
+        n_all = 0
+        for reg in row["hierarchy"]["regions"]:
+            cards = []
+            for cat in reg["categories"]:
+                folder = (cat.get("folders") or [""])[0]
+                sub = rows_by_id.get(folder)
+                if not sub:
+                    continue
+                n = sum(len(c["parts"]) for l in sub.get("languages", [])
+                        if l["id"] == lang for c in l["chapters"])
+                n_all += n
+                cname = (STUDY_SUBJECT_PA.get(folder) or STUDY_GK_PA.get(cat["id"])
+                         or cat["name"]) if lang == "pa" else cat["name"]
+                meta = f'{n} {t["notes"] if n != 1 else t["note"]}' if n else t["soon"]
+                cards.append(f'<a class="card card-pad reveal" href="{esc(sub["pages"][lang])}">'
+                             f'<span class="eyebrow">{esc(meta)}</span>'
+                             f'<h3>{esc(sub.get("icon") or "")} {esc(cname)}</h3>'
+                             f'<p class="ilink">{"ਖੋਲ੍ਹੋ" if lang == "pa" else "Open"} →</p></a>')
+                if n:
+                    items.append((cname, f"{DOMAIN}/{sub['pages'][lang][:-5]}"))
+            rname = STUDY_GK_PA.get(reg["id"], reg["name"]) if lang == "pa" else reg["name"]
+            blocks.append(f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div><h2>{esc(rname)}</h2></div></div>
+        <div class="grid grid-3">{"".join(cards)}</div>
+      </div>
+    </section>""")
+        sections = blocks
+        count_line = f'{n_all} {t["notes"]} &middot; {t["lang"]}'
+        desc_base = (f"{name}: ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK ਦੇ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ।"
+                     if lang == "pa" else
+                     f"Free {name} study notes in English: India GK and Punjab GK, by subject.")
+    else:
+        if kind == "chapter":
+            ch = p["chapter"]
+            crumbs.append((name, f"{DOMAIN}/{row['pages'][lang][:-5]}", row["pages"][lang]))
+            cname = (_chapter_label(ch, by_file) if lang == "pa" else ch["name"])
+            title = clip(f"{cname} - {name} ਨੋਟਸ" if lang == "pa"
+                         else f"{cname} - {name} Notes", 60)
+            h1 = cname
+            recs = [by_file[x["file"]] for x in ch["parts"] if x["file"] in by_file]
+            lead = (f"{name} · {len(recs)} {t['parts']}")
+            listing = "".join(_study_note_li(r, lang) for r in recs)
+            items = [(r["title"], r["url"]) for r in recs]
+            sections = [f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div><h2>{t["parts_h"]}</h2></div></div>
+        <ul class="part-list">{listing}</ul>
+      </div>
+    </section>"""]
+            count_line = f'{len(recs)} {t["parts"]} &middot; {t["lang"]}'
+            desc_base = (f"{cname}: {name} ਦੇ ਇਸ ਅਧਿਆਇ ਦੇ {len(recs)} ਭਾਗ, ਪੰਜਾਬੀ ਵਿੱਚ।"
+                         if lang == "pa" else
+                         f"{cname}: all {len(recs)} parts of this {name} chapter, in English.")
+        else:
+            # "English notes in English" says nothing twice: the language
+            # subjects drop the language phrase.
+            same = row["id"] == ("punjabi" if lang == "pa" else "english")
+            title = (f"{name} ਦੇ ਨੋਟਸ{'' if same else ' ਪੰਜਾਬੀ ਵਿੱਚ'} - ਮੁਫ਼ਤ PDF"
+                     if lang == "pa" else
+                     clip(f"{name} Study Notes{'' if same else ' in English'} - Free PDFs", 60))
+            h1 = f"{name} ਦੇ ਪੜ੍ਹਾਈ ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
+            lead = (f"{name} ਦੇ ਅਧਿਆਇ-ਵਾਰ ਨੋਟਸ, ਪੰਜਾਬੀ ਵਿੱਚ। ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।"
+                    if lang == "pa" else str(row.get("description") or ""))
+            groups, n_notes = {}, 0
+            for ch in p["chapters"]:
+                recs = [by_file[x["file"]] for x in ch["parts"] if x["file"] in by_file]
+                if not recs:
+                    continue
+                n_notes += len(recs)
+                sub = str(recs[0].get("studySubcategory") or "")
+                if ch.get("page"):
+                    cname = (_chapter_label(ch, by_file) if lang == "pa" else ch["name"])
+                    li = (f'<li><a href="{esc(ch["page"])}">{esc(cname)}</a>'
+                          f'<span class="part-meta">{len(recs)} {t["parts"]}</span></li>')
+                    items.append((cname, f"{DOMAIN}/{ch['page'][:-5]}"))
+                else:
+                    li = _study_note_li(recs[0], lang)
+                    items.append((recs[0]["title"], recs[0]["url"]))
+                groups.setdefault(sub, []).append(li)
+            blocks = []
+            for sub, lis in groups.items():
+                head_txt = ((STUDY_GK_PA.get(sub) if lang == "pa" else None)
+                            or (pdf_title_from_name(sub) if sub else t["chapters_h"]))
+                blocks.append(f'<h2>{esc(head_txt)}</h2><ul class="part-list">{"".join(lis)}</ul>')
+            listing = "".join(blocks) or f"""<div class="empty-state">
+            <span class="es-icon" aria-hidden="true">📚</span>
+            <h2>{t["empty_h"]}</h2>
+            <p>{t["empty_p"]}</p>
+          </div>"""
+            sections = [f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        {listing}
+      </div>
+    </section>"""]
+            count_line = f'{n_notes} {t["notes"] if n_notes != 1 else t["note"]} &middot; {t["lang"]}'
+            desc_base = (f"{name} ਦੇ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ, ਅਧਿਆਇ-ਵਾਰ।"
+                         if lang == "pa" else
+                         f"Free {name} study notes in English, chapter by chapter.")
+    crumbs.append((h1 if kind != "subject" else name, url, ""))
+    # Every top-level subject, in this page's language: the static way in to
+    # each section page (the header menu is built by script).
+    others = "".join(
+        f'<a class="btn btn-sm btn-soft" href="{esc(r["pages"][lang])}">'
+        f'{esc(r.get("icon") or "")} {esc(study_subject_label(r, lang))}</a>'
+        for r in rows_by_id.values()
+        if not r.get("hidden") and r.get("pages") and r["pages"][lang] != file)
+    if others:
+        sections.append(f"""    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal"><div><h2>{t["others_h"]}</h2></div></div>
+        <div class="btn-row">{others}</div>
+      </div>
+    </section>""")
+
+    if lang == "pa":
+        desc = fit_study_description(desc_base, [
+            " ਪੰਜਾਬ ਪੁਲਿਸ ਅਤੇ PSSSB ਦੀ ਤਿਆਰੀ ਲਈ।", " ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।",
+            " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ।", " ਹਰ ਉਮੀਦਵਾਰ ਲਈ ਮੁਫ਼ਤ।",
+            " House of Aspirants ਵੱਲੋਂ।"], " ਪੜ੍ਹਨ ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਬਿਲਕੁਲ ਮੁਫ਼ਤ।")
+    else:
+        desc = fit_study_description(desc_base, [
+            " For Punjab Police and PSSSB exams.", " Read online or download the PDF.",
+            " No sign-up, no fee.", " Free for every aspirant.",
+            " From House of Aspirants."], " Free to read and download.")
+
+    nodes = [webpage_node(url, title, desc, f"{url}#breadcrumb", kind="CollectionPage"),
+             breadcrumb_node({"id": f"{url}#breadcrumb",
+                              "items": [(n, u) for n, u, _ in crumbs]})]
+    nodes[0]["mainEntity"] = {"@id": f"{url}#items"}
+    nodes.append({"@type": "ItemList", "@id": f"{url}#items",
+                  "numberOfItems": len(items),
+                  "itemListElement": [{"@type": "ListItem", "position": i + 1,
+                                       "name": n, "url": u}
+                                      for i, (n, u) in enumerate(items)]})
+    twin = p.get("twin")
+    paired = bool(twin and p["indexable"] and twin["indexable"])
+    alternates = ()
+    if paired:
+        en_f = file if lang == "en" else twin["file"]
+        pa_f = twin["file"] if lang == "en" else file
+        alternates = (("en", f"{DOMAIN}/{en_f[:-5]}"), ("pa", f"{DOMAIN}/{pa_f[:-5]}"),
+                      ("x-default", f"{DOMAIN}/{en_f[:-5]}"))
+    html = head(title, desc, f"{name}, Study Notes, {t['lang']}, House of Aspirants",
+                url, "website", graph(nodes), lang=lang, alternates=alternates)
+    html = localize_head(html, lang)
+    if not p["indexable"]:
+        html = html.replace('<meta name="robots" content="index, follow">',
+                            '<meta name="robots" content="noindex, follow">', 1)
+    if twin and not paired:
+        # No hreflang to a page with nothing on it - but the header language
+        # switch still opens the twin (core.js reads this).
+        other = "en" if lang == "pa" else "pa"
+        html = html.replace("  <link rel=\"canonical\"",
+                            f'  <meta name="hoa-twin-{other}" content="/{twin["file"][:-5]}">\n'
+                            f'  <link rel="canonical"', 1)
+    html = html.replace('<body data-page="', '<body data-study-page data-page="', 1)
+    trail = "".join(f'<a href="{esc(h)}">{esc(n)}</a><span>/</span>'
+                    for n, _, h in crumbs[:-1]) + f"<span>{esc(crumbs[-1][0])}</span>"
+    html += f"""  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">{trail}</nav>
+        <span class="eyebrow">{esc(icon)} {count_line}</span>
+        <h1>{esc(h1)}</h1>
+        <p class="muted" style="max-width:70ch">{esc(lead)}</p>
+      </div>
+    </section>
+{chr(10).join(sections)}
+  </main>
+"""
+    html += TAIL
+    return html, {"file": file, "url": url, "title": title, "description": desc,
+                  **({} if p["indexable"] else {"noindex": True})}
+
+
+def _vercel_value(v):
+    """An exact-match `has` value: Vercel reads it as a regular expression."""
+    return "^" + re.sub(r"([.*+?^${}()|\[\]\\/])", r"\\\1", str(v)) + "$"
+
+
+STUDY_QUERY_KEYS = ("subject", "language", "chapter", "region", "cat", "sub")
+
+
+def study_redirects(redirects):
+    """vercel.json 301s for the old study.html?... URLs, most specific first,
+    each one exact: every key it names must match, every other key must be
+    missing. Written to data/study-redirects.json and merged into vercel.json
+    (entries this builder owns are replaced; every other redirect is kept)."""
+    entries = []
+    for params, target in sorted(redirects, key=lambda x: -len(x[0])):
+        # /study.html reaches /study through cleanUrls first, query intact.
+        for src in ("/study",):
+            entries.append({
+                "source": src,
+                "has": [{"type": "query", "key": k, "value": _vercel_value(v)}
+                        for k, v in params.items()],
+                "missing": [{"type": "query", "key": k}
+                            for k in STUDY_QUERY_KEYS if k not in params],
+                "destination": "/" + target[:-5],
+                "statusCode": 301,
+            })
+    own = ROOT / "data" / "study-redirects.json"
+    vercel = ROOT / "vercel.json"
+    cfg = json.loads(vercel.read_text(encoding="utf-8"))
+    kept = [r for r in cfg.get("redirects", [])
+            if not (r.get("source") in ("/study", "/study.html") and r.get("has"))]
+    cfg["redirects"] = kept + entries
+    vercel.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    own.write_text(json.dumps({"generatedBy": "scripts/build_content.py",
+                               "redirects": entries}, indent=2, ensure_ascii=False) + "\n",
+                   encoding="utf-8")
+    return entries
 
 
 # Study-material records of this run, for the hubs whose own folder is still
@@ -7472,6 +8065,7 @@ def main():
     # about what a file is.
     stamp_study_fields(all_records[STUDY_DIR])
     stamp_study_languages(all_records[STUDY_DIR])
+    stamp_study_pages(all_records[STUDY_DIR])
     dedupe_pdf_titles(all_records)
     link_related_pdfs(all_records, punjabi)
     # Part order and the chapters beside them: derived from the records above,
@@ -7756,6 +8350,33 @@ def main():
         info(f"current affairs pages: {len(ca_page_entries)} page(s) written "
              f"under current-affairs/")
 
+    # ---- Study subject registry + study section pages ---------------------
+    # data/study-manifest.json: the folders on disk plus the counts above, for
+    # the Study menu in core.js and the subject grid on study.html. The
+    # section pages (/study-<subject>, /pa/study-<subject> and multi-part
+    # chapters) are written from the same rows, which are then stamped with
+    # their page so the menu, the shelf and the old-URL fallback agree.
+    study_manifest = study_material.build(all_records[STUDY_DIR], study_registry())
+    info(f"study subjects: {len(study_manifest['subjects'])} folder(s), "
+         f"{study_manifest['total']} material(s) -> data/study-manifest.json")
+    study_pages, study_old_urls = study_section_plan(study_manifest,
+                                                     all_records[STUDY_DIR])
+    study_material.write(study_manifest)
+    _by_file = {r["file"]: r for r in all_records[STUDY_DIR]}
+    _rows_by_id = {r["id"]: r for r in study_manifest["subjects"]}
+    study_page_entries = []
+    for _p in study_pages:
+        _html, _entry = study_section_page(_p, _by_file, _rows_by_id)
+        _path = ROOT / _p["file"]
+        _path.parent.mkdir(parents=True, exist_ok=True)
+        _path.write_text(_html, encoding="utf-8")
+        expected.add(_p["file"])
+        study_page_entries.append(_entry)
+    _n_redirects = len(study_redirects(study_old_urls))
+    info(f"study pages: {len(study_page_entries)} written "
+         f"({sum(1 for e in study_page_entries if not e.get('noindex'))} indexable), "
+         f"{_n_redirects} old study.html URL redirect(s) in vercel.json")
+
     # ---- stale output removal --------------------------------------------
     # Every writer above has registered its files in `expected` by now, so a
     # page nobody produced any more (a deleted draft, a retired tag archive)
@@ -7765,6 +8386,16 @@ def main():
         if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and fn not in expected:
             (ROOT / fn).unlink()
             removed.append(fn)
+    # Study section pages share the "study-" stem with hand-written and hub
+    # pages (study-material.html, study-notes.html), so only a page carrying
+    # the section marker is ever removed.
+    for rel in ([f for f in os.listdir(ROOT) if f.startswith("study-")]
+                + [f"pa/{f}" for f in (os.listdir(ROOT / "pa") if (ROOT / "pa").is_dir()
+                                       else []) if f.startswith("study-")]):
+        if rel.endswith(".html") and rel not in expected and \
+                "<body data-study-page " in (ROOT / rel).read_text(encoding="utf-8"):
+            (ROOT / rel).unlink()
+            removed.append(rel)
     # Nested routes live one level down (pyq/<slug>/index.html), which the root
     # scan above cannot see into: an exam folder that no longer exists, or a
     # slug that was renamed in its metadata.json, is cleaned up here - the
@@ -7865,9 +8496,7 @@ def main():
     # the Study menu in core.js and the subject grid on study.html. Written
     # before the content manifest so a single build always leaves both files
     # describing the same run.
-    study_manifest = study_material.build(all_records[STUDY_DIR], study_registry())
-    info(f"study subjects: {len(study_manifest['subjects'])} folder(s), "
-         f"{study_manifest['total']} material(s) -> data/study-manifest.json")
+    # (written above, with the study section pages)
 
     # ---- Rank 2 Blueprint document shelf ---------------------------------
     # data/proof-manifest.json: every scan in assets/proof/, with the byte size
@@ -7892,7 +8521,8 @@ def main():
             "url": f"{DOMAIN}/archives",
             "title": ARCHIVES_TITLE,
             "description": ARCHIVES_DESC,
-        }] + phase4_manifest + pyq_page_entries + ca_page_entries,
+        }] + phase4_manifest + pyq_page_entries + ca_page_entries
+          + study_page_entries,
         "items": sorted(manifest_items, key=lambda r: r["file"]),
         "pdfs": pdfs,
         "drops": drops,

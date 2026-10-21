@@ -64,6 +64,39 @@
     }
   }
 
+  /* Every subject, language and multi-part chapter has a static page now
+     (/study-<subject>, /pa/study-<subject>; the manifest rows carry `page`,
+     `pages` and chapter `page`). vercel.json 301s the old query URLs; one
+     that slips past those - a GK category with a chapter, say - is sent to
+     the same page here, so an old link always lands where it pointed. */
+  const staticTarget = (() => {
+    if (!subjectId || view) return "";
+    const byId = (id) => shelf.find((r) => r && r.id === id) || null;
+    let row = byId(subjectId);
+    if (!row || !row.pages) return "";
+    const lang = langParam === "pa" ? "pa" : "en";
+    if (row.hierarchy) {
+      const catId = params.get("cat");
+      const cat = catId
+        ? (row.hierarchy.regions || []).flatMap((g) => g.categories || [])
+          .find((c) => c && c.id === catId)
+        : null;
+      if (!cat) return row.page;
+      row = byId(((cat.folders || [])[0]) || "");
+      if (!row || !row.pages) return "";
+    }
+    if (chapterParam) {
+      const l = (row.languages || []).find((x) => x && x.id === lang);
+      const ch = l && (l.chapters || []).find((c) => c && c.id === chapterParam);
+      if (ch) return ch.page || ((ch.parts || [])[0] || {}).file || row.pages[lang];
+    }
+    return langParam ? row.pages[lang] : row.page;
+  })();
+  if (staticTarget) {
+    location.replace("/" + String(staticTarget).replace(/\.html$/, ""));
+    return;
+  }
+
   /* The manifest may legitimately be absent while the content build has not
      run. Only study-material rows are read: everything else in that file
      belongs to another system and must never render on a Study page. */
@@ -1002,9 +1035,9 @@
      that is where the next file goes — and it says so plainly rather than
      pretending there is something to read.
 
-     A folder a hierarchy has claimed keeps its row in the manifest — its
-     material pages still link to `study?subject=<folder>` and that URL
-     must keep resolving — but it gives up its place on the shelf, because
+     A folder a hierarchy has claimed keeps its row in the manifest — it
+     keeps its own /study-<folder> page — but it gives up its place on the
+     shelf, because
      the group is what the reader is asked to choose. */
   const rows = (shelf.length
     ? shelf
@@ -1020,7 +1053,7 @@
     const languages = (r.languages || []).filter((l) => Number(l.count) > 0);
     return `
       <a class="card subject-card" style="--sc:${esc(r.color || "#4f46e5")}"
-         href="study?subject=${esc(r.id)}">
+         href="${esc(r.page ? r.page.replace(/\.html$/, "") : `study?subject=${r.id}`)}">
         <span class="subject-icon">${esc(r.icon || "📚")}</span>
         <h3>${esc(r.name)}</h3>
         <p>${esc(r.description || "Notes, PDFs and downloads for this subject.")}</p>

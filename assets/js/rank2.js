@@ -748,7 +748,7 @@
         (b.description ? `<p class="rb-book-desc">${esc(b.description)}</p>` : "") +
         `<div class="btn-row">` +
         `<a class="btn btn-primary btn-sm" href="book-${encodeURIComponent(b.id)}.html">Open Book</a>` +
-        `<a class="btn btn-soft btn-sm" href="study?subject=${encodeURIComponent(b.subject)}">Open Notes</a>` +
+        `<a class="btn btn-soft btn-sm" href="study-${String(b.subject).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}">Open Notes</a>` +
         (b.subject
           ? `<a class="btn btn-soft btn-sm" href="quiz?mode=mock&subject=${encodeURIComponent(b.subject)}">Open Quiz</a>`
           : "") +

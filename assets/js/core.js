@@ -93,6 +93,14 @@ const HOA = (() => {
     return studySubjectsPromise;
   }
 
+  /** A study subject's static page in the reader's language:
+      `Punjab GK` -> study-punjab-gk (or pa/study-punjab-gk). Same slug rule
+      as page_slug() in scripts/study_material.py. */
+  function studyHref(id) {
+    const slug = String(id).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    return `${getLang() === "pa" ? "pa/" : ""}study-${slug}`;
+  }
+
   /** Fetches one topic JSON file (one quiz) and normalises its questions. */
   async function loadQuestions(file) {
     const res = await fetch(file, { cache: "no-cache" });
@@ -355,18 +363,24 @@ const HOA = (() => {
     return pageLang() || (db.get(LANG_KEY) === "en" ? "en" : "pa"); // Punjabi is the default
   }
 
-  /** Open this page in `lang`: its hreflang twin when it has one, else the
-      same URL with ?lang=. Every other query parameter (utm_* included) is
-      kept; listeners of `hoa:lang-nav` may set url.hash (quiz.js adds #q=N). */
+  /** Open this page in `lang`: its hreflang twin when it has one (or the
+      twin named by <meta name="hoa-twin-xx"> - a study page whose other
+      language has no notes yet, so no hreflang), else the same URL with
+      ?lang=. Every other query parameter (utm_* included) is kept;
+      listeners of `hoa:lang-nav` may set url.hash (quiz.js adds #q=N). */
   function gotoLang(lang) {
     const sp = new URLSearchParams(location.search);
     const alt = /** @type {HTMLLinkElement | null} */ (
       document.querySelector(`link[rel="alternate"][hreflang="${lang}"]`)
     );
+    const twin = /** @type {HTMLMetaElement | null} */ (
+      document.querySelector(`meta[name="hoa-twin-${lang}"]`)
+    );
     const url = new URL(location.href);
-    if (alt) {
+    if (alt || twin) {
       sp.delete("lang");
-      url.pathname = new URL(alt.href).pathname; // same origin, also on localhost
+      // same origin, also on localhost
+      url.pathname = alt ? new URL(alt.href).pathname : twin.content;
     } else {
       sp.set("lang", lang);
     }
@@ -604,11 +618,11 @@ const HOA = (() => {
                    stroke="currentColor" stroke-width="3" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
             </button>
             <div class="nav-drop-menu nav-cols">
-              <div class="nav-col" data-subject-list data-subject-base="study?subject=">
+              <div class="nav-col" data-subject-list data-subject-base="study-">
                 <span class="nav-col-head" data-i18n="By subject">By subject</span>
                 ${STUDY_SUBJECT_LINKS.map(
                   ([id, icon, name]) =>
-                    `<a data-nav-study="${id}" href="study?subject=${id}">${icon} ${name}</a>`
+                    `<a data-nav-study="${id}" href="${studyHref(id)}">${icon} ${name}</a>`
                 ).join("")}
               </div>
               <div class="nav-col">
@@ -736,10 +750,10 @@ const HOA = (() => {
          here too. Subjects are inline rather than one tap deeper because the
          whole point of this menu is reaching content in three taps. -->
     <p class="mm-group" data-i18n="Study">Study</p>
-    <div data-subject-list data-subject-base="study?subject=">
+    <div data-subject-list data-subject-base="study-">
       ${STUDY_SUBJECT_LINKS.map(
         ([id, icon, name]) =>
-          `<a class="mm-link" data-nav-study="${id}" href="study?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
+          `<a class="mm-link" data-nav-study="${id}" href="${studyHref(id)}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
     <div data-mm-study>
@@ -1064,19 +1078,19 @@ const HOA = (() => {
      * re-ordered rather than duplicated, and nothing here is written by hand. */
     loadStudySubjects().then((allRows) => {
       /* A folder a hierarchy has claimed keeps its row in the manifest — a
-       * link to `study?subject=<folder>` has to keep resolving — but it
+       * folder keeps its own /study-<folder> page — but it
        * is not listed here: the group is the row the reader picks. Nothing
        * else about it changes, so an ungrouped subject is untouched. */
       const rows = (allRows || []).filter((r) => r && !r.hidden);
       if (!rows.length) return;
       const pos = new Map(rows.map((r, i) => [String(r.id), i]));
       document
-        .querySelectorAll('[data-subject-list][data-subject-base^="study?"], [data-subject-list][data-subject-base^="study.html"]')
+        .querySelectorAll('[data-subject-list][data-subject-base="study-"]')
         .forEach((list) => {
           const isMobile = !!list.closest(".mobile-menu");
           const inMenu = !!list.closest(".nav-drop-menu");
           rows.forEach((r) => {
-            const href = `study?subject=${encodeURIComponent(r.id)}`;
+            const href = studyHref(String(r.id));
             let a = /** @type {HTMLAnchorElement | null} */ (
               list.querySelector(`a[href="${href}"]`));
             if (!a) {

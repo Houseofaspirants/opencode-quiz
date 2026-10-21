@@ -991,6 +991,15 @@ if CONTENT_MANIFEST.exists():
                         if (ROOT / parent).exists() else "")
                 if not linked:
                     errors.append(f"{f}: not linked from {' or '.join(parents)}")
+            elif f.startswith(("study-", "pa/study-")):
+                # Study section pages hang off each other: the subject row on
+                # every one, the GK hub's category cards and a subject page's
+                # chapter list. One of them has to link this page.
+                if not any(f'href="{f}"' in read_audit_source(q, encoding="utf-8")
+                           for q in list(ROOT.glob("study-*.html"))
+                           + list(ROOT.glob("pa/study-*.html"))
+                           if q.relative_to(ROOT).as_posix() != f):
+                    errors.append(f"{f}: not linked from any other study page")
             elif f'href="{f}"' not in core:
                 errors.append(f"chrome missing content index link {f}")
             want_pg = page_url(f)
@@ -2023,7 +2032,7 @@ if landing_pages:
     # English); the twin must exist and declare the same three back; each side
     # says its own language in <html lang> and data-page-lang; and an
     # indexable pair is in the sitemap on both sides.
-    MCQ_PAGE_PREFIXES = ("expected-mcqs", "subject-", "chapter-", "category-", "topic-",
+    MCQ_PAGE_PREFIXES = ("expected-mcqs", "subject-", "chapter-", "category-", "topic-", "study-",
                          "quiz-", "result")
     HREFLANG_RX = re.compile(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">')
     n_pairs_all = 0

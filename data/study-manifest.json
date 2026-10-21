@@ -36,7 +36,7 @@
           "chapters": [
             {
               "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
-              "name": "Chapter 1: ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
+              "name": "ਅਧਿਆਇ 1: ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch01.html",
@@ -47,7 +47,7 @@
             },
             {
               "id": "02 - ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
-              "name": "Chapter 2: ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
+              "name": "ਅਧਿਆਇ 2: ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch02.html",
@@ -58,7 +58,7 @@
             },
             {
               "id": "03 - ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
-              "name": "Chapter 3: ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
+              "name": "ਅਧਿਆਇ 3: ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch03.html",
@@ -69,7 +69,7 @@
             },
             {
               "id": "04 - ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
-              "name": "Chapter 4: ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
+              "name": "ਅਧਿਆਇ 4: ਇੰਪੁੱਟ ਡਿਵਾਈਸਾਂ (Input Devices)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch04.html",
@@ -80,7 +80,7 @@
             },
             {
               "id": "05 - ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices)",
-              "name": "Chapter 5: ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices)",
+              "name": "ਅਧਿਆਇ 5: ਆਉਟਪੁੱਟ ਡਿਵਾਈਸਾਂ (Output Devices)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch05.html",
@@ -91,7 +91,7 @@
             },
             {
               "id": "06 - ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
-              "name": "Chapter 6: ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
+              "name": "ਅਧਿਆਇ 6: ਕੇਂਦਰੀ ਪ੍ਰੋਸੈਸਿੰਗ ਯੂਨਿਟ (Processor)",
               "parts": [
                 {
                   "file": "material-computer-pa-ch06.html",
@@ -178,7 +178,12 @@
           ]
         }
       ],
-      "chapters": 12
+      "chapters": 12,
+      "page": "study-computer.html",
+      "pages": {
+        "en": "study-computer.html",
+        "pa": "pa/study-computer.html"
+      }
     },
     {
       "id": "english",
@@ -264,7 +269,12 @@
           ]
         }
       ],
-      "chapters": 5
+      "chapters": 5,
+      "page": "study-english.html",
+      "pages": {
+        "en": "study-english.html",
+        "pa": "pa/study-english.html"
+      }
     },
     {
       "id": "punjabi",
@@ -286,7 +296,7 @@
           "chapters": [
             {
               "id": "01 - ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language)",
-              "name": "Chapter 1: ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language)",
+              "name": "ਅਧਿਆਇ 1: ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Language)",
               "parts": [
                 {
                   "file": "material-bhasha-ate-panjabi-bhasha.html",
@@ -297,7 +307,7 @@
             },
             {
               "id": "02 - ਲਿਪੀ ਬੋਧ (Gurmukhi Script)",
-              "name": "Chapter 2: ਲਿਪੀ ਬੋਧ (Gurmukhi Script)",
+              "name": "ਅਧਿਆਇ 2: ਲਿਪੀ ਬੋਧ (Gurmukhi Script)",
               "parts": [
                 {
                   "file": "material-lipi-bodh.html",
@@ -308,7 +318,7 @@
             },
             {
               "id": "03 - ਸ਼ਬਦ ਬੋਧ (Words)",
-              "name": "Chapter 3: ਸ਼ਬਦ ਬੋਧ (Words)",
+              "name": "ਅਧਿਆਇ 3: ਸ਼ਬਦ ਬੋਧ (Words)",
               "parts": [
                 {
                   "file": "material-shbd-bodh.html",
@@ -319,7 +329,7 @@
             },
             {
               "id": "04 - ਨਾਂਵ (Noun)",
-              "name": "Chapter 4: ਨਾਂਵ (Noun)",
+              "name": "ਅਧਿਆਇ 4: ਨਾਂਵ (Noun)",
               "parts": [
                 {
                   "file": "material-nanv.html",
@@ -330,7 +340,7 @@
             },
             {
               "id": "05 - ਲਿੰਗ (Gender)",
-              "name": "Chapter 5: ਲਿੰਗ (Gender)",
+              "name": "ਅਧਿਆਇ 5: ਲਿੰਗ (Gender)",
               "parts": [
                 {
                   "file": "material-ling.html",
@@ -341,7 +351,7 @@
             },
             {
               "id": "06 - ਵਚਨ (Number)",
-              "name": "Chapter 6: ਵਚਨ (Number)",
+              "name": "ਅਧਿਆਇ 6: ਵਚਨ (Number)",
               "parts": [
                 {
                   "file": "material-vchn.html",
@@ -352,7 +362,7 @@
             },
             {
               "id": "07 - ਕਾਰਕ (Case)",
-              "name": "Chapter 7: ਕਾਰਕ (Case)",
+              "name": "ਅਧਿਆਇ 7: ਕਾਰਕ (Case)",
               "parts": [
                 {
                   "file": "material-kark.html",
@@ -363,7 +373,7 @@
             },
             {
               "id": "08 - ਪੜਨਾਂਵ (Pronoun)",
-              "name": "Chapter 8: ਪੜਨਾਂਵ (Pronoun)",
+              "name": "ਅਧਿਆਇ 8: ਪੜਨਾਂਵ (Pronoun)",
               "parts": [
                 {
                   "file": "material-prnanv.html",
@@ -374,7 +384,7 @@
             },
             {
               "id": "09 - ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
-              "name": "Chapter 9: ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
+              "name": "ਅਧਿਆਇ 9: ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
               "parts": [
                 {
                   "file": "material-visheshn.html",
@@ -385,7 +395,7 @@
             },
             {
               "id": "10 - ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
-              "name": "Chapter 10: ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
+              "name": "ਅਧਿਆਇ 10: ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
               "parts": [
                 {
                   "file": "material-kiria-visheshn.html",
@@ -396,7 +406,7 @@
             },
             {
               "id": "11 - ਸੰਬੰਧਕ (Preposition)",
-              "name": "Chapter 11: ਸੰਬੰਧਕ (Preposition)",
+              "name": "ਅਧਿਆਇ 11: ਸੰਬੰਧਕ (Preposition)",
               "parts": [
                 {
                   "file": "material-sanbandhk.html",
@@ -407,7 +417,7 @@
             },
             {
               "id": "12 - ਯੋਜਕ (Conjunction)",
-              "name": "Chapter 12: ਯੋਜਕ (Conjunction)",
+              "name": "ਅਧਿਆਇ 12: ਯੋਜਕ (Conjunction)",
               "parts": [
                 {
                   "file": "material-yojk.html",
@@ -418,7 +428,7 @@
             },
             {
               "id": "13 - ਵਿਸਮਿਕ (Interjection)",
-              "name": "Chapter 13: ਵਿਸਮਿਕ (Interjection)",
+              "name": "ਅਧਿਆਇ 13: ਵਿਸਮਿਕ (Interjection)",
               "parts": [
                 {
                   "file": "material-vismik.html",
@@ -429,7 +439,7 @@
             },
             {
               "id": "14 - ਸਮਾਸ ਰਚਨਾ (Compound Words)",
-              "name": "Chapter 14: ਸਮਾਸ ਰਚਨਾ (Compound Words)",
+              "name": "ਅਧਿਆਇ 14: ਸਮਾਸ ਰਚਨਾ (Compound Words)",
               "parts": [
                 {
                   "file": "material-smas-rchna.html",
@@ -440,7 +450,7 @@
             },
             {
               "id": "15 - ਵਾਕ ਬੋਧ (Sentence)",
-              "name": "Chapter 15: ਵਾਕ ਬੋਧ (Sentence)",
+              "name": "ਅਧਿਆਇ 15: ਵਾਕ ਬੋਧ (Sentence)",
               "parts": [
                 {
                   "file": "material-vak-bodh.html",
@@ -451,7 +461,7 @@
             },
             {
               "id": "16 - ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ (Correct Usage)",
-              "name": "Chapter 16: ਸ਼ੁੱਧ ਅਸ਼ੁੱਧ (Correct Usage)",
+              "name": "ਅਧਿਆਇ 16: ਸ਼ੁੱਧ ਅਸ਼ੁੱਧ (Correct Usage)",
               "parts": [
                 {
                   "file": "material-shudh-ashudh.html",
@@ -462,7 +472,7 @@
             },
             {
               "id": "17 - ਮੁਹਾਵਰੇ (Idioms)",
-              "name": "Chapter 17: ਮੁਹਾਵਰੇ (Idioms)",
+              "name": "ਅਧਿਆਇ 17: ਮੁਹਾਵਰੇ (Idioms)",
               "parts": [
                 {
                   "file": "material-muhavre.html",
@@ -473,7 +483,7 @@
             },
             {
               "id": "18 - ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms and Antonyms)",
-              "name": "Chapter 18: ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms and Antonyms)",
+              "name": "ਅਧਿਆਇ 18: ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms and Antonyms)",
               "parts": [
                 {
                   "file": "material-smanarthk-ate-virodhi-shbd.html",
@@ -484,7 +494,7 @@
             },
             {
               "id": "19 - ਅਖਾਣ (Proverbs)",
-              "name": "Chapter 19: ਅਖਾਣ (Proverbs)",
+              "name": "ਅਧਿਆਇ 19: ਅਖਾਣ (Proverbs)",
               "parts": [
                 {
                   "file": "material-akhan.html",
@@ -495,7 +505,7 @@
             },
             {
               "id": "20 - ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ (Translation)",
-              "name": "Chapter 20: ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ (Translation)",
+              "name": "ਅਧਿਆਇ 20: ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ (Translation)",
               "parts": [
                 {
                   "file": "material-angreji-ton-panjabi.html",
@@ -506,7 +516,7 @@
             },
             {
               "id": "21 - ਸ਼ਬਦ ਬਦਲ (One Word Substitution)",
-              "name": "Chapter 21: ਸ਼ਬਦ ਬਦਲ (One Word Substitution)",
+              "name": "ਅਧਿਆਇ 21: ਸ਼ਬਦ ਬਦਲ (One Word Substitution)",
               "parts": [
                 {
                   "file": "material-shbd-bdl.html",
@@ -526,7 +536,12 @@
           "chapters": []
         }
       ],
-      "chapters": 21
+      "chapters": 21,
+      "page": "study-punjabi.html",
+      "pages": {
+        "en": "study-punjabi.html",
+        "pa": "pa/study-punjabi.html"
+      }
     },
     {
       "id": "reasoning",
@@ -624,7 +639,12 @@
           ]
         }
       ],
-      "chapters": 6
+      "chapters": 6,
+      "page": "study-reasoning.html",
+      "pages": {
+        "en": "study-reasoning.html",
+        "pa": "pa/study-reasoning.html"
+      }
     },
     {
       "id": "quant",
@@ -678,7 +698,12 @@
           ]
         }
       ],
-      "chapters": 2
+      "chapters": 2,
+      "page": "study-quant.html",
+      "pages": {
+        "en": "study-quant.html",
+        "pa": "pa/study-quant.html"
+      }
     },
     {
       "id": "gk",
@@ -743,7 +768,7 @@
                     "chapters": [
                       {
                         "id": "modern-history/Chapter 01 - Arrival of European in India",
-                        "name": "Chapter 01: Arrival of European in India",
+                        "name": "ਅਧਿਆਇ 01: ਭਾਰਤ ਵਿੱਚ ਯੂਰਪੀਅਨਾਂ ਦਾ ਆਗਮਨ",
                         "parts": [
                           {
                             "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
@@ -754,7 +779,7 @@
                       },
                       {
                         "id": "modern-history/Chapter 02 - Expansion of English East India Company in India",
-                        "name": "Chapter 02: Expansion of English East India Company in India",
+                        "name": "ਅਧਿਆਇ 02: ਈਸਟ ਇੰਡੀਆ ਕੰਪਨੀ ਦਾ ਵਿਸਥਾਰ",
                         "parts": [
                           {
                             "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
@@ -773,11 +798,12 @@
                             "n": 4
                           }
                         ],
-                        "pages": 1
+                        "pages": 1,
+                        "page": "pa/study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
                       },
                       {
                         "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
-                        "name": "Chapter 03: Extension of British Paramountcy Through",
+                        "name": "ਅਧਿਆਇ 03: ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਵਿਸਥਾਰ",
                         "parts": [
                           {
                             "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
@@ -827,7 +853,8 @@
                             "n": 4
                           }
                         ],
-                        "pages": 1
+                        "pages": 1,
+                        "page": "study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
                       },
                       {
                         "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
@@ -932,7 +959,7 @@
                         "chapters": [
                           {
                             "id": "modern-history/Chapter 01 - Arrival of European in India",
-                            "name": "Chapter 01: Arrival of European in India",
+                            "name": "ਅਧਿਆਇ 01: ਭਾਰਤ ਵਿੱਚ ਯੂਰਪੀਅਨਾਂ ਦਾ ਆਗਮਨ",
                             "parts": [
                               {
                                 "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
@@ -943,7 +970,7 @@
                           },
                           {
                             "id": "modern-history/Chapter 02 - Expansion of English East India Company in India",
-                            "name": "Chapter 02: Expansion of English East India Company in India",
+                            "name": "ਅਧਿਆਇ 02: ਈਸਟ ਇੰਡੀਆ ਕੰਪਨੀ ਦਾ ਵਿਸਥਾਰ",
                             "parts": [
                               {
                                 "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
@@ -962,11 +989,12 @@
                                 "n": 4
                               }
                             ],
-                            "pages": 1
+                            "pages": 1,
+                            "page": "pa/study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
                           },
                           {
                             "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
-                            "name": "Chapter 03: Extension of British Paramountcy Through",
+                            "name": "ਅਧਿਆਇ 03: ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਵਿਸਥਾਰ",
                             "parts": [
                               {
                                 "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
@@ -1016,7 +1044,8 @@
                                 "n": 4
                               }
                             ],
-                            "pages": 1
+                            "pages": 1,
+                            "page": "study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
                           },
                           {
                             "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
@@ -1313,7 +1342,7 @@
                     "chapters": [
                       {
                         "id": "01 - ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
-                        "name": "Chapter 1: ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+                        "name": "ਅਧਿਆਇ 1: ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
                         "parts": [
                           {
                             "file": "material-01-guru-nank-dev-ji-ate-guru-angd-dev-ji.html",
@@ -1324,7 +1353,7 @@
                       },
                       {
                         "id": "02 - ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ, ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ",
-                        "name": "Chapter 2: ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ",
+                        "name": "ਅਧਿਆਇ 2: ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ",
                         "parts": [
                           {
                             "file": "material-02-guru-amrdas-ji-guru-ramdas-ji-ate-guru-arjn-dev-ji.html",
@@ -1335,7 +1364,7 @@
                       },
                       {
                         "id": "03 - ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ, ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ",
-                        "name": "Chapter 3: ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ",
+                        "name": "ਅਧਿਆਇ 3: ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ",
                         "parts": [
                           {
                             "file": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
@@ -1346,7 +1375,7 @@
                       },
                       {
                         "id": "04 - ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
-                        "name": "Chapter 4: ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+                        "name": "ਅਧਿਆਇ 4: ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
                         "parts": [
                           {
                             "file": "material-04-guru-teg-bhadr-ji-ate-guru-gobind-singh-ji.html",
@@ -1357,7 +1386,7 @@
                       },
                       {
                         "id": "05 - ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
-                        "name": "Chapter 5: ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
+                        "name": "ਅਧਿਆਇ 5: ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
                         "parts": [
                           {
                             "file": "material-05-sri-guru-granth-sahib-ji-ate-panj-tkht.html",
@@ -1368,7 +1397,7 @@
                       },
                       {
                         "id": "06 - ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
-                        "name": "Chapter 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
+                        "name": "ਅਧਿਆਇ 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
                         "parts": [
                           {
                             "file": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
@@ -1482,7 +1511,7 @@
                     "chapters": [
                       {
                         "id": "Cultural Fairs",
-                        "name": "Cultural Fairs",
+                        "name": "ਪੰਜਾਬ ਦੇ ਮੇਲੇ",
                         "parts": [
                           {
                             "file": "material-cultural-fairs-pa.html",
@@ -1493,7 +1522,7 @@
                       },
                       {
                         "id": "Punajb Folk dances",
-                        "name": "Punajb Folk Dances",
+                        "name": "ਪੰਜਾਬ ਦੇ ਲੋਕ-ਨਾਚ",
                         "parts": [
                           {
                             "file": "material-punjab-folk-dance-pa.html",
@@ -1598,7 +1627,7 @@
                     "chapters": [
                       {
                         "id": "rivers-of-punjab",
-                        "name": "Rivers of Punjab",
+                        "name": "ਪੰਜਾਬ ਦੇ ਦਰਿਆ",
                         "parts": [
                           {
                             "file": "material-rivers-of-punjab-pa.html",
@@ -1657,7 +1686,7 @@
                     "chapters": [
                       {
                         "id": "01 - ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
-                        "name": "Chapter 1: ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
+                        "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
                         "parts": [
                           {
                             "file": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
@@ -1730,6 +1759,11 @@
             ]
           }
         ]
+      },
+      "page": "study-gk.html",
+      "pages": {
+        "en": "study-gk.html",
+        "pa": "pa/study-gk.html"
       }
     },
     {
@@ -1796,7 +1830,12 @@
         }
       ],
       "chapters": 3,
-      "hidden": true
+      "hidden": true,
+      "page": "study-polity.html",
+      "pages": {
+        "en": "study-polity.html",
+        "pa": "pa/study-polity.html"
+      }
     },
     {
       "id": "history",
@@ -1818,7 +1857,7 @@
           "chapters": [
             {
               "id": "modern-history/Chapter 01 - Arrival of European in India",
-              "name": "Chapter 01: Arrival of European in India",
+              "name": "ਅਧਿਆਇ 01: ਭਾਰਤ ਵਿੱਚ ਯੂਰਪੀਅਨਾਂ ਦਾ ਆਗਮਨ",
               "parts": [
                 {
                   "file": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
@@ -1829,7 +1868,7 @@
             },
             {
               "id": "modern-history/Chapter 02 - Expansion of English East India Company in India",
-              "name": "Chapter 02: Expansion of English East India Company in India",
+              "name": "ਅਧਿਆਇ 02: ਈਸਟ ਇੰਡੀਆ ਕੰਪਨੀ ਦਾ ਵਿਸਥਾਰ",
               "parts": [
                 {
                   "file": "material-expansion-of-english-east-india-company-in-india-part-1-pa.html",
@@ -1848,11 +1887,12 @@
                   "n": 4
                 }
               ],
-              "pages": 1
+              "pages": 1,
+              "page": "pa/study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
             },
             {
               "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
-              "name": "Chapter 03: Extension of British Paramountcy Through",
+              "name": "ਅਧਿਆਇ 03: ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਵਿਸਥਾਰ",
               "parts": [
                 {
                   "file": "material-chapter-03-extension-of-british-paramountcy-through-administrati-2.html",
@@ -1902,7 +1942,8 @@
                   "n": 4
                 }
               ],
-              "pages": 1
+              "pages": 1,
+              "page": "study-history-modern-history-02-expansion-of-english-east-india-company-in-india.html"
             },
             {
               "id": "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
@@ -1919,7 +1960,12 @@
         }
       ],
       "chapters": 6,
-      "hidden": true
+      "hidden": true,
+      "page": "study-history.html",
+      "pages": {
+        "en": "study-history.html",
+        "pa": "pa/study-history.html"
+      }
     },
     {
       "id": "geography",
@@ -1950,7 +1996,12 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
+      "hidden": true,
+      "page": "study-geography.html",
+      "pages": {
+        "en": "study-geography.html",
+        "pa": "pa/study-geography.html"
+      }
     },
     {
       "id": "economy",
@@ -2005,7 +2056,12 @@
         }
       ],
       "chapters": 2,
-      "hidden": true
+      "hidden": true,
+      "page": "study-economy.html",
+      "pages": {
+        "en": "study-economy.html",
+        "pa": "pa/study-economy.html"
+      }
     },
     {
       "id": "science",
@@ -2036,7 +2092,12 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
+      "hidden": true,
+      "page": "study-science.html",
+      "pages": {
+        "en": "study-science.html",
+        "pa": "pa/study-science.html"
+      }
     },
     {
       "id": "miscellaneous",
@@ -2067,7 +2128,12 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
+      "hidden": true,
+      "page": "study-miscellaneous.html",
+      "pages": {
+        "en": "study-miscellaneous.html",
+        "pa": "pa/study-miscellaneous.html"
+      }
     },
     {
       "id": "history-of-punjab",
@@ -2089,7 +2155,7 @@
           "chapters": [
             {
               "id": "01 - ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
-              "name": "Chapter 1: ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
+              "name": "ਅਧਿਆਇ 1: ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
               "parts": [
                 {
                   "file": "material-01-guru-nank-dev-ji-ate-guru-angd-dev-ji.html",
@@ -2100,7 +2166,7 @@
             },
             {
               "id": "02 - ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ, ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ ਜੀ",
-              "name": "Chapter 2: ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ",
+              "name": "ਅਧਿਆਇ 2: ਗੁਰੂ ਅਮਰਦਾਸ ਜੀ ਗੁਰੂ ਰਾਮਦਾਸ ਜੀ ਅਤੇ ਗੁਰੂ ਅਰਜਨ ਦੇਵ",
               "parts": [
                 {
                   "file": "material-02-guru-amrdas-ji-guru-ramdas-ji-ate-guru-arjn-dev-ji.html",
@@ -2111,7 +2177,7 @@
             },
             {
               "id": "03 - ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ, ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ",
-              "name": "Chapter 3: ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ",
+              "name": "ਅਧਿਆਇ 3: ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ ਗੁਰੂ ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਗੁਰੂ",
               "parts": [
                 {
                   "file": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
@@ -2122,7 +2188,7 @@
             },
             {
               "id": "04 - ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
-              "name": "Chapter 4: ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
+              "name": "ਅਧਿਆਇ 4: ਗੁਰੂ ਤੇਗ ਬਹਾਦਰ ਜੀ ਅਤੇ ਗੁਰੂ ਗੋਬਿੰਦ ਸਿੰਘ ਜੀ",
               "parts": [
                 {
                   "file": "material-04-guru-teg-bhadr-ji-ate-guru-gobind-singh-ji.html",
@@ -2133,7 +2199,7 @@
             },
             {
               "id": "05 - ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
-              "name": "Chapter 5: ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
+              "name": "ਅਧਿਆਇ 5: ਸ੍ਰੀ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਅਤੇ ਪੰਜ ਤਖ਼ਤ",
               "parts": [
                 {
                   "file": "material-05-sri-guru-granth-sahib-ji-ate-panj-tkht.html",
@@ -2144,7 +2210,7 @@
             },
             {
               "id": "06 - ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
-              "name": "Chapter 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
+              "name": "ਅਧਿਆਇ 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
               "parts": [
                 {
                   "file": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
@@ -2232,7 +2298,12 @@
         }
       ],
       "chapters": 12,
-      "hidden": true
+      "hidden": true,
+      "page": "study-history-of-punjab.html",
+      "pages": {
+        "en": "study-history-of-punjab.html",
+        "pa": "pa/study-history-of-punjab.html"
+      }
     },
     {
       "id": "culture-of-punjab",
@@ -2254,7 +2325,7 @@
           "chapters": [
             {
               "id": "Cultural Fairs",
-              "name": "Cultural Fairs",
+              "name": "ਪੰਜਾਬ ਦੇ ਮੇਲੇ",
               "parts": [
                 {
                   "file": "material-cultural-fairs-pa.html",
@@ -2265,7 +2336,7 @@
             },
             {
               "id": "Punajb Folk dances",
-              "name": "Punajb Folk Dances",
+              "name": "ਪੰਜਾਬ ਦੇ ਲੋਕ-ਨਾਚ",
               "parts": [
                 {
                   "file": "material-punjab-folk-dance-pa.html",
@@ -2309,7 +2380,12 @@
         }
       ],
       "chapters": 4,
-      "hidden": true
+      "hidden": true,
+      "page": "study-culture-of-punjab.html",
+      "pages": {
+        "en": "study-culture-of-punjab.html",
+        "pa": "pa/study-culture-of-punjab.html"
+      }
     },
     {
       "id": "punjab-literature",
@@ -2340,7 +2416,12 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
+      "hidden": true,
+      "page": "study-punjab-literature.html",
+      "pages": {
+        "en": "study-punjab-literature.html",
+        "pa": "pa/study-punjab-literature.html"
+      }
     },
     {
       "id": "geography-of-punjab",
@@ -2362,7 +2443,7 @@
           "chapters": [
             {
               "id": "rivers-of-punjab",
-              "name": "Rivers of Punjab",
+              "name": "ਪੰਜਾਬ ਦੇ ਦਰਿਆ",
               "parts": [
                 {
                   "file": "material-rivers-of-punjab-pa.html",
@@ -2395,7 +2476,12 @@
         }
       ],
       "chapters": 2,
-      "hidden": true
+      "hidden": true,
+      "page": "study-geography-of-punjab.html",
+      "pages": {
+        "en": "study-geography-of-punjab.html",
+        "pa": "pa/study-geography-of-punjab.html"
+      }
     },
     {
       "id": "economy-of-punjab",
@@ -2417,7 +2503,7 @@
           "chapters": [
             {
               "id": "01 - ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
-              "name": "Chapter 1: ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
+              "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ",
               "parts": [
                 {
                   "file": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
@@ -2450,7 +2536,12 @@
         }
       ],
       "chapters": 2,
-      "hidden": true
+      "hidden": true,
+      "page": "study-economy-of-punjab.html",
+      "pages": {
+        "en": "study-economy-of-punjab.html",
+        "pa": "pa/study-economy-of-punjab.html"
+      }
     },
     {
       "id": "Punjab GK",
@@ -2481,7 +2572,12 @@
         }
       ],
       "chapters": 0,
-      "hidden": true
+      "hidden": true,
+      "page": "study-punjab-gk.html",
+      "pages": {
+        "en": "study-punjab-gk.html",
+        "pa": "pa/study-punjab-gk.html"
+      }
     }
   ],
   "total": 83,

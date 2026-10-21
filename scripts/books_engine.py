@@ -550,7 +550,7 @@ def related_for(book: dict, seed: dict, pool: list, quizzes: list):
                   "eyebrow": "Study"},
                  {"href": "articles.html", "label": "Study guides",
                   "eyebrow": "Study"},
-                 {"href": f"study.html?subject={subject}",
+                 {"href": bc.study_page_for(subject),
                   "label": f"{subject_name} in Study", "eyebrow": "Study"}]
     if not mcqs:
         mcqs = [{"href": "expected-mcqs.html", "label": "Topic-wise expected MCQs",
@@ -682,7 +682,7 @@ def rec_group(title: str, rows: list, cta: str = "Open →") -> str:
 def keep_going(book: dict) -> str:
     subject = book["subject"]
     cards = [
-        ("study.html?subject=" + subject, "Study",
+        (bc.study_page_for(subject), "Study",
          f"{label_for(SUBJECT_LABELS, subject)} notes and guides"),
         ("subject.html?subject=" + subject, "Practice",
          f"{label_for(SUBJECT_LABELS, subject)} questions to attempt"),
