@@ -106,7 +106,7 @@
   background: var(--surface-2, transparent); font-size: 0.93rem; line-height: 1.55;
 }
 .q-alt-text { font-weight: 600; margin: 0 0 6px; }
-.q-alt-opts { margin: 0; padding-left: 1.4em; }
+.q-alt-opts { margin: 0; padding-left: 1.6em; list-style: upper-alpha; }
 .option {
   display: flex; align-items: center; gap: 13px;
   width: 100%; text-align: left;

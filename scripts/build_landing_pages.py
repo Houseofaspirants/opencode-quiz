@@ -2063,10 +2063,14 @@ def build_quiz_pa(s, c, t):
     # A long name is trimmed from the middle, never from its "Part N" tail:
     # that tail is all that tells one part's title from the next.
     _part = re.search(r"\s*-?\s*Part\s*\d+\s*$", name)
-    title = fit_title(f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ MCQ ਟੈਸਟ",
-                      f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
-                      trim_suffix=(f" - {_part.group().strip(' -')} ਕੁਇਜ਼" if _part
-                                   else " ਕੁਇਜ਼"))
+    title = next((" ".join(x.split()) for x in (
+        f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ MCQ ਟੈਸਟ", f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
+        f"{name} ਕੁਇਜ਼") if len(" ".join(x.split())) <= 60), "")
+    if not title:
+        _tail = (f" - {' '.join(_part.group().strip(' -').split())} ਕੁਇਜ਼"
+                 if _part else " ਕੁਇਜ਼")
+        _head = " ".join((name[:_part.start()] if _part else name).split())
+        title = _head[:60 - len(_tail)].rsplit(" ", 1)[0].rstrip(" ,-") + _tail
     _d1 = (f"{name} ਆਨਲਾਈਨ ਕੁਇਜ਼: {count} MCQ ਪੰਜਾਬੀ ਵਿੱਚ, ਤੁਰੰਤ ਸਕੋਰ ਅਤੇ ਹਰ ਉੱਤਰ "
            f"ਦੀ ਵਿਆਖਿਆ। ")
     _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
