@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 593,
-  "edges": 3502,
+  "nodes": 598,
+  "edges": 3531,
   "silos": 35,
   "clusters": 94,
   "pillars": 34
@@ -165,6 +165,18 @@
    "type": "archive",
    "template": "",
    "title": "Punjabi",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-quantitative-aptitude.html",
+   "url": "/archive-category-quantitative-aptitude.html",
+   "type": "archive",
+   "template": "",
+   "title": "Quantitative Aptitude",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2790,6 +2802,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "url": "/content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "url": "/content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "type": "page",
@@ -3515,6 +3539,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: Number Series (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-01-number-system",
+   "url": "/material-01-number-system",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-01-number-system.html",
+   "url": "/material-01-number-system.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Number System (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -7518,6 +7566,18 @@
    "hub": ""
   },
   {
+   "id": "subject-quant.html",
+   "url": "/subject-quant.html",
+   "type": "subject-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-reasoning.html",
    "url": "/subject-reasoning.html",
    "type": "subject-hub",
@@ -8332,6 +8392,48 @@
   {
    "from": "archive-category-punjabi.html",
    "to": "material-yojk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "material-01-number-system.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9771,6 +9873,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-quantitative-aptitude.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-reasoning.html",
    "rel": "contextual",
    "weight": 1
@@ -10024,6 +10132,12 @@
   {
    "from": "archives.html",
    "to": "material-01-number-series.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12141,6 +12255,12 @@
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
    "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
    "rel": "related-study-material",
    "weight": 1
@@ -12148,12 +12268,6 @@
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
    "to": "material-computer-en-ch06.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-computer-pa-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12518,6 +12632,114 @@
    "weight": 1
   },
   {
+   "from": "material-01-number-system.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-01-number-system",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "subject-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-system.html",
+   "to": "material-computer-en-ch06.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -12597,13 +12819,13 @@
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-computer-en-ch06.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-computer-pa-ch06.html",
+   "to": "material-computer-en-ch06.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13947,7 +14169,7 @@
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14031,7 +14253,7 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14301,7 +14523,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14667,7 +14889,7 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14751,7 +14973,7 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17901,7 +18123,7 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17991,7 +18213,7 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21627,12 +21849,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/computer/english/03%20-%20Generations%20of%20Computers/computer-en-ch03.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -21795,6 +22011,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -21814,6 +22036,12 @@
   {
    "from": "pdfs.html",
    "to": "material-01-guru-nank-dev-ji-ate-guru-angd-dev-ji.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21952,12 +22180,6 @@
   {
    "from": "pdfs.html",
    "to": "material-computer-en-ch02.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-computer-en-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27537,6 +27759,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27604,6 +27832,12 @@
   {
    "from": "study-material.html",
    "to": "material-01-number-series.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28083,12 +28317,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/computer/english/03%20-%20Generations%20of%20Computers/computer-en-ch03.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28251,6 +28479,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "current-affairs-preparation.html",
    "rel": "contextual",
    "weight": 1
@@ -28276,6 +28510,12 @@
   {
    "from": "study-notes.html",
    "to": "material-01-guru-nank-dev-ji-ate-guru-angd-dev-ji.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28414,12 +28654,6 @@
   {
    "from": "study-notes.html",
    "to": "material-computer-en-ch02.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-computer-en-ch03.html",
    "rel": "contextual",
    "weight": 1
   },

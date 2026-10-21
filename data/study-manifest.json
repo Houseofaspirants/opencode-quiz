@@ -633,9 +633,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-21",
+      "totalSize": 4245106,
       "languages": [
         {
           "id": "pa",
@@ -650,11 +650,23 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01-number system  ",
+              "name": "Chapter 1: Number System",
+              "parts": [
+                {
+                  "file": "material-01-number-system.html",
+                  "n": 1
+                }
+              ],
+              "pages": 67
+            }
+          ]
         }
       ],
-      "chapters": 0
+      "chapters": 1
     },
     {
       "id": "gk",
@@ -2460,6 +2472,6 @@
       "hidden": true
     }
   ],
-  "total": 81,
+  "total": 82,
   "generatedBy": "scripts/study_material.py"
 }
