@@ -6200,7 +6200,7 @@ def study_redirects(redirects, moved=None):
             and not (re.match(r"/(pa/)?study-", str(r.get("source") or ""))
                      and not r.get("has"))]
     kept = [{"source": "/" + src[:-5], "destination": "/" + dst[:-5],
-             "permanent": True}
+             "statusCode": 301}
             for src, dst in sorted((moved or {}).items())] + kept
     if kept != cfg.get("redirects", []):
         cfg["redirects"] = kept

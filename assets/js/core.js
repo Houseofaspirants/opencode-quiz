@@ -1087,52 +1087,59 @@ const HOA = (() => {
       const pos = new Map(rows.map((r, i) => [String(r.id), i]));
       /* One set of links, for the page's language: each opens that
        * edition (or the other one, when only it has notes - the build folds
-       * the empty edition into it) and counts that edition's notes. */
-      const lang = getLang() === "pa" ? "pa" : "en";
-      /** @param {any} r */
-      const target = (r) => {
-        const page = String((r.pages && r.pages[lang]) || "");
-        const href = page ? page.replace(/\.html$/, "") : studyHref(String(r.id));
-        const edition = href.startsWith("pa/") ? "pa" : "en";
-        const count = r.counts ? Number(r.counts[edition]) : Number(r.count);
-        return { href, count };
-      };
-      document
-        .querySelectorAll('[data-subject-list][data-subject-base="study-"]')
-        .forEach((list) => {
-          const isMobile = !!list.closest(".mobile-menu");
-          const inMenu = !!list.closest(".nav-drop-menu");
-          rows.forEach((r) => {
-            const { href, count } = target(r);
-            let a = /** @type {HTMLAnchorElement | null} */ (
-              list.querySelector(`a[data-nav-study="${CSS.escape(String(r.id))}"]`));
-            if (a) a.setAttribute("href", href);
-            if (!a) {
-              a = document.createElement("a");
-              a.href = href;
-              if (isMobile) a.className = "mm-link";
-              a.dataset.navStudy = String(r.id);
-              a.innerHTML = isMobile
-                ? `<span class="mm-emoji">${esc(r.icon || "📚")}</span> ${esc(r.name)}`
-                : `${esc(r.icon || "📚")} ${esc(r.name)}`;
-              list.appendChild(a);
-            }
-            // Only the desktop column has room for a count: `.cnt` is styled
-            // to sit at the far right there, and a bare number in the mobile
-            // drawer would just be noise between two tap targets.
-            if (inMenu && count > 0 && !a.querySelector(".cnt")) {
-              a.insertAdjacentHTML(
-                "beforeend", ` <span class="cnt">${count}</span>`);
-            }
+       * the empty edition into it) and counts that edition's notes. Painted
+       * again when the reader switches language in place (hoa:lang). */
+      const paint = () => {
+        const lang = getLang() === "pa" ? "pa" : "en";
+        /** @param {any} r */
+        const target = (r) => {
+          const page = String((r.pages && r.pages[lang]) || "");
+          const href = page ? page.replace(/\.html$/, "") : studyHref(String(r.id));
+          const edition = href.startsWith("pa/") ? "pa" : "en";
+          const count = r.counts ? Number(r.counts[edition]) : Number(r.count);
+          return { href, count };
+        };
+        document
+          .querySelectorAll('[data-subject-list][data-subject-base="study-"]')
+          .forEach((list) => {
+            const isMobile = !!list.closest(".mobile-menu");
+            const inMenu = !!list.closest(".nav-drop-menu");
+            rows.forEach((r) => {
+              const { href, count } = target(r);
+              let a = /** @type {HTMLAnchorElement | null} */ (
+                list.querySelector(`a[data-nav-study="${CSS.escape(String(r.id))}"]`));
+              if (a) a.setAttribute("href", href);
+              if (!a) {
+                a = document.createElement("a");
+                a.href = href;
+                if (isMobile) a.className = "mm-link";
+                a.dataset.navStudy = String(r.id);
+                a.innerHTML = isMobile
+                  ? `<span class="mm-emoji">${esc(r.icon || "📚")}</span> ${esc(r.name)}`
+                  : `${esc(r.icon || "📚")} ${esc(r.name)}`;
+                list.appendChild(a);
+              }
+              // Only the desktop column has room for a count: `.cnt` is styled
+              // to sit at the far right there, and a bare number in the mobile
+              // drawer would just be noise between two tap targets.
+              const cnt = a.querySelector(".cnt");
+              if (cnt) cnt.remove();
+              if (inMenu && count > 0) {
+                a.insertAdjacentHTML(
+                  "beforeend", ` <span class="cnt">${count}</span>`);
+              }
+            });
+            // The column reads the way the shelf reads: manifest order, so the
+            // menu and study.html agree on which subject comes first.
+            (/** @type {HTMLAnchorElement[]} */ (
+              [...list.querySelectorAll(":scope > a")]))
+              .sort((x, y) => (pos.get(x.dataset.navStudy || "") ?? 999) -
+                              (pos.get(y.dataset.navStudy || "") ?? 999))
+              .forEach((a) => list.appendChild(a));
           });
-          // The column reads the way the shelf reads: manifest order, so the
-          // menu and study.html agree on which subject comes first.
-          (/** @type {HTMLAnchorElement[]} */ (
-            [...list.querySelectorAll(":scope > a")]))
-            .sort((x, y) => (pos.get(x.dataset.navStudy || "") ?? 999) -
-                            (pos.get(y.dataset.navStudy || "") ?? 999))
-            .forEach((a) => list.appendChild(a));
-        });
+      };
+      paint();
+      document.addEventListener("hoa:lang", paint);
     });
 
     // --- Footer / drawer year ---------------------------------------------

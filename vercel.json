@@ -8,22 +8,22 @@
     {
       "source": "/pa/study-current-affairs",
       "destination": "/current-affairs",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/pa/study-english",
       "destination": "/study-english",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/study-current-affairs",
       "destination": "/current-affairs",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/study-punjabi",
       "destination": "/pa/study-punjabi",
-      "permanent": true
+      "statusCode": 301
     },
     {
       "source": "/archive-category-fundamentals-of-computer",
