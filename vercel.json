@@ -6,6 +6,26 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/pa/study-current-affairs",
+      "destination": "/current-affairs",
+      "permanent": true
+    },
+    {
+      "source": "/pa/study-english",
+      "destination": "/study-english",
+      "permanent": true
+    },
+    {
+      "source": "/study-current-affairs",
+      "destination": "/current-affairs",
+      "permanent": true
+    },
+    {
+      "source": "/study-punjabi",
+      "destination": "/pa/study-punjabi",
+      "permanent": true
+    },
+    {
       "source": "/archive-category-fundamentals-of-computer",
       "destination": "/archive-category-computer",
       "permanent": true

@@ -71,6 +71,8 @@
      the same page here, so an old link always lands where it pointed. */
   const staticTarget = (() => {
     if (!subjectId || view) return "";
+    // Current Affairs is its own section, not a Study subject.
+    if (subjectId === "current-affairs") return "current-affairs";
     const byId = (id) => shelf.find((r) => r && r.id === id) || null;
     let row = byId(subjectId);
     if (!row || !row.pages) return "";
@@ -1047,24 +1049,41 @@
         totalSize: 0, languages: [],
       }))).filter((r) => r && !r.hidden);
 
+  /* Each card opens the subject in the reader's language (or the edition
+     that has notes, when only one does), and each language on it is its own
+     link to that edition, with its note count. The title link stretches over
+     the card (.subject-card-link), so the whole card stays one tap target. */
+  const uiLang = HOA.lang && HOA.lang.get() === "en" ? "en" : "pa";
+  /** @type {Record<string, {flag: string, name: string}>} */
+  const langMeta = {
+    pa: { flag: "", name: "ਪੰਜਾਬੀ" }, en: { flag: "", name: "English" },
+  };
+  rows.forEach((r) => (r.languages || []).forEach((l) => {
+    if (l && langMeta[l.id] && !langMeta[l.id].flag) langMeta[l.id].flag = String(l.flag || "");
+  }));
+  const pageHref = (page) => String(page || "").replace(/\.html$/, "");
   grid.innerHTML = rows.map((r) => {
     const n = Number(r.count) || 0;
     const newest = fmtDate(r.newest);
-    const languages = (r.languages || []).filter((l) => Number(l.count) > 0);
+    const pages = r.pages || {};
+    const counts = r.counts || {};
+    const editions = ["pa", "en"].filter((l) =>
+      Number(counts[l]) > 0 && pages[l] && String(pages[l]).startsWith("pa/") === (l === "pa"));
+    const main = pages[uiLang] || r.page;
     return `
-      <a class="card subject-card" style="--sc:${esc(r.color || "#4f46e5")}"
-         href="${esc(r.page ? r.page.replace(/\.html$/, "") : `study?subject=${r.id}`)}">
+      <div class="card subject-card hoverable" style="--sc:${esc(r.color || "#4f46e5")}">
         <span class="subject-icon">${esc(r.icon || "📚")}</span>
-        <h3>${esc(r.name)}</h3>
+        <h3><a class="subject-card-link" href="${esc(main ? pageHref(main) : `study?subject=${r.id}`)}">${esc(r.name)}</a></h3>
         <p>${esc(r.description || "Notes, PDFs and downloads for this subject.")}</p>
         <div class="subject-meta">
           <span class="badge ${n ? "badge-success" : "badge-muted"}">${plural(n, "file")}</span>
-          ${languages.map((l) =>
-            `<span class="badge badge-muted">${esc(l.flag || "")} ${esc(l.name)}</span>`).join("")}
+          ${editions.map((l) =>
+            `<a class="badge badge-muted subject-lang" lang="${l}" hreflang="${l}" href="${esc(pageHref(pages[l]))}">` +
+            `${esc(langMeta[l].flag)} ${esc(langMeta[l].name)} (${Number(counts[l])})</a>`).join("")}
           ${newest ? `<span class="badge badge-muted">Updated ${newest}</span>` : ""}
           ${r.totalSize ? `<span class="badge badge-muted">${fmtSize(r.totalSize)}</span>` : ""}
         </div>
-      </a>`;
+      </div>`;
   }).join("");
 
   const meta = document.getElementById("studySubjectsMeta");

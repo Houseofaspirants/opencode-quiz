@@ -1050,7 +1050,8 @@ const HOA = (() => {
       document.querySelectorAll("[data-subject-list]").forEach((list) => {
         const base =
           list.getAttribute("data-subject-base") || "subject?subject=";
-        if (/^study(\.html)?\?/.test(base)) return;
+        // Study's tree is the shelf's (below), never the question tree's.
+        if (/^study/.test(base)) return;
         const isMobile = !!list.closest(".mobile-menu");
         (idx.subjects || []).forEach((s) => {
           const href = base + encodeURIComponent(s.id);
@@ -1084,15 +1085,28 @@ const HOA = (() => {
       const rows = (allRows || []).filter((r) => r && !r.hidden);
       if (!rows.length) return;
       const pos = new Map(rows.map((r, i) => [String(r.id), i]));
+      /* One set of links, for the page's language: each opens that
+       * edition (or the other one, when only it has notes - the build folds
+       * the empty edition into it) and counts that edition's notes. */
+      const lang = getLang() === "pa" ? "pa" : "en";
+      /** @param {any} r */
+      const target = (r) => {
+        const page = String((r.pages && r.pages[lang]) || "");
+        const href = page ? page.replace(/\.html$/, "") : studyHref(String(r.id));
+        const edition = href.startsWith("pa/") ? "pa" : "en";
+        const count = r.counts ? Number(r.counts[edition]) : Number(r.count);
+        return { href, count };
+      };
       document
         .querySelectorAll('[data-subject-list][data-subject-base="study-"]')
         .forEach((list) => {
           const isMobile = !!list.closest(".mobile-menu");
           const inMenu = !!list.closest(".nav-drop-menu");
           rows.forEach((r) => {
-            const href = studyHref(String(r.id));
+            const { href, count } = target(r);
             let a = /** @type {HTMLAnchorElement | null} */ (
-              list.querySelector(`a[href="${href}"]`));
+              list.querySelector(`a[data-nav-study="${CSS.escape(String(r.id))}"]`));
+            if (a) a.setAttribute("href", href);
             if (!a) {
               a = document.createElement("a");
               a.href = href;
@@ -1106,9 +1120,9 @@ const HOA = (() => {
             // Only the desktop column has room for a count: `.cnt` is styled
             // to sit at the far right there, and a bare number in the mobile
             // drawer would just be noise between two tap targets.
-            if (inMenu && Number(r.count) > 0 && !a.querySelector(".cnt")) {
+            if (inMenu && count > 0 && !a.querySelector(".cnt")) {
               a.insertAdjacentHTML(
-                "beforeend", ` <span class="cnt">${Number(r.count)}</span>`);
+                "beforeend", ` <span class="cnt">${count}</span>`);
             }
           });
           // The column reads the way the shelf reads: manifest order, so the

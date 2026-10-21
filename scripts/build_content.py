@@ -5623,9 +5623,16 @@ def study_page_for(subject_id):
     """The study page another page links to for a subject id: its section
     page when the subject is a study folder or hierarchy, else the shelf."""
     sid = str(subject_id or "")
-    if sid and ((CONTENT / STUDY_DIR / sid).is_dir()
-                or sid in ((study_registry() or {}).get("hierarchies") or {})):
+    if sid in ((study_registry() or {}).get("hierarchies") or {}):
         return study_page_file(sid, "en")
+    if sid and (CONTENT / STUDY_DIR / sid).is_dir():
+        # The English page is folded into the Punjabi one when only Punjabi
+        # has notes (study_section_plan), so link straight to that.
+        has = {study_lang_id(f.name) for f in study_language_folders(sid)
+               if any(x.is_file() and x.suffix.lower() in (".pdf", ".md", ".json")
+                      and x.name.lower() not in ("readme.md", "metadata.json")
+                      for x in f.rglob("*"))}
+        return study_page_file(sid, "pa" if has == {"pa"} else "en")
     return "study.html"
 
 
@@ -5803,30 +5810,51 @@ def study_section_plan(manifest, records):
     header menu and study.html's fallback read the same targets."""
     by_file = {r["file"]: r for r in records}
     rows = manifest["subjects"]
-    pages, redirects = [], []
-    for row in rows:
-        row["page"] = study_page_file(row["id"], "en")
-        row["pages"] = {"en": row["page"], "pa": study_page_file(row["id"], "pa")}
+    rows_by_id = {r["id"]: r for r in rows}
+    pages, redirects, moved = [], [], {}
+
+    def notes_in(row, lang):
         if row.get("hierarchy"):
-            for lang in ("en", "pa"):
-                has = any(c["stats"].get("files") for reg in row["hierarchy"]["regions"]
-                          for c in reg["categories"] if c.get("folders"))
+            return sum(notes_in(rows_by_id[f], lang)
+                       for reg in row["hierarchy"]["regions"]
+                       for c in reg["categories"]
+                       for f in (c.get("folders") or [])[:1] if f in rows_by_id)
+        return sum(len(c["parts"]) for l in row.get("languages", [])
+                   if l["id"] == lang for c in l["chapters"])
+
+    for row in rows:
+        row["counts"] = {lang: notes_in(row, lang) for lang in ("en", "pa")}
+        row["pages"] = {lang: study_page_file(row["id"], lang) for lang in ("en", "pa")}
+        # An edition with no notes while its twin has some is never written:
+        # every link to it goes to the twin, and the old URL 301s there.
+        for lang, other in (("en", "pa"), ("pa", "en")):
+            if not row["counts"][lang] and row["counts"][other]:
+                moved[row["pages"][lang]] = row["pages"][other]
+                row["pages"][lang] = row["pages"][other]
+        row["page"] = row["pages"]["en"]
+        own = [lang for lang in ("en", "pa")
+               if row["pages"][lang] == study_page_file(row["id"], lang)]
+        if row.get("hierarchy"):
+            for lang in own:
                 pages.append({"kind": "gk", "row": row, "lang": lang,
-                              "file": row["pages"][lang], "indexable": has})
+                              "file": row["pages"][lang], "count": row["counts"][lang],
+                              "indexable": bool(row["counts"][lang])})
             continue
         langs = {l["id"]: l for l in row.get("languages", [])}
         for lang in ("en", "pa"):
             chapters = (langs.get(lang) or {}).get("chapters", [])
-            pages.append({"kind": "subject", "row": row, "lang": lang,
-                          "file": row["pages"][lang], "chapters": chapters,
-                          "indexable": bool(chapters)})
+            if lang in own:
+                pages.append({"kind": "subject", "row": row, "lang": lang,
+                              "file": row["pages"][lang], "chapters": chapters,
+                              "count": row["counts"][lang],
+                              "indexable": bool(chapters)})
             for ch in chapters:
                 recs = [by_file[p["file"]] for p in ch["parts"] if p["file"] in by_file]
                 if len(recs) > 1 and recs[0].get("studyChapterPage"):
                     ch["page"] = recs[0]["studyChapterPage"]
                     pages.append({"kind": "chapter", "row": row, "lang": lang,
                                   "file": ch["page"], "chapter": ch,
-                                  "indexable": True})
+                                  "count": len(recs), "indexable": True})
                 target = ch.get("page") or (recs[0]["file"] if recs else "")
                 if target:
                     redirects.append(({"subject": row["id"], "language": lang,
@@ -5843,18 +5871,28 @@ def study_section_plan(manifest, records):
             redirects.append(({"subject": row["id"], "region": reg["id"]}, row["page"]))
             for cat in reg["categories"]:
                 folder = (cat.get("folders") or [""])[0]
-                if folder:
+                if folder in rows_by_id:
                     for lang in ("en", "pa"):
                         redirects.append(({"subject": row["id"], "region": reg["id"],
                                            "cat": cat["id"], "language": lang},
-                                          study_page_file(folder, lang)))
+                                          rows_by_id[folder]["pages"][lang]))
                     redirects.append(({"subject": row["id"], "region": reg["id"],
-                                       "cat": cat["id"]}, study_page_file(folder, "en")))
+                                       "cat": cat["id"]}, rows_by_id[folder]["page"]))
+    # Current Affairs is not a Study subject: it has its own section, so the
+    # Study URLs a reader may still hold for it go there.
+    for target, params in (("current-affairs.html", {}),
+                           ("current-affairs/english/index.html", {"language": "en"}),
+                           ("current-affairs/punjabi/index.html", {"language": "pa"})):
+        if not params or (ROOT / target).is_file():
+            redirects.append(({"subject": "current-affairs", **params},
+                              target.replace("/index.html", ".html")))
+    for lang in ("en", "pa"):
+        moved[study_page_file("current-affairs", lang)] = "current-affairs.html"
     by_page = {p["file"]: p for p in pages}
     for p in pages:
         other = by_page.get(p["file"][3:] if p["lang"] == "pa" else f"pa/{p['file']}")
         p["twin"] = other
-    return pages, redirects
+    return pages, redirects, moved
 
 
 def clip_title(text, limit):
@@ -5922,7 +5960,6 @@ def study_section_page(p, by_file, rows_by_id):
         lead = ("ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK, ਉਸੇ ਤਰਤੀਬ ਵਿੱਚ ਜਿਵੇਂ ਪੇਪਰ ਵਿੱਚ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।"
                 if lang == "pa" else str(row.get("description") or ""))
         blocks = []
-        n_all = 0
         for reg in row["hierarchy"]["regions"]:
             cards = []
             for cat in reg["categories"]:
@@ -5930,9 +5967,9 @@ def study_section_page(p, by_file, rows_by_id):
                 sub = rows_by_id.get(folder)
                 if not sub:
                     continue
-                n = sum(len(c["parts"]) for l in sub.get("languages", [])
-                        if l["id"] == lang for c in l["chapters"])
-                n_all += n
+                # The edition the card opens: this language's, or the twin
+                # when this language has no notes for it.
+                n = sub["counts"]["pa" if sub["pages"][lang].startswith("pa/") else "en"]
                 cname = (STUDY_SUBJECT_PA.get(folder) or STUDY_GK_PA.get(cat["id"])
                          or cat["name"]) if lang == "pa" else cat["name"]
                 meta = f'{n} {t["notes"] if n != 1 else t["note"]}' if n else t["soon"]
@@ -5950,7 +5987,7 @@ def study_section_page(p, by_file, rows_by_id):
       </div>
     </section>""")
         sections = blocks
-        count_line = f'{n_all} {t["notes"]} &middot; {t["lang"]}'
+        count_line = f'{p["count"]} {t["notes"]} &middot; {t["lang"]}'
         desc_base = (f"{name}: ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK ਦੇ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ।"
                      if lang == "pa" else
                      f"Free {name} study notes in English: India GK and Punjab GK, by subject.")
@@ -6081,12 +6118,26 @@ def study_section_page(p, by_file, rows_by_id):
     html = html.replace('<body data-page="', '<body data-study-page data-page="', 1)
     trail = "".join(f'<a href="{esc(h)}">{esc(n)}</a><span>/</span>'
                     for n, _, h in crumbs[:-1]) + f"<span>{esc(crumbs[-1][0])}</span>"
+    # Both editions, with their note counts, right under the title: a reader
+    # who lands on one language sees at once that the other exists. Only
+    # when both have notes - a one-language page has nothing to switch to.
+    lang_tabs = ""
+    if twin and p.get("count") and twin.get("count"):
+        en_p, pa_p = (p, twin) if lang == "en" else (twin, p)
+        lang_tabs = (
+            f'\n        <nav class="study-lang-tabs" aria-label="{"ਭਾਸ਼ਾ" if lang == "pa" else "Language"}">'
+            + "".join(
+                f'<a href="{esc(x["file"])}" hreflang="{code}" lang="{code}"'
+                + (' aria-current="page"' if x is p else "")
+                + f'>{label} ({x["count"]})</a>'
+                for code, x, label in (("en", en_p, "English"), ("pa", pa_p, "ਪੰਜਾਬੀ")))
+            + "</nav>")
     html += f"""  <main id="main">
     <section class="page-hero">
       <div class="container">
         <nav class="breadcrumb" aria-label="Breadcrumb">{trail}</nav>
         <span class="eyebrow">{esc(icon)} {count_line}</span>
-        <h1>{esc(h1)}</h1>
+        <h1>{esc(h1)}</h1>{lang_tabs}
         <p class="muted" style="max-width:70ch">{esc(lead)}</p>
       </div>
     </section>
@@ -6124,13 +6175,19 @@ export default function middleware(request) {{
 """
 
 
-def study_redirects(redirects):
+def study_redirects(redirects, moved=None):
     """The old study.html?... URLs and their targets, as a 301 map.
 
     Written to data/study-redirects.json and compiled into middleware.js (see
     MIDDLEWARE_JS) - exact: the set of old keys present must match one entry,
     value for value. Any query-matching /study rule an earlier build put in
-    vercel.json is removed, so the two can never disagree."""
+    vercel.json is removed, so the two can never disagree.
+
+    `moved` maps a study page that is not written (an edition with no notes,
+    or a subject that lives elsewhere) to the page that is; those 301 from
+    vercel.json. Every plain /study-* and /pa/study-* rule there is this
+    build's (Vercel rejects extra keys, so the source is the mark) and is
+    rewritten each run."""
     entries = {}
     for params, target in redirects:
         key = "&".join(f"{k}={params[k]}" for k in STUDY_QUERY_KEYS if k in params)
@@ -6139,7 +6196,12 @@ def study_redirects(redirects):
     vercel = ROOT / "vercel.json"
     cfg = json.loads(vercel.read_text(encoding="utf-8"))
     kept = [r for r in cfg.get("redirects", [])
-            if not (r.get("source") in ("/study", "/study.html") and r.get("has"))]
+            if not (r.get("source") in ("/study", "/study.html") and r.get("has"))
+            and not (re.match(r"/(pa/)?study-", str(r.get("source") or ""))
+                     and not r.get("has"))]
+    kept = [{"source": "/" + src[:-5], "destination": "/" + dst[:-5],
+             "permanent": True}
+            for src, dst in sorted((moved or {}).items())] + kept
     if kept != cfg.get("redirects", []):
         cfg["redirects"] = kept
         vercel.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n",
@@ -8412,8 +8474,8 @@ def main():
     study_manifest = study_material.build(all_records[STUDY_DIR], study_registry())
     info(f"study subjects: {len(study_manifest['subjects'])} folder(s), "
          f"{study_manifest['total']} material(s) -> data/study-manifest.json")
-    study_pages, study_old_urls = study_section_plan(study_manifest,
-                                                     all_records[STUDY_DIR])
+    study_pages, study_old_urls, study_moved = study_section_plan(
+        study_manifest, all_records[STUDY_DIR])
     study_material.write(study_manifest)
     _by_file = {r["file"]: r for r in all_records[STUDY_DIR]}
     _rows_by_id = {r["id"]: r for r in study_manifest["subjects"]}
@@ -8425,7 +8487,7 @@ def main():
         _path.write_text(_html, encoding="utf-8")
         expected.add(_p["file"])
         study_page_entries.append(_entry)
-    _n_redirects = len(study_redirects(study_old_urls))
+    _n_redirects = len(study_redirects(study_old_urls, study_moved))
     info(f"study pages: {len(study_page_entries)} written "
          f"({sum(1 for e in study_page_entries if not e.get('noindex'))} indexable), "
          f"{_n_redirects} old study.html URL redirect(s) in middleware.js")

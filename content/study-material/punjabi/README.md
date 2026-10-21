@@ -29,4 +29,4 @@ next build.
   chapter, or beside the file itself — the nearest one wins
 - Supported: `.pdf`, `.md`, `.json` — `README.md` is ignored
 
-ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ — ਵ्यਾਕਰण, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬ ਦਾ ਸਮਾਜ.
+ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ — ਵਿਆਕਰਨ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬ ਦਾ ਸਮਾਜ।

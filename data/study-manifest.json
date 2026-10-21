@@ -179,11 +179,15 @@
         }
       ],
       "chapters": 12,
-      "page": "study-computer.html",
+      "counts": {
+        "en": 6,
+        "pa": 6
+      },
       "pages": {
         "en": "study-computer.html",
         "pa": "pa/study-computer.html"
-      }
+      },
+      "page": "study-computer.html"
     },
     {
       "id": "english",
@@ -270,18 +274,22 @@
         }
       ],
       "chapters": 5,
-      "page": "study-english.html",
+      "counts": {
+        "en": 5,
+        "pa": 0
+      },
       "pages": {
         "en": "study-english.html",
-        "pa": "pa/study-english.html"
-      }
+        "pa": "study-english.html"
+      },
+      "page": "study-english.html"
     },
     {
       "id": "punjabi",
       "name": "Punjabi",
       "icon": "ਸ",
       "color": "#ec4899",
-      "description": "ਵ्यਾਕਰण, ਮੁਹਾਵਰੇ, ਅਖਾਂ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬੀ ਸਾਹਿਤਿਕ.",
+      "description": "ਵਿਆਕਰਨ, ਮੁਹਾਵਰੇ, ਅਖਾਣ, ਸ਼ਬਦ-ਭੰਡਾਰ ਅਤੇ ਪੰਜਾਬੀ ਸਾਹਿਤ।",
       "order": 3,
       "count": 21,
       "newest": "2026-10-08",
@@ -537,11 +545,15 @@
         }
       ],
       "chapters": 21,
-      "page": "study-punjabi.html",
+      "counts": {
+        "en": 0,
+        "pa": 21
+      },
       "pages": {
-        "en": "study-punjabi.html",
+        "en": "pa/study-punjabi.html",
         "pa": "pa/study-punjabi.html"
-      }
+      },
+      "page": "pa/study-punjabi.html"
     },
     {
       "id": "reasoning",
@@ -640,11 +652,15 @@
         }
       ],
       "chapters": 6,
-      "page": "study-reasoning.html",
+      "counts": {
+        "en": 3,
+        "pa": 3
+      },
       "pages": {
         "en": "study-reasoning.html",
         "pa": "pa/study-reasoning.html"
-      }
+      },
+      "page": "study-reasoning.html"
     },
     {
       "id": "quant",
@@ -699,11 +715,15 @@
         }
       ],
       "chapters": 2,
-      "page": "study-quant.html",
+      "counts": {
+        "en": 1,
+        "pa": 1
+      },
       "pages": {
         "en": "study-quant.html",
         "pa": "pa/study-quant.html"
-      }
+      },
+      "page": "study-quant.html"
     },
     {
       "id": "gk",
@@ -1760,11 +1780,15 @@
           }
         ]
       },
-      "page": "study-gk.html",
+      "counts": {
+        "en": 19,
+        "pa": 18
+      },
       "pages": {
         "en": "study-gk.html",
         "pa": "pa/study-gk.html"
-      }
+      },
+      "page": "study-gk.html"
     },
     {
       "id": "polity",
@@ -1831,11 +1855,15 @@
       ],
       "chapters": 3,
       "hidden": true,
-      "page": "study-polity.html",
+      "counts": {
+        "en": 2,
+        "pa": 1
+      },
       "pages": {
         "en": "study-polity.html",
         "pa": "pa/study-polity.html"
-      }
+      },
+      "page": "study-polity.html"
     },
     {
       "id": "history",
@@ -1961,11 +1989,15 @@
       ],
       "chapters": 6,
       "hidden": true,
-      "page": "study-history.html",
+      "counts": {
+        "en": 6,
+        "pa": 6
+      },
       "pages": {
         "en": "study-history.html",
         "pa": "pa/study-history.html"
-      }
+      },
+      "page": "study-history.html"
     },
     {
       "id": "geography",
@@ -1997,11 +2029,15 @@
       ],
       "chapters": 0,
       "hidden": true,
-      "page": "study-geography.html",
+      "counts": {
+        "en": 0,
+        "pa": 0
+      },
       "pages": {
         "en": "study-geography.html",
         "pa": "pa/study-geography.html"
-      }
+      },
+      "page": "study-geography.html"
     },
     {
       "id": "economy",
@@ -2057,11 +2093,15 @@
       ],
       "chapters": 2,
       "hidden": true,
-      "page": "study-economy.html",
+      "counts": {
+        "en": 1,
+        "pa": 1
+      },
       "pages": {
         "en": "study-economy.html",
         "pa": "pa/study-economy.html"
-      }
+      },
+      "page": "study-economy.html"
     },
     {
       "id": "science",
@@ -2093,11 +2133,15 @@
       ],
       "chapters": 0,
       "hidden": true,
-      "page": "study-science.html",
+      "counts": {
+        "en": 0,
+        "pa": 0
+      },
       "pages": {
         "en": "study-science.html",
         "pa": "pa/study-science.html"
-      }
+      },
+      "page": "study-science.html"
     },
     {
       "id": "miscellaneous",
@@ -2129,11 +2173,15 @@
       ],
       "chapters": 0,
       "hidden": true,
-      "page": "study-miscellaneous.html",
+      "counts": {
+        "en": 0,
+        "pa": 0
+      },
       "pages": {
         "en": "study-miscellaneous.html",
         "pa": "pa/study-miscellaneous.html"
-      }
+      },
+      "page": "study-miscellaneous.html"
     },
     {
       "id": "history-of-punjab",
@@ -2299,11 +2347,15 @@
       ],
       "chapters": 12,
       "hidden": true,
-      "page": "study-history-of-punjab.html",
+      "counts": {
+        "en": 6,
+        "pa": 6
+      },
       "pages": {
         "en": "study-history-of-punjab.html",
         "pa": "pa/study-history-of-punjab.html"
-      }
+      },
+      "page": "study-history-of-punjab.html"
     },
     {
       "id": "culture-of-punjab",
@@ -2381,11 +2433,15 @@
       ],
       "chapters": 4,
       "hidden": true,
-      "page": "study-culture-of-punjab.html",
+      "counts": {
+        "en": 2,
+        "pa": 2
+      },
       "pages": {
         "en": "study-culture-of-punjab.html",
         "pa": "pa/study-culture-of-punjab.html"
-      }
+      },
+      "page": "study-culture-of-punjab.html"
     },
     {
       "id": "punjab-literature",
@@ -2417,11 +2473,15 @@
       ],
       "chapters": 0,
       "hidden": true,
-      "page": "study-punjab-literature.html",
+      "counts": {
+        "en": 0,
+        "pa": 0
+      },
       "pages": {
         "en": "study-punjab-literature.html",
         "pa": "pa/study-punjab-literature.html"
-      }
+      },
+      "page": "study-punjab-literature.html"
     },
     {
       "id": "geography-of-punjab",
@@ -2477,11 +2537,15 @@
       ],
       "chapters": 2,
       "hidden": true,
-      "page": "study-geography-of-punjab.html",
+      "counts": {
+        "en": 1,
+        "pa": 1
+      },
       "pages": {
         "en": "study-geography-of-punjab.html",
         "pa": "pa/study-geography-of-punjab.html"
-      }
+      },
+      "page": "study-geography-of-punjab.html"
     },
     {
       "id": "economy-of-punjab",
@@ -2537,11 +2601,15 @@
       ],
       "chapters": 2,
       "hidden": true,
-      "page": "study-economy-of-punjab.html",
+      "counts": {
+        "en": 1,
+        "pa": 1
+      },
       "pages": {
         "en": "study-economy-of-punjab.html",
         "pa": "pa/study-economy-of-punjab.html"
-      }
+      },
+      "page": "study-economy-of-punjab.html"
     },
     {
       "id": "Punjab GK",
@@ -2573,11 +2641,15 @@
       ],
       "chapters": 0,
       "hidden": true,
-      "page": "study-punjab-gk.html",
+      "counts": {
+        "en": 0,
+        "pa": 0
+      },
       "pages": {
         "en": "study-punjab-gk.html",
         "pa": "pa/study-punjab-gk.html"
-      }
+      },
+      "page": "study-punjab-gk.html"
     }
   ],
   "total": 83,

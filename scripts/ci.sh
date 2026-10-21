@@ -8,7 +8,7 @@
 #   3. rebuild the SEO landing set
 #   4. type-check the browser scripts (tsc --noEmit over jsconfig.json)
 #   5. run scripts/seo_check.py
-#   6. run scripts/rich_results_check.py
+#   6. run scripts/rich_results_check.py and scripts/site_check.py
 #   7. prove the committed tree is exactly what those builders emit
 #
 # Step 7 is what makes "the gates passed" meaningful: a green seo_check on a
@@ -120,6 +120,7 @@ node scripts/clean-links.mjs
 step "6/7 gates"
 python3 scripts/seo_check.py
 python3 scripts/rich_results_check.py
+python3 scripts/site_check.py           # no 404 link, no empty study edition, no Devanagari in Gurmukhi
 
 step "7/7 committed tree matches the builders"
 python3 - <<'PY'

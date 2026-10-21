@@ -20,6 +20,7 @@ node scripts/build-index.mjs               # Node twin of build_index.py (Vercel
 python3 scripts/build_landing_pages.py     # SEO landing pages (subject-/category-/topic-/quiz-/exam-*.html)
 python3 scripts/seo_check.py               # SEO gate
 python3 scripts/rich_results_check.py      # structured-data gate
+python3 scripts/site_check.py              # no 404 internal link, no empty study edition behind a link, no Devanagari in Gurmukhi
 python3 scripts/new_content.py --list      # scaffold a content draft (--type <t> --slug <s> [--pa])
 python3 scripts/mcq_import.py set.txt     # plain-text MCQs (EN or Gurmukhi, .txt/.docx) → questions/…json [--dry-run]
 npm run dev                                # build index + serve . (fetch() needs http, not file://)
