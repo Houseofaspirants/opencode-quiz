@@ -146,6 +146,35 @@
   </script>
   <script type="application/ld+json" id="ldDynamic">
   </script>
+  <!-- MCQ language routing, before anything paints. A topic quiz has ONE
+       language and it comes from the URL: /pa/quiz-* is Punjabi, /quiz-* is
+       English (the build marks both with data-page-lang and links them with
+       hreflang), and quiz?subject=..&topic=.. reads &lang=. A URL without a
+       language follows the reader's saved choice (hoa:lang, written by the
+       switch), else English; ?lang= always wins. Crawlers store nothing, so
+       they get exactly the page they asked for. The query string (utm_*) and
+       the #q= hash survive the hop. -->
+  <script>
+  (function () {
+    var d = document.documentElement, page = d.getAttribute("data-page-lang");
+    var sp = new URLSearchParams(location.search), want = sp.get("lang"), saved = null;
+    try { saved = JSON.parse(localStorage.getItem("hoa:lang") || "null"); } catch (e) {}
+    if (want !== "en" && want !== "pa") want = "";
+    if (page) {
+      var to = want && want !== page ? want : (!want && page === "en" && saved === "pa" ? "pa" : "");
+      var alt = to && document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
+      if (alt) {
+        sp.delete("lang");
+        var q = sp.toString();
+        location.replace(new URL(alt.href).pathname + (q ? "?" + q : "") + location.hash);
+      }
+    } else if (sp.get("topic") && !sp.get("mode")) {
+      page = want || (saved === "pa" ? "pa" : "en");
+      d.setAttribute("data-page-lang", page);
+      d.lang = page;
+    }
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889829175568995" crossorigin="anonymous"></script>
 </head>
 
@@ -161,11 +190,12 @@
           <small class="muted" id="quizSub"></small>
         </div>
 
-        <!-- Brief item 8 — in-quiz language switch. Uses the same data-lang-btn
-             as the header, so one state drives the whole site: flipping here
-             re-translates the chrome AND swaps the question file, while the
-             question number, every answer chosen, the marks, the palette and
-             both timers stay exactly where they were. Rendered only when
+        <!-- In-quiz language switch. Uses the same data-lang-btn as the
+             header. On a topic quiz it is NAVIGATION: core.js saves the choice
+             and opens the other language's URL at the same question, and the
+             answers carry over because the session is keyed by topic, not by
+             language. Daily / mock sessions have no URL language, so there it
+             still swaps the question file in place. Rendered only when
              data/index.json reports more than one real variant. -->
         <div class="lang-switch quiz-lang" id="quizLang" role="group" hidden
              aria-label="Question language / ਸਵਾਲ ਦੀ ਭਾਸ਼ਾ">
@@ -194,7 +224,7 @@
         <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
         <div class="progress-meta">
           <span id="progressText">0 of 0 answered (0%)</span>
-          <span id="qCount">Question 1 of 1</span>
+          <span id="qCount">Question 1 of 25</span>
         </div>
       </div>
     </div>
@@ -228,9 +258,18 @@
               <span class="badge" id="qTopic"></span>
             </div>
 
-            <h2 class="q-text" id="qText">Loading question…</h2>
+            <h2 class="q-text" id="qText">Which best distinguishes a phrase from a clause?</h2>
 
-            <div class="options" id="options"><!-- buttons injected --></div>
+            <div class="options" id="options">
+              <button class="option" data-opt="0" aria-pressed="false"><span class="opt-key">A</span><span>A clause has a subject and a verb; a phrase does not have both together.</span></button>
+              <button class="option" data-opt="1" aria-pressed="false"><span class="opt-key">B</span><span>A phrase always expresses a complete thought.</span></button>
+              <button class="option" data-opt="2" aria-pressed="false"><span class="opt-key">C</span><span>A clause has no verb.</span></button>
+              <button class="option" data-opt="3" aria-pressed="false"><span class="opt-key">D</span><span>A phrase must contain two clauses.</span></button>
+            </div>
+
+            <!-- The same question in the set's other language, on request
+                 (filled by quiz.js on pages that have a twin). -->
+            <div class="q-alt" id="qAlt" hidden></div>
 
             <!-- Practice only: right / wrong verdict + explanation, shown the
                  moment an option is chosen (filled by quiz.js). -->
@@ -331,8 +370,8 @@
         </div>
         <div class="grid grid-3">
           <article class="card card-pad">
-            <h3><a class="ilink" href="quiz-reasoning-number-series-part-4">\u2190 Previous: Number Series Part 4</a></h3>
-            <p class="muted">From Reasoning</p>
+            <h3><a class="ilink" href="quiz-quant-01 - Number System - MCQ - EN - Part 4.html">\u2190 Previous: 01   Number System   MCQ   EN   Part 4</a></h3>
+            <p class="muted">From Quantitative Aptitude</p>
             <p class="text-sm muted">25 MCQs</p>
           </article>
           <article class="card card-pad">

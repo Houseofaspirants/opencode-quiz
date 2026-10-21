@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 603,
+  "nodes": 602,
   "edges": 3547,
   "silos": 35,
-  "clusters": 99,
+  "clusters": 88,
   "pillars": 34
  },
  "nodes": [
@@ -7027,18 +7027,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-reasoning-analogy-part-1.html",
-   "url": "/quiz-reasoning-analogy-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-reasoning-number-series-part-1.html",
    "url": "/quiz-reasoning-number-series-part-1.html",
    "type": "quiz",
@@ -12555,12 +12543,6 @@
   },
   {
    "from": "material-01-number-series-2.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -12568,6 +12550,12 @@
   {
    "from": "material-01-number-series-2.html",
    "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-series-2.html",
+   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12645,12 +12633,6 @@
   },
   {
    "from": "material-01-number-series.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -12658,6 +12640,12 @@
   {
    "from": "material-01-number-series.html",
    "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-series.html",
+   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13005,12 +12993,6 @@
   },
   {
    "from": "material-02-analogy-2.html",
-   "to": "quiz-reasoning-analogy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -13018,6 +13000,12 @@
   {
    "from": "material-02-analogy-2.html",
    "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-analogy-2.html",
+   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13095,12 +13083,6 @@
   },
   {
    "from": "material-02-analogy.html",
-   "to": "quiz-reasoning-analogy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -13108,6 +13090,12 @@
   {
    "from": "material-02-analogy.html",
    "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-02-analogy.html",
+   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29441,7 +29429,6 @@
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-quant.html",
    "clusters": [
-    "category-quant-number-system.html",
     "topic-quant-01 - Number System - MCQ - EN - Part 1.html",
     "topic-quant-01 - Number System - MCQ - EN - Part 2.html",
     "topic-quant-01 - Number System - MCQ - EN - Part 3.html",
@@ -29465,18 +29452,7 @@
    "name": "Reasoning",
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-reasoning.html",
-   "clusters": [
-    "category-reasoning-analogy.html",
-    "category-reasoning-number-series.html",
-    "topic-reasoning-analogy-part-1.html",
-    "topic-reasoning-analogy-part-2.html",
-    "topic-reasoning-analogy-part-3.html",
-    "topic-reasoning-analogy-part-4.html",
-    "topic-reasoning-number-series-part-1.html",
-    "topic-reasoning-number-series-part-2.html",
-    "topic-reasoning-number-series-part-3.html",
-    "topic-reasoning-number-series-part-4.html"
-   ],
+   "clusters": [],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",

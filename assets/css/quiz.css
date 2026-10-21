@@ -92,6 +92,21 @@
   /* reserve 4 rows so the control bar sits at the same place on every question */
   min-height: calc(4 * var(--opt-row) + 3 * var(--opt-gap));
 }
+/* Same question in the other language - a quiet secondary link (quiz.js) */
+.q-alt { margin-top: 12px; }
+.q-alt-btn {
+  background: none; border: 0; padding: 4px 0; cursor: pointer;
+  font: inherit; font-size: 0.86rem; font-weight: 600;
+  color: var(--muted); text-decoration: underline; text-underline-offset: 3px;
+}
+.q-alt-btn:hover, .q-alt-btn:focus-visible { color: var(--brand); }
+.q-alt-body {
+  margin-top: 8px; padding: 12px 14px;
+  border-left: 3px solid var(--border); border-radius: var(--r-sm, 8px);
+  background: var(--surface-2, transparent); font-size: 0.93rem; line-height: 1.55;
+}
+.q-alt-text { font-weight: 600; margin: 0 0 6px; }
+.q-alt-opts { margin: 0; padding-left: 1.4em; }
 .option {
   display: flex; align-items: center; gap: 13px;
   width: 100%; text-align: left;

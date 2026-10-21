@@ -2010,7 +2010,173 @@ def build_quiz(s, c, t):
         faq_ld(url, faqs),
     ]
 
-    # ---- surgery on the quiz.html template ---------------------------------
+    top_block = (
+        '    <div class="container" style="padding-top:18px">\n'
+        + crumb_nav([(l, h) for l, h, _ in crumbs])
+        + f'\n      <p class="text-sm muted mt-2"><b>Question count:</b> {count}'
+        + f' · <b>Estimated time:</b> about {est} · <b>Difficulty:</b> {diff}'
+        + f' · <b>Last updated:</b> {esc(updated or "next build")}</p>\n    </div>\n\n')
+    paired = bool(topic_pa_variant(t))
+    en_file = (t.get("variants") or {}).get("en") or ""
+    q1_qs = (load_variant_questions(en_file) if en_file
+             and os.path.exists(os.path.join(ROOT, en_file)) else qs)
+    page = quiz_shell(
+        lang="en", title=title, description=description, kw=kw, url=url, h1=name,
+        graph=graph, top_block=top_block, bottom=bottom,
+        seed={"subject": sid, "topic": tid,
+              "category": (c["id"] if c else None), "canonical": url},
+        alternates=quiz_alternates(sid, tid) if paired else (),
+        questions=q1_qs)
+    write_page(filename, page)
+    register(filename, url, "quiz", key, title, description, h1, 0,
+             {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"quiz     {filename}  {count}q  flashcards={len(cards_nodes)}  faq={len(faqs)}")
+    return filename
+
+
+def quiz_pa_file(sid, tid):
+    return f"pa/quiz-{sid}-{tid}.html"
+
+
+def quiz_alternates(sid, tid):
+    en_url, pa_url = u(quiz_file(sid, tid)), u(quiz_pa_file(sid, tid))
+    return [("en", en_url), ("pa", pa_url), ("x-default", en_url)]
+
+
+def build_quiz_pa(s, c, t):
+    """pa/quiz-<subject>-<topic>.html - the Punjabi edition of a quiz page:
+    the same engine and seed, a Punjabi head and copy, question 1 printed in
+    Gurmukhi, hreflang to the English page and back. The full question bank
+    stays on pa/topic-*, which this page links, so the two never compete."""
+    sid, tid = s["id"], t["id"]
+    filename = quiz_pa_file(sid, tid)
+    url = u(filename)
+    qs = load_variant_questions(topic_pa_variant(t))
+    count = len(qs)
+    en_name = t["name"]
+    name = PA_TITLE.get((sid, tid)) or en_name
+    subj_pa = SUBJECT_PA.get(sid, s["name"])
+    mins = (fmt_duration(count * q_seconds(sid))
+            .replace(" min", " ਮਿੰਟ").replace(" sec", " ਸਕਿੰਟ"))
+    updated = fmt_date(t.get("updatedAt"))
+
+    # A long name is trimmed from the middle, never from its "Part N" tail:
+    # that tail is all that tells one part's title from the next.
+    _part = re.search(r"\s*-?\s*Part\s*\d+\s*$", name)
+    title = fit_title(f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ MCQ ਟੈਸਟ",
+                      f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
+                      trim_suffix=(f" - {_part.group().strip(' -')} ਕੁਇਜ਼" if _part
+                                   else " ਕੁਇਜ਼"))
+    _d1 = (f"{name} ਆਨਲਾਈਨ ਕੁਇਜ਼: {count} MCQ ਪੰਜਾਬੀ ਵਿੱਚ, ਤੁਰੰਤ ਸਕੋਰ ਅਤੇ ਹਰ ਉੱਤਰ "
+           f"ਦੀ ਵਿਆਖਿਆ। ")
+    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
+              "Punjab Police ਅਤੇ PSSSB ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+    description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
+                                _d1 + _tails[-1]))
+    kw = keywords(f"{name} ਕੁਇਜ਼", f"{name} MCQ", f"{en_name} quiz in Punjabi",
+                  f"{subj_pa} ਕੁਇਜ਼", "ਪੰਜਾਬੀ ਵਿੱਚ MCQ ਟੈਸਟ")
+    h1 = f"{name} ਕੁਇਜ਼"
+    answer = (f"ਇਹ {count} ਸਵਾਲਾਂ ਦਾ ਪੰਜਾਬੀ ਕੁਇਜ਼ ਹੈ, ਲਗਭਗ {mins} ਦਾ ਅਭਿਆਸ। ਹਰ ਉੱਤਰ "
+              f"ਚੁਣਦੇ ਹੀ ਸਹੀ/ਗਲਤ ਦਿਸਦਾ ਹੈ, ਅੰਤ ਵਿੱਚ ਪੂਰਾ ਰਿਵਿਊ ਮਿਲਦਾ ਹੈ ਅਤੇ "
+              f"{SITE_PASS}% ਉੱਤੇ ਸੈੱਟ ਪਾਸ ਹੁੰਦਾ ਹੈ। ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।")
+    intro = [
+        f"{name} ਵਿੱਚ {subj_pa} ਦੇ {count} ਸਵਾਲ ਹਨ, ਬਿਨਾਂ ਟਾਈਮਰ। ਸਾਈਡ ਵਿੱਚ ਸਵਾਲਾਂ ਦੀ "
+        f"ਪੈਲੇਟ ਦੱਸਦੀ ਹੈ ਕਿਹੜੇ ਹੱਲ ਹੋਏ, ਕਿਹੜੇ ਛੱਡੇ ਅਤੇ ਕਿਹੜੇ ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ ਲਾਏ।",
+        "ਤੁਹਾਡੇ ਉੱਤਰ ਆਪਣੇ ਆਪ ਸੇਵ ਹੁੰਦੇ ਹਨ, ਇਸ ਲਈ ਅੱਧ ਵਿਚਾਲੇ ਛੱਡ ਕੇ ਬਾਅਦ ਵਿੱਚ ਉੱਥੋਂ "
+        "ਹੀ ਸ਼ੁਰੂ ਕਰ ਸਕਦੇ ਹੋ। ਉੱਪਰ English ਬਟਨ ਨਾਲ ਇਹੀ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ - "
+        "ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ, ਤੁਹਾਡੇ ਉੱਤਰ ਵੀ ਉਹੀ।",
+    ]
+    faqs = [
+        (f"{name} ਕੁਇਜ਼ ਵਿੱਚ ਕਿੰਨੇ ਸਵਾਲ ਹਨ?",
+         f"{count} ਸਵਾਲ, ਲਗਭਗ {mins}। ਹਰ ਸਵਾਲ ਦੇ ਚਾਰ ਵਿਕਲਪ ਹਨ ਅਤੇ ਰਿਵਿਊ ਵਿੱਚ ਹਰ "
+         f"ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਹੈ।"),
+        ("ਪਾਸ ਹੋਣ ਲਈ ਕਿੰਨੇ ਸਹੀ ਚਾਹੀਦੇ ਹਨ?",
+         f"{SITE_PASS}% - ਭਾਵ {count} ਵਿੱਚੋਂ {max(1, round(count * SITE_PASS / 100))}। "
+         f"ਸੈੱਟ ਜਿੰਨੀ ਵਾਰ ਚਾਹੋ ਦੁਬਾਰਾ ਦੇ ਸਕਦੇ ਹੋ।"),
+        ("ਕੀ ਇਹੀ ਕੁਇਜ਼ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਹੈ?",
+         "ਹਾਂ। ਉੱਪਰ English ਬਟਨ ਦਬਾਓ - ਤੁਸੀਂ ਉਸੇ ਸਵਾਲ ਉੱਤੇ ਅੰਗਰੇਜ਼ੀ ਪੰਨੇ ਉੱਤੇ ਪਹੁੰਚੋਗੇ "
+         "ਅਤੇ ਤੁਹਾਡੇ ਉੱਤਰ ਸੁਰੱਖਿਅਤ ਰਹਿਣਗੇ। ਹਰ ਸਵਾਲ ਹੇਠਾਂ ਉਸਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।"),
+        ("ਕੀ ਲੌਗਇਨ ਜ਼ਰੂਰੀ ਹੈ?",
+         "ਨਹੀਂ। ਕੁਇਜ਼ ਤੁਰੰਤ ਸ਼ੁਰੂ ਕਰੋ। Google ਸਾਈਨ-ਇਨ ਸਿਰਫ਼ ਸਕੋਰ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਸਟ੍ਰੀਕ "
+         "ਦੂਜੇ ਫ਼ੋਨ/ਕੰਪਿਊਟਰ ਉੱਤੇ ਲਿਜਾਣ ਲਈ ਹੈ।"),
+    ]
+    crumbs = [("Home", "index.html", f"{BASE}/"),
+              (s["name"], subject_file(sid), u(subject_file(sid)))]
+    if c:
+        crumbs.append((c["name"], category_file(sid, c["id"]),
+                       u(category_file(sid, c["id"]))))
+    crumbs += [(en_name, quiz_file(sid, tid), u(quiz_file(sid, tid))),
+               ("ਪੰਜਾਬੀ", None, None)]
+
+    share_enc_url = quote(url, safe="")
+    share_enc_title = quote(f"{name} ਕੁਇਜ਼ - House of Aspirants", safe="")
+    share_enc_both = quote(f"{name} ਕੁਇਜ਼ {url}", safe="")
+    bottom = [section_wrap(
+        section_head("ਇਸ ਕੁਇਜ਼ ਬਾਰੇ", f"{name} ਕੁਇਜ਼ ਬਾਰੇ",
+                     "ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਇੱਕ ਨਜ਼ਰ।")
+        + "\n" + '        <div class="answer-box">\n'
+        + '          <span class="ab-label">ਛੋਟਾ ਜਵਾਬ</span>\n'
+        + f"          <p>{esc(answer)}</p>\n        </div>\n"
+        + '        <div class="landing-intro" data-landing="intro" lang="pa">\n'
+        + join_paras(intro) + "\n        </div>", pad_top=False)]
+    bottom.append(section_wrap(
+        section_head("ਸਾਂਝਾ ਕਰੋ", f"{name} ਕੁਇਜ਼ ਭੇਜੋ",
+                     "ਉਸੇ ਪੇਪਰ ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਦੋਸਤ ਨੂੰ ਭੇਜੋ।")
+        + "\n" + '        <div class="btn-row mt-3">'
+        + f'\n          <a class="btn btn-sm btn-soft" href="https://t.me/share/url?url={share_enc_url}&amp;text={share_enc_title}" target="_blank" rel="noopener">✈ Telegram</a>'
+        + f'\n          <a class="btn btn-sm btn-soft" href="https://wa.me/?text={share_enc_both}" target="_blank" rel="noopener">📱 WhatsApp</a>'
+        + f'\n          <button class="btn btn-sm btn-soft" type="button" data-copy-url="{esc(url)}">🔗 ਲਿੰਕ ਕਾਪੀ ਕਰੋ</button>'
+        + "\n        </div>", pad_top=False))
+    bottom.append(section_wrap(cta_card(
+        "ਸਵਾਲ ਬੈਂਕ", "ਸਾਰੇ ਸਵਾਲ ਉੱਤਰਾਂ ਸਮੇਤ ਪੜ੍ਹੋ",
+        f"{name} ਦੇ ਸਾਰੇ {count} ਸਵਾਲ, ਸਹੀ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ ਇੱਕੋ ਪੰਨੇ ਉੱਤੇ।",
+        [("ਸਵਾਲ ਬੈਂਕ ਖੋਲ੍ਹੋ", topic_pa_file(sid, tid)),
+         ("English quiz", quiz_file(sid, tid))]
+        + ([(f"ਪੂਰਾ ਅਧਿਆਇ: {CATEGORY_PA.get(c['id'], c['name'])}",
+             category_pa_file(sid, c["id"]))]
+           if c and category_pa_topics(c) else [])
+        + [("ਰੋਜ਼ਾਨਾ ਕੁਇਜ਼", "quiz.html?mode=daily")]), pad_top=False))
+    link_record(filename, "quiz-pa", topic_pa_file(sid, tid), "topic-pa", "ਸਵਾਲ ਬੈਂਕ")
+    link_record(filename, "quiz-pa", quiz_file(sid, tid), "quiz", en_name)
+    bottom.append(curator_box("pa"))
+    bottom.append(faq_section("ਸਵਾਲ", f"{name} ਕੁਇਜ਼ - ਆਮ ਸਵਾਲ", "ਇਹ ਸੈੱਟ ਕਿਵੇਂ ਚੱਲਦਾ ਹੈ।",
+                              faqs))
+
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    page_ld["inLanguage"] = "pa-IN"
+    graph = [page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]
+    top_block = (
+        '    <div class="container" style="padding-top:18px">\n'
+        + crumb_nav([(l, h) for l, h, _ in crumbs])
+        + f'\n      <p class="text-sm muted mt-2" lang="pa"><b>ਸਵਾਲ:</b> {count}'
+        + f' · <b>ਸਮਾਂ:</b> ਲਗਭਗ {mins} · <b>ਭਾਸ਼ਾ:</b> ਪੰਜਾਬੀ'
+        + f' · <b>ਅੱਪਡੇਟ:</b> {esc(updated or "ਅਗਲੀ ਬਿਲਡ")}</p>\n    </div>\n\n')
+    page = quiz_shell(
+        lang="pa", title=title, description=description, kw=kw, url=url, h1=h1,
+        graph=graph, top_block=top_block, bottom=bottom,
+        seed={"subject": sid, "topic": tid,
+              "category": (c["id"] if c else None), "canonical": url},
+        alternates=quiz_alternates(sid, tid), questions=qs)
+    write_page(filename, page)
+    register(filename, url, "quiz-pa", f"{sid}/{tid}", title, description, h1,
+             words(" ".join(intro)), {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"quiz-pa  {filename}  {count}q")
+    return filename
+
+
+def first_question(qs):
+    """The set's first printable question, or None."""
+    return next((q for q in qs if str(q.get("q") or "").strip() and q.get("options")), None)
+
+
+def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, bottom,
+               seed, alternates, questions):
+    """quiz.html + this page's head, landing sections and seed. The engine is
+    untouched; the first question is printed into the question card so the
+    served HTML carries real question text in the page's language (quiz.js
+    repaints the same card on boot). `lang` = "pa" also adds <base href="/">,
+    because the page lives under /pa/ and the template links relatively."""
     src_path = os.path.join(ROOT, "quiz.html")
     with open(src_path, "r", encoding="utf-8") as fh:
         page = fh.read()
@@ -2021,6 +2187,15 @@ def build_quiz(s, c, t):
         if n != 1:
             raise RuntimeError(f"quiz.html template marker missing: {label}")
 
+    # data-page-lang pins the page to its URL's language (core.js getLang);
+    # only a set with both editions has a twin to switch to.
+    page_lang = f' data-page-lang="{lang}"' if alternates else ""
+    rep(r'<html lang="en" data-theme="light">',
+        f'<html lang="{lang}" data-theme="light"{page_lang}>', "html")
+    if lang == "pa":
+        rep(r'<meta name="viewport" content="[^"]*">',
+            '<meta name="viewport" content="width=device-width, initial-scale=1, '
+            'viewport-fit=cover">\n  <base href="/">', "viewport")
     rep(r"<title>.*?</title>", f"<title>{esc(title)}</title>", "title")
     rep(r'<meta name="description" content="[^"]*">',
         f'<meta name="description" content="{esc(description)}">', "description")
@@ -2037,8 +2212,13 @@ def build_quiz(s, c, t):
     rep(r'<meta name="twitter:description" content="[^"]*">',
         f'<meta name="twitter:description" content="{esc(description)}">',
         "twitter:description")
-    rep(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="{url}">',
-        "canonical")
+    alt = "".join(f'\n  <link rel="alternate" hreflang="{h}" href="{esc(u_)}">'
+                  for h, u_ in alternates)
+    rep(r'<link rel="canonical" href="[^"]*">',
+        f'<link rel="canonical" href="{url}">{alt}', "canonical")
+    if lang == "pa":
+        rep(r'<meta property="og:locale" content="en_IN">',
+            '<meta property="og:locale" content="pa_IN">', "og:locale")
     og_img = og_image_for(url)
     rep(r'<meta property="og:image" content="[^"]*">',
         f'<meta property="og:image" content="{og_img}">'
@@ -2046,7 +2226,22 @@ def build_quiz(s, c, t):
     rep(r'<meta name="twitter:image" content="[^"]*">',
         f'<meta name="twitter:image" content="{og_img}">', "twitter:image")
     rep(r'<h1 class="quiz-title" id="quizTitle">.*?</h1>',
-        f'<h1 class="quiz-title" id="quizTitle">{esc(name)}</h1>', "h1")
+        f'<h1 class="quiz-title" id="quizTitle">{esc(h1)}</h1>', "h1")
+
+    # Question 1, printed in the same markup quiz.js renders, so the crawler
+    # reads real question text and the card does not jump when JS repaints it.
+    q1 = first_question(questions)
+    if q1:
+        rep(r'<span id="qCount">.*?</span>',
+            f'<span id="qCount">Question 1 of {len(questions)}</span>', "qCount")
+        rep(r'<h2 class="q-text" id="qText">.*?</h2>',
+            f'<h2 class="q-text" id="qText">{esc(str(q1["q"]).strip())}</h2>', "qText")
+        opts = "".join(
+            f'\n              <button class="option" data-opt="{i}" aria-pressed="false">'
+            f'<span class="opt-key">{chr(65 + i)}</span><span>{esc(str(o))}</span></button>'
+            for i, o in enumerate(q1["options"]))
+        rep(r'<div class="options" id="options">.*?</div>',
+            f'<div class="options" id="options">{opts}\n            </div>', "options")
 
     # runtime placeholder stays empty: the static graph above owns the schema
     ld_static = ld_script({"@context": "https://schema.org", "@graph": graph})
@@ -2054,12 +2249,6 @@ def build_quiz(s, c, t):
         ld_static + '\n  <script type="application/ld+json" id="ldDynamic">\n  </script>',
         "ldDynamic")
 
-    top_block = (
-        '    <div class="container" style="padding-top:18px">\n'
-        + crumb_nav([(l, h) for l, h, _ in crumbs])
-        + f'\n      <p class="text-sm muted mt-2"><b>Question count:</b> {count}'
-        + f' · <b>Estimated time:</b> about {est} · <b>Difficulty:</b> {diff}'
-        + f' · <b>Last updated:</b> {esc(updated or "next build")}</p>\n    </div>\n\n')
     rep(r'<main id="main">\n', '<main id="main">\n' + top_block, "main")
 
     ad_anchor = ('\n    <section class="section" style="padding-top:0">\n'
@@ -2070,23 +2259,20 @@ def build_quiz(s, c, t):
 
     # Only the four fields quiz.js actually reads (see "0. BOOT" in quiz.js);
     # title/description live in this page's static <head> instead.
-    seed = json.dumps({
-        "subject": sid, "topic": tid,
-        "category": (c["id"] if c else None),
-        "canonical": url,
-    }, ensure_ascii=False)
+    seed_json = json.dumps(seed, ensure_ascii=False)
     seed_block = (
         '  <script>\n'
         '    /* Programmatic SEO landing-page seed, written by '
         'scripts/build_landing_pages.py. quiz.js reads it at boot (see "0. BOOT") so this\n'
         '       page runs as a topic quiz with no query string, keeps this page\'s static\n'
         '       metadata, and never re-emits schema over the static graph in the head. */\n'
-        f'    window.__HOA_QUIZ_SEED = {seed};\n  </script>\n')
+        f'    window.__HOA_QUIZ_SEED = {seed_json};\n  </script>\n')
     anchor = '  <script src="assets/js/quiz.js" defer></script>'
     if anchor not in page:
         raise RuntimeError("quiz.html template marker missing: quiz.js script tag")
     page = page.replace(anchor, seed_block + anchor, 1)
 
+    copy_label = "ਕਾਪੀ ਹੋ ਗਿਆ \\u2713" if lang == "pa" else "Copied \\u2713"
     copy_block = (
         '  <script>\n'
         '    document.querySelectorAll("[data-copy-url]").forEach(function (btn) {\n'
@@ -2094,19 +2280,13 @@ def build_quiz(s, c, t):
         '        var link = btn.getAttribute("data-copy-url");\n'
         '        if (navigator.clipboard && navigator.clipboard.writeText) {\n'
         '          navigator.clipboard.writeText(link).then(function () {\n'
-        '            btn.textContent = "Copied \\u2713";\n'
+        f'            btn.textContent = "{copy_label}";\n'
         '          });\n'
         '        }\n'
         '      });\n'
         '    });\n'
         '  </script>\n')
-    page = page.replace("</body>", copy_block + "</body>", 1)
-
-    write_page(filename, page)
-    register(filename, url, "quiz", key, title, description, h1, 0,
-             {"WebPage", "BreadcrumbList", "FAQPage"})
-    info(f"quiz     {filename}  {count}q  flashcards={len(cards_nodes)}  faq={len(faqs)}")
-    return filename
+    return page.replace("</body>", copy_block + "</body>", 1)
 
 
 # =============================================================== EXAM PAGE ===
@@ -2892,6 +3072,7 @@ def main():
         for c, t in live_topics(s):
             if topic_pa_variant(t):
                 built.append(build_topic_pa(s, c, t))
+                built.append(build_quiz_pa(s, c, t))
     for s in subjects:
         for c in s.get("categories", []):
             if category_pa_topics(c):
@@ -2926,7 +3107,7 @@ def main():
             removed.append(fn)
     for fn in sorted(os.listdir(os.path.join(ROOT, "pa"))):
         rel = f"pa/{fn}"
-        if fn.startswith(("topic-", "category-")) and fn.endswith(".html") \
+        if fn.startswith(("topic-", "category-", "quiz-")) and fn.endswith(".html") \
                 and rel not in expected:
             os.remove(os.path.join(ROOT, rel))
             removed.append(rel)

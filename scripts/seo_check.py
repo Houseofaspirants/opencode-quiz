@@ -1965,6 +1965,36 @@ if landing_pages:
                 errors.append(f"{f}: Quiz.hasPart on a quiz page - its questions are "
                               f"not visible; the topic page owns the Quiz schema")
 
+    # --- Quiz language pairs: /quiz-* <-> /pa/quiz-* -----------------------
+    # Each language is its own indexable URL. Both editions must say so in
+    # the SERVED html (not after JS): <html lang>, data-page-lang (core.js pins
+    # the UI to it), the en/pa/x-default trio, a self canonical, and real
+    # question text in the question card.
+    n_quiz_pairs = 0
+    for r in [x for x in landing_pages if x["type"] == "quiz-pa"]:
+        pa_f = r["file"]
+        en_f = pa_f[len("pa/"):]
+        pair = {"pa": (pa_f, landing_h.get(pa_f, "")), "en": (en_f, landing_h.get(en_f, ""))}
+        if not pair["en"][1]:
+            errors.append(f"{pa_f}: English edition {en_f} missing")
+            continue
+        n_quiz_pairs += 1
+        want_alt = {"en": f"{DOMAIN}/{en_f[:-5]}", "pa": f"{DOMAIN}/{pa_f[:-5]}",
+                    "x-default": f"{DOMAIN}/{en_f[:-5]}"}
+        for lang, (f, h) in pair.items():
+            if not re.search(rf'<html lang="{lang}"[^>]* data-page-lang="{lang}"', h):
+                errors.append(f'{f}: needs <html lang="{lang}" ... data-page-lang="{lang}">')
+            for hl, href in want_alt.items():
+                if f'<link rel="alternate" hreflang="{hl}" href="{html_mod.escape(href)}">' not in h:
+                    errors.append(f"{f}: missing hreflang={hl} -> {href}")
+            if re.search(r'id="qText">\s*Loading question', h):
+                errors.append(f"{f}: question 1 not pre-rendered into #qText")
+        if '<base href="/">' not in pair["pa"][1]:
+            errors.append(f'{pa_f}: Punjabi pages need <base href="/">')
+        if not re.search(r'id="qText">[^<]*[\u0A00-\u0A7F]', pair["pa"][1]):
+            notes.append(f"{pa_f}: question 1 carries no Gurmukhi (source file is not Punjabi?)")
+    notes.append(f"quiz: {n_quiz_pairs} language pair(s) (/quiz-* + /pa/quiz-*)")
+
     # --- Exam page: Exam -> Subject (configured) and Exam -> Topic (derived)
     for r in [x for x in landing_pages if x["type"] == "exam"]:
         f, h = r["file"], landing_h.get(r["file"], "")

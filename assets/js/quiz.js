@@ -94,6 +94,7 @@
     qBody: document.getElementById("qBody"),
     options: document.getElementById("options"),
     feedback: document.getElementById("qFeedback"),
+    alt: document.getElementById("qAlt"),
     palette: document.getElementById("palette"),
     fill: document.getElementById("progressFill"),
     progressText: document.getElementById("progressText"),
@@ -308,11 +309,13 @@
     const qs =
       `subject=${encodeURIComponent(subject.id)}&topic=${encodeURIComponent(topic.id)}` +
       (cat ? `&category=${encodeURIComponent(cat.id)}` : "");
+    // A page pinned to Punjabi names the set in Punjabi too (titles.pa).
+    const shownName = (HOA.lang.page() && (topic.titles || {})[startLang]) || topic.name;
     return {
-      title: topic.name,
+      title: shownName,
       subject: subject.id, subjectName: subject.name,
       subjectIcon: subject.icon,
-      topicName: topic.name, topicId: topic.id,
+      topicName: shownName, topicId: topic.id,
       categoryFolder: cat ? cat.folder || cat.id : "",
       file: startFile,
       // Every language this set really ships in, plus the one now loaded. The
@@ -327,9 +330,13 @@
       // ?subject=..&topic=.. URL the build's landing path wins when it exists
       // (topic.landing in data/index.json), so both views consolidate onto the
       // static page; without one the URL keeps its own canonical, as before.
+      // ?lang=pa on the classic URL canonicalises onto the /pa/ edition, which
+      // the build publishes for every set that ships a Punjabi file.
       canonical:
         (SEED && SEED.canonical) ||
-        (topic.landing ? `${siteBase}${topic.landing}` : `${siteBase}/quiz?${qs}`),
+        (topic.landing
+          ? `${siteBase}${startLang === "pa" && variants.pa ? "/pa" : ""}${topic.landing}`
+          : `${siteBase}/quiz?${qs}${startLang === "pa" ? "&lang=pa" : ""}`),
       questions,
       defaultSeconds: perQ,
       // Configurable overall timer: file "timeLimit" (sec) wins, else Q × per-Q.
@@ -434,6 +441,7 @@
         .join("");
       paintOptions();
       paintFeedback(false);
+      paintAlt(false);
 
       // Controls state — persistent nodes, updated in place (never replaced)
       els.prev.disabled = S.i === 0 || S.locked;
@@ -529,6 +537,48 @@
       console.warn("[HOA] language swap failed", e.message);
       toast("Could not load that translation.");
     }
+  }
+
+  /* ================================ OTHER-LANGUAGE VIEW, PER QUESTION ===
+     On a page pinned to one language the switch changes the URL, so a reader
+     who only needs one unclear question in the other language gets a small
+     link instead: it prints that question and its options underneath, in
+     the other language, without touching the answer state. The other file
+     is fetched once, on first use. */
+  const ALT_LANG = HOA.lang.page() === "pa" ? "en" : HOA.lang.page() === "en" ? "pa" : "";
+  let altQuestions = null;
+
+  async function paintAlt(open) {
+    const box = els.alt;
+    if (!box) return;
+    const file = ALT_LANG && QUIZ && QUIZ.variants ? QUIZ.variants[ALT_LANG] : "";
+    if (!file || mode !== "topic") {
+      box.hidden = true;
+      return;
+    }
+    const label = ALT_LANG === "en"
+      ? (open ? "Hide English" : "Show in English")
+      : (open ? "ਪੰਜਾਬੀ ਲੁਕਾਓ" : "ਪੰਜਾਬੀ ਵਿੱਚ ਦੇਖੋ");
+    const i = S.i;
+    let body = "";
+    if (open) {
+      try {
+        if (!altQuestions) altQuestions = (await HOA.loadQuestions(file)).questions;
+      } catch (e) {
+        console.warn("[HOA] other-language file failed", e.message);
+      }
+      if (i !== S.i) return; // the reader moved on while the file loaded
+      const q = altQuestions && altQuestions[i];
+      body = q
+        ? `<div class="q-alt-body" lang="${ALT_LANG}">
+            <p class="q-alt-text">${esc(q.q)}</p>
+            <ol class="q-alt-opts" type="A">${q.options.map((o) => `<li>${esc(o)}</li>`).join("")}</ol>
+          </div>`
+        : `<p class="q-alt-text muted">${ALT_LANG === "en" ? "Not available for this question." : "ਇਸ ਸਵਾਲ ਲਈ ਉਪਲਬਧ ਨਹੀਂ।"}</p>`;
+    }
+    box.innerHTML = `<button type="button" class="q-alt-btn" lang="${ALT_LANG}"
+      aria-expanded="${open ? "true" : "false"}">${label}</button>${body}`;
+    box.hidden = false;
   }
 
   /** Answer selection — class toggles ONLY (no innerHTML → no focus loss). */
@@ -837,6 +887,10 @@
       );
       if (btn) go(Number(btn.dataset.goto));
     });
+    els.alt?.addEventListener("click", (e) => {
+      const btn = /** @type {Element} */ (e.target).closest(".q-alt-btn");
+      if (btn) paintAlt(btn.getAttribute("aria-expanded") !== "true");
+    });
     els.prev.addEventListener("click", () => go(S.i - 1));
     els.next.addEventListener("click", () => go(S.i + 1));
     els.skip.addEventListener("click", () => {
@@ -1039,7 +1093,8 @@
     paintFeedback(!!box && !box.classList.contains("hidden"));
   });
 
-  els.title.textContent = QUIZ.title;
+  // A seeded landing page keeps its static h1 (the Punjabi edition's says "ਕੁਇਜ਼").
+  if (!SEED) els.title.textContent = QUIZ.title;
   els.sub.textContent = mode === "daily"
     ? "Daily Challenge"
     : `${QUIZ.subjectName || ""}${QUIZ.topicName && QUIZ.topicName !== QUIZ.title ? " · " + QUIZ.topicName : ""}`;
@@ -1079,7 +1134,7 @@
           isPartOf: { "@id": `${siteBase}/#website` },
           publisher: { "@id": `${siteBase}/#organization` },
           hasPart: { "@id": `${QUIZ.canonical}#quiz` },
-          inLanguage: "en-IN",
+          inLanguage: QUIZ.lang === "pa" ? "pa-IN" : "en-IN",
         },
         {
           "@type": "Quiz",
@@ -1089,7 +1144,7 @@
           description: metaDescLd,
           about: { "@type": "Thing", name: QUIZ.title },
           isPartOf: { "@id": `${QUIZ.canonical}#webpage` },
-          inLanguage: "en-IN",
+          inLanguage: QUIZ.lang === "pa" ? "pa-IN" : "en-IN",
           isAccessibleForFree: true,
           timeRequired: `PT${Math.max(
             1,
@@ -1119,6 +1174,14 @@
     S.overallLeft = saved.overallLeft ?? S.overallLeft;
     toast("Resumed your saved progress ✓");
   }
+  // #q=N (added when the language switch opens the twin page) opens question N.
+  const hashQ = Number((/^#q=(\d+)$/.exec(location.hash) || [])[1]);
+  if (hashQ >= 1 && hashQ <= n) S.i = hashQ - 1;
+  document.addEventListener("hoa:lang-nav", (e) => {
+    const url = /** @type {CustomEvent} */ (e).detail.url;
+    if (mode === "topic" && n) url.hash = `q=${S.i + 1}`;
+    save();
+  });
 
   wire();
   buildPalette();

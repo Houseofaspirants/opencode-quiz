@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" data-page-lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -23,6 +23,9 @@
   <meta name="twitter:description" content="Practise Expansion of English East India Company - Part 3 online: 20 MCQs in about 10 min, instant scoring, question palette and a full answer review.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og/quiz-gk-expansion-of-english-east-india-company-in-india-part-3.jpg">
   <link rel="canonical" href="https://houseofaspirants.in/quiz-gk-expansion-of-english-east-india-company-in-india-part-3">
+  <link rel="alternate" hreflang="en" href="https://houseofaspirants.in/quiz-gk-expansion-of-english-east-india-company-in-india-part-3">
+  <link rel="alternate" hreflang="pa" href="https://houseofaspirants.in/pa/quiz-gk-expansion-of-english-east-india-company-in-india-part-3">
+  <link rel="alternate" hreflang="x-default" href="https://houseofaspirants.in/quiz-gk-expansion-of-english-east-india-company-in-india-part-3">
   <link rel="preconnect" href="https://t.me">
   <link rel="dns-prefetch" href="//t.me">
   <link rel="dns-prefetch" href="//instagram.com">
@@ -152,6 +155,35 @@
   </script>
   <script type="application/ld+json" id="ldDynamic">
   </script>
+  <!-- MCQ language routing, before anything paints. A topic quiz has ONE
+       language and it comes from the URL: /pa/quiz-* is Punjabi, /quiz-* is
+       English (the build marks both with data-page-lang and links them with
+       hreflang), and quiz?subject=..&topic=.. reads &lang=. A URL without a
+       language follows the reader's saved choice (hoa:lang, written by the
+       switch), else English; ?lang= always wins. Crawlers store nothing, so
+       they get exactly the page they asked for. The query string (utm_*) and
+       the #q= hash survive the hop. -->
+  <script>
+  (function () {
+    var d = document.documentElement, page = d.getAttribute("data-page-lang");
+    var sp = new URLSearchParams(location.search), want = sp.get("lang"), saved = null;
+    try { saved = JSON.parse(localStorage.getItem("hoa:lang") || "null"); } catch (e) {}
+    if (want !== "en" && want !== "pa") want = "";
+    if (page) {
+      var to = want && want !== page ? want : (!want && page === "en" && saved === "pa" ? "pa" : "");
+      var alt = to && document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
+      if (alt) {
+        sp.delete("lang");
+        var q = sp.toString();
+        location.replace(new URL(alt.href).pathname + (q ? "?" + q : "") + location.hash);
+      }
+    } else if (sp.get("topic") && !sp.get("mode")) {
+      page = want || (saved === "pa" ? "pa" : "en");
+      d.setAttribute("data-page-lang", page);
+      d.lang = page;
+    }
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889829175568995" crossorigin="anonymous"></script>
 </head>
 
@@ -167,11 +199,12 @@
           <small class="muted" id="quizSub"></small>
         </div>
 
-        <!-- Brief item 8 — in-quiz language switch. Uses the same data-lang-btn
-             as the header, so one state drives the whole site: flipping here
-             re-translates the chrome AND swaps the question file, while the
-             question number, every answer chosen, the marks, the palette and
-             both timers stay exactly where they were. Rendered only when
+        <!-- In-quiz language switch. Uses the same data-lang-btn as the
+             header. On a topic quiz it is NAVIGATION: core.js saves the choice
+             and opens the other language's URL at the same question, and the
+             answers carry over because the session is keyed by topic, not by
+             language. Daily / mock sessions have no URL language, so there it
+             still swaps the question file in place. Rendered only when
              data/index.json reports more than one real variant. -->
         <div class="lang-switch quiz-lang" id="quizLang" role="group" hidden
              aria-label="Question language / ਸਵਾਲ ਦੀ ਭਾਸ਼ਾ">
@@ -200,7 +233,7 @@
         <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
         <div class="progress-meta">
           <span id="progressText">0 of 0 answered (0%)</span>
-          <span id="qCount">Question 1 of 1</span>
+          <span id="qCount">Question 1 of 20</span>
         </div>
       </div>
     </div>
@@ -236,9 +269,18 @@
               <span class="badge" id="qTopic"></span>
             </div>
 
-            <h2 class="q-text" id="qText">Loading question…</h2>
+            <h2 class="q-text" id="qText">Who were the members of the three-member board set up to govern Punjab?</h2>
 
-            <div class="options" id="options"><!-- buttons injected --></div>
+            <div class="options" id="options">
+              <button class="option" data-opt="0" aria-pressed="false"><span class="opt-key">A</span><span>Henry Lawrence, John Lawrence and Charles Mansel</span></button>
+              <button class="option" data-opt="1" aria-pressed="false"><span class="opt-key">B</span><span>Henry Lawrence, Charles Napier and Dalhousie</span></button>
+              <button class="option" data-opt="2" aria-pressed="false"><span class="opt-key">C</span><span>John Lawrence, Hugh Gough and Mulraj</span></button>
+              <button class="option" data-opt="3" aria-pressed="false"><span class="opt-key">D</span><span>Ranjit Singh, Daleep Singh and Rani Jindan</span></button>
+            </div>
+
+            <!-- The same question in the set's other language, on request
+                 (filled by quiz.js on pages that have a twin). -->
+            <div class="q-alt" id="qAlt" hidden></div>
 
             <!-- Practice only: right / wrong verdict + explanation, shown the
                  moment an option is chosen (filled by quiz.js). -->

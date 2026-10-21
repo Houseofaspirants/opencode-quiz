@@ -48,6 +48,35 @@
     "inLanguage": "en-IN"
   }
   </script>
+  <!-- MCQ language routing, before anything paints. A topic quiz has ONE
+       language and it comes from the URL: /pa/quiz-* is Punjabi, /quiz-* is
+       English (the build marks both with data-page-lang and links them with
+       hreflang), and quiz?subject=..&topic=.. reads &lang=. A URL without a
+       language follows the reader's saved choice (hoa:lang, written by the
+       switch), else English; ?lang= always wins. Crawlers store nothing, so
+       they get exactly the page they asked for. The query string (utm_*) and
+       the #q= hash survive the hop. -->
+  <script>
+  (function () {
+    var d = document.documentElement, page = d.getAttribute("data-page-lang");
+    var sp = new URLSearchParams(location.search), want = sp.get("lang"), saved = null;
+    try { saved = JSON.parse(localStorage.getItem("hoa:lang") || "null"); } catch (e) {}
+    if (want !== "en" && want !== "pa") want = "";
+    if (page) {
+      var to = want && want !== page ? want : (!want && page === "en" && saved === "pa" ? "pa" : "");
+      var alt = to && document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
+      if (alt) {
+        sp.delete("lang");
+        var q = sp.toString();
+        location.replace(new URL(alt.href).pathname + (q ? "?" + q : "") + location.hash);
+      }
+    } else if (sp.get("topic") && !sp.get("mode")) {
+      page = want || (saved === "pa" ? "pa" : "en");
+      d.setAttribute("data-page-lang", page);
+      d.lang = page;
+    }
+  })();
+  </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889829175568995" crossorigin="anonymous"></script>
 </head>
 
@@ -63,11 +92,12 @@
           <small class="muted" id="quizSub"></small>
         </div>
 
-        <!-- Brief item 8 — in-quiz language switch. Uses the same data-lang-btn
-             as the header, so one state drives the whole site: flipping here
-             re-translates the chrome AND swaps the question file, while the
-             question number, every answer chosen, the marks, the palette and
-             both timers stay exactly where they were. Rendered only when
+        <!-- In-quiz language switch. Uses the same data-lang-btn as the
+             header. On a topic quiz it is NAVIGATION: core.js saves the choice
+             and opens the other language's URL at the same question, and the
+             answers carry over because the session is keyed by topic, not by
+             language. Daily / mock sessions have no URL language, so there it
+             still swaps the question file in place. Rendered only when
              data/index.json reports more than one real variant. -->
         <div class="lang-switch quiz-lang" id="quizLang" role="group" hidden
              aria-label="Question language / ਸਵਾਲ ਦੀ ਭਾਸ਼ਾ">
@@ -120,6 +150,10 @@
             <h2 class="q-text" id="qText">Loading question…</h2>
 
             <div class="options" id="options"><!-- buttons injected --></div>
+
+            <!-- The same question in the set's other language, on request
+                 (filled by quiz.js on pages that have a twin). -->
+            <div class="q-alt" id="qAlt" hidden></div>
 
             <!-- Practice only: right / wrong verdict + explanation, shown the
                  moment an option is chosen (filled by quiz.js). -->

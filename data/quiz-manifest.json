@@ -598,7 +598,7 @@
     {
       "id": "01 - Number System - MCQ - EN - Part 1",
       "subject": "quant",
-      "category": "number-system",
+      "category": "",
       "availableLanguages": [
         "en",
         "pa"
@@ -613,14 +613,14 @@
         "pa": "01   Number System   MCQ   PA   Part 1"
       },
       "variants": {
-        "en": "questions/quant/Number System/01 - Number System - MCQ - EN - Part 1.json",
-        "pa": "questions/quant/Number System/01 - Number System - MCQ - PA - Part 1.json"
+        "en": "questions/quant/01 - Number System - MCQ - EN - Part 1.json",
+        "pa": "questions/quant/01 - Number System - MCQ - PA - Part 1.json"
       }
     },
     {
       "id": "01 - Number System - MCQ - EN - Part 2",
       "subject": "quant",
-      "category": "number-system",
+      "category": "",
       "availableLanguages": [
         "en",
         "pa"
@@ -635,14 +635,14 @@
         "pa": "01   Number System   MCQ   PA   Part 2"
       },
       "variants": {
-        "en": "questions/quant/Number System/01 - Number System - MCQ - EN - Part 2.json",
-        "pa": "questions/quant/Number System/01 - Number System - MCQ - PA - Part 2.json"
+        "en": "questions/quant/01 - Number System - MCQ - EN - Part 2.json",
+        "pa": "questions/quant/01 - Number System - MCQ - PA - Part 2.json"
       }
     },
     {
       "id": "01 - Number System - MCQ - EN - Part 3",
       "subject": "quant",
-      "category": "number-system",
+      "category": "",
       "availableLanguages": [
         "en",
         "pa"
@@ -657,14 +657,14 @@
         "pa": "01   Number System   MCQ   PA   Part 3"
       },
       "variants": {
-        "en": "questions/quant/Number System/01 - Number System - MCQ - EN - Part 3.json",
-        "pa": "questions/quant/Number System/01 - Number System - MCQ - PA - Part 3.json"
+        "en": "questions/quant/01 - Number System - MCQ - EN - Part 3.json",
+        "pa": "questions/quant/01 - Number System - MCQ - PA - Part 3.json"
       }
     },
     {
       "id": "01 - Number System - MCQ - EN - Part 4",
       "subject": "quant",
-      "category": "number-system",
+      "category": "",
       "availableLanguages": [
         "en",
         "pa"
@@ -679,168 +679,8 @@
         "pa": "01   Number System   MCQ   PA   Part 4"
       },
       "variants": {
-        "en": "questions/quant/Number System/01 - Number System - MCQ - EN - Part 4.json",
-        "pa": "questions/quant/Number System/01 - Number System - MCQ - PA - Part 4.json"
-      }
-    },
-    {
-      "id": "analogy-part-1",
-      "subject": "reasoning",
-      "category": "analogy",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "Analogy Part 1",
-        "pa": "ਸਮਾਨਤਾ (Analogy) Part 1"
-      },
-      "variants": {
-        "en": "questions/reasoning/analogy/analogy-part-1-en.json",
-        "pa": "questions/reasoning/analogy/analogy-part-1-pa.json"
-      }
-    },
-    {
-      "id": "analogy-part-2",
-      "subject": "reasoning",
-      "category": "analogy",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "Analogy Part 2",
-        "pa": "ਸਮਾਨਤਾ (Analogy) Part 2"
-      },
-      "variants": {
-        "en": "questions/reasoning/analogy/analogy-part-2-en.json",
-        "pa": "questions/reasoning/analogy/analogy-part-2-pa.json"
-      }
-    },
-    {
-      "id": "analogy-part-3",
-      "subject": "reasoning",
-      "category": "analogy",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "Analogy Part 3",
-        "pa": "ਸਮਾਨਤਾ (Analogy) Part 3"
-      },
-      "variants": {
-        "en": "questions/reasoning/analogy/analogy-part-3-en.json",
-        "pa": "questions/reasoning/analogy/analogy-part-3-pa.json"
-      }
-    },
-    {
-      "id": "analogy-part-4",
-      "subject": "reasoning",
-      "category": "analogy",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25,
-        "pa": 25
-      },
-      "titles": {
-        "en": "Analogy Part 4",
-        "pa": "ਸਮਾਨਤਾ (Analogy) Part 4"
-      },
-      "variants": {
-        "en": "questions/reasoning/analogy/analogy-part-4-en.json",
-        "pa": "questions/reasoning/analogy/analogy-part-4-pa.json"
-      }
-    },
-    {
-      "id": "number-series-part-1",
-      "subject": "reasoning",
-      "category": "number-series",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Number Series Part 1"
-      },
-      "variants": {
-        "en": "questions/reasoning/NUMBER SERIES/number-series-part-1.json"
-      }
-    },
-    {
-      "id": "number-series-part-2",
-      "subject": "reasoning",
-      "category": "number-series",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Number Series Part 2"
-      },
-      "variants": {
-        "en": "questions/reasoning/NUMBER SERIES/number-series-part-2.json"
-      }
-    },
-    {
-      "id": "number-series-part-3",
-      "subject": "reasoning",
-      "category": "number-series",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Number Series Part 3"
-      },
-      "variants": {
-        "en": "questions/reasoning/NUMBER SERIES/number-series-part-3.json"
-      }
-    },
-    {
-      "id": "number-series-part-4",
-      "subject": "reasoning",
-      "category": "number-series",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Number Series Part 4"
-      },
-      "variants": {
-        "en": "questions/reasoning/NUMBER SERIES/number-series-part-4.json"
+        "en": "questions/quant/01 - Number System - MCQ - EN - Part 4.json",
+        "pa": "questions/quant/01 - Number System - MCQ - PA - Part 4.json"
       }
     },
     {

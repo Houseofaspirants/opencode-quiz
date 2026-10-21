@@ -1093,13 +1093,13 @@ if (site.url) {
       }
     }
   }
-  // Landing pages with no query-string variant: topic guides, exam pages and
-  // subject clusters. (Subject, category and quiz landing pages are covered
+  // Landing pages with no query-string variant: topic guides, the Punjabi
+  // editions under /pa/, exam pages and subject clusters. (Subject, category and quiz landing pages are covered
   // by the loops above.)
   for (const [key, p] of [...LANDING.entries()].sort()) {
     const kind = key.split("|")[0];
-    if (kind === "topic" || kind === "topic-pa" || kind === "category-pa" || kind === "exam" || kind === "cluster") {
-      const prio = { topic: "0.8", "topic-pa": "0.8", "category-pa": "0.8", exam: "0.85", cluster: "0.7" }[kind];
+    if (kind === "topic" || kind === "topic-pa" || kind === "category-pa" || kind === "quiz-pa" || kind === "exam" || kind === "cluster") {
+      const prio = { topic: "0.8", "topic-pa": "0.8", "category-pa": "0.8", "quiz-pa": "0.8", exam: "0.85", cluster: "0.7" }[kind];
       urls.push({ loc: `${base}${p}`, p: prio });
     }
   }
