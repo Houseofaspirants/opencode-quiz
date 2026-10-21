@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 1,
+    "title": "Number Series"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-001",
+      "number": 1,
+      "question": "At a Ludhiana test centre, seat numbers follow 143, 156, 169, 182, ... . What is the 9th seat number in this sequence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "234"
+        },
+        {
+          "label": "B",
+          "text": "260"
+        },
+        {
+          "label": "C",
+          "text": "239"
+        },
+        {
+          "label": "D",
+          "text": "247"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The common difference is 13. The 9th term is 143 + 8 × 13 = 247."
+    },
+    {
+      "id": "01-002",
+      "number": 2,
+      "question": "Which value replaces the blank in 8, 22, 64, ?, 568, 1702?",
+      "options": [
+        {
+          "label": "A",
+          "text": "194"
+        },
+        {
+          "label": "B",
+          "text": "192"
+        },
+        {
+          "label": "C",
+          "text": "188"
+        },
+        {
+          "label": "D",
+          "text": "190"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Each term is the previous term × 3 − 2. Thus 64 × 3 − 2 = 190, and 190 × 3 − 2 = 568."
+    },
+    {
+      "id": "01-003",
+      "number": 3,
+      "question": "Complete the list: 122, 170, 226, 290, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "400"
+        },
+        {
+          "label": "B",
+          "text": "362"
+        },
+        {
+          "label": "C",
+          "text": "324"
+        },
+        {
+          "label": "D",
+          "text": "360"
+        }
+      ],
+      "answer": "B",
+      "explanation": "These are 11² + 1, 13² + 1, 15² + 1 and 17² + 1. Next is 19² + 1 = 362."
+    },
+    {
+      "id": "01-004",
+      "number": 4,
+      "question": "Gurleen separates the odd and even positions of 12, 320, 17, 160, 26, 80, 39, 40, ?, ? . Which pair fills the blanks in order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(52, 20)"
+        },
+        {
+          "label": "B",
+          "text": "(56, 10)"
+        },
+        {
+          "label": "C",
+          "text": "(56, 20)"
+        },
+        {
+          "label": "D",
+          "text": "(54, 40)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Odd-position terms have differences 5, 9, 13, 17, giving 39 + 17 = 56. Even-position terms halve, giving 40 ÷ 2 = 20."
+    },
+    {
+      "id": "01-005",
+      "number": 5,
+      "question": "A machine displays 32, 48, 72, 108, ? in successive cycles. Select its next display.",
+      "options": [
+        {
+          "label": "A",
+          "text": "156"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        },
+        {
+          "label": "C",
+          "text": "144"
+        },
+        {
+          "label": "D",
+          "text": "162"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Multiply by 3/2 each time. Hence 108 × 3 ÷ 2 = 162."
+    },
+    {
+      "id": "01-006",
+      "number": 6,
+      "question": "One entry breaks the pattern in 18, 24, 34, 48, 68, 88. Identify that entry.",
+      "options": [
+        {
+          "label": "A",
+          "text": "68"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "88"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The differences should be 6, 10, 14, 18, 22. Therefore 48 + 18 = 66 should replace 68, and 66 + 22 = 88."
+    },
+    {
+      "id": "01-007",
+      "number": 7,
+      "question": "Among consecutive prime numbers, Aman has written 41, 43, ?, 53, 59. Which number has he omitted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "51"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The consecutive primes are 41, 43, 47, 53, 59. The omitted number is 47."
+    },
+    {
+      "id": "01-008",
+      "number": 8,
+      "question": "Find the missing internal term: 21, 25, ?, 49, 81, 145.",
+      "options": [
+        {
+          "label": "A",
+          "text": "33"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "29"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The differences double: 4, 8, 16, 32, 64. Thus the missing term is 25 + 8 = 33."
+    },
+    {
+      "id": "01-009",
+      "number": 9,
+      "question": "Harpreet uses the sum of the preceding two entries to continue 9, 14, 23, 37, ?, 97. What belongs in the gap?",
+      "options": [
+        {
+          "label": "A",
+          "text": "62"
+        },
+        {
+          "label": "B",
+          "text": "74"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "51"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Add the preceding two terms: 23 + 37 = 60. The check is 37 + 60 = 97."
+    },
+    {
+      "id": "01-010",
+      "number": 10,
+      "question": "The same step pattern connects 7, 8, 18, 57, 232, ? . Determine the final term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1160"
+        },
+        {
+          "label": "B",
+          "text": "1398"
+        },
+        {
+          "label": "C",
+          "text": "1164"
+        },
+        {
+          "label": "D",
+          "text": "1165"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The operations are ×1 + 1, ×2 + 2, ×3 + 3 and ×4 + 4. Next, 232 × 5 + 5 = 1165."
+    },
+    {
+      "id": "01-011",
+      "number": 11,
+      "question": "Choose the continuation of 120, 336, 720, 1320, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2178"
+        },
+        {
+          "label": "B",
+          "text": "1728"
+        },
+        {
+          "label": "C",
+          "text": "2184"
+        },
+        {
+          "label": "D",
+          "text": "2197"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The terms are n³ − n for n = 5, 7, 9, 11. The next base is 13, so 13³ − 13 = 2184."
+    },
+    {
+      "id": "01-012",
+      "number": 12,
+      "question": "An instrument records −1458, −486, −162, −54, ? . What is its next reading?",
+      "options": [
+        {
+          "label": "A",
+          "text": "-27"
+        },
+        {
+          "label": "B",
+          "text": "-16"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "-18"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Divide each term by 3. Therefore −54 ÷ 3 = −18."
+    },
+    {
+      "id": "01-013",
+      "number": 13,
+      "question": "In 31, 36, 45, 60, 83, ?, the differences themselves follow a pattern. Supply the missing value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "118"
+        },
+        {
+          "label": "B",
+          "text": "114"
+        },
+        {
+          "label": "C",
+          "text": "116"
+        },
+        {
+          "label": "D",
+          "text": "112"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first differences are 5, 9, 15, 23; their increases are 4, 6, 8. The next increase is 10, so 83 + 33 = 116."
+    },
+    {
+      "id": "01-014",
+      "number": 14,
+      "question": "Two familiar power sequences are interwoven: 16, 27, 25, 64, 36, 125, 49, ? . Which value comes next?",
+      "options": [
+        {
+          "label": "A",
+          "text": "343"
+        },
+        {
+          "label": "B",
+          "text": "169"
+        },
+        {
+          "label": "C",
+          "text": "216"
+        },
+        {
+          "label": "D",
+          "text": "64"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Odd positions contain 4², 5², 6², 7²; even positions contain 3³, 4³, 5³, 6³. The required value is 6³ = 216."
+    },
+    {
+      "id": "01-015",
+      "number": 15,
+      "question": "Riya copied a ×4 series as 7, 28, 112, 446, 1792. Which copied number needs correction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "112"
+        },
+        {
+          "label": "B",
+          "text": "446"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "1792"
+        }
+      ],
+      "answer": "B",
+      "explanation": "112 × 4 = 448 and 448 × 4 = 1792. Hence 446 is the incorrect entry."
+    },
+    {
+      "id": "01-016",
+      "number": 16,
+      "question": "A display alternates two operations: 6, 18, 14, 42, 38, 114, ? . Select the missing reading.",
+      "options": [
+        {
+          "label": "A",
+          "text": "110"
+        },
+        {
+          "label": "B",
+          "text": "118"
+        },
+        {
+          "label": "C",
+          "text": "342"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The operations alternate ×3 and −4. After 38 × 3 = 114, subtract 4 to get 110."
+    },
+    {
+      "id": "01-017",
+      "number": 17,
+      "question": "Determine the missing pair in 30, 24, 130, 120, 350, 336, ?, ? by considering paired cube adjustments.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(720, 738)"
+        },
+        {
+          "label": "B",
+          "text": "(738, 720)"
+        },
+        {
+          "label": "C",
+          "text": "(738, 728)"
+        },
+        {
+          "label": "D",
+          "text": "(730, 728)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each odd base supplies n³ + n followed by n³ − n, using bases 3, 5, 7, then 9. The pair is (9³ + 9, 9³ − 9) = (738, 720)."
+    },
+    {
+      "id": "01-018",
+      "number": 18,
+      "question": "What replaces ? in 180, 161, 144, 131, 120, ? if successive prime numbers are subtracted in descending order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "107"
+        },
+        {
+          "label": "B",
+          "text": "111"
+        },
+        {
+          "label": "C",
+          "text": "113"
+        },
+        {
+          "label": "D",
+          "text": "109"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The subtractions are 19, 17, 13, 11, then 7. Hence 120 − 7 = 113."
+    },
+    {
+      "id": "01-019",
+      "number": 19,
+      "question": "A decreasing sequence reads 286, 269, ?, 235, 218. Fill its vacant position.",
+      "options": [
+        {
+          "label": "A",
+          "text": "252"
+        },
+        {
+          "label": "B",
+          "text": "251"
+        },
+        {
+          "label": "C",
+          "text": "253"
+        },
+        {
+          "label": "D",
+          "text": "246"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract 17 at each step. The missing term is 269 − 17 = 252."
+    },
+    {
+      "id": "01-020",
+      "number": 20,
+      "question": "Meera divides by a different prime at each step: 30030, 15015, 5005, 1001, 143, ? . Find the next quotient.",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The divisors are consecutive primes 2, 3, 5, 7, 11. The next quotient is 143 ÷ 11 = 13."
+    },
+    {
+      "id": "01-021",
+      "number": 21,
+      "question": "Identify the two numbers that follow 4, 90, 7, 82, 11, 72, 18, 60, 29, 46 in the same order.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(47, 30)"
+        },
+        {
+          "label": "B",
+          "text": "(47, 32)"
+        },
+        {
+          "label": "C",
+          "text": "(46, 30)"
+        },
+        {
+          "label": "D",
+          "text": "(58, 32)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Odd positions follow 4, 7, 11, 18, 29, so the next is 18 + 29 = 47. Even positions decrease by 8, 10, 12, 14, then 16, giving 46 − 16 = 30."
+    },
+    {
+      "id": "01-022",
+      "number": 22,
+      "question": "The terms 310, 261, 225, 200, 184, ? decrease by a recognisable family of numbers. Choose the next term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "176"
+        },
+        {
+          "label": "B",
+          "text": "175"
+        },
+        {
+          "label": "C",
+          "text": "168"
+        },
+        {
+          "label": "D",
+          "text": "180"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract 7², 6², 5², 4², then 3². Therefore 184 − 9 = 175."
+    },
+    {
+      "id": "01-023",
+      "number": 23,
+      "question": "For the progression 630, 310, 150, 70, 30, ?, which result fits every transition?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each step is ÷2 − 5. Thus 30 ÷ 2 − 5 = 10."
+    },
+    {
+      "id": "01-024",
+      "number": 24,
+      "question": "Exactly one term is incorrect in 6, 11, 32, 121, 601, 3601. Which term is it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "601"
+        },
+        {
+          "label": "C",
+          "text": "121"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use ×2 − 1, ×3 − 2, ×4 − 3, ×5 − 4, ×6 − 5. The corrected third term is 11 × 3 − 2 = 31, so 32 is wrong; 31 × 4 − 3 = 121."
+    },
+    {
+      "id": "01-025",
+      "number": 25,
+      "question": "Continue the zigzag sequence 50, 53, 47, 59, 35, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "83"
+        },
+        {
+          "label": "B",
+          "text": "59"
+        },
+        {
+          "label": "C",
+          "text": "71"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The signed differences are +3, −6, +12, −24, then +48. Hence 35 + 48 = 83."
+    }
+  ]
+}

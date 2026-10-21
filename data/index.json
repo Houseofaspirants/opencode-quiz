@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 23,
-    "topics": 54,
-    "quizzes": 54,
-    "questions": 1214,
+    "topics": 58,
+    "quizzes": 58,
+    "questions": 1314,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1946,7 +1946,124 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism, Puzzles and more.",
       "order": 3,
-      "topics": [],
+      "topics": [
+        {
+          "id": "01 - Number Series - MCQ - EN - Part 1",
+          "name": "01   Number Series   MCQ   EN   Part 1",
+          "description": "",
+          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792591454551,
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "01   Number Series   MCQ   EN   Part 1",
+            "pa": "01   Number Series   MCQ   PA   Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 1"
+        },
+        {
+          "id": "01 - Number Series - MCQ - EN - Part 2",
+          "name": "01   Number Series   MCQ   EN   Part 2",
+          "description": "",
+          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792591454551,
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "01   Number Series   MCQ   EN   Part 2",
+            "pa": "01   Number Series   MCQ   PA   Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 2"
+        },
+        {
+          "id": "01 - Number Series - MCQ - EN - Part 3",
+          "name": "01   Number Series   MCQ   EN   Part 3",
+          "description": "",
+          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792591454551,
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "01   Number Series   MCQ   EN   Part 3",
+            "pa": "01   Number Series   MCQ   PA   Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 3"
+        },
+        {
+          "id": "01 - Number Series - MCQ - EN - Part 4",
+          "name": "01   Number Series   MCQ   EN   Part 4",
+          "description": "",
+          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792591454551,
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "01   Number Series   MCQ   EN   Part 4",
+            "pa": "01   Number Series   MCQ   PA   Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 4"
+        }
+      ],
       "categories": [],
       "landing": "/subject-reasoning"
     },
@@ -3497,6 +3614,22 @@
     "questions/quant/01 - Number System - MCQ - EN - Part 4.json": [
       "4927d0cb46b8d802",
       1792589424748
+    ],
+    "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json": [
+      "377cb5b0593c1210",
+      1792591454551
+    ],
+    "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json": [
+      "32fe54bcf17483fd",
+      1792591454551
+    ],
+    "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json": [
+      "0101ccd206eb2a34",
+      1792591454551
+    ],
+    "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json": [
+      "e4ad906fd1d7efd2",
+      1792591454551
     ]
   }
 }

@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 601,
+  "nodes": 604,
   "edges": 3529,
   "silos": 35,
-  "clusters": 88,
+  "clusters": 92,
   "pillars": 34
  },
  "nodes": [
@@ -6943,18 +6943,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
    "url": "/quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
    "type": "quiz",
@@ -7017,6 +7005,54 @@
   {
    "id": "quiz-quant-01 - Number System - MCQ - EN - Part 4.html",
    "url": "/quiz-quant-01 - Number System - MCQ - EN - Part 4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+   "url": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 2.html",
+   "url": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 3.html",
+   "url": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 4.html",
+   "url": "/quiz-reasoning-01 - Number Series - MCQ - EN - Part 4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11991,12 +12027,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12069,24 +12099,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-quant-01 - Number System - MCQ - EN - Part 1.html",
    "rel": "contextual",
    "weight": 1
@@ -12106,6 +12118,30 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-01 - Number System - MCQ - EN - Part 4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12531,6 +12567,12 @@
   },
   {
    "from": "material-01-number-series-2.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-series-2.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -12538,12 +12580,6 @@
   {
    "from": "material-01-number-series-2.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12621,6 +12657,12 @@
   },
   {
    "from": "material-01-number-series.html",
+   "to": "quiz-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-number-series.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -12628,12 +12670,6 @@
   {
    "from": "material-01-number-series.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29332,7 +29368,12 @@
    "name": "Reasoning",
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-reasoning.html",
-   "clusters": [],
+   "clusters": [
+    "topic-reasoning-01 - Number Series - MCQ - EN - Part 1.html",
+    "topic-reasoning-01 - Number Series - MCQ - EN - Part 2.html",
+    "topic-reasoning-01 - Number Series - MCQ - EN - Part 3.html",
+    "topic-reasoning-01 - Number Series - MCQ - EN - Part 4.html"
+   ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",

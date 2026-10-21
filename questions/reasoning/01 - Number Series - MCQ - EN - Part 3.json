@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 1,
+    "title": "Number Series"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-051",
+      "number": 51,
+      "question": "Choose the missing value in 35, 50, 63, 82, 99, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "122"
+        },
+        {
+          "label": "C",
+          "text": "121"
+        },
+        {
+          "label": "D",
+          "text": "123"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The terms are 6² − 1, 7² + 1, 8² − 1, 9² + 1, 10² − 1. Next is 11² + 1 = 122."
+    },
+    {
+      "id": "01-052",
+      "number": 52,
+      "question": "An alternating rise-and-fall pattern gives 28, 30, 27, 31, 26, 32, ? . What follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The changes are +2, −3, +4, −5, +6, then −7. Hence 32 − 7 = 25."
+    },
+    {
+      "id": "01-053",
+      "number": 53,
+      "question": "The sequence 3, 5, 9, 16, 28, 48, ? adds a small increasing adjustment to a two-term sum. Find its next term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "82"
+        },
+        {
+          "label": "D",
+          "text": "81"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Add the previous two terms and then 1, 2, 3, 4, 5 successively. The next term is 28 + 48 + 5 = 81."
+    },
+    {
+      "id": "01-054",
+      "number": 54,
+      "question": "Fill the blank in 2, 8, 72, ?, 28800, using the pattern of multipliers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1296"
+        },
+        {
+          "label": "B",
+          "text": "1440"
+        },
+        {
+          "label": "C",
+          "text": "864"
+        },
+        {
+          "label": "D",
+          "text": "1152"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Multiply by 2², 3², 4², 5². The blank is 72 × 16 = 1152; 1152 × 25 = 28800."
+    },
+    {
+      "id": "01-055",
+      "number": 55,
+      "question": "For the interwoven list 11, 150, 13, 143, 17, 136, 19, 129, ... , which number occupies position 11?",
+      "options": [
+        {
+          "label": "A",
+          "text": "122"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "23"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Odd positions contain consecutive primes 11, 13, 17, 19, 23, 29. Position 11 is the sixth odd-position term, so it is 29."
+    },
+    {
+      "id": "01-056",
+      "number": 56,
+      "question": "Kirandeep obtains 4, 18, 8, 30, 14, 48, 23, ? by alternating two rules. Determine the missing value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "75"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "69"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Alternate ×3 + 6 and ÷2 − 1. After 48 ÷ 2 − 1 = 23, apply 23 × 3 + 6 = 75."
+    },
+    {
+      "id": "01-057",
+      "number": 57,
+      "question": "A token series starts 38, 49, 60, 71 and ends at 170 with the same gap. How many tokens are in the series, including both ends?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "There are (170 − 38) ÷ 11 = 12 gaps. Including the first token gives 12 + 1 = 13 tokens."
+    },
+    {
+      "id": "01-058",
+      "number": 58,
+      "question": "If the bases are consecutive primes starting at 3, which number fits 12, 30, 56, 132, 182, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "272"
+        },
+        {
+          "label": "B",
+          "text": "306"
+        },
+        {
+          "label": "C",
+          "text": "289"
+        },
+        {
+          "label": "D",
+          "text": "342"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each term is p(p + 1) for p = 3, 5, 7, 11, 13. Next p = 17, giving 17 × 18 = 306."
+    },
+    {
+      "id": "01-059",
+      "number": 59,
+      "question": "Find the faulty entry in 8, 10, 27, 14, 64, 22, 126, 38, 216, 70.",
+      "options": [
+        {
+          "label": "A",
+          "text": "216"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "126"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Odd positions should be 2³, 3³, 4³, 5³, 6³, so 126 should be 125. Even-position gaps are 4, 8, 16, 32, confirming that strand."
+    },
+    {
+      "id": "01-060",
+      "number": 60,
+      "question": "Recognise the bases in 4, 9, 25, 64, 144, ? and supply the next number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "225"
+        },
+        {
+          "label": "B",
+          "text": "324"
+        },
+        {
+          "label": "C",
+          "text": "289"
+        },
+        {
+          "label": "D",
+          "text": "256"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The square bases are 2, 3, 5, 8, 12, with gaps 1, 2, 3, 4. The next base is 17, giving 17² = 289."
+    },
+    {
+      "id": "01-061",
+      "number": 61,
+      "question": "The successive multipliers are −2, +3, −4, +5, −6. Complete 3, −6, −18, 72, 360, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1800"
+        },
+        {
+          "label": "B",
+          "text": "-2160"
+        },
+        {
+          "label": "C",
+          "text": "-1800"
+        },
+        {
+          "label": "D",
+          "text": "2160"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The final multiplier is −6. Therefore 360 × (−6) = −2160."
+    },
+    {
+      "id": "01-062",
+      "number": 62,
+      "question": "Find the next output of the rule hidden in 4, 10, 23, 51, 109, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "225"
+        },
+        {
+          "label": "B",
+          "text": "231"
+        },
+        {
+          "label": "C",
+          "text": "229"
+        },
+        {
+          "label": "D",
+          "text": "227"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Double and add successive primes 2, 3, 5, 7, 11. Thus 109 × 2 + 11 = 229."
+    },
+    {
+      "id": "01-063",
+      "number": 63,
+      "question": "The jumps grow rapidly in 11, 13, 19, 43, 163, ? . Which term follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "489"
+        },
+        {
+          "label": "B",
+          "text": "763"
+        },
+        {
+          "label": "C",
+          "text": "979"
+        },
+        {
+          "label": "D",
+          "text": "883"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The gaps are 2!, 3!, 4!, 5!, then 6!. Thus 163 + 720 = 883."
+    },
+    {
+      "id": "01-064",
+      "number": 64,
+      "question": "A puzzle combines 6, 8, 12, 16, 20, 32, 30, 64, ?, ? . Select the ordered pair that continues it.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(42, 128)"
+        },
+        {
+          "label": "B",
+          "text": "(36, 128)"
+        },
+        {
+          "label": "C",
+          "text": "(40, 128)"
+        },
+        {
+          "label": "D",
+          "text": "(42, 96)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Odd positions are 2×3, 3×4, 4×5, 5×6, then 6×7 = 42. Even positions double, so 64 × 2 = 128."
+    },
+    {
+      "id": "01-065",
+      "number": 65,
+      "question": "From the third entry onward, add the previous two entries and then add 3. What fills the blank in 4, 9, 16, 28, 47, ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "78"
+        },
+        {
+          "label": "B",
+          "text": "79"
+        },
+        {
+          "label": "C",
+          "text": "75"
+        },
+        {
+          "label": "D",
+          "text": "94"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use 28 + 47 + 3 = 78."
+    },
+    {
+      "id": "01-066",
+      "number": 66,
+      "question": "Which value continues 17, 43, 89, 161, 265, ? when each term combines a square and the preceding integer’s cube?",
+      "options": [
+        {
+          "label": "A",
+          "text": "399"
+        },
+        {
+          "label": "B",
+          "text": "448"
+        },
+        {
+          "label": "C",
+          "text": "392"
+        },
+        {
+          "label": "D",
+          "text": "407"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The rule is n² + (n − 1)³ for n = 3, 4, 5, 6, 7. Next is 8² + 7³ = 64 + 343 = 407."
+    },
+    {
+      "id": "01-067",
+      "number": 67,
+      "question": "Complete the multiplication chain 2, 18, ?, 630, 1890, 1890.",
+      "options": [
+        {
+          "label": "A",
+          "text": "108"
+        },
+        {
+          "label": "B",
+          "text": "126"
+        },
+        {
+          "label": "C",
+          "text": "90"
+        },
+        {
+          "label": "D",
+          "text": "144"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The multipliers descend through odd numbers 9, 7, 5, 3, 1. Hence 18 × 7 = 126, followed by 126 × 5 = 630."
+    },
+    {
+      "id": "01-068",
+      "number": 68,
+      "question": "Amandeep repeats the cycle +7, ×2, −5. Starting with 9, he gets 9, 16, 32, 27, 34, 68, ? . Find the next entry.",
+      "options": [
+        {
+          "label": "A",
+          "text": "136"
+        },
+        {
+          "label": "B",
+          "text": "61"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "75"
+        }
+      ],
+      "answer": "C",
+      "explanation": "After +7 and ×2, the third operation is −5. Thus 68 − 5 = 63."
+    },
+    {
+      "id": "01-069",
+      "number": 69,
+      "question": "One quotient has been misprinted in 46080, 23040, 5760, 960, 125, 12. Which quotient is wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "5760"
+        },
+        {
+          "label": "C",
+          "text": "125"
+        },
+        {
+          "label": "D",
+          "text": "960"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divide by 2, 4, 6, 8, 10 in order. The fifth term must be 960 ÷ 8 = 120 and then 120 ÷ 10 = 12, so 125 is wrong."
+    },
+    {
+      "id": "01-070",
+      "number": 70,
+      "question": "After 24, 29, 38, 52, 57, 66, 80, what are the next two entries when the gap cycle repeats?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(85, 94)"
+        },
+        {
+          "label": "B",
+          "text": "(85, 99)"
+        },
+        {
+          "label": "C",
+          "text": "(89, 103)"
+        },
+        {
+          "label": "D",
+          "text": "(94, 99)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The gap cycle is +5, +9, +14. After 80, add 5 and then 9 to get 85 and 94."
+    },
+    {
+      "id": "01-071",
+      "number": 71,
+      "question": "The descending consecutive primes are 73, 71, ?, 61, ?, 53. What is the sum of the two missing primes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "128"
+        },
+        {
+          "label": "B",
+          "text": "124"
+        },
+        {
+          "label": "C",
+          "text": "126"
+        },
+        {
+          "label": "D",
+          "text": "120"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The missing primes are 67 and 59. Their sum is 67 + 59 = 126."
+    },
+    {
+      "id": "01-072",
+      "number": 72,
+      "question": "The terms 36, 80, 150, 252, 392, ? follow n³ + n². Determine the missing term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "576"
+        },
+        {
+          "label": "B",
+          "text": "512"
+        },
+        {
+          "label": "C",
+          "text": "648"
+        },
+        {
+          "label": "D",
+          "text": "567"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The bases are 3, 4, 5, 6, 7, then 8. Therefore 8³ + 8² = 512 + 64 = 576."
+    },
+    {
+      "id": "01-073",
+      "number": 73,
+      "question": "Supply the final value in 4, 22, 91, 278, 563, ? by tracking multipliers and additions separately.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1129"
+        },
+        {
+          "label": "B",
+          "text": "564"
+        },
+        {
+          "label": "C",
+          "text": "574"
+        },
+        {
+          "label": "D",
+          "text": "576"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rules are ×5 + 2, ×4 + 3, ×3 + 5, ×2 + 7. Next is ×1 + 11, so 563 + 11 = 574."
+    },
+    {
+      "id": "01-074",
+      "number": 74,
+      "question": "Compare successive ratios in 96, 144, 288, 720, 2160, ? . Which value continues the pattern?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8640"
+        },
+        {
+          "label": "B",
+          "text": "5400"
+        },
+        {
+          "label": "C",
+          "text": "6480"
+        },
+        {
+          "label": "D",
+          "text": "7560"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The multipliers are 1.5, 2, 2.5, 3, then 3.5. Thus 2160 × 3.5 = 7560."
+    },
+    {
+      "id": "01-075",
+      "number": 75,
+      "question": "Find the missing pair in 2, 200, 3, 199, 8, 191, 19, 164, 46, 100, ?, ?.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(111, -25)"
+        },
+        {
+          "label": "B",
+          "text": "(111, 75)"
+        },
+        {
+          "label": "C",
+          "text": "(65, -25)"
+        },
+        {
+          "label": "D",
+          "text": "(92, -25)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Odd positions use next = 2 × latest + older, giving 2 × 46 + 19 = 111. Even positions subtract 1³, 2³, 3³, 4³, then 5³, giving 100 − 125 = −25."
+    }
+  ]
+}
