@@ -633,17 +633,29 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 1,
+      "count": 2,
       "newest": "2026-10-21",
-      "totalSize": 4245106,
+      "totalSize": 8490212,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ",
+              "name": "Chapter 1: ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ",
+              "parts": [
+                {
+                  "file": "material-01-sankhia-prnali.html",
+                  "n": 1
+                }
+              ],
+              "pages": 67
+            }
+          ]
         },
         {
           "id": "en",
@@ -666,7 +678,7 @@
           ]
         }
       ],
-      "chapters": 1
+      "chapters": 2
     },
     {
       "id": "gk",
@@ -2472,6 +2484,6 @@
       "hidden": true
     }
   ],
-  "total": 82,
+  "total": 83,
   "generatedBy": "scripts/study_material.py"
 }

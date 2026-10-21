@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 1,
+    "title": "Number System"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-051",
+      "number": 51,
+      "question": "Which of the following numbers is prime?",
+      "options": [
+        {
+          "label": "A",
+          "text": "119"
+        },
+        {
+          "label": "B",
+          "text": "121"
+        },
+        {
+          "label": "C",
+          "text": "127"
+        },
+        {
+          "label": "D",
+          "text": "133"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For 127, test only the primes 2, 3, 5, 7 and 11, since √127 is less than 12. None divides it, so 127 is prime."
+    },
+    {
+      "id": "01-052",
+      "number": 52,
+      "question": "The five-digit number 4a7b2 is divisible by 36. What is the greatest possible value of a + b?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divisibility by 4 requires b to be odd. The digit sum is 13 + a + b, so a + b must be 5 or 14 for divisibility by 9; 14 is possible with a = 9 and b = 5."
+    },
+    {
+      "id": "01-053",
+      "number": 53,
+      "question": "What is the least perfect square divisible by both 24 and 40?",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "900"
+        },
+        {
+          "label": "C",
+          "text": "14400"
+        },
+        {
+          "label": "D",
+          "text": "3600"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM of 24 and 40 is 120 = 2³ × 3 × 5. Make each exponent even: 2^4 × 3² × 5² = 3600."
+    },
+    {
+      "id": "01-054",
+      "number": 54,
+      "question": "Find the sum of the cubes of the first 9 natural numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "729"
+        },
+        {
+          "label": "B",
+          "text": "2025"
+        },
+        {
+          "label": "C",
+          "text": "4050"
+        },
+        {
+          "label": "D",
+          "text": "285"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum of cubes is the square of the sum: (9 × 10 ÷ 2)² = 45² = 2025."
+    },
+    {
+      "id": "01-055",
+      "number": 55,
+      "question": "How many positive factors of 2^5 × 3^4 × 5² are odd multiples of 9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "C",
+      "explanation": "An odd factor has exponent 0 for 2. The exponent of 3 can be 2, 3 or 4, and that of 5 can be 0, 1 or 2, giving 3 × 3 = 9 factors."
+    },
+    {
+      "id": "01-056",
+      "number": 56,
+      "question": "What is the unit digit of 6^125 + 8^42?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Every positive power of 6 ends in 6. Since 42 leaves remainder 2 on division by 4, 8^42 ends in 4; 6 + 4 = 10 gives unit digit 0."
+    },
+    {
+      "id": "01-057",
+      "number": 57,
+      "question": "What is the smallest five-digit number exactly divisible by 27?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10008"
+        },
+        {
+          "label": "B",
+          "text": "10026"
+        },
+        {
+          "label": "C",
+          "text": "9990"
+        },
+        {
+          "label": "D",
+          "text": "10017"
+        }
+      ],
+      "answer": "D",
+      "explanation": "10000 = 27 × 370 + 10. Add 27 − 10 = 17 to obtain 10017."
+    },
+    {
+      "id": "01-058",
+      "number": 58,
+      "question": "A number leaves remainder 17 when divided by 28. What remainder does it leave when divided by 7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write the number as 28q + 17. Since 28q is divisible by 7, the remainder is that of 17 ÷ 7, namely 3."
+    },
+    {
+      "id": "01-059",
+      "number": 59,
+      "question": "Find the remainder when 3^100 is divided by 17.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "C",
+      "explanation": "3^4 = 81 leaves remainder 13, and 3^8 leaves remainder −1 modulo 17, so 3^16 leaves remainder 1. Since 100 = 16 × 6 + 4, the required remainder is 13."
+    },
+    {
+      "id": "01-060",
+      "number": 60,
+      "question": "Evaluate 998 × 1002.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1000004"
+        },
+        {
+          "label": "B",
+          "text": "999004"
+        },
+        {
+          "label": "C",
+          "text": "996004"
+        },
+        {
+          "label": "D",
+          "text": "999996"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use (1000 − 2)(1000 + 2) = 1000² − 2² = 1000000 − 4 = 999996."
+    },
+    {
+      "id": "01-061",
+      "number": 61,
+      "question": "What is the greatest digit x for which 6x34 is divisible by 6?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The last digit is even, so only divisibility by 3 remains. The digit sum 13 + x is a multiple of 3 for x = 2, 5 or 8; the greatest is 8."
+    },
+    {
+      "id": "01-062",
+      "number": 62,
+      "question": "How many integers n satisfy 20 < √n < 21?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "39"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Squaring gives 400 < n < 441. The integers from 401 to 440 total 440 − 401 + 1 = 40."
+    },
+    {
+      "id": "01-063",
+      "number": 63,
+      "question": "A positive integer has exactly 24 positive factors. Its prime factorisation is 2^a × 3², where a is a non-negative integer. Find a.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The factor count is (a + 1)(2 + 1) = 24. Hence a + 1 = 8 and a = 7."
+    },
+    {
+      "id": "01-064",
+      "number": 64,
+      "question": "In an arithmetic progression, the first term is 8 and the common difference is 6. Which term is 152?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Solve 8 + (n − 1) × 6 = 152. Thus n − 1 = 24 and n = 25."
+    },
+    {
+      "id": "01-065",
+      "number": 65,
+      "question": "What are the last two digits of 3^40?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "01"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "81"
+        }
+      ],
+      "answer": "B",
+      "explanation": "3^10 ends in 49, so 3^20 ends in 49² = 2401, hence in 01. Squaring again shows that 3^40 also ends in 01."
+    },
+    {
+      "id": "01-066",
+      "number": 66,
+      "question": "The sum of the first n positive even integers is 870. Find n.",
+      "options": [
+        {
+          "label": "A",
+          "text": "29"
+        },
+        {
+          "label": "B",
+          "text": "28"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sum is n(n + 1), so n(n + 1) = 870 = 29 × 30. Therefore n = 29."
+    },
+    {
+      "id": "01-067",
+      "number": 67,
+      "question": "How many consecutive positive integers n satisfy that n! has exactly 24 trailing zeros?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "C",
+      "explanation": "100! has 20 + 4 = 24 trailing zeros, and the count stays 24 through 104!. At 105! it becomes 21 + 4 = 25, so there are 5 values."
+    },
+    {
+      "id": "01-068",
+      "number": 68,
+      "question": "What is the least positive integer that leaves remainder 2 when divided by 5 and remainder 3 when divided by 7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "22"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Numbers leaving remainder 2 on division by 5 begin 2, 7, 12, 17. The first of these leaving remainder 3 on division by 7 is 17."
+    },
+    {
+      "id": "01-069",
+      "number": 69,
+      "question": "If x + 1/x = 5 and x ≠ 0, find x³ + 1/x³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "125"
+        },
+        {
+          "label": "B",
+          "text": "110"
+        },
+        {
+          "label": "C",
+          "text": "115"
+        },
+        {
+          "label": "D",
+          "text": "140"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x). The value is 5³ − 3 × 5 = 110."
+    },
+    {
+      "id": "01-070",
+      "number": 70,
+      "question": "A number is divided by 9, giving quotient q and remainder 7. If the same number is divided by 7, the quotient is q + 4 and the remainder is 1. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "106"
+        },
+        {
+          "label": "B",
+          "text": "97"
+        },
+        {
+          "label": "C",
+          "text": "115"
+        },
+        {
+          "label": "D",
+          "text": "99"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equate the two forms: 9q + 7 = 7(q + 4) + 1. Thus 2q = 22, q = 11 and the number is 9 × 11 + 7 = 106."
+    },
+    {
+      "id": "01-071",
+      "number": 71,
+      "question": "Using each of the digits 0, 4, 7 and 8 exactly once, what is the greatest four-digit number divisible by 4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8704"
+        },
+        {
+          "label": "B",
+          "text": "8470"
+        },
+        {
+          "label": "C",
+          "text": "8740"
+        },
+        {
+          "label": "D",
+          "text": "7840"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first two digits can be 87, leaving 4 and 0. Both 40 and 04 are divisible by 4, and 8740 is the greater arrangement."
+    },
+    {
+      "id": "01-072",
+      "number": 72,
+      "question": "A three-digit number has hundreds digit 3 more than its units digit. Its tens digit is twice its units digit, and its digit sum is 19. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "748"
+        },
+        {
+          "label": "B",
+          "text": "874"
+        },
+        {
+          "label": "C",
+          "text": "682"
+        },
+        {
+          "label": "D",
+          "text": "784"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Let the units digit be u. Then (u + 3) + 2u + u = 19, giving u = 4; the digits are 7, 8 and 4."
+    },
+    {
+      "id": "01-073",
+      "number": 73,
+      "question": "Find the remainder when 12^35 − 1 is divided by 11.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "12 leaves remainder 1 on division by 11. Therefore 12^35 − 1 leaves remainder 1^35 − 1 = 0."
+    },
+    {
+      "id": "01-074",
+      "number": 74,
+      "question": "What is the least positive integer that must be added to 6,700 to obtain a perfect cube?",
+      "options": [
+        {
+          "label": "A",
+          "text": "441"
+        },
+        {
+          "label": "B",
+          "text": "59"
+        },
+        {
+          "label": "C",
+          "text": "159"
+        },
+        {
+          "label": "D",
+          "text": "1300"
+        }
+      ],
+      "answer": "C",
+      "explanation": "18³ = 5832 and 19³ = 6859. The next perfect cube is 6859, so add 6859 − 6700 = 159."
+    },
+    {
+      "id": "01-075",
+      "number": 75,
+      "question": "How many ordered digit pairs (a, b) make the four-digit number 5a2b divisible by 15?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For divisibility by 5, b = 0 or 5. If b = 0, a can be 2, 5 or 8; if b = 5, a can be 0, 3, 6 or 9, giving 3 + 4 = 7 pairs."
+    }
+  ]
+}

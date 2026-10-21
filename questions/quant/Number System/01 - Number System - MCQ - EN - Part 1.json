@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 1,
+    "title": "Number System"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-001",
+      "number": 1,
+      "question": "Which of the following is an irrational number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "√18"
+        },
+        {
+          "label": "B",
+          "text": "√81"
+        },
+        {
+          "label": "C",
+          "text": "0.625"
+        },
+        {
+          "label": "D",
+          "text": "−13/4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "√18 = 3√2, which is irrational; the other three values are rational."
+    },
+    {
+      "id": "01-002",
+      "number": 2,
+      "question": "If the four-digit number 52x4 is divisible by 12, find the digit x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divisibility by 4 requires x to be even. The digit sum 11 + x must also be divisible by 3, so x = 4."
+    },
+    {
+      "id": "01-003",
+      "number": 3,
+      "question": "How many positive factors of 7,560 are divisible by 12?",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "B",
+      "explanation": "7,560 = 2³ × 3³ × 5 × 7. For divisibility by 12, the factor must contain at least 2² × 3; the count is (3 − 2 + 1) × (3 − 1 + 1) × 2 × 2 = 24."
+    },
+    {
+      "id": "01-004",
+      "number": 4,
+      "question": "Using each of the digits 0, 2, 6 and 9 exactly once, what is the smallest four-digit even number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2069"
+        },
+        {
+          "label": "B",
+          "text": "2690"
+        },
+        {
+          "label": "C",
+          "text": "2906"
+        },
+        {
+          "label": "D",
+          "text": "2096"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Start with 2 and then 0 to minimise the number. Of the remaining digits, 6 must be last to make it even, giving 2096."
+    },
+    {
+      "id": "01-005",
+      "number": 5,
+      "question": "What is the unit digit of 3^47?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The unit digits repeat as 3, 9, 7, 1. Since 47 leaves remainder 3 on division by 4, the unit digit is 7."
+    },
+    {
+      "id": "01-006",
+      "number": 6,
+      "question": "What is the least positive integer by which 540 must be multiplied to obtain a perfect square?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "540 = 2² × 3³ × 5. Multiply by 3 × 5 = 15 to make every prime exponent even."
+    },
+    {
+      "id": "01-007",
+      "number": 7,
+      "question": "Find the remainder when 7^103 is divided by 13.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "7³ leaves remainder 5 and 7^6 leaves remainder −1 modulo 13. Since 103 = 6 × 17 + 1, the remainder is −7 + 13 = 6."
+    },
+    {
+      "id": "01-008",
+      "number": 8,
+      "question": "A number divided by 23 gives quotient 17 and remainder 9. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "391"
+        },
+        {
+          "label": "B",
+          "text": "382"
+        },
+        {
+          "label": "C",
+          "text": "400"
+        },
+        {
+          "label": "D",
+          "text": "409"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Dividend = 23 × 17 + 9 = 400."
+    },
+    {
+      "id": "01-009",
+      "number": 9,
+      "question": "Find the sum of all odd integers from 31 to 79, including both endpoints.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1375"
+        },
+        {
+          "label": "B",
+          "text": "1320"
+        },
+        {
+          "label": "C",
+          "text": "1430"
+        },
+        {
+          "label": "D",
+          "text": "2750"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are (79 − 31) ÷ 2 + 1 = 25 terms. Sum = 25 × (31 + 79) ÷ 2 = 1375."
+    },
+    {
+      "id": "01-010",
+      "number": 10,
+      "question": "What is the smallest four-digit number that leaves remainder 5 when divided by each of 12, 18 and 30?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1005"
+        },
+        {
+          "label": "B",
+          "text": "1080"
+        },
+        {
+          "label": "C",
+          "text": "1265"
+        },
+        {
+          "label": "D",
+          "text": "1085"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM of 12, 18 and 30 is 180. The least multiple of 180 at least 995 is 1080, so the required number is 1080 + 5 = 1085."
+    },
+    {
+      "id": "01-011",
+      "number": 11,
+      "question": "What is the greatest positive integer that divides n² − 1 for every odd integer n?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "n² − 1 = (n − 1)(n + 1), a product of consecutive even integers, so it is divisible by 8. Taking n = 3 gives 8, so no larger integer always divides it."
+    },
+    {
+      "id": "01-012",
+      "number": 12,
+      "question": "Find the sum of all positive factors of 150.",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "186"
+        },
+        {
+          "label": "C",
+          "text": "372"
+        },
+        {
+          "label": "D",
+          "text": "300"
+        }
+      ],
+      "answer": "C",
+      "explanation": "150 = 2 × 3 × 5². Sum of factors = (1 + 2)(1 + 3)(1 + 5 + 25) = 3 × 4 × 31 = 372."
+    },
+    {
+      "id": "01-013",
+      "number": 13,
+      "question": "A two-digit number exceeds its reverse by 36. The sum of the squares of its digits is 80. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "62"
+        },
+        {
+          "label": "D",
+          "text": "73"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For digits x and y, x − y = 36 ÷ 9 = 4. Then (x + y)² = 2(x² + y²) − (x − y)² = 160 − 16 = 144, so x + y = 12 and the digits are 8 and 4."
+    },
+    {
+      "id": "01-014",
+      "number": 14,
+      "question": "What is the unit digit of 2^35 + 3^26 + 7^19?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The three unit digits are 8, 9 and 3 respectively. Their sum is 20, so the required unit digit is 0."
+    },
+    {
+      "id": "01-015",
+      "number": 15,
+      "question": "An arithmetic progression begins with 11, 18, 25 and 32. Find its 20th term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "151"
+        },
+        {
+          "label": "B",
+          "text": "140"
+        },
+        {
+          "label": "C",
+          "text": "133"
+        },
+        {
+          "label": "D",
+          "text": "144"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The common difference is 7. The 20th term is 11 + (20 − 1) × 7 = 144."
+    },
+    {
+      "id": "01-016",
+      "number": 16,
+      "question": "If 7x32y is a five-digit number divisible by 72, what is the greatest possible value of x + y?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divisibility by 8 gives y = 0 or 8. The digit sum 12 + x + y must be divisible by 9: the pairs (x, y) are (6, 0) and (7, 8), so the greatest sum is 15."
+    },
+    {
+      "id": "01-017",
+      "number": 17,
+      "question": "What is the least non-negative integer that must be subtracted from 950 to obtain a perfect square?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "89"
+        }
+      ],
+      "answer": "B",
+      "explanation": "30² = 900 and 31² = 961. The nearest perfect square below 950 is 900, so subtract 950 − 900 = 50."
+    },
+    {
+      "id": "01-018",
+      "number": 18,
+      "question": "How many trailing zeros are there in 125!?",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Count factors of 5: 125 ÷ 5 = 25, 125 ÷ 25 = 5 and 125 ÷ 125 = 1. Total trailing zeros = 25 + 5 + 1 = 31."
+    },
+    {
+      "id": "01-019",
+      "number": 19,
+      "question": "Evaluate 1003² − 997².",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "6000"
+        },
+        {
+          "label": "C",
+          "text": "12000"
+        },
+        {
+          "label": "D",
+          "text": "24000"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use a² − b² = (a − b)(a + b): 6 × 2000 = 12000."
+    },
+    {
+      "id": "01-020",
+      "number": 20,
+      "question": "A number divided by a positive integer gives quotient 18 and remainder 7. When the divisor is increased by 5, the quotient becomes 15 and the remainder stays 7. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "450"
+        },
+        {
+          "label": "B",
+          "text": "547"
+        },
+        {
+          "label": "C",
+          "text": "382"
+        },
+        {
+          "label": "D",
+          "text": "457"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Let the original divisor be d. Then 18d + 7 = 15(d + 5) + 7, so 3d = 75 and d = 25; the number is 18 × 25 + 7 = 457."
+    },
+    {
+      "id": "01-021",
+      "number": 21,
+      "question": "How many positive factors does 81 have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "81 = 3^4, so the number of positive factors is 4 + 1 = 5."
+    },
+    {
+      "id": "01-022",
+      "number": 22,
+      "question": "A positive integer N leaves remainder 4 when divided by 9. What remainder does N² + 3N + 2 leave when divided by 9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Replace N by its remainder 4: 4² + 3 × 4 + 2 = 30. Dividing 30 by 9 leaves remainder 3."
+    },
+    {
+      "id": "01-023",
+      "number": 23,
+      "question": "What is the greatest five-digit number exactly divisible by 88?",
+      "options": [
+        {
+          "label": "A",
+          "text": "99912"
+        },
+        {
+          "label": "B",
+          "text": "99968"
+        },
+        {
+          "label": "C",
+          "text": "99944"
+        },
+        {
+          "label": "D",
+          "text": "99880"
+        }
+      ],
+      "answer": "B",
+      "explanation": "99,999 = 88 × 1136 + 31. Subtract the remainder: 99,999 − 31 = 99,968."
+    },
+    {
+      "id": "01-024",
+      "number": 24,
+      "question": "Among four-digit numbers of the form 7x2y divisible by 5, 9 and 11, find the difference between the greatest and the smallest. Here x and y are digits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "450"
+        },
+        {
+          "label": "B",
+          "text": "990"
+        },
+        {
+          "label": "C",
+          "text": "545"
+        },
+        {
+          "label": "D",
+          "text": "495"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Divisibility by 11 forces x + y = 9, which also makes the digit sum 18. Divisibility by 5 gives y = 0 or 5, producing 7920 and 7425; their difference is 495."
+    },
+    {
+      "id": "01-025",
+      "number": 25,
+      "question": "Harjit writes three consecutive odd positive integers whose sum is 195. What is the largest of them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "67"
+        },
+        {
+          "label": "B",
+          "text": "65"
+        },
+        {
+          "label": "C",
+          "text": "66"
+        },
+        {
+          "label": "D",
+          "text": "69"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The middle integer is the average, 195 ÷ 3 = 65. The largest is 65 + 2 = 67."
+    }
+  ]
+}

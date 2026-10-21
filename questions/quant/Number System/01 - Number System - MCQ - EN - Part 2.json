@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 1,
+    "title": "Number System"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "01-026",
+      "number": 26,
+      "question": "Which pair consists of two composite numbers that are co-prime?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(21, 35)"
+        },
+        {
+          "label": "B",
+          "text": "(27, 40)"
+        },
+        {
+          "label": "C",
+          "text": "(22, 33)"
+        },
+        {
+          "label": "D",
+          "text": "(26, 39)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "27 = 3³ and 40 = 2³ × 5 have no common prime factor, so their HCF is 1. Each other pair has a common factor greater than 1."
+    },
+    {
+      "id": "01-027",
+      "number": 27,
+      "question": "Find the remainder when 11^57 is divided by 15.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "D",
+      "explanation": "11² = 121 leaves remainder 1 on division by 15. Since 57 is odd, 11^57 leaves the same remainder as 11, namely 11."
+    },
+    {
+      "id": "01-028",
+      "number": 28,
+      "question": "What is the least positive integer by which 864 must be divided to obtain a perfect cube?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "864 = 2^5 × 3³. Divide by 2² = 4 to leave 2³ × 3³ = 216, a perfect cube."
+    },
+    {
+      "id": "01-029",
+      "number": 29,
+      "question": "A number leaves remainder 8 when divided by 13. What remainder will three times the number leave when divided by 13?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Three times the number has the same remainder as 3 × 8 = 24. Thus the remainder is 24 − 13 = 11."
+    },
+    {
+      "id": "01-030",
+      "number": 30,
+      "question": "What are the last two digits of 7^202?",
+      "options": [
+        {
+          "label": "A",
+          "text": "07"
+        },
+        {
+          "label": "B",
+          "text": "49"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "01"
+        }
+      ],
+      "answer": "B",
+      "explanation": "7^4 = 2401 ends in 01, so the last two digits repeat every 4 powers. Since 202 leaves remainder 2 on division by 4, the last two digits are those of 7², namely 49."
+    },
+    {
+      "id": "01-031",
+      "number": 31,
+      "question": "The six-digit number 83x52y is divisible by 55. Find the greatest possible value of x − y.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divisibility by 5 gives y = 0 or 5. The alternating-sum test for 11 gives x − y + 2 as a multiple of 11: the valid pairs are (9, 0) and (3, 5), so the greatest difference is 9."
+    },
+    {
+      "id": "01-032",
+      "number": 32,
+      "question": "If p is prime and p² has exactly three positive factors, how many positive factors does p^5 have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For a prime power p^k, the number of positive factors is k + 1. Hence p^5 has 5 + 1 = 6 factors."
+    },
+    {
+      "id": "01-033",
+      "number": 33,
+      "question": "Find the sum of the squares of the first 12 natural numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "608"
+        },
+        {
+          "label": "B",
+          "text": "676"
+        },
+        {
+          "label": "C",
+          "text": "600"
+        },
+        {
+          "label": "D",
+          "text": "650"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use n(n + 1)(2n + 1) ÷ 6: 12 × 13 × 25 ÷ 6 = 650."
+    },
+    {
+      "id": "01-034",
+      "number": 34,
+      "question": "What is the greatest three-digit number that leaves remainder 7 when divided by each of 16 and 24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "991"
+        },
+        {
+          "label": "B",
+          "text": "967"
+        },
+        {
+          "label": "C",
+          "text": "960"
+        },
+        {
+          "label": "D",
+          "text": "983"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM of 16 and 24 is 48. The greatest multiple of 48 not exceeding 999 − 7 = 992 is 960, so the number is 960 + 7 = 967."
+    },
+    {
+      "id": "01-035",
+      "number": 35,
+      "question": "What is the unit digit of 4^38 × 9^27?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "An even power of 4 ends in 6, and an odd power of 9 ends in 9. Their product ends in the unit digit of 6 × 9 = 54, which is 4."
+    },
+    {
+      "id": "01-036",
+      "number": 36,
+      "question": "How many digits x make the five-digit number 43x76 divisible by 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The digit sum is 20 + x. It is divisible by 3 for x = 1, 4 and 7, giving 3 possible digits."
+    },
+    {
+      "id": "01-037",
+      "number": 37,
+      "question": "The 6th and 14th terms of an arithmetic progression are 29 and 69. Find its first term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "−1"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The common difference is (69 − 29) ÷ (14 − 6) = 5. The first term is 29 − 5 × 5 = 4."
+    },
+    {
+      "id": "01-038",
+      "number": 38,
+      "question": "How many integers between 200 and 500, including both endpoints, are divisible by 7 but not by 5?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 71 − 28 = 43 multiples of 7 and 14 − 5 = 9 multiples of 35 in this interval. Hence the required count is 43 − 9 = 34."
+    },
+    {
+      "id": "01-039",
+      "number": 39,
+      "question": "Find the value of 48 × 52 + 2².",
+      "options": [
+        {
+          "label": "A",
+          "text": "2496"
+        },
+        {
+          "label": "B",
+          "text": "2504"
+        },
+        {
+          "label": "C",
+          "text": "2500"
+        },
+        {
+          "label": "D",
+          "text": "2304"
+        }
+      ],
+      "answer": "C",
+      "explanation": "48 × 52 = (50 − 2)(50 + 2) = 50² − 2². Adding 2² leaves 50² = 2500."
+    },
+    {
+      "id": "01-040",
+      "number": 40,
+      "question": "A three-digit number has hundreds digit 5 and units digit 3. Interchanging its hundreds and units digits reduces it by how much?",
+      "options": [
+        {
+          "label": "A",
+          "text": "198"
+        },
+        {
+          "label": "B",
+          "text": "180"
+        },
+        {
+          "label": "C",
+          "text": "200"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The tens digit cancels. The reduction is 99 × (5 − 3) = 198."
+    },
+    {
+      "id": "01-041",
+      "number": 41,
+      "question": "Find the remainder when 2^50 + 3^50 is divided by 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "0"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Since 2³ leaves remainder 1, 2^50 leaves remainder 4. Since 3^6 leaves remainder 1, 3^50 leaves remainder 2; the total remainder is 4 + 2 = 6."
+    },
+    {
+      "id": "01-042",
+      "number": 42,
+      "question": "What is the smallest integer greater than 1 that divides both 2^9 − 1 and 2^6 − 1 exactly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2^9 − 1 = 511 = 7 × 73 and 2^6 − 1 = 63 = 7 × 9. Their HCF is 7, whose smallest divisor greater than 1 is 7."
+    },
+    {
+      "id": "01-043",
+      "number": 43,
+      "question": "What are the last two digits of 25^19 + 75^20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "00"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "75"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every positive power of 25 ends in 25. An even positive power of 75 ends in 25, so the last two digits of the sum are 25 + 25 = 50."
+    },
+    {
+      "id": "01-044",
+      "number": 44,
+      "question": "How many trailing zeros are there in the product 1 × 2 × 3 × 4 × 5 × 6 × 7 × 8 × 9 × 10?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Only 5 and 10 supply factors of 5, while factors of 2 are plentiful. Thus there are 2 trailing zeros."
+    },
+    {
+      "id": "01-045",
+      "number": 45,
+      "question": "A number is divided by 4, and the resulting quotient is divided by 6. The respective remainders are 3 and 5. What remainder does the original number leave when divided by 24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "17"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Write the first quotient as 6k + 5. Then the original number is 4(6k + 5) + 3 = 24k + 23, so the remainder is 23."
+    },
+    {
+      "id": "01-046",
+      "number": 46,
+      "question": "How many positive factors of 2^8 × 3^6 × 5^4 are perfect squares?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "315"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A square factor must have even prime exponents. There are 5 choices for the exponent of 2, 4 for that of 3 and 3 for that of 5, giving 5 × 4 × 3 = 60."
+    },
+    {
+      "id": "01-047",
+      "number": 47,
+      "question": "A square courtyard has area 2,025 m². If its side is increased by 3 m, what is the new area?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2034 m²"
+        },
+        {
+          "label": "B",
+          "text": "2160 m²"
+        },
+        {
+          "label": "C",
+          "text": "2304 m²"
+        },
+        {
+          "label": "D",
+          "text": "2401 m²"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The original side is √2025 = 45 m. The new area is (45 + 3)² = 48² = 2304 m²."
+    },
+    {
+      "id": "01-048",
+      "number": 48,
+      "question": "A three-digit number has digit sum 16. Is it greater than 700? Statement I: Its hundreds digit is twice its units digit. Statement II: It exceeds the number formed by reversing its digits by 396. Choose the correct data-sufficiency conclusion.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both statements together are needed"
+        },
+        {
+          "label": "B",
+          "text": "Only statement I is sufficient"
+        },
+        {
+          "label": "C",
+          "text": "Only statement II is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Either statement alone is sufficient"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Statement I allows 673 and 844; statement II allows 682 and 763, so neither alone settles the comparison. Together, h = 2u and h − u = 396 ÷ 99 = 4 give u = 4, h = 8 and t = 16 − 8 − 4 = 4, so the number is 844."
+    },
+    {
+      "id": "01-049",
+      "number": 49,
+      "question": "What is the smallest positive integer that must be added to 4,321 to make the result divisible by both 8 and 9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "71"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM of 8 and 9 is 72, and 4321 = 72 × 60 + 1. Add 72 − 1 = 71 to reach the next multiple."
+    },
+    {
+      "id": "01-050",
+      "number": 50,
+      "question": "Using each of the digits 1, 3, 5 and 7 exactly once, find the difference between the greatest and smallest four-digit numbers formed.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6084"
+        },
+        {
+          "label": "B",
+          "text": "6174"
+        },
+        {
+          "label": "C",
+          "text": "6264"
+        },
+        {
+          "label": "D",
+          "text": "5994"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The greatest number is 7531 and the smallest is 1357. Their difference is 7531 − 1357 = 6174."
+    }
+  ]
+}

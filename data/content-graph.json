@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 598,
-  "edges": 3531,
+  "nodes": 601,
+  "edges": 3547,
   "silos": 35,
   "clusters": 94,
   "pillars": 34
@@ -2814,6 +2814,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "url": "/content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "url": "/content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "type": "page",
@@ -3587,6 +3599,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: ਪੰਜਾਬ ਦੀ ਵਿੱਤੀ ਸਥਿਤੀ ਅਤੇ ਖੇਤੀਬਾੜੀ (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-01-sankhia-prnali",
+   "url": "/material-01-sankhia-prnali",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-01-sankhia-prnali.html",
+   "url": "/material-01-sankhia-prnali.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8421,6 +8457,12 @@
   },
   {
    "from": "archive-category-quantitative-aptitude.html",
+   "to": "material-01-sankhia-prnali.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
    "to": "punjab-exams.html",
    "rel": "contextual",
    "weight": 1
@@ -10144,6 +10186,12 @@
   {
    "from": "archives.html",
    "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12267,7 +12315,7 @@
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-computer-en-ch06.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12675,12 +12723,6 @@
   },
   {
    "from": "material-01-number-system.html",
-   "to": "study.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-system.html",
    "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
@@ -12705,19 +12747,7 @@
   },
   {
    "from": "material-01-number-system.html",
-   "to": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-system.html",
-   "to": "material-chapter-01-arrival-of-european-in-india-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-system.html",
-   "to": "material-chapter-01-arrival-of-european-in-india.html",
+   "to": "study.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -12735,7 +12765,7 @@
   },
   {
    "from": "material-01-number-system.html",
-   "to": "material-computer-en-ch06.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12825,7 +12855,97 @@
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-computer-en-ch06.html",
+   "to": "material-01-sankhia-prnali.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "material-01-sankhia-prnali",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "subject-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "study.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "material-01-number-system.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-01-sankhia-prnali.html",
+   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14163,13 +14283,13 @@
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-01-number-system.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14883,13 +15003,13 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-01-number-system.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18117,13 +18237,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-number-system.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18207,13 +18327,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-01-number-system.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-number-system.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21843,12 +21963,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/computer-en-ch02.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -22017,6 +22131,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -22048,6 +22168,12 @@
   {
    "from": "pdfs.html",
    "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22174,12 +22300,6 @@
   {
    "from": "pdfs.html",
    "to": "material-computer-en-ch01.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-computer-en-ch02.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27765,6 +27885,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27844,6 +27970,12 @@
   {
    "from": "study-material.html",
    "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28311,12 +28443,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/computer-en-ch02.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28485,6 +28611,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/quant/punjabi/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80/01%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%96%E0%A8%BF%E0%A8%86%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%A3%E0%A8%BE%E0%A8%B2%E0%A9%80.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "current-affairs-preparation.html",
    "rel": "contextual",
    "weight": 1
@@ -28522,6 +28654,12 @@
   {
    "from": "study-notes.html",
    "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-01-sankhia-prnali.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28648,12 +28786,6 @@
   {
    "from": "study-notes.html",
    "to": "material-computer-en-ch01.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-computer-en-ch02.html",
    "rel": "contextual",
    "weight": 1
   },
