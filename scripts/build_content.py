@@ -2326,20 +2326,31 @@ def study_auto_meta(path, subject):
     return meta
 
 
-def study_description(title, subject):
+def study_description(title, subject, lang="en"):
     """140-160 characters, assembled from the title and the subject.
 
     Same window as every other page on the site, but the clauses are true of
     any file format - PDF, Markdown or JSON - because this generator has to
-    describe a file it has never been told the type of."""
-    text = f"{title} - free study material from House of Aspirants."
-    clauses = [
-        f" {subject} material, filed under its subject, language and chapter.",
-        " Read it online or keep it for offline revision.",
-        " No sign-up, no email wall, no paid tier.",
-        " Listed under Study Material with its language and reading time.",
-        " Free for every aspirant.",
-    ]
+    describe a file it has never been told the type of. A Punjabi page is
+    described in Punjabi (`subject` is then the subject's Punjabi name)."""
+    if lang == "pa":
+        text = f"{title} - House of Aspirants ਵੱਲੋਂ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ।"
+        clauses = [
+            f" {subject} ਦੀ ਸਮੱਗਰੀ, ਵਿਸ਼ੇ, ਭਾਸ਼ਾ ਅਤੇ ਅਧਿਆਇ ਅਨੁਸਾਰ।",
+            " ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ ਔਫਲਾਈਨ ਦੁਹਰਾਈ ਲਈ ਰੱਖੋ।",
+            " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ।",
+            " ਪੰਜਾਬ ਪੁਲਿਸ ਅਤੇ PSSSB ਦੀ ਤਿਆਰੀ ਲਈ।",
+            " ਹਰ ਉਮੀਦਵਾਰ ਲਈ ਮੁਫ਼ਤ।",
+        ]
+    else:
+        text = f"{title} - free study material from House of Aspirants."
+        clauses = [
+            f" {subject} material, filed under its subject, language and chapter.",
+            " Read it online or keep it for offline revision.",
+            " No sign-up, no email wall, no paid tier.",
+            " Listed under Study Material with its language and reading time.",
+            " Free for every aspirant.",
+        ]
     for _ in range(4):
         for clause in clauses:
             if len(text) >= 140:
@@ -2349,7 +2360,8 @@ def study_description(title, subject):
         if len(text) >= 140:
             break
     if len(text) < 140:
-        text += " Free to read and download, generated from the file name."
+        text += (" ਪੜ੍ਹਨ ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਬਿਲਕੁਲ ਮੁਫ਼ਤ।" if lang == "pa"
+                 else " Free to read and download, generated from the file name.")
     while len(text) > 160:
         text = text.rsplit(" ", 1)[0]
     if not (140 <= len(text) <= 160):          # pragma: no cover - guarded gate
@@ -2497,6 +2509,132 @@ def stamp_study_fields(records):
                         " ".join(str(s) for s in (rec.get("subjects") or [])),
                         " ".join(str(e) for e in (rec.get("exams") or []))])
         rec["search"] = re.sub(r"\s+", " ", hay).strip().lower()
+
+
+# A Punjabi note is described in Punjabi, so its subject is named in Punjabi
+# too. A subject missing here keeps its English name inside the Punjabi
+# sentence - readable, and the build says so.
+STUDY_SUBJECT_PA = {
+    "computer": "ਕੰਪਿਊਟਰ", "english": "ਅੰਗਰੇਜ਼ੀ", "punjabi": "ਪੰਜਾਬੀ",
+    "reasoning": "ਰੀਜ਼ਨਿੰਗ", "quant": "ਗਣਿਤ", "polity": "ਭਾਰਤੀ ਰਾਜ-ਵਿਵਸਥਾ",
+    "history": "ਇਤਿਹਾਸ", "economy": "ਭਾਰਤੀ ਅਰਥਵਿਵਸਥਾ", "geography": "ਭੂਗੋਲ",
+    "science": "ਵਿਗਿਆਨ", "miscellaneous": "ਫੁਟਕਲ",
+    "history-of-punjab": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ",
+    "culture-of-punjab": "ਪੰਜਾਬ ਦਾ ਸੱਭਿਆਚਾਰ",
+    "punjab-literature": "ਪੰਜਾਬੀ ਸਾਹਿਤ",
+    "geography-of-punjab": "ਪੰਜਾਬ ਦਾ ਭੂਗੋਲ",
+    "economy-of-punjab": "ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ",
+    "Punjab GK": "ਪੰਜਾਬ ਜੀ.ਕੇ.",
+}
+
+
+def _gurmukhi_share(text):
+    """Share of the letters in `text` that are Gurmukhi (0.0 - 1.0).
+
+    Every Gurmukhi code point counts - vowel signs are not isalpha(), and
+    without them `ਵਿਸ਼ੇਸ਼ਣ (Adjective)` would read as mostly English."""
+    guru = sum("਀" <= c <= "੿" for c in str(text))
+    latin = sum(c.isascii() and c.isalpha() for c in str(text))
+    return guru / (guru + latin) if guru + latin else 0.0
+
+
+def study_title_pa(title):
+    """`Chapter 7: ਕਾਰਕ (Case) (Punjabi)` -> `ਅਧਿਆਇ 7: ਕਾਰਕ (Case)`.
+
+    The page is already in Punjabi, so the "(Punjabi)" tag goes and the
+    chapter and part labels are written in Punjabi."""
+    t = re.sub(r"\s*\((?:Punjabi|ਪੰਜਾਬੀ)\)\s*$", "", str(title)).strip()
+    t = re.sub(r"^(?:Chapter|Lesson|Unit)\s+(\d+[A-Z]?):", r"ਅਧਿਆਇ \1:", t)
+    t = re.sub(r"\s+-\s+Part\s+(\d+)$", r" - ਭਾਗ \1", t)
+    return t
+
+
+def _study_pair_key(rec):
+    """What an English note and its Punjabi twin have in common.
+
+    Subject, sub-category and part position, plus the chapter: its number
+    when the folder is numbered (`01 - ...`, `Chapter 01 - ...`,
+    `ਅਧਿਆਇ 01 - ...`), otherwise the file name without its language tag
+    (`cultural-fairs-en` / `cultural-fairs-pa`)."""
+    chapter = str(rec.get("studyChapter") or "").split("/")[-1]
+    m = re.match(r"(?i)^\s*(?:chapter|lesson|unit|ਅਧਿਆਇ)?\s*0*(\d+)(?!\d)", chapter)
+    if m:
+        head = f"#{m.group(1)}"
+    else:
+        stem = re.sub(r"(?i)[\s_-]*\(?(?:pa|en|punjabi|english)\)?$", "",
+                      Path(rec["path"]).stem)
+        head = re.sub(r"[^a-z0-9]+", "-", ascii_fold(stem).lower()).strip("-")
+    return (rec.get("studySubject"), rec.get("studySubcategory") or "", head,
+            rec.get("studyPart"), rec.get("studyParts"))
+
+
+def stamp_study_languages(records):
+    """The language a note page is written in, its twin, and its canonical.
+
+    * pageLang - a file in a Punjabi folder is a Punjabi page (<html lang="pa">,
+      Punjabi title and description). Checked once against the PDF text: every
+      Punjabi-folder file is Gurmukhi-first, except the copies below.
+    * canonicalUrl - the same bytes filed under two language folders are one
+      bilingual document, not a translation: the English-folder copy is the
+      main page, the other copy points its canonical there, stays out of the
+      sitemap and gets no hreflang.
+    * langTwin - an English and a Punjabi note with the same pair key (see
+      _study_pair_key), exactly one on each side, link to each other with
+      hreflang. A note with no twin gets none.
+    """
+    by_bytes = {}
+    for rec in records:
+        full = ROOT / rec["path"]
+        if full.is_file():
+            digest = hashlib.sha256(full.read_bytes()).hexdigest()
+            by_bytes.setdefault((rec.get("studySubject"), digest), []).append(rec)
+    for group in by_bytes.values():
+        main = [r for r in group if r.get("studyLanguage") == "en"]
+        if len(group) < 2 or not main:
+            continue
+        for r in group:
+            if r is not main[0]:
+                r["canonicalUrl"] = main[0]["url"]
+
+    for rec in records:
+        lang = "pa" if (rec.get("studyLanguage") == "pa"
+                        and not rec.get("canonicalUrl")) else "en"
+        rec["pageLang"] = lang
+        if lang != "pa":
+            continue
+        title = study_title_pa(rec["title"])
+        # An English gloss in brackets - `ਯੋਜਕ (Conjunction)` - is a help to
+        # the reader, not the title's language.
+        if _gurmukhi_share(re.sub(r"\([^)]*\)", "", title)) < 0.5:
+            warn(f"{rec['path']}: Punjabi page with a non-Punjabi title "
+                 f"{title!r} - add a Gurmukhi title in its metadata.json")
+        subject = STUDY_SUBJECT_PA.get(str(rec.get("studySubject")))
+        if not subject:
+            subject = str(rec.get("subjectName") or "")
+            warn(f"{rec['path']}: no Punjabi name for subject "
+                 f"{rec.get('studySubject')!r} (STUDY_SUBJECT_PA)")
+        desc = str(rec.get("description") or "")
+        if _gurmukhi_share(desc) < 0.5:
+            desc = study_description(title, subject, "pa")
+        rec["title"] = rec["meta"]["title"] = title
+        rec["description"] = rec["meta"]["description"] = desc
+        rec["search"] = re.sub(r"\s+", " ",
+                               f'{rec.get("search", "")} {title} {desc}'.lower())
+
+    sides = {}
+    for rec in records:
+        if rec.get("canonicalUrl"):
+            continue
+        sides.setdefault(_study_pair_key(rec), {}).setdefault(
+            rec["pageLang"], []).append(rec)
+    for pair in sides.values():
+        en, pa = pair.get("en", []), pair.get("pa", [])
+        if len(en) == 1 and len(pa) == 1:
+            twin = {"en": en[0]["url"], "pa": pa[0]["url"]}
+            en[0]["langTwin"] = pa[0]["langTwin"] = twin
+        elif en and pa:
+            warn("study notes: ambiguous language pair "
+                 + ", ".join(r["path"] for r in en + pa) + " - no hreflang")
 
 
 def study_language_label(code):
@@ -3372,7 +3510,8 @@ def dedupe_pdf_titles(all_records):
                 r["title"] = cand
                 r["meta"]["title"] = cand
                 r["meta"]["description"] = (
-                    study_description(cand, str(r.get("subjectName") or first))
+                    study_description(cand, str(r.get("subjectName") or first),
+                                      r.get("pageLang") or "en")
                     if r.get("studySubject") else pdf_description(cand, label))
                 r["description"] = r["meta"]["description"]
                 if r["meta"].get("keywords"):
@@ -4127,6 +4266,31 @@ def enforce_link_floor(html, coll, page):
     return html[:m.start()] + m.group(1) + body + m.group(3) + html[m.end():]
 
 
+def study_note_head(html, record):
+    """A study note's <head> in the note's own language, at its own URL.
+
+    head() ties lang="pa" to the /pa/ edition (and its <base>); a Punjabi
+    note keeps its root URL, so its language is set here instead. A copy of
+    another note (stamp_study_languages) points its canonical at the main
+    page."""
+    lang = record.get("pageLang") or "en"
+    html = html.replace('<html lang="en" data-theme="light">',
+                        f'<html lang="{lang}" data-theme="light" '
+                        f'data-page-lang="{lang}">', 1)
+    if lang == "pa":
+        html = html.replace('<meta property="og:locale" content="en_IN">',
+                            '<meta property="og:locale" content="pa_IN">', 1)
+        html = html.replace('"inLanguage": "en-IN"', '"inLanguage": "pa-IN"')
+    if record.get("canonicalUrl"):
+        html = html.replace(f'<link rel="canonical" href="{esc(record["url"])}">',
+                            f'<link rel="canonical" '
+                            f'href="{esc(record["canonicalUrl"])}">', 1)
+        html = html.replace(f'<meta property="og:url" content="{esc(record["url"])}">',
+                            f'<meta property="og:url" '
+                            f'content="{esc(record["canonicalUrl"])}">', 1)
+    return html
+
+
 def render_item(record, cfg, pool, index, landing, ctx=None):
     url = record["url"]
     hub = HUBS[record["collection"]]
@@ -4293,6 +4457,12 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
             switch_html = (f'<a class="badge badge-lang" lang="pa" hreflang="pa" '
                            f'href="/pa/{stem}.html">'
                            f'ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ</a>')
+    if record.get("langTwin"):
+        # A study note and its translation keep their own root URLs; the
+        # pair is told apart by hreflang alone (stamp_study_languages).
+        twin = record["langTwin"]
+        alternates = (("en", twin["en"]), ("pa", twin["pa"]),
+                      ("x-default", twin["en"]))
 
     toc_html = ""
     if record.get("toc_on", True) and len(record["toc"]) >= 2:
@@ -4393,6 +4563,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
                 lang="pa" if record["lang"] == "pa" else "en",
                 alternates=alternates,
                 image=str(record.get("thumbnail") or record.get("cover") or ""))
+    if record.get("studySubject"):
+        html = study_note_head(html, record)
     html += f"""  <main id="main">
     <section class="page-hero">
       <div class="container">
@@ -7299,6 +7471,7 @@ def main():
     # the hub page, the Study renderer and the search index can never disagree
     # about what a file is.
     stamp_study_fields(all_records[STUDY_DIR])
+    stamp_study_languages(all_records[STUDY_DIR])
     dedupe_pdf_titles(all_records)
     link_related_pdfs(all_records, punjabi)
     # Part order and the chapters beside them: derived from the records above,
@@ -7410,6 +7583,12 @@ def main():
                 **({"post": str(rec["post"])} if rec.get("post") else {}),
                 **({"official_url": str(rec["official_url"])} if rec.get("official_url") else {}),
                 **({"pdf": str(rec["pdf"])} if rec.get("pdf") else {}),
+                # Study notes: the page's language, its hreflang twin and,
+                # for a copy of another note, the URL that is canonical
+                # (kept out of the sitemap by both index builders).
+                **({"pageLang": rec["pageLang"]} if rec.get("pageLang") else {}),
+                **({"langTwin": rec["langTwin"]} if rec.get("langTwin") else {}),
+                **({"canonical": rec["canonicalUrl"]} if rec.get("canonicalUrl") else {}),
             })
         info(f"{coll}: {len(pool)} english + {len(punjabi[coll])} punjabi page(s)")
 

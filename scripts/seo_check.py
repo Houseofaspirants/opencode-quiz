@@ -80,6 +80,17 @@ except (OSError, ValueError):
 
 DOMAIN = "https://houseofaspirants.in"
 errors, warnings, notes = [], [], []
+
+# Study notes that are byte-for-byte copies of another note (one bilingual PDF
+# filed under two language folders): data/content-manifest.json names the main
+# page as their `canonical`. Only these may share a canonical with another
+# page, and they stay out of the sitemap.
+try:
+    COPY_PAGES = {str(i["file"]): str(i["canonical"]) for i in json.loads(
+        (ROOT / "data" / "content-manifest.json").read_text(encoding="utf-8")
+    ).get("items", []) if i.get("canonical")}
+except (OSError, ValueError):
+    COPY_PAGES = {}
 PAGES = [
     "index.html", "subject.html", "quiz.html", "mock.html", "leaderboard.html",
     "bookmarks.html", "progress.html", "result.html", "about.html",
@@ -597,7 +608,8 @@ for d, pages in descs.items():
     if len(pages) > 1:
         errors.append(f"duplicate description on {pages}")
 for c, pages in cans.items():
-    if len(pages) > 1:
+    owners = [p for p in pages if COPY_PAGES.get(p) != c]
+    if len(owners) > 1 or (len(pages) > 1 and not owners):
         errors.append(f"duplicate canonical {c} on {pages}")
 
 # --- shared chrome: internal link coverage --------------------------------
@@ -833,7 +845,7 @@ if CONTENT_MANIFEST.exists():
             if hub and f'href="{hub}"' not in src:
                 errors.append(f"{f}: missing link back to its hub {hub}")
             want = f"{DOMAIN}/{f[:-5]}"
-            if want not in locs:
+            if want not in locs and f not in COPY_PAGES:
                 errors.append(f"sitemap: missing content page {want}")
 
         # --- PDF drops: the scanner's inventory is the whole contract --------
@@ -2047,6 +2059,56 @@ if landing_pages:
                     if u_ not in locs:
                         errors.append(f"{rel}: language pair URL missing from sitemap ({u_})")
     notes.append(f"languages: {n_pairs_all} en/pa page pair(s) link both ways")
+
+    # --- Study notes: material-* language pairs at their own root URLs ------
+    # data/content-manifest.json says each note's language (pageLang), its
+    # twin (langTwin) and, for a copy of another note, its canonical. Each
+    # page must say the same: <html lang> + data-page-lang, the exact hreflang
+    # set on both sides (none on a note without a twin), the canonical, and
+    # the sitemap lists every note except a copy.
+    cm_path = ROOT / "data" / "content-manifest.json"
+    notes_items = [i for i in (json.loads(cm_path.read_text(encoding="utf-8"))
+                               .get("items", []) if cm_path.exists() else [])
+                   if i.get("studySubject")]
+    n_note_pairs = n_note_pa = 0
+    for it in notes_items:
+        f, url = str(it["file"]), str(it["url"])
+        p = ROOT / f
+        if not p.exists():
+            continue
+        h = read_audit_source(p, encoding="utf-8")
+        own = it.get("pageLang") or "en"
+        n_note_pa += own == "pa"
+        if not re.search(rf'<html lang="{own}"[^>]* data-page-lang="{own}"', h):
+            errors.append(f'{f}: study note needs <html lang="{own}" ... data-page-lang="{own}">')
+        canon = it.get("canonical") or url
+        if f'<link rel="canonical" href="{html_mod.escape(canon)}">' not in h:
+            errors.append(f"{f}: canonical must be {canon}")
+        alts = {k: html_mod.unescape(v) for k, v in HREFLANG_RX.findall(h)}
+        twin = it.get("langTwin")
+        if not twin:
+            if alts:
+                errors.append(f"{f}: study note without a twin must not declare hreflang (got {alts})")
+        else:
+            want = {"en": twin["en"], "pa": twin["pa"], "x-default": twin["en"]}
+            if alts != want:
+                errors.append(f"{f}: hreflang must be exactly {want} (got {alts})")
+            if url != twin[own]:
+                errors.append(f"{f}: is {own} but its pair names {twin[own]} as the {own} page")
+            other = "pa" if own == "en" else "en"
+            other_file = ROOT / (twin[other][len(DOMAIN) + 1:] + ".html")
+            if not other_file.exists():
+                errors.append(f"{f}: hreflang twin {other_file.name} does not exist")
+            elif {k: html_mod.unescape(v) for k, v in HREFLANG_RX.findall(
+                    read_audit_source(other_file, encoding="utf-8"))} != want:
+                errors.append(f"{f}: twin {other_file.name} does not link back with the same hreflang set")
+            n_note_pairs += own == "en"
+        if canon == url and url not in locs:
+            errors.append(f"{f}: study note missing from sitemap ({url})")
+        if canon != url and url in locs:
+            errors.append(f"{f}: canonicalised copy must stay out of the sitemap ({url})")
+    notes.append(f"study notes: {len(notes_items)} page(s), {n_note_pa} in Punjabi, "
+                 f"{n_note_pairs} en/pa pair(s) link both ways")
 
     # --- Exam page: Exam -> Subject (configured) and Exam -> Topic (derived)
     for r in [x for x in landing_pages if x["type"] == "exam"]:

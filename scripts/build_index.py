@@ -1145,6 +1145,8 @@ if site.get("url"):
                     warn(f"content-manifest: hub missing for {f or hub.get('collection', '?')}")
             for item in cm.get("items", []):
                 u, f = str(item.get("url", "")), str(item.get("file", ""))
+                if item.get("canonical") and item["canonical"] != u:
+                    continue               # a copy: its canonical URL is listed
                 if u.startswith(base) and os.path.exists(os.path.join(ROOT, f)):
                     urls.append({"loc": u, "p": "0.6"})
                 else:

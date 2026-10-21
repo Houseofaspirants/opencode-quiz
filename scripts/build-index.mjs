@@ -1057,6 +1057,7 @@ if (site.url) {
       for (const item of cm.items || []) {
         const u = String(item.url || "");
         const f = String(item.file || "");
+        if (item.canonical && item.canonical !== u) continue; // a copy: its canonical URL is listed
         if (u.startsWith(base) && fs.existsSync(path.join(ROOT, f))) {
           urls.push({ loc: u, p: "0.6" });
         } else {
