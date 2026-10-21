@@ -5839,6 +5839,19 @@ def study_section_plan(manifest, records):
     return pages, redirects
 
 
+def clip_title(text, limit):
+    """Cut at a word boundary and never end on "of" / "in" / "ਦਾ": the same
+    rule study_title_for() applies to a note's title."""
+    cut = clip(text, limit)
+    while cut != text:
+        words = cut.split()
+        if len(words) > 1 and words[-1].lower() in TITLE_TAIL_STOPWORDS:
+            cut = " ".join(words[:-1]).rstrip(" ,;:-")
+            continue
+        break
+    return cut
+
+
 def _chapter_label(ch, by_file):
     """A Punjabi chapter's name: the one stamp_study_languages gave its notes."""
     for x in ch["parts"]:
@@ -5923,8 +5936,8 @@ def study_section_page(p, by_file, rows_by_id):
             ch = p["chapter"]
             crumbs.append((name, f"{DOMAIN}/{row['pages'][lang][:-5]}", row["pages"][lang]))
             cname = (_chapter_label(ch, by_file) if lang == "pa" else ch["name"])
-            title = clip(f"{cname} - {name} ਨੋਟਸ" if lang == "pa"
-                         else f"{cname} - {name} Notes", 60)
+            suffix = f" - {name} ਨੋਟਸ" if lang == "pa" else f" - {name} Notes"
+            title = clip_title(cname, 60 - len(suffix)) + suffix
             h1 = cname
             recs = [by_file[x["file"]] for x in ch["parts"] if x["file"] in by_file]
             lead = (f"{name} · {len(recs)} {t['parts']}")

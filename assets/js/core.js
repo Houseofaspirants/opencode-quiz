@@ -2514,7 +2514,26 @@ const HOA = (() => {
     });
   }
 
+  /** An old study.html?subject=…&language=…&chapter=… link is 301'd by
+      vercel.json to a study section page or a note, and Vercel carries the
+      old query across. Those keys mean nothing on the new page (its
+      canonical has none), so they are dropped from the address bar; any
+      other parameter (utm_* included) is kept. */
+  function tidyStudyUrl() {
+    const onStudy = document.body.hasAttribute("data-study-page") ||
+      /^\/(?:pa\/)?material-/.test(location.pathname);
+    if (!onStudy || !location.search) return;
+    const sp = new URLSearchParams(location.search);
+    const old = ["subject", "language", "chapter", "region", "cat", "sub", "view"];
+    if (!old.some((k) => sp.has(k))) return;
+    old.forEach((k) => sp.delete(k));
+    const q = sp.toString();
+    history.replaceState(history.state, "",
+      location.pathname + (q ? `?${q}` : "") + location.hash);
+  }
+
   function init() {
+    tidyStudyUrl();   // before analytics, so the page_view records the clean URL
     startAnalytics(); // first: gets the page_view queued before any UI work
     initAffiliateTracking(); // Books buy buttons, before any of them can render
     initGrowthTracking();    // Telegram, share, PDF, live, language (GA4)
