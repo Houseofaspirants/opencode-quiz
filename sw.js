@@ -7,9 +7,13 @@
  *                                      cached copy offline; 404 evicts it
  *   • content/*.pdf downloads        → never cached here (browser HTTP cache)
  *
- * Bump VERSION whenever core assets change.
+ * Bump VERSION whenever core assets change: scripts/clean-links.mjs stamps
+ * every page's JS/CSS URLs with ?v=<that number>, so the bump alone makes a
+ * returning visitor's first page view load the new files. install calls
+ * skipWaiting() and activate clients.claim(), so the new worker takes over
+ * that same visit; nothing reloads the page, so there is no reload loop.
  * ========================================================================== */
-const VERSION = "hoa-v92";
+const VERSION = "hoa-v93";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -187,6 +191,7 @@ self.addEventListener("fetch", (event) => {
         })
         .catch(async () =>
           (await caches.match(req)) ||
+          (await caches.match(req, { ignoreSearch: true })) ||
           (await caches.match("./index.html")) ||
           Response.error()
         )
@@ -200,7 +205,13 @@ self.addEventListener("fetch", (event) => {
         invisible (and deleted ones linger) until a second or third reload. */
   const bucket =
     url.pathname.includes("/data/") || url.pathname.includes("/questions/") ? DATA : SHELL;
+  /* Pages ask for JS/CSS as "?v=<VERSION>" (scripts/clean-links.mjs), so a
+     release changes every asset URL. Offline, the precached unversioned copy
+     still answers that request (ignoreSearch). */
   event.respondWith(
-    fresh(req, bucket).catch(async () => (await caches.match(req)) || Response.error())
+    fresh(req, bucket).catch(async () =>
+      (await caches.match(req)) ||
+      (await caches.match(req, { ignoreSearch: true })) ||
+      Response.error())
   );
 });

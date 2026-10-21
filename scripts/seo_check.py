@@ -1776,7 +1776,7 @@ if landing_pages:
             for t in c.get("topics", []) or []:
                 topic_by_key[(s["id"], t["id"])] = t
 
-    LINK_RX = re.compile(r'href="((?:pa/)?(?:subject|category|topic|quiz|exam|cluster)-[^\"<>]+\.html)"')
+    LINK_RX = re.compile(r'href="((?:pa/)?(?:(?:subject|category|chapter|topic|quiz|exam|cluster)-[^\"<>]+|expected-mcqs)\.html)"')
     lpages = {r["file"]: r for r in landing_pages}
     landing_h = {f: read_audit_source(ROOT / f, encoding="utf-8")
                  for f in lpages if (ROOT / f).exists()}
@@ -1995,6 +1995,48 @@ if landing_pages:
             notes.append(f"{pa_f}: question 1 carries no Gurmukhi (source file is not Punjabi?)")
     notes.append(f"quiz: {n_quiz_pairs} language pair(s) (/quiz-* + /pa/quiz-*)")
 
+    # --- Every language pair, site-wide: /x <-> /pa/x ----------------------
+    # Any page that declares hreflang must name en, pa and x-default (=
+    # English); the twin must exist and declare the same three back; each side
+    # says its own language in <html lang> and data-page-lang; and an
+    # indexable pair is in the sitemap on both sides.
+    MCQ_PAGE_PREFIXES = ("expected-mcqs", "subject-", "chapter-", "category-", "topic-",
+                         "quiz-", "result")
+    HREFLANG_RX = re.compile(r'<link rel="alternate" hreflang="([^"]+)" href="([^"]+)">')
+    n_pairs_all = 0
+    for path in sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("pa/*.html")):
+        rel = path.relative_to(ROOT).as_posix()
+        if not path.name.startswith(MCQ_PAGE_PREFIXES):
+            continue                   # study notes / strategy pairs: separate follow-up
+        h = read_audit_source(path, encoding="utf-8")
+        alts = dict(HREFLANG_RX.findall(h))
+        if not alts:
+            continue
+        own = "pa" if rel.startswith("pa/") else "en"
+        twin_rel = rel[len("pa/"):] if own == "pa" else f"pa/{rel}"
+        en_url = f"{DOMAIN}/{(twin_rel if own == 'pa' else rel)[:-5]}"
+        pa_url = f"{DOMAIN}/{(rel if own == 'pa' else twin_rel)[:-5]}"
+        want = {"en": en_url, "pa": pa_url, "x-default": en_url}
+        if {k: html_mod.unescape(v) for k, v in alts.items()} != want:
+            errors.append(f"{rel}: hreflang must be exactly en={en_url}, pa={pa_url}, "
+                          f"x-default={en_url} (got {alts})")
+            continue
+        if not re.search(rf'<html lang="{own}"[^>]* data-page-lang="{own}"', h):
+            errors.append(f'{rel}: needs <html lang="{own}" ... data-page-lang="{own}">')
+        twin = ROOT / twin_rel
+        if not twin.exists():
+            errors.append(f"{rel}: hreflang twin {twin_rel} does not exist")
+            continue
+        if dict(HREFLANG_RX.findall(read_audit_source(twin, encoding="utf-8"))) != alts:
+            errors.append(f"{rel}: twin {twin_rel} does not link back with the same hreflang set")
+        if own == "en":
+            n_pairs_all += 1
+            if 'content="noindex' not in h:
+                for u_ in (en_url, pa_url):
+                    if u_ not in locs:
+                        errors.append(f"{rel}: language pair URL missing from sitemap ({u_})")
+    notes.append(f"languages: {n_pairs_all} en/pa page pair(s) link both ways")
+
     # --- Exam page: Exam -> Subject (configured) and Exam -> Topic (derived)
     for r in [x for x in landing_pages if x["type"] == "exam"]:
         f, h = r["file"], landing_h.get(r["file"], "")
@@ -2194,10 +2236,11 @@ for page in PAGES:
         errors.append(f"{page}: missing preconnect for primary CTA origin")
     if 'rel="preload" href="assets/img/logo-sm.png"' not in html:
         errors.append(f"{page}: missing logo preload")
-    if 'rel="preload" href="assets/css/style.css" as="style"' not in html:
+    # Asset URLs may carry clean-links.mjs's ?v=<n> release version.
+    if not re.search(r'rel="preload" href="assets/css/style\.css(?:\?v=[^"]*)?" as="style"', html):
         errors.append(f"{page}: missing style.css preload")
-    if re.search(r'<link rel="stylesheet" href="assets/css/quiz\.css">', html) and \
-       'rel="preload" href="assets/css/quiz.css"' not in html:
+    if re.search(r'<link rel="stylesheet" href="assets/css/quiz\.css(?:\?v=[^"]*)?">', html) and \
+       not re.search(r'rel="preload" href="assets/css/quiz\.css(?:\?v=[^"]*)?"', html):
         errors.append(f"{page}: quiz.css stylesheet without preload")
     # semantics
     if "<main" not in html:

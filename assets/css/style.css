@@ -4019,3 +4019,32 @@ body.rbv-open { overflow: hidden; }
 .pr-modal .pr-pages { flex: 1; overflow: auto; justify-content: flex-start; -webkit-overflow-scrolling: touch; }
 .pr-x { border: 0; background: var(--bg-2); color: var(--text); width: 34px; height: 34px; border-radius: 50%; font-size: 1rem; cursor: pointer; }
 @media (min-width: 768px) { .pr-modal { padding: 24px; } .pr-modal .pdf-reader { border-radius: var(--r-md); } }
+
+/* ------------------------------------- MCQ editions: English | ਪੰਜਾਬੀ ------
+   The MCQ hub's language choice: two links to the two editions. The edition
+   being read carries aria-current; the reader's remembered choice gets
+   .is-preferred (core.js initLangPick). Links only - nothing redirects. */
+.mcq-lang-choice {
+  display: inline-flex; gap: 4px; padding: 4px; margin: 4px 0 18px;
+  border: 1px solid var(--border); border-radius: 999px;
+  background: var(--surface-2);
+}
+.mcq-lang-choice a {
+  display: inline-flex; align-items: center; gap: 6px;
+  min-height: 40px; padding: 8px 18px; border-radius: 999px;
+  font-weight: 700; color: var(--text); text-decoration: none;
+}
+.mcq-lang-choice a[aria-current="page"] { background: var(--brand); color: #fff; }
+.mcq-lang-choice a.is-preferred:not([aria-current="page"]) {
+  box-shadow: inset 0 0 0 2px var(--brand);
+}
+.mcq-lang-choice a.is-preferred::after { content: "★"; font-size: 0.8em; }
+
+/* A set or subject that has no Punjabi edition, listed in the Punjabi section
+   and linking to its English page. */
+.badge-en-only {
+  display: inline-block; margin-left: 6px; padding: 2px 8px;
+  border-radius: 999px; font-size: 0.72rem; font-weight: 700;
+  background: var(--surface-2); color: var(--muted);
+  border: 1px solid var(--border); vertical-align: middle;
+}

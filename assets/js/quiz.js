@@ -59,6 +59,13 @@
     instant && S.answers[i] !== null && S.answers[i] !== undefined;
   /** UI copy in the reader's language (Punjabi or English). */
   const say = (pa, en) => ((HOA.lang && HOA.lang.get()) === "pa" ? pa : en);
+  /** Control labels that swap in place (their widths are locked to the widest). */
+  const L = {
+    mark: () => say("📌 ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ", "📌 Mark for Review"),
+    marked: () => say("✔ ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ ਲੱਗਾ", "✔ Marked for Review"),
+    bookmark: () => say("☆ ਬੁੱਕਮਾਰਕ", "☆ Bookmark"),
+    bookmarked: () => say("★ ਬੁੱਕਮਾਰਕ ਹੋਇਆ", "★ Bookmarked"),
+  };
   const idx = await HOA.loadIndex();
   const site = idx.site || {};
 
@@ -309,11 +316,19 @@
     const qs =
       `subject=${encodeURIComponent(subject.id)}&topic=${encodeURIComponent(topic.id)}` +
       (cat ? `&category=${encodeURIComponent(cat.id)}` : "");
-    // A page pinned to Punjabi names the set in Punjabi too (titles.pa).
-    const shownName = (HOA.lang.page() && (topic.titles || {})[startLang]) || topic.name;
+    // A page pinned to Punjabi names the set in Punjabi too: the file's own
+    // chapter title + ਭਾਗ N when it carries one (the build names the Punjabi
+    // pages the same way), else the index title with "Part" said in Punjabi.
+    const ch = /** @type {any} */ (meta).chapter;
+    const shownName = HOA.lang.page() !== "pa" ? topic.name
+      : ch && ch.title && /** @type {any} */ (meta).part
+        ? `${ch.title} - ਭਾਗ ${/** @type {any} */ (meta).part}`
+        : String((topic.titles || {}).pa || topic.name).replace(/\bPart\s*(\d+)\s*$/, "ਭਾਗ $1");
     return {
       title: shownName,
-      subject: subject.id, subjectName: subject.name,
+      subject: subject.id,
+      // The Punjabi edition's seed carries the subject's Gurmukhi name.
+      subjectName: (SEED && SEED.subjectName) || subject.name,
       subjectIcon: subject.icon,
       topicName: shownName, topicId: topic.id,
       categoryFolder: cat ? cat.folder || cat.id : "",
@@ -342,6 +357,11 @@
       // Configurable overall timer: file "timeLimit" (sec) wins, else Q × per-Q.
       overall: Number(meta.timeLimit) || questions.length * perQ,
       href: `quiz.html?${qs}`,
+      // Both editions' clean URLs (site-relative), when the build made them.
+      editions: topic.landing
+        ? { en: topic.landing.replace(/^\//, ""),
+            pa: variants.pa ? `pa${topic.landing}` : "" }
+        : null,
     };
   }
 
@@ -414,7 +434,8 @@
       const act = /** @type {HTMLElement | null} */ (document.activeElement);
       if (act && els.options.contains(act) && act.blur) act.blur();
 
-      els.qCount.textContent = `Question ${S.i + 1} of ${QUIZ.questions.length}`;
+      els.qCount.textContent = say(`ਸਵਾਲ ${S.i + 1} / ${QUIZ.questions.length}`,
+        `Question ${S.i + 1} of ${QUIZ.questions.length}`);
       els.qText.innerHTML = esc(q.q);
 
       // Header badges: number, difficulty & topic tag (only if JSON provides them)
@@ -449,8 +470,7 @@
       els.skip.disabled = S.locked;
       els.mark.disabled = S.locked;
       paintMarkBtn();
-      els.bookmark.innerHTML = bookmarks.has(bmKey())
-        ? "★ Bookmarked" : "☆ Bookmark";
+      els.bookmark.innerHTML = bookmarks.has(bmKey()) ? L.bookmarked() : L.bookmark();
 
       // Per-question timer resets on navigation
       S.qLeft = QUIZ.defaultSeconds;
@@ -480,8 +500,7 @@
   /** Mark-button label — in place, so the control row never re-flows. */
   function paintMarkBtn() {
     els.mark.className = `btn ${S.marks[S.i] ? "btn-soft" : ""}`;
-    els.mark.innerHTML = S.marks[S.i]
-      ? "✔ Marked for Review" : "📌 Mark for Review";
+    els.mark.innerHTML = S.marks[S.i] ? L.marked() : L.mark();
   }
 
   /* Why `file` cannot take over from what is on screen, as one sentence — or ""
@@ -522,7 +541,8 @@
       const mismatch = translationMismatch(file, next);
       if (mismatch) {
         console.warn(`[HOA] Translation mismatch: ${mismatch}. Keeping the current language.`);
-        toast("That translation does not line up with this set — keeping the current language.");
+        toast(say("ਇਹ ਅਨੁਵਾਦ ਇਸ ਸੈੱਟ ਨਾਲ ਮੇਲ ਨਹੀਂ ਖਾਂਦਾ — ਭਾਸ਼ਾ ਨਹੀਂ ਬਦਲੀ।",
+          "That translation does not line up with this set — keeping the current language."));
         return;
       }
       QUIZ.questions = next;
@@ -535,7 +555,7 @@
       toast(lang === "pa" ? "ਸਵਾਲ ਹੁਣ ਪੰਜਾਬੀ ਵਿੱਚ" : "Questions are now in English");
     } catch (e) {
       console.warn("[HOA] language swap failed", e.message);
-      toast("Could not load that translation.");
+      toast(say("ਅਨੁਵਾਦ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।", "Could not load that translation."));
     }
   }
 
@@ -655,8 +675,9 @@
     const pct = QUIZ.questions.length
       ? Math.round((done / QUIZ.questions.length) * 100) : 0;
     els.fill.style.width = pct + "%";
-    els.progressText.textContent =
-      `${done} of ${QUIZ.questions.length} answered (${pct}%)`;
+    els.progressText.textContent = say(
+      `${QUIZ.questions.length} ਵਿੱਚੋਂ ${done} ਹੱਲ ਕੀਤੇ (${pct}%)`,
+      `${done} of ${QUIZ.questions.length} answered (${pct}%)`);
     paintSubmit();
   }
 
@@ -668,8 +689,8 @@
     const ready = timed || left === 0 || S.locked;
     els.submit.classList.toggle("hidden", !ready);
     els.remaining.classList.toggle("hidden", ready);
-    els.remaining.textContent = `⏳ ${left} left`;
-    els.remaining.title = "Go to the next unanswered question";
+    els.remaining.textContent = say(`⏳ ${left} ਬਾਕੀ`, `⏳ ${left} left`);
+    els.remaining.title = say("ਅਗਲੇ ਬਿਨਾਂ ਹੱਲ ਕੀਤੇ ਸਵਾਲ ਉੱਤੇ ਜਾਓ", "Go to the next unanswered question");
   }
 
   function updateTimers() {
@@ -701,7 +722,7 @@
       updateProgress();
       save();          // silent auto-save (localStorage only, no UI)
       if (!timed && !wasDone && allAnswered()) {
-        toast("All questions answered ✓ You can submit now 📤", 2200);
+        toast(say("ਸਾਰੇ ਸਵਾਲ ਹੱਲ ✓ ਹੁਣ ਜਮ੍ਹਾਂ ਕਰ ਸਕਦੇ ਹੋ 📤", "All questions answered ✓ You can submit now 📤"), 2200);
       }
     });
     // Mock: tap answer → next question (scroll untouched). Practice stays put
@@ -725,13 +746,14 @@
 
       // Time over for this question → auto next (spec requirement)
       if (S.qLeft === 0 && S.i < QUIZ.questions.length - 1) {
-        toast("Time up! Moving to the next question ⏭️", 1500);
+        toast(say("ਸਮਾਂ ਖ਼ਤਮ! ਅਗਲਾ ਸਵਾਲ ⏭️", "Time up! Moving to the next question ⏭️"), 1500);
         go(S.i + 1);
       }
 
       // Overall time over → lock answers and submit
       if (S.overallLeft <= 0) {
-        lockAndSubmit("⏰ Time over! Your answers were locked and the quiz was submitted.");
+        lockAndSubmit(say("⏰ ਸਮਾਂ ਖ਼ਤਮ! ਤੁਹਾਡੇ ਉੱਤਰ ਲੌਕ ਕਰਕੇ ਕੁਇਜ਼ ਜਮ੍ਹਾਂ ਕਰ ਦਿੱਤਾ ਗਿਆ।",
+          "⏰ Time over! Your answers were locked and the quiz was submitted."));
       }
 
       // Save once every 5 seconds (autosave)
@@ -753,12 +775,12 @@
     ov.innerHTML = `
       <div class="lock-box">
         <div class="lk-icon">🔐</div>
-        <h3>Answers locked</h3>
+        <h3>${say("ਉੱਤਰ ਲੌਕ ਹੋ ਗਏ", "Answers locked")}</h3>
         <p class="muted mt-1">${esc(reason)}</p>
-        <p class="mt-2"><b>${attempted()}</b> attempted ·
-           <b>${QUIZ.questions.length - attempted()}</b> skipped</p>
+        <p class="mt-2"><b>${attempted()}</b> ${say("ਹੱਲ ਕੀਤੇ", "attempted")} ·
+           <b>${QUIZ.questions.length - attempted()}</b> ${say("ਛੱਡੇ", "skipped")}</p>
         <div class="btn-row mt-3" style="justify-content:center">
-          <button class="btn btn-primary" id="goResult">See Result →</button>
+          <button class="btn btn-primary" id="goResult">${say("ਨਤੀਜਾ ਵੇਖੋ →", "See Result →")}</button>
         </div>
       </div>`;
     document.body.appendChild(ov);
@@ -805,6 +827,12 @@
       subjectName: QUIZ.subjectName || "",
       key: QUIZ.key || "",                   // leaderboard: "same set" identity
       subject: QUIZ.subject || "",
+      /* Which set and edition this was. result.js rebuilds the title and the
+         review text from these in the language of the results page being
+         viewed, and Retake opens the edition the quiz was taken in. */
+      topicId: QUIZ.topicId || "",
+      lang: QUIZ.lang || "",
+      editions: QUIZ.editions || null,
       total, attempted: attemptedN, correct, wrong, skipped,
       accuracy, percent,
       score: correct,
@@ -840,25 +868,30 @@
     ov.innerHTML = `
       <div class="completion-box" role="dialog" aria-modal="true" aria-labelledby="ccTitle">
         <div class="cc-icon" aria-hidden="true">🎉</div>
-        <h2 id="ccTitle">Congratulations!</h2>
-        <p class="cc-sub">You have completed ${result.mode === "daily" ? "today&#39;s quiz" : "this quiz"}.</p>
-        <p class="cc-live"><span class="ann-dot" aria-hidden="true"></span> Got a doubt from this quiz? Ask me <b>LIVE every Sunday at 8 PM</b> on Telegram.</p>
-        <p class="cc-lead">Continue your preparation with</p>
+        <h2 id="ccTitle">${say("ਵਧਾਈਆਂ!", "Congratulations!")}</h2>
+        <p class="cc-sub">${result.mode === "daily"
+          ? say("ਤੁਸੀਂ ਅੱਜ ਦਾ ਕੁਇਜ਼ ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।", "You have completed today&#39;s quiz.")
+          : say("ਤੁਸੀਂ ਇਹ ਕੁਇਜ਼ ਪੂਰਾ ਕਰ ਲਿਆ ਹੈ।", "You have completed this quiz.")}</p>
+        <p class="cc-live"><span class="ann-dot" aria-hidden="true"></span> ${say(
+          "ਇਸ ਕੁਇਜ਼ ਬਾਰੇ ਕੋਈ ਸ਼ੰਕਾ? ਹਰ <b>ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ LIVE</b> ਟੈਲੀਗ੍ਰਾਮ ਉੱਤੇ ਪੁੱਛੋ।",
+          "Got a doubt from this quiz? Ask me <b>LIVE every Sunday at 8 PM</b> on Telegram.")}</p>
+        <p class="cc-lead">${say("ਆਪਣੀ ਤਿਆਰੀ ਜਾਰੀ ਰੱਖੋ", "Continue your preparation with")}</p>
         <ul class="cc-list">
-          <li>✅ Personal Notes</li>
-          <li>✅ Current Affairs Magazine</li>
-          <li>✅ Daily Expected MCQs</li>
-          <li>✅ Sunday 8 PM Live Doubt Session</li>
-          <li>✅ Recruitment Updates</li>
+          <li>✅ ${say("ਨਿੱਜੀ ਨੋਟਸ", "Personal Notes")}</li>
+          <li>✅ ${say("ਕਰੰਟ ਅਫੇਅਰਜ਼ ਮੈਗਜ਼ੀਨ", "Current Affairs Magazine")}</li>
+          <li>✅ ${say("ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs", "Daily Expected MCQs")}</li>
+          <li>✅ ${say("ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ ਲਾਈਵ ਸ਼ੰਕਾ ਸੈਸ਼ਨ", "Sunday 8 PM Live Doubt Session")}</li>
+          <li>✅ ${say("ਭਰਤੀ ਅਪਡੇਟ", "Recruitment Updates")}</li>
         </ul>
         <div class="cc-actions">
-          <a class="btn btn-telegram btn-lg" href="${site.telegram || "https://t.me/HouseOfAspirant"}" target="_blank" rel="noopener">📲 Join Telegram</a>
-          <button class="btn btn-lg" type="button" id="ccContinue">Continue to Result</button>
+          <a class="btn btn-telegram btn-lg" href="${site.telegram || "https://t.me/HouseOfAspirant"}" target="_blank" rel="noopener">📲 ${say("ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ", "Join Telegram")}</a>
+          <button class="btn btn-lg" type="button" id="ccContinue">${say("ਨਤੀਜੇ ਵੱਲ ਜਾਓ", "Continue to Result")}</button>
         </div>
       </div>`;
     document.body.appendChild(ov);
 
-    const go = () => { location.href = "result.html"; };
+    // The results page of the edition being read (pa/ for Punjabi).
+    const go = () => { location.href = say("pa/result.html", "result.html"); };
     const onKey = (e) => {
       if (e.key === "Enter" || e.key === "Escape") {
         e.preventDefault();
@@ -895,7 +928,7 @@
     els.next.addEventListener("click", () => go(S.i + 1));
     els.skip.addEventListener("click", () => {
       if (S.i < QUIZ.questions.length - 1) go(S.i + 1);
-      else toast("This is the last question.");
+      else toast(say("ਇਹ ਆਖ਼ਰੀ ਸਵਾਲ ਹੈ।", "This is the last question."));
     });
     els.mark.addEventListener("click", () => {
       keepScroll(() => {
@@ -904,7 +937,7 @@
         paintPalette();
         save();
       });
-      toast(S.marks[S.i] ? "Marked for review 📌" : "Unmarked");
+      toast(S.marks[S.i] ? say("ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ ਲੱਗਾ 📌", "Marked for review 📌") : say("ਨਿਸ਼ਾਨ ਹਟਾਇਆ", "Unmarked"));
     });
     els.bookmark.addEventListener("click", () => {
       const q = QUIZ.questions[S.i];
@@ -918,10 +951,11 @@
         reference: q.reference,
         subjectName: subjectMeta?.name || QUIZ.subjectName || "Quiz",
         topicName: q.topic || QUIZ.title,
-        href: QUIZ.href || location.href,
+        href: (QUIZ.editions && (QUIZ.lang === "pa" ? QUIZ.editions.pa : QUIZ.editions.en))
+          || QUIZ.href || location.href,
       });
-      els.bookmark.innerHTML = added ? "★ Bookmarked" : "☆ Bookmark";
-      toast(added ? "Saved to bookmarks ★" : "Bookmark removed");
+      els.bookmark.innerHTML = added ? L.bookmarked() : L.bookmark();
+      toast(added ? say("ਬੁੱਕਮਾਰਕ ਵਿੱਚ ਸੇਵ ★", "Saved to bookmarks ★") : say("ਬੁੱਕਮਾਰਕ ਹਟਾਇਆ", "Bookmark removed"));
     });
     els.submit.addEventListener("click", confirmSubmit);
     els.feedback?.addEventListener("click", (e) => {
@@ -940,7 +974,8 @@
     // The scroll position is stored first and restored after the reload, so
     // restarting never throws the reader back to a different spot.
     document.getElementById("resumeReset")?.addEventListener("click", () => {
-      if (!confirm("Restart this quiz? Your saved answers for it will be cleared.")) return;
+      if (!confirm(say("ਕੁਇਜ਼ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੀਏ? ਇਸ ਦੇ ਸੇਵ ਕੀਤੇ ਉੱਤਰ ਮਿਟ ਜਾਣਗੇ।",
+          "Restart this quiz? Your saved answers for it will be cleared."))) return;
       try { sessionStorage.setItem(SCROLL_KEY, String(window.scrollY)); } catch { /* ignore */ }
       HOA.db.remove("session:" + QUIZ.key);
       location.reload();
@@ -974,8 +1009,8 @@
       if (max > 0) btn.style.minWidth = `${Math.ceil(max)}px`;
     };
     const lockWidths = () => {
-      lockWidth(els.mark, ["📌 Mark for Review", "✔ Marked for Review"]);
-      lockWidth(els.bookmark, ["☆ Bookmark", "★ Bookmarked"]);
+      lockWidth(els.mark, [L.mark(), L.marked()]);
+      lockWidth(els.bookmark, [L.bookmark(), L.bookmarked()]);
     };
     lockWidths();
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(lockWidths);
@@ -984,7 +1019,7 @@
   function confirmSubmit() {
     if (S.locked) { finish(); return; }
     if (!timed && !allAnswered()) {
-      toast("Answer every question first, then submit.");
+      toast(say("ਪਹਿਲਾਂ ਸਾਰੇ ਸਵਾਲ ਹੱਲ ਕਰੋ, ਫਿਰ ਜਮ੍ਹਾਂ ਕਰੋ।", "Answer every question first, then submit."));
       return;
     }
     const un = QUIZ.questions.length - attempted();
@@ -993,14 +1028,14 @@
     ov.innerHTML = `
       <div class="lock-box">
         <div class="lk-icon">📤</div>
-        <h3>Submit quiz?</h3>
-        <p class="muted mt-1">
-          ${attempted()} answered${un ? `, <b>${un}</b> not answered` : ""}.
-          You can still review before submitting.
+        <h3>${say("ਕੁਇਜ਼ ਜਮ੍ਹਾਂ ਕਰੀਏ?", "Submit quiz?")}</h3>
+        <p class="muted mt-1">${say(
+          `${attempted()} ਹੱਲ ਕੀਤੇ${un ? `, <b>${un}</b> ਬਾਕੀ` : ""}। ਜਮ੍ਹਾਂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਮੁੜ ਵੇਖ ਸਕਦੇ ਹੋ।`,
+          `${attempted()} answered${un ? `, <b>${un}</b> not answered` : ""}. You can still review before submitting.`)}
         </p>
         <div class="btn-row mt-3" style="justify-content:center">
-          <button class="btn" data-close>Keep working</button>
-          <button class="btn btn-primary" data-confirm>Submit now</button>
+          <button class="btn" data-close>${say("ਜਾਰੀ ਰੱਖੋ", "Keep working")}</button>
+          <button class="btn btn-primary" data-confirm>${say("ਹੁਣੇ ਜਮ੍ਹਾਂ ਕਰੋ", "Submit now")}</button>
         </div>
       </div>`;
     document.body.appendChild(ov);
@@ -1022,9 +1057,9 @@
         <h3>${esc(message)}</h3>
         <p>${hint}</p>
         <div class="btn-row mt-3" style="justify-content:center">
-          <a class="btn btn-primary" href="./">Browse subjects</a>
+          <a class="btn btn-primary" href="./">${say("ਵਿਸ਼ੇ ਵੇਖੋ", "Browse subjects")}</a>
           <a class="btn btn-telegram" href="${site.telegram || "https://t.me/HouseOfAspirant"}"
-             target="_blank" rel="noopener">Join Telegram</a>
+             target="_blank" rel="noopener">${say("ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ", "Join Telegram")}</a>
         </div>
       </div>`;
   }
@@ -1172,7 +1207,7 @@
     S.visited = saved.visited;
     S.startedAt = saved.startedAt || S.startedAt;
     S.overallLeft = saved.overallLeft ?? S.overallLeft;
-    toast("Resumed your saved progress ✓");
+    toast(say("ਤੁਹਾਡੀ ਸੇਵ ਕੀਤੀ ਤਰੱਕੀ ਤੋਂ ਜਾਰੀ ✓", "Resumed your saved progress ✓"));
   }
   // #q=N (added when the language switch opens the twin page) opens question N.
   const hashQ = Number((/^#q=(\d+)$/.exec(location.hash) || [])[1]);

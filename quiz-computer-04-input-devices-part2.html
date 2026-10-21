@@ -34,10 +34,10 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css" as="style">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="preload" href="assets/css/quiz.css" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css">
+  <link rel="preload" href="assets/css/style.css?v=93" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=93">
+  <link rel="preload" href="assets/css/quiz.css?v=93" as="style">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=93">
   <!-- Replaced at runtime by quiz.js with WebPage + Quiz schema for topic
        quizzes; blanked for noindex modes (?mode=daily / ?mode=mock). -->
     <script type="application/ld+json">
@@ -158,27 +158,25 @@
   <!-- MCQ language routing, before anything paints. A topic quiz has ONE
        language and it comes from the URL: /pa/quiz-* is Punjabi, /quiz-* is
        English (the build marks both with data-page-lang and links them with
-       hreflang), and quiz?subject=..&topic=.. reads &lang=. A URL without a
-       language follows the reader's saved choice (hoa:lang, written by the
-       switch), else English; ?lang= always wins. Crawlers store nothing, so
-       they get exactly the page they asked for. The query string (utm_*) and
-       the #q= hash survive the hop. -->
+       hreflang), and quiz?subject=..&topic=.. reads &lang=. Only an explicit
+       ?lang= moves the reader to the twin page; the saved choice never
+       redirects, so crawlers and readers always get the URL they asked for.
+       The query string (utm_*) and the #q= hash survive the hop. -->
   <script>
   (function () {
     var d = document.documentElement, page = d.getAttribute("data-page-lang");
-    var sp = new URLSearchParams(location.search), want = sp.get("lang"), saved = null;
-    try { saved = JSON.parse(localStorage.getItem("hoa:lang") || "null"); } catch (e) {}
+    var sp = new URLSearchParams(location.search), want = sp.get("lang");
     if (want !== "en" && want !== "pa") want = "";
     if (page) {
-      var to = want && want !== page ? want : (!want && page === "en" && saved === "pa" ? "pa" : "");
-      var alt = to && document.querySelector('link[rel="alternate"][hreflang="' + to + '"]');
+      var alt = want && want !== page &&
+        document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
       if (alt) {
         sp.delete("lang");
         var q = sp.toString();
         location.replace(new URL(alt.href).pathname + (q ? "?" + q : "") + location.hash);
       }
     } else if (sp.get("topic") && !sp.get("mode")) {
-      page = want || (saved === "pa" ? "pa" : "en");
+      page = want || "en";
       d.setAttribute("data-page-lang", page);
       d.lang = page;
     }
@@ -507,15 +505,15 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js" defer></script>
-  <script src="assets/js/auth.js" defer></script>
+  <script src="assets/js/core.js?v=93" defer></script>
+  <script src="assets/js/auth.js?v=93" defer></script>
   <script>
     /* Programmatic SEO landing-page seed, written by scripts/build_landing_pages.py. quiz.js reads it at boot (see "0. BOOT") so this
        page runs as a topic quiz with no query string, keeps this page's static
        metadata, and never re-emits schema over the static graph in the head. */
     window.__HOA_QUIZ_SEED = {"subject": "computer", "topic": "04-input-devices-part2", "category": "04-input-devices", "canonical": "https://houseofaspirants.in/quiz-computer-04-input-devices-part2"};
   </script>
-  <script src="assets/js/quiz.js" defer></script>
+  <script src="assets/js/quiz.js?v=93" defer></script>
   <script>
     document.querySelectorAll("[data-copy-url]").forEach(function (btn) {
       btn.addEventListener("click", function () {

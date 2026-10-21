@@ -57,7 +57,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://houseofaspirants.in"
 DATA = os.path.join(ROOT, "data")
 
-GENERATED_PREFIXES = ("subject-", "category-", "topic-", "quiz-", "exam-",
+GENERATED_PREFIXES = ("subject-", "category-", "chapter-", "topic-", "quiz-", "exam-",
                       "cluster-")
 
 WARNINGS = []
@@ -265,12 +265,13 @@ def facts_grid(pairs):
     return "\n".join(out)
 
 
-def faq_section(eyebrow, title, hint, faqs):
+def faq_section(eyebrow, title, hint, faqs, lang="en"):
     out = ['    <section class="section" style="padding-top:0">',
            '      <div class="container" style="max-width:860px">']
     out.append(section_head(
         eyebrow, title, hint,
-        '          <a class="btn btn-soft" href="faq.html">All questions \u2192</a>'))
+        '          <a class="btn btn-soft" href="faq.html">'
+        + ("ਸਾਰੇ ਸਵਾਲ" if lang == "pa" else "All questions") + ' \u2192</a>'))
     out.append('        <div class="faq-list">')
     for q, a in faqs:
         out.append('          <div class="faq-item">')
@@ -354,7 +355,7 @@ def webpage_ld(url, name, description, crumb_id, has_part=None):
 
 # ----------------------------------------------------------- page skeleton --
 HEAD_TMPL = """<!DOCTYPE html>
-<html lang="{lang}" data-theme="light">
+<html lang="{lang}" data-theme="light"{page_lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -469,6 +470,9 @@ def render_page(*, title, description, kw, url, ld_blocks, crumbs, eyebrow, h1,
         locale="pa_IN" if lang == "pa" else "en_IN",
         base_tag='  <base href="/">\n' if lang == "pa" else "",
         alternates=alt, og_image=og_image_for(url),
+        # A page with a twin is pinned to its language: core.js shows the
+        # chrome in it and the header switch opens the twin (same position).
+        page_lang=f' data-page-lang="{lang}"' if alternates else "",
         og_extra=OG_SIZE if og_image_for(url) != OG_DEFAULT else "")
 
 
@@ -941,6 +945,21 @@ def build_subject(s):
                     [("Daily Quiz", "quiz.html?mode=daily"), ("Mock Tests", "mock.html"),
                      ("Open the subject view", f"subject.html?subject={sid}")]))))
 
+    # Subject -> Chapter: the derived chapters of a flat subject (quant,
+    # reasoning), each a page of its own in both languages.
+    chapters = flat_chapters(s)
+    if chapters:
+        ch_items = [(ch["en"], f"{len(ch['topics'])} parts", chapter_file(sid, ch["id"]),
+                     f"{sum(int(t.get('count') or 0) for t in ch['topics'])} MCQs")
+                    for ch in chapters]
+        body.append(card_section("Chapters", f"{name} chapter by chapter",
+                                 "Every chapter lists its parts in order.", ch_items))
+        for _n, _b, href, _m in ch_items:
+            link_record(filename, "subject", href, "chapter", _n)
+    paired = bool(subject_pa_sets(s))
+    if paired:
+        body.insert(0, section_wrap(lang_choice(filename, subject_pa_file(sid)), pad_top=False))
+
     # Subject -> Study material. A subject with few or no quizzes (Punjabi)
     # can still hold dozens of chapters of notes; without this section the
     # subject page never mentions them.
@@ -1078,7 +1097,8 @@ def build_subject(s):
         answer=answer, facts=facts,
         body="\n".join(b for b in body if b),
         faq=faq_section("Questions", f"{name} - common questions",
-                        "Answered the way the portal actually behaves.", faqs))
+                        "Answered the way the portal actually behaves.", faqs),
+        alternates=pa_alternates(filename, subject_pa_file(sid)) if paired else ())
 
     write_page(filename, html)
     register(filename, url, "subject", sid, title, description, h1, words(intro_html),
@@ -1590,7 +1610,7 @@ def build_topic_pa(s, c, t):
     qs = load_variant_questions(topic_pa_variant(t))
     count = len(qs)
     en_name = t["name"]
-    name = PA_TITLE.get((sid, tid)) or en_name
+    name = pa_set_name(sid, t)
     subj_pa = SUBJECT_PA.get(sid, s["name"])
     est = fmt_duration(count * q_seconds(sid))
     mins = est.replace(" min", " ਮਿੰਟ").replace(" sec", " ਸਕਿੰਟ")
@@ -1640,7 +1660,7 @@ def build_topic_pa(s, c, t):
     siblings = [(c2, t2) for c2, t2 in all_topics(s)
                 if t2["id"] != tid and topic_pa_variant(t2)]
     if siblings:
-        items = [(PA_TITLE.get((sid, t2["id"])) or t2["name"], "",
+        items = [(pa_set_name(sid, t2), "",
                   topic_pa_file(sid, t2["id"]), f"{t2.get('count', 0)} MCQ")
                  for _c2, t2 in siblings[:6]]
         body.append(card_section("ਅੱਗੇ ਪੜ੍ਹੋ", "ਹੋਰ ਪੰਜਾਬੀ ਸੈੱਟ",
@@ -1670,10 +1690,7 @@ def build_topic_pa(s, c, t):
         ("ਕੀ ਇਹੀ ਸਵਾਲ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
          "ਹਾਂ। ਉੱਪਰ \"English version\" ਬਟਨ ਨਾਲ ਇਹੀ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ।"),
     ]
-    crumbs = [("Home", "index.html", f"{BASE}/"),
-              (s["name"], subject_file(sid), u(subject_file(sid))),
-              (en_name, topic_file(sid, tid), u(topic_file(sid, tid))),
-              ("ਪੰਜਾਬੀ", None, None)]
+    crumbs = pa_trail(s, c, chapter_of(s, t)) + [(name, None, None)]
     page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
                          has_part=[{"@id": f"{url}#faq"}])
     page_ld["inLanguage"] = "pa-IN"
@@ -1684,7 +1701,7 @@ def build_topic_pa(s, c, t):
         title=title, description=description, kw=kw, url=url, ld_blocks=ld,
         crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਪੰਜਾਬੀ MCQ", h1=h1, lead=lead,
         answer=answer, facts=facts, body="\n".join(b for b in body if b),
-        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", "ਇਸ ਸੈੱਟ ਬਾਰੇ।", faqs),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", "ਇਸ ਸੈੱਟ ਬਾਰੇ।", faqs, lang="pa"),
         lang="pa", alternates=topic_alternates(sid, tid), answer_label="ਛੋਟਾ ਜਵਾਬ")
     write_page(filename, html)
     register(filename, url, "topic-pa", f"{sid}/{tid}", title, description, h1,
@@ -1766,7 +1783,7 @@ def build_category_pa(s, c):
     lead = f"{en_name} MCQ in Punjabi - {len(sets)} ਸੈੱਟ ਅਤੇ {q_total} ਸਵਾਲ, ਇੱਕੋ ਥਾਂ।"
     answer = (f"{name} ਦੇ ਸਾਰੇ ਪੰਜਾਬੀ ਸੈੱਟ ਹੇਠਾਂ ਹਨ। ਹਰ ਸੈੱਟ ਵਿੱਚ ਚਾਰ ਵਿਕਲਪ, ਸਹੀ ਉੱਤਰ "
               f"ਅਤੇ ਵਿਆਖਿਆ ਹੈ, ਅਤੇ ਹਰ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਮੌਜੂਦ ਹੈ।")
-    set_names = [PA_TITLE.get((sid, t["id"])) or t["name"] for t in sets]
+    set_names = [pa_set_name(sid, t) for t in sets]
     intro = [
         f"ਇਸ ਪੰਨੇ ਉੱਤੇ {subj_pa} ਦੇ ਅਧਿਆਇ \"{name}\" ਦੇ {len(sets)} ਪੰਜਾਬੀ ਸੈੱਟ ਹਨ, ਕੁੱਲ "
         f"{q_total} ਸਵਾਲ। ਸੈੱਟ: {', '.join(set_names[:6])}"
@@ -1817,10 +1834,7 @@ def build_category_pa(s, c):
          "ਹਾਂ। ਹਰ ਪੰਜਾਬੀ ਸੈੱਟ ਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਹੈ - ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ। \"English "
          "version\" ਬਟਨ ਨਾਲ ਖੋਲ੍ਹੋ।"),
     ]
-    crumbs = [("Home", "index.html", f"{BASE}/"),
-              (s["name"], subject_file(sid), u(subject_file(sid))),
-              (c["name"], category_file(sid, cid), u(category_file(sid, cid))),
-              ("ਪੰਜਾਬੀ", None, None)]
+    crumbs = pa_trail(s) + [(name, None, None)]
     page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
                          has_part=[{"@id": f"{url}#faq"}])
     page_ld["inLanguage"] = "pa-IN"
@@ -1831,7 +1845,7 @@ def build_category_pa(s, c):
         title=title, description=description, kw=kw, url=url, ld_blocks=ld,
         crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਪੰਜਾਬੀ MCQ", h1=h1, lead=lead,
         answer=answer, facts=facts, body="\n".join(b for b in body if b),
-        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", f"{name} ਬਾਰੇ।", faqs),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", f"{name} ਬਾਰੇ।", faqs, lang="pa"),
         lang="pa", alternates=category_alternates(sid, cid), answer_label="ਛੋਟਾ ਜਵਾਬ")
     write_page(filename, html)
     register(filename, url, "category-pa", f"{sid}/{cid}", title, description, h1,
@@ -2055,7 +2069,7 @@ def build_quiz_pa(s, c, t):
     qs = load_variant_questions(topic_pa_variant(t))
     count = len(qs)
     en_name = t["name"]
-    name = PA_TITLE.get((sid, tid)) or en_name
+    name = pa_set_name(sid, t)
     subj_pa = SUBJECT_PA.get(sid, s["name"])
     mins = (fmt_duration(count * q_seconds(sid))
             .replace(" min", " ਮਿੰਟ").replace(" sec", " ਸਕਿੰਟ"))
@@ -2063,7 +2077,7 @@ def build_quiz_pa(s, c, t):
 
     # A long name is trimmed from the middle, never from its "Part N" tail:
     # that tail is all that tells one part's title from the next.
-    _part = re.search(r"\s*-?\s*Part\s*\d+\s*$", name)
+    _part = re.search(r"\s*-?\s*(?:Part|ਭਾਗ)\s*\d+\s*$", name)
     title = next((" ".join(x.split()) for x in (
         f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ MCQ ਟੈਸਟ", f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
         f"{name} ਕੁਇਜ਼") if len(" ".join(x.split())) <= 60), "")
@@ -2105,13 +2119,7 @@ def build_quiz_pa(s, c, t):
          "ਨਹੀਂ। ਕੁਇਜ਼ ਤੁਰੰਤ ਸ਼ੁਰੂ ਕਰੋ। Google ਸਾਈਨ-ਇਨ ਸਿਰਫ਼ ਸਕੋਰ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਸਟ੍ਰੀਕ "
          "ਦੂਜੇ ਫ਼ੋਨ/ਕੰਪਿਊਟਰ ਉੱਤੇ ਲਿਜਾਣ ਲਈ ਹੈ।"),
     ]
-    crumbs = [("Home", "index.html", f"{BASE}/"),
-              (s["name"], subject_file(sid), u(subject_file(sid)))]
-    if c:
-        crumbs.append((c["name"], category_file(sid, c["id"]),
-                       u(category_file(sid, c["id"]))))
-    crumbs += [(en_name, quiz_file(sid, tid), u(quiz_file(sid, tid))),
-               ("ਪੰਜਾਬੀ", None, None)]
+    crumbs = pa_trail(s, c, chapter_of(s, t)) + [(name, None, None)]
 
     share_enc_url = quote(url, safe="")
     share_enc_title = quote(f"{name} ਕੁਇਜ਼ - House of Aspirants", safe="")
@@ -2145,7 +2153,7 @@ def build_quiz_pa(s, c, t):
     link_record(filename, "quiz-pa", quiz_file(sid, tid), "quiz", en_name)
     bottom.append(curator_box("pa"))
     bottom.append(faq_section("ਸਵਾਲ", f"{name} ਕੁਇਜ਼ - ਆਮ ਸਵਾਲ", "ਇਹ ਸੈੱਟ ਕਿਵੇਂ ਚੱਲਦਾ ਹੈ।",
-                              faqs))
+                              faqs, lang="pa"))
 
     page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
                          has_part=[{"@id": f"{url}#faq"}])
@@ -2161,7 +2169,8 @@ def build_quiz_pa(s, c, t):
         lang="pa", title=title, description=description, kw=kw, url=url, h1=h1,
         graph=graph, top_block=top_block, bottom=bottom,
         seed={"subject": sid, "topic": tid,
-              "category": (c["id"] if c else None), "canonical": url},
+              "category": (c["id"] if c else None), "canonical": url,
+              "subjectName": subj_pa},
         alternates=quiz_alternates(sid, tid), questions=qs)
     write_page(filename, page)
     register(filename, url, "quiz-pa", f"{sid}/{tid}", title, description, h1,
@@ -2238,7 +2247,9 @@ def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, botto
     q1 = first_question(questions)
     if q1:
         rep(r'<span id="qCount">.*?</span>',
-            f'<span id="qCount">Question 1 of {len(questions)}</span>', "qCount")
+            f'<span id="qCount">'
+            + (f"ਸਵਾਲ 1 / {len(questions)}" if lang == "pa" else f"Question 1 of {len(questions)}")
+            + "</span>", "qCount")
         rep(r'<h2 class="q-text" id="qText">.*?</h2>',
             f'<h2 class="q-text" id="qText">{esc(str(q1["q"]).strip())}</h2>', "qText")
         opts = "".join(
@@ -2272,11 +2283,14 @@ def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, botto
         '       page runs as a topic quiz with no query string, keeps this page\'s static\n'
         '       metadata, and never re-emits schema over the static graph in the head. */\n'
         f'    window.__HOA_QUIZ_SEED = {seed_json};\n  </script>\n')
-    anchor = '  <script src="assets/js/quiz.js" defer></script>'
-    if anchor not in page:
+    # The tag may carry clean-links.mjs's ?v=<n> asset version.
+    m = re.search(r'  <script src="assets/js/quiz\.js(?:\?v=[^"]*)?" defer></script>', page)
+    if not m:
         raise RuntimeError("quiz.html template marker missing: quiz.js script tag")
-    page = page.replace(anchor, seed_block + anchor, 1)
+    page = page[:m.start()] + seed_block + page[m.start():]
 
+    if lang == "pa":
+        page = localise(page, QUIZ_UI_PA, "quiz.html")
     copy_label = "ਕਾਪੀ ਹੋ ਗਿਆ \\u2713" if lang == "pa" else "Copied \\u2713"
     copy_block = (
         '  <script>\n'
@@ -2292,6 +2306,568 @@ def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, botto
         '    });\n'
         '  </script>\n')
     return page.replace("</body>", copy_block + "</body>", 1)
+
+
+# ========================================================= MCQ EDITIONS ====
+# Every MCQ hub, subject, chapter, set and quiz page exists once per language:
+# English at the site root, Punjabi under /pa/ with the same file name. A pair
+# links both ways with hreflang en / pa / x-default (x-default = English), each
+# page is canonical to itself, and each speaks one language only. A subject or
+# set with no Punjabi file is listed in the Punjabi section with an "English
+# only" badge that links to its English page - never an empty Punjabi page.
+HUB_FILE, HUB_PA_FILE = "expected-mcqs.html", "pa/expected-mcqs.html"
+RESULT_PA_FILE = "pa/result.html"
+EN_ONLY = '<span class="badge-en-only" lang="pa">English only / ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ</span>'
+PA_TAILS = [" Punjab Police, PSSSB ਅਤੇ PPSC ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।",
+            " Punjab Police, PSSSB ਅਤੇ PPSC ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
+            " ਮੁਫ਼ਤ ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।", " ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+
+
+def pa_alternates(en_file, pa_file):
+    en_url, pa_url = u(en_file), u(pa_file)
+    return [("en", en_url), ("pa", pa_url), ("x-default", en_url)]
+
+
+def pa_desc(base):
+    """A Punjabi meta description in the 140-160 window, padded with Punjabi
+    tails (fit_desc's own tails are English)."""
+    d = " ".join(str(base).split())
+    for tail in PA_TAILS:
+        if 140 <= len(d + tail) <= 160:
+            return d + tail
+    fitting = [t for t in PA_TAILS if len(d + t) <= 160]
+    return fit_desc(d + (fitting[0] if fitting else ""))
+
+
+def subject_pa_file(sid):
+    return f"pa/subject-{sid}.html"
+
+
+def chapter_file(sid, chid):
+    return f"chapter-{sid}-{chid}.html"
+
+
+def chapter_pa_file(sid, chid):
+    return f"pa/chapter-{sid}-{chid}.html"
+
+
+def subject_pa_sets(s):
+    """Live sets of a subject that ship a Punjabi file."""
+    return [(c, t) for c, t in live_topics(s) if topic_pa_variant(t)]
+
+
+_META = {}
+
+
+def set_meta(path):
+    """Chapter title / number and part from a question file that carries them
+    (the {chapter, part, questions} format), else {}."""
+    if not path:
+        return {}
+    if path not in _META:
+        try:
+            d = read_json(os.path.join(ROOT, path))
+        except Exception:
+            d = None
+        ch = (d.get("chapter") or {}) if isinstance(d, dict) else {}
+        _META[path] = ({"chapter": str(ch.get("title") or "").strip(),
+                        "num": ch.get("number"), "part": d.get("part")}
+                       if isinstance(d, dict) else {})
+    return _META[path]
+
+
+def pa_set_name(sid, t):
+    """A set's Gurmukhi name: '<chapter> - ਭਾਗ N' from its Punjabi file when
+    the file names its chapter, else the index's Punjabi title."""
+    m = set_meta(topic_pa_variant(t))
+    if m.get("chapter") and m.get("part"):
+        return f'{m["chapter"]} - ਭਾਗ {m["part"]}'
+    # Index titles keep an English "Part N" tail; the Punjabi edition says ਭਾਗ.
+    return re.sub(r"\bPart\s*(\d+)\s*$", r"ਭਾਗ \1",
+                  PA_TITLE.get((sid, t["id"])) or t["name"])
+
+
+_CH_PART = re.compile(r"[\s_-]*part[\s_-]*\d+\s*$", re.I)
+_CH_LANG = re.compile(r"[\s_-]+mcq[\s_-]+(en|pa)\s*$", re.I)
+_FLAT = {}
+
+
+def flat_chapters(s):
+    """Chapters of a subject with no category level whose sets have a Punjabi
+    edition (quant, reasoning): [{id, en, pa, num, topics}] in syllabus order.
+    A chapter is a set's id without its part number and language marker."""
+    sid = s["id"]
+    if sid in _FLAT:
+        return _FLAT[sid]
+    out = {}
+    if not s.get("categories"):
+        for _c, t in live_topics(s):
+            if not topic_pa_variant(t):
+                continue
+            chid = re.sub(r"[^a-z0-9]+", "-",
+                          _CH_LANG.sub("", _CH_PART.sub("", str(t["id"]))).lower()).strip("-")
+            en = set_meta((t.get("variants") or {}).get("en") or t.get("file", ""))
+            pa = set_meta(topic_pa_variant(t))
+            fallback = re.sub(r"^\d+\s*", "", chid.replace("-", " ")).title()
+            rec = out.setdefault(chid, {
+                "id": chid, "en": en.get("chapter") or fallback,
+                "pa": pa.get("chapter") or en.get("chapter") or fallback,
+                "num": en.get("num"), "topics": []})
+            rec["topics"].append(t)
+    for rec in out.values():
+        rec["topics"].sort(key=lambda t: (set_meta((t.get("variants") or {}).get("en")
+                                                  or t.get("file", "")).get("part") or 0,
+                                          t["id"]))
+    _FLAT[sid] = sorted(out.values(), key=lambda r: (r["num"] or 999, r["en"]))
+    return _FLAT[sid]
+
+
+def chapter_of(s, t):
+    return next((ch for ch in flat_chapters(s)
+                 if any(x["id"] == t["id"] for x in ch["topics"])), None)
+
+
+def pa_trail(s, c=None, chapter=None):
+    """Breadcrumbs [(label, href, url)] for a Punjabi page: every label in
+    Gurmukhi, every link to a Punjabi edition."""
+    sid = s["id"]
+    out = [("ਹੋਮ", "index.html", f"{BASE}/"),
+           ("ਸੰਭਾਵਿਤ MCQs", HUB_PA_FILE, u(HUB_PA_FILE)),
+           (SUBJECT_PA.get(sid, s["name"]), subject_pa_file(sid), u(subject_pa_file(sid)))]
+    if c and category_pa_topics(c):
+        out.append((CATEGORY_PA.get(c["id"], c["name"]), category_pa_file(sid, c["id"]),
+                    u(category_pa_file(sid, c["id"]))))
+    elif chapter:
+        out.append((chapter["pa"], chapter_pa_file(sid, chapter["id"]),
+                    u(chapter_pa_file(sid, chapter["id"]))))
+    return out
+
+
+def lang_choice(en_href, pa_href):
+    """The "English | ਪੰਜਾਬੀ" choice: links to the two editions. core.js
+    remembers a pick and highlights it; nothing ever redirects on it."""
+    return ('        <div class="mcq-lang-choice" role="group" aria-label="Language / ਭਾਸ਼ਾ">\n'
+            f'          <a href="{esc(en_href)}" hreflang="en" lang="en" data-lang-pick="en">English</a>\n'
+            f'          <a href="{esc(pa_href)}" hreflang="pa" lang="pa" data-lang-pick="pa">ਪੰਜਾਬੀ</a>\n'
+            '        </div>')
+
+
+def edition_cards(items):
+    """Card grid for the Punjabi section: (title, meta, href, en_only). An
+    English-only entry carries the badge and links to the English page."""
+    if not items:
+        return ""
+    out = ['        <div class="grid grid-3">']
+    for title, meta, href, en_only in items:
+        hl = ' hreflang="en"' if en_only else ""
+        badge = EN_ONLY if en_only else ""
+        out.append('          <article class="card card-pad">')
+        out.append(f'            <h3><a class="ilink" href="{esc(href)}"{hl}>{esc(title)}</a>{badge}</h3>')
+        if meta:
+            out.append(f'            <p class="text-sm muted">{esc(meta)}</p>')
+        out.append("          </article>")
+    out.append("        </div>")
+    return "\n".join(out)
+
+
+def pa_set_items(s, sets):
+    """Punjabi-section cards for sets: the Punjabi quiz when the set has one,
+    else the English quiz with the English-only badge."""
+    sid = s["id"]
+    items = []
+    for t in sets:
+        if topic_pa_variant(t):
+            items.append((pa_set_name(sid, t), f"{t.get('count', 0)} ਸਵਾਲ",
+                          quiz_pa_file(sid, t["id"]), False))
+        else:
+            items.append((t["name"], f"{t.get('count', 0)} ਸਵਾਲ",
+                          quiz_file(sid, t["id"]), True))
+    return items
+
+
+# ------------------------------------------------------ PUNJABI SUBJECT ----
+def build_subject_pa(s):
+    """pa/subject-<id>.html - the Punjabi edition of a subject page."""
+    sid = s["id"]
+    filename = subject_pa_file(sid)
+    url = u(filename)
+    subj_pa = SUBJECT_PA.get(sid, s["name"])
+    live = [t for _c, t in live_topics(s)]
+    pa_sets = subject_pa_sets(s)
+    q_total = sum(int(t.get("count") or 0) for _c, t in pa_sets)
+
+    title = fit_title(f"{subj_pa} MCQ ਪੰਜਾਬੀ ਵਿੱਚ | {s['name']} MCQ in Punjabi",
+                      f"{subj_pa} MCQ ਪੰਜਾਬੀ ਵਿੱਚ")
+    description = pa_desc(f"{subj_pa} ਦੇ {len(pa_sets)} MCQ ਸੈੱਟ ਪੰਜਾਬੀ ਵਿੱਚ, ਕੁੱਲ {q_total} "
+                          f"ਸਵਾਲ, ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਨਾਲ।")
+    kw = keywords(f"{subj_pa} MCQ", f"{s['name']} MCQ in Punjabi", f"{subj_pa} ਸਵਾਲ",
+                  "ਪੰਜਾਬੀ ਵਿੱਚ MCQ")
+    h1 = f"{subj_pa} MCQ ਪੰਜਾਬੀ ਵਿੱਚ"
+    lead = f"{subj_pa} ਦੇ ਸਾਰੇ ਪੰਜਾਬੀ ਸੈੱਟ ਇੱਕੋ ਥਾਂ - {len(pa_sets)} ਸੈੱਟ, {q_total} ਸਵਾਲ।"
+    answer = (f"ਹੇਠਾਂ {subj_pa} ਦੇ ਅਧਿਆਇ ਅਤੇ ਸੈੱਟ ਹਨ। ਹਰ ਸੈੱਟ ਬਿਨਾਂ ਟਾਈਮਰ ਹੈ, ਹਰ ਸਵਾਲ "
+              f"ਦੇ ਚਾਰ ਵਿਕਲਪ ਹਨ ਅਤੇ ਉੱਤਰ ਚੁਣਦੇ ਹੀ ਵਿਆਖਿਆ ਦਿਸਦੀ ਹੈ।")
+    intro = [f"ਇਸ ਪੰਨੇ ਉੱਤੇ {subj_pa} ਦੇ ਸਾਰੇ ਪ੍ਰਕਾਸ਼ਿਤ MCQ ਸੈੱਟ ਪੰਜਾਬੀ ਵਿੱਚ ਹਨ। ਹਰ ਸੈੱਟ "
+             f"ਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਵੀ ਹੈ - ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ - ਅਤੇ ਹਰ ਸਵਾਲ ਹੇਠਾਂ \"Show in "
+             f"English\" ਨਾਲ ਉਸਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਵੇਖ ਸਕਦੇ ਹੋ।",
+             f"ਸ਼ੁਰੂ ਕਰਨ ਲਈ ਕੋਈ ਅਧਿਆਇ ਖੋਲ੍ਹੋ, ਪਹਿਲਾ ਭਾਗ ਹੱਲ ਕਰੋ ਅਤੇ {SITE_PASS}% ਤੋਂ ਘੱਟ "
+             f"ਅੰਕ ਆਉਣ ਉੱਤੇ ਵਿਆਖਿਆਵਾਂ ਪੜ੍ਹ ਕੇ ਸੈੱਟ ਦੁਬਾਰਾ ਕਰੋ।"]
+    intro_html = (f'        <div class="landing-intro" data-landing="intro" lang="pa">\n'
+                  f'{join_paras(intro)}\n        </div>')
+    facts = facts_grid([("ਸੈੱਟ", str(len(pa_sets))), ("ਸਵਾਲ", str(q_total)),
+                        ("ਭਾਸ਼ਾ", "ਪੰਜਾਬੀ + English")])
+
+    body = [section_wrap(lang_choice(subject_file(sid), filename) + "\n"
+                         + section_head("ਜਾਣ-ਪਛਾਣ", f"{subj_pa} ਬਾਰੇ", "ਸ਼ੁਰੂ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ।")
+                         + "\n" + intro_html)]
+    # Chapters: the category lanes, or the derived chapters of a flat subject.
+    ch_items = []
+    for c in s.get("categories", []):
+        sets = [t for t in c.get("topics", []) if t.get("available")]
+        if not sets:
+            continue
+        if category_pa_topics(c):
+            ch_items.append((CATEGORY_PA.get(c["id"], c["name"]), f"{len(sets)} ਸੈੱਟ",
+                             category_pa_file(sid, c["id"]), False))
+        else:
+            ch_items.append((CATEGORY_PA.get(c["id"], c["name"]), f"{len(sets)} ਸੈੱਟ",
+                             category_file(sid, c["id"]), True))
+    for ch in flat_chapters(s):
+        ch_items.append((ch["pa"], f"{len(ch['topics'])} ਭਾਗ",
+                         chapter_pa_file(sid, ch["id"]), False))
+    if ch_items:
+        body.append(section_wrap(section_head("ਅਧਿਆਇ", f"{subj_pa}: ਅਧਿਆਇ ਅਨੁਸਾਰ",
+                                              "ਅਧਿਆਇ ਖੋਲ੍ਹੋ ਅਤੇ ਉਸਦੇ ਭਾਗ ਹੱਲ ਕਰੋ।")
+                                 + "\n" + edition_cards(ch_items)))
+        for _n, _m, href, _e in ch_items:
+            link_record(filename, "subject-pa", href, "category-pa", _n)
+    set_items = pa_set_items(s, live)
+    body.append(section_wrap(section_head("ਸੈੱਟ", f"{subj_pa}: ਸਾਰੇ ਸੈੱਟ",
+                                          "ਸੈੱਟ ਖੋਲ੍ਹੋ ਅਤੇ ਤੁਰੰਤ ਸ਼ੁਰੂ ਕਰੋ।")
+                             + "\n" + edition_cards(set_items)))
+    for _n, _m, href, _e in set_items:
+        link_record(filename, "subject-pa", href, "quiz", _n)
+    body.append(curator_box("pa"))
+
+    faqs = [(f"{subj_pa} ਦੇ ਕਿੰਨੇ ਪੰਜਾਬੀ ਸੈੱਟ ਹਨ?",
+             f"ਇਸ ਵੇਲੇ {len(pa_sets)} ਸੈੱਟ ਅਤੇ ਕੁੱਲ {q_total} ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ ਹਨ। ਨਵਾਂ ਸੈੱਟ "
+             f"ਛਪਦੇ ਹੀ ਇੱਥੇ ਜੁੜ ਜਾਂਦਾ ਹੈ।"),
+            ("ਕੀ ਇਹ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
+             "ਹਾਂ। ਉੱਪਰ English ਚੁਣੋ, ਜਾਂ ਕਿਸੇ ਵੀ ਸਵਾਲ ਹੇਠਾਂ \"Show in English\" ਦਬਾਓ।"),
+            ("ਕੀ ਲੌਗਇਨ ਜ਼ਰੂਰੀ ਹੈ?",
+             "ਨਹੀਂ। ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ ਅਤੇ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।")]
+    crumbs = pa_trail(s)
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    page_ld["inLanguage"] = "pa-IN"
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]})]
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਪੰਜਾਬੀ MCQ", h1=h1, lead=lead,
+        answer=answer, facts=facts, body="\n".join(b for b in body if b),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", f"{subj_pa} ਬਾਰੇ।", faqs, lang="pa"),
+        lang="pa", alternates=pa_alternates(subject_file(sid), filename),
+        answer_label="ਛੋਟਾ ਜਵਾਬ")
+    write_page(filename, html)
+    register(filename, url, "subject-pa", sid, title, description, h1,
+             words(" ".join(intro)), {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"subject-pa {filename}  {len(pa_sets)} sets")
+    return filename
+
+
+# ------------------------------------------------------- CHAPTER PAGES -----
+def build_chapter(s, ch, lang):
+    """chapter-<subject>-<chapter>.html and its pa/ twin: one chapter of a flat
+    subject (quant, reasoning), its parts in order, in one language."""
+    sid = s["id"]
+    pa = lang == "pa"
+    filename = chapter_pa_file(sid, ch["id"]) if pa else chapter_file(sid, ch["id"])
+    url = u(filename)
+    sets = ch["topics"]
+    q_total = sum(int(t.get("count") or 0) for t in sets)
+    if pa:
+        subj = SUBJECT_PA.get(sid, s["name"])
+        name = ch["pa"]
+        title = fit_title(f"{name} MCQ ਪੰਜਾਬੀ ਵਿੱਚ | {ch['en']} MCQ in Punjabi",
+                          f"{name} MCQ ਪੰਜਾਬੀ ਵਿੱਚ")
+        description = pa_desc(f"{name} ({subj}) ਦੇ {len(sets)} ਭਾਗ, ਕੁੱਲ {q_total} MCQ "
+                              f"ਪੰਜਾਬੀ ਵਿੱਚ, ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਨਾਲ।")
+        kw = keywords(f"{name} MCQ", f"{ch['en']} MCQ in Punjabi", f"{subj} MCQ ਪੰਜਾਬੀ")
+        h1 = f"{name} MCQ ਪੰਜਾਬੀ ਵਿੱਚ"
+        lead = f"{subj} ਦਾ ਅਧਿਆਇ - {len(sets)} ਭਾਗ, {q_total} ਸਵਾਲ।"
+        answer = (f"{name} ਦੇ ਭਾਗ ਹੇਠਾਂ ਕ੍ਰਮ ਅਨੁਸਾਰ ਹਨ। ਭਾਗ 1 ਤੋਂ ਸ਼ੁਰੂ ਕਰੋ; ਹਰ ਭਾਗ ਦਾ "
+                  f"ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਵੀ ਹੈ।")
+        intro = [f"{name} {subj} ਦਾ ਅਧਿਆਇ ਹੈ। ਇਸ ਦੇ {len(sets)} ਭਾਗਾਂ ਵਿੱਚ ਕੁੱਲ {q_total} "
+                 f"ਸਵਾਲ ਹਨ, ਹਰ ਇੱਕ ਦੀ ਵਿਆਖਿਆ ਨਾਲ।",
+                 "ਹਰ ਭਾਗ ਪਹਿਲਾਂ ਬਿਨਾਂ ਟਾਈਮਰ ਹੱਲ ਕਰੋ, ਗਲਤ ਸਵਾਲਾਂ ਦੀ ਵਿਆਖਿਆ ਪੜ੍ਹੋ ਅਤੇ ਫਿਰ "
+                 "ਅਗਲਾ ਭਾਗ ਖੋਲ੍ਹੋ।"]
+        items = [(pa_set_name(sid, t), f"{t.get('count', 0)} ਸਵਾਲ",
+                  quiz_pa_file(sid, t["id"]), False) for t in sets]
+        crumbs = pa_trail(s) + [(name, None, None)]
+        sec = section_head("ਭਾਗ", f"{name}: ਸਾਰੇ ਭਾਗ", "ਭਾਗ ਖੋਲ੍ਹੋ ਅਤੇ ਤੁਰੰਤ ਸ਼ੁਰੂ ਕਰੋ।")
+        bank = [(f"{pa_set_name(sid, t)} - ਸਵਾਲ ਬੈਂਕ", "", topic_pa_file(sid, t["id"]), False)
+                for t in sets]
+        bank_head = section_head("ਸਵਾਲ ਬੈਂਕ", "ਉੱਤਰਾਂ ਸਮੇਤ ਸਾਰੇ ਸਵਾਲ",
+                                 "ਹਰ ਭਾਗ ਦੇ ਸਾਰੇ ਸਵਾਲ, ਸਹੀ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ।")
+        faqs = [(f"{name} ਵਿੱਚ ਕਿੰਨੇ ਸਵਾਲ ਹਨ?",
+                 f"{len(sets)} ਭਾਗਾਂ ਵਿੱਚ ਕੁੱਲ {q_total} ਸਵਾਲ ਹਨ।"),
+                ("ਕੀ ਇਹ ਅਧਿਆਇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹੈ?",
+                 "ਹਾਂ - ਉੱਪਰ ਮੀਨੂ ਵਿੱਚ English ਚੁਣੋ, ਉਹੀ ਭਾਗ ਅਤੇ ਉਹੀ ਸਵਾਲ ਖੁੱਲ੍ਹਣਗੇ।")]
+        kind, eyebrow, faq_t = "chapter-pa", "ਪੰਜਾਬੀ MCQ", ("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", f"{name} ਬਾਰੇ।")
+    else:
+        name = ch["en"]
+        title = fit_title(f"{name} MCQs: {s['name']} Chapter Practice",
+                          f"{name} MCQs - {s['name']}")
+        description = fit_desc(
+            f"{name} MCQs from {s['name']}: {len(sets)} parts, {q_total} questions with an "
+            f"explanation for every answer. Free chapter practice for Punjab exams.")
+        kw = keywords(f"{name} MCQs", f"{name} questions", f"{s['name']} MCQs")
+        h1 = f"{name} MCQs"
+        lead = f"A {s['name']} chapter - {len(sets)} parts, {q_total} questions."
+        answer = (f"The parts of {name} are listed below in order. Start with Part 1; "
+                  f"every part also has a Punjabi edition.")
+        intro = [f"{name} is a {s['name']} chapter split into {len(sets)} parts with "
+                 f"{q_total} questions in all, each with a written explanation.",
+                 "Run each part untimed, read the explanation behind every miss, then move "
+                 "to the next part."]
+        items = [(t["name"], f"{t.get('count', 0)} MCQs", quiz_file(sid, t["id"]), False)
+                 for t in sets]
+        crumbs = [("Home", "index.html", f"{BASE}/"),
+                  ("Expected MCQs", HUB_FILE, u(HUB_FILE)),
+                  (s["name"], subject_file(sid), u(subject_file(sid))), (name, None, None)]
+        sec = section_head("Parts", f"{name}: every part", "Open a part and start straight away.")
+        bank = [(f"{t['name']} - question bank", "", topic_file(sid, t["id"]), False)
+                for t in sets]
+        bank_head = section_head("Question bank", "Every question with its answer",
+                                 "All questions of each part, with the answer and explanation.")
+        faqs = [(f"How many questions are in {name}?",
+                 f"{q_total} questions across {len(sets)} parts."),
+                (f"Is {name} available in Punjabi?",
+                 "Yes - pick ਪੰਜਾਬੀ in the menu above for the same parts and questions.")]
+        kind, eyebrow, faq_t = "chapter", "Chapter", ("Questions", "Common questions",
+                                                      f"About {name}.")
+    intro_attr = ' lang="pa"' if pa else ""
+    intro_html = (f'        <div class="landing-intro" data-landing="intro"{intro_attr}>\n'
+                  f'{join_paras(intro)}\n        </div>')
+    body = [section_wrap(sec + "\n" + edition_cards(items)),
+            section_wrap(intro_html, pad_top=False),
+            section_wrap(bank_head + "\n" + edition_cards(bank), pad_top=False)]
+    for _n, _m, href, _e in items + bank:
+        link_record(filename, kind, href, "quiz", _n)
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    if pa:
+        page_ld["inLanguage"] = "pa-IN"
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]})]
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow=eyebrow, h1=h1, lead=lead,
+        answer=answer, body="\n".join(body),
+        faq=faq_section(*faq_t, faqs, lang=lang), lang=lang,
+        alternates=pa_alternates(chapter_file(sid, ch["id"]), chapter_pa_file(sid, ch["id"])),
+        answer_label="ਛੋਟਾ ਜਵਾਬ" if pa else "")
+    write_page(filename, html)
+    register(filename, url, kind, f"{sid}/{ch['id']}", title, description, h1,
+             words(" ".join(intro)), {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"{kind:<8} {filename}  {len(sets)} parts")
+    return filename
+
+
+# ------------------------------------------------------------ PUNJABI HUB --
+def build_hub_pa():
+    """pa/expected-mcqs.html - the Punjabi MCQ hub. English-only subjects are
+    listed with a badge and link to their English page."""
+    filename = HUB_PA_FILE
+    url = u(filename)
+    subj_items, set_pool = [], []
+    for s in subjects:
+        live = [t for _c, t in live_topics(s)]
+        if not live:
+            continue
+        pa_sets = subject_pa_sets(s)
+        if pa_sets:
+            subj_items.append((SUBJECT_PA.get(s["id"], s["name"]), f"{len(pa_sets)} ਸੈੱਟ",
+                               subject_pa_file(s["id"]), False))
+            set_pool += [(s, t) for _c, t in pa_sets]
+        else:
+            subj_items.append((SUBJECT_PA.get(s["id"], s["name"]), f"{len(live)} ਸੈੱਟ",
+                               subject_file(s["id"]), True))
+    set_pool.sort(key=lambda st: st[1].get("updatedAt") or 0, reverse=True)
+    n_sets = len(set_pool)
+    q_total = sum(int(t.get("count") or 0) for _s, t in set_pool)
+    title = "ਸੰਭਾਵਿਤ MCQs ਪੰਜਾਬੀ ਵਿੱਚ | Expected MCQs in Punjabi"
+    description = pa_desc(f"ਪੰਜਾਬ ਦੀਆਂ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਸੰਭਾਵਿਤ MCQs ਪੰਜਾਬੀ ਵਿੱਚ: {n_sets} ਸੈੱਟ, "
+                          f"{q_total} ਸਵਾਲ, ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਨਾਲ।")
+    kw = keywords("ਸੰਭਾਵਿਤ MCQs", "Expected MCQs in Punjabi", "ਪੰਜਾਬੀ ਵਿੱਚ MCQ",
+                  "Punjab exam MCQs Punjabi")
+    h1 = "ਸੰਭਾਵਿਤ MCQs ਪੰਜਾਬੀ ਵਿੱਚ"
+    lead = f"ਵਿਸ਼ਾ ਚੁਣੋ, ਅਧਿਆਇ ਖੋਲ੍ਹੋ, ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ - {n_sets} ਸੈੱਟ, {q_total} ਸਵਾਲ।"
+    answer = ("ਹਰ ਸੈੱਟ ਪੰਜਾਬ ਦੀਆਂ ਸਰਕਾਰੀ ਪ੍ਰੀਖਿਆਵਾਂ ਦੇ ਪੈਟਰਨ ਉੱਤੇ ਹੈ: ਚਾਰ ਵਿਕਲਪ, ਇੱਕ ਸਹੀ "
+              "ਉੱਤਰ ਅਤੇ ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ। ਹਰ ਸੈੱਟ ਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਵੀ ਹੈ।")
+    body = [section_wrap(lang_choice(HUB_FILE, filename) + "\n"
+                         + section_head("ਵਿਸ਼ੇ", "ਵਿਸ਼ਾ ਚੁਣੋ",
+                                        "ਜਿਨ੍ਹਾਂ ਵਿਸ਼ਿਆਂ ਦੇ ਸੈੱਟ ਹਾਲੇ ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਹਨ, "
+                                        "ਉਹ ਅੰਗਰੇਜ਼ੀ ਪੰਨੇ ਉੱਤੇ ਖੁੱਲ੍ਹਦੇ ਹਨ।")
+                         + "\n" + edition_cards(subj_items))]
+    newest = [(pa_set_name(s["id"], t), f"{SUBJECT_PA.get(s['id'], s['name'])} · "
+               f"{t.get('count', 0)} ਸਵਾਲ", quiz_pa_file(s["id"], t["id"]), False)
+              for s, t in set_pool[:24]]
+    body.append(section_wrap(section_head("ਨਵੇਂ ਸੈੱਟ", "ਨਵੇਂ ਪ੍ਰਕਾਸ਼ਿਤ ਸੈੱਟ",
+                                          "ਸਭ ਤੋਂ ਨਵੇਂ ਪਹਿਲਾਂ।")
+                             + "\n" + edition_cards(newest), pad_top=False))
+    for _n, _m, href, _e in subj_items + newest:
+        link_record(filename, "hub-pa", href, "subject-pa", _n)
+    faqs = [("ਕੀ ਇਹ MCQs ਮੁਫ਼ਤ ਹਨ?",
+             "ਹਾਂ। ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ ਅਤੇ ਲੌਗਇਨ ਤੋਂ ਬਿਨਾਂ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।"),
+            ("ਕੀ ਹਰ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹੈ?",
+             "ਹਾਂ। ਉੱਪਰ English ਚੁਣੋ; ਹਰ ਸਵਾਲ ਹੇਠਾਂ \"Show in English\" ਨਾਲ ਉਸਦਾ ਅੰਗਰੇਜ਼ੀ "
+             "ਰੂਪ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।"),
+            ("ਮੇਰੀ ਤਰੱਕੀ ਭਾਸ਼ਾ ਬਦਲਣ ਨਾਲ ਮਿਟ ਤਾਂ ਨਹੀਂ ਜਾਵੇਗੀ?",
+             "ਨਹੀਂ। ਉੱਤਰ, ਬੁੱਕਮਾਰਕ ਅਤੇ ਸਕੋਰ ਸੈੱਟ ਨਾਲ ਜੁੜੇ ਹਨ, ਭਾਸ਼ਾ ਨਾਲ ਨਹੀਂ - ਦੋਵਾਂ ਭਾਸ਼ਾਵਾਂ "
+             "ਵਿੱਚ ਉਹੀ ਰਹਿੰਦੇ ਹਨ।")]
+    crumbs = [("ਹੋਮ", "index.html", f"{BASE}/"), ("ਸੰਭਾਵਿਤ MCQs", None, None)]
+    page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
+                         has_part=[{"@id": f"{url}#faq"}])
+    page_ld["inLanguage"] = "pa-IN"
+    ld = [ld_script({"@context": "https://schema.org", "@graph": [
+        page_ld, crumb_ld(url, [(l, i) for l, _, i in crumbs]), faq_ld(url, faqs)]})]
+    html = render_page(
+        title=title, description=description, kw=kw, url=url, ld_blocks=ld,
+        crumbs=[(l, h) for l, h, _ in crumbs], eyebrow="ਅਭਿਆਸ", h1=h1, lead=lead,
+        answer=answer, body="\n".join(body),
+        faq=faq_section("ਸਵਾਲ", "ਆਮ ਸਵਾਲ", "ਪੰਜਾਬੀ MCQs ਬਾਰੇ।", faqs, lang="pa"),
+        lang="pa", alternates=pa_alternates(HUB_FILE, filename), answer_label="ਛੋਟਾ ਜਵਾਬ")
+    write_page(filename, html)
+    register(filename, url, "hub-pa", "expected-mcqs", title, description, h1, 0,
+             {"WebPage", "BreadcrumbList", "FAQPage"})
+    info(f"hub-pa   {filename}  {n_sets} sets")
+    return filename
+
+
+# ------------------------------------------------------- PUNJABI RESULTS ---
+# quiz.html's static copy, in Punjabi (the controls quiz.js does not redraw).
+QUIZ_UI_PA = [
+    ('aria-label="Question timer"', 'aria-label="ਸਵਾਲ ਦਾ ਸਮਾਂ"'),
+    ('aria-label="Overall timer"', 'aria-label="ਕੁੱਲ ਸਮਾਂ"'),
+    ('id="btnRemaining" type="button">⏳ 0 left</button>',
+     'id="btnRemaining" type="button">⏳ 0 ਬਾਕੀ</button>'),
+    ('id="btnSubmit">📤 Submit</button>', 'id="btnSubmit">📤 ਜਮ੍ਹਾਂ ਕਰੋ</button>'),
+    ('<span id="progressText">0 of 0 answered (0%)</span>',
+     '<span id="progressText">0 ਵਿੱਚੋਂ 0 ਹੱਲ ਕੀਤੇ (0%)</span>'),
+    ('id="btnPrev">← Previous</button>', 'id="btnPrev">← ਪਿਛਲਾ</button>'),
+    ('id="btnSkip">Skip ⏭</button>', 'id="btnSkip">ਛੱਡੋ ⏭</button>'),
+    ('id="btnMark">📌 Mark for Review</button>', 'id="btnMark">📌 ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ</button>'),
+    ('id="btnBookmark">☆ Bookmark</button>', 'id="btnBookmark">☆ ਬੁੱਕਮਾਰਕ</button>'),
+    ('id="btnNext">Next →</button>', 'id="btnNext">ਅਗਲਾ →</button>'),
+    ("Keyboard: <b>←</b>/<b>→</b> navigate · <b>1–4</b> answer · <b>M</b> mark ·\n"
+     "            <b>S</b> skip · <b>Enter</b> submit (once all are answered) · answers auto-save.",
+     "ਕੀਬੋਰਡ: <b>←</b>/<b>→</b> ਅੱਗੇ-ਪਿੱਛੇ · <b>1–4</b> ਉੱਤਰ · <b>M</b> ਨਿਸ਼ਾਨ ·\n"
+     "            <b>S</b> ਛੱਡੋ · <b>Enter</b> ਜਮ੍ਹਾਂ (ਸਾਰੇ ਹੱਲ ਹੋਣ ਉੱਤੇ) · ਉੱਤਰ ਆਪਣੇ ਆਪ ਸੇਵ ਹੁੰਦੇ ਹਨ।"),
+    ("<h3>Question Palette</h3>", "<h3>ਸਵਾਲਾਂ ਦੀ ਪੈਲੇਟ</h3>"),
+    ('<span class="sw ok"></span> Answered</li>', '<span class="sw ok"></span> ਹੱਲ ਕੀਤਾ</li>'),
+    ('<span class="sw bad"></span> Wrong answer</li>', '<span class="sw bad"></span> ਗਲਤ ਉੱਤਰ</li>'),
+    ('<span class="sw no"></span> Not answered</li>', '<span class="sw no"></span> ਹੱਲ ਨਹੀਂ ਕੀਤਾ</li>'),
+    ('<span class="sw mk"></span> Marked for review</li>',
+     '<span class="sw mk"></span> ਰਿਵਿਊ ਲਈ ਨਿਸ਼ਾਨ</li>'),
+    ('<span class="sw vs"></span> Visited / skipped</li>',
+     '<span class="sw vs"></span> ਵੇਖਿਆ / ਛੱਡਿਆ</li>'),
+    ('id="resumeReset">↺ Restart set</button>', 'id="resumeReset">↺ ਸੈੱਟ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ</button>'),
+    ("<p>Daily free PDFs, current affairs & exam updates.</p>",
+     "<p>ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਪ੍ਰੀਖਿਆ ਅਪਡੇਟ।</p>"),
+    ('rel="noopener">Join Telegram</a>', 'rel="noopener">ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ</a>'),
+    ('<div class="ad-label">Advertisement</div>', '<div class="ad-label">ਇਸ਼ਤਿਹਾਰ</div>'),
+    ("Non-intrusive banner space below the set area.", "ਸਪਾਂਸਰ ਥਾਂ।"),
+    ('<span class="eyebrow">Keep Practising</span>', '<span class="eyebrow">ਅਭਿਆਸ ਜਾਰੀ ਰੱਖੋ</span>'),
+    (">More ways to practise</h2>", ">ਅਭਿਆਸ ਦੇ ਹੋਰ ਤਰੀਕੇ</h2>"),
+    (">📅 Daily Expected MCQs</a>", ">📅 ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs</a>"),
+    (">🧪 Mock Tests</a>", ">🧪 ਮੌਕ ਟੈਸਟ</a>"),
+    (">Previous Year Questions</a>", ">ਪਿਛਲੇ ਸਾਲਾਂ ਦੇ ਸਵਾਲ</a>"),
+    ('href="subject?subject=current-affairs">Expected MCQs</a>',
+     'href="pa/expected-mcqs">ਸੰਭਾਵਿਤ MCQs</a>'),
+    (">📌 Punjab GK</a>", ">📌 ਪੰਜਾਬ ਜੀਕੇ</a>"),
+    (">📚 Study Guides</a>", ">📚 ਅਧਿਐਨ ਗਾਈਡ</a>"),
+    (">🏆 Leaderboard</a>", ">🏆 ਲੀਡਰਬੋਰਡ</a>"),
+    (">★ Bookmarks</a>", ">★ ਬੁੱਕਮਾਰਕ</a>"),
+]
+
+
+# result.html's static copy, in Punjabi. result.js writes the rest (score,
+# stats, review) in the language of the edition being viewed.
+RESULT_UI_PA = [
+    ("<title>MCQ Result, Score Card &amp; Answer Review | House of Aspirants</title>",
+     "<title>MCQ ਨਤੀਜਾ, ਸਕੋਰ ਕਾਰਡ ਅਤੇ ਉੱਤਰ ਰਿਵਿਊ | House of Aspirants</title>"),
+    ('<span class="eyebrow" style="justify-content:center">Result</span>',
+     '<span class="eyebrow" style="justify-content:center">ਨਤੀਜਾ</span>'),
+    ('<h1 id="resTitle">MCQ Result</h1>', '<h1 id="resTitle">MCQ ਨਤੀਜਾ</h1>'),
+    ('<div class="sr-lab">Score</div>', '<div class="sr-lab">ਸਕੋਰ</div>'),
+    ('<div class="verdict" id="verdict">Result</div>', '<div class="verdict" id="verdict">ਨਤੀਜਾ</div>'),
+    ("📤 Share my score", "📤 ਆਪਣਾ ਸਕੋਰ ਸਾਂਝਾ ਕਰੋ"),
+    ('<div class="rs-lab" id="rankLab">Rank</div>', '<div class="rs-lab" id="rankLab">ਰੈਂਕ</div>'),
+    (">View my progress</a>", ">ਮੇਰੀ ਪ੍ਰਗਤੀ ਵੇਖੋ</a>"),
+    (">See leaderboard</a>", ">ਲੀਡਰਬੋਰਡ ਵੇਖੋ</a>"),
+    ("📊 View Dashboard", "📊 ਡੈਸ਼ਬੋਰਡ ਵੇਖੋ"),
+    ("🎯 Attempt Another Set", "🎯 ਹੋਰ ਸੈੱਟ ਹੱਲ ਕਰੋ"),
+    ("🔄 Retake this set", "🔄 ਇਹ ਸੈੱਟ ਦੁਬਾਰਾ ਕਰੋ"),
+    ("✈ Well played! Join House of Aspirants on Telegram",
+     "✈ ਵਧੀਆ ਖੇਡਿਆ! ਟੈਲੀਗ੍ਰਾਮ ਉੱਤੇ House of Aspirants ਨਾਲ ਜੁੜੋ"),
+    ("Get the answer-key PDFs, daily current affairs & exam alerts.",
+     "ਉੱਤਰ-ਕੁੰਜੀ PDF, ਰੋਜ਼ਾਨਾ ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਪ੍ਰੀਖਿਆ ਅਲਰਟ ਲਓ।"),
+    ("Join Now →", "ਹੁਣੇ ਜੁੜੋ →"),
+    ('<span class="eyebrow">Analysis</span>', '<span class="eyebrow">ਵਿਸ਼ਲੇਸ਼ਣ</span>'),
+    (">Subject-wise Performance</h2>", ">ਵਿਸ਼ੇ ਅਨੁਸਾਰ ਪ੍ਰਦਰਸ਼ਨ</h2>"),
+    ('<span class="eyebrow">Insights</span>', '<span class="eyebrow">ਸੂਝ</span>'),
+    (">Weak & Strong Areas</h2>", ">ਕਮਜ਼ੋਰ ਅਤੇ ਮਜ਼ਬੂਤ ਹਿੱਸੇ</h2>"),
+    ("Based on topic tags inside your JSON.", "ਸਵਾਲਾਂ ਦੇ ਟੌਪਿਕ ਟੈਗਾਂ ਦੇ ਆਧਾਰ ਉੱਤੇ।"),
+    ('<span class="eyebrow">Answer Review</span>', '<span class="eyebrow">ਉੱਤਰ ਰਿਵਿਊ</span>'),
+    ("<h2>Question-by-question breakdown</h2>", "<h2>ਹਰ ਸਵਾਲ ਦਾ ਵੇਰਵਾ</h2>"),
+    ("<p>Explanation & reference appear only when present in the JSON.</p>",
+     "<p>ਵਿਆਖਿਆ ਅਤੇ ਹਵਾਲਾ ਉਦੋਂ ਹੀ ਦਿਸਦੇ ਹਨ ਜਦੋਂ ਸਵਾਲ ਵਿੱਚ ਦਿੱਤੇ ਹੋਣ।</p>"),
+    ('data-filter="all">All</button>', 'data-filter="all">ਸਾਰੇ</button>'),
+    ('data-filter="correct">✅ Correct</button>', 'data-filter="correct">✅ ਸਹੀ</button>'),
+    ('data-filter="wrong">❌ Wrong</button>', 'data-filter="wrong">❌ ਗਲਤ</button>'),
+    ('data-filter="skipped">⏭ Skipped</button>', 'data-filter="skipped">⏭ ਛੱਡੇ</button>'),
+    ('<div class="ad-label">Advertisement</div>', '<div class="ad-label">ਇਸ਼ਤਿਹਾਰ</div>'),
+    ("Sponsored space — clean and non-intrusive.", "ਸਪਾਂਸਰ ਥਾਂ।"),
+    ('<span class="eyebrow">Keep going</span>', '<span class="eyebrow">ਅੱਗੇ ਵਧੋ</span>'),
+    ("<h2>Where to go next</h2>", "<h2>ਅੱਗੇ ਕਿੱਥੇ ਜਾਈਏ</h2>"),
+    ("<p>The parts of House of Aspirants that connect to this page.</p>",
+     "<p>House of Aspirants ਦੇ ਉਹ ਹਿੱਸੇ ਜੋ ਇਸ ਪੰਨੇ ਨਾਲ ਜੁੜੇ ਹਨ।</p>"),
+    ("<h3>See where this score lands</h3>", "<h3>ਵੇਖੋ ਇਹ ਸਕੋਰ ਕਿੱਥੇ ਖੜ੍ਹਾ ਹੈ</h3>"),
+    ("<h3>Save the ones you got wrong</h3>", "<h3>ਗਲਤ ਸਵਾਲ ਸੇਵ ਕਰੋ</h3>"),
+    ("<h3>Drill the topic this paper covered</h3>", "<h3>ਇਸ ਪੇਪਰ ਦਾ ਟੌਪਿਕ ਹੋਰ ਪੱਕਾ ਕਰੋ</h3>"),
+    ("<h3>Take a full mock test</h3>", "<h3>ਪੂਰਾ ਮੌਕ ਟੈਸਟ ਦਿਓ</h3>"),
+    ("<h3>Syllabus and pattern for every exam</h3>", "<h3>ਹਰ ਪ੍ਰੀਖਿਆ ਦਾ ਸਿਲੇਬਸ ਅਤੇ ਪੈਟਰਨ</h3>"),
+    ("<h3>Four long-form preparation guides</h3>", "<h3>ਤਿਆਰੀ ਲਈ ਚਾਰ ਵਿਸਥਾਰਤ ਗਾਈਡਾਂ</h3>"),
+]
+
+
+def localise(page, pairs, label):
+    """Swap each English string for its Punjabi one; every string must be
+    present, so a template edit can never silently leave English behind."""
+    for old, new in pairs:
+        if old not in page:
+            raise RuntimeError(f"{label}: template string missing: {old!r}")
+        page = page.replace(old, new)
+    return page
+
+
+def build_result_pa():
+    """pa/result.html - the Punjabi results page (noindex, like result.html;
+    it is not a landing page, so it is not registered in the manifest)."""
+    with open(os.path.join(ROOT, "result.html"), "r", encoding="utf-8") as fh:
+        page = fh.read()
+    page = localise(page, [
+        ('<html lang="en" data-theme="light" data-page-lang="en">',
+         '<html lang="pa" data-theme="light" data-page-lang="pa">'),
+        ('<link rel="canonical" href="https://houseofaspirants.in/result">',
+         '<link rel="canonical" href="https://houseofaspirants.in/pa/result">'),
+    ] + RESULT_UI_PA, "result.html")
+    page = re.sub(r'(<meta name="viewport"[^>]*>)', lambda m: m.group(1) + '\n  <base href="/">',
+                  page, count=1)
+    write_page(RESULT_PA_FILE, page)
+    info(f"result-pa {RESULT_PA_FILE}")
+    return RESULT_PA_FILE
 
 
 # =============================================================== EXAM PAGE ===
@@ -3082,6 +3658,16 @@ def main():
         for c in s.get("categories", []):
             if category_pa_topics(c):
                 built.append(build_category_pa(s, c))
+    # The rest of the Punjabi section: subjects, flat-subject chapters (in
+    # both languages), the hub and the results page.
+    for s in subjects:
+        if subject_pa_sets(s):
+            built.append(build_subject_pa(s))
+        for ch in flat_chapters(s):
+            built.append(build_chapter(s, ch, "en"))
+            built.append(build_chapter(s, ch, "pa"))
+    built.append(build_hub_pa())
+    built.append(build_result_pa())
     for e in exams_cfg:
         built.append(build_exam(e))
     for c in clusters_cfg:
@@ -3112,7 +3698,8 @@ def main():
             removed.append(fn)
     for fn in sorted(os.listdir(os.path.join(ROOT, "pa"))):
         rel = f"pa/{fn}"
-        if fn.startswith(("topic-", "category-", "quiz-")) and fn.endswith(".html") \
+        if fn.startswith(("topic-", "category-", "quiz-", "subject-", "chapter-")) \
+                and fn.endswith(".html") \
                 and rel not in expected:
             os.remove(os.path.join(ROOT, rel))
             removed.append(rel)

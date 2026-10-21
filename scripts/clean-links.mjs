@@ -17,6 +17,15 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 // Google AdSense site code (publisher ID is public; it appears on every page that shows ads).
 const ADSENSE = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7889829175568995" crossorigin="anonymous"></script>`;
 const SKIP = new Set(["node_modules", ".git", "content", "scripts", "templates", "data", "config", "Claude outputs"]);
+/* Asset versioning: every page asks for assets/js/*.js and assets/css/*.css as
+   "?v=<n>", n being the number in sw.js's VERSION (hoa-v93 -> 93). A release
+   bumps VERSION, so every page's script and style URLs change with it and a
+   returning visitor's first page view fetches the new code - no browser or
+   service-worker cache can answer with the old file under the new URL. */
+const SW_VERSION = (fs.readFileSync(path.join(ROOT, "sw.js"), "utf8")
+  .match(/const VERSION = "hoa-v(\d+)"/) || [])[1];
+if (!SW_VERSION) throw new Error("clean-links: sw.js VERSION (hoa-vNN) not found");
+const ASSET_RE = /(\b(?:src|href)=")((?:\.{0,2}\/)*assets\/(?:js|css)\/[A-Za-z0-9_.-]+\.(?:js|css))(?:\?v=[A-Za-z0-9_.-]*)?"/g;
 const RE = /(\bhref=|data-subject-base=)(["'`])((?:\.\/|\/)?(?:[A-Za-z0-9_-]+\/)*)([A-Za-z0-9_.-]+)\.html(?=[?#"'`])/g;
 
 function files(dir, out = []) {
@@ -37,6 +46,7 @@ export function cleanLinks({ quiet = false } = {}) {
     // Every HTML page gets the AdSense code once, just before </head>.
     if (f.endsWith(".html") && !out.includes("adsbygoogle.js") && out.includes("</head>"))
       out = out.replace("</head>", `  ${ADSENSE}\n</head>`);
+    if (f.endsWith(".html")) out = out.replace(ASSET_RE, `$1$2?v=${SW_VERSION}"`);
     out = out.replace(RE, (m, attr, q, prefix, name) => {
       // Resolve against the site root (Punjabi pages use <base href="/">).
       const target = path.join(ROOT, prefix.replace(/^\.?\//, ""), `${name}.html`);

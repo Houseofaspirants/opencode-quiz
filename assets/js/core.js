@@ -218,6 +218,9 @@ const HOA = (() => {
     "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
     "Start Expected MCQs": "ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
     "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
+    /* mobile bottom bar */
+    "MCQs": "ਸਵਾਲ",
+    "Notes": "ਨੋਟਸ",
     /* Study menu + footer column (content hub navigation) */
     "Study": "ਅਧਿਆਨ",
     "Current Affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
@@ -407,7 +410,26 @@ const HOA = (() => {
     document.dispatchEvent(new CustomEvent("hoa:lang", { detail: { lang } }));
   }
 
+  /* The MCQ hub's "English | ਪੰਜਾਬੀ" choice ([data-lang-pick] links to the
+     two editions). Picking one remembers it (db wraps storage in try/catch);
+     on the next visit the remembered edition is highlighted. It only ever
+     highlights: the page never redirects on it, so both editions stay
+     crawlable at their own URLs. */
+  function initLangPick() {
+    const picks = document.querySelectorAll("[data-lang-pick]");
+    if (!picks.length) return;
+    const saved = db.get(LANG_KEY);
+    const here = pageLang();
+    picks.forEach((a) => {
+      const l = a.getAttribute("data-lang-pick");
+      a.classList.toggle("is-preferred", l === saved);
+      if (l === here) a.setAttribute("aria-current", "page");
+      a.addEventListener("click", () => db.set(LANG_KEY, l));
+    });
+  }
+
   function initLang() {
+    initLangPick();
     applyLang();
     document.addEventListener("click", (e) => {
       const btn = /** @type {Element | null} */ (e.target).closest("[data-lang-btn]");
@@ -906,15 +928,15 @@ const HOA = (() => {
   <nav class="mobile-nav" aria-label="Quick navigation">
     <ul>
       <li><a class="mn-link" data-nav="home" href="./">
-        <span class="mn-ico" aria-hidden="true">🏠</span><span>Home</span></a></li>
+        <span class="mn-ico" aria-hidden="true">🏠</span><span data-i18n="Home">Home</span></a></li>
       <li><a class="mn-link" data-mn="mcq" href="practice#subjects">
-        <span class="mn-ico" aria-hidden="true">🧠</span><span>MCQs</span></a></li>
+        <span class="mn-ico" aria-hidden="true">🧠</span><span data-i18n="MCQs">MCQs</span></a></li>
       <li><a class="mn-link" data-mn="notes" href="study">
-        <span class="mn-ico" aria-hidden="true">📖</span><span>Notes</span></a></li>
+        <span class="mn-ico" aria-hidden="true">📖</span><span data-i18n="Notes">Notes</span></a></li>
       <li><a class="mn-link" data-nav="leaderboard" href="leaderboard">
-        <span class="mn-ico" aria-hidden="true">🏆</span><span>Leaderboard</span></a></li>
+        <span class="mn-ico" aria-hidden="true">🏆</span><span data-i18n="Leaderboard">Leaderboard</span></a></li>
       <li><a class="mn-link mn-tg" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">
-        <span class="mn-ico" aria-hidden="true">✈</span><span>Telegram</span></a></li>
+        <span class="mn-ico" aria-hidden="true">✈</span><span data-i18n="Telegram">Telegram</span></a></li>
     </ul>
   </nav>
 
@@ -1164,7 +1186,7 @@ const HOA = (() => {
    *
    * @returns {Promise<Array<{type: string, label: string, sub: string,
    *                          href: string, icon?: string, count?: number,
-   *                          hay?: string}>>}
+   *                          hay?: string, inLang?: boolean}>>}
    */
   function searchEntries() {
     return loadIndex()
@@ -1180,18 +1202,33 @@ const HOA = (() => {
                         href: `subject?subject=${s.id}&category=${c.id}`,
                         icon: c.icon || s.icon });
           });
-          s.topics.forEach((t) =>
+          /* One row per set, never one per language: the row speaks the
+             reader's current language, links to that edition when the set
+             has it, and matches either title (Gurmukhi queries included). */
+          const lang = getLang();
+          s.topics.forEach((t) => {
+            const v = t.variants || {};
+            const pa = String((t.titles || {}).pa || "");
+            const inPa = !!v.pa;
+            const inEn = !!v.en || !inPa;
+            const usePa = lang === "pa" && inPa;
+            const quizLanding = t.landing && /^\/quiz-/.test(t.landing);
             flat.push({
-              type: "topic", label: t.name,
-              sub: t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name,
+              type: "topic",
+              label: usePa && pa ? pa.replace(/\bPart\s*(\d+)\s*$/, "ਭਾਗ $1") : t.name,
+              sub: (t.category ? `${catNames[t.category] || t.category} · ${s.name}` : s.name) +
+                ` · ${[inPa ? "ਪੰਜਾਬੀ" : "", inEn ? "English" : ""].filter(Boolean).join(" + ")}`,
               href: t.available
-                ? (t.landing && /^\/quiz-/.test(t.landing)
-                    ? `${t.landing.replace(/^\//, "")}.html`
-                    : `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}`)
+                ? (quizLanding
+                    ? `${usePa ? "pa/" : ""}${t.landing.replace(/^\//, "")}.html`
+                    : `quiz.html?subject=${s.id}&topic=${t.id}${t.category ? `&category=${t.category}` : ""}${usePa ? "&lang=pa" : ""}`)
                 : `subject?subject=${s.id}${t.category ? `&category=${t.category}` : ""}`,
               icon: s.icon, count: t.count,
-            })
-          );
+              hay: `${t.name} ${pa} ${s.name}`,
+              // 1 = the set exists in the reader's language (listed first)
+              inLang: lang === "pa" ? inPa : inEn,
+            });
+          });
         });
         const seen = new Set(flat.map((f) => String(f.label).toLowerCase()));
         SEARCH_DESTINATIONS.forEach((d) => {
@@ -1346,7 +1383,12 @@ const HOA = (() => {
         const flatHits = flat.filter((f) => {
           const hay = String(f.hay || f.label).toLowerCase();
           return toks.every((tk) => hay.includes(tk));
-        }).slice(0, 6);
+        })
+          // Sets in the reader's language first; the order is stable otherwise.
+          .map((f, i) => ({ f, i }))
+          .sort((a, b) => (b.f.inLang === false ? 0 : 1) - (a.f.inLang === false ? 0 : 1) || a.i - b.i)
+          .map((x) => x.f)
+          .slice(0, 6);
         const rows = flatHits.map((h) => `
             <a class="quiz-card card" href="${h.href}">
               <span class="qc-icon">${h.icon}</span>
@@ -1935,8 +1977,11 @@ const HOA = (() => {
       if (document.readyState === "complete") idle();
       else window.addEventListener("load", idle, { once: true });
       window.gtag("js", new Date());
-      // content_language: the language the page is shown in (en / pa).
-      window.gtag("config", id, { send_page_view: true, content_language: getLang() });
+      // The language the page is shown in (en / pa), as an event parameter and
+      // as the GA4 content group, so reports split by edition.
+      window.gtag("config", id, {
+        send_page_view: true, content_language: getLang(), content_group: getLang(),
+      });
       gaStatus = "active";
       return true;
     } catch {

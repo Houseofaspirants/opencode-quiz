@@ -1183,10 +1183,13 @@ if site.get("url"):
     # editions under /pa/, exam pages and subject clusters. (Subject, category and quiz landing pages are covered
     # by the loops above.)
     for _kind, _path in sorted(LANDING.items()):
-        if _kind[0] in ("topic", "topic-pa", "category-pa", "quiz-pa", "exam", "cluster"):
+        if _kind[0] in ("topic", "topic-pa", "category-pa", "quiz-pa", "subject-pa",
+                        "chapter", "chapter-pa", "hub-pa", "exam", "cluster"):
             urls.append({"loc": base + _path,
                          "p": {"topic": "0.8", "topic-pa": "0.8", "category-pa": "0.8",
-                               "quiz-pa": "0.8", "exam": "0.85", "cluster": "0.7"}[_kind[0]]})
+                               "quiz-pa": "0.8", "subject-pa": "0.9", "chapter": "0.85",
+                               "chapter-pa": "0.85", "hub-pa": "0.9", "exam": "0.85",
+                               "cluster": "0.7"}[_kind[0]]})
 
     # data/noindex.json: crawlable pages kept out of the index stay out of
     # the sitemap too (a sitemap URL that says noindex is a mixed signal).

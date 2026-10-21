@@ -2,30 +2,76 @@
  * result.js | Result page + full answer review
  * Reads HOA.db "lastResult" written by quiz.js.
  * ========================================================================== */
-(() => {
+(async () => {
   "use strict";
   const { esc, fmtTime } = HOA;
   const r = HOA.db.get("lastResult");
 
   const $ = (id) => document.getElementById(id);
+  /* The results page has two editions: result.html (English) and
+     pa/result.html (Punjabi, data-page-lang="pa"). Every word on it follows
+     the edition being viewed, whichever language the quiz was taken in. */
+  const lang = HOA.lang && HOA.lang.get() === "pa" ? "pa" : "en";
+  const say = (pa, en) => (lang === "pa" ? pa : en);
+  const SUBJECT_PA = {
+    gk: "ਜਨਰਲ ਨਾਲੇਜ", quant: "ਗਣਿਤ", reasoning: "ਰੀਜ਼ਨਿੰਗ", punjabi: "ਪੰਜਾਬੀ",
+    english: "ਅੰਗਰੇਜ਼ੀ", computer: "ਕੰਪਿਊਟਰ", "current-affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
+    mixed: "ਮਿਲੇ-ਜੁਲੇ ਵਿਸ਼ੇ",
+  };
 
   if (!r) {
     $("resultBody").innerHTML = `
       <div class="empty-state">
         <div class="es-icon">🧾</div>
-        <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:8px">No result to show yet.</h2>
-        <p>Finish a quiz and your result — with a full answer review — will appear here.</p>
-        <p class="mt-2"><a class="btn btn-primary" href="./">Start a quiz</a></p>
+        <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:8px">${say("ਹਾਲੇ ਕੋਈ ਨਤੀਜਾ ਨਹੀਂ।", "No result to show yet.")}</h2>
+        <p>${say("ਕੋਈ ਕੁਇਜ਼ ਪੂਰਾ ਕਰੋ — ਨਤੀਜਾ ਅਤੇ ਹਰ ਉੱਤਰ ਦਾ ਰਿਵਿਊ ਇੱਥੇ ਦਿਸੇਗਾ।",
+          "Finish a quiz and your result — with a full answer review — will appear here.")}</p>
+        <p class="mt-2"><a class="btn btn-primary" href="./">${say("ਕੁਇਜ਼ ਸ਼ੁਰੂ ਕਰੋ", "Start a quiz")}</a></p>
       </div>`;
     $("resultHero").classList.add("hidden");
     return;
   }
 
+  /* ------------------------------------- 0. TEXT IN THIS PAGE'S LANGUAGE -
+     A topic result stores its set (subject + topicId) and the answers as
+     indices. Reload the question file of this edition and rebuild the title
+     and review text from it. Only when it lines up question for question
+     (same count, same correct option): otherwise, or offline, the text
+     stored at submit time stays. */
+  await (async () => {
+    if (!r.topicId || !r.subject || !Array.isArray(r.review)) return;
+    try {
+      const idx = await HOA.loadIndex();
+      const subj = (idx.subjects || []).find((x) => x.id === r.subject);
+      const t = subj && subj.topics.find((x) => x.id === r.topicId);
+      if (!t) return;
+      const v = t.variants || {};
+      const file = v[lang] || v.en || t.file;
+      const data = await HOA.loadQuestions(file);
+      const qs = data.questions;
+      const meta = data.meta || {};
+      const fits = qs.length === r.review.length &&
+        qs.every((q, i) => q.correct === r.review[i].correct &&
+                           q.options.length === r.review[i].options.length);
+      if (!fits) return;
+      r.review = r.review.map((x, i) => ({
+        ...x, q: qs[i].q, options: qs[i].options,
+        explanation: qs[i].explanation, reference: qs[i].reference,
+      }));
+      // Named the way the edition's quiz page names it (see quiz.js).
+      r.title = lang !== "pa" ? t.name
+        : meta.chapter && meta.chapter.title && meta.part
+          ? `${meta.chapter.title} - ਭਾਗ ${meta.part}`
+          : String((t.titles || {}).pa || t.name).replace(/\bPart\s*(\d+)\s*$/, "ਭਾਗ $1");
+      r.subjectName = lang === "pa" ? SUBJECT_PA[subj.id] || subj.name : subj.name;
+    } catch { /* keep the stored text */ }
+  })();
+
   /* ---------------------------------------------------- 1. HERO SUMMARY - */
-  document.title = `Result: ${r.title} - House of Aspirants`;
+  document.title = say(`ਨਤੀਜਾ: ${r.title} - House of Aspirants`, `Result: ${r.title} - House of Aspirants`);
   $("resTitle").textContent = r.title;
-  $("resSub").textContent = `${r.subjectName || "Quiz"}${
-    r.at ? " · " + new Date(r.at).toLocaleString("en-IN") : ""
+  $("resSub").textContent = `${r.subjectName || say("ਕੁਇਜ਼", "Quiz")}${
+    r.at ? " · " + new Date(r.at).toLocaleString(say("pa-IN", "en-IN")) : ""
   }`;
 
   const ring = $("scoreRing");
@@ -33,23 +79,23 @@
   $("scoreVal").textContent = r.percent + "%";
 
   const verdict = $("verdict");
-  verdict.textContent = r.passed ? "🎉 Passed" : "💪 Keep Practicing";
+  verdict.textContent = r.passed ? say("🎉 ਪਾਸ", "🎉 Passed") : say("💪 ਅਭਿਆਸ ਜਾਰੀ ਰੱਖੋ", "💪 Keep Practicing");
   verdict.className = "verdict " + (r.passed ? "pass" : "fail");
 
   $("perfMsg").innerHTML = performanceMessage(r);
 
   /* -------------------------------------------------- 2. STAT CARD GRID - */
   const cards = [
-    { v: r.total, l: "Total Questions", c: "" },
-    { v: r.attempted, l: "Attempted", c: "" },
-    { v: r.correct, l: "Correct", c: "ok" },
-    { v: r.wrong, l: "Wrong", c: "bad" },
-    { v: r.skipped, l: "Skipped", c: "warn" },
-    { v: r.accuracy + "%", l: "Accuracy", c: r.accuracy >= 60 ? "ok" : "bad" },
-    { v: r.percent + "%", l: "Percentage", c: r.percent >= 40 ? "ok" : "bad" },
-    { v: `${r.score}/${r.total}`, l: "Final Score", c: "" },
-    { v: fmtTime(r.seconds), l: "Time Taken", c: "" },
-    { v: r.passed ? "PASS" : "FAIL", l: `Pass ≥ ${r.passLine}%`, c: r.passed ? "ok" : "bad" },
+    { v: r.total, l: say("ਕੁੱਲ ਸਵਾਲ", "Total Questions"), c: "" },
+    { v: r.attempted, l: say("ਹੱਲ ਕੀਤੇ", "Attempted"), c: "" },
+    { v: r.correct, l: say("ਸਹੀ", "Correct"), c: "ok" },
+    { v: r.wrong, l: say("ਗਲਤ", "Wrong"), c: "bad" },
+    { v: r.skipped, l: say("ਛੱਡੇ", "Skipped"), c: "warn" },
+    { v: r.accuracy + "%", l: say("ਸ਼ੁੱਧਤਾ", "Accuracy"), c: r.accuracy >= 60 ? "ok" : "bad" },
+    { v: r.percent + "%", l: say("ਪ੍ਰਤੀਸ਼ਤ", "Percentage"), c: r.percent >= 40 ? "ok" : "bad" },
+    { v: `${r.score}/${r.total}`, l: say("ਅੰਤਿਮ ਸਕੋਰ", "Final Score"), c: "" },
+    { v: fmtTime(r.seconds), l: say("ਲੱਗਿਆ ਸਮਾਂ", "Time Taken"), c: "" },
+    { v: r.passed ? say("ਪਾਸ", "PASS") : say("ਫੇਲ੍ਹ", "FAIL"), l: say(`ਪਾਸ ≥ ${r.passLine}%`, `Pass ≥ ${r.passLine}%`), c: r.passed ? "ok" : "bad" },
   ];
   $("statGrid").innerHTML = cards
     .map(
@@ -82,15 +128,17 @@
   const rows = HOA.leaderboard.get("all");
   const myIndex = rows.findIndex((x) => x.at === r.at && x.me);
   $("rankVal").textContent = myIndex >= 0 ? `#${myIndex + 1}` : "—";
-  $("rankLab").textContent = `of ${rows.length} attempts`;
+  $("rankLab").textContent = say(`${rows.length} ਕੋਸ਼ਿਸ਼ਾਂ ਵਿੱਚੋਂ`, `of ${rows.length} attempts`);
 
   /** Signed-in: replace the device-only rank with live leaderboard points. */
   function showBoardResult(res) {
     if (!res) return;
     $("rankVal").textContent = res.gained > 0 ? `+${res.gained}` : `${res.today || 0}`;
     $("rankLab").innerHTML = res.gained > 0
-      ? `points added · <a href="leaderboard">${res.today} today on the leaderboard →</a>`
-      : `points today · <a href="leaderboard">best score on this set already counted →</a>`;
+      ? say(`ਅੰਕ ਜੁੜੇ · <a href="leaderboard">ਅੱਜ ਲੀਡਰਬੋਰਡ ਉੱਤੇ ${res.today} →</a>`,
+            `points added · <a href="leaderboard">${res.today} today on the leaderboard →</a>`)
+      : say(`ਅੱਜ ਦੇ ਅੰਕ · <a href="leaderboard">ਇਸ ਸੈੱਟ ਦਾ ਵਧੀਆ ਸਕੋਰ ਪਹਿਲਾਂ ਗਿਣਿਆ ਜਾ ਚੁੱਕਾ ਹੈ →</a>`,
+            `points today · <a href="leaderboard">best score on this set already counted →</a>`);
   }
 
   /** Signed-out: one quiet line inviting the student onto the live board. */
@@ -99,7 +147,8 @@
     Promise.resolve(HOA.auth.ready).then(() => {
       if (HOA.auth.mode !== "firebase" || HOA.auth.cloudEnabled()) return;
       const lab = $("rankLab");
-      lab.innerHTML = `on this device · <a href="#" id="joinBoard">Sign in to join the live leaderboard</a>`;
+      lab.innerHTML = say(`ਇਸ ਡਿਵਾਈਸ ਉੱਤੇ · <a href="#" id="joinBoard">ਲਾਈਵ ਲੀਡਰਬੋਰਡ ਲਈ ਸਾਈਨ ਇਨ ਕਰੋ</a>`,
+        `on this device · <a href="#" id="joinBoard">Sign in to join the live leaderboard</a>`);
       $("joinBoard").addEventListener("click", (e) => {
         e.preventDefault();
         HOA.auth.signIn().then((ok) => {
@@ -112,7 +161,7 @@
   }
 
   /* -------------------------------------- 4. SUBJECT-WISE PERFORMANCE ---- */
-  const bySubject = groupBy(r.review, (x) => x.subject || r.subjectName || "Mixed");
+  const bySubject = groupBy(r.review, (x) => x.subject || r.subject || "mixed");
   $("perfList").innerHTML = Object.entries(bySubject)
     .map(([name, items]) => {
       const ok = items.filter((i) => i.status === "correct").length;
@@ -142,11 +191,11 @@
     else if (pct >= 80) strong.push(t);
   });
   $("weakWrap").innerHTML = weak.length
-    ? weak.map((t) => `<span class="area-chip weak">Weak: ${esc(t)}</span>`).join("")
-    : `<span class="muted text-sm">No weak areas detected — solid work! 🎯</span>`;
+    ? weak.map((t) => `<span class="area-chip weak">${say("ਕਮਜ਼ੋਰ", "Weak")}: ${esc(t)}</span>`).join("")
+    : `<span class="muted text-sm">${say("ਕੋਈ ਕਮਜ਼ੋਰ ਹਿੱਸਾ ਨਹੀਂ — ਸ਼ਾਬਾਸ਼! 🎯", "No weak areas detected — solid work! 🎯")}</span>`;
   $("strongWrap").innerHTML = strong.length
-    ? strong.map((t) => `<span class="area-chip strong">Strong: ${esc(t)}</span>`).join("")
-    : `<span class="muted text-sm">Attempt more tagged questions to reveal strong areas.</span>`;
+    ? strong.map((t) => `<span class="area-chip strong">${say("ਮਜ਼ਬੂਤ", "Strong")}: ${esc(t)}</span>`).join("")
+    : `<span class="muted text-sm">${say("ਮਜ਼ਬੂਤ ਹਿੱਸੇ ਵੇਖਣ ਲਈ ਹੋਰ ਟੈਗ ਵਾਲੇ ਸਵਾਲ ਹੱਲ ਕਰੋ।", "Attempt more tagged questions to reveal strong areas.")}</span>`;
 
   /* ---------------------------------------------------- 6. ANSWER REVIEW - */
   const reviewWrap = $("reviewList");
@@ -156,22 +205,22 @@
     const items = r.review.filter((x) => filter === "all" || x.status === filter);
     if (!items.length) {
       reviewWrap.innerHTML = `<div class="empty-state"><div class="es-icon">🔍</div>
-        <h3>Nothing in this filter</h3><p>Pick another filter above.</p></div>`;
+        <h3>${say("ਇਸ ਫ਼ਿਲਟਰ ਵਿੱਚ ਕੁਝ ਨਹੀਂ", "Nothing in this filter")}</h3><p>${say("ਉੱਪਰੋਂ ਹੋਰ ਫ਼ਿਲਟਰ ਚੁਣੋ।", "Pick another filter above.")}</p></div>`;
       return;
     }
     reviewWrap.innerHTML = items
       .map((x) => {
         const userText =
           x.answer === null || x.answer === undefined
-            ? "Not answered (skipped)"
+            ? say("ਉੱਤਰ ਨਹੀਂ ਦਿੱਤਾ (ਛੱਡਿਆ)", "Not answered (skipped)")
             : x.options[x.answer] ?? "—";
         const correctText = x.options[x.correct] ?? "—";
         const badge =
           x.status === "correct"
-            ? '<span class="badge badge-success">Correct</span>'
+            ? `<span class="badge badge-success">${say("ਸਹੀ", "Correct")}</span>`
             : x.status === "wrong"
-            ? '<span class="badge badge-danger">Wrong</span>'
-            : '<span class="badge badge-muted">Skipped</span>';
+            ? `<span class="badge badge-danger">${say("ਗਲਤ", "Wrong")}</span>`
+            : `<span class="badge badge-muted">${say("ਛੱਡਿਆ", "Skipped")}</span>`;
 
         return `
         <article class="review-item ${x.status}">
@@ -182,24 +231,24 @@
           </div>
           <div class="review-ans">
             <div class="ans-line ok">
-              <span class="tag">Correct</span><span>${esc(correctText)}</span>
+              <span class="tag">${say("ਸਹੀ ਉੱਤਰ", "Correct")}</span><span>${esc(correctText)}</span>
             </div>
             ${
               x.answer !== null && x.answer !== undefined
                 ? `<div class="ans-line ${x.status === "correct" ? "ok" : "bad"}">
-                    <span class="tag">Your answer</span><span>${esc(userText)}</span>
+                    <span class="tag">${say("ਤੁਹਾਡਾ ਉੱਤਰ", "Your answer")}</span><span>${esc(userText)}</span>
                    </div>`
                 : ""
             }
           </div>
           ${
             x.explanation
-              ? `<div class="review-note"><b>Explanation:</b> ${esc(x.explanation)}</div>`
+              ? `<div class="review-note"><b>${say("ਵਿਆਖਿਆ", "Explanation")}:</b> ${esc(x.explanation)}</div>`
               : ""
           }
           ${
             x.reference
-              ? `<p class="review-ref"><b>Reference:</b> ${esc(x.reference)}</p>`
+              ? `<p class="review-ref"><b>${say("ਹਵਾਲਾ", "Reference")}:</b> ${esc(x.reference)}</p>`
               : ""
           }
         </article>`;
@@ -226,6 +275,7 @@
     }, {});
   }
   function prettySubject(id) {
+    if (lang === "pa" && SUBJECT_PA[id]) return SUBJECT_PA[id];
     const map = {
       gk: "General Knowledge", quant: "Quantitative Aptitude",
       reasoning: "Reasoning", punjabi: "Punjabi", english: "English",
@@ -235,11 +285,11 @@
   }
   function performanceMessage(res) {
     const p = res.percent;
-    if (p >= 90) return "Outstanding! You are exam-ready for this topic. 🏆";
-    if (p >= 75) return "Excellent work — a little more revision and you'll ace it. 🌟";
-    if (p >= 60) return "Good attempt. Focus on the weak areas listed below. 👍";
-    if (p >= 40) return "Average — revise the explanations and try again. 📚";
-    return "Don't give up. Read each explanation carefully and retry. 💪";
+    if (p >= 90) return say("ਸ਼ਾਨਦਾਰ! ਇਸ ਵਿਸ਼ੇ ਲਈ ਤੁਸੀਂ ਪ੍ਰੀਖਿਆ ਲਈ ਤਿਆਰ ਹੋ। 🏆", "Outstanding! You are exam-ready for this topic. 🏆");
+    if (p >= 75) return say("ਬਹੁਤ ਵਧੀਆ — ਥੋੜ੍ਹੀ ਹੋਰ ਦੁਹਰਾਈ ਨਾਲ ਪੂਰੇ ਅੰਕ। 🌟", "Excellent work — a little more revision and you'll ace it. 🌟");
+    if (p >= 60) return say("ਚੰਗੀ ਕੋਸ਼ਿਸ਼। ਹੇਠਾਂ ਦਿੱਤੇ ਕਮਜ਼ੋਰ ਹਿੱਸਿਆਂ ਉੱਤੇ ਧਿਆਨ ਦਿਓ। 👍", "Good attempt. Focus on the weak areas listed below. 👍");
+    if (p >= 40) return say("ਠੀਕ-ਠਾਕ — ਵਿਆਖਿਆਵਾਂ ਦੁਹਰਾ ਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ। 📚", "Average — revise the explanations and try again. 📚");
+    return say("ਹਿੰਮਤ ਨਾ ਹਾਰੋ। ਹਰ ਵਿਆਖਿਆ ਧਿਆਨ ਨਾਲ ਪੜ੍ਹ ਕੇ ਫਿਰ ਕੋਸ਼ਿਸ਼ ਕਰੋ। 💪", "Don't give up. Read each explanation carefully and retry. 💪");
   }
 
   /* ------------------------------------------- 8. TELEGRAM CTA (post quiz) */
@@ -256,14 +306,17 @@
   const shareBtn = $("shareScore");
   const quizUrl = (() => {
     try {
-      const u = new URL(r.href || "index.html", location.origin);
+      const ed = r.editions && (r.lang === "pa" ? r.editions.pa : r.editions.en);
+      const u = new URL("/" + String(ed || r.href || "index.html").replace(/^\//, ""), location.origin);
       u.searchParams.set("utm_source", "score_card");
       return u.toString();
     } catch { return location.origin; }
   })();
-  const shareText =
+  const shareText = say(
+    `ਮੈਂ House of Aspirants ਉੱਤੇ "${r.title}" ਵਿੱਚ ${r.score}/${r.total} (${r.percent}%) ਅੰਕ ਲਏ। ` +
+    `ਕੀ ਤੁਸੀਂ ਇਸ ਤੋਂ ਵੱਧ ਲੈ ਸਕਦੇ ਹੋ? ${quizUrl}`,
     `I scored ${r.score}/${r.total} (${r.percent}%) in "${r.title}" on House of Aspirants. ` +
-    `Can you beat me? ${quizUrl}`;
+    `Can you beat me? ${quizUrl}`);
 
   function wrapLines(ctx, text, maxW, maxLines) {
     const words = String(text).split(/\s+/);
@@ -396,9 +449,14 @@
   }
 
   /* -------------------------------------------------- 9. RETAKE BUTTON --
-   * Opens the same quiz again with a clean session (fresh attempt). */
+   * Opens the same quiz again with a clean session (fresh attempt), in the
+   * edition it was taken in. Results saved before editions existed carry
+   * only the classic quiz.html?subject=… href, which still works. */
+  const retakeHref =
+    (r.editions && (r.lang === "pa" ? r.editions.pa : r.editions.en)) ||
+    r.href || "index.html";
   document.getElementById("retryBtn")?.addEventListener("click", () => {
-    HOA.db.remove("session:" + (r.href || "").split("topic=")[1]); // clear autosave
-    location.href = r.href || "index.html";
+    if (r.key) HOA.db.remove("session:" + r.key); // clear autosave
+    location.href = retakeHref;
   });
 })();

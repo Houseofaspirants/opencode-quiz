@@ -5364,7 +5364,14 @@ def hub_fallback(coll, index):
             f'{" · ਪੰਜਾਬੀ + English" if "pa" in (t.get("variants") or {}) else ""}</span>'
             f'<h3>{esc(t.get("name", ""))}</h3>'
             f'<p class="ilink">Attempt the set →</p></a>' for s, t in sets[:24])
-        return f"""<div class="section-head reveal"><div>
+        # The MCQ section exists in English (here) and Punjabi
+        # (pa/expected-mcqs.html, built by build_landing_pages.py); the choice
+        # links the two editions and core.js only highlights the reader's pick.
+        choice = ('<div class="mcq-lang-choice" role="group" aria-label="Language / ਭਾਸ਼ਾ">'
+                  '<a href="expected-mcqs.html" hreflang="en" lang="en" data-lang-pick="en">English</a>'
+                  '<a href="pa/expected-mcqs.html" hreflang="pa" lang="pa" data-lang-pick="pa">ਪੰਜਾਬੀ</a>'
+                  '</div>')
+        return f"""{choice}<div class="section-head reveal"><div>
             <span class="eyebrow">Live now · {len(sets)} sets</span>
             <h2>Expected MCQ sets by subject</h2>
             <p>Topic-wise sets in the pattern Punjab exams ask, each with an explanation behind every answer. Newest first.</p>
@@ -5663,8 +5670,16 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
       </div>
     </section>""")
 
+    # The MCQ hub is one of a language pair (its Punjabi edition is built by
+    # build_landing_pages.py): hreflang both ways, pinned to English.
+    mcq_pair = coll == "expected-mcqs"
     html = head(hub["title"], hub["description"], hub["keywords"], url,
-                "website", graph(nodes))
+                "website", graph(nodes),
+                alternates=([("en", url), ("pa", f"{DOMAIN}/pa/expected-mcqs"),
+                             ("x-default", url)] if mcq_pair else ()))
+    if mcq_pair:
+        html = html.replace('<html lang="en" data-theme="light">',
+                            '<html lang="en" data-theme="light" data-page-lang="en">', 1)
     html += f"""  <main id="main">
     <section class="page-hero">
       <div class="container">
@@ -7601,9 +7616,18 @@ def main():
                 pass
     pa_dir = ROOT / "pa"
     if pa_dir.is_dir():
+        # /pa/ also holds build_landing_pages.py's Punjabi MCQ editions
+        # (pa/expected-mcqs.html shares this builder's "expected-" prefix);
+        # a page that builder registered is never stale here.
+        try:
+            landing_owned = {str(x.get("file", "")) for x in json.loads(
+                (ROOT / "data" / "landing-manifest.json").read_text(encoding="utf-8")
+            ).get("pages", [])}
+        except (OSError, ValueError):
+            landing_owned = set()
         for fn in sorted(os.listdir(pa_dir)):
             if fn.endswith(".html") and fn.startswith(GEN_PREFIXES) and \
-                    f"pa/{fn}" not in expected:
+                    f"pa/{fn}" not in expected and f"pa/{fn}" not in landing_owned:
                 (pa_dir / fn).unlink()
                 removed.append(f"pa/{fn}")
         leftovers = [n for n in os.listdir(pa_dir) if n != ".DS_Store"]

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 604,
-  "edges": 3529,
+  "nodes": 605,
+  "edges": 3531,
   "silos": 35,
   "clusters": 92,
   "pillars": 34
@@ -5452,6 +5452,18 @@
    "exams": [],
    "tags": [],
    "hub": "news.html"
+  },
+  {
+   "id": "pa/expected-mcqs.html",
+   "url": "/pa/expected-mcqs.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "pa/session-sunday-live-doubt-session-2026-10-04",
@@ -11997,7 +12009,19 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "pa/expected-mcqs.html",
    "rel": "contextual",
    "weight": 1
   },
