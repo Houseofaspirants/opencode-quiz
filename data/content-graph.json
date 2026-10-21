@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 602,
-  "edges": 3547,
+  "nodes": 601,
+  "edges": 3529,
   "silos": 35,
   "clusters": 88,
   "pillars": 34
@@ -7017,18 +7017,6 @@
   {
    "id": "quiz-quant-01 - Number System - MCQ - EN - Part 4.html",
    "url": "/quiz-quant-01 - Number System - MCQ - EN - Part 4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-number-series-part-1.html",
-   "url": "/quiz-reasoning-number-series-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -19983,12 +19971,6 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -20187,12 +20169,6 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -20386,12 +20362,6 @@
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20601,12 +20571,6 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -20794,12 +20758,6 @@
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "pyq/psssb-veterinary-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21004,12 +20962,6 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21441,12 +21393,6 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -21640,12 +21586,6 @@
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21862,12 +21802,6 @@
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25467,12 +25401,6 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -25648,12 +25576,6 @@
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25845,12 +25767,6 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -26037,12 +25953,6 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -26223,12 +26133,6 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -26404,12 +26308,6 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26817,12 +26715,6 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -27015,12 +26907,6 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -27208,12 +27094,6 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-reasoning-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },

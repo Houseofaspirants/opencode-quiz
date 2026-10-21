@@ -117,7 +117,6 @@ references:
 - [ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-veterinary-inspector/index.html)
 - [ਡੇਅਰੀ ਵਿਕਾਸ ਇੰਸਪੈਕਟਰ ਦੇ ਪੇਪਰ](pyq/psssb-dairy-development-inspector/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
-- [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)
 
 ## Official notification download ਕਰੋ

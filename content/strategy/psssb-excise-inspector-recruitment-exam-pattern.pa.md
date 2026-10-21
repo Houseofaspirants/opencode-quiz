@@ -114,7 +114,6 @@ references:
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word ਭਾਗ 1](subject.html?subject=computer)
-- [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ](quiz-gk-basic-concepts-of-economy-part-1.html)
 
 ## Official notification download ਕਰੋ

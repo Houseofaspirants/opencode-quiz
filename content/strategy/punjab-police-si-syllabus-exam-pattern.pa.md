@@ -169,9 +169,6 @@ references:
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ](quiz-gk-basic-concepts-of-economy-part-1.html)
 
-**ਤਰਕ**
-- [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
-
 **ਕੰਪਿਊਟਰ**
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਬੁਨਿਆਦੀ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word ਭਾਗ 1](subject.html?subject=computer)

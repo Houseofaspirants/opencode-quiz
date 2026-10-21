@@ -134,7 +134,6 @@ One **pen-and-paper exam on an OMR sheet**, 2 hours long:
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [Basic Concepts of Economy](quiz-gk-basic-concepts-of-economy-part-1.html)
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
-- [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Current affairs](current-affairs.html)
 
 ## Official source

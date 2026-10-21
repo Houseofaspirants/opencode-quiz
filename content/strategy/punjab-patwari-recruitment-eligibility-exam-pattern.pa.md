@@ -121,7 +121,6 @@ Notification ਵਿੱਚ ਲਿਖਿਆ ਸੀ ਕਿ ਪੂਰਾ ਸਿਲ�
 - [ਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-patwari/index.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
-- [ਸੰਖਿਆ ਲੜੀ ਭਾਗ 1](quiz-reasoning-number-series-part-1.html)
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word ਭਾਗ 1](subject.html?subject=computer)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)

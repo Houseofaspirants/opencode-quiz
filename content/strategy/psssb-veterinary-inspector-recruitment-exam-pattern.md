@@ -117,7 +117,6 @@ Most posts are in the reserved and backlog categories this time, so check your c
 - [Veterinary Inspector previous year papers](pyq/psssb-veterinary-inspector/index.html)
 - [Dairy Development Inspector papers](pyq/psssb-dairy-development-inspector/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
-- [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Current affairs](current-affairs.html)
 
 ## Download the official notification

@@ -121,7 +121,6 @@ The notification said the detailed syllabus and pattern would be put on the boar
 - [Punjab Patwari previous year papers](pyq/psssb-patwari/index.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
-- [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word Part 1](subject.html?subject=computer)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

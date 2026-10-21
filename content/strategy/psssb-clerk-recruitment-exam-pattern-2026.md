@@ -111,7 +111,6 @@ The fee is not refunded.
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
 - [Fundamentals of Computers](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word Part 1](subject.html?subject=computer)
-- [Number Series Part 1](quiz-reasoning-number-series-part-1.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [Current affairs](current-affairs.html)
 
