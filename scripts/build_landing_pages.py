@@ -587,7 +587,8 @@ def normalize_questions(raw_list):
     for item in raw_list or []:
         q = dict(item or {})
         text = q.get("q", q.get("question", ""))
-        options = q.get("options", q.get("opts", []))
+        options = [(o.get("text", o.get("label", "")) if isinstance(o, dict) else o)
+                   for o in (q.get("options", q.get("opts", [])) or [])]
         correct = q.get("correct", q.get("answer", q.get("key")))
         if isinstance(correct, str):
             s = correct.strip()

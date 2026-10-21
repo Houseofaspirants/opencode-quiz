@@ -349,7 +349,8 @@ function hasGurmukhi(questions) {
     const text = [
       String(qd.question || qd.q || ""),
       String(qd.explanation || ""),
-      ...opts.map((o) => String(o)),
+      // An option may be a {label, text} object; only its text is script.
+      ...opts.map((o) => String(o && typeof o === "object" ? o.text ?? "" : o)),
     ].join(" ");
     if (GURMUKHI_RX.test(text)) return true;
   }

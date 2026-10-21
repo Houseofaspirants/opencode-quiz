@@ -107,13 +107,16 @@ const HOA = (() => {
    * Accepts many authoring styles so adding MCQs stays beginner friendly:
    *   correct: 0 | "A" | "a" | exact option text
    *   keys: q/question, options/opts, correct/answer/key
+   *   options: plain strings, or {label, text} objects (the text is kept)
    */
   function normalizeQuestions(list) {
     if (!Array.isArray(list)) return [];
     return list.map((item, i) => {
       const q = { ...(item || {}) };
       const text = q.q ?? q.question ?? "";
-      const options = q.options ?? q.opts ?? [];
+      const options = (q.options ?? q.opts ?? []).map((o) =>
+        o && typeof o === "object" ? o.text ?? o.label ?? "" : o
+      );
       let correct = q.correct ?? q.answer ?? q.key ?? null;
 
       if (typeof correct === "string") {

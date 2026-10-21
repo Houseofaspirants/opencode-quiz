@@ -343,9 +343,11 @@ def has_gurmukhi(questions):
         opts = qd.get("options") or qd.get("opts") or []
         if not isinstance(opts, list):
             opts = []
+        # An option may be a {label, text} object; only its text is script.
         text = " ".join([str(qd.get("question") or qd.get("q") or ""),
                          str(qd.get("explanation") or "")]
-                        + [str(o) for o in opts])
+                        + [str(o.get("text", "") if isinstance(o, dict) else o)
+                           for o in opts])
         if GURMUKHI_RX.search(text):
             return True
     return False
