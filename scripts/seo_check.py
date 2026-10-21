@@ -2116,6 +2116,14 @@ if landing_pages:
             errors.append(f"{f}: study note missing from sitemap ({url})")
         if canon != url and url in locs:
             errors.append(f"{f}: canonicalised copy must stay out of the sitemap ({url})")
+    # Punjabi study pages: a subject name goes before ਦੇ in its oblique form
+    # (ਪੰਜਾਬ ਦੇ ਇਤਿਹਾਸ ਦੇ ਨੋਟਸ, never ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਦੇ ਨੋਟਸ) - see
+    # STUDY_SUBJECT_PA_OF in scripts/build_content.py.
+    for p_ in sorted(ROOT.glob("pa/study-*.html")):
+        h = read_audit_source(p_, encoding="utf-8")
+        for m_ in re.finditer(r"ਦਾ [\u0A00-\u0A7F.]+ ਦੇ (?:ਨੋਟਸ|ਮੁਫ਼ਤ|ਅਧਿਆਇ|ਇਸ)", h):
+            errors.append(f"pa/{p_.name}: Punjabi grammar - '{m_.group(0)}' "
+                          f"needs the oblique form (ਦੇ ... ਦੇ)")
     notes.append(f"study notes: {len(notes_items)} page(s), {n_note_pa} in Punjabi, "
                  f"{n_note_pairs} en/pa pair(s) link both ways")
 

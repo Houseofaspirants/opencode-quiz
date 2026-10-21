@@ -13,7 +13,7 @@
  * skipWaiting() and activate clients.claim(), so the new worker takes over
  * that same visit; nothing reloads the page, so there is no reload loop.
  * ========================================================================== */
-const VERSION = "hoa-v97";
+const VERSION = "hoa-v98";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 

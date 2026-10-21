@@ -5589,6 +5589,24 @@ STUDY_GK_PA = {"gk": "ਜਨਰਲ ਨਾਲਿਜ (GK)", "india-gk": "ਭਾਰ
                "medieval-history": "ਮੱਧਕਾਲੀ ਇਤਿਹਾਸ",
                "modern-history": "ਆਧੁਨਿਕ ਇਤਿਹਾਸ"}
 
+# "<subject> ਦੇ" - each subject's Punjabi name in the oblique form that goes
+# before ਨੋਟਸ / ਭਾਗ / ਅਧਿਆਇ, written per subject because the form depends on
+# the noun: ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ -> ਪੰਜਾਬ ਦੇ ਇਤਿਹਾਸ ਦੇ, but ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ
+# stays ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ ਦੇ. A subject missing here fails the build.
+STUDY_SUBJECT_PA_OF = {
+    "gk": "ਜਨਰਲ ਨਾਲਿਜ (GK) ਦੇ", "computer": "ਕੰਪਿਊਟਰ ਦੇ",
+    "english": "ਅੰਗਰੇਜ਼ੀ ਦੇ", "punjabi": "ਪੰਜਾਬੀ ਦੇ", "reasoning": "ਰੀਜ਼ਨਿੰਗ ਦੇ",
+    "quant": "ਗਣਿਤ ਦੇ", "polity": "ਭਾਰਤੀ ਰਾਜ-ਵਿਵਸਥਾ ਦੇ", "history": "ਇਤਿਹਾਸ ਦੇ",
+    "economy": "ਭਾਰਤੀ ਅਰਥਵਿਵਸਥਾ ਦੇ", "geography": "ਭੂਗੋਲ ਦੇ",
+    "science": "ਵਿਗਿਆਨ ਦੇ", "miscellaneous": "ਫੁਟਕਲ ਵਿਸ਼ਿਆਂ ਦੇ",
+    "history-of-punjab": "ਪੰਜਾਬ ਦੇ ਇਤਿਹਾਸ ਦੇ",
+    "culture-of-punjab": "ਪੰਜਾਬ ਦੇ ਸੱਭਿਆਚਾਰ ਦੇ",
+    "punjab-literature": "ਪੰਜਾਬੀ ਸਾਹਿਤ ਦੇ",
+    "geography-of-punjab": "ਪੰਜਾਬ ਦੇ ਭੂਗੋਲ ਦੇ",
+    "economy-of-punjab": "ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ ਦੇ",
+    "Punjab GK": "ਪੰਜਾਬ ਜੀ.ਕੇ. ਦੇ",
+}
+
 PA_MONTHS = ["ਜਨਵਰੀ", "ਫ਼ਰਵਰੀ", "ਮਾਰਚ", "ਅਪ੍ਰੈਲ", "ਮਈ", "ਜੂਨ", "ਜੁਲਾਈ",
              "ਅਗਸਤ", "ਸਤੰਬਰ", "ਅਕਤੂਬਰ", "ਨਵੰਬਰ", "ਦਸੰਬਰ"]
 
@@ -5882,6 +5900,11 @@ def study_section_page(p, by_file, rows_by_id):
     file = p["file"]
     url = f"{DOMAIN}/{file[:-5]}"
     name = study_subject_label(row, lang)
+    of = STUDY_SUBJECT_PA_OF.get(row["id"], "")
+    if lang == "pa" and not of:
+        err(f"study page {file}: no Punjabi '<subject> ਦੇ' form for "
+            f"{row['id']!r} - add it to STUDY_SUBJECT_PA_OF")
+        of = f"{name} ਦੇ"
     icon = row.get("icon") or ""
     crumbs = [(t["home"], f"{DOMAIN}/", "index.html"),
               (t["study"], f"{DOMAIN}/study", "study.html")]
@@ -5893,9 +5916,9 @@ def study_section_page(p, by_file, rows_by_id):
     items = []
 
     if kind == "gk":
-        title = (f"{name} ਦੇ ਨੋਟਸ - ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK" if lang == "pa"
+        title = (f"{of} ਨੋਟਸ - ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK" if lang == "pa"
                  else f"{name} Study Notes - India GK and Punjab GK")
-        h1 = f"{name} ਦੇ ਪੜ੍ਹਾਈ ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
+        h1 = f"{of} ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
         lead = ("ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK, ਉਸੇ ਤਰਤੀਬ ਵਿੱਚ ਜਿਵੇਂ ਪੇਪਰ ਵਿੱਚ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।"
                 if lang == "pa" else str(row.get("description") or ""))
         blocks = []
@@ -5936,7 +5959,7 @@ def study_section_page(p, by_file, rows_by_id):
             ch = p["chapter"]
             crumbs.append((name, f"{DOMAIN}/{row['pages'][lang][:-5]}", row["pages"][lang]))
             cname = (_chapter_label(ch, by_file) if lang == "pa" else ch["name"])
-            suffix = f" - {name} ਨੋਟਸ" if lang == "pa" else f" - {name} Notes"
+            suffix = f" - {of} ਨੋਟਸ" if lang == "pa" else f" - {name} Notes"
             title = clip_title(cname, 60 - len(suffix)) + suffix
             h1 = cname
             recs = [by_file[x["file"]] for x in ch["parts"] if x["file"] in by_file]
@@ -5950,18 +5973,18 @@ def study_section_page(p, by_file, rows_by_id):
       </div>
     </section>"""]
             count_line = f'{len(recs)} {t["parts"]} &middot; {t["lang"]}'
-            desc_base = (f"{cname}: {name} ਦੇ ਇਸ ਅਧਿਆਇ ਦੇ {len(recs)} ਭਾਗ, ਪੰਜਾਬੀ ਵਿੱਚ।"
+            desc_base = (f"{cname}: {of} ਇਸ ਅਧਿਆਇ ਦੇ {len(recs)} ਭਾਗ, ਪੰਜਾਬੀ ਵਿੱਚ।"
                          if lang == "pa" else
                          f"{cname}: all {len(recs)} parts of this {name} chapter, in English.")
         else:
             # "English notes in English" says nothing twice: the language
             # subjects drop the language phrase.
             same = row["id"] == ("punjabi" if lang == "pa" else "english")
-            title = (f"{name} ਦੇ ਨੋਟਸ{'' if same else ' ਪੰਜਾਬੀ ਵਿੱਚ'} - ਮੁਫ਼ਤ PDF"
+            title = (f"{of} ਨੋਟਸ{'' if same else ' ਪੰਜਾਬੀ ਵਿੱਚ'} - ਮੁਫ਼ਤ PDF"
                      if lang == "pa" else
                      clip(f"{name} Study Notes{'' if same else ' in English'} - Free PDFs", 60))
-            h1 = f"{name} ਦੇ ਪੜ੍ਹਾਈ ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
-            lead = (f"{name} ਦੇ ਅਧਿਆਇ-ਵਾਰ ਨੋਟਸ, ਪੰਜਾਬੀ ਵਿੱਚ। ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।"
+            h1 = f"{of} ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
+            lead = (f"{of} ਅਧਿਆਇ-ਵਾਰ ਨੋਟਸ, ਪੰਜਾਬੀ ਵਿੱਚ। ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।"
                     if lang == "pa" else str(row.get("description") or ""))
             groups, n_notes = {}, 0
             for ch in p["chapters"]:
@@ -5995,7 +6018,7 @@ def study_section_page(p, by_file, rows_by_id):
       </div>
     </section>"""]
             count_line = f'{n_notes} {t["notes"] if n_notes != 1 else t["note"]} &middot; {t["lang"]}'
-            desc_base = (f"{name} ਦੇ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ, ਅਧਿਆਇ-ਵਾਰ।"
+            desc_base = (f"{of} ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ, ਅਧਿਆਇ-ਵਾਰ।"
                          if lang == "pa" else
                          f"Free {name} study notes in English, chapter by chapter.")
     crumbs.append((h1 if kind != "subject" else name, url, ""))
@@ -6075,42 +6098,59 @@ def study_section_page(p, by_file, rows_by_id):
                   **({} if p["indexable"] else {"noindex": True})}
 
 
-def _vercel_value(v):
-    """An exact-match `has` value: Vercel reads it as a regular expression."""
-    return "^" + re.sub(r"([.*+?^${}()|\[\]\\/])", r"\\\1", str(v)) + "$"
+STUDY_QUERY_KEYS = ("subject", "language", "chapter", "region", "cat", "sub", "view")
 
+MIDDLEWARE_JS = """// {marker}
+// Vercel Routing Middleware: 301s an old study.html?subject=...&language=...
+// &chapter=... URL to the static page that replaced it. vercel.json redirects
+// always carry the old query across; this answers with a clean URL instead,
+// keeping only utm_* tags. A query this map does not know falls through to
+// study.html, which renders it (and forwards anything it can).
+const KEYS = {keys};
+const MAP = {map};
 
-STUDY_QUERY_KEYS = ("subject", "language", "chapter", "region", "cat", "sub")
+export const config = {{ matcher: ["/study", "/study.html"] }};
+
+export default function middleware(request) {{
+  const url = new URL(request.url);
+  const sp = url.searchParams;
+  const key = KEYS.filter((k) => sp.has(k)).map((k) => `${{k}}=${{sp.get(k)}}`).join("&");
+  const target = MAP[key];
+  if (!target) return undefined;
+  const out = new URL(target, url.origin);
+  for (const [k, v] of sp) if (k.startsWith("utm_")) out.searchParams.append(k, v);
+  return Response.redirect(out.toString(), 301);
+}}
+"""
 
 
 def study_redirects(redirects):
-    """vercel.json 301s for the old study.html?... URLs, most specific first,
-    each one exact: every key it names must match, every other key must be
-    missing. Written to data/study-redirects.json and merged into vercel.json
-    (entries this builder owns are replaced; every other redirect is kept)."""
-    entries = []
-    for params, target in sorted(redirects, key=lambda x: -len(x[0])):
-        # /study.html reaches /study through cleanUrls first, query intact.
-        for src in ("/study",):
-            entries.append({
-                "source": src,
-                "has": [{"type": "query", "key": k, "value": _vercel_value(v)}
-                        for k, v in params.items()],
-                "missing": [{"type": "query", "key": k}
-                            for k in STUDY_QUERY_KEYS if k not in params],
-                "destination": "/" + target[:-5],
-                "statusCode": 301,
-            })
-    own = ROOT / "data" / "study-redirects.json"
+    """The old study.html?... URLs and their targets, as a 301 map.
+
+    Written to data/study-redirects.json and compiled into middleware.js (see
+    MIDDLEWARE_JS) - exact: the set of old keys present must match one entry,
+    value for value. Any query-matching /study rule an earlier build put in
+    vercel.json is removed, so the two can never disagree."""
+    entries = {}
+    for params, target in redirects:
+        key = "&".join(f"{k}={params[k]}" for k in STUDY_QUERY_KEYS if k in params)
+        entries[key] = "/" + target[:-5]
+    entries = dict(sorted(entries.items()))
     vercel = ROOT / "vercel.json"
     cfg = json.loads(vercel.read_text(encoding="utf-8"))
     kept = [r for r in cfg.get("redirects", [])
             if not (r.get("source") in ("/study", "/study.html") and r.get("has"))]
-    cfg["redirects"] = kept + entries
-    vercel.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
-    own.write_text(json.dumps({"generatedBy": "scripts/build_content.py",
-                               "redirects": entries}, indent=2, ensure_ascii=False) + "\n",
-                   encoding="utf-8")
+    if kept != cfg.get("redirects", []):
+        cfg["redirects"] = kept
+        vercel.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n",
+                          encoding="utf-8")
+    (ROOT / "data" / "study-redirects.json").write_text(
+        json.dumps({"generatedBy": "scripts/build_content.py", "redirects": entries},
+                   indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    (ROOT / "middleware.js").write_text(MIDDLEWARE_JS.format(
+        marker=GENERATED_MARKER,
+        keys=json.dumps(list(STUDY_QUERY_KEYS)),
+        map=json.dumps(entries, indent=2, ensure_ascii=False)), encoding="utf-8")
     return entries
 
 
@@ -8388,7 +8428,7 @@ def main():
     _n_redirects = len(study_redirects(study_old_urls))
     info(f"study pages: {len(study_page_entries)} written "
          f"({sum(1 for e in study_page_entries if not e.get('noindex'))} indexable), "
-         f"{_n_redirects} old study.html URL redirect(s) in vercel.json")
+         f"{_n_redirects} old study.html URL redirect(s) in middleware.js")
 
     # ---- stale output removal --------------------------------------------
     # Every writer above has registered its files in `expected` by now, so a
