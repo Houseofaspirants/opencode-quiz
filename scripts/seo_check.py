@@ -1716,6 +1716,17 @@ notes.append(f"aeo: {len(AEO_PAGES)} pages answer-first, {vis_q} FAQ pairs mirro
 # the HTML on disk - never from SEO-LANDING-REPORT.md prose. Each landing file
 # is already in PAGES, so title/description/canonical uniqueness, robots,
 # chrome, resource hints and schema-family rules above apply to them too.
+_SLUG_LANG = re.compile(r"\s*-\s*mcq\s*-\s*(?:en|pa)\s*(?=-|$)", re.I)
+
+
+def set_slug(tid):
+    """URL form of a set id - the same rule as build_landing_pages.set_slug."""
+    tid = str(tid)
+    if re.fullmatch(r"[a-z0-9-]+", tid):
+        return tid
+    return re.sub(r"[^a-z0-9]+", "-", _SLUG_LANG.sub("", tid).lower()).strip("-")
+
+
 MIN_INTRO_WORDS = {"subject": 250, "category": 150, "topic": 60, "quiz": 60,
                    "exam": 90, "cluster": 100}
 
@@ -1845,7 +1856,7 @@ if landing_pages:
         # below), so demanding it here too would force the subject page to
         # duplicate the category's contents. Top-level topics remain the
         # subject's own children and are still expected here.
-        direct_topics = {f"topic-{sid}-{tid}.html"
+        direct_topics = {f"topic-{sid}-{set_slug(tid)}.html"
                          for (s_id, tid), t in topic_by_key.items()
                          if s_id == sid and not t.get("category")}
         want = {c for c in links_of.get(r["file"], [])
@@ -1864,7 +1875,7 @@ if landing_pages:
         cid = t.get("category")
         if not cid:
             continue
-        parent, child = f"category-{s_id}-{cid}.html", f"topic-{s_id}-{tid}.html"
+        parent, child = f"category-{s_id}-{cid}.html", f"topic-{s_id}-{set_slug(tid)}.html"
         if parent in lpages and child in lpages and child not in links_of.get(parent, []):
             errors.append(f"{parent}: Category->Topic links missing [{child}]")
 
@@ -1898,8 +1909,8 @@ if landing_pages:
         for label in ("Question count", "Estimated time", "Difficulty", "Last updated"):
             if f'<div class="stat-label">{label}</div>' not in h:
                 errors.append(f"{f}: topic fact '{label}' missing")
-        if f"quiz-{sid}-{tid}.html" not in links_of.get(f, []):
-            errors.append(f"{f}: Topic->Quiz link missing (quiz-{sid}-{tid}.html)")
+        if f"quiz-{sid}-{set_slug(tid)}.html" not in links_of.get(f, []):
+            errors.append(f"{f}: Topic->Quiz link missing (quiz-{sid}-{set_slug(tid)}.html)")
         if f"subject-{sid}.html" not in links_of.get(f, []):
             errors.append(f"{f}: Topic->Subject link missing")
         # Education Q&A: the Quiz node mirrors the visible question bank -
@@ -1944,7 +1955,7 @@ if landing_pages:
                 errors.append(f"{f}: {label} missing")
         if f"subject-{sid}.html" not in links_of.get(f, []):
             errors.append(f"{f}: Quiz->Subject link missing")
-        if f"topic-{sid}-{tid}.html" not in links_of.get(f, []):
+        if f"topic-{sid}-{set_slug(tid)}.html" not in links_of.get(f, []):
             errors.append(f"{f}: Quiz->Topic link missing")
         # seed must be emitted BEFORE quiz.js so the engine boots from it
         seed_at, engine_at = h.find("__HOA_QUIZ_SEED"), h.find("assets/js/quiz.js")
@@ -2073,7 +2084,7 @@ if landing_pages:
             by_cat = {c.get("id"): c for c in (s.get("categories") or [])}
             for t in (s.get("topics") or []):
                 c = by_cat.get(t.get("category"))
-                tf = f"topic-{sid}-{t['id']}.html"
+                tf = f"topic-{sid}-{set_slug(t['id'])}.html"
                 if tf not in lpages:
                     continue
                 if c and c["id"] in cat_ids and len(own) < 4 and tf not in own:
@@ -2140,6 +2151,27 @@ if landing_pages:
     for u in locs:
         if "?" in u:
             errors.append(f"sitemap: query-string URL is a duplicate-content risk: {u}")
+        if re.search(r"\s", u):
+            errors.append(f"sitemap: URL contains whitespace (invalid in a sitemap): {u!r}")
+
+    # --- renamed pages: every old URL has its exact 301 ---------------------
+    # build_landing_pages.py lists the redirects it owns in
+    # data/landing-redirects.json and folds them into vercel.json; each must be
+    # there, as a 301, pointing at a page that is in the sitemap.
+    _red_path = ROOT / "data" / "landing-redirects.json"
+    if _red_path.exists():
+        owned = json.loads(read_audit_source(_red_path, encoding="utf-8")).get("redirects", [])
+        live = {(r.get("source"), r.get("destination"), r.get("statusCode"))
+                for r in json.loads(read_audit_source(ROOT / "vercel.json",
+                                                      encoding="utf-8")).get("redirects", [])}
+        for r in owned:
+            if (r["source"], r["destination"], 301) not in live:
+                errors.append(f"vercel.json: missing 301 {r['source']} -> {r['destination']}")
+            if f"{DOMAIN}{r['destination']}" not in locs:
+                errors.append(f"redirect target not in sitemap: {r['destination']}")
+            if (ROOT / (r["source"].lstrip("/") + ".html")).exists():
+                errors.append(f"renamed page still on disk: {r['source']}.html")
+        notes.append(f"redirects: {len(owned)} exact 301(s) for renamed pages")
 
     # --- SEO-LANDING-REPORT.md must describe THIS build -------------------
     # The report is a deliverable: a stale or hand-edited count is as bad as no

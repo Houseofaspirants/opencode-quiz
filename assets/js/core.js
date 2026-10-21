@@ -217,12 +217,12 @@ const HOA = (() => {
     "Toggle theme": "ਥੀਮ ਬਦਲੋ",
     "Join Telegram": "ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ",
     "Start Expected MCQs": "ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
-    "Study Notes": "ਅਧਿਆਨ ਨੋਟਾਂ",
+    "Study Notes": "ਅਧਿਐਨ ਨੋਟਾਂ",
     /* mobile bottom bar */
     "MCQs": "ਸਵਾਲ",
     "Notes": "ਨੋਟਸ",
     /* Study menu + footer column (content hub navigation) */
-    "Study": "ਅਧਿਆਨ",
+    "Study": "ਅਧਿਐਨ",
     "Current Affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Monthly Magazine": "ਮਹੀਨਾਵਾਰੀ ਮੈਗਜ਼ੀਨ",
     "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
@@ -248,7 +248,7 @@ const HOA = (() => {
     "Live Guidance": "ਲਾਈਵ ਗਾਈਡੈਂਸ",
     "Full Tests": "ਫੁਲ ਟੈਸਟ",
     "By subject": "ਵਿਸ਼ੇ ਅਨੁਸਾਰ",
-    "Study material": "ਅਧਿਆਨ ਸਮੱਗਰੀ",
+    "Study material": "ਅਧਿਐਨ ਸਮੱਗਰੀ",
     "Test types": "ਟੈਸਟ ਦੀਆਂ ਕਿਸਮਾਂ",
 
     /* --- footer ---------------------------------------------------------- */
@@ -264,7 +264,7 @@ const HOA = (() => {
       "ਇੱਕੋਜਿਹੇ ਹਜ਼ਾਰਾਂ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਮਿਲ ਕੇ ਤਿਆਰੀ ਕਰੋ।",
     "House of Aspirants Telegram Community":
       "House of Aspirants ਟੈਲੀਗ੍ਰਾਮ ਕਮਿਊਨਿਟੀ",
-    "Free Study Material": "ਮੁਫ਼ਤ ਅਧਿਆਨ ਸਮੱਗਰੀ",
+    "Free Study Material": "ਮੁਫ਼ਤ ਅਧਿਐਨ ਸਮੱਗਰੀ",
     "Current Affairs Magazine": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਮੈਗਜ਼ੀਨ",
     "Personal Notes": "ਨਿੱਜੀ ਨੋਟਾਂ",
     "Weekly Live Guidance": "ਹਫ਼ਤਾਵਾਰੀ ਲਾਈਵ ਮਾਰਗਦਰਸ਼ਨ",
@@ -272,7 +272,7 @@ const HOA = (() => {
     "Daily Expected MCQs": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs",
     "Book Recommendations": "ਕਿਤਾਬਾਂ ਦੀਆਂ ਸਿਫਾਰਸ਼ਾਂ",
     "House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.":
-      "House of Aspirants ਪੰਜਾਬ ਦੇ ਅਸਪਿਰੈਂਟਾਂ ਨੂੰ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਗੁਣਵੱਤਾ ਵਾਲੀ ਅਧਿਆਨ ਸਮੱਗਰੀ ਨਾਲ ਭਰੋਸੇ ਨਾਲ ਤਿਆਰੀ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹੈ।",
+      "House of Aspirants ਪੰਜਾਬ ਦੇ ਅਸਪਿਰੈਂਟਾਂ ਨੂੰ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਗੁਣਵੱਤਾ ਵਾਲੀ ਅਧਿਐਨ ਸਮੱਗਰੀ ਨਾਲ ਭਰੋਸੇ ਨਾਲ ਤਿਆਰੀ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਨ ਲਈ ਸਮਰਪਿਤ ਹੈ।",
 
     /* --- homepage -------------------------------------------------------- */
     "Quick Start": "ਤੁਰੰਤ ਸ਼ੁਰੂਆਤ",
@@ -294,7 +294,7 @@ const HOA = (() => {
     "A fresh mixed challenge every single day.":
       "ਹਰ ਰੋਜ਼ ਨਵੀਂ ਮਿਕਸਡ ਚੁਣੌਤੀ।",
     "Free guides, study plans and revision strategy.":
-      "ਮੁਫ਼ਤ ਗਾਈਡਾਂ, ਅਧਿਆਨ ਯੋਜਨਾਵਾਂ ਅਤੇ ਰਿਵਿਜ਼ਨ ਰਣਨੀਤੀ।",
+      "ਮੁਫ਼ਤ ਗਾਈਡਾਂ, ਅਧਿਐਨ ਯੋਜਨਾਵਾਂ ਅਤੇ ਰਿਵਿਜ਼ਨ ਰਣਨੀਤੀ।",
     "See how your scores rank against other aspirants.":
       "ਵੇਖੋ ਤੁਹਾਡੇ ਸਕੋਰ ਹੋਰ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਕਿੱਥੇ ਹਨ।",
     "Daily MCQs, PDFs, current affairs and recruitment alerts — free.":
@@ -324,11 +324,11 @@ const HOA = (() => {
     "Start in Punjabi →": "ਪੰਜਾਬੀ ਵਿੱਚ ਸ਼ੁਰੂ ਕਰੋ →",
     "Practice in English →": "ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਭਿਆਸ ਕਰੋ →",
     "Start Daily Expected MCQs": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs ਸ਼ੁਰੂ ਕਰੋ",
-    "Learning Features": "ਅਧਿਆਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
+    "Learning Features": "ਅਧਿਐਨ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ",
     "Premium MCQs in Punjabi and English":
       "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਪ੍ਰੀਮੀਅਮ MCQs",
     "MCQs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ MCQs",
-    "Study Notes in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਧਿਆਨ ਨੋਟਾਂ",
+    "Study Notes in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਅਧਿਐਨ ਨੋਟਾਂ",
     "Current Affairs in Punjabi & English": "ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Daily Expected MCQ Practice": "ਰੋਜ਼ਾਨਾ ਸੰਭਾਵਿਤ MCQs ਅਭਿਆਸ",
     "Punjab Police Exam Preparation": "ਪੰਜਾਬ ਪੁਲਿਸ ਪ੍ਰੀਖਿਆ ਦੀ ਤਿਆਰੀ",

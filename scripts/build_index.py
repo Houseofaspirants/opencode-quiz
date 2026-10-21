@@ -227,6 +227,13 @@ def questions_of(data):
 def variant_title(data, stem_id, part, set_topic):
     """The title one translation of a set carries - the rule the record loop
     has always used for the primary file, applied to every translation too."""
+    # A file that names its own chapter and part ({chapter: {title}, part}) is
+    # titled from them: "Number System MCQ – Part 1". Same rule in build-index.mjs.
+    if isinstance(data, dict) and isinstance(data.get("chapter"), dict):
+        ch_title = str(data["chapter"].get("title") or "").strip()
+        ch_part = data.get("part")
+        if ch_title and isinstance(ch_part, int) and not isinstance(ch_part, bool) and ch_part > 0:
+            return f"{ch_title} MCQ – Part {ch_part}"
     if isinstance(data, dict):
         name = data.get("topic") or data.get("title") or humanize(stem_id)
     else:

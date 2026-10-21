@@ -259,6 +259,13 @@ function paTitle(name) {
 /** The title one translation of a set carries - the rule the record loop has
  *  always used for the primary file, applied to every translation too. */
 function variantTitle(data, stemId, part, setTopic) {
+  // A file that names its own chapter and part ({chapter: {title}, part}) is
+  // titled from them: "Number System MCQ – Part 1". Same rule in build_index.py.
+  if (data && typeof data === "object" && data.chapter && typeof data.chapter === "object") {
+    const chTitle = String(data.chapter.title || "").trim();
+    const chPart = data.part;
+    if (chTitle && Number.isInteger(chPart) && chPart > 0) return `${chTitle} MCQ – Part ${chPart}`;
+  }
   let name =
     data && typeof data === "object"
       ? data.topic || data.title || humanize(stemId)
