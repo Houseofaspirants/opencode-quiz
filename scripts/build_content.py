@@ -4606,7 +4606,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
                 lang="pa" if record["lang"] == "pa" else "en",
                 alternates=alternates,
                 image=str(record.get("thumbnail") or record.get("cover") or ""))
-    if record.get("studySubject"):
+    if record.get("studySubject") or record.get("pageLang") == "pa":
         html = study_note_head(html, record)
     html += f"""  <main id="main">
     <section class="page-hero">
@@ -5652,6 +5652,36 @@ def _study_chapter_slug(chapter):
     slug = study_material.page_slug(" ".join(parts))
     return slug if re.search(r"[a-z]", slug) else (
         pdf_slug_from_name(" ".join(parts)) or slug)
+
+
+CA_MONTHS_PA = {"january": "ਜਨਵਰੀ", "february": "ਫ਼ਰਵਰੀ", "march": "ਮਾਰਚ",
+               "april": "ਅਪ੍ਰੈਲ", "may": "ਮਈ", "june": "ਜੂਨ", "july": "ਜੁਲਾਈ",
+               "august": "ਅਗਸਤ", "september": "ਸਤੰਬਰ", "october": "ਅਕਤੂਬਰ",
+               "november": "ਨਵੰਬਰ", "december": "ਦਸੰਬਰ"}
+
+
+def stamp_ca_languages(records):
+    """A current-affairs PDF filed under a `punjabi` folder is a Punjabi page:
+    <html lang="pa">, Punjabi interface, and a Gurmukhi title and description
+    built from the month in its file name. Its URL stays where it is."""
+    for rec in records:
+        parts = [x.strip().lower() for x in Path(str(rec.get("path") or "")).parts]
+        if not rec.get("pdfDrop") or "punjabi" not in parts:
+            continue
+        rec["pageLang"] = "pa"
+        stem = Path(rec["path"]).stem.lower()
+        month = next((m for m in CA_MONTHS_PA if m in stem), "")
+        year = (re.search(r"20\d{2}", stem) or [""])[0] if month else ""
+        if month:
+            title = f"ਕਰੰਟ ਅਫੇਅਰਜ਼ {CA_MONTHS_PA[month]} {year} PDF (ਪੰਜਾਬੀ)".replace("  ", " ")
+            desc = (f"{title}: ਪੰਜਾਬ ਪੁਲਿਸ, PSSSB ਅਤੇ PPSC ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮਹੀਨੇ ਦੇ "
+                    f"ਸਾਰੇ ਮਹੱਤਵਪੂਰਨ ਕਰੰਟ ਅਫੇਅਰਜ਼ ਪੰਜਾਬੀ ਵਿੱਚ। ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ।")
+            for pad in (" House of Aspirants ਵੱਲੋਂ।", " ਬਿਨਾਂ ਸਾਈਨ-ਅੱਪ।", " ਮੁਫ਼ਤ।"):
+                if len(desc) < 140 and len(desc) + len(pad) <= 160:
+                    desc += pad
+            rec["title"] = rec["meta"]["title"] = title[:60]
+            rec["description"] = rec["meta"]["description"] = desc[:160]
+            rec["search"] = f'{rec.get("search", "")} {title} {desc}'.lower()
 
 
 def stamp_study_pages(records):
@@ -8181,6 +8211,7 @@ def main():
     stamp_study_fields(all_records[STUDY_DIR])
     stamp_study_languages(all_records[STUDY_DIR])
     stamp_study_pages(all_records[STUDY_DIR])
+    stamp_ca_languages(all_records.get("current-affairs", []))
     dedupe_pdf_titles(all_records)
     link_related_pdfs(all_records, punjabi)
     # Part order and the chapters beside them: derived from the records above,

@@ -21,7 +21,7 @@
  },
  "counts": {
   "nodes": 626,
-  "edges": 3664,
+  "edges": 3666,
   "silos": 35,
   "clusters": 98,
   "pillars": 34
@@ -838,7 +838,7 @@
    "url": "/ca-current-affairs-august-2026-punjabi.html",
    "type": "current-affairs",
    "template": "current-affairs",
-   "title": "Current Affairs August 2026 Punjabi",
+   "title": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 PDF (ਪੰਜਾਬੀ)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -910,7 +910,7 @@
    "url": "/ca-current-affairs-september-2026-punjabi.html",
    "type": "current-affairs",
    "template": "current-affairs",
-   "title": "Current Affairs September 2026 Punjabi",
+   "title": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਸਤੰਬਰ 2026 PDF (ਪੰਜਾਬੀ)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -11637,6 +11637,12 @@
   },
   {
    "from": "ca-current-affairs-september-2026-english.html",
+   "to": "ca-current-affairs-august-2026-punjabi.html",
+   "rel": "related-current-affairs",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-september-2026-english.html",
    "to": "magazine.html",
    "rel": "related-magazine",
    "weight": 1
@@ -11649,7 +11655,7 @@
   },
   {
    "from": "ca-current-affairs-september-2026-english.html",
-   "to": "ca-current-affairs-august-2026-punjabi.html",
+   "to": "ca-current-affairs-july-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -11691,13 +11697,13 @@
   },
   {
    "from": "ca-current-affairs-september-2026-punjabi.html",
-   "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-current-affairs-september-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "subject-current-affairs.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11721,6 +11727,12 @@
   },
   {
    "from": "ca-current-affairs-september-2026-punjabi.html",
+   "to": "ca-current-affairs-august-2026-punjabi.html",
+   "rel": "related-current-affairs",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-september-2026-punjabi.html",
    "to": "magazine.html",
    "rel": "related-magazine",
    "weight": 1
@@ -11733,7 +11745,7 @@
   },
   {
    "from": "ca-current-affairs-september-2026-punjabi.html",
-   "to": "ca-current-affairs-august-2026-punjabi.html",
+   "to": "ca-current-affairs-july-2026-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
