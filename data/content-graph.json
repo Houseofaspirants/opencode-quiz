@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 606,
-  "edges": 3541,
+  "nodes": 596,
+  "edges": 3477,
   "silos": 35,
   "clusters": 98,
   "pillars": 34
@@ -2742,8 +2742,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
-   "url": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+   "id": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+   "url": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2754,8 +2754,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
-   "url": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+   "id": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+   "url": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2766,44 +2766,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "url": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-   "url": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-   "url": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
-   "url": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+   "id": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+   "url": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4986,8 +4950,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-reasoning-analogy-notes-english",
-   "url": "/material-reasoning-analogy-notes-english",
+   "id": "material-reasoning-analogy-notes-punjabi-english",
+   "url": "/material-reasoning-analogy-notes-punjabi-english",
    "type": "document",
    "template": "",
    "title": "",
@@ -4998,11 +4962,11 @@
    "hub": ""
   },
   {
-   "id": "material-reasoning-analogy-notes-english.html",
-   "url": "/material-reasoning-analogy-notes-english.html",
+   "id": "material-reasoning-analogy-notes-punjabi-english.html",
+   "url": "/material-reasoning-analogy-notes-punjabi-english.html",
    "type": "study-material",
    "template": "",
-   "title": "Chapter 2: Analogy (English)",
+   "title": "Analogy Notes PDF - ਸਮਾਨਤਾ (Punjabi + English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5010,8 +4974,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-reasoning-analogy-notes-punjabi",
-   "url": "/material-reasoning-analogy-notes-punjabi",
+   "id": "material-reasoning-number-series-notes-punjabi-english",
+   "url": "/material-reasoning-number-series-notes-punjabi-english",
    "type": "document",
    "template": "",
    "title": "",
@@ -5022,11 +4986,11 @@
    "hub": ""
   },
   {
-   "id": "material-reasoning-analogy-notes-punjabi.html",
-   "url": "/material-reasoning-analogy-notes-punjabi.html",
+   "id": "material-reasoning-number-series-notes-punjabi-english.html",
+   "url": "/material-reasoning-number-series-notes-punjabi-english.html",
    "type": "study-material",
    "template": "",
-   "title": "Chapter 2: Analogy (Punjabi)",
+   "title": "Number Series Notes PDF - ਸੰਖਿਆ ਲੜੀ (Punjabi + English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5034,8 +4998,8 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-reasoning-number-series-notes-english",
-   "url": "/material-reasoning-number-series-notes-english",
+   "id": "material-reasoning-verbal-classification-notes-punjabi-english",
+   "url": "/material-reasoning-verbal-classification-notes-punjabi-english",
    "type": "document",
    "template": "",
    "title": "",
@@ -5046,83 +5010,11 @@
    "hub": ""
   },
   {
-   "id": "material-reasoning-number-series-notes-english.html",
-   "url": "/material-reasoning-number-series-notes-english.html",
+   "id": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "url": "/material-reasoning-verbal-classification-notes-punjabi-english.html",
    "type": "study-material",
    "template": "",
-   "title": "Chapter 1: Number Series (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-reasoning-number-series-notes-punjabi",
-   "url": "/material-reasoning-number-series-notes-punjabi",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-reasoning-number-series-notes-punjabi.html",
-   "url": "/material-reasoning-number-series-notes-punjabi.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 1: Number Series (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-reasoning-verbal-classification-notes-english",
-   "url": "/material-reasoning-verbal-classification-notes-english",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-reasoning-verbal-classification-notes-english.html",
-   "url": "/material-reasoning-verbal-classification-notes-english.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 3: Verbal Classifications (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-reasoning-verbal-classification-notes-punjabi",
-   "url": "/material-reasoning-verbal-classification-notes-punjabi",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "url": "/material-reasoning-verbal-classification-notes-punjabi.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 3: Verbal Classifications (Punjabi)",
+   "title": "Verbal Classification - ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ (Punjabi + English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5731,18 +5623,6 @@
   {
    "id": "pa/study-punjabi.html",
    "url": "/pa/study-punjabi.html",
-   "type": "page",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "pa/study-reasoning.html",
-   "url": "/pa/study-reasoning.html",
    "type": "page",
    "template": "",
    "title": "",
@@ -8511,37 +8391,19 @@
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-reasoning.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10575,37 +10437,19 @@
   },
   {
    "from": "archives.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16053,7 +15897,7 @@
   },
   {
    "from": "material-important-articles-of-indian-constitution-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16137,13 +15981,13 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16227,13 +16071,13 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16323,7 +16167,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16413,7 +16257,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16503,25 +16347,19 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-number-series-notes-english.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16605,13 +16443,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16695,13 +16533,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19154,578 +18992,272 @@
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "quiz-reasoning-02-analogy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "study-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "quiz-reasoning-02-analogy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-analogy-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "ca-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "material-reasoning-number-series-notes-english",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "quiz-reasoning-01-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "study-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "magazine.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "quiz-reasoning-01-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "study-material.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-number-series-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "ca-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "material-reasoning-verbal-classification-notes-english",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "study-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "index.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "mock.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "quiz.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "material-reasoning-number-series-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "ca-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19809,13 +19341,13 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-english.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19899,13 +19431,13 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20043,13 +19575,13 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -22203,7 +21735,25 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -22263,37 +21813,19 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -22318,6 +21850,12 @@
   {
    "from": "pdfs.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22371,6 +21909,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -22402,6 +21946,12 @@
   {
    "from": "pdfs.html",
    "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22449,37 +21999,19 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22809,7 +22341,7 @@
   },
   {
    "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -22887,7 +22419,7 @@
   },
   {
    "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -22965,7 +22497,7 @@
   },
   {
    "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -25491,13 +25023,13 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -27957,37 +27489,19 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28407,37 +27921,19 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28545,7 +28041,25 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28605,37 +28119,19 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28666,6 +28162,12 @@
   {
    "from": "study-notes.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28719,6 +28221,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28750,6 +28258,12 @@
   {
    "from": "study-notes.html",
    "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28797,37 +28311,19 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-reasoning-analogy-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "material-reasoning-analogy-notes-punjabi.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "material-reasoning-number-series-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-reasoning-number-series-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-reasoning-verbal-classification-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

@@ -562,51 +562,17 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 6,
+      "count": 3,
       "newest": "2026-10-22",
-      "totalSize": 32605842,
+      "totalSize": 16302921,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 3,
-          "chapters": [
-            {
-              "id": "01 - Number Series",
-              "name": "Chapter 1: Number Series",
-              "parts": [
-                {
-                  "file": "material-reasoning-number-series-notes-punjabi.html",
-                  "n": 1
-                }
-              ],
-              "pages": 159
-            },
-            {
-              "id": "02 - Analogy",
-              "name": "Chapter 2: Analogy",
-              "parts": [
-                {
-                  "file": "material-reasoning-analogy-notes-punjabi.html",
-                  "n": 1
-                }
-              ],
-              "pages": 217
-            },
-            {
-              "id": "03 - Verbal Classifications",
-              "name": "Chapter 3: Verbal Classifications",
-              "parts": [
-                {
-                  "file": "material-reasoning-verbal-classification-notes-punjabi.html",
-                  "n": 1
-                }
-              ],
-              "pages": 133
-            }
-          ]
+          "count": 0,
+          "chapters": []
         },
         {
           "id": "en",
@@ -620,7 +586,7 @@
               "name": "Chapter 1: Number Series",
               "parts": [
                 {
-                  "file": "material-reasoning-number-series-notes-english.html",
+                  "file": "material-reasoning-number-series-notes-punjabi-english.html",
                   "n": 1
                 }
               ],
@@ -631,7 +597,7 @@
               "name": "Chapter 2: Analogy",
               "parts": [
                 {
-                  "file": "material-reasoning-analogy-notes-english.html",
+                  "file": "material-reasoning-analogy-notes-punjabi-english.html",
                   "n": 1
                 }
               ],
@@ -642,7 +608,7 @@
               "name": "Chapter 3: Verbal Classifications",
               "parts": [
                 {
-                  "file": "material-reasoning-verbal-classification-notes-english.html",
+                  "file": "material-reasoning-verbal-classification-notes-punjabi-english.html",
                   "n": 1
                 }
               ],
@@ -651,14 +617,14 @@
           ]
         }
       ],
-      "chapters": 6,
+      "chapters": 3,
       "counts": {
         "en": 3,
-        "pa": 3
+        "pa": 0
       },
       "pages": {
         "en": "study-reasoning.html",
-        "pa": "pa/study-reasoning.html"
+        "pa": "study-reasoning.html"
       },
       "page": "study-reasoning.html"
     },
@@ -2562,6 +2528,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 76,
+  "total": 73,
   "generatedBy": "scripts/study_material.py"
 }

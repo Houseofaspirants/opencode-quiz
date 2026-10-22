@@ -21,6 +21,11 @@
       "statusCode": 301
     },
     {
+      "source": "/pa/study-reasoning",
+      "destination": "/study-reasoning",
+      "statusCode": 301
+    },
+    {
       "source": "/study-current-affairs",
       "destination": "/current-affairs",
       "statusCode": 301
@@ -28,6 +33,66 @@
     {
       "source": "/study-punjabi",
       "destination": "/pa/study-punjabi",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-number-series-notes-english",
+      "destination": "/material-reasoning-number-series-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-number-series-notes-punjabi",
+      "destination": "/material-reasoning-number-series-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-analogy-notes-english",
+      "destination": "/material-reasoning-analogy-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-analogy-notes-punjabi",
+      "destination": "/material-reasoning-analogy-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-verbal-classification-notes-english",
+      "destination": "/material-reasoning-verbal-classification-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/material-reasoning-verbal-classification-notes-punjabi",
+      "destination": "/material-reasoning-verbal-classification-notes-punjabi-english",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+      "statusCode": 301
+    },
+    {
+      "source": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -517,62 +582,62 @@
     },
     {
       "source": "/material-reasoning-en-ch01",
-      "destination": "/material-reasoning-number-series-notes-english",
+      "destination": "/material-reasoning-number-series-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
-      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/material-reasoning-en-ch02",
-      "destination": "/material-reasoning-analogy-notes-english",
+      "destination": "/material-reasoning-analogy-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
-      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/material-reasoning-en-ch03",
-      "destination": "/material-reasoning-verbal-classification-notes-english",
+      "destination": "/material-reasoning-verbal-classification-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
-      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
+      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/material-reasoning-pa-ch01",
-      "destination": "/material-reasoning-number-series-notes-punjabi",
+      "destination": "/material-reasoning-number-series-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
-      "destination": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/material-reasoning-pa-ch02",
-      "destination": "/material-reasoning-analogy-notes-punjabi",
+      "destination": "/material-reasoning-analogy-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
-      "destination": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/material-reasoning-pa-ch03",
-      "destination": "/material-reasoning-verbal-classification-notes-punjabi",
+      "destination": "/material-reasoning-verbal-classification-notes-punjabi-english",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
-      "destination": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
+      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
