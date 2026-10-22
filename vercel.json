@@ -61,6 +61,36 @@
       "permanent": true
     },
     {
+      "source": "/material-01-number-series",
+      "destination": "/material-reasoning-en-ch01",
+      "permanent": true
+    },
+    {
+      "source": "/material-01-number-series-2",
+      "destination": "/material-reasoning-pa-ch01",
+      "permanent": true
+    },
+    {
+      "source": "/material-02-analogy",
+      "destination": "/material-reasoning-en-ch02",
+      "permanent": true
+    },
+    {
+      "source": "/material-02-analogy-2",
+      "destination": "/material-reasoning-pa-ch02",
+      "permanent": true
+    },
+    {
+      "source": "/material-03-verbal-classifications",
+      "destination": "/material-reasoning-en-ch03",
+      "permanent": true
+    },
+    {
+      "source": "/material-03-verbal-classifications-2",
+      "destination": "/material-reasoning-pa-ch03",
+      "permanent": true
+    },
+    {
       "source": "/pa/quiz-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/pa/quiz-quant-01-number-system-part-1",
       "statusCode": 301
@@ -138,6 +168,46 @@
     {
       "source": "/pa/quiz-reasoning-01%20-%20Number%20Series%20-%20MCQ%20-%20EN%20-%20Part%204",
       "destination": "/pa/quiz-reasoning-01-number-series-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02 - Analogy - MCQ - EN - Part 1",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%201",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02 - Analogy - MCQ - EN - Part 2",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%202",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02 - Analogy - MCQ - EN - Part 3",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%203",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02 - Analogy - MCQ - EN - Part 4",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
+      "destination": "/pa/quiz-reasoning-02-analogy-part-4",
       "statusCode": 301
     },
     {
@@ -221,6 +291,46 @@
       "statusCode": 301
     },
     {
+      "source": "/pa/topic-reasoning-02 - Analogy - MCQ - EN - Part 1",
+      "destination": "/pa/topic-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%201",
+      "destination": "/pa/topic-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02 - Analogy - MCQ - EN - Part 2",
+      "destination": "/pa/topic-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%202",
+      "destination": "/pa/topic-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02 - Analogy - MCQ - EN - Part 3",
+      "destination": "/pa/topic-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%203",
+      "destination": "/pa/topic-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02 - Analogy - MCQ - EN - Part 4",
+      "destination": "/pa/topic-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
+      "destination": "/pa/topic-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
       "source": "/quiz-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/quiz-quant-01-number-system-part-1",
       "statusCode": 301
@@ -301,6 +411,46 @@
       "statusCode": 301
     },
     {
+      "source": "/quiz-reasoning-02 - Analogy - MCQ - EN - Part 1",
+      "destination": "/quiz-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%201",
+      "destination": "/quiz-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02 - Analogy - MCQ - EN - Part 2",
+      "destination": "/quiz-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%202",
+      "destination": "/quiz-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02 - Analogy - MCQ - EN - Part 3",
+      "destination": "/quiz-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%203",
+      "destination": "/quiz-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02 - Analogy - MCQ - EN - Part 4",
+      "destination": "/quiz-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
+      "destination": "/quiz-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
       "source": "/topic-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/topic-quant-01-number-system-part-1",
       "statusCode": 301
@@ -378,6 +528,46 @@
     {
       "source": "/topic-reasoning-01%20-%20Number%20Series%20-%20MCQ%20-%20EN%20-%20Part%204",
       "destination": "/topic-reasoning-01-number-series-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02 - Analogy - MCQ - EN - Part 1",
+      "destination": "/topic-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%201",
+      "destination": "/topic-reasoning-02-analogy-part-1",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02 - Analogy - MCQ - EN - Part 2",
+      "destination": "/topic-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%202",
+      "destination": "/topic-reasoning-02-analogy-part-2",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02 - Analogy - MCQ - EN - Part 3",
+      "destination": "/topic-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%203",
+      "destination": "/topic-reasoning-02-analogy-part-3",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02 - Analogy - MCQ - EN - Part 4",
+      "destination": "/topic-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
+      "destination": "/topic-reasoning-02-analogy-part-4",
       "statusCode": 301
     }
   ],

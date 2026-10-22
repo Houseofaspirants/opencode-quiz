@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "Analogy"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-076",
+      "number": 76,
+      "question": "A training chart requires worker → tool → operation, as in Goldsmith : Crucible : Melting. Which row should Jaspreet approve?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Welder : Welding : Electrode holder"
+        },
+        {
+          "label": "B",
+          "text": "Woodcarver : Chisel : Carving"
+        },
+        {
+          "label": "C",
+          "text": "Mason : Wall : Building"
+        },
+        {
+          "label": "D",
+          "text": "Plumber : Pipe : Spanner"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A woodcarver uses a chisel for carving. The other rows place a material, operation or product where the tool should be."
+    },
+    {
+      "id": "02-077",
+      "number": 77,
+      "question": "Each input is divided by the same fixed integer: 91 : 13 and 119 : 17. What is the partner of 161?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "91/13=119/17=7, so divide by 7. Thus 161/7=23."
+    },
+    {
+      "id": "02-078",
+      "number": 78,
+      "question": "FJMR → MFRJ and BGLP → LBPG reveal a fixed rearrangement of four positions. Which group is the image of HNQV?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NHVQ"
+        },
+        {
+          "label": "B",
+          "text": "QHVN"
+        },
+        {
+          "label": "C",
+          "text": "VQNH"
+        },
+        {
+          "label": "D",
+          "text": "QVHN"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Read original positions in the order 3, 1, 4, 2. From HNQV that gives Q, H, V, N."
+    },
+    {
+      "id": "02-079",
+      "number": 79,
+      "question": "The first pair means “difficult to understand : clear”: Obscure : Lucid. Which pair has the same opposing relationship?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ambiguous : Unambiguous"
+        },
+        {
+          "label": "B",
+          "text": "Vague : Indefinite"
+        },
+        {
+          "label": "C",
+          "text": "Puzzling : Confusing"
+        },
+        {
+          "label": "D",
+          "text": "Explicit : Definite"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Obscure and lucid oppose unclear and clear meanings. Ambiguous and unambiguous also contrast uncertainty of meaning with clarity."
+    },
+    {
+      "id": "02-080",
+      "number": 80,
+      "question": "Digit reversal and digit multiplication are both used in (24, 34) and (36, 45). The second entry equals the reversed first entry minus its digit product. Which pair follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(48, 54)"
+        },
+        {
+          "label": "B",
+          "text": "(68, 40)"
+        },
+        {
+          "label": "C",
+          "text": "(29, 76)"
+        },
+        {
+          "label": "D",
+          "text": "(57, 40)"
+        }
+      ],
+      "answer": "D",
+      "explanation": "For 57, reverse to 75 and subtract 5×7=35: 75−35=40. The other pairs fail the same calculation."
+    },
+    {
+      "id": "02-081",
+      "number": 81,
+      "question": "An animal analogy card groups Deer : Fawn with Cat : Kitten. Which description explains both links, without confusing a sound or a home with a young one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adult animal → Its young one"
+        },
+        {
+          "label": "B",
+          "text": "Male animal → Female animal"
+        },
+        {
+          "label": "C",
+          "text": "Young one → Its usual shelter"
+        },
+        {
+          "label": "D",
+          "text": "Animal → Its characteristic sound"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Fawn and kitten name the young of deer and cat respectively. Both pairs run adult animal → young one."
+    },
+    {
+      "id": "02-082",
+      "number": 82,
+      "question": "Nations using the same currency are paired, as in Germany : Italy. Which pair can replace it on that basis?",
+      "options": [
+        {
+          "label": "A",
+          "text": "India : Bangladesh"
+        },
+        {
+          "label": "B",
+          "text": "Japan : South Korea"
+        },
+        {
+          "label": "C",
+          "text": "Switzerland : Sweden"
+        },
+        {
+          "label": "D",
+          "text": "Belgium : Austria"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Germany and Italy both use the euro, as do Belgium and Austria. The countries in each other pair use different currencies."
+    },
+    {
+      "id": "02-083",
+      "number": 83,
+      "question": "Using A=1 to Z=26, BE7 becomes YV40 and CF9 becomes XU36. Letters are replaced by opposites; the number uses their reverse-position sum and the input number. Encode MQ8.",
+      "options": [
+        {
+          "label": "A",
+          "text": "MQ16"
+        },
+        {
+          "label": "B",
+          "text": "NJ24"
+        },
+        {
+          "label": "C",
+          "text": "NJ46"
+        },
+        {
+          "label": "D",
+          "text": "NJ16"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Subtract the input number from the reverse-position sum: BE gives 25+22−7=40. For MQ, the opposite letters are NJ and 14+10−8=16, giving NJ16."
+    },
+    {
+      "id": "02-084",
+      "number": 84,
+      "question": "Complete the material link without selecting a maker or a machine: Coir mat : Coconut fibre :: Bamboo basket : X.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weaving"
+        },
+        {
+          "label": "B",
+          "text": "Market"
+        },
+        {
+          "label": "C",
+          "text": "Bamboo strips"
+        },
+        {
+          "label": "D",
+          "text": "Basket weaver"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The second term names the material of the product. A bamboo basket is made from bamboo strips."
+    },
+    {
+      "id": "02-085",
+      "number": 85,
+      "question": "In a digit-based analogy, an input maps to the sum of the squares of its digits. If the units digit is 7 and the output is 74, which input is possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "57"
+        },
+        {
+          "label": "B",
+          "text": "67"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The tens digit has square 74−7²=25, so it is 5. The input is 57, and 5²+7²=74."
+    },
+    {
+      "id": "02-086",
+      "number": 86,
+      "question": "Two conversions are CODE → BPCF and GAME → FBLF. Vowels and consonants shift in opposite directions by one place. What does TIDE become?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SJCF"
+        },
+        {
+          "label": "B",
+          "text": "UHED"
+        },
+        {
+          "label": "C",
+          "text": "UJEF"
+        },
+        {
+          "label": "D",
+          "text": "SHCD"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Vowels move +1 and consonants −1. Thus T→S, I→J, D→C and E→F, giving SJCF."
+    },
+    {
+      "id": "02-087",
+      "number": 87,
+      "question": "If Abundant : Ample is a synonym analogy, select the pair that keeps the same relation in both everyday and formal usage.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Prudent : Reckless"
+        },
+        {
+          "label": "B",
+          "text": "Inferior : Superior"
+        },
+        {
+          "label": "C",
+          "text": "Impartial : Unbiased"
+        },
+        {
+          "label": "D",
+          "text": "Hostile : Friendly"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Abundant and ample mean plentiful. Impartial and unbiased both mean free from favouritism; the other pairs are opposites."
+    },
+    {
+      "id": "02-088",
+      "number": 88,
+      "question": "A storekeeper pairs amounts that total 100, for example (37, 63). Which further pair is analogous?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(65, 36)"
+        },
+        {
+          "label": "B",
+          "text": "(19, 80)"
+        },
+        {
+          "label": "C",
+          "text": "(28, 71)"
+        },
+        {
+          "label": "D",
+          "text": "(46, 54)"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use the complementary amount, 100−46=54. Every other offered pair totals 99 or 101."
+    },
+    {
+      "id": "02-089",
+      "number": 89,
+      "question": "A correct chain has instrument → quantity → SI unit. For the reference Voltmeter : Potential difference : Volt, assess I. Ammeter : Electric current : Ampere; II. Anemometer : Wind speed : Metre per second; III. Hygrometer : Humidity : Kelvin. Which chains preserve all three roles?",
+      "options": [
+        {
+          "label": "A",
+          "text": "II and III only"
+        },
+        {
+          "label": "B",
+          "text": "I and III only"
+        },
+        {
+          "label": "C",
+          "text": "I and II only"
+        },
+        {
+          "label": "D",
+          "text": "III only"
+        }
+      ],
+      "answer": "C",
+      "explanation": "I and II correctly connect an instrument, its quantity and that quantity’s SI unit. III fails because kelvin measures temperature, not humidity."
+    },
+    {
+      "id": "02-090",
+      "number": 90,
+      "question": "Consider I. Pigeon : Coo; II. Elephant : Trumpet; III. Rooster : Coop. Which entries are analogous to Wolf : Howl, rather than animal : home?",
+      "options": [
+        {
+          "label": "A",
+          "text": "III only"
+        },
+        {
+          "label": "B",
+          "text": "I and III"
+        },
+        {
+          "label": "C",
+          "text": "I and II"
+        },
+        {
+          "label": "D",
+          "text": "II and III"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Coo and trumpet are characteristic animal sounds, matching wolf → howl. Coop names a shelter, so III is a different relation."
+    },
+    {
+      "id": "02-091",
+      "number": 91,
+      "question": "A whole-number product rule connects 3 with 60, 5 with 210 and 7 with 504. Infer the shared rule and find the partner of 11; do not split digits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1320"
+        },
+        {
+          "label": "B",
+          "text": "1331"
+        },
+        {
+          "label": "C",
+          "text": "132"
+        },
+        {
+          "label": "D",
+          "text": "1716"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use n(n+1)(n+2). For 11, 11×12×13=132×13=1716."
+    },
+    {
+      "id": "02-092",
+      "number": 92,
+      "question": "On a part-to-whole board, three entries follow the reference Petal : Flower. Which entry needs its direction reversed to belong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Link : Chain"
+        },
+        {
+          "label": "B",
+          "text": "Zipper : Zipper tooth"
+        },
+        {
+          "label": "C",
+          "text": "Rung : Ladder"
+        },
+        {
+          "label": "D",
+          "text": "Lens : Camera"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A zipper tooth is part of a zipper, so Zipper : Zipper tooth runs whole → part. The other entries already run part → whole."
+    },
+    {
+      "id": "02-093",
+      "number": 93,
+      "question": "A code ignores direction and uses the absolute gap between alphabet positions. CF : 3 :: HK : 3 :: BW : X. What is X?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "D",
+      "explanation": "B=2 and W=23, so the absolute gap is 23−2=21."
+    },
+    {
+      "id": "02-094",
+      "number": 94,
+      "question": "Both missing words must be antonyms of their partners: Audacious : X; Impetuous : Y. Which combined choice satisfies both links?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cautious; Impulsive"
+        },
+        {
+          "label": "B",
+          "text": "Cautious; Deliberate"
+        },
+        {
+          "label": "C",
+          "text": "Timid; Hasty"
+        },
+        {
+          "label": "D",
+          "text": "Reckless; Deliberate"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cautious opposes audacious risk-taking, and deliberate opposes impetuous action without thought. Every other choice fails at least one link."
+    },
+    {
+      "id": "02-095",
+      "number": 95,
+      "question": "A two-step rule squares a two-digit input and adds its reversal: 12 : 165 and 23 : 561. Apply the rule to 34.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1156"
+        },
+        {
+          "label": "B",
+          "text": "1199"
+        },
+        {
+          "label": "C",
+          "text": "1849"
+        },
+        {
+          "label": "D",
+          "text": "1189"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Square first, then add the reversed input: 34²+43=1156+43=1199."
+    },
+    {
+      "id": "02-096",
+      "number": 96,
+      "question": "The relation Ohm : Electrical resistance must be retained when choosing a second unit–quantity pair. Which entry confuses a measuring instrument with a unit and therefore fails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coulomb : Electric charge"
+        },
+        {
+          "label": "B",
+          "text": "Farad : Capacitance"
+        },
+        {
+          "label": "C",
+          "text": "Ammeter : Electric current"
+        },
+        {
+          "label": "D",
+          "text": "Tesla : Magnetic flux density"
+        }
+      ],
+      "answer": "C",
+      "explanation": "An ammeter is an instrument; ampere is the unit of current. Tesla, coulomb and farad are units paired with the correct quantities."
+    },
+    {
+      "id": "02-097",
+      "number": 97,
+      "question": "A pair means number → count of all positive divisors, including 1 and itself: (18, 6), (30, 8). Which pair has the same interpretation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(28, 8)"
+        },
+        {
+          "label": "B",
+          "text": "(36, 9)"
+        },
+        {
+          "label": "C",
+          "text": "(49, 4)"
+        },
+        {
+          "label": "D",
+          "text": "(24, 6)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 36=2²×3², its divisor count is (2+1)(2+1)=9. The actual counts for 24, 28 and 49 are 8, 6 and 3."
+    },
+    {
+      "id": "02-098",
+      "number": 98,
+      "question": "Digits determine both changes in CH24 → IN8 and FK35 → NS15. Shift each letter forward by the digit sum and replace the number by the digit product. What is the output for MP46?",
+      "options": [
+        {
+          "label": "A",
+          "text": "WZ24"
+        },
+        {
+          "label": "B",
+          "text": "QT24"
+        },
+        {
+          "label": "C",
+          "text": "WZ10"
+        },
+        {
+          "label": "D",
+          "text": "WZ46"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The digit sum is 4+6=10, so M→W and P→Z. The digit product is 4×6=24, giving WZ24."
+    },
+    {
+      "id": "02-099",
+      "number": 99,
+      "question": "Keep the end letters fixed and swap only the middle two, as in BRIM : BIRM. Which group corresponds to CLAP?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LCPA"
+        },
+        {
+          "label": "B",
+          "text": "CAPL"
+        },
+        {
+          "label": "C",
+          "text": "CALP"
+        },
+        {
+          "label": "D",
+          "text": "PLAC"
+        }
+      ],
+      "answer": "C",
+      "explanation": "In CLAP, interchange L and A while keeping C and P fixed. The result is CALP."
+    },
+    {
+      "id": "02-100",
+      "number": 100,
+      "question": "An ordered pair maps to one value: (24, 16) : 5 and (35, 21) : 4. Infer the common sum-and-difference rule and find the value for (42, 30).",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Divide the sum by the difference: (42+30)/(42−30)=72/12=6."
+    }
+  ]
+}

@@ -563,8 +563,8 @@
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
       "count": 6,
-      "newest": "2026-10-08",
-      "totalSize": 18492286,
+      "newest": "2026-10-22",
+      "totalSize": 32605842,
       "languages": [
         {
           "id": "pa",
@@ -578,33 +578,33 @@
               "name": "Chapter 1: Number Series",
               "parts": [
                 {
-                  "file": "material-01-number-series-2.html",
+                  "file": "material-reasoning-pa-ch01.html",
                   "n": 1
                 }
               ],
-              "pages": 36
+              "pages": 159
             },
             {
               "id": "02 - Analogy",
               "name": "Chapter 2: Analogy",
               "parts": [
                 {
-                  "file": "material-02-analogy-2.html",
+                  "file": "material-reasoning-pa-ch02.html",
                   "n": 1
                 }
               ],
-              "pages": 28
+              "pages": 217
             },
             {
               "id": "03 - Verbal Classifications",
               "name": "Chapter 3: Verbal Classifications",
               "parts": [
                 {
-                  "file": "material-03-verbal-classifications-2.html",
+                  "file": "material-reasoning-pa-ch03.html",
                   "n": 1
                 }
               ],
-              "pages": 28
+              "pages": 133
             }
           ]
         },
@@ -620,33 +620,33 @@
               "name": "Chapter 1: Number Series",
               "parts": [
                 {
-                  "file": "material-01-number-series.html",
+                  "file": "material-reasoning-en-ch01.html",
                   "n": 1
                 }
               ],
-              "pages": 36
+              "pages": 159
             },
             {
               "id": "02 - Analogy",
               "name": "Chapter 2: Analogy",
               "parts": [
                 {
-                  "file": "material-02-analogy.html",
+                  "file": "material-reasoning-en-ch02.html",
                   "n": 1
                 }
               ],
-              "pages": 28
+              "pages": 217
             },
             {
               "id": "03 - Verbal Classifications",
               "name": "Chapter 3: Verbal Classifications",
               "parts": [
                 {
-                  "file": "material-03-verbal-classifications.html",
+                  "file": "material-reasoning-en-ch03.html",
                   "n": 1
                 }
               ],
-              "pages": 28
+              "pages": 133
             }
           ]
         }

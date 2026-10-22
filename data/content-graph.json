@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 629,
-  "edges": 3675,
+  "nodes": 631,
+  "edges": 3676,
   "silos": 35,
-  "clusters": 92,
+  "clusters": 98,
   "pillars": 34
  },
  "nodes": [
@@ -2826,8 +2826,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
-   "url": "/content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
+   "id": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
+   "url": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2838,8 +2838,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english%20/02%20-%20Analogy/02%20-%20Analogy.pdf",
-   "url": "/content/study-material/reasoning/english%20/02%20-%20Analogy/02%20-%20Analogy.pdf",
+   "id": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
+   "url": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2850,8 +2850,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/english%20/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
-   "url": "/content/study-material/reasoning/english%20/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
+   "id": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
+   "url": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2862,8 +2862,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
-   "url": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
+   "id": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
+   "url": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2874,8 +2874,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/punjabi/02%20-%20Analogy/02%20-%20Analogy.pdf",
-   "url": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/02%20-%20Analogy.pdf",
+   "id": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
+   "url": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2886,8 +2886,8 @@
    "hub": ""
   },
   {
-   "id": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
-   "url": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
+   "id": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
+   "url": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -3510,54 +3510,6 @@
    "hub": "study-material.html"
   },
   {
-   "id": "material-01-number-series",
-   "url": "/material-01-number-series",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-01-number-series-2",
-   "url": "/material-01-number-series-2",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-01-number-series-2.html",
-   "url": "/material-01-number-series-2.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 1: Number Series (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-01-number-series.html",
-   "url": "/material-01-number-series.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 1: Number Series (English)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
    "id": "material-01-number-system",
    "url": "/material-01-number-system",
    "type": "document",
@@ -3623,54 +3575,6 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-02-analogy",
-   "url": "/material-02-analogy",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-02-analogy-2",
-   "url": "/material-02-analogy-2",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-02-analogy-2.html",
-   "url": "/material-02-analogy-2.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 2: Analogy (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-02-analogy.html",
-   "url": "/material-02-analogy.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 2: Analogy (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -3767,54 +3671,6 @@
    "type": "study-material",
    "template": "",
    "title": "ਗੁਰੂ ਹਰਗੋਬਿੰਦ ਜੀ, ਹਰਿਰਾਇ ਜੀ ਅਤੇ ਹਰਿਕ੍ਰਿਸ਼ਨ ਜੀ",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-03-verbal-classifications",
-   "url": "/material-03-verbal-classifications",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-03-verbal-classifications-2",
-   "url": "/material-03-verbal-classifications-2",
-   "type": "document",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "material-03-verbal-classifications-2.html",
-   "url": "/material-03-verbal-classifications-2.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 3: Verbal Classifications (Punjabi)",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": "study-material.html"
-  },
-  {
-   "id": "material-03-verbal-classifications.html",
-   "url": "/material-03-verbal-classifications.html",
-   "type": "study-material",
-   "template": "",
-   "title": "Chapter 3: Verbal Classifications (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -5015,6 +4871,150 @@
    "type": "study-material",
    "template": "",
    "title": "ਪੰਜਾਬ ਦੇ ਲੋਕ-ਨਾਚ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-en-ch01",
+   "url": "/material-reasoning-en-ch01",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-en-ch01.html",
+   "url": "/material-reasoning-en-ch01.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Number Series (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-en-ch02",
+   "url": "/material-reasoning-en-ch02",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-en-ch02.html",
+   "url": "/material-reasoning-en-ch02.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 2: Analogy (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-en-ch03",
+   "url": "/material-reasoning-en-ch03",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-en-ch03.html",
+   "url": "/material-reasoning-en-ch03.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 3: Verbal Classifications (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-pa-ch01",
+   "url": "/material-reasoning-pa-ch01",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-pa-ch01.html",
+   "url": "/material-reasoning-pa-ch01.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Number Series (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-pa-ch02",
+   "url": "/material-reasoning-pa-ch02",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-pa-ch02.html",
+   "url": "/material-reasoning-pa-ch02.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 2: Analogy (Punjabi)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-reasoning-pa-ch03",
+   "url": "/material-reasoning-pa-ch03",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-pa-ch03.html",
+   "url": "/material-reasoning-pa-ch03.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 3: Verbal Classifications (Punjabi)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6967,32 +6967,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "url": "/quiz-gk-basic-concepts-of-economy-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-basic-concepts-of-economy-part-2.html",
-   "url": "/quiz-gk-basic-concepts-of-economy-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -7209,6 +7185,54 @@
   {
    "id": "quiz-reasoning-01-number-series-part-4.html",
    "url": "/quiz-reasoning-01-number-series-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-1.html",
+   "url": "/quiz-reasoning-02-analogy-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-2.html",
+   "url": "/quiz-reasoning-02-analogy-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-3.html",
+   "url": "/quiz-reasoning-02-analogy-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-4.html",
+   "url": "/quiz-reasoning-02-analogy-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -8829,37 +8853,37 @@
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-01-number-series-2.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-01-number-series.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-02-analogy-2.html",
+   "to": "material-reasoning-en-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-02-analogy.html",
+   "to": "material-reasoning-pa-ch01.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-03-verbal-classifications-2.html",
+   "to": "material-reasoning-pa-ch02.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-reasoning.html",
-   "to": "material-03-verbal-classifications.html",
+   "to": "material-reasoning-pa-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10503,18 +10527,6 @@
   },
   {
    "from": "archives.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-01-number-series.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
    "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
@@ -10528,18 +10540,6 @@
   {
    "from": "archives.html",
    "to": "material-01-sankhia-prnali.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-02-analogy-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-02-analogy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10564,18 +10564,6 @@
   {
    "from": "archives.html",
    "to": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-03-verbal-classifications-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "material-03-verbal-classifications.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10876,6 +10864,42 @@
   {
    "from": "archives.html",
    "to": "material-punjab-folk-dance-pa.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-pa-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12321,12 +12345,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12351,25 +12369,7 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12454,6 +12454,30 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-reasoning-01-number-series-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-02-analogy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-02-analogy-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-02-analogy-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-02-analogy-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12657,13 +12681,13 @@
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-financial-position-and-agriculture-of-punjab.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12872,198 +12896,6 @@
    "weight": 1
   },
   {
-   "from": "material-01-number-series-2.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "material-01-number-series-2",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "quiz-reasoning-01-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "material-01-number-series.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "material-02-analogy-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "material-03-verbal-classifications-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series-2.html",
-   "to": "material-02-analogy.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "material-01-number-series",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "quiz-reasoning-01-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "material-02-analogy.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "material-03-verbal-classifications.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-01-number-series.html",
-   "to": "material-02-analogy-2.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
    "from": "material-01-number-system.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -13143,13 +12975,13 @@
   },
   {
    "from": "material-01-number-system.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-number-system.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13233,13 +13065,13 @@
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13323,205 +13155,13 @@
   },
   {
    "from": "material-01-sankhia-prnali.html",
-   "to": "material-01-financial-position-and-agriculture-of-punjab.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-01-sankhia-prnali.html",
-   "to": "material-01-panjab-di-viti-sthiti-ate-khetibari.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/02%20-%20Analogy.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "material-02-analogy-2",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "material-01-number-series.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "material-03-verbal-classifications-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy-2.html",
-   "to": "material-02-analogy.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "content/study-material/reasoning/english%20/02%20-%20Analogy/02%20-%20Analogy.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "material-02-analogy",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "material-01-number-series.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "material-03-verbal-classifications.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-02-analogy.html",
-   "to": "material-02-analogy-2.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -13924,192 +13564,6 @@
   {
    "from": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
    "to": "material-02-guru-amar-das-ji-guru-ram-das-ji-and-guru-arjan-dev-ji.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "material-03-verbal-classifications-2",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "pa/study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "material-01-number-series.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications-2.html",
-   "to": "material-02-analogy-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "content/study-material/reasoning/english%20/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "magazine.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "material-03-verbal-classifications",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "index.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "mock.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "quiz.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "material-01-number-series.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "material-02-analogy.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-03-verbal-classifications.html",
-   "to": "material-02-analogy-2.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14787,13 +14241,13 @@
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-adhiai-01-arthvivstha-de-mudhle-sanklp.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14883,7 +14337,7 @@
   },
   {
    "from": "material-adhiai-01-bharti-sanvidhan-da-nirman.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15189,7 +14643,7 @@
   },
   {
    "from": "material-articles.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15585,13 +15039,13 @@
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-chapter-01-basic-concepts-of-economy.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15681,7 +15135,7 @@
   },
   {
    "from": "material-chapter-01-making-of-the-indian-constitution.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19154,6 +18608,582 @@
    "weight": 1
   },
   {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "material-reasoning-en-ch01",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "quiz-reasoning-01-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch01.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "material-reasoning-en-ch02",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "quiz-reasoning-02-analogy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch02.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "material-reasoning-en-ch03",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "subject-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-en-ch03.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-pa-ch01",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "pa/study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "quiz-reasoning-01-number-series-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-pa-ch03.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch01.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-pa-ch02",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "pa/study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "quiz-reasoning-02-analogy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-pa-ch03.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch02.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-pa-ch03",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "pa/study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "subject-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-pa-ch03.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-rivers-of-punjab-pa.html",
    "to": "ca-house-of-aspirants-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -19233,13 +19263,13 @@
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-pa.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19323,13 +19353,13 @@
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-number-system.html",
+   "to": "material-reasoning-en-ch01.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab.html",
-   "to": "material-01-sankhia-prnali.html",
+   "to": "material-reasoning-en-ch02.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23115,12 +23145,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/computer-en-ch01.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -23164,36 +23188,6 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/Punjabi%20/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -23295,6 +23289,42 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "index.html",
    "rel": "contextual",
    "weight": 1
@@ -23343,19 +23373,7 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-02-guru-amrdas-ji-guru-ramdas-ji-ate-guru-arjn-dev-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23367,31 +23385,13 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-04-guru-teg-bhadr-ji-ate-guru-gobind-singh-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-05-guru-granth-sahib-ji-and-the-five-takhts.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "material-05-sri-guru-granth-sahib-ji-ate-panj-tkht.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23457,12 +23457,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-computer-en-ch01.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-computer-en-ch06.html",
    "rel": "contextual",
    "weight": 1
@@ -23470,6 +23464,42 @@
   {
    "from": "pdfs.html",
    "to": "material-computer-pa-ch06.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-pa-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28995,37 +29025,37 @@
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english%20/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english%20/02%20-%20Analogy/02%20-%20Analogy.pdf",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/english%20/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/01%20-%20Number%20Series.pdf",
+   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/02%20-%20Analogy.pdf",
+   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-material.html",
-   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/03%20-%20Verbal%20Classifications.pdf",
+   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -29055,18 +29085,6 @@
   },
   {
    "from": "study-material.html",
-   "to": "material-01-number-series-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-01-number-series.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
    "to": "material-01-number-system.html",
    "rel": "contextual",
    "weight": 1
@@ -29080,18 +29098,6 @@
   {
    "from": "study-material.html",
    "to": "material-01-sankhia-prnali.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-02-analogy-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-02-analogy.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29116,18 +29122,6 @@
   {
    "from": "study-material.html",
    "to": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-03-verbal-classifications-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-material.html",
-   "to": "material-03-verbal-classifications.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29433,6 +29427,42 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-reasoning-pa-ch03.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-rivers-of-punjab-pa.html",
    "rel": "contextual",
    "weight": 1
@@ -29541,12 +29571,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/computer-en-ch01.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
    "rel": "contextual",
    "weight": 1
@@ -29590,36 +29614,6 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/Punjabi%20/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/Punjabi%20/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -29721,6 +29715,42 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "current-affairs-preparation.html",
    "rel": "contextual",
    "weight": 1
@@ -29775,19 +29805,7 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-02-guru-amrdas-ji-guru-ramdas-ji-ate-guru-arjn-dev-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-03-guru-hrgobind-ji-guru-hrirai-ji-ate-guru-hrikrishn-ji.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29799,31 +29817,13 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-04-guru-teg-bhadr-ji-ate-guru-gobind-singh-ji.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-05-guru-granth-sahib-ji-and-the-five-takhts.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "material-05-sri-guru-granth-sahib-ji-ate-panj-tkht.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-06-baba-banda-singh-bahadur-and-the-dal-khalsa.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-06-baba-banda-singh-bhadr-ate-dl-khalsa.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29889,12 +29889,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-computer-en-ch01.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-computer-en-ch06.html",
    "rel": "contextual",
    "weight": 1
@@ -29902,6 +29896,42 @@
   {
    "from": "study-notes.html",
    "to": "material-computer-pa-ch06.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-en-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-en-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-en-ch03.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-pa-ch01.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-pa-ch02.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-pa-ch03.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30545,10 +30575,16 @@
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-reasoning.html",
    "clusters": [
+    "category-reasoning-01-number-series.html",
+    "category-reasoning-02-analogy.html",
     "topic-reasoning-01-number-series-part-1.html",
     "topic-reasoning-01-number-series-part-2.html",
     "topic-reasoning-01-number-series-part-3.html",
-    "topic-reasoning-01-number-series-part-4.html"
+    "topic-reasoning-01-number-series-part-4.html",
+    "topic-reasoning-02-analogy-part-1.html",
+    "topic-reasoning-02-analogy-part-2.html",
+    "topic-reasoning-02-analogy-part-3.html",
+    "topic-reasoning-02-analogy-part-4.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",

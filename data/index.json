@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-21T18:36:20.824Z",
   "stats": {
     "subjects": 7,
-    "categories": 23,
-    "topics": 58,
-    "quizzes": 58,
-    "questions": 1314,
+    "categories": 25,
+    "topics": 62,
+    "quizzes": 62,
+    "questions": 1414,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1948,19 +1948,140 @@
       "order": 3,
       "topics": [
         {
-          "id": "01 - Number Series - MCQ - EN - Part 1",
-          "name": "Number Series MCQ – Part 1",
+          "id": "02 - Analogy - MCQ - EN - Part 1",
+          "name": "Analogy MCQ – Part 1",
           "description": "",
-          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json",
+          "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 1.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1792591454551,
+          "updatedAt": 1792642282568,
+          "category": "02-analogy",
           "language": "en",
           "variants": {
-            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json",
-            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 1.json"
+            "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy MCQ – Part 1",
+            "pa": "ਸਮਰੂਪਤਾ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-02-analogy-part-1"
+        },
+        {
+          "id": "02 - Analogy - MCQ - EN - Part 2",
+          "name": "Analogy MCQ – Part 2",
+          "description": "",
+          "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792642282568,
+          "category": "02-analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy MCQ – Part 2",
+            "pa": "ਸਮਰੂਪਤਾ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-02-analogy-part-2"
+        },
+        {
+          "id": "02 - Analogy - MCQ - EN - Part 3",
+          "name": "Analogy MCQ – Part 3",
+          "description": "",
+          "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792642282568,
+          "category": "02-analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy MCQ – Part 3",
+            "pa": "ਸਮਰੂਪਤਾ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-02-analogy-part-3"
+        },
+        {
+          "id": "02 - Analogy - MCQ - EN - Part 4",
+          "name": "Analogy MCQ – Part 4",
+          "description": "",
+          "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792642282568,
+          "category": "02-analogy",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Analogy MCQ – Part 4",
+            "pa": "ਸਮਰੂਪਤਾ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-02-analogy-part-4"
+        },
+        {
+          "id": "01 - Number Series - MCQ - EN - Part 1",
+          "name": "Number Series MCQ – Part 1",
+          "description": "",
+          "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792642282568,
+          "category": "01-number-series",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 1.json"
           },
           "availableLanguages": [
             "en",
@@ -1980,16 +2101,17 @@
           "id": "01 - Number Series - MCQ - EN - Part 2",
           "name": "Number Series MCQ – Part 2",
           "description": "",
-          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json",
+          "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 2.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1792591454551,
+          "updatedAt": 1792642282568,
+          "category": "01-number-series",
           "language": "en",
           "variants": {
-            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json",
-            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 2.json"
+            "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 2.json"
           },
           "availableLanguages": [
             "en",
@@ -2009,16 +2131,17 @@
           "id": "01 - Number Series - MCQ - EN - Part 3",
           "name": "Number Series MCQ – Part 3",
           "description": "",
-          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json",
+          "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 3.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1792591454551,
+          "updatedAt": 1792642282568,
+          "category": "01-number-series",
           "language": "en",
           "variants": {
-            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json",
-            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 3.json"
+            "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 3.json"
           },
           "availableLanguages": [
             "en",
@@ -2038,16 +2161,17 @@
           "id": "01 - Number Series - MCQ - EN - Part 4",
           "name": "Number Series MCQ – Part 4",
           "description": "",
-          "file": "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json",
+          "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 4.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1792591454551,
+          "updatedAt": 1792642282568,
+          "category": "01-number-series",
           "language": "en",
           "variants": {
-            "en": "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json",
-            "pa": "questions/reasoning/01 - Number Series - MCQ - PA - Part 4.json"
+            "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 4.json"
           },
           "availableLanguages": [
             "en",
@@ -2064,7 +2188,266 @@
           "landing": "/quiz-reasoning-01-number-series-part-4"
         }
       ],
-      "categories": [],
+      "categories": [
+        {
+          "id": "01-number-series",
+          "name": "01   Number Series",
+          "folder": "01 - Number Series",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "01 - Number Series - MCQ - EN - Part 1",
+              "name": "Number Series MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "01-number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number Series MCQ – Part 1",
+                "pa": "ਸੰਖਿਆ ਲੜੀ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-01-number-series-part-1"
+            },
+            {
+              "id": "01 - Number Series - MCQ - EN - Part 2",
+              "name": "Number Series MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "01-number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number Series MCQ – Part 2",
+                "pa": "ਸੰਖਿਆ ਲੜੀ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-01-number-series-part-2"
+            },
+            {
+              "id": "01 - Number Series - MCQ - EN - Part 3",
+              "name": "Number Series MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "01-number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number Series MCQ – Part 3",
+                "pa": "ਸੰਖਿਆ ਲੜੀ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-01-number-series-part-3"
+            },
+            {
+              "id": "01 - Number Series - MCQ - EN - Part 4",
+              "name": "Number Series MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "01-number-series",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number Series MCQ – Part 4",
+                "pa": "ਸੰਖਿਆ ਲੜੀ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-01-number-series-part-4"
+            }
+          ],
+          "landing": "/category-reasoning-01-number-series"
+        },
+        {
+          "id": "02-analogy",
+          "name": "02   Analogy",
+          "folder": "02 - Analogy",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "02 - Analogy - MCQ - EN - Part 1",
+              "name": "Analogy MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "02-analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy MCQ – Part 1",
+                "pa": "ਸਮਰੂਪਤਾ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-02-analogy-part-1"
+            },
+            {
+              "id": "02 - Analogy - MCQ - EN - Part 2",
+              "name": "Analogy MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "02-analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy MCQ – Part 2",
+                "pa": "ਸਮਰੂਪਤਾ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-02-analogy-part-2"
+            },
+            {
+              "id": "02 - Analogy - MCQ - EN - Part 3",
+              "name": "Analogy MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "02-analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy MCQ – Part 3",
+                "pa": "ਸਮਰੂਪਤਾ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-02-analogy-part-3"
+            },
+            {
+              "id": "02 - Analogy - MCQ - EN - Part 4",
+              "name": "Analogy MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792642282568,
+              "category": "02-analogy",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Analogy MCQ – Part 4",
+                "pa": "ਸਮਰੂਪਤਾ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-02-analogy-part-4"
+            }
+          ],
+          "landing": "/category-reasoning-02-analogy"
+        }
+      ],
       "landing": "/subject-reasoning"
     },
     {
@@ -3615,21 +3998,37 @@
       "4927d0cb46b8d802",
       1792589424748
     ],
-    "questions/reasoning/01 - Number Series - MCQ - EN - Part 1.json": [
+    "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",
-      1792591454551
+      1792642282568
     ],
-    "questions/reasoning/01 - Number Series - MCQ - EN - Part 2.json": [
+    "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 2.json": [
       "32fe54bcf17483fd",
-      1792591454551
+      1792642282568
     ],
-    "questions/reasoning/01 - Number Series - MCQ - EN - Part 3.json": [
+    "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 3.json": [
       "0101ccd206eb2a34",
-      1792591454551
+      1792642282568
     ],
-    "questions/reasoning/01 - Number Series - MCQ - EN - Part 4.json": [
+    "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 4.json": [
       "e4ad906fd1d7efd2",
-      1792591454551
+      1792642282568
+    ],
+    "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 1.json": [
+      "f95cec3c447a182f",
+      1792642282568
+    ],
+    "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 2.json": [
+      "5d8f448db53c708d",
+      1792642282568
+    ],
+    "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 3.json": [
+      "12b275720601ac81",
+      1792642282568
+    ],
+    "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json": [
+      "36aaefc05397a1d0",
+      1792642282568
     ]
   }
 }

@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "Analogy"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-026",
+      "number": 26,
+      "question": "In a factory chart, Sugar : Sugarcane is followed by a second product–source pair. Which replacement keeps the relation while using a different industry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Coffee beans : Coffee drink"
+        },
+        {
+          "label": "B",
+          "text": "Iron ore : Steel"
+        },
+        {
+          "label": "C",
+          "text": "Silk : Silkworm rearing"
+        },
+        {
+          "label": "D",
+          "text": "Linen fabric : Flax fibres"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sugar is obtained from sugarcane; linen fabric is made from flax fibres. The other entries reverse the order or name a process."
+    },
+    {
+      "id": "02-027",
+      "number": 27,
+      "question": "The relation 52 → 39 represents subtracting 13. A second entry starts at 86; what is its corresponding value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "73"
+        },
+        {
+          "label": "B",
+          "text": "74"
+        },
+        {
+          "label": "C",
+          "text": "99"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Keep the subtraction unchanged: 86−13=73."
+    },
+    {
+      "id": "02-028",
+      "number": 28,
+      "question": "The pair WARD : AWDR is formed by interchanging neighbouring letters in pairs. Which transformation follows the same arrangement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "FORK : RFKO"
+        },
+        {
+          "label": "B",
+          "text": "FORK : OFKR"
+        },
+        {
+          "label": "C",
+          "text": "FORK : KROF"
+        },
+        {
+          "label": "D",
+          "text": "FORK : ORKF"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Swap positions 1 and 2, then 3 and 4. FORK becomes OFKR."
+    },
+    {
+      "id": "02-029",
+      "number": 29,
+      "question": "Which pair cannot be placed beside Conceal : Reveal in a collection restricted to antonym pairs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Accept : Reject"
+        },
+        {
+          "label": "B",
+          "text": "Obsolete : Outdated"
+        },
+        {
+          "label": "C",
+          "text": "Optimistic : Pessimistic"
+        },
+        {
+          "label": "D",
+          "text": "Expand : Shrink"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Conceal and reveal are opposites. Obsolete and outdated are synonyms, whereas the other pairs are opposites."
+    },
+    {
+      "id": "02-030",
+      "number": 30,
+      "question": "Ravinder identifies the same whole-number rule in (4, 67) and (6, 219). Which pair will pass his test?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(7, 347)"
+        },
+        {
+          "label": "B",
+          "text": "(10, 1000)"
+        },
+        {
+          "label": "C",
+          "text": "(9, 732)"
+        },
+        {
+          "label": "D",
+          "text": "(8, 516)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cube the first number and add 3: 4³+3=67 and 6³+3=219. Only 9³+3=732 matches."
+    },
+    {
+      "id": "02-031",
+      "number": 31,
+      "question": "A farm chart links Goat to Bleat. If the second column always names a sound, which alternative is a valid parallel entry?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Goose : Gosling"
+        },
+        {
+          "label": "B",
+          "text": "Owl : Hoot"
+        },
+        {
+          "label": "C",
+          "text": "Eagle : Eyrie"
+        },
+        {
+          "label": "D",
+          "text": "Duck : Waddle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Bleat is a goat’s sound, and hoot is an owl’s sound. Home, young one and movement are different relations."
+    },
+    {
+      "id": "02-032",
+      "number": 32,
+      "question": "A unit-to-quantity analogy is Joule : Energy. For Candela : X, which quantity belongs at X?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Amount of substance"
+        },
+        {
+          "label": "B",
+          "text": "Luminous intensity"
+        },
+        {
+          "label": "C",
+          "text": "Illuminance"
+        },
+        {
+          "label": "D",
+          "text": "Electric charge"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Joule measures energy; candela is the SI unit of luminous intensity. Illuminance uses lux, not candela."
+    },
+    {
+      "id": "02-033",
+      "number": 33,
+      "question": "With A=1 to Z=26, a tag changes BG9 to DI23 and FM8 to HO86. Apply the same +2 letter shift and the same number rule to KT5; the number rule uses the original letters’ position product.",
+      "options": [
+        {
+          "label": "A",
+          "text": "MV225"
+        },
+        {
+          "label": "B",
+          "text": "MV110"
+        },
+        {
+          "label": "C",
+          "text": "MV291"
+        },
+        {
+          "label": "D",
+          "text": "MU225"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Shift each letter by +2, and add the original position product to the input number: 2×7+9=23 and 6×13+8=86. KT5 gives MV and 11×20+5=225, hence MV225."
+    },
+    {
+      "id": "02-034",
+      "number": 34,
+      "question": "Choose the entry that completes both a workplace link and a tool link: Pilot : Cockpit :: Blacksmith : X; Pilot : Control stick :: Blacksmith : Y.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Forge; Hammer"
+        },
+        {
+          "label": "B",
+          "text": "Hammer; Forge"
+        },
+        {
+          "label": "C",
+          "text": "Iron; Anvil"
+        },
+        {
+          "label": "D",
+          "text": "Forge; Horseshoe"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A blacksmith works at a forge and uses a hammer. The blanks require workplace first and tool second."
+    },
+    {
+      "id": "02-035",
+      "number": 35,
+      "question": "Keep the digits together only while reading the input; then add the input to its digit-reversed form. If 37 : 110 and 46 : 110, what is paired with 58?",
+      "options": [
+        {
+          "label": "A",
+          "text": "85"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "143"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rule adds the number and its reversal: 37+73=110. Hence 58+85=143."
+    },
+    {
+      "id": "02-036",
+      "number": 36,
+      "question": "Compare DGJM → FELK and HKPS → JIRQ. The same alternating shifts are used in both. Transform QTWA, continuing cyclically through the alphabet.",
+      "options": [
+        {
+          "label": "A",
+          "text": "OTUY"
+        },
+        {
+          "label": "B",
+          "text": "SRYC"
+        },
+        {
+          "label": "C",
+          "text": "SVYC"
+        },
+        {
+          "label": "D",
+          "text": "SRYY"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use +2, −2, +2, −2: Q→S, T→R, W→Y and A→Y. The result is SRYY."
+    },
+    {
+      "id": "02-037",
+      "number": 37,
+      "question": "In a passage, “a succinct reply” means “a concise reply”. Which replacement preserves meaning in the same way?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A reluctant witness → An eager witness"
+        },
+        {
+          "label": "B",
+          "text": "A temporary post → A permanent post"
+        },
+        {
+          "label": "C",
+          "text": "A meticulous check → A thorough check"
+        },
+        {
+          "label": "D",
+          "text": "A hostile crowd → A friendly crowd"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Succinct and concise both mean brief. Meticulous and thorough both describe a careful, detailed check; the other replacements reverse meaning."
+    },
+    {
+      "id": "02-038",
+      "number": 38,
+      "question": "Without splitting digits, reproduce the fixed gap in (48, 59). Which pair should be selected?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(65, 75)"
+        },
+        {
+          "label": "B",
+          "text": "(73, 84)"
+        },
+        {
+          "label": "C",
+          "text": "(39, 49)"
+        },
+        {
+          "label": "D",
+          "text": "(82, 94)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second number exceeds the first by 11. Only 84−73=11."
+    },
+    {
+      "id": "02-039",
+      "number": 39,
+      "question": "A travel-data analogy uses Peru : Lima : Sol. Which row preserves country → capital → currency throughout?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Japan : Tokyo : Won"
+        },
+        {
+          "label": "B",
+          "text": "Turkey : Istanbul : Turkish lira"
+        },
+        {
+          "label": "C",
+          "text": "Egypt : Cairo : Egyptian pound"
+        },
+        {
+          "label": "D",
+          "text": "Brazil : Buenos Aires : Real"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Egypt’s capital is Cairo and its currency is the Egyptian pound. The other rows contain an incorrect capital or currency."
+    },
+    {
+      "id": "02-040",
+      "number": 40,
+      "question": "Aditi uses the template Young one : Adult : Usual human-provided shelter. Which row fits it completely?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Piglet : Pig : Stable"
+        },
+        {
+          "label": "B",
+          "text": "Foal : Horse : Kennel"
+        },
+        {
+          "label": "C",
+          "text": "Puppy : Dog : Burrow"
+        },
+        {
+          "label": "D",
+          "text": "Calf : Cow : Cowshed"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A calf is a young cow, and cows are kept in a cowshed. Each other row gives the wrong shelter for its adult animal."
+    },
+    {
+      "id": "02-041",
+      "number": 41,
+      "question": "Under a rule consisting of a cube minus a fixed multiple of the input, 4 maps to 56 and 6 maps to 204. What value corresponds to 9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "727"
+        },
+        {
+          "label": "B",
+          "text": "713"
+        },
+        {
+          "label": "C",
+          "text": "711"
+        },
+        {
+          "label": "D",
+          "text": "693"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The deduction is 2n because 4³−56=8 and 6³−204=12. Therefore 9³−2×9=729−18=711."
+    },
+    {
+      "id": "02-042",
+      "number": 42,
+      "question": "Faridkot’s science club pairs Seismograph : Ground vibrations. Which second pair keeps the relation recording instrument → phenomenon recorded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Microscope : Magnification"
+        },
+        {
+          "label": "B",
+          "text": "Periscope : Submarine"
+        },
+        {
+          "label": "C",
+          "text": "Electrocardiograph : Electrical activity of the heart"
+        },
+        {
+          "label": "D",
+          "text": "Telescope : Astronomer"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A seismograph records ground vibrations; an electrocardiograph records the heart’s electrical activity. The other pairs name a function, location or user."
+    },
+    {
+      "id": "02-043",
+      "number": 43,
+      "question": "Opposite alphabet letters pair to a position total of 27. Under E : V, which letter is paired with R?",
+      "options": [
+        {
+          "label": "A",
+          "text": "I"
+        },
+        {
+          "label": "B",
+          "text": "H"
+        },
+        {
+          "label": "C",
+          "text": "J"
+        },
+        {
+          "label": "D",
+          "text": "S"
+        }
+      ],
+      "answer": "A",
+      "explanation": "R has position 18, so the opposite position is 27−18=9, which is I."
+    },
+    {
+      "id": "02-044",
+      "number": 44,
+      "question": "The chain Cool → Cold → Freezing increases intensity at each step. Which chain has the same increasing structure throughout?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Terrified → Afraid → Uneasy"
+        },
+        {
+          "label": "B",
+          "text": "Warm → Scalding → Hot"
+        },
+        {
+          "label": "C",
+          "text": "Tired → Exhausted → Fresh"
+        },
+        {
+          "label": "D",
+          "text": "Pleased → Delighted → Ecstatic"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pleased, delighted and ecstatic represent progressively stronger happiness. The other chains decrease intensity or change direction."
+    },
+    {
+      "id": "02-045",
+      "number": 45,
+      "question": "A pairing counts the unordered pairs possible among n people: 5 : 10 and 8 : 28. What should stand beside 12?",
+      "options": [
+        {
+          "label": "A",
+          "text": "78"
+        },
+        {
+          "label": "B",
+          "text": "132"
+        },
+        {
+          "label": "C",
+          "text": "144"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use n(n−1)/2, since each pair is counted twice in n(n−1). For 12 people, 12×11/2=66."
+    },
+    {
+      "id": "02-046",
+      "number": 46,
+      "question": "The order in Spoke : Wheel : Bicycle is part → larger part → complete vehicle. Which sequence matches that nesting?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tyre : Road : Car"
+        },
+        {
+          "label": "B",
+          "text": "Piston : Engine : Car"
+        },
+        {
+          "label": "C",
+          "text": "Car : Engine : Piston"
+        },
+        {
+          "label": "D",
+          "text": "Driver : Engine : Car"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A piston is part of an engine, and the engine is part of a car. This preserves the two successive part-to-whole links."
+    },
+    {
+      "id": "02-047",
+      "number": 47,
+      "question": "Two references are (125, 25) and (343, 49). Which new pair is formed from the cube and square of the same positive integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(1728, 144)"
+        },
+        {
+          "label": "B",
+          "text": "(512, 128)"
+        },
+        {
+          "label": "C",
+          "text": "(729, 27)"
+        },
+        {
+          "label": "D",
+          "text": "(1000, 10)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The entries are (n³, n²): (5³, 5²) and (7³, 7²). Thus (12³, 12²)=(1728, 144) fits."
+    },
+    {
+      "id": "02-048",
+      "number": 48,
+      "question": "One coding rule yields ACE : 22 and BDF : 28. Using A=1 to Z=26, choose the value of GIK when each position is weighted by its place in the three-letter group.",
+      "options": [
+        {
+          "label": "A",
+          "text": "54"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "189"
+        },
+        {
+          "label": "D",
+          "text": "58"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use 1×first position + 2×second + 3×third: ACE gives 1+6+15=22 and BDF gives 2+8+18=28. Thus GIK gives 7+18+33=58."
+    },
+    {
+      "id": "02-049",
+      "number": 49,
+      "question": "Take A=1 to Z=26 and add the positions. GH is related to 15; which number is related to NP?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "224"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "A",
+      "explanation": "G+H=7+8=15. Likewise N+P=14+16=30."
+    },
+    {
+      "id": "02-050",
+      "number": 50,
+      "question": "A ration-conversion analogy is 18 : 45 :: 26 : 65 :: 34 : X. Preserve the same ratio and find X.",
+      "options": [
+        {
+          "label": "A",
+          "text": "75"
+        },
+        {
+          "label": "B",
+          "text": "85"
+        },
+        {
+          "label": "C",
+          "text": "68"
+        },
+        {
+          "label": "D",
+          "text": "102"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply by 5/2: 18×5/2=45 and 26×5/2=65. Hence 34×5/2=85."
+    }
+  ]
+}

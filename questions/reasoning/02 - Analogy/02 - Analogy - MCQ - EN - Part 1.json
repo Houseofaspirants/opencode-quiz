@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "Analogy"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-001",
+      "number": 1,
+      "question": "At a Ludhiana workshop, Harjit matches Engraver : Burin. Which pair preserves the same worker-to-specialised-tool relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Weaver : Fabric"
+        },
+        {
+          "label": "B",
+          "text": "Mason : Trowel"
+        },
+        {
+          "label": "C",
+          "text": "Welder : Workshop"
+        },
+        {
+          "label": "D",
+          "text": "Cobbler : Leather"
+        }
+      ],
+      "answer": "B",
+      "explanation": "An engraver works with a burin; a mason works with a trowel. Both pairs link a worker to a tool, in that order."
+    },
+    {
+      "id": "02-002",
+      "number": 2,
+      "question": "A machine pairs 14 with 196 and 19 with 361 by taking the square. What should it pair with 27?",
+      "options": [
+        {
+          "label": "A",
+          "text": "729"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "784"
+        },
+        {
+          "label": "D",
+          "text": "676"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Square the input: 27 × 27 = 729."
+    },
+    {
+      "id": "02-003",
+      "number": 3,
+      "question": "A letter conversion gives BFK : DJQ and HMR : JQX. Decode QVA under the same position-wise shifts; continue after Z from A.",
+      "options": [
+        {
+          "label": "A",
+          "text": "SZG"
+        },
+        {
+          "label": "B",
+          "text": "SYG"
+        },
+        {
+          "label": "C",
+          "text": "UZG"
+        },
+        {
+          "label": "D",
+          "text": "SZE"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The three shifts are +2, +4 and +6. Thus Q→S, V→Z and A→G, giving SZG."
+    },
+    {
+      "id": "02-004",
+      "number": 4,
+      "question": "For a vocabulary analogy, Mehak needs a pair with the same meaning relation as Frugal : Economical. Which entry fits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tepid : Scalding"
+        },
+        {
+          "label": "B",
+          "text": "Candid : Frank"
+        },
+        {
+          "label": "C",
+          "text": "Timid : Bold"
+        },
+        {
+          "label": "D",
+          "text": "Scarce : Plentiful"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Frugal and economical are synonyms. Candid and frank also mean open and direct in expression."
+    },
+    {
+      "id": "02-005",
+      "number": 5,
+      "question": "Find the number pair governed by the relation in (8, 60) and (11, 117). Treat each number as a whole.",
+      "options": [
+        {
+          "label": "A",
+          "text": "(15, 223)"
+        },
+        {
+          "label": "B",
+          "text": "(12, 148)"
+        },
+        {
+          "label": "C",
+          "text": "(9, 85)"
+        },
+        {
+          "label": "D",
+          "text": "(14, 192)"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The second number is the square of the first minus 4: 8²−4=60 and 11²−4=117. Therefore 14²−4=192."
+    },
+    {
+      "id": "02-006",
+      "number": 6,
+      "question": "A wildlife register uses adult → young one. Which entry must be removed because it reverses that direction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Goat : Kid"
+        },
+        {
+          "label": "B",
+          "text": "Pig : Piglet"
+        },
+        {
+          "label": "C",
+          "text": "Cat : Kitten"
+        },
+        {
+          "label": "D",
+          "text": "Fawn : Deer"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A fawn is a young deer, so Fawn : Deer runs young → adult. The other entries run adult → young."
+    },
+    {
+      "id": "02-007",
+      "number": 7,
+      "question": "Complete both links, keeping capital and currency separate: Kenya : Nairobi :: Vietnam : X; Kenya : Kenyan shilling :: Vietnam : Y. What are X and Y?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hanoi; Dong"
+        },
+        {
+          "label": "B",
+          "text": "Hanoi; Baht"
+        },
+        {
+          "label": "C",
+          "text": "Ho Chi Minh City; Dong"
+        },
+        {
+          "label": "D",
+          "text": "Vientiane; Kip"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first link is country → capital; the second is country → currency. Vietnam has capital Hanoi and currency dong."
+    },
+    {
+      "id": "02-008",
+      "number": 8,
+      "question": "Simran obtains CF7 → DG49 and HK9 → IL81. Which output belongs to TW12 if the letters and number follow the same separate rules?",
+      "options": [
+        {
+          "label": "A",
+          "text": "UV144"
+        },
+        {
+          "label": "B",
+          "text": "UX143"
+        },
+        {
+          "label": "C",
+          "text": "UX144"
+        },
+        {
+          "label": "D",
+          "text": "UX24"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Advance each letter by 1 and square the number. T→U, W→X and 12²=144, so the result is UX144."
+    },
+    {
+      "id": "02-009",
+      "number": 9,
+      "question": "Neeraj labels a workplace relation Pharmacist → Pharmacy. Which label follows the same direction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Baker → Oven"
+        },
+        {
+          "label": "B",
+          "text": "Astronomer → Observatory"
+        },
+        {
+          "label": "C",
+          "text": "Sculptor → Statue"
+        },
+        {
+          "label": "D",
+          "text": "Museum → Curator"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A pharmacy is a pharmacist’s workplace; an observatory is an astronomer’s workplace."
+    },
+    {
+      "id": "02-010",
+      "number": 10,
+      "question": "An input-output table reads 7 → 28 and 13 → 46. Its rule is multiplication by one fixed integer followed by addition of another. Find the output for 24.",
+      "options": [
+        {
+          "label": "A",
+          "text": "86"
+        },
+        {
+          "label": "B",
+          "text": "79"
+        },
+        {
+          "label": "C",
+          "text": "75"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The input increase of 6 gives an output increase of 18, so multiply by 3; 28−3×7=7. Hence 3×24+7=79."
+    },
+    {
+      "id": "02-011",
+      "number": 11,
+      "question": "In a code, MANGO becomes PHOBN and LEMON becomes OPNFM. What is the corresponding form of TULIP?",
+      "options": [
+        {
+          "label": "A",
+          "text": "QJMVU"
+        },
+        {
+          "label": "B",
+          "text": "PILUT"
+        },
+        {
+          "label": "C",
+          "text": "RKNWV"
+        },
+        {
+          "label": "D",
+          "text": "UVMJQ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reverse the letter order and then advance every letter by 1. TULIP→PILUT→QJMVU."
+    },
+    {
+      "id": "02-012",
+      "number": 12,
+      "question": "A relation card says Transparent : Opaque. In the same order, which word must follow Flexible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Supple"
+        },
+        {
+          "label": "B",
+          "text": "Pliable"
+        },
+        {
+          "label": "C",
+          "text": "Elastic"
+        },
+        {
+          "label": "D",
+          "text": "Rigid"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Transparent and opaque are opposites. The opposite of flexible is rigid."
+    },
+    {
+      "id": "02-013",
+      "number": 13,
+      "question": "A doubling relation links (23, 46). Which of these pairs has the identical relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(34, 70)"
+        },
+        {
+          "label": "B",
+          "text": "(37, 74)"
+        },
+        {
+          "label": "C",
+          "text": "(41, 81)"
+        },
+        {
+          "label": "D",
+          "text": "(29, 59)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The second number must be twice the first. Only 37×2=74 fits."
+    },
+    {
+      "id": "02-014",
+      "number": 14,
+      "question": "Aman writes Barometer : Atmospheric pressure : Pascal. Which complete chain preserves instrument → measured quantity → SI unit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Anemometer : Wind speed : Kilometre"
+        },
+        {
+          "label": "B",
+          "text": "Ammeter : Potential difference : Ampere"
+        },
+        {
+          "label": "C",
+          "text": "Dynamometer : Force : Newton"
+        },
+        {
+          "label": "D",
+          "text": "Thermometer : Temperature : Joule"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A dynamometer measures force, whose SI unit is the newton. Each other chain has a mismatch in the quantity or unit."
+    },
+    {
+      "id": "02-015",
+      "number": 15,
+      "question": "Two blanks must represent an animal’s sound and then its home: Horse : Neigh : Stable :: Pig : X : Y. Select X and Y together.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Bleat; Sty"
+        },
+        {
+          "label": "B",
+          "text": "Squeak; Eyrie"
+        },
+        {
+          "label": "C",
+          "text": "Grunt; Sty"
+        },
+        {
+          "label": "D",
+          "text": "Grunt; Kennel"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A pig grunts and is kept in a sty. Both blanks must match the sound → home order after the animal."
+    },
+    {
+      "id": "02-016",
+      "number": 16,
+      "question": "Digit operations are permitted. The pairs 47 → 37 and 63 → 27 follow one rule combining digit product and digit difference. Determine the partner of 85.",
+      "options": [
+        {
+          "label": "A",
+          "text": "43"
+        },
+        {
+          "label": "B",
+          "text": "53"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Add the digit product to the squared difference: 4×7+(7−4)²=37 and 6×3+(6−3)²=27. For 85, 8×5+(8−5)²=49."
+    },
+    {
+      "id": "02-017",
+      "number": 17,
+      "question": "A Patiala unit records Jute sack : Jute and Leather belt : Leather. Which proposed entry breaks this product-to-raw-material relation?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Glass bottle : Glassblower"
+        },
+        {
+          "label": "B",
+          "text": "Cotton towel : Cotton"
+        },
+        {
+          "label": "C",
+          "text": "Rubber tyre : Rubber"
+        },
+        {
+          "label": "D",
+          "text": "Woollen shawl : Wool"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Glassblower names the worker, not the raw material of a glass bottle. The other entries name the material used."
+    },
+    {
+      "id": "02-018",
+      "number": 18,
+      "question": "The alphabet rule is one place backward for every letter. If FKP becomes EJO, what does MQT become?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LPS"
+        },
+        {
+          "label": "B",
+          "text": "MPS"
+        },
+        {
+          "label": "C",
+          "text": "LQS"
+        },
+        {
+          "label": "D",
+          "text": "NRU"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Move M→L, Q→P and T→S. The required group is LPS."
+    },
+    {
+      "id": "02-019",
+      "number": 19,
+      "question": "Both links must express a rise in intensity without changing the underlying feeling: Annoyance : Rage :: X : Y. Which pair satisfies both conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Delight : Contentment"
+        },
+        {
+          "label": "B",
+          "text": "Fury : Irritation"
+        },
+        {
+          "label": "C",
+          "text": "Grief : Happiness"
+        },
+        {
+          "label": "D",
+          "text": "Unease : Terror"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Rage is much stronger anger than annoyance. Terror similarly intensifies the fear present in unease; the other pairs weaken or change the feeling."
+    },
+    {
+      "id": "02-020",
+      "number": 20,
+      "question": "Jasleen’s cards show 12 : 9 and 16 : 13. The rule first squares the input and then uses its digits. What should be paired with 14?",
+      "options": [
+        {
+          "label": "A",
+          "text": "54"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "196"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Add the digits of the square: 12²=144 gives 1+4+4=9, and 16²=256 gives 2+5+6=13. Thus 14²=196 gives 1+9+6=16."
+    },
+    {
+      "id": "02-021",
+      "number": 21,
+      "question": "Choose the relation that matches Keyboard key : Keyboard while keeping the first item a physical component of the second.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Driver : Vehicle"
+        },
+        {
+          "label": "B",
+          "text": "Battery charger : Battery"
+        },
+        {
+          "label": "C",
+          "text": "Blueprint : Building"
+        },
+        {
+          "label": "D",
+          "text": "Turbine blade : Turbine"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A key is a component of a keyboard, just as a blade is a component of a turbine. User, plan and accessory relations do not fit."
+    },
+    {
+      "id": "02-022",
+      "number": 22,
+      "question": "The number pairs (5, 35), (9, 99) and (6, 48) follow a common product rule. Which further pair fits without splitting digits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(11, 132)"
+        },
+        {
+          "label": "B",
+          "text": "(10, 100)"
+        },
+        {
+          "label": "C",
+          "text": "(12, 168)"
+        },
+        {
+          "label": "D",
+          "text": "(8, 72)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use n(n+2): 5×7=35 and 9×11=99. The matching pair is 12×14=168."
+    },
+    {
+      "id": "02-023",
+      "number": 23,
+      "question": "A ledger uses the code changes D16 → W4 and J100 → Q10. Identify the matching output for N196; letter and number operations are independent.",
+      "options": [
+        {
+          "label": "A",
+          "text": "L14"
+        },
+        {
+          "label": "B",
+          "text": "M14"
+        },
+        {
+          "label": "C",
+          "text": "N14"
+        },
+        {
+          "label": "D",
+          "text": "M98"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Replace the letter with its opposite and take the positive square root of the number. N is opposite M, and √196=14, giving M14."
+    },
+    {
+      "id": "02-024",
+      "number": 24,
+      "question": "Only the order is reversed in CFJM : MJFC. Apply that relation to RUVX.",
+      "options": [
+        {
+          "label": "A",
+          "text": "XUVR"
+        },
+        {
+          "label": "B",
+          "text": "URXV"
+        },
+        {
+          "label": "C",
+          "text": "XVUR"
+        },
+        {
+          "label": "D",
+          "text": "RVUX"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Read RUVX from right to left: X, V, U, R."
+    },
+    {
+      "id": "02-025",
+      "number": 25,
+      "question": "Three entries use the same cube-to-cube-root relation: 216 : 6; 1000 : 10; 2744 : X. Find X.",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The output is the cube root: 14×14×14=2744. Thus X=14."
+    }
+  ]
+}
