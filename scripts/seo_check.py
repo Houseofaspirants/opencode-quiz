@@ -2400,7 +2400,8 @@ for frag, why in (
         errors.append(f"core.js: Clarity missing {why} ({frag!r})")
 for page in PAGES:
     html = read_audit_source(ROOT / page, encoding="utf-8")
-    if "clarity" in html.lower():
+    # The loader's own markers, not the word: quiz text may say "clarity".
+    if re.search(r"clarity\.ms|\bclarity\s*\(", html, re.I):
         errors.append(f"{page}: Clarity must ship only from core.js, not inline")
     if "assets/js/core.js" not in html:
         errors.append(f"{page}: missing core.js — analytics/Clarity coverage broken")
