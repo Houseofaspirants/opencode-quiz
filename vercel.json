@@ -816,6 +816,26 @@
       "permanent": true
     },
     {
+      "source": "/pa/quiz-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part1",
+      "destination": "/pa/quiz-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part1",
+      "destination": "/pa/quiz-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part2",
+      "destination": "/pa/quiz-punjabi-part2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/quiz-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part2",
+      "destination": "/pa/quiz-punjabi-part2",
+      "statusCode": 301
+    },
+    {
       "source": "/pa/quiz-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/pa/quiz-quant-01-number-system-part-1",
       "statusCode": 301
@@ -933,6 +953,26 @@
     {
       "source": "/pa/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
       "destination": "/pa/quiz-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part1",
+      "destination": "/pa/topic-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part1",
+      "destination": "/pa/topic-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part2",
+      "destination": "/pa/topic-punjabi-part2",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/topic-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part2",
+      "destination": "/pa/topic-punjabi-part2",
       "statusCode": 301
     },
     {
@@ -1056,6 +1096,26 @@
       "statusCode": 301
     },
     {
+      "source": "/quiz-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part1",
+      "destination": "/quiz-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part1",
+      "destination": "/quiz-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part2",
+      "destination": "/quiz-punjabi-part2",
+      "statusCode": 301
+    },
+    {
+      "source": "/quiz-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part2",
+      "destination": "/quiz-punjabi-part2",
+      "statusCode": 301
+    },
+    {
       "source": "/quiz-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/quiz-quant-01-number-system-part-1",
       "statusCode": 301
@@ -1173,6 +1233,26 @@
     {
       "source": "/quiz-reasoning-02%20-%20Analogy%20-%20MCQ%20-%20EN%20-%20Part%204",
       "destination": "/quiz-reasoning-02-analogy-part-4",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part1",
+      "destination": "/topic-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part1",
+      "destination": "/topic-punjabi-part1",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-punjabi-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ-part2",
+      "destination": "/topic-punjabi-part2",
+      "statusCode": 301
+    },
+    {
+      "source": "/topic-punjabi-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-%E0%A8%85%E0%A8%A4%E0%A9%87-%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80-%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE-part2",
+      "destination": "/topic-punjabi-part2",
       "statusCode": 301
     },
     {
