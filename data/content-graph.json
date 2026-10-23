@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 575,
+  "nodes": 576,
   "edges": 3372,
   "silos": 35,
-  "clusters": 98,
+  "clusters": 121,
   "pillars": 34
  },
  "nodes": [
@@ -6427,18 +6427,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
-   "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "type": "quiz",
@@ -6465,6 +6453,30 @@
   {
    "id": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
    "url": "/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11457,12 +11469,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11493,7 +11499,13 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28034,7 +28046,31 @@
    "name": "Punjabi",
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-punjabi.html",
-   "clusters": [],
+   "clusters": [
+    "category-punjabi-01-punjabi-bhasha-language.html",
+    "category-punjabi-02-gurmukhi-lipi-bodh.html",
+    "category-punjabi-03-shabad-bodh.html",
+    "category-punjabi-04-naanv-noun.html",
+    "category-punjabi-05-ling-gender.html",
+    "category-punjabi-06-vachan-number.html",
+    "category-punjabi-07-karak-case.html",
+    "category-punjabi-08-parnaanv-pronoun.html",
+    "category-punjabi-09-visheshan-adjective.html",
+    "category-punjabi-10-kiriya-visheshan-adverb.html",
+    "category-punjabi-11-sambandhak-postposition.html",
+    "category-punjabi-12-yojak-conjunction.html",
+    "category-punjabi-13-vismik-interjection.html",
+    "category-punjabi-14-samas-compound-words.html",
+    "category-punjabi-15-vaak-bodh-sentence.html",
+    "category-punjabi-16-shudh-ashudh-spelling.html",
+    "category-punjabi-17-muhavare-idioms.html",
+    "category-punjabi-18-samanarthak-virodhi-shabad.html",
+    "category-punjabi-19-akhaan-proverbs.html",
+    "category-punjabi-20-english-to-punjabi-translation.html",
+    "category-punjabi-21-shabad-badal-one-word-substitution.html",
+    "topic-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+    "topic-punjabi-01-punjabi-bhasha-language-mcq-part-2.html"
+   ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",

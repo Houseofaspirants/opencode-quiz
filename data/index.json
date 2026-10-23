@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-23T09:40:04.898Z",
   "stats": {
     "subjects": 7,
-    "categories": 25,
-    "topics": 62,
-    "quizzes": 62,
-    "questions": 1414,
+    "categories": 46,
+    "topics": 64,
+    "quizzes": 64,
+    "questions": 1464,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2458,8 +2458,283 @@
       "color": "#ec4899",
       "description": "Grammar, Muhavare, Akhan, Vocabulary, Literature and more.",
       "order": 4,
-      "topics": [],
-      "categories": [],
+      "topics": [
+        {
+          "id": "01-punjabi-bhasha-language-mcq-part-1",
+          "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 1",
+          "description": "",
+          "file": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792758489961,
+          "category": "01-punjabi-bhasha-language",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 1"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1"
+        },
+        {
+          "id": "01-punjabi-bhasha-language-mcq-part-2",
+          "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 2",
+          "description": "",
+          "file": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-2.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792758489961,
+          "category": "01-punjabi-bhasha-language",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 2"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2"
+        }
+      ],
+      "categories": [
+        {
+          "id": "01-punjabi-bhasha-language",
+          "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ – Punjabi Bhasha (Language)",
+          "folder": "01-punjabi-bhasha-language",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "01-punjabi-bhasha-language-mcq-part-1",
+              "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 1",
+              "description": "",
+              "file": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792758489961,
+              "category": "01-punjabi-bhasha-language",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 1"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1"
+            },
+            {
+              "id": "01-punjabi-bhasha-language-mcq-part-2",
+              "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 2",
+              "description": "",
+              "file": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-2.pa.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792758489961,
+              "category": "01-punjabi-bhasha-language",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ – Part 2"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2"
+            }
+          ],
+          "landing": "/category-punjabi-01-punjabi-bhasha-language"
+        },
+        {
+          "id": "02-gurmukhi-lipi-bodh",
+          "name": "ਲਿਪੀ ਬੋਧ – Gurmukhi Lipi (Script)",
+          "folder": "02-gurmukhi-lipi-bodh",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-02-gurmukhi-lipi-bodh"
+        },
+        {
+          "id": "03-shabad-bodh",
+          "name": "ਸ਼ਬਦ ਬੋਧ – Shabad Bodh (Word Knowledge)",
+          "folder": "03-shabad-bodh",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-03-shabad-bodh"
+        },
+        {
+          "id": "04-naanv-noun",
+          "name": "ਨਾਂਵ – Punjabi Noun (Naanv)",
+          "folder": "04-naanv-noun",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-04-naanv-noun"
+        },
+        {
+          "id": "05-ling-gender",
+          "name": "ਲਿੰਗ – Punjabi Gender (Ling)",
+          "folder": "05-ling-gender",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-05-ling-gender"
+        },
+        {
+          "id": "06-vachan-number",
+          "name": "ਵਚਨ – Punjabi Number (Vachan)",
+          "folder": "06-vachan-number",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-06-vachan-number"
+        },
+        {
+          "id": "07-karak-case",
+          "name": "ਕਾਰਕ – Punjabi Case (Karak)",
+          "folder": "07-karak-case",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-07-karak-case"
+        },
+        {
+          "id": "08-parnaanv-pronoun",
+          "name": "ਪੜਨਾਂਵ – Punjabi Pronoun (Parnaanv)",
+          "folder": "08-parnaanv-pronoun",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-08-parnaanv-pronoun"
+        },
+        {
+          "id": "09-visheshan-adjective",
+          "name": "ਵਿਸ਼ੇਸ਼ਣ – Punjabi Adjective (Visheshan)",
+          "folder": "09-visheshan-adjective",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-09-visheshan-adjective"
+        },
+        {
+          "id": "10-kiriya-visheshan-adverb",
+          "name": "ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ – Punjabi Adverb (Kiriya Visheshan)",
+          "folder": "10-kiriya-visheshan-adverb",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-10-kiriya-visheshan-adverb"
+        },
+        {
+          "id": "11-sambandhak-postposition",
+          "name": "ਸੰਬੰਧਕ – Punjabi Postposition (Sambandhak)",
+          "folder": "11-sambandhak-postposition",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-11-sambandhak-postposition"
+        },
+        {
+          "id": "12-yojak-conjunction",
+          "name": "ਯੋਜਕ – Punjabi Conjunction (Yojak)",
+          "folder": "12-yojak-conjunction",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-12-yojak-conjunction"
+        },
+        {
+          "id": "13-vismik-interjection",
+          "name": "ਵਿਸਮਿਕ – Punjabi Interjection (Vismik)",
+          "folder": "13-vismik-interjection",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-13-vismik-interjection"
+        },
+        {
+          "id": "14-samas-compound-words",
+          "name": "ਸਮਾਸ ਰਚਨਾ – Punjabi Compound Words (Samas)",
+          "folder": "14-samas-compound-words",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-14-samas-compound-words"
+        },
+        {
+          "id": "15-vaak-bodh-sentence",
+          "name": "ਵਾਕ ਬੋਧ – Punjabi Sentence (Vaak Bodh)",
+          "folder": "15-vaak-bodh-sentence",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-15-vaak-bodh-sentence"
+        },
+        {
+          "id": "16-shudh-ashudh-spelling",
+          "name": "ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ – Punjabi Correct Spelling (Shudh Ashudh)",
+          "folder": "16-shudh-ashudh-spelling",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-16-shudh-ashudh-spelling"
+        },
+        {
+          "id": "17-muhavare-idioms",
+          "name": "ਮੁਹਾਵਰੇ – Punjabi Idioms (Muhavare)",
+          "folder": "17-muhavare-idioms",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-17-muhavare-idioms"
+        },
+        {
+          "id": "18-samanarthak-virodhi-shabad",
+          "name": "ਸਮਾਨਾਰਥਕ ਅਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ – Punjabi Synonyms & Antonyms",
+          "folder": "18-samanarthak-virodhi-shabad",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-18-samanarthak-virodhi-shabad"
+        },
+        {
+          "id": "19-akhaan-proverbs",
+          "name": "ਅਖਾਣ – Punjabi Proverbs (Akhaan)",
+          "folder": "19-akhaan-proverbs",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-19-akhaan-proverbs"
+        },
+        {
+          "id": "20-english-to-punjabi-translation",
+          "name": "ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ ਅਨੁਵਾਦ – English to Punjabi Translation",
+          "folder": "20-english-to-punjabi-translation",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-20-english-to-punjabi-translation"
+        },
+        {
+          "id": "21-shabad-badal-one-word-substitution",
+          "name": "ਸ਼ਬਦ ਬਦਲ – Punjabi One Word Substitution (Shabad Badal)",
+          "folder": "21-shabad-badal-one-word-substitution",
+          "icon": "📁",
+          "topics": [],
+          "landing": "/category-punjabi-21-shabad-badal-one-word-substitution"
+        }
+      ],
       "landing": "/subject-punjabi"
     },
     {
@@ -3981,6 +4256,14 @@
     "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
       "5050449425caa85f",
       1790926374843
+    ],
+    "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json": [
+      "ce2f09144266f637",
+      1792758489961
+    ],
+    "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-2.pa.json": [
+      "615607b14fadeab6",
+      1792758489961
     ],
     "questions/quant/01 - Number System - MCQ - EN - Part 1.json": [
       "c3eec0ac9f0fdfe2",
