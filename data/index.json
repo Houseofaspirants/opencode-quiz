@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-23T09:25:02.447Z",
   "stats": {
     "subjects": 7,
-    "categories": 25,
-    "topics": 62,
-    "quizzes": 62,
-    "questions": 1414,
+    "categories": 26,
+    "topics": 64,
+    "quizzes": 64,
+    "questions": 1464,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2458,8 +2458,123 @@
       "color": "#ec4899",
       "description": "Grammar, Muhavare, Akhan, Vocabulary, Literature and more.",
       "order": 4,
-      "topics": [],
-      "categories": [],
+      "topics": [
+        {
+          "id": "punjabi-ch01-language-and-punjabi-language-mcq-part-1",
+          "name": "Punjabi Ch01 Language And Punjabi Language Mcq Part 1",
+          "description": "",
+          "file": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792748352323,
+          "category": "01",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-1.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "Punjabi Ch01 Language And Punjabi Language Mcq Part 1"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1"
+        },
+        {
+          "id": "punjabi-ch01-language-and-punjabi-language-mcq-part-2",
+          "name": "Punjabi Ch01 Language And Punjabi Language Mcq Part 2",
+          "description": "",
+          "file": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792748352323,
+          "category": "01",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-2.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "Punjabi Ch01 Language And Punjabi Language Mcq Part 2"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2"
+        }
+      ],
+      "categories": [
+        {
+          "id": "01",
+          "name": "ਅਧਿਆਇ 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ",
+          "folder": "ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "punjabi-ch01-language-and-punjabi-language-mcq-part-1",
+              "name": "Punjabi Ch01 Language And Punjabi Language Mcq Part 1",
+              "description": "",
+              "file": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792748352323,
+              "category": "01",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-1.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "Punjabi Ch01 Language And Punjabi Language Mcq Part 1"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1"
+            },
+            {
+              "id": "punjabi-ch01-language-and-punjabi-language-mcq-part-2",
+              "name": "Punjabi Ch01 Language And Punjabi Language Mcq Part 2",
+              "description": "",
+              "file": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792748352323,
+              "category": "01",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-2.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "Punjabi Ch01 Language And Punjabi Language Mcq Part 2"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2"
+            }
+          ],
+          "landing": "/category-punjabi-01"
+        }
+      ],
       "landing": "/subject-punjabi"
     },
     {
@@ -3981,6 +4096,14 @@
     "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
       "5050449425caa85f",
       1790926374843
+    ],
+    "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-1.json": [
+      "e9ca1dfa5fa4c99c",
+      1792748352323
+    ],
+    "questions/punjabi/ਅਧਿਆਇ-01-ਭਾਸ਼ਾ-ਅਤੇ-ਪੰਜਾਬੀ-ਭਾਸ਼ਾ/punjabi-ch01-language-and-punjabi-language-mcq-part-2.json": [
+      "8ad53ed6ab0228bb",
+      1792748352323
     ],
     "questions/quant/01 - Number System - MCQ - EN - Part 1.json": [
       "c3eec0ac9f0fdfe2",
