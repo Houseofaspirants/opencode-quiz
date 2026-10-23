@@ -48,7 +48,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 22 | `/category-gk-others` | category | Others Quiz: General Knowledge MCQs for Punjab Exams (52) | 147 | Others MCQs for Punjab Exams | 181 | BreadcrumbList, FAQPage, WebPage |
 | 23 | `/category-reasoning-01-number-series` | category | 01 Number Series Quiz: Reasoning MCQs for Punjab Exams (54) | 156 | 01   Number Series MCQs for Punjab Exams | 206 | BreadcrumbList, FAQPage, WebPage |
 | 24 | `/category-reasoning-02-analogy` | category | 02 Analogy Quiz: Reasoning MCQs for Punjab Exams (48) | 150 | 02   Analogy MCQs for Punjab Exams | 205 | BreadcrumbList, FAQPage, WebPage |
-| 25 | `/category-punjabi-01` | category | 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQs for Punjab Exams (47) | 143 | 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQs for Punjab Exams | 204 | BreadcrumbList, FAQPage, WebPage |
+| 25 | `/category-punjabi-01` | category | ਅਧਿਆਇ 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQs for Punjab Exams (53) | 149 | ਅਧਿਆਇ 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQs for Punjab Exams | 204 | BreadcrumbList, FAQPage, WebPage |
 | 26 | `/category-computer-01-fundamentals-of-computers` | category | 01 Fundamentals Of Computers MCQs for Punjab Exams (50) | 147 | 01   Fundamentals Of Computers MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
 | 27 | `/category-computer-02-evolution-of-computers` | category | 02 Evolution Of Computers MCQs for Punjab Exams (47) | 144 | 02   Evolution Of Computers MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
 | 28 | `/category-computer-03-generations-of-computers` | category | 03 Generations Of Computers MCQs for Punjab Exams (49) | 146 | 03   Generations Of Computers MCQs for Punjab Exams | 207 | BreadcrumbList, FAQPage, WebPage |
@@ -310,7 +310,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 284 | `/pa/category-gk-economy-of-punjab` | category-pa | Punjab Economy MCQ in Punjabi | ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ (50) | 143 | ਪੰਜਾਬ ਦੀ ਅਰਥਵਿਵਸਥਾ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 20 | BreadcrumbList, FAQPage, WebPage |
 | 285 | `/pa/category-reasoning-01-number-series` | category-pa | 01 Number Series MCQ in Punjabi | 01 Number Series (50) | 144 | 01   Number Series MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 26 | BreadcrumbList, FAQPage, WebPage |
 | 286 | `/pa/category-reasoning-02-analogy` | category-pa | 02 Analogy MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 02 Analogy MCQ in Punjabi (54) | 151 | 02   Analogy MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 25 | BreadcrumbList, FAQPage, WebPage |
-| 287 | `/pa/category-punjabi-01` | category-pa | 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ in Punjabi | 01 ਭਾਸ਼ਾ ਅਤੇ (55) | 159 | 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 19 | BreadcrumbList, FAQPage, WebPage |
+| 287 | `/pa/category-punjabi-01` | category-pa | ਅਧਿਆਇ 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ in Punjabi | ਅਧਿਆਇ 01 (57) | 154 | ਅਧਿਆਇ 01 ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 19 | BreadcrumbList, FAQPage, WebPage |
 | 288 | `/pa/category-computer-01-fundamentals-of-computers` | category-pa | Computer Fundamentals MCQ in Punjabi | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ (56) | 157 | ਕੰਪਿਊਟਰ ਦੀ ਮੁੱਢਲੀ ਜਾਣਕਾਰੀ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 20 | BreadcrumbList, FAQPage, WebPage |
 | 289 | `/pa/category-computer-02-evolution-of-computers` | category-pa | Evolution of Computers MCQ in Punjabi | ਕੰਪਿਊਟਰ ਦਾ ਵਿਕਾਸ (56) | 149 | ਕੰਪਿਊਟਰ ਦਾ ਵਿਕਾਸ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 18 | BreadcrumbList, FAQPage, WebPage |
 | 290 | `/pa/category-computer-03-generations-of-computers` | category-pa | Generations of Computers MCQ in Punjabi | ਕੰਪਿਊਟਰ ਦੀਆਂ (54) | 156 | ਕੰਪਿਊਟਰ ਦੀਆਂ ਪੀੜ੍ਹੀਆਂ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 20 | BreadcrumbList, FAQPage, WebPage |
