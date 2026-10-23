@@ -686,21 +686,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 31,
-      "newest": "2026-10-19",
-      "totalSize": 63172675,
-      "chapters": 25,
+      "count": 32,
+      "newest": "2026-10-23",
+      "totalSize": 64923306,
+      "chapters": 26,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 31,
-          "chapters": 25,
-          "pages": 149,
-          "totalSize": 63172675,
-          "newest": "2026-10-19",
+          "files": 32,
+          "chapters": 26,
+          "pages": 155,
+          "totalSize": 64923306,
+          "newest": "2026-10-23",
           "categories": 12,
           "regions": 2
         },
@@ -710,11 +710,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 11,
-              "chapters": 8,
-              "pages": 45,
-              "totalSize": 27460234,
-              "newest": "2026-10-18",
+              "files": 12,
+              "chapters": 9,
+              "pages": 51,
+              "totalSize": 29210865,
+              "newest": "2026-10-23",
               "categories": 6
             },
             "categories": [
@@ -999,11 +999,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 3,
-                  "chapters": 3,
-                  "pages": 27,
-                  "totalSize": 6486330,
-                  "newest": "2026-10-16"
+                  "files": 4,
+                  "chapters": 4,
+                  "pages": 33,
+                  "totalSize": 8236961,
+                  "newest": "2026-10-23"
                 },
                 "languages": [
                   {
@@ -1031,7 +1031,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 2,
+                    "count": 3,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1043,6 +1043,17 @@
                           }
                         ],
                         "pages": 7
+                      },
+                      {
+                        "id": "Chapter 02 - Preamble and Parts of the Constitution",
+                        "name": "Chapter 02: Preamble and Parts of the Constitution",
+                        "parts": [
+                          {
+                            "file": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 6
                       },
                       {
                         "id": "important-articles-of-indian-constitution-notes-english",
@@ -1683,7 +1694,7 @@
         ]
       },
       "counts": {
-        "en": 16,
+        "en": 17,
         "pa": 15
       },
       "pages": {
@@ -1699,9 +1710,9 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 3,
-      "newest": "2026-10-16",
-      "totalSize": 6486330,
+      "count": 4,
+      "newest": "2026-10-23",
+      "totalSize": 8236961,
       "languages": [
         {
           "id": "pa",
@@ -1728,7 +1739,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1740,6 +1751,17 @@
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "Chapter 02 - Preamble and Parts of the Constitution",
+              "name": "Chapter 02: Preamble and Parts of the Constitution",
+              "parts": [
+                {
+                  "file": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 6
             },
             {
               "id": "important-articles-of-indian-constitution-notes-english",
@@ -1755,10 +1777,10 @@
           ]
         }
       ],
-      "chapters": 3,
+      "chapters": 4,
       "hidden": true,
       "counts": {
-        "en": 2,
+        "en": 3,
         "pa": 1
       },
       "pages": {
@@ -2528,6 +2550,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 73,
+  "total": 74,
   "generatedBy": "scripts/study_material.py"
 }

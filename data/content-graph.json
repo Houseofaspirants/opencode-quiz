@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 596,
-  "edges": 3477,
+  "nodes": 599,
+  "edges": 3496,
   "silos": 35,
   "clusters": 98,
   "pillars": 34
@@ -2454,6 +2454,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
+   "url": "/content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/polity/important-articles-of-indian-constitution-notes-english.pdf",
    "url": "/content/study-material/polity/important-articles-of-indian-constitution-notes-english.pdf",
    "type": "page",
@@ -4343,6 +4355,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: Number System (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-preamble-and-parts-of-the-constitution-notes-english",
+   "url": "/material-preamble-and-parts-of-the-constitution-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "url": "/material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 02: Preamble and Parts of the Constitution (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8126,6 +8162,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-polity.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-preparation-strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -10282,6 +10324,12 @@
   {
    "from": "archives.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15897,8 +15945,8 @@
   },
   {
    "from": "material-important-articles-of-indian-constitution-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -15981,13 +16029,13 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16071,13 +16119,13 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16167,8 +16215,8 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -16257,8 +16305,8 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -16353,14 +16401,104 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "quiz-gk-01-making-of-the-indian-constitution-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "study-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-important-articles-of-indian-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -16443,13 +16581,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16533,13 +16671,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19077,7 +19215,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19167,7 +19305,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19257,7 +19395,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19341,13 +19479,13 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-notes-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19431,13 +19569,13 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-rivers-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21741,12 +21879,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -21796,6 +21928,12 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/polity/english/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution/making-of-indian-constitution-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -21951,12 +22089,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -21982,6 +22114,12 @@
   {
    "from": "pdfs.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27345,6 +27483,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/polity/important-articles-of-indian-constitution-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27771,6 +27915,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-punjab-economy-agriculture-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28047,12 +28197,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28102,6 +28246,12 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/polity/english/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution/making-of-indian-constitution-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/polity/english/Chapter%2002%20-%20Preamble%20and%20Parts%20of%20the%20Constitution/preamble-and-parts-of-the-constitution-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28263,12 +28413,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28294,6 +28438,12 @@
   {
    "from": "study-notes.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
