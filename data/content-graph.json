@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 575,
+  "nodes": 576,
   "edges": 3372,
   "silos": 35,
-  "clusters": 98,
+  "clusters": 101,
   "pillars": 34
  },
  "nodes": [
@@ -6427,18 +6427,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
-   "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "type": "quiz",
@@ -6465,6 +6453,30 @@
   {
    "id": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
    "url": "/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-part1.html",
+   "url": "/quiz-punjabi-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-part2.html",
+   "url": "/quiz-punjabi-part2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11457,12 +11469,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11493,7 +11499,13 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
+   "to": "quiz-punjabi-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-part2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28034,7 +28046,11 @@
    "name": "Punjabi",
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-punjabi.html",
-   "clusters": [],
+   "clusters": [
+    "category-punjabi-01.html",
+    "topic-punjabi-part1.html",
+    "topic-punjabi-part2.html"
+   ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
