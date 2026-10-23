@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 576,
+  "nodes": 575,
   "edges": 3372,
   "silos": 35,
-  "clusters": 101,
+  "clusters": 98,
   "pillars": 34
  },
  "nodes": [
@@ -6427,6 +6427,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
+   "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "type": "quiz",
@@ -6453,30 +6465,6 @@
   {
    "id": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
    "url": "/quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1.html",
-   "url": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2.html",
-   "url": "/quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11469,6 +11457,12 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11499,13 +11493,7 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2.html",
+   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17103,12 +17091,6 @@
   },
   {
    "from": "material-punjabi-grammar-punjabi-bhasha-language-notes.html",
-   "to": "quiz-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-punjabi-bhasha-language-notes.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -17116,6 +17098,12 @@
   {
    "from": "material-punjabi-grammar-punjabi-bhasha-language-notes.html",
    "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-punjabi-bhasha-language-notes.html",
+   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28046,11 +28034,7 @@
    "name": "Punjabi",
    "pillar": "punjab-police-exam-preparation.html",
    "hub": "subject-punjabi.html",
-   "clusters": [
-    "category-punjabi-01.html",
-    "topic-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-1.html",
-    "topic-punjabi-punjabi-ch01-language-and-punjabi-language-mcq-part-2.html"
-   ],
+   "clusters": [],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
