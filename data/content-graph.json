@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 599,
-  "edges": 3496,
+  "nodes": 602,
+  "edges": 3518,
   "silos": 35,
   "clusters": 98,
   "pillars": 34
@@ -2490,6 +2490,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
+   "url": "/content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/punjabi/punjabi/01%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%28Language%29/punjabi-grammar-punjabi-bhasha-language-notes.pdf",
    "url": "/content/study-material/punjabi/punjabi/01%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%28Language%29/punjabi-grammar-punjabi-bhasha-language-notes.pdf",
    "type": "page",
@@ -4379,6 +4391,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 02: Preamble and Parts of the Constitution (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-preamble-and-parts-of-the-constitution-notes-punjabi",
+   "url": "/material-preamble-and-parts-of-the-constitution-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "url": "/material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 02 ਸੰਵਿਧਾਨ ਦੀ ਪ੍ਰਸਤਾਵਨਾ ਅਤੇ ਭਾਗ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8168,6 +8204,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-polity.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-preparation-strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -10330,6 +10372,12 @@
   {
    "from": "archives.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15950,6 +15998,12 @@
    "weight": 1
   },
   {
+   "from": "material-important-articles-of-indian-constitution-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16035,7 +16089,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16125,7 +16179,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16220,6 +16274,12 @@
    "weight": 1
   },
   {
+   "from": "material-making-of-indian-constitution-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16293,12 +16353,6 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-important-articles-of-indian-constitution-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-making-of-indian-constitution-notes-punjabi.html",
    "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -16306,6 +16360,12 @@
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-making-of-indian-constitution-notes-punjabi.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -16407,7 +16467,7 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16502,6 +16562,102 @@
    "weight": 1
   },
   {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "pa/study-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
    "from": "material-punjab-economy-agriculture-notes-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16587,7 +16743,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16677,7 +16833,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19485,7 +19641,7 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19575,7 +19731,7 @@
   },
   {
    "from": "material-rivers-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21873,12 +22029,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -21940,6 +22090,12 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3/making-of-indian-constitution-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -22047,12 +22203,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -22120,6 +22270,12 @@
   {
    "from": "pdfs.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27501,6 +27657,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/punjabi/punjabi/01%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%E0%A9%80%20%E0%A8%AD%E0%A8%BE%E0%A8%B8%E0%A8%BC%E0%A8%BE%20%28Language%29/punjabi-grammar-punjabi-bhasha-language-notes.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27921,6 +28083,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-punjab-economy-agriculture-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28191,12 +28359,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28258,6 +28420,12 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3/making-of-indian-constitution-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2002%20-%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%A4%E0%A8%BE%E0%A8%B5%E0%A8%A8%E0%A8%BE%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AD%E0%A8%BE%E0%A8%97/preamble-and-parts-of-the-constitution-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28371,12 +28539,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28444,6 +28606,12 @@
   {
    "from": "study-notes.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
