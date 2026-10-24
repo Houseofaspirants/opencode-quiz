@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 576,
-  "edges": 3372,
+  "nodes": 579,
+  "edges": 3388,
   "silos": 35,
   "clusters": 121,
   "pillars": 34
@@ -2058,6 +2058,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "url": "/content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/economy/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/indian-economy-basic-concepts-notes-punjabi.pdf",
    "url": "/content/study-material/economy/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/indian-economy-basic-concepts-notes-punjabi.pdf",
    "type": "page",
@@ -3611,6 +3623,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਈਸਟ ਇੰਡੀਆ ਕੰਪਨੀ ਦਾ ਵਿਸਥਾਰ - ਪੂਰੀ PDF",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-economic-planning-and-five-year-plans-notes-english",
+   "url": "/material-economic-planning-and-five-year-plans-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "url": "/material-economic-planning-and-five-year-plans-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 02: Economic Planning Five Year Plans (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -7557,13 +7593,13 @@
   },
   {
    "from": "archive-category-economy.html",
-   "to": "current-affairs.html",
+   "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-economy.html",
-   "to": "index.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7576,24 +7612,6 @@
   {
    "from": "archive-category-economy.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-economy.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-economy.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-economy.html",
-   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9790,6 +9808,12 @@
   {
    "from": "archives.html",
    "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13316,6 +13340,96 @@
    "weight": 1
   },
   {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-english-grammar-clauses-and-phrases-notes.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -15345,6 +15459,12 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-english.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
@@ -15352,12 +15472,6 @@
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15435,6 +15549,12 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -15442,12 +15562,6 @@
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15723,6 +15837,12 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-number-system-notes-punjabi-english.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
@@ -15993,13 +16113,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16083,13 +16203,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18447,7 +18567,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18537,7 +18657,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18627,7 +18747,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20871,6 +20991,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "content/study-material/economy/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/indian-economy-basic-concepts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -20926,12 +21052,6 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -21045,12 +21165,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -21082,6 +21196,12 @@
   {
    "from": "pdfs.html",
    "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26349,6 +26469,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/economy/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/indian-economy-basic-concepts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -26769,6 +26895,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-english-grammar-clauses-and-phrases-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -27117,6 +27249,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/economy/english/Chapter%2002%20-%20Economic%20Planning%20%26%20Five%20Year%20Plans/economic-planning-and-five-year-plans-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "content/study-material/economy/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%85%E0%A8%B0%E0%A8%A5%E0%A8%B5%E0%A8%BF%E0%A8%B5%E0%A8%B8%E0%A8%A5%E0%A8%BE%20%E0%A8%A6%E0%A9%87%20%E0%A8%AE%E0%A9%81%E0%A9%B1%E0%A8%A2%E0%A8%B2%E0%A9%87%20%E0%A8%B8%E0%A9%B0%E0%A8%95%E0%A8%B2%E0%A8%AA%20%28Basic%20Concepts%20of%20Economy%29/indian-economy-basic-concepts-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27172,12 +27310,6 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -27297,12 +27429,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -27334,6 +27460,12 @@
   {
    "from": "study-notes.html",
    "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },

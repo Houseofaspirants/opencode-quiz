@@ -686,21 +686,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 26,
-      "newest": "2026-10-23",
-      "totalSize": 53130200,
-      "chapters": 23,
+      "count": 27,
+      "newest": "2026-10-24",
+      "totalSize": 54892827,
+      "chapters": 24,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 26,
-          "chapters": 23,
-          "pages": 110,
-          "totalSize": 53130200,
-          "newest": "2026-10-23",
+          "files": 27,
+          "chapters": 24,
+          "pages": 115,
+          "totalSize": 54892827,
+          "newest": "2026-10-24",
           "categories": 12,
           "regions": 2
         },
@@ -710,11 +710,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 12,
-              "chapters": 9,
-              "pages": 46,
-              "totalSize": 28471433,
-              "newest": "2026-10-23",
+              "files": 13,
+              "chapters": 10,
+              "pages": 51,
+              "totalSize": 30234060,
+              "newest": "2026-10-24",
               "categories": 6
             },
             "categories": [
@@ -1150,11 +1150,11 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 2,
-                  "chapters": 2,
-                  "pages": 12,
-                  "totalSize": 3595564,
-                  "newest": "2026-10-17"
+                  "files": 3,
+                  "chapters": 3,
+                  "pages": 17,
+                  "totalSize": 5358191,
+                  "newest": "2026-10-24"
                 },
                 "languages": [
                   {
@@ -1182,7 +1182,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Basic Concepts of Economy",
@@ -1194,6 +1194,17 @@
                           }
                         ],
                         "pages": 6
+                      },
+                      {
+                        "id": "Chapter 02 - Economic Planning & Five Year Plans",
+                        "name": "Chapter 02: Economic Planning Five Year Plans",
+                        "parts": [
+                          {
+                            "file": "material-economic-planning-and-five-year-plans-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
                   }
@@ -1624,7 +1635,7 @@
         ]
       },
       "counts": {
-        "en": 13,
+        "en": 14,
         "pa": 13
       },
       "pages": {
@@ -1874,9 +1885,9 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 2,
-      "newest": "2026-10-17",
-      "totalSize": 3595564,
+      "count": 3,
+      "newest": "2026-10-24",
+      "totalSize": 5358191,
       "languages": [
         {
           "id": "pa",
@@ -1903,7 +1914,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "Chapter 01 - Basic Concepts of Economy",
@@ -1915,14 +1926,25 @@
                 }
               ],
               "pages": 6
+            },
+            {
+              "id": "Chapter 02 - Economic Planning & Five Year Plans",
+              "name": "Chapter 02: Economic Planning Five Year Plans",
+              "parts": [
+                {
+                  "file": "material-economic-planning-and-five-year-plans-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
             }
           ]
         }
       ],
-      "chapters": 2,
+      "chapters": 3,
       "hidden": true,
       "counts": {
-        "en": 1,
+        "en": 2,
         "pa": 1
       },
       "pages": {
@@ -2410,6 +2432,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 68,
+  "total": 69,
   "generatedBy": "scripts/study_material.py"
 }
