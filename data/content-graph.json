@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 582,
+  "nodes": 583,
   "edges": 3407,
   "silos": 35,
-  "clusters": 121,
+  "clusters": 124,
   "pillars": 34
  },
  "nodes": [
@@ -6439,6 +6439,42 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-economic-planning-five-year-plans-part-1.html",
+   "url": "/quiz-gk-economic-planning-five-year-plans-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-economic-planning-five-year-plans-part-2.html",
+   "url": "/quiz-gk-economic-planning-five-year-plans-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-economic-planning-five-year-plans-part-3.html",
+   "url": "/quiz-gk-economic-planning-five-year-plans-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "type": "quiz",
@@ -6463,32 +6499,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
-   "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
    "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
-   "url": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11541,6 +11553,24 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-economic-planning-five-year-plans-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-economic-planning-five-year-plans-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11548,24 +11578,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13419,7 +13431,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
+   "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13509,13 +13521,13 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28296,6 +28308,9 @@
     "topic-gk-basic-concepts-of-economy-part-1.html",
     "topic-gk-basic-concepts-of-economy-part-2.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
+    "topic-gk-economic-planning-five-year-plans-part-1.html",
+    "topic-gk-economic-planning-five-year-plans-part-2.html",
+    "topic-gk-economic-planning-five-year-plans-part-3.html",
     "topic-gk-expansion-of-english-east-india-company-in-india-part-1.html",
     "topic-gk-expansion-of-english-east-india-company-in-india-part-2.html",
     "topic-gk-expansion-of-english-east-india-company-in-india-part-3.html",
