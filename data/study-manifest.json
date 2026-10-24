@@ -686,20 +686,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 27,
+      "count": 28,
       "newest": "2026-10-24",
-      "totalSize": 54892827,
-      "chapters": 24,
+      "totalSize": 56720044,
+      "chapters": 25,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 27,
-          "chapters": 24,
-          "pages": 115,
-          "totalSize": 54892827,
+          "files": 28,
+          "chapters": 25,
+          "pages": 120,
+          "totalSize": 56720044,
           "newest": "2026-10-24",
           "categories": 12,
           "regions": 2
@@ -710,10 +710,10 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 13,
-              "chapters": 10,
-              "pages": 51,
-              "totalSize": 30234060,
+              "files": 14,
+              "chapters": 11,
+              "pages": 56,
+              "totalSize": 32061277,
               "newest": "2026-10-24",
               "categories": 6
             },
@@ -1150,10 +1150,10 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 3,
-                  "chapters": 3,
-                  "pages": 17,
-                  "totalSize": 5358191,
+                  "files": 4,
+                  "chapters": 4,
+                  "pages": 22,
+                  "totalSize": 7185408,
                   "newest": "2026-10-24"
                 },
                 "languages": [
@@ -1162,7 +1162,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -1174,6 +1174,17 @@
                           }
                         ],
                         "pages": 6
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 02 - ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ (Economic Planning & Five Year Plans)",
+                        "name": "ਅਧਿਆਇ 02 ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ Economic",
+                        "parts": [
+                          {
+                            "file": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
                   },
@@ -1636,7 +1647,7 @@
       },
       "counts": {
         "en": 14,
-        "pa": 13
+        "pa": 14
       },
       "pages": {
         "en": "study-gk.html",
@@ -1885,16 +1896,16 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 3,
+      "count": 4,
       "newest": "2026-10-24",
-      "totalSize": 5358191,
+      "totalSize": 7185408,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -1906,6 +1917,17 @@
                 }
               ],
               "pages": 6
+            },
+            {
+              "id": "ਅਧਿਆਇ 02 - ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ (Economic Planning & Five Year Plans)",
+              "name": "ਅਧਿਆਇ 02 ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ Economic",
+              "parts": [
+                {
+                  "file": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
             }
           ]
         },
@@ -1941,11 +1963,11 @@
           ]
         }
       ],
-      "chapters": 3,
+      "chapters": 4,
       "hidden": true,
       "counts": {
         "en": 2,
-        "pa": 1
+        "pa": 2
       },
       "pages": {
         "en": "study-economy.html",
@@ -2432,6 +2454,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 69,
+  "total": 70,
   "generatedBy": "scripts/study_material.py"
 }

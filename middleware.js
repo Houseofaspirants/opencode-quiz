@@ -36,6 +36,7 @@ const MAP = {
   "subject=economy&language=en&chapter=Chapter 02 - Economic Planning & Five Year Plans": "/material-economic-planning-and-five-year-plans-notes-english",
   "subject=economy&language=pa": "/pa/study-economy",
   "subject=economy&language=pa&chapter=ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)": "/material-indian-economy-basic-concepts-notes-punjabi",
+  "subject=economy&language=pa&chapter=ਅਧਿਆਇ 02 - ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ (Economic Planning & Five Year Plans)": "/material-economic-planning-and-five-year-plans-notes-punjabi",
   "subject=economy-of-punjab": "/study-economy-of-punjab",
   "subject=economy-of-punjab&language=en": "/study-economy-of-punjab",
   "subject=economy-of-punjab&language=en&chapter=01 - Financial Position and Agriculture of Punjab": "/material-punjab-economy-agriculture-notes-english",
