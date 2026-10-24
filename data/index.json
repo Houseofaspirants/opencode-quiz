@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 46,
-    "topics": 64,
-    "quizzes": 64,
-    "questions": 1464,
+    "topics": 67,
+    "quizzes": 67,
+    "questions": 1518,
     "studentsPracticed": 12500
   },
   "site": {
@@ -268,6 +268,96 @@
             "pa": 20
           },
           "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
+        },
+        {
+          "id": "economic-planning-five-year-plans-part-1",
+          "name": "Economic Planning & Five Year Plans - Part 1",
+          "description": "",
+          "file": "questions/gk/economy/economic-planning-five-year-plans-part-1.en.json",
+          "count": 18,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792847850888,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/economic-planning-five-year-plans-part-1.en.json",
+            "pa": "questions/gk/economy/economic-planning-five-year-plans-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Economic Planning & Five Year Plans - Part 1",
+            "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 1"
+          },
+          "counts": {
+            "en": 18,
+            "pa": 18
+          },
+          "landing": "/quiz-gk-economic-planning-five-year-plans-part-1"
+        },
+        {
+          "id": "economic-planning-five-year-plans-part-2",
+          "name": "Economic Planning & Five Year Plans - Part 2",
+          "description": "",
+          "file": "questions/gk/economy/economic-planning-five-year-plans-part-2.en.json",
+          "count": 18,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792847850888,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/economic-planning-five-year-plans-part-2.en.json",
+            "pa": "questions/gk/economy/economic-planning-five-year-plans-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Economic Planning & Five Year Plans - Part 2",
+            "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 2"
+          },
+          "counts": {
+            "en": 18,
+            "pa": 18
+          },
+          "landing": "/quiz-gk-economic-planning-five-year-plans-part-2"
+        },
+        {
+          "id": "economic-planning-five-year-plans-part-3",
+          "name": "Economic Planning & Five Year Plans - Part 3",
+          "description": "",
+          "file": "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json",
+          "count": 18,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792847850888,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json",
+            "pa": "questions/gk/economy/economic-planning-five-year-plans-part-3.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Economic Planning & Five Year Plans - Part 3",
+            "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 3"
+          },
+          "counts": {
+            "en": 18,
+            "pa": 18
+          },
+          "landing": "/quiz-gk-economic-planning-five-year-plans-part-3"
         },
         {
           "id": "expansion-of-english-east-india-company-in-india-part-1",
@@ -1316,6 +1406,96 @@
                 "pa": 18
               },
               "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
+            },
+            {
+              "id": "economic-planning-five-year-plans-part-1",
+              "name": "Economic Planning & Five Year Plans - Part 1",
+              "description": "",
+              "file": "questions/gk/economy/economic-planning-five-year-plans-part-1.en.json",
+              "count": 18,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792847850888,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/economic-planning-five-year-plans-part-1.en.json",
+                "pa": "questions/gk/economy/economic-planning-five-year-plans-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Economic Planning & Five Year Plans - Part 1",
+                "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 1"
+              },
+              "counts": {
+                "en": 18,
+                "pa": 18
+              },
+              "landing": "/quiz-gk-economic-planning-five-year-plans-part-1"
+            },
+            {
+              "id": "economic-planning-five-year-plans-part-2",
+              "name": "Economic Planning & Five Year Plans - Part 2",
+              "description": "",
+              "file": "questions/gk/economy/economic-planning-five-year-plans-part-2.en.json",
+              "count": 18,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792847850888,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/economic-planning-five-year-plans-part-2.en.json",
+                "pa": "questions/gk/economy/economic-planning-five-year-plans-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Economic Planning & Five Year Plans - Part 2",
+                "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 2"
+              },
+              "counts": {
+                "en": 18,
+                "pa": 18
+              },
+              "landing": "/quiz-gk-economic-planning-five-year-plans-part-2"
+            },
+            {
+              "id": "economic-planning-five-year-plans-part-3",
+              "name": "Economic Planning & Five Year Plans - Part 3",
+              "description": "",
+              "file": "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json",
+              "count": 18,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792847850888,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json",
+                "pa": "questions/gk/economy/economic-planning-five-year-plans-part-3.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Economic Planning & Five Year Plans - Part 3",
+                "pa": "ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ - Part 3"
+              },
+              "counts": {
+                "en": 18,
+                "pa": 18
+              },
+              "landing": "/quiz-gk-economic-planning-five-year-plans-part-3"
             }
           ],
           "landing": "/category-gk-economy"
@@ -4164,6 +4344,18 @@
     "questions/gk/economy/basic-concepts-of-economy-part-2.en.json": [
       "7c533f01cba78c78",
       1792234581862
+    ],
+    "questions/gk/economy/economic-planning-five-year-plans-part-1.en.json": [
+      "4b010e56fea631bc",
+      1792847850888
+    ],
+    "questions/gk/economy/economic-planning-five-year-plans-part-2.en.json": [
+      "30128b7f78172728",
+      1792847850888
+    ],
+    "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json": [
+      "2a24c0869a888726",
+      1792847850888
     ],
     "questions/gk/history-of-punjab/03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.en.json": [
       "3ecc3802286b818a",
