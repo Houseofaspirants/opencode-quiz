@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 46,
-    "topics": 67,
-    "quizzes": 67,
-    "questions": 1518,
+    "topics": 69,
+    "quizzes": 69,
+    "questions": 1548,
     "studentsPracticed": 12500
   },
   "site": {
@@ -958,6 +958,66 @@
             "pa": 25
           },
           "landing": "/quiz-gk-01-making-of-the-indian-constitution-part2"
+        },
+        {
+          "id": "01-punjabi-language-script-calendar-part-1",
+          "name": "Punjabi Language, Script and Calendar - Part 1",
+          "description": "",
+          "file": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json",
+          "count": 15,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792931139008,
+          "category": "culture-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json",
+            "pa": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Punjabi Language, Script and Calendar - Part 1",
+            "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ - Part 1"
+          },
+          "counts": {
+            "en": 15,
+            "pa": 15
+          },
+          "landing": "/quiz-gk-01-punjabi-language-script-calendar-part-1"
+        },
+        {
+          "id": "01-punjabi-language-script-calendar-part-2",
+          "name": "Punjabi Language, Script and Calendar - Part 2",
+          "description": "",
+          "file": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.en.json",
+          "count": 15,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1792931139008,
+          "category": "culture-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.en.json",
+            "pa": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Punjabi Language, Script and Calendar - Part 2",
+            "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ - Part 2"
+          },
+          "counts": {
+            "en": 15,
+            "pa": 15
+          },
+          "landing": "/quiz-gk-01-punjabi-language-script-calendar-part-2"
         }
       ],
       "categories": [
@@ -1890,7 +1950,68 @@
           "name": "Culture of Punjab",
           "folder": "culture-of-punjab",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "01-punjabi-language-script-calendar-part-1",
+              "name": "Punjabi Language, Script and Calendar - Part 1",
+              "description": "",
+              "file": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json",
+              "count": 15,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792931139008,
+              "category": "culture-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json",
+                "pa": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Punjabi Language, Script and Calendar - Part 1",
+                "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ - Part 1"
+              },
+              "counts": {
+                "en": 15,
+                "pa": 15
+              },
+              "landing": "/quiz-gk-01-punjabi-language-script-calendar-part-1"
+            },
+            {
+              "id": "01-punjabi-language-script-calendar-part-2",
+              "name": "Punjabi Language, Script and Calendar - Part 2",
+              "description": "",
+              "file": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.en.json",
+              "count": 15,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1792931139008,
+              "category": "culture-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.en.json",
+                "pa": "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Punjabi Language, Script and Calendar - Part 2",
+                "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ - Part 2"
+              },
+              "counts": {
+                "en": 15,
+                "pa": 15
+              },
+              "landing": "/quiz-gk-01-punjabi-language-script-calendar-part-2"
+            }
+          ],
           "landing": "/category-gk-culture-of-punjab"
         },
         {
@@ -4328,6 +4449,14 @@
     "questions/english/05-subject-and-predicate-complete-and-simple-forms-part-1.en.json": [
       "9962cffbf1d66552",
       1792229193819
+    ],
+    "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json": [
+      "c1daaeacfdc72a75",
+      1792931139008
+    ],
+    "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-2.en.json": [
+      "ffdeb40952e70a2f",
+      1792931139008
     ],
     "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-1.en.json": [
       "acf5d2c4abcf5afd",

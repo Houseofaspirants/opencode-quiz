@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 592,
+  "nodes": 593,
   "edges": 3452,
   "silos": 35,
-  "clusters": 124,
+  "clusters": 126,
   "pillars": 34
  },
  "nodes": [
@@ -6451,6 +6451,30 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
+   "url": "/quiz-gk-01-punjabi-language-script-calendar-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-01-punjabi-language-script-calendar-part-2.html",
+   "url": "/quiz-gk-01-punjabi-language-script-calendar-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
    "url": "/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
    "type": "quiz",
@@ -6573,18 +6597,6 @@
   {
    "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-2.html",
-   "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11715,6 +11727,18 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-01-punjabi-language-script-calendar-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11740,18 +11764,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-economic-planning-five-year-plans-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18837,7 +18849,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "to": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28674,6 +28686,8 @@
     "topic-gk-01-financial-position-and-agriculture-of-punjab-part-2.html",
     "topic-gk-01-making-of-the-indian-constitution-part1.html",
     "topic-gk-01-making-of-the-indian-constitution-part2.html",
+    "topic-gk-01-punjabi-language-script-calendar-part-1.html",
+    "topic-gk-01-punjabi-language-script-calendar-part-2.html",
     "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
     "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
