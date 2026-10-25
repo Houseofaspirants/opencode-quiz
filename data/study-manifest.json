@@ -686,21 +686,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 28,
-      "newest": "2026-10-24",
-      "totalSize": 56720044,
-      "chapters": 25,
+      "count": 29,
+      "newest": "2026-10-25",
+      "totalSize": 58543558,
+      "chapters": 26,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 28,
-          "chapters": 25,
-          "pages": 120,
-          "totalSize": 56720044,
-          "newest": "2026-10-24",
+          "files": 29,
+          "chapters": 26,
+          "pages": 124,
+          "totalSize": 58543558,
+          "newest": "2026-10-25",
           "categories": 12,
           "regions": 2
         },
@@ -1265,11 +1265,11 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 14,
-              "chapters": 14,
-              "pages": 64,
-              "totalSize": 24658767,
-              "newest": "2026-10-19",
+              "files": 15,
+              "chapters": 15,
+              "pages": 68,
+              "totalSize": 26482281,
+              "newest": "2026-10-25",
               "categories": 6
             },
             "categories": [
@@ -1450,11 +1450,11 @@
                   "culture-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 1,
+                  "chapters": 1,
+                  "pages": 4,
+                  "totalSize": 1823514,
+                  "newest": "2026-10-25"
                 },
                 "languages": [
                   {
@@ -1470,8 +1470,20 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "01 - Punjabi Language, Script and Calendar",
+                        "name": "Chapter 1: Punjabi Language Script and Calendar",
+                        "parts": [
+                          {
+                            "file": "material-punjabi-language-script-and-calendar-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 4
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1646,7 +1658,7 @@
         ]
       },
       "counts": {
-        "en": 14,
+        "en": 15,
         "pa": 14
       },
       "pages": {
@@ -2236,9 +2248,9 @@
       "color": "#ec4899",
       "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state.",
       "order": 15,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 1,
+      "newest": "2026-10-25",
+      "totalSize": 1823514,
       "languages": [
         {
           "id": "pa",
@@ -2253,19 +2265,31 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - Punjabi Language, Script and Calendar",
+              "name": "Chapter 1: Punjabi Language Script and Calendar",
+              "parts": [
+                {
+                  "file": "material-punjabi-language-script-and-calendar-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 4
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 1,
       "hidden": true,
       "counts": {
-        "en": 0,
+        "en": 1,
         "pa": 0
       },
       "pages": {
         "en": "study-culture-of-punjab.html",
-        "pa": "pa/study-culture-of-punjab.html"
+        "pa": "study-culture-of-punjab.html"
       },
       "page": "study-culture-of-punjab.html"
     },
@@ -2454,6 +2478,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 70,
+  "total": 71,
   "generatedBy": "scripts/study_material.py"
 }

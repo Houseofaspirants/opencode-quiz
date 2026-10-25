@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 583,
-  "edges": 3407,
+  "nodes": 588,
+  "edges": 3436,
   "silos": 35,
   "clusters": 124,
   "pillars": 34
@@ -45,6 +45,18 @@
    "type": "archive",
    "template": "",
    "title": "Computer",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-culture-of-punjab.html",
+   "url": "/archive-category-culture-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "Culture of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2012,6 +2024,18 @@
   {
    "id": "content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/cpu-central-processing-unit-notes-punjabi.pdf",
    "url": "/content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/cpu-central-processing-unit-notes-punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
+   "url": "/content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -4866,6 +4890,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-punjabi-language-script-and-calendar-notes-english",
+   "url": "/material-punjabi-language-script-and-calendar-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "url": "/material-punjabi-language-script-and-calendar-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 1: Punjabi Language Script and Calendar (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-reasoning-analogy-notes-punjabi-english",
    "url": "/material-reasoning-analogy-notes-punjabi-english",
    "type": "document",
@@ -7206,6 +7254,18 @@
    "hub": ""
   },
   {
+   "id": "study-culture-of-punjab.html",
+   "url": "/study-culture-of-punjab.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "study-economy-of-punjab.html",
    "url": "/study-economy-of-punjab.html",
    "type": "page",
@@ -7582,6 +7642,48 @@
   {
    "from": "archive-category-computer.html",
    "to": "material-generations-of-computer-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-culture-of-punjab.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9489,6 +9591,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-culture-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-economy-of-punjab.html",
    "rel": "contextual",
    "weight": 1
@@ -10168,6 +10276,12 @@
   {
    "from": "archives.html",
    "to": "material-punjabi-grammar-yojak-conjunction-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15999,7 +16113,7 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16269,7 +16383,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16359,7 +16473,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18632,6 +18746,114 @@
    "weight": 1
   },
   {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "study-culture-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -18717,7 +18939,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18807,7 +19029,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18897,7 +19119,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21123,6 +21345,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "content/study-material/economy-of-punjab/english/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/punjab-economy-agriculture-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -21196,12 +21424,6 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/punjabi/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -21393,12 +21615,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -21454,6 +21670,12 @@
   {
    "from": "pdfs.html",
    "to": "material-punjab-economy-agriculture-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26601,6 +26823,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/economy-of-punjab/english/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/punjab-economy-agriculture-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27357,6 +27585,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -27388,6 +27622,12 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/computer/punjabi/06%20-%20%E0%A8%95%E0%A9%87%E0%A8%82%E0%A8%A6%E0%A8%B0%E0%A9%80%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A9%8B%E0%A8%B8%E0%A9%88%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%97%20%E0%A8%AF%E0%A9%82%E0%A8%A8%E0%A8%BF%E0%A8%9F%20%28Processor%29/cpu-central-processing-unit-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/culture-of-punjab/english/01%20-%20Punjabi%20Language%2C%20Script%20and%20Calendar/punjabi-language-script-and-calendar-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -27466,12 +27706,6 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/punjabi/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -27669,12 +27903,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -27730,6 +27958,12 @@
   {
    "from": "study-notes.html",
    "to": "material-punjab-economy-agriculture-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
