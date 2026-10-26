@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 596,
-  "edges": 3468,
+  "nodes": 605,
+  "edges": 3513,
   "silos": 35,
   "clusters": 126,
   "pillars": 34
@@ -93,6 +93,18 @@
    "type": "archive",
    "template": "",
    "title": "English",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-category-geography-of-punjab.html",
+   "url": "/archive-category-geography-of-punjab.html",
+   "type": "archive",
+   "template": "",
+   "title": "Geography of Punjab",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -2180,6 +2192,30 @@
   {
    "id": "content/study-material/english/english/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/english-grammar-subject-predicate-complete-simple-forms-notes.pdf",
    "url": "/content/study-material/english/english/05%20-%20Subject%20and%20Predicate%20%28Complete%20and%20Simple%20Forms%29/english-grammar-subject-predicate-complete-simple-forms-notes.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "url": "/content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
+   "url": "/content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -5058,6 +5094,54 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-regions-administration-and-location-of-punjab-notes-english",
+   "url": "/material-regions-administration-and-location-of-punjab-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "url": "/material-regions-administration-and-location-of-punjab-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Regions Administration and Location of Punjab (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-regions-administration-and-location-of-punjab-notes-punjabi",
+   "url": "/material-regions-administration-and-location-of-punjab-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "url": "/material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 1: ਪੰਜਾਬ ਦੇ ਖੇਤਰ ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "mock.html",
    "url": "/mock.html",
    "type": "page",
@@ -5551,6 +5635,18 @@
   {
    "id": "pa/study-economy.html",
    "url": "/pa/study-economy.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/study-geography-of-punjab.html",
+   "url": "/pa/study-geography-of-punjab.html",
    "type": "page",
    "template": "",
    "title": "",
@@ -7398,6 +7494,18 @@
    "hub": ""
   },
   {
+   "id": "study-geography-of-punjab.html",
+   "url": "/study-geography-of-punjab.html",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "study-gk.html",
    "url": "/study-gk.html",
    "type": "page",
@@ -7912,6 +8020,54 @@
   {
    "from": "archive-category-english.html",
    "to": "material-english-grammar-types-of-sentences-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9723,6 +9879,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-geography-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-history-of-punjab.html",
    "rel": "contextual",
    "weight": 1
@@ -10420,6 +10582,18 @@
   {
    "from": "archives.html",
    "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16209,13 +16383,13 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16299,13 +16473,13 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16575,7 +16749,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16665,7 +16839,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19017,13 +19191,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19107,13 +19281,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19384,6 +19558,186 @@
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "study-geography-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "pa/study-geography-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21663,19 +22017,19 @@
   },
   {
    "from": "pdfs.html",
+   "to": "content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/english/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji/guru-amar-das-ram-das-arjan-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -21855,18 +22209,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -21958,6 +22300,18 @@
   {
    "from": "pdfs.html",
    "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27165,6 +27519,18 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27896,6 +28262,18 @@
    "weight": 1
   },
   {
+   "from": "study-material.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "study-notes.html",
    "to": "articles.html",
    "rel": "contextual",
@@ -27969,19 +28347,19 @@
   },
   {
    "from": "study-notes.html",
+   "to": "content/study-material/geography-of-punjab/english/01%20-%20Regions%2C%20Administration%20and%20Location%20of%20Punjab/regions-administration-and-location-of-punjab-notes-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/geography-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A8%B0%2C%20%E0%A8%AA%E0%A9%8D%E0%A8%B0%E0%A8%B8%E0%A8%BC%E0%A8%BE%E0%A8%B8%E0%A8%A8%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80/regions-administration-and-location-of-punjab-notes-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/english/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji/guru-amar-das-ram-das-arjan-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28167,18 +28545,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28270,6 +28636,18 @@
   {
    "from": "study-notes.html",
    "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },

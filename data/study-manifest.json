@@ -697,21 +697,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 30,
-      "newest": "2026-10-25",
-      "totalSize": 60241931,
-      "chapters": 27,
+      "count": 32,
+      "newest": "2026-10-26",
+      "totalSize": 63796890,
+      "chapters": 29,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 30,
-          "chapters": 27,
-          "pages": 128,
-          "totalSize": 60241931,
-          "newest": "2026-10-25",
+          "files": 32,
+          "chapters": 29,
+          "pages": 138,
+          "totalSize": 63796890,
+          "newest": "2026-10-26",
           "categories": 12,
           "regions": 2
         },
@@ -1276,11 +1276,11 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 16,
-              "chapters": 16,
-              "pages": 72,
-              "totalSize": 28180654,
-              "newest": "2026-10-25",
+              "files": 18,
+              "chapters": 18,
+              "pages": 82,
+              "totalSize": 31735613,
+              "newest": "2026-10-26",
               "categories": 6
             },
             "categories": [
@@ -1555,11 +1555,11 @@
                   "geography-of-punjab"
                 ],
                 "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
+                  "files": 2,
+                  "chapters": 2,
+                  "pages": 10,
+                  "totalSize": 3554959,
+                  "newest": "2026-10-26"
                 },
                 "languages": [
                   {
@@ -1567,16 +1567,40 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "01 - ਪੰਜਾਬ ਦੇ ਖੇਤਰ, ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
+                        "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬ ਦੇ ਖੇਤਰ ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
+                        "parts": [
+                          {
+                            "file": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
+                      }
+                    ]
                   },
                   {
                     "id": "en",
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
+                    "count": 1,
+                    "chapters": [
+                      {
+                        "id": "01 - Regions, Administration and Location of Punjab",
+                        "name": "Chapter 1: Regions Administration and Location of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-regions-administration-and-location-of-punjab-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
+                      }
+                    ]
                   }
                 ],
                 "subCategories": [],
@@ -1681,8 +1705,8 @@
         ]
       },
       "counts": {
-        "en": 15,
-        "pa": 15
+        "en": 16,
+        "pa": 16
       },
       "pages": {
         "en": "study-gk.html",
@@ -2375,32 +2399,56 @@
       "color": "#10b981",
       "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
       "order": 17,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
+      "count": 2,
+      "newest": "2026-10-26",
+      "totalSize": 3554959,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - ਪੰਜਾਬ ਦੇ ਖੇਤਰ, ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
+              "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬ ਦੇ ਖੇਤਰ ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
+              "parts": [
+                {
+                  "file": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
+            }
+          ]
         },
         {
           "id": "en",
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
+          "count": 1,
+          "chapters": [
+            {
+              "id": "01 - Regions, Administration and Location of Punjab",
+              "name": "Chapter 1: Regions Administration and Location of Punjab",
+              "parts": [
+                {
+                  "file": "material-regions-administration-and-location-of-punjab-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
+            }
+          ]
         }
       ],
-      "chapters": 0,
+      "chapters": 2,
       "hidden": true,
       "counts": {
-        "en": 0,
-        "pa": 0
+        "en": 1,
+        "pa": 1
       },
       "pages": {
         "en": "study-geography-of-punjab.html",
@@ -2513,6 +2561,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 73,
+  "total": 75,
   "generatedBy": "scripts/study_material.py"
 }
