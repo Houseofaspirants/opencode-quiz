@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 593,
-  "edges": 3452,
+  "nodes": 596,
+  "edges": 3468,
   "silos": 35,
   "clusters": 126,
   "pillars": 34
@@ -2718,6 +2718,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "url": "/content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "url": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "type": "page",
@@ -4271,6 +4283,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 1: ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maths-hcf-and-lcm-notes-punjabi-english",
+   "url": "/material-maths-hcf-and-lcm-notes-punjabi-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "url": "/material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 2: Hcf and Lcm of Numbers (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8277,6 +8313,12 @@
   },
   {
    "from": "archive-category-quantitative-aptitude.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -10186,6 +10228,12 @@
   {
    "from": "archives.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16082,6 +16130,96 @@
    "weight": 1
   },
   {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "quiz-quant-01-number-system-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "study-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-maths-number-system-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16155,26 +16293,8 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -16449,13 +16569,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16539,13 +16659,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18903,7 +19023,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18993,7 +19113,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19083,7 +19203,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19173,7 +19293,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19263,7 +19383,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21555,12 +21675,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/english/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji/guru-hargobind-har-rai-har-krishan-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -21634,6 +21748,12 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/quant/english/01%20-%20Number%20System/maths-number-system-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -21747,12 +21867,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -21778,6 +21892,12 @@
   {
    "from": "pdfs.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27309,6 +27429,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27574,6 +27700,12 @@
   {
    "from": "study-material.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27849,12 +27981,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/english/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji/guru-hargobind-har-rai-har-krishan-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -27928,6 +28054,12 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/quant/english/01%20-%20Number%20System/maths-number-system-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28047,12 +28179,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28078,6 +28204,12 @@
   {
    "from": "study-notes.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

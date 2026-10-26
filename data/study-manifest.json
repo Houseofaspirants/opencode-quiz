@@ -635,9 +635,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 1,
-      "newest": "2026-10-21",
-      "totalSize": 4245106,
+      "count": 2,
+      "newest": "2026-10-26",
+      "totalSize": 8455977,
       "languages": [
         {
           "id": "pa",
@@ -652,7 +652,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "01 - Number System",
@@ -664,13 +664,24 @@
                 }
               ],
               "pages": 67
+            },
+            {
+              "id": "02 - HCF and LCM of Numbers",
+              "name": "Chapter 2: Hcf and Lcm of Numbers",
+              "parts": [
+                {
+                  "file": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 62
             }
           ]
         }
       ],
-      "chapters": 1,
+      "chapters": 2,
       "counts": {
-        "en": 1,
+        "en": 2,
         "pa": 0
       },
       "pages": {
@@ -2502,6 +2513,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 72,
+  "total": 73,
   "generatedBy": "scripts/study_material.py"
 }
