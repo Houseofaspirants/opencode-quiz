@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 605,
-  "edges": 3513,
+  "nodes": 611,
+  "edges": 3538,
   "silos": 35,
-  "clusters": 126,
+  "clusters": 128,
   "pillars": 34
  },
  "nodes": [
@@ -870,6 +870,30 @@
    "hub": "current-affairs.html"
   },
   {
+   "id": "ca-current-affairs-july-2026-punjabi",
+   "url": "/ca-current-affairs-july-2026-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "ca-current-affairs-july-2026-punjabi.html",
+   "url": "/ca-current-affairs-july-2026-punjabi.html",
+   "type": "current-affairs",
+   "template": "current-affairs",
+   "title": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 PDF (ਪੰਜਾਬੀ)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
    "id": "ca-current-affairs-september-2026-english",
    "url": "/ca-current-affairs-september-2026-english",
    "type": "document",
@@ -968,6 +992,18 @@
   {
    "id": "content/current-affairs/punjabi/august-2026/current-affairs-august-2026-punjabi.pdf",
    "url": "/content/current-affairs/punjabi/august-2026/current-affairs-august-2026-punjabi.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "content/current-affairs/punjabi/july-2026/current-affairs-july-2026-punjabi.pdf",
+   "url": "/content/current-affairs/punjabi/july-2026/current-affairs-july-2026-punjabi.pdf",
    "type": "page",
    "template": "",
    "title": "",
@@ -2915,6 +2951,18 @@
    "type": "page",
    "template": "",
    "title": "Punjabi Current Affairs | House of Aspirants",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "current-affairs.html"
+  },
+  {
+   "id": "current-affairs/punjabi/july-2026/index.html",
+   "url": "/current-affairs/punjabi/july-2026/index.html",
+   "type": "page",
+   "template": "",
+   "title": "July 2026 Punjabi Current Affairs | House of Aspirants",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6787,6 +6835,30 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "url": "/quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
+   "url": "/quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "type": "quiz",
@@ -10131,6 +10203,12 @@
   },
   {
    "from": "archives.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "ca-current-affairs-september-2026-english.html",
    "rel": "contextual",
    "weight": 1
@@ -10983,6 +11061,12 @@
   },
   {
    "from": "ca-current-affairs-august-2026-english.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-august-2026-english.html",
    "to": "content/current-affairs/english/august-2026/current-affairs-august-2026-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -11229,7 +11313,7 @@
   },
   {
    "from": "ca-current-affairs-july-2026-english.html",
-   "to": "ca-current-affairs-august-2026-punjabi.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -11241,6 +11325,96 @@
   },
   {
    "from": "ca-current-affairs-july-2026-english.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "ca-current-affairs-july-2026-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "content/current-affairs/punjabi/july-2026/current-affairs-july-2026-punjabi.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "subject-current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "related-current-affairs",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "ca-current-affairs-august-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "ca-current-affairs-july-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
+   "to": "ca-current-affairs-september-2026-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "ca-current-affairs-july-2026-punjabi.html",
    "to": "subject-gk.html",
    "rel": "subject-hub",
    "weight": 1
@@ -11445,6 +11619,12 @@
   },
   {
    "from": "current-affairs.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
    "to": "ca-current-affairs-september-2026-english.html",
    "rel": "contextual",
    "weight": 1
@@ -11488,6 +11668,12 @@
   {
    "from": "current-affairs.html",
    "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "current-affairs/punjabi/july-2026/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11763,6 +11949,12 @@
   },
   {
    "from": "current-affairs/punjabi/index.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
    "weight": 1
@@ -11788,6 +11980,12 @@
   {
    "from": "current-affairs/punjabi/index.html",
    "to": "current-affairs/punjabi/august-2026/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "current-affairs/punjabi/july-2026/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11848,6 +12046,30 @@
   {
    "from": "current-affairs/punjabi/index.html",
    "to": "quiz-current-affairs-current-affairs-september-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/july-2026/index.html",
+   "to": "ca-current-affairs-july-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/july-2026/index.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/july-2026/index.html",
+   "to": "current-affairs/punjabi/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/july-2026/index.html",
+   "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11961,18 +12183,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -11986,6 +12196,18 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-economic-planning-five-year-plans-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19593,7 +19815,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
+   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29223,7 +29445,9 @@
     "topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
     "topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
     "topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
-    "topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2.html"
+    "topic-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-2.html",
+    "topic-gk-regions-administration-and-location-of-punjab-part-1.html",
+    "topic-gk-regions-administration-and-location-of-punjab-part-2.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
