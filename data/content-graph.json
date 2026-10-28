@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 610,
-  "edges": 3538,
+  "nodes": 611,
+  "edges": 3554,
   "silos": 35,
-  "clusters": 128,
+  "clusters": 133,
   "pillars": 34
  },
  "nodes": [
@@ -6499,6 +6499,54 @@
    "hub": ""
   },
   {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
+   "url": "/quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "url": "/quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "type": "quiz",
@@ -6895,30 +6943,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-quant-01-number-system-part-2.html",
-   "url": "/quiz-quant-01-number-system-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-01-number-system-part-3.html",
-   "url": "/quiz-quant-01-number-system-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-reasoning-01-number-series-part-1.html",
    "url": "/quiz-reasoning-01-number-series-part-1.html",
    "type": "quiz",
@@ -6945,18 +6969,6 @@
   {
    "id": "quiz-reasoning-01-number-series-part-3.html",
    "url": "/quiz-reasoning-01-number-series-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-01-number-series-part-4.html",
-   "url": "/quiz-reasoning-01-number-series-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11253,13 +11265,13 @@
   },
   {
    "from": "ca-current-affairs-july-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "ca-current-affairs-july-2026-english.html",
-   "to": "subject-current-affairs.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11703,6 +11715,30 @@
   },
   {
    "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs.html",
    "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
@@ -11830,6 +11866,30 @@
   {
    "from": "current-affairs/english/index.html",
    "to": "quiz-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/english/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12015,6 +12075,30 @@
   },
   {
    "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "current-affairs/punjabi/index.html",
    "to": "quiz-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
@@ -12165,6 +12249,30 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12219,24 +12327,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-reasoning-01-number-series-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12250,12 +12340,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-reasoning-01-number-series-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-01-number-series-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12370,6 +12454,30 @@
   {
    "from": "magazine.html",
    "to": "quiz-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "magazine.html",
+   "to": "quiz-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29339,11 +29447,16 @@
    "hub": "subject-current-affairs.html",
    "clusters": [
     "category-current-affairs-august.html",
+    "category-current-affairs-july.html",
     "category-current-affairs-september.html",
     "topic-current-affairs-current-affairs-august-2026-part1-punjab-national-states.html",
     "topic-current-affairs-current-affairs-august-2026-part2-international-economy-banking.html",
     "topic-current-affairs-current-affairs-august-2026-part3-defence-science-environment.html",
     "topic-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk.html",
+    "topic-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
+    "topic-current-affairs-current-affairs-july-2026-part2-international-economy-banking.html",
+    "topic-current-affairs-current-affairs-july-2026-part3-defence-science-environment.html",
+    "topic-current-affairs-current-affairs-july-2026-part4-awards-sports-rankings-static-gk.html",
     "topic-current-affairs-current-affairs-september-2026-part1-punjab-national-states.html",
     "topic-current-affairs-current-affairs-september-2026-part2-international-economy-banking.html",
     "topic-current-affairs-current-affairs-september-2026-part3-defence-science-environment.html",
