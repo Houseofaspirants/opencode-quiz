@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-27T13:06:28.598Z",
+  "generatedAt": "2026-10-28T04:45:41.558Z",
   "stats": {
     "subjects": 7,
     "categories": 46,
     "topics": 71,
     "quizzes": 71,
-    "questions": 1596,
+    "questions": 1616,
     "studentsPracticed": 12500
   },
   "site": {
@@ -3975,124 +3975,124 @@
       "order": 7,
       "topics": [
         {
-          "id": "current-affairs-july-2026-part1-geography-environment",
-          "name": "Current Affairs July 2026 - Part 1",
+          "id": "current-affairs-august-2026-part1-punjab-national-states",
+          "name": "Current Affairs August 2026 - Part 1",
           "description": "",
-          "file": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
-          "count": 20,
+          "file": "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json",
+          "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790441699392,
-          "category": "july",
+          "updatedAt": 1793162597766,
+          "category": "august",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
-            "pa": "questions/current-affairs/july/current-affairs-july-2026-part1-pa.json"
+            "en": "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json",
+            "pa": "questions/current-affairs/august/current-affairs-august-2026-part1-pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Current Affairs July 2026 - Part 1",
-            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1"
+            "en": "Current Affairs August 2026 - Part 1",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 1"
           },
           "counts": {
-            "en": 20,
-            "pa": 20
+            "en": 25,
+            "pa": 25
           },
-          "landing": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment"
+          "landing": "/quiz-current-affairs-current-affairs-august-2026-part1-punjab-national-states"
         },
         {
-          "id": "current-affairs-july-2026-part2-schemes-development",
-          "name": "Current Affairs July 2026 - Part 2",
+          "id": "current-affairs-august-2026-part2-international-economy-banking",
+          "name": "Current Affairs August 2026 - Part 2",
           "description": "",
-          "file": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
-          "count": 20,
+          "file": "questions/current-affairs/august/current-affairs-august-2026-part2-international-economy-banking-en.json",
+          "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790441701401,
-          "category": "july",
+          "updatedAt": 1793162597766,
+          "category": "august",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
-            "pa": "questions/current-affairs/july/current-affairs-july-2026-part2-pa.json"
+            "en": "questions/current-affairs/august/current-affairs-august-2026-part2-international-economy-banking-en.json",
+            "pa": "questions/current-affairs/august/current-affairs-august-2026-part2-pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Current Affairs July 2026 - Part 2",
-            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2"
+            "en": "Current Affairs August 2026 - Part 2",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 2"
           },
           "counts": {
-            "en": 20,
-            "pa": 20
+            "en": 25,
+            "pa": 25
           },
-          "landing": "/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development"
+          "landing": "/quiz-current-affairs-current-affairs-august-2026-part2-international-economy-banking"
         },
         {
-          "id": "current-affairs-july-2026-part3-governance-digital-services",
-          "name": "Current Affairs July 2026 - Part 3",
+          "id": "current-affairs-august-2026-part3-defence-science-environment",
+          "name": "Current Affairs August 2026 - Part 3",
           "description": "",
-          "file": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
-          "count": 20,
+          "file": "questions/current-affairs/august/current-affairs-august-2026-part3-defence-science-environment-en.json",
+          "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790441702188,
-          "category": "july",
+          "updatedAt": 1793162597766,
+          "category": "august",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
-            "pa": "questions/current-affairs/july/current-affairs-july-2026-part3-punjabi-pa.json"
+            "en": "questions/current-affairs/august/current-affairs-august-2026-part3-defence-science-environment-en.json",
+            "pa": "questions/current-affairs/august/current-affairs-august-2026-part3-pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Current Affairs July 2026 - Part 3",
-            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3"
+            "en": "Current Affairs August 2026 - Part 3",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 3"
           },
           "counts": {
-            "en": 20,
-            "pa": 20
+            "en": 25,
+            "pa": 25
           },
-          "landing": "/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services"
+          "landing": "/quiz-current-affairs-current-affairs-august-2026-part3-defence-science-environment"
         },
         {
-          "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
-          "name": "Current Affairs July 2026 - Part 4",
+          "id": "current-affairs-august-2026-part4-awards-sports-rankings-static-gk",
+          "name": "Current Affairs August 2026 - Part 4",
           "description": "",
-          "file": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
-          "count": 20,
+          "file": "questions/current-affairs/august/current-affairs-august-2026-part4-awards-sports-rankings-static-gk-en.json",
+          "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1790441705167,
-          "category": "july",
+          "updatedAt": 1793162597766,
+          "category": "august",
           "language": "en",
           "variants": {
-            "en": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
-            "pa": "questions/current-affairs/july/current-affairs-july-2026-part4-pa.json"
+            "en": "questions/current-affairs/august/current-affairs-august-2026-part4-awards-sports-rankings-static-gk-en.json",
+            "pa": "questions/current-affairs/august/current-affairs-august-2026-part4-pa.json"
           },
           "availableLanguages": [
             "en",
             "pa"
           ],
           "titles": {
-            "en": "Current Affairs July 2026 - Part 4",
-            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4"
+            "en": "Current Affairs August 2026 - Part 4",
+            "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 4"
           },
           "counts": {
-            "en": 20,
-            "pa": 20
+            "en": 25,
+            "pa": 25
           },
-          "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
+          "landing": "/quiz-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk"
         },
         {
           "id": "current-affairs-september-2026-part1-punjab-national-states",
@@ -4217,133 +4217,133 @@
       ],
       "categories": [
         {
-          "id": "july",
-          "name": "July",
-          "folder": "july",
+          "id": "august",
+          "name": "August",
+          "folder": "august",
           "icon": "📁",
           "topics": [
             {
-              "id": "current-affairs-july-2026-part1-geography-environment",
-              "name": "Current Affairs July 2026 - Part 1",
+              "id": "current-affairs-august-2026-part1-punjab-national-states",
+              "name": "Current Affairs August 2026 - Part 1",
               "description": "",
-              "file": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
-              "count": 20,
+              "file": "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1790441699392,
-              "category": "july",
+              "updatedAt": 1793162597766,
+              "category": "august",
               "language": "en",
               "variants": {
-                "en": "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json",
-                "pa": "questions/current-affairs/july/current-affairs-july-2026-part1-pa.json"
+                "en": "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json",
+                "pa": "questions/current-affairs/august/current-affairs-august-2026-part1-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Current Affairs July 2026 - Part 1",
-                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 1"
+                "en": "Current Affairs August 2026 - Part 1",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 1"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-current-affairs-current-affairs-july-2026-part1-geography-environment"
+              "landing": "/quiz-current-affairs-current-affairs-august-2026-part1-punjab-national-states"
             },
             {
-              "id": "current-affairs-july-2026-part2-schemes-development",
-              "name": "Current Affairs July 2026 - Part 2",
+              "id": "current-affairs-august-2026-part2-international-economy-banking",
+              "name": "Current Affairs August 2026 - Part 2",
               "description": "",
-              "file": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
-              "count": 20,
+              "file": "questions/current-affairs/august/current-affairs-august-2026-part2-international-economy-banking-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1790441701401,
-              "category": "july",
+              "updatedAt": 1793162597766,
+              "category": "august",
               "language": "en",
               "variants": {
-                "en": "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json",
-                "pa": "questions/current-affairs/july/current-affairs-july-2026-part2-pa.json"
+                "en": "questions/current-affairs/august/current-affairs-august-2026-part2-international-economy-banking-en.json",
+                "pa": "questions/current-affairs/august/current-affairs-august-2026-part2-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Current Affairs July 2026 - Part 2",
-                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 2"
+                "en": "Current Affairs August 2026 - Part 2",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 2"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-current-affairs-current-affairs-july-2026-part2-schemes-development"
+              "landing": "/quiz-current-affairs-current-affairs-august-2026-part2-international-economy-banking"
             },
             {
-              "id": "current-affairs-july-2026-part3-governance-digital-services",
-              "name": "Current Affairs July 2026 - Part 3",
+              "id": "current-affairs-august-2026-part3-defence-science-environment",
+              "name": "Current Affairs August 2026 - Part 3",
               "description": "",
-              "file": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
-              "count": 20,
+              "file": "questions/current-affairs/august/current-affairs-august-2026-part3-defence-science-environment-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1790441702188,
-              "category": "july",
+              "updatedAt": 1793162597766,
+              "category": "august",
               "language": "en",
               "variants": {
-                "en": "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json",
-                "pa": "questions/current-affairs/july/current-affairs-july-2026-part3-punjabi-pa.json"
+                "en": "questions/current-affairs/august/current-affairs-august-2026-part3-defence-science-environment-en.json",
+                "pa": "questions/current-affairs/august/current-affairs-august-2026-part3-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Current Affairs July 2026 - Part 3",
-                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 3"
+                "en": "Current Affairs August 2026 - Part 3",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 3"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-current-affairs-current-affairs-july-2026-part3-governance-digital-services"
+              "landing": "/quiz-current-affairs-current-affairs-august-2026-part3-defence-science-environment"
             },
             {
-              "id": "current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy",
-              "name": "Current Affairs July 2026 - Part 4",
+              "id": "current-affairs-august-2026-part4-awards-sports-rankings-static-gk",
+              "name": "Current Affairs August 2026 - Part 4",
               "description": "",
-              "file": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
-              "count": 20,
+              "file": "questions/current-affairs/august/current-affairs-august-2026-part4-awards-sports-rankings-static-gk-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1790441705167,
-              "category": "july",
+              "updatedAt": 1793162597766,
+              "category": "august",
               "language": "en",
               "variants": {
-                "en": "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json",
-                "pa": "questions/current-affairs/july/current-affairs-july-2026-part4-pa.json"
+                "en": "questions/current-affairs/august/current-affairs-august-2026-part4-awards-sports-rankings-static-gk-en.json",
+                "pa": "questions/current-affairs/august/current-affairs-august-2026-part4-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "Current Affairs July 2026 - Part 4",
-                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਜੁਲਾਈ 2026 - Part 4"
+                "en": "Current Affairs August 2026 - Part 4",
+                "pa": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਗਸਤ 2026 - Part 4"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-current-affairs-current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy"
+              "landing": "/quiz-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk"
             }
           ],
-          "landing": "/category-current-affairs-july"
+          "landing": "/category-current-affairs-august"
         },
         {
           "id": "september",
@@ -4519,21 +4519,21 @@
       "8fc8499710880fba",
       1792428546806
     ],
-    "questions/current-affairs/july/current-affairs-july-2026-part1-geography-environment-en.json": [
-      "c81b46122364bc1c",
-      1790441699392
+    "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json": [
+      "cae96f986328f5c4",
+      1793162597766
     ],
-    "questions/current-affairs/july/current-affairs-july-2026-part2-schemes-development-en.json": [
-      "8728fddd92440779",
-      1790441701401
+    "questions/current-affairs/august/current-affairs-august-2026-part2-international-economy-banking-en.json": [
+      "384e172d20d5e202",
+      1793162597766
     ],
-    "questions/current-affairs/july/current-affairs-july-2026-part3-governance-digital-services-en.json": [
-      "166b895243b7f2f9",
-      1790441702188
+    "questions/current-affairs/august/current-affairs-august-2026-part3-defence-science-environment-en.json": [
+      "47793286de400cab",
+      1793162597766
     ],
-    "questions/current-affairs/july/current-affairs-july-2026-part4-economy-international-awards-defence-science-sports-energy-en.json": [
-      "4fd8d301ef88156e",
-      1790441705167
+    "questions/current-affairs/august/current-affairs-august-2026-part4-awards-sports-rankings-static-gk-en.json": [
+      "857724ae4a2fea0a",
+      1793162597766
     ],
     "questions/current-affairs/september/current-affairs-september-2026-part1-punjab-national-states-en.json": [
       "eef2a3d52880d39e",
