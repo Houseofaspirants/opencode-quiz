@@ -8,7 +8,7 @@
       "url": "https://houseofaspirants.in/study-material",
       "title": "Free Study Material for Punjab Competitive Exams",
       "description": "Free study material for Punjab Police, PSSSB and PPSC exams - PDFs, notes and downloads for every subject, discovered from the files themselves with no sign-up.",
-      "count": 75
+      "count": 76
     },
     {
       "collection": "notes",
@@ -243,8 +243,7 @@
       "file": "archive-category-quantitative-aptitude.html",
       "url": "https://houseofaspirants.in/archive-category-quantitative-aptitude",
       "title": "Quantitative Aptitude | House of Aspirants",
-      "description": "Every document categorised as Quantitative Aptitude on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for",
-      "noindex": true
+      "description": "Every document categorised as Quantitative Aptitude on House of Aspirants - study notes, current affairs, magazine issues, quiz sets and preparation guides for"
     },
     {
       "file": "archive-category-reasoning.html",
@@ -2601,6 +2600,41 @@
         "en": "https://houseofaspirants.in/material-making-of-indian-constitution-notes-english",
         "pa": "https://houseofaspirants.in/material-making-of-indian-constitution-notes-punjabi"
       }
+    },
+    {
+      "collection": "study-material",
+      "file": "material-maths-decimal-fractions-notes-punjabi-english.html",
+      "url": "https://houseofaspirants.in/material-maths-decimal-fractions-notes-punjabi-english",
+      "title": "Chapter 3: Decimal Fractions (English)",
+      "description": "Chapter 3: Decimal Fractions (English) - free study material from House of Aspirants. Read it online or keep it for offline revision. Free for every aspirant.",
+      "published": "2026-10-28",
+      "updated": "2026-10-28",
+      "subjects": [],
+      "tags": [],
+      "exams": [],
+      "readingMinutes": 43,
+      "lang": "en",
+      "featured": false,
+      "path": "content/study-material/quant/english/03 - Decimal Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+      "category": "Quantitative Aptitude",
+      "language": "en",
+      "subjectName": "Quantitative Aptitude",
+      "studySubject": "quant",
+      "studySubcategory": "",
+      "studyLanguage": "en",
+      "studyLanguageName": "English",
+      "studyChapter": "03 - Decimal Fractions",
+      "studyChapterName": "Chapter 3: Decimal Fractions",
+      "studyPart": 1,
+      "studyParts": 1,
+      "size": 3699952,
+      "sizeLabel": "3.5 MB",
+      "type": "pdf",
+      "source": "https://houseofaspirants.in/content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+      "badges": [],
+      "search": "chapter 3: decimal fractions (english) chapter 3: decimal fractions (english) - free study material from house of aspirants. read it online or keep it for offline revision. free for every aspirant. maths-decimal-fractions-notes-punjabi-english.pdf quant quantitative aptitude english chapter 3: decimal fractions part 1 chapter 3: decimal fractions (english) quantitative aptitude study material maths-decimal-fractions-notes-punjabi-english ਅਧਿਆਇ 21: ਸ਼ਬਦ ਬਦਲ (one word substitution) ਅਧਿਆਇ 21: ਸ਼ਬਦ ਬਦਲ (one word substitution) - house of aspirants ਵੱਲੋਂ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ। ਵਿਸ਼ਾ: ਪੰਜਾਬੀ, ਭਾਸ਼ਾ ਅਤੇ ਅਧਿਆਇ ਅਨੁਸਾਰ ਤਰਤੀਬਵਾਰ। ਹਰ ਉਮੀਦਵਾਰ ਲਈ ਮੁਫ਼ਤ।",
+      "pdf": "content/study-material/quant/english/03 - Decimal Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+      "pageLang": "en"
     },
     {
       "collection": "study-material",
@@ -7648,6 +7682,25 @@
       "thumbH": 600
     },
     {
+      "path": "content/study-material/quant/english/03 - Decimal Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+      "filename": "maths-decimal-fractions-notes-punjabi-english.pdf",
+      "folder": "study-material",
+      "category": "03 - Decimal Fractions",
+      "title": "Maths Decimal Fractions Notes Punjabi English",
+      "slug": "maths-decimal-fractions-notes-punjabi-english",
+      "language": "pa",
+      "scripts": "latin",
+      "size": 3699952,
+      "sizeLabel": "3.5 MB",
+      "published": "2026-10-28",
+      "modified": "2026-10-28",
+      "pages": 43,
+      "summary": "CHAPTER 3 Decimal Fractions ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ IN THIS CHAPTER · ਇਸ ਅ'? ਧਿਆਇ ਵਿੱਚ Basics You Must Know ਪਹਿਲਾਂ ਇਹ ਬੁਨਿਆਦੀ ਗੱਲਾਂ ਜਾਣੋ A decimal fraction is simply a fraction whose denominator is 10, 100, 1000, and so on. The dot is called the decimal point. For example, ₹12. 75 means 12 rupees and 75",
+      "thumbnail": "assets/img/pdf/d1a54dd27cbe.webp",
+      "thumbW": 450,
+      "thumbH": 600
+    },
+    {
       "path": "content/study-material/reasoning/english/01 - Number Series/reasoning-number-series-notes-punjabi-english.pdf",
       "filename": "reasoning-number-series-notes-punjabi-english.pdf",
       "folder": "study-material",
@@ -7706,7 +7759,7 @@
     }
   ],
   "counts": {
-    "study-material": 75,
+    "study-material": 76,
     "notes": 0,
     "current-affairs": 6,
     "magazine": 0,

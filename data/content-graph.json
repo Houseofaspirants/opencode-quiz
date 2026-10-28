@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 611,
-  "edges": 3554,
+  "nodes": 615,
+  "edges": 3569,
   "silos": 35,
   "clusters": 133,
   "pillars": 34
@@ -2802,6 +2802,18 @@
    "hub": ""
   },
   {
+   "id": "content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+   "url": "/content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "url": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "type": "page",
@@ -4367,6 +4379,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 1: ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maths-decimal-fractions-notes-punjabi-english",
+   "url": "/material-maths-decimal-fractions-notes-punjabi-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "url": "/material-maths-decimal-fractions-notes-punjabi-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 3: Decimal Fractions (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -7734,6 +7770,18 @@
    "hub": ""
   },
   {
+   "id": "subject-quant.html",
+   "url": "/subject-quant.html",
+   "type": "subject-hub",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "subject-reasoning.html",
    "url": "/subject-reasoning.html",
    "type": "subject-hub",
@@ -8529,13 +8577,13 @@
   },
   {
    "from": "archive-category-quantitative-aptitude.html",
-   "to": "current-affairs.html",
+   "to": "index.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archive-category-quantitative-aptitude.html",
-   "to": "index.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8548,24 +8596,6 @@
   {
    "from": "archive-category-quantitative-aptitude.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-quantitative-aptitude.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-quantitative-aptitude.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-category-quantitative-aptitude.html",
-   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10468,6 +10498,12 @@
   {
    "from": "archives.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16622,6 +16658,96 @@
    "weight": 1
   },
   {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "study-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "subject-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16695,6 +16821,12 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -16702,12 +16834,6 @@
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16785,6 +16911,12 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-number-system-notes-punjabi-english.html",
    "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -16792,12 +16924,6 @@
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
    "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17061,13 +17187,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17151,13 +17277,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19509,13 +19635,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19599,13 +19725,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19695,7 +19821,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19785,7 +19911,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19875,7 +20001,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19959,13 +20085,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20049,13 +20175,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-punjabi-language-script-and-calendar-notes-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -22347,12 +22473,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -22426,6 +22546,12 @@
   {
    "from": "pdfs.html",
    "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -22527,12 +22653,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -22552,6 +22672,12 @@
   {
    "from": "pdfs.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28119,6 +28245,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28384,6 +28516,12 @@
   {
    "from": "study-material.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28677,12 +28815,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
    "rel": "contextual",
    "weight": 1
@@ -28756,6 +28888,12 @@
   {
    "from": "study-notes.html",
    "to": "content/study-material/quant/english/02%20-%20HCF%20and%20LCM%20of%20Numbers/maths-hcf-and-lcm-notes-punjabi-english.pdf",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "content/study-material/quant/english/03%20-%20Decimal%20Fractions/maths-decimal-fractions-notes-punjabi-english.pdf",
    "rel": "contextual",
    "weight": 1
   },
@@ -28863,12 +29001,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28888,6 +29020,12 @@
   {
    "from": "study-notes.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

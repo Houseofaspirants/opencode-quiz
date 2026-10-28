@@ -635,9 +635,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 2,
-      "newest": "2026-10-26",
-      "totalSize": 8455977,
+      "count": 3,
+      "newest": "2026-10-28",
+      "totalSize": 12155929,
       "languages": [
         {
           "id": "pa",
@@ -652,7 +652,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "01 - Number System",
@@ -675,13 +675,24 @@
                 }
               ],
               "pages": 62
+            },
+            {
+              "id": "03 - Decimal Fractions",
+              "name": "Chapter 3: Decimal Fractions",
+              "parts": [
+                {
+                  "file": "material-maths-decimal-fractions-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 43
             }
           ]
         }
       ],
-      "chapters": 2,
+      "chapters": 3,
       "counts": {
-        "en": 2,
+        "en": 3,
         "pa": 0
       },
       "pages": {
@@ -2561,6 +2572,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 75,
+  "total": 76,
   "generatedBy": "scripts/study_material.py"
 }
