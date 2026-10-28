@@ -98,6 +98,7 @@
     qDifficulty: document.getElementById("qDifficulty"),
     qTopicTag: document.getElementById("qTopic"),
     qText: document.getElementById("qText"),
+    qData: document.getElementById("qData"),
     qBody: document.getElementById("qBody"),
     options: document.getElementById("options"),
     feedback: document.getElementById("qFeedback"),
@@ -437,6 +438,9 @@
       els.qCount.textContent = say(`ਸਵਾਲ ${S.i + 1} / ${QUIZ.questions.length}`,
         `Question ${S.i + 1} of ${QUIZ.questions.length}`);
       els.qText.innerHTML = esc(q.q);
+      // DI table / chart above the question (hidden when the question has none).
+      if (window.HOA_DI) window.HOA_DI.render(els.qData, q.data);
+      else if (els.qData) els.qData.hidden = true;
 
       // Header badges: number, difficulty & topic tag (only if JSON provides them)
       if (els.qNum) els.qNum.textContent = `#${S.i + 1}`;
@@ -809,6 +813,7 @@
         correct: q.correct, answer: ans, status,
         explanation: q.explanation, reference: q.reference,
         topic: q.topic, subject: q.subject, difficulty: q.difficulty,
+        ...(q.data ? { data: q.data } : {}),
       };
     });
 
@@ -947,6 +952,7 @@
         id: S.i + 1,
         q: q.q,
         correctText: q.options[q.correct] ?? "",
+        ...(q.data ? { data: q.data } : {}),
         explanation: q.explanation,
         reference: q.reference,
         subjectName: subjectMeta?.name || QUIZ.subjectName || "Quiz",

@@ -13,7 +13,7 @@
  * skipWaiting() and activate clients.claim(), so the new worker takes over
  * that same visit; nothing reloads the page, so there is no reload loop.
  * ========================================================================== */
-const VERSION = "hoa-v100";
+const VERSION = "hoa-v101";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -82,6 +82,7 @@ const SHELL_FILES = [
   "./assets/js/home.js",
   "./assets/js/subject.js",
   "./assets/js/related.js",
+  "./assets/js/di-chart.js",
   "./assets/js/quiz.js",
   "./assets/js/result.js",
   "./assets/js/mock.js",

@@ -148,6 +148,10 @@ const HOA = (() => {
         difficulty: q.difficulty || "",
         topic: q.topic || "",
         subject: q.subject || "",
+        // Data-interpretation displays (schema 1.1): tables / bar, line and
+        // pie charts drawn above the question by assets/js/di-chart.js.
+        data: Array.isArray(q.data) && q.data.length ? q.data : null,
+        setId: String(q.set_id ?? q.setId ?? ""),
       };
     });
   }

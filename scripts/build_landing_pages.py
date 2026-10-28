@@ -618,8 +618,12 @@ def normalize_questions(raw_list):
                 correct = next(
                     (i for i, o in enumerate(options)
                      if str(o).strip().lower() == s.lower()), None)
+        data = q.get("data")
         out.append({"q": str(text), "options": list(options or []),
-                    "correct": correct, "explanation": q.get("explanation", "")})
+                    "correct": correct, "explanation": q.get("explanation", ""),
+                    # DI displays (schema 1.1) - core.js keeps the same two fields.
+                    "data": data if isinstance(data, list) and data else None,
+                    "set_id": str(q.get("set_id", q.get("setId", "")) or "")})
     return out
 
 
@@ -1554,9 +1558,67 @@ QB_LABELS = {
 }
 
 
+def _di_num(v):
+    """A DI value as printed: whole numbers without .0, null as '?'."""
+    if v is None:
+        return "?"
+    if isinstance(v, bool):
+        return str(v)
+    if isinstance(v, (int, float)):
+        return f"{int(v):,}" if float(v).is_integer() else f"{v:,.2f}".rstrip("0").rstrip(".")
+    return str(v)
+
+
+def di_static_html(data):
+    """Crawlable, no-JS copy of a DI question's data (schema 1.1): every
+    display becomes a plain table. On the live quiz, assets/js/di-chart.js
+    draws the same data as a chart."""
+    blocks = []
+    for d in data or []:
+        if not isinstance(d, dict):
+            continue
+        kind = d.get("type")
+        title = str(d.get("title") or "").strip()
+        unit = str(d.get("unit") or "").strip()
+        head, rows = [], []
+        if kind == "table":
+            head = [str(h) for h in d.get("headers") or []]
+            rows = [[str(r[0]) if r else ""] + [_di_num(c) for c in (r[1:] if r else [])]
+                    for r in (d.get("rows") or []) if isinstance(r, list)]
+        elif kind in ("bar", "line"):
+            labels = [str(x) for x in d.get("labels") or []]
+            head = [""] + labels
+            for se in d.get("series") or []:
+                vals = list((se or {}).get("values") or [])
+                vals += [None] * (len(labels) - len(vals))
+                rows.append([str((se or {}).get("name") or unit or title)]
+                            + [_di_num(v) for v in vals[:len(labels)]])
+        elif kind == "pie":
+            suffix = "°" if d.get("value_type") == "degree" else "%"
+            head = ["", "°" if suffix == "°" else "%"]
+            rows = [[str((sl or {}).get("label") or ""),
+                     _di_num((sl or {}).get("value")) + ("" if (sl or {}).get("value") is None else suffix)]
+                    for sl in d.get("slices") or []]
+            if isinstance(d.get("total"), (int, float)):
+                rows.append(["Total", (unit + " " if unit else "") + _di_num(d.get("total"))])
+        else:
+            continue
+        cap = esc(title) + (f" ({esc(unit)})" if unit and kind != "pie" else "")
+        thead = "".join(f"<th>{esc(h)}</th>" for h in head)
+        tbody = "".join(
+            "<tr>" + "".join((f"<th>{esc(c)}</th>" if i == 0 else f'<td class="num">{esc(c)}</td>')
+                             for i, c in enumerate(r)) + "</tr>" for r in rows)
+        blocks.append(
+            f'            <figure class="di-block qb-data"><figcaption class="di-title">{cap}</figcaption>'
+            f'<div class="di-scroll"><table class="di-table"><thead><tr>{thead}</tr></thead>'
+            f"<tbody>{tbody}</tbody></table></div></figure>")
+    return blocks
+
+
 def question_bank_html(qs, lang="en"):
     lab = QB_LABELS[lang]
     out = ['        <ol class="qb-list" data-landing="question-bank">']
+    last_set = None
     for q in qs:
         text = str(q.get("q") or "").strip()
         opts = [str(o).strip() for o in (q.get("options") or [])]
@@ -1564,6 +1626,11 @@ def question_bank_html(qs, lang="en"):
             continue
         correct = q.get("correct")
         out.append('          <li class="qb-item card card-pad">')
+        # A DI set's data is printed once, above the first question that uses it.
+        set_id = q.get("set_id") or None
+        if q.get("data") and (set_id is None or set_id != last_set):
+            out.extend(di_static_html(q.get("data")))
+        last_set = set_id
         out.append(f'            <p class="qb-q">{esc(text)}</p>')
         out.append('            <ol class="qb-opts" type="A">')
         for o in opts:

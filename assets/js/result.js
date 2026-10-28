@@ -229,6 +229,8 @@
             <span class="review-q">${esc(x.q)}</span>
             ${badge}
           </div>
+          ${x.data && window.HOA_DI && window.HOA_DI.has(x.data)
+            ? `<div class="q-data">${window.HOA_DI.html(x.data, reviewWrap.clientWidth - 40)}</div>` : ""}
           <div class="review-ans">
             <div class="ans-line ok">
               <span class="tag">${say("ਸਹੀ ਉੱਤਰ", "Correct")}</span><span>${esc(correctText)}</span>

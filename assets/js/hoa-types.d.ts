@@ -16,4 +16,10 @@ interface Window {
   dataLayer: any[];
   /** Seeded landing pages inject one object; absent on the classic quiz URL. */
   __HOA_QUIZ_SEED: any;
+  /** DI table / chart renderer (assets/js/di-chart.js). */
+  HOA_DI: {
+    html: (data: any, width?: number) => string;
+    render: (box: HTMLElement | null, data: any) => void;
+    has: (data: any) => boolean;
+  };
 }

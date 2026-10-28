@@ -30,6 +30,8 @@
           <span class="badge badge-muted">${esc(b.topicName || "")}</span>
           <button class="btn btn-sm btn-danger" data-remove="${esc(b.key)}" style="margin-left:auto">Remove</button>
         </div>
+        ${b.data && window.HOA_DI && window.HOA_DI.has(b.data)
+          ? `<div class="q-data">${window.HOA_DI.html(b.data, wrap.clientWidth - 40)}</div>` : ""}
         <p class="bm-q">${b.id ? `<b>Q${b.id}.</b> ` : ""}${esc(b.q)}</p>
         <div class="bm-actions">
           <button class="btn btn-sm btn-soft" data-reveal>Show answer</button>

@@ -29,10 +29,10 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css?v=100" as="style">
-  <link rel="stylesheet" href="assets/css/style.css?v=100">
-  <link rel="preload" href="assets/css/quiz.css?v=100" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css?v=100">
+  <link rel="preload" href="assets/css/style.css?v=101" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=101">
+  <link rel="preload" href="assets/css/quiz.css?v=101" as="style">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=101">
   <!-- Replaced at runtime by quiz.js with WebPage + Quiz schema for topic
        quizzes; blanked for noindex modes (?mode=daily / ?mode=mock). -->
   <script type="application/ld+json" id="ldDynamic">
@@ -145,6 +145,9 @@
               <span class="badge" id="qTopic"></span>
             </div>
 
+            <!-- Data-interpretation questions: table / chart drawn here by di-chart.js. -->
+            <div class="q-data" id="qData" hidden></div>
+
             <h2 class="q-text" id="qText">Loading question…</h2>
 
             <div class="options" id="options"><!-- buttons injected --></div>
@@ -238,8 +241,9 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js?v=100" defer></script>
-  <script src="assets/js/auth.js?v=100" defer></script>
-  <script src="assets/js/quiz.js?v=100" defer></script>
+  <script src="assets/js/core.js?v=101" defer></script>
+  <script src="assets/js/auth.js?v=101" defer></script>
+  <script src="assets/js/di-chart.js?v=101" defer></script>
+  <script src="assets/js/quiz.js?v=101" defer></script>
 </body>
 </html>
