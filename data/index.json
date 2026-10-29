@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-29T12:53:56.515Z",
+  "generatedAt": "2026-10-29T12:55:10.608Z",
   "stats": {
     "subjects": 7,
     "categories": 47,
-    "topics": 75,
-    "quizzes": 75,
-    "questions": 1716,
+    "topics": 80,
+    "quizzes": 80,
+    "questions": 1841,
     "studentsPracticed": 12500
   },
   "site": {
@@ -960,6 +960,64 @@
           "landing": "/quiz-gk-01-making-of-the-indian-constitution-part2"
         },
         {
+          "id": "02-preamble-and-parts-of-the-constitution-part1",
+          "name": "Preamble and Parts of the Constitution - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793278509788,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-en.json",
+            "pa": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Preamble and Parts of the Constitution - Part 1",
+            "pa": "Preamble and Parts of the Constitution - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "02-preamble-and-parts-of-the-constitution-part2",
+          "name": "Preamble and Parts of the Constitution - Part 2",
+          "description": "",
+          "file": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793278509788,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-en.json",
+            "pa": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Preamble and Parts of the Constitution - Part 2",
+            "pa": "Preamble and Parts of the Constitution - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
           "id": "01-punjabi-language-script-calendar-part-1",
           "name": "Punjabi Language, Script and Calendar - Part 1",
           "description": "",
@@ -1078,6 +1136,93 @@
             "pa": 24
           },
           "landing": "/quiz-gk-regions-administration-and-location-of-punjab-part-2"
+        },
+        {
+          "id": "03-union-and-its-territory-part1",
+          "name": "Union and its Territory - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/03-union-and-its-territory-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793278509788,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/03-union-and-its-territory-part1-en.json",
+            "pa": "questions/gk/polity/03-union-and-its-territory-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Union and its Territory - Part 1",
+            "pa": "Union and its Territory - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "03-union-and-its-territory-part2",
+          "name": "Union and its Territory - Part 2",
+          "description": "",
+          "file": "questions/gk/polity/03-union-and-its-territory-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793278509788,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/03-union-and-its-territory-part2-en.json",
+            "pa": "questions/gk/polity/03-union-and-its-territory-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Union and its Territory - Part 2",
+            "pa": "Union and its Territory - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "03-union-and-its-territory-part3",
+          "name": "Union and its Territory - Part 3",
+          "description": "",
+          "file": "questions/gk/polity/03-union-and-its-territory-part3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793278509788,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/03-union-and-its-territory-part3-en.json",
+            "pa": "questions/gk/polity/03-union-and-its-territory-part3-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Union and its Territory - Part 3",
+            "pa": "Union and its Territory - Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
         }
       ],
       "categories": [
@@ -1449,6 +1594,151 @@
                 "pa": 25
               },
               "landing": "/quiz-gk-01-making-of-the-indian-constitution-part2"
+            },
+            {
+              "id": "02-preamble-and-parts-of-the-constitution-part1",
+              "name": "Preamble and Parts of the Constitution - Part 1",
+              "description": "",
+              "file": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793278509788,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-en.json",
+                "pa": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Preamble and Parts of the Constitution - Part 1",
+                "pa": "Preamble and Parts of the Constitution - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "02-preamble-and-parts-of-the-constitution-part2",
+              "name": "Preamble and Parts of the Constitution - Part 2",
+              "description": "",
+              "file": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793278509788,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-en.json",
+                "pa": "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Preamble and Parts of the Constitution - Part 2",
+                "pa": "Preamble and Parts of the Constitution - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "03-union-and-its-territory-part1",
+              "name": "Union and its Territory - Part 1",
+              "description": "",
+              "file": "questions/gk/polity/03-union-and-its-territory-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793278509788,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/03-union-and-its-territory-part1-en.json",
+                "pa": "questions/gk/polity/03-union-and-its-territory-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Union and its Territory - Part 1",
+                "pa": "Union and its Territory - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "03-union-and-its-territory-part2",
+              "name": "Union and its Territory - Part 2",
+              "description": "",
+              "file": "questions/gk/polity/03-union-and-its-territory-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793278509788,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/03-union-and-its-territory-part2-en.json",
+                "pa": "questions/gk/polity/03-union-and-its-territory-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Union and its Territory - Part 2",
+                "pa": "Union and its Territory - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "03-union-and-its-territory-part3",
+              "name": "Union and its Territory - Part 3",
+              "description": "",
+              "file": "questions/gk/polity/03-union-and-its-territory-part3-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793278509788,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/03-union-and-its-territory-part3-en.json",
+                "pa": "questions/gk/polity/03-union-and-its-territory-part3-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Union and its Territory - Part 3",
+                "pa": "Union and its Territory - Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
             }
           ],
           "landing": "/category-gk-polity"
@@ -4967,6 +5257,26 @@
     "questions/gk/polity/01-making-of-the-indian-constitution-part2-en.json": [
       "3d22668fe9a6a30b",
       1792120838895
+    ],
+    "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part1-en.json": [
+      "c270d7c62f31dedf",
+      1793278509788
+    ],
+    "questions/gk/polity/02-preamble-and-parts-of-the-constitution-part2-en.json": [
+      "f37a417b0ae385a7",
+      1793278509788
+    ],
+    "questions/gk/polity/03-union-and-its-territory-part1-en.json": [
+      "c1ee83d32154e881",
+      1793278509788
+    ],
+    "questions/gk/polity/03-union-and-its-territory-part2-en.json": [
+      "b74df80c6be95a5e",
+      1793278509788
+    ],
+    "questions/gk/polity/03-union-and-its-territory-part3-en.json": [
+      "41726d3a3949c001",
+      1793278509788
     ],
     "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
       "5050449425caa85f",
