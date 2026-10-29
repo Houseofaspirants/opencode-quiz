@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 621,
+  "nodes": 622,
   "edges": 3618,
   "silos": 35,
-  "clusters": 133,
+  "clusters": 138,
   "pillars": 34
  },
  "nodes": [
@@ -6811,8 +6811,68 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-02-preamble-and-parts-of-the-constitution-part1.html",
+   "url": "/quiz-gk-02-preamble-and-parts-of-the-constitution-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-02-preamble-and-parts-of-the-constitution-part2.html",
+   "url": "/quiz-gk-02-preamble-and-parts-of-the-constitution-part2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
    "url": "/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-03-union-and-its-territory-part1.html",
+   "url": "/quiz-gk-03-union-and-its-territory-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-03-union-and-its-territory-part2.html",
+   "url": "/quiz-gk-03-union-and-its-territory-part2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-03-union-and-its-territory-part3.html",
+   "url": "/quiz-gk-03-union-and-its-territory-part3.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -7063,30 +7123,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-reasoning-01-number-series-part-2.html",
-   "url": "/quiz-reasoning-01-number-series-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-01-number-series-part-3.html",
-   "url": "/quiz-reasoning-01-number-series-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-reasoning-02-analogy-part-1.html",
    "url": "/quiz-reasoning-02-analogy-part-1.html",
    "type": "quiz",
@@ -7101,30 +7137,6 @@
   {
    "id": "quiz-reasoning-02-analogy-part-2.html",
    "url": "/quiz-reasoning-02-analogy-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-02-analogy-part-3.html",
-   "url": "/quiz-reasoning-02-analogy-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-02-analogy-part-4.html",
-   "url": "/quiz-reasoning-02-analogy-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -12417,6 +12429,36 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-02-preamble-and-parts-of-the-constitution-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-02-preamble-and-parts-of-the-constitution-part2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-03-union-and-its-territory-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-03-union-and-its-territory-part2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-03-union-and-its-territory-part3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12459,24 +12501,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-01-number-series-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-01-number-series-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-01-number-series-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-reasoning-02-analogy-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -12484,18 +12508,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-reasoning-02-analogy-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-02-analogy-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-02-analogy-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17073,7 +17085,7 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "quiz-gk-01-making-of-the-indian-constitution-part1.html",
+   "to": "quiz-gk-02-preamble-and-parts-of-the-constitution-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20349,13 +20361,13 @@
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-03-union-and-its-territory-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30025,8 +30037,13 @@
     "topic-gk-01-making-of-the-indian-constitution-part2.html",
     "topic-gk-01-punjabi-language-script-calendar-part-1.html",
     "topic-gk-01-punjabi-language-script-calendar-part-2.html",
+    "topic-gk-02-preamble-and-parts-of-the-constitution-part1.html",
+    "topic-gk-02-preamble-and-parts-of-the-constitution-part2.html",
     "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
     "topic-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
+    "topic-gk-03-union-and-its-territory-part1.html",
+    "topic-gk-03-union-and-its-territory-part2.html",
+    "topic-gk-03-union-and-its-territory-part3.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
