@@ -175,7 +175,7 @@ references:
 - [ਮੋਬਾਈਲ ਫ਼ੋਨ](subject.html?subject=computer)
 
 **ਕਰੰਟ ਅਫੇਅਰਜ਼**
-- [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
+- [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
 ਕਾਂਸਟੇਬਲ ਦੀ ਤਿਆਰੀ ਵੀ ਕਰ ਰਹੇ ਹੋ? [ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ ਗਾਈਡ](pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html) ਪੜ੍ਹੋ।
 

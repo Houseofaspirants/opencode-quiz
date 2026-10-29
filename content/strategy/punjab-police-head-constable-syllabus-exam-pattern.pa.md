@@ -159,7 +159,7 @@ references:
 - [ਮੋਬਾਈਲ ਫ਼ੋਨ](subject.html?subject=computer)
 
 **ਕਰੰਟ ਅਫੇਅਰਜ਼**
-- [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
+- [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
 ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ, ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ, ਹਰ ਜਵਾਬ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ਇੱਕ ਵਾਰ sign in ਕਰੋ ਅਤੇ ਤੁਹਾਡਾ score [live leaderboard](leaderboard.html) 'ਤੇ ਦਿਸੇਗਾ।
 

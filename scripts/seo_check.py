@@ -1538,7 +1538,9 @@ def resolvable(target):
 
 page_floor = []
 for path in sorted(ROOT.glob("*.html")) + sorted(ROOT.glob("pa/*.html")):
-    if path.name == "404.html":
+    # 404 and Google Search Console's ownership token (googleXXXX.html, a
+    # one-line file Google fetches) are not content pages.
+    if path.name == "404.html" or re.fullmatch(r"google[0-9a-f]+\.html", path.name):
         continue
     links = main_links(read_audit_source(path, encoding="utf-8", errors="replace"))
     if len(links) < 5:

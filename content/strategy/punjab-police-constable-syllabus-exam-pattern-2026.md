@@ -166,7 +166,7 @@ Start running now. Physical tests come soon after the result, and the 1,600 m in
 - [Mobile Phones](subject.html?subject=computer)
 
 **Current affairs**
-- [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
+- [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
 Every set is free, in Punjabi and English, with an explanation for each answer. Sign in once and your score appears on the [live leaderboard](leaderboard.html).
 

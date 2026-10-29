@@ -175,7 +175,7 @@ You must clear every event for your category.
 - [Mobile Phones](subject.html?subject=computer)
 
 **Current affairs**
-- [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-geography-environment.html)
+- [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
 Preparing for constable as well? Read the [Punjab Police Constable syllabus guide](strategy-punjab-police-constable-syllabus-exam-pattern-2026.html).
 
