@@ -708,21 +708,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 32,
-      "newest": "2026-10-26",
-      "totalSize": 63796890,
-      "chapters": 29,
+      "count": 34,
+      "newest": "2026-10-29",
+      "totalSize": 68158683,
+      "chapters": 31,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 32,
-          "chapters": 29,
-          "pages": 138,
-          "totalSize": 63796890,
-          "newest": "2026-10-26",
+          "files": 34,
+          "chapters": 31,
+          "pages": 159,
+          "totalSize": 68158683,
+          "newest": "2026-10-29",
           "categories": 12,
           "regions": 2
         },
@@ -732,11 +732,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 14,
-              "chapters": 11,
-              "pages": 56,
-              "totalSize": 32061277,
-              "newest": "2026-10-24",
+              "files": 16,
+              "chapters": 13,
+              "pages": 77,
+              "totalSize": 36423070,
+              "newest": "2026-10-29",
               "categories": 6
             },
             "categories": [
@@ -1021,11 +1021,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 4,
-                  "chapters": 4,
-                  "pages": 28,
-                  "totalSize": 7497529,
-                  "newest": "2026-10-23"
+                  "files": 6,
+                  "chapters": 6,
+                  "pages": 49,
+                  "totalSize": 11859322,
+                  "newest": "2026-10-29"
                 },
                 "languages": [
                   {
@@ -1033,7 +1033,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 2,
+                    "count": 3,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1056,6 +1056,17 @@
                           }
                         ],
                         "pages": 7
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 03 - ਸੰਘ ਅਤੇ ਇਸ ਦਾ ਰਾਜਖੇਤਰ",
+                        "name": "ਅਧਿਆਇ 03 ਸੰਘ ਅਤੇ ਇਸ ਦਾ ਰਾਜਖੇਤਰ",
+                        "parts": [
+                          {
+                            "file": "material-union-and-its-territory-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 11
                       }
                     ]
                   },
@@ -1064,7 +1075,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 2,
+                    "count": 3,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1087,6 +1098,17 @@
                           }
                         ],
                         "pages": 6
+                      },
+                      {
+                        "id": "Chapter 03 - Union and its Territory",
+                        "name": "Chapter 03: Union and Its Territory",
+                        "parts": [
+                          {
+                            "file": "material-union-and-its-territory-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 10
                       }
                     ]
                   }
@@ -1716,8 +1738,8 @@
         ]
       },
       "counts": {
-        "en": 16,
-        "pa": 16
+        "en": 17,
+        "pa": 17
       },
       "pages": {
         "en": "study-gk.html",
@@ -1732,16 +1754,16 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 4,
-      "newest": "2026-10-23",
-      "totalSize": 7497529,
+      "count": 6,
+      "newest": "2026-10-29",
+      "totalSize": 11859322,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1764,6 +1786,17 @@
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "ਅਧਿਆਇ 03 - ਸੰਘ ਅਤੇ ਇਸ ਦਾ ਰਾਜਖੇਤਰ",
+              "name": "ਅਧਿਆਇ 03 ਸੰਘ ਅਤੇ ਇਸ ਦਾ ਰਾਜਖੇਤਰ",
+              "parts": [
+                {
+                  "file": "material-union-and-its-territory-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 11
             }
           ]
         },
@@ -1772,7 +1805,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1795,15 +1828,26 @@
                 }
               ],
               "pages": 6
+            },
+            {
+              "id": "Chapter 03 - Union and its Territory",
+              "name": "Chapter 03: Union and Its Territory",
+              "parts": [
+                {
+                  "file": "material-union-and-its-territory-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 10
             }
           ]
         }
       ],
-      "chapters": 4,
+      "chapters": 6,
       "hidden": true,
       "counts": {
-        "en": 2,
-        "pa": 2
+        "en": 3,
+        "pa": 3
       },
       "pages": {
         "en": "study-polity.html",
@@ -2572,6 +2616,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 76,
+  "total": 78,
   "generatedBy": "scripts/study_material.py"
 }
