@@ -32,6 +32,14 @@ if python3 scripts/build_og_images.py; then
 fi
 node scripts/clean-links.mjs
 
+# PDFs on Cloudflare R2 (data/site.json -> files.pdfBase, set by
+# scripts/r2_switch.py): upload new or changed PDFs BEFORE the pages that link
+# to them are committed and pushed. A failed upload stops the publish.
+if python3 -c 'import json,sys; sys.exit(0 if (json.load(open("data/site.json")).get("files") or {}).get("pdfBase") else 1)'; then
+  step "R2: node scripts/r2_sync.mjs"
+  node scripts/r2_sync.mjs
+fi
+
 # ci.sh's step 7 is `git diff` — worktree vs index — so the build's output has
 # to be staged *before* the gate, otherwise "there is a new build" and "the
 # gate failed" are the same event. The four fields the builders stamp "now"

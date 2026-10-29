@@ -505,7 +505,9 @@
     if (d.kind === "pdf") {
       try {
         const lib = await loadPdfLib();
-        V.pdf = await lib.getDocument({ url: d.file }).promise;
+        const H = /** @type {any} */ (window).HOA;
+        const file = H && typeof H.fileUrl === "function" ? H.fileUrl(d.file) : d.file;
+        V.pdf = await lib.getDocument({ url: file }).promise;
         hide(el.spin);
         const page0 = await V.pdf.getPage(1);
         const vp0 = page0.getViewport({ scale: 1 });

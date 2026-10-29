@@ -1,6 +1,6 @@
 {
   "framework": null,
-  "buildCommand": "bash scripts/build_site.sh",
+  "buildCommand": "echo 'prebuilt: committed output is served; PDFs live on Cloudflare R2'",
   "outputDirectory": ".",
   "cleanUrls": true,
   "trailingSlash": false,
@@ -47,12 +47,12 @@
     },
     {
       "source": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-english.pdf",
-      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi.pdf",
-      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -67,12 +67,12 @@
     },
     {
       "source": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-english.pdf",
-      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-analogy-notes-punjabi.pdf",
-      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -87,12 +87,12 @@
     },
     {
       "source": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-english.pdf",
-      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
       "source": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi.pdf",
-      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -102,7 +102,7 @@
     },
     {
       "source": "/content/current-affairs/english/August-2026/House-of-Aspirants-Current-Affairs-August-2026-English.pdf",
-      "destination": "/content/current-affairs/english/august-2026/current-affairs-august-2026-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/current-affairs/english/august-2026/current-affairs-august-2026-english.pdf",
       "statusCode": 301
     },
     {
@@ -112,7 +112,7 @@
     },
     {
       "source": "/content/current-affairs/punjabi/August%202026/House-of-Aspirants-Current-Affairs-August-2026-Punjabi.pdf",
-      "destination": "/content/current-affairs/punjabi/august-2026/current-affairs-august-2026-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/current-affairs/punjabi/august-2026/current-affairs-august-2026-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -122,7 +122,7 @@
     },
     {
       "source": "/content/current-affairs/english/July%202026/House-of-Aspirants-Current-Affairs-july-2026-English.pdf",
-      "destination": "/content/current-affairs/english/july-2026/current-affairs-july-2026-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/current-affairs/english/july-2026/current-affairs-july-2026-english.pdf",
       "statusCode": 301
     },
     {
@@ -132,7 +132,7 @@
     },
     {
       "source": "/content/current-affairs/english/september-2026/House-of-Aspirants-Current-Affairs-September-2026-English.pdf",
-      "destination": "/content/current-affairs/english/september-2026/current-affairs-september-2026-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/current-affairs/english/september-2026/current-affairs-september-2026-english.pdf",
       "statusCode": 301
     },
     {
@@ -142,7 +142,7 @@
     },
     {
       "source": "/content/current-affairs/punjabi/September-2026/House-of-Aspirants-Current-Affairs-September-2026-Punjabi.pdf",
-      "destination": "/content/current-affairs/punjabi/september-2026/current-affairs-september-2026-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/current-affairs/punjabi/september-2026/current-affairs-september-2026-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -152,7 +152,7 @@
     },
     {
       "source": "/content/study-material/economy-of-punjab/english%20/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab.pdf",
-      "destination": "/content/study-material/economy-of-punjab/english/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/punjab-economy-agriculture-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/economy-of-punjab/english/01%20-%20Financial%20Position%20and%20Agriculture%20of%20Punjab/punjab-economy-agriculture-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -162,7 +162,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/01%20-%20Guru%20Nanak%20Dev%20Ji%20and%20Guru%20Angad%20Dev%20Ji/guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/01%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A8%E0%A8%BE%E0%A8%A8%E0%A8%95%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A9%B0%E0%A8%97%E0%A8%A6%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "source": "/content/study-material/quant/english%20/01-number%20system%20%20/01%20-%20Number%20System.pdf",
-      "destination": "/content/study-material/quant/english/01%20-%20Number%20System/maths-number-system-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/quant/english/01%20-%20Number%20System/maths-number-system-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -192,7 +192,7 @@
     },
     {
       "source": "/content/study-material/economy-of-punjab/punjabi%20/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%80%20%E0%A8%B5%E0%A8%BF%E0%A9%B1%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A9%80%E0%A8%AC%E0%A8%BE%E0%A9%9C%E0%A9%80/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%80%20%E0%A8%B5%E0%A8%BF%E0%A9%B1%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A9%80%E0%A8%AC%E0%A8%BE%E0%A9%9C%E0%A9%80.pdf",
-      "destination": "/content/study-material/economy-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%80%20%E0%A8%B5%E0%A8%BF%E0%A9%B1%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A9%80%E0%A8%AC%E0%A8%BE%E0%A9%9C%E0%A9%80/punjab-economy-agriculture-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/economy-of-punjab/punjabi/01%20-%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%E0%A8%BE%E0%A8%AC%20%E0%A8%A6%E0%A9%80%20%E0%A8%B5%E0%A8%BF%E0%A9%B1%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A8%A5%E0%A8%BF%E0%A8%A4%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%96%E0%A9%87%E0%A8%A4%E0%A9%80%E0%A8%AC%E0%A8%BE%E0%A9%9C%E0%A9%80/punjab-economy-agriculture-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -207,7 +207,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji/guru-amar-das-ram-das-arjan-dev-ji-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/02%20-%20Guru%20Amar%20Das%20Ji%2C%20Guru%20Ram%20Das%20Ji%20and%20Guru%20Arjan%20Dev%20Ji/guru-amar-das-ram-das-arjan-dev-ji-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -217,7 +217,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/02%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%AE%E0%A8%B0%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B0%E0%A8%BE%E0%A8%AE%E0%A8%A6%E0%A8%BE%E0%A8%B8%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%85%E0%A8%B0%E0%A8%9C%E0%A8%A8%20%E0%A8%A6%E0%A9%87%E0%A8%B5%20%E0%A8%9C%E0%A9%80/guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -227,7 +227,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji/guru-hargobind-har-rai-har-krishan-ji-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/03%20-%20Guru%20Hargobind%20Ji%2C%20Guru%20Har%20Rai%20Ji%20and%20Guru%20Har%20Krishan%20Ji/guru-hargobind-har-rai-har-krishan-ji-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -237,7 +237,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80/guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/03%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%9C%E0%A9%80%2C%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%B0%E0%A8%BE%E0%A8%87%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%B9%E0%A8%B0%E0%A8%BF%E0%A8%95%E0%A9%8D%E0%A8%B0%E0%A8%BF%E0%A8%B8%E0%A8%BC%E0%A8%A8%20%E0%A8%9C%E0%A9%80/guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -247,7 +247,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/04%20-%20Guru%20Teg%20Bahadur%20Ji%20and%20Guru%20Gobind%20Singh%20Ji/04%20-%20Guru%20Teg%20Bahadur%20Ji%20and%20Guru%20Gobind%20Singh%20Ji.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/04%20-%20Guru%20Teg%20Bahadur%20Ji%20and%20Guru%20Gobind%20Singh%20Ji/guru-teg-bahadur-guru-gobind-singh-ji-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/04%20-%20Guru%20Teg%20Bahadur%20Ji%20and%20Guru%20Gobind%20Singh%20Ji/guru-teg-bahadur-guru-gobind-singh-ji-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -257,7 +257,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/04%20-%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%A4%E0%A9%87%E0%A8%97%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8B%E0%A8%AC%E0%A8%BF%E0%A9%B0%E0%A8%A6%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%9C%E0%A9%80/guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -267,7 +267,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/05%20-%20Guru%20Granth%20Sahib%20Ji%20and%20the%20Five%20Takhts/guru-granth-sahib-ji-five-takhts-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -277,7 +277,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/05%20-%20%E0%A8%B8%E0%A9%8D%E0%A8%B0%E0%A9%80%20%E0%A8%97%E0%A9%81%E0%A8%B0%E0%A9%82%20%E0%A8%97%E0%A9%8D%E0%A8%B0%E0%A9%B0%E0%A8%A5%20%E0%A8%B8%E0%A8%BE%E0%A8%B9%E0%A8%BF%E0%A8%AC%20%E0%A8%9C%E0%A9%80%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%AA%E0%A9%B0%E0%A8%9C%20%E0%A8%A4%E0%A8%96%E0%A8%BC%E0%A8%A4/guru-granth-sahib-ji-five-takhts-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -287,7 +287,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/english%20/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa.pdf",
-      "destination": "/content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/english/06%20-%20Baba%20Banda%20Singh%20Bahadur%20and%20the%20Dal%20Khalsa/banda-singh-bahadur-dal-khalsa-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -297,7 +297,7 @@
     },
     {
       "source": "/content/study-material/history-of-punjab/Punjabi%20/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE.pdf",
-      "destination": "/content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history-of-punjab/punjabi/06%20-%20%E0%A8%AC%E0%A8%BE%E0%A8%AC%E0%A8%BE%20%E0%A8%AC%E0%A9%B0%E0%A8%A6%E0%A8%BE%20%E0%A8%B8%E0%A8%BF%E0%A9%B0%E0%A8%98%20%E0%A8%AC%E0%A8%B9%E0%A8%BE%E0%A8%A6%E0%A8%B0%20%E0%A8%85%E0%A8%A4%E0%A9%87%20%E0%A8%A6%E0%A8%B2%20%E0%A8%96%E0%A8%BC%E0%A8%BE%E0%A8%B2%E0%A8%B8%E0%A8%BE/banda-singh-bahadur-dal-khalsa-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -312,7 +312,7 @@
     },
     {
       "source": "/content/study-material/polity/punjabi%20/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3.pdf",
-      "destination": "/content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3/making-of-indian-constitution-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/polity/punjabi/%E0%A8%85%E0%A8%A7%E0%A8%BF%E0%A8%86%E0%A8%87%2001%20-%20%E0%A8%AD%E0%A8%BE%E0%A8%B0%E0%A8%A4%E0%A9%80%20%E0%A8%B8%E0%A9%B0%E0%A8%B5%E0%A8%BF%E0%A8%A7%E0%A8%BE%E0%A8%A8%20%E0%A8%A6%E0%A8%BE%20%E0%A8%A8%E0%A8%BF%E0%A8%B0%E0%A8%AE%E0%A8%BE%E0%A8%A3/making-of-indian-constitution-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -332,7 +332,7 @@
     },
     {
       "source": "/content/study-material/polity/articles%20.pdf",
-      "destination": "/content/study-material/polity/important-articles-of-indian-constitution-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/polity/important-articles-of-indian-constitution-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -352,7 +352,7 @@
     },
     {
       "source": "/content/study-material/history/modern-history/english/Chapter%2001%20-%20Arrival%20of%20European%20in%20India/Chapter%2001%20-%20Arrival%20of%20European%20in%20India.pdf",
-      "destination": "/content/study-material/history/modern-history/english/Chapter%2001%20-%20Arrival%20of%20European%20in%20India/arrival-of-europeans-in-india-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history/modern-history/english/Chapter%2001%20-%20Arrival%20of%20European%20in%20India/arrival-of-europeans-in-india-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -362,7 +362,7 @@
     },
     {
       "source": "/content/study-material/economy/english%20/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy.pdf",
-      "destination": "/content/study-material/economy/english/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/indian-economy-basic-concepts-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/economy/english/Chapter%2001%20-%20Basic%20Concepts%20of%20Economy/indian-economy-basic-concepts-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -372,7 +372,7 @@
     },
     {
       "source": "/content/study-material/polity/english%20/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution.pdf",
-      "destination": "/content/study-material/polity/english/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution/making-of-indian-constitution-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/polity/english/Chapter%2001%20-%20Making%20of%20the%20Indian%20Constitution/making-of-indian-constitution-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -387,7 +387,7 @@
     },
     {
       "source": "/content/study-material/history/modern-history/english/Chapter%2002%20-%20Expansion%20of%20English%20East%20India%20Company%20in%20India/Chapter%2002%20-%20Expansion%20of%20English%20East%20India%20Company%20in%20India.pdf",
-      "destination": "/content/study-material/history/modern-history/english/Chapter%2002%20-%20Expansion%20of%20English%20East%20India%20Company%20in%20India/east-india-company-expansion-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history/modern-history/english/Chapter%2002%20-%20Expansion%20of%20English%20East%20India%20Company%20in%20India/east-india-company-expansion-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -402,7 +402,7 @@
     },
     {
       "source": "/content/study-material/history/modern-history/english/Chapter%2003%20-%20Extension%20of%20British%20Paramountcy%20Through%20Administrative%20Policy/Chapter%2003%20-%20Extension%20of%20British%20Paramountcy%20Through%20Administrative%20Policy.pdf",
-      "destination": "/content/study-material/history/modern-history/english/Chapter%2003%20-%20Extension%20of%20British%20Paramountcy%20Through%20Administrative%20Policy/british-paramountcy-administrative-policy-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/history/modern-history/english/Chapter%2003%20-%20Extension%20of%20British%20Paramountcy%20Through%20Administrative%20Policy/british-paramountcy-administrative-policy-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -412,7 +412,7 @@
     },
     {
       "source": "/content/study-material/english/english%20/02%20-%20Clauses%20and%20Phrases/clauses-phrases.pdf",
-      "destination": "/content/study-material/english/english/02%20-%20Clauses%20and%20Phrases/english-grammar-clauses-and-phrases-notes.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/english/english/02%20-%20Clauses%20and%20Phrases/english-grammar-clauses-and-phrases-notes.pdf",
       "statusCode": 301
     },
     {
@@ -422,7 +422,7 @@
     },
     {
       "source": "/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/computer-en-ch01.pdf",
-      "destination": "/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/computer-fundamentals-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/01%20-%20Fundamentals%20of%20Computers/computer-fundamentals-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -432,7 +432,7 @@
     },
     {
       "source": "/content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/computer-en-ch02.pdf",
-      "destination": "/content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/02%20-%20Evolution%20of%20Computers/evolution-of-computers-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -442,7 +442,7 @@
     },
     {
       "source": "/content/study-material/computer/english/03%20-%20Generations%20of%20Computers/computer-en-ch03.pdf",
-      "destination": "/content/study-material/computer/english/03%20-%20Generations%20of%20Computers/generations-of-computer-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/03%20-%20Generations%20of%20Computers/generations-of-computer-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -452,7 +452,7 @@
     },
     {
       "source": "/content/study-material/computer/english/04%20-%20Input%20Devices/computer-en-ch04.pdf",
-      "destination": "/content/study-material/computer/english/04%20-%20Input%20Devices/computer-input-devices-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/04%20-%20Input%20Devices/computer-input-devices-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -462,7 +462,7 @@
     },
     {
       "source": "/content/study-material/computer/english/05%20-%20Output%20Devices/computer-en-ch05.pdf",
-      "destination": "/content/study-material/computer/english/05%20-%20Output%20Devices/computer-output-devices-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/05%20-%20Output%20Devices/computer-output-devices-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -472,7 +472,7 @@
     },
     {
       "source": "/content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/computer-en-ch06.pdf",
-      "destination": "/content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/cpu-central-processing-unit-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/computer/english/06%20-%20Central%20Processing%20Unit/cpu-central-processing-unit-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -512,7 +512,7 @@
     },
     {
       "source": "/content/study-material/culture-of-punjab/english%20/cultural%20fairs%20/cultural-fairs-en.pdf",
-      "destination": "/content/study-material/culture-of-punjab/english/Cultural%20Fairs/fairs-of-punjab-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/culture-of-punjab/english/Cultural%20Fairs/fairs-of-punjab-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -522,7 +522,7 @@
     },
     {
       "source": "/content/study-material/culture-of-punjab/Punjabi%20/Cultural%20Fairs/cultural-fairs-pa.pdf",
-      "destination": "/content/study-material/culture-of-punjab/punjabi/Cultural%20Fairs/fairs-of-punjab-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/culture-of-punjab/punjabi/Cultural%20Fairs/fairs-of-punjab-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -567,7 +567,7 @@
     },
     {
       "source": "/content/study-material/culture-of-punjab/english%20/punjab%20folk%20dance/punjab-folk-dance-en.pdf",
-      "destination": "/content/study-material/culture-of-punjab/english/Punjab%20Folk%20Dances/punjab-folk-dances-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/culture-of-punjab/english/Punjab%20Folk%20Dances/punjab-folk-dances-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -577,7 +577,7 @@
     },
     {
       "source": "/content/study-material/culture-of-punjab/Punjabi%20/Punajb%20Folk%20dances/punjab-folk-dance-pa.pdf",
-      "destination": "/content/study-material/culture-of-punjab/punjabi/Punjab%20Folk%20Dances/punjab-folk-dances-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/culture-of-punjab/punjabi/Punjab%20Folk%20Dances/punjab-folk-dances-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -587,7 +587,7 @@
     },
     {
       "source": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-en-ch01.pdf",
-      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -597,7 +597,7 @@
     },
     {
       "source": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-en-ch02.pdf",
-      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -607,7 +607,7 @@
     },
     {
       "source": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-en-ch03.pdf",
-      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -617,7 +617,7 @@
     },
     {
       "source": "/content/study-material/reasoning/punjabi/01%20-%20Number%20Series/reasoning-pa-ch01.pdf",
-      "destination": "/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/01%20-%20Number%20Series/reasoning-number-series-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -627,7 +627,7 @@
     },
     {
       "source": "/content/study-material/reasoning/punjabi/02%20-%20Analogy/reasoning-pa-ch02.pdf",
-      "destination": "/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/02%20-%20Analogy/reasoning-analogy-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -637,7 +637,7 @@
     },
     {
       "source": "/content/study-material/reasoning/punjabi/03%20-%20Verbal%20Classifications/reasoning-pa-ch03.pdf",
-      "destination": "/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/reasoning/english/03%20-%20Verbal%20Classifications/reasoning-verbal-classification-notes-punjabi-english.pdf",
       "statusCode": 301
     },
     {
@@ -647,7 +647,7 @@
     },
     {
       "source": "/content/study-material/geography-of-punjab/Punjabi%20/rivers-of-punjab/rivers-of-punjab-pa.pdf",
-      "destination": "/content/study-material/geography-of-punjab/punjabi/rivers-of-punjab/rivers-of-punjab-notes-punjabi.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/geography-of-punjab/punjabi/rivers-of-punjab/rivers-of-punjab-notes-punjabi.pdf",
       "statusCode": 301
     },
     {
@@ -657,7 +657,7 @@
     },
     {
       "source": "/content/study-material/geography-of-punjab/english%20/rivers-of-punjab/rivers-of%20punjab.pdf",
-      "destination": "/content/study-material/geography-of-punjab/english/rivers-of-punjab/rivers-of-punjab-notes-english.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/geography-of-punjab/english/rivers-of-punjab/rivers-of-punjab-notes-english.pdf",
       "statusCode": 301
     },
     {
@@ -687,7 +687,7 @@
     },
     {
       "source": "/content/study-material/english/english%20/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/simple-compound-complex-sentences.pdf",
-      "destination": "/content/study-material/english/english/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/english-grammar-simple-compound-complex-sentences-notes.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/english/english/04%20-%20Simple%2C%20Compound%20and%20Complex%20Sentences/english-grammar-simple-compound-complex-sentences-notes.pdf",
       "statusCode": 301
     },
     {
@@ -712,7 +712,7 @@
     },
     {
       "source": "/content/study-material/english/english%20/01%20-%20Subject%20and%20Predicate/subject-predicate.pdf",
-      "destination": "/content/study-material/english/english/01%20-%20Subject%20and%20Predicate/english-grammar-subject-and-predicate-notes.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/english/english/01%20-%20Subject%20and%20Predicate/english-grammar-subject-and-predicate-notes.pdf",
       "statusCode": 301
     },
     {
@@ -722,7 +722,7 @@
     },
     {
       "source": "/content/study-material/english/english%20/03%20-%20Types%20of%20Sentences/types-of-sentences.pdf",
-      "destination": "/content/study-material/english/english/03%20-%20Types%20of%20Sentences/english-grammar-types-of-sentences-notes.pdf",
+      "destination": "https://files.houseofaspirants.in/content/study-material/english/english/03%20-%20Types%20of%20Sentences/english-grammar-types-of-sentences-notes.pdf",
       "statusCode": 301
     },
     {
@@ -814,6 +814,16 @@
       "source": "/material-03-verbal-classifications-2",
       "destination": "/material-reasoning-pa-ch03",
       "permanent": true
+    },
+    {
+      "source": "/content/:path(.*\\.(?:pdf|PDF))",
+      "destination": "https://files.houseofaspirants.in/content/:path",
+      "statusCode": 301
+    },
+    {
+      "source": "/assets/pdfs/:path(.*\\.(?:pdf|PDF))",
+      "destination": "https://files.houseofaspirants.in/assets/pdfs/:path",
+      "statusCode": 301
     },
     {
       "source": "/pa/quiz-quant-01 - Number System - MCQ - EN - Part 1",

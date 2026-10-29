@@ -25,6 +25,11 @@
   "use strict";
 
   const BASE = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+  /** The file host's URL for a local PDF path (core.js; same path when none). */
+  const hosted = (src) => {
+    const h = /** @type {any} */ (window).HOA;
+    return h && typeof h.fileUrl === "function" ? h.fileUrl(src) : src;
+  };
   /** @type {Promise<any> | null} */
   let libP = null;
   const loadLib = () => {
@@ -67,6 +72,7 @@
    * @param {HTMLElement | null} scroller  the scrolling element (modal) or null (page)
    */
   async function mount(box, src, mode, scroller) {
+    src = hosted(src);
     box.innerHTML = '<p class="pr-msg">Opening the PDF…</p>';
     track("pdf_preview", { file_name: fileName(src), mode, page: location.pathname });
     let pdf;
@@ -193,6 +199,7 @@
     if (lastFocus) lastFocus.focus();
   };
   const openModal = (src, title) => {
+    src = hosted(src);
     close();
     lastFocus = /** @type {HTMLElement | null} */ (document.activeElement);
     const m = document.createElement("div");

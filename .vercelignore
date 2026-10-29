@@ -1,0 +1,4 @@
+# PDFs are served from Cloudflare R2 (scripts/r2_switch.py) - never upload them to Vercel
+content/**/*.pdf
+content/**/*.PDF
+assets/pdfs/*.pdf

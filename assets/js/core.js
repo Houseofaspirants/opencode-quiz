@@ -21,6 +21,39 @@
 const HOA = (() => {
   "use strict";
 
+  /* ===================================================== 0. FILE HOST ====
+     Where the hosted PDFs live. Empty = this site (content/…, assets/pdfs/…).
+     Set from data/site.json → files.pdfBase by scripts/build_content.py —
+     do not edit by hand. With a base (Cloudflare R2), every local PDF path
+     is turned into base + "/" + path, so PDF bytes never touch Vercel. */
+  const FILES_BASE = "https://files.houseofaspirants.in";
+  const LOCAL_PDF_RX = /^(?:\.?\/)?((?:content|assets\/pdfs)\/[^?#]*\.pdf)([?#].*)?$/i;
+  /** @param {string} path a PDF path as a page or manifest carries it */
+  function fileUrl(path) {
+    const v = String(path || "");
+    if (!FILES_BASE) return v;
+    const m = LOCAL_PDF_RX.exec(v);
+    return m ? `${FILES_BASE}/${m[1]}${m[2] || ""}` : v;
+  }
+  /** Points one link at the file host (static links and links rendered later). */
+  function hostLink(a) {
+    const href = a.getAttribute("href") || "";
+    const to = fileUrl(href);
+    if (to !== href) a.setAttribute("href", to);
+  }
+  function initFileHost() {
+    if (!FILES_BASE) return;
+    const fix = (ev) => {
+      const t = /** @type {Element | null} */ (ev.target);
+      const a = t && t.closest ? t.closest("a[href]") : null;
+      if (a) hostLink(a);
+    };
+    // capture phase: rewrite before the browser follows the link
+    ["click", "auxclick", "contextmenu", "pointerdown"].forEach((t) =>
+      document.addEventListener(t, fix, true));
+    document.querySelectorAll('a[href*=".pdf"], a[href*=".PDF"]').forEach(hostLink);
+  }
+
   /* ======================================================== 1. STORAGE ==== */
   const PREFIX = "hoa:";
   const memory = new Map(); // fallback when localStorage is blocked
@@ -2561,6 +2594,7 @@ const HOA = (() => {
     tidyStudyUrl();   // before analytics, so the page_view records the clean URL
     startAnalytics(); // first: gets the page_view queued before any UI work
     initAffiliateTracking(); // Books buy buttons, before any of them can render
+    initFileHost();          // PDFs from the file host (R2), when one is set
     initGrowthTracking();    // Telegram, share, PDF, live, language (GA4)
     startClarity(); // Clarity is a no-op off the live domain (skips non-prod)
     renderChrome();
@@ -2639,6 +2673,7 @@ const HOA = (() => {
   return {
     db, loadIndex, loadQuestions, normalizeQuestions, loadStudySubjects,
     toast, esc, seo, countUp, fmtTime, uid, langBadge,
+    fileUrl,
     /* The one search index builder, and the sections it folds in. search.html
        reads both so the full-page search and the Ctrl+K overlay agree on what
        exists and where it lives. */

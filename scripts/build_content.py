@@ -97,6 +97,22 @@ OG_ABS = f"{DOMAIN}/{OG_IMAGE}"
 BYLINE = "House of Aspirants Editorial Team"
 BRAND_SUFFIX = " | House of Aspirants"
 
+
+def _pdf_base():
+    """data/site.json -> files.pdfBase: where hosted PDFs are served from.
+
+    Empty (the default) keeps every PDF on this site. A base such as
+    https://files.houseofaspirants.in (Cloudflare R2) makes every generated
+    PDF link, reader source and schema contentUrl point there instead."""
+    try:
+        cfg = json.loads((ROOT / "data" / "site.json").read_text(encoding="utf-8"))
+        return str(((cfg.get("files") or {}).get("pdfBase")) or "").rstrip("/")
+    except (OSError, ValueError):
+        return ""
+
+
+PDF_BASE = _pdf_base()
+
 # Generated page prefixes - used for idempotent cleanup of stale output.
 GEN_PREFIXES = ("material-", "note-", "ca-", "magazine-", "strategy-", "session-", "recruit-",
                 "blog-", "news-", "announce-", "expected-", "pyq-",
@@ -274,7 +290,7 @@ def md_inline(text):
     s = esc(text)
     s = _INLINE_CODE.sub(lambda m: f"<code>{m.group(1)}</code>", s)
     s = _LINK.sub(
-        lambda m: f'<a href="{esc(m.group(2))}">{m.group(1)}</a>', s)
+        lambda m: f'<a href="{hosted_pdf(esc(m.group(2)))}">{m.group(1)}</a>', s)
     s = _INLINE_BOLD.sub(lambda m: f"<strong>{m.group(1)}</strong>", s)
     s = _INLINE_ITALIC.sub(lambda m: f"<em>{m.group(1)}</em>", s)
     return s
@@ -1882,7 +1898,7 @@ def learning_resource_node(rec, url):
         # states is one schema.org really declares.
         node["encoding"] = {
             "@type": ["DataDownload", "MediaObject"],
-            "contentUrl": f"{DOMAIN}/{pdf_href(pdf)}",
+            "contentUrl": abs_pdf_url(pdf),
             "encodingFormat": "application/pdf",
         }
     src = str(rec.get("pdfPreview") or "")
@@ -3078,7 +3094,22 @@ def pdf_href(path):
     v = str(path or "")
     if v.startswith(("http://", "https://")):
         return v
-    return quote(v, safe="/%")
+    return hosted_pdf(quote(v, safe="/%"))
+
+
+_LOCAL_PDF = re.compile(r"(?:\.?/)?((?:content|assets/pdfs)/[^?#]*\.pdf)([?#].*)?$", re.I)
+
+
+def hosted_pdf(href):
+    """A local PDF href on the file host (files.pdfBase), else unchanged."""
+    m = _LOCAL_PDF.match(href) if PDF_BASE else None
+    return f"{PDF_BASE}/{m.group(1)}{m.group(2) or ''}" if m else href
+
+
+def abs_pdf_url(path):
+    """Absolute URL of a hosted PDF (schema.org contentUrl)."""
+    href = pdf_href(path)
+    return href if href.startswith(("http://", "https://")) else f"{DOMAIN}/{href}"
 
 
 def pdf_date_from_name(stem):
@@ -7064,9 +7095,15 @@ def patch_core_nav():
         lines = nav_lines(kind)
         out = pre + start + "\n" + "\n".join(ws + ln for ln in lines) + \
             "\n" + ws + end + post
+    # The front end's file host follows data/site.json -> files.pdfBase too.
+    out, n = re.subn(r'const FILES_BASE = "[^"]*";',
+                     f'const FILES_BASE = {json.dumps(PDF_BASE)};', out, count=1)
+    if not n:
+        err("assets/js/core.js: `const FILES_BASE = \"\";` missing - restore it")
+        return
     if out != src:
         path.write_text(out, encoding="utf-8")
-        info("assets/js/core.js: navigation blocks regenerated from HUBS")
+        info("assets/js/core.js: navigation blocks / file host regenerated")
 
 
 # =============================================================================

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-29T17:50:06.769Z",
+  "generatedAt": "2026-10-29T19:56:43.351Z",
   "stats": {
     "subjects": 7,
     "categories": 47,
@@ -47,6 +47,9 @@
       "apiBase": "",
       "sample": true,
       "pageSize": 20
+    },
+    "files": {
+      "pdfBase": "https://files.houseofaspirants.in"
     }
   },
   "subjects": [
