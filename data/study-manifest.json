@@ -196,9 +196,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 5,
-      "newest": "2026-10-16",
-      "totalSize": 13342588,
+      "count": 6,
+      "newest": "2026-10-30",
+      "totalSize": 16060479,
       "languages": [
         {
           "id": "pa",
@@ -213,7 +213,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "01 - Subject and Predicate",
@@ -269,13 +269,24 @@
                 }
               ],
               "pages": 18
+            },
+            {
+              "id": "06 - Subject Verb Agreement",
+              "name": "Chapter 6: Subject Verb Agreement",
+              "parts": [
+                {
+                  "file": "material-english-grammar-subject-verb-agreement-notes.html",
+                  "n": 1
+                }
+              ],
+              "pages": 15
             }
           ]
         }
       ],
-      "chapters": 5,
+      "chapters": 6,
       "counts": {
-        "en": 5,
+        "en": 6,
         "pa": 0
       },
       "pages": {
@@ -2616,6 +2627,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 78,
+  "total": 79,
   "generatedBy": "scripts/study_material.py"
 }

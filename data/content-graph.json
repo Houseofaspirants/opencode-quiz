@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 452,
-  "edges": 3302,
+  "nodes": 454,
+  "edges": 3326,
   "silos": 35,
   "clusters": 138,
   "pillars": 34
@@ -1919,6 +1919,30 @@
    "type": "study-material",
    "template": "",
    "title": "Subject and Predicate (Complete and Simple Forms) (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-english-grammar-subject-verb-agreement-notes",
+   "url": "/material-english-grammar-subject-verb-agreement-notes",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-english-grammar-subject-verb-agreement-notes.html",
+   "url": "/material-english-grammar-subject-verb-agreement-notes.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 6: Subject Verb Agreement (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6183,6 +6207,12 @@
   },
   {
    "from": "archive-category-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-english.html",
    "to": "material-english-grammar-types-of-sentences-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -8440,6 +8470,12 @@
   {
    "from": "archives.html",
    "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12356,6 +12392,12 @@
    "weight": 1
   },
   {
+   "from": "material-english-grammar-clauses-and-phrases-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -12442,6 +12484,12 @@
   {
    "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
    "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -12536,6 +12584,12 @@
    "weight": 1
   },
   {
+   "from": "material-english-grammar-subject-and-predicate-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -12626,6 +12680,108 @@
    "weight": 1
   },
   {
+   "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "study-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-clauses-and-phrases-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-subject-and-predicate-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-types-of-sentences-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-english-grammar-types-of-sentences-notes.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -12712,6 +12868,12 @@
   {
    "from": "material-english-grammar-types-of-sentences-notes.html",
    "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-types-of-sentences-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14541,7 +14703,7 @@
   },
   {
    "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14625,7 +14787,7 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14709,7 +14871,7 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -14979,13 +15141,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15063,13 +15225,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17289,13 +17451,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17373,13 +17535,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17463,7 +17625,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17547,7 +17709,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17631,7 +17793,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17709,13 +17871,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17793,13 +17955,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20217,7 +20379,7 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25017,6 +25179,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-english-grammar-types-of-sentences-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -25431,7 +25599,7 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "contextual",
    "weight": 1
   },
