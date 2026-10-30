@@ -719,21 +719,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 34,
-      "newest": "2026-10-29",
-      "totalSize": 68158683,
-      "chapters": 31,
+      "count": 35,
+      "newest": "2026-10-30",
+      "totalSize": 70238211,
+      "chapters": 32,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 34,
-          "chapters": 31,
-          "pages": 159,
-          "totalSize": 68158683,
-          "newest": "2026-10-29",
+          "files": 35,
+          "chapters": 32,
+          "pages": 166,
+          "totalSize": 70238211,
+          "newest": "2026-10-30",
           "categories": 12,
           "regions": 2
         },
@@ -743,11 +743,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 16,
-              "chapters": 13,
-              "pages": 77,
-              "totalSize": 36423070,
-              "newest": "2026-10-29",
+              "files": 17,
+              "chapters": 14,
+              "pages": 84,
+              "totalSize": 38502598,
+              "newest": "2026-10-30",
               "categories": 6
             },
             "categories": [
@@ -1205,11 +1205,11 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 4,
-                  "chapters": 4,
-                  "pages": 22,
-                  "totalSize": 7185408,
-                  "newest": "2026-10-24"
+                  "files": 5,
+                  "chapters": 5,
+                  "pages": 29,
+                  "totalSize": 9264936,
+                  "newest": "2026-10-30"
                 },
                 "languages": [
                   {
@@ -1248,7 +1248,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 2,
+                    "count": 3,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Basic Concepts of Economy",
@@ -1271,6 +1271,17 @@
                           }
                         ],
                         "pages": 5
+                      },
+                      {
+                        "id": "Chapter 03 - National Income",
+                        "name": "Chapter 03: National Income",
+                        "parts": [
+                          {
+                            "file": "material-national-income-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 7
                       }
                     ]
                   }
@@ -1749,7 +1760,7 @@
         ]
       },
       "counts": {
-        "en": 17,
+        "en": 18,
         "pa": 17
       },
       "pages": {
@@ -2021,9 +2032,9 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 4,
-      "newest": "2026-10-24",
-      "totalSize": 7185408,
+      "count": 5,
+      "newest": "2026-10-30",
+      "totalSize": 9264936,
       "languages": [
         {
           "id": "pa",
@@ -2061,7 +2072,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 2,
+          "count": 3,
           "chapters": [
             {
               "id": "Chapter 01 - Basic Concepts of Economy",
@@ -2084,14 +2095,25 @@
                 }
               ],
               "pages": 5
+            },
+            {
+              "id": "Chapter 03 - National Income",
+              "name": "Chapter 03: National Income",
+              "parts": [
+                {
+                  "file": "material-national-income-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         }
       ],
-      "chapters": 4,
+      "chapters": 5,
       "hidden": true,
       "counts": {
-        "en": 2,
+        "en": 3,
         "pa": 2
       },
       "pages": {
@@ -2627,6 +2649,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 79,
+  "total": 80,
   "generatedBy": "scripts/study_material.py"
 }

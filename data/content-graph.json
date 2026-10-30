@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 454,
-  "edges": 3326,
+  "nodes": 456,
+  "edges": 3348,
   "silos": 35,
   "clusters": 138,
   "pillars": 34
@@ -2471,6 +2471,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: Number System (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-national-income-notes-english",
+   "url": "/material-national-income-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-national-income-notes-english.html",
+   "url": "/material-national-income-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 03: National Income (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6170,6 +6194,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-economy.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-english.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -8608,6 +8638,12 @@
   {
    "from": "archives.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12201,12 +12237,6 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -12215,6 +12245,18 @@
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -12299,6 +12341,12 @@
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -14343,14 +14391,20 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -14435,6 +14489,12 @@
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "to": "material-indian-economy-basic-concepts-notes-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -14876,6 +14936,96 @@
    "weight": 1
   },
   {
+   "from": "material-national-income-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "material-national-income-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -15147,7 +15297,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15231,7 +15381,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17457,7 +17607,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17541,7 +17691,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17877,7 +18027,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17961,7 +18111,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20397,12 +20547,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-making-of-indian-constitution-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -20416,6 +20560,12 @@
   {
    "from": "pdfs.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25317,6 +25467,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -25617,12 +25773,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-making-of-indian-constitution-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -25636,6 +25786,12 @@
   {
    "from": "study-notes.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
