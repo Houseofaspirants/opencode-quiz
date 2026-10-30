@@ -1,0 +1,7 @@
+{
+  "name": "houseofaspirants-www",
+  "main": "worker.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": false,
+  "routes": [{ "pattern": "www.houseofaspirants.in", "custom_domain": true }]
+}

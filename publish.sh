@@ -77,12 +77,28 @@ for path, patterns in VOLATILE.items():
         p.write_text(work, encoding="utf-8")
 PY
 
+# Cloudflare Workers: select dist/ and translate vercel.json (redirects,
+# headers) into cloudflare/redirects.json, dist/_headers and wrangler.json.
+node scripts/build_cf.mjs
+
 git add -A
 
 step "5/5 bash scripts/ci.sh"
 bash scripts/ci.sh
 
 git add -A
+
+# Deploy the verified build to Cloudflare (houseofaspirants.in). Only changed
+# files are uploaded. Needs CLOUDFLARE_API_TOKEN in .r2.env (never committed).
+CF_TOKEN=$(sed -n 's/^CLOUDFLARE_API_TOKEN=//p' .r2.env 2>/dev/null || true)
+if [ -n "$CF_TOKEN" ]; then
+  step "Cloudflare: npx wrangler deploy"
+  CLOUDFLARE_API_TOKEN="$CF_TOKEN" \
+  CLOUDFLARE_ACCOUNT_ID=$(sed -n 's/^CLOUDFLARE_ACCOUNT_ID=//p' .r2.env) \
+    npx --yes wrangler@4.156.0 deploy
+else
+  echo "⚠ CLOUDFLARE_API_TOKEN missing in .r2.env - the live site was NOT updated"
+fi
 
 if git diff --cached --quiet; then
   echo "================================="
@@ -95,5 +111,5 @@ git commit -m "publish content"
 
 echo "================================="
 echo "✅ BUILD VERIFIED AND COMMITTED"
-echo "Push origin to update the live website."
+echo "Website updated on Cloudflare. Push origin to back up to GitHub and post to Telegram."
 echo "================================="

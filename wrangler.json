@@ -1,0 +1,30 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "houseofaspirants",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2025-09-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "run_worker_first": [
+      "/study",
+      "/study.html",
+      "/archive-category-english",
+      "/archive-category-english.html",
+      "/archive-category-punjabi",
+      "/archive-category-punjabi.html"
+    ]
+  },
+  "routes": [
+    {
+      "pattern": "houseofaspirants.in",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": false
+  }
+}

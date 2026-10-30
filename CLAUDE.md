@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this is
 
-House of Aspirants (houseofaspirants.in) — a static exam-prep site (Punjab Police / PSSSB quizzes, study material, current affairs). Plain HTML/CSS/vanilla JS, no framework, no bundler, no backend. Deployed on Vercel straight from the repo root (`vercel.json`, `cleanUrls`). Most HTML at the root and everything in `data/` is **generated and committed**; Python and Node build scripts produce it.
+House of Aspirants (houseofaspirants.in) — a static exam-prep site (Punjab Police / PSSSB quizzes, study material, current affairs). Plain HTML/CSS/vanilla JS, no framework, no bundler, no backend. Served by Cloudflare Workers static assets (`wrangler.json`, `scripts/build_cf.mjs`, `cloudflare/worker.js`); `vercel.json` is still the source of redirects and headers, translated on every deploy. PDFs live on Cloudflare R2 (files.houseofaspirants.in, `scripts/r2_sync.mjs`). Most HTML at the root and everything in `data/` is **generated and committed**; Python and Node build scripts produce it.
 
 ## Commands
 
