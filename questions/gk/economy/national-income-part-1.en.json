@@ -1,0 +1,339 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Who gave the idea of national income in 1934?",
+    "options": [
+      "Simon Kuznets",
+      "J. M. Keynes",
+      "Amartya Sen",
+      "Mahbub ul Haq"
+    ],
+    "answer": 0,
+    "explanation": "Simon Kuznets gave the idea of national income in 1934. Keynes is associated with macroeconomic theory, while Amartya Sen and Mahbub ul Haq are linked with the Human Development Index. National income is commonly expressed as GDP.",
+    "tags": [
+      "National Income",
+      "Simon Kuznets"
+    ]
+  },
+  {
+    "id": 2,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about national income:\n1. It is the total money value of all final goods and services produced during a specific period.\n2. It includes only the private sector.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "2 only",
+      "1 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 1,
+    "explanation": "Statement 1 is correct because national income values final goods and services produced during a specified period. Statement 2 is incorrect because both public and private sectors are included. Intermediate goods are not counted separately.",
+    "tags": [
+      "National Income",
+      "Definition"
+    ]
+  },
+  {
+    "id": 3,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): Foreign embassies in India are not part of India’s domestic territory.\nReason (R): Indian embassies abroad are part of India’s domestic territory.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "A is true but R is false",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is false but R is true"
+    ],
+    "answer": 2,
+    "explanation": "Both the assertion and reason are true, but the reason does not explain the assertion. Foreign embassies in India are excluded from India’s domestic territory, whereas Indian embassies abroad are included. Domestic territory is the geographical area administered by the Government of India.",
+    "tags": [
+      "National Income",
+      "Domestic Territory"
+    ]
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "concept",
+    "question": "Which expression correctly converts Market Price (MP) into Factor Cost (FC)?",
+    "options": [
+      "FC = MP + Indirect Taxes - Subsidies",
+      "FC = MP - Indirect Taxes - Subsidies",
+      "FC = MP + Indirect Taxes + Subsidies",
+      "FC = MP - Indirect Taxes + Subsidies"
+    ],
+    "answer": 3,
+    "explanation": "Factor Cost equals Market Price minus indirect taxes plus subsidies. Market Price includes indirect taxes and excludes subsidies, whereas Factor Cost excludes indirect taxes and includes subsidies. This distinction is used in measures such as GDP at factor cost.",
+    "tags": [
+      "National Income",
+      "Factor Cost"
+    ]
+  },
+  {
+    "id": 5,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "match",
+    "question": "Match List I with List II:\nList I\nA. Nominal Price\nB. Base Price\nList II\n1. Market price in the base year\n2. Market price in the current year\nSelect the correct answer using the code below.",
+    "options": [
+      "A-2, B-1",
+      "A-1, B-2",
+      "A-1, B-1",
+      "A-2, B-2"
+    ],
+    "answer": 0,
+    "explanation": "Nominal Price is the market price in the current year, while Base Price is the market price in the base year. Current prices include the effect of prevailing inflation. Constant prices are another name for base-year prices.",
+    "tags": [
+      "National Income",
+      "Prices"
+    ]
+  },
+  {
+    "id": 6,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Depreciation is also called:",
+    "options": [
+      "Net Factor Income from Abroad",
+      "Consumption of Fixed Capital",
+      "Intermediate Consumption",
+      "Net Exports"
+    ],
+    "answer": 1,
+    "explanation": "Depreciation is also called Consumption of Fixed Capital. It is the loss in value of fixed assets due to wear and tear, accidental damage, or obsolescence. NFIA concerns factor income across countries, not loss in asset value.",
+    "tags": [
+      "National Income",
+      "Depreciation"
+    ]
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "concept",
+    "question": "Net Factor Income from Abroad (NFIA) is calculated as:",
+    "options": [
+      "Factor income from India to abroad - factor income from abroad to India",
+      "Exports - imports",
+      "Factor income from abroad to India - factor income from India to abroad",
+      "Indirect taxes - subsidies"
+    ],
+    "answer": 2,
+    "explanation": "NFIA is factor income earned abroad by normal residents of India minus factor income earned in India by non-residents. Factor income includes rent, wages, interest and profit. Exports minus imports is net exports, not NFIA.",
+    "tags": [
+      "National Income",
+      "NFIA"
+    ]
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "not-correct",
+    "question": "Which of the following is NOT included in national income?",
+    "options": [
+      "Wages earned for providing a service",
+      "Profit earned from production",
+      "Rent received for use of property",
+      "A scholarship received by a student"
+    ],
+    "answer": 3,
+    "explanation": "A scholarship is a transfer payment and is not included in national income. Transfer payments are one-sided payments for which no goods or services are exchanged. Wages, profit and rent are factor incomes linked to production.",
+    "tags": [
+      "National Income",
+      "Transfer Payments"
+    ]
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): A higher Capital Output Ratio (COR) indicates lower efficiency of an economy.\nReason (R): COR is the amount of capital needed to produce one unit of output.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 0,
+    "explanation": "Both statements are true, and the reason explains the assertion. COR equals capital divided by output; more capital required for each unit of output implies lower efficiency. A lower COR therefore indicates higher efficiency.",
+    "tags": [
+      "National Income",
+      "COR"
+    ]
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "What does Incremental Capital Output Ratio (ICOR) measure?",
+    "options": [
+      "Capital needed to produce total output",
+      "Additional capital needed to produce an additional unit of output",
+      "Loss in value of fixed capital",
+      "Value of output minus intermediate consumption"
+    ],
+    "answer": 1,
+    "explanation": "ICOR measures the additional capital required to produce an additional unit of output. It equals incremental capital divided by incremental output. Total capital divided by total output is COR, not ICOR.",
+    "tags": [
+      "National Income",
+      "ICOR"
+    ]
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about GDP:\n1. It counts only final goods and services.\n2. It includes production by foreign nationals within the domestic territory.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 2,
+    "explanation": "Both statements are correct. GDP measures final goods and services produced within domestic territory, including production by resident citizens and foreign nationals living within the country. Intermediate goods are excluded to avoid double counting.",
+    "tags": [
+      "National Income",
+      "GDP"
+    ]
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "In the expenditure identity GDP = C + I + G + NX, what does NX denote?",
+    "options": [
+      "Non-tax revenue",
+      "National expenditure",
+      "Net factor income",
+      "Net exports"
+    ],
+    "answer": 3,
+    "explanation": "NX denotes net exports, which equals exports minus imports. C stands for consumption, I for investment and G for government spending. NFIA is used in the relation between GDP and GNP.",
+    "tags": [
+      "National Income",
+      "GDP"
+    ]
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Which one of the following correctly describes GDP at Market Price (GDP MP)?",
+    "options": [
+      "It includes indirect taxes and excludes subsidies",
+      "It excludes indirect taxes and includes subsidies",
+      "It excludes both indirect taxes and subsidies",
+      "It includes both indirect taxes and subsidies"
+    ],
+    "answer": 0,
+    "explanation": "GDP at Market Price includes indirect taxes and excludes subsidies. GDP at Factor Cost has the opposite treatment: it excludes indirect taxes and includes subsidies. GDP MP is the market value of final goods and services produced within domestic territory in a financial year.",
+    "tags": [
+      "National Income",
+      "GDP MP"
+    ]
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "match",
+    "question": "Match the factor of production with its place in GDP at Factor Cost:\nA. Land\nB. Labour\nC. Capital\nD. Entrepreneurship\nWhich set contains only factors whose income is included in GDP at Factor Cost?",
+    "options": [
+      "A and B only",
+      "A, B, C and D",
+      "A, B and C only",
+      "B, C and D only"
+    ],
+    "answer": 1,
+    "explanation": "GDP at Factor Cost is the total income earned by all four factors of production: land, labour, capital and entrepreneurship. It excludes indirect taxes and includes subsidies. The question therefore requires all four items.",
+    "tags": [
+      "National Income",
+      "GDP FC"
+    ]
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "match",
+    "question": "Match List I with List II:\nA. Real GDP\nB. Nominal GDP\nList II\n1. Current market prices\n2. Constant prices\nSelect the correct answer using the code below.",
+    "options": [
+      "A-1, B-2",
+      "A-1, B-1",
+      "A-2, B-1",
+      "A-2, B-2"
+    ],
+    "answer": 2,
+    "explanation": "Real GDP is measured at constant, or base-year, prices and does not include inflation. Nominal GDP is measured at current market prices and includes inflation. Thus A-2 and B-1 is the correct match.",
+    "tags": [
+      "National Income",
+      "Real GDP",
+      "Nominal GDP"
+    ]
+  },
+  {
+    "id": 16,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "concept",
+    "question": "The GDP Deflator is measured as:",
+    "options": [
+      "Real GDP / Nominal GDP",
+      "GNP / GDP",
+      "GDP at Factor Cost / GDP at Market Price",
+      "Nominal GDP / Real GDP"
+    ],
+    "answer": 3,
+    "explanation": "GDP Deflator equals Nominal GDP divided by Real GDP. It compares national income at current prices with that at base-year prices and is therefore a measure of inflation. The other ratios are not the GDP Deflator formula.",
+    "tags": [
+      "National Income",
+      "GDP Deflator"
+    ]
+  }
+]

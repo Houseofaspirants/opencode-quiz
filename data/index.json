@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 47,
-    "topics": 80,
-    "quizzes": 80,
-    "questions": 1841,
+    "topics": 82,
+    "quizzes": 82,
+    "questions": 1873,
     "studentsPracticed": 12500
   },
   "site": {
@@ -961,6 +961,66 @@
             "pa": 25
           },
           "landing": "/quiz-gk-01-making-of-the-indian-constitution-part2"
+        },
+        {
+          "id": "national-income-part-1",
+          "name": "National Income - Part 1",
+          "description": "",
+          "file": "questions/gk/economy/national-income-part-1.en.json",
+          "count": 16,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793421878224,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/national-income-part-1.en.json",
+            "pa": "questions/gk/economy/national-income-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "National Income - Part 1",
+            "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 1"
+          },
+          "counts": {
+            "en": 16,
+            "pa": 16
+          },
+          "landing": "/quiz-gk-national-income-part-1"
+        },
+        {
+          "id": "national-income-part-2",
+          "name": "National Income - Part 2",
+          "description": "",
+          "file": "questions/gk/economy/national-income-part-2.en.json",
+          "count": 16,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793421878224,
+          "category": "economy",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/economy/national-income-part-2.en.json",
+            "pa": "questions/gk/economy/national-income-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "National Income - Part 2",
+            "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 2"
+          },
+          "counts": {
+            "en": 16,
+            "pa": 16
+          },
+          "landing": "/quiz-gk-national-income-part-2"
         },
         {
           "id": "02-preamble-and-parts-of-the-constitution-part1",
@@ -1919,6 +1979,66 @@
                 "pa": 18
               },
               "landing": "/quiz-gk-economic-planning-five-year-plans-part-3"
+            },
+            {
+              "id": "national-income-part-1",
+              "name": "National Income - Part 1",
+              "description": "",
+              "file": "questions/gk/economy/national-income-part-1.en.json",
+              "count": 16,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793421878224,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/national-income-part-1.en.json",
+                "pa": "questions/gk/economy/national-income-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "National Income - Part 1",
+                "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 1"
+              },
+              "counts": {
+                "en": 16,
+                "pa": 16
+              },
+              "landing": "/quiz-gk-national-income-part-1"
+            },
+            {
+              "id": "national-income-part-2",
+              "name": "National Income - Part 2",
+              "description": "",
+              "file": "questions/gk/economy/national-income-part-2.en.json",
+              "count": 16,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793421878224,
+              "category": "economy",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/economy/national-income-part-2.en.json",
+                "pa": "questions/gk/economy/national-income-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "National Income - Part 2",
+                "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 2"
+              },
+              "counts": {
+                "en": 16,
+                "pa": 16
+              },
+              "landing": "/quiz-gk-national-income-part-2"
             }
           ],
           "landing": "/category-gk-economy"
@@ -5174,6 +5294,14 @@
     "questions/gk/economy/economic-planning-five-year-plans-part-3.en.json": [
       "2a24c0869a888726",
       1792847850888
+    ],
+    "questions/gk/economy/national-income-part-1.en.json": [
+      "86fa5f4b46518540",
+      1793421878224
+    ],
+    "questions/gk/economy/national-income-part-2.en.json": [
+      "1b359e81a3dcd512",
+      1793421878224
     ],
     "questions/gk/geography-of-punjab/regions-administration-and-location-of-punjab-part-1.en.json": [
       "07216f5183a823a1",

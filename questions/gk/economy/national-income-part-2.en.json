@@ -1,0 +1,342 @@
+[
+  {
+    "id": 17,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "chronology",
+    "question": "In 2015, the Government shifted the GDP base year from 2004-05 to which year?",
+    "options": [
+      "2011-12",
+      "2010-11",
+      "2009-10",
+      "2022-23"
+    ],
+    "answer": 0,
+    "explanation": "In 2015, the base year was shifted from 2004-05 to 2011-12. The measurement was also shifted from factor cost to market prices. The later series released on 27 February 2026 uses 2022-23 as its base year.",
+    "tags": [
+      "National Income",
+      "GDP Base Year"
+    ]
+  },
+  {
+    "id": 18,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "According to the GDP series released on 27 February 2026, India uses which base year for national-income calculation?",
+    "options": [
+      "2011-12",
+      "2022-23",
+      "2020-21",
+      "2015-16"
+    ],
+    "answer": 1,
+    "explanation": "The series released on 27 February 2026 uses 2022-23 as the base year. Earlier base years listed are 2011-12 and 2004-05. A base year enables comparison of national income across years at constant prices.",
+    "tags": [
+      "National Income",
+      "GDP Base Year"
+    ]
+  },
+  {
+    "id": 19,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about GNP:\n1. It measures production by a country’s citizens wherever they are.\n2. It excludes production by foreign nationals living in the country.\nWhich of the statements given above is/are correct?",
+    "options": [
+      "1 only",
+      "2 only",
+      "Both 1 and 2",
+      "Neither 1 nor 2"
+    ],
+    "answer": 2,
+    "explanation": "Both statements are correct. GNP is based on citizens rather than territory, so it includes production by resident and non-resident citizens. Production by foreign nationals living in the country is not counted in GNP.",
+    "tags": [
+      "National Income",
+      "GNP"
+    ]
+  },
+  {
+    "id": 20,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "concept",
+    "question": "Which equation correctly states the relationship between GNP and GDP?",
+    "options": [
+      "GNP = GDP - NFIA",
+      "GNP = GDP + Depreciation",
+      "GNP = GDP - Depreciation",
+      "GNP = GDP + NFIA"
+    ],
+    "answer": 3,
+    "explanation": "GNP equals GDP plus Net Factor Income from Abroad (NFIA). Depreciation is deducted to derive net measures such as NDP and NNP. NFIA captures the difference in cross-border factor income.",
+    "tags": [
+      "National Income",
+      "GNP",
+      "NFIA"
+    ]
+  },
+  {
+    "id": 21,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): GDP defines an economy on a territorial basis.\nReason (R): GNP measures production by the citizens of a country.",
+    "options": [
+      "Both A and R are true but R is not the correct explanation of A",
+      "Both A and R are true and R is the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 0,
+    "explanation": "Both statements are true, but the reason describes GNP rather than explaining the territorial basis of GDP. GDP measures production within domestic territory, whereas GNP measures production by citizens. This is the central difference between the two measures.",
+    "tags": [
+      "National Income",
+      "GDP",
+      "GNP"
+    ]
+  },
+  {
+    "id": 22,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "concept",
+    "question": "Gross Value Added (GVA) is obtained by:",
+    "options": [
+      "GDP + indirect taxes - subsidies",
+      "GDP - indirect taxes + subsidies",
+      "GDP - depreciation",
+      "GNP - depreciation"
+    ],
+    "answer": 1,
+    "explanation": "GVA equals GDP minus indirect taxes plus subsidies. It is the value of output minus the value of intermediate consumption and indicates the contribution of labour and capital to production. GDP minus depreciation is NDP, while GNP minus depreciation is NNP.",
+    "tags": [
+      "National Income",
+      "GVA"
+    ]
+  },
+  {
+    "id": 23,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "match",
+    "question": "Match List I with List II:\nA. NDP\nB. NNP\nList II\n1. GNP - Depreciation\n2. GDP - Depreciation\nSelect the correct answer using the code below.",
+    "options": [
+      "A-1, B-2",
+      "A-1, B-1",
+      "A-2, B-1",
+      "A-2, B-2"
+    ],
+    "answer": 2,
+    "explanation": "NDP equals GDP minus depreciation, while NNP equals GNP minus depreciation. Depreciation is also called Consumption of Fixed Capital. Both NDP and NNP are net measures.",
+    "tags": [
+      "National Income",
+      "NDP",
+      "NNP"
+    ]
+  },
+  {
+    "id": 24,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "not-correct",
+    "question": "Which of the following is NOT one of the three methods of computing national income?",
+    "options": [
+      "Income Method",
+      "Expenditure Method",
+      "Production Method",
+      "Exchange Rate Method"
+    ],
+    "answer": 3,
+    "explanation": "Exchange Rate Method is not one of the three methods listed for computing national income. The three methods are Income, Expenditure and Production Method. Production Method is also called the Value Added Method or Output Method.",
+    "tags": [
+      "National Income",
+      "Methods"
+    ]
+  },
+  {
+    "id": 25,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Gross National Happiness (GNH) measures, apart from economic output, which of the following?\n1. Environmental impact\n2. Mental and physical health\n3. Spiritual and cultural growth\nSelect the correct answer using the code below.",
+    "options": [
+      "1, 2 and 3",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1 and 2 only"
+    ],
+    "answer": 0,
+    "explanation": "All three items are covered by GNH. It also considers the strength of corporate and political systems. GNH therefore goes beyond a measure based only on economic output.",
+    "tags": [
+      "National Income",
+      "GNH"
+    ]
+  },
+  {
+    "id": 26,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "The term Gross National Happiness was coined by:",
+    "options": [
+      "Mahbub ul Haq",
+      "Jigme Singye Wangchuck",
+      "Amartya Sen",
+      "Simon Kuznets"
+    ],
+    "answer": 1,
+    "explanation": "Jigme Singye Wangchuck, the King of Bhutan, coined the term Gross National Happiness in the early 1970s. Mahbub ul Haq and Amartya Sen developed HDI. Simon Kuznets gave the idea of national income.",
+    "tags": [
+      "National Income",
+      "GNH"
+    ]
+  },
+  {
+    "id": 27,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "direct",
+    "question": "Gross Sustainable Development Product (GSDP) was developed by which pair?",
+    "options": [
+      "UNDP and World Bank",
+      "RBI and NITI Aayog",
+      "Global Community Assessment Centre and Society for World Sustainable Development",
+      "IMF and WTO"
+    ],
+    "answer": 2,
+    "explanation": "GSDP was developed by the Global Community Assessment Centre and the Society for World Sustainable Development. It measures the economic impact of environmental and health degradation or improvement, resource depletion, and human activity on the environment. The other pairs are not identified as GSDP developers.",
+    "tags": [
+      "National Income",
+      "GSDP"
+    ]
+  },
+  {
+    "id": 28,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Which of the following are dimensions of the Human Development Index (HDI)?\n1. Health\n2. Education\n3. Standard of living\nSelect the correct answer using the code below.",
+    "options": [
+      "1 and 2 only",
+      "2 and 3 only",
+      "1 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 3,
+    "explanation": "All three are dimensions of HDI. Health is measured through life expectancy at birth, education through mean and expected years of schooling, and standard of living through GNI per capita on a PPP basis. HDI is a summary measure of average achievement in these dimensions.",
+    "tags": [
+      "National Income",
+      "HDI"
+    ]
+  },
+  {
+    "id": 29,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "difficult",
+    "type": "match",
+    "question": "Match List I with List II:\nA. Health\nB. Education\nC. Standard of living\nList II\n1. GNI per capita on PPP basis\n2. Life expectancy at birth\n3. Mean years of schooling and expected years of schooling\nSelect the correct answer using the code below.",
+    "options": [
+      "A-2, B-3, C-1",
+      "A-1, B-2, C-3",
+      "A-3, B-1, C-2",
+      "A-2, B-1, C-3"
+    ],
+    "answer": 0,
+    "explanation": "Health is measured by life expectancy at birth, education by mean and expected years of schooling, and standard of living by GNI per capita on a PPP basis. Hence A-2, B-3 and C-1 is correct. These are the three stated HDI dimensions.",
+    "tags": [
+      "National Income",
+      "HDI"
+    ]
+  },
+  {
+    "id": 30,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "HDI was developed by Pakistani economist Mahbub ul Haq with which Indian economist?",
+    "options": [
+      "J. M. Keynes",
+      "Amartya Sen",
+      "Simon Kuznets",
+      "Jigme Singye Wangchuck"
+    ],
+    "answer": 1,
+    "explanation": "Mahbub ul Haq developed HDI with Indian economist Amartya Sen. Simon Kuznets is associated with the idea of national income, while Jigme Singye Wangchuck coined GNH. HDI summarises average achievement in health, education and standard of living.",
+    "tags": [
+      "National Income",
+      "HDI"
+    ]
+  },
+  {
+    "id": 31,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which organisation publishes the Human Development Report every year?",
+    "options": [
+      "WTO",
+      "IMF",
+      "UNDP",
+      "World Bank"
+    ],
+    "answer": 2,
+    "explanation": "UNDP publishes the Human Development Report every year. HDI is published in this report. IMF, WTO and the World Bank have different international economic roles.",
+    "tags": [
+      "National Income",
+      "HDI",
+      "UNDP"
+    ]
+  },
+  {
+    "id": 32,
+    "part": 2,
+    "subject": "Indian Economy",
+    "topic": "National Income",
+    "difficulty": "moderate",
+    "type": "concept",
+    "question": "What is Green GDP?",
+    "options": [
+      "GDP plus NFIA",
+      "GDP measured at current prices",
+      "GDP minus depreciation",
+      "GDP adjusted for environmental damage"
+    ],
+    "answer": 3,
+    "explanation": "Green GDP is GDP adjusted for environmental damage, including biodiversity loss and climate change. Nominal GDP is measured at current prices, NDP is GDP minus depreciation, and GNP is GDP plus NFIA. Green GDP incorporates environmental factors into the picture of economic growth.",
+    "tags": [
+      "National Income",
+      "Green GDP"
+    ]
+  }
+]

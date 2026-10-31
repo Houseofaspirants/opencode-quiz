@@ -662,6 +662,50 @@
       }
     },
     {
+      "id": "national-income-part-1",
+      "subject": "gk",
+      "category": "economy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 16,
+      "counts": {
+        "en": 16,
+        "pa": 16
+      },
+      "titles": {
+        "en": "National Income - Part 1",
+        "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 1"
+      },
+      "variants": {
+        "en": "questions/gk/economy/national-income-part-1.en.json",
+        "pa": "questions/gk/economy/national-income-part-1.pa.json"
+      }
+    },
+    {
+      "id": "national-income-part-2",
+      "subject": "gk",
+      "category": "economy",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 16,
+      "counts": {
+        "en": 16,
+        "pa": 16
+      },
+      "titles": {
+        "en": "National Income - Part 2",
+        "pa": "ਰਾਸ਼ਟਰੀ ਆਮਦਨ - Part 2"
+      },
+      "variants": {
+        "en": "questions/gk/economy/national-income-part-2.en.json",
+        "pa": "questions/gk/economy/national-income-part-2.pa.json"
+      }
+    },
+    {
       "id": "02-preamble-and-parts-of-the-constitution-part1",
       "subject": "gk",
       "category": "polity",
