@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 47,
-    "topics": 81,
-    "quizzes": 81,
-    "questions": 1848,
+    "topics": 84,
+    "quizzes": 84,
+    "questions": 1923,
     "studentsPracticed": 12500
   },
   "site": {
@@ -3690,6 +3690,81 @@
             "en": 25
           },
           "landing": "/quiz-english-04-simple-compound-and-complex-sentences-part-1"
+        },
+        {
+          "id": "06-subject-verb-agreement-part-1",
+          "name": "06 Subject Verb Agreement Part 1",
+          "description": "",
+          "file": "questions/english/06-subject-verb-agreement-part-1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793452079128,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/06-subject-verb-agreement-part-1-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "06 Subject Verb Agreement Part 1"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-06-subject-verb-agreement-part-1"
+        },
+        {
+          "id": "06-subject-verb-agreement-part-2",
+          "name": "06 Subject Verb Agreement Part 2",
+          "description": "",
+          "file": "questions/english/06-subject-verb-agreement-part-2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793452079128,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/06-subject-verb-agreement-part-2-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "06 Subject Verb Agreement Part 2"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-06-subject-verb-agreement-part-2"
+        },
+        {
+          "id": "06-subject-verb-agreement-part-3",
+          "name": "06 Subject Verb Agreement Part 3",
+          "description": "",
+          "file": "questions/english/06-subject-verb-agreement-part-3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793452079128,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/06-subject-verb-agreement-part-3-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "06 Subject Verb Agreement Part 3"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-06-subject-verb-agreement-part-3"
         }
       ],
       "categories": [],
@@ -5229,6 +5304,18 @@
     "questions/english/04-simple-compound-and-complex-sentences-part-1-en.json": [
       "1e1ddabf25036640",
       1793452024141
+    ],
+    "questions/english/06-subject-verb-agreement-part-1-en.json": [
+      "72b88adaa5bf1c91",
+      1793452079128
+    ],
+    "questions/english/06-subject-verb-agreement-part-2-en.json": [
+      "dba9f381e97c10c7",
+      1793452079128
+    ],
+    "questions/english/06-subject-verb-agreement-part-3-en.json": [
+      "ba74ee0c3355300a",
+      1793452079128
     ],
     "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json": [
       "c1daaeacfdc72a75",

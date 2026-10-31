@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 459,
+  "nodes": 457,
   "edges": 3371,
   "silos": 35,
-  "clusters": 140,
+  "clusters": 142,
   "pillars": 34
  },
  "nodes": [
@@ -4783,8 +4783,32 @@
    "hub": ""
   },
   {
-   "id": "quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1.html",
-   "url": "/quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1.html",
+   "id": "quiz-english-06-subject-verb-agreement-part-1.html",
+   "url": "/quiz-english-06-subject-verb-agreement-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-english-06-subject-verb-agreement-part-2.html",
+   "url": "/quiz-english-06-subject-verb-agreement-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-english-06-subject-verb-agreement-part-3.html",
+   "url": "/quiz-english-06-subject-verb-agreement-part-3.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -4821,18 +4845,6 @@
   {
    "id": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
    "url": "/quiz-gk-01-punjabi-language-script-calendar-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-01-punjabi-language-script-calendar-part-2.html",
-   "url": "/quiz-gk-01-punjabi-language-script-calendar-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -4999,30 +5011,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-economic-planning-five-year-plans-part-2.html",
-   "url": "/quiz-gk-economic-planning-five-year-plans-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-economic-planning-five-year-plans-part-3.html",
-   "url": "/quiz-gk-economic-planning-five-year-plans-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "url": "/quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
    "type": "quiz",
@@ -5133,18 +5121,6 @@
   {
    "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
-   "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -10461,13 +10437,43 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-01-punjabi-language-script-calendar-part-1.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-01-punjabi-language-script-calendar-part-2.html",
+   "to": "quiz-english-02-clauses-and-phrases-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-03-types-of-sentences-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-04-simple-compound-and-complex-sentences-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-06-subject-verb-agreement-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-06-subject-verb-agreement-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-06-subject-verb-agreement-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10503,24 +10509,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-economic-planning-five-year-plans-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-economic-planning-five-year-plans-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-economic-planning-five-year-plans-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-national-income-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -10540,18 +10528,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12723,7 +12699,7 @@
   },
   {
    "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
-   "to": "quiz-english-05-subject-and-predicate-complete-and-simple-forms-part-1.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12819,7 +12795,7 @@
   },
   {
    "from": "material-english-grammar-subject-verb-agreement-notes.html",
-   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "to": "quiz-english-06-subject-verb-agreement-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26557,7 +26533,9 @@
     "topic-english-02-clauses-and-phrases-part-1.html",
     "topic-english-03-types-of-sentences-part-1.html",
     "topic-english-04-simple-compound-and-complex-sentences-part-1.html",
-    "topic-english-05-subject-and-predicate-complete-and-simple-forms-part-1.html"
+    "topic-english-06-subject-verb-agreement-part-1.html",
+    "topic-english-06-subject-verb-agreement-part-2.html",
+    "topic-english-06-subject-verb-agreement-part-3.html"
    ],
    "leaves": [
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
