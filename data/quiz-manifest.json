@@ -1204,42 +1204,6 @@
       }
     },
     {
-      "id": "02-clauses-and-phrases-part-1",
-      "subject": "english",
-      "category": "",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Clauses and Phrases - Part 1"
-      },
-      "variants": {
-        "en": "questions/english/02-clauses-and-phrases-part-1.en.json"
-      }
-    },
-    {
-      "id": "04-simple-compound-and-complex-sentences-part-1",
-      "subject": "english",
-      "category": "",
-      "availableLanguages": [
-        "en"
-      ],
-      "count": 25,
-      "counts": {
-        "en": 25
-      },
-      "titles": {
-        "en": "Simple, Compound and Complex Sentences - Part 1"
-      },
-      "variants": {
-        "en": "questions/english/04-simple-compound-and-complex-sentences-part-1.en.json"
-      }
-    },
-    {
       "id": "01-subject-and-predicate-part-1",
       "subject": "english",
       "category": "",
@@ -1251,14 +1215,14 @@
         "en": 25
       },
       "titles": {
-        "en": "Subject and Predicate - Part 1"
+        "en": "01 Subject And Predicate Part 1"
       },
       "variants": {
-        "en": "questions/english/01-subject-and-predicate-part-1.en.json"
+        "en": "questions/english/01-subject-and-predicate-part-1-en.json"
       }
     },
     {
-      "id": "05-subject-and-predicate-complete-and-simple-forms-part-1",
+      "id": "02-clauses-and-phrases-part-1",
       "subject": "english",
       "category": "",
       "availableLanguages": [
@@ -1269,10 +1233,10 @@
         "en": 25
       },
       "titles": {
-        "en": "Subject and Predicate: Complete and Simple Forms - Part 1"
+        "en": "02 Clauses And Phrases Part 1"
       },
       "variants": {
-        "en": "questions/english/05-subject-and-predicate-complete-and-simple-forms-part-1.en.json"
+        "en": "questions/english/02-clauses-and-phrases-part-1-en.json"
       }
     },
     {
@@ -1287,10 +1251,28 @@
         "en": 25
       },
       "titles": {
-        "en": "Types of Sentences - Part 1"
+        "en": "03 Types Of Sentences Part 1"
       },
       "variants": {
-        "en": "questions/english/03-types-of-sentences-part-1.en.json"
+        "en": "questions/english/03-types-of-sentences-part-1-en.json"
+      }
+    },
+    {
+      "id": "04-simple-compound-and-complex-sentences-part-1",
+      "subject": "english",
+      "category": "",
+      "availableLanguages": [
+        "en"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25
+      },
+      "titles": {
+        "en": "04 Simple Compound And Complex Sentences Part 1"
+      },
+      "variants": {
+        "en": "questions/english/04-simple-compound-and-complex-sentences-part-1-en.json"
       }
     },
     {
