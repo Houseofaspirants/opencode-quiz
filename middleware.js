@@ -176,6 +176,7 @@ const MAP = {
   "subject=reasoning&language=en&chapter=01 - Number Series": "/material-reasoning-number-series-notes-punjabi-english",
   "subject=reasoning&language=en&chapter=02 - Analogy": "/material-reasoning-analogy-notes-punjabi-english",
   "subject=reasoning&language=en&chapter=03 - Verbal Classifications": "/material-reasoning-verbal-classification-notes-punjabi-english",
+  "subject=reasoning&language=en&chapter=04 - Coding and Decoding": "/material-reasoning-coding-and-decoding-notes-punjabi-english",
   "subject=reasoning&language=pa": "/study-reasoning",
   "subject=science": "/study-science",
   "subject=science&language=en": "/study-science",

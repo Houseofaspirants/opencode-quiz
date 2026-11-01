@@ -573,9 +573,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 3,
-      "newest": "2026-10-22",
-      "totalSize": 16302921,
+      "count": 4,
+      "newest": "2026-11-01",
+      "totalSize": 21758420,
       "languages": [
         {
           "id": "pa",
@@ -590,7 +590,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "01 - Number Series",
@@ -624,13 +624,24 @@
                 }
               ],
               "pages": 133
+            },
+            {
+              "id": "04 - Coding and Decoding",
+              "name": "Chapter 4: Coding and Decoding",
+              "parts": [
+                {
+                  "file": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 153
             }
           ]
         }
       ],
-      "chapters": 3,
+      "chapters": 4,
       "counts": {
-        "en": 3,
+        "en": 4,
         "pa": 0
       },
       "pages": {
@@ -2671,6 +2682,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 81,
+  "total": 82,
   "generatedBy": "scripts/study_material.py"
 }
