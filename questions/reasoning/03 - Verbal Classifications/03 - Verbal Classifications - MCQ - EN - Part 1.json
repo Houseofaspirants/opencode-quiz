@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Verbal Classifications"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-001",
+      "number": 1,
+      "question": "A sports shop groups equipment by whether the game uses a racket. Which game must go on a different shelf?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Billiards"
+        },
+        {
+          "label": "B",
+          "text": "Table tennis"
+        },
+        {
+          "label": "C",
+          "text": "Badminton"
+        },
+        {
+          "label": "D",
+          "text": "Squash"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Billiards uses a cue; the other three use rackets or bats of the racket-sport family."
+    },
+    {
+      "id": "03-002",
+      "number": 2,
+      "question": "Compare consecutive alphabet-position gaps. Which group breaks the equal-gap rule within the group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "EHL"
+        },
+        {
+          "label": "B",
+          "text": "CFI"
+        },
+        {
+          "label": "C",
+          "text": "JMP"
+        },
+        {
+          "label": "D",
+          "text": "ORU"
+        }
+      ],
+      "answer": "A",
+      "explanation": "EHL has gaps 3 and 4; each other group has gaps 3 and 3."
+    },
+    {
+      "id": "03-003",
+      "number": 3,
+      "question": "Harleen reverses the digits of each number, then adds 1. Three results are perfect squares. Which original number fails this two-step test?",
+      "options": [
+        {
+          "label": "A",
+          "text": "882"
+        },
+        {
+          "label": "B",
+          "text": "422"
+        },
+        {
+          "label": "C",
+          "text": "871"
+        },
+        {
+          "label": "D",
+          "text": "861"
+        }
+      ],
+      "answer": "C",
+      "explanation": "861 reverses to 168, then 168 + 1 = 169 = 13²; similarly 422 gives 225 = 15² and 882 gives 289 = 17². But 871 gives 178 + 1 = 179, not a square."
+    },
+    {
+      "id": "03-004",
+      "number": 4,
+      "question": "Three devices measure a quantity; one primarily regulates it. Identify that device.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thermostat"
+        },
+        {
+          "label": "B",
+          "text": "Hygrometer"
+        },
+        {
+          "label": "C",
+          "text": "Speedometer"
+        },
+        {
+          "label": "D",
+          "text": "Anemometer"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A thermostat regulates temperature. The others measure humidity, wind speed and speed respectively."
+    },
+    {
+      "id": "03-005",
+      "number": 5,
+      "question": "A common rule combines the first number, its successor and its digit sum to produce the second number. Which pair is inconsistent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11 : 134"
+        },
+        {
+          "label": "B",
+          "text": "17 : 314"
+        },
+        {
+          "label": "C",
+          "text": "8 : 80"
+        },
+        {
+          "label": "D",
+          "text": "14 : 219"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use n(n + 1) + digit sum of n. For 14, 14 × 15 + 1 + 4 = 215, not 219; the other results are 80, 134 and 314."
+    },
+    {
+      "id": "03-006",
+      "number": 6,
+      "question": "Which item cannot join a list restricted to percussion instruments?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mridangam"
+        },
+        {
+          "label": "B",
+          "text": "Tambourine"
+        },
+        {
+          "label": "C",
+          "text": "Dholak"
+        },
+        {
+          "label": "D",
+          "text": "Shehnai"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A shehnai produces sound using blown air. The other three are percussion instruments, sounded by striking or shaking."
+    },
+    {
+      "id": "03-007",
+      "number": 7,
+      "question": "With A = 1 to Z = 26, three groups have the sum of their outer positions equal to the product of their inner positions. Which group fails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HDFP"
+        },
+        {
+          "label": "B",
+          "text": "FCFL"
+        },
+        {
+          "label": "C",
+          "text": "JDEM"
+        },
+        {
+          "label": "D",
+          "text": "CDFU"
+        }
+      ],
+      "answer": "C",
+      "explanation": "JDEM gives 10 + 13 = 23 but 4 × 5 = 20. The other comparisons are 3 + 21 = 4 × 6, 6 + 12 = 3 × 6 and 8 + 16 = 4 × 6."
+    },
+    {
+      "id": "03-008",
+      "number": 8,
+      "question": "Read each pair from left to right as raw material to product. Which pair has the reverse relationship?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Latex : Rubber"
+        },
+        {
+          "label": "B",
+          "text": "Pulp : Paper"
+        },
+        {
+          "label": "C",
+          "text": "Fabric : Cotton"
+        },
+        {
+          "label": "D",
+          "text": "Clay : Pot"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cotton is the raw material for fabric, so Fabric : Cotton reverses the direction. The other pairs run from material to product."
+    },
+    {
+      "id": "03-009",
+      "number": 9,
+      "question": "A register admits only multiples of 12. Which of these entries was admitted incorrectly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "732"
+        },
+        {
+          "label": "B",
+          "text": "1068"
+        },
+        {
+          "label": "C",
+          "text": "1248"
+        },
+        {
+          "label": "D",
+          "text": "918"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A multiple of 12 must be divisible by both 3 and 4. Although 918 has digit sum 18, its last two digits, 18, are not divisible by 4."
+    },
+    {
+      "id": "03-010",
+      "number": 10,
+      "question": "A biology display separates endocrine glands from other glands. Which label belongs outside the endocrine group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Adrenal gland"
+        },
+        {
+          "label": "B",
+          "text": "Salivary gland"
+        },
+        {
+          "label": "C",
+          "text": "Pituitary gland"
+        },
+        {
+          "label": "D",
+          "text": "Thyroid gland"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Salivary glands release saliva through ducts. The other three are endocrine glands that release hormones into blood."
+    },
+    {
+      "id": "03-011",
+      "number": 11,
+      "question": "One group contains a different number of English vowels. Pick it.",
+      "options": [
+        {
+          "label": "A",
+          "text": "RIOT"
+        },
+        {
+          "label": "B",
+          "text": "BEAK"
+        },
+        {
+          "label": "C",
+          "text": "MOUS"
+        },
+        {
+          "label": "D",
+          "text": "CLAP"
+        }
+      ],
+      "answer": "D",
+      "explanation": "CLAP has one vowel, A; each other group has two vowels."
+    },
+    {
+      "id": "03-012",
+      "number": 12,
+      "question": "Classify each row by its devices’ principal useful output energy. In which row do the devices NOT all share one output category?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LED lamp, fluorescent tube, incandescent bulb"
+        },
+        {
+          "label": "B",
+          "text": "Electric fan, mixer, electric generator"
+        },
+        {
+          "label": "C",
+          "text": "Loudspeaker, electric bell, headphones"
+        },
+        {
+          "label": "D",
+          "text": "Toaster, electric iron, electric kettle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The fan and mixer give mechanical motion, but the generator gives electrical energy. Each other row has a common principal output: heat, light or sound."
+    },
+    {
+      "id": "03-013",
+      "number": 13,
+      "question": "Jaspreet checks whether subtracting the first number from the second gives 27. Which pair fails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19 : 46"
+        },
+        {
+          "label": "B",
+          "text": "46 : 74"
+        },
+        {
+          "label": "C",
+          "text": "68 : 95"
+        },
+        {
+          "label": "D",
+          "text": "35 : 62"
+        }
+      ],
+      "answer": "B",
+      "explanation": "74 − 46 = 28. The differences in the other three pairs are all 27."
+    },
+    {
+      "id": "03-014",
+      "number": 14,
+      "question": "Only one of these numbers is composite. Identify it without testing divisors larger than 11.",
+      "options": [
+        {
+          "label": "A",
+          "text": "121"
+        },
+        {
+          "label": "B",
+          "text": "107"
+        },
+        {
+          "label": "C",
+          "text": "109"
+        },
+        {
+          "label": "D",
+          "text": "103"
+        }
+      ],
+      "answer": "A",
+      "explanation": "121 = 11 × 11 is composite. For the others, no prime divisor up to their square root divides exactly."
+    },
+    {
+      "id": "03-015",
+      "number": 15,
+      "question": "When each group is reversed, three remain unchanged. Which one changes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RABAR"
+        },
+        {
+          "label": "B",
+          "text": "KLMKL"
+        },
+        {
+          "label": "C",
+          "text": "NCPCN"
+        },
+        {
+          "label": "D",
+          "text": "TUVUT"
+        }
+      ],
+      "answer": "B",
+      "explanation": "RABAR, TUVUT and NCPCN read identically in reverse. KLMKL reverses to LKMLK."
+    },
+    {
+      "id": "03-016",
+      "number": 16,
+      "question": "At a Ludhiana science fair, Rohit groups four substances as non-metallic elements. Which inclusion is incorrect?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Phosphorus"
+        },
+        {
+          "label": "B",
+          "text": "Iodine"
+        },
+        {
+          "label": "C",
+          "text": "Bromine"
+        },
+        {
+          "label": "D",
+          "text": "Gallium"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Gallium is a metal. Bromine, iodine and phosphorus are non-metals."
+    },
+    {
+      "id": "03-017",
+      "number": 17,
+      "question": "Three pairs show a creator and the work that person composes. Which pair instead names someone who revises another person's work?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Composer : Symphony"
+        },
+        {
+          "label": "B",
+          "text": "Poet : Sonnet"
+        },
+        {
+          "label": "C",
+          "text": "Editor : Manuscript"
+        },
+        {
+          "label": "D",
+          "text": "Playwright : Play"
+        }
+      ],
+      "answer": "C",
+      "explanation": "An editor revises a manuscript rather than necessarily composing it. A composer, poet and playwright create the respective works."
+    },
+    {
+      "id": "03-018",
+      "number": 18,
+      "question": "For an emergency kit, Aman needs devices that store electrical energy chemically. Which item should be separated?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Solar cell"
+        },
+        {
+          "label": "B",
+          "text": "Lithium-ion battery"
+        },
+        {
+          "label": "C",
+          "text": "Nickel-metal hydride battery"
+        },
+        {
+          "label": "D",
+          "text": "Lead-acid battery"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A solar cell converts light into electricity rather than storing energy chemically. The other three are chemical storage batteries."
+    },
+    {
+      "id": "03-019",
+      "number": 19,
+      "question": "For each four-letter group, subtract the second position from the first and the fourth from the third. Which group gives unequal results?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SOVR"
+        },
+        {
+          "label": "B",
+          "text": "JFRO"
+        },
+        {
+          "label": "C",
+          "text": "UQYU"
+        },
+        {
+          "label": "D",
+          "text": "MIPL"
+        }
+      ],
+      "answer": "B",
+      "explanation": "JF gives 10 − 6 = 4, but RO gives 18 − 15 = 3. The two differences match within every other group."
+    },
+    {
+      "id": "03-020",
+      "number": 20,
+      "question": "Inspect whether the middle digit equals the sum of the two outer digits. Select the number that breaks this condition.",
+      "options": [
+        {
+          "label": "A",
+          "text": "473"
+        },
+        {
+          "label": "B",
+          "text": "584"
+        },
+        {
+          "label": "C",
+          "text": "594"
+        },
+        {
+          "label": "D",
+          "text": "682"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For 584, 5 + 4 = 9, which is not the middle digit 8. In each other number, the outer digits add to the middle digit."
+    },
+    {
+      "id": "03-021",
+      "number": 21,
+      "question": "Kavya is arranging a Jaipur library by fiction and non-fiction. Which category belongs apart from the other three?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Novel"
+        },
+        {
+          "label": "B",
+          "text": "Fairy tale"
+        },
+        {
+          "label": "C",
+          "text": "Fable"
+        },
+        {
+          "label": "D",
+          "text": "Biography"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A biography presents a real person's life. The other three categories are forms of imaginative narrative."
+    },
+    {
+      "id": "03-022",
+      "number": 22,
+      "question": "A cube-based calculation links the first number to the second in three pairs. Find the pair that does not follow their common rule.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8 : 518"
+        },
+        {
+          "label": "B",
+          "text": "6 : 222"
+        },
+        {
+          "label": "C",
+          "text": "4 : 68"
+        },
+        {
+          "label": "D",
+          "text": "9 : 738"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use n³ + n. For 8 the result is 512 + 8 = 520, not 518; all other pairs satisfy the rule."
+    },
+    {
+      "id": "03-023",
+      "number": 23,
+      "question": "In a workshop, three operations remove material from a workpiece. Which operation joins material instead?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Drilling"
+        },
+        {
+          "label": "B",
+          "text": "Milling"
+        },
+        {
+          "label": "C",
+          "text": "Welding"
+        },
+        {
+          "label": "D",
+          "text": "Grinding"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Welding joins pieces. Drilling, milling and grinding remove material to form holes, surfaces or shapes."
+    },
+    {
+      "id": "03-024",
+      "number": 24,
+      "question": "A six-letter code should repeat its first three-letter block after rotating that block one place to the left. Which code is faulty?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BKRRBK"
+        },
+        {
+          "label": "B",
+          "text": "DJMJMD"
+        },
+        {
+          "label": "C",
+          "text": "HNVNVH"
+        },
+        {
+          "label": "D",
+          "text": "FQTQTF"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Moving the first letter of BKR to the end gives KRB, so the full code should be BKRKRB. The other codes append the correctly rotated block."
+    },
+    {
+      "id": "03-025",
+      "number": 25,
+      "question": "Count positive factors: which number has more than three when each of the others has exactly three?",
+      "options": [
+        {
+          "label": "A",
+          "text": "361"
+        },
+        {
+          "label": "B",
+          "text": "169"
+        },
+        {
+          "label": "C",
+          "text": "225"
+        },
+        {
+          "label": "D",
+          "text": "289"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A square of a prime has exactly three factors. 169 = 13², 289 = 17² and 361 = 19²; 225 = 3² × 5² has nine."
+    }
+  ]
+}

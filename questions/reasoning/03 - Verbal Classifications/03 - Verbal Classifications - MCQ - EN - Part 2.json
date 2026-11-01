@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Verbal Classifications"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-026",
+      "number": 26,
+      "question": "Read the alphabet gaps from left to right. Three groups have gaps 1, 2 and 3. Which does not?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KLNR"
+        },
+        {
+          "label": "B",
+          "text": "FGIL"
+        },
+        {
+          "label": "C",
+          "text": "ABDG"
+        },
+        {
+          "label": "D",
+          "text": "PQSV"
+        }
+      ],
+      "answer": "A",
+      "explanation": "KLNR has gaps 1, 2 and 4. The other three groups have gaps 1, 2 and 3."
+    },
+    {
+      "id": "03-027",
+      "number": 27,
+      "question": "A grocer makes a group consisting only of pulses. Which item needs a different label?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pigeon pea"
+        },
+        {
+          "label": "B",
+          "text": "Chickpea"
+        },
+        {
+          "label": "C",
+          "text": "Lentil"
+        },
+        {
+          "label": "D",
+          "text": "Sorghum"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Sorghum is a cereal. Lentil, chickpea and pigeon pea are pulses."
+    },
+    {
+      "id": "03-028",
+      "number": 28,
+      "question": "Manpreet applies one common multiply-then-add rule to the first number of each pair. Which pair cannot belong to the other three?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19 : 59"
+        },
+        {
+          "label": "B",
+          "text": "12 : 38"
+        },
+        {
+          "label": "C",
+          "text": "16 : 52"
+        },
+        {
+          "label": "D",
+          "text": "7 : 23"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The common rule is y = 3x + 2. For 16 it gives 3 × 16 + 2 = 50, not 52; the other pairs fit."
+    },
+    {
+      "id": "03-029",
+      "number": 29,
+      "question": "Navjot needs a material that allows electric current to pass readily. Three fit; which should she reject?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Copper"
+        },
+        {
+          "label": "B",
+          "text": "Aluminium"
+        },
+        {
+          "label": "C",
+          "text": "Graphite"
+        },
+        {
+          "label": "D",
+          "text": "Porcelain"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Porcelain is an electrical insulator. Graphite, aluminium and copper conduct electricity."
+    },
+    {
+      "id": "03-030",
+      "number": 30,
+      "question": "Of these four parcel codes, identify the one that is not a perfect cube of a whole number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5832"
+        },
+        {
+          "label": "B",
+          "text": "1728"
+        },
+        {
+          "label": "C",
+          "text": "4098"
+        },
+        {
+          "label": "D",
+          "text": "2744"
+        }
+      ],
+      "answer": "C",
+      "explanation": "1728 = 12³, 2744 = 14³ and 5832 = 18³. Since 16³ = 4096, 4098 is not a perfect cube."
+    },
+    {
+      "id": "03-031",
+      "number": 31,
+      "question": "Within each group, pair the first letter with the second and the third with the fourth. Which group contains a pair that is not alphabetically opposite?",
+      "options": [
+        {
+          "label": "A",
+          "text": "EVLO"
+        },
+        {
+          "label": "B",
+          "text": "GTMN"
+        },
+        {
+          "label": "C",
+          "text": "CXJP"
+        },
+        {
+          "label": "D",
+          "text": "IRFU"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Opposite positions add to 27. In CXJP, J + P = 10 + 16 = 26; every pair in the other groups totals 27."
+    },
+    {
+      "id": "03-032",
+      "number": 32,
+      "question": "Three pairs link an institution with the people it primarily serves. Which pair links an institution with its workers instead?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Prison : Inmates"
+        },
+        {
+          "label": "B",
+          "text": "Hospital : Nurses"
+        },
+        {
+          "label": "C",
+          "text": "Orphanage : Orphans"
+        },
+        {
+          "label": "D",
+          "text": "School : Pupils"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Nurses work in a hospital; its primary recipients of care are patients. The other pairs name the institutions' residents or learners."
+    },
+    {
+      "id": "03-033",
+      "number": 33,
+      "question": "Among these animals, which lies outside the reptile class?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Salamander"
+        },
+        {
+          "label": "B",
+          "text": "Gecko"
+        },
+        {
+          "label": "C",
+          "text": "Crocodile"
+        },
+        {
+          "label": "D",
+          "text": "Tortoise"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A salamander is an amphibian. A gecko, crocodile and tortoise are reptiles."
+    },
+    {
+      "id": "03-034",
+      "number": 34,
+      "question": "Apply the alternating-digit-sum test for divisibility by 11. Which number fails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8602"
+        },
+        {
+          "label": "B",
+          "text": "6315"
+        },
+        {
+          "label": "C",
+          "text": "4213"
+        },
+        {
+          "label": "D",
+          "text": "5720"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For 6315, (6 + 1) − (3 + 5) = −1, which is not a multiple of 11. The other alternating-sum differences are 0, 0 and 0."
+    },
+    {
+      "id": "03-035",
+      "number": 35,
+      "question": "Compare each three-digit number with the number after the colon. Which pair does not show complete digit reversal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "846 : 648"
+        },
+        {
+          "label": "B",
+          "text": "472 : 724"
+        },
+        {
+          "label": "C",
+          "text": "591 : 195"
+        },
+        {
+          "label": "D",
+          "text": "368 : 863"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reversing 472 gives 274, not 724. The other second numbers are exact reversals."
+    },
+    {
+      "id": "03-036",
+      "number": 36,
+      "question": "An alphabetical check requires every letter to lie before the previous one. Which group fails this descending-order check?",
+      "options": [
+        {
+          "label": "A",
+          "text": "YVPL"
+        },
+        {
+          "label": "B",
+          "text": "ZTRK"
+        },
+        {
+          "label": "C",
+          "text": "XUOH"
+        },
+        {
+          "label": "D",
+          "text": "WQSM"
+        }
+      ],
+      "answer": "D",
+      "explanation": "In WQSM, Q to S moves forward rather than backward. Every step in the other groups moves towards A."
+    },
+    {
+      "id": "03-037",
+      "number": 37,
+      "question": "A gardener groups plants by reproduction through spores rather than seeds. Which plant is misplaced?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Moss"
+        },
+        {
+          "label": "B",
+          "text": "Fern"
+        },
+        {
+          "label": "C",
+          "text": "Pine"
+        },
+        {
+          "label": "D",
+          "text": "Horsetail"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Pine produces seeds in cones. Ferns, mosses and horsetails reproduce through spores."
+    },
+    {
+      "id": "03-038",
+      "number": 38,
+      "question": "Compare the ratios within these number pairs. Which pair does not share the common simplified ratio?",
+      "options": [
+        {
+          "label": "A",
+          "text": "52 : 93"
+        },
+        {
+          "label": "B",
+          "text": "44 : 77"
+        },
+        {
+          "label": "C",
+          "text": "28 : 49"
+        },
+        {
+          "label": "D",
+          "text": "68 : 119"
+        }
+      ],
+      "answer": "A",
+      "explanation": "52 × 7 = 364, while 93 × 4 = 372. Each other pair satisfies 7 × first = 4 × second."
+    },
+    {
+      "id": "03-039",
+      "number": 39,
+      "question": "Four unit names are listed. Which is a derived SI unit rather than an SI base unit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mole"
+        },
+        {
+          "label": "B",
+          "text": "Candela"
+        },
+        {
+          "label": "C",
+          "text": "Kelvin"
+        },
+        {
+          "label": "D",
+          "text": "Pascal"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Pascal is a derived unit of pressure, equal to newton per square metre. Kelvin, mole and candela are base units."
+    },
+    {
+      "id": "03-040",
+      "number": 40,
+      "question": "Only one number has its middle digit different from the product of its outer digits. Find it.",
+      "options": [
+        {
+          "label": "A",
+          "text": "284"
+        },
+        {
+          "label": "B",
+          "text": "263"
+        },
+        {
+          "label": "C",
+          "text": "354"
+        },
+        {
+          "label": "D",
+          "text": "393"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For 354, 3 × 4 = 12, not 5. The other products are 2 × 3 = 6, 2 × 4 = 8 and 3 × 3 = 9, matching their middle digits."
+    },
+    {
+      "id": "03-041",
+      "number": 41,
+      "question": "The format is XYXY, obtained by repeating a two-letter block. Which code was written in another format?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DHDH"
+        },
+        {
+          "label": "B",
+          "text": "LLPP"
+        },
+        {
+          "label": "C",
+          "text": "MVMV"
+        },
+        {
+          "label": "D",
+          "text": "RWRW"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LLPP repeats each letter beside itself, an XXYY pattern. The other codes repeat a two-letter block."
+    },
+    {
+      "id": "03-042",
+      "number": 42,
+      "question": "Select the pair that differs when the relationship is whole followed by one of its constituent parts.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Wheel : Spoke"
+        },
+        {
+          "label": "B",
+          "text": "Flower : Petal"
+        },
+        {
+          "label": "C",
+          "text": "Book : Chapter"
+        },
+        {
+          "label": "D",
+          "text": "Library : Librarian"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A librarian is a person working in a library, not a constituent part of the object. Chapters, spokes and petals are parts of the named wholes."
+    },
+    {
+      "id": "03-043",
+      "number": 43,
+      "question": "Simran separates objects by whether they normally form a real image on a screen. Which optical device cannot do this for a real object?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Convex lens"
+        },
+        {
+          "label": "B",
+          "text": "Plane mirror"
+        },
+        {
+          "label": "C",
+          "text": "Pinhole camera"
+        },
+        {
+          "label": "D",
+          "text": "Concave mirror"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A plane mirror forms a virtual image of a real object. The other devices can form a real image on a screen under suitable conditions."
+    },
+    {
+      "id": "03-044",
+      "number": 44,
+      "question": "Take A = 1 to Z = 26. In three groups the last position is the sum of the first two. Which group fails?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ILU"
+        },
+        {
+          "label": "B",
+          "text": "GJS"
+        },
+        {
+          "label": "C",
+          "text": "FHN"
+        },
+        {
+          "label": "D",
+          "text": "CDG"
+        }
+      ],
+      "answer": "B",
+      "explanation": "G + J = 7 + 10 = 17, which is Q rather than S. The other sums are 3 + 4 = 7, 6 + 8 = 14 and 9 + 12 = 21."
+    },
+    {
+      "id": "03-045",
+      "number": 45,
+      "question": "A number qualifies if it is divisible by the sum of its digits. Which number does not qualify?",
+      "options": [
+        {
+          "label": "A",
+          "text": "248"
+        },
+        {
+          "label": "B",
+          "text": "192"
+        },
+        {
+          "label": "C",
+          "text": "240"
+        },
+        {
+          "label": "D",
+          "text": "156"
+        }
+      ],
+      "answer": "A",
+      "explanation": "248 has digit sum 14, but 248 = 14 × 17 + 10. The other numbers divide exactly by their digit sums: 156/12 = 13, 192/12 = 16 and 240/6 = 40."
+    },
+    {
+      "id": "03-046",
+      "number": 46,
+      "question": "Which shape is outside the group of polygons, even though it is a closed plane figure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Rhombus"
+        },
+        {
+          "label": "B",
+          "text": "Pentagon"
+        },
+        {
+          "label": "C",
+          "text": "Trapezium"
+        },
+        {
+          "label": "D",
+          "text": "Ellipse"
+        }
+      ],
+      "answer": "D",
+      "explanation": "An ellipse has a curved boundary. A polygon is bounded entirely by straight line segments."
+    },
+    {
+      "id": "03-047",
+      "number": 47,
+      "question": "A pair links a perfect square with the cube of the same positive integer. Which pair breaks this link?",
+      "options": [
+        {
+          "label": "A",
+          "text": "144 : 1728"
+        },
+        {
+          "label": "B",
+          "text": "256 : 4106"
+        },
+        {
+          "label": "C",
+          "text": "81 : 729"
+        },
+        {
+          "label": "D",
+          "text": "196 : 2744"
+        }
+      ],
+      "answer": "B",
+      "explanation": "256 = 16², so its partner must be 16³ = 4096, not 4106. The other pairs use bases 9, 12 and 14."
+    },
+    {
+      "id": "03-048",
+      "number": 48,
+      "question": "A nutrition chart groups food components that can supply usable energy to the human body. Which component is outside that group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Water"
+        },
+        {
+          "label": "B",
+          "text": "Protein"
+        },
+        {
+          "label": "C",
+          "text": "Carbohydrate"
+        },
+        {
+          "label": "D",
+          "text": "Fat"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Water provides no calories. Carbohydrates, fats and proteins can supply energy."
+    },
+    {
+      "id": "03-049",
+      "number": 49,
+      "question": "Keep only groups that alternate consonant, vowel, consonant, vowel. Which group must be deleted?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NIPI"
+        },
+        {
+          "label": "B",
+          "text": "KOTA"
+        },
+        {
+          "label": "C",
+          "text": "FARK"
+        },
+        {
+          "label": "D",
+          "text": "BEMU"
+        }
+      ],
+      "answer": "C",
+      "explanation": "FARK ends in a consonant, K, instead of a vowel. The other groups follow consonant–vowel–consonant–vowel."
+    },
+    {
+      "id": "03-050",
+      "number": 50,
+      "question": "A qualifying value has the form n(n + 1)/2 for a positive integer n. Which value cannot qualify?",
+      "options": [
+        {
+          "label": "A",
+          "text": "97"
+        },
+        {
+          "label": "B",
+          "text": "91"
+        },
+        {
+          "label": "C",
+          "text": "66"
+        },
+        {
+          "label": "D",
+          "text": "120"
+        }
+      ],
+      "answer": "A",
+      "explanation": "66 = 11 × 12/2, 91 = 13 × 14/2 and 120 = 15 × 16/2. Since 91 < 97 < 105, 97 lies between consecutive such values."
+    }
+  ]
+}
