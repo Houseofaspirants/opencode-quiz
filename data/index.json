@@ -3,10 +3,10 @@
   "generatedAt": "2026-10-30T08:43:07.084Z",
   "stats": {
     "subjects": 7,
-    "categories": 47,
-    "topics": 84,
-    "quizzes": 84,
-    "questions": 1923,
+    "categories": 48,
+    "topics": 88,
+    "quizzes": 88,
+    "questions": 2023,
     "studentsPracticed": 12500
   },
   "site": {
@@ -3031,6 +3031,126 @@
             "pa": 25
           },
           "landing": "/quiz-reasoning-01-number-series-part-4"
+        },
+        {
+          "id": "03 - Verbal Classifications - MCQ - EN - Part 1",
+          "name": "Verbal Classifications MCQ – Part 1",
+          "description": "",
+          "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793534006390,
+          "category": "03-verbal-classifications",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Verbal Classifications MCQ – Part 1",
+            "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-03-verbal-classifications-part-1"
+        },
+        {
+          "id": "03 - Verbal Classifications - MCQ - EN - Part 2",
+          "name": "Verbal Classifications MCQ – Part 2",
+          "description": "",
+          "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793534006390,
+          "category": "03-verbal-classifications",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Verbal Classifications MCQ – Part 2",
+            "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-03-verbal-classifications-part-2"
+        },
+        {
+          "id": "03 - Verbal Classifications - MCQ - EN - Part 3",
+          "name": "Verbal Classifications MCQ – Part 3",
+          "description": "",
+          "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793534006390,
+          "category": "03-verbal-classifications",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Verbal Classifications MCQ – Part 3",
+            "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-03-verbal-classifications-part-3"
+        },
+        {
+          "id": "03 - Verbal Classifications - MCQ - EN - Part 4",
+          "name": "Verbal Classifications MCQ – Part 4",
+          "description": "",
+          "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793534006390,
+          "category": "03-verbal-classifications",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Verbal Classifications MCQ – Part 4",
+            "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-03-verbal-classifications-part-4"
         }
       ],
       "categories": [
@@ -3291,6 +3411,135 @@
             }
           ],
           "landing": "/category-reasoning-02-analogy"
+        },
+        {
+          "id": "03-verbal-classifications",
+          "name": "03   Verbal Classifications",
+          "folder": "03 - Verbal Classifications",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "03 - Verbal Classifications - MCQ - EN - Part 1",
+              "name": "Verbal Classifications MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793534006390,
+              "category": "03-verbal-classifications",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Verbal Classifications MCQ – Part 1",
+                "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-03-verbal-classifications-part-1"
+            },
+            {
+              "id": "03 - Verbal Classifications - MCQ - EN - Part 2",
+              "name": "Verbal Classifications MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793534006390,
+              "category": "03-verbal-classifications",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Verbal Classifications MCQ – Part 2",
+                "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-03-verbal-classifications-part-2"
+            },
+            {
+              "id": "03 - Verbal Classifications - MCQ - EN - Part 3",
+              "name": "Verbal Classifications MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793534006390,
+              "category": "03-verbal-classifications",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Verbal Classifications MCQ – Part 3",
+                "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-03-verbal-classifications-part-3"
+            },
+            {
+              "id": "03 - Verbal Classifications - MCQ - EN - Part 4",
+              "name": "Verbal Classifications MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793534006390,
+              "category": "03-verbal-classifications",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Verbal Classifications MCQ – Part 4",
+                "pa": "ਸ਼ਬਦੀ ਵਰਗੀਕਰਨ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-03-verbal-classifications-part-4"
+            }
+          ],
+          "landing": "/category-reasoning-03-verbal-classifications"
         }
       ],
       "landing": "/subject-reasoning"
@@ -5536,6 +5785,22 @@
     "questions/reasoning/02 - Analogy/02 - Analogy - MCQ - EN - Part 4.json": [
       "36aaefc05397a1d0",
       1792642282568
+    ],
+    "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 1.json": [
+      "4c545dc4acde23b7",
+      1793534006390
+    ],
+    "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 2.json": [
+      "7ff9c1e5a75d2a89",
+      1793534006390
+    ],
+    "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 3.json": [
+      "d1545284cf33c44c",
+      1793534006390
+    ],
+    "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json": [
+      "5b221538a4802c21",
+      1793534006390
     ]
   }
 }
