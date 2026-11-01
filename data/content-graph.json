@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 459,
+  "nodes": 462,
   "edges": 3388,
   "silos": 35,
-  "clusters": 142,
+  "clusters": 147,
   "pillars": 34
  },
  "nodes": [
@@ -5131,18 +5131,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
-   "url": "/quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "type": "quiz",
@@ -5181,6 +5169,54 @@
   {
    "id": "quiz-reasoning-02-analogy-part-1.html",
    "url": "/quiz-reasoning-02-analogy-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-03-verbal-classifications-part-1.html",
+   "url": "/quiz-reasoning-03-verbal-classifications-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-03-verbal-classifications-part-2.html",
+   "url": "/quiz-reasoning-03-verbal-classifications-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-03-verbal-classifications-part-3.html",
+   "url": "/quiz-reasoning-03-verbal-classifications-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-03-verbal-classifications-part-4.html",
+   "url": "/quiz-reasoning-03-verbal-classifications-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -10437,18 +10473,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-august-2026-part3-defence-science-environment.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-august-2026-part4-awards-sports-rankings-static-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
    "rel": "contextual",
    "weight": 1
@@ -10557,13 +10581,25 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "to": "quiz-reasoning-03-verbal-classifications-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-2.html",
+   "to": "quiz-reasoning-03-verbal-classifications-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-03-verbal-classifications-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-03-verbal-classifications-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18153,6 +18189,12 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "quiz-reasoning-03-verbal-classifications-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -18166,12 +18208,6 @@
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26830,6 +26866,7 @@
    "clusters": [
     "category-reasoning-01-number-series.html",
     "category-reasoning-02-analogy.html",
+    "category-reasoning-03-verbal-classifications.html",
     "topic-reasoning-01-number-series-part-1.html",
     "topic-reasoning-01-number-series-part-2.html",
     "topic-reasoning-01-number-series-part-3.html",
@@ -26837,7 +26874,11 @@
     "topic-reasoning-02-analogy-part-1.html",
     "topic-reasoning-02-analogy-part-2.html",
     "topic-reasoning-02-analogy-part-3.html",
-    "topic-reasoning-02-analogy-part-4.html"
+    "topic-reasoning-02-analogy-part-4.html",
+    "topic-reasoning-03-verbal-classifications-part-1.html",
+    "topic-reasoning-03-verbal-classifications-part-2.html",
+    "topic-reasoning-03-verbal-classifications-part-3.html",
+    "topic-reasoning-03-verbal-classifications-part-4.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
