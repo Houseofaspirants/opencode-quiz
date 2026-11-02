@@ -1377,9 +1377,10 @@ a.quiz-card:hover .qc-go { transform: translateX(4px); }
   font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
   font-weight: 800; color: var(--muted); margin-bottom: 4px;
 }
-/* An empty ad placeholder only costs phone users scroll depth — keep the
-   slot for desktop until real creative exists. */
-@media (max-width: 719px) { .ad-slot { display: none; } }
+/* The slots hold placeholder copy, not ad code: AdSense Auto ads places the
+   real units itself, and an empty dashed "Advertisement" box reads as an
+   unfinished page. Hidden everywhere until a slot carries a real ad unit. */
+.ad-slot { display: none; }
 
 /* ---------------------------------------------------------------- 12. FOOTER */
 .site-footer {
