@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 462,
-  "edges": 3388,
+  "nodes": 464,
+  "edges": 3405,
   "silos": 35,
   "clusters": 147,
   "pillars": 34
@@ -2471,6 +2471,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 1: Number System (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maths-simplification-notes-punjabi-english",
+   "url": "/material-maths-simplification-notes-punjabi-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maths-simplification-notes-punjabi-english.html",
+   "url": "/material-maths-simplification-notes-punjabi-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 4: Simplification (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -6794,6 +6818,12 @@
    "weight": 1
   },
   {
+   "from": "archive-category-quantitative-aptitude.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-reasoning.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -8722,6 +8752,12 @@
   {
    "from": "archives.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14877,8 +14913,8 @@
   },
   {
    "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -14961,8 +14997,8 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -15045,8 +15081,92 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
-   "rel": "related-study-material",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "study-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "subject-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -15507,7 +15627,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -15591,7 +15711,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17817,7 +17937,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17901,7 +18021,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18321,7 +18441,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18405,7 +18525,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20811,12 +20931,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-east-india-company-expansion-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -20848,6 +20962,12 @@
   {
    "from": "pdfs.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25767,6 +25887,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -26049,12 +26175,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-east-india-company-expansion-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -26086,6 +26206,12 @@
   {
    "from": "study-notes.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

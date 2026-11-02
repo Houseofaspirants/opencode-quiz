@@ -657,9 +657,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 3,
-      "newest": "2026-10-28",
-      "totalSize": 12155929,
+      "count": 4,
+      "newest": "2026-11-02",
+      "totalSize": 18479392,
       "languages": [
         {
           "id": "pa",
@@ -674,7 +674,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "01 - Number System",
@@ -708,13 +708,24 @@
                 }
               ],
               "pages": 43
+            },
+            {
+              "id": "04 - Simplification",
+              "name": "Chapter 4: Simplification",
+              "parts": [
+                {
+                  "file": "material-maths-simplification-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 219
             }
           ]
         }
       ],
-      "chapters": 3,
+      "chapters": 4,
       "counts": {
-        "en": 3,
+        "en": 4,
         "pa": 0
       },
       "pages": {
@@ -2682,6 +2693,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 82,
+  "total": 83,
   "generatedBy": "scripts/study_material.py"
 }
