@@ -564,6 +564,9 @@ const HOA = (() => {
       if (!scope) return;
       scope.querySelectorAll("a").forEach((a) => {
         if (a.classList.contains("mm-practice")) return;
+        // Subject rows (By subject) are never demoted: Monthly Current
+        // Affairs lives there on purpose.
+        if (a.hasAttribute("data-nav-study")) return;
         const href = (a.getAttribute("href") || "").split("?")[0]
           .replace(/^\.?\//, "").replace(/\.html$/, "");
         if (list.some((f) => f.replace(/\.html$/, "") === href)) a.remove();
