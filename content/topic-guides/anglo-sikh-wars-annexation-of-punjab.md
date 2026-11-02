@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Anglo-Sikh Wars
 subject: gk
 difficulty: Intermediate
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [history of punjab, modern history, anglo-sikh wars, sikh empire, maharaja duleep singh]
+tags: [modern history, anglo-sikh wars, sikh empire, maharaja duleep singh]
 summary: The First Anglo-Sikh War (1845-46) ended with the Treaty of Lahore and cost Punjab the Jalandhar Doab. The Second (1848-49) began with Mulraj's revolt at Multan and ended with Lord Dalhousie annexing Punjab on 29 March 1849.
 faq:
   - q: When was Punjab annexed by the British?

@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Percentage, Profit and Loss
 subject: quant
 difficulty: Beginner
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [maths, quantitative aptitude, percentage, profit and loss, discount, rs aggarwal]
+tags: [maths, percentage, profit and loss, discount, rs aggarwal]
 summary: Learn the percentage-fraction table by heart, then every profit and loss question becomes a percentage question on the cost price. Discount is always on the marked price; profit and loss are always on the cost price.
 faq:
   - q: What is the formula for successive percentage change?

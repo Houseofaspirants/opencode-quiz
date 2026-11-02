@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 464,
-  "edges": 3405,
+  "nodes": 511,
+  "edges": 3846,
   "silos": 35,
   "clusters": 147,
   "pillars": 34
@@ -148,6 +148,18 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-category-preparation-experience.html",
+   "url": "/archive-category-preparation-experience.html",
+   "type": "archive",
+   "template": "",
+   "title": "preparation-experience",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-category-preparation-strategy.html",
    "url": "/archive-category-preparation-strategy.html",
    "type": "archive",
@@ -210,6 +222,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-anglo-sikh-wars.html",
+   "url": "/archive-tag-anglo-sikh-wars.html",
+   "type": "archive",
+   "template": "",
+   "title": "anglo-sikh wars",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "anglo-sikh-wars"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-animal-husbandry.html",
    "url": "/archive-tag-animal-husbandry.html",
    "type": "archive",
@@ -220,6 +246,20 @@
    "exams": [],
    "tags": [
     "animal-husbandry"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-blood-relations.html",
+   "url": "/archive-tag-blood-relations.html",
+   "type": "archive",
+   "template": "",
+   "title": "blood relations",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "blood-relations"
    ],
    "hub": "archives.html"
   },
@@ -238,6 +278,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-coded-relations.html",
+   "url": "/archive-tag-coded-relations.html",
+   "type": "archive",
+   "template": "",
+   "title": "coded relations",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "coded-relations"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-constitution.html",
+   "url": "/archive-tag-constitution.html",
+   "type": "archive",
+   "template": "",
+   "title": "constitution",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "constitution"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-cooperative-inspector.html",
    "url": "/archive-tag-cooperative-inspector.html",
    "type": "archive",
@@ -248,6 +316,20 @@
    "exams": [],
    "tags": [
     "cooperative-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-discount.html",
+   "url": "/archive-tag-discount.html",
+   "type": "archive",
+   "template": "",
+   "title": "discount",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "discount"
    ],
    "hub": "archives.html"
   },
@@ -294,6 +376,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-exam-strategy.html",
+   "url": "/archive-tag-exam-strategy.html",
+   "type": "archive",
+   "template": "",
+   "title": "exam strategy",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "exam-strategy"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-excise-and-taxation-inspector.html",
    "url": "/archive-tag-excise-and-taxation-inspector.html",
    "type": "archive",
@@ -318,6 +414,48 @@
    "exams": [],
    "tags": [
     "excise-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-family-tree.html",
+   "url": "/archive-tag-family-tree.html",
+   "type": "archive",
+   "template": "",
+   "title": "family tree",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "family-tree"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-fundamental-rights.html",
+   "url": "/archive-tag-fundamental-rights.html",
+   "type": "archive",
+   "template": "",
+   "title": "fundamental rights",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "fundamental-rights"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-indian-polity.html",
+   "url": "/archive-tag-indian-polity.html",
+   "type": "archive",
+   "template": "",
+   "title": "indian polity",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "indian-polity"
    ],
    "hub": "archives.html"
   },
@@ -364,6 +502,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-laxmikanth.html",
+   "url": "/archive-tag-laxmikanth.html",
+   "type": "archive",
+   "template": "",
+   "title": "laxmikanth",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "laxmikanth"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-live-session.html",
    "url": "/archive-tag-live-session.html",
    "type": "archive",
@@ -378,6 +530,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-maharaja-duleep-singh.html",
+   "url": "/archive-tag-maharaja-duleep-singh.html",
+   "type": "archive",
+   "template": "",
+   "title": "maharaja duleep singh",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "maharaja-duleep-singh"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-maths.html",
+   "url": "/archive-tag-maths.html",
+   "type": "archive",
+   "template": "",
+   "title": "maths",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "maths"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-matron.html",
    "url": "/archive-tag-matron.html",
    "type": "archive",
@@ -388,6 +568,34 @@
    "exams": [],
    "tags": [
     "matron"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-modern-history.html",
+   "url": "/archive-tag-modern-history.html",
+   "type": "archive",
+   "template": "",
+   "title": "modern history",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "modern-history"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-percentage.html",
+   "url": "/archive-tag-percentage.html",
+   "type": "archive",
+   "template": "",
+   "title": "percentage",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "percentage"
    ],
    "hub": "archives.html"
   },
@@ -430,6 +638,20 @@
    "exams": [],
    "tags": [
     "preparation-strategy"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-profit-and-loss.html",
+   "url": "/archive-tag-profit-and-loss.html",
+   "type": "archive",
+   "template": "",
+   "title": "profit and loss",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "profit-and-loss"
    ],
    "hub": "archives.html"
   },
@@ -560,6 +782,62 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-revision.html",
+   "url": "/archive-tag-revision.html",
+   "type": "archive",
+   "template": "",
+   "title": "revision",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "revision"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-rs-aggarwal.html",
+   "url": "/archive-tag-rs-aggarwal.html",
+   "type": "archive",
+   "template": "",
+   "title": "rs aggarwal",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "rs-aggarwal"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-self-study.html",
+   "url": "/archive-tag-self-study.html",
+   "type": "archive",
+   "template": "",
+   "title": "self study",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "self-study"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-sikh-empire.html",
+   "url": "/archive-tag-sikh-empire.html",
+   "type": "archive",
+   "template": "",
+   "title": "sikh empire",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "sikh-empire"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-study-plan.html",
    "url": "/archive-tag-study-plan.html",
    "type": "archive",
@@ -570,6 +848,20 @@
    "exams": [],
    "tags": [
     "study-plan"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-study-routine.html",
+   "url": "/archive-tag-study-routine.html",
+   "type": "archive",
+   "template": "",
+   "title": "study routine",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "study-routine"
    ],
    "hub": "archives.html"
   },
@@ -616,6 +908,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-verbal-reasoning.html",
+   "url": "/archive-tag-verbal-reasoning.html",
+   "type": "archive",
+   "template": "",
+   "title": "verbal reasoning",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "verbal-reasoning"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-veterinary-inspector.html",
    "url": "/archive-tag-veterinary-inspector.html",
    "type": "archive",
@@ -626,6 +932,20 @@
    "exams": [],
    "tags": [
     "veterinary-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-writs.html",
+   "url": "/archive-tag-writs.html",
+   "type": "archive",
+   "template": "",
+   "title": "writs",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "writs"
    ],
    "hub": "archives.html"
   },
@@ -664,6 +984,45 @@
    "exams": [],
    "tags": [],
    "hub": "archives.html"
+  },
+  {
+   "id": "blog-1-7-30-revision-rule-si-rank-2",
+   "url": "/blog-1-7-30-revision-rule-si-rank-2",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "url": "/blog-1-7-30-revision-rule-si-rank-2.html",
+   "type": "blogs",
+   "template": "exam-analysis",
+   "title": "How I Revised for SI Rank 2: The 1-7-30 Rule",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english",
+    "computer"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector"
+   ],
+   "tags": [
+    "punjab police si",
+    "revision",
+    "study routine",
+    "self study",
+    "exam strategy"
+   ],
+   "hub": "blogs.html"
   },
   {
    "id": "blogs.html",
@@ -3414,6 +3773,45 @@
    "hub": "news.html"
   },
   {
+   "id": "pa/blog-1-7-30-revision-rule-si-rank-2",
+   "url": "/pa/blog-1-7-30-revision-rule-si-rank-2",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "url": "/pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "type": "blogs",
+   "template": "exam-analysis",
+   "title": "SI ਵਿੱਚ ਰੈਂਕ 2 ਲਈ ਮੇਰੀ ਰਿਵੀਜ਼ਨ: 1-7-30 ਦਾ ਨਿਯਮ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi",
+    "english",
+    "computer"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector"
+   ],
+   "tags": [
+    "punjab police si",
+    "revision",
+    "study routine",
+    "self study",
+    "exam strategy"
+   ],
+   "hub": "blogs.html"
+  },
+  {
    "id": "pa/expected-mcqs.html",
    "url": "/pa/expected-mcqs.html",
    "type": "page",
@@ -3951,6 +4349,148 @@
    "exams": [],
    "tags": [],
    "hub": ""
+  },
+  {
+   "id": "pa/tguide-anglo-sikh-wars-annexation-of-punjab",
+   "url": "/pa/tguide-anglo-sikh-wars-annexation-of-punjab",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "url": "/pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "ਐਂਗਲੋ-ਸਿੱਖ ਜੰਗਾਂ ਅਤੇ ਪੰਜਾਬ ਦਾ ਰਲੇਵਾਂ (1845-49)",
+   "lang": "pa",
+   "subjects": [
+    "gk"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "modern history",
+    "anglo-sikh wars",
+    "sikh empire",
+    "maharaja duleep singh"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "pa/tguide-blood-relations-reasoning",
+   "url": "/pa/tguide-blood-relations-reasoning",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/tguide-blood-relations-reasoning.html",
+   "url": "/pa/tguide-blood-relations-reasoning.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "ਖ਼ੂਨੀ ਰਿਸ਼ਤੇ ਰੀਜ਼ਨਿੰਗ: ਫ਼ੈਮਿਲੀ ਟ੍ਰੀ ਵਾਲਾ ਤਰੀਕਾ",
+   "lang": "pa",
+   "subjects": [
+    "reasoning"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "blood relations",
+    "family tree",
+    "coded relations",
+    "verbal reasoning"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "pa/tguide-fundamental-rights",
+   "url": "/pa/tguide-fundamental-rights",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/tguide-fundamental-rights.html",
+   "url": "/pa/tguide-fundamental-rights.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "ਮੌਲਿਕ ਅਧਿਕਾਰ: ਆਰਟੀਕਲ 12 ਤੋਂ 35, ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ",
+   "lang": "pa",
+   "subjects": [
+    "gk"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "indian polity",
+    "fundamental rights",
+    "constitution",
+    "writs",
+    "laxmikanth"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "pa/tguide-percentage-profit-and-loss",
+   "url": "/pa/tguide-percentage-profit-and-loss",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/tguide-percentage-profit-and-loss.html",
+   "url": "/pa/tguide-percentage-profit-and-loss.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "ਪ੍ਰਤੀਸ਼ਤ, ਲਾਭ ਅਤੇ ਹਾਨੀ: ਫ਼ਾਰਮੂਲੇ ਅਤੇ ਸ਼ਾਰਟਕੱਟ",
+   "lang": "pa",
+   "subjects": [
+    "quant"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "maths",
+    "percentage",
+    "profit and loss",
+    "discount",
+    "rs aggarwal"
+   ],
+   "hub": "topic-guides.html"
   },
   {
    "id": "pdfs.html",
@@ -5179,6 +5719,30 @@
    "hub": ""
   },
   {
+   "id": "quiz-quant-01-number-system-part-2.html",
+   "url": "/quiz-quant-01-number-system-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-01-number-system-part-3.html",
+   "url": "/quiz-quant-01-number-system-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-reasoning-01-number-series-part-1.html",
    "url": "/quiz-reasoning-01-number-series-part-1.html",
    "type": "quiz",
@@ -5193,6 +5757,30 @@
   {
    "id": "quiz-reasoning-02-analogy-part-1.html",
    "url": "/quiz-reasoning-02-analogy-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-2.html",
+   "url": "/quiz-reasoning-02-analogy-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-02-analogy-part-3.html",
+   "url": "/quiz-reasoning-02-analogy-part-3.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6006,6 +6594,148 @@
    "hub": "success-stories.html"
   },
   {
+   "id": "tguide-anglo-sikh-wars-annexation-of-punjab",
+   "url": "/tguide-anglo-sikh-wars-annexation-of-punjab",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "url": "/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "Anglo-Sikh Wars and the Annexation of Punjab (1845-49)",
+   "lang": "en",
+   "subjects": [
+    "gk"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "modern history",
+    "anglo-sikh wars",
+    "sikh empire",
+    "maharaja duleep singh"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "tguide-blood-relations-reasoning",
+   "url": "/tguide-blood-relations-reasoning",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "tguide-blood-relations-reasoning.html",
+   "url": "/tguide-blood-relations-reasoning.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "Blood Relations Reasoning: The Family Tree Method",
+   "lang": "en",
+   "subjects": [
+    "reasoning"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "blood relations",
+    "family tree",
+    "coded relations",
+    "verbal reasoning"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "tguide-fundamental-rights",
+   "url": "/tguide-fundamental-rights",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "tguide-fundamental-rights.html",
+   "url": "/tguide-fundamental-rights.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "Fundamental Rights: Articles 12 to 35 for Punjab Exams",
+   "lang": "en",
+   "subjects": [
+    "gk"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "indian polity",
+    "fundamental rights",
+    "constitution",
+    "writs",
+    "laxmikanth"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
+   "id": "tguide-percentage-profit-and-loss",
+   "url": "/tguide-percentage-profit-and-loss",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "tguide-percentage-profit-and-loss.html",
+   "url": "/tguide-percentage-profit-and-loss.html",
+   "type": "topic-guides",
+   "template": "topic-guide",
+   "title": "Percentage, Profit and Loss: Formulas and Shortcuts",
+   "lang": "en",
+   "subjects": [
+    "quant"
+   ],
+   "exams": [
+    "Punjab Police Sub Inspector",
+    "Punjab Police Constable",
+    "PSSSB Clerk"
+   ],
+   "tags": [
+    "maths",
+    "percentage",
+    "profit and loss",
+    "discount",
+    "rs aggarwal"
+   ],
+   "hub": "topic-guides.html"
+  },
+  {
    "id": "topic-computer-01-fundamentals-of-computers-part1.html",
    "url": "/topic-computer-01-fundamentals-of-computers-part1.html",
    "type": "landing",
@@ -6578,6 +7308,48 @@
    "weight": 1
   },
   {
+   "from": "archive-category-preparation-experience.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-experience.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-category-preparation-strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -6902,6 +7674,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-anglo-sikh-wars.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-animal-husbandry.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -6940,6 +7754,48 @@
   {
    "from": "archive-tag-animal-husbandry.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-blood-relations.html",
+   "to": "tguide-blood-relations-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -6986,6 +7842,90 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-coded-relations.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-coded-relations.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-constitution.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-cooperative-inspector.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7024,6 +7964,48 @@
   {
    "from": "archive-tag-cooperative-inspector.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-discount.html",
+   "to": "tguide-percentage-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7184,6 +8166,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-strategy.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-excise-and-taxation-inspector.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7264,6 +8288,132 @@
   {
    "from": "archive-tag-excise-inspector.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-family-tree.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-fundamental-rights.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-indian-polity.html",
+   "to": "tguide-fundamental-rights.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7394,6 +8544,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-laxmikanth.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-live-session.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7436,6 +8628,90 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maharaja-duleep-singh.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-maths.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-matron.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -7474,6 +8750,90 @@
   {
    "from": "archive-tag-matron.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-modern-history.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-percentage.html",
+   "to": "tguide-percentage-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7606,6 +8966,48 @@
   {
    "from": "archive-tag-preparation-strategy.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-profit-and-loss.html",
+   "to": "tguide-percentage-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -7911,6 +9313,12 @@
   },
   {
    "from": "archive-tag-punjab-police-si.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-police-si.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -7988,6 +9396,174 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-revision.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-revision.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rs-aggarwal.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-self-study.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sikh-empire.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-study-plan.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -8014,6 +9590,48 @@
   {
    "from": "archive-tag-study-plan.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-study-routine.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8138,6 +9756,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-verbal-reasoning.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-veterinary-inspector.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -8176,6 +9836,48 @@
   {
    "from": "archive-tag-veterinary-inspector.html",
    "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-writs.html",
+   "to": "tguide-fundamental-rights.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8235,6 +9937,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-category-preparation-experience.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -8265,7 +9973,19 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-anglo-sikh-wars.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-animal-husbandry.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-blood-relations.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8277,7 +9997,25 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-coded-relations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-constitution.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-cooperative-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-discount.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8301,6 +10039,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-exam-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-excise-and-taxation-inspector.html",
    "rel": "contextual",
    "weight": 1
@@ -8308,6 +10052,24 @@
   {
    "from": "archives.html",
    "to": "archive-tag-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-family-tree.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-indian-polity.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8331,13 +10093,43 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-laxmikanth.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-live-session.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-maharaja-duleep-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-maths.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-matron.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-modern-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-percentage.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8356,6 +10148,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8415,7 +10213,37 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-revision.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-rs-aggarwal.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-self-study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-sikh-empire.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-study-plan.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-study-routine.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8439,7 +10267,25 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-verbal-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-veterinary-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-writs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -8985,6 +10831,12 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "rel": "contextual",
    "weight": 1
@@ -9046,6 +10898,30 @@
   {
    "from": "archives.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9140,8 +11016,44 @@
    "weight": 1
   },
   {
+   "from": "archives.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "author-gurpreet-singh.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9278,6 +11190,132 @@
    "weight": 1
   },
   {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-revision.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-self-study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-study-routine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "blogs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
    "from": "blogs.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -9291,7 +11329,19 @@
   },
   {
    "from": "blogs.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blogs.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18770,6 +20820,138 @@
    "weight": 1
   },
   {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-revision.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-self-study.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "archive-tag-study-routine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "blogs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "to": "archive-tag-doubt-session.html",
    "rel": "contextual",
@@ -18861,12 +21043,6 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -18874,6 +21050,12 @@
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "to": "session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -20879,6 +23061,636 @@
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-anglo-sikh-wars.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-maharaja-duleep-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-modern-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-sikh-empire.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-blood-relations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-coded-relations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-family-tree.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-verbal-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-blood-relations-reasoning",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-3.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-blood-relations-reasoning.html",
+   "to": "subject-reasoning.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "archive-tag-constitution.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "archive-tag-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "archive-tag-indian-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "archive-tag-writs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/tguide-fundamental-rights",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-discount.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-maths.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-percentage.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-percentage-profit-and-loss",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-3.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "related-topic-guides",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-percentage-profit-and-loss.html",
+   "to": "subject-quant.html",
+   "rel": "subject-hub",
    "weight": 1
   },
   {
@@ -23619,12 +26431,6 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "session-sunday-live-doubt-session-2026-10-04.html",
    "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -23632,6 +26438,12 @@
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
    "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -26420,15 +29232,555 @@
    "weight": 1
   },
   {
-   "from": "topic-guides.html",
-   "to": "archives.html",
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-anglo-sikh-wars.html",
    "rel": "contextual",
    "weight": 1
   },
   {
-   "from": "topic-guides.html",
-   "to": "current-affairs.html",
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-maharaja-duleep-singh.html",
    "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-modern-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "archive-tag-sikh-empire.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-blood-relations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-coded-relations.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-family-tree.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "archive-tag-verbal-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "tguide-blood-relations-reasoning",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "quiz-reasoning-02-analogy-part-3.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-blood-relations-reasoning.html",
+   "to": "subject-reasoning.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "archive-tag-constitution.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "archive-tag-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "archive-tag-indian-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "archive-tag-writs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "pa/tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "tguide-fundamental-rights",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "tguide-percentage-profit-and-loss.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "subject-gk.html",
+   "rel": "subject-hub",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-discount.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-maths.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-percentage.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "archive-tag-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "tguide-percentage-profit-and-loss",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "topic-guides.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "quiz-quant-01-number-system-part-3.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "tguide-percentage-profit-and-loss.html",
+   "to": "subject-quant.html",
+   "rel": "subject-hub",
    "weight": 1
   },
   {
@@ -26439,25 +29791,49 @@
   },
   {
    "from": "topic-guides.html",
-   "to": "punjab-exams.html",
+   "to": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "topic-guides.html",
-   "to": "quiz.html",
+   "to": "pa/tguide-blood-relations-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "topic-guides.html",
-   "to": "study-notes.html",
+   "to": "pa/tguide-fundamental-rights.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "topic-guides.html",
-   "to": "subject.html",
+   "to": "pa/tguide-percentage-profit-and-loss.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "tguide-blood-relations-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "tguide-fundamental-rights.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "topic-guides.html",
+   "to": "tguide-percentage-profit-and-loss.html",
    "rel": "contextual",
    "weight": 1
   }
@@ -26627,7 +30003,11 @@
     "category-gk-punjab-gk.html"
    ],
    "leaves": [
-    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html"
+    "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+    "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+    "tguide-blood-relations-reasoning.html",
+    "tguide-fundamental-rights.html",
+    "tguide-percentage-profit-and-loss.html"
    ]
   },
   {
@@ -26773,6 +30153,7 @@
     "topic-computer-06-central-processing-unit-part1.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
@@ -26826,6 +30207,7 @@
     "topic-english-06-subject-verb-agreement-part-3.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
@@ -26902,6 +30284,7 @@
     "topic-gk-regions-administration-and-location-of-punjab-part-2.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
@@ -26912,7 +30295,9 @@
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-    "strategy-punjab-police-si-syllabus-exam-pattern.html"
+    "strategy-punjab-police-si-syllabus-exam-pattern.html",
+    "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+    "tguide-fundamental-rights.html"
    ]
   },
   {
@@ -26947,6 +30332,7 @@
     "topic-punjabi-01-punjabi-bhasha-language-mcq-part-2.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
@@ -26972,6 +30358,7 @@
     "topic-quant-01-number-system-part-4.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
@@ -26980,7 +30367,8 @@
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-    "strategy-punjab-police-si-syllabus-exam-pattern.html"
+    "strategy-punjab-police-si-syllabus-exam-pattern.html",
+    "tguide-percentage-profit-and-loss.html"
    ]
   },
   {
@@ -27007,6 +30395,7 @@
     "topic-reasoning-03-verbal-classifications-part-4.html"
    ],
    "leaves": [
+    "blog-1-7-30-revision-rule-si-rank-2.html",
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
@@ -27017,7 +30406,8 @@
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-    "strategy-punjab-police-si-syllabus-exam-pattern.html"
+    "strategy-punjab-police-si-syllabus-exam-pattern.html",
+    "tguide-blood-relations-reasoning.html"
    ]
   }
  ]

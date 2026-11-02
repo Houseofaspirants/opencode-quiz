@@ -7,7 +7,7 @@ author: Gurpreet Singh
 topic: Fundamental Rights
 subject: gk
 difficulty: Intermediate
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
 tags: [indian polity, fundamental rights, constitution, writs, laxmikanth]
 summary: ਮੌਲਿਕ ਅਧਿਕਾਰ ਸੰਵਿਧਾਨ ਦੇ ਭਾਗ III (ਆਰਟੀਕਲ 12 ਤੋਂ 35) ਵਿੱਚ ਹਨ। ਅੱਜ ਇਹ ਛੇ ਹਨ। ਸੰਪਤੀ ਦਾ ਅਧਿਕਾਰ 1978 ਦੀ 44ਵੀਂ ਸੋਧ ਨਾਲ ਹਟਾਇਆ ਗਿਆ ਅਤੇ ਹੁਣ ਆਰਟੀਕਲ 300A ਹੇਠ ਕਾਨੂੰਨੀ ਅਧਿਕਾਰ ਹੈ।

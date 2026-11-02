@@ -38,7 +38,7 @@
     "@context": "https://schema.org",
     "@graph": [
     {
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "@id": "https://houseofaspirants.in/topic-guides#webpage",
       "name": "Topic Guides | House of Aspirants",
       "url": "https://houseofaspirants.in/topic-guides",
@@ -49,7 +49,66 @@
       },
       "breadcrumb": {
         "@id": "https://houseofaspirants.in/topic-guides#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://houseofaspirants.in/topic-guides#list"
       }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://houseofaspirants.in/topic-guides#list",
+      "name": "House of Aspirants Topic Guides",
+      "numberOfItems": 8,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Percentage, Profit and Loss: Formulas and Shortcuts",
+          "item": "https://houseofaspirants.in/tguide-percentage-profit-and-loss"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Fundamental Rights: Articles 12 to 35 for Punjab Exams",
+          "item": "https://houseofaspirants.in/tguide-fundamental-rights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Blood Relations Reasoning: The Family Tree Method",
+          "item": "https://houseofaspirants.in/tguide-blood-relations-reasoning"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Anglo-Sikh Wars and the Annexation of Punjab (1845-49)",
+          "item": "https://houseofaspirants.in/tguide-anglo-sikh-wars-annexation-of-punjab"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "ਮੌਲਿਕ ਅਧਿਕਾਰ: ਆਰਟੀਕਲ 12 ਤੋਂ 35, ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ",
+          "item": "https://houseofaspirants.in/pa/tguide-fundamental-rights"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "ਪ੍ਰਤੀਸ਼ਤ, ਲਾਭ ਅਤੇ ਹਾਨੀ: ਫ਼ਾਰਮੂਲੇ ਅਤੇ ਸ਼ਾਰਟਕੱਟ",
+          "item": "https://houseofaspirants.in/pa/tguide-percentage-profit-and-loss"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "ਖ਼ੂਨੀ ਰਿਸ਼ਤੇ ਰੀਜ਼ਨਿੰਗ: ਫ਼ੈਮਿਲੀ ਟ੍ਰੀ ਵਾਲਾ ਤਰੀਕਾ",
+          "item": "https://houseofaspirants.in/pa/tguide-blood-relations-reasoning"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "ਐਂਗਲੋ-ਸਿੱਖ ਜੰਗਾਂ ਅਤੇ ਪੰਜਾਬ ਦਾ ਰਲੇਵਾਂ (1845-49)",
+          "item": "https://houseofaspirants.in/pa/tguide-anglo-sikh-wars-annexation-of-punjab"
+        }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -93,27 +152,24 @@
     </section>
 <section class="section">
       <div class="container"><div class="section-head reveal"><div>
-            <span class="eyebrow">Publishing pipeline</span>
-            <h2>No topic guide published yet</h2>
+            <span class="eyebrow">Published</span>
+            <h2>All published</h2>
+            <p>Where a subject guide covers the whole subject, a topic guide zooms into one chapter: its scope, how it has been asked, the facts that get repeated and the set to attempt after reading.</p>
           </div></div>
-          <div class="empty-state">
-            <span class="es-icon" aria-hidden="true">✍️</span>
-            <h3>No topic guide published yet</h3>
-            <p>Topic guides are being built out from the notes that are already reviewed. Until each chapter is complete, the study notes and daily practice below cover the same ground one idea at a time.</p>
-            <p class="btn-row" style="justify-content:center">
-              <a class="btn btn-soft" href="study-notes">Read the study notes</a>
-            </p>
-          </div></div>
-    </section>
-    <section class="section" style="padding-top:0">
-      <div class="container">
-        <div class="section-head reveal"><div>
-          <span class="eyebrow">Keep going</span>
-          <h2>Explore the library</h2>
-          <p>The parts of House of Aspirants that connect to this page.</p>
-        </div></div>
-        <div class="grid grid-3"><a class="card card-pad reveal" href="subject?subject=gk"><span class="eyebrow">Subject hub</span><h3>Where this topic sits</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="current-affairs"><span class="eyebrow">Current affairs</span><h3>The topic in the news</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="punjab-exams"><span class="eyebrow">Exam hub</span><h3>Every Punjab exam guide in one place</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="quiz?mode=daily"><span class="eyebrow">Practice</span><h3>Today&#x27;s daily challenge</h3><p class="ilink">Open →</p></a><a class="card card-pad reveal" href="archives"><span class="eyebrow">Archive</span><h3>Everything published, by subject and month</h3><p class="ilink">Open →</p></a></div>
-      </div>
+          <div class="lang-folders" role="group" aria-label="Language" data-lang-folders>
+            <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="pa">
+              <span class="lf-ico" aria-hidden="true">📁</span>
+              <span class="lf-name" lang="pa">ਪੰਜਾਬੀ</span>
+              <span class="lf-count" lang="pa">4 ਲੇਖ</span>
+            </button>
+            <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="en">
+              <span class="lf-ico" aria-hidden="true">📁</span>
+              <span class="lf-name">English</span>
+              <span class="lf-count">4 articles</span>
+            </button>
+          </div>
+          <div class="filter-bar" data-filter-bar><div class="filter-group" role="group" aria-label="Exam"><span class="fg-label">Exam</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="exam" data-filter-value="psssb-clerk">PSSSB Clerk</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="exam" data-filter-value="punjab-police-constable">Punjab Police Constable</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="exam" data-filter-value="punjab-police-sub-inspector">Punjab Police Sub Inspector</button></div><div class="filter-group" role="group" aria-label="Subject"><span class="fg-label">Subject</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="subject" data-filter-value="gk">General Knowledge</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="subject" data-filter-value="quant">Quantitative Aptitude</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="subject" data-filter-value="reasoning">Reasoning</button></div><div class="filter-group" role="group" aria-label="Difficulty"><span class="fg-label">Difficulty</span><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="difficulty" data-filter-value="beginner">Beginner</button><button type="button" class="filter-chip" aria-pressed="false" data-filter-facet="difficulty" data-filter-value="intermediate">Intermediate</button></div><button type="button" class="filter-reset" data-filter-reset hidden>Clear filters</button><p class="filter-count" data-filter-count aria-live="polite"></p></div>
+          <div class="grid grid-3" data-filter-list><a class="card card-pad reveal" href="tguide-percentage-profit-and-loss" data-lang="en" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="quant" data-f-language="en" data-f-difficulty="beginner"><span class="eyebrow">Topic Guides</span><h3>Percentage, Profit and Loss: Formulas and Shortcuts</h3><p class="muted">Percentage, profit and loss for Punjab exams: the fraction table, successive change, marked price, discount and false weight, with 1-minute worked examples.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="tguide-fundamental-rights" data-lang="en" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="gk" data-f-language="en" data-f-difficulty="intermediate"><span class="eyebrow">Topic Guides</span><h3>Fundamental Rights: Articles 12 to 35 for Punjab Exams</h3><p class="muted">Fundamental Rights explained article by article for Punjab Police, PSSSB and PPSC: the six rights, citizen-only articles, writs, emergency rules and MCQ traps.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="tguide-blood-relations-reasoning" data-lang="en" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="reasoning" data-f-language="en" data-f-difficulty="beginner"><span class="eyebrow">Topic Guides</span><h3>Blood Relations Reasoning: The Family Tree Method</h3><p class="muted">Solve every blood relation question with one family tree method: symbols, generations, coded relations and gender traps, with worked examples for Punjab exams.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="tguide-anglo-sikh-wars-annexation-of-punjab" data-lang="en" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="gk" data-f-language="en" data-f-difficulty="intermediate"><span class="eyebrow">Topic Guides</span><h3>Anglo-Sikh Wars and the Annexation of Punjab (1845-49)</h3><p class="muted">First and Second Anglo-Sikh Wars for Punjab exams: causes, every battle with dates, the treaties of Lahore, Bhairowal and Amritsar, and the annexation in 1849.</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="pa/tguide-fundamental-rights" data-lang="pa" lang="pa" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="gk" data-f-language="pa" data-f-difficulty="intermediate"><span class="eyebrow">Topic Guides</span><h3>ਮੌਲਿਕ ਅਧਿਕਾਰ: ਆਰਟੀਕਲ 12 ਤੋਂ 35, ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ</h3><p class="muted">ਪੰਜਾਬ ਪੁਲਿਸ, PSSSB ਅਤੇ PPSC ਲਈ ਮੌਲਿਕ ਅਧਿਕਾਰ ਆਰਟੀਕਲ-ਵਾਈਜ਼: ਛੇ ਅਧਿਕਾਰ, ਸਿਰਫ਼ ਨਾਗਰਿਕਾਂ ਵਾਲੇ ਆਰਟੀਕਲ, ਰਿੱਟਾਂ, ਐਮਰਜੈਂਸੀ ਦੇ ਨਿਯਮ ਅਤੇ MCQ ਦੇ ਆਮ ਜਾਲ।</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="pa/tguide-percentage-profit-and-loss" data-lang="pa" lang="pa" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="quant" data-f-language="pa" data-f-difficulty="beginner"><span class="eyebrow">Topic Guides</span><h3>ਪ੍ਰਤੀਸ਼ਤ, ਲਾਭ ਅਤੇ ਹਾਨੀ: ਫ਼ਾਰਮੂਲੇ ਅਤੇ ਸ਼ਾਰਟਕੱਟ</h3><p class="muted">ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ ਪ੍ਰਤੀਸ਼ਤ, ਲਾਭ ਅਤੇ ਹਾਨੀ: ਫ਼ਰੈਕਸ਼ਨ ਟੇਬਲ, ਲਗਾਤਾਰ ਬਦਲਾਅ, ਅੰਕਿਤ ਮੁੱਲ, ਛੋਟ ਅਤੇ ਘੱਟ ਤੋਲ, ਇੱਕ-ਇੱਕ ਮਿੰਟ ਵਿੱਚ ਹੱਲ ਹੋਣ ਵਾਲੀਆਂ ਉਦਾਹਰਣਾਂ ਨਾਲ।</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="pa/tguide-blood-relations-reasoning" data-lang="pa" lang="pa" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="reasoning" data-f-language="pa" data-f-difficulty="beginner"><span class="eyebrow">Topic Guides</span><h3>ਖ਼ੂਨੀ ਰਿਸ਼ਤੇ ਰੀਜ਼ਨਿੰਗ: ਫ਼ੈਮਿਲੀ ਟ੍ਰੀ ਵਾਲਾ ਤਰੀਕਾ</h3><p class="muted">ਖ਼ੂਨੀ ਰਿਸ਼ਤਿਆਂ ਦਾ ਹਰ ਸਵਾਲ ਇੱਕੋ ਫ਼ੈਮਿਲੀ ਟ੍ਰੀ ਤਰੀਕੇ ਨਾਲ ਹੱਲ ਕਰੋ: ਨਿਸ਼ਾਨ, ਪੀੜ੍ਹੀਆਂ, ਕੋਡ ਵਾਲੇ ਰਿਸ਼ਤੇ ਅਤੇ ਲਿੰਗ ਦੇ ਜਾਲ, ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ ਹੱਲ ਕੀਤੀਆਂ ਉਦਾਹਰਣਾਂ ਨਾਲ।</p><p class="ilink">Read more →</p></a><a class="card card-pad reveal" href="pa/tguide-anglo-sikh-wars-annexation-of-punjab" data-lang="pa" lang="pa" data-f-exam="punjab-police-sub-inspector punjab-police-constable psssb-clerk" data-f-subject="gk" data-f-language="pa" data-f-difficulty="intermediate"><span class="eyebrow">Topic Guides</span><h3>ਐਂਗਲੋ-ਸਿੱਖ ਜੰਗਾਂ ਅਤੇ ਪੰਜਾਬ ਦਾ ਰਲੇਵਾਂ (1845-49)</h3><p class="muted">ਪੰਜਾਬ ਦੇ ਪੇਪਰਾਂ ਲਈ ਪਹਿਲੀ ਅਤੇ ਦੂਜੀ ਐਂਗਲੋ-ਸਿੱਖ ਜੰਗ: ਕਾਰਨ, ਤਾਰੀਖ਼ਾਂ ਸਮੇਤ ਹਰ ਲੜਾਈ, ਲਾਹੌਰ, ਭੈਰੋਵਾਲ ਅਤੇ ਅੰਮ੍ਰਿਤਸਰ ਦੀਆਂ ਸੰਧੀਆਂ, ਅਤੇ 1849 ਦਾ ਰਲੇਵਾਂ।</p><p class="ilink">Read more →</p></a></div></div>
     </section>
   </main>
 

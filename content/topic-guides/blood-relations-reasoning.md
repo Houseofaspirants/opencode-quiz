@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Blood Relations
 subject: reasoning
 difficulty: Beginner
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [reasoning, blood relations, family tree, coded relations, verbal reasoning]
+tags: [blood relations, family tree, coded relations, verbal reasoning]
 summary: Draw every blood relation question as a family tree, one row per generation, with + for male and - for female. Never assume a gender the question does not give. With this one method, all three question types become routine.
 faq:
   - q: What is the fastest way to solve blood relation questions?

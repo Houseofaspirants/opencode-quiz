@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Blood Relations
 subject: reasoning
 difficulty: Beginner
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [reasoning, blood relations, family tree, coded relations, verbal reasoning]
+tags: [blood relations, family tree, coded relations, verbal reasoning]
 summary: ਖ਼ੂਨੀ ਰਿਸ਼ਤਿਆਂ ਦਾ ਹਰ ਸਵਾਲ ਫ਼ੈਮਿਲੀ ਟ੍ਰੀ ਬਣਾ ਕੇ ਹੱਲ ਕਰੋ: ਹਰ ਪੀੜ੍ਹੀ ਦੀ ਇੱਕ ਕਤਾਰ, ਮਰਦ ਲਈ + ਅਤੇ ਔਰਤ ਲਈ -। ਜੋ ਲਿੰਗ ਸਵਾਲ ਨਹੀਂ ਦੱਸਦਾ, ਉਹ ਕਦੇ ਨਾ ਮੰਨੋ। ਇਸ ਇੱਕ ਤਰੀਕੇ ਨਾਲ ਤਿੰਨੇ ਟਾਈਪਾਂ ਆਸਾਨ ਹੋ ਜਾਂਦੀਆਂ ਹਨ।
 faq:
   - q: ਖ਼ੂਨੀ ਰਿਸ਼ਤਿਆਂ ਦੇ ਸਵਾਲ ਹੱਲ ਕਰਨ ਦਾ ਸਭ ਤੋਂ ਤੇਜ਼ ਤਰੀਕਾ ਕੀ ਹੈ?

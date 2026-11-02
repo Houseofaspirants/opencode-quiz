@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Anglo-Sikh Wars
 subject: gk
 difficulty: Intermediate
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [history of punjab, modern history, anglo-sikh wars, sikh empire, maharaja duleep singh]
+tags: [modern history, anglo-sikh wars, sikh empire, maharaja duleep singh]
 summary: ਪਹਿਲੀ ਐਂਗਲੋ-ਸਿੱਖ ਜੰਗ (1845-46) ਲਾਹੌਰ ਦੀ ਸੰਧੀ ਨਾਲ ਖ਼ਤਮ ਹੋਈ ਅਤੇ ਪੰਜਾਬ ਨੇ ਜਲੰਧਰ ਦੁਆਬ ਗੁਆਇਆ। ਦੂਜੀ (1848-49) ਮੁਲਤਾਨ ਵਿੱਚ ਮੂਲਰਾਜ ਦੀ ਬਗ਼ਾਵਤ ਨਾਲ ਸ਼ੁਰੂ ਹੋਈ ਅਤੇ 29 ਮਾਰਚ 1849 ਨੂੰ ਲਾਰਡ ਡਲਹੌਜ਼ੀ ਵੱਲੋਂ ਪੰਜਾਬ ਦੇ ਰਲੇਵੇਂ ਨਾਲ ਖ਼ਤਮ ਹੋਈ।
 faq:
   - q: ਅੰਗਰੇਜ਼ਾਂ ਨੇ ਪੰਜਾਬ ਨੂੰ ਕਦੋਂ ਆਪਣੇ ਰਾਜ ਵਿੱਚ ਮਿਲਾਇਆ?

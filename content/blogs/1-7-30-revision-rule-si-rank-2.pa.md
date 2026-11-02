@@ -6,7 +6,7 @@ language: pa
 author: Gurpreet Singh
 category: preparation-experience
 difficulty: Beginner
-draft: true
+draft: false
 tags: [punjab police si, revision, study routine, self study, exam strategy]
 subjects: [gk, reasoning, quant, punjabi, english, computer]
 exams: [Punjab Police Sub Inspector]

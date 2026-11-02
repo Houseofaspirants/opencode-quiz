@@ -7,7 +7,7 @@ author: Gurpreet Singh
 topic: Fundamental Rights
 subject: gk
 difficulty: Intermediate
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
 tags: [indian polity, fundamental rights, constitution, writs, laxmikanth]
 summary: Fundamental Rights are in Part III (Articles 12 to 35) of the Constitution. There are six of them today. Right to Property was removed by the 44th Amendment in 1978 and is now a legal right under Article 300A.

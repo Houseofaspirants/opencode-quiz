@@ -7,9 +7,9 @@ author: Gurpreet Singh
 topic: Percentage, Profit and Loss
 subject: quant
 difficulty: Beginner
-draft: true
+draft: false
 exams: [Punjab Police Sub Inspector, Punjab Police Constable, PSSSB Clerk]
-tags: [maths, quantitative aptitude, percentage, profit and loss, discount, rs aggarwal]
+tags: [maths, percentage, profit and loss, discount, rs aggarwal]
 summary: ਪ੍ਰਤੀਸ਼ਤ-ਫ਼ਰੈਕਸ਼ਨ ਟੇਬਲ ਜ਼ੁਬਾਨੀ ਯਾਦ ਕਰੋ, ਫਿਰ ਲਾਭ-ਹਾਨੀ ਦਾ ਹਰ ਸਵਾਲ ਲਾਗਤ ਮੁੱਲ 'ਤੇ ਪ੍ਰਤੀਸ਼ਤ ਦਾ ਸਵਾਲ ਬਣ ਜਾਂਦਾ ਹੈ। ਛੋਟ ਹਮੇਸ਼ਾ ਅੰਕਿਤ ਮੁੱਲ 'ਤੇ; ਲਾਭ ਅਤੇ ਹਾਨੀ ਹਮੇਸ਼ਾ ਲਾਗਤ ਮੁੱਲ 'ਤੇ।
 faq:
   - q: ਲਗਾਤਾਰ ਪ੍ਰਤੀਸ਼ਤ ਬਦਲਾਅ ਦਾ ਫ਼ਾਰਮੂਲਾ ਕੀ ਹੈ?
