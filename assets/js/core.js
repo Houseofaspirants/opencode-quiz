@@ -270,6 +270,7 @@ const HOA = (() => {
     "Study": "ਅਧਿਐਨ",
     "Current Affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Monthly Magazine": "ਮਹੀਨਾਵਾਰੀ ਮੈਗਜ਼ੀਨ",
+    "Monthly Current Affairs": "ਮਹੀਨਾਵਾਰ ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
@@ -521,7 +522,13 @@ const HOA = (() => {
     * The Practice dropdown and the footer's Subjects column are the quiz
     * system, not the shelf, so they keep the full SUBJECT_LINKS list, and the
     * footer's Study column keeps its index link to current-affairs.html. */
-  const STUDY_SUBJECT_LINKS = SUBJECT_LINKS.filter(([id]) => id !== "current-affairs");
+  /* Current Affairs now lives in Study's "By subject" column (last row),
+   * labelled "Monthly Current Affairs" and opening its hub, which carries the
+   * month-by-month editions. It no longer has a separate top-level door. */
+  const STUDY_SUBJECT_LINKS = SUBJECT_LINKS.map(([id, icon, name]) =>
+    id === "current-affairs" ? [id, icon, "Monthly Current Affairs"] : [id, icon, name]);
+  const studySubjectHref = (id) =>
+    id === "current-affairs" ? "current-affairs" : studyHref(id);
 
   /* NAVIGATION DE-DUPLICATION ---------------------------------------------
    * The Study shelf (header), the drawer's Study group and the footer's Study
@@ -547,7 +554,7 @@ const HOA = (() => {
   const STUDY_MENU_DEMOTED = [
     "current-affairs.html", "magazine.html", "archives.html",
     "live-sessions.html", "daily-practice.html", "success-stories.html",
-    "recruitment.html", "blogs.html", "news.html", "announcements.html",
+    "recruitment.html", "news.html", "announcements.html",
   ];
   const MENU_DEMOTED = SHELF_DEMOTED.concat(STUDY_MENU_DEMOTED);
 
@@ -557,8 +564,9 @@ const HOA = (() => {
       if (!scope) return;
       scope.querySelectorAll("a").forEach((a) => {
         if (a.classList.contains("mm-practice")) return;
-        const href = (a.getAttribute("href") || "").split("?")[0];
-        if (list.indexOf(href) !== -1) a.remove();
+        const href = (a.getAttribute("href") || "").split("?")[0]
+          .replace(/^\.?\//, "").replace(/\.html$/, "");
+        if (list.some((f) => f.replace(/\.html$/, "") === href)) a.remove();
       });
     };
     /* Menus get the full list. */
@@ -659,7 +667,7 @@ const HOA = (() => {
                 <span class="nav-col-head" data-i18n="By subject">By subject</span>
                 ${STUDY_SUBJECT_LINKS.map(
                   ([id, icon, name]) =>
-                    `<a data-nav-study="${id}" href="${studyHref(id)}">${icon} ${name}</a>`
+                    `<a data-nav-study="${id}" href="${studySubjectHref(id)}">${icon} <span data-i18n="${name}">${name}</span></a>`
                 ).join("")}
               </div>
               <div class="nav-col">
@@ -667,23 +675,14 @@ const HOA = (() => {
                 <!-- HOA-NAV:menu -->
                 <a data-nav="notes" href="study-material"><span data-i18n="Study Material">Study Material</span></a>
                 <a data-nav="notes" href="study-notes"><span data-i18n="Study Notes">Study Notes</span></a>
-                <a data-nav="subject-guides" href="subject-guides"><span data-i18n="Subject Guides">Subject Guides</span></a>
                 <a data-nav="topic-guides" href="topic-guides"><span data-i18n="Topic Guides">Topic Guides</span></a>
-                <a data-nav="personal-notes" href="personal-notes"><span data-i18n="Personal Notes">Personal Notes</span></a>
-                <a data-nav="ca" href="current-affairs"><span data-i18n="Current Affairs">Current Affairs</span></a>
-                <a data-nav="magazine" href="magazine"><span data-i18n="Monthly Magazine">Monthly Magazine</span></a>
+                <a data-nav="ca" href="current-affairs"><span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
                 <a data-nav="strategy" href="strategy"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
                 <a data-nav="sessions" href="live-sessions"><span data-i18n="Live Sessions">Live Sessions</span></a>
-                <a data-nav="daily-practice" href="daily-practice"><span data-i18n="Daily Practice">Daily Practice</span></a>
-                <a data-nav="recruitment" href="recruitment"><span data-i18n="Recruitment">Recruitment</span></a>
                 <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
                 <a data-nav="previous-year-questions" href="previous-year-questions"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-                <a data-nav="success-stories" href="success-stories"><span data-i18n="Success Stories">Success Stories</span></a>
-                <a data-nav="book-recommendations" href="book-recommendations"><span data-i18n="Books">Books</span></a>
                 <a data-nav="pdfs" href="pdfs"><span data-i18n="Free PDFs">Free PDFs</span></a>
                 <a data-nav="blogs" href="blogs"><span data-i18n="Blog">Blog</span></a>
-                <a data-nav="news" href="news"><span data-i18n="News">News</span></a>
-                <a data-nav="announcements" href="announcements"><span data-i18n="Announcements">Announcements</span></a>
                 <a data-nav="archives" href="archives"><span data-i18n="Archives">Archives</span></a>
                 <!-- /HOA-NAV:menu -->
               </div>
@@ -728,7 +727,6 @@ const HOA = (() => {
                them is nested under Study or Practice. -->
           <li><a class="nav-link" data-nav="pyq" href="pyq"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
           <li><a class="nav-link" data-nav="books" href="books"><span data-i18n="Books">Books</span></a></li>
-          <li><a class="nav-link" data-nav="ca" href="current-affairs"><span data-i18n="Current Affairs">Current Affairs</span></a></li>
           <li><a class="nav-link" data-nav="sessions" href="live-sessions"><span data-i18n="Live Guidance">Live Guidance</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about"><span data-i18n="About">About</span></a></li>
         </ul>
@@ -790,13 +788,13 @@ const HOA = (() => {
     <div data-subject-list data-subject-base="study-">
       ${STUDY_SUBJECT_LINKS.map(
         ([id, icon, name]) =>
-          `<a class="mm-link" data-nav-study="${id}" href="${studyHref(id)}"><span class="mm-emoji">${icon}</span> ${name}</a>`
+          `<a class="mm-link" data-nav-study="${id}" href="${studySubjectHref(id)}"><span class="mm-emoji">${icon}</span> <span data-i18n="${name}">${name}</span></a>`
       ).join("")}
     </div>
     <div data-mm-study>
       <!-- HOA-NAV:drawer -->
       <a class="mm-link" data-nav="notes" href="study-notes"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
-      <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
+      <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
       <a class="mm-link" data-nav="strategy" href="strategy"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
       <a class="mm-link" data-nav="sessions" href="live-sessions"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
       <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
@@ -921,23 +919,14 @@ const HOA = (() => {
           <!-- HOA-NAV:footer -->
           <a href="study-material" data-i18n="Study Material">Study Material</a>
           <a href="study-notes" data-i18n="Study Notes">Study Notes</a>
-          <a href="subject-guides" data-i18n="Subject Guides">Subject Guides</a>
           <a href="topic-guides" data-i18n="Topic Guides">Topic Guides</a>
-          <a href="personal-notes" data-i18n="Personal Notes">Personal Notes</a>
-          <a href="current-affairs" data-i18n="Current Affairs">Current Affairs</a>
-          <a href="magazine" data-i18n="Monthly Magazine">Monthly Magazine</a>
+          <a href="current-affairs" data-i18n="Monthly Current Affairs">Monthly Current Affairs</a>
           <a href="strategy" data-i18n="Preparation Strategy">Preparation Strategy</a>
           <a href="live-sessions" data-i18n="Live Sessions">Live Sessions</a>
-          <a href="daily-practice" data-i18n="Daily Practice">Daily Practice</a>
-          <a href="recruitment" data-i18n="Recruitment">Recruitment</a>
           <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
-          <a href="success-stories" data-i18n="Success Stories">Success Stories</a>
-          <a href="book-recommendations" data-i18n="Books">Books</a>
           <a href="pdfs" data-i18n="Free PDFs">Free PDFs</a>
           <a href="blogs" data-i18n="Blog">Blog</a>
-          <a href="news" data-i18n="News">News</a>
-          <a href="announcements" data-i18n="Announcements">Announcements</a>
           <a href="archives" data-i18n="Archives">Archives</a>
           <a href="search" data-i18n="Search">Search</a>
           <a href="author-gurpreet-singh" data-i18n="Gurpreet Singh">Gurpreet Singh</a>

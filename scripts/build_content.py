@@ -1137,7 +1137,7 @@ HUB_NAV = {                          # hub file stem -> data-nav highlight key
 NAV_ENTRY = {                        # collection -> (English label, emoji)
     "study-material": ("Study Material", "\U0001f4da"),
     "notes": ("Study Notes", "\U0001f4dd"),
-    "current-affairs": ("Current Affairs", "\U0001f5de️"),
+    "current-affairs": ("Monthly Current Affairs", "\U0001f5de️"),
     "magazine": ("Monthly Magazine", "\U0001f4d6"),
     "strategy": ("Preparation Strategy", "\U0001f3af"),
     "sessions": ("Live Sessions", "\U0001f3a5"),
@@ -1165,6 +1165,12 @@ NAV_ORDER = ["study-material",
              "previous-year-questions", "success-stories",
              "book-recommendations", "pdfs", "blogs", "news", "announcements"]
 NAV_EXTRA = [("archives.html", "Archives", "\U0001f5c2️")]
+# Hubs with nothing published yet. Filled in by main() while the hubs are
+# written: an empty hub ("No ... published yet") is thin content, so until its
+# collection has a document it is noindex, out of the sitemap (written to
+# data/noindex.json -> emptyHubs for the index builders) and out of the
+# header, drawer and footer. Publishing one document brings it back.
+EMPTY_HUBS = set()
 # Footer-only entries: every page in the content manifest has to be reachable
 # from the chrome (header, drawer or footer). The generated profile pages and
 # the search page belong at the bottom of every page rather than in the Study
@@ -7052,6 +7058,7 @@ def nav_lines(kind):
                for c in NAV_ORDER]
     entries += [(f, label, emoji, HUB_NAV.get(f[:-5], ""))
                 for f, label, emoji in NAV_EXTRA]
+    entries = [e for e in entries if e[0] not in EMPTY_HUBS]
     if kind == "drawer":
         entries = [e for e in entries if e[0] in DRAWER_HUBS]
     if kind == "footer":
@@ -8389,6 +8396,11 @@ def main():
         pool = all_records[coll] + punjabi[coll]
         html_out, live = hub_page(coll, cfg, pool, index, exams, pyq_exams,
                                   ca_section)
+        empty_hub = not live and 'class="empty-state"' in html_out
+        if empty_hub:
+            EMPTY_HUBS.add(cfg["file"])
+            html_out = re.sub(r'(<meta name="robots" content=")index, follow"',
+                              r'\1noindex, follow"', html_out)
         (ROOT / cfg["file"]).write_text(html_out, encoding="utf-8")
         expected.add(cfg["file"])
         ctx["pages"].append((cfg["file"], page_main(html_out), {
@@ -8403,8 +8415,21 @@ def main():
             "title": HUBS[coll]["title"],
             "description": HUBS[coll]["description"],
             "count": len(live),
+            **({"noindex": True} if empty_hub else {}),
         })
-        info(f"hub {cfg['file']}: {len(live)} item(s)")
+        info(f"hub {cfg['file']}: {len(live)} item(s)"
+             + (" - empty, noindex + hidden from navigation" if empty_hub else ""))
+
+    # Empty hubs -> data/noindex.json (generated key; "pages" stays hand-kept)
+    _ni_path = ROOT / "data" / "noindex.json"
+    try:
+        _ni = json.loads(_ni_path.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        _ni = {"pages": []}
+    if _ni.get("emptyHubs") != sorted(EMPTY_HUBS):
+        _ni["emptyHubs"] = sorted(EMPTY_HUBS)
+        _ni_path.write_text(json.dumps(_ni, indent=2, ensure_ascii=False) + "\n",
+                            encoding="utf-8")
 
     # ---- pdf registry -----------------------------------------------------
     pdf_url = f'{DOMAIN}/{HUBS["pdfs"]["file"][:-5]}'

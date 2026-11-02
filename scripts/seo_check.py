@@ -67,9 +67,14 @@ def read_audit_source(path, **kwargs):
     return re.sub(r"(\bhref=|data-subject-base=)([\"'`])([^\"'`<>\n]+)\2", route, source)
 
 try:
-    NOINDEX_PAGES = set(json.loads(read_audit_source(ROOT / "data" / "noindex.json", encoding="utf-8")).get("pages", []))
+    _NI = json.loads(read_audit_source(ROOT / "data" / "noindex.json", encoding="utf-8"))
+    NOINDEX_PAGES = set(_NI.get("pages", []))
+    # Hubs with nothing published yet: noindex, out of sitemap and chrome.
+    EMPTY_HUBS = set(_NI.get("emptyHubs", []))
+    NOINDEX_PAGES |= EMPTY_HUBS
 except (OSError, ValueError):
     NOINDEX_PAGES = set()
+    EMPTY_HUBS = set()
 # generated index pages the content builder flags noindex (thin archives)
 try:
     NOINDEX_PAGES |= {p.get("file") for p in json.loads(
@@ -819,11 +824,15 @@ if CONTENT_MANIFEST.exists():
             if GEN_MARK not in src:
                 errors.append(f"{f}: generated page edited by hand - rerun "
                               f"scripts/build_content.py")
-            if f'href="{f}"' not in core:
-                errors.append(f"chrome missing content hub link {f}")
-            want = f"{DOMAIN}/{f[:-5]}"
-            if want not in locs:
-                errors.append(f"sitemap: missing content hub {want}")
+            if f in EMPTY_HUBS:
+                if h.get("count"):
+                    errors.append(f"{f}: listed as an empty hub but has items")
+            else:
+                if f'href="{f}"' not in core:
+                    errors.append(f"chrome missing content hub link {f}")
+                want = f"{DOMAIN}/{f[:-5]}"
+                if want not in locs:
+                    errors.append(f"sitemap: missing content hub {want}")
             coll = h.get("collection", "")
             pool_cm = cm.get("pdfs", []) if coll == "pdfs" else items_cm
             n_items = sum(1 for p in pool_cm if p.get("collection", coll) == coll)

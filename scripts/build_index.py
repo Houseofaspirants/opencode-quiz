@@ -1204,8 +1204,9 @@ if site.get("url"):
     # the sitemap too (a sitemap URL that says noindex is a mixed signal).
     noindex_path = os.path.join(DATA_DIR, "noindex.json")
     if os.path.exists(noindex_path):
+        _ni = read_json(noindex_path)
         skip = {f"{base}/{str(f)[:-5]}"
-                for f in read_json(noindex_path).get("pages", [])
+                for f in _ni.get("pages", []) + _ni.get("emptyHubs", [])
                 if str(f).endswith(".html")}
         urls = [x for x in urls if x["loc"] not in skip]
     lines = [

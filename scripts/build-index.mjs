@@ -1121,7 +1121,8 @@ if (site.url) {
   const noindexPath = path.join(DATA_DIR, "noindex.json");
   if (fs.existsSync(noindexPath)) {
     const skip = new Set(
-      (JSON.parse(fs.readFileSync(noindexPath, "utf8")).pages || [])
+      ((ni) => (ni.pages || []).concat(ni.emptyHubs || []))(
+        JSON.parse(fs.readFileSync(noindexPath, "utf8")))
         .filter((f) => String(f).endsWith(".html"))
         .map((f) => `${base}/${String(f).slice(0, -5)}`)
     );
