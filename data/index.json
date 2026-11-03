@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-02T20:18:32.605Z",
+  "generatedAt": "2026-11-03T05:46:19.477Z",
   "stats": {
     "subjects": 7,
-    "categories": 48,
-    "topics": 88,
-    "quizzes": 88,
-    "questions": 2023,
+    "categories": 50,
+    "topics": 92,
+    "quizzes": 92,
+    "questions": 2123,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2664,19 +2664,140 @@
       "order": 2,
       "topics": [
         {
-          "id": "01 - Number System - MCQ - EN - Part 1",
-          "name": "Number System MCQ – Part 1",
+          "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 1",
+          "name": "HCF and LCM of Numbers MCQ – Part 1",
           "description": "",
-          "file": "questions/quant/01 - Number System - MCQ - EN - Part 1.json",
+          "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 1.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1793647706415,
+          "updatedAt": 1793684775222,
+          "category": "02-hcf-and-lcm-of-numbers",
           "language": "en",
           "variants": {
-            "en": "questions/quant/01 - Number System - MCQ - EN - Part 1.json",
-            "pa": "questions/quant/01 - Number System - MCQ - PA - Part 1.json"
+            "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "HCF and LCM of Numbers MCQ – Part 1",
+            "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-1"
+        },
+        {
+          "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 2",
+          "name": "HCF and LCM of Numbers MCQ – Part 2",
+          "description": "",
+          "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793684775222,
+          "category": "02-hcf-and-lcm-of-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "HCF and LCM of Numbers MCQ – Part 2",
+            "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-2"
+        },
+        {
+          "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 3",
+          "name": "HCF and LCM of Numbers MCQ – Part 3",
+          "description": "",
+          "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793684775222,
+          "category": "02-hcf-and-lcm-of-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "HCF and LCM of Numbers MCQ – Part 3",
+            "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-3"
+        },
+        {
+          "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 4",
+          "name": "HCF and LCM of Numbers MCQ – Part 4",
+          "description": "",
+          "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793684775222,
+          "category": "02-hcf-and-lcm-of-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "HCF and LCM of Numbers MCQ – Part 4",
+            "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-4"
+        },
+        {
+          "id": "01 - Number System - MCQ - EN - Part 1",
+          "name": "Number System MCQ – Part 1",
+          "description": "",
+          "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793684775222,
+          "category": "01-number-system",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 1.json"
           },
           "availableLanguages": [
             "en",
@@ -2696,16 +2817,17 @@
           "id": "01 - Number System - MCQ - EN - Part 2",
           "name": "Number System MCQ – Part 2",
           "description": "",
-          "file": "questions/quant/01 - Number System - MCQ - EN - Part 2.json",
+          "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 2.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1793647706415,
+          "updatedAt": 1793684775222,
+          "category": "01-number-system",
           "language": "en",
           "variants": {
-            "en": "questions/quant/01 - Number System - MCQ - EN - Part 2.json",
-            "pa": "questions/quant/01 - Number System - MCQ - PA - Part 2.json"
+            "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 2.json"
           },
           "availableLanguages": [
             "en",
@@ -2725,16 +2847,17 @@
           "id": "01 - Number System - MCQ - EN - Part 3",
           "name": "Number System MCQ – Part 3",
           "description": "",
-          "file": "questions/quant/01 - Number System - MCQ - EN - Part 3.json",
+          "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 3.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1793647706415,
+          "updatedAt": 1793684775222,
+          "category": "01-number-system",
           "language": "en",
           "variants": {
-            "en": "questions/quant/01 - Number System - MCQ - EN - Part 3.json",
-            "pa": "questions/quant/01 - Number System - MCQ - PA - Part 3.json"
+            "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 3.json"
           },
           "availableLanguages": [
             "en",
@@ -2754,16 +2877,17 @@
           "id": "01 - Number System - MCQ - EN - Part 4",
           "name": "Number System MCQ – Part 4",
           "description": "",
-          "file": "questions/quant/01 - Number System - MCQ - EN - Part 4.json",
+          "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 4.json",
           "count": 25,
           "empty": false,
           "available": true,
           "timeLimit": 0,
-          "updatedAt": 1793647706415,
+          "updatedAt": 1793684775222,
+          "category": "01-number-system",
           "language": "en",
           "variants": {
-            "en": "questions/quant/01 - Number System - MCQ - EN - Part 4.json",
-            "pa": "questions/quant/01 - Number System - MCQ - PA - Part 4.json"
+            "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 4.json"
           },
           "availableLanguages": [
             "en",
@@ -2780,7 +2904,266 @@
           "landing": "/quiz-quant-01-number-system-part-4"
         }
       ],
-      "categories": [],
+      "categories": [
+        {
+          "id": "01-number-system",
+          "name": "01   Number System",
+          "folder": "01 - Number System",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "01 - Number System - MCQ - EN - Part 1",
+              "name": "Number System MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "01-number-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number System MCQ – Part 1",
+                "pa": "ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-01-number-system-part-1"
+            },
+            {
+              "id": "01 - Number System - MCQ - EN - Part 2",
+              "name": "Number System MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "01-number-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number System MCQ – Part 2",
+                "pa": "ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-01-number-system-part-2"
+            },
+            {
+              "id": "01 - Number System - MCQ - EN - Part 3",
+              "name": "Number System MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "01-number-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number System MCQ – Part 3",
+                "pa": "ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-01-number-system-part-3"
+            },
+            {
+              "id": "01 - Number System - MCQ - EN - Part 4",
+              "name": "Number System MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "01-number-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/01 - Number System/01 - Number System - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Number System MCQ – Part 4",
+                "pa": "ਸੰਖਿਆ ਪ੍ਰਣਾਲੀ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-01-number-system-part-4"
+            }
+          ],
+          "landing": "/category-quant-01-number-system"
+        },
+        {
+          "id": "02-hcf-and-lcm-of-numbers",
+          "name": "02   HCF And LCM Of Numbers",
+          "folder": "02 - HCF and LCM of Numbers",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 1",
+              "name": "HCF and LCM of Numbers MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "02-hcf-and-lcm-of-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "HCF and LCM of Numbers MCQ – Part 1",
+                "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-1"
+            },
+            {
+              "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 2",
+              "name": "HCF and LCM of Numbers MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "02-hcf-and-lcm-of-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "HCF and LCM of Numbers MCQ – Part 2",
+                "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-2"
+            },
+            {
+              "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 3",
+              "name": "HCF and LCM of Numbers MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "02-hcf-and-lcm-of-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "HCF and LCM of Numbers MCQ – Part 3",
+                "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-3"
+            },
+            {
+              "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 4",
+              "name": "HCF and LCM of Numbers MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793684775222,
+              "category": "02-hcf-and-lcm-of-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "HCF and LCM of Numbers MCQ – Part 4",
+                "pa": "ਮ.ਸ.ਵ. ਅਤੇ ਲ.ਸ.ਵ. MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-4"
+            }
+          ],
+          "landing": "/category-quant-02-hcf-and-lcm-of-numbers"
+        }
+      ],
       "landing": "/subject-quant"
     },
     {
@@ -5738,21 +6121,37 @@
       "0a4f3bf4778c53f8",
       1793647706415
     ],
-    "questions/quant/01 - Number System - MCQ - EN - Part 1.json": [
+    "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json": [
       "c3eec0ac9f0fdfe2",
-      1793647706415
+      1793684775222
     ],
-    "questions/quant/01 - Number System - MCQ - EN - Part 2.json": [
+    "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 2.json": [
       "ee16a749df60ae27",
-      1793647706415
+      1793684775222
     ],
-    "questions/quant/01 - Number System - MCQ - EN - Part 3.json": [
+    "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 3.json": [
       "386cf309958e0854",
-      1793647706415
+      1793684775222
     ],
-    "questions/quant/01 - Number System - MCQ - EN - Part 4.json": [
+    "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 4.json": [
       "4927d0cb46b8d802",
-      1793647706415
+      1793684775222
+    ],
+    "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 1.json": [
+      "8138ea2e8f109ce9",
+      1793684775222
+    ],
+    "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 2.json": [
+      "6e697c9d9ef73834",
+      1793684775222
+    ],
+    "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 3.json": [
+      "01e091c2f6125683",
+      1793684775222
+    ],
+    "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json": [
+      "3606a180c45a0063",
+      1793684775222
     ],
     "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",
