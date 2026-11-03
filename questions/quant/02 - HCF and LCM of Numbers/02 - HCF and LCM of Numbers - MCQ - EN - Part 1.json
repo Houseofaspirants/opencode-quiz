@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "HCF and LCM of Numbers"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-001",
+      "number": 1,
+      "question": "What is the greatest integer that leaves the same remainder when dividing 157, 229 and 373?",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "144"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take the HCF of differences: HCF(229 − 157, 373 − 229) = HCF(72, 144) = 72."
+    },
+    {
+      "id": "02-002",
+      "number": 2,
+      "question": "Harleen and Simran start together from the same point on a circular track. Their lap times are 75 and 90 seconds. After how many minutes will both first return together to the starting point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7.5"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "2.5"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(75, 90) = 450 seconds. Thus the time is 450 ÷ 60 = 7.5 minutes."
+    },
+    {
+      "id": "02-003",
+      "number": 3,
+      "question": "Data sufficiency: What is the sum of two positive integers? I. Their HCF is 18 and LCM is 540. II. Both integers are at least 90.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "B",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient; Statement II alone is not."
+        },
+        {
+          "label": "D",
+          "text": "Statement II alone is sufficient; Statement I alone is not."
+        }
+      ],
+      "answer": "B",
+      "explanation": "I gives co-prime factor pairs of 30 after dividing both integers by 18, so several sums are possible. Together with II, only (90, 108) remains, giving sum 198; II alone gives no unique sum."
+    },
+    {
+      "id": "02-004",
+      "number": 4,
+      "question": "Find the least positive integer that leaves remainders 7, 11 and 19 when divided by 12, 16 and 24 respectively.",
+      "options": [
+        {
+          "label": "A",
+          "text": "43"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "91"
+        },
+        {
+          "label": "D",
+          "text": "53"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each remainder is 5 less than its divisor. Hence the number is LCM(12, 16, 24) − 5 = 48 − 5 = 43."
+    },
+    {
+      "id": "02-005",
+      "number": 5,
+      "question": "A school has 216 pencils and 288 erasers. It makes the maximum number of identical gift packets using everything. How many items are in each packet?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Maximum packets = HCF(216, 288) = 72. Each contains 216 ÷ 72 + 288 ÷ 72 = 7 items."
+    },
+    {
+      "id": "02-006",
+      "number": 6,
+      "question": "Three bells ring every 14, 21 and 35 seconds. They ring together now. How many simultaneous ringings occur in the next 35 minutes, excluding now but including the endpoint?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "C",
+      "explanation": "They ring together every LCM(14, 21, 35) = 210 seconds. Excluding the initial ringing, the count is 35 × 60 ÷ 210 = 10."
+    },
+    {
+      "id": "02-007",
+      "number": 7,
+      "question": "Find the least positive integer that leaves remainder 3 when divided by 8, 12 and 20, and is divisible by 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "363"
+        },
+        {
+          "label": "B",
+          "text": "843"
+        },
+        {
+          "label": "C",
+          "text": "123"
+        },
+        {
+          "label": "D",
+          "text": "483"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The number is 120k + 3. Modulo 7 this is k + 3, so the least suitable k is 4 and the number is 483."
+    },
+    {
+      "id": "02-008",
+      "number": 8,
+      "question": "If a = 2^5 × 3² × 7 and b = 2³ × 3^4 × 5, find LCM(a, b) ÷ HCF(a, b).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1260"
+        },
+        {
+          "label": "B",
+          "text": "315"
+        },
+        {
+          "label": "C",
+          "text": "630"
+        },
+        {
+          "label": "D",
+          "text": "2520"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cancel the common lowest powers. The ratio is 2² × 3² × 5 × 7 = 1260."
+    },
+    {
+      "id": "02-009",
+      "number": 9,
+      "question": "A largest possible divisor d leaves the same remainder r on dividing 613, 853 and 1213. Find d + r.",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "107"
+        },
+        {
+          "label": "C",
+          "text": "133"
+        },
+        {
+          "label": "D",
+          "text": "253"
+        }
+      ],
+      "answer": "C",
+      "explanation": "d = HCF(240, 360) = 120. Since 613 = 120 × 5 + 13, d + r = 120 + 13 = 133."
+    },
+    {
+      "id": "02-010",
+      "number": 10,
+      "question": "Three traffic signals change every 40, 56 and 70 seconds. They change together at 9:10:00 a.m. At what time do they next change together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9:19:20"
+        },
+        {
+          "label": "B",
+          "text": "9:12:20"
+        },
+        {
+          "label": "C",
+          "text": "9:14:00"
+        },
+        {
+          "label": "D",
+          "text": "9:14:40"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM(40, 56, 70) = 280 seconds = 4 minutes 40 seconds. Add this to 9:10:00 to get 9:14:40."
+    },
+    {
+      "id": "02-011",
+      "number": 11,
+      "question": "What is the least non-negative integer to add to 754 to make it divisible by both 18 and 24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "38"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(18, 24) = 72, and 754 leaves remainder 34. Add 72 − 34 = 38."
+    },
+    {
+      "id": "02-012",
+      "number": 12,
+      "question": "A shop has 378 kg rice, 462 kg wheat and 630 kg maize. Each grain is packed separately in bags of the same maximum capacity, with nothing left. How many bags are needed in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Maximum capacity = HCF(378, 462, 630) = 42 kg. Total bags = (378 + 462 + 630) ÷ 42 = 35."
+    },
+    {
+      "id": "02-013",
+      "number": 13,
+      "question": "What is the least non-negative integer to subtract from 9876 so that the result is divisible by 14, 21 and 30?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "126"
+        },
+        {
+          "label": "D",
+          "text": "204"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(14, 21, 30) = 210. Since 9876 = 210 × 47 + 6, subtract 6."
+    },
+    {
+      "id": "02-014",
+      "number": 14,
+      "question": "A rectangular floor measures 6.72 m by 4.80 m. What is the minimum number of equal square tiles needed to cover it without cutting?",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "70"
+        },
+        {
+          "label": "D",
+          "text": "96"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Largest tile side = HCF(672, 480) = 96 cm. Minimum tiles = (672 ÷ 96) × (480 ÷ 96) = 35."
+    },
+    {
+      "id": "02-015",
+      "number": 15,
+      "question": "Find the HCF of 168, 252 and 420.",
+      "options": [
+        {
+          "label": "A",
+          "text": "126"
+        },
+        {
+          "label": "B",
+          "text": "28"
+        },
+        {
+          "label": "C",
+          "text": "84"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "C",
+      "explanation": "HCF(168, 252) = 84, and 420 = 84 × 5. Hence the required HCF is 84."
+    },
+    {
+      "id": "02-016",
+      "number": 16,
+      "question": "The greatest divisor of 1099, 1440 and 1788 leaving remainders 11, 12 and 20 respectively is d. Find d − 20.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "88"
+        },
+        {
+          "label": "C",
+          "text": "68"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "A",
+      "explanation": "d = HCF(1088, 1428, 1768) = 68. Therefore d − 20 = 48."
+    },
+    {
+      "id": "02-017",
+      "number": 17,
+      "question": "What is the smallest four-digit integer divisible by 16, 20 and 28?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1008"
+        },
+        {
+          "label": "B",
+          "text": "1120"
+        },
+        {
+          "label": "C",
+          "text": "1040"
+        },
+        {
+          "label": "D",
+          "text": "1680"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM(16, 20, 28) = 560. The first multiple at least 1000 is 560 × 2 = 1120."
+    },
+    {
+      "id": "02-018",
+      "number": 18,
+      "question": "What is the LCM of 5/12, 7/18 and 11/24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "385/72"
+        },
+        {
+          "label": "B",
+          "text": "1/72"
+        },
+        {
+          "label": "C",
+          "text": "35/6"
+        },
+        {
+          "label": "D",
+          "text": "385/6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "For reduced fractions, LCM = LCM of numerators ÷ HCF of denominators = 385/6."
+    },
+    {
+      "id": "02-019",
+      "number": 19,
+      "question": "The ratio of two positive integers is 6:10 and their LCM exceeds their HCF by 308. Find the smaller integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "110"
+        },
+        {
+          "label": "B",
+          "text": "33"
+        },
+        {
+          "label": "C",
+          "text": "66"
+        },
+        {
+          "label": "D",
+          "text": "132"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Reduce the ratio to 3:5. If the HCF is h, then 15h − h = 308, giving h = 22 and the smaller number 3 × 22 = 66."
+    },
+    {
+      "id": "02-020",
+      "number": 20,
+      "question": "What is the LCM of 28, 42 and 70?",
+      "options": [
+        {
+          "label": "A",
+          "text": "840"
+        },
+        {
+          "label": "B",
+          "text": "420"
+        },
+        {
+          "label": "C",
+          "text": "210"
+        },
+        {
+          "label": "D",
+          "text": "140"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take the highest prime powers: 2² × 3 × 5 × 7 = 420."
+    },
+    {
+      "id": "02-021",
+      "number": 21,
+      "question": "Find the greatest integer that divides 879 and 1246 leaving remainders 9 and 16 respectively.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The divisor must divide 879 − 9 = 870 and 1246 − 16 = 1230. Their HCF is 30."
+    },
+    {
+      "id": "02-022",
+      "number": 22,
+      "question": "Two numbers are in the ratio 7:9 and their HCF is 16. What is their sum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "144"
+        },
+        {
+          "label": "B",
+          "text": "256"
+        },
+        {
+          "label": "C",
+          "text": "112"
+        },
+        {
+          "label": "D",
+          "text": "1008"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 7 and 9 are co-prime, the numbers are 16 × 7 and 16 × 9. Their sum is 16 × 16 = 256."
+    },
+    {
+      "id": "02-023",
+      "number": 23,
+      "question": "Find the HCF of 0.84, 1.26 and 2.10.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.042"
+        },
+        {
+          "label": "B",
+          "text": "0.21"
+        },
+        {
+          "label": "C",
+          "text": "4.2"
+        },
+        {
+          "label": "D",
+          "text": "0.42"
+        }
+      ],
+      "answer": "D",
+      "explanation": "HCF(84, 126, 210) = 42. Restore two decimal places to get 0.42."
+    },
+    {
+      "id": "02-024",
+      "number": 24,
+      "question": "The ratio of two numbers is 5:8 and their LCM is 680. Find their difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "136"
+        },
+        {
+          "label": "B",
+          "text": "17"
+        },
+        {
+          "label": "C",
+          "text": "51"
+        },
+        {
+          "label": "D",
+          "text": "85"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Write the numbers as 5x and 8x. Then 40x = 680, so their difference is 3 × 17 = 51."
+    },
+    {
+      "id": "02-025",
+      "number": 25,
+      "question": "Find the least integer greater than 20 that leaves remainder 4 when divided by 6, 10 and 15.",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Such numbers are 30k + 4 because LCM(6, 10, 15) = 30. The first above 20 is 34."
+    }
+  ]
+}

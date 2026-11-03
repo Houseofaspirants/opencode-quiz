@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "HCF and LCM of Numbers"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-051",
+      "number": 51,
+      "question": "How many three-digit integers are divisible by both 18 and 24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM(18, 24) = 72. Count = floor(999 ÷ 72) − floor(99 ÷ 72) = 13 − 1 = 12."
+    },
+    {
+      "id": "02-052",
+      "number": 52,
+      "question": "The greatest divisor that leaves remainders 8 and 14 on dividing 968 and 1358 is d. What remainder does 2026 leave when divided by d?",
+      "options": [
+        {
+          "label": "A",
+          "text": "86"
+        },
+        {
+          "label": "B",
+          "text": "192"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "106"
+        }
+      ],
+      "answer": "D",
+      "explanation": "d = HCF(960, 1344) = 192. Since 2026 = 192 × 10 + 106, the remainder is 106."
+    },
+    {
+      "id": "02-053",
+      "number": 53,
+      "question": "Which greatest integer gives an equal remainder when 345, 513 and 765 are divided by it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "168"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take HCF(513 − 345, 765 − 513) = HCF(168, 252) = 84."
+    },
+    {
+      "id": "02-054",
+      "number": 54,
+      "question": "What is the least non-negative integer to subtract from 2867 to make it divisible by 12, 18 and 27?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "108"
+        },
+        {
+          "label": "C",
+          "text": "59"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "C",
+      "explanation": "LCM(12, 18, 27) = 108. Since 2867 = 108 × 26 + 59, subtract 59."
+    },
+    {
+      "id": "02-055",
+      "number": 55,
+      "question": "Three bells ring every 18, 30 and 42 seconds. Starting with a simultaneous ringing, how many simultaneous ringings occur in 63 minutes, including both endpoints?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Common interval = LCM(18, 30, 42) = 630 seconds. Including the initial ringing gives 63 × 60 ÷ 630 + 1 = 7."
+    },
+    {
+      "id": "02-056",
+      "number": 56,
+      "question": "Find the HCF of 2.25 and 3.75.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.15"
+        },
+        {
+          "label": "B",
+          "text": "7.5"
+        },
+        {
+          "label": "C",
+          "text": "1.5"
+        },
+        {
+          "label": "D",
+          "text": "0.75"
+        }
+      ],
+      "answer": "D",
+      "explanation": "HCF(225, 375) = 75. Restore two decimal places to obtain 0.75."
+    },
+    {
+      "id": "02-057",
+      "number": 57,
+      "question": "Find the HCF of 2^6 × 3³ × 5 and 2^4 × 3² × 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "432"
+        },
+        {
+          "label": "B",
+          "text": "720"
+        },
+        {
+          "label": "C",
+          "text": "144"
+        },
+        {
+          "label": "D",
+          "text": "1008"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use the lower powers of common primes: 2^4 × 3² = 144."
+    },
+    {
+      "id": "02-058",
+      "number": 58,
+      "question": "A library has 315 Punjabi, 405 Hindi and 495 English books. Each stack has the same maximum number of books and contains one language only. How many stacks are formed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "81"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Maximum books per stack = HCF(315, 405, 495) = 45. Stacks = (315 + 405 + 495) ÷ 45 = 27."
+    },
+    {
+      "id": "02-059",
+      "number": 59,
+      "question": "Find the least integer greater than 100 that leaves remainder 9 when divided by 25, 30 and 40.",
+      "options": [
+        {
+          "label": "A",
+          "text": "600"
+        },
+        {
+          "label": "B",
+          "text": "309"
+        },
+        {
+          "label": "C",
+          "text": "1209"
+        },
+        {
+          "label": "D",
+          "text": "609"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM(25, 30, 40) = 600. The first suitable number above 100 is 600 + 9 = 609."
+    },
+    {
+      "id": "02-060",
+      "number": 60,
+      "question": "What is the LCM of 44 and 66?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "264"
+        },
+        {
+          "label": "C",
+          "text": "132"
+        },
+        {
+          "label": "D",
+          "text": "2904"
+        }
+      ],
+      "answer": "C",
+      "explanation": "HCF(44, 66) = 22. Hence LCM = 44 × 66 ÷ 22 = 132."
+    },
+    {
+      "id": "02-061",
+      "number": 61,
+      "question": "After removing 6 damaged pens from 486 pens and 10 damaged pencils from 730 pencils, identical kits are made using all remaining items. If the number of kits is as large as possible, how many more pencils than pens are in each kit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Usable totals are 480 and 720, giving HCF = 240 kits. Each kit has 2 pens and 3 pencils, so the difference is 1."
+    },
+    {
+      "id": "02-062",
+      "number": 62,
+      "question": "A rectangular sheet 154 cm by 210 cm is cut into the largest possible equal squares without waste. What is the perimeter of each square in cm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "56"
+        },
+        {
+          "label": "B",
+          "text": "196"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Largest square side = HCF(154, 210) = 14 cm. Perimeter = 4 × 14 = 56 cm."
+    },
+    {
+      "id": "02-063",
+      "number": 63,
+      "question": "Three maintenance jobs recur every 8, 12 and 18 days. All are done today. After how many days will they next fall on the same day?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "144"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first common recurrence is LCM(8, 12, 18) = 72 days."
+    },
+    {
+      "id": "02-064",
+      "number": 64,
+      "question": "The HCF and LCM of two positive integers are 32 and 960. If one integer is 160, find the other.",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "480"
+        },
+        {
+          "label": "C",
+          "text": "192"
+        },
+        {
+          "label": "D",
+          "text": "96"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Their product is 32 × 960. The other integer is 32 × 960 ÷ 160 = 192."
+    },
+    {
+      "id": "02-065",
+      "number": 65,
+      "question": "A number divides 733, 1027 and 1319 leaving remainders 13, 19 and 23 respectively. Find its greatest possible value.",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "288"
+        },
+        {
+          "label": "D",
+          "text": "144"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Subtract the respective remainders to get 720, 1008 and 1296. Their HCF is 144."
+    },
+    {
+      "id": "02-066",
+      "number": 66,
+      "question": "Two positive integers have HCF 19. Their sum is 228 and their ratio is less than 1 when the smaller is written first. What is the greatest possible value of the smaller integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "114"
+        },
+        {
+          "label": "B",
+          "text": "57"
+        },
+        {
+          "label": "C",
+          "text": "76"
+        },
+        {
+          "label": "D",
+          "text": "95"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Write the numbers as 19a and 19b, so a + b = 12 and a, b are co-prime. The closest eligible pair is (5, 7), making the smaller integer 19 × 5 = 95."
+    },
+    {
+      "id": "02-067",
+      "number": 67,
+      "question": "For positive integers x, y and z, LCM(x, y) = y and HCF(y, z) = y. If z = 630, what is LCM(x, y, z)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "630"
+        },
+        {
+          "label": "B",
+          "text": "1890"
+        },
+        {
+          "label": "C",
+          "text": "1260"
+        },
+        {
+          "label": "D",
+          "text": "315"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first condition gives x divides y; the second gives y divides z. Thus all three divide z, and their LCM is z = 630."
+    },
+    {
+      "id": "02-068",
+      "number": 68,
+      "question": "A divisor d greater than 10 leaves the same remainder when dividing 250, 394 and 610. How many possible values of d are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "d must divide HCF(144, 216) = 72. Its factors above 10 are 12, 18, 24, 36 and 72, giving 5 values."
+    },
+    {
+      "id": "02-069",
+      "number": 69,
+      "question": "A trader has ₹7643. What is the least amount in ₹ that must be added so the total can be paid in equal instalments of ₹84, ₹126 or ₹210 without a balance?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1177"
+        },
+        {
+          "label": "B",
+          "text": "83"
+        },
+        {
+          "label": "C",
+          "text": "337"
+        },
+        {
+          "label": "D",
+          "text": "1259"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(84, 126, 210) = 1260. The next multiple after 7643 is 8820, so add 8820 − 7643 = ₹1177."
+    },
+    {
+      "id": "02-070",
+      "number": 70,
+      "question": "Find the least integer greater than 50 that leaves remainder 2 when divided by 16 and 24.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "98"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "146"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The numbers are 48k + 2. Since 50 is excluded, the next is 96 + 2 = 98."
+    },
+    {
+      "id": "02-071",
+      "number": 71,
+      "question": "Find the least perfect square divisible by 24, 40 and 60.",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "1800"
+        },
+        {
+          "label": "C",
+          "text": "14400"
+        },
+        {
+          "label": "D",
+          "text": "3600"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM = 120 = 2³ × 3 × 5. Make every prime exponent even by multiplying by 2 × 3 × 5, giving 3600."
+    },
+    {
+      "id": "02-072",
+      "number": 72,
+      "question": "What is the HCF of 8/9, 10/27 and 14/45?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/9"
+        },
+        {
+          "label": "B",
+          "text": "2/135"
+        },
+        {
+          "label": "C",
+          "text": "280/3"
+        },
+        {
+          "label": "D",
+          "text": "1/135"
+        }
+      ],
+      "answer": "B",
+      "explanation": "HCF of numerators = 2 and LCM of denominators = 135. Thus HCF = 2/135."
+    },
+    {
+      "id": "02-073",
+      "number": 73,
+      "question": "Two numbers are in the ratio 12:18 and their HCF is 25. Find their LCM.",
+      "options": [
+        {
+          "label": "A",
+          "text": "150"
+        },
+        {
+          "label": "B",
+          "text": "300"
+        },
+        {
+          "label": "C",
+          "text": "75"
+        },
+        {
+          "label": "D",
+          "text": "900"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reduce 12:18 to 2:3, giving numbers 50 and 75. Their LCM is 25 × 2 × 3 = 150."
+    },
+    {
+      "id": "02-074",
+      "number": 74,
+      "question": "Data sufficiency: How many unordered pairs of positive integers have HCF 16 and sum S? I. S is a multiple of 16. II. S = 304.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient; Statement I alone is not."
+        },
+        {
+          "label": "B",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient; Statement II alone is not."
+        },
+        {
+          "label": "D",
+          "text": "Each statement alone is sufficient."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I gives no fixed S: S = 32 gives 1 pair, while S = 304 gives 9. II fixes a + b = 304 ÷ 16 = 19 after removing the HCF, giving 9 co-prime unordered pairs, so II alone is sufficient."
+    },
+    {
+      "id": "02-075",
+      "number": 75,
+      "question": "What is the smallest five-digit integer that leaves remainder 4 when divided by 18, 24 and 30?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9724"
+        },
+        {
+          "label": "B",
+          "text": "10084"
+        },
+        {
+          "label": "C",
+          "text": "10080"
+        },
+        {
+          "label": "D",
+          "text": "10444"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The integer is 360k + 4. The first value at least 10000 is 360 × 28 + 4 = 10084."
+    }
+  ]
+}

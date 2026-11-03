@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "HCF and LCM of Numbers"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-026",
+      "number": 26,
+      "question": "Find the greatest four-digit integer that leaves remainder 6 on division by 15, 20 and 24.",
+      "options": [
+        {
+          "label": "A",
+          "text": "9996"
+        },
+        {
+          "label": "B",
+          "text": "9846"
+        },
+        {
+          "label": "C",
+          "text": "9960"
+        },
+        {
+          "label": "D",
+          "text": "9966"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The number is 120k + 6. The greatest value at most 9999 is 120 × 83 + 6 = 9966."
+    },
+    {
+      "id": "02-027",
+      "number": 27,
+      "question": "Three ropes of lengths 8.4 m, 12.6 m and 18.9 m are cut into equal pieces of the greatest possible length. How many pieces are obtained?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "39"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In decimetres, HCF(84, 126, 189) = 21. Total pieces = (84 + 126 + 189) ÷ 21 = 19."
+    },
+    {
+      "id": "02-028",
+      "number": 28,
+      "question": "Three machines start a cycle together. Their cycle times are 2.4, 3.6 and 4.5 minutes. How many cycles does the fastest machine complete before all three first finish a cycle together again?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Scale by 10: LCM(24, 36, 45) = 360, so the common time is 36 minutes. The fastest machine completes 36 ÷ 2.4 = 15 cycles."
+    },
+    {
+      "id": "02-029",
+      "number": 29,
+      "question": "Data sufficiency: What is the HCF of positive integers a and b? I. a and b are consecutive integers. II. a × b = 420.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "B",
+          "text": "Statement II alone is sufficient; Statement I alone is not."
+        },
+        {
+          "label": "C",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "D",
+          "text": "Statement I alone is sufficient; Statement II alone is not."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Consecutive integers always have HCF 1, so I alone is sufficient. II allows (20, 21) with HCF 1 and (10, 42) with HCF 2, so II alone is insufficient."
+    },
+    {
+      "id": "02-030",
+      "number": 30,
+      "question": "Two buses leave a depot together at 6:45 a.m. One leaves every 36 minutes and the other every 54 minutes. At what time will they next leave together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8:15"
+        },
+        {
+          "label": "B",
+          "text": "7:39"
+        },
+        {
+          "label": "C",
+          "text": "8:33"
+        },
+        {
+          "label": "D",
+          "text": "9:27"
+        }
+      ],
+      "answer": "C",
+      "explanation": "LCM(36, 54) = 108 minutes = 1 hour 48 minutes. Thus the next common departure is at 8:33 a.m."
+    },
+    {
+      "id": "02-031",
+      "number": 31,
+      "question": "A divisor leaves remainder 25 on dividing 925 and remainder 35 on dividing 1295. How many positive integers can be such a divisor?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The divisor must be a factor of HCF(900, 1260) = 180 and exceed 35. The eligible factors are 36, 45, 60, 90 and 180, giving 5."
+    },
+    {
+      "id": "02-032",
+      "number": 32,
+      "question": "Two numbers have HCF 21 and LCM 1386. If one is 126, what is the other?",
+      "options": [
+        {
+          "label": "A",
+          "text": "231"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "252"
+        },
+        {
+          "label": "D",
+          "text": "462"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Other number = HCF × LCM ÷ known number = 21 × 1386 ÷ 126 = 231."
+    },
+    {
+      "id": "02-033",
+      "number": 33,
+      "question": "A courtyard 8.10 m long and 6.30 m wide is covered with the largest possible equal square slabs without cutting. What is the side of each slab in cm?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "90"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "180"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Convert to cm and take HCF(810, 630) = 90. This is the largest slab side."
+    },
+    {
+      "id": "02-034",
+      "number": 34,
+      "question": "What is the least non-negative amount, in ₹, to subtract from ₹5380 so that the balance can be divided exactly into shares of ₹45, ₹60 or ₹75?",
+      "options": [
+        {
+          "label": "A",
+          "text": "180"
+        },
+        {
+          "label": "B",
+          "text": "880"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM(45, 60, 75) = 900. The remainder on dividing 5380 by 900 is 880, so subtract ₹880."
+    },
+    {
+      "id": "02-035",
+      "number": 35,
+      "question": "A hall measuring 9.24 m by 6.72 m is tiled with the largest equal square tiles without cutting. Laying each tile costs ₹18. What is the total laying cost in ₹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1584"
+        },
+        {
+          "label": "B",
+          "text": "792"
+        },
+        {
+          "label": "C",
+          "text": "1440"
+        },
+        {
+          "label": "D",
+          "text": "2376"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Largest tile side = HCF(924, 672) = 84 cm. There are 11 × 8 = 88 tiles, so the laying cost is 88 × 18 = ₹1584."
+    },
+    {
+      "id": "02-036",
+      "number": 36,
+      "question": "Two numbers are in the ratio 9:14. Their HCF and LCM have sum 1651. Find the larger number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "182"
+        },
+        {
+          "label": "B",
+          "text": "117"
+        },
+        {
+          "label": "C",
+          "text": "252"
+        },
+        {
+          "label": "D",
+          "text": "169"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the HCF is h, the LCM is 126h. Hence 127h = 1651, so h = 13 and the larger number is 14 × 13 = 182."
+    },
+    {
+      "id": "02-037",
+      "number": 37,
+      "question": "A gardener plants 156 rose plants and 234 marigold plants in rows. Each row has the same number of plants and only one kind. What is the greatest possible number of plants per row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "78"
+        },
+        {
+          "label": "C",
+          "text": "156"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The row size must divide both totals. HCF(156, 234) = 78."
+    },
+    {
+      "id": "02-038",
+      "number": 38,
+      "question": "Find the least positive integer that leaves remainders 8, 14 and 20 when divided by 15, 21 and 27 respectively, and is divisible by 11.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1883"
+        },
+        {
+          "label": "B",
+          "text": "3773"
+        },
+        {
+          "label": "C",
+          "text": "2828"
+        },
+        {
+          "label": "D",
+          "text": "938"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The common deficit is 7, so N = 945k − 7. Since 945 leaves remainder 10 modulo 11, the least suitable k is 4; N = 3780 − 7 = 3773."
+    },
+    {
+      "id": "02-039",
+      "number": 39,
+      "question": "Which pair is co-prime?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(57, 76)"
+        },
+        {
+          "label": "B",
+          "text": "(39, 65)"
+        },
+        {
+          "label": "C",
+          "text": "(35, 64)"
+        },
+        {
+          "label": "D",
+          "text": "(51, 85)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "35 = 5 × 7 and 64 = 2^6 have no common prime factor, so their HCF is 1. The other pairs share 13, 17 and 19 respectively."
+    },
+    {
+      "id": "02-040",
+      "number": 40,
+      "question": "Find the smallest non-negative integer x such that 4321 + x is divisible by 24, 32 and 40.",
+      "options": [
+        {
+          "label": "A",
+          "text": "319"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "479"
+        },
+        {
+          "label": "D",
+          "text": "159"
+        }
+      ],
+      "answer": "C",
+      "explanation": "LCM(24, 32, 40) = 480. Since 4321 = 480 × 9 + 1, add 480 − 1 = 479."
+    },
+    {
+      "id": "02-041",
+      "number": 41,
+      "question": "Find the HCF of 7/15 and 14/25.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7/5"
+        },
+        {
+          "label": "B",
+          "text": "1/75"
+        },
+        {
+          "label": "C",
+          "text": "14/5"
+        },
+        {
+          "label": "D",
+          "text": "7/75"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Both fractions are reduced. HCF = HCF(7, 14) ÷ LCM(15, 25) = 7/75."
+    },
+    {
+      "id": "02-042",
+      "number": 42,
+      "question": "Packets containing the same number of sweets leave 3 sweets unused whether each packet holds 14, 21 or 35 sweets. If there are more than 100 sweets, what is the least possible total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "108"
+        },
+        {
+          "label": "B",
+          "text": "210"
+        },
+        {
+          "label": "C",
+          "text": "213"
+        },
+        {
+          "label": "D",
+          "text": "423"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The total is 210k + 3 because LCM(14, 21, 35) = 210. The least value above 100 is 213."
+    },
+    {
+      "id": "02-043",
+      "number": 43,
+      "question": "What is the least positive length, in metres, that is an exact multiple of 1.2 m, 1.8 m and 2.7 m?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5.4"
+        },
+        {
+          "label": "B",
+          "text": "10.8"
+        },
+        {
+          "label": "C",
+          "text": "0.108"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Scale all lengths by 10: LCM(12, 18, 27) = 108. Divide by 10 to get 10.8 m."
+    },
+    {
+      "id": "02-044",
+      "number": 44,
+      "question": "Find the least integer greater than 30 that leaves remainder 5 when divided by 9, 12 and 18.",
+      "options": [
+        {
+          "label": "A",
+          "text": "77"
+        },
+        {
+          "label": "B",
+          "text": "31"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "C",
+      "explanation": "LCM(9, 12, 18) = 36. The first suitable number above 30 is 36 + 5 = 41."
+    },
+    {
+      "id": "02-045",
+      "number": 45,
+      "question": "Find LCM ÷ HCF for the fractions 6/14, 9/21 and 15/28.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "D",
+      "explanation": "First reduce them to 3/7, 3/7 and 15/28. Their HCF is 3/28 and LCM is 15/7, so the ratio is 20."
+    },
+    {
+      "id": "02-046",
+      "number": 46,
+      "question": "For positive integers a and b, HCF(a, b) = 24 and a × b = 69120. What is their LCM?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1658880"
+        },
+        {
+          "label": "B",
+          "text": "2880"
+        },
+        {
+          "label": "C",
+          "text": "5760"
+        },
+        {
+          "label": "D",
+          "text": "1440"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For two integers, HCF × LCM = their product. Thus LCM = 69120 ÷ 24 = 2880."
+    },
+    {
+      "id": "02-047",
+      "number": 47,
+      "question": "The greatest integer dividing 486, 666 and 966 with the same remainder is d. What is the remainder?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "d = HCF(180, 300) = 60. Since 486 = 60 × 8 + 6, the common remainder is 6."
+    },
+    {
+      "id": "02-048",
+      "number": 48,
+      "question": "How many unordered pairs of positive integers have HCF 14 and LCM 5880?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "After dividing by 14, the co-prime factors have product 420 = 2² × 3 × 5 × 7. Assign each of the 4 prime-power blocks to one factor: 2^4 ÷ 2 = 8 unordered pairs."
+    },
+    {
+      "id": "02-049",
+      "number": 49,
+      "question": "Find the greatest divisor that leaves remainders 17 and 23 on dividing 1037 and 1451 respectively.",
+      "options": [
+        {
+          "label": "A",
+          "text": "102"
+        },
+        {
+          "label": "B",
+          "text": "204"
+        },
+        {
+          "label": "C",
+          "text": "408"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract the remainders: 1020 and 1428. Their HCF is 204, which exceeds both remainders."
+    },
+    {
+      "id": "02-050",
+      "number": 50,
+      "question": "Two numbers have ratio 8:15 and product 17280. Find their HCF.",
+      "options": [
+        {
+          "label": "A",
+          "text": "144"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Write the numbers as 8h and 15h since 8 and 15 are co-prime. Then 120h² = 17280, giving h = √144 = 12."
+    }
+  ]
+}

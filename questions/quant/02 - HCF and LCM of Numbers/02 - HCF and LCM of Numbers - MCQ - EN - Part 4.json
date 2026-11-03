@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 2,
+    "title": "HCF and LCM of Numbers"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "02-076",
+      "number": 76,
+      "question": "Two numbers are in the ratio 11:13 and their HCF is 8. Find the larger number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "104"
+        },
+        {
+          "label": "B",
+          "text": "143"
+        },
+        {
+          "label": "C",
+          "text": "88"
+        },
+        {
+          "label": "D",
+          "text": "96"
+        }
+      ],
+      "answer": "A",
+      "explanation": "11 and 13 are co-prime, so the scale factor is 8. The larger number is 13 × 8 = 104."
+    },
+    {
+      "id": "02-077",
+      "number": 77,
+      "question": "Three alarms ring every 32, 48 and 80 minutes. They ring together at 10:20 p.m. At what time the next morning will they first ring together again?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8:20"
+        },
+        {
+          "label": "B",
+          "text": "2:20"
+        },
+        {
+          "label": "C",
+          "text": "6:20"
+        },
+        {
+          "label": "D",
+          "text": "4:20"
+        }
+      ],
+      "answer": "C",
+      "explanation": "LCM(32, 48, 80) = 480 minutes = 8 hours. Adding 8 hours to 10:20 p.m. gives 6:20 a.m. the next day."
+    },
+    {
+      "id": "02-078",
+      "number": 78,
+      "question": "A teacher divides 180 boys and 252 girls into the maximum number of teams, each with the same number of boys and the same number of girls. How many teams are formed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The team count must divide both 180 and 252. Its maximum is HCF(180, 252) = 36."
+    },
+    {
+      "id": "02-079",
+      "number": 79,
+      "question": "Find the greatest five-digit integer divisible by 42, 56 and 70.",
+      "options": [
+        {
+          "label": "A",
+          "text": "99720"
+        },
+        {
+          "label": "B",
+          "text": "99120"
+        },
+        {
+          "label": "C",
+          "text": "99990"
+        },
+        {
+          "label": "D",
+          "text": "99960"
+        }
+      ],
+      "answer": "D",
+      "explanation": "LCM(42, 56, 70) = 840. The greatest five-digit multiple is 840 × 119 = 99960."
+    },
+    {
+      "id": "02-080",
+      "number": 80,
+      "question": "The HCF of 10/21 and 25/42 is h, and their LCM is l. Find l + h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "55/42"
+        },
+        {
+          "label": "B",
+          "text": "50/21"
+        },
+        {
+          "label": "C",
+          "text": "5/2"
+        },
+        {
+          "label": "D",
+          "text": "5/42"
+        }
+      ],
+      "answer": "C",
+      "explanation": "h = 5/42 and l = 50/21. Thus l + h = 100/42 + 5/42 = 105/42 = 5/2."
+    },
+    {
+      "id": "02-081",
+      "number": 81,
+      "question": "Three drums contain 165, 231 and 297 litres of oil. All oil is filled into separate bottles of the same largest whole-litre capacity. If empty bottles cost ₹12 each, what is the total bottle cost in ₹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "231"
+        },
+        {
+          "label": "B",
+          "text": "264"
+        },
+        {
+          "label": "C",
+          "text": "396"
+        },
+        {
+          "label": "D",
+          "text": "252"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Capacity = HCF(165, 231, 297) = 33 litres. Bottles = 693 ÷ 33 = 21, so cost = 21 × 12 = ₹252."
+    },
+    {
+      "id": "02-082",
+      "number": 82,
+      "question": "Three runners take 48, 64 and 80 seconds per lap. They start together at the starting line. How many laps does the slowest runner complete when all first return together to that line?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Common return time = LCM(48, 64, 80) = 960 seconds. The slowest runner completes 960 ÷ 80 = 12 laps."
+    },
+    {
+      "id": "02-083",
+      "number": 83,
+      "question": "The greatest divisor leaving remainders 5 and 9 on dividing 845 and 1269 also leaves remainder 12 on dividing N. If 1500 < N < 2000, find N.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1680"
+        },
+        {
+          "label": "B",
+          "text": "1512"
+        },
+        {
+          "label": "C",
+          "text": "1692"
+        },
+        {
+          "label": "D",
+          "text": "1902"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The divisor is HCF(840, 1260) = 420. N = 420k + 12, and only k = 4 lies in the interval, giving N = 1692."
+    },
+    {
+      "id": "02-084",
+      "number": 84,
+      "question": "Two rectangular panels measure 240 cm by 336 cm and 288 cm by 384 cm. Both are cut into equal square pieces of one common largest size without waste. Find the side in cm.",
+      "options": [
+        {
+          "label": "A",
+          "text": "96"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "48"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The common side must divide all four dimensions. HCF(240, 336, 288, 384) = 48 cm."
+    },
+    {
+      "id": "02-085",
+      "number": 85,
+      "question": "Two rotating wheels make 18 and 30 revolutions per minute. Their marked points touch the ground together now. After how many seconds will both marked points next touch the ground together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The rotation times are 60/18 = 10/3 and 60/30 = 2 seconds. Their LCM is 10 seconds."
+    },
+    {
+      "id": "02-086",
+      "number": 86,
+      "question": "What is the least positive integer which, when increased by 8, is divisible by 14, 21 and 28?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "92"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(14, 21, 28) = 84. Therefore the required integer is 84 − 8 = 76."
+    },
+    {
+      "id": "02-087",
+      "number": 87,
+      "question": "A dealer has 827, 1097 and 1547 litres of three oils. Using a can of the largest possible whole-litre capacity leaves the same quantity of each oil unused. What is that capacity in litres?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "180"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Equal leftovers require the capacity to divide the differences. HCF(1097 − 827, 1547 − 1097) = HCF(270, 450) = 90 litres."
+    },
+    {
+      "id": "02-088",
+      "number": 88,
+      "question": "Three integers have prime factorizations 2³ × 3 × 5, 2² × 3² × 5 and 2 × 3 × 5². What is their LCM?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3600"
+        },
+        {
+          "label": "B",
+          "text": "1800"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "900"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the highest powers of each prime: 2³ × 3² × 5² = 1800."
+    },
+    {
+      "id": "02-089",
+      "number": 89,
+      "question": "Data sufficiency: What is the LCM of positive integers a and b? I. a = 28 and b = 45. II. a and b are co-prime and a × b = 1260.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I alone is sufficient; Statement II alone is not."
+        },
+        {
+          "label": "B",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "C",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "D",
+          "text": "Statement II alone is sufficient; Statement I alone is not."
+        }
+      ],
+      "answer": "C",
+      "explanation": "I gives LCM(28, 45) = 1260. II gives HCF 1, so LCM = product = 1260; each statement alone is sufficient."
+    },
+    {
+      "id": "02-090",
+      "number": 90,
+      "question": "A measuring cup must measure exactly 1.44 litres, 2.16 litres and 3.60 litres using a whole number of fills. What is its greatest possible capacity in litres?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.08"
+        },
+        {
+          "label": "B",
+          "text": "7.2"
+        },
+        {
+          "label": "C",
+          "text": "0.72"
+        },
+        {
+          "label": "D",
+          "text": "0.36"
+        }
+      ],
+      "answer": "C",
+      "explanation": "HCF(144, 216, 360) = 72. Dividing by 100 gives the capacity 0.72 litres."
+    },
+    {
+      "id": "02-091",
+      "number": 91,
+      "question": "How many integers from 1000 to 2000 inclusive leave remainder 5 when divided by 12, 15 and 20, and are divisible by 7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Write N = 60k + 5. Divisibility by 7 gives k = 4 modulo 7; in the interval k ranges from 17 to 33, so k = 18, 25, 32 gives 3 integers."
+    },
+    {
+      "id": "02-092",
+      "number": 92,
+      "question": "Find the least non-negative integer to add to 1999 so that the result is divisible by 25, 40 and 50.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "201"
+        },
+        {
+          "label": "C",
+          "text": "199"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LCM(25, 40, 50) = 200. The next multiple is 2000, so add 1."
+    },
+    {
+      "id": "02-093",
+      "number": 93,
+      "question": "The HCF and LCM of three integers 72, 120 and x are 12 and 2520 respectively. Which value can x take?",
+      "options": [
+        {
+          "label": "A",
+          "text": "280"
+        },
+        {
+          "label": "B",
+          "text": "126"
+        },
+        {
+          "label": "C",
+          "text": "168"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x must supply factor 7, have exactly 2² as its power of 2, and contain a factor 3. Among the values, only 84 = 2² × 3 × 7 gives HCF 12 and LCM 2520."
+    },
+    {
+      "id": "02-094",
+      "number": 94,
+      "question": "A number 6543 is adjusted either upward or downward to become divisible by 16, 28 and 35. What is the smaller of the two required non-negative adjustments?",
+      "options": [
+        {
+          "label": "A",
+          "text": "560"
+        },
+        {
+          "label": "B",
+          "text": "177"
+        },
+        {
+          "label": "C",
+          "text": "383"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM(16, 28, 35) = 560. The remainder is 383, so subtract 383 or add 560 − 383 = 177; the smaller adjustment is 177."
+    },
+    {
+      "id": "02-095",
+      "number": 95,
+      "question": "What is the LCM of 0.16 and 0.24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.384"
+        },
+        {
+          "label": "B",
+          "text": "0.48"
+        },
+        {
+          "label": "C",
+          "text": "4.8"
+        },
+        {
+          "label": "D",
+          "text": "0.08"
+        }
+      ],
+      "answer": "B",
+      "explanation": "LCM(16, 24) = 48. Restore two decimal places to get 0.48."
+    },
+    {
+      "id": "02-096",
+      "number": 96,
+      "question": "Two positive integers are in the ratio 7:12. Their LCM exceeds their sum by 715. Find the smaller integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "132"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "77"
+        },
+        {
+          "label": "D",
+          "text": "209"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Write the integers as 7h and 12h, so their LCM is 84h. Then 84h − 19h = 715 gives h = 11, and the smaller integer is 77."
+    },
+    {
+      "id": "02-097",
+      "number": 97,
+      "question": "A sequence contains all positive integers that leave remainders 4, 7 and 13 when divided by 9, 12 and 18 respectively, arranged in increasing order. Find its fourth term.",
+      "options": [
+        {
+          "label": "A",
+          "text": "144"
+        },
+        {
+          "label": "B",
+          "text": "139"
+        },
+        {
+          "label": "C",
+          "text": "175"
+        },
+        {
+          "label": "D",
+          "text": "103"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each divisor exceeds its remainder by 5, so the terms are 36k − 5. The fourth is 36 × 4 − 5 = 139."
+    },
+    {
+      "id": "02-098",
+      "number": 98,
+      "question": "The greatest number that divides 1603 and 2111 leaving remainders 7 and 11 respectively is d. Find the quotient when 1603 is divided by d.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "B",
+      "explanation": "d = HCF(1596, 2100) = 84. Since 1603 = 84 × 19 + 7, the quotient is 19."
+    },
+    {
+      "id": "02-099",
+      "number": 99,
+      "question": "A rectangular floor 7.20 m by 5.40 m is covered without cutting with the largest equal square tiles. Find the sum of the perimeters of all tiles in metres.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25.2"
+        },
+        {
+          "label": "B",
+          "text": "38.88"
+        },
+        {
+          "label": "C",
+          "text": "43.2"
+        },
+        {
+          "label": "D",
+          "text": "86.4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Tile side = HCF(720, 540) = 180 cm = 1.8 m. There are 4 × 3 = 12 tiles, so the perimeter sum is 12 × 4 × 1.8 = 86.4 m."
+    },
+    {
+      "id": "02-100",
+      "number": 100,
+      "question": "For positive integers a and b, HCF(a, b) = 15 and LCM(a, b) = 420. Find HCF(3a, 3b) + LCM(3a, 3b).",
+      "options": [
+        {
+          "label": "A",
+          "text": "435"
+        },
+        {
+          "label": "B",
+          "text": "1305"
+        },
+        {
+          "label": "C",
+          "text": "1275"
+        },
+        {
+          "label": "D",
+          "text": "3915"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiplying both integers by 3 multiplies both their HCF and LCM by 3. The sum is 3 × (15 + 420) = 1305."
+    }
+  ]
+}
