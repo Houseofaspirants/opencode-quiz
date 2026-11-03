@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 597,
+  "nodes": 599,
   "edges": 4766,
   "silos": 35,
-  "clusters": 147,
+  "clusters": 153,
   "pillars": 34
  },
  "nodes": [
@@ -6377,18 +6377,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2.html",
-   "url": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-01-making-of-the-indian-constitution-part1.html",
    "url": "/quiz-gk-01-making-of-the-indian-constitution-part1.html",
    "type": "quiz",
@@ -6427,18 +6415,6 @@
   {
    "id": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
    "url": "/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
-   "url": "/quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6677,18 +6653,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
    "url": "/quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
    "type": "quiz",
@@ -6787,6 +6751,66 @@
   {
    "id": "quiz-quant-01-number-system-part-3.html",
    "url": "/quiz-quant-01-number-system-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-01-number-system-part-4.html",
+   "url": "/quiz-quant-01-number-system-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
+   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
+   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
+   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
+   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -16163,30 +16187,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-03-guru-hargobind-ji-guru-har-rai-ji-and-guru-har-krishan-ji-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -16283,25 +16283,49 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
+   "to": "quiz-quant-01-number-system-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
+   "to": "quiz-quant-01-number-system-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",
+   "to": "quiz-quant-01-number-system-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-guru-nanak-dev-ji-and-guru-angad-dev-ji-part-1.html",
+   "to": "quiz-quant-01-number-system-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20609,7 +20633,7 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28229,19 +28253,19 @@
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -28907,19 +28931,19 @@
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -35849,19 +35873,19 @@
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -36473,19 +36497,19 @@
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
+   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37245,10 +37269,16 @@
    "pillar": "reasoning-quant-preparation.html",
    "hub": "subject-quant.html",
    "clusters": [
+    "category-quant-01-number-system.html",
+    "category-quant-02-hcf-and-lcm-of-numbers.html",
     "topic-quant-01-number-system-part-1.html",
     "topic-quant-01-number-system-part-2.html",
     "topic-quant-01-number-system-part-3.html",
-    "topic-quant-01-number-system-part-4.html"
+    "topic-quant-01-number-system-part-4.html",
+    "topic-quant-02-hcf-and-lcm-of-numbers-part-1.html",
+    "topic-quant-02-hcf-and-lcm-of-numbers-part-2.html",
+    "topic-quant-02-hcf-and-lcm-of-numbers-part-3.html",
+    "topic-quant-02-hcf-and-lcm-of-numbers-part-4.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
