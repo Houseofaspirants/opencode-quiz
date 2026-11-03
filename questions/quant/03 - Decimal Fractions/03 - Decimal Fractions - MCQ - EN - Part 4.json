@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Decimal Fractions"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-076",
+      "number": 76,
+      "question": "Write 4 + 7/100 + 9/10000 as a decimal.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4.079"
+        },
+        {
+          "label": "B",
+          "text": "4.0709"
+        },
+        {
+          "label": "C",
+          "text": "4.0079"
+        },
+        {
+          "label": "D",
+          "text": "4.709"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Align the place values: 4 + 0.07 + 0.0009 = 4.0709."
+    },
+    {
+      "id": "03-077",
+      "number": 77,
+      "question": "What is the difference between 0.(7), where 7 repeats, and 0.7?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/90"
+        },
+        {
+          "label": "B",
+          "text": "7/9"
+        },
+        {
+          "label": "C",
+          "text": "7/100"
+        },
+        {
+          "label": "D",
+          "text": "7/90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The difference is 7/9 − 7/10 = 7/90."
+    },
+    {
+      "id": "03-078",
+      "number": 78,
+      "question": "If a = 0.85 and b = 0.15, evaluate (a² + b²)² − (a² − b²)².",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2601"
+        },
+        {
+          "label": "B",
+          "text": "0.0325125"
+        },
+        {
+          "label": "C",
+          "text": "0.065025"
+        },
+        {
+          "label": "D",
+          "text": "0.65025"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use (u + v)² − (u − v)² = 4uv with u = a² and v = b²: 4 × (0.85 × 0.15)² = 0.065025."
+    },
+    {
+      "id": "03-079",
+      "number": 79,
+      "question": "Which statement is true?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.375 < 5/13 < 0.39"
+        },
+        {
+          "label": "B",
+          "text": "0.39 < 5/13 < 0.375"
+        },
+        {
+          "label": "C",
+          "text": "0.375 < 0.39 < 5/13"
+        },
+        {
+          "label": "D",
+          "text": "5/13 < 0.375 < 0.39"
+        }
+      ],
+      "answer": "A",
+      "explanation": "5/13 is about 0.384615, so it lies between 0.375 and 0.39."
+    },
+    {
+      "id": "03-080",
+      "number": 80,
+      "question": "By what number must 7.35 be divided to obtain 0.0735?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.01"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "1000"
+        },
+        {
+          "label": "D",
+          "text": "100"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The decimal point moves 2 places left, so the divisor is 100."
+    },
+    {
+      "id": "03-081",
+      "number": 81,
+      "question": "A parcel weighs 3.65 kg including packaging of 0.275 kg. What is the total mass of the contents of 8 identical parcels, in kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "29.2"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "26.8"
+        },
+        {
+          "label": "D",
+          "text": "31.4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Contents per parcel = 3.65 − 0.275 = 3.375 kg; total = 3.375 × 8 = 27 kg."
+    },
+    {
+      "id": "03-082",
+      "number": 82,
+      "question": "Data sufficiency: How many litres of petrol did Aman buy? I. His bill was ₹971.25 after a reduction of ₹4.50 per litre from the displayed rate of ₹97 per litre. II. After he used 0.4 of the petrol bought, 6.3 litres remained.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "B",
+          "text": "Statement II alone is sufficient; I alone is not."
+        },
+        {
+          "label": "C",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "D",
+          "text": "Statement I alone is sufficient; II alone is not."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I gives 971.25/(97 − 4.50) = 10.5 litres. II gives 6.3/(1 − 0.4) = 10.5 litres, so each statement alone is sufficient."
+    },
+    {
+      "id": "03-083",
+      "number": 83,
+      "question": "Evaluate 0.32 ÷ 0.008 × 0.15.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "800/3"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "0.6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Perform division and multiplication from left to right: 0.32 ÷ 0.008 = 40, then 40 × 0.15 = 6."
+    },
+    {
+      "id": "03-084",
+      "number": 84,
+      "question": "A number becomes 0.6 times its original value. What is its percentage decrease?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Decrease = (1 − 0.6) × 100 = 40%."
+    },
+    {
+      "id": "03-085",
+      "number": 85,
+      "question": "If 0.001875 = p/q in lowest terms, find q − p.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1597"
+        },
+        {
+          "label": "B",
+          "text": "797"
+        },
+        {
+          "label": "C",
+          "text": "1599"
+        },
+        {
+          "label": "D",
+          "text": "1603"
+        }
+      ],
+      "answer": "A",
+      "explanation": "0.001875 = 1875/1000000 = 3/1600, so q − p = 1600 − 3 = 1597."
+    },
+    {
+      "id": "03-086",
+      "number": 86,
+      "question": "If x = 0.12(3), where only 3 repeats, find the smallest positive integer k such that kx is an integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "300"
+        },
+        {
+          "label": "C",
+          "text": "900"
+        },
+        {
+          "label": "D",
+          "text": "1000"
+        }
+      ],
+      "answer": "B",
+      "explanation": "x = (123 − 12)/900 = 37/300. Since 37 and 300 are coprime, the smallest k is 300."
+    },
+    {
+      "id": "03-087",
+      "number": 87,
+      "question": "Find x: (7.84 − x) ÷ 0.16 = 28.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4.56"
+        },
+        {
+          "label": "B",
+          "text": "12.4"
+        },
+        {
+          "label": "C",
+          "text": "3.38"
+        },
+        {
+          "label": "D",
+          "text": "3.28"
+        }
+      ],
+      "answer": "D",
+      "explanation": "7.84 − x = 28.5 × 0.16 = 4.56, so x = 7.84 − 4.56 = 3.28."
+    },
+    {
+      "id": "03-088",
+      "number": 88,
+      "question": "Which number is greater than 0.4 and less than 0.41?",
+      "options": [
+        {
+          "label": "A",
+          "text": "81/200"
+        },
+        {
+          "label": "B",
+          "text": "41/100"
+        },
+        {
+          "label": "C",
+          "text": "9/20"
+        },
+        {
+          "label": "D",
+          "text": "2/5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "81/200 = 0.405, and 0.4 < 0.405 < 0.41."
+    },
+    {
+      "id": "03-089",
+      "number": 89,
+      "question": "Evaluate 4.8 × 1.25 − 2.4 × 0.75.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.42"
+        },
+        {
+          "label": "B",
+          "text": "7.8"
+        },
+        {
+          "label": "C",
+          "text": "4.2"
+        },
+        {
+          "label": "D",
+          "text": "3.6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "4.8 × 1.25 = 6 and 2.4 × 0.75 = 1.8, so the difference is 4.2."
+    },
+    {
+      "id": "03-090",
+      "number": 90,
+      "question": "Rounded to the nearest tenth, what is (39.8 × 0.602) ÷ 1.21?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20.0"
+        },
+        {
+          "label": "B",
+          "text": "1.98"
+        },
+        {
+          "label": "C",
+          "text": "198.0"
+        },
+        {
+          "label": "D",
+          "text": "19.8"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The quotient is about 19.8013, so rounding to the nearest tenth gives 19.8."
+    },
+    {
+      "id": "03-091",
+      "number": 91,
+      "question": "Two couriers charge ₹42.75 and ₹51.15 for the first kg. Their charges rise by ₹3.60 and ₹2.40 respectively for every additional kg. At what total mass, in kg, are their charges equal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The initial gap is 51.15 − 42.75 = 8.4 and closes by 3.60 − 2.40 = 1.2 per extra kg. Extra mass = 8.4/1.2 = 7 kg, so total mass = 1 + 7 = 8 kg."
+    },
+    {
+      "id": "03-092",
+      "number": 92,
+      "question": "How many digits are in the shortest repeating block of the decimal expansion of 1/11?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "1/11 = 0.(09), so the shortest repeating block is 09 and contains 2 digits."
+    },
+    {
+      "id": "03-093",
+      "number": 93,
+      "question": "A fraction has value 0.48. Its numerator is increased by 25% and its denominator by 20%. What is the new value?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.576"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        },
+        {
+          "label": "C",
+          "text": "0.46"
+        },
+        {
+          "label": "D",
+          "text": "0.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "New value = 0.48 × 1.25/1.20 = 0.48 × 25/24 = 0.5."
+    },
+    {
+      "id": "03-094",
+      "number": 94,
+      "question": "If a/b = 0.6 and b is nonzero, find (5a − 2b) ÷ (3a + b).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7/5"
+        },
+        {
+          "label": "B",
+          "text": "5/4"
+        },
+        {
+          "label": "C",
+          "text": "5/14"
+        },
+        {
+          "label": "D",
+          "text": "1/4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divide numerator and denominator by b: (5 × 0.6 − 2)/(3 × 0.6 + 1) = 1/2.8 = 5/14."
+    },
+    {
+      "id": "03-095",
+      "number": 95,
+      "question": "Which fraction has the greatest shortfall from 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17/18"
+        },
+        {
+          "label": "B",
+          "text": "39/40"
+        },
+        {
+          "label": "C",
+          "text": "23/24"
+        },
+        {
+          "label": "D",
+          "text": "31/32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The shortfalls from 1 are 1/18, 1/24, 1/32 and 1/40 for denominators 18, 24, 32 and 40. The greatest is 1/18, so the fraction is 17/18."
+    },
+    {
+      "id": "03-096",
+      "number": 96,
+      "question": "What is 5 − 0.0007?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4.993"
+        },
+        {
+          "label": "B",
+          "text": "4.9997"
+        },
+        {
+          "label": "C",
+          "text": "4.99993"
+        },
+        {
+          "label": "D",
+          "text": "4.9993"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Write 5 as 5.0000, then subtract: 5.0000 − 0.0007 = 4.9993."
+    },
+    {
+      "id": "03-097",
+      "number": 97,
+      "question": "A student multiplies a positive number by 0.04 instead of dividing it by 0.04. The incorrect result is what fraction of the correct result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/250"
+        },
+        {
+          "label": "B",
+          "text": "1/625"
+        },
+        {
+          "label": "C",
+          "text": "1/2500"
+        },
+        {
+          "label": "D",
+          "text": "1/25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Incorrect/correct = (0.04x)/(x/0.04) = 0.04² = 0.0016 = 1/625."
+    },
+    {
+      "id": "03-098",
+      "number": 98,
+      "question": "Data sufficiency: What is the value of a positive decimal x? I. x has exactly two digits after the decimal point, both nonzero and 0.4 < x < 0.5. II. In lowest terms, x = p/20 for a positive integer p coprime to 20, and 0.4 < x < 0.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient; I alone is not."
+        },
+        {
+          "label": "B",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient; II alone is not."
+        },
+        {
+          "label": "D",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Statement I permits values such as 0.41 and 0.42. Statement II gives 8 < p < 10, so p = 9 and x = 9/20 = 0.45; II alone is sufficient."
+    },
+    {
+      "id": "03-099",
+      "number": 99,
+      "question": "Evaluate (2.4² + 0.7² − 2 × 2.4 × 0.7) ÷ 0.17.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.7"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "170"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The numerator is (2.4 − 0.7)² = 1.7² = 2.89; then 2.89 ÷ 0.17 = 17."
+    },
+    {
+      "id": "03-100",
+      "number": 100,
+      "question": "Evaluate 1/(0.2 × 0.3) + 1/(0.3 × 0.4) + 1/(0.4 × 0.5).",
+      "options": [
+        {
+          "label": "A",
+          "text": "300"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use 1/[a(a + 0.1)] = 10[1/a − 1/(a + 0.1)]. The sum telescopes to 10(1/0.2 − 1/0.5) = 10(5 − 2) = 30."
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Decimal Fractions"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-001",
+      "number": 1,
+      "question": "What is the place value of 8 in 14.3086?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.0008"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "0.008"
+        },
+        {
+          "label": "D",
+          "text": "0.08"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The digit 8 is in the thousandths place, so its value is 8/1000 = 0.008."
+    },
+    {
+      "id": "03-002",
+      "number": 2,
+      "question": "Find x: 18.75 − 4.625 + x = 20.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6.375"
+        },
+        {
+          "label": "B",
+          "text": "10.375"
+        },
+        {
+          "label": "C",
+          "text": "1.75"
+        },
+        {
+          "label": "D",
+          "text": "5.375"
+        }
+      ],
+      "answer": "A",
+      "explanation": "x = 20.5 − 18.75 + 4.625 = 6.375."
+    },
+    {
+      "id": "03-003",
+      "number": 3,
+      "question": "If x = 0.2(45), where 45 repeats, find 330x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "80"
+        },
+        {
+          "label": "B",
+          "text": "75"
+        },
+        {
+          "label": "C",
+          "text": "245"
+        },
+        {
+          "label": "D",
+          "text": "81"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x = (245 − 2)/990 = 27/110, so 330x = 81."
+    },
+    {
+      "id": "03-004",
+      "number": 4,
+      "question": "Which is the second largest of 0.72, 5/7, 0.725 and 29/41?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.725"
+        },
+        {
+          "label": "B",
+          "text": "0.72"
+        },
+        {
+          "label": "C",
+          "text": "29/41"
+        },
+        {
+          "label": "D",
+          "text": "5/7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "29/41 < 5/7 < 0.72 < 0.725, so the second largest is 0.72."
+    },
+    {
+      "id": "03-005",
+      "number": 5,
+      "question": "What is 0.0476 × 1000?",
+      "options": [
+        {
+          "label": "A",
+          "text": "47.6"
+        },
+        {
+          "label": "B",
+          "text": "0.476"
+        },
+        {
+          "label": "C",
+          "text": "4.76"
+        },
+        {
+          "label": "D",
+          "text": "476"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Multiplying by 1000 shifts the decimal point 3 places right: 0.0476 × 1000 = 47.6."
+    },
+    {
+      "id": "03-006",
+      "number": 6,
+      "question": "Evaluate 7.2 ÷ 0.09 − 2.5 × 12.",
+      "options": [
+        {
+          "label": "A",
+          "text": "770"
+        },
+        {
+          "label": "B",
+          "text": "77.5"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "C",
+      "explanation": "7.2 ÷ 0.09 = 80 and 2.5 × 12 = 30, so the result is 50."
+    },
+    {
+      "id": "03-007",
+      "number": 7,
+      "question": "Evaluate (3.84² − 1.16²) ÷ 0.268.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use the difference of squares: (3.84 + 1.16)(3.84 − 1.16) ÷ 0.268 = 5 × 2.68 ÷ 0.268 = 50."
+    },
+    {
+      "id": "03-008",
+      "number": 8,
+      "question": "A shop in Ludhiana has 18.9 kg of rice. It packs all of it into packets of 0.45 kg each. How many packets are made?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "4.2"
+        },
+        {
+          "label": "C",
+          "text": "45"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Number of packets = 18.9 ÷ 0.45 = 1890 ÷ 45 = 42."
+    },
+    {
+      "id": "03-009",
+      "number": 9,
+      "question": "Express 0.0625 as a percentage.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.625"
+        },
+        {
+          "label": "B",
+          "text": "62.5"
+        },
+        {
+          "label": "C",
+          "text": "0.0625"
+        },
+        {
+          "label": "D",
+          "text": "6.25"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Percentage = 0.0625 × 100 = 6.25%."
+    },
+    {
+      "id": "03-010",
+      "number": 10,
+      "question": "When 0.0875 is reduced to its lowest fractional form, what is the sum of its numerator and denominator?",
+      "options": [
+        {
+          "label": "A",
+          "text": "47"
+        },
+        {
+          "label": "B",
+          "text": "87"
+        },
+        {
+          "label": "C",
+          "text": "79"
+        },
+        {
+          "label": "D",
+          "text": "807"
+        }
+      ],
+      "answer": "B",
+      "explanation": "0.0875 = 875/10000 = 7/80, so the required sum is 7 + 80 = 87."
+    },
+    {
+      "id": "03-011",
+      "number": 11,
+      "question": "Which fraction is closest to 0.65?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11/17"
+        },
+        {
+          "label": "B",
+          "text": "13/21"
+        },
+        {
+          "label": "C",
+          "text": "15/23"
+        },
+        {
+          "label": "D",
+          "text": "17/25"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The gap between 15/23 and 0.65 is 1/460; the gaps for 13/21, 17/25 and 11/17 are 13/420, 3/100 and 1/340. The smallest gap is 1/460."
+    },
+    {
+      "id": "03-012",
+      "number": 12,
+      "question": "Evaluate 0.48 × 2.5 + 0.84 ÷ 0.7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2.4"
+        },
+        {
+          "label": "B",
+          "text": "1.32"
+        },
+        {
+          "label": "C",
+          "text": "0.24"
+        },
+        {
+          "label": "D",
+          "text": "3.3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "0.48 × 2.5 = 1.2 and 0.84 ÷ 0.7 = 1.2, so their sum is 2.4."
+    },
+    {
+      "id": "03-013",
+      "number": 13,
+      "question": "Write 0.(63), where 63 repeats, as a fraction in lowest terms.",
+      "options": [
+        {
+          "label": "A",
+          "text": "21/11"
+        },
+        {
+          "label": "B",
+          "text": "7/11"
+        },
+        {
+          "label": "C",
+          "text": "7/9"
+        },
+        {
+          "label": "D",
+          "text": "63/100"
+        }
+      ],
+      "answer": "B",
+      "explanation": "0.(63) = 63/99 = 7/11."
+    },
+    {
+      "id": "03-014",
+      "number": 14,
+      "question": "Which power of 10 must multiply 0.000384 to give 38.4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10^3"
+        },
+        {
+          "label": "B",
+          "text": "10^4"
+        },
+        {
+          "label": "C",
+          "text": "10^6"
+        },
+        {
+          "label": "D",
+          "text": "10^5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The decimal point moves 5 places right, so the multiplier is 10^5."
+    },
+    {
+      "id": "03-015",
+      "number": 15,
+      "question": "For a = 0.72 and b = 0.28, evaluate (a³ + b³) ÷ (a² − ab + b²) + ab.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.2016"
+        },
+        {
+          "label": "B",
+          "text": "0.7984"
+        },
+        {
+          "label": "C",
+          "text": "1.4032"
+        },
+        {
+          "label": "D",
+          "text": "0.6416"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The quotient is a + b = 1, so the result is 1 + 0.72 × 0.28 = 1.2016."
+    },
+    {
+      "id": "03-016",
+      "number": 16,
+      "question": "Which number lies strictly between 0.58 and 7/12?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.58"
+        },
+        {
+          "label": "B",
+          "text": "0.59"
+        },
+        {
+          "label": "C",
+          "text": "0.582"
+        },
+        {
+          "label": "D",
+          "text": "0.584"
+        }
+      ],
+      "answer": "C",
+      "explanation": "7/12 = 0.58333 recurring, so 0.58 < 0.582 < 7/12."
+    },
+    {
+      "id": "03-017",
+      "number": 17,
+      "question": "Which fraction is equal to 0.0032?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/3125"
+        },
+        {
+          "label": "B",
+          "text": "2/125"
+        },
+        {
+          "label": "C",
+          "text": "2/625"
+        },
+        {
+          "label": "D",
+          "text": "4/125"
+        }
+      ],
+      "answer": "C",
+      "explanation": "0.0032 = 32/10000 = 2/625."
+    },
+    {
+      "id": "03-018",
+      "number": 18,
+      "question": "Find x: 0.036 ÷ x = 1.2 ÷ 0.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.015"
+        },
+        {
+          "label": "B",
+          "text": "0.15"
+        },
+        {
+          "label": "C",
+          "text": "0.0864"
+        },
+        {
+          "label": "D",
+          "text": "0.0015"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The right side is 2.4, so x = 0.036 ÷ 2.4 = 0.015."
+    },
+    {
+      "id": "03-019",
+      "number": 19,
+      "question": "Harpreet buys 2.4 kg of almonds at ₹375.50 per kg and 1.6 kg of raisins at ₹124.50 per kg. How much change does he receive from ₹1200?",
+      "options": [
+        {
+          "label": "A",
+          "text": "101.6"
+        },
+        {
+          "label": "B",
+          "text": "199.6"
+        },
+        {
+          "label": "C",
+          "text": "100.4"
+        },
+        {
+          "label": "D",
+          "text": "99.6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Cost = 2.4 × 375.50 + 1.6 × 124.50 = 1100.4, so change = 1200 − 1100.4 = ₹99.6."
+    },
+    {
+      "id": "03-020",
+      "number": 20,
+      "question": "If x = 0.1(6) and y = 0.(18), where the bracketed digits repeat, find x ÷ y.",
+      "options": [
+        {
+          "label": "A",
+          "text": "11/6"
+        },
+        {
+          "label": "B",
+          "text": "11/12"
+        },
+        {
+          "label": "C",
+          "text": "12/11"
+        },
+        {
+          "label": "D",
+          "text": "1/12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "x = 1/6 and y = 18/99 = 2/11, so x ÷ y = 1/6 × 11/2 = 11/12."
+    },
+    {
+      "id": "03-021",
+      "number": 21,
+      "question": "Which is the greatest of the following numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.807"
+        },
+        {
+          "label": "B",
+          "text": "4/5"
+        },
+        {
+          "label": "C",
+          "text": "0.8007"
+        },
+        {
+          "label": "D",
+          "text": "0.0787"
+        }
+      ],
+      "answer": "A",
+      "explanation": "4/5 = 0.8; comparing decimal places gives 0.807 as the greatest."
+    },
+    {
+      "id": "03-022",
+      "number": 22,
+      "question": "Evaluate 6.4 − [2.8 − {0.72 ÷ (1.1 − 0.5)}].",
+      "options": [
+        {
+          "label": "A",
+          "text": "3.6"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "4.8"
+        },
+        {
+          "label": "D",
+          "text": "2.4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Work inward: 1.1 − 0.5 = 0.6 and 0.72 ÷ 0.6 = 1.2; hence 6.4 − (2.8 − 1.2) = 4.8."
+    },
+    {
+      "id": "03-023",
+      "number": 23,
+      "question": "To the nearest whole number, estimate 119.8 × 0.503 ÷ 0.199.",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "303"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "3000"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use 120 × 0.5 ÷ 0.2 = 300 as a starting estimate; the actual quotient is about 302.811, which rounds to 303."
+    },
+    {
+      "id": "03-024",
+      "number": 24,
+      "question": "A positive number is multiplied by 0.8 and then by 1.25. What is the overall multiplier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.05"
+        },
+        {
+          "label": "B",
+          "text": "2.05"
+        },
+        {
+          "label": "C",
+          "text": "0.1"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Overall multiplier = 0.8 × 1.25 = 4/5 × 5/4 = 1."
+    },
+    {
+      "id": "03-025",
+      "number": 25,
+      "question": "If a + b = 1.5 and ab = 0.44, find a³ + b³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.395"
+        },
+        {
+          "label": "B",
+          "text": "2.715"
+        },
+        {
+          "label": "C",
+          "text": "5.355"
+        },
+        {
+          "label": "D",
+          "text": "3.375"
+        }
+      ],
+      "answer": "A",
+      "explanation": "a³ + b³ = (a + b)³ − 3ab(a + b) = 1.5³ − 3 × 0.44 × 1.5 = 1.395."
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Decimal Fractions"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-051",
+      "number": 51,
+      "question": "Which decimal is less than 9/16?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.56"
+        },
+        {
+          "label": "B",
+          "text": "0.5625"
+        },
+        {
+          "label": "C",
+          "text": "0.565"
+        },
+        {
+          "label": "D",
+          "text": "0.57"
+        }
+      ],
+      "answer": "A",
+      "explanation": "9/16 = 0.5625; only 0.56 is smaller than this value."
+    },
+    {
+      "id": "03-052",
+      "number": 52,
+      "question": "Evaluate 9.36 ÷ 0.12 + 1.8 ÷ 0.03.",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "780"
+        },
+        {
+          "label": "C",
+          "text": "138"
+        },
+        {
+          "label": "D",
+          "text": "13.8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Clear the decimals in each quotient: 936/12 + 180/3 = 78 + 60 = 138."
+    },
+    {
+      "id": "03-053",
+      "number": 53,
+      "question": "Let x = 0.3(18) and y = 0.(27), where the bracketed digits repeat. Find 22(x − y).",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "0.1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "x = (318 − 3)/990 = 7/22 and y = 27/99 = 3/11, so 22(x − y) = 22 × 1/22 = 1."
+    },
+    {
+      "id": "03-054",
+      "number": 54,
+      "question": "Gurleen walks 1.35 km in the morning and 0.85 km in the evening each day. How many km does she walk in 15 days?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "20.25"
+        },
+        {
+          "label": "C",
+          "text": "3.3"
+        },
+        {
+          "label": "D",
+          "text": "33"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Daily distance = 1.35 + 0.85 = 2.2 km; total = 2.2 × 15 = 33 km."
+    },
+    {
+      "id": "03-055",
+      "number": 55,
+      "question": "In 52.076, which digit has a place value of 0.07?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The hundredths digit is 7, and its place value is 7/100 = 0.07."
+    },
+    {
+      "id": "03-056",
+      "number": 56,
+      "question": "What is the difference between the largest and smallest of 0.68, 2/3, 0.675 and 27/40?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/75"
+        },
+        {
+          "label": "B",
+          "text": "1/150"
+        },
+        {
+          "label": "C",
+          "text": "1/200"
+        },
+        {
+          "label": "D",
+          "text": "1/120"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The largest is 0.68 = 17/25 and the smallest is 2/3; the difference is 17/25 − 2/3 = 1/75."
+    },
+    {
+      "id": "03-057",
+      "number": 57,
+      "question": "If 0.2x + 0.3y = 1.8 and 0.3x + 0.2y = 1.7, find x² − y².",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "−1"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "−7"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Adding gives 0.5(x + y) = 3.5, so x + y = 7; subtracting gives 0.1(y − x) = 0.1, so x − y = −1. Thus x² − y² = (x + y)(x − y) = −7."
+    },
+    {
+      "id": "03-058",
+      "number": 58,
+      "question": "If 48.6 ÷ 0.18 = 270, find 0.486 ÷ 1.8.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "0.27"
+        },
+        {
+          "label": "C",
+          "text": "0.027"
+        },
+        {
+          "label": "D",
+          "text": "2.7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The dividend becomes 1/100 as large and the divisor becomes 10 times as large; hence the quotient is 270 ÷ 1000 = 0.27."
+    },
+    {
+      "id": "03-059",
+      "number": 59,
+      "question": "Which recurring decimal equals 8/11? In each option, the digits in brackets repeat.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.(81)"
+        },
+        {
+          "label": "B",
+          "text": "0.(72)"
+        },
+        {
+          "label": "C",
+          "text": "0.(8)"
+        },
+        {
+          "label": "D",
+          "text": "0.(18)"
+        }
+      ],
+      "answer": "B",
+      "explanation": "8/11 = 72/99, so its repeating block is 72 and the decimal is 0.(72)."
+    },
+    {
+      "id": "03-060",
+      "number": 60,
+      "question": "Find x: 3.6x + 0.84 = 5.4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4/3"
+        },
+        {
+          "label": "B",
+          "text": "17/10"
+        },
+        {
+          "label": "C",
+          "text": "19/150"
+        },
+        {
+          "label": "D",
+          "text": "19/15"
+        }
+      ],
+      "answer": "D",
+      "explanation": "3.6x = 5.4 − 0.84 = 4.56, so x = 4.56/3.6 = 19/15."
+    },
+    {
+      "id": "03-061",
+      "number": 61,
+      "question": "Data sufficiency: What is the marked price per kg of a batch of wheat? I. The batch costs ₹1134 after a discount of 0.1 of its marked price. II. Its mass is the amount left after 0.1 of a 35 kg stock is removed.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both statements together are sufficient, but neither alone is sufficient."
+        },
+        {
+          "label": "B",
+          "text": "Statement II alone is sufficient; I alone is not."
+        },
+        {
+          "label": "C",
+          "text": "Each statement alone is sufficient."
+        },
+        {
+          "label": "D",
+          "text": "Statement I alone is sufficient; II alone is not."
+        }
+      ],
+      "answer": "A",
+      "explanation": "I gives marked total = 1134/0.9 = ₹1260, while II gives mass = 35 × 0.9 = 31.5 kg. Together the marked price per kg is 1260/31.5 = ₹40; neither statement alone gives it."
+    },
+    {
+      "id": "03-062",
+      "number": 62,
+      "question": "A quantity is first increased by 20% and then multiplied by 0.75. What percentage of the original quantity remains?",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "95"
+        },
+        {
+          "label": "C",
+          "text": "90"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Combined multiplier = 1.2 × 0.75 = 0.9, which is 90% of the original."
+    },
+    {
+      "id": "03-063",
+      "number": 63,
+      "question": "Evaluate 0.0072 ÷ 0.9.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.08"
+        },
+        {
+          "label": "B",
+          "text": "0.0008"
+        },
+        {
+          "label": "C",
+          "text": "0.8"
+        },
+        {
+          "label": "D",
+          "text": "0.008"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Multiply both numbers by 10: 0.072 ÷ 9 = 0.008."
+    },
+    {
+      "id": "03-064",
+      "number": 64,
+      "question": "Find the sum of the place values of the two occurrences of 6 in 6.406.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6.6"
+        },
+        {
+          "label": "B",
+          "text": "6.006"
+        },
+        {
+          "label": "C",
+          "text": "0.606"
+        },
+        {
+          "label": "D",
+          "text": "6.06"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The two place values are 6 and 0.006, so their sum is 6.006."
+    },
+    {
+      "id": "03-065",
+      "number": 65,
+      "question": "Which is the third number when 0.71, 12/17, 5/7, 0.708 and 0.715 are arranged in ascending order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12/17"
+        },
+        {
+          "label": "B",
+          "text": "0.708"
+        },
+        {
+          "label": "C",
+          "text": "0.71"
+        },
+        {
+          "label": "D",
+          "text": "5/7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The order is 12/17 < 0.708 < 0.71 < 5/7 < 0.715, so the third number is 0.71."
+    },
+    {
+      "id": "03-066",
+      "number": 66,
+      "question": "Evaluate 0.04(7) + 0.00(2), where the bracketed digits repeat.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.05"
+        },
+        {
+          "label": "B",
+          "text": "0.049"
+        },
+        {
+          "label": "C",
+          "text": "0.045"
+        },
+        {
+          "label": "D",
+          "text": "0.005"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Convert to fractions: (47 − 4)/900 + 2/900 = 45/900 = 0.05."
+    },
+    {
+      "id": "03-067",
+      "number": 67,
+      "question": "What is the smallest positive integer n for which 0.00056 × 10^n is an integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are 5 decimal places and the last digit is nonzero; 0.00056 × 10^5 = 56."
+    },
+    {
+      "id": "03-068",
+      "number": 68,
+      "question": "Evaluate 2.75 × 6.4 − 1.25 × 6.4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.96"
+        },
+        {
+          "label": "B",
+          "text": "25.6"
+        },
+        {
+          "label": "C",
+          "text": "9.6"
+        },
+        {
+          "label": "D",
+          "text": "1.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Take 6.4 common: (2.75 − 1.25) × 6.4 = 1.5 × 6.4 = 9.6."
+    },
+    {
+      "id": "03-069",
+      "number": 69,
+      "question": "Two positive decimals have product 0.0675, and one is three times the other. Find their sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.3"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        },
+        {
+          "label": "C",
+          "text": "0.45"
+        },
+        {
+          "label": "D",
+          "text": "0.9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the numbers be x and 3x; then x² = 0.0675/3 = 0.0225, so x = 0.15. Their sum is 4 × 0.15 = 0.6."
+    },
+    {
+      "id": "03-070",
+      "number": 70,
+      "question": "A water tank contains 48.75 litres. After 6.25 litres are used, the rest is shared equally among 5 containers. How many litres does each container receive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "7.5"
+        },
+        {
+          "label": "C",
+          "text": "9.75"
+        },
+        {
+          "label": "D",
+          "text": "8.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Water left = 48.75 − 6.25 = 42.5 litres; each container gets 42.5 ÷ 5 = 8.5 litres."
+    },
+    {
+      "id": "03-071",
+      "number": 71,
+      "question": "Which percentage is equal to 7/20?",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "3.5"
+        },
+        {
+          "label": "C",
+          "text": "35"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "C",
+      "explanation": "7/20 × 100 = 35%."
+    },
+    {
+      "id": "03-072",
+      "number": 72,
+      "question": "How many of these equalities are correct: 0.7 = 7/10; 0.07 = 7/1000; 0.007 = 7/10000; 0.0007 = 7/1000?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Only 0.7 = 7/10 is correct. The correct fractions for 0.07, 0.007 and 0.0007 are 7/100, 7/1000 and 7/10000."
+    },
+    {
+      "id": "03-073",
+      "number": 73,
+      "question": "If N = 0.006 × 0.0008 ÷ 0.00012, how many places must its decimal point move right to obtain 400?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "N = 0.04, and 0.04 × 10000 = 400; the required shift is 4 places right."
+    },
+    {
+      "id": "03-074",
+      "number": 74,
+      "question": "Evaluate 14.625 − 3.875 − 2.125 − 0.625.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7.375"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "8.625"
+        },
+        {
+          "label": "D",
+          "text": "9.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group the subtractions: 3.875 + 2.125 = 6 and 14.625 − 0.625 = 14; hence 14 − 6 = 8."
+    },
+    {
+      "id": "03-075",
+      "number": 75,
+      "question": "If x − 1/x = 0.5, find x² + 1/x².",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.25"
+        },
+        {
+          "label": "B",
+          "text": "1.25"
+        },
+        {
+          "label": "C",
+          "text": "2.25"
+        },
+        {
+          "label": "D",
+          "text": "2.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Squaring gives x² + 1/x² − 2 = 0.25, so the required value is 2.25."
+    }
+  ]
+}

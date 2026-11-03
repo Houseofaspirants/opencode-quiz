@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 3,
+    "title": "Decimal Fractions"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "03-026",
+      "number": 26,
+      "question": "Which decimal multiplier represents a decrease of 17.5%?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.9825"
+        },
+        {
+          "label": "B",
+          "text": "0.175"
+        },
+        {
+          "label": "C",
+          "text": "1.175"
+        },
+        {
+          "label": "D",
+          "text": "0.825"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The remaining percentage is 100 − 17.5 = 82.5%, so the multiplier is 0.825."
+    },
+    {
+      "id": "03-027",
+      "number": 27,
+      "question": "Which is the correct ascending order of −0.48, −1/2 and −0.485?",
+      "options": [
+        {
+          "label": "A",
+          "text": "−0.48 < −0.485 < −1/2"
+        },
+        {
+          "label": "B",
+          "text": "−1/2 < −0.485 < −0.48"
+        },
+        {
+          "label": "C",
+          "text": "−0.485 < −1/2 < −0.48"
+        },
+        {
+          "label": "D",
+          "text": "−1/2 < −0.48 < −0.485"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Write −1/2 as −0.500; for negative numbers, the one with the larger absolute value is smaller. Thus −0.500 < −0.485 < −0.480."
+    },
+    {
+      "id": "03-028",
+      "number": 28,
+      "question": "Evaluate (0.0048 × 0.075 × 1.6) ÷ (0.012 × 0.002).",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "240"
+        },
+        {
+          "label": "C",
+          "text": "0.24"
+        },
+        {
+          "label": "D",
+          "text": "2.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cancel in pairs: 0.0048/0.012 = 0.4 and 0.075/0.002 = 37.5; then 0.4 × 37.5 × 1.6 = 24."
+    },
+    {
+      "id": "03-029",
+      "number": 29,
+      "question": "Write 1.0(27), where 27 repeats, as a fraction in lowest terms.",
+      "options": [
+        {
+          "label": "A",
+          "text": "34/33"
+        },
+        {
+          "label": "B",
+          "text": "127/110"
+        },
+        {
+          "label": "C",
+          "text": "113/110"
+        },
+        {
+          "label": "D",
+          "text": "1027/990"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The fractional part is 27/990 = 3/110, so the number is 1 + 3/110 = 113/110."
+    },
+    {
+      "id": "03-030",
+      "number": 30,
+      "question": "What is the decimal form of 23/125?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.0184"
+        },
+        {
+          "label": "B",
+          "text": "0.184"
+        },
+        {
+          "label": "C",
+          "text": "1.84"
+        },
+        {
+          "label": "D",
+          "text": "0.23"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Multiply both numerator and denominator by 8: 23/125 = 184/1000 = 0.184."
+    },
+    {
+      "id": "03-031",
+      "number": 31,
+      "question": "A milk seller mixes 7.25 litres of milk with 2.75 litres of water and fills bottles of 0.4 litre each. How many full bottles are filled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "2.5"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total mixture = 7.25 + 2.75 = 10 litres; bottles = 10 ÷ 0.4 = 25."
+    },
+    {
+      "id": "03-032",
+      "number": 32,
+      "question": "How many of 0.43, 7/16, 0.44 and 4/9 lie strictly between 3/7 and 0.445?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "3/7 is about 0.428571, while the four numbers are 0.43, 0.4375, 0.44 and about 0.444444. All four lie inside the interval."
+    },
+    {
+      "id": "03-033",
+      "number": 33,
+      "question": "Find x: (x + 3.75) ÷ 0.25 = 26.4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2.85"
+        },
+        {
+          "label": "B",
+          "text": "6.6"
+        },
+        {
+          "label": "C",
+          "text": "10.35"
+        },
+        {
+          "label": "D",
+          "text": "101.85"
+        }
+      ],
+      "answer": "A",
+      "explanation": "x + 3.75 = 26.4 × 0.25 = 6.6, so x = 6.6 − 3.75 = 2.85."
+    },
+    {
+      "id": "03-034",
+      "number": 34,
+      "question": "What is 68.4 ÷ 10000?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.00684"
+        },
+        {
+          "label": "B",
+          "text": "0.000684"
+        },
+        {
+          "label": "C",
+          "text": "0.684"
+        },
+        {
+          "label": "D",
+          "text": "0.0684"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Dividing by 10000 shifts the decimal point 4 places left: 68.4 ÷ 10000 = 0.00684."
+    },
+    {
+      "id": "03-035",
+      "number": 35,
+      "question": "Evaluate 12.48 × 0.25 + 6.24 × 0.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.624"
+        },
+        {
+          "label": "B",
+          "text": "3.12"
+        },
+        {
+          "label": "C",
+          "text": "6.24"
+        },
+        {
+          "label": "D",
+          "text": "9.36"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Multiplication by 0.25 means division by 4, so both terms equal 3.12; their sum is 6.24."
+    },
+    {
+      "id": "03-036",
+      "number": 36,
+      "question": "If x = 0.(36), where 36 repeats, find (1 + x) ÷ (1 − x).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7/15"
+        },
+        {
+          "label": "B",
+          "text": "15/11"
+        },
+        {
+          "label": "C",
+          "text": "11/7"
+        },
+        {
+          "label": "D",
+          "text": "15/7"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x = 36/99 = 4/11; hence (1 + x)/(1 − x) = (15/11)/(7/11) = 15/7."
+    },
+    {
+      "id": "03-037",
+      "number": 37,
+      "question": "Which fraction is greater than 0.62 but less than 0.625?",
+      "options": [
+        {
+          "label": "A",
+          "text": "31/50"
+        },
+        {
+          "label": "B",
+          "text": "28/45"
+        },
+        {
+          "label": "C",
+          "text": "19/30"
+        },
+        {
+          "label": "D",
+          "text": "5/8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "28/45 = 0.62222 recurring, which lies strictly between 0.62 and 0.625."
+    },
+    {
+      "id": "03-038",
+      "number": 38,
+      "question": "Evaluate 0.125 × 48.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "0.6"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "0.125 = 1/8, so 0.125 × 48 = 48 ÷ 8 = 6."
+    },
+    {
+      "id": "03-039",
+      "number": 39,
+      "question": "A bus travels 16.8 km on 1.2 litres of diesel. At the same rate, how many km will it travel on 3.5 litres?",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "58.8"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "4.9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mileage = 16.8 ÷ 1.2 = 14 km per litre; distance = 14 × 3.5 = 49 km."
+    },
+    {
+      "id": "03-040",
+      "number": 40,
+      "question": "Find the positive value of x if (x + 0.4)² − (x − 0.4)² = 3.84.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.2"
+        },
+        {
+          "label": "B",
+          "text": "2.4"
+        },
+        {
+          "label": "C",
+          "text": "9.6"
+        },
+        {
+          "label": "D",
+          "text": "4.8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use (u + v)² − (u − v)² = 4uv: 1.6x = 3.84, so x = 2.4."
+    },
+    {
+      "id": "03-041",
+      "number": 41,
+      "question": "If 736 × 28 = 20608, find 0.0736 × 2.8.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20.608"
+        },
+        {
+          "label": "B",
+          "text": "2.0608"
+        },
+        {
+          "label": "C",
+          "text": "0.020608"
+        },
+        {
+          "label": "D",
+          "text": "0.20608"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The factors have a total of 5 decimal places, so 20608 becomes 0.20608."
+    },
+    {
+      "id": "03-042",
+      "number": 42,
+      "question": "If x = 0.(9), where 9 repeats, find 1 − x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.1"
+        },
+        {
+          "label": "B",
+          "text": "0.01"
+        },
+        {
+          "label": "C",
+          "text": "1/9"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x = 9/9 = 1, so 1 − x = 0."
+    },
+    {
+      "id": "03-043",
+      "number": 43,
+      "question": "If 6.04 = 6 + a/10 + b/100, where a and b are decimal digits, find a + b.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The tenths digit is a = 0 and the hundredths digit is b = 4; hence a + b = 4."
+    },
+    {
+      "id": "03-044",
+      "number": 44,
+      "question": "A 24.5 m ribbon is cut into 0.6 m pieces. Each cut wastes 0.01 m, and each usable piece needs one cut. What is the maximum number of full pieces?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "42"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "39"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each piece uses 0.6 + 0.01 = 0.61 m. Since 40 × 0.61 = 24.4 and 41 × 0.61 = 25.01, the maximum is 40."
+    },
+    {
+      "id": "03-045",
+      "number": 45,
+      "question": "Evaluate (5.7 + 2.3) × 0.45 − 0.18 ÷ 0.06.",
+      "options": [
+        {
+          "label": "A",
+          "text": "3.3"
+        },
+        {
+          "label": "B",
+          "text": "6.6"
+        },
+        {
+          "label": "C",
+          "text": "0.6"
+        },
+        {
+          "label": "D",
+          "text": "0.06"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The sum in brackets is 8, so the expression becomes 3.6 − 3 = 0.6."
+    },
+    {
+      "id": "03-046",
+      "number": 46,
+      "question": "Which is the smallest of the following?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.91"
+        },
+        {
+          "label": "B",
+          "text": "0.909"
+        },
+        {
+          "label": "C",
+          "text": "0.9099"
+        },
+        {
+          "label": "D",
+          "text": "10/11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "10/11 = 0.90909 recurring, which is slightly greater than 0.909; both 0.9099 and 0.91 are also greater."
+    },
+    {
+      "id": "03-047",
+      "number": 47,
+      "question": "A price of ₹640 is multiplied by 1.125. By how many rupees does it increase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "720"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Only the extra multiplier matters: increase = 640 × (1.125 − 1) = 640 × 0.125 = ₹80."
+    },
+    {
+      "id": "03-048",
+      "number": 48,
+      "question": "A quotient is 0.072. If its dividend is multiplied by 100 and its divisor is divided by 10, what is the new quotient?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.72"
+        },
+        {
+          "label": "B",
+          "text": "7.2"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "720"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The quotient is multiplied by 100 × 10 = 1000, so the new quotient is 0.072 × 1000 = 72."
+    },
+    {
+      "id": "03-049",
+      "number": 49,
+      "question": "The sum of two positive numbers is 0.9 and their difference is 0.3. Find their product.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.18"
+        },
+        {
+          "label": "B",
+          "text": "0.09"
+        },
+        {
+          "label": "C",
+          "text": "0.27"
+        },
+        {
+          "label": "D",
+          "text": "0.36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Product = [(sum)² − (difference)²]/4 = (0.9² − 0.3²)/4 = 0.18."
+    },
+    {
+      "id": "03-050",
+      "number": 50,
+      "question": "If p = 0.84, q = −0.31 and r = −0.53, find (p³ + q³ + r³) ÷ (pqr).",
+      "options": [
+        {
+          "label": "A",
+          "text": "−3"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since p + q + r = 0, the identity p³ + q³ + r³ = 3pqr gives a quotient of 3."
+    }
+  ]
+}

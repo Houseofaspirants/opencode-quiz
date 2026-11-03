@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-03T05:46:19.477Z",
+  "generatedAt": "2026-11-03T12:40:47.673Z",
   "stats": {
     "subjects": 7,
-    "categories": 50,
-    "topics": 92,
-    "quizzes": 92,
-    "questions": 2123,
+    "categories": 51,
+    "topics": 96,
+    "quizzes": 96,
+    "questions": 2223,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2664,6 +2664,126 @@
       "order": 2,
       "topics": [
         {
+          "id": "03 - Decimal Fractions - MCQ - EN - Part 1",
+          "name": "Decimal Fractions MCQ – Part 1",
+          "description": "",
+          "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793707485527,
+          "category": "03-decimal-fractions",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Decimal Fractions MCQ – Part 1",
+            "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-03-decimal-fractions-part-1"
+        },
+        {
+          "id": "03 - Decimal Fractions - MCQ - EN - Part 2",
+          "name": "Decimal Fractions MCQ – Part 2",
+          "description": "",
+          "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793707485527,
+          "category": "03-decimal-fractions",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Decimal Fractions MCQ – Part 2",
+            "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-03-decimal-fractions-part-2"
+        },
+        {
+          "id": "03 - Decimal Fractions - MCQ - EN - Part 3",
+          "name": "Decimal Fractions MCQ – Part 3",
+          "description": "",
+          "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793707485527,
+          "category": "03-decimal-fractions",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Decimal Fractions MCQ – Part 3",
+            "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-03-decimal-fractions-part-3"
+        },
+        {
+          "id": "03 - Decimal Fractions - MCQ - EN - Part 4",
+          "name": "Decimal Fractions MCQ – Part 4",
+          "description": "",
+          "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1793707485527,
+          "category": "03-decimal-fractions",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Decimal Fractions MCQ – Part 4",
+            "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-03-decimal-fractions-part-4"
+        },
+        {
           "id": "02 - HCF and LCM of Numbers - MCQ - EN - Part 1",
           "name": "HCF and LCM of Numbers MCQ – Part 1",
           "description": "",
@@ -3162,6 +3282,135 @@
             }
           ],
           "landing": "/category-quant-02-hcf-and-lcm-of-numbers"
+        },
+        {
+          "id": "03-decimal-fractions",
+          "name": "03   Decimal Fractions",
+          "folder": "03 - Decimal Fractions",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "03 - Decimal Fractions - MCQ - EN - Part 1",
+              "name": "Decimal Fractions MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793707485527,
+              "category": "03-decimal-fractions",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Decimal Fractions MCQ – Part 1",
+                "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-03-decimal-fractions-part-1"
+            },
+            {
+              "id": "03 - Decimal Fractions - MCQ - EN - Part 2",
+              "name": "Decimal Fractions MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793707485527,
+              "category": "03-decimal-fractions",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Decimal Fractions MCQ – Part 2",
+                "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-03-decimal-fractions-part-2"
+            },
+            {
+              "id": "03 - Decimal Fractions - MCQ - EN - Part 3",
+              "name": "Decimal Fractions MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793707485527,
+              "category": "03-decimal-fractions",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Decimal Fractions MCQ – Part 3",
+                "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-03-decimal-fractions-part-3"
+            },
+            {
+              "id": "03 - Decimal Fractions - MCQ - EN - Part 4",
+              "name": "Decimal Fractions MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1793707485527,
+              "category": "03-decimal-fractions",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Decimal Fractions MCQ – Part 4",
+                "pa": "ਦਸ਼ਮਲਵ ਭਿੰਨਾਂ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-03-decimal-fractions-part-4"
+            }
+          ],
+          "landing": "/category-quant-03-decimal-fractions"
         }
       ],
       "landing": "/subject-quant"
@@ -6152,6 +6401,22 @@
     "questions/quant/02 - HCF and LCM of Numbers/02 - HCF and LCM of Numbers - MCQ - EN - Part 4.json": [
       "3606a180c45a0063",
       1793684775222
+    ],
+    "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 1.json": [
+      "4158d2d4925e5d55",
+      1793707485527
+    ],
+    "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 2.json": [
+      "f0a15593b72af943",
+      1793707485527
+    ],
+    "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 3.json": [
+      "1f33420460b15283",
+      1793707485527
+    ],
+    "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json": [
+      "c1c555354daa6bbf",
+      1793707485527
     ],
     "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",
