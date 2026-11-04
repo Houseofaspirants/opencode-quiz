@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 602,
-  "edges": 4790,
+  "nodes": 604,
+  "edges": 4812,
   "silos": 35,
   "clusters": 158,
   "pillars": 34
@@ -3356,6 +3356,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 7: Maharaja Ranjit Singh (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maharaja-ranjit-singh-notes-punjabi",
+   "url": "/material-maharaja-ranjit-singh-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "url": "/material-maharaja-ranjit-singh-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 7: ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8628,6 +8652,12 @@
   {
    "from": "archive-category-history-of-punjab.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14045,6 +14075,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -16798,6 +16834,12 @@
    "weight": 1
   },
   {
+   "from": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
    "to": "ca-current-affairs-september-2026-punjabi.html",
    "rel": "contextual",
@@ -16889,13 +16931,13 @@
   },
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19301,13 +19343,13 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19403,13 +19445,13 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19505,13 +19547,13 @@
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19607,13 +19649,13 @@
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-punjabi.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19709,13 +19751,13 @@
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19811,13 +19853,13 @@
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19913,13 +19955,13 @@
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20015,13 +20057,13 @@
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20117,13 +20159,13 @@
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20219,13 +20261,13 @@
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20508,6 +20550,114 @@
   {
    "from": "material-maharaja-ranjit-singh-notes-english.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "pa/study-history-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21497,7 +21647,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21581,7 +21731,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23807,7 +23957,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23891,7 +24041,7 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24311,7 +24461,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24395,7 +24545,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -29195,12 +29345,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -29244,6 +29388,12 @@
   {
    "from": "pdfs.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34163,6 +34313,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -34445,12 +34601,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -34494,6 +34644,12 @@
   {
    "from": "study-notes.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },

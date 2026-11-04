@@ -741,20 +741,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 37,
+      "count": 38,
       "newest": "2026-11-04",
-      "totalSize": 74225520,
-      "chapters": 34,
+      "totalSize": 75973279,
+      "chapters": 35,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 37,
-          "chapters": 34,
-          "pages": 181,
-          "totalSize": 74225520,
+          "files": 38,
+          "chapters": 35,
+          "pages": 188,
+          "totalSize": 75973279,
           "newest": "2026-11-04",
           "categories": 12,
           "regions": 2
@@ -1364,10 +1364,10 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 19,
-              "chapters": 19,
-              "pages": 89,
-              "totalSize": 33609265,
+              "files": 20,
+              "chapters": 20,
+              "pages": 96,
+              "totalSize": 35357024,
               "newest": "2026-11-04",
               "categories": 6
             },
@@ -1380,10 +1380,10 @@
                   "history-of-punjab"
                 ],
                 "stats": {
-                  "files": 13,
-                  "chapters": 13,
-                  "pages": 61,
-                  "totalSize": 22988033,
+                  "files": 14,
+                  "chapters": 14,
+                  "pages": 68,
+                  "totalSize": 24735792,
                   "newest": "2026-11-04"
                 },
                 "languages": [
@@ -1392,7 +1392,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 6,
+                    "count": 7,
                     "chapters": [
                       {
                         "id": "01 - ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
@@ -1459,6 +1459,17 @@
                           }
                         ],
                         "pages": 5
+                      },
+                      {
+                        "id": "07 - ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
+                        "name": "ਅਧਿਆਇ 7: ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
+                        "parts": [
+                          {
+                            "file": "material-maharaja-ranjit-singh-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 7
                       }
                     ]
                   },
@@ -1805,7 +1816,7 @@
       },
       "counts": {
         "en": 19,
-        "pa": 18
+        "pa": 19
       },
       "pages": {
         "en": "study-gk.html",
@@ -2264,16 +2275,16 @@
       "color": "#f59e0b",
       "description": "The Sikh period, the princely states, the merger and the rest of Punjab's past.",
       "order": 14,
-      "count": 13,
+      "count": 14,
       "newest": "2026-11-04",
-      "totalSize": 22988033,
+      "totalSize": 24735792,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 6,
+          "count": 7,
           "chapters": [
             {
               "id": "01 - ਗੁਰੂ ਨਾਨਕ ਦੇਵ ਜੀ ਅਤੇ ਗੁਰੂ ਅੰਗਦ ਦੇਵ ਜੀ",
@@ -2340,6 +2351,17 @@
                 }
               ],
               "pages": 5
+            },
+            {
+              "id": "07 - ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
+              "name": "ਅਧਿਆਇ 7: ਮਹਾਰਾਜਾ ਰਣਜੀਤ ਸਿੰਘ",
+              "parts": [
+                {
+                  "file": "material-maharaja-ranjit-singh-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         },
@@ -2430,11 +2452,11 @@
           ]
         }
       ],
-      "chapters": 13,
+      "chapters": 14,
       "hidden": true,
       "counts": {
         "en": 7,
-        "pa": 6
+        "pa": 7
       },
       "pages": {
         "en": "study-history-of-punjab.html",
@@ -2715,6 +2737,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 84,
+  "total": 85,
   "generatedBy": "scripts/study_material.py"
 }
