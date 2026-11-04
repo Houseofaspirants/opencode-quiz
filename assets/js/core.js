@@ -676,17 +676,17 @@ const HOA = (() => {
               <div class="nav-col">
                 <span class="nav-col-head" data-i18n="Study material">Study material</span>
                 <!-- HOA-NAV:menu -->
-                <a data-nav="notes" href="study-material"><span data-i18n="Study Material">Study Material</span></a>
-                <a data-nav="notes" href="study-notes"><span data-i18n="Study Notes">Study Notes</span></a>
-                <a data-nav="topic-guides" href="topic-guides"><span data-i18n="Topic Guides">Topic Guides</span></a>
-                <a data-nav="ca" href="current-affairs"><span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
-                <a data-nav="strategy" href="strategy"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
-                <a data-nav="sessions" href="live-sessions"><span data-i18n="Live Sessions">Live Sessions</span></a>
-                <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
-                <a data-nav="previous-year-questions" href="previous-year-questions"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-                <a data-nav="pdfs" href="pdfs"><span data-i18n="Free PDFs">Free PDFs</span></a>
-                <a data-nav="blogs" href="blogs"><span data-i18n="Blog">Blog</span></a>
-                <a data-nav="archives" href="archives"><span data-i18n="Archives">Archives</span></a>
+                <a data-nav="notes" href="study-material.html"><span data-i18n="Study Material">Study Material</span></a>
+                <a data-nav="notes" href="study-notes.html"><span data-i18n="Study Notes">Study Notes</span></a>
+                <a data-nav="topic-guides" href="topic-guides.html"><span data-i18n="Topic Guides">Topic Guides</span></a>
+                <a data-nav="ca" href="current-affairs.html"><span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
+                <a data-nav="strategy" href="strategy.html"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+                <a data-nav="sessions" href="live-sessions.html"><span data-i18n="Live Sessions">Live Sessions</span></a>
+                <a data-nav="expected-mcqs" href="expected-mcqs.html"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+                <a data-nav="previous-year-questions" href="previous-year-questions.html"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
+                <a data-nav="pdfs" href="pdfs.html"><span data-i18n="Free PDFs">Free PDFs</span></a>
+                <a data-nav="blogs" href="blogs.html"><span data-i18n="Blog">Blog</span></a>
+                <a data-nav="archives" href="archives.html"><span data-i18n="Archives">Archives</span></a>
                 <!-- /HOA-NAV:menu -->
               </div>
             </div>
@@ -796,11 +796,11 @@ const HOA = (() => {
     </div>
     <div data-mm-study>
       <!-- HOA-NAV:drawer -->
-      <a class="mm-link" data-nav="notes" href="study-notes"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
-      <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
-      <a class="mm-link" data-nav="strategy" href="strategy"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
-      <a class="mm-link" data-nav="sessions" href="live-sessions"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
-      <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
+      <a class="mm-link" data-nav="notes" href="study-notes.html"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
+      <a class="mm-link" data-nav="ca" href="current-affairs.html"><span class="mm-emoji">🗞️</span> <span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
+      <a class="mm-link" data-nav="strategy" href="strategy.html"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+      <a class="mm-link" data-nav="sessions" href="live-sessions.html"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
+      <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs.html"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
       <!-- /HOA-NAV:drawer -->
       <!-- The pipeline's drawer shortlist (DRAWER_HUBS) deliberately carries
            only two of the six Study hubs, so the other four are written here
@@ -920,19 +920,19 @@ const HOA = (() => {
         <div class="footer-col">
           <h2 data-i18n="Study">Study</h2>
           <!-- HOA-NAV:footer -->
-          <a href="study-material" data-i18n="Study Material">Study Material</a>
-          <a href="study-notes" data-i18n="Study Notes">Study Notes</a>
-          <a href="topic-guides" data-i18n="Topic Guides">Topic Guides</a>
-          <a href="current-affairs" data-i18n="Monthly Current Affairs">Monthly Current Affairs</a>
-          <a href="strategy" data-i18n="Preparation Strategy">Preparation Strategy</a>
-          <a href="live-sessions" data-i18n="Live Sessions">Live Sessions</a>
-          <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
-          <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
-          <a href="pdfs" data-i18n="Free PDFs">Free PDFs</a>
-          <a href="blogs" data-i18n="Blog">Blog</a>
-          <a href="archives" data-i18n="Archives">Archives</a>
-          <a href="search" data-i18n="Search">Search</a>
-          <a href="author-gurpreet-singh" data-i18n="Gurpreet Singh">Gurpreet Singh</a>
+          <a href="study-material.html" data-i18n="Study Material">Study Material</a>
+          <a href="study-notes.html" data-i18n="Study Notes">Study Notes</a>
+          <a href="topic-guides.html" data-i18n="Topic Guides">Topic Guides</a>
+          <a href="current-affairs.html" data-i18n="Monthly Current Affairs">Monthly Current Affairs</a>
+          <a href="strategy.html" data-i18n="Preparation Strategy">Preparation Strategy</a>
+          <a href="live-sessions.html" data-i18n="Live Sessions">Live Sessions</a>
+          <a href="expected-mcqs.html" data-i18n="Expected MCQs">Expected MCQs</a>
+          <a href="previous-year-questions.html" data-i18n="Previous Year Questions">Previous Year Questions</a>
+          <a href="pdfs.html" data-i18n="Free PDFs">Free PDFs</a>
+          <a href="blogs.html" data-i18n="Blog">Blog</a>
+          <a href="archives.html" data-i18n="Archives">Archives</a>
+          <a href="search.html" data-i18n="Search">Search</a>
+          <a href="author-gurpreet-singh.html" data-i18n="Gurpreet Singh">Gurpreet Singh</a>
           <!-- /HOA-NAV:footer -->
           <a href="articles" data-i18n="Study Guides">Study Guides</a>
         </div>
