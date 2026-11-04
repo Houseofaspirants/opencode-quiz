@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 600,
-  "edges": 4766,
+  "nodes": 602,
+  "edges": 4790,
   "silos": 35,
   "clusters": 158,
   "pillars": 34
@@ -3332,6 +3332,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 1: ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maharaja-ranjit-singh-notes-english",
+   "url": "/material-maharaja-ranjit-singh-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maharaja-ranjit-singh-notes-english.html",
+   "url": "/material-maharaja-ranjit-singh-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 7: Maharaja Ranjit Singh (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8598,6 +8622,12 @@
   {
    "from": "archive-category-history-of-punjab.html",
    "to": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history-of-punjab.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14009,6 +14039,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -16757,7 +16793,7 @@
   },
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -16854,6 +16890,12 @@
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
    "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19265,7 +19307,7 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19367,7 +19409,7 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19464,6 +19506,12 @@
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19565,7 +19613,7 @@
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19662,6 +19710,12 @@
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19763,7 +19817,7 @@
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19860,6 +19914,12 @@
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19961,7 +20021,7 @@
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20058,6 +20118,12 @@
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
    "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20159,7 +20225,7 @@
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -20346,6 +20412,102 @@
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "to": "material-national-income-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "ca-current-affairs-september-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "study-history-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-maharaja-ranjit-singh-notes-english.html",
+   "to": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21329,13 +21491,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -21413,13 +21575,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23639,13 +23801,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23723,13 +23885,13 @@
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24143,13 +24305,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -24227,13 +24389,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -29045,12 +29207,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -29082,6 +29238,12 @@
   {
    "from": "pdfs.html",
    "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33995,6 +34157,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -34289,12 +34457,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -34326,6 +34488,12 @@
   {
    "from": "study-notes.html",
    "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
