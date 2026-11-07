@@ -84,6 +84,83 @@ def esc(text):
     return html_mod.escape(str(text), quote=True)
 
 
+# Question layout - twin of questionBlocks() / questionHtml() in assets/js/core.js
+# (same regexes, same markup), so the printed first question and the question
+# bank read like the live quiz and the card does not jump when JS repaints it.
+QS_HEAD = re.compile(r"^((?:List|ਸੂਚੀ|Column|ਕਾਲਮ)[\s-]*(?:II|I|2|1)(?:\s*\([^)]*\))?)\s*:?\s*(.*)$",
+                     re.I)
+QS_MARK = re.compile(r"^(\(?(?:\d{1,2}|[A-Za-z]|[ivxIVX]{2,4})[.)])\s+(\S.*)$")
+
+
+def _qs_kind(mark):
+    return "1" if re.search(r"\d", mark) else "A" if re.search(r"[A-Z]", mark) else "a"
+
+
+def question_blocks(text):
+    blocks, open_list = [], None
+    for raw in str(text if text is not None else "").split("\n"):
+        line = raw.strip()
+        if not line:
+            continue
+        head = QS_HEAD.match(line)
+        if head:
+            parts = [x for x in re.split(r"\s*;\s*|\s{2,}", head.group(2)) if x] \
+                if head.group(2) else []
+            found = [QS_MARK.match(x) for x in parts]
+            if all(found):
+                open_list = {"head": head.group(1),
+                             "kind": _qs_kind(found[0].group(1)) if found else "",
+                             "items": [(m.group(1), m.group(2)) for m in found]}
+                blocks.append(open_list)
+            else:
+                blocks.append({"text": line})
+                open_list = None
+            continue
+        m = QS_MARK.match(line)
+        if not m:
+            blocks.append({"text": line})
+            open_list = None
+            continue
+        kind = _qs_kind(m.group(1))
+        if open_list and not open_list["kind"]:
+            open_list["kind"] = kind
+        if not open_list or open_list["kind"] != kind:
+            open_list = {"head": "", "kind": kind, "items": []}
+            blocks.append(open_list)
+        open_list["items"].append((m.group(1), m.group(2)))
+    out = []
+    for b in blocks:
+        if "items" in b and len(b["items"]) < (1 if b["head"] else 2):
+            b = {"text": b["head"] or " ".join(b["items"][0])}
+        out.append(b)
+    return out
+
+
+def question_html(text):
+    blocks = question_blocks(text)
+    if len(blocks) < 2 and not (blocks and "items" in blocks[0]):
+        return esc(str(text).strip())
+
+    def as_list(b):
+        head = f'<span class="qs-head">{esc(b["head"])}</span>' if b["head"] else ""
+        items = "".join(f'<span class="qs-item"><span class="qs-mark">{esc(m)}</span>'
+                        f'<span>{esc(t)}</span></span>' for m, t in b["items"])
+        return f'<span class="qs-list">{head}{items}</span>'
+
+    out, i = [], 0
+    while i < len(blocks):
+        b = blocks[i]
+        if "items" not in b:
+            out.append(f'<span class="qs-line">{esc(b["text"])}</span>')
+        elif i + 1 < len(blocks) and "items" in blocks[i + 1]:
+            out.append(f'<span class="qs-cols">{as_list(b)}{as_list(blocks[i + 1])}</span>')
+            i += 1
+        else:
+            out.append(as_list(b))
+        i += 1
+    return f'<span class="qs">{"".join(out)}</span>'
+
+
 def words(text):
     return len(re.findall(r"[A-Za-z0-9%&'-]+", text))
 
@@ -1631,7 +1708,7 @@ def question_bank_html(qs, lang="en"):
         if q.get("data") and (set_id is None or set_id != last_set):
             out.extend(di_static_html(q.get("data")))
         last_set = set_id
-        out.append(f'            <p class="qb-q">{esc(text)}</p>')
+        out.append(f'            <p class="qb-q">{question_html(text)}</p>')
         out.append('            <ol class="qb-opts" type="A">')
         for o in opts:
             out.append(f"              <li>{esc(o)}</li>")
@@ -2432,7 +2509,7 @@ def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, botto
             + (f"ਸਵਾਲ 1 / {len(questions)}" if lang == "pa" else f"Question 1 of {len(questions)}")
             + "</span>", "qCount")
         rep(r'<h2 class="q-text" id="qText">.*?</h2>',
-            f'<h2 class="q-text" id="qText">{esc(str(q1["q"]).strip())}</h2>', "qText")
+            f'<h2 class="q-text" id="qText">{question_html(q1["q"])}</h2>', "qText")
         opts = "".join(
             f'\n              <button class="option" data-opt="{i}" aria-pressed="false">'
             f'<span class="opt-key">{chr(65 + i)}</span><span>{esc(str(o))}</span></button>'

@@ -432,6 +432,42 @@ def by_name(item):
     return (str(item["name"]).lower(), item["id"])
 
 
+MONTH_NAMES = ("january", "february", "march", "april", "may", "june", "july",
+               "august", "september", "october", "november", "december")
+
+
+def month_rank(cat):
+    """(year, month) for a category whose folder is a month, else None.
+
+    The year comes from the folder ("october-2026") or from the topic ids
+    inside it ("current-affairs-october-2026-part1"); 0 when neither says."""
+    m = re.match(r"^(" + "|".join(MONTH_NAMES) + r")(?:[-_ ]+(\d{4}))?$",
+                 str(cat.get("folder") or cat["id"]).lower())
+    if not m:
+        return None
+    year = int(m.group(2) or 0)
+    for t in cat["topics"]:
+        hit = re.search(m.group(1) + r"\D{0,3}(20\d\d)", str(t["id"]).lower())
+        if hit and not year:
+            year = int(hit.group(1))
+    return (year, MONTH_NAMES.index(m.group(1)) + 1)
+
+
+def order_month_categories(cats):
+    """Month folders read newest first and carry their year: "October 2026".
+
+    Alphabetical would give August, July, October, September. Only applies when
+    EVERY category is a month, so a subject with ordinary lanes is untouched.
+    Twin: orderMonthCategories() in build-index.mjs."""
+    ranks = [month_rank(c) for c in cats]
+    if not cats or None in ranks:
+        return cats
+    for c, (year, num) in zip(cats, ranks):
+        if year:
+            c["name"] = f"{MONTH_NAMES[num - 1].capitalize()} {year}"
+    return [c for _, c in sorted(zip(ranks, cats), key=lambda p: p[0], reverse=True)]
+
+
 def iso_now():
     # JS new Date().toISOString() -> millisecond precision
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
@@ -919,6 +955,13 @@ for s in subjects.values():
             cat_out = {k: v for k, v in c.items() if k not in ("_topicsById",)}
             cat_out["topics"] = c_topics  # existing key: value replaced in place
             categories.append(cat_out)
+    ordered = order_month_categories(categories)
+    if ordered is not categories:
+        # The flat list follows the months too; pages walk it for their topic grids.
+        in_months = [t for c in ordered for t in c["topics"]]
+        ids = {t["id"] for t in in_months}
+        topics = in_months + [t for t in topics if t["id"] not in ids]
+    categories = ordered
     s.pop("_topicsById", None)
     s.pop("_cats", None)
     s.pop("_fromConfig", None)

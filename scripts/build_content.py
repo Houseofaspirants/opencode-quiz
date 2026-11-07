@@ -6807,9 +6807,9 @@ def ca_practice_section(index):
                if s.get("id") == "current-affairs"), None) or {}
     topics = [t for t in ca.get("topics", []) if t.get("available")]
     # Newest month first; inside a month, Part 1 before Part 2.
-    months = {m: i for i, m in enumerate(
-        ("january", "february", "march", "april", "may", "june", "july",
-         "august", "september", "october", "november", "december"), 1)}
+    MONTH_LABELS = ("January", "February", "March", "April", "May", "June", "July",
+                    "August", "September", "October", "November", "December")
+    months = {m.lower(): i for i, m in enumerate(MONTH_LABELS, 1)}
     def month_key(t):
         m = re.search(r"(january|february|march|april|may|june|july|august|"
                       r"september|october|november|december)\D{0,3}(20\d\d)",
@@ -6824,14 +6824,26 @@ def ca_practice_section(index):
         v = sorted((t.get("variants") or {}).keys())
         names = {"pa": "ਪੰਜਾਬੀ", "en": "English"}
         return " · ".join(names.get(x, x) for x in v)
-    cards = "".join(
-        f'<a class="card card-pad reveal" href="{quiz_href(t)}">'
-        f'<span class="eyebrow">{t.get("count", 0)} MCQs'
-        + (f' &middot; {esc(langs(t))}' if langs(t) else "") + '</span>'
-        f'<h3>{esc(t.get("name", ""))}</h3>'
-        f'<p class="ilink">Start the set &rarr;</p></a>'
-        for t in topics)
-    body = (f'<div class="grid grid-3">{cards}</div>' if cards else
+    groups = {}
+    for t in topics:
+        groups.setdefault(month_key(t), []).append(t)
+    blocks = []
+    for (year, num), sets in groups.items():
+        label = (f"{MONTH_LABELS[num - 1]} {year}" if num else "Other sets")
+        rows = "".join(
+            f'<li><a href="{quiz_href(t)}">'
+            f'{"Part " + str(part_no(t)) if num and part_no(t) else esc(t.get("name", ""))}'
+            f'</a><span class="part-meta">{t.get("count", 0)} MCQs'
+            + (f' &middot; {esc(langs(t))}' if langs(t) else "") + '</span></li>'
+            for t in sets)
+        total = sum(int(t.get("count") or 0) for t in sets)
+        blocks.append(
+            f'<div class="card card-pad ca-month reveal">'
+            f'<div class="ca-month-head"><h3>{esc(label)}</h3>'
+            f'<span class="ca-month-links">{len(sets)} set{"" if len(sets) == 1 else "s"}'
+            f' &middot; {total} MCQs</span></div>'
+            f'<ul class="part-list">{rows}</ul></div>')
+    body = (f'<div class="ca-months">{"".join(blocks)}</div>' if blocks else
             """<div class="empty-state"><span class="es-icon" aria-hidden="true">📝</span>
             <h3>No practice set published yet</h3>
             <p>Current affairs sets appear here as soon as they are published.</p></div>""")
@@ -6840,8 +6852,8 @@ def ca_practice_section(index):
         <div class="section-head reveal"><div>
           <span class="eyebrow">Practice</span>
           <h2>Practice Current Affairs</h2>
-          <p>Untimed MCQ sets, newest first. Switch between Punjabi and English
-             inside any set.</p>
+          <p>Month-wise MCQ sets, newest month first. Switch between Punjabi and
+             English inside any set.</p>
         </div></div>
         {body}
       </div>

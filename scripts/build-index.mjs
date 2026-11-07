@@ -834,16 +834,58 @@ for (const m of meta.subjects || []) {
 const byName = (a, b) =>
   a.name.localeCompare(b.name) || a.id.localeCompare(b.id);
 
+const MONTH_NAMES = ["january", "february", "march", "april", "may", "june", "july",
+  "august", "september", "october", "november", "december"];
+
+/** [year, month] for a category whose folder is a month, else null. */
+function monthRank(cat) {
+  const m = new RegExp(`^(${MONTH_NAMES.join("|")})(?:[-_ ]+(\\d{4}))?$`)
+    .exec(String(cat.folder || cat.id).toLowerCase());
+  if (!m) return null;
+  let year = Number(m[2] || 0);
+  for (const t of cat.topics) {
+    const hit = new RegExp(`${m[1]}\\D{0,3}(20\\d\\d)`).exec(String(t.id).toLowerCase());
+    if (hit && !year) year = Number(hit[1]);
+  }
+  return [year, MONTH_NAMES.indexOf(m[1]) + 1];
+}
+
+/** Month folders read newest first and carry their year: "October 2026".
+    Only when EVERY category is a month. Twin: order_month_categories() in
+    build_index.py. */
+function orderMonthCategories(cats) {
+  const ranks = cats.map(monthRank);
+  if (!cats.length || ranks.some((r) => !r)) return cats;
+  return cats
+    .map((c, i) => {
+      const [year, num] = ranks[i];
+      const m = MONTH_NAMES[num - 1];
+      return {
+        rank: ranks[i],
+        cat: year ? { ...c, name: `${m[0].toUpperCase()}${m.slice(1)} ${year}` } : c,
+      };
+    })
+    .sort((a, b) => b.rank[0] - a.rank[0] || b.rank[1] - a.rank[1])
+    .map((x) => x.cat);
+}
+
 const outputSubjects = [...subjects.values()]
   .map((s) => {
-    const topics = [...s._topicsById.values()].sort(byName);
+    let topics = [...s._topicsById.values()].sort(byName);
     let categories = [];
     if (s._cats && s._cats.size) {
-      categories = [...s._cats.values()].map((c) => {
+      const plain = [...s._cats.values()].map((c) => {
         const cTopics = [...c._topicsById.values()].sort(byName);
         delete c._topicsById;
         return { ...c, topics: cTopics };
       });
+      categories = orderMonthCategories(plain);
+      if (categories !== plain) {
+        // The flat list follows the months too; pages walk it for their topic grids.
+        const inMonths = categories.flatMap((c) => c.topics);
+        const ids = new Set(inMonths.map((t) => t.id));
+        topics = [...inMonths, ...topics.filter((t) => !ids.has(t.id))];
+      }
     }
     delete s._topicsById;
     delete s._cats;

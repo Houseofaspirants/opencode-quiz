@@ -32,7 +32,7 @@
         </div>
         ${b.data && window.HOA_DI && window.HOA_DI.has(b.data)
           ? `<div class="q-data">${window.HOA_DI.html(b.data, wrap.clientWidth - 40)}</div>` : ""}
-        <p class="bm-q">${b.id ? `<b>Q${b.id}.</b> ` : ""}${esc(b.q)}</p>
+        <p class="bm-q">${b.id ? `<b>Q${b.id}.</b> ` : ""}${HOA.questionHtml(b.q)}</p>
         <div class="bm-actions">
           <button class="btn btn-sm btn-soft" data-reveal>Show answer</button>
           <a class="btn btn-sm" href="${esc(b.href || "#")}">Open quiz</a>

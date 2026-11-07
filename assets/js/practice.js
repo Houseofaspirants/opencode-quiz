@@ -31,13 +31,18 @@
       const live = (s.topics || []).filter((t) => t.available);
       const chapters = new Set(live.map((t) => String(t.id).replace(/-part\d+(?=-|$)/i, ""))).size;
       const questions = live.reduce((n, t) => n + (t.count || 0), 0);
+      const cats = s.categories || [];
+      const monthly = cats.length > 0 && cats.every((c) => /^[A-Z][a-z]+ \d{4}$/.test(c.name));
+      const groups = monthly
+        ? `${cats.length} month${cats.length === 1 ? "" : "s"}`
+        : `${chapters} chapter${chapters === 1 ? "" : "s"}`;
       return `
         <a class="card subject-card" style="--sc:${s.color}" href="subject?subject=${esc(s.id)}">
           <span class="subject-icon">${s.icon}</span>
           <h3>${esc(s.name)}</h3>
           <p>${esc(s.description || "Topic-wise MCQ practice for this subject.")}</p>
           <div class="subject-meta">
-            <span class="badge">${chapters} chapter${chapters === 1 ? "" : "s"}</span>
+            <span class="badge">${groups}</span>
             <span class="badge ${live.length ? "badge-success" : "badge-muted"}">${live.length} set${live.length === 1 ? "" : "s"}</span>
             <span class="badge badge-muted">${questions} Q</span>
           </div>

@@ -1483,6 +1483,85 @@ const HOA = (() => {
       ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   }
 
+  /* Question layout. Statement, match, order and assertion questions carry
+     their structure in the text itself: line breaks, "1." / "A." markers and
+     "List I: A. x; B. y". Plain HTML collapses all of that into one paragraph,
+     so this turns it into lines, numbered lists and List I / List II side by
+     side. Spans only: the text sits inside an <h2>, a <p> or a <span>.
+     A one-line question comes back exactly as esc() would give it.
+     Twin: question_html() in scripts/build_landing_pages.py - change both. */
+  const QS_HEAD = /^((?:List|ਸੂਚੀ|Column|ਕਾਲਮ)[\s-]*(?:II|I|2|1)(?:\s*\([^)]*\))?)\s*:?\s*(.*)$/i;
+  const QS_MARK = /^(\(?(?:\d{1,2}|[A-Za-z]|[ivxIVX]{2,4})[.)])\s+(\S.*)$/;
+  const qsKind = (mark) => (/\d/.test(mark) ? "1" : /[A-Z]/.test(mark) ? "A" : "a");
+
+  function questionBlocks(text) {
+    /** @type {{text?: string, head?: string, kind?: string, items?: {mark: string, text: string}[]}[]} */
+    const blocks = [];
+    let open = null;
+    const para = (t) => {
+      blocks.push({ text: t });
+      open = null;
+    };
+    for (const raw of String(text ?? "").split("\n")) {
+      const line = raw.trim();
+      if (!line) continue;
+      const head = QS_HEAD.exec(line);
+      if (head) {
+        const found = (head[2] ? head[2].split(/\s*;\s*|\s{2,}/) : [])
+          .filter(Boolean).map((part) => QS_MARK.exec(part));
+        if (found.every(Boolean)) {
+          open = {
+            head: head[1], kind: found.length ? qsKind(found[0][1]) : "",
+            items: found.map((m) => ({ mark: m[1], text: m[2] })),
+          };
+          blocks.push(open);
+        } else {
+          para(line);               // "List I ko List II naal milao" is a sentence
+        }
+        continue;
+      }
+      const m = QS_MARK.exec(line);
+      if (!m) {
+        para(line);
+        continue;
+      }
+      const kind = qsKind(m[1]);
+      if (open && !open.kind) open.kind = kind;
+      if (!open || open.kind !== kind) {
+        open = { head: "", kind, items: [] };
+        blocks.push(open);
+      }
+      open.items.push({ mark: m[1], text: m[2] });
+    }
+    // A heading with no items, or one lone marker ("A. P. J. Abdul Kalam ..."),
+    // is a sentence that only looks like a list.
+    return blocks.map((b) => {
+      if (!b.items || b.items.length >= (b.head ? 1 : 2)) return b;
+      return { text: b.head || `${b.items[0].mark} ${b.items[0].text}` };
+    });
+  }
+
+  function questionHtml(text) {
+    const blocks = questionBlocks(text);
+    if (blocks.length < 2 && !(blocks[0] && blocks[0].items)) return esc(text);
+    const list = (b) =>
+      `<span class="qs-list">${b.head ? `<span class="qs-head">${esc(b.head)}</span>` : ""}${
+        b.items.map((it) => `<span class="qs-item"><span class="qs-mark">${esc(it.mark)}</span>` +
+          `<span>${esc(it.text)}</span></span>`).join("")}</span>`;
+    let out = "";
+    for (let i = 0; i < blocks.length; i++) {
+      const b = blocks[i];
+      if (!b.items) {
+        out += `<span class="qs-line">${esc(b.text)}</span>`;
+      } else if (blocks[i + 1] && blocks[i + 1].items) {
+        out += `<span class="qs-cols">${list(b)}${list(blocks[++i])}</span>`;
+      } else {
+        out += list(b);
+      }
+    }
+    return `<span class="qs">${out}</span>`;
+  }
+
   /**
    * Dynamic SEO helpers — pages addressed by query params (?subject=, ?topic=,
    * ?mode=) refresh their own canonical / robots / social tags so every topic
@@ -2663,7 +2742,7 @@ const HOA = (() => {
   }
 
   return {
-    db, loadIndex, loadQuestions, normalizeQuestions, loadStudySubjects,
+    db, loadIndex, loadQuestions, normalizeQuestions, loadStudySubjects, questionHtml,
     toast, esc, seo, countUp, fmtTime, uid, langBadge,
     fileUrl,
     /* The one search index builder, and the sections it folds in. search.html

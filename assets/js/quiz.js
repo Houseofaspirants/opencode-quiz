@@ -437,7 +437,7 @@
 
       els.qCount.textContent = say(`ਸਵਾਲ ${S.i + 1} / ${QUIZ.questions.length}`,
         `Question ${S.i + 1} of ${QUIZ.questions.length}`);
-      els.qText.innerHTML = esc(q.q);
+      els.qText.innerHTML = HOA.questionHtml(q.q);
       // DI table / chart above the question (hidden when the question has none).
       if (window.HOA_DI) window.HOA_DI.render(els.qData, q.data);
       else if (els.qData) els.qData.hidden = true;
@@ -595,7 +595,7 @@
       const q = altQuestions && altQuestions[i];
       body = q
         ? `<div class="q-alt-body" lang="${ALT_LANG}">
-            <p class="q-alt-text">${esc(q.q)}</p>
+            <p class="q-alt-text">${HOA.questionHtml(q.q)}</p>
             <ol class="q-alt-opts" type="A">${q.options.map((o) => `<li>${esc(o)}</li>`).join("")}</ol>
           </div>`
         : `<p class="q-alt-text muted">${ALT_LANG === "en" ? "Not available for this question." : "ਇਸ ਸਵਾਲ ਲਈ ਉਪਲਬਧ ਨਹੀਂ।"}</p>`;

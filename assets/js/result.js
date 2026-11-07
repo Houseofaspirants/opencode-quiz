@@ -226,7 +226,7 @@
         <article class="review-item ${x.status}">
           <div class="review-head">
             <span class="q-number">${x.id}</span>
-            <span class="review-q">${esc(x.q)}</span>
+            <span class="review-q">${HOA.questionHtml(x.q)}</span>
             ${badge}
           </div>
           ${x.data && window.HOA_DI && window.HOA_DI.has(x.data)

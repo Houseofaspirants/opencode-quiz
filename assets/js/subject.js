@@ -70,6 +70,10 @@
   // "category" = inside one category (show its topics)
   // "flat" = subject without categories (show its topics directly)
   const level = !hierarchical ? "flat" : category ? "category" : "root";
+  // Current Affairs: every category is a month ("October 2026", newest first,
+  // from the index builders). A month holds one set of parts, so it opens on
+  // those parts directly rather than on a one-folder chapter list.
+  const monthly = hierarchical && categories.every((c) => /^[A-Z][a-z]+ \d{4}$/.test(c.name));
 
   /* -------------------------------------------------------- Category groups -
    * The data model is Subject > Category > Topic — there is no fourth level,
@@ -328,6 +332,8 @@
     );
   }
   const chapter = chapterList.find((c) => c.id === chapterParam) || null;
+  const monthParts = monthly && level === "category" && !chapter
+    ? chapterList.flatMap((c) => c.topics) : null;
   const chapterBase =
     level === "category"
       ? `subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(category.id)}`
@@ -359,10 +365,12 @@
   };
   if (countTopics && countTopicsLabel) {
     countTopicsLabel.textContent =
-      level === "root" ? "Categories" : chapter ? "Parts" : "Chapters";
+      level === "root" ? (monthly ? "Months" : "Categories")
+        : chapter || monthParts ? "Parts" : "Chapters";
     setStat(
       countTopics,
-      level === "root" ? categories.length : chapter ? chapter.topics.length : chapterList.length
+      level === "root" ? categories.length
+        : (monthParts || (chapter ? chapter.topics : chapterList)).length
     );
   }
   const statList = chapter ? chapter.topics : topicList;
@@ -378,8 +386,15 @@
       ? `questions/${subject.id}/${category.folder || category.id}/`
       : `questions/${subject.id}/`;
   if (secEyebrow && secTitle && secHint) {
-    secEyebrow.textContent = "Study Material";
-    if (level === "root") {
+    secEyebrow.textContent = monthly ? "Month-wise practice" : "Study Material";
+    if (monthly && level === "root") {
+      secTitle.textContent = "Pick a month";
+      secHint.textContent = "Newest month first. Each month opens its MCQ sets.";
+    } else if (monthParts) {
+      secTitle.textContent = "Pick a part to start";
+      secHint.innerHTML =
+        `<a href="subject?subject=${encodeURIComponent(subject.id)}">← All months</a>`;
+    } else if (level === "root") {
       secTitle.textContent = "Pick a category to study";
       secHint.textContent =
         "Each category opens its chapters — every JSON file inside the category folder appears automatically.";
@@ -397,9 +412,10 @@
     }
   }
   if (filterEl && level === "root") {
-    filterEl.placeholder = "Filter categories…";
-    filterEl.setAttribute("aria-label", "Filter categories");
-  } else if (filterEl && !chapter) {
+    const what = monthly ? "months" : "categories";
+    filterEl.placeholder = `Filter ${what}…`;
+    filterEl.setAttribute("aria-label", `Filter ${what}`);
+  } else if (filterEl && !chapter && !monthParts) {
     filterEl.placeholder = "Filter chapters…";
     filterEl.setAttribute("aria-label", "Filter chapters");
   }
@@ -468,7 +484,7 @@
         : `${n} topic${n === 1 ? "" : "s"} · ${q} question${q === 1 ? "" : "s"} · Open →`);
     return `
     <a class="card quiz-card" href="subject?subject=${encodeURIComponent(subject.id)}&category=${encodeURIComponent(c.id)}">
-      <span class="qc-icon">${c.icon || "📁"}</span>
+      <span class="qc-icon">${monthly ? "🗓️" : c.icon || "📁"}</span>
       <span>
         <h3>${esc(c.name)}</h3>
         <span class="qc-sub">${sub}</span>
@@ -608,14 +624,14 @@
       wrap.innerHTML = emptyTopics();
       return;
     }
-    if (chapter) {
+    if (chapter || monthParts) {
       wrap.innerHTML = list.length ? list.map(partCard).join("") : noMatch("part");
       return;
     }
     wrap.innerHTML = list.length ? list.map(chapterCard).join("") : noMatch("chapter");
   }
 
-  const initial = showCategories ? categories : chapter ? chapter.topics : chapterList;
+  const initial = showCategories ? categories : monthParts || (chapter ? chapter.topics : chapterList);
   render(initial);
 
   /* ------------------------------------------------- Instant filter (same) - */

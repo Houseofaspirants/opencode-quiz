@@ -1949,6 +1949,10 @@ if landing_pages:
         # one flashcard per printed question that shows its answer.
         quiz_nodes = [n for n in ld_nodes(h) if "Quiz" in ld_type(n)]
         visible = h.count('<details class="qb-ans">')
+        # Scripts go first: the JSON-LD under test must not satisfy its own check.
+        squash = lambda text: re.sub(r"[\W_]+", "", str(text))
+        page_words = squash(html_mod.unescape(re.sub(
+            r"<[^>]+>", " ", re.sub(r"<(script|style)\b.*?</\1>", " ", h, flags=re.S))))
         if visible and not quiz_nodes:
             errors.append(f"{f}: question bank without its Quiz (Education Q&A) schema")
         for qn in quiz_nodes:
@@ -1960,7 +1964,10 @@ if landing_pages:
                 if node.get("eduQuestionType") != "Flashcard":
                     errors.append(f"{f}: hasPart entry missing eduQuestionType: Flashcard")
                     break
-                if html_mod.escape(str(node.get("text", "")), quote=True) not in h:
+                # Words in order, not raw markup: a list question prints its
+                # statements in separate spans (question_html), so the marks
+                # between them differ while every word is on the page.
+                if squash(node.get("text", "")) not in page_words:
                     errors.append(f"{f}: flashcard text not visible on the page: "
                                   f"{str(node.get('text', ''))[:50]!r}")
                     break

@@ -3980,6 +3980,17 @@ body.rbv-open { overflow: hidden; }
 .qb-list{list-style:decimal outside;padding-left:1.4rem;display:grid;gap:14px;margin:0}
 .qb-item{padding:16px 18px}
 .qb-q{font-weight:600;margin:0 0 8px}
+/* Structured question text (HOA.questionHtml / question_html): statements,
+   List I / List II and ordering items. Spans, because the text sits in an h2. */
+.qs,.qs-line{display:block}
+.qs>*+*{margin-top:.5em}
+.qs-list{display:grid;gap:.3em}
+.qs-list>*{min-width:0}
+.qs-head{display:block;font-weight:800;color:color-mix(in srgb,var(--brand-2) 65%,var(--text))}
+.qs-item{display:grid;grid-template-columns:auto minmax(0,1fr);gap:.45em;font-weight:600}
+.qs-mark{min-width:1.6em;font-weight:800;color:color-mix(in srgb,var(--brand-2) 65%,var(--text))}
+.qs-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7em 1.5em;align-items:start}
+@media (max-width:520px){.qs-cols{grid-template-columns:minmax(0,1fr)}}
 .qb-opts{margin:0 0 10px;padding-left:1.6rem;display:grid;gap:4px;list-style:upper-alpha}
 .qb-opts li{display:list-item}
 .qb-ans summary{cursor:pointer;color:var(--primary,#4f46e5);font-weight:600;min-height:44px;display:flex;align-items:center}
