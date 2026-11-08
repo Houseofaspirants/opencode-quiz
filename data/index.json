@@ -1,9 +1,9 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-08T06:15:03.128Z",
+  "generatedAt": "2026-11-08T06:57:33.146Z",
   "stats": {
     "subjects": 7,
-    "categories": 52,
+    "categories": 50,
     "topics": 103,
     "quizzes": 103,
     "questions": 2383,
@@ -2134,14 +2134,6 @@
           "landing": "/category-gk-economy"
         },
         {
-          "id": "science-technology",
-          "name": "Science & Technology",
-          "folder": "science-technology",
-          "icon": "📁",
-          "topics": [],
-          "landing": "/category-gk-science-technology"
-        },
-        {
           "id": "punjab-gk",
           "name": "Punjab GK",
           "folder": "punjab-gk",
@@ -2676,14 +2668,6 @@
             }
           ],
           "landing": "/category-gk-culture-of-punjab"
-        },
-        {
-          "id": "punjab-literature",
-          "name": "Punjab Literature",
-          "folder": "punjab-literature",
-          "icon": "📁",
-          "topics": [],
-          "landing": "/category-gk-punjab-literature"
         },
         {
           "id": "geography-of-punjab",
