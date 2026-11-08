@@ -741,22 +741,22 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 38,
-      "newest": "2026-11-04",
-      "totalSize": 75973279,
-      "chapters": 35,
+      "count": 40,
+      "newest": "2026-11-08",
+      "totalSize": 79496275,
+      "chapters": 37,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 38,
-          "chapters": 35,
-          "pages": 188,
-          "totalSize": 75973279,
-          "newest": "2026-11-04",
-          "categories": 12,
+          "files": 40,
+          "chapters": 37,
+          "pages": 198,
+          "totalSize": 79496275,
+          "newest": "2026-11-08",
+          "categories": 10,
           "regions": 2
         },
         "regions": [
@@ -770,7 +770,7 @@
               "pages": 92,
               "totalSize": 40616255,
               "newest": "2026-10-30",
-              "categories": 6
+              "categories": 5
             },
             "categories": [
               {
@@ -1185,41 +1185,6 @@
                 "claimedChapters": []
               },
               {
-                "id": "science-technology",
-                "name": "Science & Technology",
-                "description": "Physics, chemistry and biology at the level the papers ask.",
-                "folders": [
-                  "science"
-                ],
-                "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
-                },
-                "languages": [
-                  {
-                    "id": "pa",
-                    "name": "Punjabi",
-                    "native": "ਪੰਜਾਬੀ",
-                    "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
-                  }
-                ],
-                "subCategories": [],
-                "claimedChapters": []
-              },
-              {
                 "id": "economy",
                 "name": "Indian Economy",
                 "description": "Budget, banking, taxes, schemes and five-year plans.",
@@ -1364,12 +1329,12 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 20,
-              "chapters": 20,
-              "pages": 96,
-              "totalSize": 35357024,
-              "newest": "2026-11-04",
-              "categories": 6
+              "files": 22,
+              "chapters": 22,
+              "pages": 106,
+              "totalSize": 38880020,
+              "newest": "2026-11-08",
+              "categories": 5
             },
             "categories": [
               {
@@ -1571,11 +1536,11 @@
                   "culture-of-punjab"
                 ],
                 "stats": {
-                  "files": 2,
-                  "chapters": 2,
-                  "pages": 8,
-                  "totalSize": 3521887,
-                  "newest": "2026-10-25"
+                  "files": 4,
+                  "chapters": 4,
+                  "pages": 18,
+                  "totalSize": 7044883,
+                  "newest": "2026-11-08"
                 },
                 "languages": [
                   {
@@ -1583,18 +1548,29 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
-                        "id": "01 - ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ",
+                        "id": "01-panjabi-bhasha-lipi-ate-kailandr",
                         "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬੀ ਭਾਸ਼ਾ ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ",
                         "parts": [
                           {
-                            "file": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+                            "file": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
                             "n": 1
                           }
                         ],
                         "pages": 4
+                      },
+                      {
+                        "id": "02-panjab-da-sahit",
+                        "name": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦਾ ਸਾਹਿਤ",
+                        "parts": [
+                          {
+                            "file": "material-02-panjab-da-sahit.html",
+                            "n": 2
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
                   },
@@ -1603,55 +1579,31 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
-                        "id": "01 - Punjabi Language, Script and Calendar",
+                        "id": "01-punjabi-language-script-and-calendar",
                         "name": "Chapter 1: Punjabi Language Script and Calendar",
                         "parts": [
                           {
-                            "file": "material-punjabi-language-script-and-calendar-notes-english.html",
+                            "file": "material-01-punjabi-language-script-and-calendar.html",
                             "n": 1
                           }
                         ],
                         "pages": 4
+                      },
+                      {
+                        "id": "02-literature-of-punjab",
+                        "name": "Chapter 2: Literature of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-02-literature-of-punjab.html",
+                            "n": 2
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
-                  }
-                ],
-                "subCategories": [],
-                "claimedChapters": []
-              },
-              {
-                "id": "punjab-literature",
-                "name": "Punjab Literature",
-                "description": "Punjabi poets and writers, the scripture's authors and the literary awards.",
-                "folders": [
-                  "punjab-literature"
-                ],
-                "stats": {
-                  "files": 0,
-                  "chapters": 0,
-                  "pages": 0,
-                  "totalSize": 0,
-                  "newest": ""
-                },
-                "languages": [
-                  {
-                    "id": "pa",
-                    "name": "Punjabi",
-                    "native": "ਪੰਜਾਬੀ",
-                    "flag": "🇵🇺",
-                    "count": 0,
-                    "chapters": []
-                  },
-                  {
-                    "id": "en",
-                    "name": "English",
-                    "native": "English",
-                    "flag": "🇬🇧",
-                    "count": 0,
-                    "chapters": []
                   }
                 ],
                 "subCategories": [],
@@ -1815,8 +1767,8 @@
         ]
       },
       "counts": {
-        "en": 19,
-        "pa": 19
+        "en": 20,
+        "pa": 20
       },
       "pages": {
         "en": "study-gk.html",
@@ -2189,46 +2141,6 @@
       "page": "study-economy.html"
     },
     {
-      "id": "science",
-      "name": "Science",
-      "icon": "🔬",
-      "color": "#8b5cf6",
-      "description": "Physics, chemistry and biology at the level the papers ask.",
-      "order": 12,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
-      "languages": [
-        {
-          "id": "pa",
-          "name": "Punjabi",
-          "native": "ਪੰਜਾਬੀ",
-          "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
-        },
-        {
-          "id": "en",
-          "name": "English",
-          "native": "English",
-          "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
-        }
-      ],
-      "chapters": 0,
-      "hidden": true,
-      "counts": {
-        "en": 0,
-        "pa": 0
-      },
-      "pages": {
-        "en": "study-science.html",
-        "pa": "pa/study-science.html"
-      },
-      "page": "study-science.html"
-    },
-    {
       "id": "miscellaneous",
       "name": "Miscellaneous",
       "icon": "🗂️",
@@ -2471,27 +2383,38 @@
       "color": "#ec4899",
       "description": "Festivals, folk forms, gurdwaras, cuisine and the living customs of the state.",
       "order": 15,
-      "count": 2,
-      "newest": "2026-10-25",
-      "totalSize": 3521887,
+      "count": 4,
+      "newest": "2026-11-08",
+      "totalSize": 7044883,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
-              "id": "01 - ਪੰਜਾਬੀ ਭਾਸ਼ਾ, ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ",
+              "id": "01-panjabi-bhasha-lipi-ate-kailandr",
               "name": "ਅਧਿਆਇ 1: ਪੰਜਾਬੀ ਭਾਸ਼ਾ ਲਿਪੀ ਅਤੇ ਕੈਲੰਡਰ",
               "parts": [
                 {
-                  "file": "material-punjabi-language-script-and-calendar-notes-punjabi.html",
+                  "file": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
                   "n": 1
                 }
               ],
               "pages": 4
+            },
+            {
+              "id": "02-panjab-da-sahit",
+              "name": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦਾ ਸਾਹਿਤ",
+              "parts": [
+                {
+                  "file": "material-02-panjab-da-sahit.html",
+                  "n": 2
+                }
+              ],
+              "pages": 5
             }
           ]
         },
@@ -2500,73 +2423,44 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
-              "id": "01 - Punjabi Language, Script and Calendar",
+              "id": "01-punjabi-language-script-and-calendar",
               "name": "Chapter 1: Punjabi Language Script and Calendar",
               "parts": [
                 {
-                  "file": "material-punjabi-language-script-and-calendar-notes-english.html",
+                  "file": "material-01-punjabi-language-script-and-calendar.html",
                   "n": 1
                 }
               ],
               "pages": 4
+            },
+            {
+              "id": "02-literature-of-punjab",
+              "name": "Chapter 2: Literature of Punjab",
+              "parts": [
+                {
+                  "file": "material-02-literature-of-punjab.html",
+                  "n": 2
+                }
+              ],
+              "pages": 5
             }
           ]
         }
       ],
-      "chapters": 2,
+      "chapters": 4,
       "hidden": true,
       "counts": {
-        "en": 1,
-        "pa": 1
+        "en": 2,
+        "pa": 2
       },
       "pages": {
         "en": "study-culture-of-punjab.html",
         "pa": "pa/study-culture-of-punjab.html"
       },
       "page": "study-culture-of-punjab.html"
-    },
-    {
-      "id": "punjab-literature",
-      "name": "Punjab Literature",
-      "icon": "📖",
-      "color": "#8b5cf6",
-      "description": "Punjabi poets and writers, the scripture's authors and the literary awards.",
-      "order": 16,
-      "count": 0,
-      "newest": "",
-      "totalSize": 0,
-      "languages": [
-        {
-          "id": "pa",
-          "name": "Punjabi",
-          "native": "ਪੰਜਾਬੀ",
-          "flag": "🇵🇺",
-          "count": 0,
-          "chapters": []
-        },
-        {
-          "id": "en",
-          "name": "English",
-          "native": "English",
-          "flag": "🇬🇧",
-          "count": 0,
-          "chapters": []
-        }
-      ],
-      "chapters": 0,
-      "hidden": true,
-      "counts": {
-        "en": 0,
-        "pa": 0
-      },
-      "pages": {
-        "en": "study-punjab-literature.html",
-        "pa": "pa/study-punjab-literature.html"
-      },
-      "page": "study-punjab-literature.html"
     },
     {
       "id": "geography-of-punjab",
@@ -2737,6 +2631,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 85,
+  "total": 87,
   "generatedBy": "scripts/study_material.py"
 }
