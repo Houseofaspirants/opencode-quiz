@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 618,
-  "edges": 4913,
+  "nodes": 620,
+  "edges": 4935,
   "silos": 35,
   "clusters": 164,
   "pillars": 34
@@ -3596,6 +3596,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 1: ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-maths-average-notes-punjabi-english",
+   "url": "/material-maths-average-notes-punjabi-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-maths-average-notes-punjabi-english.html",
+   "url": "/material-maths-average-notes-punjabi-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 5: Average (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -9179,6 +9203,12 @@
   },
   {
    "from": "archive-category-quantitative-aptitude.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-quantitative-aptitude.html",
    "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -14280,6 +14310,12 @@
   {
    "from": "archives.html",
    "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21778,6 +21814,96 @@
    "weight": 1
   },
   {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-maths-average-notes-punjabi-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "study-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "subject-quant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-maths-number-system-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-maths-simplification-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -21859,6 +21985,12 @@
    "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "to": "material-maths-simplification-notes-punjabi-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -21946,6 +22078,12 @@
    "weight": 1
   },
   {
+   "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-maths-number-system-notes-punjabi-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -22030,6 +22168,12 @@
    "weight": 1
   },
   {
+   "from": "material-maths-number-system-notes-punjabi-english.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-maths-simplification-notes-punjabi-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -22111,6 +22255,12 @@
    "from": "material-maths-simplification-notes-punjabi-english.html",
    "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -22577,7 +22727,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-01-punjabi-language-script-and-calendar.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -22661,7 +22811,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-01-punjabi-language-script-and-calendar.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25223,7 +25373,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-01-punjabi-language-script-and-calendar.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25307,7 +25457,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-01-punjabi-language-script-and-calendar.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -30125,12 +30275,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -30168,6 +30312,12 @@
   {
    "from": "pdfs.html",
    "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35117,6 +35267,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -35393,12 +35549,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -35436,6 +35586,12 @@
   {
    "from": "study-notes.html",
    "to": "material-maharaja-ranjit-singh-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-maths-average-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

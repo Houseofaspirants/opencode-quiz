@@ -657,9 +657,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 4,
-      "newest": "2026-11-02",
-      "totalSize": 18479392,
+      "count": 5,
+      "newest": "2026-11-09",
+      "totalSize": 23962036,
       "languages": [
         {
           "id": "pa",
@@ -674,7 +674,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "01 - Number System",
@@ -719,13 +719,24 @@
                 }
               ],
               "pages": 219
+            },
+            {
+              "id": "05 - Average",
+              "name": "Chapter 5: Average",
+              "parts": [
+                {
+                  "file": "material-maths-average-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 167
             }
           ]
         }
       ],
-      "chapters": 4,
+      "chapters": 5,
       "counts": {
-        "en": 4,
+        "en": 5,
         "pa": 0
       },
       "pages": {
@@ -2631,6 +2642,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 87,
+  "total": 88,
   "generatedBy": "scripts/study_material.py"
 }
