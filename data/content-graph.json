@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 620,
+  "nodes": 624,
   "edges": 4935,
   "silos": 35,
-  "clusters": 164,
+  "clusters": 173,
   "pillars": 34
  },
  "nodes": [
@@ -6737,18 +6737,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "url": "/quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "url": "/quiz-gk-basic-concepts-of-economy-part-1.html",
    "type": "quiz",
@@ -6941,42 +6929,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-quant-01-number-system-part-2.html",
-   "url": "/quiz-quant-01-number-system-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-01-number-system-part-3.html",
-   "url": "/quiz-quant-01-number-system-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-01-number-system-part-4.html",
-   "url": "/quiz-quant-01-number-system-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
    "type": "quiz",
@@ -7063,6 +7015,102 @@
   {
    "id": "quiz-quant-03-decimal-fractions-part-4.html",
    "url": "/quiz-quant-03-decimal-fractions-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-1.html",
+   "url": "/quiz-quant-04-simplification-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-2.html",
+   "url": "/quiz-quant-04-simplification-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-3.html",
+   "url": "/quiz-quant-04-simplification-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-4.html",
+   "url": "/quiz-quant-04-simplification-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-5.html",
+   "url": "/quiz-quant-04-simplification-part-5.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-6.html",
+   "url": "/quiz-quant-04-simplification-part-6.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-7.html",
+   "url": "/quiz-quant-04-simplification-part-7.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-04-simplification-part-8.html",
+   "url": "/quiz-quant-04-simplification-part-8.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -16901,36 +16949,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-maharaja-ranjit-singh-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -16950,24 +16968,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-01-number-system-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17016,6 +17016,54 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-03-decimal-fractions-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-5.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-6.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-7.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-04-simplification-part-8.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22199,6 +22247,12 @@
   },
   {
    "from": "material-maths-simplification-notes-punjabi-english.html",
+   "to": "quiz-quant-04-simplification-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-simplification-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -22212,12 +22266,6 @@
   {
    "from": "material-maths-simplification-notes-punjabi-english.html",
    "to": "study-quant.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-simplification-notes-punjabi-english.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -38544,6 +38592,7 @@
     "category-quant-01-number-system.html",
     "category-quant-02-hcf-and-lcm-of-numbers.html",
     "category-quant-03-decimal-fractions.html",
+    "category-quant-04-simplification.html",
     "topic-quant-01-number-system-part-1.html",
     "topic-quant-01-number-system-part-2.html",
     "topic-quant-01-number-system-part-3.html",
@@ -38555,7 +38604,15 @@
     "topic-quant-03-decimal-fractions-part-1.html",
     "topic-quant-03-decimal-fractions-part-2.html",
     "topic-quant-03-decimal-fractions-part-3.html",
-    "topic-quant-03-decimal-fractions-part-4.html"
+    "topic-quant-03-decimal-fractions-part-4.html",
+    "topic-quant-04-simplification-part-1.html",
+    "topic-quant-04-simplification-part-2.html",
+    "topic-quant-04-simplification-part-3.html",
+    "topic-quant-04-simplification-part-4.html",
+    "topic-quant-04-simplification-part-5.html",
+    "topic-quant-04-simplification-part-6.html",
+    "topic-quant-04-simplification-part-7.html",
+    "topic-quant-04-simplification-part-8.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
