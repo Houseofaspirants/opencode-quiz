@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Simplification"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-051",
+      "number": 51,
+      "question": "Find the value of ? in (5/8) × ? + 42 = 217.",
+      "options": [
+        {
+          "label": "A",
+          "text": "175"
+        },
+        {
+          "label": "B",
+          "text": "350"
+        },
+        {
+          "label": "C",
+          "text": "280"
+        },
+        {
+          "label": "D",
+          "text": "224"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The fractional part is 175; multiply by 8/5 to get ? = 280."
+    },
+    {
+      "id": "04-052",
+      "number": 52,
+      "question": "Evaluate: 1006 × 994.",
+      "options": [
+        {
+          "label": "A",
+          "text": "999994"
+        },
+        {
+          "label": "B",
+          "text": "999964"
+        },
+        {
+          "label": "C",
+          "text": "999936"
+        },
+        {
+          "label": "D",
+          "text": "1000036"
+        }
+      ],
+      "answer": "B",
+      "explanation": "These are 1000 ± 6, so the product is 1000² − 6² = 999964."
+    },
+    {
+      "id": "04-053",
+      "number": 53,
+      "question": "Find (47³ + 23³)/(47² − 47 × 23 + 23²) − 23.",
+      "options": [
+        {
+          "label": "A",
+          "text": "93"
+        },
+        {
+          "label": "B",
+          "text": "70"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Factor the sum of cubes; the quotient is 47 + 23, so subtracting 23 gives 47."
+    },
+    {
+      "id": "04-054",
+      "number": 54,
+      "question": "Evaluate: [{72 ÷ (3 + 5)} + 11] × 6 − 48 ÷ 4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "108"
+        },
+        {
+          "label": "B",
+          "text": "120"
+        },
+        {
+          "label": "C",
+          "text": "96"
+        },
+        {
+          "label": "D",
+          "text": "132"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The square bracket equals 9 + 11 = 20; then 120 − 12 = 108."
+    },
+    {
+      "id": "04-055",
+      "number": 55,
+      "question": "Evaluate: (7.25 + 2.75) × (0.625 ÷ 0.125).",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sum is 10 and the quotient is 5; their product is 50."
+    },
+    {
+      "id": "04-056",
+      "number": 56,
+      "question": "Find 1/{2 + [(√48 + √75)/(√27 − √12)]}.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/5"
+        },
+        {
+          "label": "B",
+          "text": "1/9"
+        },
+        {
+          "label": "C",
+          "text": "1/11"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Express the surds in multiples of √3: the inner fraction is (4 + 5)/(3 − 2) = 9. The full value is 1/(2 + 9) = 1/11."
+    },
+    {
+      "id": "04-057",
+      "number": 57,
+      "question": "Evaluate: ∛(64 × 125).",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cube roots distribute over this product: ∛64 × ∛125 = 4 × 5 = 20."
+    },
+    {
+      "id": "04-058",
+      "number": 58,
+      "question": "Evaluate: 144 − 96 ÷ (8 × 3) + 5 × 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "151"
+        },
+        {
+          "label": "B",
+          "text": "179"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "175"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Evaluate the grouped product first: 144 − 4 + 35 = 175."
+    },
+    {
+      "id": "04-059",
+      "number": 59,
+      "question": "A tank is 7/8 full. After 36 litres are removed and 12 litres are added, it is 5/8 full. What is 3/4 of its capacity?",
+      "options": [
+        {
+          "label": "A",
+          "text": "72 litres"
+        },
+        {
+          "label": "B",
+          "text": "108 litres"
+        },
+        {
+          "label": "C",
+          "text": "48 litres"
+        },
+        {
+          "label": "D",
+          "text": "96 litres"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The net loss of 24 litres equals 2/8 of capacity, so capacity = 96 litres. Its 3/4 is 72 litres."
+    },
+    {
+      "id": "04-060",
+      "number": 60,
+      "question": "Which listed number can equal 683 × 47, using its last digit and an estimate between 32000 and 32200?",
+      "options": [
+        {
+          "label": "A",
+          "text": "32100"
+        },
+        {
+          "label": "B",
+          "text": "32107"
+        },
+        {
+          "label": "C",
+          "text": "31101"
+        },
+        {
+          "label": "D",
+          "text": "32101"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The last digit is 3 × 7 → 1; the range eliminates 31101. The remaining value is 32101."
+    },
+    {
+      "id": "04-061",
+      "number": 61,
+      "question": "Evaluate: (5³ − 5²) ÷ 5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Factor out 5²: 25 × (5 − 1) ÷ 5 = 20."
+    },
+    {
+      "id": "04-062",
+      "number": 62,
+      "question": "Which option is closest to √624 × 15.9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "400"
+        },
+        {
+          "label": "C",
+          "text": "440"
+        },
+        {
+          "label": "D",
+          "text": "480"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use √625 = 25 and 15.9 ≈ 16; 25 × 16 = 400, which is the nearest listed value."
+    },
+    {
+      "id": "04-063",
+      "number": 63,
+      "question": "Find 4 × [(√11 + √3)/(√11 − √3) + (√11 − √3)/(√11 + √3)] − 6.",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Combine the conjugate fractions: their sum is 2(11 + 3)/(11 − 3) = 7/2. Thus 4 × (7/2) − 6 = 8."
+    },
+    {
+      "id": "04-064",
+      "number": 64,
+      "question": "Evaluate: 5/6 + 7/15 − 3/10.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2/3"
+        },
+        {
+          "label": "C",
+          "text": "6/5"
+        },
+        {
+          "label": "D",
+          "text": "4/5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "With denominator 30, the numerator is 25 + 14 − 9 = 30; the value is 1."
+    },
+    {
+      "id": "04-065",
+      "number": 65,
+      "question": "Find the value of 16⅔% of 516.",
+      "options": [
+        {
+          "label": "A",
+          "text": "85"
+        },
+        {
+          "label": "B",
+          "text": "172"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "86"
+        }
+      ],
+      "answer": "D",
+      "explanation": "16⅔% is exactly 1/6, so 516 ÷ 6 = 86."
+    },
+    {
+      "id": "04-066",
+      "number": 66,
+      "question": "If √(x + 24) = √x + 2 and x ≥ 0, find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Square once: 24 = 4√x + 4, so √x = 5 and x = 25."
+    },
+    {
+      "id": "04-067",
+      "number": 67,
+      "question": "If a ⊙ b = (a + b)/(a − b), find (9 ⊙ 3) + (10 ⊙ 6).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The two results are 12/6 = 2 and 16/4 = 4; their sum is 6."
+    },
+    {
+      "id": "04-068",
+      "number": 68,
+      "question": "Of 150 students, 84 play cricket and 72 play football; 30 play neither. How many play cricket only?",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At least one = 120; both = 84 + 72 − 120 = 36. Cricket only = 84 − 36 = 48."
+    },
+    {
+      "id": "04-069",
+      "number": 69,
+      "question": "Evaluate: |−12 + 5| + |−18 ÷ 3|.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "-13"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Take magnitudes after simplifying: 7 + 6 = 13."
+    },
+    {
+      "id": "04-070",
+      "number": 70,
+      "question": "If p − q = 9 and p² + q² = 369, find (p + q)².",
+      "options": [
+        {
+          "label": "A",
+          "text": "576"
+        },
+        {
+          "label": "B",
+          "text": "657"
+        },
+        {
+          "label": "C",
+          "text": "738"
+        },
+        {
+          "label": "D",
+          "text": "450"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use (p + q)² = 2(p² + q²) − (p − q)² = 738 − 81 = 657."
+    },
+    {
+      "id": "04-071",
+      "number": 71,
+      "question": "A quiz has 40 questions, with +4 for a correct answer and −1 for a wrong answer. Simran attempts all and scores 125. How many answers are wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A perfect score is 160; each wrong answer lowers it by 5. Thus wrong answers = (160 − 125) ÷ 5 = 7."
+    },
+    {
+      "id": "04-072",
+      "number": 72,
+      "question": "Evaluate: 48 × 25.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2400"
+        },
+        {
+          "label": "B",
+          "text": "960"
+        },
+        {
+          "label": "C",
+          "text": "1250"
+        },
+        {
+          "label": "D",
+          "text": "1200"
+        }
+      ],
+      "answer": "D",
+      "explanation": "25 is one quarter of 100: 48 ÷ 4 × 100 = 1200."
+    },
+    {
+      "id": "04-073",
+      "number": 73,
+      "question": "Evaluate: [(3 + 1/4) − (1 + 5/6)] × 12.",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use twelfths: (39/12 − 22/12) × 12 = 17."
+    },
+    {
+      "id": "04-074",
+      "number": 74,
+      "question": "If x > 0 and x + √x = 72, find x − √x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "56"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Put √x = t; t(t + 1) = 72 = 8 × 9, so t = 8 and x = 64. The required value is 64 − 8 = 56."
+    },
+    {
+      "id": "04-075",
+      "number": 75,
+      "question": "Find the value of [(45% of 360) − (15% of 240)] ÷ (7% of 200).",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The numerator is 162 − 36 = 126 and the denominator is 14; hence 126 ÷ 14 = 9."
+    }
+  ]
+}

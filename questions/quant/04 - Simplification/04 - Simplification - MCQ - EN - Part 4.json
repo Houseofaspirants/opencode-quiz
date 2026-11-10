@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Simplification"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-076",
+      "number": 76,
+      "question": "Find the value of ? in 84 ÷ [? − (19 − 8)] = 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "23"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The divisor must be 12; therefore ? − 11 = 12 and ? = 23."
+    },
+    {
+      "id": "04-077",
+      "number": 77,
+      "question": "Evaluate: ∛(1728 ÷ 27).",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The radicand is 64; its cube root is 4."
+    },
+    {
+      "id": "04-078",
+      "number": 78,
+      "question": "For real x, (x − 2)³ + (x − 11)³ + (x − 14)³ = 3(x − 2)(x − 11)(x − 14). Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The three terms cannot all be equal, so the cubic identity forces their sum to be zero: 3x − 27 = 0, giving x = 9."
+    },
+    {
+      "id": "04-079",
+      "number": 79,
+      "question": "Evaluate: (4 + 1/2) ÷ (1 + 4/5) − (2 + 1/6).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/3"
+        },
+        {
+          "label": "B",
+          "text": "13/3"
+        },
+        {
+          "label": "C",
+          "text": "1/6"
+        },
+        {
+          "label": "D",
+          "text": "1/3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The quotient is (9/2) × (5/9) = 5/2; subtract 13/6 to get 1/3."
+    },
+    {
+      "id": "04-080",
+      "number": 80,
+      "question": "Amandeep reads 3/10 of a book on Monday and 2/7 of the remaining pages on Tuesday. If 150 pages remain, how many pages did the book have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "210"
+        },
+        {
+          "label": "B",
+          "text": "300"
+        },
+        {
+          "label": "C",
+          "text": "420"
+        },
+        {
+          "label": "D",
+          "text": "350"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The unread fraction is (7/10)(5/7) = 1/2; hence total pages = 150 × 2 = 300."
+    },
+    {
+      "id": "04-081",
+      "number": 81,
+      "question": "Evaluate: [(3/4 + 1/6) ÷ (5/8 − 1/3)] ÷ (1 + 1/7).",
+      "options": [
+        {
+          "label": "A",
+          "text": "11/2"
+        },
+        {
+          "label": "B",
+          "text": "22/7"
+        },
+        {
+          "label": "C",
+          "text": "11/4"
+        },
+        {
+          "label": "D",
+          "text": "7/22"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first quotient is (11/12) ÷ (7/24) = 22/7; dividing by 8/7 gives 11/4."
+    },
+    {
+      "id": "04-082",
+      "number": 82,
+      "question": "Evaluate: √0.0081 × 100.",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "81"
+        },
+        {
+          "label": "C",
+          "text": "0.9"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "A",
+      "explanation": "√0.0081 = 0.09; multiplying by 100 gives 9."
+    },
+    {
+      "id": "04-083",
+      "number": 83,
+      "question": "In a survey, 35 people use only app X, 28 use only app Y, 17 use both, and 12 use neither. How many people were surveyed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "75"
+        },
+        {
+          "label": "B",
+          "text": "109"
+        },
+        {
+          "label": "C",
+          "text": "80"
+        },
+        {
+          "label": "D",
+          "text": "92"
+        }
+      ],
+      "answer": "D",
+      "explanation": "These four groups do not overlap; add 35 + 28 + 17 + 12 = 92."
+    },
+    {
+      "id": "04-084",
+      "number": 84,
+      "question": "Find the positive value of x if x² − 14x + 49 = 4x² − 28x + 49.",
+      "options": [
+        {
+          "label": "A",
+          "text": "14/3"
+        },
+        {
+          "label": "B",
+          "text": "7/3"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Cancel 49 and rearrange: 3x² − 14x = x(3x − 14) = 0. The positive solution is 14/3."
+    },
+    {
+      "id": "04-085",
+      "number": 85,
+      "question": "Round 83.746 to two decimal places and 6.284 to two decimal places. What is their sum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "89.93"
+        },
+        {
+          "label": "B",
+          "text": "90.04"
+        },
+        {
+          "label": "C",
+          "text": "90.02"
+        },
+        {
+          "label": "D",
+          "text": "90.03"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The rounded numbers are 83.75 and 6.28; their sum is 90.03."
+    },
+    {
+      "id": "04-086",
+      "number": 86,
+      "question": "Evaluate: 49².",
+      "options": [
+        {
+          "label": "A",
+          "text": "2499"
+        },
+        {
+          "label": "B",
+          "text": "2401"
+        },
+        {
+          "label": "C",
+          "text": "2501"
+        },
+        {
+          "label": "D",
+          "text": "2399"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use (50 − 1)² = 2500 − 100 + 1 = 2401."
+    },
+    {
+      "id": "04-087",
+      "number": 87,
+      "question": "Evaluate: 4.08 ÷ 0.12 + 0.09 ÷ 0.003.",
+      "options": [
+        {
+          "label": "A",
+          "text": "37"
+        },
+        {
+          "label": "B",
+          "text": "6.4"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "340"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Scale each quotient separately: 408 ÷ 12 + 90 ÷ 3 = 34 + 30 = 64."
+    },
+    {
+      "id": "04-088",
+      "number": 88,
+      "question": "Find (684² − 316²)/(684 − 316) − (684 − 316).",
+      "options": [
+        {
+          "label": "A",
+          "text": "1368"
+        },
+        {
+          "label": "B",
+          "text": "632"
+        },
+        {
+          "label": "C",
+          "text": "368"
+        },
+        {
+          "label": "D",
+          "text": "1000"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Cancel the difference factor to get 684 + 316; subtracting 684 − 316 leaves 2 × 316 = 632."
+    },
+    {
+      "id": "04-089",
+      "number": 89,
+      "question": "Evaluate: (4/9 ÷ 2/3) + (5/8 ÷ 15/16).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/3"
+        },
+        {
+          "label": "B",
+          "text": "8/9"
+        },
+        {
+          "label": "C",
+          "text": "2/3"
+        },
+        {
+          "label": "D",
+          "text": "4/3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Multiply by reciprocals: 2/3 + 2/3 = 4/3."
+    },
+    {
+      "id": "04-090",
+      "number": 90,
+      "question": "Evaluate: 625 × 32.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20000"
+        },
+        {
+          "label": "B",
+          "text": "18000"
+        },
+        {
+          "label": "C",
+          "text": "10000"
+        },
+        {
+          "label": "D",
+          "text": "2000"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Pair 625 × 16 = 10000; doubling gives 20000."
+    },
+    {
+      "id": "04-091",
+      "number": 91,
+      "question": "A positive integer x satisfies ∛(8x) = √(4x). Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Raise both sides to power 6: (8x)² = (4x)³, giving 64x² = 64x³. Since x > 0, x = 1."
+    },
+    {
+      "id": "04-092",
+      "number": 92,
+      "question": "Evaluate: 320 − [144 ÷ {6 + (15 − 9)}] × 7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "248"
+        },
+        {
+          "label": "B",
+          "text": "224"
+        },
+        {
+          "label": "C",
+          "text": "236"
+        },
+        {
+          "label": "D",
+          "text": "308"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The divisor is 12, so subtract 12 × 7 = 84 from 320 to get 236."
+    },
+    {
+      "id": "04-093",
+      "number": 93,
+      "question": "For 5/12 + 7/18, which option passes both the common-denominator calculation and the check that the result is below 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12/30"
+        },
+        {
+          "label": "B",
+          "text": "43/36"
+        },
+        {
+          "label": "C",
+          "text": "29/18"
+        },
+        {
+          "label": "D",
+          "text": "29/36"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use denominator 36: 15/36 + 14/36 = 29/36, which is below 1."
+    },
+    {
+      "id": "04-094",
+      "number": 94,
+      "question": "Find the value of 87.5% of 192.",
+      "options": [
+        {
+          "label": "A",
+          "text": "168"
+        },
+        {
+          "label": "B",
+          "text": "176"
+        },
+        {
+          "label": "C",
+          "text": "144"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "87.5% = 7/8, giving 192 × 7/8 = 168."
+    },
+    {
+      "id": "04-095",
+      "number": 95,
+      "question": "Find (5 + 2√6)/(5 − 2√6) + (5 − 2√6)/(5 + 2√6).",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "98"
+        },
+        {
+          "label": "C",
+          "text": "100"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The product of the two denominators is 25 − 24 = 1; the combined numerator is 2(25 + 24) = 98."
+    },
+    {
+      "id": "04-096",
+      "number": 96,
+      "question": "Evaluate: 630 ÷ 9 ÷ 5 × 4 + 26.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "70"
+        },
+        {
+          "label": "C",
+          "text": "82"
+        },
+        {
+          "label": "D",
+          "text": "306"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Successive division gives 630 ÷ 45 = 14; then 14 × 4 + 26 = 82."
+    },
+    {
+      "id": "04-097",
+      "number": 97,
+      "question": "Evaluate: −8 × (−7) − (−36) ÷ 6.",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "-62"
+        },
+        {
+          "label": "D",
+          "text": "-50"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Two negative factors give 56, and subtracting −6 gives 62."
+    },
+    {
+      "id": "04-098",
+      "number": 98,
+      "question": "Data sufficiency: What is the price of one notebook? I: 4 notebooks and 3 pens cost ₹190. II: 8 notebooks and 6 pens cost ₹380.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Even both statements together are insufficient"
+        },
+        {
+          "label": "B",
+          "text": "Both statements together are sufficient, but neither alone"
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Statement II alone is sufficient"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Statement II is exactly twice statement I, so there is only one independent equation for two prices. Even together they do not determine the notebook price."
+    },
+    {
+      "id": "04-099",
+      "number": 99,
+      "question": "If x + 1/x = 7, find x^4 + 1/x^4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2401"
+        },
+        {
+          "label": "B",
+          "text": "2209"
+        },
+        {
+          "label": "C",
+          "text": "2303"
+        },
+        {
+          "label": "D",
+          "text": "2207"
+        }
+      ],
+      "answer": "D",
+      "explanation": "First x² + 1/x² = 49 − 2 = 47; squaring once more gives 47² − 2 = 2207."
+    },
+    {
+      "id": "04-100",
+      "number": 100,
+      "question": "In 48 + 6 × 5 − 9, replace + by ÷, × by +, and − by × simultaneously once. Evaluate using normal precedence.",
+      "options": [
+        {
+          "label": "A",
+          "text": "85"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "65"
+        },
+        {
+          "label": "D",
+          "text": "53"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The new expression is 48 ÷ 6 + 5 × 9 = 8 + 45 = 53."
+    }
+  ]
+}

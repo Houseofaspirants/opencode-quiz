@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Simplification"
+  },
+  "part": 7,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-151",
+      "number": 151,
+      "question": "The block 27 repeats endlessly in 0.272727… . What is 11 times this number plus 0.75?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3.75"
+        },
+        {
+          "label": "B",
+          "text": "3.25"
+        },
+        {
+          "label": "C",
+          "text": "30.75"
+        },
+        {
+          "label": "D",
+          "text": "2.75"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The recurring value is 27/99 = 3/11; hence 11 × (3/11) + 0.75 = 3.75."
+    },
+    {
+      "id": "04-152",
+      "number": 152,
+      "question": "Evaluate: 98 × 75.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7250"
+        },
+        {
+          "label": "B",
+          "text": "7500"
+        },
+        {
+          "label": "C",
+          "text": "7450"
+        },
+        {
+          "label": "D",
+          "text": "7350"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use 75 = 3 × 100/4: 98 × 3 × 25 = 7350."
+    },
+    {
+      "id": "04-153",
+      "number": 153,
+      "question": "Find the sum of 1/(√k + √(k + 1)) for every integer k from 8 to 48 inclusive.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7 − √2"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "7 − 2√2"
+        },
+        {
+          "label": "D",
+          "text": "7 + 2√2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rationalise each term to √(k + 1) − √k; cancellation leaves √49 − √8 = 7 − 2√2."
+    },
+    {
+      "id": "04-154",
+      "number": 154,
+      "question": "₹7200 is shared equally among some volunteers. With 6 more volunteers, each would receive ₹60 less. How many volunteers were there originally?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the original count be n: 7200/n − 7200/(n + 6) = 60 gives n(n + 6) = 720 = 24 × 30. Thus n = 24."
+    },
+    {
+      "id": "04-155",
+      "number": 155,
+      "question": "Find the value of ? in 17 × 36 − ? × 12 = 228.",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "51"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract 228 from 612 and divide by 12: ? = 384 ÷ 12 = 32."
+    },
+    {
+      "id": "04-156",
+      "number": 156,
+      "question": "If 3^(x + 2) − 3^x = 648, find 2^x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factor 3^x: 8 × 3^x = 648, so 3^x = 81 and x = 4; hence 2^x = 16."
+    },
+    {
+      "id": "04-157",
+      "number": 157,
+      "question": "Evaluate: 998 × 997.",
+      "options": [
+        {
+          "label": "A",
+          "text": "996006"
+        },
+        {
+          "label": "B",
+          "text": "995000"
+        },
+        {
+          "label": "C",
+          "text": "995600"
+        },
+        {
+          "label": "D",
+          "text": "995006"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Relative to 1000, subtract 2 + 3 and add 2 × 3: 995000 + 6 = 995006."
+    },
+    {
+      "id": "04-158",
+      "number": 158,
+      "question": "Find the value of ? in 315 + ? ÷ 14 = 402.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1134"
+        },
+        {
+          "label": "B",
+          "text": "1302"
+        },
+        {
+          "label": "C",
+          "text": "1218"
+        },
+        {
+          "label": "D",
+          "text": "87"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The quotient is 402 − 315 = 87; multiply by 14 to obtain 1218."
+    },
+    {
+      "id": "04-159",
+      "number": 159,
+      "question": "If u − v = 8 and uv = 48, find (u² + v²)/(u + v)².",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/3"
+        },
+        {
+          "label": "B",
+          "text": "2/5"
+        },
+        {
+          "label": "C",
+          "text": "3/8"
+        },
+        {
+          "label": "D",
+          "text": "5/8"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The numerator is 8² + 2 × 48 = 160, while the denominator is 8² + 4 × 48 = 256; reduce to 5/8."
+    },
+    {
+      "id": "04-160",
+      "number": 160,
+      "question": "Evaluate: 28 × 6 − 180 ÷ 9 + 42 ÷ 7 × 3.",
+      "options": [
+        {
+          "label": "A",
+          "text": "166"
+        },
+        {
+          "label": "B",
+          "text": "150"
+        },
+        {
+          "label": "C",
+          "text": "130"
+        },
+        {
+          "label": "D",
+          "text": "178"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Group the calculated terms: 168 − 20 + 18 = 166."
+    },
+    {
+      "id": "04-161",
+      "number": 161,
+      "question": "Find the value of 240% of 35.",
+      "options": [
+        {
+          "label": "A",
+          "text": "840"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "8.4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "240% = 2.4; multiply 35 × 24 and divide by 10 to get 84."
+    },
+    {
+      "id": "04-162",
+      "number": 162,
+      "question": "Evaluate: 7/9 − [(5/6 − 1/3) × 4/9].",
+      "options": [
+        {
+          "label": "A",
+          "text": "7/18"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        },
+        {
+          "label": "C",
+          "text": "5/9"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The inner difference is 1/2; hence 7/9 − 2/9 = 5/9."
+    },
+    {
+      "id": "04-163",
+      "number": 163,
+      "question": "A fruit seller sells 1/4 of his oranges, discards 1/9 of the remainder, then sells half of what is left. If 84 remain, how many oranges were discarded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "42"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Before the final sale, 168 remained; this is 8/9 of the quantity before discarding. The discarded 1/9 equals 168 ÷ 8 = 21."
+    },
+    {
+      "id": "04-164",
+      "number": 164,
+      "question": "Evaluate: 720 ÷ [(16 − 7) × {12 − (3 + 5)}] − 9.",
+      "options": [
+        {
+          "label": "A",
+          "text": "71"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The divisor is 9 × 4 = 36; hence 720 ÷ 36 − 9 = 11."
+    },
+    {
+      "id": "04-165",
+      "number": 165,
+      "question": "Find the value of 33⅓% of 81 + 66⅔% of 54.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "63"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "54"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use 1/3 and 2/3: 27 + 36 = 63."
+    },
+    {
+      "id": "04-166",
+      "number": 166,
+      "question": "Find [1/(3 − √7) − 1/(3 + √7)] × √7.",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The bracket becomes 2√7/(9 − 7) = √7; multiplying by √7 gives 7."
+    },
+    {
+      "id": "04-167",
+      "number": 167,
+      "question": "Of 100 trainees, 58 passed arithmetic and 63 passed reasoning. If 14 failed both, how many passed both?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "A",
+      "explanation": "At least one pass = 100 − 14 = 86; both = 58 + 63 − 86 = 35."
+    },
+    {
+      "id": "04-168",
+      "number": 168,
+      "question": "Jaspreet buys 30 kg of two rice varieties costing ₹42 and ₹48 per kg. The total bill is ₹1350. How many kg of the ₹42 variety did he buy?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If all cost ₹48, the bill would be ₹1440. Each kg of cheaper rice saves ₹6; hence the quantity is (1440 − 1350) ÷ 6 = 15 kg."
+    },
+    {
+      "id": "04-169",
+      "number": 169,
+      "question": "Evaluate: |−32| ÷ (−4) − (−7).",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "-15"
+        },
+        {
+          "label": "D",
+          "text": "-1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The absolute value is 32; thus −8 + 7 = −1."
+    },
+    {
+      "id": "04-170",
+      "number": 170,
+      "question": "Evaluate: (2 + 1/(3 + 1/(4 + 1/2))) − 2.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/7"
+        },
+        {
+          "label": "B",
+          "text": "9/29"
+        },
+        {
+          "label": "C",
+          "text": "7/23"
+        },
+        {
+          "label": "D",
+          "text": "29/9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtracting 2 leaves the continued fraction: 1/(3 + 2/9) = 9/29."
+    },
+    {
+      "id": "04-171",
+      "number": 171,
+      "question": "Which option is closest to 14.98% of 798?",
+      "options": [
+        {
+          "label": "A",
+          "text": "130"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        },
+        {
+          "label": "C",
+          "text": "110"
+        },
+        {
+          "label": "D",
+          "text": "120"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Estimate 15% of 800 = 120; the actual value is 119.5404, nearest to 120."
+    },
+    {
+      "id": "04-172",
+      "number": 172,
+      "question": "Evaluate: ∛0.000216 × 500.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "108"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "∛0.000216 = 0.06; hence 0.06 × 500 = 30."
+    },
+    {
+      "id": "04-173",
+      "number": 173,
+      "question": "Define a ◇ b = ab + a − b. Find (6 ◇ 4) − (4 ◇ 6).",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The common product cancels: (24 + 2) − (24 − 2) = 4."
+    },
+    {
+      "id": "04-174",
+      "number": 174,
+      "question": "Find (28³ − 13³)/(28 − 13) − 28 × 13.",
+      "options": [
+        {
+          "label": "A",
+          "text": "589"
+        },
+        {
+          "label": "B",
+          "text": "1317"
+        },
+        {
+          "label": "C",
+          "text": "953"
+        },
+        {
+          "label": "D",
+          "text": "225"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The quotient is 28² + 28 × 13 + 13²; subtract the middle term to get 784 + 169 = 953."
+    },
+    {
+      "id": "04-175",
+      "number": 175,
+      "question": "Evaluate: (1 + 5/7) × (2 + 1/3) ÷ (4 + 4/5).",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/3"
+        },
+        {
+          "label": "B",
+          "text": "7/6"
+        },
+        {
+          "label": "C",
+          "text": "5/6"
+        },
+        {
+          "label": "D",
+          "text": "6/5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first product is (12/7) × (7/3) = 4; then 4 × (5/24) = 5/6."
+    }
+  ]
+}

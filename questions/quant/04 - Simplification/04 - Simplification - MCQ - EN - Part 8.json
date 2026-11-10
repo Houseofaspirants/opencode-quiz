@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Simplification"
+  },
+  "part": 8,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-176",
+      "number": 176,
+      "question": "Let t = 0.0585858… , where only 58 repeats after the first decimal digit 0. Find 990t.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5.8"
+        },
+        {
+          "label": "B",
+          "text": "580"
+        },
+        {
+          "label": "C",
+          "text": "58"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Since 10t = 58/99, t = 58/990; therefore 990t = 58."
+    },
+    {
+      "id": "04-177",
+      "number": 177,
+      "question": "Evaluate: (√256 + √625) ÷ √(81/9).",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "41/9"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "41/3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The three roots are 16, 25 and 3; therefore (16 + 25) ÷ 3 = 41/3."
+    },
+    {
+      "id": "04-178",
+      "number": 178,
+      "question": "If a + b = 9 and a³ + b³ = 189, find (a − b)².",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "From 189 = 729 − 27ab, get ab = 20; then (a − b)² = 81 − 80 = 1."
+    },
+    {
+      "id": "04-179",
+      "number": 179,
+      "question": "Find the value of ? in (? ÷ 24) + (? ÷ 36) = 25.",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "450"
+        },
+        {
+          "label": "C",
+          "text": "900"
+        },
+        {
+          "label": "D",
+          "text": "300"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Combine coefficients: ? × (5/72) = 25; hence ? = 360."
+    },
+    {
+      "id": "04-180",
+      "number": 180,
+      "question": "Evaluate: 132 ÷ 11 × 5 − 84 ÷ 7 × 2 + 19.",
+      "options": [
+        {
+          "label": "A",
+          "text": "79"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply division and multiplication left to right: 60 − 24 + 19 = 55."
+    },
+    {
+      "id": "04-181",
+      "number": 181,
+      "question": "Let x = √10 − 3. Find (x + 1/x)² − (x − 1/x)².",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the difference of the two squares directly: 4 × x × (1/x) = 4."
+    },
+    {
+      "id": "04-182",
+      "number": 182,
+      "question": "Evaluate: 65 × 75.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4900"
+        },
+        {
+          "label": "B",
+          "text": "4225"
+        },
+        {
+          "label": "C",
+          "text": "4875"
+        },
+        {
+          "label": "D",
+          "text": "4925"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The factors are 70 ± 5; hence 70² − 5² = 4900 − 25 = 4875."
+    },
+    {
+      "id": "04-183",
+      "number": 183,
+      "question": "Convert (2 hours 45 minutes + 1 hour 35 minutes) ÷ 4 into minutes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "75"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The total is 165 + 95 = 260 minutes; 260 ÷ 4 = 65 minutes."
+    },
+    {
+      "id": "04-184",
+      "number": 184,
+      "question": "Evaluate: [(2 + 2/3) ÷ (1 + 1/7) − (3/4 ÷ 9/14)] ÷ (7/12).",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two quotients are 7/3 and 7/6; their difference is 7/6, and (7/6) ÷ (7/12) = 2."
+    },
+    {
+      "id": "04-185",
+      "number": 185,
+      "question": "Which option is closest to 998.5 ÷ 0.501?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1800"
+        },
+        {
+          "label": "B",
+          "text": "2100"
+        },
+        {
+          "label": "C",
+          "text": "2000"
+        },
+        {
+          "label": "D",
+          "text": "1900"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use 1000 ÷ 0.5 = 2000; the actual quotient is about 1993.01, closest to 2000."
+    },
+    {
+      "id": "04-186",
+      "number": 186,
+      "question": "Evaluate: |−6 × 5 + 8| − |−4 × 3|.",
+      "options": [
+        {
+          "label": "A",
+          "text": "-10"
+        },
+        {
+          "label": "B",
+          "text": "-34"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The two absolute values are 22 and 12; their difference is 10."
+    },
+    {
+      "id": "04-187",
+      "number": 187,
+      "question": "Evaluate: 560 ÷ {8 + [30 − (18 + 6)]} + 3 × 9.",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "67"
+        },
+        {
+          "label": "C",
+          "text": "83"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The divisor is 8 + 6 = 14; then 40 + 27 = 67."
+    },
+    {
+      "id": "04-188",
+      "number": 188,
+      "question": "A bus leaves Ludhiana with some passengers. At the next stop 2/5 get off and 18 board; at the following stop 1/3 get off and 9 board. It then has 57 passengers. How many started?",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "90"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reverse the changes: before the second stop there were (57 − 9) × 3/2 = 72. Initially there were (72 − 18) × 5/3 = 90."
+    },
+    {
+      "id": "04-189",
+      "number": 189,
+      "question": "Evaluate: (13/18 + 5/12 − 7/24) × 72.",
+      "options": [
+        {
+          "label": "A",
+          "text": "79"
+        },
+        {
+          "label": "B",
+          "text": "65"
+        },
+        {
+          "label": "C",
+          "text": "61"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "C",
+      "explanation": "With denominator 72, the numerator is 52 + 30 − 21 = 61."
+    },
+    {
+      "id": "04-190",
+      "number": 190,
+      "question": "Evaluate: (10^4 × 10²) ÷ 10^5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "100"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "1000"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add numerator exponents and subtract the denominator exponent: 10^(4 + 2 − 5) = 10."
+    },
+    {
+      "id": "04-191",
+      "number": 191,
+      "question": "Find [(51 + 29)² + (51 − 29)²] ÷ 2 − 51².",
+      "options": [
+        {
+          "label": "A",
+          "text": "484"
+        },
+        {
+          "label": "B",
+          "text": "1480"
+        },
+        {
+          "label": "C",
+          "text": "2601"
+        },
+        {
+          "label": "D",
+          "text": "841"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The averaged squares equal 51² + 29²; subtracting 51² leaves 29² = 841."
+    },
+    {
+      "id": "04-192",
+      "number": 192,
+      "question": "In a farm enclosure there are only ducks and goats, with 54 heads and 152 legs in total. How many ducks are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "44"
+        },
+        {
+          "label": "D",
+          "text": "22"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If all were ducks there would be 108 legs; the extra 44 legs represent 22 goats. Hence ducks = 54 − 22 = 32."
+    },
+    {
+      "id": "04-193",
+      "number": 193,
+      "question": "Data sufficiency: In a club, how many members speak both Punjabi and Hindi? I: 42 speak Punjabi and 38 speak Hindi. II: 65 speak at least one of these languages.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "C",
+          "text": "Both statements together are sufficient, but neither alone"
+        },
+        {
+          "label": "D",
+          "text": "Even both statements together are insufficient"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Neither statement alone gives the overlap. Together, both languages = 42 + 38 − 65 = 15."
+    },
+    {
+      "id": "04-194",
+      "number": 194,
+      "question": "Find the value of 112.5% of 144.",
+      "options": [
+        {
+          "label": "A",
+          "text": "126"
+        },
+        {
+          "label": "B",
+          "text": "162"
+        },
+        {
+          "label": "C",
+          "text": "160"
+        },
+        {
+          "label": "D",
+          "text": "180"
+        }
+      ],
+      "answer": "B",
+      "explanation": "112.5% = 9/8; hence 144 ÷ 8 × 9 = 162."
+    },
+    {
+      "id": "04-195",
+      "number": 195,
+      "question": "For x > 1, √(x + 7) ÷ √(x − 1) = 3. Find x².",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Square: x + 7 = 9(x − 1), giving 8x = 16 and x = 2; therefore x² = 4."
+    },
+    {
+      "id": "04-196",
+      "number": 196,
+      "question": "Find the value of ? in (875 − ?) × 8 ÷ 25 = 168.",
+      "options": [
+        {
+          "label": "A",
+          "text": "350"
+        },
+        {
+          "label": "B",
+          "text": "455"
+        },
+        {
+          "label": "C",
+          "text": "707"
+        },
+        {
+          "label": "D",
+          "text": "525"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The bracket is 168 × 25 ÷ 8 = 525; therefore ? = 875 − 525 = 350."
+    },
+    {
+      "id": "04-197",
+      "number": 197,
+      "question": "Evaluate: 408 × 15.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6020"
+        },
+        {
+          "label": "B",
+          "text": "4080"
+        },
+        {
+          "label": "C",
+          "text": "8160"
+        },
+        {
+          "label": "D",
+          "text": "6120"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Multiply by 10 and add half of that product: 4080 + 2040 = 6120."
+    },
+    {
+      "id": "04-198",
+      "number": 198,
+      "question": "Round each of 1204, 589 and 347 to the nearest ten, then evaluate the first minus the second plus the third.",
+      "options": [
+        {
+          "label": "A",
+          "text": "950"
+        },
+        {
+          "label": "B",
+          "text": "960"
+        },
+        {
+          "label": "C",
+          "text": "962"
+        },
+        {
+          "label": "D",
+          "text": "970"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The rounded values are 1200, 590 and 350; 1200 − 590 + 350 = 960."
+    },
+    {
+      "id": "04-199",
+      "number": 199,
+      "question": "Find (3/5) × (4/6) × (5/7), continuing with both numerator and denominator increasing by 1, through (18/20).",
+      "options": [
+        {
+          "label": "A",
+          "text": "3/20"
+        },
+        {
+          "label": "B",
+          "text": "6/95"
+        },
+        {
+          "label": "C",
+          "text": "3/95"
+        },
+        {
+          "label": "D",
+          "text": "1/95"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Cancel the common factors from 5 through 18; the product is (3 × 4)/(19 × 20) = 3/95."
+    },
+    {
+      "id": "04-200",
+      "number": 200,
+      "question": "Evaluate: (12.5 × 0.16 + 0.875) ÷ 0.125.",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "230"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The numerator is 2 + 0.875 = 2.875; dividing by 1/8 gives 23."
+    }
+  ]
+}

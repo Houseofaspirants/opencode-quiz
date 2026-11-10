@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Simplification"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-026",
+      "number": 26,
+      "question": "A number was multiplied by 46 instead of 64, making the result 1458 too small. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "90"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "81"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The error is (64 − 46) times the number; hence the number is 1458 ÷ 18 = 81."
+    },
+    {
+      "id": "04-027",
+      "number": 27,
+      "question": "Evaluate: (3^5 × 3²) ÷ 3^4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "243"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "81"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Combine exponents: 3^(5 + 2 − 4) = 3³ = 27."
+    },
+    {
+      "id": "04-028",
+      "number": 28,
+      "question": "For a positive integer n, 4^n × 8^(n − 1) = 2^22. Find n.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Write both bases as powers of 2: 2n + 3(n − 1) = 22, so 5n = 25 and n = 5."
+    },
+    {
+      "id": "04-029",
+      "number": 29,
+      "question": "Data sufficiency: What is the initial quantity of grain in a store? I: After selling 3/8 of it, 150 kg remained. II: The quantity sold was 90 kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Even both statements together are insufficient"
+        },
+        {
+          "label": "C",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Both statements together are sufficient, but neither alone"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Statement I gives the initial quantity as 150 × 8/5 = 240 kg. Statement II alone gives no fraction or initial total."
+    },
+    {
+      "id": "04-030",
+      "number": 30,
+      "question": "What is 398.7 ÷ 19.9, rounded to the nearest integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use 400 ÷ 20 = 20; the actual quotient is just above 20 and below 20.5, so it rounds to 20."
+    },
+    {
+      "id": "04-031",
+      "number": 31,
+      "question": "Simplify [√72 + √32 − √8] ÷ √2.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Extract √2: (6√2 + 4√2 − 2√2) ÷ √2 = 8."
+    },
+    {
+      "id": "04-032",
+      "number": 32,
+      "question": "Evaluate: −[−26 + (−17)] + (−19).",
+      "options": [
+        {
+          "label": "A",
+          "text": "-24"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "-62"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The bracket is −43; reversing its sign gives 43 − 19 = 24."
+    },
+    {
+      "id": "04-033",
+      "number": 33,
+      "question": "Evaluate: 0.48 × 2.5 ÷ 0.06 − 7.5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27.5"
+        },
+        {
+          "label": "B",
+          "text": "12.5"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "2.5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pair 0.48 ÷ 0.06 = 8; then 8 × 2.5 − 7.5 = 12.5."
+    },
+    {
+      "id": "04-034",
+      "number": 34,
+      "question": "If x − y = 5 and xy = 24, find x³ − y³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "365"
+        },
+        {
+          "label": "B",
+          "text": "125"
+        },
+        {
+          "label": "C",
+          "text": "485"
+        },
+        {
+          "label": "D",
+          "text": "235"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use (x − y)³ + 3xy(x − y) = 125 + 360 = 485."
+    },
+    {
+      "id": "04-035",
+      "number": 35,
+      "question": "Evaluate: 840 ÷ {35 − [24 − (18 − 7)]} × 11.",
+      "options": [
+        {
+          "label": "A",
+          "text": "462"
+        },
+        {
+          "label": "B",
+          "text": "385"
+        },
+        {
+          "label": "C",
+          "text": "210"
+        },
+        {
+          "label": "D",
+          "text": "420"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The divisor is 35 − (24 − 11) = 22, giving 840 ÷ 22 × 11 = 420."
+    },
+    {
+      "id": "04-036",
+      "number": 36,
+      "question": "Find the value of 62.5% of 256.",
+      "options": [
+        {
+          "label": "A",
+          "text": "160"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        },
+        {
+          "label": "C",
+          "text": "192"
+        },
+        {
+          "label": "D",
+          "text": "128"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Since 62.5% = 5/8, the value is 256 × 5/8 = 160."
+    },
+    {
+      "id": "04-037",
+      "number": 37,
+      "question": "Evaluate: (2 + 3/5) × (1 + 7/13) − 3/4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "17/4"
+        },
+        {
+          "label": "B",
+          "text": "13/4"
+        },
+        {
+          "label": "C",
+          "text": "5/4"
+        },
+        {
+          "label": "D",
+          "text": "11/4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Convert to improper fractions: (13/5) × (20/13) − 3/4 = 4 − 3/4 = 13/4."
+    },
+    {
+      "id": "04-038",
+      "number": 38,
+      "question": "Find (1 − 1/5)(1 − 1/6)(1 − 1/7), continuing through (1 − 1/24), with every integer denominator included.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/6"
+        },
+        {
+          "label": "B",
+          "text": "5/24"
+        },
+        {
+          "label": "C",
+          "text": "4/23"
+        },
+        {
+          "label": "D",
+          "text": "1/24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rewrite as (4/5)(5/6) through (23/24); cancellation leaves 4/24 = 1/6."
+    },
+    {
+      "id": "04-039",
+      "number": 39,
+      "question": "Find the value of ? in 18 × ? − 756 ÷ 9 = 510.",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "33"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Move 84 to the other side: ? = (510 + 84) ÷ 18 = 33."
+    },
+    {
+      "id": "04-040",
+      "number": 40,
+      "question": "Evaluate: √(1296 ÷ 16).",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "81"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Divide inside the root: √81 = 9."
+    },
+    {
+      "id": "04-041",
+      "number": 41,
+      "question": "Evaluate: 3 − 2/(1 + 1/(2 + 1/4)).",
+      "options": [
+        {
+          "label": "A",
+          "text": "13/21"
+        },
+        {
+          "label": "B",
+          "text": "17/13"
+        },
+        {
+          "label": "C",
+          "text": "19/13"
+        },
+        {
+          "label": "D",
+          "text": "21/13"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Work upwards: 2 + 1/4 = 9/4 and 1 + 4/9 = 13/9; hence 3 − 18/13 = 21/13."
+    },
+    {
+      "id": "04-042",
+      "number": 42,
+      "question": "Find the value of (18% of 750 + 32% of 625) ÷ 5.",
+      "options": [
+        {
+          "label": "A",
+          "text": "67"
+        },
+        {
+          "label": "B",
+          "text": "335"
+        },
+        {
+          "label": "C",
+          "text": "71"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two percentages are 135 and 200; (135 + 200) ÷ 5 = 67."
+    },
+    {
+      "id": "04-043",
+      "number": 43,
+      "question": "In a group of 90 people, 52 like tea and 46 like coffee. Everyone likes at least one. How many like exactly one?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "82"
+        },
+        {
+          "label": "C",
+          "text": "98"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both = 52 + 46 − 90 = 8; exactly one = 90 − 8 = 82."
+    },
+    {
+      "id": "04-044",
+      "number": 44,
+      "question": "Evaluate: 8640 ÷ 45.",
+      "options": [
+        {
+          "label": "A",
+          "text": "172"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        },
+        {
+          "label": "C",
+          "text": "96"
+        },
+        {
+          "label": "D",
+          "text": "192"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Divide by 5 and then by 9: 1728 ÷ 9 = 192."
+    },
+    {
+      "id": "04-045",
+      "number": 45,
+      "question": "For x ≠ 6, simplify (x² − 36)/(x − 6) − (x² − 12x + 36)/(x − 6).",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Factor the numerators: (x + 6) − (x − 6) = 12."
+    },
+    {
+      "id": "04-046",
+      "number": 46,
+      "question": "Without carrying out full multiplication, identify the value of 247 × 36 + 153 × 36.",
+      "options": [
+        {
+          "label": "A",
+          "text": "14400"
+        },
+        {
+          "label": "B",
+          "text": "14040"
+        },
+        {
+          "label": "C",
+          "text": "14436"
+        },
+        {
+          "label": "D",
+          "text": "14364"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take 36 common: (247 + 153) × 36 = 400 × 36 = 14400."
+    },
+    {
+      "id": "04-047",
+      "number": 47,
+      "question": "Evaluate: 85².",
+      "options": [
+        {
+          "label": "A",
+          "text": "7250"
+        },
+        {
+          "label": "B",
+          "text": "7025"
+        },
+        {
+          "label": "C",
+          "text": "7225"
+        },
+        {
+          "label": "D",
+          "text": "7125"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For a number ending in 5, multiply 8 × 9 and append 25: 7225."
+    },
+    {
+      "id": "04-048",
+      "number": 48,
+      "question": "Evaluate: 168 ÷ 7 × 3 + 96 ÷ 8 − 17.",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "79"
+        },
+        {
+          "label": "D",
+          "text": "67"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Keep equal-priority operations left to right: 24 × 3 + 12 − 17 = 67."
+    },
+    {
+      "id": "04-049",
+      "number": 49,
+      "question": "If x = √6 + √5, find x² + 1/x².",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "22"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Since 1/x = √6 − √5, the sum is 2(6 + 5) = 22."
+    },
+    {
+      "id": "04-050",
+      "number": 50,
+      "question": "If a ★ b = a² − 2b, find (5 ★ 4) ★ 3.",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "283"
+        },
+        {
+          "label": "C",
+          "text": "295"
+        },
+        {
+          "label": "D",
+          "text": "277"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First 5 ★ 4 = 25 − 8 = 17; then 17 ★ 3 = 289 − 6 = 283."
+    }
+  ]
+}
