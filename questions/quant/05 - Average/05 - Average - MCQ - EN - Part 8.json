@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 8,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-176",
+      "number": 176,
+      "question": "A set of 7 consecutive positive integers averages 48. How many integers in the set are greater than 48?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "48 is the middle integer. Equal counts lie on either side, so (7 − 1) ÷ 2 = 3 are greater."
+    },
+    {
+      "id": "05-177",
+      "number": 177,
+      "question": "2 groups of 20 and 30 trainees together average 66 marks. If their average marks are in ratio 3 : 4, find the smaller group’s average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let means be 3x and 4x. Then (20 × 3x + 30 × 4x) ÷ 50 = 66 gives x = 55/3, so 3x = 55."
+    },
+    {
+      "id": "05-178",
+      "number": 178,
+      "question": "A list has correct average 40. Its total is mistakenly divided by 4 more than the actual count, giving 35. Find the correct total of the values.",
+      "options": [
+        {
+          "label": "A",
+          "text": "980"
+        },
+        {
+          "label": "B",
+          "text": "1280"
+        },
+        {
+          "label": "C",
+          "text": "1120"
+        },
+        {
+          "label": "D",
+          "text": "1400"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For count n, 40n = 35(n + 4), giving n = 28. Correct total = 28 × 40 = 1120."
+    },
+    {
+      "id": "05-179",
+      "number": 179,
+      "question": "6 numbers average 36. Of these, 4 total 144, and the remaining 2 are in ratio 1 : 2. Find the larger remaining number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Remaining total = 6 × 36 − 144 = 72. Larger number = 72 × 2 ÷ 3 = 48."
+    },
+    {
+      "id": "05-180",
+      "number": 180,
+      "question": "The 4 terms 4, 12, 36 and x have average 40. Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "120"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        },
+        {
+          "label": "C",
+          "text": "104"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Each term is 3 times the preceding term. Also, x = 4 × 40 − (4 + 12 + 36) = 108."
+    },
+    {
+      "id": "05-181",
+      "number": 181,
+      "question": "A group averages 50 kg. Replacing a 30 kg member by a new member raises the average to 51 kg. Then a 70 kg member joins and the average becomes 52 kg. Find the replacement member’s weight in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The joining step gives group size (70 − 52) ÷ (52 − 51) = 18 before joining. Replacement weight = 30 + 18 × 1 = 48 kg."
+    },
+    {
+      "id": "05-182",
+      "number": 182,
+      "question": "2 people join a group averaging 38 years without changing its average. 1 newcomer is 12 years older than the other. Find the younger newcomer’s age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "44"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The newcomers must average 38. Younger age = 38 − 12 ÷ 2 = 32 years."
+    },
+    {
+      "id": "05-183",
+      "number": 183,
+      "question": "2 groups average 158 and 173 cm in height, and together average 164 cm. 10 people averaging 173 cm join, raising the combined average to 165.5 cm. Find the original number in the shorter group.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Original total count = 10 × (173 − 165.5) ÷ (165.5 − 164) = 50. Shorter-group fraction = (173 − 164) ÷ (173 − 158) = 3/5, giving 30."
+    },
+    {
+      "id": "05-184",
+      "number": 184,
+      "question": "The average of 14 numbers is 45. The first 9 average 42 and the last 9 average 49. If the 4 overlapping numbers include 40, 47 and 52, find the fourth.",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "52"
+        },
+        {
+          "label": "D",
+          "text": "54"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Overlap total = 9 × 42 + 9 × 49 − 14 × 45 = 189. Fourth value = 189 − 40 − 47 − 52 = 50."
+    },
+    {
+      "id": "05-185",
+      "number": 185,
+      "question": "The average of 10 values is 18. If each value is replaced by its negative and then 50 is added, find the new average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "68"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "−32"
+        },
+        {
+          "label": "D",
+          "text": "−68"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The transformation is 50 − x. New average = 50 − 18 = 32."
+    },
+    {
+      "id": "05-186",
+      "number": 186,
+      "question": "21 numbers average 38. 1 number is removed and the remaining total is 720. Find the fall in the average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Remaining average = 720 ÷ 20 = 36. Fall = 38 − 36 = 2."
+    },
+    {
+      "id": "05-187",
+      "number": 187,
+      "question": "A final score gives 50% weight to test A, 30% to test B and 20% to test C. A candidate scores 64 in A and 80 in B. What score in C gives a final score of 74?",
+      "options": [
+        {
+          "label": "A",
+          "text": "88"
+        },
+        {
+          "label": "B",
+          "text": "85"
+        },
+        {
+          "label": "C",
+          "text": "92"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Score in C = (74 − 0.5 × 64 − 0.3 × 80) ÷ 0.2 = 90."
+    },
+    {
+      "id": "05-188",
+      "number": 188,
+      "question": "2 classes have 20 and 30 pupils, averaging 12 and 14 years respectively. What will be the average age of these same 50 pupils after 3 years, in years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "15.8"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "16.2"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Present average = (20 × 12 + 30 × 14) ÷ 50 = 13.2. Add 3 to obtain 16.2 years."
+    },
+    {
+      "id": "05-189",
+      "number": 189,
+      "question": "Find the average of all positive factors of 24.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7.5"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Factors are 1, 2, 3, 4, 6, 8, 12 and 24, with total 60. Average = 60 ÷ 8 = 7.5."
+    },
+    {
+      "id": "05-190",
+      "number": 190,
+      "question": "A batter scores 65 in 1 innings, taking his average runs per innings from 35 to 37. How many innings has he played in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Total innings = (65 − 35) ÷ (37 − 35) = 15."
+    },
+    {
+      "id": "05-191",
+      "number": 191,
+      "question": "A team of 24 averages 62 kg. A 50 kg member is replaced by a 74 kg member, then a 68 kg member leaves. What average weight must 2 newcomers have to bring the final 25-member team average to 64 kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "78"
+        },
+        {
+          "label": "D",
+          "text": "74"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Before the 2 join, total = 24 × 62 − 50 + 74 − 68 = 1444 kg. Required average = (25 × 64 − 1444) ÷ 2 = 78 kg."
+    },
+    {
+      "id": "05-192",
+      "number": 192,
+      "question": "A company’s first 40 employees average ₹25,000 salary, and all 60 employees average ₹27,000. The last 20 include 5 averaging ₹40,000. Find the other 15 employees’ average salary in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30000"
+        },
+        {
+          "label": "B",
+          "text": "28000"
+        },
+        {
+          "label": "C",
+          "text": "26000"
+        },
+        {
+          "label": "D",
+          "text": "32000"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Other 15 total = 60 × 27000 − 40 × 25000 − 5 × 40000 = ₹420000. Average = 420000 ÷ 15 = ₹28000."
+    },
+    {
+      "id": "05-193",
+      "number": 193,
+      "question": "A student’s average in 6 subjects is 71. Rechecking adds 6 marks in each of 2 subjects and 9 in another. Find the revised average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "75"
+        },
+        {
+          "label": "B",
+          "text": "73.5"
+        },
+        {
+          "label": "C",
+          "text": "76"
+        },
+        {
+          "label": "D",
+          "text": "74.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total increase = 2 × 6 + 9 = 21. New average = 71 + 21 ÷ 6 = 74.5."
+    },
+    {
+      "id": "05-194",
+      "number": 194,
+      "question": "In a frequency distribution, values 4 and 10 have frequencies in ratio 2 : 1. Find the mean.",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Take frequencies 2 and 1. Mean = (2 × 4 + 1 × 10) ÷ 3 = 6."
+    },
+    {
+      "id": "05-195",
+      "number": 195,
+      "question": "A group of 30 averages 72 marks. The average excess of each of the 12 above-average scorers is 9 marks. 6 others score exactly 72. Find the average score of the remaining candidates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "66"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Excess = 12 × 9 = 108. The remaining 12 must each be 108 ÷ 12 = 9 below average on average, so their mean is 63."
+    },
+    {
+      "id": "05-196",
+      "number": 196,
+      "question": "A shop buys equal numbers of pens at ₹12 and ₹18 each, then sells the whole lot at ₹17 per pen. Find the average profit per pen in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2.5"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Equal quantities give average cost = (12 + 18) ÷ 2 = ₹15. Profit = 17 − 15 = ₹2 per pen."
+    },
+    {
+      "id": "05-197",
+      "number": 197,
+      "question": "The average of x and y is 28. What is the average of x + 6 and y − 2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total rises by 6 − 2 = 4 across 2 values. New average = 28 + 4 ÷ 2 = 30."
+    },
+    {
+      "id": "05-198",
+      "number": 198,
+      "question": "A traveller covers 24 km on foot at 6 km/h and 96 km by bus at 48 km/h. Find the average speed of the whole journey in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total time = 24 ÷ 6 + 96 ÷ 48 = 6 hours. Average speed = 120 ÷ 6 = 20 km/h."
+    },
+    {
+      "id": "05-199",
+      "number": 199,
+      "question": "A list has correct average 45. 2 values, 40 and 60, are omitted; 37 is entered as 73. Dividing by the remaining count gives 46. Find the correct total of the original list.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1350"
+        },
+        {
+          "label": "B",
+          "text": "1260"
+        },
+        {
+          "label": "C",
+          "text": "1170"
+        },
+        {
+          "label": "D",
+          "text": "1440"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For original count n, 45n − 100 + 36 = 46(n − 2), giving n = 28. Correct total = 28 × 45 = 1260."
+    },
+    {
+      "id": "05-200",
+      "number": 200,
+      "question": "A hostel bill is ₹28,000 for 40 residents and ₹34,000 for 50 residents. It consists of a fixed cost plus a constant cost per resident. Find the fixed cost in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4000"
+        },
+        {
+          "label": "B",
+          "text": "6000"
+        },
+        {
+          "label": "C",
+          "text": "8000"
+        },
+        {
+          "label": "D",
+          "text": "2000"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Variable cost per resident = (34000 − 28000) ÷ 10 = ₹600. Fixed cost = 28000 − 40 × 600 = ₹4000."
+    }
+  ]
+}

@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-051",
+      "number": 51,
+      "question": "The average of 6 numbers is 84. Their deviations from 80 total how much?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "504"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total deviation = 6 × (84 − 80) = 24."
+    },
+    {
+      "id": "05-052",
+      "number": 52,
+      "question": "A group averages 36 years. When a 60-year-old joins, its average rises by 2 years. How many members were there originally?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Original count = (60 − 36) ÷ 2 − 1 = 11."
+    },
+    {
+      "id": "05-053",
+      "number": 53,
+      "question": "2 groups average 48 and 78 marks, and together average 60. The lower-scoring group has 7 more members than the other. How many members are in the higher-scoring group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Counts are in ratio (78 − 60) : (60 − 48) = 3 : 2. 1 part is 7, so the higher-scoring group has 14 members."
+    },
+    {
+      "id": "05-054",
+      "number": 54,
+      "question": "3 schools send equal numbers of candidates. The combined averages for schools A and B, B and C, and C and A are 58, 64 and 67 marks respectively. Find the average for all candidates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "62"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "65"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Each school is counted twice across the 3 equal-sized pairs. Overall average = (58 + 64 + 67) ÷ 3 = 63."
+    },
+    {
+      "id": "05-055",
+      "number": 55,
+      "question": "Find the average of all multiples of 9 from 100 to 200.",
+      "options": [
+        {
+          "label": "A",
+          "text": "150"
+        },
+        {
+          "label": "B",
+          "text": "149"
+        },
+        {
+          "label": "C",
+          "text": "153"
+        },
+        {
+          "label": "D",
+          "text": "157.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first and last terms are 108 and 198. Average = (108 + 198) ÷ 2 = 153."
+    },
+    {
+      "id": "05-056",
+      "number": 56,
+      "question": "5 years ago, 4 family members averaged 28 years. Twins were born 3 years ago. 1 original member died 2 years ago aged 58. Nobody else joined or left. Find the present average age of the 5 surviving members in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15.6"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "16.4"
+        },
+        {
+          "label": "D",
+          "text": "17.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Present equivalent total of the original 4 = 4 × (28 + 5) = 132. Remove 58 + 2 and add 3 + 3: average = (132 − 60 + 6) ÷ 5 = 15.6 years."
+    },
+    {
+      "id": "05-057",
+      "number": 57,
+      "question": "A courier rides for 2 hours at 36 km/h and then for 3 hours at 54 km/h. Find the average speed in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "43.2"
+        },
+        {
+          "label": "D",
+          "text": "46.8"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Average speed = (2 × 36 + 3 × 54) ÷ 5 = 46.8 km/h."
+    },
+    {
+      "id": "05-058",
+      "number": 58,
+      "question": "A total of 1,764 forms were processed over several days, averaging 84 forms per day. How many days were used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Number of days = 1764 ÷ 84 = 21."
+    },
+    {
+      "id": "05-059",
+      "number": 59,
+      "question": "30 students average 52 kg. 3 students averaging 48 kg leave and 2 students join. The remaining 29 students average 54 kg. Find the total weight of the 2 newcomers in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "144"
+        },
+        {
+          "label": "B",
+          "text": "150"
+        },
+        {
+          "label": "C",
+          "text": "156"
+        },
+        {
+          "label": "D",
+          "text": "162"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Newcomers total = 29 × 54 − (30 × 52 − 3 × 48) = 150 kg."
+    },
+    {
+      "id": "05-060",
+      "number": 60,
+      "question": "Each of 15 observations is increased by 12%. If their old average was 75, find the new average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "87"
+        },
+        {
+          "label": "C",
+          "text": "81"
+        },
+        {
+          "label": "D",
+          "text": "83"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Average also rises by 12%: 75 × 1.12 = 84."
+    },
+    {
+      "id": "05-061",
+      "number": 61,
+      "question": "The average of 14 numbers is 63. Removing the greatest number reduces the average by 3. Find the removed number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "105"
+        },
+        {
+          "label": "B",
+          "text": "102"
+        },
+        {
+          "label": "C",
+          "text": "99"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Removed number = 63 + 13 × 3 = 102."
+    },
+    {
+      "id": "05-062",
+      "number": 62,
+      "question": "The first 6 of 10 readings average 42 and the last 6 average 47. All 10 average 44. Find the average of the 2 overlapping readings.",
+      "options": [
+        {
+          "label": "A",
+          "text": "47"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "94"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Overlap total = 6 × 42 + 6 × 47 − 10 × 44 = 94. Overlap average = 94 ÷ 2 = 47."
+    },
+    {
+      "id": "05-063",
+      "number": 63,
+      "question": "An average of 25 values is reported as 64 after 1 value is omitted from the total but the divisor remains 25. If the omitted value is 75, find the correct average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "66"
+        },
+        {
+          "label": "B",
+          "text": "68"
+        },
+        {
+          "label": "C",
+          "text": "65"
+        },
+        {
+          "label": "D",
+          "text": "67"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Correct total = 25 × 64 + 75. Correct average = 64 + 75 ÷ 25 = 67."
+    },
+    {
+      "id": "05-064",
+      "number": 64,
+      "question": "7 consecutive integers average 104. Find the average of the smallest and greatest integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "104"
+        },
+        {
+          "label": "B",
+          "text": "103"
+        },
+        {
+          "label": "C",
+          "text": "105"
+        },
+        {
+          "label": "D",
+          "text": "107"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For equally spaced integers, the endpoint average equals the whole-set average: 104."
+    },
+    {
+      "id": "05-065",
+      "number": 65,
+      "question": "A batter’s average over 24 innings is 42 runs per innings. Excluding 1 innings of 88 runs and another innings, the average of the remaining 22 is 39. Find the other excluded score.",
+      "options": [
+        {
+          "label": "A",
+          "text": "64"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "62"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Other score = 24 × 42 − 22 × 39 − 88 = 62."
+    },
+    {
+      "id": "05-066",
+      "number": 66,
+      "question": "A train’s running speed is 72 km/h, but including halts its average speed is 60 km/h. How many minutes does it halt per hour of total journey time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In 1 hour, 60 km needs 60 ÷ 72 hours of running. Halt = (1 − 60 ÷ 72) × 60 = 10 minutes."
+    },
+    {
+      "id": "05-067",
+      "number": 67,
+      "question": "The average of x, 2x + 3 and 3x − 3 is 26. Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Their total is 6x, so 6x ÷ 3 = 26 gives x = 13."
+    },
+    {
+      "id": "05-068",
+      "number": 68,
+      "question": "A team of 22 averages 48 points. 3 new members score 60, 66 and 78 points. Find the new team average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "51"
+        },
+        {
+          "label": "B",
+          "text": "49.6"
+        },
+        {
+          "label": "C",
+          "text": "50.4"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Newcomers contribute 12 + 18 + 30 = 60 above the base. New average = 48 + 60 ÷ 25 = 50.4."
+    },
+    {
+      "id": "05-069",
+      "number": 69,
+      "question": "A bowler concedes 117 runs at an average of 6.5 runs per over. How many legal balls has he bowled, taking 6 legal balls per over?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "117"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Overs = 117 ÷ 6.5 = 18. Legal balls = 18 × 6 = 108."
+    },
+    {
+      "id": "05-070",
+      "number": 70,
+      "question": "A family of 5 averages 30 years. A member aged 26 marries, and the spouse joins. After 2 years, all 6 average 32 years. Find the spouse’s age when joining, in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total at joining = 6 × (32 − 2) = 180. Spouse’s age = 180 − 5 × 30 = 30 years."
+    },
+    {
+      "id": "05-071",
+      "number": 71,
+      "question": "A grocer buys 12 kg of rice at ₹48 per kg and 18 kg at ₹58 per kg. Find the average purchase price per kg in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "53"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "52"
+        },
+        {
+          "label": "D",
+          "text": "55"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Average price = 48 + 18 × 10 ÷ 30 = ₹54 per kg."
+    },
+    {
+      "id": "05-072",
+      "number": 72,
+      "question": "2 equally large groups have average scores 55 and 71. Find their combined average score.",
+      "options": [
+        {
+          "label": "A",
+          "text": "63"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equal group sizes give average = (55 + 71) ÷ 2 = 63."
+    },
+    {
+      "id": "05-073",
+      "number": 73,
+      "question": "A test has 50 questions carrying 2 marks each, with no penalty for wrong answers. If a candidate’s average mark per question is 1.48, how many questions were answered correctly?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total marks = 50 × 1.48 = 74. Correct answers = 74 ÷ 2 = 37."
+    },
+    {
+      "id": "05-074",
+      "number": 74,
+      "question": "Find the 7th of 13 numbers. I: All 13 average 46 and the first 7 average 48. II: The last 7 average 45. Choose the code: 1 = I alone is sufficient; 2 = II alone is sufficient; 3 = both together are needed and sufficient; 4 = both together are insufficient.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Neither statement alone isolates the 7th number. Together, it is 7 × 48 + 7 × 45 − 13 × 46 = 53, so both are needed and sufficient."
+    },
+    {
+      "id": "05-075",
+      "number": 75,
+      "question": "A shop averages 140 customers per day over a 30-day month. The first 12 days average 125 customers. Find the daily average over the remaining days.",
+      "options": [
+        {
+          "label": "A",
+          "text": "145"
+        },
+        {
+          "label": "B",
+          "text": "155"
+        },
+        {
+          "label": "C",
+          "text": "150"
+        },
+        {
+          "label": "D",
+          "text": "160"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Remaining average = 140 + 12 × (140 − 125) ÷ 18 = 150."
+    }
+  ]
+}

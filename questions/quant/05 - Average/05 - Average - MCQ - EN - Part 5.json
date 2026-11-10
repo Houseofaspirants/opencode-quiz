@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 5,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-101",
+      "number": 101,
+      "question": "Find the average of all 3-digit integers that leave remainder 2 when divided by 40.",
+      "options": [
+        {
+          "label": "A",
+          "text": "542"
+        },
+        {
+          "label": "B",
+          "text": "522"
+        },
+        {
+          "label": "C",
+          "text": "562"
+        },
+        {
+          "label": "D",
+          "text": "550"
+        }
+      ],
+      "answer": "A",
+      "explanation": "First term = 122 and last term = 962. Average = (122 + 962) ÷ 2 = 542."
+    },
+    {
+      "id": "05-102",
+      "number": 102,
+      "question": "Daily sales average ₹3,500 over days 1–8 and ₹3,800 over days 3–10. Days 1 and 2 average ₹2,900. Find the average sales over days 9 and 10, in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "3800"
+        },
+        {
+          "label": "B",
+          "text": "4100"
+        },
+        {
+          "label": "C",
+          "text": "5300"
+        },
+        {
+          "label": "D",
+          "text": "3500"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The entering pair’s total exceeds the leaving pair by 8 × 300 = ₹2400. Its average = 2900 + 2400 ÷ 2 = ₹4100."
+    },
+    {
+      "id": "05-103",
+      "number": 103,
+      "question": "For 30 entries, a clerk omits 60, records 48 as 84, and divides the resulting total by 29 to get 54. Find the correct average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "53"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "52"
+        },
+        {
+          "label": "D",
+          "text": "54.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Correct total = 29 × 54 + 60 − 84 + 48 = 1590. Correct average = 1590 ÷ 30 = 53."
+    },
+    {
+      "id": "05-104",
+      "number": 104,
+      "question": "In a company, 40% of staff average 45 years and the rest average 35 years. Find the average staff age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "39"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Average = 35 + 0.4 × (45 − 35) = 39 years."
+    },
+    {
+      "id": "05-105",
+      "number": 105,
+      "question": "By how much does the average of 14² and 16² exceed 15²?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "0"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For numbers equally spaced around 15, the square-average exceeds 15² by the square of the gap. Difference = (196 + 256) ÷ 2 − 225 = 1."
+    },
+    {
+      "id": "05-106",
+      "number": 106,
+      "question": "A 20-member squad averages 58 kg. Replacing its lightest member by an 82 kg member raises the average by 1.5 kg. The new member is then replaced by a 62 kg member. Find the net increase in average weight from the original squad, in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2.5"
+        },
+        {
+          "label": "C",
+          "text": "0.5"
+        },
+        {
+          "label": "D",
+          "text": "0.75"
+        }
+      ],
+      "answer": "C",
+      "explanation": "First member weighed 82 − 20 × 1.5 = 52 kg. Net increase = (62 − 52) ÷ 20 = 0.5 kg."
+    },
+    {
+      "id": "05-107",
+      "number": 107,
+      "question": "A group of 18 has average score 55. 2 new members join with equal scores and the average becomes 57. Find each newcomer’s score.",
+      "options": [
+        {
+          "label": "A",
+          "text": "73"
+        },
+        {
+          "label": "B",
+          "text": "75"
+        },
+        {
+          "label": "C",
+          "text": "77"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each newcomer’s score = (20 × 57 − 18 × 55) ÷ 2 = 75."
+    },
+    {
+      "id": "05-108",
+      "number": 108,
+      "question": "The average of 4 numbers is 29. 3 numbers are 17, 26 and 39. Find twice the fourth number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "58"
+        },
+        {
+          "label": "C",
+          "text": "68"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Fourth number = 4 × 29 − 17 − 26 − 39 = 34. Twice it is 68."
+    },
+    {
+      "id": "05-109",
+      "number": 109,
+      "question": "A batch averages 56 marks. 10 candidates average 68, 2 score exactly 56 each, and every other candidate scores 50. Find the total number of candidates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "28"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The top 10 create 10 × 12 = 120 excess marks. Each 50-mark candidate offsets 6, so there are 20 of them; total = 10 + 2 + 20 = 32."
+    },
+    {
+      "id": "05-110",
+      "number": 110,
+      "question": "5 tins weigh 97, 103, 99, 105 and 101 kg. By how much does their average exceed 100 kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "0.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Deviations total −3 + 3 − 1 + 5 + 1 = 5. Average excess = 5 ÷ 5 = 1 kg."
+    },
+    {
+      "id": "05-111",
+      "number": 111,
+      "question": "A group averages 44 years. When a 64-year-old leaves, the average falls to 43 years. Find the original group size.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "22"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "19"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The remaining count = (64 − 44) ÷ (44 − 43) = 20. Original count = 21."
+    },
+    {
+      "id": "05-112",
+      "number": 112,
+      "question": "A vehicle covers half its journey at 36 km/h, 1/4 at 54 km/h and the last 1/4 at 108 km/h. Find its average speed in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Take 216 km: time = 108 ÷ 36 + 54 ÷ 54 + 54 ÷ 108 = 4.5 hours. Average speed = 216 ÷ 4.5 = 48 km/h."
+    },
+    {
+      "id": "05-113",
+      "number": 113,
+      "question": "The average of 16 bills is ₹250. It is discovered that a ₹320 bill was counted twice and a ₹160 bill was omitted, while 16 was still used as divisor. Find the correct average bill in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "260"
+        },
+        {
+          "label": "B",
+          "text": "230"
+        },
+        {
+          "label": "C",
+          "text": "245"
+        },
+        {
+          "label": "D",
+          "text": "240"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Correct total = 16 × 250 − 320 + 160. Correct average = 250 − 160 ÷ 16 = ₹240."
+    },
+    {
+      "id": "05-114",
+      "number": 114,
+      "question": "5 consecutive multiples of 6 average 90. Find the second-largest of them.",
+      "options": [
+        {
+          "label": "A",
+          "text": "102"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "90"
+        },
+        {
+          "label": "D",
+          "text": "96"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The middle term is 90; the second-largest is 90 + 6 = 96."
+    },
+    {
+      "id": "05-115",
+      "number": 115,
+      "question": "Simran’s average in 4 papers is 73. Her 5th-paper mark is 8 more than her final 5-paper average. Find her 5th-paper mark.",
+      "options": [
+        {
+          "label": "A",
+          "text": "81"
+        },
+        {
+          "label": "B",
+          "text": "83"
+        },
+        {
+          "label": "C",
+          "text": "85"
+        },
+        {
+          "label": "D",
+          "text": "79"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If final average is x, 4 × 73 + x + 8 = 5x gives x = 75. 5th mark = 75 + 8 = 83."
+    },
+    {
+      "id": "05-116",
+      "number": 116,
+      "question": "12 numbers average 50. The first 7 average 48 and the last 7 average 53. Their 2 common numbers differ by 9. Find the larger common number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "58"
+        },
+        {
+          "label": "B",
+          "text": "49"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Common total = 7 × 48 + 7 × 53 − 12 × 50 = 107. Larger = (107 + 9) ÷ 2 = 58."
+    },
+    {
+      "id": "05-117",
+      "number": 117,
+      "question": "The average age of 3 siblings is 18 years. Their mother is included and the average becomes 25 years. Find the mother’s age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "43"
+        },
+        {
+          "label": "B",
+          "text": "49"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "46"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Mother’s age = 4 × 25 − 3 × 18 = 46 years."
+    },
+    {
+      "id": "05-118",
+      "number": 118,
+      "question": "A class has 45 pupils averaging 62 marks. Boys average 58 and girls average 68. How many more boys than girls are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Boys : girls = (68 − 62) : (62 − 58) = 3 : 2. Difference = 45 × 1/5 = 9."
+    },
+    {
+      "id": "05-119",
+      "number": 119,
+      "question": "The values 10, 20 and 30 occur 2, 5 and 3 times respectively. Find their mean.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Mean = (10 × 2 + 20 × 5 + 30 × 3) ÷ 10 = 21."
+    },
+    {
+      "id": "05-120",
+      "number": 120,
+      "question": "10 numbers average 36. 1 number is replaced by the average of the other 9, and the new average of all 10 becomes 35. Find the number that was replaced.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replacing a value by the other 9’s mean makes all 10’s mean equal to that same mean, 35. Original value = 10 × 36 − 9 × 35 = 45."
+    },
+    {
+      "id": "05-121",
+      "number": 121,
+      "question": "A batter has scored 720 runs in 18 innings. What average runs per innings must he achieve in the next 6 innings to finish with an average of 45?",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Required average = (24 × 45 − 720) ÷ 6 = 60."
+    },
+    {
+      "id": "05-122",
+      "number": 122,
+      "question": "A bowler’s average is 24 runs per wicket after taking 18 wickets. How many runs has he conceded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "432"
+        },
+        {
+          "label": "B",
+          "text": "402"
+        },
+        {
+          "label": "C",
+          "text": "448"
+        },
+        {
+          "label": "D",
+          "text": "424"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Runs conceded = 24 × 18 = 432."
+    },
+    {
+      "id": "05-123",
+      "number": 123,
+      "question": "A trader buys 20 notebooks at ₹35 each and 30 at ₹45 each. He sells all at ₹46 each. Find his average profit per notebook in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Average cost = (20 × 35 + 30 × 45) ÷ 50 = ₹41. Average profit = 46 − 41 = ₹5."
+    },
+    {
+      "id": "05-124",
+      "number": 124,
+      "question": "6 positive integers average 15. Exactly 2 are greater than 15. What is the greatest possible value of the largest integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "74"
+        },
+        {
+          "label": "B",
+          "text": "69"
+        },
+        {
+          "label": "C",
+          "text": "70"
+        },
+        {
+          "label": "D",
+          "text": "75"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Minimise 4 integers at 1 each and the other integer above 15 at 16. Largest = 6 × 15 − 4 − 16 = 70."
+    },
+    {
+      "id": "05-125",
+      "number": 125,
+      "question": "In a 31-day month beginning on Monday, a shop earns ₹2,000 on each Sunday and ₹1,380 on every other day. Find its average daily earnings in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1480"
+        },
+        {
+          "label": "B",
+          "text": "1500"
+        },
+        {
+          "label": "C",
+          "text": "1440"
+        },
+        {
+          "label": "D",
+          "text": "1460"
+        }
+      ],
+      "answer": "D",
+      "explanation": "There are 4 Sundays and 27 other days. Average = (4 × 2000 + 27 × 1380) ÷ 31 = ₹1460."
+    }
+  ]
+}

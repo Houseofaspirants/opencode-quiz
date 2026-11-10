@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 7,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-151",
+      "number": 151,
+      "question": "The average of 2, 6, 18 and 54 is 20. Find the average of 6, 18, 54 and 162.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every term has tripled, so the mean triples: 20 × 3 = 60."
+    },
+    {
+      "id": "05-152",
+      "number": 152,
+      "question": "2 departments have 30 and 20 employees. Their average monthly salaries differ by ₹5,000, with the larger department paid more. The combined average is ₹28,000. Find the smaller department’s average in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "26000"
+        },
+        {
+          "label": "B",
+          "text": "23000"
+        },
+        {
+          "label": "C",
+          "text": "25000"
+        },
+        {
+          "label": "D",
+          "text": "30000"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The combined mean is 30 × 5000 ÷ 50 = ₹3000 above the lower mean. Lower mean = 28000 − 3000 = ₹25000."
+    },
+    {
+      "id": "05-153",
+      "number": 153,
+      "question": "40 parcels average 68 kg. 3 parcels averaging 54 kg are removed. Parcels averaging 78 kg are then added, making the final average 70 kg. How many parcels were added?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "After removal the total is 40 × 68 − 3 × 54 = 2558 kg. The deficit from 37 × 70 is 32 kg; each added parcel offsets 8 kg, so 4 are added."
+    },
+    {
+      "id": "05-154",
+      "number": 154,
+      "question": "The average cost of 15 chairs is ₹840. 10 chairs cost ₹780 each. Find the average cost of the other 5 chairs in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "960"
+        },
+        {
+          "label": "B",
+          "text": "900"
+        },
+        {
+          "label": "C",
+          "text": "1020"
+        },
+        {
+          "label": "D",
+          "text": "920"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The first 10 fall short by 10 × 60 = ₹600. Other chairs average = 840 + 600 ÷ 5 = ₹960."
+    },
+    {
+      "id": "05-155",
+      "number": 155,
+      "question": "2 blocks each contain 3 consecutive even integers. The first block ends immediately before the second begins. If the second block averages 32, find the first block’s average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Moving back 1 block shifts every term by 3 × 2 = 6. First-block average = 32 − 6 = 26."
+    },
+    {
+      "id": "05-156",
+      "number": 156,
+      "question": "A candidate attempts all 80 questions. Each correct answer earns 2 marks and each wrong answer loses 0.5 mark. His average mark per question is 1.375. How many answers are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "65"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total score = 80 × 1.375 = 110. Starting from all wrong gives −40; each correct adds 2.5, so correct count = (110 + 40) ÷ 2.5 = 60."
+    },
+    {
+      "id": "05-157",
+      "number": 157,
+      "question": "A committee averages 42 years. 2 people averaging 54 years join and the average rises by 1 year. Find the original committee size.",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2 newcomers bring 2 × (54 − 42) = 24 extra years. Final count is 24 ÷ 1 = 24, so original count = 22."
+    },
+    {
+      "id": "05-158",
+      "number": 158,
+      "question": "A group’s average is 54 marks. 2/3 of its members average 60. Find the average of the remaining members.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "45"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Take 3 equal parts: remaining mean = 3 × 54 − 2 × 60 = 42."
+    },
+    {
+      "id": "05-159",
+      "number": 159,
+      "question": "The first 4 of 8 numbers average 31 and the last 4 average 39. The middle 4 average 36. Find the average of the first 2 and last 2 numbers together.",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "All 8 total 4 × 31 + 4 × 39 = 280. Outer 4 average = (280 − 4 × 36) ÷ 4 = 34."
+    },
+    {
+      "id": "05-160",
+      "number": 160,
+      "question": "Every price in a list is first increased by ₹15 and then reduced by 20%. The original average price was ₹85. Find the new average in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "83"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "68"
+        },
+        {
+          "label": "D",
+          "text": "88"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the same operations to the mean: (85 + 15) × 0.8 = ₹80."
+    },
+    {
+      "id": "05-161",
+      "number": 161,
+      "question": "A 16-member club averages 35 years. The oldest member, aged 50, and the youngest, aged 20, leave. Find the new average age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "33"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The departing pair also averages 35. Removing a group with the same average leaves the average at 35 years."
+    },
+    {
+      "id": "05-162",
+      "number": 162,
+      "question": "For 50 values, values 65 and 75 are omitted, 26 is entered as 62, and the resulting total is divided by 48 to give 42. Find the correct average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "43.12"
+        },
+        {
+          "label": "B",
+          "text": "41.6"
+        },
+        {
+          "label": "C",
+          "text": "42.4"
+        },
+        {
+          "label": "D",
+          "text": "44"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Correct total = 48 × 42 + 65 + 75 − 62 + 26 = 2120. Correct average = 2120 ÷ 50 = 42.4."
+    },
+    {
+      "id": "05-163",
+      "number": 163,
+      "question": "The average age of 12 children is 9 years. Including a coach raises it to 11 years. What was the coach’s age 3 years ago, in years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "29"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Coach’s present age = 13 × 11 − 12 × 9 = 35. 3 years ago it was 32 years."
+    },
+    {
+      "id": "05-164",
+      "number": 164,
+      "question": "Find the average of the integers from 1 to 30 that are not divisible by 3.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15.5"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "14.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Remove the 10 multiples of 3: remaining sum = 465 − 3 × 55 = 300. Average = 300 ÷ 20 = 15."
+    },
+    {
+      "id": "05-165",
+      "number": 165,
+      "question": "A batter averages 48 runs per innings in a series of 8 innings. His first 5 innings average 42. Find the average of his last 3 innings.",
+      "options": [
+        {
+          "label": "A",
+          "text": "56"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "58"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Last-3 average = (8 × 48 − 5 × 42) ÷ 3 = 58."
+    },
+    {
+      "id": "05-166",
+      "number": 166,
+      "question": "Replacing 1 observation by 84 raises a set’s average by 1.2. Replacing the same original observation by 48 would lower the original average by 0.6. Find the number of observations.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The 2 replacement totals differ by 84 − 48 = 36, while their means differ by 1.2 + 0.6 = 1.8. Count = 36 ÷ 1.8 = 20."
+    },
+    {
+      "id": "05-167",
+      "number": 167,
+      "question": "3 equal-sized groups average 36, 42 and 54 marks. If the third group doubles in size while retaining its average, find the new combined average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "46.5"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Group weights become 1 : 1 : 2. New average = (36 + 42 + 2 × 54) ÷ 4 = 46.5."
+    },
+    {
+      "id": "05-168",
+      "number": 168,
+      "question": "A candidate needs an average of 60 over 6 papers. After 5 papers, the average is 57. If the last paper has maximum 70 marks, by how many marks will the candidate fall short even with full marks?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Required total = 360; maximum achievable total = 5 × 57 + 70 = 355. Shortfall = 5 marks."
+    },
+    {
+      "id": "05-169",
+      "number": 169,
+      "question": "A grouped distribution has intervals 0–10, 10–20 and 20–30 with frequencies 2, 4 and 2. Using class midpoints, find the mean.",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "12.5"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Midpoints are 5, 15 and 25. Mean = (2 × 5 + 4 × 15 + 2 × 25) ÷ 8 = 15."
+    },
+    {
+      "id": "05-170",
+      "number": 170,
+      "question": "In a group, 6 people are each 8 kg above the average weight, and 12 are each 3 kg below it. All remaining people are each 2 kg below it. Find the total group size.",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Excess = 6 × 8 = 48 kg; known deficit = 12 × 3 = 36 kg. Remaining count = (48 − 36) ÷ 2 = 6, so total = 24."
+    },
+    {
+      "id": "05-171",
+      "number": 171,
+      "question": "A retailer buys 8 kg of almonds at ₹700 per kg and 12 kg at ₹800 per kg. At what price per kg should the lot be sold to earn ₹40 profit per kg on average?",
+      "options": [
+        {
+          "label": "A",
+          "text": "790"
+        },
+        {
+          "label": "B",
+          "text": "800"
+        },
+        {
+          "label": "C",
+          "text": "810"
+        },
+        {
+          "label": "D",
+          "text": "820"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Average cost = 700 + 12 × 100 ÷ 20 = ₹760. Required price = 760 + 40 = ₹800 per kg."
+    },
+    {
+      "id": "05-172",
+      "number": 172,
+      "question": "If 5a + 5b = 430, find the average of a and b.",
+      "options": [
+        {
+          "label": "A",
+          "text": "86"
+        },
+        {
+          "label": "B",
+          "text": "43"
+        },
+        {
+          "label": "C",
+          "text": "21.5"
+        },
+        {
+          "label": "D",
+          "text": "215"
+        }
+      ],
+      "answer": "B",
+      "explanation": "a + b = 430 ÷ 5 = 86. Average = 86 ÷ 2 = 43."
+    },
+    {
+      "id": "05-173",
+      "number": 173,
+      "question": "A traveller spends equal times moving at 48 and 72 km/h. A second traveller covers equal distances at those speeds. By how many km/h is the first traveller’s average speed greater?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2.4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4.8"
+        },
+        {
+          "label": "D",
+          "text": "1.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Equal-time average = 60; equal-distance average = 2 × 48 × 72 ÷ 120 = 57.6. Difference = 2.4 km/h."
+    },
+    {
+      "id": "05-174",
+      "number": 174,
+      "question": "A list has correct average 24 and includes a 0. A clerk omits the 0, enters 84 as 48 and divides by the remaining count, obtaining 23.5. How many values are in the original list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For original count n, 24n − 36 = 23.5(n − 1). Thus 0.5n = 12.5, giving n = 25."
+    },
+    {
+      "id": "05-175",
+      "number": 175,
+      "question": "A hostel’s monthly cost is ₹12,000 fixed plus ₹900 per resident. Find the average cost per resident when 40 residents stay, in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "900"
+        },
+        {
+          "label": "B",
+          "text": "1200"
+        },
+        {
+          "label": "C",
+          "text": "1300"
+        },
+        {
+          "label": "D",
+          "text": "1100"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Per-resident cost = 900 + 12000 ÷ 40 = ₹1200."
+    }
+  ]
+}

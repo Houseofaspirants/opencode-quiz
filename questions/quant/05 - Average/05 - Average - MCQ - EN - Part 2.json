@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-026",
+      "number": 26,
+      "question": "6 consecutive even integers average 29. Find the average of the smallest 2 integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The middle pair is 28 and 30, so the smallest pair is 24 and 26. Its average = (24 + 26) ÷ 2 = 25."
+    },
+    {
+      "id": "05-027",
+      "number": 27,
+      "question": "A library club has 16 members with average age 25 years. 4 members join and the average becomes 27 years. Find the average age of the newcomers in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "33"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Newcomers average = 27 + 16 × (27 − 25) ÷ 4 = 35 years."
+    },
+    {
+      "id": "05-028",
+      "number": 28,
+      "question": "4 years ago, 20 pupils averaged 12 years. Today, 5 of them averaging 18 years leave and 5 pupils averaging 13 years join. Find the present average age of the class in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "14.75"
+        },
+        {
+          "label": "C",
+          "text": "15.75"
+        },
+        {
+          "label": "D",
+          "text": "16.25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before the changes, today’s average is 12 + 4 = 16. The replacement lowers it by 5 × (18 − 13) ÷ 20 = 1.25, giving 14.75 years."
+    },
+    {
+      "id": "05-029",
+      "number": 29,
+      "question": "25 scooters average 48 km per litre in a test, and 15 scooters average 56 km per litre. Find the combined average of these 40 recorded mileage values.",
+      "options": [
+        {
+          "label": "A",
+          "text": "52"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "53"
+        },
+        {
+          "label": "D",
+          "text": "51"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Combined average = 48 + 15 × 8 ÷ 40 = 51."
+    },
+    {
+      "id": "05-030",
+      "number": 30,
+      "question": "7 daily temperatures have deviations −4, 3, 2, −1, 5, −3 and −2 from 30°C. Find their average temperature in °C.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The deviations sum to 0, so the average remains 30°C."
+    },
+    {
+      "id": "05-031",
+      "number": 31,
+      "question": "The average load of 36 bags rises by 1.5 kg when 4 bags averaging 21 kg are replaced by 4 bags averaging x kg. Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "33"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "34.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total increase = 36 × 1.5 = 54 kg. New bags average = 21 + 54 ÷ 4 = 34.5 kg."
+    },
+    {
+      "id": "05-032",
+      "number": 32,
+      "question": "2 sections average 58 and 73 marks. Their combined average is 64. Find the ratio of their numbers of students, in the same order. Give the first term when the second term is 2.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Required ratio = (73 − 64) : (64 − 58) = 9 : 6 = 3 : 2. The first term is 3."
+    },
+    {
+      "id": "05-033",
+      "number": 33,
+      "question": "The average of 8 numbers is 46. 7 of them total 301. Find the remaining number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "67"
+        },
+        {
+          "label": "B",
+          "text": "65"
+        },
+        {
+          "label": "C",
+          "text": "69"
+        },
+        {
+          "label": "D",
+          "text": "61"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Missing number = 8 × 46 − 301 = 67."
+    },
+    {
+      "id": "05-034",
+      "number": 34,
+      "question": "The average sales over Monday to Friday is ₹8,400 per day. The average over Tuesday to Saturday is ₹9,100 per day. If Saturday’s sales are ₹12,500, find Monday’s sales in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "11800"
+        },
+        {
+          "label": "B",
+          "text": "5500"
+        },
+        {
+          "label": "C",
+          "text": "9000"
+        },
+        {
+          "label": "D",
+          "text": "9500"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Saturday exceeds Monday by 5 × (9100 − 8400) = 3500. Monday = 12500 − 3500 = ₹9000."
+    },
+    {
+      "id": "05-035",
+      "number": 35,
+      "question": "The average of 18 values is 45. If 8 is subtracted from each value and the result is divided by 2, find the new average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "14.5"
+        },
+        {
+          "label": "B",
+          "text": "22.5"
+        },
+        {
+          "label": "C",
+          "text": "26.5"
+        },
+        {
+          "label": "D",
+          "text": "18.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "New average = (45 − 8) ÷ 2 = 18.5."
+    },
+    {
+      "id": "05-036",
+      "number": 36,
+      "question": "After 3 workers averaging 42 years leave a team of 18, the remaining workers average 30 years. Find the original average age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Original average = 30 + 3 × (42 − 30) ÷ 18 = 32 years."
+    },
+    {
+      "id": "05-037",
+      "number": 37,
+      "question": "A car covers the first 1/3 of a 180 km journey at 30 km/h and the remainder at 60 km/h. Find its average speed in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Time = 60 ÷ 30 + 120 ÷ 60 = 4 hours. Average speed = 180 ÷ 4 = 45 km/h."
+    },
+    {
+      "id": "05-038",
+      "number": 38,
+      "question": "Jaspreet scores 72, 81, 69 and 78 in 4 papers. What minimum mark is needed in the 5th paper for an average of at least 76?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "78"
+        },
+        {
+          "label": "D",
+          "text": "82"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Required mark = 5 × 76 − (72 + 81 + 69 + 78) = 80."
+    },
+    {
+      "id": "05-039",
+      "number": 39,
+      "question": "Find the average of 1³, 2³, 3³, 4³ and 5³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "55"
+        },
+        {
+          "label": "D",
+          "text": "75"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum of cubes = (5 × 6 ÷ 2)² = 225. Average = 225 ÷ 5 = 45."
+    },
+    {
+      "id": "05-040",
+      "number": 40,
+      "question": "A clerk totals 24 payments correctly but divides the total by 20 and reports an average of ₹720. Find the correct average payment in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "600"
+        },
+        {
+          "label": "B",
+          "text": "864"
+        },
+        {
+          "label": "C",
+          "text": "680"
+        },
+        {
+          "label": "D",
+          "text": "620"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total = 720 × 20. Correct average = 720 × 20 ÷ 24 = ₹600."
+    },
+    {
+      "id": "05-041",
+      "number": 41,
+      "question": "The present average age of a couple is 33 years. Their child is 6 years old. What was the average age of all 3 exactly 4 years ago, in years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Present total = 2 × 33 + 6 = 72. 4 years ago, average = 72 ÷ 3 − 4 = 20 years."
+    },
+    {
+      "id": "05-042",
+      "number": 42,
+      "question": "A batter averages 46 runs per innings over 12 innings. How many runs must he score in the next innings to raise this average to 49?",
+      "options": [
+        {
+          "label": "A",
+          "text": "82"
+        },
+        {
+          "label": "B",
+          "text": "85"
+        },
+        {
+          "label": "C",
+          "text": "88"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Required score = 49 + 12 × (49 − 46) = 85."
+    },
+    {
+      "id": "05-043",
+      "number": 43,
+      "question": "A factory’s 60 staff average ₹24,000 monthly salary. 20 supervisors average ₹36,000. What percentage of the total monthly salary bill is paid to supervisors?",
+      "options": [
+        {
+          "label": "A",
+          "text": "33.333"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Supervisors’ share = (20 × 36000) ÷ (60 × 24000) × 100 = 50%."
+    },
+    {
+      "id": "05-044",
+      "number": 44,
+      "question": "The values 10, 20 and 30 have frequencies 3, x and 2 respectively. Their mean is 19. Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Deviations from 19 give 3 × (−9) + x + 2 × 11 = 0. Hence x = 5."
+    },
+    {
+      "id": "05-045",
+      "number": 45,
+      "question": "In an examination, paper X has maximum 150 marks and paper Y has maximum 250 marks. Aman scores 72% in X. What percentage must he score in Y to obtain 80% overall?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84.8"
+        },
+        {
+          "label": "B",
+          "text": "88"
+        },
+        {
+          "label": "C",
+          "text": "80"
+        },
+        {
+          "label": "D",
+          "text": "86.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Required marks in Y = 0.8 × 400 − 0.72 × 150 = 212. Percentage = 212 × 100 ÷ 250 = 84.8%."
+    },
+    {
+      "id": "05-046",
+      "number": 46,
+      "question": "3 numbers are in the ratio 3 : 5 : 8 and average 48. Find the difference between the largest and the smallest.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "A",
+      "explanation": "1 ratio unit = 3 × 48 ÷ 16 = 9. Difference = (8 − 3) × 9 = 45."
+    },
+    {
+      "id": "05-047",
+      "number": 47,
+      "question": "A team scores 168 runs in 20 completed overs. Find its average run rate per over.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "8.4"
+        },
+        {
+          "label": "C",
+          "text": "8.2"
+        },
+        {
+          "label": "D",
+          "text": "8.6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Run rate = 168 ÷ 20 = 8.4 runs per over."
+    },
+    {
+      "id": "05-048",
+      "number": 48,
+      "question": "10 nurses average 28 years. 2 new nurses join; their ages differ by 4 years. The new group averages 29 years. Find the older newcomer’s age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Newcomers total = 12 × 29 − 10 × 28 = 68. Older age = (68 + 4) ÷ 2 = 36 years."
+    },
+    {
+      "id": "05-049",
+      "number": 49,
+      "question": "What is the average of A, B and C? I: The averages of A and B, and B and C, are 25 and 31 respectively. II: The average of A and C is 34. Choose the code: 1 = I alone is sufficient; 2 = II alone is sufficient; 3 = both together are needed and sufficient; 4 = both together are insufficient.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "I leaves 1 variable free, and II gives only 1 pair total. Together, average = (25 + 31 + 34) ÷ 3 = 30, so both are needed and sufficient."
+    },
+    {
+      "id": "05-050",
+      "number": 50,
+      "question": "A hostel’s food bill is ₹18,600 for 30 residents. After 10 more residents join, the bill becomes ₹22,800. By how much does the average bill per resident fall, in ₹?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "70"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Old average = 18600 ÷ 30 = 620; new average = 22800 ÷ 40 = 570. Fall = ₹50."
+    }
+  ]
+}

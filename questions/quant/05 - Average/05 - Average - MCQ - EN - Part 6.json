@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-126",
+      "number": 126,
+      "question": "After the smallest of 11 consecutive integers is removed, the remaining 10 average 43.5. Find the average of the original 11 integers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42.5"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "44.5"
+        },
+        {
+          "label": "D",
+          "text": "43"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Removing the smallest shifts the midpoint up by 0.5. Original average = 43.5 − 0.5 = 43."
+    },
+    {
+      "id": "05-127",
+      "number": 127,
+      "question": "Groups A and B contain 16 and 24 candidates and together average 72 marks. A averages 78. 6 candidates averaging 83 marks move from A to B. Find B’s new average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "73"
+        },
+        {
+          "label": "D",
+          "text": "71"
+        }
+      ],
+      "answer": "D",
+      "explanation": "B’s original total = 40 × 72 − 16 × 78 = 1632. New average = (1632 + 6 × 83) ÷ 30 = 71."
+    },
+    {
+      "id": "05-128",
+      "number": 128,
+      "question": "The average of 25 readings is 56. A reading of 40 is replaced by x, and then every reading is increased by 10%. The final average is 63.8. Find x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "85"
+        },
+        {
+          "label": "B",
+          "text": "90"
+        },
+        {
+          "label": "C",
+          "text": "95"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Average before the percentage increase = 63.8 ÷ 1.1 = 58. Thus x = 40 + 25 × (58 − 56) = 90."
+    },
+    {
+      "id": "05-129",
+      "number": 129,
+      "question": "2 numbers average 37. A third number is 10 more than the larger of them. If all 3 average 42, find the smallest number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "42"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Third number = 3 × 42 − 2 × 37 = 52. Larger original number = 52 − 10 = 42, so smallest = 74 − 42 = 32."
+    },
+    {
+      "id": "05-130",
+      "number": 130,
+      "question": "A set contains both positive and negative values and has average −7. If the sum is −126, how many observations are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "17"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Count = total ÷ average = (−126) ÷ (−7) = 18."
+    },
+    {
+      "id": "05-131",
+      "number": 131,
+      "question": "In a list, 45 was entered as 54 and 92 as 29. These errors lowered the average by 1.8. How many entries are in the list?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Net total shortfall = 45 + 92 − 54 − 29 = 54. Count = 54 ÷ 1.8 = 30."
+    },
+    {
+      "id": "05-132",
+      "number": 132,
+      "question": "Petrol is bought for ₹1,800 at ₹90 per litre and for ₹2,200 at ₹110 per litre. Find the average price per litre in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "99"
+        },
+        {
+          "label": "C",
+          "text": "101"
+        },
+        {
+          "label": "D",
+          "text": "102"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Quantities are 1800 ÷ 90 = 20 and 2200 ÷ 110 = 20 litres. Average price = 4000 ÷ 40 = ₹100."
+    },
+    {
+      "id": "05-133",
+      "number": 133,
+      "question": "A group of 12 has average age 24 years. 2 people aged 30 and 36 join, followed by 1 person aged 42. Find the final average age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "26.4"
+        },
+        {
+          "label": "D",
+          "text": "28.8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total added = 108 years. Final average = (12 × 24 + 108) ÷ 15 = 26.4 years."
+    },
+    {
+      "id": "05-134",
+      "number": 134,
+      "question": "20 numbers average 28. The first 12 average 26 and the last 12 average 31. Find the average of the 16 numbers outside the overlap.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "27.25"
+        },
+        {
+          "label": "C",
+          "text": "29"
+        },
+        {
+          "label": "D",
+          "text": "26.75"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Overlap total = 12 × 26 + 12 × 31 − 20 × 28 = 124. Outside average = (560 − 124) ÷ 16 = 27.25."
+    },
+    {
+      "id": "05-135",
+      "number": 135,
+      "question": "A set has average 96. Every value is divided by 4 and then increased by 7. Find the resulting average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "25.75"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "A",
+      "explanation": "New average = 96 ÷ 4 + 7 = 31."
+    },
+    {
+      "id": "05-136",
+      "number": 136,
+      "question": "24 sacks average 46 kg. After some sacks averaging 40 kg are removed, the remaining sacks average 48 kg. How many sacks were removed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Removed count = 24 × (48 − 46) ÷ (48 − 40) = 6."
+    },
+    {
+      "id": "05-137",
+      "number": 137,
+      "question": "A bowler’s average is 28 runs per wicket. He takes 5 wickets while conceding 36 runs, and his average falls to 24. How many wickets had he taken earlier?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If earlier wickets are w, 28w + 36 = 24(w + 5). Thus 4w = 84 and w = 21."
+    },
+    {
+      "id": "05-138",
+      "number": 138,
+      "question": "8 years ago, a couple averaged 26 years of age. Their child is now 7 years old. Find the present average age of the 3, in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Couple’s present total = 2 × (26 + 8) = 68. Family average = (68 + 7) ÷ 3 = 25 years."
+    },
+    {
+      "id": "05-139",
+      "number": 139,
+      "question": "Find the average of the prime numbers between 50 and 70.",
+      "options": [
+        {
+          "label": "A",
+          "text": "59"
+        },
+        {
+          "label": "B",
+          "text": "61"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The primes are 53, 59, 61 and 67. Their symmetric pairs total 120, so the average is 60."
+    },
+    {
+      "id": "05-140",
+      "number": 140,
+      "question": "A batter averages 52 runs per innings over 10 innings. What is the greatest possible average after the next innings if that innings cannot exceed 85 runs?",
+      "options": [
+        {
+          "label": "A",
+          "text": "56"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "55"
+        },
+        {
+          "label": "D",
+          "text": "57"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use the maximum score 85. Greatest average = (10 × 52 + 85) ÷ 11 = 55."
+    },
+    {
+      "id": "05-141",
+      "number": 141,
+      "question": "In a 32-member group, replacing 2 members of weights 44 kg and 52 kg raises the average by 0.75 kg. 1 newcomer weighs 58 kg. Find the other newcomer’s weight in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "B",
+      "explanation": "New pair total = 44 + 52 + 32 × 0.75 = 120 kg. Other weight = 120 − 58 = 62 kg."
+    },
+    {
+      "id": "05-142",
+      "number": 142,
+      "question": "2 batches average 82 and 62 marks. Together they average 70. If the higher-scoring batch has 24 candidates, find the total number of candidates.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "60"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Higher : lower = (70 − 62) : (82 − 70) = 2 : 3. Total = 24 × 5 ÷ 2 = 60."
+    },
+    {
+      "id": "05-143",
+      "number": 143,
+      "question": "A candidate scores 65% in an examination with maximum 400 marks and 80% in another with maximum 600 marks. Find the combined percentage.",
+      "options": [
+        {
+          "label": "A",
+          "text": "72.5"
+        },
+        {
+          "label": "B",
+          "text": "75"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "76"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Combined percentage = (400 × 65 + 600 × 80) ÷ 1000 = 74%."
+    },
+    {
+      "id": "05-144",
+      "number": 144,
+      "question": "The daily numbers of defects 0, 1, 2 and 3 occur on 2, 4, 3 and 1 days respectively. Find the mean defects per day.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1.3"
+        },
+        {
+          "label": "B",
+          "text": "1.5"
+        },
+        {
+          "label": "C",
+          "text": "1.2"
+        },
+        {
+          "label": "D",
+          "text": "1.4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mean = (0 × 2 + 1 × 4 + 2 × 3 + 3 × 1) ÷ 10 = 1.3."
+    },
+    {
+      "id": "05-145",
+      "number": 145,
+      "question": "Among 18 numbers, the first 10 average 44 and the last 10 average 50. Their common pair averages 47. Find the average of all 18 numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "46"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "47"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total = 10 × 44 + 10 × 50 − 2 × 47 = 846. Average = 846 ÷ 18 = 47."
+    },
+    {
+      "id": "05-146",
+      "number": 146,
+      "question": "The average of A and B is 31, and the average of B and C is 37. If A is 24, find the average of A and C.",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B = 62 − 24 = 38 and C = 74 − 38 = 36. Average of A and C = (24 + 36) ÷ 2 = 30."
+    },
+    {
+      "id": "05-147",
+      "number": 147,
+      "question": "A worker’s daily income averages ₹480 over a week and daily expenditure averages ₹350 over the same week. Find the total savings for the week in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "130"
+        },
+        {
+          "label": "B",
+          "text": "910"
+        },
+        {
+          "label": "C",
+          "text": "830"
+        },
+        {
+          "label": "D",
+          "text": "960"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Daily saving = 480 − 350 = ₹130. Weekly saving = 7 × 130 = ₹910."
+    },
+    {
+      "id": "05-148",
+      "number": 148,
+      "question": "A bus covers 210 km at an average speed of 42 km/h, including a halt of 48 minutes. Find its average running speed in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "52"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total time = 210 ÷ 42 = 5 hours. Running time = 5 − 48 ÷ 60 = 4.2 hours, so running speed = 210 ÷ 4.2 = 50 km/h."
+    },
+    {
+      "id": "05-149",
+      "number": 149,
+      "question": "Can the average of 5 real numbers be determined? I: Their largest value is 60 and smallest is 20. II: Their middle value when sorted is 40. Choose the code: 1 = I alone is sufficient; 2 = II alone is sufficient; 3 = both together are needed and sufficient; 4 = both together are insufficient.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Both 20, 30, 40, 50, 60 and 20, 25, 40, 50, 60 satisfy both statements. Their averages are 40 and 39, so even together the statements are insufficient."
+    },
+    {
+      "id": "05-150",
+      "number": 150,
+      "question": "20 observations average 36. It is found that every observation was recorded 2 units too high. Find the corrected total.",
+      "options": [
+        {
+          "label": "A",
+          "text": "718"
+        },
+        {
+          "label": "B",
+          "text": "720"
+        },
+        {
+          "label": "C",
+          "text": "760"
+        },
+        {
+          "label": "D",
+          "text": "680"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Correct average = 36 − 2 = 34. Correct total = 20 × 34 = 680."
+    }
+  ]
+}

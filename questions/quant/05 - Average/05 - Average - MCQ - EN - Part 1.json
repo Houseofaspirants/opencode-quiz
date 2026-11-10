@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-001",
+      "number": 1,
+      "question": "6 parcels weigh 48, 52, 47, 55, 51 and 53 kg. What is their average weight in kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "52"
+        },
+        {
+          "label": "D",
+          "text": "306"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Using 51 as a base, deviations total −3 + 1 − 4 + 4 + 0 + 2 = 0, so the average is 51 kg."
+    },
+    {
+      "id": "05-002",
+      "number": 2,
+      "question": "The average weight of 24 trainees is 62 kg. 6 trainees with average weight 72 kg join them. Find the new average weight in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "67"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "65"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The extra weight above 62 is 6 × 10 = 60 kg, spread over 30 trainees. New average = 62 + 60 ÷ 30 = 64 kg."
+    },
+    {
+      "id": "05-003",
+      "number": 3,
+      "question": "A group of 28 players has average weight 54 kg. 2 players weighing 46 kg and 52 kg leave, and 3 new players join. If the new average is 56 kg, what is the average weight of the 3 new players in kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "68"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "72"
+        },
+        {
+          "label": "D",
+          "text": "70"
+        }
+      ],
+      "answer": "D",
+      "explanation": "New players total = 29 × 56 − 28 × 54 + 46 + 52 = 210 kg. Their average = 210 ÷ 3 = 70 kg."
+    },
+    {
+      "id": "05-004",
+      "number": 4,
+      "question": "A batch has 18 boys averaging 64 marks and 12 girls averaging 74 marks. What is the average mark of the batch?",
+      "options": [
+        {
+          "label": "A",
+          "text": "68"
+        },
+        {
+          "label": "B",
+          "text": "69"
+        },
+        {
+          "label": "C",
+          "text": "70"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Average = 64 + 12 × (74 − 64) ÷ 30 = 68."
+    },
+    {
+      "id": "05-005",
+      "number": 5,
+      "question": "The average of 9 consecutive odd integers is 57. Find the greatest integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "61"
+        },
+        {
+          "label": "B",
+          "text": "66"
+        },
+        {
+          "label": "C",
+          "text": "73"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The middle integer is 57. The greatest is 4 steps of 2 above it: 57 + 8 = 65."
+    },
+    {
+      "id": "05-006",
+      "number": 6,
+      "question": "6 years ago, a family of 4 had average age 21 years. 2 children were born afterwards; nobody else joined or left. Today the 6 members average 19 years, and the children differ in age by 2 years. Find the younger child’s age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The children total 6 × 19 − 4 × (21 + 6) = 6 years. Younger age = (6 − 2) ÷ 2 = 2 years."
+    },
+    {
+      "id": "05-007",
+      "number": 7,
+      "question": "Harleen averages 68 marks in 5 tests. What average must she score in the next 3 tests to average 74 over all 8 tests?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "82"
+        },
+        {
+          "label": "D",
+          "text": "86"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Required total = 8 × 74 − 5 × 68 = 252. Required average = 252 ÷ 3 = 84."
+    },
+    {
+      "id": "05-008",
+      "number": 8,
+      "question": "The average of 11 readings is 37. If 1 reading is removed, the average of the remaining 10 is 35. What reading was removed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "57"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Removed reading = 11 × 37 − 10 × 35 = 57."
+    },
+    {
+      "id": "05-009",
+      "number": 9,
+      "question": "The average of 15 numbers is 48. The first 8 average 46 and the last 8 average 51. Find the 8th number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "56"
+        },
+        {
+          "label": "C",
+          "text": "51"
+        },
+        {
+          "label": "D",
+          "text": "104"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The 8th number is counted twice in the 2 groups. It equals 8 × 46 + 8 × 51 − 15 × 48 = 56."
+    },
+    {
+      "id": "05-010",
+      "number": 10,
+      "question": "A set of observations has average 28. Each observation is multiplied by 3 and then reduced by 5. What is the new average?",
+      "options": [
+        {
+          "label": "A",
+          "text": "69"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "79"
+        },
+        {
+          "label": "D",
+          "text": "89"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The average undergoes the same change: 28 × 3 − 5 = 79."
+    },
+    {
+      "id": "05-011",
+      "number": 11,
+      "question": "20 workers average 31 years of age. A worker aged 50 years leaves. Find the average age of the remaining workers in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "29"
+        },
+        {
+          "label": "B",
+          "text": "30.5"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The departing worker is 19 years above average. Average falls by 19 ÷ 19 = 1, giving 30 years."
+    },
+    {
+      "id": "05-012",
+      "number": 12,
+      "question": "Technicians average ₹840 per day and helpers average ₹540 per day. Their combined average is ₹660. If there are 18 helpers, how many technicians are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Technicians : helpers = (660 − 540) : (840 − 660) = 2 : 3. Technicians = 18 × 2 ÷ 3 = 12."
+    },
+    {
+      "id": "05-013",
+      "number": 13,
+      "question": "A batter scores 92 in his 16th innings, raising his average runs per innings by 4. Find his new average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "32"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "C",
+      "explanation": "New average = 92 − 15 × 4 = 32."
+    },
+    {
+      "id": "05-014",
+      "number": 14,
+      "question": "What is the average of the squares of the first 10 positive integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "38.5"
+        },
+        {
+          "label": "D",
+          "text": "42.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Average of the first n squares is (n + 1)(2n + 1) ÷ 6. For n = 10, it is 11 × 21 ÷ 6 = 38.5."
+    },
+    {
+      "id": "05-015",
+      "number": 15,
+      "question": "The average of 40 entries was calculated as 52, but 79 was entered as 39. Find the correct average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "53"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "52.5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The total is short by 79 − 39 = 40. Correct average = 52 + 40 ÷ 40 = 53."
+    },
+    {
+      "id": "05-016",
+      "number": 16,
+      "question": "A bus travels 120 km at 60 km/h and returns over the same route at 40 km/h. It also halts for 1 hour. Find its average speed for the entire trip, including the halt, in km/h.",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total time = 120 ÷ 60 + 120 ÷ 40 + 1 = 6 hours. Average speed = 240 ÷ 6 = 40 km/h."
+    },
+    {
+      "id": "05-017",
+      "number": 17,
+      "question": "The pairwise averages of A and B, B and C, and C and A are 34, 39 and 41 respectively. Find B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B = 34 + 39 − 41 = 32."
+    },
+    {
+      "id": "05-018",
+      "number": 18,
+      "question": "40 candidates average 71 marks. The top 10 average 86 marks. What is the average of the remaining candidates?",
+      "options": [
+        {
+          "label": "A",
+          "text": "68"
+        },
+        {
+          "label": "B",
+          "text": "69"
+        },
+        {
+          "label": "C",
+          "text": "66"
+        },
+        {
+          "label": "D",
+          "text": "56"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The top 10 have 10 × 15 = 150 marks above the overall base. Remaining average = 71 − 150 ÷ 30 = 66."
+    },
+    {
+      "id": "05-019",
+      "number": 19,
+      "question": "In a packing unit, 3 cartons weigh 12 kg each, 4 weigh 15 kg each and 3 weigh 18 kg each. What is the average carton weight in kg?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The equal counts at 12 and 18 balance around 15; the other cartons also weigh 15. Average = 15 kg."
+    },
+    {
+      "id": "05-020",
+      "number": 20,
+      "question": "Replacing a 42 kg student with a 66 kg student raises a group’s average weight by 0.8 kg. Later, a 54 kg student is replaced by a 39 kg student in the same group. By how many kg does the average fall in the second replacement?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.4"
+        },
+        {
+          "label": "B",
+          "text": "0.5"
+        },
+        {
+          "label": "C",
+          "text": "0.6"
+        },
+        {
+          "label": "D",
+          "text": "0.8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Group size = (66 − 42) ÷ 0.8 = 30. Second fall = (54 − 39) ÷ 30 = 0.5 kg."
+    },
+    {
+      "id": "05-021",
+      "number": 21,
+      "question": "The average age of 32 students is 14 years 6 months. Including their teacher raises it by 6 months. Find the teacher’s age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30.5"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "31"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Teacher’s age = 14.5 + 33 × 0.5 = 31 years."
+    },
+    {
+      "id": "05-022",
+      "number": 22,
+      "question": "A bowler concedes 252 runs and takes 14 wickets. What is his bowling average in runs per wicket?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Bowling average = runs conceded ÷ wickets = 252 ÷ 14 = 18."
+    },
+    {
+      "id": "05-023",
+      "number": 23,
+      "question": "An examination gives 40% weight to a written score of 75 and 60% to an interview score. If the final weighted score is 81, find the interview score.",
+      "options": [
+        {
+          "label": "A",
+          "text": "85"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "87"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Interview score = (81 − 0.4 × 75) ÷ 0.6 = 85."
+    },
+    {
+      "id": "05-024",
+      "number": 24,
+      "question": "5 distinct positive integers average 18. If the smallest is 4, what is the greatest possible value of the largest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "74"
+        },
+        {
+          "label": "B",
+          "text": "70"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "68"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Minimise the other 4 as 4, 5, 6 and 7. Largest = 5 × 18 − (4 + 5 + 6 + 7) = 68."
+    },
+    {
+      "id": "05-025",
+      "number": 25,
+      "question": "A family spends an average of ₹18,000 per month for 4 months and ₹21,000 per month for the next 8 months. Its annual savings are ₹48,000. Find its average monthly income in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "23500"
+        },
+        {
+          "label": "B",
+          "text": "25000"
+        },
+        {
+          "label": "C",
+          "text": "20000"
+        },
+        {
+          "label": "D",
+          "text": "24000"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Monthly expenditure = (4 × 18000 + 8 × 21000) ÷ 12 = 20000. Add monthly savings 48000 ÷ 12 = 4000 to get ₹24000."
+    }
+  ]
+}

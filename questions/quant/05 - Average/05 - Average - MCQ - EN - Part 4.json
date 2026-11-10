@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Average"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-076",
+      "number": 76,
+      "question": "Find the average of the 6 terms 3, 6, 12, 24, 48 and 96.",
+      "options": [
+        {
+          "label": "A",
+          "text": "32"
+        },
+        {
+          "label": "B",
+          "text": "30.5"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "31.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Their sum is 3 × (2^6 − 1) = 189. Average = 189 ÷ 6 = 31.5."
+    },
+    {
+      "id": "05-077",
+      "number": 77,
+      "question": "A training centre has 80 candidates. Successful candidates average 76 marks, unsuccessful candidates average 44 marks, and all candidates average 68. How many candidates were successful?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "64"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Successful fraction = (68 − 44) ÷ (76 − 44) = 3/4. Successful count = 80 × 3/4 = 60."
+    },
+    {
+      "id": "05-078",
+      "number": 78,
+      "question": "A group averages 45 kg. 3 members averaging 41 kg leave and 5 averaging 57 kg join. The new average is 48 kg. Find the original number of members.",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For original count n, 45n − 3 × 41 + 5 × 57 = 48(n + 2). Thus 3n = 66 and n = 22."
+    },
+    {
+      "id": "05-079",
+      "number": 79,
+      "question": "9 numbers average 32. The first 4 total 116 and the last 4 total 134. Find the middle number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "38"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Middle number = 9 × 32 − 116 − 134 = 38."
+    },
+    {
+      "id": "05-080",
+      "number": 80,
+      "question": "The average of the first n positive odd integers is 37. Find n.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "37"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The average of the first n positive odd integers is n. Hence n = 37."
+    },
+    {
+      "id": "05-081",
+      "number": 81,
+      "question": "A class has 24 pupils averaging 13 years. Their teacher is included, and after 2 years the same 25 people average 16 years. Find the teacher’s present age in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "35"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Today’s combined average = 16 − 2 = 14. Teacher’s present age = 25 × 14 − 24 × 13 = 38 years."
+    },
+    {
+      "id": "05-082",
+      "number": 82,
+      "question": "Equal amounts of money are spent on tea priced at ₹240 and ₹360 per kg. Find the average purchase price per kg in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "300"
+        },
+        {
+          "label": "B",
+          "text": "280"
+        },
+        {
+          "label": "C",
+          "text": "312"
+        },
+        {
+          "label": "D",
+          "text": "288"
+        }
+      ],
+      "answer": "D",
+      "explanation": "For equal expenditure, average price = 2 × 240 × 360 ÷ (240 + 360) = ₹288 per kg."
+    },
+    {
+      "id": "05-083",
+      "number": 83,
+      "question": "3 groups contain 10, 15 and 25 workers with average outputs of 24, 28 and 32 units. Find the average output per worker.",
+      "options": [
+        {
+          "label": "A",
+          "text": "29.2"
+        },
+        {
+          "label": "B",
+          "text": "28"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "28.8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Average = (10 × 24 + 15 × 28 + 25 × 32) ÷ 50 = 29.2 units."
+    },
+    {
+      "id": "05-084",
+      "number": 84,
+      "question": "11 readings average 40. The first 5 average 36 and the last 5 average 43. If the 6th reading is increased by 21, what will be the average of the first 6 readings?",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "39"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "6th reading = 440 − 180 − 215 = 45. New first-6 average = (180 + 45 + 21) ÷ 6 = 41."
+    },
+    {
+      "id": "05-085",
+      "number": 85,
+      "question": "The average of 5 numbers is 62. 4 have deviations 8, −5, 3 and −10 from 62. Find the 5th number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "58"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "70"
+        },
+        {
+          "label": "D",
+          "text": "66"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Deviations must sum to 0, so the 5th deviation is 4. 5th number = 62 + 4 = 66."
+    },
+    {
+      "id": "05-086",
+      "number": 86,
+      "question": "A team of 25 averages 64 points. 5 players leave, and the remaining average rises to 67. Find the average points of those who left.",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "61"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Departing average = 64 − 20 × (67 − 64) ÷ 5 = 52."
+    },
+    {
+      "id": "05-087",
+      "number": 87,
+      "question": "A cyclist covers equal distances at 18 and 30 km/h. How many minutes are needed to cover 90 km at the resulting average speed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "225"
+        },
+        {
+          "label": "B",
+          "text": "240"
+        },
+        {
+          "label": "C",
+          "text": "200"
+        },
+        {
+          "label": "D",
+          "text": "270"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Average speed = 2 × 18 × 30 ÷ 48 = 22.5 km/h. Time = 90 ÷ 22.5 × 60 = 240 minutes."
+    },
+    {
+      "id": "05-088",
+      "number": 88,
+      "question": "30 measurements average 48. entries were recorded as 83 and 26 instead of 38 and 62. Find the corrected average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "47.7"
+        },
+        {
+          "label": "B",
+          "text": "48.3"
+        },
+        {
+          "label": "C",
+          "text": "46.5"
+        },
+        {
+          "label": "D",
+          "text": "49.2"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total correction = 38 + 62 − 83 − 26 = −9. Correct average = 48 − 9 ÷ 30 = 47.7."
+    },
+    {
+      "id": "05-089",
+      "number": 89,
+      "question": "Find the average of all 2-digit positive integers divisible by 13.",
+      "options": [
+        {
+          "label": "A",
+          "text": "45.5"
+        },
+        {
+          "label": "B",
+          "text": "52"
+        },
+        {
+          "label": "C",
+          "text": "58.5"
+        },
+        {
+          "label": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The sequence runs from 13 to 91. Average = (13 + 91) ÷ 2 = 52."
+    },
+    {
+      "id": "05-090",
+      "number": 90,
+      "question": "A club has 14 members averaging 40 years. How many members averaging 28 years must join to reduce the average to 36 years?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Existing excess = 14 × (40 − 36) = 56 years. Each newcomer offsets 36 − 28 = 8 years, so 56 ÷ 8 = 7 join."
+    },
+    {
+      "id": "05-091",
+      "number": 91,
+      "question": "40 players average 60 kg. 4 players averaging 52 kg are replaced, raising the group average to 61.2 kg. The new players’ weights are in ratio 1 : 2 : 2 : 3. Find the heaviest new player’s weight in kg.",
+      "options": [
+        {
+          "label": "A",
+          "text": "90"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "104"
+        },
+        {
+          "label": "D",
+          "text": "96"
+        }
+      ],
+      "answer": "D",
+      "explanation": "New players total = 4 × 52 + 40 × 1.2 = 256 kg. Heaviest = 256 × 3 ÷ 8 = 96 kg."
+    },
+    {
+      "id": "05-092",
+      "number": 92,
+      "question": "A batter averages 38 runs per innings in 15 innings. In his next 2 innings he scores 54 and 73. Find his new average runs per innings.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "41"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "43"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Extra above the old base = 54 + 73 − 2 × 38 = 51. New average = 38 + 51 ÷ 17 = 41."
+    },
+    {
+      "id": "05-093",
+      "number": 93,
+      "question": "Permanent workers average ₹900 per day and temporary workers ₹600. The combined average is ₹780. What percentage of workers are permanent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "70"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Permanent fraction = (780 − 600) ÷ (900 − 600) = 3/5. Percentage = 60%."
+    },
+    {
+      "id": "05-094",
+      "number": 94,
+      "question": "A bowler concedes 52 runs in 6 overs and 3 legal balls. Find his average runs conceded per over, taking 6 legal balls per over.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8.25"
+        },
+        {
+          "label": "B",
+          "text": "8.5"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "7.5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "6 overs and 3 balls = 6.5 overs, not 6.3. Runs per over = 52 ÷ 6.5 = 8."
+    },
+    {
+      "id": "05-095",
+      "number": 95,
+      "question": "11 friends share a meal. 7 pay ₹180 each, 3 pay ₹240 each, and the organiser pays ₹120 more than the average payment of all 11. Find the organiser’s payment in ₹.",
+      "options": [
+        {
+          "label": "A",
+          "text": "318"
+        },
+        {
+          "label": "B",
+          "text": "330"
+        },
+        {
+          "label": "C",
+          "text": "300"
+        },
+        {
+          "label": "D",
+          "text": "342"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If the average is x, then 7 × 180 + 3 × 240 + x + 120 = 11x, giving x = 210. Organiser pays 210 + 120 = ₹330."
+    },
+    {
+      "id": "05-096",
+      "number": 96,
+      "question": "A candidate averages 64 marks in 3 equally weighted papers. The fourth paper carries double the weight of each earlier paper. What mark in it gives a final weighted average of 70?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "82"
+        },
+        {
+          "label": "C",
+          "text": "79"
+        },
+        {
+          "label": "D",
+          "text": "88"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total weight = 3 + 2 = 5. Required mark = (5 × 70 − 3 × 64) ÷ 2 = 79."
+    },
+    {
+      "id": "05-097",
+      "number": 97,
+      "question": "A worker earns ₹700 per day for 6 days. Find his average daily income over the full 7-day week if he earns 0 on the 7th day.",
+      "options": [
+        {
+          "label": "A",
+          "text": "700"
+        },
+        {
+          "label": "B",
+          "text": "650"
+        },
+        {
+          "label": "C",
+          "text": "580"
+        },
+        {
+          "label": "D",
+          "text": "600"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Weekly income = 6 × 700 = ₹4200. Daily average = 4200 ÷ 7 = ₹600."
+    },
+    {
+      "id": "05-098",
+      "number": 98,
+      "question": "A delivery van covers 150 km in 3 hours and 90 km in 2 hours. Its overall average including 1 halt is 40 km/h. Find the halt duration in minutes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "45"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total time = 240 ÷ 40 = 6 hours; moving time = 3 + 2 = 5 hours. Halt = (6 − 5) × 60 = 60 minutes."
+    },
+    {
+      "id": "05-099",
+      "number": 99,
+      "question": "Is the average of 4 real numbers greater than 25? I: Each of the 3 smallest numbers exceeds 20, and the largest exceeds 40. II: All 4 numbers are positive. Choose the code: 1 = I alone is sufficient; 2 = II alone is sufficient; 3 = both together are needed and sufficient; 4 = both together are insufficient.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "I forces the total above 3 × 20 + 40 = 100, hence the mean exceeds 25. II only forces the mean above 0, so I alone is sufficient."
+    },
+    {
+      "id": "05-100",
+      "number": 100,
+      "question": "A father and daughter average 34 years, and their ages are in ratio 13 : 4. Find the daughter’s age after 5 years, in years.",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Daughter’s present age = 2 × 34 × 4 ÷ 17 = 16. After 5 years, she will be 21."
+    }
+  ]
+}
