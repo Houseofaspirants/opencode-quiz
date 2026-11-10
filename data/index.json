@@ -3,10 +3,10 @@
   "generatedAt": "2026-11-09T07:55:54.761Z",
   "stats": {
     "subjects": 7,
-    "categories": 50,
-    "topics": 103,
-    "quizzes": 103,
-    "questions": 2383,
+    "categories": 51,
+    "topics": 111,
+    "quizzes": 111,
+    "questions": 2583,
     "studentsPracticed": 12500
   },
   "site": {
@@ -3186,6 +3186,246 @@
             "pa": 25
           },
           "landing": "/quiz-quant-01-number-system-part-4"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 1",
+          "name": "Simplification MCQ – Part 1",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 1",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-1"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 2",
+          "name": "Simplification MCQ – Part 2",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 2",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-2"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 3",
+          "name": "Simplification MCQ – Part 3",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 3",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-3"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 4",
+          "name": "Simplification MCQ – Part 4",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 4",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-4"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 5",
+          "name": "Simplification MCQ – Part 5",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 5.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 5",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-5"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 6",
+          "name": "Simplification MCQ – Part 6",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 6.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 6",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-6"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 7",
+          "name": "Simplification MCQ – Part 7",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 7.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 7.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 7.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 7",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 7"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-7"
+        },
+        {
+          "id": "04 - Simplification - MCQ - EN - Part 8",
+          "name": "Simplification MCQ – Part 8",
+          "description": "",
+          "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794287940941,
+          "category": "04-simplification",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json",
+            "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 8.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Simplification MCQ – Part 8",
+            "pa": "ਸਰਲੀਕਰਨ MCQ – Part 8"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-04-simplification-part-8"
         }
       ],
       "categories": [
@@ -3575,6 +3815,255 @@
             }
           ],
           "landing": "/category-quant-03-decimal-fractions"
+        },
+        {
+          "id": "04-simplification",
+          "name": "04   Simplification",
+          "folder": "04 - Simplification",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 1",
+              "name": "Simplification MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 1",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-1"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 2",
+              "name": "Simplification MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 2",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-2"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 3",
+              "name": "Simplification MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 3",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-3"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 4",
+              "name": "Simplification MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 4",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-4"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 5",
+              "name": "Simplification MCQ – Part 5",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 5.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 5",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-5"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 6",
+              "name": "Simplification MCQ – Part 6",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 6.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 6",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-6"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 7",
+              "name": "Simplification MCQ – Part 7",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 7.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 7.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 7.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 7",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 7"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-7"
+            },
+            {
+              "id": "04 - Simplification - MCQ - EN - Part 8",
+              "name": "Simplification MCQ – Part 8",
+              "description": "",
+              "file": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794287940941,
+              "category": "04-simplification",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json",
+                "pa": "questions/quant/04 - Simplification/04 - Simplification - MCQ - PA - Part 8.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Simplification MCQ – Part 8",
+                "pa": "ਸਰਲੀਕਰਨ MCQ – Part 8"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-04-simplification-part-8"
+            }
+          ],
+          "landing": "/category-quant-04-simplification"
         }
       ],
       "landing": "/subject-quant"
@@ -6858,6 +7347,38 @@
     "questions/quant/03 - Decimal Fractions/03 - Decimal Fractions - MCQ - EN - Part 4.json": [
       "c1c555354daa6bbf",
       1793707485527
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 1.json": [
+      "5266c1a28390119e",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 2.json": [
+      "f77584fdf890eb38",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 3.json": [
+      "23bd7ea6420729e6",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 4.json": [
+      "56337ab28915ab1d",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 5.json": [
+      "717103d01825f971",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 6.json": [
+      "8bceaae96a7dec21",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 7.json": [
+      "be26e7aa5bd5d7e2",
+      1794287940941
+    ],
+    "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json": [
+      "ef4863574fdd20eb",
+      1794287940941
     ],
     "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",
