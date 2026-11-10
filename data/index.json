@@ -3,10 +3,10 @@
   "generatedAt": "2026-11-10T05:20:08.351Z",
   "stats": {
     "subjects": 7,
-    "categories": 51,
-    "topics": 111,
-    "quizzes": 111,
-    "questions": 2583,
+    "categories": 52,
+    "topics": 119,
+    "quizzes": 119,
+    "questions": 2783,
     "studentsPracticed": 12500
   },
   "site": {
@@ -2828,6 +2828,246 @@
       "order": 2,
       "topics": [
         {
+          "id": "05 - Average - MCQ - EN - Part 1",
+          "name": "Average MCQ – Part 1",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 1",
+            "pa": "ਔਸਤ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-1"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 2",
+          "name": "Average MCQ – Part 2",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 2",
+            "pa": "ਔਸਤ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-2"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 3",
+          "name": "Average MCQ – Part 3",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 3",
+            "pa": "ਔਸਤ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-3"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 4",
+          "name": "Average MCQ – Part 4",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 4",
+            "pa": "ਔਸਤ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-4"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 5",
+          "name": "Average MCQ – Part 5",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 5.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 5",
+            "pa": "ਔਸਤ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-5"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 6",
+          "name": "Average MCQ – Part 6",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 6.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 6",
+            "pa": "ਔਸਤ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-6"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 7",
+          "name": "Average MCQ – Part 7",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 7.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 7.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 7.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 7",
+            "pa": "ਔਸਤ MCQ – Part 7"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-7"
+        },
+        {
+          "id": "05 - Average - MCQ - EN - Part 8",
+          "name": "Average MCQ – Part 8",
+          "description": "",
+          "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794313773522,
+          "category": "05-average",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json",
+            "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 8.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Average MCQ – Part 8",
+            "pa": "ਔਸਤ MCQ – Part 8"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-05-average-part-8"
+        },
+        {
           "id": "03 - Decimal Fractions - MCQ - EN - Part 1",
           "name": "Decimal Fractions MCQ – Part 1",
           "description": "",
@@ -4064,6 +4304,255 @@
             }
           ],
           "landing": "/category-quant-04-simplification"
+        },
+        {
+          "id": "05-average",
+          "name": "05   Average",
+          "folder": "05 - Average",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "05 - Average - MCQ - EN - Part 1",
+              "name": "Average MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 1",
+                "pa": "ਔਸਤ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-1"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 2",
+              "name": "Average MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 2",
+                "pa": "ਔਸਤ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-2"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 3",
+              "name": "Average MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 3",
+                "pa": "ਔਸਤ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-3"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 4",
+              "name": "Average MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 4",
+                "pa": "ਔਸਤ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-4"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 5",
+              "name": "Average MCQ – Part 5",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 5.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 5",
+                "pa": "ਔਸਤ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-5"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 6",
+              "name": "Average MCQ – Part 6",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 6.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 6",
+                "pa": "ਔਸਤ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-6"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 7",
+              "name": "Average MCQ – Part 7",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 7.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 7.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 7.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 7",
+                "pa": "ਔਸਤ MCQ – Part 7"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-7"
+            },
+            {
+              "id": "05 - Average - MCQ - EN - Part 8",
+              "name": "Average MCQ – Part 8",
+              "description": "",
+              "file": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794313773522,
+              "category": "05-average",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json",
+                "pa": "questions/quant/05 - Average/05 - Average - MCQ - PA - Part 8.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Average MCQ – Part 8",
+                "pa": "ਔਸਤ MCQ – Part 8"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-05-average-part-8"
+            }
+          ],
+          "landing": "/category-quant-05-average"
         }
       ],
       "landing": "/subject-quant"
@@ -7379,6 +7868,38 @@
     "questions/quant/04 - Simplification/04 - Simplification - MCQ - EN - Part 8.json": [
       "ef4863574fdd20eb",
       1794287940941
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 1.json": [
+      "cd704b3844af9015",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 2.json": [
+      "30f5cae39f16b549",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 3.json": [
+      "10aa149c44c25326",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 4.json": [
+      "fa309952d075a127",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 5.json": [
+      "29a819d57ffe4816",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 6.json": [
+      "256eb67802470d76",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 7.json": [
+      "7d1fed47ee3d2f63",
+      1794313773522
+    ],
+    "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json": [
+      "52085a17ece647d4",
+      1794313773522
     ],
     "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",

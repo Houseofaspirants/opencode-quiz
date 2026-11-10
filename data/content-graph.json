@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 624,
+  "nodes": 626,
   "edges": 4935,
   "silos": 35,
-  "clusters": 173,
+  "clusters": 182,
   "pillars": 34
  },
  "nodes": [
@@ -6941,80 +6941,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
-   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
-   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
-   "url": "/quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-quant-03-decimal-fractions-part-1.html",
    "url": "/quiz-quant-03-decimal-fractions-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-03-decimal-fractions-part-2.html",
-   "url": "/quiz-quant-03-decimal-fractions-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-03-decimal-fractions-part-3.html",
-   "url": "/quiz-quant-03-decimal-fractions-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-03-decimal-fractions-part-4.html",
-   "url": "/quiz-quant-03-decimal-fractions-part-4.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -7111,6 +7039,102 @@
   {
    "id": "quiz-quant-04-simplification-part-8.html",
    "url": "/quiz-quant-04-simplification-part-8.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-1.html",
+   "url": "/quiz-quant-05-average-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-2.html",
+   "url": "/quiz-quant-05-average-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-3.html",
+   "url": "/quiz-quant-05-average-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-4.html",
+   "url": "/quiz-quant-05-average-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-5.html",
+   "url": "/quiz-quant-05-average-part-5.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-6.html",
+   "url": "/quiz-quant-05-average-part-6.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-7.html",
+   "url": "/quiz-quant-05-average-part-7.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-quant-05-average-part-8.html",
+   "url": "/quiz-quant-05-average-part-8.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -16967,55 +16991,7 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-01-number-system-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-02-hcf-and-lcm-of-numbers-part-4.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-quant-03-decimal-fractions-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-03-decimal-fractions-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-03-decimal-fractions-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-03-decimal-fractions-part-4.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17064,6 +17040,54 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-04-simplification-part-8.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-5.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-6.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-7.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-quant-05-average-part-8.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21887,6 +21911,12 @@
   },
   {
    "from": "material-maths-average-notes-punjabi-english.html",
+   "to": "quiz-quant-05-average-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-maths-average-notes-punjabi-english.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -21900,12 +21930,6 @@
   {
    "from": "material-maths-average-notes-punjabi-english.html",
    "to": "study-quant.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-maths-average-notes-punjabi-english.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29537,19 +29561,19 @@
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-1.html",
+   "to": "quiz-quant-05-average-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-2.html",
+   "to": "quiz-quant-05-average-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-3.html",
+   "to": "quiz-quant-05-average-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -30215,19 +30239,19 @@
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-1.html",
+   "to": "quiz-quant-05-average-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-2.html",
+   "to": "quiz-quant-05-average-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-3.html",
+   "to": "quiz-quant-05-average-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37187,19 +37211,19 @@
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-1.html",
+   "to": "quiz-quant-05-average-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-2.html",
+   "to": "quiz-quant-05-average-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "quiz-quant-03-decimal-fractions-part-3.html",
+   "to": "quiz-quant-05-average-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37811,19 +37835,19 @@
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-1.html",
+   "to": "quiz-quant-05-average-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-2.html",
+   "to": "quiz-quant-05-average-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "quiz-quant-03-decimal-fractions-part-3.html",
+   "to": "quiz-quant-05-average-part-3.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -38593,6 +38617,7 @@
     "category-quant-02-hcf-and-lcm-of-numbers.html",
     "category-quant-03-decimal-fractions.html",
     "category-quant-04-simplification.html",
+    "category-quant-05-average.html",
     "topic-quant-01-number-system-part-1.html",
     "topic-quant-01-number-system-part-2.html",
     "topic-quant-01-number-system-part-3.html",
@@ -38612,7 +38637,15 @@
     "topic-quant-04-simplification-part-5.html",
     "topic-quant-04-simplification-part-6.html",
     "topic-quant-04-simplification-part-7.html",
-    "topic-quant-04-simplification-part-8.html"
+    "topic-quant-04-simplification-part-8.html",
+    "topic-quant-05-average-part-1.html",
+    "topic-quant-05-average-part-2.html",
+    "topic-quant-05-average-part-3.html",
+    "topic-quant-05-average-part-4.html",
+    "topic-quant-05-average-part-5.html",
+    "topic-quant-05-average-part-6.html",
+    "topic-quant-05-average-part-7.html",
+    "topic-quant-05-average-part-8.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
