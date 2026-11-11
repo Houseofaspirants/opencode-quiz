@@ -23,7 +23,7 @@
   "nodes": 630,
   "edges": 4978,
   "silos": 35,
-  "clusters": 182,
+  "clusters": 184,
   "pillars": 34
  },
  "nodes": [
@@ -6749,8 +6749,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "url": "/quiz-gk-arrival-of-european-in-india-part-1.html",
+   "id": "quiz-gk-1857-revolt-part-1.html",
+   "url": "/quiz-gk-1857-revolt-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6761,8 +6761,20 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "url": "/quiz-gk-arrival-of-european-in-india-part-2.html",
+   "id": "quiz-gk-1857-revolt-part-2.html",
+   "url": "/quiz-gk-1857-revolt-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "url": "/quiz-gk-arrival-of-european-in-india-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -6895,18 +6907,6 @@
   {
    "id": "quiz-gk-maharaja-ranjit-singh-part-2.html",
    "url": "/quiz-gk-maharaja-ranjit-singh-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-maharaja-ranjit-singh-part-3.html",
-   "url": "/quiz-gk-maharaja-ranjit-singh-part-3.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -15245,19 +15245,19 @@
   },
   {
    "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -17045,6 +17045,18 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-maharaja-ranjit-singh-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -17052,18 +17064,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-maharaja-ranjit-singh-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-maharaja-ranjit-singh-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-03-decimal-fractions-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17687,13 +17687,13 @@
   },
   {
    "from": "material-1857-revolt-notes-english.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-1857-revolt-notes-english.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26141,19 +26141,19 @@
   },
   {
    "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26399,19 +26399,19 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26573,19 +26573,19 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26777,19 +26777,19 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -26975,19 +26975,19 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27167,19 +27167,19 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27347,19 +27347,19 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27557,19 +27557,19 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27761,19 +27761,19 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -27965,19 +27965,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -28169,19 +28169,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -28373,19 +28373,19 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -28523,19 +28523,19 @@
   },
   {
    "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -29351,19 +29351,19 @@
   },
   {
    "from": "pa/tguide-fundamental-rights.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-fundamental-rights.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-fundamental-rights.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-fundamental-rights.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -29519,19 +29519,19 @@
   },
   {
    "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -29681,19 +29681,19 @@
   },
   {
    "from": "pa/tguide-parliament-vs-state-legislature.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-parliament-vs-state-legislature.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-parliament-vs-state-legislature.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-parliament-vs-state-legislature.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-parliament-vs-state-legislature.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -30023,19 +30023,19 @@
   },
   {
    "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -30365,19 +30365,19 @@
   },
   {
    "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -33329,19 +33329,19 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "session-sunday-live-doubt-session-2026-10-04.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -33491,19 +33491,19 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -33677,19 +33677,19 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -33857,19 +33857,19 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34037,19 +34037,19 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34199,19 +34199,19 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34385,19 +34385,19 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34571,19 +34571,19 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34775,19 +34775,19 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -34955,19 +34955,19 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -35141,19 +35141,19 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -36269,19 +36269,19 @@
   },
   {
    "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37037,19 +37037,19 @@
   },
   {
    "from": "tguide-fundamental-rights.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-fundamental-rights.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-fundamental-rights.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-fundamental-rights.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37193,19 +37193,19 @@
   },
   {
    "from": "tguide-geography-of-punjab-rivers-regions.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-geography-of-punjab-rivers-regions.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-geography-of-punjab-rivers-regions.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-geography-of-punjab-rivers-regions.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-geography-of-punjab-rivers-regions.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37361,19 +37361,19 @@
   },
   {
    "from": "tguide-parliament-vs-state-legislature.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-parliament-vs-state-legislature.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-parliament-vs-state-legislature.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-parliament-vs-state-legislature.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-parliament-vs-state-legislature.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37667,19 +37667,19 @@
   },
   {
    "from": "tguide-punjab-fairs-festivals-folk-dances.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-punjab-fairs-festivals-folk-dances.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-punjab-fairs-festivals-folk-dances.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37991,19 +37991,19 @@
   },
   {
    "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
    "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "quiz-gk-arrival-of-european-in-india-part-2.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "quiz-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -38815,6 +38815,8 @@
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
+    "topic-gk-1857-revolt-part-1.html",
+    "topic-gk-1857-revolt-part-2.html",
     "topic-gk-arrival-of-european-in-india-part-1.html",
     "topic-gk-arrival-of-european-in-india-part-2.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
