@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 626,
-  "edges": 4935,
+  "nodes": 628,
+  "edges": 4955,
   "silos": 35,
   "clusters": 182,
   "pillars": 34
@@ -2540,6 +2540,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦਾ ਸਾਹਿਤ - ਭਾਗ 2",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-1857-revolt-notes-english",
+   "url": "/material-1857-revolt-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-1857-revolt-notes-english.html",
+   "url": "/material-1857-revolt-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 04: 1857 Revolt (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8927,6 +8951,12 @@
   },
   {
    "from": "archive-category-history.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -14123,6 +14153,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -17596,6 +17632,96 @@
    "weight": 1
   },
   {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-1857-revolt-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "study-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-east-india-company-expansion-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -17663,7 +17789,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -17681,7 +17807,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17767,6 +17893,12 @@
    "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
    "to": "material-east-india-company-expansion-notes-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -18047,13 +18179,13 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -18065,7 +18197,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18155,7 +18287,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19019,13 +19151,13 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-east-india-company-expansion-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -19033,6 +19165,12 @@
    "from": "material-east-india-company-expansion-notes-english.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-east-india-company-expansion-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -19121,7 +19259,7 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-punjabi.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -22793,7 +22931,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -22877,7 +23015,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25439,7 +25577,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25523,7 +25661,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -30347,13 +30485,13 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-cpu-central-processing-unit-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pdfs.html",
-   "to": "material-cpu-central-processing-unit-notes-punjabi.html",
+   "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35075,6 +35213,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -35621,13 +35765,13 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-cpu-central-processing-unit-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "study-notes.html",
-   "to": "material-cpu-central-processing-unit-notes-punjabi.html",
+   "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
