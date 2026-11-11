@@ -5993,7 +5993,7 @@ def _study_note_li(rec, lang):
         bits.append(str(rec["sizeLabel"]))
     if rec.get("readingMinutes"):
         bits.append(f'{rec["readingMinutes"]} {t["min"]}')
-    return (f'<li><a href="{esc(rec["file"])}">{esc(rec["title"])}</a>'
+    return (f'<li class="is-note"><a href="{esc(rec["file"])}">{esc(rec["title"])}</a>'
             f'<span class="part-meta">{" &middot; ".join(esc(b) for b in bits)}'
             f'</span></li>')
 
@@ -6073,7 +6073,7 @@ def study_section_page(p, by_file, rows_by_id):
             sections = [f"""    <section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div><h2>{t["parts_h"]}</h2></div></div>
-        <ul class="part-list">{listing}</ul>
+        <ul class="part-list folder-list">{listing}</ul>
       </div>
     </section>"""]
             count_line = f'{len(recs)} {t["parts"]} &middot; {t["lang"]}'
@@ -6099,7 +6099,7 @@ def study_section_page(p, by_file, rows_by_id):
                 sub = str(recs[0].get("studySubcategory") or "")
                 if ch.get("page"):
                     cname = (_chapter_label(ch, by_file) if lang == "pa" else ch["name"])
-                    li = (f'<li><a href="{esc(ch["page"])}">{esc(cname)}</a>'
+                    li = (f'<li class="is-folder"><a href="{esc(ch["page"])}">{esc(cname)}</a>'
                           f'<span class="part-meta">{len(recs)} {t["parts"]}</span></li>')
                     items.append((cname, f"{DOMAIN}/{ch['page'][:-5]}"))
                 else:
@@ -6110,7 +6110,7 @@ def study_section_page(p, by_file, rows_by_id):
             for sub, lis in groups.items():
                 head_txt = ((STUDY_GK_PA.get(sub) if lang == "pa" else None)
                             or (pdf_title_from_name(sub) if sub else t["chapters_h"]))
-                blocks.append(f'<h2>{esc(head_txt)}</h2><ul class="part-list">{"".join(lis)}</ul>')
+                blocks.append(f'<h2>{esc(head_txt)}</h2><ul class="part-list folder-list">{"".join(lis)}</ul>')
             listing = "".join(blocks) or f"""<div class="empty-state">
             <span class="es-icon" aria-hidden="true">📚</span>
             <h2>{t["empty_h"]}</h2>

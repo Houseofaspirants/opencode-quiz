@@ -296,6 +296,7 @@ const HOA = (() => {
     "By subject": "ਵਿਸ਼ੇ ਅਨੁਸਾਰ",
     "Study material": "ਅਧਿਐਨ ਸਮੱਗਰੀ",
     "Test types": "ਟੈਸਟ ਦੀਆਂ ਕਿਸਮਾਂ",
+    "Tests": "ਟੈਸਟ",
 
     /* --- footer ---------------------------------------------------------- */
     "Company": "ਕੰਪਨੀ",
@@ -712,13 +713,8 @@ const HOA = (() => {
                 ).join("")}
               </div>
               <div class="nav-col">
-                <span class="nav-col-head" data-i18n="Test types">Test types</span>
-                <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
+                <span class="nav-col-head" data-i18n="Tests">Tests</span>
                 <a data-nav="mock" href="mock"><span data-i18n="Mock Tests">Mock Tests</span></a>
-                <a data-nav="revision" href="revision"><span data-i18n="Revision Tests">Revision Tests</span></a>
-                <a data-nav="full-test" href="quiz?mode=mock"><span data-i18n="Full Tests">Full Tests</span></a>
-                <a data-nav="daily" href="daily-practice"><span data-i18n="Daily Practice">Daily Practice</span></a>
-                <a data-nav="leaderboard" href="leaderboard"><span data-i18n="Leaderboard">Leaderboard</span></a>
                 <a data-nav="progress" href="progress"><span data-i18n="My Progress">My Progress</span></a>
                 <a data-nav="bookmarks" href="bookmarks"><span data-i18n="Bookmarks">Bookmarks</span></a>
               </div>
@@ -729,8 +725,6 @@ const HOA = (() => {
                level — no destination appears in this list twice, and none of
                them is nested under Study or Practice. -->
           <li><a class="nav-link" data-nav="pyq" href="pyq"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
-          <li><a class="nav-link" data-nav="books" href="books"><span data-i18n="Books">Books</span></a></li>
-          <li><a class="nav-link" data-nav="sessions" href="live-sessions"><span data-i18n="Live Guidance">Live Guidance</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about"><span data-i18n="About">About</span></a></li>
         </ul>
       </nav>
@@ -819,20 +813,14 @@ const HOA = (() => {
           `<a class="mm-link" data-nav="${id}" href="subject?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
-    <a class="mm-link mm-practice" data-nav="expected-mcqs" href="expected-mcqs"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
     <a class="mm-link mm-practice" data-nav="mock" href="mock"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
-    <a class="mm-link mm-practice" data-nav="revision" href="revision"><span class="mm-emoji">🔁</span> <span data-i18n="Revision Tests">Revision Tests</span></a>
-    <a class="mm-link mm-practice" href="quiz?mode=mock"><span class="mm-emoji">📝</span> <span data-i18n="Full Tests">Full Tests</span></a>
-    <a class="mm-link mm-practice" href="leaderboard"><span class="mm-emoji">🏆</span> <span data-i18n="Leaderboard">Leaderboard</span></a>
     <a class="mm-link mm-practice" href="progress"><span class="mm-emoji">📈</span> <span data-i18n="My Progress">My Progress</span></a>
     <a class="mm-link mm-practice" href="bookmarks"><span class="mm-emoji">🔖</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
 
     <!-- The other three systems, each once. -->
     <p class="mm-group" data-i18n="More">More</p>
     <a class="mm-link" data-nav="pyq" href="pyq"><span class="mm-emoji">📜</span> <span data-i18n="Previous Year Papers">Previous Year Papers</span></a>
-    <a class="mm-link" data-nav="books" href="books"><span class="mm-emoji">📚</span> <span data-i18n="Books">Books</span></a>
     <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Current Affairs">Current Affairs</span></a>
-    <a class="mm-link" data-nav="sessions" href="live-sessions"><span class="mm-emoji">🎥</span> <span data-i18n="Live Guidance">Live Guidance</span></a>
     <a class="mm-link" data-nav="about" href="about"><span class="mm-emoji">🧑‍🏫</span> <span data-i18n="Meet Your Mentor">Meet Your Mentor</span></a>
 
     <p class="mm-group" data-i18n="Updates">Updates</p>

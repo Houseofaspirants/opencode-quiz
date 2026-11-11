@@ -52,6 +52,16 @@
     wrap.querySelector("input:checked")?.closest(".mock-option")?.classList.add("selected");
   });
 
+  /* Presets: one tap sets the full-paper shape (questions, minutes). */
+  document.querySelectorAll("[data-preset]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const [q, m] = (btn.getAttribute("data-preset") || "").split(",");
+      countSelect.value = q;
+      /** @type {HTMLSelectElement} */ (document.getElementById("mockMinutes")).value = m;
+      document.querySelectorAll("[data-preset]").forEach((b) => b.classList.toggle("btn-primary", b === btn));
+    })
+  );
+
   /* --------------------------------------------------------- Start ------- */
   startBtn.addEventListener("click", async () => {
     // Quiz access flow: sign-in first (instant when already signed in).
@@ -61,6 +71,7 @@
       document.querySelector("input[name='mockSubject']:checked")?.value || "all";
     const count = countSelect.value;
     const minutes = document.getElementById("mockMinutes").value;
-    location.href = `quiz.html?mode=mock&subject=${encodeURIComponent(subject)}&count=${count}&minutes=${minutes}`;
+    const pattern = document.getElementById("mockPattern")?.value || "exam";
+    location.href = `quiz.html?mode=mock&subject=${encodeURIComponent(subject)}&count=${count}&minutes=${minutes}&pattern=${pattern}`;
   });
 })();

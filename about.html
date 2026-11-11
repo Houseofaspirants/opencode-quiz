@@ -23,8 +23,8 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css?v=106" as="style">
-  <link rel="stylesheet" href="assets/css/style.css?v=106">
+  <link rel="preload" href="assets/css/style.css?v=107" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=107">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -124,7 +124,7 @@
       {
         "@type": "Question",
         "name": "How is the House of Aspirants platform paid for?",
-        "acceptedAnswer": { "@type": "Answer", "text": "It is supported by a few clearly labelled Google ads and Amazon affiliate links on the Books page. There is no subscription and no paid tier, so every guide and quiz stays free for everyone." }
+        "acceptedAnswer": { "@type": "Answer", "text": "It is supported by a few clearly labelled Google ads. There is no subscription and no paid tier, so every guide and quiz stays free for everyone." }
       }
     ]
   }
@@ -141,73 +141,148 @@
   <div data-site-header></div>
 
   <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <nav class="breadcrumb" aria-label="Breadcrumb">
-          <a href="./">Home</a><span>/</span><span>Meet Your Mentor</span>
-        </nav>
-        <span class="eyebrow">Learn from Rank 2</span>
-        <h1>Meet Your Mentor</h1>
-        <p class="muted" style="max-width:70ch">
-          <b>Gurpreet Singh</b> secured <b>Rank 2 in the Punjab Police
-          Sub-Inspector examination with 713/800 marks</b>. House of Aspirants
-          exists to hand that exact preparation strategy to every aspirant —
-          free, in Punjabi and English.
-        </p>
+    <section class="page-hero about-hero">
+      <div class="container about-hero-grid">
+        <div>
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="./">Home</a><span>/</span><span>Meet Your Mentor</span>
+          </nav>
+          <span class="eyebrow">Learn from Rank 2</span>
+          <h1>Meet Your Mentor</h1>
+          <p class="about-lead">
+            <b>Gurpreet Singh</b> secured <b>Rank 2 in the Punjab Police
+            Sub-Inspector examination with 713/800 marks</b>, without paid
+            coaching. House of Aspirants is how he hands that exact preparation
+            method to every aspirant: free, in Punjabi and English.
+          </p>
+          <div class="about-stats">
+            <div class="about-stat"><b>Rank 2</b><span>Punjab Police SI</span></div>
+            <div class="about-stat"><b>713<small>/800</small></b><span>Marks scored</span></div>
+            <div class="about-stat"><b>89.1%</b><span>Of total marks</span></div>
+            <div class="about-stat"><b>₹0</b><span>Paid coaching</span></div>
+          </div>
+          <div class="btn-row mt-2">
+            <a class="btn btn-primary" href="rank-2-blueprint">See the Rank 2 Blueprint</a>
+            <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Join Telegram</a>
+          </div>
+        </div>
+        <figure class="about-photo">
+          <img src="assets/founder/gurpreet-singh.webp"
+               alt="Gurpreet Singh, Punjab Police Sub-Inspector Rank 2"
+               width="640" height="800" decoding="async" onerror="this.parentNode.remove()">
+          <figcaption>Gurpreet Singh · Founder, House of Aspirants</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="max-width:920px">
         <div class="answer-box">
           <span class="ab-label">Quick answer</span>
           <p>
-            House of Aspirants is a free Competitive Exam Learning Platform run
-            by Punjab Police SI Rank 2 Gurpreet Singh: seven subjects, a daily
-            quiz, mock tests, study notes, current affairs and offline use, with
-            nothing behind a paywall.
+            House of Aspirants is a free exam learning platform for Punjab Police,
+            PSSSB and PPSC aspirants, run by Punjab Police SI Rank 2 Gurpreet Singh.
+            Study material, expected MCQs, mock tests, previous year papers and
+            monthly current affairs, in Punjabi and English, with nothing behind a paywall.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section" style="padding-top:0">
       <div class="container grid grid-2" style="align-items:start">
         <article class="card card-pad">
-          <span class="eyebrow">Mission</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Why this platform exists</h2>
+          <span class="eyebrow">The story</span>
+          <h2 class="about-h2">From aspirant to Rank 2</h2>
           <p class="muted">
-            Exam aspirants need one thing above all: <b>consistent, high-quality
-            practice</b>. This platform removes every barrier between you and your
-            next quiz — no fees, no popups, a 2-second Google sign-in to save
-            your progress, works offline, loads fast
-            on a 3G connection and opens like an app on your phone.
+            The SI exam has two scoring papers of 100 questions each, plus a
+            qualifying Punjabi paper. The method that produced 713/800 was simple
+            to say and hard to keep: <b>accuracy over attempts</b>, the static
+            syllabus finished first, and daily revision of what was already read.
           </p>
           <p class="muted mt-2">
-            Every question is written and reviewed by the House of Aspirants team,
-            with explanations and references so you learn the <i>why</i>, not just
-            the answer.
-          </p>
-          <p class="muted mt-2">
-            New here? Start with the free
-            <a class="ilink" href="articles">study guides</a>, then build your
-            first <a class="ilink" href="mock">mock test</a>.
+            Every part of that preparation (the pattern, the full attempt sheet,
+            the marks that leaked, the schedule) is published in the
+            <a class="ilink" href="rank-2-blueprint">Rank 2 Blueprint</a> so you
+            can check it rather than take it on trust.
           </p>
         </article>
 
         <article class="card card-pad">
-          <span class="eyebrow">Features</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Built for real exam practice</h2>
-          <ul class="muted" style="display:grid;gap:9px">
-            <li>✅ Topic-wise MCQs across 7 subjects</li>
-            <li>⏱ Per-question timer, overall timer &amp; answer lock</li>
-            <li>📋 Question palette, mark for review, skip, keyboard shortcuts</li>
-            <li>🧾 Detailed result with weak &amp; strong area analysis</li>
-            <li>📅 New Daily Challenge every single day</li>
-            <li>🧪 Full-length mock tests with configurable time</li>
-            <li>★ Bookmarks, streaks, badges &amp; leaderboard</li>
-            <li>🌙 Dark mode, instant search, offline PWA</li>
-          </ul>
+          <span class="eyebrow">Mission</span>
+          <h2 class="about-h2">Why this platform exists</h2>
+          <p class="muted">
+            Most Punjab aspirants prepare from scattered PDFs, paid channels and
+            material that isn't in their language. House of Aspirants puts the
+            notes, the practice and the strategy in one place, <b>free and in
+            both Punjabi and English</b>.
+          </p>
+          <p class="muted mt-2">
+            No fees, no paid tier, no popups. It works offline, loads fast on a
+            weak connection and installs like an app on your phone.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">What you get</span>
+            <h2>Everything you need, in one place</h2>
+          </div>
+        </div>
+        <div class="about-features">
+          <a class="card card-pad about-feature" href="study">
+            <span class="about-ico" aria-hidden="true">📚</span>
+            <h3>Study material</h3>
+            <p class="muted">Chapter-wise notes for every subject, in Punjabi and English.</p>
+          </a>
+          <a class="card card-pad about-feature" href="practice">
+            <span class="about-ico" aria-hidden="true">🧠</span>
+            <h3>Chapter-wise practice</h3>
+            <p class="muted">Topic MCQs with explanations, so you learn the why, not just the answer.</p>
+          </a>
+          <a class="card card-pad about-feature" href="mock">
+            <span class="about-ico" aria-hidden="true">🧪</span>
+            <h3>Mock tests</h3>
+            <p class="muted">Full-length mixed tests in the real exam pattern, with 100 or 120 minute timers.</p>
+          </a>
+          <a class="card card-pad about-feature" href="pyq">
+            <span class="about-ico" aria-hidden="true">📜</span>
+            <h3>Previous year papers</h3>
+            <p class="muted">Original papers and official answer keys for Punjab Police, PSSSB and PPSC.</p>
+          </a>
+          <a class="card card-pad about-feature" href="current-affairs">
+            <span class="about-ico" aria-hidden="true">🗞️</span>
+            <h3>Monthly current affairs</h3>
+            <p class="muted">Exam-focused monthly current affairs, written by Gurpreet Singh.</p>
+          </a>
+          <a class="card card-pad about-feature" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">
+            <span class="about-ico" aria-hidden="true">🎥</span>
+            <h3>Sunday live doubt session</h3>
+            <p class="muted">Free live doubt session every Sunday at 8 PM on Telegram.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container grid grid-2" style="align-items:start">
+        <article class="card card-pad">
+          <span class="eyebrow">How the material is made</span>
+          <h2 class="about-h2">Checked before it's published</h2>
+          <ol class="about-steps">
+            <li><b>Syllabus first.</b> Every chapter follows the official syllabus and notification of the exam it targets.</li>
+            <li><b>Written and reviewed.</b> The House of Aspirants team writes each question and explanation, and Gurpreet Singh reviews exam-oriented material.</li>
+            <li><b>Corrected in the open.</b> Report a mistake and it is reviewed and fixed. See the <a class="ilink" href="editorial-policy">editorial policy</a>.</li>
+          </ol>
         </article>
 
         <article class="card card-pad">
           <span class="eyebrow">Subjects</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">What you can practise</h2>
+          <h2 class="about-h2">What you can practise</h2>
           <div class="chip-wrap">
             <a class="area-chip ilink" href="subject?subject=gk">🏛️ General Knowledge</a>
             <a class="area-chip ilink" href="subject?subject=gk&amp;category=punjab-gk">📌 Punjab GK</a>
@@ -218,28 +293,29 @@
             <a class="area-chip ilink" href="subject?subject=computer">💻 Computer</a>
             <a class="area-chip ilink" href="subject?subject=current-affairs">📰 Current Affairs</a>
           </div>
-          <p class="muted text-sm mt-2">New topics are added regularly — follow the Telegram channel.</p>
-        </article>
-
-        <article class="card card-pad">
-          <span class="eyebrow">Contact</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:12px">Talk to us</h2>
-          <p class="muted">Found a mistake in a question, or want a topic published?</p>
-          <div class="btn-row mt-2">
-            <a class="btn btn-primary" href="contact">Contact form</a>
-            <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
-          </div>
+          <p class="muted text-sm mt-2">New chapters are added regularly. Follow the Telegram channel to hear first.</p>
         </article>
       </div>
+    </section>
 
+    <section class="section" style="padding-top:0">
       <div class="container">
-        <div class="ad-slot reveal" style="margin-top:26px">
+        <div class="about-connect card card-pad">
           <div>
-            <div class="ad-label">Advertisement</div>
-            <p class="text-sm">Reserved for future promotions — no intrusive ads.</p>
+            <span class="eyebrow">Connect</span>
+            <h2 class="about-h2">Prepare with the community</h2>
+            <p class="muted">Found a mistake in a question, or want a topic covered? Write to us or ask in the Telegram group.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-telegram" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener">✈ Telegram</a>
+            <a class="btn btn-soft" href="https://instagram.com/si.gurpreetsingh.pp" target="_blank" rel="noopener">📸 Instagram</a>
+            <a class="btn btn-soft" href="https://youtube.com/@houseofaspirants-y5s" target="_blank" rel="noopener">▶ YouTube</a>
+            <a class="btn btn-primary" href="contact">Contact form</a>
           </div>
         </div>
       </div>
+    </section>
+
     <!-- =========================================== FAQ (AEO: on-page) -->
     <section class="section" style="padding-top:0">
       <div class="container" style="max-width:860px">
@@ -266,7 +342,7 @@
           </div>
           <div class="faq-item">
             <h3>How is the platform paid for?</h3>
-            <p>It is supported by a few clearly labelled Google ads and Amazon affiliate links on the Books page. There is no subscription and no paid tier, so every guide and quiz stays free for everyone.</p>
+            <p>It is supported by a few clearly labelled Google ads. There is no subscription and no paid tier, so every guide and quiz stays free for everyone.</p>
           </div>
         </div>
       </div>
@@ -275,7 +351,7 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js?v=106" defer></script>
-  <script src="assets/js/auth.js?v=106" defer></script>
+  <script src="assets/js/core.js?v=107" defer></script>
+  <script src="assets/js/auth.js?v=107" defer></script>
 </body>
 </html>

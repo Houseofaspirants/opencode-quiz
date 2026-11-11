@@ -23,10 +23,10 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css?v=106" as="style">
-  <link rel="stylesheet" href="assets/css/style.css?v=106">
-  <link rel="preload" href="assets/css/quiz.css?v=106" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css?v=106">
+  <link rel="preload" href="assets/css/style.css?v=107" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=107">
+  <link rel="preload" href="assets/css/quiz.css?v=107" as="style">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=107">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,7 +83,7 @@
       {
         "@type": "Question",
         "name": "Can I set my own time limit for a mock test?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You choose 5, 10, 15, 30 or 60 minutes and how many questions to attempt, so the same builder works for a quick section drill or a full-length paper." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You choose 15, 30, 60, 100 or 120 minutes and 25 to 200 questions, so the same builder works for a quick section drill or a full-length 100 or 120 minute paper." }
       },
       {
         "@type": "Question",
@@ -154,33 +154,47 @@
         <div class="card card-pad">
           <span class="eyebrow">Step 2</span>
           <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:16px">Test settings</h2>
+          <div class="mock-presets" role="group" aria-label="Quick presets">
+            <button type="button" class="btn btn-soft" data-preset="100,120">📝 Full paper · 100 Q · 120 min</button>
+            <button type="button" class="btn btn-soft" data-preset="100,100">⚡ 100 Q · 100 min</button>
+          </div>
 
           <div class="grid" style="gap:16px">
             <div class="field">
               <label for="mockCount">Number of questions</label>
               <select id="mockCount">
-                <option value="10">10 questions</option>
-                <option value="20" selected>20 questions</option>
+                <option value="25">25 questions</option>
                 <option value="50">50 questions</option>
-                <option value="100">100 questions</option>
+                <option value="100" selected>100 questions</option>
+                <option value="120">120 questions</option>
+                <option value="200">200 questions (both papers)</option>
               </select>
             </div>
 
             <div class="field">
               <label for="mockMinutes">Time limit</label>
               <select id="mockMinutes">
-                <option value="5">5 minutes</option>
-                <option value="10">10 minutes</option>
-                <option value="15" selected>15 minutes</option>
+                <option value="15">15 minutes</option>
                 <option value="30">30 minutes</option>
                 <option value="60">60 minutes</option>
+                <option value="100">100 minutes</option>
+                <option value="120" selected>120 minutes</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="mockPattern">Question mix</label>
+              <select id="mockPattern">
+                <option value="exam" selected>Exam pattern (subject weightage of the real paper)</option>
+                <option value="equal">Equal from every subject</option>
               </select>
             </div>
 
             <div class="field">
               <label>Rules</label>
               <ul class="text-sm muted" style="display:grid;gap:6px">
-                <li>• Per-question timer &amp; overall countdown active</li>
+                <li>• Questions mixed across subjects and chapters, in sections like the real paper</li>
+                <li>• One overall countdown, no per-question cut-off</li>
                 <li>• Answers auto-save; you can leave and resume</li>
                 <li>• Answers lock automatically when time ends</li>
                 <li>• Full answer review with explanations after submit</li>
@@ -223,7 +237,7 @@
           </div>
           <div class="faq-item">
             <h3>Can I set my own time limit?</h3>
-            <p>Yes. You choose 5, 10, 15, 30 or 60 minutes and how many questions to attempt, so the same builder works for a quick section drill or a full-length paper.</p>
+            <p>Yes. You choose 15, 30, 60, 100 or 120 minutes and 25 to 200 questions, so the same builder works for a quick section drill or a full-length 100 or 120 minute paper.</p>
           </div>
           <div class="faq-item">
             <h3>What happens when the timer runs out?</h3>
@@ -255,8 +269,8 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js?v=106" defer></script>
-  <script src="assets/js/auth.js?v=106" defer></script>
-  <script src="assets/js/mock.js?v=106" defer></script>
+  <script src="assets/js/core.js?v=107" defer></script>
+  <script src="assets/js/auth.js?v=107" defer></script>
+  <script src="assets/js/mock.js?v=107" defer></script>
 </body>
 </html>

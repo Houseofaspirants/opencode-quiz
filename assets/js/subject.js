@@ -290,7 +290,7 @@
   const WORDS = { mcqs: "MCQs", mcq: "MCQ", dpsp: "DPSP", gk: "GK" };
   const humanize = (key) =>
     key
-      .replace(/^\d+[-_]/, "")
+      .replace(/^\d{1,3}[-_]/, "")
       .split(/[-_\s]+/)
       .filter(Boolean)
       .map((w, i) => {
@@ -312,12 +312,52 @@
     for (const t of topicList || []) {
       const key = String(t.id).replace(PART_RE, "") || String(t.id);
       if (!byKey.has(key)) {
-        const num = /^(\d+)[-_]/.exec(key);
+        const num = /^(\d{1,3})[-_]/.exec(key);
         const ch = { id: key, name: humanize(key) || t.name, num: num ? Number(num[1]) : 0, topics: [] };
         byKey.set(key, ch);
         chapterList.push(ch);
       }
       byKey.get(key).topics.push(t);
+    }
+    /* A chapter file without a number (`maharaja-ranjit-singh`) takes the
+       number of the Study chapter with the same title, so practice follows
+       the syllabus order the notes already use, and a newly added chapter
+       lands in its place instead of at the end of an A-Z list. */
+    if (chapterList.some((c) => !c.num)) {
+      try {
+        const sm = await fetch("data/study-manifest.json").then((r) => r.json());
+        const STOP = new Set(["ji", "and", "the", "of", "in", "a", "an", "to", "mcq", "mcqs"]);
+        const toks = (x) => new Set(String(x).toLowerCase()
+          .replace(/^.*\//, "")
+          .replace(/^\s*(chapter|ਅਧਿਆਇ)?\s*\d{1,3}\s*[:.\-–_ ]\s*/i, "")
+          .split(/[^a-z0-9]+/).filter((w) => w && !STOP.has(w)));
+        /** @type {{t: Set<string>, n: number}[]} */
+        const known = [];
+        const walk = (/** @type {any} */ o) => {
+          if (Array.isArray(o)) return o.forEach(walk);
+          if (!o || typeof o !== "object") return;
+          if (Array.isArray(o.chapters)) {
+            o.chapters.forEach((/** @type {any} */ c) => {
+              const m = /(?:^|\/)\s*(?:chapter|ਅਧਿਆਇ)?\s*(\d{1,3})\b/i.exec(String(c.id)) ||
+                        /^\s*(?:chapter|ਅਧਿਆਇ)?\s*(\d{1,3})\b/i.exec(String(c.name));
+              if (m) known.push({ t: toks(c.id), n: Number(m[1]) }, { t: toks(c.name), n: Number(m[1]) });
+            });
+          }
+          Object.entries(o).forEach(([k, v]) => { if (k !== "parts") walk(v); });
+        };
+        walk(sm);
+        chapterList.forEach((c) => {
+          if (c.num) return;
+          const mine = toks(c.id);
+          let best = 0, n = 0;
+          for (const k of known) {
+            const both = [...mine].filter((w) => k.t.has(w)).length;
+            const score = both / new Set([...mine, ...k.t]).size;
+            if (both >= 2 && score > best) { best = score; n = k.n; }
+          }
+          if (best >= 0.6) c.num = n;
+        });
+      } catch { /* no study manifest: numbered first, then A-Z */ }
     }
     chapterList.forEach((c) =>
       c.topics.sort((a, b) => partOf(a) - partOf(b) || chapterCollator.compare(a.id, b.id))

@@ -343,47 +343,45 @@
     ].filter(Boolean).join(" · ") : "";
     const lead = single ? "Read online, then practise the MCQs." : `${plural(parts, "part")}, in reading order.`;
     const metaLine = single ? (singleMeta || langName) : `${langName} · ${plural(parts, "part")}`;
+    const icon = single ? "📄" : "📂";
     if (!opts) {
       return `
-        <a class="card card-pad study-card" href="${esc(href)}">
-          <span class="eyebrow">${esc(langName)} · Chapter</span>
-          <h3>${esc(c.name)}</h3>
-          <p class="muted">${esc(lead)}</p>
-          <p class="study-meta">${esc(metaLine)}</p>
+        <a class="card quiz-card study-folder" href="${esc(href)}">
+          <span class="qc-icon" aria-hidden="true">${icon}</span>
+          <span class="sf-body">
+            <h3>${esc(c.name)}</h3>
+            <span class="qc-sub">${esc(metaLine)} · ${single ? "Read →" : "Open →"}</span>
+          </span>
+          <span class="qc-go" aria-hidden="true">→</span>
         </a>`;
     }
 
     const rows = (c.parts || []).map(partItem);
     const mins = rows.reduce((s, p) => s + (Number(p.readingMinutes) || 0), 0);
-    const updated = rows
-      .map((p) => String(p.updated || p.published || "").slice(0, 10))
-      .filter(Boolean).sort().slice(-1)[0] || "";
     const pages = Number(c.pages) || 0;
     const withLangs = Array.isArray(opts.languages) ? opts.languages : [];
     const key = href;
     const saved = savedChapters().some((b) => b.key === key);
-    const badges = [
-      `<span class="badge ${saved ? "badge-success" : "badge-muted"}">Chapter ${Number(opts.no) || 1} of ${Number(opts.total) || 1}</span>`,
-      pages ? `<span class="badge badge-muted">${plural(pages, "page")}</span>` : "",
-      mins ? `<span class="badge badge-muted">${mins} min read</span>` : "",
-      updated ? `<span class="badge badge-muted">Updated ${fmtDate(updated)}</span>` : "",
-      withLangs.length
-        ? `<span class="badge badge-muted">🌐 ${esc(withLangs.join(", "))}</span>` : "",
-    ].filter(Boolean).join("");
+    const sub = [
+      `Chapter ${Number(opts.no) || 1} of ${Number(opts.total) || 1}`,
+      single ? (singleMeta || langName) : plural(parts, "part"),
+      !single && pages ? plural(pages, "page") : "",
+      !single && mins ? `${mins} min read` : "",
+    ].filter(Boolean).join(" · ");
     return `
-        <div class="card card-pad study-card">
-          <div class="card-badges">${badges}</div>
-          <span class="eyebrow">${esc(langName)} · Chapter</span>
-          <h3><a href="${esc(href)}">${esc(c.name)}</a></h3>
-          <p class="muted">${esc(lead)}</p>
-          <p class="study-meta">${esc(single ? metaLine : `${langName} · ${plural(parts, "part")}`)}${!single && pages ? ` · ${plural(pages, "page")}` : ""}</p>
-          <p class="btn-row" style="margin-top:14px">
-            <a class="btn btn-primary st-act" href="${esc(href)}">Open chapter →</a>
-            <button type="button" class="btn btn-soft st-act"
-                    data-study-bookmark="${esc(key)}"
-                    data-study-title="${esc(c.name)}"
-                    aria-pressed="${saved ? "true" : "false"}">${saved ? "★ Saved" : "☆ Save"}</button>
-          </p>
+        <div class="card quiz-card study-folder${saved ? " is-saved" : ""}">
+          <span class="qc-icon" aria-hidden="true">${icon}</span>
+          <span class="sf-body">
+            <h3><a href="${esc(href)}">${esc(c.name)}</a></h3>
+            <span class="qc-sub">${esc(sub)}</span>
+            ${withLangs.length > 1 ? `<span class="qc-sub sf-langs">🌐 ${esc(withLangs.join(", "))}</span>` : ""}
+          </span>
+          <button type="button" class="sf-save"
+                  data-study-bookmark="${esc(key)}"
+                  data-study-title="${esc(c.name)}"
+                  aria-label="${saved ? "Remove from saved" : "Save chapter"}"
+                  aria-pressed="${saved ? "true" : "false"}">${saved ? "★" : "☆"}</button>
+          <span class="qc-go" aria-hidden="true">→</span>
         </div>`;
   };
 
@@ -823,7 +821,15 @@
     };
 
     const renderChapters = () => {
+      // Syllabus order: the chapter number (from the folder or the title)
+      // first, so a newly added chapter lands in its place; then by name.
+      const chNo = (c) => {
+        const m = /(?:^|\/)\s*(?:chapter|ਅਧਿਆਇ)?\s*(\d{1,3})\b/i.exec(String(c.id || "")) ||
+                  /^\s*(?:chapter|ਅਧਿਆਇ)?\s*(\d{1,3})\b/i.exec(String(c.name || ""));
+        return m ? Number(m[1]) : Infinity;
+      };
       const orderedChapters = [...chapters].sort((a, b) =>
+        (chNo(a) - chNo(b) || 0) ||
         chapterCollator.compare(String(a.name || a.id || ""),
                                 String(b.name || b.id || "")) ||
         chapterCollator.compare(String(a.id || ""), String(b.id || "")));

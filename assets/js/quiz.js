@@ -210,45 +210,98 @@
     }
 
     /* ----------------------------------------- MOCK: pull across subjects */
+    /* A mock is a MIX, the way a real paper is: every subject gets its share
+       of the questions (the Punjab Police SI pattern unless the URL asks for
+       an equal split), and inside a subject the questions are spread over as
+       many chapters as possible instead of draining one chapter first. The
+       paper is then laid out in sections, subject by subject, like the exam. */
     if (mode === "mock") {
       const wantSubject = params.get("subject") || "all";
-      const count = Math.max(5, Number(params.get("count")) || 20);
-      const minutes = Math.max(1, Number(params.get("minutes")) || 15);
-      const src = wantSubject === "all"
+      const count = Math.max(5, Number(params.get("count")) || 100);
+      const minutes = Math.max(1, Number(params.get("minutes")) || 120);
+      const pattern = params.get("pattern") === "equal" ? "equal" : "exam";
+      // Punjab Police SI: Paper 1 = GA 50 (GK + current affairs), Quant 30,
+      // Punjabi 20; Paper 2 = Reasoning 50, Computer 30, English 20.
+      const EXAM_WEIGHTS = {
+        gk: 35, "current-affairs": 15, quant: 30, punjabi: 20,
+        reasoning: 50, computer: 30, english: 20,
+      };
+      const src = (wantSubject === "all"
         ? SUBJECTS
-        : SUBJECTS.filter((s) => s.id === wantSubject);
-      const pool = [];
-      src.forEach((s) =>
-        s.topics.filter((t) => t.available).forEach((t) => pool.push({ s, t }))
-      );
-      if (!pool.length) return null;
+        : SUBJECTS.filter((s) => s.id === wantSubject)
+      ).map((s) => ({ s, topics: s.topics.filter((t) => t.available && t.count) }))
+        .filter((x) => x.topics.length);
+      if (!src.length) return null;
 
       const rand = mulberry32(Date.now() >>> 0); // fresh every attempt
-      const questions = [];
-      const order = shuffleWith([...pool], rand);
-      let i = 0;
-      while (questions.length < count && i < order.length * 3) {
-        const { s, t } = order[i % order.length];
-        i++;
-        try {
-          // Mock pools honour the reader's language the same way a topic quiz
-          // does; a set with no translation stays in English rather than failing.
-          const data = await HOA.loadQuestions(pickVariantFile(t));
-          shuffleWith(data.questions, rand).forEach((q) => {
-            if (questions.length < count)
-              questions.push({ ...q, subject: q.subject || s.id, topic: q.topic || t.name });
-          });
-        } catch { /* ignore missing file */ }
+      const cap = (x) => x.topics.reduce((n, t) => n + t.count, 0);
+      const weight = (x) =>
+        pattern === "exam" && wantSubject === "all" ? (EXAM_WEIGHTS[x.s.id] || 10) : 1;
+
+      // Largest-remainder split of `count` by weight, never above what a
+      // subject actually has; anything a small subject can't fill is passed on.
+      const quota = new Map(src.map((x) => [x, 0]));
+      let left = Math.min(count, src.reduce((n, x) => n + cap(x), 0));
+      while (left > 0) {
+        const open = src.filter((x) => quota.get(x) < cap(x));
+        if (!open.length) break;
+        const W = open.reduce((n, x) => n + weight(x), 0);
+        const shares = open.map((x) => {
+          const exact = (left * weight(x)) / W;
+          return { x, n: Math.min(Math.floor(exact), cap(x) - quota.get(x)), r: exact % 1 };
+        });
+        let given = 0;
+        shares.forEach(({ x, n }) => { quota.set(x, quota.get(x) + n); given += n; });
+        if (!given) {
+          shares.sort((a, b) => b.r - a.r);
+          for (const { x } of shares) {
+            if (given >= left) break;
+            if (quota.get(x) < cap(x)) { quota.set(x, quota.get(x) + 1); given++; }
+          }
+        }
+        left -= given;
       }
+
+      // Inside a subject: as many different chapters as the quota allows.
+      const sections = await Promise.all(src.map(async (x) => {
+        const want = quota.get(x);
+        if (!want) return [];
+        const topics = shuffleWith([...x.topics], rand);
+        const used = topics.slice(0, Math.min(topics.length, want));
+        const loaded = await Promise.all(used.map(async (t) => {
+          try {
+            // Mock pools honour the reader's language the same way a topic quiz
+            // does; a set with no translation stays in English rather than failing.
+            const data = await HOA.loadQuestions(pickVariantFile(t));
+            return shuffleWith([...data.questions], rand).map((q) =>
+              ({ ...q, subject: q.subject || x.s.id, topic: q.topic || t.name }));
+          } catch { return []; /* ignore missing file */ }
+        }));
+        const out = [];
+        for (let round = 0; out.length < want; round++) {
+          let added = false;
+          for (const list of loaded) {
+            if (out.length >= want) break;
+            if (round < list.length) { out.push(list[round]); added = true; }
+          }
+          if (!added) break;
+        }
+        return shuffleWith(out, rand);
+      }));
+      const questions = sections.flat();
+
       const name = wantSubject === "all"
         ? "Full Length Mock Test"
-        : `${(src[0] || {}).name || ""} Mock Test`;
+        : `${(src[0] || {}).s.name || ""} Mock Test`;
       return {
         title: name, subject: wantSubject,
-        subjectName: name, topicName: `${count} Q · ${minutes} min`,
+        subjectName: name, topicName: `${questions.length} Q · ${minutes} min`,
         key: `mock:${wantSubject}:${count}:${uid()}`,
         questions, defaultSeconds: Number(site.questionSeconds) || 30,
         overall: minutes * 60,
+        // Like the real paper: one clock for the whole test, no per-question
+        // cut-off that pushes you on to the next question.
+        noQuestionTimer: true,
       };
     }
 
@@ -698,6 +751,7 @@
   }
 
   function updateTimers() {
+    els.qTimer.hidden = !!QUIZ.noQuestionTimer;
     els.qTimer.innerHTML = `⏱ ${fmtTime(S.qLeft)} <small>Q</small>`;
     els.oTimer.innerHTML = `⌛ ${fmtTime(S.overallLeft)} <small>Total</small>`;
     els.qTimer.className = "timer-pill" +
@@ -749,7 +803,7 @@
       updateTimers();
 
       // Time over for this question → auto next (spec requirement)
-      if (S.qLeft === 0 && S.i < QUIZ.questions.length - 1) {
+      if (!QUIZ.noQuestionTimer && S.qLeft === 0 && S.i < QUIZ.questions.length - 1) {
         toast(say("ਸਮਾਂ ਖ਼ਤਮ! ਅਗਲਾ ਸਵਾਲ ⏭️", "Time up! Moving to the next question ⏭️"), 1500);
         go(S.i + 1);
       }
