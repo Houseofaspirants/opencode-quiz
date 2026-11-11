@@ -2,6 +2,50 @@
   "version": 1,
   "topics": [
     {
+      "id": "1857-revolt-part-1",
+      "subject": "gk",
+      "category": "modern-history",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "1857 Revolt - Part 1",
+        "pa": "1857 ਦੀ ਬਗ਼ਾਵਤ - Part 1"
+      },
+      "variants": {
+        "en": "questions/gk/modern-history/1857-revolt-part-1.en.json",
+        "pa": "questions/gk/modern-history/1857-revolt-part-1.pa.json"
+      }
+    },
+    {
+      "id": "1857-revolt-part-2",
+      "subject": "gk",
+      "category": "modern-history",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "1857 Revolt - Part 2",
+        "pa": "1857 ਦੀ ਬਗ਼ਾਵਤ - Part 2"
+      },
+      "variants": {
+        "en": "questions/gk/modern-history/1857-revolt-part-2.en.json",
+        "pa": "questions/gk/modern-history/1857-revolt-part-2.pa.json"
+      }
+    },
+    {
       "id": "arrival-of-european-in-india-part-1",
       "subject": "gk",
       "category": "modern-history",

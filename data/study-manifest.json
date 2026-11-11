@@ -752,9 +752,9 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 41,
+      "count": 42,
       "newest": "2026-11-11",
-      "totalSize": 81928064,
+      "totalSize": 84404552,
       "chapters": 38,
       "languages": [],
       "hierarchy": {
@@ -762,10 +762,10 @@
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 41,
+          "files": 42,
           "chapters": 38,
-          "pages": 199,
-          "totalSize": 81928064,
+          "pages": 200,
+          "totalSize": 84404552,
           "newest": "2026-11-11",
           "categories": 10,
           "regions": 2
@@ -776,10 +776,10 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 19,
+              "files": 20,
               "chapters": 16,
-              "pages": 93,
-              "totalSize": 43048044,
+              "pages": 94,
+              "totalSize": 45524532,
               "newest": "2026-11-11",
               "categories": 5
             },
@@ -792,10 +792,10 @@
                   "history"
                 ],
                 "stats": {
-                  "files": 7,
+                  "files": 8,
                   "chapters": 4,
-                  "pages": 7,
-                  "totalSize": 19810129,
+                  "pages": 8,
+                  "totalSize": 22286617,
                   "newest": "2026-11-11"
                 },
                 "languages": [
@@ -804,7 +804,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 3,
+                    "count": 4,
                     "chapters": [
                       {
                         "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -834,6 +834,17 @@
                         "parts": [
                           {
                             "file": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 1
+                      },
+                      {
+                        "id": "modern-history/Chapter 04 - 1857 Revolt",
+                        "name": "ਅਧਿਆਇ 04: 1857 ਦੀ ਬਗਾਵਤ",
+                        "parts": [
+                          {
+                            "file": "material-1857-revolt-notes-punjabi.html",
                             "n": 1
                           }
                         ],
@@ -969,10 +980,10 @@
                       "modern-history/Chapter 04 - 1857 Revolt"
                     ],
                     "stats": {
-                      "files": 7,
+                      "files": 8,
                       "chapters": 4,
-                      "pages": 7,
-                      "totalSize": 19810129,
+                      "pages": 8,
+                      "totalSize": 22286617,
                       "newest": "2026-11-11"
                     },
                     "languages": [
@@ -981,7 +992,7 @@
                         "name": "Punjabi",
                         "native": "ਪੰਜਾਬੀ",
                         "flag": "🇵🇺",
-                        "count": 3,
+                        "count": 4,
                         "chapters": [
                           {
                             "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -1011,6 +1022,17 @@
                             "parts": [
                               {
                                 "file": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
+                          },
+                          {
+                            "id": "modern-history/Chapter 04 - 1857 Revolt",
+                            "name": "ਅਧਿਆਇ 04: 1857 ਦੀ ਬਗਾਵਤ",
+                            "parts": [
+                              {
+                                "file": "material-1857-revolt-notes-punjabi.html",
                                 "n": 1
                               }
                             ],
@@ -1803,7 +1825,7 @@
       },
       "counts": {
         "en": 21,
-        "pa": 20
+        "pa": 21
       },
       "pages": {
         "en": "study-gk.html",
@@ -1926,16 +1948,16 @@
       "color": "#f59e0b",
       "description": "Ancient, medieval and modern India with the freedom movement.",
       "order": 9,
-      "count": 7,
+      "count": 8,
       "newest": "2026-11-11",
-      "totalSize": 19810129,
+      "totalSize": 22286617,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -1965,6 +1987,17 @@
               "parts": [
                 {
                   "file": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 1
+            },
+            {
+              "id": "modern-history/Chapter 04 - 1857 Revolt",
+              "name": "ਅਧਿਆਇ 04: 1857 ਦੀ ਬਗਾਵਤ",
+              "parts": [
+                {
+                  "file": "material-1857-revolt-notes-punjabi.html",
                   "n": 1
                 }
               ],
@@ -2026,11 +2059,11 @@
           ]
         }
       ],
-      "chapters": 7,
+      "chapters": 8,
       "hidden": true,
       "counts": {
         "en": 4,
-        "pa": 3
+        "pa": 4
       },
       "pages": {
         "en": "study-history.html",
@@ -2677,6 +2710,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 89,
+  "total": 90,
   "generatedBy": "scripts/study_material.py"
 }

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 628,
-  "edges": 4955,
+  "nodes": 630,
+  "edges": 4978,
   "silos": 35,
   "clusters": 182,
   "pillars": 34
@@ -2564,6 +2564,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 04: 1857 Revolt (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-1857-revolt-notes-punjabi",
+   "url": "/material-1857-revolt-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-1857-revolt-notes-punjabi.html",
+   "url": "/material-1857-revolt-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 4: 1857 ਦੀ ਬਗਾਵਤ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -8957,6 +8981,12 @@
   },
   {
    "from": "archive-category-history.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -14159,6 +14189,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -17717,7 +17753,109 @@
   },
   {
    "from": "material-1857-revolt-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
    "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "pa/study-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -17807,6 +17945,12 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-arrival-of-europeans-in-india-notes-english.html",
    "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
@@ -17879,7 +18023,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -17903,7 +18047,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "to": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18197,7 +18341,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -18269,7 +18413,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -18288,6 +18432,12 @@
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
    "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19169,7 +19319,7 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -19241,7 +19391,7 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -19260,6 +19410,12 @@
   {
    "from": "material-east-india-company-expansion-notes-punjabi.html",
    "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-east-india-company-expansion-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -22937,7 +23093,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -23021,7 +23177,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25583,7 +25739,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25667,7 +25823,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-maths-average-notes-punjabi-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -30491,6 +30647,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -30582,12 +30744,6 @@
   {
    "from": "pdfs.html",
    "to": "material-punjab-economy-agriculture-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-punjab-economy-agriculture-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35219,6 +35375,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -35771,6 +35933,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -35862,12 +36030,6 @@
   {
    "from": "study-notes.html",
    "to": "material-punjab-economy-agriculture-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-punjab-economy-agriculture-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
