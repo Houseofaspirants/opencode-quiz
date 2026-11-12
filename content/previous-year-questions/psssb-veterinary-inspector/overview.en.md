@@ -6,6 +6,7 @@ Every PSSSB Veterinary Inspector paper we have, as released by the Punjab Subord
 
 - 2021: paper of 21 August 2021, with the final answer key (Advt. 14 of 2021)
 - 2023: Veterinary Inspector & Livestock Supervisor paper of 7 May 2023, with the first answer key
+- 2026: Official answer key (Final)
 
 ## How to use these papers
 

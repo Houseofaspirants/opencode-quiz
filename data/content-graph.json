@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 631,
-  "edges": 4980,
+  "nodes": 665,
+  "edges": 5385,
   "silos": 35,
   "clusters": 186,
   "pillars": 34
@@ -332,6 +332,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-chowkidar.html",
+   "url": "/archive-tag-chowkidar.html",
+   "type": "archive",
+   "template": "",
+   "title": "chowkidar",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "chowkidar"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-clerk.html",
    "url": "/archive-tag-clerk.html",
    "type": "archive",
@@ -412,6 +426,20 @@
    "exams": [],
    "tags": [
     "cooperative-inspector"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-craft-instructor.html",
+   "url": "/archive-tag-craft-instructor.html",
+   "type": "archive",
+   "template": "",
+   "title": "craft instructor",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "craft-instructor"
    ],
    "hub": "archives.html"
   },
@@ -654,6 +682,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-group-d.html",
+   "url": "/archive-tag-group-d.html",
+   "type": "archive",
+   "template": "",
+   "title": "group d",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "group-d"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-indian-polity.html",
    "url": "/archive-tag-indian-polity.html",
    "type": "archive",
@@ -692,6 +734,20 @@
    "exams": [],
    "tags": [
     "investigation-cadre"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-iti-instructor.html",
+   "url": "/archive-tag-iti-instructor.html",
+   "type": "archive",
+   "template": "",
+   "title": "iti instructor",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "iti-instructor"
    ],
    "hub": "archives.html"
   },
@@ -1088,6 +1144,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-pstet.html",
+   "url": "/archive-tag-pstet.html",
+   "type": "archive",
+   "template": "",
+   "title": "pstet",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "pstet"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-punjab-civil-services.html",
    "url": "/archive-tag-punjab-civil-services.html",
    "type": "archive",
@@ -1182,6 +1252,20 @@
    "exams": [],
    "tags": [
     "punjab-police-si"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-tet.html",
+   "url": "/archive-tag-punjab-tet.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab tet",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-tet"
    ],
    "hub": "archives.html"
   },
@@ -1312,6 +1396,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-sevadar.html",
+   "url": "/archive-tag-sevadar.html",
+   "type": "archive",
+   "template": "",
+   "title": "sevadar",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "sevadar"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-sikh-empire.html",
    "url": "/archive-tag-sikh-empire.html",
    "type": "archive",
@@ -1434,6 +1532,20 @@
    "exams": [],
    "tags": [
     "syllabus"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-teacher-eligibility-test.html",
+   "url": "/archive-tag-teacher-eligibility-test.html",
+   "type": "archive",
+   "template": "",
+   "title": "teacher eligibility test",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "teacher-eligibility-test"
    ],
    "hub": "archives.html"
   },
@@ -4832,6 +4944,43 @@
    "hub": "strategy.html"
   },
   {
+   "id": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "url": "/pa/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "url": "/pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਕਰਾਫ਼ਟ ਇੰਸਟ੍ਰਕਟਰ 2026 - ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "computer"
+   ],
+   "exams": [
+    "Craft Instructor"
+   ],
+   "tags": [
+    "psssb",
+    "craft instructor",
+    "iti instructor",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "page",
@@ -4848,7 +4997,7 @@
    "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "type": "strategy",
    "template": "preparation-strategy",
-   "title": "PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੈਟਰਨ",
+   "title": "PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਸਿਲੇਬਸ ਅਤੇ ਪੈਟਰਨ",
    "lang": "pa",
    "subjects": [
     "gk",
@@ -4865,6 +5014,45 @@
     "psssb",
     "excise inspector",
     "excise and taxation inspector",
+    "eligibility",
+    "exam pattern",
+    "syllabus"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-psssb-group-d-recruitment-exam-pattern",
+   "url": "/pa/strategy-psssb-group-d-recruitment-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "url": "/pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਗਰੁੱਪ-ਡੀ ਭਰਤੀ, ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "computer"
+   ],
+   "exams": [
+    "Group D"
+   ],
+   "tags": [
+    "psssb",
+    "group d",
+    "sevadar",
+    "chowkidar",
     "eligibility",
     "exam pattern"
    ],
@@ -4941,6 +5129,44 @@
     "veterinary inspector",
     "animal husbandry",
     "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-pstet-exam-pattern-syllabus",
+   "url": "/pa/strategy-pstet-exam-pattern-syllabus",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "url": "/pa/strategy-pstet-exam-pattern-syllabus.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSTET ਪੇਪਰ ਪੈਟਰਨ, ਸਿਲੇਬਸ ਅਤੇ ਯੋਗਤਾ (ਪੇਪਰ 1 ਅਤੇ 2)",
+   "lang": "pa",
+   "subjects": [
+    "punjabi",
+    "english",
+    "quant",
+    "gk",
+    "reasoning"
+   ],
+   "exams": [
+    "PSTET"
+   ],
+   "tags": [
+    "pstet",
+    "punjab tet",
+    "teacher eligibility test",
+    "syllabus",
     "exam pattern"
    ],
    "hub": "strategy.html"
@@ -5895,6 +6121,34 @@
    "hub": ""
   },
   {
+   "id": "pyq/chandigarh-police-constable/index.html",
+   "url": "/pyq/chandigarh-police-constable/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Chandigarh Police Constable Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Chandigarh Police Constable Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-building-inspector/index.html",
+   "url": "/pyq/ppsc-building-inspector/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Building Inspector Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Building Inspector Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq/ppsc-cooperative-inspector/index.html",
    "url": "/pyq/ppsc-cooperative-inspector/index.html",
    "type": "page",
@@ -5918,6 +6172,34 @@
    "subjects": [],
    "exams": [
     "PPSC Draftsman & Head Draftsman Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-functional-manager/index.html",
+   "url": "/pyq/ppsc-functional-manager/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Functional Manager Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Functional Manager Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/ppsc-junior-auditor/index.html",
+   "url": "/pyq/ppsc-junior-auditor/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PPSC Junior Auditor Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PPSC Junior Auditor Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -6077,6 +6359,20 @@
    "hub": "previous-year-questions.html"
   },
   {
+   "id": "pyq/psssb-fireman/index.html",
+   "url": "/pyq/psssb-fireman/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Fireman Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Fireman Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq/psssb-forest-guard/index.html",
    "url": "/pyq/psssb-forest-guard/index.html",
    "type": "page",
@@ -6100,6 +6396,20 @@
    "subjects": [],
    "exams": [
     "PSSSB Forester Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-group-d/index.html",
+   "url": "/pyq/psssb-group-d/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Group D Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Group D Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -6133,6 +6443,20 @@
    "hub": "previous-year-questions.html"
   },
   {
+   "id": "pyq/psssb-instructor/index.html",
+   "url": "/pyq/psssb-instructor/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Instructor Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Instructor Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq/psssb-jail-warder/index.html",
    "url": "/pyq/psssb-jail-warder/index.html",
    "type": "page",
@@ -6156,6 +6480,20 @@
    "subjects": [],
    "exams": [
     "PSSSB Junior Draftsman (Civil) Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/psssb-lab-attendant/index.html",
+   "url": "/pyq/psssb-lab-attendant/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Lab Attendant Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Lab Attendant Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -6245,6 +6583,20 @@
    "hub": "previous-year-questions.html"
   },
   {
+   "id": "pyq/psssb-surveyor/index.html",
+   "url": "/pyq/psssb-surveyor/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSSSB Surveyor Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSSSB Surveyor Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
    "id": "pyq/psssb-technical-assistant/index.html",
    "url": "/pyq/psssb-technical-assistant/index.html",
    "type": "page",
@@ -6268,6 +6620,76 @@
    "subjects": [],
    "exams": [
     "PSSSB Veterinary Inspector Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/pstet/index.html",
+   "url": "/pyq/pstet/index.html",
+   "type": "page",
+   "template": "",
+   "title": "PSTET Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "PSTET Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-ett-teacher/index.html",
+   "url": "/pyq/punjab-ett-teacher/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab ETT Teacher Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab ETT Teacher Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "url": "/pyq/punjab-haryana-high-court-clerk/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab & Haryana High Court Clerk Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab & Haryana High Court Clerk Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-master-cadre/index.html",
+   "url": "/pyq/punjab-master-cadre/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab Master Cadre Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab Master Cadre Previous Year Papers"
+   ],
+   "tags": [],
+   "hub": "previous-year-questions.html"
+  },
+  {
+   "id": "pyq/punjab-pcs-judicial/index.html",
+   "url": "/pyq/punjab-pcs-judicial/index.html",
+   "type": "page",
+   "template": "",
+   "title": "Punjab PCS (Judicial) Previous Year Papers",
+   "lang": "en",
+   "subjects": [],
+   "exams": [
+    "Punjab PCS (Judicial) Previous Year Papers"
    ],
    "tags": [],
    "hub": "previous-year-questions.html"
@@ -7423,6 +7845,43 @@
    "hub": "strategy.html"
   },
   {
+   "id": "strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "url": "/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "url": "/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Craft Instructor 2026 - Eligibility & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "computer"
+   ],
+   "exams": [
+    "Craft Instructor"
+   ],
+   "tags": [
+    "psssb",
+    "craft instructor",
+    "iti instructor",
+    "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "document",
@@ -7439,7 +7898,7 @@
    "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "type": "strategy",
    "template": "preparation-strategy",
-   "title": "PSSSB Excise Inspector Recruitment, Eligibility & Pattern",
+   "title": "PSSSB Excise Inspector Recruitment, Syllabus & Pattern",
    "lang": "en",
    "subjects": [
     "gk",
@@ -7456,6 +7915,45 @@
     "psssb",
     "excise inspector",
     "excise and taxation inspector",
+    "eligibility",
+    "exam pattern",
+    "syllabus"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-psssb-group-d-recruitment-exam-pattern",
+   "url": "/strategy-psssb-group-d-recruitment-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "url": "/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Group D Recruitment, Eligibility & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "computer"
+   ],
+   "exams": [
+    "Group D"
+   ],
+   "tags": [
+    "psssb",
+    "group d",
+    "sevadar",
+    "chowkidar",
     "eligibility",
     "exam pattern"
    ],
@@ -7532,6 +8030,44 @@
     "veterinary inspector",
     "animal husbandry",
     "eligibility",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-pstet-exam-pattern-syllabus",
+   "url": "/strategy-pstet-exam-pattern-syllabus",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-pstet-exam-pattern-syllabus.html",
+   "url": "/strategy-pstet-exam-pattern-syllabus.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSTET Exam Pattern, Syllabus & Eligibility (Paper 1 & 2)",
+   "lang": "en",
+   "subjects": [
+    "punjabi",
+    "english",
+    "quant",
+    "gk",
+    "reasoning"
+   ],
+   "exams": [
+    "PSTET"
+   ],
+   "tags": [
+    "pstet",
+    "punjab tet",
+    "teacher eligibility test",
+    "syllabus",
     "exam pattern"
    ],
    "hub": "strategy.html"
@@ -9149,7 +9685,19 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9162,6 +9710,12 @@
   {
    "from": "archive-category-preparation-strategy.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -9790,6 +10344,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-chowkidar.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-chowkidar.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-clerk.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -10037,6 +10633,48 @@
   },
   {
    "from": "archive-tag-cooperative-inspector.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-craft-instructor.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -10319,7 +10957,19 @@
   },
   {
    "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10403,7 +11053,19 @@
   },
   {
    "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10416,6 +11078,12 @@
   {
    "from": "archive-tag-exam-pattern.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -10792,6 +11460,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-group-d.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-group-d.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-indian-polity.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -10919,6 +11629,48 @@
   },
   {
    "from": "archive-tag-investigation-cadre.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-iti-instructor.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -12089,7 +12841,19 @@
   },
   {
    "from": "archive-tag-psssb.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12108,6 +12872,48 @@
   {
    "from": "archive-tag-psssb.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12395,6 +13201,48 @@
   },
   {
    "from": "archive-tag-punjab-police-si.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-tet.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -12784,6 +13632,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-sevadar.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-sevadar.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-sikh-empire.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -13127,6 +14017,18 @@
   },
   {
    "from": "archive-tag-syllabus.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -13146,6 +14048,48 @@
   {
    "from": "archive-tag-syllabus.html",
    "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-teacher-eligibility-test.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13589,6 +14533,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-chowkidar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-clerk.html",
    "rel": "contextual",
    "weight": 1
@@ -13620,6 +14570,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-cooperative-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-craft-instructor.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13727,6 +14683,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-indian-polity.html",
    "rel": "contextual",
    "weight": 1
@@ -13740,6 +14702,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-investigation-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-iti-instructor.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13913,6 +14881,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-pstet.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-punjab-civil-services.html",
    "rel": "contextual",
    "weight": 1
@@ -13950,6 +14924,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-punjab-police-si.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-tet.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14009,6 +14989,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-sevadar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-sikh-empire.html",
    "rel": "contextual",
    "weight": 1
@@ -14058,6 +15044,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-teacher-eligibility-test.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14741,7 +15733,19 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14754,6 +15758,12 @@
   {
    "from": "archives.html",
    "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14903,7 +15913,19 @@
   },
   {
    "from": "archives.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -14916,6 +15938,12 @@
   {
    "from": "archives.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15035,25 +16063,7 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "blog-1-7-30-revision-rule-si-rank-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "blog-how-to-prepare-current-affairs-punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "pa/session-sunday-live-doubt-session-2026-10-04.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15071,7 +16081,13 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15089,13 +16105,13 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15119,12 +16135,6 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "session-sunday-live-doubt-session-2026-10-04.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
    "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -15137,7 +16147,19 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15150,6 +16172,12 @@
   {
    "from": "author-gurpreet-singh.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15251,7 +16279,7 @@
   },
   {
    "from": "blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15377,7 +16405,7 @@
   },
   {
    "from": "blog-how-to-prepare-current-affairs-punjab-exams.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15539,7 +16567,7 @@
   },
   {
    "from": "ca-current-affairs-august-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15623,7 +16651,7 @@
   },
   {
    "from": "ca-current-affairs-august-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15719,7 +16747,7 @@
   },
   {
    "from": "ca-current-affairs-july-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15803,7 +16831,7 @@
   },
   {
    "from": "ca-current-affairs-july-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15905,7 +16933,7 @@
   },
   {
    "from": "ca-current-affairs-september-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15989,7 +17017,7 @@
   },
   {
    "from": "ca-current-affairs-september-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16085,7 +17113,7 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-october-2026-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16169,7 +17197,7 @@
   },
   {
    "from": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17381,7 +18409,7 @@
   },
   {
    "from": "material-01-panjabi-bhasha-lipi-ate-kailandr.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17459,7 +18487,7 @@
   },
   {
    "from": "material-01-punjabi-language-script-and-calendar.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17543,7 +18571,7 @@
   },
   {
    "from": "material-02-literature-of-punjab.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17633,7 +18661,7 @@
   },
   {
    "from": "material-02-panjab-da-sahit.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17711,7 +18739,7 @@
   },
   {
    "from": "material-1857-revolt-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17813,7 +18841,7 @@
   },
   {
    "from": "material-1857-revolt-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17903,7 +18931,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18005,7 +19033,7 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18095,7 +19123,7 @@
   },
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18203,7 +19231,7 @@
   },
   {
    "from": "material-banda-singh-bahadur-dal-khalsa-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18299,7 +19327,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18395,7 +19423,7 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18485,7 +19513,7 @@
   },
   {
    "from": "material-computer-fundamentals-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18593,7 +19621,7 @@
   },
   {
    "from": "material-computer-fundamentals-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18689,7 +19717,7 @@
   },
   {
    "from": "material-computer-input-devices-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18791,7 +19819,7 @@
   },
   {
    "from": "material-computer-input-devices-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18887,7 +19915,7 @@
   },
   {
    "from": "material-computer-output-devices-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18989,7 +20017,7 @@
   },
   {
    "from": "material-computer-output-devices-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19085,7 +20113,7 @@
   },
   {
    "from": "material-cpu-central-processing-unit-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19181,7 +20209,7 @@
   },
   {
    "from": "material-cpu-central-processing-unit-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19277,7 +20305,7 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19373,7 +20401,7 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19463,7 +20491,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19565,7 +20593,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19655,7 +20683,7 @@
   },
   {
    "from": "material-english-grammar-clauses-and-phrases-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19751,7 +20779,7 @@
   },
   {
    "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19847,7 +20875,7 @@
   },
   {
    "from": "material-english-grammar-subject-and-predicate-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19943,7 +20971,7 @@
   },
   {
    "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20039,7 +21067,7 @@
   },
   {
    "from": "material-english-grammar-subject-verb-agreement-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20135,7 +21163,7 @@
   },
   {
    "from": "material-english-grammar-types-of-sentences-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20231,7 +21259,7 @@
   },
   {
    "from": "material-evolution-of-computers-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20333,7 +21361,7 @@
   },
   {
    "from": "material-evolution-of-computers-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20429,7 +21457,7 @@
   },
   {
    "from": "material-generations-of-computer-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20531,7 +21559,7 @@
   },
   {
    "from": "material-generations-of-computer-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20627,7 +21655,7 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20735,7 +21763,7 @@
   },
   {
    "from": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20831,7 +21859,7 @@
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -20939,7 +21967,7 @@
   },
   {
    "from": "material-guru-granth-sahib-ji-five-takhts-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21035,7 +22063,7 @@
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21143,7 +22171,7 @@
   },
   {
    "from": "material-guru-hargobind-har-rai-har-krishan-ji-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21239,7 +22267,7 @@
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21347,7 +22375,7 @@
   },
   {
    "from": "material-guru-nanak-dev-ji-guru-angad-dev-ji-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21443,7 +22471,7 @@
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21551,7 +22579,7 @@
   },
   {
    "from": "material-guru-teg-bahadur-guru-gobind-singh-ji-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21647,7 +22675,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21743,7 +22771,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21833,7 +22861,7 @@
   },
   {
    "from": "material-maharaja-ranjit-singh-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -21941,7 +22969,7 @@
   },
   {
    "from": "material-maharaja-ranjit-singh-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22037,7 +23065,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22133,7 +23161,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22223,7 +23251,7 @@
   },
   {
    "from": "material-maths-average-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22313,7 +23341,7 @@
   },
   {
    "from": "material-maths-decimal-fractions-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22403,7 +23431,7 @@
   },
   {
    "from": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22493,7 +23521,7 @@
   },
   {
    "from": "material-maths-number-system-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22583,7 +23611,7 @@
   },
   {
    "from": "material-maths-simplification-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22673,7 +23701,7 @@
   },
   {
    "from": "material-national-income-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22775,7 +23803,7 @@
   },
   {
    "from": "material-national-income-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22865,7 +23893,7 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -22967,7 +23995,7 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23057,7 +24085,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23147,7 +24175,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23225,7 +24253,7 @@
   },
   {
    "from": "material-punjabi-grammar-akhan-proverbs-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23327,7 +24355,7 @@
   },
   {
    "from": "material-punjabi-grammar-english-to-punjabi-translation-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23435,7 +24463,7 @@
   },
   {
    "from": "material-punjabi-grammar-gurmukhi-lipi-bodh-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23531,7 +24559,7 @@
   },
   {
    "from": "material-punjabi-grammar-karak-case-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23633,7 +24661,7 @@
   },
   {
    "from": "material-punjabi-grammar-kiriya-visheshan-adverb-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23735,7 +24763,7 @@
   },
   {
    "from": "material-punjabi-grammar-ling-gender-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23837,7 +24865,7 @@
   },
   {
    "from": "material-punjabi-grammar-muhavre-idioms-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23939,7 +24967,7 @@
   },
   {
    "from": "material-punjabi-grammar-nanv-noun-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24041,7 +25069,7 @@
   },
   {
    "from": "material-punjabi-grammar-parnanv-pronoun-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24149,7 +25177,7 @@
   },
   {
    "from": "material-punjabi-grammar-punjabi-bhasha-language-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24245,7 +25273,7 @@
   },
   {
    "from": "material-punjabi-grammar-samanarthak-virodhi-shabad-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24347,7 +25375,7 @@
   },
   {
    "from": "material-punjabi-grammar-samas-compound-words-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24449,7 +25477,7 @@
   },
   {
    "from": "material-punjabi-grammar-sambandhak-preposition-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24551,7 +25579,7 @@
   },
   {
    "from": "material-punjabi-grammar-shabad-badal-one-word-substitution-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24653,7 +25681,7 @@
   },
   {
    "from": "material-punjabi-grammar-shabad-bodh-words-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24755,7 +25783,7 @@
   },
   {
    "from": "material-punjabi-grammar-shudh-ashudh-correct-usage-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24857,7 +25885,7 @@
   },
   {
    "from": "material-punjabi-grammar-vachan-number-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24959,7 +25987,7 @@
   },
   {
    "from": "material-punjabi-grammar-vak-bodh-sentence-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25061,7 +26089,7 @@
   },
   {
    "from": "material-punjabi-grammar-visheshan-adjective-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25163,7 +26191,7 @@
   },
   {
    "from": "material-punjabi-grammar-vismik-interjection-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25265,7 +26293,7 @@
   },
   {
    "from": "material-punjabi-grammar-yojak-conjunction-notes.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25367,7 +26395,7 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25445,7 +26473,7 @@
   },
   {
    "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25535,7 +26563,7 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25619,7 +26647,7 @@
   },
   {
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25703,7 +26731,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25793,7 +26821,7 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25871,7 +26899,7 @@
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -25973,7 +27001,7 @@
   },
   {
    "from": "material-union-and-its-territory-notes-punjabi.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26147,7 +27175,7 @@
   },
   {
    "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26279,7 +27307,7 @@
   },
   {
    "from": "pa/blog-how-to-prepare-current-affairs-punjab-exams.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26405,7 +27433,7 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -26447,13 +27475,13 @@
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "pa/session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -26573,6 +27601,12 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -26621,7 +27655,7 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -26854,6 +27888,180 @@
    "weight": 1
   },
   {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-craft-instructor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-iti-instructor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-instructor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -27047,6 +28255,186 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-chowkidar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-sevadar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-group-d/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -27299,6 +28687,12 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -27419,6 +28813,186 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-pstet.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-punjab-tet.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-teacher-eligibility-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/pstet/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/punjab-ett-teacher/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -27701,12 +29275,6 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -27815,19 +29383,19 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -28019,7 +29587,7 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -28523,7 +30091,7 @@
   },
   {
    "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28571,7 +30139,7 @@
   },
   {
    "from": "pa/tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -28691,7 +30259,7 @@
   },
   {
    "from": "pa/tguide-blood-relations-reasoning.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28739,7 +30307,7 @@
   },
   {
    "from": "pa/tguide-blood-relations-reasoning.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -28847,7 +30415,7 @@
   },
   {
    "from": "pa/tguide-coding-decoding-reasoning.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28895,7 +30463,7 @@
   },
   {
    "from": "pa/tguide-coding-decoding-reasoning.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -29003,7 +30571,7 @@
   },
   {
    "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29057,7 +30625,7 @@
   },
   {
    "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -29171,7 +30739,7 @@
   },
   {
    "from": "pa/tguide-english-error-spotting-rules.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29345,7 +30913,7 @@
   },
   {
    "from": "pa/tguide-fundamental-rights.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29399,7 +30967,7 @@
   },
   {
    "from": "pa/tguide-fundamental-rights.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -29513,7 +31081,7 @@
   },
   {
    "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29567,7 +31135,7 @@
   },
   {
    "from": "pa/tguide-geography-of-punjab-rivers-regions.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -29675,7 +31243,7 @@
   },
   {
    "from": "pa/tguide-parliament-vs-state-legislature.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -29729,7 +31297,7 @@
   },
   {
    "from": "pa/tguide-parliament-vs-state-legislature.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -29849,7 +31417,7 @@
   },
   {
    "from": "pa/tguide-percentage-profit-and-loss.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30017,7 +31585,7 @@
   },
   {
    "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30071,7 +31639,7 @@
   },
   {
    "from": "pa/tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -30191,7 +31759,7 @@
   },
   {
    "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30245,7 +31813,7 @@
   },
   {
    "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -30365,7 +31933,7 @@
   },
   {
    "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30419,7 +31987,7 @@
   },
   {
    "from": "pa/tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -30533,7 +32101,7 @@
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30587,7 +32155,7 @@
   },
   {
    "from": "pa/tguide-time-work-speed-distance.html",
-   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -30893,6 +32461,18 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq/chandigarh-police-constable/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-building-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq/ppsc-cooperative-inspector/index.html",
    "rel": "contextual",
    "weight": 1
@@ -30900,6 +32480,18 @@
   {
    "from": "previous-year-questions.html",
    "to": "pyq/ppsc-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-functional-manager/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/ppsc-junior-auditor/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30971,6 +32563,12 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq/psssb-fireman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq/psssb-forest-guard/index.html",
    "rel": "contextual",
    "weight": 1
@@ -30978,6 +32576,12 @@
   {
    "from": "previous-year-questions.html",
    "to": "pyq/psssb-forester/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-group-d/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30995,6 +32599,12 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq/psssb-instructor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq/psssb-jail-warder/index.html",
    "rel": "contextual",
    "weight": 1
@@ -31002,6 +32612,12 @@
   {
    "from": "previous-year-questions.html",
    "to": "pyq/psssb-junior-draftsman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/psssb-lab-attendant/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -31043,6 +32659,12 @@
   },
   {
    "from": "previous-year-questions.html",
+   "to": "pyq/psssb-surveyor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
    "to": "pyq/psssb-technical-assistant/index.html",
    "rel": "contextual",
    "weight": 1
@@ -31050,6 +32672,36 @@
   {
    "from": "previous-year-questions.html",
    "to": "pyq/psssb-veterinary-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/pstet/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/punjab-ett-teacher/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "previous-year-questions.html",
+   "to": "pyq/punjab-pcs-judicial/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -31109,7 +32761,7 @@
   },
   {
    "from": "pyq-ppsc-naib-tehsildar-syllabus-and-information.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -31181,7 +32833,7 @@
   },
   {
    "from": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -31253,7 +32905,7 @@
   },
   {
    "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -31291,6 +32943,114 @@
    "from": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "to": "pyq-ppsc-pcs-2020-syllabus-and-information.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "pyq/chandigarh-police-constable/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/chandigarh-police-constable/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "pyq/ppsc-building-inspector/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-building-inspector/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
    "weight": 1
   },
   {
@@ -31397,6 +33157,114 @@
   },
   {
    "from": "pyq/ppsc-draftsman/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "pyq/ppsc-functional-manager/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-functional-manager/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
+   "to": "pyq/ppsc-junior-auditor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/ppsc-junior-auditor/index.html",
    "to": "study-gk.html",
    "rel": "contextual",
    "weight": 1
@@ -32056,6 +33924,60 @@
    "weight": 1
   },
   {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "pyq/psssb-fireman/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-fireman/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "pyq/psssb-forest-guard/index.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -32176,6 +34098,60 @@
    "weight": 1
   },
   {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "pyq/psssb-group-d/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-group-d/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "pyq/psssb-horticulture-supervisor/index.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -32279,6 +34255,60 @@
   },
   {
    "from": "pyq/psssb-hostel-superintendent/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
+   "to": "pyq/psssb-instructor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-instructor/index.html",
    "to": "study-gk.html",
    "rel": "contextual",
    "weight": 1
@@ -32393,6 +34423,60 @@
   },
   {
    "from": "pyq/psssb-junior-draftsman/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
+   "to": "pyq/psssb-lab-attendant/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-lab-attendant/index.html",
    "to": "study-gk.html",
    "rel": "contextual",
    "weight": 1
@@ -32728,6 +34812,60 @@
    "weight": 1
   },
   {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "pyq/psssb-surveyor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/psssb-surveyor/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "pyq/psssb-technical-assistant/index.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -32831,6 +34969,276 @@
   },
   {
    "from": "pyq/psssb-veterinary-inspector/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "pyq/pstet/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/pstet/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "pyq/punjab-ett-teacher/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-ett-teacher/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-master-cadre/index.html",
+   "to": "study-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "expected-mcqs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "mock.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "previous-year-questions.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
+   "to": "pyq/punjab-pcs-judicial/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pyq/punjab-pcs-judicial/index.html",
    "to": "study-gk.html",
    "rel": "contextual",
    "weight": 1
@@ -33341,7 +35749,7 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33383,13 +35791,13 @@
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "session-sunday-live-doubt-session-2026-10-04.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -33545,8 +35953,14 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -33731,8 +36145,14 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -33749,6 +36169,168 @@
   },
   {
    "from": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-craft-instructor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-iti-instructor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-instructor/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -33929,6 +36511,174 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-chowkidar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "archive-tag-sevadar.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pyq/psssb-group-d/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -34199,6 +36949,12 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34271,6 +37027,180 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-pstet.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-punjab-tet.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "archive-tag-teacher-eligibility-test.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/pstet/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/punjab-ett-teacher/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-pstet-exam-pattern-syllabus",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-pstet-exam-pattern-syllabus.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -34565,12 +37495,6 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34578,6 +37502,12 @@
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34631,19 +37561,19 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "rel": "related-strategy",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -34831,6 +37761,12 @@
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
    "weight": 1
   },
   {
@@ -35243,7 +38179,19 @@
   },
   {
    "from": "strategy.html",
+   "to": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35256,6 +38204,12 @@
   {
    "from": "strategy.html",
    "to": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35303,7 +38257,19 @@
   },
   {
    "from": "strategy.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -35316,6 +38282,12 @@
   {
    "from": "strategy.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -36269,7 +39241,7 @@
   },
   {
    "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -36323,7 +39295,7 @@
   },
   {
    "from": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -36425,7 +39397,7 @@
   },
   {
    "from": "tguide-blood-relations-reasoning.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -36485,7 +39457,7 @@
   },
   {
    "from": "tguide-blood-relations-reasoning.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -36575,7 +39547,7 @@
   },
   {
    "from": "tguide-coding-decoding-reasoning.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -36635,7 +39607,7 @@
   },
   {
    "from": "tguide-coding-decoding-reasoning.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -36725,7 +39697,7 @@
   },
   {
    "from": "tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -36779,7 +39751,7 @@
   },
   {
    "from": "tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -36875,7 +39847,7 @@
   },
   {
    "from": "tguide-english-error-spotting-rules.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37031,7 +40003,7 @@
   },
   {
    "from": "tguide-fundamental-rights.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37091,7 +40063,7 @@
   },
   {
    "from": "tguide-fundamental-rights.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -37187,7 +40159,7 @@
   },
   {
    "from": "tguide-geography-of-punjab-rivers-regions.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37247,7 +40219,7 @@
   },
   {
    "from": "tguide-geography-of-punjab-rivers-regions.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -37349,7 +40321,7 @@
   },
   {
    "from": "tguide-parliament-vs-state-legislature.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37415,7 +40387,7 @@
   },
   {
    "from": "tguide-parliament-vs-state-legislature.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -37511,7 +40483,7 @@
   },
   {
    "from": "tguide-percentage-profit-and-loss.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37667,7 +40639,7 @@
   },
   {
    "from": "tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37721,7 +40693,7 @@
   },
   {
    "from": "tguide-punjab-fairs-festivals-folk-dances.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -37823,7 +40795,7 @@
   },
   {
    "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -37889,7 +40861,7 @@
   },
   {
    "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -37985,7 +40957,7 @@
   },
   {
    "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -38051,7 +41023,7 @@
   },
   {
    "from": "tguide-sikh-misls-maharaja-ranjit-singh.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -38147,12 +41119,6 @@
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "tguide-time-work-speed-distance.html",
    "to": "tguide-time-work-speed-distance",
    "rel": "contextual",
    "weight": 1
@@ -38201,7 +41167,7 @@
   },
   {
    "from": "tguide-time-work-speed-distance.html",
-   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -38731,7 +41697,9 @@
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+    "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
@@ -38795,6 +41763,7 @@
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+    "strategy-pstet-exam-pattern-syllabus.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -38876,9 +41845,12 @@
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+    "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+    "strategy-pstet-exam-pattern-syllabus.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -38929,9 +41901,12 @@
     "blog-1-7-30-revision-rule-si-rank-2.html",
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+    "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+    "strategy-pstet-exam-pattern-syllabus.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -38987,6 +41962,7 @@
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+    "strategy-pstet-exam-pattern-syllabus.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -39024,9 +42000,12 @@
     "session-sunday-live-doubt-session-2026-10-04.html",
     "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+    "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+    "strategy-pstet-exam-pattern-syllabus.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",

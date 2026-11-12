@@ -1,10 +1,140 @@
 {
   "version": 1,
   "domain": "https://houseofaspirants.in",
-  "total": 31,
-  "papers": 52,
-  "keys": 17,
+  "total": 45,
+  "papers": 112,
+  "keys": 39,
   "exams": [
+    {
+      "id": "chandigarh-police-constable",
+      "slug": "chandigarh-police-constable",
+      "title": "Chandigarh Police Constable Previous Year Papers",
+      "organization": "Chandigarh Police",
+      "exam": "chandigarh-police-constable",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Chandigarh Police Constable previous year question papers, year by year with official answer keys where released - download each PDF free.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Chandigarh Police Constable paper we have, as released by Chandigarh Police. Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2013: Question paper\n- 2018: Question paper (16 Nov)\n- 2023: Question paper (Set C)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2013: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n- 2018: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (16 Nov)\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set C)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/chandigarh-police-constable/2023-question-paper-set-c.pdf",
+              "filename": "2023-question-paper-set-c.pdf",
+              "label": "Set C",
+              "title": "2023 Question Paper Set C",
+              "size": 6959583,
+              "sizeLabel": "6.6 MB",
+              "pages": 27,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2018",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/chandigarh-police-constable/2018-question-paper-16-nov.pdf",
+              "filename": "2018-question-paper-16-nov.pdf",
+              "label": "16 Nov",
+              "title": "2018 Question Paper 16 Nov",
+              "size": 1083963,
+              "sizeLabel": "1.0 MB",
+              "pages": 22,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2013",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/chandigarh-police-constable/2013-question-paper.pdf",
+              "filename": "2013-question-paper.pdf",
+              "label": "",
+              "title": "2013 Question Paper",
+              "size": 1543536,
+              "sizeLabel": "1.5 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 3,
+      "count": 3,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/chandigarh-police-constable/index.html",
+      "url": "https://houseofaspirants.in/pyq/chandigarh-police-constable",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-building-inspector",
+      "slug": "ppsc-building-inspector",
+      "title": "PPSC Building Inspector Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "ppsc-building-inspector",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Building Inspector previous year question papers from PPSC, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Building Inspector paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: Question paper (All Sets)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (All Sets)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-building-inspector/2022-question-paper-all-sets.pdf",
+              "filename": "2022-question-paper-all-sets.pdf",
+              "label": "All Sets",
+              "title": "2022 Question Paper All Sets",
+              "size": 979315,
+              "sizeLabel": "956 KB",
+              "pages": 80,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/ppsc-building-inspector/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-building-inspector",
+      "hub": "previous-year-questions.html"
+    },
     {
       "id": "ppsc-cooperative-inspector",
       "slug": "ppsc-cooperative-inspector",
@@ -95,6 +225,146 @@
       "keyFiles": 0,
       "file": "pyq/ppsc-draftsman/index.html",
       "url": "https://houseofaspirants.in/pyq/ppsc-draftsman",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-functional-manager",
+      "slug": "ppsc-functional-manager",
+      "title": "PPSC Functional Manager Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "ppsc-functional-manager",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Functional Manager previous year question papers from PPSC, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Functional Manager paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: Question paper (All Sets); official answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਫ਼ੰਕਸ਼ਨਲ ਮੈਨੇਜਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (All Sets); official answer key\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-functional-manager/2022-question-paper-all-sets.pdf",
+              "filename": "2022-question-paper-all-sets.pdf",
+              "label": "All Sets",
+              "title": "2022 Question Paper All Sets",
+              "size": 1003872,
+              "sizeLabel": "980 KB",
+              "pages": 104,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/ppsc-functional-manager/2022-official-answer-key.pdf",
+            "filename": "2022-official-answer-key.pdf",
+            "label": "",
+            "title": "2022 Official Answer Key",
+            "size": 59178,
+            "sizeLabel": "57 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/ppsc-functional-manager/2022-official-answer-key.pdf",
+              "filename": "2022-official-answer-key.pdf",
+              "label": "",
+              "title": "2022 Official Answer Key",
+              "size": 59178,
+              "sizeLabel": "57 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/ppsc-functional-manager/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-functional-manager",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "ppsc-junior-auditor",
+      "slug": "ppsc-junior-auditor",
+      "title": "PPSC Junior Auditor Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "ppsc-junior-auditor",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PPSC Junior Auditor previous year question papers from PPSC, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PPSC Junior Auditor paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2024: Question paper (5 May); official answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPPSC ਜੂਨੀਅਰ ਆਡੀਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2024: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (5 May); official answer key\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2024",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/ppsc-junior-auditor/2024-question-paper-5-may.pdf",
+              "filename": "2024-question-paper-5-may.pdf",
+              "label": "5 May",
+              "title": "2024 Question Paper 5 May",
+              "size": 966207,
+              "sizeLabel": "943 KB",
+              "pages": 112,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/ppsc-junior-auditor/2024-official-answer-key.pdf",
+            "filename": "2024-official-answer-key.pdf",
+            "label": "",
+            "title": "2024 Official Answer Key",
+            "size": 71244,
+            "sizeLabel": "69 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/ppsc-junior-auditor/2024-official-answer-key.pdf",
+              "filename": "2024-official-answer-key.pdf",
+              "label": "",
+              "title": "2024 Official Answer Key",
+              "size": 71244,
+              "sizeLabel": "69 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 1,
+      "file": "pyq/ppsc-junior-auditor/index.html",
+      "url": "https://houseofaspirants.in/pyq/ppsc-junior-auditor",
       "hub": "previous-year-questions.html"
     },
     {
@@ -458,8 +728,8 @@
       ],
       "description": "Free PSSSB Clerk cum Data Entry Operator previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Clerk cum Data Entry Operator paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: paper of 25 June 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ-ਕਮ-ਡਾਟਾ ਐਂਟਰੀ ਆਪਰੇਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 25 ਜੂਨ 2023 ਦਾ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Clerk cum Data Entry Operator paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question paper (25 Jun); official answer keys (Final / First)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ-ਕਮ-ਡਾਟਾ ਐਂਟਰੀ ਆਪਰੇਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (25 Jun); official answer keys (Final / First)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
         {
@@ -470,23 +740,59 @@
               "filename": "2023-question-paper-25-jun.pdf",
               "label": "25 Jun",
               "title": "2023 Question Paper 25 Jun",
-              "size": 2018630,
-              "sizeLabel": "1.9 MB",
-              "pages": 0,
+              "size": 2111390,
+              "sizeLabel": "2.0 MB",
+              "pages": 20,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-official-answer-key-final.pdf",
+            "filename": "2023-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2023 Official Answer Key Final",
+            "size": 347128,
+            "sizeLabel": "338 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-official-answer-key-final.pdf",
+              "filename": "2023-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2023 Official Answer Key Final",
+              "size": 347128,
+              "sizeLabel": "338 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk-cum-data-entry-operator/2023-official-answer-key-first.pdf",
+              "filename": "2023-official-answer-key-first.pdf",
+              "label": "First",
+              "title": "2023 Official Answer Key First",
+              "size": 89235,
+              "sizeLabel": "87 KB",
+              "pages": 5,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         }
       ],
       "others": [],
       "years": 1,
       "count": 1,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 2,
       "file": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-clerk-cum-data-entry-operator",
       "hub": "previous-year-questions.html"
@@ -504,10 +810,53 @@
       ],
       "description": "Free PSSSB Clerk IT previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Clerk IT paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 11 December 2021, with the revised official answer key (all clerk posts)\n- 2022: paper of 22 October 2022, with final answer keys for Sets A, B, C and D\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (IT) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 11 ਦਸੰਬਰ 2021 ਦਾ ਪੇਪਰ, revised official answer key ਸਮੇਤ (ਸਾਰੀਆਂ ਕਲਰਕ ਅਸਾਮੀਆਂ)\n- 2022: 22 ਅਕਤੂਬਰ 2022 ਦਾ ਪੇਪਰ, Set A, B, C ਅਤੇ D ਦੀਆਂ final answer keys ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Clerk IT paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 11 December 2021, with the revised official answer key (all clerk posts)\n- 2022: paper of 22 October 2022, with final answer keys for Sets A, B, C and D\n- 2026: Question paper (28 Feb); official answer key (Provisional)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (IT) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 11 ਦਸੰਬਰ 2021 ਦਾ ਪੇਪਰ, revised official answer key ਸਮੇਤ (ਸਾਰੀਆਂ ਕਲਰਕ ਅਸਾਮੀਆਂ)\n- 2022: 22 ਅਕਤੂਬਰ 2022 ਦਾ ਪੇਪਰ, Set A, B, C ਅਤੇ D ਦੀਆਂ final answer keys ਸਮੇਤ\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (28 Feb); official answer key (Provisional)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2026-question-paper-28-feb.pdf",
+              "filename": "2026-question-paper-28-feb.pdf",
+              "label": "28 Feb",
+              "title": "2026 Question Paper 28 Feb",
+              "size": 5369259,
+              "sizeLabel": "5.1 MB",
+              "pages": 25,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-it/2026-official-answer-key-provisional.pdf",
+            "filename": "2026-official-answer-key-provisional.pdf",
+            "label": "Provisional",
+            "title": "2026 Official Answer Key Provisional",
+            "size": 417447,
+            "sizeLabel": "407 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-it/2026-official-answer-key-provisional.pdf",
+              "filename": "2026-official-answer-key-provisional.pdf",
+              "label": "Provisional",
+              "title": "2026 Official Answer Key Provisional",
+              "size": 417447,
+              "sizeLabel": "407 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2022",
           "papers": [
@@ -632,10 +981,10 @@
         }
       ],
       "others": [],
-      "years": 2,
-      "count": 2,
-      "keys": 2,
-      "keyFiles": 5,
+      "years": 3,
+      "count": 3,
+      "keys": 3,
+      "keyFiles": 6,
       "file": "pyq/psssb-clerk-it/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-clerk-it",
       "hub": "previous-year-questions.html"
@@ -653,35 +1002,83 @@
       ],
       "description": "Free PSSSB Clerk Legal previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Clerk Legal paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (ਲੀਗਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Clerk Legal paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question papers (Set A, 8 Jul / main); official answer keys (Final / First)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ (ਲੀਗਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A, 8 Jul / ਮੁੱਖ); official answer keys (Final / First)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
         {
           "year": "2023",
           "papers": [
             {
+              "path": "content/previous-year-questions/psssb-clerk-legal/2023-question-paper-set-a-8-jul.pdf",
+              "filename": "2023-question-paper-set-a-8-jul.pdf",
+              "label": "Set A, 8 Jul",
+              "title": "2023 Question Paper Set a 8 Jul",
+              "size": 2625306,
+              "sizeLabel": "2.5 MB",
+              "pages": 19,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
               "path": "content/previous-year-questions/psssb-clerk-legal/2023-question-paper.pdf",
               "filename": "2023-question-paper.pdf",
               "label": "",
               "title": "2023 Question Paper",
-              "size": 3749310,
+              "size": 3775786,
               "sizeLabel": "3.6 MB",
-              "pages": 0,
+              "pages": 19,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk-legal/2023-official-answer-key-final.pdf",
+            "filename": "2023-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2023 Official Answer Key Final",
+            "size": 83601,
+            "sizeLabel": "81 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk-legal/2023-official-answer-key-final.pdf",
+              "filename": "2023-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2023 Official Answer Key Final",
+              "size": 83601,
+              "sizeLabel": "81 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk-legal/2023-official-answer-key-first.pdf",
+              "filename": "2023-official-answer-key-first.pdf",
+              "label": "First",
+              "title": "2023 Official Answer Key First",
+              "size": 264402,
+              "sizeLabel": "258 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         }
       ],
       "others": [],
       "years": 1,
-      "count": 1,
-      "keys": 0,
-      "keyFiles": 0,
+      "count": 2,
+      "keys": 1,
+      "keyFiles": 2,
       "file": "pyq/psssb-clerk-legal/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-clerk-legal",
       "hub": "previous-year-questions.html"
@@ -699,10 +1096,175 @@
       ],
       "description": "Free PSSSB Clerk previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Clerk paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: morning and evening shift papers (exam of 11-12 December 2021), with the revised official answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: ਸਵੇਰ ਅਤੇ ਸ਼ਾਮ ਦੀ ਸ਼ਿਫ਼ਟ ਦੇ ਪੇਪਰ (11-12 ਦਸੰਬਰ 2021), revised official answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Clerk paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: morning and evening shift papers (exam of 11-12 December 2021), with the revised official answer key\n- 2023: Question paper (6 Aug); official answer key (Provisional, 6 Aug)\n- 2024: Question paper (22 Dec)\n- 2026: Question paper (18 Jan); official answer keys (Final, 18 Jan / Provisional, 11 Oct, Set A / Provisional, 11 Oct, Set B / Provisional, 11 Oct, Set C / Provisional, 11 Oct, Set D / Provisional, 18 Jan)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਕਲਰਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: ਸਵੇਰ ਅਤੇ ਸ਼ਾਮ ਦੀ ਸ਼ਿਫ਼ਟ ਦੇ ਪੇਪਰ (11-12 ਦਸੰਬਰ 2021), revised official answer key ਸਮੇਤ\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (6 Aug); official answer key (Provisional, 6 Aug)\n- 2024: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (22 Dec)\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (18 Jan); official answer keys (Final, 18 Jan / Provisional, 11 Oct, Set A / Provisional, 11 Oct, Set B / Provisional, 11 Oct, Set C / Provisional, 11 Oct, Set D / Provisional, 18 Jan)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-question-paper-18-jan.pdf",
+              "filename": "2026-question-paper-18-jan.pdf",
+              "label": "18 Jan",
+              "title": "2026 Question Paper 18 Jan",
+              "size": 5149815,
+              "sizeLabel": "4.9 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-final-18-jan.pdf",
+            "filename": "2026-official-answer-key-final-18-jan.pdf",
+            "label": "Final, 18 Jan",
+            "title": "2026 Official Answer Key Final 18 Jan",
+            "size": 148042,
+            "sizeLabel": "144 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-final-18-jan.pdf",
+              "filename": "2026-official-answer-key-final-18-jan.pdf",
+              "label": "Final, 18 Jan",
+              "title": "2026 Official Answer Key Final 18 Jan",
+              "size": 148042,
+              "sizeLabel": "144 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-provisional-11-oct-set-a.pdf",
+              "filename": "2026-official-answer-key-provisional-11-oct-set-a.pdf",
+              "label": "Provisional, 11 Oct, Set A",
+              "title": "2026 Official Answer Key Provisional 11 Oct Set a",
+              "size": 102715,
+              "sizeLabel": "100 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-provisional-11-oct-set-b.pdf",
+              "filename": "2026-official-answer-key-provisional-11-oct-set-b.pdf",
+              "label": "Provisional, 11 Oct, Set B",
+              "title": "2026 Official Answer Key Provisional 11 Oct Set B",
+              "size": 102440,
+              "sizeLabel": "100 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-provisional-11-oct-set-c.pdf",
+              "filename": "2026-official-answer-key-provisional-11-oct-set-c.pdf",
+              "label": "Provisional, 11 Oct, Set C",
+              "title": "2026 Official Answer Key Provisional 11 Oct Set C",
+              "size": 102677,
+              "sizeLabel": "100 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-provisional-11-oct-set-d.pdf",
+              "filename": "2026-official-answer-key-provisional-11-oct-set-d.pdf",
+              "label": "Provisional, 11 Oct, Set D",
+              "title": "2026 Official Answer Key Provisional 11 Oct Set D",
+              "size": 102329,
+              "sizeLabel": "99 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2026-official-answer-key-provisional-18-jan.pdf",
+              "filename": "2026-official-answer-key-provisional-18-jan.pdf",
+              "label": "Provisional, 18 Jan",
+              "title": "2026 Official Answer Key Provisional 18 Jan",
+              "size": 110707,
+              "sizeLabel": "108 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "year": "2024",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2024-question-paper-22-dec.pdf",
+              "filename": "2024-question-paper-22-dec.pdf",
+              "label": "22 Dec",
+              "title": "2024 Question Paper 22 Dec",
+              "size": 5047015,
+              "sizeLabel": "4.8 MB",
+              "pages": 20,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2023-question-paper-6-aug.pdf",
+              "filename": "2023-question-paper-6-aug.pdf",
+              "label": "6 Aug",
+              "title": "2023 Question Paper 6 Aug",
+              "size": 8068652,
+              "sizeLabel": "7.7 MB",
+              "pages": 18,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-clerk/2023-official-answer-key-provisional-6-aug.pdf",
+            "filename": "2023-official-answer-key-provisional-6-aug.pdf",
+            "label": "Provisional, 6 Aug",
+            "title": "2023 Official Answer Key Provisional 6 Aug",
+            "size": 475299,
+            "sizeLabel": "464 KB",
+            "pages": 3,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-clerk/2023-official-answer-key-provisional-6-aug.pdf",
+              "filename": "2023-official-answer-key-provisional-6-aug.pdf",
+              "label": "Provisional, 6 Aug",
+              "title": "2023 Official Answer Key Provisional 6 Aug",
+              "size": 475299,
+              "sizeLabel": "464 KB",
+              "pages": 3,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2021",
           "papers": [
@@ -760,10 +1322,10 @@
         }
       ],
       "others": [],
-      "years": 1,
-      "count": 2,
-      "keys": 1,
-      "keyFiles": 1,
+      "years": 4,
+      "count": 5,
+      "keys": 3,
+      "keyFiles": 8,
       "file": "pyq/psssb-clerk/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-clerk",
       "hub": "previous-year-questions.html"
@@ -827,10 +1389,52 @@
       ],
       "description": "Free PSSSB Driver previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Driver paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: paper of 9 July 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਡਰਾਈਵਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 9 ਜੁਲਾਈ 2023 ਦਾ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Driver paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: paper of 9 July 2023\n- 2026: Official answer keys (Final / Provisional)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਡਰਾਈਵਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 9 ਜੁਲਾਈ 2023 ਦਾ ਪੇਪਰ\n- 2026: official answer keys (Final / Provisional)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [],
+          "key": {
+            "path": "content/previous-year-questions/psssb-driver/2026-official-answer-key-final.pdf",
+            "filename": "2026-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2026 Official Answer Key Final",
+            "size": 421879,
+            "sizeLabel": "411 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-driver/2026-official-answer-key-final.pdf",
+              "filename": "2026-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2026 Official Answer Key Final",
+              "size": 421879,
+              "sizeLabel": "411 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-driver/2026-official-answer-key-provisional.pdf",
+              "filename": "2026-official-answer-key-provisional.pdf",
+              "label": "Provisional",
+              "title": "2026 Official Answer Key Provisional",
+              "size": 712840,
+              "sizeLabel": "696 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2023",
           "papers": [
@@ -839,12 +1443,12 @@
               "filename": "2023-question-paper-9-jul.pdf",
               "label": "9 Jul",
               "title": "2023 Question Paper 9 Jul",
-              "size": 4580089,
-              "sizeLabel": "4.4 MB",
-              "pages": 0,
+              "size": 4703565,
+              "sizeLabel": "4.5 MB",
+              "pages": 21,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": null,
@@ -852,10 +1456,10 @@
         }
       ],
       "others": [],
-      "years": 1,
+      "years": 2,
       "count": 1,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 2,
       "file": "pyq/psssb-driver/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-driver",
       "hub": "previous-year-questions.html"
@@ -873,10 +1477,53 @@
       ],
       "description": "Free PSSSB Excise & Taxation Inspector previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Excise & Taxation Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 3 October 2021, with the final answer key (Advt. 09 of 2021)\n- 2023: paper of 21 May 2023 (Set C), with the provisional answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 3 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 09 of 2021)\n- 2023: 21 ਮਈ 2023 ਦਾ ਪੇਪਰ (Set C), provisional answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Excise & Taxation Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 3 October 2021, with the final answer key (Advt. 09 of 2021)\n- 2023: paper of 21 May 2023 (Set C), with the provisional answer key\n- 2026: Question paper (31 May); official answer key (Provisional)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 3 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 09 of 2021)\n- 2023: 21 ਮਈ 2023 ਦਾ ਪੇਪਰ (Set C), provisional answer key ਸਮੇਤ\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (31 May); official answer key (Provisional)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2026-question-paper-31-may.pdf",
+              "filename": "2026-question-paper-31-may.pdf",
+              "label": "31 May",
+              "title": "2026 Question Paper 31 May",
+              "size": 5765087,
+              "sizeLabel": "5.5 MB",
+              "pages": 14,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2026-official-answer-key-provisional.pdf",
+            "filename": "2026-official-answer-key-provisional.pdf",
+            "label": "Provisional",
+            "title": "2026 Official Answer Key Provisional",
+            "size": 133070,
+            "sizeLabel": "129 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-excise-taxation-inspector/2026-official-answer-key-provisional.pdf",
+              "filename": "2026-official-answer-key-provisional.pdf",
+              "label": "Provisional",
+              "title": "2026 Official Answer Key Provisional",
+              "size": 133070,
+              "sizeLabel": "129 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2023",
           "papers": [
@@ -885,12 +1532,12 @@
               "filename": "2023-question-paper-set-c.pdf",
               "label": "Set C",
               "title": "2023 Question Paper Set C",
-              "size": 3474346,
-              "sizeLabel": "3.3 MB",
-              "pages": 0,
+              "size": 3712885,
+              "sizeLabel": "3.5 MB",
+              "pages": 14,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": {
@@ -965,12 +1612,58 @@
         }
       ],
       "others": [],
-      "years": 2,
-      "count": 2,
-      "keys": 2,
-      "keyFiles": 2,
+      "years": 3,
+      "count": 3,
+      "keys": 3,
+      "keyFiles": 3,
       "file": "pyq/psssb-excise-taxation-inspector/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-excise-taxation-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-fireman",
+      "slug": "psssb-fireman",
+      "title": "PSSSB Fireman Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-fireman",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Fireman previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Fireman paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question paper (Set A, 1 Oct)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਫ਼ਾਇਰਮੈਨ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A, 1 Oct)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-fireman/2023-question-paper-set-a-1-oct.pdf",
+              "filename": "2023-question-paper-set-a-1-oct.pdf",
+              "label": "Set A, 1 Oct",
+              "title": "2023 Question Paper Set a 1 Oct",
+              "size": 5706078,
+              "sizeLabel": "5.4 MB",
+              "pages": 20,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-fireman/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-fireman",
       "hub": "previous-year-questions.html"
     },
     {
@@ -986,8 +1679,8 @@
       ],
       "description": "Free PSSSB Forest Guard previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Forest Guard paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: paper of 13 November 2022 (Set A), with answer keys for Sets A and B\n- An older combined paper for Forest Guard, Lab Attendant, Library Restorer and Assistant Treasurer (year not printed on the paper)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵਣ ਗਾਰਡ (Forest Guard) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: 13 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set A), Set A ਅਤੇ B ਦੀਆਂ answer keys ਸਮੇਤ\n- Forest Guard, Lab Attendant, Library Restorer ਅਤੇ Assistant Treasurer ਦਾ ਇੱਕ ਪੁਰਾਣਾ ਸਾਂਝਾ ਪੇਪਰ (ਪੇਪਰ 'ਤੇ ਸਾਲ ਨਹੀਂ ਛਪਿਆ)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Forest Guard paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: Question paper (Set A); official answer keys (Set A, Revised / Set A / Set B, Revised / Set C, Revised / Set D, Revised)\n- An older combined paper for Forest Guard, Lab Attendant, Library Restorer and Assistant Treasurer (year not printed on the paper)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵਣ ਗਾਰਡ (Forest Guard) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A); official answer keys (Set A, Revised / Set A / Set B, Revised / Set C, Revised / Set D, Revised)\n- Forest Guard, Lab Attendant, Library Restorer ਅਤੇ Assistant Treasurer ਦਾ ਇੱਕ ਪੁਰਾਣਾ ਸਾਂਝਾ ਪੇਪਰ (ਪੇਪਰ 'ਤੇ ਸਾਲ ਨਹੀਂ ਛਪਿਆ)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
         {
@@ -1007,18 +1700,30 @@
             }
           ],
           "key": {
-            "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
-            "filename": "2022-official-answer-key-set-a.pdf",
-            "label": "Set A",
-            "title": "2022 Official Answer Key Set a",
-            "size": 413606,
-            "sizeLabel": "403 KB",
+            "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a-revised.pdf",
+            "filename": "2022-official-answer-key-set-a-revised.pdf",
+            "label": "Set A, Revised",
+            "title": "2022 Official Answer Key Set a Revised",
+            "size": 469050,
+            "sizeLabel": "458 KB",
             "pages": 1,
             "language": "en",
-            "published": "2026-10-02",
-            "modified": "2026-10-02"
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
           },
           "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a-revised.pdf",
+              "filename": "2022-official-answer-key-set-a-revised.pdf",
+              "label": "Set A, Revised",
+              "title": "2022 Official Answer Key Set a Revised",
+              "size": 469050,
+              "sizeLabel": "458 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
             {
               "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-a.pdf",
               "filename": "2022-official-answer-key-set-a.pdf",
@@ -1042,6 +1747,30 @@
               "language": "en",
               "published": "2026-10-02",
               "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-c-revised.pdf",
+              "filename": "2022-official-answer-key-set-c-revised.pdf",
+              "label": "Set C, Revised",
+              "title": "2022 Official Answer Key Set C Revised",
+              "size": 468980,
+              "sizeLabel": "457 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-forest-guard/2022-official-answer-key-set-d-revised.pdf",
+              "filename": "2022-official-answer-key-set-d-revised.pdf",
+              "label": "Set D, Revised",
+              "title": "2022 Official Answer Key Set D Revised",
+              "size": 468954,
+              "sizeLabel": "457 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
             }
           ]
         }
@@ -1063,7 +1792,7 @@
       "years": 1,
       "count": 1,
       "keys": 1,
-      "keyFiles": 2,
+      "keyFiles": 5,
       "file": "pyq/psssb-forest-guard/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-forest-guard",
       "hub": "previous-year-questions.html"
@@ -1115,6 +1844,124 @@
       "hub": "previous-year-questions.html"
     },
     {
+      "id": "psssb-group-d",
+      "slug": "psssb-group-d",
+      "title": "PSSSB Group D Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-group-d",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Group D previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Group D paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2026: Question paper (5 Apr); official answer keys (Final / Provisional, Set A / Provisional, Set B / Provisional, Set C / Provisional, Set D)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਗਰੁੱਪ-ਡੀ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (5 Apr); official answer keys (Final / Provisional, Set A / Provisional, Set B / Provisional, Set C / Provisional, Set D)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-question-paper-5-apr.pdf",
+              "filename": "2026-question-paper-5-apr.pdf",
+              "label": "5 Apr",
+              "title": "2026 Question Paper 5 Apr",
+              "size": 6413423,
+              "sizeLabel": "6.1 MB",
+              "pages": 23,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-final.pdf",
+            "filename": "2026-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2026 Official Answer Key Final",
+            "size": 3332740,
+            "sizeLabel": "3.2 MB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-final.pdf",
+              "filename": "2026-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2026 Official Answer Key Final",
+              "size": 3332740,
+              "sizeLabel": "3.2 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-provisional-set-a.pdf",
+              "filename": "2026-official-answer-key-provisional-set-a.pdf",
+              "label": "Provisional, Set A",
+              "title": "2026 Official Answer Key Provisional Set a",
+              "size": 537806,
+              "sizeLabel": "525 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-provisional-set-b.pdf",
+              "filename": "2026-official-answer-key-provisional-set-b.pdf",
+              "label": "Provisional, Set B",
+              "title": "2026 Official Answer Key Provisional Set B",
+              "size": 537786,
+              "sizeLabel": "525 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-provisional-set-c.pdf",
+              "filename": "2026-official-answer-key-provisional-set-c.pdf",
+              "label": "Provisional, Set C",
+              "title": "2026 Official Answer Key Provisional Set C",
+              "size": 537817,
+              "sizeLabel": "525 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-group-d/2026-official-answer-key-provisional-set-d.pdf",
+              "filename": "2026-official-answer-key-provisional-set-d.pdf",
+              "label": "Provisional, Set D",
+              "title": "2026 Official Answer Key Provisional Set D",
+              "size": 537775,
+              "sizeLabel": "525 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 1,
+      "keyFiles": 5,
+      "file": "pyq/psssb-group-d/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-group-d",
+      "hub": "previous-year-questions.html"
+    },
+    {
       "id": "psssb-hostel-superintendent",
       "slug": "psssb-hostel-superintendent",
       "title": "PSSSB Hostel Superintendent cum PTI Papers",
@@ -1127,10 +1974,65 @@
       ],
       "description": "Free PSSSB Hostel Superintendent cum PTI previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Hostel Superintendent cum PTI paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ-ਕਮ-PTI ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Hostel Superintendent cum PTI paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: question paper\n- 2026: Question paper (28 Feb); official answer keys (Final / Provisional)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ-ਕਮ-PTI ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (28 Feb); official answer keys (Final / Provisional)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-hostel-superintendent/2026-question-paper-28-feb.pdf",
+              "filename": "2026-question-paper-28-feb.pdf",
+              "label": "28 Feb",
+              "title": "2026 Question Paper 28 Feb",
+              "size": 5616148,
+              "sizeLabel": "5.4 MB",
+              "pages": 25,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/psssb-hostel-superintendent/2026-official-answer-key-final.pdf",
+            "filename": "2026-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2026 Official Answer Key Final",
+            "size": 690831,
+            "sizeLabel": "674 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-hostel-superintendent/2026-official-answer-key-final.pdf",
+              "filename": "2026-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2026 Official Answer Key Final",
+              "size": 690831,
+              "sizeLabel": "674 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-hostel-superintendent/2026-official-answer-key-provisional.pdf",
+              "filename": "2026-official-answer-key-provisional.pdf",
+              "label": "Provisional",
+              "title": "2026 Official Answer Key Provisional",
+              "size": 420232,
+              "sizeLabel": "410 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2022",
           "papers": [
@@ -1152,12 +2054,58 @@
         }
       ],
       "others": [],
+      "years": 2,
+      "count": 2,
+      "keys": 1,
+      "keyFiles": 2,
+      "file": "pyq/psssb-hostel-superintendent/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-hostel-superintendent",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-instructor",
+      "slug": "psssb-instructor",
+      "title": "PSSSB Instructor Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-instructor",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Instructor previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Instructor paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2025: Question paper (22 Mar)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਇੰਸਟ੍ਰਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2025: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (22 Mar)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2025",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-instructor/2025-question-paper-22-mar.pdf",
+              "filename": "2025-question-paper-22-mar.pdf",
+              "label": "22 Mar",
+              "title": "2025 Question Paper 22 Mar",
+              "size": 3421285,
+              "sizeLabel": "3.3 MB",
+              "pages": 18,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
       "years": 1,
       "count": 1,
       "keys": 0,
       "keyFiles": 0,
-      "file": "pyq/psssb-hostel-superintendent/index.html",
-      "url": "https://houseofaspirants.in/pyq/psssb-hostel-superintendent",
+      "file": "pyq/psssb-instructor/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-instructor",
       "hub": "previous-year-questions.html"
     },
     {
@@ -1173,10 +2121,100 @@
       ],
       "description": "Free PSSSB Jail Warder previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Jail Warder paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: all six shift papers from 27, 28 and 29 August 2021\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 27, 28 ਅਤੇ 29 ਅਗਸਤ 2021 ਦੀਆਂ ਸਾਰੀਆਂ ਛੇ ਸ਼ਿਫ਼ਟਾਂ ਦੇ ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Jail Warder paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: all six shift papers from 27, 28 and 29 August 2021\n- 2026: Official answer keys (Final, 11 Jan / Final, 26 Jul, Set A / Final, 26 Jul, Set B / Final, 26 Jul, Set C / Final, 26 Jul, Set D / Provisional, 26 Jul)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 27, 28 ਅਤੇ 29 ਅਗਸਤ 2021 ਦੀਆਂ ਸਾਰੀਆਂ ਛੇ ਸ਼ਿਫ਼ਟਾਂ ਦੇ ਪੇਪਰ\n- 2026: official answer keys (Final, 11 Jan / Final, 26 Jul, Set A / Final, 26 Jul, Set B / Final, 26 Jul, Set C / Final, 26 Jul, Set D / Provisional, 26 Jul)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [],
+          "key": {
+            "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-11-jan.pdf",
+            "filename": "2026-official-answer-key-final-11-jan.pdf",
+            "label": "Final, 11 Jan",
+            "title": "2026 Official Answer Key Final 11 Jan",
+            "size": 1402799,
+            "sizeLabel": "1.3 MB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-11-jan.pdf",
+              "filename": "2026-official-answer-key-final-11-jan.pdf",
+              "label": "Final, 11 Jan",
+              "title": "2026 Official Answer Key Final 11 Jan",
+              "size": 1402799,
+              "sizeLabel": "1.3 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-26-jul-set-a.pdf",
+              "filename": "2026-official-answer-key-final-26-jul-set-a.pdf",
+              "label": "Final, 26 Jul, Set A",
+              "title": "2026 Official Answer Key Final 26 Jul Set a",
+              "size": 91140,
+              "sizeLabel": "89 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-26-jul-set-b.pdf",
+              "filename": "2026-official-answer-key-final-26-jul-set-b.pdf",
+              "label": "Final, 26 Jul, Set B",
+              "title": "2026 Official Answer Key Final 26 Jul Set B",
+              "size": 90918,
+              "sizeLabel": "88 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-26-jul-set-c.pdf",
+              "filename": "2026-official-answer-key-final-26-jul-set-c.pdf",
+              "label": "Final, 26 Jul, Set C",
+              "title": "2026 Official Answer Key Final 26 Jul Set C",
+              "size": 91690,
+              "sizeLabel": "89 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-final-26-jul-set-d.pdf",
+              "filename": "2026-official-answer-key-final-26-jul-set-d.pdf",
+              "label": "Final, 26 Jul, Set D",
+              "title": "2026 Official Answer Key Final 26 Jul Set D",
+              "size": 90884,
+              "sizeLabel": "88 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-jail-warder/2026-official-answer-key-provisional-26-jul.pdf",
+              "filename": "2026-official-answer-key-provisional-26-jul.pdf",
+              "label": "Provisional, 26 Jul",
+              "title": "2026 Official Answer Key Provisional 26 Jul",
+              "size": 110730,
+              "sizeLabel": "108 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2021",
           "papers": [
@@ -1233,24 +2271,24 @@
               "filename": "2021-question-paper-29-aug-shift-1.pdf",
               "label": "29 Aug, Shift 1",
               "title": "2021 Question Paper 29 Aug Shift 1",
-              "size": 2765250,
-              "sizeLabel": "2.6 MB",
+              "size": 2329322,
+              "sizeLabel": "2.2 MB",
               "pages": 22,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             },
             {
               "path": "content/previous-year-questions/psssb-jail-warder/2021-question-paper-29-aug-shift-2.pdf",
               "filename": "2021-question-paper-29-aug-shift-2.pdf",
               "label": "29 Aug, Shift 2",
               "title": "2021 Question Paper 29 Aug Shift 2",
-              "size": 2779917,
-              "sizeLabel": "2.7 MB",
+              "size": 2306880,
+              "sizeLabel": "2.2 MB",
               "pages": 21,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": null,
@@ -1258,10 +2296,10 @@
         }
       ],
       "others": [],
-      "years": 1,
+      "years": 2,
       "count": 6,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 6,
       "file": "pyq/psssb-jail-warder/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-jail-warder",
       "hub": "previous-year-questions.html"
@@ -1279,10 +2317,40 @@
       ],
       "description": "Free PSSSB Junior Draftsman (Civil) previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Junior Draftsman (Civil) paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 4 October 2021, with the final answer key (Advt. 12/2021)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੂਨੀਅਰ ਡਰਾਫ਼ਟਸਮੈਨ (ਸਿਵਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 4 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 12/2021)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Junior Draftsman (Civil) paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 4 October 2021, with the final answer key (Advt. 12/2021)\n- 2026: Official answer key (Final)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਜੂਨੀਅਰ ਡਰਾਫ਼ਟਸਮੈਨ (ਸਿਵਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 4 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 12/2021)\n- 2026: official answer key (Final)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [],
+          "key": {
+            "path": "content/previous-year-questions/psssb-junior-draftsman/2026-official-answer-key-final.pdf",
+            "filename": "2026-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2026 Official Answer Key Final",
+            "size": 426664,
+            "sizeLabel": "416 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-junior-draftsman/2026-official-answer-key-final.pdf",
+              "filename": "2026-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2026 Official Answer Key Final",
+              "size": 426664,
+              "sizeLabel": "416 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2021",
           "papers": [
@@ -1328,12 +2396,58 @@
         }
       ],
       "others": [],
-      "years": 1,
+      "years": 2,
       "count": 1,
-      "keys": 1,
-      "keyFiles": 1,
+      "keys": 2,
+      "keyFiles": 2,
       "file": "pyq/psssb-junior-draftsman/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-junior-draftsman",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-lab-attendant",
+      "slug": "psssb-lab-attendant",
+      "title": "PSSSB Lab Attendant Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-lab-attendant",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Lab Attendant previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Lab Attendant paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2025: Question paper (15 Feb)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਲੈਬ ਅਟੈਂਡੈਂਟ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2025: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (15 Feb)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2025",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-lab-attendant/2025-question-paper-15-feb.pdf",
+              "filename": "2025-question-paper-15-feb.pdf",
+              "label": "15 Feb",
+              "title": "2025 Question Paper 15 Feb",
+              "size": 4451545,
+              "sizeLabel": "4.2 MB",
+              "pages": 24,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-lab-attendant/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-lab-attendant",
       "hub": "previous-year-questions.html"
     },
     {
@@ -1361,12 +2475,12 @@
               "filename": "2023-question-paper.pdf",
               "label": "",
               "title": "2023 Question Paper",
-              "size": 4348126,
-              "sizeLabel": "4.1 MB",
-              "pages": 0,
+              "size": 4376808,
+              "sizeLabel": "4.2 MB",
+              "pages": 20,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": null,
@@ -1523,8 +2637,8 @@
       ],
       "description": "Free PSSSB Steno-Typist Punjabi Qualifying Paper previous year question papers from PSSSB, sorted year by year with official answer keys where released.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Steno-Typist Punjabi Qualifying Paper paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Punjabi qualifying paper of 11 March 2023\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਪੰਜਾਬੀ qualifying ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: 11 ਮਾਰਚ 2023 ਦਾ ਪੰਜਾਬੀ qualifying ਪੇਪਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Steno-Typist Punjabi Qualifying Paper paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question paper (Punjabi Qualifying); official answer key (Punjabi Qualifying)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਪੰਜਾਬੀ qualifying ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Punjabi Qualifying); official answer key (Punjabi Qualifying)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
         {
@@ -1543,15 +2657,39 @@
               "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/psssb-steno-typist/2023-official-answer-key-punjabi-qualifying.pdf",
+            "filename": "2023-official-answer-key-punjabi-qualifying.pdf",
+            "label": "Punjabi Qualifying",
+            "title": "2023 Official Answer Key Punjabi Qualifying",
+            "size": 497313,
+            "sizeLabel": "485 KB",
+            "pages": 1,
+            "language": "pa",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-steno-typist/2023-official-answer-key-punjabi-qualifying.pdf",
+              "filename": "2023-official-answer-key-punjabi-qualifying.pdf",
+              "label": "Punjabi Qualifying",
+              "title": "2023 Official Answer Key Punjabi Qualifying",
+              "size": 497313,
+              "sizeLabel": "485 KB",
+              "pages": 1,
+              "language": "pa",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         }
       ],
       "others": [],
       "years": 1,
       "count": 1,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 1,
       "file": "pyq/psssb-steno-typist/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-steno-typist",
       "hub": "previous-year-questions.html"
@@ -1600,6 +2738,52 @@
       "keyFiles": 0,
       "file": "pyq/psssb-horticulture-supervisor/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-horticulture-supervisor",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "psssb-surveyor",
+      "slug": "psssb-surveyor",
+      "title": "PSSSB Surveyor Previous Year Papers",
+      "organization": "PSSSB",
+      "exam": "psssb-surveyor",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSSSB Surveyor previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSSSB Surveyor paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2025: Question paper (20 Dec)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਸਰਵੇਅਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2025: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (20 Dec)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2025",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/psssb-surveyor/2025-question-paper-20-dec.pdf",
+              "filename": "2025-question-paper-20-dec.pdf",
+              "label": "20 Dec",
+              "title": "2025 Question Paper 20 Dec",
+              "size": 3036271,
+              "sizeLabel": "2.9 MB",
+              "pages": 14,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/psssb-surveyor/index.html",
+      "url": "https://houseofaspirants.in/pyq/psssb-surveyor",
       "hub": "previous-year-questions.html"
     },
     {
@@ -1685,10 +2869,40 @@
       ],
       "description": "Free PSSSB Veterinary Inspector previous year question papers with official answer keys, sorted year by year - download every PSSSB paper as a PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery PSSSB Veterinary Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 21 August 2021, with the final answer key (Advt. 14 of 2021)\n- 2023: Veterinary Inspector & Livestock Supervisor paper of 7 May 2023, with the first answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 21 ਅਗਸਤ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 14 of 2021)\n- 2023: ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਅਤੇ ਲਾਈਵਸਟਾਕ ਸੁਪਰਵਾਈਜ਼ਰ ਦਾ 7 ਮਈ 2023 ਦਾ ਪੇਪਰ, ਪਹਿਲੀ answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery PSSSB Veterinary Inspector paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2021: paper of 21 August 2021, with the final answer key (Advt. 14 of 2021)\n- 2023: Veterinary Inspector & Livestock Supervisor paper of 7 May 2023, with the first answer key\n- 2026: Official answer key (Final)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSSSB ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2021: 21 ਅਗਸਤ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 14 of 2021)\n- 2023: ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਅਤੇ ਲਾਈਵਸਟਾਕ ਸੁਪਰਵਾਈਜ਼ਰ ਦਾ 7 ਮਈ 2023 ਦਾ ਪੇਪਰ, ਪਹਿਲੀ answer key ਸਮੇਤ\n- 2026: official answer key (Final)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
+        {
+          "year": "2026",
+          "papers": [],
+          "key": {
+            "path": "content/previous-year-questions/psssb-veterinary-inspector/2026-official-answer-key-final.pdf",
+            "filename": "2026-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2026 Official Answer Key Final",
+            "size": 851729,
+            "sizeLabel": "831 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-veterinary-inspector/2026-official-answer-key-final.pdf",
+              "filename": "2026-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2026 Official Answer Key Final",
+              "size": 851729,
+              "sizeLabel": "831 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
         {
           "year": "2023",
           "papers": [
@@ -1697,12 +2911,12 @@
               "filename": "2023-question-paper-7-may.pdf",
               "label": "7 May",
               "title": "2023 Question Paper 7 May",
-              "size": 1861589,
-              "sizeLabel": "1.8 MB",
-              "pages": 0,
+              "size": 1593266,
+              "sizeLabel": "1.5 MB",
+              "pages": 17,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": {
@@ -1777,12 +2991,1036 @@
         }
       ],
       "others": [],
-      "years": 2,
+      "years": 3,
       "count": 2,
-      "keys": 2,
-      "keyFiles": 2,
+      "keys": 3,
+      "keyFiles": 3,
       "file": "pyq/psssb-veterinary-inspector/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-veterinary-inspector",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "pstet",
+      "slug": "pstet",
+      "title": "PSTET Previous Year Papers",
+      "organization": "Punjab Education Department",
+      "exam": "pstet",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free PSTET previous year question papers from Punjab Education Department, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery PSTET paper we have, as released by the Punjab School Education Department and its recruitment bodies. Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2011: Question papers (Paper 1 / Paper 2, Social Studies)\n- 2013: Question papers (Paper 1 / Paper 2, Math Science Dec / Paper 2, Social Studies Dec / Paper 2, Social Studies Jun)\n- 2014: Question papers (Paper 1 / Paper 2, Math Science / Paper 2, Social Studies)\n- 2015: Question paper (Paper 2, Social Studies)\n- 2016: Question papers (Paper 1 / Paper 2, Social Studies / Paper 2)\n- 2018: Question papers (Paper 1 / Paper 2, Social Studies / Paper 2)\n- 2020: Question papers (Paper 1 / Paper 2, Social Studies)\n- 2021: Question papers (Paper 1, Dec / Paper 1 / Paper 2, Dec)\n- 2023: Question papers (Paper 1, Set A / Paper 1, Set B / Paper 1, Set C / Paper 1, Set D / Paper 2); official answer keys (Paper 1, Final / Paper 2, Arts And Crafts / Paper 2, Common Part / Paper 2, Home Science / Paper 2, Math Science / Paper 2, Music / Paper 2, Physical Education / Paper 2, Sanskrit / Paper 2, Social Studies / Paper 2, Urdu)\n- 2024: Question papers (Paper 1 / Paper 2, Math Science / Paper 2, Set B); official answer keys (Paper 1 / Paper 2, Math Science Final / Paper 2, Social Studies Final / Paper 2, Social Studies)\n- 2026: Question papers (Paper 1 / Paper 2, Math Science / Paper 2, Social Studies)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nPSTET ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਵਿਭਾਗ ਅਤੇ ਉਸ ਦੀਆਂ ਭਰਤੀ ਸੰਸਥਾਵਾਂ ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2011: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Social Studies)\n- 2013: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Math Science Dec / Paper 2, Social Studies Dec / Paper 2, Social Studies Jun)\n- 2014: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Math Science / Paper 2, Social Studies)\n- 2015: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 2, Social Studies)\n- 2016: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Social Studies / Paper 2)\n- 2018: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Social Studies / Paper 2)\n- 2020: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Social Studies)\n- 2021: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1, Dec / Paper 1 / Paper 2, Dec)\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1, Set A / Paper 1, Set B / Paper 1, Set C / Paper 1, Set D / Paper 2); official answer keys (Paper 1, Final / Paper 2, Arts And Crafts / Paper 2, Common Part / Paper 2, Home Science / Paper 2, Math Science / Paper 2, Music / Paper 2, Physical Education / Paper 2, Sanskrit / Paper 2, Social Studies / Paper 2, Urdu)\n- 2024: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Math Science / Paper 2, Set B); official answer keys (Paper 1 / Paper 2, Math Science Final / Paper 2, Social Studies Final / Paper 2, Social Studies)\n- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1 / Paper 2, Math Science / Paper 2, Social Studies)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2026",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2026-question-paper-paper-1.pdf",
+              "filename": "2026-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2026 Question Paper Paper 1",
+              "size": 9920314,
+              "sizeLabel": "9.5 MB",
+              "pages": 30,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2026-question-paper-paper-2-math-science.pdf",
+              "filename": "2026-question-paper-paper-2-math-science.pdf",
+              "label": "Paper 2, Math Science",
+              "title": "2026 Question Paper Paper 2 Math Science",
+              "size": 10469250,
+              "sizeLabel": "10.0 MB",
+              "pages": 30,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2026-question-paper-paper-2-social-studies.pdf",
+              "filename": "2026-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2026 Question Paper Paper 2 Social Studies",
+              "size": 8929778,
+              "sizeLabel": "8.5 MB",
+              "pages": 30,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2024",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2024-question-paper-paper-1.pdf",
+              "filename": "2024-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2024 Question Paper Paper 1",
+              "size": 10587511,
+              "sizeLabel": "10.1 MB",
+              "pages": 28,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2024-question-paper-paper-2-math-science.pdf",
+              "filename": "2024-question-paper-paper-2-math-science.pdf",
+              "label": "Paper 2, Math Science",
+              "title": "2024 Question Paper Paper 2 Math Science",
+              "size": 8784303,
+              "sizeLabel": "8.4 MB",
+              "pages": 28,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2024-question-paper-paper-2-set-b.pdf",
+              "filename": "2024-question-paper-paper-2-set-b.pdf",
+              "label": "Paper 2, Set B",
+              "title": "2024 Question Paper Paper 2 Set B",
+              "size": 7022318,
+              "sizeLabel": "6.7 MB",
+              "pages": 28,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/pstet/2024-official-answer-key-paper-1.pdf",
+            "filename": "2024-official-answer-key-paper-1.pdf",
+            "label": "Paper 1",
+            "title": "2024 Official Answer Key Paper 1",
+            "size": 94583,
+            "sizeLabel": "92 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/pstet/2024-official-answer-key-paper-1.pdf",
+              "filename": "2024-official-answer-key-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2024 Official Answer Key Paper 1",
+              "size": 94583,
+              "sizeLabel": "92 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2024-official-answer-key-paper-2-math-science-final.pdf",
+              "filename": "2024-official-answer-key-paper-2-math-science-final.pdf",
+              "label": "Paper 2, Math Science Final",
+              "title": "2024 Official Answer Key Paper 2 Math Science Final",
+              "size": 1189357,
+              "sizeLabel": "1.1 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2024-official-answer-key-paper-2-social-studies-final.pdf",
+              "filename": "2024-official-answer-key-paper-2-social-studies-final.pdf",
+              "label": "Paper 2, Social Studies Final",
+              "title": "2024 Official Answer Key Paper 2 Social Studies Final",
+              "size": 1201737,
+              "sizeLabel": "1.1 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2024-official-answer-key-paper-2-social-studies.pdf",
+              "filename": "2024-official-answer-key-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2024 Official Answer Key Paper 2 Social Studies",
+              "size": 284852,
+              "sizeLabel": "278 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2023-question-paper-paper-1-set-a.pdf",
+              "filename": "2023-question-paper-paper-1-set-a.pdf",
+              "label": "Paper 1, Set A",
+              "title": "2023 Question Paper Paper 1 Set a",
+              "size": 5269094,
+              "sizeLabel": "5.0 MB",
+              "pages": 21,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-question-paper-paper-1-set-b.pdf",
+              "filename": "2023-question-paper-paper-1-set-b.pdf",
+              "label": "Paper 1, Set B",
+              "title": "2023 Question Paper Paper 1 Set B",
+              "size": 6093270,
+              "sizeLabel": "5.8 MB",
+              "pages": 21,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-question-paper-paper-1-set-c.pdf",
+              "filename": "2023-question-paper-paper-1-set-c.pdf",
+              "label": "Paper 1, Set C",
+              "title": "2023 Question Paper Paper 1 Set C",
+              "size": 5476876,
+              "sizeLabel": "5.2 MB",
+              "pages": 21,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-question-paper-paper-1-set-d.pdf",
+              "filename": "2023-question-paper-paper-1-set-d.pdf",
+              "label": "Paper 1, Set D",
+              "title": "2023 Question Paper Paper 1 Set D",
+              "size": 5516291,
+              "sizeLabel": "5.3 MB",
+              "pages": 21,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-question-paper-paper-2.pdf",
+              "filename": "2023-question-paper-paper-2.pdf",
+              "label": "Paper 2",
+              "title": "2023 Question Paper Paper 2",
+              "size": 5116457,
+              "sizeLabel": "4.9 MB",
+              "pages": 20,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-1-final.pdf",
+            "filename": "2023-official-answer-key-paper-1-final.pdf",
+            "label": "Paper 1, Final",
+            "title": "2023 Official Answer Key Paper 1 Final",
+            "size": 30205,
+            "sizeLabel": "29 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-1-final.pdf",
+              "filename": "2023-official-answer-key-paper-1-final.pdf",
+              "label": "Paper 1, Final",
+              "title": "2023 Official Answer Key Paper 1 Final",
+              "size": 30205,
+              "sizeLabel": "29 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-arts-and-crafts.pdf",
+              "filename": "2023-official-answer-key-paper-2-arts-and-crafts.pdf",
+              "label": "Paper 2, Arts And Crafts",
+              "title": "2023 Official Answer Key Paper 2 Arts and Crafts",
+              "size": 100714,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-common-part.pdf",
+              "filename": "2023-official-answer-key-paper-2-common-part.pdf",
+              "label": "Paper 2, Common Part",
+              "title": "2023 Official Answer Key Paper 2 Common Part",
+              "size": 150055,
+              "sizeLabel": "146 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-home-science.pdf",
+              "filename": "2023-official-answer-key-paper-2-home-science.pdf",
+              "label": "Paper 2, Home Science",
+              "title": "2023 Official Answer Key Paper 2 Home Science",
+              "size": 100629,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-math-science.pdf",
+              "filename": "2023-official-answer-key-paper-2-math-science.pdf",
+              "label": "Paper 2, Math Science",
+              "title": "2023 Official Answer Key Paper 2 Math Science",
+              "size": 103315,
+              "sizeLabel": "100 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-music.pdf",
+              "filename": "2023-official-answer-key-paper-2-music.pdf",
+              "label": "Paper 2, Music",
+              "title": "2023 Official Answer Key Paper 2 Music",
+              "size": 100597,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-physical-education.pdf",
+              "filename": "2023-official-answer-key-paper-2-physical-education.pdf",
+              "label": "Paper 2, Physical Education",
+              "title": "2023 Official Answer Key Paper 2 Physical Education",
+              "size": 100652,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-sanskrit.pdf",
+              "filename": "2023-official-answer-key-paper-2-sanskrit.pdf",
+              "label": "Paper 2, Sanskrit",
+              "title": "2023 Official Answer Key Paper 2 Sanskrit",
+              "size": 100617,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-social-studies.pdf",
+              "filename": "2023-official-answer-key-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2023 Official Answer Key Paper 2 Social Studies",
+              "size": 103164,
+              "sizeLabel": "100 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2023-official-answer-key-paper-2-urdu.pdf",
+              "filename": "2023-official-answer-key-paper-2-urdu.pdf",
+              "label": "Paper 2, Urdu",
+              "title": "2023 Official Answer Key Paper 2 Urdu",
+              "size": 100640,
+              "sizeLabel": "98 KB",
+              "pages": 2,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        },
+        {
+          "year": "2021",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2021-question-paper-paper-1-dec.pdf",
+              "filename": "2021-question-paper-paper-1-dec.pdf",
+              "label": "Paper 1, Dec",
+              "title": "2021 Question Paper Paper 1 Dec",
+              "size": 5048097,
+              "sizeLabel": "4.8 MB",
+              "pages": 23,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2021-question-paper-paper-1.pdf",
+              "filename": "2021-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2021 Question Paper Paper 1",
+              "size": 7897330,
+              "sizeLabel": "7.5 MB",
+              "pages": 25,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2021-question-paper-paper-2-dec.pdf",
+              "filename": "2021-question-paper-paper-2-dec.pdf",
+              "label": "Paper 2, Dec",
+              "title": "2021 Question Paper Paper 2 Dec",
+              "size": 7431836,
+              "sizeLabel": "7.1 MB",
+              "pages": 31,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2020",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2020-question-paper-paper-1.pdf",
+              "filename": "2020-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2020 Question Paper Paper 1",
+              "size": 6695102,
+              "sizeLabel": "6.4 MB",
+              "pages": 33,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2020-question-paper-paper-2-social-studies.pdf",
+              "filename": "2020-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2020 Question Paper Paper 2 Social Studies",
+              "size": 6375843,
+              "sizeLabel": "6.1 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2018",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2018-question-paper-paper-1.pdf",
+              "filename": "2018-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2018 Question Paper Paper 1",
+              "size": 5185931,
+              "sizeLabel": "4.9 MB",
+              "pages": 16,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2018-question-paper-paper-2-social-studies.pdf",
+              "filename": "2018-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2018 Question Paper Paper 2 Social Studies",
+              "size": 6867239,
+              "sizeLabel": "6.5 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2018-question-paper-paper-2.pdf",
+              "filename": "2018-question-paper-paper-2.pdf",
+              "label": "Paper 2",
+              "title": "2018 Question Paper Paper 2",
+              "size": 9540390,
+              "sizeLabel": "9.1 MB",
+              "pages": 47,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2016",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2016-question-paper-paper-1.pdf",
+              "filename": "2016-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2016 Question Paper Paper 1",
+              "size": 5244023,
+              "sizeLabel": "5.0 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2016-question-paper-paper-2-social-studies.pdf",
+              "filename": "2016-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2016 Question Paper Paper 2 Social Studies",
+              "size": 8543785,
+              "sizeLabel": "8.1 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2016-question-paper-paper-2.pdf",
+              "filename": "2016-question-paper-paper-2.pdf",
+              "label": "Paper 2",
+              "title": "2016 Question Paper Paper 2",
+              "size": 11951893,
+              "sizeLabel": "11.4 MB",
+              "pages": 30,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2015",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2015-question-paper-paper-2-social-studies.pdf",
+              "filename": "2015-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2015 Question Paper Paper 2 Social Studies",
+              "size": 6156765,
+              "sizeLabel": "5.9 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2014",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2014-question-paper-paper-1.pdf",
+              "filename": "2014-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2014 Question Paper Paper 1",
+              "size": 5224497,
+              "sizeLabel": "5.0 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2014-question-paper-paper-2-math-science.pdf",
+              "filename": "2014-question-paper-paper-2-math-science.pdf",
+              "label": "Paper 2, Math Science",
+              "title": "2014 Question Paper Paper 2 Math Science",
+              "size": 4321263,
+              "sizeLabel": "4.1 MB",
+              "pages": 8,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2014-question-paper-paper-2-social-studies.pdf",
+              "filename": "2014-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2014 Question Paper Paper 2 Social Studies",
+              "size": 7165667,
+              "sizeLabel": "6.8 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2013",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2013-question-paper-paper-1.pdf",
+              "filename": "2013-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2013 Question Paper Paper 1",
+              "size": 3591183,
+              "sizeLabel": "3.4 MB",
+              "pages": 16,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2013-question-paper-paper-2-math-science-dec.pdf",
+              "filename": "2013-question-paper-paper-2-math-science-dec.pdf",
+              "label": "Paper 2, Math Science Dec",
+              "title": "2013 Question Paper Paper 2 Math Science Dec",
+              "size": 4763643,
+              "sizeLabel": "4.5 MB",
+              "pages": 9,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2013-question-paper-paper-2-social-studies-dec.pdf",
+              "filename": "2013-question-paper-paper-2-social-studies-dec.pdf",
+              "label": "Paper 2, Social Studies Dec",
+              "title": "2013 Question Paper Paper 2 Social Studies Dec",
+              "size": 7767880,
+              "sizeLabel": "7.4 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2013-question-paper-paper-2-social-studies-jun.pdf",
+              "filename": "2013-question-paper-paper-2-social-studies-jun.pdf",
+              "label": "Paper 2, Social Studies Jun",
+              "title": "2013 Question Paper Paper 2 Social Studies Jun",
+              "size": 7610884,
+              "sizeLabel": "7.3 MB",
+              "pages": 15,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2011",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/pstet/2011-question-paper-paper-1.pdf",
+              "filename": "2011-question-paper-paper-1.pdf",
+              "label": "Paper 1",
+              "title": "2011 Question Paper Paper 1",
+              "size": 3777534,
+              "sizeLabel": "3.6 MB",
+              "pages": 14,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/pstet/2011-question-paper-paper-2-social-studies.pdf",
+              "filename": "2011-question-paper-paper-2-social-studies.pdf",
+              "label": "Paper 2, Social Studies",
+              "title": "2011 Question Paper Paper 2 Social Studies",
+              "size": 6151437,
+              "sizeLabel": "5.9 MB",
+              "pages": 13,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 11,
+      "count": 32,
+      "keys": 2,
+      "keyFiles": 14,
+      "file": "pyq/pstet/index.html",
+      "url": "https://houseofaspirants.in/pyq/pstet",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-haryana-high-court-clerk",
+      "slug": "punjab-haryana-high-court-clerk",
+      "title": "Punjab & Haryana High Court Clerk Previous Year Papers",
+      "organization": "Punjab and Haryana High Court",
+      "exam": "punjab-haryana-high-court-clerk",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Punjab & Haryana High Court Clerk previous year question papers, year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab & Haryana High Court Clerk paper we have, as released by the Punjab and Haryana High Court. Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2012: Question paper\n- 2017: Question paper\n- 2019: Question paper\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਹਾਈ ਕੋਰਟ ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2012: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n- 2017: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n- 2019: ਪ੍ਰਸ਼ਨ ਪੱਤਰ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2019",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-haryana-high-court-clerk/2019-question-paper.pdf",
+              "filename": "2019-question-paper.pdf",
+              "label": "",
+              "title": "2019 Question Paper",
+              "size": 658202,
+              "sizeLabel": "642 KB",
+              "pages": 10,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2017",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-haryana-high-court-clerk/2017-question-paper.pdf",
+              "filename": "2017-question-paper.pdf",
+              "label": "",
+              "title": "2017 Question Paper",
+              "size": 1185145,
+              "sizeLabel": "1.1 MB",
+              "pages": 8,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
+        {
+          "year": "2012",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-haryana-high-court-clerk/2012-question-paper.pdf",
+              "filename": "2012-question-paper.pdf",
+              "label": "",
+              "title": "2012 Question Paper",
+              "size": 884004,
+              "sizeLabel": "863 KB",
+              "pages": 14,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 3,
+      "count": 3,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/punjab-haryana-high-court-clerk/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-haryana-high-court-clerk",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-ett-teacher",
+      "slug": "punjab-ett-teacher",
+      "title": "Punjab ETT Teacher Previous Year Papers",
+      "organization": "Punjab Education Department",
+      "exam": "punjab-ett-teacher",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free and complete Punjab ETT Teacher previous year question papers, year by year with official answer keys where released - download each PDF free.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab ETT Teacher paper we have, as released by the Punjab School Education Department and its recruitment bodies. Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question papers (Paper 1, Punjabi, 5 Mar / Paper 2, 5 Mar); official answer keys (Paper 1, Final / Paper 1, Provisional / Paper 2, Final / Paper 2, Provisional)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ETT ਅਧਿਆਪਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਵਿਭਾਗ ਅਤੇ ਉਸ ਦੀਆਂ ਭਰਤੀ ਸੰਸਥਾਵਾਂ ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1, Punjabi, 5 Mar / Paper 2, 5 Mar); official answer keys (Paper 1, Final / Paper 1, Provisional / Paper 2, Final / Paper 2, Provisional)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-question-paper-paper-1-punjabi-5-mar.pdf",
+              "filename": "2023-question-paper-paper-1-punjabi-5-mar.pdf",
+              "label": "Paper 1, Punjabi, 5 Mar",
+              "title": "2023 Question Paper Paper 1 Punjabi 5 Mar",
+              "size": 1896280,
+              "sizeLabel": "1.8 MB",
+              "pages": 11,
+              "language": "pa",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-question-paper-paper-2-5-mar.pdf",
+              "filename": "2023-question-paper-paper-2-5-mar.pdf",
+              "label": "Paper 2, 5 Mar",
+              "title": "2023 Question Paper Paper 2 5 Mar",
+              "size": 3327225,
+              "sizeLabel": "3.2 MB",
+              "pages": 11,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/punjab-ett-teacher/2023-official-answer-key-paper-1-final.pdf",
+            "filename": "2023-official-answer-key-paper-1-final.pdf",
+            "label": "Paper 1, Final",
+            "title": "2023 Official Answer Key Paper 1 Final",
+            "size": 77876,
+            "sizeLabel": "76 KB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-official-answer-key-paper-1-final.pdf",
+              "filename": "2023-official-answer-key-paper-1-final.pdf",
+              "label": "Paper 1, Final",
+              "title": "2023 Official Answer Key Paper 1 Final",
+              "size": 77876,
+              "sizeLabel": "76 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-official-answer-key-paper-1-provisional.pdf",
+              "filename": "2023-official-answer-key-paper-1-provisional.pdf",
+              "label": "Paper 1, Provisional",
+              "title": "2023 Official Answer Key Paper 1 Provisional",
+              "size": 19117,
+              "sizeLabel": "18 KB",
+              "pages": 3,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-official-answer-key-paper-2-final.pdf",
+              "filename": "2023-official-answer-key-paper-2-final.pdf",
+              "label": "Paper 2, Final",
+              "title": "2023 Official Answer Key Paper 2 Final",
+              "size": 126127,
+              "sizeLabel": "123 KB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-ett-teacher/2023-official-answer-key-paper-2-provisional.pdf",
+              "filename": "2023-official-answer-key-paper-2-provisional.pdf",
+              "label": "Paper 2, Provisional",
+              "title": "2023 Official Answer Key Paper 2 Provisional",
+              "size": 19318,
+              "sizeLabel": "18 KB",
+              "pages": 3,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 2,
+      "keys": 1,
+      "keyFiles": 4,
+      "file": "pyq/punjab-ett-teacher/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-ett-teacher",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-master-cadre",
+      "slug": "punjab-master-cadre",
+      "title": "Punjab Master Cadre Previous Year Papers",
+      "organization": "Punjab Education Department",
+      "exam": "punjab-master-cadre",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free and complete Punjab Master Cadre previous year question papers, year by year with official answer keys where released - download each PDF free.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab Master Cadre paper we have, as released by the Punjab School Education Department and its recruitment bodies. Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2022: Question papers (Mathematics / Science, Set A / Science, Set B); official answer keys (Hindi Revised / Mathematics Revised / Punjabi Revised / Science Revised / Social Science Revised)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਮਾਸਟਰ ਕਾਡਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਸਕੂਲ ਸਿੱਖਿਆ ਵਿਭਾਗ ਅਤੇ ਉਸ ਦੀਆਂ ਭਰਤੀ ਸੰਸਥਾਵਾਂ ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Mathematics / Science, Set A / Science, Set B); official answer keys (Hindi Revised / Mathematics Revised / Punjabi Revised / Science Revised / Social Science Revised)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2022",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-question-paper-mathematics.pdf",
+              "filename": "2022-question-paper-mathematics.pdf",
+              "label": "Mathematics",
+              "title": "2022 Question Paper Mathematics",
+              "size": 5542824,
+              "sizeLabel": "5.3 MB",
+              "pages": 25,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-question-paper-science-set-a.pdf",
+              "filename": "2022-question-paper-science-set-a.pdf",
+              "label": "Science, Set A",
+              "title": "2022 Question Paper Science Set a",
+              "size": 7883677,
+              "sizeLabel": "7.5 MB",
+              "pages": 39,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-question-paper-science-set-b.pdf",
+              "filename": "2022-question-paper-science-set-b.pdf",
+              "label": "Science, Set B",
+              "title": "2022 Question Paper Science Set B",
+              "size": 5532351,
+              "sizeLabel": "5.3 MB",
+              "pages": 37,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": {
+            "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-hindi-revised.pdf",
+            "filename": "2022-official-answer-key-hindi-revised.pdf",
+            "label": "Hindi Revised",
+            "title": "2022 Official Answer Key Hindi Revised",
+            "size": 1629542,
+            "sizeLabel": "1.6 MB",
+            "pages": 4,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-hindi-revised.pdf",
+              "filename": "2022-official-answer-key-hindi-revised.pdf",
+              "label": "Hindi Revised",
+              "title": "2022 Official Answer Key Hindi Revised",
+              "size": 1629542,
+              "sizeLabel": "1.6 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-mathematics-revised.pdf",
+              "filename": "2022-official-answer-key-mathematics-revised.pdf",
+              "label": "Mathematics Revised",
+              "title": "2022 Official Answer Key Mathematics Revised",
+              "size": 1637924,
+              "sizeLabel": "1.6 MB",
+              "pages": 4,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-punjabi-revised.pdf",
+              "filename": "2022-official-answer-key-punjabi-revised.pdf",
+              "label": "Punjabi Revised",
+              "title": "2022 Official Answer Key Punjabi Revised",
+              "size": 1892221,
+              "sizeLabel": "1.8 MB",
+              "pages": 16,
+              "language": "pa",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-science-revised.pdf",
+              "filename": "2022-official-answer-key-science-revised.pdf",
+              "label": "Science Revised",
+              "title": "2022 Official Answer Key Science Revised",
+              "size": 5070396,
+              "sizeLabel": "4.8 MB",
+              "pages": 20,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-master-cadre/2022-official-answer-key-social-science-revised.pdf",
+              "filename": "2022-official-answer-key-social-science-revised.pdf",
+              "label": "Social Science Revised",
+              "title": "2022 Official Answer Key Social Science Revised",
+              "size": 2307499,
+              "sizeLabel": "2.2 MB",
+              "pages": 16,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 3,
+      "keys": 1,
+      "keyFiles": 5,
+      "file": "pyq/punjab-master-cadre/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-master-cadre",
       "hub": "previous-year-questions.html"
     },
     {
@@ -1810,8 +4048,8 @@
               "filename": "2016-question-paper-oct.pdf",
               "label": "Oct",
               "title": "2016 Question Paper Oct",
-              "size": 2623952,
-              "sizeLabel": "2.5 MB",
+              "size": 2567628,
+              "sizeLabel": "2.4 MB",
               "pages": 31,
               "language": "en",
               "published": "2026-10-02",
@@ -1844,8 +4082,8 @@
       ],
       "description": "Free Punjab Patwari previous year question papers from PSSSB, sorted year by year with official answer keys where released - download each PDF.",
       "overview": {
-        "en": "## What is on this page\n\nEvery Punjab Patwari paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2016: papers of 24 January 2016 and 20 November 2016\n- 2021: Paper 1 (8 August 2021) and Paper 2 (5 September 2021)\n- 2023: Patwari and other posts joint exam, with the Set A answer key\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
-        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2016: 24 ਜਨਵਰੀ 2016 ਅਤੇ 20 ਨਵੰਬਰ 2016 ਦੇ ਪੇਪਰ\n- 2021: ਪੇਪਰ-1 (8 ਅਗਸਤ 2021) ਅਤੇ ਪੇਪਰ-2 (5 ਸਤੰਬਰ 2021)\n- 2023: ਪਟਵਾਰੀ ਅਤੇ ਹੋਰ ਅਸਾਮੀਆਂ ਦਾ ਸਾਂਝਾ ਪੇਪਰ, Set A answer key ਸਮੇਤ\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+        "en": "## What is on this page\n\nEvery Punjab Patwari paper we have, as released by the Punjab Subordinate Services Selection Board (PSSSB). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2016: papers of 24 January 2016 and 20 November 2016\n- 2021: Question papers (Paper 1, 8 Aug / Paper 2, 5 Sep); official answer key (Final)\n- 2023: Question paper (Joint Exam); official answer keys (Set A / Set B / Set C / Set D)\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics the board really asks.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਅਧੀਨ ਸੇਵਾਵਾਂ ਚੋਣ ਬੋਰਡ ਪੰਜਾਬ (PSSSB) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2016: 24 ਜਨਵਰੀ 2016 ਅਤੇ 20 ਨਵੰਬਰ 2016 ਦੇ ਪੇਪਰ\n- 2021: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Paper 1, 8 Aug / Paper 2, 5 Sep); official answer key (Final)\n- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Joint Exam); official answer keys (Set A / Set B / Set C / Set D)\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਬੋਰਡ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛਦਾ ਹੈ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
       },
       "papers": [
         {
@@ -1856,12 +4094,12 @@
               "filename": "2023-question-paper-joint-exam.pdf",
               "label": "Joint Exam",
               "title": "2023 Question Paper Joint Exam",
-              "size": 2798750,
+              "size": 2855373,
               "sizeLabel": "2.7 MB",
-              "pages": 0,
+              "pages": 36,
               "language": "en",
               "published": "2026-10-02",
-              "modified": "2026-10-02"
+              "modified": "2026-11-12"
             }
           ],
           "key": {
@@ -1888,6 +4126,42 @@
               "language": "en",
               "published": "2026-10-02",
               "modified": "2026-10-02"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-b.pdf",
+              "filename": "2023-official-answer-key-set-b.pdf",
+              "label": "Set B",
+              "title": "2023 Official Answer Key Set B",
+              "size": 464031,
+              "sizeLabel": "453 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-c.pdf",
+              "filename": "2023-official-answer-key-set-c.pdf",
+              "label": "Set C",
+              "title": "2023 Official Answer Key Set C",
+              "size": 463933,
+              "sizeLabel": "453 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2023-official-answer-key-set-d.pdf",
+              "filename": "2023-official-answer-key-set-d.pdf",
+              "label": "Set D",
+              "title": "2023 Official Answer Key Set D",
+              "size": 464040,
+              "sizeLabel": "453 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
             }
           ]
         },
@@ -1919,8 +4193,32 @@
               "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/psssb-patwari/2021-official-answer-key-final.pdf",
+            "filename": "2021-official-answer-key-final.pdf",
+            "label": "Final",
+            "title": "2021 Official Answer Key Final",
+            "size": 879370,
+            "sizeLabel": "858 KB",
+            "pages": 5,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/psssb-patwari/2021-official-answer-key-final.pdf",
+              "filename": "2021-official-answer-key-final.pdf",
+              "label": "Final",
+              "title": "2021 Official Answer Key Final",
+              "size": 879370,
+              "sizeLabel": "858 KB",
+              "pages": 5,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         },
         {
           "year": "2016",
@@ -1957,10 +4255,56 @@
       "others": [],
       "years": 3,
       "count": 5,
-      "keys": 1,
-      "keyFiles": 1,
+      "keys": 2,
+      "keyFiles": 5,
       "file": "pyq/psssb-patwari/index.html",
       "url": "https://houseofaspirants.in/pyq/psssb-patwari",
+      "hub": "previous-year-questions.html"
+    },
+    {
+      "id": "punjab-pcs-judicial",
+      "slug": "punjab-pcs-judicial",
+      "title": "Punjab PCS (Judicial) Previous Year Papers",
+      "organization": "PPSC",
+      "exam": "punjab-pcs-judicial",
+      "category": "Punjab state exams",
+      "languages": [
+        "en",
+        "pa"
+      ],
+      "description": "Free Punjab PCS (Judicial) previous year question papers from PPSC, sorted year by year with official answer keys where released - download each PDF.",
+      "overview": {
+        "en": "## What is on this page\n\nEvery Punjab PCS (Judicial) paper we have, as released by the Punjab Public Service Commission (PPSC). Each row is one year: the question paper, and the official answer key beside it where one was released. Where no key was released, the cell says so.\n\n## Papers in this folder\n\n- 2023: Question paper of the PCS (Judicial Branch) preliminary exam, with the proposed answer key printed alongside\n\n## How to use these papers\n\n1. Solve the first paper without a clock, to see which topics are really asked.\n2. Attempt the next one strictly timed, and check it only against the official key.\n3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.",
+        "pa": "## ਇਸ ਪੰਨੇ ਵਿੱਚ ਕੀ ਹੈ\n\nਪੰਜਾਬ PCS (ਜੁਡੀਸ਼ੀਅਲ) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ ਪੇਪਰ, ਜਿਵੇਂ ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨੇ ਜਾਰੀ ਕੀਤੇ। ਹਰ ਲਾਈਨ ਇੱਕ ਸਾਲ ਦੀ ਹੈ: ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਅਤੇ ਜਿੱਥੇ ਜਾਰੀ ਹੋਈ ਉੱਥੇ ਨਾਲ official answer key। ਜਿੱਥੇ key ਜਾਰੀ ਨਹੀਂ ਹੋਈ, ਉੱਥੇ ਇਹ ਸਾਫ਼ ਲਿਖਿਆ ਹੈ।\n\n## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ\n\n- 2023: PCS (ਜੁਡੀਸ਼ੀਅਲ ਬ੍ਰਾਂਚ) ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ ਦਾ ਪ੍ਰਸ਼ਨ ਪੱਤਰ, ਨਾਲ ਹੀ proposed answer key\n\n## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ\n\n1. ਪਹਿਲਾ ਪੇਪਰ ਬਿਨਾਂ ਸਮੇਂ ਦੀ ਪਾਬੰਦੀ ਹੱਲ ਕਰੋ, ਤਾਂ ਜੋ ਪਤਾ ਲੱਗੇ ਕਿ ਅਸਲ ਵਿੱਚ ਕਿਹੜੇ ਵਿਸ਼ੇ ਪੁੱਛੇ ਜਾਂਦੇ ਹਨ।\n2. ਅਗਲਾ ਪੇਪਰ ਪੂਰੇ ਸਮੇਂ ਨਾਲ ਕਰੋ, ਅਤੇ ਸਿਰਫ਼ official key ਨਾਲ ਮਿਲਾਓ।\n3. ਹਰ ਗ਼ਲਤੀ ਨੂੰ ਸਮਝ ਦੀ ਘਾਟ ਜਾਂ ਰਫ਼ਤਾਰ ਦੀ ਘਾਟ ਵਜੋਂ ਲਿਖੋ, ਅਤੇ ਉਹ ਵਿਸ਼ੇ ਸਾਡੇ ਮੁਫ਼ਤ topic-wise quizzes ਨਾਲ ਦੁਹਰਾਓ।"
+      },
+      "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-pcs-judicial/2023-question-paper.pdf",
+              "filename": "2023-question-paper.pdf",
+              "label": "",
+              "title": "2023 Question Paper",
+              "size": 3674824,
+              "sizeLabel": "3.5 MB",
+              "pages": 22,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        }
+      ],
+      "others": [],
+      "years": 1,
+      "count": 1,
+      "keys": 0,
+      "keyFiles": 0,
+      "file": "pyq/punjab-pcs-judicial/index.html",
+      "url": "https://houseofaspirants.in/pyq/punjab-pcs-judicial",
       "hub": "previous-year-questions.html"
     },
     {
@@ -1978,6 +4322,25 @@
         "en": "## What is on this page\n\nEvery Punjab Police Constable question paper published here, one row per year,\nwith the official answer key beside it and a download for each file. The\nanswer-key cell reads *Not published* until the conducting body releases one -\nit is never reconstructed from memory, and a paper appears as soon as it\nexists rather than waiting for its key.\n\n## About the exam\n\nConstable is the highest-volume recruitment on the Punjab list, which is why\nthe papers below are worth more than another mock: they are the only record of\nwhat the board actually asked. Build the base first - Punjab GK and current\naffairs - then drill reasoning until speed is automatic. Attempt the first\npaper after one full pass of the syllabus, untimed; the second strictly timed."
       },
       "papers": [
+        {
+          "year": "2023",
+          "papers": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable/2023-question-paper-all-shifts.pdf",
+              "filename": "2023-question-paper-all-shifts.pdf",
+              "label": "All Shifts",
+              "title": "2023 Question Paper All Shifts",
+              "size": 19546433,
+              "sizeLabel": "18.6 MB",
+              "pages": 1394,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ],
+          "key": null,
+          "keys": []
+        },
         {
           "year": "2021",
           "papers": [
@@ -1999,8 +4362,8 @@
         }
       ],
       "others": [],
-      "years": 1,
-      "count": 1,
+      "years": 2,
+      "count": 2,
       "keys": 0,
       "keyFiles": 0,
       "file": "pyq/punjab-police-constable/index.html",
@@ -2040,8 +4403,104 @@
               "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-1-series-ba.pdf",
+            "filename": "2022-official-answer-key-paper-1-series-ba.pdf",
+            "label": "Paper 1, Series BA",
+            "title": "2022 Official Answer Key Paper 1 Series Ba",
+            "size": 420978,
+            "sizeLabel": "411 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-1-series-ba.pdf",
+              "filename": "2022-official-answer-key-paper-1-series-ba.pdf",
+              "label": "Paper 1, Series BA",
+              "title": "2022 Official Answer Key Paper 1 Series Ba",
+              "size": 420978,
+              "sizeLabel": "411 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-1-series-bb.pdf",
+              "filename": "2022-official-answer-key-paper-1-series-bb.pdf",
+              "label": "Paper 1, Series BB",
+              "title": "2022 Official Answer Key Paper 1 Series Bb",
+              "size": 420981,
+              "sizeLabel": "411 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-1-series-bc.pdf",
+              "filename": "2022-official-answer-key-paper-1-series-bc.pdf",
+              "label": "Paper 1, Series BC",
+              "title": "2022 Official Answer Key Paper 1 Series Bc",
+              "size": 423580,
+              "sizeLabel": "413 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-1-series-bd.pdf",
+              "filename": "2022-official-answer-key-paper-1-series-bd.pdf",
+              "label": "Paper 1, Series BD",
+              "title": "2022 Official Answer Key Paper 1 Series Bd",
+              "size": 423835,
+              "sizeLabel": "413 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-2-series-da.pdf",
+              "filename": "2022-official-answer-key-paper-2-series-da.pdf",
+              "label": "Paper 2, Series DA",
+              "title": "2022 Official Answer Key Paper 2 Series Da",
+              "size": 426544,
+              "sizeLabel": "416 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-2-series-db.pdf",
+              "filename": "2022-official-answer-key-paper-2-series-db.pdf",
+              "label": "Paper 2, Series DB",
+              "title": "2022 Official Answer Key Paper 2 Series Db",
+              "size": 424422,
+              "sizeLabel": "414 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-head-constable/2022-official-answer-key-paper-2-series-dc.pdf",
+              "filename": "2022-official-answer-key-paper-2-series-dc.pdf",
+              "label": "Paper 2, Series DC",
+              "title": "2022 Official Answer Key Paper 2 Series Dc",
+              "size": 425309,
+              "sizeLabel": "415 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         },
         {
           "year": "2021",
@@ -2066,8 +4525,8 @@
       "others": [],
       "years": 2,
       "count": 2,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 7,
       "file": "pyq/punjab-police-head-constable/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-head-constable",
       "hub": "previous-year-questions.html"
@@ -2117,8 +4576,68 @@
               "modified": "2026-11-12"
             }
           ],
-          "key": null,
-          "keys": []
+          "key": {
+            "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-official-answer-key-series-aa.pdf",
+            "filename": "2022-official-answer-key-series-aa.pdf",
+            "label": "Series AA",
+            "title": "2022 Official Answer Key Series Aa",
+            "size": 746164,
+            "sizeLabel": "728 KB",
+            "pages": 1,
+            "language": "en",
+            "published": "2026-11-12",
+            "modified": "2026-11-12"
+          },
+          "keys": [
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-official-answer-key-series-aa.pdf",
+              "filename": "2022-official-answer-key-series-aa.pdf",
+              "label": "Series AA",
+              "title": "2022 Official Answer Key Series Aa",
+              "size": 746164,
+              "sizeLabel": "728 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-official-answer-key-series-ab.pdf",
+              "filename": "2022-official-answer-key-series-ab.pdf",
+              "label": "Series AB",
+              "title": "2022 Official Answer Key Series Ab",
+              "size": 814755,
+              "sizeLabel": "795 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-official-answer-key-series-ac.pdf",
+              "filename": "2022-official-answer-key-series-ac.pdf",
+              "label": "Series AC",
+              "title": "2022 Official Answer Key Series Ac",
+              "size": 812823,
+              "sizeLabel": "793 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            },
+            {
+              "path": "content/previous-year-questions/punjab-police-constable-intelligence-investigation/2022-official-answer-key-series-ad.pdf",
+              "filename": "2022-official-answer-key-series-ad.pdf",
+              "label": "Series AD",
+              "title": "2022 Official Answer Key Series Ad",
+              "size": 745928,
+              "sizeLabel": "728 KB",
+              "pages": 1,
+              "language": "en",
+              "published": "2026-11-12",
+              "modified": "2026-11-12"
+            }
+          ]
         },
         {
           "year": "2021",
@@ -2143,8 +4662,8 @@
       "others": [],
       "years": 2,
       "count": 3,
-      "keys": 0,
-      "keyFiles": 0,
+      "keys": 1,
+      "keyFiles": 4,
       "file": "pyq/punjab-police-constable-intelligence-investigation/index.html",
       "url": "https://houseofaspirants.in/pyq/punjab-police-constable-intelligence-investigation",
       "hub": "previous-year-questions.html"
@@ -2172,8 +4691,8 @@
               "filename": "2023-question-paper.pdf",
               "label": "",
               "title": "2023 Question Paper",
-              "size": 26865251,
-              "sizeLabel": "25.6 MB",
+              "size": 26423811,
+              "sizeLabel": "25.2 MB",
               "pages": 1181,
               "language": "en",
               "published": "2026-10-01",

@@ -4,7 +4,7 @@ Every PSSSB Clerk cum Data Entry Operator paper we have, as released by the Punj
 
 ## Papers in this folder
 
-- 2023: paper of 25 June 2023
+- 2023: Question paper (25 Jun); official answer keys (Final / First)
 
 ## How to use these papers
 

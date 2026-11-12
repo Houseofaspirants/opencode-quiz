@@ -6,6 +6,7 @@ Every PSSSB Excise & Taxation Inspector paper we have, as released by the Punjab
 
 - 2021: paper of 3 October 2021, with the final answer key (Advt. 09 of 2021)
 - 2023: paper of 21 May 2023 (Set C), with the provisional answer key
+- 2026: Question paper (31 May); official answer key (Provisional)
 
 ## How to use these papers
 

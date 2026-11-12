@@ -4,7 +4,7 @@ PSSSB ਵਣ ਗਾਰਡ (Forest Guard) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜ
 
 ## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ
 
-- 2022: 13 ਨਵੰਬਰ 2022 ਦਾ ਪੇਪਰ (Set A), Set A ਅਤੇ B ਦੀਆਂ answer keys ਸਮੇਤ
+- 2022: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Set A); official answer keys (Set A, Revised / Set A / Set B, Revised / Set C, Revised / Set D, Revised)
 - Forest Guard, Lab Attendant, Library Restorer ਅਤੇ Assistant Treasurer ਦਾ ਇੱਕ ਪੁਰਾਣਾ ਸਾਂਝਾ ਪੇਪਰ (ਪੇਪਰ 'ਤੇ ਸਾਲ ਨਹੀਂ ਛਪਿਆ)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ

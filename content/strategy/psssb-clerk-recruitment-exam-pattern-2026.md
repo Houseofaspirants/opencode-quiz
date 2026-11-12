@@ -2,6 +2,7 @@
 title: PSSSB Clerk 2026 Recruitment, Eligibility & Exam Pattern
 description: PSSSB Clerk 2026 (Advt 02/2026) from the official notification - eligibility, age, fee, Rs 19,900 pay, Punjabi test, 1/4 negative marking and type test.
 published: 2026-10-03
+updated: 2026-11-12
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -85,7 +86,7 @@ The fee is not refunded.
 
 - **Part B marking:** 1 mark per question, and **1/4 mark is cut for every wrong answer**.
 - Failing Part A rules you out, whatever your Part B score.
-- The board said the detailed syllabus and pattern would be put on its website - check it there before the exam.
+- The board's **final plan of written examination**: 2 hours 30 minutes on an OMR sheet; Part A has **50 Punjabi questions** (no negative marking, at least 25 needed) and Part B has **100 questions**. Part B is checked only if you clear Part A. The full syllabus is below.
 
 **2. Type test (qualifying)**
 
@@ -96,6 +97,21 @@ The fee is not refunded.
 **3. Counselling** - document verification, then names are recommended to departments from the common merit list.
 
 **Ties:** the older candidate first; then higher percentage in the required degree; then higher matric marks.
+
+## Written exam syllabus (final plan, Advt. 02/2026)
+
+**Part A - Punjabi (qualifying, 50 questions):** lives and works of Sri Guru Nanak Dev Ji, Guru Angad Dev Ji, Guru Ramdas Ji, Guru Arjan Dev Ji, Guru Tegh Bahadur Ji and Guru Gobind Singh Ji; antonyms and synonyms; idioms and proverbs; kinds of words; prefixes and suffixes; number and gender; punctuation; correcting words and sentences; Punjabi forms of English words; numbers, months and days in Punjabi; and questions on Punjabi language, Punjab's history and Punjab's culture.
+
+**Part B - weightage (approx., out of 100):**
+
+| Section | Marks | What it covers |
+| --- | --- | --- |
+| General Knowledge & Current Affairs | 25 | Polity, environment, current affairs, science & technology, economy, Indian history with focus on the freedom struggle, sports, cinema & literature, geography |
+| Logical Reasoning & Mental Ability | 25 | Reasoning and mental ability (17), basic numerical skills and percentages (4), data analysis - charts, tables, spreadsheets (4) |
+| Punjab History & Culture | 17 | Physical features and ancient history, social, religious and economic life, language, literature and arts, Afghan/Mughal period, Bhakti and Sufi movements, Sikh Gurus and saints, Adi Granth, Sikh rulers, freedom movements of Punjab |
+| Punjabi | 13 | Correct usage, spelling, prefixes/suffixes, synonyms/antonyms, nouns, pronouns and verbs, gender and number, idioms and proverbs, English-to-Punjabi translation, one-word substitution |
+| English | 12 | Basic grammar, subject-verb, adjectives and adverbs, synonyms, antonyms, one-word substitution, fill in the blanks, sentence correction, idioms, spellings, articles, prepositions, narration, voice |
+| ICT | 8 | Computer basics, network and internet, Word, Excel/spreadsheets and PowerPoint |
 
 ## Last-week plan before the exam
 
@@ -119,3 +135,5 @@ The fee is not refunded.
 Read the full guide above first, then keep the original notification for reference.
 
 **[Download the PSSSB Clerk notification, Advt. No. 02 of 2026 (PDF, 12 pages, Punjabi)](assets/pdfs/psssb-clerk-notification-2026.pdf)**
+
+**[Download the official exam plan and syllabus, Advt. 02/2026 (PDF, 3 pages)](assets/pdfs/psssb-clerk-syllabus-2026.pdf)**

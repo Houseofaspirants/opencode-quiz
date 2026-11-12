@@ -4,7 +4,7 @@ PSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਪੰਜਾਬੀ qualifying ਦੇ
 
 ## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ
 
-- 2023: 11 ਮਾਰਚ 2023 ਦਾ ਪੰਜਾਬੀ qualifying ਪੇਪਰ
+- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (Punjabi Qualifying); official answer key (Punjabi Qualifying)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

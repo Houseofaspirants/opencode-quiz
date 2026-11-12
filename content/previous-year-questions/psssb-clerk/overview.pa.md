@@ -5,6 +5,9 @@ PSSSB ਕਲਰਕ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰੇ �
 ## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ
 
 - 2021: ਸਵੇਰ ਅਤੇ ਸ਼ਾਮ ਦੀ ਸ਼ਿਫ਼ਟ ਦੇ ਪੇਪਰ (11-12 ਦਸੰਬਰ 2021), revised official answer key ਸਮੇਤ
+- 2023: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (6 Aug); official answer key (Provisional, 6 Aug)
+- 2024: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (22 Dec)
+- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (18 Jan); official answer keys (Final, 18 Jan / Provisional, 11 Oct, Set A / Provisional, 11 Oct, Set B / Provisional, 11 Oct, Set C / Provisional, 11 Oct, Set D / Provisional, 18 Jan)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

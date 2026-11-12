@@ -4,7 +4,7 @@ Every PSSSB Steno-Typist Punjabi Qualifying Paper paper we have, as released by 
 
 ## Papers in this folder
 
-- 2023: Punjabi qualifying paper of 11 March 2023
+- 2023: Question paper (Punjabi Qualifying); official answer key (Punjabi Qualifying)
 
 ## How to use these papers
 

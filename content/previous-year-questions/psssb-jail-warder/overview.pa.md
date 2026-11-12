@@ -5,6 +5,7 @@ PSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂ
 ## ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ
 
 - 2021: 27, 28 ਅਤੇ 29 ਅਗਸਤ 2021 ਦੀਆਂ ਸਾਰੀਆਂ ਛੇ ਸ਼ਿਫ਼ਟਾਂ ਦੇ ਪੇਪਰ
+- 2026: official answer keys (Final, 11 Jan / Final, 26 Jul, Set A / Final, 26 Jul, Set B / Final, 26 Jul, Set C / Final, 26 Jul, Set D / Provisional, 26 Jul)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

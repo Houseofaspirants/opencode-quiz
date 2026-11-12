@@ -4,7 +4,7 @@ Every PSSSB Forest Guard paper we have, as released by the Punjab Subordinate Se
 
 ## Papers in this folder
 
-- 2022: paper of 13 November 2022 (Set A), with answer keys for Sets A and B
+- 2022: Question paper (Set A); official answer keys (Set A, Revised / Set A / Set B, Revised / Set C, Revised / Set D, Revised)
 - An older combined paper for Forest Guard, Lab Attendant, Library Restorer and Assistant Treasurer (year not printed on the paper)
 
 ## How to use these papers

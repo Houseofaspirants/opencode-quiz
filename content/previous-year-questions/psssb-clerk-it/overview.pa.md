@@ -6,6 +6,7 @@ PSSSB ਕਲਰਕ (IT) ਦੇ ਸਾਡੇ ਕੋਲ ਮੌਜੂਦ ਸਾਰ�
 
 - 2021: 11 ਦਸੰਬਰ 2021 ਦਾ ਪੇਪਰ, revised official answer key ਸਮੇਤ (ਸਾਰੀਆਂ ਕਲਰਕ ਅਸਾਮੀਆਂ)
 - 2022: 22 ਅਕਤੂਬਰ 2022 ਦਾ ਪੇਪਰ, Set A, B, C ਅਤੇ D ਦੀਆਂ final answer keys ਸਮੇਤ
+- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (28 Feb); official answer key (Provisional)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

@@ -5,8 +5,8 @@ Every Punjab Patwari paper we have, as released by the Punjab Subordinate Servic
 ## Papers in this folder
 
 - 2016: papers of 24 January 2016 and 20 November 2016
-- 2021: Paper 1 (8 August 2021) and Paper 2 (5 September 2021)
-- 2023: Patwari and other posts joint exam, with the Set A answer key
+- 2021: Question papers (Paper 1, 8 Aug / Paper 2, 5 Sep); official answer key (Final)
+- 2023: Question paper (Joint Exam); official answer keys (Set A / Set B / Set C / Set D)
 
 ## How to use these papers
 

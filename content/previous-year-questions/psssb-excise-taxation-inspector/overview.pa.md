@@ -6,6 +6,7 @@ PSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਦੇ ਸਾ
 
 - 2021: 3 ਅਕਤੂਬਰ 2021 ਦਾ ਪੇਪਰ, final answer key ਸਮੇਤ (Advt. 09 of 2021)
 - 2023: 21 ਮਈ 2023 ਦਾ ਪੇਪਰ (Set C), provisional answer key ਸਮੇਤ
+- 2026: ਪ੍ਰਸ਼ਨ ਪੱਤਰ (31 May); official answer key (Provisional)
 
 ## ਇਹਨਾਂ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

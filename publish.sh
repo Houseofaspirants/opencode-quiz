@@ -79,6 +79,9 @@ PY
 
 # Cloudflare Workers: select dist/ and translate vercel.json (redirects,
 # headers) into cloudflare/redirects.json, dist/_headers and wrangler.json.
+# build_cf.mjs copies only `git ls-files`, so stage first: a brand-new page
+# would otherwise be missing from dist/ and every link to it would 404.
+git add -A
 node scripts/build_cf.mjs
 
 git add -A

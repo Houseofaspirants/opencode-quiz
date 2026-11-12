@@ -6,6 +6,7 @@ Every PSSSB Clerk IT paper we have, as released by the Punjab Subordinate Servic
 
 - 2021: paper of 11 December 2021, with the revised official answer key (all clerk posts)
 - 2022: paper of 22 October 2022, with final answer keys for Sets A, B, C and D
+- 2026: Question paper (28 Feb); official answer key (Provisional)
 
 ## How to use these papers
 

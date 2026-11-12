@@ -4,7 +4,7 @@ Every PSSSB Clerk Legal paper we have, as released by the Punjab Subordinate Ser
 
 ## Papers in this folder
 
-- 2023: question paper
+- 2023: Question papers (Set A, 8 Jul / main); official answer keys (Final / First)
 
 ## How to use these papers
 
