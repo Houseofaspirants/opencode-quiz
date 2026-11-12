@@ -76,7 +76,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from urllib.parse import quote
+from urllib.parse import quote, unquote
 
 import study_material            # data/study-manifest.json (Study's subject list)
 import proof_documents           # data/proof-manifest.json (the Blueprint's scans)
@@ -3106,10 +3106,48 @@ def pdf_href(path):
 _LOCAL_PDF = re.compile(r"(?:\.?/)?((?:content|assets/pdfs)/[^?#]*\.pdf)([?#].*)?$", re.I)
 
 
+_PDF_VERSIONS = None
+
+
+def _pdf_version(path):
+    """Eight hex characters of the file's content hash, "" when unknown.
+
+    The file host lets browsers keep a PDF for a week, so a re-uploaded file
+    (a corrected key, a re-branded paper) would keep answering from the old
+    copy under the same URL. A `?v=<hash>` that changes with the bytes makes
+    every changed file a new URL the moment the page is rebuilt."""
+    global _PDF_VERSIONS
+    if _PDF_VERSIONS is None:
+        _PDF_VERSIONS = {}
+        try:
+            meta = json.loads((ROOT / "data" / "pdf-meta.json").read_text(encoding="utf-8"))
+            for k, v in (meta.get("files") or {}).items():
+                if isinstance(v, dict) and v.get("hash"):
+                    _PDF_VERSIONS[k] = str(v["hash"])[:8]
+        except (OSError, ValueError):
+            pass
+    if path not in _PDF_VERSIONS:
+        f = ROOT / path
+        try:
+            _PDF_VERSIONS[path] = hashlib.sha256(f.read_bytes()).hexdigest()[:8] if f.is_file() else ""
+        except OSError:
+            _PDF_VERSIONS[path] = ""
+    return _PDF_VERSIONS[path]
+
+
 def hosted_pdf(href):
-    """A local PDF href on the file host (files.pdfBase), else unchanged."""
+    """A local PDF href on the file host (files.pdfBase), else unchanged.
+    The URL carries `?v=<content hash>` so a changed file is never served
+    from a stale browser cache."""
     m = _LOCAL_PDF.match(href) if PDF_BASE else None
-    return f"{PDF_BASE}/{m.group(1)}{m.group(2) or ''}" if m else href
+    if not m:
+        return href
+    rest = m.group(2) or ""
+    if not rest.startswith("?"):
+        ver = _pdf_version(unquote(m.group(1)))
+        if ver:
+            rest = f"?v={ver}{rest}"
+    return f"{PDF_BASE}/{m.group(1)}{rest}"
 
 
 def abs_pdf_url(path):
