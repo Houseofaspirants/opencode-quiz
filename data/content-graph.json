@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 630,
-  "edges": 4978,
+  "nodes": 631,
+  "edges": 4980,
   "silos": 35,
-  "clusters": 184,
+  "clusters": 186,
   "pillars": 34
  },
  "nodes": [
@@ -6905,18 +6905,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-maharaja-ranjit-singh-part-2.html",
-   "url": "/quiz-gk-maharaja-ranjit-singh-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-national-income-part-1.html",
    "url": "/quiz-gk-national-income-part-1.html",
    "type": "quiz",
@@ -6955,6 +6943,30 @@
   {
    "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
    "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "url": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
+   "url": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -17057,13 +17069,13 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-maharaja-ranjit-singh-part-1.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-maharaja-ranjit-singh-part-2.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23417,6 +23429,12 @@
   },
   {
    "from": "material-punjabi-grammar-gurmukhi-lipi-bodh-notes.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-gurmukhi-lipi-bodh-notes.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -23424,12 +23442,6 @@
   {
    "from": "material-punjabi-grammar-gurmukhi-lipi-bodh-notes.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-gurmukhi-lipi-bodh-notes.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -30204,6 +30216,12 @@
   {
    "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
    "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -37847,6 +37865,12 @@
   },
   {
    "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
    "to": "tguide-anglo-sikh-wars-annexation-of-punjab.html",
    "rel": "related-pdf",
    "weight": 1
@@ -38897,7 +38921,9 @@
     "category-punjabi-20-english-to-punjabi-translation.html",
     "category-punjabi-21-shabad-badal-one-word-substitution.html",
     "topic-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
-    "topic-punjabi-01-punjabi-bhasha-language-mcq-part-2.html"
+    "topic-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+    "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+    "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
