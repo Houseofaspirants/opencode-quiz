@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 741,
-  "edges": 6417,
+  "nodes": 771,
+  "edges": 6805,
   "silos": 35,
   "clusters": 186,
   "pillars": 34
@@ -318,6 +318,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-b-ed.html",
+   "url": "/archive-tag-b-ed.html",
+   "type": "archive",
+   "template": "",
+   "title": "b.ed",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "b-ed"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-blood-relations.html",
    "url": "/archive-tag-blood-relations.html",
    "type": "archive",
@@ -598,6 +612,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-descriptive-exam.html",
+   "url": "/archive-tag-descriptive-exam.html",
+   "type": "archive",
+   "template": "",
+   "title": "descriptive exam",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "descriptive-exam"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-discount.html",
    "url": "/archive-tag-discount.html",
    "type": "archive",
@@ -636,6 +664,48 @@
    "exams": [],
    "tags": [
     "doubt-session"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-driver.html",
+   "url": "/archive-tag-driver.html",
+   "type": "archive",
+   "template": "",
+   "title": "driver",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "driver"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-driving-licence.html",
+   "url": "/archive-tag-driving-licence.html",
+   "type": "archive",
+   "template": "",
+   "title": "driving licence",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "driving-licence"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-education-recruitment-board.html",
+   "url": "/archive-tag-education-recruitment-board.html",
+   "type": "archive",
+   "template": "",
+   "title": "education recruitment board",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "education-recruitment-board"
    ],
    "hub": "archives.html"
   },
@@ -794,6 +864,34 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-forest-department.html",
+   "url": "/archive-tag-forest-department.html",
+   "type": "archive",
+   "template": "",
+   "title": "forest department",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "forest-department"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-forest-guard.html",
+   "url": "/archive-tag-forest-guard.html",
+   "type": "archive",
+   "template": "",
+   "title": "forest guard",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "forest-guard"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-fundamental-rights.html",
    "url": "/archive-tag-fundamental-rights.html",
    "type": "archive",
@@ -832,6 +930,20 @@
    "exams": [],
    "tags": [
     "group-d"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-high-court-clerk.html",
+   "url": "/archive-tag-high-court-clerk.html",
+   "type": "archive",
+   "template": "",
+   "title": "high court clerk",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "high-court-clerk"
    ],
    "hub": "archives.html"
   },
@@ -1116,6 +1228,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-master-cadre.html",
+   "url": "/archive-tag-master-cadre.html",
+   "type": "archive",
+   "template": "",
+   "title": "master cadre",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "master-cadre"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-maths.html",
    "url": "/archive-tag-maths.html",
    "type": "archive",
@@ -1354,6 +1480,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-precis-writing.html",
+   "url": "/archive-tag-precis-writing.html",
+   "type": "archive",
+   "template": "",
+   "title": "precis writing",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "precis-writing"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-preparation-strategy.html",
    "url": "/archive-tag-preparation-strategy.html",
    "type": "archive",
@@ -1452,6 +1592,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-punjab-and-haryana-high-court.html",
+   "url": "/archive-tag-punjab-and-haryana-high-court.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab and haryana high court",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-and-haryana-high-court"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-punjab-civil-services.html",
    "url": "/archive-tag-punjab-civil-services.html",
    "type": "archive",
@@ -1476,6 +1630,20 @@
    "exams": [],
    "tags": [
     "punjab-gk"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-punjab-history.html",
+   "url": "/archive-tag-punjab-history.html",
+   "type": "archive",
+   "template": "",
+   "title": "punjab history",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "punjab-history"
    ],
    "hub": "archives.html"
   },
@@ -1690,6 +1858,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-rural-development.html",
+   "url": "/archive-tag-rural-development.html",
+   "type": "archive",
+   "template": "",
+   "title": "rural development",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "rural-development"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-samas.html",
    "url": "/archive-tag-samas.html",
    "type": "archive",
@@ -1714,6 +1896,20 @@
    "exams": [],
    "tags": [
     "school-librarian"
+   ],
+   "hub": "archives.html"
+  },
+  {
+   "id": "archive-tag-school-teacher.html",
+   "url": "/archive-tag-school-teacher.html",
+   "type": "archive",
+   "template": "",
+   "title": "school teacher",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "school-teacher"
    ],
    "hub": "archives.html"
   },
@@ -5585,6 +5781,44 @@
    "hub": "strategy.html"
   },
   {
+   "id": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "url": "/pa/strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "url": "/pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਡਰਾਈਵਰ 2027 - ਯੋਗਤਾ, ਪੇਪਰ ਪੈਟਰਨ ਅਤੇ ਤਨਖ਼ਾਹ",
+   "lang": "pa",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "english"
+   ],
+   "exams": [
+    "PSSSB Driver"
+   ],
+   "tags": [
+    "psssb",
+    "driver",
+    "driving licence",
+    "rural development",
+    "exam pattern",
+    "eligibility"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "page",
@@ -5621,6 +5855,46 @@
     "eligibility",
     "exam pattern",
     "syllabus"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "url": "/pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "url": "/pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB ਵਣ ਗਾਰਡ 2027 - ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "english",
+    "punjabi",
+    "computer"
+   ],
+   "exams": [
+    "PSSSB Forest Guard"
+   ],
+   "tags": [
+    "psssb",
+    "forest guard",
+    "forest department",
+    "syllabus",
+    "exam pattern",
+    "punjab history"
    ],
    "hub": "strategy.html"
   },
@@ -6004,6 +6278,83 @@
     "punjab tet",
     "teacher eligibility test",
     "syllabus",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "url": "/pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "url": "/pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਤੇ ਹਰਿਆਣਾ ਹਾਈ ਕੋਰਟ ਕਲਰਕ 2027 - ਪੂਰੀ ਪ੍ਰਕਿਰਿਆ",
+   "lang": "pa",
+   "subjects": [
+    "english",
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi"
+   ],
+   "exams": [
+    "Punjab and Haryana High Court Clerk"
+   ],
+   "tags": [
+    "high court clerk",
+    "punjab and haryana high court",
+    "descriptive exam",
+    "precis writing",
+    "typing test",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "url": "/pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "url": "/pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "ਪੰਜਾਬ ਮਾਸਟਰ ਕਾਡਰ 2027 - ਯੋਗਤਾ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ",
+   "lang": "pa",
+   "subjects": [
+    "punjabi",
+    "english",
+    "gk",
+    "reasoning"
+   ],
+   "exams": [
+    "Punjab Master Cadre"
+   ],
+   "tags": [
+    "master cadre",
+    "school teacher",
+    "education recruitment board",
+    "b.ed",
+    "pstet",
     "exam pattern"
    ],
    "hub": "strategy.html"
@@ -8914,6 +9265,44 @@
    "hub": "strategy.html"
   },
   {
+   "id": "strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "url": "/strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "url": "/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Driver 2027 - Eligibility, Exam Pattern & Pay",
+   "lang": "en",
+   "subjects": [
+    "punjabi",
+    "gk",
+    "reasoning",
+    "english"
+   ],
+   "exams": [
+    "PSSSB Driver"
+   ],
+   "tags": [
+    "psssb",
+    "driver",
+    "driving licence",
+    "rural development",
+    "exam pattern",
+    "eligibility"
+   ],
+   "hub": "strategy.html"
+  },
+  {
    "id": "strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "url": "/strategy-psssb-excise-inspector-recruitment-exam-pattern",
    "type": "document",
@@ -8950,6 +9339,46 @@
     "eligibility",
     "exam pattern",
     "syllabus"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "url": "/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "url": "/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "PSSSB Forest Guard 2027 - Syllabus & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "gk",
+    "reasoning",
+    "quant",
+    "english",
+    "punjabi",
+    "computer"
+   ],
+   "exams": [
+    "PSSSB Forest Guard"
+   ],
+   "tags": [
+    "psssb",
+    "forest guard",
+    "forest department",
+    "syllabus",
+    "exam pattern",
+    "punjab history"
    ],
    "hub": "strategy.html"
   },
@@ -9333,6 +9762,83 @@
     "punjab tet",
     "teacher eligibility test",
     "syllabus",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "url": "/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "url": "/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab & Haryana High Court Clerk 2027 - Full Process",
+   "lang": "en",
+   "subjects": [
+    "english",
+    "gk",
+    "reasoning",
+    "quant",
+    "punjabi"
+   ],
+   "exams": [
+    "Punjab and Haryana High Court Clerk"
+   ],
+   "tags": [
+    "high court clerk",
+    "punjab and haryana high court",
+    "descriptive exam",
+    "precis writing",
+    "typing test",
+    "exam pattern"
+   ],
+   "hub": "strategy.html"
+  },
+  {
+   "id": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "url": "/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "url": "/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "type": "strategy",
+   "template": "preparation-strategy",
+   "title": "Punjab Master Cadre 2027 - Eligibility & Exam Pattern",
+   "lang": "en",
+   "subjects": [
+    "punjabi",
+    "english",
+    "gk",
+    "reasoning"
+   ],
+   "exams": [
+    "Punjab Master Cadre"
+   ],
+   "tags": [
+    "master cadre",
+    "school teacher",
+    "education recruitment board",
+    "b.ed",
+    "pstet",
     "exam pattern"
    ],
    "hub": "strategy.html"
@@ -11019,7 +11525,19 @@
   },
   {
    "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11080,6 +11598,18 @@
   {
    "from": "archive-category-preparation-strategy.html",
    "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-preparation-strategy.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -11672,6 +12202,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-b-ed.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-b-ed.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-blood-relations.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -12518,6 +13090,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-descriptive-exam.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-discount.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -12644,6 +13258,132 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-driver.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driver.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-driving-licence.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-education-recruitment-board.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-ejoty.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -12754,6 +13494,12 @@
   {
    "from": "archive-tag-eligibility.html",
    "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-eligibility.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12885,7 +13631,19 @@
   },
   {
    "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -12940,6 +13698,18 @@
   {
    "from": "archive-tag-exam-pattern.html",
    "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-exam-pattern.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -13238,6 +14008,90 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-forest-department.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-department.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-forest-guard.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-fundamental-rights.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -13359,6 +14213,48 @@
   },
   {
    "from": "archive-tag-group-d.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-high-court-clerk.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -14210,6 +15106,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-master-cadre.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-master-cadre.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-maths.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -14918,6 +15856,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-precis-writing.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-precis-writing.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-preparation-strategy.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -15135,7 +16115,19 @@
   },
   {
    "from": "archive-tag-psssb.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-psssb.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -15243,6 +16235,12 @@
   },
   {
    "from": "archive-tag-pstet.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-pstet.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -15285,6 +16283,48 @@
   },
   {
    "from": "archive-tag-pti.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-and-haryana-high-court.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -15358,6 +16398,48 @@
   {
    "from": "archive-tag-punjab-gk.html",
    "to": "tguide-sikh-misls-maharaja-ranjit-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-punjab-history.html",
+   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -16004,6 +17086,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-rural-development.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-rural-development.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-samas.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -16083,6 +17207,48 @@
   },
   {
    "from": "archive-tag-school-librarian.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-school-teacher.html",
    "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -16755,6 +17921,12 @@
   },
   {
    "from": "archive-tag-syllabus.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-syllabus.html",
    "to": "strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -17031,25 +18203,7 @@
   },
   {
    "from": "archive-tag-typing-test.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-typing-test.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-typing-test.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-typing-test.html",
-   "to": "quiz.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17067,7 +18221,7 @@
   },
   {
    "from": "archive-tag-typing-test.html",
-   "to": "study-notes.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17421,6 +18575,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-b-ed.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-blood-relations.html",
    "rel": "contextual",
    "weight": 1
@@ -17541,6 +18701,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-descriptive-exam.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-discount.html",
    "rel": "contextual",
    "weight": 1
@@ -17554,6 +18720,24 @@
   {
    "from": "archives.html",
    "to": "archive-tag-doubt-session.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-driver.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-driving-licence.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-education-recruitment-board.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17625,6 +18809,18 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-forest-department.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-fundamental-rights.html",
    "rel": "contextual",
    "weight": 1
@@ -17638,6 +18834,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-high-court-clerk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -17763,6 +18965,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-master-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-maths.html",
    "rel": "contextual",
    "weight": 1
@@ -17865,6 +19073,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-precis-writing.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-preparation-strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -17907,6 +19121,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-punjab-and-haryana-high-court.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-punjab-civil-services.html",
    "rel": "contextual",
    "weight": 1
@@ -17914,6 +19134,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-punjab-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-punjab-history.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18009,6 +19235,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-rural-development.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-samas.html",
    "rel": "contextual",
    "weight": 1
@@ -18016,6 +19248,12 @@
   {
    "from": "archives.html",
    "to": "archive-tag-school-librarian.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "archive-tag-school-teacher.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18849,7 +20087,19 @@
   },
   {
    "from": "archives.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -18910,6 +20160,18 @@
   {
    "from": "archives.html",
    "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19095,7 +20357,19 @@
   },
   {
    "from": "archives.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19156,6 +20430,18 @@
   {
    "from": "archives.html",
    "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19329,7 +20615,13 @@
   },
   {
    "from": "author-gurpreet-singh.html",
-   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19395,25 +20687,19 @@
   },
   {
    "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "author-gurpreet-singh.html",
    "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "author-gurpreet-singh.html",
-   "to": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19545,7 +20831,7 @@
   },
   {
    "from": "blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -30441,7 +31727,7 @@
   },
   {
    "from": "pa/blog-1-7-30-revision-rule-si-rank-2.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -31269,7 +32555,7 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -32030,6 +33316,192 @@
    "weight": 1
   },
   {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-driver.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-driving-licence.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-rural-development.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq/psssb-driver/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "subject-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "subject-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -32217,12 +33689,210 @@
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-forest-department.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq/psssb-forest-guard/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "subject-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "subject-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -32487,7 +34157,7 @@
   },
   {
    "from": "pa/strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
-   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -32787,7 +34457,7 @@
   },
   {
    "from": "pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -33051,6 +34721,18 @@
   },
   {
    "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -33058,18 +34740,6 @@
   {
    "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33244,6 +34914,12 @@
   {
    "from": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33567,7 +35243,7 @@
   },
   {
    "from": "pa/strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -33633,13 +35309,13 @@
   },
   {
    "from": "pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
-   "to": "pa/strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
-   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33939,7 +35615,7 @@
   },
   {
    "from": "pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -34148,6 +35824,378 @@
    "weight": 1
   },
   {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-descriptive-exam.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-high-court-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-precis-writing.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-punjab-and-haryana-high-court.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "subject-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-02-clauses-and-phrases-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-03-types-of-sentences-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-b-ed.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-education-recruitment-board.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-master-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-school-teacher.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "subject-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -34203,7 +36251,13 @@
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34731,13 +36785,13 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "to": "pa/strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -41589,7 +43643,7 @@
   },
   {
    "from": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
-   "to": "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -41655,7 +43709,7 @@
   },
   {
    "from": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -42380,6 +44434,186 @@
    "weight": 1
   },
   {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-driver.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-driving-licence.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-rural-development.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pyq/psssb-driver/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "subject-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "subject-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -42477,6 +44711,12 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -42549,12 +44789,198 @@
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-forest-department.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-psssb.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "archive-tag-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pyq/psssb-forest-guard/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-group-d-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "subject-gk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "subject-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-1857-revolt-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "quiz-gk-arrival-of-european-in-india-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "to": "pdfs.html",
    "rel": "section-pdfs",
    "weight": 1
@@ -42813,13 +45239,13 @@
   },
   {
    "from": "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
-   "to": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
-   "to": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -43089,7 +45515,7 @@
   },
   {
    "from": "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
-   "to": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -43749,6 +46175,12 @@
   },
   {
    "from": "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
    "to": "strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -43833,7 +46265,7 @@
   },
   {
    "from": "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -43947,7 +46379,7 @@
   },
   {
    "from": "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
-   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44175,6 +46607,12 @@
   },
   {
    "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
@@ -44372,6 +46810,354 @@
    "weight": 1
   },
   {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-descriptive-exam.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-high-court-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-precis-writing.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "archive-tag-punjab-and-haryana-high-court.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pyq/punjab-haryana-high-court-clerk/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "subject-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-01-subject-and-predicate-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-02-clauses-and-phrases-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "quiz-english-03-types-of-sentences-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-category-preparation-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-b-ed.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-education-recruitment-board.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-master-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "archive-tag-school-teacher.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "author-gurpreet-singh.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pyq/punjab-master-cadre/index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "subject-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "magazine.html",
+   "rel": "related-magazine",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "related-strategy",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
+   "to": "pdfs.html",
+   "rel": "section-pdfs",
+   "weight": 1
+  },
+  {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "to": "archive-category-preparation-strategy.html",
    "rel": "contextual",
@@ -44457,7 +47243,7 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44925,13 +47711,13 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "to": "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -45567,7 +48353,19 @@
   },
   {
    "from": "strategy.html",
+   "to": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45628,6 +48426,18 @@
   {
    "from": "strategy.html",
    "to": "pa/strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45711,7 +48521,19 @@
   },
   {
    "from": "strategy.html",
+   "to": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
    "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45772,6 +48594,18 @@
   {
    "from": "strategy.html",
    "to": "strategy-pstet-exam-pattern-syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy.html",
+   "to": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -49200,6 +52034,7 @@
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
     "strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
@@ -49269,7 +52104,9 @@
     "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
     "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
+    "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
@@ -49279,6 +52116,8 @@
     "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-pstet-exam-pattern-syllabus.html",
+    "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+    "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
     "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
@@ -49366,7 +52205,9 @@
     "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+    "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
@@ -49377,6 +52218,8 @@
     "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-pstet-exam-pattern-syllabus.html",
+    "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+    "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
     "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
@@ -49433,7 +52276,9 @@
     "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+    "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
@@ -49444,6 +52289,8 @@
     "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-pstet-exam-pattern-syllabus.html",
+    "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+    "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
     "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
@@ -49500,10 +52347,12 @@
     "strategy-psssb-clerk-data-entry-operator-2027-syllabus.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
     "strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html",
     "strategy-psssb-surveyor-2027-syllabus-exam-pattern.html",
     "strategy-pstet-exam-pattern-syllabus.html",
+    "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
@@ -49546,7 +52395,9 @@
     "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
     "strategy-psssb-clerk-recruitment-exam-pattern-2026.html",
     "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
+    "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
     "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
+    "strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html",
     "strategy-psssb-group-d-recruitment-exam-pattern.html",
     "strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html",
     "strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html",
@@ -49556,6 +52407,8 @@
     "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
     "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
     "strategy-pstet-exam-pattern-syllabus.html",
+    "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
+    "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
     "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",

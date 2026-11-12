@@ -1,6 +1,6 @@
 ---
 title: PSSSB Clerk IT 2027 - Eligibility, Syllabus & Pattern
-description: PSSSB Clerk IT 2027 guide from the official Advt 11/2025 - BCA or B.Sc IT eligibility, age, fee, Rs 19,900 pay, typing test and the written exam pattern.
+description: PSSSB Clerk IT 2027 guide from Advt 12/2026 and 11/2025 - computer-degree eligibility, age, fee, Rs 19,900 pay, typing test and the written exam pattern.
 published: 2026-11-13
 language: en
 author: Gurpreet Singh
@@ -10,7 +10,7 @@ exams: [PSSSB Clerk IT]
 subjects: [computer, gk, reasoning, punjabi, english]
 tags: [psssb, clerk it, computer science, typing test, syllabus, exam pattern]
 subtitle: The last official Clerk IT notification, the 2027 outlook, and a subject-wise plan built on real papers.
-summary: PSSSB last advertised Clerk IT with the general clerk posts in Advt 11/2025, at Rs 19,900 (Level-2). You need a full-time BCA, B.Sc IT or B.Sc Computer Science, matric Punjabi and a 30 wpm typing test. The written exam has a qualifying Punjabi part; merit comes from the main paper.
+summary: PSSSB Advt 12/2026 has 11 Clerk IT posts at Rs 19,900 (Level-2), after a single post in Advt 11/2025. You need a computer degree (the exact list differs by department), matric Punjabi and a 30 wpm typing test. The Punjabi part is qualifying; merit comes from the main paper.
 seoTitle: PSSSB Clerk IT 2027 - Eligibility, Syllabus & Exam Pattern
 keywords: [psssb clerk it 2027, punjab clerk it recruitment 2027, psssb clerk it syllabus, clerk it exam pattern punjab, psssb clerk it eligibility, clerk it salary punjab, psssb clerk it previous papers, clerk it typing test punjab]
 schemaType: Article
@@ -26,8 +26,10 @@ faq:
   - q: What is the PSSSB Clerk IT exam pattern?
     a: Part A is a qualifying matric-level Punjabi paper where you need 50%. The merit list is made only from Part B, with 1 mark per question and 1/4 mark cut for each wrong answer. In the 2022 round the main paper had 90 computer questions and 30 GK, reasoning and language questions.
   - q: Will PSSSB release a Clerk IT notification in 2027?
-    a: There is no 2027 notification yet. Clerk IT posts have appeared in 2021, 2022 and 2025 advertisements, usually alongside general clerk posts, so a new round is likely when departments send demand.
+    a: No 2027 notification yet, but PSSSB Advertisement No. 12 of 2026 (applications closed 19 October 2026) has 11 Clerk IT posts. Clerk IT has now appeared in 2021, 2022, 2025 and 2026 advertisements, so further posts are likely whenever departments send demand.
 references:
+  - title: PSSSB - Advertisement No. 12 of 2026 (70 posts), published 18 September 2026
+    url: https://sssb.punjab.gov.in/
   - title: PSSSB - Advertisement No. 11 of 2025 (Clerk and Clerk IT), published 18 November 2025
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Plan of written examination and syllabus, Clerk IT (Advt. No. 15 of 2022)
@@ -36,11 +38,11 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk IT is the clerk post where a computer degree actually pays off: the general clerk paper is open to every graduate, but the Clerk IT paper is mostly your own subject. This page puts the official rules in one place.
 
-> The last round was **PSSSB Advertisement No. 11 of 2025** (published 18 November 2025, applications 26 November to 26 December 2025). It had 69 Clerk posts and **1 Clerk IT post** (Tourism Department). The written exam was held on **28 February 2026**. **No 2027 notification has been released yet.**
+> The latest round is **PSSSB Advertisement No. 12 of 2026** (published 18 September 2026, applications 25 September to 19 October 2026). It has **11 Clerk IT posts** at Rs 19,900 - 9 in the Labour Commissioner's office, 1 in Excise and Taxation (head office) and 1 in Civil Aviation. The written exam date is still awaited. Before that, **Advt 11/2025** had 1 Clerk IT post, examined on 28 February 2026.
 
 ## Will there be posts in 2027?
 
-Clerk IT has been advertised in **2021 (Advt 18/2021), 2022 (Advt 15/2022) and 2025 (Advt 11/2025)**. The numbers swing a lot - from a big batch to a single post - because each department asks for Clerk IT separately. PSSSB runs a clerk recruitment almost every year, so a Clerk IT line in a 2027 advertisement is a realistic possibility. Prepare now; the core syllabus has not changed.
+Clerk IT has been advertised in **2021, 2022, 2025 and 2026**. The numbers swing a lot - from a single post in Advt 11/2025 to 11 in Advt 12/2026 - because each department asks separately, and each sets its own degree list. In Advt 12/2026 the Labour Commissioner accepts **B.Tech CS, B.Sc IT, BCA, or a graduate with PGDCA**, while Excise and Taxation asks for a graduate in Computer Application, IT, Computer Science, Computer Engineering or Computer Technology. Read the department line before you apply. A further round in 2027-28 is a realistic possibility.
 
 ## Eligibility (Advt 11/2025)
 

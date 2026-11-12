@@ -26,8 +26,10 @@ faq:
   - q: Is there a typing test for Clerk Accounts?
     a: Yes. Like other PSSSB clerk posts, candidates who clear the written exam take a qualifying Punjabi and English typing test at 30 wpm.
   - q: Will Clerk Accounts posts come in 2027?
-    a: No 2027 notification has been published. Clerk Accounts was advertised in 2021 (Advt 19/2021) and examined again in 2022; a new round depends on departments sending demand to the board.
+    a: No 2027 notification yet, but PSSSB Advertisement No. 12 of 2026 (applications closed 19 October 2026) has 34 Clerk (Accounts) posts. Its exam is still awaited, and further posts in 2027-28 depend on new demand from departments.
 references:
+  - title: PSSSB - Advertisement No. 12 of 2026 (70 posts), published 18 September 2026
+    url: https://sssb.punjab.gov.in/
   - title: PSSSB - Plan of written examination and syllabus, Clerk Accounts (2022)
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Syllabus notice for Advt. 17, 18 and 19 of 2021 (Clerk, Clerk IT, Clerk Accounts)
@@ -36,11 +38,11 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk (Accounts) is the one PSSSB clerk exam where a B.Com student starts ahead: three-quarters of the main paper is your own degree. This page collects what the official exam plans say.
 
-> The last Clerk (Accounts) recruitment was **Advertisement No. 19 of 2021**, examined on 11 December 2021, with a fresh exam on 19 November 2022. **No 2027 notification has been released yet.** Prepare on the pattern below and we will update this page when a new advertisement comes.
+> The latest round is **PSSSB Advertisement No. 12 of 2026** (published 18 September 2026, applications 25 September to 19 October 2026). It has **34 Clerk (Accounts) posts** at Rs 19,900 - 25 in the Employment Generation, Skill Development and Training department and 9 in Excise and Taxation field offices. The written exam date is still awaited. Before that, the last separate round was Advt 19/2021, examined in December 2021 and again in November 2022.
 
 ## Will there be posts in 2027?
 
-Accounts clerks are needed in every treasury, finance branch and department office, but PSSSB advertises them only when departments send a separate demand. Since 2022 most clerk vacancies have gone into the general clerk advertisements (Advt 05/2024, 11/2025 and 02/2026). A separate Clerk (Accounts) round in 2027 is **possible but not announced**. The good news: the accounts syllabus also covers a large part of other commerce posts such as Junior Auditor and Inspector Audit, so the preparation is never wasted.
+Advt 12/2026 shows the demand is back: **34 Clerk (Accounts) posts** in one advertisement. Note that eligibility differs by department - the Employment Generation posts ask for a graduate with Statistics, Mathematics or Accounts as a subject, while the Excise and Taxation posts ask for a **commerce degree**. Both need matric Punjabi and a 30 wpm typing test, and merit comes from Part B of the written exam. Whether more posts follow in 2027 depends on new demand, but anyone preparing for Advt 12/2026 is already on the right track.
 
 ## Exam pattern (2022 official plan)
 

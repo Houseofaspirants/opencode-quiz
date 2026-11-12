@@ -26,8 +26,10 @@ faq:
   - q: Who can apply for PSSSB Clerk Legal?
     a: The post is advertised for law graduates. The exact degree and other conditions are set in each advertisement, so read the new notification before applying.
   - q: Will Clerk Legal posts come in 2027?
-    a: No 2027 notification has been published. The last round was Advt 02/2022, examined in July 2023; a new round depends on departments sending demand.
+    a: No 2027 notification yet, but PSSSB Advertisement No. 12 of 2026 (applications closed 19 October 2026) has 13 Clerk (Legal) posts across six departments. Its exam is still awaited.
 references:
+  - title: PSSSB - Advertisement No. 12 of 2026 (70 posts), published 18 September 2026
+    url: https://sssb.punjab.gov.in/
   - title: PSSSB - Plan of written examination and syllabus, Clerk (Legal), Advt. No. 02 of 2022
     url: https://sssb.punjab.gov.in/
   - title: Ministry of Home Affairs - New criminal laws (BNS, BNSS, BSA) in force from 1 July 2024
@@ -36,11 +38,11 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk (Legal) is a small but valuable recruitment: three-quarters of the paper is law, so an LLB student who revises the codes properly competes with a much smaller field than the general clerk exam.
 
-> The last round was **Advertisement No. 02 of 2022**; the written exam was held on **8 July 2023**. **No 2027 notification has been released yet.** We will update this page as soon as one comes.
+> The latest round is **PSSSB Advertisement No. 12 of 2026** (published 18 September 2026, applications 25 September to 19 October 2026). It has **13 Clerk (Legal) posts** at Rs 19,900 across six offices - Excise and Taxation (6), Employment Generation and Training (2), Dairy Development (2), Labour Commissioner (1), Defence Services Welfare (1) and Cultural Affairs (1). The written exam date is still awaited. The previous round was Advt 02/2022, examined on 8 July 2023.
 
 ## Will there be posts in 2027?
 
-Legal clerks work in the legal cells of departments, district offices and the Advocate General's office. These demands arrive irregularly, so Clerk (Legal) is not advertised every year. A new round in 2027 is **possible but not announced**. Whatever happens, the same law syllabus also prepares you for PCS (Judicial), Assistant District Attorney and law-officer posts.
+Advt 12/2026 brought Clerk (Legal) back after more than three years, with **13 posts**. The rules are the same as before: a **law graduate**, matric Punjabi, a qualifying Punjabi Part A (50%), merit from **Part B** with a 1/4 negative, and a qualifying 30 wpm typing test in English and Punjabi (Raavi font). A common merit list is made from typing-pass candidates. Legal-cell demand still arrives irregularly, so treat any 2027 round as a bonus and prepare for the current one. The same law syllabus also prepares you for PCS (Judicial) and Assistant District Attorney posts.
 
 ## Exam pattern (Advt 02/2022 official plan)
 
