@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 885,
+  "nodes": 887,
   "edges": 8414,
   "silos": 35,
-  "clusters": 186,
+  "clusters": 188,
   "pillars": 34
  },
  "nodes": [
@@ -9880,6 +9880,30 @@
   {
    "id": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
    "url": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "url": "/quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
+   "url": "/quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -27025,18 +27049,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-october-2026-part3-defence-science-environment.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-october-2026-part4-awards-sports-rankings-static-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -27056,6 +27068,18 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34513,6 +34537,12 @@
   },
   {
    "from": "material-punjabi-grammar-samas-compound-words-notes.html",
+   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-samas-compound-words-notes.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34520,12 +34550,6 @@
   {
    "from": "material-punjabi-grammar-samas-compound-words-notes.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-samas-compound-words-notes.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34717,6 +34741,12 @@
   },
   {
    "from": "material-punjabi-grammar-shabad-badal-one-word-substitution-notes.html",
+   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-shabad-badal-one-word-substitution-notes.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34724,12 +34754,6 @@
   {
    "from": "material-punjabi-grammar-shabad-badal-one-word-substitution-notes.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-shabad-badal-one-word-substitution-notes.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34819,6 +34843,12 @@
   },
   {
    "from": "material-punjabi-grammar-shabad-bodh-words-notes.html",
+   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-shabad-bodh-words-notes.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34826,12 +34856,6 @@
   {
    "from": "material-punjabi-grammar-shabad-bodh-words-notes.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-shabad-bodh-words-notes.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -63844,7 +63868,9 @@
     "topic-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
     "topic-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
     "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
-    "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html"
+    "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
+    "topic-punjabi-03-shabad-bodh-mcq-part-1.html",
+    "topic-punjabi-03-shabad-bodh-mcq-part-2.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
