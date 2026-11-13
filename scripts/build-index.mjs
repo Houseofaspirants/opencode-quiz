@@ -831,8 +831,12 @@ for (const m of meta.subjects || []) {
 }
 
 /* --------------------------------------------------------- 5. FINAL SHAPE */
+/* Plain code-point order on the lower-cased name, then id - the exact twin of
+   by_name() in build_index.py. Not localeCompare: ICU collates Gurmukhi in
+   alphabet order (ਸ before ਭ), Python by code point, and the twins must agree. */
+const cmp = (x, y) => (x < y ? -1 : x > y ? 1 : 0);
 const byName = (a, b) =>
-  a.name.localeCompare(b.name) || a.id.localeCompare(b.id);
+  cmp(String(a.name).toLowerCase(), String(b.name).toLowerCase()) || cmp(a.id, b.id);
 
 const MONTH_NAMES = ["january", "february", "march", "april", "may", "june", "july",
   "august", "september", "october", "november", "december"];

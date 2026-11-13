@@ -1894,42 +1894,6 @@
       }
     },
     {
-      "id": "03-shabad-bodh-mcq-part-1",
-      "subject": "punjabi",
-      "category": "03-shabad-bodh",
-      "availableLanguages": [
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "pa": 25
-      },
-      "titles": {
-        "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
-      },
-      "variants": {
-        "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
-      }
-    },
-    {
-      "id": "03-shabad-bodh-mcq-part-2",
-      "subject": "punjabi",
-      "category": "03-shabad-bodh",
-      "availableLanguages": [
-        "pa"
-      ],
-      "count": 25,
-      "counts": {
-        "pa": 25
-      },
-      "titles": {
-        "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
-      },
-      "variants": {
-        "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
-      }
-    },
-    {
       "id": "01-punjabi-bhasha-language-mcq-part-1",
       "subject": "punjabi",
       "category": "01-punjabi-bhasha-language",
@@ -1999,6 +1963,42 @@
       },
       "variants": {
         "pa": "questions/punjabi/02-gurmukhi-lipi-bodh/02-gurmukhi-lipi-bodh-mcq-part-2.pa.json"
+      }
+    },
+    {
+      "id": "03-shabad-bodh-mcq-part-1",
+      "subject": "punjabi",
+      "category": "03-shabad-bodh",
+      "availableLanguages": [
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "pa": 25
+      },
+      "titles": {
+        "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
+      },
+      "variants": {
+        "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
+      }
+    },
+    {
+      "id": "03-shabad-bodh-mcq-part-2",
+      "subject": "punjabi",
+      "category": "03-shabad-bodh",
+      "availableLanguages": [
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "pa": 25
+      },
+      "titles": {
+        "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
+      },
+      "variants": {
+        "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
       }
     },
     {

@@ -5448,58 +5448,6 @@
       "order": 4,
       "topics": [
         {
-          "id": "03-shabad-bodh-mcq-part-1",
-          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1",
-          "description": "",
-          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1794573752993,
-          "category": "03-shabad-bodh",
-          "language": "pa",
-          "variants": {
-            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
-          },
-          "availableLanguages": [
-            "pa"
-          ],
-          "titles": {
-            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
-          },
-          "counts": {
-            "pa": 25
-          },
-          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-1"
-        },
-        {
-          "id": "03-shabad-bodh-mcq-part-2",
-          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2",
-          "description": "",
-          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json",
-          "count": 25,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1794573752993,
-          "category": "03-shabad-bodh",
-          "language": "pa",
-          "variants": {
-            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
-          },
-          "availableLanguages": [
-            "pa"
-          ],
-          "titles": {
-            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
-          },
-          "counts": {
-            "pa": 25
-          },
-          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-2"
-        },
-        {
           "id": "01-punjabi-bhasha-language-mcq-part-1",
           "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Punjabi Language) MCQ – Part 1",
           "description": "",
@@ -5602,12 +5550,64 @@
             "pa": 25
           },
           "landing": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2"
+        },
+        {
+          "id": "03-shabad-bodh-mcq-part-1",
+          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1",
+          "description": "",
+          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794573752993,
+          "category": "03-shabad-bodh",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-1"
+        },
+        {
+          "id": "03-shabad-bodh-mcq-part-2",
+          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2",
+          "description": "",
+          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794573752993,
+          "category": "03-shabad-bodh",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-2"
         }
       ],
       "categories": [
         {
           "id": "01-punjabi-bhasha-language",
-          "name": "Punjabi Bhasha (Language)",
+          "name": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Punjabi Language)",
           "folder": "01-punjabi-bhasha-language",
           "icon": "📁",
           "topics": [
@@ -5668,7 +5668,7 @@
         },
         {
           "id": "02-gurmukhi-lipi-bodh",
-          "name": "Gurmukhi Lipi (Script)",
+          "name": "ਗੁਰਮੁਖੀ ਲਿਪੀ (Gurmukhi Script)",
           "folder": "02-gurmukhi-lipi-bodh",
           "icon": "📁",
           "topics": [
@@ -5729,7 +5729,7 @@
         },
         {
           "id": "03-shabad-bodh",
-          "name": "Shabad Bodh (Word Knowledge)",
+          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge)",
           "folder": "03-shabad-bodh",
           "icon": "📁",
           "topics": [
@@ -5790,7 +5790,7 @@
         },
         {
           "id": "04-naanv-noun",
-          "name": "Punjabi Noun (Naanv)",
+          "name": "ਨਾਂਵ (Noun)",
           "folder": "04-naanv-noun",
           "icon": "📁",
           "topics": [],
@@ -5798,7 +5798,7 @@
         },
         {
           "id": "05-ling-gender",
-          "name": "Punjabi Gender (Ling)",
+          "name": "ਲਿੰਗ (Gender)",
           "folder": "05-ling-gender",
           "icon": "📁",
           "topics": [],
@@ -5806,7 +5806,7 @@
         },
         {
           "id": "06-vachan-number",
-          "name": "Punjabi Number (Vachan)",
+          "name": "ਵਚਨ (Number)",
           "folder": "06-vachan-number",
           "icon": "📁",
           "topics": [],
@@ -5814,7 +5814,7 @@
         },
         {
           "id": "07-karak-case",
-          "name": "Punjabi Case (Karak)",
+          "name": "ਕਾਰਕ (Case)",
           "folder": "07-karak-case",
           "icon": "📁",
           "topics": [],
@@ -5822,7 +5822,7 @@
         },
         {
           "id": "08-parnaanv-pronoun",
-          "name": "Punjabi Pronoun (Parnaanv)",
+          "name": "ਪੜਨਾਂਵ (Pronoun)",
           "folder": "08-parnaanv-pronoun",
           "icon": "📁",
           "topics": [],
@@ -5830,7 +5830,7 @@
         },
         {
           "id": "09-visheshan-adjective",
-          "name": "Punjabi Adjective (Visheshan)",
+          "name": "ਵਿਸ਼ੇਸ਼ਣ (Adjective)",
           "folder": "09-visheshan-adjective",
           "icon": "📁",
           "topics": [],
@@ -5838,7 +5838,7 @@
         },
         {
           "id": "10-kiriya-visheshan-adverb",
-          "name": "Punjabi Adverb (Kiriya Visheshan)",
+          "name": "ਕਿਰਿਆ ਵਿਸ਼ੇਸ਼ਣ (Adverb)",
           "folder": "10-kiriya-visheshan-adverb",
           "icon": "📁",
           "topics": [],
@@ -5846,7 +5846,7 @@
         },
         {
           "id": "11-sambandhak-postposition",
-          "name": "Punjabi Postposition (Sambandhak)",
+          "name": "ਸੰਬੰਧਕ (Postposition)",
           "folder": "11-sambandhak-postposition",
           "icon": "📁",
           "topics": [],
@@ -5854,7 +5854,7 @@
         },
         {
           "id": "12-yojak-conjunction",
-          "name": "Punjabi Conjunction (Yojak)",
+          "name": "ਯੋਜਕ (Conjunction)",
           "folder": "12-yojak-conjunction",
           "icon": "📁",
           "topics": [],
@@ -5862,7 +5862,7 @@
         },
         {
           "id": "13-vismik-interjection",
-          "name": "Punjabi Interjection (Vismik)",
+          "name": "ਵਿਸਮਿਕ (Interjection)",
           "folder": "13-vismik-interjection",
           "icon": "📁",
           "topics": [],
@@ -5870,7 +5870,7 @@
         },
         {
           "id": "14-samas-compound-words",
-          "name": "Punjabi Compound Words (Samas)",
+          "name": "ਸਮਾਸ (Compound Words)",
           "folder": "14-samas-compound-words",
           "icon": "📁",
           "topics": [],
@@ -5878,7 +5878,7 @@
         },
         {
           "id": "15-vaak-bodh-sentence",
-          "name": "Punjabi Sentence (Vaak Bodh)",
+          "name": "ਵਾਕ ਬੋਧ (Sentence)",
           "folder": "15-vaak-bodh-sentence",
           "icon": "📁",
           "topics": [],
@@ -5886,7 +5886,7 @@
         },
         {
           "id": "16-shudh-ashudh-spelling",
-          "name": "Punjabi Correct Spelling (Shudh Ashudh)",
+          "name": "ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ ਸ਼ਬਦ (Correct Spelling)",
           "folder": "16-shudh-ashudh-spelling",
           "icon": "📁",
           "topics": [],
@@ -5894,7 +5894,7 @@
         },
         {
           "id": "17-muhavare-idioms",
-          "name": "Punjabi Idioms (Muhavare)",
+          "name": "ਮੁਹਾਵਰੇ (Idioms)",
           "folder": "17-muhavare-idioms",
           "icon": "📁",
           "topics": [],
@@ -5902,7 +5902,7 @@
         },
         {
           "id": "18-samanarthak-virodhi-shabad",
-          "name": "Punjabi Synonyms & Antonyms",
+          "name": "ਸਮਾਨਾਰਥਕ ਤੇ ਵਿਰੋਧੀ ਸ਼ਬਦ (Synonyms & Antonyms)",
           "folder": "18-samanarthak-virodhi-shabad",
           "icon": "📁",
           "topics": [],
@@ -5910,7 +5910,7 @@
         },
         {
           "id": "19-akhaan-proverbs",
-          "name": "Punjabi Proverbs (Akhaan)",
+          "name": "ਅਖਾਣ (Proverbs)",
           "folder": "19-akhaan-proverbs",
           "icon": "📁",
           "topics": [],
@@ -5918,7 +5918,7 @@
         },
         {
           "id": "20-english-to-punjabi-translation",
-          "name": "English to Punjabi Translation",
+          "name": "ਅੰਗਰੇਜ਼ੀ ਤੋਂ ਪੰਜਾਬੀ ਅਨੁਵਾਦ (Translation)",
           "folder": "20-english-to-punjabi-translation",
           "icon": "📁",
           "topics": [],
@@ -5926,7 +5926,7 @@
         },
         {
           "id": "21-shabad-badal-one-word-substitution",
-          "name": "Punjabi One Word Substitution (Shabad Badal)",
+          "name": "ਸ਼ਬਦ-ਸਮੂਹ ਲਈ ਇੱਕ ਸ਼ਬਦ (One Word Substitution)",
           "folder": "21-shabad-badal-one-word-substitution",
           "icon": "📁",
           "topics": [],
