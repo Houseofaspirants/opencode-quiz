@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-13T05:09:37.066Z",
+  "generatedAt": "2026-11-13T12:44:05.634Z",
   "stats": {
     "subjects": 7,
     "categories": 52,
-    "topics": 123,
-    "quizzes": 123,
-    "questions": 2883,
+    "topics": 125,
+    "quizzes": 125,
+    "questions": 2933,
     "studentsPracticed": 12500
   },
   "site": {
@@ -5448,6 +5448,58 @@
       "order": 4,
       "topics": [
         {
+          "id": "03-shabad-bodh-mcq-part-1",
+          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1",
+          "description": "",
+          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794573752993,
+          "category": "03-shabad-bodh",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-1"
+        },
+        {
+          "id": "03-shabad-bodh-mcq-part-2",
+          "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2",
+          "description": "",
+          "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794573752993,
+          "category": "03-shabad-bodh",
+          "language": "pa",
+          "variants": {
+            "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "pa"
+          ],
+          "titles": {
+            "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
+          },
+          "counts": {
+            "pa": 25
+          },
+          "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-2"
+        },
+        {
           "id": "01-punjabi-bhasha-language-mcq-part-1",
           "name": "ਭਾਸ਼ਾ ਅਤੇ ਪੰਜਾਬੀ ਭਾਸ਼ਾ (Punjabi Language) MCQ – Part 1",
           "description": "",
@@ -5680,7 +5732,60 @@
           "name": "Shabad Bodh (Word Knowledge)",
           "folder": "03-shabad-bodh",
           "icon": "📁",
-          "topics": [],
+          "topics": [
+            {
+              "id": "03-shabad-bodh-mcq-part-1",
+              "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1",
+              "description": "",
+              "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794573752993,
+              "category": "03-shabad-bodh",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 1"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-1"
+            },
+            {
+              "id": "03-shabad-bodh-mcq-part-2",
+              "name": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2",
+              "description": "",
+              "file": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794573752993,
+              "category": "03-shabad-bodh",
+              "language": "pa",
+              "variants": {
+                "pa": "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "pa"
+              ],
+              "titles": {
+                "pa": "ਸ਼ਬਦ ਬੋਧ (Word Knowledge) MCQ – Part 2"
+              },
+              "counts": {
+                "pa": 25
+              },
+              "landing": "/quiz-punjabi-03-shabad-bodh-mcq-part-2"
+            }
+          ],
           "landing": "/category-punjabi-03-shabad-bodh"
         },
         {
@@ -8029,6 +8134,14 @@
     "questions/punjabi/02-gurmukhi-lipi-bodh/02-gurmukhi-lipi-bodh-mcq-part-2.pa.json": [
       "57e22c6956f8c73f",
       1794471991221
+    ],
+    "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-1.pa.json": [
+      "76d5c283dc6a0881",
+      1794573752993
+    ],
+    "questions/punjabi/03-shabad-bodh/03-shabad-bodh-mcq-part-2.pa.json": [
+      "0abca31cc3dbe259",
+      1794573752993
     ],
     "questions/quant/01 - Number System/01 - Number System - MCQ - EN - Part 1.json": [
       "c3eec0ac9f0fdfe2",
