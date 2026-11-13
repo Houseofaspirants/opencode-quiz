@@ -752,21 +752,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 42,
-      "newest": "2026-11-11",
-      "totalSize": 84404552,
-      "chapters": 38,
+      "count": 44,
+      "newest": "2026-11-13",
+      "totalSize": 87943831,
+      "chapters": 40,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 42,
-          "chapters": 38,
-          "pages": 200,
-          "totalSize": 84404552,
-          "newest": "2026-11-11",
+          "files": 44,
+          "chapters": 40,
+          "pages": 212,
+          "totalSize": 87943831,
+          "newest": "2026-11-13",
           "categories": 10,
           "regions": 2
         },
@@ -776,11 +776,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 20,
-              "chapters": 16,
-              "pages": 94,
-              "totalSize": 45524532,
-              "newest": "2026-11-11",
+              "files": 22,
+              "chapters": 18,
+              "pages": 106,
+              "totalSize": 49063811,
+              "newest": "2026-11-13",
               "categories": 5
             },
             "categories": [
@@ -1249,11 +1249,11 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 6,
-                  "chapters": 6,
-                  "pages": 37,
-                  "totalSize": 11378593,
-                  "newest": "2026-10-30"
+                  "files": 8,
+                  "chapters": 8,
+                  "pages": 49,
+                  "totalSize": 14917872,
+                  "newest": "2026-11-13"
                 },
                 "languages": [
                   {
@@ -1261,7 +1261,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 3,
+                    "count": 4,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -1295,6 +1295,17 @@
                           }
                         ],
                         "pages": 8
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 04 - ਪੈਸਾ ਅਤੇ ਮੁਦਰਾ ਪੂਰਤੀ (Money & Money Supply)",
+                        "name": "ਅਧਿਆਇ 04 ਪੈਸਾ ਅਤੇ ਮੁਦਰਾ ਪੂਰਤੀ Money Money Supply",
+                        "parts": [
+                          {
+                            "file": "material-money-and-money-supply-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 6
                       }
                     ]
                   },
@@ -1303,7 +1314,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 3,
+                    "count": 4,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Basic Concepts of Economy",
@@ -1337,6 +1348,17 @@
                           }
                         ],
                         "pages": 7
+                      },
+                      {
+                        "id": "Chapter 04 - Money & Money Supply",
+                        "name": "Chapter 04: Money Money Supply",
+                        "parts": [
+                          {
+                            "file": "material-money-and-money-supply-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 6
                       }
                     ]
                   }
@@ -1824,8 +1846,8 @@
         ]
       },
       "counts": {
-        "en": 21,
-        "pa": 21
+        "en": 22,
+        "pa": 22
       },
       "pages": {
         "en": "study-gk.html",
@@ -2118,16 +2140,16 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 6,
-      "newest": "2026-10-30",
-      "totalSize": 11378593,
+      "count": 8,
+      "newest": "2026-11-13",
+      "totalSize": 14917872,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -2161,6 +2183,17 @@
                 }
               ],
               "pages": 8
+            },
+            {
+              "id": "ਅਧਿਆਇ 04 - ਪੈਸਾ ਅਤੇ ਮੁਦਰਾ ਪੂਰਤੀ (Money & Money Supply)",
+              "name": "ਅਧਿਆਇ 04 ਪੈਸਾ ਅਤੇ ਮੁਦਰਾ ਪੂਰਤੀ Money Money Supply",
+              "parts": [
+                {
+                  "file": "material-money-and-money-supply-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 6
             }
           ]
         },
@@ -2169,7 +2202,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "Chapter 01 - Basic Concepts of Economy",
@@ -2203,15 +2236,26 @@
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "Chapter 04 - Money & Money Supply",
+              "name": "Chapter 04: Money Money Supply",
+              "parts": [
+                {
+                  "file": "material-money-and-money-supply-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 6
             }
           ]
         }
       ],
-      "chapters": 6,
+      "chapters": 8,
       "hidden": true,
       "counts": {
-        "en": 3,
-        "pa": 3
+        "en": 4,
+        "pa": 4
       },
       "pages": {
         "en": "study-economy.html",
@@ -2710,6 +2754,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 90,
+  "total": 92,
   "generatedBy": "scripts/study_material.py"
 }

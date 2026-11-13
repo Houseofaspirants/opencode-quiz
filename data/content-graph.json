@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 771,
-  "edges": 6805,
+  "nodes": 775,
+  "edges": 6842,
   "silos": 35,
   "clusters": 186,
   "pillars": 34
@@ -4520,6 +4520,54 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 4: Simplification (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-money-and-money-supply-notes-english",
+   "url": "/material-money-and-money-supply-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-money-and-money-supply-notes-english.html",
+   "url": "/material-money-and-money-supply-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 04: Money Money Supply (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-money-and-money-supply-notes-punjabi",
+   "url": "/material-money-and-money-supply-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-money-and-money-supply-notes-punjabi.html",
+   "url": "/material-money-and-money-supply-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 04 ਪੈਸਾ ਅਤੇ ਮੁਦਰਾ ਪੂਰਤੀ Money Money Supply",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -11112,6 +11160,18 @@
   {
    "from": "archive-category-economy.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -19817,6 +19877,18 @@
   },
   {
    "from": "archives.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -25037,7 +25109,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -25049,13 +25121,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "rel": "related-study-material",
-   "weight": 1
-  },
-  {
-   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "material-national-income-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -25127,13 +25193,13 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -25145,7 +25211,7 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -27221,7 +27287,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -27233,7 +27299,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-national-income-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -27311,7 +27377,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -27323,7 +27389,7 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -28174,6 +28240,198 @@
    "weight": 1
   },
   {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-national-income-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "pa/study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-national-income-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-national-income-notes-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -28253,13 +28511,13 @@
   },
   {
    "from": "material-national-income-notes-english.html",
-   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-national-income-notes-english.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -28343,19 +28601,19 @@
   },
   {
    "from": "material-national-income-notes-punjabi.html",
-   "to": "material-indian-economy-basic-concepts-notes-english.html",
-   "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-national-income-notes-punjabi.html",
    "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-national-income-notes-punjabi.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -28631,13 +28889,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-1857-revolt-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -28715,13 +28973,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-1857-revolt-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -31277,13 +31535,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-1857-revolt-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -31361,13 +31619,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-1857-revolt-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -39635,12 +39893,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-cpu-central-processing-unit-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -39701,6 +39953,18 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -39720,12 +39984,6 @@
   {
    "from": "pdfs.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-punjab-economy-agriculture-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -48989,6 +49247,18 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -49253,12 +49523,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-cpu-central-processing-unit-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -49319,6 +49583,18 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-national-income-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -49338,12 +49614,6 @@
   {
    "from": "study-notes.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-punjab-economy-agriculture-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
