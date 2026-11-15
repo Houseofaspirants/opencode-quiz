@@ -752,21 +752,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 44,
-      "newest": "2026-11-13",
-      "totalSize": 87943831,
-      "chapters": 40,
+      "count": 45,
+      "newest": "2026-11-15",
+      "totalSize": 89668133,
+      "chapters": 41,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 44,
-          "chapters": 40,
-          "pages": 212,
-          "totalSize": 87943831,
-          "newest": "2026-11-13",
+          "files": 45,
+          "chapters": 41,
+          "pages": 219,
+          "totalSize": 89668133,
+          "newest": "2026-11-15",
           "categories": 10,
           "regions": 2
         },
@@ -776,11 +776,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 22,
-              "chapters": 18,
-              "pages": 106,
-              "totalSize": 49063811,
-              "newest": "2026-11-13",
+              "files": 23,
+              "chapters": 19,
+              "pages": 113,
+              "totalSize": 50788113,
+              "newest": "2026-11-15",
               "categories": 5
             },
             "categories": [
@@ -1111,11 +1111,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 6,
-                  "chapters": 6,
-                  "pages": 49,
-                  "totalSize": 11859322,
-                  "newest": "2026-10-29"
+                  "files": 7,
+                  "chapters": 7,
+                  "pages": 56,
+                  "totalSize": 13583624,
+                  "newest": "2026-11-15"
                 },
                 "languages": [
                   {
@@ -1165,7 +1165,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 3,
+                    "count": 4,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1199,6 +1199,17 @@
                           }
                         ],
                         "pages": 10
+                      },
+                      {
+                        "id": "Chapter 04 - Fundamental Rights and Writs",
+                        "name": "Chapter 04: Fundamental Rights and Writs",
+                        "parts": [
+                          {
+                            "file": "material-fundamental-rights-and-writs-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 7
                       }
                     ]
                   }
@@ -1846,7 +1857,7 @@
         ]
       },
       "counts": {
-        "en": 22,
+        "en": 23,
         "pa": 22
       },
       "pages": {
@@ -1862,9 +1873,9 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 6,
-      "newest": "2026-10-29",
-      "totalSize": 11859322,
+      "count": 7,
+      "newest": "2026-11-15",
+      "totalSize": 13583624,
       "languages": [
         {
           "id": "pa",
@@ -1913,7 +1924,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1947,14 +1958,25 @@
                 }
               ],
               "pages": 10
+            },
+            {
+              "id": "Chapter 04 - Fundamental Rights and Writs",
+              "name": "Chapter 04: Fundamental Rights and Writs",
+              "parts": [
+                {
+                  "file": "material-fundamental-rights-and-writs-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         }
       ],
-      "chapters": 6,
+      "chapters": 7,
       "hidden": true,
       "counts": {
-        "en": 3,
+        "en": 4,
         "pa": 3
       },
       "pages": {
@@ -2754,6 +2776,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 92,
+  "total": 93,
   "generatedBy": "scripts/study_material.py"
 }

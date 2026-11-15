@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 887,
-  "edges": 8414,
+  "nodes": 889,
+  "edges": 8431,
   "silos": 35,
-  "clusters": 189,
+  "clusters": 188,
   "pillars": 34
  },
  "nodes": [
@@ -4556,6 +4556,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਐਵੋਲੂਸ਼ਨ ਆਫ ਕੰਪਿਊਟਰਸ (Evolution of Computers)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-fundamental-rights-and-writs-notes-english",
+   "url": "/material-fundamental-rights-and-writs-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-fundamental-rights-and-writs-notes-english.html",
+   "url": "/material-fundamental-rights-and-writs-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 04: Fundamental Rights and Writs (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -13316,6 +13340,12 @@
   {
    "from": "archive-category-polity.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23935,6 +23965,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-generations-of-computer-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -30396,6 +30432,96 @@
    "weight": 1
   },
   {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "study-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-union-and-its-territory-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-generations-of-computer-notes-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -32071,7 +32197,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-english.html",
-   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -32179,7 +32305,7 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33091,13 +33217,13 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "material-making-of-indian-constitution-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -33105,12 +33231,6 @@
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "to": "material-union-and-its-territory-notes-english.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -33205,7 +33325,7 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33289,13 +33409,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33373,13 +33493,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -35935,13 +36055,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -36019,13 +36139,13 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -36097,13 +36217,13 @@
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "material-making-of-indian-constitution-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
   },
@@ -36111,12 +36231,6 @@
    "from": "material-union-and-its-territory-notes-english.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "related-pdf",
-   "weight": 1
-  },
-  {
-   "from": "material-union-and-its-territory-notes-english.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -36207,6 +36321,12 @@
    "from": "material-union-and-its-territory-notes-punjabi.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -47767,6 +47887,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -47792,12 +47918,6 @@
   {
    "from": "pdfs.html",
    "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -60409,6 +60529,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-generations-of-computer-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -60841,6 +60967,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -60866,12 +60998,6 @@
   {
    "from": "study-notes.html",
    "to": "material-maths-hcf-and-lcm-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-maths-number-system-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -63848,7 +63974,6 @@
     "category-punjabi-02-gurmukhi-lipi-bodh.html",
     "category-punjabi-03-shabad-bodh.html",
     "category-punjabi-04-naanv-noun.html",
-    "category-punjabi-04-noun.html",
     "category-punjabi-05-ling-gender.html",
     "category-punjabi-06-vachan-number.html",
     "category-punjabi-07-karak-case.html",
