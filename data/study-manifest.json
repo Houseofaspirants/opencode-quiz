@@ -752,20 +752,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 45,
+      "count": 46,
       "newest": "2026-11-15",
-      "totalSize": 89668133,
-      "chapters": 41,
+      "totalSize": 91456961,
+      "chapters": 42,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 45,
-          "chapters": 41,
-          "pages": 219,
-          "totalSize": 89668133,
+          "files": 46,
+          "chapters": 42,
+          "pages": 227,
+          "totalSize": 91456961,
           "newest": "2026-11-15",
           "categories": 10,
           "regions": 2
@@ -776,10 +776,10 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 23,
-              "chapters": 19,
-              "pages": 113,
-              "totalSize": 50788113,
+              "files": 24,
+              "chapters": 20,
+              "pages": 121,
+              "totalSize": 52576941,
               "newest": "2026-11-15",
               "categories": 5
             },
@@ -1111,10 +1111,10 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 7,
-                  "chapters": 7,
-                  "pages": 56,
-                  "totalSize": 13583624,
+                  "files": 8,
+                  "chapters": 8,
+                  "pages": 64,
+                  "totalSize": 15372452,
                   "newest": "2026-11-15"
                 },
                 "languages": [
@@ -1123,7 +1123,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 3,
+                    "count": 4,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1157,6 +1157,17 @@
                           }
                         ],
                         "pages": 11
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 04 - ਮੌਲਿਕ ਅਧਿਕਾਰ ਅਤੇ ਰਿੱਟਾਂ",
+                        "name": "ਅਧਿਆਇ 04 ਮੌਲਿਕ ਅਧਿਕਾਰ ਅਤੇ ਰਿੱਟਾਂ",
+                        "parts": [
+                          {
+                            "file": "material-fundamental-rights-and-writs-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
                       }
                     ]
                   },
@@ -1858,7 +1869,7 @@
       },
       "counts": {
         "en": 23,
-        "pa": 22
+        "pa": 23
       },
       "pages": {
         "en": "study-gk.html",
@@ -1873,16 +1884,16 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 7,
+      "count": 8,
       "newest": "2026-11-15",
-      "totalSize": 13583624,
+      "totalSize": 15372452,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 3,
+          "count": 4,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1916,6 +1927,17 @@
                 }
               ],
               "pages": 11
+            },
+            {
+              "id": "ਅਧਿਆਇ 04 - ਮੌਲਿਕ ਅਧਿਕਾਰ ਅਤੇ ਰਿੱਟਾਂ",
+              "name": "ਅਧਿਆਇ 04 ਮੌਲਿਕ ਅਧਿਕਾਰ ਅਤੇ ਰਿੱਟਾਂ",
+              "parts": [
+                {
+                  "file": "material-fundamental-rights-and-writs-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
             }
           ]
         },
@@ -1973,11 +1995,11 @@
           ]
         }
       ],
-      "chapters": 7,
+      "chapters": 8,
       "hidden": true,
       "counts": {
         "en": 4,
-        "pa": 3
+        "pa": 4
       },
       "pages": {
         "en": "study-polity.html",
@@ -2776,6 +2798,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 93,
+  "total": 94,
   "generatedBy": "scripts/study_material.py"
 }
