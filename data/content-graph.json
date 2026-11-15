@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 891,
+  "nodes": 892,
   "edges": 8451,
   "silos": 35,
-  "clusters": 188,
+  "clusters": 190,
   "pillars": 34
  },
  "nodes": [
@@ -9902,18 +9902,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
-   "url": "/quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
    "url": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
    "type": "quiz",
@@ -9952,6 +9940,30 @@
   {
    "id": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
    "url": "/quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
+   "url": "/quiz-punjabi-04-naanv-noun-mcq-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
+   "url": "/quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -27109,18 +27121,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-october-2026-part1-punjab-national-states.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-current-affairs-current-affairs-october-2026-part2-international-economy-banking.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -27152,6 +27152,18 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34387,6 +34399,12 @@
   },
   {
    "from": "material-punjabi-grammar-nanv-noun-notes.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-punjabi-grammar-nanv-noun-notes.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -34394,12 +34412,6 @@
   {
    "from": "material-punjabi-grammar-nanv-noun-notes.html",
    "to": "study-material.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-punjabi-grammar-nanv-noun-notes.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -38197,13 +38209,13 @@
   },
   {
    "from": "pa/strategy-psssb-anganwadi-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-anganwadi-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -39367,13 +39379,13 @@
   },
   {
    "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -39571,13 +39583,13 @@
   },
   {
    "from": "pa/strategy-psssb-dairy-development-inspector-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-dairy-development-inspector-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -39769,13 +39781,13 @@
   },
   {
    "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-driver-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -40165,13 +40177,13 @@
   },
   {
    "from": "pa/strategy-psssb-fireman-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-fireman-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -40567,13 +40579,13 @@
   },
   {
    "from": "pa/strategy-psssb-forester-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-forester-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -40759,13 +40771,13 @@
   },
   {
    "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-group-d-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -40963,13 +40975,13 @@
   },
   {
    "from": "pa/strategy-psssb-horticulture-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-horticulture-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -41755,13 +41767,13 @@
   },
   {
    "from": "pa/strategy-psssb-lab-attendant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-lab-attendant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -42157,13 +42169,13 @@
   },
   {
    "from": "pa/strategy-psssb-restorer-lab-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-restorer-lab-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -42355,13 +42367,13 @@
   },
   {
    "from": "pa/strategy-psssb-senior-technical-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-senior-technical-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -42553,13 +42565,13 @@
   },
   {
    "from": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -43327,13 +43339,13 @@
   },
   {
    "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-pstet-exam-pattern-syllabus.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -43531,13 +43543,13 @@
   },
   {
    "from": "pa/strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -43909,13 +43921,13 @@
   },
   {
    "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -44305,13 +44317,13 @@
   },
   {
    "from": "pa/strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -47551,13 +47563,13 @@
   },
   {
    "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "pa/tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -52759,13 +52771,13 @@
   },
   {
    "from": "strategy-psssb-anganwadi-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-anganwadi-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -53851,13 +53863,13 @@
   },
   {
    "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-craft-instructor-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -54043,13 +54055,13 @@
   },
   {
    "from": "strategy-psssb-dairy-development-inspector-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-dairy-development-inspector-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -54229,13 +54241,13 @@
   },
   {
    "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-driver-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -54601,13 +54613,13 @@
   },
   {
    "from": "strategy-psssb-fireman-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-fireman-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -54979,13 +54991,13 @@
   },
   {
    "from": "strategy-psssb-forester-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-forester-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -55159,13 +55171,13 @@
   },
   {
    "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-group-d-recruitment-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -55357,13 +55369,13 @@
   },
   {
    "from": "strategy-psssb-horticulture-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-horticulture-supervisor-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -56119,13 +56131,13 @@
   },
   {
    "from": "strategy-psssb-lab-attendant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-lab-attendant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -56509,13 +56521,13 @@
   },
   {
    "from": "strategy-psssb-restorer-lab-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-restorer-lab-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -56701,13 +56713,13 @@
   },
   {
    "from": "strategy-psssb-senior-technical-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-senior-technical-assistant-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -56893,13 +56905,13 @@
   },
   {
    "from": "strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -57625,13 +57637,13 @@
   },
   {
    "from": "strategy-pstet-exam-pattern-syllabus.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-pstet-exam-pattern-syllabus.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -57811,13 +57823,13 @@
   },
   {
    "from": "strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -58165,13 +58177,13 @@
   },
   {
    "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -58543,13 +58555,13 @@
   },
   {
    "from": "strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -62995,13 +63007,13 @@
   },
   {
    "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-2.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
   },
   {
    "from": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
+   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -64140,7 +64152,9 @@
     "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
     "topic-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
     "topic-punjabi-03-shabad-bodh-mcq-part-1.html",
-    "topic-punjabi-03-shabad-bodh-mcq-part-2.html"
+    "topic-punjabi-03-shabad-bodh-mcq-part-2.html",
+    "topic-punjabi-04-naanv-noun-mcq-part-1.html",
+    "topic-punjabi-04-naanv-noun-mcq-part-2.html"
    ],
    "leaves": [
     "blog-1-7-30-revision-rule-si-rank-2.html",
