@@ -68,6 +68,7 @@ const MAP = {
   "subject=geography-of-punjab&language=en&chapter=02 - Physical Features and Rivers of Punjab": "/material-physical-features-and-rivers-of-punjab-notes-english",
   "subject=geography-of-punjab&language=pa": "/pa/study-geography-of-punjab",
   "subject=geography-of-punjab&language=pa&chapter=01 - ਪੰਜਾਬ ਦੇ ਖੇਤਰ, ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ": "/material-regions-administration-and-location-of-punjab-notes-punjabi",
+  "subject=geography-of-punjab&language=pa&chapter=02 - ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ": "/material-physical-features-and-rivers-of-punjab-notes-punjabi",
   "subject=gk": "/study-gk",
   "subject=gk&language=en&region=india-gk&cat=economy": "/study-economy",
   "subject=gk&language=en&region=india-gk&cat=geography-environment": "/study-geography",

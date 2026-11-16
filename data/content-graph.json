@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 894,
-  "edges": 8464,
+  "nodes": 896,
+  "edges": 8481,
   "silos": 35,
   "clusters": 190,
   "pillars": 34
@@ -5276,6 +5276,30 @@
    "type": "study-material",
    "template": "",
    "title": "Chapter 2: Physical Features and Rivers of Punjab (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-physical-features-and-rivers-of-punjab-notes-punjabi",
+   "url": "/material-physical-features-and-rivers-of-punjab-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "url": "/material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -13202,6 +13226,12 @@
   {
    "from": "archive-category-geography-of-punjab.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-geography-of-punjab.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -24193,6 +24223,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -33379,6 +33415,12 @@
   },
   {
    "from": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-english.html",
    "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
    "rel": "related-pdf",
    "weight": 1
@@ -33390,9 +33432,87 @@
    "weight": 1
   },
   {
-   "from": "material-physical-features-and-rivers-of-punjab-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
-   "rel": "related-study-material",
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "pa/study-geography-of-punjab.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -33655,13 +33775,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33739,13 +33859,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -36301,14 +36421,14 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
-   "rel": "related-study-material",
+   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -36385,14 +36505,14 @@
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
    "rel": "related-pdf",
    "weight": 1
   },
   {
    "from": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
-   "rel": "related-study-material",
+   "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
+   "rel": "related-pdf",
    "weight": 1
   },
   {
@@ -48211,6 +48331,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -48218,12 +48344,6 @@
   {
    "from": "pdfs.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -60955,6 +61075,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -61303,6 +61429,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -61310,12 +61442,6 @@
   {
    "from": "study-notes.html",
    "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-reasoning-analogy-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

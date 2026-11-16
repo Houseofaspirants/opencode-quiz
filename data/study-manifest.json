@@ -752,20 +752,20 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 47,
+      "count": 48,
       "newest": "2026-11-16",
-      "totalSize": 93272326,
-      "chapters": 43,
+      "totalSize": 94977447,
+      "chapters": 44,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 47,
-          "chapters": 43,
-          "pages": 231,
-          "totalSize": 93272326,
+          "files": 48,
+          "chapters": 44,
+          "pages": 235,
+          "totalSize": 94977447,
           "newest": "2026-11-16",
           "categories": 10,
           "regions": 2
@@ -1430,10 +1430,10 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 23,
-              "chapters": 23,
-              "pages": 110,
-              "totalSize": 40695385,
+              "files": 24,
+              "chapters": 24,
+              "pages": 114,
+              "totalSize": 42400506,
               "newest": "2026-11-16",
               "categories": 5
             },
@@ -1718,10 +1718,10 @@
                   "geography-of-punjab"
                 ],
                 "stats": {
-                  "files": 3,
-                  "chapters": 3,
-                  "pages": 14,
-                  "totalSize": 5370324,
+                  "files": 4,
+                  "chapters": 4,
+                  "pages": 18,
+                  "totalSize": 7075445,
                   "newest": "2026-11-16"
                 },
                 "languages": [
@@ -1730,7 +1730,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
                         "id": "01 - ਪੰਜਾਬ ਦੇ ਖੇਤਰ, ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
@@ -1742,6 +1742,17 @@
                           }
                         ],
                         "pages": 5
+                      },
+                      {
+                        "id": "02 - ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ",
+                        "name": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ",
+                        "parts": [
+                          {
+                            "file": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 4
                       }
                     ]
                   },
@@ -1880,7 +1891,7 @@
       },
       "counts": {
         "en": 24,
-        "pa": 23
+        "pa": 24
       },
       "pages": {
         "en": "study-gk.html",
@@ -2647,16 +2658,16 @@
       "color": "#10b981",
       "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
       "order": 17,
-      "count": 3,
+      "count": 4,
       "newest": "2026-11-16",
-      "totalSize": 5370324,
+      "totalSize": 7075445,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "01 - ਪੰਜਾਬ ਦੇ ਖੇਤਰ, ਪ੍ਰਸ਼ਾਸਨ ਅਤੇ ਸਥਿਤੀ",
@@ -2668,6 +2679,17 @@
                 }
               ],
               "pages": 5
+            },
+            {
+              "id": "02 - ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ",
+              "name": "ਅਧਿਆਇ 2: ਪੰਜਾਬ ਦੀਆਂ ਭੌਤਿਕ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਦਰਿਆ",
+              "parts": [
+                {
+                  "file": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 4
             }
           ]
         },
@@ -2703,11 +2725,11 @@
           ]
         }
       ],
-      "chapters": 3,
+      "chapters": 4,
       "hidden": true,
       "counts": {
         "en": 2,
-        "pa": 1
+        "pa": 2
       },
       "pages": {
         "en": "study-geography-of-punjab.html",
@@ -2820,6 +2842,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 95,
+  "total": 96,
   "generatedBy": "scripts/study_material.py"
 }
