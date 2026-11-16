@@ -24,7 +24,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 
 | # | URL | Type | Title (chars) | Meta description (chars) | H1 | Intro words | Schema |
 | ---: | --- | --- | --- | --- | --- | ---: | --- |
-| 1 | `/subject-gk` | subject | General Knowledge Quiz: Free MCQs for Punjab Exams (50) | 160 | General Knowledge MCQs for Punjab Exams | 366 | BreadcrumbList, FAQPage, WebPage |
+| 1 | `/subject-gk` | subject | General Knowledge Quiz: Free MCQs for Punjab Exams (50) | 157 | General Knowledge MCQs for Punjab Exams | 366 | BreadcrumbList, FAQPage, WebPage |
 | 2 | `/subject-quant` | subject | Quantitative Aptitude Quiz: Free MCQs for Punjab Exams (54) | 160 | Quantitative Aptitude MCQs for Punjab Exams | 324 | BreadcrumbList, FAQPage, WebPage |
 | 3 | `/subject-reasoning` | subject | Reasoning Quiz: Free MCQs for Punjab Exams (42) | 152 | Reasoning MCQs for Punjab Exams | 317 | BreadcrumbList, FAQPage, WebPage |
 | 4 | `/subject-punjabi` | subject | Punjabi Quiz: Free MCQs for Punjab Exams (40) | 149 | Punjabi MCQs for Punjab Exams | 322 | BreadcrumbList, FAQPage, WebPage |
@@ -249,8 +249,8 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 223 | `/quiz-gk-01-making-of-the-indian-constitution-part2` | quiz | Making of the Indian Constitution - Part 2 Quiz - Free MCQs (59) | 146 | Making of the Indian Constitution - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
 | 224 | `/quiz-gk-national-income-part-1` | quiz | National Income - Part 1 Quiz (16 MCQs) - Free Online Test (58) | 158 | National Income - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 225 | `/quiz-gk-national-income-part-2` | quiz | National Income - Part 2 Quiz (16 MCQs) - Free Online Test (58) | 158 | National Income - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
-| 226 | `/quiz-gk-physical-features-and-rivers-of-punjab-part-1` | quiz | Physical Features and Rivers of Punjab - Part 1 Quiz (52) | 148 | Physical Features and Rivers of Punjab - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
-| 227 | `/quiz-gk-physical-features-and-rivers-of-punjab-part-2` | quiz | Physical Features and Rivers of Punjab - Part 2 Quiz (52) | 148 | Physical Features and Rivers of Punjab - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
+| 226 | `/quiz-gk-physical-features-and-rivers-of-punjab-part-1` | quiz | Physical Features and Rivers of Punjab - Part 1 Quiz (52) | 151 | Physical Features and Rivers of Punjab - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
+| 227 | `/quiz-gk-physical-features-and-rivers-of-punjab-part-2` | quiz | Physical Features and Rivers of Punjab - Part 2 Quiz (52) | 151 | Physical Features and Rivers of Punjab - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
 | 228 | `/quiz-gk-02-preamble-and-parts-of-the-constitution-part1` | quiz | Preamble and Parts of the Constitution - Part 1 Quiz (52) | 151 | Preamble and Parts of the Constitution - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
 | 229 | `/quiz-gk-02-preamble-and-parts-of-the-constitution-part2` | quiz | Preamble and Parts of the Constitution - Part 2 Quiz (52) | 151 | Preamble and Parts of the Constitution - Part 2 | - | BreadcrumbList, FAQPage, WebPage |
 | 230 | `/quiz-gk-01-punjabi-language-script-calendar-part-1` | quiz | Punjabi Language, Script and Calendar - Part 1 Quiz (51) | 149 | Punjabi Language, Script and Calendar - Part 1 | - | BreadcrumbList, FAQPage, WebPage |
@@ -614,7 +614,7 @@ python3 scripts/seo_check.py            # gate (must exit 0)
 | 588 | `/pa/category-current-affairs-september` | category-pa | Current Affairs September MCQ in Punjabi | ਸਤੰਬਰ ਕਰੰਟ (53) | 155 | ਸਤੰਬਰ ਕਰੰਟ ਅਫੇਅਰਜ਼ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 28 | BreadcrumbList, FAQPage, WebPage |
 | 589 | `/pa/category-current-affairs-august` | category-pa | August 2026 MCQ ਪੰਜਾਬੀ ਵਿੱਚ | August 2026 MCQ in Punjabi (56) | 153 | August 2026 MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 29 | BreadcrumbList, FAQPage, WebPage |
 | 590 | `/pa/category-current-affairs-july` | category-pa | Current Affairs July MCQ in Punjabi | ਜੁਲਾਈ ਕਰੰਟ ਅਫੇਅਰਜ਼ (56) | 150 | ਜੁਲਾਈ ਕਰੰਟ ਅਫੇਅਰਜ਼ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 28 | BreadcrumbList, FAQPage, WebPage |
-| 591 | `/pa/subject-gk` | subject-pa | ਜਨਰਲ ਨਾਲੇਜ MCQ ਪੰਜਾਬੀ ਵਿੱਚ (26) | 152 | ਜਨਰਲ ਨਾਲੇਜ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 7 | BreadcrumbList, FAQPage, WebPage |
+| 591 | `/pa/subject-gk` | subject-pa | ਜਨਰਲ ਨਾਲੇਜ MCQ ਪੰਜਾਬੀ ਵਿੱਚ (26) | 153 | ਜਨਰਲ ਨਾਲੇਜ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 7 | BreadcrumbList, FAQPage, WebPage |
 | 592 | `/pa/subject-quant` | subject-pa | ਗਣਿਤ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | Quantitative Aptitude MCQ in Punjabi (59) | 146 | ਗਣਿਤ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 7 | BreadcrumbList, FAQPage, WebPage |
 | 593 | `/pa/subject-reasoning` | subject-pa | ਰੀਜ਼ਨਿੰਗ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | Reasoning MCQ in Punjabi (51) | 150 | ਰੀਜ਼ਨਿੰਗ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 7 | BreadcrumbList, FAQPage, WebPage |
 | 594 | `/pa/subject-punjabi` | subject-pa | ਪੰਜਾਬੀ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | Punjabi MCQ in Punjabi (47) | 147 | ਪੰਜਾਬੀ MCQ ਪੰਜਾਬੀ ਵਿੱਚ | 7 | BreadcrumbList, FAQPage, WebPage |
