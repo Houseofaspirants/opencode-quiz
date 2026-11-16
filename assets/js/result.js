@@ -94,6 +94,19 @@
     { v: r.accuracy + "%", l: say("ਸ਼ੁੱਧਤਾ", "Accuracy"), c: r.accuracy >= 60 ? "ok" : "bad" },
     { v: r.percent + "%", l: say("ਪ੍ਰਤੀਸ਼ਤ", "Percentage"), c: r.percent >= 40 ? "ok" : "bad" },
     { v: `${r.score}/${r.total}`, l: say("ਅੰਤਿਮ ਸਕੋਰ", "Final Score"), c: "" },
+    // Exam-pattern mock: marks exactly as the real paper counts them.
+    ...(r.marks ? [{
+      v: `${r.marks.got}/${r.marks.max}`,
+      l: r.marks.negative
+        ? say(`ਅੰਕ (ਗਲਤ ਉੱਤੇ −${r.marks.negative})`, `Marks (−${r.marks.negative} per wrong)`)
+        : say("ਅੰਕ", "Marks"),
+      c: r.marks.got >= r.marks.max * 0.4 ? "ok" : "bad",
+    }] : []),
+    ...(r.marks && r.marks.qualMax ? [{
+      v: `${r.marks.qualGot}/${r.marks.qualMax}`,
+      l: say("ਪੰਜਾਬੀ ਕੁਆਲੀਫਾਇੰਗ (50% ਲੋੜੀਂਦੇ)", "Punjabi qualifying (50% needed)"),
+      c: r.marks.qualGot >= r.marks.qualMax / 2 ? "ok" : "bad",
+    }] : []),
     { v: fmtTime(r.seconds), l: say("ਲੱਗਿਆ ਸਮਾਂ", "Time Taken"), c: "" },
     { v: r.passed ? say("ਪਾਸ", "PASS") : say("ਫੇਲ੍ਹ", "FAIL"), l: say(`ਪਾਸ ≥ ${r.passLine}%`, `Pass ≥ ${r.passLine}%`), c: r.passed ? "ok" : "bad" },
   ];

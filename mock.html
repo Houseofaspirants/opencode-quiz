@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Mock Test - Punjab Police, PSSSB &amp; PPSC | House of Aspirants</title>
-  <meta name="description" content="Build a full-length mock test from any subject with a custom question count and time limit - exam-style practice for Punjab Police, PSSSB, PPSC and PSPCL.">
+  <meta name="description" content="Free mock tests in the real exam pattern for Punjab Police Constable, SI, Head Constable and PSSSB - same sections, time and marking, and no repeated questions.">
   <meta name="keywords" content="Mock Test, Free Mock Test, Punjab Police Mock Test, PSSSB Mock Test, PPSC Mock Test, PSPCL Mock Test, Online Practice Test, Previous Year Questions, Exam Simulation">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#4f46e5">
@@ -13,20 +13,20 @@
   <meta property="og:site_name" content="House of Aspirants">
   <meta property="og:url" content="https://houseofaspirants.in/mock">
   <meta property="og:title" content="Mock Test - Punjab Police, PSSSB &amp; PPSC | House of Aspirants">
-  <meta property="og:description" content="Build a full-length mock test from any subject with a custom question count and time limit - exam-style practice for Punjab Police, PSSSB, PPSC and PSPCL.">
+  <meta property="og:description" content="Free mock tests in the real exam pattern for Punjab Police Constable, SI, Head Constable and PSSSB - same sections, time and marking, and no repeated questions.">
   <meta property="og:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <meta property="og:locale" content="en_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mock Test - Punjab Police, PSSSB &amp; PPSC | House of Aspirants">
-  <meta name="twitter:description" content="Build a full-length mock test from any subject with a custom question count and time limit - exam-style practice for Punjab Police, PSSSB, PPSC and PSPCL.">
+  <meta name="twitter:description" content="Free mock tests in the real exam pattern for Punjab Police Constable, SI, Head Constable and PSSSB - same sections, time and marking, and no repeated questions.">
   <meta name="twitter:image" content="https://houseofaspirants.in/assets/img/og-cover.png">
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css?v=107" as="style">
-  <link rel="stylesheet" href="assets/css/style.css?v=107">
-  <link rel="preload" href="assets/css/quiz.css?v=107" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css?v=107">
+  <link rel="preload" href="assets/css/style.css?v=108" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=108">
+  <link rel="preload" href="assets/css/quiz.css?v=108" as="style">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=108">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,7 +38,7 @@
         "publisher": { "@id": "https://houseofaspirants.in/#organization" },
         "url": "https://houseofaspirants.in/mock",
         "name": "Mock Test - Punjab Police, PSSSB & PPSC | House of Aspirants",
-        "description": "Build a full-length mock test from any subject with a custom question count and time limit - exam-style practice for Punjab Police, PSSSB, PPSC and PSPCL.",
+        "description": "Free mock tests in the real exam pattern for Punjab Police Constable, SI, Head Constable and PSSSB - same sections, time and marking, and no repeated questions.",
         "breadcrumb": {
           "@id": "https://houseofaspirants.in/mock#breadcrumb"
         },
@@ -82,8 +82,13 @@
       },
       {
         "@type": "Question",
-        "name": "Can I set my own time limit for a mock test?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. You choose 15, 30, 60, 100 or 120 minutes and 25 to 200 questions, so the same builder works for a quick section drill or a full-length 100 or 120 minute paper." }
+        "name": "Is the mock test in the real exam pattern?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Choose your exam and the mock copies its official pattern: the same sections, the same number of questions in each, the same time and negative marking, with an easy, medium and hard mix." }
+      },
+      {
+        "@type": "Question",
+        "name": "Will a mock test repeat questions I have already seen?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Every mock remembers the questions it has served you and draws unseen ones first. Questions come back only once the bank for that paper runs out, oldest first." }
       },
       {
         "@type": "Question",
@@ -116,15 +121,16 @@
         <nav class="breadcrumb" aria-label="Breadcrumb">
           <a href="./">Home</a><span>/</span><span>Mock Tests</span>
         </nav>
-        <span class="eyebrow">Full Length Tests</span>
-        <h1>Mock Test Builder</h1>
+        <span class="eyebrow">Exam-Pattern Mock Tests</span>
+        <h1>Mock Test</h1>
         <p class="muted" id="mockStatus">Loading available questions…</p>
         <div class="answer-box">
           <span class="ab-label">Quick answer</span>
           <p>
-            A mock test is a full-length, timed paper you build yourself — choose the
-            scope, set the time limit, attempt it under exam conditions, then review
-            every answer with its explanation.
+            Pick the exam you are preparing for and get a full mock in its real
+            pattern: the same sections, the same number of questions, the same
+            time and negative marking, with an easy, medium and hard mix like the
+            real paper. Questions you have already been served are not repeated.
           </p>
         </div>
       </div>
@@ -132,17 +138,17 @@
 
     <section class="section">
       <div class="container grid grid-2" style="align-items:start">
-        <!-- ============================================ SUBJECT CHOICE -->
+        <!-- ============================================ STEP 1: EXAM -->
         <div class="card card-pad">
           <span class="eyebrow">Step 1</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:16px">Choose scope</h2>
-          <div class="grid" id="mockSubjects" style="gap:10px">
+          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:4px">Which exam are you preparing for?</h2>
+          <p class="muted text-sm" style="margin-bottom:16px">ਤੁਸੀਂ ਕਿਹੜੇ ਪੇਪਰ ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ?</p>
+          <div class="grid" id="mockExams" role="radiogroup" aria-label="Exam" style="gap:10px">
             <div class="skeleton" style="height:52px"></div>
             <div class="skeleton" style="height:52px"></div>
             <div class="skeleton" style="height:52px"></div>
           </div>
           <p class="muted text-sm mt-2">
-            Scopes are built from whatever set files exist — nothing is hardcoded.
             For a full revision cycle, mix mocks with
             <a class="ilink" href="subject?subject=gk">Previous Year Questions</a>,
             <a class="ilink" href="subject?subject=current-affairs">Expected MCQs</a>
@@ -150,16 +156,27 @@
           </p>
         </div>
 
-        <!-- ============================================ SETTINGS -->
+        <!-- ============================================ STEP 2: PAPER -->
         <div class="card card-pad">
           <span class="eyebrow">Step 2</span>
-          <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:16px">Test settings</h2>
-          <div class="mock-presets" role="group" aria-label="Quick presets">
-            <button type="button" class="btn btn-soft" data-preset="100,120">📝 Full paper · 100 Q · 120 min</button>
-            <button type="button" class="btn btn-soft" data-preset="100,100">⚡ 100 Q · 100 min</button>
+          <h2 id="mockStep2Title" style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:16px">Exam pattern</h2>
+
+          <div id="mockPlanWrap" class="grid" style="gap:14px">
+            <div class="mock-presets" id="mockPapers" role="group" aria-label="Paper"></div>
+            <div style="overflow-x:auto">
+              <table class="mock-plan" id="mockPlan" style="width:100%;border-collapse:collapse"></table>
+            </div>
+            <ul class="text-sm" id="mockFacts" style="display:grid;gap:6px"></ul>
+            <p class="text-sm" id="mockFresh"></p>
+            <p class="text-sm" id="mockGuide"></p>
           </div>
 
-          <div class="grid" style="gap:16px">
+          <!-- Custom mock: the free builder -->
+          <div id="mockCustom" class="grid hidden" style="gap:16px">
+            <div class="field">
+              <label>Scope</label>
+              <div class="grid" id="mockSubjects" style="gap:10px"></div>
+            </div>
             <div class="field">
               <label for="mockCount">Number of questions</label>
               <select id="mockCount">
@@ -170,7 +187,6 @@
                 <option value="200">200 questions (both papers)</option>
               </select>
             </div>
-
             <div class="field">
               <label for="mockMinutes">Time limit</label>
               <select id="mockMinutes">
@@ -181,29 +197,31 @@
                 <option value="120" selected>120 minutes</option>
               </select>
             </div>
-
             <div class="field">
-              <label for="mockPattern">Question mix</label>
-              <select id="mockPattern">
-                <option value="exam" selected>Exam pattern (subject weightage of the real paper)</option>
+              <label for="mockMix">Question mix</label>
+              <select id="mockMix">
+                <option value="exam" selected>Exam weightage</option>
                 <option value="equal">Equal from every subject</option>
               </select>
             </div>
+          </div>
 
+          <div class="grid" style="gap:16px;margin-top:16px">
+            <div class="card card-pad" id="mockAccount" style="box-shadow:none"></div>
             <div class="field">
               <label>Rules</label>
               <ul class="text-sm muted" style="display:grid;gap:6px">
-                <li>• Questions mixed across subjects and chapters, in sections like the real paper</li>
+                <li>• No repeats: questions you have already been served come back only after the bank runs out</li>
                 <li>• One overall countdown, no per-question cut-off</li>
-                <li>• Answers auto-save; you can leave and resume</li>
+                <li>• Answers auto-save; you can leave and resume the same paper</li>
                 <li>• Answers lock automatically when time ends</li>
-                <li>• Full answer review with explanations after submit</li>
+                <li>• Marks with negative marking, plus a full answer review, after submit</li>
               </ul>
             </div>
-
             <button class="btn btn-primary btn-lg btn-block" id="mockStart" disabled>
               🚀 Start Mock Test
             </button>
+            <button type="button" class="btn btn-ghost btn-sm" id="mockResetSeen">↺ Reset my seen questions</button>
           </div>
         </div>
       </div>
@@ -236,8 +254,12 @@
             <p>An MCQ set is a short, topic-focused collection of questions. A mock test is a full-length, timed paper drawn from several subjects under exam conditions, which is the closest rehearsal to the real examination.</p>
           </div>
           <div class="faq-item">
-            <h3>Can I set my own time limit?</h3>
-            <p>Yes. You choose 15, 30, 60, 100 or 120 minutes and 25 to 200 questions, so the same builder works for a quick section drill or a full-length 100 or 120 minute paper.</p>
+            <h3>Is the mock test in the real exam pattern?</h3>
+            <p>Yes. Choose your exam and the mock copies its official pattern: the same sections, the same number of questions in each, the same time and negative marking, with an easy, medium and hard mix.</p>
+          </div>
+          <div class="faq-item">
+            <h3>Will a mock test repeat questions I have already seen?</h3>
+            <p>No. Every mock remembers the questions it has served you and draws unseen ones first. Questions come back only once the bank for that paper runs out, oldest first.</p>
           </div>
           <div class="faq-item">
             <h3>What happens when the timer runs out?</h3>
@@ -269,8 +291,8 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js?v=107" defer></script>
-  <script src="assets/js/auth.js?v=107" defer></script>
-  <script src="assets/js/mock.js?v=107" defer></script>
+  <script src="assets/js/core.js?v=108" defer></script>
+  <script src="assets/js/auth.js?v=108" defer></script>
+  <script src="assets/js/mock.js?v=108" defer></script>
 </body>
 </html>

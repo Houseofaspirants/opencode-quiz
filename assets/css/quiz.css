@@ -598,3 +598,8 @@
 @media (max-width: 899px) {
   body[data-page="quiz"] .site-header { position: static; }
 }
+
+/* Mock test: the exam's section table (mock.html) */
+.mock-plan th, .mock-plan td { padding: 9px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; font-size: 0.92rem; }
+.mock-plan thead th { font-size: 0.78rem; color: var(--text-2); text-transform: uppercase; letter-spacing: .03em; }
+.mock-plan tfoot th { border-bottom: 0; }

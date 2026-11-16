@@ -2729,7 +2729,46 @@ const HOA = (() => {
     );
   }
 
+  /* ============================================ MOCK: SEEN QUESTIONS ==== */
+  /* Every question a mock test has served, so the next mock serves fresh
+     ones. A question is identified by subject/topic/position - the same in
+     every language edition (variants must agree on order), so switching to
+     Punjabi never makes an English-seen question look new. Stored as short
+     FNV-1a hashes in recency order (oldest first); when a pool runs dry the
+     oldest-seen questions come back first. Read by mock.js and quiz.js. */
+  const SEEN_KEY = "mockSeen";
+  const SEEN_MAX = 20000;
+  const seenHash = (s) => {
+    let h = 0x811c9dc5;
+    for (let i = 0; i < s.length; i++) {
+      h ^= s.charCodeAt(i);
+      h = Math.imul(h, 0x01000193) >>> 0;
+    }
+    return h.toString(36);
+  };
+  const seen = {
+    /** Hash for question #n (1-based) of a topic. */
+    key: (subject, topicId, n) => seenHash(`${subject}/${topicId}#${n}`),
+    /** Map hash -> recency rank (0 = seen longest ago). */
+    ranks() {
+      const raw = String(db.get(SEEN_KEY, "") || "");
+      const m = new Map();
+      raw.split(",").forEach((h, i) => { if (h) m.set(h, i); });
+      return m;
+    },
+    /** Mark hashes as just seen (moved to the most-recent end). */
+    add(hashes) {
+      const m = seen.ranks();
+      hashes.forEach((h) => m.delete(h));
+      const list = [...m.keys(), ...hashes];
+      db.set(SEEN_KEY, list.slice(-SEEN_MAX).join(","));
+    },
+    count: () => seen.ranks().size,
+    clear: () => db.remove(SEEN_KEY),
+  };
+
   return {
+    seen,
     db, loadIndex, loadQuestions, normalizeQuestions, loadStudySubjects, questionHtml,
     toast, esc, seo, countUp, fmtTime, uid, langBadge,
     fileUrl,

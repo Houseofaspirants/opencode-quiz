@@ -215,6 +215,7 @@
        an equal split), and inside a subject the questions are spread over as
        many chapters as possible instead of draining one chapter first. The
        paper is then laid out in sections, subject by subject, like the exam. */
+    if (mode === "mock" && params.get("exam")) return resolveExamMock(params.get("exam") || "");
     if (mode === "mock") {
       const wantSubject = params.get("subject") || "all";
       const count = Math.max(5, Number(params.get("count")) || 100);
@@ -262,19 +263,34 @@
         left -= given;
       }
 
-      // Inside a subject: as many different chapters as the quota allows.
+      // Inside a subject: as many different chapters as the quota allows,
+      // chapters with the most unseen questions first.
+      const seenRanks = HOA.seen.ranks();
+      const freshIn = (sid, t) => {
+        let n = 0;
+        for (let k = 1; k <= t.count; k++) if (!seenRanks.has(HOA.seen.key(sid, t.id, k))) n++;
+        return n / (t.count || 1);
+      };
       const sections = await Promise.all(src.map(async (x) => {
         const want = quota.get(x);
         if (!want) return [];
-        const topics = shuffleWith([...x.topics], rand);
+        const topics = shuffleWith([...x.topics], rand)
+          .sort((a, b) => freshIn(x.s.id, b) - freshIn(x.s.id, a));
         const used = topics.slice(0, Math.min(topics.length, want));
         const loaded = await Promise.all(used.map(async (t) => {
           try {
             // Mock pools honour the reader's language the same way a topic quiz
             // does; a set with no translation stays in English rather than failing.
             const data = await HOA.loadQuestions(pickVariantFile(t));
-            return shuffleWith([...data.questions], rand).map((q) =>
-              ({ ...q, subject: q.subject || x.s.id, topic: q.topic || t.name }));
+            // Never-served questions first, then the ones seen longest ago.
+            const rk = (q) => {
+              const r = seenRanks.get(HOA.seen.key(x.s.id, t.id, q.id));
+              return r === undefined ? -1 : r;
+            };
+            return shuffleWith([...data.questions], rand)
+              .sort((a, b) => rk(a) - rk(b))
+              .map((q) => ({ ...q, subject: q.subject || x.s.id, topic: q.topic || t.name,
+                _seen: HOA.seen.key(x.s.id, t.id, q.id) }));
           } catch { return []; /* ignore missing file */ }
         }));
         const out = [];
@@ -289,6 +305,7 @@
         return shuffleWith(out, rand);
       }));
       const questions = sections.flat();
+      HOA.seen.add(questions.map((q) => q._seen).filter(Boolean));
 
       const name = wantSubject === "all"
         ? "Full Length Mock Test"
@@ -417,6 +434,225 @@
             pa: variants.pa ? `pa${topic.landing}` : "" }
         : null,
     };
+  }
+
+  /* ================================== 1b. EXAM-PATTERN MOCK (no repeats) = */
+  /* quiz.html?mode=mock&exam=<id>&paper=<id>&t=<stamp>
+     The paper copies the real exam from data/mock-patterns.json: the same
+     sections in the same order with the same number of questions, the same
+     time, marking and negative marking. Inside each section:
+       1. questions this student has never been served come first
+          (HOA.seen, shared by every mock), then the ones seen longest ago;
+       2. the easy / medium / hard split follows the exam's mix, untagged
+          questions filling any shortfall;
+       3. picks are spread over as many chapters as possible;
+       4. no question appears twice - by id, and by wording, so a question
+          duplicated in two sets is still caught.
+     The served paper is saved under "mockPaper" so a reload or a resume
+     shows the SAME questions instead of drawing (and burning) a new set. */
+
+  /** Difficulty tag → easy | medium | hard | "" (untagged). */
+  const diffOf = (d) => {
+    const s = String(d || "").toLowerCase();
+    if (/easy|simple/.test(s)) return "easy";
+    if (/hard|difficult|tough/.test(s)) return "hard";
+    if (/medium|moderate|average/.test(s)) return "medium";
+    return "";
+  };
+
+  /** Largest-remainder split of n by a {easy, medium, hard} percentage mix. */
+  function splitMix(n, mix) {
+    const keys = ["easy", "medium", "hard"];
+    const W = keys.reduce((a, k) => a + (Number(mix[k]) || 0), 0) || 1;
+    const exact = keys.map((k) => (n * (Number(mix[k]) || 0)) / W);
+    const out = keys.map((k, i) => ({ k, n: Math.floor(exact[i]), r: exact[i] % 1 }));
+    let left = n - out.reduce((a, x) => a + x.n, 0);
+    [...out].sort((a, b) => b.r - a.r).forEach((x) => { if (left > 0) { x.n++; left--; } });
+    return Object.fromEntries(out.map((x) => [x.k, x.n]));
+  }
+
+  async function resolveExamMock(examId) {
+    /** @type {any} */
+    let cfg;
+    try {
+      const res = await fetch("data/mock-patterns.json", { cache: "no-cache" });
+      cfg = await res.json();
+    } catch { return null; }
+    const exam = (cfg.exams || []).find((e) => e.id === examId);
+    if (!exam || !(exam.papers || []).length) return null;
+    const paper = exam.papers.find((p) => p.id === params.get("paper")) || exam.papers[0];
+    const stamp = params.get("t") || String(Date.now());
+    const key = `mock:${exam.id}:${paper.id}:${stamp}`;
+    const mix = { ...(cfg.difficulty || {}), ...(exam.difficulty || {}) };
+    const expand = (list) =>
+      (list || []).flatMap((x) => (String(x).startsWith("@") ? cfg[String(x).slice(1)] || [] : [x]));
+    const findTopic = (sid, tid) => {
+      const s = SUBJECTS.find((x) => x.id === sid);
+      const t = s && s.topics.find((x) => x.id === tid);
+      return s && t ? { s, t } : null;
+    };
+    const loaded = new Map();
+    const load = (t) => {
+      const f = pickVariantFile(t);
+      if (!loaded.has(f)) loaded.set(f, HOA.loadQuestions(f).then((d) => d.questions).catch(() => []));
+      return loaded.get(f);
+    };
+    const secMeta = (si) => {
+      const sec = paper.sections[si] || {};
+      return {
+        section: sec.name || "",
+        mk: Number(sec.marks ?? paper.marks ?? 1),
+        neg: Number(sec.negative ?? paper.negative ?? 0),
+        qual: !!sec.qualifying,
+      };
+    };
+    const shape = (q, s, t, si) =>
+      ({ ...q, subject: q.subject || s.id, topic: q.topic || t.name, ...secMeta(si) });
+
+    /* ---- Resume: the same paper, rebuilt from its saved question list. */
+    const saved = HOA.db.get("mockPaper");
+    if (saved && saved.key === key && Array.isArray(saved.items)) {
+      const questions = [];
+      for (const it of saved.items) {
+        const hit = findTopic(it.s, it.t);
+        if (!hit) continue;
+        const list = await load(hit.t);
+        const q = list[it.n - 1];
+        if (q) questions.push(shape(q, hit.s, hit.t, it.si));
+      }
+      if (questions.length) return examQuiz(questions);
+    }
+
+    /* ---- Build a fresh paper. */
+    const ranks = HOA.seen.ranks();
+    const rand = mulberry32((Date.now() ^ Math.floor(Math.random() * 1e9)) >>> 0);
+    const usedKeys = new Set();
+    const usedText = new Set();
+    const norm = (q) => String(q.q).toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
+    const items = [];      // saved paper: { s, t, n, si }
+    const questions = [];
+
+    /* Round-robin over chapters so one chapter never fills a section. */
+    const takeSpread = (list, n) => {
+      const groups = new Map();
+      list.forEach((c) => {
+        const g = groups.get(c.tk) || [];
+        g.push(c);
+        groups.set(c.tk, g);
+      });
+      const lists = shuffleWith([...groups.values()], rand);
+      const out = [];
+      for (let r = 0; out.length < n; r++) {
+        let any = false;
+        for (const g of lists) {
+          if (out.length >= n) break;
+          if (r < g.length) { out.push(g[r]); any = true; }
+        }
+        if (!any) break;
+      }
+      return out;
+    };
+
+    for (let si = 0; si < paper.sections.length; si++) {
+      const sec = paper.sections[si];
+      const want = Math.max(0, Number(sec.questions) || 0);
+      if (!want) continue;
+      const inc = new Set(expand(sec.from));
+      const exc = new Set(expand(sec.exclude));
+      const topics = [];
+      for (const s of SUBJECTS) {
+        for (const t of s.topics) {
+          if (!t.available || !t.count) continue;
+          const ids = [s.id, `${s.id}/${t.category || ""}`];
+          if (!ids.some((x) => inc.has(x)) || ids.some((x) => exc.has(x))) continue;
+          let fresh = 0;
+          for (let n = 1; n <= t.count; n++) if (!ranks.has(HOA.seen.key(s.id, t.id, n))) fresh++;
+          topics.push({ s, t, fresh });
+        }
+      }
+      if (!topics.length) continue;
+
+      // Chapters with the most unseen questions first; load enough of them
+      // for a real choice (2x the section) without fetching every file.
+      const ordered = shuffleWith(topics, rand)
+        .sort((a, b) => b.fresh / b.t.count - a.fresh / a.t.count);
+      const use = [];
+      let freshSum = 0;
+      for (const x of ordered) {
+        use.push(x);
+        freshSum += x.fresh;
+        if (use.length >= Math.min(ordered.length, Math.ceil(want / 2)) && freshSum >= want * 2) break;
+      }
+
+      const cands = [];
+      const lists = await Promise.all(use.map((x) => load(x.t)));
+      use.forEach((x, k) => {
+        lists[k].forEach((q, idx) => {
+          const n = idx + 1;
+          const h = HOA.seen.key(x.s.id, x.t.id, n);
+          if (q.correct === null || !q.options.length) return;
+          cands.push({
+            q, x, n, h, tk: x.s.id + "/" + x.t.id,
+            rank: ranks.has(h) ? Number(ranks.get(h)) : -1,
+            d: diffOf(q.difficulty), txt: norm(q),
+          });
+        });
+      });
+      const fresh = shuffleWith(cands.filter((c) => c.rank < 0), rand);
+      const old = cands.filter((c) => c.rank >= 0).sort((a, b) => a.rank - b.rank);
+
+      const chosen = [];
+      const need = splitMix(want, mix);
+      const accept = (arr, bucket) => {
+        for (const c of arr) {
+          if (chosen.length >= want) break;
+          if (bucket && need[bucket] <= 0) break;
+          if (usedKeys.has(c.h) || (c.txt && usedText.has(c.txt))) continue;
+          chosen.push(c);
+          usedKeys.add(c.h);
+          if (c.txt) usedText.add(c.txt);
+          if (bucket) need[bucket]--;
+        }
+      };
+      for (const pool of [fresh, old]) {
+        const open = () => pool.filter((c) => !usedKeys.has(c.h));
+        for (const b of ["easy", "medium", "hard"]) {
+          if (need[b] > 0) accept(takeSpread(open().filter((c) => c.d === b), need[b] * 2), b);
+        }
+        if (chosen.length < want) accept(takeSpread(open().filter((c) => !c.d), (want - chosen.length) * 2));
+        if (chosen.length < want) accept(takeSpread(open(), (want - chosen.length) * 2));
+      }
+
+      shuffleWith(chosen, rand).forEach((c) => {
+        questions.push(shape(c.q, c.x.s, c.x.t, si));
+        items.push({ s: c.x.s.id, t: c.x.t.id, n: c.n, si });
+      });
+    }
+    if (!questions.length) return null;
+
+    HOA.seen.add(items.map((it) => HOA.seen.key(it.s, it.t, it.n)));
+    HOA.db.set("mockPaper", { key, items });
+    return examQuiz(questions);
+
+    function examQuiz(qs) {
+      const title = `${exam.name} · ${paper.name}`;
+      const neg = Number(paper.negative) || 0;
+      return {
+        title: `${title} Mock Test`,
+        subject: "all",
+        subjectName: title,
+        topicName: `${qs.length} Q · ${paper.minutes} min` +
+          (neg ? ` · −${neg} per wrong` : ""),
+        key,
+        exam: exam.id,
+        marking: true,
+        href: `mock.html?exam=${encodeURIComponent(exam.id)}&paper=${encodeURIComponent(paper.id)}`,
+        questions: qs,
+        defaultSeconds: Number(site.questionSeconds) || 30,
+        overall: (Number(paper.minutes) || 120) * 60,
+        noQuestionTimer: true,
+      };
+    }
   }
 
   /* --------------------------------------------- tiny seeded RNG helpers - */
@@ -877,6 +1113,22 @@
     const percent = total ? Math.round((correct / total) * 100) : 0;
     const passLine = Number(site.passPercent) || 40;
     const passed = percent >= passLine;
+    /* Exam-pattern mocks score like the real paper: marks per question,
+       negative marking per wrong answer, qualifying parts reported apart. */
+    let marks = null;
+    if (QUIZ.marking) {
+      const m = { got: 0, max: 0, qualGot: 0, qualMax: 0, negative: 0 };
+      QUIZ.questions.forEach((q, i) => {
+        const mk = Number(q.mk) || 1;
+        const neg = Number(q.neg) || 0;
+        const st = review[i].status;
+        const v = st === "correct" ? mk : st === "wrong" ? -neg : 0;
+        if (q.qual) { m.qualGot += v; m.qualMax += mk; }
+        else { m.got += v; m.max += mk; if (neg) m.negative = neg; }
+      });
+      const r2 = (x) => Math.round(x * 100) / 100;
+      marks = { got: r2(m.got), max: m.max, qualGot: r2(m.qualGot), qualMax: m.qualMax, negative: m.negative };
+    }
 
     const result = {
       id: uid(),
@@ -895,6 +1147,7 @@
       total, attempted: attemptedN, correct, wrong, skipped,
       accuracy, percent,
       score: correct,
+      ...(marks ? { marks, exam: QUIZ.exam || "" } : {}),
       passLine, passed,
       seconds: secs,
       at: Date.now(),
@@ -904,6 +1157,7 @@
     // ---- persist everywhere the other pages read from --------------------
     HOA.db.set("lastResult", result);
     HOA.db.remove("session:" + QUIZ.key);          // clear autosave
+    if (QUIZ.marking) HOA.db.remove("mockPaper");  // next mock draws a new paper
     HOA.progress.record({
       correct, total, attempted: attemptedN,
       seconds: secs, subject: QUIZ.subject || "mixed",

@@ -1,0 +1,234 @@
+{
+  "$note": "MOCK TEST PATTERNS (hand-edited, no build step). Each exam the Mock Test page offers, with its REAL paper shape: sections in paper order, questions per section, time, marking and the easy/medium/hard mix. Numbers come from the official-pattern articles in content/strategy/ (linked by `guide`) - when a notification changes, edit the article and this file together. A section draws from `from` (subject ids, or subject/category ids such as gk/history-of-punjab) minus `exclude`. `difficulty` is a percentage split; questions without a difficulty tag fill any shortfall. `qualifying: true` marks a section that is not counted for merit (e.g. PSSSB Part A Punjabi) - it is shown in the paper but its marks are reported separately. Read by assets/js/mock.js and assets/js/quiz.js.",
+  "difficulty": { "easy": 30, "medium": 50, "hard": 20 },
+  "punjabHistoryCulture": ["gk/history-of-punjab", "gk/culture-of-punjab", "gk/geography-of-punjab", "gk/economy-of-punjab"],
+  "exams": [
+    {
+      "id": "punjab-police-constable",
+      "name": "Punjab Police Constable",
+      "pa": "ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ",
+      "icon": "👮",
+      "guide": "punjab-police-constable-syllabus-exam-pattern-2026",
+      "difficulty": { "easy": 35, "medium": 45, "hard": 20 },
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Paper I",
+          "pa": "ਪੇਪਰ-1",
+          "minutes": 120,
+          "marks": 1,
+          "negative": 0,
+          "sections": [
+            { "name": "General Awareness", "pa": "ਆਮ ਗਿਆਨ", "from": ["gk", "current-affairs"], "questions": 35 },
+            { "name": "Quantitative Aptitude & Numerical Skills", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 20 },
+            { "name": "Mental Ability & Logical Reasoning", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 20 },
+            { "name": "English Language Skills", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 10 },
+            { "name": "Punjabi Language Skills", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 10 },
+            { "name": "Digital Literacy & Awareness", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 5 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punjab-police-si",
+      "name": "Punjab Police SI / ASI",
+      "pa": "ਪੰਜਾਬ ਪੁਲਿਸ ਐੱਸ.ਆਈ. / ਏ.ਐੱਸ.ਆਈ.",
+      "icon": "⭐",
+      "guide": "punjab-police-si-syllabus-exam-pattern",
+      "difficulty": { "easy": 25, "medium": 50, "hard": 25 },
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Paper I",
+          "pa": "ਪੇਪਰ-1",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "General Awareness", "pa": "ਆਮ ਗਿਆਨ", "from": ["gk", "current-affairs"], "questions": 50 },
+            { "name": "Quantitative Aptitude & Numerical Skills", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 30 },
+            { "name": "Punjabi Language Skills", "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ", "from": ["punjabi"], "questions": 20 }
+          ]
+        },
+        {
+          "id": "paper-2",
+          "name": "Paper II",
+          "pa": "ਪੇਪਰ-2",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "Logical & Analytical Reasoning and Data Interpretation", "pa": "ਤਰਕ ਅਤੇ ਡਾਟਾ ਵਿਆਖਿਆ", "from": ["reasoning"], "questions": 50 },
+            { "name": "Digital Literacy & Computer Awareness", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 30 },
+            { "name": "English Language Skills", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punjab-police-head-constable",
+      "name": "Punjab Police Head Constable",
+      "pa": "ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ",
+      "icon": "🛡️",
+      "guide": "punjab-police-head-constable-syllabus-exam-pattern",
+      "difficulty": { "easy": 30, "medium": 50, "hard": 20 },
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Paper I",
+          "pa": "ਪੇਪਰ-1",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "General Awareness", "pa": "ਆਮ ਗਿਆਨ", "from": ["gk", "current-affairs"], "questions": 50 },
+            { "name": "Quantitative Aptitude & Numerical Skills", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 30 },
+            { "name": "Punjabi Language", "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ", "from": ["punjabi"], "questions": 20 }
+          ]
+        },
+        {
+          "id": "paper-2",
+          "name": "Paper II",
+          "pa": "ਪੇਪਰ-2",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "Logical & Analytical Reasoning", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 50 },
+            { "name": "Digital Literacy & Computer Awareness", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 30 },
+            { "name": "English Language", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "punjab-police-intelligence-constable",
+      "name": "Punjab Police Intelligence Constable",
+      "pa": "ਪੰਜਾਬ ਪੁਲਿਸ ਇੰਟੈਲੀਜੈਂਸ ਕਾਂਸਟੇਬਲ",
+      "icon": "🕵️",
+      "guide": "punjab-police-intelligence-constable-2027-exam-pattern",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "General Awareness", "pa": "ਆਮ ਗਿਆਨ", "from": ["gk", "current-affairs"], "questions": 50 },
+            { "name": "Quantitative Aptitude & Numerical Skills", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 30 },
+            { "name": "Punjabi Language", "pa": "ਪੰਜਾਬੀ ਭਾਸ਼ਾ", "from": ["punjabi"], "questions": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psssb-clerk",
+      "name": "PSSSB Clerk",
+      "pa": "PSSSB ਕਲਰਕ",
+      "icon": "🗂️",
+      "guide": "psssb-clerk-recruitment-exam-pattern-2026",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Part A + Part B",
+          "pa": "ਭਾਗ A + ਭਾਗ B",
+          "minutes": 150,
+          "marks": 1,
+          "negative": 0.25,
+          "sections": [
+            { "name": "Part A: Punjabi (qualifying)", "pa": "ਭਾਗ A: ਪੰਜਾਬੀ (ਕੁਆਲੀਫਾਇੰਗ)", "from": ["punjabi"], "questions": 50, "qualifying": true, "negative": 0 },
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 25 },
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 17 },
+            { "name": "Numerical Skills & Data Analysis", "pa": "ਗਣਿਤ ਅਤੇ ਡਾਟਾ", "from": ["quant"], "questions": 8 },
+            { "name": "Punjab History & Culture", "pa": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ", "from": ["@punjabHistoryCulture"], "questions": 17 },
+            { "name": "Punjabi", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 13 },
+            { "name": "English", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 12 },
+            { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 8 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psssb-excise-inspector",
+      "name": "PSSSB Excise Inspector",
+      "pa": "PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ",
+      "icon": "🧾",
+      "guide": "psssb-excise-inspector-recruitment-exam-pattern",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Part A + Part B",
+          "pa": "ਭਾਗ A + ਭਾਗ B",
+          "minutes": 150,
+          "marks": 1,
+          "negative": 0.25,
+          "sections": [
+            { "name": "Part A: Punjabi (qualifying)", "pa": "ਭਾਗ A: ਪੰਜਾਬੀ (ਕੁਆਲੀਫਾਇੰਗ)", "from": ["punjabi"], "questions": 50, "qualifying": true, "negative": 0 },
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 25 },
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 17 },
+            { "name": "Numerical Skills & Data Analysis", "pa": "ਗਣਿਤ ਅਤੇ ਡਾਟਾ", "from": ["quant"], "questions": 8 },
+            { "name": "Punjab History & Culture", "pa": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ", "from": ["@punjabHistoryCulture"], "questions": 17 },
+            { "name": "Punjabi", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 13 },
+            { "name": "English", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 12 },
+            { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 8 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psssb-forest-guard",
+      "name": "PSSSB Forest Guard",
+      "pa": "PSSSB ਵਣ ਗਾਰਡ",
+      "icon": "🌳",
+      "guide": "psssb-forest-guard-2027-syllabus-exam-pattern",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 120,
+          "marks": 1,
+          "negative": 0.25,
+          "sections": [
+            { "name": "GK & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 30 },
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 20 },
+            { "name": "Basic Maths", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 10 },
+            { "name": "Punjab History & Culture", "pa": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ", "from": ["@punjabHistoryCulture"], "questions": 20 },
+            { "name": "English", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 15 },
+            { "name": "Punjabi", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 15 },
+            { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 10 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "naib-tehsildar",
+      "name": "Naib Tehsildar",
+      "pa": "ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ",
+      "icon": "🏛️",
+      "guide": "punjab-naib-tehsildar-2027-syllabus-exam-pattern",
+      "difficulty": { "easy": 25, "medium": 50, "hard": 25 },
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 120,
+          "marks": 1,
+          "negative": 0.25,
+          "sections": [
+            { "name": "GK & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 30 },
+            { "name": "Punjab History & Culture", "pa": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ", "from": ["@punjabHistoryCulture"], "questions": 20 },
+            { "name": "Logical Reasoning", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 20 },
+            { "name": "Numerical Skills & Data Analysis", "pa": "ਗਣਿਤ ਅਤੇ ਡਾਟਾ", "from": ["quant"], "questions": 10 },
+            { "name": "Punjabi Grammar", "pa": "ਪੰਜਾਬੀ ਵਿਆਕਰਨ", "from": ["punjabi"], "questions": 15 },
+            { "name": "English Grammar", "pa": "ਅੰਗਰੇਜ਼ੀ ਵਿਆਕਰਨ", "from": ["english"], "questions": 15 },
+            { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 10 }
+          ]
+        }
+      ]
+    }
+  ]
+}
