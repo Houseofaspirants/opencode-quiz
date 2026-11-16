@@ -681,7 +681,6 @@ const HOA = (() => {
                 <a data-nav="notes" href="study-notes"><span data-i18n="Study Notes">Study Notes</span></a>
                 <a data-nav="topic-guides" href="topic-guides"><span data-i18n="Topic Guides">Topic Guides</span></a>
                 <a data-nav="ca" href="current-affairs"><span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
-                <a data-nav="strategy" href="strategy"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
                 <a data-nav="sessions" href="live-sessions"><span data-i18n="Live Sessions">Live Sessions</span></a>
                 <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
                 <a data-nav="previous-year-questions" href="previous-year-questions"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
@@ -714,7 +713,6 @@ const HOA = (() => {
               </div>
               <div class="nav-col">
                 <span class="nav-col-head" data-i18n="Tests">Tests</span>
-                <a data-nav="mock" href="mock"><span data-i18n="Mock Tests">Mock Tests</span></a>
                 <a data-nav="progress" href="progress"><span data-i18n="My Progress">My Progress</span></a>
                 <a data-nav="bookmarks" href="bookmarks"><span data-i18n="Bookmarks">Bookmarks</span></a>
               </div>
@@ -723,7 +721,11 @@ const HOA = (() => {
 
           <!-- THE REMAINING SYSTEMS. Each gets exactly one entry at the top
                level — no destination appears in this list twice, and none of
-               them is nested under Study or Practice. -->
+               them is nested under Study or Practice. Mock Tests and
+               Preparation Strategy sit here at the top level (not in the
+               Practice / Study dropdowns) so they are one click away. -->
+          <li><a class="nav-link" data-nav="mock" href="mock"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
+          <li><a class="nav-link" data-nav="strategy" href="strategy"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a></li>
           <li><a class="nav-link" data-nav="pyq" href="pyq"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about"><span data-i18n="About">About</span></a></li>
         </ul>
@@ -775,6 +777,8 @@ const HOA = (() => {
     </div>
     <a class="mm-link" data-nav="home" href="./"><span aria-hidden="true">🏠</span> <span data-i18n="Home">Home</span></a>
     <a class="mm-link" data-nav="rank-2-blueprint" href="rank-2-blueprint"><span aria-hidden="true">🏅</span> <span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a>
+    <a class="mm-link" data-nav="mock" href="mock"><span aria-hidden="true">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
+    <a class="mm-link" data-nav="strategy" href="strategy"><span aria-hidden="true">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
 
     <!-- The drawer mirrors the header exactly: same ten items, same order,
          same two subject trees. Study's tree opens the Study renderer and
@@ -791,7 +795,6 @@ const HOA = (() => {
     <div data-mm-study>
       <!-- HOA-NAV:drawer -->
       <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
-      <a class="mm-link" data-nav="strategy" href="strategy"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
       <a class="mm-link" data-nav="sessions" href="live-sessions"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
       <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
       <!-- /HOA-NAV:drawer -->
@@ -804,7 +807,6 @@ const HOA = (() => {
           `<a class="mm-link" data-nav="${id}" href="subject?subject=${id}"><span class="mm-emoji">${icon}</span> ${name}</a>`
       ).join("")}
     </div>
-    <a class="mm-link mm-practice" data-nav="mock" href="mock"><span class="mm-emoji">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
     <a class="mm-link mm-practice" href="progress"><span class="mm-emoji">📈</span> <span data-i18n="My Progress">My Progress</span></a>
     <a class="mm-link mm-practice" href="bookmarks"><span class="mm-emoji">🔖</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
 

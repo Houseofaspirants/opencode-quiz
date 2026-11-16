@@ -7098,8 +7098,11 @@ def feed_html(kind, items, index):
 # aspirant opens between classes. Everything else still ships in the footer,
 # the header dropdown and the thumb bar, so trimming the drawer removes no
 # destination — only the scroll it used to cost.
-DRAWER_HUBS = ("current-affairs.html", "strategy.html",
+DRAWER_HUBS = ("current-affairs.html",
                "live-sessions.html", "expected-mcqs.html")
+# Preparation Strategy is a top-level item in the header and the drawer
+# (hand-written in core.js), so the generated Study blocks leave it out.
+TOP_LEVEL_HUBS = ("strategy.html",)
 
 
 def nav_lines(kind):
@@ -7109,6 +7112,8 @@ def nav_lines(kind):
     entries += [(f, label, emoji, HUB_NAV.get(f[:-5], ""))
                 for f, label, emoji in NAV_EXTRA]
     entries = [e for e in entries if e[0] not in EMPTY_HUBS]
+    if kind in ("menu", "drawer"):
+        entries = [e for e in entries if e[0] not in TOP_LEVEL_HUBS]
     if kind == "drawer":
         entries = [e for e in entries if e[0] in DRAWER_HUBS]
     if kind == "footer":
