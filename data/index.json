@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-15T05:35:46.924Z",
+  "generatedAt": "2026-11-16T15:19:47.697Z",
   "stats": {
     "subjects": 7,
     "categories": 52,
-    "topics": 127,
-    "quizzes": 127,
-    "questions": 2983,
+    "topics": 129,
+    "quizzes": 129,
+    "questions": 3015,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1171,6 +1171,66 @@
             "pa": 16
           },
           "landing": "/quiz-gk-national-income-part-2"
+        },
+        {
+          "id": "physical-features-and-rivers-of-punjab-part-1",
+          "name": "Physical Features and Rivers of Punjab - Part 1",
+          "description": "",
+          "file": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.en.json",
+          "count": 16,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794842383315,
+          "category": "geography-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.en.json",
+            "pa": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Physical Features and Rivers of Punjab - Part 1",
+            "pa": "ਪੰਜਾਬ ਦੇ ਭੌਤਿਕ ਲੱਛਣ ਅਤੇ ਦਰਿਆ - Part 1"
+          },
+          "counts": {
+            "en": 16,
+            "pa": 16
+          },
+          "landing": "/quiz-gk-physical-features-and-rivers-of-punjab-part-1"
+        },
+        {
+          "id": "physical-features-and-rivers-of-punjab-part-2",
+          "name": "Physical Features and Rivers of Punjab - Part 2",
+          "description": "",
+          "file": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.en.json",
+          "count": 16,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1794842383315,
+          "category": "geography-of-punjab",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.en.json",
+            "pa": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Physical Features and Rivers of Punjab - Part 2",
+            "pa": "ਪੰਜਾਬ ਦੇ ਭੌਤਿਕ ਲੱਛਣ ਅਤੇ ਦਰਿਆ - Part 2"
+          },
+          "counts": {
+            "en": 16,
+            "pa": 16
+          },
+          "landing": "/quiz-gk-physical-features-and-rivers-of-punjab-part-2"
         },
         {
           "id": "02-preamble-and-parts-of-the-constitution-part1",
@@ -2795,6 +2855,66 @@
           "folder": "geography-of-punjab",
           "icon": "📁",
           "topics": [
+            {
+              "id": "physical-features-and-rivers-of-punjab-part-1",
+              "name": "Physical Features and Rivers of Punjab - Part 1",
+              "description": "",
+              "file": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.en.json",
+              "count": 16,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794842383315,
+              "category": "geography-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.en.json",
+                "pa": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Physical Features and Rivers of Punjab - Part 1",
+                "pa": "ਪੰਜਾਬ ਦੇ ਭੌਤਿਕ ਲੱਛਣ ਅਤੇ ਦਰਿਆ - Part 1"
+              },
+              "counts": {
+                "en": 16,
+                "pa": 16
+              },
+              "landing": "/quiz-gk-physical-features-and-rivers-of-punjab-part-1"
+            },
+            {
+              "id": "physical-features-and-rivers-of-punjab-part-2",
+              "name": "Physical Features and Rivers of Punjab - Part 2",
+              "description": "",
+              "file": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.en.json",
+              "count": 16,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1794842383315,
+              "category": "geography-of-punjab",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.en.json",
+                "pa": "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Physical Features and Rivers of Punjab - Part 2",
+                "pa": "ਪੰਜਾਬ ਦੇ ਭੌਤਿਕ ਲੱਛਣ ਅਤੇ ਦਰਿਆ - Part 2"
+              },
+              "counts": {
+                "en": 16,
+                "pa": 16
+              },
+              "landing": "/quiz-gk-physical-features-and-rivers-of-punjab-part-2"
+            },
             {
               "id": "regions-administration-and-location-of-punjab-part-1",
               "name": "Regions Administration And Location Of Punjab Part 1",
@@ -8083,6 +8203,14 @@
     "questions/gk/economy/national-income-part-2.en.json": [
       "1b359e81a3dcd512",
       1793647706415
+    ],
+    "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-1.en.json": [
+      "3ac2b6f1604740bd",
+      1794842383315
+    ],
+    "questions/gk/geography-of-punjab/physical-features-and-rivers-of-punjab-part-2.en.json": [
+      "a96c2a8bea2a531a",
+      1794842383315
     ],
     "questions/gk/geography-of-punjab/regions-administration-and-location-of-punjab-part-1.en.json": [
       "07216f5183a823a1",
