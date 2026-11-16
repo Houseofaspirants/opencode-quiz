@@ -23,7 +23,7 @@
   "nodes": 896,
   "edges": 8481,
   "silos": 35,
-  "clusters": 190,
+  "clusters": 192,
   "pillars": 34
  },
  "nodes": [
@@ -9926,6 +9926,30 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
+   "url": "/quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
+   "url": "/quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
    "url": "/quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
    "type": "quiz",
@@ -10120,30 +10144,6 @@
   {
    "id": "quiz-quant-04-simplification-part-6.html",
    "url": "/quiz-quant-04-simplification-part-6.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-7.html",
-   "url": "/quiz-quant-04-simplification-part-7.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-8.html",
-   "url": "/quiz-quant-04-simplification-part-8.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -27181,6 +27181,18 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -27248,18 +27260,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-04-simplification-part-6.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-7.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-8.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33373,7 +33373,7 @@
   },
   {
    "from": "material-physical-features-and-rivers-of-punjab-notes-english.html",
-   "to": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
+   "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64287,6 +64287,8 @@
     "topic-gk-maharaja-ranjit-singh-part-3.html",
     "topic-gk-national-income-part-1.html",
     "topic-gk-national-income-part-2.html",
+    "topic-gk-physical-features-and-rivers-of-punjab-part-1.html",
+    "topic-gk-physical-features-and-rivers-of-punjab-part-2.html",
     "topic-gk-regions-administration-and-location-of-punjab-part-1.html",
     "topic-gk-regions-administration-and-location-of-punjab-part-2.html"
    ],
