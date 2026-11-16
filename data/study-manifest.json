@@ -752,21 +752,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 46,
-      "newest": "2026-11-15",
-      "totalSize": 91456961,
-      "chapters": 42,
+      "count": 47,
+      "newest": "2026-11-16",
+      "totalSize": 93272326,
+      "chapters": 43,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 46,
-          "chapters": 42,
-          "pages": 227,
-          "totalSize": 91456961,
-          "newest": "2026-11-15",
+          "files": 47,
+          "chapters": 43,
+          "pages": 231,
+          "totalSize": 93272326,
+          "newest": "2026-11-16",
           "categories": 10,
           "regions": 2
         },
@@ -1430,11 +1430,11 @@
             "name": "Punjab GK",
             "description": "The state paper: Punjab's history, culture, literature, geography and economy.",
             "stats": {
-              "files": 22,
-              "chapters": 22,
-              "pages": 106,
-              "totalSize": 38880020,
-              "newest": "2026-11-08",
+              "files": 23,
+              "chapters": 23,
+              "pages": 110,
+              "totalSize": 40695385,
+              "newest": "2026-11-16",
               "categories": 5
             },
             "categories": [
@@ -1718,11 +1718,11 @@
                   "geography-of-punjab"
                 ],
                 "stats": {
-                  "files": 2,
-                  "chapters": 2,
-                  "pages": 10,
-                  "totalSize": 3554959,
-                  "newest": "2026-10-26"
+                  "files": 3,
+                  "chapters": 3,
+                  "pages": 14,
+                  "totalSize": 5370324,
+                  "newest": "2026-11-16"
                 },
                 "languages": [
                   {
@@ -1750,7 +1750,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 1,
+                    "count": 2,
                     "chapters": [
                       {
                         "id": "01 - Regions, Administration and Location of Punjab",
@@ -1762,6 +1762,17 @@
                           }
                         ],
                         "pages": 5
+                      },
+                      {
+                        "id": "02 - Physical Features and Rivers of Punjab",
+                        "name": "Chapter 2: Physical Features and Rivers of Punjab",
+                        "parts": [
+                          {
+                            "file": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 4
                       }
                     ]
                   }
@@ -1868,7 +1879,7 @@
         ]
       },
       "counts": {
-        "en": 23,
+        "en": 24,
         "pa": 23
       },
       "pages": {
@@ -2636,9 +2647,9 @@
       "color": "#10b981",
       "description": "Rivers, canals, soils, crops, districts and the borders that shape the state.",
       "order": 17,
-      "count": 2,
-      "newest": "2026-10-26",
-      "totalSize": 3554959,
+      "count": 3,
+      "newest": "2026-11-16",
+      "totalSize": 5370324,
       "languages": [
         {
           "id": "pa",
@@ -2665,7 +2676,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 1,
+          "count": 2,
           "chapters": [
             {
               "id": "01 - Regions, Administration and Location of Punjab",
@@ -2677,14 +2688,25 @@
                 }
               ],
               "pages": 5
+            },
+            {
+              "id": "02 - Physical Features and Rivers of Punjab",
+              "name": "Chapter 2: Physical Features and Rivers of Punjab",
+              "parts": [
+                {
+                  "file": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 4
             }
           ]
         }
       ],
-      "chapters": 2,
+      "chapters": 3,
       "hidden": true,
       "counts": {
-        "en": 1,
+        "en": 2,
         "pa": 1
       },
       "pages": {
@@ -2798,6 +2820,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 94,
+  "total": 95,
   "generatedBy": "scripts/study_material.py"
 }
