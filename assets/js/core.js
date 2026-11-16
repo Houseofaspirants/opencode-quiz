@@ -714,7 +714,6 @@ const HOA = (() => {
               <div class="nav-col">
                 <span class="nav-col-head" data-i18n="Tests">Tests</span>
                 <a data-nav="progress" href="progress"><span data-i18n="My Progress">My Progress</span></a>
-                <a data-nav="bookmarks" href="bookmarks"><span data-i18n="Bookmarks">Bookmarks</span></a>
               </div>
             </div>
           </li>
@@ -808,7 +807,6 @@ const HOA = (() => {
       ).join("")}
     </div>
     <a class="mm-link mm-practice" href="progress"><span class="mm-emoji">📈</span> <span data-i18n="My Progress">My Progress</span></a>
-    <a class="mm-link mm-practice" href="bookmarks"><span class="mm-emoji">🔖</span> <span data-i18n="Bookmarks">Bookmarks</span></a>
 
     <!-- The other three systems, each once. -->
     <p class="mm-group" data-i18n="More">More</p>
