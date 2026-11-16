@@ -7098,7 +7098,7 @@ def feed_html(kind, items, index):
 # aspirant opens between classes. Everything else still ships in the footer,
 # the header dropdown and the thumb bar, so trimming the drawer removes no
 # destination — only the scroll it used to cost.
-DRAWER_HUBS = ("study-notes.html", "current-affairs.html", "strategy.html",
+DRAWER_HUBS = ("current-affairs.html", "strategy.html",
                "live-sessions.html", "expected-mcqs.html")
 
 

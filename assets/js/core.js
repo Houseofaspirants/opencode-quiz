@@ -790,20 +790,11 @@ const HOA = (() => {
     </div>
     <div data-mm-study>
       <!-- HOA-NAV:drawer -->
-      <a class="mm-link" data-nav="notes" href="study-notes"><span class="mm-emoji">📝</span> <span data-i18n="Study Notes">Study Notes</span></a>
       <a class="mm-link" data-nav="ca" href="current-affairs"><span class="mm-emoji">🗞️</span> <span data-i18n="Monthly Current Affairs">Monthly Current Affairs</span></a>
       <a class="mm-link" data-nav="strategy" href="strategy"><span class="mm-emoji">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
       <a class="mm-link" data-nav="sessions" href="live-sessions"><span class="mm-emoji">🎥</span> <span data-i18n="Live Sessions">Live Sessions</span></a>
       <a class="mm-link" data-nav="expected-mcqs" href="expected-mcqs"><span class="mm-emoji">🧠</span> <span data-i18n="Expected MCQs">Expected MCQs</span></a>
       <!-- /HOA-NAV:drawer -->
-      <!-- The pipeline's drawer shortlist (DRAWER_HUBS) deliberately carries
-           only two of the six Study hubs, so the other four are written here
-           to keep the drawer a faithful mirror of the header's Study menu —
-           same six destinations, same order. -->
-      <a class="mm-link" data-nav="subject-guides" href="subject-guides"><span class="mm-emoji">🗂️</span> <span data-i18n="Subject Guides">Subject Guides</span></a>
-      <a class="mm-link" data-nav="topic-guides" href="topic-guides"><span class="mm-emoji">🧭</span> <span data-i18n="Topic Guides">Topic Guides</span></a>
-      <a class="mm-link" data-nav="personal-notes" href="personal-notes"><span class="mm-emoji">📓</span> <span data-i18n="Personal Notes">Personal Notes</span></a>
-      <a class="mm-link" data-nav="pdfs" href="pdfs"><span class="mm-emoji">📄</span> <span data-i18n="Free PDFs">Free PDFs</span></a>
     </div>
 
     <p class="mm-group" data-i18n="Practice">Practice</p>
