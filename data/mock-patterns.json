@@ -236,6 +236,18 @@
       "difficulty": { "easy": 25, "medium": 50, "hard": 25 },
       "papers": [
         {
+          "id": "ppsc",
+          "name": "PPSC pattern (official syllabus)",
+          "pa": "PPSC ਪੈਟਰਨ (official ਸਿਲੇਬਸ)",
+          "minutes": 120,
+          "marks": 2.5,
+          "negative": 0,
+          "sections": [
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ", "from": ["reasoning", "quant"], "questions": 40 },
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "questions": 80 }
+          ]
+        },
+        {
           "id": "paper-1",
           "name": "PSSSB 2025 pattern",
           "pa": "PSSSB 2025 ਪੈਟਰਨ",
@@ -250,18 +262,6 @@
             { "name": "Punjabi Grammar", "pa": "ਪੰਜਾਬੀ ਵਿਆਕਰਨ", "from": ["punjabi"], "questions": 15 },
             { "name": "English Grammar", "pa": "ਅੰਗਰੇਜ਼ੀ ਵਿਆਕਰਨ", "from": ["english"], "questions": 15 },
             { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 10 }
-          ]
-        },
-        {
-          "id": "ppsc",
-          "name": "PPSC pattern",
-          "pa": "PPSC ਪੈਟਰਨ",
-          "minutes": 120,
-          "marks": 2.5,
-          "negative": 0,
-          "sections": [
-            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ", "from": ["reasoning", "quant"], "questions": 40 },
-            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "questions": 80 }
           ]
         }
       ]
