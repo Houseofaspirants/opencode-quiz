@@ -1,7 +1,8 @@
 ---
 title: Punjab Patwari Recruitment, Eligibility & Exam Pattern
-description: Punjab Patwari recruitment from the official PSSSB notification - posts, eligibility, age limit, fee, pay, two-stage exam, 40% cut-off - plus Bharti 2026 news.
+description: Punjab Patwari recruitment from official PSSSB notices - posts, eligibility, age, fee, pay and the Advt 02/2023 exam pattern with Part A Punjabi and Part B.
 published: 2026-10-02
+updated: 2026-11-17
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -10,7 +11,7 @@ exams: [Patwari]
 subjects: [gk, reasoning, quant, computer, punjabi, english]
 tags: [punjab patwari, psssb, revenue patwari, eligibility, exam pattern]
 subtitle: Everything the official PSSSB Patwari notification says - and how to prepare for the next recruitment.
-summary: Punjab Patwari is a graduate-level PSSSB post. You need a degree, a 120-hour computer course and matric-level Punjabi; the age limit is 18 to 37. Selection is a two-stage objective written exam, and you need at least 40% to be considered.
+summary: Punjab Patwari is a graduate-level PSSSB post. You need a degree, a 120-hour computer course and matric-level Punjabi; the age limit is 18 to 37. The latest exam plan (Advt 02/2023) is one MCQ paper: a 50-question Punjabi qualifying part and a 100-question merit part with 1/4 negative marking.
 seoTitle: Punjab Patwari Bharti 2026 - Eligibility & Exam Pattern
 keywords: [punjab patwari recruitment 2026, punjab patwari bharti 2026, punjab patwari eligibility, punjab patwari exam pattern, punjab patwari syllabus, psssb patwari notification, punjab patwari age limit, punjab patwari salary]
 schemaType: Article
@@ -22,7 +23,7 @@ faq:
   - q: What is the age limit for Punjab Patwari?
     a: In the official notification it was 18 to 37 years for General candidates, up to 42 for SC and BC candidates of Punjab, up to 45 for government employees and up to 47 for persons with disabilities of Punjab.
   - q: How is a Punjab Patwari selected?
-    a: Through a two-stage objective written exam conducted by PSSSB. Ten times the posts in each category go from stage 1 to stage 2, and the merit list is made from stage 2 marks. Every candidate needs at least 40%.
+    a: Under the latest PSSSB plan (Advt 02/2023), through one MCQ exam of 2 hours 30 minutes. Part A is 50 Punjabi questions (qualifying, 50% needed); Part B is 100 questions on GK, reasoning and maths, Punjab history, Punjabi, English and ICT, with 1/4 mark cut per wrong answer. Merit is made from Part B.
   - q: What is the salary of a Punjab Patwari?
     a: Rs 19,900 minimum pay. During training (one year at the Patwar School plus six months in the field) a stipend of Rs 5,000 per month is paid.
   - q: Is a new Punjab Patwari recruitment coming in 2026?
@@ -96,7 +97,27 @@ The fee is not refunded in any case.
 - **Irrigation Booking Clerk:** Rs 19,900, after three months of canal patwari training and the patwar exam.
 - **Zilladar:** Rs 35,400 (Level 6).
 
-## Selection process
+## Latest exam pattern (Advt 02/2023 final plan)
+
+The board's **final plan of written examination** for Patwari (Advt No. 02 of 2023) replaced the old two-stage format. Prepare on this pattern:
+
+- **One MCQ exam of 2 hours 30 minutes** on an OMR sheet, in two parts.
+- **Part A - Punjabi (qualifying):** 50 questions of matric standard, 1 mark each, **no negative marking**. You need at least **25 marks (50%)**, or Part B is not checked.
+- **Part B - merit:** 100 questions, 1 mark each, **1/4 mark cut for each wrong answer**. The merit list is made only from Part B.
+
+| Part B section | Marks (approx.) | What it covers |
+| --- | --- | --- |
+| General knowledge & current affairs | 25 | Polity, environment, current affairs, science & technology, economy, Punjab history from the 14th century, Indian freedom struggle, sports, cinema & literature |
+| Logical reasoning, mental ability & numerical skills | 25 | Coding-decoding, analogy, classification, series, directions, relations; percentage, number system, LCM/HCF, ratio, average, ages, profit & loss, interest, work & time, time & distance, mensuration, data interpretation |
+| Punjab history & culture | 16 | Physical features and ancient history, Afghan/Mughal period, Bhakti and Sufi movements, Sikh Gurus and saints, Adi Granth, Sikh rulers, freedom movements |
+| Punjabi | 13 | Grammar and usage at matric level |
+| English | 12 | Grammar, synonyms/antonyms, one-word substitution, idioms, articles, prepositions, narration, voice, sentence correction |
+| ICT | 9 | Computer basics, network & internet, Word, spreadsheet, PowerPoint |
+| **Total** | **100** | |
+
+The board says the marks per section are indicative and may vary slightly. Our [Patwari mock test](mock?exam=psssb-patwari) follows this Part B pattern.
+
+## Selection process (2021 notification)
 
 1. **Stage 1 written exam (objective):** a screening test. In each category, **10 times the number of posts** move on to stage 2.
 2. **Stage 2 written exam (objective):** the **merit list is made only from stage 2 marks**.
@@ -114,10 +135,11 @@ The notification said the detailed syllabus and pattern would be put on the boar
 2. **Punjabi decides a lot.** Punjabi grammar and comprehension appear in almost every PSSSB paper, and matric Punjabi is compulsory anyway.
 3. **Punjab GK is a must.** History, culture, geography and economy of Punjab, plus current affairs.
 4. **Don't skip computers.** You need the 120-hour course for eligibility, and computer questions come in the exam too.
-5. **Clear 40% safely.** It is a hard floor. Aim far above it, because merit is decided by the stage 2 score.
+5. **Clear Part A first.** 25 of 50 in Punjabi is a hard floor - below it, your Part B is never checked. Then respect the 1/4 negative marking in Part B.
 
 ## Free practice on House of Aspirants
 
+- [Punjab Patwari mock test](mock?exam=psssb-patwari)
 - [Punjab Patwari previous year papers](pyq/psssb-patwari/index.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)

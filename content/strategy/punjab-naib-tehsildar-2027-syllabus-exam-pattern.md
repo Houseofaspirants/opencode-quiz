@@ -2,6 +2,7 @@
 title: Punjab Naib Tehsildar 2027 - Syllabus, Pattern & Posts
 description: Punjab Naib Tehsildar 2027 guide from the official PSSSB Advt 01/2025 - eligibility, age, fee, Rs 35,400 pay, the 120-question exam pattern and syllabus.
 published: 2026-11-13
+updated: 2026-11-17
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -103,16 +104,32 @@ The 2025 round had **one objective written exam**, followed by counselling and d
 - **Time:** 2 hours. **Marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Ties:** older candidate first, then higher marks in the qualifying degree, then matric marks.
 
+### The older PPSC pattern (Advt No. 15, 78 posts)
+
+When PPSC recruited 78 Naib Tehsildars (the 2022 cycle, re-examined in 2023), the paper looked different. If the next round goes back to PPSC, expect this shape:
+
+| Section | Questions | Marks |
+| --- | --- | --- |
+| Logical reasoning and mental ability (incl. numerical skills and data analysis) | 40 | 100 |
+| General knowledge and current affairs of national and international importance | 80 | 200 |
+| **Total** | **120** | **300** |
+
+- **Time:** 2 hours. **Marking:** 2.5 marks per question and **no negative marking**.
+- **Minimum to be appointed:** 45% (40% for SC and BC of Punjab). Selection on the written exam only, no interview.
+
+Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) offers both papers: the PSSSB 2025 pattern and this PPSC pattern.
+
 ## How to prepare
 
 1. **Solve the real papers first.** We have the [Naib Tehsildar papers of 2022 and 2023 with official answer keys](pyq/ppsc-naib-tehsildar/index.html), plus the official syllabus file.
 2. **Punjab history carries 20 marks.** Sikh Gurus, Sikh rulers, the Bhakti and Sufi movements and Punjab's freedom struggle come up every time.
 3. **Reasoning is 30 marks - a quarter of the paper.** Practise daily, timed.
 4. **Don't skip ICT.** Ten easy marks for anyone who has used Word and Excel.
-5. **Respect the negative marking.** At -1/4, guess only when you can cut at least two options.
+5. **Respect the negative marking.** At -1/4, guess only when you can cut at least two options. (The PPSC pattern had none: there, attempt every question.)
 
 ## Free practice on House of Aspirants
 
+- [Naib Tehsildar mock test - PSSSB and PPSC patterns](mock?exam=naib-tehsildar)
 - [Naib Tehsildar previous year papers](pyq/ppsc-naib-tehsildar/index.html)
 - [Patwari papers - the same revenue department](pyq/psssb-patwari/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

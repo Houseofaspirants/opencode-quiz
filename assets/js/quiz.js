@@ -169,6 +169,12 @@
     return first || (t && t.file) || "";
   };
 
+  /* Where a question in a MIXED paper (mock) came from: its topic's language
+     files and its 1-based number in them. The number is the same in every
+     translation, so the mock can swap each question to the other language
+     in place, exactly like a single-topic quiz does. */
+  const srcOf = (t, n) => ({ _v: (t && t.variants) || null, _f: (t && t.file) || "", _n: n });
+
   async function resolveQuiz() {
     /* ----------------------------- DAILY: seeded random from ALL quizzes - */
     if (mode === "daily") {
@@ -290,7 +296,7 @@
             return shuffleWith([...data.questions], rand)
               .sort((a, b) => rk(a) - rk(b))
               .map((q) => ({ ...q, subject: q.subject || x.s.id, topic: q.topic || t.name,
-                _seen: HOA.seen.key(x.s.id, t.id, q.id) }));
+                _seen: HOA.seen.key(x.s.id, t.id, q.id), ...srcOf(t, q.id) }));
           } catch { return []; /* ignore missing file */ }
         }));
         const out = [];
@@ -506,8 +512,8 @@
         qual: !!sec.qualifying,
       };
     };
-    const shape = (q, s, t, si) =>
-      ({ ...q, subject: q.subject || s.id, topic: q.topic || t.name, ...secMeta(si) });
+    const shape = (q, s, t, si, n) =>
+      ({ ...q, subject: q.subject || s.id, topic: q.topic || t.name, ...secMeta(si), ...srcOf(t, n) });
 
     /* ---- Resume: the same paper, rebuilt from its saved question list. */
     const saved = HOA.db.get("mockPaper");
@@ -518,7 +524,7 @@
         if (!hit) continue;
         const list = await load(hit.t);
         const q = list[it.n - 1];
-        if (q) questions.push(shape(q, hit.s, hit.t, it.si));
+        if (q) questions.push(shape(q, hit.s, hit.t, it.si, it.n));
       }
       if (questions.length) return examQuiz(questions);
     }
@@ -624,7 +630,7 @@
       }
 
       shuffleWith(chosen, rand).forEach((c) => {
-        questions.push(shape(c.q, c.x.s, c.x.t, si));
+        questions.push(shape(c.q, c.x.s, c.x.t, si, c.n));
         items.push({ s: c.x.s.id, t: c.x.t.id, n: c.n, si });
       });
     }
@@ -822,6 +828,7 @@
      The switch itself is rendered only when data/index.json reports more than
      one variant for this topic: availability is read, never assumed. */
   async function swapQuizLang() {
+    if (QUIZ && mode === "mock") return swapMixedLang();
     if (!QUIZ || !QUIZ.variants) return;
     const lang = (HOA.lang && HOA.lang.get()) || "pa";
     const file = pickVariantFile(QUIZ);
@@ -850,6 +857,44 @@
       console.warn("[HOA] language swap failed", e.message);
       toast(say("ਅਨੁਵਾਦ ਲੋਡ ਨਹੀਂ ਹੋ ਸਕਿਆ।", "Could not load that translation."));
     }
+  }
+
+  /* A mock mixes many topics, so every question is swapped from its OWN
+     topic's file (srcOf). A question whose topic has no file in the new
+     language, or whose translation disagrees on the options or the answer,
+     stays as it is - S.answers stores indices and must keep pointing at the
+     same choice. Section, marking and topic metadata are kept as they were. */
+  async function swapMixedLang() {
+    const lang = (HOA.lang && HOA.lang.get()) || "pa";
+    const qs = QUIZ.questions;
+    const cache = new Map();
+    const load = (f) => {
+      if (!cache.has(f)) cache.set(f, HOA.loadQuestions(f).then((d) => d.questions).catch(() => null));
+      return cache.get(f);
+    };
+    let changed = 0;
+    const next = await Promise.all(qs.map(async (cur) => {
+      if (!cur._v || !cur._n) return cur;
+      const file = pickVariantFile({ variants: cur._v, file: cur._f });
+      const list = file ? await load(file) : null;
+      const q = list && list[cur._n - 1];
+      if (!q || q.correct !== cur.correct || q.options.length !== cur.options.length) return cur;
+      if (q.q === cur.q) return cur;
+      changed++;
+      // Keep everything that is not the wording: subject, section, marks, source.
+      const keep = Object.fromEntries(Object.entries(cur).filter(([k]) =>
+        !["q", "options", "explanation", "reference", "data", "topic"].includes(k)));
+      return { ...q, ...keep, topic: q.topic || cur.topic };
+    }));
+    if (!changed) return;
+    const keepLeft = S.qLeft;
+    QUIZ.questions = next;
+    QUIZ.lang = lang;
+    renderQuestion();
+    S.qLeft = keepLeft;
+    updateTimers();
+    save();
+    toast(lang === "pa" ? "ਸਵਾਲ ਹੁਣ ਪੰਜਾਬੀ ਵਿੱਚ" : "Questions are now in English");
   }
 
   /* ================================ OTHER-LANGUAGE VIEW, PER QUESTION ===
@@ -1433,7 +1478,9 @@
      whenever the header, drawer or this control is used, and swapQuizLang()
      reacts by loading the matching question file in place. */
   if (els.quizLang) {
-    els.quizLang.hidden = Object.keys(QUIZ.variants || {}).length < 2;
+    els.quizLang.hidden = mode === "mock"
+      ? !QUIZ.questions.some((q) => Object.keys(q._v || {}).length > 1)
+      : Object.keys(QUIZ.variants || {}).length < 2;
   }
   document.addEventListener("hoa:lang", swapQuizLang);
   // Re-word an open verdict in the new language, keeping the explanation state.

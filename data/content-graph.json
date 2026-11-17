@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 900,
-  "edges": 8528,
+  "nodes": 901,
+  "edges": 8534,
   "silos": 35,
   "clusters": 192,
   "pillars": 34
@@ -6145,6 +6145,18 @@
    "exams": [],
    "tags": [],
    "hub": "study-material.html"
+  },
+  {
+   "id": "mock",
+   "url": "/mock",
+   "type": "page",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
   },
   {
    "id": "mock.html",
@@ -37897,6 +37909,12 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "mock",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
    "rel": "contextual",
    "weight": 1
@@ -44569,6 +44587,12 @@
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "mock",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -44972,6 +44996,12 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "mock",
    "rel": "contextual",
    "weight": 1
   },
@@ -52531,6 +52561,12 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "mock",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -58825,6 +58861,12 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "mock",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -59210,6 +59252,12 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "mock",
    "rel": "contextual",
    "weight": 1
   },

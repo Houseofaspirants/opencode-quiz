@@ -2,6 +2,7 @@
 title: PPSC ਸਹਿਕਾਰੀ ਸਭਾਵਾਂ ਇੰਸਪੈਕਟਰ ਭਰਤੀ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ
 description: PPSC ਸਹਿਕਾਰੀ ਸਭਾਵਾਂ ਇੰਸਪੈਕਟਰ ਭਰਤੀ ਪਿਛਲੇ official ਇਸ਼ਤਿਹਾਰ ਤੋਂ: 320 ਅਸਾਮੀਆਂ, ਡਿਗਰੀ ਵਿੱਚ 60% ਸ਼ਰਤ, ਉਮਰ, ਫ਼ੀਸ, 35,400 ਤਨਖ਼ਾਹ, ਸਿਲੇਬਸ ਅਤੇ 480 ਅੰਕਾਂ ਦਾ ਪੇਪਰ।
 published: 2026-10-03
+updated: 2026-11-17
 language: pa
 author: Gurpreet Singh
 category: preparation-strategy
@@ -129,6 +130,7 @@ references:
 
 ## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ
 
+- [ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਮੌਕ ਟੈਸਟ, ਪੇਪਰ ਦੇ ਪੈਟਰਨ ਵਿੱਚ](mock?exam=ppsc-cooperative-inspector)
 - [ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/ppsc-cooperative-inspector/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)

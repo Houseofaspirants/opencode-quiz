@@ -1,5 +1,5 @@
 {
-  "$note": "MOCK TEST PATTERNS (hand-edited, no build step). Each exam the Mock Test page offers, with its REAL paper shape: sections in paper order, questions per section, time, marking and the easy/medium/hard mix. Numbers come from the official-pattern articles in content/strategy/ (linked by `guide`) - when a notification changes, edit the article and this file together. A section draws from `from` (subject ids, or subject/category ids such as gk/history-of-punjab) minus `exclude`. `difficulty` is a percentage split; questions without a difficulty tag fill any shortfall. `qualifying: true` marks a section that is not counted for merit (e.g. PSSSB Part A Punjabi) - it is shown in the paper but its marks are reported separately. Read by assets/js/mock.js and assets/js/quiz.js.",
+  "$note": "MOCK TEST PATTERNS (hand-edited, no build step). Each exam the Mock Test page offers, with its REAL paper shape: sections in paper order, questions per section, time, marking and the easy/medium/hard mix. Numbers come from the official-pattern articles in content/strategy/ (linked by `guide`) - when a notification changes, edit the article and this file together. A section draws from `from` (subject ids, or subject/category ids such as gk/history-of-punjab) minus `exclude`. `difficulty` is a percentage split; questions without a difficulty tag fill any shortfall. The PSSSB Part A Punjabi qualifying paper is deliberately left out: mocks cover only the merit paper (Part B), so PSSSB papers are 100 questions in 100 minutes. `qualifying: true` would mark a section that is not counted for merit; its marks are reported separately. Read by assets/js/mock.js and assets/js/quiz.js.",
   "difficulty": { "easy": 30, "medium": 50, "hard": 20 },
   "punjabHistoryCulture": ["gk/history-of-punjab", "gk/culture-of-punjab", "gk/geography-of-punjab", "gk/economy-of-punjab"],
   "exams": [
@@ -132,13 +132,12 @@
       "papers": [
         {
           "id": "paper-1",
-          "name": "Part A + Part B",
-          "pa": "ਭਾਗ A + ਭਾਗ B",
-          "minutes": 150,
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 100,
           "marks": 1,
           "negative": 0.25,
           "sections": [
-            { "name": "Part A: Punjabi (qualifying)", "pa": "ਭਾਗ A: ਪੰਜਾਬੀ (ਕੁਆਲੀਫਾਇੰਗ)", "from": ["punjabi"], "questions": 50, "qualifying": true, "negative": 0 },
             { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 25 },
             { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 17 },
             { "name": "Numerical Skills & Data Analysis", "pa": "ਗਣਿਤ ਅਤੇ ਡਾਟਾ", "from": ["quant"], "questions": 8 },
@@ -159,13 +158,12 @@
       "papers": [
         {
           "id": "paper-1",
-          "name": "Part A + Part B",
-          "pa": "ਭਾਗ A + ਭਾਗ B",
-          "minutes": 150,
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 100,
           "marks": 1,
           "negative": 0.25,
           "sections": [
-            { "name": "Part A: Punjabi (qualifying)", "pa": "ਭਾਗ A: ਪੰਜਾਬੀ (ਕੁਆਲੀਫਾਇੰਗ)", "from": ["punjabi"], "questions": 50, "qualifying": true, "negative": 0 },
             { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 25 },
             { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ", "from": ["reasoning"], "questions": 17 },
             { "name": "Numerical Skills & Data Analysis", "pa": "ਗਣਿਤ ਅਤੇ ਡਾਟਾ", "from": ["quant"], "questions": 8 },
@@ -173,6 +171,32 @@
             { "name": "Punjabi", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 13 },
             { "name": "English", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 12 },
             { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 8 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "psssb-patwari",
+      "name": "PSSSB Patwari",
+      "pa": "PSSSB ਪਟਵਾਰੀ",
+      "icon": "📜",
+      "guide": "punjab-patwari-recruitment-eligibility-exam-pattern",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 100,
+          "marks": 1,
+          "negative": 0.25,
+          "sections": [
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "exclude": ["@punjabHistoryCulture"], "questions": 25 },
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ", "from": ["reasoning"], "questions": 15 },
+            { "name": "Basic Numerical Skills", "pa": "ਗਣਿਤ", "from": ["quant"], "questions": 10 },
+            { "name": "Punjab History & Culture", "pa": "ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ", "from": ["@punjabHistoryCulture"], "questions": 16 },
+            { "name": "Punjabi", "pa": "ਪੰਜਾਬੀ", "from": ["punjabi"], "questions": 13 },
+            { "name": "English", "pa": "ਅੰਗਰੇਜ਼ੀ", "from": ["english"], "questions": 12 },
+            { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 9 }
           ]
         }
       ]
@@ -213,8 +237,8 @@
       "papers": [
         {
           "id": "paper-1",
-          "name": "Written test",
-          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "name": "PSSSB 2025 pattern",
+          "pa": "PSSSB 2025 ਪੈਟਰਨ",
           "minutes": 120,
           "marks": 1,
           "negative": 0.25,
@@ -226,6 +250,39 @@
             { "name": "Punjabi Grammar", "pa": "ਪੰਜਾਬੀ ਵਿਆਕਰਨ", "from": ["punjabi"], "questions": 15 },
             { "name": "English Grammar", "pa": "ਅੰਗਰੇਜ਼ੀ ਵਿਆਕਰਨ", "from": ["english"], "questions": 15 },
             { "name": "ICT", "pa": "ਕੰਪਿਊਟਰ", "from": ["computer"], "questions": 10 }
+          ]
+        },
+        {
+          "id": "ppsc",
+          "name": "PPSC pattern",
+          "pa": "PPSC ਪੈਟਰਨ",
+          "minutes": 120,
+          "marks": 2.5,
+          "negative": 0,
+          "sections": [
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ", "from": ["reasoning", "quant"], "questions": 40 },
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "questions": 80 }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ppsc-cooperative-inspector",
+      "name": "PPSC Cooperative Inspector",
+      "pa": "PPSC ਸਹਿਕਾਰੀ ਸਭਾਵਾਂ ਇੰਸਪੈਕਟਰ",
+      "icon": "🤝",
+      "guide": "ppsc-cooperative-inspector-recruitment-exam-pattern",
+      "papers": [
+        {
+          "id": "paper-1",
+          "name": "Written test",
+          "pa": "ਲਿਖਤੀ ਪੇਪਰ",
+          "minutes": 120,
+          "marks": 4,
+          "negative": 1,
+          "sections": [
+            { "name": "Logical Reasoning & Mental Ability", "pa": "ਤਰਕ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ", "from": ["reasoning", "quant"], "questions": 40 },
+            { "name": "General Knowledge & Current Affairs", "pa": "ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫੇਅਰਜ਼", "from": ["gk", "current-affairs"], "questions": 80 }
           ]
         }
       ]
