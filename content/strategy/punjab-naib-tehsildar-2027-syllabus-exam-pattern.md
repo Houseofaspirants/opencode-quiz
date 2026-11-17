@@ -117,7 +117,7 @@ When PPSC recruited 78 Naib Tehsildars (the 2022 cycle, re-examined in 2023), th
 - **Time:** 2 hours. **Marking:** 2.5 marks per question and **no negative marking**.
 - **Minimum to be appointed:** 45% (40% for SC and BC of Punjab). Selection on the written exam only, no interview.
 
-Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) offers both papers: the PSSSB 2025 pattern and this PPSC pattern.
+Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) follows this PPSC pattern: 40 reasoning and 80 GK questions, 2.5 marks each, no negative marking.
 
 ## How to prepare
 
@@ -129,7 +129,7 @@ Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) offers both papers: the
 
 ## Free practice on House of Aspirants
 
-- [Naib Tehsildar mock test - PSSSB and PPSC patterns](mock?exam=naib-tehsildar)
+- [Naib Tehsildar mock test - PPSC pattern](mock?exam=naib-tehsildar)
 - [Naib Tehsildar previous year papers](pyq/ppsc-naib-tehsildar/index.html)
 - [Patwari papers - the same revenue department](pyq/psssb-patwari/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
