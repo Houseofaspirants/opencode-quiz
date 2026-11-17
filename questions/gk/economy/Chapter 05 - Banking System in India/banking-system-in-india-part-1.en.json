@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which bank was the first bank of India?",
+    "options": [
+      "Bank of Hindustan",
+      "Allahabad Bank",
+      "Punjab National Bank",
+      "Imperial Bank of India"
+    ],
+    "answer": 0,
+    "explanation": "Bank of Hindustan was the first bank of India. It was established in 1770 at Calcutta, then the capital. Allahabad Bank was the first commercial bank, while Punjab National Bank is the oldest existing bank.",
+    "tags": [
+      "Indian Economy",
+      "Banking History"
+    ]
+  },
+  {
+    "id": 2,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which was the first commercial bank of India?",
+    "options": [
+      "Bank of Bengal",
+      "Allahabad Bank",
+      "Oudh Commercial Bank",
+      "State Bank of India"
+    ],
+    "answer": 1,
+    "explanation": "Allahabad Bank was the first commercial bank of India. Bank of Bengal was one of the Presidency Banks. Oudh Commercial Bank was the first commercial bank fully owned by Indians, whereas SBI was formed later in 1955.",
+    "tags": [
+      "Indian Economy",
+      "Banking History"
+    ]
+  },
+  {
+    "id": 3,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which is the oldest existing swadeshi (Indian-owned and managed) bank in India?",
+    "options": [
+      "Allahabad Bank",
+      "Bank of Bombay",
+      "Punjab National Bank",
+      "General Bank of India"
+    ],
+    "answer": 2,
+    "explanation": "Punjab National Bank (1894) is the oldest existing swadeshi bank, started entirely with Indian capital and management. (SBI traces its origin to the Bank of Calcutta of 1806, but that was a Presidency bank.) General Bank of India existed only from 1786 to 1791, and Allahabad Bank was merged into Indian Bank in 2020.",
+    "tags": [
+      "Indian Economy",
+      "Banking History"
+    ]
+  },
+  {
+    "id": 4,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "match",
+    "question": "Consider the following pairs of banks and years:\n1. General Bank of India - 1786-1791\n2. Bank of Bengal - 1809\n3. Bank of Bombay - 1840\n4. Bank of Madras - 1843\nWhich of the pairs given above are correctly matched?",
+    "options": [
+      "1 and 2 only",
+      "1, 2 and 3 only",
+      "1, 2, 3 and 4",
+      "2, 3 and 4 only"
+    ],
+    "answer": 2,
+    "explanation": "All four pairs are correctly matched. General Bank of India functioned from 1786 to 1791. The Banks of Bengal, Bombay and Madras were established in 1809, 1840 and 1843 respectively.",
+    "tags": [
+      "Indian Economy",
+      "Banking History"
+    ]
+  },
+  {
+    "id": 5,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about the Presidency Banks:\n1. They were set up by the East India Company during British rule.\n2. They included the Banks of Bengal, Bombay and Madras.\n3. They were merged into the Imperial Bank of India in 1921.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct. The East India Company set up the three Presidency Banks during British rule. In 1921, these banks were merged to form the Imperial Bank of India.",
+    "tags": [
+      "Indian Economy",
+      "Presidency Banks"
+    ]
+  },
+  {
+    "id": 6,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "chronology",
+    "question": "Arrange the following in chronological order:\n1. Formation of Imperial Bank of India\n2. Establishment of Bank of Bengal\n3. Establishment of Bank of Madras\n4. Establishment of Bank of Bombay",
+    "options": [
+      "2-4-3-1",
+      "2-3-4-1",
+      "4-2-3-1",
+      "2-4-1-3"
+    ],
+    "answer": 0,
+    "explanation": "The correct order is Bank of Bengal in 1809, Bank of Bombay in 1840, Bank of Madras in 1843, and Imperial Bank of India in 1921. The Imperial Bank was formed by merging the three Presidency Banks. The dates show the progression from separate Presidency Banks to a single institution.",
+    "tags": [
+      "Indian Economy",
+      "Banking History"
+    ]
+  },
+  {
+    "id": 7,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "difficult",
+    "type": "assertion-reason",
+    "question": "Assertion (A): The Imperial Bank of India was renamed the State Bank of India in 1955.\nReason (R): The change followed the recommendation of the Gorwala Committee and nationalisation of the Imperial Bank.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 0,
+    "explanation": "Both the assertion and reason are true, and the reason explains the assertion. In 1955, the Imperial Bank was nationalised on the Gorwala Committee's recommendation and renamed SBI. The State Bank of India is now the largest public sector bank.",
+    "tags": [
+      "Indian Economy",
+      "SBI"
+    ]
+  },
+  {
+    "id": 8,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which is described as India's largest public sector bank?",
+    "options": [
+      "Bank of Baroda",
+      "Punjab National Bank",
+      "State Bank of India",
+      "Bank of India"
+    ],
+    "answer": 2,
+    "explanation": "State Bank of India is described as the largest public sector bank. It was formed in 1955 after the nationalisation of the Imperial Bank of India. The other options are public sector banks but are not identified as the largest.",
+    "tags": [
+      "Indian Economy",
+      "SBI"
+    ]
+  },
+  {
+    "id": 9,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Which Act was passed in 1949 to regulate banks in India?",
+    "options": [
+      "Reserve Bank of India Act, 1934",
+      "Banking Regulation Act, 1949",
+      "State Bank of India Act, 1955",
+      "Foreign Exchange Management Act, 1999"
+    ],
+    "answer": 1,
+    "explanation": "The Banking Regulation Act, 1949 was passed to regulate banks in India. It empowered RBI to supervise and control banks and laid down rules on licensing and management. The other laws deal respectively with RBI, SBI, and foreign exchange.",
+    "tags": [
+      "Indian Economy",
+      "Banking Laws"
+    ]
+  },
+  {
+    "id": 10,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "assertion-reason",
+    "question": "Assertion (A): RBI was nationalised in 1949.\nReason (R): The Banking Regulation Act was passed in the same year to regulate banks.",
+    "options": [
+      "Both A and R are true and R is the correct explanation of A",
+      "Both A and R are true but R is not the correct explanation of A",
+      "A is true but R is false",
+      "A is false but R is true"
+    ],
+    "answer": 1,
+    "explanation": "Both statements are true, but the reason does not explain the assertion. The banking milestones record RBI nationalisation and the Banking Regulation Act in 1949. The Act's stated purpose was regulating banks, not explaining RBI's nationalisation.",
+    "tags": [
+      "Indian Economy",
+      "Banking Laws"
+    ]
+  },
+  {
+    "id": 11,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "concept",
+    "question": "Which of the following powers is specifically associated with RBI under the Banking Regulation Act, 1949?",
+    "options": [
+      "Granting licences and laying down management rules for banks",
+      "Fixing the legal framework for SBI subsidiaries",
+      "Regulating foreign-exchange transactions",
+      "Bringing cooperative banks under RBI through a 2020 amendment"
+    ],
+    "answer": 0,
+    "explanation": "The Banking Regulation Act, 1949 gave RBI powers to supervise and control banks and set rules for licensing and management. The SBI Act, 1955 provides the legal framework for SBI and its subsidiaries. FEMA governs foreign exchange, while the 2020 amendment strengthened RBI's cooperative-bank supervision.",
+    "tags": [
+      "Indian Economy",
+      "Banking Regulation Act"
+    ]
+  },
+  {
+    "id": 12,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "In 1969, how many banks with deposits above ₹50 crore were nationalised?",
+    "options": [
+      "12 banks",
+      "14 banks",
+      "16 banks",
+      "20 banks"
+    ],
+    "answer": 1,
+    "explanation": "Fourteen banks with deposits above ₹50 crore were nationalised in 1969. This was the first major round of bank nationalisation. The total number nationalised became 20 only after six more banks were nationalised in 1980.",
+    "tags": [
+      "Indian Economy",
+      "Bank Nationalisation"
+    ]
+  },
+  {
+    "id": 13,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "direct",
+    "question": "In 1980, how many additional banks were nationalised?",
+    "options": [
+      "4 banks",
+      "5 banks",
+      "6 banks",
+      "8 banks"
+    ],
+    "answer": 2,
+    "explanation": "Six additional banks were nationalised in 1980. These banks had deposits above ₹200 crore. This took the total number of nationalised banks to 20.",
+    "tags": [
+      "Indian Economy",
+      "Bank Nationalisation"
+    ]
+  },
+  {
+    "id": 14,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "moderate",
+    "type": "statement",
+    "question": "Consider the following statements about bank nationalisation:\n1. The first major round occurred in 1969.\n2. The second round occurred in 1980.\n3. The two rounds together nationalised 20 banks.\nWhich of the statements given above are correct?",
+    "options": [
+      "1 and 2 only",
+      "1 and 3 only",
+      "2 and 3 only",
+      "1, 2 and 3"
+    ],
+    "answer": 3,
+    "explanation": "All three statements are correct. Fourteen banks were nationalised in 1969 and six more in 1980. Together, the two rounds covered 20 banks.",
+    "tags": [
+      "Indian Economy",
+      "Bank Nationalisation"
+    ]
+  },
+  {
+    "id": 15,
+    "part": 1,
+    "subject": "Indian Economy",
+    "topic": "Banking System in India",
+    "difficulty": "easy",
+    "type": "direct",
+    "question": "Regional Rural Banks (RRBs) were set up in which year?",
+    "options": [
+      "1969",
+      "1975",
+      "1980",
+      "1991"
+    ],
+    "answer": 1,
+    "explanation": "Regional Rural Banks were set up in 1975. Their stated purpose was the development of rural areas. The other years relate to bank nationalisation or banking-sector reforms.",
+    "tags": [
+      "Indian Economy",
+      "RRBs"
+    ]
+  }
+]
