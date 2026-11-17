@@ -23,7 +23,7 @@
   "nodes": 901,
   "edges": 8534,
   "silos": 35,
-  "clusters": 192,
+  "clusters": 196,
   "pillars": 34
  },
  "nodes": [
@@ -9866,6 +9866,30 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-banking-system-in-india-part-1.html",
+   "url": "/quiz-gk-banking-system-in-india-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-banking-system-in-india-part-2.html",
+   "url": "/quiz-gk-banking-system-in-india-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "url": "/quiz-gk-basic-concepts-of-economy-part-1.html",
    "type": "quiz",
@@ -9964,6 +9988,30 @@
   {
    "id": "quiz-gk-maharaja-ranjit-singh-part-1.html",
    "url": "/quiz-gk-maharaja-ranjit-singh-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-money-money-supply-part-1.html",
+   "url": "/quiz-gk-money-money-supply-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-money-money-supply-part-2.html",
+   "url": "/quiz-gk-money-money-supply-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -10156,54 +10204,6 @@
   {
    "id": "quiz-quant-04-simplification-part-2.html",
    "url": "/quiz-quant-04-simplification-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-3.html",
-   "url": "/quiz-quant-04-simplification-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-4.html",
-   "url": "/quiz-quant-04-simplification-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-5.html",
-   "url": "/quiz-quant-04-simplification-part-5.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-04-simplification-part-6.html",
-   "url": "/quiz-quant-04-simplification-part-6.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -27265,6 +27265,30 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-banking-system-in-india-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-banking-system-in-india-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-money-money-supply-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-money-money-supply-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -27320,30 +27344,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-quant-04-simplification-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-4.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-5.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-6.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28513,7 +28513,7 @@
   },
   {
    "from": "material-banking-system-in-india-notes-english.html",
-   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
+   "to": "quiz-gk-banking-system-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28621,7 +28621,7 @@
   },
   {
    "from": "material-banking-system-in-india-notes-punjabi.html",
-   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
+   "to": "quiz-gk-banking-system-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33295,13 +33295,13 @@
   },
   {
    "from": "material-money-and-money-supply-notes-english.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-money-and-money-supply-notes-english.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-money-money-supply-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -33403,13 +33403,13 @@
   },
   {
    "from": "material-money-and-money-supply-notes-punjabi.html",
-   "to": "practice.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "material-money-and-money-supply-notes-punjabi.html",
-   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "to": "quiz-gk-money-money-supply-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64643,6 +64643,8 @@
     "topic-gk-arrival-of-european-in-india-part-2.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-1.html",
     "topic-gk-baba-banda-singh-bahadur-and-the-dal-khalsa-part-2.html",
+    "topic-gk-banking-system-in-india-part-1.html",
+    "topic-gk-banking-system-in-india-part-2.html",
     "topic-gk-basic-concepts-of-economy-part-1.html",
     "topic-gk-basic-concepts-of-economy-part-2.html",
     "topic-gk-dpsp-fundamental-duties-part-1.html",
@@ -64663,6 +64665,8 @@
     "topic-gk-maharaja-ranjit-singh-part-1.html",
     "topic-gk-maharaja-ranjit-singh-part-2.html",
     "topic-gk-maharaja-ranjit-singh-part-3.html",
+    "topic-gk-money-money-supply-part-1.html",
+    "topic-gk-money-money-supply-part-2.html",
     "topic-gk-national-income-part-1.html",
     "topic-gk-national-income-part-2.html",
     "topic-gk-physical-features-and-rivers-of-punjab-part-1.html",
