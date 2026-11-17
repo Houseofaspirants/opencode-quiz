@@ -752,21 +752,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 48,
-      "newest": "2026-11-16",
-      "totalSize": 94977447,
-      "chapters": 44,
+      "count": 50,
+      "newest": "2026-11-17",
+      "totalSize": 98552731,
+      "chapters": 46,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 48,
-          "chapters": 44,
-          "pages": 235,
-          "totalSize": 94977447,
-          "newest": "2026-11-16",
+          "files": 50,
+          "chapters": 46,
+          "pages": 245,
+          "totalSize": 98552731,
+          "newest": "2026-11-17",
           "categories": 10,
           "regions": 2
         },
@@ -776,11 +776,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 24,
-              "chapters": 20,
-              "pages": 121,
-              "totalSize": 52576941,
-              "newest": "2026-11-15",
+              "files": 26,
+              "chapters": 22,
+              "pages": 131,
+              "totalSize": 56152225,
+              "newest": "2026-11-17",
               "categories": 5
             },
             "categories": [
@@ -1271,11 +1271,11 @@
                   "economy"
                 ],
                 "stats": {
-                  "files": 8,
-                  "chapters": 8,
-                  "pages": 49,
-                  "totalSize": 14917872,
-                  "newest": "2026-11-13"
+                  "files": 10,
+                  "chapters": 10,
+                  "pages": 59,
+                  "totalSize": 18493156,
+                  "newest": "2026-11-17"
                 },
                 "languages": [
                   {
@@ -1283,7 +1283,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -1328,6 +1328,17 @@
                           }
                         ],
                         "pages": 6
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 05 - ਭਾਰਤ ਵਿੱਚ ਬੈਂਕਿੰਗ ਪ੍ਰਣਾਲੀ (Banking System in India)",
+                        "name": "ਅਧਿਆਇ 05 ਭਾਰਤ ਵਿੱਚ ਬੈਂਕਿੰਗ ਪ੍ਰਣਾਲੀ Banking System in India",
+                        "parts": [
+                          {
+                            "file": "material-banking-system-in-india-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
                   },
@@ -1336,7 +1347,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Basic Concepts of Economy",
@@ -1381,6 +1392,17 @@
                           }
                         ],
                         "pages": 6
+                      },
+                      {
+                        "id": "Chapter 05 - Banking System in India",
+                        "name": "Chapter 05: Banking System in India",
+                        "parts": [
+                          {
+                            "file": "material-banking-system-in-india-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 5
                       }
                     ]
                   }
@@ -1890,8 +1912,8 @@
         ]
       },
       "counts": {
-        "en": 24,
-        "pa": 24
+        "en": 25,
+        "pa": 25
       },
       "pages": {
         "en": "study-gk.html",
@@ -2206,16 +2228,16 @@
       "color": "#0ea5e9",
       "description": "Budget, banking, taxes, schemes and five-year plans.",
       "order": 11,
-      "count": 8,
-      "newest": "2026-11-13",
-      "totalSize": 14917872,
+      "count": 10,
+      "newest": "2026-11-17",
+      "totalSize": 18493156,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ (Basic Concepts of Economy)",
@@ -2260,6 +2282,17 @@
                 }
               ],
               "pages": 6
+            },
+            {
+              "id": "ਅਧਿਆਇ 05 - ਭਾਰਤ ਵਿੱਚ ਬੈਂਕਿੰਗ ਪ੍ਰਣਾਲੀ (Banking System in India)",
+              "name": "ਅਧਿਆਇ 05 ਭਾਰਤ ਵਿੱਚ ਬੈਂਕਿੰਗ ਪ੍ਰਣਾਲੀ Banking System in India",
+              "parts": [
+                {
+                  "file": "material-banking-system-in-india-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
             }
           ]
         },
@@ -2268,7 +2301,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "Chapter 01 - Basic Concepts of Economy",
@@ -2313,15 +2346,26 @@
                 }
               ],
               "pages": 6
+            },
+            {
+              "id": "Chapter 05 - Banking System in India",
+              "name": "Chapter 05: Banking System in India",
+              "parts": [
+                {
+                  "file": "material-banking-system-in-india-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 5
             }
           ]
         }
       ],
-      "chapters": 8,
+      "chapters": 10,
       "hidden": true,
       "counts": {
-        "en": 4,
-        "pa": 4
+        "en": 5,
+        "pa": 5
       },
       "pages": {
         "en": "study-economy.html",
@@ -2842,6 +2886,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 96,
+  "total": 98,
   "generatedBy": "scripts/study_material.py"
 }

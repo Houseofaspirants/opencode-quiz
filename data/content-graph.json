@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 896,
-  "edges": 8481,
+  "nodes": 900,
+  "edges": 8528,
   "silos": 35,
   "clusters": 192,
   "pillars": 34
@@ -4028,6 +4028,54 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 6: ਬਾਬਾ ਬੰਦਾ ਸਿੰਘ ਬਹਾਦਰ ਅਤੇ ਦਲ ਖ਼ਾਲਸਾ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-banking-system-in-india-notes-english",
+   "url": "/material-banking-system-in-india-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-banking-system-in-india-notes-english.html",
+   "url": "/material-banking-system-in-india-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 05: Banking System in India (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-banking-system-in-india-notes-punjabi",
+   "url": "/material-banking-system-in-india-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-banking-system-in-india-notes-punjabi.html",
+   "url": "/material-banking-system-in-india-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 05 ਭਾਰਤ ਵਿੱਚ ਬੈਂਕਿੰਗ ਪ੍ਰਣਾਲੀ Banking System",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -13112,6 +13160,18 @@
   {
    "from": "archive-category-economy.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-economy.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -23911,6 +23971,18 @@
   },
   {
    "from": "archives.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28404,6 +28476,210 @@
    "weight": 1
   },
   {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-indian-economy-basic-concepts-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-national-income-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-english.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "pa/study-economy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "quiz-gk-expansion-of-english-east-india-company-in-india-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-national-income-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-banking-system-in-india-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -29653,7 +29929,13 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -29743,13 +30025,19 @@
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
-   "to": "material-national-income-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -32023,7 +32311,13 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -32113,13 +32407,19 @@
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
-   "to": "material-national-income-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-indian-economy-basic-concepts-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33049,13 +33349,19 @@
   },
   {
    "from": "material-money-and-money-supply-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-money-and-money-supply-notes-english.html",
-   "to": "material-national-income-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-english.html",
+   "to": "material-money-and-money-supply-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33145,13 +33451,19 @@
   },
   {
    "from": "material-money-and-money-supply-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-money-and-money-supply-notes-punjabi.html",
-   "to": "material-national-income-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33241,13 +33553,13 @@
   },
   {
    "from": "material-national-income-notes-english.html",
-   "to": "material-money-and-money-supply-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-national-income-notes-english.html",
-   "to": "material-national-income-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33337,13 +33649,19 @@
   },
   {
    "from": "material-national-income-notes-punjabi.html",
-   "to": "material-money-and-money-supply-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-national-income-notes-punjabi.html",
-   "to": "material-national-income-notes-english.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-national-income-notes-punjabi.html",
+   "to": "material-money-and-money-supply-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33775,13 +34093,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -33859,13 +34177,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
+   "to": "material-banking-system-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -48235,6 +48553,18 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -48332,18 +48662,6 @@
   {
    "from": "pdfs.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -60763,6 +61081,18 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-british-paramountcy-administrative-policy-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -61333,6 +61663,18 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-banking-system-in-india-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-banking-system-in-india-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-economic-planning-and-five-year-plans-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -61430,18 +61772,6 @@
   {
    "from": "study-notes.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
