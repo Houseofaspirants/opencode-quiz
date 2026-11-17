@@ -23,10 +23,10 @@
   <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon-180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="assets/css/style.css?v=112" as="style">
-  <link rel="stylesheet" href="assets/css/style.css?v=112">
-  <link rel="preload" href="assets/css/quiz.css?v=112" as="style">
-  <link rel="stylesheet" href="assets/css/quiz.css?v=112">
+  <link rel="preload" href="assets/css/style.css?v=113" as="style">
+  <link rel="stylesheet" href="assets/css/style.css?v=113">
+  <link rel="preload" href="assets/css/quiz.css?v=113" as="style">
+  <link rel="stylesheet" href="assets/css/quiz.css?v=113">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -143,11 +143,15 @@
           <span class="eyebrow">Step 1</span>
           <h2 style="font-size:clamp(1.1rem,2.2vw,1.35rem);margin-bottom:4px">Which exam are you preparing for?</h2>
           <p class="muted text-sm" style="margin-bottom:16px">ਤੁਸੀਂ ਕਿਹੜੇ ਪੇਪਰ ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ?</p>
-          <div class="grid" id="mockExams" role="radiogroup" aria-label="Exam" style="gap:10px">
-            <div class="skeleton" style="height:52px"></div>
-            <div class="skeleton" style="height:52px"></div>
-            <div class="skeleton" style="height:52px"></div>
+          <div class="field">
+            <label for="mockExams">Exam · ਪੇਪਰ</label>
+            <select id="mockExams" class="mock-select" aria-describedby="mockExamInfo">
+              <option>Loading exams…</option>
+            </select>
           </div>
+          <p class="mock-exam-info text-sm" id="mockExamInfo" aria-live="polite"></p>
+          <!-- Phones: start straight from Step 1; the full pattern is still in Step 2. -->
+          <button type="button" class="btn btn-primary btn-lg btn-block mock-start-quick" id="mockStartQuick" disabled>🚀 Start Mock Test</button>
           <p class="muted text-sm mt-2">
             For a full revision cycle, mix mocks with
             <a class="ilink" href="subject?subject=gk">Previous Year Questions</a>,
@@ -174,8 +178,8 @@
           <!-- Custom mock: the free builder -->
           <div id="mockCustom" class="grid hidden" style="gap:16px">
             <div class="field">
-              <label>Scope</label>
-              <div class="grid" id="mockSubjects" style="gap:10px"></div>
+              <label for="mockSubjects">Scope</label>
+              <select id="mockSubjects" class="mock-select"></select>
             </div>
             <div class="field">
               <label for="mockCount">Number of questions</label>
@@ -207,6 +211,9 @@
           </div>
 
           <div class="grid" style="gap:16px;margin-top:16px">
+            <button class="btn btn-primary btn-lg btn-block" id="mockStart" disabled>
+              🚀 Start Mock Test
+            </button>
             <div class="card card-pad" id="mockAccount" style="box-shadow:none"></div>
             <div class="field">
               <label>Rules</label>
@@ -218,9 +225,6 @@
                 <li>• Marks with negative marking, plus a full answer review, after submit</li>
               </ul>
             </div>
-            <button class="btn btn-primary btn-lg btn-block" id="mockStart" disabled>
-              🚀 Start Mock Test
-            </button>
             <button type="button" class="btn btn-ghost btn-sm" id="mockResetSeen">↺ Reset my seen questions</button>
           </div>
         </div>
@@ -291,8 +295,8 @@
 
   <div data-site-footer></div>
 
-  <script src="assets/js/core.js?v=112" defer></script>
-  <script src="assets/js/auth.js?v=112" defer></script>
-  <script src="assets/js/mock.js?v=112" defer></script>
+  <script src="assets/js/core.js?v=113" defer></script>
+  <script src="assets/js/auth.js?v=113" defer></script>
+  <script src="assets/js/mock.js?v=113" defer></script>
 </body>
 </html>

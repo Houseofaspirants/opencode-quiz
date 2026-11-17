@@ -1,7 +1,8 @@
 // @ts-check
 /* ============================================================================
  * mock.js | Mock Test page
- * Step 1 asks which exam the student is preparing for. Step 2 shows that
+ * Step 1 asks which exam the student is preparing for (one dropdown - short
+ * on a phone, where most students practise). Step 2 shows that
  * paper's real pattern (data/mock-patterns.json): sections, questions per
  * section, time, marking and the easy/medium/hard mix, plus how many of its
  * questions are still NEW for this student (HOA.seen). quiz.js builds the
@@ -22,6 +23,9 @@
   const SUBJECTS = idx.subjects || [];
   const exams = (cfg.exams || []).filter((e) => (e.papers || []).length);
   const startBtn = $("mockStart");
+  const quickBtn = $("mockStartQuick"); // phones only (CSS), mirrors startBtn
+  /** @param {boolean} off */
+  const setStart = (off) => { startBtn.disabled = off; if (quickBtn) quickBtn.disabled = off; };
   const statusEl = $("mockStatus");
   const params = new URLSearchParams(location.search);
 
@@ -65,39 +69,44 @@
   if (examId !== "custom" && !exams.some((e) => e.id === examId)) examId = exams[0] ? exams[0].id : "custom";
   let paperId = params.get("paper") || remembered.paper || "";
 
+  /** Dropdown group for an exam: the recruiting body, read from its name. */
+  const groupOf = (e) =>
+    /police/i.test(e.name) ? "Punjab Police · ਪੰਜਾਬ ਪੁਲਿਸ"
+      : /^psssb/i.test(e.name) ? "PSSSB"
+        : "PPSC";
+  const groups = new Map();
+  exams.forEach((e) => {
+    const g = groupOf(e);
+    groups.set(g, [...(groups.get(g) || []), e]);
+  });
   examWrap.innerHTML =
-    exams.map((e) => `
-    <label class="mock-option">
-      <input type="radio" name="mockExam" value="${esc(e.id)}">
-      <span>${e.icon || "📝"} ${esc(e.name)}
-        <span class="muted text-sm" style="display:block;font-weight:500">${esc(e.pa || "")}</span></span>
-      <span class="badge badge-muted" style="margin-left:auto">${qCount(e.papers[0])} Q</span>
-    </label>`).join("") + `
-    <label class="mock-option">
-      <input type="radio" name="mockExam" value="custom">
-      <span>🛠️ Custom mock
-        <span class="muted text-sm" style="display:block;font-weight:500">ਆਪਣਾ ਵਿਸ਼ਾ, ਸਵਾਲ ਅਤੇ ਸਮਾਂ ਚੁਣੋ</span></span>
-    </label>`;
+    [...groups].map(([g, list]) => `<optgroup label="${esc(g)}">${
+      list.map((e) => `<option value="${esc(e.id)}">${e.icon || "📝"} ${esc(e.name)}</option>`).join("")
+    }</optgroup>`).join("") +
+    `<optgroup label="Other · ਹੋਰ"><option value="custom">🛠️ Custom mock - choose subject, questions, time</option></optgroup>`;
 
   /* ------------------------------------------------ Step 2: the pattern */
   function render() {
-    examWrap.querySelectorAll(".mock-option").forEach((el) => {
-      const inp = el.querySelector("input");
-      inp.checked = inp.value === examId;
-      el.classList.toggle("selected", inp.checked);
-    });
+    examWrap.value = examId;
     const custom = examId === "custom";
+    const info = $("mockExamInfo");
     $("mockCustom").classList.toggle("hidden", !custom);
     $("mockPlanWrap").classList.toggle("hidden", custom);
     if (custom) {
       $("mockStep2Title").textContent = "Custom mock settings";
-      startBtn.disabled = totalQ === 0;
+      info.innerHTML = `<span lang="pa">ਆਪਣਾ ਵਿਸ਼ਾ, ਸਵਾਲ ਅਤੇ ਸਮਾਂ ਚੁਣੋ</span>`;
+      setStart(totalQ === 0);
       return;
     }
     const exam = exams.find((e) => e.id === examId);
     const paper = exam.papers.find((p) => p.id === paperId) || exam.papers[0];
     paperId = paper.id;
     $("mockStep2Title").textContent = `${exam.name} pattern`;
+    const neg0 = Number(paper.negative) || 0;
+    info.innerHTML = `<span lang="pa">${esc(exam.pa || "")}</span>` +
+      `<span class="mock-exam-chips"><span class="badge badge-muted">${qCount(paper)} Q</span>` +
+      `<span class="badge badge-muted">${paper.minutes} min</span>` +
+      `<span class="badge badge-muted">${neg0 ? "−" + neg0 + " per wrong" : "No negative"}</span></span>`;
 
     // Paper picker (SI / Head Constable have two merit papers).
     $("mockPapers").innerHTML = exam.papers.length > 1
@@ -139,11 +148,11 @@
     $("mockGuide").innerHTML = exam.guide
       ? `<a class="ilink" href="strategy-${esc(exam.guide)}">Official ${esc(exam.name)} syllabus &amp; pattern →</a>`
       : "";
-    startBtn.disabled = pool.total === 0;
+    setStart(pool.total === 0);
   }
 
-  examWrap.addEventListener("change", (e) => {
-    examId = /** @type {HTMLInputElement} */ (e.target).value;
+  examWrap.addEventListener("change", () => {
+    examId = examWrap.value;
     paperId = "";
     render();
   });
@@ -166,23 +175,10 @@
   }));
   const totalQ = subjects.reduce((n, s) => n + s.qCount, 0);
   const subjWrap = $("mockSubjects");
-  subjWrap.innerHTML = `
-    <label class="mock-option selected">
-      <input type="radio" name="mockSubject" value="all" checked>
-      <span>📘 All Subjects <span class="muted text-sm">(Mixed mock)</span></span>
-      <span class="badge badge-muted" style="margin-left:auto">${totalQ} Q</span>
-    </label>` +
-    subjects.map((s) => `
-    <label class="mock-option ${s.qCount ? "" : "disabled"}">
-      <input type="radio" name="mockSubject" value="${esc(s.id)}" ${s.qCount ? "" : "disabled"}>
-      <span>${s.icon} ${esc(s.name)}</span>
-      <span class="badge ${s.qCount ? "badge-muted" : "badge-warn"}" style="margin-left:auto">${
-        s.qCount ? s.qCount + " Q" : "Empty"}</span>
-    </label>`).join("");
-  subjWrap.addEventListener("change", () => {
-    subjWrap.querySelectorAll(".mock-option").forEach((el) => el.classList.remove("selected"));
-    subjWrap.querySelector("input:checked")?.closest(".mock-option")?.classList.add("selected");
-  });
+  subjWrap.innerHTML =
+    `<option value="all" selected>📘 All subjects - mixed mock (${totalQ} Q)</option>` +
+    subjects.map((s) => `<option value="${esc(s.id)}" ${s.qCount ? "" : "disabled"}>${s.icon} ${esc(s.name)} (${
+      s.qCount ? s.qCount + " Q" : "empty"})</option>`).join("");
 
   statusEl.textContent = totalQ
     ? `${totalQ} questions in the bank · ${HOA.seen.count()} already served to you.`
@@ -215,12 +211,12 @@
   render();
 
   /* --------------------------------------------------------- Start ------- */
-  startBtn.addEventListener("click", async () => {
+  const start = async () => {
     // Anonymous-first: ensure() only blocks when auth.gateQuizzes is on.
     const ok = !HOA.auth || (await HOA.auth.ensure());
     if (!ok) return;
     if (examId === "custom") {
-      const subject = document.querySelector("input[name='mockSubject']:checked")?.getAttribute("value") || "all";
+      const subject = subjWrap.value || "all";
       location.href = `quiz.html?mode=mock&subject=${encodeURIComponent(subject)}` +
         `&count=${$("mockCount").value}&minutes=${$("mockMinutes").value}&pattern=${$("mockMix").value || "exam"}`;
       return;
@@ -229,5 +225,7 @@
     HOA.db.remove("mockPaper"); // a new attempt always draws a new paper
     location.href = `quiz.html?mode=mock&exam=${encodeURIComponent(examId)}` +
       `&paper=${encodeURIComponent(paperId)}&t=${Date.now()}`;
-  });
+  };
+  startBtn.addEventListener("click", start);
+  quickBtn?.addEventListener("click", start);
 })();

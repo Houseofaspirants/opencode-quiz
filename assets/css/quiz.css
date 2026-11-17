@@ -603,3 +603,31 @@
 .mock-plan th, .mock-plan td { padding: 9px 8px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: top; font-size: 0.92rem; }
 .mock-plan thead th { font-size: 0.78rem; color: var(--text-2); text-transform: uppercase; letter-spacing: .03em; }
 .mock-plan tfoot th { border-bottom: 0; }
+
+/* Mock test pickers: one native dropdown each. Native <select> gives the
+   phone's own picker; 16px text stops iOS zooming into the field. */
+.field select.mock-select {
+  min-height: 52px; font-size: 16px; font-weight: 600; color: var(--text);
+  cursor: pointer; padding-right: 40px;
+}
+.mock-exam-info { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 10px; color: var(--text-2); }
+.mock-exam-info:empty { display: none; }
+.mock-exam-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.mock-start-quick { display: none; }
+
+/* Phones: most students practise here, so keep the setup short and the
+   Start button within a thumb's reach of the pattern. */
+@media (max-width: 640px) {
+  body[data-page="mock"] .page-hero { padding-top: 18px; padding-bottom: 18px; }
+  body[data-page="mock"] .page-hero h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  body[data-page="mock"] .page-hero .answer-box { padding: 12px 14px; margin-top: 10px; }
+  body[data-page="mock"] .page-hero .answer-box p { font-size: 0.9rem; line-height: 1.5; }
+  body[data-page="mock"] .section { padding-top: 18px; }
+  body[data-page="mock"] .card-pad { padding: 16px; }
+  body[data-page="mock"] .grid-2 { gap: 14px; }
+  .mock-start-quick { display: flex; margin-top: 14px; }
+  .mock-presets { flex-direction: column; margin-bottom: 8px; }
+  .mock-presets .btn { flex: 0 0 auto; width: 100%; }
+  .mock-plan th, .mock-plan td { padding: 8px 4px; font-size: 0.86rem; }
+  .mock-plan td:last-child { white-space: nowrap; }
+}
