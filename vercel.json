@@ -846,6 +846,11 @@
       "statusCode": 301
     },
     {
+      "source": "/assets/proof/:path(.*\\.(?:pdf|PDF))",
+      "destination": "https://files.houseofaspirants.in/assets/proof/:path",
+      "statusCode": 301
+    },
+    {
       "source": "/pa/quiz-quant-01 - Number System - MCQ - EN - Part 1",
       "destination": "/pa/quiz-quant-01-number-system-part-1",
       "statusCode": 301

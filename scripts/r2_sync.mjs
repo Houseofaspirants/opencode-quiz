@@ -6,7 +6,7 @@
  *   node scripts/r2_sync.mjs --dry-run  list what would be uploaded
  *   node scripts/r2_sync.mjs --check    exit 1 if any PDF is missing on R2
  *
- * Which files: every *.pdf under content/ and assets/pdfs/, stored on R2 under
+ * Which files: every *.pdf under content/, assets/pdfs/ and assets/proof/, stored on R2 under
  * the SAME path (content/…/x.pdf -> https://files.houseofaspirants.in/content/…/x.pdf),
  * so data/site.json -> files.pdfBase only has to name the host.
  *
@@ -28,7 +28,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
-const ROOTS = ["content", "assets/pdfs"];
+const ROOTS = ["content", "assets/pdfs", "assets/proof"];
 const CACHE = "public, max-age=604800"; // a week in browsers / Cloudflare's cache
 const PARALLEL = 2;
 

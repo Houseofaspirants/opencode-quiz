@@ -27,7 +27,7 @@ const HOA = (() => {
      do not edit by hand. With a base (Cloudflare R2), every local PDF path
      is turned into base + "/" + path, so PDF bytes never touch Vercel. */
   const FILES_BASE = "https://files.houseofaspirants.in";
-  const LOCAL_PDF_RX = /^(?:\.?\/)?((?:content|assets\/pdfs)\/[^?#]*\.pdf)([?#].*)?$/i;
+  const LOCAL_PDF_RX = /^(?:\.?\/)?((?:content|assets\/(?:pdfs|proof))\/[^?#]*\.pdf)([?#].*)?$/i;
   /** @param {string} path a PDF path as a page or manifest carries it */
   function fileUrl(path) {
     const v = String(path || "");

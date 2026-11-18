@@ -3103,7 +3103,7 @@ def pdf_href(path):
     return hosted_pdf(quote(v, safe="/%"))
 
 
-_LOCAL_PDF = re.compile(r"(?:\.?/)?((?:content|assets/pdfs)/[^?#]*\.pdf)([?#].*)?$", re.I)
+_LOCAL_PDF = re.compile(r"(?:\.?/)?((?:content|assets/(?:pdfs|proof))/[^?#]*\.pdf)([?#].*)?$", re.I)
 
 
 _PDF_VERSIONS = None
