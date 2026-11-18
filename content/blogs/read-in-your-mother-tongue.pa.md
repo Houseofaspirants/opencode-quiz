@@ -8,7 +8,7 @@ category: book-reviews
 difficulty: Beginner
 draft: false
 schemaType: BlogPosting
-tags: [punjabi, memory, study routine, revision]
+tags: [mother tongue, memory, study routine, revision]
 exams: [Punjab Police Sub Inspector, PSSSB, Punjab PCS]
 youtubeLink: https://www.youtube.com/live/wfb3oT2vQdg
 faq:
