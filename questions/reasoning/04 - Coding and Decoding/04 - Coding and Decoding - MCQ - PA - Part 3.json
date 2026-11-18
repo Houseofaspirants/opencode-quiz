@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 4,
+    "title": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-051",
+      "number": 51,
+      "question": "ਇੱਕ filing code ਸਾਰੇ ਅੱਖਰਾਂ ਨੂੰ ਉਲਟੇ alphabet ਕ੍ਰਮ ਵਿੱਚ ਲਿਖਦਾ ਹੈ ਅਤੇ ਦੁਹਰਾਏ ਅੱਖਰ ਰੱਖਦਾ ਹੈ। AMBALA ਦਾ filing code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AAABLM"
+        },
+        {
+          "label": "B",
+          "text": "MLBAAA"
+        },
+        {
+          "label": "C",
+          "text": "MLABAA"
+        },
+        {
+          "label": "D",
+          "text": "MLBAA"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਵੱਡੇ rank ਤੋਂ ਛੋਟੇ ਵੱਲ M,L,B,A,A,A ਲਿਖੋ। code MLBAAA ਹੈ।"
+    },
+    {
+      "id": "04-052",
+      "number": 52,
+      "question": "ਇੱਕ ਤੈਅ mapping ਵਿੱਚ ਦੋ ਅੱਖਰਾਂ ਦਾ code ਇੱਕੋ ਹੋ ਸਕਦਾ ਹੈ: P→#, Q→#, R→@, S→7। #@# ਦੇ ਕਿੰਨੇ ਵੱਖਰੇ ਤਿੰਨ-ਅੱਖਰੀ ਅਸਲ ਰੂਪ ਹੋ ਸਕਦੇ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ # ਵੱਖਰੇ ਤੌਰ ਉੱਤੇ P ਜਾਂ Q ਹੋ ਸਕਦਾ ਹੈ; @ ਸਿਰਫ਼ R ਹੈ। ਇਸ ਲਈ 2×1×2=4 ਅਸਲ ਰੂਪ ਹਨ।"
+    },
+    {
+      "id": "04-053",
+      "number": 53,
+      "question": "ਤਿੰਨ ਅੱਖਰਾਂ ਦਾ code ranks ਦੇ ਜੋੜ ਦੇ ਵਰਗ ਵਿੱਚੋਂ ranks ਦੇ ਵਰਗਾਂ ਦਾ ਜੋੜ ਘਟਾ ਕੇ ਬਣਦਾ ਹੈ। JET ਨੂੰ ਕਿਹੜਾ ਅੰਕ ਦਰਸਾਉਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "525"
+        },
+        {
+          "label": "B",
+          "text": "350"
+        },
+        {
+          "label": "C",
+          "text": "700"
+        },
+        {
+          "label": "D",
+          "text": "1225"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2(ab+bc+ac) ਵਰਤੋ: 2×(10×5+5×20+10×20)=700। ਇਸ ਨਾਲ 35 ਦਾ ਵਰਗ ਕਰਨ ਦੀ ਲੋੜ ਨਹੀਂ।"
+    },
+    {
+      "id": "04-054",
+      "number": 54,
+      "question": "ਅੰਕੀ code ਵਿੱਚ ਹਰ ਆਮ alphabet rank ਦਾ ਦੁੱਗਣਾ ਵੱਖਰੇ group ਵਿੱਚ ਲਿਖਦੇ ਹਨ। BINA ਦਾ ਕ੍ਰਮ ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-16-28-2"
+        },
+        {
+          "label": "B",
+          "text": "4-18-28-2"
+        },
+        {
+          "label": "C",
+          "text": "4-18-26-2"
+        },
+        {
+          "label": "D",
+          "text": "2-9-14-1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "2,9,14,1 ਦਾ ਦੁੱਗਣਾ ਕਰਕੇ 4-18-28-2 ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-055",
+      "number": 55,
+      "question": "ਤਿੰਨ-digit ਅੰਕ abc ਦਾ code a×c+b² ਹੈ। ਦਿੱਤਿਆਂ ਵਿੱਚੋਂ ਕਿਸ ਅੰਕ ਦਾ code 34 ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "526"
+        },
+        {
+          "label": "B",
+          "text": "624"
+        },
+        {
+          "label": "C",
+          "text": "352"
+        },
+        {
+          "label": "D",
+          "text": "425"
+        }
+      ],
+      "answer": "A",
+      "explanation": "526 ਲਈ 5×6+2²=34 ਹੈ। ਬਾਕੀ codes 31,24 ਅਤੇ 28 ਹਨ।"
+    },
+    {
+      "id": "04-056",
+      "number": 56,
+      "question": "ਮੂਲ mapping: I→3, A→6, M→%, 2→K, 7→@। ਅਸਲ input I2M7A ਜਾਂਚੋ। ਕ੍ਰਮਵਾਰ: ਪਹਿਲਾ character ਸਵਰ ਹੋਵੇ ਤਾਂ ਉਸ ਦਾ code # ਕਰੋ; ਆਖ਼ਰੀ character ਸਵਰ ਹੋਵੇ ਤਾਂ ਉਸ ਸਮੇਂ ਦੇ ਸਿਰਿਆਂ ਦੇ codes ਬਦਲੋ; ਅੰਤ ਵਿੱਚ ਅਸਲ ਜਿਸਤ digits ਦੇ codes $ ਕਰੋ। ਨਤੀਜਾ ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "#$%@6"
+        },
+        {
+          "label": "B",
+          "text": "6$%@3"
+        },
+        {
+          "label": "C",
+          "text": "6K%@#"
+        },
+        {
+          "label": "D",
+          "text": "6$%@#"
+        }
+      ],
+      "answer": "D",
+      "explanation": "3K%@6 ਤੋਂ ਪਹਿਲਾਂ #K%@6, ਫਿਰ 6K%@# ਬਣਦਾ ਹੈ। ਅੰਤ ਵਿੱਚ 2 ਦਾ code ਬਦਲਣ ਨਾਲ 6$%@# ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-057",
+      "number": 57,
+      "question": "ਤੈਅ word codes ਵਿੱਚ tokens ਦਾ ਕ੍ਰਮ ਕੋਈ ਵੀ ਹੈ: “canals bring water” = “de hu pa”; “rivers carry water” = “jo pa si”; “canals carry crops” = “hu si ve”। ਇੱਕ clerk “rivers bring crops” ਲਈ “jo hu ve” ਲਿਖਦਾ ਹੈ। ਗਲਤ hu ਦੀ ਥਾਂ ਕਿਹੜਾ token ਆਵੇ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "de"
+        },
+        {
+          "label": "B",
+          "text": "jo"
+        },
+        {
+          "label": "C",
+          "text": "si"
+        },
+        {
+          "label": "D",
+          "text": "pa"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਸਾਂਝੇ ਸ਼ਬਦਾਂ ਤੋਂ water=pa, canals=hu ਅਤੇ carry=si ਹਨ। ਇਸ ਲਈ bring=de ਹੈ ਅਤੇ hu ਦੀ ਥਾਂ de ਆਵੇਗਾ।"
+    },
+    {
+      "id": "04-058",
+      "number": 58,
+      "question": "alphabet ਦੀ ਚੱਕਰੀ ਗਿਣਤੀ L=1, M=2 ਤੋਂ ਸ਼ੁਰੂ ਹੋ ਕੇ Z=15, A=16 ਅਤੇ K=26 ਤੱਕ ਹੈ। LUCK ਦੇ ਅੰਕ ਕੀ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-9-18-26"
+        },
+        {
+          "label": "B",
+          "text": "1-10-17-26"
+        },
+        {
+          "label": "C",
+          "text": "1-10-18-26"
+        },
+        {
+          "label": "D",
+          "text": "12-21-3-11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "L ਤੋਂ ਚੱਕਰੀ ਗਿਣਤੀ ਕਰੋ: L=1, U=10, C=18 ਅਤੇ K=26। code 1-10-18-26 ਹੈ।"
+    },
+    {
+      "id": "04-059",
+      "number": 59,
+      "question": "ਛੇ ਅੱਖਰਾਂ ਦੇ input ਵਿੱਚ ਪਹਿਲਾਂ ਨੇੜਲੇ ਜੋੜਿਆਂ ਦੇ ਅੱਖਰ ਬਦਲਦੇ ਹਨ। ਫਿਰ ਨਤੀਜੇ ਨੂੰ ਇੱਕ ਥਾਂ ਖੱਬੇ ਘੁਮਾਉਂਦੇ ਹਨ। ਸੰਭਾਲਿਆ ਨਤੀਜਾ SKNRAA ਹੈ। input ਕੀ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SAKNAR"
+        },
+        {
+          "label": "B",
+          "text": "SANKAR"
+        },
+        {
+          "label": "C",
+          "text": "KARSAN"
+        },
+        {
+          "label": "D",
+          "text": "ASKNRA"
+        }
+      ],
+      "answer": "B",
+      "explanation": "SKNRAA ਨੂੰ ਇੱਕ ਥਾਂ ਸੱਜੇ ਘੁਮਾ ਕੇ ASKNRA ਬਣਾਓ। ਹਰ ਨੇੜਲਾ ਜੋੜਾ ਬਦਲ ਕੇ SANKAR ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-060",
+      "number": 60,
+      "question": "ਟਾਂਕ ਥਾਵਾਂ ਵਾਲੇ ਅੱਖਰ -2 ਅਤੇ ਜਿਸਤ ਥਾਵਾਂ ਵਾਲੇ +4 ਹੁੰਦੇ ਹਨ। ਇੱਕ trainee BALDEV→ZEJHCR ਲਿਖਦਾ ਹੈ। ਉਸ ਦੇ code ਦੀ ਕਿਹੜੀ ਇਕੱਲੀ ਥਾਂ ਗਲਤ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਸਹੀ code ZEJHCZ ਹੈ। ਸਿਰਫ਼ ਥਾਂ 6 ਉੱਤੇ R ਦੀ ਥਾਂ Z ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-061",
+      "number": 61,
+      "question": "ਇੱਕ station ਦਾ ਨਾਂ ਪੂਰਾ ਉਲਟ ਕੇ ARGOM ਸੰਭਾਲਿਆ ਗਿਆ ਹੈ। ਅਸਲ ਨਾਂ ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "MAGRO"
+        },
+        {
+          "label": "B",
+          "text": "ARGOM"
+        },
+        {
+          "label": "C",
+          "text": "MORGA"
+        },
+        {
+          "label": "D",
+          "text": "MOGRA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ARGOM ਨੂੰ ਮੁੜ ਉਲਟ ਕੇ MOGRA ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-062",
+      "number": 62,
+      "question": "code ਬਣਾਉਣ ਲਈ ਖੱਬੇ ਤੋਂ ਸੱਜੇ +1,-2,+3,-4,+5,-6 ਲੱਗਦੇ ਹਨ। NAGPUR ਲਈ operator OYJLAL ਦੱਸਦਾ ਹੈ। ਕਿਹੜੀ ਇਕੱਲੀ ਥਾਂ ਠੀਕ ਕਰਨੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਸਹੀ code OYJLZL ਹੈ: ਥਾਂ 5 ਵਾਲਾ U +5 ਨਾਲ Z ਬਣਦਾ ਹੈ। ਸਿਰਫ਼ ਥਾਂ 5 ਵੱਖਰੀ ਹੈ।"
+    },
+    {
+      "id": "04-063",
+      "number": 63,
+      "question": "JIND ਦੇ ਹਰ ਅੱਖਰ ਨੂੰ ਇੱਕੋ ਧਨਾਤਮਕ ਗਿਣਤੀ ਜਿੰਨੀਆਂ ਥਾਵਾਂ ਅੱਗੇ ਕਰਕੇ ONSI ਮਿਲਦਾ ਹੈ। ਅੱਗੇ ਦੀ shift ਕਿੰਨੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "J=10 ਤੋਂ O=15 ਲਈ ਅੱਗੇ ਦੀ shift 5 ਹੈ। ਬਾਕੀ ਤਿੰਨ ਜੋੜੇ ਵੀ +5 ਦੀ ਪੁਸ਼ਟੀ ਕਰਦੇ ਹਨ।"
+    },
+    {
+      "id": "04-064",
+      "number": 64,
+      "question": "ਪੰਜ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਵਿੱਚ ਪਹਿਲਾ ਅਤੇ ਆਖ਼ਰੀ ਅੱਖਰ ਜਿਉਂ ਦੇ ਤਿਉਂ ਰੱਖ ਕੇ ਸਿਰਫ਼ ਵਿਚਕਾਰਲੇ ਤਿੰਨ ਉਲਟੇ ਜਾਂਦੇ ਹਨ। SIKAR ਲਈ encoder ਕੀ ਦੇਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RAKIS"
+        },
+        {
+          "label": "B",
+          "text": "SKIAR"
+        },
+        {
+          "label": "C",
+          "text": "SAKIR"
+        },
+        {
+          "label": "D",
+          "text": "SIKAR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "S ਅਤੇ R ਨੂੰ ਸਥਿਰ ਰੱਖੋ; IKA ਨੂੰ ਉਲਟ ਕੇ AKI ਕਰੋ। S+AKI+R = SAKIR।"
+    },
+    {
+      "id": "04-065",
+      "number": 65,
+      "question": "ਇੱਕ game ਦੀ dictionary LEFT→RIGHT, RIGHT→BACK, BACK→FRONT, FRONT→LEFT ਹੈ। announcer ਦਾ ਕਿਹੜਾ ਇੱਕ-ਕਦਮੀ ਬਦਲਾਅ ਇਸ dictionary ਨੂੰ ਤੋੜਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LEFT→BACK"
+        },
+        {
+          "label": "B",
+          "text": "FRONT→LEFT"
+        },
+        {
+          "label": "C",
+          "text": "RIGHT→BACK"
+        },
+        {
+          "label": "D",
+          "text": "BACK→FRONT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਇੱਕ ਬਦਲਾਅ ਨਾਲ LEFT ਦਾ ਨਾਂ RIGHT ਹੈ। BACK ਤੱਕ ਪਹੁੰਚਣ ਲਈ ਦੂਜਾ ਬਦਲਾਅ ਲੋੜੀਂਦਾ ਹੈ, ਇਸ ਲਈ LEFT→BACK ਇੱਕ-ਕਦਮੀ rule ਤੋੜਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-066",
+      "number": 66,
+      "question": "columns 2,4,6 ਅਤੇ rows 1,3,5 ਹਨ। row 1: S,A,R; row 3: I,N,D; row 5: R,A,N। ਹਰ ਜੋੜਾ ਪਹਿਲਾਂ row ਅਤੇ ਫਿਰ column ਦਿੰਦਾ ਹੈ। 16-32-36-54 Decode ਕਰੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "SINA"
+        },
+        {
+          "label": "B",
+          "text": "RADI"
+        },
+        {
+          "label": "C",
+          "text": "RINA"
+        },
+        {
+          "label": "D",
+          "text": "RIDA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਅਸਲ labels ਵਰਤ ਕੇ 16=R,32=I,36=D ਅਤੇ 54=A ਹਨ। ਨਤੀਜਾ RIDA ਹੈ।"
+    },
+    {
+      "id": "04-067",
+      "number": 67,
+      "question": "ਇੱਕ ਸ਼ਬਦ ਦੇ ਅੱਖਰਾਂ ਦੇ ਉਲਟੇ alphabet ਮੁੱਲ ਲੈ ਕੇ ਹਰ ਮੁੱਲ ਨੂੰ ਖੱਬੇ ਤੋਂ ਉਸ ਦੀ ਥਾਂ ਦੇ ਨੰਬਰ ਨਾਲ ਗੁਣਾ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ਚੱਕਰ ਨਹੀਂ ਲਾਉਣਾ। 9-52-57-72 Decode ਕਰੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "RAHI"
+        },
+        {
+          "label": "B",
+          "text": "RAHJ"
+        },
+        {
+          "label": "C",
+          "text": "RAKI"
+        },
+        {
+          "label": "D",
+          "text": "IZSR"
+        }
+      ],
+      "answer": "A",
+      "explanation": "9,52,57,72 ਨੂੰ 1,2,3,4 ਨਾਲ ਵੰਡ ਕੇ 9,26,19,18 ਲਵੋ। ਹਰ ਮੁੱਲ ਨੂੰ 27 ਵਿੱਚੋਂ ਘਟਾਉਣ ਨਾਲ R,A,H,I ਮਿਲਦੇ ਹਨ।"
+    },
+    {
+      "id": "04-068",
+      "number": 68,
+      "question": "FATE ਦੇ alphabet ਉਲਟੇ ਅੱਖਰ ਲਵੋ, ਚਾਰ ਅੱਖਰਾਂ ਦਾ ਨਤੀਜਾ ਉਲਟੋ ਅਤੇ ਫਿਰ ਖੱਬੇ ਤੋਂ +1,+2,+3,+4 ਲਾਓ। ਆਖ਼ਰੀ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "UEWQ"
+        },
+        {
+          "label": "B",
+          "text": "WHAV"
+        },
+        {
+          "label": "C",
+          "text": "VBJZ"
+        },
+        {
+          "label": "D",
+          "text": "WICY"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਉਲਟੇ ਅੱਖਰ UZGV ਹਨ; ਉਲਟਾ ਕ੍ਰਮ VGZU ਹੈ। 1,2,3,4 ਜੋੜਨ ਨਾਲ WICY ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-069",
+      "number": 69,
+      "question": "word code ਦੇ ਦੋ ਹਿੱਸੇ ਹਨ: ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਆਉਣ ਵਾਲੇ ਅੱਖਰਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਫਿਰ ਦੁਹਰਾਏ ਅੱਖਰਾਂ ਵਿੱਚੋਂ ਸਭ ਤੋਂ ਵੱਡੇ alphabet rank ਵਾਲਾ ਅੱਖਰ। ਤਿੰਨ ਵਾਰ ਆਇਆ ਅੱਖਰ ਵੀ ਦੁਹਰਾਇਆ ਮੰਨੋ। TARNTARAN ਦਾ code ਬਣਾਓ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "1T"
+        },
+        {
+          "label": "B",
+          "text": "4T"
+        },
+        {
+          "label": "C",
+          "text": "0T"
+        },
+        {
+          "label": "D",
+          "text": "0R"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A ਤਿੰਨ ਵਾਰ ਅਤੇ T,R,N ਦੋ-ਦੋ ਵਾਰ ਹਨ। ਕੋਈ ਅੱਖਰ ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਨਹੀਂ ਆਇਆ; ਦੁਹਰਾਏ ਅੱਖਰਾਂ ਵਿੱਚ ਸਭ ਤੋਂ ਵੱਡਾ T ਹੈ, ਇਸ ਲਈ 0T।"
+    },
+    {
+      "id": "04-070",
+      "number": 70,
+      "question": "ਲਗਾਤਾਰ ਅੱਖਰਾਂ ਨੂੰ 1,3,5,7 ਥਾਵਾਂ ਅੱਗੇ ਕੀਤਾ ਜਾਂਦਾ ਹੈ। ROPA ਦੇ code S R U _ ਵਿੱਚ ਆਖ਼ਰੀ ਅੱਖਰ ਕਿਹੜਾ ਆਵੇਗਾ? ਖਾਲੀ ਥਾਂ ਅੱਖਰ ਵੱਖ ਕਰਦੀ ਹੈ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "E"
+        },
+        {
+          "label": "B",
+          "text": "G"
+        },
+        {
+          "label": "C",
+          "text": "I"
+        },
+        {
+          "label": "D",
+          "text": "H"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਚੌਥਾ ਅੱਖਰ A +7 ਹੁੰਦਾ ਹੈ: 1+7=8=H। ਪਹਿਲੀਆਂ shifts ਨਾਲ S,R,U ਮਿਲਦੇ ਹਨ।"
+    },
+    {
+      "id": "04-071",
+      "number": 71,
+      "question": "codes ਤੈਅ, ਇੱਕ-ਤੋਂ-ਇੱਕ ਅਤੇ ਬਿਨਾਂ ਤੈਅ ਕ੍ਰਮ ਦੇ ਹਨ: “young players train” = “xa bu li”; “players win medals” = “bu fo ne”; “young teams win” = “li ga fo”; “teams train daily” = “ga xa ru”। “medals young daily” ਦੇ code set ਵਿੱਚੋਂ “medals” ਦਾ code ਹਟਾਓ। ਕਿਹੜਾ ਜੋੜਾ ਬਚੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "li ru"
+        },
+        {
+          "label": "B",
+          "text": "ne ru"
+        },
+        {
+          "label": "C",
+          "text": "li ga"
+        },
+        {
+          "label": "D",
+          "text": "xa ru"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਸ਼ਬਦ ਮਿਲਾਉਣ ਨਾਲ young=li, teams=ga, train=xa ਅਤੇ daily=ru ਮਿਲਦੇ ਹਨ। medals ਹਟਾਉਣ ਨਾਲ li ru ਬਚਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-072",
+      "number": 72,
+      "question": "codes ਵੱਡੇ ਅਤੇ ਛੋਟੇ ਅੱਖਰਾਂ ਵਿੱਚ ਫ਼ਰਕ ਕਰਦੇ ਹਨ: a→%, A→7, m→2, M→#। ਬਿਲਕੁਲ ਇਸੇ ਤਰ੍ਹਾਂ ਲਿਖੇ aMA ਦਾ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "%27"
+        },
+        {
+          "label": "B",
+          "text": "%#%"
+        },
+        {
+          "label": "C",
+          "text": "%#7"
+        },
+        {
+          "label": "D",
+          "text": "7#7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਅੱਖਰ ਦੇ ਨਾਲ ਉਸ ਦਾ ਵੱਡਾ ਜਾਂ ਛੋਟਾ ਰੂਪ ਵੀ ਵੇਖੋ: a→%, M→#, A→7। code %#7 ਹੈ।"
+    },
+    {
+      "id": "04-073",
+      "number": 73,
+      "question": "ਅੱਠ ਅੱਖਰਾਂ ਦੇ code ਵਿੱਚ ਦੋ ਤੈਅ shifts ਵਾਰੀ-ਵਾਰੀ ਲੱਗਦੀਆਂ ਹਨ। MARIGOLD ਤੋਂ PZUHJNOC ਬਣਦਾ ਹੈ। ਉਹੀ shifts CHANDPUR ਉੱਤੇ ਲਾ ਕੇ ਸਿਰਫ਼ ਥਾਵਾਂ 2,4,6,8 ਦੱਸੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "GMSQ"
+        },
+        {
+          "label": "B",
+          "text": "GMOQ"
+        },
+        {
+          "label": "C",
+          "text": "GMOR"
+        },
+        {
+          "label": "D",
+          "text": "KQSU"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਮਿਸਾਲ ਵਿੱਚ +3,-1 ਵਾਰੀ-ਵਾਰੀ ਹਨ। ਮੰਗੀਆਂ ਜਿਸਤ ਥਾਵਾਂ H,N,P,R ਨੂੰ -1 ਕਰਕੇ GMOQ ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-074",
+      "number": 74,
+      "question": "ਇੱਕੋ +9 ਵਾਲਾ encoder ਇੱਕੋ ਪੰਜ-ਅੱਖਰੀ string ਉੱਤੇ ਤਿੰਨ ਵਾਰ ਲੱਗਦਾ ਹੈ। DANCE ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ ਆਖ਼ਰੀ string ਕੀ ਹੋਵੇਗੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "VSFUW"
+        },
+        {
+          "label": "B",
+          "text": "EBODF"
+        },
+        {
+          "label": "C",
+          "text": "MJWLN"
+        },
+        {
+          "label": "D",
+          "text": "DANCE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਤਿੰਨ ਵਾਰ ਲਾਉਣ ਨਾਲ +27 ਹੁੰਦਾ ਹੈ, ਜੋ ਇੱਕ ਪੂਰਾ alphabet ਚੱਕਰ ਕੱਟ ਕੇ +1 ਦੇ ਬਰਾਬਰ ਹੈ। DANCE ਤੋਂ EBODF ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-075",
+      "number": 75,
+      "question": "ਚਾਰ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਦਾ code ਟਾਂਕ ਥਾਵਾਂ ਦੇ ranks ਦੇ ਜੋੜ ਵਿੱਚੋਂ ਜਿਸਤ ਥਾਵਾਂ ਦਾ ਜੋੜ ਘਟਾ ਕੇ ਬਣਦਾ ਹੈ। KOTA ਦਾ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "-15"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਟਾਂਕ ਥਾਵਾਂ K+T=31 ਅਤੇ ਜਿਸਤ ਥਾਵਾਂ O+A=16 ਦਿੰਦੀਆਂ ਹਨ। code 31-16=15 ਹੈ।"
+    }
+  ]
+}

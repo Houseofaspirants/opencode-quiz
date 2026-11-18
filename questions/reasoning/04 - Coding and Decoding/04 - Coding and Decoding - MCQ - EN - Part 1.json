@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-001",
+      "number": 1,
+      "question": "A clerk adds the alphabet ranks of distinct letters only; repeated occurrences are ignored. What number is assigned to BATHINDA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "57"
+        },
+        {
+          "label": "B",
+          "text": "58"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "59"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Count A once. B+A+T+H+I+N+D = 2+1+20+8+9+14+4 = 58."
+    },
+    {
+      "id": "04-002",
+      "number": 2,
+      "question": "A six-letter code reads original places 4,1,6,2,5,3. The code is NKLAAR. Which word was rearranged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KANRAL"
+        },
+        {
+          "label": "B",
+          "text": "AKLRAN"
+        },
+        {
+          "label": "C",
+          "text": "KARLAN"
+        },
+        {
+          "label": "D",
+          "text": "KARNAL"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Put N,K,L,A,A,R back at places 4,1,6,2,5,3 respectively. Reading original positions 1–6 gives KARNAL."
+    },
+    {
+      "id": "04-003",
+      "number": 3,
+      "question": "Coordinates are row first, column second. Columns: 0 1 2; row 0: J A L; row 1: A M R; row 2: R L A. Which sequence correctly codes JAL?",
+      "options": [
+        {
+          "label": "A",
+          "text": "00-22-12"
+        },
+        {
+          "label": "B",
+          "text": "00-10-21"
+        },
+        {
+          "label": "C",
+          "text": "00-11-21"
+        },
+        {
+          "label": "D",
+          "text": "00-01-20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Read each pair separately: 00=J, 10=A and 21=L. Alternative A or L cells are allowed, but every pair must match."
+    },
+    {
+      "id": "04-004",
+      "number": 4,
+      "question": "Base: A→2,E→5,I→8,N→%,R→7. Count vowels in the original input and apply ONLY the first matching rule: (1) exactly two vowels: replace both endpoint codes by #; (2) both endpoints vowels: reverse the full base code, then replace its middle code by @; (3) otherwise retain the base. Encode ANIRE.",
+      "options": [
+        {
+          "label": "A",
+          "text": "#%87#"
+        },
+        {
+          "label": "B",
+          "text": "2%@75"
+        },
+        {
+          "label": "C",
+          "text": "57@%2"
+        },
+        {
+          "label": "D",
+          "text": "578%2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ANIRE has three vowels, so rule 1 fails and rule 2 applies. Reverse 2%875 to 578%2, then replace its middle code: 57@%2."
+    },
+    {
+      "id": "04-005",
+      "number": 5,
+      "question": "Each word has one fixed code and token order is arbitrary: “farmers sell wheat” = “zu pa ni”; “traders buy wheat” = “ko ni re”; “farmers buy seeds” = “pa re lo”. Find the code for “sell seeds”.",
+      "options": [
+        {
+          "label": "A",
+          "text": "zu lo"
+        },
+        {
+          "label": "B",
+          "text": "zu re"
+        },
+        {
+          "label": "C",
+          "text": "ko lo"
+        },
+        {
+          "label": "D",
+          "text": "pa lo"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Common words identify wheat=ni, farmers=pa and buy=re. The remaining codes are sell=zu and seeds=lo."
+    },
+    {
+      "id": "04-006",
+      "number": 6,
+      "question": "A ticket machine uses L→7, O→@, H→4, R→%, I→2. Which ticket prints for LOHRI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7@4%2"
+        },
+        {
+          "label": "B",
+          "text": "2%4@7"
+        },
+        {
+          "label": "C",
+          "text": "7@%42"
+        },
+        {
+          "label": "D",
+          "text": "7@4%7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Replace letters in their original order: L O H R I → 7 @ 4 % 2."
+    },
+    {
+      "id": "04-007",
+      "number": 7,
+      "question": "At a fair, real objects are renamed once: DRUM→FLUTE, FLUTE→FLAG, FLAG→LAMP. Simran actually picks up a FLUTE. Which code name must the announcer use?",
+      "options": [
+        {
+          "label": "A",
+          "text": "FLUTE"
+        },
+        {
+          "label": "B",
+          "text": "DRUM"
+        },
+        {
+          "label": "C",
+          "text": "LAMP"
+        },
+        {
+          "label": "D",
+          "text": "FLAG"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Follow the arrow from the real object FLUTE once. Its assigned name is FLAG."
+    },
+    {
+      "id": "04-008",
+      "number": 8,
+      "question": "An encoder reverses a six-letter word, then applies +1,-2,+3,-4,+5,-6. Its output is FJSIJN. What was the input?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TEMQLE"
+        },
+        {
+          "label": "B",
+          "text": "TEMPLEE"
+        },
+        {
+          "label": "C",
+          "text": "TEMPLE"
+        },
+        {
+          "label": "D",
+          "text": "ELPMET"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Undo the shifts to recover E L P M E T in reverse order, then reverse to obtain TEMPLE."
+    },
+    {
+      "id": "04-009",
+      "number": 9,
+      "question": "A label contains, in order, the middle letter of an odd-length word, its number of distinct letters, and its last letter moved +2. What is the label for PATIALA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "T5C"
+        },
+        {
+          "label": "B",
+          "text": "I5C"
+        },
+        {
+          "label": "C",
+          "text": "I7C"
+        },
+        {
+          "label": "D",
+          "text": "I5B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "PATIALA has middle letter I and five distinct letters P,A,T,I,L. The last A moves to C, giving I5C."
+    },
+    {
+      "id": "04-010",
+      "number": 10,
+      "question": "In a fixed digit substitution, 248 is written as 591 and 826 as 157. What is the code for 6824?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7195"
+        },
+        {
+          "label": "B",
+          "text": "7159"
+        },
+        {
+          "label": "C",
+          "text": "7519"
+        },
+        {
+          "label": "D",
+          "text": "1759"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The pairs are 6→7, 8→1, 2→5 and 4→9. Hence 6824 becomes 7159."
+    },
+    {
+      "id": "04-011",
+      "number": 11,
+      "question": "A name is encoded as two-digit alphabet ranks after every original letter moves +3 cyclically. Decode 17080816.",
+      "options": [
+        {
+          "label": "A",
+          "text": "NEEM"
+        },
+        {
+          "label": "B",
+          "text": "NEEN"
+        },
+        {
+          "label": "C",
+          "text": "NEEL"
+        },
+        {
+          "label": "D",
+          "text": "QHHP"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Split into 17,08,08,16 to obtain QHHP. Move each letter back 3 places to get NEEM."
+    },
+    {
+      "id": "04-012",
+      "number": 12,
+      "question": "A fixed one-to-one word code ignores order. “clean village roads” = “ti mu ka”; “village schools open” = “mu zo pe”; “clean schools shine” = “ti zo ra”; “roads shine daily” = “ka ra fu”. Which code set means “open clean daily”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pe mu fu"
+        },
+        {
+          "label": "B",
+          "text": "pe ti fu"
+        },
+        {
+          "label": "C",
+          "text": "pe ti ra"
+        },
+        {
+          "label": "D",
+          "text": "zo ti fu"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The overlaps give clean=ti, village=mu, schools=zo and shine=ra. The unmatched words give open=pe and daily=fu, so use pe ti fu."
+    },
+    {
+      "id": "04-013",
+      "number": 13,
+      "question": "A student’s name was encoded by moving every letter 5 places backward. The code is HPNFVI. Which original name was entered?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MUSLAN"
+        },
+        {
+          "label": "B",
+          "text": "MUSKAM"
+        },
+        {
+          "label": "C",
+          "text": "MUTKAN"
+        },
+        {
+          "label": "D",
+          "text": "MUSKAN"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Undo -5 with +5: H→M, P→U, N→S, F→K, V→A and I→N. The name is MUSKAN."
+    },
+    {
+      "id": "04-014",
+      "number": 14,
+      "question": "Odd places move +3 and even places move -2, counting from the left. A coded surname is VGQEK. Recover the surname.",
+      "options": [
+        {
+          "label": "A",
+          "text": "SILGH"
+        },
+        {
+          "label": "B",
+          "text": "YETCN"
+        },
+        {
+          "label": "C",
+          "text": "UINGH"
+        },
+        {
+          "label": "D",
+          "text": "SINGH"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Undo the alternating shifts with -3,+2,-3,+2,-3. VGQEK becomes SINGH."
+    },
+    {
+      "id": "04-015",
+      "number": 15,
+      "question": "Use opposite alphabet pairs A↔Z, B↔Y, and so on. Which code represents JASS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "QZHH"
+        },
+        {
+          "label": "B",
+          "text": "QZII"
+        },
+        {
+          "label": "C",
+          "text": "QAHH"
+        },
+        {
+          "label": "D",
+          "text": "RZHH"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Opposite ranks add to 27: J→Q, A→Z and S→H. Thus JASS becomes QZHH."
+    },
+    {
+      "id": "04-016",
+      "number": 16,
+      "question": "In a seven-letter word, keep the middle letter fixed, move the final three letters to the front, and move the first three to the end without reversing either group. Code PUNJABI.",
+      "options": [
+        {
+          "label": "A",
+          "text": "ABIPUNJ"
+        },
+        {
+          "label": "B",
+          "text": "PUNJIBA"
+        },
+        {
+          "label": "C",
+          "text": "ABIJPUN"
+        },
+        {
+          "label": "D",
+          "text": "IBAJNUP"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Split PUNJABI as PUN | J | ABI. Exchanging the outer groups gives ABIJPUN."
+    },
+    {
+      "id": "04-017",
+      "number": 17,
+      "question": "A single fixed shift changes JHELUM to MKHOXP. Which additional entry breaks this rule?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CHENAB → FKHQDE"
+        },
+        {
+          "label": "B",
+          "text": "RAVI → UDYK"
+        },
+        {
+          "label": "C",
+          "text": "BEAS → EHDV"
+        },
+        {
+          "label": "D",
+          "text": "SUTLEJ → VXWOHM"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Every letter moves +3. RAVI must become UDYL, so RAVI → UDYK is the incorrect entry."
+    },
+    {
+      "id": "04-018",
+      "number": 18,
+      "question": "At place i, encoding adds i² to the alphabet rank and wraps within A–Z. Which original produces the code SMEUQ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RKCJL"
+        },
+        {
+          "label": "B",
+          "text": "TQNEP"
+        },
+        {
+          "label": "C",
+          "text": "RIVER"
+        },
+        {
+          "label": "D",
+          "text": "RIVFR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Subtract 1,4,9,16,25 from successive letters. S→R, M→I, E→V, U→E and Q→R, giving RIVER."
+    },
+    {
+      "id": "04-019",
+      "number": 19,
+      "question": "A number label lists each letter’s reverse alphabet value plus its place counted from the right, starting at 1. There is no numeric wraparound. Find the label for REWA.",
+      "options": [
+        {
+          "label": "A",
+          "text": "13-24-6-27"
+        },
+        {
+          "label": "B",
+          "text": "10-24-7-30"
+        },
+        {
+          "label": "C",
+          "text": "13-25-6-27"
+        },
+        {
+          "label": "D",
+          "text": "9-22-4-26"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Reverse values are 9,22,4,26; add right-hand places 4,3,2,1. The label is 13-25-6-27."
+    },
+    {
+      "id": "04-020",
+      "number": 20,
+      "question": "A one-to-one character mapping gives SEAT→$7@4 and EAST→7@$4. What does 4@$7 represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TASE"
+        },
+        {
+          "label": "B",
+          "text": "TSEA"
+        },
+        {
+          "label": "C",
+          "text": "EAST"
+        },
+        {
+          "label": "D",
+          "text": "TSAE"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From SEAT, 4=T, @=A, $=S and 7=E. Therefore 4@$7 decodes to TASE."
+    },
+    {
+      "id": "04-021",
+      "number": 21,
+      "question": "A scanner repeats +2,-1,-1 across a whole string without restarting at spaces. It reads MOGA ROPAR. After spaces are removed, what are the last five coded letters?",
+      "options": [
+        {
+          "label": "A",
+          "text": "QNRCT"
+        },
+        {
+          "label": "B",
+          "text": "TNOCQ"
+        },
+        {
+          "label": "C",
+          "text": "QNRZQ"
+        },
+        {
+          "label": "D",
+          "text": "QOQZQ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "MOGA occupies places 1–4. Places 5–9 use -1,-1,+2,-1,-1, so ROPAR becomes QNRZQ."
+    },
+    {
+      "id": "04-022",
+      "number": 22,
+      "question": "At a Patiala desk, every letter is moved 4 places forward in the alphabet, with Z followed by A. Which label replaces KIRAN?",
+      "options": [
+        {
+          "label": "A",
+          "text": "OMVER"
+        },
+        {
+          "label": "B",
+          "text": "OMVEQ"
+        },
+        {
+          "label": "C",
+          "text": "GENWJ"
+        },
+        {
+          "label": "D",
+          "text": "NLUDQ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add 4 to each letter: K→O, I→M, R→V, A→E, N→R. The code is OMVER."
+    },
+    {
+      "id": "04-023",
+      "number": 23,
+      "question": "For a five-letter badge, the shift at place i is 2i, counting i=1 from the left. Select the badge code for NEPAL.",
+      "options": [
+        {
+          "label": "A",
+          "text": "PIVIV"
+        },
+        {
+          "label": "B",
+          "text": "OGSEQ"
+        },
+        {
+          "label": "C",
+          "text": "PGRCN"
+        },
+        {
+          "label": "D",
+          "text": "XMVEN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use shifts +2,+4,+6,+8,+10. NEPAL becomes PIVIV."
+    },
+    {
+      "id": "04-024",
+      "number": 24,
+      "question": "Harpreet stores the complete name NABHA from right to left, keeping every letter. What is stored?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ABHAN"
+        },
+        {
+          "label": "B",
+          "text": "ANBHA"
+        },
+        {
+          "label": "C",
+          "text": "AHBNA"
+        },
+        {
+          "label": "D",
+          "text": "AHBAN"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Read NABHA from the final letter to the first: A-H-B-A-N."
+    },
+    {
+      "id": "04-025",
+      "number": 25,
+      "question": "For a five-letter word, multiply the endpoint ranks, add the three inner ranks, then subtract the word length. What is the code of FORTS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "167"
+        },
+        {
+          "label": "B",
+          "text": "73"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "162"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Calculate 6×19 + (15+18+20) - 5 = 162. Multiply only the endpoint ranks."
+    }
+  ]
+}

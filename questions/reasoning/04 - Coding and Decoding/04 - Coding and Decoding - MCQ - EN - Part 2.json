@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-026",
+      "number": 26,
+      "question": "A code is the rank of the first vowel, followed by /, followed by the number of consonant occurrences. A,E,I,O,U are vowels. Which code fits GURDASPUR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21/5"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "21/3"
+        },
+        {
+          "label": "D",
+          "text": "21/6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first vowel is U=21. G,R,D,S,P,R are six consonant occurrences, giving 21/6."
+    },
+    {
+      "id": "04-027",
+      "number": 27,
+      "question": "Word codes are fixed and unordered: “Kiran wins today” = “ba se tu”; “Aman wins often” = “ri tu ko”. Which token means “wins”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ba"
+        },
+        {
+          "label": "B",
+          "text": "se"
+        },
+        {
+          "label": "C",
+          "text": "tu"
+        },
+        {
+          "label": "D",
+          "text": "ko"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The only common word is wins and the only common token is tu."
+    },
+    {
+      "id": "04-028",
+      "number": 28,
+      "question": "A word’s code is its reverse-value sum minus its ordinary alphabet-rank sum. Find the code for SILK.",
+      "options": [
+        {
+          "label": "A",
+          "text": "210"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "57"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The ordinary sum is 19+9+12+11=51; the reverse sum is 108-51=57. Their difference is 6."
+    },
+    {
+      "id": "04-029",
+      "number": 29,
+      "question": "System X moves every letter +7; system Y moves every letter -3. A word entered into X produces QHZWLY. What would Y produce for the same original word?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ULDAPC"
+        },
+        {
+          "label": "B",
+          "text": "GXPMBO"
+        },
+        {
+          "label": "C",
+          "text": "NEWTIV"
+        },
+        {
+          "label": "D",
+          "text": "JASPER"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Moving from X’s code to Y’s code changes the shift by -3-7=-10. QHZWLY becomes GXPMBO."
+    },
+    {
+      "id": "04-030",
+      "number": 30,
+      "question": "A courier writes every alphabet rank as two digits and joins the groups without separators. Which numeric label belongs to AJMER?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11013518"
+        },
+        {
+          "label": "B",
+          "text": "0110130519"
+        },
+        {
+          "label": "C",
+          "text": "0110131805"
+        },
+        {
+          "label": "D",
+          "text": "0110130518"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A,J,M,E,R have ranks 01,10,13,05,18. Joining them gives 0110130518."
+    },
+    {
+      "id": "04-031",
+      "number": 31,
+      "question": "An alternating shift is inferred from SONALI→UJPVND. The first-place shift repeats at places 3 and 5; the second-place shift repeats at places 4 and 6. How is RACHNA encoded?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TCEJPC"
+        },
+        {
+          "label": "B",
+          "text": "MCXJIC"
+        },
+        {
+          "label": "C",
+          "text": "TWEDPW"
+        },
+        {
+          "label": "D",
+          "text": "TVECPV"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The shifts are +2,-5 repeatedly: S→U, O→J. RACHNA becomes TVECPV."
+    },
+    {
+      "id": "04-032",
+      "number": 32,
+      "question": "The rule is exactly one of: rank sum plus length; rank product; twice rank sum minus length; sum of rank squares. It gives GEM→47 and LACE→38. What does it give PEAR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "1440"
+        },
+        {
+          "label": "D",
+          "text": "606"
+        }
+      ],
+      "answer": "A",
+      "explanation": "GEM: 2×25-3=47; LACE: 2×21-4=38. Therefore PEAR gives 2×40-4=76."
+    },
+    {
+      "id": "04-033",
+      "number": 33,
+      "question": "A five-digit access string replaces every original digit d by 9-d and then reverses the result. What is stored for 30682? Keep leading zeros if any.",
+      "options": [
+        {
+          "label": "A",
+          "text": "71369"
+        },
+        {
+          "label": "B",
+          "text": "69317"
+        },
+        {
+          "label": "C",
+          "text": "28603"
+        },
+        {
+          "label": "D",
+          "text": "71396"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Digit complements give 69317. Reversing gives 71396."
+    },
+    {
+      "id": "04-034",
+      "number": 34,
+      "question": "A seven-letter name is encoded with the repeating block +1,-3,+2. The stored code is HRTMBGO. Recover the original name; the block restarts only after every three letters.",
+      "options": [
+        {
+          "label": "A",
+          "text": "GURLEFN"
+        },
+        {
+          "label": "B",
+          "text": "GURLEEN"
+        },
+        {
+          "label": "C",
+          "text": "GURKEEN"
+        },
+        {
+          "label": "D",
+          "text": "GURLDEN"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Use -1,+3,-2,-1,+3,-2,-1 to undo the repeating block. This recovers GURLEEN."
+    },
+    {
+      "id": "04-035",
+      "number": 35,
+      "question": "Count places from the right, starting at 1. Each letter moves backward by its right-hand place number. Which result belongs to JAIPUR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DVEMSQ"
+        },
+        {
+          "label": "B",
+          "text": "IYFLPL"
+        },
+        {
+          "label": "C",
+          "text": "DUCJOL"
+        },
+        {
+          "label": "D",
+          "text": "PFMSWS"
+        }
+      ],
+      "answer": "A",
+      "explanation": "From left to right subtract 6,5,4,3,2,1. JAIPUR becomes DVEMSQ."
+    },
+    {
+      "id": "04-036",
+      "number": 36,
+      "question": "The labels are SEAT→GATE, GATE→DESK, DESK→SEAT. A guard reports code labels GATE and SEAT for two real items, in that order. Which real pair was reported?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SEAT DESK"
+        },
+        {
+          "label": "B",
+          "text": "SEAT GATE"
+        },
+        {
+          "label": "C",
+          "text": "DESK GATE"
+        },
+        {
+          "label": "D",
+          "text": "GATE SEAT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reverse each naming arrow independently: code GATE means real SEAT; code SEAT means real DESK."
+    },
+    {
+      "id": "04-037",
+      "number": 37,
+      "question": "Replacing every letter by its alphabet opposite gives the code ZNZO. What was written originally?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AMAZ"
+        },
+        {
+          "label": "B",
+          "text": "AMAL"
+        },
+        {
+          "label": "C",
+          "text": "ALAM"
+        },
+        {
+          "label": "D",
+          "text": "ANAL"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply the same opposite pairs again: Z→A, N→M, Z→A, O→L. The original is AMAL."
+    },
+    {
+      "id": "04-038",
+      "number": 38,
+      "question": "At left-hand place i, an original vowel moves +i and an original consonant moves -i. Vowels are A,E,I,O,U; use alphabet wraparound. Select the complete code of AMRITSAR.",
+      "options": [
+        {
+          "label": "A",
+          "text": "BOUMYYHZ"
+        },
+        {
+          "label": "B",
+          "text": "BKOMOMHJ"
+        },
+        {
+          "label": "C",
+          "text": "BKOMOMHI"
+        },
+        {
+          "label": "D",
+          "text": "ZOUEYYTZ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Classify original letters before shifting. The shifts +1,-2,-3,+4,-5,-6,+7,-8 give BKOMOMHJ."
+    },
+    {
+      "id": "04-039",
+      "number": 39,
+      "question": "Every word has one distinct numeric token; order is arbitrary. “fresh milk daily” = “8 3 6”; “daily school meals” = “6 5 2”; “fresh school fruit” = “8 2 9”; “milk fruit arrives” = “3 9 7”. What is the sum of the tokens for “meals arrives daily”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Common-word elimination gives daily=6, school=2, meals=5 and arrives=7. Required sum: 5+7+6=18."
+    },
+    {
+      "id": "04-040",
+      "number": 40,
+      "question": "Each number equals 27 minus the original letter’s rank. In 18-?-23-6, the decoded name is INDU. What must replace the missing number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The missing letter N has rank 14. Its code is 27-14=13."
+    },
+    {
+      "id": "04-041",
+      "number": 41,
+      "question": "To secure a two-word label, reverse each word separately, then exchange the two words. What is the secured form of GREEN PARK?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PARK GREEN"
+        },
+        {
+          "label": "B",
+          "text": "NEERG KRAP"
+        },
+        {
+          "label": "C",
+          "text": "KRAP NEERG"
+        },
+        {
+          "label": "D",
+          "text": "KRAP GREEN"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Separate reversals give NEERG and KRAP. Exchanging the two words gives KRAP NEERG."
+    },
+    {
+      "id": "04-042",
+      "number": 42,
+      "question": "The mapping is 4→K, #→A, 7→R, @→T. Which original string is represented by 7#4@?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KART"
+        },
+        {
+          "label": "B",
+          "text": "RAKT"
+        },
+        {
+          "label": "C",
+          "text": "TARK"
+        },
+        {
+          "label": "D",
+          "text": "RATK"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Decode each character in order: 7 # 4 @ → R A K T."
+    },
+    {
+      "id": "04-043",
+      "number": 43,
+      "question": "Use row–column coordinates. Matrix I has columns 0,1,2: row 0=P,A,R; row 1=U,N,J. Matrix II has columns 5,6,7: row 5=A,B,P; row 6=R,U,N. Which sequence codes PUNJAB? Each pair must belong entirely to one matrix.",
+      "options": [
+        {
+          "label": "A",
+          "text": "57-66-67-12-55-56"
+        },
+        {
+          "label": "B",
+          "text": "57-66-76-12-55-56"
+        },
+        {
+          "label": "C",
+          "text": "57-66-67-12-56-55"
+        },
+        {
+          "label": "D",
+          "text": "57-16-67-12-55-56"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Read 57=P,66=U,67=N,12=J,55=A,56=B. A coordinate such as 16 cannot mix labels from the two matrices."
+    },
+    {
+      "id": "04-044",
+      "number": 44,
+      "question": "A six-letter encoder takes the first three letters as one block and the last three as another, then interleaves them starting with the second block. Its output is GSAAMN. What was the original?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SANGAM"
+        },
+        {
+          "label": "B",
+          "text": "GAMSAN"
+        },
+        {
+          "label": "C",
+          "text": "GASAMN"
+        },
+        {
+          "label": "D",
+          "text": "SAMGAN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Read output places 2,4,6 to recover SAN, then 1,3,5 to recover GAM. Joining them gives SANGAM."
+    },
+    {
+      "id": "04-045",
+      "number": 45,
+      "question": "Three records use complete reversal correctly. Which record contains an error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KULLU → ULLUK"
+        },
+        {
+          "label": "B",
+          "text": "KOTLI → ILTOK"
+        },
+        {
+          "label": "C",
+          "text": "MANDI → IDNMA"
+        },
+        {
+          "label": "D",
+          "text": "SHIMLA → ALMIHS"
+        }
+      ],
+      "answer": "C",
+      "explanation": "MANDI reversed is IDNAM. The entry IDNMA swaps the final two letters."
+    },
+    {
+      "id": "04-046",
+      "number": 46,
+      "question": "A whole-number encoder uses f(n)=n²-2n. If an input produces 120, which positive input was used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rewrite n²-2n as (n-1)²-1. Thus (n-1)²=121 and the positive input is 12."
+    },
+    {
+      "id": "04-047",
+      "number": 47,
+      "question": "Base codes: A→4, U→9, R→%, 3→K, 6→@. Test original characters. Apply both rules simultaneously: vowel endpoints exchange base codes; every original odd digit gets #. Find the final code of A3R6U.",
+      "options": [
+        {
+          "label": "A",
+          "text": "9K%@4"
+        },
+        {
+          "label": "B",
+          "text": "9#%@4"
+        },
+        {
+          "label": "C",
+          "text": "9#%#4"
+        },
+        {
+          "label": "D",
+          "text": "4#%@9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The base is 4K%@9. Exchange vowel endpoint codes 4 and 9, and replace only the original odd digit 3’s code: 9#%@4."
+    },
+    {
+      "id": "04-048",
+      "number": 48,
+      "question": "Codes are fixed, one-to-one and unordered. “buses reach Ludhiana” = “fa mi so”; “trains reach Delhi” = “mi ku na”; “buses leave Delhi” = “fa te na”. Decode “so te ku”.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ludhiana leave Delhi"
+        },
+        {
+          "label": "B",
+          "text": "buses leave trains"
+        },
+        {
+          "label": "C",
+          "text": "Ludhiana leave trains"
+        },
+        {
+          "label": "D",
+          "text": "Ludhiana reach trains"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Overlaps identify buses=fa, reach=mi and Delhi=na. The residual codes give so=Ludhiana, te=leave and ku=trains."
+    },
+    {
+      "id": "04-049",
+      "number": 49,
+      "question": "First replace each letter of RUPAR by its alphabet opposite. Then keep only original odd-place positions 1,3,5 in the code. Which three-letter result remains?",
+      "options": [
+        {
+          "label": "A",
+          "text": "IFI"
+        },
+        {
+          "label": "B",
+          "text": "IKI"
+        },
+        {
+          "label": "C",
+          "text": "IRK"
+        },
+        {
+          "label": "D",
+          "text": "UKZ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The retained original letters are R,P,R. Their opposites are I,K,I, giving IKI."
+    },
+    {
+      "id": "04-050",
+      "number": 50,
+      "question": "A uniform shift changes DELHI to ZAHDE. Under the same shift, which code is printed for PUNE?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LQJA"
+        },
+        {
+          "label": "B",
+          "text": "MRKB"
+        },
+        {
+          "label": "C",
+          "text": "TYRI"
+        },
+        {
+          "label": "D",
+          "text": "KPIZ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each letter moves back 4 places. PUNE becomes LQJA."
+    }
+  ]
+}

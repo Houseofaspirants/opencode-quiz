@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 4,
+    "title": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-026",
+      "number": 26,
+      "question": "code ਵਿੱਚ ਪਹਿਲੇ ਸਵਰ ਦਾ rank, ਫਿਰ / ਅਤੇ ਫਿਰ ਵਿਅੰਜਨਾਂ ਦੇ ਕੁੱਲ ਆਉਣ ਦੀ ਗਿਣਤੀ ਹੁੰਦੀ ਹੈ। A,E,I,O,U ਸਵਰ ਹਨ। GURDASPUR ਦਾ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21/5"
+        },
+        {
+          "label": "B",
+          "text": "1/6"
+        },
+        {
+          "label": "C",
+          "text": "21/3"
+        },
+        {
+          "label": "D",
+          "text": "21/6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਪਹਿਲਾ ਸਵਰ U=21 ਹੈ। G,R,D,S,P,R ਕੁੱਲ ਛੇ ਵਿਅੰਜਨ ਹਨ, ਇਸ ਲਈ 21/6 ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-027",
+      "number": 27,
+      "question": "word codes ਤੈਅ ਹਨ ਅਤੇ ਕ੍ਰਮ ਕੋਈ ਵੀ ਹੋ ਸਕਦਾ ਹੈ: “Kiran wins today” = “ba se tu”; “Aman wins often” = “ri tu ko”। “wins” ਦਾ token ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ba"
+        },
+        {
+          "label": "B",
+          "text": "se"
+        },
+        {
+          "label": "C",
+          "text": "tu"
+        },
+        {
+          "label": "D",
+          "text": "ko"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਇਕੱਲਾ ਸਾਂਝਾ ਸ਼ਬਦ wins ਅਤੇ ਇਕੱਲਾ ਸਾਂਝਾ token tu ਹੈ।"
+    },
+    {
+      "id": "04-028",
+      "number": 28,
+      "question": "ਇੱਕ ਸ਼ਬਦ ਦਾ code ਉਸ ਦੇ ਉਲਟੇ ਮੁੱਲਾਂ ਦੇ ਜੋੜ ਵਿੱਚੋਂ ਆਮ alphabet ranks ਦਾ ਜੋੜ ਘਟਾ ਕੇ ਬਣਦਾ ਹੈ। SILK ਦਾ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "210"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "57"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਆਮ ਜੋੜ 19+9+12+11=51 ਹੈ; ਉਲਟਾ ਜੋੜ 108-51=57 ਹੈ। ਫ਼ਰਕ 6 ਹੈ।"
+    },
+    {
+      "id": "04-029",
+      "number": 29,
+      "question": "System X ਹਰ ਅੱਖਰ +7 ਅਤੇ system Y ਹਰ ਅੱਖਰ -3 ਕਰਦਾ ਹੈ। X ਵਿੱਚ ਇੱਕ ਸ਼ਬਦ ਦਾ code QHZWLY ਹੈ। ਉਸੇ ਅਸਲ ਸ਼ਬਦ ਲਈ Y ਕੀ ਦੇਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ULDAPC"
+        },
+        {
+          "label": "B",
+          "text": "GXPMBO"
+        },
+        {
+          "label": "C",
+          "text": "NEWTIV"
+        },
+        {
+          "label": "D",
+          "text": "JASPER"
+        }
+      ],
+      "answer": "B",
+      "explanation": "X ਦੇ code ਤੋਂ Y ਦੇ code ਤੱਕ shift ਦਾ ਫ਼ਰਕ -3-7=-10 ਹੈ। QHZWLY ਤੋਂ GXPMBO ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-030",
+      "number": 30,
+      "question": "ਇੱਕ courier ਹਰ alphabet rank ਨੂੰ ਦੋ digits ਵਿੱਚ ਲਿਖ ਕੇ ਬਿਨਾਂ ਵਿੱਥ ਦੇ ਜੋੜਦਾ ਹੈ। AJMER ਦਾ ਅੰਕੀ label ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11013518"
+        },
+        {
+          "label": "B",
+          "text": "0110130519"
+        },
+        {
+          "label": "C",
+          "text": "0110131805"
+        },
+        {
+          "label": "D",
+          "text": "0110130518"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A,J,M,E,R ਦੇ ranks 01,10,13,05,18 ਹਨ। ਜੋੜਨ ਨਾਲ 0110130518 ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-031",
+      "number": 31,
+      "question": "SONALI→UJPVND ਤੋਂ ਵਾਰੀ-ਵਾਰੀ shift ਪਛਾਣੋ। ਪਹਿਲੀ ਥਾਂ ਵਾਲੀ shift ਥਾਵਾਂ 3 ਅਤੇ 5 ਉੱਤੇ ਅਤੇ ਦੂਜੀ ਵਾਲੀ ਥਾਵਾਂ 4 ਅਤੇ 6 ਉੱਤੇ ਦੁਹਰਾਈ ਜਾਂਦੀ ਹੈ। RACHNA ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TCEJPC"
+        },
+        {
+          "label": "B",
+          "text": "MCXJIC"
+        },
+        {
+          "label": "C",
+          "text": "TWEDPW"
+        },
+        {
+          "label": "D",
+          "text": "TVECPV"
+        }
+      ],
+      "answer": "D",
+      "explanation": "shifts +2,-5 ਵਾਰੀ-ਵਾਰੀ ਹਨ: S→U, O→J। RACHNA ਤੋਂ TVECPV ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-032",
+      "number": 32,
+      "question": "rule ਇਨ੍ਹਾਂ ਵਿੱਚੋਂ ਇੱਕ ਹੀ ਹੈ: ranks ਦਾ ਜੋੜ ਅਤੇ ਲੰਬਾਈ ਦਾ ਜੋੜ; ranks ਦਾ ਗੁਣਾ; ranks ਦੇ ਜੋੜ ਦਾ ਦੁੱਗਣਾ ਘਟਾਓ ਲੰਬਾਈ; ranks ਦੇ ਵਰਗਾਂ ਦਾ ਜੋੜ। GEM→47 ਅਤੇ LACE→38 ਹਨ। PEAR ਦਾ code ਕੀ ਹੋਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "1440"
+        },
+        {
+          "label": "D",
+          "text": "606"
+        }
+      ],
+      "answer": "A",
+      "explanation": "GEM: 2×25-3=47; LACE: 2×21-4=38। ਇਸ ਲਈ PEAR ਤੋਂ 2×40-4=76 ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-033",
+      "number": 33,
+      "question": "ਪੰਜ-digit access string ਵਿੱਚ ਹਰ ਅਸਲ digit d ਨੂੰ 9-d ਨਾਲ ਬਦਲ ਕੇ ਨਤੀਜਾ ਉਲਟਿਆ ਜਾਂਦਾ ਹੈ। 30682 ਲਈ ਕੀ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ? ਸ਼ੁਰੂ ਵਿੱਚ zero ਹੋਵੇ ਤਾਂ ਰੱਖੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "71369"
+        },
+        {
+          "label": "B",
+          "text": "69317"
+        },
+        {
+          "label": "C",
+          "text": "28603"
+        },
+        {
+          "label": "D",
+          "text": "71396"
+        }
+      ],
+      "answer": "D",
+      "explanation": "digits ਦੇ ਪੂਰਕ 69317 ਬਣਦੇ ਹਨ। ਉਲਟਣ ਨਾਲ 71396 ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-034",
+      "number": 34,
+      "question": "ਸੱਤ ਅੱਖਰਾਂ ਦਾ ਨਾਂ +1,-3,+2 ਦੇ ਦੁਹਰਾਏ block ਨਾਲ code ਕੀਤਾ ਹੈ। ਸੰਭਾਲਿਆ code HRTMBGO ਹੈ। ਅਸਲ ਨਾਂ ਲੱਭੋ; block ਹਰ ਤਿੰਨ ਅੱਖਰਾਂ ਤੋਂ ਬਾਅਦ ਹੀ ਮੁੜ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "GURLEFN"
+        },
+        {
+          "label": "B",
+          "text": "GURLEEN"
+        },
+        {
+          "label": "C",
+          "text": "GURKEEN"
+        },
+        {
+          "label": "D",
+          "text": "GURLDEN"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਦੁਹਰਾਏ block ਨੂੰ ਉਲਟਣ ਲਈ -1,+3,-2,-1,+3,-2,-1 ਲਾਓ। ਇਸ ਨਾਲ GURLEEN ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-035",
+      "number": 35,
+      "question": "ਸੱਜੇ ਤੋਂ ਥਾਵਾਂ 1 ਤੋਂ ਗਿਣੋ। ਹਰ ਅੱਖਰ ਨੂੰ ਸੱਜੇ ਤੋਂ ਉਸ ਦੀ ਥਾਂ ਦੇ ਨੰਬਰ ਜਿੰਨੀਆਂ ਥਾਵਾਂ ਪਿੱਛੇ ਕਰੋ। JAIPUR ਦਾ ਨਤੀਜਾ ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "DVEMSQ"
+        },
+        {
+          "label": "B",
+          "text": "IYFLPL"
+        },
+        {
+          "label": "C",
+          "text": "DUCJOL"
+        },
+        {
+          "label": "D",
+          "text": "PFMSWS"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਖੱਬੇ ਤੋਂ ਸੱਜੇ 6,5,4,3,2,1 ਘਟਾਓ। JAIPUR ਤੋਂ DVEMSQ ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-036",
+      "number": 36,
+      "question": "labels SEAT→GATE, GATE→DESK, DESK→SEAT ਹਨ। ਇੱਕ guard ਦੋ ਅਸਲ ਚੀਜ਼ਾਂ ਲਈ ਕ੍ਰਮਵਾਰ code labels GATE ਅਤੇ SEAT ਦੱਸਦਾ ਹੈ। ਅਸਲ ਜੋੜਾ ਕਿਹੜਾ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SEAT DESK"
+        },
+        {
+          "label": "B",
+          "text": "SEAT GATE"
+        },
+        {
+          "label": "C",
+          "text": "DESK GATE"
+        },
+        {
+          "label": "D",
+          "text": "GATE SEAT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਨਾਂ ਵਾਲਾ ਹਰ ਤੀਰ ਵੱਖਰਾ ਉਲਟ ਪੜ੍ਹੋ: code GATE ਦਾ ਅਸਲ SEAT ਅਤੇ code SEAT ਦਾ ਅਸਲ DESK ਹੈ।"
+    },
+    {
+      "id": "04-037",
+      "number": 37,
+      "question": "ਹਰ ਅੱਖਰ ਨੂੰ alphabet ਦੇ ਉਲਟੇ ਅੱਖਰ ਨਾਲ ਬਦਲਣ ਉੱਤੇ code ZNZO ਮਿਲਦਾ ਹੈ। ਅਸਲ ਵਿੱਚ ਕੀ ਲਿਖਿਆ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AMAZ"
+        },
+        {
+          "label": "B",
+          "text": "AMAL"
+        },
+        {
+          "label": "C",
+          "text": "ALAM"
+        },
+        {
+          "label": "D",
+          "text": "ANAL"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਉਲਟੇ ਜੋੜੇ ਮੁੜ ਲਾਓ: Z→A, N→M, Z→A, O→L। ਅਸਲ ਸ਼ਬਦ AMAL ਹੈ।"
+    },
+    {
+      "id": "04-038",
+      "number": 38,
+      "question": "ਖੱਬੇ ਤੋਂ ਥਾਂ i ਉੱਤੇ ਅਸਲ ਸਵਰ +i ਅਤੇ ਅਸਲ ਵਿਅੰਜਨ -i ਹੁੰਦਾ ਹੈ। ਸਵਰ A,E,I,O,U ਹਨ; alphabet ਦਾ ਚੱਕਰ ਵਰਤੋ। AMRITSAR ਦਾ ਪੂਰਾ code ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "BOUMYYHZ"
+        },
+        {
+          "label": "B",
+          "text": "BKOMOMHJ"
+        },
+        {
+          "label": "C",
+          "text": "BKOMOMHI"
+        },
+        {
+          "label": "D",
+          "text": "ZOUEYYTZ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "shift ਤੋਂ ਪਹਿਲਾਂ ਅਸਲ ਅੱਖਰਾਂ ਨੂੰ ਪਛਾਣੋ। +1,-2,-3,+4,-5,-6,+7,-8 ਨਾਲ BKOMOMHJ ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-039",
+      "number": 39,
+      "question": "ਹਰ ਸ਼ਬਦ ਦਾ ਵੱਖਰਾ ਅੰਕੀ token ਹੈ; ਕ੍ਰਮ ਕੋਈ ਵੀ ਹੋ ਸਕਦਾ ਹੈ। “fresh milk daily” = “8 3 6”; “daily school meals” = “6 5 2”; “fresh school fruit” = “8 2 9”; “milk fruit arrives” = “3 9 7”। “meals arrives daily” ਦੇ tokens ਦਾ ਜੋੜ ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਸਾਂਝੇ ਸ਼ਬਦ ਹਟਾਉਣ ਨਾਲ daily=6, school=2, meals=5 ਅਤੇ arrives=7 ਮਿਲਦੇ ਹਨ। ਲੋੜੀਂਦਾ ਜੋੜ 5+7+6=18 ਹੈ।"
+    },
+    {
+      "id": "04-040",
+      "number": 40,
+      "question": "ਹਰ ਅੰਕ 27 ਵਿੱਚੋਂ ਅਸਲ ਅੱਖਰ ਦਾ rank ਘਟਾ ਕੇ ਬਣਦਾ ਹੈ। 18-?-23-6 ਦਾ ਅਸਲ ਨਾਂ INDU ਹੈ। ਖਾਲੀ ਥਾਂ ਕਿਹੜਾ ਅੰਕ ਆਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਖਾਲੀ ਥਾਂ ਵਾਲੇ N ਦਾ rank 14 ਹੈ। ਇਸ ਦਾ code 27-14=13 ਹੈ।"
+    },
+    {
+      "id": "04-041",
+      "number": 41,
+      "question": "ਦੋ ਸ਼ਬਦਾਂ ਵਾਲੇ label ਨੂੰ ਸੁਰੱਖਿਅਤ ਕਰਨ ਲਈ ਹਰ ਸ਼ਬਦ ਨੂੰ ਵੱਖਰਾ ਉਲਟੋ ਅਤੇ ਫਿਰ ਦੋਵੇਂ ਸ਼ਬਦਾਂ ਦੀ ਥਾਂ ਬਦਲੋ। GREEN PARK ਦਾ ਨਤੀਜਾ ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PARK GREEN"
+        },
+        {
+          "label": "B",
+          "text": "NEERG KRAP"
+        },
+        {
+          "label": "C",
+          "text": "KRAP NEERG"
+        },
+        {
+          "label": "D",
+          "text": "KRAP GREEN"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਵੱਖਰੇ ਉਲਟਣ ਨਾਲ NEERG ਅਤੇ KRAP ਬਣਦੇ ਹਨ। ਦੋਵੇਂ ਸ਼ਬਦ ਬਦਲਣ ਨਾਲ KRAP NEERG ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-042",
+      "number": 42,
+      "question": "mapping 4→K, #→A, 7→R, @→T ਹੈ। 7#4@ ਕਿਸ ਅਸਲ string ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KART"
+        },
+        {
+          "label": "B",
+          "text": "RAKT"
+        },
+        {
+          "label": "C",
+          "text": "TARK"
+        },
+        {
+          "label": "D",
+          "text": "RATK"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ character ਨੂੰ ਕ੍ਰਮ ਨਾਲ Decode ਕਰੋ: 7 # 4 @ → R A K T।"
+    },
+    {
+      "id": "04-043",
+      "number": 43,
+      "question": "row–column coordinates ਵਰਤੋ। Matrix I ਦੇ columns 0,1,2 ਹਨ: row 0=P,A,R; row 1=U,N,J। Matrix II ਦੇ columns 5,6,7 ਹਨ: row 5=A,B,P; row 6=R,U,N। ਕਿਹੜਾ ਕ੍ਰਮ PUNJAB ਦਾ code ਹੈ? ਹਰ ਜੋੜਾ ਪੂਰੀ ਤਰ੍ਹਾਂ ਇੱਕੋ matrix ਵਿੱਚ ਹੋਵੇ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "57-66-67-12-55-56"
+        },
+        {
+          "label": "B",
+          "text": "57-66-76-12-55-56"
+        },
+        {
+          "label": "C",
+          "text": "57-66-67-12-56-55"
+        },
+        {
+          "label": "D",
+          "text": "57-16-67-12-55-56"
+        }
+      ],
+      "answer": "A",
+      "explanation": "57=P,66=U,67=N,12=J,55=A,56=B ਪੜ੍ਹੋ। 16 ਵਰਗਾ coordinate ਦੋ matrices ਦੇ labels ਮਿਲਾ ਕੇ ਨਹੀਂ ਬਣਾ ਸਕਦੇ।"
+    },
+    {
+      "id": "04-044",
+      "number": 44,
+      "question": "ਛੇ ਅੱਖਰਾਂ ਦਾ encoder ਪਹਿਲੇ ਤਿੰਨ ਅੱਖਰਾਂ ਦਾ ਇੱਕ block ਅਤੇ ਆਖ਼ਰੀ ਤਿੰਨ ਦਾ ਦੂਜਾ block ਬਣਾਉਂਦਾ ਹੈ। ਫਿਰ ਦੂਜੇ block ਤੋਂ ਸ਼ੁਰੂ ਕਰਕੇ ਦੋਵਾਂ ਦੇ ਅੱਖਰ ਵਾਰੀ-ਵਾਰੀ ਲਿਖਦਾ ਹੈ। output GSAAMN ਹੈ। ਅਸਲ ਸ਼ਬਦ ਕੀ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SANGAM"
+        },
+        {
+          "label": "B",
+          "text": "GAMSAN"
+        },
+        {
+          "label": "C",
+          "text": "GASAMN"
+        },
+        {
+          "label": "D",
+          "text": "SAMGAN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "output ਦੀਆਂ ਥਾਵਾਂ 2,4,6 ਤੋਂ SAN ਅਤੇ 1,3,5 ਤੋਂ GAM ਮਿਲਦਾ ਹੈ। ਜੋੜ ਕੇ SANGAM ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-045",
+      "number": 45,
+      "question": "ਤਿੰਨ records ਵਿੱਚ ਪੂਰੇ ਸ਼ਬਦ ਨੂੰ ਸਹੀ ਉਲਟਿਆ ਗਿਆ ਹੈ। ਕਿਹੜੇ record ਵਿੱਚ ਗਲਤੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KULLU → ULLUK"
+        },
+        {
+          "label": "B",
+          "text": "KOTLI → ILTOK"
+        },
+        {
+          "label": "C",
+          "text": "MANDI → IDNMA"
+        },
+        {
+          "label": "D",
+          "text": "SHIMLA → ALMIHS"
+        }
+      ],
+      "answer": "C",
+      "explanation": "MANDI ਨੂੰ ਉਲਟਣ ਨਾਲ IDNAM ਬਣਦਾ ਹੈ। IDNMA ਵਿੱਚ ਆਖ਼ਰੀ ਦੋ ਅੱਖਰ ਬਦਲੇ ਹੋਏ ਹਨ।"
+    },
+    {
+      "id": "04-046",
+      "number": 46,
+      "question": "ਪੂਰੇ ਅੰਕ ਦਾ encoder f(n)=n²-2n ਵਰਤਦਾ ਹੈ। ਜੇ output 120 ਹੈ, ਤਾਂ ਕਿਹੜਾ ਧਨਾਤਮਕ input ਵਰਤਿਆ ਗਿਆ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "n²-2n ਨੂੰ (n-1)²-1 ਲਿਖੋ। ਇਸ ਲਈ (n-1)²=121 ਅਤੇ ਧਨਾਤਮਕ input 12 ਹੈ।"
+    },
+    {
+      "id": "04-047",
+      "number": 47,
+      "question": "ਮੂਲ codes: A→4, U→9, R→%, 3→K, 6→@। ਅਸਲ characters ਜਾਂਚੋ। ਦੋਵੇਂ ਸ਼ਰਤਾਂ ਇਕੱਠੀਆਂ ਲਾਓ: ਸਵਰ ਸਿਰਿਆਂ ਦੇ ਮੂਲ codes ਆਪਸ ਵਿੱਚ ਬਦਲੋ; ਹਰ ਅਸਲ ਟਾਂਕ digit ਦਾ code # ਕਰੋ। A3R6U ਦਾ ਆਖ਼ਰੀ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "9K%@4"
+        },
+        {
+          "label": "B",
+          "text": "9#%@4"
+        },
+        {
+          "label": "C",
+          "text": "9#%#4"
+        },
+        {
+          "label": "D",
+          "text": "4#%@9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਮੂਲ code 4K%@9 ਹੈ। ਸਵਰ ਸਿਰਿਆਂ ਦੇ codes 4 ਅਤੇ 9 ਬਦਲੋ ਅਤੇ ਸਿਰਫ਼ ਅਸਲ ਟਾਂਕ digit 3 ਦਾ code ਬਦਲੋ: 9#%@4।"
+    },
+    {
+      "id": "04-048",
+      "number": 48,
+      "question": "codes ਤੈਅ, ਇੱਕ-ਤੋਂ-ਇੱਕ ਅਤੇ ਬਿਨਾਂ ਤੈਅ ਕ੍ਰਮ ਦੇ ਹਨ। “buses reach Ludhiana” = “fa mi so”; “trains reach Delhi” = “mi ku na”; “buses leave Delhi” = “fa te na”। “so te ku” Decode ਕਰੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ludhiana leave Delhi"
+        },
+        {
+          "label": "B",
+          "text": "buses leave trains"
+        },
+        {
+          "label": "C",
+          "text": "Ludhiana leave trains"
+        },
+        {
+          "label": "D",
+          "text": "Ludhiana reach trains"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਸਾਂਝੇ ਸ਼ਬਦਾਂ ਤੋਂ buses=fa, reach=mi ਅਤੇ Delhi=na ਮਿਲਦੇ ਹਨ। ਬਚੇ codes so=Ludhiana, te=leave ਅਤੇ ku=trains ਹਨ।"
+    },
+    {
+      "id": "04-049",
+      "number": 49,
+      "question": "ਪਹਿਲਾਂ RUPAR ਦੇ ਹਰ ਅੱਖਰ ਨੂੰ alphabet ਦੇ ਉਲਟੇ ਅੱਖਰ ਨਾਲ ਬਦਲੋ। ਫਿਰ code ਵਿੱਚ ਸਿਰਫ਼ ਅਸਲ ਟਾਂਕ ਥਾਵਾਂ 1,3,5 ਰੱਖੋ। ਕਿਹੜੇ ਤਿੰਨ ਅੱਖਰ ਬਚਦੇ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "IFI"
+        },
+        {
+          "label": "B",
+          "text": "IKI"
+        },
+        {
+          "label": "C",
+          "text": "IRK"
+        },
+        {
+          "label": "D",
+          "text": "UKZ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਬਚੇ ਅਸਲ ਅੱਖਰ R,P,R ਹਨ। ਇਨ੍ਹਾਂ ਦੇ ਉਲਟੇ I,K,I ਹਨ, ਇਸ ਲਈ IKI ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-050",
+      "number": 50,
+      "question": "ਇੱਕੋ shift ਨਾਲ DELHI ਤੋਂ ZAHDE ਬਣਦਾ ਹੈ। ਇਸੇ shift ਨਾਲ PUNE ਦਾ ਕਿਹੜਾ code ਛਪੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LQJA"
+        },
+        {
+          "label": "B",
+          "text": "MRKB"
+        },
+        {
+          "label": "C",
+          "text": "TYRI"
+        },
+        {
+          "label": "D",
+          "text": "KPIZ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅੱਖਰ 4 ਥਾਵਾਂ ਪਿੱਛੇ ਜਾਂਦਾ ਹੈ। PUNE ਤੋਂ LQJA ਬਣਦਾ ਹੈ।"
+    }
+  ]
+}

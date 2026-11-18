@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-126",
+      "number": 126,
+      "question": "A code is fixed, one-to-one and unordered: “bright stars guide sailors” = “ab ef cd gh”; “stars guide travellers safely” = “cd gh ij kl”; “bright lamps shine safely” = “ab mn op kl”; “lamps guide ships” = “mn gh qr”. Which token represents “stars”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ij"
+        },
+        {
+          "label": "B",
+          "text": "cd"
+        },
+        {
+          "label": "C",
+          "text": "ef"
+        },
+        {
+          "label": "D",
+          "text": "gh"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first two lines leave stars and guide as cd,gh. The fourth line shares only guide with the first, identifying guide=gh and therefore stars=cd."
+    },
+    {
+      "id": "04-127",
+      "number": 127,
+      "question": "Sort the list MEENA, MEHAR, MEET, MEGHA alphabetically. Each code is the first letter, its 1-based position in the sorted list, then the last letter shifted -1. What is MEENA’s code?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M1Z"
+        },
+        {
+          "label": "B",
+          "text": "M2Z"
+        },
+        {
+          "label": "C",
+          "text": "M3Z"
+        },
+        {
+          "label": "D",
+          "text": "M1B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The order is MEENA,MEET,MEGHA,MEHAR. MEENA is first, and its last A moves back to Z, giving M1Z."
+    },
+    {
+      "id": "04-128",
+      "number": 128,
+      "question": "A word uses +2,-3 alternately from the left. The code is then read from right to left and its final two letters are exchanged. What final string is produced from DEVINDER?",
+      "options": [
+        {
+          "label": "A",
+          "text": "FBXFPAGO"
+        },
+        {
+          "label": "B",
+          "text": "OGAPFXBF"
+        },
+        {
+          "label": "C",
+          "text": "TBFKKSGA"
+        },
+        {
+          "label": "D",
+          "text": "OGAPFXFB"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The shifted word is FBXFPAGO. Reverse it and exchange only its final pair to obtain OGAPFXFB."
+    },
+    {
+      "id": "04-129",
+      "number": 129,
+      "question": "Encoding has two stages: reverse the whole word; then move each vowel in the reversed word +2 and each consonant -1. Using A,E,I,O,U as vowels, find the code of EDUCATE.",
+      "options": [
+        {
+          "label": "A",
+          "text": "GCWBCSG"
+        },
+        {
+          "label": "B",
+          "text": "GVCEWFG"
+        },
+        {
+          "label": "C",
+          "text": "GSCBWCG"
+        },
+        {
+          "label": "D",
+          "text": "DVZETFD"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Reverse to ETACUDE, then classify those original reversed letters. Applying +2 to E,A,U,E and -1 to T,C,D gives GSCBWCG."
+    },
+    {
+      "id": "04-130",
+      "number": 130,
+      "question": "At each position, move the original letter forward by the number of vowels seen so far, including the current letter. A,E,I,O,U are vowels. What is the code for BIKRAM?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BJLSBN"
+        },
+        {
+          "label": "B",
+          "text": "CJLSCO"
+        },
+        {
+          "label": "C",
+          "text": "BJMSCO"
+        },
+        {
+          "label": "D",
+          "text": "BJLSCO"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Cumulative vowel counts are 0,1,1,1,2,2. Apply those shifts to BIKRAM to obtain BJLSCO."
+    },
+    {
+      "id": "04-131",
+      "number": 131,
+      "question": "A word’s code is the sum of (letter rank × frequency of that letter), counting each distinct letter ONCE, plus the square of the number of distinct letters. Find the code for MALERKOTLA.",
+      "options": [
+        {
+          "label": "A",
+          "text": "172"
+        },
+        {
+          "label": "B",
+          "text": "116"
+        },
+        {
+          "label": "C",
+          "text": "208"
+        },
+        {
+          "label": "D",
+          "text": "159"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rank × frequency summed over distinct letters equals the ordinary occurrence sum, 108. There are 8 distinct letters, so add 8² to get 172."
+    },
+    {
+      "id": "04-132",
+      "number": 132,
+      "question": "Split a nine-letter input into three blocks of three, and write the blocks in order 2,3,1 without reversing them. If the output is JALANDHAR, which input produced it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "JALHARAND"
+        },
+        {
+          "label": "B",
+          "text": "HARANDJAL"
+        },
+        {
+          "label": "C",
+          "text": "ANDHARJAL"
+        },
+        {
+          "label": "D",
+          "text": "HARJALAND"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The output blocks are JAL|AND|HAR, corresponding to original blocks 2,3,1. Restore them as HAR|JAL|AND."
+    },
+    {
+      "id": "04-133",
+      "number": 133,
+      "question": "At a sports camp, real CAP is named SHOE, SHOE is named BELT, and BELT is named CAP. Which real item does the code word BELT identify?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BELT"
+        },
+        {
+          "label": "B",
+          "text": "CAP"
+        },
+        {
+          "label": "C",
+          "text": "SOCK"
+        },
+        {
+          "label": "D",
+          "text": "SHOE"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Find the arrow ending at code BELT: real SHOE→BELT. Thus the real item is SHOE."
+    },
+    {
+      "id": "04-134",
+      "number": 134,
+      "question": "A device reverses its input exactly once each time it is pressed. After three presses on NURPUR, which string is displayed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RUPRUN"
+        },
+        {
+          "label": "B",
+          "text": "RUPNUR"
+        },
+        {
+          "label": "C",
+          "text": "RURPUN"
+        },
+        {
+          "label": "D",
+          "text": "NURPUR"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Two reversals cancel; the third leaves one reversal. NURPUR therefore displays as RUPRUN."
+    },
+    {
+      "id": "04-135",
+      "number": 135,
+      "question": "A three-letter word is coded as the product of its ranks divided by their greatest common divisor. What number represents FLR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1296"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Ranks are 6,12,18 with greatest common divisor 6. The code is (6×12×18)÷6=216."
+    },
+    {
+      "id": "04-136",
+      "number": 136,
+      "question": "Codes are fixed and unordered: “Aman likes chess” = “lo pa si”; “Rita likes hockey” = “tu pa ve”; “Aman plays hockey” = “lo ne ve”. Which token belongs to a SPORT mentioned in the first sentence?",
+      "options": [
+        {
+          "label": "A",
+          "text": "si"
+        },
+        {
+          "label": "B",
+          "text": "lo"
+        },
+        {
+          "label": "C",
+          "text": "ve"
+        },
+        {
+          "label": "D",
+          "text": "pa"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The common pairs give Aman=lo and likes=pa. The first sentence’s remaining word chess has code si."
+    },
+    {
+      "id": "04-137",
+      "number": 137,
+      "question": "A nonzero fixed forward shift between 1 and 25 is applied twice. Every letter returns to its original value. How many places does each application move?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Twice the shift must complete one 26-letter cycle. Hence the shift is 26÷2=13."
+    },
+    {
+      "id": "04-138",
+      "number": 138,
+      "question": "A four-digit label swaps only its first and last digits. Internal digits stay fixed. Which label is produced from 4069?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9604"
+        },
+        {
+          "label": "B",
+          "text": "9064"
+        },
+        {
+          "label": "C",
+          "text": "9046"
+        },
+        {
+          "label": "D",
+          "text": "4960"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Exchange endpoint digits 4 and 9, retaining 0 and 6 in the middle. The result is 9064."
+    },
+    {
+      "id": "04-139",
+      "number": 139,
+      "question": "A word is encoded by a single fixed shift. The original begins and ends with J and R, while the code begins with Q. Which letter must end the code?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Y"
+        },
+        {
+          "label": "B",
+          "text": "Z"
+        },
+        {
+          "label": "C",
+          "text": "X"
+        },
+        {
+          "label": "D",
+          "text": "K"
+        }
+      ],
+      "answer": "A",
+      "explanation": "J→Q is +7. Apply the same shift to the original final R: 18+7=25=Y."
+    },
+    {
+      "id": "04-140",
+      "number": 140,
+      "question": "Under alphabet-opposite coding, what is the ordinary rank of the coded letter that replaces P?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "P has rank 16. Its opposite has rank 27-16=11, which is K."
+    },
+    {
+      "id": "04-141",
+      "number": 141,
+      "question": "For a seven-letter word, shift a letter forward by its distance from the nearer END, counting an endpoint as distance 1. After encoding, reverse the entire result. Find the final code for RAJPURA.",
+      "options": [
+        {
+          "label": "A",
+          "text": "HXZTMCS"
+        },
+        {
+          "label": "B",
+          "text": "SCMTXTB"
+        },
+        {
+          "label": "C",
+          "text": "BTXTMCS"
+        },
+        {
+          "label": "D",
+          "text": "ASWSLBR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Distances from the nearer end are 1,2,3,4,3,2,1. The intermediate code is SCMTXTB; reversing gives BTXTMCS."
+    },
+    {
+      "id": "04-142",
+      "number": 142,
+      "question": "Fixed mappings: A→2,B→%,C→2,D→#. For the pattern AB?D, the code is 2%2#. How many letters in the given mapping can fill the missing place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The missing letter must have code 2. Both A and C qualify, giving two possible letters."
+    },
+    {
+      "id": "04-143",
+      "number": 143,
+      "question": "Opposite coding is followed by sorting the resulting letters alphabetically. Which sorted code belongs to NIMRAT?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MRNIZG"
+        },
+        {
+          "label": "B",
+          "text": "AIMNRT"
+        },
+        {
+          "label": "C",
+          "text": "GIMNRZ"
+        },
+        {
+          "label": "D",
+          "text": "ZRNMIG"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The opposites form MRNIZG. Sorting those letters gives GIMNRZ."
+    },
+    {
+      "id": "04-144",
+      "number": 144,
+      "question": "Base: U→5,A→1,S→8,H→%. Examine original USHA and apply all actions in order: (1) if endpoints are vowels, exchange their current codes; (2) if any original interior consonant is present, replace the LAST code by #; (3) if the original first letter is U, replace the FIRST code by @. Find the final code.",
+      "options": [
+        {
+          "label": "A",
+          "text": "@8%#"
+        },
+        {
+          "label": "B",
+          "text": "#8%@"
+        },
+        {
+          "label": "C",
+          "text": "18%#"
+        },
+        {
+          "label": "D",
+          "text": "@8%5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Base 58%1 becomes 18%5 after the swap, then 18%#, then @8%#. All conditions are checked on the original USHA."
+    },
+    {
+      "id": "04-145",
+      "number": 145,
+      "question": "A numeric code stores, for each letter, 27 plus its ordinary rank, except that every repeated occurrence after the first stores 0. What is the code for MANSA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40-28-41-46-28"
+        },
+        {
+          "label": "B",
+          "text": "40-28-41-46-0"
+        },
+        {
+          "label": "C",
+          "text": "13-1-14-19-0"
+        },
+        {
+          "label": "D",
+          "text": "40-0-41-46-0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "First occurrences M,A,N,S give 40,28,41,46. The final A repeats, so its stored value is 0."
+    },
+    {
+      "id": "04-146",
+      "number": 146,
+      "question": "A six-letter name is coded using the repeating shifts 0,+2,-2. Which original positions of RAVINA remain unchanged in its code?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,5"
+        },
+        {
+          "label": "B",
+          "text": "1,3"
+        },
+        {
+          "label": "C",
+          "text": "3,6"
+        },
+        {
+          "label": "D",
+          "text": "1,4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Only a zero shift leaves a letter unchanged. In this block, zero occurs at places 1 and 4."
+    },
+    {
+      "id": "04-147",
+      "number": 147,
+      "question": "Coordinates use row then column. Matrix I: columns 0,1,2; row 0=T,A,R; row 1=N,U,P. Matrix II: columns 5,6,7; row 5=A,R,T; row 6=U,N,A. Which code for TARAN uses the SMALLEST available coordinate for each letter, treating each pair as a two-digit number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "00-01-02-01-66"
+        },
+        {
+          "label": "B",
+          "text": "00-01-02-55-10"
+        },
+        {
+          "label": "C",
+          "text": "00-01-02-01-10"
+        },
+        {
+          "label": "D",
+          "text": "57-55-56-67-66"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Minimum cells are T=00,A=01,R=02,N=10. Reuse A=01 to obtain 00-01-02-01-10."
+    },
+    {
+      "id": "04-148",
+      "number": 148,
+      "question": "A code moves the first letter of a word to the last place without disturbing the remaining order. Which code belongs to DHURI?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HUIDR"
+        },
+        {
+          "label": "B",
+          "text": "IRUHD"
+        },
+        {
+          "label": "C",
+          "text": "HURID"
+        },
+        {
+          "label": "D",
+          "text": "IDHUR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Keep HURI in order and append the first letter D. The result is HURID."
+    },
+    {
+      "id": "04-149",
+      "number": 149,
+      "question": "Each letter’s ordinary rank is squared and written as a separate number. A four-letter message is 256-1-324-121. Which message does it encode?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PARKS"
+        },
+        {
+          "label": "B",
+          "text": "PARK"
+        },
+        {
+          "label": "C",
+          "text": "QARK"
+        },
+        {
+          "label": "D",
+          "text": "PBRK"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Positive square roots are 16,1,18,11. These ranks give P,A,R,K."
+    },
+    {
+      "id": "04-150",
+      "number": 150,
+      "question": "A fixed mapping gives DERA→6#@8 and READ→@#86. After coding AADAR, how many @ symbols appear?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The symbol @ represents R. AADAR has exactly one R, so @ appears once."
+    }
+  ]
+}

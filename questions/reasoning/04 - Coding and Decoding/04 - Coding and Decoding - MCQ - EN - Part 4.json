@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-076",
+      "number": 76,
+      "question": "Use row then column. Columns: 0,1,2; row 0=A,B,A; row 1=C,A,D; row 2=B,D,C. How many coordinate sequences code ABACA if no cell may be reused and the FIRST A must come from row 0?",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first A has 2 choices; the other A cells can be arranged in 2×1 ways. B and C each have 2 choices, so 2×2×1×2×2=16."
+    },
+    {
+      "id": "04-077",
+      "number": 77,
+      "question": "The same one-to-one character code gives MELA→4@7# and AMAR→#4#8. Which extra mapping must be wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E→@"
+        },
+        {
+          "label": "B",
+          "text": "R→7"
+        },
+        {
+          "label": "C",
+          "text": "A→#"
+        },
+        {
+          "label": "D",
+          "text": "L→7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The examples fix M=4,E=@,L=7,A=#,R=8. Therefore R→7 conflicts with R→8."
+    },
+    {
+      "id": "04-078",
+      "number": 78,
+      "question": "Base: A→1,I→2,T→6,R→8,N→7,U→9. Apply only the first matching rule: (1) first letter vowel and last consonant: exchange endpoint codes, then reverse the interior codes; (2) both endpoints vowels: replace their codes by #; (3) otherwise retain the base. Encode ARITNUT.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6976281"
+        },
+        {
+          "label": "B",
+          "text": "1826796"
+        },
+        {
+          "label": "C",
+          "text": "6826791"
+        },
+        {
+          "label": "D",
+          "text": "1976286"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Base code is 1826796. Rule 1 swaps the endpoints to 6826791, then reverses the interior 82679 to 97628, giving 6976281."
+    },
+    {
+      "id": "04-079",
+      "number": 79,
+      "question": "A fixed shift codes ZIRA as ENWF. Which additional word–code pair follows precisely the same shift?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SUNAM → VXQDP"
+        },
+        {
+          "label": "B",
+          "text": "BANGA → GFSLF"
+        },
+        {
+          "label": "C",
+          "text": "MALER → QEPIV"
+        },
+        {
+          "label": "D",
+          "text": "RAJPURA → VEPTYVE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Z→E means +5 with wraparound. BANGA shifted +5 is GFSLF; the other entries do not use +5 throughout."
+    },
+    {
+      "id": "04-080",
+      "number": 80,
+      "question": "Two dictionaries are used in order. First: RICE→WHEAT, WHEAT→MAIZE. Second: WHEAT→PULSE, MAIZE→RICE. Apply one replacement in each dictionary to the real item RICE. Which final label results?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RICE"
+        },
+        {
+          "label": "B",
+          "text": "PULSE"
+        },
+        {
+          "label": "C",
+          "text": "MAIZE"
+        },
+        {
+          "label": "D",
+          "text": "WHEAT"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The first dictionary sends RICE to WHEAT. The second sends that WHEAT to PULSE."
+    },
+    {
+      "id": "04-081",
+      "number": 81,
+      "question": "One of these inputs remains unchanged when its entire letter order is reversed. Which is it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NARAM"
+        },
+        {
+          "label": "B",
+          "text": "NAYAM"
+        },
+        {
+          "label": "C",
+          "text": "NAVAN"
+        },
+        {
+          "label": "D",
+          "text": "NAGAR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "NAVAN reads N-A-V-A-N in both directions. The other strings have different endpoint or inner pairs."
+    },
+    {
+      "id": "04-082",
+      "number": 82,
+      "question": "A four-place block (+a,0,-a,+b) repeats from the left, where a and b are positive integers below 6. SURINDER becomes UUPJPDCS. Infer a and b, then code CHANDIGARH using the same block. Which output is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "EHYOFIEBTH"
+        },
+        {
+          "label": "B",
+          "text": "DHZPEIFCSH"
+        },
+        {
+          "label": "C",
+          "text": "EHYPFIECTH"
+        },
+        {
+          "label": "D",
+          "text": "HTBEIFOYHE"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S→U gives a=2; I→J gives b=1, and the other pairs confirm the block. Repeat +2,0,-2,+1 to obtain EHYOFIEBTH."
+    },
+    {
+      "id": "04-083",
+      "number": 83,
+      "question": "A fixed forward shift of 6 is used on FARIDKOT. How many vowels are in the code? Count A,E,I,O,U as vowels.",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The shifted word is LGXOJQUZ. It contains O and U, so there are 2 vowels."
+    },
+    {
+      "id": "04-084",
+      "number": 84,
+      "question": "To encode a seven-letter word, reverse it, move every letter -2, then reverse only the first three coded letters. What is the final output for HARVEST?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CQRTPYF"
+        },
+        {
+          "label": "B",
+          "text": "RQCTPYF"
+        },
+        {
+          "label": "C",
+          "text": "FYPTCQR"
+        },
+        {
+          "label": "D",
+          "text": "VUGXTCJ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Reversal and -2 give RQCTPYF. Reverse its first three letters only to obtain CQRTPYF."
+    },
+    {
+      "id": "04-085",
+      "number": 85,
+      "question": "Encoding stores the sum of the first two letter ranks, then each later rank separately. The first letter is fixed as B. Decode 10-15-16-1-12.",
+      "options": [
+        {
+          "label": "A",
+          "text": "BJOPAL"
+        },
+        {
+          "label": "B",
+          "text": "BIPOLA"
+        },
+        {
+          "label": "C",
+          "text": "BHOPAL"
+        },
+        {
+          "label": "D",
+          "text": "BHOPLA"
+        }
+      ],
+      "answer": "C",
+      "explanation": "B=2, so the second rank is 10-2=8=H. The later ranks give O,P,A,L, producing BHOPAL."
+    },
+    {
+      "id": "04-086",
+      "number": 86,
+      "question": "For a six-letter word, the code is the absolute difference between the square of the odd-place rank sum and the square of the even-place rank sum. Find the code of NAGPUR.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2989"
+        },
+        {
+          "label": "B",
+          "text": "5929"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "539"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Odd places sum to 14+7+21=42; even places sum to 1+16+18=35. Use 42²-35²=(42-35)(42+35)=539."
+    },
+    {
+      "id": "04-087",
+      "number": 87,
+      "question": "For each letter, use ordinary rank if the word place is odd and reverse rank if it is even. No reordering is allowed. Find the number sequence for SANGRUR.",
+      "options": [
+        {
+          "label": "A",
+          "text": "19-26-14-20-18-6-9"
+        },
+        {
+          "label": "B",
+          "text": "8-1-13-7-9-21-9"
+        },
+        {
+          "label": "C",
+          "text": "19-1-14-7-18-21-18"
+        },
+        {
+          "label": "D",
+          "text": "19-26-14-20-18-6-18"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Odd places give 19,14,18,18; even places give 26,20,6. Interleave them as 19-26-14-20-18-6-18."
+    },
+    {
+      "id": "04-088",
+      "number": 88,
+      "question": "A three-letter word is represented by the product of its alphabet ranks. Which number represents FAD?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "B",
+      "explanation": "F=6,A=1,D=4. Multiply 6×1×4=24."
+    },
+    {
+      "id": "04-089",
+      "number": 89,
+      "question": "A fixed one-to-one word code ignores order: “silver coins shine” = “ra pu te”; “gold coins shine” = “ki te pu”; “silver lamps glow” = “ra mo sa”. Which added observation would uniquely identify the individual code for “shine”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "coins glow = pu sa"
+        },
+        {
+          "label": "B",
+          "text": "gold silver = ki ra"
+        },
+        {
+          "label": "C",
+          "text": "lamps glow = mo sa"
+        },
+        {
+          "label": "D",
+          "text": "coins shine = pu te"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Initially coins and shine are unresolved as pu,te. “coins glow = pu sa” fixes coins=pu, leaving shine=te; the other observations do not split that pair."
+    },
+    {
+      "id": "04-090",
+      "number": 90,
+      "question": "Opposite-letter coding is applied twice to PONDA, then a uniform +2 shift is applied. Which result follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NMLBY"
+        },
+        {
+          "label": "B",
+          "text": "KLMWZ"
+        },
+        {
+          "label": "C",
+          "text": "IJKUX"
+        },
+        {
+          "label": "D",
+          "text": "RQPFC"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Taking opposites twice restores every original letter. Only +2 remains, giving RQPFC."
+    },
+    {
+      "id": "04-091",
+      "number": 91,
+      "question": "Move every letter of HISAR 2 places backward. What are the first and last letters of the resulting code, in that order?",
+      "options": [
+        {
+          "label": "A",
+          "text": "F T"
+        },
+        {
+          "label": "B",
+          "text": "J T"
+        },
+        {
+          "label": "C",
+          "text": "G Q"
+        },
+        {
+          "label": "D",
+          "text": "F P"
+        }
+      ],
+      "answer": "D",
+      "explanation": "H-2=F and R-2=P. The requested endpoint pair is F P."
+    },
+    {
+      "id": "04-092",
+      "number": 92,
+      "question": "An access code is made by sorting the digits of 804272 in ascending order, retaining all digits, then moving the first digit to the end. What is the six-position code?",
+      "options": [
+        {
+          "label": "A",
+          "text": "022478"
+        },
+        {
+          "label": "B",
+          "text": "224780"
+        },
+        {
+          "label": "C",
+          "text": "247820"
+        },
+        {
+          "label": "D",
+          "text": "224870"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Ascending order is 022478. Moving its leading 0 to the end gives 224780."
+    },
+    {
+      "id": "04-093",
+      "number": 93,
+      "question": "A letter is stored as its ordinary rank followed by its reverse rank, separated by /. Which stored pair represents V?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5/22"
+        },
+        {
+          "label": "B",
+          "text": "22/5"
+        },
+        {
+          "label": "C",
+          "text": "21/6"
+        },
+        {
+          "label": "D",
+          "text": "22/4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "V has ordinary rank 22 and reverse rank 27-22=5. Its pair is 22/5."
+    },
+    {
+      "id": "04-094",
+      "number": 94,
+      "question": "Starting at the RIGHTMOST letter, apply +2,-3,+2,-3 repeatedly. Keep the word order when writing the code. What is the code of GARIMA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "IXTFOX"
+        },
+        {
+          "label": "B",
+          "text": "DXOFJX"
+        },
+        {
+          "label": "C",
+          "text": "DCOKJC"
+        },
+        {
+          "label": "D",
+          "text": "ICTKOC"
+        }
+      ],
+      "answer": "C",
+      "explanation": "For six letters, the left-to-right shifts are -3,+2,-3,+2,-3,+2. The result is DCOKJC."
+    },
+    {
+      "id": "04-095",
+      "number": 95,
+      "question": "A five-letter word uses shifts +5,+4,+3,+2,+1. All but one pair below follow that rule. Which pair is faulty?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NEERA → SIHTB"
+        },
+        {
+          "label": "B",
+          "text": "MOHAN → RSKCO"
+        },
+        {
+          "label": "C",
+          "text": "KAMAL → PEPCM"
+        },
+        {
+          "label": "D",
+          "text": "ROPAR → WSSCT"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Applying +5,+4,+3,+2,+1 to ROPAR gives WSSCS, so the listed final T is wrong."
+    },
+    {
+      "id": "04-096",
+      "number": 96,
+      "question": "A fixed printer code gives NAVAN→6#8#6. Which single character is the code for V?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "V"
+        },
+        {
+          "label": "C",
+          "text": "#"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The middle letter V corresponds to the middle code character 8."
+    },
+    {
+      "id": "04-097",
+      "number": 97,
+      "question": "A word code records length followed by # if the word contains any repeated letter, otherwise @. Which code belongs to BARNALA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7#"
+        },
+        {
+          "label": "B",
+          "text": "7@"
+        },
+        {
+          "label": "C",
+          "text": "3#"
+        },
+        {
+          "label": "D",
+          "text": "6#"
+        }
+      ],
+      "answer": "A",
+      "explanation": "BARNALA contains seven letters and repeats A. Hence its code is 7#."
+    },
+    {
+      "id": "04-098",
+      "number": 98,
+      "question": "Each word has a fixed code; order is arbitrary. “read every morning” = “ab cd ef”; “write every evening” = “gh cd ij”; “read and write” = “ab kl gh”. Which token cannot represent any word in “every and read”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "cd"
+        },
+        {
+          "label": "B",
+          "text": "kl"
+        },
+        {
+          "label": "C",
+          "text": "gh"
+        },
+        {
+          "label": "D",
+          "text": "ab"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The phrase uses every=cd, and=kl and read=ab. Token gh belongs to write, which is absent."
+    },
+    {
+      "id": "04-099",
+      "number": 99,
+      "question": "A seven-letter encoder writes even-position letters in reverse order, followed by odd-position letters in their original order. Select the output for MALERKA.",
+      "options": [
+        {
+          "label": "A",
+          "text": "MLRAKEA"
+        },
+        {
+          "label": "B",
+          "text": "AEKMLRA"
+        },
+        {
+          "label": "C",
+          "text": "AKEMLRA"
+        },
+        {
+          "label": "D",
+          "text": "KEAMLRA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Even places 2,4,6 hold A,E,K; reversing gives K,E,A. Odd places give M,L,R,A, so the code is KEAMLRA."
+    },
+    {
+      "id": "04-100",
+      "number": 100,
+      "question": "Letters are processed in order from BOTH ends: first, last, second, second-last, and so on. They move +1,+2,+3,+4,+5,+6 in that processing order, but are written back in their original positions. Code LAVISH.",
+      "options": [
+        {
+          "label": "A",
+          "text": "MCYMXN"
+        },
+        {
+          "label": "B",
+          "text": "RFZLUI"
+        },
+        {
+          "label": "C",
+          "text": "MDAKWN"
+        },
+        {
+          "label": "D",
+          "text": "MDAOWJ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The original positions receive shifts +1,+3,+5,+6,+4,+2. LAVISH becomes MDAOWJ."
+    }
+  ]
+}

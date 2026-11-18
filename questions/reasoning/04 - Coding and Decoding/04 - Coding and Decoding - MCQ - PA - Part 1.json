@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 4,
+    "title": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-001",
+      "number": 1,
+      "question": "ਇੱਕ clerk ਸਿਰਫ਼ ਵੱਖ-ਵੱਖ ਅੱਖਰਾਂ ਦੇ alphabet ranks ਜੋੜਦਾ ਹੈ; ਦੁਹਰਾਏ ਅੱਖਰ ਮੁੜ ਨਹੀਂ ਗਿਣਦਾ। BATHINDA ਨੂੰ ਕਿਹੜਾ ਅੰਕ ਮਿਲੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "57"
+        },
+        {
+          "label": "B",
+          "text": "58"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "59"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A ਨੂੰ ਇੱਕ ਵਾਰ ਗਿਣੋ। B+A+T+H+I+N+D = 2+1+20+8+9+14+4 = 58।"
+    },
+    {
+      "id": "04-002",
+      "number": 2,
+      "question": "ਛੇ ਅੱਖਰਾਂ ਦਾ code ਅਸਲ ਥਾਵਾਂ 4,1,6,2,5,3 ਦੇ ਕ੍ਰਮ ਵਿੱਚ ਪੜ੍ਹਦਾ ਹੈ। code NKLAAR ਹੈ। ਕਿਹੜੇ ਸ਼ਬਦ ਦਾ ਕ੍ਰਮ ਬਦਲਿਆ ਗਿਆ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "KANRAL"
+        },
+        {
+          "label": "B",
+          "text": "AKLRAN"
+        },
+        {
+          "label": "C",
+          "text": "KARLAN"
+        },
+        {
+          "label": "D",
+          "text": "KARNAL"
+        }
+      ],
+      "answer": "D",
+      "explanation": "N,K,L,A,A,R ਨੂੰ ਕ੍ਰਮਵਾਰ ਥਾਵਾਂ 4,1,6,2,5,3 ਉੱਤੇ ਵਾਪਸ ਰੱਖੋ। ਅਸਲ ਥਾਵਾਂ 1–6 ਨੂੰ ਪੜ੍ਹ ਕੇ KARNAL ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-003",
+      "number": 3,
+      "question": "coordinates ਵਿੱਚ ਪਹਿਲਾਂ row ਅਤੇ ਫਿਰ column ਹੈ। Columns: 0 1 2; row 0: J A L; row 1: A M R; row 2: R L A। ਕਿਹੜਾ ਕ੍ਰਮ JAL ਦਾ ਸਹੀ code ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "00-22-12"
+        },
+        {
+          "label": "B",
+          "text": "00-10-21"
+        },
+        {
+          "label": "C",
+          "text": "00-11-21"
+        },
+        {
+          "label": "D",
+          "text": "00-01-20"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਜੋੜਾ ਵੱਖਰਾ ਪੜ੍ਹੋ: 00=J, 10=A ਅਤੇ 21=L। A ਜਾਂ L ਦੀ ਹੋਰ ਥਾਂ ਵੀ ਲੈ ਸਕਦੇ ਹਾਂ, ਪਰ ਹਰ ਜੋੜਾ ਸਹੀ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-004",
+      "number": 4,
+      "question": "ਮੂਲ mapping: A→2,E→5,I→8,N→%,R→7। ਅਸਲ input ਦੇ ਸਵਰ ਗਿਣ ਕੇ ਸਿਰਫ਼ ਪਹਿਲੀ ਮਿਲਦੀ ਸ਼ਰਤ ਲਾਓ: (1) ਬਿਲਕੁਲ ਦੋ ਸਵਰ: ਦੋਵੇਂ ਸਿਰਿਆਂ ਦੇ codes # ਕਰੋ; (2) ਦੋਵੇਂ ਸਿਰੇ ਸਵਰ: ਪੂਰਾ ਮੂਲ code ਉਲਟ ਕੇ ਉਸ ਦਾ ਵਿਚਕਾਰਲਾ code @ ਕਰੋ; (3) ਨਹੀਂ ਤਾਂ ਮੂਲ code ਰੱਖੋ। ANIRE ਦਾ code ਬਣਾਓ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "#%87#"
+        },
+        {
+          "label": "B",
+          "text": "2%@75"
+        },
+        {
+          "label": "C",
+          "text": "57@%2"
+        },
+        {
+          "label": "D",
+          "text": "578%2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ANIRE ਵਿੱਚ ਤਿੰਨ ਸਵਰ ਹਨ, ਇਸ ਲਈ ਸ਼ਰਤ 1 ਨਹੀਂ ਲੱਗਦੀ ਅਤੇ ਸ਼ਰਤ 2 ਲੱਗਦੀ ਹੈ। 2%875 ਉਲਟ ਕੇ 578%2 ਬਣਾਓ ਅਤੇ ਵਿਚਕਾਰਲਾ code ਬਦਲੋ: 57@%2।"
+    },
+    {
+      "id": "04-005",
+      "number": 5,
+      "question": "ਹਰ ਸ਼ਬਦ ਦਾ ਇੱਕ ਤੈਅ code ਹੈ ਅਤੇ tokens ਦਾ ਕ੍ਰਮ ਕੋਈ ਵੀ ਹੋ ਸਕਦਾ ਹੈ: “farmers sell wheat” = “zu pa ni”; “traders buy wheat” = “ko ni re”; “farmers buy seeds” = “pa re lo”। “sell seeds” ਦਾ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "zu lo"
+        },
+        {
+          "label": "B",
+          "text": "zu re"
+        },
+        {
+          "label": "C",
+          "text": "ko lo"
+        },
+        {
+          "label": "D",
+          "text": "pa lo"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਸਾਂਝੇ ਸ਼ਬਦਾਂ ਤੋਂ wheat=ni, farmers=pa ਅਤੇ buy=re ਮਿਲਦੇ ਹਨ। ਬਚੇ codes sell=zu ਅਤੇ seeds=lo ਹਨ।"
+    },
+    {
+      "id": "04-006",
+      "number": 6,
+      "question": "ਇੱਕ ticket machine L→7, O→@, H→4, R→%, I→2 ਵਰਤਦੀ ਹੈ। LOHRI ਲਈ ਕਿਹੜੀ ticket ਛਪੇਗੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7@4%2"
+        },
+        {
+          "label": "B",
+          "text": "2%4@7"
+        },
+        {
+          "label": "C",
+          "text": "7@%42"
+        },
+        {
+          "label": "D",
+          "text": "7@4%7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਅਸਲ ਕ੍ਰਮ ਵਿੱਚ ਅੱਖਰ ਬਦਲੋ: L O H R I → 7 @ 4 % 2।"
+    },
+    {
+      "id": "04-007",
+      "number": 7,
+      "question": "ਇੱਕ ਮੇਲੇ ਵਿੱਚ ਅਸਲ ਚੀਜ਼ਾਂ ਦੇ ਨਾਂ ਇੱਕ ਵਾਰ ਬਦਲੇ ਗਏ ਹਨ: DRUM→FLUTE, FLUTE→FLAG, FLAG→LAMP। ਸਿਮਰਨ ਅਸਲ ਵਿੱਚ FLUTE ਚੁੱਕਦੀ ਹੈ। announcer ਕਿਹੜਾ code ਨਾਂ ਵਰਤੇ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "FLUTE"
+        },
+        {
+          "label": "B",
+          "text": "DRUM"
+        },
+        {
+          "label": "C",
+          "text": "LAMP"
+        },
+        {
+          "label": "D",
+          "text": "FLAG"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਅਸਲ ਚੀਜ਼ FLUTE ਤੋਂ ਤੀਰ ਨੂੰ ਇੱਕ ਵਾਰ ਅੱਗੇ ਲਵੋ। ਇਸ ਦਾ ਦਿੱਤਾ ਨਾਂ FLAG ਹੈ।"
+    },
+    {
+      "id": "04-008",
+      "number": 8,
+      "question": "ਇੱਕ encoder ਛੇ ਅੱਖਰਾਂ ਦਾ ਸ਼ਬਦ ਉਲਟ ਕੇ +1,-2,+3,-4,+5,-6 ਲਾਉਂਦਾ ਹੈ। output FJSIJN ਹੈ। input ਕੀ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TEMQLE"
+        },
+        {
+          "label": "B",
+          "text": "TEMPLEE"
+        },
+        {
+          "label": "C",
+          "text": "TEMPLE"
+        },
+        {
+          "label": "D",
+          "text": "ELPMET"
+        }
+      ],
+      "answer": "C",
+      "explanation": "shifts ਉਲਟਣ ਨਾਲ ਉਲਟੇ ਕ੍ਰਮ ਵਿੱਚ E L P M E T ਮਿਲਦਾ ਹੈ। ਇਸ ਨੂੰ ਉਲਟ ਕੇ TEMPLE ਪ੍ਰਾਪਤ ਹੁੰਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-009",
+      "number": 9,
+      "question": "ਇੱਕ label ਵਿੱਚ ਕ੍ਰਮਵਾਰ ਟਾਂਕ ਲੰਬਾਈ ਵਾਲੇ ਸ਼ਬਦ ਦਾ ਵਿਚਕਾਰਲਾ ਅੱਖਰ, ਵੱਖ-ਵੱਖ ਅੱਖਰਾਂ ਦੀ ਗਿਣਤੀ ਅਤੇ ਆਖ਼ਰੀ ਅੱਖਰ ਤੋਂ +2 ਵਾਲਾ ਅੱਖਰ ਆਉਂਦੇ ਹਨ। PATIALA ਦਾ label ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "T5C"
+        },
+        {
+          "label": "B",
+          "text": "I5C"
+        },
+        {
+          "label": "C",
+          "text": "I7C"
+        },
+        {
+          "label": "D",
+          "text": "I5B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "PATIALA ਦਾ ਵਿਚਕਾਰਲਾ ਅੱਖਰ I ਹੈ ਅਤੇ ਵੱਖਰੇ ਅੱਖਰ P,A,T,I,L ਕੁੱਲ ਪੰਜ ਹਨ। ਆਖ਼ਰੀ A ਤੋਂ C ਬਣਦਾ ਹੈ, ਇਸ ਲਈ I5C ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-010",
+      "number": 10,
+      "question": "ਇੱਕ ਤੈਅ digit substitution ਵਿੱਚ 248 ਨੂੰ 591 ਅਤੇ 826 ਨੂੰ 157 ਲਿਖਦੇ ਹਨ। 6824 ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7195"
+        },
+        {
+          "label": "B",
+          "text": "7159"
+        },
+        {
+          "label": "C",
+          "text": "7519"
+        },
+        {
+          "label": "D",
+          "text": "1759"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਜੋੜੇ 6→7, 8→1, 2→5 ਅਤੇ 4→9 ਹਨ। ਇਸ ਲਈ 6824 ਤੋਂ 7159 ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-011",
+      "number": 11,
+      "question": "ਇੱਕ ਨਾਂ ਦੇ ਹਰ ਅਸਲ ਅੱਖਰ ਨੂੰ ਚੱਕਰ ਅਨੁਸਾਰ +3 ਕਰਨ ਤੋਂ ਬਾਅਦ ਦੋ-digit alphabet ranks ਲਿਖੇ ਜਾਂਦੇ ਹਨ। 17080816 Decode ਕਰੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "NEEM"
+        },
+        {
+          "label": "B",
+          "text": "NEEN"
+        },
+        {
+          "label": "C",
+          "text": "NEEL"
+        },
+        {
+          "label": "D",
+          "text": "QHHP"
+        }
+      ],
+      "answer": "A",
+      "explanation": "17,08,08,16 ਵਿੱਚ ਵੰਡਣ ਨਾਲ QHHP ਮਿਲਦਾ ਹੈ। ਹਰ ਅੱਖਰ ਨੂੰ 3 ਥਾਵਾਂ ਪਿੱਛੇ ਕਰਕੇ NEEM ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-012",
+      "number": 12,
+      "question": "ਇੱਕ-ਤੋਂ-ਇੱਕ ਤੈਅ word code ਵਿੱਚ ਕ੍ਰਮ ਦਾ ਮਹੱਤਵ ਨਹੀਂ। “clean village roads” = “ti mu ka”; “village schools open” = “mu zo pe”; “clean schools shine” = “ti zo ra”; “roads shine daily” = “ka ra fu”। “open clean daily” ਦਾ code set ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pe mu fu"
+        },
+        {
+          "label": "B",
+          "text": "pe ti fu"
+        },
+        {
+          "label": "C",
+          "text": "pe ti ra"
+        },
+        {
+          "label": "D",
+          "text": "zo ti fu"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਸਾਂਝੇ ਸ਼ਬਦਾਂ ਤੋਂ clean=ti, village=mu, schools=zo ਅਤੇ shine=ra ਮਿਲਦੇ ਹਨ। ਬਚੇ ਸ਼ਬਦਾਂ ਤੋਂ open=pe ਅਤੇ daily=fu ਹਨ, ਇਸ ਲਈ pe ti fu ਚੁਣੋ।"
+    },
+    {
+      "id": "04-013",
+      "number": 13,
+      "question": "ਇੱਕ ਵਿਦਿਆਰਥੀ ਦੇ ਨਾਂ ਦਾ code ਹਰ ਅੱਖਰ ਨੂੰ 5 ਥਾਵਾਂ ਪਿੱਛੇ ਕਰਕੇ ਬਣਾਇਆ ਹੈ। code HPNFVI ਹੈ। ਅਸਲ ਨਾਂ ਕਿਹੜਾ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MUSLAN"
+        },
+        {
+          "label": "B",
+          "text": "MUSKAM"
+        },
+        {
+          "label": "C",
+          "text": "MUTKAN"
+        },
+        {
+          "label": "D",
+          "text": "MUSKAN"
+        }
+      ],
+      "answer": "D",
+      "explanation": "-5 ਨੂੰ +5 ਨਾਲ ਉਲਟੋ: H→M, P→U, N→S, F→K, V→A ਅਤੇ I→N। ਨਾਂ MUSKAN ਹੈ।"
+    },
+    {
+      "id": "04-014",
+      "number": 14,
+      "question": "ਖੱਬੇ ਤੋਂ ਗਿਣਦਿਆਂ ਟਾਂਕ ਥਾਵਾਂ ਵਾਲੇ ਅੱਖਰ +3 ਅਤੇ ਜਿਸਤ ਥਾਵਾਂ ਵਾਲੇ -2 ਹੁੰਦੇ ਹਨ। ਇੱਕ surname ਦਾ code VGQEK ਹੈ। ਅਸਲ surname ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "SILGH"
+        },
+        {
+          "label": "B",
+          "text": "YETCN"
+        },
+        {
+          "label": "C",
+          "text": "UINGH"
+        },
+        {
+          "label": "D",
+          "text": "SINGH"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਵਾਰੀ-ਵਾਰੀ shift ਨੂੰ ਉਲਟਣ ਲਈ -3,+2,-3,+2,-3 ਲਾਓ। VGQEK ਤੋਂ SINGH ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-015",
+      "number": 15,
+      "question": "alphabet ਦੇ ਉਲਟੇ ਜੋੜੇ A↔Z, B↔Y ਆਦਿ ਵਰਤੋ। JASS ਦਾ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "QZHH"
+        },
+        {
+          "label": "B",
+          "text": "QZII"
+        },
+        {
+          "label": "C",
+          "text": "QAHH"
+        },
+        {
+          "label": "D",
+          "text": "RZHH"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਉਲਟੇ ਅੱਖਰਾਂ ਦੇ ranks ਦਾ ਜੋੜ 27 ਹੈ: J→Q, A→Z ਅਤੇ S→H। ਇਸ ਲਈ JASS ਤੋਂ QZHH ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-016",
+      "number": 16,
+      "question": "ਸੱਤ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਵਿੱਚ ਵਿਚਕਾਰਲਾ ਅੱਖਰ ਜਿਉਂ ਦਾ ਤਿਉਂ ਰੱਖੋ, ਆਖ਼ਰੀ ਤਿੰਨ ਅੱਖਰ ਅੱਗੇ ਅਤੇ ਪਹਿਲੇ ਤਿੰਨ ਪਿੱਛੇ ਲਿਆਓ। ਕਿਸੇ group ਨੂੰ ਉਲਟੋ ਨਾ। PUNJABI ਦਾ code ਬਣਾਓ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "ABIPUNJ"
+        },
+        {
+          "label": "B",
+          "text": "PUNJIBA"
+        },
+        {
+          "label": "C",
+          "text": "ABIJPUN"
+        },
+        {
+          "label": "D",
+          "text": "IBAJNUP"
+        }
+      ],
+      "answer": "C",
+      "explanation": "PUNJABI ਨੂੰ PUN | J | ABI ਵਾਂਗ ਵੰਡੋ। ਬਾਹਰਲੇ groups ਬਦਲਣ ਨਾਲ ABIJPUN ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-017",
+      "number": 17,
+      "question": "ਇੱਕੋ fixed shift ਨਾਲ JHELUM ਦਾ code MKHOXP ਬਣਦਾ ਹੈ। ਹੇਠਾਂ ਦਿੱਤੀ ਕਿਹੜੀ ਹੋਰ entry ਇਸ rule ਨੂੰ ਤੋੜਦੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "CHENAB → FKHQDE"
+        },
+        {
+          "label": "B",
+          "text": "RAVI → UDYK"
+        },
+        {
+          "label": "C",
+          "text": "BEAS → EHDV"
+        },
+        {
+          "label": "D",
+          "text": "SUTLEJ → VXWOHM"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਹਰ ਅੱਖਰ +3 ਅੱਗੇ ਜਾਂਦਾ ਹੈ। RAVI ਦਾ code UDYL ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ, ਇਸ ਲਈ RAVI → UDYK ਗਲਤ entry ਹੈ।"
+    },
+    {
+      "id": "04-018",
+      "number": 18,
+      "question": "ਥਾਂ i ਉੱਤੇ code ਬਣਾਉਣ ਲਈ alphabet rank ਵਿੱਚ i² ਜੋੜਿਆ ਜਾਂਦਾ ਹੈ ਅਤੇ A–Z ਦਾ ਚੱਕਰ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ। ਕਿਹੜੇ ਅਸਲ ਸ਼ਬਦ ਤੋਂ SMEUQ ਬਣਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RKCJL"
+        },
+        {
+          "label": "B",
+          "text": "TQNEP"
+        },
+        {
+          "label": "C",
+          "text": "RIVER"
+        },
+        {
+          "label": "D",
+          "text": "RIVFR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਲਗਾਤਾਰ ਅੱਖਰਾਂ ਵਿੱਚੋਂ 1,4,9,16,25 ਘਟਾਓ। S→R, M→I, E→V, U→E ਅਤੇ Q→R ਨਾਲ RIVER ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-019",
+      "number": 19,
+      "question": "ਅੰਕੀ label ਵਿੱਚ ਹਰ ਅੱਖਰ ਦਾ ਉਲਟਾ alphabet ਮੁੱਲ ਲੈ ਕੇ ਸੱਜੇ ਤੋਂ ਉਸ ਦੀ ਥਾਂ ਜੋੜੀ ਜਾਂਦੀ ਹੈ; ਗਿਣਤੀ 1 ਤੋਂ ਹੈ। ਅੰਕਾਂ ਵਿੱਚ ਚੱਕਰ ਨਹੀਂ ਲਾਉਣਾ। REWA ਦਾ label ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "13-24-6-27"
+        },
+        {
+          "label": "B",
+          "text": "10-24-7-30"
+        },
+        {
+          "label": "C",
+          "text": "13-25-6-27"
+        },
+        {
+          "label": "D",
+          "text": "9-22-4-26"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਉਲਟੇ ਮੁੱਲ 9,22,4,26 ਹਨ; ਸੱਜੇ ਤੋਂ ਥਾਵਾਂ 4,3,2,1 ਜੋੜੋ। label 13-25-6-27 ਹੈ।"
+    },
+    {
+      "id": "04-020",
+      "number": 20,
+      "question": "ਇੱਕ-ਤੋਂ-ਇੱਕ character mapping ਵਿੱਚ SEAT→$7@4 ਅਤੇ EAST→7@$4 ਹੈ। 4@$7 ਕਿਸ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TASE"
+        },
+        {
+          "label": "B",
+          "text": "TSEA"
+        },
+        {
+          "label": "C",
+          "text": "EAST"
+        },
+        {
+          "label": "D",
+          "text": "TSAE"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SEAT ਤੋਂ 4=T, @=A, $=S ਅਤੇ 7=E ਮਿਲਦੇ ਹਨ। ਇਸ ਲਈ 4@$7 ਦਾ ਅਸਲ ਰੂਪ TASE ਹੈ।"
+    },
+    {
+      "id": "04-021",
+      "number": 21,
+      "question": "ਇੱਕ scanner ਪੂਰੀ string ਉੱਤੇ +2,-1,-1 ਦੁਹਰਾਉਂਦਾ ਹੈ; ਖਾਲੀ ਥਾਂ ਤੋਂ ਬਾਅਦ ਮੁੜ ਸ਼ੁਰੂ ਨਹੀਂ ਕਰਦਾ। string MOGA ROPAR ਹੈ। ਖਾਲੀ ਥਾਂ ਹਟਾਉਣ ਤੋਂ ਬਾਅਦ code ਦੇ ਆਖ਼ਰੀ ਪੰਜ ਅੱਖਰ ਕੀ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "QNRCT"
+        },
+        {
+          "label": "B",
+          "text": "TNOCQ"
+        },
+        {
+          "label": "C",
+          "text": "QNRZQ"
+        },
+        {
+          "label": "D",
+          "text": "QOQZQ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "MOGA ਦੀਆਂ ਥਾਵਾਂ 1–4 ਹਨ। ਥਾਵਾਂ 5–9 ਉੱਤੇ -1,-1,+2,-1,-1 ਲੱਗਦੇ ਹਨ, ਇਸ ਲਈ ROPAR ਤੋਂ QNRZQ ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-022",
+      "number": 22,
+      "question": "ਪਟਿਆਲਾ ਦੇ ਇੱਕ ਦਫ਼ਤਰ ਵਿੱਚ ਹਰ ਅੱਖਰ ਨੂੰ alphabet ਵਿੱਚ 4 ਥਾਵਾਂ ਅੱਗੇ ਕੀਤਾ ਜਾਂਦਾ ਹੈ ਅਤੇ Z ਤੋਂ ਬਾਅਦ A ਆਉਂਦਾ ਹੈ। KIRAN ਦੀ ਥਾਂ ਕਿਹੜਾ label ਆਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "OMVER"
+        },
+        {
+          "label": "B",
+          "text": "OMVEQ"
+        },
+        {
+          "label": "C",
+          "text": "GENWJ"
+        },
+        {
+          "label": "D",
+          "text": "NLUDQ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਹਰ ਅੱਖਰ ਵਿੱਚ 4 ਜੋੜੋ: K→O, I→M, R→V, A→E, N→R। code OMVER ਹੈ।"
+    },
+    {
+      "id": "04-023",
+      "number": 23,
+      "question": "ਪੰਜ ਅੱਖਰਾਂ ਵਾਲੇ badge ਵਿੱਚ ਖੱਬੇ ਤੋਂ i=1 ਗਿਣ ਕੇ ਥਾਂ i ਦੀ shift 2i ਹੈ। NEPAL ਦਾ badge code ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "PIVIV"
+        },
+        {
+          "label": "B",
+          "text": "OGSEQ"
+        },
+        {
+          "label": "C",
+          "text": "PGRCN"
+        },
+        {
+          "label": "D",
+          "text": "XMVEN"
+        }
+      ],
+      "answer": "A",
+      "explanation": "shifts +2,+4,+6,+8,+10 ਲਾਓ। NEPAL ਤੋਂ PIVIV ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-024",
+      "number": 24,
+      "question": "ਹਰਪ੍ਰੀਤ ਪੂਰਾ ਨਾਂ NABHA ਸੱਜੇ ਤੋਂ ਖੱਬੇ ਲਿਖ ਕੇ ਸੰਭਾਲਦਾ ਹੈ ਅਤੇ ਹਰ ਅੱਖਰ ਰੱਖਦਾ ਹੈ। ਕੀ ਸੰਭਾਲਿਆ ਜਾਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ABHAN"
+        },
+        {
+          "label": "B",
+          "text": "ANBHA"
+        },
+        {
+          "label": "C",
+          "text": "AHBNA"
+        },
+        {
+          "label": "D",
+          "text": "AHBAN"
+        }
+      ],
+      "answer": "D",
+      "explanation": "NABHA ਨੂੰ ਆਖ਼ਰੀ ਅੱਖਰ ਤੋਂ ਪਹਿਲੇ ਵੱਲ ਪੜ੍ਹੋ: A-H-B-A-N।"
+    },
+    {
+      "id": "04-025",
+      "number": 25,
+      "question": "ਪੰਜ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਲਈ ਦੋਵੇਂ ਸਿਰਿਆਂ ਦੇ ranks ਦਾ ਗੁਣਾ ਕਰੋ, ਵਿਚਕਾਰਲੇ ਤਿੰਨ ranks ਜੋੜੋ ਅਤੇ ਸ਼ਬਦ ਦੀ ਲੰਬਾਈ ਘਟਾਓ। FORTS ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "167"
+        },
+        {
+          "label": "B",
+          "text": "73"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "162"
+        }
+      ],
+      "answer": "D",
+      "explanation": "6×19 + (15+18+20) - 5 = 162 ਕੱਢੋ। ਸਿਰਫ਼ ਦੋਵੇਂ ਸਿਰਿਆਂ ਦੇ ranks ਦਾ ਗੁਣਾ ਕਰੋ।"
+    }
+  ]
+}

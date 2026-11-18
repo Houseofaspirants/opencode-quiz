@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 5,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-101",
+      "number": 101,
+      "question": "Fixed codes ignore order: “books inspire minds” = “qa ve lu”; “stories inspire children” = “ve ro na”; “books delight children” = “qa mi na”. Which extra coded sentence is consistent with all three?",
+      "options": [
+        {
+          "label": "A",
+          "text": "stories delight minds = ro na lu"
+        },
+        {
+          "label": "B",
+          "text": "stories delight minds = ro mi lu"
+        },
+        {
+          "label": "C",
+          "text": "books inspire children = qa ve ro"
+        },
+        {
+          "label": "D",
+          "text": "children delight books = mi lu qa"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Elimination gives stories=ro, delight=mi and minds=lu. Thus ro mi lu is the consistent extra code."
+    },
+    {
+      "id": "04-102",
+      "number": 102,
+      "question": "A label stores the complete reversal of BANUR. Which letter occupies the second position from the LEFT in the stored label?",
+      "options": [
+        {
+          "label": "A",
+          "text": "R"
+        },
+        {
+          "label": "B",
+          "text": "N"
+        },
+        {
+          "label": "C",
+          "text": "U"
+        },
+        {
+          "label": "D",
+          "text": "A"
+        }
+      ],
+      "answer": "C",
+      "explanation": "BANUR reverses to RUNAB. Its second letter from the left is U."
+    },
+    {
+      "id": "04-103",
+      "number": 103,
+      "question": "Each word has a fixed, distinct code and order is arbitrary. “mela starts early” = “ka ri so”; “mela starts tomorrow” = “ri ka tu”; “early trains arrive” = “so ne pa”. How many different tokens can individually represent “starts” from these statements?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Mela and starts share the unresolved set ka,ri. Nothing separates those two words, so starts has two possible tokens."
+    },
+    {
+      "id": "04-104",
+      "number": 104,
+      "question": "Use row then column. Columns 0,1,2; row 0=K,A,R; row 1=N,A,L; row 2=R,K,A. Decode 21-22-02-10-01-12, then exchange the first and last decoded letters. Which final string results?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LARNKA"
+        },
+        {
+          "label": "B",
+          "text": "KALNAR"
+        },
+        {
+          "label": "C",
+          "text": "KARNAL"
+        },
+        {
+          "label": "D",
+          "text": "LARNAK"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The coordinates first give KARNAL. Exchanging only its endpoint letters gives LARNAK."
+    },
+    {
+      "id": "04-105",
+      "number": 105,
+      "question": "A naming cycle is TRAIN→BUS, BUS→TAXI, TAXI→TRAIN. Each of two clerks applies the naming rule once to the label received. Starting from the real item TAXI, what label does the second clerk return?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TRAIN"
+        },
+        {
+          "label": "B",
+          "text": "CAR"
+        },
+        {
+          "label": "C",
+          "text": "TAXI"
+        },
+        {
+          "label": "D",
+          "text": "BUS"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The two required steps are TAXI→TRAIN→BUS. The second clerk returns BUS."
+    },
+    {
+      "id": "04-106",
+      "number": 106,
+      "question": "In an eight-letter word, positions 1 and 8 exchange, 2 and 7 exchange, while positions 3–6 stay fixed. Which code results from JALANDAR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "JALANDRA"
+        },
+        {
+          "label": "B",
+          "text": "RALANDAJ"
+        },
+        {
+          "label": "C",
+          "text": "RAALNDAJ"
+        },
+        {
+          "label": "D",
+          "text": "RADNALAJ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Only the outer two pairs change. R,A remain at the front, LAND stays in the middle, and A,J finish the code: RALANDAJ."
+    },
+    {
+      "id": "04-107",
+      "number": 107,
+      "question": "Under a fixed +6 shift, the incomplete name H?RI becomes NGXO. Which letter is missing in the original?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A"
+        },
+        {
+          "label": "B",
+          "text": "Z"
+        },
+        {
+          "label": "C",
+          "text": "G"
+        },
+        {
+          "label": "D",
+          "text": "B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The second coded letter G has rank 7. Undo +6: 7-6=1=A."
+    },
+    {
+      "id": "04-108",
+      "number": 108,
+      "question": "Successive letters move forward by the first five primes: 2,3,5,7,11. Which code belongs to DIWAS?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ELBHB"
+        },
+        {
+          "label": "B",
+          "text": "FLBHD"
+        },
+        {
+          "label": "C",
+          "text": "FMCIC"
+        },
+        {
+          "label": "D",
+          "text": "FLBHB"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Apply +2,+3,+5,+7,+11, wrapping after Z. DIWAS becomes FLBHD."
+    },
+    {
+      "id": "04-109",
+      "number": 109,
+      "question": "A five-letter rule maps input positions to output positions as follows: 1→3, 2→5, 3→1, 4→2, 5→4. Which complete output corresponds to MEHAR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HAMER"
+        },
+        {
+          "label": "B",
+          "text": "HRMEA"
+        },
+        {
+          "label": "C",
+          "text": "HAMRE"
+        },
+        {
+          "label": "D",
+          "text": "EAMRH"
+        }
+      ],
+      "answer": "C",
+      "explanation": "These arrows specify destinations, not a reading order. Filling output places 1–5 gives H,A,M,R,E, or HAMRE."
+    },
+    {
+      "id": "04-110",
+      "number": 110,
+      "question": "A mixed code uses P→5, 5→#, #→R, R→8. Replace each ORIGINAL character exactly once. What is the code of P5#R?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5#R8"
+        },
+        {
+          "label": "B",
+          "text": "#R88"
+        },
+        {
+          "label": "C",
+          "text": "8#R8"
+        },
+        {
+          "label": "D",
+          "text": "5#88"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Apply one substitution per original position, without recoding the results. P,5,#,R become 5,#,R,8."
+    },
+    {
+      "id": "04-111",
+      "number": 111,
+      "question": "The rule +1,-2 alternates within EACH word and restarts after a space. What is the code for SAT PAL?",
+      "options": [
+        {
+          "label": "A",
+          "text": "TYU QYM"
+        },
+        {
+          "label": "B",
+          "text": "TYU QBM"
+        },
+        {
+          "label": "C",
+          "text": "TYU NBI"
+        },
+        {
+          "label": "D",
+          "text": "TBU QBM"
+        }
+      ],
+      "answer": "A",
+      "explanation": "SAT uses +1,-2,+1 to become TYU. Restart the same shifts for PAL to get QYM, giving TYU QYM."
+    },
+    {
+      "id": "04-112",
+      "number": 112,
+      "question": "Codes are fixed, one-to-one and unordered. “safe roads save lives” = “an bo ce du”; “safe buses save time” = “an ef ce gi”; “roads need time” = “bo ha gi”; “lives need care” = “du ha jo”. Which code set represents “buses care roads”?",
+      "options": [
+        {
+          "label": "A",
+          "text": "gi jo bo"
+        },
+        {
+          "label": "B",
+          "text": "ef ha bo"
+        },
+        {
+          "label": "C",
+          "text": "ef jo du"
+        },
+        {
+          "label": "D",
+          "text": "ef jo bo"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The first and third lines give roads=bo; the second and third give time=gi, so buses=ef. The last line gives care=jo, producing ef jo bo."
+    },
+    {
+      "id": "04-113",
+      "number": 113,
+      "question": "A code is 3 times the number of vowels plus the alphabet-rank sum of consonants. Count repeated occurrences. What is the code for KAPURTHALA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "97"
+        },
+        {
+          "label": "B",
+          "text": "109"
+        },
+        {
+          "label": "C",
+          "text": "106"
+        },
+        {
+          "label": "D",
+          "text": "94"
+        }
+      ],
+      "answer": "A",
+      "explanation": "There are four vowels, contributing 12. Consonants K,P,R,T,H,L sum to 85, so the code is 97."
+    },
+    {
+      "id": "04-114",
+      "number": 114,
+      "question": "A number code moves the last digit to the front and leaves the others in order. What is the code of 50736?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35076"
+        },
+        {
+          "label": "B",
+          "text": "07365"
+        },
+        {
+          "label": "C",
+          "text": "65073"
+        },
+        {
+          "label": "D",
+          "text": "63705"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Move only the final 6 before 5073. This gives 65073."
+    },
+    {
+      "id": "04-115",
+      "number": 115,
+      "question": "A six-letter code adds triangular shifts 1,3,6,10,15,21 to successive letters. Decode the stored output KDYLXM.",
+      "options": [
+        {
+          "label": "A",
+          "text": "JASIBR"
+        },
+        {
+          "label": "B",
+          "text": "JASBIR"
+        },
+        {
+          "label": "C",
+          "text": "JASBER"
+        },
+        {
+          "label": "D",
+          "text": "JASBIQ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Subtract 1,3,6,10,15,21 position by position. The recovered letters spell JASBIR."
+    },
+    {
+      "id": "04-116",
+      "number": 116,
+      "question": "An encoder reverses a word and deletes its new first and last letters. For the seven-letter input TEACHER, which five-letter output remains?",
+      "options": [
+        {
+          "label": "A",
+          "text": "REHCA"
+        },
+        {
+          "label": "B",
+          "text": "HCAET"
+        },
+        {
+          "label": "C",
+          "text": "EHCAE"
+        },
+        {
+          "label": "D",
+          "text": "EACHE"
+        }
+      ],
+      "answer": "C",
+      "explanation": "TEACHER reverses to REHCAET. Deleting R and T leaves EHCAE."
+    },
+    {
+      "id": "04-117",
+      "number": 117,
+      "question": "A word’s code is its first two letters followed by the number of vowel occurrences. A,E,I,O,U are vowels. Select the code for ROPAR.",
+      "options": [
+        {
+          "label": "A",
+          "text": "RO1"
+        },
+        {
+          "label": "B",
+          "text": "RO3"
+        },
+        {
+          "label": "C",
+          "text": "RO2"
+        },
+        {
+          "label": "D",
+          "text": "RA2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The first two letters are RO. O and A are two vowels, giving RO2."
+    },
+    {
+      "id": "04-118",
+      "number": 118,
+      "question": "A six-letter word is first shifted by +3,-2,+3,-2,+3,-2; then each adjacent pair of coded letters is exchanged. What is the final output for MUKESH?",
+      "options": [
+        {
+          "label": "A",
+          "text": "XKHIKQ"
+        },
+        {
+          "label": "B",
+          "text": "SPCNFV"
+        },
+        {
+          "label": "C",
+          "text": "PSNCVF"
+        },
+        {
+          "label": "D",
+          "text": "SPNCVF"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The alternating shifts first give PSNCVF. Exchange pairs PS,NC,VF to get SPCNFV."
+    },
+    {
+      "id": "04-119",
+      "number": 119,
+      "question": "For original digits, add 2 to even digits and subtract 3 from odd digits, wrapping within 0–9 independently. Which string codes 907264?",
+      "options": [
+        {
+          "label": "A",
+          "text": "624486"
+        },
+        {
+          "label": "B",
+          "text": "124486"
+        },
+        {
+          "label": "C",
+          "text": "624448"
+        },
+        {
+          "label": "D",
+          "text": "624489"
+        }
+      ],
+      "answer": "A",
+      "explanation": "9,0,7,2,6,4 become 6,2,4,4,8,6. No carries are used, so the code is 624486."
+    },
+    {
+      "id": "04-120",
+      "number": 120,
+      "question": "A numeric message gives cumulative rank sums: 13,14,27,39,40. Each later total includes all earlier letters. What five-letter word does it represent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MAMKA"
+        },
+        {
+          "label": "B",
+          "text": "NANMB"
+        },
+        {
+          "label": "C",
+          "text": "MALMA"
+        },
+        {
+          "label": "D",
+          "text": "MAMLA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Successive differences are 13,1,13,12,1. These ranks spell MAMLA."
+    },
+    {
+      "id": "04-121",
+      "number": 121,
+      "question": "Base: K→%,A→3,N→8,E→7,R→9. Test original KANER and apply all actions in order: (1) if both endpoints are consonants, rotate the base code one place right; (2) if there are exactly two original vowels, replace their codes by # at their CURRENT positions; (3) if the original middle letter is a consonant, move the first code to the end. What results?",
+      "options": [
+        {
+          "label": "A",
+          "text": "%#8#9"
+        },
+        {
+          "label": "B",
+          "text": "%38#9"
+        },
+        {
+          "label": "C",
+          "text": "9%#8#"
+        },
+        {
+          "label": "D",
+          "text": "%#8#7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rotate %3879 to 9%387. The moved vowel codes become #, giving 9%#8#; moving its first code to the end yields %#8#9."
+    },
+    {
+      "id": "04-122",
+      "number": 122,
+      "question": "The key is unknown, but every letter of a word must move by the SAME cyclic shift. Which candidate can be a code of SOLAN?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AWTIA"
+        },
+        {
+          "label": "B",
+          "text": "AWUJV"
+        },
+        {
+          "label": "C",
+          "text": "AWTIO"
+        },
+        {
+          "label": "D",
+          "text": "AWTIV"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Compare position-wise differences. Only AWTIV gives +8 at every position; different shifts in one candidate disqualify it."
+    },
+    {
+      "id": "04-123",
+      "number": 123,
+      "question": "Three alphabet-opposite pairs below are correct and one is wrong. Identify the wrong pair.",
+      "options": [
+        {
+          "label": "A",
+          "text": "L→O"
+        },
+        {
+          "label": "B",
+          "text": "W→D"
+        },
+        {
+          "label": "C",
+          "text": "G→S"
+        },
+        {
+          "label": "D",
+          "text": "J→Q"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Opposite ranks must add to 27. G=7 pairs with T=20, so G→S is wrong."
+    },
+    {
+      "id": "04-124",
+      "number": 124,
+      "question": "For an even-length word, multiply each rank by its mirror partner’s rank and add, counting each mirror pair once. Which number codes AMRITSAR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "553"
+        },
+        {
+          "label": "B",
+          "text": "561"
+        },
+        {
+          "label": "C",
+          "text": "1106"
+        },
+        {
+          "label": "D",
+          "text": "99"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Mirror pairs are A–R,M–A,R–S,I–T. The sum is 1×18+13×1+18×19+9×20=553."
+    },
+    {
+      "id": "04-125",
+      "number": 125,
+      "question": "Each stored value is the ordinary rank of a letter minus the rank of the preceding letter; the first value is the first letter’s ordinary rank. What sequence stores PATNA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16, -15, 19, 6, -13"
+        },
+        {
+          "label": "B",
+          "text": "16, 15, 19, 6, 13"
+        },
+        {
+          "label": "C",
+          "text": "16, 1, 20, 14, 1"
+        },
+        {
+          "label": "D",
+          "text": "16, -15, 19, -6, -13"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Use signed differences: 16,1-16,20-1,14-20,1-14. The groups are 16, -15, 19, -6, -13."
+    }
+  ]
+}

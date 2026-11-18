@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 4,
+    "title": "Coding and Decoding"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-051",
+      "number": 51,
+      "question": "A filing code places all letters in descending alphabetical order, retaining duplicates. Which filing code belongs to AMBALA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "AAABLM"
+        },
+        {
+          "label": "B",
+          "text": "MLBAAA"
+        },
+        {
+          "label": "C",
+          "text": "MLABAA"
+        },
+        {
+          "label": "D",
+          "text": "MLBAA"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Arrange M,L,B,A,A,A from highest rank to lowest. The code is MLBAAA."
+    },
+    {
+      "id": "04-052",
+      "number": 52,
+      "question": "A fixed mapping allows two letters to share a code: P→#, Q→#, R→@, S→7. How many different three-letter originals have code #@#?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Each # can independently be P or Q; @ must be R. Thus 2×1×2=4 originals are possible."
+    },
+    {
+      "id": "04-053",
+      "number": 53,
+      "question": "A three-letter code is (sum of ranks)² minus the sum of their squares. What number represents JET?",
+      "options": [
+        {
+          "label": "A",
+          "text": "525"
+        },
+        {
+          "label": "B",
+          "text": "350"
+        },
+        {
+          "label": "C",
+          "text": "700"
+        },
+        {
+          "label": "D",
+          "text": "1225"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use 2(ab+bc+ac): 2×(10×5+5×20+10×20)=700. This avoids squaring 35."
+    },
+    {
+      "id": "04-054",
+      "number": 54,
+      "question": "A numeric code writes twice each ordinary alphabet rank, as separate groups. Which sequence represents BINA?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4-16-28-2"
+        },
+        {
+          "label": "B",
+          "text": "4-18-28-2"
+        },
+        {
+          "label": "C",
+          "text": "4-18-26-2"
+        },
+        {
+          "label": "D",
+          "text": "2-9-14-1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Double 2,9,14,1 to obtain 4-18-28-2."
+    },
+    {
+      "id": "04-055",
+      "number": 55,
+      "question": "For a three-digit number abc, its code is a×c+b². Which listed number has code 34?",
+      "options": [
+        {
+          "label": "A",
+          "text": "526"
+        },
+        {
+          "label": "B",
+          "text": "624"
+        },
+        {
+          "label": "C",
+          "text": "352"
+        },
+        {
+          "label": "D",
+          "text": "425"
+        }
+      ],
+      "answer": "A",
+      "explanation": "526 gives 5×6+2²=34. The other codes are 31,24 and 28."
+    },
+    {
+      "id": "04-056",
+      "number": 56,
+      "question": "Base: I→3, A→6, M→%, 2→K, 7→@. Test original input I2M7A. In order: if the first character is a vowel, replace its code by #; if the last character is a vowel, exchange the CURRENT endpoint codes; finally replace codes of original even digits by $. What is the result?",
+      "options": [
+        {
+          "label": "A",
+          "text": "#$%@6"
+        },
+        {
+          "label": "B",
+          "text": "6$%@3"
+        },
+        {
+          "label": "C",
+          "text": "6K%@#"
+        },
+        {
+          "label": "D",
+          "text": "6$%@#"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Start with 3K%@6; first get #K%@6, then 6K%@#, then replace 2’s code. The final result is 6$%@#."
+    },
+    {
+      "id": "04-057",
+      "number": 57,
+      "question": "Fixed word codes ignore token order: “canals bring water” = “de hu pa”; “rivers carry water” = “jo pa si”; “canals carry crops” = “hu si ve”. A clerk records “rivers bring crops” as “jo hu ve”. Which token should replace the mistaken hu?",
+      "options": [
+        {
+          "label": "A",
+          "text": "de"
+        },
+        {
+          "label": "B",
+          "text": "jo"
+        },
+        {
+          "label": "C",
+          "text": "si"
+        },
+        {
+          "label": "D",
+          "text": "pa"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The overlaps give water=pa, canals=hu and carry=si. Bring is therefore de, so replace hu with de."
+    },
+    {
+      "id": "04-058",
+      "number": 58,
+      "question": "The alphabet is numbered cyclically from L=1, M=2, through Z=15, A=16, and K=26. What are the numbers for LUCK?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1-9-18-26"
+        },
+        {
+          "label": "B",
+          "text": "1-10-17-26"
+        },
+        {
+          "label": "C",
+          "text": "1-10-18-26"
+        },
+        {
+          "label": "D",
+          "text": "12-21-3-11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Use ((ordinary rank-12) mod 26)+1. L,U,C,K become 1,10,18,26."
+    },
+    {
+      "id": "04-059",
+      "number": 59,
+      "question": "A six-letter input first swaps adjacent pairs, then rotates the resulting string one place left. The stored result is SKNRAA. What was the input?",
+      "options": [
+        {
+          "label": "A",
+          "text": "SAKNAR"
+        },
+        {
+          "label": "B",
+          "text": "SANKAR"
+        },
+        {
+          "label": "C",
+          "text": "KARSAN"
+        },
+        {
+          "label": "D",
+          "text": "ASKNRA"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Rotate SKNRAA one place right to recover ASKNRA. Swap each adjacent pair to obtain SANKAR."
+    },
+    {
+      "id": "04-060",
+      "number": 60,
+      "question": "Letters at odd places move -2; those at even places move +4. A trainee writes BALDEV→ZEJHCR. At which single place is the trainee’s code wrong?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The correct code is ZEJHCZ. Only place 6 should be Z instead of R."
+    },
+    {
+      "id": "04-061",
+      "number": 61,
+      "question": "A station’s name is stored by full reversal as ARGOM. Recover the name.",
+      "options": [
+        {
+          "label": "A",
+          "text": "MAGRO"
+        },
+        {
+          "label": "B",
+          "text": "ARGOM"
+        },
+        {
+          "label": "C",
+          "text": "MORGA"
+        },
+        {
+          "label": "D",
+          "text": "MOGRA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Reverse ARGOM once more to recover MOGRA."
+    },
+    {
+      "id": "04-062",
+      "number": 62,
+      "question": "Encoding uses +1,-2,+3,-4,+5,-6 from left to right. For NAGPUR, an operator reports OYJLAL. Which position alone requires correction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The correct code is OYJLZL: U at place 5 moves +5 to Z. Only place 5 differs."
+    },
+    {
+      "id": "04-063",
+      "number": 63,
+      "question": "Every letter of JIND moves the same positive number of places to give ONSI. What is that forward shift?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "J=10 becomes O=15, a forward shift of 5. The other three pairs confirm +5."
+    },
+    {
+      "id": "04-064",
+      "number": 64,
+      "question": "For a five-letter word, leave the first and last letters untouched and reverse only the middle three. What will the encoder produce for SIKAR?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RAKIS"
+        },
+        {
+          "label": "B",
+          "text": "SKIAR"
+        },
+        {
+          "label": "C",
+          "text": "SAKIR"
+        },
+        {
+          "label": "D",
+          "text": "SIKAR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Keep S and R fixed; reverse IKA to AKI. Join S+AKI+R = SAKIR."
+    },
+    {
+      "id": "04-065",
+      "number": 65,
+      "question": "A game’s dictionary is LEFT→RIGHT, RIGHT→BACK, BACK→FRONT, FRONT→LEFT. Which announcer’s one-step replacement violates this dictionary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "LEFT→BACK"
+        },
+        {
+          "label": "B",
+          "text": "FRONT→LEFT"
+        },
+        {
+          "label": "C",
+          "text": "RIGHT→BACK"
+        },
+        {
+          "label": "D",
+          "text": "BACK→FRONT"
+        }
+      ],
+      "answer": "A",
+      "explanation": "LEFT is assigned RIGHT after one replacement. Reaching BACK would require a second replacement, so LEFT→BACK violates the one-step rule."
+    },
+    {
+      "id": "04-066",
+      "number": 66,
+      "question": "Columns are 2,4,6 and rows are 1,3,5. Row 1: S,A,R; row 3: I,N,D; row 5: R,A,N. A pair always gives row then column. Decode 16-32-36-54.",
+      "options": [
+        {
+          "label": "A",
+          "text": "SINA"
+        },
+        {
+          "label": "B",
+          "text": "RADI"
+        },
+        {
+          "label": "C",
+          "text": "RINA"
+        },
+        {
+          "label": "D",
+          "text": "RIDA"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Using the actual labels, 16=R,32=I,36=D and 54=A. The result is RIDA."
+    },
+    {
+      "id": "04-067",
+      "number": 67,
+      "question": "A word is converted to reverse alphabet values, then each value is multiplied by its left-hand place number. No wraparound is used. Decode 9-52-57-72.",
+      "options": [
+        {
+          "label": "A",
+          "text": "RAHI"
+        },
+        {
+          "label": "B",
+          "text": "RAHJ"
+        },
+        {
+          "label": "C",
+          "text": "RAKI"
+        },
+        {
+          "label": "D",
+          "text": "IZSR"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Divide 9,52,57,72 by 1,2,3,4 to get 9,26,19,18. Subtract each from 27 to recover R,A,H,I."
+    },
+    {
+      "id": "04-068",
+      "number": 68,
+      "question": "Take alphabet opposites of FATE, reverse the four-letter result, then add +1,+2,+3,+4 from the left. Which final code is obtained?",
+      "options": [
+        {
+          "label": "A",
+          "text": "UEWQ"
+        },
+        {
+          "label": "B",
+          "text": "WHAV"
+        },
+        {
+          "label": "C",
+          "text": "VBJZ"
+        },
+        {
+          "label": "D",
+          "text": "WICY"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Opposites give UZGV; reversal gives VGZU. Adding 1,2,3,4 produces WICY."
+    },
+    {
+      "id": "04-069",
+      "number": 69,
+      "question": "A word code has two fields: the number of letters that occur exactly once, then the repeated letter with the highest alphabet rank. A letter repeated three times still counts as repeated. Code TARNTARAN.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1T"
+        },
+        {
+          "label": "B",
+          "text": "4T"
+        },
+        {
+          "label": "C",
+          "text": "0T"
+        },
+        {
+          "label": "D",
+          "text": "0R"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A occurs three times, and T,R,N each twice. No letter occurs once; the highest-ranked repeated letter is T, giving 0T."
+    },
+    {
+      "id": "04-070",
+      "number": 70,
+      "question": "Successive letters move forward by 1,3,5,7 places. Which final letter completes the code of ROPA as S R U _ (spaces separate letters)?",
+      "options": [
+        {
+          "label": "A",
+          "text": "E"
+        },
+        {
+          "label": "B",
+          "text": "G"
+        },
+        {
+          "label": "C",
+          "text": "I"
+        },
+        {
+          "label": "D",
+          "text": "H"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The fourth letter A moves +7: 1+7=8=H. The earlier shifts give S,R,U."
+    },
+    {
+      "id": "04-071",
+      "number": 71,
+      "question": "Codes are fixed, one-to-one and unordered: “young players train” = “xa bu li”; “players win medals” = “bu fo ne”; “young teams win” = “li ga fo”; “teams train daily” = “ga xa ru”. Remove the code for “medals” from the code set for “medals young daily”. Which pair remains?",
+      "options": [
+        {
+          "label": "A",
+          "text": "li ru"
+        },
+        {
+          "label": "B",
+          "text": "ne ru"
+        },
+        {
+          "label": "C",
+          "text": "li ga"
+        },
+        {
+          "label": "D",
+          "text": "xa ru"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Elimination gives young=li, teams=ga, train=xa and daily=ru. Removing medals leaves the pair li ru."
+    },
+    {
+      "id": "04-072",
+      "number": 72,
+      "question": "Codes distinguish case: a→%, A→7, m→2, M→#. Which code represents aMA exactly as written?",
+      "options": [
+        {
+          "label": "A",
+          "text": "%27"
+        },
+        {
+          "label": "B",
+          "text": "%#%"
+        },
+        {
+          "label": "C",
+          "text": "%#7"
+        },
+        {
+          "label": "D",
+          "text": "7#7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Read case as well as letter identity: a→%, M→#, A→7. The code is %#7."
+    },
+    {
+      "id": "04-073",
+      "number": 73,
+      "question": "An eight-letter code alternates two fixed shifts. MARIGOLD becomes PZUHJNOC. Using those shifts, encode CHANDPUR and report only places 2,4,6,8.",
+      "options": [
+        {
+          "label": "A",
+          "text": "GMSQ"
+        },
+        {
+          "label": "B",
+          "text": "GMOQ"
+        },
+        {
+          "label": "C",
+          "text": "GMOR"
+        },
+        {
+          "label": "D",
+          "text": "KQSU"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The example gives +3,-1 alternately. The requested even places come from H,N,P,R shifted -1, giving GMOQ."
+    },
+    {
+      "id": "04-074",
+      "number": 74,
+      "question": "A uniform +9 encoder is applied three times to the same five-letter string. Starting with DANCE, what is the final string?",
+      "options": [
+        {
+          "label": "A",
+          "text": "VSFUW"
+        },
+        {
+          "label": "B",
+          "text": "EBODF"
+        },
+        {
+          "label": "C",
+          "text": "MJWLN"
+        },
+        {
+          "label": "D",
+          "text": "DANCE"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Three applications give +27, equivalent to +1 after a full alphabet cycle. DANCE becomes EBODF."
+    },
+    {
+      "id": "04-075",
+      "number": 75,
+      "question": "For a four-letter word, the code is the sum of ranks at odd places minus the sum at even places. Find the code of KOTA.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "-15"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Odd places give K+T=31; even places give O+A=16. The code is 31-16=15."
+    }
+  ]
+}

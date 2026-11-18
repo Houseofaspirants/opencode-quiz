@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 4,
+    "title": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "04-126",
+      "number": 126,
+      "question": "code ਤੈਅ, ਇੱਕ-ਤੋਂ-ਇੱਕ ਅਤੇ ਬਿਨਾਂ ਤੈਅ ਕ੍ਰਮ ਦੇ ਹੈ: “bright stars guide sailors” = “ab ef cd gh”; “stars guide travellers safely” = “cd gh ij kl”; “bright lamps shine safely” = “ab mn op kl”; “lamps guide ships” = “mn gh qr”। “stars” ਦਾ token ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ij"
+        },
+        {
+          "label": "B",
+          "text": "cd"
+        },
+        {
+          "label": "C",
+          "text": "ef"
+        },
+        {
+          "label": "D",
+          "text": "gh"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਪਹਿਲੀਆਂ ਦੋ ਲਾਈਨਾਂ ਤੋਂ stars ਅਤੇ guide ਲਈ cd,gh ਬਚਦੇ ਹਨ। ਚੌਥੀ ਲਾਈਨ ਦਾ ਪਹਿਲੀ ਨਾਲ ਇਕੱਲਾ ਸਾਂਝਾ ਸ਼ਬਦ guide ਹੈ, ਇਸ ਲਈ guide=gh ਅਤੇ stars=cd।"
+    },
+    {
+      "id": "04-127",
+      "number": 127,
+      "question": "MEENA, MEHAR, MEET, MEGHA ਨੂੰ alphabet ਕ੍ਰਮ ਵਿੱਚ ਲਿਖੋ। ਹਰ code ਵਿੱਚ ਪਹਿਲਾ ਅੱਖਰ, sorted list ਵਿੱਚ 1 ਤੋਂ ਗਿਣੀ ਉਸ ਦੀ ਥਾਂ ਅਤੇ ਫਿਰ ਆਖ਼ਰੀ ਅੱਖਰ -1 ਕਰਕੇ ਲਿਖਦੇ ਹਨ। MEENA ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M1Z"
+        },
+        {
+          "label": "B",
+          "text": "M2Z"
+        },
+        {
+          "label": "C",
+          "text": "M3Z"
+        },
+        {
+          "label": "D",
+          "text": "M1B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਕ੍ਰਮ MEENA,MEET,MEGHA,MEHAR ਹੈ। MEENA ਪਹਿਲਾਂ ਹੈ ਅਤੇ ਆਖ਼ਰੀ A ਪਿੱਛੇ ਜਾ ਕੇ Z ਬਣਦਾ ਹੈ, ਇਸ ਲਈ M1Z ਹੈ।"
+    },
+    {
+      "id": "04-128",
+      "number": 128,
+      "question": "ਸ਼ਬਦ ਉੱਤੇ ਖੱਬੇ ਤੋਂ +2,-3 ਵਾਰੀ-ਵਾਰੀ ਲੱਗਦੇ ਹਨ। ਫਿਰ code ਨੂੰ ਸੱਜੇ ਤੋਂ ਖੱਬੇ ਪੜ੍ਹ ਕੇ ਉਸ ਦੇ ਆਖ਼ਰੀ ਦੋ ਅੱਖਰ ਬਦਲਦੇ ਹਨ। DEVINDER ਤੋਂ ਕਿਹੜੀ ਆਖ਼ਰੀ string ਬਣੇਗੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "FBXFPAGO"
+        },
+        {
+          "label": "B",
+          "text": "OGAPFXBF"
+        },
+        {
+          "label": "C",
+          "text": "TBFKKSGA"
+        },
+        {
+          "label": "D",
+          "text": "OGAPFXFB"
+        }
+      ],
+      "answer": "D",
+      "explanation": "shift ਤੋਂ ਬਾਅਦ FBXFPAGO ਹੈ। ਇਸ ਨੂੰ ਉਲਟ ਕੇ ਸਿਰਫ਼ ਆਖ਼ਰੀ ਜੋੜਾ ਬਦਲਣ ਨਾਲ OGAPFXFB ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-129",
+      "number": 129,
+      "question": "code ਦੇ ਦੋ ਪੜਾਅ ਹਨ: ਪੂਰਾ ਸ਼ਬਦ ਉਲਟੋ; ਫਿਰ ਉਲਟੇ ਸ਼ਬਦ ਦੇ ਹਰ ਸਵਰ ਨੂੰ +2 ਅਤੇ ਹਰ ਵਿਅੰਜਨ ਨੂੰ -1 ਕਰੋ। A,E,I,O,U ਸਵਰ ਮੰਨ ਕੇ EDUCATE ਦਾ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "GCWBCSG"
+        },
+        {
+          "label": "B",
+          "text": "GVCEWFG"
+        },
+        {
+          "label": "C",
+          "text": "GSCBWCG"
+        },
+        {
+          "label": "D",
+          "text": "DVZETFD"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਉਲਟ ਕੇ ETACUDE ਬਣਾਓ ਅਤੇ ਇਨ੍ਹਾਂ ਅੱਖਰਾਂ ਨੂੰ ਪਛਾਣੋ। E,A,U,E ਨੂੰ +2 ਅਤੇ T,C,D ਨੂੰ -1 ਕਰਨ ਨਾਲ GSCBWCG ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-130",
+      "number": 130,
+      "question": "ਹਰ ਥਾਂ ਉੱਤੇ ਅਸਲ ਅੱਖਰ ਨੂੰ ਉਸ ਸਮੇਂ ਤੱਕ ਆਏ ਸਵਰਾਂ ਦੀ ਗਿਣਤੀ ਜਿੰਨੀਆਂ ਥਾਵਾਂ ਅੱਗੇ ਕਰੋ; ਮੌਜੂਦਾ ਅੱਖਰ ਵੀ ਗਿਣੋ। A,E,I,O,U ਸਵਰ ਹਨ। BIKRAM ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BJLSBN"
+        },
+        {
+          "label": "B",
+          "text": "CJLSCO"
+        },
+        {
+          "label": "C",
+          "text": "BJMSCO"
+        },
+        {
+          "label": "D",
+          "text": "BJLSCO"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਹੁਣ ਤੱਕ ਆਏ ਸਵਰਾਂ ਦੀਆਂ ਗਿਣਤੀਆਂ 0,1,1,1,2,2 ਹਨ। BIKRAM ਉੱਤੇ ਇਹ shifts ਲਾ ਕੇ BJLSCO ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-131",
+      "number": 131,
+      "question": "ਸ਼ਬਦ ਦਾ code ਹਰ ਵੱਖਰੇ ਅੱਖਰ ਨੂੰ ਸਿਰਫ਼ ਇੱਕ ਵਾਰ ਲੈ ਕੇ (ਅੱਖਰ ਦਾ rank × ਉਸ ਦੀ ਗਿਣਤੀ) ਦਾ ਜੋੜ ਅਤੇ ਵੱਖਰੇ ਅੱਖਰਾਂ ਦੀ ਗਿਣਤੀ ਦਾ ਵਰਗ ਜੋੜ ਕੇ ਬਣਦਾ ਹੈ। MALERKOTLA ਦਾ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "172"
+        },
+        {
+          "label": "B",
+          "text": "116"
+        },
+        {
+          "label": "C",
+          "text": "208"
+        },
+        {
+          "label": "D",
+          "text": "159"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਵੱਖਰੇ ਅੱਖਰਾਂ ਲਈ rank × ਗਿਣਤੀ ਦਾ ਜੋੜ ਆਮ ਕੁੱਲ ਜੋੜ 108 ਦੇ ਬਰਾਬਰ ਹੈ। ਵੱਖਰੇ ਅੱਖਰ 8 ਹਨ, ਇਸ ਲਈ 8² ਜੋੜ ਕੇ 172 ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-132",
+      "number": 132,
+      "question": "ਨੌਂ ਅੱਖਰਾਂ ਦੇ input ਨੂੰ ਤਿੰਨ-ਤਿੰਨ ਦੇ blocks ਵਿੱਚ ਵੰਡ ਕੇ blocks ਨੂੰ ਉਲਟੇ ਬਿਨਾਂ 2,3,1 ਦੇ ਕ੍ਰਮ ਵਿੱਚ ਲਿਖਦੇ ਹਨ। output JALANDHAR ਹੋਵੇ ਤਾਂ input ਕਿਹੜਾ ਸੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "JALHARAND"
+        },
+        {
+          "label": "B",
+          "text": "HARANDJAL"
+        },
+        {
+          "label": "C",
+          "text": "ANDHARJAL"
+        },
+        {
+          "label": "D",
+          "text": "HARJALAND"
+        }
+      ],
+      "answer": "D",
+      "explanation": "output ਦੇ blocks JAL|AND|HAR ਅਸਲ blocks 2,3,1 ਹਨ। ਵਾਪਸ HAR|JAL|AND ਕਰਨ ਨਾਲ HARJALAND ਬਣਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-133",
+      "number": 133,
+      "question": "ਇੱਕ sports camp ਵਿੱਚ ਅਸਲ CAP ਦਾ ਨਾਂ SHOE, SHOE ਦਾ BELT ਅਤੇ BELT ਦਾ CAP ਹੈ। code ਸ਼ਬਦ BELT ਕਿਸ ਅਸਲ ਚੀਜ਼ ਨੂੰ ਦਰਸਾਉਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "BELT"
+        },
+        {
+          "label": "B",
+          "text": "CAP"
+        },
+        {
+          "label": "C",
+          "text": "SOCK"
+        },
+        {
+          "label": "D",
+          "text": "SHOE"
+        }
+      ],
+      "answer": "D",
+      "explanation": "code BELT ਉੱਤੇ ਮੁੱਕਣ ਵਾਲਾ ਤੀਰ ਲੱਭੋ: ਅਸਲ SHOE→BELT। ਇਸ ਲਈ ਅਸਲ ਚੀਜ਼ SHOE ਹੈ।"
+    },
+    {
+      "id": "04-134",
+      "number": 134,
+      "question": "ਇੱਕ device ਹਰ ਵਾਰ ਦਬਾਉਣ ਉੱਤੇ ਆਪਣੇ input ਨੂੰ ਇੱਕ ਵਾਰ ਉਲਟਦਾ ਹੈ। NURPUR ਉੱਤੇ ਤਿੰਨ ਵਾਰ ਦਬਾਉਣ ਤੋਂ ਬਾਅਦ ਕਿਹੜੀ string ਦਿਖੇਗੀ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "RUPRUN"
+        },
+        {
+          "label": "B",
+          "text": "RUPNUR"
+        },
+        {
+          "label": "C",
+          "text": "RURPUN"
+        },
+        {
+          "label": "D",
+          "text": "NURPUR"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਦੋ ਵਾਰ ਉਲਟਣ ਨਾਲ ਅਸਲ ਰੂਪ ਵਾਪਸ ਆ ਜਾਂਦਾ ਹੈ; ਤੀਜੀ ਵਾਰ ਇੱਕ ਉਲਟਾ ਰੂਪ ਰਹਿੰਦਾ ਹੈ। ਇਸ ਲਈ NURPUR ਤੋਂ RUPRUN ਦਿਖੇਗਾ।"
+    },
+    {
+      "id": "04-135",
+      "number": 135,
+      "question": "ਤਿੰਨ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਦਾ code ਉਸ ਦੇ ranks ਦੇ ਗੁਣਨਫਲ ਨੂੰ ਉਨ੍ਹਾਂ ਦੇ ਮਹਾਨਤਮ ਸਾਂਝੇ ਭਾਜਕ ਨਾਲ ਵੰਡ ਕੇ ਬਣਦਾ ਹੈ। FLR ਦਾ ਅੰਕ ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1296"
+        },
+        {
+          "label": "B",
+          "text": "216"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ranks 6,12,18 ਦਾ ਮਹਾਨਤਮ ਸਾਂਝਾ ਭਾਜਕ 6 ਹੈ। code (6×12×18)÷6=216 ਹੈ।"
+    },
+    {
+      "id": "04-136",
+      "number": 136,
+      "question": "codes ਤੈਅ ਹਨ ਅਤੇ ਕ੍ਰਮ ਕੋਈ ਵੀ ਹੈ: “Aman likes chess” = “lo pa si”; “Rita likes hockey” = “tu pa ve”; “Aman plays hockey” = “lo ne ve”। ਪਹਿਲੇ ਵਾਕ ਵਿੱਚ ਦਿੱਤੀ ਖੇਡ ਦਾ token ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "si"
+        },
+        {
+          "label": "B",
+          "text": "lo"
+        },
+        {
+          "label": "C",
+          "text": "ve"
+        },
+        {
+          "label": "D",
+          "text": "pa"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਸਾਂਝੇ ਜੋੜਿਆਂ ਤੋਂ Aman=lo ਅਤੇ likes=pa ਹਨ। ਪਹਿਲੇ ਵਾਕ ਦਾ ਬਚਿਆ ਸ਼ਬਦ chess ਦਾ code si ਹੈ।"
+    },
+    {
+      "id": "04-137",
+      "number": 137,
+      "question": "1 ਤੋਂ 25 ਵਿਚਕਾਰ ਦੀ ਇੱਕ nonzero ਅੱਗੇ ਵਾਲੀ fixed shift ਦੋ ਵਾਰ ਲਾਉਣ ਨਾਲ ਹਰ ਅੱਖਰ ਆਪਣੀ ਅਸਲ ਥਾਂ ਵਾਪਸ ਆ ਜਾਂਦਾ ਹੈ। ਹਰ ਵਾਰ ਕਿੰਨੀਆਂ ਥਾਵਾਂ ਅੱਗੇ ਜਾਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "C",
+      "explanation": "shift ਦਾ ਦੁੱਗਣਾ 26 ਅੱਖਰਾਂ ਦਾ ਇੱਕ ਪੂਰਾ ਚੱਕਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। ਇਸ ਲਈ shift 26÷2=13 ਹੈ।"
+    },
+    {
+      "id": "04-138",
+      "number": 138,
+      "question": "ਚਾਰ-digit label ਵਿੱਚ ਸਿਰਫ਼ ਪਹਿਲਾ ਅਤੇ ਆਖ਼ਰੀ digit ਬਦਲਦਾ ਹੈ। ਅੰਦਰਲੇ digits ਸਥਿਰ ਹਨ। 4069 ਤੋਂ ਕਿਹੜਾ label ਬਣੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9604"
+        },
+        {
+          "label": "B",
+          "text": "9064"
+        },
+        {
+          "label": "C",
+          "text": "9046"
+        },
+        {
+          "label": "D",
+          "text": "4960"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਸਿਰਿਆਂ ਦੇ 4 ਅਤੇ 9 ਬਦਲੋ ਅਤੇ ਵਿਚਕਾਰ 0 ਅਤੇ 6 ਰੱਖੋ। ਨਤੀਜਾ 9064 ਹੈ।"
+    },
+    {
+      "id": "04-139",
+      "number": 139,
+      "question": "ਇੱਕ ਸ਼ਬਦ ਨੂੰ ਇੱਕੋ fixed shift ਨਾਲ code ਕੀਤਾ ਹੈ। ਅਸਲ ਸ਼ਬਦ ਦਾ ਪਹਿਲਾ ਅੱਖਰ J ਅਤੇ ਆਖ਼ਰੀ R ਹੈ, ਜਦਕਿ code ਦਾ ਪਹਿਲਾ Q ਹੈ। code ਦਾ ਆਖ਼ਰੀ ਅੱਖਰ ਲਾਜ਼ਮੀ ਕਿਹੜਾ ਹੋਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Y"
+        },
+        {
+          "label": "B",
+          "text": "Z"
+        },
+        {
+          "label": "C",
+          "text": "X"
+        },
+        {
+          "label": "D",
+          "text": "K"
+        }
+      ],
+      "answer": "A",
+      "explanation": "J→Q ਲਈ +7 ਹੈ। ਅਸਲ ਆਖ਼ਰੀ R ਉੱਤੇ ਉਹੀ shift ਲਾਓ: 18+7=25=Y।"
+    },
+    {
+      "id": "04-140",
+      "number": 140,
+      "question": "alphabet ਦੇ ਉਲਟੇ ਅੱਖਰਾਂ ਵਾਲੀ coding ਵਿੱਚ P ਦੀ ਥਾਂ ਆਉਣ ਵਾਲੇ coded ਅੱਖਰ ਦਾ ਆਮ rank ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "P ਦਾ rank 16 ਹੈ। ਇਸ ਦੇ ਉਲਟੇ ਅੱਖਰ ਦਾ rank 27-16=11 ਹੈ, ਜੋ K ਹੈ।"
+    },
+    {
+      "id": "04-141",
+      "number": 141,
+      "question": "ਸੱਤ ਅੱਖਰਾਂ ਦੇ ਸ਼ਬਦ ਵਿੱਚ ਹਰ ਅੱਖਰ ਨੂੰ ਨੇੜਲੇ ਸਿਰੇ ਤੋਂ ਉਸ ਦੀ ਦੂਰੀ ਜਿੰਨੀਆਂ ਥਾਵਾਂ ਅੱਗੇ ਕਰੋ; ਸਿਰੇ ਵਾਲੇ ਅੱਖਰ ਦੀ ਦੂਰੀ 1 ਗਿਣੋ। code ਬਣਨ ਤੋਂ ਬਾਅਦ ਪੂਰਾ ਨਤੀਜਾ ਉਲਟੋ। RAJPURA ਦਾ ਆਖ਼ਰੀ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "HXZTMCS"
+        },
+        {
+          "label": "B",
+          "text": "SCMTXTB"
+        },
+        {
+          "label": "C",
+          "text": "BTXTMCS"
+        },
+        {
+          "label": "D",
+          "text": "ASWSLBR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਨੇੜਲੇ ਸਿਰੇ ਤੋਂ ਦੂਰੀਆਂ 1,2,3,4,3,2,1 ਹਨ। ਵਿਚਕਾਰਲਾ code SCMTXTB ਹੈ; ਉਲਟਣ ਨਾਲ BTXTMCS ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-142",
+      "number": 142,
+      "question": "ਤੈਅ mappings: A→2,B→%,C→2,D→#। pattern AB?D ਦਾ code 2%2# ਹੈ। ਦਿੱਤੀ mapping ਵਿੱਚੋਂ ਕਿੰਨੇ ਅੱਖਰ ਖਾਲੀ ਥਾਂ ਆ ਸਕਦੇ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਖਾਲੀ ਅੱਖਰ ਦਾ code 2 ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ। A ਅਤੇ C ਦੋਵੇਂ ਯੋਗ ਹਨ, ਇਸ ਲਈ ਦੋ ਸੰਭਵ ਅੱਖਰ ਹਨ।"
+    },
+    {
+      "id": "04-143",
+      "number": 143,
+      "question": "ਉਲਟੇ ਅੱਖਰਾਂ ਵਾਲੀ coding ਤੋਂ ਬਾਅਦ ਬਣੇ ਅੱਖਰਾਂ ਨੂੰ alphabet ਕ੍ਰਮ ਵਿੱਚ ਲਿਖਦੇ ਹਨ। NIMRAT ਦਾ ਕ੍ਰਮਬੱਧ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "MRNIZG"
+        },
+        {
+          "label": "B",
+          "text": "AIMNRT"
+        },
+        {
+          "label": "C",
+          "text": "GIMNRZ"
+        },
+        {
+          "label": "D",
+          "text": "ZRNMIG"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਉਲਟੇ ਅੱਖਰਾਂ ਨਾਲ MRNIZG ਬਣਦਾ ਹੈ। ਇਨ੍ਹਾਂ ਨੂੰ alphabet ਕ੍ਰਮ ਵਿੱਚ ਲਿਖਣ ਨਾਲ GIMNRZ ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-144",
+      "number": 144,
+      "question": "ਮੂਲ mapping: U→5,A→1,S→8,H→%। ਅਸਲ USHA ਜਾਂਚ ਕੇ ਸਾਰੀਆਂ ਕਾਰਵਾਈਆਂ ਕ੍ਰਮ ਨਾਲ ਲਾਓ: (1) ਸਿਰੇ ਸਵਰ ਹੋਣ ਤਾਂ ਉਨ੍ਹਾਂ ਦੇ ਉਸ ਸਮੇਂ ਵਾਲੇ codes ਬਦਲੋ; (2) ਅੰਦਰ ਕੋਈ ਅਸਲ ਵਿਅੰਜਨ ਹੋਵੇ ਤਾਂ ਆਖ਼ਰੀ code # ਕਰੋ; (3) ਅਸਲ ਪਹਿਲਾ ਅੱਖਰ U ਹੋਵੇ ਤਾਂ ਪਹਿਲਾ code @ ਕਰੋ। ਆਖ਼ਰੀ code ਲੱਭੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "@8%#"
+        },
+        {
+          "label": "B",
+          "text": "#8%@"
+        },
+        {
+          "label": "C",
+          "text": "18%#"
+        },
+        {
+          "label": "D",
+          "text": "@8%5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਮੂਲ 58%1 ਸਿਰੇ ਬਦਲ ਕੇ 18%5, ਫਿਰ 18%# ਅਤੇ ਅੰਤ ਵਿੱਚ @8%# ਬਣਦਾ ਹੈ। ਸਾਰੀਆਂ ਸ਼ਰਤਾਂ ਅਸਲ USHA ਉੱਤੇ ਜਾਂਚੀਆਂ ਹਨ।"
+    },
+    {
+      "id": "04-145",
+      "number": 145,
+      "question": "ਅੰਕੀ code ਵਿੱਚ ਹਰ ਅੱਖਰ ਲਈ 27 ਅਤੇ ਉਸ ਦੇ ਆਮ rank ਦਾ ਜੋੜ ਲਿਖਦੇ ਹਨ, ਪਰ ਪਹਿਲੀ ਵਾਰ ਤੋਂ ਬਾਅਦ ਦੁਹਰਾਇਆ ਅੱਖਰ 0 ਨਾਲ ਲਿਖਦੇ ਹਨ। MANSA ਦਾ code ਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40-28-41-46-28"
+        },
+        {
+          "label": "B",
+          "text": "40-28-41-46-0"
+        },
+        {
+          "label": "C",
+          "text": "13-1-14-19-0"
+        },
+        {
+          "label": "D",
+          "text": "40-0-41-46-0"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਪਹਿਲੀ ਵਾਰ M,A,N,S ਲਈ 40,28,41,46 ਹਨ। ਆਖ਼ਰੀ A ਦੁਹਰਾਉਂਦਾ ਹੈ, ਇਸ ਲਈ ਉਸ ਦਾ ਮੁੱਲ 0 ਹੈ।"
+    },
+    {
+      "id": "04-146",
+      "number": 146,
+      "question": "ਛੇ ਅੱਖਰਾਂ ਦੇ ਨਾਂ ਉੱਤੇ 0,+2,-2 ਦੀਆਂ shifts ਦੁਹਰਾਉਂਦੀਆਂ ਹਨ। RAVINA ਦੀਆਂ ਕਿਹੜੀਆਂ ਅਸਲ ਥਾਵਾਂ code ਵਿੱਚ ਨਹੀਂ ਬਦਲਦੀਆਂ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2,5"
+        },
+        {
+          "label": "B",
+          "text": "1,3"
+        },
+        {
+          "label": "C",
+          "text": "3,6"
+        },
+        {
+          "label": "D",
+          "text": "1,4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਸਿਰਫ਼ zero shift ਨਾਲ ਅੱਖਰ ਨਹੀਂ ਬਦਲਦਾ। ਇਸ block ਵਿੱਚ zero ਥਾਵਾਂ 1 ਅਤੇ 4 ਉੱਤੇ ਹੈ।"
+    },
+    {
+      "id": "04-147",
+      "number": 147,
+      "question": "coordinates ਵਿੱਚ ਪਹਿਲਾਂ row ਫਿਰ column ਹੈ। Matrix I: columns 0,1,2; row 0=T,A,R; row 1=N,U,P। Matrix II: columns 5,6,7; row 5=A,R,T; row 6=U,N,A। ਹਰ ਜੋੜੇ ਨੂੰ ਦੋ-digit ਅੰਕ ਮੰਨ ਕੇ ਹਰ ਅੱਖਰ ਲਈ ਸਭ ਤੋਂ ਛੋਟਾ ਉਪਲਬਧ coordinate ਲੈਣ ਨਾਲ TARAN ਦਾ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "00-01-02-01-66"
+        },
+        {
+          "label": "B",
+          "text": "00-01-02-55-10"
+        },
+        {
+          "label": "C",
+          "text": "00-01-02-01-10"
+        },
+        {
+          "label": "D",
+          "text": "57-55-56-67-66"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਸਭ ਤੋਂ ਛੋਟੀਆਂ ਥਾਵਾਂ T=00,A=01,R=02,N=10 ਹਨ। A=01 ਮੁੜ ਵਰਤ ਕੇ 00-01-02-01-10 ਮਿਲਦਾ ਹੈ।"
+    },
+    {
+      "id": "04-148",
+      "number": 148,
+      "question": "ਇੱਕ code ਸ਼ਬਦ ਦਾ ਪਹਿਲਾ ਅੱਖਰ ਆਖ਼ਰੀ ਥਾਂ ਲਿਆਉਂਦਾ ਹੈ ਅਤੇ ਬਾਕੀ ਕ੍ਰਮ ਨਹੀਂ ਬਦਲਦਾ। DHURI ਦਾ code ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HUIDR"
+        },
+        {
+          "label": "B",
+          "text": "IRUHD"
+        },
+        {
+          "label": "C",
+          "text": "HURID"
+        },
+        {
+          "label": "D",
+          "text": "IDHUR"
+        }
+      ],
+      "answer": "C",
+      "explanation": "HURI ਦਾ ਕ੍ਰਮ ਰੱਖ ਕੇ ਪਹਿਲਾ ਅੱਖਰ D ਅੰਤ ਉੱਤੇ ਜੋੜੋ। ਨਤੀਜਾ HURID ਹੈ।"
+    },
+    {
+      "id": "04-149",
+      "number": 149,
+      "question": "ਹਰ ਅੱਖਰ ਦੇ ਆਮ rank ਦਾ ਵਰਗ ਵੱਖਰੇ ਅੰਕ ਵਜੋਂ ਲਿਖਦੇ ਹਨ। ਚਾਰ ਅੱਖਰਾਂ ਦਾ ਸੁਨੇਹਾ 256-1-324-121 ਹੈ। ਇਸ ਦਾ ਅਸਲ ਸੁਨੇਹਾ ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "PARKS"
+        },
+        {
+          "label": "B",
+          "text": "PARK"
+        },
+        {
+          "label": "C",
+          "text": "QARK"
+        },
+        {
+          "label": "D",
+          "text": "PBRK"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਧਨਾਤਮਕ ਵਰਗਮੂਲ 16,1,18,11 ਹਨ। ਇਨ੍ਹਾਂ ranks ਤੋਂ P,A,R,K ਮਿਲਦੇ ਹਨ।"
+    },
+    {
+      "id": "04-150",
+      "number": 150,
+      "question": "ਇੱਕ ਤੈਅ mapping DERA→6#@8 ਅਤੇ READ→@#86 ਦਿੰਦੀ ਹੈ। AADAR ਦਾ code ਬਣਾਉਣ ਤੋਂ ਬਾਅਦ @ ਕਿੰਨੀ ਵਾਰ ਆਵੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਨਿਸ਼ਾਨ @ ਦਾ ਅੱਖਰ R ਹੈ। AADAR ਵਿੱਚ R ਇੱਕ ਵਾਰ ਹੈ, ਇਸ ਲਈ @ ਇੱਕ ਵਾਰ ਆਵੇਗਾ।"
+    }
+  ]
+}
