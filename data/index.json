@@ -3,10 +3,10 @@
   "generatedAt": "2026-11-17T05:17:18.128Z",
   "stats": {
     "subjects": 7,
-    "categories": 52,
-    "topics": 133,
-    "quizzes": 133,
-    "questions": 3098,
+    "categories": 53,
+    "topics": 139,
+    "quizzes": 139,
+    "questions": 3248,
     "studentsPracticed": 12500
   },
   "site": {
@@ -5167,6 +5167,186 @@
           "landing": "/quiz-reasoning-02-analogy-part-4"
         },
         {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 1",
+          "name": "Coding and Decoding MCQ – Part 1",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 1",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-1"
+        },
+        {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 2",
+          "name": "Coding and Decoding MCQ – Part 2",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 2",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-2"
+        },
+        {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 3",
+          "name": "Coding and Decoding MCQ – Part 3",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 3",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-3"
+        },
+        {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 4",
+          "name": "Coding and Decoding MCQ – Part 4",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 4",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-4"
+        },
+        {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 5",
+          "name": "Coding and Decoding MCQ – Part 5",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 5.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 5",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-5"
+        },
+        {
+          "id": "04 - Coding and Decoding - MCQ - EN - Part 6",
+          "name": "Coding and Decoding MCQ – Part 6",
+          "description": "",
+          "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795007178537,
+          "category": "04-coding-and-decoding",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json",
+            "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Coding and Decoding MCQ – Part 6",
+            "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-04-coding-and-decoding-part-6"
+        },
+        {
           "id": "01 - Number Series - MCQ - EN - Part 1",
           "name": "Number Series MCQ – Part 1",
           "description": "",
@@ -5794,6 +5974,195 @@
             }
           ],
           "landing": "/category-reasoning-03-verbal-classifications"
+        },
+        {
+          "id": "04-coding-and-decoding",
+          "name": "04   Coding And Decoding",
+          "folder": "04 - Coding and Decoding",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 1",
+              "name": "Coding and Decoding MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 1",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-1"
+            },
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 2",
+              "name": "Coding and Decoding MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 2",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-2"
+            },
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 3",
+              "name": "Coding and Decoding MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 3",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-3"
+            },
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 4",
+              "name": "Coding and Decoding MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 4",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-4"
+            },
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 5",
+              "name": "Coding and Decoding MCQ – Part 5",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 5.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 5",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-5"
+            },
+            {
+              "id": "04 - Coding and Decoding - MCQ - EN - Part 6",
+              "name": "Coding and Decoding MCQ – Part 6",
+              "description": "",
+              "file": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795007178537,
+              "category": "04-coding-and-decoding",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json",
+                "pa": "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Coding and Decoding MCQ – Part 6",
+                "pa": "ਕੋਡਿੰਗ ਅਤੇ ਡੀਕੋਡਿੰਗ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-04-coding-and-decoding-part-6"
+            }
+          ],
+          "landing": "/category-reasoning-04-coding-and-decoding"
         }
       ],
       "landing": "/subject-reasoning"
@@ -8799,6 +9168,30 @@
     "questions/reasoning/03 - Verbal Classifications/03 - Verbal Classifications - MCQ - EN - Part 4.json": [
       "5b221538a4802c21",
       1793647706415
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 1.json": [
+      "744edc1cc28f804e",
+      1795007178537
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 2.json": [
+      "954adc74b4667251",
+      1795007178537
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 3.json": [
+      "c1461cc031d8b562",
+      1795007178537
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 4.json": [
+      "3a885d7b06536d75",
+      1795007178537
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 5.json": [
+      "5dd52e6fb6b8f47c",
+      1795007178537
+    ],
+    "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json": [
+      "69a2d839592f43c9",
+      1795007178537
     ]
   }
 }

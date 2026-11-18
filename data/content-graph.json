@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1004,
+  "nodes": 1005,
   "edges": 9910,
   "silos": 35,
-  "clusters": 196,
+  "clusters": 203,
   "pillars": 34
  },
  "nodes": [
@@ -11710,18 +11710,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-quant-04-simplification-part-2.html",
-   "url": "/quiz-quant-04-simplification-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-quant-05-average-part-1.html",
    "url": "/quiz-quant-05-average-part-1.html",
    "type": "quiz",
@@ -11760,54 +11748,6 @@
   {
    "id": "quiz-quant-05-average-part-4.html",
    "url": "/quiz-quant-05-average-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-05-average-part-5.html",
-   "url": "/quiz-quant-05-average-part-5.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-05-average-part-6.html",
-   "url": "/quiz-quant-05-average-part-6.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-05-average-part-7.html",
-   "url": "/quiz-quant-05-average-part-7.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-quant-05-average-part-8.html",
-   "url": "/quiz-quant-05-average-part-8.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -11868,6 +11808,78 @@
   {
    "id": "quiz-reasoning-03-verbal-classifications-part-1.html",
    "url": "/quiz-reasoning-03-verbal-classifications-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-1.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-2.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-3.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-4.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-5.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-5.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-04-coding-and-decoding-part-6.html",
+   "url": "/quiz-reasoning-04-coding-and-decoding-part-6.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -33723,18 +33735,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-04-simplification-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-quant-05-average-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -33759,25 +33759,37 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-5.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-6.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-7.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-3.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-8.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-5.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-6.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -42843,6 +42855,12 @@
   },
   {
    "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "quiz-reasoning-04-coding-and-decoding-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -42856,12 +42874,6 @@
   {
    "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
    "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -74648,6 +74660,7 @@
     "category-reasoning-01-number-series.html",
     "category-reasoning-02-analogy.html",
     "category-reasoning-03-verbal-classifications.html",
+    "category-reasoning-04-coding-and-decoding.html",
     "topic-reasoning-01-number-series-part-1.html",
     "topic-reasoning-01-number-series-part-2.html",
     "topic-reasoning-01-number-series-part-3.html",
@@ -74659,7 +74672,13 @@
     "topic-reasoning-03-verbal-classifications-part-1.html",
     "topic-reasoning-03-verbal-classifications-part-2.html",
     "topic-reasoning-03-verbal-classifications-part-3.html",
-    "topic-reasoning-03-verbal-classifications-part-4.html"
+    "topic-reasoning-03-verbal-classifications-part-4.html",
+    "topic-reasoning-04-coding-and-decoding-part-1.html",
+    "topic-reasoning-04-coding-and-decoding-part-2.html",
+    "topic-reasoning-04-coding-and-decoding-part-3.html",
+    "topic-reasoning-04-coding-and-decoding-part-4.html",
+    "topic-reasoning-04-coding-and-decoding-part-5.html",
+    "topic-reasoning-04-coding-and-decoding-part-6.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
