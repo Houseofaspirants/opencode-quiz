@@ -712,33 +712,33 @@ HUBS = {
         "file": "blogs.html",
         "dir": "blogs",
         "prefix": "blog",
-        "eyebrow": "From the Desk",
-        "h1": "Preparation Blog for Punjab Aspirants",
-        "title": "Preparation Blog | House of Aspirants",
+        "eyebrow": "Topper's Diary",
+        "h1": "Topper's Diary: How I Cleared Punjab Police SI",
+        "title": "Topper's Diary - Punjab Police SI Tips | House of Aspirants",
         "description": (
-            "Preparation blog for Punjab aspirants - study habits, book notes, "
-            "mock test debriefs and honest attempts, written by the House of "
-            "Aspirants editorial team."
+            "Topper's Diary by Punjab Police SI Rank 2 (713/800): timetable, "
+            "revision, current affairs, mock tests, fitness and "
+            "mindset that took me from 613 to 713."
         ),
-        "keywords": ("exam preparation blog, Punjab exam blog, study tips "
-                     "Punjab Police, mock test debrief"),
+        "keywords": ("punjab police si preparation, topper tips, study timetable, "
+                     "exam preparation blog, Punjab exam strategy"),
         "lead": (
-            "Longer reads than a note and less formal than a strategy guide: "
-            "what a week of preparation actually looked like, what failed, what "
-            "stayed and what is worth copying."
+            "Straight from the desk of an SI Rank 2: how many hours I studied, "
+            "how I revised, what I ate, how I handled relatives and failure, "
+            "and the last-3-months plan that added 100 marks."
         ),
         "answer": (
-            "Blog posts carry the reflective side of preparation - study habit "
-            "experiments, book notes, mock test debriefs and the mistakes behind "
-            "them - written by the same editorial team that publishes the notes "
-            "and strategy guides."
+            "Topper's Diary is a first-hand preparation series by Gurpreet "
+            "Singh, Rank 2 in the Punjab Police Sub Inspector exam (713/800): "
+            "daily routine, the 1-7-30 revision rule, monthly current affairs, "
+            "previous year papers, 100 mock tests, fitness and mindset."
         ),
-        "empty_h3": "No blog post published yet",
-        "empty_p": ("First posts are being drafted from real preparation weeks. "
-                    "Until they are reviewed and published, the study guides "
-                    "carry the same material in guide form."),
+        "empty_h3": "No diary entry published yet",
+        "empty_p": ("First entries are being written from real preparation "
+                    "days. Until they are published, the study guides carry "
+                    "the same material in guide form."),
         "empty_cta": ("articles.html", "Read the study guides"),
-        "schema_hub": "Blog",
+        "schema_hub": "Topper's Diary",
     },
     "news": {
         "file": "news.html",
@@ -1144,7 +1144,7 @@ NAV_ENTRY = {                        # collection -> (English label, emoji)
     "recruitment": ("Recruitment", "\U0001f4cb"),
     "expected-mcqs": ("Expected MCQs", "\U0001f9e0"),
     "previous-year-questions": ("Previous Year Questions", "\U0001f4dc"),
-    "blogs": ("Blog", "✍️"),
+    "blogs": ("Topper's Diary", "\U0001f4d4"),
     "news": ("News", "\U0001f4f0"),
     "announcements": ("Announcements", "\U0001f4e3"),
     "pdfs": ("Free PDFs", "\U0001f4c4"),
@@ -4014,7 +4014,7 @@ EXPLORE_BY_COLL = {
     "sessions": [
         ("strategy.html", "Preparation strategy", "Turn a session into a week"),
         ("announcements.html", "Announcements", "Schedule changes land first"),
-        ("blogs.html", "Blog", "Write-ups from the week"),
+        ("blogs.html", "Topper's Diary", "How an SI Rank 2 prepared"),
     ],
     "recruitment": [
         ("punjab-exams.html", "Exam guides", "Preparation guide for every post"),
@@ -4043,7 +4043,7 @@ EXPLORE_BY_COLL = {
     ],
     "announcements": [
         ("live-sessions.html", "Live sessions", "The weekly schedule"),
-        ("blogs.html", "Blog", "What the team is writing"),
+        ("blogs.html", "Topper's Diary", "How an SI Rank 2 prepared"),
         ("news.html", "Exam news", "Official updates"),
     ],
     "pdfs": [

@@ -573,9 +573,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 4,
-      "newest": "2026-11-01",
-      "totalSize": 21758420,
+      "count": 5,
+      "newest": "2026-11-18",
+      "totalSize": 27601991,
       "languages": [
         {
           "id": "pa",
@@ -590,7 +590,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "01 - Number Series",
@@ -635,13 +635,24 @@
                 }
               ],
               "pages": 153
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test",
+              "name": "Chapter 5: Ranking and Time Sequence Test",
+              "parts": [
+                {
+                  "file": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 151
             }
           ]
         }
       ],
-      "chapters": 4,
+      "chapters": 5,
       "counts": {
-        "en": 4,
+        "en": 5,
         "pa": 0
       },
       "pages": {
@@ -2886,6 +2897,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 98,
+  "total": 99,
   "generatedBy": "scripts/study_material.py"
 }

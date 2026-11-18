@@ -276,6 +276,23 @@ const HOA = (() => {
     "Recruitment": "ਭਰਤੀ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
     "Blog": "ਬਲੌਗ",
+    "Topper's Diary": "ਟੌਪਰ ਦੀ ਡਾਇਰੀ",
+    "How I got Rank 2 in Punjab Police SI": "ਪੰਜਾਬ ਪੁਲਿਸ SI ਵਿੱਚ ਮੇਰਾ ਰੈਂਕ 2 ਕਿਵੇਂ ਆਇਆ",
+    "Real routine, real mistakes, real marks: 613 in the first attempt, 713 in the next.": "ਅਸਲੀ ਰੁਟੀਨ, ਅਸਲੀ ਗਲਤੀਆਂ, ਅਸਲੀ ਨੰਬਰ: ਪਹਿਲੀ ਵਾਰ 613, ਅਗਲੀ ਵਾਰ 713।",
+    "Read the full diary": "ਪੂਰੀ ਡਾਇਰੀ ਪੜ੍ਹੋ",
+    "From 613 to 713: my full SI plan": "613 ਤੋਂ 713: ਮੇਰੀ ਪੂਰੀ SI ਸਟ੍ਰੈਟਜੀ",
+    "Routine, revision, PYQs and mocks in one place.": "ਰੁਟੀਨ, ਰਿਵੀਜ਼ਨ, PYQ ਅਤੇ ਮੌਕ, ਸਭ ਇੱਕ ਥਾਂ।",
+    "How many hours I studied daily": "ਮੈਂ ਰੋਜ਼ ਕਿੰਨੇ ਘੰਟੇ ਪੜ੍ਹਦਾ ਸੀ",
+    "My exact timetable: six 1.5-hour shifts a day.": "ਮੇਰਾ ਪੂਰਾ ਟਾਈਮ-ਟੇਬਲ: ਰੋਜ਼ 1.5 ਘੰਟੇ ਦੀਆਂ 6 ਸ਼ਿਫਟਾਂ।",
+    "Previous papers added 100 marks": "ਪੁਰਾਣੇ ਪੇਪਰਾਂ ਨੇ 100 ਨੰਬਰ ਵਧਾਏ",
+    "What I did in the last 3 months before the exam.": "ਪੇਪਰ ਤੋਂ ਪਹਿਲਾਂ ਆਖਰੀ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਮੈਂ ਕੀ ਕੀਤਾ।",
+    "Forget what you study? Try 1-7-30": "ਪੜ੍ਹਿਆ ਭੁੱਲ ਜਾਂਦਾ ਹੈ? 1-7-30 ਅਪਣਾਓ",
+    "The revision rule behind my Rank 2.": "ਉਹ ਰਿਵੀਜ਼ਨ ਨਿਯਮ ਜਿਸ ਨਾਲ ਰੈਂਕ 2 ਆਇਆ।",
+    "Stop reading daily current affairs": "ਡੇਲੀ ਕਰੰਟ ਅਫੇਅਰਜ਼ ਪੜ੍ਹਨਾ ਬੰਦ ਕਰੋ",
+    "The monthly magazine method, revised 4-5 times.": "ਮੰਥਲੀ ਮੈਗਜ਼ੀਨ ਵਾਲਾ ਤਰੀਕਾ, 4-5 ਵਾਰ ਰਿਵੀਜ਼ਨ।",
+    "9 mistakes that cost you marks": "9 ਗਲਤੀਆਂ ਜੋ ਨੰਬਰ ਕੱਟਦੀਆਂ ਨੇ",
+    "And what to do instead of each one.": "ਅਤੇ ਹਰ ਇੱਕ ਦੀ ਥਾਂ ਕੀ ਕਰੀਏ।",
+    "Read →": "ਪੜ੍ਹੋ →",
     "News": "ਖ਼ਬਰਾਂ",
     "Announcements": "ਘੋਸ਼ਣਾਵਾਂ",
     /* Phase 4 collections */
@@ -655,6 +672,9 @@ const HOA = (() => {
         <ul class="nav-list">
           <li><a class="nav-link" data-nav="home" href="./"><span data-i18n="Home">Home</span></a></li>
           <li><a class="nav-link" data-nav="rank-2-blueprint" href="rank-2-blueprint"><span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a></li>
+          <!-- Topper's Diary: first-hand SI Rank 2 preparation posts (content/blogs),
+               promoted out of the Study menu to its own top-level door. -->
+          <li><a class="nav-link" data-nav="blogs" href="blogs"><span data-i18n="Topper's Diary">Topper's Diary</span></a></li>
 
           <!-- STUDY — learning only. Column 1 is the subject tree opening the
                Study renderer; column 2 is the material the content build
@@ -685,7 +705,7 @@ const HOA = (() => {
                 <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
                 <a data-nav="previous-year-questions" href="previous-year-questions"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
                 <a data-nav="pdfs" href="pdfs"><span data-i18n="Free PDFs">Free PDFs</span></a>
-                <a data-nav="blogs" href="blogs"><span data-i18n="Blog">Blog</span></a>
+                <a data-nav="blogs" href="blogs"><span data-i18n="Topper's Diary">Topper's Diary</span></a>
                 <a data-nav="archives" href="archives"><span data-i18n="Archives">Archives</span></a>
                 <!-- /HOA-NAV:menu -->
               </div>
@@ -776,6 +796,7 @@ const HOA = (() => {
     </div>
     <a class="mm-link" data-nav="home" href="./"><span aria-hidden="true">🏠</span> <span data-i18n="Home">Home</span></a>
     <a class="mm-link" data-nav="rank-2-blueprint" href="rank-2-blueprint"><span aria-hidden="true">🏅</span> <span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a>
+    <a class="mm-link" data-nav="blogs" href="blogs"><span aria-hidden="true">📔</span> <span data-i18n="Topper's Diary">Topper's Diary</span></a>
     <a class="mm-link" data-nav="mock" href="mock"><span aria-hidden="true">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
     <a class="mm-link" data-nav="strategy" href="strategy"><span aria-hidden="true">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
 
@@ -908,7 +929,7 @@ const HOA = (() => {
           <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
           <a href="pdfs" data-i18n="Free PDFs">Free PDFs</a>
-          <a href="blogs" data-i18n="Blog">Blog</a>
+          <a href="blogs" data-i18n="Topper's Diary">Topper's Diary</a>
           <a href="archives" data-i18n="Archives">Archives</a>
           <a href="search" data-i18n="Search">Search</a>
           <a href="author-gurpreet-singh" data-i18n="Gurpreet Singh">Gurpreet Singh</a>
@@ -1346,7 +1367,7 @@ const HOA = (() => {
       const TYPE_LABEL = {
         notes: "Study note", "current-affairs": "Current affairs",
         magazine: "Magazine issue", strategy: "Strategy",
-        sessions: "Live session", recruitment: "Recruitment", blogs: "Blog",
+        sessions: "Live session", recruitment: "Recruitment", blogs: "Topper's Diary",
         news: "News", announcements: "Announcement", guide: "Study guide",
         exam: "Exam", "personal-notes": "Personal note",
         "subject-guides": "Subject guide", "topic-guides": "Topic guide",
@@ -1355,7 +1376,7 @@ const HOA = (() => {
       };
       const TYPE_ICON = {
         notes: "📝", "current-affairs": "🗞️", magazine: "📖", strategy: "🎯",
-        sessions: "🎥", recruitment: "📋", blogs: "✍️", news: "📰",
+        sessions: "🎥", recruitment: "📋", blogs: "📔", news: "📰",
         announcements: "📣", guide: "📚", exam: "🎓",
         "personal-notes": "📓", "subject-guides": "📚", "topic-guides": "📑",
         "daily-practice": "✅", "success-stories": "🏆",
