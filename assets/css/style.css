@@ -1058,6 +1058,8 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
 }
 @media (max-width: 359px) { .action-grid { grid-template-columns: minmax(0, 1fr); } }
 @media (min-width: 760px) { .action-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
+/* Topper's Diary strip on the homepage: six posts read as two rows of three. */
+@media (min-width: 760px) { .action-grid.diary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 
 .action-card {
   display: flex; flex-direction: column; gap: 4px;
