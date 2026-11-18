@@ -2030,6 +2030,20 @@
    "hub": "archives.html"
   },
   {
+   "id": "archive-tag-mother-tongue.html",
+   "url": "/archive-tag-mother-tongue.html",
+   "type": "archive",
+   "template": "",
+   "title": "mother tongue",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [
+    "mother-tongue"
+   ],
+   "hub": "archives.html"
+  },
+  {
    "id": "archive-tag-ms-office.html",
    "url": "/archive-tag-ms-office.html",
    "type": "archive",
@@ -2600,20 +2614,6 @@
    "exams": [],
    "tags": [
     "punjabi-vyakaran"
-   ],
-   "hub": "archives.html"
-  },
-  {
-   "id": "archive-tag-punjabi.html",
-   "url": "/archive-tag-punjabi.html",
-   "type": "archive",
-   "template": "",
-   "title": "punjabi",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [
-    "punjabi"
    ],
    "hub": "archives.html"
   },
@@ -4182,7 +4182,7 @@
     "Punjab PCS"
    ],
    "tags": [
-    "punjabi",
+    "mother tongue",
     "memory",
     "study routine",
     "revision"
@@ -8545,7 +8545,7 @@
     "Punjab PCS"
    ],
    "tags": [
-    "punjabi",
+    "mother tongue",
     "memory",
     "study routine",
     "revision"
@@ -22664,6 +22664,48 @@
    "weight": 1
   },
   {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "archives.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "blog-read-in-your-mother-tongue.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "current-affairs.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "punjab-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "quiz.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-tag-mother-tongue.html",
+   "to": "study-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
    "from": "archive-tag-ms-office.html",
    "to": "archives.html",
    "rel": "contextual",
@@ -24586,48 +24628,6 @@
   {
    "from": "archive-tag-punjabi-vyakaran.html",
    "to": "tguide-punjabi-grammar-muhavare-akhan-samas.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "archives.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "blog-read-in-your-mother-tongue.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "current-affairs.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "punjab-exams.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "quiz.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-punjabi.html",
-   "to": "study-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -27585,6 +27585,12 @@
   },
   {
    "from": "archives.html",
+   "to": "archive-tag-mother-tongue.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "archive-tag-ms-office.html",
    "rel": "contextual",
    "weight": 1
@@ -27826,12 +27832,6 @@
   {
    "from": "archives.html",
    "to": "archive-tag-punjabi-vyakaran.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archives.html",
-   "to": "archive-tag-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -34737,7 +34737,7 @@
   },
   {
    "from": "blog-read-in-your-mother-tongue.html",
-   "to": "archive-tag-punjabi.html",
+   "to": "archive-tag-mother-tongue.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -52947,7 +52947,7 @@
   },
   {
    "from": "pa/blog-read-in-your-mother-tongue.html",
-   "to": "archive-tag-punjabi.html",
+   "to": "archive-tag-mother-tongue.html",
    "rel": "contextual",
    "weight": 1
   },
