@@ -236,7 +236,7 @@
     );
   const LABEL = {
     notes: "Study note", "current-affairs": "Current affairs",
-    magazine: "Magazine issue", strategy: "Strategy", sessions: "Live session",
+    magazine: "Magazine issue", strategy: "Exam guide", sessions: "Live session",
     recruitment: "Recruitment", blogs: "Blog", news: "News",
     announcements: "Announcement", "personal-notes": "Personal note",
     "subject-guides": "Subject guide", "topic-guides": "Topic guide",

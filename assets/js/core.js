@@ -271,7 +271,7 @@ const HOA = (() => {
     "Current Affairs": "ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Monthly Magazine": "ਮਹੀਨਾਵਾਰੀ ਮੈਗਜ਼ੀਨ",
     "Monthly Current Affairs": "ਮਹੀਨਾਵਾਰ ਕਰੰਟ ਅਫੇਅਰਜ਼",
-    "Preparation Strategy": "ਤਿਆਰੀ ਰਣਨੀਤੀ",
+    "Exam Pattern & Syllabus": "ਪ੍ਰੀਖਿਆ ਪੈਟਰਨ ਤੇ ਸਿਲੇਬਸ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
@@ -741,10 +741,10 @@ const HOA = (() => {
           <!-- THE REMAINING SYSTEMS. Each gets exactly one entry at the top
                level — no destination appears in this list twice, and none of
                them is nested under Study or Practice. Mock Tests and
-               Preparation Strategy sit here at the top level (not in the
+               Exam Pattern & Syllabus sit here at the top level (not in the
                Practice / Study dropdowns) so they are one click away. -->
           <li><a class="nav-link" data-nav="mock" href="mock"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
-          <li><a class="nav-link" data-nav="strategy" href="strategy"><span data-i18n="Preparation Strategy">Preparation Strategy</span></a></li>
+          <li><a class="nav-link" data-nav="strategy" href="strategy"><span data-i18n="Exam Pattern & Syllabus">Exam Pattern &amp; Syllabus</span></a></li>
           <li><a class="nav-link" data-nav="pyq" href="pyq"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about"><span data-i18n="About">About</span></a></li>
         </ul>
@@ -798,7 +798,7 @@ const HOA = (() => {
     <a class="mm-link" data-nav="rank-2-blueprint" href="rank-2-blueprint"><span aria-hidden="true">🏅</span> <span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a>
     <a class="mm-link" data-nav="blogs" href="blogs"><span aria-hidden="true">📔</span> <span data-i18n="Topper's Diary">Topper's Diary</span></a>
     <a class="mm-link" data-nav="mock" href="mock"><span aria-hidden="true">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
-    <a class="mm-link" data-nav="strategy" href="strategy"><span aria-hidden="true">🎯</span> <span data-i18n="Preparation Strategy">Preparation Strategy</span></a>
+    <a class="mm-link" data-nav="strategy" href="strategy"><span aria-hidden="true">🎯</span> <span data-i18n="Exam Pattern & Syllabus">Exam Pattern &amp; Syllabus</span></a>
 
     <!-- The drawer mirrors the header exactly: same ten items, same order,
          same two subject trees. Study's tree opens the Study renderer and
@@ -924,7 +924,7 @@ const HOA = (() => {
           <a href="study-notes" data-i18n="Study Notes">Study Notes</a>
           <a href="topic-guides" data-i18n="Topic Guides">Topic Guides</a>
           <a href="current-affairs" data-i18n="Monthly Current Affairs">Monthly Current Affairs</a>
-          <a href="strategy" data-i18n="Preparation Strategy">Preparation Strategy</a>
+          <a href="strategy" data-i18n="Exam Pattern & Syllabus">Exam Pattern & Syllabus</a>
           <a href="live-sessions" data-i18n="Live Sessions">Live Sessions</a>
           <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
@@ -1366,7 +1366,7 @@ const HOA = (() => {
       let corpus = null;
       const TYPE_LABEL = {
         notes: "Study note", "current-affairs": "Current affairs",
-        magazine: "Magazine issue", strategy: "Strategy",
+        magazine: "Magazine issue", strategy: "Exam guide",
         sessions: "Live session", recruitment: "Recruitment", blogs: "Topper's Diary",
         news: "News", announcements: "Announcement", guide: "Study guide",
         exam: "Exam", "personal-notes": "Personal note",

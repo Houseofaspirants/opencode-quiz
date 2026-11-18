@@ -1131,7 +1131,7 @@ def build_subject(s):
     if guides:
         body.append(card_section(
             "Read next", "Study guides for this subject",
-            "Long-form strategy pages that pair with the quizzes above.",
+            "Long-form study guides that pair with the quizzes above.",
             guide_cards(guides), cols=3))
 
     body.append(section_wrap(cta_card(

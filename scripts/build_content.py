@@ -613,34 +613,34 @@ HUBS = {
         "file": "strategy.html",
         "dir": "strategy",
         "prefix": "strategy",
-        "eyebrow": "Plan & Execute",
-        "h1": "Preparation Strategy for Punjab Exams",
-        "title": "Exam Preparation Strategy & Study Plans | House of Aspirants",
+        "eyebrow": "Know the Exam",
+        "h1": "Exam Pattern & Syllabus for Punjab Exams",
+        "title": "Punjab Exam Pattern & Syllabus | House of Aspirants",
         "description": (
-            "Preparation strategy for Punjab aspirants - study plans, daily and "
-            "weekly timetables, book guidance, revision, mock test and mistake "
-            "analysis method."
+            "Exam pattern, syllabus, eligibility and selection process for every "
+            "Punjab recruitment - PSSSB, PPSC, Punjab Police, PSTET and more, in "
+            "English and Punjabi."
         ),
-        "keywords": ("preparation strategy Punjab, study plan Punjab Police, daily "
-                     "timetable exam, revision strategy, mock test strategy"),
+        "keywords": ("Punjab exam pattern, PSSSB syllabus, PPSC exam pattern, "
+                     "Punjab Police syllabus, eligibility, selection process"),
         "lead": (
-            "Method beats motivation. This section collects the practical side of "
-            "preparation: how to plan a day, how to plan a week, what to revise "
-            "and how to turn a mock test score into a to-do list."
+            "Know the exam before you prepare for it. Each guide lays out one "
+            "Punjab recruitment: who can apply, the paper pattern and marking, "
+            "the syllabus subject by subject and every stage of selection."
         ),
         "answer": (
-            "Strategy pages cover study plans, daily and weekly timetables, book "
-            "recommendations, revision cycles, mock test method, mistake analysis "
-            "and time management. Each one is written to be used this week rather "
-            "than someday, and every method ends in a link to free practice on "
-            "this portal."
+            "Each guide covers one Punjab post - PSSSB, PPSC, Punjab Police, "
+            "PSTET and others - with eligibility, age limit, exam pattern, "
+            "negative marking, syllabus and the selection stages, checked "
+            "against the official notification. Every guide is available in "
+            "English and Punjabi and links to free practice for that exam."
         ),
-        "empty_h3": "No strategy article published yet",
-        "empty_p": ("Study plans and timetable templates are being written as "
-                    "reviewed articles. The four evergreen study guides already "
-                    "cover the same ground today."),
-        "empty_cta": ("articles.html", "Read the study guides"),
-        "schema_hub": "Preparation Strategy",
+        "empty_h3": "No exam guide published yet",
+        "empty_p": ("Exam pattern and syllabus guides are being checked against "
+                    "the official notifications. The exam hub already lists "
+                    "every Punjab post."),
+        "empty_cta": ("punjab-exams.html", "Browse Punjab exams"),
+        "schema_hub": "Exam Pattern & Syllabus",
     },
     "sessions": {
         "file": "live-sessions.html",
@@ -937,9 +937,9 @@ HUBS = {
         "empty_h3": "No personal note published yet",
         "empty_p": ("Notes are written only after a method has been tested "
                     "over a full week, so nothing is posted for the sake of "
-                    "posting. The strategy archive below carries the method "
-                    "pieces that are already reviewed."),
-        "empty_cta": ("strategy.html", "Read the strategy archive"),
+                    "posting. The exam pattern and syllabus guides below show "
+                    "what each paper asks for."),
+        "empty_cta": ("strategy.html", "Read the exam guides"),
         "schema_hub": "Personal Notes",
     },
     "subject-guides": {
@@ -1063,16 +1063,16 @@ HUBS = {
         "answer": (
             "Each success story names the exam and the attempt, describes the "
             "preparation as it actually happened and ends with the specific "
-            "habits that are worth copying. It links into the strategy archive "
+            "habits that are worth copying. It links into the exam pattern guides "
             "and the study material mentioned, so reading a story turns into "
             "doing the work."
         ),
         "empty_h3": "No success story published yet",
         "empty_p": ("Stories are published only when an aspirant shares their "
                     "own attempt, so this page stays empty rather than "
-                    "carrying a claimed result. The strategy archive holds the "
-                    "methods that are already documented."),
-        "empty_cta": ("strategy.html", "Read the strategy archive"),
+                    "carrying a claimed result. The exam pattern and syllabus "
+                    "guides show what each paper asks for."),
+        "empty_cta": ("strategy.html", "Read the exam guides"),
         "schema_hub": "Success Stories",
     },
     "book-recommendations": {
@@ -1139,7 +1139,7 @@ NAV_ENTRY = {                        # collection -> (English label, emoji)
     "notes": ("Study Notes", "\U0001f4dd"),
     "current-affairs": ("Monthly Current Affairs", "\U0001f5de️"),
     "magazine": ("Monthly Magazine", "\U0001f4d6"),
-    "strategy": ("Preparation Strategy", "\U0001f3af"),
+    "strategy": ("Exam Pattern & Syllabus", "\U0001f3af"),
     "sessions": ("Live Sessions", "\U0001f3a5"),
     "recruitment": ("Recruitment", "\U0001f4cb"),
     "expected-mcqs": ("Expected MCQs", "\U0001f9e0"),
@@ -3777,6 +3777,15 @@ def practice_link(record, index, landing):
 # =============================================================================
 TAXONOMY = {"tag": {}, "category": {}}
 
+# Display names for category slugs whose raw value reads badly on a page.
+# The slug (and so the archive-category-<slug>.html URL) is unchanged.
+CATEGORY_LABELS = {"preparation-strategy": "Exam Pattern & Syllabus"}
+
+
+def category_label(value):
+    """Human label for a front-matter category value."""
+    return CATEGORY_LABELS.get(_slug_facet(str(value)), str(value))
+
 
 def build_taxonomy(all_records):
     TAXONOMY["tag"], TAXONOMY["category"] = {}, {}
@@ -3788,7 +3797,7 @@ def build_taxonomy(all_records):
                 TAXONOMY["tag"].setdefault(_slug_facet(t), str(t))
             if r.get("category"):
                 TAXONOMY["category"].setdefault(_slug_facet(r["category"]),
-                                                str(r["category"]))
+                                                category_label(r["category"]))
     return TAXONOMY
 
 
@@ -3817,7 +3826,7 @@ def badge_row(record):
         if cat_slug in TAXONOMY["category"]:
             bits.append(f'<a class="badge badge-muted" '
                         f'href="archive-category-{esc(cat_slug)}.html">'
-                        f'{esc(str(meta["category"]))}</a>')
+                        f'{esc(category_label(meta["category"]))}</a>')
         else:
             bits.append(f'<span class="badge badge-muted">'
                         f'{esc(str(meta["category"]))}</span>')
@@ -3922,7 +3931,7 @@ def content_chain(record, quizzes):
             steps.append((HUBS[coll]["schema_hub"], "", "reserved"))
     for coll, label in (("current-affairs", "Current affairs"),
                         ("magazine", "Monthly magazine"),
-                        ("strategy", "Preparation strategy")):
+                        ("strategy", "Exam pattern & syllabus")):
         if coll == record["collection"]:
             continue
         hit = CHAIN_TARGETS.get(coll)
@@ -4012,13 +4021,13 @@ EXPLORE_BY_COLL = {
         ("live-sessions.html", "Live sessions", "Bring the doubts live"),
     ],
     "sessions": [
-        ("strategy.html", "Preparation strategy", "Turn a session into a week"),
+        ("strategy.html", "Exam pattern & syllabus", "Know the paper you are preparing for"),
         ("announcements.html", "Announcements", "Schedule changes land first"),
         ("blogs.html", "Topper's Diary", "How an SI Rank 2 prepared"),
     ],
     "recruitment": [
         ("punjab-exams.html", "Exam guides", "Preparation guide for every post"),
-        ("strategy.html", "Preparation strategy", "How to prepare for the post"),
+        ("strategy.html", "Exam pattern & syllabus", "Pattern and syllabus for the post"),
         ("news.html", "Exam news", "Pattern and date updates"),
     ],
     "expected-mcqs": [
@@ -4033,7 +4042,7 @@ EXPLORE_BY_COLL = {
     ],
     "blogs": [
         ("articles.html", "Study guides", "The long-form guides"),
-        ("strategy.html", "Preparation strategy", "Plans and timetables"),
+        ("strategy.html", "Exam pattern & syllabus", "Pattern and syllabus for every post"),
         ("study-notes.html", "Study notes", "One idea per read"),
     ],
     "news": [
@@ -4061,7 +4070,7 @@ EXPLORE_BY_COLL = {
     "author": [
         ("magazine.html", "Monthly magazine", "The issues this byline writes"),
         ("live-sessions.html", "Live sessions", "Where the mentor appears"),
-        ("strategy.html", "Preparation strategy", "The method, documented"),
+        ("strategy.html", "Exam pattern & syllabus", "Guides to every Punjab post"),
     ],
     "search": [
         ("archives.html", "Archive", "Everything published, by subject"),
@@ -4072,7 +4081,7 @@ EXPLORE_BY_COLL = {
     # Phase 4 collections - the links that make each new hub contextual
     # rather than generic, on top of the common trio below.
     "personal-notes": [
-        ("strategy.html", "Preparation strategy", "The method behind a note"),
+        ("strategy.html", "Exam pattern & syllabus", "What the exam asks for"),
         ("study-notes.html", "Study notes", "The concept it recorded"),
         ("quiz.html?mode=daily", "Practice", "Today's daily challenge"),
     ],
@@ -4092,14 +4101,14 @@ EXPLORE_BY_COLL = {
         ("progress.html", "Progress", "Your streak and accuracy"),
     ],
     "success-stories": [
-        ("strategy.html", "Preparation strategy", "The method, written down"),
+        ("strategy.html", "Exam pattern & syllabus", "The exam they cleared, explained"),
         ("live-sessions.html", "Live sessions", "Ask the mentor directly"),
         ("announcements.html", "Announcements", "What the site added next"),
     ],
     "book-recommendations": [
         ("pdfs.html", "Free PDFs", "Start free first"),
         ("study-notes.html", "Study notes", "The same syllabus, no cost"),
-        ("strategy.html", "Preparation strategy", "How to actually use a book"),
+        ("strategy.html", "Exam pattern & syllabus", "The syllabus a book has to cover"),
     ],
 }
 
@@ -4513,7 +4522,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     elif record["collection"] == "magazine":
         eyebrow_bits.append(f"Monthly issue · {record.get('month', '')}".strip(" ·"))
     elif record["collection"] == "strategy":
-        eyebrow_bits.append(str(record.get("category", "Strategy")))
+        eyebrow_bits.append(category_label(record.get("category", "Exam guide")))
     elif record["collection"] == "sessions":
         state = "Upcoming session" if str(record.get("status", "")) == "upcoming" \
             else "Past session"
@@ -5171,7 +5180,7 @@ def filter_facets(records, index):
             found["date"][ym] = month_label(ym)
         if r.get("category"):
             found["category"][_slug_facet(r["category"])] = \
-                str(r["category"])
+                category_label(r["category"])
         if r.get("studyChapter"):
             found["chapter"][_slug_facet(r["studyChapter"])] = str(
                 r.get("studyChapterName") or r["studyChapter"])
@@ -5251,7 +5260,7 @@ def hub_cards(coll, items, index, lang="en", facets=None):
                        "notes": (subject_name(index, r["subjects"][0])
                                  if r["subjects"] else "Study note"),
                        "magazine": f'Issue {r.get("month", "")}',
-                       "strategy": str(r.get("category", "Strategy")),
+                       "strategy": category_label(r.get("category", "Exam guide")),
                        "sessions": (f'{r.get("date", "")} · {r.get("platform", "")}'
                                     .strip(" ·")),
                        "recruitment": str(r.get("official_source",
@@ -7100,7 +7109,7 @@ def feed_html(kind, items, index):
 # destination — only the scroll it used to cost.
 DRAWER_HUBS = ("current-affairs.html",
                "live-sessions.html", "expected-mcqs.html")
-# Preparation Strategy is a top-level item in the header and the drawer
+# Exam Pattern & Syllabus (strategy.html) is a top-level item in the header and the drawer
 # (hand-written in core.js), so the generated Study blocks leave it out.
 TOP_LEVEL_HUBS = ("strategy.html",)
 
@@ -8066,7 +8075,7 @@ def phase4_pages(records, index):
             groups.setdefault(("tag", _slug_facet(t)), str(t))
         if r.get("category"):
             groups.setdefault(("category", _slug_facet(r["category"])),
-                              str(r["category"]))
+                              category_label(r["category"]))
     for (kind, slug), label in sorted(groups.items()):
         rows = [r for r in records if r.get("lang") == "en" and (
             any(_slug_facet(t) == slug for t in (r.get("tags") or []))
