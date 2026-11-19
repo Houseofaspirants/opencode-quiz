@@ -3,10 +3,10 @@
   "generatedAt": "2026-11-18T19:27:27.184Z",
   "stats": {
     "subjects": 7,
-    "categories": 53,
-    "topics": 139,
-    "quizzes": 139,
-    "questions": 3248,
+    "categories": 54,
+    "topics": 145,
+    "quizzes": 145,
+    "questions": 3398,
     "studentsPracticed": 12500
   },
   "site": {
@@ -5467,6 +5467,186 @@
           "landing": "/quiz-reasoning-01-number-series-part-4"
         },
         {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 1",
+          "name": "Ranking and Time Sequence Test MCQ – Part 1",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 1",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-1"
+        },
+        {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 2",
+          "name": "Ranking and Time Sequence Test MCQ – Part 2",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 2",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-2"
+        },
+        {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 3",
+          "name": "Ranking and Time Sequence Test MCQ – Part 3",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 3",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-3"
+        },
+        {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 4",
+          "name": "Ranking and Time Sequence Test MCQ – Part 4",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 4",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-4"
+        },
+        {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 5",
+          "name": "Ranking and Time Sequence Test MCQ – Part 5",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 5.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 5",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-5"
+        },
+        {
+          "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 6",
+          "name": "Ranking and Time Sequence Test MCQ – Part 6",
+          "description": "",
+          "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795071860339,
+          "category": "05-ranking-and-time-sequence-test",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json",
+            "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Ranking and Time Sequence Test MCQ – Part 6",
+            "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-6"
+        },
+        {
           "id": "03 - Verbal Classifications - MCQ - EN - Part 1",
           "name": "Verbal Classifications MCQ – Part 1",
           "description": "",
@@ -6163,6 +6343,195 @@
             }
           ],
           "landing": "/category-reasoning-04-coding-and-decoding"
+        },
+        {
+          "id": "05-ranking-and-time-sequence-test",
+          "name": "05   Ranking And Time Sequence Test",
+          "folder": "05 - Ranking and Time Sequence Test",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 1",
+              "name": "Ranking and Time Sequence Test MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 1",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-1"
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 2",
+              "name": "Ranking and Time Sequence Test MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 2",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-2"
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 3",
+              "name": "Ranking and Time Sequence Test MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 3",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-3"
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 4",
+              "name": "Ranking and Time Sequence Test MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 4",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-4"
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 5",
+              "name": "Ranking and Time Sequence Test MCQ – Part 5",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 5.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 5",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-5"
+            },
+            {
+              "id": "05 - Ranking and Time Sequence Test - MCQ - EN - Part 6",
+              "name": "Ranking and Time Sequence Test MCQ – Part 6",
+              "description": "",
+              "file": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795071860339,
+              "category": "05-ranking-and-time-sequence-test",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json",
+                "pa": "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Ranking and Time Sequence Test MCQ – Part 6",
+                "pa": "ਰੈਂਕਿੰਗ ਅਤੇ ਸਮਾਂ-ਕ੍ਰਮ ਟੈਸਟ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-6"
+            }
+          ],
+          "landing": "/category-reasoning-05-ranking-and-time-sequence-test"
         }
       ],
       "landing": "/subject-reasoning"
@@ -9192,6 +9561,30 @@
     "questions/reasoning/04 - Coding and Decoding/04 - Coding and Decoding - MCQ - EN - Part 6.json": [
       "69a2d839592f43c9",
       1795007178537
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 1.json": [
+      "9000e6ba7e8c2e89",
+      1795071860339
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 2.json": [
+      "7d8983df8af7cd77",
+      1795071860339
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 3.json": [
+      "43989ca719d65d49",
+      1795071860339
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 4.json": [
+      "3c244f2907567f79",
+      1795071860339
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 5.json": [
+      "b6359bf6f7adc9bf",
+      1795071860339
+    ],
+    "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json": [
+      "7d3464908f8918ac",
+      1795071860339
     ]
   }
 }
