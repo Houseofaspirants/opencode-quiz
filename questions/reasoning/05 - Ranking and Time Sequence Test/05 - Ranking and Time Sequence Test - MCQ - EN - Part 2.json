@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-026",
+      "number": 26,
+      "question": "A certificate list has 46 names. Which two top ranks occupy its central positions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22 and 23"
+        },
+        {
+          "label": "B",
+          "text": "23 and 24"
+        },
+        {
+          "label": "C",
+          "text": "24 and 25"
+        },
+        {
+          "label": "D",
+          "text": "22 and 24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For an even total, central ranks are N/2 and N/2 + 1: 23 and 24."
+    },
+    {
+      "id": "05-027",
+      "number": 27,
+      "question": "Gagan, 8th from the left, exchanges seats with Naman, who sits 11 places to his right. After the exchange, Gagan is 14th from the right. How many seats are in the row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "33"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Gagan’s new left rank is 8 + 11 = 19. Total = 19 + 14 - 1 = 32."
+    },
+    {
+      "id": "05-028",
+      "number": 28,
+      "question": "6 people have distinct ages. A is older than B; C is younger than B; D is older than A; E is younger than C; F is younger than D but older than B. How many different people could be second oldest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "1"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "D is oldest. Only A and F can occupy second place because both are above B, C and E, while their mutual order is unknown."
+    },
+    {
+      "id": "05-029",
+      "number": 29,
+      "question": "At a recruitment counter, Rehan has 9 more people ahead than behind. The row contains 42 people. What is his rank from the front?",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "27"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ahead + behind = 41 and ahead - behind = 9, so ahead = 25. Front rank = 26."
+    },
+    {
+      "id": "05-030",
+      "number": 30,
+      "question": "A training session ends at 18:05 after running continuously for 145 minutes. When did it start?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15:30"
+        },
+        {
+          "label": "B",
+          "text": "16:00"
+        },
+        {
+          "label": "C",
+          "text": "15:50"
+        },
+        {
+          "label": "D",
+          "text": "15:40"
+        }
+      ],
+      "answer": "D",
+      "explanation": "145 minutes = 2 hours 25 minutes; 18:05 - 2:25 = 15:40."
+    },
+    {
+      "id": "05-031",
+      "number": 31,
+      "question": "A boy is 18th from the front and 7th among boys from the front. Behind him are 9 boys and 12 girls. How many girls are in the entire queue?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "22"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Girls ahead = 17 - 6 = 11. Total girls = 11 + 12 = 23."
+    },
+    {
+      "id": "05-032",
+      "number": 32,
+      "question": "M is 16th from the left and N is 18th from the right. M is to the left of N, and at most 4 people stand between them. What is the largest possible total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "37"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "33"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "B",
+      "explanation": "With 4 between them, N’s left rank is 16 + 5 = 21. Maximum total = 21 + 18 - 1 = 38."
+    },
+    {
+      "id": "05-033",
+      "number": 33,
+      "question": "An application window opens on 27 February 2028. It closes 5 days after the opening date. What is the closing date?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 March 2028"
+        },
+        {
+          "label": "B",
+          "text": "4 March 2028"
+        },
+        {
+          "label": "C",
+          "text": "2 March 2028"
+        },
+        {
+          "label": "D",
+          "text": "3 March 2028"
+        }
+      ],
+      "answer": "D",
+      "explanation": "2028 is a leap year. The 5 following dates are 28 February, 29 February, 1 March, 2 March and 3 March."
+    },
+    {
+      "id": "05-034",
+      "number": 34,
+      "question": "A candidate shifts from 29th to 17th from the front by moving ahead. How many people does she pass?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "People passed = 29 - 17 = 12."
+    },
+    {
+      "id": "05-035",
+      "number": 35,
+      "question": "Mandeep reaches a venue at 08:46, 14 minutes before its scheduled opening. The doors actually open 9 minutes late. How long does Mandeep wait?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "23"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Waiting includes the 14-minute early arrival and 9-minute delay: 14 + 9 = 23 minutes."
+    },
+    {
+      "id": "05-036",
+      "number": 36,
+      "question": "Rows I and II each have 21 aligned seats, numbered from the same fixed left end. P is 8th from the right in Row I. Opposite P is Q. Row II is then reversed end-to-end while Row I stays fixed. What is Q’s new rank from the fixed left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Q initially occupies fixed-left position 21 - 8 + 1 = 14. Reversal maps it to 21 - 14 + 1 = 8."
+    },
+    {
+      "id": "05-037",
+      "number": 37,
+      "question": "Raman is 6th from the front. There are 3 people between Raman and Sukh, and 5 between Sukh and Tej. Their order is Raman, Sukh, Tej. How many people stand between Raman and Tej?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Include Sukh between the two gaps: 3 + 1 + 5 = 9."
+    },
+    {
+      "id": "05-038",
+      "number": 38,
+      "question": "A is taller than B, and B is taller than C. All heights differ. Which additional statement would contradict these facts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D is taller than A"
+        },
+        {
+          "label": "B",
+          "text": "D is between A and B in height"
+        },
+        {
+          "label": "C",
+          "text": "C is taller than A"
+        },
+        {
+          "label": "D",
+          "text": "D is shorter than C"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A > B > C implies A > C. Saying C > A contradicts this chain."
+    },
+    {
+      "id": "05-039",
+      "number": 39,
+      "question": "A player is 12th in a list. After 6 new players are added, her rank becomes 16th. How many of the new players are ranked below her?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The rank worsens by 4, so 4 newcomers are above her. The remaining 6 - 4 = 2 are below."
+    },
+    {
+      "id": "05-040",
+      "number": 40,
+      "question": "Two clocks are correct at 06:00. Clock P gains 4 minutes per true hour and Q loses 2 minutes per true hour. What does Q show when their readings first differ by 42 minutes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13:14"
+        },
+        {
+          "label": "B",
+          "text": "13:28"
+        },
+        {
+          "label": "C",
+          "text": "12:32"
+        },
+        {
+          "label": "D",
+          "text": "12:46"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Separation grows by 6 minutes per hour, so 42/6 = 7 true hours pass. Actual time is 13:00; Q is 14 minutes slow, showing 12:46."
+    },
+    {
+      "id": "05-041",
+      "number": 41,
+      "question": "In a row of 45 students containing 26 girls, Arjun is 20th from the right and 8th boy from the right. How many girls stand to his left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Girls on his right = 19 - 7 = 12. Girls on his left = 26 - 12 = 14."
+    },
+    {
+      "id": "05-042",
+      "number": 42,
+      "question": "Which left rank corresponds to 22nd from the right in a row of 58 people?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "38"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Left rank = 58 - 22 + 1 = 37."
+    },
+    {
+      "id": "05-043",
+      "number": 43,
+      "question": "A clerk works from 09:25 to 16:10, taking two breaks of 20 minutes and 35 minutes. Find the actual working time in minutes.",
+      "options": [
+        {
+          "label": "A",
+          "text": "350"
+        },
+        {
+          "label": "B",
+          "text": "370"
+        },
+        {
+          "label": "C",
+          "text": "340"
+        },
+        {
+          "label": "D",
+          "text": "360"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The span is 405 minutes; breaks total 55. Work = 405 - 55 = 350 minutes."
+    },
+    {
+      "id": "05-044",
+      "number": 44,
+      "question": "In a row of 50, A is 12th from the left and B is 17th from the right. A swaps with B; then A swaps with C. A finally becomes 9th from the right. What was the original number of people between B and C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "D",
+      "explanation": "B originally occupied left position 34; C originally occupied 42, A’s final place. Original gap = 42 - 34 - 1 = 7."
+    },
+    {
+      "id": "05-045",
+      "number": 45,
+      "question": "At the same instant, a watch 8 minutes fast shows 12:24. What does another watch, always 13 minutes slow, show?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12:03"
+        },
+        {
+          "label": "B",
+          "text": "12:29"
+        },
+        {
+          "label": "C",
+          "text": "12:19"
+        },
+        {
+          "label": "D",
+          "text": "12:11"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Actual time = 12:24 - 8 = 12:16. The slow watch shows 12:16 - 13 = 12:03."
+    },
+    {
+      "id": "05-046",
+      "number": 46,
+      "question": "If the day after tomorrow is Saturday, what day was yesterday?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Thursday"
+        },
+        {
+          "label": "B",
+          "text": "Tuesday"
+        },
+        {
+          "label": "C",
+          "text": "Wednesday"
+        },
+        {
+          "label": "D",
+          "text": "Friday"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Today is Thursday, so yesterday was Wednesday."
+    },
+    {
+      "id": "05-047",
+      "number": 47,
+      "question": "P is 11th and Q is 25th from the left. Q moves left to stand immediately before P. What is P’s new left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Q’s insertion before P shifts P one place right, from 11 to 12."
+    },
+    {
+      "id": "05-048",
+      "number": 48,
+      "question": "A 65-person line places A 14th from the left and B 18th from the right. C is exactly midway between them. What is C’s rank from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "31"
+        },
+        {
+          "label": "D",
+          "text": "33"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B is left 48; C is left (14 + 48)/2 = 31. Its right rank is 65 - 31 + 1 = 35."
+    },
+    {
+      "id": "05-049",
+      "number": 49,
+      "question": "Two alarms ring every 14 and 21 minutes. They ring together at 09:12. How many times do they ring together from 09:12 through 12:00, including both endpoints if applicable?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Common rings repeat every LCM(14,21) = 42 minutes. The 168-minute window contains 168/42 + 1 = 5 common rings."
+    },
+    {
+      "id": "05-050",
+      "number": 50,
+      "question": "A arrives 18 minutes before the scheduled start; B arrives 7 minutes after it. The meeting begins 12 minutes after the later arrival. A leaves 5 minutes before the meeting begins. For how many minutes were A and B together?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Relative to the schedule, B arrives at +7, the meeting starts at +19, and A leaves at +14. Their overlap is 14 - 7 = 7 minutes."
+    }
+  ]
+}

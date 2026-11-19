@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 5,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-101",
+      "number": 101,
+      "question": "A runner has the same rank, 26, from both ends of a finishing list. How many runners finished?",
+      "options": [
+        {
+          "label": "A",
+          "text": "52"
+        },
+        {
+          "label": "B",
+          "text": "53"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "51"
+        }
+      ],
+      "answer": "D",
+      "explanation": "There are 25 runners on each side and the runner herself: 25 + 1 + 25 = 51."
+    },
+    {
+      "id": "05-102",
+      "number": 102,
+      "question": "A and B occupy the 13th place from the left and 16th from the right in a 54-person row. How many people lie outside the segment from A to B, excluding neither endpoint from that segment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "26"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Outside people are 12 before A and 15 after B: 12 + 15 = 27."
+    },
+    {
+      "id": "05-103",
+      "number": 103,
+      "question": "In a row of 41, A is left 6, B left 17 and C left 30. First A swaps with B, then A with C. Which person is now exactly midway between the other two named persons?",
+      "options": [
+        {
+          "label": "A",
+          "text": "B"
+        },
+        {
+          "label": "B",
+          "text": "No named person"
+        },
+        {
+          "label": "C",
+          "text": "A"
+        },
+        {
+          "label": "D",
+          "text": "C"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The final places are B = 6, C = 17 and A = 30. The midpoint of 6 and 30 is 18, so no named person is exactly midway."
+    },
+    {
+      "id": "05-104",
+      "number": 104,
+      "question": "6 people have distinct heights. Exactly 2 are taller than J. K is shorter than J but taller than L and M; N is taller than J. What is K’s rank from the shortest end?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "J is third tallest; K, L and M are the three below J, with K tallest among them. Thus K is third shortest."
+    },
+    {
+      "id": "05-105",
+      "number": 105,
+      "question": "A journey starts at 11:50 am and ends at 2:25 pm the same day. How many minutes of the journey occur after 12 noon?",
+      "options": [
+        {
+          "label": "A",
+          "text": "135"
+        },
+        {
+          "label": "B",
+          "text": "165"
+        },
+        {
+          "label": "C",
+          "text": "145"
+        },
+        {
+          "label": "D",
+          "text": "155"
+        }
+      ],
+      "answer": "C",
+      "explanation": "From noon to 2:25 pm is 2 hours 25 minutes = 145 minutes. The 10 minutes before noon are excluded."
+    },
+    {
+      "id": "05-106",
+      "number": 106,
+      "question": "P and Q are left 12 and 28. P moves 5 places right while Q moves 4 places left, without crossing each other. How many people are between them now?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "C",
+      "explanation": "New positions are 17 and 24. Between = 24 - 17 - 1 = 6."
+    },
+    {
+      "id": "05-107",
+      "number": 107,
+      "question": "A row has 64 applicants. J is 27th from the front. Applicants at original ranks 1 through 8 and 49 through 64 leave. Then the remaining row is reversed. What is J’s new rank from the front?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "21"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Remaining original ranks are 9 through 48, totalling 40. J is 27 - 8 = 19th before reversal, then 40 - 19 + 1 = 22nd."
+    },
+    {
+      "id": "05-108",
+      "number": 108,
+      "question": "At a school assembly, girl A is 11th from the left and girl B is 29th from the left. A and B are respectively 4th and 12th among girls from that end. How many boys stand strictly between them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "D",
+      "explanation": "There are 29 - 11 - 1 = 17 people between them, including 12 - 4 - 1 = 7 girls. Boys = 17 - 7 = 10."
+    },
+    {
+      "id": "05-109",
+      "number": 109,
+      "question": "A Moga recruitment form is submitted on 8 June. Verification occurs on the third day after submission, and approval 2 days after verification. On which date is approval given?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13 June"
+        },
+        {
+          "label": "B",
+          "text": "11 June"
+        },
+        {
+          "label": "C",
+          "text": "14 June"
+        },
+        {
+          "label": "D",
+          "text": "12 June"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Verification is 8 + 3 = 11 June; approval is 11 + 2 = 13 June."
+    },
+    {
+      "id": "05-110",
+      "number": 110,
+      "question": "A clinic appointment is shifted 25 minutes later. M arrives 8 minutes before the revised time, at 11:47. What was the original appointment time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11:14"
+        },
+        {
+          "label": "B",
+          "text": "11:22"
+        },
+        {
+          "label": "C",
+          "text": "11:30"
+        },
+        {
+          "label": "D",
+          "text": "11:39"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Revised time = 11:47 + 8 = 11:55. Original time = 11:55 - 25 = 11:30."
+    },
+    {
+      "id": "05-111",
+      "number": 111,
+      "question": "Two aligned rows of 15 face each other. Row I faces north and Row II south. P is 4th from his own left in Row I; Q is opposite P. A new queue takes all of Row I first, then all of Row II, each row in the order of its members’ own left to right. What is Q’s new front rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "19"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Opposite facing makes Q 15 - 4 + 1 = 12th from his own left. The first row contributes 15 people, so Q’s new rank is 15 + 12 = 27."
+    },
+    {
+      "id": "05-112",
+      "number": 112,
+      "question": "A clerk records positions for a 50-person row. Which pair (left rank, right rank) is inconsistent?",
+      "options": [
+        {
+          "label": "A",
+          "text": "(26, 24)"
+        },
+        {
+          "label": "B",
+          "text": "(18, 33)"
+        },
+        {
+          "label": "C",
+          "text": "(39, 12)"
+        },
+        {
+          "label": "D",
+          "text": "(7, 44)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Valid opposite-end ranks add to 51. Only 26 + 24 = 50 fails this rule."
+    },
+    {
+      "id": "05-113",
+      "number": 113,
+      "question": "An office clock always shows 09:18 at actual 09:30. How many minutes must be added to any reading to obtain actual time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The clock is 09:30 - 09:18 = 12 minutes slow, so add 12 minutes."
+    },
+    {
+      "id": "05-114",
+      "number": 114,
+      "question": "Consider 70 applicants: A is 18th from the left and B is 20th from the right. If all people strictly between A and B leave, how many remain?",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "37"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B is left 51, so 51 - 18 - 1 = 32 leave. Remaining = 70 - 32 = 38."
+    },
+    {
+      "id": "05-115",
+      "number": 115,
+      "question": "At actual 09:20 a clock is 12 minutes fast. It then loses 8 minutes every 4 true hours at a constant rate. When it shows 16:47 later that day, what is its error?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 minutes slow"
+        },
+        {
+          "label": "B",
+          "text": "3 minutes fast"
+        },
+        {
+          "label": "C",
+          "text": "15 minutes slow"
+        },
+        {
+          "label": "D",
+          "text": "15 minutes fast"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The display advances from 09:32 to 16:47, or 435 minutes. True elapsed = 435 × 60/58 = 450 minutes; the clock loses 15 minutes, changing its error from +12 to -3 minutes."
+    },
+    {
+      "id": "05-116",
+      "number": 116,
+      "question": "Parcels A, B, C and D weigh 10, 20, 30 and 40 kg in some order. A is heavier than B; C is heavier than D; B is lighter than D; A and C together weigh 60 kg. Which parcel is heaviest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A"
+        },
+        {
+          "label": "B",
+          "text": "C"
+        },
+        {
+          "label": "C",
+          "text": "D"
+        },
+        {
+          "label": "D",
+          "text": "B"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A and C must weigh 20 and 40 kg. B < D fixes B = 10 and D = 30, so C > D forces C = 40 kg."
+    },
+    {
+      "id": "05-117",
+      "number": 117,
+      "question": "A moves forward in a queue from 24th to 18th. How many other people change their ranks because of this single move?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The 6 people originally at ranks 18 through 23 each move back one place."
+    },
+    {
+      "id": "05-118",
+      "number": 118,
+      "question": "A machine completes 3 runs of 42 minutes each. Between consecutive runs it cools for 9 minutes. If the first run starts at 20:18, when does the third finish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22:24"
+        },
+        {
+          "label": "B",
+          "text": "22:33"
+        },
+        {
+          "label": "C",
+          "text": "22:42"
+        },
+        {
+          "label": "D",
+          "text": "22:51"
+        }
+      ],
+      "answer": "C",
+      "explanation": "3 runs and 2 cooling gaps take 3 × 42 + 2 × 9 = 144 minutes. 20:18 + 2:24 = 22:42."
+    },
+    {
+      "id": "05-119",
+      "number": 119,
+      "question": "A, B, C and D occupy left positions 4, 14, 23 and 34. A swaps with B, B with C, and C with D. Which pair ends with exactly 8 people between them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A and C"
+        },
+        {
+          "label": "B",
+          "text": "C and D"
+        },
+        {
+          "label": "C",
+          "text": "B and C"
+        },
+        {
+          "label": "D",
+          "text": "A and B"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Final places are A = 14, B = 23, C = 34 and D = 4. Only A-B have positional gap 9, hence 8 between."
+    },
+    {
+      "id": "05-120",
+      "number": 120,
+      "question": "A departure clock is 9 minutes fast and shows 21:54. An arrival clock is 7 minutes slow and shows 23:08 on the same date. What is the true journey duration in minutes?",
+      "options": [
+        {
+          "label": "A",
+          "text": "83"
+        },
+        {
+          "label": "B",
+          "text": "58"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Actual departure is 21:45 and actual arrival is 23:15. Their difference is 90 minutes."
+    },
+    {
+      "id": "05-121",
+      "number": 121,
+      "question": "Ranks follow competition ranking: tied candidates share a rank, and the next rank skips the occupied places. 6 candidates scored above Leena and 2 others tied with her. What rank does Leena receive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A competition rank is one more than the number strictly above: 6 + 1 = 7. Tied candidates share rank 7."
+    },
+    {
+      "id": "05-122",
+      "number": 122,
+      "question": "A row of 36 is split into two groups: original odd positions form one row and original even positions another, preserving order. P was originally 26th. What is P’s rank from the back in the even-position row?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The even row has 18 people; P is 26/2 = 13th from its front. Back rank = 18 - 13 + 1 = 6."
+    },
+    {
+      "id": "05-123",
+      "number": 123,
+      "question": "A is 11th from the left and B is 9th from the right. The row has more than 20 but fewer than 27 people. A lies left of B, with an odd number between them. How many totals satisfy all conditions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The gap is N - 11 - 9 = N - 20. For N = 21 through 26 it is odd only at N = 21, 23 and 25."
+    },
+    {
+      "id": "05-124",
+      "number": 124,
+      "question": "Two friends agree to meet at 17:00. S comes 12 minutes early and waits 20 minutes before leaving. T comes 11 minutes late. How long after S leaves does T arrive?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "23"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "S arrives at 16:48 and leaves at 17:08. T arrives at 17:11, which is 3 minutes later."
+    },
+    {
+      "id": "05-125",
+      "number": 125,
+      "question": "Two rows each have 12 seats numbered from the same fixed left. X is 5th from the right in Row II. Row II is reversed end-to-end first. They then merge in pairs as I1, I2, II1, II2, I3, I4, II3, II4, and continue in that pattern. What is X’s final front rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "A",
+      "explanation": "X starts at II8 and becomes II5 after reversal. 2 complete four-person blocks take 8 places; I5, I6 and II5 take the next 3, so X is 11th."
+    }
+  ]
+}

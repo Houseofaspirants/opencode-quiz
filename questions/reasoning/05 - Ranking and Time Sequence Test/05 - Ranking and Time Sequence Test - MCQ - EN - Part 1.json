@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-001",
+      "number": 1,
+      "question": "In a merit list, Navjot is 18th from the top and 24th from the bottom. How many candidates are listed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "43"
+        },
+        {
+          "label": "C",
+          "text": "41"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total = 18 + 24 - 1 = 41."
+    },
+    {
+      "id": "05-002",
+      "number": 2,
+      "question": "A row has 53 people. Isha is 17th from the left and Kabir is 14th from the right. How many people stand between them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "23"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Kabir is 53 - 14 + 1 = 40th from the left; the gap is 40 - 17 - 1 = 22."
+    },
+    {
+      "id": "05-003",
+      "number": 3,
+      "question": "Preet is 12th from the left and Danish is 15th from the right. Exactly 6 people separate them. What is the minimum possible row strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "33"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Danish can be at left position 5 or 19. The totals are 5 + 15 - 1 = 19 and 19 + 15 - 1 = 33; choose 19."
+    },
+    {
+      "id": "05-004",
+      "number": 4,
+      "question": "Ritu, 9th from the left, swaps with Farhan, 13th from the right. Ritu becomes 26th from the left. What is Farhan’s new rank from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Total = 26 + 13 - 1 = 38. Farhan occupies left position 9, so his right rank is 38 - 9 + 1 = 30."
+    },
+    {
+      "id": "05-005",
+      "number": 5,
+      "question": "Tara is heavier than Mehak but lighter than Zoya. Zoya is lighter than Bani. Who is the heaviest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Zoya"
+        },
+        {
+          "label": "B",
+          "text": "Bani"
+        },
+        {
+          "label": "C",
+          "text": "Mehak"
+        },
+        {
+          "label": "D",
+          "text": "Tara"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Descending order is Bani > Zoya > Tara > Mehak."
+    },
+    {
+      "id": "05-006",
+      "number": 6,
+      "question": "Sahil stands 21st from the front. He moves forward past 8 people and then back past 3 people. What is his final front rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Final rank = 21 - 8 + 3 = 16."
+    },
+    {
+      "id": "05-007",
+      "number": 7,
+      "question": "Jasleen ranks 14th among 48 candidates. 5 candidates above her and 7 below her leave. Then 4 new candidates are placed above her. Find her rank from the bottom.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "29"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "New total = 48 - 12 + 4 = 40; new top rank = 14 - 5 + 4 = 13. Bottom rank = 40 - 13 + 1 = 28."
+    },
+    {
+      "id": "05-008",
+      "number": 8,
+      "question": "A night bus leaves Patiala at 22:48 and reaches its destination at 03:17 the next day. It stops for 34 minutes en route. How many minutes is it moving?",
+      "options": [
+        {
+          "label": "A",
+          "text": "269"
+        },
+        {
+          "label": "B",
+          "text": "245"
+        },
+        {
+          "label": "C",
+          "text": "235"
+        },
+        {
+          "label": "D",
+          "text": "225"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Elapsed time is 72 + 197 = 269 minutes. Moving time = 269 - 34 = 235 minutes."
+    },
+    {
+      "id": "05-009",
+      "number": 9,
+      "question": "A recruitment camp starts on Thursday. What weekday is its 19th day, counting the starting day as Day 1?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tuesday"
+        },
+        {
+          "label": "B",
+          "text": "Monday"
+        },
+        {
+          "label": "C",
+          "text": "Wednesday"
+        },
+        {
+          "label": "D",
+          "text": "Sunday"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Day 19 is 18 days later; 18 mod 7 = 4. Thursday + 4 days is Monday."
+    },
+    {
+      "id": "05-010",
+      "number": 10,
+      "question": "In a mixed row, Simran is 23rd from the left and the 9th girl from that end. How many boys stand to her left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "16"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 22 people before her, including 8 girls. Boys = 22 - 8 = 14."
+    },
+    {
+      "id": "05-011",
+      "number": 11,
+      "question": "Two rows of 18 seats face each other. Row I faces north and Row II faces south. A is 6th from his own left in Row I. B sits opposite A. C is 4 seats to B’s own left in Row II. What is C’s rank from his own right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "D",
+      "explanation": "B is 6th from his own right. Moving 4 seats to B’s left increases the right rank to 6 + 4 = 10."
+    },
+    {
+      "id": "05-012",
+      "number": 12,
+      "question": "For an interview, Karan arrives 16 minutes early. Noor arrives 27 minutes after Karan, at 10:41. At what time was the interview scheduled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10:36"
+        },
+        {
+          "label": "B",
+          "text": "10:25"
+        },
+        {
+          "label": "C",
+          "text": "10:14"
+        },
+        {
+          "label": "D",
+          "text": "10:30"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Karan arrives at 10:41 - 27 minutes = 10:14. Scheduled time = 10:14 + 16 minutes = 10:30."
+    },
+    {
+      "id": "05-013",
+      "number": 13,
+      "question": "A station clock is always 11 minutes slow. It displays 17:46. What is the actual time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17:57"
+        },
+        {
+          "label": "B",
+          "text": "18:03"
+        },
+        {
+          "label": "C",
+          "text": "18:46"
+        },
+        {
+          "label": "D",
+          "text": "17:35"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Add the slow error: 17:46 + 11 minutes = 17:57."
+    },
+    {
+      "id": "05-014",
+      "number": 14,
+      "question": "In a queue, twice as many people stand behind Aman as ahead of him. If he is 13th from the front, what is the queue strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "37"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Ahead = 12 and behind = 24. Total = 12 + 1 + 24 = 37."
+    },
+    {
+      "id": "05-015",
+      "number": 15,
+      "question": "At actual 07:00, a clock is 9 minutes slow. It then gains 3 minutes per true hour. Later it shows 11:03. What is the actual time then?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11:06"
+        },
+        {
+          "label": "B",
+          "text": "11:00"
+        },
+        {
+          "label": "C",
+          "text": "11:12"
+        },
+        {
+          "label": "D",
+          "text": "10:54"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Initial display is 06:51; displayed advance is 252 minutes. True elapsed = 252 × 60/63 = 240 minutes, giving 11:00."
+    },
+    {
+      "id": "05-016",
+      "number": 16,
+      "question": "Leena is 8th from the left and Om is 28th from the left. A person stands exactly midway between them. What is that person’s left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "19"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The midpoint rank is (8 + 28)/2 = 18."
+    },
+    {
+      "id": "05-017",
+      "number": 17,
+      "question": "An online test starts at 14:35 and lasts 1 hour 48 minutes without a break. When does it finish?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16:23"
+        },
+        {
+          "label": "B",
+          "text": "15:23"
+        },
+        {
+          "label": "C",
+          "text": "16:33"
+        },
+        {
+          "label": "D",
+          "text": "16:13"
+        }
+      ],
+      "answer": "A",
+      "explanation": "14:35 + 1 hour = 15:35; adding 48 minutes gives 16:23."
+    },
+    {
+      "id": "05-018",
+      "number": 18,
+      "question": "4 runners finish the same distance. P takes 48 seconds; Q takes 3 seconds longer than P; R takes 2 seconds less than Q; S takes 1 second less than P. Who is second fastest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Q"
+        },
+        {
+          "label": "B",
+          "text": "P"
+        },
+        {
+          "label": "C",
+          "text": "S"
+        },
+        {
+          "label": "D",
+          "text": "R"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Times are S = 47, P = 48, R = 49 and Q = 51 seconds. Lower time means faster, so P is second."
+    },
+    {
+      "id": "05-019",
+      "number": 19,
+      "question": "A, B and C initially occupy left positions 7, 19 and 32 in a row of 44. First A swaps with B, then B swaps with C, and finally A swaps with C. What is A’s final rank from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "38"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "A",
+      "explanation": "After the first two swaps, A is at 19 and C at 7. The last swap puts A at 7, so its right rank is 44 - 7 + 1 = 38."
+    },
+    {
+      "id": "05-020",
+      "number": 20,
+      "question": "6 workshops P, Q, R, S, T and U occupy consecutive days, one daily. P is immediately before S; R is immediately after S; Q is before P; U is last; T is after R. Which workshop is on Day 4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "T"
+        },
+        {
+          "label": "B",
+          "text": "S"
+        },
+        {
+          "label": "C",
+          "text": "P"
+        },
+        {
+          "label": "D",
+          "text": "R"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The block P-S-R needs Q before it and T after it, with U last. The only order is Q-P-S-R-T-U."
+    },
+    {
+      "id": "05-021",
+      "number": 21,
+      "question": "A file is 16th from the top in a stack of 61 files. How many files lie below it?",
+      "options": [
+        {
+          "label": "A",
+          "text": "46"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "45"
+        },
+        {
+          "label": "D",
+          "text": "44"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Files below = 61 - 16 = 45."
+    },
+    {
+      "id": "05-022",
+      "number": 22,
+      "question": "In a row, Deep is 10th and Harnoor is 16th from the left. Deep leaves his place and inserts himself immediately after the person originally 20th. What is Harnoor’s new left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Removing Deep shifts original positions 11 through 20 one place left. Harnoor moves from 16 to 15."
+    },
+    {
+      "id": "05-023",
+      "number": 23,
+      "question": "Distinct persons X and Y are 17th from the left and 11th from the right. Exactly 3 people lie between them. What is the sum of all possible row strengths?",
+      "options": [
+        {
+          "label": "A",
+          "text": "54"
+        },
+        {
+          "label": "B",
+          "text": "56"
+        },
+        {
+          "label": "C",
+          "text": "50"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Y can be at left position 13 or 21, giving totals 23 or 31. Their sum is 23 + 31 = 54."
+    },
+    {
+      "id": "05-024",
+      "number": 24,
+      "question": "A tower makes 9 equally spaced strikes in 24 seconds, measured from the first to the ninth. How many seconds will 14 strikes take at the same spacing?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "42"
+        },
+        {
+          "label": "D",
+          "text": "39"
+        }
+      ],
+      "answer": "D",
+      "explanation": "8 gaps take 24 seconds, so each gap takes 3 seconds. 14 strikes have 13 gaps: 13 × 3 = 39 seconds."
+    },
+    {
+      "id": "05-025",
+      "number": 25,
+      "question": "In a merit list of 72, Dev is 21st. The top 12 and bottom 18 candidates are removed. Of those remaining, only candidates at odd-numbered original ranks are selected. What is Dev’s rank from the bottom in this selected group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Selected original ranks are 13 through 53 in steps of 2. From 21 through 53 there are (53 - 21)/2 + 1 = 17 selected candidates."
+    }
+  ]
+}

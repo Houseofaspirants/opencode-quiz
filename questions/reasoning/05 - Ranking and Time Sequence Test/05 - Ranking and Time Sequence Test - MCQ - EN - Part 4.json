@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-076",
+      "number": 76,
+      "question": "In a row, J is 9th from the left. K stands 7 places to J’s right. How many people are strictly between J and K?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A separation of 7 positions leaves 7 - 1 = 6 people strictly between."
+    },
+    {
+      "id": "05-077",
+      "number": 77,
+      "question": "In a row, A and B are 10 places apart. They swap. Which quantity necessarily stays unchanged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A’s left rank"
+        },
+        {
+          "label": "B",
+          "text": "Sum of their left ranks"
+        },
+        {
+          "label": "C",
+          "text": "B’s right rank"
+        },
+        {
+          "label": "D",
+          "text": "Number of people left of A"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The ranks a and b become b and a, so their sum remains a + b."
+    },
+    {
+      "id": "05-078",
+      "number": 78,
+      "question": "P is 9th from the left and Q is 12th from the right. P lies left of Q. The number between them is an even number from 2 to 8 inclusive. How many total row strengths are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "6"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For gap k, total = 9 + 12 + k = 21 + k. Values k = 2, 4, 6, 8 give 4 totals."
+    },
+    {
+      "id": "05-079",
+      "number": 79,
+      "question": "In descending height, R is above S and T; S is above U; T is above V. No other comparisons are known. Which pair’s relative order cannot be determined?",
+      "options": [
+        {
+          "label": "A",
+          "text": "S and T"
+        },
+        {
+          "label": "B",
+          "text": "S and U"
+        },
+        {
+          "label": "C",
+          "text": "R and V"
+        },
+        {
+          "label": "D",
+          "text": "R and U"
+        }
+      ],
+      "answer": "A",
+      "explanation": "R > S > U and R > T > V are fixed. Nothing compares S with T."
+    },
+    {
+      "id": "05-080",
+      "number": 80,
+      "question": "A Bathinda help-desk task needs 75 minutes of work and one 15-minute break. It must finish at 12:20. What is the latest starting time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10:35"
+        },
+        {
+          "label": "B",
+          "text": "11:05"
+        },
+        {
+          "label": "C",
+          "text": "10:50"
+        },
+        {
+          "label": "D",
+          "text": "11:20"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Required span = 75 + 15 = 90 minutes. Subtract 90 minutes from 12:20 to get 10:50."
+    },
+    {
+      "id": "05-081",
+      "number": 81,
+      "question": "A row contains 24 boys and 21 girls. Mannat, a girl, is 10th girl from the left and has 13 boys to her right. What is her overall rank from the left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Boys to her left = 24 - 13 = 11. Add 9 girls ahead and Mannat herself: 11 + 9 + 1 = 21."
+    },
+    {
+      "id": "05-082",
+      "number": 82,
+      "question": "A row has 56 people, with P at left rank 24. Remove the first 5 people and every person originally at ranks 30 through 36. Then insert 3 people immediately before P and 2 at the right end. Find P’s new right rank.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "28"
+        }
+      ],
+      "answer": "D",
+      "explanation": "New total = 56 - 5 - 7 + 5 = 49; P’s left rank = 24 - 5 + 3 = 22. Right rank = 49 - 22 + 1 = 28."
+    },
+    {
+      "id": "05-083",
+      "number": 83,
+      "question": "4 stages are Registration, Screening, Interview and Verification. Screening is after Registration but before Interview. Verification is after Registration but before Screening. Which stage is third?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Screening"
+        },
+        {
+          "label": "B",
+          "text": "Verification"
+        },
+        {
+          "label": "C",
+          "text": "Registration"
+        },
+        {
+          "label": "D",
+          "text": "Interview"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The order is Registration, Verification, Screening, Interview. Screening is third."
+    },
+    {
+      "id": "05-084",
+      "number": 84,
+      "question": "There are 18 people ahead of Pari and 27 behind her. What is Pari’s rank from the back?",
+      "options": [
+        {
+          "label": "A",
+          "text": "29"
+        },
+        {
+          "label": "B",
+          "text": "46"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Back rank counts the 27 behind plus Pari: 27 + 1 = 28."
+    },
+    {
+      "id": "05-085",
+      "number": 85,
+      "question": "A stands at left rank 12 and B at left rank 31. How many people must be added strictly between them so that their positional gap becomes 24?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Their current positional gap is 31 - 12 = 19. Each insertion increases it by 1, so 24 - 19 = 5 are needed."
+    },
+    {
+      "id": "05-086",
+      "number": 86,
+      "question": "Row I has 20 seats and Row II has 18 seats, facing each other. From a fixed page-left, Row II seat 1 is opposite Row I seat 3. A is 7th from the right in Row I. What is the rank from the fixed page-right in Row II of the person opposite A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "7"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A is at Row I left 14, opposite Row II left 12. Row II right rank = 18 - 12 + 1 = 7."
+    },
+    {
+      "id": "05-087",
+      "number": 87,
+      "question": "A teacher plans to reach a school 20 minutes before assembly. She is delayed by 28 minutes relative to her plan and arrives at 08:18. When was assembly scheduled?",
+      "options": [
+        {
+          "label": "A",
+          "text": "08:10"
+        },
+        {
+          "label": "B",
+          "text": "08:02"
+        },
+        {
+          "label": "C",
+          "text": "08:38"
+        },
+        {
+          "label": "D",
+          "text": "08:26"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Actual arrival is 28 - 20 = 8 minutes after assembly time. Scheduled assembly = 08:18 - 8 = 08:10."
+    },
+    {
+      "id": "05-088",
+      "number": 88,
+      "question": "Among A, B, C and D, A is older than exactly 2 people; B is the youngest; C is older than A. Who is second youngest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D"
+        },
+        {
+          "label": "B",
+          "text": "B"
+        },
+        {
+          "label": "C",
+          "text": "C"
+        },
+        {
+          "label": "D",
+          "text": "A"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The descending age order is C > A > D > B. D is second youngest."
+    },
+    {
+      "id": "05-089",
+      "number": 89,
+      "question": "For a candidate, top rank exceeds bottom rank by 15 in a list of 68. Find the top rank.",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "43"
+        },
+        {
+          "label": "C",
+          "text": "42"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Top + bottom = 69 and top - bottom = 15. Top = (69 + 15)/2 = 42."
+    },
+    {
+      "id": "05-090",
+      "number": 90,
+      "question": "At actual 18:00, a clock is 20 minutes fast. It loses 5 minutes per true hour. At what actual time does it first become correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23:00"
+        },
+        {
+          "label": "B",
+          "text": "22:00"
+        },
+        {
+          "label": "C",
+          "text": "00:00"
+        },
+        {
+          "label": "D",
+          "text": "21:00"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Time to remove the 20-minute lead = 20/5 = 4 true hours. Add 4 hours to 18:00 to get 22:00."
+    },
+    {
+      "id": "05-091",
+      "number": 91,
+      "question": "A merit list has 80 names. Removing some names below R changes R’s bottom rank from 31 to 22 but leaves the top rank unchanged. How many names were removed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Only names below R were removed, so the bottom-rank reduction equals their count: 31 - 22 = 9."
+    },
+    {
+      "id": "05-092",
+      "number": 92,
+      "question": "The 1st of a 30-day month is Sunday. What weekday is the 1st of the next month?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Monday"
+        },
+        {
+          "label": "B",
+          "text": "Tuesday"
+        },
+        {
+          "label": "C",
+          "text": "Wednesday"
+        },
+        {
+          "label": "D",
+          "text": "Thursday"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The next 1st is 30 days later; 30 mod 7 = 2. Sunday + 2 days = Tuesday."
+    },
+    {
+      "id": "05-093",
+      "number": 93,
+      "question": "A girl is 12th girl from the left and 8th girl from the right. There are 23 boys in the row. Find the total number of students.",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Girls = 12 + 8 - 1 = 19. Total students = 19 + 23 = 42."
+    },
+    {
+      "id": "05-094",
+      "number": 94,
+      "question": "In a 43-person row, X is left 8, Y is left 22, and Z is right 6. X swaps with Y, then Y swaps with Z. What is the sum of X’s and Y’s final right ranks?",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "X finishes at left 22, right 22. Y finishes at Z’s original place, right 6; sum = 22 + 6 = 28."
+    },
+    {
+      "id": "05-095",
+      "number": 95,
+      "question": "Two tests last 55 and 70 minutes with a 25-minute gap. The second test ends at 13:40. When did the first test start?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11:10"
+        },
+        {
+          "label": "B",
+          "text": "11:00"
+        },
+        {
+          "label": "C",
+          "text": "11:20"
+        },
+        {
+          "label": "D",
+          "text": "10:50"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Total span = 55 + 25 + 70 = 150 minutes. 13:40 - 2 hours 30 minutes = 11:10."
+    },
+    {
+      "id": "05-096",
+      "number": 96,
+      "question": "R is 14th from the right in a fixed row. She moves 5 places towards the left. What is her new rank from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Moving left increases the right rank: 14 + 5 = 19."
+    },
+    {
+      "id": "05-097",
+      "number": 97,
+      "question": "A hall admits visitors from actual 10:15 through 10:40, both included. A watch is always 6 minutes fast. Which reading on that watch is outside the admission window?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10:46"
+        },
+        {
+          "label": "B",
+          "text": "10:21"
+        },
+        {
+          "label": "C",
+          "text": "10:34"
+        },
+        {
+          "label": "D",
+          "text": "10:47"
+        }
+      ],
+      "answer": "D",
+      "explanation": "On the fast watch, the allowed interval is 10:21 through 10:46. Thus 10:47 is outside it."
+    },
+    {
+      "id": "05-098",
+      "number": 98,
+      "question": "A is 18th from the left and B is 14th from the right. They are distinct, but no order or gap is specified. Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "There is no finite maximum total"
+        },
+        {
+          "label": "B",
+          "text": "Total must be odd"
+        },
+        {
+          "label": "C",
+          "text": "Maximum total is 31"
+        },
+        {
+          "label": "D",
+          "text": "Minimum total is 31"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Increasing the total can place B arbitrarily far to A’s right while preserving both ranks. Thus no finite maximum follows."
+    },
+    {
+      "id": "05-099",
+      "number": 99,
+      "question": "A dispenser releases a token at 11:07 and every 16 minutes thereafter. What is the time of its 9th release, counting 11:07 as the first?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13:23"
+        },
+        {
+          "label": "B",
+          "text": "13:31"
+        },
+        {
+          "label": "C",
+          "text": "13:47"
+        },
+        {
+          "label": "D",
+          "text": "13:15"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The 9th release follows 8 intervals: 8 × 16 = 128 minutes. 11:07 + 128 minutes = 13:15."
+    },
+    {
+      "id": "05-100",
+      "number": 100,
+      "question": "A is left 9 and B is left 36. A person must sit exactly midway between them in an occupied seat, with everyone retaining their positions. Which conclusion is valid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The person is at 23"
+        },
+        {
+          "label": "B",
+          "text": "No single seat is exactly midway"
+        },
+        {
+          "label": "C",
+          "text": "The person is at 24"
+        },
+        {
+          "label": "D",
+          "text": "The person is at 22"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The midpoint is (9 + 36)/2 = 22.5. It lies between seats 22 and 23, not at a single seat."
+    }
+  ]
+}

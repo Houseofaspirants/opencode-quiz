@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-051",
+      "number": 51,
+      "question": "A queue has 39 people. A volunteer marks the 15th person from each end. What is the sum of the two marked persons’ ranks from the front?",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "41"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The front ranks are 15 and 39 - 15 + 1 = 25; their sum is 40."
+    },
+    {
+      "id": "05-052",
+      "number": 52,
+      "question": "Nimrat and Om exchange positions in a fixed row. Nimrat’s left rank changes from 13 to 27. By how much does Om’s right rank increase?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Om moves from left 27 to left 13, so his right rank increases by 27 - 13 = 14."
+    },
+    {
+      "id": "05-053",
+      "number": 53,
+      "question": "A is 14th from the left and B is 16th from the right. There are 2 people between them. How many different total strengths are possible?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "1"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B can occupy left rank 11 or 17, giving valid totals 26 and 32. Hence 2 totals are possible."
+    },
+    {
+      "id": "05-054",
+      "number": 54,
+      "question": "In a row of 48, Harjit occupies the left central seat. Lavish is 9th from the right. How many people sit strictly between them?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "17"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Harjit is left 24 and Lavish is left 40. Between = 40 - 24 - 1 = 15."
+    },
+    {
+      "id": "05-055",
+      "number": 55,
+      "question": "K weighs more than both L and M. N weighs less than M. Which comparison is definitely established?",
+      "options": [
+        {
+          "label": "A",
+          "text": "K is heavier than N"
+        },
+        {
+          "label": "B",
+          "text": "L is heavier than M"
+        },
+        {
+          "label": "C",
+          "text": "L is lighter than N"
+        },
+        {
+          "label": "D",
+          "text": "N is heavier than L"
+        }
+      ],
+      "answer": "A",
+      "explanation": "K > M and M > N give K > N. L’s relation to M and N is not fixed."
+    },
+    {
+      "id": "05-056",
+      "number": 56,
+      "question": "Of 60 candidates, Hina is 19th. Only the top 35 qualify. What is Hina’s rank from the bottom among qualifiers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "16"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Use the selected total, 35: bottom rank = 35 - 19 + 1 = 17."
+    },
+    {
+      "id": "05-057",
+      "number": 57,
+      "question": "Rows A and B contain 16 and 19 people respectively. Both are counted from the same left side. They merge by taking A1, B1, A2, B2 and so on; after A ends, remaining B members follow. What is the final front rank of the person originally 3rd from the right in B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "35"
+        },
+        {
+          "label": "B",
+          "text": "32"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "33"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The person is B17. The first 16 pairs occupy 32 places, so B17 occupies place 33."
+    },
+    {
+      "id": "05-058",
+      "number": 58,
+      "question": "A film begins at 19:42. Its first half lasts 68 minutes, the interval lasts 17 minutes, and the second half lasts 74 minutes. When does it end?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22:31"
+        },
+        {
+          "label": "B",
+          "text": "22:21"
+        },
+        {
+          "label": "C",
+          "text": "22:41"
+        },
+        {
+          "label": "D",
+          "text": "22:11"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Total duration = 68 + 17 + 74 = 159 minutes, or 2 hours 39 minutes. Add this to 19:42 to get 22:21."
+    },
+    {
+      "id": "05-059",
+      "number": 59,
+      "question": "An exam is 17 days after a Monday orientation. On which weekday is the exam?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Saturday"
+        },
+        {
+          "label": "B",
+          "text": "Friday"
+        },
+        {
+          "label": "C",
+          "text": "Thursday"
+        },
+        {
+          "label": "D",
+          "text": "Wednesday"
+        }
+      ],
+      "answer": "C",
+      "explanation": "17 mod 7 = 3; Monday + 3 days = Thursday."
+    },
+    {
+      "id": "05-060",
+      "number": 60,
+      "question": "Aman and Bala reach the same appointment 32 minutes apart. Aman is 13 minutes early and Bala is late. How late is Bala?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "19"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Arrival gap = early amount + late amount. Bala’s delay = 32 - 13 = 19 minutes."
+    },
+    {
+      "id": "05-061",
+      "number": 61,
+      "question": "Four cards P, Q, R, S occupy places 4, 11, 20, 29 from the left. Swap P-Q, then R-S, then Q-S, then P-R. Which card finishes at place 4?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Q"
+        },
+        {
+          "label": "B",
+          "text": "R"
+        },
+        {
+          "label": "C",
+          "text": "P"
+        },
+        {
+          "label": "D",
+          "text": "S"
+        }
+      ],
+      "answer": "D",
+      "explanation": "After P-Q, place 4 holds Q. R-S does not affect it; Q-S puts S there, and P-R leaves it unchanged."
+    },
+    {
+      "id": "05-062",
+      "number": 62,
+      "question": "A mixed queue has 17 boys. A girl is 15th from the front, with 6 girls ahead of her. How many boys stand behind her?",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "8"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Boys ahead = 14 - 6 = 8. Boys behind = 17 - 8 = 9."
+    },
+    {
+      "id": "05-063",
+      "number": 63,
+      "question": "A digital clock is fixed at 7 minutes fast. At actual 23:56 on Monday, what does it display?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tuesday 00:03"
+        },
+        {
+          "label": "B",
+          "text": "Monday 00:03"
+        },
+        {
+          "label": "C",
+          "text": "Tuesday 00:07"
+        },
+        {
+          "label": "D",
+          "text": "Monday 23:49"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Adding 7 minutes crosses midnight: Monday 23:56 becomes Tuesday 00:03."
+    },
+    {
+      "id": "05-064",
+      "number": 64,
+      "question": "A book’s rank from the left is three times its rank from the right. There are 47 books on the shelf. What is its left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "D",
+      "explanation": "L + R = 48 and L = 3R. Hence R = 12 and L = 36."
+    },
+    {
+      "id": "05-065",
+      "number": 65,
+      "question": "A clock gains 6 minutes during every 2 hours shown by that clock. It is correct at actual 08:00. When it shows 12:00, what is the actual time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11:48"
+        },
+        {
+          "label": "B",
+          "text": "12:24"
+        },
+        {
+          "label": "C",
+          "text": "12:12"
+        },
+        {
+          "label": "D",
+          "text": "11:36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Each 120 displayed minutes represents 114 true minutes. For 240 displayed minutes, true elapsed = 228 minutes, so actual time is 11:48."
+    },
+    {
+      "id": "05-066",
+      "number": 66,
+      "question": "5 students have distinct marks. J scored above K and L; M scored below K but above L; N scored below L. Which statement must be false?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M is third"
+        },
+        {
+          "label": "B",
+          "text": "J scored highest"
+        },
+        {
+          "label": "C",
+          "text": "N scored above K"
+        },
+        {
+          "label": "D",
+          "text": "L is fourth"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The forced order is J > K > M > L > N. N cannot be above K."
+    },
+    {
+      "id": "05-067",
+      "number": 67,
+      "question": "A security shift runs from 23:25 to 01:10 the next day. How many minutes does it last?",
+      "options": [
+        {
+          "label": "A",
+          "text": "115"
+        },
+        {
+          "label": "B",
+          "text": "125"
+        },
+        {
+          "label": "C",
+          "text": "105"
+        },
+        {
+          "label": "D",
+          "text": "95"
+        }
+      ],
+      "answer": "C",
+      "explanation": "35 minutes to midnight plus 70 minutes after midnight gives 105 minutes."
+    },
+    {
+      "id": "05-068",
+      "number": 68,
+      "question": "In a 57-person queue, 10 people precede A and 16 follow B. C is one-third of the positional distance from A towards B. How many people stand between A and C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A is 11th and B is 41st, a separation of 30 positions. C is at 11 + 30/3 = 21, leaving 21 - 11 - 1 = 9 between A and C."
+    },
+    {
+      "id": "05-069",
+      "number": 69,
+      "question": "X is 23rd from the left, Y is 8th from the right, and exactly 9 people separate them. Which is the complete set of possible totals?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20 only"
+        },
+        {
+          "label": "B",
+          "text": "40 only"
+        },
+        {
+          "label": "C",
+          "text": "21 and 39"
+        },
+        {
+          "label": "D",
+          "text": "20 and 40"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Y’s left rank could algebraically be 13 or 33, giving totals 20 or 40. Total 20 is invalid because X itself is 23rd; only 40 works."
+    },
+    {
+      "id": "05-070",
+      "number": 70,
+      "question": "A and B swap places in a row of 37. Afterwards A is 12th from the left and B is 9th from the right. What was A’s original left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "28"
+        },
+        {
+          "label": "C",
+          "text": "29"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A’s original place is B’s final place: 37 - 9 + 1 = 29th from the left."
+    },
+    {
+      "id": "05-071",
+      "number": 71,
+      "question": "In a queue of 40, Veer moves from 15th to 21st from the front. Which direction and how many places did he move?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7 forward"
+        },
+        {
+          "label": "B",
+          "text": "5 backward"
+        },
+        {
+          "label": "C",
+          "text": "6 forward"
+        },
+        {
+          "label": "D",
+          "text": "6 backward"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A larger front rank means moving backward: 21 - 15 = 6 places."
+    },
+    {
+      "id": "05-072",
+      "number": 72,
+      "question": "A bus is scheduled for 15:20. It arrives 8 minutes late and leaves 6 minutes after arrival. P reaches the stop 5 minutes before the scheduled time. How long does P wait before departure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "21"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "A",
+      "explanation": "P arrives at 15:15 and the bus leaves at 15:34. Waiting time = 19 minutes."
+    },
+    {
+      "id": "05-073",
+      "number": 73,
+      "question": "A list of 90 candidates has no ties. Every candidate at an original rank divisible by 3 withdraws. S was originally 47th. What is S’s new rank from the bottom?",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "31"
+        }
+      ],
+      "answer": "B",
+      "explanation": "30 withdraw, leaving 60. Above S, 15 of the first 46 withdraw, so S becomes 32nd; bottom rank = 60 - 32 + 1 = 29."
+    },
+    {
+      "id": "05-074",
+      "number": 74,
+      "question": "A shuttle leaves every 18 minutes from 07:10 onward. A passenger arrives at 08:03. How many minutes must she wait for the next departure?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Departures are 07:10, 07:28, 07:46 and 08:04. The next one is 1 minute after 08:03."
+    },
+    {
+      "id": "05-075",
+      "number": 75,
+      "question": "Two equal rows are aligned from a fixed left side. In Row I, A is left 7 and right 18. B sits opposite A in Row II; C sits 5 seats to B’s fixed right. The rows merge as I1, II1, I2, II2 and so on. What is C’s rank from the back?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Each row has 7 + 18 - 1 = 24 people. C is II12, hence merged front rank 24; back rank = 48 - 24 + 1 = 25."
+    }
+  ]
+}

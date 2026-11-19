@@ -1411,6 +1411,11 @@
    "re": "^/assets/pdfs/(?<path>.*\\.(?:pdf|PDF))$",
    "to": "https://files.houseofaspirants.in/assets/pdfs/:path",
    "status": 301
+  },
+  {
+   "re": "^/assets/proof/(?<path>.*\\.(?:pdf|PDF))$",
+   "to": "https://files.houseofaspirants.in/assets/proof/:path",
+   "status": 301
   }
  ]
 }

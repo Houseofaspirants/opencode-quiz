@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 5,
+    "title": "Ranking and Time Sequence Test"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "05-126",
+      "number": 126,
+      "question": "A competition list uses shared ranks with skipped places after a tie. 3 candidates share rank 8 and nobody else ties with them. What rank is given to the next candidate?",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "12"
+        },
+        {
+          "label": "D",
+          "text": "10"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The tied group occupies places 8, 9 and 10. The next candidate is ranked 11."
+    },
+    {
+      "id": "05-127",
+      "number": 127,
+      "question": "5 people have distinct salaries. C earns more than A, A more than B, and B more than D. E’s salary is unrestricted except for being distinct. Which is the complete set of B’s possible ranks from highest salary?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4 and 5"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "3 and 4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The fixed chain is C > A > B > D. Inserting E above B makes B fourth; inserting E below B leaves B third."
+    },
+    {
+      "id": "05-128",
+      "number": 128,
+      "question": "A is left 18 and B is right 13 in an unknown row. A lies left of B. C occupies a seat exactly midway between them and is no farther than 20th from the left. What is the maximum total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "34"
+        },
+        {
+          "label": "B",
+          "text": "33"
+        },
+        {
+          "label": "C",
+          "text": "35"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Maximise C at left 20; then B is left 2 × 20 - 18 = 22. Total = 22 + 13 - 1 = 34."
+    },
+    {
+      "id": "05-129",
+      "number": 129,
+      "question": "A is left 7 and B is left 32. All people strictly between them are divided into 3 equal consecutive groups. What is the left rank of the last person in the second group?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "23"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "25"
+        }
+      ],
+      "answer": "B",
+      "explanation": "There are 32 - 7 - 1 = 24 people, so each group has 8. The second group ends at 7 + 16 = 23."
+    },
+    {
+      "id": "05-130",
+      "number": 130,
+      "question": "An activity lasts from 09:40 to 12:05. Which duration is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 hours 25 minutes"
+        },
+        {
+          "label": "B",
+          "text": "2 hours 35 minutes"
+        },
+        {
+          "label": "C",
+          "text": "2 hours 15 minutes"
+        },
+        {
+          "label": "D",
+          "text": "2 hours 25 minutes"
+        }
+      ],
+      "answer": "D",
+      "explanation": "From 09:40 to 11:40 is 2 hours, then 25 minutes to 12:05."
+    },
+    {
+      "id": "05-131",
+      "number": 131,
+      "question": "There are 20 girls and 18 boys in a row. Boy P is 6th boy from the left and has 9 girls before him. What is P’s overall rank from the right?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "B",
+      "explanation": "P’s left rank = 5 + 9 + 1 = 15. With 38 students, right rank = 38 - 15 + 1 = 24."
+    },
+    {
+      "id": "05-132",
+      "number": 132,
+      "question": "In a 52-person row, A is left 9, B left 21 and C left 38. After swaps A-B, A-C, and B-C, who has moved the greatest distance from the original seat?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A and C equally"
+        },
+        {
+          "label": "B",
+          "text": "C"
+        },
+        {
+          "label": "C",
+          "text": "A"
+        },
+        {
+          "label": "D",
+          "text": "B"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Final places are A = 38, B = 21 and C = 9. Their displacements are 29, 0 and 29 places, respectively."
+    },
+    {
+      "id": "05-133",
+      "number": 133,
+      "question": "5 interviews occur Monday to Friday, one daily. R is Wednesday; P is immediately before Q; S is after R but before T. Which day is Q’s interview?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tuesday"
+        },
+        {
+          "label": "B",
+          "text": "Thursday"
+        },
+        {
+          "label": "C",
+          "text": "Monday"
+        },
+        {
+          "label": "D",
+          "text": "Friday"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S and T must fill Thursday and Friday. P-Q therefore occupy Monday-Tuesday, so Q is Tuesday."
+    },
+    {
+      "id": "05-134",
+      "number": 134,
+      "question": "P is 18th in a queue. A person behind P leaves the queue and rejoins at its very front. What is P’s new front rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "18"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The removal behind P does not affect P; insertion at the front adds one ahead. P becomes 19th."
+    },
+    {
+      "id": "05-135",
+      "number": 135,
+      "question": "Among 6 students with distinct marks, P has exactly 3 students above him. Q is below P; R is above P but below S. What is the greatest possible number of students between S and Q?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "5"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "P is fourth. S can be first, R second and Q sixth; then 6 - 1 - 1 = 4 lie between S and Q."
+    },
+    {
+      "id": "05-136",
+      "number": 136,
+      "question": "Two aligned rows of 17 face each other. Row I faces north and Row II south. A is 5th from his own right in Row I; B is opposite A. They exchange seats and face the direction assigned to their new rows. What is A’s new rank from his own left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A’s original own-right direction becomes own-left in the opposite-facing row. At the opposite seat, his new own-left rank is therefore 5."
+    },
+    {
+      "id": "05-137",
+      "number": 137,
+      "question": "Riya leaves home at 08:12, travels for 43 minutes, and reaches a hall 9 minutes before the scheduled start. The event actually starts 14 minutes late. At what time does it begin?",
+      "options": [
+        {
+          "label": "A",
+          "text": "09:18"
+        },
+        {
+          "label": "B",
+          "text": "09:09"
+        },
+        {
+          "label": "C",
+          "text": "09:23"
+        },
+        {
+          "label": "D",
+          "text": "09:04"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Arrival is 08:55; scheduled start is 09:04. Add the 14-minute delay to obtain 09:18."
+    },
+    {
+      "id": "05-138",
+      "number": 138,
+      "question": "A wall clock is 4 minutes fast and a wristwatch is 9 minutes slow, both with fixed errors. How many minutes ahead of the wristwatch is the wall clock?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The readings differ by 4 - (-9) = 13 minutes."
+    },
+    {
+      "id": "05-139",
+      "number": 139,
+      "question": "A row is read once from left to right and once from right to left. R’s rank changes by 20, and his smaller rank is 14. What is the row strength?",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "46"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The larger rank is 14 + 20 = 34. Total = 14 + 34 - 1 = 47."
+    },
+    {
+      "id": "05-140",
+      "number": 140,
+      "question": "A clock is correct at actual Tuesday 22:30 and gains 4 minutes per true hour. When it first shows Wednesday 02:46, what is the actual time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Tuesday 02:30"
+        },
+        {
+          "label": "B",
+          "text": "Wednesday 02:42"
+        },
+        {
+          "label": "C",
+          "text": "Wednesday 02:30"
+        },
+        {
+          "label": "D",
+          "text": "Wednesday 03:02"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Displayed elapsed = 256 minutes. True elapsed = 256 × 60/64 = 240 minutes, giving Wednesday 02:30."
+    },
+    {
+      "id": "05-141",
+      "number": 141,
+      "question": "In a mixed row of 50, girl J is overall 21st from the left and 13th girl from the right. There are 28 girls in total. How many boys stand to J’s left?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "J is girl number 28 - 13 + 1 = 16 from the left. Of 20 people before her, 15 are girls, so 5 are boys."
+    },
+    {
+      "id": "05-142",
+      "number": 142,
+      "question": "A notice is issued on 29 December 2027. A deadline falls 4 days after issue. What is the deadline date?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3 January 2028"
+        },
+        {
+          "label": "B",
+          "text": "4 January 2028"
+        },
+        {
+          "label": "C",
+          "text": "1 January 2028"
+        },
+        {
+          "label": "D",
+          "text": "2 January 2028"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The following dates are 30 December, 31 December, 1 January and 2 January."
+    },
+    {
+      "id": "05-143",
+      "number": 143,
+      "question": "In a row of 46, A is 15th from the left. A moves to the right until exactly 8 people remain to the right. How many people does A pass?",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "23"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The final left rank is 46 - 8 = 38. People passed = 38 - 15 = 23."
+    },
+    {
+      "id": "05-144",
+      "number": 144,
+      "question": "In an unknown row, A is 20th from the left and B is 15th from the right. There are exactly 4 people between them. The total is even. Which conclusion is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The total is 39"
+        },
+        {
+          "label": "B",
+          "text": "The total is 34"
+        },
+        {
+          "label": "C",
+          "text": "The conditions are inconsistent"
+        },
+        {
+          "label": "D",
+          "text": "The total is 29"
+        }
+      ],
+      "answer": "C",
+      "explanation": "B can be left 15 or 25, producing totals 29 or 39. Both are odd, so no even total satisfies the conditions."
+    },
+    {
+      "id": "05-145",
+      "number": 145,
+      "question": "A delivery vehicle runs for 1 hour 35 minutes, stops for 25 minutes, then runs for 2 hours 10 minutes. It reaches its destination at 00:20 on Friday. On Thursday, when did it depart?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20:20"
+        },
+        {
+          "label": "B",
+          "text": "20:10"
+        },
+        {
+          "label": "C",
+          "text": "19:50"
+        },
+        {
+          "label": "D",
+          "text": "20:00"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Total span = 95 + 25 + 130 = 250 minutes, or 4 hours 10 minutes. Friday 00:20 minus this is Thursday 20:10."
+    },
+    {
+      "id": "05-146",
+      "number": 146,
+      "question": "K and L score equally, M scores higher than both, and N scores lower than both. How many distinct score levels do these four candidates have?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "3"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The levels are M, the shared K-L level, and N: three distinct levels."
+    },
+    {
+      "id": "05-147",
+      "number": 147,
+      "question": "A row of 63 is divided by its central person. A is 8 places to the left of the centre and B is 11 places to its right. How many people stand strictly between A and B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "19"
+        },
+        {
+          "label": "B",
+          "text": "20"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "17"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Their positional separation is 8 + 11 = 19. Strictly between = 19 - 1 = 18."
+    },
+    {
+      "id": "05-148",
+      "number": 148,
+      "question": "Seats 1 through 30 are filled from the left. A sits at 7 and B at 24. First A swaps with B. Then the entire seating order reverses. What is A’s final left rank minus B’s final left rank?",
+      "options": [
+        {
+          "label": "A",
+          "text": "17"
+        },
+        {
+          "label": "B",
+          "text": "16"
+        },
+        {
+          "label": "C",
+          "text": "-17"
+        },
+        {
+          "label": "D",
+          "text": "-16"
+        }
+      ],
+      "answer": "C",
+      "explanation": "After swapping, A is at 24 and B at 7. Reversal gives A = 7 and B = 24, so the difference is 7 - 24 = -17."
+    },
+    {
+      "id": "05-149",
+      "number": 149,
+      "question": "At Ferozepur, bus P starts at 08:05 and repeats every 20 minutes. Bus Q starts at 08:17 and repeats every 24 minutes. What is their first common departure time?",
+      "options": [
+        {
+          "label": "A",
+          "text": "09:17"
+        },
+        {
+          "label": "B",
+          "text": "09:05"
+        },
+        {
+          "label": "C",
+          "text": "09:25"
+        },
+        {
+          "label": "D",
+          "text": "09:45"
+        }
+      ],
+      "answer": "B",
+      "explanation": "P departs at 08:05, 08:25, 08:45, 09:05; Q at 08:17, 08:41, 09:05. The first match is 09:05."
+    },
+    {
+      "id": "05-150",
+      "number": 150,
+      "question": "A candidate is 18th from the top and 27th from the bottom. After some candidates above and below leave, she is 13th from the top and 19th from the bottom. How many candidates left in total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "13"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "14"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Original total = 18 + 27 - 1 = 44; new total = 13 + 19 - 1 = 31. Departures = 44 - 31 = 13."
+    }
+  ]
+}
