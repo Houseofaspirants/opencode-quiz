@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1071,
+  "nodes": 1076,
   "edges": 10961,
   "silos": 35,
-  "clusters": 203,
+  "clusters": 210,
   "pillars": 34
  },
  "nodes": [
@@ -12802,18 +12802,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-quant-05-average-part-4.html",
-   "url": "/quiz-quant-05-average-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-reasoning-01-number-series-part-1.html",
    "url": "/quiz-reasoning-01-number-series-part-1.html",
    "type": "quiz",
@@ -12936,6 +12924,78 @@
   {
    "id": "quiz-reasoning-04-coding-and-decoding-part-6.html",
    "url": "/quiz-reasoning-04-coding-and-decoding-part-6.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-2.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-3.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-4.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
+   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -38217,18 +38277,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-1857-revolt-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-1857-revolt-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-gk-banking-system-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -38301,30 +38349,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-quant-05-average-part-4.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-reasoning-04-coding-and-decoding-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -38356,6 +38380,42 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-reasoning-04-coding-and-decoding-part-6.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -47601,6 +47661,12 @@
   },
   {
    "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
    "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -47614,12 +47680,6 @@
   {
    "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
    "to": "study-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -82038,6 +82098,7 @@
     "category-reasoning-02-analogy.html",
     "category-reasoning-03-verbal-classifications.html",
     "category-reasoning-04-coding-and-decoding.html",
+    "category-reasoning-05-ranking-and-time-sequence-test.html",
     "topic-reasoning-01-number-series-part-1.html",
     "topic-reasoning-01-number-series-part-2.html",
     "topic-reasoning-01-number-series-part-3.html",
@@ -82055,7 +82116,13 @@
     "topic-reasoning-04-coding-and-decoding-part-3.html",
     "topic-reasoning-04-coding-and-decoding-part-4.html",
     "topic-reasoning-04-coding-and-decoding-part-5.html",
-    "topic-reasoning-04-coding-and-decoding-part-6.html"
+    "topic-reasoning-04-coding-and-decoding-part-6.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-1.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-2.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-3.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-4.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-6.html"
    ],
    "leaves": [
     "session-sunday-live-doubt-session-2026-10-04.html",
