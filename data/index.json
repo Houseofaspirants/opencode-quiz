@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 54,
-    "topics": 145,
-    "quizzes": 145,
-    "questions": 3398,
+    "topics": 147,
+    "quizzes": 147,
+    "questions": 3453,
     "studentsPracticed": 12500
   },
   "site": {
@@ -363,36 +363,6 @@
           "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
         },
         {
-          "id": "dpsp-fundamental-duties-part-1",
-          "name": "DPSP & Fundamental Duties - Part 1",
-          "description": "",
-          "file": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
-          "count": 20,
-          "empty": false,
-          "available": true,
-          "timeLimit": 0,
-          "updatedAt": 1793647706415,
-          "category": "polity",
-          "language": "en",
-          "variants": {
-            "en": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
-            "pa": "questions/gk/polity/dpsp-fundamental-duties-part-1.pa.json"
-          },
-          "availableLanguages": [
-            "en",
-            "pa"
-          ],
-          "titles": {
-            "en": "DPSP & Fundamental Duties - Part 1",
-            "pa": "ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1"
-          },
-          "counts": {
-            "en": 20,
-            "pa": 20
-          },
-          "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
-        },
-        {
           "id": "economic-planning-five-year-plans-part-1",
           "name": "Economic Planning & Five Year Plans - Part 1",
           "description": "",
@@ -721,6 +691,96 @@
             "pa": 25
           },
           "landing": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-2"
+        },
+        {
+          "id": "04-fundamental-rights-and-writs-part1",
+          "name": "Fundamental Rights and Writs - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795171081452,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json",
+            "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamental Rights and Writs - Part 1",
+            "pa": "Fundamental Rights and Writs - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-04-fundamental-rights-and-writs-part1"
+        },
+        {
+          "id": "04-fundamental-rights-and-writs-part2",
+          "name": "Fundamental Rights and Writs - Part 2",
+          "description": "",
+          "file": "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795171081452,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json",
+            "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamental Rights and Writs - Part 2",
+            "pa": "Fundamental Rights and Writs - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-04-fundamental-rights-and-writs-part2"
+        },
+        {
+          "id": "04-fundamental-rights-and-writs-part3",
+          "name": "Fundamental Rights and Writs - Part 3",
+          "description": "",
+          "file": "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795171081452,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json",
+            "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part3-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Fundamental Rights and Writs - Part 3",
+            "pa": "Fundamental Rights and Writs - Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-04-fundamental-rights-and-writs-part3"
         },
         {
           "id": "guru-amar-das-ram-das-arjan-dev-part-1",
@@ -1964,34 +2024,94 @@
           "icon": "📁",
           "topics": [
             {
-              "id": "dpsp-fundamental-duties-part-1",
-              "name": "DPSP & Fundamental Duties - Part 1",
+              "id": "04-fundamental-rights-and-writs-part1",
+              "name": "Fundamental Rights and Writs - Part 1",
               "description": "",
-              "file": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
-              "count": 20,
+              "file": "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json",
+              "count": 25,
               "empty": false,
               "available": true,
               "timeLimit": 0,
-              "updatedAt": 1793647706415,
+              "updatedAt": 1795171081452,
               "category": "polity",
               "language": "en",
               "variants": {
-                "en": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
-                "pa": "questions/gk/polity/dpsp-fundamental-duties-part-1.pa.json"
+                "en": "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json",
+                "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part1-pa.json"
               },
               "availableLanguages": [
                 "en",
                 "pa"
               ],
               "titles": {
-                "en": "DPSP & Fundamental Duties - Part 1",
-                "pa": "ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1"
+                "en": "Fundamental Rights and Writs - Part 1",
+                "pa": "Fundamental Rights and Writs - Part 1"
               },
               "counts": {
-                "en": 20,
-                "pa": 20
+                "en": 25,
+                "pa": 25
               },
-              "landing": "/quiz-gk-dpsp-fundamental-duties-part-1"
+              "landing": "/quiz-gk-04-fundamental-rights-and-writs-part1"
+            },
+            {
+              "id": "04-fundamental-rights-and-writs-part2",
+              "name": "Fundamental Rights and Writs - Part 2",
+              "description": "",
+              "file": "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795171081452,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json",
+                "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Fundamental Rights and Writs - Part 2",
+                "pa": "Fundamental Rights and Writs - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-04-fundamental-rights-and-writs-part2"
+            },
+            {
+              "id": "04-fundamental-rights-and-writs-part3",
+              "name": "Fundamental Rights and Writs - Part 3",
+              "description": "",
+              "file": "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795171081452,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json",
+                "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part3-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Fundamental Rights and Writs - Part 3",
+                "pa": "Fundamental Rights and Writs - Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-04-fundamental-rights-and-writs-part3"
             },
             {
               "id": "01-making-of-the-indian-constitution-part1",
@@ -9342,9 +9462,17 @@
       "41726d3a3949c001",
       1793647706415
     ],
-    "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json": [
-      "5050449425caa85f",
-      1793647706415
+    "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json": [
+      "8fe4f3fd9c0d91f7",
+      1795171081452
+    ],
+    "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json": [
+      "d748acb003184f96",
+      1795171081452
+    ],
+    "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json": [
+      "e94d433d74c23fa0",
+      1795171081452
     ],
     "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json": [
       "a0f3d5bac6d86159",

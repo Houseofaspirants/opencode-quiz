@@ -222,28 +222,6 @@
       }
     },
     {
-      "id": "dpsp-fundamental-duties-part-1",
-      "subject": "gk",
-      "category": "polity",
-      "availableLanguages": [
-        "en",
-        "pa"
-      ],
-      "count": 20,
-      "counts": {
-        "en": 20,
-        "pa": 20
-      },
-      "titles": {
-        "en": "DPSP & Fundamental Duties - Part 1",
-        "pa": "ਨੀਤੀ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ - Part 1"
-      },
-      "variants": {
-        "en": "questions/gk/polity/dpsp-fundamental-duties-part-1.en.json",
-        "pa": "questions/gk/polity/dpsp-fundamental-duties-part-1.pa.json"
-      }
-    },
-    {
       "id": "economic-planning-five-year-plans-part-1",
       "subject": "gk",
       "category": "economy",
@@ -483,6 +461,72 @@
       "variants": {
         "en": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.en.json",
         "pa": "questions/gk/economy-of-punjab/01-financial-position-and-agriculture-of-punjab-part-2.pa.json"
+      }
+    },
+    {
+      "id": "04-fundamental-rights-and-writs-part1",
+      "subject": "gk",
+      "category": "polity",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Fundamental Rights and Writs - Part 1",
+        "pa": "Fundamental Rights and Writs - Part 1"
+      },
+      "variants": {
+        "en": "questions/gk/polity/04-fundamental-rights-and-writs-part1-en.json",
+        "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part1-pa.json"
+      }
+    },
+    {
+      "id": "04-fundamental-rights-and-writs-part2",
+      "subject": "gk",
+      "category": "polity",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Fundamental Rights and Writs - Part 2",
+        "pa": "Fundamental Rights and Writs - Part 2"
+      },
+      "variants": {
+        "en": "questions/gk/polity/04-fundamental-rights-and-writs-part2-en.json",
+        "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part2-pa.json"
+      }
+    },
+    {
+      "id": "04-fundamental-rights-and-writs-part3",
+      "subject": "gk",
+      "category": "polity",
+      "availableLanguages": [
+        "en",
+        "pa"
+      ],
+      "count": 25,
+      "counts": {
+        "en": 25,
+        "pa": 25
+      },
+      "titles": {
+        "en": "Fundamental Rights and Writs - Part 3",
+        "pa": "Fundamental Rights and Writs - Part 3"
+      },
+      "variants": {
+        "en": "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json",
+        "pa": "questions/gk/polity/04-fundamental-rights-and-writs-part3-pa.json"
       }
     },
     {
