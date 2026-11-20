@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1080,
+  "nodes": 1081,
   "edges": 11008,
   "silos": 35,
-  "clusters": 210,
+  "clusters": 212,
   "pillars": 34
  },
  "nodes": [
@@ -12418,6 +12418,42 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
+   "url": "/quiz-gk-04-fundamental-rights-and-writs-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-04-fundamental-rights-and-writs-part2.html",
+   "url": "/quiz-gk-04-fundamental-rights-and-writs-part2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-04-fundamental-rights-and-writs-part3.html",
+   "url": "/quiz-gk-04-fundamental-rights-and-writs-part3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
    "url": "/quiz-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
    "type": "quiz",
@@ -12706,32 +12742,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
-   "url": "/quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
    "url": "/quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
-   "url": "/quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -38349,6 +38361,24 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-04-fundamental-rights-and-writs-part2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-04-fundamental-rights-and-writs-part3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-banking-system-in-india-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -38385,25 +38415,7 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-02-gurmukhi-lipi-bodh-mcq-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -40101,7 +40113,7 @@
   },
   {
    "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -42153,7 +42165,7 @@
   },
   {
    "from": "material-fundamental-rights-and-writs-notes-english.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -82173,6 +82185,9 @@
     "topic-gk-03-union-and-its-territory-part1.html",
     "topic-gk-03-union-and-its-territory-part2.html",
     "topic-gk-03-union-and-its-territory-part3.html",
+    "topic-gk-04-fundamental-rights-and-writs-part1.html",
+    "topic-gk-04-fundamental-rights-and-writs-part2.html",
+    "topic-gk-04-fundamental-rights-and-writs-part3.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
@@ -82186,7 +82201,6 @@
     "topic-gk-banking-system-in-india-part-2.html",
     "topic-gk-basic-concepts-of-economy-part-1.html",
     "topic-gk-basic-concepts-of-economy-part-2.html",
-    "topic-gk-dpsp-fundamental-duties-part-1.html",
     "topic-gk-economic-planning-five-year-plans-part-1.html",
     "topic-gk-economic-planning-five-year-plans-part-2.html",
     "topic-gk-economic-planning-five-year-plans-part-3.html",
