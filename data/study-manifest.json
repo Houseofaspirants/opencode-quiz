@@ -763,21 +763,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 50,
-      "newest": "2026-11-17",
-      "totalSize": 98552731,
-      "chapters": 46,
+      "count": 52,
+      "newest": "2026-11-20",
+      "totalSize": 102047317,
+      "chapters": 48,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 50,
-          "chapters": 46,
-          "pages": 245,
-          "totalSize": 98552731,
-          "newest": "2026-11-17",
+          "files": 52,
+          "chapters": 48,
+          "pages": 260,
+          "totalSize": 102047317,
+          "newest": "2026-11-20",
           "categories": 10,
           "regions": 2
         },
@@ -787,11 +787,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 26,
-              "chapters": 22,
-              "pages": 131,
-              "totalSize": 56152225,
-              "newest": "2026-11-17",
+              "files": 28,
+              "chapters": 24,
+              "pages": 146,
+              "totalSize": 59646811,
+              "newest": "2026-11-20",
               "categories": 5
             },
             "categories": [
@@ -1122,11 +1122,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 8,
-                  "chapters": 8,
-                  "pages": 64,
-                  "totalSize": 15372452,
-                  "newest": "2026-11-15"
+                  "files": 10,
+                  "chapters": 10,
+                  "pages": 79,
+                  "totalSize": 18867038,
+                  "newest": "2026-11-20"
                 },
                 "languages": [
                   {
@@ -1134,7 +1134,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1179,6 +1179,17 @@
                           }
                         ],
                         "pages": 8
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 05 - ਰਾਜ ਦੀ ਨੀਤੀ ਦੇ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ",
+                        "name": "ਅਧਿਆਇ 05 ਰਾਜ ਦੀ ਨੀਤੀ ਦੇ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ",
+                        "parts": [
+                          {
+                            "file": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
                       }
                     ]
                   },
@@ -1187,7 +1198,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1228,6 +1239,17 @@
                         "parts": [
                           {
                             "file": "material-fundamental-rights-and-writs-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 7
+                      },
+                      {
+                        "id": "Chapter 05 - DPSP and Fundamental Duties",
+                        "name": "Chapter 05: Dpsp and Fundamental Duties",
+                        "parts": [
+                          {
+                            "file": "material-chapter-05-dpsp-and-fundamental-duties.html",
                             "n": 1
                           }
                         ],
@@ -1923,8 +1945,8 @@
         ]
       },
       "counts": {
-        "en": 25,
-        "pa": 25
+        "en": 26,
+        "pa": 26
       },
       "pages": {
         "en": "study-gk.html",
@@ -1939,16 +1961,16 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 8,
-      "newest": "2026-11-15",
-      "totalSize": 15372452,
+      "count": 10,
+      "newest": "2026-11-20",
+      "totalSize": 18867038,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1993,6 +2015,17 @@
                 }
               ],
               "pages": 8
+            },
+            {
+              "id": "ਅਧਿਆਇ 05 - ਰਾਜ ਦੀ ਨੀਤੀ ਦੇ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ",
+              "name": "ਅਧਿਆਇ 05 ਰਾਜ ਦੀ ਨੀਤੀ ਦੇ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ",
+              "parts": [
+                {
+                  "file": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
             }
           ]
         },
@@ -2001,7 +2034,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "Chapter 01 - Making of the Indian Constitution",
@@ -2046,15 +2079,26 @@
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "Chapter 05 - DPSP and Fundamental Duties",
+              "name": "Chapter 05: Dpsp and Fundamental Duties",
+              "parts": [
+                {
+                  "file": "material-chapter-05-dpsp-and-fundamental-duties.html",
+                  "n": 1
+                }
+              ],
+              "pages": 7
             }
           ]
         }
       ],
-      "chapters": 8,
+      "chapters": 10,
       "hidden": true,
       "counts": {
-        "en": 4,
-        "pa": 4
+        "en": 5,
+        "pa": 5
       },
       "pages": {
         "en": "study-polity.html",
@@ -2897,6 +2941,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 99,
+  "total": 101,
   "generatedBy": "scripts/study_material.py"
 }

@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1076,
-  "edges": 10961,
+  "nodes": 1080,
+  "edges": 11008,
   "silos": 35,
   "clusters": 210,
   "pillars": 34
@@ -5407,6 +5407,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv",
+   "url": "/material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "url": "/material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 05 ਰਾਜ ਦੀ ਨੀਤੀ ਦੇ ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-arrival-of-europeans-in-india-notes-english",
    "url": "/material-arrival-of-europeans-in-india-notes-english",
    "type": "document",
@@ -5592,6 +5616,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 3: ਪ੍ਰਸ਼ਾਸਕੀ ਨੀਤੀ ਰਾਹੀਂ ਬ੍ਰਿਟਿਸ਼ ਸਰਵਉੱਚਤਾ ਦਾ ਵਿਸਥਾਰ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-chapter-05-dpsp-and-fundamental-duties",
+   "url": "/material-chapter-05-dpsp-and-fundamental-duties",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "url": "/material-chapter-05-dpsp-and-fundamental-duties.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 05: Dpsp and Fundamental Duties (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -16246,6 +16294,18 @@
   {
    "from": "archive-category-polity.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-polity.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28485,6 +28545,12 @@
   },
   {
    "from": "archives.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -28528,6 +28594,12 @@
   {
    "from": "archives.html",
    "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -39116,6 +39188,108 @@
    "weight": 1
   },
   {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "pa/study-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-making-of-indian-constitution-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -39898,6 +40072,108 @@
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "study-polity.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-making-of-indian-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-union-and-its-territory-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -41937,13 +42213,19 @@
   },
   {
    "from": "material-fundamental-rights-and-writs-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamental-rights-and-writs-notes-english.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -42033,13 +42315,19 @@
   },
   {
    "from": "material-fundamental-rights-and-writs-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-fundamental-rights-and-writs-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -43749,7 +44037,13 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-making-of-indian-constitution-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -43839,13 +44133,19 @@
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-making-of-indian-constitution-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-making-of-indian-constitution-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -44955,7 +45255,13 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -45045,13 +45351,19 @@
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-preamble-and-parts-of-the-constitution-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -45129,13 +45441,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-banking-system-in-india-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -45213,13 +45525,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-banking-system-in-india-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -48069,13 +48381,13 @@
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "material-fundamental-rights-and-writs-notes-punjabi.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-union-and-its-territory-notes-english.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -48165,13 +48477,19 @@
   },
   {
    "from": "material-union-and-its-territory-notes-punjabi.html",
-   "to": "material-fundamental-rights-and-writs-notes-english.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-union-and-its-territory-notes-punjabi.html",
-   "to": "material-union-and-its-territory-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-union-and-its-territory-notes-punjabi.html",
+   "to": "material-fundamental-rights-and-writs-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -65775,6 +66093,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-banking-system-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -65787,7 +66111,7 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -65896,12 +66220,6 @@
   {
    "from": "pdfs.html",
    "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -78297,6 +78615,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-arrival-of-europeans-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -78340,6 +78664,12 @@
   {
    "from": "study-material.html",
    "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -78909,6 +79239,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-adhiai-05-raj-di-niti-de-nirdeshk-sidhant-ate-maulik-krtv.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-banking-system-in-india-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -78921,7 +79257,7 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-economic-planning-and-five-year-plans-notes-english.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -79030,12 +79366,6 @@
   {
    "from": "study-notes.html",
    "to": "material-regions-administration-and-location-of-punjab-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-regions-administration-and-location-of-punjab-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
