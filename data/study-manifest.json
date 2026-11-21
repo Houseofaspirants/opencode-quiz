@@ -23,16 +23,16 @@
       "color": "#8b5cf6",
       "description": "MS Office, Internet, Networking, OS, AI Basics and Cyber Security.",
       "order": 1,
-      "count": 12,
-      "newest": "2026-10-19",
-      "totalSize": 41464625,
+      "count": 14,
+      "newest": "2026-11-21",
+      "totalSize": 48307879,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 6,
+          "count": 7,
           "chapters": [
             {
               "id": "01 - ਫੰਡਾਮੈਂਟਲਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Computer Basics)",
@@ -99,6 +99,17 @@
                 }
               ],
               "pages": 10
+            },
+            {
+              "id": "07 - ਕੰਪਿਊਟਰ ਸਿਸਟਮ (Computer System)",
+              "name": "ਅਧਿਆਇ 7: ਕੰਪਿਊਟਰ ਸਿਸਟਮ (Computer System)",
+              "parts": [
+                {
+                  "file": "material-computer-pa-ch07.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
             }
           ]
         },
@@ -107,7 +118,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 6,
+          "count": 7,
           "chapters": [
             {
               "id": "01 - Fundamentals of Computers",
@@ -174,14 +185,25 @@
                 }
               ],
               "pages": 9
+            },
+            {
+              "id": "07 - Computer System",
+              "name": "Chapter 7: Computer System",
+              "parts": [
+                {
+                  "file": "material-computer-en-ch07.html",
+                  "n": 1
+                }
+              ],
+              "pages": 12
             }
           ]
         }
       ],
-      "chapters": 12,
+      "chapters": 14,
       "counts": {
-        "en": 6,
-        "pa": 6
+        "en": 7,
+        "pa": 7
       },
       "pages": {
         "en": "study-computer.html",
@@ -2941,6 +2963,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 101,
+  "total": 103,
   "generatedBy": "scripts/study_material.py"
 }
