@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1085,
+  "nodes": 1087,
   "edges": 11054,
   "silos": 35,
-  "clusters": 212,
+  "clusters": 215,
   "pillars": 34
  },
  "nodes": [
@@ -12120,6 +12120,30 @@
   {
    "id": "quiz-computer-06-central-processing-unit-part1.html",
    "url": "/quiz-computer-06-central-processing-unit-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-07-computer-system-part1.html",
+   "url": "/quiz-computer-07-computer-system-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-computer-07-computer-system-part2.html",
+   "url": "/quiz-computer-07-computer-system-part2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -38433,6 +38457,18 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-computer-07-computer-system-part2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
    "rel": "contextual",
    "weight": 1
@@ -38487,19 +38523,7 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-03-shabad-bodh-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-04-naanv-noun-mcq-part-2.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -40287,7 +40311,7 @@
   },
   {
    "from": "material-computer-en-ch07.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -40497,7 +40521,7 @@
   },
   {
    "from": "material-computer-fundamentals-notes-punjabi.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -41007,7 +41031,7 @@
   },
   {
    "from": "material-computer-pa-ch07.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -57177,19 +57201,19 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "quiz-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
    "to": "quiz-computer-06-central-processing-unit-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
+   "to": "quiz-computer-07-computer-system-part2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -64767,19 +64791,19 @@
   },
   {
    "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "quiz-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
    "to": "quiz-computer-06-central-processing-unit-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "pa/tguide-computer-shortcuts-ms-office-basics.html",
+   "to": "quiz-computer-07-computer-system-part2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -71709,19 +71733,19 @@
   },
   {
    "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "quiz-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
    "to": "quiz-computer-06-central-processing-unit-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
+   "to": "quiz-computer-07-computer-system-part2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -80361,19 +80385,19 @@
   },
   {
    "from": "tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "quiz-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-computer-shortcuts-ms-office-basics.html",
-   "to": "quiz-computer-02-evolution-of-computers-part1.html",
-   "rel": "practice-quiz",
-   "weight": 1
-  },
-  {
-   "from": "tguide-computer-shortcuts-ms-office-basics.html",
    "to": "quiz-computer-06-central-processing-unit-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-computer-shortcuts-ms-office-basics.html",
+   "to": "quiz-computer-07-computer-system-part1.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "tguide-computer-shortcuts-ms-office-basics.html",
+   "to": "quiz-computer-07-computer-system-part2.html",
    "rel": "practice-quiz",
    "weight": 1
   },
@@ -82353,6 +82377,7 @@
     "category-computer-04-input-devices.html",
     "category-computer-05-output-devices.html",
     "category-computer-06-central-processing-unit.html",
+    "category-computer-07-computer-system.html",
     "topic-computer-01-fundamentals-of-computers-part1.html",
     "topic-computer-01-fundamentals-of-computers-part2.html",
     "topic-computer-02-evolution-of-computers-part1.html",
@@ -82362,7 +82387,9 @@
     "topic-computer-04-input-devices-part2.html",
     "topic-computer-05-output-devices-part1.html",
     "topic-computer-05-output-devices-part2.html",
-    "topic-computer-06-central-processing-unit-part1.html"
+    "topic-computer-06-central-processing-unit-part1.html",
+    "topic-computer-07-computer-system-part1.html",
+    "topic-computer-07-computer-system-part2.html"
    ],
    "leaves": [
     "strategy-chandigarh-police-constable-2027-exam-pattern-eligibility.html",
