@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "SMPS, the Power Supply Unit of a computer, stands for:",
+    "options": [
+      "Switched Mode Power Supply",
+      "System Main Power Supply",
+      "Single Mode Power Source",
+      "Switched Memory Power System"
+    ],
+    "answer": 0,
+    "explanation": "SMPS = Switched Mode Power Supply, the Power Supply Unit of the computer.",
+    "tags": [
+      "Computer System",
+      "SMPS"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "A microphone is an input device that converts:",
+    "options": [
+      "Electrical signals into sound",
+      "AC power into DC power",
+      "Sound waves into electrical signals",
+      "Images into digital data"
+    ],
+    "answer": 2,
+    "explanation": "A Microphone is an input device that converts sound waves into electrical signals.",
+    "tags": [
+      "Computer System",
+      "Microphone"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "Who is credited as the inventor of the microphone in the chapter?",
+    "options": [
+      "David S. Lee",
+      "Alexander Graham Bell",
+      "Thomas Edison",
+      "Emile Berliner"
+    ],
+    "answer": 3,
+    "explanation": "The microphone's inventor is given as Emile Berliner (1877).",
+    "tags": [
+      "Computer System",
+      "Microphone"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "In which year did Emile Berliner invent the microphone?",
+    "options": [
+      "1871",
+      "1877",
+      "1887",
+      "1897"
+    ],
+    "answer": 1,
+    "explanation": "Microphone – Inventor: Emile Berliner in 1877.",
+    "tags": [
+      "Computer System",
+      "Microphone"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "A Pen Drive (USB Flash Drive) uses which memory technology?",
+    "options": [
+      "Flash memory",
+      "Magnetic tape",
+      "Optical disc",
+      "CMOS memory"
+    ],
+    "answer": 0,
+    "explanation": "Exam Point: Pen Drive uses Flash Memory Technology.",
+    "tags": [
+      "Computer System",
+      "USB Flash Drive"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "Which of the following is NOT a feature of a USB Flash Drive?",
+    "options": [
+      "Portable",
+      "Rewritable",
+      "USB interface",
+      "Read-only (cannot be rewritten)"
+    ],
+    "answer": 3,
+    "explanation": "Features of a USB Flash Drive are: Portable, Rewritable and USB Interface.",
+    "tags": [
+      "Computer System",
+      "USB Flash Drive"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "Which of the following is a type of memory card?",
+    "options": [
+      "SATA Card",
+      "MicroSD Card",
+      "AGP Card",
+      "PCI Card"
+    ],
+    "answer": 1,
+    "explanation": "Types of memory cards: SD Card, MicroSD Card and MiniSD Card.",
+    "tags": [
+      "Computer System",
+      "Memory Card"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "Connection points on a computer where external devices are connected, acting like 'gates' for data, are called:",
+    "options": [
+      "Ports",
+      "Registers",
+      "Chipsets",
+      "Heat sinks"
+    ],
+    "answer": 0,
+    "explanation": "Ports are connection points where external devices are connected; they act like gates through which data enters or leaves.",
+    "tags": [
+      "Computer System",
+      "Computer Ports"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "USB stands for:",
+    "options": [
+      "Universal System Bus",
+      "Unique Serial Bus",
+      "United Serial Board",
+      "Universal Serial Bus"
+    ],
+    "answer": 3,
+    "explanation": "USB = Universal Serial Bus; it is the most common port, used for keyboard, mouse, printer, pen drive and scanner.",
+    "tags": [
+      "Computer System",
+      "USB Port"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "PATA, an older hard disk port using parallel data transfer, stands for:",
+    "options": [
+      "Parallel Advanced Technology Attachment",
+      "Primary Advanced Technology Adapter",
+      "Parallel Access Transfer Architecture",
+      "Peripheral Advanced Technology Attachment"
+    ],
+    "answer": 0,
+    "explanation": "PATA = Parallel Advanced Technology Attachment; older technology with parallel data transfer.",
+    "tags": [
+      "Computer System",
+      "Hard Disk Ports"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "In modern computers, SATA has replaced:",
+    "options": [
+      "USB",
+      "PATA",
+      "HDMI",
+      "VGA"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: SATA replaced PATA in modern computers; SATA is faster than PATA.",
+    "tags": [
+      "Computer System",
+      "Hard Disk Ports"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "SATA, used for hard disks, stands for:",
+    "options": [
+      "System Advanced Technology Adapter",
+      "Serial Access Transfer Architecture",
+      "Standard Advanced Technology Attachment",
+      "Serial Advanced Technology Attachment"
+    ],
+    "answer": 3,
+    "explanation": "SATA = Serial Advanced Technology Attachment; it is used for hard disks.",
+    "tags": [
+      "Computer System",
+      "Hard Disk Ports"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "Which hard disk port/interface is used in servers and high-performance storage systems?",
+    "options": [
+      "PS/2",
+      "SCSI (Small Computer System Interface)",
+      "VGA",
+      "Serial Port"
+    ],
+    "answer": 1,
+    "explanation": "SCSI (Small Computer System Interface) is used in servers and high-performance storage systems.",
+    "tags": [
+      "Computer System",
+      "Hard Disk Ports"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "Which port transfers multiple bits simultaneously and is used for printers and scanners?",
+    "options": [
+      "Serial Port",
+      "Ethernet Port",
+      "HDMI Port",
+      "Parallel Port"
+    ],
+    "answer": 3,
+    "explanation": "A Parallel Port transfers multiple bits simultaneously and is used for printers and scanners.",
+    "tags": [
+      "Computer System",
+      "Parallel Port"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "A serial port transfers data:",
+    "options": [
+      "Multiple bits at once",
+      "Eight bytes at a time",
+      "One bit at a time",
+      "Only audio and video together"
+    ],
+    "answer": 2,
+    "explanation": "A Serial Port transfers data one bit at a time and is used for modems, projectors and older communication devices.",
+    "tags": [
+      "Computer System",
+      "Serial Port"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "The PS/2 port is used to connect:",
+    "options": [
+      "Monitor and Projector",
+      "Hard Disk",
+      "Internet (LAN)",
+      "Keyboard and Mouse"
+    ],
+    "answer": 3,
+    "explanation": "Exam Point: PS/2 Port = Mouse and Keyboard Connection.",
+    "tags": [
+      "Computer System",
+      "PS/2 Port"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "The PS/2 port was developed by:",
+    "options": [
+      "Apple",
+      "IBM",
+      "Intel",
+      "AMD"
+    ],
+    "answer": 1,
+    "explanation": "The PS/2 (Personal System/2) port was developed by IBM.",
+    "tags": [
+      "Computer System",
+      "PS/2 Port"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "VGA, the port used for monitors, stands for:",
+    "options": [
+      "Video Graphics Array",
+      "Visual Graphics Adapter",
+      "Video Gaming Array",
+      "Virtual Graphics Access"
+    ],
+    "answer": 0,
+    "explanation": "VGA = Video Graphics Array; it connects monitors and projectors.",
+    "tags": [
+      "Computer System",
+      "VGA Port"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "Which type of signal does a VGA port carry?",
+    "options": [
+      "Digital audio and video signal",
+      "Network data signal",
+      "Analog video signal",
+      "Power signal"
+    ],
+    "answer": 2,
+    "explanation": "VGA port carries an Analog Video Signal.",
+    "tags": [
+      "Computer System",
+      "VGA Port"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "Which port transfers both audio and video through a single cable?",
+    "options": [
+      "VGA",
+      "HDMI",
+      "PS/2",
+      "Ethernet"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: HDMI carries both Audio and Video through a single cable.",
+    "tags": [
+      "Computer System",
+      "HDMI Port"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "HDMI stands for:",
+    "options": [
+      "High Digital Media Input",
+      "Hybrid Definition Multimedia Interface",
+      "High Definition Multimedia Interface",
+      "High Density Media Interconnect"
+    ],
+    "answer": 2,
+    "explanation": "HDMI = High Definition Multimedia Interface.",
+    "tags": [
+      "Computer System",
+      "HDMI Port"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "The FireWire port, used for high-speed data transfer, was developed by:",
+    "options": [
+      "Apple",
+      "IBM",
+      "Intel",
+      "Microsoft"
+    ],
+    "answer": 0,
+    "explanation": "FireWire port was developed by Apple and is used for high-speed data transfer, digital cameras and external storage.",
+    "tags": [
+      "Computer System",
+      "FireWire Port"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "FireWire is also known as:",
+    "options": [
+      "IEEE 1394",
+      "IEEE 802.3",
+      "IEEE 1284",
+      "IEEE 802.11"
+    ],
+    "answer": 0,
+    "explanation": "FireWire's other name is IEEE 1394.",
+    "tags": [
+      "Computer System",
+      "FireWire Port"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "The Ethernet port, used for connecting computers to a network, is also called:",
+    "options": [
+      "VGA Port",
+      "PS/2 Port",
+      "LAN Port",
+      "AGP Port"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: Ethernet Port = LAN Port; used for internet connection and Local Area Network.",
+    "tags": [
+      "Computer System",
+      "Ethernet Port"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "Which component controls communication between the CPU, RAM, storage devices and expansion cards?",
+    "options": [
+      "Heat Sink",
+      "CMOS Battery",
+      "Chipset",
+      "Power Connector"
+    ],
+    "answer": 2,
+    "explanation": "A chipset controls communication between the CPU, RAM, storage devices and expansion cards.",
+    "tags": [
+      "Computer System",
+      "Chipset"
+    ]
+  }
+]

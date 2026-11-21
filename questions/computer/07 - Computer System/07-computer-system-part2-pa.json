@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਕੰਪਿਊਟਰ ਦੀ ਪਾਵਰ ਸਪਲਾਈ ਯੂਨਿਟ SMPS ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Switched Mode Power Supply",
+      "System Main Power Supply",
+      "Single Mode Power Source",
+      "Switched Memory Power System"
+    ],
+    "answer": 0,
+    "explanation": "SMPS = Switched Mode Power Supply, ਜੋ ਕੰਪਿਊਟਰ ਦੀ ਪਾਵਰ ਸਪਲਾਈ ਯੂਨਿਟ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "SMPS"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਇੱਕ ਇਨਪੁੱਟ ਡਿਵਾਈਸ ਹੈ ਜੋ ਕਿਸ ਨੂੰ ਬਦਲਦੀ ਹੈ?",
+    "options": [
+      "ਬਿਜਲਈ ਸਿਗਨਲਾਂ ਨੂੰ ਆਵਾਜ਼ ਵਿੱਚ",
+      "AC ਬਿਜਲੀ ਨੂੰ DC ਵਿੱਚ",
+      "ਧੁਨੀ ਤਰੰਗਾਂ ਨੂੰ ਬਿਜਲਈ ਸਿਗਨਲਾਂ ਵਿੱਚ",
+      "ਚਿੱਤਰਾਂ ਨੂੰ ਡਿਜੀਟਲ ਡਾਟਾ ਵਿੱਚ"
+    ],
+    "answer": 2,
+    "explanation": "ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਇੱਕ ਇਨਪੁੱਟ ਡਿਵਾਈਸ ਹੈ ਜੋ ਧੁਨੀ ਤਰੰਗਾਂ ਨੂੰ ਬਿਜਲਈ ਸਿਗਨਲਾਂ ਵਿੱਚ ਬਦਲਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਮਾਈਕ੍ਰੋਫ਼ੋਨ"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਅਧਿਆਇ ਅਨੁਸਾਰ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਦਾ ਖੋਜੀ ਕੌਣ ਹੈ?",
+    "options": [
+      "ਡੇਵਿਡ ਐੱਸ. ਲੀ",
+      "ਅਲੈਗਜ਼ੈਂਡਰ ਗ੍ਰਾਹਮ ਬੈੱਲ",
+      "ਥਾਮਸ ਐਡੀਸਨ",
+      "ਐਮਿਲ ਬਰਲਿਨਰ"
+    ],
+    "answer": 3,
+    "explanation": "ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਦਾ ਖੋਜੀ ਐਮਿਲ ਬਰਲਿਨਰ (1877) ਦੱਸਿਆ ਗਿਆ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਮਾਈਕ੍ਰੋਫ਼ੋਨ"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "ਐਮਿਲ ਬਰਲਿਨਰ ਨੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਦੀ ਖੋਜ ਕਿਸ ਸਾਲ ਕੀਤੀ?",
+    "options": [
+      "1871",
+      "1877",
+      "1887",
+      "1897"
+    ],
+    "answer": 1,
+    "explanation": "ਮਾਈਕ੍ਰੋਫ਼ੋਨ – ਖੋਜੀ: ਐਮਿਲ ਬਰਲਿਨਰ, 1877 ਵਿੱਚ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਮਾਈਕ੍ਰੋਫ਼ੋਨ"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਪੈੱਨ ਡਰਾਈਵ (USB ਫਲੈਸ਼ ਡਰਾਈਵ) ਕਿਹੜੀ ਮੈਮਰੀ ਤਕਨੀਕ ਵਰਤਦੀ ਹੈ?",
+    "options": [
+      "ਫਲੈਸ਼ ਮੈਮਰੀ",
+      "ਮੈਗਨੈਟਿਕ ਟੇਪ",
+      "ਆਪਟੀਕਲ ਡਿਸਕ",
+      "CMOS ਮੈਮਰੀ"
+    ],
+    "answer": 0,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: ਪੈੱਨ ਡਰਾਈਵ ਫਲੈਸ਼ ਮੈਮਰੀ ਤਕਨੀਕ ਵਰਤਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "USB ਫਲੈਸ਼ ਡਰਾਈਵ"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜੀ USB ਫਲੈਸ਼ ਡਰਾਈਵ ਦੀ ਵਿਸ਼ੇਸ਼ਤਾ ਨਹੀਂ ਹੈ?",
+    "options": [
+      "ਪੋਰਟੇਬਲ (ਨਾਲ ਲਿਜਾਣਯੋਗ)",
+      "ਦੁਬਾਰਾ ਲਿਖਣਯੋਗ",
+      "USB ਇੰਟਰਫੇਸ",
+      "ਸਿਰਫ਼ ਪੜ੍ਹਨਯੋਗ (ਦੁਬਾਰਾ ਨਹੀਂ ਲਿਖੀ ਜਾ ਸਕਦੀ)"
+    ],
+    "answer": 3,
+    "explanation": "USB ਫਲੈਸ਼ ਡਰਾਈਵ ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ: ਪੋਰਟੇਬਲ, ਦੁਬਾਰਾ ਲਿਖਣਯੋਗ ਅਤੇ USB ਇੰਟਰਫੇਸ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "USB ਫਲੈਸ਼ ਡਰਾਈਵ"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਹੇਠ ਲਿਖਿਆਂ ਵਿੱਚੋਂ ਕਿਹੜਾ ਮੈਮਰੀ ਕਾਰਡ ਦੀ ਕਿਸਮ ਹੈ?",
+    "options": [
+      "SATA ਕਾਰਡ",
+      "MicroSD ਕਾਰਡ",
+      "AGP ਕਾਰਡ",
+      "PCI ਕਾਰਡ"
+    ],
+    "answer": 1,
+    "explanation": "ਮੈਮਰੀ ਕਾਰਡ ਦੀਆਂ ਕਿਸਮਾਂ: SD ਕਾਰਡ, MicroSD ਕਾਰਡ ਅਤੇ MiniSD ਕਾਰਡ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਮੈਮਰੀ ਕਾਰਡ"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰ ਉੱਤੇ ਉਹ ਕਨੈਕਸ਼ਨ ਬਿੰਦੂ ਜਿੱਥੇ ਬਾਹਰੀ ਡਿਵਾਈਸਾਂ ਜੋੜੀਆਂ ਜਾਂਦੀਆਂ ਹਨ ਅਤੇ ਜੋ ਡਾਟਾ ਲਈ 'ਦਰਵਾਜ਼ਿਆਂ' ਵਾਂਗ ਕੰਮ ਕਰਦੇ ਹਨ, ਕੀ ਅਖਵਾਉਂਦੇ ਹਨ?",
+    "options": [
+      "ਪੋਰਟ",
+      "ਰਜਿਸਟਰ",
+      "ਚਿੱਪਸੈੱਟ",
+      "ਹੀਟ ਸਿੰਕ"
+    ],
+    "answer": 0,
+    "explanation": "ਪੋਰਟ ਉਹ ਕਨੈਕਸ਼ਨ ਬਿੰਦੂ ਹਨ ਜਿੱਥੇ ਬਾਹਰੀ ਡਿਵਾਈਸਾਂ ਜੁੜਦੀਆਂ ਹਨ; ਇਹ ਡਾਟਾ ਦੇ ਆਉਣ-ਜਾਣ ਲਈ ਦਰਵਾਜ਼ਿਆਂ ਵਾਂਗ ਹਨ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਕੰਪਿਊਟਰ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "USB ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Universal System Bus",
+      "Unique Serial Bus",
+      "United Serial Board",
+      "Universal Serial Bus"
+    ],
+    "answer": 3,
+    "explanation": "USB = Universal Serial Bus; ਇਹ ਸਭ ਤੋਂ ਆਮ ਪੋਰਟ ਹੈ, ਜੋ ਕੀਬੋਰਡ, ਮਾਊਸ, ਪ੍ਰਿੰਟਰ, ਪੈੱਨ ਡਰਾਈਵ ਅਤੇ ਸਕੈਨਰ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "USB ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "PATA, ਜੋ ਸਮਾਨਾਂਤਰ ਡਾਟਾ ਟ੍ਰਾਂਸਫ਼ਰ ਵਾਲੀ ਪੁਰਾਣੀ ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ ਹੈ, ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Parallel Advanced Technology Attachment",
+      "Primary Advanced Technology Adapter",
+      "Parallel Access Transfer Architecture",
+      "Peripheral Advanced Technology Attachment"
+    ],
+    "answer": 0,
+    "explanation": "PATA = Parallel Advanced Technology Attachment; ਸਮਾਨਾਂਤਰ ਡਾਟਾ ਟ੍ਰਾਂਸਫ਼ਰ ਵਾਲੀ ਪੁਰਾਣੀ ਤਕਨੀਕ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਆਧੁਨਿਕ ਕੰਪਿਊਟਰਾਂ ਵਿੱਚ SATA ਨੇ ਕਿਸਦੀ ਥਾਂ ਲੈ ਲਈ ਹੈ?",
+    "options": [
+      "USB",
+      "PATA",
+      "HDMI",
+      "VGA"
+    ],
+    "answer": 1,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: ਆਧੁਨਿਕ ਕੰਪਿਊਟਰਾਂ ਵਿੱਚ SATA ਨੇ PATA ਦੀ ਥਾਂ ਲੈ ਲਈ ਹੈ; SATA, PATA ਨਾਲੋਂ ਤੇਜ਼ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਹਾਰਡ ਡਿਸਕ ਲਈ ਵਰਤੀ ਜਾਂਦੀ SATA ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "System Advanced Technology Adapter",
+      "Serial Access Transfer Architecture",
+      "Standard Advanced Technology Attachment",
+      "Serial Advanced Technology Attachment"
+    ],
+    "answer": 3,
+    "explanation": "SATA = Serial Advanced Technology Attachment; ਇਹ ਹਾਰਡ ਡਿਸਕ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "ਸਰਵਰਾਂ ਅਤੇ ਉੱਚ-ਕਾਰਗੁਜ਼ਾਰੀ ਸਟੋਰੇਜ ਸਿਸਟਮਾਂ ਵਿੱਚ ਕਿਹੜਾ ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ/ਇੰਟਰਫੇਸ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "PS/2",
+      "SCSI (Small Computer System Interface)",
+      "VGA",
+      "ਸੀਰੀਅਲ ਪੋਰਟ"
+    ],
+    "answer": 1,
+    "explanation": "SCSI (Small Computer System Interface) ਸਰਵਰਾਂ ਅਤੇ ਉੱਚ-ਕਾਰਗੁਜ਼ਾਰੀ ਸਟੋਰੇਜ ਸਿਸਟਮਾਂ ਵਿੱਚ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਹਾਰਡ ਡਿਸਕ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਕਿਹੜਾ ਪੋਰਟ ਇੱਕੋ ਸਮੇਂ ਕਈ ਬਿੱਟ ਭੇਜਦਾ ਹੈ ਅਤੇ ਪ੍ਰਿੰਟਰਾਂ ਤੇ ਸਕੈਨਰਾਂ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "ਸੀਰੀਅਲ ਪੋਰਟ",
+      "ਈਥਰਨੈੱਟ ਪੋਰਟ",
+      "HDMI ਪੋਰਟ",
+      "ਪੈਰਲਲ ਪੋਰਟ"
+    ],
+    "answer": 3,
+    "explanation": "ਪੈਰਲਲ ਪੋਰਟ ਇੱਕੋ ਸਮੇਂ ਕਈ ਬਿੱਟ ਭੇਜਦਾ ਹੈ ਅਤੇ ਪ੍ਰਿੰਟਰਾਂ ਤੇ ਸਕੈਨਰਾਂ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਪੈਰਲਲ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਸੀਰੀਅਲ ਪੋਰਟ ਡਾਟਾ ਕਿਵੇਂ ਭੇਜਦਾ ਹੈ?",
+    "options": [
+      "ਇੱਕੋ ਸਮੇਂ ਕਈ ਬਿੱਟ",
+      "ਇੱਕ ਸਮੇਂ ਅੱਠ ਬਾਈਟ",
+      "ਇੱਕ ਸਮੇਂ ਇੱਕ ਬਿੱਟ",
+      "ਸਿਰਫ਼ ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ ਇਕੱਠੇ"
+    ],
+    "answer": 2,
+    "explanation": "ਸੀਰੀਅਲ ਪੋਰਟ ਇੱਕ ਸਮੇਂ ਇੱਕ ਬਿੱਟ ਭੇਜਦਾ ਹੈ ਅਤੇ ਮੋਡਮ, ਪ੍ਰੋਜੈਕਟਰ ਅਤੇ ਪੁਰਾਣੀਆਂ ਸੰਚਾਰ ਡਿਵਾਈਸਾਂ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਸੀਰੀਅਲ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "PS/2 ਪੋਰਟ ਕਿਸ ਨੂੰ ਜੋੜਨ ਲਈ ਵਰਤਿਆ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "ਮਾਨੀਟਰ ਅਤੇ ਪ੍ਰੋਜੈਕਟਰ",
+      "ਹਾਰਡ ਡਿਸਕ",
+      "ਇੰਟਰਨੈੱਟ (LAN)",
+      "ਕੀਬੋਰਡ ਅਤੇ ਮਾਊਸ"
+    ],
+    "answer": 3,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: PS/2 ਪੋਰਟ = ਮਾਊਸ ਅਤੇ ਕੀਬੋਰਡ ਕਨੈਕਸ਼ਨ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "PS/2 ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "PS/2 ਪੋਰਟ ਕਿਸਨੇ ਵਿਕਸਿਤ ਕੀਤਾ ਸੀ?",
+    "options": [
+      "Apple",
+      "IBM",
+      "Intel",
+      "AMD"
+    ],
+    "answer": 1,
+    "explanation": "PS/2 (Personal System/2) ਪੋਰਟ IBM ਨੇ ਵਿਕਸਿਤ ਕੀਤਾ ਸੀ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "PS/2 ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਮਾਨੀਟਰ ਲਈ ਵਰਤੀ ਜਾਂਦੀ VGA ਪੋਰਟ ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "Video Graphics Array",
+      "Visual Graphics Adapter",
+      "Video Gaming Array",
+      "Virtual Graphics Access"
+    ],
+    "answer": 0,
+    "explanation": "VGA = Video Graphics Array; ਇਹ ਮਾਨੀਟਰ ਅਤੇ ਪ੍ਰੋਜੈਕਟਰ ਜੋੜਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "VGA ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "VGA ਪੋਰਟ ਕਿਸ ਕਿਸਮ ਦਾ ਸਿਗਨਲ ਲੈ ਕੇ ਜਾਂਦੀ ਹੈ?",
+    "options": [
+      "ਡਿਜੀਟਲ ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ ਸਿਗਨਲ",
+      "ਨੈੱਟਵਰਕ ਡਾਟਾ ਸਿਗਨਲ",
+      "ਐਨਾਲਾਗ ਵੀਡੀਓ ਸਿਗਨਲ",
+      "ਬਿਜਲੀ (ਪਾਵਰ) ਸਿਗਨਲ"
+    ],
+    "answer": 2,
+    "explanation": "VGA ਪੋਰਟ ਐਨਾਲਾਗ ਵੀਡੀਓ ਸਿਗਨਲ ਲੈ ਕੇ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "VGA ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਕਿਹੜਾ ਪੋਰਟ ਇੱਕੋ ਕੇਬਲ ਰਾਹੀਂ ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ ਦੋਵੇਂ ਭੇਜਦਾ ਹੈ?",
+    "options": [
+      "VGA",
+      "HDMI",
+      "PS/2",
+      "ਈਥਰਨੈੱਟ"
+    ],
+    "answer": 1,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: HDMI ਇੱਕੋ ਕੇਬਲ ਰਾਹੀਂ ਆਡੀਓ ਅਤੇ ਵੀਡੀਓ ਦੋਵੇਂ ਲੈ ਕੇ ਜਾਂਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "HDMI ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "HDMI ਦਾ ਪੂਰਾ ਰੂਪ ਕੀ ਹੈ?",
+    "options": [
+      "High Digital Media Input",
+      "Hybrid Definition Multimedia Interface",
+      "High Definition Multimedia Interface",
+      "High Density Media Interconnect"
+    ],
+    "answer": 2,
+    "explanation": "HDMI = High Definition Multimedia Interface।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "HDMI ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਤੇਜ਼-ਗਤੀ ਡਾਟਾ ਟ੍ਰਾਂਸਫ਼ਰ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਫ਼ਾਇਰਵਾਇਰ ਪੋਰਟ ਕਿਸਨੇ ਵਿਕਸਿਤ ਕੀਤੀ?",
+    "options": [
+      "Apple",
+      "IBM",
+      "Intel",
+      "Microsoft"
+    ],
+    "answer": 0,
+    "explanation": "ਫ਼ਾਇਰਵਾਇਰ ਪੋਰਟ Apple ਨੇ ਵਿਕਸਿਤ ਕੀਤੀ ਅਤੇ ਇਹ ਤੇਜ਼ ਡਾਟਾ ਟ੍ਰਾਂਸਫ਼ਰ, ਡਿਜੀਟਲ ਕੈਮਰਿਆਂ ਅਤੇ ਬਾਹਰੀ ਸਟੋਰੇਜ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਫ਼ਾਇਰਵਾਇਰ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Hard",
+    "question": "ਫ਼ਾਇਰਵਾਇਰ ਨੂੰ ਹੋਰ ਕਿਸ ਨਾਮ ਨਾਲ ਜਾਣਿਆ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "IEEE 1394",
+      "IEEE 802.3",
+      "IEEE 1284",
+      "IEEE 802.11"
+    ],
+    "answer": 0,
+    "explanation": "ਫ਼ਾਇਰਵਾਇਰ ਦਾ ਦੂਜਾ ਨਾਮ IEEE 1394 ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਫ਼ਾਇਰਵਾਇਰ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Easy",
+    "question": "ਕੰਪਿਊਟਰਾਂ ਨੂੰ ਨੈੱਟਵਰਕ ਨਾਲ ਜੋੜਨ ਵਾਲੀ ਈਥਰਨੈੱਟ ਪੋਰਟ ਨੂੰ ਹੋਰ ਕੀ ਕਿਹਾ ਜਾਂਦਾ ਹੈ?",
+    "options": [
+      "VGA ਪੋਰਟ",
+      "PS/2 ਪੋਰਟ",
+      "LAN ਪੋਰਟ",
+      "AGP ਪੋਰਟ"
+    ],
+    "answer": 2,
+    "explanation": "ਪ੍ਰੀਖਿਆ ਨੁਕਤਾ: ਈਥਰਨੈੱਟ ਪੋਰਟ = LAN ਪੋਰਟ; ਇੰਟਰਨੈੱਟ ਕਨੈਕਸ਼ਨ ਅਤੇ ਲੋਕਲ ਏਰੀਆ ਨੈੱਟਵਰਕ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਈਥਰਨੈੱਟ ਪੋਰਟ"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Computer System - Part 2",
+    "difficulty": "Medium",
+    "question": "ਕਿਹੜਾ ਭਾਗ CPU, RAM, ਸਟੋਰੇਜ ਡਿਵਾਈਸਾਂ ਅਤੇ ਐਕਸਪੈਂਸ਼ਨ ਕਾਰਡਾਂ ਵਿਚਕਾਰ ਸੰਚਾਰ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ?",
+    "options": [
+      "ਹੀਟ ਸਿੰਕ",
+      "CMOS ਬੈਟਰੀ",
+      "ਚਿੱਪਸੈੱਟ",
+      "ਪਾਵਰ ਕਨੈਕਟਰ"
+    ],
+    "answer": 2,
+    "explanation": "ਚਿੱਪਸੈੱਟ CPU, RAM, ਸਟੋਰੇਜ ਡਿਵਾਈਸਾਂ ਅਤੇ ਐਕਸਪੈਂਸ਼ਨ ਕਾਰਡਾਂ ਵਿਚਕਾਰ ਸੰਚਾਰ ਨੂੰ ਕੰਟਰੋਲ ਕਰਦਾ ਹੈ।",
+    "tags": [
+      "ਕੰਪਿਊਟਰ ਸਿਸਟਮ",
+      "ਚਿੱਪਸੈੱਟ"
+    ]
+  }
+]

@@ -1,0 +1,477 @@
+[
+  {
+    "id": 1,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "A computer system consists of which two main components?",
+    "options": [
+      "Hardware and Software",
+      "Input and Output",
+      "CPU and Monitor",
+      "RAM and ROM"
+    ],
+    "answer": 0,
+    "explanation": "A computer system consists of two main components: Hardware and Software, which work together to perform tasks.",
+    "tags": [
+      "Computer System",
+      "Computer System"
+    ]
+  },
+  {
+    "id": 2,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "The physical and tangible components of a computer that can be seen and touched are called:",
+    "options": [
+      "Software",
+      "Firmware",
+      "Data",
+      "Hardware"
+    ],
+    "answer": 3,
+    "explanation": "Hardware refers to all physical and tangible components of a computer system that can be seen and touched.",
+    "tags": [
+      "Computer System",
+      "Hardware"
+    ]
+  },
+  {
+    "id": 3,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "Which of the following is an example of hardware?",
+    "options": [
+      "MS Word",
+      "Web Browser",
+      "Operating System",
+      "Hard Disk"
+    ],
+    "answer": 3,
+    "explanation": "Monitor, Keyboard, Mouse, CPU, Motherboard, RAM, ROM, Hard Disk, Printer and Speakers are examples of hardware.",
+    "tags": [
+      "Computer System",
+      "Hardware"
+    ]
+  },
+  {
+    "id": 4,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "According to the Hardware vs Software comparison, which feature belongs to software?",
+    "options": [
+      "Cannot be physically damaged",
+      "Subject to physical damage",
+      "Can be touched",
+      "Consists of physical components"
+    ],
+    "answer": 0,
+    "explanation": "Software consists of programs and instructions, cannot be touched and cannot be physically damaged.",
+    "tags": [
+      "Computer System",
+      "Hardware vs Software"
+    ]
+  },
+  {
+    "id": 5,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "In the Hardware vs Software table, which of these is given as an example of software?",
+    "options": [
+      "Keyboard",
+      "Monitor",
+      "MS Word",
+      "Printer"
+    ],
+    "answer": 2,
+    "explanation": "The table gives Keyboard as an example of hardware and MS Word as an example of software.",
+    "tags": [
+      "Computer System",
+      "Hardware vs Software"
+    ]
+  },
+  {
+    "id": 6,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "The main circuit board of a computer that connects and holds together almost all internal hardware components is the:",
+    "options": [
+      "Expansion Card",
+      "Heat Sink",
+      "SMPS",
+      "Motherboard"
+    ],
+    "answer": 3,
+    "explanation": "The Motherboard is the main circuit board that connects and holds almost all internal hardware components.",
+    "tags": [
+      "Computer System",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 7,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is another name for the motherboard?",
+    "options": [
+      "Expansion Board",
+      "Sound Board",
+      "System Board",
+      "Network Board"
+    ],
+    "answer": 2,
+    "explanation": "Other names of the motherboard are Mainboard, System Board and Printed Circuit Board (PCB).",
+    "tags": [
+      "Computer System",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 8,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "The motherboard is also known as PCB. PCB stands for:",
+    "options": [
+      "Primary Circuit Board",
+      "Power Control Board",
+      "Printed Circuit Board",
+      "Processor Connection Board"
+    ],
+    "answer": 2,
+    "explanation": "Motherboard is also known as PCB – Printed Circuit Board.",
+    "tags": [
+      "Computer System",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 9,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "Which component is called the 'Heart' or 'Backbone' of the computer system?",
+    "options": [
+      "Motherboard",
+      "CPU",
+      "Monitor",
+      "Hard Disk"
+    ],
+    "answer": 0,
+    "explanation": "Important Exam Point: Motherboard = Heart/Backbone of Computer System.",
+    "tags": [
+      "Computer System",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 10,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "The motherboard acts as the ________ of the computer.",
+    "options": [
+      "Power generator",
+      "Permanent storage",
+      "Display unit",
+      "Communication center"
+    ],
+    "answer": 3,
+    "explanation": "The motherboard acts as the communication center of the computer.",
+    "tags": [
+      "Computer System",
+      "Motherboard"
+    ]
+  },
+  {
+    "id": 11,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is listed as a function of the motherboard?",
+    "options": [
+      "Converts AC power into DC power",
+      "Houses the CPU by providing a socket for the processor",
+      "Converts sound waves into electrical signals",
+      "Stores data permanently using flash memory"
+    ],
+    "answer": 1,
+    "explanation": "Functions of the motherboard: connects all hardware, supplies power, enables communication and houses the CPU.",
+    "tags": [
+      "Computer System",
+      "Functions of Motherboard"
+    ]
+  },
+  {
+    "id": 12,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "Memory slots on the motherboard are mainly used for installing:",
+    "options": [
+      "Graphics cards",
+      "RAM modules",
+      "The SMPS",
+      "The CMOS battery"
+    ],
+    "answer": 1,
+    "explanation": "Memory slots are used for installing memory modules such as RAM (and ROM modules in some systems).",
+    "tags": [
+      "Computer System",
+      "Memory Slots"
+    ]
+  },
+  {
+    "id": 13,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "Expansion slots on a motherboard are used to:",
+    "options": [
+      "Store BIOS settings",
+      "Convert AC power into DC power",
+      "Add new hardware capabilities by installing additional cards",
+      "Cool the processor"
+    ],
+    "answer": 2,
+    "explanation": "Exam Point: Expansion Slot = used to add new hardware capabilities (additional hardware cards).",
+    "tags": [
+      "Computer System",
+      "Expansion Slots"
+    ]
+  },
+  {
+    "id": 14,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "Which of the following is an example of a card installed in an expansion slot?",
+    "options": [
+      "CMOS Battery",
+      "Heat Sink",
+      "Power Connector",
+      "TV Tuner Card"
+    ],
+    "answer": 3,
+    "explanation": "Graphics Card, Sound Card, Network Card and TV Tuner Card are examples of expansion cards.",
+    "tags": [
+      "Computer System",
+      "Expansion Slots"
+    ]
+  },
+  {
+    "id": 15,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Hard",
+    "question": "Northbridge is a chipset responsible for high-speed communication between:",
+    "options": [
+      "Keyboard, Mouse and Printer",
+      "CPU, RAM and Graphics Controller",
+      "SMPS and Power Connector",
+      "Pen Drive and Scanner"
+    ],
+    "answer": 1,
+    "explanation": "Northbridge handles high-speed communication between the CPU, RAM and Graphics Controller.",
+    "tags": [
+      "Computer System",
+      "Northbridge"
+    ]
+  },
+  {
+    "id": 16,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Hard",
+    "question": "Modern processors often integrate the functions of which motherboard component into the CPU itself?",
+    "options": [
+      "Northbridge",
+      "CMOS Battery",
+      "SMPS",
+      "PS/2 Port"
+    ],
+    "answer": 0,
+    "explanation": "Note: Modern processors often integrate Northbridge functions into the CPU itself.",
+    "tags": [
+      "Computer System",
+      "Northbridge"
+    ]
+  },
+  {
+    "id": 17,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "PCI slot stands for:",
+    "options": [
+      "Peripheral Component Interconnect",
+      "Personal Computer Interface",
+      "Primary Control Interconnect",
+      "Parallel Component Interface"
+    ],
+    "answer": 0,
+    "explanation": "PCI = Peripheral Component Interconnect; it connects sound cards, modems, network cards and video cards.",
+    "tags": [
+      "Computer System",
+      "PCI Slot"
+    ]
+  },
+  {
+    "id": 18,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "AGP stands for:",
+    "options": [
+      "Advanced Graphics Processor",
+      "Analog Graphics Port",
+      "Accelerated Graphics Port",
+      "Auxiliary Graphics Panel"
+    ],
+    "answer": 2,
+    "explanation": "AGP stands for Accelerated Graphics Port.",
+    "tags": [
+      "Computer System",
+      "AGP Slot"
+    ]
+  },
+  {
+    "id": 19,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "The AGP slot is specially designed for:",
+    "options": [
+      "Sound Cards",
+      "Graphics Cards",
+      "RAM modules",
+      "Hard Disks"
+    ],
+    "answer": 1,
+    "explanation": "Exam Point: AGP = Graphics Card Slot.",
+    "tags": [
+      "Computer System",
+      "AGP Slot"
+    ]
+  },
+  {
+    "id": 20,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "A metallic component that absorbs and dissipates heat generated by the processor is called:",
+    "options": [
+      "CMOS Battery",
+      "Northbridge",
+      "Heat Sink",
+      "Power Connector"
+    ],
+    "answer": 2,
+    "explanation": "A Heat Sink absorbs and dissipates heat generated by the processor and prevents CPU overheating.",
+    "tags": [
+      "Computer System",
+      "Heat Sink"
+    ]
+  },
+  {
+    "id": 21,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Hard",
+    "question": "A heat sink is often used together with:",
+    "options": [
+      "CMOS battery and BIOS",
+      "SMPS and power connector",
+      "Memory slots and RAM",
+      "Cooling fan and thermal paste"
+    ],
+    "answer": 3,
+    "explanation": "A heat sink is often used with a Cooling Fan and Thermal Paste.",
+    "tags": [
+      "Computer System",
+      "Heat Sink"
+    ]
+  },
+  {
+    "id": 22,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Medium",
+    "question": "The power connector on the motherboard supplies electrical power from the:",
+    "options": [
+      "SMPS",
+      "CMOS Battery",
+      "USB Port",
+      "Heat Sink"
+    ],
+    "answer": 0,
+    "explanation": "The Power Connector supplies electrical power from the SMPS to the motherboard.",
+    "tags": [
+      "Computer System",
+      "Power Connector"
+    ]
+  },
+  {
+    "id": 23,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "Which component maintains the BIOS settings, date and time even when the computer is switched off?",
+    "options": [
+      "CMOS Battery",
+      "SMPS",
+      "Heat Sink",
+      "Northbridge"
+    ],
+    "answer": 0,
+    "explanation": "Exam Point: CMOS Battery maintains BIOS settings; it also stores date, time and hardware configuration.",
+    "tags": [
+      "Computer System",
+      "CMOS Battery"
+    ]
+  },
+  {
+    "id": 24,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Hard",
+    "question": "CMOS stands for:",
+    "options": [
+      "Central Memory Operating System",
+      "Complementary Metal Oxide Semiconductor",
+      "Complementary Memory Oxide Storage",
+      "Computer Metal Oxide Semiconductor"
+    ],
+    "answer": 1,
+    "explanation": "CMOS stands for Complementary Metal Oxide Semiconductor.",
+    "tags": [
+      "Computer System",
+      "CMOS Battery"
+    ]
+  },
+  {
+    "id": 25,
+    "subject": "Computer",
+    "topic": "Computer System - Part 1",
+    "difficulty": "Easy",
+    "question": "SMPS converts:",
+    "options": [
+      "DC power into AC power",
+      "AC power from the wall socket into DC power",
+      "Sound waves into electrical signals",
+      "Analog signals into digital signals"
+    ],
+    "answer": 1,
+    "explanation": "SMPS converts AC power from the wall socket into DC power required by computer components.",
+    "tags": [
+      "Computer System",
+      "SMPS"
+    ]
+  }
+]
