@@ -3,10 +3,10 @@
   "generatedAt": "2026-11-21T06:06:01.477Z",
   "stats": {
     "subjects": 7,
-    "categories": 54,
-    "topics": 147,
-    "quizzes": 147,
-    "questions": 3453,
+    "categories": 55,
+    "topics": 149,
+    "quizzes": 149,
+    "questions": 3503,
     "studentsPracticed": 12500
   },
   "site": {
@@ -7486,6 +7486,66 @@
           "landing": "/quiz-computer-06-central-processing-unit-part1"
         },
         {
+          "id": "07-computer-system-part1",
+          "name": "Computer System - Part 1",
+          "description": "",
+          "file": "questions/computer/07 - Computer System/07-computer-system-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795241230684,
+          "category": "07-computer-system",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/07 - Computer System/07-computer-system-part1-en.json",
+            "pa": "questions/computer/07 - Computer System/07-computer-system-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Computer System - Part 1",
+            "pa": "Computer System - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-07-computer-system-part1"
+        },
+        {
+          "id": "07-computer-system-part2",
+          "name": "Computer System - Part 2",
+          "description": "",
+          "file": "questions/computer/07 - Computer System/07-computer-system-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795241230684,
+          "category": "07-computer-system",
+          "language": "en",
+          "variants": {
+            "en": "questions/computer/07 - Computer System/07-computer-system-part2-en.json",
+            "pa": "questions/computer/07 - Computer System/07-computer-system-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Computer System - Part 2",
+            "pa": "Computer System - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-computer-07-computer-system-part2"
+        },
+        {
           "id": "02-evolution-of-computers-part1",
           "name": "Evolution of Computers - Part 1",
           "description": "",
@@ -8110,6 +8170,75 @@
             }
           ],
           "landing": "/category-computer-06-central-processing-unit"
+        },
+        {
+          "id": "07-computer-system",
+          "name": "07   Computer System",
+          "folder": "07 - Computer System",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "07-computer-system-part1",
+              "name": "Computer System - Part 1",
+              "description": "",
+              "file": "questions/computer/07 - Computer System/07-computer-system-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795241230684,
+              "category": "07-computer-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/07 - Computer System/07-computer-system-part1-en.json",
+                "pa": "questions/computer/07 - Computer System/07-computer-system-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Computer System - Part 1",
+                "pa": "Computer System - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-07-computer-system-part1"
+            },
+            {
+              "id": "07-computer-system-part2",
+              "name": "Computer System - Part 2",
+              "description": "",
+              "file": "questions/computer/07 - Computer System/07-computer-system-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795241230684,
+              "category": "07-computer-system",
+              "language": "en",
+              "variants": {
+                "en": "questions/computer/07 - Computer System/07-computer-system-part2-en.json",
+                "pa": "questions/computer/07 - Computer System/07-computer-system-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Computer System - Part 2",
+                "pa": "Computer System - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-computer-07-computer-system-part2"
+            }
+          ],
+          "landing": "/category-computer-07-computer-system"
         }
       ],
       "landing": "/subject-computer"
@@ -9165,6 +9294,14 @@
     "questions/computer/06 - Central Processing Unit/06-central-processing-unit-part1-en.json": [
       "8fc8499710880fba",
       1793647706415
+    ],
+    "questions/computer/07 - Computer System/07-computer-system-part1-en.json": [
+      "f7d79c02cdf6c9fd",
+      1795241230684
+    ],
+    "questions/computer/07 - Computer System/07-computer-system-part2-en.json": [
+      "17d05eccc2c6dfcb",
+      1795241230684
     ],
     "questions/current-affairs/august/current-affairs-august-2026-part1-punjab-national-states-en.json": [
       "cae96f986328f5c4",
