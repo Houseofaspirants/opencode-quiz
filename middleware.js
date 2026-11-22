@@ -62,7 +62,7 @@ const MAP = {
   "subject=english&language=en&chapter=04 - Simple, Compound and Complex Sentences": "/material-english-grammar-simple-compound-complex-sentences-notes",
   "subject=english&language=en&chapter=05 - Subject and Predicate (Complete and Simple Forms)": "/material-english-grammar-subject-predicate-complete-simple-forms-notes",
   "subject=english&language=en&chapter=06 - Subject Verb Agreement": "/material-english-grammar-subject-verb-agreement-notes",
-  "subject=english&language=en&chapter=07 - Advanced Simple, Compound and Complex Sentences": "/material-english-grammar-advanced-simple-compound-complex-sentences-notes",
+  "subject=english&language=en&chapter=07 - Parts of Speech (Nouns and Pronouns)": "/material-english-grammar-parts-of-speech-nouns-and-pronouns-notes",
   "subject=english&language=pa": "/study-english",
   "subject=geography": "/study-geography",
   "subject=geography&language=en": "/study-geography",
