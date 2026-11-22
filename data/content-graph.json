@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1089,
+  "nodes": 1091,
   "edges": 11080,
   "silos": 35,
-  "clusters": 215,
+  "clusters": 218,
   "pillars": 34
  },
  "nodes": [
@@ -12430,6 +12430,42 @@
    "hub": ""
   },
   {
+   "id": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-1.html",
+   "url": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-2.html",
+   "url": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-3.html",
+   "url": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
    "url": "/quiz-gk-01-financial-position-and-agriculture-of-punjab-part-1.html",
    "type": "quiz",
@@ -12780,18 +12816,6 @@
   {
    "id": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
    "url": "/quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
-   "url": "/quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -38505,6 +38529,24 @@
   },
   {
    "from": "expected-mcqs.html",
+   "to": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-english-07-parts-of-speech-nouns-and-pronouns-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
    "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
    "rel": "contextual",
    "weight": 1
@@ -38542,24 +38584,6 @@
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-money-money-supply-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-physical-features-and-rivers-of-punjab-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-punjabi-04-naanv-noun-mcq-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -82647,7 +82671,10 @@
     "topic-english-04-simple-compound-and-complex-sentences-part-1.html",
     "topic-english-06-subject-verb-agreement-part-1.html",
     "topic-english-06-subject-verb-agreement-part-2.html",
-    "topic-english-06-subject-verb-agreement-part-3.html"
+    "topic-english-06-subject-verb-agreement-part-3.html",
+    "topic-english-07-parts-of-speech-nouns-and-pronouns-part-1.html",
+    "topic-english-07-parts-of-speech-nouns-and-pronouns-part-2.html",
+    "topic-english-07-parts-of-speech-nouns-and-pronouns-part-3.html"
    ],
    "leaves": [
     "strategy-chandigarh-police-constable-2027-exam-pattern-eligibility.html",
