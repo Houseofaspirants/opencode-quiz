@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1087,
-  "edges": 11054,
+  "nodes": 1089,
+  "edges": 11080,
   "silos": 35,
   "clusters": 215,
   "pillars": 34
@@ -5976,6 +5976,30 @@
    "type": "study-material",
    "template": "",
    "title": "ਅਧਿਆਇ 02 ਆਰਥਿਕ ਯੋਜਨਾਬੰਦੀ ਅਤੇ ਪੰਜ ਸਾਲਾ ਯੋਜਨਾਵਾਂ",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-english-grammar-advanced-simple-compound-complex-sentences-notes",
+   "url": "/material-english-grammar-advanced-simple-compound-complex-sentences-notes",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "url": "/material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Advanced Simple Compound and Complex Sentences (English)",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -16054,6 +16078,12 @@
   {
    "from": "archive-category-english.html",
    "to": "index.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-english.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28780,6 +28810,12 @@
   {
    "from": "archives.html",
    "to": "material-economic-planning-and-five-year-plans-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -41690,6 +41726,108 @@
    "weight": 1
   },
   {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "quiz-english-04-simple-compound-and-complex-sentences-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "study-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-clauses-and-phrases-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-subject-and-predicate-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-types-of-sentences-notes.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-subject-verb-agreement-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
    "from": "material-english-grammar-clauses-and-phrases-notes.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
    "rel": "contextual",
@@ -41771,6 +41909,12 @@
    "from": "material-english-grammar-clauses-and-phrases-notes.html",
    "to": "material-english-grammar-types-of-sentences-notes.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-clauses-and-phrases-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -41871,6 +42015,12 @@
   },
   {
    "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-simple-compound-complex-sentences-notes.html",
    "to": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
    "rel": "related-study-material",
    "weight": 1
@@ -41963,6 +42113,12 @@
    "from": "material-english-grammar-subject-and-predicate-notes.html",
    "to": "material-english-grammar-types-of-sentences-notes.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-and-predicate-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -42063,6 +42219,12 @@
   },
   {
    "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-predicate-complete-simple-forms-notes.html",
    "to": "material-english-grammar-simple-compound-complex-sentences-notes.html",
    "rel": "related-study-material",
    "weight": 1
@@ -42159,6 +42321,12 @@
   },
   {
    "from": "material-english-grammar-subject-verb-agreement-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-subject-verb-agreement-notes.html",
    "to": "material-english-grammar-simple-compound-complex-sentences-notes.html",
    "rel": "related-study-material",
    "weight": 1
@@ -42251,6 +42419,12 @@
    "from": "material-english-grammar-types-of-sentences-notes.html",
    "to": "material-english-grammar-subject-and-predicate-notes.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-english-grammar-types-of-sentences-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -45795,7 +45969,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-computer-pa-ch07.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -45879,7 +46053,7 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-computer-pa-ch07.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -66477,6 +66651,12 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -66508,12 +66688,6 @@
   {
    "from": "pdfs.html",
    "to": "material-maths-average-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -79107,6 +79281,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-english-grammar-clauses-and-phrases-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -79635,6 +79815,12 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-english-grammar-subject-verb-agreement-notes.html",
    "rel": "contextual",
    "weight": 1
@@ -79666,12 +79852,6 @@
   {
    "from": "study-notes.html",
    "to": "material-maths-average-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-maths-decimal-fractions-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },

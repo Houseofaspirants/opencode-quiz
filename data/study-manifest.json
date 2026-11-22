@@ -218,9 +218,9 @@
       "color": "#10b981",
       "description": "Grammar, Vocabulary, Idioms, One Word and Error Detection.",
       "order": 2,
-      "count": 6,
-      "newest": "2026-10-30",
-      "totalSize": 16060479,
+      "count": 7,
+      "newest": "2026-11-22",
+      "totalSize": 18695961,
       "languages": [
         {
           "id": "pa",
@@ -235,7 +235,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 6,
+          "count": 7,
           "chapters": [
             {
               "id": "01 - Subject and Predicate",
@@ -302,13 +302,24 @@
                 }
               ],
               "pages": 15
+            },
+            {
+              "id": "07 - Advanced Simple, Compound and Complex Sentences",
+              "name": "Chapter 7: Advanced Simple Compound and Complex Sentences",
+              "parts": [
+                {
+                  "file": "material-english-grammar-advanced-simple-compound-complex-sentences-notes.html",
+                  "n": 1
+                }
+              ],
+              "pages": 13
             }
           ]
         }
       ],
-      "chapters": 6,
+      "chapters": 7,
       "counts": {
-        "en": 6,
+        "en": 7,
         "pa": 0
       },
       "pages": {
@@ -2963,6 +2974,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 103,
+  "total": 104,
   "generatedBy": "scripts/study_material.py"
 }

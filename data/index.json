@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 55,
-    "topics": 149,
-    "quizzes": 149,
-    "questions": 3503,
+    "topics": 152,
+    "quizzes": 152,
+    "questions": 3578,
     "studentsPracticed": 12500
   },
   "site": {
@@ -7441,6 +7441,81 @@
             "en": 25
           },
           "landing": "/quiz-english-06-subject-verb-agreement-part-3"
+        },
+        {
+          "id": "07-parts-of-speech-nouns-and-pronouns-part-1",
+          "name": "07 Parts Of Speech Nouns And Pronouns Part 1",
+          "description": "",
+          "file": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795319846275,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-1-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "07 Parts Of Speech Nouns And Pronouns Part 1"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-1"
+        },
+        {
+          "id": "07-parts-of-speech-nouns-and-pronouns-part-2",
+          "name": "07 Parts Of Speech Nouns And Pronouns Part 2",
+          "description": "",
+          "file": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795319846275,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-2-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "07 Parts Of Speech Nouns And Pronouns Part 2"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-2"
+        },
+        {
+          "id": "07-parts-of-speech-nouns-and-pronouns-part-3",
+          "name": "07 Parts Of Speech Nouns And Pronouns Part 3",
+          "description": "",
+          "file": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795319846275,
+          "language": "en",
+          "variants": {
+            "en": "questions/english/07-parts-of-speech-nouns-and-pronouns-part-3-en.json"
+          },
+          "availableLanguages": [
+            "en"
+          ],
+          "titles": {
+            "en": "07 Parts Of Speech Nouns And Pronouns Part 3"
+          },
+          "counts": {
+            "en": 25
+          },
+          "landing": "/quiz-english-07-parts-of-speech-nouns-and-pronouns-part-3"
         }
       ],
       "categories": [],
@@ -9394,6 +9469,18 @@
     "questions/english/06-subject-verb-agreement-part-3-en.json": [
       "ba74ee0c3355300a",
       1793647706415
+    ],
+    "questions/english/07-parts-of-speech-nouns-and-pronouns-part-1-en.json": [
+      "2469149717a30653",
+      1795319846275
+    ],
+    "questions/english/07-parts-of-speech-nouns-and-pronouns-part-2-en.json": [
+      "c6652baf664326ad",
+      1795319846275
+    ],
+    "questions/english/07-parts-of-speech-nouns-and-pronouns-part-3-en.json": [
+      "cea16f5f555c28e3",
+      1795319846275
     ],
     "questions/gk/culture-of-punjab/01-punjabi-language-script-calendar-part-1.en.json": [
       "c1daaeacfdc72a75",
