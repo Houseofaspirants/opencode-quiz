@@ -23,7 +23,7 @@
   "nodes": 1095,
   "edges": 11127,
   "silos": 35,
-  "clusters": 218,
+  "clusters": 219,
   "pillars": 34
  },
  "nodes": [
@@ -12778,6 +12778,18 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-government-administration-after-1857-part-1.html",
+   "url": "/quiz-gk-government-administration-after-1857-part-1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "url": "/quiz-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
    "type": "quiz",
@@ -12828,18 +12840,6 @@
   {
    "id": "quiz-gk-money-money-supply-part-1.html",
    "url": "/quiz-gk-money-money-supply-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-money-money-supply-part-2.html",
-   "url": "/quiz-gk-money-money-supply-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -38649,13 +38649,13 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-money-money-supply-part-1.html",
+   "to": "quiz-gk-government-administration-after-1857-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-money-money-supply-part-2.html",
+   "to": "quiz-gk-money-money-supply-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -43215,7 +43215,7 @@
   },
   {
    "from": "material-government-administration-after-1857-notes-english.html",
-   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "to": "quiz-gk-government-administration-after-1857-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -83098,6 +83098,7 @@
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-1.html",
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-2.html",
     "topic-gk-extension-of-british-paramountcy-through-administrative-policy-part-3.html",
+    "topic-gk-government-administration-after-1857-part-1.html",
     "topic-gk-guru-amar-das-ram-das-arjan-dev-part-1.html",
     "topic-gk-guru-amar-das-ram-das-arjan-dev-part-2.html",
     "topic-gk-guru-granth-sahib-ji-and-the-five-takhts-part-1.html",

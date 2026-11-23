@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-22T04:17:28.113Z",
+  "generatedAt": "2026-11-23T04:18:44.945Z",
   "stats": {
     "subjects": 7,
     "categories": 55,
-    "topics": 152,
-    "quizzes": 152,
-    "questions": 3578,
+    "topics": 153,
+    "quizzes": 153,
+    "questions": 3603,
     "studentsPracticed": 12500
   },
   "site": {
@@ -781,6 +781,36 @@
             "pa": 25
           },
           "landing": "/quiz-gk-04-fundamental-rights-and-writs-part3"
+        },
+        {
+          "id": "government-administration-after-1857-part-1",
+          "name": "Government Administration After 1857 - Part 1",
+          "description": "",
+          "file": "questions/gk/modern-history/government-administration-after-1857-part-1.en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795407099859,
+          "category": "modern-history",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/modern-history/government-administration-after-1857-part-1.en.json",
+            "pa": "questions/gk/modern-history/government-administration-after-1857-part-1.pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Government Administration After 1857 - Part 1",
+            "pa": "1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-government-administration-after-1857-part-1"
         },
         {
           "id": "guru-amar-das-ram-das-arjan-dev-part-1",
@@ -2013,6 +2043,36 @@
                 "pa": 25
               },
               "landing": "/quiz-gk-extension-of-british-paramountcy-through-administrative-policy-part-3"
+            },
+            {
+              "id": "government-administration-after-1857-part-1",
+              "name": "Government Administration After 1857 - Part 1",
+              "description": "",
+              "file": "questions/gk/modern-history/government-administration-after-1857-part-1.en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795407099859,
+              "category": "modern-history",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/modern-history/government-administration-after-1857-part-1.en.json",
+                "pa": "questions/gk/modern-history/government-administration-after-1857-part-1.pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Government Administration After 1857 - Part 1",
+                "pa": "1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-government-administration-after-1857-part-1"
             }
           ],
           "landing": "/category-gk-modern-history"
@@ -9657,6 +9717,10 @@
     "questions/gk/modern-history/extension-of-british-paramountcy-through-administrative-policy-part-3.en.json": [
       "1ecd8a60c4dc9c52",
       1793647706415
+    ],
+    "questions/gk/modern-history/government-administration-after-1857-part-1.en.json": [
+      "a7944bef90d293c6",
+      1795407099859
     ],
     "questions/gk/polity/01-making-of-the-indian-constitution-part1-en.json": [
       "77bb59bd797fbe17",
