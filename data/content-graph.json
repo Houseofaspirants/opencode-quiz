@@ -20,8 +20,8 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1091,
-  "edges": 11080,
+  "nodes": 1095,
+  "edges": 11127,
   "silos": 35,
   "clusters": 218,
   "pillars": 34
@@ -6288,6 +6288,54 @@
    "type": "study-material",
    "template": "",
    "title": "ਜੈਨਰੇਸ਼ਨਜ਼ ਆਫ ਕੰਪਿਊਟਰਸ (Generations of Computers)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-government-administration-after-1857-notes-english",
+   "url": "/material-government-administration-after-1857-notes-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-government-administration-after-1857-notes-english.html",
+   "url": "/material-government-administration-after-1857-notes-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 05: Government Administration After 1857 (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
+   "id": "material-government-administration-after-1857-notes-punjabi",
+   "url": "/material-government-administration-after-1857-notes-punjabi",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-government-administration-after-1857-notes-punjabi.html",
+   "url": "/material-government-administration-after-1857-notes-punjabi.html",
+   "type": "study-material",
+   "template": "",
+   "title": "ਅਧਿਆਇ 5: 1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -16336,6 +16384,18 @@
   {
    "from": "archive-category-history.html",
    "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-history.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -28917,6 +28977,18 @@
   },
   {
    "from": "archives.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
    "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -39255,7 +39327,13 @@
   },
   {
    "from": "material-1857-revolt-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -39351,7 +39429,13 @@
   },
   {
    "from": "material-1857-revolt-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -39543,13 +39627,13 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-english.html",
-   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -39645,7 +39729,13 @@
   },
   {
    "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -40143,7 +40233,13 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-english.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -40239,7 +40335,13 @@
   },
   {
    "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -41451,7 +41553,13 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-english.html",
-   "to": "material-1857-revolt-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-east-india-company-expansion-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -41547,7 +41655,13 @@
   },
   {
    "from": "material-east-india-company-expansion-notes-punjabi.html",
-   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-east-india-company-expansion-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -43072,6 +43186,210 @@
   {
    "from": "material-generations-of-computer-notes-punjabi.html",
    "to": "material-cpu-central-processing-unit-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "quiz-gk-regions-administration-and-location-of-punjab-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "study-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-arrival-of-europeans-in-india-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-british-paramountcy-administrative-policy-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-east-india-company-expansion-notes-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-english.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-punjabi",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "pa/study-history.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "practice.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "strategy-punjab-police-intelligence-constable-2027-exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-arrival-of-europeans-in-india-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-british-paramountcy-administrative-policy-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-east-india-company-expansion-notes-punjabi.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-1857-revolt-notes-punjabi.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-government-administration-after-1857-notes-punjabi.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -45987,13 +46305,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-computer-en-ch07.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-english-grammar-parts-of-speech-nouns-and-pronouns-notes.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -46071,13 +46389,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-computer-en-ch07.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-english-grammar-parts-of-speech-nouns-and-pronouns-notes.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -66699,6 +67017,18 @@
   },
   {
    "from": "pdfs.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -66766,18 +67096,6 @@
   {
    "from": "pdfs.html",
    "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-union-and-its-territory-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -79383,6 +79701,18 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-guru-amar-das-ram-das-arjan-dev-ji-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -79863,6 +80193,18 @@
   },
   {
    "from": "study-notes.html",
+   "to": "material-government-administration-after-1857-notes-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-government-administration-after-1857-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
    "to": "material-maharaja-ranjit-singh-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -79930,18 +80272,6 @@
   {
    "from": "study-notes.html",
    "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-union-and-its-territory-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
-   "to": "material-union-and-its-territory-notes-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },

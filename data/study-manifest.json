@@ -796,21 +796,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 52,
-      "newest": "2026-11-20",
-      "totalSize": 102047317,
-      "chapters": 48,
+      "count": 54,
+      "newest": "2026-11-23",
+      "totalSize": 106771318,
+      "chapters": 49,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 52,
-          "chapters": 48,
-          "pages": 260,
-          "totalSize": 102047317,
-          "newest": "2026-11-20",
+          "files": 54,
+          "chapters": 49,
+          "pages": 262,
+          "totalSize": 106771318,
+          "newest": "2026-11-23",
           "categories": 10,
           "regions": 2
         },
@@ -820,11 +820,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 28,
-              "chapters": 24,
-              "pages": 146,
-              "totalSize": 59646811,
-              "newest": "2026-11-20",
+              "files": 30,
+              "chapters": 25,
+              "pages": 148,
+              "totalSize": 64370812,
+              "newest": "2026-11-23",
               "categories": 5
             },
             "categories": [
@@ -836,11 +836,11 @@
                   "history"
                 ],
                 "stats": {
-                  "files": 8,
-                  "chapters": 4,
-                  "pages": 8,
-                  "totalSize": 22286617,
-                  "newest": "2026-11-11"
+                  "files": 10,
+                  "chapters": 5,
+                  "pages": 10,
+                  "totalSize": 27010618,
+                  "newest": "2026-11-23"
                 },
                 "languages": [
                   {
@@ -848,7 +848,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -893,6 +893,17 @@
                           }
                         ],
                         "pages": 1
+                      },
+                      {
+                        "id": "modern-history/Chapter 05 - Government Administration After 1857",
+                        "name": "ਅਧਿਆਇ 05: 1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ",
+                        "parts": [
+                          {
+                            "file": "material-government-administration-after-1857-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 1
                       }
                     ]
                   },
@@ -901,7 +912,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 4,
+                    "count": 5,
                     "chapters": [
                       {
                         "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -942,6 +953,17 @@
                         "parts": [
                           {
                             "file": "material-1857-revolt-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 1
+                      },
+                      {
+                        "id": "modern-history/Chapter 05 - Government Administration After 1857",
+                        "name": "Chapter 05: Government Administration After 1857",
+                        "parts": [
+                          {
+                            "file": "material-government-administration-after-1857-notes-english.html",
                             "n": 1
                           }
                         ],
@@ -1021,14 +1043,15 @@
                       "modern-history/Chapter 01 - Arrival of European in India",
                       "modern-history/Chapter 02 - Expansion of English East India Company in India",
                       "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
-                      "modern-history/Chapter 04 - 1857 Revolt"
+                      "modern-history/Chapter 04 - 1857 Revolt",
+                      "modern-history/Chapter 05 - Government Administration After 1857"
                     ],
                     "stats": {
-                      "files": 8,
-                      "chapters": 4,
-                      "pages": 8,
-                      "totalSize": 22286617,
-                      "newest": "2026-11-11"
+                      "files": 10,
+                      "chapters": 5,
+                      "pages": 10,
+                      "totalSize": 27010618,
+                      "newest": "2026-11-23"
                     },
                     "languages": [
                       {
@@ -1036,7 +1059,7 @@
                         "name": "Punjabi",
                         "native": "ਪੰਜਾਬੀ",
                         "flag": "🇵🇺",
-                        "count": 4,
+                        "count": 5,
                         "chapters": [
                           {
                             "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -1081,6 +1104,17 @@
                               }
                             ],
                             "pages": 1
+                          },
+                          {
+                            "id": "modern-history/Chapter 05 - Government Administration After 1857",
+                            "name": "ਅਧਿਆਇ 05: 1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ",
+                            "parts": [
+                              {
+                                "file": "material-government-administration-after-1857-notes-punjabi.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
                           }
                         ]
                       },
@@ -1089,7 +1123,7 @@
                         "name": "English",
                         "native": "English",
                         "flag": "🇬🇧",
-                        "count": 4,
+                        "count": 5,
                         "chapters": [
                           {
                             "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -1134,6 +1168,17 @@
                               }
                             ],
                             "pages": 1
+                          },
+                          {
+                            "id": "modern-history/Chapter 05 - Government Administration After 1857",
+                            "name": "Chapter 05: Government Administration After 1857",
+                            "parts": [
+                              {
+                                "file": "material-government-administration-after-1857-notes-english.html",
+                                "n": 1
+                              }
+                            ],
+                            "pages": 1
                           }
                         ]
                       }
@@ -1144,7 +1189,8 @@
                   "modern-history/Chapter 01 - Arrival of European in India",
                   "modern-history/Chapter 02 - Expansion of English East India Company in India",
                   "modern-history/Chapter 03 - Extension of British Paramountcy Through Administrative Policy",
-                  "modern-history/Chapter 04 - 1857 Revolt"
+                  "modern-history/Chapter 04 - 1857 Revolt",
+                  "modern-history/Chapter 05 - Government Administration After 1857"
                 ]
               },
               {
@@ -1978,8 +2024,8 @@
         ]
       },
       "counts": {
-        "en": 26,
-        "pa": 26
+        "en": 27,
+        "pa": 27
       },
       "pages": {
         "en": "study-gk.html",
@@ -2146,16 +2192,16 @@
       "color": "#f59e0b",
       "description": "Ancient, medieval and modern India with the freedom movement.",
       "order": 9,
-      "count": 8,
-      "newest": "2026-11-11",
-      "totalSize": 22286617,
+      "count": 10,
+      "newest": "2026-11-23",
+      "totalSize": 27010618,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -2200,6 +2246,17 @@
                 }
               ],
               "pages": 1
+            },
+            {
+              "id": "modern-history/Chapter 05 - Government Administration After 1857",
+              "name": "ਅਧਿਆਇ 05: 1857 ਤੋਂ ਬਾਅਦ ਸਰਕਾਰੀ ਪ੍ਰਸ਼ਾਸਨ",
+              "parts": [
+                {
+                  "file": "material-government-administration-after-1857-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 1
             }
           ]
         },
@@ -2208,7 +2265,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 4,
+          "count": 5,
           "chapters": [
             {
               "id": "modern-history/Chapter 01 - Arrival of European in India",
@@ -2253,15 +2310,26 @@
                 }
               ],
               "pages": 1
+            },
+            {
+              "id": "modern-history/Chapter 05 - Government Administration After 1857",
+              "name": "Chapter 05: Government Administration After 1857",
+              "parts": [
+                {
+                  "file": "material-government-administration-after-1857-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 1
             }
           ]
         }
       ],
-      "chapters": 8,
+      "chapters": 10,
       "hidden": true,
       "counts": {
-        "en": 4,
-        "pa": 4
+        "en": 5,
+        "pa": 5
       },
       "pages": {
         "en": "study-history.html",
@@ -2974,6 +3042,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 104,
+  "total": 106,
   "generatedBy": "scripts/study_material.py"
 }
