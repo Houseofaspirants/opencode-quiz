@@ -21,9 +21,9 @@ faq:
   - q: Who conducts the Punjab Naib Tehsildar exam?
     a: The Punjab Public Service Commission (PPSC) conducts the Naib Tehsildar exam. It held the 2022 and 2023 papers under Advertisement No. 15 for 78 posts.
   - q: What is the qualification for Punjab Naib Tehsildar?
-    a: A graduate degree from a recognised university, plus Punjabi at matriculation level as required by the Punjab Civil Services Rules, 1994.
+    a: A graduate degree from a recognised university, plus Punjabi of matric or equivalent standard, as per PPSC Advt. No. 15.
   - q: What is the salary of a Naib Tehsildar in Punjab?
-    a: Rs 35,400 at Pay Level-6 under the 7th CPC.
+    a: Rs 35,400 initial pay as per PPSC Advt. No. 15. During the 3-year probation you get a fixed pay equal to the minimum pay, without allowances.
   - q: What is the Naib Tehsildar exam pattern?
     a: The official PPSC pattern is one objective paper of 120 questions and 300 marks in 2 hours - 80 GK and current affairs questions (200 marks) and 40 logical reasoning and mental ability questions (100 marks). Each question carries 2.5 marks and there is no negative marking.
   - q: Will there be a Naib Tehsildar recruitment in 2027?
@@ -41,29 +41,66 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Naib T
 
 Nobody can promise a date, but the history is useful. PPSC filled a large batch of 78 posts in the 2022 cycle (re-examined in June 2023). Tehsildar offices run short of Naib Tehsildars every year through promotions and retirements, so a fresh general-category round is a realistic possibility once the department sends a new demand. **The safe plan is to prepare on the official PPSC syllabus below now.**
 
-## Eligibility
+## Official notification: PPSC Advt. No. 15
 
-1. **Graduation** from a recognised university or institution, in any stream.
-2. **Punjabi at matriculation (10th) level** or equivalent, under the Punjab Civil Services Rules, 1994.
-3. After selection you must clear the training and the departmental examinations specified by the Government.
+The details below are from the official **PPSC Advertisement No. 15** for **78 posts of Naib Tehsildar** in the Department of Revenue & Rehabilitation, Govt. of Punjab. A 2027 notification may change the numbers, but the rules usually stay the same.
 
-## Age limit
+**[Download the official PPSC Naib Tehsildar notification, Advt. No. 15 (PDF, 23 pages)](assets/pdfs/ppsc-naib-tehsildar-notification-advt-15.pdf)**
 
-- **Minimum:** 18 years
-- **General:** up to 37 years
+### Posts (category-wise)
+
+| Category | Posts | For women |
+| --- | --- | --- |
+| General | 27 | 8 |
+| Ex-servicemen / LDESM, Punjab | 7 | 3 |
+| Freedom Fighter, Punjab | 1 | 1 |
+| Sports Person, Punjab | 1 | 1 |
+| Persons with Disability, Punjab (1 each: blind & low vision, deaf & hard of hearing, locomotor, intellectual) | 4 | 1 |
+| Scheduled Castes Other, Punjab | 8 | 3 |
+| Scheduled Castes ESM / LDESM, Punjab | 1 | 0 |
+| Balmiki / Mazhbi Sikhs, Punjab | 7 | 3 |
+| Balmiki / Mazhbi Sikh ESM / LDESM, Punjab | 2 | 0 |
+| Balmiki / Mazhbi Sikh Sports Persons, Punjab | 1 | 0 |
+| Backward Classes, Punjab | 9 | 3 |
+| Backward Classes ESM / LDESM, Punjab | 2 | 0 |
+| Economically Weaker Sections, Punjab | 8 | 1 |
+| **Total** | **78** | **24** |
+
+The Government can increase or decrease the number of posts before selection is complete. Women get 33% reservation under the Punjab Civil Services (Reservation for Women) Rules, 2020.
+
+### Pay
+
+**Rs 35,400 initial pay.** During the **3-year probation** you get a fixed emolument equal to the minimum pay, without allowances.
+
+### Eligibility
+
+1. **Graduate** from a recognised university or institution.
+2. **Punjabi of Matric or equivalent standard** is essential. A ward of defence personnel who is a bona fide resident of Punjab can instead pass a matric-level Punjabi test within two years of appointment.
+3. **Nationality:** citizen of India (or of Nepal / Bhutan, a Tibetan refugee, or a person of Indian origin, as listed in the notification).
+
+### Age limit (as on 01.01.2021 in Advt. No. 15)
+
+- **General:** 18 to 37 years
 - **SC and BC of Punjab:** up to 42 years
-- **State and central government employees:** up to 45 years (NOC at counselling)
-- **Persons with disabilities of Punjab:** up to 47 years
-- **Widows, divorcees and certain other married women:** up to 40 years
+- **Punjab Govt. and its boards, corporations, commissions, and all State / Central Government employees:** up to 45 years
+- **Widows, divorcees and certain other categories of women:** up to 42 years
+- **Persons with Disability of Punjab:** up to 47 years
+- **Ex-servicemen of Punjab:** may deduct their armed forces service from their age; eligible if the result is not more than 3 years above the upper limit
 
-## Fee
+### Application fee
 
-| Category | Fee |
-| --- | --- |
-| General, freedom fighter, sports | Rs 1,000 |
-| SC / BC / EWS | Rs 250 |
-| Ex-servicemen and dependents | Rs 200 |
-| Persons with disabilities | Rs 500 |
+| Category | Online application charges | Exam fee | Total |
+| --- | --- | --- | --- |
+| All other categories (incl. lineal descendants of ex-servicemen, Punjab) | Rs 500 | Rs 2,500 | **Rs 3,000** |
+| SC / ST of all states and BC of Punjab | Rs 500 | Rs 625 | **Rs 1,125** |
+| Persons with Disability, Punjab | Rs 500 | Rs 1,250 | **Rs 1,750** |
+| Ex-servicemen of Punjab | Rs 500 | No fee | **Rs 500** |
+
+The fee is non-refundable and was paid through a system-generated challan at any State Bank of India branch.
+
+### How to apply
+
+Apply **online only** at ppsc.gov.in - no other mode is accepted, and you do not send a hard copy to PPSC. In Advt. No. 15 the last date for registration was **08.01.2021** (11:59 PM) and for depositing the fee **15.01.2021** (banking hours). Everyone who applies is treated as provisionally eligible for the written exam; documents are checked after the result.
 
 ## Official syllabus and exam pattern (PPSC)
 
@@ -80,7 +117,7 @@ This is the official Naib Tehsildar scheme of the Punjab Public Service Commissi
 
 **[Download the PPSC Naib Tehsildar syllabus (PDF, 2 pages, English + Punjabi)](assets/pdfs/ppsc-naib-tehsildar-syllabus.pdf)**
 
-The full official notification, PPSC Advt. No. 15 (23 pages), is on our [Naib Tehsildar previous papers page](pyq/ppsc-naib-tehsildar/index.html).
+The full official notification is also available: **[PPSC Advt. No. 15 (PDF, 23 pages)](assets/pdfs/ppsc-naib-tehsildar-notification-advt-15.pdf)**.
 
 ### 1. General Knowledge & Current Affairs (80 questions / 200 marks)
 
