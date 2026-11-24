@@ -9,9 +9,9 @@ category: preparation-strategy
 difficulty: Intermediate
 exams: [Naib Tehsildar]
 subjects: [gk, reasoning]
-tags: [naib tehsildar, psssb, ppsc, revenue department, syllabus, exam pattern]
-subtitle: What the last official notification says, whether posts are likely in 2027, and how to prepare with real papers.
-summary: Naib Tehsildar was last advertised by PSSSB (Advt 01/2025) for 13 backlog posts at Rs 35,400 (Level-6). You need a graduate degree and matric Punjabi. The official PPSC exam is one 120-question MCQ paper for 300 marks (80 GK, 40 reasoning) in 2 hours, with no negative marking.
+tags: [naib tehsildar, ppsc, revenue department, syllabus, exam pattern]
+subtitle: The official PPSC syllabus and exam pattern, whether posts are likely in 2027, and how to prepare with real papers.
+summary: Naib Tehsildar is a Group-B post in the Punjab Revenue Department at Rs 35,400 (Level-6). You need a graduate degree and matric Punjabi. The official PPSC exam is one 120-question MCQ paper for 300 marks (80 GK, 40 reasoning) in 2 hours, with no negative marking.
 seoTitle: Punjab Naib Tehsildar 2027 - Syllabus & Exam Pattern
 keywords: [punjab naib tehsildar 2027, naib tehsildar recruitment 2027, ppsc naib tehsildar syllabus, naib tehsildar syllabus pdf, naib tehsildar exam pattern, punjab naib tehsildar salary, naib tehsildar eligibility punjab, ppsc naib tehsildar previous papers, naib tehsildar age limit]
 schemaType: Article
@@ -19,49 +19,27 @@ telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
 faq:
   - q: Who conducts the Punjab Naib Tehsildar exam?
-    a: The 2022 and 2023 rounds were held by PPSC. The latest round, Advertisement No. 01 of 2025, was published by the Subordinate Services Selection Board (PSSSB) on 27 June 2025.
+    a: The Punjab Public Service Commission (PPSC) conducts the Naib Tehsildar exam. It held the 2022 and 2023 papers under Advertisement No. 15 for 78 posts.
   - q: What is the qualification for Punjab Naib Tehsildar?
     a: A graduate degree from a recognised university, plus Punjabi at matriculation level as required by the Punjab Civil Services Rules, 1994.
   - q: What is the salary of a Naib Tehsildar in Punjab?
-    a: Rs 35,400 at Pay Level-6 under the 7th CPC, as stated in Advertisement No. 01 of 2025.
+    a: Rs 35,400 at Pay Level-6 under the 7th CPC.
   - q: What is the Naib Tehsildar exam pattern?
     a: The official PPSC pattern is one objective paper of 120 questions and 300 marks in 2 hours - 80 GK and current affairs questions (200 marks) and 40 logical reasoning and mental ability questions (100 marks). Each question carries 2.5 marks and there is no negative marking.
   - q: Will there be a Naib Tehsildar recruitment in 2027?
     a: No 2027 notification has been published yet. Recruitment depends on vacancies the Revenue Department sends to the board; prepare on the official PPSC syllabus and watch ppsc.gov.in and sssb.punjab.gov.in.
 references:
-  - title: PSSSB - Advertisement No. 01 of 2025 (Naib Tehsildar, Audit Officer, Inspector Audit), published 27 June 2025
-    url: https://sssb.punjab.gov.in/
   - title: PPSC - Advertisement No. 15, Naib Tehsildar (78 posts), scheme of competitive examination
     url: https://ppsc.gov.in/
 ---
 
-I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Naib Tehsildar is one of the best Group-B posts open to a plain graduate in Punjab: a Level-6 job in the Revenue Department with a clear path to Tehsildar. This guide puts the last official notification in one place and tells you what to expect next.
+I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Naib Tehsildar is one of the best Group-B posts open to a plain graduate in Punjab: a Level-6 job in the Revenue Department with a clear path to Tehsildar. This guide puts the official syllabus and exam pattern in one place and tells you what to expect next.
 
-> The latest round was **PSSSB Advertisement No. 01 of 2025**, published on 27 June 2025, with applications from 1 to 21 July 2025. **No 2027 notification has been released yet.** The rules below are the ones most likely to be repeated; we will update this page as soon as a new notification comes.
-
-## The last recruitment at a glance
-
-- **Post:** Naib Tehsildar (Group-B), Department of Revenue, Rehabilitation and Disaster Management, Punjab
-- **Recruiting body:** PSSSB in 2025 (PPSC held the 2022 and 2023 exams)
-- **Posts:** 13, all backlog - ex-servicemen, sports and persons with disabilities
-- **Pay:** Rs 35,400 (Level-6, 7th CPC)
-- **Same advertisement:** 3 Audit Officer and 135 Inspector Audit posts in the Co-operation Department
-
-| Category (Naib Tehsildar, Advt 01/2025) | Posts | For women |
-| --- | --- | --- |
-| Ex-servicemen General | 4 | 2 |
-| Ex-servicemen SC (M&B) | 2 | - |
-| Ex-servicemen SC (R&O) | 1 | - |
-| Ex-servicemen BC | 2 | - |
-| Sports General | 1 | 1 |
-| Sports SC (M&B) | 1 | - |
-| PwD (Visually impaired) | 1 | - |
-| PwD (Hearing impaired) | 1 | - |
-| **Total** | **13** | **3** |
+> **No 2027 notification has been released yet.** The rules below are the ones most likely to be repeated; we will update this page as soon as a new notification comes.
 
 ## Will there be posts in 2027?
 
-Nobody can promise a date, but the history is useful. PPSC filled a large batch of 78 posts in the 2022 cycle (re-examined in June 2023), and PSSSB advertised the leftover backlog in 2025. Tehsildar offices run short of Naib Tehsildars every year through promotions and retirements, so a fresh general-category round is a realistic possibility once the department sends a new demand. **The safe plan is to prepare on the official PPSC syllabus below now.**
+Nobody can promise a date, but the history is useful. PPSC filled a large batch of 78 posts in the 2022 cycle (re-examined in June 2023). Tehsildar offices run short of Naib Tehsildars every year through promotions and retirements, so a fresh general-category round is a realistic possibility once the department sends a new demand. **The safe plan is to prepare on the official PPSC syllabus below now.**
 
 ## Eligibility
 
@@ -69,7 +47,7 @@ Nobody can promise a date, but the history is useful. PPSC filled a large batch 
 2. **Punjabi at matriculation (10th) level** or equivalent, under the Punjab Civil Services Rules, 1994.
 3. After selection you must clear the training and the departmental examinations specified by the Government.
 
-## Age limit (as on 1 January 2025)
+## Age limit
 
 - **Minimum:** 18 years
 - **General:** up to 37 years

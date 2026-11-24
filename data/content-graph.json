@@ -21,7 +21,7 @@
  },
  "counts": {
   "nodes": 1098,
-  "edges": 11170,
+  "edges": 11168,
   "silos": 35,
   "clusters": 219,
   "pillars": 34
@@ -10462,7 +10462,6 @@
    ],
    "tags": [
     "naib tehsildar",
-    "psssb",
     "ppsc",
     "revenue department",
     "syllabus",
@@ -14739,7 +14738,6 @@
    ],
    "tags": [
     "naib tehsildar",
-    "psssb",
     "ppsc",
     "revenue department",
     "syllabus",
@@ -24226,12 +24224,6 @@
   {
    "from": "archive-tag-psssb.html",
    "to": "strategy-psssb-veterinary-inspector-recruitment-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "archive-tag-psssb.html",
-   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -63201,13 +63193,13 @@
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "archive-tag-psssb.html",
+   "to": "archive-tag-revenue-department.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "archive-tag-revenue-department.html",
+   "to": "archive-tag-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -63369,7 +63361,7 @@
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -77475,13 +77467,13 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "archive-tag-psssb.html",
+   "to": "archive-tag-revenue-department.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "archive-tag-revenue-department.html",
+   "to": "archive-tag-syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -77571,12 +77563,6 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
    "to": "strategy.html",
    "rel": "contextual",
    "weight": 1
@@ -77637,7 +77623,7 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
+   "to": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
