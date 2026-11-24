@@ -15,7 +15,7 @@ seoTitle: PPSC ਡਰਾਫਟਸਮੈਨ 2027 ਪੇਪਰ ਪੈਟਰਨ ਅ
 keywords: [ਡਰਾਫਟਸਮੈਨ ਭਰਤੀ 2027, ppsc draftsman 2027, ਡਰਾਫਟਸਮੈਨ ਪੇਪਰ ਪੈਟਰਨ, ppsc draftsman exam pattern, ਹੈੱਡ ਡਰਾਫਟਸਮੈਨ, ppsc draftsman previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, strategy-psssb-surveyor-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-junior-draftsman.html, exams/psssb-surveyor.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਭਰਤੀ ਵਿੱਚ ਕਿੰਨੀਆਂ ਅਸਾਮੀਆਂ ਸਨ?
     a: 2022 ਦੇ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ 119 - 27 ਹੈੱਡ ਡਰਾਫਟਸਮੈਨ ਅਤੇ 92 ਡਰਾਫਟਸਮੈਨ।

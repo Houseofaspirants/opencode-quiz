@@ -15,7 +15,7 @@ seoTitle: PPSC Functional Manager 2027 - Exam Pattern & Syllabus
 keywords: [ppsc functional manager 2027, ppsc assistant director industries, ppsc functional manager exam pattern, ppsc functional manager syllabus, ppsc functional manager previous paper, punjab industries department recruitment]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/ppsc-cooperative-inspector.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: Which posts were in the PPSC Functional Manager exam?
     a: 34 Group B posts in the Department of Industries and Commerce, Punjab - Assistant Director, Assistant Controller of Stores, Store Inspection Officer and Functional Manager - through one competitive exam.

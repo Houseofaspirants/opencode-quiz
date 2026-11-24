@@ -16,7 +16,7 @@ seoTitle: ਸਹਿਕਾਰੀ ਸਭਾਵਾਂ ਇੰਸਪੈਕਟਰ ਭ�
 keywords: [ਸਹਿਕਾਰੀ ਸਭਾਵਾਂ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਪੰਜਾਬ, PPSC ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਸਿਲੇਬਸ, ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਯੋਗਤਾ, ppsc cooperative inspector, punjab cooperative inspector recruitment, ppsc inspector cooperative societies, cooperative inspector exam pattern]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-excise-inspector-recruitment-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-excise-inspector.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: PPSC ਕੋਆਪਰੇਟਿਵ ਇੰਸਪੈਕਟਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਘੱਟੋ-ਘੱਟ 60% ਅੰਕਾਂ ਨਾਲ ਗ੍ਰੈਜੂਏਸ਼ਨ, ਸਰਕਾਰੀ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਜਾਂ ISO 9001 ਸੰਸਥਾ ਤੋਂ 120 ਘੰਟੇ ਦਾ ਕੰਪਿਊਟਰ ਕੋਰਸ (ਜੇ ਡਿਗਰੀ ਵਿੱਚ ਕੰਪਿਊਟਰ ਸੀ ਤਾਂ ਲੋੜ ਨਹੀਂ), ਅਤੇ ਮੈਟ੍ਰਿਕ ਵਿੱਚ ਪੰਜਾਬੀ।

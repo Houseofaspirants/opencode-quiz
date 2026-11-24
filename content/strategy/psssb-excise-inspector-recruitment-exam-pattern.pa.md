@@ -16,7 +16,7 @@ seoTitle: ਪੰਜਾਬ ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ 2026 - ਸ
 keywords: [ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ ਪੰਜਾਬ, ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ, PSSSB ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਸਿਲੇਬਸ, ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਪੇਪਰ ਪੈਟਰਨ, psssb excise inspector, punjab excise inspector recruitment 2026, psssb excise inspector syllabus, psssb eti 197 posts]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-excise-inspector.html, strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-excise-inspector.html, exams/punjab-patwari.html, current-affairs.html]
 faq:
   - q: PSSSB ਆਬਕਾਰੀ ਅਤੇ ਕਰ ਇੰਸਪੈਕਟਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਗ੍ਰੈਜੂਏਸ਼ਨ, 120 ਘੰਟੇ ਦਾ ਕੰਪਿਊਟਰ ਕੋਰਸ (ਜਾਂ DOEACC 'O' Level ਦੇ ਬਰਾਬਰ), ਅਤੇ ਮੈਟ੍ਰਿਕ ਵਿੱਚ ਪੰਜਾਬੀ।

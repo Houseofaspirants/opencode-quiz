@@ -15,7 +15,7 @@ seoTitle: PSSSB Craft Instructor Recruitment 2026 - Exam Pattern
 keywords: [psssb craft instructor, psssb craft instructor 2026, punjab iti instructor recruitment, psssb advt 03/2026, craft instructor eligibility, craft instructor exam pattern, psssb instructor previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [pyq.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [pyq.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: How many Craft Instructor posts are in PSSSB Advt 03/2026?
     a: 681 posts in total, 218 of them for women - 250 posts for degree or diploma holders (Annexure A) and 431 posts for NTC/NAC holders (Annexure B).

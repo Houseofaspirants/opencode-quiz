@@ -15,7 +15,7 @@ seoTitle: PSSSB ਡਰਾਈਵਰ 2027 ਯੋਗਤਾ, ਪੇਪਰ ਪੈਟ�
 keywords: [ਡਰਾਈਵਰ ਭਰਤੀ 2027, psssb driver 2027, ਡਰਾਈਵਰ ਯੋਗਤਾ, psssb driver eligibility, ਡਰਾਈਵਰ ਪੇਪਰ ਪੈਟਰਨ, psssb driver exam pattern, ਡਰਾਈਵਰ ਤਨਖ਼ਾਹ, psssb driver previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: PSSSB ਡਰਾਈਵਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 12/2026 ਅਨੁਸਾਰ ਦਸਵੀਂ ਪਾਸ, ਹਲਕੇ ਅਤੇ ਭਾਰੀ ਦੋਵਾਂ ਵਾਹਨਾਂ ਦਾ ਵੈਧ ਲਾਇਸੈਂਸ, ਅਤੇ ਘੱਟੋ-ਘੱਟ ਤਿੰਨ ਸਾਲ ਦਾ ਡਰਾਈਵਿੰਗ ਤਜਰਬਾ।

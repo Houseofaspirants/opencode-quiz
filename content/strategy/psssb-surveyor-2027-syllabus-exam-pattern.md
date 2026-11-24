@@ -15,7 +15,7 @@ seoTitle: PSSSB Surveyor 2027 - Eligibility, Syllabus & Exam Pattern
 keywords: [psssb surveyor 2027, punjab surveyor recruitment 2027, psssb surveyor syllabus, surveyor exam pattern punjab, psssb surveyor eligibility, surveyor salary punjab, psssb surveyor previous papers, water resources surveyor punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, strategy-psssb-craft-instructor-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-junior-draftsman.html, exams/psssb-craft-instructor.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Surveyor?
     a: For the Water Resources posts in Advt 03/2023 - matriculation plus a two-year ITI Draftsman certificate, or a higher qualification in the same line such as a diploma or degree in Civil or Mechanical Engineering. The Archives post asked for a graduate. Matric-level Punjabi is also required.

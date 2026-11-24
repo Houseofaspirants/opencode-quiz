@@ -15,7 +15,7 @@ seoTitle: PSSSB Group D Recruitment - Eligibility, Syllabus & Pattern
 keywords: [psssb group d, psssb group d recruitment 2026, punjab group d syllabus, psssb sevadar recruitment, psssb chowkidar, psssb group d exam pattern, psssb group d age limit, psssb group d previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [pyq.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [pyq.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Group D?
     a: Matriculation with Punjabi as one of the subjects, as per the Punjab State (Group D) Service Rules, 1963.

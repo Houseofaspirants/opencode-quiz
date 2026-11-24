@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ 
 keywords: [ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ, ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ ਭਰਤੀ, ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ ਪੇਪਰ ਪੈਟਰਨ, punjab police head constable syllabus, punjab police head constable exam pattern, punjab police head constable bharti, punjab police investigation cadre, punjab police head constable physical test]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-head-constable.html, strategy-punjab-police-si-syllabus-exam-pattern.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html]
+relatedContent: [exam-punjab-police-head-constable.html, exams/punjab-police-sub-inspector.html, exams/punjab-police-constable.html]
 faq:
   - q: ਪੰਜਾਬ ਪੁਲਿਸ ਹੈੱਡ ਕਾਂਸਟੇਬਲ ਪ੍ਰੀਖਿਆ ਵਿੱਚ ਕਿੰਨੇ ਪੇਪਰ ਹੁੰਦੇ ਹਨ?
     a: ਇੱਕੋ ਦਿਨ ਦੋ ਕੰਪਿਊਟਰ ਅਧਾਰਿਤ ਪੇਪਰ। ਹਰ ਪੇਪਰ ਵਿੱਚ 4-4 ਅੰਕਾਂ ਦੇ 100 ਸਵਾਲ, 400 ਅੰਕ ਅਤੇ 2 ਘੰਟੇ। ਮੈਰਿਟ normalization ਤੋਂ ਬਾਅਦ ਦੋਵਾਂ ਪੇਪਰਾਂ ਦੇ ਕੁੱਲ ਅੰਕਾਂ ਤੋਂ ਬਣਦੀ ਹੈ।
@@ -144,7 +144,7 @@ references:
 5. **ਹਰ ਪੇਪਰ ਵਿੱਚ ਵੱਖ-ਵੱਖ 30% ਲਿਆਓ।** ਪੇਪਰ-1 ਵਿੱਚ ਚੰਗੇ ਅੰਕ ਕਮਜ਼ੋਰ ਪੇਪਰ-2 ਨੂੰ ਨਹੀਂ ਬਚਾ ਸਕਦੇ।
 6. **ਫਿਜ਼ੀਕਲ ਨੂੰ ਨਜ਼ਰਅੰਦਾਜ਼ ਨਾ ਕਰੋ।** 4 ਮਿੰਟ ਵਿੱਚ 800 ਮੀਟਰ ਕਾਂਸਟੇਬਲ ਵਾਲੀ ਦੌੜ ਤੋਂ ਸੌਖੀ ਹੈ, ਪਰ ਫਿਰ ਵੀ ਕੁਝ ਹਫ਼ਤਿਆਂ ਦੀ ਪ੍ਰੈਕਟਿਸ ਚਾਹੀਦੀ ਹੈ।
 
-ਇਹ ਪੈਟਰਨ SI ਨਾਲ ਬਹੁਤ ਮਿਲਦਾ ਹੈ, ਇਸ ਲਈ [ਪੰਜਾਬ ਪੁਲਿਸ SI ਗਾਈਡ](strategy-punjab-police-si-syllabus-exam-pattern.html) ਵਾਲੇ ਤਿਆਰੀ ਦੇ ਨੁਕਤੇ ਇੱਥੇ ਵੀ ਕੰਮ ਆਉਣਗੇ।
+ਇਹ ਪੈਟਰਨ SI ਨਾਲ ਬਹੁਤ ਮਿਲਦਾ ਹੈ, ਇਸ ਲਈ [ਪੰਜਾਬ ਪੁਲਿਸ SI ਗਾਈਡ](exams/punjab-police-sub-inspector.html) ਵਾਲੇ ਤਿਆਰੀ ਦੇ ਨੁਕਤੇ ਇੱਥੇ ਵੀ ਕੰਮ ਆਉਣਗੇ।
 
 ## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ
 

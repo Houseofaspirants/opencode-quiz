@@ -15,7 +15,7 @@ seoTitle: PSSSB Librarian 2027 - Eligibility, Syllabus & Exam Pattern
 keywords: [psssb librarian 2027, punjab librarian recruitment 2027, psssb librarian syllabus, school librarian punjab syllabus, psssb librarian exam pattern, librarian salary punjab, psssb school librarian previous papers, library science mcq punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html, strategy-pstet-exam-pattern-syllabus.html, current-affairs.html]
+relatedContent: [exams/psssb-hostel-superintendent.html, exams/pstet.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Librarian?
     a: For the Technical Education posts in Advt 13/2025 - a B.Lib with one year of experience, or a B.A./B.Sc with a library diploma plus experience as set out in the advertisement. Matric-level Punjabi is also required.

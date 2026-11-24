@@ -15,7 +15,7 @@ seoTitle: ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ 2027
 keywords: [ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਭਰਤੀ 2027, chandigarh police constable 2027, ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਯੋਗਤਾ, chandigarh police constable exam pattern, ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਪਿਛਲੇ ਪੇਪਰ, chandigarh police previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, strategy-punjab-police-head-constable-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-police-constable.html, exams/punjab-police-head-constable.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਭਰਤੀ ਕਦੋਂ ਆਈ?
     a: 20 ਮਈ 2023 ਨੂੰ, ਕਾਂਸਟੇਬਲ (ਐਗਜ਼ੀਕਿਊਟਿਵ) ਦੀਆਂ 700 ਅਸਾਮੀਆਂ।

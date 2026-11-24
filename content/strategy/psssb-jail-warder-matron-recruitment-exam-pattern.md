@@ -15,7 +15,7 @@ seoTitle: PSSSB Jail Warder & Matron 2026 - Eligibility, PMT, PET
 keywords: [psssb jail warder 2026, punjab jail warder recruitment, psssb warder matron, jail warder physical test, jail warder height, punjab jail warder age limit, psssb jail warder result 2026, jail warder exam pattern, punjab matron recruitment, jail warder salary punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-jail-warder.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-punjab-police-jail-warder.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Jail Warder?
     a: 10+2 from a recognised board with Punjabi as a compulsory or elective subject (or an equivalent Punjabi examination). Matron posts are for women only; Warder posts are for men only.

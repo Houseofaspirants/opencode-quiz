@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ETT ਅਧਿਆਪਕ 2027 ਯੋਗਤਾ ਅਤੇ 
 keywords: [ETT ਭਰਤੀ 2027, punjab ett 2027, ETT ਯੋਗਤਾ, punjab ett eligibility, ETT ਪੇਪਰ ਪੈਟਰਨ, punjab ett previous paper, ett 5994 posts]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-pstet-exam-pattern-syllabus.html, strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/pstet.html, exams/punjab-master-cadre.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਵੱਡੀ ETT ਭਰਤੀ ਕਿਹੜੀ ਸੀ?
     a: ਅਕਤੂਬਰ 2022 ਦੀਆਂ 5994 ETT ਅਸਾਮੀਆਂ, ਸੋਧ 1 ਦਸੰਬਰ 2022। ਪੇਪਰ 5 ਮਾਰਚ 2023 ਨੂੰ ਹੋਇਆ।
@@ -52,7 +52,7 @@ ETT ਪੰਜਾਬ ਦਾ **ਸਭ ਤੋਂ ਵੱਡਾ ਅਧਿਆਪਕ �
 ## ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 
 1. [2023 ਦੇ ਦੋਵੇਂ ਪੇਪਰ ਅਤੇ keys](pyq/punjab-ett-teacher/index.html) ਹੱਲ ਕਰੋ।
-2. ਪਹਿਲਾਂ PSTET ਪਾਸ ਕਰੋ - [PSTET ਗਾਈਡ](strategy-pstet-exam-pattern-syllabus.html)।
+2. ਪਹਿਲਾਂ PSTET ਪਾਸ ਕਰੋ - [PSTET ਗਾਈਡ](exams/pstet.html)।
 3. ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਰੋਜ਼।
 4. ਬਾਲ ਵਿਕਾਸ ਅਤੇ ਪੈਡਾਗੋਜੀ।
 5. ਪ੍ਰਾਇਮਰੀ ਪੱਧਰ ਦਾ ਗਣਿਤ, EVS ਅਤੇ GK।

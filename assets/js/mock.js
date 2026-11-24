@@ -16,10 +16,13 @@
   const examWrap = $("mockExams");
   if (!examWrap) return;
 
-  const [idx, cfg] = await Promise.all([
+  const [idx, cfg, hubs] = await Promise.all([
     HOA.loadIndex(),
     fetch("data/mock-patterns.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({ exams: [] })),
+    fetch("data/exam-hubs.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({ exams: [] })),
   ]);
+  /** guide slug (content/strategy) -> its exam page (data/exam-hubs.json) */
+  const HUB_FILE = Object.fromEntries((hubs.exams || []).map((x) => [x.guide, x.file]));
   const SUBJECTS = idx.subjects || [];
   const exams = (cfg.exams || []).filter((e) => (e.papers || []).length);
   const startBtn = $("mockStart");
@@ -145,8 +148,9 @@
         `Every mock serves unseen questions first - no repeats.`
       : `You have seen almost every question in this bank (${pool.fresh} new of ${pool.total}). ` +
         `New questions come first; the rest are the ones you saw longest ago.`;
-    $("mockGuide").innerHTML = exam.guide
-      ? `<a class="ilink" href="strategy-${esc(exam.guide)}">Official ${esc(exam.name)} syllabus &amp; pattern →</a>`
+    const hub = exam.guide ? HUB_FILE[exam.guide] : "";
+    $("mockGuide").innerHTML = hub
+      ? `<a class="ilink" href="${esc(hub.replace(/\.html$/, ""))}">Official ${esc(exam.name)} syllabus &amp; pattern →</a>`
       : "";
     setStart(pool.total === 0);
   }

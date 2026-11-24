@@ -15,7 +15,7 @@ seoTitle: Punjab Police Head Constable Syllabus & Exam Pattern
 keywords: [punjab police head constable syllabus, punjab police head constable exam pattern, punjab police head constable recruitment, punjab police head constable bharti, punjab police investigation cadre, punjab police head constable physical test, punjab police head constable negative marking, punjab police head constable preparation]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-head-constable.html, strategy-punjab-police-si-syllabus-exam-pattern.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html]
+relatedContent: [exam-punjab-police-head-constable.html, exams/punjab-police-sub-inspector.html, exams/punjab-police-constable.html]
 faq:
   - q: How many papers are there in the Punjab Police Head Constable exam?
     a: Two computer based papers on the same day. Each has 100 questions of 4 marks, 400 marks and 2 hours. Merit is made from the total of both papers after normalization.
@@ -144,7 +144,7 @@ You must clear every event for your category; failing any one disqualifies you.
 5. **Clear 30% in each paper separately.** A strong Paper 1 cannot rescue a weak Paper 2.
 6. **Do not ignore the physical test.** The 800 m in 4 minutes is easier than the Constable run, but you still need a few weeks of practice.
 
-The pattern is very close to SI, so the [Punjab Police SI guide](strategy-punjab-police-si-syllabus-exam-pattern.html) and its preparation tips apply here too.
+The pattern is very close to SI, so the [Punjab Police SI guide](exams/punjab-police-sub-inspector.html) and its preparation tips apply here too.
 
 ## Free practice sets on House of Aspirants
 

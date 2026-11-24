@@ -15,7 +15,7 @@ seoTitle: PSSSB Senior Technical Assistant 2027 - Exam Pattern
 keywords: [psssb senior technical assistant 2027, psssb senior technical assistant chemistry, psssb senior technical assistant maths, psssb technical assistant exam, psssb senior technical assistant paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/punjab-master-cadre.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Senior Technical Assistant exam?
     a: A subject-specific PSSSB exam - the 2022 round had separate papers by discipline. Our archive has the Chemistry and Mathematics papers.

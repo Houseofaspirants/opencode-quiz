@@ -15,7 +15,7 @@ seoTitle: PSSSB Lab Attendant 2027 - Exam Pattern, Syllabus & Salary
 keywords: [psssb lab attendant 2027, punjab lab attendant recruitment, psssb lab attendant exam pattern, psssb lab attendant syllabus, psssb lab attendant salary, psssb lab attendant previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: Which advertisement had PSSSB Lab Attendant posts?
     a: Advertisement No. 04 of 2023, a Group C round of 95 posts that included Lab Attendant along with posts such as Motor Vehicle Inspector and Fisheries Officer.

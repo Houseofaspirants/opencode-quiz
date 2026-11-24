@@ -15,7 +15,7 @@ seoTitle: PSSSB Fireman 2027 - Eligibility, Exam Pattern & Salary
 keywords: [psssb fireman 2027, punjab fireman recruitment 2027, psssb fireman eligibility, psssb fireman exam pattern, psssb fireman physical test, psssb fireman salary, psssb fireman previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-driver-2027-eligibility-exam-pattern.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-driver.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: What was the last PSSSB Fireman recruitment?
     a: Advertisement No. 01 of 2023 with 1317 posts - 991 Fireman and 326 Driver/Operator - for the fire services under the Local Government department.

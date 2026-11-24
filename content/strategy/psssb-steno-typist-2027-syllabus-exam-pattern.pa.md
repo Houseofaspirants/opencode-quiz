@@ -15,7 +15,7 @@ seoTitle: PSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ 2027 ਯੋਗਤਾ, ਸ�
 keywords: [ਸਟੈਨੋ ਟਾਈਪਿਸਟ ਭਰਤੀ 2027, psssb steno typist 2027, ਸਟੈਨੋ ਟਾਈਪਿਸਟ ਸਿਲੇਬਸ, psssb steno typist syllabus, ਪੰਜਾਬੀ ਸਟੈਨੋ ਟੈਸਟ, punjabi steno test 80 wpm, ਸਟੈਨੋ ਟਾਈਪਿਸਟ ਤਨਖ਼ਾਹ, psssb steno previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-data-entry-operator-2027-syllabus.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-data-entry-operator.html, current-affairs.html]
 faq:
   - q: PSSSB ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 14/2025 ਅਨੁਸਾਰ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਯੂਨੀਵਰਸਿਟੀ ਤੋਂ ਗ੍ਰੈਜੂਏਸ਼ਨ, ਪੰਜਾਬੀ ਸਟੈਨੋਗ੍ਰਾਫੀ, ਘੱਟੋ-ਘੱਟ 120 ਘੰਟੇ ਦਾ ਕੰਪਿਊਟਰ ਕੋਰਸ ਅਤੇ ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ।

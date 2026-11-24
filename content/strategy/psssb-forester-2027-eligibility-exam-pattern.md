@@ -15,7 +15,7 @@ seoTitle: PSSSB Forester 2027 - Eligibility, Exam Pattern & Salary
 keywords: [psssb forester 2027, punjab forester recruitment, psssb forester exam pattern, psssb forester syllabus, psssb forester salary, psssb forester previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-forest-guard.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: Which advertisement had PSSSB Forester posts?
     a: Advertisement No. 07 of 2022, which combined Deputy Ranger, Forester and Forest Guard - 204 posts in all, of which 200 were Forest Guard.
@@ -64,7 +64,7 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 ## How to prepare
 
 1. **Solve the real paper:** [Forester paper of 20 November 2022](pyq/psssb-forester/index.html).
-2. **Use the Forest Guard plan** - see our [Forest Guard guide](strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html).
+2. **Use the Forest Guard plan** - see our [Forest Guard guide](exams/psssb-forest-guard.html).
 3. **Environment, forests and wildlife of Punjab.**
 4. **GK, reasoning and English** for Part B.
 

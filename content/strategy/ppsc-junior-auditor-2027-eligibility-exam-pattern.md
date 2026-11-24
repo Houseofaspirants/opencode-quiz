@@ -15,7 +15,7 @@ seoTitle: PPSC Junior Auditor 2027 - Eligibility, Pattern & Salary
 keywords: [ppsc junior auditor 2027, ppsc junior auditor eligibility, ppsc junior auditor exam pattern, ppsc junior auditor syllabus, ppsc junior auditor salary, ppsc junior auditor previous paper, punjab finance department recruitment]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html, strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk-accounts.html, exams/ppsc-cooperative-inspector.html, current-affairs.html]
 faq:
   - q: What is the eligibility for PPSC Junior Auditor?
     a: The 2022 advertisement asked for a commerce degree (B.Com) or M.Com with the division conditions stated in it. Age was 18 to 37 as on 1 January 2022, with relaxation for reserved categories.

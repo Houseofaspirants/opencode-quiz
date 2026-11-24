@@ -15,7 +15,7 @@ seoTitle: PSSSB ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਕਮ PTI 2027 ਯੋ�
 keywords: [ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਭਰਤੀ 2027, psssb hostel superintendent 2027, ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਕਮ PTI, hostel superintendent cum pti punjab, ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਯੋਗਤਾ, hostel superintendent previous papers, psssb advt 13 2025]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-craft-instructor-recruitment-exam-pattern.html, strategy-psssb-librarian-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-craft-instructor.html, exams/psssb-librarian.html, current-affairs.html]
 faq:
   - q: ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਕਮ PTI ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 13/2025 ਅਨੁਸਾਰ ਦੂਜੇ ਦਰਜੇ ਵਿੱਚ ਦਸਵੀਂ ਜਾਂ 10+2, C.P.Ed ਸਰਟੀਫਿਕੇਟ (D.P.Ed ਨੂੰ ਤਰਜੀਹ), ਦੋ ਸਾਲ ਦਾ ਤਜਰਬਾ ਅਤੇ ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ।

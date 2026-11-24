@@ -15,7 +15,7 @@ seoTitle: Punjab Panchayat Secretary 2027 - Exam Pattern & Syllabus
 keywords: [punjab panchayat secretary 2027, psssb panchayat secretary, panchayat secretary recruitment punjab, panchayat secretary exam pattern, panchayat secretary previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: When was the last Panchayat Secretary recruitment?
     a: PSSSB advertised 800 Panchayat Secretary posts in the Department of Rural Development and Panchayats in August 2016 (applications 8 August to 6 September 2016). The paper was held in October 2016.

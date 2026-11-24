@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ SI ਅਤੇ ASI 2027 ਸਿਲੇਬ�
 keywords: [ਪੰਜਾਬ ਪੁਲਿਸ SI ਭਰਤੀ 2027, punjab police si recruitment 2027, ਪੰਜਾਬ ਪੁਲਿਸ ASI ਭਰਤੀ 2027, punjab police asi recruitment, ਪੰਜਾਬ ਪੁਲਿਸ SI ਸਿਲੇਬਸ, ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, ਪੰਜਾਬ ਪੁਲਿਸ SI ਪੇਪਰ ਪੈਟਰਨ, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si bharti]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-sub-inspector.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-punjab-police-sub-inspector.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: ਪੰਜਾਬ ਪੁਲਿਸ SI ਪ੍ਰੀਖਿਆ ਵਿੱਚ ਕਿੰਨੇ ਪੇਪਰ ਹੁੰਦੇ ਹਨ?
     a: ਤਿੰਨ ਕੰਪਿਊਟਰ ਅਧਾਰਿਤ ਪੇਪਰ। ਪੇਪਰ-1 ਅਤੇ ਪੇਪਰ-2 ਵਿੱਚ 100-100 ਸਵਾਲ, ਹਰ ਸਵਾਲ 4 ਅੰਕ, 400-400 ਅੰਕ ਅਤੇ 2-2 ਘੰਟੇ। ਪੇਪਰ-3 ਪੰਜਾਬੀ ਦਾ 50 ਅੰਕਾਂ ਦਾ qualifying ਪੇਪਰ ਹੈ।
@@ -177,7 +177,7 @@ references:
 **ਕਰੰਟ ਅਫੇਅਰਜ਼**
 - [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
-ਕਾਂਸਟੇਬਲ ਦੀ ਤਿਆਰੀ ਵੀ ਕਰ ਰਹੇ ਹੋ? [ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ ਗਾਈਡ](pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html) ਪੜ੍ਹੋ।
+ਕਾਂਸਟੇਬਲ ਦੀ ਤਿਆਰੀ ਵੀ ਕਰ ਰਹੇ ਹੋ? [ਪੰਜਾਬ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਸਿਲੇਬਸ ਗਾਈਡ](pa/exams/punjab-police-constable.html) ਪੜ੍ਹੋ।
 
 ## Official notification download ਕਰੋ
 

@@ -15,7 +15,7 @@ seoTitle: PSSSB ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ 2027 ਸਿਲੇ
 keywords: [ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਭਰਤੀ 2027, psssb junior draftsman 2027, ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਸਿਲੇਬਸ, psssb junior draftsman syllabus, junior draftsman exam pattern, ਡਰਾਫਟਸਮੈਨ ਪਿਛਲੇ ਪੇਪਰ, psssb draftsman previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-surveyor-2027-syllabus-exam-pattern.html, strategy-psssb-craft-instructor-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-surveyor.html, exams/psssb-craft-instructor.html, current-affairs.html]
 faq:
   - q: ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਦਾ ਪੇਪਰ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: Official ਪਲਾਨ ਵਿੱਚ 2 ਘੰਟਿਆਂ ਵਿੱਚ 120 MCQ - 90 ਟ੍ਰੇਡ ਸਿਲੇਬਸ ਦੇ ਅਤੇ 30 GK, reasoning, English ਤੇ ਪੰਜਾਬੀ ਦੇ। ਹਰ ਸਵਾਲ 1 ਅੰਕ, ਗ਼ਲਤ ਜਵਾਬ 'ਤੇ 1/4 ਅੰਕ ਕੱਟ।

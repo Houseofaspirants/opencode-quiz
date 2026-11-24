@@ -15,7 +15,7 @@ seoTitle: PSSSB Veterinary Inspector 2026 - Eligibility & Exam Pattern
 keywords: [psssb veterinary inspector 2026, punjab veterinary inspector recruitment, psssb veterinary inspector eligibility, veterinary inspector exam pattern, psssb veterinary inspector salary, veterinary inspector age limit punjab, psssb veterinary inspector result 2026, punjab animal husbandry recruitment]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Veterinary Inspector?
     a: 10+2 with Physics, Chemistry and Biology, and a two-year diploma in Veterinary Science and Animal Health Technology from a recognised university. Matric-level Punjabi is also required.

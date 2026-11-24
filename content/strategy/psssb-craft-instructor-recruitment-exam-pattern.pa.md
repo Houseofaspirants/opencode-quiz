@@ -15,7 +15,7 @@ seoTitle: PSSSB ਕਰਾਫ਼ਟ ਇੰਸਟ੍ਰਕਟਰ ਭਰਤੀ 2026
 keywords: [ਕਰਾਫ਼ਟ ਇੰਸਟ੍ਰਕਟਰ ਭਰਤੀ, PSSSB ਕਰਾਫ਼ਟ ਇੰਸਟ੍ਰਕਟਰ, ITI ਇੰਸਟ੍ਰਕਟਰ ਭਰਤੀ ਪੰਜਾਬ, psssb craft instructor, psssb craft instructor 2026, psssb advt 03/2026, psssb instructor previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [pyq.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [pyq.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: PSSSB ਇਸ਼ਤਿਹਾਰ 03/2026 ਵਿੱਚ ਕਰਾਫ਼ਟ ਇੰਸਟ੍ਰਕਟਰ ਦੀਆਂ ਕਿੰਨੀਆਂ ਅਸਾਮੀਆਂ ਹਨ?
     a: ਕੁੱਲ 681 ਅਸਾਮੀਆਂ, ਜਿਹਨਾਂ ਵਿੱਚੋਂ 218 ਔਰਤਾਂ ਲਈ ਹਨ - ਡਿਗਰੀ ਜਾਂ ਡਿਪਲੋਮਾ ਵਾਲਿਆਂ ਲਈ 250 (ਅਨੁਲੱਗ A) ਅਤੇ NTC/NAC ਵਾਲਿਆਂ ਲਈ 431 (ਅਨੁਲੱਗ B)।

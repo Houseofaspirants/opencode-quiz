@@ -15,7 +15,7 @@ seoTitle: PSSSB Horticulture Supervisor 2027 - Exam Pattern & Syllabus
 keywords: [psssb horticulture supervisor 2027, psssb supervisor horticulture, puda horticulture supervisor, psssb horticulture exam pattern, psssb horticulture previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: What was the last Horticulture Supervisor recruitment?
     a: PSSSB Advertisement No. 05 of 2022 - 28 Supervisor (Horticulture) posts in PUDA, under the Housing and Urban Development department.

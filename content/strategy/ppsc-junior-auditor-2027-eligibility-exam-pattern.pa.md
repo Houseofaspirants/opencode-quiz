@@ -15,7 +15,7 @@ seoTitle: PPSC ਜੂਨੀਅਰ ਆਡੀਟਰ 2027 ਯੋਗਤਾ, ਪੇ�
 keywords: [ਜੂਨੀਅਰ ਆਡੀਟਰ ਭਰਤੀ 2027, ppsc junior auditor 2027, ਜੂਨੀਅਰ ਆਡੀਟਰ ਯੋਗਤਾ, ppsc junior auditor eligibility, ਜੂਨੀਅਰ ਆਡੀਟਰ ਪੇਪਰ ਪੈਟਰਨ, ppsc junior auditor previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html, strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk-accounts.html, exams/ppsc-cooperative-inspector.html, current-affairs.html]
 faq:
   - q: ਜੂਨੀਅਰ ਆਡੀਟਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: 2022 ਦੇ ਇਸ਼ਤਿਹਾਰ ਅਨੁਸਾਰ B.Com ਜਾਂ M.Com (ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਦਿੱਤੀ ਡਿਵੀਜ਼ਨ ਸ਼ਰਤ ਨਾਲ)। ਉਮਰ 1 ਜਨਵਰੀ 2022 ਨੂੰ 18 ਤੋਂ 37 ਸਾਲ।

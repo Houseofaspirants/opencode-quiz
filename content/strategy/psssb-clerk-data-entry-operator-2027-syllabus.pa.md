@@ -15,7 +15,7 @@ seoTitle: PSSSB ਕਲਰਕ ਕਮ DEO 2027 ਸਿਲੇਬਸ ਅਤੇ ਪੇ
 keywords: [ਕਲਰਕ ਕਮ ਡਾਟਾ ਐਂਟਰੀ ਆਪਰੇਟਰ, psssb clerk cum data entry operator, ਕਲਰਕ DEO ਸਿਲੇਬਸ, clerk cum deo syllabus punjab, ਡਾਟਾ ਐਂਟਰੀ ਆਪਰੇਟਰ ਭਰਤੀ 2027, psssb deo exam pattern, ਕਲਰਕ DEO ਪੇਪਰ, clerk cum deo answer key]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-it.html, current-affairs.html]
 faq:
   - q: ਕਲਰਕ ਕਮ DEO ਦਾ ਪੇਪਰ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 03/2022 ਅਨੁਸਾਰ 120 MCQ, 120 ਅੰਕ, 2 ਘੰਟੇ, ਗ਼ਲਤ 'ਤੇ 1/4 ਅੰਕ ਕੱਟ। GK 30, reasoning ਤੇ ਗਣਿਤ 30, ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ 20, English 15, ਪੰਜਾਬੀ 15, ICT 10।

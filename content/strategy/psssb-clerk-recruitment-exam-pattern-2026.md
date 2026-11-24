@@ -16,7 +16,7 @@ seoTitle: PSSSB Clerk 2026 - Eligibility, Exam Pattern & Type Test
 keywords: [psssb clerk 2026, psssb clerk recruitment 2026, psssb clerk exam pattern, psssb clerk eligibility, psssb clerk syllabus, psssb clerk exam date 2026, psssb clerk typing test, punjab clerk recruitment 2026, psssb clerk salary, psssb clerk age limit, psssb clerk negative marking]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-clerk.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-clerk.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Clerk 2026?
     a: A bachelor's degree in any discipline, a 120-hour computer course from a government-recognised or ISO 9001 institution (or DOEACC 'O' Level equivalent), and matriculation with Punjabi. You must hold them by the last date of applying, 6 March 2026.

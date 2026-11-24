@@ -140,7 +140,7 @@ page, because nothing links to a person the site cannot introduce.
 | `notes/` | `note-` | `study-notes.html` | `subject` |
 | `current-affairs/` | `ca-` | `current-affairs.html` | — |
 | `monthly-magazine/` | `magazine-` | `magazine.html` | `month` (`YYYY-MM`) |
-| `strategy/` | `strategy-` | `strategy.html` | `category` |
+| `strategy/` | `strategy-` | `exams.html` | `category` |
 | `live-sessions/` | `session-` | `live-sessions.html` | `date` |
 | `recruitment/` | `recruit-` | `recruitment.html` | `post`, `official_url` |
 | `blogs/` | `blog-` | `blogs.html` | — |

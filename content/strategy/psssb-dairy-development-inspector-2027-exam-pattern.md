@@ -15,7 +15,7 @@ seoTitle: PSSSB Dairy Development Inspector 2027 - Exam Pattern
 keywords: [psssb dairy development inspector 2027, psssb ddi 2027, dairy development inspector punjab, psssb ddi exam pattern, psssb ddi previous paper, psssb advt 08 2023]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: How often does PSSSB advertise Dairy Development Inspector posts?
     a: Three years running - 25 posts in 2021, 37 in 2022 and 21 under Advt 08/2023.

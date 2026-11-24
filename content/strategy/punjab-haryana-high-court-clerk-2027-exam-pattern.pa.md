@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਤੇ ਹਰਿਆਣਾ ਹਾਈ ਕੋਰਟ ਕ�
 keywords: [ਹਾਈ ਕੋਰਟ ਕਲਰਕ 2027, high court clerk 2027, ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਪੇਪਰ ਪੈਟਰਨ, high court clerk exam pattern, ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਸਿਲੇਬਸ, phhc clerk recruitment, ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਪਿਛਲੇ ਪੇਪਰ, high court clerk previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-legal.html, current-affairs.html]
 faq:
   - q: ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: 2023 ਦੇ notice ਅਨੁਸਾਰ Arts, Commerce, Science ਜਾਂ ਬਰਾਬਰ ਦੀ ਗ੍ਰੈਜੂਏਸ਼ਨ, ਕੰਪਿਊਟਰ (word processing ਅਤੇ spreadsheet) ਚਲਾਉਣ ਦੀ ਮੁਹਾਰਤ, ਅਤੇ ਦਸਵੀਂ ਤੱਕ ਹਿੰਦੀ ਜਾਂ ਪੰਜਾਬੀ। 10% ਅਸਾਮੀਆਂ B.Com ਵਾਲਿਆਂ ਲਈ ਹਨ।

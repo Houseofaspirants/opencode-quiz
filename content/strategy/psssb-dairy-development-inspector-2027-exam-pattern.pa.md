@@ -15,7 +15,7 @@ seoTitle: PSSSB ਡੇਅਰੀ ਵਿਕਾਸ ਇੰਸਪੈਕਟਰ 2027 �
 keywords: [ਡੇਅਰੀ ਵਿਕਾਸ ਇੰਸਪੈਕਟਰ ਭਰਤੀ, psssb ddi 2027, ਡੇਅਰੀ ਇੰਸਪੈਕਟਰ ਪੇਪਰ, psssb ddi exam pattern, psssb ddi previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: DDI ਦੀ ਭਰਤੀ ਕਿੰਨੀ ਵਾਰ ਆਉਂਦੀ ਹੈ?
     a: ਲਗਾਤਾਰ ਤਿੰਨ ਸਾਲ - 2021 ਵਿੱਚ 25, 2022 ਵਿੱਚ 37 ਅਤੇ 2023 ਵਿੱਚ 21 ਅਸਾਮੀਆਂ।

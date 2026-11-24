@@ -16,7 +16,7 @@ seoTitle: Punjab Patwari Bharti 2026 - Eligibility & Exam Pattern
 keywords: [punjab patwari recruitment 2026, punjab patwari bharti 2026, punjab patwari eligibility, punjab patwari exam pattern, punjab patwari syllabus, psssb patwari notification, punjab patwari age limit, punjab patwari salary]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-patwari.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-patwari.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: What is the qualification for Punjab Patwari?
     a: A bachelor's degree in any discipline, a 120-hour computer course (or an 'O' Level certificate from DOEACC), and matriculation with Punjabi as a subject.

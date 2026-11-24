@@ -15,7 +15,7 @@ seoTitle: Punjab Master Cadre 2027 - Eligibility, Pattern & Papers
 keywords: [punjab master cadre 2027, master cadre recruitment punjab, master cadre eligibility punjab, master cadre exam pattern, master cadre previous papers, punjab master cadre syllabus, 4161 master cadre, punjab teacher recruitment 2027]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-pstet-exam-pattern-syllabus.html, strategy-psssb-librarian-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/pstet.html, exams/psssb-librarian.html, current-affairs.html]
 faq:
   - q: What is the qualification for Punjab Master Cadre?
     a: In the 4161-post recruitment - graduation with the subject (for example, Mathematics for three years for a Maths master), with 45% marks for general candidates and a lower percentage for reserved categories, plus a B.Ed with that subject as a teaching subject. Science and English have their own detailed subject combinations.

@@ -15,7 +15,7 @@ seoTitle: PSSSB ਲਾਇਬ੍ਰੇਰੀਅਨ 2027 ਯੋਗਤਾ, ਸਿ�
 keywords: [ਲਾਇਬ੍ਰੇਰੀਅਨ ਭਰਤੀ 2027, psssb librarian 2027, ਲਾਇਬ੍ਰੇਰੀਅਨ ਸਿਲੇਬਸ, psssb librarian syllabus, ਸਕੂਲ ਲਾਇਬ੍ਰੇਰੀਅਨ ਪੰਜਾਬ, school librarian punjab syllabus, ਲਾਇਬ੍ਰੇਰੀਅਨ ਤਨਖ਼ਾਹ, psssb school librarian previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-hostel-superintendent-pti-2027-exam-pattern.html, strategy-pstet-exam-pattern-syllabus.html, current-affairs.html]
+relatedContent: [exams/psssb-hostel-superintendent.html, exams/pstet.html, current-affairs.html]
 faq:
   - q: PSSSB ਲਾਇਬ੍ਰੇਰੀਅਨ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 13/2025 ਵਿੱਚ ਤਕਨੀਕੀ ਸਿੱਖਿਆ ਵਿਭਾਗ ਲਈ - B.Lib ਅਤੇ ਇੱਕ ਸਾਲ ਤਜਰਬਾ, ਜਾਂ B.A./B.Sc ਨਾਲ ਲਾਇਬ੍ਰੇਰੀ ਡਿਪਲੋਮਾ ਅਤੇ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਦੱਸਿਆ ਤਜਰਬਾ। ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ ਵੀ ਜ਼ਰੂਰੀ।

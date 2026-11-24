@@ -16,7 +16,7 @@ seoTitle: PPSC Cooperative Inspector - Eligibility, Syllabus & Pattern
 keywords: [ppsc cooperative inspector, punjab cooperative inspector recruitment, ppsc inspector cooperative societies, cooperative inspector syllabus punjab, cooperative inspector exam pattern, ppsc cooperative inspector eligibility, cooperative inspector salary punjab, ppsc cooperative inspector age limit]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-excise-inspector-recruitment-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-excise-inspector.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: What is the qualification for PPSC Cooperative Inspector?
     a: A bachelor's degree in any stream with at least 60% marks, a 120-hour computer course from a government-recognised or ISO 9001 institution (not needed if computers were part of the degree), and matriculation with Punjabi.

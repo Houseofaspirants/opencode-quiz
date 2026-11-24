@@ -272,6 +272,7 @@ const HOA = (() => {
     "Monthly Magazine": "ਮਹੀਨਾਵਾਰੀ ਮੈਗਜ਼ੀਨ",
     "Monthly Current Affairs": "ਮਹੀਨਾਵਾਰ ਕਰੰਟ ਅਫੇਅਰਜ਼",
     "Exam Pattern & Syllabus": "ਪ੍ਰੀਖਿਆ ਪੈਟਰਨ ਤੇ ਸਿਲੇਬਸ",
+    "Exams": "ਪ੍ਰੀਖਿਆਵਾਂ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
     "Free PDFs": "ਮੁਫ਼ਤ PDFs",
@@ -744,7 +745,7 @@ const HOA = (() => {
                Exam Pattern & Syllabus sit here at the top level (not in the
                Practice / Study dropdowns) so they are one click away. -->
           <li><a class="nav-link" data-nav="mock" href="mock"><span data-i18n="Mock Tests">Mock Tests</span></a></li>
-          <li><a class="nav-link" data-nav="strategy" href="strategy"><span data-i18n="Exam Pattern & Syllabus">Exam Pattern &amp; Syllabus</span></a></li>
+          <li><a class="nav-link" data-nav="strategy" href="exams"><span data-i18n="Exams">Exams</span></a></li>
           <li><a class="nav-link" data-nav="pyq" href="pyq"><span data-i18n="Previous Year Papers">Previous Year Papers</span></a></li>
           <li><a class="nav-link" data-nav="about" href="about"><span data-i18n="About">About</span></a></li>
         </ul>
@@ -798,7 +799,7 @@ const HOA = (() => {
     <a class="mm-link" data-nav="rank-2-blueprint" href="rank-2-blueprint"><span aria-hidden="true">🏅</span> <span data-i18n="Rank 2 Blueprint">Rank 2 Blueprint</span></a>
     <a class="mm-link" data-nav="blogs" href="blogs"><span aria-hidden="true">📔</span> <span data-i18n="Topper's Diary">Topper's Diary</span></a>
     <a class="mm-link" data-nav="mock" href="mock"><span aria-hidden="true">🧪</span> <span data-i18n="Mock Tests">Mock Tests</span></a>
-    <a class="mm-link" data-nav="strategy" href="strategy"><span aria-hidden="true">🎯</span> <span data-i18n="Exam Pattern & Syllabus">Exam Pattern &amp; Syllabus</span></a>
+    <a class="mm-link" data-nav="strategy" href="exams"><span aria-hidden="true">🎯</span> <span data-i18n="Exams">Exams</span></a>
 
     <!-- The drawer mirrors the header exactly: same ten items, same order,
          same two subject trees. Study's tree opens the Study renderer and
@@ -924,7 +925,7 @@ const HOA = (() => {
           <a href="study-notes" data-i18n="Study Notes">Study Notes</a>
           <a href="topic-guides" data-i18n="Topic Guides">Topic Guides</a>
           <a href="current-affairs" data-i18n="Monthly Current Affairs">Monthly Current Affairs</a>
-          <a href="strategy" data-i18n="Exam Pattern & Syllabus">Exam Pattern & Syllabus</a>
+          <a href="exams" data-i18n="Exams">Exams</a>
           <a href="live-sessions" data-i18n="Live Sessions">Live Sessions</a>
           <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
@@ -2463,9 +2464,15 @@ const HOA = (() => {
     const home = document.querySelector("[data-my-exam]");
     const examPage = /\/exam-([a-z0-9-]+)(\.html)?$/.exec(location.pathname);
     if (!home && !examPage) return;
-    const exams = await loadExams();
+    const [exams, hubs] = await Promise.all([
+      loadExams(),
+      fetch("data/exam-hubs.json", { cache: "no-cache" }).then((r) => r.json()).catch(() => ({ exams: [] })),
+    ]);
     if (!exams.length) return;
     const byId = Object.fromEntries(exams.map((e) => [e.id, e]));
+    /** guide slug (content/strategy) -> its exam page, e.g. exams/punjab-patwari.html */
+    const hubByGuide = Object.fromEntries((hubs.exams || []).map(
+      (/** @type {{guide: string, file: string}} */ x) => [x.guide, x.file]));
     const pa = getLang() === "pa";
     const T = pa
       ? { ask: "ਤੁਸੀਂ ਕਿਹੜੇ exam ਦੀ ਤਿਆਰੀ ਕਰ ਰਹੇ ਹੋ?", hint: "ਇੱਕ ਚੁਣੋ, ਫਿਰ ਇਹ ਪੰਨਾ ਸਿੱਧਾ ਤੁਹਾਡੇ exam ਦੀ ਤਿਆਰੀ ਵਿਖਾਵੇਗਾ।",
@@ -2487,7 +2494,7 @@ const HOA = (() => {
         if (e) {
           const links = [];
           const st = (e.strategy || [])[0];
-          if (st) links.push([`strategy-${st}.html`, "📘 " + T.syl]);
+          if (st && hubByGuide[st]) links.push([hubByGuide[st], "📘 " + T.syl]);
           const pq = (e.pyq || [])[0];
           if (pq) links.push([`pyq/${pq}/index.html`, "📄 " + T.pyq]);
           links.push([`exam-${e.id}.html`, "🧠 " + T.quiz]);

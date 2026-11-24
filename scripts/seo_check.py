@@ -96,6 +96,14 @@ try:
     ).get("items", []) if i.get("canonical")}
 except (OSError, ValueError):
     COPY_PAGES = {}
+# Exam guide slug (content/strategy/<slug>.md, as data/exams.json names it) ->
+# the exam page it publishes as (exams/<exam>.html, scripts/exam_hubs.py).
+try:
+    GUIDE_FILES = {str(x["guide"]): str(x["file"]) for x in json.loads(
+        (ROOT / "data" / "exam-hubs.json").read_text(encoding="utf-8")
+    ).get("exams", [])}
+except (OSError, ValueError):
+    GUIDE_FILES = {}
 PAGES = [
     "index.html", "subject.html", "quiz.html", "mock.html", "leaderboard.html",
     "bookmarks.html", "progress.html", "result.html", "about.html",
@@ -1009,6 +1017,13 @@ if CONTENT_MANIFEST.exists():
                            + list(ROOT.glob("pa/study-*.html"))
                            if q.relative_to(ROOT).as_posix() != f):
                     errors.append(f"{f}: not linked from any other study page")
+            elif f.startswith(("exams/", "pa/exams/")):
+                # An exam part page (exams/<slug>/<part>.html) hangs off its
+                # exam hub (exams/<slug>.html), whose card grid links each part.
+                hub_f = f.rsplit("/", 1)[0] + ".html"
+                if not ((ROOT / hub_f).exists() and f'href="{f}"' in
+                        read_audit_source(ROOT / hub_f, encoding="utf-8")):
+                    errors.append(f"{f}: not linked from its exam hub {hub_f}")
             elif f'href="{f}"' not in core:
                 errors.append(f"chrome missing content index link {f}")
             want_pg = page_url(f)
@@ -2200,8 +2215,8 @@ if landing_pages:
             errors.append(f"{f}: Exam->Topic links missing {miss_t}")
         # Exam -> strategy / PYQ: every one the exam config names is linked
         for slug in (e.get("strategy") or []):
-            want = f"strategy-{slug}.html"
-            if (ROOT / want).exists() and f'href="{want}"' not in h:
+            want = GUIDE_FILES.get(slug, "")
+            if want and (ROOT / want).exists() and f'href="{want}"' not in h:
                 errors.append(f"{f}: strategy link missing {want}")
         for pid in (e.get("pyq") or []):
             want = f"pyq/{pid}/index.html"

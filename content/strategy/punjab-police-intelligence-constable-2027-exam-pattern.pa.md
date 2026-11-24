@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਪੁਲਿਸ ਇੰਟੈਲੀਜੈਂਸ ਕਾ�
 keywords: [ਇੰਟੈਲੀਜੈਂਸ ਅਸਿਸਟੈਂਟ ਭਰਤੀ 2027, punjab police intelligence assistant 2027, ਇਨਵੈਸਟੀਗੇਸ਼ਨ ਕਾਂਸਟੇਬਲ, intelligence cadre exam pattern, ਪੰਜਾਬ ਪੁਲਿਸ ਇੰਟੈਲੀਜੈਂਸ ਪੇਪਰ, punjab police intelligence previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, strategy-punjab-police-head-constable-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-police-constable.html, exams/punjab-police-head-constable.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਭਰਤੀ ਕਦੋਂ ਆਈ?
     a: ਪੰਜਾਬ ਪੁਲਿਸ ਇਸ਼ਤਿਹਾਰ ਨੰ. 03/2021, 26 ਜੁਲਾਈ 2021 - ਇੰਟੈਲੀਜੈਂਸ ਕਾਡਰ ਵਿੱਚ ਇੰਟੈਲੀਜੈਂਸ ਅਸਿਸਟੈਂਟ ਅਤੇ ਇਨਵੈਸਟੀਗੇਸ਼ਨ ਕਾਡਰ ਵਿੱਚ ਕਾਂਸਟੇਬਲ।

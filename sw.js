@@ -13,7 +13,7 @@
  * skipWaiting() and activate clients.claim(), so the new worker takes over
  * that same visit; nothing reloads the page, so there is no reload loop.
  * ========================================================================== */
-const VERSION = "hoa-v117";
+const VERSION = "hoa-v118";
 const SHELL = `${VERSION}-shell`;
 const DATA = `${VERSION}-data`;
 
@@ -43,7 +43,7 @@ const SHELL_FILES = [
   "./study-notes.html",
   "./current-affairs.html",
   "./magazine.html",
-  "./strategy.html",
+  "./exams.html",
   "./live-sessions.html",
   "./recruitment.html",
   "./blogs.html",

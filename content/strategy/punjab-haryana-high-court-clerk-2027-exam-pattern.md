@@ -15,7 +15,7 @@ seoTitle: Punjab and Haryana High Court Clerk 2027 - Exam Pattern
 keywords: [high court clerk 2027, punjab and haryana high court clerk, high court clerk exam pattern, high court clerk syllabus, phhc clerk recruitment, high court clerk previous papers, high court clerk mains exam, precis writing high court clerk]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-legal.html, current-affairs.html]
 faq:
   - q: What is the qualification for Punjab and Haryana High Court Clerk?
     a: A bachelor's degree in Arts, Commerce, Science or an equivalent degree, proficiency in computer operation (word processing and spreadsheets), and Hindi or Punjabi up to matriculation standard, as per the 2023 notice. Ten percent of posts are for B.Com graduates.

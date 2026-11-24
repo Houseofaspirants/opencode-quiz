@@ -16,7 +16,7 @@ seoTitle: ਪੰਜਾਬ ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ 2027 ਸਿ�
 keywords: [ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਭਰਤੀ 2027, punjab naib tehsildar 2027, ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਸਿਲੇਬਸ, naib tehsildar syllabus punjab, naib tehsildar syllabus pdf, ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਤਨਖ਼ਾਹ, ppsc naib tehsildar, ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਪੇਪਰ ਪੈਟਰਨ, naib tehsildar previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-patwari.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: ਪੰਜਾਬ ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਦੀ ਭਰਤੀ ਕੌਣ ਕਰਦਾ ਹੈ?
     a: ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC) ਨਾਇਬ ਤਹਿਸੀਲਦਾਰ ਦਾ ਪੇਪਰ ਲੈਂਦਾ ਹੈ। 2022 ਅਤੇ 2023 ਦੇ ਪੇਪਰ PPSC ਨੇ ਇਸ਼ਤਿਹਾਰ ਨੰ. 15 (78 ਅਸਾਮੀਆਂ) ਤਹਿਤ ਲਏ ਸਨ।

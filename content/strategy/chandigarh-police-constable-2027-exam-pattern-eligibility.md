@@ -15,7 +15,7 @@ seoTitle: Chandigarh Police Constable 2027 - Pattern & Eligibility
 keywords: [chandigarh police constable 2027, chandigarh police recruitment 2027, chandigarh police constable eligibility, chandigarh police constable exam pattern, chandigarh police constable syllabus, chandigarh police previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, strategy-punjab-police-head-constable-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-police-constable.html, exams/punjab-police-head-constable.html, current-affairs.html]
 faq:
   - q: When was the last Chandigarh Police Constable recruitment?
     a: Chandigarh Police released a notice on 20 May 2023 for 700 Constable (Executive) posts, with a separate sports-quota list.

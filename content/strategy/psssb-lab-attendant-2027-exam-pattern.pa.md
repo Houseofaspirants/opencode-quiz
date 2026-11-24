@@ -15,7 +15,7 @@ seoTitle: PSSSB ਲੈਬ ਅਟੈਂਡੈਂਟ 2027 ਪੇਪਰ ਪੈਟ�
 keywords: [ਲੈਬ ਅਟੈਂਡੈਂਟ ਭਰਤੀ 2027, psssb lab attendant 2027, ਲੈਬ ਅਟੈਂਡੈਂਟ ਪੇਪਰ ਪੈਟਰਨ, psssb lab attendant exam pattern, ਲੈਬ ਅਟੈਂਡੈਂਟ ਤਨਖ਼ਾਹ, psssb lab attendant previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: ਲੈਬ ਅਟੈਂਡੈਂਟ ਦੀਆਂ ਅਸਾਮੀਆਂ ਕਿਹੜੇ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਸਨ?
     a: ਇਸ਼ਤਿਹਾਰ ਨੰ. 04/2023 - 95 ਗਰੁੱਪ ਸੀ ਅਸਾਮੀਆਂ।

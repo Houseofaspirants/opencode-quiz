@@ -15,7 +15,7 @@ seoTitle: PSSSB ਫੋਰੈਸਟਰ 2027 ਯੋਗਤਾ, ਪੇਪਰ ਪੈ�
 keywords: [ਫੋਰੈਸਟਰ ਭਰਤੀ 2027, psssb forester 2027, ਫੋਰੈਸਟਰ ਪੇਪਰ ਪੈਟਰਨ, psssb forester exam pattern, ਫੋਰੈਸਟਰ ਤਨਖ਼ਾਹ, psssb forester previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-forest-guard.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: ਫੋਰੈਸਟਰ ਦੀਆਂ ਅਸਾਮੀਆਂ ਕਿਹੜੇ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਸਨ?
     a: ਇਸ਼ਤਿਹਾਰ ਨੰ. 07/2022 - ਕੁੱਲ 204 ਅਸਾਮੀਆਂ, ਜਿਨ੍ਹਾਂ ਵਿੱਚੋਂ 200 ਫੋਰੈਸਟ ਗਾਰਡ।
@@ -55,7 +55,7 @@ references:
 ## ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 
 1. [20 ਨਵੰਬਰ 2022 ਦਾ ਫੋਰੈਸਟਰ ਪੇਪਰ](pyq/psssb-forester/index.html) ਹੱਲ ਕਰੋ।
-2. [ਫੋਰੈਸਟ ਗਾਰਡ ਗਾਈਡ](strategy-psssb-forest-guard-2027-syllabus-exam-pattern.html) ਵਾਲੀ ਤਿਆਰੀ ਕਰੋ।
+2. [ਫੋਰੈਸਟ ਗਾਰਡ ਗਾਈਡ](exams/psssb-forest-guard.html) ਵਾਲੀ ਤਿਆਰੀ ਕਰੋ।
 3. ਪੰਜਾਬ ਦੇ ਜੰਗਲ ਅਤੇ ਵਾਤਾਵਰਨ ਪੜ੍ਹੋ।
 
 ## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ

@@ -16,7 +16,7 @@ seoTitle: Punjab Naib Tehsildar 2027 - Syllabus & Exam Pattern
 keywords: [punjab naib tehsildar 2027, naib tehsildar recruitment 2027, ppsc naib tehsildar syllabus, naib tehsildar syllabus pdf, naib tehsildar exam pattern, punjab naib tehsildar salary, naib tehsildar eligibility punjab, ppsc naib tehsildar previous papers, naib tehsildar age limit]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-patwari.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: Who conducts the Punjab Naib Tehsildar exam?
     a: The Punjab Public Service Commission (PPSC) conducts the Naib Tehsildar exam. It held the 2022 and 2023 papers under Advertisement No. 15 for 78 posts.

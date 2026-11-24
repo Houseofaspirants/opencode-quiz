@@ -15,7 +15,7 @@ seoTitle: Punjab Police Intelligence Constable 2027 - Exam Pattern
 keywords: [punjab police intelligence assistant 2027, punjab police investigation constable, intelligence cadre exam pattern, punjab police intelligence syllabus, punjab police intelligence previous paper, punjab police advt 03 2021]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, strategy-punjab-police-head-constable-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-police-constable.html, exams/punjab-police-head-constable.html, current-affairs.html]
 faq:
   - q: What was the last Intelligence and Investigation cadre recruitment?
     a: Punjab Police Advertisement No. 03 of 2021, published on 26 July 2021, for Intelligence Assistants (in the rank of Constable) in the Intelligence Cadre and Constables in the Investigation Cadre. Reports put the total at about 1,156 posts.

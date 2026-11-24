@@ -15,7 +15,7 @@ seoTitle: Punjab PCS Judicial 2027 - Exam Pattern, Syllabus & Strategy
 keywords: [punjab pcs judicial 2027, punjab judiciary exam 2027, pcs judicial exam pattern, punjab civil judge recruitment, pcs judicial prelims paper, ppsc judicial branch exam]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-pcs-syllabus-exam-pattern.html, strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-pcs.html, exams/punjab-naib-tehsildar.html, current-affairs.html]
 faq:
   - q: Who conducts the Punjab PCS (Judicial) exam?
     a: The Punjab Public Service Commission (PPSC), in consultation with the Punjab and Haryana High Court, for Civil Judge (Junior Division)-cum-Judicial Magistrate posts.

@@ -15,7 +15,7 @@ seoTitle: PSSSB Hostel Superintendent cum PTI 2027 - Eligibility
 keywords: [psssb hostel superintendent 2027, hostel superintendent cum pti punjab, psssb pti recruitment 2027, hostel superintendent eligibility punjab, psssb hostel superintendent syllabus, hostel superintendent previous papers, psssb advt 13 2025]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-craft-instructor-recruitment-exam-pattern.html, strategy-psssb-librarian-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-craft-instructor.html, exams/psssb-librarian.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Hostel Superintendent cum PTI?
     a: As per Advertisement No. 13 of 2025 - matric in second division or 10+2, a C.P.Ed certificate (D.P.Ed preferred), two years of experience, and matric-level Punjabi.

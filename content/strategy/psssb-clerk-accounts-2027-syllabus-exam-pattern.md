@@ -15,7 +15,7 @@ seoTitle: PSSSB Clerk Accounts 2027 - Syllabus & Exam Pattern
 keywords: [psssb clerk accounts 2027, clerk accounts syllabus punjab, psssb clerk accounts exam pattern, punjab clerk accounts recruitment, clerk accounts previous papers, psssb clerk lekha syllabus, clerk accounts eligibility punjab, psssb clerk accounts answer key]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-it.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Clerk Accounts exam pattern?
     a: In the 2022 exam plan - 120 MCQs, 120 marks, 2 hours. 90 questions from the accounts subject and 30 from GK, English, Punjabi and reasoning, with 1/4 mark cut for each wrong answer. Since October 2022 PSSSB adds a qualifying Punjabi Part A.

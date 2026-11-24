@@ -23,7 +23,7 @@ COLLECTIONS (folder  ->  page prefix  ->  hub)
     content/notes/                    note-       study-notes.html
     content/current-affairs/          ca-         current-affairs.html
     content/monthly-magazine/         magazine-   magazine.html
-    content/strategy/                 strategy-   strategy.html
+    content/strategy/                 exams/      exams.html (scripts/exam_hubs.py)
     content/live-sessions/            session-    live-sessions.html
     content/recruitment/              recruit-    recruitment.html
     content/blogs/                    blog-       blogs.html
@@ -82,6 +82,7 @@ import study_material            # data/study-manifest.json (Study's subject lis
 import proof_documents           # data/proof-manifest.json (the Blueprint's scans)
 import pyq_collection            # data/pyq-manifest.json (the PYQ exam folders)
 import current_affairs           # current-affairs/<language>/<Month YYYY>/ -> nested pages
+import exam_hubs                 # content/strategy/ -> exams/<slug> hubs + part pages
 
 from content_engine import (TEMPLATES, GENERIC_PLAN, WEIGHTS, plan_for,
                             template_for, rank, build_graph, build_silos,
@@ -610,37 +611,40 @@ HUBS = {
         "schema_hub": "Monthly Magazine",
     },
     "strategy": {
-        "file": "strategy.html",
+        # The exam directory. Each guide in content/strategy/ publishes as an
+        # exam hub (exams/<slug>) with a page per part - see scripts/exam_hubs.py.
+        "file": "exams.html",
         "dir": "strategy",
         "prefix": "strategy",
-        "eyebrow": "Know the Exam",
-        "h1": "Exam Pattern & Syllabus for Punjab Exams",
-        "title": "Punjab Exam Pattern & Syllabus | House of Aspirants",
+        "eyebrow": "Punjab Government Exams",
+        "h1": "Punjab Government Exams: Syllabus, Eligibility & Salary",
+        "title": "Punjab Govt Exams: Syllabus & Salary | House of Aspirants",
         "description": (
-            "Exam pattern, syllabus, eligibility and selection process for every "
-            "Punjab recruitment - PSSSB, PPSC, Punjab Police, PSTET and more, in "
-            "English and Punjabi."
+            "Every Punjab recruitment exam in one place - notification, "
+            "eligibility, exam pattern, syllabus, salary and physical standards "
+            "for PSSSB, PPSC and Punjab Police."
         ),
-        "keywords": ("Punjab exam pattern, PSSSB syllabus, PPSC exam pattern, "
-                     "Punjab Police syllabus, eligibility, selection process"),
+        "keywords": ("Punjab government exams, Punjab exam syllabus, PSSSB syllabus, "
+                     "PPSC exam pattern, Punjab Police syllabus, eligibility, salary, "
+                     "physical standards"),
         "lead": (
-            "Know the exam before you prepare for it. Each guide lays out one "
-            "Punjab recruitment: who can apply, the paper pattern and marking, "
-            "the syllabus subject by subject and every stage of selection."
+            "Pick your exam. Each one opens on its own page with everything in "
+            "separate sections: notification, eligibility, exam pattern, "
+            "syllabus, salary, physical standards, previous papers and a "
+            "preparation strategy."
         ),
         "answer": (
-            "Each guide covers one Punjab post - PSSSB, PPSC, Punjab Police, "
-            "PSTET and others - with eligibility, age limit, exam pattern, "
-            "negative marking, syllabus and the selection stages, checked "
-            "against the official notification. Every guide is available in "
-            "English and Punjabi and links to free practice for that exam."
+            "Each exam page covers one Punjab post - PSSSB, PPSC, Punjab Police, "
+            "PSTET and others - split into notification, eligibility, exam "
+            "pattern, syllabus, salary and physical standards, checked against "
+            "the official notification. Every page is available in English and "
+            "Punjabi and links to free practice for that exam."
         ),
-        "empty_h3": "No exam guide published yet",
-        "empty_p": ("Exam pattern and syllabus guides are being checked against "
-                    "the official notifications. The exam hub already lists "
-                    "every Punjab post."),
+        "empty_h3": "No exam published yet",
+        "empty_p": ("Exam pages are being checked against the official "
+                    "notifications. The exam hub already lists every Punjab post."),
         "empty_cta": ("punjab-exams.html", "Browse Punjab exams"),
-        "schema_hub": "Exam Pattern & Syllabus",
+        "schema_hub": "Exams",
     },
     "sessions": {
         "file": "live-sessions.html",
@@ -939,7 +943,7 @@ HUBS = {
                     "over a full week, so nothing is posted for the sake of "
                     "posting. The exam pattern and syllabus guides below show "
                     "what each paper asks for."),
-        "empty_cta": ("strategy.html", "Read the exam guides"),
+        "empty_cta": ("exams.html", "Browse Punjab exams"),
         "schema_hub": "Personal Notes",
     },
     "subject-guides": {
@@ -1072,7 +1076,7 @@ HUBS = {
                     "own attempt, so this page stays empty rather than "
                     "carrying a claimed result. The exam pattern and syllabus "
                     "guides show what each paper asks for."),
-        "empty_cta": ("strategy.html", "Read the exam guides"),
+        "empty_cta": ("exams.html", "Browse Punjab exams"),
         "schema_hub": "Success Stories",
     },
     "book-recommendations": {
@@ -1123,7 +1127,7 @@ HUB_NAV = {                          # hub file stem -> data-nav highlight key
     # so it lights up the same `notes` key the drawer and header already use.
     "study-material": "notes",
     "study-notes": "notes", "current-affairs": "ca", "magazine": "magazine",
-    "strategy": "strategy", "live-sessions": "sessions",
+    "exams": "strategy", "live-sessions": "sessions",
     "recruitment": "recruitment", "blogs": "blogs", "news": "news",
     "announcements": "announcements", "pdfs": "pdfs", "archives": "archives",
     "expected-mcqs": "expected-mcqs",
@@ -1139,7 +1143,7 @@ NAV_ENTRY = {                        # collection -> (English label, emoji)
     "notes": ("Study Notes", "\U0001f4dd"),
     "current-affairs": ("Monthly Current Affairs", "\U0001f5de️"),
     "magazine": ("Monthly Magazine", "\U0001f4d6"),
-    "strategy": ("Exam Pattern & Syllabus", "\U0001f3af"),
+    "strategy": ("Exams", "\U0001f3af"),
     "sessions": ("Live Sessions", "\U0001f3a5"),
     "recruitment": ("Recruitment", "\U0001f4cb"),
     "expected-mcqs": ("Expected MCQs", "\U0001f9e0"),
@@ -1753,7 +1757,7 @@ def og_page_key(url):
     for key, prefix in (("ca", "/ca-"), ("blogs", "/blog-"),
                         ("news", "/news-"), ("announcements", "/announce-"),
                         ("notes", "/note"), ("magazine", "/magazine"),
-                        ("strategy", "/strategy"), ("sessions", "/session"),
+                        ("strategy", "/exams"), ("sessions", "/session"),
                         ("recruitment", "/recruit"), ("expected-mcqs", "/expected-"),
                         ("previous-year-questions", "/pyq-"),
                         ("personal-notes", "/pnote-"), ("subject-guides", "/sguide-"),
@@ -2899,7 +2903,11 @@ def build_record(coll, cfg, slug, path, index, lang, meta=None, body=None,
     # /<slug> and /pa/<slug> and neither language is a hidden fallback.
     page_slug = str(meta.get("slug") or slug)
     filename, url = "", ""
-    if prefix:
+    if coll == "strategy":
+        # Exam guides publish as exam hubs: exams/<slug> (config/exam-hubs.json)
+        filename = exam_hubs.hub_file(where, lang, err)
+        url = f"{DOMAIN}/{filename[:-5]}" if filename else ""
+    elif prefix:
         stem = f"{prefix}-{page_slug}"
         filename = (f"pa/{stem}.html" if lang == "pa" else f"{stem}.html")
         url = f"{DOMAIN}/{filename[:-5]}"
@@ -3779,7 +3787,7 @@ TAXONOMY = {"tag": {}, "category": {}}
 
 # Display names for category slugs whose raw value reads badly on a page.
 # The slug (and so the archive-category-<slug>.html URL) is unchanged.
-CATEGORY_LABELS = {"preparation-strategy": "Exam Pattern & Syllabus"}
+CATEGORY_LABELS = {"preparation-strategy": "Exam Guide"}
 
 
 def category_label(value):
@@ -4021,13 +4029,13 @@ EXPLORE_BY_COLL = {
         ("live-sessions.html", "Live sessions", "Bring the doubts live"),
     ],
     "sessions": [
-        ("strategy.html", "Exam pattern & syllabus", "Know the paper you are preparing for"),
+        ("exams.html", "Exams: syllabus & eligibility", "Know the paper you are preparing for"),
         ("announcements.html", "Announcements", "Schedule changes land first"),
         ("blogs.html", "Topper's Diary", "How an SI Rank 2 prepared"),
     ],
     "recruitment": [
         ("punjab-exams.html", "Exam guides", "Preparation guide for every post"),
-        ("strategy.html", "Exam pattern & syllabus", "Pattern and syllabus for the post"),
+        ("exams.html", "Exams: syllabus & eligibility", "Pattern and syllabus for the post"),
         ("news.html", "Exam news", "Pattern and date updates"),
     ],
     "expected-mcqs": [
@@ -4042,7 +4050,7 @@ EXPLORE_BY_COLL = {
     ],
     "blogs": [
         ("articles.html", "Study guides", "The long-form guides"),
-        ("strategy.html", "Exam pattern & syllabus", "Pattern and syllabus for every post"),
+        ("exams.html", "Exams: syllabus & eligibility", "Pattern and syllabus for every post"),
         ("study-notes.html", "Study notes", "One idea per read"),
     ],
     "news": [
@@ -4070,7 +4078,7 @@ EXPLORE_BY_COLL = {
     "author": [
         ("magazine.html", "Monthly magazine", "The issues this byline writes"),
         ("live-sessions.html", "Live sessions", "Where the mentor appears"),
-        ("strategy.html", "Exam pattern & syllabus", "Guides to every Punjab post"),
+        ("exams.html", "Exams: syllabus & eligibility", "Guides to every Punjab post"),
     ],
     "search": [
         ("archives.html", "Archive", "Everything published, by subject"),
@@ -4081,7 +4089,7 @@ EXPLORE_BY_COLL = {
     # Phase 4 collections - the links that make each new hub contextual
     # rather than generic, on top of the common trio below.
     "personal-notes": [
-        ("strategy.html", "Exam pattern & syllabus", "What the exam asks for"),
+        ("exams.html", "Exams: syllabus & eligibility", "What the exam asks for"),
         ("study-notes.html", "Study notes", "The concept it recorded"),
         ("quiz.html?mode=daily", "Practice", "Today's daily challenge"),
     ],
@@ -4101,14 +4109,14 @@ EXPLORE_BY_COLL = {
         ("progress.html", "Progress", "Your streak and accuracy"),
     ],
     "success-stories": [
-        ("strategy.html", "Exam pattern & syllabus", "The exam they cleared, explained"),
+        ("exams.html", "Exams: syllabus & eligibility", "The exam they cleared, explained"),
         ("live-sessions.html", "Live sessions", "Ask the mentor directly"),
         ("announcements.html", "Announcements", "What the site added next"),
     ],
     "book-recommendations": [
         ("pdfs.html", "Free PDFs", "Start free first"),
         ("study-notes.html", "Study notes", "The same syllabus, no cost"),
-        ("strategy.html", "Exam pattern & syllabus", "The syllabus a book has to cover"),
+        ("exams.html", "Exams: syllabus & eligibility", "The syllabus a book has to cover"),
     ],
 }
 
@@ -4460,6 +4468,14 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
         trail.append((record["title"], url))
         crumbs["items"] = trail
         crumb_tail = tail
+    if record.get("examPart"):
+        # Exams -> the exam's hub -> this part (syllabus, salary, ...)
+        xp = record["examPart"]
+        crumbs["items"] = [("Home", f"{DOMAIN}/"), (hub["schema_hub"], hub_url),
+                           (xp["name"], f'{DOMAIN}/{xp["hubFile"][:-5]}'),
+                           (record["title"], url)]
+        crumb_tail = (f'<a href="{esc(xp["hubFile"])}">{esc(xp["name"])}</a>'
+                      f'<span>/</span>')
     nodes = [article_node(record, url), breadcrumb_node(crumbs)]
 
     if record.get("pdfDrop"):
@@ -4541,7 +4557,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     if record.get("pdf"):
         # Read it here first, then practise; the file itself comes last.
         src = esc(pdf_href(record["pdf"]))
-        read_href = f'/{record["file"]}#read' if record["lang"] == "pa" else "#read"
+        read_href = (f'/{record["file"]}#read'
+                     if record["lang"] == "pa" or "/" in record["file"] else "#read")
         quiz_href = esc(practice_link(record, index, landing))
         pages = int(record.get("pdfPages") or 0)
         pdf_html = (f'<a class="btn btn-primary" href="{read_href}" data-pdf-open>📖 Read Online</a>'
@@ -4573,16 +4590,24 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
     alternates = ()
     sibling = ROOT / "content" / cfg["dir"] / (
         record["slug"] + (".md" if record["lang"] == "pa" else ".pa.md"))
-    if sibling.exists():
-        stem = f'{cfg["prefix"]}-{record["slug"]}'
-        alternates = (("en", f"{DOMAIN}/{stem}"),
-                      ("pa", f"{DOMAIN}/pa/{stem}"))
+    if "langAltFiles" in record:
+        # An exam part page: the other language has this part, or it does not
+        # (the Punjabi guide can be cut differently), so no guessed sibling.
+        alt_files = record["langAltFiles"]
+    elif sibling.exists():
+        stem = record["file"][3:] if record["file"].startswith("pa/") else record["file"]
+        alt_files = {"en": stem, "pa": f"pa/{stem}"}
+    else:
+        alt_files = None
+    if alt_files:
+        alternates = (("en", f'{DOMAIN}/{alt_files["en"][:-5]}'),
+                      ("pa", f'{DOMAIN}/{alt_files["pa"][:-5]}'))
         if record["lang"] == "pa":
-            switch_html = (f'<a class="badge badge-lang" href="/{stem}.html" '
+            switch_html = (f'<a class="badge badge-lang" href="/{alt_files["en"]}" '
                            f'hreflang="en">English version</a>')
         else:
             switch_html = (f'<a class="badge badge-lang" lang="pa" hreflang="pa" '
-                           f'href="/pa/{stem}.html">'
+                           f'href="/{alt_files["pa"]}">'
                            f'ਪੰਜਾਬੀ ਵਿੱਚ ਪੜ੍ਹੋ</a>')
     if record.get("langTwin"):
         # A study note and its translation keep their own root URLs; the
@@ -4598,7 +4623,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
         def _anchor(a):
             # /pa/ pages set <base href="/">, so a self-anchor has to name the
             # page it belongs to (the file path, matching every other link here).
-            return f'/{record["file"]}#{a}' if record["lang"] == "pa" else f"#{a}"
+            return (f'/{record["file"]}#{a}'
+                    if record["lang"] == "pa" or "/" in record["file"] else f"#{a}")
         items = "".join(f'<li><a href="{_anchor(a)}">{esc(t)}</a></li>'
                         for a, t in record["toc"])
         toc_head = {"notes": "In this note", "magazine": "In this issue",
@@ -4689,7 +4715,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
                 keywords_for(record), url, "article", jsonld,
                 lang="pa" if record["lang"] == "pa" else "en",
                 alternates=alternates,
-                image=str(record.get("thumbnail") or record.get("cover") or ""))
+                image=str(record.get("thumbnail") or record.get("cover") or ""),
+                nested="/" in record["file"])
     if record.get("studySubject") or record.get("pageLang") == "pa":
         html = study_note_head(html, record)
     html += f"""  <main id="main">
@@ -6400,7 +6427,7 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
     # file name, never on the whole path.
     live = ([r for r in items
              if r["file"].split("/")[-1].startswith(prefix + "-")]
-            if prefix else items)
+            if prefix and coll != "strategy" else items)   # exams/<slug>.html
     # The PDF hub is a registry (the PDF itself is the artifact - there is no
     # per-document page to list), so it ships as a plain WebPage, never as an
     # ItemList of URLs that do not exist.
@@ -7109,9 +7136,9 @@ def feed_html(kind, items, index):
 # destination — only the scroll it used to cost.
 DRAWER_HUBS = ("current-affairs.html",
                "live-sessions.html", "expected-mcqs.html")
-# Exam Pattern & Syllabus (strategy.html) is a top-level item in the header and the drawer
+# Exams (exams.html) is a top-level item in the header and the drawer
 # (hand-written in core.js), so the generated Study blocks leave it out.
-TOP_LEVEL_HUBS = ("strategy.html",)
+TOP_LEVEL_HUBS = ("exams.html",)
 
 
 def nav_lines(kind):
@@ -8376,6 +8403,26 @@ def main():
     ca_section = current_affairs.build(
         all_records["current-affairs"], drops, study_lang, warn, info)
 
+    # ---- Exams: every guide -> exam hub + one page per part ---------------
+    # Cut here, before anything renders, so the hub body, its table of
+    # contents and the part pages all come from one decision.
+    try:
+        _landing_files = {str(x.get("file", "")) for x in json.loads(
+            (ROOT / "data" / "landing-manifest.json").read_text(encoding="utf-8")
+        ).get("pages", [])}
+    except (OSError, ValueError):
+        _landing_files = set()
+    exam_index, exam_parts = exam_hubs.prepare(
+        all_records["strategy"] + punjabi["strategy"], err, warn, info,
+        _landing_files)
+    if errors:
+        for e in errors:
+            print(f"  \u274c {e}")
+        print(f"\n\u274c content build FAILED with {len(errors)} error(s) - "
+              f"no files were written.")
+        return 1
+    exam_hubs.write_index(exam_index)
+
     expected = set()
     manifest_items = []
     rendered = []
@@ -8439,6 +8486,21 @@ def main():
                 **({"canonical": rec["canonicalUrl"]} if rec.get("canonicalUrl") else {}),
             })
         info(f"{coll}: {len(pool)} english + {len(punjabi[coll])} punjabi page(s)")
+
+    # Exam part pages (exams/<slug>/<part>.html): rendered by the same page
+    # renderer as the hub, listed in the manifest's `pages` (sitemap) - never
+    # in `items`, so the feed and the Telegram announcer see one exam, not
+    # seven pages of it.
+    _part_ctx = dict(ctx, edges=[])
+    for part in exam_parts:
+        pool = (all_records["strategy"] if part["lang"] == "en"
+                else punjabi["strategy"])
+        html_out, _ = render_item(part, HUBS["strategy"], pool, index, landing,
+                                  _part_ctx)
+        out_path = ROOT / part["file"]
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(html_out, encoding="utf-8")
+        expected.add(part["file"])
 
     # Language pairs: /slug and /pa/slug point at each other in hreflang, the
     # language switch badge and the search corpus.
@@ -8721,6 +8783,21 @@ def main():
                 pa_dir.rmdir()
             except OSError:
                 pass
+    # Exams: exams/<slug>.html and exams/<slug>/<part>.html, both languages.
+    for exam_root in (ROOT / exam_hubs.HUB_DIR, ROOT / "pa" / exam_hubs.HUB_DIR):
+        if not exam_root.is_dir():
+            continue
+        for sub in sorted(p for p in exam_root.rglob("*.html") if p.is_file()):
+            rel = sub.relative_to(ROOT).as_posix()
+            if rel not in expected:
+                sub.unlink()
+                removed.append(rel)
+        for sub in sorted((p for p in exam_root.rglob("*") if p.is_dir()),
+                          key=lambda p: len(p.parts), reverse=True):
+            try:
+                sub.rmdir()
+            except OSError:
+                pass
     # The Current Affairs section is two directories deep
     # (current-affairs/<language>/[<month>/]), which the root scan above cannot
     # see into: a language folder, or a month folder, that no longer exists on
@@ -8794,7 +8871,7 @@ def main():
             "title": ARCHIVES_TITLE,
             "description": ARCHIVES_DESC,
         }] + phase4_manifest + pyq_page_entries + ca_page_entries
-          + study_page_entries,
+          + study_page_entries + exam_hubs.manifest_entries(exam_parts),
         "items": sorted(manifest_items, key=lambda r: r["file"]),
         "pdfs": pdfs,
         "drops": drops,

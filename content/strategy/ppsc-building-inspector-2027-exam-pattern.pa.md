@@ -15,7 +15,7 @@ seoTitle: PPSC ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ 2027 ਪੇਪਰ 
 keywords: [ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਭਰਤੀ 2027, ppsc building inspector 2027, ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਪੇਪਰ ਪੈਟਰਨ, ppsc building inspector exam pattern, ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਸਿਲੇਬਸ, ppsc building inspector previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/ppsc-cooperative-inspector.html, exams/psssb-junior-draftsman.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ PPSC ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਭਰਤੀ ਕਦੋਂ ਆਈ?
     a: ਜੂਨ 2022 ਵਿੱਚ, ਸਥਾਨਕ ਸਰਕਾਰ ਵਿਭਾਗ ਦੀਆਂ 157 ਅਸਾਮੀਆਂ (ਗਰੁੱਪ ਬੀ)।

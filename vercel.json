@@ -36,6 +36,461 @@
       "statusCode": 301
     },
     {
+      "source": "/strategy",
+      "destination": "/exams",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-chandigarh-police-constable-2027-exam-pattern-eligibility",
+      "destination": "/exams/chandigarh-police-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-chandigarh-police-constable-2027-exam-pattern-eligibility",
+      "destination": "/pa/exams/chandigarh-police-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-ppsc-building-inspector-2027-exam-pattern",
+      "destination": "/exams/ppsc-building-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-ppsc-building-inspector-2027-exam-pattern",
+      "destination": "/pa/exams/ppsc-building-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
+      "destination": "/exams/ppsc-cooperative-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern",
+      "destination": "/pa/exams/ppsc-cooperative-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-ppsc-draftsman-2027-exam-pattern",
+      "destination": "/exams/ppsc-draftsman",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-ppsc-draftsman-2027-exam-pattern",
+      "destination": "/pa/exams/ppsc-draftsman",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-ppsc-functional-manager-2027-exam-pattern",
+      "destination": "/exams/ppsc-functional-manager",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-ppsc-functional-manager-2027-exam-pattern",
+      "destination": "/pa/exams/ppsc-functional-manager",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-ppsc-junior-auditor-2027-eligibility-exam-pattern",
+      "destination": "/exams/ppsc-junior-auditor",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-ppsc-junior-auditor-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/ppsc-junior-auditor",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-anganwadi-supervisor-2027-exam-pattern",
+      "destination": "/exams/psssb-anganwadi-supervisor",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-anganwadi-supervisor-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-anganwadi-supervisor",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+      "destination": "/exams/psssb-clerk",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-clerk-recruitment-exam-pattern-2026",
+      "destination": "/pa/exams/psssb-clerk",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-clerk-accounts",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-clerk-accounts",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-clerk-data-entry-operator-2027-syllabus",
+      "destination": "/exams/psssb-clerk-data-entry-operator",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-clerk-data-entry-operator-2027-syllabus",
+      "destination": "/pa/exams/psssb-clerk-data-entry-operator",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-clerk-it-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-clerk-it",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-clerk-it",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-clerk-legal-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-clerk-legal",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-clerk-legal-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-clerk-legal",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+      "destination": "/exams/psssb-craft-instructor",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-craft-instructor-recruitment-exam-pattern",
+      "destination": "/pa/exams/psssb-craft-instructor",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-dairy-development-inspector-2027-exam-pattern",
+      "destination": "/exams/psssb-dairy-development-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-dairy-development-inspector-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-dairy-development-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-driver-2027-eligibility-exam-pattern",
+      "destination": "/exams/psssb-driver",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-driver-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/psssb-driver",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+      "destination": "/exams/psssb-excise-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-excise-inspector-recruitment-exam-pattern",
+      "destination": "/pa/exams/psssb-excise-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-fireman-2027-eligibility-exam-pattern",
+      "destination": "/exams/psssb-fireman",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-fireman-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/psssb-fireman",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-forest-guard",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-forest-guard-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-forest-guard",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-forester-2027-eligibility-exam-pattern",
+      "destination": "/exams/psssb-forester",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-forester-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/psssb-forester",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-group-d-recruitment-exam-pattern",
+      "destination": "/exams/psssb-group-d",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-group-d-recruitment-exam-pattern",
+      "destination": "/pa/exams/psssb-group-d",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-horticulture-supervisor-2027-exam-pattern",
+      "destination": "/exams/psssb-horticulture-supervisor",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-horticulture-supervisor-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-horticulture-supervisor",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-hostel-superintendent-pti-2027-exam-pattern",
+      "destination": "/exams/psssb-hostel-superintendent",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-hostel-superintendent-pti-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-hostel-superintendent",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+      "destination": "/exams/psssb-jail-warder",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-jail-warder-matron-recruitment-exam-pattern",
+      "destination": "/pa/exams/psssb-jail-warder",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-junior-draftsman",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-junior-draftsman",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-lab-attendant-2027-exam-pattern",
+      "destination": "/exams/psssb-lab-attendant",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-lab-attendant-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-lab-attendant",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-librarian-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-librarian",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-librarian-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-librarian",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-restorer-lab-assistant-2027-exam-pattern",
+      "destination": "/exams/psssb-restorer-lab-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-restorer-lab-assistant-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-restorer-lab-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-senior-technical-assistant-2027-exam-pattern",
+      "destination": "/exams/psssb-senior-technical-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-senior-technical-assistant-2027-exam-pattern",
+      "destination": "/pa/exams/psssb-senior-technical-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-steno-typist-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-steno-typist",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-steno-typist-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-steno-typist",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-surveyor-2027-syllabus-exam-pattern",
+      "destination": "/exams/psssb-surveyor",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-surveyor-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/psssb-surveyor",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-technical-assistant-2027-eligibility-syllabus",
+      "destination": "/exams/psssb-technical-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-technical-assistant-2027-eligibility-syllabus",
+      "destination": "/pa/exams/psssb-technical-assistant",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+      "destination": "/exams/psssb-veterinary-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-psssb-veterinary-inspector-recruitment-exam-pattern",
+      "destination": "/pa/exams/psssb-veterinary-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-pstet-exam-pattern-syllabus",
+      "destination": "/exams/pstet",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-pstet-exam-pattern-syllabus",
+      "destination": "/pa/exams/pstet",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-ett-teacher-2027-eligibility-exam-pattern",
+      "destination": "/exams/punjab-ett-teacher",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-ett-teacher-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/punjab-ett-teacher",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+      "destination": "/exams/punjab-haryana-high-court-clerk",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-haryana-high-court-clerk-2027-exam-pattern",
+      "destination": "/pa/exams/punjab-haryana-high-court-clerk",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+      "destination": "/exams/punjab-master-cadre",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-master-cadre-2027-eligibility-exam-pattern",
+      "destination": "/pa/exams/punjab-master-cadre",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern",
+      "destination": "/exams/punjab-naib-tehsildar",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern",
+      "destination": "/pa/exams/punjab-naib-tehsildar",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-panchayat-secretary-2027-exam-pattern",
+      "destination": "/exams/punjab-panchayat-secretary",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-panchayat-secretary-2027-exam-pattern",
+      "destination": "/pa/exams/punjab-panchayat-secretary",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+      "destination": "/exams/punjab-patwari",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern",
+      "destination": "/pa/exams/punjab-patwari",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-pcs-syllabus-exam-pattern",
+      "destination": "/exams/punjab-pcs",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-pcs-syllabus-exam-pattern",
+      "destination": "/pa/exams/punjab-pcs",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-pcs-judicial-2027-exam-pattern",
+      "destination": "/exams/punjab-pcs-judicial",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-pcs-judicial-2027-exam-pattern",
+      "destination": "/pa/exams/punjab-pcs-judicial",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+      "destination": "/exams/punjab-police-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
+      "destination": "/pa/exams/punjab-police-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+      "destination": "/exams/punjab-police-head-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-police-head-constable-syllabus-exam-pattern",
+      "destination": "/pa/exams/punjab-police-head-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-police-intelligence-constable-2027-exam-pattern",
+      "destination": "/exams/punjab-police-intelligence-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-police-intelligence-constable-2027-exam-pattern",
+      "destination": "/pa/exams/punjab-police-intelligence-constable",
+      "statusCode": 301
+    },
+    {
+      "source": "/strategy-punjab-police-si-syllabus-exam-pattern",
+      "destination": "/exams/punjab-police-sub-inspector",
+      "statusCode": 301
+    },
+    {
+      "source": "/pa/strategy-punjab-police-si-syllabus-exam-pattern",
+      "destination": "/pa/exams/punjab-police-sub-inspector",
+      "statusCode": 301
+    },
+    {
       "source": "/blog-1-7-30-revision-rule-si-rank-2",
       "destination": "/blog-how-to-stop-forgetting-in-exams",
       "statusCode": 301

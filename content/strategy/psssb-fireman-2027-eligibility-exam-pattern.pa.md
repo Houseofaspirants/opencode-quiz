@@ -15,7 +15,7 @@ seoTitle: PSSSB ਫਾਇਰਮੈਨ 2027 ਯੋਗਤਾ, ਪੇਪਰ ਪੈ�
 keywords: [ਫਾਇਰਮੈਨ ਭਰਤੀ 2027, psssb fireman 2027, ਫਾਇਰਮੈਨ ਯੋਗਤਾ, psssb fireman eligibility, ਫਾਇਰਮੈਨ ਸਰੀਰਕ ਟੈਸਟ, psssb fireman previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-driver-2027-eligibility-exam-pattern.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-driver.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਫਾਇਰਮੈਨ ਭਰਤੀ ਕਿਹੜੀ ਸੀ?
     a: ਇਸ਼ਤਿਹਾਰ ਨੰ. 01/2023 - 1317 ਅਸਾਮੀਆਂ (991 ਫਾਇਰਮੈਨ, 326 ਡਰਾਈਵਰ/ਆਪਰੇਟਰ)।

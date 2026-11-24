@@ -15,7 +15,7 @@ seoTitle: PSSSB Anganwadi Supervisor 2027 - Exam Pattern & Syllabus
 keywords: [psssb anganwadi supervisor 2027, punjab anganwadi supervisor recruitment, psssb supervisor icds, anganwadi supervisor exam pattern, anganwadi supervisor previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: When was the last PSSSB Anganwadi Supervisor exam?
     a: On 25 September 2022. PSSSB published a final answer key for 100 questions; a few questions marked * gave 1 mark to every candidate.

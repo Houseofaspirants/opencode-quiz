@@ -16,7 +16,7 @@ seoTitle: Punjab Excise Inspector 2026 - Syllabus & Exam Pattern
 keywords: [psssb excise inspector, punjab excise inspector recruitment 2026, excise and taxation inspector punjab, psssb excise inspector syllabus, psssb excise inspector exam pattern, psssb excise inspector salary, punjab excise inspector age limit, psssb eti 197 posts]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-excise-inspector.html, strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-excise-inspector.html, exams/punjab-patwari.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Excise and Taxation Inspector?
     a: A bachelor's degree in any discipline, a 120-hour computer course (or a DOEACC 'O' Level equivalent), and matriculation with Punjabi.

@@ -15,7 +15,7 @@ seoTitle: PSSSB Technical Assistant 2027 - Eligibility & Selection
 keywords: [psssb technical assistant 2027, punjab technical assistant recruitment, psssb technical assistant eligibility, technical assistant syllabus punjab, psssb technical assistant salary, technical assistant previous papers, district technical coordinator punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk-it.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Technical Assistant?
     a: It depends on the department. Advt 12/2025 (Directorate of SC Sub-Plan) asked for a master's in Economics, Mathematics, Agricultural Economics, Commerce with Statistics, or Statistics. Advt 01/2024 (Administrative Reforms) asked for a B.E./B.Tech in IT, ECE or CS with 50%, or a master's in Computer.

@@ -15,7 +15,7 @@ seoTitle: PSSSB Junior Draftsman 2027 - Syllabus & Exam Pattern
 keywords: [psssb junior draftsman 2027, punjab junior draftsman recruitment, psssb junior draftsman syllabus, junior draftsman civil syllabus punjab, junior draftsman exam pattern, psssb draftsman previous papers, junior draftsman mechanical electrical]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-surveyor-2027-syllabus-exam-pattern.html, strategy-psssb-craft-instructor-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-surveyor.html, exams/psssb-craft-instructor.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Junior Draftsman exam pattern?
     a: The official plan has 120 MCQs in 2 hours - 90 from the trade syllabus and 30 from GK, reasoning, English and Punjabi. Each question carries 1 mark and 1/4 mark is cut for every wrong answer.

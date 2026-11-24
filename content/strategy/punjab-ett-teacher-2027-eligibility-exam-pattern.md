@@ -15,7 +15,7 @@ seoTitle: Punjab ETT Teacher 2027 - Eligibility & Exam Pattern
 keywords: [punjab ett 2027, punjab ett recruitment 2027, punjab ett eligibility, punjab ett exam pattern, punjab ett syllabus, punjab ett previous paper, ett 5994 posts]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-pstet-exam-pattern-syllabus.html, strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/pstet.html, exams/punjab-master-cadre.html, current-affairs.html]
 faq:
   - q: What was the last big Punjab ETT recruitment?
     a: The 5994 ETT posts advertised by the Education Recruitment Board in October 2022, with a corrigendum dated 1 December 2022. The written exam was held on 5 March 2023.
@@ -61,7 +61,7 @@ Both final keys gave free marks for a few deleted questions (shown as * in the k
 ## How to prepare
 
 1. **Solve both papers with their keys:** [ETT 2023 papers, provisional and final keys](pyq/punjab-ett-teacher/index.html).
-2. **Clear PSTET first** - our [PSTET guide](strategy-pstet-exam-pattern-syllabus.html) explains it.
+2. **Clear PSTET first** - our [PSTET guide](exams/pstet.html) explains it.
 3. **Punjabi grammar and comprehension** daily.
 4. **Child development and pedagogy** - common to PSTET and ETT.
 5. **Maths, EVS and GK** at primary-teacher level.

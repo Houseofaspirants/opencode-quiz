@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ PCS ਜੁਡੀਸ਼ੀਅਲ 2027 ਪੇਪਰ ਪ�
 keywords: [pcs judicial 2027, punjab judiciary exam 2027, ਸਿਵਲ ਜੱਜ ਭਰਤੀ ਪੰਜਾਬ, pcs judicial exam pattern, ਪੀਸੀਐਸ ਜੁਡੀਸ਼ੀਅਲ ਪੇਪਰ, pcs judicial prelims paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-punjab-pcs-syllabus-exam-pattern.html, strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/punjab-pcs.html, exams/punjab-naib-tehsildar.html, current-affairs.html]
 faq:
   - q: PCS (ਜੁਡੀਸ਼ੀਅਲ) ਦਾ ਪੇਪਰ ਕੌਣ ਲੈਂਦਾ ਹੈ?
     a: ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ (PPSC), ਪੰਜਾਬ ਅਤੇ ਹਰਿਆਣਾ ਹਾਈ ਕੋਰਟ ਦੀ ਸਲਾਹ ਨਾਲ।

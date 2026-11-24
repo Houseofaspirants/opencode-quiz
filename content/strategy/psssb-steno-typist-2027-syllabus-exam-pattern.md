@@ -15,7 +15,7 @@ seoTitle: PSSSB Steno-Typist 2027 - Eligibility, Steno Test & Pattern
 keywords: [psssb steno typist 2027, punjab steno typist recruitment 2027, psssb steno typist syllabus, steno typist exam pattern punjab, punjabi steno test 80 wpm, steno typist salary punjab, psssb steno typist eligibility, psssb steno previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-data-entry-operator-2027-syllabus.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-data-entry-operator.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Steno-Typist?
     a: As per Advertisement No. 14 of 2025, a bachelor's degree from a recognised university, knowledge of Punjabi stenography, a computer course of at least 120 hours, and matric-level Punjabi.

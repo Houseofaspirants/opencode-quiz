@@ -15,7 +15,7 @@ seoTitle: PSSSB ਸੀਨੀਅਰ ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂ�
 keywords: [ਸੀਨੀਅਰ ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਭਰਤੀ, psssb senior technical assistant 2027, ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਕੈਮਿਸਟਰੀ, psssb senior technical assistant paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/punjab-master-cadre.html, current-affairs.html]
 faq:
   - q: ਇਹ ਪੇਪਰ ਕੀ ਹੈ?
     a: ਵਿਸ਼ੇ ਅਨੁਸਾਰ PSSSB ਪੇਪਰ - ਸਾਡੇ ਕੋਲ 2022 ਦੇ ਕੈਮਿਸਟਰੀ ਅਤੇ ਗਣਿਤ ਦੇ ਪੇਪਰ ਹਨ।

@@ -794,8 +794,12 @@ _content_items = read_json(os.path.join(DATA, "content-manifest.json")).get("ite
 STRATEGY_BY_SLUG = {}
 for _it in _content_items:
     _f = str(_it.get("file", ""))
-    if _it.get("collection") == "strategy" and _f.startswith("strategy-"):
-        STRATEGY_BY_SLUG[_f[len("strategy-"):-5]] = _it
+    # Keyed by the guide's file name in content/strategy/ (the slug data/exams.json
+    # names); the page itself lives at exams/<slug>.html (scripts/exam_hubs.py).
+    _p = str(_it.get("path", ""))
+    if _it.get("collection") == "strategy" and _p.endswith(".md") \
+            and not _p.endswith(".pa.md") and _it.get("lang") == "en":
+        STRATEGY_BY_SLUG[_p.rsplit("/", 1)[-1][:-3]] = _it
 PYQ_BY_ID = {x["id"]: x for x in
              read_json(os.path.join(DATA, "pyq-manifest.json")).get("exams", [])}
 _study = read_json(os.path.join(DATA, "study-manifest.json")).get("subjects", [])

@@ -15,7 +15,7 @@ seoTitle: PSSSB Clerk IT 2027 - Eligibility, Syllabus & Exam Pattern
 keywords: [psssb clerk it 2027, punjab clerk it recruitment 2027, psssb clerk it syllabus, clerk it exam pattern punjab, psssb clerk it eligibility, clerk it salary punjab, psssb clerk it previous papers, clerk it typing test punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-accounts.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Clerk IT?
     a: A full-time BCA, B.Sc IT or B.Sc Computer Science from a recognised university, matric-level Punjabi, and a Punjabi and English typing test at 30 words per minute, as per Advertisement No. 11 of 2025.

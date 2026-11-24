@@ -15,7 +15,7 @@ seoTitle: Punjab PCS 2026 - Syllabus, Exam Pattern & Eligibility
 keywords: [punjab pcs syllabus, punjab pcs exam pattern, ppsc pcs syllabus, punjab pcs 2026, punjab pcs eligibility, punjab pcs age limit, punjab pcs prelims syllabus, punjab pcs mains syllabus, punjab dsp physical test, ppsc civil services]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-pcs.html, strategy-punjab-police-si-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-punjab-pcs.html, exams/punjab-police-sub-inspector.html, current-affairs.html]
 faq:
   - q: What is the Punjab PCS prelims exam pattern?
     a: Two objective papers of 200 marks and 2 hours each. Paper I General Studies has 100 questions of 2 marks; Paper II CSAT has 80 questions of 2.5 marks. There is no negative marking. CSAT is qualifying (40%), and only Paper I decides who goes to mains.

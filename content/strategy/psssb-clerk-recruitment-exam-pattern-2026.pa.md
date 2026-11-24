@@ -16,7 +16,7 @@ seoTitle: PSSSB ਕਲਰਕ 2026 - ਯੋਗਤਾ, ਪੇਪਰ ਪੈਟਰ�
 keywords: [PSSSB ਕਲਰਕ ਭਰਤੀ 2026, ਕਲਰਕ ਪੇਪਰ ਪੈਟਰਨ, PSSSB ਕਲਰਕ ਯੋਗਤਾ, ਕਲਰਕ ਟਾਈਪ ਟੈਸਟ, ਪੰਜਾਬ ਕਲਰਕ ਭਰਤੀ, psssb clerk 2026, psssb clerk recruitment 2026, psssb clerk exam pattern, psssb clerk exam date 2026, psssb clerk typing test]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-clerk.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-clerk.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: PSSSB ਕਲਰਕ 2026 ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਗ੍ਰੈਜੂਏਸ਼ਨ, ਸਰਕਾਰੀ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਜਾਂ ISO 9001 ਸੰਸਥਾ ਤੋਂ 120 ਘੰਟੇ ਦਾ ਕੰਪਿਊਟਰ ਕੋਰਸ (ਜਾਂ DOEACC 'O' Level ਦੇ ਬਰਾਬਰ), ਅਤੇ ਮੈਟ੍ਰਿਕ ਵਿੱਚ ਪੰਜਾਬੀ। ਇਹ ਸਭ ਅਪਲਾਈ ਦੀ ਆਖ਼ਰੀ ਤਾਰੀਖ਼, 6 ਮਾਰਚ 2026 ਤੱਕ ਹੋਣਾ ਚਾਹੀਦਾ ਸੀ।

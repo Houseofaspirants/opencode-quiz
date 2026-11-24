@@ -15,7 +15,7 @@ seoTitle: PPSC Building Inspector 2027 - Exam Pattern & Syllabus
 keywords: [ppsc building inspector 2027, ppsc building inspector exam pattern, ppsc building inspector syllabus, building inspector local government punjab, ppsc building inspector previous paper, ppsc building inspector salary, punjab building inspector recruitment]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/ppsc-cooperative-inspector.html, exams/psssb-junior-draftsman.html, current-affairs.html]
 faq:
   - q: What was the last PPSC Building Inspector recruitment?
     a: PPSC advertised 157 Building Inspector (Group B) posts in the Department of Local Government in June 2022 - reported as 131 for Municipal Councils and Nagar Panchayats and 26 for Municipal Corporations.

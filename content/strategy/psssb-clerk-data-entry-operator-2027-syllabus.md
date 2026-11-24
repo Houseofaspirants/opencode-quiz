@@ -15,7 +15,7 @@ seoTitle: PSSSB Clerk cum DEO 2027 - Syllabus & Exam Pattern
 keywords: [psssb clerk cum data entry operator, clerk cum deo syllabus punjab, psssb deo exam pattern, clerk data entry operator 2027, psssb clerk deo previous papers, clerk cum deo answer key, punjab data entry operator recruitment, psssb deo syllabus]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-it.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Clerk cum Data Entry Operator exam pattern?
     a: Under the Advt 03/2022 plan - 120 MCQs, 120 marks, 2 hours, with 1/4 mark cut for each wrong answer. GK and current affairs 30, reasoning and maths 30, Punjab history and culture 20, English 15, Punjabi 15, ICT 10.

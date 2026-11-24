@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ PCS 2026 - ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈਟ�
 keywords: [ਪੰਜਾਬ PCS ਸਿਲੇਬਸ, ਪੰਜਾਬ PCS ਪੇਪਰ ਪੈਟਰਨ, ਪੰਜਾਬ PCS 2026, ਪੰਜਾਬ ਸਿਵਲ ਸੇਵਾਵਾਂ ਪ੍ਰੀਖਿਆ, PPSC PCS ਯੋਗਤਾ, punjab pcs syllabus, punjab pcs exam pattern, ppsc pcs syllabus, punjab pcs 2026, punjab pcs age limit]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-pcs.html, strategy-punjab-police-si-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exam-punjab-pcs.html, exams/punjab-police-sub-inspector.html, current-affairs.html]
 faq:
   - q: ਪੰਜਾਬ PCS ਪ੍ਰੀਲਿਮਜ਼ ਦਾ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: 200-200 ਅੰਕਾਂ ਅਤੇ 2-2 ਘੰਟਿਆਂ ਦੇ ਦੋ objective ਪੇਪਰ। ਪੇਪਰ-1 ਜਨਰਲ ਸਟੱਡੀਜ਼ ਵਿੱਚ 2-2 ਅੰਕਾਂ ਦੇ 100 ਸਵਾਲ; ਪੇਪਰ-2 CSAT ਵਿੱਚ 2.5-2.5 ਅੰਕਾਂ ਦੇ 80 ਸਵਾਲ। ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ ਨਹੀਂ। CSAT qualifying (40%) ਹੈ ਅਤੇ ਮੇਨਜ਼ ਲਈ ਚੋਣ ਸਿਰਫ਼ ਪੇਪਰ-1 ਤੋਂ ਹੁੰਦੀ ਹੈ।

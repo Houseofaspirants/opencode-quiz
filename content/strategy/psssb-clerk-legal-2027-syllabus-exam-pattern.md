@@ -15,7 +15,7 @@ seoTitle: PSSSB Clerk Legal 2027 - Syllabus & Exam Pattern
 keywords: [psssb clerk legal 2027, clerk legal syllabus punjab, psssb clerk legal exam pattern, clerk legal previous papers, punjab clerk legal recruitment, clerk legal answer key psssb, clerk legal eligibility llb, psssb law clerk syllabus]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-punjab-pcs-judicial-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/punjab-pcs-judicial.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Clerk Legal exam pattern?
     a: Under the Advt 02/2022 plan - 120 MCQs, 120 marks, 2 hours. 90 questions on law and 30 on GK, English, Punjabi and reasoning, with 1/4 mark cut for each wrong answer. Since October 2022 PSSSB exams start with a qualifying Punjabi Part A.

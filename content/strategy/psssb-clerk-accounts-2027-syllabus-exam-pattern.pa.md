@@ -15,7 +15,7 @@ seoTitle: PSSSB ਕਲਰਕ ਲੇਖਾ 2027 ਸਿਲੇਬਸ ਅਤੇ ਪ�
 keywords: [ਕਲਰਕ ਲੇਖਾ ਭਰਤੀ 2027, psssb clerk accounts 2027, ਕਲਰਕ ਲੇਖਾ ਸਿਲੇਬਸ, clerk accounts syllabus punjab, ਕਲਰਕ ਅਕਾਊਂਟਸ ਪੇਪਰ ਪੈਟਰਨ, psssb clerk accounts previous papers, ਕਲਰਕ ਲੇਖਾ ਯੋਗਤਾ, clerk accounts answer key]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-it.html, current-affairs.html]
 faq:
   - q: ਕਲਰਕ (ਲੇਖਾ) ਦਾ ਪੇਪਰ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: 2022 ਦੇ plan ਅਨੁਸਾਰ 120 MCQ, 120 ਅੰਕ, 2 ਘੰਟੇ। 90 ਸਵਾਲ ਲੇਖਾ ਵਿਸ਼ੇ ਦੇ ਅਤੇ 30 GK, English, ਪੰਜਾਬੀ ਤੇ reasoning ਦੇ, ਗ਼ਲਤ ਜਵਾਬ 'ਤੇ 1/4 ਅੰਕ ਕੱਟ। ਅਕਤੂਬਰ 2022 ਤੋਂ ਪੰਜਾਬੀ ਦਾ qualifying Part A ਵੀ ਹੈ।

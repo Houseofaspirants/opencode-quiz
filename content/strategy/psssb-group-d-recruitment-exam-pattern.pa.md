@@ -15,7 +15,7 @@ seoTitle: PSSSB ਗਰੁੱਪ-ਡੀ ਭਰਤੀ - ਯੋਗਤਾ, ਸਿਲ
 keywords: [ਗਰੁੱਪ ਡੀ ਭਰਤੀ ਪੰਜਾਬ, PSSSB ਗਰੁੱਪ ਡੀ, ਸੇਵਾਦਾਰ ਭਰਤੀ, ਚੌਕੀਦਾਰ ਭਰਤੀ, ਗਰੁੱਪ ਡੀ ਪੇਪਰ ਪੈਟਰਨ, psssb group d, psssb group d recruitment 2026, punjab group d syllabus, psssb group d previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [pyq.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [pyq.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: PSSSB ਗਰੁੱਪ-ਡੀ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਪੰਜਾਬ ਰਾਜ (ਗਰੁੱਪ-ਡੀ) ਸਰਵਿਸ ਰੂਲਜ਼, 1963 ਅਨੁਸਾਰ ਪੰਜਾਬੀ ਵਿਸ਼ੇ ਨਾਲ ਮੈਟ੍ਰਿਕ ਪਾਸ।

@@ -15,7 +15,7 @@ seoTitle: PSSSB ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ 2027 ਯੋਗਤ
 keywords: [ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਭਰਤੀ 2027, psssb technical assistant 2027, ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਯੋਗਤਾ, psssb technical assistant eligibility, ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਤਨਖ਼ਾਹ, technical assistant previous papers, district technical coordinator punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk-it.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: PSSSB ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਵਿਭਾਗ 'ਤੇ ਨਿਰਭਰ ਹੈ। ਇਸ਼ਤਿਹਾਰ 12/2025 (SC ਸਬ-ਪਲਾਨ) ਵਿੱਚ ਅਰਥ-ਸ਼ਾਸਤਰ, ਗਣਿਤ, ਖੇਤੀ ਅਰਥ-ਸ਼ਾਸਤਰ, ਸਟੈਟਿਸਟਿਕਸ ਨਾਲ ਕਾਮਰਸ, ਜਾਂ ਸਟੈਟਿਸਟਿਕਸ ਦੀ ਮਾਸਟਰ ਡਿਗਰੀ। ਇਸ਼ਤਿਹਾਰ 01/2024 (ਪ੍ਰਬੰਧਕੀ ਸੁਧਾਰ) ਵਿੱਚ 50% ਨਾਲ B.E./B.Tech IT, ECE ਜਾਂ CS, ਜਾਂ ਕੰਪਿਊਟਰ ਦੀ ਮਾਸਟਰ ਡਿਗਰੀ।

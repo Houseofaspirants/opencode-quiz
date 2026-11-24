@@ -15,7 +15,7 @@ seoTitle: Punjab Police SI & ASI 2027 Syllabus & Exam Pattern
 keywords: [punjab police si recruitment 2027, punjab police si syllabus 2027, punjab police asi recruitment 2027, punjab police asi syllabus, punjab police si syllabus, punjab police sub inspector syllabus, punjab police si exam pattern, punjab police si recruitment, punjab police si preparation, punjab police si negative marking, punjab police si bharti]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-sub-inspector.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-punjab-police-sub-inspector.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: How many papers are there in the Punjab Police SI exam?
     a: Three computer based papers. Paper I and Paper II have 100 questions each, 4 marks per question, 400 marks each and 2 hours each. Paper III is a 50-mark qualifying Punjabi paper.
@@ -177,7 +177,7 @@ You must clear every event for your category.
 **Current affairs**
 - [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
-Preparing for constable as well? Read the [Punjab Police Constable syllabus guide](strategy-punjab-police-constable-syllabus-exam-pattern-2026.html).
+Preparing for constable as well? Read the [Punjab Police Constable syllabus guide](exams/punjab-police-constable.html).
 
 ## Download the official notification
 

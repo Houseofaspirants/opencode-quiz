@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਪੰਚਾਇਤ ਸਕੱਤਰ 2027 ਪੇਪਰ �
 keywords: [ਪੰਚਾਇਤ ਸਕੱਤਰ ਭਰਤੀ 2027, punjab panchayat secretary 2027, ਪੰਚਾਇਤ ਸਕੱਤਰ ਪੇਪਰ, panchayat secretary exam pattern, panchayat secretary previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਭਰਤੀ ਕਦੋਂ ਆਈ?
     a: ਅਗਸਤ 2016 ਵਿੱਚ - 800 ਅਸਾਮੀਆਂ, ਪੇਪਰ ਅਕਤੂਬਰ 2016।

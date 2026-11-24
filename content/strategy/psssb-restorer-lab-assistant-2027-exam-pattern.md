@@ -15,7 +15,7 @@ seoTitle: PSSSB Restorer & Lab Assistant 2027 - Pattern & Syllabus
 keywords: [psssb restorer 2027, psssb lab assistant agriculture, psssb restorer lab assistant exam, punjab agriculture lab assistant, psssb restorer previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Restorer and Lab Assistant (Agriculture) exam?
     a: A PSSSB written exam for small technical posts in the agriculture side of government. Our archive has the 2023 paper.

@@ -15,7 +15,7 @@ seoTitle: PSSSB ਕਲਰਕ ਲੀਗਲ 2027 ਸਿਲੇਬਸ ਅਤੇ ਪ�
 keywords: [ਕਲਰਕ ਲੀਗਲ ਭਰਤੀ 2027, psssb clerk legal 2027, ਕਲਰਕ ਲੀਗਲ ਸਿਲੇਬਸ, clerk legal syllabus punjab, ਕਲਰਕ ਲੀਗਲ ਪੇਪਰ ਪੈਟਰਨ, clerk legal previous papers, ਕਲਰਕ ਲੀਗਲ ਯੋਗਤਾ, psssb law clerk]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-punjab-pcs-judicial-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/punjab-pcs-judicial.html, current-affairs.html]
 faq:
   - q: ਕਲਰਕ (ਲੀਗਲ) ਦਾ ਪੇਪਰ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 02/2022 ਦੇ plan ਅਨੁਸਾਰ 120 MCQ, 120 ਅੰਕ, 2 ਘੰਟੇ। 90 ਸਵਾਲ ਕਾਨੂੰਨ ਦੇ ਅਤੇ 30 GK, English, ਪੰਜਾਬੀ ਤੇ reasoning ਦੇ, ਗ਼ਲਤ 'ਤੇ 1/4 ਅੰਕ ਕੱਟ। ਅਕਤੂਬਰ 2022 ਤੋਂ ਪੰਜਾਬੀ ਦਾ qualifying Part A ਵੀ ਹੈ।

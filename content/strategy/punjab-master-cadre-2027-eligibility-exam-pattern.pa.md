@@ -15,7 +15,7 @@ seoTitle: ਪੰਜਾਬ ਮਾਸਟਰ ਕਾਡਰ 2027 ਯੋਗਤਾ, ਪ
 keywords: [ਮਾਸਟਰ ਕਾਡਰ ਭਰਤੀ 2027, punjab master cadre 2027, ਮਾਸਟਰ ਕਾਡਰ ਯੋਗਤਾ, master cadre eligibility punjab, ਮਾਸਟਰ ਕਾਡਰ ਪੇਪਰ ਪੈਟਰਨ, master cadre previous papers, 4161 master cadre, ਅਧਿਆਪਕ ਭਰਤੀ ਪੰਜਾਬ 2027]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-pstet-exam-pattern-syllabus.html, strategy-psssb-librarian-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/pstet.html, exams/psssb-librarian.html, current-affairs.html]
 faq:
   - q: ਮਾਸਟਰ ਕਾਡਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: 4161 ਅਸਾਮੀਆਂ ਵਾਲੀ ਭਰਤੀ ਵਿੱਚ - ਵਿਸ਼ੇ ਨਾਲ ਗ੍ਰੈਜੂਏਸ਼ਨ (ਜਿਵੇਂ ਗਣਿਤ ਮਾਸਟਰ ਲਈ ਤਿੰਨੇ ਸਾਲ ਗਣਿਤ), ਜਨਰਲ ਲਈ 45% ਅਤੇ ਰਾਖਵੀਆਂ ਸ਼੍ਰੇਣੀਆਂ ਲਈ ਘੱਟ, ਅਤੇ ਉਸ ਵਿਸ਼ੇ ਨੂੰ teaching subject ਵਜੋਂ B.Ed। ਸਾਇੰਸ ਅਤੇ English ਦੀਆਂ ਵਿਸ਼ਾ-ਜੋੜੀਆਂ ਵੱਖਰੀਆਂ ਹਨ।

@@ -16,7 +16,7 @@ seoTitle: ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ 2026 - ਯੋਗਤਾ
 keywords: [ਪੰਜਾਬ ਪਟਵਾਰੀ ਭਰਤੀ 2026, ਪਟਵਾਰੀ ਭਰਤੀ ਪੰਜਾਬ, ਪੰਜਾਬ ਪਟਵਾਰੀ ਯੋਗਤਾ, ਪੰਜਾਬ ਪਟਵਾਰੀ ਪੇਪਰ ਪੈਟਰਨ, ਪੰਜਾਬ ਪਟਵਾਰੀ ਸਿਲੇਬਸ, punjab patwari recruitment 2026, punjab patwari bharti 2026, punjab patwari eligibility, punjab patwari exam pattern]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-patwari.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-patwari.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: ਪੰਜਾਬ ਪਟਵਾਰੀ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਕਿਸੇ ਵੀ ਵਿਸ਼ੇ ਵਿੱਚ ਗ੍ਰੈਜੂਏਸ਼ਨ, 120 ਘੰਟੇ ਦਾ ਕੰਪਿਊਟਰ ਕੋਰਸ (ਜਾਂ DOEACC ਦਾ 'O' Level ਸਰਟੀਫਿਕੇਟ), ਅਤੇ ਮੈਟ੍ਰਿਕ ਵਿੱਚ ਪੰਜਾਬੀ ਵਿਸ਼ਾ।

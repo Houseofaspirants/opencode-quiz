@@ -15,7 +15,7 @@ seoTitle: PSSSB ਵਣ ਗਾਰਡ 2027 ਸਿਲੇਬਸ, ਪੇਪਰ ਪੈ
 keywords: [ਵਣ ਗਾਰਡ ਭਰਤੀ 2027, psssb forest guard 2027, ਵਣ ਗਾਰਡ ਸਿਲੇਬਸ, psssb forest guard syllabus, ਫਾਰੈਸਟ ਗਾਰਡ ਪੰਜਾਬ, forest guard exam pattern punjab, ਵਣ ਗਾਰਡ ਪਿਛਲੇ ਪੇਪਰ, psssb forest guard previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-jail-warder.html, current-affairs.html]
 faq:
   - q: ਵਣ ਗਾਰਡ ਦਾ ਪੇਪਰ ਪੈਟਰਨ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 07/2022 ਦੇ official ਪਲਾਨ ਵਿੱਚ 2 ਘੰਟਿਆਂ ਵਿੱਚ 120 MCQ। ਹਰ ਸਵਾਲ 1 ਅੰਕ, ਗ਼ਲਤ ਜਵਾਬ 'ਤੇ 1/4 ਕੱਟ। ਅਕਤੂਬਰ 2022 ਤੋਂ ਹਰ PSSSB ਪੇਪਰ ਵਿੱਚ ਦਸਵੀਂ ਪੱਧਰ ਦੀ qualifying ਪੰਜਾਬੀ ਵੀ ਹੁੰਦੀ ਹੈ ਜਿਸ ਵਿੱਚ 50% ਜ਼ਰੂਰੀ ਹਨ।

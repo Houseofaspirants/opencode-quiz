@@ -15,7 +15,7 @@ seoTitle: PSSSB ਸੁਪਰਵਾਈਜ਼ਰ ਬਾਗਬਾਨੀ 2027 ਪੇ
 keywords: [ਬਾਗਬਾਨੀ ਸੁਪਰਵਾਈਜ਼ਰ ਭਰਤੀ, psssb horticulture supervisor 2027, ਸੁਪਰਵਾਈਜ਼ਰ ਬਾਗਬਾਨੀ ਪੇਪਰ, psssb horticulture exam pattern, psssb horticulture previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲੀ ਭਰਤੀ ਕਿਹੜੀ ਸੀ?
     a: PSSSB ਇਸ਼ਤਿਹਾਰ 05/2022 - PUDA ਦੀਆਂ 28 ਅਸਾਮੀਆਂ।

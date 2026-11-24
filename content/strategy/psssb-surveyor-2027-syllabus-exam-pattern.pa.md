@@ -15,7 +15,7 @@ seoTitle: PSSSB ਸਰਵੇਅਰ 2027 ਯੋਗਤਾ, ਸਿਲੇਬਸ ਅ�
 keywords: [ਸਰਵੇਅਰ ਭਰਤੀ 2027, psssb surveyor 2027, ਸਰਵੇਅਰ ਸਿਲੇਬਸ, psssb surveyor syllabus, ਸਰਵੇਅਰ ਯੋਗਤਾ, surveyor exam pattern punjab, ਸਰਵੇਅਰ ਤਨਖ਼ਾਹ, psssb surveyor previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, strategy-psssb-craft-instructor-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-junior-draftsman.html, exams/psssb-craft-instructor.html, current-affairs.html]
 faq:
   - q: PSSSB ਸਰਵੇਅਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 03/2023 ਵਿੱਚ ਜਲ ਸਰੋਤ ਵਿਭਾਗ ਲਈ - ਦਸਵੀਂ ਪਾਸ ਅਤੇ ਦੋ ਸਾਲ ਦਾ ITI ਡਰਾਫਟਸਮੈਨ ਸਰਟੀਫਿਕੇਟ, ਜਾਂ ਸਿਵਲ/ਮਕੈਨੀਕਲ ਇੰਜੀਨੀਅਰਿੰਗ ਵਿੱਚ ਡਿਪਲੋਮਾ ਜਾਂ ਡਿਗਰੀ। ਪੁਰਾਲੇਖ ਵਿਭਾਗ ਲਈ ਗ੍ਰੈਜੂਏਸ਼ਨ। ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ ਵੀ ਜ਼ਰੂਰੀ।

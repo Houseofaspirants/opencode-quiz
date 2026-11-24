@@ -15,7 +15,7 @@ seoTitle: PSSSB ਰੀਸਟੋਰਰ ਅਤੇ ਲੈਬ ਅਸਿਸਟੈਂ�
 keywords: [ਲੈਬ ਅਸਿਸਟੈਂਟ ਭਰਤੀ, psssb restorer 2027, ਰੀਸਟੋਰਰ ਪੇਪਰ, psssb lab assistant agriculture, psssb restorer previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-technical-assistant-2027-eligibility-syllabus.html, strategy-psssb-group-d-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-technical-assistant.html, exams/psssb-group-d.html, current-affairs.html]
 faq:
   - q: ਇਹ ਪੇਪਰ ਕਿਸ ਅਸਾਮੀ ਦਾ ਹੈ?
     a: ਖੇਤੀਬਾੜੀ ਨਾਲ ਜੁੜੀਆਂ ਛੋਟੀਆਂ technical ਅਸਾਮੀਆਂ - ਰੀਸਟੋਰਰ ਅਤੇ ਲੈਬ ਅਸਿਸਟੈਂਟ। ਸਾਡੇ ਕੋਲ 2023 ਦਾ ਪੇਪਰ ਹੈ।

@@ -15,7 +15,7 @@ seoTitle: ਜੇਲ੍ਹ ਵਾਰਡਰ ਅਤੇ ਮੇਟਰਨ ਭਰਤੀ
 keywords: [ਜੇਲ੍ਹ ਵਾਰਡਰ ਭਰਤੀ 2026, ਜੇਲ੍ਹ ਵਾਰਡਰ ਫਿਜ਼ੀਕਲ ਟੈਸਟ, ਜੇਲ੍ਹ ਵਾਰਡਰ ਕੱਦ, ਮੇਟਰਨ ਭਰਤੀ ਪੰਜਾਬ, ਜੇਲ੍ਹ ਵਾਰਡਰ ਉਮਰ ਹੱਦ, psssb jail warder 2026, punjab jail warder recruitment, jail warder physical test, psssb jail warder result 2026, jail warder exam pattern]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [exam-punjab-police-jail-warder.html, strategy-punjab-police-constable-syllabus-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exam-punjab-police-jail-warder.html, exams/punjab-police-constable.html, current-affairs.html]
 faq:
   - q: PSSSB ਜੇਲ੍ਹ ਵਾਰਡਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਬੋਰਡ ਤੋਂ 12ਵੀਂ ਪਾਸ, ਪੰਜਾਬੀ ਲਾਜ਼ਮੀ ਜਾਂ ਚੋਣਵੇਂ ਵਿਸ਼ੇ ਵਜੋਂ (ਜਾਂ ਬਰਾਬਰ ਪੰਜਾਬੀ ਪ੍ਰੀਖਿਆ)। ਵਾਰਡਰ ਸਿਰਫ਼ ਪੁਰਸ਼ਾਂ ਲਈ ਅਤੇ ਮੇਟਰਨ ਸਿਰਫ਼ ਇਸਤਰੀਆਂ ਲਈ ਹੈ।

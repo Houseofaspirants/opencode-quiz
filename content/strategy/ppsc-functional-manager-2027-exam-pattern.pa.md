@@ -15,7 +15,7 @@ seoTitle: PPSC ਫੰਕਸ਼ਨਲ ਮੈਨੇਜਰ 2027 ਪੇਪਰ ਪੈ
 keywords: [ਫੰਕਸ਼ਨਲ ਮੈਨੇਜਰ ਭਰਤੀ 2027, ppsc functional manager 2027, ਫੰਕਸ਼ਨਲ ਮੈਨੇਜਰ ਪੇਪਰ ਪੈਟਰਨ, ppsc functional manager exam pattern, ਉਦਯੋਗ ਵਿਭਾਗ ਭਰਤੀ, ppsc functional manager previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/ppsc-cooperative-inspector.html, exams/punjab-pcs.html, current-affairs.html]
 faq:
   - q: ਇਸ ਪੇਪਰ ਵਿੱਚ ਕਿਹੜੀਆਂ ਅਸਾਮੀਆਂ ਸਨ?
     a: ਉਦਯੋਗ ਅਤੇ ਵਣਜ ਵਿਭਾਗ ਦੀਆਂ 34 ਗਰੁੱਪ ਬੀ ਅਸਾਮੀਆਂ - ਸਹਾਇਕ ਡਾਇਰੈਕਟਰ, ਸਹਾਇਕ ਕੰਟਰੋਲਰ ਸਟੋਰਜ਼, ਸਟੋਰ ਇੰਸਪੈਕਸ਼ਨ ਅਫ਼ਸਰ ਅਤੇ ਫੰਕਸ਼ਨਲ ਮੈਨੇਜਰ।

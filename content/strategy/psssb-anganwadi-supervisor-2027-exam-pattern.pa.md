@@ -15,7 +15,7 @@ seoTitle: PSSSB ਆਂਗਣਵਾੜੀ ਸੁਪਰਵਾਈਜ਼ਰ 2027 ਪ
 keywords: [ਆਂਗਣਵਾੜੀ ਸੁਪਰਵਾਈਜ਼ਰ ਭਰਤੀ 2027, psssb anganwadi supervisor 2027, ਆਂਗਣਵਾੜੀ ਸੁਪਰਵਾਈਜ਼ਰ ਪੇਪਰ, anganwadi supervisor exam pattern, anganwadi supervisor previous paper]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: ਪਿਛਲਾ ਪੇਪਰ ਕਦੋਂ ਹੋਇਆ?
     a: 25 ਸਤੰਬਰ 2022 ਨੂੰ। final key ਵਿੱਚ 100 ਸਵਾਲ; * ਵਾਲੇ ਸਵਾਲਾਂ ਦਾ 1 ਅੰਕ ਸਭ ਨੂੰ।

@@ -15,7 +15,7 @@ seoTitle: PPSC Draftsman 2027 - Exam Pattern, Syllabus & Strategy
 keywords: [ppsc draftsman 2027, ppsc head draftsman, ppsc draftsman exam pattern, ppsc draftsman syllabus, ppsc draftsman previous paper, punjab draftsman recruitment 2027]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-junior-draftsman-2027-syllabus-exam-pattern.html, strategy-psssb-surveyor-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-junior-draftsman.html, exams/psssb-surveyor.html, current-affairs.html]
 faq:
   - q: How many posts were in the last PPSC Draftsman recruitment?
     a: The 2022 advertisement had 119 Group B (Technical) posts - 27 Head Draftsmen and 92 Draftsmen, as reported at the time.

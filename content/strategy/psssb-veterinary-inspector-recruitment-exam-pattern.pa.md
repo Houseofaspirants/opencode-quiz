@@ -15,7 +15,7 @@ seoTitle: ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ 2026 - ਯ
 keywords: [ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਭਰਤੀ 2026, ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਯੋਗਤਾ, ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਪੇਪਰ ਪੈਟਰਨ, ਪਸ਼ੂ ਪਾਲਣ ਵਿਭਾਗ ਭਰਤੀ, psssb veterinary inspector 2026, punjab veterinary inspector recruitment, veterinary inspector exam pattern, psssb veterinary inspector result 2026]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-excise-inspector-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-excise-inspector.html, current-affairs.html]
 faq:
   - q: PSSSB ਵੈਟਰਨਰੀ ਇੰਸਪੈਕਟਰ ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: 12ਵੀਂ Physics, Chemistry ਅਤੇ Biology ਨਾਲ, ਅਤੇ ਮਾਨਤਾ ਪ੍ਰਾਪਤ ਯੂਨੀਵਰਸਿਟੀ ਤੋਂ ਵੈਟਰਨਰੀ ਸਾਇੰਸ ਅਤੇ ਐਨੀਮਲ ਹੈਲਥ ਟੈਕਨਾਲੋਜੀ ਦਾ ਦੋ ਸਾਲਾ ਡਿਪਲੋਮਾ। ਮੈਟ੍ਰਿਕ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ ਵੀ ਜ਼ਰੂਰੀ ਹੈ।

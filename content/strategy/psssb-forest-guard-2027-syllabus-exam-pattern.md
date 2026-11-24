@@ -15,7 +15,7 @@ seoTitle: PSSSB Forest Guard 2027 - Syllabus, Exam Pattern & Papers
 keywords: [psssb forest guard 2027, punjab forest guard recruitment, psssb forest guard syllabus, forest guard exam pattern punjab, psssb forest guard previous papers, van guard punjab syllabus, forest guard answer key punjab]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-jail-warder-matron-recruitment-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-jail-warder.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Forest Guard exam pattern?
     a: The official plan for Advt 07/2022 has 120 MCQs in 2 hours. Each question carries 1 mark and 1/4 mark is cut for a wrong answer. Since October 2022 every PSSSB exam also has a qualifying matric-level Punjabi part where 50% is needed.

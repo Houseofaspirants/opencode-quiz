@@ -15,7 +15,7 @@ seoTitle: PSSSB ਕਲਰਕ IT 2027 ਯੋਗਤਾ, ਸਿਲੇਬਸ ਅਤ�
 keywords: [ਕਲਰਕ IT ਭਰਤੀ 2027, psssb clerk it 2027, ਕਲਰਕ IT ਸਿਲੇਬਸ, psssb clerk it syllabus, ਕਲਰਕ IT ਯੋਗਤਾ, clerk it typing test punjab, ਕਲਰਕ IT ਤਨਖ਼ਾਹ, psssb clerk it previous papers]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-clerk-recruitment-exam-pattern-2026.html, strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html, current-affairs.html]
+relatedContent: [exams/psssb-clerk.html, exams/psssb-clerk-accounts.html, current-affairs.html]
 faq:
   - q: PSSSB ਕਲਰਕ IT ਲਈ ਯੋਗਤਾ ਕੀ ਹੈ?
     a: ਇਸ਼ਤਿਹਾਰ 11/2025 ਅਨੁਸਾਰ full-time BCA, B.Sc IT ਜਾਂ B.Sc Computer Science, ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ, ਅਤੇ ਪੰਜਾਬੀ ਤੇ English ਵਿੱਚ 30 ਸ਼ਬਦ ਪ੍ਰਤੀ ਮਿੰਟ ਦਾ ਟਾਈਪ ਟੈਸਟ।

@@ -15,7 +15,7 @@ seoTitle: PSSSB Driver 2027 - Eligibility, Exam Pattern & Salary
 keywords: [psssb driver 2027, punjab driver recruitment 2027, psssb driver eligibility, psssb driver exam pattern, psssb driver syllabus, driver salary punjab government, psssb driver previous papers, psssb advt 12 2026 driver]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
-relatedContent: [strategy-psssb-group-d-recruitment-exam-pattern.html, strategy-psssb-clerk-recruitment-exam-pattern-2026.html, current-affairs.html]
+relatedContent: [exams/psssb-group-d.html, exams/psssb-clerk.html, current-affairs.html]
 faq:
   - q: What is the qualification for PSSSB Driver?
     a: As per Advertisement No. 12 of 2026 - matric pass, a valid driving licence for both light and heavy vehicles, and at least three years of driving experience.
