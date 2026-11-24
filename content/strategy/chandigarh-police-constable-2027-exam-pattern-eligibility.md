@@ -32,6 +32,10 @@ references:
     url: https://chandigarhpolice.gov.in/
   - title: Chandigarh Police - Constable written test papers, 2013, 2018 and 2023
     url: https://chandigarhpolice.gov.in/
+  - title: Adda247 - Chandigarh Police Constable salary
+    url: https://www.adda247.com/jobs/chandigarh-police-constable-salary/
+  - title: Adda247 - Chandigarh Police Constable syllabus and physical test
+    url: https://www.adda247.com/jobs/chandigarh-police-constable-syllabus/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Chandigarh Police is a Union Territory force, so its recruitment runs separately from Punjab Police - different notice, different portal, different paper.
@@ -46,8 +50,43 @@ Our archive has papers from **2013, 2018 and 2023** - roughly one big round ever
 
 - **Education:** 10+2 from a recognised board.
 - **Age:** reported as 18 to 25 years (as on 20 May 2023), with relaxation for reserved categories.
-- **Physical standards and test:** height, chest and running standards apply - read them in the notice.
+- **Physical standards and test:** height, chest and running standards apply - see the section below.
 - **Fee (2023):** reported as Rs 1,000 for general/OBC, Rs 800 for SC and EWS, and nil for ex-servicemen.
+
+## Salary and pay
+
+- **Pay scale:** reported as Rs 19,900-63,200 (Level-2 of the 7th CPC matrix).
+- **Probation:** reported as 2 years.
+- Chandigarh is a Union Territory, so pay and allowances follow central government rules, not Punjab's.
+
+## Physical standards (2023 round, as reported)
+
+**Measurements**
+
+| | Men | Women |
+| --- | --- | --- |
+| Height | 170 cm | 157.5 cm |
+| Chest | 84 cm, expanding to 88 cm | - |
+
+**Physical test, age 18-30**
+
+| Event | Men | Women |
+| --- | --- | --- |
+| Race | 1,600 m in 6 min 15 sec | 800 m in 4 min 15 sec |
+| Long jump | 3.95 m | 2.74 m |
+| High jump | 1.14 m | 0.90 m |
+
+Older age groups get easier timings, and reserved categories may get height relaxation. Check the exact table in the next notice.
+
+## Syllabus (written test)
+
+The written test is objective, **100 marks**, with **1/4 mark cut** for each wrong answer. As reported for the 2023 round, it covers:
+
+1. **General Knowledge** - India and Chandigarh, history, geography, polity, science and current affairs
+2. **Numerical ability** - arithmetic at 10+2 level
+3. **Reasoning** - verbal and non-verbal
+4. **English** - grammar, vocabulary and comprehension
+5. **Computer** - basics, MS Office and internet
 
 ## Selection process
 

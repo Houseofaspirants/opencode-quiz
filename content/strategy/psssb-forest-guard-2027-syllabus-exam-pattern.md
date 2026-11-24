@@ -32,6 +32,10 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Forest Guard revised answer keys, exam of 13 November 2022
     url: https://sssb.punjab.gov.in/
+  - title: Adda247 - PSSSB Forest Guard salary
+    url: https://www.adda247.com/pa/jobs/psssb-forest-guard-salary-2022/
+  - title: Adda247 - PSSSB Forest Guard physical test
+    url: https://www.adda247.com/pa/jobs/psssb-forest-guard-physical-test-date-2023/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. The Forest Guard paper is a pure general-studies test at Class 12 level, which makes it very similar to the Punjab Police Constable paper. If you are already preparing for police or clerk exams, you are most of the way there.
@@ -66,6 +70,23 @@ The last big Forest Guard recruitment was in **2022**. Four years on, retirement
 4. **English** - grammar, synonyms, antonyms, idioms, voice and narration, sentence correction
 5. **Punjabi** - grammar, spelling, idioms (akhan and muhavare), translation from English
 6. **ICT** - computer basics, networks and internet, Word, Excel and PowerPoint
+
+## Salary and pay (2022 round, as reported)
+
+- **Pay scale:** Rs 19,900-63,200 (7th CPC).
+- **Probation:** 2 years, with a fixed monthly pay and no allowances during it; Adda247 reported the probation pay as Rs 21,700.
+- The full scale with allowances applies after probation. A new advertisement may revise these figures.
+
+## Physical test (2022 round, as reported)
+
+After the written exam, shortlisted candidates had to clear a qualifying **walk test**:
+
+| Candidates | Distance | Time |
+| --- | --- | --- |
+| Men | 13 km | 1 hour 30 minutes |
+| Women | 8 km | 1 hour 30 minutes |
+
+It carries no marks, but failing it ends your selection. Start long brisk walks months before the exam.
 
 ## How to prepare
 

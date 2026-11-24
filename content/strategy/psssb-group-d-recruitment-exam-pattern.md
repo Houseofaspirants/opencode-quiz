@@ -32,6 +32,8 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Group D posts, Advertisement No. 08/2025 (published 17 November 2025)
     url: https://sssb.punjab.gov.in/
+  - title: Adda247 - PSSSB Group D salary
+    url: https://www.adda247.com/exams/punjab/psssb-group-d-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Group D is the PSSSB recruitment with the most applicants, because it needs only matric. That also makes it very competitive, so this page puts both official notifications in one place, so you know exactly what you are preparing for.
@@ -76,6 +78,12 @@ The 331 posts of Advt. 08/2025 were:
 - **Persons with disabilities of Punjab:** up to 47 years
 - **Widows, divorcees and certain other married women:** up to 40 years
 - **Ex-servicemen:** as per the Punjab Recruitment of Ex-Servicemen Rules, 1982
+
+## Salary and pay
+
+- **Pay scale:** Rs 18,000-56,900, Level 1 of the 7th CPC matrix (official notification).
+- **Starting basic pay:** Rs 18,000.
+- **During probation:** new Punjab recruits draw the minimum of the scale; allowances such as DA and HRA are added once probation ends.
 
 ## Fee
 

@@ -32,6 +32,8 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Group D posts, Advertisement No. 08/2025 (published 17 November 2025)
     url: https://sssb.punjab.gov.in/
+  - title: Adda247 - PSSSB Group D salary
+    url: https://www.adda247.com/exams/punjab/psssb-group-d-salary/
 ---
 
 ਮੈਂ ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ-ਇੰਸਪੈਕਟਰ ਦਾ ਪੇਪਰ **ਰੈਂਕ 2 (713/800)** ਨਾਲ ਪਾਸ ਕੀਤਾ ਸੀ। ਗਰੁੱਪ-ਡੀ PSSSB ਦੀ ਸਭ ਤੋਂ ਵੱਧ ਉਮੀਦਵਾਰਾਂ ਵਾਲੀ ਭਰਤੀ ਹੈ, ਕਿਉਂਕਿ ਇਸ ਲਈ ਸਿਰਫ਼ ਮੈਟ੍ਰਿਕ ਚਾਹੀਦੀ ਹੈ। ਇਸੇ ਕਰਕੇ ਮੁਕਾਬਲਾ ਬਹੁਤ ਸਖ਼ਤ ਹੈ, ਇਸ ਲਈ ਇਸ ਪੰਨੇ 'ਤੇ ਦੋਵਾਂ official notifications ਦੀ ਹਰ ਗੱਲ ਇੱਕ ਥਾਂ ਹੈ, ਤਾਂ ਜੋ ਤੁਹਾਨੂੰ ਪਤਾ ਹੋਵੇ ਕਿ ਤਿਆਰੀ ਕਿਸ ਚੀਜ਼ ਦੀ ਕਰਨੀ ਹੈ।
@@ -76,6 +78,12 @@ references:
 - **ਪੰਜਾਬ ਦੇ ਦਿਵਿਆਂਗਜਨ:** 47 ਸਾਲ ਤੱਕ
 - **ਵਿਧਵਾ, ਤਲਾਕਸ਼ੁਦਾ ਅਤੇ ਕੁਝ ਹੋਰ ਵਿਆਹੁਤਾ ਔਰਤਾਂ:** 40 ਸਾਲ ਤੱਕ
 - **ਸਾਬਕਾ ਫ਼ੌਜੀ:** Punjab Recruitment of Ex-Servicemen Rules, 1982 ਅਨੁਸਾਰ
+
+## ਤਨਖ਼ਾਹ ਅਤੇ ਪੇਅ ਸਕੇਲ
+
+- **ਪੇਅ ਸਕੇਲ:** 18,000-56,900 ਰੁਪਏ, 7ਵੇਂ ਤਨਖ਼ਾਹ ਕਮਿਸ਼ਨ ਦਾ Level 1 (official notification)।
+- **ਸ਼ੁਰੂਆਤੀ ਮੂਲ ਤਨਖ਼ਾਹ:** 18,000 ਰੁਪਏ।
+- **Probation ਦੌਰਾਨ:** ਪੰਜਾਬ ਦੀਆਂ ਨਵੀਆਂ ਭਰਤੀਆਂ ਨੂੰ ਸਕੇਲ ਦੀ ਘੱਟੋ-ਘੱਟ ਤਨਖ਼ਾਹ ਮਿਲਦੀ ਹੈ; DA ਅਤੇ HRA ਵਰਗੇ ਭੱਤੇ probation ਤੋਂ ਬਾਅਦ ਜੁੜਦੇ ਹਨ।
 
 ## ਫ਼ੀਸ
 

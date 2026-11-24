@@ -31,6 +31,8 @@ faq:
 references:
   - title: PPSC - Advertisement No. 15, Naib Tehsildar (78 posts), scheme of competitive examination
     url: https://ppsc.gov.in/
+  - title: Adda247 - PPSC Naib Tehsildar salary
+    url: https://www.adda247.com/pa/jobs/ppsc-naib-tehsildar-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Naib Tehsildar is one of the best Group-B posts open to a plain graduate in Punjab: a Level-6 job in the Revenue Department with a clear path to Tehsildar. This guide puts the official syllabus and exam pattern in one place and tells you what to expect next.
@@ -68,11 +70,11 @@ The details below are from the official **PPSC Advertisement No. 15** for **78 p
 
 The Government can increase or decrease the number of posts before selection is complete. Women get 33% reservation under the Punjab Civil Services (Reservation for Women) Rules, 2020.
 
-### Pay
+## Salary and pay (Advt. No. 15)
 
 **Rs 35,400 initial pay.** During the **3-year probation** you get a fixed emolument equal to the minimum pay, without allowances.
 
-### Eligibility
+## Eligibility (Advt. No. 15)
 
 1. **Graduate** from a recognised university or institution.
 2. **Punjabi of Matric or equivalent standard** is essential. A ward of defence personnel who is a bona fide resident of Punjab can instead pass a matric-level Punjabi test within two years of appointment.
@@ -87,7 +89,7 @@ The Government can increase or decrease the number of posts before selection is 
 - **Persons with Disability of Punjab:** up to 47 years
 - **Ex-servicemen of Punjab:** may deduct their armed forces service from their age; eligible if the result is not more than 3 years above the upper limit
 
-### Application fee
+## Application fee and how to apply
 
 | Category | Online application charges | Exam fee | Total |
 | --- | --- | --- | --- |

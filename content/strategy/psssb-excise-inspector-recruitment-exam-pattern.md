@@ -33,6 +33,8 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Plan of Written Examination, Excise and Taxation Inspector, Advertisement No. 01/2026
     url: https://sssb.punjab.gov.in/
+  - title: Adda247 - PSSSB Excise Inspector salary
+    url: https://www.adda247.com/exams/punjab/psssb-excise-inspector-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Excise and Taxation Inspector (ETI) is a well-paid graduate-level PSSSB post, so this page puts the official notification and the official exam plan in one place, so you know exactly what you are preparing for.
@@ -92,6 +94,16 @@ You must hold every qualification by the **last date of applying**.
 | Persons with disabilities | Rs 500 |
 
 The fee is not refunded. Applicants of Advt. 14/2024 pay no fee.
+
+## Salary and pay
+
+| Item | Detail |
+| --- | --- |
+| Starting basic pay | **Rs 35,400** (7th CPC, as in the notification) |
+| Pay level (reported) | Level-6, scale Rs 35,400-1,12,400 |
+| In-hand estimate | about Rs 53,000 a month once allowances apply, as estimated by Adda247 |
+
+The in-hand figure is an outside estimate. New Punjab recruits usually draw only the minimum of the scale during probation, so expect less in the first years.
 
 ## Exam pattern
 

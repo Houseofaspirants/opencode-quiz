@@ -34,6 +34,8 @@ references:
     url: https://www.punjabpolice.gov.in/
   - title: Adda247 - Punjab Police Constable Answer Key 2026 (CBT dates)
     url: https://www.adda247.com/exams/punjab/punjab-police-constable-answer-key-2026/
+  - title: Adda247 - Punjab Police Constable salary
+    url: https://www.adda247.com/exams/punjab/punjab-police-constable-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with Rank 2. The single biggest lesson from that preparation: **know the pattern before you open a book.** Everything below comes from the official Punjab Police Constable 2026 notification, so you can prepare from the real thing.
@@ -144,6 +146,14 @@ These 5 marks are the easiest on the paper, so do not skip them.
 **PMT (height):** minimum 5 ft 7 in (170.2 cm) for men and 5 ft 2 in (157.5 cm) for women.
 
 You must clear **every** event for your category; failing any one disqualifies you. Transgender candidates are treated at par with female candidates for PST and PMT.
+
+## Salary and pay
+
+- **Starting pay:** the March 2026 notification fixes the minimum pay at **Rs 19,900 a month** for the first **3 years** from joining.
+- **Probation:** those 3 years are the probation period. During it you draw the fixed minimum pay; the regular pay scale with allowances (DA, HRA and others) follows once probation is cleared.
+- **After probation:** the post is in the 7th Pay Commission matrix that Punjab follows, so the basic pay rises with annual increments and promotion to Head Constable and ASI.
+
+Figures on coaching sites for in-hand pay are estimates. Your appointment letter is the final word.
 
 ## A 90-day preparation plan
 

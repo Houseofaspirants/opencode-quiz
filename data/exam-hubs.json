@@ -11,7 +11,8 @@
       "filePa": "pa/exams/chandigarh-police-constable.html",
       "parts": {
         "eligibility": {
-          "en": "exams/chandigarh-police-constable/eligibility.html"
+          "en": "exams/chandigarh-police-constable/eligibility.html",
+          "pa": "pa/exams/chandigarh-police-constable/eligibility.html"
         },
         "exam-pattern": {
           "en": "exams/chandigarh-police-constable/exam-pattern.html",
@@ -21,9 +22,21 @@
           "en": "exams/chandigarh-police-constable/notification.html",
           "pa": "pa/exams/chandigarh-police-constable/notification.html"
         },
+        "physical-standards": {
+          "en": "exams/chandigarh-police-constable/physical-standards.html",
+          "pa": "pa/exams/chandigarh-police-constable/physical-standards.html"
+        },
         "preparation": {
           "en": "exams/chandigarh-police-constable/preparation.html",
           "pa": "pa/exams/chandigarh-police-constable/preparation.html"
+        },
+        "salary": {
+          "en": "exams/chandigarh-police-constable/salary.html",
+          "pa": "pa/exams/chandigarh-police-constable/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/chandigarh-police-constable/syllabus.html",
+          "pa": "pa/exams/chandigarh-police-constable/syllabus.html"
         }
       },
       "pyq": "pyq/chandigarh-police-constable/index.html"
@@ -212,6 +225,10 @@
         "preparation": {
           "en": "exams/psssb-clerk/preparation.html",
           "pa": "pa/exams/psssb-clerk/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-clerk/salary.html",
+          "pa": "pa/exams/psssb-clerk/salary.html"
         },
         "syllabus": {
           "en": "exams/psssb-clerk/syllabus.html",
@@ -450,6 +467,10 @@
           "en": "exams/psssb-excise-inspector/preparation.html",
           "pa": "pa/exams/psssb-excise-inspector/preparation.html"
         },
+        "salary": {
+          "en": "exams/psssb-excise-inspector/salary.html",
+          "pa": "pa/exams/psssb-excise-inspector/salary.html"
+        },
         "syllabus": {
           "en": "exams/psssb-excise-inspector/syllabus.html",
           "pa": "pa/exams/psssb-excise-inspector/syllabus.html"
@@ -499,9 +520,17 @@
           "en": "exams/psssb-forest-guard/notification.html",
           "pa": "pa/exams/psssb-forest-guard/notification.html"
         },
+        "physical-standards": {
+          "en": "exams/psssb-forest-guard/physical-standards.html",
+          "pa": "pa/exams/psssb-forest-guard/physical-standards.html"
+        },
         "preparation": {
           "en": "exams/psssb-forest-guard/preparation.html",
           "pa": "pa/exams/psssb-forest-guard/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-forest-guard/salary.html",
+          "pa": "pa/exams/psssb-forest-guard/salary.html"
         },
         "syllabus": {
           "en": "exams/psssb-forest-guard/syllabus.html",
@@ -560,6 +589,10 @@
         "preparation": {
           "en": "exams/psssb-group-d/preparation.html",
           "pa": "pa/exams/psssb-group-d/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-group-d/salary.html",
+          "pa": "pa/exams/psssb-group-d/salary.html"
         }
       },
       "pyq": "pyq/psssb-group-d/index.html"
@@ -648,6 +681,10 @@
         "preparation": {
           "en": "exams/psssb-jail-warder/preparation.html",
           "pa": "pa/exams/psssb-jail-warder/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-jail-warder/salary.html",
+          "pa": "pa/exams/psssb-jail-warder/salary.html"
         }
       },
       "pyq": "pyq/psssb-jail-warder/index.html",
@@ -1037,6 +1074,10 @@
       "file": "exams/punjab-naib-tehsildar.html",
       "filePa": "pa/exams/punjab-naib-tehsildar.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/punjab-naib-tehsildar/eligibility.html",
+          "pa": "pa/exams/punjab-naib-tehsildar/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/punjab-naib-tehsildar/exam-pattern.html",
           "pa": "pa/exams/punjab-naib-tehsildar/exam-pattern.html"
@@ -1048,6 +1089,10 @@
         "preparation": {
           "en": "exams/punjab-naib-tehsildar/preparation.html",
           "pa": "pa/exams/punjab-naib-tehsildar/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-naib-tehsildar/salary.html",
+          "pa": "pa/exams/punjab-naib-tehsildar/salary.html"
         },
         "syllabus": {
           "en": "exams/punjab-naib-tehsildar/syllabus.html",
@@ -1202,6 +1247,10 @@
         "preparation": {
           "en": "exams/punjab-police-constable/preparation.html",
           "pa": "pa/exams/punjab-police-constable/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-police-constable/salary.html",
+          "pa": "pa/exams/punjab-police-constable/salary.html"
         },
         "syllabus": {
           "en": "exams/punjab-police-constable/syllabus.html",

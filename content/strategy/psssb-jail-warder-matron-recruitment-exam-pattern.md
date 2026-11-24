@@ -32,6 +32,8 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: Karmasandhan - PSSSB Jail Warder result 2026
     url: https://www.karmasandhan.com/psssb-punjab-jail-warder-result-2026
+  - title: Adda247 - PSSSB Jail Warder salary
+    url: https://www.adda247.com/exams/punjab/psssb-jail-warder-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Jail Warder is one of the most popular 12th-pass jobs in Punjab, and it has a physical test that many people underestimate. This page puts the official notification in one place.
@@ -101,6 +103,12 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Jail W
 | 100 m run (1 chance) | 15 sec | 17.5 sec | 18.5 sec | 20 sec |
 | Shot put (3 chances) | 7.26 kg - 5.50 m | 7.26 kg - 5.00 m | 5.443 kg - 4.0 m | 5.443 kg - 3.5 m |
 | Rope climb (3 chances) | 15 ft | 12 ft | 12 ft | 10 ft |
+
+## Salary and pay
+
+- **Pay scale:** Rs 19,900-63,200, Level-2 of the 7th CPC matrix (official notification).
+- **Starting basic pay:** Rs 19,900.
+- **Probation:** reported as 2 years, during which you draw the minimum of the scale; allowances follow after it.
 
 ## Fee
 

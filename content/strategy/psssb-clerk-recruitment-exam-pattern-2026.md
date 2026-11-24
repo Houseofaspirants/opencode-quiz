@@ -33,6 +33,8 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: Freejobalert - PSSSB Clerk exam date 2026
     url: https://www.freejobalert.com/articles/psssb-clerk-exam-date-2026-3068319
+  - title: Adda247 - PSSSB Clerk salary
+    url: https://www.adda247.com/exams/punjab/psssb-clerk-salary/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. PSSSB Clerk is the most applied-for Punjab government job every year, so this page puts the official notification in one place, so you know exactly what is being tested.
@@ -74,6 +76,17 @@ You must have every qualification by the last date of applying (6 March 2026).
 | Persons with disabilities | Rs 500 |
 
 The fee is not refunded.
+
+## Salary and pay
+
+| Item | Detail |
+| --- | --- |
+| Pay level | Level-2 of the 7th CPC pay matrix |
+| Starting basic pay | **Rs 19,900** (Advt. 02/2026) |
+| Pay scale (reported) | Rs 19,900-63,200 |
+| During probation | the minimum of the scale, as for other new Punjab government recruits |
+
+Allowances and in-hand pay depend on the department and the posting city, so treat any in-hand figure you see online as an estimate.
 
 ## Selection process
 
