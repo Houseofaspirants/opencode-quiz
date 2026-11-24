@@ -21,7 +21,7 @@
  },
  "counts": {
   "nodes": 1098,
-  "edges": 11168,
+  "edges": 11174,
   "silos": 35,
   "clusters": 219,
   "pillars": 34
@@ -33247,7 +33247,19 @@
   },
   {
    "from": "blog-how-to-stop-forgetting-in-exams.html",
+   "to": "blog-importance-of-mock-tests",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-how-to-stop-forgetting-in-exams.html",
    "to": "blog-previous-year-papers-613-to-713.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-how-to-stop-forgetting-in-exams.html",
+   "to": "blog-study-in-90-minute-shifts",
    "rel": "contextual",
    "weight": 1
   },
@@ -33272,6 +33284,12 @@
   {
    "from": "blog-how-to-stop-forgetting-in-exams.html",
    "to": "pa/blog-how-to-stop-forgetting-in-exams.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "blog-how-to-stop-forgetting-in-exams.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -52549,7 +52567,25 @@
   },
   {
    "from": "pa/blog-how-to-stop-forgetting-in-exams.html",
+   "to": "pa/blog-importance-of-mock-tests",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-how-to-stop-forgetting-in-exams.html",
    "to": "pa/blog-last-3-months-strategy.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-how-to-stop-forgetting-in-exams.html",
+   "to": "pa/blog-study-in-90-minute-shifts",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/blog-how-to-stop-forgetting-in-exams.html",
+   "to": "practice.html",
    "rel": "contextual",
    "weight": 1
   },
