@@ -796,21 +796,21 @@
       "color": "#6366f1",
       "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
       "order": 6,
-      "count": 54,
-      "newest": "2026-11-23",
-      "totalSize": 106771318,
-      "chapters": 49,
+      "count": 56,
+      "newest": "2026-11-24",
+      "totalSize": 110960003,
+      "chapters": 51,
       "languages": [],
       "hierarchy": {
         "id": "gk",
         "name": "General Knowledge",
         "description": "India GK and Punjab GK, filed the way the papers actually ask them.",
         "stats": {
-          "files": 54,
-          "chapters": 49,
-          "pages": 262,
-          "totalSize": 106771318,
-          "newest": "2026-11-23",
+          "files": 56,
+          "chapters": 51,
+          "pages": 278,
+          "totalSize": 110960003,
+          "newest": "2026-11-24",
           "categories": 10,
           "regions": 2
         },
@@ -820,11 +820,11 @@
             "name": "India GK",
             "description": "The national paper: history, polity, geography, science and the economy of India.",
             "stats": {
-              "files": 30,
-              "chapters": 25,
-              "pages": 148,
-              "totalSize": 64370812,
-              "newest": "2026-11-23",
+              "files": 32,
+              "chapters": 27,
+              "pages": 164,
+              "totalSize": 68559497,
+              "newest": "2026-11-24",
               "categories": 5
             },
             "categories": [
@@ -1201,11 +1201,11 @@
                   "polity"
                 ],
                 "stats": {
-                  "files": 10,
-                  "chapters": 10,
-                  "pages": 79,
-                  "totalSize": 18867038,
-                  "newest": "2026-11-20"
+                  "files": 12,
+                  "chapters": 12,
+                  "pages": 95,
+                  "totalSize": 23055723,
+                  "newest": "2026-11-24"
                 },
                 "languages": [
                   {
@@ -1213,7 +1213,7 @@
                     "name": "Punjabi",
                     "native": "ਪੰਜਾਬੀ",
                     "flag": "🇵🇺",
-                    "count": 5,
+                    "count": 6,
                     "chapters": [
                       {
                         "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -1269,6 +1269,17 @@
                           }
                         ],
                         "pages": 8
+                      },
+                      {
+                        "id": "ਅਧਿਆਇ 06 - ਭਾਰਤ ਵਿੱਚ ਸਰਕਾਰ ਦੀ ਪ੍ਰਣਾਲੀ",
+                        "name": "ਅਧਿਆਇ 06 ਭਾਰਤ ਵਿੱਚ ਸਰਕਾਰ ਦੀ ਪ੍ਰਣਾਲੀ",
+                        "parts": [
+                          {
+                            "file": "material-system-of-government-in-india-notes-punjabi.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
                       }
                     ]
                   },
@@ -1277,7 +1288,7 @@
                     "name": "English",
                     "native": "English",
                     "flag": "🇬🇧",
-                    "count": 5,
+                    "count": 6,
                     "chapters": [
                       {
                         "id": "Chapter 01 - Making of the Indian Constitution",
@@ -1333,6 +1344,17 @@
                           }
                         ],
                         "pages": 7
+                      },
+                      {
+                        "id": "Chapter 06 - System of Government in India",
+                        "name": "Chapter 06: System of Government in India",
+                        "parts": [
+                          {
+                            "file": "material-system-of-government-in-india-notes-english.html",
+                            "n": 1
+                          }
+                        ],
+                        "pages": 8
                       }
                     ]
                   }
@@ -2024,8 +2046,8 @@
         ]
       },
       "counts": {
-        "en": 27,
-        "pa": 27
+        "en": 28,
+        "pa": 28
       },
       "pages": {
         "en": "study-gk.html",
@@ -2040,16 +2062,16 @@
       "color": "#6366f1",
       "description": "The Constitution, Parliament, judiciary and panchayati raj.",
       "order": 8,
-      "count": 10,
-      "newest": "2026-11-20",
-      "totalSize": 18867038,
+      "count": 12,
+      "newest": "2026-11-24",
+      "totalSize": 23055723,
       "languages": [
         {
           "id": "pa",
           "name": "Punjabi",
           "native": "ਪੰਜਾਬੀ",
           "flag": "🇵🇺",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "ਅਧਿਆਇ 01 - ਭਾਰਤੀ ਸੰਵਿਧਾਨ ਦਾ ਨਿਰਮਾਣ",
@@ -2105,6 +2127,17 @@
                 }
               ],
               "pages": 8
+            },
+            {
+              "id": "ਅਧਿਆਇ 06 - ਭਾਰਤ ਵਿੱਚ ਸਰਕਾਰ ਦੀ ਪ੍ਰਣਾਲੀ",
+              "name": "ਅਧਿਆਇ 06 ਭਾਰਤ ਵਿੱਚ ਸਰਕਾਰ ਦੀ ਪ੍ਰਣਾਲੀ",
+              "parts": [
+                {
+                  "file": "material-system-of-government-in-india-notes-punjabi.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
             }
           ]
         },
@@ -2113,7 +2146,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "Chapter 01 - Making of the Indian Constitution",
@@ -2169,15 +2202,26 @@
                 }
               ],
               "pages": 7
+            },
+            {
+              "id": "Chapter 06 - System of Government in India",
+              "name": "Chapter 06: System of Government in India",
+              "parts": [
+                {
+                  "file": "material-system-of-government-in-india-notes-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 8
             }
           ]
         }
       ],
-      "chapters": 10,
+      "chapters": 12,
       "hidden": true,
       "counts": {
-        "en": 5,
-        "pa": 5
+        "en": 6,
+        "pa": 6
       },
       "pages": {
         "en": "study-polity.html",
@@ -3042,6 +3086,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 106,
+  "total": 108,
   "generatedBy": "scripts/study_material.py"
 }
