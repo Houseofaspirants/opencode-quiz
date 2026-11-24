@@ -135,7 +135,7 @@ references:
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ](quiz-gk-basic-concepts-of-economy-part-1.html)
-- [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
+- [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](material-chapter-05-dpsp-and-fundamental-duties.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)
 
 ## Official ਸਰੋਤ

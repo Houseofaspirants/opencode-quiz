@@ -20,7 +20,7 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1099,
+  "nodes": 1098,
   "edges": 11170,
   "silos": 35,
   "clusters": 219,
@@ -10455,10 +10455,7 @@
    "lang": "pa",
    "subjects": [
     "gk",
-    "reasoning",
-    "punjabi",
-    "english",
-    "computer"
+    "reasoning"
    ],
    "exams": [
     "Naib Tehsildar"
@@ -12778,18 +12775,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "url": "/quiz-gk-dpsp-fundamental-duties-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-gk-economic-planning-five-year-plans-part-1.html",
    "url": "/quiz-gk-economic-planning-five-year-plans-part-1.html",
    "type": "quiz",
@@ -14747,10 +14732,7 @@
    "lang": "en",
    "subjects": [
     "gk",
-    "reasoning",
-    "punjabi",
-    "english",
-    "computer"
+    "reasoning"
    ],
    "exams": [
     "Naib Tehsildar"
@@ -56577,6 +56559,12 @@
   },
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "mock",
    "rel": "contextual",
    "weight": 1
@@ -56626,12 +56614,6 @@
   {
    "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -57669,13 +57651,13 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -58059,13 +58041,13 @@
   },
   {
    "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "pa/strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -61233,7 +61215,7 @@
   },
   {
    "from": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -63387,7 +63369,7 @@
   },
   {
    "from": "pa/strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "pa/strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "pa/strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -63669,6 +63651,12 @@
   },
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "mock",
    "rel": "contextual",
    "weight": 1
@@ -63712,12 +63700,6 @@
   {
    "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pyq/psssb-patwari/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64077,6 +64059,12 @@
   },
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "pa/strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -64120,12 +64108,6 @@
   {
    "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64287,6 +64269,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026",
    "rel": "contextual",
    "weight": 1
@@ -64318,12 +64306,6 @@
   {
    "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64485,6 +64467,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "pa/strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -64516,12 +64504,6 @@
   {
    "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -64893,6 +64875,12 @@
   },
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -64924,12 +64912,6 @@
   {
    "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -71229,6 +71211,12 @@
   },
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "mock",
    "rel": "contextual",
    "weight": 1
@@ -71260,12 +71248,6 @@
   {
    "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-ppsc-cooperative-inspector-recruitment-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -72231,13 +72213,13 @@
   },
   {
    "from": "strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-accounts-2027-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -72591,13 +72573,13 @@
   },
   {
    "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
   {
    "from": "strategy-psssb-clerk-it-2027-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -75609,7 +75591,7 @@
   },
   {
    "from": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
-   "to": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-excise-inspector-recruitment-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -77655,7 +77637,7 @@
   },
   {
    "from": "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
-   "to": "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
+   "to": "strategy-psssb-clerk-legal-2027-syllabus-exam-pattern.html",
    "rel": "related-strategy",
    "weight": 1
   },
@@ -77925,6 +77907,12 @@
   },
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "mock",
    "rel": "contextual",
    "weight": 1
@@ -77950,12 +77938,6 @@
   {
    "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
    "to": "pyq/psssb-patwari/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -78297,6 +78279,12 @@
   },
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-pcs-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -78322,12 +78310,6 @@
   {
    "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-pcs-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -78501,6 +78483,12 @@
   },
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "pa/strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "rel": "contextual",
    "weight": 1
@@ -78526,12 +78514,6 @@
   {
    "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -78699,6 +78681,12 @@
   },
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -78718,12 +78706,6 @@
   {
    "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -79059,6 +79041,12 @@
   },
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
+   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "pa/strategy-punjab-police-si-syllabus-exam-pattern.html",
    "rel": "contextual",
    "weight": 1
@@ -79078,12 +79066,6 @@
   {
    "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
    "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "strategy-punjab-police-si-syllabus-exam-pattern.html",
-   "to": "quiz-gk-dpsp-fundamental-duties-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -83244,7 +83226,6 @@
     "strategy-psssb-librarian-2027-syllabus-exam-pattern.html",
     "strategy-psssb-steno-typist-2027-syllabus-exam-pattern.html",
     "strategy-psssb-technical-assistant-2027-eligibility-syllabus.html",
-    "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-police-constable-syllabus-exam-pattern-2026.html",
     "strategy-punjab-police-head-constable-syllabus-exam-pattern.html",
@@ -83335,7 +83316,6 @@
     "strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
     "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
     "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-    "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-judicial-2027-exam-pattern.html",
@@ -83546,7 +83526,6 @@
     "strategy-punjab-ett-teacher-2027-eligibility-exam-pattern.html",
     "strategy-punjab-haryana-high-court-clerk-2027-exam-pattern.html",
     "strategy-punjab-master-cadre-2027-eligibility-exam-pattern.html",
-    "strategy-punjab-naib-tehsildar-2027-syllabus-exam-pattern.html",
     "strategy-punjab-panchayat-secretary-2027-exam-pattern.html",
     "strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html",
     "strategy-punjab-pcs-syllabus-exam-pattern.html",

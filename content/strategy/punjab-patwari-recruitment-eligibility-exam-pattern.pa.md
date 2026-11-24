@@ -142,7 +142,7 @@ Notification ਵਿੱਚ ਲਿਖਿਆ ਸੀ ਕਿ ਪੂਰਾ ਸਿਲ�
 - [ਪੰਜਾਬ ਪਟਵਾਰੀ ਮੌਕ ਟੈਸਟ](mock?exam=psssb-patwari)
 - [ਪੰਜਾਬ ਪਟਵਾਰੀ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-patwari/index.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
-- [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
+- [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](material-chapter-05-dpsp-and-fundamental-duties.html)
 - [ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ](topic-computer-01-fundamentals-of-computers-part1.html)
 - [MS Word ਭਾਗ 1](subject.html?subject=computer)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)

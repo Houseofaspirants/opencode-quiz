@@ -1,19 +1,19 @@
 ---
 title: Punjab Naib Tehsildar 2027 - Syllabus, Pattern & Posts
-description: Punjab Naib Tehsildar 2027 guide from the official PSSSB Advt 01/2025 - eligibility, age, fee, Rs 35,400 pay, the 120-question exam pattern and syllabus.
+description: Punjab Naib Tehsildar 2027 official PPSC syllabus and exam pattern - 120 MCQs for 300 marks, no negative marking, plus eligibility, age, fee and a free PDF.
 published: 2026-11-13
-updated: 2026-11-17
+updated: 2026-11-24
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
 difficulty: Intermediate
 exams: [Naib Tehsildar]
-subjects: [gk, reasoning, punjabi, english, computer]
+subjects: [gk, reasoning]
 tags: [naib tehsildar, psssb, ppsc, revenue department, syllabus, exam pattern]
 subtitle: What the last official notification says, whether posts are likely in 2027, and how to prepare with real papers.
-summary: Naib Tehsildar was last advertised by PSSSB (Advt 01/2025) for 13 backlog posts at Rs 35,400 (Level-6). You need a graduate degree and matric Punjabi. Selection is one 120-question MCQ paper (2 hours, 1/4 negative marking), then counselling.
+summary: Naib Tehsildar was last advertised by PSSSB (Advt 01/2025) for 13 backlog posts at Rs 35,400 (Level-6). You need a graduate degree and matric Punjabi. The official PPSC exam is one 120-question MCQ paper for 300 marks (80 GK, 40 reasoning) in 2 hours, with no negative marking.
 seoTitle: Punjab Naib Tehsildar 2027 - Syllabus & Exam Pattern
-keywords: [punjab naib tehsildar 2027, naib tehsildar recruitment 2027, psssb naib tehsildar syllabus, naib tehsildar exam pattern, punjab naib tehsildar salary, naib tehsildar eligibility punjab, ppsc naib tehsildar previous papers, naib tehsildar age limit]
+keywords: [punjab naib tehsildar 2027, naib tehsildar recruitment 2027, ppsc naib tehsildar syllabus, naib tehsildar syllabus pdf, naib tehsildar exam pattern, punjab naib tehsildar salary, naib tehsildar eligibility punjab, ppsc naib tehsildar previous papers, naib tehsildar age limit]
 schemaType: Article
 telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [strategy-punjab-patwari-recruitment-eligibility-exam-pattern.html, strategy-punjab-pcs-syllabus-exam-pattern.html, current-affairs.html]
@@ -25,13 +25,13 @@ faq:
   - q: What is the salary of a Naib Tehsildar in Punjab?
     a: Rs 35,400 at Pay Level-6 under the 7th CPC, as stated in Advertisement No. 01 of 2025.
   - q: What is the Naib Tehsildar exam pattern?
-    a: One objective paper of 120 questions and 120 marks in 2 hours - GK and current affairs, Punjab history and culture, reasoning, Punjabi, English and ICT. Each wrong answer costs 1/4 mark.
+    a: The official PPSC pattern is one objective paper of 120 questions and 300 marks in 2 hours - 80 GK and current affairs questions (200 marks) and 40 logical reasoning and mental ability questions (100 marks). Each question carries 2.5 marks and there is no negative marking.
   - q: Will there be a Naib Tehsildar recruitment in 2027?
-    a: No 2027 notification has been published yet. Recruitment depends on vacancies the Revenue Department sends to the board; prepare on the 2025 pattern and watch sssb.punjab.gov.in.
+    a: No 2027 notification has been published yet. Recruitment depends on vacancies the Revenue Department sends to the board; prepare on the official PPSC syllabus and watch ppsc.gov.in and sssb.punjab.gov.in.
 references:
   - title: PSSSB - Advertisement No. 01 of 2025 (Naib Tehsildar, Audit Officer, Inspector Audit), published 27 June 2025
     url: https://sssb.punjab.gov.in/
-  - title: Punjab Public Service Commission - Naib Tehsildar recruitment
+  - title: PPSC - Advertisement No. 15, Naib Tehsildar (78 posts), scheme of competitive examination
     url: https://ppsc.gov.in/
 ---
 
@@ -61,7 +61,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Naib T
 
 ## Will there be posts in 2027?
 
-Nobody can promise a date, but the history is useful. PPSC filled a large batch of 78 posts in the 2022 cycle (re-examined in June 2023), and PSSSB advertised the leftover backlog in 2025. Tehsildar offices run short of Naib Tehsildars every year through promotions and retirements, so a fresh general-category round is a realistic possibility once the department sends a new demand. **The safe plan is to prepare on the 2025 pattern now**, because the syllabus has stayed close to the PSSSB common pattern.
+Nobody can promise a date, but the history is useful. PPSC filled a large batch of 78 posts in the 2022 cycle (re-examined in June 2023), and PSSSB advertised the leftover backlog in 2025. Tehsildar offices run short of Naib Tehsildars every year through promotions and retirements, so a fresh general-category round is a realistic possibility once the department sends a new demand. **The safe plan is to prepare on the official PPSC syllabus below now.**
 
 ## Eligibility
 
@@ -87,45 +87,46 @@ Nobody can promise a date, but the history is useful. PPSC filled a large batch 
 | Ex-servicemen and dependents | Rs 200 |
 | Persons with disabilities | Rs 500 |
 
-## Selection process and exam pattern
+## Official syllabus and exam pattern (PPSC)
 
-The 2025 round had **one objective written exam**, followed by counselling and document checks. The merit list is made from the written marks.
-
-| Section | Questions (approx.) |
-| --- | --- |
-| General knowledge and current affairs (polity, environment, science, economy, Indian history, geography, sports) | 30 |
-| Punjab history and culture | 20 |
-| Logical reasoning, numerical skills and data analysis | 30 |
-| Punjabi grammar | 15 |
-| English grammar | 15 |
-| ICT (computer basics, internet, Word, Excel, PowerPoint) | 10 |
-| **Total** | **120** |
-
-- **Time:** 2 hours. **Marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
-- **Ties:** older candidate first, then higher marks in the qualifying degree, then matric marks.
-
-### The older PPSC pattern (Advt No. 15, 78 posts)
-
-When PPSC recruited 78 Naib Tehsildars (the 2022 cycle, re-examined in 2023), the paper looked different. If the next round goes back to PPSC, expect this shape:
+This is the official Naib Tehsildar scheme of the Punjab Public Service Commission, from **PPSC Advertisement No. 15** (78 posts). Selection is on **one objective written exam only** - no interview.
 
 | Section | Questions | Marks |
 | --- | --- | --- |
-| Logical reasoning and mental ability (incl. numerical skills and data analysis) | 40 | 100 |
-| General knowledge and current affairs of national and international importance | 80 | 200 |
+| General Knowledge & Current Affairs (national and international importance) | 80 | 200 |
+| Logical Reasoning & Mental Ability | 40 | 100 |
 | **Total** | **120** | **300** |
 
-- **Time:** 2 hours. **Marking:** 2.5 marks per question and **no negative marking**.
-- **Minimum to be appointed:** 45% (40% for SC and BC of Punjab). Selection on the written exam only, no interview.
+- **Time:** 2 hours. **Marking:** 2.5 marks per question, **no negative marking**.
+- **Minimum to be appointed:** 45% (40% for SC and BC of Punjab).
 
-Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) follows this PPSC pattern: 40 reasoning and 80 GK questions, 2.5 marks each, no negative marking.
+**[Download the PPSC Naib Tehsildar syllabus (PDF, 2 pages, English + Punjabi)](assets/pdfs/ppsc-naib-tehsildar-syllabus.pdf)**
+
+The full official notification, PPSC Advt. No. 15 (23 pages), is on our [Naib Tehsildar previous papers page](pyq/ppsc-naib-tehsildar/index.html).
+
+### 1. General Knowledge & Current Affairs (80 questions / 200 marks)
+
+- **Current Affairs:** national and international events (mainly the preceding 6-12 months), important days, awards and honours, sports.
+- **History & Culture:** Ancient, Medieval and Modern Indian History, with special emphasis on the Indian Freedom Struggle; Punjab History & Culture - Sikh Gurus, Sikh rulers, the Bhakti and Sufi movements, and Punjab's role in the freedom struggle.
+- **Indian Polity & Constitution:** Fundamental Rights and Duties, Directive Principles, Parliament, State Legislatures, Judiciary, Panchayati Raj and constitutional amendments.
+- **Geography:** physical, social and economic geography of India and Punjab - rivers, soil, climate, agriculture and resources.
+- **Indian Economy:** economic planning, Union and State Budgets, banking and RBI policies, agriculture and major government schemes.
+- **General Science & Environment:** everyday science, space and defence technology, ecology, biodiversity and environmental issues.
+
+### 2. Logical Reasoning & Mental Ability (40 questions / 100 marks)
+
+- **Logical & Analytical Reasoning:** coding-decoding, blood relations, direction sense, number and alphabet series, syllogisms, analogies, statements & arguments / conclusions, clocks & calendars, ranking, decision making, and non-verbal reasoning (mirror images, cubes & dice, embedded figures).
+- **Mental Ability (Quantitative Aptitude):** simplification, percentage, ratio & proportion, average, profit & loss, simple & compound interest, time & work, time & distance, boats & streams, problems on ages, HCF & LCM, mensuration (area, volume, surface area), permutation & combination, probability, and data interpretation (charts, graphs, tables).
+
+Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) follows this pattern: 40 reasoning and 80 GK questions, 2.5 marks each, no negative marking.
 
 ## How to prepare
 
-1. **Solve the real papers first.** We have the [Naib Tehsildar papers of 2022 and 2023 with official answer keys](pyq/ppsc-naib-tehsildar/index.html), plus the official syllabus file.
-2. **Punjab history carries 20 marks.** Sikh Gurus, Sikh rulers, the Bhakti and Sufi movements and Punjab's freedom struggle come up every time.
-3. **Reasoning is 30 marks - a quarter of the paper.** Practise daily, timed.
-4. **Don't skip ICT.** Ten easy marks for anyone who has used Word and Excel.
-5. **Respect the negative marking.** At -1/4, guess only when you can cut at least two options. (The PPSC pattern had none: there, attempt every question.)
+1. **Solve the real papers first.** We have the [Naib Tehsildar papers of 2022 and 2023 with official answer keys](pyq/ppsc-naib-tehsildar/index.html).
+2. **GK is two-thirds of the marks (200 of 300).** Read current affairs daily and revise polity, economy and geography of India and Punjab.
+3. **Punjab history comes up every time.** Sikh Gurus, Sikh rulers, the Bhakti and Sufi movements and Punjab's freedom struggle.
+4. **Reasoning and maths are 100 marks.** Practise daily, timed - series, coding, blood relations, percentage, interest and data interpretation.
+5. **Attempt every question.** There is no negative marking, so never leave an answer blank.
 
 ## Free practice on House of Aspirants
 

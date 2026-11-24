@@ -159,7 +159,7 @@ Apart from the compulsory race, you must clear **any two** of the other three ev
 
 - [PCS syllabus and old papers](pyq/ppsc-punjab-civil-services/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)
-- [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
+- [DPSP & Fundamental Duties](material-chapter-05-dpsp-and-fundamental-duties.html)
 - [Basic Concepts of Economy](quiz-gk-basic-concepts-of-economy-part-1.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [Current affairs](current-affairs.html)

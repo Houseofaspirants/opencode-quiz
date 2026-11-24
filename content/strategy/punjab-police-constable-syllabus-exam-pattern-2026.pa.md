@@ -156,7 +156,7 @@ references:
 ## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ
 
 **ਆਮ ਗਿਆਨ**
-- [DPSP ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](quiz-gk-dpsp-fundamental-duties-part-1.html)
+- [DPSP ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](material-chapter-05-dpsp-and-fundamental-duties.html)
 - [ਪੰਜਾਬ ਜੀਕੇ ਅਭਿਆਸ](category-gk-punjab-gk.html)
 - [ਅਰਥਵਿਵਸਥਾ ਦੇ ਮੁੱਢਲੇ ਸੰਕਲਪ](quiz-gk-basic-concepts-of-economy-part-1.html)
 

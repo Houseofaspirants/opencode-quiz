@@ -156,7 +156,7 @@ Start running now. Physical tests come soon after the result, and the 1,600 m in
 ## Free practice sets on House of Aspirants
 
 **General Awareness**
-- [DPSP & Fundamental Duties](quiz-gk-dpsp-fundamental-duties-part-1.html)
+- [DPSP & Fundamental Duties](material-chapter-05-dpsp-and-fundamental-duties.html)
 - [Punjab GK practice](category-gk-punjab-gk.html)
 - [Basic Concepts of Economy](quiz-gk-basic-concepts-of-economy-part-1.html)
 
