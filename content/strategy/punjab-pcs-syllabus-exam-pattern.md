@@ -88,6 +88,20 @@ Appearing in the prelims counts as an attempt.
 | SC/ST of all states and BC of Punjab | Rs 750 |
 | Ex-servicemen, EWS, PwD and LDESM of Punjab | Rs 500 |
 
+## Salary and pay (PCS 2025 notification)
+
+Minimum pay for the main services, from Appendix-I of the notification (7th CPC levels):
+
+| Service | Level | Starting pay |
+| --- | --- | --- |
+| PCS (Executive Branch) | Level 9 | Rs 53,100 |
+| DSP | Level 9 | Rs 53,100 |
+| Excise and Taxation Officer, Tehsildar, Food and Supply Officer, BDPO, Assistant Registrar, Labour Officer, Employment Generation and Training Officer | Level 7 | Rs 44,900 |
+| Deputy Superintendent Jails | Level 6 | Rs 35,400 |
+
+- **Probation:** 3 years, paid as a fixed emolument equal to the minimum pay, without any allowance.
+- **PCS (EB) career path:** Level 10 (Rs 56,100) after 4 years, Selection Grade Level 11 (Rs 67,700) after 8, JAG-II Level 12 (Rs 78,800) after 13, and JAG-I Level 13 (Rs 1,23,100) after 18 years.
+
 ## Stage 1: Preliminary exam
 
 | Paper | Questions | Marks per question | Total | Time |

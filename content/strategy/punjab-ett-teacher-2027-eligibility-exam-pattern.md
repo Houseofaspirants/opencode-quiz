@@ -32,6 +32,8 @@ references:
     url: https://educationrecruitmentboard.com/
   - title: Education Recruitment Board, Punjab - Final answer keys, ETT Paper 1 (Punjabi) and Paper 2, 5 March 2023
     url: https://educationrecruitmentboard.com/
+  - title: Adda247 - Punjab ETT Teacher syllabus and exam pattern
+    url: https://www.adda247.com/teaching-jobs-exam/punjab-ett-teacher-recruitment-syllabus/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. ETT is the dream post for thousands of D.El.Ed students in Punjab - and because so many apply, a few marks decide everything.
@@ -57,6 +59,19 @@ ETT is the **biggest teaching cadre** in Punjab. Teachers retire every year and 
 | **Paper 2** | Main subject paper | 100 |
 
 Both final keys gave free marks for a few deleted questions (shown as * in the key), so always check the final key, not the provisional one, when you score yourself.
+
+## Syllabus (Paper A and Paper B, 5994 recruitment, as reported)
+
+| Paper | Questions | Marks | Time | Role |
+| --- | --- | --- | --- | --- |
+| Paper A - Punjabi | 100 | 100 | 100 min | Qualifying only; not counted in merit |
+| Paper B - main paper | 100 | 200 | 100 min | Decides the merit |
+
+**Paper B sections:** Punjabi 20 questions, English 10, Hindi 10, General Science 20, Social Studies 20, Maths 20 (2 marks each).
+
+- **English:** comprehension; grammar - articles, prepositions, tenses, modals, voice, narration, error correction; vocabulary - synonyms, antonyms, idioms, one-word substitution; Punjabi-English translation.
+- **General Science:** motion, force, gravitation, work and energy, sound, light, electricity, magnetism; matter, atoms, chemical reactions, acids and bases, metals, carbon; the cell, tissues, diversity of life, health, natural resources, life processes, control and coordination, reproduction, heredity.
+- **Punjabi, Hindi, Social Studies and Maths:** school level up to Class 10; the board's syllabus PDF lists the chapters.
 
 ## How to prepare
 

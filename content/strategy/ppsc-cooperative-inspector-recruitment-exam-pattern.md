@@ -90,6 +90,12 @@ You must hold every qualification by the last date of applying.
 
 In the last cycle the fee was paid at any State Bank of India branch.
 
+## Salary and pay
+
+- **Initial pay:** Rs 35,400 a month (PPSC Advt. No. 202144).
+- **Probation:** 3 years, paid as a fixed emolument equal to the minimum pay, without any allowance.
+- **After probation:** the regular 7th CPC scale with increments, DA, HRA and other allowances.
+
 ## Exam pattern
 
 One **pen-and-paper exam on an OMR sheet**, 2 hours long:

@@ -32,6 +32,10 @@ references:
     url: https://sssb.punjab.gov.in/
   - title: PSSSB - Fireman written exam of 1 October 2023 and physical test result of 15 November 2023
     url: https://sssb.punjab.gov.in/
+  - title: Adda247 - PSSSB Driver and Fireman salary 2023
+    url: https://www.adda247.com/pa/jobs/psssb-driver-and-fireman-salary-2023/
+  - title: Adda247 - PSSSB Driver and Fireman exam pattern and physical test
+    url: https://www.adda247.com/pa/jobs/psssb-driver-and-fireman-exam-pattern/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Fireman is half paper and half fitness. Many strong runners never reach the physical test because they took the written exam lightly - and the reverse happens too.
@@ -49,6 +53,30 @@ Punjab has been adding fire stations and fire tenders, and the 2023 batch was on
 - **Age:** 18-37 as on 1 January 2023, with relaxations.
 - **Pay:** Rs 19,900 (7th CPC) plus allowances.
 - **Selection:** written exam, then physical efficiency and measurement test, then counselling.
+
+## Salary and pay (2023 round)
+
+- **Fireman:** Rs 19,900 a month (7th CPC) - about Rs 2.39 lakh a year. Driver/Operator started at a reported Rs 21,700.
+- **Probation:** reported as 3 years; you are confirmed, and further service benefits apply, only after it.
+- **Allowances:** DA, HRA, medical and travel allowances are added once probation ends, as for other Punjab recruits.
+
+## Physical standards (2023 round, as reported)
+
+**Measurements**
+
+| | Men | Women |
+| --- | --- | --- |
+| Height | 5 ft 5 in | height checked as per the notice |
+| Chest | 33.5 in, with 1.5 in expansion | not checked |
+| Eyesight | 6/6 in both eyes, without glasses | 6/6 in both eyes, without glasses |
+
+**Physical test (men)**
+
+- Carry a 60 kg load over 100 yards within 1 minute.
+- Hook-ladder drill: raise the ladder to the vertical position.
+- Climb a rope or vertical pipe to 8-10 feet.
+
+The test is qualifying - no marks, but you must pass it. The 2023 descriptions on coaching sites were unclear in places, so read the exact events in the next advertisement.
 
 ## How PSSSB papers work now
 

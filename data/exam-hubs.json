@@ -90,6 +90,10 @@
           "en": "exams/ppsc-cooperative-inspector/preparation.html",
           "pa": "pa/exams/ppsc-cooperative-inspector/preparation.html"
         },
+        "salary": {
+          "en": "exams/ppsc-cooperative-inspector/salary.html",
+          "pa": "pa/exams/ppsc-cooperative-inspector/salary.html"
+        },
         "syllabus": {
           "en": "exams/ppsc-cooperative-inspector/syllabus.html",
           "pa": "pa/exams/ppsc-cooperative-inspector/syllabus.html"
@@ -496,9 +500,17 @@
           "en": "exams/psssb-fireman/notification.html",
           "pa": "pa/exams/psssb-fireman/notification.html"
         },
+        "physical-standards": {
+          "en": "exams/psssb-fireman/physical-standards.html",
+          "pa": "pa/exams/psssb-fireman/physical-standards.html"
+        },
         "preparation": {
           "en": "exams/psssb-fireman/preparation.html",
           "pa": "pa/exams/psssb-fireman/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-fireman/salary.html",
+          "pa": "pa/exams/psssb-fireman/salary.html"
         }
       },
       "pyq": "pyq/psssb-fireman/index.html"
@@ -946,6 +958,10 @@
         "preparation": {
           "en": "exams/psssb-veterinary-inspector/preparation.html",
           "pa": "pa/exams/psssb-veterinary-inspector/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-veterinary-inspector/salary.html",
+          "pa": "pa/exams/psssb-veterinary-inspector/salary.html"
         }
       },
       "pyq": "pyq/psssb-veterinary-inspector/index.html"
@@ -992,7 +1008,8 @@
       "filePa": "pa/exams/punjab-ett-teacher.html",
       "parts": {
         "eligibility": {
-          "en": "exams/punjab-ett-teacher/eligibility.html"
+          "en": "exams/punjab-ett-teacher/eligibility.html",
+          "pa": "pa/exams/punjab-ett-teacher/eligibility.html"
         },
         "exam-pattern": {
           "en": "exams/punjab-ett-teacher/exam-pattern.html",
@@ -1005,6 +1022,10 @@
         "preparation": {
           "en": "exams/punjab-ett-teacher/preparation.html",
           "pa": "pa/exams/punjab-ett-teacher/preparation.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-ett-teacher/syllabus.html",
+          "pa": "pa/exams/punjab-ett-teacher/syllabus.html"
         }
       },
       "pyq": "pyq/punjab-ett-teacher/index.html"
@@ -1061,6 +1082,10 @@
         "preparation": {
           "en": "exams/punjab-master-cadre/preparation.html",
           "pa": "pa/exams/punjab-master-cadre/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-master-cadre/salary.html",
+          "pa": "pa/exams/punjab-master-cadre/salary.html"
         }
       },
       "pyq": "pyq/punjab-master-cadre/index.html"
@@ -1187,6 +1212,10 @@
         "preparation": {
           "en": "exams/punjab-pcs/preparation.html",
           "pa": "pa/exams/punjab-pcs/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-pcs/salary.html",
+          "pa": "pa/exams/punjab-pcs/salary.html"
         }
       },
       "pyq": "pyq/ppsc-punjab-civil-services/index.html",
@@ -1289,6 +1318,10 @@
           "en": "exams/punjab-police-head-constable/preparation.html",
           "pa": "pa/exams/punjab-police-head-constable/preparation.html"
         },
+        "salary": {
+          "en": "exams/punjab-police-head-constable/salary.html",
+          "pa": "pa/exams/punjab-police-head-constable/salary.html"
+        },
         "syllabus": {
           "en": "exams/punjab-police-head-constable/syllabus.html",
           "pa": "pa/exams/punjab-police-head-constable/syllabus.html"
@@ -1307,7 +1340,8 @@
       "filePa": "pa/exams/punjab-police-intelligence-constable.html",
       "parts": {
         "eligibility": {
-          "en": "exams/punjab-police-intelligence-constable/eligibility.html"
+          "en": "exams/punjab-police-intelligence-constable/eligibility.html",
+          "pa": "pa/exams/punjab-police-intelligence-constable/eligibility.html"
         },
         "exam-pattern": {
           "en": "exams/punjab-police-intelligence-constable/exam-pattern.html",
@@ -1317,9 +1351,21 @@
           "en": "exams/punjab-police-intelligence-constable/notification.html",
           "pa": "pa/exams/punjab-police-intelligence-constable/notification.html"
         },
+        "physical-standards": {
+          "en": "exams/punjab-police-intelligence-constable/physical-standards.html",
+          "pa": "pa/exams/punjab-police-intelligence-constable/physical-standards.html"
+        },
         "preparation": {
           "en": "exams/punjab-police-intelligence-constable/preparation.html",
           "pa": "pa/exams/punjab-police-intelligence-constable/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-police-intelligence-constable/salary.html",
+          "pa": "pa/exams/punjab-police-intelligence-constable/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-police-intelligence-constable/syllabus.html",
+          "pa": "pa/exams/punjab-police-intelligence-constable/syllabus.html"
         }
       },
       "pyq": "pyq/punjab-police-constable-intelligence-investigation/index.html",
@@ -1353,6 +1399,10 @@
         "preparation": {
           "en": "exams/punjab-police-sub-inspector/preparation.html",
           "pa": "pa/exams/punjab-police-sub-inspector/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-police-sub-inspector/salary.html",
+          "pa": "pa/exams/punjab-police-sub-inspector/salary.html"
         },
         "syllabus": {
           "en": "exams/punjab-police-sub-inspector/syllabus.html",

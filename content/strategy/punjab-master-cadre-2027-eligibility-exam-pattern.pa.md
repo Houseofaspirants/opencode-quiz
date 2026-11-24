@@ -32,6 +32,8 @@ references:
     url: https://www.educationrecruitmentboard.com/
   - title: ਮਾਸਟਰ ਕਾਡਰ revised answer keys - ਗਣਿਤ ਅਤੇ ਹਿੰਦੀ (28 ਅਗਸਤ 2022), ਸਾਇੰਸ (18 ਸਤੰਬਰ 2022)
     url: https://www.educationrecruitmentboard.com/
+  - title: Adda247 - Punjab Master Cadre salary structure
+    url: https://www.adda247.com/teaching-jobs-exam/punjab-master-cadre-salary-structure/
 ---
 
 ਮੈਂ ਪੰਜਾਬ ਪੁਲਿਸ ਸਬ-ਇੰਸਪੈਕਟਰ ਦਾ ਪੇਪਰ **ਰੈਂਕ 2 (713/800)** ਨਾਲ ਪਾਸ ਕੀਤਾ ਸੀ। ਮਾਸਟਰ ਕਾਡਰ ਪਹਿਲਾਂ ਵਿਸ਼ੇ ਦਾ ਪੇਪਰ ਹੈ, ਬਾਅਦ ਵਿੱਚ ਆਮ ਗਿਆਨ ਦਾ। ਜੋ ਅਧਿਆਪਕ ਆਪਣਾ ਵਿਸ਼ਾ ਸੱਚਮੁੱਚ ਜਾਣਦਾ ਹੈ, ਉਸਨੂੰ ਇੱਥੇ ਵੱਡਾ ਫ਼ਾਇਦਾ ਹੈ।
@@ -49,6 +51,12 @@ references:
 3. ਉਸ ਵਿਸ਼ੇ ਨੂੰ teaching subject ਵਜੋਂ **B.Ed**।
 4. **ਸਾਇੰਸ** (Non-Medical/Medical) ਅਤੇ **English** ਦੀਆਂ ਵਿਸ਼ਾ-ਜੋੜੀਆਂ notification ਵਿੱਚ ਵਿਸਥਾਰ ਨਾਲ ਹਨ।
 5. **PSTET Paper 2** ਆਮ ਤੌਰ 'ਤੇ ਜ਼ਰੂਰੀ ਹੁੰਦਾ ਹੈ; ਨਵੇਂ notice ਵਿੱਚ ਪੱਕਾ ਕਰੋ।
+
+## ਤਨਖ਼ਾਹ ਅਤੇ ਪੇਅ (2022 ਦੀ ਭਰਤੀ, ਰਿਪੋਰਟਾਂ ਅਨੁਸਾਰ)
+
+- **ਸ਼ੁਰੂਆਤੀ ਤਨਖ਼ਾਹ:** ਨਵੇਂ ਭਰਤੀ ਅਧਿਆਪਕਾਂ ਲਈ 7ਵੇਂ ਤਨਖ਼ਾਹ ਕਮਿਸ਼ਨ ਅਨੁਸਾਰ 35,400 ਰੁਪਏ ਮਹੀਨਾ।
+- **Probation:** ਇਸ ਦੌਰਾਨ ਭੱਤਿਆਂ ਤੋਂ ਬਿਨਾਂ ਪੱਕੀ ਤਨਖ਼ਾਹ; 2022 ਦੀ ਭਰਤੀ ਵਿੱਚ probation 2 ਸਾਲ ਦੱਸੀ ਗਈ ਸੀ।
+- **Probation ਤੋਂ ਬਾਅਦ:** DA, HRA, ਸਫ਼ਰ ਭੱਤਾ ਅਤੇ ਪੱਕੀ ਅਸਾਮੀ ਦੇ ਬਾਕੀ ਲਾਭ ਜੁੜਦੇ ਹਨ।
 
 ## ਪੇਪਰ ਪੈਟਰਨ (2022 ਦੇ ਪੇਪਰ)
 

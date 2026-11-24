@@ -32,6 +32,8 @@ references:
     url: https://www.educationrecruitmentboard.com/
   - title: Master Cadre revised answer keys - Mathematics and Hindi (28 August 2022), Science (18 September 2022)
     url: https://www.educationrecruitmentboard.com/
+  - title: Adda247 - Punjab Master Cadre salary structure
+    url: https://www.adda247.com/teaching-jobs-exam/punjab-master-cadre-salary-structure/
 ---
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Master Cadre is a subject exam first and a general exam second. The paper tests what you studied in your degree and B.Ed, so a teacher who truly knows the subject has a real advantage over a pure exam-crammer.
@@ -49,6 +51,12 @@ Punjab fills teacher posts in big rounds rather than every year. After the 2022 
 3. **B.Ed** from a recognised university with that subject as a teaching subject.
 4. **Science** (Non-Medical or Medical) and **English** have detailed lists of accepted subject combinations; read them in the notification.
 5. **PSTET Paper 2** is generally needed for master-level teaching posts in Punjab; confirm in the next notice.
+
+## Salary and pay (2022 round, as reported)
+
+- **Starting pay:** Rs 35,400 a month under the 7th CPC matrix, for newly appointed teachers.
+- **Probation:** during probation this is a fixed pay without allowances; the 2022 round reported a 2-year probation.
+- **After probation:** DA, HRA, travel allowance and the other benefits of a regular post are added.
 
 ## Exam pattern (2022 papers)
 

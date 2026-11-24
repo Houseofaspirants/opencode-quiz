@@ -92,6 +92,11 @@ Most posts are in the reserved and backlog categories this time, so check your c
 | Ex-servicemen and dependents | Rs 200 |
 | Persons with disabilities | Rs 500 |
 
+## Salary and pay (Advt. 10/2026)
+
+- **Pay scale:** Rs 29,200-92,300, Level 5 of the 7th CPC matrix; starting basic pay Rs 29,200.
+- **Probation:** the advertisement applies the Punjab Finance Department rules of 2015 and 2016 for new recruits, under which only the minimum pay is paid during probation, without annual increments or allowances.
+
 ## Selection process
 
 | Part | What | Role |

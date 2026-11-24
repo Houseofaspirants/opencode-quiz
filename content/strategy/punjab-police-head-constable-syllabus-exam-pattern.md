@@ -55,6 +55,12 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2, scoring 713 out of
 
 Note the minimum age: it is **21**, not 18 as for Constable and SI.
 
+## Salary and pay (2021 notification)
+
+- **Pay:** Rs 25,500 a month, the minimum of Level 4 of the 7th CPC pay matrix (Advt. No. 4 of 2021).
+- **Probation:** During the 3-year probation only this minimum pay is paid - no annual increment and no allowances except travelling allowance.
+- **After probation:** the regular Level 4 scale with increments; the notification left the decision on allowances for later.
+
 ## Selection process
 
 1. **Stage I:** Computer Based Test: two papers on the same day, in Punjabi and English (the English version prevails if there is any doubt)

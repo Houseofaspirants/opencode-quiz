@@ -44,9 +44,30 @@ Punjab Police has been advertising its **district and armed cadre constable** po
 
 ## Eligibility (Advt 03/2021)
 
-- **Age:** 21 to 28 years as on 1 January 2021, with relaxation for reserved categories.
-- **Education:** a graduation-level qualification as set out in the advertisement - check the exact degree list in the next notice.
-- **Physical standards:** reported as 5 ft 5 in for men and 5 ft 1 in for women.
+- **Age:** 21 to 28 years as on 1 January 2021. SC and BC candidates of Punjab and serving government employees get 5 years of relaxation (up to 33). Ex-servicemen of Punjab may deduct their service period, if the result is not more than 3 years above the limit.
+- **Education - Intelligence Assistant:** a graduate who also holds the NIELIT (DOEACC) 'O' Level certificate; or a graduate with Computer Science, Computer Applications or IT as an elective for the whole degree; or a B.Sc/B.Tech/BE in IT, Computer Science or a related computing branch, BCA, or a PGDCA.
+- **Education - Investigation cadre Constable:** graduation from a recognised university.
+- **Punjabi:** matriculation with Punjabi as a compulsory or elective subject, or an equivalent Punjabi examination.
+- **Height:** 5 ft 5 in for men and 5 ft 1 in for women, for both cadres.
+- **Fee:** Rs 1,000 general; Rs 550 SC/ST and BC of Punjab and EWS; Rs 400 ex-servicemen of Punjab and their lineal descendants.
+
+## Salary and pay (Advt 03/2021)
+
+- **Pay:** Rs 19,900 a month, the minimum of Level 2 of the 7th CPC pay matrix.
+- **Probation:** 3 years. During it only this minimum pay is paid - no annual increment and no allowances except travelling allowance.
+- **After probation:** the regular Level 2 scale with increments and allowances.
+
+## Physical standards and test (Advt 03/2021)
+
+Both tests are qualifying; you must clear every event for your category.
+
+| Candidates | Events |
+| --- | --- |
+| Men (except ex-servicemen aged 35+) | 800 m run in 4 minutes (1 chance); long jump 2.75 m and high jump 0.90 m (3 chances each) |
+| Ex-servicemen, men, 35 and above | 800 m run or walk in 6 minutes (1 chance) |
+| Women | 400 m run in 2 minutes (1 chance); long jump 1.80 m and high jump 0.75 m (3 chances each) |
+
+**Height (PMT):** 5 ft 5 in for men and 5 ft 1 in for women.
 
 ## Exam pattern
 
@@ -62,6 +83,21 @@ Punjab Police has been advertising its **district and armed cadre constable** po
 | **Total** | **100 questions, 400 marks, 120 minutes** |
 
 - **Marking:** +4 for a correct answer, **-1 for a wrong answer**.
+
+## Official syllabus (2021 CBT)
+
+The 2021 CBT had **150 questions, 150 marks, 3 hours** and **no negative marking**. To reach the next stage you needed 30% (25% for SC, BC, EWS and ex-servicemen).
+
+| Section | Questions | Topics |
+| --- | --- | --- |
+| General Awareness | 40 | Constitution, legislature, executive, local government, judiciary; history, geography, culture, economy and agriculture of India and Punjab; science and technology; current affairs |
+| Quantitative Aptitude | 30 | Simplification, average, fractions, ratio, percentage, profit and loss, simple interest, time and work, graphs, number system, speed-distance, mensuration |
+| Mental and Logical Ability | 30 | Series, analogy, classification, coding-decoding, puzzles, verbal and non-verbal reasoning, statements and conclusions, ranking, directions, relations |
+| English | 10 | Comprehension, Punjabi-English translation, error spotting, fill in the blanks, vocabulary |
+| Punjabi | 10 | Sentence structure, error detection, synonyms and antonyms, translation, comprehension, idioms |
+| Digital Literacy and Computers | 30 | Computer basics, folders, MS Office, internet and search, email, social media, mobile phones, operating systems, hardware |
+
+The 2022 paper used a different format (100 questions with -1 for a wrong answer), so read the pattern in the next notice carefully.
 
 ## How to prepare
 

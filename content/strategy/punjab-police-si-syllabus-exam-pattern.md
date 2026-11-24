@@ -67,6 +67,12 @@ If you are a graduate, the SI pattern on this page is the best way to prepare fo
 - **Age:** 18 to 28 years as on 1 January 2023. SC and BC candidates of Punjab and serving government employees get up to 5 years of relaxation (up to 33 years). Ex-servicemen deduct their service period as per rules.
 - **Height:** 5 ft 7 in for men and 5 ft 2 in for women, for both cadres
 
+## Salary and pay (2023 notification)
+
+- **Pay:** Rs 35,400 a month for the first **3 years** from joining, fixed under the Punjab Government notification of 29 December 2020.
+- **During those 3 years (probation):** under Punjab's rules for new recruits, only this minimum pay is paid - no annual increment and no allowances except travelling allowance.
+- **After probation:** the regular 7th CPC scale with increments and allowances; the next promotion is to Inspector.
+
 ## Selection process
 
 1. **Stage I:** Computer Based Test: Paper I, Paper II and Paper III
