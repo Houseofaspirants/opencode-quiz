@@ -1,6 +1,6 @@
 ---
 title: PSSSB Clerk Legal 2027 - Syllabus & Exam Pattern
-description: PSSSB Clerk (Legal) 2027 guide from the official Advt 02/2022 plan - law syllabus, 120-question pattern, negative marking and the new criminal laws.
+description: PSSSB Clerk (Legal) 2027 guide from the official Advt 02/2022 plan - law syllabus, Punjabi Part A, 70+30 Part B, negative marking and the new criminal laws.
 published: 2026-11-13
 updated: 2026-11-25
 language: en
@@ -11,7 +11,7 @@ exams: [PSSSB Clerk Legal]
 subjects: [gk, reasoning, punjabi, english]
 tags: [psssb, clerk legal, law, llb, syllabus, exam pattern]
 subtitle: The official Clerk (Legal) exam plan, the 2027 outlook, and what to read now that BNS, BNSS and BSA are in force.
-summary: Clerk (Legal) is the PSSSB clerk post for law graduates. The Advt 02/2022 exam had 120 MCQs in 2 hours - 90 on CrPC, IPC, Evidence, CPC and the Constitution, and 30 on GK, languages and reasoning - with 1/4 negative marking. A qualifying Punjabi part now comes first.
+summary: Clerk (Legal) is the PSSSB clerk post for law graduates. The official Advt 02/2022 plan is a 2.5-hour MCQ exam - a qualifying 50-question Punjabi Part A, then a 100-question Part B (70 on CrPC, IPC, Evidence, CPC and the Constitution, 30 on GK, languages and reasoning) with 1/4 negative marking.
 seoTitle: PSSSB Clerk Legal 2027 - Syllabus & Exam Pattern
 keywords: [psssb clerk legal 2027, clerk legal syllabus punjab, psssb clerk legal exam pattern, clerk legal previous papers, punjab clerk legal recruitment, clerk legal answer key psssb, clerk legal eligibility llb, psssb law clerk syllabus]
 schemaType: Article
@@ -19,7 +19,7 @@ telegramLink: https://t.me/HouseOfAspirant
 relatedContent: [exams/psssb-clerk.html, exams/punjab-pcs-judicial.html, current-affairs.html]
 faq:
   - q: What is the PSSSB Clerk Legal exam pattern?
-    a: Under the Advt 02/2022 plan - 120 MCQs, 120 marks, 2 hours. 90 questions on law and 30 on GK, English, Punjabi and reasoning, with 1/4 mark cut for each wrong answer. Since October 2022 PSSSB exams start with a qualifying Punjabi Part A.
+    a: Under the official Advt 02/2022 final plan - 2 hours 30 minutes on OMR. Part A is 50 matric-level Punjabi questions (qualifying, 25 marks needed, no negative marking). Part B has 100 questions - 70 on law and 30 on GK, English, reasoning and Punjabi - with 1/4 mark cut for each wrong answer. Merit is made from Part B only.
   - q: Which laws are in the Clerk Legal syllabus?
     a: Five units - Code of Criminal Procedure, Indian Penal Code, Indian Evidence Act, Code of Civil Procedure and Constitutional Law.
   - q: Do I need to study BNS, BNSS and BSA for Clerk Legal?
@@ -37,7 +37,7 @@ references:
     url: https://www.mha.gov.in/
 ---
 
-I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk (Legal) is a small but valuable recruitment: three-quarters of the paper is law, so an LLB student who revises the codes properly competes with a much smaller field than the general clerk exam.
+I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk (Legal) is a small but valuable recruitment: 70 of the 100 merit questions are law, so an LLB student who revises the codes properly competes with a much smaller field than the general clerk exam.
 
 > The latest round is **PSSSB Advertisement No. 12 of 2026** (published 18 September 2026, applications 25 September to 19 October 2026). It has **13 Clerk (Legal) posts** at Rs 19,900 across six offices - Excise and Taxation (6), Employment Generation and Training (2), Dairy Development (2), Labour Commissioner (1), Defence Services Welfare (1) and Cultural Affairs (1). The written exam date is still awaited. The previous round was Advt 02/2022, examined on 8 July 2023.
 
@@ -45,16 +45,17 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk 
 
 Advt 12/2026 brought Clerk (Legal) back after more than three years, with **13 posts**. The rules are the same as before: a **law graduate**, matric Punjabi, a qualifying Punjabi Part A (50%), merit from **Part B** with a 1/4 negative, and a qualifying 30 wpm typing test in English and Punjabi (Raavi font). A common merit list is made from typing-pass candidates. Legal-cell demand still arrives irregularly, so treat any 2027 round as a bonus and prepare for the current one. The same law syllabus also prepares you for PCS (Judicial) and Assistant District Attorney posts.
 
-## Exam pattern (Advt 02/2022 official plan)
+## Exam pattern (Advt 02/2022 official final plan)
 
-| Part | Questions | Marks |
-| --- | --- | --- |
-| Law subject syllabus (5 units) | 90 | 90 |
-| GK, English, Punjabi, logical reasoning and mental ability | 30 | 30 |
-| **Total** | **120** | **120** |
+| Part | What | Questions / marks | Role |
+| --- | --- | --- | --- |
+| A | Matric-level Punjabi | 50 | **Qualifying - 25 marks (50%) needed**, no negative marking |
+| B (I) | Law subject syllabus (5 units) | 70 | Counts for merit |
+| B (II) | GK, English, logical reasoning and mental ability, Punjabi | 30 | Counts for merit |
+| | **Part B total** | **100** | |
 
-- **Time:** 2 hours, MCQ on OMR sheet. **Negative marking:** 1/4 mark per wrong answer.
-- **Since October 2022:** a **qualifying matric-level Punjabi Part A** (50% needed) comes first; merit is made from the main paper.
+- **Time:** 2 hours 30 minutes, MCQ on OMR sheet. **Negative marking in Part B:** 1/4 mark per wrong answer; no penalty for a question left blank.
+- **Merit:** only candidates who clear Part A are ranked, on their **Part B score (out of 100)**.
 - After the written exam: typing test (qualifying) and counselling, as for other clerk posts.
 
 ## The five law units

@@ -1,6 +1,6 @@
 ---
 title: PSSSB Hostel Superintendent cum PTI 2027 - Full Guide
-description: PSSSB Hostel Superintendent cum PTI 2027 guide from Advt 13/2025 - C.P.Ed eligibility, experience, age, fee, Rs 19,900 pay, written exam and past papers.
+description: PSSSB Hostel Superintendent cum PTI 2027 guide from Advt 13/2025 - C.P.Ed eligibility, experience, age, fee, Rs 29,200 pay, written exam and past papers.
 published: 2026-11-13
 updated: 2026-11-25
 language: en
@@ -11,7 +11,7 @@ exams: [PSSSB Hostel Superintendent cum PTI]
 subjects: [gk, reasoning, english, punjabi]
 tags: [psssb, hostel superintendent, pti, physical education, technical education, exam pattern]
 subtitle: The last official notification for this ITI hostel post, the 2027 outlook, and how to use the 2022 and 2026 papers.
-summary: PSSSB advertised 68 Hostel Superintendent cum PTI posts in Advt 13/2025 for the Technical Education and Industrial Training department, at Rs 19,900 (Level-2). You need matric or 10+2, a C.P.Ed (D.P.Ed preferred) and 2 years of experience. Merit comes from the written exam.
+summary: PSSSB advertised 68 Hostel Superintendent cum PTI posts in Advt 13/2025 for the Technical Education and Industrial Training department, at Rs 29,200 (Level-5). You need matric or 10+2, a C.P.Ed (D.P.Ed preferred) and 2 years of experience. Merit comes from the written exam.
 seoTitle: PSSSB Hostel Superintendent cum PTI 2027 - Eligibility
 keywords: [psssb hostel superintendent 2027, hostel superintendent cum pti punjab, psssb pti recruitment 2027, hostel superintendent eligibility punjab, psssb hostel superintendent syllabus, hostel superintendent previous papers, psssb advt 13 2025]
 schemaType: Article
@@ -21,7 +21,7 @@ faq:
   - q: What is the qualification for PSSSB Hostel Superintendent cum PTI?
     a: As per Advertisement No. 13 of 2025 - matric in second division or 10+2, a C.P.Ed certificate (D.P.Ed preferred), two years of experience, and matric-level Punjabi.
   - q: What is the salary of Hostel Superintendent cum PTI?
-    a: Rs 19,900 at Pay Level-2 of the 7th CPC pay matrix.
+    a: Rs 29,200 at Pay Level-5 of the 7th CPC pay matrix, as stated in Advertisement No. 13 of 2025. (The Storekeeper posts in the same advertisement are at Rs 19,900, Level-2.)
   - q: Which department is the Hostel Superintendent cum PTI post in?
     a: The Department of Technical Education and Industrial Training, Punjab - mainly government ITIs and polytechnic hostels.
   - q: How is the selection made?
@@ -54,7 +54,7 @@ This post came in **2022** and again in **2025 (68 posts)**. Because the 2025 ro
 
 - **Age:** 18 to 37 years; up to 42 for SC and BC of Punjab, 45 for government employees, 47 for persons with disabilities, 40 for widows and divorcees.
 - **Fee:** General Rs 1,000; SC/BC/EWS Rs 250; ex-servicemen Rs 200; persons with disabilities Rs 500.
-- **Pay:** Rs 19,900 (Level-2, 7th CPC).
+- **Pay:** Rs 29,200 (Level-5, 7th CPC), as per Advt 13/2025.
 
 ## Selection process
 

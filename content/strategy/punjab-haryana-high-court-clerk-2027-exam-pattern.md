@@ -96,9 +96,20 @@ You need **40% in aggregate and 33% in every paper**. Then comes an **English ty
 
 The 2023 notice says pay and allowances follow the **latest Government of Punjab rules as adopted by the High Court** for its employees; it does not print a figure. Clerks under Punjab's 7th CPC pay matrix start at **Rs 19,900**, and the High Court's own allowances apply on top. Check the exact scale in the next notice.
 
-## Related: Punjab district courts Clerk 2026 (as reported)
+## Related: Subordinate (district) courts Clerk 2026
 
-A separate recruitment for **Clerks in Punjab's district courts** was run in 2026 by the High Court's Subordinate Services Selection Committee. As reported by coaching sites, it had a **2-hour, 100-mark computer-based test** - GK 50, English objective 20, and English subjective 30 (essay 10, letter 5, precis 5, translation 10) - with a 1/4 negative mark, **33% per subject and 40% in aggregate**, followed by a **computer proficiency test** (spreadsheet, 10 marks, 4 to pass) and **30 wpm typing**. Confirm these details in that committee's own notice.
+Clerks for the **subordinate (district) courts** are recruited separately, by the High Court's **Society for Centralized Recruitment of Staff in Subordinate Courts (S.S.S.C.)**, sssc.gov.in. For the **Haryana subordinate courts (Advt. No. 36C/SSSC/HR/2026)**, the society's official **corrigendum No. 321/S.S.S.C. of 23 May 2026** fixes the computer-based written test as:
+
+| Subject | Type | Questions | Marks |
+| --- | --- | --- | --- |
+| General Knowledge | Objective | 50 | 50 |
+| English Composition | Objective | 20 | 20 |
+| English Composition | Subjective - essay (150 words) 10, letter 5, precis 5, Hindi-to-English translation 10 | - | 30 |
+| **Total** | **2 hours** | | **100** |
+
+- **To qualify:** at least **33% in each subject** and **40% in the aggregate** of both.
+- The corrigendum corrected the objective English part from 50 questions to **20 questions of 1 mark each**.
+- Coaching sites also report a 1/4 negative mark, a computer proficiency test (spreadsheet, 10 marks, 4 to pass) and 30 wpm typing - these are not in the corrigendum, so confirm them in the detailed notice for your state.
 
 **[Download the official High Court Clerk notice No. 01/CLK/HC/2023 (PDF)](assets/pdfs/punjab-haryana-high-court-clerk-notification-2023.pdf)**
 
