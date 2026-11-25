@@ -67,7 +67,7 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 ## Related post: VDO eligibility (792 posts, Advt 04/2022)
 
-The closest recent recruitment in the same department is **Village Development Organiser (VDO)**, Group C, in the Department of Rural Development and Panchayats. The department sent PSSSB a requisition for **792 VDO posts** (282 General, 79 SC M&B, 79 SC R&O, 92 BC, 79 EWS, plus ex-servicemen, sports, disability and freedom-fighter quotas), and PSSSB advertised them as **Advt 04/2022**.
+The closest recent recruitment in the same department is **Village Development Organiser (VDO)**, Group C, in the Department of Rural Development and Panchayats. The department sent PSSSB a requisition for **792 VDO posts** (282 General, 79 SC M&B, 79 SC R&O, 92 BC, 79 EWS, plus ex-servicemen, sports, disability and freedom-fighter quotas), and PSSSB advertised them as **Advt 04/2022**. All of it - posts, pay, pattern and syllabus - is on the [PSSSB VDO guide](exams/psssb-vdo.html).
 
 Under the service rules as amended in September 2021, a VDO needs:
 
