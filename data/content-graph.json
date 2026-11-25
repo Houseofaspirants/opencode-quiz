@@ -21,7 +21,7 @@
  },
  "counts": {
   "nodes": 1622,
-  "edges": 11837,
+  "edges": 12271,
   "silos": 35,
   "clusters": 219,
   "pillars": 34
@@ -44929,7 +44929,73 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/chandigarh-police-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/ppsc-building-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-building-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-building-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-building-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-building-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-building-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44941,7 +45007,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/ppsc-cooperative-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-cooperative-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-cooperative-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-cooperative-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-cooperative-inspector/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/ppsc-draftsman.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-draftsman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-draftsman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-draftsman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-draftsman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-draftsman/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44953,7 +45079,49 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/ppsc-functional-manager/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-functional-manager/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/ppsc-junior-auditor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-junior-auditor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-junior-auditor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-junior-auditor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-junior-auditor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/ppsc-junior-auditor/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44965,7 +45133,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-anganwadi-supervisor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-anganwadi-supervisor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-anganwadi-supervisor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-anganwadi-supervisor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-clerk-accounts.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-accounts/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-accounts/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-accounts/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-accounts/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-accounts/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44977,7 +45199,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-clerk-data-entry-operator/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-data-entry-operator/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-data-entry-operator/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-data-entry-operator/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-clerk-it.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-it/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-it/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-it/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-it/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-it/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -44989,7 +45265,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-clerk-legal/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-legal/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-legal/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-legal/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk-legal/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-clerk/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45001,7 +45337,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-craft-instructor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-craft-instructor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-craft-instructor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-craft-instructor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-dairy-development-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-dairy-development-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-dairy-development-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-dairy-development-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-dairy-development-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-dairy-development-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45013,7 +45403,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-driver/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-driver/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-driver/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-driver/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-driver/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-excise-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-excise-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-excise-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-excise-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-excise-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45025,7 +45475,79 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-fireman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-fireman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-fireman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-fireman/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-fireman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-fireman/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forest-guard/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45037,7 +45559,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-forester/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forester/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forester/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forester/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-forester/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-group-d/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-group-d/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-group-d/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-group-d/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-group-d/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45049,7 +45631,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-horticulture-supervisor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-horticulture-supervisor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-horticulture-supervisor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-horticulture-supervisor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-horticulture-supervisor/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-hostel-superintendent.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-hostel-superintendent/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-hostel-superintendent/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-hostel-superintendent/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-hostel-superintendent/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-hostel-superintendent/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45061,7 +45703,73 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-jail-warder/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-jail-warder/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-jail-warder/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-jail-warder/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-jail-warder/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-jail-warder/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-junior-draftsman.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-junior-draftsman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-junior-draftsman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-junior-draftsman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-junior-draftsman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-junior-draftsman/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45073,7 +45781,55 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-lab-attendant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-lab-attendant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-lab-attendant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-librarian.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-librarian/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-librarian/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-librarian/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-librarian/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-librarian/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45085,7 +45841,49 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-restorer-lab-assistant/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-restorer-lab-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-restorer-lab-assistant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-restorer-lab-assistant/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-restorer-lab-assistant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-senior-technical-assistant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-senior-technical-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-senior-technical-assistant/notification.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45097,7 +45895,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-steno-typist/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-steno-typist/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-steno-typist/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-steno-typist/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-surveyor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-surveyor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-surveyor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-surveyor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-surveyor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-surveyor/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45109,7 +45961,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/psssb-technical-assistant/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-technical-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-technical-assistant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-technical-assistant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/psssb-veterinary-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-veterinary-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-veterinary-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-veterinary-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-veterinary-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/psssb-veterinary-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45121,7 +46027,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/pstet/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/pstet/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/pstet/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/pstet/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-ett-teacher.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-ett-teacher/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-ett-teacher/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-ett-teacher/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-ett-teacher/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-ett-teacher/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45133,7 +46093,67 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-haryana-high-court-clerk/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-haryana-high-court-clerk/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-haryana-high-court-clerk/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-haryana-high-court-clerk/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-haryana-high-court-clerk/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-master-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-master-cadre/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-master-cadre/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-master-cadre/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-master-cadre/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-master-cadre/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45145,7 +46165,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-naib-tehsildar/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-naib-tehsildar/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-naib-tehsildar/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-naib-tehsildar/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-naib-tehsildar/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-panchayat-secretary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-panchayat-secretary/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-panchayat-secretary/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-panchayat-secretary/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-panchayat-secretary/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45157,7 +46231,61 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-patwari/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-patwari/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-patwari/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-patwari/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-pcs-judicial.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs-judicial/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs-judicial/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs-judicial/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs-judicial/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs-judicial/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45169,7 +46297,73 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-pcs/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-pcs/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-constable/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45181,13 +46375,121 @@
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-head-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-police-intelligence-constable.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-intelligence-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "exams/punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "exams/punjab-police-sub-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45205,7 +46507,73 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/chandigarh-police-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/ppsc-building-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-building-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-building-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-building-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-building-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-building-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45217,7 +46585,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/ppsc-cooperative-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-cooperative-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-cooperative-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-cooperative-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-cooperative-inspector/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/ppsc-draftsman.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-draftsman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-draftsman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-draftsman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-draftsman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-draftsman/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45229,7 +46657,49 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/ppsc-functional-manager/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-functional-manager/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/ppsc-junior-auditor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-junior-auditor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-junior-auditor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-junior-auditor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-junior-auditor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/ppsc-junior-auditor/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45241,7 +46711,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-anganwadi-supervisor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-anganwadi-supervisor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-anganwadi-supervisor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-anganwadi-supervisor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-clerk-accounts.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-accounts/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-accounts/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-accounts/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-accounts/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-accounts/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45253,7 +46777,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-data-entry-operator/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-data-entry-operator/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-data-entry-operator/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-data-entry-operator/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-clerk-it.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-it/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-it/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-it/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-it/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-it/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45265,7 +46843,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-legal/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-legal/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-legal/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-legal/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk-legal/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-clerk.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-clerk/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45277,7 +46915,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-craft-instructor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-craft-instructor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-craft-instructor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-craft-instructor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-dairy-development-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-dairy-development-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-dairy-development-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-dairy-development-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-dairy-development-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-dairy-development-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45289,7 +46981,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-driver/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-driver/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-driver/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-driver/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-driver/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-excise-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-excise-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-excise-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-excise-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-excise-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-excise-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45301,7 +47053,79 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-fireman/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-forest-guard.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forest-guard/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45313,7 +47137,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-forester/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forester/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forester/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forester/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-forester/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-group-d.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-group-d/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-group-d/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-group-d/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-group-d/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-group-d/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45325,7 +47209,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-horticulture-supervisor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-horticulture-supervisor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-horticulture-supervisor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-horticulture-supervisor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-horticulture-supervisor/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-hostel-superintendent.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-hostel-superintendent/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-hostel-superintendent/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-hostel-superintendent/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-hostel-superintendent/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-hostel-superintendent/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45337,7 +47281,73 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-jail-warder/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-junior-draftsman.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-junior-draftsman/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-junior-draftsman/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-junior-draftsman/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-junior-draftsman/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-junior-draftsman/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45349,7 +47359,55 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-lab-attendant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-lab-attendant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-lab-attendant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-librarian.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-librarian/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-librarian/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-librarian/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-librarian/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-librarian/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45361,7 +47419,49 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-restorer-lab-assistant/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-restorer-lab-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-restorer-lab-assistant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-restorer-lab-assistant/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-restorer-lab-assistant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-senior-technical-assistant.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-senior-technical-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-senior-technical-assistant/notification.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45373,7 +47473,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-steno-typist/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-steno-typist/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-steno-typist/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-steno-typist/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-surveyor.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-surveyor/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-surveyor/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-surveyor/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-surveyor/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-surveyor/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45385,7 +47539,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/psssb-technical-assistant/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-technical-assistant/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-technical-assistant/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-technical-assistant/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/psssb-veterinary-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-veterinary-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-veterinary-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-veterinary-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-veterinary-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/psssb-veterinary-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45397,7 +47605,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/pstet/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/pstet/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/pstet/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/pstet/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-ett-teacher.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-ett-teacher/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-ett-teacher/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-ett-teacher/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-ett-teacher/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-ett-teacher/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45409,7 +47671,67 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-haryana-high-court-clerk/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-haryana-high-court-clerk/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-haryana-high-court-clerk/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-haryana-high-court-clerk/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-haryana-high-court-clerk/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-master-cadre.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-master-cadre/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-master-cadre/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-master-cadre/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-master-cadre/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-master-cadre/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45421,7 +47743,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-naib-tehsildar/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-naib-tehsildar/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-naib-tehsildar/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-naib-tehsildar/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-naib-tehsildar/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-panchayat-secretary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-panchayat-secretary/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-panchayat-secretary/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-panchayat-secretary/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-panchayat-secretary/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45433,7 +47809,61 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-patwari/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-patwari/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-patwari/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-patwari/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-pcs-judicial.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs-judicial/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs-judicial/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs-judicial/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs-judicial/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs-judicial/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45445,7 +47875,73 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-pcs/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-pcs/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-police-constable.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-constable/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -45457,13 +47953,121 @@
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-head-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-police-intelligence-constable.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-intelligence-constable/syllabus.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
    "to": "pa/exams/punjab-police-sub-inspector.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/eligibility.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/exam-pattern.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/notification.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/physical-standards.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/salary.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "exams.html",
+   "to": "pa/exams/punjab-police-sub-inspector/syllabus.html",
    "rel": "contextual",
    "weight": 1
   },

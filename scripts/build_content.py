@@ -6424,6 +6424,108 @@ def hub_fallback(coll, index):
     return ""
 
 
+# --- /exams: the exam directory ---------------------------------------------
+# A student opens /exams looking for ONE post. A date-sorted wall of guide
+# cards with sixty filter chips made that a hunt, so the directory is grouped
+# the way the posts are actually recruited - by board, in the order of
+# config/exam-hubs.json - and sorted A-Z inside each board, with a search box
+# that matches English and Punjabi names. Every card links straight to the
+# parts students search for (syllabus, pattern, eligibility, notification),
+# and only to parts that really exist in that language.
+_EXAM_PART_LINKS = ("syllabus", "exam-pattern", "eligibility", "notification",
+                    "salary", "physical-standards")
+_BOARD_PREFIX = re.compile(r"^(PSSSB|PPSC|Punjab Police|Punjab)\s+", re.I)
+
+
+def exam_directory(live, folder_html, hub):
+    cfg = exam_hubs.load_config()
+    boards = cfg.get("boards") or {}
+    try:
+        idx = json.loads((ROOT / "data" / "exam-hubs.json")
+                         .read_text(encoding="utf-8")).get("exams", [])
+    except (OSError, ValueError):
+        idx = []
+    by_file = {}
+    for ex in idx:
+        for lang, f in (("en", ex.get("file")), ("pa", ex.get("filePa"))):
+            if f:
+                by_file[f] = (ex, lang)
+    groups = {b: [] for b in boards}
+    for r in live:
+        hit = by_file.get(r["file"])
+        if not hit or hit[0].get("board") not in groups:
+            continue
+        groups[hit[0]["board"]].append((r, hit[0], hit[1]))
+
+    def sort_key(row):
+        name = str(row[1].get("name") or "")
+        return (_BOARD_PREFIX.sub("", name).lower(), name.lower())
+
+    def card(r, ex, lang):
+        other = "en" if lang == "pa" else "pa"
+        name = ex.get("namePa" if lang == "pa" else "name") or ex.get("name")
+        alt = ex.get("name" if lang == "pa" else "namePa") or ""
+        links = []
+        for k in _EXAM_PART_LINKS:
+            href = ((ex.get("parts") or {}).get(k) or {}).get(lang)
+            if href:
+                en_l, pa_l, _ico = exam_hubs.LABEL[k]
+                links.append(f'<a class="badge" href="{esc(href)}">'
+                             f'{esc(pa_l if lang == "pa" else en_l)}</a>')
+        hay = " ".join([str(ex.get("name") or ""), str(ex.get("namePa") or ""),
+                        str(ex.get("slug") or "").replace("-", " "),
+                        str(r.get("title") or ""), str(r.get("description") or ""),
+                        " ".join(str(b.get("name") or "") + " " + str(b.get("namePa") or "")
+                                 for k2, b in boards.items() if k2 == ex.get("board"))])
+        open_txt = "ਪੂਰੀ ਜਾਣਕਾਰੀ ਖੋਲ੍ਹੋ" if lang == "pa" else "Open full guide"
+        return (f'<article class="card card-pad exam-card" data-lang="{lang}"'
+                + (' lang="pa"' if lang == "pa" else "")
+                + f' data-exam-search="{esc(hay.lower())}">'
+                f'<h3 class="exam-card-title"><a href="{esc(r["file"])}">{esc(name)}</a></h3>'
+                + (f'<p class="muted exam-card-alt" lang="{other}">{esc(alt)}</p>'
+                   if alt and alt != name else "")
+                + (f'<p class="exam-card-links">{"".join(links)}</p>' if links else "")
+                + f'<p class="ilink"><a href="{esc(r["file"])}">{open_txt} →</a></p>'
+                f'</article>')
+
+    nav, sections = [], []
+    for b, rows in groups.items():
+        if not rows:
+            continue
+        rows.sort(key=sort_key)
+        n = len({row[1].get("slug") for row in rows})
+        bn = boards[b]
+        nav.append(f'<a class="filter-chip exam-board-chip" href="#board-{esc(b)}">'
+                   f'<span data-lang="en">{esc(bn.get("name", b))}</span>'
+                   f'<span data-lang="pa" lang="pa">{esc(bn.get("namePa") or bn.get("name", b))}</span>'
+                   f' <span class="exam-board-n">{n}</span></a>')
+        sections.append(
+            f'<section class="exam-board" id="board-{esc(b)}" data-exam-board>'
+            f'<h3 class="exam-board-title"><span data-lang="en">{esc(bn.get("name", b))}</span>'
+            f'<span data-lang="pa" lang="pa">{esc(bn.get("namePa") or bn.get("name", b))}</span>'
+            f' <span class="exam-board-n">{n}</span></h3>'
+            f'<div class="grid grid-3">{"".join(card(*row) for row in rows)}</div>'
+            f'</section>')
+    total = len({ex.get("slug") for rows in groups.values() for _, ex, _ in rows})
+    return f"""<div class="section-head reveal"><div>
+            <span class="eyebrow">{total} exams · A-Z by board</span>
+            <h2>Find your exam</h2>
+            <p>Search by name in English or Punjabi, or jump to a board. Every card opens that exam's syllabus, exam pattern, eligibility and notification directly.</p>
+          </div></div>
+          <div class="exam-finder">
+            <label class="exam-search">
+              <span class="sr-only">Search exams</span>
+              <input type="search" data-exam-search-input autocomplete="off"
+                placeholder="Search: Clerk, Patwari, Constable, ਪਟਵਾਰੀ ..."
+                aria-label="Search exams by name, in English or Punjabi">
+            </label>
+            <nav class="exam-board-nav" aria-label="Jump to a board">{"".join(nav)}</nav>
+          </div>
+          {folder_html}
+          <div class="exam-dir" data-filter-list data-exam-dir>{"".join(sections)}</div>
+          <p class="exam-empty muted" data-exam-empty hidden>No exam matches that search. Try one word, such as <b>clerk</b> or <b>police</b>.</p>"""
+
+
 def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
     hub = HUBS[coll]
     url = f"{DOMAIN}/{hub['file'][:-5]}"
@@ -6492,6 +6594,11 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
               <span class="lf-count">{n_lang["en"]} article{"s" if n_lang["en"] != 1 else ""}</span>
             </button>
           </div>""" if folders else "")
+        head_html = (exam_directory(live, folder_html, hub) if coll == "strategy"
+                     else None)
+    if live and coll == "strategy":
+        pass                                   # exam_directory() above
+    elif live:
         head_html = f"""<div class="section-head reveal"><div>
             <span class="eyebrow">{"Published" if coll != STUDY_DIR else "Every format, one list"}</span>
             <h2>{heading}</h2>

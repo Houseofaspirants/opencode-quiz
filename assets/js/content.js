@@ -371,3 +371,53 @@
   s.defer = true;
   document.head.appendChild(s);
 })();
+
+/* ============================================================================
+ * /exams - the exam directory
+ * ----------------------------------------------------------------------------
+ * One search box over every exam card (English and Punjabi names, the post's
+ * board and its guide summary all ride in data-exam-search), board sections
+ * that hide when nothing in them matches, and board chips that follow the
+ * language folder. Pure DOM, no fetch.
+ * ========================================================================== */
+(() => {
+  "use strict";
+  const dir = document.querySelector("[data-exam-dir]");
+  const input = /** @type {HTMLInputElement|null} */ (document.querySelector("[data-exam-search-input]"));
+  if (!dir || !input) return;
+  const finder = input.closest(".exam-finder");
+  const host = finder ? finder.parentElement : null;
+  const empty = document.querySelector("[data-exam-empty]");
+  const boards = Array.from(dir.querySelectorAll("[data-exam-board]"));
+  const fold = (s) => String(s || "").toLowerCase().normalize("NFC").replace(/\s+/g, " ").trim();
+
+  const syncLang = () => {
+    if (host) host.setAttribute("data-exam-lang", dir.getAttribute("data-lang-view") || "en");
+  };
+
+  const apply = () => {
+    const toks = fold(input.value).split(" ").filter(Boolean);
+    const view = dir.getAttribute("data-lang-view");
+    let shown = 0;
+    for (const board of boards) {
+      let inBoard = 0;
+      board.querySelectorAll("[data-exam-search]").forEach((card) => {
+        const hay = card.getAttribute("data-exam-search") || "";
+        const ok = toks.every((t) => hay.includes(t));
+        card.classList.toggle("is-filtered-out", !ok);
+        if (ok && (!view || card.getAttribute("data-lang") === view)) inBoard += 1;
+      });
+      board.classList.toggle("is-filtered-out", inBoard === 0);
+      shown += inBoard;
+    }
+    if (empty) empty.hidden = shown > 0;
+  };
+
+  input.addEventListener("input", apply);
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { input.value = ""; apply(); }
+  });
+  document.addEventListener("hoa:folder", () => { syncLang(); apply(); });
+  syncLang();
+  apply();
+})();

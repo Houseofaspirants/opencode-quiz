@@ -4269,3 +4269,54 @@ rect.di-c1, rect.di-c2, rect.di-c3, rect.di-c4, rect.di-c5, rect.di-c6 { stroke:
 @media (max-width: 520px) {
   .xh-grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* ---------------------------------------------------------------- /exams
+   The exam directory (build_content.py exam_directory): a search box, a row of
+   board chips, then one section per board with A-Z exam cards. Reuses .card,
+   .badge, .filter-chip and the language folders; only adds layout. */
+.exam-finder {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;
+  margin: 4px 0 18px; padding: 14px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--r-md);
+}
+.exam-search { flex: 1 1 280px; display: block; }
+.exam-search input {
+  width: 100%; font: inherit; font-size: 1rem;
+  padding: 11px 14px; border-radius: 999px;
+  color: var(--text); background: var(--surface-2, var(--surface));
+  border: 1px solid var(--border);
+}
+.exam-search input:focus-visible { outline: 2px solid var(--brand); outline-offset: 1px; border-color: var(--brand); }
+.exam-board-nav { display: flex; flex-wrap: wrap; gap: 7px; }
+.exam-board-chip { text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.exam-board-n {
+  display: inline-block; min-width: 1.6em; padding: 0 6px; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 800; text-align: center;
+  background: color-mix(in srgb, var(--brand) 14%, transparent); color: var(--brand);
+}
+.exam-board { margin: 26px 0 8px; scroll-margin-top: calc(var(--header-h, 64px) + 12px); }
+.exam-board-title {
+  display: flex; align-items: center; gap: 8px;
+  margin: 0 0 12px; padding-bottom: 8px; font-size: 1.15rem;
+  border-bottom: 2px solid color-mix(in srgb, var(--brand) 30%, transparent);
+}
+.exam-card { display: flex; flex-direction: column; gap: 8px; }
+.exam-card-title { margin: 0; font-size: 1.05rem; }
+.exam-card-title a { color: inherit; text-decoration: none; }
+.exam-card-title a:hover, .exam-card-title a:focus-visible { color: var(--brand); }
+.exam-card-alt { margin: 0; font-size: 0.85rem; }
+.exam-card-links { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 0 0; }
+.exam-card-links .badge { padding: 3px 10px; font-size: 0.72rem; }
+.exam-card .ilink { margin-top: auto; }
+.exam-card .ilink a { text-decoration: none; }
+.exam-empty { margin: 18px 0; text-align: center; }
+/* One language at a time, like every other hub (cards and board labels). The
+   board chips sit outside the list, so they follow the folder through
+   [data-exam-lang] on the finder's parent section. */
+.exam-dir[data-lang-view="en"] [data-lang="pa"],
+.exam-dir[data-lang-view="pa"] [data-lang="en"],
+[data-exam-lang="en"] .exam-board-nav [data-lang="pa"],
+[data-exam-lang="pa"] .exam-board-nav [data-lang="en"] { display: none !important; }
+.exam-dir:not([data-lang-view]) .exam-board-title [data-lang="pa"],
+:not([data-exam-lang]) > .exam-finder .exam-board-nav [data-lang="pa"] { display: none; }
