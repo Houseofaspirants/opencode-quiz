@@ -2,6 +2,7 @@
 title: PSSSB Jail Warder & Matron 2026 - Eligibility, PMT & PET
 description: PSSSB Jail Warder and Matron 2026 (Advt 08/2026) from the official notification - 532 posts, 12th pass, age, height, PET events, Rs 19,900 pay and exam pattern.
 published: 2026-10-03
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -127,6 +128,28 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Jail W
 3. **Counselling** and document verification, then the final result.
 
 **Ties:** older candidate first; then higher percentage in the required qualification; then matric marks.
+
+<!-- hoa-official -->
+
+## Syllabus (official contents, last round Advt 08/2021)
+
+The board's suggested contents for the Warder and Matron paper in the 2021 round were:
+
+| Section | What it covers | Marks (approx.) |
+| --- | --- | --- |
+| Languages (English and Punjabi) | grammar, synonyms and antonyms, one-word substitution, articles, prepositions, narration, voice, gender and number, idioms, reading comprehension, spellings | 30 |
+| Information technology and computers | computer and network basics, mobile phones and gadgets, 3G/4G/5G, Wi-Fi, Bluetooth, hotspots, malware, GPS, email and messengers, MS Word and spreadsheets | 25 |
+| General knowledge (India and Punjab) | current affairs, history, geography, climate, demography, economy and planning, culture, polity, science, sports, cinema and literature, events and leaders of India and Punjab | 20 |
+| Quantitative ability | number series, profit and loss, interest, divisibility, ratio and proportion, percentages, data interpretation | 15 |
+| Reasoning | logical thinking, alphanumeric series, odd one out, analogy, common sense, alphabetical arrangement | 15 |
+| Basic law and Constitution | Preamble, fundamental rights and duties, directive principles, Parliament and law-making, President, Vice-President, PM, state government, Governor, courts, elections and the Election Commission | 15 |
+| **Total** | | **120 marks, 100 minutes** |
+
+Since October 2022 every PSSSB paper also carries a **qualifying matric-level Punjabi Part A**, so expect that in front of this content in the 2026 and later papers. The big lesson from this table: **computers alone were 25 marks** - more than GK.
+
+**[Download the Warder and Matron syllabus, Advt 08/2021 (PDF)](assets/pdfs/psssb-jail-warder-matron-syllabus-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

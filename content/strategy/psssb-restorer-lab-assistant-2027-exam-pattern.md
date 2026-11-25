@@ -2,6 +2,7 @@
 title: PSSSB Restorer & Lab Assistant 2027 - Exam Pattern
 description: PSSSB Restorer and Lab Assistant (Agriculture) 2027 guide - the 2023 paper, how small technical PSSSB posts are tested, what to study and new posts.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -57,6 +58,39 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 - **Part B marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Standard rules:** age 18-37 (up to 42 for SC/BC of Punjab, 45 for government employees); fee Rs 1,000 general, Rs 250 SC/BC/EWS, Rs 200 ex-servicemen, Rs 500 persons with disabilities. Confirm all of this in the next advertisement for this post.
+
+<!-- hoa-official -->
+
+## Library Restorer: eligibility (official, Advt 08/2023)
+
+The most recent Restorer round was **Library Restorer** in **PSSSB Advt. No. 08 of 2023** - **56 posts** in the Department of Higher Education (colleges), 17 of them reserved for women.
+
+- **Education:** **matriculation with a Diploma in Library Science** from a recognised board or institution.
+- **Punjabi:** Punjabi passed at matric level.
+- **Age (as on 1 January 2023):** 18 to 37 for General; up to 42 for SC/BC of Punjab; up to 45 for government employees; up to 47 for persons with disabilities of Punjab; up to 40 for widows and divorcees.
+- **Fee:** Rs 1,000 General · Rs 250 SC/BC/EWS · Rs 200 ex-servicemen · Rs 500 persons with disabilities.
+- **Applications:** 8 to 29 September 2023.
+
+Category split of the 56 posts: General 21, EWS 5, SC (M&B) 7, SC (R&O) 5, BC 5, ESM General 6, ESM SC (R&O) 1, ESM BC 1, sports 2, persons with disabilities 2, freedom fighter 1.
+
+## Salary and pay
+
+| Post (Advt 08/2023) | Pay, 7th CPC |
+| --- | --- |
+| **Library Restorer** | **Rs 21,700** |
+
+Allowances are paid as the Punjab Government sanctions them.
+
+## Syllabus: what the paper covers
+
+PSSSB's papers for these posts follow its standard two-part plan: a **qualifying matric-level Punjabi paper (50% to pass)** and a merit paper that mixes the post's own subject with GK, Punjab history, reasoning, English, Punjabi and ICT.
+
+- **Library Restorer subject:** the documents we have carry no separate subject syllabus for this post - the 2023 paper in our archive shows the kind of library science questions asked.
+- **General part:** GK and current affairs, Punjab history and culture, logical reasoning and basic numeracy, English and Punjabi grammar, computer basics.
+
+**[Download PSSSB Advt. No. 08 of 2023 with the Library Restorer posts (PDF, 11 pages, Punjabi)](assets/pdfs/psssb-advt-08-2023-notification.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

@@ -2,6 +2,7 @@
 title: Punjab Police Intelligence Constable 2027 - Exam Pattern
 description: Punjab Police Intelligence Assistant and Investigation Constable 2027 guide - Advt 03/2021, age 21-28, the 2021 CBT and 2022 papers, marking scheme and outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -98,6 +99,16 @@ The 2021 CBT had **150 questions, 150 marks, 3 hours** and **no negative marking
 | Digital Literacy and Computers | 30 | Computer basics, folders, MS Office, internet and search, email, social media, mobile phones, operating systems, hardware |
 
 The 2022 paper used a different format (100 questions with -1 for a wrong answer), so read the pattern in the next notice carefully.
+
+<!-- hoa-official -->
+
+## Official notification PDF (Advt 03/2021)
+
+The 2021 advertisement covers **818 Intelligence Assistant posts** (24 for sportspersons) in the Intelligence cadre and **373 Constable posts** (11 for sportspersons) in the Investigation cadre (PBI), with the full category-wise breakdown, eligibility, the CBT syllabus, normalisation, PMT and PST rules and the fee.
+
+**[Download the official Punjab Police Intelligence and Investigation cadre notification, 2021 (PDF)](assets/pdfs/punjab-police-intelligence-constable-notification-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

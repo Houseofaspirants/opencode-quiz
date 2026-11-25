@@ -2,6 +2,7 @@
 title: Punjab PCS Judicial 2027 - Exam Pattern & Strategy
 description: Punjab PCS (Judicial) 2027 guide - Civil Judge (Junior Division) posts, the 159-post 2022 exam, the 125-question prelims of January 2023, mains and viva.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -20,7 +21,7 @@ faq:
   - q: Who conducts the Punjab PCS (Judicial) exam?
     a: The Punjab Public Service Commission (PPSC), in consultation with the Punjab and Haryana High Court, for Civil Judge (Junior Division)-cum-Judicial Magistrate posts.
   - q: What is the eligibility?
-    a: A law degree (LLB) recognised for enrolment as an advocate, Punjabi at matriculation level, and the age limits in the notification. Reports of the 2022 notice differ on the lower age, so read the official notice.
+    a: A law degree (LLB) recognised for enrolment as an advocate, Punjabi at matriculation level, and the age limits in the notification. The 2022 notice set the age at 21 to 37, with relaxations.
   - q: What is the exam pattern?
     a: Three stages - an objective prelims, a written mains and a viva voce. The 2022 prelims (held 22 January 2023) had 125 questions in 2 hours and worked as a screening test.
   - q: When was the last exam?
@@ -46,7 +47,7 @@ Punjab keeps adding courts and pendency is high, so judicial posts are filled **
 
 - **Law degree (LLB)** that qualifies you to enrol as an advocate.
 - **Punjabi** at matriculation level.
-- **Age** as in the notification - reports of the 2022 notice differ on the lower limit, so rely on the official text.
+- **Age:** 21 to 37 in the 2022 notice, with relaxations (details below).
 
 ## Exam pattern
 
@@ -55,6 +56,41 @@ Punjab keeps adding courts and pendency is high, so judicial posts are filled **
 | **Prelims** | Objective - 125 questions in 2 hours (2022 exam); screening only |
 | **Mains** | Descriptive law and language papers |
 | **Viva voce** | Interview |
+
+<!-- hoa-official -->
+
+## Eligibility, age and fee (official notice, 2022)
+
+- **Degree:** a **Bachelor of Laws** that entitles you to enrol as an advocate under the Advocates Act, 1961, held by the last date of application (10 October 2022 in that round).
+- **Punjabi:** matric standard or equivalent. A candidate from outside Punjab who lacks it must pass a matric-level Punjabi test within **two years** of appointment.
+- **Age:** **21 to 37** on the last date of application. Upper limit **42** for SC/ST of all states and BC of Punjab; **45** for Punjab and other government employees; **42** for widows, divorcees and certain other women; **47** for persons with disabilities of Punjab; ex-servicemen deduct their service.
+- **Fee (2022):** General, sportspersons and wards of freedom fighters **Rs 1,500** (Rs 500 application + Rs 1,000 exam); SC/ST/BC **Rs 750**; ex-servicemen, EWS, persons with disabilities and lineal descendants of ex-servicemen of Punjab **Rs 500**. Not refundable.
+
+## Exam pattern and syllabus (official)
+
+**Stage 1 - Preliminary (screening only):** **125 objective questions, 4 marks each (500 marks), 2 hours**; **1/5 mark cut** for a wrong answer. Questions come from the mains syllabus plus current events, Indian legal and constitutional history and governance, reasoning and aptitude, at graduate level. You must score at least **150/500 (100 for reserved categories)** to reach the mains.
+
+**Stage 2 - Main exam (five descriptive papers, 3 hours each, 950 marks)**
+
+| Paper | Syllabus | Marks |
+| --- | --- | --- |
+| I - Civil law | Code of Civil Procedure, Punjab Courts Act, Contract Act, Sale of Goods Act, Partnership Act, Specific Relief Act, Transfer of Property Act 1882, East Punjab Urban Rent Restriction Act 1949, Evidence Act 1872 | 200 |
+| II - Civil law | Hindu Law, Mohammedan Law and Customary Law, Registration and Limitation | 200 |
+| III - Criminal law | Indian Penal Code, Criminal Procedure Code, Evidence Act (now BNS, BNSS and BSA) | 200 |
+| IV - English | essay of 1000-1100 words, precis, words and phrases, comprehension, corrections | 200 |
+| V - Punjabi (Gurmukhi) | essay 100 + language and grammar 50, matric standard | 150 |
+
+- Law papers are answered **in English**; only **bare acts** are supplied.
+- **33% in each paper** is needed to get any credit for it, and 33% in Punjabi to qualify.
+- **Stage 3 - Viva-voce (100 marks, in English):** called only with **50% in the written aggregate** (45% for SC, BC and persons with disabilities of Punjab). Final list = **written + viva (1,050 marks)**, with 50% overall (45% reserved) needed to qualify.
+
+## Salary and pay
+
+The 2022 notice printed the scale as **Rs 27,700-44,770, "or as revised from time to time"**. Judicial officers' pay has since been revised under the Second National Judicial Pay Commission, under which a Civil Judge (Junior Division) starts at **Rs 77,840** plus allowances. Check the current figure in the next notice.
+
+**[Download the official PCS (Judicial) 2022 notification (PDF)](assets/pdfs/punjab-pcs-judicial-notification-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

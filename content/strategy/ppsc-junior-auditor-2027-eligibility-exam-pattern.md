@@ -2,6 +2,7 @@
 title: PPSC Junior Auditor 2027 - Eligibility & Exam Pattern
 description: PPSC Junior Auditor 2027 guide - 75 Finance department posts, commerce degree, Rs 35,400 pay and the May 2024 paper of 120 questions with negative marking.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -68,6 +69,35 @@ Finance department audit posts open up as staff retire or get promoted. The 2022
 - **Cost accounting** - overheads, labour incentive plans such as Halsey and Rowan, standard costing.
 - **Company law** basics - for example Section 8 companies.
 - **History, GK and reasoning** in the last part.
+
+<!-- hoa-official -->
+
+## Eligibility in detail (official notice, Advt 202269)
+
+The 2022 notice was for **75 posts of Junior Auditor (Group B)** in the Department of Finance, Punjab.
+
+- **Degree:** **B.Com (1st division) or M.Com (2nd division)** from a recognised university or institution.
+- **Punjabi:** Punjabi of matric or equivalent standard.
+- **Cut-off date:** qualification by **12 August 2022**.
+- **Age relaxations:** Punjab and other government employees up to 45; SC and BC of Punjab up to 42; widows and divorcees up to 42; persons with disabilities of Punjab up to 47.
+- **Selection:** written exam only - **no interview**; at least 40% marks needed (35% for SC and BC of Punjab).
+- **Paper split:** Part A subject - 100 questions, 400 marks; Part B general - 20 questions, 80 marks.
+
+## Syllabus (official, Annexure VIII)
+
+**Part A - subject (400 marks)**
+
+- **Financial accounting:** concepts and conventions, double entry, journal, subsidiary books and cash book, ledger, trial balance, final accounts of sole traders and partnership firms, capital vs revenue, depreciation (AS-6), bank reconciliation; partnership - admission, retirement, death, dissolution, amalgamation, sale to a company, piecemeal distribution; consignment; joint venture.
+- **E-accounting:** computerised accounting, **Tally ERP 9** - masters, vouchers, trial balance and final accounts.
+- **Corporate accounting (Companies Act, 2013):** issue, forfeiture and re-issue of shares; redemption of preference shares; debentures; bonus and right shares; underwriting; company final accounts and managerial remuneration; profit prior to incorporation; consolidated statements; amalgamation (Ind AS 14), internal reconstruction, liquidation.
+- **Management accounting:** nature and tools; financial statement analysis - comparative, common-size, trend; **ratio analysis**; fund flow; **cash flow (Ind AS 3)**.
+- **Cost accounting:** cost sheet; material control and pricing of issues; labour cost, wage plans, Taylor, Halsey and Rowan plans; overheads - allocation, apportionment, absorption; **CVP and break-even**; marginal costing and decisions (make or buy, shut down, product mix); budgeting - flexible, zero-base, performance; standard costing and **variance analysis**.
+
+**Part B - general (80 marks):** economic, polity, environment, geography, science and current issues; Indian freedom struggle; **history of Punjab from the 14th century**; logical and analytical reasoning; basic numeracy and percentages; data from charts, tables and spreadsheets.
+
+**[Download the official PPSC Junior Auditor notification, 2022 (PDF, 36 pages)](assets/pdfs/ppsc-junior-auditor-notification-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

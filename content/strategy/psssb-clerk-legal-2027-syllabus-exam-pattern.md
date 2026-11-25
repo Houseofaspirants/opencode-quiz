@@ -2,6 +2,7 @@
 title: PSSSB Clerk Legal 2027 - Syllabus & Exam Pattern
 description: PSSSB Clerk (Legal) 2027 guide from the official Advt 02/2022 plan - law syllabus, 120-question pattern, negative marking and the new criminal laws.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -67,6 +68,39 @@ Advt 12/2026 brought Clerk (Legal) back after more than three years, with **13 p
 ### The 2024 change you must not ignore
 
 From **1 July 2024** the **Bharatiya Nyaya Sanhita (BNS)**, **Bharatiya Nagarik Suraksha Sanhita (BNSS)** and **Bharatiya Sakshya Adhiniyam (BSA)** replaced the IPC, CrPC and Evidence Act. Learn the topics once, but **map every important section to its new number**. Expect questions like "Which section of the BNS defines murder?".
+
+<!-- hoa-official -->
+
+## Eligibility (Advt 12/2026)
+
+All 13 Clerk (Legal) posts ask for the same three things:
+
+1. A **law degree (LLB)** from a recognised university or institution.
+2. A pass in the board's **competitive written test**.
+3. A qualifying **typing test in Punjabi and English at 30 words per minute**.
+
+- **Punjabi:** matric with Punjabi as a subject (Rule 17, Punjab Civil Services Rules, 1994).
+- **Cut-off date:** the degree must be complete by the **last date to apply (19 October 2026)**. A final-year LLB student whose result comes later is not eligible.
+
+## Age, fee and salary
+
+- **Age (as on 1 January 2026):** 18 to 37 years; up to 42 for SC and BC of Punjab; 45 for state and central government employees (NOC needed at counselling); 47 for persons with disabilities of Punjab; 40 for widows and divorcees.
+- **Fee:** General and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. The fee is not refunded.
+- **Salary:** **Rs 19,900** at entry (7th CPC pay matrix, Level-2 or Level-5 depending on the department), plus allowances as per Punjab rules.
+
+## Selection in short
+
+1. **Written exam, Part A** - matric-level Punjabi, qualifying (50% needed).
+2. **Written exam, Part B** - the main paper; 1 mark a question, 1/4 mark cut for a wrong answer. **Merit is made only from Part B.**
+3. **Typing test** - qualifying only.
+4. **Counselling** - document check; names are then recommended to the department.
+5. **Ties** go to the older candidate, then to higher marks in the qualifying degree, then to higher matric marks.
+
+**[Download the official PSSSB Advt 12/2026 notification (PDF)](assets/pdfs/psssb-clerk-advt-12-2026-notification.pdf)**
+
+**[Download the Clerk (Legal) syllabus, Advt 02/2022 (PDF)](assets/pdfs/psssb-clerk-legal-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

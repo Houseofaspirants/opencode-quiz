@@ -2,6 +2,7 @@
 title: Punjab Master Cadre 2027 - Eligibility & Exam Pattern
 description: Punjab Master Cadre 2027 guide from the 4161-post recruitment - graduation and B.Ed eligibility by subject, the 150-question 2022 papers, keys and outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -70,6 +71,42 @@ Punjab fills teacher posts in big rounds rather than every year. After the 2022 
 
 - Several questions were **dropped** in the revised keys, which shows how closely the board reviews objections.
 - Expect the paper to be at **graduation level in your subject**, with teaching methods from B.Ed.
+
+<!-- hoa-official -->
+
+## Official syllabus, subject by subject (Education Recruitment Board, 2022)
+
+The board published a separate syllabus for each subject of the 4161-post round. The papers are at **graduation level** in the subject.
+
+| Subject | What the official syllabus covers |
+| --- | --- |
+| Mathematics | Sets, matrices and determinants, complex numbers, permutations, binomial theorem, sequences, conic sections, 3-D geometry, limits, continuity, derivatives and integrals, differential equations, linear programming, probability, statistics, number theory, numerical analysis, statics and dynamics |
+| Science | Physical, inorganic and organic chemistry; physics; botany and zoology (cell, genetics, DNA, biodiversity, ecology); and the mathematics topics above |
+| Social Science | History (Rig Vedic age to modern India), geography of India with special reference to Punjab, civics (Parliament, President, courts, fundamental rights, UNO), economics |
+| English | Indian English writers; English literature from the Elizabethan to the contemporary period; literary terms; grammar and linguistics (graduation level) |
+| Punjabi / Hindi | Language, grammar and literature of the subject (see the PDF) |
+| DPE (Physical Education) | Physical fitness, methods of training, warm-up and cool-down, and the rest of the DPE syllabus |
+
+**Download the official syllabus PDFs:**
+
+- [Mathematics](assets/pdfs/punjab-master-cadre-syllabus-math-2022.pdf)
+- [Science](assets/pdfs/punjab-master-cadre-syllabus-science-2022.pdf)
+- [Social Science](assets/pdfs/punjab-master-cadre-syllabus-socialscience-2022.pdf)
+- [English](assets/pdfs/punjab-master-cadre-syllabus-english-2022.pdf)
+- [Punjabi](assets/pdfs/punjab-master-cadre-syllabus-punjabi-2022.pdf)
+- [Hindi](assets/pdfs/punjab-master-cadre-syllabus-hindi-2022.pdf)
+- [DPE (Physical Education)](assets/pdfs/punjab-master-cadre-syllabus-dpe-2022.pdf)
+
+## Notification facts (4161-post round)
+
+- **Who recruits:** Directorate of School Education (Secondary), Punjab, through the Education Recruitment Board (educationrecruitmentboard.com).
+- **Eligibility, as printed:** graduation with **45% marks** (General) or **40%** (SC, ST, OBC, BC and physically handicapped), with the subject studied for **three years** of graduation, plus a **B.Ed** with that subject as a teaching subject.
+- **Pay:** the notice gives **Rs 35,400** a month during probation, under the Punjab Finance Department's 2020 orders for new recruits.
+- **Fee:** Rs 1,000 for General candidates, with a lower fee for SC candidates (see the notice for every category).
+
+**[Download the official Master Cadre 4161-post notification (PDF, scanned)](assets/pdfs/punjab-master-cadre-4161-notification.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

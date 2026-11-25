@@ -2,6 +2,7 @@
 title: PSSSB Craft Instructor 2026 - Eligibility & Exam Pattern
 description: PSSSB Craft Instructor Advt 03/2026 from the official notification - 681 ITI posts, qualification routes, age, fee, Rs 35,400 pay and the MCQ written exam.
 published: 2026-11-12
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -94,6 +95,19 @@ The PSSSB instructor exam held on **22 March 2025** is on this site. It followed
 - **Science and environment** - for example, permitted metal levels in drinking water.
 - **Quantitative aptitude and data interpretation** - pie charts and tables.
 - **Punjabi grammar** - parts of speech, sentence types and word meanings.
+
+<!-- hoa-official -->
+
+## Salary and pay (Advt 03/2026)
+
+- **Pay:** **Rs 35,400 a month, Level-6** of the 7th CPC pay matrix, as printed in the notification - about Rs 4.25 lakh a year at entry.
+- **During probation**, new Punjab recruits draw the minimum of the scale; DA, HRA and other allowances follow the state's rules once probation ends.
+- **Where you work:** government ITIs under the Industrial Training Wing of the Department of Technical Education, anywhere in Punjab.
+- **Growth:** instructors with the National Craft Instructor Certificate can move up to Group Instructor and training-officer posts through departmental promotion.
+
+**Syllabus:** the board has not yet published a separate paper plan for Advt 03/2026; it said the syllabus will be put on sssb.punjab.gov.in. Until then, prepare your trade theory plus the standard PSSSB GK, reasoning, Punjabi and computer sections.
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

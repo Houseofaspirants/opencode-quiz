@@ -2,6 +2,7 @@
 title: PPSC Building Inspector 2027 - Exam Pattern & Strategy
 description: PPSC Building Inspector 2027 guide - the 157-post 2022 drive, 120-question paper of 480 marks with 1-mark negative, topics asked and the chance of a new round.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -69,6 +70,64 @@ With a 1-mark penalty on a 4-mark question, a wild guess costs you more than it 
 - **Surveying and drawing tools** - total station, AutoCAD commands.
 - **Landscaping** terms.
 - The last part was **reasoning, maths and current affairs**.
+
+<!-- hoa-official -->
+
+## Eligibility (official, 2022 notification)
+
+PPSC advertised **157 posts of Building Inspector (Group B)** in the Department of Local Government - **131** in Municipal Councils/Nagar Panchayats (Advt. 202245) and **26** in Municipal Corporations (Advt. 202246), filled through one joint exam.
+
+- **Education:** **Diploma in Architecture / Architecture Assistantship** from the State Board of Technical Education, Punjab or any recognised institution, **OR** a higher qualification in the relevant field.
+- **Punjabi:** Punjabi of matric or equivalent standard.
+- **Cut-off date:** qualifications had to be held by **8 July 2022** (last date of registration).
+- **Age:** 18 to 37 years as on 1 January 2022. Relaxation: Punjab Government employees up to 45; SC and BC of Punjab up to 42; widows, divorcees and certain other women up to 42; persons with disabilities of Punjab up to 47; ex-servicemen by deducting service.
+
+## Fee
+
+| Category | Application charges | Exam fee | Total |
+| --- | --- | --- | --- |
+| General, sportspersons, wards of freedom fighters | Rs 500 | Rs 1,000 | **Rs 1,500** |
+| SC/ST of all states, BC of Punjab | Rs 500 | Rs 250 | **Rs 750** |
+| Ex-servicemen of Punjab | Rs 500 | nil | **Rs 500** |
+| EWS, persons with disabilities, LDESM (Punjab) | Rs 500 | nil | **Rs 500** |
+
+## Salary and pay
+
+- **Initial pay: Rs 35,400** (7th CPC pay matrix, Group B).
+- During the **3-year probation** a fixed emolument equal to the minimum pay is paid, without allowances.
+
+## Selection process (official)
+
+- **Written exam only** - no interview. 120 MCQs, **480 marks** (4 per question), **1 mark cut** per wrong answer, **2 hours**, English only, OMR sheet.
+- Minimum **40%** to be appointed (**35%** for SC and BC of Punjab); category-wise merit on net marks.
+- Documents are scrutinised only after the exam - everyone sits the exam "provisionally eligible".
+
+| Part | Questions | Marks |
+| --- | --- | --- |
+| Part A - subject (architecture) | 100 | 400 |
+| Part B - GK, current affairs, mental ability, reasoning, quantitative aptitude | 20 | 80 |
+
+## Syllabus (official, Annexure VIII)
+
+**Part A - subject (400 marks)**
+
+1. **History of architecture:** prehistoric, river valley, Greek and Roman, Buddhist, Indo-Aryan, Jain temples, early Christian, St. Peter's, St. Sophia, Gothic (Notre Dame, Reims), Florence, Michelangelo and Palladio, Islamic architecture in India, industrial revolution, modern and post-independence architecture.
+2. **Architectural design:** elements and principles, scale, colour, anthropometrics, building types, **NBC guidelines**, form-function-circulation, AutoCAD, 3ds Max, **building bye-laws**.
+3. **Building construction and materials:** brick and stone work, DPC, foundations, doors and windows, flooring, roofs, staircases and ramps, expansion joints, formwork, steel sections, finishes, earthquake-resistant configuration, surveying and levelling, working drawings, estimation, specifications, valuation, professional practice, materials (mud, timber, bamboo, brick, concrete, steel, glass).
+4. **Building services:** water supply, storage and distribution, solar water heating, rainwater harvesting, drainage, septic tanks and soak pits, acoustics, lighting and electrical distribution, HVAC, lifts, fire-fighting and **fire safety as per NBC and BIS**.
+5. **Structural mechanics:** force systems, centroid and moment of inertia, stress and strain, SF and BM, bending stresses, RCC and steel structures.
+6. **Climatology:** climate and comfort, sun shading, wind control, materials and climate, site selection, environment.
+7. **Town planning:** historic towns, industrial town, linear and garden city, planning process, urban land use, legislation and urban controls.
+8. **Landscape design and site planning.**
+9. **English and communication skills.**
+10. **Applied physics, mathematics and chemistry** (diploma level).
+11. **Basics of management:** principles, leadership, legal aspects, CRM, TQM, IPR.
+
+**Part B - general (80 marks):** economic, polity, environment, science and technology and current issues; Indian freedom struggle; **history of Punjab from the 14th century**; analytical and logical reasoning; basic numeracy and percentages; data analysis from charts, tables and spreadsheets.
+
+**[Download the official PPSC Building Inspector notification, 2022 (PDF, 39 pages)](assets/pdfs/ppsc-building-inspector-notification-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

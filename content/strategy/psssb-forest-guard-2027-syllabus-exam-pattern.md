@@ -2,6 +2,7 @@
 title: PSSSB Forest Guard 2027 - Syllabus & Exam Pattern
 description: PSSSB Forest Guard 2027 guide from the official Advt 07/2022 plan - 120 questions in 2 hours, Class 12 syllabus with Punjab history, past papers and outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -87,6 +88,42 @@ After the written exam, shortlisted candidates had to clear a qualifying **walk 
 | Women | 8 km | 1 hour 30 minutes |
 
 It carries no marks, but failing it ends your selection. Start long brisk walks months before the exam.
+
+<!-- hoa-official -->
+
+## Eligibility (official, Advt 07/2022)
+
+The 2022 notice (Advt. No. 07 of 2022, applications 11 May to 1 July 2022) set these conditions for **Forest Guard**:
+
+- **Education:** Senior Secondary Part-II (**10+2**) or equivalent from a recognised board or institution.
+- **Punjabi:** matriculation with Punjabi as a compulsory or elective subject (Rule 17, Punjab Civil Services Rules, 1994).
+- **Physical standards:** height - men 167 cm, women 150 cm; chest - men 79 cm unexpanded / 84 cm expanded, women 74 / 79 cm.
+- **Walk test:** **13 km for men and 8 km for women within 1 hour 30 minutes.**
+- **Preference:** Home Guard jawans and Civil Defence personnel get preference in direct recruitment to Forest Guard.
+- **Age:** 18 to 37 years as on 1 January 2022; SC/BC of Punjab up to 42, government employees up to 45, persons with disabilities up to 47, widows and divorcees up to 40.
+- **Fee:** Rs 1,000 General · Rs 250 SC/BC/EWS · Rs 200 ex-servicemen · Rs 500 persons with disabilities.
+
+**Selection:** an objective (MCQ) written exam, then the **Physical Measurement Test and Physical Efficiency Test**, which are qualifying only - the merit list comes from the written exam.
+
+## Official syllabus with marks (Forest Guard, Advt 07/2022)
+
+All 120 questions come from one general paper of up to Class XII standard - 120 MCQs, 120 marks, **2 hours, 1/4 negative marking**.
+
+| Section | Marks (approx.) | Topics |
+| --- | --- | --- |
+| General Knowledge and current affairs | 30 | Political, environment and economic issues, science and technology, **history of Punjab from the 14th century**, Indian freedom struggle, sports, cinema and literature |
+| Logical reasoning and mental ability | 30 | Coding-decoding, analogy, classification, series, direction sense, relations, odd one out, non-verbal series; percentage, number system, LCM-HCF, ratio, average, ages, profit and loss, partnership, interest, work and time, time and distance, mensuration, data interpretation |
+| English | 15 | Grammar, subject-verb, synonyms and antonyms, one-word substitution, fill in the blanks, sentence correction, idioms, spelling, articles, prepositions, narration, voice |
+| Punjabi | 15 | ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ, ਸ਼ਬਦ-ਜੋੜ, ਅਗੇਤਰ-ਪਿਛੇਤਰ, ਸਮਾਨਾਰਥਕ-ਵਿਰੋਧੀ ਸ਼ਬਦ, ਨਾਂਵ-ਪੜਨਾਂਵ-ਕਿਰਿਆ, ਲਿੰਗ-ਵਚਨ, ਅਖਾਣ-ਮੁਹਾਵਰੇ, ਅਨੁਵਾਦ |
+| ICT | 10 | Computer basics, network and internet, Word, spreadsheet and PowerPoint |
+| Punjab History and Culture | 20 | Physical features and ancient history, social-religious-economic life, language, literature and arts, Afghan and Mughal period, Bhakti and Sufi movements, Sikh Gurus and saints, Adi Granth, Sikh rulers, freedom movements of Punjab |
+
+## Download the official notification and syllabus
+
+- **[Forest Guard, Forester and Deputy Ranger notification, Advt. No. 07 of 2022 (PDF, 14 pages, Punjabi)](assets/pdfs/psssb-forest-guard-forester-notification-2022.pdf)**
+- **[Forest Guard plan of written exam and syllabus (PDF, 3 pages)](assets/pdfs/psssb-forest-guard-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

@@ -72,8 +72,8 @@ SUB = {
                     "ਪੜ੍ਹਾਈ ਪਲਾਨ ਅਤੇ ਪਹਿਲਾ ਕਦਮ"),
     "previous-papers": ("Official question papers & answer keys",
                         "official ਪ੍ਰਸ਼ਨ ਪੱਤਰ ਅਤੇ ਉੱਤਰ ਕੁੰਜੀਆਂ"),
-    "mock-tests": ("Topic-wise quizzes with explanations",
-                   "ਟਾਪਿਕ ਅਨੁਸਾਰ ਕੁਇਜ਼, ਹਰ ਜਵਾਬ ਦੀ ਵਿਆਖਿਆ ਨਾਲ"),
+    "mock-tests": ("Timed full-length mock test on the exam pattern",
+                   "ਪੇਪਰ ਪੈਟਰਨ ਉੱਤੇ ਸਮਾਂ-ਬੱਧ ਪੂਰਾ ਮੌਕ ਟੈਸਟ"),
 }
 
 # Heading -> part. Every specific rule that matches applies; the notification
@@ -306,8 +306,8 @@ def cards_html(exam, lang, exclude=""):
              if k != exclude and lang in exam["parts"].get(k, {}).get("file", {})]
     if exam.get("pyqFile"):
         links.append(("previous-papers", exam["pyqFile"]))
-    if exam.get("practiceFile"):
-        links.append(("mock-tests", exam["practiceFile"]))
+    if exam.get("mockFile"):
+        links.append(("mock-tests", exam["mockFile"]))
     for key, href in links:
         text, icon = _label(key, lang)
         sub = SUB[key][1 if lang == "pa" else 0]
@@ -322,6 +322,16 @@ def cards_html(exam, lang, exclude=""):
 
 def _toc(sections):
     return [(a, _plain(h)) for a, h, _ in sections]
+
+
+def _mock_ids():
+    """guide key -> mock exam id, from data/mock-patterns.json (`guide`)."""
+    try:
+        cfg = json.loads((ROOT / "data" / "mock-patterns.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return {str(e.get("guide")): str(e.get("id")) for e in cfg.get("exams") or []
+            if e.get("guide") and e.get("id") and e.get("papers")}
 
 
 # --------------------------------------------------------------- build ------
@@ -352,6 +362,10 @@ def prepare(records, err, warn, info, landing_files=frozenset()):
         pid = str(g.get("pyq") or "")
         if pid and (ROOT / "pyq" / pid / "index.html").exists():
             ex["pyqFile"] = f"pyq/{pid}/index.html"
+        # "Free Mock Tests" opens the site's own timed mock test, on this
+        # exam's real pattern when data/mock-patterns.json has one.
+        mid = _mock_ids().get(key, "")
+        ex["mockFile"] = f"mock.html?exam={mid}" if mid else "mock.html"
         pr = str(g.get("practice") or "")
         if pr and f"exam-{pr}.html" in landing_files:
             ex["practiceFile"] = f"exam-{pr}.html"

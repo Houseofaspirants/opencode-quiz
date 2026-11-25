@@ -2,6 +2,7 @@
 title: PSSSB ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ 2027 - ਯੋਗਤਾ ਅਤੇ ਚੋਣ
 description: PSSSB ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ 2027 ਦੀ ਗਾਈਡ ਇਸ਼ਤਿਹਾਰ 12/2025 ਅਤੇ 01/2024 ਤੋਂ - ਕਿਹੜੇ ਵਿਭਾਗ ਨੂੰ ਕਿਹੜੀ ਡਿਗਰੀ, ਉਮਰ, ਫੀਸ, 35,400 ਰੁਪਏ ਤਨਖ਼ਾਹ, ਪੇਪਰ ਅਤੇ 2027 ਦੀ ਉਮੀਦ।
 published: 2026-11-13
+updated: 2026-11-25
 language: pa
 author: Gurpreet Singh
 category: preparation-strategy
@@ -67,6 +68,46 @@ references:
 | ਕਾਊਂਸਲਿੰਗ | ਦਸਤਾਵੇਜ਼ | ਆਖਰੀ ਪੜਾਅ |
 
 - ਹਰ ਗ਼ਲਤ ਜਵਾਬ 'ਤੇ **1/4 ਅੰਕ ਕੱਟ** (PSSSB ਦਾ ਆਮ ਨਿਯਮ)।
+
+<!-- hoa-official -->
+
+## ਹਵਾਬਾਜ਼ੀ ਤਕਨੀਕੀ ਸਹਾਇਕ - ਯੋਗਤਾ ਅਤੇ ਸਿਲੇਬਸ (ਇਸ਼ਤਿਹਾਰ 12/2023, 13/2023)
+
+"ਤਕਨੀਕੀ ਸਹਾਇਕ" ਨਾਮ ਕਈ ਵਿਭਾਗ ਬਿਲਕੁਲ ਵੱਖਰੇ ਕੰਮਾਂ ਲਈ ਵਰਤਦੇ ਹਨ। 2023 ਦੇ ਅਖ਼ੀਰ ਵਿੱਚ PSSSB ਨੇ **ਹਵਾਬਾਜ਼ੀ** ਦੇ ਕੰਮ ਲਈ ਇਹ ਅਸਾਮੀ ਕੱਢੀ - ਇਸ਼ਤਿਹਾਰ 12/2023 (23 ਦਸੰਬਰ 2023; 1 ਤਕਨੀਕੀ ਸਹਾਇਕ, 1 ਜ਼ਿਲ੍ਹਾ ਖ਼ਜ਼ਾਨਚੀ ਅਤੇ 8 ਖੋਜ ਸਹਾਇਕ ਗ੍ਰੇਡ-A), ਫਿਰ ਇਸ਼ਤਿਹਾਰ 13/2023 ਅਧੀਨ ਲਿਖਤੀ ਪੇਪਰ ਦੀ ਯੋਜਨਾ।
+
+**ਯੋਗਤਾ (ਇਸ਼ਤਿਹਾਰ 12/2023)**
+
+- **10+2 ਅਤੇ DGCA ਤੋਂ ਮਨਜ਼ੂਰ ਤਿੰਨ ਸਾਲ ਦਾ Aircraft Maintenance Engineering ਕੋਰਸ** - **ਜਾਂ** **Aeronautical, Mechanical, Computer Science ਜਾਂ Electronics and Telecommunication ਵਿੱਚ B.E.**।
+- ਦੋਵਾਂ ਹਾਲਤਾਂ ਵਿੱਚ **ਘੱਟੋ-ਘੱਟ 5 ਸਾਲ ਹਵਾਬਾਜ਼ੀ ਦਾ ਤਜਰਬਾ**।
+- **DOEACC (NIELIT) 'O' level** ਦੇ ਬਰਾਬਰ ਕੰਪਿਊਟਰ ਕੋਰਸ, ਅਤੇ ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ।
+- **ਤਨਖ਼ਾਹ:** 35,400 ਰੁਪਏ (Level-6, 7ਵਾਂ ਤਨਖ਼ਾਹ ਕਮਿਸ਼ਨ)।
+
+**ਲਿਖਤੀ ਪੇਪਰ (official ਯੋਜਨਾ, ਇਸ਼ਤਿਹਾਰ 13/2023)**
+
+| ਭਾਗ | ਕੀ | ਪ੍ਰਸ਼ਨ / ਅੰਕ |
+| --- | --- | --- |
+| A | ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫ਼ੇਅਰਜ਼, ਪੰਜਾਬ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ, ਰੀਜ਼ਨਿੰਗ, ਪੰਜਾਬੀ, ਅੰਗਰੇਜ਼ੀ, ICT | 40 |
+| B | ਹਵਾਬਾਜ਼ੀ ਵਿਸ਼ਾ | 80 |
+| **ਕੁੱਲ** | 2 ਘੰਟੇ, ਹਰ ਗ਼ਲਤ ਉੱਤਰ ਉੱਤੇ 1/4 ਅੰਕ ਕੱਟ | **120** |
+
+**Part B - ਹਵਾਬਾਜ਼ੀ ਵਿਸ਼ਾ (80 ਅੰਕ)**
+
+1. **ਬਿਜਲੀ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ** - DC circuits, KCL ਅਤੇ KVL, AC values, power factor, transformer, DC motor ਅਤੇ generator, AC synchronous ਅਤੇ induction motor।
+2. **Aerodynamics** - airflow ਅਤੇ boundary layer, aerofoil ਸ਼ਬਦਾਵਲੀ, lift ਅਤੇ drag, angle of attack, stall, stability।
+3. **ਇਲੈਕਟ੍ਰਾਨਿਕਸ ਅਤੇ ਡਿਜੀਟਲ ਤਕਨੀਕ** - diode, SCR, transistor, logic circuits, op-amp, synchro; ECAM, EFIS, GPS ਅਤੇ TCAS; electrostatic-sensitive ਪੁਰਜ਼ੇ।
+4. **ਸਮੱਗਰੀ ਅਤੇ ਹਾਰਡਵੇਅਰ** - ਜਹਾਜ਼ਾਂ ਦੇ alloy steel ਅਤੇ heat treatment, composite ਅਤੇ non-metallic, ਕੱਪੜੇ, bolt, locking devices ਅਤੇ rivet।
+5. **Gas-turbine ਅਤੇ piston engine** - compressor, stall ਅਤੇ surge, turbine, start ਅਤੇ ignition systems; 2-stroke, 4-stroke, Otto ਅਤੇ Diesel; supercharging।
+6. **Propeller** - blade angle, pitch ਦੀਆਂ ਕਿਸਮਾਂ, ਸਮੱਗਰੀ, ਬਣਤਰ।
+7. **Airworthiness ਅਤੇ ਦਸਤਾਵੇਜ਼** - permit to fly, airworthiness ਅਤੇ registration ਸਰਟੀਫ਼ਿਕੇਟ, noise certificate, weight schedule, radio licence।
+8. **Human factors** - ਮਨੁੱਖੀ ਕਾਰਗੁਜ਼ਾਰੀ, ਸਮਾਜਿਕ ਮਨੋਵਿਗਿਆਨ, ਥਕਾਵਟ ਅਤੇ ਤਣਾਅ, ਮਨੁੱਖੀ ਗ਼ਲਤੀ, ਕੰਮ ਵਾਲੀ ਥਾਂ ਦੇ ਖ਼ਤਰੇ।
+
+ਉੱਪਰਲੀ ਸਾਰਣੀ ਵਿੱਚ ਇਸ਼ਤਿਹਾਰ 12/2025 (statistics) ਅਤੇ 01/2024 (IT) ਨਾਲ ਤੁਲਨਾ ਕਰੋ: **ਤਿਆਰੀ ਹਮੇਸ਼ਾ ਭਰਤੀ ਕਰਨ ਵਾਲੇ ਵਿਭਾਗ ਦੇ ਸਿਲੇਬਸ ਤੋਂ ਕਰੋ।**
+
+**[PSSSB ਇਸ਼ਤਿਹਾਰ 12/2023 ਦਾ official ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ ਡਾਊਨਲੋਡ ਕਰੋ (PDF)](assets/pdfs/psssb-advt-12-2023-notification.pdf)**
+
+**[ਤਕਨੀਕੀ ਸਹਾਇਕ ਦਾ ਸਿਲੇਬਸ, ਇਸ਼ਤਿਹਾਰ 13/2023 ਡਾਊਨਲੋਡ ਕਰੋ (PDF)](assets/pdfs/psssb-technical-assistant-aviation-syllabus-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

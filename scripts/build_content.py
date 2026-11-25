@@ -4670,8 +4670,11 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     # ---- Phase 4 front-matter blocks: every one renders only when the
     # document actually provides it - never a placeholder, never a stub.
-    for block in (references_section(record), faq_block(record),
-                  related_section(record)):
+    # Exam hub and exam part pages carry no source list: the official
+    # notification and syllabus PDFs are linked inside the guide itself.
+    is_exam = bool(record.get("examHub") or record.get("examPart"))
+    for block in (("" if is_exam else references_section(record)),
+                  faq_block(record), related_section(record)):
         if block:
             sections.append(block)
 
@@ -4708,6 +4711,10 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
 
     # ---- assemble ---------------------------------------------------------
     toc_slot = toc_html or ""
+    answer_html = (f'<div class="answer-box">\n'
+                   f'          <span class="ab-label">Quick answer</span>\n'
+                   f'          <p>{esc(record["description"])}</p>\n'
+                   f'        </div>')
     # seoTitle / seoDescription replace the generated pair for this document
     # only, and only within the same length contract the generated pair meets.
     html = head(str(record.get("seoTitle") or record["title"]),
@@ -4731,11 +4738,8 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
         <h1>{esc(record["title"])}</h1>
         {f'<p class="doc-subtitle">{esc(str(record["subtitle"]))}</p>' if record.get("subtitle") else ""}
         {badge_row(record)}
-        <div class="answer-box">
-          <span class="ab-label">Quick answer</span>
-          <p>{esc(record["description"])}</p>
-        </div>
-        {byline}
+        {"" if is_exam else answer_html}
+        {"" if is_exam else byline}
         <div class="doc-actions">{pdf_html}{link_btns}{switch_html}</div>
         {share_row(url, record["title"])}
       </div>
@@ -4746,6 +4750,7 @@ def render_item(record, cfg, pool, index, landing, ctx=None):
         {toc_slot}
         <article class="doc-body prose">
 {reader_html}{record["bodyHtml"]}
+{f'<div class="byline-end" style="margin-top:32px">{byline}</div>' if is_exam else ""}
         </article>
       </div>
     </section>

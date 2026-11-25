@@ -2,6 +2,7 @@
 title: Punjab & Haryana High Court Clerk 2027 - Full Process
 description: Punjab and Haryana High Court Clerk 2027 guide from the 2023 notice - graduate eligibility, age 18-30, screening test, descriptive mains, typing and viva.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -65,6 +66,43 @@ The High Court recruits Clerks every few years, when vacancies in its own establ
 - **Main exam papers:** English composition **150**, General Knowledge **50**, Precis writing **50**, Hindi or Punjabi **50**.
 - To pass the mains you need **40% in aggregate and 33% in each subject**.
 - **Final merit = main written exam + viva-voce.**
+
+<!-- hoa-official -->
+
+## Syllabus (from the 2023 notice)
+
+The High Court does not publish a topic-by-topic syllabus; the notice itself sets out what each stage tests.
+
+**Screening test (computer based, 200 MCQs, 200 marks, 2 hours)**
+
+- General knowledge and general awareness
+- Numerical ability
+- General English
+- Reasoning and general intelligence
+- Clerical aptitude
+
+**Main written exam (descriptive, 3 hours, 300 marks)**
+
+| Paper | Marks | What to expect |
+| --- | --- | --- |
+| English composition | 150 | essay, letters and applications, comprehension, grammar and usage |
+| General knowledge | 50 | short written answers on current affairs, polity, history and geography |
+| Precis writing | 50 | reduce a passage to about one-third, with a title |
+| Hindi (Devanagari) **or** Punjabi (Gurmukhi) | 50 | translation, letter and composition in the language you choose |
+
+You need **40% in aggregate and 33% in every paper**. Then comes an **English typing test at 30 wpm** (more than 10% mistakes fails it) and a **50-mark viva-voce**. The final list is made from **mains + viva**.
+
+## Salary and pay
+
+The 2023 notice says pay and allowances follow the **latest Government of Punjab rules as adopted by the High Court** for its employees; it does not print a figure. Clerks under Punjab's 7th CPC pay matrix start at **Rs 19,900**, and the High Court's own allowances apply on top. Check the exact scale in the next notice.
+
+## Related: Punjab district courts Clerk 2026 (as reported)
+
+A separate recruitment for **Clerks in Punjab's district courts** was run in 2026 by the High Court's Subordinate Services Selection Committee. As reported by coaching sites, it had a **2-hour, 100-mark computer-based test** - GK 50, English objective 20, and English subjective 30 (essay 10, letter 5, precis 5, translation 10) - with a 1/4 negative mark, **33% per subject and 40% in aggregate**, followed by a **computer proficiency test** (spreadsheet, 10 marks, 4 to pass) and **30 wpm typing**. Confirm these details in that committee's own notice.
+
+**[Download the official High Court Clerk notice No. 01/CLK/HC/2023 (PDF)](assets/pdfs/punjab-haryana-high-court-clerk-notification-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

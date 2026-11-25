@@ -2,6 +2,7 @@
 title: PSSSB Technical Assistant 2027 - Eligibility & Selection
 description: PSSSB Technical Assistant 2027 guide from Advt 12/2025 and 01/2024 - which department wants which degree, age, fee, Rs 35,400 pay, exam and outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -68,6 +69,46 @@ Matric-level Punjabi is required for both.
 
 - **Marking:** 1 mark per question, **1/4 mark cut** for each wrong answer (standard PSSSB rule).
 - For Advt 12/2025 the board said the **syllabus would be uploaded later**; check its website before the exam.
+
+<!-- hoa-official -->
+
+## Aviation Technical Assistant - eligibility and syllabus (Advt 12/2023, 13/2023)
+
+"Technical Assistant" is a name several departments use for very different jobs. In late 2023 PSSSB advertised one for **aviation** work - Advt 12/2023 (published 23 December 2023, with 1 Technical Assistant, 1 District Treasurer and 8 Research Assistant Grade-A posts), followed by a written-exam plan under Advt 13/2023.
+
+**Eligibility (Advt 12/2023)**
+
+- **10+2 plus a three-year Aircraft Maintenance Engineering course** approved by the DGCA - **or** a **B.E. in Aeronautical, Mechanical, Computer Science or Electronics and Telecommunication** engineering.
+- In both cases, **at least 5 years of aviation experience**.
+- A computer course equivalent to **DOEACC (NIELIT) 'O' level**, and matric Punjabi.
+- **Pay:** Rs 35,400 (Level-6, 7th CPC).
+
+**Written exam (official plan, Advt 13/2023)**
+
+| Part | What | Questions / marks |
+| --- | --- | --- |
+| A | GK and current affairs, Punjab history and culture, reasoning, Punjabi, English, ICT | 40 |
+| B | Aviation subject | 80 |
+| **Total** | 2 hours, 1/4 mark cut per wrong answer | **120** |
+
+**Part B - the aviation subject (80 marks)**
+
+1. **Electrical fundamentals** - DC circuits, KCL and KVL, AC values, power factor, transformers, DC motors and generators, AC synchronous and induction motors.
+2. **Aerodynamics** - airflow and boundary layer, aerofoil terms, lift and drag, angle of attack, stalls, stability.
+3. **Electronics and digital techniques** - diodes, SCR, transistors, logic circuits, op-amps, synchros; ECAM, EFIS, GPS and TCAS; electrostatic-sensitive devices.
+4. **Materials and hardware** - aircraft alloy steels and heat treatment, composites and non-metallics, fabrics, bolts, locking devices and rivets.
+5. **Gas-turbine and piston engines** - compressors, stall and surge, turbines, start and ignition systems; 2-stroke, 4-stroke, Otto and Diesel cycles; supercharging.
+6. **Propellers** - blade angle, pitch types, materials, construction.
+7. **Airworthiness and documents** - permit to fly, certificates of airworthiness and registration, noise certificate, weight schedule, radio licence.
+8. **Human factors** - human performance, social psychology, fatigue and stress, human error, workplace hazards.
+
+Compare this with the Advt 12/2025 post (statistics) and the Advt 01/2024 post (IT) in the table above: **always prepare from the syllabus of the department that is hiring.**
+
+**[Download the official PSSSB Advt 12/2023 notification (PDF)](assets/pdfs/psssb-advt-12-2023-notification.pdf)**
+
+**[Download the Technical Assistant syllabus, Advt 13/2023 (PDF)](assets/pdfs/psssb-technical-assistant-aviation-syllabus-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

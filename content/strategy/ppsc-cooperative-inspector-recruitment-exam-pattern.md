@@ -2,7 +2,7 @@
 title: PPSC Cooperative Inspector Recruitment & Exam Pattern
 description: PPSC Inspector Cooperative Societies recruitment from the last official notice - 320 posts, 60% degree rule, age, fee, Rs 35,400 pay, syllabus, 480-mark exam.
 published: 2026-10-03
-updated: 2026-11-17
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -125,6 +125,16 @@ One **pen-and-paper exam on an OMR sheet**, 2 hours long:
 - Logical reasoning, analytical and mental ability
 - Basic numerical skills: numbers, magnitudes, percentages, numerical relations
 - Data analysis: charts, tables, spreadsheets and graphic presentation
+
+<!-- hoa-official -->
+
+## Official notification PDF
+
+The full PPSC "General Information" booklet for the **320-post Inspector, Cooperative Societies** recruitment covers reservation, the Rs 35,400 initial pay, essential qualifications, age, the exam scheme, the fee, category definitions and the syllabus (Annexure VII).
+
+**[Download the official PPSC Inspector, Cooperative Societies notification (PDF)](assets/pdfs/ppsc-cooperative-inspector-notification-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

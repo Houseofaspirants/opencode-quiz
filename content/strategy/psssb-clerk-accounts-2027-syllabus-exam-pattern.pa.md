@@ -2,6 +2,7 @@
 title: PSSSB ਕਲਰਕ ਲੇਖਾ 2027 - ਸਿਲੇਬਸ ਅਤੇ ਪੇਪਰ ਪੈਟਰਨ
 description: PSSSB ਕਲਰਕ (ਲੇਖਾ) 2027 ਦੀ ਗਾਈਡ official exam plan ਤੋਂ - commerce ਸਿਲੇਬਸ, 120 ਸਵਾਲਾਂ ਦਾ ਪੈਟਰਨ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ, ਟਾਈਪ ਟੈਸਟ ਅਤੇ ਅਸਲ ਪੇਪਰਾਂ ਨਾਲ ਤਿਆਰੀ।
 published: 2026-11-13
+updated: 2026-11-25
 language: pa
 author: Gurpreet Singh
 category: preparation-strategy
@@ -64,6 +65,58 @@ references:
 4. **Auditing** - company audit, tax audit, bank ਅਤੇ NGO ਦਾ audit।
 5. **Financial management** - ratios, cash flow, capital budgeting, cost of capital।
 6. **Financial markets and institutions**।
+
+<!-- hoa-official -->
+
+## ਯੋਗਤਾ (ਇਸ਼ਤਿਹਾਰ 12/2026)
+
+ਲੋੜੀਂਦੀ ਡਿਗਰੀ ਵਿਭਾਗ ਅਨੁਸਾਰ ਵੱਖਰੀ ਹੈ:
+
+| ਵਿਭਾਗ | ਅਸਾਮੀਆਂ | ਲੋੜੀਂਦੀ ਡਿਗਰੀ |
+| --- | --- | --- |
+| ਰੋਜ਼ਗਾਰ ਉਤਪਤੀ, ਹੁਨਰ ਵਿਕਾਸ ਅਤੇ ਸਿਖਲਾਈ | 25 | ਗ੍ਰੈਜੂਏਸ਼ਨ, ਜਿਸ ਵਿੱਚ **Statistics, ਗਣਿਤ ਜਾਂ Accounts ਵਿੱਚੋਂ ਘੱਟੋ-ਘੱਟ ਇੱਕ ਵਿਸ਼ਾ** ਹੋਵੇ |
+| ਆਬਕਾਰੀ ਤੇ ਕਰ (ਖੇਤਰੀ ਦਫ਼ਤਰ) | 9 | **Commerce ਦੀ ਡਿਗਰੀ** |
+
+- **ਪੰਜਾਬੀ:** ਦਸਵੀਂ ਪੰਜਾਬੀ ਵਿਸ਼ੇ ਨਾਲ ਪਾਸ (ਪੰਜਾਬ ਸਿਵਲ ਸੇਵਾਵਾਂ ਨਿਯਮ 1994 ਦਾ ਨਿਯਮ 17)।
+- **ਟਾਈਪਿੰਗ:** **ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ 30 ਸ਼ਬਦ ਪ੍ਰਤੀ ਮਿੰਟ** ਦਾ ਕੁਆਲੀਫ਼ਾਇੰਗ ਟੈਸਟ।
+- **ਕੱਟ-ਆਫ਼ ਮਿਤੀ:** ਯੋਗਤਾ **ਅਪਲਾਈ ਦੀ ਆਖ਼ਰੀ ਮਿਤੀ (19 ਅਕਤੂਬਰ 2026)** ਤੱਕ ਪੂਰੀ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ।
+
+## ਉਮਰ, ਫੀਸ ਅਤੇ ਤਨਖ਼ਾਹ
+
+- **ਉਮਰ (1 ਜਨਵਰੀ 2026 ਨੂੰ):** 18 ਤੋਂ 37 ਸਾਲ; ਪੰਜਾਬ ਦੇ SC ਅਤੇ BC ਲਈ 42; ਰਾਜ ਅਤੇ ਕੇਂਦਰ ਸਰਕਾਰ ਦੇ ਕਰਮਚਾਰੀਆਂ ਲਈ 45 (ਕਾਊਂਸਲਿੰਗ ਸਮੇਂ NOC ਜ਼ਰੂਰੀ); ਪੰਜਾਬ ਦੇ ਦਿਵਿਆਂਗ ਉਮੀਦਵਾਰਾਂ ਲਈ 47; ਵਿਧਵਾ ਅਤੇ ਤਲਾਕਸ਼ੁਦਾ ਔਰਤਾਂ ਲਈ 40।
+- **ਫੀਸ:** ਜਨਰਲ ਅਤੇ ਖਿਡਾਰੀ 1,000 ਰੁਪਏ; SC, BC ਅਤੇ EWS 250 ਰੁਪਏ; ਸਾਬਕਾ ਫੌਜੀ ਅਤੇ ਆਸ਼ਰਿਤ 200 ਰੁਪਏ; ਦਿਵਿਆਂਗ 500 ਰੁਪਏ। ਫੀਸ ਵਾਪਸ ਨਹੀਂ ਹੁੰਦੀ।
+- **ਤਨਖ਼ਾਹ:** ਸ਼ੁਰੂਆਤੀ **19,900 ਰੁਪਏ** (7ਵਾਂ ਕੇਂਦਰੀ ਤਨਖ਼ਾਹ ਸਕੇਲ; ਆਬਕਾਰੀ ਤੇ ਕਰ ਵਿੱਚ Level-5), ਨਾਲ ਪੰਜਾਬ ਨਿਯਮਾਂ ਅਨੁਸਾਰ ਭੱਤੇ।
+
+## ਪੇਪਰ ਪੈਟਰਨ ਅਤੇ ਸਿਲੇਬਸ 2026 (official, ਆਬਕਾਰੀ ਤੇ ਕਰ)
+
+ਬੋਰਡ ਨੇ ਇਸ਼ਤਿਹਾਰ 12/2026 ਦੇ **ਆਬਕਾਰੀ ਤੇ ਕਰ ਵਿਭਾਗ ਦੇ ਕਲਰਕ (ਲੇਖਾ)** ਪੇਪਰ ਦੀ ਯੋਜਨਾ ਜਾਰੀ ਕੀਤੀ ਹੈ। ਇਹ ਪੁਰਾਣੇ 90 + 30 ਪੈਟਰਨ ਦੀ ਥਾਂ ਲੈਂਦੀ ਹੈ।
+
+| ਭਾਗ | ਕੀ | ਪ੍ਰਸ਼ਨ / ਅੰਕ | ਭੂਮਿਕਾ |
+| --- | --- | --- | --- |
+| A | ਦਸਵੀਂ ਪੱਧਰ ਦੀ ਪੰਜਾਬੀ | 50 | **ਕੁਆਲੀਫ਼ਾਇੰਗ - 25 ਅੰਕ (50%) ਜ਼ਰੂਰੀ**, ਕੋਈ ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ ਨਹੀਂ |
+| B(i) | ਆਮ ਗਿਆਨ ਅਤੇ ਕਰੰਟ ਅਫ਼ੇਅਰਜ਼ (10), ਪੰਜਾਬ ਇਤਿਹਾਸ ਅਤੇ ਸੱਭਿਆਚਾਰ (5), ਰੀਜ਼ਨਿੰਗ ਅਤੇ ਮਾਨਸਿਕ ਯੋਗਤਾ (10), ਪੰਜਾਬੀ (5), ਅੰਗਰੇਜ਼ੀ (5), ICT (5) | 40 | ਮੈਰਿਟ ਵਿੱਚ ਗਿਣਿਆ |
+| B(ii) | ਕਲਰਕ (ਲੇਖਾ) ਵਿਸ਼ਾ | 60 | ਮੈਰਿਟ ਵਿੱਚ ਗਿਣਿਆ |
+
+- **ਸਮਾਂ:** 2 ਘੰਟੇ 30 ਮਿੰਟ, OMR ਸ਼ੀਟ ਉੱਤੇ MCQ।
+- **Part B ਵਿੱਚ ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ:** ਹਰ ਗ਼ਲਤ ਉੱਤਰ ਲਈ 0.25 ਅੰਕ ਕੱਟੇ ਜਾਣਗੇ; ਛੱਡੇ ਪ੍ਰਸ਼ਨ ਦਾ ਕੋਈ ਅੰਕ ਨਹੀਂ ਕੱਟਦਾ।
+- **ਮੈਰਿਟ:** ਸਿਰਫ਼ Part A ਪਾਸ ਕਰਨ ਵਾਲਿਆਂ ਦੀ, **Part B (100 ਅੰਕ)** ਦੇ ਅੰਕਾਂ ਉੱਤੇ।
+
+**Part B(ii) - ਵਿਸ਼ੇ ਦਾ ਸਿਲੇਬਸ (60 ਅੰਕ)**
+
+- **ਲੇਖਾਕਾਰੀ:** ਵਿੱਤੀ ਬਿਆਨਾਂ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ - comparative, common-size ਅਤੇ trend statements, **ratio analysis**, fund flow ਅਤੇ **cash flow (Ind AS 3)**; accounting standards, IFRS ਅਤੇ Ind AS; price-level ਅਤੇ human-resource accounting; marginal costing ਅਤੇ **CVP analysis**; strategic cost management, balanced scorecard, **activity-based**, target, life-cycle, kaizen ਅਤੇ back-flush costing; budgetary control, performance ਅਤੇ zero-base budgeting; uniform costing, responsibility accounting, transfer pricing, ਵਿਦੇਸ਼ੀ ਮੁਦਰਾ ਲੇਖਾ, ਅੰਤਰਰਾਸ਼ਟਰੀ ਟੈਕਸ।
+- **ਵਿੱਤੀ ਪ੍ਰਬੰਧਨ:** capital budgeting (payback, ARR, **NPV, IRR**, profitability index), cost of capital ਅਤੇ WACC, leverage, capital structure, dividend policy, working capital, international finance ਅਤੇ FDI।
+- **ਵਿੱਤੀ ਪ੍ਰਣਾਲੀ:** ਭਾਰਤੀ ਬੈਂਕਿੰਗ, ਵਿਕਾਸ ਬੈਂਕ (IFCI, SIDBI), NBFC, **RBI**, NABARD, **SEBI**; money ਅਤੇ capital market; merchant banking, underwriting, mutual funds, credit rating, venture capital, plastic money।
+- **ਆਡਿਟ:** ਆਡਿਟ ਦੇ ਸਿਧਾਂਤ ਅਤੇ ਕਿਸਮਾਂ, ਆਡੀਟਰ ਦੀ ਸੁਤੰਤਰਤਾ, Standards on Auditing, **Companies Act 2013 ਅਧੀਨ company audit**, ਆਡਿਟ ਰਿਪੋਰਟ, management, cost, bank ਅਤੇ EDP audit।
+- **ਵਪਾਰਕ ਕਾਨੂੰਨ:** **Contract Act 1872** (indemnity, guarantee, bailment, pledge ਸਮੇਤ), **Companies Act 2013**, **Negotiable Instruments Act 1881**, Competition Act 2002।
+- **ਟੈਕਸ ਕਾਨੂੰਨ:** Income Tax Act 1961 - residential status, **ਆਮਦਨ ਦੇ ਪੰਜ ਸਿਰਲੇਖ**, set-off ਅਤੇ carry forward, deductions, ਵਿਅਕਤੀ, HUF, ਫ਼ਰਮ ਅਤੇ ਕੰਪਨੀ ਦੀ ਆਮਦਨ ਦੀ ਗਣਨਾ; tax planning, avoidance ਅਤੇ evasion।
+
+ਰੋਜ਼ਗਾਰ ਉਤਪਤੀ ਵਿਭਾਗ ਦੀਆਂ ਅਸਾਮੀਆਂ ਵੀ ਇਸੇ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਹਨ; ਉਨ੍ਹਾਂ ਦੇ ਪੇਪਰ ਦੀ ਯੋਜਨਾ ਬੋਰਡ ਦੀ ਸਾਈਟ ਉੱਤੇ ਵੇਖੋ।
+
+**[PSSSB ਇਸ਼ਤਿਹਾਰ 12/2026 ਦਾ official ਨੋਟੀਫ਼ਿਕੇਸ਼ਨ ਡਾਊਨਲੋਡ ਕਰੋ (PDF)](assets/pdfs/psssb-clerk-advt-12-2026-notification.pdf)**
+
+**[ਕਲਰਕ (ਲੇਖਾ) ਦਾ official ਸਿਲੇਬਸ, ਇਸ਼ਤਿਹਾਰ 12/2026 ਡਾਊਨਲੋਡ ਕਰੋ (PDF)](assets/pdfs/psssb-clerk-accounts-syllabus-2026.pdf)**
+
+<!-- /hoa-official -->
 
 ## ਤਿਆਰੀ ਕਿਵੇਂ ਕਰੀਏ
 

@@ -2,6 +2,7 @@
 title: PSSSB Anganwadi Supervisor 2027 - Exam Pattern
 description: PSSSB Anganwadi Supervisor 2027 guide - the 100-question paper of 25 September 2022 with its final key, ICDS topics, PSSSB's pattern and 2027 outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -60,6 +61,42 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 - **Part B marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Standard rules:** age 18-37 (up to 42 for SC/BC of Punjab, 45 for government employees); fee Rs 1,000 general, Rs 250 SC/BC/EWS, Rs 200 ex-servicemen, Rs 500 persons with disabilities. Confirm all of this in the next advertisement for this post.
+
+<!-- hoa-official -->
+
+## Eligibility (official, Advt 07/2021)
+
+The last round was **PSSSB Advt. No. 07 of 2021** - **112 posts of Supervisor, for women only**, in the Department of Social Security, Women and Child Development. Its written exam is the one held on **25 September 2022**.
+
+- **Education - either:**
+  1. a **graduate** from a recognised university in **Home Science, Nutrition, Child Development, Psychology, Economics, Social Work or Sociology**, **OR**
+  2. a graduate in any subject **with 3 years' experience as a Bal Sewika, Gram Sewika or Anganwadi Worker**.
+- **Punjabi:** Punjabi up to matriculation standard.
+- **Priority:** women retrenched from a Punjab Government department, board or corporation after at least 2 years' work on a women and child welfare scheme get priority and up to 5 years' age relaxation.
+- **Age (as on 1 January 2021):** 18 to 37; SC and BC of Punjab up to 42; government employees up to 45; persons with disabilities up to 47; widows and divorcees up to 40.
+
+## Vacancies, fee and dates
+
+| Detail | Advt 07/2021 |
+| --- | --- |
+| Posts | **112** (women only) - General 44, EWS 11, SC (M&B) 14, SC (R&O) 13, BC 8, ex-servicemen 7, sports 5, persons with disabilities 5, freedom fighter 5 |
+| Applications | 12 June to 5 July 2021 (fee by 7 July 2021) |
+| Written exam | 25 September 2022 |
+| Fee | Rs 1,000 General / freedom fighter / sports · Rs 250 SC/BC/EWS · Rs 200 ex-servicemen · Rs 500 persons with disabilities |
+
+## Salary and pay
+
+The notice fixed the pay at **Rs 29,200** under the 7th CPC pay matrix (Punjab Government letter of 4 March 2021), plus admissible allowances.
+
+## Selection process (official)
+
+- One **objective (MCQ) written exam**; a common merit list is made from it.
+- You need at least **40% (40 marks)** in the written exam to be considered.
+- Shortlisted candidates are called for document checks and counselling; ties go to the older candidate.
+
+**[Download the official Supervisor (Anganwadi) notification, Advt. No. 07 of 2021 (PDF, 10 pages, Punjabi)](assets/pdfs/psssb-anganwadi-supervisor-notification-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

@@ -2,6 +2,7 @@
 title: PSSSB Surveyor 2027 - Eligibility, Syllabus & Exam Pattern
 description: PSSSB Surveyor 2027 guide from Advt 03/2023 and the exam plan - ITI draftsman or diploma eligibility, age, fee, Rs 25,500 pay and the 120-question paper.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -80,6 +81,27 @@ Both: **Punjabi at matriculation level**; the certificate must be dated before t
 5. **Levelling** - instruments, adjustments, level book, reduced levels, curvature and refraction
 6. **Tachometry** - constants, horizontal and vertical distances
 7. **Contouring** - contour interval, characteristics, methods, interpolation
+
+<!-- hoa-official -->
+
+## Full eligibility by department (Advt 03/2023, official notice)
+
+**Water Resources Department (20 posts: General 5, SC 4, BC 2, ex-servicemen 4, sports 1, disability 1, EWS 3; 12 reserved for women)**
+
+1. **Matriculation** from a recognised board.
+2. A **two-year ITI certificate of Draftsman**, or higher education in the same line such as a **diploma or degree in Civil or Mechanical Engineering**.
+
+**Director, Archives Department (1 post)**
+
+1. **Graduation** from a recognised university.
+2. A **certificate course in Persian or Urdu** from a recognised university or institution.
+3. A **120-hour computer course** with hands-on office-productivity or DTP work from a government-recognised or ISO 9001-certified institution, **or** a DOEACC (NIELIT) **'O' level** equivalent.
+
+**For both:** Punjabi at matriculation level (Punjab Civil Services Rules, 1994), and every certificate must be issued **before the last date to apply (29 July 2023)**. Age is counted **as on 1 January 2023**.
+
+**[Download the official PSSSB Surveyor notification, Advt 03/2023 (PDF)](assets/pdfs/psssb-surveyor-notification-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

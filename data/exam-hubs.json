@@ -50,6 +50,10 @@
       "file": "exams/ppsc-building-inspector.html",
       "filePa": "pa/exams/ppsc-building-inspector.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/ppsc-building-inspector/eligibility.html",
+          "pa": "pa/exams/ppsc-building-inspector/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/ppsc-building-inspector/exam-pattern.html",
           "pa": "pa/exams/ppsc-building-inspector/exam-pattern.html"
@@ -61,6 +65,14 @@
         "preparation": {
           "en": "exams/ppsc-building-inspector/preparation.html",
           "pa": "pa/exams/ppsc-building-inspector/preparation.html"
+        },
+        "salary": {
+          "en": "exams/ppsc-building-inspector/salary.html",
+          "pa": "pa/exams/ppsc-building-inspector/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/ppsc-building-inspector/syllabus.html",
+          "pa": "pa/exams/ppsc-building-inspector/syllabus.html"
         }
       },
       "pyq": "pyq/ppsc-building-inspector/index.html"
@@ -110,6 +122,10 @@
       "file": "exams/ppsc-draftsman.html",
       "filePa": "pa/exams/ppsc-draftsman.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/ppsc-draftsman/eligibility.html",
+          "pa": "pa/exams/ppsc-draftsman/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/ppsc-draftsman/exam-pattern.html",
           "pa": "pa/exams/ppsc-draftsman/exam-pattern.html"
@@ -121,6 +137,14 @@
         "preparation": {
           "en": "exams/ppsc-draftsman/preparation.html",
           "pa": "pa/exams/ppsc-draftsman/preparation.html"
+        },
+        "salary": {
+          "en": "exams/ppsc-draftsman/salary.html",
+          "pa": "pa/exams/ppsc-draftsman/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/ppsc-draftsman/syllabus.html",
+          "pa": "pa/exams/ppsc-draftsman/syllabus.html"
         }
       },
       "pyq": "pyq/ppsc-draftsman/index.html"
@@ -177,6 +201,10 @@
         "salary": {
           "en": "exams/ppsc-junior-auditor/salary.html",
           "pa": "pa/exams/ppsc-junior-auditor/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/ppsc-junior-auditor/syllabus.html",
+          "pa": "pa/exams/ppsc-junior-auditor/syllabus.html"
         }
       },
       "pyq": "pyq/ppsc-junior-auditor/index.html"
@@ -190,6 +218,10 @@
       "file": "exams/psssb-anganwadi-supervisor.html",
       "filePa": "pa/exams/psssb-anganwadi-supervisor.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-anganwadi-supervisor/eligibility.html",
+          "pa": "pa/exams/psssb-anganwadi-supervisor/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-anganwadi-supervisor/exam-pattern.html",
           "pa": "pa/exams/psssb-anganwadi-supervisor/exam-pattern.html"
@@ -201,6 +233,10 @@
         "preparation": {
           "en": "exams/psssb-anganwadi-supervisor/preparation.html",
           "pa": "pa/exams/psssb-anganwadi-supervisor/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-anganwadi-supervisor/salary.html",
+          "pa": "pa/exams/psssb-anganwadi-supervisor/salary.html"
         }
       },
       "pyq": "pyq/psssb-anganwadi-supervisor/index.html"
@@ -251,6 +287,10 @@
       "file": "exams/psssb-clerk-accounts.html",
       "filePa": "pa/exams/psssb-clerk-accounts.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-clerk-accounts/eligibility.html",
+          "pa": "pa/exams/psssb-clerk-accounts/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-clerk-accounts/exam-pattern.html",
           "pa": "pa/exams/psssb-clerk-accounts/exam-pattern.html"
@@ -262,6 +302,10 @@
         "preparation": {
           "en": "exams/psssb-clerk-accounts/preparation.html",
           "pa": "pa/exams/psssb-clerk-accounts/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-clerk-accounts/salary.html",
+          "pa": "pa/exams/psssb-clerk-accounts/salary.html"
         },
         "syllabus": {
           "en": "exams/psssb-clerk-accounts/syllabus.html",
@@ -280,6 +324,10 @@
       "file": "exams/psssb-clerk-data-entry-operator.html",
       "filePa": "pa/exams/psssb-clerk-data-entry-operator.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-clerk-data-entry-operator/eligibility.html",
+          "pa": "pa/exams/psssb-clerk-data-entry-operator/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-clerk-data-entry-operator/exam-pattern.html",
           "pa": "pa/exams/psssb-clerk-data-entry-operator/exam-pattern.html"
@@ -291,6 +339,10 @@
         "preparation": {
           "en": "exams/psssb-clerk-data-entry-operator/preparation.html",
           "pa": "pa/exams/psssb-clerk-data-entry-operator/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-clerk-data-entry-operator/salary.html",
+          "pa": "pa/exams/psssb-clerk-data-entry-operator/salary.html"
         }
       },
       "pyq": "pyq/psssb-clerk-cum-data-entry-operator/index.html",
@@ -342,6 +394,10 @@
       "file": "exams/psssb-clerk-legal.html",
       "filePa": "pa/exams/psssb-clerk-legal.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-clerk-legal/eligibility.html",
+          "pa": "pa/exams/psssb-clerk-legal/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-clerk-legal/exam-pattern.html",
           "pa": "pa/exams/psssb-clerk-legal/exam-pattern.html"
@@ -353,6 +409,10 @@
         "preparation": {
           "en": "exams/psssb-clerk-legal/preparation.html",
           "pa": "pa/exams/psssb-clerk-legal/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-clerk-legal/salary.html",
+          "pa": "pa/exams/psssb-clerk-legal/salary.html"
         },
         "syllabus": {
           "en": "exams/psssb-clerk-legal/syllabus.html",
@@ -386,6 +446,10 @@
         "preparation": {
           "en": "exams/psssb-craft-instructor/preparation.html",
           "pa": "pa/exams/psssb-craft-instructor/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-craft-instructor/salary.html",
+          "pa": "pa/exams/psssb-craft-instructor/salary.html"
         }
       },
       "pyq": "pyq/psssb-instructor/index.html"
@@ -399,6 +463,10 @@
       "file": "exams/psssb-dairy-development-inspector.html",
       "filePa": "pa/exams/psssb-dairy-development-inspector.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-dairy-development-inspector/eligibility.html",
+          "pa": "pa/exams/psssb-dairy-development-inspector/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-dairy-development-inspector/exam-pattern.html",
           "pa": "pa/exams/psssb-dairy-development-inspector/exam-pattern.html"
@@ -410,6 +478,14 @@
         "preparation": {
           "en": "exams/psssb-dairy-development-inspector/preparation.html",
           "pa": "pa/exams/psssb-dairy-development-inspector/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-dairy-development-inspector/salary.html",
+          "pa": "pa/exams/psssb-dairy-development-inspector/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-dairy-development-inspector/syllabus.html",
+          "pa": "pa/exams/psssb-dairy-development-inspector/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-dairy-development-inspector/index.html"
@@ -442,6 +518,10 @@
         "salary": {
           "en": "exams/psssb-driver/salary.html",
           "pa": "pa/exams/psssb-driver/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-driver/syllabus.html",
+          "pa": "pa/exams/psssb-driver/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-driver/index.html"
@@ -492,6 +572,10 @@
       "file": "exams/psssb-fireman.html",
       "filePa": "pa/exams/psssb-fireman.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-fireman/eligibility.html",
+          "pa": "pa/exams/psssb-fireman/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-fireman/exam-pattern.html",
           "pa": "pa/exams/psssb-fireman/exam-pattern.html"
@@ -511,6 +595,10 @@
         "salary": {
           "en": "exams/psssb-fireman/salary.html",
           "pa": "pa/exams/psssb-fireman/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-fireman/syllabus.html",
+          "pa": "pa/exams/psssb-fireman/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-fireman/index.html"
@@ -524,6 +612,10 @@
       "file": "exams/psssb-forest-guard.html",
       "filePa": "pa/exams/psssb-forest-guard.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-forest-guard/eligibility.html",
+          "pa": "pa/exams/psssb-forest-guard/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-forest-guard/exam-pattern.html",
           "pa": "pa/exams/psssb-forest-guard/exam-pattern.html"
@@ -561,6 +653,10 @@
       "file": "exams/psssb-forester.html",
       "filePa": "pa/exams/psssb-forester.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-forester/eligibility.html",
+          "pa": "pa/exams/psssb-forester/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-forester/exam-pattern.html",
           "pa": "pa/exams/psssb-forester/exam-pattern.html"
@@ -572,6 +668,14 @@
         "preparation": {
           "en": "exams/psssb-forester/preparation.html",
           "pa": "pa/exams/psssb-forester/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-forester/salary.html",
+          "pa": "pa/exams/psssb-forester/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-forester/syllabus.html",
+          "pa": "pa/exams/psssb-forester/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-forester/index.html",
@@ -605,6 +709,10 @@
         "salary": {
           "en": "exams/psssb-group-d/salary.html",
           "pa": "pa/exams/psssb-group-d/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-group-d/syllabus.html",
+          "pa": "pa/exams/psssb-group-d/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-group-d/index.html"
@@ -618,6 +726,10 @@
       "file": "exams/psssb-horticulture-supervisor.html",
       "filePa": "pa/exams/psssb-horticulture-supervisor.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-horticulture-supervisor/eligibility.html",
+          "pa": "pa/exams/psssb-horticulture-supervisor/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-horticulture-supervisor/exam-pattern.html",
           "pa": "pa/exams/psssb-horticulture-supervisor/exam-pattern.html"
@@ -629,6 +741,14 @@
         "preparation": {
           "en": "exams/psssb-horticulture-supervisor/preparation.html",
           "pa": "pa/exams/psssb-horticulture-supervisor/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-horticulture-supervisor/salary.html",
+          "pa": "pa/exams/psssb-horticulture-supervisor/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-horticulture-supervisor/syllabus.html",
+          "pa": "pa/exams/psssb-horticulture-supervisor/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-horticulture-supervisor/index.html"
@@ -661,6 +781,10 @@
         "salary": {
           "en": "exams/psssb-hostel-superintendent/salary.html",
           "pa": "pa/exams/psssb-hostel-superintendent/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-hostel-superintendent/syllabus.html",
+          "pa": "pa/exams/psssb-hostel-superintendent/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-hostel-superintendent/index.html"
@@ -697,6 +821,10 @@
         "salary": {
           "en": "exams/psssb-jail-warder/salary.html",
           "pa": "pa/exams/psssb-jail-warder/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-jail-warder/syllabus.html",
+          "pa": "pa/exams/psssb-jail-warder/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-jail-warder/index.html",
@@ -711,6 +839,10 @@
       "file": "exams/psssb-junior-draftsman.html",
       "filePa": "pa/exams/psssb-junior-draftsman.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-junior-draftsman/eligibility.html",
+          "pa": "pa/exams/psssb-junior-draftsman/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-junior-draftsman/exam-pattern.html",
           "pa": "pa/exams/psssb-junior-draftsman/exam-pattern.html"
@@ -722,6 +854,10 @@
         "preparation": {
           "en": "exams/psssb-junior-draftsman/preparation.html",
           "pa": "pa/exams/psssb-junior-draftsman/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-junior-draftsman/salary.html",
+          "pa": "pa/exams/psssb-junior-draftsman/salary.html"
         },
         "syllabus": {
           "en": "exams/psssb-junior-draftsman/syllabus.html",
@@ -750,6 +886,10 @@
         "preparation": {
           "en": "exams/psssb-lab-attendant/preparation.html",
           "pa": "pa/exams/psssb-lab-attendant/preparation.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-lab-attendant/syllabus.html",
+          "pa": "pa/exams/psssb-lab-attendant/syllabus.html"
         }
       },
       "practice": "exam-lab-attendant.html"
@@ -799,6 +939,10 @@
       "file": "exams/psssb-restorer-lab-assistant.html",
       "filePa": "pa/exams/psssb-restorer-lab-assistant.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/psssb-restorer-lab-assistant/eligibility.html",
+          "pa": "pa/exams/psssb-restorer-lab-assistant/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/psssb-restorer-lab-assistant/exam-pattern.html",
           "pa": "pa/exams/psssb-restorer-lab-assistant/exam-pattern.html"
@@ -810,6 +954,14 @@
         "preparation": {
           "en": "exams/psssb-restorer-lab-assistant/preparation.html",
           "pa": "pa/exams/psssb-restorer-lab-assistant/preparation.html"
+        },
+        "salary": {
+          "en": "exams/psssb-restorer-lab-assistant/salary.html",
+          "pa": "pa/exams/psssb-restorer-lab-assistant/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-restorer-lab-assistant/syllabus.html",
+          "pa": "pa/exams/psssb-restorer-lab-assistant/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-restorer-lab-assistant/index.html"
@@ -930,6 +1082,10 @@
         "preparation": {
           "en": "exams/psssb-technical-assistant/preparation.html",
           "pa": "pa/exams/psssb-technical-assistant/preparation.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-technical-assistant/syllabus.html",
+          "pa": "pa/exams/psssb-technical-assistant/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-technical-assistant/index.html"
@@ -962,6 +1118,10 @@
         "salary": {
           "en": "exams/psssb-veterinary-inspector/salary.html",
           "pa": "pa/exams/psssb-veterinary-inspector/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/psssb-veterinary-inspector/syllabus.html",
+          "pa": "pa/exams/psssb-veterinary-inspector/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-veterinary-inspector/index.html"
@@ -1023,6 +1183,10 @@
           "en": "exams/punjab-ett-teacher/preparation.html",
           "pa": "pa/exams/punjab-ett-teacher/preparation.html"
         },
+        "salary": {
+          "en": "exams/punjab-ett-teacher/salary.html",
+          "pa": "pa/exams/punjab-ett-teacher/salary.html"
+        },
         "syllabus": {
           "en": "exams/punjab-ett-teacher/syllabus.html",
           "pa": "pa/exams/punjab-ett-teacher/syllabus.html"
@@ -1054,6 +1218,14 @@
         "preparation": {
           "en": "exams/punjab-haryana-high-court-clerk/preparation.html",
           "pa": "pa/exams/punjab-haryana-high-court-clerk/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-haryana-high-court-clerk/salary.html",
+          "pa": "pa/exams/punjab-haryana-high-court-clerk/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-haryana-high-court-clerk/syllabus.html",
+          "pa": "pa/exams/punjab-haryana-high-court-clerk/syllabus.html"
         }
       },
       "pyq": "pyq/punjab-haryana-high-court-clerk/index.html"
@@ -1086,6 +1258,10 @@
         "salary": {
           "en": "exams/punjab-master-cadre/salary.html",
           "pa": "pa/exams/punjab-master-cadre/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-master-cadre/syllabus.html",
+          "pa": "pa/exams/punjab-master-cadre/syllabus.html"
         }
       },
       "pyq": "pyq/punjab-master-cadre/index.html"
@@ -1136,6 +1312,10 @@
       "file": "exams/punjab-panchayat-secretary.html",
       "filePa": "pa/exams/punjab-panchayat-secretary.html",
       "parts": {
+        "eligibility": {
+          "en": "exams/punjab-panchayat-secretary/eligibility.html",
+          "pa": "pa/exams/punjab-panchayat-secretary/eligibility.html"
+        },
         "exam-pattern": {
           "en": "exams/punjab-panchayat-secretary/exam-pattern.html",
           "pa": "pa/exams/punjab-panchayat-secretary/exam-pattern.html"
@@ -1147,6 +1327,10 @@
         "preparation": {
           "en": "exams/punjab-panchayat-secretary/preparation.html",
           "pa": "pa/exams/punjab-panchayat-secretary/preparation.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-panchayat-secretary/syllabus.html",
+          "pa": "pa/exams/punjab-panchayat-secretary/syllabus.html"
         }
       },
       "pyq": "pyq/psssb-panchayat-secretary/index.html"
@@ -1231,7 +1415,8 @@
       "filePa": "pa/exams/punjab-pcs-judicial.html",
       "parts": {
         "eligibility": {
-          "en": "exams/punjab-pcs-judicial/eligibility.html"
+          "en": "exams/punjab-pcs-judicial/eligibility.html",
+          "pa": "pa/exams/punjab-pcs-judicial/eligibility.html"
         },
         "exam-pattern": {
           "en": "exams/punjab-pcs-judicial/exam-pattern.html",
@@ -1244,6 +1429,14 @@
         "preparation": {
           "en": "exams/punjab-pcs-judicial/preparation.html",
           "pa": "pa/exams/punjab-pcs-judicial/preparation.html"
+        },
+        "salary": {
+          "en": "exams/punjab-pcs-judicial/salary.html",
+          "pa": "pa/exams/punjab-pcs-judicial/salary.html"
+        },
+        "syllabus": {
+          "en": "exams/punjab-pcs-judicial/syllabus.html",
+          "pa": "pa/exams/punjab-pcs-judicial/syllabus.html"
         }
       },
       "pyq": "pyq/punjab-pcs-judicial/index.html"

@@ -2,6 +2,7 @@
 title: PSSSB Clerk IT 2027 - Eligibility, Syllabus & Pattern
 description: PSSSB Clerk IT 2027 guide from Advt 12/2026 and 11/2025 - computer-degree eligibility, age, fee, Rs 19,900 pay, typing test and the written exam pattern.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -82,6 +83,29 @@ In the 2022 round (Advt 15/2022) the paper had **120 questions in 2 hours**: **9
 - **Networks** - data communication, OSI and TCP/IP models
 
 Since October 2022 every PSSSB exam also carries the **qualifying Punjabi Part A**, so plan for both parts.
+
+<!-- hoa-official -->
+
+## Eligibility in Advt 12/2026 (department-wise)
+
+Each department sets its own degree list, so check the line for the post you pick:
+
+| Department | Posts | Degree needed |
+| --- | --- | --- |
+| Labour Commissioner, Punjab | 9 | **B.Tech Computer Science, B.Sc (IT), BCA, or any graduate with PGDCA** (or an equivalent or higher qualification in the field) |
+| Excise and Taxation (head office) | 1 | Graduate in **Computer Application, IT, Computer Science, Computer Engineering or Computer Technology** |
+| Civil Aviation, Punjab | 1 | **B.E./B.Tech in IT, ECE or CS with 50% marks**, or **BCA with 50% marks plus 2 years' ICT experience** |
+
+- All three also need a qualifying **30 wpm typing test in Punjabi and English** and **matric Punjabi**.
+- **Age:** reckoned on **1 January 2026** (18-37, with the usual Punjab relaxations).
+- **Pay:** **Rs 19,900**, Level-2.
+- **Last date to apply:** 19 October 2026; the degree must be complete by then.
+
+**[Download the official PSSSB Advt 12/2026 notification (PDF)](assets/pdfs/psssb-clerk-advt-12-2026-notification.pdf)**
+
+**[Download the Clerk IT syllabus, Advt 15/2022 (PDF)](assets/pdfs/psssb-clerk-it-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

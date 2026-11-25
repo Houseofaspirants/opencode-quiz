@@ -2,6 +2,7 @@
 title: PSSSB Librarian 2027 - Eligibility, Syllabus & Exam Pattern
 description: PSSSB Librarian 2027 guide from Advt 13/2025 and the official plan - B.Lib eligibility, Rs 29,200 pay, 120 questions with 90 from library science, past papers.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -80,6 +81,29 @@ School Librarian rules are set by the Education Department and can differ; check
 6. **Cataloguing** - entries, subject headings, chain procedure, MARC, ISBD, CCF, RDA
 7. **School library system** and **library users** - information needs and user studies
 8. **ICT** - computer basics, internet, office tools, KOHA, SOUL, LIBSYS, barcode, RFID, e-publishing
+
+<!-- hoa-official -->
+
+## Advt 13/2022 notice - eligibility and pay (official)
+
+PSSSB **Advertisement No. 13 of 2022** was published on **21 May 2022**; applications ran from **23 May to 22 June 2022** (fee until 27 June 2022). The notice set two levels of qualification:
+
+**Librarian**
+
+1. A **Bachelor of Library and Information Science** from a recognised university, with experience in a government or government-recognised institution, **or**
+2. A **B.A./B.Sc.** plus a **Diploma in Library Science**, with at least **three years' practical experience** in an organisation registered under the Factories Act, 1948 or in a government or government-recognised institution.
+
+**Diploma-level library post in the same notice:** **10+2** plus a **two-year Diploma in Library Science**.
+
+**For all:** Punjabi at matriculation level (Punjab Civil Services Rules, 1994).
+
+- **Pay:** **Rs 29,200** as per the 7th CPC, as printed in the notice.
+
+**[Download the official PSSSB Librarian notification, Advt 13/2022 (PDF, scanned)](assets/pdfs/psssb-librarian-notification-advt-13-2022.pdf)**
+
+**[Download the official PSSSB Advt 13/2025 notification, which includes Librarian (PDF)](assets/pdfs/psssb-advt-13-2025-notification.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

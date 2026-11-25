@@ -2,6 +2,7 @@
 title: PSSSB Driver 2027 - Eligibility, Exam Pattern & Pay
 description: PSSSB Driver 2027 guide from Advt 12/2026 - matric, LMV and HMV licence, 3 years' driving, Rs 21,700 pay and the 150-question written exam of January 2026.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -67,6 +68,38 @@ PSSSB has advertised Driver posts in **2023, 2025 and 2026**. Every department r
 - In the **31 January 2026** Driver paper, Part A had **50 questions** and Part B had **100**.
 - **Ties:** older candidate first, then higher qualification marks, then matric marks.
 - The board publishes the syllabus and roll numbers on its website.
+
+<!-- hoa-official -->
+
+## Syllabus (official plan, Advt 08/2023)
+
+For Advt 08/2023 the board split the paper into three parts. Part A must be cleared before Parts B and C are marked.
+
+| Part | What | Questions | Role |
+| --- | --- | --- | --- |
+| A | Matric-level Punjabi | 50 | **Qualifying - 25 marks needed**, no negative marking |
+| B | GK and current affairs (10), Punjab history and culture (5), reasoning and numeracy (10), Punjabi (5), English (5), ICT (5) | 40 | Counts for merit |
+| C | **Driving technique and motor-car mechanism** | 60 | Counts for merit |
+
+- **Time:** 2 hours 30 minutes. **Negative marking:** 0.25 mark per wrong answer in Parts B and C.
+
+**Part C - the subject (60 marks)** tests:
+
+- driving skills and procedures, and the **duties of a driver**;
+- **fuel efficiency and fuel economy**;
+- basic **maintenance and servicing** - tyre pressure, battery water level, quantity and grade of oils, coolant, tension of belts and hose pipes;
+- **emergency handling**, and the tools and documents a vehicle must carry;
+- types of vehicles and simple questions on **vehicle assemblies and systems**;
+- **traffic rules and regulations** - traffic signals, traffic signs, hand signals and road markings;
+- vehicles and pollution - petrol, diesel and **CNG** vehicles, and noise pollution.
+
+So the subject part is 60% of your merit - more than all the GK put together. A driver who knows the Motor Vehicles Act basics, road signs and routine maintenance well can win the paper here.
+
+**[Download the official PSSSB Advt 12/2026 notification (PDF)](assets/pdfs/psssb-clerk-advt-12-2026-notification.pdf)**
+
+**[Download the Driver syllabus, Advt 08/2023 (PDF)](assets/pdfs/psssb-driver-syllabus-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

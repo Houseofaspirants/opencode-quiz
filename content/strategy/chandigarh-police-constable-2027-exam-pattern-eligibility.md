@@ -2,6 +2,7 @@
 title: Chandigarh Police Constable 2027 - Pattern & Eligibility
 description: Chandigarh Police Constable 2027 guide - the 700-post 2023 drive, 10+2 and age rules, written test with negative marking, physical test and past papers.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -20,9 +21,9 @@ faq:
   - q: When was the last Chandigarh Police Constable recruitment?
     a: Chandigarh Police released a notice on 20 May 2023 for 700 Constable (Executive) posts, with a separate sports-quota list.
   - q: What is the eligibility for Chandigarh Police Constable?
-    a: 10+2 from a recognised board. The 2023 notice was reported with an age range of 18 to 25 years, plus relaxation for reserved categories. Physical standards apply.
+    a: 10+2 from a recognised board. The 2023 notice set the age at 18-25 for General, 18-28 for OBC and 18-30 for SC (as on 20 May 2023), and men needed a two- and four-wheeler driving licence. Physical standards apply.
   - q: What is the exam pattern?
-    a: An objective written test, reported as 100 marks with 1 mark per question and 1/4 mark cut for a wrong answer, followed by a physical test, document verification and a medical. Confirm the exact pattern in the next notice.
+    a: An objective OMR written test of 100 marks with 1 mark per question and 0.25 mark cut for a wrong answer (qualifying 40% General, 35% SC/OBC), followed by a physical test, document verification and a medical. Confirm the exact pattern in the next notice.
   - q: Which papers are available for practice?
     a: Our archive has the Chandigarh Police Constable papers of 2013, 2018 (16 November) and 2023 (Set C).
   - q: Will Chandigarh Police recruit constables in 2027?
@@ -46,37 +47,52 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Chandi
 
 Our archive has papers from **2013, 2018 and 2023** - roughly one big round every few years. On that pattern a 2027 round is **possible but not certain**. Keep your 10+2 marks sheet, category certificate and fitness ready, because Chandigarh windows are short.
 
-## Eligibility (2023 notice)
+## Eligibility (official 2023 notice)
 
-- **Education:** 10+2 from a recognised board.
-- **Age:** reported as 18 to 25 years (as on 20 May 2023), with relaxation for reserved categories.
-- **Physical standards and test:** height, chest and running standards apply - see the section below.
-- **Fee (2023):** reported as Rs 1,000 for general/OBC, Rs 800 for SC and EWS, and nil for ex-servicemen.
+- **Posts:** 700 Constable (Executive), Group C - 393 men, 223 women and 84 ex-servicemen (UR 324, OBC 185, SC 130, EWS 61), including 23 backlog posts.
+- **Education:** 10+2 or equivalent (ex-servicemen: 10+2 or an equivalent defence certificate).
+- **Age (as on 20 May 2023):** **18-25** for General, **18-28** for OBC, **18-30** for SC. Ex-servicemen up to 45; Chandigarh Home Guard volunteers get 2 to 7 years' relaxation for 2 to 7 years of continuous service; wards of Chandigarh Police employees get 2 years (3 if the employee died in service); departmental candidates up to 40.
+- **Driving licence:** a valid licence for **both two-wheelers and four-wheelers** is **mandatory for men** on the date of applying.
+- **Computer skills:** basic computer knowledge from a recognised institute.
+- **Fee:** Rs 1,000 for UR and OBC; Rs 800 for SC and EWS; ex-servicemen exempt.
 
 ## Salary and pay
 
-- **Pay scale:** reported as Rs 19,900-63,200 (Level-2 of the 7th CPC matrix).
-- **Probation:** reported as 2 years.
+- **Pay:** **Central Pay Level-3** (7th CPC) plus allowances, as printed in the 2023 notice. Level-3 starts at **Rs 21,700** a month (scale Rs 21,700-69,100).
 - Chandigarh is a Union Territory, so pay and allowances follow central government rules, not Punjab's.
 
-## Physical standards (2023 round, as reported)
+## Physical standards and test (official 2023 notice)
+
+Height and chest are measured first; anyone below the standard is out at once. A **dope test** comes before the PE&MT.
 
 **Measurements**
 
 | | Men | Women |
 | --- | --- | --- |
-| Height | 170 cm | 157.5 cm |
-| Chest | 84 cm, expanding to 88 cm | - |
+| Height | 170 cm (165 cm for notified hill areas and wards of police personnel) | 157.5 cm (152.5 cm for the same groups) |
+| Chest | 84-88 cm (79-83 cm for the same groups) | - |
 
-**Physical test, age 18-30**
+Wards of police personnel can use only one relaxation - height or chest.
 
-| Event | Men | Women |
-| --- | --- | --- |
-| Race | 1,600 m in 6 min 15 sec | 800 m in 4 min 15 sec |
-| Long jump | 3.95 m | 2.74 m |
-| High jump | 1.14 m | 0.90 m |
+**Physical endurance test (qualifying)**
 
-Older age groups get easier timings, and reserved categories may get height relaxation. Check the exact table in the next notice.
+| Event | Age 18-30 | 30-35 | 35-40 | 40-45 |
+| --- | --- | --- | --- | --- |
+| Men: 1,600 m race | 6 min 15 s | 7 min | 7 min 45 s | 10 min |
+| Women: 800 m race | 4 min 15 s | 5 min | 5 min 45 s | 6 min 30 s |
+| Men: long jump (3 tries) | 3.95 m | 3.80 m | 3.65 m | 3.50 m |
+| Women: long jump (3 tries) | 2.74 m | 2.60 m | 2.45 m | 2.30 m |
+| Men: high jump (3 tries) | 1.14 m | 1.10 m | 1.05 m | 1.00 m |
+| Women: high jump (3 tries) | 0.90 m | 0.85 m | 0.80 m | 0.75 m |
+
+**Bonus marks in the 2023 notice**
+
+- **Height:** 2 marks for men of **183 cm or more** and women of **165 cm or more** (178 cm and 160 cm for hill-area candidates).
+- **NCC:** 'C' certificate 5%, 'B' 3%, 'A' 2% of the maximum marks.
+
+**Written-test qualifying marks:** General 40%, SC and OBC 35%, ex-servicemen 30%. The 100-mark OMR paper is set in **Hindi, English and Punjabi** (you choose when applying), with **0.25 marks cut** for each wrong answer.
+
+**[Download the official Chandigarh Police Constable notification, 2023 (PDF)](assets/pdfs/chandigarh-police-constable-notification-2023.pdf)**
 
 ## Syllabus (written test)
 
@@ -92,7 +108,7 @@ The written test is objective, **100 marks**, with **1/4 mark cut** for each wro
 
 | Stage | What |
 | --- | --- |
-| Written test | Objective MCQ - reported as 100 marks, 1 mark each, 1/4 cut for a wrong answer |
+| Written test | Objective MCQ - 100 marks, 1 mark each, 0.25 cut for a wrong answer |
 | Physical test | Running and physical measurement |
 | Documents and medical | Final checks |
 

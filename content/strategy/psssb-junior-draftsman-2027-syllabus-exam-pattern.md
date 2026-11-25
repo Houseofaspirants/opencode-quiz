@@ -2,6 +2,7 @@
 title: PSSSB Junior Draftsman 2027 - Syllabus & Exam Pattern
 description: PSSSB Junior Draftsman 2027 guide - official exam plan for Civil and Electrical/Mechanical, 120 questions in 2 hours, trade syllabus, past papers and outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -69,6 +70,33 @@ Junior Draftsman posts have come in **2021, 2022 and later rounds**, and a 2026 
 
 - **Electrical:** basic concepts and network theorems, AC fundamentals, measuring instruments, signals and systems, electrical machines and FHP motors, power systems, control systems, generation, transmission and distribution, estimation and costing, utilisation of electrical energy, basic electronics.
 - **Mechanical:** engineering drawing as per SP-46:2003 - lines, lettering, dimensioning, orthographic and sectional views, projection of solids, development of surfaces, interpenetration curves, isometric projection and free-hand sketching of machine parts.
+
+<!-- hoa-official -->
+
+## Eligibility (official notice, Advt 09/2022)
+
+Advt 09/2022 (published 11 May 2022, applications 21 May to 21 June 2022) had **72 posts**: **46 Junior Draftsman (Civil)** in the Water Supply and Sanitation and Local Government departments, and **26 Junior Draftsman (Electrical/Mechanical)** in PWD (B&R).
+
+| Post and department | Qualification |
+| --- | --- |
+| Civil - Water Supply and Sanitation | **Matric + 2-year ITI National Trade Certificate in Draftsman (Civil)**, or a **3-year diploma in Civil Engineering** (or higher) from a UGC/AICTE-recognised institution |
+| Civil - Local Government | **Matric + 2-year ITI certificate in Draftsman (Civil)**, or a higher qualification in the same discipline |
+| Electrical/Mechanical - PWD (B&R) | **ITI National Trade Certificate or National Apprenticeship Certificate in Draftsman (Mechanical)**, or a **diploma or degree in Electrical or Mechanical Engineering** (or higher) |
+
+- **Punjabi:** matric-level Punjabi or equivalent (Punjab Civil Services Rules, 1994).
+- **Certificates** must follow the guidelines of the Ministry of Skill Development (ITI) or UGC/AICTE (diploma and degree), and must be in hand by the **last date to apply**.
+
+## Age, fee and salary
+
+- **Age (as on 1 January 2022 in that round):** 18 to 37; up to 42 for SC and BC of Punjab; 45 for government employees; 47 for persons with disabilities of Punjab; 40 for widows and divorcees.
+- **Fee (standard PSSSB):** General Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen Rs 200; persons with disabilities Rs 500.
+- **Salary:** **Rs 25,500 (Level-4)** of the 7th CPC pay matrix, plus allowances fixed by the department.
+
+**[Download the official Junior Draftsman notification, Advt 09/2022 (PDF)](assets/pdfs/psssb-junior-draftsman-notification-2022.pdf)**
+
+**[Download the Junior Draftsman syllabus, Advt 09/2022 (PDF)](assets/pdfs/psssb-junior-draftsman-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

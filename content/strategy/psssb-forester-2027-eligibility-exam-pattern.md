@@ -2,6 +2,7 @@
 title: PSSSB Forester 2027 - Eligibility & Exam Pattern
 description: PSSSB Forester 2027 guide - Advt 07/2022 with Forest Guard and Deputy Ranger, Rs 25,500 starting pay, the paper of 20 November 2022 and chance of new posts.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -60,6 +61,67 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 - **Part B marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Standard rules:** age 18-37 (up to 42 for SC/BC of Punjab, 45 for government employees); fee Rs 1,000 general, Rs 250 SC/BC/EWS, Rs 200 ex-servicemen, Rs 500 persons with disabilities. Confirm all of this in the next advertisement for this post.
+
+<!-- hoa-official -->
+
+## Eligibility (official, Advt 07/2022)
+
+Forester was advertised with Forest Guard and Deputy Ranger in **Advt. No. 07 of 2022** (applications 11 May to 1 July 2022). The conditions for **Forester**:
+
+- **Education:** Senior Secondary Part-II (**10+2**) **in Science** from a recognised board or institution.
+- **Punjabi:** matriculation with Punjabi as a compulsory or elective subject.
+- **Physical standards:** height - men 167 cm, women 150 cm; chest - men 79 / 84 cm, women 74 / 79 cm (unexpanded / expanded).
+- **Walk test:** **13 km for men and 8 km for women within 1 hour 30 minutes.**
+- **Age:** 18 to 37 years as on 1 January 2022; SC/BC of Punjab up to 42, government employees up to 45, persons with disabilities up to 47, widows and divorcees up to 40.
+- **Fee:** Rs 1,000 General · Rs 250 SC/BC/EWS · Rs 200 ex-servicemen · Rs 500 persons with disabilities.
+
+For comparison, **Deputy Ranger** needed a B.Sc. or B.E. degree and a walk test of 25 km (men) / 14 km (women) in 4 hours; **Forest Guard** needed plain 10+2.
+
+## Salary and pay
+
+| Post | Pay (7th CPC, Advt 07/2022) |
+| --- | --- |
+| Deputy Ranger | Rs 35,400 |
+| **Forester** | **Rs 25,500** |
+| Forest Guard | Rs 21,700 |
+
+Allowances are added as the Punjab Government sanctions them.
+
+## Exam pattern (official plan, Forester)
+
+| Part | Questions | Marks |
+| --- | --- | --- |
+| Part A - science subjects (attempt **any 2** of Physics, Chemistry, Mathematics, Biology) | 90 | 90 |
+| Part B - GK, reasoning, English, Punjabi | 30 | 30 |
+| **Total** | **120** | **120** |
+
+- MCQ on OMR, **2 hours**, 1 mark each, **1/4 mark cut** per wrong answer.
+- After the written exam: **Physical Measurement Test and Physical Efficiency Test** (qualifying only).
+
+## Syllabus (official, Forester)
+
+**Part A (90 marks) - Class XI-XII science.** Pick any two subjects:
+
+- **Physics:** physical world and measurement, kinematics, laws of motion, work-energy-power, rigid body, gravitation, properties of bulk matter, thermodynamics, kinetic theory, oscillations and waves, electrostatics, current electricity, magnetism, electromagnetic induction and AC, EM waves, optics.
+- **Chemistry:** basic concepts, atomic structure, periodicity, chemical bonding, states of matter, thermodynamics, equilibrium, redox, hydrogen, s- and p-block, organic basics, hydrocarbons, environmental chemistry, solid state, solutions, electrochemistry, kinetics, surface chemistry, isolation of elements, d- and f-block, coordination compounds, haloalkanes, alcohols-phenols-ethers, aldehydes-ketones-acids, nitrogen compounds, biomolecules, polymers, chemistry in everyday life.
+- **Mathematics:** sets, relations and functions, trigonometry, algebra (complex numbers, quadratic equations, permutations, binomial theorem, sequences, matrices, determinants), coordinate geometry, calculus, vectors and 3-D geometry, statistics and probability.
+- **Biology:** reproduction, genetics and evolution, human health, food production, microbes, ecology and environment, biodiversity, living world and classification, plant and animal kingdom, morphology and anatomy, cell and cell division, plant physiology (transport, mineral nutrition, photosynthesis, respiration, growth), human physiology.
+
+**Part B (30 marks)**
+
+| Section | Marks (approx.) |
+| --- | --- |
+| GK and current affairs (incl. Punjab history from the 14th century and the freedom struggle) | 10 |
+| Logical reasoning, mental ability and basic numeracy | 10 |
+| English grammar and vocabulary | 5 |
+| Punjabi grammar (ਸ਼ੁੱਧ-ਅਸ਼ੁੱਧ, ਅਖਾਣ-ਮੁਹਾਵਰੇ, ਅਨੁਵਾਦ ਆਦਿ) | 5 |
+
+## Download the official notification and syllabus
+
+- **[Forester, Forest Guard and Deputy Ranger notification, Advt. No. 07 of 2022 (PDF, 14 pages, Punjabi)](assets/pdfs/psssb-forest-guard-forester-notification-2022.pdf)**
+- **[Forester plan of written exam and full syllabus (PDF, 26 pages)](assets/pdfs/psssb-forester-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

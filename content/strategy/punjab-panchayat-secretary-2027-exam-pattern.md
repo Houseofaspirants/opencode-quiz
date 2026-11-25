@@ -2,6 +2,7 @@
 title: Punjab Panchayat Secretary 2027 - Exam Pattern
 description: Punjab Panchayat Secretary 2027 guide - the 800-post PSSSB round of 2016, its 100-mark paper in four sections, how the pattern has changed and the outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -61,6 +62,40 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 - **Part B marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Standard rules:** age 18-37 (up to 42 for SC/BC of Punjab, 45 for government employees); fee Rs 1,000 general, Rs 250 SC/BC/EWS, Rs 200 ex-servicemen, Rs 500 persons with disabilities. Confirm all of this in the next advertisement for this post.
+
+<!-- hoa-official -->
+
+## Related post: VDO eligibility (792 posts, Advt 04/2022)
+
+The closest recent recruitment in the same department is **Village Development Organiser (VDO)**, Group C, in the Department of Rural Development and Panchayats. The department sent PSSSB a requisition for **792 VDO posts** (282 General, 79 SC M&B, 79 SC R&O, 92 BC, 79 EWS, plus ex-servicemen, sports, disability and freedom-fighter quotas), and PSSSB advertised them as **Advt 04/2022**.
+
+Under the service rules as amended in September 2021, a VDO needs:
+
+1. **Matric with Punjabi** as a subject.
+2. **10+2 in second division**.
+3. **Graduation in any discipline** from a recognised university.
+4. A **one-year diploma in computer applications** from a recognised institution.
+
+Candidates with a **B.Com or a higher commerce degree** get preference: **5 extra marks**.
+
+## VDO syllabus and written test (Advt 04/2022)
+
+- **100 MCQs, 100 marks, 2 hours**, on an OMR sheet.
+- **Negative marking:** 1 mark per question, **1/4 mark cut** for each wrong answer; unattempted questions carry no penalty.
+
+| Section | Approx. weight | Topics |
+| --- | --- | --- |
+| GK and current affairs | 25 | Politics, environment, science and technology, economy, Punjab history from the 14th century, Indian freedom struggle, sports, cinema and literature |
+| Mental ability | 25 | Coding-decoding, analogy, series, directions, blood relations, Venn diagrams, cubes and dice, mirror images, puzzles, non-verbal series |
+| English | 12 | Grammar, synonyms and antonyms, one-word substitution, error correction, narration, voice, idioms |
+| Punjabi | 13 | Spelling, prefixes and suffixes, synonyms and antonyms, parts of speech, gender and number, idioms, translation from English |
+| Mathematical skills | 25 | Percentage, number system, LCM and HCF, ratio, average, ages, profit and loss, interest, time and work, time and distance, mensuration, data interpretation |
+
+This VDO syllabus is the best guide to what a new Panchayat Secretary paper would look like, since the two posts sit in the same department and need the same skills.
+
+**[Download the official VDO requisition and service-rule notification (PDF, scanned)](assets/pdfs/psssb-vdo-notification-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

@@ -2,6 +2,7 @@
 title: PSSSB Hostel Superintendent cum PTI 2027 - Full Guide
 description: PSSSB Hostel Superintendent cum PTI 2027 guide from Advt 13/2025 - C.P.Ed eligibility, experience, age, fee, Rs 19,900 pay, written exam and past papers.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -65,6 +66,33 @@ This post came in **2022** and again in **2025 (68 posts)**. Because the 2025 ro
 
 - **Marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Ties:** older candidate first.
+
+<!-- hoa-official -->
+
+## Syllabus (official plan, Advt 06/2022)
+
+The last published subject syllabus for this post is from Advt 06/2022. That paper had **120 questions in 2 hours** - **90 from the subject** and **30 from GK, English, Punjabi and reasoning** - with 1/4 mark cut for a wrong answer. Since October 2022 a **qualifying Punjabi Part A** comes first as well.
+
+**Subject part (physical education and hostel work, 90 marks)**
+
+1. **Physical education** - history, meaning and aims; growth in India before and after independence; its place today.
+2. **The human body** - circulatory, muscular, excretory, nervous, respiratory and digestive systems.
+3. **Psychology** - general and sports psychology, social side of physical education.
+4. **Health science** - meaning and goals, communicable diseases and their prevention, personal hygiene, growth and development, effect of intoxicants, **balanced diet**, family life.
+5. **Fitness and training** - methods of training, warm-up and cool-down.
+6. **Injuries and first aid** - muscle pull, fracture, dislocation, sports injuries, prevention and rehabilitation.
+7. **Sports awareness** - **Asian, Olympic and Commonwealth Games**, sports awards, Punjab Sports Department, Punjab Olympic Association.
+8. **Kinesiology** - levers, equilibrium, motion; massage and recreation.
+9. **Organising sport** - sports arrangements and **fixtures**; athletics; **measurements of all playgrounds** and fundamentals of games.
+10. **Yoga** - pranayama and asanas.
+11. **Computers** - Windows, MS Office, internet, browsing, PowerPoint.
+12. **Hostel management.**
+
+**[Download the official PSSSB Advt 13/2025 notification (PDF)](assets/pdfs/psssb-advt-13-2025-notification.pdf)**
+
+**[Download the Hostel Superintendent cum PTI syllabus, Advt 06/2022 (PDF)](assets/pdfs/psssb-hostel-superintendent-pti-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

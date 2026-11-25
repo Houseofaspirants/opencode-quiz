@@ -2,6 +2,7 @@
 title: PPSC Draftsman 2027 - Exam Pattern & Strategy
 description: PPSC Draftsman and Head Draftsman 2027 guide - the 119-post 2022 drive, the 120-question paper of 480 marks with negative marking, topics asked and the outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -60,6 +61,71 @@ Draftsmen work in PWD, irrigation, local bodies and other engineering offices. P
 - **Surveying** - chain survey, theodolite, principles.
 - **AutoCAD** commands and drawing standards.
 - **GK, current affairs and reasoning** at the end.
+
+<!-- hoa-official -->
+
+## Eligibility (official, 2022 notification)
+
+PPSC's 2022 notice (Advt. 202237 to 202242) had **119 Group-B technical posts**: 27 Head Draftsmen (25 Municipal Corporation, 2 Improvement Trust) and 92 Draftsmen (46 Municipal Councils/Nagar Panchayats, 43 Municipal Corporation, 2 Improvement Trust, 1 Tourism and Cultural Affairs), all through one joint exam.
+
+| Post | Essential qualification |
+| --- | --- |
+| **Draftsman** (Local Government) | **Diploma in Civil Engineering or Certificate in Civil Draftsman** (or equivalent) from the State Board of Technical Education, Punjab or any recognised institution, OR a higher qualification in the field |
+| Draftsman (Tourism and Cultural Affairs) | **Two-year ITI certificate in Draftsman Civil**, or a higher qualification in the same discipline |
+| Head Draftsman | The Draftsman qualification **plus 4 years' experience** as a Draftsman in a municipal body, improvement trust or government department |
+
+- **Punjabi:** Punjabi of matric or equivalent standard.
+- **Cut-off date:** qualification by **6 July 2022**.
+- **Age:** 18 to 37 as on 1 January 2022; government employees up to 45; SC and BC of Punjab up to 42; widows and divorcees up to 42; persons with disabilities of Punjab up to 47.
+
+## Fee
+
+| Category | Total fee |
+| --- | --- |
+| General, sportspersons, wards of freedom fighters | **Rs 1,500** (Rs 500 application + Rs 1,000 exam) |
+| SC/ST of all states, BC of Punjab | **Rs 750** |
+| Ex-servicemen, EWS, persons with disabilities, LDESM of Punjab | **Rs 500** |
+
+## Salary and pay
+
+- **Initial pay: Rs 35,400** (Group B, 7th CPC pay matrix).
+- Fixed emolument equal to minimum pay, without allowances, during the **3-year probation**.
+
+## Selection process (official)
+
+- **Written exam only** - no interview; minimum **40%** (35% for SC and BC of Punjab).
+- **120 MCQs, 480 marks** (4 marks each), **1 mark cut** per wrong answer, 2 hours, OMR.
+
+| Part | Questions | Marks |
+| --- | --- | --- |
+| Part A - civil drafting subject | 100 | 400 |
+| Part B - reasoning, mental ability and GK | 20 | 80 |
+
+## Syllabus (official, Annexure VIII)
+
+**Part A - subject (400 marks)**
+
+1. **BIS and drawing practice:** IS 962-1989 code for architectural and building drawings, layout, lines, lettering, dimensioning, scales and RF, orthographic, isometric, oblique and perspective views.
+2. **Building materials:** stones, bricks, lime, pozzolana, cement (manufacture, types, tests), sand, clay products, mortar and concrete, timber (defects, seasoning, preservation).
+3. **Timber alternatives:** plywood, block board, particle board, FRP, MDF.
+4. **Protective materials:** tar, bitumen, asphalt, paints, varnishes, metals, plastics.
+5. **Building construction:** sequence and parts of a building.
+6. **Stone masonry** and 7. **Brick masonry** - bonds, tools, strength of walls.
+8. **Foundations:** types and failure, setting out, shoring, scaffolding, underpinning, DPC, arches, lintels, RCC reinforcement, doors and windows, roofs, floors, trusses, carpentry joints, stairs.
+9. **Surveying:** chain, compass, plane table, levelling, theodolite, total station.
+10. **CAD:** operating systems and basic CAD commands.
+11. **Planning of buildings:** principles, orientation, **local building bye-laws**.
+12. **Estimating and costing.**
+13. **Roads and railways** - planning and construction of roads, Indian railway gauges.
+14. **Bridges and culverts.**
+15. **Irrigation and hydrology:** terms, storage reservoirs, canals, hydroelectric power houses.
+16. **Public health engineering:** sanitation and sanitary fittings.
+
+**Part B - general (80 marks):** economic, polity, environment, science and current issues; Indian freedom struggle; **history of Punjab from the 14th century**; analytical and logical reasoning; basic numeracy; data from charts, tables and spreadsheets.
+
+**[Download the official PPSC Head Draftsman and Draftsman notification, 2022 (PDF, 40 pages)](assets/pdfs/ppsc-draftsman-notification-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

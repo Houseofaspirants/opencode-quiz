@@ -2,6 +2,7 @@
 title: PSSSB Veterinary Inspector 2026 - Eligibility & Pattern
 description: PSSSB Veterinary Inspector 2026 (Advt 10/2026) from the official notification - 150 posts, diploma eligibility, age, fee, Rs 29,200 pay and the exam pattern.
 published: 2026-10-03
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -108,6 +109,43 @@ Most posts are in the reserved and backlog categories this time, so check your c
 - After the merit list: **counselling** and document verification. Names go to the department as per the posts available at that time.
 - **Ties:** older candidate first; then higher percentage in the required qualification; then matric marks.
 - Sports-category merit follows the Sports Department notification of 9 March 2026.
+
+<!-- hoa-official -->
+
+## Syllabus (official plan, Advt 14/2021)
+
+The last published subject syllabus for this post is from Advt 14/2021 (dated 30 July 2021):
+
+| Section | Marks (approx.) |
+| --- | --- |
+| General knowledge and awareness (India and Punjab) | 10 |
+| Languages (English and Punjabi grammar, comprehension) | 20 |
+| **Subject - veterinary and animal husbandry** | **90** |
+| **Total** | **120 marks, 100 minutes**, 1/4 mark cut per wrong answer |
+
+Since October 2022 a **qualifying matric-level Punjabi Part A** comes first in every PSSSB paper.
+
+**The subject part (90 marks)** follows the two-year veterinary diploma course:
+
+1. **Animal husbandry** - breeds of cattle, buffalo, sheep, goat, pig, horse and poultry; housing; care of calves, heifers, pregnant and lactating animals; castration; milking and **clean milk production**; farm hygiene, records, bio-security.
+2. **Livestock handling** - animal behaviour, restraint, dentition, shoeing and hoof trimming, prevention of cruelty.
+3. **Animal nutrition** - digestion and rumination, nutrients, feeds and fodders, **colostrum feeding**, ration balancing, hay and silage.
+4. **Computer applications** - Windows, MS Office, internet, farm data recording.
+5. **Anatomy and physiology** of animals.
+6. **Pharmacology.**
+7. **Epidemiology and public health.**
+8. **Poultry science.**
+9. **Animal husbandry extension.**
+10. **Reproduction**, **andrology and artificial insemination**.
+11. **Parasitology.**
+12. **Milk** - procurement, handling and testing.
+13. **Veterinary hospital maintenance**, **veterinary medicine**, **wound care**.
+14. **Clinical pathology and laboratory techniques.**
+15. **Practical training** - on-farm, in-clinic, laboratory and bull-centre work.
+
+**[Download the Veterinary Inspector syllabus, Advt 14/2021 (PDF)](assets/pdfs/psssb-veterinary-inspector-syllabus-2021.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

@@ -2,6 +2,7 @@
 title: PSSSB Lab Attendant 2027 - Exam Pattern & Strategy
 description: PSSSB Lab Attendant 2027 guide - the Group C round of Advt 04/2023, Rs 19,900 starting pay, the paper of 15 February 2025, PSSSB's pattern and the outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -60,6 +61,42 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 
 - **Part B marking:** 1 mark per question, **1/4 mark cut** for each wrong answer.
 - **Standard rules:** age 18-37 (up to 42 for SC/BC of Punjab, 45 for government employees); fee Rs 1,000 general, Rs 250 SC/BC/EWS, Rs 200 ex-servicemen, Rs 500 persons with disabilities. Confirm all of this in the next advertisement for this post.
+
+<!-- hoa-official -->
+
+## Exam pattern (final official plan, Advt 04/2023)
+
+The Laboratory Attendant paper of Advt. No. 04 of 2023 was an MCQ exam on OMR sheets, **2 hours 30 minutes**, in three parts:
+
+| Part | What | Questions / marks | Role |
+| --- | --- | --- | --- |
+| **A** | Punjabi, matric standard | 50 | **Qualifying - 25 marks (50%) needed**; no negative marking |
+| **B** | GK and current affairs, Punjab history and culture, reasoning, Punjabi, English, ICT | 40 | Counts for merit |
+| **C** | Subject - Physics, Chemistry, Mathematics, Biology (20 questions each; **attempt any three**) | 60 | Counts for merit |
+
+- Parts B and C (100 marks) are checked only if you clear Part A.
+- **Negative marking in B and C:** 1 mark per question, **0.25 mark cut** for each wrong answer.
+- If you attempt all four subjects in Part C, the best three count; no extra time is given.
+
+## Syllabus (official, Laboratory Attendant)
+
+**Part B - general (40 marks)**
+
+- **GK and current affairs (10):** polity, environment, current affairs, science and technology, economy, Indian freedom struggle, sports, cinema and literature, geography.
+- **Punjab history and culture:** physical features and ancient history, social-religious-economic life, language, literature and arts, Afghan and Mughal period, Bhakti and Sufi movements, Sikh Gurus and saints, Adi Granth, Sikh rulers, freedom movements of Punjab.
+- **Reasoning and mental ability (10):** logical and analytical reasoning (5), basic numeracy and percentages (3), data analysis - charts, tables, spreadsheets (2).
+- **English, Punjabi and ICT:** grammar and vocabulary; computer basics, network and internet, Word, Excel and PowerPoint.
+
+**Part C - subject (60 marks), Class XII level**
+
+- **Physics:** electrostatics, current electricity, magnetic effects and magnetism, electromagnetic induction and AC, EM waves, optics, dual nature of matter, atoms and nuclei, electronic devices.
+- **Chemistry:** solutions, electrochemistry, chemical kinetics, d- and f-block, coordination compounds, haloalkanes and haloarenes, alcohols-phenols-ethers, aldehydes-ketones-acids, amines, biomolecules.
+- **Mathematics:** relations and functions, inverse trigonometry, matrices and determinants, calculus, vectors and 3-D geometry, linear programming, probability.
+- **Biology:** reproduction, genetics and evolution, biology and human welfare, biotechnology, ecology and environment.
+
+**[Download the official Laboratory Attendant plan of exam and syllabus, Advt 04/2023 (PDF, 12 pages)](assets/pdfs/psssb-lab-attendant-syllabus-2023.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

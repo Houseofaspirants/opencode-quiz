@@ -2,6 +2,7 @@
 title: PSSSB Group D Recruitment, Eligibility & Exam Pattern
 description: PSSSB Group D (Sevadar, Chowkidar) from the official notifications - matric with Punjabi, age, fee, Rs 18,000 pay, Punjabi test and the 150-question pattern.
 published: 2026-11-12
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -116,6 +117,30 @@ The written exam under Advt. 08/2025 is the best guide to the syllabus:
 - **150 questions** in one booklet.
 - **Part A (questions 1-50): Punjabi** - grammar (spelling, synonyms, antonyms, idioms, punctuation), Punjabi months and numbers, dialects of Punjab, and Sikh history and Gurbani (Gurus, Sri Guru Granth Sahib, vaars).
 - **Part B (questions 51-150), in English and Punjabi:** general knowledge and Indian geography, environment and ecology, general science, reasoning (directions, blood relations, syllogisms, series, data sufficiency), and an **ICT section at the end (questions 143-150)** - Excel formulas, MS Word and PowerPoint shortcuts, memory, protocols and network topology.
+
+<!-- hoa-official -->
+
+## Syllabus (official plan, Advt 04/2026)
+
+The board has published the paper plan for Advt 04/2026:
+
+| Part | Section | Marks (approx.) |
+| --- | --- | --- |
+| **A** | Matric-level Punjabi - Gurus' lives and writings, synonyms and antonyms, idioms, proverbs, prefixes and suffixes, gender and number, punctuation, correct spellings, Punjabi forms of English words, numbers, months and days, Punjab history and culture | **50 (qualifying, 25 needed, no negative)** |
+| **B** | General knowledge and current affairs - polity, environment, science and technology, economy, Indian freedom struggle, sports, cinema and literature, geography | 25 |
+| B | Logical reasoning and mental ability (17), basic numeracy (4), data from charts and tables (4) | 25 |
+| B | Punjab history and culture - physical features, ancient history, Bhakti and Sufi movements, Sikh Gurus, Adi Granth, Sikh rulers, freedom movements | 17 |
+| B | Punjabi grammar | 13 |
+| B | English grammar | 12 |
+| B | ICT - computer basics, network and internet, Word, Excel, PowerPoint | 8 |
+| | **Part B total (merit)** | **100** |
+
+- **Time:** 2 hours 30 minutes, MCQ on OMR sheet; 1/4 mark cut for each wrong answer in Part B.
+- Reasoning and GK together are half the merit paper; Punjab history alone is 17 marks - more than English.
+
+**[Download the official Group D syllabus, Advt 04/2026 (PDF)](assets/pdfs/psssb-group-d-syllabus-2026.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

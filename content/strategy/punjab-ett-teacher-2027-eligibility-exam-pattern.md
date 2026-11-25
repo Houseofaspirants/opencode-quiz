@@ -2,6 +2,7 @@
 title: Punjab ETT Teacher 2027 - Eligibility & Exam Pattern
 description: Punjab ETT Teacher 2027 guide - the 5994-post recruitment, graduation plus ETT/D.El.Ed and PSTET, the two 100-question papers of March 2023 and the outlook.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -72,6 +73,30 @@ Both final keys gave free marks for a few deleted questions (shown as * in the k
 - **English:** comprehension; grammar - articles, prepositions, tenses, modals, voice, narration, error correction; vocabulary - synonyms, antonyms, idioms, one-word substitution; Punjabi-English translation.
 - **General Science:** motion, force, gravitation, work and energy, sound, light, electricity, magnetism; matter, atoms, chemical reactions, acids and bases, metals, carbon; the cell, tissues, diversity of life, health, natural resources, life processes, control and coordination, reproduction, heredity.
 - **Punjabi, Hindi, Social Studies and Maths:** school level up to Class 10; the board's syllabus PDF lists the chapters.
+
+<!-- hoa-official -->
+
+## Eligibility in detail (official notice, 2022)
+
+The notice follows the Punjab State Elementary Education (Teaching Cadre) Service Rules, 2018 and NCTE guidelines:
+
+1. **Graduation with at least 50% marks** (General) or **45%** (SC, ST, OBC, BC and persons with disabilities).
+2. A **two-year Elementary Teacher Training (ETT) course or Diploma in Elementary Education (D.El.Ed)** from a recognised institution.
+3. **PSTET Paper 1** pass.
+4. **10+2 with at least 50% marks** (General) or **45%** (reserved categories), as NCTE requires.
+5. **Punjabi** at matric level.
+
+The rules also allowed candidates who did the two-year ETT/D.El.Ed with any other 10+2 qualification to be considered **until 30 September 2025**; check how the next notice treats this.
+
+## Salary and pay
+
+- **Pay:** an ETT teacher starts at **Rs 29,200 a month** under the 7th CPC pay matrix, as given in the 2022 notice (the scan is faint; confirm the figure in the next notice).
+- New Punjab recruits draw the minimum of the scale during probation; DA, HRA and other allowances follow once probation ends.
+- ETT teachers can later move up to Head Teacher and Centre Head Teacher posts by promotion.
+
+**[Download the official ETT recruitment notification, 2022 (PDF, scanned)](assets/pdfs/punjab-ett-notification-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 

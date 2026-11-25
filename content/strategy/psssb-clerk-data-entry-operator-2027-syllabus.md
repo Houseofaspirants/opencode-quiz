@@ -2,6 +2,7 @@
 title: PSSSB Clerk cum DEO 2027 - Syllabus & Exam Pattern
 description: PSSSB Clerk cum Data Entry Operator 2027 guide from the official Advt 03/2022 plan - section-wise syllabus, 120-question pattern and real papers.
 published: 2026-11-13
+updated: 2026-11-25
 language: en
 author: Gurpreet Singh
 category: preparation-strategy
@@ -54,6 +55,42 @@ Since 2023, PSSSB has put most office vacancies into **general Clerk advertiseme
 
 - **Time:** 2 hours, MCQ on OMR sheet. **Negative marking:** 1/4 mark per wrong answer.
 - **Current PSSSB shape:** the 2026 clerk exam had a **qualifying 50-question Punjabi Part A** (25 marks needed, no negative marking) and a **100-question Part B** in 2 hours 30 minutes. Expect that structure in any 2027 round.
+
+<!-- hoa-official -->
+
+## Eligibility (Advt 03/2022 official notice)
+
+Advt 03/2022 was a big round: **917 Clerk cum Data Entry Operator posts** (Group C). Applications ran from 15 May to 15 June 2022.
+
+1. A **bachelor's degree** from a recognised university or institution.
+2. **Computer course:** at least a **120-hour course** with hands-on use of a PC or IT in office-productivity or desktop-publishing applications, from a government-recognised or **ISO 9001-certified** institution - **or** a course equivalent to **DOEACC (NIELIT) 'O' level**.
+3. A qualifying **typing test in Punjabi and English at 30 words per minute** (Punjabi in the Unicode font **Raavi**).
+4. **Matric-level Punjabi**, as required by the Punjab Civil Services Rules, 1994.
+
+## Age, fee and salary
+
+- **Age (as on 1 January 2022 in that round):** 18 to 37 years; up to 42 for SC and BC of Punjab; 45 for state and central government employees; 47 for persons with disabilities of Punjab; 40 for widows and divorcees; ex-servicemen as per the 1982 rules.
+- **Fee:** General, freedom-fighter families and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. Not refundable.
+- **Salary:** **Rs 19,900** (7th CPC). DEO is a non-common-cadre post, so the final scale and allowances are fixed by the department that hires you.
+- **Reservation** is only for residents of Punjab, and the domicile certificate must not be more than 5 years old.
+
+## Final paper plan (official, Advt 03/2022)
+
+The board's final plan for the June 2023 exam was:
+
+| Part | What | Questions / marks | Role |
+| --- | --- | --- | --- |
+| A | Matric-level Punjabi | 50 | **Qualifying - 25 marks needed**, no negative marking |
+| B | GK and current affairs (30), reasoning and maths (30), Punjab history and culture (20), English (15), Punjabi (15), ICT (10) | 120 | **Merit from Part B only**; 1/4 mark cut per wrong answer |
+
+- **Time:** **2 hours 50 minutes** for both parts together.
+- The section split is indicative and "may vary slightly", as the board itself notes.
+
+**[Download the official Clerk cum DEO notification, Advt 03/2022 (PDF)](assets/pdfs/psssb-clerk-deo-notification-2022.pdf)**
+
+**[Download the Clerk cum DEO final paper plan and syllabus (PDF)](assets/pdfs/psssb-clerk-deo-syllabus-2022.pdf)**
+
+<!-- /hoa-official -->
 
 ## How to prepare
 
