@@ -168,7 +168,7 @@ You must clear every event for your category.
 5. **Clear 40% in each paper separately.** A brilliant Paper I cannot rescue a weak Paper II.
 6. **Start the physical training early.** The 1,600 m in 7 minutes needs weeks of steady running.
 
-## Free practice sets on House of Aspirants
+## Practice sets on House of Aspirants
 
 **General Awareness**
 - [DPSP & Fundamental Duties](material-chapter-05-dpsp-and-fundamental-duties.html)

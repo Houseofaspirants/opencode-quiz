@@ -118,7 +118,7 @@ PPSC ਨੇ ਸਥਾਨਕ ਸਰਕਾਰ ਵਿਭਾਗ ਵਿੱਚ **ਬ�
 4. **ਪ੍ਰਤੀਸ਼ਤ ਅਤੇ ਲਾਭ-ਹਾਨੀ** ਦਾ ਅਭਿਆਸ ਕਰੋ।
 5. **ਕਰੰਟ ਅਫੇਅਰਜ਼** ਰੋਜ਼ ਪੜ੍ਹੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਬਿਲਡਿੰਗ ਇੰਸਪੈਕਟਰ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/ppsc-building-inspector/index.html)
 - [ਰੀਜ਼ਨਿੰਗ ਕੁਇਜ਼](subject-reasoning.html)

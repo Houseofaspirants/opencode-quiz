@@ -74,7 +74,7 @@ The topics inside each section match the [Senior Assistant syllabus](exams/psssb
 2. **Numeracy and data tables** are part of the 30 reasoning marks; practise percentages and charts.
 3. **Solve Senior Assistant and Clerk papers** - the section mix is almost the same.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Senior Assistant guide](exams/psssb-senior-assistant.html)
 - [Economy notes and quizzes](subject-gk.html)

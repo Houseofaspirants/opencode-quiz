@@ -57,7 +57,7 @@ LABEL = {
     "physical-standards": ("Physical Standards", "ਫਿਜ਼ੀਕਲ ਟੈਸਟ", "🏃"),
     "preparation": ("Preparation Strategy", "ਤਿਆਰੀ ਰਣਨੀਤੀ", "🎯"),
     "previous-papers": ("Previous Papers", "ਪਿਛਲੇ ਪੇਪਰ", "📄"),
-    "mock-tests": ("Free Mock Tests", "ਮੁਫ਼ਤ ਮੌਕ ਟੈਸਟ", "📝"),
+    "mock-tests": ("Mock Tests", "ਮੌਕ ਟੈਸਟ", "📝"),
 }
 SUB = {
     "notification": ("Vacancies, dates, fee & how to apply",
@@ -102,7 +102,8 @@ _RULES = {
                     r"ਤਿਆਰੀ ਕਿਵੇਂ|ਤਿਆਰੀ ਕੀਤੀ|ਤਿਆਰੀ ਪਲਾਨ|ਹਫ਼ਤੇ ਦੀ ਯੋਜਨਾ"),
 }
 _FEE = (r"\bfee\b", r"ਫੀਸ|ਫ਼ੀਸ")
-_PRACTICE = (r"free practice", r"ਮੁਫ਼ਤ")
+_PRACTICE = (r"practice (?:sets )?on house of aspirants",
+             r"house of aspirants 'ਤੇ (?:ਅਭਿਆਸ|ਪ੍ਰੈਕਟਿਸ)")
 # A syllabus heading that names one stage of a two-stage exam gets its own
 # page, so "Prelims syllabus" and "Mains syllabus" never share a page.
 # ("What the main paper covers" is a one-stage exam's main paper - no match.)
@@ -204,27 +205,27 @@ _DESCS = {
         "notification": "{n} notification{y}: vacancies, important dates, application fee, how to apply and the official notice, checked against the recruiting body's own documents.",
         "eligibility": "{n} eligibility{y}: age limit with category relaxation, educational qualification, the Punjabi requirement and every other condition in the official notification.",
         "exam-pattern": "{n} exam pattern{y}: number of questions, marks, time, negative marking, qualifying marks and every stage of selection, straight from the official notice.",
-        "syllabus": "{n} syllabus{y}: the official topic-by-topic syllabus for every section of the paper, the marks each section carries and free practice for each topic.",
-        "prelims-syllabus": "{n} prelims syllabus{y}: the official topic list for every preliminary paper, kept separate from the mains, with the marks and free practice.",
+        "syllabus": "{n} syllabus{y}: the official topic-by-topic syllabus for every section of the paper, the marks each section carries and practice for each topic.",
+        "prelims-syllabus": "{n} prelims syllabus{y}: the official topic list for every preliminary paper, kept separate from the mains, with the marks and practice.",
         "mains-syllabus": "{n} mains syllabus{y}: the official topic list for every paper of the main exam, kept separate from the prelims, with marks for each paper.",
-        "salary": "{n} salary{y}: the pay scale and starting pay as the official notification gives them, with the related details. A free guide in English and Punjabi.",
+        "salary": "{n} salary{y}: the pay scale and starting pay as the official notification gives them, with the related details. A guide in English and Punjabi.",
         "physical-standards": "{n} physical standards{y}: minimum height and the physical test events with qualifying marks for men and women, from the official notification.",
-        "preparation": "{n} preparation strategy{y}: a step-by-step study plan, what to study first, how to revise and practise with mocks, and free practice sets in both languages.",
+        "preparation": "{n} preparation strategy{y}: a step-by-step study plan, what to study first, how to revise and practise with mocks, and practice sets in both languages.",
     },
     "pa": {
         "notification": "{n} ਨੋਟੀਫਿਕੇਸ਼ਨ{y}: ਅਸਾਮੀਆਂ, ਜ਼ਰੂਰੀ ਤਾਰੀਖਾਂ, ਅਰਜ਼ੀ ਫੀਸ, ਅਪਲਾਈ ਕਰਨ ਦਾ ਤਰੀਕਾ ਅਤੇ official notice - ਭਰਤੀ ਕਰਨ ਵਾਲੀ ਸੰਸਥਾ ਦੇ ਆਪਣੇ ਦਸਤਾਵੇਜ਼ਾਂ ਤੋਂ।",
         "eligibility": "{n} ਯੋਗਤਾ{y}: ਉਮਰ ਹੱਦ ਅਤੇ ਵਰਗ ਅਨੁਸਾਰ ਛੋਟ, ਵਿੱਦਿਅਕ ਯੋਗਤਾ, ਪੰਜਾਬੀ ਦੀ ਸ਼ਰਤ ਅਤੇ ਬਾਕੀ ਸਾਰੀਆਂ ਸ਼ਰਤਾਂ - ਸਿੱਧਾ official notification ਤੋਂ।",
         "exam-pattern": "{n} ਪੇਪਰ ਪੈਟਰਨ{y}: ਸਵਾਲਾਂ ਦੀ ਗਿਣਤੀ, ਅੰਕ, ਸਮਾਂ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ, ਪਾਸ ਅੰਕ ਅਤੇ ਚੋਣ ਦਾ ਹਰ ਪੜਾਅ - official notice ਅਨੁਸਾਰ, ਪੰਜਾਬੀ ਵਿੱਚ।",
-        "syllabus": "{n} ਸਿਲੇਬਸ{y}: ਪੇਪਰ ਦੇ ਹਰ ਹਿੱਸੇ ਦਾ official ਸਿਲੇਬਸ, ਹਰ ਹਿੱਸੇ ਦੇ ਅੰਕ ਅਤੇ ਹਰ ਟਾਪਿਕ ਲਈ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
-        "prelims-syllabus": "{n} ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ{y}: ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ, ਮੇਨਜ਼ ਤੋਂ ਵੱਖਰੇ, ਅੰਕਾਂ ਅਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸਮੇਤ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
+        "syllabus": "{n} ਸਿਲੇਬਸ{y}: ਪੇਪਰ ਦੇ ਹਰ ਹਿੱਸੇ ਦਾ official ਸਿਲੇਬਸ, ਹਰ ਹਿੱਸੇ ਦੇ ਅੰਕ ਅਤੇ ਹਰ ਟਾਪਿਕ ਲਈ ਪ੍ਰੈਕਟਿਸ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
+        "prelims-syllabus": "{n} ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ{y}: ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ, ਮੇਨਜ਼ ਤੋਂ ਵੱਖਰੇ, ਅੰਕਾਂ ਅਤੇ ਪ੍ਰੈਕਟਿਸ ਸਮੇਤ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
         "mains-syllabus": "{n} ਮੇਨਜ਼ ਸਿਲੇਬਸ{y}: ਮੁੱਖ ਪ੍ਰੀਖਿਆ ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ, ਪ੍ਰੀਲਿਮਸ ਤੋਂ ਵੱਖਰੇ, ਹਰ ਪੇਪਰ ਦੇ ਅੰਕਾਂ ਸਮੇਤ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
-        "salary": "{n} ਤਨਖ਼ਾਹ{y}: official notification ਅਨੁਸਾਰ ਪੇਅ ਸਕੇਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਤਨਖ਼ਾਹ, ਨਾਲ ਜੁੜੀ ਹੋਰ ਜਾਣਕਾਰੀ ਸਮੇਤ। ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਮੁਫ਼ਤ ਗਾਈਡ।",
+        "salary": "{n} ਤਨਖ਼ਾਹ{y}: official notification ਅਨੁਸਾਰ ਪੇਅ ਸਕੇਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਤਨਖ਼ਾਹ, ਨਾਲ ਜੁੜੀ ਹੋਰ ਜਾਣਕਾਰੀ ਸਮੇਤ। ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਗਾਈਡ।",
         "physical-standards": "{n} ਫਿਜ਼ੀਕਲ ਟੈਸਟ{y}: ਘੱਟੋ-ਘੱਟ ਕੱਦ ਅਤੇ ਫਿਜ਼ੀਕਲ ਟੈਸਟ ਦੇ ਈਵੈਂਟ, ਮਰਦਾਂ ਅਤੇ ਔਰਤਾਂ ਲਈ ਪਾਸ ਮਾਪਦੰਡਾਂ ਸਮੇਤ - official notification ਤੋਂ।",
-        "preparation": "{n} ਤਿਆਰੀ ਰਣਨੀਤੀ{y}: ਕਦਮ-ਦਰ-ਕਦਮ ਪੜ੍ਹਾਈ ਪਲਾਨ, ਪਹਿਲਾਂ ਕੀ ਪੜ੍ਹਨਾ ਹੈ, ਰਿਵੀਜ਼ਨ ਅਤੇ ਮੌਕ ਟੈਸਟ ਦਾ ਤਰੀਕਾ, ਅਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ।",
+        "preparation": "{n} ਤਿਆਰੀ ਰਣਨੀਤੀ{y}: ਕਦਮ-ਦਰ-ਕਦਮ ਪੜ੍ਹਾਈ ਪਲਾਨ, ਪਹਿਲਾਂ ਕੀ ਪੜ੍ਹਨਾ ਹੈ, ਰਿਵੀਜ਼ਨ ਅਤੇ ਮੌਕ ਟੈਸਟ ਦਾ ਤਰੀਕਾ, ਅਤੇ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ।",
     },
 }
-_FILL = {"en": [" Free in English and Punjabi.", " Updated regularly."],
-         "pa": [" ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਮੁਫ਼ਤ।", " ਸਮੇਂ-ਸਮੇਂ ਅੱਪਡੇਟ।"]}
+_FILL = {"en": [" In English and Punjabi.", " Updated regularly."],
+         "pa": [" ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।", " ਸਮੇਂ-ਸਮੇਂ ਅੱਪਡੇਟ।"]}
 TITLE_MAX = 60
 DESC_MIN, DESC_MAX = 140, 160
 
@@ -391,7 +392,7 @@ def prepare(records, err, warn, info, landing_files=frozenset()):
         pid = str(g.get("pyq") or "")
         if pid and (ROOT / "pyq" / pid / "index.html").exists():
             ex["pyqFile"] = f"pyq/{pid}/index.html"
-        # "Free Mock Tests" opens the site's own timed mock test, on this
+        # "Mock Tests" opens the site's own timed mock test, on this
         # exam's real pattern when data/mock-patterns.json has one.
         mid = _mock_ids().get(key, "")
         ex["mockFile"] = f"mock.html?exam={mid}" if mid else "mock.html"

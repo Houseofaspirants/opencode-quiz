@@ -203,7 +203,7 @@
         <p>${t("Sign in once with Google. After that, every quiz you finish adds points to your row - nothing else to do.",
           "ਇੱਕ ਵਾਰ Google ਨਾਲ sign in ਕਰੋ। ਉਸ ਤੋਂ ਬਾਅਦ ਹਰ quiz ਦੇ points ਆਪਣੇ ਆਪ ਜੁੜਦੇ ਜਾਣਗੇ।")}</p>
         <ul class="lb2-me__perks">
-          <li>${t("Free, takes 3 seconds", "Free, 3 ਸਕਿੰਟ ਲੱਗਦੇ ਹਨ")}</li>
+          <li>${t("Takes 3 seconds", "3 ਸਕਿੰਟ ਲੱਗਦੇ ਹਨ")}</li>
           <li>${t("Only your name and photo are shown - never your email", "ਸਿਰਫ਼ ਨਾਮ ਅਤੇ photo ਦਿਖਦੀ ਹੈ - email ਕਦੇ ਨਹੀਂ")}</li>
           <li>${t("Your progress is saved across phone and laptop", "Phone ਅਤੇ laptop ਦੋਵਾਂ 'ਤੇ progress save")}</li>
         </ul>

@@ -82,7 +82,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Senior
 2. **C and C++ output questions** are quick marks - practise tracing code by hand.
 3. **Do not skip Part A.** 40 general marks separate candidates with similar CS scores.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Computer quizzes](subject-computer.html)
 - [PSSSB Clerk IT guide](exams/psssb-clerk-it.html)

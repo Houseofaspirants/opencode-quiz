@@ -116,7 +116,7 @@ references:
 2. ਬਾਗਬਾਨੀ ਦੇ ਮੁੱਖ ਵਿਸ਼ੇ ਦੁਹਰਾਓ।
 3. ਪੰਜਾਬ ਦੀ ਖੇਤੀ ਅਤੇ ਫਲਾਂ ਬਾਰੇ ਤੱਥ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਬਾਗਬਾਨੀ ਸੁਪਰਵਾਈਜ਼ਰ ਪੇਪਰ](pyq/psssb-horticulture-supervisor/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

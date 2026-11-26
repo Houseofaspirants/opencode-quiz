@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* ============================================================================
- *  HOUSE OF ASPIRANTS - FREE COMPETITIVE EXAM LEARNING PLATFORM (AUTO INDEX BUILDER)
+ *  HOUSE OF ASPIRANTS - COMPETITIVE EXAM LEARNING PLATFORM (AUTO INDEX BUILDER)
  * ----------------------------------------------------------------------------
  *  Scans the  questions/  folder and generates:
  *    • data/index.json   -> the single manifest consumed by the front-end

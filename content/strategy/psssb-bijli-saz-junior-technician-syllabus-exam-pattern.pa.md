@@ -82,7 +82,7 @@ references:
 2. **Ohm's law, power ਅਤੇ transformer ਦੇ numericals** ਪੱਕੇ ਅੰਕ ਹਨ।
 3. **Part B ਦੇ 40 ਅੰਕ** ਬਰਾਬਰ ਟਰੇਡ ਵਾਲਿਆਂ ਵਿੱਚ ਫ਼ੈਸਲਾ ਕਰਦੇ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਲਾਈਨ ਸੁਪਰਡੈਂਟ ਗਾਈਡ](exams/psssb-line-superintendent.html)
 - [Reasoning ਕੁਇਜ਼](subject-reasoning.html)

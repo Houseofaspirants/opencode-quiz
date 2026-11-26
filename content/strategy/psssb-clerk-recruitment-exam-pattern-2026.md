@@ -134,7 +134,7 @@ Allowances and in-hand pay depend on the department and the posting city, so tre
 4. **Start typing practice now.** Practise 15 minutes a day in Raavi (Punjabi) and English. Many people clear the written exam and then lose the job at the type test.
 5. **Revise, don't start new topics.** Use the last days for current affairs of the past 6 months, Punjab GK and computer basics.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Clerk previous year papers](pyq/psssb-clerk/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

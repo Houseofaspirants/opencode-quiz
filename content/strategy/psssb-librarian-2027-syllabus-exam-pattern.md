@@ -112,7 +112,7 @@ PSSSB **Advertisement No. 13 of 2022** was published on **21 May 2022**; applica
 3. **Make a one-page list of associations, networks and founders.** These are quick, sure marks.
 4. **Don't skip the 30 general questions.** In a 3-post exam, they decide the merit.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [School Librarian previous year paper](pyq/psssb-school-librarian/index.html)
 - [Computer quizzes for the ICT section](subject-computer.html)

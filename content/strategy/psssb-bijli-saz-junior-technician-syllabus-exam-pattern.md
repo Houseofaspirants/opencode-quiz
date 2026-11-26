@@ -84,7 +84,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Bijli 
 2. **Numericals on Ohm's law, power and transformers** are quick, sure marks.
 3. **Part B is only 40** but decides ties between trade-strong candidates.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Line Superintendent guide](exams/psssb-line-superintendent.html)
 - [Reasoning quizzes](subject-reasoning.html)

@@ -115,7 +115,7 @@ The board published a separate syllabus for each subject of the 4161-post round.
 3. **Keep PSTET Paper 2 valid.** Without it you may not be able to apply.
 4. **Practise with a timer.** 150 questions demand quick recall of formulas, rules and facts.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Master Cadre previous year papers](pyq/punjab-master-cadre/index.html)
 - [PSTET and teacher exam papers](pyq.html)

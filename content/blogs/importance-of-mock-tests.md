@@ -44,6 +44,6 @@ This gets your brain and body ready to sit the paper in those conditions. On exa
 
 ## Where to take mock tests
 
-House of Aspirants has a **free mock test generator**, where you can create and take as many mock tests as you want. Notes and all the study material are there too. [Take a free mock test](mock)
+House of Aspirants has a **mock test generator**, where you can create and take as many mock tests as you want. Notes and all the study material are there too. [Take a mock test](mock)
 
 **Also read:** [Forget Everything in the Exam?](blog-how-to-stop-forgetting-in-exams) · [How Many Hours I Studied Daily](blog-how-many-hours-i-studied-daily)

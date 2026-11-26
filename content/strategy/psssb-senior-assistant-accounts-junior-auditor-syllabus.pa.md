@@ -83,7 +83,7 @@ references:
 2. **Corporate accounting** ਦੇ ਸਵਾਲ Companies Act ਅਤੇ Ind AS ਦੀ ਭਾਸ਼ਾ ਵਿੱਚ ਆਉਂਦੇ ਹਨ।
 3. **40 ਆਮ ਅੰਕ** ਪੰਜਾਬ ਇਤਿਹਾਸ, reasoning ਅਤੇ ਵਿਆਕਰਣ ਨਾਲ ਪੱਕੇ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSSSB ਕਲਰਕ ਲੇਖਾ ਗਾਈਡ](exams/psssb-clerk-accounts.html)
 - [PPSC ਜੂਨੀਅਰ ਆਡੀਟਰ ਗਾਈਡ](exams/ppsc-junior-auditor.html)

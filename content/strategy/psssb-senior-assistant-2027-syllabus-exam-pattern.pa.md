@@ -99,7 +99,7 @@ references:
 3. **ਟਾਈਪਿੰਗ ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ** Raavi ਵਿੱਚ; ਬਹੁਤੇ ਉਮੀਦਵਾਰ ਟਾਈਪ ਟੈਸਟ ਵਿੱਚ ਰਹਿ ਜਾਂਦੇ ਹਨ।
 4. **ਕਲਰਕ ਦੇ ਪੇਪਰ ਹੱਲ ਕਰੋ** - ਸਿਲੇਬਸ ਲਗਭਗ ਉਹੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSSSB ਕਲਰਕ ਗਾਈਡ ਅਤੇ ਪੇਪਰ](exams/psssb-clerk.html)
 - [GK ਕੁਇਜ਼](subject-gk.html)

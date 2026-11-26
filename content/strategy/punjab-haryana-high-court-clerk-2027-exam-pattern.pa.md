@@ -125,7 +125,7 @@ references:
 4. **ਹਿੰਦੀ ਜਾਂ ਪੰਜਾਬੀ ਪਹਿਲਾਂ ਚੁਣੋ** ਅਤੇ ਅਨੁਵਾਦ ਤੇ ਚਿੱਠੀ ਲਿਖਣ ਦਾ ਅਭਿਆਸ ਕਰੋ।
 5. **English ਟਾਈਪਿੰਗ 35 wpm ਤੱਕ** ਲੈ ਜਾਓ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਹਾਈ ਕੋਰਟ ਕਲਰਕ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/punjab-haryana-high-court-clerk/index.html)
 - [English ਵਿਆਕਰਨ ਕੁਇਜ਼](subject-english.html)

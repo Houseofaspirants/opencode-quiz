@@ -2,7 +2,7 @@
   "$note": "SEO COPY (no coding needed). Hand-written, editorial copy that the landing-page generator (scripts/build_landing_pages.py) splices into the generated subject / category / topic pages. 'answer' is the 35-55 word quick-answer box (the line answer engines quote), 'intro' is an array of paragraphs prepended to the generated intro. Keep every claim factual - never dates, marks, eligibility or vacancy details. Anything you leave out falls back to the generator's data-driven templates, so a new subject/category/topic still publishes without editing this file.",
   "subjects": {
     "gk": {
-      "answer": "General Knowledge is the widest paper in every Punjab recruitment: Punjab history and polity sit beside Indian geography, economy and science. This page collects every free GK MCQ set on the portal, sorted into six categories, so you can drill one lane at a time and watch accuracy improve set by set.",
+      "answer": "General Knowledge is the widest paper in every Punjab recruitment: Punjab history and polity sit beside Indian geography, economy and science. This page collects every GK MCQ set on the portal, sorted into six categories, so you can drill one lane at a time and watch accuracy improve set by set.",
       "intro": [
         "Punjab exams lean hardest on general knowledge, and the syllabus pulls in two directions at once: the state-specific facts that only Punjab papers ask - districts, personalities, folk culture, the Sikh period - and the national frame every commission repeats, from constitutional basics to rivers, climate and the economy. Holding both in the same week of study is what separates a prepared candidate from a hopeful one.",
         "This page organises that spread into six working lanes instead of one endless list. Take polity when you want scoring that compounds, history when recall needs structure, Punjab GK when the state section is where you keep leaking marks, and geography, economy and the mixed lane as short corrections. Each lane keeps its own MCQ set, so a weak sub-topic surfaces as a pattern long before the exam does."
@@ -23,7 +23,7 @@
       ]
     },
     "punjabi": {
-      "answer": "Punjab Police and departmental papers carry a Punjabi section that becomes easy marks once grammar, muhavare and akhan turn into recall instead of reading. These free MCQs drill exactly that: one set per sub-topic, instant answers and a full explanation after every question.",
+      "answer": "Punjab Police and departmental papers carry a Punjabi section that becomes easy marks once grammar, muhavare and akhan turn into recall instead of reading. These MCQs drill exactly that: one set per sub-topic, instant answers and a full explanation after every question.",
       "intro": [
         "Punjabi is the section most candidates treat as a formality and then lose marks in anyway. The paper is rarely hard - grammar rules, muhavare, akhan, vocabulary and a short run through literature - it is simply unprepared, which shows up as a minute spent per question on something that should take ten seconds.",
         "Practise it the way you would practise reasoning: small, frequent and self-correcting. Attempt a set, read the explanation behind every wrong answer, and keep the idiom and muhavara notes to one line each. Within a fortnight the same questions stop being reading and start being recognition."
@@ -37,7 +37,7 @@
       ]
     },
     "computer": {
-      "answer": "Computer awareness is the fastest block to turn into free marks: MS Office shortcuts, internet and networking basics, operating systems, AI basics and cyber security. These MCQs cover each lane with instant explanations - start with the live mobile-phone set published below.",
+      "answer": "Computer awareness is the fastest block to turn into easy marks: MS Office shortcuts, internet and networking basics, operating systems, AI basics and cyber security. These MCQs cover each lane with instant explanations - start with the live mobile-phone set published below.",
       "intro": [
         "Computer awareness is where effort converts into marks faster than anywhere else on the paper. The questions are short and factual - what a key does, how a network addresses a device, what a protocol is called, which layer a packet belongs to - and the syllabus, while wide, repeats itself heavily from paper to paper.",
         "Because the questions are factual, the method that works is exposure: attempt, read the explanation, repeat. Fifteen minutes a day across MS Office, internet and networking, operating systems, AI basics and cyber security will outperform a weekend of reading, and every set you finish here saves a page of notes you would otherwise have to write."
@@ -168,7 +168,7 @@
       "why": "The mobile cluster is one of the most repeated blocks in computer-awareness papers because it is short, factual and universally recognisable. Recall of generations, access methods and identification codes costs almost no study time to secure, and every correct answer here is a mark nobody else has to work for either.",
       "exam": "For the papers that lean on computer awareness - Punjab Police Intelligence Assistant, Senior Assistant and Clerk - this set sits directly in the examined lane. It also supports the general computer awareness expected in other recruitment papers on this portal.",
       "expected": "Expect one to a handful of questions from this cluster in a computer block: definitions of FDMA, TDMA, CDMA and PDMA, what an ESN or MIN stands for, what IMEI contains, how to check it, and what separates SIM from eSIM. Practise the wording, not just the concept - the papers test terminology.",
-      "pyq": "Question papers reuse this cluster almost verbatim across years and posts. The way to exploit that is not to hunt for papers, but to run the same set until every distractor is familiar: previous-year style questions become free marks once you have seen the trap before."
+      "pyq": "Question papers reuse this cluster almost verbatim across years and posts. The way to exploit that is not to hunt for papers, but to run the same set until every distractor is familiar: previous-year style questions become easy marks once you have seen the trap before."
     }
   }
 }

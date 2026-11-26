@@ -137,7 +137,7 @@ PPSC advertised **157 posts of Building Inspector (Group B)** in the Department 
 4. **Practise percentage and profit-loss** for the maths questions.
 5. **Follow Punjab and national current affairs** for the last block.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Building Inspector previous year paper](pyq/ppsc-building-inspector/index.html)
 - [Reasoning quizzes](subject-reasoning.html)

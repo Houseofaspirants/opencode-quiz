@@ -1,5 +1,5 @@
 /* ============================================================================
- * revision.js | House of Aspirants - Free Competitive Exam Learning Platform
+ * revision.js | House of Aspirants - Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * The revision queue: every subject and every chapter inside it, each one
  * linking to the SAME quiz engine with the SAME parameters as an Expected MCQ

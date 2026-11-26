@@ -132,7 +132,7 @@ references:
 3. **Reasoning ਅਤੇ ਗਣਿਤ ਦੇ 30 ਅੰਕ** - ਰੋਜ਼ ਸਮਾਂ ਲਾ ਕੇ ਅਭਿਆਸ ਕਰੋ।
 4. **ਫਿੱਟ ਰਹੋ** - ਨਵੇਂ ਇਸ਼ਤਿਹਾਰ ਵਿੱਚ ਸਰੀਰਕ ਮਾਪਦੰਡ ਆਉਣ ਦੀ ਉਮੀਦ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਵਣ ਗਾਰਡ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-forest-guard/index.html)
 - [ਪੰਜਾਬ ਇਤਿਹਾਸ ਕੁਇਜ਼](subject-gk.html)

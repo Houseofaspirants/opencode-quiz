@@ -119,7 +119,7 @@ The PSSSB instructor exam held on **22 March 2025** is on this site. It followed
 4. **Mind the negative marking.** Each wrong answer costs 1/4 mark, so skip blind guesses.
 5. **Use other PSSSB papers.** Clerk, Excise Inspector and Patwari papers repeat the same GK, reasoning and computer topics.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB instructor previous year paper](pyq/psssb-instructor/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

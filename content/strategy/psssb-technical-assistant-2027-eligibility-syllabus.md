@@ -121,7 +121,7 @@ Compare this with the Advt 12/2025 post (statistics) and the Advt 01/2024 post (
 3. **Keep GK and Punjabi ticking over.** In a 2-post exam, every general mark matters.
 4. **Have your mark sheets ready.** The 50% rule and the experience exception are checked closely.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Technical Assistant previous year paper](pyq/psssb-technical-assistant/index.html)
 - [Senior Technical Assistant papers](pyq/psssb-senior-technical-assistant/index.html)

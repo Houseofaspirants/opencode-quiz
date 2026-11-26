@@ -113,7 +113,7 @@ references:
 3. ਇਸਤਰੀ ਅਤੇ ਬਾਲ ਭਲਾਈ ਸਕੀਮਾਂ।
 4. ਬਾਲ ਵਿਕਾਸ ਦੇ ਪੜਾਅ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਆਂਗਣਵਾੜੀ ਸੁਪਰਵਾਈਜ਼ਰ ਪੇਪਰ ਅਤੇ key](pyq/psssb-anganwadi-supervisor/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

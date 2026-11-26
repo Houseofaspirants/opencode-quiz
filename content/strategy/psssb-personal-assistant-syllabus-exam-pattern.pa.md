@@ -80,7 +80,7 @@ references:
 2. **English ਦੇ 15 ਅੰਕ** - PA ਨੂੰ English ਪੱਤਰ ਲਿਖਣੇ ਪੈਂਦੇ ਹਨ, ਇਸ ਲਈ ਵਿਆਕਰਣ ਮਜ਼ਬੂਤ ਰੱਖੋ।
 3. **Shorthand ਦਾ ਅਭਿਆਸ ਜਾਰੀ ਰੱਖੋ** - skill test ਹੀ ਅਖ਼ੀਰ ਫ਼ੈਸਲਾ ਕਰਦਾ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਗਾਈਡ](exams/psssb-steno-typist.html)
 - [English ਕੁਇਜ਼](subject-english.html)

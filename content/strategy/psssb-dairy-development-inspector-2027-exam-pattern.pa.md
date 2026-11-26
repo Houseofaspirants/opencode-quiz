@@ -106,7 +106,7 @@ references:
 2. ਡੇਅਰੀ ਸਾਇੰਸ - ਦੁੱਧ, ਨਸਲਾਂ, ਖ਼ੁਰਾਕ ਅਤੇ ਦੁੱਧ ਉਤਪਾਦ।
 3. ਮਿਲਕਫੈੱਡ, ਵੇਰਕਾ ਅਤੇ ਡੇਅਰੀ ਸਕੀਮਾਂ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਡੇਅਰੀ ਵਿਕਾਸ ਇੰਸਪੈਕਟਰ ਪੇਪਰ](pyq/psssb-dairy-development-inspector/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

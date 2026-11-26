@@ -61,6 +61,6 @@ Posts like Punjab Police SI, PCS and many PSSSB jobs need graduation. Most stude
 - **Do not wait for the degree to finish.** Most of my own delay came from starting serious preparation late.
 - **Check eligibility in the notification.** Age limits, degree requirements and physical standards differ by post and year. Do not depend on what friends say.
 
-All the subject notes and chapter MCQs you need for Years 1 and 2 are free on House of Aspirants in Punjabi and English.
+All the subject notes and chapter MCQs you need for Years 1 and 2 are on House of Aspirants in Punjabi and English.
 
 **Also read:** [Which Stream After 10th for Government Jobs?](blog-which-stream-after-10th-for-government-jobs) · [Punjab Police SI Preparation Strategy](blog-punjab-police-si-preparation-strategy)

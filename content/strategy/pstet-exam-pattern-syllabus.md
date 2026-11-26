@@ -122,7 +122,7 @@ For the detailed topic lists, the notification refers to the PSEB and NCERT syll
 4. **No negative marking** - attempt every question.
 5. **Plan both papers** if you hold both qualifications; CDP and the two languages are common to both.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSTET previous year papers](pyq/pstet/index.html)
 - [Punjab ETT teacher papers](pyq/punjab-ett-teacher/index.html)

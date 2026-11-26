@@ -100,7 +100,7 @@ references:
 3. **ਪੰਜਾਬ GK ਅਤੇ ਖੇਡ ਕਰੰਟ ਅਫੇਅਰਜ਼** ਪੜ੍ਹੋ।
 4. **ਤਜਰਬਾ ਸਰਟੀਫਿਕੇਟ** ਸਹੀ ਫਾਰਮੈਟ ਵਿੱਚ ਤਿਆਰ ਰੱਖੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਹੋਸਟਲ ਸੁਪਰਡੈਂਟ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-hostel-superintendent/index.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)

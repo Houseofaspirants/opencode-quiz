@@ -100,7 +100,7 @@ The board's final plan for the June 2023 exam was:
 4. **Grammar is quick marks** in both English and Punjabi; practise 20 questions a day.
 5. **Learn typing anyway.** Clerk posts need a 30 wpm Punjabi and English test.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Clerk cum DEO previous year paper](pyq/psssb-clerk-cum-data-entry-operator/index.html)
 - [General Clerk papers](pyq/psssb-clerk/index.html)

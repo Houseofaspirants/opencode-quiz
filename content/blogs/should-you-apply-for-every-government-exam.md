@@ -52,6 +52,6 @@ This is my personal view, not a rule. Some students genuinely need any job first
 
 If thousands of aspirants thought this way, more seats would reach people who need them. I can't change the system, but I can decide not to take a seat I don't want.
 
-Free mock tests, chapter MCQs and previous papers are on House of Aspirants for exactly this kind of practice.
+Mock tests, chapter MCQs and previous papers are on House of Aspirants for exactly this kind of practice.
 
 **Also read:** [From 613 to 713: Previous Year Papers](blog-previous-year-papers-613-to-713) · [Why Every Aspirant Needs a Plan B](blog-plan-b-for-government-job-aspirants)

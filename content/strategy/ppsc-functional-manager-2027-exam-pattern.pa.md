@@ -71,7 +71,7 @@ references:
 3. 11ਵੀਂ-12ਵੀਂ ਦਾ ਭੌਤਿਕ ਵਿਗਿਆਨ, ਰਸਾਇਣ ਅਤੇ ਗਣਿਤ ਦੁਹਰਾਓ।
 4. ਇੰਟਰਵਿਊ ਦੀ ਤਿਆਰੀ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਫੰਕਸ਼ਨਲ ਮੈਨੇਜਰ ਪੇਪਰ ਅਤੇ ਆਂਸਰ ਕੀ](pyq/ppsc-functional-manager/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

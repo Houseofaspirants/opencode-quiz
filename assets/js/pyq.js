@@ -1,6 +1,6 @@
 // @ts-check
 /* ============================================================================
- * pyq.js | House of Aspirants - Free Competitive Exam Learning Platform
+ * pyq.js | House of Aspirants - Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * pyq.html - every previous year paper, arranged by who conducts the exam.
  *
@@ -159,7 +159,7 @@
       exams = (m && m.exams) || [];
       if (stats && m) {
         const keys = exams.reduce((s, e) => s + (e.keyFiles != null ? e.keyFiles : e.keys), 0);
-        stats.textContent = `${exams.length} exams · ${m.papers} question papers · ${keys} answer keys, all free to download`;
+        stats.textContent = `${exams.length} exams · ${m.papers} question papers · ${keys} answer keys, all ready to download`;
       }
       renderChips();
       render();

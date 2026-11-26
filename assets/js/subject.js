@@ -150,8 +150,8 @@
      `desc` above remains the visible subtitle under the h1. */
   const metaDesc =
     level === "category"
-      ? `${category.name} expected MCQs inside ${subject.name} - pick any topic and start free MCQ practice instantly for Punjab Police, PSSSB and competitive exams.`
-      : `Free ${subject.name} expected MCQs with instant results and answer review - topic wise MCQ practice for Punjab Police, PSSSB and Punjab Government exam aspirants.`;
+      ? `${category.name} expected MCQs inside ${subject.name} - pick any topic and start MCQ practice instantly for Punjab Police, PSSSB and competitive exams.`
+      : `${subject.name} expected MCQs with instant results and answer review - topic wise MCQ practice for Punjab Police, PSSSB and Punjab Government exam aspirants.`;
   HOA.seo({
     title: docTitle,
     canonical,

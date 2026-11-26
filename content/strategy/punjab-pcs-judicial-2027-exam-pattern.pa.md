@@ -119,7 +119,7 @@ references:
 3. ਪੰਜਾਬ ਦੇ ਸਥਾਨਕ ਕਾਨੂੰਨ ਪੜ੍ਹੋ।
 4. ਹਰ ਹਫ਼ਤੇ ਉੱਤਰ ਲਿਖਣ ਦਾ ਅਭਿਆਸ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PCS (ਜੁਡੀਸ਼ੀਅਲ) ਪ੍ਰੀਲਿਮਜ਼ ਪੇਪਰ](pyq/punjab-pcs-judicial/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

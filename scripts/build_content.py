@@ -481,15 +481,15 @@ HUBS = {
         "file": "study-material.html",
         "dir": "study-material",
         "prefix": "material",
-        "eyebrow": "Free to read & download",
+        "eyebrow": "Read online & download",
         "h1": "Study Material",
-        "title": "Free Study Material for Punjab Competitive Exams",
+        "title": "Study Material for Punjab Competitive Exams",
         "description": (
-            "Free study material for Punjab Police, PSSSB and PPSC exams - "
+            "Study material for Punjab Police, PSSSB and PPSC exams - "
             "PDFs, notes and downloads for every subject, discovered from the "
             "files themselves with no sign-up."
         ),
-        "keywords": ("Free Study Material Punjab, Punjab Police study material "
+        "keywords": ("Study Material Punjab, Punjab Police study material "
                      "PDF, PSSSB notes download, study material in Punjabi"),
         "lead": (
             "Every file dropped into the Study Material folders lands here: "
@@ -498,7 +498,7 @@ HUBS = {
             "the file itself, none of it typed in by hand."
         ),
         "answer": (
-            "Study material here is free and needs no account: PDFs, notes and "
+            "Study material here needs no account: PDFs, notes and "
             "downloads are listed together under one heading whatever their "
             "format, filtered by subject and language, and searchable by title, "
             "file name and keyword."
@@ -521,19 +521,19 @@ HUBS = {
         "h1": "Study Notes for Punjab Competitive Exams",
         "title": "Punjab Exam Study Notes | House of Aspirants",
         "description": (
-            "Free subject-wise study notes for Punjab Police, PSSSB and PPSC "
+            "Subject-wise study notes for Punjab Police, PSSSB and PPSC "
             "aspirants - reading time, difficulty, exam tags, table of contents "
             "and related quizzes."
         ),
         "keywords": ("Study Notes Punjab, Punjab Police notes, PSSSB study notes, "
-                     "PPSC notes, free exam notes Punjabi English"),
+                     "PPSC notes, exam notes Punjabi English"),
         "lead": (
             "Every note is written by the House of Aspirants editorial team and "
             "organised the way you actually revise: one subject, one idea, one "
             "read. Notes link straight into the quiz set that tests them."
         ),
         "answer": (
-            "Study notes here are free, subject-wise pages that carry reading "
+            "Study notes here are subject-wise pages that carry reading "
             "time, difficulty and exam tags, so you know what you are opening "
             "before you start. Every note ends with related quizzes, so revising "
             "a concept and proving you remember it happens in one click."
@@ -638,7 +638,7 @@ HUBS = {
             "PSTET and others - split into notification, eligibility, exam "
             "pattern, syllabus, salary and physical standards, checked against "
             "the official notification. Every page is available in English and "
-            "Punjabi and links to free practice for that exam."
+            "Punjabi and links to practice for that exam."
         ),
         "empty_h3": "No exam published yet",
         "empty_p": ("Exam pages are being checked against the official "
@@ -881,14 +881,14 @@ HUBS = {
         "dir": "pdfs",
         "prefix": "",            # registry only - no per-PDF page
         "eyebrow": "Download & Study Offline",
-        "h1": "Free PDFs for Punjab Exams",
-        "title": "Free PDFs for Punjab Exams | House of Aspirants",
+        "h1": "PDFs for Punjab Exams",
+        "title": "PDFs for Punjab Exams | House of Aspirants",
         "description": (
-            "Free downloadable PDFs for Punjab exam preparation - notes, "
+            "Downloadable PDFs for Punjab exam preparation - notes, "
             "question sets and revision sheets, each with a subject, exam tags "
             "and a direct download button."
         ),
-        "keywords": ("free PDF Punjab Police notes, current affairs PDF, exam "
+        "keywords": ("PDF Punjab Police notes, current affairs PDF, exam "
                      "revision PDF, Punjab GK PDF"),
         "lead": (
             "Download, print, revise. Every PDF listed here is a real file hosted "
@@ -906,7 +906,7 @@ HUBS = {
                     "sets. Until they land, every quiz works offline once you "
                     "have visited the site."),
         "empty_cta": ("quiz.html?mode=daily", "Open the daily quiz"),
-        "schema_hub": "Free PDFs",
+        "schema_hub": "PDFs",
     },
     # ---- Phase 4 collections -----------------------------------------------
     # The remaining content collections of the platform brief. Same builder,
@@ -954,12 +954,12 @@ HUBS = {
         "h1": "Subject Guides for Punjab Competitive Exams",
         "title": "Subject Guides | House of Aspirants",
         "description": (
-            "Free subject guides for Punjab Police, PSSSB and PPSC - what the "
+            "Subject guides for Punjab Police, PSSSB and PPSC - what the "
             "syllabus asks, the order that works, what to practise first and "
             "where each topic is tested."
         ),
         "keywords": ("subject guide Punjab exams, Punjab Police syllabus guide, "
-                     "PSSSB subject preparation, PPSC subject guide free"),
+                     "PSSSB subject preparation, PPSC subject guide"),
         "lead": (
             "One guide per subject: what the syllabus asks for, the order that "
             "actually works, the books and notes that cover it, and the quizzes "
@@ -1089,7 +1089,7 @@ HUBS = {
         "description": (
             "Book recommendations for Punjab exam preparation - what each book "
             "covers, who it is actually for, which chapters matter and how to "
-            "use it alongside free notes."
+            "use it alongside notes."
         ),
         "keywords": ("best books Punjab Police exam, PSSSB book list, Punjab "
                      "GK book recommendation, which book for PPSC preparation"),
@@ -1101,15 +1101,15 @@ HUBS = {
         "answer": (
             "A recommendation names the book and the subject it serves, says "
             "who will get value from it and who should pass, and maps its "
-            "chapters onto the free notes and quizzes on this portal so you "
+            "chapters onto the notes and quizzes on this portal so you "
             "never buy twice."
         ),
         "empty_h3": "No book recommended yet",
         "empty_p": ("Books are listed only after they have been used for a "
                     "full preparation cycle, so nothing is recommended from a "
-                    "blurb. The free notes below already cover the first "
+                    "blurb. The notes below already cover the first "
                     "version of every subject."),
-        "empty_cta": ("study-notes.html", "Start with the free notes"),
+        "empty_cta": ("study-notes.html", "Start with the notes"),
         "schema_hub": "Book Recommendations",
     },
 }
@@ -1151,7 +1151,7 @@ NAV_ENTRY = {                        # collection -> (English label, emoji)
     "blogs": ("Topper's Diary", "\U0001f4d4"),
     "news": ("News", "\U0001f4f0"),
     "announcements": ("Announcements", "\U0001f4e3"),
-    "pdfs": ("Free PDFs", "\U0001f4c4"),
+    "pdfs": ("PDFs", "\U0001f4c4"),
     "personal-notes": ("Personal Notes", "\U0001f4d3"),
     "subject-guides": ("Subject Guides", "\U0001f4da"),
     "topic-guides": ("Topic Guides", "\U0001f4d1"),
@@ -2360,22 +2360,22 @@ def study_description(title, subject, lang="en"):
     describe a file it has never been told the type of. A Punjabi page is
     described in Punjabi (`subject` is then the subject's Punjabi name)."""
     if lang == "pa":
-        text = f"{title} - House of Aspirants ਵੱਲੋਂ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ।"
+        text = f"{title} - House of Aspirants ਵੱਲੋਂ ਪੜ੍ਹਾਈ ਸਮੱਗਰੀ।"
         clauses = [
             f" ਵਿਸ਼ਾ: {subject}, ਭਾਸ਼ਾ ਅਤੇ ਅਧਿਆਇ ਅਨੁਸਾਰ ਤਰਤੀਬਵਾਰ।",
             " ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ ਔਫਲਾਈਨ ਦੁਹਰਾਈ ਲਈ ਰੱਖੋ।",
             " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ।",
             " ਪੰਜਾਬ ਪੁਲਿਸ ਅਤੇ PSSSB ਦੀ ਤਿਆਰੀ ਲਈ।",
-            " ਹਰ ਉਮੀਦਵਾਰ ਲਈ ਮੁਫ਼ਤ।",
+            " ਹਰ ਉਮੀਦਵਾਰ ਲਈ।",
         ]
     else:
-        text = f"{title} - free study material from House of Aspirants."
+        text = f"{title} - study material from House of Aspirants."
         clauses = [
             f" {subject} material, filed under its subject, language and chapter.",
             " Read it online or keep it for offline revision.",
             " No sign-up, no email wall, no paid tier.",
             " Listed under Study Material with its language and reading time.",
-            " Free for every aspirant.",
+            " Made for every aspirant.",
         ]
     for _ in range(4):
         for clause in clauses:
@@ -2386,8 +2386,8 @@ def study_description(title, subject, lang="en"):
         if len(text) >= 140:
             break
     if len(text) < 140:
-        text += (" ਪੜ੍ਹਨ ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਬਿਲਕੁਲ ਮੁਫ਼ਤ।" if lang == "pa"
-                 else " Free to read and download, generated from the file name.")
+        text += (" ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ ਡਾਊਨਲੋਡ ਕਰੋ।" if lang == "pa"
+                 else " Read online or download, generated from the file name.")
     while len(text) > 160:
         text = text.rsplit(" ", 1)[0]
     if not (140 <= len(text) <= 160):          # pragma: no cover - guarded gate
@@ -3257,12 +3257,12 @@ def pdf_description(title, label):
     clauses = [
         " One click, no sign-up and no email wall.",
         f" {label} material, filed straight from the file name.",
-        " Free to download, print and keep for offline revision.",
+        " Download, print and keep it for offline revision.",
         " The page was generated from the file name.",
         " Filed in the House of Aspirants library.",
         " Hosted on this site.",
         " No account needed.",
-        " Free.",
+        " Ready to read.",
     ]
     for _ in range(4):
         for clause in clauses:
@@ -3275,7 +3275,7 @@ def pdf_description(title, label):
     if len(text) < 140:
         # Nothing else fits whole: one longer sentence, then a word-boundary
         # trim keeps the result inside the site's 140-160 window.
-        text += " Hosted on this site, indexed in the archives and free for " \
+        text += " Hosted on this site, indexed in the archives and open to " \
                 "every aspirant."
     while len(text) > 160:
         text = text.rsplit(" ", 1)[0]
@@ -3714,7 +3714,7 @@ def related_quizzes(record, index, landing, limit=3):
 
 
 _QZ_STOP = {"part", "chapter", "english", "punjabi", "the", "and", "for", "with",
-            "mcq", "mcqs", "current", "affairs", "notes", "pdf", "free", "study",
+            "mcq", "mcqs", "current", "affairs", "notes", "pdf", "study",
             "material", "paper", "question", "questions", "from", "into"}
 
 
@@ -4025,7 +4025,7 @@ EXPLORE_BY_COLL = {
     ],
     "strategy": [
         ("articles.html", "Study guides", "Long-form preparation guides"),
-        ("pdfs.html", "Free PDFs", "Notes and sheets to study from"),
+        ("pdfs.html", "PDFs", "Notes and sheets to study from"),
         ("live-sessions.html", "Live sessions", "Bring the doubts live"),
     ],
     "sessions": [
@@ -4096,7 +4096,7 @@ EXPLORE_BY_COLL = {
     "subject-guides": [
         ("study-notes.html", "Study notes", "One idea per read"),
         ("quiz.html?mode=daily", "Practice", "Test the syllabus"),
-        ("pdfs.html", "Free PDFs", "Sheets to study from"),
+        ("pdfs.html", "PDFs", "Sheets to study from"),
     ],
     "topic-guides": [
         ("study-notes.html", "Study notes", "The concepts around it"),
@@ -4114,7 +4114,7 @@ EXPLORE_BY_COLL = {
         ("announcements.html", "Announcements", "What the site added next"),
     ],
     "book-recommendations": [
-        ("pdfs.html", "Free PDFs", "Start free first"),
+        ("pdfs.html", "PDFs", "Start here"),
         ("study-notes.html", "Study notes", "The same syllabus, no cost"),
         ("exams.html", "Exams: syllabus & eligibility", "The syllabus a book has to cover"),
     ],
@@ -5624,7 +5624,7 @@ def ca_section_page(page):
         lead = (f"Everything published in {esc(name)} for {esc(label)}, newest "
                 f"first. One list, one tap to read or download.")
         answer = (f"{len(items)} document{'s' if len(items) != 1 else ''} of "
-                  f"{name} current affairs for {label}, free to read online or "
+                  f"{name} current affairs for {label}, to read online or "
                   f"download as a PDF.")
     else:
         listing = ""
@@ -5808,8 +5808,8 @@ def stamp_ca_languages(records):
         if month:
             title = f"ਕਰੰਟ ਅਫੇਅਰਜ਼ {CA_MONTHS_PA[month]} {year} PDF (ਪੰਜਾਬੀ)".replace("  ", " ")
             desc = (f"{title}: ਪੰਜਾਬ ਪੁਲਿਸ, PSSSB ਅਤੇ PPSC ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮਹੀਨੇ ਦੇ "
-                    f"ਸਾਰੇ ਮਹੱਤਵਪੂਰਨ ਕਰੰਟ ਅਫੇਅਰਜ਼ ਪੰਜਾਬੀ ਵਿੱਚ। ਮੁਫ਼ਤ ਡਾਊਨਲੋਡ ਕਰੋ।")
-            for pad in (" House of Aspirants ਵੱਲੋਂ।", " ਬਿਨਾਂ ਸਾਈਨ-ਅੱਪ।", " ਮੁਫ਼ਤ।"):
+                    f"ਸਾਰੇ ਮਹੱਤਵਪੂਰਨ ਕਰੰਟ ਅਫੇਅਰਜ਼ ਪੰਜਾਬੀ ਵਿੱਚ। ਡਾਊਨਲੋਡ ਕਰੋ।")
+            for pad in (" House of Aspirants ਵੱਲੋਂ।", " ਬਿਨਾਂ ਸਾਈਨ-ਅੱਪ।", " ਆਨਲਾਈਨ ਪੜ੍ਹੋ।"):
                 if len(desc) < 140 and len(desc) + len(pad) <= 160:
                     desc += pad
             rec["title"] = rec["meta"]["title"] = title[:60]
@@ -6151,9 +6151,9 @@ def study_section_page(p, by_file, rows_by_id):
     </section>""")
         sections = blocks
         count_line = f'{p["count"]} {t["notes"]} &middot; {t["lang"]}'
-        desc_base = (f"{name}: ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK ਦੇ ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ।"
+        desc_base = (f"{name}: ਭਾਰਤ GK ਅਤੇ ਪੰਜਾਬ GK ਦੇ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ।"
                      if lang == "pa" else
-                     f"Free {name} study notes in English: India GK and Punjab GK, by subject.")
+                     f"{name} study notes in English: India GK and Punjab GK, by subject.")
     else:
         if kind == "chapter":
             ch = p["chapter"]
@@ -6180,9 +6180,9 @@ def study_section_page(p, by_file, rows_by_id):
             # "English notes in English" says nothing twice: the language
             # subjects drop the language phrase.
             same = row["id"] == ("punjabi" if lang == "pa" else "english")
-            title = (f"{of} ਨੋਟਸ{'' if same else ' ਪੰਜਾਬੀ ਵਿੱਚ'} - ਮੁਫ਼ਤ PDF"
+            title = (f"{of} ਨੋਟਸ{'' if same else ' ਪੰਜਾਬੀ ਵਿੱਚ'} - PDF"
                      if lang == "pa" else
-                     clip(f"{name} Study Notes{'' if same else ' in English'} - Free PDFs", 60))
+                     clip(f"{name} Study Notes{'' if same else ' in English'} - PDFs", 60))
             h1 = f"{of} ਨੋਟਸ" if lang == "pa" else f"{name} Study Notes"
             lead = (f"{of} ਅਧਿਆਇ-ਵਾਰ ਨੋਟਸ, ਪੰਜਾਬੀ ਵਿੱਚ। ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।"
                     if lang == "pa" else str(row.get("description") or ""))
@@ -6218,9 +6218,9 @@ def study_section_page(p, by_file, rows_by_id):
       </div>
     </section>"""]
             count_line = f'{n_notes} {t["notes"] if n_notes != 1 else t["note"]} &middot; {t["lang"]}'
-            desc_base = (f"{of} ਮੁਫ਼ਤ ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ, ਅਧਿਆਇ-ਵਾਰ।"
+            desc_base = (f"{of} ਪੜ੍ਹਾਈ ਨੋਟਸ ਪੰਜਾਬੀ ਵਿੱਚ, ਅਧਿਆਇ-ਵਾਰ।"
                          if lang == "pa" else
-                         f"Free {name} study notes in English, chapter by chapter.")
+                         f"{name} study notes in English, chapter by chapter.")
     crumbs.append((h1 if kind != "subject" else name, url, ""))
     # Every top-level subject, in this page's language: the static way in to
     # each section page (the header menu is built by script).
@@ -6240,13 +6240,13 @@ def study_section_page(p, by_file, rows_by_id):
     if lang == "pa":
         desc = fit_study_description(desc_base, [
             " ਪੰਜਾਬ ਪੁਲਿਸ ਅਤੇ PSSSB ਦੀ ਤਿਆਰੀ ਲਈ।", " ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ PDF ਡਾਊਨਲੋਡ ਕਰੋ।",
-            " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ।", " ਹਰ ਉਮੀਦਵਾਰ ਲਈ ਮੁਫ਼ਤ।",
-            " House of Aspirants ਵੱਲੋਂ।"], " ਪੜ੍ਹਨ ਅਤੇ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਬਿਲਕੁਲ ਮੁਫ਼ਤ।")
+            " ਕੋਈ ਸਾਈਨ-ਅੱਪ ਨਹੀਂ, ਕੋਈ ਫ਼ੀਸ ਨਹੀਂ।", " ਹਰ ਉਮੀਦਵਾਰ ਲਈ।",
+            " House of Aspirants ਵੱਲੋਂ।"], " ਆਨਲਾਈਨ ਪੜ੍ਹੋ ਜਾਂ ਡਾਊਨਲੋਡ ਕਰੋ।")
     else:
         desc = fit_study_description(desc_base, [
             " For Punjab Police and PSSSB exams.", " Read online or download the PDF.",
-            " No sign-up, no fee.", " Free for every aspirant.",
-            " From House of Aspirants."], " Free to read and download.")
+            " No sign-up, no fee.", " Made for every aspirant.",
+            " From House of Aspirants."], " Read online or download.")
 
     nodes = [webpage_node(url, title, desc, f"{url}#breadcrumb", kind="CollectionPage"),
              breadcrumb_node({"id": f"{url}#breadcrumb",
@@ -6387,7 +6387,7 @@ STUDY_RECORDS = []
 def hub_fallback(coll, index):
     """What an empty hub shows instead of "nothing published yet" when the
     thing it names already lives elsewhere on the site: the Expected MCQs nav
-    item opens on the live MCQ sets, Free PDFs and Study Notes on the study
+    item opens on the live MCQ sets, PDFs and Study Notes on the study
     material. Empty string when there is nothing real to show either."""
     if coll == "expected-mcqs":
         sets = [(s, t) for s in index.get("subjects", [])
@@ -6925,8 +6925,8 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
             downloads straight from this site's own storage.</p></div>
           <div class="card card-pad"><h3>Tagged</h3><p class="muted">Subject and
             exam tags tell you which paper the sheet belongs to.</p></div>
-          <div class="card card-pad"><h3>Free</h3><p class="muted">Everything on
-            this portal stays free - study material included.</p></div>
+          <div class="card card-pad"><h3>No sign-up</h3><p class="muted">Everything on
+            this portal opens without an account - study material included.</p></div>
         </div>
       </div>
     </section>""")
@@ -7663,7 +7663,7 @@ def write_feed(items):
             "  <title>House of Aspirants</title>\n"
             f"  <link>{DOMAIN}/</link>\n"
             "  <description>Study notes, current affairs, magazine issues, live "
-            "sessions and recruitment updates for Punjab competitive exams - free "
+            "sessions and recruitment updates for Punjab competitive exams - "
             "in Punjabi and English.</description>\n"
             "  <language>en-in</language>\n"
             f'  <atom:link href="{DOMAIN}/feed.xml" rel="self" '
@@ -8075,7 +8075,7 @@ def fit_description(text):
             break
         out.append(w)
     desc = " ".join(out)
-    for w in ("Free", "to", "read", "in", "Punjabi", "and", "English,", "with",
+    for w in ("Read", "in", "Punjabi", "and", "English,", "with",
               "reading", "time", "and", "exam", "tags."):
         cand = f"{desc} {w}"
         if len(cand) > 160:

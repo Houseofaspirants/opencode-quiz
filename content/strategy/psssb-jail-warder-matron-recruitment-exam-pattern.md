@@ -159,7 +159,7 @@ Since October 2022 every PSSSB paper also carries a **qualifying matric-level Pu
 4. **Secure the Punjabi part.** 50% in Part A is a hard floor.
 5. **Watch the negative marking.** At -1/4, skip a question unless you can rule out at least one option.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Jail Warder previous year papers](pyq/psssb-jail-warder/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

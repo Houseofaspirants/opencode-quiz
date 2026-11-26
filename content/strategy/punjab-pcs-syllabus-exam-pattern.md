@@ -209,7 +209,7 @@ Apart from the compulsory race, you must clear **any two** of the other three ev
 4. **Practise writing in Punjabi and English.** The language papers and the essay are 350 marks together.
 5. **Read current affairs daily** with a Punjab angle - state budget, schemes, water issues and agriculture.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PCS syllabus and old papers](pyq/ppsc-punjab-civil-services/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

@@ -122,7 +122,7 @@ In other words, for this round your **shorthand accuracy is your rank**. Clearin
 4. **Prepare Part B like a clerk paper.** GK, Punjab, English, reasoning and computer basics are the safe bet until the syllabus is out.
 5. **Keep your 120-hour computer certificate ready.** A missing certificate is a common reason for rejection.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Steno-Typist previous year paper](pyq/psssb-steno-typist/index.html)
 - [Clerk papers for Part B practice](pyq/psssb-clerk/index.html)

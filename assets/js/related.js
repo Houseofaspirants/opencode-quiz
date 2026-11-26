@@ -1,5 +1,5 @@
 /* ============================================================================
- * related.js | House of Aspirants - Free Competitive Exam Learning Platform
+ * related.js | House of Aspirants - Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * Intelligent internal-linking modules rendered on subject pages:
  *

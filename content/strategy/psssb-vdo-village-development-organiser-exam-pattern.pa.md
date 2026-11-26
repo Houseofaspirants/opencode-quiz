@@ -84,7 +84,7 @@ references:
 2. **ਪੇਂਡੂ ਸਕੀਮਾਂ ਅਤੇ ਪੰਚਾਇਤੀ ਰਾਜ** GK ਲਈ ਜ਼ਰੂਰੀ।
 3. **ਪੰਚਾਇਤ ਸਕੱਤਰ ਦਾ 2016 ਦਾ ਪੇਪਰ** ਹੱਲ ਕਰੋ - ਉਹੀ ਵਿਭਾਗ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਪੰਚਾਇਤ ਸਕੱਤਰ ਗਾਈਡ ਅਤੇ 2016 ਦਾ ਪੇਪਰ](exams/punjab-panchayat-secretary.html)
 - [ਹਿਸਾਬ ਕੁਇਜ਼](subject-quant.html)

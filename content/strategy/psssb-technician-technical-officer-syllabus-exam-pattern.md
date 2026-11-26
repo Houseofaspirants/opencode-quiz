@@ -82,7 +82,7 @@ The three posts were advertised in **PSSSB Advt 02/2024**, together with [Labour
 2. **Regulations (unit 8)** are pure memory - make a one-page table of each CAR.
 3. **Part B is 40 marks**; a week of Punjab history and grammar is enough to make it safe.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Technical Assistant guide](exams/psssb-technical-assistant.html)
 - [Computer quizzes](subject-computer.html)

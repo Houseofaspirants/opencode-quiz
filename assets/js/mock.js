@@ -6,7 +6,7 @@
  * paper's real pattern (data/mock-patterns.json): sections, questions per
  * section, time, marking and the easy/medium/hard mix, plus how many of its
  * questions are still NEW for this student (HOA.seen). quiz.js builds the
- * paper. "Custom mock" keeps the free builder (any subject, count, time).
+ * paper. "Custom mock" keeps the builder (any subject, count, time).
  * Zero questions live in this file - everything is read from /questions.
  * ========================================================================== */
 (async () => {
@@ -172,7 +172,7 @@
     render();
   });
 
-  /* ------------------------------------------- Custom mock (free builder) */
+  /* ------------------------------------------- Custom mock (builder) */
   const subjects = SUBJECTS.map((s) => ({
     ...s,
     qCount: s.topics.filter((t) => t.available).reduce((n, t) => n + t.count, 0),

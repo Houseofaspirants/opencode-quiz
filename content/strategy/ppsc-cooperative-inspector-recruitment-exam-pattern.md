@@ -144,7 +144,7 @@ The full PPSC "General Information" booklet for the **320-post Inspector, Cooper
 4. **Mind the negative marking.** At -1 against +4, a guess is worth it only if you can rule out two options.
 5. **Reasoning is the scoring part.** 40 questions of series, coding, directions, percentages and data tables - practise them timed until they take under a minute each.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Cooperative Inspector mock test in the exam pattern](mock?exam=ppsc-cooperative-inspector)
 - [Cooperative Inspector previous year paper](pyq/ppsc-cooperative-inspector/index.html)

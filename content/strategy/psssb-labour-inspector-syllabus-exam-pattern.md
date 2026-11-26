@@ -77,7 +77,7 @@ Labour Inspector Grade-I was advertised in **PSSSB Advt 02/2024**, which also ha
 2. **Labour schemes and laws come in GK** - the four labour codes and Punjab's labour welfare schemes are worth a revision.
 3. **GK and reasoning are half of Part B**; make them daily habits.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Clerk guide and papers](exams/psssb-clerk.html)
 - [Excise Inspector guide](exams/psssb-excise-inspector.html)

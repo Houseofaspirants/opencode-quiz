@@ -106,7 +106,7 @@ references:
 3. **ITI ਜਾਂ ਡਿਪਲੋਮਾ ਦੇ ਨੋਟਸ** ਵਰਤੋ, ਸਿਲੇਬਸ ਉਸੇ ਕੋਰਸ ਵਰਗਾ ਹੈ।
 4. **30 ਆਮ ਸਵਾਲ ਨਾ ਛੱਡੋ** - ਥੋੜ੍ਹੀਆਂ ਅਸਾਮੀਆਂ ਵਿੱਚ 5 ਅੰਕ ਵੀ ਬਹੁਤ ਰੈਂਕ ਬਦਲਦੇ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਸਰਵੇਅਰ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-surveyor/index.html)
 - [ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਦੇ ਪੇਪਰ](pyq/psssb-junior-draftsman/index.html)

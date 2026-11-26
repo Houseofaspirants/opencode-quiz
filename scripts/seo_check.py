@@ -2154,7 +2154,7 @@ if landing_pages:
     # STUDY_SUBJECT_PA_OF in scripts/build_content.py.
     for p_ in sorted(ROOT.glob("pa/study-*.html")):
         h = read_audit_source(p_, encoding="utf-8")
-        for m_ in re.finditer(r"ਦਾ [\u0A00-\u0A7F.]+ ਦੇ (?:ਨੋਟਸ|ਮੁਫ਼ਤ|ਅਧਿਆਇ|ਇਸ)", h):
+        for m_ in re.finditer(r"ਦਾ [\u0A00-\u0A7F.]+ ਦੇ (?:ਨੋਟਸ|ਪੜ੍ਹਾਈ|ਅਧਿਆਇ|ਇਸ)", h):
             errors.append(f"pa/{p_.name}: Punjabi grammar - '{m_.group(0)}' "
                           f"needs the oblique form (ਦੇ ... ਦੇ)")
     notes.append(f"study notes: {len(notes_items)} page(s), {n_note_pa} in Punjabi, "
@@ -2542,7 +2542,7 @@ notes.append("access: anonymous-first Google sign-in (site.auth) - quizzes and n
 # hide a result — quiz attempt pages carry no rotator and no exit popup.
 idx_html = read_audit_source(ROOT / "index.html", encoding="utf-8")
 for marker in (
-    "Prepare Smarter", "Join Telegram", "Start Free Expected MCQs",
+    "Prepare Smarter", "Join Telegram", "Start Expected MCQs",
     "Learn from Someone Who Cleared the Exam", "Gurpreet Singh",
     "tg-value-grid", "subjects-layout", 'class="tg-rail"',
 ):

@@ -86,7 +86,7 @@ Candidates with a **B.Com or a higher commerce degree** get preference - **5 ext
 2. **Rural schemes and Panchayati Raj** fit the GK part for a post in this department.
 3. **Use the Panchayat Secretary 2016 paper** for the same department's style.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Panchayat Secretary guide and 2016 paper](exams/punjab-panchayat-secretary.html)
 - [Maths quizzes](subject-quant.html)

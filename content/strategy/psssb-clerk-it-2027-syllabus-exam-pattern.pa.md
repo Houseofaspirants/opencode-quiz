@@ -100,7 +100,7 @@ Part B ਵਿੱਚ ਹਰ ਸਵਾਲ 1 ਅੰਕ, **ਗ਼ਲਤ 'ਤੇ 1/4 
 4. **ਟਾਈਪਿੰਗ ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।** Raavi ਵਿੱਚ 30 wpm ਲਈ ਹਫ਼ਤੇ ਲੱਗਦੇ ਹਨ।
 5. **Part A ਨੂੰ ਹਲਕਾ ਨਾ ਲਓ** - 50% ਤੋਂ ਘੱਟ ਤਾਂ ਬਾਕੀ ਪੇਪਰ ਚੈੱਕ ਹੀ ਨਹੀਂ ਹੁੰਦਾ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਕਲਰਕ IT ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-clerk-it/index.html)
 - [ਆਮ ਕਲਰਕ ਦੇ ਪੇਪਰ](pyq/psssb-clerk/index.html)

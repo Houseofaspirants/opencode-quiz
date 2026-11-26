@@ -111,7 +111,7 @@ All 13 Clerk (Legal) posts ask for the same three things:
 4. **Constitution is shared marks.** It helps in the GK part too.
 5. **Keep 30 GK marks safe** with Punjab history, reasoning and grammar.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Clerk Legal previous year papers](pyq/psssb-clerk-legal/index.html)
 - [PCS (Judicial) preliminary paper](pyq/punjab-pcs-judicial/index.html)

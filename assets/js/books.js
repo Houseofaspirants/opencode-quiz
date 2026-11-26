@@ -1,5 +1,5 @@
 /* ============================================================================
- * books.js | House of Aspirants - Free Competitive Exam Learning Platform
+ * books.js | House of Aspirants - Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * Renders the Books shelf from data/books.json as a RECOMMENDATION LIST, not
  * a catalogue. A card carries exactly four things - cover, title, author and
@@ -176,7 +176,7 @@
         if (groupsEl) groupsEl.hidden = true;
         grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
         <div class="es-icon">📚</div><h3>The shelf is being stocked</h3>
-        <p>Books are added one at a time. Until the first one lands, the free
+        <p>Books are added one at a time. Until the first one lands, the
            study material covers the syllabus.</p></div>`;
         return;
       }
@@ -186,6 +186,6 @@
       if (groupsEl) groupsEl.hidden = true;
       grid.innerHTML = `<div class="empty-state" style="grid-column:1/-1">
         <div class="es-icon">⚠️</div><h3>The shelf could not load</h3>
-        <p>Refresh the page, or start with the free study material.</p></div>`;
+        <p>Refresh the page, or start with the study material.</p></div>`;
     });
 })();

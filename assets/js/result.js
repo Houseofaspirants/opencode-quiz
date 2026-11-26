@@ -411,7 +411,7 @@
     x.fillStyle = "#f5c040"; x.font = `700 36px ${FONT}`;
     x.fillText("houseofaspirants.in", 80, 1010);
     x.fillStyle = "#a8b2cc"; x.font = `600 30px ${FONT}`;
-    const tail = "Free MCQs · Punjab exams";
+    const tail = "MCQs · Punjab exams";
     x.fillText(tail, S - 80 - x.measureText(tail).width, 1010);
     return new Promise((res) => c.toBlob((b) => res(b), "image/png"));
   }

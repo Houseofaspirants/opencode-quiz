@@ -1,6 +1,6 @@
 ---
 title: Sunday Live - Doubts & Rank 2 Strategy (4 Oct 2026)
-description: Free Sunday live on Telegram at 8 PM - ask Gurpreet Singh (Punjab Police SI Rank 2) any doubt about Punjab exams, preparation strategy or the website.
+description: Sunday live on Telegram at 8 PM - ask Gurpreet Singh (Punjab Police SI Rank 2) any doubt about Punjab exams, preparation strategy or the website.
 published: 2026-10-03
 date: 2026-10-04
 time: 8:00 PM (IST)
@@ -33,4 +33,4 @@ Every Sunday at **8 PM** I go live on the House of Aspirants Telegram channel. T
 2. Send your doubt in the channel comments **before Sunday evening**, so I can answer it first.
 3. On **Sunday at 8 PM**, open the channel and tap the live stream.
 
-The live is free and open to everyone. After the session, the main questions and answers will be added to this page.
+The live is open to everyone. After the session, the main questions and answers will be added to this page.

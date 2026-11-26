@@ -88,7 +88,7 @@ references:
 2. 12ਵੀਂ ਦੀ ਸਾਇੰਸ ਅਤੇ ਲੈਬ ਸੁਰੱਖਿਆ।
 3. ਖੇਤੀ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ - ਮਿੱਟੀ, ਖਾਦਾਂ, ਬੀਜ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਰੀਸਟੋਰਰ ਅਤੇ ਲੈਬ ਅਸਿਸਟੈਂਟ ਪੇਪਰ](pyq/psssb-restorer-lab-assistant/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

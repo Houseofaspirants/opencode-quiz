@@ -194,7 +194,7 @@ TEMPLATES = {
             "## What to use instead",
         ],
         "plan": [
-            {"src": "hub:pdfs", "eyebrow": "Free PDFs",
+            {"src": "hub:pdfs", "eyebrow": "PDFs",
              "title": "What you can download here instead", "limit": 1},
             {"src": "coll:notes", "eyebrow": "Related notes",
              "title": "The same ground, in note form", "limit": 3},
@@ -252,7 +252,7 @@ TEMPLATES = {
             {"src": "coll:strategy", "eyebrow": "Exam pattern & syllabus",
              "title": "How to prepare for this post", "limit": 3},
             {"src": "hub:pdfs", "eyebrow": "Books",
-             "title": "Free PDFs for this exam", "limit": 1},
+             "title": "PDFs for this exam", "limit": 1},
             {"src": "coll:previous-year-questions", "eyebrow": "Previous papers",
              "title": "Previous Papers", "limit": 3,
              "reserved": "Papers are listed only when the official PDF exists "
@@ -476,7 +476,7 @@ TEMPLATES = {
         "plan": [
             {"src": "coll:notes", "eyebrow": "Study notes",
              "title": "The notes to read alongside it", "limit": 3},
-            {"src": "hub:pdfs", "eyebrow": "Free PDFs",
+            {"src": "hub:pdfs", "eyebrow": "PDFs",
              "title": "Sheets to practise from", "limit": 1},
             {"src": "quiz", "eyebrow": "Practice quiz",
              "title": "Test what you read", "limit": 3},

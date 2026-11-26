@@ -12,4 +12,4 @@ Every Punjab Patwari paper we have, as released by the Punjab Subordinate Servic
 
 1. Solve the first paper without a clock, to see which topics the board really asks.
 2. Attempt the next one strictly timed, and check it only against the official key.
-3. Note every mistake as a concept gap or a speed gap, and revise those topics with our free topic-wise quizzes.
+3. Note every mistake as a concept gap or a speed gap, and revise those topics with our topic-wise quizzes.

@@ -120,7 +120,7 @@ references:
 3. **GK ਅਤੇ ਪੰਜਾਬੀ** ਨਾਲ-ਨਾਲ ਚਲਾਓ।
 4. **ਮਾਰਕਸ਼ੀਟਾਂ ਤਿਆਰ ਰੱਖੋ** - 50% ਦੀ ਸ਼ਰਤ ਧਿਆਨ ਨਾਲ ਜਾਂਚੀ ਜਾਂਦੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-technical-assistant/index.html)
 - [ਸੀਨੀਅਰ ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਦੇ ਪੇਪਰ](pyq/psssb-senior-technical-assistant/index.html)

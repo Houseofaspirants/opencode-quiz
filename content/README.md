@@ -436,9 +436,9 @@ of slots each page renders after the body.
 | `monthly-magazine` | Monthly Magazine | `monthly-magazine/` | the practice set, current affairs, previous papers |
 | `expected-mcq` | Expected MCQ | `expected-mcqs/` | the practice set, study notes, previous papers |
 | `previous-year-question` | Previous Year Question | `previous-year-questions/` | the practice set, study notes, expected MCQs |
-| `preparation-strategy` | Preparation Strategy | `strategy/` | the practice set, study notes, free PDFs, latest magazine |
+| `preparation-strategy` | Preparation Strategy | `strategy/` | the practice set, study notes, PDFs, latest magazine |
 | `motivation` | Motivation Article | `strategy/` | strategy guides, the practice set, live sessions |
-| `book-review` | Book Review | `strategy/` | free PDFs, study notes, the practice set |
+| `book-review` | Book Review | `strategy/` | PDFs, study notes, the practice set |
 | `live-session-summary` | Weekly Live Session | `live-sessions/` | study notes, the practice set, strategy guides |
 | `recruitment-notification` | Recruitment | `recruitment/` | eligibility, syllabus, strategy, books (PDFs), previous papers, expected questions, live session |
 | `exam-analysis` | Exam Analysis | `blogs/` | the practice set, study notes, news |
@@ -447,7 +447,7 @@ of slots each page renders after the body.
 | `topic-guide` | Topic Guide | `topic-guides/` | practice quiz, related subject, study notes, expected MCQs (reserved) |
 | `daily-practice` | Daily Practice | `daily-practice/` | practice quiz, yesterday's practice, related subject, study notes |
 | `success-story` | Success Story | `success-stories/` | preparation strategy, study notes, practice quiz |
-| `book-recommend` | Book Recommendation | `book-recommendations/` | study notes, free PDFs, practice quiz, preparation strategy |
+| `book-recommend` | Book Recommendation | `book-recommendations/` | study notes, PDFs, practice quiz, preparation strategy |
 
 Three cross-section slots are appended to every plan so no page stops at its
 own section: **More &lt;section&gt;** (same collection, shown whenever it has

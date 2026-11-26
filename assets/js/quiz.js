@@ -1495,7 +1495,7 @@
     ? "Daily Challenge"
     : `${QUIZ.subjectName || ""}${QUIZ.topicName && QUIZ.topicName !== QUIZ.title ? " · " + QUIZ.topicName : ""}`;
   const metaDescLd =
-    `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs, instant results and full answer review - free MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
+    `${QUIZ.subjectName ? QUIZ.subjectName + " - " : ""}${QUIZ.questions.length} MCQs, instant results and full answer review - MCQ practice for Punjab Police, PSSSB and competitive exam aspirants.`;
   /* A seeded landing page ships its OWN unique <title>/description/canonical
      in static HTML - never overwrite them with the shared template values. */
   if (!SEED) {

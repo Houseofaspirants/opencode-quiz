@@ -79,7 +79,7 @@ references:
 2. **PSSSB ਕਲਰਕ ਦੇ ਪੇਪਰ** ਹੱਲ ਕਰੋ - Part B ਇੱਕੋ ਜਿਹਾ ਹੈ।
 3. **Part A ਵਿੱਚ 25 ਬਹੁਤ ਹਨ, ਪਰ 40 ਦਾ ਟੀਚਾ ਰੱਖੋ।**
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSSSB ਕਲਰਕ ਗਾਈਡ ਅਤੇ ਪੇਪਰ](exams/psssb-clerk.html)
 - [ਪੰਜਾਬੀ ਵਿਆਕਰਣ ਕੁਇਜ਼](subject-punjabi.html)

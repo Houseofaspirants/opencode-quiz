@@ -100,7 +100,7 @@ references:
 3. **IS ਕੋਡ ਅਤੇ standard ਸਾਈਜ਼** ਯਾਦ ਕਰੋ - ਪੱਕੇ ਅੰਕ।
 4. **30 ਆਮ ਸਵਾਲਾਂ** ਲਈ ਹਫ਼ਤਾਵਾਰ ਅਭਿਆਸ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-junior-draftsman/index.html)
 - [ਸਰਵੇਅਰ ਦਾ ਪੇਪਰ](pyq/psssb-surveyor/index.html)

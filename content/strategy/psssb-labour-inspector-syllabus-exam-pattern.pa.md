@@ -74,7 +74,7 @@ references:
 2. **ਕਿਰਤ ਨਾਲ ਜੁੜਿਆ GK** - ਚਾਰ labour codes ਅਤੇ ਪੰਜਾਬ ਦੀਆਂ ਕਿਰਤ ਭਲਾਈ ਸਕੀਮਾਂ।
 3. **GK ਅਤੇ reasoning** Part B ਦਾ ਅੱਧਾ ਹਿੱਸਾ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSSSB ਕਲਰਕ ਗਾਈਡ ਅਤੇ ਪੇਪਰ](exams/psssb-clerk.html)
 - [ਆਬਕਾਰੀ ਇੰਸਪੈਕਟਰ ਗਾਈਡ](exams/psssb-excise-inspector.html)

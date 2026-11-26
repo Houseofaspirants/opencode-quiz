@@ -86,7 +86,7 @@ For the larger drafting recruitments, see the [PSSSB Junior Draftsman](exams/pss
 2. **IS 962 conventions, scales and projections** give quick marks; practise them with diagrams.
 3. **Do not skip Part A.** With 40 marks and negative marking, it often decides a one-post merit list.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Punjab GK quizzes](subject-gk.html)
 - [Computer quizzes](subject-computer.html)

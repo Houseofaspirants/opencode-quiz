@@ -100,7 +100,7 @@ references:
 4. **ਵਿਆਕਰਨ ਤੇਜ਼ ਅੰਕ ਦਿੰਦਾ ਹੈ** - ਰੋਜ਼ 20 ਸਵਾਲ।
 5. **ਟਾਈਪਿੰਗ ਸਿੱਖੋ** - ਕਲਰਕ ਅਸਾਮੀਆਂ ਲਈ 30 wpm ਟੈਸਟ ਹੁੰਦਾ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਕਲਰਕ ਕਮ DEO ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-clerk-cum-data-entry-operator/index.html)
 - [ਆਮ ਕਲਰਕ ਦੇ ਪੇਪਰ](pyq/psssb-clerk/index.html)

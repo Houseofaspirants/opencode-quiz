@@ -152,7 +152,7 @@ You must clear every event for your category; failing any one disqualifies you.
 
 The pattern is very close to SI, so the [Punjab Police SI guide](exams/punjab-police-sub-inspector.html) and its preparation tips apply here too.
 
-## Free practice sets on House of Aspirants
+## Practice sets on House of Aspirants
 
 **General Awareness**
 - [DPSP & Fundamental Duties](material-chapter-05-dpsp-and-fundamental-duties.html)
@@ -167,7 +167,7 @@ The pattern is very close to SI, so the [Punjab Police SI guide](exams/punjab-po
 **Current affairs**
 - [July 2026 Part 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
-Every set is free, in Punjabi and English, with an explanation for each answer. Sign in once and your score appears on the [live leaderboard](leaderboard.html).
+Every set is in Punjabi and English, with an explanation for each answer. Sign in once and your score appears on the [live leaderboard](leaderboard.html).
 
 ## Download the official notification
 

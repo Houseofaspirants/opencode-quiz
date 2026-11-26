@@ -102,7 +102,7 @@ The level is roughly B.Sc. Pick the two subjects of your own degree.
 2. **Forestry GK helps** - Punjab's forest cover, wildlife sanctuaries and Ramsar sites appear in the general section.
 3. **Train for the walk test early**; 25 km in 4 hours needs weeks of practice.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Forester guide](exams/psssb-forester.html)
 - [Forest Guard guide and papers](exams/psssb-forest-guard.html)

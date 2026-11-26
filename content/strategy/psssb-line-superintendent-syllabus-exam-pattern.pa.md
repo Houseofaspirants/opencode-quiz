@@ -87,7 +87,7 @@ references:
 2. **Earthing ਅਤੇ clearances ਦੇ IE Rules** ਯਾਦ ਕਰੋ।
 3. **40 ਆਮ ਅੰਕ ਨਾ ਛੱਡੋ** - 6 ਅਸਾਮੀਆਂ ਦੀ ਮੈਰਿਟ ਵਿੱਚ ਹਰ ਅੰਕ ਕੀਮਤੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਬਿਜਲੀਸਾਜ਼-ਕਮ-ਜੂਨੀਅਰ ਟੈਕਨੀਸ਼ੀਅਨ ਗਾਈਡ](exams/psssb-bijli-saz-junior-technician.html)
 - [ਜੂਨੀਅਰ ਡਰਾਫਟਸਮੈਨ ਗਾਈਡ](exams/psssb-junior-draftsman.html)

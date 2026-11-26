@@ -21,7 +21,7 @@
  },
  "counts": {
   "nodes": 1883,
-  "edges": 13774,
+  "edges": 13585,
   "silos": 35,
   "clusters": 224,
   "pillars": 34
@@ -22923,7 +22923,7 @@
    "url": "/pdfs.html",
    "type": "hub",
    "template": "",
-   "title": "Free PDFs for Punjab Exams | House of Aspirants",
+   "title": "PDFs for Punjab Exams | House of Aspirants",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -25050,7 +25050,7 @@
    "url": "/study-material.html",
    "type": "hub",
    "template": "",
-   "title": "Free Study Material for Punjab Competitive Exams",
+   "title": "Study Material for Punjab Competitive Exams",
    "lang": "en",
    "subjects": [],
    "exams": [],
@@ -85623,25 +85623,7 @@
   },
   {
    "from": "pa/exams/chandigarh-police-constable.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/chandigarh-police-constable.html",
    "to": "pyq/chandigarh-police-constable/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/chandigarh-police-constable.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/chandigarh-police-constable.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -85851,25 +85833,7 @@
   },
   {
    "from": "pa/exams/ppsc-building-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-building-inspector.html",
    "to": "pyq/ppsc-building-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-building-inspector.html",
-   "to": "subject-quant.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-building-inspector.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -85983,12 +85947,6 @@
   },
   {
    "from": "pa/exams/ppsc-cooperative-inspector.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-cooperative-inspector.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -86014,18 +85972,6 @@
   {
    "from": "pa/exams/ppsc-cooperative-inspector.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-cooperative-inspector.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-cooperative-inspector.html",
-   "to": "mock",
    "rel": "contextual",
    "weight": 1
   },
@@ -86103,19 +86049,7 @@
   },
   {
    "from": "pa/exams/ppsc-cooperative-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-cooperative-inspector.html",
    "to": "pyq/ppsc-cooperative-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-cooperative-inspector.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -86337,25 +86271,7 @@
   },
   {
    "from": "pa/exams/ppsc-draftsman.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-draftsman.html",
    "to": "pyq/ppsc-draftsman/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-draftsman.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-draftsman.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -86547,25 +86463,7 @@
   },
   {
    "from": "pa/exams/ppsc-functional-manager.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-functional-manager.html",
    "to": "pyq/ppsc-functional-manager/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-functional-manager.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-functional-manager.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -86775,25 +86673,7 @@
   },
   {
    "from": "pa/exams/ppsc-junior-auditor.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-junior-auditor.html",
    "to": "pyq/ppsc-junior-auditor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-junior-auditor.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/ppsc-junior-auditor.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -87015,31 +86895,7 @@
   },
   {
    "from": "pa/exams/psssb-anganwadi-supervisor.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-anganwadi-supervisor.html",
    "to": "pyq/psssb-anganwadi-supervisor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-anganwadi-supervisor.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-anganwadi-supervisor.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-anganwadi-supervisor.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -87250,24 +87106,6 @@
   {
    "from": "pa/exams/psssb-bijli-saz-junior-technician.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-bijli-saz-junior-technician.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-bijli-saz-junior-technician.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-bijli-saz-junior-technician.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -87489,25 +87327,7 @@
   },
   {
    "from": "pa/exams/psssb-clerk-accounts.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-accounts.html",
-   "to": "pyq/ppsc-junior-auditor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-accounts.html",
    "to": "pyq/psssb-clerk-accounts/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-accounts.html",
-   "to": "pyq/psssb-clerk/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -87735,18 +87555,6 @@
   },
   {
    "from": "pa/exams/psssb-clerk-data-entry-operator.html",
-   "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-data-entry-operator.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-data-entry-operator.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -87963,25 +87771,7 @@
   },
   {
    "from": "pa/exams/psssb-clerk-it.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-it.html",
    "to": "pyq/psssb-clerk-it/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-it.html",
-   "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-it.html",
-   "to": "subject-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -88203,25 +87993,7 @@
   },
   {
    "from": "pa/exams/psssb-clerk-legal.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-legal.html",
    "to": "pyq/psssb-clerk-legal/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-legal.html",
-   "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk-legal.html",
-   "to": "pyq/punjab-pcs-judicial/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -88335,12 +88107,6 @@
   },
   {
    "from": "pa/exams/psssb-clerk.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -88449,25 +88215,7 @@
   },
   {
    "from": "pa/exams/psssb-clerk.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk.html",
    "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-clerk.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -88689,12 +88437,6 @@
   },
   {
    "from": "pa/exams/psssb-craft-instructor.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-craft-instructor.html",
    "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -88911,31 +88653,7 @@
   },
   {
    "from": "pa/exams/psssb-dairy-development-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-dairy-development-inspector.html",
    "to": "pyq/psssb-dairy-development-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-dairy-development-inspector.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-dairy-development-inspector.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-dairy-development-inspector.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -89163,18 +88881,6 @@
   },
   {
    "from": "pa/exams/psssb-deputy-ranger.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-deputy-ranger.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-deputy-ranger.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -89386,24 +89092,6 @@
   {
    "from": "pa/exams/psssb-district-treasurer.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-district-treasurer.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-district-treasurer.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-district-treasurer.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -89625,24 +89313,6 @@
   },
   {
    "from": "pa/exams/psssb-draftsman.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-draftsman.html",
-   "to": "subject-computer.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-draftsman.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-draftsman.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -89859,25 +89529,7 @@
   },
   {
    "from": "pa/exams/psssb-driver.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-driver.html",
    "to": "pyq/psssb-driver/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-driver.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-driver.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -90093,31 +89745,7 @@
   },
   {
    "from": "pa/exams/psssb-excise-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-excise-inspector.html",
    "to": "pyq/psssb-excise-taxation-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-excise-inspector.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-excise-inspector.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-excise-inspector.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -90339,31 +89967,7 @@
   },
   {
    "from": "pa/exams/psssb-fireman.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-fireman.html",
    "to": "pyq/psssb-fireman/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-fireman.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-fireman.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-fireman.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -90591,25 +90195,7 @@
   },
   {
    "from": "pa/exams/psssb-forest-guard.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forest-guard.html",
    "to": "pyq/psssb-forest-guard/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forest-guard.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forest-guard.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -90831,31 +90417,7 @@
   },
   {
    "from": "pa/exams/psssb-forester.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forester.html",
    "to": "pyq/psssb-forester/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forester.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forester.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-forester.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -91083,18 +90645,6 @@
   },
   {
    "from": "pa/exams/psssb-group-d.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-group-d.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-group-d.html",
    "to": "quiz-punjabi-01-punjabi-bhasha-language-mcq-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -91311,31 +90861,7 @@
   },
   {
    "from": "pa/exams/psssb-horticulture-supervisor.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-horticulture-supervisor.html",
    "to": "pyq/psssb-horticulture-supervisor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-horticulture-supervisor.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-horticulture-supervisor.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-horticulture-supervisor.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -91557,19 +91083,7 @@
   },
   {
    "from": "pa/exams/psssb-hostel-superintendent.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-hostel-superintendent.html",
    "to": "pyq/psssb-hostel-superintendent/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-hostel-superintendent.html",
-   "to": "subject-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -91678,12 +91192,6 @@
   {
    "from": "pa/exams/psssb-jail-warder.html",
    "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-jail-warder.html",
-   "to": "category-gk-punjab-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -91803,19 +91311,7 @@
   },
   {
    "from": "pa/exams/psssb-jail-warder.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-jail-warder.html",
    "to": "pyq/psssb-jail-warder/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-jail-warder.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -92037,25 +91533,7 @@
   },
   {
    "from": "pa/exams/psssb-junior-draftsman.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-junior-draftsman.html",
    "to": "pyq/psssb-junior-draftsman/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-junior-draftsman.html",
-   "to": "pyq/psssb-surveyor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-junior-draftsman.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -92260,36 +91738,6 @@
   {
    "from": "pa/exams/psssb-lab-attendant.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-lab-attendant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-lab-attendant.html",
-   "to": "pyq/psssb-lab-attendant/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-lab-attendant.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-lab-attendant.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-lab-attendant.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -92511,18 +91959,6 @@
   },
   {
    "from": "pa/exams/psssb-labour-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-labour-inspector.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-labour-inspector.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -92739,25 +92175,7 @@
   },
   {
    "from": "pa/exams/psssb-librarian.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-librarian.html",
    "to": "pyq/psssb-school-librarian/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-librarian.html",
-   "to": "subject-computer.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-librarian.html",
-   "to": "subject-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -92968,18 +92386,6 @@
   {
    "from": "pa/exams/psssb-line-superintendent.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-line-superintendent.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-line-superintendent.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -93201,24 +92607,6 @@
   },
   {
    "from": "pa/exams/psssb-personal-assistant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-personal-assistant.html",
-   "to": "subject-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-personal-assistant.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-personal-assistant.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -93430,24 +92818,6 @@
   {
    "from": "pa/exams/psssb-proof-reader-copy-holder.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-proof-reader-copy-holder.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-proof-reader-copy-holder.html",
-   "to": "subject-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-proof-reader-copy-holder.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -93669,31 +93039,7 @@
   },
   {
    "from": "pa/exams/psssb-restorer-lab-assistant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-restorer-lab-assistant.html",
    "to": "pyq/psssb-restorer-lab-assistant/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-restorer-lab-assistant.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-restorer-lab-assistant.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-restorer-lab-assistant.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -93898,18 +93244,6 @@
   {
    "from": "pa/exams/psssb-senior-assistant-accounts.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant-accounts.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant-accounts.html",
-   "to": "subject-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -94120,18 +93454,6 @@
   {
    "from": "pa/exams/psssb-senior-assistant-it.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant-it.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant-it.html",
-   "to": "subject-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -94353,30 +93675,6 @@
   },
   {
    "from": "pa/exams/psssb-senior-assistant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant.html",
-   "to": "subject-reasoning.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-assistant.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -94581,25 +93879,7 @@
   },
   {
    "from": "pa/exams/psssb-senior-technical-assistant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-technical-assistant.html",
    "to": "pyq/psssb-senior-technical-assistant/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-technical-assistant.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-senior-technical-assistant.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -94821,25 +94101,7 @@
   },
   {
    "from": "pa/exams/psssb-steno-typist.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-steno-typist.html",
-   "to": "pyq/psssb-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-steno-typist.html",
    "to": "pyq/psssb-steno-typist/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-steno-typist.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -95061,25 +94323,7 @@
   },
   {
    "from": "pa/exams/psssb-surveyor.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-surveyor.html",
-   "to": "pyq/psssb-junior-draftsman/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-surveyor.html",
    "to": "pyq/psssb-surveyor/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-surveyor.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -95295,25 +94539,7 @@
   },
   {
    "from": "pa/exams/psssb-technical-assistant.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technical-assistant.html",
-   "to": "pyq/psssb-senior-technical-assistant/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technical-assistant.html",
    "to": "pyq/psssb-technical-assistant/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technical-assistant.html",
-   "to": "subject-computer.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -95541,24 +94767,6 @@
   },
   {
    "from": "pa/exams/psssb-technician-technical-officer.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technician-technical-officer.html",
-   "to": "subject-computer.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technician-technical-officer.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-technician-technical-officer.html",
    "to": "quiz-gk-1857-revolt-part-1.html",
    "rel": "practice-quiz",
    "weight": 1
@@ -95770,24 +94978,6 @@
   {
    "from": "pa/exams/psssb-vdo.html",
    "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-vdo.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-vdo.html",
-   "to": "subject-quant.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-vdo.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -96009,18 +95199,6 @@
   },
   {
    "from": "pa/exams/psssb-veterinary-inspector.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-veterinary-inspector.html",
-   "to": "pyq/psssb-dairy-development-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/psssb-veterinary-inspector.html",
    "to": "pyq/psssb-veterinary-inspector/index.html",
    "rel": "contextual",
    "weight": 1
@@ -96232,18 +95410,6 @@
   {
    "from": "pa/exams/pstet.html",
    "to": "pyq/pstet/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/pstet.html",
-   "to": "pyq/punjab-ett-teacher/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/pstet.html",
-   "to": "pyq/punjab-master-cadre/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -96465,31 +95631,7 @@
   },
   {
    "from": "pa/exams/punjab-ett-teacher.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-ett-teacher.html",
    "to": "pyq/punjab-ett-teacher/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-ett-teacher.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-ett-teacher.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-ett-teacher.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -96717,19 +95859,7 @@
   },
   {
    "from": "pa/exams/punjab-haryana-high-court-clerk.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-haryana-high-court-clerk.html",
    "to": "pyq/punjab-haryana-high-court-clerk/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-haryana-high-court-clerk.html",
-   "to": "subject-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -96951,19 +96081,7 @@
   },
   {
    "from": "pa/exams/punjab-master-cadre.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-master-cadre.html",
    "to": "pyq/punjab-master-cadre/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-master-cadre.html",
-   "to": "subject-punjabi.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -97113,12 +96231,6 @@
   },
   {
    "from": "pa/exams/punjab-naib-tehsildar.html",
-   "to": "mock",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-naib-tehsildar.html",
    "to": "mock.html",
    "rel": "contextual",
    "weight": 1
@@ -97191,19 +96303,7 @@
   },
   {
    "from": "pa/exams/punjab-naib-tehsildar.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-naib-tehsildar.html",
    "to": "pyq/ppsc-naib-tehsildar/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-naib-tehsildar.html",
-   "to": "pyq/psssb-patwari/index.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -97419,31 +96519,7 @@
   },
   {
    "from": "pa/exams/punjab-panchayat-secretary.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-panchayat-secretary.html",
    "to": "pyq/psssb-panchayat-secretary/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-panchayat-secretary.html",
-   "to": "subject-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-panchayat-secretary.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-panchayat-secretary.html",
-   "to": "subject-reasoning.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -97557,12 +96633,6 @@
   },
   {
    "from": "pa/exams/punjab-patwari.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -97594,18 +96664,6 @@
   {
    "from": "pa/exams/punjab-patwari.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
-   "to": "mock",
    "rel": "contextual",
    "weight": 1
   },
@@ -97683,25 +96741,7 @@
   },
   {
    "from": "pa/exams/punjab-patwari.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
    "to": "pyq/psssb-patwari/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-patwari.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -97929,19 +96969,7 @@
   },
   {
    "from": "pa/exams/punjab-pcs-judicial.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs-judicial.html",
    "to": "pyq/punjab-pcs-judicial/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs-judicial.html",
-   "to": "subject-gk.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98055,12 +97083,6 @@
   },
   {
    "from": "pa/exams/punjab-pcs.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -98092,12 +97114,6 @@
   {
    "from": "pa/exams/punjab-pcs.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98187,19 +97203,7 @@
   },
   {
    "from": "pa/exams/punjab-pcs.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs.html",
    "to": "pyq/ppsc-punjab-civil-services/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-pcs.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98313,12 +97317,6 @@
   },
   {
    "from": "pa/exams/punjab-police-constable.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -98344,18 +97342,6 @@
   {
    "from": "pa/exams/punjab-police-constable.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "leaderboard.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98434,30 +97420,6 @@
   {
    "from": "pa/exams/punjab-police-constable.html",
    "to": "pyq/punjab-police-constable/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-constable.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98571,12 +97533,6 @@
   },
   {
    "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
    "to": "exam-punjab-police-head-constable.html",
    "rel": "contextual",
    "weight": 1
@@ -98608,18 +97564,6 @@
   {
    "from": "pa/exams/punjab-police-head-constable.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "leaderboard.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98698,30 +97642,6 @@
   {
    "from": "pa/exams/punjab-police-head-constable.html",
    "to": "pyq/punjab-police-head-constable/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-head-constable.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -98949,25 +97869,7 @@
   },
   {
    "from": "pa/exams/punjab-police-intelligence-constable.html",
-   "to": "pyq.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-intelligence-constable.html",
    "to": "pyq/punjab-police-constable-intelligence-investigation/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-intelligence-constable.html",
-   "to": "subject-punjabi.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-intelligence-constable.html",
-   "to": "subject-quant.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -99081,12 +97983,6 @@
   },
   {
    "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "category-gk-punjab-gk.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
    "to": "current-affairs.html",
    "rel": "contextual",
    "weight": 1
@@ -99118,12 +98014,6 @@
   {
    "from": "pa/exams/punjab-police-sub-inspector.html",
    "to": "index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "material-chapter-05-dpsp-and-fundamental-duties.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -99202,30 +98092,6 @@
   {
    "from": "pa/exams/punjab-police-sub-inspector.html",
    "to": "pyq/punjab-police-sub-inspector/index.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "quiz-gk-basic-concepts-of-economy-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "subject.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pa/exams/punjab-police-sub-inspector.html",
-   "to": "topic-computer-01-fundamentals-of-computers-part1.html",
    "rel": "contextual",
    "weight": 1
   },

@@ -111,7 +111,7 @@ references:
 3. ਕੰਪਿਊਟਰ ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ ਤਿਆਰ ਕਰੋ।
 4. ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਦੇ 20 ਸਵਾਲ ਪੂਰੇ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਇੰਟੈਲੀਜੈਂਸ ਕਾਡਰ ਦੇ ਪੇਪਰ](pyq/punjab-police-constable-intelligence-investigation/index.html)
 - [ਕਰੰਟ ਅਫੇਅਰਜ਼](current-affairs.html)

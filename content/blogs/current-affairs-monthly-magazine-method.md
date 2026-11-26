@@ -34,6 +34,6 @@ Many students read current affairs every day from YouTube videos or websites. My
 
 ## Why this method is better
 
-Current affairs take just one day a month; the rest of the days are free for other subjects. All the material is in one place, so revision is easy. And this is the way to full marks in the 10-15 current affairs questions.
+Current affairs take just one day a month; the rest of the days are left for other subjects. All the material is in one place, so revision is easy. And this is the way to full marks in the 10-15 current affairs questions.
 
 **Also read:** [How Many Months of Current Affairs for Punjab Exams](blog-how-many-months-current-affairs-punjab-exams) · [How I Revised for SI Rank 2: The 1-7-30 Rule](blog-how-to-stop-forgetting-in-exams)

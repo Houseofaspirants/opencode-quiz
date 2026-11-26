@@ -80,7 +80,7 @@ references:
 2. **ਨਿਯਮ (unit 8) ਰੱਟਣ ਵਾਲਾ ਹਿੱਸਾ** - ਹਰ CAR ਦੀ ਇੱਕ ਪੰਨੇ ਦੀ ਟੇਬਲ ਬਣਾਓ।
 3. **Part B ਦੇ 40 ਅੰਕ** ਲਈ ਇੱਕ ਹਫ਼ਤਾ ਪੰਜਾਬ ਇਤਿਹਾਸ ਅਤੇ ਵਿਆਕਰਣ ਕਾਫ਼ੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਗਾਈਡ](exams/psssb-technical-assistant.html)
 - [ਕੰਪਿਊਟਰ ਕੁਇਜ਼](subject-computer.html)

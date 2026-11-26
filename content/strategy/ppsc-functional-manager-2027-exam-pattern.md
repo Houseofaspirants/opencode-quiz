@@ -71,7 +71,7 @@ Our archive does not have an official syllabus for this post. The paper of 19 Ju
 3. **Revise class 11-12 physics, chemistry and maths** - that level was enough for most science questions.
 4. **Prepare for the interview** early - know your district's industries.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Functional Manager paper and answer key](pyq/ppsc-functional-manager/index.html)
 - [GK quizzes](subject-gk.html)

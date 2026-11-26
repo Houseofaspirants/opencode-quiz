@@ -129,7 +129,7 @@ The Employment Generation posts are in the same advertisement; check the board's
 4. **Keep 30 GK marks safe.** Punjab history, basic reasoning and grammar come from the common PSSSB syllabus.
 5. **Learn Raavi typing.** The typing test is qualifying, but it decides who actually gets the post.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Clerk Accounts previous year papers](pyq/psssb-clerk-accounts/index.html)
 - [PPSC Junior Auditor papers - similar commerce syllabus](pyq/ppsc-junior-auditor/index.html)

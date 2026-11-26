@@ -155,7 +155,7 @@ Since October 2022 a **qualifying matric-level Punjabi Part A** comes first in e
 4. **Know Punjab's livestock schemes.** Dairy, animal husbandry and state schemes often show up as GK.
 5. **Mind the negative marking.** At -1/4, guess only when you can rule out at least one option.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Veterinary Inspector previous year papers](pyq/psssb-veterinary-inspector/index.html)
 - [Dairy Development Inspector papers](pyq/psssb-dairy-development-inspector/index.html)

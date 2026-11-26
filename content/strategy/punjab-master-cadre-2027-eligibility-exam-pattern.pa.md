@@ -115,7 +115,7 @@ references:
 3. **PSTET Paper 2** ਵੈਧ ਰੱਖੋ।
 4. **ਸਮਾਂ ਲਾ ਕੇ ਅਭਿਆਸ ਕਰੋ** - 150 ਸਵਾਲਾਂ ਲਈ ਤੇਜ਼ ਯਾਦ ਚਾਹੀਦੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਮਾਸਟਰ ਕਾਡਰ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/punjab-master-cadre/index.html)
 - [PSTET ਅਤੇ ਅਧਿਆਪਕ ਪੇਪਰ](pyq.html)

@@ -126,7 +126,7 @@ The posts were in the municipal corporations, councils and nagar panchayats unde
 4. **Train for the physical test** - running and strength - from today.
 5. **Don't take Part A Punjabi for granted.**
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Fireman previous year paper](pyq/psssb-fireman/index.html)
 - [GK quizzes](subject-gk.html)

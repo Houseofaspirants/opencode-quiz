@@ -82,7 +82,7 @@ The topics inside each section are the same as in the [Senior Assistant syllabus
 2. **English is 15 marks** - a PA drafts and types English letters, so grammar should be strong anyway.
 3. **Keep shorthand practice going** alongside; the skill test, when held, decides who actually joins.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Steno-Typist guide](exams/psssb-steno-typist.html)
 - [English quizzes](subject-english.html)

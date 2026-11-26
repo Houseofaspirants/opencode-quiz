@@ -74,7 +74,7 @@ references:
 2. **ਹਿਸਾਬ ਅਤੇ ਚਾਰਟ** reasoning ਦੇ 30 ਅੰਕਾਂ ਵਿੱਚ ਹਨ - ਪ੍ਰਤੀਸ਼ਤ ਦਾ ਅਭਿਆਸ ਕਰੋ।
 3. **ਸੀਨੀਅਰ ਸਹਾਇਕ ਅਤੇ ਕਲਰਕ ਦੇ ਪੇਪਰ** ਹੱਲ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਸੀਨੀਅਰ ਸਹਾਇਕ ਗਾਈਡ](exams/psssb-senior-assistant.html)
 - [GK ਕੁਇਜ਼](subject-gk.html)

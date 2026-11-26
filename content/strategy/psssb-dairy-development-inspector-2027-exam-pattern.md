@@ -116,7 +116,7 @@ The board's plan for this post is an MCQ paper (OMR, 2 hours, 1/4 negative marki
 3. **Punjab dairy facts** - Milkfed, Verka, schemes.
 4. **GK and reasoning** for Part B.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Dairy Development Inspector paper](pyq/psssb-dairy-development-inspector/index.html)
 - [GK quizzes](subject-gk.html)

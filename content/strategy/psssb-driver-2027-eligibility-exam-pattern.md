@@ -109,7 +109,7 @@ So the subject part is 60% of your merit - more than all the GK put together. A 
 4. **Add GK, Punjab and basic reasoning** for the rest of Part B.
 5. **Get your experience certificate in the right format** before counselling.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Driver previous year papers](pyq/psssb-driver/index.html)
 - [Punjabi grammar quizzes](subject-punjabi.html)

@@ -120,7 +120,7 @@ The written test is objective, **100 marks**, with **1/4 mark cut** for each wro
 4. **English and computer basics.**
 5. **Start running now** - the physical test is where many written-test toppers fall.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Chandigarh Police Constable papers](pyq/chandigarh-police-constable/index.html)
 - [GK quizzes](subject-gk.html)

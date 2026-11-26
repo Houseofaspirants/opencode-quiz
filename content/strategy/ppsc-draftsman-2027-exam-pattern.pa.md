@@ -122,7 +122,7 @@ PPSC ਦੇ 2022 ਦੇ ਨੋਟਿਸ (ਇਸ਼ਤਿਹਾਰ 202237 ਤੋ�
 3. AutoCAD ਦੀ theory ਪੜ੍ਹੋ।
 4. GK ਵਾਲਾ ਹਿੱਸਾ ਨਾ ਛੱਡੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਡਰਾਫਟਸਮੈਨ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/ppsc-draftsman/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

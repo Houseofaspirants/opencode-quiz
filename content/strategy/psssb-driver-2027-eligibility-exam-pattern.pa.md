@@ -108,7 +108,7 @@ references:
 4. **GK, ਪੰਜਾਬ ਅਤੇ ਬੇਸਿਕ reasoning** ਨਾਲ Part B ਪੂਰਾ ਕਰੋ।
 5. **ਤਜਰਬਾ ਸਰਟੀਫਿਕੇਟ** ਕਾਊਂਸਲਿੰਗ ਤੋਂ ਪਹਿਲਾਂ ਸਹੀ ਫਾਰਮੈਟ ਵਿੱਚ ਬਣਵਾਓ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਡਰਾਈਵਰ ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-driver/index.html)
 - [ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਕੁਇਜ਼](subject-punjabi.html)

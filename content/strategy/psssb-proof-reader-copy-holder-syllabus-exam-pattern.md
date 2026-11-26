@@ -82,7 +82,7 @@ Both posts: **Rs 19,900** basic pay (7th CPC) as per Advt 04/2023.
 2. **Solve PSSSB Clerk papers**; the Part B mix is the same.
 3. **Clear Part A comfortably** - 25 out of 50 is the bar, but aim for 40.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Clerk guide and papers](exams/psssb-clerk.html)
 - [Punjabi grammar quizzes](subject-punjabi.html)

@@ -105,7 +105,7 @@ Advt 09/2022 (published 11 May 2022, applications 21 May to 21 June 2022) had **
 3. **Learn the IS codes and standard sizes.** Brick size, sheet sizes, scales and symbols are quick, sure marks.
 4. **Keep the 30 general questions steady.** Practise GK, reasoning and Punjabi weekly.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Junior Draftsman previous year papers](pyq/psssb-junior-draftsman/index.html)
 - [Surveyor paper](pyq/psssb-surveyor/index.html)

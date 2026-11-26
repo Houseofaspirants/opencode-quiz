@@ -101,12 +101,12 @@ def card_for(page):
             return (eyebrow, t["name"], [f"{count} MCQs", "Timed quiz", "Instant score"], False)
         langs = t.get("availableLanguages") or list((t.get("variants") or {}).keys())
         lang_chip = "English + Punjabi" if "pa" in langs else "Answers explained"
-        return (eyebrow, t["name"], [f"{count} MCQs", lang_chip, "Free"], False)
+        return (eyebrow, t["name"], [f"{count} MCQs", lang_chip, "No sign-up"], False)
     if kind == "exam":
         e = EXAMS.get(entity)
         if not e:
             return None
-        chips = ["Syllabus", "PYQ papers" if e.get("pyq") else "Topic quizzes", "Free notes"]
+        chips = ["Syllabus", "PYQ papers" if e.get("pyq") else "Topic quizzes", "Notes"]
         return ("Exam preparation", e["name"], chips, False)
     return None
 
@@ -206,7 +206,7 @@ def draw_card(eyebrow, title, chips, gurmukhi_title):
     # footer
     d.line((left, 556, left + text_w, 556), fill=LINE, width=1)
     d.text((left, 572), "houseofaspirants.in", font=font(LABEL_FONT, 24), fill=GOLD)
-    d.text((left + 268, 572), "Free  ·  Punjab exam prep", font=font(LABEL_FONT, 24), fill=MUTED)
+    d.text((left + 268, 572), "Punjab exam prep", font=font(LABEL_FONT, 24), fill=MUTED)
 
     # logo, right side
     lg = logo()

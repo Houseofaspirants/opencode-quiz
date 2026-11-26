@@ -152,7 +152,7 @@ references:
 
 ਇਹ ਪੈਟਰਨ SI ਨਾਲ ਬਹੁਤ ਮਿਲਦਾ ਹੈ, ਇਸ ਲਈ [ਪੰਜਾਬ ਪੁਲਿਸ SI ਗਾਈਡ](exams/punjab-police-sub-inspector.html) ਵਾਲੇ ਤਿਆਰੀ ਦੇ ਨੁਕਤੇ ਇੱਥੇ ਵੀ ਕੰਮ ਆਉਣਗੇ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ
+## House of Aspirants 'ਤੇ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ
 
 **ਜਨਰਲ ਜਾਗਰੂਕਤਾ**
 - [ਨਿਰਦੇਸ਼ਕ ਸਿਧਾਂਤ ਅਤੇ ਮੌਲਿਕ ਕਰਤੱਵ](material-chapter-05-dpsp-and-fundamental-duties.html)
@@ -167,7 +167,7 @@ references:
 **ਕਰੰਟ ਅਫੇਅਰਜ਼**
 - [ਜੁਲਾਈ 2026 ਭਾਗ 1](quiz-current-affairs-current-affairs-july-2026-part1-punjab-national-states.html)
 
-ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ, ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ, ਹਰ ਜਵਾਬ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ਇੱਕ ਵਾਰ sign in ਕਰੋ ਅਤੇ ਤੁਹਾਡਾ score [live leaderboard](leaderboard.html) 'ਤੇ ਦਿਸੇਗਾ।
+ਹਰ ਸੈੱਟ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ, ਹਰ ਜਵਾਬ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ਇੱਕ ਵਾਰ sign in ਕਰੋ ਅਤੇ ਤੁਹਾਡਾ score [live leaderboard](leaderboard.html) 'ਤੇ ਦਿਸੇਗਾ।
 
 ## Official notification download ਕਰੋ
 

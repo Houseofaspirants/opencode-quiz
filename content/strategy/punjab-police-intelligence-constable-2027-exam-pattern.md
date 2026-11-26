@@ -118,7 +118,7 @@ The 2021 advertisement covers **818 Intelligence Assistant posts** (24 for sport
 4. **Maths 30 questions** - percentages, ratio, time-work and simple data questions.
 5. **Punjabi grammar** - 20 questions that should be near-full marks.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Intelligence and Investigation cadre papers](pyq/punjab-police-constable-intelligence-investigation/index.html)
 - [Current affairs](current-affairs.html)

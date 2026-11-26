@@ -67,7 +67,7 @@ For its recent advertisements PSSSB uses a two-part objective paper:
 3. **Practise numericals** under time.
 4. **Don't neglect Part A Punjabi** - it is qualifying.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Senior Technical Assistant papers](pyq/psssb-senior-technical-assistant/index.html)
 - [Maths quizzes](subject-quant.html)

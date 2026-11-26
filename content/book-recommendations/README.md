@@ -4,7 +4,7 @@ Documents in this folder are rendered to static pages by
 `scripts/build_content.py`.
 
 What belongs here: one book, judged for this syllabus — who it suits, which
-chapters to read first, what to skip, and how to use it beside the free notes
+chapters to read first, what to skip, and how to use it beside the notes
 rather than instead of them. `book`, `book_author` and `publisher` identify it.
 
 Page prefix `book-`, hub `book-recommendations.html`, required beyond the

@@ -132,7 +132,7 @@ All 120 questions come from one general paper of up to Class XII standard - 120 
 3. **Reasoning and maths are another 30.** Daily timed practice turns these into safe marks.
 4. **Keep fit.** Expect physical standards in the next advertisement; check them as soon as it comes.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Forest Guard previous year papers](pyq/psssb-forest-guard/index.html)
 - [Punjab history quizzes](subject-gk.html)

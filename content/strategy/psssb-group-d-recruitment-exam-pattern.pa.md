@@ -150,7 +150,7 @@ references:
 4. **ਕੰਪਿਊਟਰ ਨਾ ਛੱਡੋ।** ਆਖ਼ਰੀ ਪ੍ਰਸ਼ਨ ਮੁੱਢਲੇ ICT ਦੇ ਹਨ - Office shortcuts ਅਤੇ ਫ਼ਾਰਮੂਲੇ ਸੌਖੇ ਅੰਕ ਹਨ।
 5. **ਹੋਰ PSSSB ਪੇਪਰ ਵੀ ਕਰੋ।** ਕਲਰਕ, ਪਟਵਾਰੀ ਅਤੇ ਜੇਲ੍ਹ ਵਾਰਡਰ ਦੇ ਪੇਪਰਾਂ ਵਿੱਚ ਉਹੀ GK, ਰੀਜ਼ਨਿੰਗ ਅਤੇ ਪੰਜਾਬੀ ਦੇ ਵਿਸ਼ੇ ਦੁਹਰਾਏ ਜਾਂਦੇ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSSSB ਗਰੁੱਪ-ਡੀ ਦਾ ਪਿਛਲਾ ਪੇਪਰ ਅਤੇ answer keys](pyq/psssb-group-d/index.html)
 - [PSSSB, PPSC ਅਤੇ ਪੰਜਾਬ ਪੁਲਿਸ ਦੇ ਸਾਰੇ ਪੇਪਰ](pyq.html)

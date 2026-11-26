@@ -99,7 +99,7 @@ The 2026 paper's own plan will be put on the board's website; check it when the 
 3. **Start typing practice now** in Raavi; many candidates lose the post at the typing test.
 4. **Use clerk papers** - the syllabus is close to the PSSSB clerk general paper.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Clerk guide and papers](exams/psssb-clerk.html)
 - [GK quizzes](subject-gk.html)

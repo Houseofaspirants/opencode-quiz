@@ -110,7 +110,7 @@ references:
 3. **Section table ਬਣਾਓ** - IPC → BNS, CrPC → BNSS, Evidence → BSA।
 4. **30 GK ਅੰਕ ਪੱਕੇ ਕਰੋ।**
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਕਲਰਕ (ਲੀਗਲ) ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-clerk-legal/index.html)
 - [PCS (Judicial) ਦਾ ਪੇਪਰ](pyq/punjab-pcs-judicial/index.html)

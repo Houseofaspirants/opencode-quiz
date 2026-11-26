@@ -95,7 +95,7 @@ references:
 2. ਦਸਵੀਂ ਦੀ ਸਾਇੰਸ - ਲੈਬ ਦਾ ਸਮਾਨ, ਰਸਾਇਣ ਅਤੇ ਸੁਰੱਖਿਆ।
 3. ਪੰਜਾਬ GK ਅਤੇ ਰੀਜ਼ਨਿੰਗ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਲੈਬ ਅਟੈਂਡੈਂਟ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-lab-attendant/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

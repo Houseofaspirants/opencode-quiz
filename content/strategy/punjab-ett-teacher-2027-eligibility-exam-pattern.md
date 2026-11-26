@@ -59,7 +59,7 @@ ETT is the **biggest teaching cadre** in Punjab. Teachers retire every year and 
 | **Paper 1** | Punjabi language | 100 |
 | **Paper 2** | Main subject paper | 100 |
 
-Both final keys gave free marks for a few deleted questions (shown as * in the key), so always check the final key, not the provisional one, when you score yourself.
+Both final keys gave bonus marks for a few deleted questions (shown as * in the key), so always check the final key, not the provisional one, when you score yourself.
 
 ## Syllabus (Paper A and Paper B, 5994 recruitment, as reported)
 
@@ -106,7 +106,7 @@ The rules also allowed candidates who did the two-year ETT/D.El.Ed with any othe
 4. **Child development and pedagogy** - common to PSTET and ETT.
 5. **Maths, EVS and GK** at primary-teacher level.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [ETT papers and answer keys](pyq/punjab-ett-teacher/index.html)
 - [Punjabi grammar quizzes](subject-punjabi.html)

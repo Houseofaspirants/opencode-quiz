@@ -86,7 +86,7 @@ Both posts: **Rs 35,400** basic pay (7th CPC Level 6) as per Advt 05/2023.
 2. **Corporate accounting** questions follow Companies Act and Ind AS wording - read the standards, not only guide books.
 3. **Keep 40 general marks safe** with Punjab history, reasoning and grammar.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Clerk Accounts guide](exams/psssb-clerk-accounts.html)
 - [PPSC Junior Auditor guide](exams/ppsc-junior-auditor.html)

@@ -745,7 +745,7 @@
           badge(st(r).categories, (n) => many(n, "category", "categories"), true) +
           badge(st(r).chapters, (n) => plural(n, "chapter")) +
           badge(st(r).pages, (n) => plural(n, "page")))).join("");
-        seoDesc = `${many(list.length, "region", "regions")} of free ${name} study ` +
+        seoDesc = `${many(list.length, "region", "regions")} of ${name} study ` +
           `material for Punjab competitive exams — open a region, then a category, ` +
           `then a language.`;
       } else if (kind === "category") {
@@ -955,10 +955,10 @@
           ? `${nodeName} — ${langName} chapters | House of Aspirants`
           : `${nodeName} — ${name} | House of Aspirants`,
       desc: chapterName
-        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, free for every aspirant.`
+        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, open to every aspirant.`
         : langName
-          ? `${plural(chapters.length, "chapter")} of free ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
-          : `${subjectCount} file(s) of free ${nodeName} study material inside ${name} — open a language, then a chapter, then a part.`,
+          ? `${plural(chapters.length, "chapter")} of ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
+          : `${subjectCount} file(s) of ${nodeName} study material inside ${name} — open a language, then a chapter, then a part.`,
     } : undefined);
     return;
 
@@ -987,10 +987,10 @@
           ? `${nodeName} — ${langName} chapters | House of Aspirants`
           : `${nodeName} Study Material | House of Aspirants`);
       const desc = (opts && opts.desc) || (chapterName
-        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, free for every aspirant.`
+        ? `${chapterParts.length} part(s) of ${chapterName}, in ${langName}, under ${nodeName}. Read online or download, open to every aspirant.`
         : langName
-          ? `${plural(chapters.length, "chapter")} of free ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
-          : `${subjectCount} file(s) of free ${nodeName} study material for Punjab competitive exams — choose a language, then a chapter, then a part.`);
+          ? `${plural(chapters.length, "chapter")} of ${nodeName} study material in ${langName} — read online or download, no sign-up and no paid tier.`
+          : `${subjectCount} file(s) of ${nodeName} study material for Punjab competitive exams — choose a language, then a chapter, then a part.`);
 
       if (typeof (/** @type {any} */ (HOA).seo) === "function") {
         (/** @type {any} */ (HOA).seo)({
@@ -1101,7 +1101,7 @@
   if (meta) {
     const total = rows.reduce((n, r) => n + (Number(r.count) || 0), 0);
     meta.textContent = total
-      ? `${rows.length} subject${rows.length === 1 ? "" : "s"} · ${total} file${total === 1 ? "" : "s"} of study material · free, no sign-up`
+      ? `${rows.length} subject${rows.length === 1 ? "" : "s"} · ${total} file${total === 1 ? "" : "s"} of study material · no sign-up`
       : `${rows.length} subject${rows.length === 1 ? "" : "s"} · material publishes as it is added`;
   }
 })();

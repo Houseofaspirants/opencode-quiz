@@ -128,7 +128,7 @@ The post was advertised at a **basic pay of Rs 25,500** (7th CPC pay matrix), pl
 3. **Punjab agriculture facts** - major fruits and districts.
 4. **GK and reasoning** for the rest of Part B.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Horticulture Supervisor paper](pyq/psssb-horticulture-supervisor/index.html)
 - [GK quizzes](subject-gk.html)

@@ -119,7 +119,7 @@ references:
 3. 12ਵੀਂ ਪੱਧਰ ਦੀ ਰੀਜ਼ਨਿੰਗ, ਗਣਿਤ, ਅੰਗਰੇਜ਼ੀ ਅਤੇ ਕੰਪਿਊਟਰ।
 4. ਦੌੜ ਦਾ ਅਭਿਆਸ ਹੁਣੇ ਸ਼ੁਰੂ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਚੰਡੀਗੜ੍ਹ ਪੁਲਿਸ ਕਾਂਸਟੇਬਲ ਪੇਪਰ](pyq/chandigarh-police-constable/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

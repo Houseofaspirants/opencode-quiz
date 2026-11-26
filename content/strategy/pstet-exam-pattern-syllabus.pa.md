@@ -122,7 +122,7 @@ PSTET 2024 ਦੀਆਂ ਮੁੱਖ ਮਿਤੀਆਂ: ਰਜਿਸਟ੍ਰ�
 4. **Negative marking ਨਹੀਂ** - ਹਰ ਪ੍ਰਸ਼ਨ ਕਰੋ।
 5. **ਦੋਵਾਂ ਪੇਪਰਾਂ ਦੀ ਯੋਜਨਾ ਬਣਾਓ** ਜੇ ਤੁਹਾਡੇ ਕੋਲ ਦੋਵਾਂ ਦੀ ਯੋਗਤਾ ਹੈ; CDP ਅਤੇ ਦੋਵੇਂ ਭਾਸ਼ਾਵਾਂ ਦੋਵਾਂ ਵਿੱਚ ਸਾਂਝੀਆਂ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [PSTET ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/pstet/index.html)
 - [ਪੰਜਾਬ ETT ਅਧਿਆਪਕ ਪੇਪਰ](pyq/punjab-ett-teacher/index.html)

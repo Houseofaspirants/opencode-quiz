@@ -65,7 +65,7 @@ references:
 2. MSc ਦਾ ਸਿਲੇਬਸ ਦੁਹਰਾਓ।
 3. ਸਮੇਂ ਨਾਲ numericals ਦਾ ਅਭਿਆਸ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਸੀਨੀਅਰ ਟੈਕਨੀਕਲ ਅਸਿਸਟੈਂਟ ਪੇਪਰ](pyq/psssb-senior-technical-assistant/index.html)
 - [ਗਣਿਤ ਕੁਇਜ਼](subject-quant.html)

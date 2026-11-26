@@ -1,6 +1,6 @@
 // @ts-check
 /* ============================================================================
- * core.js | House of Aspirants — Free Competitive Exam Learning Platform
+ * core.js | House of Aspirants — Competitive Exam Learning Platform
  * ----------------------------------------------------------------------------
  * Shared, dependency-free core:
  *   1.  Storage layer        (namespaced localStorage + safe fallback)
@@ -275,7 +275,7 @@ const HOA = (() => {
     "Exams": "ਪ੍ਰੀਖਿਆਵਾਂ",
     "Live Sessions": "ਲਾਈਵ ਸੈਸ਼ਨ",
     "Recruitment": "ਭਰਤੀ",
-    "Free PDFs": "ਮੁਫ਼ਤ PDFs",
+    "PDFs": "PDFs",
     "Blog": "ਬਲੌਗ",
     "Topper's Diary": "ਟੌਪਰ ਦੀ ਡਾਇਰੀ",
     "How I got Rank 2 in Punjab Police SI": "ਪੰਜਾਬ ਪੁਲਿਸ SI ਵਿੱਚ ਮੇਰਾ ਰੈਂਕ 2 ਕਿਵੇਂ ਆਇਆ",
@@ -329,7 +329,7 @@ const HOA = (() => {
       "ਇੱਕੋਜਿਹੇ ਹਜ਼ਾਰਾਂ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਮਿਲ ਕੇ ਤਿਆਰੀ ਕਰੋ।",
     "House of Aspirants Telegram Community":
       "House of Aspirants ਟੈਲੀਗ੍ਰਾਮ ਕਮਿਊਨਿਟੀ",
-    "Free Study Material": "ਮੁਫ਼ਤ ਅਧਿਐਨ ਸਮੱਗਰੀ",
+    "Study Material": "ਅਧਿਐਨ ਸਮੱਗਰੀ",
     "Current Affairs Magazine": "ਕਰੰਟ ਅਫੇਅਰਜ਼ ਮੈਗਜ਼ੀਨ",
     "Personal Notes": "ਨਿੱਜੀ ਨੋਟਾਂ",
     "Weekly Live Guidance": "ਹਫ਼ਤਾਵਾਰੀ ਲਾਈਵ ਮਾਰਗਦਰਸ਼ਨ",
@@ -348,7 +348,7 @@ const HOA = (() => {
       "ਪੰਜਾਬ ਦੀਆਂ ਮੁਕਾਬਲਾ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਬਣਾਇਆ ਗਿਆ",
     "Choose a subject, master a topic": "ਵਿਸ਼ਾ ਚੁਣੋ, ਟੌਪਿਕ ਮਾਸਟਰ ਕਰੋ",
     "Freshly published practice sets": "ਨਵੇਂ ਪ੍ਰਕਾਸ਼ਿਤ ਅਭਿਆਸ ਸੈੱਟ",
-    "Prepare smarter with free guides": "ਮੁਫ਼ਤ ਗਾਈਡਾਂ ਨਾਲ ਹੋਸ਼ਿਆਰ ਬਣੋ",
+    "Prepare smarter with guides": "ਗਾਈਡਾਂ ਨਾਲ ਹੋਸ਼ਿਆਰ ਬਣੋ",
     "Learn from Someone Who Cleared the Exam":
       "ਉਸ ਵਿਅਕਤੀ ਤੋਂ ਸਿੱਖੋ ਜਿਸਨੇ ਪ੍ਰੀਖਿਆ ਪਾਸ ਕੀਤੀ",
     "Everything you get after joining": "ਸ਼ਾਮਲ ਹੋਣ ਉੱਤੇ ਕੀ ਕੁਝ ਮਿਲਦਾ ਹੈ",
@@ -358,12 +358,12 @@ const HOA = (() => {
       "ਵਿਸ਼ਾ ਚੁਣੋ, ਟੌਪਿਕ ਚੁਣੋ, ਅਭਿਆਸ ਸ਼ੁਰੂ ਕਰੋ।",
     "A fresh mixed challenge every single day.":
       "ਹਰ ਰੋਜ਼ ਨਵੀਂ ਮਿਕਸਡ ਚੁਣੌਤੀ।",
-    "Free guides, study plans and revision strategy.":
-      "ਮੁਫ਼ਤ ਗਾਈਡਾਂ, ਅਧਿਐਨ ਯੋਜਨਾਵਾਂ ਅਤੇ ਰਿਵਿਜ਼ਨ ਰਣਨੀਤੀ।",
+    "Guides, study plans and revision strategy.":
+      "ਗਾਈਡਾਂ, ਅਧਿਐਨ ਯੋਜਨਾਵਾਂ ਅਤੇ ਰਿਵਿਜ਼ਨ ਰਣਨੀਤੀ।",
     "See how your scores rank against other aspirants.":
       "ਵੇਖੋ ਤੁਹਾਡੇ ਸਕੋਰ ਹੋਰ ਅਸਪਿਰੈਂਟਾਂ ਨਾਲ ਕਿੱਥੇ ਹਨ।",
-    "Daily MCQs, PDFs, current affairs and recruitment alerts — free.":
-      "ਰੋਜ਼ਾਨਾ MCQs, PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਭਰਤੀ ਅਪਡੇਟ — ਮੁਫ਼ਤ।",
+    "Daily MCQs, PDFs, current affairs and recruitment alerts.":
+      "ਰੋਜ਼ਾਨਾ MCQs, PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਭਰਤੀ ਅਪਡੇਟ।",
     "Choose a topic →": "ਟੌਪਿਕ ਚੁਣੋ →",
     "Play today's →": "ਅੱਜ ਦਾ ਖੇਡੋ →",
     "Read notes →": "ਨੋਟ ਪੜ੍ਹੋ →",
@@ -401,7 +401,7 @@ const HOA = (() => {
     "Why Punjabi": "ਪੰਜਾਬੀ ਕਿਉਂ",
     "Why Punjab aspirants prefer learning concepts in Punjabi":
       "ਪੰਜਾਬ ਦੇ ਅਸਪਿਰੈਂਟ ਪੰਜਾਬੀ ਵਿੱਚ ਸਿੱਖਣ ਨੂੰ ਕਿਉਂ ਤਰਜੀਹ ਦਿੰਦੇ ਹਨ",
-    "Free, and no advertising": "ਮੁਫ਼ਤ, ਅਤੇ ਬਿਨਾਂ ਵਿਗਿਆਪਨ",
+    "No sign-up, and no advertising": "ਬਿਨਾਂ ਸਾਈਨ-ਅੱਪ, ਅਤੇ ਬਿਨਾਂ ਵਿਗਿਆਪਨ",
     "Both languages, honestly labelled": "ਦੋਵਾਂ ਭਾਸ਼ਾਵਾਂ, ਇਮਾਨਦਾਰ ਲੇਬਲ",
     "Written by someone who cleared it": "ਉਸ ਵਿਅਕਤੀ ਵੱਲੋਂ ਲਿਖਿਆ ਜਿਸਨੇ ਪਾਸ ਕੀਤਾ",
     "Built for the phone in your pocket": "ਤੁਹਾਡੀ ਜੇਬ ਦੇ ਫ਼ੋਨ ਲਈ ਬਣਾਇਆ ਗਿਆ",
@@ -651,15 +651,15 @@ const HOA = (() => {
   <div class="ann-bar">
     <div class="container ann-inner">
       <span class="ann-item"><span class="ann-ico" aria-hidden="true">🏆</span><span class="ann-full">Prepared by </span>Punjab Police SI Rank 2 (713/800 Marks)</span>
-      <span class="ann-item"><span class="ann-ico" aria-hidden="true">📚</span> FREE Study Material in Punjabi &amp; English</span>
-      <a class="ann-item ann-live" data-live-headline href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span class="ann-dot" aria-hidden="true"></span><span data-live-text>FREE LIVE doubt session every Sunday 8 PM</span><span class="ann-cta" data-live-cta>Join on Telegram →</span></a>
+      <span class="ann-item"><span class="ann-ico" aria-hidden="true">📚</span> Study Material in Punjabi &amp; English</span>
+      <a class="ann-item ann-live" data-live-headline href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"><span class="ann-dot" aria-hidden="true"></span><span data-live-text>LIVE doubt session every Sunday 8 PM</span><span class="ann-cta" data-live-cta>Join on Telegram →</span></a>
     </div>
   </div>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="House of Aspirants Free Exam Learning Platform - go to home">
+      <a class="brand" href="./" aria-label="House of Aspirants Exam Learning Platform - go to home">
         <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="House of Aspirants logo" title="House of Aspirants" decoding="async">
-        <span class="brand-name">House of Aspirants <span class="brand-sub">Free Exam Learning Platform</span></span>
+        <span class="brand-name">House of Aspirants <span class="brand-sub">Exam Learning Platform</span></span>
       </a>
 
       <!-- TWO-TIER ON DESKTOP. The .header-inner row wraps, so row 1 is the
@@ -705,7 +705,7 @@ const HOA = (() => {
                 <a data-nav="sessions" href="live-sessions"><span data-i18n="Live Sessions">Live Sessions</span></a>
                 <a data-nav="expected-mcqs" href="expected-mcqs"><span data-i18n="Expected MCQs">Expected MCQs</span></a>
                 <a data-nav="previous-year-questions" href="previous-year-questions"><span data-i18n="Previous Year Questions">Previous Year Questions</span></a>
-                <a data-nav="pdfs" href="pdfs"><span data-i18n="Free PDFs">Free PDFs</span></a>
+                <a data-nav="pdfs" href="pdfs"><span data-i18n="PDFs">PDFs</span></a>
                 <a data-nav="blogs" href="blogs"><span data-i18n="Topper's Diary">Topper's Diary</span></a>
                 <a data-nav="archives" href="archives"><span data-i18n="Archives">Archives</span></a>
                 <!-- /HOA-NAV:menu -->
@@ -866,7 +866,7 @@ const HOA = (() => {
           <p data-i18n="House of Aspirants Telegram Community">House of Aspirants Telegram Community</p>
         </div>
         <ul class="footer-tg-list">
-          <li data-i18n="Free Study Material">Free Study Material</li>
+          <li data-i18n="Study Material">Study Material</li>
           <li data-i18n="Current Affairs Magazine">Current Affairs Magazine</li>
           <li data-i18n="Personal Notes">Personal Notes</li>
           <li data-i18n="Weekly Live Guidance">Weekly Live Guidance</li>
@@ -881,12 +881,12 @@ const HOA = (() => {
         <div class="footer-brand">
           <a class="brand" href="./">
             <img class="brand-logo" src="assets/img/logo-sm.png" width="38" height="38" alt="" title="House of Aspirants" loading="lazy" decoding="async">
-            <span class="brand-name">House of Aspirants<span class="brand-sub">Free Exam Learning Platform</span></span>
+            <span class="brand-name">House of Aspirants<span class="brand-sub">Exam Learning Platform</span></span>
           </a>
           <!-- Brief item 9: the standing brand statement, in both languages. -->
           <p class="footer-stand"
              data-i18n="House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.">House of Aspirants is dedicated to helping Punjab aspirants prepare confidently with high-quality bilingual learning resources in Punjabi and English.</p>
-          <p>A free Competitive Exam Learning Platform — study notes, expected MCQs,
+          <p>A Competitive Exam Learning Platform — study notes, expected MCQs,
              mock tests and current affairs for Punjab Police, PSSSB and Punjab
              Government aspirants, in Punjabi and English.</p>
           <div class="social-row">
@@ -929,7 +929,7 @@ const HOA = (() => {
           <a href="live-sessions" data-i18n="Live Sessions">Live Sessions</a>
           <a href="expected-mcqs" data-i18n="Expected MCQs">Expected MCQs</a>
           <a href="previous-year-questions" data-i18n="Previous Year Questions">Previous Year Questions</a>
-          <a href="pdfs" data-i18n="Free PDFs">Free PDFs</a>
+          <a href="pdfs" data-i18n="PDFs">PDFs</a>
           <a href="blogs" data-i18n="Topper's Diary">Topper's Diary</a>
           <a href="archives" data-i18n="Archives">Archives</a>
           <a href="search" data-i18n="Search">Search</a>
@@ -963,8 +963,8 @@ const HOA = (() => {
 
   <button class="icon-btn to-top" id="toTop" aria-label="Back to top">⬆</button>
   <a class="tg-float" href="https://t.me/HouseOfAspirant" target="_blank" rel="noopener"
-     title="Free study material on Telegram" aria-label="Free study material — join the House of Aspirants Telegram community">
-    <span class="tgf-ico" aria-hidden="true">📲</span> Free Study Material
+     title="Study material on Telegram" aria-label="Study material — join the House of Aspirants Telegram community">
+    <span class="tgf-ico" aria-hidden="true">📲</span> Study Material
   </a>
 
   <!-- THUMB-HEIGHT NAVIGATION — the five actions students actually take.
@@ -1869,7 +1869,7 @@ const HOA = (() => {
   }
 
   /* ========================================== 9. TELEGRAM GROWTH ========= */
-  /* Rotating banners + exit-intent popup. The floating "Free Study Material"
+  /* Rotating banners + exit-intent popup. The floating "Study Material"
    * button lives in FOOTER_HTML. System rules: never force a join, never
    * block a quiz or a result, never interrupt an attempt, remember
    * dismissals. No rotation on quiz pages (they have no rotator slots). */
@@ -1880,7 +1880,7 @@ const HOA = (() => {
   // page-specific message first, then cycles through these six.
   const TG_BANNERS = [
     {
-      title: "📥 Free Monthly Current Affairs Magazine",
+      title: "📥 Monthly Current Affairs Magazine",
       sub: "The complete magazine is available on Telegram.",
       cta: "Join Now",
     },
@@ -1891,7 +1891,7 @@ const HOA = (() => {
     },
     {
       title: "🎥 Weekly Live Guidance Session",
-      sub: "Free for everyone in the community.",
+      sub: "Open to everyone in the community.",
       cta: "Join",
     },
     {
@@ -1905,7 +1905,7 @@ const HOA = (() => {
       cta: "Join Now",
     },
     {
-      title: "📖 Free Preparation Resources",
+      title: "📖 Preparation Resources",
       sub: "Everything organised in one place.",
       cta: "Join",
     },
@@ -2038,7 +2038,7 @@ const HOA = (() => {
       <div class="tg-exit" role="dialog" aria-modal="true" aria-labelledby="tgExitTitle">
         <div class="tg-exit-icon" aria-hidden="true">🎁</div>
         <h2 id="tgExitTitle">Before You Leave…</h2>
-        <p class="tg-exit-sub">Don't miss free study resources. Join the House of Aspirants Telegram community and get</p>
+        <p class="tg-exit-sub">Don't miss study resources. Join the House of Aspirants Telegram community and get</p>
         <ul class="tg-exit-list">
           <li>Personal Notes</li>
           <li>Monthly Current Affairs Magazine</li>
@@ -2295,12 +2295,12 @@ const HOA = (() => {
   const LIVE_COPY = {
     now: { en: ["LIVE NOW: doubt session with the Rank 2 topper", "Join on Telegram →"],
            pa: ["ਹੁਣ LIVE ਹਾਂ: ਰੈਂਕ 2 ਟਾਪਰ ਨਾਲ doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
-    today: { en: ["Today 8 PM: FREE LIVE doubt session", "Join on Telegram →"],
-             pa: ["ਅੱਜ ਰਾਤ 8 ਵਜੇ: ਮੁਫ਼ਤ LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
-    tomorrow: { en: ["Tomorrow 8 PM: FREE LIVE doubt session", "Send your doubt →"],
-                pa: ["ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ: ਮੁਫ਼ਤ LIVE doubt session", "doubt ਭੇਜੋ →"] },
-    week: { en: ["FREE LIVE doubt session every Sunday 8 PM", "Join on Telegram →"],
-            pa: ["ਹਰ ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ ਮੁਫ਼ਤ LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
+    today: { en: ["Today 8 PM: LIVE doubt session", "Join on Telegram →"],
+             pa: ["ਅੱਜ ਰਾਤ 8 ਵਜੇ: LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
+    tomorrow: { en: ["Tomorrow 8 PM: LIVE doubt session", "Send your doubt →"],
+                pa: ["ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ: LIVE doubt session", "doubt ਭੇਜੋ →"] },
+    week: { en: ["LIVE doubt session every Sunday 8 PM", "Join on Telegram →"],
+            pa: ["ਹਰ ਐਤਵਾਰ ਰਾਤ 8 ਵਜੇ LIVE doubt session", "Telegram 'ਤੇ ਜੁੜੋ →"] },
   };
 
   /** Where the week stands in IST: "now" | "today" | "tomorrow" | "week". */
@@ -2356,7 +2356,7 @@ const HOA = (() => {
         tomorrow: "Tomorrow 8 PM: ask your doubts LIVE",
         week: "Stuck somewhere? Ask me LIVE every Sunday",
       },
-      sub: "Free doubt session with Gurpreet Singh, Punjab Police SI Rank 2 (713/800). Exam doubts, strategy, how to use this site - send your question in the channel.",
+      sub: "Doubt session with Gurpreet Singh, Punjab Police SI Rank 2 (713/800). Exam doubts, strategy, how to use this site - send your question in the channel.",
       join: "Join on Telegram",
       more: "Session details",
       dlTitle: "Download started ✓",
@@ -2371,7 +2371,7 @@ const HOA = (() => {
         tomorrow: "ਕੱਲ੍ਹ ਰਾਤ 8 ਵਜੇ: ਆਪਣੇ doubts LIVE ਪੁੱਛੋ",
         week: "ਕਿਤੇ ਫਸ ਗਏ ਹੋ? ਹਰ ਐਤਵਾਰ ਮੈਨੂੰ LIVE ਪੁੱਛੋ",
       },
-      sub: "ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ (ਪੰਜਾਬ ਪੁਲਿਸ SI ਰੈਂਕ 2, 713/800) ਨਾਲ ਮੁਫ਼ਤ doubt session। ਪੇਪਰ ਦੇ doubts, ਰਣਨੀਤੀ, ਵੈੱਬਸਾਈਟ ਕਿਵੇਂ ਵਰਤਣੀ ਹੈ - ਆਪਣਾ ਸਵਾਲ channel ਵਿੱਚ ਭੇਜੋ।",
+      sub: "ਗੁਰਪ੍ਰੀਤ ਸਿੰਘ (ਪੰਜਾਬ ਪੁਲਿਸ SI ਰੈਂਕ 2, 713/800) ਨਾਲ doubt session। ਪੇਪਰ ਦੇ doubts, ਰਣਨੀਤੀ, ਵੈੱਬਸਾਈਟ ਕਿਵੇਂ ਵਰਤਣੀ ਹੈ - ਆਪਣਾ ਸਵਾਲ channel ਵਿੱਚ ਭੇਜੋ।",
       join: "Telegram 'ਤੇ ਜੁੜੋ",
       more: "Session ਬਾਰੇ",
       dlTitle: "Download ਸ਼ੁਰੂ ✓",

@@ -1,5 +1,5 @@
 /* ============================================================================
-   HOUSE OF ASPIRANTS - FREE COMPETITIVE EXAM LEARNING PLATFORM
+   HOUSE OF ASPIRANTS - COMPETITIVE EXAM LEARNING PLATFORM
    style.css  |  Design system, layout & reusable components
    Mobile-first. Light + Dark theme via CSS custom properties.
    ========================================================================== */
@@ -642,7 +642,7 @@ html[data-theme="dark"] .brand-logo { box-sizing: border-box; border: 1px solid 
   color: var(--brand);
 }
 
-/* ------------------------------------------------- FREE platform section -- */
+/* ------------------------------------------------- platform section -- */
 /* "FREE" is set as a badge inside the heading, so the promise is the loudest
    thing in the card instead of a claim buried in the body copy. Brand gradient
    only — no new hues enter the palette. */
@@ -922,7 +922,7 @@ html[data-theme="dark"] .mm-link.mm-tg { color: #4db6e8; }
 }
 .hero-sub { color: var(--muted); max-width: 56ch; margin-bottom: 24px; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; }
-/* Tertiary path to the daily drill — keeps "Start Free Quiz" one tap away
+/* Tertiary path to the daily drill — keeps "Start Quiz" one tap away
    without spending a third button on the two-CTA hierarchy above. */
 .hero-alt { margin-top: 15px; font-size: 0.88rem; color: var(--muted); }
 .hero-alt a { font-weight: 700; color: var(--brand); text-underline-offset: 3px; }

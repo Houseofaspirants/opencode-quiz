@@ -188,11 +188,11 @@ def fit_title(base, fallback, trim_suffix=""):
 
 
 DESC_TAILS = [
-    " Start practising free on House of Aspirants - no login needed.",
-    " Free MCQ practice for Punjab exams.",
-    " Free MCQ practice with answers.",
-    " Free MCQ practice.",
-    " Free practice.",
+    " Start practising on House of Aspirants - no login needed.",
+    " MCQ practice for Punjab exams.",
+    " MCQ practice with answers.",
+    " MCQ practice.",
+    " Practise now.",
 ]
 
 
@@ -965,19 +965,19 @@ def build_subject(s):
     authored = copy_subjects.get(sid, {})
     cfg_desc = s.get("description", "").strip()
 
-    title = fit_title(f"{name} Quiz: Free MCQs for Punjab Exams",
+    title = fit_title(f"{name} Quiz: MCQs for Punjab Exams",
                       f"{name} MCQs for Punjab Exams")
     if n_topics:
         description = fit_desc(
-            f"Free {name} MCQs for Punjab Police, PSSSB and PPSC practice - "
+            f"{name} MCQs for Punjab Police, PSSSB and PPSC practice - "
             f"{n_topics} topic sets ({q_total} questions) with instant answers, "
             f"explanations and accuracy tracking.")
     else:
         description = fit_desc(
-            f"Free {name} MCQs for Punjab Police, PSSSB and PPSC practice - "
+            f"{name} MCQs for Punjab Police, PSSSB and PPSC practice - "
             f"daily quizzes, instant answers, full explanations and accuracy tracking.")
     kw = keywords(f"{name} MCQs", f"{name} quiz", f"{name} questions",
-                  "Punjab Police MCQ", "Free online MCQ test", cfg_desc)
+                  "Punjab Police MCQ", "Online MCQ test", cfg_desc)
     h1 = f"{name} MCQs for Punjab Exams"
     lead = (f"{cfg_desc.rstrip('.')} - organised into short, untimed sets you can "
             f"finish between two study sessions.")
@@ -1222,12 +1222,12 @@ def build_category(s, c):
     title = fit_title(f"{name} Quiz: {s['name']} MCQs for Punjab Exams",
                       f"{name} MCQs for Punjab Exams")
     description = fit_desc(
-        f"Free {name} MCQs inside {s['name']} - {len(topics)} topic sets ({q_total} questions) "
+        f"{name} MCQs inside {s['name']} - {len(topics)} topic sets ({q_total} questions) "
         f"with instant answers, explanations and exam-relevant practice.") if topics else \
-        fit_desc(f"Free {name} MCQs inside {s['name']} - topic sets publish as they are "
+        fit_desc(f"{name} MCQs inside {s['name']} - topic sets publish as they are "
                  f"verified, with instant answers, explanations and exam-relevant practice.")
     kw = keywords(f"{name} MCQs", f"{name} questions", f"{s['name']} quiz",
-                  "Punjab Police MCQ", "Free online MCQ test")
+                  "Punjab Police MCQ", "Online MCQ test")
     h1 = f"{name} MCQs for Punjab Exams"
     lead = (f"A focused lane inside {s['name']} - one folder, one set of facts, "
             f"and a short quiz to prove you know them.")
@@ -1435,7 +1435,7 @@ def build_topic(s, c, t):
                       f"{name} MCQ Practice")
     description = fit_desc(
         f"{name} ({s['name']}) - why it is asked, what to expect, and "
-        f"{count} free MCQs with instant answers and full explanations.")
+        f"{count} MCQs with instant answers and full explanations.")
     kw = keywords(name, f"{name} MCQs", f"{s['name']} quiz",
                   f"{cat_name} MCQs" if cat_name else "", "Punjab exam MCQs")
     h1 = f"{name} - Topic Guide and MCQs"
@@ -1520,7 +1520,7 @@ def build_topic(s, c, t):
         + "\n" + join_paras([authored.get("pyq") or (
             "Past papers reuse clusters like this almost verbatim across years and posts. "
             "Run the same set until every distractor is familiar - previous-year style "
-            "questions stop being recall and start being free marks.")])
+            "questions stop being recall and start being easy marks.")])
         + "\n" + note_box("Where the previous-year sets live",
                           "The portal's previous-year practice runs through the General "
                           "Knowledge lane and the daily mixed quiz.",
@@ -1781,8 +1781,8 @@ def build_topic_pa(s, c, t):
     title = fit_title(f"{name} | MCQ ਪੰਜਾਬੀ ਵਿੱਚ",
                       f"{name} MCQ")
     _d1 = f"{name}: {count} MCQ ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ, ਹਰ ਸਵਾਲ ਦਾ ਸਹੀ ਉੱਤਰ ਅਤੇ ਵਿਆਖਿਆ। "
-    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
-              "Punjab Police ਅਤੇ PSSSB ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਅਭਿਆਸ।",
+              "Punjab Police ਅਤੇ PSSSB ਲਈ ਅਭਿਆਸ।", "ਅਭਿਆਸ ਕਰੋ।"]
     description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
                                 _d1 + _tails[-1]))
     kw = keywords(name, f"{name} MCQ", f"{subj_pa} ਸਵਾਲ", f"{en_name} MCQ in Punjabi",
@@ -1848,8 +1848,8 @@ def build_topic_pa(s, c, t):
     faqs = [
         (f"{name} ਵਿੱਚ ਕਿੰਨੇ ਸਵਾਲ ਹਨ?",
          f"ਇਸ ਸੈੱਟ ਵਿੱਚ {count} ਸਵਾਲ ਹਨ। ਹਰ ਸਵਾਲ ਦੇ ਚਾਰ ਵਿਕਲਪ ਹਨ ਅਤੇ ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਦਿੱਤੀ ਗਈ ਹੈ।"),
-        ("ਕੀ ਇਹ ਸਵਾਲ ਮੁਫ਼ਤ ਹਨ?",
-         "ਹਾਂ। House of Aspirants ਦੇ ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਮੁਫ਼ਤ ਹਨ ਅਤੇ ਖੋਲ੍ਹਣ ਲਈ ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।"),
+        ("ਕੀ ਇਹ ਸਵਾਲ ਖੋਲ੍ਹਣ ਲਈ ਲੌਗਇਨ ਚਾਹੀਦਾ ਹੈ?",
+         "ਨਹੀਂ। House of Aspirants ਦੇ ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਬਿਨਾਂ ਲੌਗਇਨ ਖੁੱਲ੍ਹਦੇ ਹਨ।"),
         ("ਕੀ ਇਹੀ ਸਵਾਲ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
          "ਹਾਂ। ਉੱਪਰ \"English version\" ਬਟਨ ਨਾਲ ਇਹੀ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਖੁੱਲ੍ਹਦਾ ਹੈ।"),
     ]
@@ -1980,7 +1980,7 @@ def build_category_pa(s, c):
                       f"{en_name} MCQ in Punjabi | {name}")
     _d1 = (f"{en_name} MCQ in Punjabi: {name} ਦੇ {len(sets)} ਸੈੱਟ, {q_total} ਸਵਾਲ, "
            f"ਹਰ ਉੱਤਰ ਦੀ ਵਿਆਖਿਆ ਨਾਲ। ")
-    _tails = ["Punjab Police ਅਤੇ PSSSB ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।", ""]
+    _tails = ["Punjab Police ਅਤੇ PSSSB ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਅਭਿਆਸ।", "ਅਭਿਆਸ ਕਰੋ।", ""]
     description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
                                 _d1.strip()))
     kw = keywords(f"{en_name} MCQ in Punjabi", f"{name} MCQ", f"{name} ਸਵਾਲ",
@@ -2034,8 +2034,8 @@ def build_category_pa(s, c):
         (f"{name} ਵਿੱਚ ਕਿੰਨੇ ਪੰਜਾਬੀ ਸਵਾਲ ਹਨ?",
          f"ਇਸ ਵੇਲੇ {len(sets)} ਸੈੱਟ ਅਤੇ ਕੁੱਲ {q_total} ਸਵਾਲ ਪੰਜਾਬੀ ਵਿੱਚ ਹਨ। ਨਵਾਂ ਸੈੱਟ "
          f"ਛਪਦੇ ਹੀ ਇਸ ਪੰਨੇ ਉੱਤੇ ਜੁੜ ਜਾਂਦਾ ਹੈ।"),
-        ("ਕੀ ਇਹ ਸਵਾਲ ਮੁਫ਼ਤ ਹਨ?",
-         "ਹਾਂ। ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਮੁਫ਼ਤ ਹਨ ਅਤੇ ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।"),
+        ("ਕੀ ਇਹ ਸਵਾਲ ਖੋਲ੍ਹਣ ਲਈ ਲੌਗਇਨ ਚਾਹੀਦਾ ਹੈ?",
+         "ਨਹੀਂ। ਸਾਰੇ ਸਵਾਲ, ਕੁਇਜ਼ ਅਤੇ ਨੋਟਸ ਬਿਨਾਂ ਲੌਗਇਨ ਖੁੱਲ੍ਹਦੇ ਹਨ।"),
         (f"ਕੀ {name} ਦੇ ਸਵਾਲ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
          "ਹਾਂ। ਹਰ ਪੰਜਾਬੀ ਸੈੱਟ ਦਾ ਅੰਗਰੇਜ਼ੀ ਰੂਪ ਹੈ - ਉਹੀ ਸਵਾਲ, ਉਹੀ ਕ੍ਰਮ। \"English "
          "version\" ਬਟਨ ਨਾਲ ਖੋਲ੍ਹੋ।"),
@@ -2077,21 +2077,21 @@ def build_quiz(s, c, t):
     updated = fmt_date(t.get("updatedAt"))
     diff = difficulty_label(qs)
 
-    title = fit_title(f"{name} Quiz ({count} MCQs) - Free Online Test",
-                      f"{name} Quiz - Free MCQs" if len(f"{name} Quiz - Free MCQs") <= 60
+    title = fit_title(f"{name} Quiz ({count} MCQs) - Online Test",
+                      f"{name} Quiz - MCQs" if len(f"{name} Quiz - MCQs") <= 60
                       else f"{name} Quiz", trim_suffix=" Quiz")
     description = fit_desc(
         f"Practise {name} online: {count} MCQs in about {est}, instant scoring, question "
-        f"palette and a full answer review. Free topic quiz for Punjab exam preparation.")
+        f"palette and a full answer review. Topic quiz for Punjab exam preparation.")
     kw = keywords(f"{name} quiz", f"{name} MCQs", f"{s['name']} MCQs",
-                  "MCQ practice test", "Free online MCQ test")
+                  "MCQ practice test", "Online MCQ test")
     h1 = name
     lead = (f"{count} questions from {s['name']}"
             + (f" > {c['name']}" if c else "")
             + f" - untimed, about {est} at a steady pace.")
     answer = (f"{name} is an untimed topic quiz: {count} questions, about {est} at a "
               f"steady pace. You get a question palette, instant scoring, a "
-              f"{SITE_PASS}% pass mark and a full answer review - free, and no sign-in is "
+              f"{SITE_PASS}% pass mark and a full answer review - and no sign-in is "
               f"needed to start.")
 
     faqs = [
@@ -2285,7 +2285,7 @@ def build_quiz_pa(s, c, t):
     # that tail is all that tells one part's title from the next.
     _part = re.search(r"\s*-?\s*(?:Part|ਭਾਗ)\s*\d+\s*$", name)
     title = next((" ".join(x.split()) for x in (
-        f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ ਮੁਫ਼ਤ MCQ ਟੈਸਟ", f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
+        f"{name} ਕੁਇਜ਼ | ਪੰਜਾਬੀ ਵਿੱਚ MCQ ਟੈਸਟ", f"{name} ਕੁਇਜ਼ - ਪੰਜਾਬੀ",
         f"{name} ਕੁਇਜ਼") if len(" ".join(x.split())) <= 60), "")
     if not title:
         _tail = (f" - {' '.join(_part.group().strip(' -').split())} ਕੁਇਜ਼"
@@ -2294,8 +2294,8 @@ def build_quiz_pa(s, c, t):
         title = _head[:60 - len(_tail)].rsplit(" ", 1)[0].rstrip(" ,-") + _tail
     _d1 = (f"{name} ਆਨਲਾਈਨ ਕੁਇਜ਼: {count} MCQ ਪੰਜਾਬੀ ਵਿੱਚ, ਤੁਰੰਤ ਸਕੋਰ ਅਤੇ ਹਰ ਉੱਤਰ "
            f"ਦੀ ਵਿਆਖਿਆ। ")
-    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
-              "Punjab Police ਅਤੇ PSSSB ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।", "ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+    _tails = ["Punjab Police, PSSSB ਅਤੇ ਹੋਰ ਪੰਜਾਬ ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਅਭਿਆਸ।",
+              "Punjab Police ਅਤੇ PSSSB ਲਈ ਅਭਿਆਸ।", "ਅਭਿਆਸ ਕਰੋ।"]
     description = fit_desc(next((_d1 + x for x in _tails if len(_d1 + x) <= 160),
                                 _d1 + _tails[-1]))
     kw = keywords(f"{name} ਕੁਇਜ਼", f"{name} MCQ", f"{en_name} quiz in Punjabi",
@@ -2580,9 +2580,9 @@ def quiz_shell(*, lang, title, description, kw, url, h1, graph, top_block, botto
 HUB_FILE, HUB_PA_FILE = "expected-mcqs.html", "pa/expected-mcqs.html"
 RESULT_PA_FILE = "pa/result.html"
 EN_ONLY = '<span class="badge-en-only" lang="pa">English only / ਸਿਰਫ਼ ਅੰਗਰੇਜ਼ੀ</span>'
-PA_TAILS = [" Punjab Police, PSSSB ਅਤੇ PPSC ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।",
-            " Punjab Police, PSSSB ਅਤੇ PPSC ਲਈ ਮੁਫ਼ਤ ਅਭਿਆਸ।",
-            " ਮੁਫ਼ਤ ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।", " ਮੁਫ਼ਤ ਅਭਿਆਸ।"]
+PA_TAILS = [" Punjab Police, PSSSB ਅਤੇ PPSC ਪ੍ਰੀਖਿਆਵਾਂ ਲਈ ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।",
+            " Punjab Police, PSSSB ਅਤੇ PPSC ਲਈ ਅਭਿਆਸ।",
+            " ਅਭਿਆਸ, ਲੌਗਇਨ ਦੀ ਲੋੜ ਨਹੀਂ।", " ਅਭਿਆਸ ਕਰੋ।"]
 
 
 def pa_alternates(en_file, pa_file):
@@ -2816,7 +2816,7 @@ def build_subject_pa(s):
             ("ਕੀ ਇਹ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹਨ?",
              "ਹਾਂ। ਉੱਪਰ English ਚੁਣੋ, ਜਾਂ ਕਿਸੇ ਵੀ ਸਵਾਲ ਹੇਠਾਂ \"Show in English\" ਦਬਾਓ।"),
             ("ਕੀ ਲੌਗਇਨ ਜ਼ਰੂਰੀ ਹੈ?",
-             "ਨਹੀਂ। ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ ਅਤੇ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।")]
+             "ਨਹੀਂ। ਹਰ ਸੈੱਟ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।")]
     crumbs = pa_trail(s)
     page_ld = webpage_ld(url, h1, description, f"{url}#breadcrumb",
                          has_part=[{"@id": f"{url}#faq"}])
@@ -2882,7 +2882,7 @@ def build_chapter(s, ch, lang):
                           f"{name} MCQs - {s['name']}")
         description = fit_desc(
             f"{name} MCQs from {s['name']}: {len(sets)} parts, {q_total} questions with an "
-            f"explanation for every answer. Free chapter practice for Punjab exams.")
+            f"explanation for every answer. Chapter practice for Punjab exams.")
         kw = keywords(f"{name} MCQs", f"{name} questions", f"{s['name']} MCQs")
         h1 = f"{name} MCQs"
         lead = f"A {s['name']} chapter - {len(sets)} parts, {q_total} questions."
@@ -2980,8 +2980,8 @@ def build_hub_pa():
                              + "\n" + edition_cards(newest), pad_top=False))
     for _n, _m, href, _e in subj_items + newest:
         link_record(filename, "hub-pa", href, "subject-pa", _n)
-    faqs = [("ਕੀ ਇਹ MCQs ਮੁਫ਼ਤ ਹਨ?",
-             "ਹਾਂ। ਹਰ ਸੈੱਟ ਮੁਫ਼ਤ ਹੈ ਅਤੇ ਲੌਗਇਨ ਤੋਂ ਬਿਨਾਂ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।"),
+    faqs = [("ਕੀ ਇਹ MCQs ਲਈ ਲੌਗਇਨ ਜ਼ਰੂਰੀ ਹੈ?",
+             "ਨਹੀਂ। ਹਰ ਸੈੱਟ ਲੌਗਇਨ ਤੋਂ ਬਿਨਾਂ ਤੁਰੰਤ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ।"),
             ("ਕੀ ਹਰ ਸੈੱਟ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਵੀ ਹੈ?",
              "ਹਾਂ। ਉੱਪਰ English ਚੁਣੋ; ਹਰ ਸਵਾਲ ਹੇਠਾਂ \"Show in English\" ਨਾਲ ਉਸਦਾ ਅੰਗਰੇਜ਼ੀ "
              "ਰੂਪ ਵੀ ਵੇਖ ਸਕਦੇ ਹੋ।"),
@@ -3035,8 +3035,8 @@ QUIZ_UI_PA = [
     ('<span class="sw vs"></span> Visited / skipped</li>',
      '<span class="sw vs"></span> ਵੇਖਿਆ / ਛੱਡਿਆ</li>'),
     ('id="resumeReset">↺ Restart set</button>', 'id="resumeReset">↺ ਸੈੱਟ ਦੁਬਾਰਾ ਸ਼ੁਰੂ ਕਰੋ</button>'),
-    ("<p>Daily free PDFs, current affairs & exam updates.</p>",
-     "<p>ਰੋਜ਼ਾਨਾ ਮੁਫ਼ਤ PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਪ੍ਰੀਖਿਆ ਅਪਡੇਟ।</p>"),
+    ("<p>Daily PDFs, current affairs & exam updates.</p>",
+     "<p>ਰੋਜ਼ਾਨਾ PDF, ਕਰੰਟ ਅਫੇਅਰਜ਼ ਅਤੇ ਪ੍ਰੀਖਿਆ ਅਪਡੇਟ।</p>"),
     ('rel="noopener">Join Telegram</a>', 'rel="noopener">ਟੈਲੀਗ੍ਰਾਮ ਵਿੱਚ ਸ਼ਾਮਲ ਹੋਵੋ</a>'),
     ('<div class="ad-label">Advertisement</div>', '<div class="ad-label">ਇਸ਼ਤਿਹਾਰ</div>'),
     ("Non-intrusive banner space below the set area.", "ਸਪਾਂਸਰ ਥਾਂ।"),
@@ -3169,14 +3169,14 @@ def build_exam(e):
                and (set(x.get("subjects") or []) & set(subj_ids)
                     or set(x.get("categories") or []) & set(cat_ids))][:4]
 
-    title = fit_title(f"{name}: Preparation, Subjects and Free MCQs",
-                      f"{name}: Preparation and Free MCQs")
+    title = fit_title(f"{name}: Preparation, Subjects and MCQs",
+                      f"{name}: Preparation and MCQs")
     description = fit_desc(
         f"Prepare for {name} - which subjects to study, which topic quizzes to run and the "
-        f"free MCQ sets that cover them on House of Aspirants.")
+        f"MCQ sets that cover them on House of Aspirants.")
     kw = keywords(f"{name} preparation", f"{name} syllabus", f"{name} MCQs",
-                  "Punjab government exam", "Free online MCQ test")
-    h1 = f"{name} - Preparation and Free MCQs"
+                  "Punjab government exam", "Online MCQ test")
+    h1 = f"{name} - Preparation and MCQs"
     lead = (f"What to study for {name}, in the order that scores: subjects first, topic "
             f"quizzes second, mock tests last.")
     answer = (f"To prepare for {name}, study the subjects it leans on"
@@ -3246,7 +3246,7 @@ def build_exam(e):
     if ex_pyq:
         body.append(card_section(
             "Previous year papers", f"{name} previous year question papers",
-            "Real papers and official answer keys, free to open.",
+            "Real papers and official answer keys, ready to open.",
             [(x["title"], "Papers from "
               + ", ".join(sorted({str(g.get("year")) for g in (x.get("papers") or [])
                                   if g.get("year")}, reverse=True)[:4]),
@@ -3274,7 +3274,7 @@ def build_exam(e):
 
     if ex_notes:
         body.append(card_section(
-            "Notes", f"Free notes for {name}",
+            "Notes", f"Notes for {name}",
             "Chapter notes for the subjects this paper tests - read online or download the PDF.",
             [(x["name"], f"{x['parts']} part{'s' if x['parts'] != 1 else ''}"
               + (f" \u00b7 {x['pages']} pages" if x["pages"] else ""),
@@ -3328,15 +3328,15 @@ def build_exam(e):
     else:
         q1a = ("This portal does not publish a subject list for this paper. The study guide "
                "above covers the planning side, and the subject library covers the questions.")
-    q2a = ("Yes. Every quiz, mock test and study guide on House of Aspirants is free, and no "
-           "sign-in is needed to open a set - Google sign-in is optional and only saves "
+    q2a = ("No. Every quiz, mock test and study guide on House of Aspirants opens without an "
+           "account - no sign-in is needed to open a set - Google sign-in is optional and only saves "
            "scores, bookmarks and progress.")
     q3a = ("No, and that is deliberate. Vacancies, dates, marks and admit cards change and "
            "this portal does not track them - always read the official notification on the "
            "recruiting body's own website before acting on a date.")
     faqs = [
         (f"Where should I start for {name}?", q1a),
-        ("Is the material on this portal free?", q2a),
+        ("Do I need an account to use this portal?", q2a),
         ("Do you publish dates, marks or admit cards?", q3a),
     ]
 
@@ -3410,14 +3410,14 @@ def build_cluster(c):
     guides = guides_for([subj["id"]] if subj else [], cat_id)
 
     # --- metadata -------------------------------------------------------------
-    title = fit_title(f"{name}: Syllabus, Topics and Free MCQs",
-                      f"{name}: Topics and Free MCQs")
+    title = fit_title(f"{name}: Syllabus, Topics and MCQs",
+                      f"{name}: Topics and MCQs")
     description = fit_desc(
         f"Study {name} for Punjab competitive exams - what the syllabus covers, which "
-        f"areas to revise first and the free MCQ practice behind them.")
+        f"areas to revise first and the MCQ practice behind them.")
     kw = keywords(f"{name} syllabus", f"{name} topics", f"{name} questions",
                   f"{name} MCQs", "Punjab exam preparation")
-    h1 = f"{name} - Study Guide and Free MCQs"
+    h1 = f"{name} - Study Guide and MCQs"
     lead = f"What {name} covers, which areas to revise first, and where to practise them."
     answer = (f"{name} is a study lane under {subj_name or 'this portal'}"
               + (f", inside {cat['name']}, " if cat else " ")
@@ -3527,13 +3527,13 @@ def build_cluster(c):
            f"ordered so each rests on the one before it. Once they are familiar, switch to "
            f"a timed mock test, which clears at "
            f"{SITE_PASS}% accuracy.")
-    q3a = ("Yes. Every quiz, mock test and study guide on House of Aspirants is free, and no "
-           "sign-in is needed to open a set - Google sign-in is optional and only saves "
+    q3a = ("No. Every quiz, mock test and study guide on House of Aspirants opens without an "
+           "account - no sign-in is needed to open a set - Google sign-in is optional and only saves "
            "scores, bookmarks and progress.")
     faqs = [
         (f"What does {name} cover?", q1a),
         (f"How should I study {name}?", q2a),
-        ("Is the material on this portal free?", q3a),
+        ("Do I need an account to use this portal?", q3a),
     ]
 
     crumbs = [("Home", "index.html", f"{BASE}/")]
@@ -3793,12 +3793,12 @@ def write_report(records):
     add("")
     add("| Type | Title template |")
     add("| --- | --- |")
-    add("| Subject | `<Subject> Quiz: Free MCQs for Punjab Exams` |")
+    add("| Subject | `<Subject> Quiz: MCQs for Punjab Exams` |")
     add("| Category | `<Category> Quiz: <Subject> MCQs for Punjab Exams` |")
     add("| Topic | `<Topic>: Topic Guide and MCQ Practice` |")
-    add("| Quiz | `<Topic> Quiz (<n> MCQs) - Free Online Test` |")
-    add("| Exam | `<Exam>: Preparation, Subjects and Free MCQs` |")
-    add("| Cluster | `<Cluster>: Syllabus, Topics and Free MCQs` |")
+    add("| Quiz | `<Topic> Quiz (<n> MCQs) - Online Test` |")
+    add("| Exam | `<Exam>: Preparation, Subjects and MCQs` |")
+    add("| Cluster | `<Cluster>: Syllabus, Topics and MCQs` |")
     add("")
     add("All landing metadata is **static HTML** - it is present before JavaScript runs, so "
         "crawlers never have to render the page to see the title, description, canonical or "

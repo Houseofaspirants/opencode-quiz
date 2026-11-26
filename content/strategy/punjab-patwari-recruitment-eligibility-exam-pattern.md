@@ -140,7 +140,7 @@ The notification said the detailed syllabus and pattern would be put on the boar
 4. **Don't skip computers.** You need the 120-hour course for eligibility, and computer questions come in the exam too.
 5. **Clear Part A first.** 25 of 50 in Punjabi is a hard floor - below it, your Part B is never checked. Then respect the 1/4 negative marking in Part B.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Punjab Patwari mock test](mock?exam=psssb-patwari)
 - [Punjab Patwari previous year papers](pyq/psssb-patwari/index.html)

@@ -89,7 +89,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Line S
 2. **Learn the IE Rules on earthing and clearances**; they suit a line supervisor's paper.
 3. **Do not ignore the 40 general marks** - in a 6-post merit list, every mark counts.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Bijli Saz-cum-Junior Technician guide](exams/psssb-bijli-saz-junior-technician.html)
 - [Junior Draftsman guide](exams/psssb-junior-draftsman.html)

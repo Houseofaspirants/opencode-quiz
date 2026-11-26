@@ -125,7 +125,7 @@ Clerks for the **subordinate (district) courts** are recruited separately, by th
 4. **Choose Hindi or Punjabi early** and practise translation and letter writing in it.
 5. **Build English typing to 35 wpm**, so 30 wpm under pressure is comfortable.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [High Court Clerk previous year papers](pyq/punjab-haryana-high-court-clerk/index.html)
 - [English grammar quizzes](subject-english.html)

@@ -104,7 +104,7 @@ ETT ਪੰਜਾਬ ਦਾ **ਸਭ ਤੋਂ ਵੱਡਾ ਅਧਿਆਪਕ �
 4. ਬਾਲ ਵਿਕਾਸ ਅਤੇ ਪੈਡਾਗੋਜੀ।
 5. ਪ੍ਰਾਇਮਰੀ ਪੱਧਰ ਦਾ ਗਣਿਤ, EVS ਅਤੇ GK।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ETT ਪੇਪਰ ਅਤੇ keys](pyq/punjab-ett-teacher/index.html)
 - [ਪੰਜਾਬੀ ਵਿਆਕਰਨ ਕੁਇਜ਼](subject-punjabi.html)

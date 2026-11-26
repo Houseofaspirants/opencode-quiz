@@ -130,7 +130,7 @@ Allowances are added as the Punjab Government sanctions them.
 3. **Environment, forests and wildlife of Punjab.**
 4. **GK, reasoning and English** for Part B.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Forester previous year paper](pyq/psssb-forester/index.html)
 - [GK quizzes](subject-gk.html)

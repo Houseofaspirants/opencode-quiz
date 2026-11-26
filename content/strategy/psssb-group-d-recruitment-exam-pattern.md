@@ -150,7 +150,7 @@ The board has published the paper plan for Advt 04/2026:
 4. **Do not skip computers.** The last questions are basic ICT - Office shortcuts and formulas are easy marks.
 5. **Use other PSSSB papers too.** Clerk, Patwari and Jail Warder papers repeat the same GK, reasoning and Punjabi topics.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PSSSB Group D previous year paper and answer keys](pyq/psssb-group-d/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

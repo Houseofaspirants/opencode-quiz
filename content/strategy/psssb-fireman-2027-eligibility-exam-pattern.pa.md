@@ -115,7 +115,7 @@ references:
 3. ਪੰਜਾਬ GK ਅਤੇ ਰੀਜ਼ਨਿੰਗ।
 4. ਦੌੜ ਅਤੇ ਤਾਕਤ ਦਾ ਅਭਿਆਸ ਅੱਜ ਤੋਂ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਫਾਇਰਮੈਨ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-fireman/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

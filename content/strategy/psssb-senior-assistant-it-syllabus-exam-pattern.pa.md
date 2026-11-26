@@ -79,7 +79,7 @@ references:
 2. **C/C++ ਦੇ output ਵਾਲੇ ਸਵਾਲ** ਤੇਜ਼ ਅੰਕ ਹਨ - ਹੱਥ ਨਾਲ code trace ਕਰਨ ਦਾ ਅਭਿਆਸ ਕਰੋ।
 3. **Part A ਨਾ ਛੱਡੋ** - 40 ਆਮ ਅੰਕ ਬਰਾਬਰ CS ਵਾਲਿਆਂ ਨੂੰ ਵੱਖ ਕਰਦੇ ਹਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਕੰਪਿਊਟਰ ਕੁਇਜ਼](subject-computer.html)
 - [PSSSB ਕਲਰਕ IT ਗਾਈਡ](exams/psssb-clerk-it.html)

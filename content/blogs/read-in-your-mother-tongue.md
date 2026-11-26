@@ -38,7 +38,7 @@ Write the key words in English beside the Punjabi: Fundamental Rights, Preamble,
 If you are writing a Punjabi-medium paper, do your MCQs in Punjabi. If English, switch to English MCQs for revision.
 
 **4. Read one book in two languages.**
-Try it once with a book you love. You will notice ideas you missed the first time and pick up vocabulary for free.
+Try it once with a book you love. You will notice ideas you missed the first time and pick up vocabulary along the way.
 
 ## A double benefit in Punjab
 

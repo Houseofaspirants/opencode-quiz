@@ -134,7 +134,7 @@ PPSC's 2022 notice (Advt. 202237 to 202242) had **119 Group-B technical posts**:
 3. **Practise AutoCAD theory**, not just commands you use daily.
 4. **Don't skip the GK block** - with negative marking, sure marks here matter.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Draftsman previous year paper](pyq/ppsc-draftsman/index.html)
 - [GK quizzes](subject-gk.html)

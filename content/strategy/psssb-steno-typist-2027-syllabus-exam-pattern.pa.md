@@ -122,7 +122,7 @@ PSSSB ਨੇ ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਲਈ **ਇਸ਼ਤਿਹ�
 4. **Part B ਨੂੰ ਕਲਰਕ ਪੇਪਰ ਵਾਂਗ ਤਿਆਰ ਕਰੋ** - GK, ਪੰਜਾਬ, English, reasoning ਅਤੇ ਕੰਪਿਊਟਰ।
 5. **120 ਘੰਟੇ ਵਾਲਾ ਕੰਪਿਊਟਰ ਸਰਟੀਫਿਕੇਟ** ਪਹਿਲਾਂ ਤਿਆਰ ਰੱਖੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਸਟੈਨੋ-ਟਾਈਪਿਸਟ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-steno-typist/index.html)
 - [Part B ਲਈ ਕਲਰਕ ਪੇਪਰ](pyq/psssb-clerk/index.html)

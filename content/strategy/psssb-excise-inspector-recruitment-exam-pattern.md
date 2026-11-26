@@ -142,7 +142,7 @@ Part B is checked only if you score at least 25 in Part A.
 4. **Don't treat Punjabi lightly.** 25/50 in Part A is a hard floor, and Punjabi is again 13 marks in Part B.
 5. **Mind the negative marking.** Each wrong Part B answer costs 1/4 mark - skip blind guesses and practise full timed papers in the last month.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Excise Inspector previous year papers](pyq/psssb-excise-taxation-inspector/index.html)
 - [All PSSSB, PPSC and Punjab Police papers](pyq.html)

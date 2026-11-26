@@ -94,7 +94,7 @@ references:
 3. ਪੇਂਡੂ ਵਿਕਾਸ ਸਕੀਮਾਂ - MGNREGA, PMAY-G।
 4. ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿਆਕਰਨ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਪੰਚਾਇਤ ਸਕੱਤਰ 2016 ਪੇਪਰ](pyq/psssb-panchayat-secretary/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

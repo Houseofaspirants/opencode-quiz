@@ -123,7 +123,7 @@ The notice fixed the pay at **Rs 29,200** under the 7th CPC pay matrix (Punjab G
 4. **Child development** - stages, needs, early education.
 5. **GK, reasoning and Punjabi** for the rest.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Anganwadi Supervisor paper and key](pyq/psssb-anganwadi-supervisor/index.html)
 - [GK quizzes](subject-gk.html)

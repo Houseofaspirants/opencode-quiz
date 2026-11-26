@@ -105,7 +105,7 @@ This VDO syllabus is the best guide to what a new Panchayat Secretary paper woul
 4. **English and Punjabi grammar** - both were tested in 2016.
 5. **Maths and reasoning** at 10+2 level.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Panchayat Secretary 2016 paper](pyq/psssb-panchayat-secretary/index.html)
 - [GK quizzes](subject-gk.html)

@@ -101,7 +101,7 @@ The last published subject syllabus for this post is from Advt 06/2022. That pap
 3. **Cover Punjab GK and sports current affairs.** Medal winners, awards and national sports events are common.
 4. **Keep your experience certificate in the right format.** It is checked at counselling.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Hostel Superintendent previous year papers](pyq/psssb-hostel-superintendent/index.html)
 - [Current affairs](current-affairs.html)

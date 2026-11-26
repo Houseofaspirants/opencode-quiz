@@ -99,7 +99,7 @@ PSSSB's papers for these posts follow its standard two-part plan: a **qualifying
 3. **Agriculture basics** - soils, fertilisers, seeds.
 4. **GK, reasoning and Punjabi.**
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Restorer and Lab Assistant paper](pyq/psssb-restorer-lab-assistant/index.html)
 - [GK quizzes](subject-gk.html)

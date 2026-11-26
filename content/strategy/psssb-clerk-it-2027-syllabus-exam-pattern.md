@@ -115,7 +115,7 @@ Each department sets its own degree list, so check the line for the post you pic
 4. **Start typing practice early.** Raavi Punjabi at 30 wpm takes weeks; many toppers lose the post here.
 5. **Don't skip Part A.** A 50% floor in Punjabi is easy to clear but fatal to miss.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Clerk IT previous year papers](pyq/psssb-clerk-it/index.html)
 - [General Clerk papers](pyq/psssb-clerk/index.html)

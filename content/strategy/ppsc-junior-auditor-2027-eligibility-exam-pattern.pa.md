@@ -94,7 +94,7 @@ references:
 3. ਕੰਪਨੀਜ਼ ਐਕਟ 2013 ਦੀਆਂ ਮੁੱਢਲੀਆਂ ਗੱਲਾਂ ਪੜ੍ਹੋ।
 4. GK ਅਤੇ ਰੀਜ਼ਨਿੰਗ ਵਿੱਚ ਸਿਰਫ਼ ਪੱਕੇ ਸਵਾਲ ਕਰੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਜੂਨੀਅਰ ਆਡੀਟਰ ਪੇਪਰ ਅਤੇ ਆਂਸਰ ਕੀ](pyq/ppsc-junior-auditor/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

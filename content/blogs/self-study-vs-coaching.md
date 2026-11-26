@@ -42,7 +42,7 @@ I said it on the podcast in plain words: some students are sharp and can self-st
 
 | | Offline coaching | Online / self-study |
 |---|---|---|
-| Cost | High: fees + rent + food | Low or free |
+| Cost | High: fees + rent + food | Low |
 | Routine | Fixed by the institute | You must fix it yourself |
 | Doubts | Face to face | Chat, live sessions, groups |
 | Distractions | Fewer in class, more in a new city | Phone and home |
@@ -58,8 +58,8 @@ My view today: offline is the best experience, but it is expensive. For most stu
 4. Solve previous year papers from the start.
 5. Join one live doubt session or study group so you are not alone.
 
-## Why House of Aspirants is free
+## Why I built House of Aspirants
 
-I built House of Aspirants so that a student in a village does not need 4–5 lakh rupees to get the same material. The notes I studied from, chapter-wise MCQs, previous papers and monthly current affairs are all there, free, in Punjabi and English.
+I built House of Aspirants so that a student in a village does not need 4–5 lakh rupees to get the same material. The notes I studied from, chapter-wise MCQs, previous papers and monthly current affairs are all there, in Punjabi and English.
 
 **Also read:** [Weak in Studies? From Not Knowing ABC to Rank 2](blog-weak-student-to-rank-2) · [Importance of Mock Tests](blog-importance-of-mock-tests)

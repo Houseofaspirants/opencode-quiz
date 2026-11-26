@@ -128,7 +128,7 @@ references:
 4. **30 GK ਅੰਕ ਪੱਕੇ ਕਰੋ** - ਪੰਜਾਬ ਦਾ ਇਤਿਹਾਸ, reasoning, ਵਿਆਕਰਨ।
 5. **Raavi ਟਾਈਪਿੰਗ ਸਿੱਖੋ।**
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਕਲਰਕ (ਲੇਖਾ) ਦੇ ਪਿਛਲੇ ਪੇਪਰ](pyq/psssb-clerk-accounts/index.html)
 - [PPSC Junior Auditor ਦੇ ਪੇਪਰ](pyq/ppsc-junior-auditor/index.html)

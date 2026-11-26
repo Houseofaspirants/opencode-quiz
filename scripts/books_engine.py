@@ -638,7 +638,7 @@ def provider_buttons(book: dict, providers: list) -> str:
     Label and destination both come from config/affiliate-links.json, so no
     page and no script owns either: changing "View on Amazon" to something
     else is a config edit. The button points straight at the store and opens
-    in a new tab - no popup, no intermediate page. The old "Free <subject>
+    in a new tab - no popup, no intermediate page. The old "<subject>
     sets" shortcut is gone: it was a second CTA competing with this one.
     """
     out = []
@@ -697,7 +697,7 @@ def keep_going(book: dict) -> str:
         f'<p class="ilink">Open →</p></a>'
         for href, eyebrow, title in cards)
     head = section_head("Keep going", "Where to go next",
-                        "The free material this book is meant to work beside, "
+                        "The material this book is meant to work beside, "
                         "not instead of.")
     return (f'<section class="section" style="padding-top:0"><div class="container">'
             f'{head}'
@@ -768,7 +768,7 @@ def book_page(book: dict, providers: list, related: dict, nodes: list) -> str:
     <section class="section" style="padding-top:0">
       <div class="container">
         {section_head("Recommended", "Learn it, then prove it",
-                      "The free material this book is meant to work beside, "
+                      "The material this book is meant to work beside, "
                       "not instead of.")}
         {rec_group("Related notes", related["notes"], "Read →")}
         {rec_group("Related MCQs", related["mcqs"], "Attempt →")}

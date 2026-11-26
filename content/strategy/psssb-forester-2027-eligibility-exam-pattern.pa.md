@@ -120,7 +120,7 @@ references:
 2. [ਫੋਰੈਸਟ ਗਾਰਡ ਗਾਈਡ](exams/psssb-forest-guard.html) ਵਾਲੀ ਤਿਆਰੀ ਕਰੋ।
 3. ਪੰਜਾਬ ਦੇ ਜੰਗਲ ਅਤੇ ਵਾਤਾਵਰਨ ਪੜ੍ਹੋ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਫੋਰੈਸਟਰ ਦਾ ਪਿਛਲਾ ਪੇਪਰ](pyq/psssb-forester/index.html)
 - [ਜਨਰਲ ਨਾਲੇਜ ਕੁਇਜ਼](subject-gk.html)

@@ -106,7 +106,7 @@ The 2022 notice was for **75 posts of Junior Auditor (Group B)** in the Departme
 3. **Learn Companies Act 2013 basics.**
 4. **Keep 20 minutes for GK and reasoning**, and attempt only what you are sure of.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Junior Auditor paper and answer key](pyq/ppsc-junior-auditor/index.html)
 - [GK quizzes](subject-gk.html)

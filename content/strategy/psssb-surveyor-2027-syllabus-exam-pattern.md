@@ -110,7 +110,7 @@ Both: **Punjabi at matriculation level**; the certificate must be dated before t
 3. **Use your ITI or diploma notes.** The syllabus follows the ITI Surveyor and Draftsman course closely.
 4. **Don't neglect the 30 general questions.** In a small-post exam, 5 extra marks can be 50 ranks.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Surveyor previous year paper](pyq/psssb-surveyor/index.html)
 - [Junior Draftsman papers](pyq/psssb-junior-draftsman/index.html)

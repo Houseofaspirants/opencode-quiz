@@ -126,7 +126,7 @@ The 2022 notice printed the scale as **Rs 27,700-44,770, "or as revised from tim
 4. **Write answers every week** for mains.
 5. **Current legal affairs** - landmark judgments of the year.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [PCS (Judicial) prelims paper](pyq/punjab-pcs-judicial/index.html)
 - [GK quizzes](subject-gk.html)

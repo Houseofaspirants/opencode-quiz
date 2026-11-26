@@ -20,7 +20,7 @@ faq:
     a: Articles 20 and 21. The 44th Amendment, 1978 made sure these two survive even during an emergency under Article 352.
 ---
 
-Polity gives a lot of questions in Punjab papers, and inside Polity, **Fundamental Rights** is the chapter I would never skip. The questions are factual and repeat in new words: which article, which amendment, which right is only for citizens. If you know the article numbers cold, these are free marks. Read this chapter from Laxmikanth once, then use this page for your 1-7-30 revisions.
+Polity gives a lot of questions in Punjab papers, and inside Polity, **Fundamental Rights** is the chapter I would never skip. The questions are factual and repeat in new words: which article, which amendment, which right is only for citizens. If you know the article numbers cold, these are easy marks. Read this chapter from Laxmikanth once, then use this page for your 1-7-30 revisions.
 
 ## What this topic covers
 

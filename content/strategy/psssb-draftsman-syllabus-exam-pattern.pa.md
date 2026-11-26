@@ -83,7 +83,7 @@ references:
 2. **IS 962, ਸਕੇਲ ਅਤੇ projections** ਤੇਜ਼ ਅੰਕ ਦਿੰਦੇ ਹਨ; ਚਿੱਤਰਾਂ ਨਾਲ ਅਭਿਆਸ ਕਰੋ।
 3. **Part A ਨਾ ਛੱਡੋ।** 40 ਅੰਕ ਅਤੇ ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ ਨਾਲ ਇੱਕ ਅਸਾਮੀ ਦੀ ਮੈਰਿਟ ਅਕਸਰ ਇੱਥੋਂ ਤੈਅ ਹੁੰਦੀ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਪੰਜਾਬ GK ਕੁਇਜ਼](subject-gk.html)
 - [ਕੰਪਿਊਟਰ ਕੁਇਜ਼](subject-computer.html)

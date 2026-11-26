@@ -105,7 +105,7 @@ The Laboratory Attendant paper of Advt. No. 04 of 2023 was an MCQ exam on OMR sh
 3. **Punjab GK and reasoning** for Part B.
 4. **Part A Punjabi** - aim well above 50%.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Lab Attendant previous year paper](pyq/psssb-lab-attendant/index.html)
 - [GK quizzes](subject-gk.html)

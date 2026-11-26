@@ -98,7 +98,7 @@ references:
 2. **ਜੰਗਲਾਤ ਨਾਲ ਜੁੜਿਆ GK** - ਪੰਜਾਬ ਦਾ ਜੰਗਲੀ ਰਕਬਾ, ਵਾਈਲਡਲਾਈਫ਼ ਸੈਂਕਚੁਰੀਆਂ ਅਤੇ Ramsar sites।
 3. **ਪੈਦਲ ਟੈਸਟ ਦੀ ਤਿਆਰੀ ਪਹਿਲਾਂ ਸ਼ੁਰੂ ਕਰੋ** - 4 ਘੰਟੇ ਵਿੱਚ 25 km ਲਈ ਹਫ਼ਤਿਆਂ ਦਾ ਅਭਿਆਸ ਚਾਹੀਦਾ ਹੈ।
 
-## House of Aspirants 'ਤੇ ਮੁਫ਼ਤ ਅਭਿਆਸ
+## House of Aspirants 'ਤੇ ਅਭਿਆਸ
 
 - [ਫਾਰੈਸਟਰ ਗਾਈਡ](exams/psssb-forester.html)
 - [ਫਾਰੈਸਟ ਗਾਰਡ ਗਾਈਡ ਅਤੇ ਪੇਪਰ](exams/psssb-forest-guard.html)

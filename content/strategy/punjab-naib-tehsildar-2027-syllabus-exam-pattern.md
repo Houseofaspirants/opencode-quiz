@@ -1,6 +1,6 @@
 ---
 title: Punjab Naib Tehsildar 2027 - Syllabus, Pattern & Posts
-description: Punjab Naib Tehsildar 2027 official PPSC syllabus and exam pattern - 120 MCQs for 300 marks, no negative marking, plus eligibility, age, fee and a free PDF.
+description: Punjab Naib Tehsildar 2027 official PPSC syllabus and exam pattern - 120 MCQs for 300 marks, no negative marking, plus eligibility, age, fee and a PDF.
 published: 2026-11-13
 updated: 2026-11-24
 language: en
@@ -147,7 +147,7 @@ Our [Naib Tehsildar mock test](mock?exam=naib-tehsildar) follows this pattern: 4
 4. **Reasoning and maths are 100 marks.** Practise daily, timed - series, coding, blood relations, percentage, interest and data interpretation.
 5. **Attempt every question.** There is no negative marking, so never leave an answer blank.
 
-## Free practice on House of Aspirants
+## Practice on House of Aspirants
 
 - [Naib Tehsildar mock test - PPSC pattern](mock?exam=naib-tehsildar)
 - [Naib Tehsildar previous year papers](pyq/ppsc-naib-tehsildar/index.html)
