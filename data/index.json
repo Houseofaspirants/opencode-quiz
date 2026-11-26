@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 55,
-    "topics": 156,
-    "quizzes": 156,
-    "questions": 3678,
+    "topics": 158,
+    "quizzes": 158,
+    "questions": 3728,
     "studentsPracticed": 12500
   },
   "site": {
@@ -1713,6 +1713,66 @@
           "landing": "/quiz-gk-regions-administration-and-location-of-punjab-part-2"
         },
         {
+          "id": "06-system-of-government-in-india-part1",
+          "name": "System of Government in India - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/06-system-of-government-in-india-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795680021018,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/06-system-of-government-in-india-part1-en.json",
+            "pa": "questions/gk/polity/06-system-of-government-in-india-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "System of Government in India - Part 1",
+            "pa": "System of Government in India - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-06-system-of-government-in-india-part1"
+        },
+        {
+          "id": "06-system-of-government-in-india-part2",
+          "name": "System of Government in India - Part 2",
+          "description": "",
+          "file": "questions/gk/polity/06-system-of-government-in-india-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795680021018,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/06-system-of-government-in-india-part2-en.json",
+            "pa": "questions/gk/polity/06-system-of-government-in-india-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "System of Government in India - Part 2",
+            "pa": "System of Government in India - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-06-system-of-government-in-india-part2"
+        },
+        {
           "id": "03-union-and-its-territory-part1",
           "name": "Union and its Territory - Part 1",
           "description": "",
@@ -2472,6 +2532,66 @@
                 "pa": 25
               },
               "landing": "/quiz-gk-02-preamble-and-parts-of-the-constitution-part2"
+            },
+            {
+              "id": "06-system-of-government-in-india-part1",
+              "name": "System of Government in India - Part 1",
+              "description": "",
+              "file": "questions/gk/polity/06-system-of-government-in-india-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795680021018,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/06-system-of-government-in-india-part1-en.json",
+                "pa": "questions/gk/polity/06-system-of-government-in-india-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "System of Government in India - Part 1",
+                "pa": "System of Government in India - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-06-system-of-government-in-india-part1"
+            },
+            {
+              "id": "06-system-of-government-in-india-part2",
+              "name": "System of Government in India - Part 2",
+              "description": "",
+              "file": "questions/gk/polity/06-system-of-government-in-india-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795680021018,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/06-system-of-government-in-india-part2-en.json",
+                "pa": "questions/gk/polity/06-system-of-government-in-india-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "System of Government in India - Part 2",
+                "pa": "System of Government in India - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-06-system-of-government-in-india-part2"
             },
             {
               "id": "03-union-and-its-territory-part1",
@@ -9953,6 +10073,14 @@
     "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json": [
       "3072d23512097857",
       1795671579709
+    ],
+    "questions/gk/polity/06-system-of-government-in-india-part1-en.json": [
+      "3b885e126536d138",
+      1795680021018
+    ],
+    "questions/gk/polity/06-system-of-government-in-india-part2-en.json": [
+      "f8a72f13868f61d3",
+      1795680021018
     ],
     "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json": [
       "a0f3d5bac6d86159",
