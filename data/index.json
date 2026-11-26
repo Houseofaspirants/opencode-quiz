@@ -4,9 +4,9 @@
   "stats": {
     "subjects": 7,
     "categories": 55,
-    "topics": 153,
-    "quizzes": 153,
-    "questions": 3603,
+    "topics": 156,
+    "quizzes": 156,
+    "questions": 3678,
     "studentsPracticed": 12500
   },
   "site": {
@@ -361,6 +361,96 @@
             "pa": 18
           },
           "landing": "/quiz-gk-basic-concepts-of-economy-part-2"
+        },
+        {
+          "id": "05-dpsp-and-fundamental-duties-part1",
+          "name": "DPSP and Fundamental Duties - Part 1",
+          "description": "",
+          "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795671579709,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-en.json",
+            "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "DPSP and Fundamental Duties - Part 1",
+            "pa": "DPSP and Fundamental Duties - Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part1"
+        },
+        {
+          "id": "05-dpsp-and-fundamental-duties-part2",
+          "name": "DPSP and Fundamental Duties - Part 2",
+          "description": "",
+          "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795671579709,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-en.json",
+            "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "DPSP and Fundamental Duties - Part 2",
+            "pa": "DPSP and Fundamental Duties - Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part2"
+        },
+        {
+          "id": "05-dpsp-and-fundamental-duties-part3",
+          "name": "DPSP and Fundamental Duties - Part 3",
+          "description": "",
+          "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795671579709,
+          "category": "polity",
+          "language": "en",
+          "variants": {
+            "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json",
+            "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-pa.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "DPSP and Fundamental Duties - Part 3",
+            "pa": "DPSP and Fundamental Duties - Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part3"
         },
         {
           "id": "economic-planning-five-year-plans-part-1",
@@ -2083,6 +2173,96 @@
           "folder": "polity",
           "icon": "📁",
           "topics": [
+            {
+              "id": "05-dpsp-and-fundamental-duties-part1",
+              "name": "DPSP and Fundamental Duties - Part 1",
+              "description": "",
+              "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795671579709,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-en.json",
+                "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "DPSP and Fundamental Duties - Part 1",
+                "pa": "DPSP and Fundamental Duties - Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part1"
+            },
+            {
+              "id": "05-dpsp-and-fundamental-duties-part2",
+              "name": "DPSP and Fundamental Duties - Part 2",
+              "description": "",
+              "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795671579709,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-en.json",
+                "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "DPSP and Fundamental Duties - Part 2",
+                "pa": "DPSP and Fundamental Duties - Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part2"
+            },
+            {
+              "id": "05-dpsp-and-fundamental-duties-part3",
+              "name": "DPSP and Fundamental Duties - Part 3",
+              "description": "",
+              "file": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795671579709,
+              "category": "polity",
+              "language": "en",
+              "variants": {
+                "en": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json",
+                "pa": "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-pa.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "DPSP and Fundamental Duties - Part 3",
+                "pa": "DPSP and Fundamental Duties - Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-gk-05-dpsp-and-fundamental-duties-part3"
+            },
             {
               "id": "04-fundamental-rights-and-writs-part1",
               "name": "Fundamental Rights and Writs - Part 1",
@@ -9761,6 +9941,18 @@
     "questions/gk/polity/04-fundamental-rights-and-writs-part3-en.json": [
       "e94d433d74c23fa0",
       1795171081452
+    ],
+    "questions/gk/polity/05-dpsp-and-fundamental-duties-part1-en.json": [
+      "e1d5a11ec465f107",
+      1795671579709
+    ],
+    "questions/gk/polity/05-dpsp-and-fundamental-duties-part2-en.json": [
+      "ca58e61b3fc9af81",
+      1795671579709
+    ],
+    "questions/gk/polity/05-dpsp-and-fundamental-duties-part3-en.json": [
+      "3072d23512097857",
+      1795671579709
     ],
     "questions/punjabi/01-punjabi-bhasha-language/01-punjabi-bhasha-language-mcq-part-1.pa.json": [
       "a0f3d5bac6d86159",

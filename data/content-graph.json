@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1815,
+  "nodes": 1817,
   "edges": 13575,
   "silos": 35,
-  "clusters": 219,
+  "clusters": 222,
   "pillars": 34
  },
  "nodes": [
@@ -23435,6 +23435,42 @@
    "hub": ""
   },
   {
+   "id": "quiz-gk-05-dpsp-and-fundamental-duties-part1.html",
+   "url": "/quiz-gk-05-dpsp-and-fundamental-duties-part1.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-05-dpsp-and-fundamental-duties-part2.html",
+   "url": "/quiz-gk-05-dpsp-and-fundamental-duties-part2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-gk-05-dpsp-and-fundamental-duties-part3.html",
+   "url": "/quiz-gk-05-dpsp-and-fundamental-duties-part3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
    "id": "quiz-gk-1857-revolt-part-1.html",
    "url": "/quiz-gk-1857-revolt-part-1.html",
    "type": "quiz",
@@ -23485,18 +23521,6 @@
   {
    "id": "quiz-gk-banking-system-in-india-part-1.html",
    "url": "/quiz-gk-banking-system-in-india-part-1.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-gk-banking-system-in-india-part-2.html",
-   "url": "/quiz-gk-banking-system-in-india-part-2.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -66495,25 +66519,25 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-banking-system-in-india-part-1.html",
+   "to": "quiz-gk-05-dpsp-and-fundamental-duties-part1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-gk-banking-system-in-india-part-2.html",
+   "to": "quiz-gk-05-dpsp-and-fundamental-duties-part2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-gk-05-dpsp-and-fundamental-duties-part3.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
    "to": "quiz-gk-government-administration-after-1857-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-gk-money-money-supply-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -68235,7 +68259,7 @@
   },
   {
    "from": "material-chapter-05-dpsp-and-fundamental-duties.html",
-   "to": "quiz-gk-04-fundamental-rights-and-writs-part1.html",
+   "to": "quiz-gk-05-dpsp-and-fundamental-duties-part1.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -106841,6 +106865,9 @@
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-1.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-2.html",
     "topic-gk-04-guru-teg-bahadur-ji-and-guru-gobind-singh-ji-part-3.html",
+    "topic-gk-05-dpsp-and-fundamental-duties-part1.html",
+    "topic-gk-05-dpsp-and-fundamental-duties-part2.html",
+    "topic-gk-05-dpsp-and-fundamental-duties-part3.html",
     "topic-gk-1857-revolt-part-1.html",
     "topic-gk-1857-revolt-part-2.html",
     "topic-gk-arrival-of-european-in-india-part-1.html",
