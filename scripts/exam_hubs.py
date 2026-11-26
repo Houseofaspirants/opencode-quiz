@@ -41,7 +41,8 @@ DOMAIN = "https://houseofaspirants.in"
 HUB_DIR = "exams"
 
 # Order of the cards on a hub and of the pills on every part page.
-PARTS = ("notification", "eligibility", "exam-pattern", "syllabus", "salary",
+PARTS = ("notification", "eligibility", "exam-pattern", "syllabus",
+         "prelims-syllabus", "mains-syllabus", "salary",
          "physical-standards", "preparation")
 
 LABEL = {
@@ -50,6 +51,8 @@ LABEL = {
     "eligibility": ("Eligibility", "ਯੋਗਤਾ", "✅"),
     "exam-pattern": ("Exam Pattern", "ਪੇਪਰ ਪੈਟਰਨ", "🧾"),
     "syllabus": ("Syllabus", "ਸਿਲੇਬਸ", "📚"),
+    "prelims-syllabus": ("Prelims Syllabus", "ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ", "📗"),
+    "mains-syllabus": ("Mains Syllabus", "ਮੇਨਜ਼ ਸਿਲੇਬਸ", "📘"),
     "salary": ("Salary & Pay", "ਤਨਖ਼ਾਹ", "💰"),
     "physical-standards": ("Physical Standards", "ਫਿਜ਼ੀਕਲ ਟੈਸਟ", "🏃"),
     "preparation": ("Preparation Strategy", "ਤਿਆਰੀ ਰਣਨੀਤੀ", "🎯"),
@@ -65,6 +68,10 @@ SUB = {
                      "ਅੰਕ, ਸਮਾਂ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ ਅਤੇ ਚੋਣ ਦੇ ਪੜਾਅ"),
     "syllabus": ("Official topics, section by section",
                  "ਹਰ ਹਿੱਸੇ ਦੇ official ਟਾਪਿਕ"),
+    "prelims-syllabus": ("Official topics of the preliminary exam",
+                         "ਪ੍ਰੀਲਿਮਸ (ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ) ਦੇ official ਟਾਪਿਕ"),
+    "mains-syllabus": ("Official topics of every mains paper",
+                       "ਮੇਨਜ਼ (ਮੁੱਖ ਪ੍ਰੀਖਿਆ) ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ"),
     "salary": ("Pay scale and starting pay", "ਪੇਅ ਸਕੇਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਤਨਖ਼ਾਹ"),
     "physical-standards": ("Height, race & physical test events",
                            "ਕੱਦ, ਦੌੜ ਅਤੇ ਫਿਜ਼ੀਕਲ ਟੈਸਟ"),
@@ -96,6 +103,11 @@ _RULES = {
 }
 _FEE = (r"\bfee\b", r"ਫੀਸ|ਫ਼ੀਸ")
 _PRACTICE = (r"free practice", r"ਮੁਫ਼ਤ")
+# A syllabus heading that names one stage of a two-stage exam gets its own
+# page, so "Prelims syllabus" and "Mains syllabus" never share a page.
+# ("What the main paper covers" is a one-stage exam's main paper - no match.)
+_PRELIMS = (r"prelim|screening", r"ਪ੍ਰੀਲਿਮ|ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ|ਸਕਰੀਨਿੰਗ|prelim")
+_MAINS = (r"\bmains\b|main exam", r"ਮੇਨਜ਼|ਮੇਨਸ|ਮੁੱਖ ਪ੍ਰੀਖਿਆ|mains")
 
 
 def _nfd(s):
@@ -105,6 +117,8 @@ def _nfd(s):
 _RX = {k: tuple(re.compile(_nfd(p)) for p in pair) for k, pair in _RULES.items()}
 _RX_FEE = tuple(re.compile(_nfd(p)) for p in _FEE)
 _RX_PRACTICE = tuple(re.compile(_nfd(p)) for p in _PRACTICE)
+_RX_PRELIMS = tuple(re.compile(_nfd(p)) for p in _PRELIMS)
+_RX_MAINS = tuple(re.compile(_nfd(p)) for p in _MAINS)
 
 
 def classify(heading, lang):
@@ -114,6 +128,11 @@ def classify(heading, lang):
     if _RX_PRACTICE[i].search(h):
         return ("practice",)
     keys = [k for k in PARTS if k in _RX and _RX[k][i].search(h)]
+    if "syllabus" in keys:
+        if _RX_PRELIMS[i].search(h):
+            keys[keys.index("syllabus")] = "prelims-syllabus"
+        elif _RX_MAINS[i].search(h):
+            keys[keys.index("syllabus")] = "mains-syllabus"
     if not keys or _RX_FEE[i].search(h):
         keys.append("notification")
     return tuple(k for k in PARTS if k in keys)
@@ -152,6 +171,10 @@ _TITLES = {
         "exam-pattern": ["{n} Exam Pattern{y} & Selection Process",
                          "{n} Exam Pattern{y} & Selection", "{n} Exam Pattern{y}"],
         "syllabus": ["{n} Syllabus{y}: Subject-wise Topics", "{n} Syllabus{y}"],
+        "prelims-syllabus": ["{n} Prelims Syllabus{y}: Paper-wise Topics",
+                             "{n} Prelims Syllabus{y}", "{n} Prelims Syllabus"],
+        "mains-syllabus": ["{n} Mains Syllabus{y}: Paper-wise Topics",
+                           "{n} Mains Syllabus{y}", "{n} Mains Syllabus"],
         "salary": ["{n} Salary{y} & Pay Scale", "{n} Salary{y}"],
         "physical-standards": ["{n} Physical Standards{y}: Height & Tests",
                                "{n} Physical Test{y}: Height & Race",
@@ -168,6 +191,8 @@ _TITLES = {
                         "{n} ਯੋਗਤਾ{y}: ਉਮਰ ਹੱਦ", "{n} ਯੋਗਤਾ{y}"],
         "exam-pattern": ["{n} ਪੇਪਰ ਪੈਟਰਨ{y} ਅਤੇ ਚੋਣ ਪ੍ਰਕਿਰਿਆ", "{n} ਪੇਪਰ ਪੈਟਰਨ{y}"],
         "syllabus": ["{n} ਸਿਲੇਬਸ{y}: ਹਿੱਸੇ ਅਨੁਸਾਰ ਟਾਪਿਕ", "{n} ਸਿਲੇਬਸ{y}"],
+        "prelims-syllabus": ["{n} ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ{y}", "{n} ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ"],
+        "mains-syllabus": ["{n} ਮੇਨਜ਼ ਸਿਲੇਬਸ{y}", "{n} ਮੇਨਜ਼ ਸਿਲੇਬਸ"],
         "salary": ["{n} ਤਨਖ਼ਾਹ{y} ਅਤੇ ਪੇਅ ਸਕੇਲ", "{n} ਤਨਖ਼ਾਹ{y}"],
         "physical-standards": ["{n} ਫਿਜ਼ੀਕਲ ਟੈਸਟ{y}: ਕੱਦ ਅਤੇ ਦੌੜ",
                                "{n} ਫਿਜ਼ੀਕਲ ਟੈਸਟ{y}"],
@@ -180,6 +205,8 @@ _DESCS = {
         "eligibility": "{n} eligibility{y}: age limit with category relaxation, educational qualification, the Punjabi requirement and every other condition in the official notification.",
         "exam-pattern": "{n} exam pattern{y}: number of questions, marks, time, negative marking, qualifying marks and every stage of selection, straight from the official notice.",
         "syllabus": "{n} syllabus{y}: the official topic-by-topic syllabus for every section of the paper, the marks each section carries and free practice for each topic.",
+        "prelims-syllabus": "{n} prelims syllabus{y}: the official topic list for every preliminary paper, kept separate from the mains, with the marks and free practice.",
+        "mains-syllabus": "{n} mains syllabus{y}: the official topic list for every paper of the main exam, kept separate from the prelims, with marks for each paper.",
         "salary": "{n} salary{y}: the pay scale and starting pay as the official notification gives them, with the related details. A free guide in English and Punjabi.",
         "physical-standards": "{n} physical standards{y}: minimum height and the physical test events with qualifying marks for men and women, from the official notification.",
         "preparation": "{n} preparation strategy{y}: a step-by-step study plan, what to study first, how to revise and practise with mocks, and free practice sets in both languages.",
@@ -189,6 +216,8 @@ _DESCS = {
         "eligibility": "{n} ਯੋਗਤਾ{y}: ਉਮਰ ਹੱਦ ਅਤੇ ਵਰਗ ਅਨੁਸਾਰ ਛੋਟ, ਵਿੱਦਿਅਕ ਯੋਗਤਾ, ਪੰਜਾਬੀ ਦੀ ਸ਼ਰਤ ਅਤੇ ਬਾਕੀ ਸਾਰੀਆਂ ਸ਼ਰਤਾਂ - ਸਿੱਧਾ official notification ਤੋਂ।",
         "exam-pattern": "{n} ਪੇਪਰ ਪੈਟਰਨ{y}: ਸਵਾਲਾਂ ਦੀ ਗਿਣਤੀ, ਅੰਕ, ਸਮਾਂ, ਨੈਗੇਟਿਵ ਮਾਰਕਿੰਗ, ਪਾਸ ਅੰਕ ਅਤੇ ਚੋਣ ਦਾ ਹਰ ਪੜਾਅ - official notice ਅਨੁਸਾਰ, ਪੰਜਾਬੀ ਵਿੱਚ।",
         "syllabus": "{n} ਸਿਲੇਬਸ{y}: ਪੇਪਰ ਦੇ ਹਰ ਹਿੱਸੇ ਦਾ official ਸਿਲੇਬਸ, ਹਰ ਹਿੱਸੇ ਦੇ ਅੰਕ ਅਤੇ ਹਰ ਟਾਪਿਕ ਲਈ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
+        "prelims-syllabus": "{n} ਪ੍ਰੀਲਿਮਸ ਸਿਲੇਬਸ{y}: ਮੁੱਢਲੀ ਪ੍ਰੀਖਿਆ ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ, ਮੇਨਜ਼ ਤੋਂ ਵੱਖਰੇ, ਅੰਕਾਂ ਅਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸਮੇਤ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
+        "mains-syllabus": "{n} ਮੇਨਜ਼ ਸਿਲੇਬਸ{y}: ਮੁੱਖ ਪ੍ਰੀਖਿਆ ਦੇ ਹਰ ਪੇਪਰ ਦੇ official ਟਾਪਿਕ, ਪ੍ਰੀਲਿਮਸ ਤੋਂ ਵੱਖਰੇ, ਹਰ ਪੇਪਰ ਦੇ ਅੰਕਾਂ ਸਮੇਤ - ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ।",
         "salary": "{n} ਤਨਖ਼ਾਹ{y}: official notification ਅਨੁਸਾਰ ਪੇਅ ਸਕੇਲ ਅਤੇ ਸ਼ੁਰੂਆਤੀ ਤਨਖ਼ਾਹ, ਨਾਲ ਜੁੜੀ ਹੋਰ ਜਾਣਕਾਰੀ ਸਮੇਤ। ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ ਮੁਫ਼ਤ ਗਾਈਡ।",
         "physical-standards": "{n} ਫਿਜ਼ੀਕਲ ਟੈਸਟ{y}: ਘੱਟੋ-ਘੱਟ ਕੱਦ ਅਤੇ ਫਿਜ਼ੀਕਲ ਟੈਸਟ ਦੇ ਈਵੈਂਟ, ਮਰਦਾਂ ਅਤੇ ਔਰਤਾਂ ਲਈ ਪਾਸ ਮਾਪਦੰਡਾਂ ਸਮੇਤ - official notification ਤੋਂ।",
         "preparation": "{n} ਤਿਆਰੀ ਰਣਨੀਤੀ{y}: ਕਦਮ-ਦਰ-ਕਦਮ ਪੜ੍ਹਾਈ ਪਲਾਨ, ਪਹਿਲਾਂ ਕੀ ਪੜ੍ਹਨਾ ਹੈ, ਰਿਵੀਜ਼ਨ ਅਤੇ ਮੌਕ ਟੈਸਟ ਦਾ ਤਰੀਕਾ, ਅਤੇ ਮੁਫ਼ਤ ਪ੍ਰੈਕਟਿਸ ਸੈੱਟ।",

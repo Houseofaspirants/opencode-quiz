@@ -6432,7 +6432,8 @@ def hub_fallback(coll, index):
 # that matches English and Punjabi names. Every card links straight to the
 # parts students search for (syllabus, pattern, eligibility, notification),
 # and only to parts that really exist in that language.
-_EXAM_PART_LINKS = ("syllabus", "exam-pattern", "eligibility", "notification",
+_EXAM_PART_LINKS = ("syllabus", "prelims-syllabus", "mains-syllabus",
+                    "exam-pattern", "eligibility", "notification",
                     "salary", "physical-standards")
 _BOARD_PREFIX = re.compile(r"^(PSSSB|PPSC|Punjab Police|Punjab)\s+", re.I)
 
