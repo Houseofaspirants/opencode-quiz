@@ -39,6 +39,10 @@
     PPSC: "ਪੰਜਾਬ ਲੋਕ ਸੇਵਾ ਕਮਿਸ਼ਨ",
   };
 
+  // One language per heading: the site language picks English or Punjabi
+  // instead of printing both names side by side.
+  let pa = document.documentElement.getAttribute("data-lang") !== "en";
+
   /** @type {any[]} */
   let exams = [];
   let org = "all";
@@ -114,8 +118,7 @@
       .map(([o, list]) => {
         const n = list.reduce((s, e) => s + e.count, 0);
         return `<section class="pyq-group" style="grid-column:1/-1" aria-label="${esc(o)}">
-          <h2 class="pyq-group-title">${esc(ORG_NAME[o] || o)}
-            <span class="pyq-group-pa" lang="pa">${esc(ORG_PA[o] || "")}</span>
+          <h2 class="pyq-group-title"${pa && ORG_PA[o] ? ' lang="pa"' : ""}>${esc((pa && ORG_PA[o]) || ORG_NAME[o] || o)}
             <span class="pyq-group-count">${list.length} exam${list.length === 1 ? "" : "s"} · ${n} paper${n === 1 ? "" : "s"}</span></h2>
           <div class="grid grid-3">${list.map(card).join("")}</div>
         </section>`;
@@ -139,6 +142,10 @@
     org = b.getAttribute("data-org") || "all";
     renderChips();
     render();
+  });
+  document.addEventListener("hoa:lang", (ev) => {
+    pa = /** @type {CustomEvent} */ (ev).detail?.lang !== "en";
+    if (exams.length) render();
   });
   search?.addEventListener("input", () => {
     query = search.value.trim().toLowerCase();

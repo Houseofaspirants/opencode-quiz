@@ -4320,3 +4320,14 @@ rect.di-c1, rect.di-c2, rect.di-c3, rect.di-c4, rect.di-c5, rect.di-c6 { stroke:
 [data-exam-lang="pa"] .exam-board-nav [data-lang="en"] { display: none !important; }
 .exam-dir:not([data-lang-view]) .exam-board-title [data-lang="pa"],
 :not([data-exam-lang]) > .exam-finder .exam-board-nav [data-lang="pa"] { display: none; }
+
+/* ------------------------------------------------- PYQ exam page: About
+   build_content.py pyq_exam_page: the description now sits below the table,
+   one language at a time behind a compact pair of language tabs. */
+.lang-folders.pyq-lang { display: inline-flex; gap: 6px; margin: 0 0 14px; }
+.lang-folders.pyq-lang .lang-folder {
+  min-height: 0; padding: 7px 16px; border-radius: 999px; align-items: center;
+}
+.lang-folders.pyq-lang .lf-name { font-size: 0.92rem; }
+.pyq-about .answer-box { margin: 0 0 16px; }
+.pyq-about .prose > h2:first-child { margin-top: 0; }

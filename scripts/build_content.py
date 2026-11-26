@@ -5328,7 +5328,8 @@ def _pyq_one_download(cell, label=None):
             f' download>Download &darr;</a>']
     if label:
         bits.append(f'<span class="pyq-file">{esc(label)}</span>')
-    meta = [f'{cell["pages"]} pages' if cell.get("pages") else "",
+    meta = [(f'{cell["pages"]} page' + ("s" if cell["pages"] != 1 else ""))
+            if cell.get("pages") else "",
             str(cell.get("sizeLabel") or "")]
     meta = [m for m in meta if m]
     if meta:
@@ -5384,44 +5385,64 @@ def pyq_exam_page(exam):
         str(exam["category"]), "Punjab exam question papers",
         "official answer key", "House of Aspirants"]))[:300]
 
-    # ---- overview: one block per language the sidecar declares -------------
-    blocks = []
+    # ---- overview: one block per language, shown one at a time -------------
+    # The table is what a reader came for, so it opens the page and the
+    # description sits below it. English and Punjabi overviews say the same
+    # thing, so they share one slot behind the site's language folders instead
+    # of printing every sentence twice. The "papers in this folder" list
+    # repeats the table word for word and is left out.
+    def _drop_dupe_list(src):
+        out, skip = [], False
+        for line in src.splitlines():
+            if line.startswith("## "):
+                skip = line[3:].strip() in ("Papers in this folder", "ਇਸ ਫੋਲਡਰ ਦੇ ਪੇਪਰ")
+            if not skip:
+                out.append(line)
+        return "\n".join(out)
+
+    blocks = {}
     for lang in exam["languages"]:
         src = exam["overview"].get(lang)
         if not src:
             continue                       # warned about while the manifest
-        body, _toc = md_to_html(src)       # was built; never filled in here
-        if lang == "pa":
-            blocks.append(f"""        <div class="pyq-alt" lang="pa">
-          <h3 lang="pa">ਪੰਜਾਬੀ ਵਿੱਚ</h3>
-          <div class="prose">{body}</div>
-        </div>""")
-        else:
-            blocks.append(f'        <div class="prose">{body}</div>')
+        body, _toc = md_to_html(_drop_dupe_list(src))   # was built
+        blocks[lang] = body
+    two = "en" in blocks and "pa" in blocks
     if blocks:
-        overview_body = "\n".join(blocks)
+        parts = []
+        for lang in ("en", "pa"):
+            if lang not in blocks:
+                continue
+            attrs = f' data-lang="{lang}"' + (' lang="pa"' if lang == "pa" else "")
+            lead = (f'<div class="answer-box"><span class="ab-label">Quick answer</span>'
+                    f'<p>{esc(desc)}</p></div>' if lang == "en" else "")
+            parts.append(f'        <div class="pyq-about"{attrs}>{lead}'
+                         f'<div class="prose">{blocks[lang]}</div></div>')
+        overview_body = ('        <div class="pyq-about-list" data-filter-list>\n'
+                         + "\n".join(parts) + "\n        </div>")
     else:
         # A folder whose sidecar has not been written up still publishes: the
-        # table below is complete, and this says so in as many words rather
+        # table above is complete, and this says so in as many words rather
         # than inventing a paragraph about an exam nobody has described yet.
         overview_body = (
-            '        <div class="empty-state"><span class="es-icon" '
-            'aria-hidden="true">\U0001F4C4</span>'
-            '<h3>No overview written yet</h3>'
-            "<p>The table below is complete either way. An overview is added "
-            "as <code>overview.en.md</code> beside this exam's folder.</p>"
-            "</div>")
-    editions = ", ".join(esc({"en": "English", "pa": "Punjabi"}.get(l, l))
-                         for l in exam["languages"])
-    n_ed = len(exam["languages"])
-    overview = f"""    <section class="section" style="padding-top:0">
+            f'        <div class="answer-box"><span class="ab-label">Quick answer</span>'
+            f'<p>{esc(desc)}</p></div>')
+    folders = ("""        <div class="lang-folders pyq-lang" role="group" aria-label="Language" data-lang-folders>
+          <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="pa">
+            <span class="lf-name" lang="pa">ਪੰਜਾਬੀ</span>
+          </button>
+          <button type="button" class="lang-folder" aria-pressed="false" data-lang-folder="en">
+            <span class="lf-name">English</span>
+          </button>
+        </div>""" if two else "")
+    overview = f"""    <section class="section" id="about" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div>
-          <span class="eyebrow">Overview</span>
-          <h2>About this exam</h2>
-          <p>{esc(exam["organization"])} &middot; {esc(exam["category"])} &middot;
-             {editions} edition{"s" if n_ed > 1 else ""} published</p>
+          <span class="eyebrow">About these papers</span>
+          <h2>About this exam and how to use the papers</h2>
+          <p>{esc(exam["organization"])} &middot; {esc(exam["category"])}</p>
         </div></div>
+{folders}
 {overview_body}
       </div>
     </section>"""
@@ -5458,9 +5479,8 @@ def pyq_exam_page(exam):
         <div class="section-head reveal"><div>
           <span class="eyebrow">By year</span>
           <h2>Papers and answer keys</h2>
-          <p>One row per year. The question paper is published the moment it
-             exists; its official answer key joins the same row when the
-             conducting body releases one.</p>
+          <p>One row per year: the question paper, and the official answer
+             key beside it once the conducting body releases one.</p>
         </div></div>
         {listing}
       </div>
@@ -5504,21 +5524,17 @@ def pyq_exam_page(exam):
         </nav>
         <span class="eyebrow">{esc(exam["organization"])} &middot; {esc(exam["category"])}</span>
         <h1>{esc(title)}</h1>
-        <p class="muted">Official papers only - named with the exam and the year
-           they came from, with the conducting body's answer key beside each one.</p>
-        <div class="answer-box">
-          <span class="ab-label">Quick answer</span>
-          <p>{esc(desc)}</p>
-        </div>
+        <p class="muted">Official papers only, newest year first, with the
+           conducting body's answer key beside each one.</p>
         <div class="doc-actions">
-          <a class="btn btn-soft" href="#papers">Jump to the table &darr;</a>
+          <a class="btn btn-soft" href="#about">About this exam &darr;</a>
           <a class="btn btn-soft" href="pyq.html">All previous year papers</a>
         </div>
       </div>
     </section>
-{overview}
 {table_section}
 {others}
+{overview}
     <section class="section" style="padding-top:0">
       <div class="container">
         <div class="section-head reveal"><div>
@@ -5541,6 +5557,7 @@ def pyq_exam_page(exam):
     # the target has to name the page it belongs to - the same rule the
     # Punjabi edition and the study parts follow.
     html = html.replace('href="#papers"', f'href="/{file}#papers"')
+    html = html.replace('href="#about"', f'href="/{file}#about"')
     html += TAIL
     return html
 
@@ -6438,6 +6455,105 @@ _EXAM_PART_LINKS = ("syllabus", "prelims-syllabus", "mains-syllabus",
 _BOARD_PREFIX = re.compile(r"^(PSSSB|PPSC|Punjab Police|Punjab)\s+", re.I)
 
 
+DIARY_TOPICS = (
+    # (key, English name, Punjabi name, icon, curated reading order)
+    ("story", "Start here: my journey to SI Rank 2", "ਇੱਥੋਂ ਸ਼ੁਰੂ ਕਰੋ: SI ਰੈਂਕ 2 ਤੱਕ ਮੇਰਾ ਸਫ਼ਰ", "🏁",
+     ("my-story-false-fir-to-si-rank-2", "weak-student-to-rank-2",
+      "punjab-police-si-preparation-strategy", "previous-year-papers-613-to-713",
+      "punjab-police-si-training-phillaur")),
+    ("strategy", "Exam strategy, PYQs and mock tests", "ਪੇਪਰ ਦੀ ਰਣਨੀਤੀ, ਪੁਰਾਣੇ ਪੇਪਰ ਅਤੇ ਮੌਕ ਟੈਸਟ", "🎯",
+     ("last-3-months-strategy", "importance-of-mock-tests", "common-preparation-mistakes",
+      "self-study-vs-coaching", "should-you-apply-for-every-government-exam")),
+    ("current-affairs", "Current affairs", "ਕਰੰਟ ਅਫੇਅਰਜ਼", "📰",
+     ("current-affairs-monthly-magazine-method", "how-many-months-current-affairs-punjab-exams")),
+    ("routine", "Study routine, timetable and revision", "ਪੜ੍ਹਾਈ ਦਾ ਰੁਟੀਨ, ਟਾਈਮ-ਟੇਬਲ ਅਤੇ ਰਿਵੀਜ਼ਨ", "⏰",
+     ("how-many-hours-i-studied-daily", "study-in-90-minute-shifts", "how-to-stop-forgetting-in-exams",
+      "atomic-habits-10-minute-study-rule", "study-with-a-job", "read-in-your-mother-tongue")),
+    ("health", "Fitness, diet and sleep", "ਫਿਟਨੈਸ, ਡਾਈਟ ਅਤੇ ਨੀਂਦ", "💪",
+     ("fitness-while-preparing-for-exams", "gym-during-exam-preparation", "diet-to-avoid-sleepiness-while-studying",
+      "sleep-during-exam-preparation", "fitness-is-your-identity")),
+    ("mindset", "Motivation and mindset", "ਮੋਟੀਵੇਸ਼ਨ ਅਤੇ ਸੋਚ", "🔥",
+     ("how-to-stay-motivated", "discipline-and-consistency", "failure-to-success",
+      "your-circle-decides-your-preparation", "dealing-with-relatives-during-preparation")),
+    ("family-career", "Family, career choices and Plan B", "ਪਰਿਵਾਰ, ਕਰੀਅਰ ਦੀ ਚੋਣ ਅਤੇ Plan B", "🧭",
+     ("which-stream-after-10th-for-government-jobs", "ba-plus-self-study-plan-after-12th",
+      "campus-placement-vs-government-exam", "convince-family-for-police-job",
+      "parents-guide-supporting-exam-aspirant", "plan-b-for-government-job-aspirants")),
+    ("books-money", "Books and money", "ਕਿਤਾਬਾਂ ਅਤੇ ਪੈਸਾ", "📚",
+     ("non-syllabus-books-for-aspirants", "money-lessons-for-new-government-employees")),
+)
+# A new entry not named above lands by its front-matter category.
+_DIARY_BY_CATEGORY = {
+    "preparation-experience": "story", "strategy-articles": "strategy",
+    "mistakes": "strategy", "study-plans": "routine", "time-management": "routine",
+    "motivation": "mindset", "book-reviews": "books-money",
+}
+
+
+def diary_directory(live, folder_html, hub):
+    """Topper's Diary: entries grouped by topic in a curated reading order,
+    with the /exams search box and jump chips (same markup and JS)."""
+    order = {}
+    for key, _en, _pa, _ico, slugs in DIARY_TOPICS:
+        for i, s in enumerate(slugs):
+            order[s] = (key, i)
+    groups = {t[0]: [] for t in DIARY_TOPICS}
+    for r in live:
+        slug = r["file"].split("/")[-1][:-5]
+        pre = str(hub.get("prefix") or "blog") + "-"
+        slug = slug[len(pre):] if slug.startswith(pre) else slug
+        key, pos = order.get(slug, (_DIARY_BY_CATEGORY.get(str(r.get("category") or ""), "mindset"), 999))
+        groups[key].append((pos, str(r.get("title") or "").lower(), r))
+    names = {t[0]: t for t in DIARY_TOPICS}
+
+    def card(r, key):
+        lang = "pa" if r.get("lang") == "pa" else "en"
+        _k, en, pa, ico, _s = names[key]
+        hay = " ".join([str(r.get("title") or ""), str(r.get("description") or ""),
+                        en, pa, " ".join(map(str, r.get("tags") or []))]).lower()
+        more = "ਪੂਰਾ ਪੜ੍ਹੋ" if lang == "pa" else "Read the entry"
+        return (f'<a class="card card-pad reveal" href="{esc(r["file"])}" data-lang="{lang}"'
+                + (' lang="pa"' if lang == "pa" else "")
+                + f' data-exam-search="{esc(hay)}">'
+                f'<h3>{esc(r["title"])}</h3>'
+                f'<p class="muted">{esc(r["description"])}</p>'
+                f'<p class="ilink">{more} →</p></a>')
+
+    nav, sections = [], []
+    for key, en, pa, ico, _s in DIARY_TOPICS:
+        rows = sorted(groups[key], key=lambda x: (x[0], x[1]))
+        if not rows:
+            continue
+        n_en = sum(1 for *_x, r in rows if r.get("lang") != "pa")
+        n_pa = len(rows) - n_en
+        nav.append(f'<a class="filter-chip exam-board-chip" href="#topic-{key}">{ico} '
+                   f'<span data-lang="en">{esc(en)} <span class="exam-board-n">{n_en}</span></span>'
+                   f'<span data-lang="pa" lang="pa">{esc(pa)} <span class="exam-board-n">{n_pa}</span></span></a>')
+        sections.append(
+            f'<section class="exam-board" id="topic-{key}" data-exam-board>'
+            f'<h3 class="exam-board-title">{ico} <span data-lang="en">{esc(en)}</span>'
+            f'<span data-lang="pa" lang="pa">{esc(pa)}</span></h3>'
+            f'<div class="grid grid-3">{"".join(card(r, key) for *_x, r in rows)}</div>'
+            f'</section>')
+    return f"""<div class="section-head reveal"><div>
+            <span class="eyebrow">Sorted by topic</span>
+            <h2>Find a diary entry</h2>
+            <p>Every entry, grouped by topic in the order I would read them. Jump to a topic or search in English or Punjabi.</p>
+          </div></div>
+          <div class="exam-finder">
+            <label class="exam-search">
+              <span class="sr-only">Search the diary</span>
+              <input type="search" data-exam-search-input autocomplete="off"
+                placeholder="Search: timetable, mock test, gym, ਰਿਵੀਜ਼ਨ ..."
+                aria-label="Search diary entries in English or Punjabi">
+            </label>
+            <nav class="exam-board-nav" aria-label="Jump to a topic">{"".join(nav)}</nav>
+          </div>
+          {folder_html}
+          <div class="exam-dir" data-filter-list data-exam-dir>{"".join(sections)}</div>
+          <p class="exam-empty muted" data-exam-empty hidden>No entry matches that search. Try one word, such as <b>revision</b> or <b>fitness</b>.</p>"""
+
+
 def exam_directory(live, folder_html, hub):
     cfg = exam_hubs.load_config()
     boards = cfg.get("boards") or {}
@@ -6596,9 +6712,10 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
             </button>
           </div>""" if folders else "")
         head_html = (exam_directory(live, folder_html, hub) if coll == "strategy"
+                     else diary_directory(live, folder_html, {**hub, "prefix": prefix}) if coll == "blogs"
                      else None)
-    if live and coll == "strategy":
-        pass                                   # exam_directory() above
+    if live and coll in ("strategy", "blogs"):
+        pass                                   # exam_directory() / diary_directory() above
     elif live:
         head_html = f"""<div class="section-head reveal"><div>
             <span class="eyebrow">{"Published" if coll != STUDY_DIR else "Every format, one list"}</span>
@@ -6738,6 +6855,16 @@ def hub_page(coll, cfg, items, index, exams, pyq_exams=(), ca_section=None):
         <div class="grid grid-3">{cards}</div>
       </div>
     </section>""")
+        # The exam folders are what a reader came for: they open the page, and
+        # the loose PDFs (syllabus files, combined papers) follow below them.
+        if live and sections:
+            loose = sections.pop(0)
+            loose = loose.replace("<h2>All published</h2>",
+                                  "<h2>Other PDFs in this section</h2>", 1)
+            loose = loose.replace(f'<p>{esc(hub["lead"])}</p>',
+                                  "<p>Syllabus files and combined papers that are not "
+                                  "filed under a single exam.</p>", 1)
+            sections.append(loose)
 
     elif coll == "strategy":
         sections.append(subject_strip(index))
