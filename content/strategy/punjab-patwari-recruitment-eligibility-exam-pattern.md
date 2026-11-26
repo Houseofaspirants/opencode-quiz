@@ -105,6 +105,9 @@ The board's **final plan of written examination** for Patwari (Advt No. 02 of 20
 - **Part A - Punjabi (qualifying):** 50 questions of matric standard, 1 mark each, **no negative marking**. You need at least **25 marks (50%)**, or Part B is not checked.
 - **Part B - merit:** 100 questions, 1 mark each, **1/4 mark cut for each wrong answer**. The merit list is made only from Part B.
 
+
+## Syllabus (Advt 02/2023 final plan)
+
 | Part B section | Marks (approx.) | What it covers |
 | --- | --- | --- |
 | General knowledge & current affairs | 25 | Polity, environment, current affairs, science & technology, economy, Punjab history from the 14th century, Indian freedom struggle, sports, cinema & literature |

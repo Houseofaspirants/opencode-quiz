@@ -110,7 +110,7 @@ One **objective (MCQ) written exam** in two parts:
 - **Ties:** the older candidate ranks higher; then the higher percentage in the required qualification.
 - After the merit list, candidates are called for **counselling** and document verification, and are recommended to departments from the common merit list.
 
-## What the 5 April 2026 paper looked like
+## Syllabus in practice - topics in the 5 April 2026 paper
 
 The written exam under Advt. 08/2025 is the best guide to the syllabus:
 

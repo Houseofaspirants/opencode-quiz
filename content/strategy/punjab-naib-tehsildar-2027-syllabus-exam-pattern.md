@@ -104,7 +104,7 @@ The fee is non-refundable and was paid through a system-generated challan at any
 
 Apply **online only** at ppsc.gov.in - no other mode is accepted, and you do not send a hard copy to PPSC. In Advt. No. 15 the last date for registration was **08.01.2021** (11:59 PM) and for depositing the fee **15.01.2021** (banking hours). Everyone who applies is treated as provisionally eligible for the written exam; documents are checked after the result.
 
-## Official syllabus and exam pattern (PPSC)
+## Exam pattern (official, PPSC Advt No. 15)
 
 This is the official Naib Tehsildar scheme of the Punjab Public Service Commission, from **PPSC Advertisement No. 15** (78 posts). Selection is on **one objective written exam only** - no interview.
 
@@ -120,6 +120,8 @@ This is the official Naib Tehsildar scheme of the Punjab Public Service Commissi
 **[Download the PPSC Naib Tehsildar syllabus (PDF, 2 pages, English + Punjabi)](assets/pdfs/ppsc-naib-tehsildar-syllabus.pdf)**
 
 The full official notification is also available: **[PPSC Advt. No. 15 (PDF, 23 pages)](assets/pdfs/ppsc-naib-tehsildar-notification-advt-15.pdf)**.
+
+## Syllabus (official, PPSC Advt No. 15)
 
 ### 1. General Knowledge & Current Affairs (80 questions / 200 marks)
 

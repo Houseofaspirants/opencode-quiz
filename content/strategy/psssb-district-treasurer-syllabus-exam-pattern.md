@@ -22,7 +22,7 @@ faq:
   - q: Is there an accounts or finance subject paper?
     a: No. The 2023 plan is entirely general; it has no subject part.
   - q: When was it last advertised?
-    a: In PSSSB Advertisement No. 13 of 2023, the same advertisement that had Technical Assistant posts. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 13 of 2023, the same advertisement that had Technical Assistant posts. Its eligibility, pay and post numbers are on this page.
 references:
   - title: PSSSB - Plan of written examination and syllabus, District Treasurer, Advt No. 13 of 2023
     url: https://sssb.punjab.gov.in/
@@ -30,11 +30,21 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. District Treasurer sounds like a finance exam, but the 2023 written test was a general paper - the same preparation as Senior Assistant gets you there.
 
-> This page is based on the board's **official plan of written examination for District Treasurer, Advt No. 13 of 2023**. Our archive does not have the advertisement itself, so eligibility, pay and posts are not given here.
+> **PSSSB Advertisement No. 13 of 2023** (10 posts) was published on **23 December 2023**; applications closed on **31 December 2023**, fee by 2 January 2024. This page uses that advertisement and the board's official plan of written examination for District Treasurer.
 
 ## Latest notification
 
-District Treasurer was advertised in **PSSSB Advt 13/2023**, alongside the [Technical Assistant](exams/psssb-technical-assistant.html) posts. No newer District Treasurer advertisement is in our archive yet.
+**Advt 13/2023** had **1 District Treasurer post** (General) under the **Director, Treasury and Accounts, Punjab**, alongside the [Technical Assistant](exams/psssb-technical-assistant.html) posts. No newer District Treasurer advertisement is in our archive yet.
+
+## Eligibility (Advt 13/2023)
+
+- **Graduate** from a recognised university.
+- **Matric with Punjabi.**
+- **Age** is counted as on **1 January 2023**; check the limits and relaxations in the advertisement.
+
+## Salary and pay
+
+**Rs 35,400** basic pay (7th CPC Level 6) as per Advt 13/2023.
 
 ## Exam pattern (Advt 13/2023 official plan)
 

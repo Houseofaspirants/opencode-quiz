@@ -102,7 +102,7 @@ Minimum pay for the main services, from Appendix-I of the notification (7th CPC 
 - **Probation:** 3 years, paid as a fixed emolument equal to the minimum pay, without any allowance.
 - **PCS (EB) career path:** Level 10 (Rs 56,100) after 4 years, Selection Grade Level 11 (Rs 67,700) after 8, JAG-II Level 12 (Rs 78,800) after 13, and JAG-I Level 13 (Rs 1,23,100) after 18 years.
 
-## Stage 1: Preliminary exam
+## Prelims exam pattern (Stage 1)
 
 | Paper | Questions | Marks per question | Total | Time |
 | --- | --- | --- | --- | --- |
@@ -114,20 +114,31 @@ Minimum pay for the main services, from Appendix-I of the notification (7th CPC 
 - **Merit for mains comes only from Paper I.** About **12 to 13 times** the vacancies in each category go on to the mains.
 - Papers are bilingual, in English and Punjabi. Prelims marks do not count in the final merit.
 
-**Paper I syllabus (General Studies):**
-- Everyday science, computers and telecommunication
-- Environmental studies and climate change
-- Political theory and the international order (UN, World Bank, IMF, WTO, G20, BRICS)
-- Indian polity: Constitution, amendments, Panchayati Raj, elections
-- History of India and world history (Renaissance to the World Wars)
-- Indian economy: planning, reforms since 1991, key challenges
-- Geography: population, resources, agriculture, industry, transport
-- Current events of national and international importance
-- **Punjab:** geography and waters; people, society and culture; history from the Sufis and Gurus to independent India; economy
+## Prelims syllabus (official, Appendix II)
 
-**Paper II syllabus (CSAT):** Punjabi and English comprehension and grammar, interpersonal and communication skills, logical reasoning, basic numeracy and data analysis.
+**Paper I - General Studies**
 
-## Stage 2: Main exam (descriptive)
+1. **Everyday science** - states of matter, structure of the atom, carbon; acids, bases, salts, corrosion, soaps; evolution and life on earth, the human body, nutrition, diseases (infectious and lifestyle), public health, immunisation, HIV-AIDS, TB, polio; laws of motion and gravitation, Archimedes' principle, energy; light, sound and electric current; computers and telecommunication.
+2. **Environmental studies** - atmosphere, solar system and heat balance, atmospheric circulation and weather, water cycle; climate change (fossil fuels, greenhouse gases, renewable energy, clean development mechanism, carbon credits); oceans, rivers, glaciers, lakes, groundwater; biodiversity and conservation; soils, crops, food chain; pollution and toxicity.
+3. **Political theory and international order** - freedom, equality, social justice, rights and duties, citizenship, nationalism, secularism; the UN and its agencies, World Bank, IMF, WTO, EU, G20, BRICS.
+4. **Indian polity** - features, provisions and schedules of the Constitution, key amendments; Panchayati Raj; elections, Representation of the People Act, electoral reforms; regionalism and coalition politics; armed challenges to the Indian state since independence.
+5. **History of India** - Indus valley; Aryan and Vedic age; Jainism and Buddhism; Maurya and Gupta periods; Islam and the Sultanate; Bhakti movement; the Mughals till Aurangzeb; European powers and British rule; 1857; the national movement 1857-1947. **World history** - Renaissance and Industrial Revolution, American (1776), French (1789) and Russian (1917) revolutions, World Wars I and II.
+6. **Indian economy** - development 1950-1991, five-year plans, LPG reforms since 1991, growth, fiscal and revenue deficits, trade and balance of payments, inflation, services; agriculture and food security, industrialisation, poverty and employment, infrastructure, health and education.
+7. **Geography** - population, migration, human development and settlements; land, agriculture, water, minerals and energy; manufacturing; planning and sustainable development; transport, communication and international trade.
+8. **Current events** of national and international importance.
+9. **Punjab** - (a) geography: agro-climatic regions, rivers, water sharing, demographics, human development; (b) people, society and culture: personalities, religious movements, Punjabi literature, folklore, performing and fine arts, crafts; (c) history: Sufis, saints and Gurus, Lodhis and Mughals, Sikh rulers, British period, nationalist movement, Punjab after 1947; (d) economy: agriculture, animal husbandry, industry and services, public finance and centre-state fiscal issues, cooperatives.
+
+**Paper II - CSAT (qualifying)**
+
+1. Reading comprehension in Punjabi and English, antonyms and synonyms, grammar and sentence formation.
+2. Interpersonal skills, including communication skills.
+3. Logical reasoning, analytical and mental ability.
+4. Basic numerical skills - numbers, magnitudes, percentages, numerical relations.
+5. Data analysis - graphs, charts, tables, spreadsheets.
+
+The commission calls these topics indicative, not exhaustive.
+
+## Mains exam pattern (Stage 2, descriptive)
 
 | Paper | Marks |
 | --- | --- |
@@ -143,10 +154,39 @@ Minimum pay for the main services, from Appendix-I of the notification (7th CPC 
 | **Grand total** | **1,500** |
 
 - Every paper is **descriptive and 3 hours** long. You may answer in Punjabi, except the English paper.
-- The notification asks for **special emphasis on the history, geography, society and economy of Punjab** in the General Studies papers.
 - **To reach the interview** you need **45% in aggregate** (40% for SC/ST) and **at least 25% in every paper**. Up to 3 times the vacancies are called.
 - **To qualify finally** you need 45% in aggregate including the interview (40% for SC/ST).
 - **Ties:** higher written marks first, then the higher total in the four GS papers, then the older candidate.
+
+## Mains syllabus (official, Appendix III)
+
+The notification asks for **special emphasis on the history, geography, society and economy of Punjab** in all General Studies papers.
+
+**English (100):** comprehension 10, precis (to one-third) 10, letter (200 words) 10, essay (300 words) 10, translation 10, grammar 50.
+
+**Punjabi (100):** comprehension 10, precis 10, application or letter (200 words) 10, essay (400 words) 10, translation 10, grammar 50.
+
+**Essay (150):** three short essays in English or Punjabi on given topics, judged on content and exact expression.
+
+**GS-I - History, Geography and Society (250)**
+- *History:* world history from the 18th century (industrial revolution, world wars, colonisation and decolonisation, communism, capitalism, socialism); Indian art, literature and architecture; modern India from the mid-18th century; socio-religious reform with reference to Punjab; the freedom struggle with reference to Punjab; post-independence consolidation; Maharaja Ranjit Singh's rise and administration; the Anglo-Sikh wars and annexation of Punjab.
+- *Geography:* world physical geography and resources; location of industries; earthquakes, tsunamis, volcanoes, cyclones and changes in geographical features; physiography of Punjab and its border location; crops of Punjab, modern farming and groundwater depletion.
+- *Society:* features and diversity of Indian society; women, population, poverty, urbanisation; globalisation; communalism, regionalism and secularism; ethics and human values (Buddha, Mahavira, Kabir, Guru Nanak, Vivekananda, Phule, Vidyasagar, Gandhi); vulnerable sections and welfare schemes of the Centre and Punjab; health, education, poverty and malnutrition.
+
+**GS-II - Constitution, Polity, Governance and International Relations (250)**
+- *Polity:* evolution, features and basic structure of the Constitution; federalism and devolution to local levels; separation of powers; comparison with other constitutions; Parliament and state legislatures; executive and judiciary; Representation of the People Act; constitutional bodies; district administration, Panchayati Raj and urban local bodies.
+- *Governance:* statutory and regulatory bodies; government policies and the role of NGOs and SHGs; transparency, accountability, e-governance, citizens' charters, role of civil services; ethics and probity in governance, RTI, codes of conduct, corruption.
+- *International relations:* India and its neighbours; groupings and agreements affecting India; policies of other countries and the Indian diaspora; international institutions.
+
+**GS-III - Economy, Statistics and Security (250)**
+- *Economy:* planning, growth, employment, inclusive growth, budgeting; crops, irrigation, agricultural marketing, farm subsidies and MSP; PDS and food security; food processing; land reforms and liberalisation; infrastructure and investment models; human capital, unemployment and skills; Punjab's economy, industry and infrastructure.
+- *Statistics:* drawing conclusions from statistical, graphical and diagrammatic data.
+- *Security:* development and extremism; internal-security challenges and social media; cyber security and money laundering; border management and organised crime; security forces and their mandates.
+
+**GS-IV - Science & Technology, Environment, Problem Solving and Decision Making (250)**
+- *Science and technology:* everyday applications; Indian achievements; IT, space, computers, robotics, nanotechnology; IPR; agricultural science, biotechnology, veterinary science; genetic engineering and stem cells; diseases, immunity and vaccination.
+- *Environment:* conservation, pollution, climate change, EIA; water management; disasters, natural hazards and risk reduction.
+- *Problem solving:* a structured civil-service situation - disasters, law and order, riots, protests, land acquisition, flagship schemes, PPPs, municipal services, reviving a loss-making PSU, gender and vulnerable sections, education and skills, slums and housing, drinking water and sanitation - to be analysed with your own solution.
 
 ## DSP and Jail posts: physical standards
 

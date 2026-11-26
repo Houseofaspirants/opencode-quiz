@@ -69,7 +69,7 @@ The High Court recruits Clerks every few years, when vacancies in its own establ
 
 <!-- hoa-official -->
 
-## Syllabus (from the 2023 notice)
+## Screening test syllabus (prelims, 2023 notice)
 
 The High Court does not publish a topic-by-topic syllabus; the notice itself sets out what each stage tests.
 
@@ -80,6 +80,8 @@ The High Court does not publish a topic-by-topic syllabus; the notice itself set
 - General English
 - Reasoning and general intelligence
 - Clerical aptitude
+
+## Mains syllabus (main written exam, 2023 notice)
 
 **Main written exam (descriptive, 3 hours, 300 marks)**
 

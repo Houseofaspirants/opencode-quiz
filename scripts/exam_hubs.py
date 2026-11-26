@@ -474,6 +474,8 @@ def prepare(records, err, warn, info, landing_files=frozenset()):
                 kw_base = ex["name"]["en"].lower()
                 words = {"notification": "notification", "eligibility": "eligibility",
                          "exam-pattern": "exam pattern", "syllabus": "syllabus",
+                         "prelims-syllabus": "prelims syllabus",
+                         "mains-syllabus": "mains syllabus",
                          "salary": "salary", "physical-standards": "physical test",
                          "preparation": "preparation strategy"}[k]
                 kws = [f"{kw_base} {words}"]
@@ -511,6 +513,8 @@ _FAQ_RX = {
     "eligibility": r"age|eligib|qualif|degree|punjabi|attempt|ਉਮਰ|ਯੋਗਤਾ",
     "exam-pattern": r"question|marks|negative|pattern|qualif|merit|paper|ਸਵਾਲ|ਅੰਕ|ਪੈਟਰਨ|ਮਾਰਕਿੰਗ|ਪੇਪਰ",
     "syllabus": r"syllabus|subject|topic|section|ਸਿਲੇਬਸ|ਵਿਸ਼ੇ",
+    "prelims-syllabus": r"prelim|screening|ਪ੍ਰੀਲਿਮ|ਸਕ੍ਰੀਨਿੰਗ",
+    "mains-syllabus": r"\bmains\b|main exam|ਮੇਨਜ਼",
     "salary": r"salary|pay|ਤਨਖ਼ਾਹ|ਤਨਖਾਹ",
     "physical-standards": r"height|physical|race|chest|ਕੱਦ|ਫਿਜ਼ੀਕਲ|ਦੌੜ",
     "preparation": r"prepar|study|start|ਤਿਆਰੀ",

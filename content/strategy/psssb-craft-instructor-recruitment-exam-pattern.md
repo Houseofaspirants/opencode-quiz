@@ -87,7 +87,9 @@ You also need **Punjabi up to matriculation**, as the notification requires. All
 
 The board said the detailed syllabus and the roll numbers will be put on its website, sssb.punjab.gov.in. Until then, prepare from the last instructor paper and the standard PSSSB pattern.
 
-## What the last PSSSB instructor paper looked like
+## Syllabus - topics in the last instructor paper
+
+Our archive does not have an official syllabus for Craft Instructor. The last PSSSB instructor paper shows what to prepare.
 
 The PSSSB instructor exam held on **22 March 2025** is on this site. It followed the usual PSSSB style, with every question in English and Punjabi:
 

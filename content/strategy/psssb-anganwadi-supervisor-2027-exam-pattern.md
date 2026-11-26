@@ -50,6 +50,23 @@ Supervisors oversee clusters of Anganwadi centres, and posts fall vacant through
 - **Deleted questions:** marked * - 1 mark to all candidates.
 - **Eligibility:** degree-level, with experience conditions in some rounds - confirm in the next notice.
 
+## Syllabus - topics in the 2022 paper
+
+Our archive does not have the official syllabus for this post. The **2022 paper (25 September 2022, 100 questions)** shows what the board tested, roughly in this order:
+
+| Block | Approx. questions | Topics seen |
+| --- | --- | --- |
+| English | 10 | sentence improvement, synonyms, antonyms, one-word substitution, voice, analogy, idioms, narration |
+| Punjabi | 10 | grammar, word meanings and usage |
+| Computers (ICT) | 10 | types of computers, browsers, IP address, email (CC/BCC), Word, Excel functions, PowerPoint shortcuts |
+| Punjab history and culture | 10 | capital before 1947, Punjabi novels and poets (Waris Shah), Nanakshahi coins, Doaba districts, folk singers, Punjab Kesari, Greek names of rivers, freedom fighters |
+| Child development, nutrition and ICDS | 20 | child development stages, emotional and social development, inclusive education, family welfare, Integrated Child Protection Scheme, newborn feeding, protein-energy malnutrition, vitamins, Mission Indradhanush, duties of Anganwadi workers and helpers |
+| GK and current affairs | 15 | sports, national film awards, NITI Aayog indices, new laws, international days, Booker Prize, science principles, Constitution |
+| Quantitative aptitude | 15 | number system, HCF and LCM, ratio, mensuration |
+| Reasoning | 10 | series, analogy, odd one out, coding-decoding, blood relations, directions, symbols, non-verbal figures |
+
+The question counts are our estimate from the paper. Child development and nutrition is the one block only this post asks - give it the most time.
+
 ## How PSSSB papers work now
 
 For its recent advertisements PSSSB uses a two-part objective paper:

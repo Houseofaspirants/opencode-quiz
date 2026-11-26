@@ -22,7 +22,7 @@ faq:
   - q: Is there a labour law paper?
     a: No. Part B is a general paper - GK, Punjab history and culture, reasoning, Punjabi, English and ICT - the same mix as the PSSSB Clerk and Excise Inspector exams.
   - q: When was it last advertised?
-    a: In PSSSB Advertisement No. 02 of 2024, as a Group-C post. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 02 of 2024, as a Group-C post. Its eligibility and pay are on this page.
 references:
   - title: PSSSB - Plan of written examination and syllabus, Labour Inspector Grade-I, Advt No. 02 of 2024
     url: https://sssb.punjab.gov.in/
@@ -30,11 +30,21 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Labour Inspector Grade-I uses exactly the general paper of PSSSB Clerk and Excise Inspector, so one preparation covers all three.
 
-> This page is based on the board's **official plan of written examination for Labour Inspector Grade-I (Group-C), Advt No. 02 of 2024**. Our archive does not have the advertisement itself, so eligibility, pay and posts are not given here.
+> **PSSSB Advertisement No. 02 of 2024** was published on **14 February 2024**; applications ran from **16 February to 11 March 2024**, fee by 14 March 2024. Age is counted as on 1 January 2024. This page uses that advertisement and the board's official plan of written examination for Labour Inspector Grade-I. Our copy of the advertisement is a scan in which the post counts are not legible, so they are not given here.
 
 ## Latest notification
 
 Labour Inspector Grade-I was advertised in **PSSSB Advt 02/2024**, which also had the Technician and Technical Officer posts. No newer Labour Inspector advertisement is in our archive yet.
+
+## Eligibility (Advt 02/2024)
+
+- **Graduate** from a recognised university.
+- **Matric with Punjabi.**
+- After appointment, a Labour Inspector must **pass a departmental examination**.
+
+## Salary and pay
+
+**Rs 35,400** basic pay (7th CPC Level 6) as per Advt 02/2024.
 
 ## Exam pattern (Advt 02/2024 official plan)
 

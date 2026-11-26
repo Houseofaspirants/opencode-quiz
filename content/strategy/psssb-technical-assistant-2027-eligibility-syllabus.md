@@ -72,7 +72,7 @@ Matric-level Punjabi is required for both.
 
 <!-- hoa-official -->
 
-## Aviation Technical Assistant - eligibility and syllabus (Advt 12/2023, 13/2023)
+## Aviation Technical Assistant - eligibility (Advt 12/2023)
 
 "Technical Assistant" is a name several departments use for very different jobs. In late 2023 PSSSB advertised one for **aviation** work - Advt 12/2023 (published 23 December 2023, with 1 Technical Assistant, 1 District Treasurer and 8 Research Assistant Grade-A posts), followed by a written-exam plan under Advt 13/2023.
 
@@ -83,6 +83,8 @@ Matric-level Punjabi is required for both.
 - A computer course equivalent to **DOEACC (NIELIT) 'O' level**, and matric Punjabi.
 - **Pay:** Rs 35,400 (Level-6, 7th CPC).
 
+## Aviation Technical Assistant - exam pattern (Advt 13/2023)
+
 **Written exam (official plan, Advt 13/2023)**
 
 | Part | What | Questions / marks |
@@ -90,6 +92,8 @@ Matric-level Punjabi is required for both.
 | A | GK and current affairs, Punjab history and culture, reasoning, Punjabi, English, ICT | 40 |
 | B | Aviation subject | 80 |
 | **Total** | 2 hours, 1/4 mark cut per wrong answer | **120** |
+
+## Aviation Technical Assistant - syllabus (Advt 13/2023)
 
 **Part B - the aviation subject (80 marks)**
 

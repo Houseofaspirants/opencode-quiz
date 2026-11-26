@@ -66,23 +66,49 @@ Punjab keeps adding courts and pendency is high, so judicial posts are filled **
 - **Age:** **21 to 37** on the last date of application. Upper limit **42** for SC/ST of all states and BC of Punjab; **45** for Punjab and other government employees; **42** for widows, divorcees and certain other women; **47** for persons with disabilities of Punjab; ex-servicemen deduct their service.
 - **Fee (2022):** General, sportspersons and wards of freedom fighters **Rs 1,500** (Rs 500 application + Rs 1,000 exam); SC/ST/BC **Rs 750**; ex-servicemen, EWS, persons with disabilities and lineal descendants of ex-servicemen of Punjab **Rs 500**. Not refundable.
 
-## Exam pattern and syllabus (official)
+## Prelims and mains pattern (official)
 
-**Stage 1 - Preliminary (screening only):** **125 objective questions, 4 marks each (500 marks), 2 hours**; **1/5 mark cut** for a wrong answer. Questions come from the mains syllabus plus current events, Indian legal and constitutional history and governance, reasoning and aptitude, at graduate level. You must score at least **150/500 (100 for reserved categories)** to reach the mains.
+**Stage 1 - Preliminary (screening only)**
+
+| Paper | Questions | Marks | Time | Negative |
+| --- | --- | --- | --- | --- |
+| Objective MCQ | 125 | 500 (4 each) | 2 hours | 1/5 mark per wrong answer |
+
+- You need at least **150/500 (100 for reserved categories)** to reach the mains; about **10 times** the vacancies in each category are called. Prelims marks do not count in the final result.
 
 **Stage 2 - Main exam (five descriptive papers, 3 hours each, 950 marks)**
 
-| Paper | Syllabus | Marks |
-| --- | --- | --- |
-| I - Civil law | Code of Civil Procedure, Punjab Courts Act, Contract Act, Sale of Goods Act, Partnership Act, Specific Relief Act, Transfer of Property Act 1882, East Punjab Urban Rent Restriction Act 1949, Evidence Act 1872 | 200 |
-| II - Civil law | Hindu Law, Mohammedan Law and Customary Law, Registration and Limitation | 200 |
-| III - Criminal law | Indian Penal Code, Criminal Procedure Code, Evidence Act (now BNS, BNSS and BSA) | 200 |
-| IV - English | essay of 1000-1100 words, precis, words and phrases, comprehension, corrections | 200 |
-| V - Punjabi (Gurmukhi) | essay 100 + language and grammar 50, matric standard | 150 |
+| Paper | Marks |
+| --- | --- |
+| I - Civil Law | 200 |
+| II - Civil Law | 200 |
+| III - Criminal Law | 200 |
+| IV - English Language | 200 |
+| V - Punjabi (Gurmukhi) | 150 |
 
 - Law papers are answered **in English**; only **bare acts** are supplied.
 - **33% in each paper** is needed to get any credit for it, and 33% in Punjabi to qualify.
 - **Stage 3 - Viva-voce (100 marks, in English):** called only with **50% in the written aggregate** (45% for SC, BC and persons with disabilities of Punjab). Final list = **written + viva (1,050 marks)**, with 50% overall (45% reserved) needed to qualify.
+
+## Prelims syllabus (official)
+
+The notification gives no separate prelims list: the 125 questions come **from the mains syllabus below**, plus:
+
+- current events of national and international importance;
+- Indian legal and constitutional history, and governance;
+- analytical skills, reasoning and aptitude.
+
+The standard is **graduate level**, and you are expected to have "a general and basic overview of the main subjects".
+
+## Mains syllabus (official)
+
+| Paper | Syllabus | Marks |
+| --- | --- | --- |
+| I - Civil Law | Code of Civil Procedure, Punjab Courts Act, Indian Contract Act, Sale of Goods Act, Partnership Act, Specific Relief Act, Transfer of Property Act 1882, East Punjab Urban Rent Restriction Act 1949, Indian Evidence Act 1872 | 200 |
+| II - Civil Law | Hindu Law, Mohammedan Law and Customary Law, Law of Registration and Limitation | 200 |
+| III - Criminal Law | Indian Penal Code, Criminal Procedure Code, Indian Evidence Act (now BNS, BNSS and BSA) | 200 |
+| IV - English Language | Essay (1000-1100 words), precis, words and phrases (make sentences), comprehension, corrections | 200 |
+| V - Punjabi (Gurmukhi) | Essay 100 + language and grammar 50, matric (PSEB) standard | 150 |
 
 ## Salary and pay
 

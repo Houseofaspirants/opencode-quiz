@@ -22,7 +22,7 @@ faq:
   - q: Is there a subject paper on proof reading?
     a: No. Part B is a general paper - GK, Punjab history and culture, reasoning, Punjabi, English and ICT.
   - q: When was it last advertised?
-    a: In PSSSB Advertisement No. 04 of 2023. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 04 of 2023. Its eligibility, pay and post numbers are on this page.
 references:
   - title: PSSSB - Final plan of written examination and syllabus, Proof Reader and Copy Holder, Advt No. 04 of 2023
     url: https://sssb.punjab.gov.in/
@@ -30,11 +30,26 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Proof Reader and Copy Holder sound like specialist jobs, but their written test is the same general paper as PSSSB Clerk - with sharp Punjabi and English, you have an edge.
 
-> This page is based on the board's **final plan of written examination for Proof Reader and Copy Holder, Advt No. 04 of 2023**. Our archive does not have the advertisement itself, so eligibility, pay and posts are not given here.
+> **PSSSB Advertisement No. 04 of 2023** (95 posts) was published on **23 August 2023**; applications ran from **28 August to 22 September 2023**, fee by 25 September 2023. This page uses that advertisement and the board's final plan of written examination for Proof Reader and Copy Holder.
 
 ## Latest notification
 
-Proof Reader and Copy Holder were advertised in **PSSSB Advt 04/2023**. No newer advertisement for these posts is in our archive yet.
+**Advt 04/2023** had **2 Proof Reader posts** (General 1, SC Mazhbi & Balmiki 1) and **1 Copy Holder post** (SC Mazhbi & Balmiki). The same advertisement also had Laboratory Attendant (27), Laboratory Assistant (9), Deputy Ranger (5), Motor Vehicle Inspector (23), Fisheries Officer (25) and library posts. No newer advertisement for these posts is in our archive yet.
+
+## Eligibility (Advt 04/2023)
+
+- **Proof Reader:** **graduate** plus **1 year of proof-reading experience in Punjabi or Hindi** in a government department, PSU, autonomous body, leading newspaper or publishing house.
+- **Copy Holder:** **graduate** plus **1 year of proof-reading experience in Punjabi or Hindi**.
+- Both: **matric with Punjabi.**
+
+## Age and fee (Advt 04/2023)
+
+- **Age (as on 1 January 2023):** 18 to 37 for General; up to 42 for SC and BC of Punjab; up to 45 for government employees (NOC at counselling); up to 47 for persons with disabilities of Punjab; up to 40 for widows and divorcees. Ex-servicemen deduct their service as per the 1982 rules.
+- **Fee:** General, freedom fighters and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. Not refundable.
+
+## Salary and pay
+
+Both posts: **Rs 19,900** basic pay (7th CPC) as per Advt 04/2023.
 
 ## Exam pattern (Advt 04/2023 final plan)
 

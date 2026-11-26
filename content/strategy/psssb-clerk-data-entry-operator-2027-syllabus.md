@@ -41,7 +41,7 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Clerk 
 
 Since 2023, PSSSB has put most office vacancies into **general Clerk advertisements** (Advt 05/2024 with 259 posts, Advt 11/2025 and Advt 02/2026). A separate Clerk cum DEO round in 2027 is **uncertain**. That is not bad news: the DEO syllabus is almost the same as the clerk syllabus, so the same preparation works for whichever advertisement comes first.
 
-## Exam pattern (Advt 03/2022 official plan)
+## Syllabus and section weightage (Advt 03/2022 official plan)
 
 | Section | Questions (approx.) |
 | --- | --- |
@@ -74,7 +74,7 @@ Advt 03/2022 was a big round: **917 Clerk cum Data Entry Operator posts** (Group
 - **Salary:** **Rs 19,900** (7th CPC). DEO is a non-common-cadre post, so the final scale and allowances are fixed by the department that hires you.
 - **Reservation** is only for residents of Punjab, and the domicile certificate must not be more than 5 years old.
 
-## Final paper plan (official, Advt 03/2022)
+## Exam pattern (final official plan, Advt 03/2022)
 
 The board's final plan for the June 2023 exam was:
 

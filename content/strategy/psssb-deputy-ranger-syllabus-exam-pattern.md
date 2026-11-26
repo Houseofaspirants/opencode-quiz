@@ -38,11 +38,11 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Deputy Ranger is the senior field post in the Forest Department, and its paper is a science-graduate's exam. Choose your two subjects well and the rest follows.
 
-> PSSSB advertised Deputy Ranger in **Advt 07/2022** (with Forester and Forest Guard, applications 11 May to 1 July 2022) and again in **Advt 04/2023** (with Laboratory Assistant), for which the board issued a **revised exam plan**.
+> PSSSB advertised Deputy Ranger in **Advt 07/2022** (with Forester and Forest Guard, applications 11 May to 1 July 2022) and again in **Advt 04/2023** (5 posts, with Laboratory Assistant), for which the board issued a **revised exam plan**.
 
 ## Latest notification
 
-- **Advt 04/2023:** Deputy Ranger and Laboratory Assistant share one paper under the board's revised plan. Our archive has the plan but not the advertisement, so its post count is not given here.
+- **Advt 04/2023:** **5 Deputy Ranger posts** (General 3, SC Ramdasia & others 1, BC 1; 1 of them reserved for women) in the **Office of the Principal Chief Conservator of Forests**, sharing one paper with Laboratory Assistant under the board's revised plan. Applications ran from 28 August to 22 September 2023; age as on 1 January 2023.
 - **Advt 07/2022:** Deputy Ranger, Forester and Forest Guard - 204 posts in all, almost all Forest Guards. See the [Forester guide](exams/psssb-forester.html) for that round.
 
 ## Eligibility (Advt 07/2022)
@@ -50,6 +50,13 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Deputy
 - A **B.Sc. or B.E. degree** from a recognised university.
 - **Matric with Punjabi.**
 - **Age:** 18 to 37 years as on 1 January 2022; SC and BC of Punjab up to 42, government employees up to 45, persons with disabilities up to 47, widows and divorcees up to 40.
+
+## Physical standards (Advt 04/2023)
+
+| | Men | Women |
+| --- | --- | --- |
+| Height | 167 cm | 150 cm |
+| Chest | 79 cm, expanding to 84 cm | 74 cm, expanding to 79 cm |
 
 ## Walk test (physical standards)
 

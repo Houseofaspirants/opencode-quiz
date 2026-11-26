@@ -24,7 +24,7 @@ faq:
   - q: Is there a stenography test?
     a: Personal Assistant is a stenography-line post, so a skill test is usual, but the written-exam plan does not describe it. Check the advertisement for the skill test and its speed.
   - q: When was it last advertised?
-    a: In PSSSB Advertisement No. 05 of 2023. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 05 of 2023. Its eligibility, pay and post numbers are on this page.
 references:
   - title: PSSSB - Plan of written examination and syllabus, Personal Assistant, Advt No. 05 of 2023
     url: https://sssb.punjab.gov.in/
@@ -32,11 +32,27 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. The Personal Assistant written test is a pure general-studies paper, so it rewards the same preparation as the Senior Assistant exam.
 
-> This page is based on the board's **official plan of written examination for Personal Assistant, Advt No. 05 of 2023**. Our archive does not have the advertisement itself, so eligibility, pay, posts and the skill test are not given here.
+> **PSSSB Advertisement No. 05 of 2023** (Group-B, 157 posts in 11 post types) was published on **23 August 2023**; applications ran from **30 August to 27 September 2023**, fee by 29 September 2023. This page uses that advertisement and the board's official plan of written examination for Personal Assistant.
 
 ## Latest notification
 
-Personal Assistant was advertised in **PSSSB Advt 05/2023**, with Senior Assistant, Senior Assistant (IT), Senior Assistant (Accounts) and Junior Auditor. No newer Personal Assistant advertisement is in our archive yet. Stenographers who want a post now should also see the [Steno-Typist guide](exams/psssb-steno-typist.html).
+**Advt 05/2023** had **1 Personal Assistant post** in the **Directorate of Cultural Affairs**. The same advertisement also had Senior Assistant, Senior Assistant (IT), Senior Assistant (Accounts) and Junior Auditor. No newer Personal Assistant advertisement is in our archive yet. Stenographers who want a post now should also see the [Steno-Typist guide](exams/psssb-steno-typist.html).
+
+## Eligibility (Advt 05/2023)
+
+- **Graduate** from a recognised university.
+- **Punjabi shorthand:** dictation at **100 words per minute**, transcribed at 20 wpm.
+- **English shorthand:** dictation at **60 words per minute**, transcribed at 12 wpm.
+- A 120-hour computer course (or DOEACC O-level) and **matric with Punjabi.**
+
+## Age and fee (Advt 05/2023)
+
+- **Age (as on 1 January 2023):** 18 to 37 for General; up to 42 for SC and BC of Punjab; up to 45 for government employees (NOC at counselling); up to 47 for persons with disabilities of Punjab; up to 40 for widows and divorcees. Ex-servicemen deduct their service as per the 1982 rules.
+- **Fee:** General, freedom fighters and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. Not refundable.
+
+## Salary and pay
+
+**Rs 35,400** basic pay (7th CPC Level 6) as per Advt 05/2023.
 
 ## Exam pattern (Advt 05/2023 official plan)
 

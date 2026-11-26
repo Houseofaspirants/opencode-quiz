@@ -88,7 +88,7 @@ The degree you need depends on the department you apply to:
 - **Fee:** General and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. The fee is not refunded.
 - **Salary:** **Rs 19,900** at entry (7th CPC, Level-5 in Excise and Taxation), plus allowances as per Punjab rules.
 
-## Exam pattern and syllabus 2026 (official, Excise and Taxation)
+## Exam pattern 2026 (official, Excise and Taxation)
 
 The board has published the plan for the **Excise and Taxation Clerk (Accounts)** paper of Advt 12/2026. It replaces the old 90 + 30 pattern.
 
@@ -101,6 +101,8 @@ The board has published the plan for the **Excise and Taxation Clerk (Accounts)*
 - **Time:** 2 hours 30 minutes, MCQ on OMR sheet.
 - **Negative marking in Part B:** 0.25 mark for every wrong answer; no penalty for a question left blank.
 - **Merit:** only candidates who clear Part A are ranked, on their **Part B score (out of 100)**.
+
+## Syllabus 2026 (official, Excise and Taxation)
 
 **Part B(ii) - the subject syllabus (60 marks)**
 

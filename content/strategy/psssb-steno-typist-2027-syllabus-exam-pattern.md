@@ -68,6 +68,14 @@ PSSSB advertised Steno-Typists in **2023 (Advt 07/2023)** and again in **2025 (A
 - **Steno test:** two passages of **200 words each**, dictated at 80 words per minute. You transcribe them at 15 words per minute, and up to **8% mistakes** in total are allowed.
 - The board said the Part B syllabus would be uploaded on its website, so check the latest notice before the exam.
 
+## Syllabus (what each test covers)
+
+The board has not published a topic list for the Steno-Typist written test; it said any further syllabus would be put on its website. From the official notices:
+
+- **Punjabi written test (qualifying):** matriculation-standard Punjabi, objective MCQ - grammar, usage, vocabulary and comprehension at class 10 level. You need 50%.
+- **Part B written paper (Advt 14/2025, qualifying):** an objective general paper; 50% needed. Prepare the usual PSSSB general syllabus - GK, Punjab history and culture, reasoning, Punjabi, English and computers - as in the [Clerk syllabus](exams/psssb-clerk/syllabus.html).
+- **Steno skill test (decides merit):** Punjabi shorthand - two passages of 200 words dictated at **80 wpm**, transcribed at **15 wpm**, up to **8% mistakes**. Accuracy in Punjabi spelling and punctuation is the real syllabus here.
+
 <!-- hoa-official -->
 
 ## Latest round: Advt 05/2026 (official notice)

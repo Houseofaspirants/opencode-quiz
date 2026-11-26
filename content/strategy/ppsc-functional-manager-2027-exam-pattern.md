@@ -54,7 +54,9 @@ These posts sit in district industries centres and the stores wing. Rounds are *
 
 With no penalty, **attempt every question**. Leave nothing blank.
 
-## What the paper asked
+## Syllabus - topics in the 2022 paper
+
+Our archive does not have an official syllabus for this post. The paper of 19 June 2022 covered:
 
 - **Physics and chemistry** at graduation entry level - mechanics, Lewis acids, periodic trends.
 - **Maths** - calculus basics and data interpretation from tables.

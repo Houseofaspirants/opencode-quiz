@@ -24,7 +24,7 @@ faq:
   - q: How is it different from Senior Assistant?
     a: The general Senior Assistant paper is 120 general questions. Senior Assistant (IT) keeps only 40 general questions and gives 80 to computer science.
   - q: When was it last advertised?
-    a: In PSSSB Advertisement No. 05 of 2023. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 05 of 2023. Its eligibility, pay and post numbers are on this page.
 references:
   - title: PSSSB - Plan of written examination and syllabus, Senior Assistant (IT), Advt No. 05 of 2023
     url: https://sssb.punjab.gov.in/
@@ -32,11 +32,25 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. Senior Assistant (IT) looks like an office post, but two-thirds of its paper is a computer science exam. A BCA or B.Tech CS candidate starts well ahead here.
 
-> This page is based on the board's **official plan of written examination for Senior Assistant (IT), Advt No. 05 of 2023**. Our notifications archive does not have that advertisement itself, so eligibility, pay and post numbers are not given here - read them in the next advertisement.
+> **PSSSB Advertisement No. 05 of 2023** (Group-B, 157 posts in 11 post types) was published on **23 August 2023**; applications ran from **30 August to 27 September 2023**, fee by 29 September 2023. This page uses that advertisement and the board's official plan of written examination for Senior Assistant (IT).
 
 ## Latest notification
 
-Senior Assistant (IT) was advertised in **PSSSB Advt 05/2023**, alongside Senior Assistant, Senior Assistant (Accounts), Junior Auditor and Personal Assistant. No newer Senior Assistant (IT) advertisement is in our archive yet.
+**Advt 05/2023** had **2 Senior Assistant (IT) posts** in the **Directorate of Tourism** (General 1, SC Mazhbi & Balmiki 1). The same advertisement also had Senior Assistant (12), Senior Assistant (Accounts) (2), Junior Auditor (60) and Personal Assistant (1). No newer Senior Assistant (IT) advertisement is in our archive yet.
+
+## Eligibility (Advt 05/2023)
+
+- **B.E. or B.Tech in IT, Electronics & Communication or Computer Science with at least 50% marks**, or **MCA with at least 50% marks plus 2 years of ICT experience**.
+- **Matric with Punjabi.**
+
+## Age and fee (Advt 05/2023)
+
+- **Age (as on 1 January 2023):** 18 to 37 for General; up to 42 for SC and BC of Punjab; up to 45 for government employees (NOC at counselling); up to 47 for persons with disabilities of Punjab; up to 40 for widows and divorcees. Ex-servicemen deduct their service as per the 1982 rules.
+- **Fee:** General, freedom fighters and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. Not refundable.
+
+## Salary and pay
+
+**Rs 35,400** basic pay (7th CPC Level 6) as per Advt 05/2023.
 
 ## Exam pattern (Advt 05/2023 official plan)
 

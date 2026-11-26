@@ -40,7 +40,9 @@ I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. This i
 
 Senior Technical Assistant posts are **few and irregular**. A 2027 round is **possible but not confirmed**. If you are already preparing for lecturer or Master Cadre exams in your subject, you're covering most of this paper anyway.
 
-## What the 2022 papers show
+## Syllabus - topics in the 2022 papers
+
+Our archive does not have an official syllabus for this post; the 2022 papers are the best guide.
 
 - **Separate subject papers** - Chemistry and Mathematics in our archive.
 - **Chemistry:** Part A and Part B; inorganic and coordination chemistry at postgraduate level.

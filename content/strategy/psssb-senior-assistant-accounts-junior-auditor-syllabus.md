@@ -24,7 +24,7 @@ faq:
   - q: Is this the same as PPSC Junior Auditor?
     a: No. PPSC recruits its own Junior Auditor (Group-B) through a separate exam. This page is for the PSSSB posts in Advt 05/2023.
   - q: When were these posts last advertised?
-    a: In PSSSB Advertisement No. 05 of 2023. Read the next advertisement for eligibility, pay and posts.
+    a: In PSSSB Advertisement No. 05 of 2023. Its eligibility, pay and post numbers are on this page.
 references:
   - title: PSSSB - Plan of written examination and syllabus, Senior Assistant (Accounts) and Junior Auditor, Advt No. 05 of 2023
     url: https://sssb.punjab.gov.in/
@@ -32,11 +32,31 @@ references:
 
 I cleared the Punjab Police Sub Inspector exam with **Rank 2 (713/800)**. These two posts share one paper, and two-thirds of it is a B.Com accounting exam. If you are a commerce graduate, this is where your degree counts most.
 
-> This page is based on the board's **official plan of written examination for Senior Assistant (Accounts) and Junior Auditor, Advt No. 05 of 2023**. Our archive does not have the advertisement itself, so eligibility, pay and posts are not given here.
+> **PSSSB Advertisement No. 05 of 2023** (Group-B, 157 posts in 11 post types) was published on **23 August 2023**; applications ran from **30 August to 27 September 2023**, fee by 29 September 2023. This page uses that advertisement and the board's official plan of written examination for Senior Assistant (Accounts) and Junior Auditor.
 
 ## Latest notification
 
-Both posts were advertised in **PSSSB Advt 05/2023**, together with Senior Assistant, Senior Assistant (IT) and Personal Assistant. No newer advertisement for them is in our archive yet. PPSC's Junior Auditor is a different recruitment - see our [PPSC Junior Auditor guide](exams/ppsc-junior-auditor.html).
+**Advt 05/2023** had:
+
+- **Senior Assistant (Accounts): 2 posts** in **Punjab State Lotteries** (General 1, SC Mazhbi & Balmiki 1).
+- **Junior Auditor: 60 posts** in the **Finance Department (Local Fund Accounts)** - General 25, SC Mazhbi & Balmiki 7, SC Ramdasia & others 5, BC 5, ex-servicemen 8 (General 4, SC M&B 2, SC R&O 1, BC 1), sportspersons 2, hearing-impaired 2, EWS 6.
+
+No newer advertisement for these posts is in our archive yet. PPSC's Junior Auditor is a different recruitment - see our [PPSC Junior Auditor guide](exams/ppsc-junior-auditor.html).
+
+## Eligibility (Advt 05/2023)
+
+- **Senior Assistant (Accounts):** B.Com in second division, **3 years of accounts experience** in a commercial organisation, a 120-hour computer course (or DOEACC O-level) and **English typing at 30 wpm**.
+- **Junior Auditor:** **B.Com in first division** or **M.Com in second division**.
+- Both: **matric with Punjabi.**
+
+## Age and fee (Advt 05/2023)
+
+- **Age (as on 1 January 2023):** 18 to 37 for General; up to 42 for SC and BC of Punjab; up to 45 for government employees (NOC at counselling); up to 47 for persons with disabilities of Punjab; up to 40 for widows and divorcees. Ex-servicemen deduct their service as per the 1982 rules.
+- **Fee:** General, freedom fighters and sportspersons Rs 1,000; SC, BC and EWS Rs 250; ex-servicemen and dependants Rs 200; persons with disabilities Rs 500. Not refundable.
+
+## Salary and pay
+
+Both posts: **Rs 35,400** basic pay (7th CPC Level 6) as per Advt 05/2023.
 
 ## Exam pattern (Advt 05/2023 official plan)
 
