@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Blood Relations"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-126",
+      "number": 126,
+      "question": "Seven people A–G have exactly two married couples. A, a man, is B’s father; B is C’s brother. C is married to D and is mother of son E. F is A’s wife and mother of B and C. G is B’s daughter. Which named person is E’s mother’s brother’s daughter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C"
+        },
+        {
+          "label": "B",
+          "text": "G"
+        },
+        {
+          "label": "C",
+          "text": "B"
+        },
+        {
+          "label": "D",
+          "text": "F"
+        }
+      ],
+      "answer": "B",
+      "explanation": "E’s mother is C, her brother is B, and B’s daughter is G."
+    },
+    {
+      "id": "06-127",
+      "number": 127,
+      "question": "X @ Y denotes X is Y’s father; X # Y denotes X is Y’s mother; X $ Y denotes X is Y’s sister. In M @ N # P $ Q, which person’s gender is NOT fixed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M"
+        },
+        {
+          "label": "B",
+          "text": "N"
+        },
+        {
+          "label": "C",
+          "text": "P"
+        },
+        {
+          "label": "D",
+          "text": "Q"
+        }
+      ],
+      "answer": "D",
+      "explanation": "M is male, N female and P female; Q is only described as P’s sibling."
+    },
+    {
+      "id": "06-128",
+      "number": 128,
+      "question": "At a Jalandhar reunion, a man, Tarun, introduces a boy: “His father’s mother is my mother’s sister.” Which woman connects the boy’s father to Tarun as cousins?",
+      "options": [
+        {
+          "label": "A",
+          "text": "The boy’s sister and Tarun’s mother"
+        },
+        {
+          "label": "B",
+          "text": "The boy’s maternal grandmother and Tarun’s mother"
+        },
+        {
+          "label": "C",
+          "text": "The boy’s paternal grandmother and Tarun’s mother"
+        },
+        {
+          "label": "D",
+          "text": "The boy’s mother and Tarun’s sister"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The boy’s father and Tarun have mothers who are sisters: the boy’s paternal grandmother and Tarun’s mother."
+    },
+    {
+      "id": "06-129",
+      "number": 129,
+      "question": "A is B’s brother. B is C’s daughter. C’s gender is unstated. Which conclusion cannot be fixed without C’s gender?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Whether B is female"
+        },
+        {
+          "label": "B",
+          "text": "Whether C is A’s father or mother"
+        },
+        {
+          "label": "C",
+          "text": "Whether A is male"
+        },
+        {
+          "label": "D",
+          "text": "Whether A and B are siblings"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A and B share parent C, but no word fixes C as male or female."
+    },
+    {
+      "id": "06-130",
+      "number": 130,
+      "question": "Code: X + Y means X is Y’s father; X - Y means X is Y’s sister; X * Y means X is Y’s son. In A - B + C * D, replace only the first symbol so that A becomes C’s paternal uncle. Which replacement works?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Replace - with +"
+        },
+        {
+          "label": "B",
+          "text": "Keep - unchanged"
+        },
+        {
+          "label": "C",
+          "text": "Replace - with *"
+        },
+        {
+          "label": "D",
+          "text": "No listed symbol can do this"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A must become B’s brother, but the code has father, sister and son only; none supplies brother."
+    },
+    {
+      "id": "06-131",
+      "number": 131,
+      "question": "A woman, Manpreet, is the sister of a man, Jaswant. Jaswant’s son Kuldeep is married to Reet. Reet’s mother is Savita. Which person is Reet’s husband’s paternal aunt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Savita"
+        },
+        {
+          "label": "B",
+          "text": "Jaswant"
+        },
+        {
+          "label": "C",
+          "text": "Reet"
+        },
+        {
+          "label": "D",
+          "text": "Manpreet"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Reet’s husband is Kuldeep; his father Jaswant’s sister is Manpreet."
+    },
+    {
+      "id": "06-132",
+      "number": 132,
+      "question": "A man, Harpal, has a sister Inderjit and a brother Jagdeep. Inderjit’s son Kamal is father of a daughter, Lavi. What is Jagdeep to Kamal?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maternal grandfather"
+        },
+        {
+          "label": "B",
+          "text": "Paternal uncle"
+        },
+        {
+          "label": "C",
+          "text": "Maternal uncle"
+        },
+        {
+          "label": "D",
+          "text": "Father"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Jagdeep and Inderjit are siblings; Inderjit is Kamal’s mother, so Jagdeep is his maternal uncle."
+    },
+    {
+      "id": "06-133",
+      "number": 133,
+      "question": "A verbal tree gives three generations: couple R (male)–S (female); their son T and daughter U; T’s son V; U’s daughter W. Who belongs to the youngest generation but is not R’s grandson?",
+      "options": [
+        {
+          "label": "A",
+          "text": "V"
+        },
+        {
+          "label": "B",
+          "text": "T"
+        },
+        {
+          "label": "C",
+          "text": "U"
+        },
+        {
+          "label": "D",
+          "text": "W"
+        }
+      ],
+      "answer": "D",
+      "explanation": "V and W are the youngest generation; W is a granddaughter, whereas V is a grandson."
+    },
+    {
+      "id": "06-134",
+      "number": 134,
+      "question": "Which statement alone answers “How is A related to B?” I. A is the only daughter of B’s mother. II. A and B are distinct people, and A is B’s sister. Treat I and II independently.",
+      "options": [
+        {
+          "label": "A",
+          "text": "I alone, since II gives no gender"
+        },
+        {
+          "label": "B",
+          "text": "Both are insufficient even together"
+        },
+        {
+          "label": "C",
+          "text": "II alone, since I does not exclude A being B"
+        },
+        {
+          "label": "D",
+          "text": "I alone proves A is B’s mother"
+        }
+      ],
+      "answer": "C",
+      "explanation": "I permits B to be that only daughter A; II explicitly distinguishes them and states sister."
+    },
+    {
+      "id": "06-135",
+      "number": 135,
+      "question": "In a code, X + Y is X is Y’s wife; X # Y is X is Y’s brother; X @ Y is X is Y’s father. Decode L + M # N @ O. Who is O’s father’s brother’s wife?",
+      "options": [
+        {
+          "label": "A",
+          "text": "L"
+        },
+        {
+          "label": "B",
+          "text": "O"
+        },
+        {
+          "label": "C",
+          "text": "N"
+        },
+        {
+          "label": "D",
+          "text": "M"
+        }
+      ],
+      "answer": "A",
+      "explanation": "O’s father is N, N’s brother is M, and M’s wife is L."
+    },
+    {
+      "id": "06-136",
+      "number": 136,
+      "question": "A woman, N, is mother of P. P is parent of Q; Q is father of R. Which description of N relative to R is certain even though P’s gender is unknown?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Paternal aunt"
+        },
+        {
+          "label": "B",
+          "text": "Great-grandmother"
+        },
+        {
+          "label": "C",
+          "text": "Mother-in-law"
+        },
+        {
+          "label": "D",
+          "text": "Maternal grandmother"
+        }
+      ],
+      "answer": "B",
+      "explanation": "R → father Q → parent P → mother N gives three upward links to a female ancestor."
+    },
+    {
+      "id": "06-137",
+      "number": 137,
+      "question": "A boy, Samar, points to a woman: “My father’s wife is her only daughter.” Samar’s mother and father are married to each other. The woman is Samar’s _____.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mother"
+        },
+        {
+          "label": "B",
+          "text": "Maternal grandmother"
+        },
+        {
+          "label": "C",
+          "text": "Paternal aunt"
+        },
+        {
+          "label": "D",
+          "text": "Paternal grandmother"
+        }
+      ],
+      "answer": "B",
+      "explanation": "His father’s wife is his mother; her mother is Samar’s maternal grandmother."
+    },
+    {
+      "id": "06-138",
+      "number": 138,
+      "question": "X / Y means X is Y’s father, X * Y means X is Y’s brother, X - Y means X is Y’s daughter. Which expression establishes both that A is D’s paternal uncle and D is female?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D - A * B / C"
+        },
+        {
+          "label": "B",
+          "text": "A * B / D * C"
+        },
+        {
+          "label": "C",
+          "text": "A * B / D - C"
+        },
+        {
+          "label": "D",
+          "text": "A / B * D - C"
+        }
+      ],
+      "answer": "C",
+      "explanation": "A is brother of D’s father B; D - C fixes D as female."
+    },
+    {
+      "id": "06-139",
+      "number": 139,
+      "question": "Six people A–F form three generations with two couples. A is B’s wife. C is their only daughter. E is C’s husband. D is C’s son and F is D’s sister. Every child has both parents in the family. Which pair consists of one male and one female grandchild of A?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D and F"
+        },
+        {
+          "label": "B",
+          "text": "D and E"
+        },
+        {
+          "label": "C",
+          "text": "B and C"
+        },
+        {
+          "label": "D",
+          "text": "C and E"
+        }
+      ],
+      "answer": "A",
+      "explanation": "D and F are C’s son and daughter; C is A’s daughter, so both are A’s grandchildren through her."
+    },
+    {
+      "id": "06-140",
+      "number": 140,
+      "question": "A woman, Bharti, has daughter Charanpreet. Charanpreet is married to Daler. Daler’s elder sister is Ekam. Which statement about Bharti is established?",
+      "options": [
+        {
+          "label": "A",
+          "text": "She is Ekam’s mother"
+        },
+        {
+          "label": "B",
+          "text": "She is Daler’s paternal aunt"
+        },
+        {
+          "label": "C",
+          "text": "She is Daler’s mother-in-law"
+        },
+        {
+          "label": "D",
+          "text": "She is Ekam’s sister"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Bharti is the mother of Daler’s wife Charanpreet, hence his mother-in-law."
+    },
+    {
+      "id": "06-141",
+      "number": 141,
+      "question": "A man, Ashwin, has a younger sister Bhavana. Bhavana’s daughter Chahat has a son Darsh. Identify Ashwin’s relationship to Chahat’s mother.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Grandfather"
+        },
+        {
+          "label": "B",
+          "text": "Maternal uncle"
+        },
+        {
+          "label": "C",
+          "text": "Father"
+        },
+        {
+          "label": "D",
+          "text": "Elder brother"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Chahat’s mother is Bhavana, who is Ashwin’s younger sister; therefore Ashwin is her elder brother."
+    },
+    {
+      "id": "06-142",
+      "number": 142,
+      "question": "In one family, each son has 2 brothers and each daughter has 3 sisters. All children share the same two parents. Including the parents, how many members are there?",
+      "options": [
+        {
+          "label": "A",
+          "text": "7"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "C",
+      "explanation": "There are 3 sons and 4 daughters; adding 2 parents gives 9 members."
+    },
+    {
+      "id": "06-143",
+      "number": 143,
+      "question": "In a verbal tree, A (male) and B (female) have son C and daughter D. C and wife E have daughter F. D and husband G have son H. Which person is both H’s maternal uncle and F’s father?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C"
+        },
+        {
+          "label": "B",
+          "text": "G"
+        },
+        {
+          "label": "C",
+          "text": "A"
+        },
+        {
+          "label": "D",
+          "text": "H"
+        }
+      ],
+      "answer": "A",
+      "explanation": "C is the brother of H’s mother D and is explicitly F’s father."
+    },
+    {
+      "id": "06-144",
+      "number": 144,
+      "question": "A is B’s sister, B is C’s brother, and C is D’s mother. The ages are not given. Which person is certainly female and in D’s mother’s generation, but is not D’s mother?",
+      "options": [
+        {
+          "label": "A",
+          "text": "B"
+        },
+        {
+          "label": "B",
+          "text": "A"
+        },
+        {
+          "label": "C",
+          "text": "C"
+        },
+        {
+          "label": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A, B and C are siblings; A is female and is the sister of D’s mother C."
+    },
+    {
+      "id": "06-145",
+      "number": 145,
+      "question": "X + Y means X is Y’s father; X @ Y means X is Y’s wife; X # Y means X is Y’s sister. All letters denote distinct people. Which expression can represent a valid family without conflicting genders? Assume husbands are male and wives female.",
+      "options": [
+        {
+          "label": "A",
+          "text": "A @ B + C # D"
+        },
+        {
+          "label": "B",
+          "text": "A @ B # C + D"
+        },
+        {
+          "label": "C",
+          "text": "A # B @ C # D"
+        },
+        {
+          "label": "D",
+          "text": "A + B @ C # D"
+        }
+      ],
+      "answer": "A",
+      "explanation": "In the valid expression A is female, B male and C female. The alternatives force C or B to be both male and female."
+    },
+    {
+      "id": "06-146",
+      "number": 146,
+      "question": "A woman, Garima, introduces a man: “My daughter is his son’s wife.” Garima’s daughter is Hina and the man’s son is Irfan. Which pair is necessarily married?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Hina and Irfan"
+        },
+        {
+          "label": "B",
+          "text": "Garima and Irfan"
+        },
+        {
+          "label": "C",
+          "text": "Hina and the introduced man"
+        },
+        {
+          "label": "D",
+          "text": "Garima and the introduced man"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The stated daughter Hina is the stated son Irfan’s wife."
+    },
+    {
+      "id": "06-147",
+      "number": 147,
+      "question": "Code: X % Y means X is Y’s daughter; X + Y means X is Y’s father; X @ Y means X is Y’s husband. In P % Q @ R, which additional coded fact proves that R is P’s mother without relying on a spouse-parent convention?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Q + P"
+        },
+        {
+          "label": "B",
+          "text": "P % R"
+        },
+        {
+          "label": "C",
+          "text": "R % S"
+        },
+        {
+          "label": "D",
+          "text": "S + Q"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Q @ R fixes R as female; P % R then explicitly makes P R’s daughter, proving maternity."
+    },
+    {
+      "id": "06-148",
+      "number": 148,
+      "question": "To decide whether P is Q’s maternal grandfather: I. P is father of R and R is Q’s parent. II. R is female. Which sufficiency decision is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both are required and together sufficient"
+        },
+        {
+          "label": "B",
+          "text": "I alone is sufficient"
+        },
+        {
+          "label": "C",
+          "text": "II alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Even together insufficient"
+        }
+      ],
+      "answer": "A",
+      "explanation": "I gives a grandfather but leaves the side unknown; II makes parent R the mother, establishing the maternal side."
+    },
+    {
+      "id": "06-149",
+      "number": 149,
+      "question": "A woman, Kiran, is wife of Lalit. Lalit’s mother Mansi has a brother, Naresh. Naresh’s daughter is Oorja. What is Mansi to Kiran’s husband?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mother-in-law"
+        },
+        {
+          "label": "B",
+          "text": "Mother"
+        },
+        {
+          "label": "C",
+          "text": "Maternal aunt"
+        },
+        {
+          "label": "D",
+          "text": "Sister"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Kiran’s husband is Lalit, whose mother is explicitly Mansi; the Naresh–Oorja branch is irrelevant."
+    },
+    {
+      "id": "06-150",
+      "number": 150,
+      "question": "R is father of S. S is sister of T, and T is father of U. V is U’s mother’s sister. What relationship between R and V is established by these facts?",
+      "options": [
+        {
+          "label": "A",
+          "text": "V is R’s daughter"
+        },
+        {
+          "label": "B",
+          "text": "R is V’s father"
+        },
+        {
+          "label": "C",
+          "text": "R is V’s maternal uncle"
+        },
+        {
+          "label": "D",
+          "text": "R’s son is the father of V’s sister’s child"
+        }
+      ],
+      "answer": "D",
+      "explanation": "R’s son T is U’s father; U’s mother is V’s sister, so the first description preserves every stated link."
+    }
+  ]
+}

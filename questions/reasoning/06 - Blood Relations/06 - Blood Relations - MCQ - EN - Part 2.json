@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Blood Relations"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-026",
+      "number": 26,
+      "question": "Saira’s mother has an elder sister, Nasreen. Nasreen’s son is Faiz. Complete the chain: Faiz is Saira’s _____.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maternal-aunt’s son"
+        },
+        {
+          "label": "B",
+          "text": "Paternal-aunt’s son"
+        },
+        {
+          "label": "C",
+          "text": "Maternal-uncle’s son"
+        },
+        {
+          "label": "D",
+          "text": "Sister’s son"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Faiz is the son of Saira’s mother’s sister, so the link is through her maternal aunt."
+    },
+    {
+      "id": "06-027",
+      "number": 27,
+      "question": "For this code, X @ Y means X is Y’s father, X # Y means X is Y’s daughter, and X % Y means X is Y’s wife. In K @ L # M % K, which person is the daughter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M"
+        },
+        {
+          "label": "B",
+          "text": "K"
+        },
+        {
+          "label": "C",
+          "text": "L"
+        },
+        {
+          "label": "D",
+          "text": "K and M"
+        }
+      ],
+      "answer": "C",
+      "explanation": "L is K’s child and M’s daughter; M and K are the married parents."
+    },
+    {
+      "id": "06-028",
+      "number": 28,
+      "question": "A girl, Ishita, labels a photograph: “The woman holding me is the wife of my mother’s elder brother.” Which label is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Paternal aunt by marriage"
+        },
+        {
+          "label": "B",
+          "text": "Maternal aunt by marriage"
+        },
+        {
+          "label": "C",
+          "text": "Mother’s sister"
+        },
+        {
+          "label": "D",
+          "text": "Father’s sister"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The mother’s brother is the maternal uncle; his wife is the maternal aunt by marriage."
+    },
+    {
+      "id": "06-029",
+      "number": 29,
+      "question": "Six people R–W form two couples and three generations. R is S’s husband. U is their daughter; W is U’s son. T is W’s maternal uncle. V is R’s daughter-in-law. T has no brother and all spouses are among these six. Who is V’s husband?",
+      "options": [
+        {
+          "label": "A",
+          "text": "U"
+        },
+        {
+          "label": "B",
+          "text": "R"
+        },
+        {
+          "label": "C",
+          "text": "W"
+        },
+        {
+          "label": "D",
+          "text": "T"
+        }
+      ],
+      "answer": "D",
+      "explanation": "T is U’s brother and thus R’s son; with no other son, daughter-in-law V must be T’s wife."
+    },
+    {
+      "id": "06-030",
+      "number": 30,
+      "question": "Rajiv’s wife has a sister, Bina, whose husband is Suresh. Which exact marriage link joins Suresh to Rajiv?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sister’s husband"
+        },
+        {
+          "label": "B",
+          "text": "Wife’s sister’s husband"
+        },
+        {
+          "label": "C",
+          "text": "Husband of his daughter"
+        },
+        {
+          "label": "D",
+          "text": "Wife’s brother"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Suresh married Rajiv’s wife’s sister; the two men are co-brothers-in-law."
+    },
+    {
+      "id": "06-031",
+      "number": 31,
+      "question": "Can P’s gender be determined? I. P is Q’s parent. II. P is R’s sister. Select the correct sufficiency result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Even both are insufficient"
+        },
+        {
+          "label": "B",
+          "text": "II alone is sufficient, I alone is not"
+        },
+        {
+          "label": "C",
+          "text": "I alone is sufficient, II alone is not"
+        },
+        {
+          "label": "D",
+          "text": "Both are required"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Parent does not specify gender; sister establishes that P is female without using I."
+    },
+    {
+      "id": "06-032",
+      "number": 32,
+      "question": "X & Y means X is Y’s mother; X + Y means X is Y’s brother; X / Y means X is Y’s father. Fill BOTH blanks in A + B __ C __ D so A becomes D’s maternal grandfather’s brother.",
+      "options": [
+        {
+          "label": "A",
+          "text": "+ followed by &"
+        },
+        {
+          "label": "B",
+          "text": "/ followed by /"
+        },
+        {
+          "label": "C",
+          "text": "/ followed by &"
+        },
+        {
+          "label": "D",
+          "text": "& followed by /"
+        }
+      ],
+      "answer": "C",
+      "explanation": "B must be father of C, who must be mother of D; A is B’s brother."
+    },
+    {
+      "id": "06-033",
+      "number": 33,
+      "question": "A boy has 3 brothers and 2 sisters. His sister Ginni is asked how many brothers she has. What should she answer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The boy and his 3 brothers make 4 boys; each sister has all 4 as brothers."
+    },
+    {
+      "id": "06-034",
+      "number": 34,
+      "question": "J is K’s younger brother but is older than L. K is L’s father. Which statement is correct despite the age information?",
+      "options": [
+        {
+          "label": "A",
+          "text": "J is two generations above L"
+        },
+        {
+          "label": "B",
+          "text": "J is one generation above L"
+        },
+        {
+          "label": "C",
+          "text": "J and L are siblings"
+        },
+        {
+          "label": "D",
+          "text": "J is L’s maternal uncle"
+        }
+      ],
+      "answer": "B",
+      "explanation": "J is the brother of L’s father, so he occupies the parental generation."
+    },
+    {
+      "id": "06-035",
+      "number": 35,
+      "question": "A man, Naveen, has exactly one sibling, a sister Shobha. Shobha’s mother-in-law Uma has only one son, Vikas. Vikas and Shobha have a daughter Rupal. Select the chain from Rupal to Naveen.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Father → brother"
+        },
+        {
+          "label": "B",
+          "text": "Mother → father"
+        },
+        {
+          "label": "C",
+          "text": "Mother → brother"
+        },
+        {
+          "label": "D",
+          "text": "Father → father"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Rupal’s mother is Shobha and Shobha’s brother is Naveen; the in-law branch is extra."
+    },
+    {
+      "id": "06-036",
+      "number": 36,
+      "question": "A tree has parents P (male) and Q (female); children R (female) and S (male); R’s husband T; and R and T’s daughter U. Which path traces U to her maternal uncle?",
+      "options": [
+        {
+          "label": "A",
+          "text": "U to T to R"
+        },
+        {
+          "label": "B",
+          "text": "U to T to P"
+        },
+        {
+          "label": "C",
+          "text": "U to R to Q"
+        },
+        {
+          "label": "D",
+          "text": "U to R to S"
+        }
+      ],
+      "answer": "D",
+      "explanation": "U’s mother is R and R’s brother is S: U → R → S."
+    },
+    {
+      "id": "06-037",
+      "number": 37,
+      "question": "Introducing two girls, a man, Deepak, says: “The elder is my sister’s daughter. The younger is the elder girl’s only sister.” What is the younger girl to Deepak?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Sister’s daughter"
+        },
+        {
+          "label": "B",
+          "text": "Brother’s daughter"
+        },
+        {
+          "label": "C",
+          "text": "Sister"
+        },
+        {
+          "label": "D",
+          "text": "Daughter"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two girls share Deepak’s sister as their mother, so both are his nieces through his sister."
+    },
+    {
+      "id": "06-038",
+      "number": 38,
+      "question": "X - Y denotes X is Y’s sister; X + Y denotes X is Y’s son; X * Y denotes X is Y’s father. In A - B + C * D, which claim is NOT guaranteed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C is D’s father"
+        },
+        {
+          "label": "B",
+          "text": "D is male"
+        },
+        {
+          "label": "C",
+          "text": "A is female"
+        },
+        {
+          "label": "D",
+          "text": "B is male"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Father fixes C’s gender, not D’s; the other three claims are directly established."
+    },
+    {
+      "id": "06-039",
+      "number": 39,
+      "question": "A woman, Kusum, has a son Aditya. Aditya’s wife Malti has a father, Dinesh. Which statement correctly connects Dinesh and Kusum?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Dinesh is Kusum’s husband"
+        },
+        {
+          "label": "B",
+          "text": "Dinesh is Kusum’s son"
+        },
+        {
+          "label": "C",
+          "text": "Kusum is Dinesh’s daughter"
+        },
+        {
+          "label": "D",
+          "text": "Their children are married to each other"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Kusum’s son Aditya is married to Dinesh’s daughter Malti."
+    },
+    {
+      "id": "06-040",
+      "number": 40,
+      "question": "Eight relatives: Harish is Bela’s husband. Mini is their daughter; Yash is Neil’s maternal uncle. Mini’s husband is Om. Esha is Bela’s daughter-in-law and Ira’s mother. Neil and Ira are cousins, and every child’s parents are married and included. Which statement correctly identifies Ira’s father and the available information about Neil’s paternal aunt?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ira’s father is Om; Mini is Neil’s paternal aunt"
+        },
+        {
+          "label": "B",
+          "text": "Ira’s father is Harish; Esha is Neil’s paternal aunt"
+        },
+        {
+          "label": "C",
+          "text": "Ira’s father is Yash; Bela is Neil’s paternal aunt"
+        },
+        {
+          "label": "D",
+          "text": "Ira’s father is Yash; Neil’s paternal aunt is not identified"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Yash is Mini’s brother and Esha’s husband, hence Ira’s father. Neil’s father Om has no named sister."
+    },
+    {
+      "id": "06-041",
+      "number": 41,
+      "question": "A woman, Aditi, is the mother of Bharat. Bharat is the father of Chitra, a girl. Identify Chitra’s relationship to Aditi without reversing the direction.",
+      "options": [
+        {
+          "label": "A",
+          "text": "Brother’s daughter"
+        },
+        {
+          "label": "B",
+          "text": "Daughter"
+        },
+        {
+          "label": "C",
+          "text": "Son’s daughter"
+        },
+        {
+          "label": "D",
+          "text": "Daughter’s daughter"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Aditi → son Bharat → daughter Chitra gives a granddaughter through the son."
+    },
+    {
+      "id": "06-042",
+      "number": 42,
+      "question": "Code: X @ Y means X is Y’s husband; X # Y means X is Y’s daughter; X $ Y means X is Y’s brother. Which expression proves that P is the husband of Q’s brother’s daughter?",
+      "options": [
+        {
+          "label": "A",
+          "text": "P @ R # S $ Q"
+        },
+        {
+          "label": "B",
+          "text": "Q $ R @ S # P"
+        },
+        {
+          "label": "C",
+          "text": "P $ R @ S # Q"
+        },
+        {
+          "label": "D",
+          "text": "P @ R # Q $ S"
+        }
+      ],
+      "answer": "A",
+      "explanation": "S is Q’s brother, R is S’s daughter, and P is R’s husband."
+    },
+    {
+      "id": "06-043",
+      "number": 43,
+      "question": "A grandfather attends with his two sons. One son brings his two sons; the other brings his one son. Only these six men are counted. How many are fathers of at least one other attendee?",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The grandfather and each of his two sons have children present; the three grandsons have no children stated."
+    },
+    {
+      "id": "06-044",
+      "number": 44,
+      "question": "R’s parent S has a sister T. T’s son U is male. Is R certainly U’s male cousin?",
+      "options": [
+        {
+          "label": "A",
+          "text": "R is a cousin, but R’s gender is unknown"
+        },
+        {
+          "label": "B",
+          "text": "R is U’s parent"
+        },
+        {
+          "label": "C",
+          "text": "No, R must be U’s sister"
+        },
+        {
+          "label": "D",
+          "text": "Yes, because U is male"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The sibling parents establish cousinhood; U’s gender cannot establish R’s gender."
+    },
+    {
+      "id": "06-045",
+      "number": 45,
+      "question": "In a tree described in words, Gagan (male) and Hema (female) have daughters Isha and Jaya. Isha and husband Kunal have son Lalit. Jaya and husband Manav have daughter Naina. Which two named people are spouses but not blood relatives in this tree?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Isha and Jaya"
+        },
+        {
+          "label": "B",
+          "text": "Lalit and Naina"
+        },
+        {
+          "label": "C",
+          "text": "Hema and Isha"
+        },
+        {
+          "label": "D",
+          "text": "Jaya and Manav"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Jaya and Manav are explicitly a married couple; the other pairs are linked by descent."
+    },
+    {
+      "id": "06-046",
+      "number": 46,
+      "question": "A is the father of B; B is C’s sister; C is D’s mother. Which conclusion necessarily follows?",
+      "options": [
+        {
+          "label": "A",
+          "text": "A is D’s maternal grandfather"
+        },
+        {
+          "label": "B",
+          "text": "C is male"
+        },
+        {
+          "label": "C",
+          "text": "D is A’s grandson"
+        },
+        {
+          "label": "D",
+          "text": "B is D’s mother"
+        }
+      ],
+      "answer": "A",
+      "explanation": "B and C share father A; since C is D’s mother, A is D’s maternal grandfather."
+    },
+    {
+      "id": "06-047",
+      "number": 47,
+      "question": "A woman, Leela, introduces a girl: “Her father has the same biological father as me, but her father is not my brother.” Assume siblings sharing a father count as siblings. Assess the description.",
+      "options": [
+        {
+          "label": "A",
+          "text": "The girl is Leela’s daughter"
+        },
+        {
+          "label": "B",
+          "text": "The girl is Leela’s sister"
+        },
+        {
+          "label": "C",
+          "text": "The description is inconsistent"
+        },
+        {
+          "label": "D",
+          "text": "The girl is Leela’s mother"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If both men have the same biological father, the girl’s father must be Leela’s brother; the denial conflicts with that."
+    },
+    {
+      "id": "06-048",
+      "number": 48,
+      "question": "Suman is a woman married to Mohit. Mohit’s father has a younger son, Varun, married to Alka. Which person is Suman’s husband’s younger brother?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Mohit"
+        },
+        {
+          "label": "B",
+          "text": "Varun"
+        },
+        {
+          "label": "C",
+          "text": "Alka"
+        },
+        {
+          "label": "D",
+          "text": "Mohit’s father"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Varun is Mohit’s younger brother, making him Suman’s younger brother-in-law."
+    },
+    {
+      "id": "06-049",
+      "number": 49,
+      "question": "X / Y means X is Y’s father; X + Y means X is Y’s wife; X * Y means X is Y’s sister. Decode R + S / T * U / V. What is R to V if R and S are parents of T and U?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Maternal grandmother"
+        },
+        {
+          "label": "B",
+          "text": "Father’s sister"
+        },
+        {
+          "label": "C",
+          "text": "Paternal grandmother"
+        },
+        {
+          "label": "D",
+          "text": "Mother"
+        }
+      ],
+      "answer": "C",
+      "explanation": "U is V’s father; U shares parents R and S with T, and R is female as S’s wife."
+    },
+    {
+      "id": "06-050",
+      "number": 50,
+      "question": "Daman’s paternal grandfather has two sons: Daman’s father and his elder brother, Satpal. Satpal’s daughter is Noor. Which precise label fits Satpal’s relationship to Daman?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Father’s younger brother"
+        },
+        {
+          "label": "B",
+          "text": "Father’s elder brother"
+        },
+        {
+          "label": "C",
+          "text": "Mother’s brother"
+        },
+        {
+          "label": "D",
+          "text": "Father’s sister’s husband"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Satpal is explicitly older than Daman’s father; he is the elder paternal uncle."
+    }
+  ]
+}

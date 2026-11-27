@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-26T15:43:11.221Z",
+  "generatedAt": "2026-11-27T10:58:35.102Z",
   "stats": {
     "subjects": 7,
-    "categories": 55,
-    "topics": 158,
-    "quizzes": 158,
-    "questions": 3728,
+    "categories": 56,
+    "topics": 164,
+    "quizzes": 164,
+    "questions": 3878,
     "studentsPracticed": 12500
   },
   "site": {
@@ -5647,6 +5647,180 @@
           "landing": "/quiz-reasoning-02-analogy-part-4"
         },
         {
+          "id": "06 - Blood Relations - MCQ - EN - Part 1",
+          "name": "Blood Relations MCQ – Part 1",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 1.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 1",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "06 - Blood Relations - MCQ - EN - Part 2",
+          "name": "Blood Relations MCQ – Part 2",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 2.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 2",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "06 - Blood Relations - MCQ - EN - Part 3",
+          "name": "Blood Relations MCQ – Part 3",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 3.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 3",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "06 - Blood Relations - MCQ - EN - Part 4",
+          "name": "Blood Relations MCQ – Part 4",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 4.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 4",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "06 - Blood Relations - MCQ - EN - Part 5",
+          "name": "Blood Relations MCQ – Part 5",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 5.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 5",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
+          "id": "06 - Blood Relations - MCQ - EN - Part 6",
+          "name": "Blood Relations MCQ – Part 6",
+          "description": "",
+          "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795777113691,
+          "category": "06-blood-relations",
+          "language": "en",
+          "variants": {
+            "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 6.json",
+            "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Blood Relations MCQ – Part 6",
+            "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          }
+        },
+        {
           "id": "04 - Coding and Decoding - MCQ - EN - Part 1",
           "name": "Coding and Decoding MCQ – Part 1",
           "description": "",
@@ -7012,6 +7186,188 @@
             }
           ],
           "landing": "/category-reasoning-05-ranking-and-time-sequence-test"
+        },
+        {
+          "id": "06-blood-relations",
+          "name": "06   Blood Relations",
+          "folder": "06 - Blood Relations",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 1",
+              "name": "Blood Relations MCQ – Part 1",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 1.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 1",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 2",
+              "name": "Blood Relations MCQ – Part 2",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 2.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 2",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 3",
+              "name": "Blood Relations MCQ – Part 3",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 3.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 3",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 4",
+              "name": "Blood Relations MCQ – Part 4",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 4.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 4",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 5",
+              "name": "Blood Relations MCQ – Part 5",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 5.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 5",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            },
+            {
+              "id": "06 - Blood Relations - MCQ - EN - Part 6",
+              "name": "Blood Relations MCQ – Part 6",
+              "description": "",
+              "file": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795777113691,
+              "category": "06-blood-relations",
+              "language": "en",
+              "variants": {
+                "en": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 6.json",
+                "pa": "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Blood Relations MCQ – Part 6",
+                "pa": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              }
+            }
+          ]
         }
       ],
       "landing": "/subject-reasoning"
@@ -10321,6 +10677,30 @@
     "questions/reasoning/05 - Ranking and Time Sequence Test/05 - Ranking and Time Sequence Test - MCQ - EN - Part 6.json": [
       "7d3464908f8918ac",
       1795071860339
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 1.json": [
+      "7a625464d202ca11",
+      1795777113691
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 2.json": [
+      "7ce2967eac51ad89",
+      1795777113691
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 3.json": [
+      "231979af09fb4f6e",
+      1795777113691
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 4.json": [
+      "13d5e93470284a95",
+      1795777113691
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 5.json": [
+      "7a118d742699cdb0",
+      1795777113691
+    ],
+    "questions/reasoning/06 - Blood Relations/06 - Blood Relations - MCQ - EN - Part 6.json": [
+      "deac917e96c8d910",
+      1795777113691
     ]
   }
 }

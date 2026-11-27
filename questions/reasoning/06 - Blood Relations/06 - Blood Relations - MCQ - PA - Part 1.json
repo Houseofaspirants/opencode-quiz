@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "pa",
+  "chapter": {
+    "number": 6,
+    "title": "ਖੂਨ ਦੇ ਰਿਸ਼ਤੇ"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-001",
+      "number": 1,
+      "question": "Ravinder ਇੱਕ ਕੁੜੀ Mahi ਦਾ ਪਿਤਾ ਹੈ। Mahi ਦਾ ਛੋਟਾ ਭਰਾ Tej ਹੈ। Ravinder, Tej ਦਾ ਕੀ ਲੱਗਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਮਾਮਾ"
+        },
+        {
+          "label": "B",
+          "text": "ਪਿਤਾ"
+        },
+        {
+          "label": "C",
+          "text": "ਭਰਾ"
+        },
+        {
+          "label": "D",
+          "text": "ਦਾਦਾ ਜਾਂ ਨਾਨਾ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Mahi ਅਤੇ Tej ਭੈਣ-ਭਰਾ ਹਨ, ਇਸ ਲਈ Tej ਦਾ ਪਿਤਾ ਵੀ Ravinder ਹੈ।"
+    },
+    {
+      "id": "06-002",
+      "number": 2,
+      "question": "Ludhiana ਦੀ ਪ੍ਰਦਰਸ਼ਨੀ ਵਿੱਚ ਔਰਤ Harleen ਇੱਕ ਲੜਕੇ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰਦੀ ਹੈ: “ਇਸ ਦੀ ਮਾਂ ਮੇਰੇ ਪਿਤਾ ਦੀ ਛੋਟੀ ਭੈਣ ਹੈ।” ਲੜਕਾ Harleen ਦਾ ਕੀ ਲੱਗਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਉਸ ਦੀ ਭੂਆ ਦਾ ਪੁੱਤਰ"
+        },
+        {
+          "label": "B",
+          "text": "ਉਸ ਦੇ ਭਰਾ ਦਾ ਪੁੱਤਰ"
+        },
+        {
+          "label": "C",
+          "text": "ਉਸ ਦਾ ਆਪਣਾ ਪੁੱਤਰ"
+        },
+        {
+          "label": "D",
+          "text": "ਉਸ ਦੇ ਮਾਮੇ ਦਾ ਪੁੱਤਰ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਲੜਕੇ ਦੀ ਮਾਂ Harleen ਦੀ ਭੂਆ ਹੈ; ਇਸ ਲਈ ਉਹ ਉਸ ਦੀ ਭੂਆ ਦਾ ਪੁੱਤਰ ਹੈ।"
+    },
+    {
+      "id": "06-003",
+      "number": 3,
+      "question": "ਇੱਕ code ਵਿੱਚ X @ Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਮਾਂ ਹੈ ਅਤੇ X # Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਭਰਾ ਹੈ। L @ M # N ਵਿੱਚ L, N ਦਾ ਕੀ ਲੱਗਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਧੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਮਾਂ"
+        },
+        {
+          "label": "C",
+          "text": "ਭੈਣ"
+        },
+        {
+          "label": "D",
+          "text": "ਮਾਸੀ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "L, M ਦੀ ਮਾਂ ਹੈ ਅਤੇ M ਤੇ N ਭੈਣ-ਭਰਾ ਹਨ; ਇਸ ਲਈ L, N ਦੀ ਵੀ ਮਾਂ ਹੈ।"
+    },
+    {
+      "id": "06-004",
+      "number": 4,
+      "question": "Gurpreet ਇੱਕ ਮਰਦ ਹੈ ਅਤੇ Jasleen ਉਸ ਦੀ ਪਤਨੀ ਹੈ। Arjun, Jasleen ਦਾ ਛੋਟਾ ਭਰਾ ਹੈ। Arjun ਦਾ Gurpreet ਨਾਲ ਕਿਹੜਾ ਰਿਸ਼ਤਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਜਵਾਈ"
+        },
+        {
+          "label": "B",
+          "text": "ਛੋਟਾ ਭਰਾ"
+        },
+        {
+          "label": "C",
+          "text": "ਸਾਲਾ"
+        },
+        {
+          "label": "D",
+          "text": "ਜੀਜਾ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Arjun, Gurpreet ਦੀ ਪਤਨੀ ਦਾ ਭਰਾ ਹੈ, ਇਸ ਲਈ ਉਹ ਉਸ ਦਾ ਸਾਲਾ ਹੈ।"
+    },
+    {
+      "id": "06-005",
+      "number": 5,
+      "question": "ਸੱਤ ਰਿਸ਼ਤੇਦਾਰ Baldev, Rani, Karan, Neha, Pooja, Aman ਅਤੇ Tara ਹਨ। Baldev, Rani ਦਾ ਪਤੀ ਹੈ। Neha ਉਨ੍ਹਾਂ ਦੀ ਧੀ ਅਤੇ Aman ਦੀ ਭੂਆ ਹੈ। Pooja, Baldev ਦੀ ਨੂੰਹ ਅਤੇ Tara, Neha ਦੀ ਧੀ ਹੈ। Karan, Aman ਦਾ ਪਿਤਾ ਹੈ। ਠੀਕ ਦੋ ਵਿਆਹੇ ਜੋੜੇ ਹਨ ਅਤੇ ਹਰ ਬੱਚੇ ਦੇ ਦਿੱਤੇ ਮਾਪੇ ਵਿਆਹੇ ਹਨ। ਭੈਣ-ਭਰਾ ਦੇ ਬੱਚਿਆਂ ਦੀ ਜੋੜੀ ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "Pooja ਅਤੇ Neha"
+        },
+        {
+          "label": "B",
+          "text": "Baldev ਅਤੇ Aman"
+        },
+        {
+          "label": "C",
+          "text": "Karan ਅਤੇ Neha"
+        },
+        {
+          "label": "D",
+          "text": "Aman ਅਤੇ Tara"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Neha, Aman ਦੇ ਪਿਤਾ Karan ਦੀ ਭੈਣ ਹੈ; ਉਸ ਦੀ ਧੀ Tara ਅਤੇ Aman cousins ਹਨ।"
+    },
+    {
+      "id": "06-006",
+      "number": 6,
+      "question": "P, Q ਦੇ ਮਾਪਿਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ। Q ਇੱਕ ਕੁੜੀ R ਦੀ ਮਾਂ ਹੈ। P ਬਾਰੇ ਕਿਹੜੀ ਗੱਲ ਪੱਕੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "P, R ਦੀ ਮਾਂ ਹੈ"
+        },
+        {
+          "label": "B",
+          "text": "P, R ਦੀ ਦਾਦੀ ਹੈ"
+        },
+        {
+          "label": "C",
+          "text": "P, R ਦਾ ਨਾਨਾ ਹੈ"
+        },
+        {
+          "label": "D",
+          "text": "P, R ਦਾ ਨਾਨਾ ਜਾਂ ਨਾਨੀ ਹੈ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "R ਦੀ ਮਾਂ Q ਹੈ ਅਤੇ P, Q ਦੇ ਮਾਪਿਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ; ਇਸ ਲਈ P ਨਾਨਾ ਜਾਂ ਨਾਨੀ ਹੈ, ਪਰ ਲਿੰਗ ਨਹੀਂ ਦਿੱਤਾ।"
+    },
+    {
+      "id": "06-007",
+      "number": 7,
+      "question": "Code: X + Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਪਿਤਾ ਹੈ; X - Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਭੈਣ ਹੈ; X / Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਮਾਂ ਹੈ। ਕਿਹੜਾ expression A ਨੂੰ D ਦੇ ਪਿਤਾ ਦੀ ਮਾਸੀ ਬਣਾਉਂਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "D + C / B - A"
+        },
+        {
+          "label": "B",
+          "text": "A - B / C + D"
+        },
+        {
+          "label": "C",
+          "text": "A / B - C + D"
+        },
+        {
+          "label": "D",
+          "text": "A - B + C + D"
+        }
+      ],
+      "answer": "B",
+      "explanation": "D ਦਾ ਪਿਤਾ C, C ਦੀ ਮਾਂ B ਅਤੇ B ਦੀ ਭੈਣ A ਹੈ; A ਪਿਤਾ ਦੀ ਮਾਸੀ ਹੈ।"
+    },
+    {
+      "id": "06-008",
+      "number": 8,
+      "question": "ਕੁੜੀ Diya, ਔਰਤ Sonal ਦੇ ਭਰਾ ਦੀ ਧੀ ਹੈ। Diya ਦਾ Sonal ਨਾਲ ਸਹੀ ਰਿਸ਼ਤਾ ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਭਾਣਜੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਧੀ"
+        },
+        {
+          "label": "C",
+          "text": "ਛੋਟੀ ਭੈਣ"
+        },
+        {
+          "label": "D",
+          "text": "ਭਤੀਜੀ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਵਿਚਕਾਰਲੀ ਕੜੀ Sonal ਦਾ ਭਰਾ ਹੈ; ਉਸ ਦੀ ਧੀ Sonal ਦੀ ਭਤੀਜੀ ਹੈ।"
+    },
+    {
+      "id": "06-009",
+      "number": 9,
+      "question": "ਪਰਿਵਾਰਕ ਦਰੱਖਤ ਸ਼ਬਦਾਂ ਵਿੱਚ ਦਿੱਤਾ ਹੈ: Mohan ਮਰਦ ਅਤੇ Usha ਔਰਤ ਪਤੀ-ਪਤਨੀ ਹਨ। Dev ਉਨ੍ਹਾਂ ਦਾ ਪੁੱਤਰ ਅਤੇ Leena ਧੀ ਹੈ। Dev ਅਤੇ ਔਰਤ Asha ਦੀ ਧੀ Pari ਹੈ। Pari ਦੀ ਦਾਦੀ ਕੌਣ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Leena"
+        },
+        {
+          "label": "B",
+          "text": "Usha"
+        },
+        {
+          "label": "C",
+          "text": "Pari"
+        },
+        {
+          "label": "D",
+          "text": "Asha"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Pari ਦਾ ਪਿਤਾ Dev ਹੈ ਅਤੇ Dev ਦੀ ਮਾਂ Usha ਹੈ; ਇਸ ਲਈ Usha ਦਾਦੀ ਹੈ।"
+    },
+    {
+      "id": "06-010",
+      "number": 10,
+      "question": "ਮਰਦ Nitin ਇੱਕ ਬਜ਼ੁਰਗ ਔਰਤ ਦੀ ਜਾਣ-ਪਛਾਣ ਕਰਵਾਉਂਦਾ ਹੈ: “ਇਹ ਮੇਰੀ ਮਾਂ ਦੀ ਇਕਲੌਤੀ ਧੀ ਦੀ ਮਾਂ ਹੈ।” Nitin ਉਸ ਨੂੰ ਕੀ ਕਹੇਗਾ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਨਾਨੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਭੈਣ"
+        },
+        {
+          "label": "C",
+          "text": "ਸੱਸ"
+        },
+        {
+          "label": "D",
+          "text": "ਮਾਂ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Nitin ਦੀ ਮਾਂ ਦੀ ਇਕਲੌਤੀ ਧੀ ਉਸ ਦੀ ਭੈਣ ਹੈ; ਉਸ ਭੈਣ ਦੀ ਮਾਂ Nitin ਦੀ ਆਪਣੀ ਮਾਂ ਹੈ।"
+    },
+    {
+      "id": "06-011",
+      "number": 11,
+      "question": "ਸਵਾਲ: ਕੀ A ਲੜਕੇ D ਦੀ ਮਾਸੀ ਹੈ? I. A, B ਦੀ ਭੈਣ ਹੈ; B, C ਦੇ ਮਾਪਿਆਂ ਵਿੱਚੋਂ ਇੱਕ ਹੈ; C, D ਦਾ ਪਿਤਾ ਹੈ। II. B ਔਰਤ ਹੈ। ਕੀ ਇਹ ਕਥਨ ਸਵਾਲ ਦਾ ਹਾਂ ਜਾਂ ਨਾ ਵਿੱਚ ਪੱਕਾ ਫ਼ੈਸਲਾ ਕਰਦੇ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਕੇਵਲ I ਫ਼ੈਸਲਾ ਕਰਦਾ ਹੈ"
+        },
+        {
+          "label": "B",
+          "text": "ਦੋਵੇਂ ਮਿਲ ਕੇ ਵੀ ਫ਼ੈਸਲਾ ਨਹੀਂ ਕਰਦੇ"
+        },
+        {
+          "label": "C",
+          "text": "ਕੇਵਲ II ਫ਼ੈਸਲਾ ਕਰਦਾ ਹੈ"
+        },
+        {
+          "label": "D",
+          "text": "ਕੇਵਲ ਦੋਵੇਂ ਮਿਲ ਕੇ ਫ਼ੈਸਲਾ ਕਰਦੇ ਹਨ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "I ਅਨੁਸਾਰ A, D ਦੇ ਪਿਤਾ ਵਾਲੇ ਪਾਸੇ ਦੋ ਪੀੜ੍ਹੀਆਂ ਉੱਪਰ ਹੈ, ਇਸ ਲਈ D ਦੀ ਮਾਸੀ ਨਹੀਂ; B ਦਾ ਲਿੰਗ ਲੋੜੀਂਦਾ ਨਹੀਂ।"
+    },
+    {
+      "id": "06-012",
+      "number": 12,
+      "question": "Meera ਦਾ ਪਤੀ ਔਰਤ Kamla ਦਾ ਇਕਲੌਤਾ ਪੁੱਤਰ ਹੈ। Kamla ਦੀ ਧੀ Kavita ਦਾ ਪੁੱਤਰ Rohit ਹੈ। Rohit ਦਾ Meera ਦੇ ਪਤੀ ਨਾਲ ਰਿਸ਼ਤਾ ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਸਾਲਾ"
+        },
+        {
+          "label": "B",
+          "text": "ਭਤੀਜਾ"
+        },
+        {
+          "label": "C",
+          "text": "ਭਾਣਜਾ"
+        },
+        {
+          "label": "D",
+          "text": "ਪੁੱਤਰ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Kavita, Meera ਦੇ ਪਤੀ ਦੀ ਭੈਣ ਹੈ; ਇਸ ਲਈ Kavita ਦਾ ਪੁੱਤਰ ਉਸ ਦਾ ਭਾਣਜਾ ਹੈ।"
+    },
+    {
+      "id": "06-013",
+      "number": 13,
+      "question": "Code ਵਿੱਚ X * Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਪਤਨੀ ਹੈ; X % Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਪਿਤਾ ਹੈ; X & Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਧੀ ਹੈ। P * Q % R & P ਵਿੱਚ R ਦੀ ਮਾਂ ਨਿਸ਼ਚਿਤ ਤੌਰ ਉੱਤੇ ਕੌਣ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "R"
+        },
+        {
+          "label": "B",
+          "text": "ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
+        },
+        {
+          "label": "C",
+          "text": "P"
+        },
+        {
+          "label": "D",
+          "text": "Q"
+        }
+      ],
+      "answer": "C",
+      "explanation": "R, P ਦੀ ਧੀ ਹੈ ਅਤੇ P ਪਤਨੀ ਹੋਣ ਕਰਕੇ ਔਰਤ ਹੈ; ਇਸ ਲਈ P, R ਦੀ ਮਾਂ ਹੈ।"
+    },
+    {
+      "id": "06-014",
+      "number": 14,
+      "question": "ਇੱਕ ਪਰਿਵਾਰਕ ਭੋਜਨ ਵਿੱਚ ਇੱਕ ਔਰਤ, ਉਸ ਦੀ ਧੀ ਅਤੇ ਉਸ ਧੀ ਦੀ ਧੀ ਆਉਂਦੀਆਂ ਹਨ। ਸਿਰਫ਼ ਇਨ੍ਹਾਂ ਤਿੰਨਾਂ ਵਿੱਚੋਂ ਕਿੰਨੀਆਂ ਉੱਥੇ ਮੌਜੂਦ ਕਿਸੇ ਹੋਰ ਦੀਆਂ ਧੀਆਂ ਹਨ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "0"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ਵਿਚਕਾਰਲੀ ਔਰਤ ਸਭ ਤੋਂ ਵੱਡੀ ਦੀ ਧੀ ਹੈ ਅਤੇ ਸਭ ਤੋਂ ਛੋਟੀ ਵਿਚਕਾਰਲੀ ਦੀ ਧੀ ਹੈ; ਕੁੱਲ 2 ਹਨ।"
+    },
+    {
+      "id": "06-015",
+      "number": 15,
+      "question": "Aman ਦੇ ਪਿਤਾ ਦਾ ਛੋਟਾ ਭਰਾ Hardeep ਹੈ। Rupinder, Hardeep ਦੀ ਪਤਨੀ ਹੈ। Rupinder ਦਾ Aman ਨਾਲ ਕਿਹੜਾ ਰਿਸ਼ਤਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਮਾਸੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਭੂਆ"
+        },
+        {
+          "label": "C",
+          "text": "ਚਾਚੀ"
+        },
+        {
+          "label": "D",
+          "text": "ਮਾਮੀ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Hardeep, Aman ਦੇ ਪਿਤਾ ਦਾ ਛੋਟਾ ਭਰਾ ਹੈ, ਅਰਥਾਤ ਚਾਚਾ; ਉਸ ਦੀ ਪਤਨੀ Rupinder ਚਾਚੀ ਹੈ।"
+    },
+    {
+      "id": "06-016",
+      "number": 16,
+      "question": "ਮਰਦ Vikram ਇੱਕ ਔਰਤ ਦੀ ਫ਼ੋਟੋ ਵੱਲ ਇਸ਼ਾਰਾ ਕਰਦਾ ਹੈ: “ਇਸ ਦੀ ਇਕਲੌਤੀ ਧੀ ਦਾ ਪਤੀ ਮੇਰੀ ਪਤਨੀ ਦੇ ਇਕਲੌਤੇ ਭਰਾ ਦਾ ਪਿਤਾ ਹੈ।” Vikram ਦੀ ਪਤਨੀ ਅਤੇ ਉਸ ਦੇ ਭਰਾ ਦੇ ਮਾਪੇ ਇੱਕੋ ਅਤੇ ਆਪਸ ਵਿੱਚ ਵਿਆਹੇ ਹਨ। ਫ਼ੋਟੋ ਵਾਲੀ ਔਰਤ Vikram ਦੀ ਪਤਨੀ ਦੀ _____ ਹੈ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਦਾਦੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਮਾਂ"
+        },
+        {
+          "label": "C",
+          "text": "ਭੂਆ"
+        },
+        {
+          "label": "D",
+          "text": "ਨਾਨੀ"
+        }
+      ],
+      "answer": "D",
+      "explanation": "ਧੀ ਦਾ ਪਤੀ ਪਤਨੀ ਦਾ ਪਿਤਾ ਹੈ, ਇਸ ਲਈ ਉਹ ਧੀ ਪਤਨੀ ਦੀ ਮਾਂ ਹੈ; ਫ਼ੋਟੋ ਵਾਲੀ ਔਰਤ ਪਤਨੀ ਦੀ ਨਾਨੀ ਹੈ।"
+    },
+    {
+      "id": "06-017",
+      "number": 17,
+      "question": "X > Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਪੁੱਤਰ ਹੈ; X = Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਪਤਨੀ ਹੈ; X < Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਭਰਾ ਹੈ। ਕਿਹੜਾ expression M ਨੂੰ N ਦੇ ਪਿਤਾ ਦੀ ਮਾਂ ਸਾਬਤ ਕਰਦਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "M = N > P > Q"
+        },
+        {
+          "label": "B",
+          "text": "N > P = M < Q"
+        },
+        {
+          "label": "C",
+          "text": "N > P < M = Q"
+        },
+        {
+          "label": "D",
+          "text": "N > P > M = Q"
+        }
+      ],
+      "answer": "D",
+      "explanation": "P, M ਦਾ ਪੁੱਤਰ ਹੋਣ ਕਰਕੇ N ਦਾ ਮਰਦ ਮਾਪਾ ਹੈ; M, Q ਦੀ ਪਤਨੀ ਹੋਣ ਕਰਕੇ P ਦੀ ਮਾਂ ਹੈ।"
+    },
+    {
+      "id": "06-018",
+      "number": 18,
+      "question": "ਅੱਠ ਰਿਸ਼ਤੇਦਾਰ Iqbal, Farida, Salim, Imran, Nisha, Reena, Zoya ਅਤੇ Kabir ਹਨ। Iqbal ਅਤੇ Farida ਭਰਾਵਾਂ Salim ਤੇ Imran ਦੇ ਵਿਆਹੇ ਮਾਪੇ ਹਨ। Nisha ਅਤੇ Reena ਉਨ੍ਹਾਂ ਦੀਆਂ ਨੂੰਹਾਂ ਹਨ। Zoya ਦਾ ਪਿਤਾ Imran ਅਤੇ Kabir ਦੀ ਮਾਂ Nisha ਹੈ। Zoya ਅਤੇ Kabir cousins ਹਨ। ਹਰ ਬੱਚੇ ਦੇ ਮਾਪੇ ਨਾਮ ਵਾਲੇ ਅਤੇ ਵਿਆਹੇ ਹਨ। Zoya ਦੀ ਮਾਂ ਕੌਣ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Reena"
+        },
+        {
+          "label": "B",
+          "text": "ਨਿਰਧਾਰਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ"
+        },
+        {
+          "label": "C",
+          "text": "Nisha"
+        },
+        {
+          "label": "D",
+          "text": "Farida"
+        }
+      ],
+      "answer": "A",
+      "explanation": "ਇੱਥੇ cousins ਦੇ ਪਿਤਾ ਵੱਖਰੇ ਹਨ; Kabir ਦਾ ਪਿਤਾ Salim ਅਤੇ ਮਾਂ Nisha ਹੈ। Imran ਦੀ ਪਤਨੀ ਅਤੇ Zoya ਦੀ ਮਾਂ Reena ਹੈ।"
+    },
+    {
+      "id": "06-019",
+      "number": 19,
+      "question": "A, B ਦੀ ਮਾਂ ਹੈ; B, C ਦਾ ਪਿਤਾ ਹੈ ਅਤੇ C, D ਦੀ ਮਾਂ ਹੈ। D ਦੇ ਮੁਕਾਬਲੇ A ਕਿਹੜੀ ਪੀੜ੍ਹੀ ਵਿੱਚ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਇੱਕ ਪੀੜ੍ਹੀ ਉੱਪਰ"
+        },
+        {
+          "label": "B",
+          "text": "ਉਸੇ ਪੀੜ੍ਹੀ ਵਿੱਚ"
+        },
+        {
+          "label": "C",
+          "text": "ਤਿੰਨ ਪੀੜ੍ਹੀਆਂ ਉੱਪਰ"
+        },
+        {
+          "label": "D",
+          "text": "ਦੋ ਪੀੜ੍ਹੀਆਂ ਉੱਪਰ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "D ਤੋਂ C, ਫਿਰ B ਅਤੇ ਫਿਰ A ਵੱਲ ਜਾਓ; ਮਾਪਿਆਂ ਵੱਲ ਤਿੰਨ ਕਦਮ ਹਨ।"
+    },
+    {
+      "id": "06-020",
+      "number": 20,
+      "question": "ਸ਼ਬਦਾਂ ਵਾਲੇ ਦਰੱਖਤ ਵਿੱਚ Ajay ਮਰਦ ਅਤੇ Seema ਔਰਤ ਮਾਪੇ ਹਨ; Raghav ਪੁੱਤਰ ਅਤੇ Anu ਧੀ ਹੈ। Vikas, Anu ਦਾ ਪਤੀ ਅਤੇ Yuvraj ਉਨ੍ਹਾਂ ਦਾ ਪੁੱਤਰ ਹੈ। ਵਿਦਿਆਰਥੀ ਦੇ ਕਿਹੜੇ ਲੇਬਲ ਵਿੱਚ ਰਿਸ਼ਤੇ ਦੀ ਦਿਸ਼ਾ ਗਲਤ ਉਲਟੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Yuvraj, Raghav ਦਾ ਮਾਮਾ ਹੈ"
+        },
+        {
+          "label": "B",
+          "text": "Anu, Yuvraj ਦੀ ਮਾਂ ਹੈ"
+        },
+        {
+          "label": "C",
+          "text": "Ajay, Anu ਦਾ ਪਿਤਾ ਹੈ"
+        },
+        {
+          "label": "D",
+          "text": "Seema, Yuvraj ਦੀ ਨਾਨੀ ਹੈ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Raghav, Yuvraj ਦੀ ਮਾਂ ਦਾ ਭਰਾ ਹੈ; Yuvraj ਉਸ ਦਾ ਭਾਣਜਾ ਹੈ, ਮਾਮਾ ਨਹੀਂ।"
+    },
+    {
+      "id": "06-021",
+      "number": 21,
+      "question": "ਔਰਤ Pritam ਦਾ ਵੱਡਾ ਪੁੱਤਰ Jatin ਅਤੇ ਛੋਟਾ ਪੁੱਤਰ Naman ਹੈ। Jatin ਦੀ ਪਤਨੀ Ritu ਅਤੇ Naman ਦੀ ਪਤਨੀ Simmi ਹੈ। Ritu, Simmi ਦੀ ਕੀ ਲੱਗਦੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਜੇਠਾਣੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਭਰਜਾਈ"
+        },
+        {
+          "label": "C",
+          "text": "ਨਣਦ"
+        },
+        {
+          "label": "D",
+          "text": "ਦਰਾਣੀ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Simmi ਦਾ ਪਤੀ Naman ਹੈ; ਉਸ ਦੇ ਵੱਡੇ ਭਰਾ Jatin ਦੀ ਪਤਨੀ Ritu, Simmi ਦੀ ਜੇਠਾਣੀ ਹੈ।"
+    },
+    {
+      "id": "06-022",
+      "number": 22,
+      "question": "A, B ਦਾ ਭਰਾ ਹੈ; B, C ਦੀ ਮਾਂ ਹੈ ਅਤੇ C ਕੁੜੀ ਹੈ। ਨਤੀਜਾ I: A, C ਦਾ ਮਾਮਾ ਹੈ। ਨਤੀਜਾ II: C, A ਦੀ ਭੈਣ ਦੀ ਧੀ ਹੈ। ਸਹੀ ਮੁਲਾਂਕਣ ਚੁਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਕੇਵਲ I ਨਿਕਲਦਾ ਹੈ"
+        },
+        {
+          "label": "B",
+          "text": "I ਅਤੇ II ਦੋਵੇਂ ਨਿਕਲਦੇ ਹਨ"
+        },
+        {
+          "label": "C",
+          "text": "ਕੇਵਲ II ਨਿਕਲਦਾ ਹੈ"
+        },
+        {
+          "label": "D",
+          "text": "ਨਾ I ਅਤੇ ਨਾ II ਨਿਕਲਦਾ ਹੈ"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A, C ਦੀ ਮਾਂ B ਦਾ ਭਰਾ ਹੈ; ਉਲਟੇ ਰਾਹ C, A ਦੀ ਭੈਣ ਦੀ ਧੀ ਹੈ।"
+    },
+    {
+      "id": "06-023",
+      "number": 23,
+      "question": "X + Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਧੀ ਹੈ; X $ Y ਦਾ ਮਤਲਬ X, Y ਦਾ ਪਤੀ ਹੈ; X # Y ਦਾ ਮਤਲਬ X, Y ਦੀ ਭੈਣ ਹੈ। T + U $ V # W ਵਿੱਚ T ਦਾ ਪਿਤਾ ਪਛਾਣੋ।",
+      "options": [
+        {
+          "label": "A",
+          "text": "U"
+        },
+        {
+          "label": "B",
+          "text": "W"
+        },
+        {
+          "label": "C",
+          "text": "V"
+        },
+        {
+          "label": "D",
+          "text": "T"
+        }
+      ],
+      "answer": "A",
+      "explanation": "T, U ਦੀ ਧੀ ਹੈ ਅਤੇ U ਪਤੀ ਹੋਣ ਕਰਕੇ ਮਰਦ ਹੈ; ਇਸ ਲਈ U, T ਦਾ ਪਿਤਾ ਹੈ।"
+    },
+    {
+      "id": "06-024",
+      "number": 24,
+      "question": "ਲੜਕੇ Laksh ਦਾ ਪਿਤਾ, ਕੁੜੀ Rhea ਦੀ ਮਾਂ ਦਾ ਭਰਾ ਹੈ। Rhea ਦਾ Laksh ਨਾਲ ਰਿਸ਼ਤਾ ਕਿਹੜਾ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਭੂਆ ਦੀ ਧੀ"
+        },
+        {
+          "label": "B",
+          "text": "ਮਾਮੇ ਦੀ ਧੀ"
+        },
+        {
+          "label": "C",
+          "text": "ਭਾਣਜੀ"
+        },
+        {
+          "label": "D",
+          "text": "ਚਾਚੇ ਜਾਂ ਤਾਏ ਦੀ ਧੀ"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Rhea ਦੀ ਮਾਂ Laksh ਦੇ ਪਿਤਾ ਦੀ ਭੈਣ ਹੈ; ਇਸ ਲਈ Rhea, Laksh ਦੀ ਭੂਆ ਦੀ ਧੀ ਹੈ।"
+    },
+    {
+      "id": "06-025",
+      "number": 25,
+      "question": "Amritsar ਦੇ ਵਿਆਹ ਵਿੱਚ ਔਰਤ Navjot ਇੱਕ ਕੁੜੀ ਦੀ ਜਾਣ-ਪਛਾਣ ਕਰਵਾਉਂਦੀ ਹੈ: “ਇਸ ਦਾ ਪਿਤਾ ਮੇਰੀ ਮਾਂ ਦੀ ਇਕਲੌਤੀ ਧੀ ਦਾ ਪੁੱਤਰ ਹੈ। ਉਹ ਇਕਲੌਤੀ ਧੀ ਮੈਂ ਹਾਂ ਅਤੇ ਮੇਰਾ ਸਿਰਫ਼ ਇੱਕ ਪੁੱਤਰ ਹੈ।” Navjot ਦੇ ਪੁੱਤਰ ਦੀ ਪਤਨੀ ਕੁੜੀ ਦੀ ਮਾਂ ਹੈ। Navjot ਕੁੜੀ ਦੀ ਕੀ ਲੱਗਦੀ ਹੈ?",
+      "options": [
+        {
+          "label": "A",
+          "text": "ਸੱਸ"
+        },
+        {
+          "label": "B",
+          "text": "ਭੂਆ"
+        },
+        {
+          "label": "C",
+          "text": "ਦਾਦੀ"
+        },
+        {
+          "label": "D",
+          "text": "ਨਾਨੀ"
+        }
+      ],
+      "answer": "C",
+      "explanation": "ਇਕਲੌਤੀ ਧੀ Navjot ਆਪ ਹੈ; ਕੁੜੀ ਦਾ ਪਿਤਾ ਉਸ ਦਾ ਪੁੱਤਰ ਹੈ, ਇਸ ਲਈ Navjot ਦਾਦੀ ਹੈ।"
+    }
+  ]
+}
