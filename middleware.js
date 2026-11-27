@@ -194,6 +194,7 @@ const MAP = {
   "subject=reasoning&language=en&chapter=03 - Verbal Classifications": "/material-reasoning-verbal-classification-notes-punjabi-english",
   "subject=reasoning&language=en&chapter=04 - Coding and Decoding": "/material-reasoning-coding-and-decoding-notes-punjabi-english",
   "subject=reasoning&language=en&chapter=05 - Ranking and Time Sequence Test": "/material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english",
+  "subject=reasoning&language=en&chapter=06 - Blood Relations": "/material-reasoning-blood-relations-notes-punjabi-english",
   "subject=reasoning&language=pa": "/study-reasoning"
 };
 

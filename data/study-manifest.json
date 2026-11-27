@@ -606,9 +606,9 @@
       "color": "#f59e0b",
       "description": "Analogy, Coding, Blood Relations, Syllogism and Puzzles.",
       "order": 4,
-      "count": 5,
-      "newest": "2026-11-18",
-      "totalSize": 27601991,
+      "count": 6,
+      "newest": "2026-11-27",
+      "totalSize": 32622759,
       "languages": [
         {
           "id": "pa",
@@ -623,7 +623,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "01 - Number Series",
@@ -679,13 +679,24 @@
                 }
               ],
               "pages": 151
+            },
+            {
+              "id": "06 - Blood Relations",
+              "name": "Chapter 6: Blood Relations",
+              "parts": [
+                {
+                  "file": "material-reasoning-blood-relations-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 129
             }
           ]
         }
       ],
-      "chapters": 5,
+      "chapters": 6,
       "counts": {
-        "en": 5,
+        "en": 6,
         "pa": 0
       },
       "pages": {
@@ -3086,6 +3097,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 108,
+  "total": 109,
   "generatedBy": "scripts/study_material.py"
 }

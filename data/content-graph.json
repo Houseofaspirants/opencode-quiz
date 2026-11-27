@@ -20,10 +20,10 @@
   "collection": 1
  },
  "counts": {
-  "nodes": 1883,
-  "edges": 13585,
+  "nodes": 1886,
+  "edges": 13609,
   "silos": 35,
-  "clusters": 224,
+  "clusters": 231,
   "pillars": 34
  },
  "nodes": [
@@ -14447,6 +14447,30 @@
    "hub": "study-material.html"
   },
   {
+   "id": "material-reasoning-blood-relations-notes-punjabi-english",
+   "url": "/material-reasoning-blood-relations-notes-punjabi-english",
+   "type": "document",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "url": "/material-reasoning-blood-relations-notes-punjabi-english.html",
+   "type": "study-material",
+   "template": "",
+   "title": "Chapter 6: Blood Relations (English)",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": "study-material.html"
+  },
+  {
    "id": "material-reasoning-coding-and-decoding-notes-punjabi-english",
    "url": "/material-reasoning-coding-and-decoding-notes-punjabi-english",
    "type": "document",
@@ -24749,42 +24773,6 @@
    "hub": ""
   },
   {
-   "id": "quiz-reasoning-04-coding-and-decoding-part-2.html",
-   "url": "/quiz-reasoning-04-coding-and-decoding-part-2.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-04-coding-and-decoding-part-3.html",
-   "url": "/quiz-reasoning-04-coding-and-decoding-part-3.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
-   "id": "quiz-reasoning-04-coding-and-decoding-part-4.html",
-   "url": "/quiz-reasoning-04-coding-and-decoding-part-4.html",
-   "type": "quiz",
-   "template": "",
-   "title": "",
-   "lang": "en",
-   "subjects": [],
-   "exams": [],
-   "tags": [],
-   "hub": ""
-  },
-  {
    "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
    "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
    "type": "quiz",
@@ -24833,8 +24821,8 @@
    "hub": ""
   },
   {
-   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
-   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+   "id": "quiz-reasoning-06-blood-relations-part-1.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-1.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -24845,8 +24833,56 @@
    "hub": ""
   },
   {
-   "id": "quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
-   "url": "/quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
+   "id": "quiz-reasoning-06-blood-relations-part-2.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-2.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-06-blood-relations-part-3.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-3.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-06-blood-relations-part-4.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-4.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-06-blood-relations-part-5.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-5.html",
+   "type": "quiz",
+   "template": "",
+   "title": "",
+   "lang": "en",
+   "subjects": [],
+   "exams": [],
+   "tags": [],
+   "hub": ""
+  },
+  {
+   "id": "quiz-reasoning-06-blood-relations-part-6.html",
+   "url": "/quiz-reasoning-06-blood-relations-part-6.html",
    "type": "quiz",
    "template": "",
    "title": "",
@@ -27106,6 +27142,12 @@
   {
    "from": "archive-category-reasoning.html",
    "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archive-category-reasoning.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -41194,6 +41236,12 @@
   {
    "from": "archives.html",
    "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "archives.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -68187,30 +68235,6 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-04-coding-and-decoding-part-1.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-04-coding-and-decoding-part-2.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-04-coding-and-decoding-part-3.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-04-coding-and-decoding-part-4.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "expected-mcqs.html",
    "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-1.html",
    "rel": "contextual",
    "weight": 1
@@ -68235,13 +68259,37 @@
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-5.html",
+   "to": "quiz-reasoning-06-blood-relations-part-1.html",
    "rel": "contextual",
    "weight": 1
   },
   {
    "from": "expected-mcqs.html",
-   "to": "quiz-reasoning-05-ranking-and-time-sequence-test-part-6.html",
+   "to": "quiz-reasoning-06-blood-relations-part-2.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-06-blood-relations-part-3.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-06-blood-relations-part-4.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-06-blood-relations-part-5.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "expected-mcqs.html",
+   "to": "quiz-reasoning-06-blood-relations-part-6.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -75831,13 +75879,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-system-of-government-in-india-notes-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-english.html",
-   "to": "material-system-of-government-in-india-notes-punjabi.html",
+   "to": "material-system-of-government-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -75915,13 +75963,13 @@
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-system-of-government-in-india-notes-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
   {
    "from": "material-punjab-economy-agriculture-notes-punjabi.html",
-   "to": "material-system-of-government-in-india-notes-punjabi.html",
+   "to": "material-system-of-government-in-india-notes-english.html",
    "rel": "related-study-material",
    "weight": 1
   },
@@ -78153,6 +78201,108 @@
   },
   {
    "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-analogy-notes-punjabi-english.html",
+   "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "ca-house-of-aspirants-current-affairs-october-2026-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "exams/psssb-vdo.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "magazine.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "pyq-psssb-forest-guard-lab-attendant-combined-paper.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "quiz-reasoning-06-blood-relations-part-1.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "study-material.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "study-reasoning.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "index.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "mock.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "quiz.html",
+   "rel": "practice-quiz",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "material-reasoning-analogy-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "material-reasoning-number-series-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
@@ -78239,6 +78389,12 @@
    "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
    "to": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -78333,6 +78489,12 @@
   },
   {
    "from": "material-reasoning-number-series-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-number-series-notes-punjabi-english.html",
    "to": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
@@ -78423,6 +78585,12 @@
   },
   {
    "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "related-study-material",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-ranking-and-time-sequence-test-notes-punjabi-english.html",
    "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
    "rel": "related-study-material",
    "weight": 1
@@ -78509,6 +78677,12 @@
    "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
    "to": "material-reasoning-number-series-notes-punjabi-english.html",
    "rel": "related-pdf",
+   "weight": 1
+  },
+  {
+   "from": "material-reasoning-verbal-classification-notes-punjabi-english.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "related-study-material",
    "weight": 1
   },
   {
@@ -100611,12 +100785,6 @@
   },
   {
    "from": "pdfs.html",
-   "to": "material-national-income-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "pdfs.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -100624,6 +100792,12 @@
   {
    "from": "pdfs.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "pdfs.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -104673,6 +104847,12 @@
   },
   {
    "from": "study-material.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-material.html",
    "to": "material-reasoning-coding-and-decoding-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
@@ -104889,12 +105069,6 @@
   },
   {
    "from": "study-notes.html",
-   "to": "material-national-income-notes-english.html",
-   "rel": "contextual",
-   "weight": 1
-  },
-  {
-   "from": "study-notes.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-english.html",
    "rel": "contextual",
    "weight": 1
@@ -104902,6 +105076,12 @@
   {
    "from": "study-notes.html",
    "to": "material-physical-features-and-rivers-of-punjab-notes-punjabi.html",
+   "rel": "contextual",
+   "weight": 1
+  },
+  {
+   "from": "study-notes.html",
+   "to": "material-reasoning-blood-relations-notes-punjabi-english.html",
    "rel": "contextual",
    "weight": 1
   },
@@ -108033,6 +108213,7 @@
     "category-reasoning-03-verbal-classifications.html",
     "category-reasoning-04-coding-and-decoding.html",
     "category-reasoning-05-ranking-and-time-sequence-test.html",
+    "category-reasoning-06-blood-relations.html",
     "topic-reasoning-01-number-series-part-1.html",
     "topic-reasoning-01-number-series-part-2.html",
     "topic-reasoning-01-number-series-part-3.html",
@@ -108056,7 +108237,13 @@
     "topic-reasoning-05-ranking-and-time-sequence-test-part-3.html",
     "topic-reasoning-05-ranking-and-time-sequence-test-part-4.html",
     "topic-reasoning-05-ranking-and-time-sequence-test-part-5.html",
-    "topic-reasoning-05-ranking-and-time-sequence-test-part-6.html"
+    "topic-reasoning-05-ranking-and-time-sequence-test-part-6.html",
+    "topic-reasoning-06-blood-relations-part-1.html",
+    "topic-reasoning-06-blood-relations-part-2.html",
+    "topic-reasoning-06-blood-relations-part-3.html",
+    "topic-reasoning-06-blood-relations-part-4.html",
+    "topic-reasoning-06-blood-relations-part-5.html",
+    "topic-reasoning-06-blood-relations-part-6.html"
    ],
    "leaves": [
     "exams/chandigarh-police-constable.html",
