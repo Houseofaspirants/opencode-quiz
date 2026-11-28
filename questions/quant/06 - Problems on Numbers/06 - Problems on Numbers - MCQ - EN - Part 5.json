@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 5,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-101",
+      "number": 101,
+      "question": "Subtracting 19 from a number gives the same result as subtracting the number from 95. What is 10 more than the number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "57"
+        },
+        {
+          "label": "B",
+          "text": "77"
+        },
+        {
+          "label": "C",
+          "text": "47"
+        },
+        {
+          "label": "D",
+          "text": "67"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x − 19 = 95 − x gives x = 57; required value = 57 + 10 = 67."
+    },
+    {
+      "id": "06-102",
+      "number": 102,
+      "question": "3/4 of the sum of a number and 16 equals 5/6 of the difference between that number and 8. Find half the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "224"
+        },
+        {
+          "label": "B",
+          "text": "112"
+        },
+        {
+          "label": "C",
+          "text": "104"
+        },
+        {
+          "label": "D",
+          "text": "56"
+        }
+      ],
+      "answer": "B",
+      "explanation": "3(x + 16)/4 = 5(x − 8)/6 gives 9x + 144 = 10x − 80; x = 224, so half = 112."
+    },
+    {
+      "id": "06-103",
+      "number": 103,
+      "question": "Positive integers a and b satisfy a² − b² = 117 and a − b = 3. Find ab.",
+      "options": [
+        {
+          "label": "A",
+          "text": "378"
+        },
+        {
+          "label": "B",
+          "text": "396"
+        },
+        {
+          "label": "C",
+          "text": "351"
+        },
+        {
+          "label": "D",
+          "text": "360"
+        }
+      ],
+      "answer": "A",
+      "explanation": "a + b = 117 ÷ 3 = 39; ab = [(a + b)² − (a − b)²]/4 = (1521 − 9)/4 = 378."
+    },
+    {
+      "id": "06-104",
+      "number": 104,
+      "question": "A student adds 6 to a positive number, squares the result and divides by 9 to obtain 49. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "9"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Before division the square = 49 × 9 = 441; its positive square root is 21, so original = 21 − 6 = 15."
+    },
+    {
+      "id": "06-105",
+      "number": 105,
+      "question": "Two numbers have difference 24 and sum 5 times their difference. Find the smaller number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Sum = 5 × 24 = 120; smaller = (120 − 24) ÷ 2 = 48."
+    },
+    {
+      "id": "06-106",
+      "number": 106,
+      "question": "Three positive numbers are in the ratio 2 : 3 : 5. Their product is 10290. Find the sum of the smallest and largest.",
+      "options": [
+        {
+          "label": "A",
+          "text": "49"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "30k³ = 10290 gives k³ = 343 and k = 7; smallest + largest = 7k = 49."
+    },
+    {
+      "id": "06-107",
+      "number": 107,
+      "question": "Three numbers have pairwise sums 53, 61 and 72. What is the difference between the largest and smallest numbers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "11"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "19"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Largest − smallest = largest pair sum − smallest pair sum = 72 − 53 = 19."
+    },
+    {
+      "id": "06-108",
+      "number": 108,
+      "question": "Dividing a larger positive integer by a smaller gives quotient 5 and remainder 8. If 8 is added to the smaller, the larger becomes exactly 4 times the new smaller. Find the larger integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "96"
+        },
+        {
+          "label": "B",
+          "text": "128"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "160"
+        }
+      ],
+      "answer": "B",
+      "explanation": "5s + 8 = 4(s + 8) gives s = 24; larger = 5 × 24 + 8 = 128."
+    },
+    {
+      "id": "06-109",
+      "number": 109,
+      "question": "Four consecutive odd integers have average 88. How many of these integers are divisible by 3?",
+      "options": [
+        {
+          "label": "A",
+          "text": "2"
+        },
+        {
+          "label": "B",
+          "text": "0"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The integers are 85, 87, 89 and 91; only 87 is divisible by 3, so the count is 1."
+    },
+    {
+      "id": "06-110",
+      "number": 110,
+      "question": "Two consecutive positive integers have product 812. How much must be added to the product to obtain the square of the larger integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "58"
+        },
+        {
+          "label": "B",
+          "text": "57"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "29"
+        }
+      ],
+      "answer": "D",
+      "explanation": "812 = 28 × 29; 29² − 28 × 29 = 29, so add 29."
+    },
+    {
+      "id": "06-111",
+      "number": 111,
+      "question": "A three-digit number has digit sum 16. Swapping its hundreds and tens digits decreases it by 270, while swapping its tens and units digits increases it by 36. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "637"
+        },
+        {
+          "label": "B",
+          "text": "736"
+        },
+        {
+          "label": "C",
+          "text": "673"
+        },
+        {
+          "label": "D",
+          "text": "367"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Hundreds − tens = 270/90 = 3 and units − tens = 36/9 = 4; 3t + 7 = 16 gives t = 3, so number = 637."
+    },
+    {
+      "id": "06-112",
+      "number": 112,
+      "question": "Two nonzero numbers have sum 14 and product 45. Find the sum of the reciprocals of their squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "106/2025"
+        },
+        {
+          "label": "B",
+          "text": "14/2025"
+        },
+        {
+          "label": "C",
+          "text": "106/45"
+        },
+        {
+          "label": "D",
+          "text": "196/2025"
+        }
+      ],
+      "answer": "A",
+      "explanation": "a² + b² = 14² − 2 × 45 = 106; 1/a² + 1/b² = 106/45² = 106/2025."
+    },
+    {
+      "id": "06-113",
+      "number": 113,
+      "question": "A two-digit number has tens digit 5 and is 2 more than 9 times its units digit. Find the sum of its digits.",
+      "options": [
+        {
+          "label": "A",
+          "text": "10"
+        },
+        {
+          "label": "B",
+          "text": "13"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "50 + u = 9u + 2 gives u = 6; digit sum = 5 + 6 = 11."
+    },
+    {
+      "id": "06-114",
+      "number": 114,
+      "question": "Twice a two-digit number plus its reverse equals 150. Its reverse plus the product of its digits equals 38. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "29"
+        },
+        {
+          "label": "B",
+          "text": "62"
+        },
+        {
+          "label": "C",
+          "text": "26"
+        },
+        {
+          "label": "D",
+          "text": "92"
+        }
+      ],
+      "answer": "B",
+      "explanation": "2(10t + u) + (10u + t) = 150 gives 7t + 4u = 50, allowing only 29 or 62. Only 62 satisfies 26 + 6 × 2 = 38."
+    },
+    {
+      "id": "06-115",
+      "number": 115,
+      "question": "Adding 3 to the numerator of a fraction increases its value by 1/6. If 3 is then also added to its denominator, the new fraction becomes 2/3. Find the original numerator.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "9"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "14"
+        }
+      ],
+      "answer": "C",
+      "explanation": "3/d = 1/6 gives d = 18; then (n + 3)/(18 + 3) = 2/3 gives n + 3 = 14, so n = 11."
+    },
+    {
+      "id": "06-116",
+      "number": 116,
+      "question": "A student should add 24 to a number and divide the sum by 6. Instead, she divides the number by 6 and then adds 24. The incorrect result is 54. Find the correct result.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "58"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Incorrect calculation gives x/6 = 54 − 24 = 30; correct result = x/6 + 24/6 = 30 + 4 = 34."
+    },
+    {
+      "id": "06-117",
+      "number": 117,
+      "question": "What is the sum of two positive integers? Statement I: Their product is 91. Statement II: Both integers are greater than 1. Which assessment is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Even both statements together are insufficient"
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Both statements together are sufficient; neither alone is sufficient"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Statement I allows 1 and 91 or 7 and 13. Statement II excludes the first pair, so together the sum is 20."
+    },
+    {
+      "id": "06-118",
+      "number": 118,
+      "question": "A number multiplied by 4 and then increased by 9 gives 149. Which number was used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "40"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "35"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "4x = 149 − 9 = 140, so x = 35."
+    },
+    {
+      "id": "06-119",
+      "number": 119,
+      "question": "A bag contains some red and blue counters. Red counters are 5/12 of the total and number 35. How many blue counters must be removed so that blue counters become half the original total?",
+      "options": [
+        {
+          "label": "A",
+          "text": "14"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "7"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total = 35 × 12/5 = 84; blue = 49 and half the original total = 42, so remove 7."
+    },
+    {
+      "id": "06-120",
+      "number": 120,
+      "question": "Two positive integers differ by 179. Dividing the larger by the smaller gives remainder 11, and the quotient is 1 less than the smaller integer. Find the smaller integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "13"
+        },
+        {
+          "label": "D",
+          "text": "12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "s + 179 = s(s − 1) + 11 gives s² − 2s = 168; (s − 1)² = 169, so s = 14."
+    },
+    {
+      "id": "06-121",
+      "number": 121,
+      "question": "The sum of two numbers is 132. If the larger is reduced by 10 and the smaller increased by 6, their difference becomes 20. Find the original larger number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "92"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Original difference = 20 + 10 + 6 = 36; larger = (132 + 36) ÷ 2 = 84."
+    },
+    {
+      "id": "06-122",
+      "number": 122,
+      "question": "If 2A = 3B = 5C and A + B + C = 186, find B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "90"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "B",
+      "explanation": "A : B : C = 15 : 10 : 6; 31 parts = 186, so B = 10 × 6 = 60."
+    },
+    {
+      "id": "06-123",
+      "number": 123,
+      "question": "A number is reduced by 12.5% and becomes 147. Find the amount of the reduction.",
+      "options": [
+        {
+          "label": "A",
+          "text": "21"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "A",
+      "explanation": "12.5% = 1/8, so the remaining 7 parts = 147; reduction = one part = 21."
+    },
+    {
+      "id": "06-124",
+      "number": 124,
+      "question": "Three consecutive odd integers and three consecutive even integers total 321. The smallest even integer is 5 more than the smallest odd integer. Find the largest of all six.",
+      "options": [
+        {
+          "label": "A",
+          "text": "53"
+        },
+        {
+          "label": "B",
+          "text": "56"
+        },
+        {
+          "label": "C",
+          "text": "58"
+        },
+        {
+          "label": "D",
+          "text": "54"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Let the smallest odd integer be x: 6x + 27 = 321 gives x = 49; largest even integer = x + 5 + 4 = 58."
+    },
+    {
+      "id": "06-125",
+      "number": 125,
+      "question": "A positive integer has cube 13824. What is the difference between its square and the integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "552"
+        },
+        {
+          "label": "B",
+          "text": "600"
+        },
+        {
+          "label": "C",
+          "text": "576"
+        },
+        {
+          "label": "D",
+          "text": "528"
+        }
+      ],
+      "answer": "A",
+      "explanation": "∛13824 = 24; required difference = 24² − 24 = 576 − 24 = 552."
+    }
+  ]
+}

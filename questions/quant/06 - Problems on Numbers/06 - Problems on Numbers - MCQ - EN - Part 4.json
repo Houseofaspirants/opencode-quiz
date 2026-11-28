@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 4,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-076",
+      "number": 76,
+      "question": "Which equation represents this statement: 12 less than 5 times a number equals 3 more than twice that number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5x − 12 = 2x + 3"
+        },
+        {
+          "label": "B",
+          "text": "5x + 12 = 2x + 3"
+        },
+        {
+          "label": "C",
+          "text": "5x − 12 = 2(x + 3)"
+        },
+        {
+          "label": "D",
+          "text": "5(x − 12) = 2x + 3"
+        }
+      ],
+      "answer": "A",
+      "explanation": "The two expressions are 5x − 12 and 2x + 3; equating them gives 5x − 12 = 2x + 3."
+    },
+    {
+      "id": "06-077",
+      "number": 77,
+      "question": "The sum of 2/5 and 3/10 of a number is 126. What fraction of the number is 54?",
+      "options": [
+        {
+          "label": "A",
+          "text": "3/10"
+        },
+        {
+          "label": "B",
+          "text": "2/5"
+        },
+        {
+          "label": "C",
+          "text": "7/10"
+        },
+        {
+          "label": "D",
+          "text": "3/7"
+        }
+      ],
+      "answer": "A",
+      "explanation": "7x/10 = 126 gives x = 180; 54/x = 54/180 = 3/10."
+    },
+    {
+      "id": "06-078",
+      "number": 78,
+      "question": "A two-digit number is 36 less than its reverse. Subtracting 2 from its tens digit and 4 from its units digit produces a number equal to 2/7 of its reverse. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "64"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Let original = n and reverse = r: r = n + 36 and n − 24 = 2r/7. Thus 7n − 168 = 2n + 72, giving n = 48."
+    },
+    {
+      "id": "06-079",
+      "number": 79,
+      "question": "Starting with a number, Meena doubles it, subtracts 16, divides by 4 and adds 9. The result is 27. What result would she get by simply adding 11 to the original number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "44"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "55"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Original = [(27 − 9) × 4 + 16] ÷ 2 = 44; required result = 44 + 11 = 55."
+    },
+    {
+      "id": "06-080",
+      "number": 80,
+      "question": "Three consecutive multiples of 7 have sum 252. What is the next multiple of 7 immediately after the largest of these three?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "105"
+        },
+        {
+          "label": "C",
+          "text": "91"
+        },
+        {
+          "label": "D",
+          "text": "98"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Middle multiple = 252 ÷ 3 = 84; the required multiple is two steps later, 84 + 14 = 98."
+    },
+    {
+      "id": "06-081",
+      "number": 81,
+      "question": "Two numbers are in the ratio 3 : 7. If 8 is added to each, their product increases by 864. Find the larger original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "70"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "30"
+        },
+        {
+          "label": "D",
+          "text": "56"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Product increase = 8(a + b) + 64 = 864, so a + b = 100; larger = 7/10 × 100 = 70."
+    },
+    {
+      "id": "06-082",
+      "number": 82,
+      "question": "Aman, Baljit and Charan hold some tokens. Aman and Baljit together have 76, Baljit and Charan have 91, and Aman and Charan have 83. How many more tokens does Charan have than Aman?",
+      "options": [
+        {
+          "label": "A",
+          "text": "15"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtract Aman + Baljit from Baljit + Charan: Charan − Aman = 91 − 76 = 15."
+    },
+    {
+      "id": "06-083",
+      "number": 83,
+      "question": "Three positive numbers have sum 23 and pairwise-product sum 166. Find the sum of the squares of their pairwise differences.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "93"
+        },
+        {
+          "label": "C",
+          "text": "197"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "D",
+      "explanation": "a² + b² + c² = 23² − 2 × 166 = 197; required sum = 2(197 − 166) = 62."
+    },
+    {
+      "id": "06-084",
+      "number": 84,
+      "question": "The larger of two numbers is 67 and their sum is 104. Find their difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "41"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "34"
+        },
+        {
+          "label": "D",
+          "text": "37"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Smaller = 104 − 67 = 37; difference = 67 − 37 = 30."
+    },
+    {
+      "id": "06-085",
+      "number": 85,
+      "question": "The product of three consecutive positive integers is 4896. What is the smallest integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "17"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "17³ is close to 4896; checking 16 × 17 × 18 = 4896 gives the smallest integer as 16."
+    },
+    {
+      "id": "06-086",
+      "number": 86,
+      "question": "A fraction has positive integer numerator and denominator with sum 36. Increasing its numerator by 40% and decreasing its denominator by 20% makes its value 5/4. Find the original numerator.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "15"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "(1.4n)/(0.8d) = 5/4 gives n : d = 5 : 7; 12 parts = 36, so numerator = 15."
+    },
+    {
+      "id": "06-087",
+      "number": 87,
+      "question": "For x > 1, x − 1/x = 15/4. Find x + 1/x.",
+      "options": [
+        {
+          "label": "A",
+          "text": "13/4"
+        },
+        {
+          "label": "B",
+          "text": "19/4"
+        },
+        {
+          "label": "C",
+          "text": "15/2"
+        },
+        {
+          "label": "D",
+          "text": "17/4"
+        }
+      ],
+      "answer": "D",
+      "explanation": "(x + 1/x)² = (x − 1/x)² + 4 = 225/16 + 64/16 = 289/16; positive square root = 17/4."
+    },
+    {
+      "id": "06-088",
+      "number": 88,
+      "question": "Which two-digit number has digits whose product is 18 and whose tens digit is twice its units digit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "92"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If the units digit is u, 2u² = 18 gives u = 3; tens = 6 and number = 63."
+    },
+    {
+      "id": "06-089",
+      "number": 89,
+      "question": "A dividend is 9 times its divisor plus its remainder. The divisor is 4 times the remainder, and the dividend is 333. Find the divisor.",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "37"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let remainder = r; dividend = 9 × 4r + r = 37r = 333, so r = 9 and divisor = 36."
+    },
+    {
+      "id": "06-090",
+      "number": 90,
+      "question": "A number is multiplied by 5, 30 is added, and the result is divided by 7. This gives 5 less than the original number. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "27.5"
+        },
+        {
+          "label": "B",
+          "text": "65"
+        },
+        {
+          "label": "C",
+          "text": "35"
+        },
+        {
+          "label": "D",
+          "text": "32.5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "(5x + 30)/7 = x − 5 gives 2x = 65; x = 32.5."
+    },
+    {
+      "id": "06-091",
+      "number": 91,
+      "question": "Two numbers have actual sum 85. A student multiplies the first by 4 instead of 3 and the second by 3 instead of 4; the resulting total is 11 more than the intended total. Find the first number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "37"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "53"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Error = (4a + 3b) − (3a + 4b) = a − b = 11; with a + b = 85, a = 48."
+    },
+    {
+      "id": "06-092",
+      "number": 92,
+      "question": "What is the units digit of a two-digit number? Statement I: The number is 8 times its digit sum. Statement II: Its tens digit is 7. Which assessment is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Both statements are required"
+        },
+        {
+          "label": "B",
+          "text": "Even both statements together are insufficient"
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Statement II alone is sufficient"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Statement I gives 10t + u = 8(t + u), so 2t = 7u; the only valid digits are t = 7, u = 2. Statement II alone leaves the units digit free."
+    },
+    {
+      "id": "06-093",
+      "number": 93,
+      "question": "The sum of a number, its double and its triple is 258. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "43"
+        },
+        {
+          "label": "C",
+          "text": "51"
+        },
+        {
+          "label": "D",
+          "text": "86"
+        }
+      ],
+      "answer": "B",
+      "explanation": "x + 2x + 3x = 6x = 258, so x = 43."
+    },
+    {
+      "id": "06-094",
+      "number": 94,
+      "question": "5/12 of a number is removed. Twice the remaining value is 210. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "126"
+        },
+        {
+          "label": "B",
+          "text": "180"
+        },
+        {
+          "label": "C",
+          "text": "252"
+        },
+        {
+          "label": "D",
+          "text": "105"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Remaining value = 210/2 = 105; it is 7/12 of the number, so original = 105 × 12/7 = 180."
+    },
+    {
+      "id": "06-095",
+      "number": 95,
+      "question": "Three numbers A, B and C satisfy A + B = 95, B + C = 109 and A + 2C = 172. Find A + C.",
+      "options": [
+        {
+          "label": "A",
+          "text": "110"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        },
+        {
+          "label": "C",
+          "text": "104"
+        },
+        {
+          "label": "D",
+          "text": "124"
+        }
+      ],
+      "answer": "A",
+      "explanation": "C − A = 14, so A + 2(A + 14) = 172 gives A = 48 and C = 62; A + C = 110."
+    },
+    {
+      "id": "06-096",
+      "number": 96,
+      "question": "The ratio of two numbers is 4 : 9. Their difference is 75. What must be added to the smaller to make the ratio 2 : 3, keeping the larger unchanged?",
+      "options": [
+        {
+          "label": "A",
+          "text": "45"
+        },
+        {
+          "label": "B",
+          "text": "30"
+        },
+        {
+          "label": "C",
+          "text": "60"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "B",
+      "explanation": "One part = 75 ÷ 5 = 15, so numbers are 60 and 135; required addition = 2/3 × 135 − 60 = 30."
+    },
+    {
+      "id": "06-097",
+      "number": 97,
+      "question": "Seven consecutive integers total 350. If the smallest and largest are removed, what is the sum of the remaining integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "255"
+        },
+        {
+          "label": "C",
+          "text": "250"
+        },
+        {
+          "label": "D",
+          "text": "245"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The middle value = 350 ÷ 7 = 50; the remaining five are centred on 50, so their sum = 250."
+    },
+    {
+      "id": "06-098",
+      "number": 98,
+      "question": "A number is increased by 15% and becomes 391. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "332"
+        },
+        {
+          "label": "C",
+          "text": "340"
+        },
+        {
+          "label": "D",
+          "text": "350"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Original number = 391 × 100/115 = 340."
+    },
+    {
+      "id": "06-099",
+      "number": 99,
+      "question": "The square of a positive integer exceeds 2 times the integer by 143. Find the integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "12"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "11"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "D",
+      "explanation": "x² − 2x = 143 gives (x − 1)² = 144; since x is positive, x = 13."
+    },
+    {
+      "id": "06-100",
+      "number": 100,
+      "question": "A two-digit number has nonzero digits. Its reverse is 27 less than the original and their sum is 143. Find the units digit of the original.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "3"
+        },
+        {
+          "label": "D",
+          "text": "5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Original = (143 + 27) ÷ 2 = 85; its units digit is 5."
+    }
+  ]
+}

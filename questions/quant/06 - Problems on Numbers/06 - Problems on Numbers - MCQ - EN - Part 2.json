@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 2,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-026",
+      "number": 26,
+      "question": "When a number is divided by 8, the result is 42 less than the number. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "56"
+        },
+        {
+          "label": "D",
+          "text": "48"
+        }
+      ],
+      "answer": "D",
+      "explanation": "7/8 of the number is 42, so the number = 42 × 8/7 = 48."
+    },
+    {
+      "id": "06-027",
+      "number": 27,
+      "question": "2/3 of a number added to 5/8 of 192 gives 248. Find 25% of the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "64"
+        },
+        {
+          "label": "B",
+          "text": "192"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2x/3 = 248 − 120 = 128, so x = 192 and 25% of x = 48."
+    },
+    {
+      "id": "06-028",
+      "number": 28,
+      "question": "Simran spends 1/5 of her money, then 25% of what remains. She next spends ₹90 and is left with 40% of her original money. Find her original amount.",
+      "options": [
+        {
+          "label": "A",
+          "text": "360"
+        },
+        {
+          "label": "B",
+          "text": "300"
+        },
+        {
+          "label": "C",
+          "text": "600"
+        },
+        {
+          "label": "D",
+          "text": "450"
+        }
+      ],
+      "answer": "D",
+      "explanation": "After the first two expenses, 60% remains; hence 20% of the original = ₹90 and original amount = ₹450."
+    },
+    {
+      "id": "06-029",
+      "number": 29,
+      "question": "A machine adds 12 to an input, halves the result and then subtracts 7. If the output is 31, what input was used?",
+      "options": [
+        {
+          "label": "A",
+          "text": "64"
+        },
+        {
+          "label": "B",
+          "text": "50"
+        },
+        {
+          "label": "C",
+          "text": "76"
+        },
+        {
+          "label": "D",
+          "text": "88"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Input = (31 + 7) × 2 − 12 = 64."
+    },
+    {
+      "id": "06-030",
+      "number": 30,
+      "question": "Two numbers have sum 93 and difference 17. Find twice the smaller number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "38"
+        },
+        {
+          "label": "B",
+          "text": "110"
+        },
+        {
+          "label": "C",
+          "text": "55"
+        },
+        {
+          "label": "D",
+          "text": "76"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Twice the smaller number = sum − difference = 93 − 17 = 76."
+    },
+    {
+      "id": "06-031",
+      "number": 31,
+      "question": "The first number is 3/4 of the second, and the second is 5/6 of the third. If the first and third together total 156, find the second.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "120"
+        },
+        {
+          "label": "C",
+          "text": "96"
+        },
+        {
+          "label": "D",
+          "text": "80"
+        }
+      ],
+      "answer": "D",
+      "explanation": "First : second : third = 15 : 20 : 24; 39 parts = 156, so second = 20 × 4 = 80."
+    },
+    {
+      "id": "06-032",
+      "number": 32,
+      "question": "For three numbers, first + second = 82 and second + third = 94. The first is 2/3 of the third. Find the second.",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "58"
+        },
+        {
+          "label": "D",
+          "text": "70"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Third − first = 12; with first : third = 2 : 3, first = 24 and second = 82 − 24 = 58."
+    },
+    {
+      "id": "06-033",
+      "number": 33,
+      "question": "Two positive integers have product 2028. Dividing the larger by the smaller gives quotient 3 with no remainder. Find the sum of their squares.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6760"
+        },
+        {
+          "label": "B",
+          "text": "8112"
+        },
+        {
+          "label": "C",
+          "text": "6084"
+        },
+        {
+          "label": "D",
+          "text": "2704"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the numbers be s and 3s: 3s² = 2028 gives s² = 676; square sum = 10s² = 6760."
+    },
+    {
+      "id": "06-034",
+      "number": 34,
+      "question": "The average of six consecutive multiples of 4 is 54. Find the smallest multiple.",
+      "options": [
+        {
+          "label": "A",
+          "text": "44"
+        },
+        {
+          "label": "B",
+          "text": "46"
+        },
+        {
+          "label": "C",
+          "text": "48"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Six terms spaced by 4 have average 10 above the first; smallest = 54 − 10 = 44."
+    },
+    {
+      "id": "06-035",
+      "number": 35,
+      "question": "The squares of two consecutive positive odd integers differ by 192. Find their product.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2499"
+        },
+        {
+          "label": "B",
+          "text": "2209"
+        },
+        {
+          "label": "C",
+          "text": "2401"
+        },
+        {
+          "label": "D",
+          "text": "2303"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Their sum = 192 ÷ 2 = 96, so the numbers are 47 and 49; product = 48² − 1 = 2303."
+    },
+    {
+      "id": "06-036",
+      "number": 36,
+      "question": "Positive numbers a and b satisfy a + b = 19 and ab = 84. Find a³ + b³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2071"
+        },
+        {
+          "label": "B",
+          "text": "2359"
+        },
+        {
+          "label": "C",
+          "text": "1729"
+        },
+        {
+          "label": "D",
+          "text": "5263"
+        }
+      ],
+      "answer": "A",
+      "explanation": "a³ + b³ = (a + b)³ − 3ab(a + b) = 19³ − 3 × 84 × 19 = 2071."
+    },
+    {
+      "id": "06-037",
+      "number": 37,
+      "question": "Two positive fractions have product 27/100, and the larger is three times the smaller. Find their difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "6/5"
+        },
+        {
+          "label": "B",
+          "text": "3/10"
+        },
+        {
+          "label": "C",
+          "text": "9/10"
+        },
+        {
+          "label": "D",
+          "text": "3/5"
+        }
+      ],
+      "answer": "D",
+      "explanation": "If the smaller is f, 3f² = 27/100 gives f = 3/10; difference = 2f = 3/5."
+    },
+    {
+      "id": "06-038",
+      "number": 38,
+      "question": "A two-digit number exceeds its digit sum by 63. What is its tens digit?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "7"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Number − digit sum = 9 × tens digit, so tens digit = 63 ÷ 9 = 7."
+    },
+    {
+      "id": "06-039",
+      "number": 39,
+      "question": "A two-digit number and its reverse add up to 132. The original number exceeds twice its reverse by 15. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "39"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        },
+        {
+          "label": "C",
+          "text": "93"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "C",
+      "explanation": "If the reverse is r, 3r + 15 = 132 gives r = 39; original = 132 − 39 = 93."
+    },
+    {
+      "id": "06-040",
+      "number": 40,
+      "question": "In a three-digit number, the tens digit is 4. Reversing all its digits increases it by 396, and the digit sum is 14. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "446"
+        },
+        {
+          "label": "B",
+          "text": "347"
+        },
+        {
+          "label": "C",
+          "text": "743"
+        },
+        {
+          "label": "D",
+          "text": "545"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Units − hundreds = 396 ÷ 99 = 4 and units + hundreds = 10; digits are 3, 4, 7, giving 347."
+    },
+    {
+      "id": "06-041",
+      "number": 41,
+      "question": "The numerator of a fraction is 4 less than its denominator. Adding 5 to both makes the fraction 7/9. Find the sum of the original numerator and denominator.",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "26"
+        },
+        {
+          "label": "C",
+          "text": "22"
+        },
+        {
+          "label": "D",
+          "text": "32"
+        }
+      ],
+      "answer": "C",
+      "explanation": "9(n + 5) = 7(n + 9), so 2n = 18; numerator = 9, denominator = 13, sum = 22."
+    },
+    {
+      "id": "06-042",
+      "number": 42,
+      "question": "What is the larger of two positive numbers? Statement I: Their sum is 64. Statement II: Their difference is 18. Which assessment is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Both statements together are sufficient; neither alone is sufficient"
+        },
+        {
+          "label": "C",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Even both statements together are insufficient"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Neither sum nor difference alone fixes the larger number; together they give (64 + 18) ÷ 2 = 41."
+    },
+    {
+      "id": "06-043",
+      "number": 43,
+      "question": "4 times a number plus 23 equals 6 times the number minus 15. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "38"
+        },
+        {
+          "label": "C",
+          "text": "19"
+        },
+        {
+          "label": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "C",
+      "explanation": "2x = 23 + 15 = 38, so x = 19."
+    },
+    {
+      "id": "06-044",
+      "number": 44,
+      "question": "1/3 of 4/5 of a number equals 72. By how much does the number exceed its 2/9 part?",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "270"
+        },
+        {
+          "label": "C",
+          "text": "210"
+        },
+        {
+          "label": "D",
+          "text": "198"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The number = 72 × 15/4 = 270; excess over its 2/9 part = 7/9 × 270 = 210."
+    },
+    {
+      "id": "06-045",
+      "number": 45,
+      "question": "A number is increased by 20%. Then 25% of the increased number is subtracted, and 36 is added. The final result equals the original number. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "360"
+        },
+        {
+          "label": "C",
+          "text": "400"
+        },
+        {
+          "label": "D",
+          "text": "180"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Net multiplier = 1.20 × 0.75 = 0.90; thus 10% of the number = 36 and the number is 360."
+    },
+    {
+      "id": "06-046",
+      "number": 46,
+      "question": "Two numbers have sum 172. If 14 is transferred from the larger to the smaller, the two become equal. Find the original smaller number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "72"
+        },
+        {
+          "label": "B",
+          "text": "79"
+        },
+        {
+          "label": "C",
+          "text": "86"
+        },
+        {
+          "label": "D",
+          "text": "58"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Original difference = 2 × 14 = 28; smaller = (172 − 28) ÷ 2 = 72."
+    },
+    {
+      "id": "06-047",
+      "number": 47,
+      "question": "Three numbers are in the ratio 2 : 5 : 7. The largest exceeds the smallest by 85. Find the middle number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "119"
+        },
+        {
+          "label": "B",
+          "text": "85"
+        },
+        {
+          "label": "C",
+          "text": "68"
+        },
+        {
+          "label": "D",
+          "text": "34"
+        }
+      ],
+      "answer": "B",
+      "explanation": "5 ratio parts = 85, so one part = 17; middle number = 5 × 17 = 85."
+    },
+    {
+      "id": "06-048",
+      "number": 48,
+      "question": "Nine consecutive integers have average 113. What is the sum of the smallest and largest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "226"
+        },
+        {
+          "label": "B",
+          "text": "225"
+        },
+        {
+          "label": "C",
+          "text": "217"
+        },
+        {
+          "label": "D",
+          "text": "234"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For consecutive integers, smallest + largest = 2 × average = 226."
+    },
+    {
+      "id": "06-049",
+      "number": 49,
+      "question": "The sum of the squares of three consecutive positive integers is 365. Find the largest integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "11"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "10"
+        },
+        {
+          "label": "D",
+          "text": "13"
+        }
+      ],
+      "answer": "B",
+      "explanation": "If m is the middle integer, 3m² + 2 = 365 gives m = 11; largest = 12."
+    },
+    {
+      "id": "06-050",
+      "number": 50,
+      "question": "A two-digit number has digit sum 14. Its tens digit is 2 more than its units digit. What is 25% of the number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "20.5"
+        },
+        {
+          "label": "B",
+          "text": "21.5"
+        },
+        {
+          "label": "C",
+          "text": "16.5"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Digits are (14 + 2) ÷ 2 = 8 and 6; number = 86, so 25% = 21.5."
+    }
+  ]
+}

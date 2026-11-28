@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 1,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-001",
+      "number": 1,
+      "question": "7 times a number exceeds the number by 174. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "30"
+        },
+        {
+          "label": "B",
+          "text": "29"
+        },
+        {
+          "label": "C",
+          "text": "25"
+        },
+        {
+          "label": "D",
+          "text": "24"
+        }
+      ],
+      "answer": "B",
+      "explanation": "6x = 174, so x = 29."
+    },
+    {
+      "id": "06-002",
+      "number": 2,
+      "question": "The difference between 5/6 and 3/8 of a number is 77. Find 7/12 of the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "98"
+        },
+        {
+          "label": "B",
+          "text": "112"
+        },
+        {
+          "label": "C",
+          "text": "84"
+        },
+        {
+          "label": "D",
+          "text": "168"
+        }
+      ],
+      "answer": "A",
+      "explanation": "(5/6 − 3/8)x = 11x/24 = 77, so x = 168 and 7x/12 = 98."
+    },
+    {
+      "id": "06-003",
+      "number": 3,
+      "question": "A library in Patiala lends 1/4 of its books on Monday and 40% of the remainder on Tuesday. After receiving 18 returned books, it has 126 books. How many books did it have initially?",
+      "options": [
+        {
+          "label": "A",
+          "text": "180"
+        },
+        {
+          "label": "B",
+          "text": "240"
+        },
+        {
+          "label": "C",
+          "text": "280"
+        },
+        {
+          "label": "D",
+          "text": "360"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Books before returns = 126 − 18 = 108; initial stock = 108 ÷ (3/4 × 60/100) = 240."
+    },
+    {
+      "id": "06-004",
+      "number": 4,
+      "question": "A number is divided by 3, increased by 14, and then multiplied by 5 to give 180. What is the original number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "94"
+        },
+        {
+          "label": "C",
+          "text": "66"
+        },
+        {
+          "label": "D",
+          "text": "108"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Reverse the operations: (180 ÷ 5 − 14) × 3 = 66."
+    },
+    {
+      "id": "06-005",
+      "number": 5,
+      "question": "The sum of two numbers is 148 and their difference is 26. Find the larger number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "61"
+        },
+        {
+          "label": "B",
+          "text": "96"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "87"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Larger number = (148 + 26) ÷ 2 = 87."
+    },
+    {
+      "id": "06-006",
+      "number": 6,
+      "question": "Two positive numbers are in the ratio 5 : 8. After adding 7 to the smaller and subtracting 7 from the larger, their ratio becomes 4 : 5. Find their original sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "104"
+        },
+        {
+          "label": "B",
+          "text": "130"
+        },
+        {
+          "label": "C",
+          "text": "91"
+        },
+        {
+          "label": "D",
+          "text": "117"
+        }
+      ],
+      "answer": "D",
+      "explanation": "5(5k + 7) = 4(8k − 7), so 7k = 63 and the sum = 13 × 9 = 117."
+    },
+    {
+      "id": "06-007",
+      "number": 7,
+      "question": "The pairwise sums of three numbers are 47, 59 and 68. Find the middle number when the three numbers are arranged in increasing order.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "40"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "19"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Total = (47 + 59 + 68) ÷ 2 = 87; the numbers are 19, 28 and 40, so the middle number is 28."
+    },
+    {
+      "id": "06-008",
+      "number": 8,
+      "question": "When the larger of two positive integers is divided by the smaller, the quotient is 4 and the remainder is 13. Their sum is 208. Find their difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "130"
+        },
+        {
+          "label": "B",
+          "text": "156"
+        },
+        {
+          "label": "C",
+          "text": "143"
+        },
+        {
+          "label": "D",
+          "text": "117"
+        }
+      ],
+      "answer": "A",
+      "explanation": "If the smaller is s, 5s + 13 = 208 gives s = 39; difference = 3 × 39 + 13 = 130."
+    },
+    {
+      "id": "06-009",
+      "number": 9,
+      "question": "The sum of five consecutive odd integers is 345. Find the smallest integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "65"
+        },
+        {
+          "label": "B",
+          "text": "67"
+        },
+        {
+          "label": "C",
+          "text": "69"
+        },
+        {
+          "label": "D",
+          "text": "63"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Middle integer = 345 ÷ 5 = 69; smallest = 69 − 4 = 65."
+    },
+    {
+      "id": "06-010",
+      "number": 10,
+      "question": "The product of two consecutive positive integers is 5256. Find the larger integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "71"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "73"
+        },
+        {
+          "label": "D",
+          "text": "74"
+        }
+      ],
+      "answer": "C",
+      "explanation": "5256 = 72 × 73, so the larger integer is 73."
+    },
+    {
+      "id": "06-011",
+      "number": 11,
+      "question": "For positive numbers a and b, a + b = 34 and a² + b² = 610. Find |a − b|.",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "24"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "D",
+      "explanation": "(a − b)² = 2(a² + b²) − (a + b)² = 1220 − 1156 = 64; hence |a − b| = 8."
+    },
+    {
+      "id": "06-012",
+      "number": 12,
+      "question": "A positive number greater than 1 and its reciprocal have a sum of 17/4. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "1/4"
+        },
+        {
+          "label": "D",
+          "text": "17/4"
+        }
+      ],
+      "answer": "B",
+      "explanation": "x + 1/x = 17/4 gives (4x − 1)(x − 4) = 0; since x > 1, x = 4."
+    },
+    {
+      "id": "06-013",
+      "number": 13,
+      "question": "A two-digit number has digit sum 7 and digit product 12. Its tens digit is smaller than its units digit. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "25"
+        },
+        {
+          "label": "B",
+          "text": "34"
+        },
+        {
+          "label": "C",
+          "text": "43"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The digits with sum 7 and product 12 are 3 and 4; the smaller digit comes first, giving 34."
+    },
+    {
+      "id": "06-014",
+      "number": 14,
+      "question": "A two-digit number exceeds its reverse by 27, and the product of its digits is 28. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "73"
+        },
+        {
+          "label": "B",
+          "text": "47"
+        },
+        {
+          "label": "C",
+          "text": "74"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Digit difference = 27 ÷ 9 = 3; digits with product 28 and difference 3 are 7 and 4, giving 74."
+    },
+    {
+      "id": "06-015",
+      "number": 15,
+      "question": "A three-digit number has digit sum 15. Its hundreds digit is twice its units digit, and its tens digit is 3 more than its units digit. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "663"
+        },
+        {
+          "label": "B",
+          "text": "363"
+        },
+        {
+          "label": "C",
+          "text": "633"
+        },
+        {
+          "label": "D",
+          "text": "636"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the units digit be u: 2u + (u + 3) + u = 15 gives u = 3; the number is 663."
+    },
+    {
+      "id": "06-016",
+      "number": 16,
+      "question": "A fraction becomes 3/4 when 2 is added to its numerator and 1 to its denominator. It becomes 1/2 when 2 is subtracted from its numerator and 1 from its denominator. Find the original fraction.",
+      "options": [
+        {
+          "label": "A",
+          "text": "3/5"
+        },
+        {
+          "label": "B",
+          "text": "9/13"
+        },
+        {
+          "label": "C",
+          "text": "7/11"
+        },
+        {
+          "label": "D",
+          "text": "5/9"
+        }
+      ],
+      "answer": "C",
+      "explanation": "4n − 3d = −5 and 2n − d = 3 give n = 7 and d = 11; the fraction is 7/11."
+    },
+    {
+      "id": "06-017",
+      "number": 17,
+      "question": "Harpreet multiplies a number by 7 instead of dividing it by 7. His answer exceeds the correct answer by 288. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "36"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "42"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Error = (7 − 1/7)x = 48x/7 = 288, so x = 42."
+    },
+    {
+      "id": "06-018",
+      "number": 18,
+      "question": "A number is equally distant from 43 and 119. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "76"
+        },
+        {
+          "label": "B",
+          "text": "81"
+        },
+        {
+          "label": "C",
+          "text": "83"
+        },
+        {
+          "label": "D",
+          "text": "79"
+        }
+      ],
+      "answer": "B",
+      "explanation": "The number is the midpoint: (43 + 119) ÷ 2 = 81."
+    },
+    {
+      "id": "06-019",
+      "number": 19,
+      "question": "3/7 of a number is 32 less than 5/9 of the same number. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "252"
+        },
+        {
+          "label": "B",
+          "text": "126"
+        },
+        {
+          "label": "C",
+          "text": "504"
+        },
+        {
+          "label": "D",
+          "text": "189"
+        }
+      ],
+      "answer": "A",
+      "explanation": "(5/9 − 3/7)x = 8x/63 = 32, so x = 32 × 63/8 = 252."
+    },
+    {
+      "id": "06-020",
+      "number": 20,
+      "question": "After 20% of the fuel in a tank is used, 60 litres are added. Then 25% of the fuel now in the tank is drawn out, leaving 195 litres. Find the initial quantity in litres.",
+      "options": [
+        {
+          "label": "A",
+          "text": "300"
+        },
+        {
+          "label": "B",
+          "text": "200"
+        },
+        {
+          "label": "C",
+          "text": "325"
+        },
+        {
+          "label": "D",
+          "text": "250"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Before the last withdrawal, fuel = 195 ÷ 0.75 = 260 litres; initial fuel = (260 − 60) ÷ 0.80 = 250 litres."
+    },
+    {
+      "id": "06-021",
+      "number": 21,
+      "question": "The sum of two numbers is 126. The larger exceeds twice the smaller by 12. Find their difference.",
+      "options": [
+        {
+          "label": "A",
+          "text": "62"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "38"
+        },
+        {
+          "label": "D",
+          "text": "50"
+        }
+      ],
+      "answer": "D",
+      "explanation": "3s + 12 = 126 gives s = 38; larger = 88, so difference = 50."
+    },
+    {
+      "id": "06-022",
+      "number": 22,
+      "question": "If 3/5 of one number equals 4/7 of another, what is the ratio of the first number to the second?",
+      "options": [
+        {
+          "label": "A",
+          "text": "12 : 35"
+        },
+        {
+          "label": "B",
+          "text": "20 : 21"
+        },
+        {
+          "label": "C",
+          "text": "21 : 20"
+        },
+        {
+          "label": "D",
+          "text": "35 : 12"
+        }
+      ],
+      "answer": "B",
+      "explanation": "3a/5 = 4b/7 gives 21a = 20b; hence a : b = 20 : 21."
+    },
+    {
+      "id": "06-023",
+      "number": 23,
+      "question": "The average of eight consecutive integers is 46.5. Find the largest integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "50"
+        },
+        {
+          "label": "B",
+          "text": "51"
+        },
+        {
+          "label": "C",
+          "text": "54"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Largest integer = 46.5 + 7/2 = 50."
+    },
+    {
+      "id": "06-024",
+      "number": 24,
+      "question": "Two consecutive positive even integers have product 1848. Find their sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "86"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "88"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "A",
+      "explanation": "1848 = 42 × 44; sum = 42 + 44 = 86."
+    },
+    {
+      "id": "06-025",
+      "number": 25,
+      "question": "A two-digit number is 7 times its digit sum. If its units digit is 4, find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "74"
+        },
+        {
+          "label": "C",
+          "text": "84"
+        },
+        {
+          "label": "D",
+          "text": "94"
+        }
+      ],
+      "answer": "C",
+      "explanation": "10t + 4 = 7(t + 4), so 3t = 24 and the number is 84."
+    }
+  ]
+}

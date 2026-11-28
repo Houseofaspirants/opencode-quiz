@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 6,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-126",
+      "number": 126,
+      "question": "At a fair in Ludhiana, 3 identical entry tickets and a parking charge of ₹18 cost ₹159 altogether. Find the price of one ticket.",
+      "options": [
+        {
+          "label": "A",
+          "text": "47"
+        },
+        {
+          "label": "B",
+          "text": "59"
+        },
+        {
+          "label": "C",
+          "text": "53"
+        },
+        {
+          "label": "D",
+          "text": "41"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Ticket price = (159 − 18) ÷ 3 = ₹47."
+    },
+    {
+      "id": "06-127",
+      "number": 127,
+      "question": "1/6 of a number equals 1/4 of the number obtained by subtracting 40 from it. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "60"
+        },
+        {
+          "label": "B",
+          "text": "80"
+        },
+        {
+          "label": "C",
+          "text": "120"
+        },
+        {
+          "label": "D",
+          "text": "160"
+        }
+      ],
+      "answer": "C",
+      "explanation": "x/6 = (x − 40)/4 gives 2x = 3x − 120; hence x = 120."
+    },
+    {
+      "id": "06-128",
+      "number": 128,
+      "question": "Positive numbers a and b satisfy a + b = 17 and a² + b² = 169. Find a^4 + b^4.",
+      "options": [
+        {
+          "label": "A",
+          "text": "14161"
+        },
+        {
+          "label": "B",
+          "text": "21361"
+        },
+        {
+          "label": "C",
+          "text": "24961"
+        },
+        {
+          "label": "D",
+          "text": "28561"
+        }
+      ],
+      "answer": "B",
+      "explanation": "ab = (17² − 169)/2 = 60; a^4 + b^4 = 169² − 2 × 60² = 21361."
+    },
+    {
+      "id": "06-129",
+      "number": 129,
+      "question": "A positive number is reduced by 5, and the result is cubed. Adding 12 gives 1012. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "10"
+        },
+        {
+          "label": "C",
+          "text": "20"
+        },
+        {
+          "label": "D",
+          "text": "15"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Cube = 1012 − 12 = 1000, so the intermediate value is 10; original = 10 + 5 = 15."
+    },
+    {
+      "id": "06-130",
+      "number": 130,
+      "question": "Two numbers have sum 208. Their difference is half their sum. Find the larger number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "156"
+        },
+        {
+          "label": "B",
+          "text": "104"
+        },
+        {
+          "label": "C",
+          "text": "130"
+        },
+        {
+          "label": "D",
+          "text": "52"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Difference = 208/2 = 104; larger = (208 + 104)/2 = 156."
+    },
+    {
+      "id": "06-131",
+      "number": 131,
+      "question": "The ratio of two positive numbers is 5 : 6. Adding 14 to the smaller and subtracting 10 from the larger makes the new numbers equal. Find the product of the original numbers.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20736"
+        },
+        {
+          "label": "B",
+          "text": "14400"
+        },
+        {
+          "label": "C",
+          "text": "17280"
+        },
+        {
+          "label": "D",
+          "text": "18000"
+        }
+      ],
+      "answer": "C",
+      "explanation": "6k − 5k = 14 + 10 gives k = 24; product = 30k² = 30 × 576 = 17280."
+    },
+    {
+      "id": "06-132",
+      "number": 132,
+      "question": "Three numbers A, B and C satisfy A + B = 89, 2B + C = 138 and C − A = 7. Find B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "42"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "40"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Subtracting A + B = 89 from 2B + C = 138 gives B + C − A = 49; hence B + 7 = 49 and B = 42."
+    },
+    {
+      "id": "06-133",
+      "number": 133,
+      "question": "A positive integer leaves remainder 17 when divided by 24. Its quotient is 3 times the remainder. What remainder does the integer leave when divided by 9?",
+      "options": [
+        {
+          "label": "A",
+          "text": "0"
+        },
+        {
+          "label": "B",
+          "text": "5"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The integer = 24 × 51 + 17 = 1241; 1241 = 9 × 137 + 8, so the remainder is 8."
+    },
+    {
+      "id": "06-134",
+      "number": 134,
+      "question": "Eleven consecutive integers have sum 22. How many of these integers are negative?",
+      "options": [
+        {
+          "label": "A",
+          "text": "5"
+        },
+        {
+          "label": "B",
+          "text": "2"
+        },
+        {
+          "label": "C",
+          "text": "4"
+        },
+        {
+          "label": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Middle integer = 22 ÷ 11 = 2; the integers run from −3 to 7, giving 3 negative integers."
+    },
+    {
+      "id": "06-135",
+      "number": 135,
+      "question": "The product of the smallest and largest of three consecutive positive odd integers is 957. Find the square of the middle integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "953"
+        },
+        {
+          "label": "B",
+          "text": "965"
+        },
+        {
+          "label": "C",
+          "text": "958"
+        },
+        {
+          "label": "D",
+          "text": "961"
+        }
+      ],
+      "answer": "D",
+      "explanation": "For middle integer m, (m − 2)(m + 2) = m² − 4 = 957; hence m² = 961."
+    },
+    {
+      "id": "06-136",
+      "number": 136,
+      "question": "A three-digit number has hundreds digit 2. Moving that digit to the units place, without changing the order of the other digits, increases the number by 468. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "247"
+        },
+        {
+          "label": "B",
+          "text": "742"
+        },
+        {
+          "label": "C",
+          "text": "274"
+        },
+        {
+          "label": "D",
+          "text": "724"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Write the number as 200 + r; the new number is 10r + 2, so 9r − 198 = 468 gives r = 74 and original = 274."
+    },
+    {
+      "id": "06-137",
+      "number": 137,
+      "question": "Two positive fractions have product 8/75. Dividing the larger by the smaller gives 3/2. Find their sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "2/3"
+        },
+        {
+          "label": "B",
+          "text": "4/5"
+        },
+        {
+          "label": "C",
+          "text": "1/3"
+        },
+        {
+          "label": "D",
+          "text": "14/15"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let the fractions be 3k and 2k: 6k² = 8/75 gives k = 2/15; sum = 5k = 2/3."
+    },
+    {
+      "id": "06-138",
+      "number": 138,
+      "question": "A two-digit number has digit sum 12. Its units digit is 4 less than its tens digit. What is the difference between the place values of its digits?",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "76"
+        },
+        {
+          "label": "D",
+          "text": "44"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Digits are 8 and 4, so the difference of place values = 80 − 4 = 76."
+    },
+    {
+      "id": "06-139",
+      "number": 139,
+      "question": "A two-digit number plus twice its reverse equals 180. Its tens digit is twice its units digit. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "63"
+        },
+        {
+          "label": "B",
+          "text": "84"
+        },
+        {
+          "label": "C",
+          "text": "42"
+        },
+        {
+          "label": "D",
+          "text": "48"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let units = u and tens = 2u; original = 21u and reverse = 12u, so 45u = 180 gives u = 4 and original = 84."
+    },
+    {
+      "id": "06-140",
+      "number": 140,
+      "question": "A fraction has numerator and denominator in the ratio 3 : 8. Subtracting 6 from the denominator increases its value to 1/2. Find the original denominator.",
+      "options": [
+        {
+          "label": "A",
+          "text": "24"
+        },
+        {
+          "label": "B",
+          "text": "48"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Let numerator = 3k and denominator = 8k; 3k/(8k − 6) = 1/2 gives k = 3 and denominator = 24."
+    },
+    {
+      "id": "06-141",
+      "number": 141,
+      "question": "A calculator user intends to multiply a positive number by 1.25 but multiplies it by 0.125 instead. The result is 81 less than intended. What result should have been obtained?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "72"
+        },
+        {
+          "label": "C",
+          "text": "100"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The wrong multiplier is 1/10 of the intended multiplier; hence 90% of the correct result = 81 and correct result = 90."
+    },
+    {
+      "id": "06-142",
+      "number": 142,
+      "question": "What is the sum of positive integers A, B and C? Statement I: A + B = 70. Statement II: B + C = 90. Which assessment is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Statement I alone is sufficient"
+        },
+        {
+          "label": "C",
+          "text": "Even both statements together are insufficient"
+        },
+        {
+          "label": "D",
+          "text": "Both statements together are sufficient"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Together they give A + B + C = 160 − B; B is not fixed. For example, (30, 40, 50) totals 120, while (20, 50, 40) totals 110."
+    },
+    {
+      "id": "06-143",
+      "number": 143,
+      "question": "Find the missing value: 8 × ? − 17 = 3 × ? + 108, where both question marks represent the same number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "31"
+        },
+        {
+          "label": "B",
+          "text": "25"
+        },
+        {
+          "label": "C",
+          "text": "18"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "B",
+      "explanation": "(8 − 3)x = 108 + 17 = 125, so x = 25."
+    },
+    {
+      "id": "06-144",
+      "number": 144,
+      "question": "Arjun puts 2/7 of his counters in box A and 3/14 of the original total in box B. The remaining 63 counters go into box C. How many more counters are in A than in B?",
+      "options": [
+        {
+          "label": "A",
+          "text": "9"
+        },
+        {
+          "label": "B",
+          "text": "18"
+        },
+        {
+          "label": "C",
+          "text": "27"
+        },
+        {
+          "label": "D",
+          "text": "36"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Remaining fraction = 1 − 2/7 − 3/14 = 1/2, so total = 126; A − B = (2/7 − 3/14) × 126 = 9."
+    },
+    {
+      "id": "06-145",
+      "number": 145,
+      "question": "When an integer is divided by 17, its remainder exceeds its quotient by 2. When divided by 13, its quotient is 3 more than the first quotient and its remainder is 3. Find the integer.",
+      "options": [
+        {
+          "label": "A",
+          "text": "136"
+        },
+        {
+          "label": "B",
+          "text": "146"
+        },
+        {
+          "label": "C",
+          "text": "156"
+        },
+        {
+          "label": "D",
+          "text": "143"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Let the first quotient be q: n = 17q + q + 2 = 13(q + 3) + 3. Thus 5q = 40, so q = 8 and n = 146."
+    },
+    {
+      "id": "06-146",
+      "number": 146,
+      "question": "Two numbers have sum 159. 1/3 of the larger exceeds 1/3 of the smaller by 9. Find their product.",
+      "options": [
+        {
+          "label": "A",
+          "text": "5940"
+        },
+        {
+          "label": "B",
+          "text": "6138"
+        },
+        {
+          "label": "C",
+          "text": "6030"
+        },
+        {
+          "label": "D",
+          "text": "6318"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Difference = 3 × 9 = 27; numbers = (159 + 27)/2 = 93 and 66, so product = 6138."
+    },
+    {
+      "id": "06-147",
+      "number": 147,
+      "question": "Three positive numbers A, B and C satisfy A : B = 4 : 7 and B : C = 14 : 9. If C exceeds A by 12, find B.",
+      "options": [
+        {
+          "label": "A",
+          "text": "144"
+        },
+        {
+          "label": "B",
+          "text": "108"
+        },
+        {
+          "label": "C",
+          "text": "84"
+        },
+        {
+          "label": "D",
+          "text": "168"
+        }
+      ],
+      "answer": "D",
+      "explanation": "A : B : C = 8 : 14 : 9; one ratio part = 12, so B = 14 × 12 = 168."
+    },
+    {
+      "id": "06-148",
+      "number": 148,
+      "question": "A number is increased by 25% and then decreased by 20% of the increased value. If the final value is 276, find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "264"
+        },
+        {
+          "label": "B",
+          "text": "345"
+        },
+        {
+          "label": "C",
+          "text": "220.8"
+        },
+        {
+          "label": "D",
+          "text": "276"
+        }
+      ],
+      "answer": "D",
+      "explanation": "The net multiplier = 1.25 × 0.80 = 1, so the original number is also 276."
+    },
+    {
+      "id": "06-149",
+      "number": 149,
+      "question": "Five consecutive integers have sum 305. What is the difference between twice the largest and the smallest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "59"
+        },
+        {
+          "label": "B",
+          "text": "67"
+        },
+        {
+          "label": "C",
+          "text": "63"
+        },
+        {
+          "label": "D",
+          "text": "65"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Middle = 305 ÷ 5 = 61; smallest = 59 and largest = 63, so 2 × 63 − 59 = 67."
+    },
+    {
+      "id": "06-150",
+      "number": 150,
+      "question": "Real numbers a and b satisfy a² + b² = 50 and ab = 7. Find |a + b| + |a − b|.",
+      "options": [
+        {
+          "label": "A",
+          "text": "16"
+        },
+        {
+          "label": "B",
+          "text": "14"
+        },
+        {
+          "label": "C",
+          "text": "2"
+        },
+        {
+          "label": "D",
+          "text": "8"
+        }
+      ],
+      "answer": "B",
+      "explanation": "|a + b| = √(50 + 14) = 8 and |a − b| = √(50 − 14) = 6; their sum is 14."
+    }
+  ]
+}

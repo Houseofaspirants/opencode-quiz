@@ -1,0 +1,637 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "chapter": {
+    "number": 6,
+    "title": "Problems on Numbers"
+  },
+  "part": 3,
+  "total_questions": 25,
+  "questions": [
+    {
+      "id": "06-051",
+      "number": 51,
+      "question": "A number exceeds 28 by the same amount that twice the number falls short of 110. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "69"
+        },
+        {
+          "label": "B",
+          "text": "55"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "41"
+        }
+      ],
+      "answer": "C",
+      "explanation": "x − 28 = 110 − 2x, so 3x = 138 and x = 46."
+    },
+    {
+      "id": "06-052",
+      "number": 52,
+      "question": "Rajan reads 3/8 of a book on the first day and 1/3 of the whole book on the second day. If 70 pages remain, how many pages did he read on the first day?",
+      "options": [
+        {
+          "label": "A",
+          "text": "100"
+        },
+        {
+          "label": "B",
+          "text": "120"
+        },
+        {
+          "label": "C",
+          "text": "80"
+        },
+        {
+          "label": "D",
+          "text": "90"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Remaining fraction = 1 − 3/8 − 1/3 = 7/24; total pages = 240, so first-day pages = 90."
+    },
+    {
+      "id": "06-053",
+      "number": 53,
+      "question": "The squares of a two-digit number and its reverse differ by 4752. Their digit sum is 12, and the original number is larger. Find the original number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "48"
+        },
+        {
+          "label": "B",
+          "text": "75"
+        },
+        {
+          "label": "C",
+          "text": "84"
+        },
+        {
+          "label": "D",
+          "text": "93"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Number + reverse = 11 × 12 = 132; difference = 4752 ÷ 132 = 36, so original = (132 + 36) ÷ 2 = 84."
+    },
+    {
+      "id": "06-054",
+      "number": 54,
+      "question": "After 9 is subtracted from a number, 3/5 of the result is taken and then 8 is added. The final result is 41. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "55"
+        },
+        {
+          "label": "B",
+          "text": "64"
+        },
+        {
+          "label": "C",
+          "text": "46"
+        },
+        {
+          "label": "D",
+          "text": "73"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Reverse the steps: (41 − 8) × 5/3 + 9 = 64."
+    },
+    {
+      "id": "06-055",
+      "number": 55,
+      "question": "The average of seven consecutive even integers is 64. What is the fourth integer?",
+      "options": [
+        {
+          "label": "A",
+          "text": "66"
+        },
+        {
+          "label": "B",
+          "text": "60"
+        },
+        {
+          "label": "C",
+          "text": "64"
+        },
+        {
+          "label": "D",
+          "text": "62"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The fourth of seven equally spaced integers is the middle term, so it equals the average, 64."
+    },
+    {
+      "id": "06-056",
+      "number": 56,
+      "question": "Three positive numbers are in the ratio 1 : 3 : 4. The sum of their squares exceeds their pairwise-product sum by 343. Find the largest number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "28"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "49"
+        },
+        {
+          "label": "D",
+          "text": "21"
+        }
+      ],
+      "answer": "A",
+      "explanation": "For k, 3k, 4k, the difference = (26 − 19)k² = 343; k = 7, so largest = 28."
+    },
+    {
+      "id": "06-057",
+      "number": 57,
+      "question": "The sum of three numbers is 138. The first plus twice the second is 112, and the third exceeds the first by 22. Find the first number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "44"
+        },
+        {
+          "label": "C",
+          "text": "62"
+        },
+        {
+          "label": "D",
+          "text": "40"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Third − second = 26, so first − second = 4; then 3 × second + 4 = 112 gives second = 36 and first = 40."
+    },
+    {
+      "id": "06-058",
+      "number": 58,
+      "question": "Positive integers a and b satisfy a − b = 4 and ab = 77. Find a³ − b³.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1052"
+        },
+        {
+          "label": "B",
+          "text": "988"
+        },
+        {
+          "label": "C",
+          "text": "924"
+        },
+        {
+          "label": "D",
+          "text": "324"
+        }
+      ],
+      "answer": "B",
+      "explanation": "a³ − b³ = (a − b)[(a − b)² + 3ab] = 4(16 + 231) = 988."
+    },
+    {
+      "id": "06-059",
+      "number": 59,
+      "question": "The sum and difference of two positive numbers are 96 and 32. What fraction of the larger is the smaller?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1/2"
+        },
+        {
+          "label": "B",
+          "text": "1/3"
+        },
+        {
+          "label": "C",
+          "text": "2/3"
+        },
+        {
+          "label": "D",
+          "text": "3/4"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Smaller/larger = (96 − 32)/(96 + 32) = 64/128 = 1/2."
+    },
+    {
+      "id": "06-060",
+      "number": 60,
+      "question": "The squares of three consecutive positive even integers total 1736. Find their average.",
+      "options": [
+        {
+          "label": "A",
+          "text": "22"
+        },
+        {
+          "label": "B",
+          "text": "24"
+        },
+        {
+          "label": "C",
+          "text": "28"
+        },
+        {
+          "label": "D",
+          "text": "26"
+        }
+      ],
+      "answer": "B",
+      "explanation": "For middle term m, 3m² + 8 = 1736 gives m² = 576; average = m = 24."
+    },
+    {
+      "id": "06-061",
+      "number": 61,
+      "question": "Adding 4 to a fraction's numerator and 3 to its denominator makes it 3/4. Subtracting 3 from the numerator and 5 from the denominator makes it 2/3. Find the original denominator minus numerator.",
+      "options": [
+        {
+          "label": "A",
+          "text": "8"
+        },
+        {
+          "label": "B",
+          "text": "4"
+        },
+        {
+          "label": "C",
+          "text": "6"
+        },
+        {
+          "label": "D",
+          "text": "11"
+        }
+      ],
+      "answer": "C",
+      "explanation": "4n − 3d = −7 and 3n − 2d = −1 give n = 11, d = 17; d − n = 6."
+    },
+    {
+      "id": "06-062",
+      "number": 62,
+      "question": "The sum of two nonzero numbers is 27 and the sum of their reciprocals is 3/20. Find their product.",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "180"
+        },
+        {
+          "label": "C",
+          "text": "160"
+        },
+        {
+          "label": "D",
+          "text": "120"
+        }
+      ],
+      "answer": "B",
+      "explanation": "1/a + 1/b = (a + b)/ab, so product = 27 ÷ (3/20) = 180."
+    },
+    {
+      "id": "06-063",
+      "number": 63,
+      "question": "A two-digit number has tens digit 6 and is divisible by 17. Find its units digit.",
+      "options": [
+        {
+          "label": "A",
+          "text": "4"
+        },
+        {
+          "label": "B",
+          "text": "6"
+        },
+        {
+          "label": "C",
+          "text": "8"
+        },
+        {
+          "label": "D",
+          "text": "2"
+        }
+      ],
+      "answer": "C",
+      "explanation": "The multiple of 17 between 60 and 69 is 17 × 4 = 68, so the units digit is 8."
+    },
+    {
+      "id": "06-064",
+      "number": 64,
+      "question": "The larger of two positive integers is 5 times the smaller plus 7. Their product is 1078. Find their sum.",
+      "options": [
+        {
+          "label": "A",
+          "text": "91"
+        },
+        {
+          "label": "B",
+          "text": "77"
+        },
+        {
+          "label": "C",
+          "text": "98"
+        },
+        {
+          "label": "D",
+          "text": "84"
+        }
+      ],
+      "answer": "A",
+      "explanation": "s(5s + 7) = 1078 is satisfied by s = 14 and larger = 77; sum = 91."
+    },
+    {
+      "id": "06-065",
+      "number": 65,
+      "question": "A number is increased by its half. After subtracting 18, the result is divided by 9 to give 7. What is 2/3 of the original number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "36"
+        },
+        {
+          "label": "B",
+          "text": "54"
+        },
+        {
+          "label": "C",
+          "text": "42"
+        },
+        {
+          "label": "D",
+          "text": "27"
+        }
+      ],
+      "answer": "A",
+      "explanation": "Original = (7 × 9 + 18) ÷ (3/2) = 54; its 2/3 = 36."
+    },
+    {
+      "id": "06-066",
+      "number": 66,
+      "question": "A clerk should multiply a number by 3/4 and add 21. Instead, he multiplies it by 4/3 and subtracts 21. Both methods give the same result. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "84"
+        },
+        {
+          "label": "B",
+          "text": "56"
+        },
+        {
+          "label": "C",
+          "text": "36"
+        },
+        {
+          "label": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "D",
+      "explanation": "(4/3 − 3/4)x = 42 gives 7x/12 = 42; x = 72."
+    },
+    {
+      "id": "06-067",
+      "number": 67,
+      "question": "A positive integer n is sought. Statement I: n² = 169. Statement II: n is an odd factor of 39 greater than 3. Which assessment is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Statement II alone is sufficient"
+        },
+        {
+          "label": "B",
+          "text": "Both statements are required"
+        },
+        {
+          "label": "C",
+          "text": "Either statement alone is sufficient"
+        },
+        {
+          "label": "D",
+          "text": "Statement I alone is sufficient"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Statement I gives n = 13 uniquely; Statement II allows 13 and 39."
+    },
+    {
+      "id": "06-068",
+      "number": 68,
+      "question": "The difference between 9 times and 4 times a number is 235. What is 3 times the number?",
+      "options": [
+        {
+          "label": "A",
+          "text": "188"
+        },
+        {
+          "label": "B",
+          "text": "94"
+        },
+        {
+          "label": "C",
+          "text": "141"
+        },
+        {
+          "label": "D",
+          "text": "47"
+        }
+      ],
+      "answer": "C",
+      "explanation": "5x = 235 gives x = 47; hence 3x = 141."
+    },
+    {
+      "id": "06-069",
+      "number": 69,
+      "question": "3/4 of a number equals 7/8 of 288. Find the sum of the digits of the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "18"
+        },
+        {
+          "label": "B",
+          "text": "12"
+        },
+        {
+          "label": "C",
+          "text": "15"
+        },
+        {
+          "label": "D",
+          "text": "9"
+        }
+      ],
+      "answer": "B",
+      "explanation": "3x/4 = 7/8 × 288 = 252 gives x = 336; digit sum = 3 + 3 + 6 = 12."
+    },
+    {
+      "id": "06-070",
+      "number": 70,
+      "question": "Four positive numbers total 180. Adding 5 to the first, subtracting 5 from the second, doubling the third and halving the fourth all give the same result. Find the second number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "20"
+        },
+        {
+          "label": "B",
+          "text": "35"
+        },
+        {
+          "label": "C",
+          "text": "80"
+        },
+        {
+          "label": "D",
+          "text": "45"
+        }
+      ],
+      "answer": "D",
+      "explanation": "With common result k, the sum = (k − 5) + (k + 5) + k/2 + 2k = 9k/2 = 180; k = 40 and the second number is 45."
+    },
+    {
+      "id": "06-071",
+      "number": 71,
+      "question": "Two positive numbers are in the ratio 7 : 11. Subtracting the smaller from 3 times the larger gives 208. Find the smaller number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "56"
+        },
+        {
+          "label": "B",
+          "text": "88"
+        },
+        {
+          "label": "C",
+          "text": "77"
+        },
+        {
+          "label": "D",
+          "text": "49"
+        }
+      ],
+      "answer": "A",
+      "explanation": "(33 − 7)k = 208 gives k = 8; smaller = 7 × 8 = 56."
+    },
+    {
+      "id": "06-072",
+      "number": 72,
+      "question": "The sum of four consecutive integers is 230. What is the sum of the next four consecutive integers?",
+      "options": [
+        {
+          "label": "A",
+          "text": "234"
+        },
+        {
+          "label": "B",
+          "text": "250"
+        },
+        {
+          "label": "C",
+          "text": "238"
+        },
+        {
+          "label": "D",
+          "text": "246"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Each corresponding integer increases by 4, so the new sum = 230 + 4 × 4 = 246."
+    },
+    {
+      "id": "06-073",
+      "number": 73,
+      "question": "After 35% of a number is removed, 156 remains. Find the number.",
+      "options": [
+        {
+          "label": "A",
+          "text": "240"
+        },
+        {
+          "label": "B",
+          "text": "260"
+        },
+        {
+          "label": "C",
+          "text": "210"
+        },
+        {
+          "label": "D",
+          "text": "280"
+        }
+      ],
+      "answer": "A",
+      "explanation": "65% of x = 156, so x = 156 × 100/65 = 240."
+    },
+    {
+      "id": "06-074",
+      "number": 74,
+      "question": "If x + y = 26 and x − y = 10, find (x² + y²)/2.",
+      "options": [
+        {
+          "label": "A",
+          "text": "388"
+        },
+        {
+          "label": "B",
+          "text": "144"
+        },
+        {
+          "label": "C",
+          "text": "194"
+        },
+        {
+          "label": "D",
+          "text": "288"
+        }
+      ],
+      "answer": "C",
+      "explanation": "(x² + y²)/2 = [(x + y)² + (x − y)²]/4 = (676 + 100)/4 = 194."
+    },
+    {
+      "id": "06-075",
+      "number": 75,
+      "question": "A two-digit number has digit sum 10. Adding 36 reverses its digits. Find the product of the original number and its tens digit.",
+      "options": [
+        {
+          "label": "A",
+          "text": "259"
+        },
+        {
+          "label": "B",
+          "text": "111"
+        },
+        {
+          "label": "C",
+          "text": "37"
+        },
+        {
+          "label": "D",
+          "text": "74"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Units − tens = 36 ÷ 9 = 4; with digit sum 10, tens = 3 and number = 37; product = 111."
+    }
+  ]
+}
