@@ -712,9 +712,9 @@
       "color": "#0ea5e9",
       "description": "Percentage, Profit & Loss, Time Speed Distance, DI and Arithmetic.",
       "order": 5,
-      "count": 5,
-      "newest": "2026-11-09",
-      "totalSize": 23962036,
+      "count": 6,
+      "newest": "2026-11-28",
+      "totalSize": 29097763,
       "languages": [
         {
           "id": "pa",
@@ -729,7 +729,7 @@
           "name": "English",
           "native": "English",
           "flag": "🇬🇧",
-          "count": 5,
+          "count": 6,
           "chapters": [
             {
               "id": "01 - Number System",
@@ -785,13 +785,24 @@
                 }
               ],
               "pages": 167
+            },
+            {
+              "id": "06 - Problems on Numbers",
+              "name": "Chapter 6: Problems on Numbers",
+              "parts": [
+                {
+                  "file": "material-maths-problems-on-numbers-notes-punjabi-english.html",
+                  "n": 1
+                }
+              ],
+              "pages": 137
             }
           ]
         }
       ],
-      "chapters": 5,
+      "chapters": 6,
       "counts": {
-        "en": 5,
+        "en": 6,
         "pa": 0
       },
       "pages": {
@@ -3097,6 +3108,6 @@
       "page": "study-punjab-gk.html"
     }
   ],
-  "total": 109,
+  "total": 110,
   "generatedBy": "scripts/study_material.py"
 }
