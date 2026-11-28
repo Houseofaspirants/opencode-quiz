@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "generatedAt": "2026-11-28T03:08:24.353Z",
+  "generatedAt": "2026-11-28T03:09:49.255Z",
   "stats": {
     "subjects": 7,
-    "categories": 56,
-    "topics": 164,
-    "quizzes": 164,
-    "questions": 3878,
+    "categories": 57,
+    "topics": 170,
+    "quizzes": 170,
+    "questions": 4028,
     "studentsPracticed": 12500
   },
   "site": {
@@ -4388,6 +4388,186 @@
           "landing": "/quiz-quant-01-number-system-part-4"
         },
         {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 1",
+          "name": "Problems on Numbers MCQ – Part 1",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 1.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 1.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 1.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 1",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 1"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-1"
+        },
+        {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 2",
+          "name": "Problems on Numbers MCQ – Part 2",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 2.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 2.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 2.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 2",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 2"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-2"
+        },
+        {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 3",
+          "name": "Problems on Numbers MCQ – Part 3",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 3.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 3.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 3.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 3",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 3"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-3"
+        },
+        {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 4",
+          "name": "Problems on Numbers MCQ – Part 4",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 4.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 4.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 4.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 4",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 4"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-4"
+        },
+        {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 5",
+          "name": "Problems on Numbers MCQ – Part 5",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 5.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 5.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 5.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 5",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 5"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-5"
+        },
+        {
+          "id": "06 - Problems on Numbers - MCQ - EN - Part 6",
+          "name": "Problems on Numbers MCQ – Part 6",
+          "description": "",
+          "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 6.json",
+          "count": 25,
+          "empty": false,
+          "available": true,
+          "timeLimit": 0,
+          "updatedAt": 1795835384008,
+          "category": "06-problems-on-numbers",
+          "language": "en",
+          "variants": {
+            "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 6.json",
+            "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 6.json"
+          },
+          "availableLanguages": [
+            "en",
+            "pa"
+          ],
+          "titles": {
+            "en": "Problems on Numbers MCQ – Part 6",
+            "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 6"
+          },
+          "counts": {
+            "en": 25,
+            "pa": 25
+          },
+          "landing": "/quiz-quant-06-problems-on-numbers-part-6"
+        },
+        {
           "id": "04 - Simplification - MCQ - EN - Part 1",
           "name": "Simplification MCQ – Part 1",
           "description": "",
@@ -5513,6 +5693,195 @@
             }
           ],
           "landing": "/category-quant-05-average"
+        },
+        {
+          "id": "06-problems-on-numbers",
+          "name": "06   Problems On Numbers",
+          "folder": "06 - Problems on Numbers",
+          "icon": "📁",
+          "topics": [
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 1",
+              "name": "Problems on Numbers MCQ – Part 1",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 1.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 1.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 1.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 1",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 1"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-1"
+            },
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 2",
+              "name": "Problems on Numbers MCQ – Part 2",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 2.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 2.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 2.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 2",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 2"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-2"
+            },
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 3",
+              "name": "Problems on Numbers MCQ – Part 3",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 3.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 3.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 3.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 3",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 3"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-3"
+            },
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 4",
+              "name": "Problems on Numbers MCQ – Part 4",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 4.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 4.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 4.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 4",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 4"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-4"
+            },
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 5",
+              "name": "Problems on Numbers MCQ – Part 5",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 5.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 5.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 5.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 5",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 5"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-5"
+            },
+            {
+              "id": "06 - Problems on Numbers - MCQ - EN - Part 6",
+              "name": "Problems on Numbers MCQ – Part 6",
+              "description": "",
+              "file": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 6.json",
+              "count": 25,
+              "empty": false,
+              "available": true,
+              "timeLimit": 0,
+              "updatedAt": 1795835384008,
+              "category": "06-problems-on-numbers",
+              "language": "en",
+              "variants": {
+                "en": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 6.json",
+                "pa": "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - PA - Part 6.json"
+              },
+              "availableLanguages": [
+                "en",
+                "pa"
+              ],
+              "titles": {
+                "en": "Problems on Numbers MCQ – Part 6",
+                "pa": "ਸੰਖਿਆਵਾਂ ਉੱਤੇ ਸਵਾਲ MCQ – Part 6"
+              },
+              "counts": {
+                "en": 25,
+                "pa": 25
+              },
+              "landing": "/quiz-quant-06-problems-on-numbers-part-6"
+            }
+          ],
+          "landing": "/category-quant-06-problems-on-numbers"
         }
       ],
       "landing": "/subject-quant"
@@ -10594,6 +10963,30 @@
     "questions/quant/05 - Average/05 - Average - MCQ - EN - Part 8.json": [
       "52085a17ece647d4",
       1794313773522
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 1.json": [
+      "1ac8b14720217692",
+      1795835384008
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 2.json": [
+      "a08de4ae2cc1f78b",
+      1795835384008
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 3.json": [
+      "dfe1a090ed2e4d09",
+      1795835384008
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 4.json": [
+      "0ed8c58e623cc35b",
+      1795835384008
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 5.json": [
+      "3ce2dc7300a29997",
+      1795835384008
+    ],
+    "questions/quant/06 - Problems on Numbers/06 - Problems on Numbers - MCQ - EN - Part 6.json": [
+      "c084e7386e0d25d0",
+      1795835384008
     ],
     "questions/reasoning/01 - Number Series/01 - Number Series - MCQ - EN - Part 1.json": [
       "377cb5b0593c1210",
